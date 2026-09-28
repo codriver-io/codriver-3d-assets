@@ -20,7 +20,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tour-de-l-horloge-near.glb",
-      "bytes": 207704,
+      "bytes": 207700,
       "triangles": 4076,
       "drawCalls": 6,
       "bounds": {
@@ -38,7 +38,7 @@
     },
     "far": {
       "url": "/models/buildings/tour-de-l-horloge-far.glb",
-      "bytes": 101340,
+      "bytes": 101336,
       "triangles": 1892,
       "drawCalls": 6,
       "bounds": {
@@ -59,6 +59,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/tour-de-l-horloge-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/tour-de-l-horloge-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

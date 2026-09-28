@@ -23,13 +23,13 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-jacques-cartier-near.glb",
-      "bytes": 2257176,
+      "bytes": 2257172,
       "triangles": 45548,
       "drawCalls": 34
     },
     "far": {
       "url": "/models/landmarks/pont-jacques-cartier-far.glb",
-      "bytes": 955136,
+      "bytes": 955132,
       "triangles": 23584,
       "drawCalls": 5
     }
@@ -38,6 +38,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

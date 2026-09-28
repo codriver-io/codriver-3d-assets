@@ -51,61 +51,61 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-honore-mercier-near.glb",
-      "bytes": 2915224,
+      "bytes": 2915220,
       "triangles": 74580,
       "drawCalls": 38
     },
     "upstream-near": {
       "url": "/models/landmarks/pont-honore-mercier-upstream-near.glb",
-      "bytes": 1271732,
+      "bytes": 1271728,
       "triangles": 30472,
       "drawCalls": 14
     },
     "downstream-near": {
       "url": "/models/landmarks/pont-honore-mercier-downstream-near.glb",
-      "bytes": 1318472,
+      "bytes": 1318468,
       "triangles": 32312,
       "drawCalls": 14
     },
     "laprairie-out-near": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_out-near.glb",
-      "bytes": 164568,
+      "bytes": 164564,
       "triangles": 5908,
       "drawCalls": 5
     },
     "laprairie-in-near": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_in-near.glb",
-      "bytes": 162428,
+      "bytes": 162424,
       "triangles": 5888,
       "drawCalls": 5
     },
     "far": {
       "url": "/models/landmarks/pont-honore-mercier-far.glb",
-      "bytes": 1522892,
+      "bytes": 1522888,
       "triangles": 40578,
       "drawCalls": 18
     },
     "upstream-far": {
       "url": "/models/landmarks/pont-honore-mercier-upstream-far.glb",
-      "bytes": 639380,
+      "bytes": 639376,
       "triangles": 15726,
       "drawCalls": 5
     },
     "downstream-far": {
       "url": "/models/landmarks/pont-honore-mercier-downstream-far.glb",
-      "bytes": 676020,
+      "bytes": 676016,
       "triangles": 17192,
       "drawCalls": 5
     },
     "laprairie-out-far": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_out-far.glb",
-      "bytes": 105320,
+      "bytes": 105316,
       "triangles": 3852,
       "drawCalls": 4
     },
     "laprairie-in-far": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_in-far.glb",
-      "bytes": 104292,
+      "bytes": 104288,
       "triangles": 3808,
       "drawCalls": 4
     }
@@ -114,6 +114,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/pont-honore-mercier-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/pont-honore-mercier-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

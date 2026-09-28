@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/orange-julep-near.glb",
-      "bytes": 511644,
+      "bytes": 511640,
       "triangles": 13400,
       "drawCalls": 8,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/orange-julep-far.glb",
-      "bytes": 153096,
+      "bytes": 153092,
       "triangles": 3048,
       "drawCalls": 7,
       "bounds": {
@@ -63,6 +63,6 @@
   "license": "CC-BY-4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/orange-julep-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/orange-julep-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/place-ville-marie-near.glb",
-      "bytes": 444188,
+      "bytes": 444184,
       "triangles": 10874,
       "drawCalls": 10,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/buildings/place-ville-marie-far.glb",
-      "bytes": 265124,
+      "bytes": 265120,
       "triangles": 5768,
       "drawCalls": 10,
       "bounds": {
@@ -68,6 +68,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/place-ville-marie-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/place-ville-marie-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

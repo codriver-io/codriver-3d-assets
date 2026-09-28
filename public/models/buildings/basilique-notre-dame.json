@@ -140,7 +140,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/basilique-notre-dame-near.glb",
-      "bytes": 2018444,
+      "bytes": 2018440,
       "triangles": 29382,
       "drawCalls": 6,
       "bounds": {
@@ -158,7 +158,7 @@
     },
     "far": {
       "url": "/models/buildings/basilique-notre-dame-far.glb",
-      "bytes": 962856,
+      "bytes": 962852,
       "triangles": 14100,
       "drawCalls": 6,
       "bounds": {
@@ -178,6 +178,6 @@
   "license": "CC-BY-4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/basilique-notre-dame-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/basilique-notre-dame-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

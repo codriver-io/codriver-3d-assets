@@ -18,13 +18,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/biosphere-montreal-near.glb",
-      "bytes": 4531352,
+      "bytes": 4531348,
       "triangles": 98824,
       "drawCalls": 7
     },
     "far": {
       "url": "/models/buildings/biosphere-montreal-far.glb",
-      "bytes": 464368,
+      "bytes": 464364,
       "triangles": 10506,
       "drawCalls": 5
     }
@@ -33,6 +33,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/biosphere-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/biosphere-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

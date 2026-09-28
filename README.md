@@ -1,5 +1,7 @@
 # Codriver 3D assets
 
+Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/codriver-3d-assets).
+
 An open collection of Montréal landmarks: 14 bridges and buildings, 36
 self-contained GLB variants, and the editable Three.js generators behind them.
 

@@ -8,7 +8,7 @@ assert.ok(catalog.assets.length>0);
 let variants=0;
 for(const entry of catalog.assets){
   assert.equal(entry.status,'ready');assert.equal(entry.license,'CC-BY-4.0');assert.equal(entry.codeLicense,'MIT');
-  assert.ok(entry.source.url.startsWith('https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/'));
+  assert.ok(entry.source.url.startsWith('https://github.com/codriver-io/codriver-3d-assets/blob/main/'));
   for(const view of [entry.inspection,...entry.inspection.views])await access(resolve(out,view.url.slice(1).split('?')[0]));
   const manifest=JSON.parse(await readFile(resolve(out,'.'+entry.manifest)));
   assert.equal(manifest.license,'CC-BY-4.0');assert.equal(manifest.geographicDataLicense,'ODbL-1.0');

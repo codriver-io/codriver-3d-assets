@@ -23,13 +23,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/farine-five-roses-near.glb",
-      "bytes": 1132368,
+      "bytes": 1132364,
       "triangles": 21464,
       "drawCalls": 8
     },
     "far": {
       "url": "/models/buildings/farine-five-roses-far.glb",
-      "bytes": 422684,
+      "bytes": 422680,
       "triangles": 7424,
       "drawCalls": 8
     }
@@ -38,6 +38,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/five-roses-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/five-roses-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

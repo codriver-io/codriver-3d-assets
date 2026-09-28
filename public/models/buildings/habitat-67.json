@@ -28,7 +28,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/habitat-67-near.glb",
-      "bytes": 3387492,
+      "bytes": 3387488,
       "triangles": 62604,
       "drawCalls": 6,
       "bounds": {
@@ -46,7 +46,7 @@
     },
     "far": {
       "url": "/models/buildings/habitat-67-far.glb",
-      "bytes": 662348,
+      "bytes": 662344,
       "triangles": 12156,
       "drawCalls": 5,
       "bounds": {
@@ -67,6 +67,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/habitat-67-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/habitat-67-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

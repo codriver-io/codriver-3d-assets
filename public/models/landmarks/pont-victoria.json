@@ -21,13 +21,13 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-victoria-near.glb",
-      "bytes": 3354528,
+      "bytes": 3354524,
       "triangles": 61068,
       "drawCalls": 29
     },
     "far": {
       "url": "/models/landmarks/pont-victoria-far.glb",
-      "bytes": 1163652,
+      "bytes": 1163648,
       "triangles": 25592,
       "drawCalls": 5
     }
@@ -36,6 +36,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

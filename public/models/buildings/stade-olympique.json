@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/stade-olympique-near.glb",
-      "bytes": 938416,
+      "bytes": 938412,
       "triangles": 23396,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/stade-olympique-far.glb",
-      "bytes": 506936,
+      "bytes": 506932,
       "triangles": 10900,
       "drawCalls": 7,
       "bounds": {
@@ -63,6 +63,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/stade-olympique-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/stade-olympique-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }

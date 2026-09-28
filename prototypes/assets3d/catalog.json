@@ -35,7 +35,7 @@
             "url": "https://www.arup.com/projects/samuel-de-champlain-bridge-corridor/"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/champlain-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/champlain-geometry.js"
       },
       "inspection": {
         "url": "/bridge-preview.html?view=piers",
@@ -86,7 +86,7 @@
             "url": "https://www.openstreetmap.org/copyright"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=pont-victoria&view=piers",
@@ -141,7 +141,7 @@
             "url": "https://www.openstreetmap.org/copyright"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=pont-jacques-cartier&view=structure",
@@ -192,7 +192,7 @@
             "url": "https://www.openstreetmap.org/copyright"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/biosphere-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/biosphere-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=biosphere-montreal&view=facade",
@@ -251,7 +251,7 @@
             "url": "https://commons.wikimedia.org/wiki/File:Montreal_-_Farine_five_roses.jpg"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/five-roses-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/five-roses-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=farine-five-roses",
@@ -314,7 +314,7 @@
             "url": "https://commons.wikimedia.org/wiki/Category:Gibeau_Orange_Julep"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/orange-julep-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/orange-julep-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=orange-julep&view=facade",
@@ -393,7 +393,7 @@
             "url": "https://www.openstreetmap.org/node/11191781037"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/place-ville-marie-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/place-ville-marie-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=place-ville-marie",
@@ -456,7 +456,7 @@
             "url": "https://www.openstreetmap.org/way/440195613"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/habitat-67-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/habitat-67-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=habitat-67",
@@ -535,7 +535,7 @@
             "url": "https://www.mtl.org/en/experience/go-gold-montreal-olympic-park"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/stade-olympique-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/stade-olympique-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=stade-olympique",
@@ -598,7 +598,7 @@
             "url": "https://www.openstreetmap.org/copyright"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/grande-roue-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/grande-roue-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=grande-roue-montreal&view=facade",
@@ -669,7 +669,7 @@
             "url": "https://www.mtl.org/en/experience/montreal-most-famous-icons"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/basilique-notre-dame-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/basilique-notre-dame-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=basilique-notre-dame&view=facade",
@@ -728,7 +728,7 @@
             "url": "https://www.openstreetmap.org/way/161206731"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/tour-de-l-horloge-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/tour-de-l-horloge-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=tour-de-l-horloge",
@@ -793,7 +793,7 @@
             "url": "https://www.openstreetmap.org/way/132499529"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/oratoire-saint-joseph-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/oratoire-saint-joseph-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=oratoire-saint-joseph",
@@ -850,7 +850,7 @@
             "url": "https://www.openstreetmap.org/copyright"
           }
         ],
-        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/pont-honore-mercier-geometry.js"
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/pont-honore-mercier-geometry.js"
       },
       "inspection": {
         "url": "/asset-preview.html?asset=pont-honore-mercier&view=structure",

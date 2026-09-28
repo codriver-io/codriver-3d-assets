@@ -30,13 +30,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/oratoire-saint-joseph-near.glb",
-      "bytes": 438796,
+      "bytes": 438792,
       "triangles": 8954,
       "drawCalls": 6
     },
     "far": {
       "url": "/models/buildings/oratoire-saint-joseph-far.glb",
-      "bytes": 255048,
+      "bytes": 255044,
       "triangles": 4810,
       "drawCalls": 6
     }
@@ -45,6 +45,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
-  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/oratoire-saint-joseph-geometry.js",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/oratoire-saint-joseph-geometry.js",
   "geographicDataLicense": "ODbL-1.0"
 }
