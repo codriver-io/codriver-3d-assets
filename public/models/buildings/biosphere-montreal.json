@@ -1,0 +1,38 @@
+{
+  "id": "biosphere-montreal",
+  "name": "Biosphère de Montréal",
+  "origin": [
+    -73.53142625,
+    45.51409285
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "diameter": 76,
+  "height": 62,
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "Original procedural visual model. Heights, member sections, details and LOD simplification are approximate; no third-party model or texture is included.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/biosphere-montreal-near.glb",
+      "bytes": 4531352,
+      "triangles": 98824,
+      "drawCalls": 7
+    },
+    "far": {
+      "url": "/models/buildings/biosphere-montreal-far.glb",
+      "bytes": 464368,
+      "triangles": 10506,
+      "drawCalls": 5
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/biosphere-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "samuel-de-champlain",
+  "origin": [
+    -73.5057186,
+    45.4683481
+  ],
+  "towerHeight": 168,
+  "deckHeight": 42,
+  "width": 60,
+  "mainSpan": 240,
+  "backSpan": 200,
+  "length": 3470.5987416611997,
+  "towerStation": 2386.103225427432,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "Original procedural visual approximation. Elevations and small details are not surveyed. No Flight Simulator assets.",
+  "assets": {
+    "near": {
+      "url": "/models/landmarks/samuel-de-champlain-near.glb",
+      "bytes": 1602284,
+      "triangles": 38582,
+      "drawCalls": 29
+    },
+    "far": {
+      "url": "/models/landmarks/samuel-de-champlain-far.glb",
+      "bytes": 467144,
+      "triangles": 8294,
+      "drawCalls": 5
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/champlain-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

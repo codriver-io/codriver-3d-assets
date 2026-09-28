@@ -1,0 +1,73 @@
+{
+  "id": "place-ville-marie",
+  "name": "Place Ville Marie + L’Anneau",
+  "origin": [
+    -73.5686328,
+    45.50158465
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "height": 188.1,
+  "elevationDatum": "Y=0 is local flat-map grade, not sea level; plaza rises to 1.8 m on a solid plinth. Tower height 188.1 m includes the crown; beacon reaches 191.1 m.",
+  "ring": {
+    "origin": [
+      -73.5700011,
+      45.5014131
+    ],
+    "node": 11191781037,
+    "diameter": 30,
+    "tubeRadius": 0.45,
+    "centerHeight": 18.5
+  },
+  "footprintWay": 108457145,
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "Original procedural visual model. Only 1 PVM and plaza connection / L’Anneau are authored. Neighbouring towers remain provider buildings. Roof tiers, facade, ring section and flat-map plaza elevations are approximate.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/place-ville-marie-near.glb",
+      "bytes": 444188,
+      "triangles": 10874,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -121.3094482421875,
+          -2.3841858265427618e-8,
+          -62.649749755859375
+        ],
+        "max": [
+          62.649749755859375,
+          191.10000610351562,
+          62.649749755859375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/place-ville-marie-far.glb",
+      "bytes": 265124,
+      "triangles": 5768,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -121.3094482421875,
+          -2.3841858265427618e-8,
+          -62.649749755859375
+        ],
+        "max": [
+          62.649749755859375,
+          191.10000610351562,
+          62.649749755859375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/place-ville-marie-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

@@ -1,0 +1,183 @@
+{
+  "id": "basilique-notre-dame",
+  "name": "Basilique Notre-Dame de Montréal",
+  "origin": [
+    -73.55659905,
+    45.50465125
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "facadeToRearBearing": 116.65017553482446,
+  "rotationAboutY": 1.105663017477769,
+  "footprint": [
+    [
+      -73.5567165,
+      45.5044869
+    ],
+    [
+      -73.5566819,
+      45.5044737
+    ],
+    [
+      -73.5562947,
+      45.5043376
+    ],
+    [
+      -73.5563234,
+      45.5042952
+    ],
+    [
+      -73.5562575,
+      45.5042724
+    ],
+    [
+      -73.5562313,
+      45.5043127
+    ],
+    [
+      -73.5555578,
+      45.5040777
+    ],
+    [
+      -73.5555226,
+      45.5040655
+    ],
+    [
+      -73.5555132,
+      45.5040758
+    ],
+    [
+      -73.5552939,
+      45.5042826
+    ],
+    [
+      -73.5553249,
+      45.5042938
+    ],
+    [
+      -73.5553171,
+      45.5043032
+    ],
+    [
+      -73.5553577,
+      45.5043172
+    ],
+    [
+      -73.5552983,
+      45.5043994
+    ],
+    [
+      -73.5564816,
+      45.5048156
+    ],
+    [
+      -73.5564926,
+      45.5048001
+    ],
+    [
+      -73.5564848,
+      45.5047963
+    ],
+    [
+      -73.5565133,
+      45.5047529
+    ],
+    [
+      -73.5565243,
+      45.5047558
+    ],
+    [
+      -73.5565345,
+      45.5047415
+    ],
+    [
+      -73.5565259,
+      45.5047386
+    ],
+    [
+      -73.5566642,
+      45.5045538
+    ],
+    [
+      -73.5566731,
+      45.5045569
+    ],
+    [
+      -73.5566835,
+      45.5045423
+    ],
+    [
+      -73.5566727,
+      45.5045376
+    ],
+    [
+      -73.5566977,
+      45.5044998
+    ],
+    [
+      -73.5567048,
+      45.5045032
+    ],
+    [
+      -73.5567165,
+      45.5044869
+    ]
+  ],
+  "osmWay": 4320792,
+  "dimensions": {
+    "width": 41,
+    "naveLength": 77,
+    "towerHeight": 66,
+    "footprintLength": 109.5
+  },
+  "elevationDatum": "Ground-relative y=0 on the flat Peregrine map; not sea level or surveyed terrain.",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "note": "Exterior only. Sourced tower/nave dimensions; roofs, chapel, openings, statuary and material colours are visual estimates. Permanent architecture without restoration scaffolding.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/basilique-notre-dame-near.glb",
+      "bytes": 2018444,
+      "triangles": 29382,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -9.050414085388184,
+          -7.629394644936838e-7,
+          -18.466814041137695
+        ],
+        "max": [
+          101.82780456542969,
+          66,
+          65.20783996582031
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/basilique-notre-dame-far.glb",
+      "bytes": 962856,
+      "triangles": 14100,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -9.050414085388184,
+          -7.629394644936838e-7,
+          -18.466814041137695
+        ],
+        "max": [
+          101.82780456542969,
+          66,
+          65.20783996582031
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/basilique-notre-dame-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "grande-roue-montreal",
+  "name": "La Grande Roue de Montréal",
+  "origin": [
+    -73.548657525,
+    45.50847625
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "height": 60,
+  "diameter": 56.64,
+  "hubHeight": 31.48,
+  "cabins": 42,
+  "bearing": 177.98330793181117,
+  "elevationDatum": "Local plaza = y 0 on the flat basemap; no sea-level elevation applied",
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "60m height and 42 cabins confirmed by operator/manufacturer. 56.64m rim diameter and bearing derived from OSM outline; hub, supports and cabins are visual approximations. Static upright cabins; no textures or decoder.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/grande-roue-montreal-near.glb",
+      "bytes": 759096,
+      "triangles": 19762,
+      "drawCalls": 6
+    },
+    "far": {
+      "url": "/models/buildings/grande-roue-montreal-far.glb",
+      "bytes": 284328,
+      "triangles": 5888,
+      "drawCalls": 6
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/grande-roue-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

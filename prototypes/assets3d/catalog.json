@@ -1,0 +1,883 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "samuel-de-champlain",
+      "name": "Samuel-De Champlain",
+      "kind": "bridge",
+      "location": "Montréal · Brossard, Québec",
+      "status": "ready",
+      "description": "Three decks over the Saint Lawrence, carried by inclined twin piers and open W-shaped caps.",
+      "manifest": "/models/landmarks/samuel-de-champlain.json",
+      "source": {
+        "path": "src/peregrine/landmarks/champlain-geometry.js",
+        "build": "pnpm build:champlain",
+        "provenance": "Original procedural geometry; mapped alignment © OpenStreetMap contributors (ODbL). Supplied Flight Simulator archives were inspected as references only; no converted geometry or textures are included.",
+        "references": [
+          {
+            "label": "Alignment · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Design · SYSTRA",
+            "url": "https://www.systra.com/ibt/project/samuel-de-champlain-bridge-montreal-canada/"
+          },
+          {
+            "label": "Pylon construction",
+            "url": "https://www.samueldechamplainbridge.ca/2017/06/current-upcoming-activities-cable-stayed-bridge/"
+          },
+          {
+            "label": "Pier cap construction",
+            "url": "https://www.samueldechamplainbridge.ca/2017/06/the-first-pier-caps-of-the-new-champlain-bridge-are-installed/"
+          },
+          {
+            "label": "Structure · Arup",
+            "url": "https://www.arup.com/projects/samuel-de-champlain-bridge-corridor/"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/champlain-geometry.js"
+      },
+      "inspection": {
+        "url": "/bridge-preview.html?view=piers",
+        "views": [
+          {
+            "label": "Piers",
+            "url": "/bridge-preview.html?view=piers"
+          },
+          {
+            "label": "Tower",
+            "url": "/bridge-preview.html?view=tower"
+          },
+          {
+            "label": "Overview",
+            "url": "/bridge-preview.html?view=overview"
+          },
+          {
+            "label": "Drive",
+            "url": "/bridge-preview.html?view=drive"
+          }
+        ]
+      },
+      "notes": "Approximate elevations and structural details; not surveyed. Both LODs checked in the app; Tesla hardware performance remains unmeasured.",
+      "documentation": "docs/assets/samuel-de-champlain.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "pont-victoria",
+      "name": "Pont Victoria",
+      "kind": "bridge",
+      "location": "Montréal · Saint-Lambert, Québec",
+      "status": "ready",
+      "description": "Repeated through-trusses around two rail tracks, narrow outer road decks, stone icebreaker piers and the lock lift towers.",
+      "manifest": "/models/landmarks/pont-victoria.json",
+      "source": {
+        "path": "src/peregrine/landmarks/montreal-bridges-geometry.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry authored 2026-09-27 from public structural/photo references; mapped frame © OpenStreetMap contributors (ODbL 1.0). No captured mesh, third-party texture or simulator asset is shipped.",
+        "references": [
+          {
+            "label": "Québec heritage inventory",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/detail.do?id=190922&methode=consulter&type=bien"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-victoria&view=piers",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-victoria&view=overview"
+          },
+          {
+            "label": "Structure",
+            "url": "/asset-preview.html?asset=pont-victoria&view=structure"
+          },
+          {
+            "label": "Piers",
+            "url": "/asset-preview.html?asset=pont-victoria&view=piers"
+          },
+          {
+            "label": "Drive",
+            "url": "/asset-preview.html?asset=pont-victoria&view=drive"
+          }
+        ]
+      },
+      "notes": "Visual approximation, not surveyed. Deck heights are adapted to the flat map; fine fabrication details are simplified. Lift span shown lowered; the separate rail diversion is outside this road bridge model.",
+      "documentation": "docs/assets/pont-victoria.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "pont-jacques-cartier",
+      "name": "Pont Jacques-Cartier",
+      "kind": "bridge",
+      "location": "Montréal · Longueuil, Québec",
+      "status": "ready",
+      "description": "Green cantilever trusses, four finials, curved Montréal approaches and a raised Seaway span.",
+      "manifest": "/models/landmarks/pont-jacques-cartier.json",
+      "source": {
+        "path": "src/peregrine/landmarks/montreal-bridges-geometry.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry authored 2026-09-27 from public structural/photo references; mapped frame © OpenStreetMap contributors (ODbL 1.0). No captured mesh, third-party texture or simulator asset is shipped.",
+        "references": [
+          {
+            "label": "JCCBI technical and structural reference",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/about/"
+          },
+          {
+            "label": "CSCE · span dimensions",
+            "url": "https://legacy.csce.ca/en/historic-site/jacques-cartier-bridge/"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-jacques-cartier&view=structure",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier&view=overview"
+          },
+          {
+            "label": "Structure",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier&view=structure"
+          },
+          {
+            "label": "Piers",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier&view=piers"
+          },
+          {
+            "label": "Drive",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier&view=drive"
+          }
+        ]
+      },
+      "notes": "Visual approximation, not surveyed. Deck heights are adapted to the flat map; fine fabrication details are simplified. Five-lane deck; live provider lane markings take precedence. Island pavilion included with its mapped footprint and a simplified height beneath the flat-map roadway.",
+      "documentation": "docs/assets/pont-jacques-cartier.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "biosphere-montreal",
+      "name": "Biosphère de Montréal",
+      "kind": "building",
+      "location": "Île Sainte-Hélène · Montréal, Québec",
+      "status": "ready",
+      "description": "An open geodesic double shell around the museum pavilion, with no acrylic skin.",
+      "manifest": "/models/buildings/biosphere-montreal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/biosphere-geometry.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry authored 2026-09-27 from public structural/photo references; mapped frame © OpenStreetMap contributors (ODbL 1.0). No captured mesh, third-party texture or simulator asset is shipped.",
+        "references": [
+          {
+            "label": "Espace pour la vie · the Biosphère",
+            "url": "https://m.espacepourlavie.ca/en/about-biosphere"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/biosphere-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=biosphere-montreal&view=facade",
+        "views": [
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=biosphere-montreal&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=biosphere-montreal&view=roof"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=biosphere-montreal&view=overview"
+          }
+        ]
+      },
+      "notes": "Visual approximation, not surveyed. Museum volumes and geodesic frequencies are simplified.",
+      "documentation": "docs/assets/biosphere-montreal.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "farine-five-roses",
+      "name": "Farine Five Roses — mill and silos",
+      "kind": "building",
+      "location": "930–990 rue Mill · Montréal, Québec",
+      "status": "ready",
+      "description": "Brick mill, stepped industrial volumes, cylindrical silo banks, open rooftop steelwork and two correctly oriented red FARINE FIVE ROSES signs.",
+      "manifest": "/models/buildings/farine-five-roses.json",
+      "source": {
+        "path": "src/peregrine/landmarks/five-roses-geometry.js",
+        "build": "pnpm build:five-roses",
+        "provenance": "Original procedural geometry and original letter outlines, authored 2026-09-28. OSM-derived footprint © OpenStreetMap contributors (ODbL 1.0). Photos consulted for proportion only; no third-party mesh, font or texture shipped.",
+        "references": [
+          {
+            "label": "Ville de Montréal — protected signs, 15-foot letters and two signs",
+            "url": "https://montreal.ca/articles/enseignes-dinteret-patrimonial-dans-ville-marie-7748"
+          },
+          {
+            "label": "OCPM heritage inventory — complex and ten-storey mill",
+            "url": "https://ocpm.qc.ca/sites/default/files/pdf/P103/3-4-9_annexe_iii_fiches_4.pdf"
+          },
+          {
+            "label": "OSM industrial footprint",
+            "url": "https://www.openstreetmap.org/way/1391560364"
+          },
+          {
+            "label": "Tourisme Montréal — landmark identity",
+            "url": "https://www.mtl.org/en/experience/montreal-most-famous-icons"
+          },
+          {
+            "label": "Wikimedia — mill and silo photograph by Chicoutimi",
+            "url": "https://commons.wikimedia.org/wiki/File:Montreal_-_Farine_five_roses.jpg"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/five-roses-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=farine-five-roses",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=farine-five-roses&view=overview"
+          },
+          {
+            "label": "River facade",
+            "url": "/asset-preview.html?asset=farine-five-roses&view=facade"
+          },
+          {
+            "label": "Opposite facade",
+            "url": "/asset-preview.html?asset=farine-five-roses&view=reverse"
+          },
+          {
+            "label": "Lettering",
+            "url": "/asset-preview.html?asset=farine-five-roses&view=sign"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=farine-five-roses&view=roof"
+          }
+        ]
+      },
+      "notes": "Heights other than the 4.572m letters, internal silo arrangement and steel member sizes are estimates. Ground datum y=0, no surveyed terrain. Static restrained red night emission; no flash cycle.",
+      "documentation": "docs/assets/farine-five-roses.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "orange-julep",
+      "name": "Gibeau Orange Julep",
+      "kind": "building",
+      "location": "7700 Boulevard Décarie · Montréal, Québec",
+      "status": "ready",
+      "description": "Truncated orange shell with curved service windows and canopy, recessed entrance and a separate lettered orange-slice roadside sign.",
+      "manifest": "/models/buildings/orange-julep.json",
+      "source": {
+        "path": "src/peregrine/landmarks/orange-julep-geometry.js",
+        "build": "pnpm build:orange-julep",
+        "provenance": "Original procedural geometry authored 2026-09-27 from operator history and public photo references. Mapped footprint © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, font, reference photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Official operator",
+            "url": "https://orangejulep.ca/"
+          },
+          {
+            "label": "Operator history · nearly 60ft current orange",
+            "url": "https://orangejulep.ca/our-history/"
+          },
+          {
+            "label": "OSM footprint · way 364067316",
+            "url": "https://www.openstreetmap.org/way/364067316"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:Gibeau_Orange_Julep"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/orange-julep-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=orange-julep&view=facade",
+        "views": [
+          {
+            "label": "Service frontage",
+            "url": "/asset-preview.html?asset=orange-julep&view=facade"
+          },
+          {
+            "label": "Rear entrance",
+            "url": "/asset-preview.html?asset=orange-julep&view=structure"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=orange-julep&view=roof"
+          },
+          {
+            "label": "Building and sign",
+            "url": "/asset-preview.html?asset=orange-julep&view=overview"
+          },
+          {
+            "label": "Roadside sign",
+            "url": "/asset-preview.html?asset=orange-julep&view=signage"
+          }
+        ]
+      },
+      "notes": "18.3m sphere follows operator near-60ft account; secondary 40ft reports conflict. Mapped envelope ~21.1m. Height, facade bearing and roadside sign offset are photo estimates; flat-map grade y=0. No Tesla hardware measurements.",
+      "documentation": "docs/assets/orange-julep.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "place-ville-marie",
+      "name": "Place Ville Marie + L’Anneau",
+      "kind": "building",
+      "location": "Centre-ville · Montréal, Québec",
+      "status": "ready",
+      "description": "Cruciform aluminium tower, recessed roof crown and beacon above skylit banking halls, with L’Anneau at the Cathcart / McGill College entrance.",
+      "manifest": "/models/buildings/place-ville-marie.json",
+      "source": {
+        "path": "src/peregrine/landmarks/place-ville-marie-geometry.js",
+        "build": "pnpm build:place-ville-marie",
+        "provenance": "Original procedural geometry authored 2026-09-27. Mapped base way 108457145 and ring node 11191781037 © OpenStreetMap contributors (ODbL 1.0). Primary architectural photographs/plans used for proportion studies only; no captured mesh or third-party texture shipped.",
+        "references": [
+          {
+            "label": "Tourisme Montréal",
+            "url": "https://www.mtl.org/fr/quoi-faire/culture-arts-patrimoine/place-ville-marie"
+          },
+          {
+            "label": "Tower architect · Pei Cobb Freed & Partners",
+            "url": "https://www.pcf-p.com/projects/place-ville-marie/"
+          },
+          {
+            "label": "Tower engineer · NCK",
+            "url": "https://nck.ca/realisations/place-ville-marie-1-pvm-tour-principale/"
+          },
+          {
+            "label": "Building owner · history and rooftop beacon",
+            "url": "https://placevillemarie.com/fr/Histoire"
+          },
+          {
+            "label": "Ring architect · CCxA",
+            "url": "https://ccxa.ca/en/projects/the-ring/"
+          },
+          {
+            "label": "Ring constructor · JCB",
+            "url": "https://www.jcb.ca/en/project/the-ring-at-place-ville-marie"
+          },
+          {
+            "label": "Mapped banking hall base",
+            "url": "https://www.openstreetmap.org/way/108457145"
+          },
+          {
+            "label": "Mapped L’Anneau",
+            "url": "https://www.openstreetmap.org/node/11191781037"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/place-ville-marie-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=place-ville-marie",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=place-ville-marie&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=place-ville-marie&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=place-ville-marie&view=roof"
+          },
+          {
+            "label": "Ring",
+            "url": "/asset-preview.html?asset=place-ville-marie&view=ring"
+          }
+        ]
+      },
+      "notes": "Y=0 flat-map grade; compact supported plaza, no sea-level lift. Tower envelope 188.1 m; beacon reaches 191.1 m. Facade bays, skylights, crown and ring tube/clearance are visual estimates. Surrounding PVM towers remain untouched. Tesla hardware cost unmeasured.",
+      "documentation": "docs/assets/place-ville-marie.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "habitat-67",
+      "name": "Habitat 67",
+      "kind": "building",
+      "location": "Cité du Havre · Montréal, Québec",
+      "status": "ready",
+      "description": "Three stepped concrete housing pyramids with interlocking L-paired modules, terraces, open cores and elevated pedestrian streets.",
+      "manifest": "/models/buildings/habitat-67.json",
+      "source": {
+        "path": "src/peregrine/landmarks/habitat-67-geometry.js",
+        "build": "pnpm build:habitat-67",
+        "provenance": "Original procedural exterior authored 2026-09-28 from primary architectural and structural references. OSM building outline © OpenStreetMap contributors (ODbL 1.0). No third-party mesh or texture.",
+        "references": [
+          {
+            "label": "Habitat 67 Heritage Foundation",
+            "url": "https://habitat67foundation.com/project"
+          },
+          {
+            "label": "Safdie Architects · project and photos",
+            "url": "https://www.safdiearchitects.com/projects/habitat-67"
+          },
+          {
+            "label": "Komocki · original engineering paper",
+            "url": "https://doi.org/10.15554/pcij.02011967.67.70"
+          },
+          {
+            "label": "Québec heritage inventory",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/detail.do?id=98890&methode=consulter&type=bien"
+          },
+          {
+            "label": "OSM building outline · way 440195613",
+            "url": "https://www.openstreetmap.org/way/440195613"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/habitat-67-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=habitat-67",
+        "views": [
+          {
+            "label": "Street façade",
+            "url": "/asset-preview.html?asset=habitat-67&view=facade"
+          },
+          {
+            "label": "River façade",
+            "url": "/asset-preview.html?asset=habitat-67&view=river"
+          },
+          {
+            "label": "Terraces",
+            "url": "/asset-preview.html?asset=habitat-67&view=terraces"
+          },
+          {
+            "label": "Cores / voids",
+            "url": "/asset-preview.html?asset=habitat-67&view=voids"
+          },
+          {
+            "label": "Roof / footprint",
+            "url": "/asset-preview.html?asset=habitat-67&view=roof"
+          }
+        ]
+      },
+      "notes": "Explicit 354-module composition approximates the researched zigzag footprint, three pyramids and two lower saddles; not apartment-accurate. Grounded flat-map plaza; no surveyed terrain or elevation. Software checks do not measure Tesla hardware.",
+      "documentation": "docs/assets/habitat-67.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "stade-olympique",
+      "name": "Stade olympique + Tour de Montréal",
+      "kind": "building",
+      "location": "Parc olympique · Montréal, Québec",
+      "status": "ready",
+      "description": "March 2026 construction state: oval ribbed bowl, open technical ring and 165 m inclined tower. The central roof is absent.",
+      "manifest": "/models/buildings/stade-olympique.json",
+      "source": {
+        "path": "src/peregrine/landmarks/stade-olympique-geometry.js",
+        "build": "pnpm build:stade-olympique",
+        "provenance": "Original procedural geometry authored 2026-09-27. Placement/footprints © OpenStreetMap contributors (ODbL 1.0). Official photographs informed proportions; no photo, scan, texture or third-party mesh is shipped.",
+        "references": [
+          {
+            "label": "Parc olympique — dimensions and height datums",
+            "url": "https://parcolympique.qc.ca/a-propos/montreal-ville-olympique/donnees-et-statistiques/"
+          },
+          {
+            "label": "Parc olympique — 34 full and 4 truncated consoles",
+            "url": "https://parcolympique.qc.ca/wp-content/uploads/2011/10/A_architecture_genie.pdf"
+          },
+          {
+            "label": "Technical ring completed 2 March 2026",
+            "url": "https://toiture.parcolympique.qc.ca/2026/03/anneau-technique-complete-une-etape-majeure-franchie-au-stade-olympique/"
+          },
+          {
+            "label": "Official construction photos — March and September 2026",
+            "url": "https://toiture.parcolympique.qc.ca/le-chantier-galerie-photos/"
+          },
+          {
+            "label": "Official roof project phases — reopening 2028",
+            "url": "https://toiture.parcolympique.qc.ca/phases-du-projet/"
+          },
+          {
+            "label": "OSM stadium footprint",
+            "url": "https://www.openstreetmap.org/way/108505523"
+          },
+          {
+            "label": "OSM tower/centre footprint",
+            "url": "https://www.openstreetmap.org/way/20213158"
+          },
+          {
+            "label": "Starting visitor reference — Tourisme Montréal",
+            "url": "https://www.mtl.org/en/experience/go-gold-montreal-olympic-park"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/stade-olympique-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=stade-olympique",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=stade-olympique&view=overview"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=stade-olympique&view=structure"
+          },
+          {
+            "label": "Street facade",
+            "url": "/asset-preview.html?asset=stade-olympique&view=facade"
+          },
+          {
+            "label": "Open roof / ring",
+            "url": "/asset-preview.html?asset=stade-olympique&view=roof"
+          }
+        ]
+      },
+      "notes": "Dated March 2026 state, not a live construction feed: old membrane removed; future rigid roof not installed. Tower sections, windows, shell, seats and hanging cables approximate. Cranes, winter snow and temporary equipment omitted. Grounded on the flat map, not surveyed terrain. Tesla hardware performance unmeasured.",
+      "documentation": "docs/assets/stade-olympique.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "grande-roue-montreal",
+      "name": "La Grande Roue de Montréal",
+      "kind": "building",
+      "location": "Île du bassin Bonsecours · Vieux-Port, Montréal",
+      "status": "ready",
+      "description": "Open white observation wheel with paired trussed spokes, six splayed supports and 42 upright enclosed cabins.",
+      "manifest": "/models/buildings/grande-roue-montreal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/grande-roue-geometry.js",
+        "build": "pnpm build:grande-roue",
+        "provenance": "Original procedural geometry authored 2026-09-27. Placement and outline © OpenStreetMap contributors (ODbL 1.0). Manufacturer and operator photographs used only for visual interpretation; no third-party mesh, image or texture is shipped.",
+        "references": [
+          {
+            "label": "Old Port · 60m height and 42 cabins",
+            "url": "https://www.oldportofmontreal.com/activity/montreal-observation-wheel"
+          },
+          {
+            "label": "Operator · identity and opening",
+            "url": "https://lagranderouedemontreal.com/about-us/"
+          },
+          {
+            "label": "Dutch Wheels · manufacturer and photo gallery",
+            "url": "https://www.dutchwheels.com/en/portfolio/la-grande-roue-de-montreal"
+          },
+          {
+            "label": "OSM attraction footprint 1097403710",
+            "url": "https://www.openstreetmap.org/way/1097403710"
+          },
+          {
+            "label": "OSM attribution and ODbL",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/grande-roue-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=grande-roue-montreal&view=facade",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=grande-roue-montreal&view=overview"
+          },
+          {
+            "label": "Wheel plane",
+            "url": "/asset-preview.html?asset=grande-roue-montreal&view=facade"
+          },
+          {
+            "label": "Axle and rim",
+            "url": "/asset-preview.html?asset=grande-roue-montreal&view=structure"
+          },
+          {
+            "label": "Supports and boarding",
+            "url": "/asset-preview.html?asset=grande-roue-montreal&view=piers"
+          },
+          {
+            "label": "Above",
+            "url": "/asset-preview.html?asset=grande-roue-montreal&view=roof"
+          }
+        ]
+      },
+      "notes": "60m overall height and 42 cabins are sourced; rim diameter 56.64m and plane are OSM-derived estimates. Member sizes, gondolas, hub and boarding deck are visual approximations. Flat plaza datum, static upright cabins, opaque glazing and restrained lighting. Cafés remain map geometry.",
+      "documentation": "docs/assets/grande-roue-montreal.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "basilique-notre-dame",
+      "name": "Basilique Notre-Dame de Montréal",
+      "kind": "building",
+      "location": "Place d’Armes · Vieux-Montréal, Québec",
+      "status": "ready",
+      "description": "Twin square Gothic towers, a recessed triple-arch portico, crenellated façade, long nave and rear Sacré-Cœur chapel complex.",
+      "manifest": "/models/buildings/basilique-notre-dame.json",
+      "source": {
+        "path": "src/peregrine/landmarks/basilique-notre-dame-geometry.js",
+        "build": "pnpm build:basilique-notre-dame",
+        "provenance": "Original procedural exterior authored 2026-09-27; OSM way 4320792 footprint © OpenStreetMap contributors (ODbL 1.0). Official/heritage photographs inform proportions only; no captured model or third-party texture is distributed.",
+        "references": [
+          {
+            "label": "Québec religious heritage · dimensions and history",
+            "url": "https://www.patrimoine-religieux.lieuxdeculte.qc.ca/fr/pdf/documents/Notre-Dame_de_Montreal.pdf"
+          },
+          {
+            "label": "Official basilica · annotated exterior restoration drawing",
+            "url": "https://www.basiliquenotredame.ca/en/our-notre-dame-basilica"
+          },
+          {
+            "label": "Parks Canada · character-defining exterior and photographs",
+            "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=13533"
+          },
+          {
+            "label": "Québec heritage inventory · identity",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?id=100116&methode=consulter&type=bien"
+          },
+          {
+            "label": "OSM building footprint · way 4320792",
+            "url": "https://www.openstreetmap.org/way/4320792"
+          },
+          {
+            "label": "Tourisme Montréal · starting reference",
+            "url": "https://www.mtl.org/en/experience/montreal-most-famous-icons"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/basilique-notre-dame-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=basilique-notre-dame&view=facade",
+        "views": [
+          {
+            "label": "Façade",
+            "url": "/asset-preview.html?asset=basilique-notre-dame&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=basilique-notre-dame&view=roof"
+          },
+          {
+            "label": "Rear chapel",
+            "url": "/asset-preview.html?asset=basilique-notre-dame&view=rear"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=basilique-notre-dame&view=overview"
+          }
+        ]
+      },
+      "notes": "66 m towers and 77 × 41 m nave from heritage reference; mapped overall complex about 109 m. Ground-relative flat map, no survey elevation. Roof heights, chapel massing, tracery and statues simplified; excludes temporary scaffolding and interiors. No road surface or plaza replacement. Tesla hardware unmeasured.",
+      "documentation": "docs/assets/basilique-notre-dame.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "tour-de-l-horloge",
+      "name": "Tour de l’Horloge",
+      "kind": "building",
+      "location": "Quai de l’Horloge · Vieux-Port de Montréal, Québec",
+      "status": "ready",
+      "description": "White waterfront memorial: four clock faces, open observation crown, tall square shaft, curtain wall and smaller turret.",
+      "manifest": "/models/buildings/tour-de-l-horloge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/tour-de-l-horloge-geometry.js",
+        "build": "pnpm build:tour-de-l-horloge",
+        "provenance": "Original procedural geometry authored 2026-09-27 from primary historical and photographic references. Geographic plan © OpenStreetMap contributors, ODbL 1.0. No third-party mesh, texture or photograph is shipped.",
+        "references": [
+          {
+            "label": "Old Port · centennial history and heights",
+            "url": "https://www.oldportofmontreal.com/blog/post/clock-tower-celebrates-its-centennial"
+          },
+          {
+            "label": "Parks Canada · heritage description and photo",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_fhbro_eng.aspx?id=7469"
+          },
+          {
+            "label": "Veterans Affairs · memorial photographs",
+            "url": "https://www.veterans.gc.ca/en/remembrance/memorials/canada/montreal-sailors-memorial-clock-tower"
+          },
+          {
+            "label": "OSM mapped ensemble · way 161206731",
+            "url": "https://www.openstreetmap.org/way/161206731"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/tour-de-l-horloge-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=tour-de-l-horloge",
+        "views": [
+          {
+            "label": "Ensemble",
+            "url": "/asset-preview.html?asset=tour-de-l-horloge&view=overview"
+          },
+          {
+            "label": "Four dials / façade",
+            "url": "/asset-preview.html?asset=tour-de-l-horloge&view=facade"
+          },
+          {
+            "label": "Open crown",
+            "url": "/asset-preview.html?asset=tour-de-l-horloge&view=roof"
+          },
+          {
+            "label": "Wall and turret",
+            "url": "/asset-preview.html?asset=tour-de-l-horloge&view=structure"
+          }
+        ]
+      },
+      "notes": "45 m main and 12.8 m turret heights are published. Clock size, tier heights and wall are estimates. Grounded at flat quay y=0; seawall relief is omitted. Clock hands static; no interiors or Tesla hardware benchmark.",
+      "documentation": "docs/assets/tour-de-l-horloge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "oratoire-saint-joseph",
+      "name": "Oratoire Saint-Joseph",
+      "kind": "building",
+      "status": "ready",
+      "location": "Montréal, Québec, Canada",
+      "description": "Copper dome and octagonal drum above the stone basilica, open colonnade, crypt terrace and monumental approach stairs.",
+      "notes": "Original procedural model; local hillside compressed to 24 m at basilica floor with solid foundations. Vehicle roads are unchanged. Fine sculpture, interior, surrounding annexes and modern reception complex are omitted.",
+      "manifest": "/models/buildings/oratoire-saint-joseph.json",
+      "documentation": "docs/assets/oratoire-saint-joseph.md",
+      "source": {
+        "path": "src/peregrine/landmarks/oratoire-saint-joseph-geometry.js",
+        "build": "pnpm build:oratoire-saint-joseph",
+        "provenance": "Authored 2026-09-27 from primary dimensions, reference photos and OSM footprint. Original procedural geometry, no copied mesh or photo textures. Placement © OpenStreetMap contributors, ODbL. Reference photographs are not redistributed.",
+        "references": [
+          {
+            "label": "Montréal landscape and access history",
+            "url": "https://montroyal.montreal.ca/paysage-oratoire-saint-joseph-mont-royal"
+          },
+          {
+            "label": "Oratory must-sees",
+            "url": "https://saint-joseph.org/en/the-staples/"
+          },
+          {
+            "label": "Oratory basilica dimensions and datums",
+            "url": "https://saint-joseph.org/en/incontournable/the-basilica/"
+          },
+          {
+            "label": "OSM basilica relation 6275154",
+            "url": "https://www.openstreetmap.org/relation/6275154"
+          },
+          {
+            "label": "OSM mapped dome",
+            "url": "https://www.openstreetmap.org/way/132499529"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/oratoire-saint-joseph-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=oratoire-saint-joseph",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=oratoire-saint-joseph&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=oratoire-saint-joseph&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=oratoire-saint-joseph&view=roof"
+          },
+          {
+            "label": "Approach",
+            "url": "/asset-preview.html?asset=oratoire-saint-joseph&view=approach"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    },
+    {
+      "id": "pont-honore-mercier",
+      "name": "Pont Honoré-Mercier",
+      "kind": "bridge",
+      "location": "LaSalle · Kahnawà:ke, Québec",
+      "status": "ready",
+      "description": "Paired river deck trusses and steel arches, a shared high Seaway through-truss and branching concrete approach viaducts.",
+      "manifest": "/models/landmarks/pont-honore-mercier.json",
+      "source": {
+        "path": "src/peregrine/landmarks/pont-honore-mercier-geometry.js",
+        "build": "pnpm build:pont-honore-mercier",
+        "provenance": "Original procedural geometry authored 2026-09-27. Current directional roads and bridge footprints © OpenStreetMap contributors (ODbL 1.0). Primary JCCBI/Québec photos studied; no image, captured mesh or texture redistributed.",
+        "references": [
+          {
+            "label": "JCCBI current technical data",
+            "url": "https://www.jacquescartierchamplain.ca/en/structures/honore-mercier-bridge/about/"
+          },
+          {
+            "label": "JCCBI history and main arch dimension",
+            "url": "https://www.jacquescartierchamplain.ca/en/structures/honore-mercier-bridge/history/"
+          },
+          {
+            "label": "Québec current structures, July 2026 and aerial photograph",
+            "url": "https://www.quebec.ca/transports/infrastructures-projets/projets/projets-routiers/montreal/pont-honore-mercier"
+          },
+          {
+            "label": "OSM attribution",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/pont-honore-mercier-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-honore-mercier&view=structure",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-honore-mercier&view=overview"
+          },
+          {
+            "label": "Arches",
+            "url": "/asset-preview.html?asset=pont-honore-mercier&view=structure"
+          },
+          {
+            "label": "Piers",
+            "url": "/asset-preview.html?asset=pont-honore-mercier&view=piers"
+          },
+          {
+            "label": "Driving",
+            "url": "/asset-preview.html?asset=pont-honore-mercier&view=drive"
+          }
+        ]
+      },
+      "notes": "Vertical datum, steel sections, pier spacing and Seaway span are visual approximations. Current bridge only; proposed replacement and adjacent railway excluded. Complete near/far models are inspection exports; runtime loads only the four partitions.",
+      "documentation": "docs/assets/pont-honore-mercier.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+    }
+  ]
+}

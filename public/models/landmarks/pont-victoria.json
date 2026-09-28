@@ -1,0 +1,41 @@
+{
+  "id": "pont-victoria",
+  "name": "Pont Victoria",
+  "origin": [
+    -73.5298,
+    45.4915
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "length": 2003.654128435848,
+  "width": 22,
+  "stations": {
+    "lock": 1960.7012141058076
+  },
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "Original procedural visual model. Heights, member sections, details and LOD simplification are approximate; no third-party model or texture is included.",
+  "assets": {
+    "near": {
+      "url": "/models/landmarks/pont-victoria-near.glb",
+      "bytes": 3354528,
+      "triangles": 61068,
+      "drawCalls": 29
+    },
+    "far": {
+      "url": "/models/landmarks/pont-victoria-far.glb",
+      "bytes": 1163652,
+      "triangles": 25592,
+      "drawCalls": 5
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

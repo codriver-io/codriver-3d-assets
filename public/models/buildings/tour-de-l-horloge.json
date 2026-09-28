@@ -1,0 +1,64 @@
+{
+  "id": "tour-de-l-horloge",
+  "name": "Tour de l’Horloge",
+  "origin": [
+    -73.5457102,
+    45.5122339
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "height": 45,
+  "turretHeight": 12.8,
+  "wallBearing": 281.69230528369815,
+  "elevationDatum": "Base y=0 at the flat rendered quay. No orthometric/sea-level datum; quay seawall relief omitted.",
+  "alignmentAttribution": "© OpenStreetMap contributors, ODbL 1.0; way 161206731 version 10, retrieved 2026-09-27.",
+  "note": "Original texture-free procedural visual model. Published tower/turret heights; mapped plan, photograph-estimated crown, wall height and details. Static clock hands.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-de-l-horloge-near.glb",
+      "bytes": 207704,
+      "triangles": 4076,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -22.863219467323233,
+          -5.9604645663569045e-9,
+          -6.442134621030896
+        ],
+        "max": [
+          4.695523640857062,
+          45,
+          4.346056006164893
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-de-l-horloge-far.glb",
+      "bytes": 101340,
+      "triangles": 1892,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -22.863219467323233,
+          -5.9604645663569045e-9,
+          -6.442134621030896
+        ],
+        "max": [
+          4.695523640857062,
+          45,
+          4.346056006164893
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/tour-de-l-horloge-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

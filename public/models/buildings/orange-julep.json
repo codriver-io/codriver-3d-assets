@@ -1,0 +1,68 @@
+{
+  "id": "orange-julep",
+  "name": "Gibeau Orange Julep",
+  "origin": [
+    -73.65678575,
+    45.49571015
+  ],
+  "diameter": 18.3,
+  "height": 15.8,
+  "sphereCenterY": 6.65,
+  "frontageBearing": 55,
+  "sign": [
+    49,
+    1
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude or road lift.",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "note": "18.3m shell from operator near-60ft account; footprint envelope ~21.1m. Frontage, heights, signage and sign position are photo estimates, not surveyed. No reference photos or external textures shipped.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/orange-julep-near.glb",
+      "bytes": 511644,
+      "triangles": 13400,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -9.167818069458008,
+          -4.7683716530855236e-8,
+          -9.167818069458008
+        ],
+        "max": [
+          50.20063400268555,
+          15.944999694824219,
+          9.167818069458008
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/orange-julep-far.glb",
+      "bytes": 153096,
+      "triangles": 3048,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -9.148185729980469,
+          -4.7683716530855236e-8,
+          -9.148185729980469
+        ],
+        "max": [
+          50.20063400268555,
+          15.944999694824219,
+          9.148185729980469
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/orange-julep-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

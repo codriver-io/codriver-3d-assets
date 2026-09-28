@@ -1,0 +1,41 @@
+{
+  "name": "codriver-3d-assets",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Open Montr\u00e9al landmark models, procedural Three.js source and a public 3D library.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.2.2",
+  "scripts": {
+    "build": "node scripts/build-asset-catalog.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "models:build": "node scripts/build-all.mjs",
+    "models:license": "node scripts/license-models.mjs",
+    "deploy": "pnpm build && wrangler pages deploy dist --project-name codriver-3d-assets --branch main",
+    "build:champlain": "node scripts/build-champlain.mjs",
+    "build:montreal-landmarks": "node scripts/build-montreal-landmarks.mjs",
+    "build:five-roses": "node scripts/build-five-roses.mjs",
+    "build:orange-julep": "node scripts/build-orange-julep.mjs",
+    "build:place-ville-marie": "node scripts/build-place-ville-marie.mjs",
+    "build:habitat-67": "node scripts/build-habitat-67.mjs",
+    "build:stade-olympique": "node scripts/build-stade-olympique.mjs",
+    "build:grande-roue": "node scripts/build-grande-roue.mjs",
+    "build:basilique-notre-dame": "node scripts/build-basilique-notre-dame.mjs",
+    "build:oratoire-saint-joseph": "node scripts/build-oratoire-saint-joseph.mjs",
+    "build:pont-honore-mercier": "node scripts/build-pont-honore-mercier.mjs",
+    "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
+    "test:browser": "node scripts/test-browser.mjs"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.62.1",
+    "wrangler": "4.131.1"
+  }
+}

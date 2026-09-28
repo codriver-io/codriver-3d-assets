@@ -1,0 +1,68 @@
+{
+  "id": "stade-olympique",
+  "name": "Stade olympique + Tour de Montréal",
+  "origin": [
+    -73.5516429,
+    45.5578149
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "modeledState": "March 2026 — open central roof, completed replacement technical ring; simplified construction state",
+  "researchDate": "2026-09-27",
+  "dimensions": {
+    "stadiumLength": 284,
+    "stadiumWidth": 245,
+    "towerHeight": 165
+  },
+  "elevationDatum": "Local esplanade = y 0, adapted to flat map. 165 m tower above local ground; not 190 m above sea level.",
+  "alignmentAttribution": "© OpenStreetMap contributors, ODbL 1.0 — ways 108505523 and 20213158 — https://www.openstreetmap.org/copyright",
+  "note": "Original procedural visual model. Inclined shaft, shell, seats and hanging cables are simplified. No historical membrane or future rigid roof. No third-party texture or decoder.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stade-olympique-near.glb",
+      "bytes": 938416,
+      "triangles": 23396,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -128.0239715576172,
+          -2.0409748554229736,
+          -319.55865478515625
+        ],
+        "max": [
+          128.0239715576172,
+          165,
+          146.0814971923828
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stade-olympique-far.glb",
+      "bytes": 506936,
+      "triangles": 10900,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -128.2738800048828,
+          -2.0505340099334717,
+          -319.6391906738281
+        ],
+        "max": [
+          128.2738800048828,
+          165,
+          146.3313751220703
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/stade-olympique-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

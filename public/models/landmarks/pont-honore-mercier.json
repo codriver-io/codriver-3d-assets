@@ -1,0 +1,119 @@
+{
+  "id": "pont-honore-mercier",
+  "name": "Pont Honoré-Mercier",
+  "origin": [
+    -73.65852,
+    45.41025
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Visual metres above flat-map water/ground. Shore endpoints fit live HD roads; not surveyed or a navigational clearance.",
+  "parts": [
+    {
+      "id": "pont-honore-mercier-upstream",
+      "length": 1994.512570537217,
+      "stations": {
+        "main": 900.318952857463,
+        "channel": 1328.4585425652167,
+        "fork": 1521.682796569405
+      },
+      "width": 10.1
+    },
+    {
+      "id": "pont-honore-mercier-downstream",
+      "length": 2056.642391764965,
+      "stations": {
+        "main": 896.7691264876286,
+        "channel": 1324.7246474310534,
+        "fork": 1484.352358745033
+      },
+      "width": 10.1
+    },
+    {
+      "id": "pont-honore-mercier-laprairie_out",
+      "length": 380.07247253108784,
+      "stations": {},
+      "width": 10.1
+    },
+    {
+      "id": "pont-honore-mercier-laprairie_in",
+      "length": 400.75887213297926,
+      "stations": {},
+      "width": 6.8
+    }
+  ],
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "near/far are complete inspection models; named parts are independently fitted runtime partitions, never loaded alongside complete variants. No decoder, third-party mesh or photograph.",
+  "assets": {
+    "near": {
+      "url": "/models/landmarks/pont-honore-mercier-near.glb",
+      "bytes": 2915224,
+      "triangles": 74580,
+      "drawCalls": 38
+    },
+    "upstream-near": {
+      "url": "/models/landmarks/pont-honore-mercier-upstream-near.glb",
+      "bytes": 1271732,
+      "triangles": 30472,
+      "drawCalls": 14
+    },
+    "downstream-near": {
+      "url": "/models/landmarks/pont-honore-mercier-downstream-near.glb",
+      "bytes": 1318472,
+      "triangles": 32312,
+      "drawCalls": 14
+    },
+    "laprairie-out-near": {
+      "url": "/models/landmarks/pont-honore-mercier-laprairie_out-near.glb",
+      "bytes": 164568,
+      "triangles": 5908,
+      "drawCalls": 5
+    },
+    "laprairie-in-near": {
+      "url": "/models/landmarks/pont-honore-mercier-laprairie_in-near.glb",
+      "bytes": 162428,
+      "triangles": 5888,
+      "drawCalls": 5
+    },
+    "far": {
+      "url": "/models/landmarks/pont-honore-mercier-far.glb",
+      "bytes": 1522892,
+      "triangles": 40578,
+      "drawCalls": 18
+    },
+    "upstream-far": {
+      "url": "/models/landmarks/pont-honore-mercier-upstream-far.glb",
+      "bytes": 639380,
+      "triangles": 15726,
+      "drawCalls": 5
+    },
+    "downstream-far": {
+      "url": "/models/landmarks/pont-honore-mercier-downstream-far.glb",
+      "bytes": 676020,
+      "triangles": 17192,
+      "drawCalls": 5
+    },
+    "laprairie-out-far": {
+      "url": "/models/landmarks/pont-honore-mercier-laprairie_out-far.glb",
+      "bytes": 105320,
+      "triangles": 3852,
+      "drawCalls": 4
+    },
+    "laprairie-in-far": {
+      "url": "/models/landmarks/pont-honore-mercier-laprairie_in-far.glb",
+      "bytes": 104292,
+      "triangles": 3808,
+      "drawCalls": 4
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/pont-honore-mercier-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

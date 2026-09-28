@@ -1,0 +1,43 @@
+{
+  "id": "farine-five-roses",
+  "name": "Farine Five Roses — mill and silos",
+  "origin": [
+    -73.55135,
+    45.49176
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local ground y=0 on the flat Peregrine basemap; no sea-level elevation offset.",
+  "letterHeight": 4.572,
+  "estimatedRoofHeight": 39,
+  "signFaceBearings": [
+    96.88,
+    276.88
+  ],
+  "alignmentAttribution": "© OpenStreetMap contributors (ODbL 1.0), way 1391560364, retrieved 2026-09-28.",
+  "note": "Original procedural geometry. Industrial heights, silo interior arrangement and sign mounting dimensions are photo estimates; no reference imagery or textures shipped.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/farine-five-roses-near.glb",
+      "bytes": 1132368,
+      "triangles": 21464,
+      "drawCalls": 8
+    },
+    "far": {
+      "url": "/models/buildings/farine-five-roses-far.glb",
+      "bytes": 422684,
+      "triangles": 7424,
+      "drawCalls": 8
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/five-roses-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

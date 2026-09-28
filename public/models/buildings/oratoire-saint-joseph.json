@@ -1,0 +1,50 @@
+{
+  "id": "oratoire-saint-joseph",
+  "name": "Oratoire Saint-Joseph",
+  "origin": [
+    -73.6165115625,
+    45.49188
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "dimensions": {
+    "length": 105,
+    "transeptWidth": 65,
+    "domeDiameter": 39,
+    "exteriorAboveFloor": 97
+  },
+  "elevation": {
+    "datum": "Peregrine flat ground = 0; not a geodetic elevation",
+    "basilicaFloor": 24,
+    "crossTop": 121,
+    "foundationBottom": -0.4,
+    "published": "Oratory states outer dome 155 m above Queen Mary Road and 263 m above sea level, exterior height 97 m. No named geodetic vertical datum; do not use 263 as model height.",
+    "approximation": "Local rise compressed to 24 m, from implied roughly 58 m (155 minus 97); solid supports stay within building/pedestrian axis. Access roads retain provider height."
+  },
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "note": "Original texture-free procedural exterior. Roof, crypt, stairs and decorative details simplified; no survey accuracy or third-party geometry.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/oratoire-saint-joseph-near.glb",
+      "bytes": 438796,
+      "triangles": 8954,
+      "drawCalls": 6
+    },
+    "far": {
+      "url": "/models/buildings/oratoire-saint-joseph-far.glb",
+      "bytes": 255048,
+      "triangles": 4810,
+      "drawCalls": 6
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/gauthiergarnier/codriver-3d-assets/blob/main/src/peregrine/landmarks/oratoire-saint-joseph-geometry.js",
+  "geographicDataLicense": "ODbL-1.0"
+}

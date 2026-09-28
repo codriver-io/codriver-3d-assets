@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Champlain · Codriver</title>
+  <style>
+    :root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#20363b;background:#dce7e6;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0;overflow:hidden}canvas{display:block;width:100%;height:100%}#view{position:fixed;inset:0}
+    .panel{position:fixed;top:28px;left:28px;width:310px;background:#fbfcf7ed;border:1px solid #ffffffb3;border-radius:18px;padding:24px;box-shadow:0 12px 48px #15343515;backdrop-filter:blur(14px)}
+    .eyebrow{font-size:10px;font-weight:750;letter-spacing:2px;text-transform:uppercase;color:#587571;display:flex;justify-content:space-between;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:#548474;display:inline-block;margin-right:6px}
+    h1{font-size:32px;line-height:1.08;font-weight:550;letter-spacing:-1.3px;margin:22px 0 10px}p{font-size:12px;line-height:1.6;color:#617572;margin:0} .rule{height:1px;background:#dce4dd;margin:22px 0}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:20px 12px}.value{font-size:20px;letter-spacing:-.5px;font-weight:550}.label{font-size:10px;color:#69807a;margin-top:4px}button,a.action,select{font:inherit;font-size:12px;border:1px solid #d5dfd8;border-radius:8px;background:#fff;color:#2d4944;cursor:pointer;padding:10px 12px;text-decoration:none}button:hover,a.action:hover{background:#e8eee7}button[aria-pressed=true]{background:#294e46;border-color:#294e46;color:white}.buttons{display:flex;gap:6px;margin-top:20px}.buttons button{flex:1;padding:10px 4px}
+    .row{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:11px;margin-top:12px;color:#5d736b}.row select{width:144px;padding:8px}.download{display:block!important;text-align:center;margin-top:20px;font-weight:600!important}input[type=range]{width:100%;accent-color:#426b5d;margin:15px 0 0}#drive-position{font-size:10px;color:#5d736b;margin-top:4px;display:flex;justify-content:space-between}
+    .corner{position:fixed;right:28px;top:28px;display:flex;gap:8px}.corner button{background:#fcfdf8e8}.caption{position:fixed;left:28px;bottom:26px;max-width:450px;color:#334e4f;font-size:11px;line-height:1.7}.caption a{color:inherit}.hint{position:fixed;right:28px;bottom:28px;font-size:11px;color:#496464;letter-spacing:.3px}#error{color:#ad3d35;margin-top:12px}body.dark .caption,body.dark .hint{color:#c1d0d5}
+    body.embedded .panel,body.embedded .caption,body.embedded .hint,body.embedded .corner a{display:none}body.embedded .corner{top:16px;right:16px}
+    @media(max-width:650px){.panel{top:auto;bottom:76px;left:14px;width:calc(100% - 28px);padding:16px}.eyebrow{font-size:8px;letter-spacing:1.2px}h1{font-size:23px;margin:12px 0;letter-spacing:-.7px}h1 br{display:none}.panel>p:first-of-type,.rule,.stats{display:none}.corner{top:14px;right:14px}.caption{left:14px;bottom:12px;max-width:340px;font-size:9px}.hint{display:none}.buttons{margin-top:8px}.row{gap:6px;margin-top:8px}.row select{width:165px}.download{margin-top:12px!important}input[type=range]{margin-top:12px}#error:empty{display:none}}
+  </style>
+</head>
+<body>
+  <main id="view" aria-label="Interactive 3D model of the Samuel-De Champlain Bridge"></main>
+  <aside class="panel">
+    <div class="eyebrow"><span>Codriver / Montréal</span><span><i class="dot"></i>Model study 01</span></div>
+    <h1>Samuel-De<br> Champlain.</h1>
+    <p>A procedural landmark for the drive.<br>Explore the structure, then cross it.</p>
+    <div class="rule"></div>
+    <div class="stats"><div><div class="value">60 m</div><div class="label">Overall width</div></div><div><div class="value">240 m</div><div class="label">Main span</div></div><div><div class="value" id="triangles">—</div><div class="label">Triangles</div></div><div><div class="value" id="asset-size">—</div><div class="label">GLB · no textures</div></div></div>
+    <div class="buttons"><button id="tower" aria-pressed="true">Tower</button><button id="piers" aria-pressed="false">Piers</button><button id="overview" aria-pressed="false">Overview</button><button id="drive" aria-pressed="false">Drive</button></div>
+    <input id="progress" aria-label="Position on the bridge" type="range" min="0" max="100" step="0.1" value="0">
+    <div id="drive-position"><span>Île-des-Sœurs</span><span>Brossard</span></div>
+    <div class="row"><label for="source">Geometry</label><select id="source"><option value="procedural">Procedural</option><option value="glb">Exported GLB</option></select></div>
+    <div class="row"><label for="detail">Detail</label><select id="detail"><option value="near">Near · full structure</option><option value="far">Far · silhouette</option></select></div>
+    <a class="action download" id="download" download href="/models/landmarks/samuel-de-champlain-near.glb">Download GLB ↗</a>
+    <p style="font-size:11px"><a href="/licenses.html">Model: CC BY 4.0 · Code: MIT</a></p>
+    <p id="error" role="alert"></p>
+  </aside>
+  <div class="corner"><a class="action" href="/asset-catalog.html">3D catalog</a><button id="theme" aria-label="Switch to night">Night</button></div>
+  <div class="caption">Mapped alignment · original procedural geometry.<br>Approximate elevations and structural details.<br>Alignment © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>.</div>
+  <div class="hint">Drag to orbit &nbsp;·&nbsp; Scroll to explore</div>
+  <script src="/bridge-preview.js" defer></script>
+</body>
+</html>
