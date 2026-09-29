@@ -920,6 +920,284 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-tour-eiffel",
+      "name": "Tour Eiffel",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Open four-legged iron lattice tower with swept arches, three decks and antenna.",
+      "manifest": "/models/buildings/paris-tour-eiffel.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-icons-geometry.js",
+        "build": "pnpm build:paris-icons",
+        "provenance": "Original texture-free procedural geometry commissioned in 2026 for Codriver. Geographic orientation and placement are approximate; no simulator or third-party meshes/textures used. Geographic reference © OpenStreetMap contributors (ODbL 1.0).",
+        "references": [
+          {
+            "label": "Official Eiffel Tower figures",
+            "url": "https://www.toureiffel.paris/fr/le-monument/chiffres-cle"
+          },
+          {
+            "label": "OSM footprint way 5013364",
+            "url": "https://www.openstreetmap.org/way/5013364"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-tour-eiffel",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-tour-eiffel&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-tour-eiffel&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-tour-eiffel&view=roof"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=paris-tour-eiffel&detail=far"
+          }
+        ]
+      },
+      "notes": "Permanent daytime structure. Published 330 m height, 125 m base, floor heights 57/115/276 m; lattice and antenna subdivisions estimated. OSM way 5013364 anchors the four-footing square.",
+      "documentation": "docs/assets/paris-tour-eiffel.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-arc-de-triomphe",
+      "name": "Arc de Triomphe",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Stone triumphal arch with main and transverse open passages, attic and relief masses.",
+      "manifest": "/models/buildings/paris-arc-de-triomphe.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-icons-geometry.js",
+        "build": "pnpm build:paris-icons",
+        "provenance": "Original texture-free procedural geometry commissioned in 2026 for Codriver. Geographic orientation and placement are approximate; no simulator or third-party meshes/textures used. Geographic reference © OpenStreetMap contributors (ODbL 1.0).",
+        "references": [
+          {
+            "label": "City of Paris dimensions",
+            "url": "https://www.paris.fr/pages/a-la-place-de-l-arc-de-triomphe-devait-troner-un-elephant-18396"
+          },
+          {
+            "label": "CMN arch opening",
+            "url": "https://www.paris-arc-de-triomphe.fr/en/content/download/9830003/file/Sales%20Guide%202025_compressed.pdf?inLanguage=eng-GB&version=45"
+          },
+          {
+            "label": "OSM footprint way 226413508",
+            "url": "https://www.openstreetmap.org/way/226413508"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-arc-de-triomphe",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-arc-de-triomphe&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-arc-de-triomphe&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-arc-de-triomphe&view=roof"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=paris-arc-de-triomphe&detail=far"
+          }
+        ]
+      },
+      "notes": "Published 50 × 44.8 × 22.2 m exterior; official large portal about 29 × 14 m. Reliefs estimated. OSM way 226413508 fixes the orientation; road circulation is outside this model.",
+      "documentation": "docs/assets/paris-arc-de-triomphe.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-notre-dame",
+      "name": "Notre-Dame de Paris",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Restored Gothic cathedral exterior with paired west towers, nave, transept, flying buttresses and spire.",
+      "manifest": "/models/buildings/paris-notre-dame.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-icons-geometry.js",
+        "build": "pnpm build:paris-icons",
+        "provenance": "Original texture-free procedural geometry commissioned in 2026 for Codriver. Geographic orientation and placement are approximate; no simulator or third-party meshes/textures used. Geographic reference © OpenStreetMap contributors (ODbL 1.0).",
+        "references": [
+          {
+            "label": "Cathedral plan and dimensions",
+            "url": "https://www.notredamedeparis.fr/en/understand/architecture/plans/"
+          },
+          {
+            "label": "Cathedral spire",
+            "url": "https://www.notredamedeparis.fr/en/understand/architecture/the-spire/"
+          },
+          {
+            "label": "OSM footprint way 201611261",
+            "url": "https://www.openstreetmap.org/way/201611261"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-notre-dame",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-notre-dame&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-notre-dame&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-notre-dame&view=roof"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=paris-notre-dame&detail=far"
+          }
+        ]
+      },
+      "notes": "Published 127 m length, 48 m width, 69 m towers, 96 m spire. Buttress rhythm, portals and roofs estimated; no scaffolding.",
+      "documentation": "docs/assets/paris-notre-dame.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-sacre-coeur",
+      "name": "Sacré-Cœur",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "White Romano-Byzantine basilica with clustered domes, campanile, front portico and separate pedestrian steps.",
+      "manifest": "/models/buildings/paris-sacre-coeur.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-icons-geometry.js",
+        "build": "pnpm build:paris-icons",
+        "provenance": "Original texture-free procedural geometry commissioned in 2026 for Codriver. Geographic orientation and placement are approximate; no simulator or third-party meshes/textures used. Geographic reference © OpenStreetMap contributors (ODbL 1.0).",
+        "references": [
+          {
+            "label": "Basilica facade and campanile",
+            "url": "https://www.sacre-coeur-montmartre.com/decouvrir/patrimoine-et-art-sacre/lentree-et-sa-facade/"
+          },
+          {
+            "label": "OSM footprint way 23762981",
+            "url": "https://www.openstreetmap.org/way/23762981"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-sacre-coeur",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-sacre-coeur&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-sacre-coeur&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-sacre-coeur&view=roof"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=paris-sacre-coeur&detail=far"
+          }
+        ]
+      },
+      "notes": "Official campanile height 84 m; dome/terrace details visually estimated. OSM way 23762981 bounds the building, not the separate pedestrian terraces.",
+      "documentation": "docs/assets/paris-sacre-coeur.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-invalides",
+      "name": "Dôme des Invalides",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Gilded dome church with colonnaded drum, lantern, front portico and bounded wings.",
+      "manifest": "/models/buildings/paris-invalides.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-icons-geometry.js",
+        "build": "pnpm build:paris-icons",
+        "provenance": "Original texture-free procedural geometry commissioned in 2026 for Codriver. Geographic orientation and placement are approximate; no simulator or third-party meshes/textures used. Geographic reference © OpenStreetMap contributors (ODbL 1.0).",
+        "references": [
+          {
+            "label": "Musée de l’Armée current dome facts",
+            "url": "https://www.musee-armee.fr/fileadmin/cru-1761668226/user_upload/Documents/Communiques_Presse/MA_brochure_MINERVE_EN_A4_mail_v2.pdf"
+          },
+          {
+            "label": "OSM church way 112452790",
+            "url": "https://www.openstreetmap.org/way/112452790"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-invalides",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-invalides&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-invalides&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-invalides&view=roof"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=paris-invalides&detail=far"
+          }
+        ]
+      },
+      "notes": "Current museum brochure gives 107 m dome height; OSM church way 112452790 constrains the ~58 × 70 m church scope. Drum details visually estimated; hospital complex excluded.",
+      "documentation": "docs/assets/paris-invalides.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

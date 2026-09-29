@@ -1,0 +1,68 @@
+{
+  "id": "paris-tour-eiffel",
+  "name": "Tour Eiffel",
+  "origin": [
+    2.2944962,
+    48.858262
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "rotationAboutYRadians": 0.7853981633974483,
+  "foundation": {
+    "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
+    "footprintMetres": [
+      125,
+      125
+    ]
+  },
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Architectural exterior approximation; see per-asset documentation for published dimensions and estimated details.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/paris-tour-eiffel-near.glb",
+      "bytes": 889760,
+      "triangles": 19272,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -88.38834764831844,
+          -0.42443665862083435,
+          -88.38834764831844
+        ],
+        "max": [
+          88.38834764831844,
+          330,
+          88.38834764831844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/paris-tour-eiffel-far.glb",
+      "bytes": 292256,
+      "triangles": 6016,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -88.38834764831844,
+          -0.44999998807907104,
+          -88.38834764831844
+        ],
+        "max": [
+          88.38834764831844,
+          330,
+          88.38834764831844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

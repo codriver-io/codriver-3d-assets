@@ -1,0 +1,68 @@
+{
+  "id": "paris-sacre-coeur",
+  "name": "Sacré-Cœur",
+  "origin": [
+    2.3430193,
+    48.8867699
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "rotationAboutYRadians": 0.112,
+  "foundation": {
+    "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
+    "footprintMetres": [
+      75,
+      85
+    ]
+  },
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Architectural exterior approximation; see per-asset documentation for published dimensions and estimated details.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/paris-sacre-coeur-near.glb",
+      "bytes": 246284,
+      "triangles": 6944,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -32.475015550566134,
+          -0.005000011995434761,
+          -53.42480872867522
+        ],
+        "max": [
+          33.874884772802346,
+          84,
+          65.64780354440424
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/paris-sacre-coeur-far.glb",
+      "bytes": 92432,
+      "triangles": 2330,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -32.475015550566134,
+          -0.005000011995434761,
+          -53.42480872867522
+        ],
+        "max": [
+          33.874884772802346,
+          84,
+          65.64780354440424
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

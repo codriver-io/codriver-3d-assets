@@ -1,0 +1,68 @@
+{
+  "id": "paris-notre-dame",
+  "name": "Notre-Dame de Paris",
+  "origin": [
+    2.3499095,
+    48.8529723
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "rotationAboutYRadians": -2.1286,
+  "foundation": {
+    "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
+    "footprintMetres": [
+      48,
+      127
+    ]
+  },
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Architectural exterior approximation; see per-asset documentation for published dimensions and estimated details.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/paris-notre-dame-near.glb",
+      "bytes": 606380,
+      "triangles": 12940,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -64.88985099544452,
+          0,
+          -54.21610106193579
+        ],
+        "max": [
+          67.26580108378977,
+          96,
+          55.4911715025811
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/paris-notre-dame-far.glb",
+      "bytes": 218220,
+      "triangles": 4380,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -64.88985099544452,
+          0,
+          -54.21610106193579
+        ],
+        "max": [
+          67.26580108378977,
+          96,
+          55.4911715025811
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
