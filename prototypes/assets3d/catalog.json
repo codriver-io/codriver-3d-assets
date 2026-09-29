@@ -920,6 +920,300 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-pantheon",
+      "name": "Panthéon",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Cruciform mass, 22-column western portico, open drum and tiered dome",
+      "manifest": "/models/buildings/paris-pantheon.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-historic-geometry.js",
+        "build": "pnpm build:paris-historic",
+        "provenance": "Original procedural geometry commissioned for Codriver in September 2026. Official publications and photographs informed proportions; approximate coordinates and building alignments derive from OpenStreetMap (ODbL 1.0). No captured mesh, image or texture is redistributed.",
+        "references": [
+          {
+            "label": "Centre des monuments nationaux · teacher dossier",
+            "url": "https://www.paris-pantheon.fr/enseignants/ressources-pedagogiques/documents/dossier-enseignant-le-pantheon"
+          },
+          {
+            "label": "Mapped Panthéon footprint",
+            "url": "https://www.openstreetmap.org/way/16407465"
+          },
+          {
+            "label": "OpenStreetMap geographic attribution",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-pantheon&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-pantheon&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-pantheon&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-pantheon&view=roof"
+          },
+          {
+            "label": "Reverse",
+            "url": "/asset-preview.html?asset=paris-pantheon&view=reverse"
+          }
+        ]
+      },
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim.",
+      "documentation": "docs/assets/paris-pantheon.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-hotel-de-ville",
+      "name": "Hôtel de Ville de Paris",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Rebuilt civic palace with central clock campanile, steep roofs and an open court",
+      "manifest": "/models/buildings/paris-hotel-de-ville.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-historic-geometry.js",
+        "build": "pnpm build:paris-historic",
+        "provenance": "Original procedural geometry commissioned for Codriver in September 2026. Official publications and photographs informed proportions; approximate coordinates and building alignments derive from OpenStreetMap (ODbL 1.0). No captured mesh, image or texture is redistributed.",
+        "references": [
+          {
+            "label": "Ville de Paris · campanile and clock",
+            "url": "https://www.paris.fr/pages/l-hotel-de-ville-abrite-cinq-lieux-insolites-7659"
+          },
+          {
+            "label": "Ville de Paris · reconstruction history",
+            "url": "https://www.paris.fr/pages/l-histoire-de-l-hotel-de-ville-en-sept-dates-marquantes-7667"
+          },
+          {
+            "label": "OpenStreetMap geographic attribution",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-hotel-de-ville&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-hotel-de-ville&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-hotel-de-ville&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-hotel-de-ville&view=roof"
+          },
+          {
+            "label": "Reverse",
+            "url": "/asset-preview.html?asset=paris-hotel-de-ville&view=reverse"
+          }
+        ]
+      },
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim.",
+      "documentation": "docs/assets/paris-hotel-de-ville.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-conciergerie",
+      "name": "Conciergerie",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Seine-facing medieval/neo-Gothic hall, four towers and conical roofs",
+      "manifest": "/models/buildings/paris-conciergerie.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-historic-geometry.js",
+        "build": "pnpm build:paris-historic",
+        "provenance": "Original procedural geometry commissioned for Codriver in September 2026. Official publications and photographs informed proportions; approximate coordinates and building alignments derive from OpenStreetMap (ODbL 1.0). No captured mesh, image or texture is redistributed.",
+        "references": [
+          {
+            "label": "Centre des monuments nationaux · history",
+            "url": "https://www.paris-conciergerie.fr/decouvrir/histoire-de-la-conciergerie"
+          },
+          {
+            "label": "Centre des monuments nationaux · tower study",
+            "url": "https://www.paris-conciergerie.fr/enseignants/ressources-pedagogiques/documents/livret-facile-a-lire-et-a-comprendre-falc-conciergerie"
+          },
+          {
+            "label": "OpenStreetMap geographic attribution",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-conciergerie&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-conciergerie&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-conciergerie&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-conciergerie&view=roof"
+          },
+          {
+            "label": "Reverse",
+            "url": "/asset-preview.html?asset=paris-conciergerie&view=reverse"
+          }
+        ]
+      },
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim.",
+      "documentation": "docs/assets/paris-conciergerie.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-madeleine",
+      "name": "Église de la Madeleine",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Peripteral temple with 52 open columns, steps, two pediments and a recessed cella",
+      "manifest": "/models/buildings/paris-madeleine.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-historic-geometry.js",
+        "build": "pnpm build:paris-historic",
+        "provenance": "Original procedural geometry commissioned for Codriver in September 2026. Official publications and photographs informed proportions; approximate coordinates and building alignments derive from OpenStreetMap (ODbL 1.0). No captured mesh, image or texture is redistributed.",
+        "references": [
+          {
+            "label": "Ville de Paris · dimensions and orientation",
+            "url": "https://www.paris.fr/pages/la-madeleine-n-a-ni-croix-ni-clocher-25919"
+          },
+          {
+            "label": "Ville de Paris · restoration and peristyle",
+            "url": "https://www.paris.fr/pages/debut-des-travaux-pour-l-eglise-de-la-madeleine-18409"
+          },
+          {
+            "label": "Mapped church footprint",
+            "url": "https://www.openstreetmap.org/way/54180046"
+          },
+          {
+            "label": "OpenStreetMap geographic attribution",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-madeleine&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-madeleine&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-madeleine&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-madeleine&view=roof"
+          },
+          {
+            "label": "Reverse",
+            "url": "/asset-preview.html?asset=paris-madeleine&view=reverse"
+          }
+        ]
+      },
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim.",
+      "documentation": "docs/assets/paris-madeleine.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-institut-de-france",
+      "name": "Institut de France",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Half-moon Seine frontage, twin curved wings and a central double dome",
+      "manifest": "/models/buildings/paris-institut-de-france.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-historic-geometry.js",
+        "build": "pnpm build:paris-historic",
+        "provenance": "Original procedural geometry commissioned for Codriver in September 2026. Official publications and photographs informed proportions; approximate coordinates and building alignments derive from OpenStreetMap (ODbL 1.0). No captured mesh, image or texture is redistributed.",
+        "references": [
+          {
+            "label": "Institut de France · palace and facade",
+            "url": "https://www.institutdefrance.fr/decouvrir-le-palais/"
+          },
+          {
+            "label": "Institut de France · 44 m dome",
+            "url": "https://www.institutdefrance.fr/wp-content/uploads/2026/01/Brochure-Institut-de-France.pdf"
+          },
+          {
+            "label": "OpenStreetMap geographic attribution",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-institut-de-france&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-institut-de-france&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-institut-de-france&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-institut-de-france&view=roof"
+          },
+          {
+            "label": "Reverse",
+            "url": "/asset-preview.html?asset=paris-institut-de-france&view=reverse"
+          }
+        ]
+      },
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim.",
+      "documentation": "docs/assets/paris-institut-de-france.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

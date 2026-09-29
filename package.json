@@ -28,6 +28,7 @@
     "build:oratoire-saint-joseph": "node scripts/build-oratoire-saint-joseph.mjs",
     "build:pont-honore-mercier": "node scripts/build-pont-honore-mercier.mjs",
     "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
+    "build:paris-historic": "node scripts/build-paris-historic.mjs",
     "test:browser": "node scripts/test-browser.mjs",
     "check:contributions": "node scripts/check-contributions.mjs"
   },

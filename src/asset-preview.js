@@ -25,6 +25,8 @@ import { createOratoire } from './peregrine/landmarks/oratoire-saint-joseph-geom
 import { fitOratoire } from '../prototypes/assets3d/oratoire-saint-joseph-inspection.js';
 import { createMercier } from './peregrine/landmarks/pont-honore-mercier-geometry.js';
 import { MERCIER_UPSTREAM } from './peregrine/landmarks/pont-honore-mercier-profile.js';
+import { createPantheon, createHotelDeVille, createConciergerie, createMadeleine, createInstitutDeFrance } from './peregrine/landmarks/paris-historic-geometry.js';
+import { PARIS_HISTORIC_BY_ID } from './peregrine/landmarks/paris-historic-config.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
 document.body.classList.toggle('embedded', params.get('embed') === '1');
@@ -51,6 +53,11 @@ const creators = {
   'tour-de-l-horloge': createTourDeLHorloge,
   'oratoire-saint-joseph': createOratoire,
   'pont-honore-mercier': createMercier,
+  'paris-pantheon': createPantheon,
+  'paris-hotel-de-ville': createHotelDeVille,
+  'paris-conciergerie': createConciergerie,
+  'paris-madeleine': createMadeleine,
+  'paris-institut-de-france': createInstitutDeFrance,
 };
 const profiles = {
   'pont-victoria': VICTORIA,
@@ -123,6 +130,20 @@ function fit() {
     controls.target.set(...horlogePoint(...target)); camera.position.set(...horlogePoint(...eye));
   }
   if (entry?.id === 'oratoire-saint-joseph') { fitOratoire(front ? 'facade' : view, camera, controls); return; }
+  if (PARIS_HISTORIC_BY_ID[entry?.id]) {
+    const spec=PARIS_HISTORIC_BY_ID[entry.id], yaw=spec.rotation;
+    const width=spec.width,length=spec.length,span=Math.max(width,length);
+    const view=front?'facade':$('angle').value;
+    const local={
+      overview:[width*.95,span*.65,-Math.max(length*1.2,width*1.3)],
+      facade:[0,spec.height*.52,-Math.max(length*1.2,width*1.08)],
+      roof:[width*.65,span*1.3,-Math.max(length*.38,width*.5)],
+      reverse:[-width*.3,spec.height*.65,Math.max(length*1.2,width*1.08)],
+    }[view]||[width,span*.6,-Math.max(length*1.2,width*1.3)];
+    camera.position.set(local[0]*Math.cos(yaw)+local[2]*Math.sin(yaw),local[1],-local[0]*Math.sin(yaw)+local[2]*Math.cos(yaw));
+    controls.target.set(0,spec.height*.4,0);
+    camera.near=.2;camera.far=3000;camera.updateProjectionMatrix();
+  }
   if (entry?.id==='pont-honore-mercier' && view==='overview' && !front) {
     const q=profile.bridgePoint(profile.BRIDGE_LENGTH/2);
     camera.position.copy(center).addScaledVector(new THREE.Vector3(-q.tz,0.52,q.tx).normalize(),distance*0.78);
@@ -183,6 +204,10 @@ fetch('/asset-catalog.json').then((r) => { if (!r.ok) throw new Error('Catalog u
   if (entry.id === 'oratoire-saint-joseph') {
     $('angle').replaceChildren(...['overview','facade','roof','approach'].map(v => new Option(v, v)));
     $('angle').value = params.get('view') || 'overview';
+  }
+  if (PARIS_HISTORIC_BY_ID[entry.id]) {
+    $('angle').replaceChildren(...['overview','facade','roof','reverse'].map(v=>new Option(v,v)));
+    $('angle').value=params.get('view')||'overview';
   }
   if (params.get('source') === 'procedural' && creators[entry.id]) $('source').value = 'procedural';
   $('source').disabled = !creators[entry.id];
