@@ -38,9 +38,9 @@ function show(entry) {
     for (const [variant, file] of variants) { const a = link(`↓ ${variant} GLB · ${Math.round(file.bytes / 1024)} KB`, file.url); a.download = ''; files.append(a); }
     files.append(link('Model manifest ↗', entry.manifest)); info.append(files);
     const source = el('div', null, 'files');
-    source.append(link('Procedural source ↗', entry.source.url), link('Download source ZIP', 'https://github.com/codriver-io/codriver-3d-assets/archive/refs/heads/main.zip'), link('License & attribution', '/licenses.html'));
+    source.append(link('Editable source ↗', entry.source.url), link('Download source ZIP', 'https://github.com/codriver-io/codriver-3d-assets/archive/refs/heads/main.zip'), link('License & attribution', '/licenses.html'));
     info.append(source);
-    info.append(el('p', 'Models: CC BY 4.0 · Code: MIT. Credit Codriver; geographic data © OpenStreetMap contributors.', 'license'));
+    info.append(el('p', `Models: CC BY 4.0 · Code: MIT. Credit: ${entry.attribution}.`, 'license'));
   }
   const meta = el('div', null, 'meta'), origin = el('section'), refs = el('section');
   origin.append(el('h3', 'Provenance'), el('p', entry.source.provenance));

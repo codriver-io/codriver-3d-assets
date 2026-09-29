@@ -6,7 +6,7 @@ An open collection of Montréal landmarks: 14 bridges and buildings, 36
 self-contained GLB variants, and the editable Three.js generators behind them.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
-**[Licensing](LICENSES.md)**
+**[How to contribute](CONTRIBUTING.md)** · **[Licensing](LICENSES.md)**
 
 The library is public, without accounts or passwords. Orbit each model, compare
 near/far detail, switch between procedural and exported geometry, and download
@@ -16,6 +16,16 @@ Included: Samuel-De Champlain, Victoria, Jacques-Cartier and Honoré-Mercier
 bridges; Biosphère, Farine Five Roses, Orange Julep, Place Ville Marie and
 L’Anneau, Habitat 67, Olympic Stadium and Montréal Tower, La Grande Roue,
 Notre-Dame Basilica, Clock Tower, and Saint Joseph's Oratory.
+
+## A look inside
+
+![Codriver’s open library with the helmet logo and Champlain’s distinctive open pier caps](docs/images/library-champlain.png)
+
+*The public collection, showing Samuel-De Champlain’s pier study.*
+
+![The Biosphère de Montréal GLB in the interactive model inspector](docs/images/biosphere-model.png)
+
+*Biosphère de Montréal: inspect, compare detail levels and download the model.*
 
 ## Use a model
 
@@ -64,18 +74,32 @@ regeneration works from an empty `public/models/` directory.
 
 ## Licenses and credit
 
-Code: **MIT**. Original models: **CC BY 4.0**, credited to Codriver /
-9570-6198 Québec inc. Geographic source data retains **ODbL 1.0** and
-OpenStreetMap contributor attribution. See [LICENSES.md](LICENSES.md) for a
+Code and builder skill: **MIT**. Models: **CC BY 4.0**, credited to the
+creator(s) named in each manifest. The original collection credits Codriver /
+9570-6198 Québec inc. Its OpenStreetMap source data retains **ODbL 1.0** and
+contributor attribution. See [LICENSES.md](LICENSES.md) for a
 ready-to-use attribution and the scope of each license.
 
-## Add an asset
+## Contribute your own landmark
 
-Add the generator, its GLBs and a measured manifest; register it in
-`prototypes/assets3d/catalog.json`. Include provenance, references, coordinate
-frame, known approximations, license and inspection views. Extend the inspector
-creator registry for procedural preview, then run the build and checks. Only
-original, redistribution-ready models belong in the public collection.
+**We believe the world in 3D should be open.** Want to see a landmark on your commute?
+[Propose it in a GitHub issue](https://github.com/codriver-io/codriver-3d-assets/issues/new?template=landmark.yml),
+fork the repository and send a pull request. The [contribution guide](CONTRIBUTING.md)
+covers editable Blender or procedural source, near/far exports, creator credit,
+catalog registration, screenshots and validation. GitHub issue forms, the PR
+checklist and automated checks help review each submission. No private tools,
+accounts or deployment credentials are needed to contribute.
+
+The MIT-licensed [builder skill](.agents/skills/build-3d-landmarks/SKILL.md)
+works with **Codex** (`$build-3d-landmarks`) and **Claude Code**
+(`/build-3d-landmarks`). Both load the same instructions and bridge/building
+references through their native repository skill folders. See the guide for
+other clients and checkouts without symlink support.
+
+Assets use a local metric frame. [Cityscape and topography](docs/adr/0002-cityscape-and-topography.md)
+have different host placement requirements; the standalone inspector does not
+verify app integration. The [authoring decision](docs/adr/0001-open-landmark-pipeline.md)
+and [submission checklist](docs/model-submission.md) document the handoff.
 
 ## Deploy
 

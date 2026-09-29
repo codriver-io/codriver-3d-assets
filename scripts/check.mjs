@@ -11,11 +11,11 @@ for(const entry of catalog.assets){
   assert.ok(entry.source.url.startsWith('https://github.com/codriver-io/codriver-3d-assets/blob/main/'));
   for(const view of [entry.inspection,...entry.inspection.views])await access(resolve(out,view.url.slice(1).split('?')[0]));
   const manifest=JSON.parse(await readFile(resolve(out,'.'+entry.manifest)));
-  assert.equal(manifest.license,'CC-BY-4.0');assert.equal(manifest.geographicDataLicense,'ODbL-1.0');
+  assert.equal(manifest.license,'CC-BY-4.0');assert.equal(manifest.geographicDataLicense,entry.geographicDataLicense);assert.equal(manifest.copyright,entry.copyright);assert.equal(manifest.attribution,entry.attribution);
   for(const variant of Object.values(manifest.assets)){
     const buffer=await readFile(resolve(out,'.'+variant.url)),source=await readFile(resolve(ROOT,'public'+variant.url));
     assert.deepEqual(buffer,source);assert.deepEqual(glbMetrics(buffer),{bytes:variant.bytes,triangles:variant.triangles,drawCalls:variant.drawCalls});
-    const json=JSON.parse(buffer.subarray(20,20+buffer.readUInt32LE(12)));assert.equal(json.asset.extras.license,'CC-BY-4.0');assert.match(json.asset.copyright,/Codriver/);variants++;
+    const json=JSON.parse(buffer.subarray(20,20+buffer.readUInt32LE(12)));assert.equal(json.asset.extras.license,'CC-BY-4.0');assert.ok(json.asset.copyright.startsWith(entry.copyright));assert.equal(json.asset.extras.attribution,entry.attribution);assert.equal(json.asset.extras.geographicDataLicense,entry.geographicDataLicense);assert.equal(json.asset.extras.geographicDataUrl,entry.geographicDataUrl);variants++;
   }
 }
 assert.ok(variants>=catalog.assets.length);

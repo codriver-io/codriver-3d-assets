@@ -12,7 +12,7 @@
   "scripts": {
     "build": "node scripts/build-asset-catalog.mjs",
     "dev": "node scripts/serve.mjs",
-    "check": "node scripts/check.mjs",
+    "check": "node scripts/check.mjs && pnpm check:contributions && node --test scripts/license-models.test.mjs",
     "models:build": "node scripts/build-all.mjs",
     "models:license": "node scripts/license-models.mjs",
     "deploy": "pnpm build && wrangler pages deploy dist --project-name codriver-3d-assets --branch main",
@@ -28,7 +28,8 @@
     "build:oratoire-saint-joseph": "node scripts/build-oratoire-saint-joseph.mjs",
     "build:pont-honore-mercier": "node scripts/build-pont-honore-mercier.mjs",
     "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
-    "test:browser": "node scripts/test-browser.mjs"
+    "test:browser": "node scripts/test-browser.mjs",
+    "check:contributions": "node scripts/check-contributions.mjs"
   },
   "dependencies": {
     "three": "0.170.0"
