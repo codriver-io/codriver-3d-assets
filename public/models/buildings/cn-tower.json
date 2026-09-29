@@ -1,0 +1,74 @@
+{
+  "id": "cn-tower",
+  "name": "CN Tower",
+  "kind": "building",
+  "origin": [
+    -79.3870872,
+    43.6425888
+  ],
+  "height": 553.3,
+  "padM": 50,
+  "frontageBearing": 346.4,
+  "rangeM": 9000,
+  "minZoom": 12.5,
+  "nearM": 650,
+  "legBearings": [
+    46.4,
+    166.4,
+    286.4
+  ],
+  "vertexBearing": 16.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The lake shore grade is about 76 m above sea level, not baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Pod, SkyPod and antenna profiles and the shaft and leg taper are estimated from calibrated photographs (heights agree with the published levels); the round base height (7.5 m) is a guess; the entrance pavilion, aquarium and site furniture are not modelled; interior is empty.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cn-tower-near.glb",
+      "bytes": 506252,
+      "triangles": 14878,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -28.741886138916016,
+          0,
+          -24.780000686645508
+        ],
+        "max": [
+          24.780000686645508,
+          553.2999877929688,
+          28.97185516357422
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cn-tower-far.glb",
+      "bytes": 122040,
+      "triangles": 4338,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -28.741886138916016,
+          0,
+          -24.600000381469727
+        ],
+        "max": [
+          24.600000381469727,
+          553.2999877929688,
+          28.97185516357422
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/cn-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

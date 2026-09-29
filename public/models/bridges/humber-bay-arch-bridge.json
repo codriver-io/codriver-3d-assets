@@ -1,0 +1,66 @@
+{
+  "id": "humber-bay-arch-bridge",
+  "name": "Humber Bay Arch Bridge",
+  "kind": "bridge",
+  "origin": [
+    -79.471266,
+    43.63187
+  ],
+  "height": 25.8,
+  "padM": 100,
+  "frontageBearing": 31.6,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (water level); the paving surface is 4.5 m above it. No absolute altitude, no terrain or sea level baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 139 m overall, 100 m clear span, two 1.2 m steel-pipe ribs, 44 stainless hangers of 50 mm, 21.3 m rise above grade. Estimated from photographs: deck height above water, deck and rib widths, rib lean, the truss pattern between the ribs, abutment and pylon detail, and the ramps that bring a deck 4.5 m up down to the flat map.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/humber-bay-arch-bridge-near.glb",
+      "bytes": 1066952,
+      "triangles": 13744,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -55.032470703125,
+          0,
+          -86.52838134765625
+        ],
+        "max": [
+          55.032470703125,
+          25.799999237060547,
+          86.52838134765625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/humber-bay-arch-bridge-far.glb",
+      "bytes": 203208,
+      "triangles": 2528,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -55.032470703125,
+          0,
+          -86.52838134765625
+        ],
+        "max": [
+          55.032470703125,
+          25.799999237060547,
+          86.52838134765625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/humber-bay-arch-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

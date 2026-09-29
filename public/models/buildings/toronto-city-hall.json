@@ -1,0 +1,70 @@
+{
+  "id": "toronto-city-hall",
+  "name": "Toronto City Hall and Nathan Phillips Square",
+  "kind": "building",
+  "origin": [
+    -79.3839615,
+    43.6534932
+  ],
+  "height": 105.5,
+  "padM": 200,
+  "frontageBearing": 163.3,
+  "gridDeg": 16.7,
+  "podiumRoof": 8,
+  "eastRoof": 99.5,
+  "westRoof": 79.4,
+  "chamberCrown": 25,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the plaza level); no absolute altitude. The podium roof is 8 m above it, the west tower roof 79.4 m, the east tower roof 99.5 m and the aerial mast tip 105.5 m.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan positions, tower curves, chamber radii, podium outline, pool, arch feet, sign and walkway loop are mapped from OSM; tower and podium storey dimensions, rib pitch, strut ring, colonnade, arch rise and walkway/ramp sections are estimated from photographs. See docs/3d-toronto-toronto-city-hall.md.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/toronto-city-hall-near.glb",
+      "bytes": 2335616,
+      "triangles": 30418,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -71.09996032714844,
+          -7.105427357601002e-15,
+          -72.65162658691406
+        ],
+        "max": [
+          115.74423217773438,
+          105.5,
+          190.86148071289062
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/toronto-city-hall-far.glb",
+      "bytes": 731456,
+      "triangles": 9618,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -71.09996032714844,
+          -3.4016370940864607e-15,
+          -72.65162658691406
+        ],
+        "max": [
+          115.74423217773438,
+          105.5,
+          190.86148071289062
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/toronto-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

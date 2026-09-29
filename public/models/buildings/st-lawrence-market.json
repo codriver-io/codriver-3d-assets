@@ -1,0 +1,66 @@
+{
+  "id": "st-lawrence-market",
+  "name": "St. Lawrence Market",
+  "kind": "building",
+  "origin": [
+    -79.371554,
+    43.64869
+  ],
+  "height": 24.8,
+  "padM": 80,
+  "frontageBearing": 342.87,
+  "rotationDeg": 17.13,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The real site falls about one storey from Front Street to The Esplanade; the model keeps one flat grade and carries that fall as a solid base on the Front Street half and an open colonnade under the deck on the Esplanade half.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Hall rectangle, roof crown and lantern are mapped (OSM way 24626769 and its building parts). Storey heights, bay module, window and arch sizes, colours and the deck extent are estimated from public photographs. The North Market across Front Street is a separate 2025 building and is not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/st-lawrence-market-near.glb",
+      "bytes": 1103076,
+      "triangles": 18674,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -38.762055408676346,
+          0,
+          -58.3206446858694
+        ],
+        "max": [
+          39.398591289432076,
+          24.799999237060547,
+          60.3157388049988
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/st-lawrence-market-far.glb",
+      "bytes": 218096,
+      "triangles": 3566,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -38.762055408676346,
+          0,
+          -58.3206446858694
+        ],
+        "max": [
+          39.398591289432076,
+          23.844999313354492,
+          60.3157388049988
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/st-lawrence-market/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

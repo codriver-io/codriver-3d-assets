@@ -1,0 +1,66 @@
+{
+  "id": "scotia-plaza",
+  "name": "Scotia Plaza",
+  "kind": "building",
+  "origin": [
+    -79.3795541,
+    43.6494885
+  ],
+  "height": 274.9,
+  "padM": 100,
+  "frontageBearing": 163,
+  "siteAngleDeg": 17.13122,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Sites, plazas and the below-grade levels are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Tower massing, the stepped-chevron recess, the sawtooth corners and the two six-level wings follow OSM building parts; facade module, window size, floor pitch, granite colour, roof equipment and the logo are estimated from photographs. The 44 King Street West heritage building is OSM massing with a simplified limestone facade; the glazed canopies and atria beside the tower are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/scotia-plaza-near.glb",
+      "bytes": 3934236,
+      "triangles": 82760,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -71.63683319091797,
+          0,
+          -41.521629333496094
+        ],
+        "max": [
+          27.38746452331543,
+          277.04998779296875,
+          79.94525146484375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/scotia-plaza-far.glb",
+      "bytes": 736140,
+      "triangles": 13680,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -71.63683319091797,
+          0,
+          -41.521629333496094
+        ],
+        "max": [
+          27.38746452331543,
+          277.04998779296875,
+          79.94525146484375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/scotia-plaza/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

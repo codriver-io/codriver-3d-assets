@@ -2,7 +2,7 @@
 
 Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/codriver-3d-assets).
 
-An open collection of Montréal and Paris landmarks: 34 bridges and buildings, 76
+An open collection of Montréal, Paris and Toronto landmarks: 54 bridges and buildings, 116
 self-contained GLB variants, and the editable Three.js generators behind them.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
@@ -21,26 +21,29 @@ Paris: Tour Eiffel, Arc de Triomphe, Notre-Dame de Paris, Sacré-Cœur, Dôme de
 Invalides, Palais du Louvre, Palais Garnier, Grand Palais, Petit Palais,
 Musée d’Orsay, Panthéon, Hôtel de Ville, Conciergerie, Madeleine and Institut
 de France; Pont Alexandre III, Bir-Hakeim, Pont Neuf, Pont d’Iéna and Pont
-de la Concorde. The Louvre model covers the historic palace; the Eiffel
+de la Concorde. The Louvre model includes the historic palace and glass pyramid; the Eiffel
 model represents the architectural structure without its illumination show.
+
+Toronto: CN Tower, Rogers Centre, Toronto City Hall, Old City Hall, Casa Loma,
+Royal Ontario Museum, Art Gallery of Ontario, First Canadian Place,
+Toronto-Dominion Centre, Scotia Plaza, Union Station, Ontario Legislative
+Building, Scotiabank Arena, Fairmont Royal York, the Gooderham (Flatiron)
+Building, St. Lawrence Market, Cinesphere, Sharp Centre for Design, the Prince
+Edward Viaduct and the Humber Bay Arch Bridge. Build them with
+`pnpm build:toronto-landmarks`; each folder under
+`src/peregrine/landmarks/toronto/` holds one landmark's generator and mapped footprint.
 
 ## A look inside
 
-![Codriver’s open library with the helmet logo and Champlain’s distinctive open pier caps](docs/images/library-champlain.png)
+Captured from the current exported GLBs on 29 September 2026. Select an image
+to open the interactive model, compare detail levels or download it.
 
-*The public collection, showing Samuel-De Champlain’s pier study.*
-
-![The Biosphère de Montréal GLB in the interactive model inspector](docs/images/biosphere-model.png)
-
-*Biosphère de Montréal: inspect, compare detail levels and download the model.*
-
-![Tour Eiffel near GLB in the model inspector](docs/screenshots/paris-refinement/paris-tour-eiffel.png)
-
-*Tour Eiffel: original procedural structure and an exported near-detail GLB.*
-
-![Pont de Bir-Hakeim near GLB showing its two levels](docs/screenshots/paris-refinement/paris-pont-bir-hakeim-roof-or-structure.png)
-
-*Pont de Bir-Hakeim: road deck and elevated Métro structure.*
+| Montréal, Paris and Toronto | |
+| --- | --- |
+| [![Samuel-De Champlain — Montréal](docs/screenshots/readme/samuel-de-champlain.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=samuel-de-champlain&view=piers)<br>Samuel-De Champlain — Montréal | [![Biosphère — Montréal](docs/screenshots/readme/biosphere-montreal.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=biosphere-montreal&view=overview)<br>Biosphère — Montréal |
+| [![Tour Eiffel — Paris](docs/screenshots/readme/paris-tour-eiffel.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-tour-eiffel&view=facade)<br>Tour Eiffel — Paris | [![Palais du Louvre and pyramid — Paris](docs/screenshots/readme/paris-louvre.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-louvre&view=facade)<br>Palais du Louvre and pyramid — Paris |
+| [![Grand Palais glass roof — Paris](docs/screenshots/readme/paris-grand-palais.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-grand-palais&view=roof)<br>Grand Palais glass roof — Paris | [![Musée d’Orsay — Paris](docs/screenshots/readme/paris-musee-orsay.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-musee-orsay&view=facade)<br>Musée d’Orsay — Paris |
+| [![Hôtel de Ville — Paris](docs/screenshots/readme/paris-hotel-de-ville.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-hotel-de-ville&view=facade)<br>Hôtel de Ville — Paris | [![CN Tower — Toronto](docs/screenshots/readme/cn-tower.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=cn-tower&view=overview)<br>CN Tower — Toronto |
 
 ## Use a model
 
@@ -143,6 +146,4 @@ The 20 Paris models now include more accurate primary proportions, architectural
 
 The Eiffel Tower, Louvre (now including its pyramid), Grand Palais, Musée d’Orsay and Hôtel de Ville have a second architectural refinement. [Changes, sources and measured costs](docs/paris-second-pass.md).
 
-![Louvre pyramid and courtyard](docs/screenshots/paris-second-pass/paris-louvre.png)
-
-![Grand Palais glass roof](docs/screenshots/paris-second-pass/paris-grand-palais-roof.png)
+The gallery above shows the current exports, including the [Louvre window and Hôtel de Ville roof corrections](docs/paris-rendering-fixes.md).
