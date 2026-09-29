@@ -20,7 +20,7 @@ for (const file of skillFiles) {
 }
 const body = await readFile(resolve(ROOT, skill, 'SKILL.md'), 'utf8');
 assert.match(body, /^---\nname: build-3d-landmarks\ndescription: .+\n---\n/);
-const paths = ['README.md', 'CONTRIBUTING.md', 'AGENTS.md', 'CLAUDE.md', 'docs/model-submission.md',
+const paths = ['README.md', 'CONTRIBUTING.md', 'AGENTS.md', 'CLAUDE.md', 'docs/model-submission.md', 'CONTRIBUTOR-LICENSE.md', 'docs/contribution-acceptance.md',
   ...await files('docs/adr'), ...await files('.github'), ...skillFiles];
 for (const file of paths) {
   const content = await readFile(resolve(ROOT, file), 'utf8');

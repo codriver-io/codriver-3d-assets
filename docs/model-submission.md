@@ -5,6 +5,7 @@ Use this checklist for a bridge or building. [CONTRIBUTING.md](../CONTRIBUTING.m
 - [ ] Identity: stable ID, current/historical version, kind, city and coordinates.
 - [ ] Provenance: primary references; published versus estimated dimensions; rights to source, geometry and textures.
 - [ ] Editable source and reproducible build/export steps.
+- [ ] For outside work, each rights holder’s explicit [contributor-license acceptance](contribution-acceptance.md), agreement version/permalink and covered PR/commit are verified; the declaration permalink is recorded in provenance notes. A bot signature or public license alone is not separate Codriver product permission.
 - [ ] Self-contained near/far GLBs, with matching silhouette and usable bounds.
 - [ ] Manifest: `id`, `[longitude, latitude]` origin, `units: "metres"`, `axes: { x: "east", y: "up", z: "south" }`, named variants and measured `bytes`, `triangles`, `drawCalls`.
 - [ ] Local `y=0` datum, rotation/orientation, footprint and support/abutment attachment assumptions documented.

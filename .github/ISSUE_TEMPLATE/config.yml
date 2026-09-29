@@ -6,3 +6,6 @@ contact_links:
   - name: Licenses and attribution
     url: https://github.com/codriver-io/codriver-3d-assets/blob/main/LICENSES.md
     about: MIT code, CC BY models and geographic-data credit.
+  - name: Contributor license and acceptance
+    url: https://github.com/codriver-io/codriver-3d-assets/blob/main/CONTRIBUTOR-LICENSE.md
+    about: Separate Codriver product rights, library recognition, and explicit acceptance.

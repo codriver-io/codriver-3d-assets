@@ -14,7 +14,9 @@ export async function buildAssetCatalogPreview() {
   await copyFile(resolve(out,'asset-catalog.html'),resolve(out,'index.html'));
   await cp(resolve(ROOT,'public/models'),resolve(out,'models'),{recursive:true});
   await writeFile(resolve(out,'asset-catalog.json'),JSON.stringify(catalog,null,2)+'\n');
-  for(const file of ['LICENSE','LICENSE-MODELS.txt','LICENSES.md','THIRD_PARTY_NOTICES.md'])await copyFile(resolve(ROOT,file),resolve(out,file));
+  for(const file of ['LICENSE','LICENSE-MODELS.txt','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md'])await copyFile(resolve(ROOT,file),resolve(out,file));
+  await mkdir(resolve(out,'docs'),{recursive:true});
+  await copyFile(resolve(ROOT,'docs/contribution-acceptance.md'),resolve(out,'docs/contribution-acceptance.md'));
   await mkdir(resolve(out,'licenses'),{recursive:true});
   await copyFile(resolve(ROOT,'node_modules/three/LICENSE'),resolve(out,'licenses/three.txt'));
   await cp(resolve(ROOT,'site'),out,{recursive:true});

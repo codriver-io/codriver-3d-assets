@@ -25,7 +25,7 @@ Read [placement modes](references/placement.md). Cityscape uses a flat ground re
 
 ## Catalog and verify
 
-Register identity, generator/editable source, references, contributor credit, geographic-data license, local frame, variants, measured costs, inspection views and approximations. Only redistribution-cleared assets belong in the public collection.
+Register identity, generator/editable source, references, contributor credit, geographic-data license, local frame, variants, measured costs, inspection views and approximations. Only redistribution-cleared assets belong in the public collection. Follow the repository’s contributor agreement and acceptance procedure when present; record actual human/rightsholder acceptance evidence and never sign, accept legal terms or invent consent for a contributor. Keep public creator credit even where a separate license permits the host to omit individual in-app attribution.
 
 Compare source and GLB from matching angles, near/far and day/night. Include an underside/support view for bridges and roof/opposite facade for buildings. Run the repository build and catalog checks, then inspect the actual browser result. Report Cityscape and topography separately as verified with evidence, not tested, or unsupported. The standalone inspector has no terrain engine.
 
