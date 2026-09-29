@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-louvre-near.glb",
-      "bytes": 9313700,
-      "triangles": 174349,
+      "bytes": 8397548,
+      "triangles": 155885,
       "drawCalls": 8,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/paris-louvre-far.glb",
-      "bytes": 2484452,
-      "triangles": 41351,
+      "bytes": 2459088,
+      "triangles": 44059,
       "drawCalls": 8,
       "bounds": {
         "min": [

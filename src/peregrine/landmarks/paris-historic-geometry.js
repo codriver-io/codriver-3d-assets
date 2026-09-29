@@ -163,10 +163,12 @@ function hotel(t){
     for(const u of [-5,5])statue(x+u,37.4,-43,1.7);
   }
   // Central steep roof and sculpted clock frontispiece, separate from the belfry.
-  a.mansard('roof',0,20,-38,48,24,14);
+  const centralRoofWidth=48,centralRoofTop=34;
+  a.mansard('roof',0,20,-38,centralRoofWidth,24,centralRoofTop-20);
   box('stone',0,25,-49.5,10,10,4);gable('stone',0,30,-49.8,13,4.2,4);
   a.clock(0,25.5,-51.8,2.7,{yaw:Math.PI,face:'clock',rim:'shade',hands:'roof'});
-  a.opening('shade',0,29.3,-51.8,3.6,4.5,{yaw:Math.PI});statue(0,29.4,-52,2.8);
+  // The niche is 20 cm ahead of the pediment face; the statue is in front of it.
+  a.opening('shade',0,29.3,-52,3.6,4.5,{yaw:Math.PI});statue(0,29.4,-52.65,2.8);
   for(const x of [-6,6]){statue(x,22,-51.2,2.3);a.bar('shade',[x,23,-51],[x*1.7,20.7,-51],.35);}
   for(const x of [-16,16]){box('stone',x,24,-48.8,5,8,2.5);bay(x,-50.2,21,3.2,6,Math.PI,true);gable('stone',x,28,-49.5,6.6,2.4,3);}
   // Open octagonal campanile: two stacked arcades and a bulbous slate cap.
@@ -202,9 +204,16 @@ function hotel(t){
   }
   for(const y of [1.2,9.7,10.5,18.9,20])box('shade',0,y,-48.5,147,y===20?.65:.3,1);
   a.balustrade('stone',0,20.4,-48.7,145);
-  // Iron ridge cresting and roof statuary survive as silhouettes at far LOD.
-  for(let x=-22;x<=22;x+=near?1.1:3.7){a.bar('roof',[x,33.8,-38],[x,35,-38],.065);if(near)a.bar('roof',[x-.45,34,-38],[x+.45,34.7,-38],.05);}
-  for(const x of [-21,-14,-7,7,14,21])statue(x,35,-38,1.6);
+  // The mansard crest is 62% of its eave width. Keep the entire ornament,
+  // including diagonal arms and statue plinths, on that narrower support.
+  const crestHalf=centralRoofWidth*.62/2-.8,crestBays=near?26:8;
+  a.bar('roof',[-crestHalf,centralRoofTop+.2,-38],[crestHalf,centralRoofTop+.2,-38],.06);
+  for(let i=0;i<=crestBays;i++){
+    const x=-crestHalf+2*crestHalf*i/crestBays;
+    a.bar('roof',[x,centralRoofTop-.05,-38],[x,centralRoofTop+1,-38],.065);
+    if(near)a.bar('roof',[x-.45,centralRoofTop+.2,-38],[x+.45,centralRoofTop+.9,-38],.05);
+  }
+  for(const x of [-12,-7,-3,3,7,12])statue(x,centralRoofTop+.3,-38,1.6);
   for(const side of [-1,1])for(let z=-26;z<29;z+=near?6:12)for(const y of [3,11])bay(side*74.15,z,y,2.8,5.5,side*Math.PI/2,false);
   for(let x=-68;x<=68;x+=near?6:12)for(const y of [3,11])bay(x,46.2,y,2.6,5.5,0,false);
   for(const y of [10,18])box('shade',0,y,46.5,147,.4,.8);

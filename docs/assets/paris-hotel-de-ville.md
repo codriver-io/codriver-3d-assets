@@ -8,8 +8,8 @@ Origin `[2.35253,48.85643]` is the rounded center of the OSM civic-palace envelo
 
 | Detail | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 1,969,668 bytes · 42,404 triangles · 7 draws | 6 | 149,036 |
-| Far | 825,944 bytes · 17,912 triangles · 7 draws | 6 | 73,828 |
+| Near | 1,942,068 bytes · 41,804 triangles · 7 draws | 6 | 149,036 |
+| Far | 824,408 bytes · 17,880 triangles · 7 draws | 6 | 73,828 |
 
 Inspect [front](/asset-preview.html?asset=paris-hotel-de-ville&view=facade), [roof/court](/asset-preview.html?asset=paris-hotel-de-ville&view=roof), and [procedural source](/asset-preview.html?asset=paris-hotel-de-ville&view=facade&source=procedural). [Near facade](../screenshots/paris-hotel-de-ville-near-facade.png) and [far roof/night](../screenshots/paris-hotel-de-ville-far-roof-night.png) show labeled exported views. Sculptures, dormers and clock mechanics are simplified. Cityscape and terrain claims require host-app evidence.
 
@@ -29,3 +29,5 @@ Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pedi
 See [references and validation](../paris-second-pass.md).
 
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-hotel-de-ville.png) · [near GLB roof](../screenshots/paris-second-pass/paris-hotel-de-ville-roof.png).
+
+Rendering fixes: see the [window, niche and roof-support corrections](../paris-rendering-fixes.md).

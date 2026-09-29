@@ -219,14 +219,16 @@ function theme() {
 }
 async function load() {
   const token = ++generation, variant = $('variant').value, asset = entry.model.assets[variant];
+  // A changed export must bypass the browser's cached GLB at the stable asset path.
+  const modelUrl = asset.url + (asset.url.includes('?') ? '&' : '?') + 'v=' + asset.bytes + '-' + asset.triangles;
   $('error').textContent = '';
   try {
-    const candidate = $('source').value === 'procedural' && creators[entry.id] ? creators[entry.id]({ detail: variant }) : (await new GLTFLoader().loadAsync(asset.url)).scene;
+    const candidate = $('source').value === 'procedural' && creators[entry.id] ? creators[entry.id]({ detail: variant }) : (await new GLTFLoader().loadAsync(modelUrl)).scene;
     if (token !== generation) { dispose(candidate); return; }
     if (model) { scene.remove(model); dispose(model); }
     model = candidate; scene.add(model); fit(); theme();
     $('metrics').textContent = `${asset.triangles.toLocaleString()} triangles · ${asset.drawCalls} draws · ${Math.round(asset.bytes / 1024)} KB`;
-    $('download').href = asset.url;
+    $('download').href = modelUrl;
   } catch (error) { if (token === generation) $('error').textContent = 'Could not load model: ' + error.message; }
 }
 $('variant').onchange = load; $('source').onchange = load; $('angle').onchange = fit; $('station').oninput = fit; $('overview').onclick = () => { front = false; $('angle').value = 'overview'; fit(); };

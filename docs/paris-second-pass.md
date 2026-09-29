@@ -48,9 +48,11 @@ Metres, east/up/south, local rigid y=0; no DEM baked into geometry. Near/far sha
 | Asset | Near: triangles / draws / bytes | Far: triangles / draws / bytes |
 | --- | --- | --- |
 | `paris-tour-eiffel` | 55,248 / 5 / 2,232,336 | 13,584 / 5 / 511,400 |
-| `paris-louvre` | 174,349 / 8 / 9,313,700 | 41,351 / 8 / 2,484,452 |
+| `paris-louvre` | 155,885 / 8 / 8,397,548 | 44,059 / 8 / 2,459,088 |
 | `paris-grand-palais` | 114,000 / 6 / 4,686,944 | 27,966 / 6 / 1,060,784 |
 | `paris-musee-orsay` | 60,215 / 7 / 3,301,684 | 18,819 / 7 / 1,037,004 |
-| `paris-hotel-de-ville` | 42,404 / 7 / 1,969,668 | 17,912 / 7 / 825,944 |
+| `paris-hotel-de-ville` | 41,804 / 7 / 1,942,068 | 17,880 / 7 / 824,408 |
 
 Validation: catalog/license/contribution checks and seven geometric regressions pass. Library browser checks cover all 34 viewers; the five revised models were additionally checked as source/GLB, near/far, day/night and façade/roof.
+
+Follow-up: [window, niche and roof-support fixes](paris-rendering-fixes.md).

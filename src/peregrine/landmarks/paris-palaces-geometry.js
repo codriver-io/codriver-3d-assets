@@ -71,18 +71,22 @@ function builder(id,detail) {
 }
 
 function louvre(b,detail){
-  const {box,roof,windows,cyl,dome,arcade,a}=b;
+  const {box,roof,a}=b;
+  // Author a single window system per elevation. Panes sit 20 cm ahead of the
+  // backing wall, recessed behind their projecting frames, never on its plane.
+  const window=(x,y,z,w,h,yaw,options={})=>a.window(x+.2*Math.sin(yaw),y,z+.2*Math.cos(yaw),w,h,{yaw,glass:'shadow',stone:'stoneDark',...options});
   // Westward U wings and east Cour Carrée. Every court remains physically open.
-  const wing=(x,z,w,d,h=22)=>{box('stone',x,h/2,z,w,h,d);roof('roof',x,z,w,d,h,h+7,'x');windows(x-w/2+5,x+w/2-5,z+(z>0?d/2:-d/2),6,2,detail==='near'?9:14,4);};
-  wing(135,-105,450,25);wing(135,105,450,25); // cour Napoléon wings
-  wing(350,-105,110,25);wing(350,105,110,25);
+  // Each long range has one continuous wall/roof, rather than three partly
+  // coincident wings with their own incompatible rectangular window grids.
+  const wing=(x,z,w,d,h=22)=>{box('stone',x,h/2,z,w,h,d);roof('roof',x,z,w,d,h,h+7,'x');};
+  wing(196.25,-105,572.5,25);wing(196.25,105,572.5,25);
   // Cour Carrée east: four long ranges leave a square void.
-  wing(405,-105,155,23);wing(405,105,155,23);
   box('stone',477,12,0,25,24,210);roof('roof',477,0,25,210,24,32,'z');
   box('stone',332,12,0,25,24,210);roof('roof',332,0,25,210,24,32,'z');
   for(const [x,z] of [[-85,-105],[-85,105],[332,-105],[332,105],[477,-105],[477,105]]){
     box('stoneDark',x,14,z,33,28,34);a.mansard('roof',x,28,z,34,34,13);
-    if(detail==='near'){for(const q of [-11,0,11])box('shadow',x+q,15,z+17,5,8,.2);}
+    for(const face of [-1,1])for(const u of [-10,0,10])for(const [y,h] of [[2,7],[12,8],[23,3.5]])
+      window(x+u,y,z+face*17,4.3,h,face<0?Math.PI:0,{stone:'stone',arched:y===2});
   }
   // Pavillon Sully center of eastern range; Louvre landmark silhouette.
   box('stoneDark',332,18,0,44,36,40);a.mansard('roof',332,36,0,44,40,18);
@@ -90,10 +94,14 @@ function louvre(b,detail){
   // West end porticoes frame court but retain broad central opening.
   box('stone',-100,12,-105,24,24,42);box('stone',-100,12,105,24,24,42);roof('roof',-100,-105,24,42,24,33,'z');roof('roof',-100,105,24,42,24,33,'z');
   // Recessed bays, projecting orders and dormers on both long elevations.
-  for(const z of [-117.7,-92.3,92.3,117.7]){
-    const yaw=z===-117.7||z===92.3?Math.PI:0;
+  for(const z of [-117.5,-92.5,92.5,117.5]){
+    const yaw=z===-117.5||z===92.5?Math.PI:0;
+    const blocked=[[-112,-68.5],[315.5,348.5],[460.5,493.5]];
+    if(Math.abs(z)<100)blocked.push([74.5,105.5],[189.5,220.5]);
     for(let x=-70;x<470;x+=detail==='near'?8:16){
-      for(const y of [2,12])a.window(x,y,z,3.2,7,{yaw,glass:'shadow',stone:'stoneDark',arched:y===2});
+      // A projecting pavilion owns these bays, including frames/columns/dormers.
+      if(blocked.some(([lo,hi])=>x+3.8>lo&&x-2.3<hi))continue;
+      for(const y of [2,12])window(x,y,z,3.2,7,yaw,{arched:y===2});
       if(detail==='near'){
         a.column('stone',x+3.3,10,z,.3,10,6);
         box('stone',x,26,z*.96,3.4,5,1.8);a.mansard('roof',x,28.5,z*.96,4.2,3,2);
@@ -108,24 +116,24 @@ function louvre(b,detail){
   for(const side of [-1,1])for(const x of [90,205]){
     const z=side*91,front=side*77,yaw=side<0?0:Math.PI;
     box('stone',x,15,z,31,30,28);a.mansard('roof',x,30,z,33,30,14);
-    for(const y of [1.5,12,22])for(const u of [-9,0,9])a.window(x+u,y,front,4.3,y===22?5.8:8,{yaw,glass:'shadow',stone:'stoneDark'});
+    for(const y of [1.5,12,22])for(const u of [-9,0,9])window(x+u,y,front,4.3,y===22?5.8:8,yaw);
     for(const u of [-13,-5,5,13])a.column('stone',x+u,11,front,.45,18,detail==='near'?8:5);
     for(const y of [11,21,29])box('stoneDark',x,y,front,33,.65,1.2);
     box('stone',x,36,front+side*2,9,10,2.5);
-    a.window(x,32,front+side*.65,4,6,{yaw,glass:'shadow',stone:'stoneDark'});
+    window(x,32,front+side*.75,4,6,yaw);
     roof('stone',x,front+side*1.5,12,3,41,44);
     for(const u of [-11,11]){box('stone',x+u,42,z,1.7,6,3);box('stoneDark',x+u,45,z,2.2,.5,3.6);}
   }
   // Pavillon de l'Horloge faces the Cour Napoléon to the west (-X).
-  for(const u of [-13,-6.5,0,6.5,13])for(const y of [2,13,25])a.window(309.8,y,u,4.2,8,{yaw:-Math.PI/2,glass:'shadow',stone:'stoneDark'});
+  for(const u of [-13,-6.5,0,6.5,13])for(const y of [2,13,25])window(310,y,u,4.2,8,-Math.PI/2);
   for(const z of [-18,-10,10,18])a.column('stone',309,12,z,.6,22,detail==='near'?8:5);
   box('stone',309.7,40,0,2,12,14);
   a.clock(308.5,41,0,3,{yaw:-Math.PI/2});
   for(const range of [332,477])for(const side of [-1,1]){
-    const x=range+side*12.7,yaw=side*Math.PI/2;
+    const x=range+side*12.5,yaw=side*Math.PI/2;
     for(let z=-84;z<=84;z+=detail==='near'?8:16){
       if(range===332&&Math.abs(z)<24)continue;
-      for(const y of [2,13])a.window(x,y,z,3.5,8,{yaw,glass:'shadow',stone:'stoneDark',arched:y===2});
+      for(const y of [2,13])window(x,y,z,3.5,8,yaw,{arched:y===2});
       if(detail==='near')box('stoneDark',x+side*.12,12,z+3.6,.6,21,.5);
     }
     for(const y of [11,23.5])box('stoneDark',x,y,0,.8,.55,202);
@@ -150,7 +158,7 @@ function louvre(b,detail){
   // East colonnade remains an open screen in front of the wall.
   for(let z=-88;z<89;z+=detail==='near'?6:12)for(const dz of [-.8,.8])a.column('stone',490.3,10,z+dz,.5,12,detail==='near'?8:6);
   for(const z of [-62,62])box('stone',490.3,23,z,3,2,115);
-  if(detail==='near'){arcade(350,455,-92,1,11,7);arcade(350,455,92,1,11,7,false);}
+  // Cour Carrée uses the same framed bays; no second arcade/window grid overlays it.
 }
 
 function garnier(b,detail){const {box,roof,cyl,bar,a}=b,near=detail==='near';

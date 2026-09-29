@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 9,313,700 bytes · 174,349 triangles · 8 draws |
-| Far | 2,484,452 bytes · 41,351 triangles · 8 draws |
+| Near | 8,397,548 bytes · 155,885 triangles · 8 draws |
+| Far | 2,459,088 bytes · 44,059 triangles · 8 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-louvre&view=facade), [far, roof](/asset-preview.html?asset=paris-louvre&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-louvre). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -50,3 +50,5 @@ Second pass: projecting courtyard pavilions, articulated dormers and west-facing
 See [references and validation](../paris-second-pass.md).
 
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-louvre.png) · [near GLB roof](../screenshots/paris-second-pass/paris-louvre-roof.png).
+
+Rendering fixes: see the [window, niche and roof-support corrections](../paris-rendering-fixes.md).

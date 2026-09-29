@@ -1240,7 +1240,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid added in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid location (170, 0) follows the schematic court frame and needs surveyed geographic alignment.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid added in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid location (170, 0) follows the schematic court frame and needs surveyed geographic alignment. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls.",
       "documentation": "docs/assets/paris-louvre.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1560,7 +1560,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes. Rendering correction: statue niche separated from the clock pediment; ridge ironwork and statues fitted to the narrower mansard crest with supported plinths.",
       "documentation": "docs/assets/paris-hotel-de-ville.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
