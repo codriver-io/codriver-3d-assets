@@ -1,0 +1,68 @@
+{
+  "id": "paris-arc-de-triomphe",
+  "name": "Arc de Triomphe",
+  "origin": [
+    2.2950373,
+    48.873778
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "rotationAboutYRadians": 1.0214,
+  "foundation": {
+    "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
+    "footprintMetres": [
+      44.8,
+      22.2
+    ]
+  },
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Architectural exterior approximation; see per-asset documentation for published dimensions and estimated details.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/paris-arc-de-triomphe-near.glb",
+      "bytes": 225544,
+      "triangles": 3760,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -22.040411316075133,
+          0,
+          -25.810019995973782
+        ],
+        "max": [
+          22.040411316075133,
+          50.25,
+          25.810019995973782
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/paris-arc-de-triomphe-far.glb",
+      "bytes": 88356,
+      "triangles": 1344,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -22.040411316075133,
+          0,
+          -25.810019995973782
+        ],
+        "max": [
+          22.040411316075133,
+          50.25,
+          25.810019995973782
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-icons-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Open Montr\u00e9al landmark models, procedural Three.js source and a public 3D library.",
+  "description": "Open Montréal landmark models, procedural Three.js source and a public 3D library.",
   "license": "MIT",
   "engines": {
     "node": ">=22"
@@ -18,6 +18,7 @@
     "deploy": "pnpm build && wrangler pages deploy dist --project-name codriver-3d-assets --branch main",
     "build:champlain": "node scripts/build-champlain.mjs",
     "build:montreal-landmarks": "node scripts/build-montreal-landmarks.mjs",
+    "build:paris-bridges": "node scripts/build-paris-bridges.mjs",
     "build:five-roses": "node scripts/build-five-roses.mjs",
     "build:orange-julep": "node scripts/build-orange-julep.mjs",
     "build:place-ville-marie": "node scripts/build-place-ville-marie.mjs",
@@ -26,10 +27,13 @@
     "build:grande-roue": "node scripts/build-grande-roue.mjs",
     "build:basilique-notre-dame": "node scripts/build-basilique-notre-dame.mjs",
     "build:oratoire-saint-joseph": "node scripts/build-oratoire-saint-joseph.mjs",
+    "build:paris-icons": "node scripts/build-paris-icons.mjs",
     "build:pont-honore-mercier": "node scripts/build-pont-honore-mercier.mjs",
     "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
+    "build:paris-palaces": "node scripts/build-paris-palaces.mjs",
     "test:browser": "node scripts/test-browser.mjs",
-    "check:contributions": "node scripts/check-contributions.mjs"
+    "check:contributions": "node scripts/check-contributions.mjs",
+    "build:paris-historic": "node scripts/build-paris-historic.mjs"
   },
   "dependencies": {
     "three": "0.170.0"

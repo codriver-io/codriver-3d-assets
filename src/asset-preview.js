@@ -25,6 +25,11 @@ import { createOratoire } from './peregrine/landmarks/oratoire-saint-joseph-geom
 import { fitOratoire } from '../prototypes/assets3d/oratoire-saint-joseph-inspection.js';
 import { createMercier } from './peregrine/landmarks/pont-honore-mercier-geometry.js';
 import { MERCIER_UPSTREAM } from './peregrine/landmarks/pont-honore-mercier-profile.js';
+import { createParisIcon, PARIS_ICON_BY_ID } from './peregrine/landmarks/paris-icons-geometry.js';
+import { PARIS_PALACES, createLouvre, createPalaisGarnier, createGrandPalais, createPetitPalais, createMuseeOrsay } from './peregrine/landmarks/paris-palaces-geometry.js';
+import { createPantheon, createHotelDeVille, createConciergerie, createMadeleine, createInstitutDeFrance } from './peregrine/landmarks/paris-historic-geometry.js';
+import { PARIS_HISTORIC_BY_ID } from './peregrine/landmarks/paris-historic-config.js';
+import { PARIS_BRIDGES, createParisBridge, metricFrame } from './peregrine/landmarks/paris-bridges-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
 document.body.classList.toggle('embedded', params.get('embed') === '1');
@@ -37,6 +42,11 @@ const controls = new OrbitControls(camera, renderer.domElement); controls.enable
 const sky = new THREE.HemisphereLight(0xe6f3ff, 0x798776, 2.7), sun = new THREE.DirectionalLight(0xfff1dc, 3.2);
 sun.position.set(-400, 900, 600); scene.add(sky, sun);
 const creators = {
+  'paris-tour-eiffel': opts => createParisIcon('paris-tour-eiffel',opts),
+  'paris-arc-de-triomphe': opts => createParisIcon('paris-arc-de-triomphe',opts),
+  'paris-notre-dame': opts => createParisIcon('paris-notre-dame',opts),
+  'paris-sacre-coeur': opts => createParisIcon('paris-sacre-coeur',opts),
+  'paris-invalides': opts => createParisIcon('paris-invalides',opts),
   'farine-five-roses': createFiveRoses,
   'pont-victoria': createVictoria,
   'pont-jacques-cartier': createJacquesCartier,
@@ -51,13 +61,32 @@ const creators = {
   'tour-de-l-horloge': createTourDeLHorloge,
   'oratoire-saint-joseph': createOratoire,
   'pont-honore-mercier': createMercier,
+  'paris-louvre': createLouvre,
+  'paris-palais-garnier': createPalaisGarnier,
+  'paris-grand-palais': createGrandPalais,
+  'paris-petit-palais': createPetitPalais,
+  'paris-musee-orsay': createMuseeOrsay,
+  'paris-pantheon': createPantheon,
+  'paris-hotel-de-ville': createHotelDeVille,
+  'paris-conciergerie': createConciergerie,
+  'paris-madeleine': createMadeleine,
+  'paris-institut-de-france': createInstitutDeFrance,
 };
+for (const spec of PARIS_BRIDGES) creators[spec.id] = options => createParisBridge(spec, options);
 const profiles = {
   'pont-victoria': VICTORIA,
   'pont-jacques-cartier': JACQUES,
   'samuel-de-champlain': CHAMPLAIN,
   'pont-honore-mercier': MERCIER_UPSTREAM,
 };
+for (const spec of PARIS_BRIDGES) {
+  const f = metricFrame(spec);
+  profiles[spec.id] = { BRIDGE_LENGTH: f.length, ROAD_EDGES: spec.roadEdges,
+    bridgePoint(s) { const a = f.point(s, 0, f.height(s)), b = f.point(Math.min(f.length, s + .1), 0, f.height(s));
+      const len = Math.hypot(b[0] - a[0], b[2] - a[2]) || 1;
+      return { x: a[0], y: a[1], z: a[2], tx: (b[0] - a[0]) / len, tz: (b[2] - a[2]) / len }; },
+  };
+}
 let entry, model, generation = 0, dark = ['dark', 'night'].includes(params.get('theme')), front = false;
 controls.addEventListener('change', () => { if (entry?.id === 'basilique-notre-dame') updateNotreDameClipping(camera, controls); });
 $('angle').value = params.get('view') || 'overview';
@@ -76,17 +105,28 @@ function fit() {
   controls.target.copy(center);
   camera.position.copy(center).addScaledVector(new THREE.Vector3(...(front ? [0, 0.05, 1] : [0.65, 0.5, 1])).normalize(), distance);
   camera.near = entry?.id === 'stade-olympique' ? 0.5 : Math.max(0.01, radius / 10000); camera.far = distance + radius * 15; camera.updateProjectionMatrix();
+  if (entry?.id?.startsWith('paris-pont-')) { camera.near = 0.5; camera.updateProjectionMatrix(); }
   controls.minDistance = Math.min(0.5, radius / 100); controls.maxDistance = distance * 5;
   const view = $('angle').value, profile = profiles[entry?.id];
   if (profile && view !== 'overview') {
     const station = Number($('station').value) / 100 * profile.BRIDGE_LENGTH;
     const at = profile.bridgePoint(station), vec = (along, across, y) => new THREE.Vector3(at.x + at.tx * along - at.tz * across, y, at.z + at.tz * along + at.tx * across);
     if (view === 'drive') { camera.position.copy(vec(-25, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 3)); controls.target.copy(vec(75, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 5)); }
+    else if (view === 'piers' && entry?.id?.startsWith('paris-pont-')) {
+      camera.position.copy(vec(0, Math.max(210, profile.BRIDGE_LENGTH * 1.45), 23));
+      controls.target.copy(vec(0, 0, Math.max(5, at.y * 0.65)));
+    }
     else if (view === 'piers') { camera.position.copy(vec(-80, 120, 7)); controls.target.copy(vec(25, 0, Math.max(7, at.y * 0.65))); }
     else { camera.position.copy(vec(-100, 610, at.y + 130)); controls.target.copy(vec(0, 0, at.y + 15)); }
   } else if (!profile && view !== 'overview') {
     controls.target.set(0, view === 'roof' ? 24 : 25, 0);
     camera.position.set(view === 'roof' ? 48 : 100, view === 'roof' ? 120 : 45, view === 'roof' ? 60 : 135);
+  }
+  if (entry?.id?.startsWith('paris-pont-') && view === 'overview') {
+    const at = profile.bridgePoint(profile.BRIDGE_LENGTH / 2);
+    const vec = (along, across, y) => new THREE.Vector3(at.x + at.tx * along - at.tz * across, y, at.z + at.tz * along + at.tx * across);
+    camera.position.copy(vec(-profile.BRIDGE_LENGTH * .42, profile.BRIDGE_LENGTH * 1.2, at.y + profile.BRIDGE_LENGTH * .5));
+    controls.target.copy(vec(0, 0, at.y));
   }
   if (entry?.id === 'farine-five-roses') {
     camera.near = 0.5; camera.updateProjectionMatrix();
@@ -123,9 +163,48 @@ function fit() {
     controls.target.set(...horlogePoint(...target)); camera.position.set(...horlogePoint(...eye));
   }
   if (entry?.id === 'oratoire-saint-joseph') { fitOratoire(front ? 'facade' : view, camera, controls); return; }
+  if (PARIS_HISTORIC_BY_ID[entry?.id]) {
+    const spec=PARIS_HISTORIC_BY_ID[entry.id], yaw=spec.rotation;
+    const width=spec.width,length=spec.length,span=Math.max(width,length);
+    const view=front?'facade':$('angle').value;
+    const local={
+      overview:[width*.95,span*.65,-Math.max(length*1.2,width*1.3)],
+      facade:[0,spec.height*.52,-Math.max(length*1.2,width*1.08)],
+      roof:[width*.65,span*1.3,-Math.max(length*.38,width*.5)],
+      reverse:[-width*.3,spec.height*.65,Math.max(length*1.2,width*1.08)],
+    }[view]||[width,span*.6,-Math.max(length*1.2,width*1.3)];
+    camera.position.set(local[0]*Math.cos(yaw)+local[2]*Math.sin(yaw),local[1],-local[0]*Math.sin(yaw)+local[2]*Math.cos(yaw));
+    controls.target.set(0,spec.height*.4,0);
+    camera.near=.2;camera.far=3000;camera.updateProjectionMatrix();
+  }
   if (entry?.id==='pont-honore-mercier' && view==='overview' && !front) {
     const q=profile.bridgePoint(profile.BRIDGE_LENGTH/2);
     camera.position.copy(center).addScaledVector(new THREE.Vector3(-q.tz,0.52,q.tx).normalize(),distance*0.78);
+  }
+  if (PARIS_ICON_BY_ID[entry?.id]) {
+    const spec=PARIS_ICON_BY_ID[entry.id],c=Math.cos(spec.rotation),s=Math.sin(spec.rotation);
+    const point=(u,y,v)=>new THREE.Vector3(c*u+s*v,y,-s*u+c*v);
+    const v=front?'facade':view;
+    const d=v==='roof'?Math.max(240,spec.height*2.15):Math.max(185,spec.height*1.7);
+    const views={overview:[[d*.76,spec.height*.8,d],[0,spec.height*.42,0]],
+      facade:[[0,spec.height*.47,d],[0,spec.height*.43,0]],
+      roof:[[d*.45,spec.height*1.4,d*.65],[0,spec.height*.35,0]],
+      reverse:[[0,spec.height*.47,-d],[0,spec.height*.43,0]]};
+    const [eye,target]=views[v]||views.overview;
+    camera.position.copy(point(...eye));controls.target.copy(point(...target));
+    camera.near=.1;camera.far=4000;camera.updateProjectionMatrix();
+  }
+  if (Object.hasOwn(PARIS_PALACES, entry?.id)) {
+    const views={
+      'paris-louvre':{overview:[[-450,290,490],[180,14,0]],facade:[[70,65,210],[95,18,105]],roof:[[80,550,220],[180,12,0]]},
+      'paris-palais-garnier':{overview:[[120,110,215],[0,25,0]],facade:[[0,38,180],[0,23,38]],roof:[[90,180,105],[0,32,0]]},
+      'paris-grand-palais':{overview:[[210,125,250],[0,25,0]],facade:[[205,43,70],[0,22,0]],roof:[[90,240,150],[0,28,0]]},
+      'paris-petit-palais':{overview:[[130,100,125],[0,17,0]],facade:[[-190,45,0],[-35,18,0]],roof:[[75,160,85],[0,15,0]]},
+      'paris-musee-orsay':{overview:[[165,105,-190],[0,20,0]],facade:[[35,45,-170],[0,18,-26]],roof:[[130,175,-75],[0,24,0]]},
+    };
+    const [eye,target]=(views[entry.id]||{})[front?'facade':view]||views[entry.id].overview;
+    camera.position.set(...eye);controls.target.set(...target);
+    camera.near=.2;camera.far=3000;camera.updateProjectionMatrix();
   }
   controls.update();
 }
@@ -183,6 +262,10 @@ fetch('/asset-catalog.json').then((r) => { if (!r.ok) throw new Error('Catalog u
   if (entry.id === 'oratoire-saint-joseph') {
     $('angle').replaceChildren(...['overview','facade','roof','approach'].map(v => new Option(v, v)));
     $('angle').value = params.get('view') || 'overview';
+  }
+  if (PARIS_ICON_BY_ID[entry.id] || PARIS_HISTORIC_BY_ID[entry.id]) {
+    $('angle').replaceChildren(...Object.entries({overview:'Overview',facade:'Facade',reverse:'Opposite facade',roof:'Roof'}).map(([value,label])=>new Option(label,value)));
+    $('angle').value=params.get('view')||'overview';
   }
   if (params.get('source') === 'procedural' && creators[entry.id]) $('source').value = 'procedural';
   $('source').disabled = !creators[entry.id];
