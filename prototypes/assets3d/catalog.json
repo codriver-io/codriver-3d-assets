@@ -920,6 +920,340 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-pont-alexandre-iii",
+      "name": "Pont Alexandre III",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Low single arch, four pylons and gilded sculptures",
+      "manifest": "/models/bridges/paris-pont-alexandre-iii.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-bridges-geometry.js",
+        "build": "pnpm build:paris-bridges",
+        "provenance": "Original procedural geometry commissioned for Codriver, authored with AI assistance in 2026. Bridge centerlines fitted to current OpenStreetMap road/footway ways on 29 September 2026; deck widths, foundations and details remain visual estimates. © OpenStreetMap contributors (ODbL 1.0). No copied mesh, texture or simulator asset.",
+        "references": [
+          {
+            "label": "Primary structural or access reference",
+            "url": "https://www.petitpalais.paris.fr/sites/default/files/dossier_enseignant_paris_a_la_belle_epoque.pdf"
+          },
+          {
+            "label": "OpenStreetMap geographic data",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped bridge feature and centroid · OpenStreetMap-derived Mapcarta",
+            "url": "https://mapcarta.com/25260204"
+          },
+          {
+            "label": "Current mapped bridge way 17067006",
+            "url": "https://www.openstreetmap.org/way/17067006"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-pont-alexandre-iii&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-pont-alexandre-iii&view=overview"
+          },
+          {
+            "label": "Structure / underside",
+            "url": "/asset-preview.html?asset=paris-pont-alexandre-iii&view=structure"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=paris-pont-alexandre-iii&view=piers"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=paris-pont-alexandre-iii&view=drive"
+          }
+        ]
+      },
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation.",
+      "documentation": "docs/assets/paris-pont-alexandre-iii.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-pont-bir-hakeim",
+      "name": "Pont de Bir-Hakeim",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Road level, pedestrian median and separate elevated Métro level",
+      "manifest": "/models/bridges/paris-pont-bir-hakeim.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-bridges-geometry.js",
+        "build": "pnpm build:paris-bridges",
+        "provenance": "Original procedural geometry commissioned for Codriver, authored with AI assistance in 2026. Bridge centerlines fitted to current OpenStreetMap road/footway ways on 29 September 2026; deck widths, foundations and details remain visual estimates. © OpenStreetMap contributors (ODbL 1.0). No copied mesh, texture or simulator asset.",
+        "references": [
+          {
+            "label": "Primary structural or access reference",
+            "url": "https://www.paris.fr/pages/le-pont-bir-hakeim-retrouve-une-seconde-jeunesse-cet-ete-8169"
+          },
+          {
+            "label": "OpenStreetMap geographic data",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped bridge feature and centroid · OpenStreetMap-derived Mapcarta",
+            "url": "https://mapcarta.com/29217234"
+          },
+          {
+            "label": "Current mapped bridge way 172948769",
+            "url": "https://www.openstreetmap.org/way/172948769"
+          },
+          {
+            "label": "Current mapped bridge way 699874629",
+            "url": "https://www.openstreetmap.org/way/699874629"
+          },
+          {
+            "label": "Current mapped bridge way 1410449420",
+            "url": "https://www.openstreetmap.org/way/1410449420"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-pont-bir-hakeim&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-pont-bir-hakeim&view=overview"
+          },
+          {
+            "label": "Structure / underside",
+            "url": "/asset-preview.html?asset=paris-pont-bir-hakeim&view=structure"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=paris-pont-bir-hakeim&view=piers"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=paris-pont-bir-hakeim&view=drive"
+          }
+        ]
+      },
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation.",
+      "documentation": "docs/assets/paris-pont-bir-hakeim.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-pont-neuf",
+      "name": "Pont Neuf",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Two unequal masonry arms around Île de la Cité",
+      "manifest": "/models/bridges/paris-pont-neuf.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-bridges-geometry.js",
+        "build": "pnpm build:paris-bridges",
+        "provenance": "Original procedural geometry commissioned for Codriver, authored with AI assistance in 2026. Bridge centerlines fitted to current OpenStreetMap road/footway ways on 29 September 2026; deck widths, foundations and details remain visual estimates. © OpenStreetMap contributors (ODbL 1.0). No copied mesh, texture or simulator asset.",
+        "references": [
+          {
+            "label": "Primary structural or access reference",
+            "url": "https://cdn.paris.fr/paris/2021/07/01/1f538bf9fe017da085a9ec31544c4a86.pdf"
+          },
+          {
+            "label": "OpenStreetMap geographic data",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped bridge feature and centroid · OpenStreetMap-derived Mapcarta",
+            "url": "https://mapcarta.com/37490024"
+          },
+          {
+            "label": "Current mapped bridge way 20326518",
+            "url": "https://www.openstreetmap.org/way/20326518"
+          },
+          {
+            "label": "Current mapped bridge way 683347676",
+            "url": "https://www.openstreetmap.org/way/683347676"
+          },
+          {
+            "label": "Current mapped bridge way 683347674",
+            "url": "https://www.openstreetmap.org/way/683347674"
+          },
+          {
+            "label": "Current mapped bridge way 557297166",
+            "url": "https://www.openstreetmap.org/way/557297166"
+          },
+          {
+            "label": "Current mapped bridge way 53574163",
+            "url": "https://www.openstreetmap.org/way/53574163"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-pont-neuf&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-pont-neuf&view=overview"
+          },
+          {
+            "label": "Structure / underside",
+            "url": "/asset-preview.html?asset=paris-pont-neuf&view=structure"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=paris-pont-neuf&view=piers"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=paris-pont-neuf&view=drive"
+          }
+        ]
+      },
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation.",
+      "documentation": "docs/assets/paris-pont-neuf.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-pont-iena",
+      "name": "Pont d’Iéna",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Pedestrian bridge with five masonry arches",
+      "manifest": "/models/bridges/paris-pont-iena.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-bridges-geometry.js",
+        "build": "pnpm build:paris-bridges",
+        "provenance": "Original procedural geometry commissioned for Codriver, authored with AI assistance in 2026. Bridge centerlines fitted to current OpenStreetMap road/footway ways on 29 September 2026; deck widths, foundations and details remain visual estimates. © OpenStreetMap contributors (ODbL 1.0). No copied mesh, texture or simulator asset.",
+        "references": [
+          {
+            "label": "Primary structural or access reference",
+            "url": "https://www.paris.fr/pages/paris-se-transforme-ce-qui-a-change-en-2024-dans-le-16e-arrondissement-30217"
+          },
+          {
+            "label": "OpenStreetMap geographic data",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped bridge feature and centroid · OpenStreetMap-derived Mapcarta",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Current mapped bridge way 1187856769",
+            "url": "https://www.openstreetmap.org/way/1187856769"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-pont-iena&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-pont-iena&view=overview"
+          },
+          {
+            "label": "Structure / underside",
+            "url": "/asset-preview.html?asset=paris-pont-iena&view=structure"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=paris-pont-iena&view=piers"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=paris-pont-iena&view=drive"
+          }
+        ]
+      },
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation.",
+      "documentation": "docs/assets/paris-pont-iena.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-pont-concorde",
+      "name": "Pont de la Concorde",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Five shallow masonry arches and broad deck",
+      "manifest": "/models/bridges/paris-pont-concorde.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-bridges-geometry.js",
+        "build": "pnpm build:paris-bridges",
+        "provenance": "Original procedural geometry commissioned for Codriver, authored with AI assistance in 2026. Bridge centerlines fitted to current OpenStreetMap road/footway ways on 29 September 2026; deck widths, foundations and details remain visual estimates. © OpenStreetMap contributors (ODbL 1.0). No copied mesh, texture or simulator asset.",
+        "references": [
+          {
+            "label": "Primary structural or access reference",
+            "url": "https://regles-urbanisme.paris.fr/plu-bioclimatique/servlet/plugins/document/resource?id=447&id_attribute=93&working_content=true"
+          },
+          {
+            "label": "OpenStreetMap geographic data",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped bridge feature and centroid · OpenStreetMap-derived Mapcarta",
+            "url": "https://mapcarta.com/29198856"
+          },
+          {
+            "label": "Current mapped bridge way 139093031",
+            "url": "https://www.openstreetmap.org/way/139093031"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-pont-concorde&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-pont-concorde&view=overview"
+          },
+          {
+            "label": "Structure / underside",
+            "url": "/asset-preview.html?asset=paris-pont-concorde&view=structure"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=paris-pont-concorde&view=piers"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=paris-pont-concorde&view=drive"
+          }
+        ]
+      },
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation.",
+      "documentation": "docs/assets/paris-pont-concorde.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

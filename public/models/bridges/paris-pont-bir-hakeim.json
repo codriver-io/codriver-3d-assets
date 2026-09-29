@@ -1,0 +1,67 @@
+{
+  "id": "paris-pont-bir-hakeim",
+  "name": "Pont de Bir-Hakeim",
+  "origin": [
+    2.28758,
+    48.85567
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "yZero": "local river/support datum; no DEM, sea-level or scene datum baked",
+  "centerline": [
+    [
+      2.2866942,
+      48.8565888
+    ],
+    [
+      2.2876375,
+      48.8555794
+    ],
+    [
+      2.2884719,
+      48.854803
+    ]
+  ],
+  "mappedLengthM": 237.8,
+  "publishedOrSecondaryLengthM": 237,
+  "widthM": 25,
+  "deckHeightM": 7.2,
+  "roadEdgesM": [
+    [
+      -11.2,
+      -3.4
+    ],
+    [
+      3.4,
+      11.2
+    ]
+  ],
+  "pedestrian": false,
+  "geographicData": "© OpenStreetMap contributors — ODbL 1.0; centerlines fitted to current named bridge highway/footway ways (29 September 2026); widths, supports and abutment footprints remain visual estimates",
+  "note": "Original procedural visual approximation, not a structural survey. Supports require local terrain fitting in the host.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/paris-pont-bir-hakeim-near.glb",
+      "bytes": 355872,
+      "triangles": 8888,
+      "drawCalls": 7
+    },
+    "far": {
+      "url": "/models/bridges/paris-pont-bir-hakeim-far.glb",
+      "bytes": 120060,
+      "triangles": 3316,
+      "drawCalls": 6
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

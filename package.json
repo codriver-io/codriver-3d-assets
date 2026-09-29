@@ -18,6 +18,7 @@
     "deploy": "pnpm build && wrangler pages deploy dist --project-name codriver-3d-assets --branch main",
     "build:champlain": "node scripts/build-champlain.mjs",
     "build:montreal-landmarks": "node scripts/build-montreal-landmarks.mjs",
+    "build:paris-bridges": "node scripts/build-paris-bridges.mjs",
     "build:five-roses": "node scripts/build-five-roses.mjs",
     "build:orange-julep": "node scripts/build-orange-julep.mjs",
     "build:place-ville-marie": "node scripts/build-place-ville-marie.mjs",

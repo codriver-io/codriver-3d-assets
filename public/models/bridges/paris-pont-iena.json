@@ -1,0 +1,58 @@
+{
+  "id": "paris-pont-iena",
+  "name": "Pont d’Iéna",
+  "origin": [
+    2.292,
+    48.85972
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "yZero": "local river/support datum; no DEM, sea-level or scene datum baked",
+  "centerline": [
+    [
+      2.2911862,
+      48.8602128
+    ],
+    [
+      2.2924859,
+      48.8593666
+    ],
+    [
+      2.2926935,
+      48.8592248
+    ]
+  ],
+  "mappedLengthM": 155.8,
+  "publishedOrSecondaryLengthM": 155,
+  "widthM": 35,
+  "deckHeightM": 7.5,
+  "roadEdgesM": [],
+  "pedestrian": true,
+  "geographicData": "© OpenStreetMap contributors — ODbL 1.0; centerlines fitted to current named bridge highway/footway ways (29 September 2026); widths, supports and abutment footprints remain visual estimates",
+  "note": "Original procedural visual approximation, not a structural survey. Supports require local terrain fitting in the host.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/paris-pont-iena-near.glb",
+      "bytes": 115548,
+      "triangles": 3696,
+      "drawCalls": 4
+    },
+    "far": {
+      "url": "/models/bridges/paris-pont-iena-far.glb",
+      "bytes": 40636,
+      "triangles": 1512,
+      "drawCalls": 4
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,44 @@
+# Pont Alexandre III
+
+**ID:** `paris-pont-alexandre-iii` · **status:** ready export · **creator:** Codriver, original procedural geometry commissioned in 2026 with AI assistance. This is a visual approximation, not a survey.
+
+## References and dimensions
+
+The Petit Palais Paris museum teaching dossier gives a 109 m steel arch and a 40 m width. The 160 m overall length is a secondary published figure; the 149.4 m mapped centerline includes bank ends. Four pylons and gilded figures are simplified. [Primary reference](https://www.petitpalais.paris.fr/sites/default/files/dossier_enseignant_paris_a_la_belle_epoque.pdf). [Mapped feature and geographic credit](https://www.openstreetmap.org/copyright). Source images are linked references only; no photograph, map tile, third-party mesh or texture is included.
+
+- Origin: `[2.31355, 48.86365]` [longitude, latitude].
+- Mapped bridge centerline: `[[2.3134633, 48.8629734], [2.3136243, 48.8643112]]` [longitude, latitude]. Derived from the named OSM crossing ways below; abutment footprint and transverse width remain estimates.
+- Mapped centerline length including island/approach connections: 149.4 m; cited structural or secondary length: 160 m. These measure different endpoints.
+- Modeled width: 40 m; deck above local support datum: 7.5 m. Unpublished pier, rail, parapet, sculpture and crown sizes are visual estimates.
+- Local frame: metres, +X east / +Y up / +Z south. `y=0` is a local conceptual support datum. No DEM, sea-level height, Mercator scale or moving scene datum is baked in.
+
+Current mapped crossing ways checked 29 September 2026: [way 17067006](https://www.openstreetmap.org/way/17067006).
+
+### Photo comparison
+
+[Visual reference photograph](https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg). The reference photograph shows the low river arch and four prominent pale pylons with gold figures. The model keeps these dominant silhouettes; sculpture, lamps and reliefs are simplified original shapes. The linked photo remains with its source and is not distributed with this library.
+
+## Build and cost
+
+Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris-bridges-geometry.js). Run `pnpm build:paris-bridges` and `pnpm models:license`; both near/far GLBs are deterministic from the source and their license metadata is stamped. Metrics below are measured after stamping.
+
+| LOD | Bytes | Triangles | Mesh draws |
+| --- | ---: | ---: | ---: |
+| Near | 340,812 | 6,882 | 8 |
+| Far | 99,220 | 2,006 | 7 |
+
+## Inspection and placement
+
+[Overview](/asset-preview.html?asset=paris-pont-alexandre-iii&view=overview) | [Structure / underside](/asset-preview.html?asset=paris-pont-alexandre-iii&view=structure) | [Support](/asset-preview.html?asset=paris-pont-alexandre-iii&view=piers) | [Deck](/asset-preview.html?asset=paris-pont-alexandre-iii&view=drive)
+
+The bridge host must fit the deck to both bank approaches and sample each support footprint locally. Do not bend the deck over the riverbed. Road/rail/footway ownership must come from current map access tags, and road paint must come from the host's accepted HD road surface. Cityscape: **not tested in the host app**. Full 3D world: **not tested in the host app**. The library inspector tests exports only.
+
+### Captured inspector evidence
+
+- [Near GLB overview](../images/paris-pont-alexandre-iii-overview-glb-near-day.png)
+- [Near procedural support view](../images/paris-pont-alexandre-iii-piers-procedural-near-day.png)
+- [Far GLB night overview](../images/paris-pont-alexandre-iii-overview-glb-far-night.png)
+
+## Rights
+
+Procedural code and this documentation: MIT. Original GLB models: CC BY 4.0, © 2026 9570-6198 Québec inc. (Codriver). Geographic coordinates are derived from open mapping: © OpenStreetMap contributors, ODbL 1.0. This Codriver-commissioned work has no fabricated outside-contributor CLA signature.

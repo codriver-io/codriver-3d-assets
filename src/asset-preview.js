@@ -25,6 +25,7 @@ import { createOratoire } from './peregrine/landmarks/oratoire-saint-joseph-geom
 import { fitOratoire } from '../prototypes/assets3d/oratoire-saint-joseph-inspection.js';
 import { createMercier } from './peregrine/landmarks/pont-honore-mercier-geometry.js';
 import { MERCIER_UPSTREAM } from './peregrine/landmarks/pont-honore-mercier-profile.js';
+import { PARIS_BRIDGES, createParisBridge, metricFrame } from './peregrine/landmarks/paris-bridges-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
 document.body.classList.toggle('embedded', params.get('embed') === '1');
@@ -52,12 +53,21 @@ const creators = {
   'oratoire-saint-joseph': createOratoire,
   'pont-honore-mercier': createMercier,
 };
+for (const spec of PARIS_BRIDGES) creators[spec.id] = options => createParisBridge(spec, options);
 const profiles = {
   'pont-victoria': VICTORIA,
   'pont-jacques-cartier': JACQUES,
   'samuel-de-champlain': CHAMPLAIN,
   'pont-honore-mercier': MERCIER_UPSTREAM,
 };
+for (const spec of PARIS_BRIDGES) {
+  const f = metricFrame(spec);
+  profiles[spec.id] = { BRIDGE_LENGTH: f.length, ROAD_EDGES: spec.roadEdges,
+    bridgePoint(s) { const a = f.point(s, 0, f.height(s)), b = f.point(Math.min(f.length, s + .1), 0, f.height(s));
+      const len = Math.hypot(b[0] - a[0], b[2] - a[2]) || 1;
+      return { x: a[0], y: a[1], z: a[2], tx: (b[0] - a[0]) / len, tz: (b[2] - a[2]) / len }; },
+  };
+}
 let entry, model, generation = 0, dark = ['dark', 'night'].includes(params.get('theme')), front = false;
 controls.addEventListener('change', () => { if (entry?.id === 'basilique-notre-dame') updateNotreDameClipping(camera, controls); });
 $('angle').value = params.get('view') || 'overview';
@@ -76,17 +86,28 @@ function fit() {
   controls.target.copy(center);
   camera.position.copy(center).addScaledVector(new THREE.Vector3(...(front ? [0, 0.05, 1] : [0.65, 0.5, 1])).normalize(), distance);
   camera.near = entry?.id === 'stade-olympique' ? 0.5 : Math.max(0.01, radius / 10000); camera.far = distance + radius * 15; camera.updateProjectionMatrix();
+  if (entry?.id?.startsWith('paris-pont-')) { camera.near = 0.5; camera.updateProjectionMatrix(); }
   controls.minDistance = Math.min(0.5, radius / 100); controls.maxDistance = distance * 5;
   const view = $('angle').value, profile = profiles[entry?.id];
   if (profile && view !== 'overview') {
     const station = Number($('station').value) / 100 * profile.BRIDGE_LENGTH;
     const at = profile.bridgePoint(station), vec = (along, across, y) => new THREE.Vector3(at.x + at.tx * along - at.tz * across, y, at.z + at.tz * along + at.tx * across);
     if (view === 'drive') { camera.position.copy(vec(-25, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 3)); controls.target.copy(vec(75, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 5)); }
+    else if (view === 'piers' && entry?.id?.startsWith('paris-pont-')) {
+      camera.position.copy(vec(0, Math.max(210, profile.BRIDGE_LENGTH * 1.45), 23));
+      controls.target.copy(vec(0, 0, Math.max(5, at.y * 0.65)));
+    }
     else if (view === 'piers') { camera.position.copy(vec(-80, 120, 7)); controls.target.copy(vec(25, 0, Math.max(7, at.y * 0.65))); }
     else { camera.position.copy(vec(-100, 610, at.y + 130)); controls.target.copy(vec(0, 0, at.y + 15)); }
   } else if (!profile && view !== 'overview') {
     controls.target.set(0, view === 'roof' ? 24 : 25, 0);
     camera.position.set(view === 'roof' ? 48 : 100, view === 'roof' ? 120 : 45, view === 'roof' ? 60 : 135);
+  }
+  if (entry?.id?.startsWith('paris-pont-') && view === 'overview') {
+    const at = profile.bridgePoint(profile.BRIDGE_LENGTH / 2);
+    const vec = (along, across, y) => new THREE.Vector3(at.x + at.tx * along - at.tz * across, y, at.z + at.tz * along + at.tx * across);
+    camera.position.copy(vec(-profile.BRIDGE_LENGTH * .42, profile.BRIDGE_LENGTH * 1.2, at.y + profile.BRIDGE_LENGTH * .5));
+    controls.target.copy(vec(0, 0, at.y));
   }
   if (entry?.id === 'farine-five-roses') {
     camera.near = 0.5; camera.updateProjectionMatrix();
