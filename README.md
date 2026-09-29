@@ -2,7 +2,7 @@
 
 Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/codriver-3d-assets).
 
-An open collection of Montréal landmarks: 14 bridges and buildings, 36
+An open collection of Montréal and Paris landmarks: 34 bridges and buildings, 76
 self-contained GLB variants, and the editable Three.js generators behind them.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
@@ -12,10 +12,17 @@ The library is public, without accounts or passwords. Orbit each model, compare
 near/far detail, switch between procedural and exported geometry, and download
 the GLBs. Champlain also has its original pier, tower and driving views.
 
-Included: Samuel-De Champlain, Victoria, Jacques-Cartier and Honoré-Mercier
+Montréal: Samuel-De Champlain, Victoria, Jacques-Cartier and Honoré-Mercier
 bridges; Biosphère, Farine Five Roses, Orange Julep, Place Ville Marie and
 L’Anneau, Habitat 67, Olympic Stadium and Montréal Tower, La Grande Roue,
 Notre-Dame Basilica, Clock Tower, and Saint Joseph's Oratory.
+
+Paris: Tour Eiffel, Arc de Triomphe, Notre-Dame de Paris, Sacré-Cœur, Dôme des
+Invalides, Palais du Louvre, Palais Garnier, Grand Palais, Petit Palais,
+Musée d’Orsay, Panthéon, Hôtel de Ville, Conciergerie, Madeleine and Institut
+de France; Pont Alexandre III, Bir-Hakeim, Pont Neuf, Pont d’Iéna and Pont
+de la Concorde. The Louvre model covers the historic palace; the Eiffel
+model represents the architectural structure without its illumination show.
 
 ## A look inside
 
@@ -26,6 +33,14 @@ Notre-Dame Basilica, Clock Tower, and Saint Joseph's Oratory.
 ![The Biosphère de Montréal GLB in the interactive model inspector](docs/images/biosphere-model.png)
 
 *Biosphère de Montréal: inspect, compare detail levels and download the model.*
+
+![Tour Eiffel near GLB in the model inspector](docs/screenshots/paris-icons/paris-tour-eiffel-near-glb-facade.png)
+
+*Tour Eiffel: original procedural structure and an exported near-detail GLB.*
+
+![Pont de Bir-Hakeim near GLB showing its two levels](docs/images/paris-pont-bir-hakeim-overview-glb-near-day.png)
+
+*Pont de Bir-Hakeim: road deck and elevated Métro structure.*
 
 ## Use a model
 
