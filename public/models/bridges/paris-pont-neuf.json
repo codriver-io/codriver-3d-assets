@@ -1,0 +1,67 @@
+{
+  "id": "paris-pont-neuf",
+  "name": "Pont Neuf",
+  "origin": [
+    2.34145,
+    48.8573
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "yZero": "local river/support datum; no DEM, sea-level or scene datum baked",
+  "centerline": [
+    [
+      2.3405456,
+      48.8562229
+    ],
+    [
+      2.3410051,
+      48.8567498
+    ],
+    [
+      2.3414203,
+      48.8572051
+    ],
+    [
+      2.3423794,
+      48.8583786
+    ]
+  ],
+  "mappedLengthM": 275.1,
+  "publishedOrSecondaryLengthM": 238,
+  "widthM": 21,
+  "deckHeightM": 7.8,
+  "roadEdgesM": [
+    [
+      -5.3,
+      5.3
+    ]
+  ],
+  "pedestrian": false,
+  "geographicData": "© OpenStreetMap contributors — ODbL 1.0; centerlines fitted to current named bridge highway/footway ways (29 September 2026); widths, supports and abutment footprints remain visual estimates",
+  "note": "Original procedural visual approximation, not a structural survey. Supports require local terrain fitting in the host.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/paris-pont-neuf-near.glb",
+      "bytes": 251684,
+      "triangles": 8046,
+      "drawCalls": 6
+    },
+    "far": {
+      "url": "/models/bridges/paris-pont-neuf-far.glb",
+      "bytes": 102620,
+      "triangles": 3576,
+      "drawCalls": 5
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-bridges-geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
