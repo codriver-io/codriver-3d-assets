@@ -29,6 +29,7 @@ import { createParisIcon, PARIS_ICON_BY_ID } from './peregrine/landmarks/paris-i
 import { PARIS_PALACES, createLouvre, createPalaisGarnier, createGrandPalais, createPetitPalais, createMuseeOrsay } from './peregrine/landmarks/paris-palaces-geometry.js';
 import { createPantheon, createHotelDeVille, createConciergerie, createMadeleine, createInstitutDeFrance } from './peregrine/landmarks/paris-historic-geometry.js';
 import { PARIS_HISTORIC_BY_ID } from './peregrine/landmarks/paris-historic-config.js';
+import { TORONTO_LANDMARKS, torontoLandmark } from './peregrine/landmarks/toronto/authoring.js';
 import { PARIS_BRIDGES, createParisBridge, metricFrame } from './peregrine/landmarks/paris-bridges-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
@@ -71,6 +72,7 @@ const creators = {
   'paris-conciergerie': createConciergerie,
   'paris-madeleine': createMadeleine,
   'paris-institut-de-france': createInstitutDeFrance,
+  ...Object.fromEntries(TORONTO_LANDMARKS.map((l) => [l.id, l.create])),
 };
 for (const spec of PARIS_BRIDGES) creators[spec.id] = options => createParisBridge(spec, options);
 const profiles = {
@@ -181,6 +183,13 @@ function fit() {
     const q=profile.bridgePoint(profile.BRIDGE_LENGTH/2);
     camera.position.copy(center).addScaledVector(new THREE.Vector3(-q.tz,0.52,q.tx).normalize(),distance*0.78);
   }
+  const toronto = torontoLandmark(entry?.id);
+  if (toronto) {
+    // Registry landmarks: presets are [eye, target] in the model's own metres.
+    const [eye, target] = toronto.views[front && view === 'overview' ? 'facade' : view] || toronto.views.overview;
+    camera.near = 0.2; camera.far = Math.max(camera.far, 6000); camera.updateProjectionMatrix();
+    camera.position.set(...eye); controls.target.set(...target); controls.update(); return;
+  }
   if (PARIS_ICON_BY_ID[entry?.id]) {
     const spec=PARIS_ICON_BY_ID[entry.id],c=Math.cos(spec.rotation),s=Math.sin(spec.rotation);
     const point=(u,y,v)=>new THREE.Vector3(c*u+s*v,y,-s*u+c*v);
@@ -237,6 +246,11 @@ fetch('/asset-catalog.json').then((r) => { if (!r.ok) throw new Error('Catalog u
   if (entry.model.assets[params.get('detail')]) $('variant').value = params.get('detail');
   const profile = profiles[entry.id];
   if (entry.id === 'farine-five-roses') { for(const option of [...$('angle').options]) if(['structure','piers','drive'].includes(option.value)) option.remove(); $('angle').add(new Option('Opposite facade','reverse')); $('angle').add(new Option('Lettering','sign')); $('angle').value = params.get('view') || 'overview'; }
+  if (torontoLandmark(entry.id)) {
+    $('angle').replaceChildren(...Object.keys(torontoLandmark(entry.id).views).map((v) => new Option(v.charAt(0).toUpperCase() + v.slice(1), v)));
+    $('angle').value = params.get('view') || 'overview';
+    dark = ['dark', 'night'].includes(params.get('theme')); theme();
+  }
   if (entry.id === 'orange-julep') {
     $('angle').add(new Option('Roadside sign', 'signage'));
     if (params.get('view') === 'signage') $('angle').value = 'signage';

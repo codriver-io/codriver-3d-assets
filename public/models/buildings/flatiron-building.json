@@ -1,0 +1,65 @@
+{
+  "id": "flatiron-building",
+  "name": "Gooderham (Flatiron) Building",
+  "kind": "building",
+  "origin": [
+    -79.3743335,
+    43.6483791
+  ],
+  "height": 26,
+  "padM": 30,
+  "frontageBearing": 65,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The model stands on its own battered stone plinth (Toronto Front St / Church St ground is close to level here).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Wedge outline, 16.7 m cornice and 5 storeys are published or mapped; turret height, bay count, window sizes, fire-escape and dormer positions are estimated from photographs. The west gable end is not photographed and is drawn plainly. The neighbouring mural is not part of the model.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/flatiron-building-near.glb",
+      "bytes": 1918500,
+      "triangles": 32865,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -18.034908294677734,
+          -5.9604645663569045e-9,
+          -11.286018371582031
+        ],
+        "max": [
+          21.741498947143555,
+          26,
+          12.877947807312012
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/flatiron-building-far.glb",
+      "bytes": 146496,
+      "triangles": 2728,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -18.034908294677734,
+          0,
+          -11.293268203735352
+        ],
+        "max": [
+          21.562406539916992,
+          26,
+          12.877947807312012
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/flatiron-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "first-canadian-place",
+  "name": "First Canadian Place",
+  "kind": "building",
+  "origin": [
+    -79.3816917,
+    43.6487652
+  ],
+  "height": 355,
+  "padM": 75,
+  "frontageBearing": 164,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Roof line 298.1 m and mast tip 355 m are above this local grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, roof and penthouse are mapped (OSM); storey pitch, facade module, lobby, roof equipment and masts are estimates from published photographs. The podium wings and the King and Bay bank pavilion are not modelled and stay provider geometry.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/first-canadian-place-near.glb",
+      "bytes": 972512,
+      "triangles": 17188,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -34.13208770751953,
+          -0.000003051757857974735,
+          -33.28931427001953
+        ],
+        "max": [
+          34.13208770751953,
+          355,
+          33.28931427001953
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/first-canadian-place-far.glb",
+      "bytes": 85476,
+      "triangles": 1420,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.13208770751953,
+          -0.000003051757857974735,
+          -33.28931427001953
+        ],
+        "max": [
+          34.13208770751953,
+          355,
+          33.28931427001953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/first-canadian-place/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

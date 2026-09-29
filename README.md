@@ -2,7 +2,7 @@
 
 Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/codriver-3d-assets).
 
-An open collection of Montréal and Paris landmarks: 34 bridges and buildings, 76
+An open collection of Montréal, Paris and Toronto landmarks: 54 bridges and buildings, 116
 self-contained GLB variants, and the editable Three.js generators behind them.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
@@ -23,6 +23,15 @@ Musée d’Orsay, Panthéon, Hôtel de Ville, Conciergerie, Madeleine and Instit
 de France; Pont Alexandre III, Bir-Hakeim, Pont Neuf, Pont d’Iéna and Pont
 de la Concorde. The Louvre model covers the historic palace; the Eiffel
 model represents the architectural structure without its illumination show.
+
+Toronto: CN Tower, Rogers Centre, Toronto City Hall, Old City Hall, Casa Loma,
+Royal Ontario Museum, Art Gallery of Ontario, First Canadian Place,
+Toronto-Dominion Centre, Scotia Plaza, Union Station, Ontario Legislative
+Building, Scotiabank Arena, Fairmont Royal York, the Gooderham (Flatiron)
+Building, St. Lawrence Market, Cinesphere, Sharp Centre for Design, the Prince
+Edward Viaduct and the Humber Bay Arch Bridge. Build them with
+`pnpm build:toronto-landmarks`; each folder under
+`src/peregrine/landmarks/toronto/` holds one landmark's generator and mapped footprint.
 
 ## A look inside
 

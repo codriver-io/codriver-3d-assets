@@ -1,0 +1,75 @@
+{
+  "id": "scotiabank-arena",
+  "name": "Scotiabank Arena",
+  "kind": "building",
+  "origin": [
+    -79.379057,
+    43.643449
+  ],
+  "height": 32,
+  "padM": 125,
+  "frontageBearing": 242,
+  "roof": {
+    "eave": 27,
+    "rise": 4
+  },
+  "facadeM": 19,
+  "atriumM": 19.5,
+  "screen": {
+    "width": 15.2,
+    "height": 9.1
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Roof crown 31 m, limestone cornice 19 m and glazed front 19.5 m above that grade are estimates within the sourced 28 m clear height to the roof underside.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Arena bowl, retained Art Deco limestone facade (east and south), glazed plaza front with LED screen, and the plaza sculpture. Heights are photo estimates; the office tower at 50 Bay Street and the Union Station skywalk annexes stay with the map provider.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/scotiabank-arena-near.glb",
+      "bytes": 740940,
+      "triangles": 14173,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -87.40690612792969,
+          -4.1431280806136783e-7,
+          -72.8226089477539
+        ],
+        "max": [
+          74.1478042602539,
+          32.40010070800781,
+          79.8681869506836
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/scotiabank-arena-far.glb",
+      "bytes": 315048,
+      "triangles": 5830,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -87.3355484008789,
+          -4.1431280806136783e-7,
+          -73.05864715576172
+        ],
+        "max": [
+          73.81845092773438,
+          31.057331085205078,
+          79.8681869506836
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/scotiabank-arena/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
