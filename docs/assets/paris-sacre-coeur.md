@@ -7,3 +7,11 @@ Origin [2.3430193, 48.8867699] is the computed centroid of [OSM way 23762981](ht
 Build: `pnpm build:paris-icons`. [Inspect source and GLBs](/asset-preview.html?asset=paris-sacre-coeur); measured costs are in `public/models/buildings/paris-sacre-coeur.json`. Host Cityscape: not tested here. Host Full 3D world: not tested here. Hardware timing is unmeasured.
 
 Visual comparison: [Wikimedia front photograph](https://commons.wikimedia.org/wiki/File:Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre%2C_Paris_18e_140223_2.jpg). No reference pixels are redistributed. [GLB façade](../../docs/screenshots/paris-icons/paris-sacre-coeur-near-glb-facade.png) · [source façade](../../docs/screenshots/paris-icons/paris-sacre-coeur-near-source-facade.png) · [far roof/night](../../docs/screenshots/paris-icons/paris-sacre-coeur-far-glb-roof-night.png).
+
+## Street-level revision — 29 September 2026
+
+Tapered central cupola, small corner domes, centered rear campanile, stepped frontispiece, open triple porch and bronze equestrian silhouettes.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-sacre-coeur.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-sacre-coeur-roof-or-structure.png).

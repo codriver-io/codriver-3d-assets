@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 355,872 | 8,888 | 7 |
-| Far | 120,060 | 3,316 | 6 |
+| Near | 4,339,040 | 76,784 | 7 |
+| Far | 1,472,104 | 27,204 | 6 |
 
 ## Inspection and placement
 
@@ -42,3 +42,11 @@ The bridge host must fit the deck to both bank approaches and sample each suppor
 ## Rights
 
 Procedural code and this documentation: MIT. Original GLB models: CC BY 4.0, © 2026 9570-6198 Québec inc. (Codriver). Geographic coordinates are derived from open mapping: © OpenStreetMap contributors, ODbL 1.0. This Codriver-commissioned work has no fabricated outside-contributor CLA signature.
+
+## Street-level revision — 29 September 2026
+
+Three unequal spans per arm, open steel arches, full-width river piers, repeated curved Métro brackets; posts moved out of vehicle lanes.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-bir-hakeim.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-bir-hakeim-roof-or-structure.png).

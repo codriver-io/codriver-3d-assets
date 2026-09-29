@@ -24,17 +24,17 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-invalides-near.glb",
-      "bytes": 123576,
-      "triangles": 2976,
+      "bytes": 606044,
+      "triangles": 12697,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -29.200000762939453,
+          -29.030000686645508,
           0,
           -34
         ],
         "max": [
-          29.200000762939453,
+          29.030000686645508,
           107,
           37.5
         ]
@@ -42,17 +42,17 @@
     },
     "far": {
       "url": "/models/buildings/paris-invalides-far.glb",
-      "bytes": 54232,
-      "triangles": 1152,
+      "bytes": 248788,
+      "triangles": 5067,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -28.5,
+          -29.030000686645508,
           0,
           -34
         ],
         "max": [
-          28.5,
+          29.030000686645508,
           107,
           37.5
         ]

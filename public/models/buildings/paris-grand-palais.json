@@ -18,45 +18,45 @@
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
   "geographicDataLicense": "ODbL-1.0",
   "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-grand-palais-near.glb",
-      "bytes": 382644,
-      "triangles": 8072,
-      "drawCalls": 5,
+      "bytes": 4686944,
+      "triangles": 114000,
+      "drawCalls": 6,
       "bounds": {
         "min": [
-          -71,
+          -73.3499984741211,
           0,
-          -101
+          -103.58000183105469
         ],
         "max": [
-          71,
-          68,
-          101
+          73.3499984741211,
+          58,
+          103.58000183105469
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-grand-palais-far.glb",
-      "bytes": 94608,
-      "triangles": 1916,
-      "drawCalls": 4,
+      "bytes": 1060784,
+      "triangles": 27966,
+      "drawCalls": 6,
       "bounds": {
         "min": [
-          -71,
+          -73.3499984741211,
           0,
-          -101
+          -103.58000183105469
         ],
         "max": [
-          71,
-          68,
-          101
+          73.3499984741211,
+          58,
+          103.58000183105469
         ]
       }
     }
-  }
+  },
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
 }

@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 251,684 | 8,046 | 6 |
-| Far | 102,620 | 3,576 | 5 |
+| Near | 2,532,848 | 52,542 | 6 |
+| Far | 609,952 | 12,688 | 5 |
 
 ## Inspection and placement
 
@@ -42,3 +42,11 @@ The bridge host must fit the deck to both bank approaches and sample each suppor
 ## Rights
 
 Procedural code and this documentation: MIT. Original GLB models: CC BY 4.0, © 2026 9570-6198 Québec inc. (Codriver). Geographic coordinates are derived from open mapping: © OpenStreetMap contributors, ODbL 1.0. This Codriver-commissioned work has no fabricated outside-contributor CLA signature.
+
+## Street-level revision — 29 September 2026
+
+Full-width masonry vaults, cutwaters, semicircular refuges, dressed arch rings and lamps; five/seven arch split retained.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-neuf.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-neuf-roof-or-structure.png).

@@ -46,14 +46,14 @@
   "assets": {
     "near": {
       "url": "/models/bridges/paris-pont-neuf-near.glb",
-      "bytes": 251684,
-      "triangles": 8046,
+      "bytes": 2532848,
+      "triangles": 52542,
       "drawCalls": 6
     },
     "far": {
       "url": "/models/bridges/paris-pont-neuf-far.glb",
-      "bytes": 102620,
-      "triangles": 3576,
+      "bytes": 609952,
+      "triangles": 12688,
       "drawCalls": 5
     }
   },

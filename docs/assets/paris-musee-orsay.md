@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 293,740 bytes · 5,980 triangles · 7 draws |
-| Far | 129,008 bytes · 2,544 triangles · 6 draws |
+| Near | 3,301,684 bytes · 60,215 triangles · 7 draws |
+| Far | 1,037,004 bytes · 18,819 triangles · 7 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-musee-orsay&view=facade), [far, roof](/asset-preview.html?asset=paris-musee-orsay&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-musee-orsay). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -33,3 +33,20 @@ These are local Chromium/SwiftShader inspection captures, not images of the driv
 ## Placement status
 
 Cityscape: **not tested in the public library**; app integration is assessed separately. Full 3D world: **not tested in the public library**; the library viewer has no terrain sampler. No Tesla hardware cost is claimed. The model is exterior only.
+
+## Street-level revision — 29 September 2026
+
+138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-musee-orsay.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-musee-orsay-roof-or-structure.png).
+
+
+## Second architectural pass
+
+Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary.
+
+See [references and validation](../paris-second-pass.md).
+
+Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-musee-orsay.png) · [near GLB roof](../screenshots/paris-second-pass/paris-musee-orsay-roof.png).

@@ -12,3 +12,11 @@ Origin `[2.34582,48.85591]` approximates the center of the north-facing range. L
 | Far | 1,156 | 5 | 62,200 |
 
 Inspect [river facade](/asset-preview.html?asset=paris-conciergerie&view=facade), [roof/towers](/asset-preview.html?asset=paris-conciergerie&view=roof), and [procedural source](/asset-preview.html?asset=paris-conciergerie&view=facade&source=procedural). [Near river facade](../screenshots/paris-conciergerie-near-facade.png) and [far roof/night](../screenshots/paris-conciergerie-far-roof-night.png) show labeled exported views. Masonry, Gothic tracery and internal vaults are schematic; both LODs keep towers. Cityscape and terrain results require host-app evidence.
+
+## Street-level revision — 29 September 2026
+
+Distinct western crenellated tower, closer twin central towers, Gothic bays and gilded eastern clock.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-conciergerie.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-conciergerie-roof-or-structure.png).

@@ -7,3 +7,11 @@ Origin [2.2950373, 48.8737780] is the computed centroid of [OSM way 226413508](h
 Build: `pnpm build:paris-icons`. [Inspect source and GLBs](/asset-preview.html?asset=paris-arc-de-triomphe); measured near/far costs are in `public/models/buildings/paris-arc-de-triomphe.json`. Host Cityscape: not tested here. Host Full 3D world: not tested here. Hardware timing is unmeasured.
 
 Visual comparison: [Centre des monuments nationaux front photograph](https://www.monuments-nationaux.fr/actualites-du-cmn/les-monuments-au-caeur-du-tour-de-france-2023). No reference pixels are redistributed. [GLB façade](../../docs/screenshots/paris-icons/paris-arc-de-triomphe-near-glb-facade.png) · [source façade](../../docs/screenshots/paris-icons/paris-arc-de-triomphe-near-source-facade.png) · [far roof/night](../../docs/screenshots/paris-icons/paris-arc-de-triomphe-far-glb-roof-night.png).
+
+## Street-level revision — 29 September 2026
+
+Layered cornices, masonry courses, framed relief groups and a more legible frieze; sculpture remains abstract.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-arc-de-triomphe.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-arc-de-triomphe-roof-or-structure.png).

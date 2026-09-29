@@ -37,14 +37,14 @@
   "assets": {
     "near": {
       "url": "/models/bridges/paris-pont-iena-near.glb",
-      "bytes": 115548,
-      "triangles": 3696,
+      "bytes": 858608,
+      "triangles": 18524,
       "drawCalls": 4
     },
     "far": {
       "url": "/models/bridges/paris-pont-iena-far.glb",
-      "bytes": 40636,
-      "triangles": 1512,
+      "bytes": 162268,
+      "triangles": 3660,
       "drawCalls": 4
     }
   },

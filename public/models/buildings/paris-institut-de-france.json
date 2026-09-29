@@ -24,9 +24,9 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-institut-de-france-near.glb",
-      "bytes": 162932,
-      "triangles": 4024,
-      "drawCalls": 6,
+      "bytes": 926708,
+      "triangles": 17789,
+      "drawCalls": 5,
       "bounds": {
         "min": [
           -85,
@@ -42,8 +42,8 @@
     },
     "far": {
       "url": "/models/buildings/paris-institut-de-france-far.glb",
-      "bytes": 74404,
-      "triangles": 1608,
+      "bytes": 442232,
+      "triangles": 8525,
       "drawCalls": 5,
       "bounds": {
         "min": [

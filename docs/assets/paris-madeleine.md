@@ -12,3 +12,11 @@ Origin `[2.32447,48.87003]` is the rounded center of OSM way 54180046. Local met
 | Far | 1,868 | 5 | 90,680 |
 
 Inspect [south portico](/asset-preview.html?asset=paris-madeleine&view=facade), [roof and column ring](/asset-preview.html?asset=paris-madeleine&view=roof), and [procedural source](/asset-preview.html?asset=paris-madeleine&view=facade&source=procedural). [Near portico](../screenshots/paris-madeleine-near-facade.png) and [far roof/night](../screenshots/paris-madeleine-far-roof-night.png) show labeled exported views. The 52 physical column gaps persist in far detail. Interior, relief sculpture and active restoration scaffold are excluded. Cityscape and terrain require host-app evidence.
+
+## Street-level revision — 29 September 2026
+
+52 articulated columns, complete ascending steps, continuous peristyle, entablature and abstract pediment relief.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-madeleine.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-madeleine-roof-or-structure.png).

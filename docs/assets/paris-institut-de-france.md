@@ -12,3 +12,11 @@ Origin `[2.33757,48.85720]` approximates the palace center. Local metres use eas
 | Far | 1,608 | 5 | 74,404 |
 
 Inspect [Seine facade](/asset-preview.html?asset=paris-institut-de-france&view=facade), [roof and wings](/asset-preview.html?asset=paris-institut-de-france&view=roof), and [procedural source](/asset-preview.html?asset=paris-institut-de-france&view=facade&source=procedural). [Near Seine facade](../screenshots/paris-institut-de-france-near-facade.png) and [far roof/night](../screenshots/paris-institut-de-france-far-roof-night.png) show labeled exported views. Fine masonry and interiors are omitted; far detail retains the wings and dome. Cityscape and terrain require host-app evidence.
+
+## Street-level revision — 29 September 2026
+
+Tangent-aligned curved-wing bays, cornices, entrance order, radial drum openings and curved dome ribs.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-institut-de-france.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-institut-de-france-roof-or-structure.png).

@@ -42,14 +42,14 @@
   "assets": {
     "near": {
       "url": "/models/bridges/paris-pont-concorde-near.glb",
-      "bytes": 122056,
-      "triangles": 3790,
+      "bytes": 834772,
+      "triangles": 18042,
       "drawCalls": 6
     },
     "far": {
       "url": "/models/bridges/paris-pont-concorde-far.glb",
-      "bytes": 42996,
-      "triangles": 1544,
+      "bytes": 164624,
+      "triangles": 3692,
       "drawCalls": 5
     }
   },

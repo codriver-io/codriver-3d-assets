@@ -18,45 +18,45 @@
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
   "geographicDataLicense": "ODbL-1.0",
   "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-petit-palais-near.glb",
-      "bytes": 120932,
-      "triangles": 3004,
-      "drawCalls": 5,
+      "bytes": 705468,
+      "triangles": 16354,
+      "drawCalls": 7,
       "bounds": {
         "min": [
-          -67,
+          -57.181243896484375,
           0,
           -62.5
         ],
         "max": [
           54.07232666015625,
-          55,
+          47.63920211791992,
           62.5
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-petit-palais-far.glb",
-      "bytes": 64948,
-      "triangles": 1304,
-      "drawCalls": 4,
+      "bytes": 280384,
+      "triangles": 6286,
+      "drawCalls": 6,
       "bounds": {
         "min": [
-          -67,
+          -57.2599983215332,
           0,
           -62.5
         ],
         "max": [
           54.16991424560547,
-          55,
+          47.69886016845703,
           62.5
         ]
       }
     }
-  }
+  },
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
 }

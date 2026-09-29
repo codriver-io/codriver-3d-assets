@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 340,812 | 6,882 | 8 |
-| Far | 99,220 | 2,006 | 7 |
+| Near | 2,440,468 | 49,386 | 8 |
+| Far | 314,788 | 5,678 | 7 |
 
 ## Inspection and placement
 
@@ -42,3 +42,11 @@ The bridge host must fit the deck to both bank approaches and sample each suppor
 ## Rights
 
 Procedural code and this documentation: MIT. Original GLB models: CC BY 4.0, © 2026 9570-6198 Québec inc. (Codriver). Geographic coordinates are derived from open mapping: © OpenStreetMap contributors, ODbL 1.0. This Codriver-commissioned work has no fabricated outside-contributor CLA signature.
+
+## Street-level revision — 29 September 2026
+
+15 near-detail steel ribs, open spandrels, bank abutments, pylon cornices, candelabra and denser ironwork.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-alexandre-iii.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-alexandre-iii-roof-or-structure.png).
