@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 2,347,380 bytes · 60,268 triangles · 5 draws |
-| Far | 703,476 bytes · 18,106 triangles · 5 draws |
+| Near | 4,686,944 bytes · 114,000 triangles · 6 draws |
+| Far | 1,060,784 bytes · 27,966 triangles · 6 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-grand-palais&view=facade), [far, roof](/asset-preview.html?asset=paris-grand-palais&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-grand-palais). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -40,4 +40,13 @@ Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, s
 
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
-Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-grand-palais.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-grand-palais-roof-or-structure.png).
+First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-grand-palais.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-grand-palais-roof-or-structure.png).
+
+
+## Second architectural pass
+
+Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled.
+
+See [references and validation](../paris-second-pass.md).
+
+Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-grand-palais.png) · [near GLB roof](../screenshots/paris-second-pass/paris-grand-palais-roof.png).

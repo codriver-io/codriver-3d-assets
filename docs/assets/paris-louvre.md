@@ -6,8 +6,8 @@ Original procedural geometry commissioned for Codriver on 2026-09-29, authored a
 
 - Primary source: [Palais du Louvre institution](https://presse.louvre.fr/le-musee-du-louvre-1063000201419/?lang=fr).
 - Visual comparison: [exterior / aerial reference](https://imagesdefense.gouv.fr/fr/paris-1er-le-palais-du-louvre-d-ouest-en-est.html). The image is linked as reference only and is not redistributed.
-- The Louvre press office reports 3,000 m of facade across the full palace, including courts. The submitted model scopes the historic palace wings, excludes the modern pyramid, and measures about 602 × 238 m from generated bounds. The latter is an authored estimate, not a survey.
-- Long north and south wings, east Cour Carrée ranges and Pavillon Sully. The western Cour Napoléon and eastern Cour Carrée remain open. Pavilion heights, roof pitches and facade rhythm are visual estimates.
+- The Louvre press office reports 3,000 m of facade across the full palace, including courts. The submitted model scopes the historic palace wings, includes the modern entrance pyramid, and measures about 602 × 238 m from generated bounds. The latter is an authored estimate, not a survey.
+- Long north and south wings, east Cour Carrée ranges and Pavillon Sully. Cour Napoléon stays open around the pyramid and the eastern Cour Carrée remains open. Pavilion heights, roof pitches and facade rhythm are visual estimates.
 
 ## Local frame and export
 
@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 6,609,148 bytes · 130,534 triangles · 6 draws |
-| Far | 1,440,328 bytes · 25,878 triangles · 6 draws |
+| Near | 9,313,700 bytes · 174,349 triangles · 8 draws |
+| Far | 2,484,452 bytes · 41,351 triangles · 8 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-louvre&view=facade), [far, roof](/asset-preview.html?asset=paris-louvre&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-louvre). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -36,8 +36,17 @@ Cityscape: **not tested in the public library**; app integration is assessed sep
 
 ## Street-level revision — 29 September 2026
 
-Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid remains excluded.
+Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid included in the second pass.
 
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
-Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-louvre.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-louvre-roof-or-structure.png).
+First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-louvre.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-louvre-roof-or-structure.png).
+
+
+## Second architectural pass
+
+Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid location (170, 0) follows the schematic court frame and needs surveyed geographic alignment.
+
+See [references and validation](../paris-second-pass.md).
+
+Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-louvre.png) · [near GLB roof](../screenshots/paris-second-pass/paris-louvre-roof.png).

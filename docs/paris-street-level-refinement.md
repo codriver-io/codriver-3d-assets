@@ -19,7 +19,7 @@ survey, a close-up sculptural replica, or a hardware performance certification.
 | `paris-notre-dame` | 43.5 m west facade, 9.7 m west rose, 13.1 m transept roses, open belfries, narrower nave and two tiers of flying buttresses. |
 | `paris-sacre-coeur` | Tapered central cupola, small corner domes, centered rear campanile, stepped frontispiece, open triple porch and bronze equestrian silhouettes. |
 | `paris-invalides` | Radial drum openings, curved gold dome ribs, column capitals, side elevations and crown cross. |
-| `paris-louvre` | Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid remains excluded. |
+| `paris-louvre` | Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid added in the second pass. |
 | `paris-palais-garnier` | Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower. |
 | `paris-grand-palais` | Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. |
 | `paris-petit-palais` | West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void. |
@@ -69,7 +69,7 @@ retain open river passages. Support weights and the host's road datum are retain
   are uncompressed GLBs. Keep the near detail streaming range bounded.
 - Louvre footprint/orientation, sculpted figures, cathedral tracery, historical
   pediment reliefs and facade lettering still need more precise reference work.
-  The Louvre pyramid is outside the current model's scope. Iéna's equestrian
+  The second pass adds the Louvre pyramid, with schematic court placement. Iéna's equestrian
   groups are not yet modeled. These should be judged in the next visual review.
 
 ## Authoring lessons
@@ -81,3 +81,6 @@ is an arched opening. Dome ribs must follow the curved surface. A clock face nee
 a vertical facade plane. Check winding on both bridge elevations and roof slopes.
 Use one material batch for repeated detail; a window pane needs no hidden solid
 back, and a baluster needs fewer sections than a full architectural column.
+
+
+See [the second architectural pass](paris-second-pass.md) for the five follow-up revisions.

@@ -129,48 +129,87 @@ function madeleine(t){
   }
 }
 function hotel(t){
-  const {box,hip,windows,near,a}=t;
-  // U perimeter leaves the court and west-facing public esplanade open.
-  box('stone',0,11,-37,148,22,22);
-  box('stone',-62,10,2,24,20,66);
-  box('stone',62,10,2,24,20,66);
+  const {box,cyl,near,a,gable,b}=t;
+  // Open courtyard, two-storey wings and five projecting Renaissance pavilions.
+  box('stone',0,10,-37,148,20,22);
+  for(const x of [-62,62])box('stone',x,10,2,24,20,66);
   box('stone',0,9,37,148,18,18);
   for(const [x,z,w,d] of [[0,-37,148,22],[-62,2,24,66],[62,2,24,66],[0,37,148,18]])a.mansard('slate',x,20,z,w,d,10);
-  for(const x of [-64,-32,0,32,64]){
-    box('stone',x,14,-50,17,28,5);
-    a.mansard('roof',x,28,-50,19,9,9);
-    if(x!==0){box('stone',x,37,-50,2,2,2);hip('roof',x,38,-50,5,5,5);}
+  function statue(x,y,z,h=2){
+    cyl('stone',x,y+h*.43,z,h*.16,h*.21,h*.85,6);
+    const g=new THREE.SphereGeometry(h*.17,near?8:6,5);a.place(g,'stone',x,y+h,z);
+    a.bar('stone',[x-h*.25,y+h*.72,z],[x+h*.27,y+h*.55,z],h*.085);
+    box('shade',x,y-.15,z,h*.6,.3,h*.55);
   }
-  // Deep arches and entrance panels break the long facade.
-  for(const x of [-52,0,52]){
-    box('glass',x,5,-50.8,8,9,.24);
-    box('stone',x,10,-50.8,10,1.1,1);
-    for(const side of [-1,1])box('shade',x+side*5.1,5,-50.8,.8,10,1);
+  function bay(x,z,y,w=2.6,h=5.5,yaw=Math.PI,arched=false){
+    a.window(x,y,z,w,h,{yaw,stone:'shade',arched});
+    if(near){
+      // Cross-mullioned casements, layered sill and alternating pediment crowns.
+      a.box('stone',x,y+h*.55,z+(z<0?-.28:.28),w,.2,.22,yaw);
+      if(z<0&&yaw===Math.PI){gable('stone',x,y+h+.4,z-.18,w+1.2,.9,.7);box('stone',x,y-.35,z-.2,w+1.1,.35,.9);}
+    }
   }
-  // Dormers and cresting repeat across the central and side roofs.
-  for(const x of [-68,-55,-42,-29,-16,16,29,42,55,68]){
-    box('stone',x,25.5,-46.8,3.3,4.5,1.5);
-    a.window(x,24,-47.7,1.8,3,{yaw:Math.PI,arched:false,stone:'shade'});
-    t.gable('stone',x,27.7,-47.5,4.2,2.5,2);
+  for(const x of [-64,-32,32,64]){
+    box('stone',x,13.5,-43,17,27,20);a.mansard('roof',x,27,-43,19,22,11);
+    for(const u of [-5.5,0,5.5])for(const y of [2,12,21])bay(x+u,-53.15,y,2.8,y===21?4.6:6,Math.PI,y===21);
+    for(const u of [-8,8]){
+      box('stone',x+u,16,-53.6,.85,25,1.2);
+      // Tall paired chimney stacks define the pavilion's roof silhouette.
+      box('stone',x+u,35,-43,1.7,11,2.9);box('shade',x+u,40.7,-43,2.2,.7,3.4);
+    }
+    box('stone',x,31,-53,4.8,7,2);bay(x,-54.15,28,3,5,Math.PI,true);
+    gable('stone',x,34.6,-53.8,6,2,2);
+    for(const y of [10.3,19.7,26.7])box('shade',x,y,-53.4,18,.6,1.2);
+    for(const u of [-5,5])statue(x+u,37.4,-43,1.7);
   }
-  // Tall clock pavilion and belfry.
-  box('stone',0,30,-51,20,18,8);
-  hip('roof',0,39,-51,22,11,7);
-  box('clock',0,34.5,-55.15,5.6,5.6,.22);
-  box('shade',0,34.5,-55.32,.25,4.2,.15);
-  box('shade',0,34.5,-55.32,3.8,.25,.15);
-  box('stone',0,46,-51,5,8,5);
-  hip('roof',0,49,-51,8,8,1);
-  a.clock(0,34.5,-55.55,2.6,{yaw:Math.PI,face:'clock',rim:'shade',hands:'roof'});
-  for(const [z,span] of [[-48.15,140],[46.15,140]])for(let x=-span/2;x<=span/2;x+=near?5.4:10.8){
-    for(const y of [3,11.5])a.window(x,y,z,2.5,5.8,{yaw:z<0?Math.PI:0,stone:'shade',arched:y===3});
-    if(near){box('shade',x+2.4,12,z, .4,18,.6);a.column('stone',x+2.4,17,z,.3,3.8);}
+  // Central steep roof and sculpted clock frontispiece, separate from the belfry.
+  a.mansard('roof',0,20,-38,48,24,14);
+  box('stone',0,25,-49.5,10,10,4);gable('stone',0,30,-49.8,13,4.2,4);
+  a.clock(0,25.5,-51.8,2.7,{yaw:Math.PI,face:'clock',rim:'shade',hands:'roof'});
+  a.opening('shade',0,29.3,-51.8,3.6,4.5,{yaw:Math.PI});statue(0,29.4,-52,2.8);
+  for(const x of [-6,6]){statue(x,22,-51.2,2.3);a.bar('shade',[x,23,-51],[x*1.7,20.7,-51],.35);}
+  for(const x of [-16,16]){box('stone',x,24,-48.8,5,8,2.5);bay(x,-50.2,21,3.2,6,Math.PI,true);gable('stone',x,28,-49.5,6.6,2.4,3);}
+  // Open octagonal campanile: two stacked arcades and a bulbous slate cap.
+  const bx=0,bz=-34;
+  cyl('roof',bx,34,bz,3.6,4.4,4,8);
+  for(const [base,r,h] of [[36,3.2,5.3],[43,1.85,3.7]]){
+    cyl('shade',bx,base,bz,r+.5,r+.5,.5,8);
+    for(let k=0;k<8;k++){
+      const angle=k*Math.PI/4+Math.PI/8,xx=r*Math.sin(angle),zz=bz+r*Math.cos(angle);
+      a.column('stone',xx,base,zz,near?.23:.3,h,6);
+      const mid=angle+Math.PI/8,apothem=r*Math.cos(Math.PI/8);
+      a.arch('shade',apothem*Math.sin(mid),base+h-.75,bz+apothem*Math.cos(mid),2*r*Math.sin(Math.PI/8)-.46,.75,.18,.25,mid);
+    }
+    cyl('roof',bx,base+h+.15,bz,r+.55,r+.55,.45,8);
   }
-  for(const side of [-1,1])for(let z=-26;z<29;z+=near?6:12)for(const y of [3,11])a.window(side*74.15,y,z,2.8,5.5,{yaw:side*Math.PI/2,stone:'shade',arched:false});
-  for(const y of [9.7,18.5,21.3])for(const z of [-48.4,46.4])box('shade',0,y,z,147,.35,.65);
-  a.balustrade('stone',0,21.8,-48.3,145);
-
+  a.dome('roof',0,41.5,bz,3.7,1.7,{ribs:8,ribMaterial:'shade'});
+  a.dome('roof',0,47,bz,2.4,2.1,{ribs:8,ribMaterial:'shade'});
+  a.bar('gold',[0,49.1,bz],[0,50,bz],.12);
+  // Lower facade: recessed door arches, rectangular upper windows, statue niches.
+  for(let x=-69;x<=69;x+=near?5.3:10.6){
+    if([-64,-32,32,64].some(p=>Math.abs(x-p)<9))continue;
+    bay(x,-48.2,2,2.7,6,Math.PI,false);bay(x,-48.2,11.3,2.7,6.5,Math.PI,false);
+    if(near&&Math.abs(x)>9){
+      const nx=x+2.6;a.opening('shade',nx,12.1,-48.4,1.25,4.5,{yaw:Math.PI});
+      a.arch('stone',nx,15.9,-48.6,1.4,.8,.19,.3,Math.PI);statue(nx,12.4,-48.65,2.8);
+      box('shade',nx,11.9,-48.6,1.7,.45,1.1);
+    }
+  }
+  for(const x of [-21,0,21]){
+    a.window(x,.3,-48.7,x===0?4.2:6,9.4,{yaw:Math.PI,stone:'shade'});
+    a.arch('stone',x,x===0?7.3:6.4,-49, x===0?4.2:6,x===0?2.1:3,.55,.65,Math.PI);
+    for(const side of [-1,1])a.column('stone',x+side*(x===0?2.8:3.7),.3,-49,.32,8,6);
+  }
+  for(const y of [1.2,9.7,10.5,18.9,20])box('shade',0,y,-48.5,147,y===20?.65:.3,1);
+  a.balustrade('stone',0,20.4,-48.7,145);
+  // Iron ridge cresting and roof statuary survive as silhouettes at far LOD.
+  for(let x=-22;x<=22;x+=near?1.1:3.7){a.bar('roof',[x,33.8,-38],[x,35,-38],.065);if(near)a.bar('roof',[x-.45,34,-38],[x+.45,34.7,-38],.05);}
+  for(const x of [-21,-14,-7,7,14,21])statue(x,35,-38,1.6);
+  for(const side of [-1,1])for(let z=-26;z<29;z+=near?6:12)for(const y of [3,11])bay(side*74.15,z,y,2.8,5.5,side*Math.PI/2,false);
+  for(let x=-68;x<=68;x+=near?6:12)for(const y of [3,11])bay(x,46.2,y,2.6,5.5,0,false);
+  for(const y of [10,18])box('shade',0,y,46.5,147,.4,.8);
 }
+
 function conciergerie(t){
   const {box,cyl,hip,gable,windows,near,a}=t;
   // The river frontage is represented without extending into the Palace.

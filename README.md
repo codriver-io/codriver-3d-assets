@@ -137,3 +137,12 @@ No credentials are stored in this repository.
 ### Paris street-level revision
 
 The 20 Paris models now include more accurate primary proportions, architectural openings, differentiated roofs and bridge supports. [Review the changes and remaining approximations](docs/paris-street-level-refinement.md). The `/paris-refinement.html` comparison in a built library shows the original release beside this revision. Sculpture and lettering remain simplified; host app and terrain validation are separate.
+
+
+### Five Paris landmarks, second pass
+
+The Eiffel Tower, Louvre (now including its pyramid), Grand Palais, Musée d’Orsay and Hôtel de Ville have a second architectural refinement. [Changes, sources and measured costs](docs/paris-second-pass.md).
+
+![Louvre pyramid and courtyard](docs/screenshots/paris-second-pass/paris-louvre.png)
+
+![Grand Palais glass roof](docs/screenshots/paris-second-pass/paris-grand-palais-roof.png)

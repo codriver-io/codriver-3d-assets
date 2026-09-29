@@ -169,7 +169,7 @@ function fit() {
     const view=front?'facade':$('angle').value;
     const local={
       overview:[width*.95,span*.65,-Math.max(length*1.2,width*1.3)],
-      facade:[0,spec.height*.52,-Math.max(length*1.2,width*1.08)],
+      facade:[0,spec.height*.52,-Math.max(length*1.2,width*(entry.id==='paris-hotel-de-ville'?1.6:1.08))],
       roof:[width*.65,span*1.3,-Math.max(length*.38,width*.5)],
       reverse:[-width*.3,spec.height*.65,Math.max(length*1.2,width*1.08)],
     }[view]||[width,span*.6,-Math.max(length*1.2,width*1.3)];
@@ -196,15 +196,18 @@ function fit() {
   }
   if (Object.hasOwn(PARIS_PALACES, entry?.id)) {
     const views={
-      'paris-louvre':{overview:[[-450,290,490],[180,14,0]],facade:[[70,65,210],[95,18,105]],roof:[[80,550,220],[180,12,0]]},
+      'paris-louvre':{overview:[[-450,290,490],[180,14,0]],facade:[[76,34,60],[188,17,0]],roof:[[80,550,220],[180,12,0]]},
       'paris-palais-garnier':{overview:[[120,110,215],[0,25,0]],facade:[[0,38,180],[0,23,38]],roof:[[90,180,105],[0,32,0]]},
       'paris-grand-palais':{overview:[[210,125,250],[0,25,0]],facade:[[205,43,70],[0,22,0]],roof:[[90,240,150],[0,28,0]]},
       'paris-petit-palais':{overview:[[130,100,125],[0,17,0]],facade:[[-190,45,0],[-35,18,0]],roof:[[75,160,85],[0,15,0]]},
-      'paris-musee-orsay':{overview:[[165,105,-190],[0,20,0]],facade:[[35,45,-170],[0,18,-26]],roof:[[130,175,-75],[0,24,0]]},
+      'paris-musee-orsay':{overview:[[165,105,-190],[0,20,0]],facade:[[40,48,-260],[0,18,-8]],roof:[[130,175,-75],[0,24,0]]},
     };
     const [eye,target]=(views[entry.id]||{})[front?'facade':view]||views[entry.id].overview;
     camera.position.set(...eye);controls.target.set(...target);
     camera.near=.2;camera.far=3000;camera.updateProjectionMatrix();
+  }
+  if (['paris-tour-eiffel','paris-louvre','paris-grand-palais','paris-musee-orsay','paris-hotel-de-ville'].includes(entry?.id) && camera.aspect < 1.15) {
+    camera.position.sub(controls.target).multiplyScalar(1.15/camera.aspect).add(controls.target);
   }
   controls.update();
 }

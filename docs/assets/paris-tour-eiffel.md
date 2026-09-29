@@ -14,4 +14,13 @@ Broader curved lower piers, four-sided X bracing, separate upper shaft, framed f
 
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
-Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-tour-eiffel.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-tour-eiffel-roof-or-structure.png).
+First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-tour-eiffel.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-tour-eiffel-roof-or-structure.png).
+
+
+## Second architectural pass
+
+Second pass: curved chords with dense secondary lattice, lift rails, deep platform trusses, glazed observation strips and a two-storey summit gallery. Original architectural geometry only; illumination shows are excluded.
+
+See [references and validation](../paris-second-pass.md).
+
+Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-tour-eiffel.png) · [near GLB roof](../screenshots/paris-second-pass/paris-tour-eiffel-roof.png).

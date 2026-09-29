@@ -8,8 +8,8 @@ Origin `[2.35253,48.85643]` is the rounded center of the OSM civic-palace envelo
 
 | Detail | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 2,770 | 6 | 149,036 |
-| Far | 1,378 | 6 | 73,828 |
+| Near | 1,969,668 bytes · 42,404 triangles · 7 draws | 6 | 149,036 |
+| Far | 825,944 bytes · 17,912 triangles · 7 draws | 6 | 73,828 |
 
 Inspect [front](/asset-preview.html?asset=paris-hotel-de-ville&view=facade), [roof/court](/asset-preview.html?asset=paris-hotel-de-ville&view=roof), and [procedural source](/asset-preview.html?asset=paris-hotel-de-ville&view=facade&source=procedural). [Near facade](../screenshots/paris-hotel-de-ville-near-facade.png) and [far roof/night](../screenshots/paris-hotel-de-ville-far-roof-night.png) show labeled exported views. Sculptures, dormers and clock mechanics are simplified. Cityscape and terrain claims require host-app evidence.
 
@@ -19,4 +19,13 @@ Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, b
 
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
-Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-hotel-de-ville.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-hotel-de-ville-roof-or-structure.png).
+First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-hotel-de-ville.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-hotel-de-ville-roof-or-structure.png).
+
+
+## Second architectural pass
+
+Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes.
+
+See [references and validation](../paris-second-pass.md).
+
+Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-hotel-de-ville.png) · [near GLB roof](../screenshots/paris-second-pass/paris-hotel-de-ville-roof.png).

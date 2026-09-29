@@ -23,7 +23,7 @@ function builder(spec, detail) {
   const root=new THREE.Group();root.name=spec.name;root.userData={id:spec.id,detail,units:'metres',origin:spec.origin,provenance:'Original Codriver-commissioned procedural model'};
   const add=(g,m)=>{g.deleteAttribute('uv');if(!g.index)g.setIndex(Array.from({length:g.attributes.position.count},(_,i)=>i));if(!batches.has(m))batches.set(m,[]);batches.get(m).push(g);};
   const box=(m,x,y,z,w,h,d)=>{const g=new THREE.BoxGeometry(w,h,d);g.translate(x,y,z);add(g,m);};
-  const beam=(m,a,c,r=.35)=>{const av=new THREE.Vector3(...a),cv=new THREE.Vector3(...c),v=cv.clone().sub(av);if(v.length()<.01)return;const g=new THREE.CylinderGeometry(r,r,v.length(),near?6:4);g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),v.clone().normalize()));g.translate(...av.add(cv).multiplyScalar(.5).toArray());add(g,m);};
+  const beam=(m,a,c,r=.35,sides=near?6:4,openEnded=false)=>{const av=new THREE.Vector3(...a),cv=new THREE.Vector3(...c),v=cv.clone().sub(av);if(v.length()<.01)return;const g=new THREE.CylinderGeometry(r,r,v.length(),sides,1,openEnded);g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),v.clone().normalize()));g.translate(...av.add(cv).multiplyScalar(.5).toArray());add(g,m);};
   const cylinder=(m,x,y,z,rb,rt,h,n=near?24:12)=>{const g=new THREE.CylinderGeometry(rt,rb,h,n);g.translate(x,y,z);add(g,m);};
   const disk=(m,x,y,z,r,depth=.35)=>{const g=new THREE.CylinderGeometry(r,r,depth,near?24:12);g.rotateX(Math.PI/2);g.translate(x,y,z);add(g,m);};
   const sphere=(m,x,y,z,rx,ry,rz,n=near?24:12,hemi=false)=>{const g=new THREE.SphereGeometry(1,n,near?12:7,0,Math.PI*2,0,hemi?Math.PI/2:Math.PI);g.scale(rx,ry,rz);g.translate(x,y,z);add(g,m);};
@@ -54,63 +54,95 @@ function builder(spec, detail) {
 }
 
 function eiffel(b) {
-  const {near,box,beam,cylinder}=b;
-  // Published anchors: 125m base, 25m pillar, floors 57/115/276m.
-  // Intermediate leg stations are traced silhouette estimates, shared by LODs.
-  const stations=[[2,50,11.5],[15,44,10],[30,37.3,8.4],[44,31.8,7.1],[57,27,6.1],[73,22.7,5.1],[94,18.5,4.3],[115,15,3.5]];
+  const {near,box,cylinder}=b;
+  // Four-sided structural sections keep the dense lattice inexpensive.
+  const beam=(m,a,c,r)=>b.beam(m,a,c,r,4,true);
+  // Official 125 m base / 25 m piers, floors 57 / 115 / 276 m, 330 m tip.
+  // Curved chord stations and secondary lattice proportions are photo estimates.
   const corners=[[-1,-1],[1,-1],[1,1],[-1,1]];
+  const lerp=(a,c,t)=>a.map((v,i)=>v+(c[i]-v)*t);
+  function panel(a,c,d,e,r,subdivisions){
+    beam('iron',a,d,r);beam('iron',a,c,r*.65);
+    for(let k=0;k<subdivisions;k++){
+      const q=k/subdivisions,t=(k+1)/subdivisions;
+      const l=lerp(a,d,q),rr=lerp(c,e,q),u=lerp(a,d,t),v=lerp(c,e,t);
+      beam('iron',l,v,r*.42);beam('iron',rr,u,r*.42);
+      beam('trim',u,v,r*.38);
+      if(near){
+        // Secondary diamond web inside each main structural panel.
+        const mid=lerp(l,v,.5),top=lerp(u,v,.5),bottom=lerp(l,rr,.5);
+        beam('iron',bottom,top,r*.23);
+        for(const point of [lerp(l,u,.5),lerp(rr,v,.5)])beam('trim',point,mid,r*.20);
+        for(const point of [l,rr])box('iron',...point,r*1.8,r*2,r*1.8);
+      }
+    }
+  }
+  const stations=[[2,50,11.5],[15,44,10],[30,37.3,8.4],[44,31.8,7.1],[57,27,6.1],[73,22.7,5.1],[94,18.5,4.3],[115,15,3.5]];
   for(const sx of [-1,1])for(const sz of [-1,1]){
     box('stone',sx*50,1,sz*50,25,2,25);
     for(let k=1;k<stations.length;k++){
       const [y,c,w]=stations[k-1],[yy,cc,ww]=stations[k];
-      const p=(j,upper)=>{const [u,v]=corners[j];return upper?[sx*cc+u*ww,yy,sz*cc+v*ww]:[sx*c+u*w,y,sz*c+v*w];};
-      for(let j=0;j<4;j++){
-        const n=(j+1)%4;beam('iron',p(j,false),p(j,true),near?.55:.7);
-        beam('iron',p(j,false),p(n,false),.36);
-        beam('iron',p(j,false),p(n,true),.28);beam('iron',p(n,false),p(j,true),.28);
-        if(near){const a=p(j,false),z=p(n,false),q=p(j,true),r=p(n,true);
-          beam('trim',a.map((v,i)=>(v+q[i])/2),z.map((v,i)=>(v+r[i])/2),.17);}
-      }
+      const p=(j,hi)=>{const [u,v]=corners[j];return hi?[sx*cc+u*ww,yy,sz*cc+v*ww]:[sx*c+u*w,y,sz*c+v*w];};
+      for(let j=0;j<4;j++)panel(p(j,false),p((j+1)%4,false),p(j,true),p((j+1)%4,true),near?.52:.65,near?3:1);
+      // Paired inclined lift rails, with landings inside the four piers.
+      if(near)for(const offset of [-1.1,1.1])beam('roof',[sx*c+offset,y,sz*c],[sx*cc+offset,yy,sz*cc],.24);
     }
-    // Inclined elevator runs within the four broad lower piers.
-    if(near)for(let k=1;k<stations.length;k++){const [y,c]=stations[k-1],[yy,cc]=stations[k];beam('roof',[sx*c,y,sz*c],[sx*cc,yy,sz*cc],.48);}
   }
-  // Above floor two, one tapered lattice shaft with four complete X-braced faces.
   const shaft=[[115,18.5],[132,15.5],[151,12.7],[171,10.5],[194,8.6],[219,6.8],[245,5.2],[276,4.1]];
   for(let k=1;k<shaft.length;k++){
     const [y,w]=shaft[k-1],[yy,ww]=shaft[k];
     for(let j=0;j<4;j++){
       const [x,z]=corners[j],[u,v]=corners[(j+1)%4];
-      const a=[x*w,y,z*w],c=[u*w,y,v*w],d=[x*ww,yy,z*ww],e=[u*ww,yy,v*ww];
-      beam('iron',a,d,.43);beam('iron',a,c,.28);beam('iron',a,e,.22);beam('iron',c,d,.22);
-      if(near)beam('trim',a.map((v,i)=>(v+d[i])/2),c.map((v,i)=>(v+e[i])/2),.14);
+      panel([x*w,y,z*w],[u*w,y,v*w],[x*ww,yy,z*ww],[u*ww,yy,v*ww],.42,near?Math.ceil((yy-y)/5.5):2);
     }
   }
-  for(const [y,w,d] of [[57,70,70],[115,40,40],[276,18,18]]){
-    const band=y===57?7:y===115?5:4;
-    for(const s of [-1,1]){
-      box('iron',s*(w/2-band/2),y,0,band,2.2,d);box('iron',0,y,s*(d/2-band/2),w-2*band,2.2,band);
-      box('trim',0,y-2,s*d/2,w,.65,.8);box('trim',0,y+1.5,s*d/2,w,.55,.6);
-      box('trim',s*w/2,y-2,0,.8,.65,d);box('trim',s*w/2,y+1.5,0,.6,.55,d);
-      for(let u=-w/2+1;u<w/2;u+=near?2:5){beam('iron',[u,y-2,s*d/2],[u+1,y+1.5,s*d/2],.12);beam('iron',[s*w/2,y-2,u],[s*w/2,y+1.5,u+1],.12);}
+  // Central lifts are a slim separate run, rather than an opaque solid shaft.
+  for(const x of [-1.25,1.25])for(const z of [-1.25,1.25])beam('roof',[x,116,z],[x,274,z],near?.22:.30);
+  for(const [y,w,band,depth] of [[57,70,7,6],[115,40,5,4.5],[276,18,4,2.5]]){
+    for(let face=0;face<4;face++){
+      const p=(u,h,d=0)=>face===0?[u,h,w/2+d]:face===1?[-u,h,-w/2-d]:face===2?[w/2+d,h,-u]:[-w/2-d,h,u];
+      const alongX=face<2;
+      box('iron',...p(0,y),alongX?w:band,1,alongX?band:w);
+      for(const h of [y-depth,y-.5,y+2])beam('trim',p(-w/2,h),p(w/2,h),.32);
+      const n=Math.round(w/(near?2:5));
+      for(let i=0;i<n;i++){
+        const u=-w/2+i*w/n,v=u+w/n;
+        beam('iron',p(u,y-depth),p(v,y-.5),.18);
+        beam('iron',p(u,y-.5),p(v,y-depth),.18);
+        beam('iron',p(u,y+.4),p(u,y+2),.095);
+        if(near)beam('trim',p(u,y+1.2),p(v,y+1.2),.075);
+      }
+      // Glazed restaurant / observation strips inset behind the balustrade.
+      if(y<276){
+        const d=-band*.5;
+        box('glass',...p(0,y+2.4,d),alongX?w-13:2.8,2.8,alongX?2.8:w-13);
+        for(let u=-w/2+7;u<w/2-6;u+=near?2.5:6)beam('trim',p(u,y+1,d-1.5),p(u,y+3.8,d-1.5),.10);
+        beam('iron',p(-w/2+5,y+4,-1.5),p(w/2-5,y+4,-1.5),.38);
+      }
     }
   }
-  // Decorative arches follow the sloping leg plane instead of floating outside it.
+  // Four broad arches, curved with the legs, with a spandrel web up to floor one.
   for(let face=0;face<4;face++){
-    const n=near?32:16,point=(t,offset=0)=>{
+    const n=near?48:20,point=(t,offset=0)=>{
       const u=38*Math.cos(t),y=14+36*Math.sin(t)+offset,d=50-(y-2)*.40;
       return face===0?[u,y,d]:face===1?[u,y,-d]:face===2?[d,y,u]:[-d,y,u];
     };
     for(let i=0;i<n;i++){
-      const a=Math.PI*i/n,c=Math.PI*(i+1)/n;
-      beam('iron',point(a),point(c),.6);beam('iron',point(a,2),point(c,2),.3);
-      if(near)beam('iron',point(a),point(c,2),.13);
+      const t=Math.PI*i/n,q=Math.PI*(i+1)/n;
+      beam('iron',point(t),point(q),.65);beam('iron',point(t,2),point(q,2),.34);
+      beam('trim',point(t),point(q,2),.17);
+      if(near&&i%2===0){const p=point(t,2),top=point(t,54-p[1]+2);beam('iron',p,top,.19);}
     }
   }
-  box('glass',0,278,0,12,3,12);box('iron',0,281,0,15,1,15);
-  for(const x of [-4,4])for(const z of [-4,4])beam('iron',[x,282,z],[x*.28,301,z*.28],.35);
-  for(let y=285;y<301;y+=4)box('trim',0,y,0,8-(y-285)*.28,.4,8-(y-285)*.28);
+  // Two-storey summit gallery and the narrowing lattice crown below radio aerials.
+  for(const y of [276,280]){
+    box('glass',0,y+1.4,0,11.8,2.8,11.8);box('iron',0,y+3,0,14,.55,14);
+    for(const side of [-1,1])for(let u=-5;u<=5;u+=near?1.25:2.5){box('trim',u,y+1.4,side*6,.12,2.8,.15);box('trim',side*6,y+1.4,u,.15,2.8,.12);}
+  }
+  for(let y=284;y<301;y+=3.4){const w=4.5-(y-284)*.17,ww=w-.58;
+    for(let j=0;j<4;j++){const [x,z]=corners[j],[u,v]=corners[(j+1)%4];panel([x*w,y,z*w],[u*w,y,v*w],[x*ww,y+3.4,z*ww],[u*ww,y+3.4,v*ww],.24,1);}}
   cylinder('iron',0,307,0,1.7,1,13);cylinder('trim',0,321.5,0,.65,.22,17);
+  for(const y of [303,307,311,315,320])cylinder('roof',0,y,0,y<314?2.3:1.1,y<314?2.3:1.1,.38,near?16:8);
 }
 
 function triomphe(b){

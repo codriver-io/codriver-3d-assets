@@ -12,7 +12,7 @@
   <header><a href="/"><img src="/codriver-helmet.svg" alt="">codriver / 3D collection</a><a href="https://github.com/codriver-io/codriver-3d-assets/tree/gauthiergarnier/paris-landmarks">Revision source ↗</a></header>
   <main>
     <h1>Paris, closer to the real thing.</h1>
-    <p>Compare the first collection with the street-level revision. Look at the proportions, rooflines, openings and bridge supports. Drag to rotate either model.</p>
+    <p>Compare the previous revision with this second architectural pass on five landmarks. Look at the proportions, rooflines, openings and bridge supports. Drag to rotate either model.</p>
     <div class="controls">
       <label>Landmark<select id="asset" aria-label="Landmark"></select></label>
       <label>View<select id="view"><option value="facade">Façade / bridge side</option><option value="overview">Overview</option><option value="roof">Roof / structure</option></select></label>
@@ -21,19 +21,19 @@
     </div>
     <p id="changes" aria-live="polite"></p>
     <div class="comparison">
-      <section class="panel"><div class="caption"><strong>First version</strong><a id="old-link" target="_blank" rel="noopener">Open viewer ↗</a></div><iframe id="before" title="First version of the selected landmark"></iframe></section>
-      <section class="panel"><div class="caption"><strong>Street-level revision</strong><a id="new-link" target="_blank" rel="noopener">Open viewer ↗</a></div><iframe id="after" title="Revised version of the selected landmark"></iframe></section>
+      <section class="panel"><div class="caption"><strong>Previous revision</strong><a id="old-link" target="_blank" rel="noopener">Open viewer ↗</a></div><iframe id="before" title="Previous revision of the selected landmark"></iframe></section>
+      <section class="panel"><div class="caption"><strong>Second pass</strong><a id="new-link" target="_blank" rel="noopener">Open viewer ↗</a></div><iframe id="after" title="Revised version of the selected landmark"></iframe></section>
     </div>
     <p id="cost" class="note"></p>
-    <p class="note">A first refinement pass, with original procedural geometry. Small sculptures, lettering and some dimensions remain approximations. The standalone views do not demonstrate placement on terrain in the driving app.</p>
+    <p class="note">A second refinement pass, with original procedural geometry. Small sculptures, lettering and some dimensions remain approximations. The Louvre façade view now focuses on the pyramid; use Overview to compare the whole palace. The standalone views do not demonstrate placement on terrain in the driving app.</p>
     <p id="error" role="alert"></p>
   </main>
   <footer>Code MIT · Models CC BY 4.0 · © 2026 Codriver · Geographic data © OpenStreetMap contributors</footer>
   <script type="module">
-    const $=id=>document.getElementById(id),previous='https://2a66dd7f.codriver-3d-assets.pages.dev';
+    const $=id=>document.getElementById(id),previous='https://f48798f1.codriver-3d-assets.pages.dev';
     try{
       const [catalog,notes]=await Promise.all(['/asset-catalog.json','/paris-refinement-notes.json'].map(async url=>{const r=await fetch(url);if(!r.ok)throw Error('Unable to load the comparison.');return r.json();}));
-      const assets=catalog.assets.filter(a=>a.id.startsWith('paris-')),params=new URLSearchParams(location.search);
+      const assets=catalog.assets.filter(a=>["paris-tour-eiffel", "paris-louvre", "paris-grand-palais", "paris-musee-orsay", "paris-hotel-de-ville"].includes(a.id)),params=new URLSearchParams(location.search);
       for(const a of assets)$('asset').add(new Option(a.name,a.id));
       if(assets.some(a=>a.id===params.get('asset')))$('asset').value=params.get('asset');
       for(const key of ['view','detail','theme'])if([...$(key).options].some(o=>o.value===params.get(key)))$(key).value=params.get(key);

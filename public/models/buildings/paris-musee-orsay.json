@@ -21,37 +21,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-musee-orsay-near.glb",
-      "bytes": 1740068,
-      "triangles": 31542,
+      "bytes": 3301684,
+      "triangles": 60215,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -108.5,
+          -109.18000030517578,
           0,
-          -43.416099548339844
+          -45.150001525878906
         ],
         "max": [
           108.5,
-          40,
-          42.5
+          40.400001525878906,
+          43.25
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-musee-orsay-far.glb",
-      "bytes": 515180,
-      "triangles": 9130,
+      "bytes": 1037004,
+      "triangles": 18819,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -108.5,
+          -109.18000030517578,
           0,
-          -43.416099548339844
+          -45.150001525878906
         ],
         "max": [
           108.5,
-          40,
-          42.5
+          40.400001525878906,
+          43.25
         ]
       }
     }

@@ -927,7 +927,7 @@
       "kind": "building",
       "location": "Paris, France",
       "status": "ready",
-      "description": "Open four-legged iron lattice tower with swept arches, three decks and antenna.",
+      "description": "Original curved iron lattice tower with four open foundations and three decks.",
       "manifest": "/models/buildings/paris-tour-eiffel.json",
       "source": {
         "path": "src/peregrine/landmarks/paris-icons-geometry.js",
@@ -966,7 +966,7 @@
           }
         ]
       },
-      "notes": "Daytime permanent structure; estimated structural members. Street-level refinement (2026-09-29): Broader curved lower piers, four-sided X bracing, separate upper shaft, framed floors and connected decorative arches.",
+      "notes": "Daytime permanent structure; estimated structural members. Street-level refinement (2026-09-29): Broader curved lower piers, four-sided X bracing, separate upper shaft, framed floors and connected decorative arches. Second pass: curved chords with dense secondary lattice, lift rails, deep platform trusses, glazed observation strips and a two-storey summit gallery. Original architectural geometry only; illumination shows are excluded.",
       "documentation": "docs/assets/paris-tour-eiffel.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1205,7 +1205,7 @@
       "kind": "building",
       "location": "Paris, France",
       "status": "ready",
-      "description": "Historic wings and pavilions around the Cour Carrée and Cour Napoléon; contemporary pyramid excluded.",
+      "description": "Historic palace wings, projecting courtyard pavilions and the diamond-glazed entrance pyramid; Cour Carrée remains open.",
       "manifest": "/models/buildings/paris-louvre.json",
       "source": {
         "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
@@ -1240,7 +1240,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid remains excluded.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid added in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid location (170, 0) follows the schematic court frame and needs surveyed geographic alignment.",
       "documentation": "docs/assets/paris-louvre.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1305,7 +1305,7 @@
       "kind": "building",
       "location": "Paris, France",
       "status": "ready",
-      "description": "Glazed barrel nave, crossing dome, ribs and stone facades.",
+      "description": "Crossed glass vaults, rounded nave ends, dense iron framing and a flattened central cupola over the stone facades.",
       "manifest": "/models/buildings/paris-grand-palais.json",
       "source": {
         "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
@@ -1340,7 +1340,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled.",
       "documentation": "docs/assets/paris-grand-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1405,7 +1405,7 @@
       "kind": "building",
       "location": "Paris, France",
       "status": "ready",
-      "description": "Long former-station volume, glazed curved roof, clock bays and Seine facade.",
+      "description": "Former station with seven monumental Seine-facing arches, clock towers, dark mansard roofs and raised glazing strips.",
       "manifest": "/models/buildings/paris-musee-orsay.json",
       "source": {
         "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
@@ -1444,7 +1444,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary.",
       "documentation": "docs/assets/paris-musee-orsay.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1517,7 +1517,7 @@
       "kind": "building",
       "location": "Paris, France",
       "status": "ready",
-      "description": "Rebuilt civic palace with central clock campanile, steep roofs and an open court",
+      "description": "Renaissance civic palace with statue niches, chimney-lined mansards, clock frontispiece and an open octagonal campanile.",
       "manifest": "/models/buildings/paris-hotel-de-ville.json",
       "source": {
         "path": "src/peregrine/landmarks/paris-historic-geometry.js",
@@ -1560,7 +1560,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes.",
       "documentation": "docs/assets/paris-hotel-de-ville.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",

@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
+import { createParisPalace } from './paris-palaces-geometry.js';
+import { createParisHistoric } from './paris-historic-geometry.js';
 import { createParisIcon } from './paris-icons-geometry.js';
 import { PARIS_BRIDGES, createParisBridge, metricFrame, parisBridgeSpans } from './paris-bridges-geometry.js';
 import { disposeChamplain } from './champlain-geometry.js';
@@ -61,6 +63,39 @@ test('stone vaults have a visible downward-facing soffit across their full width
       assert.ok(hits.length,'vault exists below central roadway');
       assert.ok(hits[0].face.normal.y<-.5,'soffit normal faces the river');
     }
+    disposeChamplain(model);
+  }
+});
+
+
+test('Louvre pyramid has a 21 m apex, transparent glazing and open surrounding courts in both LODs',()=>{
+  for(const detail of ['near','far']){
+    const model=createParisPalace('paris-louvre',{detail});
+    const hits=localRay(model,[170,50,0],[0,-1,0]);
+    assert.ok(Math.abs(hits[0].point.y-21)<.01,'pyramid apex');
+    for(const p of [[0,50,0],[170,50,35],[400,50,0]])assert.equal(localRay(model,p,[0,-1,0]).length,0,'open courtyard');
+    const pane=model.children.find(o=>o.material?.name==='glazing');
+    assert.ok(pane.material.transparent&&pane.material.opacity<.5);
+    disposeChamplain(model);
+  }
+});
+
+test('Grand Palais has closed rounded roof ends and a glazed transverse vault in both LODs',()=>{
+  for(const detail of ['near','far']){
+    const model=createParisPalace('paris-grand-palais',{detail});
+    for(const p of [[0,60,83],[0,60,-83],[52,60,0],[-52,60,0]]){
+      const hit=localRay(model,p,[0,-1,0]).find(h=>h.object.material.name==='glass');
+      assert.ok(hit&&hit.point.y>33,'continuous glass roof');
+      assert.ok(hit.face.normal.y>0,'roof faces sky');
+    }
+    disposeChamplain(model);
+  }
+});
+
+test('Hotel de Ville campanile remains open at both arcade levels in both LODs',()=>{
+  for(const detail of ['near','far']){
+    const model=createParisHistoric('paris-hotel-de-ville',{detail});
+    for(const y of [38,44.5])assert.equal(localRay(model,[0,y,-100],[0,0,1]).length,0,'belfry sky opening');
     disposeChamplain(model);
   }
 });
