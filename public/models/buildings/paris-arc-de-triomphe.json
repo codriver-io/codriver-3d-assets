@@ -2,16 +2,27 @@
   "id": "paris-arc-de-triomphe",
   "name": "Arc de Triomphe",
   "origin": [
-    2.2950373,
-    48.873778
+    2.2950404519841263,
+    48.87377871888875
   ],
+  "authoringFrame": {
+    "rotationAboutY": 1.12835536,
+    "center": [
+      0,
+      0
+    ],
+    "scaleXZ": [
+      1,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutYRadians": 1.0214,
+  "rotationAboutYRadians": 1.12835536,
   "foundation": {
     "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
     "footprintMetres": [
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-arc-de-triomphe-near.glb",
-      "bytes": 413872,
+      "bytes": 413892,
       "triangles": 9496,
       "drawCalls": 3,
       "bounds": {
         "min": [
-          -22.463745385761108,
+          -20.955981185540516,
           0,
-          -26.039776169349288
+          -26.07338499293762
         ],
         "max": [
-          22.522865639721402,
+          21.018627786975596,
           50.25,
-          26.039776169349288
+          26.07338499293762
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-arc-de-triomphe-far.glb",
-      "bytes": 105208,
+      "bytes": 105224,
       "triangles": 1656,
       "drawCalls": 2,
       "bounds": {
         "min": [
-          -22.040411316075133,
+          -20.463586297046312,
           0,
-          -25.810019995973782
+          -25.885000232694864
         ],
         "max": [
-          22.040411316075133,
+          20.463586297046312,
           50.25,
-          25.810019995973782
+          25.885000232694864
         ]
       }
     }

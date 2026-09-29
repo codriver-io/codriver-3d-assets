@@ -50,3 +50,8 @@ Second pass: seven monumental river-facing arches, full-height clock pavilions w
 See [references and validation](../paris-second-pass.md).
 
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-musee-orsay.png) · [near GLB roof](../screenshots/paris-second-pass/paris-musee-orsay-roof.png).
+
+
+## Geographic registration revision
+
+The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.

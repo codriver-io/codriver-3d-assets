@@ -1,3 +1,4 @@
+import { applyParisBuildingFrame } from './paris-building-placement.js';
 import * as THREE from 'three';
 import { assetBuilder } from './asset-geometry.js';
 import { architecture } from './paris-architecture.js';
@@ -35,7 +36,7 @@ function tools(id,detail){
     }
   };
   return {spec,b,near,box,cyl,dome,gable,hip,windows,a:architecture((g,m)=>b.put(g,m),near),finish:()=>{
-    const root=b.finish();root.rotation.y=spec.rotation;
+    const root=b.finish();applyParisBuildingFrame(root,spec.id);
     root.traverse(o=>{if(o.isMesh)o.geometry.deleteAttribute('bridgeLift');});
     root.userData.elevationDatum='Local y=0 is a rigid foundation plane at the host-selected ground datum; no DEM or sea-level height is baked.';
     return root;

@@ -2,16 +2,27 @@
   "id": "paris-hotel-de-ville",
   "name": "Hôtel de Ville de Paris",
   "origin": [
-    2.35253,
-    48.85643
+    2.352531146338002,
+    48.85642610835624
   ],
+  "authoringFrame": {
+    "rotationAboutY": 1.22277767,
+    "center": [
+      0,
+      -3.95
+    ],
+    "scaleXZ": [
+      0.967,
+      0.878
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutY": 1.5707963267948966,
+  "rotationAboutY": 1.22277767,
   "dimensions": {
     "width": 150,
     "length": 105,
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-hotel-de-ville-near.glb",
-      "bytes": 1942068,
+      "bytes": 1942232,
       "triangles": 41804,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -54.79999923706056,
+          -66.45935697724799,
           -5.9604645663569045e-9,
-          -74.62999725341798
+          -83.01588979548
         ],
         "max": [
-          46.90000152587892,
+          66.58137654893314,
           50,
-          74.62999725341798
+          83.06679331917772
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-hotel-de-ville-far.glb",
-      "bytes": 824408,
+      "bytes": 824620,
       "triangles": 17880,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -54.79999923706056,
+          -66.4410632599056,
           -5.9604645663569045e-9,
-          -74.62999725341798
+          -83.01588979548
         ],
         "max": [
-          46.90000152587892,
+          66.58137654893314,
           50,
-          74.62999725341798
+          83.06679331917772
         ]
       }
     }

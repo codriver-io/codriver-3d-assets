@@ -966,14 +966,15 @@
           }
         ]
       },
-      "notes": "Daytime permanent structure; estimated structural members. Street-level refinement (2026-09-29): Broader curved lower piers, four-sided X bracing, separate upper shaft, framed floors and connected decorative arches. Second pass: curved chords with dense secondary lattice, lift rails, deep platform trusses, glazed observation strips and a two-storey summit gallery. Original architectural geometry only; illumination shows are excluded.",
+      "notes": "Daytime permanent structure; estimated structural members. Street-level refinement (2026-09-29): Broader curved lower piers, four-sided X bracing, separate upper shaft, framed floors and connected decorative arches. Second pass: curved chords with dense secondary lattice, lift rails, deep platform trusses, glazed observation strips and a two-storey summit gallery. Original architectural geometry only; illumination shows are excluded. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-tour-eiffel.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-arc-de-triomphe",
@@ -1020,14 +1021,15 @@
           }
         ]
       },
-      "notes": "Relief masses and arch profiles are visual estimates. Street-level refinement (2026-09-29): Layered cornices, masonry courses, framed relief groups and a more legible frieze; sculpture remains abstract.",
+      "notes": "Relief masses and arch profiles are visual estimates. Street-level refinement (2026-09-29): Layered cornices, masonry courses, framed relief groups and a more legible frieze; sculpture remains abstract. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-arc-de-triomphe.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-notre-dame",
@@ -1082,14 +1084,15 @@
           }
         ]
       },
-      "notes": "Current permanent exterior, no construction scaffolding. Street-level refinement (2026-09-29): 43.5 m west facade, 9.7 m west rose, 13.1 m transept roses, open belfries, narrower nave and two tiers of flying buttresses.",
+      "notes": "Current permanent exterior, no construction scaffolding. Street-level refinement (2026-09-29): 43.5 m west facade, 9.7 m west rose, 13.1 m transept roses, open belfries, narrower nave and two tiers of flying buttresses. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-notre-dame.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-sacre-coeur",
@@ -1136,14 +1139,15 @@
           }
         ]
       },
-      "notes": "Building foundation and separate pedestrian terraces; estimated massing. Street-level refinement (2026-09-29): Tapered central cupola, small corner domes, centered rear campanile, stepped frontispiece, open triple porch and bronze equestrian silhouettes.",
+      "notes": "Building foundation and separate pedestrian terraces; estimated massing. Street-level refinement (2026-09-29): Tapered central cupola, small corner domes, centered rear campanile, stepped frontispiece, open triple porch and bronze equestrian silhouettes. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-sacre-coeur.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-invalides",
@@ -1190,14 +1194,15 @@
           }
         ]
       },
-      "notes": "Scoped to church, excludes hospital complex. Street-level refinement (2026-09-29): Radial drum openings, curved gold dome ribs, column capitals, side elevations and crown cross.",
+      "notes": "Scoped to church, excludes hospital complex. Street-level refinement (2026-09-29): Radial drum openings, curved gold dome ribs, column capitals, side elevations and crown cross. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-invalides.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-louvre",
@@ -1219,6 +1224,14 @@
           {
             "label": "OpenStreetMap geographic-data notice",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/relation/3262297"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/way/375076234"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
@@ -1240,14 +1253,15 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid added in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid location (170, 0) follows the schematic court frame and needs surveyed geographic alignment. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; subsequently expanded to include the pyramid in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid is registered to its mapped geographic center; palace wing plan remains schematic. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-louvre.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-palais-garnier",
@@ -1269,6 +1283,14 @@
           {
             "label": "OpenStreetMap geographic-data notice",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/way/54667456"
+          },
+          {
+            "label": "Separate facade building part",
+            "url": "https://www.openstreetmap.org/way/822291002"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
@@ -1290,14 +1312,15 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-palais-garnier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-grand-palais",
@@ -1319,6 +1342,10 @@
           {
             "label": "OpenStreetMap geographic-data notice",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/way/56185523"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
@@ -1340,14 +1367,15 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-grand-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-petit-palais",
@@ -1369,6 +1397,10 @@
           {
             "label": "OpenStreetMap geographic-data notice",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/relation/2778854"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
@@ -1390,14 +1422,15 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-petit-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-musee-orsay",
@@ -1423,6 +1456,10 @@
           {
             "label": "Museum history: original hall dimensions",
             "url": "https://www.musee-orsay.fr/en/node/283773"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/way/63178753"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
@@ -1444,14 +1481,15 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-musee-orsay.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-pantheon",
@@ -1502,14 +1540,15 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Column bases/capitals, stepped portico approach, curved dome ribs, nave bays and pilasters.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Column bases/capitals, stepped portico approach, curved dome ribs, nave bays and pilasters. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-pantheon.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-hotel-de-ville",
@@ -1535,6 +1574,10 @@
           {
             "label": "OpenStreetMap geographic attribution",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/relation/284089"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
@@ -1560,14 +1603,15 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes. Rendering correction: statue niche separated from the clock pediment; ridge ironwork and statues fitted to the narrower mansard crest with supported plinths.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes. Rendering correction: statue niche separated from the clock pediment; ridge ironwork and statues fitted to the narrower mansard crest with supported plinths. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-hotel-de-ville.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-conciergerie",
@@ -1593,6 +1637,10 @@
           {
             "label": "OpenStreetMap geographic attribution",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/relation/536982"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
@@ -1618,14 +1666,15 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Distinct western crenellated tower, closer twin central towers, Gothic bays and gilded eastern clock.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Distinct western crenellated tower, closer twin central towers, Gothic bays and gilded eastern clock. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-conciergerie.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-madeleine",
@@ -1680,14 +1729,15 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): 52 articulated columns, complete ascending steps, continuous peristyle, entablature and abstract pediment relief.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): 52 articulated columns, complete ascending steps, continuous peristyle, entablature and abstract pediment relief. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-madeleine.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-institut-de-france",
@@ -1713,6 +1763,10 @@
           {
             "label": "OpenStreetMap geographic attribution",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Mapped registration footprint",
+            "url": "https://www.openstreetmap.org/relation/967665"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-historic-geometry.js"
@@ -1738,14 +1792,15 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Tangent-aligned curved-wing bays, cornices, entrance order, radial drum openings and curved dome ribs.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Tangent-aligned curved-wing bays, cornices, entrance order, radial drum openings and curved dome ribs. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
       "documentation": "docs/assets/paris-institut-de-france.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "placementDocumentation": "docs/paris/placement.md"
     },
     {
       "id": "paris-pont-alexandre-iii",

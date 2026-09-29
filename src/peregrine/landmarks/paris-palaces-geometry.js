@@ -1,3 +1,4 @@
+import { PARIS_BUILDING_FRAMES, applyParisBuildingFrame } from './paris-building-placement.js';
 // Original procedural Paris palace exteriors, commissioned for Codriver, 2026.
 // Coordinates are local metres: east / up / south. No elevation or Mercator scale is baked in.
 // MIT source; exported models are CC BY 4.0. Geographic placement © OSM contributors, ODbL.
@@ -6,19 +7,19 @@ import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js
 import { architecture } from './paris-architecture.js';
 
 export const PARIS_PALACES = Object.freeze({
-  'paris-louvre': {name:'Palais du Louvre',origin:[2.3335,48.86124],radius:490,
+  'paris-louvre': {name:'Palais du Louvre',...PARIS_BUILDING_FRAMES['paris-louvre'],radius:490,
     description:'Historic east palace around the Cour Carrée and the long north and south wings around the Cour Napoléon, including the glass entrance pyramid.',
     references:['https://presse.louvre.fr/le-musee-du-louvre-1063000201419/?lang=fr','https://www.louvre.fr/en/explore/the-palace/a-pyramid-for-a-symbol']},
-  'paris-palais-garnier': {name:'Palais Garnier',origin:[2.33164,48.87203],radius:115,
+  'paris-palais-garnier': {name:'Palais Garnier',...PARIS_BUILDING_FRAMES['paris-palais-garnier'],radius:115,
     description:'South colonnaded front, domed auditorium, tall northern fly tower and gilded roof silhouettes.',
     references:['https://www.operadeparis.fr/apropos/theatres-et-ateliers/palais-garnier']},
-  'paris-grand-palais': {name:'Grand Palais',origin:[2.31253,48.86612],radius:180,
+  'paris-grand-palais': {name:'Grand Palais',...PARIS_BUILDING_FRAMES['paris-grand-palais'],radius:180,
     description:'Stone enclosure, long glazed barrel nave, crossing dome and dense but economical structural ribs.',
     references:['https://www.grandpalais.fr/sites/default/files/BROCHURE-LOCATION-GRAND-PALAIS.pdf']},
-  'paris-petit-palais': {name:'Petit Palais',origin:[2.31454,48.86603],radius:105,
+  'paris-petit-palais': {name:'Petit Palais',...PARIS_BUILDING_FRAMES['paris-petit-palais'],radius:105,
     description:'West entrance arch, long colonnaded facade, domed entry and open curved garden court.',
     references:['https://www.petitpalais.paris.fr/professionnels/tournage-et-prise-de-vue','https://parismusees.paris.fr/en/node/5829']},
-  'paris-musee-orsay': {name:'Musée d’Orsay',origin:[2.32575,48.86000],radius:190,
+  'paris-musee-orsay': {name:'Musée d’Orsay',...PARIS_BUILDING_FRAMES['paris-musee-orsay'],radius:190,
     description:'Long former station along the Seine with curved iron roof, end pavilions and clock bays.',
     references:['https://www.musee-orsay.fr/en/museum/history-museum','https://data.bnf.fr/en/ark:/12148/cb12042796j.pdf']},
 });
@@ -66,7 +67,7 @@ function builder(id,detail) {
   const finish=()=>{for(const [name,geoms] of bins){const geometry=mergeGeometries(geoms);for(const g of geoms)g.dispose();geometry.computeBoundingBox();geometry.computeBoundingSphere();
       const material=new THREE.MeshStandardMaterial({color:COLORS[name],roughness:name==='glass'?.43:.86,metalness:['iron','gold'].includes(name)?.34:0,side:THREE.DoubleSide});if(name==='glazing'){material.transparent=true;material.opacity=.32;material.depthWrite=false;material.roughness=.18;}material.name=name;
       const mesh=new THREE.Mesh(geometry,material);mesh.name=`${id}-${name}`;root.add(mesh);}
-    return root;};
+    return applyParisBuildingFrame(root,id);};
   return {root,put,box,bar,cyl,dome,barrel,roof,arcade,windows,finish,a:architecture(put,detail==='near')};
 }
 

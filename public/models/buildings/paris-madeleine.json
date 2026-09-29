@@ -2,16 +2,27 @@
   "id": "paris-madeleine",
   "name": "Église de la Madeleine",
   "origin": [
-    2.32447,
-    48.87003
+    2.3244654824718003,
+    48.87002796852134
   ],
+  "authoringFrame": {
+    "rotationAboutY": 2.69513743,
+    "center": [
+      0,
+      0
+    ],
+    "scaleXZ": [
+      1,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutY": 3.141592653589793,
+  "rotationAboutY": 2.69513743,
   "dimensions": {
     "width": 43,
     "length": 108,
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-madeleine-near.glb",
-      "bytes": 504992,
+      "bytes": 505036,
       "triangles": 21072,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -21.500000000000007,
+          -42.72122341235692,
           -4.7683716530855236e-8,
-          -54.029998779296875
+          -58.01723133375681
         ],
         "max": [
-          21.500000000000007,
+          42.72122341235692,
           30,
-          54.029998779296875
+          58.01723133375681
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-madeleine-far.glb",
-      "bytes": 221740,
+      "bytes": 221788,
       "triangles": 8592,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -21.500000000000007,
+          -42.72122341235692,
           -4.7683716530855236e-8,
-          -54.029998779296875
+          -58.01723133375681
         ],
         "max": [
-          21.500000000000007,
+          42.72122341235692,
           30,
-          54.029998779296875
+          58.01723133375681
         ]
       }
     }

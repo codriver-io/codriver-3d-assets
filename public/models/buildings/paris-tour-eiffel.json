@@ -2,16 +2,27 @@
   "id": "paris-tour-eiffel",
   "name": "Tour Eiffel",
   "origin": [
-    2.2944962,
-    48.858262
+    2.294498492540051,
+    48.85826056721498
   ],
+  "authoringFrame": {
+    "rotationAboutY": 0.79866267,
+    "center": [
+      0,
+      0
+    ],
+    "scaleXZ": [
+      1,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutYRadians": 0.7853981633974483,
+  "rotationAboutYRadians": 0.79866267,
   "foundation": {
     "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
     "footprintMetres": [
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-tour-eiffel-near.glb",
-      "bytes": 2232336,
+      "bytes": 2232352,
       "triangles": 55248,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -88.38834764831844,
+          -88.38057192404301,
           0,
-          -88.38834764831844
+          -88.38057192404301
         ],
         "max": [
-          88.38834764831844,
+          88.38057192404301,
           330,
-          88.38834764831844
+          88.38057192404301
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-tour-eiffel-far.glb",
-      "bytes": 511400,
+      "bytes": 511416,
       "triangles": 13584,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -88.38834764831844,
+          -88.38057192404301,
           0,
-          -88.38834764831844
+          -88.38057192404301
         ],
         "max": [
-          88.38834764831844,
+          88.38057192404301,
           330,
-          88.38834764831844
+          88.38057192404301
         ]
       }
     }

@@ -18,7 +18,7 @@ for(const spec of PARIS_ICONS){
     model.traverse(o=>{o.geometry?.dispose();o.material?.dispose();});
   }
   await writeFile(new URL(`${spec.id}.json`,out),JSON.stringify({
-    id:spec.id,name:spec.name,origin:spec.origin,units:'metres',axes:{x:'east',y:'up',z:'south'},
+    id:spec.id,name:spec.name,origin:spec.origin,authoringFrame:{rotationAboutY:spec.rotation,center:spec.authoringCenter,scaleXZ:spec.scaleXZ},units:'metres',axes:{x:'east',y:'up',z:'south'},
     rotationAboutYRadians:spec.rotation,foundation:{datum:'Local rigid y=0; no terrain, sea-level or Mercator height baked.',footprintMetres:spec.footprint},
     attribution:'Original Codriver-commissioned procedural geometry, 2026. Geographic placement © OpenStreetMap contributors (ODbL 1.0), https://www.openstreetmap.org/copyright',
     note:'Architectural exterior approximation; see per-asset documentation for published dimensions and estimated details.',assets

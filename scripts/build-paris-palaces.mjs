@@ -20,7 +20,7 @@ for(const [id,spec] of Object.entries(PARIS_PALACES)){
     assets[detail]={url:`/models/buildings/${name}`,...glbMetrics(bytes),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};
     model.traverse(o=>{o.geometry?.dispose();o.material?.dispose();});
   }
-  await writeFile(new URL(`${id}.json`,out),JSON.stringify({id,name:spec.name,origin:spec.origin,units:'metres',axes:{x:'east',y:'up',z:'south'},
+  await writeFile(new URL(`${id}.json`,out),JSON.stringify({id,name:spec.name,origin:spec.origin,authoringFrame:{rotationAboutY:spec.rotation,center:spec.authoringCenter,scaleXZ:spec.scaleXZ},units:'metres',axes:{x:'east',y:'up',z:'south'},
     elevationDatum:'Local y=0 is the entrance plaza plane; terrain placement belongs to the host.',
     orientation:'Geometry is east/up/south. Explicit volumes and open courtyards are fixed in geographic orientation.',
     license:'CC-BY-4.0',codeLicense:'MIT',attribution:'Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors',

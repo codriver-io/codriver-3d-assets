@@ -22,7 +22,7 @@ for(const spec of PARIS_HISTORIC){
     model.traverse(o=>{if(o.isMesh){o.geometry.dispose();o.material.dispose();}});
   }
   await writeFile(new URL(`${spec.id}.json`,out),JSON.stringify({
-    id:spec.id,name:spec.name,origin:spec.origin,units:'metres',
+    id:spec.id,name:spec.name,origin:spec.origin,authoringFrame:{rotationAboutY:spec.rotation,center:spec.authoringCenter,scaleXZ:spec.scaleXZ},units:'metres',
     axes:{x:'east',y:'up',z:'south'},rotationAboutY:spec.rotation,
     dimensions:{width:spec.width,length:spec.length,height:spec.height},
     elevationDatum:'Local y=0 is the rigid foundation plane; the host samples and places the model on flat ground or terrain. No DEM, elevation or Mercator scale is baked.',

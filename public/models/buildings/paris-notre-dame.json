@@ -2,16 +2,27 @@
   "id": "paris-notre-dame",
   "name": "Notre-Dame de Paris",
   "origin": [
-    2.3499095,
-    48.8529723
+    2.3498344847494415,
+    48.85289778949129
   ],
+  "authoringFrame": {
+    "rotationAboutY": -2.03487937,
+    "center": [
+      0,
+      -5.59
+    ],
+    "scaleXZ": [
+      1,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutYRadians": -2.1286,
+  "rotationAboutYRadians": -2.03487937,
   "foundation": {
     "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
     "footprintMetres": [
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-notre-dame-near.glb",
-      "bytes": 1533308,
+      "bytes": 1533380,
       "triangles": 36363,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -65.83512468078246,
+          -71.63123832387174,
           0,
-          -54.02858541225784
+          -52.609295651934715
         ],
         "max": [
-          75.33742301205302,
+          71.64912679192696,
           96,
-          59.95701337118309
+          52.61824962464679
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-notre-dame-far.glb",
-      "bytes": 688756,
+      "bytes": 688832,
       "triangles": 14715,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -65.83512468078246,
+          -71.63123832387174,
           0,
-          -54.02858541225784
+          -52.609295651934715
         ],
         "max": [
-          75.33742301205302,
+          71.64912679192696,
           96,
-          59.95701337118309
+          52.61824962464679
         ]
       }
     }

@@ -20,3 +20,8 @@ Tangent-aligned curved-wing bays, cornices, entrance order, radial drum openings
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-institut-de-france.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-institut-de-france-roof-or-structure.png).
+
+
+## Geographic registration revision
+
+The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.

@@ -7,10 +7,18 @@ import { createParisPalace } from './paris-palaces-geometry.js';
 import { createParisHistoric } from './paris-historic-geometry.js';
 import { createParisIcon } from './paris-icons-geometry.js';
 import { PARIS_BRIDGES, createParisBridge, metricFrame, parisBridgeSpans } from './paris-bridges-geometry.js';
+import { PARIS_BUILDING_FRAMES } from './paris-building-placement.js';
 import { disposeChamplain } from './champlain-geometry.js';
 
 function localRay(model,origin,direction){
   model.updateMatrixWorld(true);
+  const id=model.userData.id||model.userData.landmark||model.name;
+  const frame=PARIS_BUILDING_FRAMES[id];
+  if(frame){
+    const [cx,cz]=frame.authoringCenter,[sx,sz]=frame.scaleXZ;
+    origin=[(origin[0]-cx)*sx,origin[1],(origin[2]-cz)*sz];
+    direction=[direction[0]*sx,direction[1],direction[2]*sz];
+  }
   const p=new THREE.Vector3(...origin).applyMatrix4(model.matrixWorld);
   const d=new THREE.Vector3(...direction).transformDirection(model.matrixWorld);
   return new THREE.Raycaster(p,d).intersectObject(model,true);
@@ -96,7 +104,7 @@ test('Grand Palais has closed rounded roof ends and a glazed transverse vault in
 
 test('Hotel de Ville campanile remains open at both arcade levels in both LODs',()=>{
   for(const detail of ['near','far']){
-    const model=createParisHistoric('paris-hotel-de-ville',{detail});
+    const model=createParisHistoric('paris-hotel-de-ville',{detail});model.userData.id='paris-hotel-de-ville';
     for(const y of [38,44.5])assert.equal(localRay(model,[0,y,-100],[0,0,1]).length,0,'belfry sky opening');
     disposeChamplain(model);
   }
@@ -109,7 +117,9 @@ async function sourceAndExport(id,create,detail){
   // GLTFLoader adds a scene wrapper; use the authored root so local rays also
   // inherit the Hotel de Ville's quarter-turn, just as they do in source mode.
   assert.equal(glb.scene.children.length,1);
-  return [create(id,{detail}),glb.scene.children[0]];
+  const models=[create(id,{detail}),glb.scene.children[0]];
+  for(const model of models)model.userData.id=id;
+  return models;
 }
 
 test('Louvre source/GLB exterior window rows leave the inter-storey wall clear in both LODs',async()=>{
@@ -153,7 +163,8 @@ test('Hotel source/GLB central roof ornaments stay within the supporting ridge i
     for(const material of ['roof','stone']){
       const xs=[];
       model.traverse(o=>{if(o.material?.name!==material)return;const p=o.geometry.attributes.position;
-        for(let i=0;i<p.count;i++)if(p.getY(i)>34.05&&p.getY(i)<37.5&&Math.abs(p.getZ(i)+38)<.8&&Math.abs(p.getX(i))<24)xs.push(p.getX(i));
+        const f=PARIS_BUILDING_FRAMES['paris-hotel-de-ville'];
+        for(let i=0;i<p.count;i++){const x=p.getX(i)/f.scaleXZ[0]+f.authoringCenter[0],z=p.getZ(i)/f.scaleXZ[1]+f.authoringCenter[1];if(p.getY(i)>34.05&&p.getY(i)<37.5&&Math.abs(z+38)<.8&&Math.abs(x)<24)xs.push(x);}
       });
       assert.ok(xs.length,'ridge ornaments exist');
       assert.ok(xs.every(x=>Math.abs(x)<14.88),'ornaments must not cantilever beyond the central roof crest');
