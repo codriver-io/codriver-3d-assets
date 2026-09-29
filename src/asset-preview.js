@@ -25,6 +25,7 @@ import { createOratoire } from './peregrine/landmarks/oratoire-saint-joseph-geom
 import { fitOratoire } from '../prototypes/assets3d/oratoire-saint-joseph-inspection.js';
 import { createMercier } from './peregrine/landmarks/pont-honore-mercier-geometry.js';
 import { MERCIER_UPSTREAM } from './peregrine/landmarks/pont-honore-mercier-profile.js';
+import { createParisIcon, PARIS_ICON_BY_ID } from './peregrine/landmarks/paris-icons-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
 document.body.classList.toggle('embedded', params.get('embed') === '1');
@@ -37,6 +38,11 @@ const controls = new OrbitControls(camera, renderer.domElement); controls.enable
 const sky = new THREE.HemisphereLight(0xe6f3ff, 0x798776, 2.7), sun = new THREE.DirectionalLight(0xfff1dc, 3.2);
 sun.position.set(-400, 900, 600); scene.add(sky, sun);
 const creators = {
+  'paris-tour-eiffel': opts => createParisIcon('paris-tour-eiffel',opts),
+  'paris-arc-de-triomphe': opts => createParisIcon('paris-arc-de-triomphe',opts),
+  'paris-notre-dame': opts => createParisIcon('paris-notre-dame',opts),
+  'paris-sacre-coeur': opts => createParisIcon('paris-sacre-coeur',opts),
+  'paris-invalides': opts => createParisIcon('paris-invalides',opts),
   'farine-five-roses': createFiveRoses,
   'pont-victoria': createVictoria,
   'pont-jacques-cartier': createJacquesCartier,
@@ -127,6 +133,19 @@ function fit() {
     const q=profile.bridgePoint(profile.BRIDGE_LENGTH/2);
     camera.position.copy(center).addScaledVector(new THREE.Vector3(-q.tz,0.52,q.tx).normalize(),distance*0.78);
   }
+  if (PARIS_ICON_BY_ID[entry?.id]) {
+    const spec=PARIS_ICON_BY_ID[entry.id],c=Math.cos(spec.rotation),s=Math.sin(spec.rotation);
+    const point=(u,y,v)=>new THREE.Vector3(c*u+s*v,y,-s*u+c*v);
+    const v=front?'facade':view;
+    const d=v==='roof'?Math.max(240,spec.height*2.15):Math.max(185,spec.height*1.7);
+    const views={overview:[[d*.76,spec.height*.8,d],[0,spec.height*.42,0]],
+      facade:[[0,spec.height*.47,d],[0,spec.height*.43,0]],
+      roof:[[d*.45,spec.height*1.4,d*.65],[0,spec.height*.35,0]],
+      reverse:[[0,spec.height*.47,-d],[0,spec.height*.43,0]]};
+    const [eye,target]=views[v]||views.overview;
+    camera.position.copy(point(...eye));controls.target.copy(point(...target));
+    camera.near=.1;camera.far=4000;camera.updateProjectionMatrix();
+  }
   controls.update();
 }
 function theme() {
@@ -183,6 +202,10 @@ fetch('/asset-catalog.json').then((r) => { if (!r.ok) throw new Error('Catalog u
   if (entry.id === 'oratoire-saint-joseph') {
     $('angle').replaceChildren(...['overview','facade','roof','approach'].map(v => new Option(v, v)));
     $('angle').value = params.get('view') || 'overview';
+  }
+  if (PARIS_ICON_BY_ID[entry.id]) {
+    $('angle').replaceChildren(...Object.entries({overview:'Overview',facade:'Facade',reverse:'Opposite facade',roof:'Roof'}).map(([value,label])=>new Option(label,value)));
+    $('angle').value=params.get('view')||'overview';
   }
   if (params.get('source') === 'procedural' && creators[entry.id]) $('source').value = 'procedural';
   $('source').disabled = !creators[entry.id];
