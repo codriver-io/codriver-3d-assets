@@ -2,16 +2,27 @@
   "id": "paris-institut-de-france",
   "name": "Institut de France",
   "origin": [
-    2.33757,
-    48.8572
+    2.3370972575098756,
+    48.857320239742954
   ],
+  "authoringFrame": {
+    "rotationAboutY": -0.28797933,
+    "center": [
+      0,
+      0
+    ],
+    "scaleXZ": [
+      0.77,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutY": 0,
+  "rotationAboutY": -0.28797933,
   "dimensions": {
     "width": 170,
     "length": 75,
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-institut-de-france-near.glb",
-      "bytes": 926708,
+      "bytes": 926932,
       "triangles": 17789,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -85,
+          -69.05996900447403,
           0,
-          -18.349605560302734
+          -36.18276757924259
         ],
         "max": [
-          85,
+          67.96631826602473,
           44,
-          23.5
+          41.01172305654468
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-institut-de-france-far.glb",
-      "bytes": 442232,
+      "bytes": 442456,
       "triangles": 8525,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -85,
+          -69.05996900447403,
           0,
-          -18.550125122070312
+          -36.37502969209764
         ],
         "max": [
-          85,
+          68.02326889913775,
           44,
-          23.5
+          41.01172305654468
         ]
       }
     }

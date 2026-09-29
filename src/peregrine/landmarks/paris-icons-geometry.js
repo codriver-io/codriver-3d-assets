@@ -1,3 +1,4 @@
+import { PARIS_BUILDING_FRAMES, applyParisBuildingFrame } from './paris-building-placement.js';
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { architecture } from './paris-architecture.js';
@@ -5,15 +6,15 @@ import { architecture } from './paris-architecture.js';
 // Original, texture-free architectural studies. Coordinates are metres in an
 // east/up/south tangent frame; y=0 is the local foundation plane, not sea level.
 export const PARIS_ICONS = Object.freeze([
-  { id:'paris-tour-eiffel', name:'Tour Eiffel', origin:[2.2944962,48.8582620], rotation:Math.PI/4, footprint:[125,125], height:330, pad:68,
+  { id:'paris-tour-eiffel', name:'Tour Eiffel', ...PARIS_BUILDING_FRAMES['paris-tour-eiffel'], footprint:[125,125], height:330, pad:68,
     palette:{iron:'#765b43',trim:'#9b7955',glass:'#5b7378',stone:'#aaa99d',roof:'#a98b62',gold:'#cba445'} },
-  { id:'paris-arc-de-triomphe', name:'Arc de Triomphe', origin:[2.2950373,48.8737780], rotation:1.0214, footprint:[44.8,22.2], height:50, pad:27,
+  { id:'paris-arc-de-triomphe', name:'Arc de Triomphe', ...PARIS_BUILDING_FRAMES['paris-arc-de-triomphe'], footprint:[44.8,22.2], height:50, pad:27,
     palette:{stone:'#d8ceb7',trim:'#e4d8c3',relief:'#b7ae9a',roof:'#bcb5a6',glass:'#77756e'} },
-  { id:'paris-notre-dame', name:'Notre-Dame de Paris', origin:[2.3499095,48.8529723], rotation:-2.1286, footprint:[48,127], height:96, pad:69,
+  { id:'paris-notre-dame', name:'Notre-Dame de Paris', ...PARIS_BUILDING_FRAMES['paris-notre-dame'], footprint:[48,127], height:96, pad:69,
     palette:{stone:'#c8c0ae',trim:'#e0d5c2',roof:'#63636a',glass:'#353b47',iron:'#6d6a64',relief:'#a89e8a'} },
-  { id:'paris-sacre-coeur', name:'Sacré-Cœur', origin:[2.3430193,48.8867699], rotation:0.112, footprint:[75,85], height:84, pad:48,
+  { id:'paris-sacre-coeur', name:'Sacré-Cœur', ...PARIS_BUILDING_FRAMES['paris-sacre-coeur'], footprint:[75,85], height:84, pad:48,
     palette:{stone:'#e8e7dd',trim:'#f4f1e8',roof:'#dadbd4',glass:'#596570',relief:'#d1cfc4',bronze:'#63877d',gold:'#cfb985'} },
-  { id:'paris-invalides', name:'Dôme des Invalides', origin:[2.31254,48.85505], rotation:0, footprint:[58,70], height:107, pad:38,
+  { id:'paris-invalides', name:'Dôme des Invalides', ...PARIS_BUILDING_FRAMES['paris-invalides'], footprint:[58,70], height:107, pad:38,
     palette:{stone:'#d2c5aa',trim:'#ead9b9',roof:'#788073',glass:'#526270',gold:'#cda637',relief:'#ae9b79'} },
 ]);
 export const PARIS_ICON_BY_ID=Object.fromEntries(PARIS_ICONS.map(v=>[v.id,v]));
@@ -49,7 +50,7 @@ function builder(spec, detail) {
     const g=new THREE.ExtrudeGeometry(shape,{depth,bevelEnabled:false,curveSegments:steps});
     g.translate(0,0,cz-depth/2);add(g,m);
   };
-  const finish=()=>{for(const [name,geoms] of batches){const g=mergeGeometries(geoms);geoms.forEach(v=>v.dispose());const mat=new THREE.MeshStandardMaterial({color:palette[name]||'#aaaaaa',roughness:name==='gold'?.48:.86,metalness:name==='gold'?.72:name==='iron'?.42:0,side:THREE.DoubleSide});mat.name=name;const mesh=new THREE.Mesh(g,mat);mesh.name=name;root.add(mesh);}root.rotation.y=spec.rotation;return root;};
+  const finish=()=>{for(const [name,geoms] of batches){const g=mergeGeometries(geoms);geoms.forEach(v=>v.dispose());const mat=new THREE.MeshStandardMaterial({color:palette[name]||'#aaaaaa',roughness:name==='gold'?.48:.86,metalness:name==='gold'?.72:name==='iron'?.42:0,side:THREE.DoubleSide});mat.name=name;const mesh=new THREE.Mesh(g,mat);mesh.name=name;root.add(mesh);}return applyParisBuildingFrame(root,spec.id);};
   return {near,box,beam,cylinder,disk,sphere,cone,roof,arc,archBand,archCap,finish,detail:architecture(add,near)};
 }
 

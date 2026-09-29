@@ -2,16 +2,27 @@
   "id": "paris-sacre-coeur",
   "name": "Sacré-Cœur",
   "origin": [
-    2.3430193,
-    48.8867699
+    2.3430176157065397,
+    48.886795537472906
   ],
+  "authoringFrame": {
+    "rotationAboutY": 0.07731809,
+    "center": [
+      0,
+      -1.325
+    ],
+    "scaleXZ": [
+      0.9,
+      0.947
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutYRadians": 0.112,
+  "rotationAboutYRadians": 0.07731809,
   "foundation": {
     "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
     "footprintMetres": [
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-sacre-coeur-near.glb",
-      "bytes": 1693800,
+      "bytes": 1693888,
       "triangles": 34918,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -33.636399092382916,
+          -28.83145370179801,
           -1.9073486612342094e-7,
-          -54.80364456690872
+          -49.79232825465438
         ],
         "max": [
-          33.34021904264064,
+          28.83145370179801,
           84,
-          52.170246483576996
+          49.79232825465438
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-sacre-coeur-far.glb",
-      "bytes": 799644,
+      "bytes": 799732,
       "triangles": 16390,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -33.636399092382916,
+          -28.83145370179801,
           -1.9073486612342094e-7,
-          -54.80364456690872
+          -49.79232825465438
         ],
         "max": [
-          33.34021904264064,
+          28.83145370179801,
           84,
-          52.170246483576996
+          49.79232825465438
         ]
       }
     }

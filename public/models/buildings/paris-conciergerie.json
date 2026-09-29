@@ -2,16 +2,27 @@
   "id": "paris-conciergerie",
   "name": "Conciergerie",
   "origin": [
-    2.34582,
-    48.85591
+    2.3449435870433093,
+    48.8563941308924
   ],
+  "authoringFrame": {
+    "rotationAboutY": -0.3577925,
+    "center": [
+      0,
+      0
+    ],
+    "scaleXZ": [
+      1.08,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutY": 0,
+  "rotationAboutY": -0.3577925,
   "dimensions": {
     "width": 170,
     "length": 38,
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-conciergerie-near.glb",
-      "bytes": 241108,
+      "bytes": 241328,
       "triangles": 5086,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -81.80000305175781,
+          -87.52388992394656,
           -0.5,
-          -24
+          -53.41885430021853
         ],
         "max": [
-          84,
+          93.37987927119885,
           50,
-          14.5
+          44.03766426194107
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-conciergerie-far.glb",
-      "bytes": 111676,
+      "bytes": 111912,
       "triangles": 2334,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -81.80000305175781,
+          -87.20207322285303,
           0,
-          -24
+          -53.41885430021853
         ],
         "max": [
-          84,
+          93.37987927119885,
           50,
-          14.5
+          44.03766426194107
         ]
       }
     }

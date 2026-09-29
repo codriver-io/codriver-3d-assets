@@ -9,3 +9,5 @@ A local model is independent of its host. Document y=0 and anchors rather than b
 - Preserve unrelated roads and restore host geometry on model failure/disable/unload. A successful load precedes road/building replacement.
 
 For this collection, see `docs/adr/0002-cityscape-and-topography.md` for the full evidence matrix. The public viewer does not verify either driving mode; mark app integration not tested unless you have actual evidence.
+
+For host terrain QA, include a regional-to-street zoom and both mode switches. A first, coarse DEM sample must not become a permanent foundation altitude; refine it when better resolution arrives and preserve the best datum on zoom-out. Select reference samples and datum policy for the actual site, keeping landmark dimensions independent of terrain exaggeration.

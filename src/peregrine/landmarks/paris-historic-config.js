@@ -1,31 +1,27 @@
+import { PARIS_BUILDING_FRAMES } from './paris-building-placement.js';
 // Geographic origins are approximate landmark centroids, checked against
 // OpenStreetMap place/way locations. All dimensions are real metres.
 // Coordinates are [longitude, latitude]; local +X east, +Y up, +Z south.
 // Rotation turns authoring X/Z axes into the geographic frame.
 export const PARIS_HISTORIC = [
   {
-    id:'paris-pantheon',name:'Panthéon',origin:[2.34607,48.84619],
-    rotation:Math.PI/2, width:82,length:122,height:82,pad:61,
+    id:'paris-pantheon',name:'Panthéon',...PARIS_BUILDING_FRAMES['paris-pantheon'], width:82,length:122,height:82,pad:61,
     note:'Main cruciform mass and portico. Main body length 100 m, 22 columns (2 m diameter, 20 m tall), dome crown 82 m published by CMN; width, transept and roof tiers are estimates.'
   },
   {
-    id:'paris-hotel-de-ville',name:'Hôtel de Ville de Paris',origin:[2.35253,48.85643],
-    rotation:Math.PI/2, width:150,length:105,height:50,pad:85,
+    id:'paris-hotel-de-ville',name:'Hôtel de Ville de Paris',...PARIS_BUILDING_FRAMES['paris-hotel-de-ville'], width:150,length:105,height:50,pad:85,
     note:'50 m campanile published by Ville de Paris; perimeter and wings are approximate map/photo interpretation. Open central courtyard and western square stay empty.'
   },
   {
-    id:'paris-conciergerie',name:'Conciergerie',origin:[2.34582,48.85591],
-    rotation:0, width:170,length:38,height:50,pad:90,
+    id:'paris-conciergerie',name:'Conciergerie',...PARIS_BUILDING_FRAMES['paris-conciergerie'], width:170,length:38,height:50,pad:90,
     note:'Four Seine towers and long hall; width/height and tower spacing are visual estimates. Palais de Justice and Sainte-Chapelle are outside this model.'
   },
   {
-    id:'paris-madeleine',name:'Église de la Madeleine',origin:[2.32447,48.87003],
-    rotation:Math.PI, width:43,length:108,height:30,pad:60,
+    id:'paris-madeleine',name:'Église de la Madeleine',...PARIS_BUILDING_FRAMES['paris-madeleine'], width:43,length:108,height:30,pad:60,
     note:'108 × 43 × 30 m and 52 columns, each 20 m, published by Ville de Paris. Stylobate and cella setback are estimates.'
   },
   {
-    id:'paris-institut-de-france',name:'Institut de France',origin:[2.33757,48.85720],
-    rotation:0, width:170,length:75,height:44,pad:85,
+    id:'paris-institut-de-france',name:'Institut de France',...PARIS_BUILDING_FRAMES['paris-institut-de-france'], width:170,length:75,height:44,pad:85,
     note:'44 m dome height published by Institut de France; half-moon frontage is documented. Wing curvature, lengths and openings are visual/map estimates.'
   },
 ];

@@ -2,16 +2,27 @@
   "id": "paris-invalides",
   "name": "Dôme des Invalides",
   "origin": [
-    2.31254,
-    48.85505
+    2.312541783404777,
+    48.85504840710074
   ],
+  "authoringFrame": {
+    "rotationAboutY": -0.07976155,
+    "center": [
+      0,
+      1.75
+    ],
+    "scaleXZ": [
+      1,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutYRadians": 0,
+  "rotationAboutYRadians": -0.07976155,
   "foundation": {
     "datum": "Local rigid y=0; no terrain, sea-level or Mercator height baked.",
     "footprintMetres": [
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-invalides-near.glb",
-      "bytes": 606044,
+      "bytes": 606196,
       "triangles": 12697,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -29.030000686645508,
+          -31.746320984262198,
           0,
-          -34
+          -37.90713585050051
         ],
         "max": [
-          29.030000686645508,
+          31.257843813145882,
           107,
-          37.5
+          37.90713585050051
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-invalides-far.glb",
-      "bytes": 248788,
+      "bytes": 248940,
       "triangles": 5067,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -29.030000686645508,
+          -31.746320984262198,
           0,
-          -34
+          -37.90713585050051
         ],
         "max": [
-          29.030000686645508,
+          31.257843813145882,
           107,
-          37.5
+          37.90713585050051
         ]
       }
     }

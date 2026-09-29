@@ -2,16 +2,27 @@
   "id": "paris-pantheon",
   "name": "Panthéon",
   "origin": [
-    2.34607,
-    48.84619
+    2.3460828744678213,
+    48.8462024625551
   ],
+  "authoringFrame": {
+    "rotationAboutY": 1.25244827,
+    "center": [
+      0,
+      -9.43
+    ],
+    "scaleXZ": [
+      1,
+      0.921
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
     "y": "up",
     "z": "south"
   },
-  "rotationAboutY": 1.5707963267948966,
+  "rotationAboutY": 1.25244827,
   "dimensions": {
     "width": 82,
     "length": 122,
@@ -24,37 +35,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-pantheon-near.glb",
-      "bytes": 772300,
+      "bytes": 772448,
       "triangles": 20270,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -70.36000061035158,
+          -65.66031009976082,
           -5.7220457705398076e-8,
-          -40.000000000000014
+          -55.450737320189376
         ],
         "max": [
-          51.50000000000001,
+          65.81680912431959,
           82,
-          40.000000000000014
+          55.55451559257078
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-pantheon-far.glb",
-      "bytes": 340964,
+      "bytes": 341112,
       "triangles": 8694,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -70.36000061035158,
+          -65.66031009976082,
           -5.7220457705398076e-8,
-          -40.000000000000014
+          -55.450737320189376
         ],
         "max": [
-          51.50000000000001,
+          65.81680912431959,
           82,
-          40.000000000000014
+          55.55451559257078
         ]
       }
     }

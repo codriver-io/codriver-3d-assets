@@ -2,9 +2,20 @@
   "id": "paris-louvre",
   "name": "Palais du Louvre",
   "origin": [
-    2.3335,
-    48.86124
+    2.335852,
+    48.861014
   ],
+  "authoringFrame": {
+    "rotationAboutY": -0.3577925,
+    "center": [
+      170,
+      0
+    ],
+    "scaleXZ": [
+      1,
+      1
+    ]
+  },
   "units": "metres",
   "axes": {
     "x": "east",
@@ -21,37 +32,37 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-louvre-near.glb",
-      "bytes": 8397548,
+      "bytes": 8397668,
       "triangles": 155885,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -112,
+          -308.26768747109924,
           0,
-          -126
+          -216.77917809557522
         ],
         "max": [
-          494,
+          347.6079193703877,
           54,
-          126
+          231.48788823991492
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-louvre-far.glb",
-      "bytes": 2459088,
+      "bytes": 2459212,
       "triangles": 44059,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -112,
+          -308.26768747109924,
           0,
-          -126
+          -216.77917809557522
         ],
         "max": [
-          494,
+          347.6079193703877,
           54,
-          126
+          231.48788823991492
         ]
       }
     }
