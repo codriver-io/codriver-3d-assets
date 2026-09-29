@@ -1,6 +1,7 @@
 # Licenses
 
-Copyright © 2026 9570-6198 Québec inc. (Codriver).
+Copyright © 2026 9570-6198 Québec inc. (Codriver) and contributors.
+Individual model manifests and catalog entries retain their creators’ copyright and credit.
 
 The original procedural code, viewer, build tools and documentation in this
 repository are released under the [MIT License](LICENSE).
@@ -11,7 +12,7 @@ The original 3D models under `public/models/` are released under
 Keep appropriate credit, link the license, and indicate your changes.
 The full terms are in [LICENSE-MODELS.txt](LICENSE-MODELS.txt).
 
-Suggested credit for a model:
+Credit the creator(s) listed in each model manifest. For the original Codriver collection, suggested credit is:
 
 > “[Model name]” by Codriver / 9570-6198 Québec inc., CC BY 4.0.
 > https://codriver-3d-assets.pages.dev/ — geographic data © OpenStreetMap
@@ -27,4 +28,5 @@ Reference links identify material studied while modeling. Photographs, plans,
 simulator archives, names, trademarks and underlying architectural works are
 not relicensed by this release. No reference photographs or simulator meshes
 are included. The models are visual approximations, not surveys or engineering
-documents. This license grants Codriver's rights in the original contributions.
+documents. The model license covers each contributor’s rights in their original contributions.
+The Codriver helmet identifies the project; its inclusion does not grant trademark rights or imply endorsement.

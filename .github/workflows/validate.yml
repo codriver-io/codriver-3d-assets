@@ -1,0 +1,36 @@
+name: Validate library
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Install pinned pnpm
+        run: corepack enable && corepack prepare pnpm@11.2.2 --activate
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm check
+      - name: Check committed license metadata and exports
+        run: git diff --exit-code -- public/models
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Verify all public viewers
+        run: |
+          pnpm dev > /tmp/asset-library-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4173/ > /dev/null; then break; fi
+            sleep 1
+          done
+          pnpm test:browser http://127.0.0.1:4173

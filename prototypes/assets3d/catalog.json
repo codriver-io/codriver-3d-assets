@@ -62,7 +62,10 @@
       "documentation": "docs/assets/samuel-de-champlain.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "pont-victoria",
@@ -113,7 +116,10 @@
       "documentation": "docs/assets/pont-victoria.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "pont-jacques-cartier",
@@ -168,7 +174,10 @@
       "documentation": "docs/assets/pont-jacques-cartier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "biosphere-montreal",
@@ -215,7 +224,10 @@
       "documentation": "docs/assets/biosphere-montreal.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "farine-five-roses",
@@ -282,7 +294,10 @@
       "documentation": "docs/assets/farine-five-roses.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "orange-julep",
@@ -345,7 +360,10 @@
       "documentation": "docs/assets/orange-julep.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "place-ville-marie",
@@ -420,7 +438,10 @@
       "documentation": "docs/assets/place-ville-marie.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "habitat-67",
@@ -487,7 +508,10 @@
       "documentation": "docs/assets/habitat-67.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "stade-olympique",
@@ -562,7 +586,10 @@
       "documentation": "docs/assets/stade-olympique.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "grande-roue-montreal",
@@ -629,7 +656,10 @@
       "documentation": "docs/assets/grande-roue-montreal.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "basilique-notre-dame",
@@ -696,7 +726,10 @@
       "documentation": "docs/assets/basilique-notre-dame.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "tour-de-l-horloge",
@@ -755,7 +788,10 @@
       "documentation": "docs/assets/tour-de-l-horloge.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "oratoire-saint-joseph",
@@ -818,7 +854,10 @@
       },
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     },
     {
       "id": "pont-honore-mercier",
@@ -877,7 +916,10 @@
       "documentation": "docs/assets/pont-honore-mercier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
-      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors"
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

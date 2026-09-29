@@ -1,0 +1,48 @@
+name: Propose a landmark
+description: Suggest a bridge or building, or volunteer to model it.
+title: "Landmark: "
+body:
+  - type: markdown
+    attributes:
+      value: "Check existing issues first. See [how to contribute](https://github.com/codriver-io/codriver-3d-assets/blob/main/CONTRIBUTING.md)."
+  - type: input
+    id: identity
+    attributes:
+      label: Landmark and city
+      placeholder: Samuel-De Champlain bridge, Montréal, Canada
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Map link or longitude, latitude
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References and recognizable features
+      description: Link primary sources and photos. Note the current or historical version, distinctive structure and known dimensions.
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: How would you like to help?
+      options:
+        - Suggest a place
+        - Build an original procedural model
+        - Contribute an editable model and GLBs
+        - Improve an existing asset
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Available source and rights
+      description: If you already have a model, identify its creator, source and license. Do not attach restricted captures or archives.
+  - type: textarea
+    id: ground
+    attributes:
+      label: Ground and placement notes
+      description: Is the site sloped, terraced or above water? Note abutments, foundations and any separate levels. Terrain integration can remain untested.

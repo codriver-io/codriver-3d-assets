@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to contribute
+    url: https://github.com/codriver-io/codriver-3d-assets/blob/main/CONTRIBUTING.md
+    about: Source, export, catalog and pull request guide, including Codex and Claude skills.
+  - name: Licenses and attribution
+    url: https://github.com/codriver-io/codriver-3d-assets/blob/main/LICENSES.md
+    about: MIT code, CC BY models and geographic-data credit.
