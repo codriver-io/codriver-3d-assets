@@ -31,6 +31,7 @@
     "build:pont-honore-mercier": "node scripts/build-pont-honore-mercier.mjs",
     "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
     "build:paris-palaces": "node scripts/build-paris-palaces.mjs",
+    "build:toronto-landmarks": "node scripts/build-toronto-landmarks.mjs --all",
     "test:browser": "node scripts/test-browser.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",
     "build:paris-historic": "node scripts/build-paris-historic.mjs"

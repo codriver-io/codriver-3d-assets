@@ -1,0 +1,65 @@
+{
+  "id": "rogers-centre",
+  "name": "Rogers Centre",
+  "kind": "building",
+  "origin": [
+    -79.38916,
+    43.64153
+  ],
+  "height": 86,
+  "padM": 190,
+  "frontageBearing": 163.9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (street and concourse level); no absolute altitude. The 86 m crown (published, and the OSM height tag) is taken as height over this grade; distant photographs scaled against the CN Tower put the crown about 55 m over the 32 m concrete wall, consistent with it.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Roof modelled closed. Roof profile, panel laps and seams, facade bays, signs and the prow sculptures are estimates from photographs; the plan, hotel terrace heights and the 86 m crown come from OpenStreetMap and published figures.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rogers-centre-near.glb",
+      "bytes": 2002964,
+      "triangles": 40618,
+      "drawCalls": 13,
+      "bounds": {
+        "min": [
+          -133.7649688720703,
+          0,
+          -136.10614013671875
+        ],
+        "max": [
+          121.69480895996094,
+          86.41319274902344,
+          110.10752868652344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rogers-centre-far.glb",
+      "bytes": 714244,
+      "triangles": 12418,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -133.7649688720703,
+          0,
+          -136.10614013671875
+        ],
+        "max": [
+          121.69480895996094,
+          85.99829864501953,
+          110.10752868652344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/rogers-centre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

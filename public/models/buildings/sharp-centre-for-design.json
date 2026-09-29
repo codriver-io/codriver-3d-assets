@@ -1,0 +1,66 @@
+{
+  "id": "sharp-centre-for-design",
+  "name": "Sharp Centre for Design",
+  "kind": "building",
+  "origin": [
+    -79.3911837,
+    43.652956
+  ],
+  "height": 38.6,
+  "padM": 105,
+  "frontageBearing": 73,
+  "axisBearing": 163.1376,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The tabletop underside is 26 m above that grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Tabletop 84 x 31 x 9 m with its underside 26 m above grade and twelve 28 m legs are published figures. Estimated: the pixel pattern (a seeded pseudo-random layout with photo-measured density and module), leg plan positions and colours, the red stair slab route, the Main Building block heights and brick split, the two black cores beyond their mapped outlines, the roof plant enclosure and all window rhythm.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/sharp-centre-for-design-near.glb",
+      "bytes": 533476,
+      "triangles": 10448,
+      "drawCalls": 19,
+      "bounds": {
+        "min": [
+          -80.14849090576172,
+          -0.08350938558578491,
+          -92.03575134277344
+        ],
+        "max": [
+          31.399263381958008,
+          38.599998474121094,
+          48.95313262939453
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/sharp-centre-for-design-far.glb",
+      "bytes": 105324,
+      "triangles": 2088,
+      "drawCalls": 14,
+      "bounds": {
+        "min": [
+          -80.14849090576172,
+          -0.08350938558578491,
+          -92.03575134277344
+        ],
+        "max": [
+          30.764671325683594,
+          38.599998474121094,
+          48.26206588745117
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/sharp-centre-for-design/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

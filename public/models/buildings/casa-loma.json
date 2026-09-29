@@ -1,0 +1,67 @@
+{
+  "id": "casa-loma",
+  "name": "Casa Loma",
+  "kind": "building",
+  "origin": [
+    -79.4100918,
+    43.6787216
+  ],
+  "height": 36,
+  "padM": 150,
+  "frontageBearing": 342,
+  "frameBearing": 72,
+  "ownTolM": 0.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 at the castle's ground-floor terrace and north courtyard on the flat Peregrine basemap; no absolute altitude. The real site stands ~140 m above sea level on the brow of Davenport Hill (66 m above Lake Ontario); that slope is deliberately NOT baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Outline and orientation are the mapped OSM footprints; every height, roof shape, window position, tower detail and the conservatory dome are estimated from photographs (only \"more than 130 ft\" for the tallest tower, the 98 rooms / 64,700 sq ft floor area and the 243 m tunnel are published). The tower/wing naming used by public sources is inconsistent, so towers are described by shape. The base is rigid at y=0; the hillside is not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/casa-loma-near.glb",
+      "bytes": 1780632,
+      "triangles": 29786,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -94.32421875,
+          -1.600000023841858,
+          -99.06295013427734
+        ],
+        "max": [
+          94.79120635986328,
+          36.849998474121094,
+          99.81600952148438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/casa-loma-far.glb",
+      "bytes": 583900,
+      "triangles": 9435,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -94.32421875,
+          -1.600000023841858,
+          -99.06295013427734
+        ],
+        "max": [
+          94.72640228271484,
+          36.849998474121094,
+          99.75816345214844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/casa-loma/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

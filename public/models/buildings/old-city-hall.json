@@ -1,0 +1,68 @@
+{
+  "id": "old-city-hall",
+  "name": "Old City Hall",
+  "kind": "building",
+  "origin": [
+    -79.38176399,
+    43.65264186
+  ],
+  "height": 103.64,
+  "padM": 75,
+  "frontageBearing": 163.25,
+  "rotationDeg": 16.75,
+  "eaveY": 25,
+  "pavilionEaveY": 26.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Queen Street frontage and the courtyard are taken as one level.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Tower height 103.64 m, clock face 6 m and the mapped outline are sourced. Storey heights, roof pitches, the roof plan behind the pavilions, window counts and the north and east elevations are estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/old-city-hall-near.glb",
+      "bytes": 3547156,
+      "triangles": 53798,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -55.62343215942383,
+          -9.536743306171047e-8,
+          -55.632728576660156
+        ],
+        "max": [
+          54.720726013183594,
+          103.63999938964844,
+          52.798133850097656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/old-city-hall-far.glb",
+      "bytes": 470660,
+      "triangles": 8498,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -55.62343215942383,
+          -9.536743306171047e-8,
+          -55.632728576660156
+        ],
+        "max": [
+          54.720726013183594,
+          103.63999938964844,
+          52.798133850097656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/old-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

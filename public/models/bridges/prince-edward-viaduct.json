@@ -1,0 +1,66 @@
+{
+  "id": "prince-edward-viaduct",
+  "name": "Prince Edward Viaduct (Bloor Street Viaduct)",
+  "kind": "bridge",
+  "origin": [
+    -79.3635537,
+    43.6753015
+  ],
+  "height": 46,
+  "padM": 140,
+  "frontageBearing": 74.7,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the valley floor); no absolute altitude, DEM or latitude stretch is baked in. The deck is authored at the published 40 m clearance; its ends ease to the approach roads at runtime (bridge-profile.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Five steel arch spans with the published pin spans (48.2, 73.6, 85.8, 73.6, 48.2 m) between six stone piers placed within 2.7 m of the notches in the mapped deck outline; deck 26.2 m wide from that outline. Estimated: arch rib depth and web pattern, the subway room, pier plan and taper, the approach girder and fill beyond the arches, veil post spacing and lean, lamp positions. The mapped structure is 469.5 m; the published 494 m includes approaches beyond the mapped bridge way. The deck is level at 40 m from the first pier to the last and ramps over 170 m at each end onto the mapped Bloor Street East / Danforth Avenue: a flat-map convention, not survey.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/prince-edward-viaduct-near.glb",
+      "bytes": 2060300,
+      "triangles": 49492,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -331.9085998535156,
+          -2.119999885559082,
+          -103.5379867553711
+        ],
+        "max": [
+          343.6854553222656,
+          49.82780456542969,
+          133.4929962158203
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/prince-edward-viaduct-far.glb",
+      "bytes": 588340,
+      "triangles": 20960,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -331.7962646484375,
+          -2.119999885559082,
+          -103.38326263427734
+        ],
+        "max": [
+          343.64471435546875,
+          45.779998779296875,
+          133.37905883789062
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/prince-edward-viaduct/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

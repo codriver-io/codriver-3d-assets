@@ -1,0 +1,65 @@
+{
+  "id": "fairmont-royal-york",
+  "name": "Fairmont Royal York",
+  "kind": "building",
+  "origin": [
+    -79.3815238,
+    43.6459096
+  ],
+  "height": 124,
+  "padM": 100,
+  "frontageBearing": 163.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, slab heights and roof heights follow OSM building:part ways; the crown roof, dormers, turrets, stack, sign, arcades and window rhythm are reconstructed from photographs and are approximate. The crown of the stack (parapet, pyramid, lantern, finial) brings the model to the published 124 m; OSM ends the stack at 114 m.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fairmont-royal-york-near.glb",
+      "bytes": 4162712,
+      "triangles": 44634,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -80.87493896484375,
+          0,
+          -50.46416473388672
+        ],
+        "max": [
+          80.73982238769531,
+          124,
+          51.64783477783203
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fairmont-royal-york-far.glb",
+      "bytes": 518960,
+      "triangles": 5665,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -80.87493896484375,
+          0,
+          -50.46416473388672
+        ],
+        "max": [
+          80.73982238769531,
+          124,
+          51.64783477783203
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/fairmont-royal-york/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

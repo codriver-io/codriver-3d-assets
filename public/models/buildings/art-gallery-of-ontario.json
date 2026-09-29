@@ -1,0 +1,66 @@
+{
+  "id": "art-gallery-of-ontario",
+  "name": "Art Gallery of Ontario",
+  "kind": "building",
+  "origin": [
+    -79.392525,
+    43.653638
+  ],
+  "height": 41.5,
+  "padM": 110,
+  "frontageBearing": 343.8,
+  "nearM": 380,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the Dundas Street West sidewalk); no absolute altitude. The site is level in the model; the real block falls gently toward Grange Park.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, glazing bands, blue box, tears, stair and Grange are read from OSM building parts (way 141693334 and 959819xxx/959903xxx/960781xxx); storey heights of the wings are 3.6 m per mapped level, the hull profile and sail heights are photo estimates. Interior (Walker Court, Baillie Court, stairs) is not modelled. Not surveyed.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/art-gallery-of-ontario-near.glb",
+      "bytes": 982320,
+      "triangles": 18108,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -90.83131408691406,
+          -1.1920929132713809e-8,
+          -56.83218765258789
+        ],
+        "max": [
+          89.36280822753906,
+          41.5,
+          75.38423919677734
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/art-gallery-of-ontario-far.glb",
+      "bytes": 293712,
+      "triangles": 5144,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -90.7477798461914,
+          -1.1920929132713809e-8,
+          -56.73563003540039
+        ],
+        "max": [
+          89.33399200439453,
+          41.5,
+          75.35540008544922
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/art-gallery-of-ontario/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

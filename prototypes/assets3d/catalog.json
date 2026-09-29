@@ -2076,6 +2076,1942 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "art-gallery-of-ontario",
+      "name": "Art Gallery of Ontario",
+      "kind": "building",
+      "location": "317 Dundas Street West · Toronto, Ontario",
+      "status": "ready",
+      "description": "Frank Gehry's 2008 Transformation AGO: the 130 m Galleria Italia (47 Douglas-fir arches over a convex glass hull on a glass belt and stone piers, with a framed glass tear at each end), the 38 m blue titanium box with its stepped recessed window and protruding spiral stair over The Grange, the Walker Court roof and the beige precast wings.",
+      "manifest": "/models/buildings/art-gallery-of-ontario.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/art-gallery-of-ontario/geometry.js",
+        "build": "pnpm build:toronto-landmarks art-gallery-of-ontario",
+        "provenance": "Original procedural geometry authored 2026-09-29 from OpenStreetMap building parts (ODbL 1.0; way 141693334 and its building:part ways 959819118-147, 959903553-558, 960781588-591, plus The Grange, way 242550201) and public photo references. No third-party mesh, scan, photograph or texture is shipped; reference photographs stay in ignored tmp/. Photos compared (Wikimedia Commons): 'AGO at dusk' (John, CC BY-SA 2.0); 'Art Gallery of Ontario (38661357472)' (Jeff Hitchcock, CC BY 2.0); 'Galleria Italia in April 2009' (Ethan, CC BY-SA 2.0); 'Galleria Italia AGO' (Ian Muttoo, CC BY-SA 2.0); 'Art Gallery of Ontario 2023' (Canmenwalker, CC BY 4.0); 'Art Gallery of Ontario from McCaul Street' (Ivan Hernández, CC BY 2.0); 'Boat-like Stern of the Art Gallery of Ontario' (Richie Diesterheft, CC BY 2.0); 'Aerial ago ocad' (David Jones, CC BY 2.0); 'Art Museum from the CN Tower' (Tony Hisgett, CC BY 2.0); 'AGO Grange' (Leventio, CC BY-SA 4.0); 'AGO and Grange Park' and 'Blue and silver AGO' (Pierre Vignau, CC BY 2.0); 'AGO Rooftops 01' (PvOberstein, CC0).",
+        "references": [
+          {
+            "label": "Art Gallery of Ontario · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Art_Gallery_of_Ontario"
+          },
+          {
+            "label": "AGO · official site",
+            "url": "https://ago.ca/"
+          },
+          {
+            "label": "Entuitive · Transformation AGO structural engineering",
+            "url": "https://www.entuitive.com/projects/transformation-ago"
+          },
+          {
+            "label": "Equilibrium · Galleria Italia facade (glulam arches)",
+            "url": "https://equilibrium-eq.com/projects/art-gallery-of-ontario-galleria-italia-facade/"
+          },
+          {
+            "label": "Gehry Partners · AGO on Archilovers",
+            "url": "https://www.archilovers.com/projects/13389/art-gallery-of-ontario-ago.html"
+          },
+          {
+            "label": "The Canadian Encyclopedia · Toronto Feature: AGO",
+            "url": "https://www.thecanadianencyclopedia.ca/en/article/toronto-feature-art-gallery-of-ontario"
+          },
+          {
+            "label": "OSM footprint · way 141693334",
+            "url": "https://www.openstreetmap.org/way/141693334"
+          },
+          {
+            "label": "OSM · The Grange, way 242550201",
+            "url": "https://www.openstreetmap.org/way/242550201"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Ontario"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/art-gallery-of-ontario/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=overview",
+        "views": [
+          {
+            "label": "Overview from Dundas and Beverley",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=overview"
+          },
+          {
+            "label": "Dundas Street frontage",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=facade"
+          },
+          {
+            "label": "Roofs",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=roof"
+          },
+          {
+            "label": "Grange Park side",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=structure"
+          },
+          {
+            "label": "Stepped window and spiral stair",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=window"
+          },
+          {
+            "label": "East glass tear",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&view=sail"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=art-gallery-of-ontario&detail=far"
+          }
+        ]
+      },
+      "notes": "Plan, tear paths, window (u -27.4..0.4, 15..35 m), box (12..38 m), stair position and Grange come from OSM building parts, fitted to the outline's own 16.2 degree grid. Estimated: wing heights (3.6 m per mapped level), hull section curve (fitted to the mapped 10/15/18/20 m bands), sail heights (25 m west, 26 m east; OSM stops the ribbon at 20 m), skirt, spiral-stair helix and window step (from one photo), roof plant, panel pattern. Sources disagree on the Galleria length (137 m, 183 m/600 ft, 200 m); the model uses the mapped 130.5 m hull plus tears (175 m tip to tip). Interior, Baillie/Walker Court, Henry Moore sculpture, signage and the OCAD Sharp Centre are not modelled. Flat y=0 grade; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-art-gallery-of-ontario.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "casa-loma",
+      "name": "Casa Loma",
+      "kind": "building",
+      "location": "1 Austin Terrace and 330 Walmer Road · Toronto, Ontario",
+      "status": "ready",
+      "description": "Sir Henry Pellatt's 1911-14 Gothic Revival castle (E. J. Lennox) on the brow of Davenport Hill, with its stables and water tower across Austin Terrace: grey sandstone walls with cream limestone battlements, red tile roofs, the square crenellated gatehouse over the porte-cochere, a tall tiered conical tower, a round tower with an open pinnacled crown, the domed conservatory wing, cream chimneys and, 175 m to the north-west, the red-brick stables with their limestone turret-crowned water tower.",
+      "manifest": "/models/buildings/casa-loma.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/casa-loma/geometry.js",
+        "build": "pnpm build:toronto-landmarks casa-loma",
+        "provenance": "Original procedural geometry authored 2026-09-29 on the two mapped OSM outlines (way 198471666 the castle, way 198471670 the stables; © OpenStreetMap contributors, ODbL 1.0, read from the OSM map API 2026-09-29), whose edges follow the Toronto street grid at bearing 72/162 degrees. Heights, roof shapes, window rhythm, tower tops and the conservatory dome are estimated from photographs; the only published numbers are the >130 ft (40 m) height of the tallest tower measured from the escarpment side, 98 rooms / 64,700 sq ft, and the 243 m tunnel. No scan, third-party mesh, photograph or texture is shipped. Reference photographs were viewed locally only (Wikimedia Commons): Thomas1313 '2020-09-08 Casa Loma 001, 002, 003, 006, 012, 013, 100, 101, 106, 111, 112, 123, 125, 153, 156, 161' CC BY-SA 4.0; A J Butler 'View of Casa Loma, Toronto from the South - panoramio' CC BY 3.0; shankar s. 'Casa Loma from the bus (27287446374)' CC BY 2.0; David Ceballos 'C L 21 - Invernadero (13585727085)' and 'C L 22 - Impresionante (13585695435)' CC BY 2.0; Lucastphotography 'Architecture of Casa Loma' CC BY 4.0; XeresNelro '156 Casa Loma Stables, Toronto, 2009' CC BY-SA 4.0; Ken Lund 'Casa Loma Stables, Toronto, Ontario (29969262736)' CC BY-SA 2.0; Reginald Symonds Timmis 'Casa Loma, Sir Henry Pellatt's Castle, Toronto, 1922 (4211420452)' public domain (Toronto Public Library); 'Casa Loma stables and greenhouses (Fonds 1244, Item 4155)' public domain (City of Toronto Archives).",
+        "references": [
+          {
+            "label": "Casa Loma (Wikipedia)",
+            "url": "https://en.wikipedia.org/wiki/Casa_Loma"
+          },
+          {
+            "label": "Casa Loma · history (official site)",
+            "url": "https://casaloma.ca/history/"
+          },
+          {
+            "label": "Casa Loma · The Cultural Landscape Foundation (tunnel, terraces, conservatory)",
+            "url": "https://www.tclf.org/landscapes/casa-loma"
+          },
+          {
+            "label": "Casa Loma restoration · sandstone and cast stone (Phoenix Restoration)",
+            "url": "https://www.phoenixrestoration.ca/casa-loma/"
+          },
+          {
+            "label": "Scottish Tower, more than 130 ft / 40 m (Flickr caption)",
+            "url": "https://www.flickr.com/photos/57156785@N02/48780842143"
+          },
+          {
+            "label": "Casa Loma layout, towers and stables tunnel (Toronto Journey 416)",
+            "url": "https://www.torontojourney416.com/casa-loma/"
+          },
+          {
+            "label": "OSM footprint · way 198471666 (castle)",
+            "url": "https://www.openstreetmap.org/way/198471666"
+          },
+          {
+            "label": "OSM footprint · way 198471670 (stables)",
+            "url": "https://www.openstreetmap.org/way/198471670"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons, exterior",
+            "url": "https://commons.wikimedia.org/wiki/Category:Exterior_of_Casa_Loma"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons, stables",
+            "url": "https://commons.wikimedia.org/wiki/Category:Casa_Loma_Stables"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/casa-loma/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=casa-loma&view=overview",
+        "views": [
+          {
+            "label": "Castle and stables from the south-east",
+            "url": "/asset-preview.html?asset=casa-loma&view=overview"
+          },
+          {
+            "label": "North courtyard front from Austin Terrace",
+            "url": "/asset-preview.html?asset=casa-loma&view=facade"
+          },
+          {
+            "label": "Roofs, chimneys and towers from above",
+            "url": "/asset-preview.html?asset=casa-loma&view=roof"
+          },
+          {
+            "label": "South front from the escarpment",
+            "url": "/asset-preview.html?asset=casa-loma&view=structure"
+          },
+          {
+            "label": "Stables and water tower from Walmer Road",
+            "url": "/asset-preview.html?asset=casa-loma&view=stables"
+          },
+          {
+            "label": "Gatehouse tower and porte-cochere",
+            "url": "/asset-preview.html?asset=casa-loma&view=gatehouse"
+          },
+          {
+            "label": "Conical south-east tower",
+            "url": "/asset-preview.html?asset=casa-loma&view=scottish"
+          },
+          {
+            "label": "Pinnacled crown of the west tower",
+            "url": "/asset-preview.html?asset=casa-loma&view=crown"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=casa-loma&detail=far"
+          }
+        ]
+      },
+      "notes": "Mapped: both outlines and their orientation (bearing 72 degrees, the street grid), so every wall sits on an OSM edge. Published/sourced: Lennox 1911-14, 98 rooms, 243 m tunnel to the stables, Credit Valley sandstone with cast 'Roman stone' dressings, tallest tower > 130 ft (40 m) from the escarpment ground. Estimated from photographs: every height (base slab 9 m, parapets 13-13.6 m, main ridge ~19 m, gatehouse 27 m, pinnacled crown 32 m, conical tower finial 36 m above the ground-floor terrace, water tower ~33 m), roof forms, the square-on-round tiered crown of the conical tower (after Commons 'C L 03', shaft round vs square unresolved), cross-gables, window grid, chimney positions, the crown's eight-post open plan, and the conservatory (placed on the mapped east range with the apse: a ribbed glass dome and lead hall roof) whose position and dome are the least certain. Public sources disagree about which tower is 'Norman' and which 'Scottish', so towers are described by shape. Omitted: gardens, terraces, the hunting lodge, the gate piers and walls on Austin Terrace and Walmer Road, greenhouses (gone), the tunnel, interiors, sculpture. Flat-map grade y=0; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-casa-loma.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cinesphere",
+      "name": "Cinesphere and Ontario Place pods",
+      "kind": "building",
+      "location": "955 Lake Shore Boulevard West · Toronto, Ontario",
+      "status": "ready",
+      "description": "Zeidler's 37 m triodetic geodesic Cinesphere with its lit hub caps, the five Ontario Place pods on their 32 m mast clusters and stay cables, and the 216 m glazed truss walkway that joins them.",
+      "manifest": "/models/buildings/cinesphere.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/cinesphere/geometry.js",
+        "build": "pnpm build:toronto-landmarks cinesphere",
+        "provenance": "Original procedural geometry authored 2026-09-29 from published dimensions and public photo references. Mapped outlines and mast positions © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, texture or photograph is shipped; reference photographs stay in ignored local study material. Photographs consulted (Wikimedia Commons): OntarioPlaceCinesphere.jpg (Raysonho, CC0); Ontario Place.jpg (Maksim Sokolov, CC BY-SA 4.0); Ontario Place (50002686391).jpg and DSC 2746 (50002168683).jpg (John Bauld, CC BY 2.0); Atlantis Pavilion (52466953).jpg and Lake Ontario at Night (38736563).jpg (Diego Torres Silvestre, CC BY 2.0); Atlantis Doors Open Toronto 2012 (2).jpg (synestheticstrings, CC BY-SA 2.0); Cinesphere, at Ontario Place, in 2012 (7157561345).jpg (Loozrboy, CC BY-SA 2.0); Cinesphere.jpg (Perryfunny51, CC BY-SA 3.0); August 2012 Ontario Place Cinesphere From Water (7730091520).jpg (George Socka, CC BY 2.0); 2017 08 05 City (36396231635).jpg (David Zhang, CC BY-SA 2.0).",
+        "references": [
+          {
+            "label": "Cinesphere · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cinesphere"
+          },
+          {
+            "label": "Ontario Place · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ontario_Place"
+          },
+          {
+            "label": "Triodetic · Cinesphere structure (37 m sphere)",
+            "url": "https://triodetic.com/project/ontario-place-cinesphere/"
+          },
+          {
+            "label": "Structurae · Ontario Place Pods",
+            "url": "https://structurae.net/en/structures/ontario-place-pods"
+          },
+          {
+            "label": "Future of Ontario Place · site",
+            "url": "https://www.futureofontarioplace.org/explore/site"
+          },
+          {
+            "label": "OSM way 188989522 · Cinesphere",
+            "url": "https://www.openstreetmap.org/way/188989522"
+          },
+          {
+            "label": "OSM way 888802172 · glazed walkway",
+            "url": "https://www.openstreetmap.org/way/888802172"
+          },
+          {
+            "label": "OSM way 1553285104 · Pod 1",
+            "url": "https://www.openstreetmap.org/way/1553285104"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:Cinesphere"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/cinesphere/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cinesphere&view=overview",
+        "views": [
+          {
+            "label": "Aerial from the north-east",
+            "url": "/asset-preview.html?asset=cinesphere&view=overview"
+          },
+          {
+            "label": "A pod from the lake edge",
+            "url": "/asset-preview.html?asset=cinesphere&view=facade"
+          },
+          {
+            "label": "Roof plan",
+            "url": "/asset-preview.html?asset=cinesphere&view=roof"
+          },
+          {
+            "label": "The ball from the south-west",
+            "url": "/asset-preview.html?asset=cinesphere&view=structure"
+          },
+          {
+            "label": "Geodesic frame",
+            "url": "/asset-preview.html?asset=cinesphere&view=dome"
+          },
+          {
+            "label": "Glazed walkway",
+            "url": "/asset-preview.html?asset=cinesphere&view=spine"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=cinesphere&detail=far"
+          }
+        ]
+      },
+      "notes": "Sphere diameter (37 m), pod outlines, mast positions and 32 m mast height are mapped or sourced. Geodesic frequency (7 near, 5 far), the 40 degree cut and 1.2 m base, pod soffit 7.5 m and roof 21 m, glazing, cable, stair-core and truss detail are estimates from photographs. Pods are open frames (open lowest storey, vertical open bays, two trussed ramps per pod on the inward face) but their upper storeys are mostly glazed and nothing is translucent; the 3.6 m connector from the mapped walkway end to the sphere lies ~5 m outside the mapped rings. Rooftop pavilions, the dome's own entrance ramp and the OSM four-storey buildings east of the dome are not modelled. Model spans about 178 m by 240 m around a flat lake-level y=0. No Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-cinesphere.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cn-tower",
+      "name": "CN Tower",
+      "kind": "building",
+      "location": "290 Bremner Boulevard · Toronto, Ontario",
+      "status": "ready",
+      "description": "553.3 m broadcast tower: hexagonal concrete core with three tapering buttress legs and elevator glass slots, a round base, the seven-storey main pod (radome, glazed public levels, EdgeWalk ledge, sloping roof, drum) on an open bowl, the SkyPod and a three-section mast.",
+      "manifest": "/models/buildings/cn-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/cn-tower/geometry.js",
+        "build": "pnpm build:toronto-landmarks cn-tower",
+        "provenance": "Original procedural geometry authored 2026-09-29. Axis, hexagon, leg bearings/tips/widths and the 23.2 m round base from OpenStreetMap way 32742038 and its building:part ways (read from the OSM API 2026-09-29; © OpenStreetMap contributors, ODbL 1.0). Pod, SkyPod, mast and shaft/leg taper estimated from calibrated Wikimedia Commons photographs used only as local ignored comparison images (Taxiarchos228 · Free Art Licence; Wladyslaw Sojka · CC BY / CC BY-SA 3.0; Chris Woodrich · CC BY-SA 4.0; Niabot cutaway · CC BY-SA 3.0; G. Edward Johnson · CC BY 4.0; Dillan Payne · CC BY-SA 4.0; TheWxResearcher · CC0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "CN Tower · Wikipedia (heights, levels, structure)",
+            "url": "https://en.wikipedia.org/wiki/CN_Tower"
+          },
+          {
+            "label": "CN Tower construction history · IEEE Toronto Section (PDF)",
+            "url": "https://ewh.ieee.org/reg/7/millennium/cntower/CN_Tower.pdf"
+          },
+          {
+            "label": "OSM way 32742038 · CN Tower outline",
+            "url": "https://www.openstreetmap.org/way/32742038"
+          },
+          {
+            "label": "OSM way 288273461 · hexagonal core part",
+            "url": "https://www.openstreetmap.org/way/288273461"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:CN_Tower"
+          },
+          {
+            "label": "Photo from the south · Taxiarchos228 (Free Art Licence)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_CN_Tower8.jpg"
+          },
+          {
+            "label": "Main pod · Wladyslaw (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_CN_Tower_Turmkorb.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/cn-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cn-tower&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=cn-tower&view=overview"
+          },
+          {
+            "label": "Main pod",
+            "url": "/asset-preview.html?asset=cn-tower&view=pod"
+          },
+          {
+            "label": "Pod roof and drum",
+            "url": "/asset-preview.html?asset=cn-tower&view=roof"
+          },
+          {
+            "label": "Under the pod",
+            "url": "/asset-preview.html?asset=cn-tower&view=underside"
+          },
+          {
+            "label": "Legs and base",
+            "url": "/asset-preview.html?asset=cn-tower&view=structure"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=cn-tower&view=facade"
+          },
+          {
+            "label": "SkyPod",
+            "url": "/asset-preview.html?asset=cn-tower&view=skypod"
+          },
+          {
+            "label": "Antenna tip",
+            "url": "/asset-preview.html?asset=cn-tower&view=antenna"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=cn-tower&detail=far"
+          }
+        ]
+      },
+      "notes": "Published: 553.3 m, levels 342/346/351/356 m, SkyPod 447 m, 102 m mast. Mapped: axis, 10.4 m hexagon circumradius and orientation, leg bearings 46.4/166.4/286.4, 29 m tips, 23.2 m round base. Estimated from photographs (+-3 m in height, ~3% in width): pod 49 m across at the ledge, radome, drum, SkyPod 17 m, mast sections 8.8/6.3/3 m, the 10.4 to 8.8 m core taper and the curved leg profile; the 7.5 m base height and the roof cabinets are guesses. The entrance pavilion, aquarium, sculpture, interior and rooftop antennas are not modelled. Two concrete tones (core in shade, fins lighter) and near-black glazing follow the photographs. Night lighting is a single self-lit LED line per glass slot; the tower's changing colour schemes are not modelled.",
+      "documentation": "docs/assets/toronto-cn-tower.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fairmont-royal-york",
+      "name": "Fairmont Royal York",
+      "kind": "building",
+      "location": "100 Front Street West, Toronto, Ontario",
+      "status": "ready",
+      "description": "1929 Chateau-style Canadian Pacific hotel in Indiana limestone: a 25 m podium with the Concert Hall arcade, 67 m shoulders around a comb plan, an 87 m tower with a five-arch loggia, and a stepped crown with a steep verdigris hipped roof, dormers, corner turrets, a stone stack ending in a pinnacled crown, and the lit Fairmont Royal York sign.",
+      "manifest": "/models/buildings/fairmont-royal-york.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/fairmont-royal-york/geometry.js",
+        "build": "pnpm build:toronto-landmarks fairmont-royal-york",
+        "provenance": "Original procedural geometry authored 2026-09-29 from OpenStreetMap building:part heights and plan, published dimensions and public photographs. Plan and slab heights: OSM ways 177879879, 31728160, 290194023, 290194022, 231977103, 231977104 (fetched 2026-09-29 through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0. Photographs were compared only, from Wikimedia Commons: DXR (CC BY-SA 4.0), Tony Hisgett (CC BY 2.0), Taxiarchos228 (FAL), Rrburke (CC BY-SA 3.0), shankar s. (CC BY 2.0), Paulo O (CC BY 2.0), Spudgun67 (CC BY-SA 4.0), the 1929 Canada Postcard Co. card and a 1930 street photograph (public domain). No third-party mesh, font, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia · Fairmont Royal York (124 m, 28 storeys, architects, Indiana limestone)",
+            "url": "https://en.wikipedia.org/wiki/Fairmont_Royal_York"
+          },
+          {
+            "label": "Historic Hotels of America · history",
+            "url": "https://www.historichotels.org/hotels-resorts/fairmont-royal-york/history.php"
+          },
+          {
+            "label": "Heritage Toronto · Rail Lands: Royal York Hotel",
+            "url": "https://www.heritagetoronto.org/explore/toronto-rail-lands-history-tour/royal-york-hotel-history/"
+          },
+          {
+            "label": "OSM footprint · way 177879879",
+            "url": "https://www.openstreetmap.org/way/177879879"
+          },
+          {
+            "label": "OSM shoulders 25-67 m · way 31728160",
+            "url": "https://www.openstreetmap.org/way/31728160"
+          },
+          {
+            "label": "Photo · southwest view (DXR, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Royal_York,_Toronto,_Southwest_view_20170417_1.jpg"
+          },
+          {
+            "label": "Photo · crown and sign (Tony Hisgett, CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_York_Hotel_Toronto_(7974338007).jpg"
+          },
+          {
+            "label": "Photo · from the CN Tower (Rrburke, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_York_Hotel_0859.JPG"
+          },
+          {
+            "label": "Photo · the hotel in 1929 (Canada Postcard Co., public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Postcard_of_the_Royal_York_Hotel_in_Toronto,_1929.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/fairmont-royal-york/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=fairmont-royal-york&view=overview",
+        "views": [
+          {
+            "label": "Overview from the southwest",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=overview"
+          },
+          {
+            "label": "Front Street facade",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=facade"
+          },
+          {
+            "label": "Crown, roof and sign",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=crown"
+          },
+          {
+            "label": "Roofs and comb plan from above",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=roof"
+          },
+          {
+            "label": "Concert Hall arcade at street level",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=street"
+          },
+          {
+            "label": "West face",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=west"
+          },
+          {
+            "label": "North side",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&view=north"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=fairmont-royal-york&detail=far"
+          }
+        ]
+      },
+      "notes": "Plan, slab heights (25/67/87/94/100 m) and stack plan follow OSM building:part ways; the 124 m top is the published height (OSM ends the stack at 114 m), so the top 10 m (corbelled parapet, copper pyramid, lantern, finial) is interpretation. Roof pitch follows OSM (8.7 m) approximately. Facade rhythm (pane 1.7 x 2.25 m with mullion, 3.4 m bays, ~3.5 m floors), the Concert Hall arcade of eight arches, the 12-arch west podium arcade, the five-arch loggia, dormers, turrets, cornices, piers, awnings and the sign lettering are read from photographs, not surveyed. No ornament (grotesques, tracery, balustrade balusters), flags or doors. The 1959 east addition is not distinguished. Night: 30% of window panes glow warm, the sign is self-lit; by day glow equals glass. Flat-map grade y=0; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-fairmont-royal-york.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "first-canadian-place",
+      "name": "First Canadian Place",
+      "kind": "building",
+      "location": "Financial District · Toronto, Ontario",
+      "status": "ready",
+      "description": "Bank of Montreal's 298 m tower at King and Bay as it stands after the 2009-2012 recladding: a pale slab of white frit spandrels and narrow dark window strips, square glazed pockets at the four corners, a plain white crown band with the BMO wordmark and roundel on every face, a rooftop penthouse and two broadcast masts (tip 355 m).",
+      "manifest": "/models/buildings/first-canadian-place.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/first-canadian-place/geometry.js",
+        "build": "pnpm build:toronto-landmarks first-canadian-place",
+        "provenance": "Original procedural geometry authored 2026-09-29 from published dimensions and photographs studied for proportion only; no scan, traced mesh, photograph or texture in the repository or the GLB. Mapped tower outline (OSM way 27767627) and penthouse part (way 289330446) © OpenStreetMap contributors (ODbL 1.0), fetched 2026-09-29 through the shared Overpass helper. Comparison photographs are Wikimedia Commons files kept in ignored tmp/toronto/first-canadian-place/refs/: 'First Canadian Place (January 2023)' by TooMuchFrixion (CC BY-SA 4.0); 'First Canadian Place Close-up, January 26 2026' by Dillan Payne (CC BY-SA 4.0); 'First Canadian Place August 2017 01' and 'Toronto Financial District August 2017' by Arild Vågen (CC BY-SA 4.0); 'View from CN Tower 2023g' by Antony-22 (CC BY-SA 4.0); 'First Canadian Place reclad 2015' by Terramorphous (CC BY-SA 4.0); 'First Canadian Place, Toronto, Ontario (29375074354)' by Ken Lund (CC BY-SA 2.0); 'BMO FCP Bay and King at night' by Secondarywaltz (CC BY-SA 3.0); 'Bank of Montreal in First Canadian Place 2021' by Canmenwalker (CC BY 4.0); 'Toronto Bay and King from aerial photo Helicopter 2005' by George Socka (CC BY 2.0).",
+        "references": [
+          {
+            "label": "Wikipedia · First Canadian Place",
+            "url": "https://en.wikipedia.org/wiki/First_Canadian_Place"
+          },
+          {
+            "label": "CTBUH Skyscraper Center · First Canadian Place (298.1 m, tip 355 m)",
+            "url": "https://www.skyscrapercenter.com/building/first-canadian-place/543"
+          },
+          {
+            "label": "The Infrastructure Index · original Carrara cladding replaced by white glass",
+            "url": "https://theinfrastructureindex.com/article/first-canadian-place/"
+          },
+          {
+            "label": "Mapped tower · OSM way 27767627",
+            "url": "https://www.openstreetmap.org/way/27767627"
+          },
+          {
+            "label": "Mapped rooftop penthouse · OSM way 289330446",
+            "url": "https://www.openstreetmap.org/way/289330446"
+          },
+          {
+            "label": "Photograph · View from CN Tower 2023g (Antony-22, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:View_from_CN_Tower_2023g.jpg"
+          },
+          {
+            "label": "Photograph · Close-up, January 26 2026 (Dillan Payne, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:First_Canadian_Place_Close-up,_January_26_2026.jpg"
+          },
+          {
+            "label": "Photograph · August 2017 (Arild Vågen, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:First_Canadian_Place_August_2017_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/first-canadian-place/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=first-canadian-place",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=first-canadian-place&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=first-canadian-place&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=first-canadian-place&view=roof"
+          },
+          {
+            "label": "Crown and logos",
+            "url": "/asset-preview.html?asset=first-canadian-place&view=crown"
+          },
+          {
+            "label": "Corner pocket",
+            "url": "/asset-preview.html?asset=first-canadian-place&view=notch"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=first-canadian-place&view=street"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=first-canadian-place&detail=far"
+          }
+        ]
+      },
+      "notes": "Y=0 flat-map grade, no altitude baked in. Sourced: 298.1 m architectural height, 292 m roof, 355 m tip, 72 storeys. Mapped: 57.65 x 55.04 m plan at -15.9 degrees, corner pockets (regularised to 4.8 x 5.0 m), 29.9 x 22.2 m penthouse. Estimated from photographs: 66 window rows at 4.08 m, window/spandrel split, 1.52 m bay, crown band, wordmark and roundel size, lobby, roof equipment, mast count and shapes, window glass stand-off in the far LOD (1.0 m so it cannot z-fight at distance). Models the 2009-2012 frit-glass skin, not the 1975 Carrara marble. The podium wings and the King and Bay bank pavilion are not modelled and stay provider geometry; Exchange Tower is a separate building. Tesla hardware cost unmeasured.",
+      "documentation": "docs/assets/toronto-first-canadian-place.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "flatiron-building",
+      "name": "Gooderham (Flatiron) Building",
+      "kind": "building",
+      "location": "49 Wellington Street East, Front and Church Streets · Toronto, Ontario",
+      "status": "ready",
+      "description": "The red-brick wedge with a rounded east apex: four floors of curved bay windows, a round turret under a patinated copper cone and finial, arched fourth-floor windows, string course, copper cornice, slate mansard with eight gabled dormers, chimneys and fire escapes.",
+      "manifest": "/models/buildings/flatiron-building.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/flatiron-building/geometry.js",
+        "build": "pnpm build:toronto-landmarks flatiron-building",
+        "provenance": "Original procedural geometry authored 2026-09-29 from published facts and photographs. Footprint from OSM way 300884214 (c) OpenStreetMap contributors, ODbL 1.0. Reference photographs were compared in ignored scratch only and are not shipped: Peter Kudlacz 'Flatiron Building Front View' and 'Facade Upward View' (CC BY 2.0); DXR 'Gooderham Building, Toronto, East view 20170417' (CC BY-SA 4.0); Arild Vagen 'Gooderham Building August 2017 01/02' (CC BY-SA 4.0); daryl_mitchell 'Gooderham Building (52656775384)' (CC BY-SA 2.0); Richie Diesterheft 'Flat Iron Building with Skyline', 'Flat Iron & Firkin Building' (CC BY 2.0); Mark 'The Gooderham Building - Toronto (25334949747)' (CC BY 2.0); Sebastian Kasten 'Gooderham Building 2011' (CC BY-SA 2.5); Canmenwalker 'Intersection of Front and Church Streets with the Gooderham Building 2022' (CC BY 4.0); Anthonyd3ca 'Gooderham Building - Toronto 2012' (CC BY-SA 3.0); Geo Swan 'Gooderham Building in Berczy Park' (CC0). No third-party mesh, texture or photograph is in the repository or the GLB.",
+        "references": [
+          {
+            "label": "Wikipedia · Gooderham Building (16.70 m, 5 floors, eight dormers)",
+            "url": "https://en.wikipedia.org/wiki/Gooderham_Building"
+          },
+          {
+            "label": "Canada's Historic Places · character-defining elements",
+            "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=8311"
+          },
+          {
+            "label": "ACO Toronto · Gooderham Building",
+            "url": "https://www.acotoronto.ca/building.php?ID=2085"
+          },
+          {
+            "label": "Taylor on History · the Gooderham (Flatiron) Building",
+            "url": "https://tayloronhistory.com/2014/01/21/torontos-architectural-gemsthe-gooderham-flatiron-building/"
+          },
+          {
+            "label": "OSM footprint · way 300884214",
+            "url": "https://www.openstreetmap.org/way/300884214"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:Gooderham_Building"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/flatiron-building/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=flatiron-building&view=overview",
+        "views": [
+          {
+            "label": "South (Front St) elevation",
+            "url": "/asset-preview.html?asset=flatiron-building&view=facade"
+          },
+          {
+            "label": "Apex and turret from Church St",
+            "url": "/asset-preview.html?asset=flatiron-building&view=apex"
+          },
+          {
+            "label": "Turret and copper cone",
+            "url": "/asset-preview.html?asset=flatiron-building&view=turret"
+          },
+          {
+            "label": "Roof, dormers and chimneys",
+            "url": "/asset-preview.html?asset=flatiron-building&view=roof"
+          },
+          {
+            "label": "North elevation and west end",
+            "url": "/asset-preview.html?asset=flatiron-building&view=structure"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=flatiron-building&view=street"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=flatiron-building&view=overview"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=flatiron-building&detail=far"
+          }
+        ]
+      },
+      "notes": "Footprint mapped (OSM way 300884214); 16.70 m cornice, five floors and four dormers per side published. Floor levels, window sizes, bay count, dormer and fire-escape positions, ornament, and the turret/cone heights (20.55 m shaft, 26 m finial tip) are estimates from photographs, +-1 m. The west end (Berczy Park side) is drawn plainly and the neighbouring mural is not modelled. Fire escapes overhang the footprint by ~0.65 m, everything else stays within 0.45 m. Flat local grade y=0. Near 32 865 triangles / 9 draws / 1.9 MB, far 2 728 / 7 / 146 kB. No Tesla hardware benchmark.",
+      "documentation": "docs/assets/toronto-flatiron-building.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "humber-bay-arch-bridge",
+      "name": "Humber Bay Arch Bridge",
+      "kind": "bridge",
+      "location": "Mouth of the Humber River, Martin Goodman Trail · Toronto, Ontario",
+      "status": "ready",
+      "description": "Foot and cycle bridge (1994): two white 1.2 m steel-pipe ribs that lean in towards each other, a central X-braced spine with triangular wings (the Thunderbird), 44 stainless hangers, a slender deck and concrete abutments with pylons.",
+      "manifest": "/models/bridges/humber-bay-arch-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/humber-bay-arch-bridge/geometry.js",
+        "build": "pnpm build:toronto-landmarks humber-bay-arch-bridge",
+        "provenance": "Original procedural geometry authored 2026-09-29 from published dimensions, the mapped OSM outline and Wikimedia Commons photographs. Mapped location and bearing © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Chicken4War, four 2026 views (CC BY-SA 4.0); Paul dexxus (CC BY 2.0); Taxiarchos228, two views (Free Art License); Johnathan Nightingale, arch detail (CC BY-SA 2.0); Michael Gil, 2011 (CC BY 2.0).",
+        "references": [
+          {
+            "label": "Wikipedia · dimensions, hangers, designers",
+            "url": "https://en.wikipedia.org/wiki/Humber_Bay_Arch_Bridge"
+          },
+          {
+            "label": "Montgomery Sisam · project page (Thunderbird, deck, abutments)",
+            "url": "https://www.montgomerysisam.com/project/humber-bicycle-and-pedestrian-bridge/"
+          },
+          {
+            "label": "blogTO · Humber Bay Arch Bridge",
+            "url": "https://www.blogto.com/city/2019/08/humber-bay-arch-bridge-toronto/"
+          },
+          {
+            "label": "OSM way 691705308 · mapped outline (anchor, bearing)",
+            "url": "https://www.openstreetmap.org/way/691705308"
+          },
+          {
+            "label": "OSM way 33398082 · trail line on the bridge",
+            "url": "https://www.openstreetmap.org/way/33398082"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Humber_Bay_Arch_Bridge"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/humber-bay-arch-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=overview"
+          },
+          {
+            "label": "Side elevation",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=facade"
+          },
+          {
+            "label": "From above",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=roof"
+          },
+          {
+            "label": "Shore end",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=structure"
+          },
+          {
+            "label": "End-on, between the pylons",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=end"
+          },
+          {
+            "label": "On the deck",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=deck"
+          },
+          {
+            "label": "Rib foot",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=detail"
+          },
+          {
+            "label": "Under the deck",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&view=under"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=humber-bay-arch-bridge&detail=far"
+          }
+        ]
+      },
+      "notes": "Sourced: 139 m overall, 100 m clear span, two 1.2 m pipes, 44 hangers of 50 mm, 21.3 m rise above grade, anchor and bearing 31.6 deg from the mapped OSM outline. Estimated from photographs: deck 4.5 m above the flat-map datum (so the top is 25.8 m), deck and rib widths, rib stance (11 m at the springings, 3.3 m at the crown) and straight-plane lean, the spine and wing layout, fins, pylons. The 30 m ramps that bring a deck 4.5 m up to a flat map are an adaptation, not surveyed. Every 2026 photograph shows white steel (no red). Far LOD drops the spine, wings, fins, cable rails and detail. Near 13 744 triangles / 5 draws / 1.07 MB; far 2 528 / 5 / 0.20 MB. No lighting modelled; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-humber-bay-arch-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "old-city-hall",
+      "name": "Old City Hall",
+      "kind": "building",
+      "location": "60 Queen Street West · Toronto, Ontario",
+      "status": "ready",
+      "description": "E. J. Lennox's 1899 Richardsonian Romanesque city hall and courthouse: 103.64 m clock tower with four 6 m dials, the three-portal porch and round turret on the Queen Street front, steep pavilion hips, gables and central-bay turrets round an open courtyard.",
+      "manifest": "/models/buildings/old-city-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/old-city-hall/geometry.js",
+        "build": "pnpm build:toronto-landmarks old-city-hall",
+        "provenance": "Original procedural geometry authored 2026-09-29 (geometry.js, old-city-hall-tower.js, old-city-hall-plan.js) from the mapped OSM outline and public photographs. Mapped footprint (OSM relation 3116, outer way 12906398) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Frontal view of Old City Hall in Toronto' (DenSchub, CC BY-SA 4.0), 'Toronto - ON - Old City Hall' (Taxiarchos228, CC BY 3.0), 'Old Toronto City Hall (view from the new City Hall)' (Maksim Sokolov, CC BY-SA 4.0), 'Old Toronto City Hall August 2017 02/03' (Arild Vågen, CC BY-SA 4.0), 'Old City Hall Toronto wide view from Munich Re' and 'Old Toronto City Hall clock wide view' (Oaktree b, CC BY-SA 4.0), 'Old Toronto City Hall and York County Court House' (Milind Gharat, CC BY-SA 3.0), '... on Albert St.' (Suwannee.payne, CC BY-SA 3.0), 'Arched doorway of the Old City Hall, Toronto' (Carl Vanderwouden3, CC BY-SA 3.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Old City Hall (Toronto)",
+            "url": "https://en.wikipedia.org/wiki/Old_City_Hall_(Toronto)"
+          },
+          {
+            "label": "City of Toronto · Old City Hall audio tour",
+            "url": "https://www.toronto.ca/explore-enjoy/festivals-events/old-city-hall-events/audio-tour/"
+          },
+          {
+            "label": "OSM footprint · relation 3116",
+            "url": "https://www.openstreetmap.org/relation/3116"
+          },
+          {
+            "label": "Photo · frontal view (DenSchub, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Old_City_Hall_in_Toronto.jpg"
+          },
+          {
+            "label": "Photo · tower and Queen St front (Taxiarchos228, CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_Old_City_Hall.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/old-city-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=old-city-hall&view=facade",
+        "views": [
+          {
+            "label": "Queen Street front",
+            "url": "/asset-preview.html?asset=old-city-hall&view=facade"
+          },
+          {
+            "label": "Overview from the south-west",
+            "url": "/asset-preview.html?asset=old-city-hall&view=overview"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=old-city-hall&view=roof"
+          },
+          {
+            "label": "Bay Street (west) side",
+            "url": "/asset-preview.html?asset=old-city-hall&view=structure"
+          },
+          {
+            "label": "Clock tower",
+            "url": "/asset-preview.html?asset=old-city-hall&view=tower"
+          },
+          {
+            "label": "Clock dial",
+            "url": "/asset-preview.html?asset=old-city-hall&view=clock"
+          },
+          {
+            "label": "Porch and round turret",
+            "url": "/asset-preview.html?asset=old-city-hall&view=porch"
+          },
+          {
+            "label": "Albert Street (north) side",
+            "url": "/asset-preview.html?asset=old-city-hall&view=back"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=old-city-hall&detail=far"
+          }
+        ]
+      },
+      "notes": "Sourced: 103.64 m tower height, 6 m dial, mapped outline (88 m x 95 m, grid bearing 73.25 deg), tower base ~12 m, 7 storeys, belfry cornice at 240 ft. Estimated from photographs: storey heights and cornice line (25-26.4 m), roof pitches (pavilion apex ~46 m, wing ridges ~38-41 m), tower stage heights, window counts and grouping, gable and turret positions, and everything on the north and east elevations and behind the pavilions (the four wing roofs slope into an L-shaped court closed by a flat dark deck, not the real skylit structure). Carved ornament, the small stone gargoyles, rustication and the cenotaph are abstracted; the several sandstones are two flat colours plus one mid band. Cornices and eaves project up to ~1.3 m beyond the mapped wall line. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 53798 triangles / 8 draws / 3546640 bytes, far 8498 / 8 / 470144.",
+      "documentation": "docs/assets/toronto-old-city-hall.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ontario-legislative-building",
+      "name": "Ontario Legislative Building",
+      "kind": "building",
+      "location": "111 Wellesley Street West, Queen's Park · Toronto, Ontario",
+      "status": "ready",
+      "description": "The Pink Palace: an octagonal 60 m slate roof between four copper-domed towers, an open three-arch portico under a balcony and three lit chamber windows, hip-roofed pavilions, two arms running north around a courtyard, and the flat-roofed 1909 north block.",
+      "manifest": "/models/buildings/ontario-legislative-building.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/ontario-legislative-building/geometry.js",
+        "build": "pnpm build:toronto-landmarks ontario-legislative-building",
+        "provenance": "Original procedural exterior authored 2026-09-29. Plan, heights and roof forms follow OpenStreetMap way 15089986 and its building:part ways 960958805-960958889 (© OpenStreetMap contributors, ODbL 1.0; the mapper's heights, not a survey). Facade features are estimated from Wikimedia Commons photographs used to compare only (kept in ignored tmp/, not in the repository or the GLB): South view, DXR, CC BY-SA 4.0; Ontario Legislative Building in Toronto, Joli Rumi, CC BY-SA 4.0; North facade DSC00224, Daderot, CC0; View from north-east and View from north-west, Sarbjit Bahga, CC BY-SA 4.0; Ontario Legislature viewed from UC Tower 1987, A J Butler, CC BY 3.0. No scan, traced mesh, photograph or texture is distributed.",
+        "references": [
+          {
+            "label": "Wikipedia · Ontario Legislative Building",
+            "url": "https://en.wikipedia.org/wiki/Ontario_Legislative_Building"
+          },
+          {
+            "label": "Legislative Assembly of Ontario · historical overview",
+            "url": "https://www.ola.org/en/visit-learn/parliament-government/legislative-building/historical-overview"
+          },
+          {
+            "label": "ACO Toronto · Ontario Legislature",
+            "url": "https://www.acotoronto.ca/building.php?ID=2262"
+          },
+          {
+            "label": "OSM building outline · way 15089986",
+            "url": "https://www.openstreetmap.org/way/15089986"
+          },
+          {
+            "label": "OSM front steps · way 960958887",
+            "url": "https://www.openstreetmap.org/way/960958887"
+          },
+          {
+            "label": "Wikimedia Commons · Category:Ontario Legislative Building",
+            "url": "https://commons.wikimedia.org/wiki/Category:Ontario_Legislative_Building"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/ontario-legislative-building/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ontario-legislative-building&view=overview",
+        "views": [
+          {
+            "label": "South-east above · the whole building",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=overview"
+          },
+          {
+            "label": "South front · portico, chamber windows, towers",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=facade"
+          },
+          {
+            "label": "Roofs from the south-west above",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=roof"
+          },
+          {
+            "label": "From the north-east · arms, courtyard and north block",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=structure"
+          },
+          {
+            "label": "North front of the 1909 block",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=north"
+          },
+          {
+            "label": "Tower, rose window and dome",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=tower"
+          },
+          {
+            "label": "Portico at ground level",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=portico"
+          },
+          {
+            "label": "West arm and flank porch",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&view=arm"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=ontario-legislative-building&detail=far"
+          }
+        ]
+      },
+      "notes": "No survey dimensions exist in the sources consulted; every height (octagonal roof 60 m, domes 45 m, pavilions 43 m, wings 34-35 m, north block 20 m) is the OSM mapper's, checked against photographs. Facade rhythm, portico arch proportions, turrets, dome profile, dormers, the north entrance bay and every window are estimates; rock-faced masonry is not textured. Rigid flat base at y=0: the real building stands on a rise in Queen's Park and that slope is not modelled. The north entrance bay projects up to 2.6 m beyond the mapped outline. Grounds, statues, the Whitney Block and interiors are excluded. Near 51 161 triangles / 8 draws / 2.6 MB, far 9 128 / 8 / 0.4 MB; Tesla hardware unmeasured.",
+      "documentation": "docs/assets/toronto-ontario-legislative-building.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "prince-edward-viaduct",
+      "name": "Prince Edward Viaduct (Bloor Street Viaduct)",
+      "kind": "bridge",
+      "location": "Bloor Street East over the Don Valley · Toronto, Ontario",
+      "status": "ready",
+      "description": "The 1918 Don Valley section of the Bloor Street Viaduct: five steel crescent arches (85.8 m centre) on six stone piers, 40 m over the valley, carrying Bloor Street (three eastbound and two westbound lanes, bike lanes, two sidewalks) with the TTC Line 2 subway room below and the Luminous Veil fencing both edges. Road-fitted bridge built on the mapped OSM roadway.",
+      "manifest": "/models/bridges/prince-edward-viaduct.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/prince-edward-viaduct/geometry.js",
+        "build": "pnpm build:toronto-landmarks prince-edward-viaduct",
+        "provenance": "Original procedural geometry authored 2026-09-29 from published spans and clearance, the mapped OSM roadway, deck outline (pier notches), sidewalks, subway tracks and the roads, rail and river below (retrieved 2026-09-29 through the OSM API, ODbL 1.0, © OpenStreetMap contributors; way ids in prince-edward-viaduct-alignment.js) and Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Óðinn, panorama (CC BY-SA 2.5 ca); Doug Kerr, two views (CC BY-SA 2.0); Perry Quan, underside and subway (CC BY-SA 2.0); paul bica, Bloor viaduct (CC BY 2.0); Jess (CC BY-SA 2.0); Dillan Payne, 2025 (CC BY-SA 4.0); Vladislav Litvinov (CC0); The City of Toronto, Luminous Veil (CC BY 2.0); IRT.BMT.IND, subway deck (CC BY-SA 3.0); Toronto Public Library Special Collections (CC BY 2.0); City of Toronto Archives, 1918 opening (public domain).",
+        "references": [
+          {
+            "label": "Wikipedia · length, clearance, lanes, Veil, subway deck",
+            "url": "https://en.wikipedia.org/wiki/Prince_Edward_Viaduct"
+          },
+          {
+            "label": "CSCE historic site · arch spans 85.8 / 73.6 / 48.2 m, three-pinned arches",
+            "url": "https://legacy.csce.ca/en/historic-site/prince-edward-viaduct/"
+          },
+          {
+            "label": "Toronto Journey 416 · five steel arches over the river and Parkway",
+            "url": "https://www.torontojourney416.com/prince-edward-viaduct/"
+          },
+          {
+            "label": "Ontario Construction News · engineering of the viaduct",
+            "url": "https://ontarioconstructionnews.com/foundations-of-construction-precise-engineering-of-prince-edward-viaduct"
+          },
+          {
+            "label": "The Canadian Encyclopedia · Bloor Viaduct",
+            "url": "https://www.thecanadianencyclopedia.ca/en/article/toronto-feature-bloor-viaduct"
+          },
+          {
+            "label": "OSM way 4282643 · the mapped roadway (station frame)",
+            "url": "https://www.openstreetmap.org/way/4282643"
+          },
+          {
+            "label": "OSM way 195248139 · mapped deck outline (width, pier stations)",
+            "url": "https://www.openstreetmap.org/way/195248139"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Prince_Edward_Viaduct"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/prince-edward-viaduct/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=prince-edward-viaduct&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=overview"
+          },
+          {
+            "label": "Side elevation",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=facade"
+          },
+          {
+            "label": "Crossing, driver's eye on the deck",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=crossing"
+          },
+          {
+            "label": "Underside, from the valley floor",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=underside"
+          },
+          {
+            "label": "The three main arches",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=arches"
+          },
+          {
+            "label": "From above",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=roof"
+          },
+          {
+            "label": "Luminous Veil, close",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=veil"
+          },
+          {
+            "label": "Subway room and lamps",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=structure"
+          },
+          {
+            "label": "West approach ramp",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=approach"
+          },
+          {
+            "label": "East end over the Parkway",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&view=east"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=prince-edward-viaduct&detail=far"
+          }
+        ]
+      },
+      "notes": "Sourced: 40 m clearance (38 m in one source), spans 85.8 / 73.6 / 48.2 m, five arches, three-hinged crescent arches, 5 lanes with bike lanes, subway lower deck since 1966, Luminous Veil 2003 (5 m rods, 5.5 m over the sidewalk). Mapped (OSM): the 469.5 m roadway (the published 494 m includes approaches beyond it) and 238 m of Bloor Street East / Danforth Avenue beyond its ends, the 26.2 m deck outline and its pier notches (pier stations checked against it; P5 by symmetry), sidewalks, and every crossing road/rail/river below. Arch pin spans are exactly the published 48.2 / 73.6 / 85.8 / 73.6 / 48.2 m; piers centred on the middle arch (7 m pier base) land within 2.7 m of the outline notches. Estimated from photographs: rib spacing and depth, web pattern, subway room, pier plan and taper, niches, the concrete approach spans, edge beam and parapet sections, Veil mast spacing, lean and rod spacing (ribbons are sparser and wider than the real 12.7 cm rods), lamps. Flat-map convention: the deck is level at 40 m from the first pier to the last, with symmetric 170 m ramps (35 % steepest grade) that run out over 90 m of mapped Bloor Street East and 148 m of Danforth Avenue and ease to the approach datum; beyond the arches a concrete girder on piers, then a ramp on fill (no Veil there). Not modelled: subway train and tracks, portals through the piers, Veil LED lighting, fluting, rivets. `layer.js` redirects the shared factory's /models/landmarks/ request to /models/bridges/. Near 49 492 triangles / 17 draws / 2.06 MB; far 20 960 / 7 / 0.59 MB. No Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-prince-edward-viaduct.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rogers-centre",
+      "name": "Rogers Centre",
+      "kind": "building",
+      "location": "1 Blue Jays Way · Toronto, Ontario",
+      "status": "ready",
+      "description": "The SkyDome with its retractable roof closed: four nested white panels over a 32 m concrete ring, the hotel's glass terraces on the north end, the leaning prows with their sculpture ledges and the red ROGERS CENTRE signs.",
+      "manifest": "/models/buildings/rogers-centre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/rogers-centre/geometry.js",
+        "build": "pnpm build:toronto-landmarks rogers-centre",
+        "provenance": "Original procedural geometry authored 2026-09-29 from public dimensions and photographs; plan and hotel terraces from OpenStreetMap way 7969701 and its building:part ways (© OpenStreetMap contributors, ODbL 1.0). No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'Rogers Centre, Toronto, Canada - Toronto Blue Jays stadium.jpg' (Tim Gouw, CC0); 'Rogers Centre May 2011.jpg' and 'CN Tower and Rogers Centre May 2011.jpg' (David from Toronto, CC BY 2.0); 'Toronto CN Tower, Rogers Centre 6282.jpg' (ImagePerson, CC BY 4.0); 'Rogers Centre and CN Tower, Toronto (506142) (26317543735).jpg' (Robert Linsdell, CC BY 2.0); 'ON - Rogers Centre Toronto.jpg' (Taxiarchos228, CC BY-SA 3.0 de); 'June 2012 Rogers Centre (aka Skydome).jpg' and 'August 2012 Toronto Rogers Centre aka Sky Dome from Harbour (7869237928).jpg' (George Socka, CC BY 2.0); 'Rogers Centre Toronto.JPG' (Kjetil Ree, CC BY-SA 3.0); 'Rogers Centre.JPG' (Parklands cobbler, CC BY 3.0); 'Rogers Centre July 2005 12.jpg' (Michael Barera, CC BY-SA 4.0); 'Rogers Centre in Toronto - panoramio.jpg' (Idawriter, CC BY-SA 3.0); 'SkylineToronto2.jpg' and 'SkylineToronto4.jpg' (Raysonho @ Open Grid Scheduler, CC0), the last two used with the CN Tower as a scale bar.",
+        "references": [
+          {
+            "label": "Rogers Centre · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Rogers_Centre"
+          },
+          {
+            "label": "SkyDome · SABR Ballparks",
+            "url": "https://sabr.org/bioproj/park/skydome/"
+          },
+          {
+            "label": "Flipping its lid: the retractable roof at Rogers Centre · The Globe and Mail",
+            "url": "https://www.theglobeandmail.com/sports/retractable-roof-at-rogers-centre-skydome-blue-jays-toronto-mlb-shapiro/article30190945/"
+          },
+          {
+            "label": "Retractable roof for stadium structure (describes the SkyDome's four panels) · US patent 4,995,203",
+            "url": "https://patents.google.com/patent/US4995203"
+          },
+          {
+            "label": "Rogers Centre building outline · OpenStreetMap way 7969701",
+            "url": "https://www.openstreetmap.org/way/7969701"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · Rogers Centre, Toronto, Canada (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre,_Toronto,_Canada_-_Toronto_Blue_Jays_stadium.jpg"
+          },
+          {
+            "label": "Photo · Toronto CN Tower, Rogers Centre 6282 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toronto_CN_Tower,_Rogers_Centre_6282.jpg"
+          },
+          {
+            "label": "Photo · June 2012 Rogers Centre (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:June_2012_Rogers_Centre_(aka_Skydome).jpg"
+          },
+          {
+            "label": "Photo · SkylineToronto4 (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:SkylineToronto4.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/rogers-centre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=rogers-centre&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=rogers-centre&view=overview"
+          },
+          {
+            "label": "Lake end (gates)",
+            "url": "/asset-preview.html?asset=rogers-centre&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=rogers-centre&view=roof"
+          },
+          {
+            "label": "West wall",
+            "url": "/asset-preview.html?asset=rogers-centre&view=structure"
+          },
+          {
+            "label": "Hotel end",
+            "url": "/asset-preview.html?asset=rogers-centre&view=north"
+          },
+          {
+            "label": "Gate level",
+            "url": "/asset-preview.html?asset=rogers-centre&view=street"
+          },
+          {
+            "label": "Prow",
+            "url": "/asset-preview.html?asset=rogers-centre&view=prow"
+          },
+          {
+            "label": "East wall",
+            "url": "/asset-preview.html?asset=rogers-centre&view=east"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=rogers-centre&detail=far"
+          }
+        ]
+      },
+      "notes": "Roof modelled CLOSED (the state most drivers see); no open or part-open state is drawn. Plan, hotel terrace heights (53/41/41/38/38 m), the 32 m ring and the 86 m crown come from OpenStreetMap and published figures; the roof profile (a shallow dome fitted to the mapped roof circle, radius 99 m, 205 m rail to rail), the 4.5 m laps between panels, the ribs, the facade bays and windows, the signs' letter forms and the prow sculptures are estimates from photographs. The joints between panels are placed at v = -52, 0 and 52 m; the real positions are not published. The hotel's north-end roof edge at 53 m is inferred. Facade relief (ledges, pilasters, letters) stands up to 0.9 m outside the mapped outline. The Audience sculptures are simplified leaning spectators, and the Blue Jays mark on the prow is a hand-drawn polygon simplification. Interior, field and seating are not modelled. Model heights are over street grade; the published 86 m is above the field.",
+      "documentation": "docs/assets/toronto-rogers-centre.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "royal-ontario-museum",
+      "name": "Royal Ontario Museum and Michael Lee-Chin Crystal",
+      "kind": "building",
+      "location": "100 Queen's Park / Bloor Street West · Toronto, Ontario",
+      "status": "ready",
+      "description": "The whole museum as one landmark: Daniel Libeskind's Crystal, nine leaning champagne-aluminium prisms with glazed bands cantilevering over Bloor Street, beside the 1933 east wing (buff stone, copper-roofed gabled naves, round-headed gable window, domed rotunda and Queen's Park entrance), the 1914 west wing and the concrete curatorial block.",
+      "manifest": "/models/buildings/royal-ontario-museum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/royal-ontario-museum/geometry.js",
+        "build": "pnpm build:toronto-landmarks royal-ontario-museum",
+        "provenance": "Original procedural geometry authored 2026-09-29. Footprint, wing heights and the Crystal's prism outlines and roof planes come from OpenStreetMap way 4942687 and its building:part ways (© OpenStreetMap contributors, ODbL 1.0; retrieved 2026-09-29). Wall lean, glazing and facade rhythm are read from Wikimedia Commons photographs used only to compare, kept in ignored scratch and never shipped: Richie Diesterheft (CC BY 2.0), Aptd (CC BY-SA 4.0), Mb1000 (public domain), dbking (CC BY 2.0), fw_gadget (CC BY-SA 2.0), Ken Lund (CC BY-SA 2.0), Reading Tom (CC BY 2.0), Tony Hisgett (CC BY 2.0), Owen Byrne (CC BY 2.0), Eric Mutrie (CC BY 2.0), Steve Harris (CC BY 2.0), Aviad2001 (CC BY 2.5), Gisling (CC BY-SA 3.0), Pemolo (CC BY-SA 3.0), Daniel MacDonald (CC BY 2.0), Maksim Sokolov (CC BY-SA 4.0), Jim.henderson (CC BY-SA 4.0 / CC BY 4.0). No third-party mesh, texture or photograph is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia · Royal Ontario Museum",
+            "url": "https://en.wikipedia.org/wiki/Royal_Ontario_Museum"
+          },
+          {
+            "label": "Wikipedia · Michael Lee-Chin Crystal",
+            "url": "https://en.wikipedia.org/wiki/Michael_Lee-Chin_Crystal"
+          },
+          {
+            "label": "Studio Libeskind · Royal Ontario Museum",
+            "url": "https://libeskind.com/work/royal-ontario-museum/"
+          },
+          {
+            "label": "Wikiarquitectura · Michael Lee-Chin Crystal (37 m, five volumes)",
+            "url": "https://en.wikiarquitectura.com/building/michael-lee-chin-crystal/"
+          },
+          {
+            "label": "Danish Architecture Center · The Crystal at the ROM",
+            "url": "https://dac.dk/en/magazine/places/the-crystal-at-the-royal-ontario-museum-612"
+          },
+          {
+            "label": "OSM footprint · way 4942687",
+            "url": "https://www.openstreetmap.org/way/4942687"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons, Michael Lee-Chin Crystal",
+            "url": "https://commons.wikimedia.org/wiki/Category:Michael_Lee-Chin_Crystal"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons, Exterior of the ROM",
+            "url": "https://commons.wikimedia.org/wiki/Category:Exterior_of_the_Royal_Ontario_Museum"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/royal-ontario-museum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=royal-ontario-museum&view=overview",
+        "views": [
+          {
+            "label": "Bloor Street corner at Queen's Park",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&view=overview"
+          },
+          {
+            "label": "North front from Bloor Street",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&view=facade"
+          },
+          {
+            "label": "Under the overhang · main entrance",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&view=entrance"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&view=roof"
+          },
+          {
+            "label": "From the west, behind the Crystal",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&view=structure"
+          },
+          {
+            "label": "Queen's Park side · rotunda entrance",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&view=east"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=royal-ontario-museum&detail=far"
+          }
+        ]
+      },
+      "notes": "Massing, wing heights, Crystal prism outlines and roof planes follow OSM building parts (Crystal heights scaled 37/39 to the published 37 m apex). Wall lean (11-27 degrees), the 10-12 m cantilever, every glazing band and window row are photo estimates, not a survey; the rear prisms are the least certain. Glazing is 23 % of the Crystal seen from Bloor Street and 10 % from above, against a published 20-25 % of the envelope. Plaza, OpenROM works, interiors, carved stonework and street furniture are not modelled. Near 14,790 triangles / 15 draws / 862 KB; far 1,731 / 13 / 105 KB. Flat-map grade y=0. No Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-royal-ontario-museum.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "scotia-plaza",
+      "name": "Scotia Plaza",
+      "kind": "building",
+      "location": "40 King Street West, Financial District · Toronto, Ontario",
+      "status": "ready",
+      "description": "Napoleon Red granite tower with the stepped-chevron recess in its crown, sawtooth corners, two 4 m facade bands, six-level wings and the limestone 44 King Street West bank building it wraps.",
+      "manifest": "/models/buildings/scotia-plaza.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/scotia-plaza/geometry.js",
+        "build": "pnpm build:toronto-landmarks scotia-plaza",
+        "provenance": "Original procedural geometry authored 2026-09-29. Footprints and heights from OpenStreetMap ways 141694075, 366234303, 951711671-694 and 43417401 / 366234292-294 (© OpenStreetMap contributors, ODbL 1.0). Reference photographs used only to compare and kept out of the repository: Wikimedia Commons 'Scotia Plaza 2025-05-24' (JK Liu, CC BY-SA 4.0), 'Scotia Plaza 2009' (SimonP, CC BY-SA 3.0), 'View from CN Tower 2023h' (Antony-22, CC BY-SA 4.0), 'Bay Adelaide and Scotia Plaza' (Andrew Rivett, CC BY 2.0), 'Scotia Plaza from Richmond Street East' (Ken Lund, CC BY-SA 2.0), 'Toronto Bay and King from aerial photo Helicopter 2005' (George Socka, CC BY 2.0), 'ScotiaPlaza.JPG' (Raysonho, CC0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Scotia Plaza",
+            "url": "https://en.wikipedia.org/wiki/Scotia_Plaza"
+          },
+          {
+            "label": "Architect · WZMH Architects",
+            "url": "https://www.wzmh.com/projects/scotia-plaza/"
+          },
+          {
+            "label": "ACO Toronto · Scotia Plaza",
+            "url": "https://www.acotoronto.ca/building.php?ID=951"
+          },
+          {
+            "label": "Toronto Society of Architects · Scotia Plaza",
+            "url": "https://torontosocietyofarchitects.ca/buildings/scotia-plaza/"
+          },
+          {
+            "label": "OSM tower · way 141694075",
+            "url": "https://www.openstreetmap.org/way/141694075"
+          },
+          {
+            "label": "OSM wing · way 951711671",
+            "url": "https://www.openstreetmap.org/way/951711671"
+          },
+          {
+            "label": "OSM chevron band strip · way 951711694",
+            "url": "https://www.openstreetmap.org/way/951711694"
+          },
+          {
+            "label": "OSM 44 King Street West · way 43417401",
+            "url": "https://www.openstreetmap.org/way/43417401"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Scotia_Plaza"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/scotia-plaza/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=scotia-plaza&view=overview",
+        "views": [
+          {
+            "label": "Whole complex",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=overview"
+          },
+          {
+            "label": "West face and chevron",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=facade"
+          },
+          {
+            "label": "Chevron close-up",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=chevron"
+          },
+          {
+            "label": "East face",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=east"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=roof"
+          },
+          {
+            "label": "Sawtooth corner and wing",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=structure"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=street"
+          },
+          {
+            "label": "44 King Street West",
+            "url": "/asset-preview.html?asset=scotia-plaza&view=heritage"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=scotia-plaza&detail=far"
+          }
+        ]
+      },
+      "notes": "Roof 274.9 m and 68 storeys are sourced (OSM, Wikipedia); the chevron, sawtooth corners, 4 m bands and wings follow mapped OSM parts. Floor pitch 3.95 m, 1.6 x 2.2 m windows, 0.9 m reveals, granite tone, roof plant (top 277 m), the plain red S mark and all heritage-building facade detail are estimates. Not modelled: the glazed canopies and atria beside the tower (OSM ways 366568729, 366570218), the plaza and below-grade levels. Near GLB is 3.9 MB because of window reveals. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-scotia-plaza.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "scotiabank-arena",
+      "name": "Scotiabank Arena",
+      "kind": "building",
+      "location": "40 Bay Street · Toronto, Ontario",
+      "status": "ready",
+      "description": "The 1999 arena hall (Air Canada Centre until 2018): low two-way arched roof over a black metal attic, the retained 1941 Art Deco limestone colonnade on Bay Street and Lake Shore Boulevard with its rounded ribbon-window corner, the glazed plaza front with the 9.1 x 15.2 m video screen and red rooftop sign, and the crossed Cor-Ten plaza sculpture.",
+      "manifest": "/models/buildings/scotiabank-arena.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/scotiabank-arena/geometry.js",
+        "build": "pnpm build:toronto-landmarks scotiabank-arena",
+        "provenance": "Original procedural geometry authored 2026-09-29 from the mapped OSM building:part outlines, published structural notes and public photographs. Mapped footprints (c) OpenStreetMap contributors (ODbL 1.0). No third-party mesh, font, reference photograph or texture is shipped; the lettering is built from a 5 x 7 cell grid. Reference photographs were used for comparison only (local, ignored study copies): Roland Tanglao, Air Canada Centre Bay Street Facade (CC BY 2.0); Paperfire, Scotiabank Arena - 2018 (CC BY-SA 4.0); Adam Bishop, Scotiabank Arena at dusk and summer 2022 (CC BY-SA 4.0); PascalHD, Scotiabank Arena along Bay Street, 13 May 2026 (CC BY-SA 4.0); Sikander, Scotiabank Arena from CIBC Square Park, 8 March 2026 (CC BY-SA 4.0); Balcer, Air Canada Centre from CN Tower (public domain); Secondarywaltz, Air Canada Centre and CN Tower from Bay St (public domain); Bourquie, Union Station and ACC from CN Tower, 2005 (CC BY-SA 3.0); Adam Moss, Toronto (26217674549) (CC BY-SA 2.0).",
+        "references": [
+          {
+            "label": "Wikipedia · Scotiabank Arena (address, 1999 opening, architects, 9.1 x 15.2 m screen, retained facade)",
+            "url": "https://en.wikipedia.org/wiki/Scotiabank_Arena"
+          },
+          {
+            "label": "Canadian Consulting Engineer · two-way kingpost roof truss, 102 x 110 m span, 28 m clear height, retained masonry facades",
+            "url": "https://www.canadianconsultingengineer.com/features/air-canada-centre-toronto/"
+          },
+          {
+            "label": "ACO Toronto · 40 Bay Street, Toronto Postal Delivery Building (1941) and the facadism",
+            "url": "https://www.acotoronto.ca/building.php?ID=180"
+          },
+          {
+            "label": "Taylor on History · the Postal Delivery Building: Queenston limestone, black granite plinth, pink granite pilasters, Temporale carvings",
+            "url": "https://tayloronhistory.com/2013/02/12/torontos-architectural-gemsthe-postal-delivery-building-now-the-acc/"
+          },
+          {
+            "label": "OSM way 19882585 · Scotiabank Arena lot outline (not used as footprint: includes the office tower)",
+            "url": "https://www.openstreetmap.org/way/19882585"
+          },
+          {
+            "label": "OSM way 1104128156 · bowl roof part (22 m + 4 m round roof); model origin",
+            "url": "https://www.openstreetmap.org/way/1104128156"
+          },
+          {
+            "label": "OSM way 1104128153 · limestone facade part",
+            "url": "https://www.openstreetmap.org/way/1104128153"
+          },
+          {
+            "label": "OSM way 1104128157 · west glazed front part",
+            "url": "https://www.openstreetmap.org/way/1104128157"
+          },
+          {
+            "label": "Wikimedia Commons · Category:Scotiabank Arena (photographic references)",
+            "url": "https://commons.wikimedia.org/wiki/Category:Scotiabank_Arena"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/scotiabank-arena/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=scotiabank-arena&view=overview",
+        "views": [
+          {
+            "label": "Overview from the plaza",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=overview"
+          },
+          {
+            "label": "Bay Street limestone facade",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=facade"
+          },
+          {
+            "label": "Arched roof",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=roof"
+          },
+          {
+            "label": "Plaza front, screen and sign",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=plaza"
+          },
+          {
+            "label": "Lake Shore side and rounded corner",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=structure"
+          },
+          {
+            "label": "North wall",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=north"
+          },
+          {
+            "label": "Screen and sign detail",
+            "url": "/asset-preview.html?asset=scotiabank-arena&view=detail"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=scotiabank-arena&detail=far"
+          }
+        ]
+      },
+      "notes": "Estimated: roof crown 31 m and eave 27-29 m (sourced 28 m clear height to the roof underside; OSM 22 m + 4 m round roof), limestone cornice 19 m, glazed front 19.5 m, ribbon-window bands, window/pilaster module (8 m pitch, 8 bays on Bay Street, 6 on Lake Shore), attic bay rhythm, roof plant, sculpture form and position, colours. Sourced: address, 1999 opening, retained east and south limestone facades (Postal Delivery Building, 1941), 102 x 110 m roof span, 9.1 x 15.2 m screen, plan outline from OSM. Simplified: the roof arch is a smooth low two-way cap, attic is today's black cladding, star perforations of the sculpture, doors, signage on the facade, the skywalk annexes and the office tower are omitted. The brief's 45 m height was not supported by the sources; the arena tops out near 31 m, the tower is 55 m. Flat-map grade y=0. No Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-scotiabank-arena.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "sharp-centre-for-design",
+      "name": "Sharp Centre for Design",
+      "kind": "building",
+      "location": "100 McCaul Street · Toronto, Ontario",
+      "status": "ready",
+      "description": "Will Alsop's 2004 OCAD University tabletop: an 84 x 31 x 9 m box with a white pixel skin of black patches and windows, its underside 26 m above the street on twelve slanted, multi-coloured steel legs, with the long red stair slab, the black cores and the brick Main Building beneath.",
+      "manifest": "/models/buildings/sharp-centre-for-design.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/sharp-centre-for-design/geometry.js",
+        "build": "pnpm build:toronto-landmarks sharp-centre-for-design",
+        "provenance": "Original procedural geometry authored 2026-09-29 from published dimensions, the structural engineers' description and public photographs, placed on mapped OSM outlines. The white/black/window skin is a seeded pseudo-random pattern of geometry cells (a real material split, no texture); its density and module were measured from photographs, the layout is not Alsop's. No scan, third-party mesh, photograph or texture is shipped. Reference photographs were viewed locally only (Wikimedia Commons: Taxiarchos228 'Toronto - ON - Ontario College of Art & Design2/3' CC BY 3.0; Arild Vågen 'Sharp Centre for Design August 2017 01' CC BY-SA 4.0; Maksim Sokolov 'Fragment of Sharp Centre for Design, Toronto' CC BY-SA 4.0; Tony Hisgett 'Toronto 7 (8028092920)' CC BY 2.0; Mark 'OCAD University - Toronto (26470705138)' CC BY 2.0; artq55 'OCAD and CN Tower' and 'Looking north at McCaul at OCAD' CC BY-SA 2.0; Richie Diesterheft 'Sharp Center for Design by Alsop Architects (9159988965)' and '... with CN Tower (9162211250)' CC BY 2.0; John Mason 'Sharp Centre for Design, Toronto (4826996718)' CC BY 2.0; '松林 L' 'Toronto IMG 1302 (1879276703)' CC BY 2.0). Mapped outlines © OpenStreetMap contributors (ODbL 1.0), read 2026-09-29.",
+        "references": [
+          {
+            "label": "OCAD University · Sharp Centre and Main Building (Wikipedia)",
+            "url": "https://en.wikipedia.org/wiki/OCAD_University"
+          },
+          {
+            "label": "Canadian Consulting Engineer · structure of the tabletop and legs",
+            "url": "https://www.canadianconsultingengineer.com/features/sharp-centre-for-design-ocad/"
+          },
+          {
+            "label": "Designing Buildings · 84 x 31 x 9 m, 26 m above ground, cladding",
+            "url": "https://www.designingbuildings.co.uk/wiki/The%20Sharp%20Centre%20for%20Design"
+          },
+          {
+            "label": "Archello · Alsop project description",
+            "url": "https://archello.com/project/the-sharp-centre"
+          },
+          {
+            "label": "Architectuul · Sharp Centre for Design",
+            "url": "https://architectuul.com/architecture/sharp-centre-for-design"
+          },
+          {
+            "label": "OSM footprint · way 27616814 (tabletop)",
+            "url": "https://www.openstreetmap.org/way/27616814"
+          },
+          {
+            "label": "OSM footprint · way 225377144 (Main Building)",
+            "url": "https://www.openstreetmap.org/way/225377144"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:Sharp_Centre_for_Design"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/sharp-centre-for-design/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=sharp-centre-for-design&view=overview",
+        "views": [
+          {
+            "label": "Three-quarter from McCaul Street",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=overview"
+          },
+          {
+            "label": "East wall · pixel skin",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=facade"
+          },
+          {
+            "label": "Roof and plant enclosure",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=roof"
+          },
+          {
+            "label": "Legs and soffit from the south lot",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=structure"
+          },
+          {
+            "label": "Grange Park side",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=west"
+          },
+          {
+            "label": "Under the table",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=underside"
+          },
+          {
+            "label": "Driver's view heading south",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=street"
+          },
+          {
+            "label": "From the corner of McCaul",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&view=southeast"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=sharp-centre-for-design&detail=far"
+          }
+        ]
+      },
+      "notes": "Published: 84 x 31 x 9 m tabletop, underside 26 m above ground, twelve 28 m legs (914 mm tapering to 450 mm) in six pairs. OSM tags the tabletop height=26 / min_height=19 and the mapped outline is 86.7 x 31.6 m; the model follows the published figures (underside 26 m, roof 35 m) and sits inside the outline. Estimated: pixel layout (density and 0.75 m module from photographs), leg plan positions and colours, red slab route, brick block heights and split, the two black cores beyond their mapped outlines, the roof plant enclosure, window rhythm, brick and cladding colours. Flat-map grade y=0; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-sharp-centre-for-design.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-lawrence-market",
+      "name": "St. Lawrence Market",
+      "kind": "building",
+      "location": "93 Front Street East · Toronto, Ontario",
+      "status": "ready",
+      "description": "The South Market: a 43 x 106 m red-brick hall under one arched metal roof with a clerestory lantern, entered through the kept centre block of the 1845 City Hall with its three stone arches, pedimented corner entrances, green copper eaves, and a deck over a colonnade at The Esplanade end below the big arched gable and sign.",
+      "manifest": "/models/buildings/st-lawrence-market.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/st-lawrence-market/geometry.js",
+        "build": "pnpm build:toronto-landmarks st-lawrence-market",
+        "provenance": "Original procedural geometry authored 2026-09-29 from public photographs and OSM building data. Hall outline, ridge strip and heights from OSM way 24626769 and parts 304467236 and 1291184907 (© OpenStreetMap contributors, ODbL 1.0). No third-party mesh, font, photograph or texture is shipped; photographs were downloaded to an ignored folder only to compare. Photographs used: 'St Lawerence South Market Exterior 202112.jpg', 'St. Lawrence Market 2022.jpg', 'St. Lawrence Market South Interior 2021.jpg' (Canmenwalker, CC BY 4.0); 'St. Lawrence Market South Building, February 28 2026.jpg' (Dillan Payne, CC BY-SA 4.0); 'Toronto - ON - St Lawrence Market.jpg' (Wladyslaw, CC BY-SA 3.0); 'The St Lawrence Market, 2014 05 20 -a/-c/-e.JPG - panoramio.jpg' (OldYorkGuy, CC BY-SA 3.0); 'Stlawrencemarketsouthdec1424.jpg' (ChadPerez49, CC0); 'The Old City Hall 1844-1899.jpg' (A. Fraser, Toronto, historical, descriptive and pictorial, c.1899, public domain), all Wikimedia Commons.",
+        "references": [
+          {
+            "label": "Wikipedia · St. Lawrence Market South",
+            "url": "https://en.wikipedia.org/wiki/St._Lawrence_Market_South"
+          },
+          {
+            "label": "Heritage Toronto · Building Toronto, St. Lawrence Market",
+            "url": "https://www.heritagetoronto.org/explore/building-toronto-map/building-toronto-lawrence-market/"
+          },
+          {
+            "label": "Historic Toronto · Enjoying Toronto's architectural gems, the St. Lawrence Market",
+            "url": "https://tayloronhistory.com/2012/04/23/enjoying-torontos-architectural-gems-the-st-lawrence-market/"
+          },
+          {
+            "label": "ACO Toronto · St. Lawrence Market",
+            "url": "https://www.acotoronto.ca/building.php?ID=2831"
+          },
+          {
+            "label": "Official site · St. Lawrence Market",
+            "url": "https://www.stlawrencemarket.com"
+          },
+          {
+            "label": "OSM footprint · way 24626769",
+            "url": "https://www.openstreetmap.org/way/24626769"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:St._Lawrence_Market_South"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/st-lawrence-market/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-lawrence-market&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=overview"
+          },
+          {
+            "label": "Front Street facade and centre block",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=facade"
+          },
+          {
+            "label": "Corner entrance and pediment",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=entrance"
+          },
+          {
+            "label": "Long wall (Market Street)",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=side"
+          },
+          {
+            "label": "Esplanade gable and colonnade",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=colonnade"
+          },
+          {
+            "label": "Roof and lantern",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=roof"
+          },
+          {
+            "label": "Esplanade end from the south-west",
+            "url": "/asset-preview.html?asset=st-lawrence-market&view=structure"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=st-lawrence-market&detail=far"
+          }
+        ]
+      },
+      "notes": "Hall rectangle (43.3 x 106.2 m, 17.13 degrees off north), wall/roof heights and the 14.5 m ridge lantern are mapped from OSM; bay count and module, storey heights, window and arch sizes, chimney heights, colours and the deck extent are estimated from public photographs. The real site falls about a storey to The Esplanade; the model keeps one flat grade with a solid base on the Front Street half and an open colonnade on the Esplanade half. The North Market across Front Street is a separate 2025 building and is not modelled. Roof seams, stairs, tenant signs and flagpoles omitted; lettering is a generic block face. No Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-st-lawrence-market.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "toronto-city-hall",
+      "name": "Toronto City Hall and Nathan Phillips Square",
+      "kind": "building",
+      "location": "100 Queen Street West · Toronto, Ontario",
+      "status": "ready",
+      "description": "Viljo Revell's 1965 city hall: two unequal curved office towers (west 79.4 m, east 99.5 m) with ribbed concrete backs and recessed ribbon glazing, round the 47 m saucer-domed council chamber on a ring of 23 V struts; the two-storey colonnaded podium with roof gardens and the ceremonial ramp, and the square's reflecting pool, three Freedom Arches, TORONTO sign and elevated walkway loop.",
+      "manifest": "/models/buildings/toronto-city-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/toronto-city-hall/geometry.js",
+        "build": "pnpm build:toronto-landmarks toronto-city-hall",
+        "provenance": "Original procedural geometry authored 2026-09-29 from OpenStreetMap plan data and published dimensions; photographs were used only to compare and are not shipped. Mapped outlines and site geometry © OpenStreetMap contributors (ODbL 1.0). No scan, third-party mesh, photograph or texture in the repository or the GLB. Comparison photographs (Wikimedia Commons, kept outside the repo): 'Toronto city hall August 2017 01.jpg' (ArildV, CC BY-SA 4.0); 'Cityhalltoronto1.JPG' (Devjohnson, CC BY-SA 3.0); '101 New City Hall, Toronto, 2009.jpg' (XeresNelro, CC BY-SA 4.0); 'City Hall - Toronto, Ontario, Canada - October 16, 2023 02/04.jpg' (Giorgio Galeotti, CC BY-SA 4.0); 'Curved city hall buildings (Unsplash).jpg' (Scott Webb, CC0); 'Downton Toronto centre-ville (5608145378).jpg' (abdallahh, CC BY 2.0); 'Arches (3780123090).jpg' and 'City Hall Fountain (3776235633).jpg' (Robert Taylor, CC BY 2.0); 'Arches Toronto 2010.jpg' (Benson Kua, CC BY-SA 2.0); '1Nathan Phillips Square at NightABC.jpg' (John Vetterli, CC BY-SA 2.0); 'A view from Toronto City Hall on May 21, 2022.jpg' (Maksim Sokolov, CC BY-SA 4.0); 'Aerial view of Toronto City Hall Construction 1962.jpg' (Frank Grant, public domain).",
+        "references": [
+          {
+            "label": "Wikipedia · Toronto City Hall (towers 99.7 / 79.6 m, 27 / 20 storeys, cladding)",
+            "url": "https://en.wikipedia.org/wiki/Toronto_City_Hall"
+          },
+          {
+            "label": "Wikipedia · Nathan Phillips Square (Freedom Arches, pool, walkway, sign)",
+            "url": "https://en.wikipedia.org/wiki/Nathan_Phillips_Square"
+          },
+          {
+            "label": "Canadian Encyclopedia · Toronto City Hall (tower faces 225 ft / 325 ft)",
+            "url": "https://www.thecanadianencyclopedia.ca/en/article/toronto-city-hall"
+          },
+          {
+            "label": "Toronto Journey 416 · New City Hall (dome 46 m, 12 m, 23 V struts, pool 55.5 x 30 m)",
+            "url": "https://www.torontojourney416.com/new-city-hall/"
+          },
+          {
+            "label": "City of Toronto · A Step Forward in Time: Toronto's New City Hall",
+            "url": "https://www.toronto.ca/explore-enjoy/history-art-culture/online-exhibits/web-exhibits/web-exhibits-local-government/a-step-forward-in-time-torontos-new-city-hall/"
+          },
+          {
+            "label": "OSM · West Tower way 27767543",
+            "url": "https://www.openstreetmap.org/way/27767543"
+          },
+          {
+            "label": "OSM · East Tower way 27767544",
+            "url": "https://www.openstreetmap.org/way/27767544"
+          },
+          {
+            "label": "OSM · Council Chambers way 27767545",
+            "url": "https://www.openstreetmap.org/way/27767545"
+          },
+          {
+            "label": "OSM · podium way 198500761",
+            "url": "https://www.openstreetmap.org/way/198500761"
+          },
+          {
+            "label": "OSM · Toronto City Hall relation 542980",
+            "url": "https://www.openstreetmap.org/relation/542980"
+          },
+          {
+            "label": "Wikimedia Commons · Category Toronto City Hall",
+            "url": "https://commons.wikimedia.org/wiki/Category:Toronto_City_Hall"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/toronto-city-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=toronto-city-hall&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=overview"
+          },
+          {
+            "label": "Facade from the square",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=square"
+          },
+          {
+            "label": "Queen Street",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=street"
+          },
+          {
+            "label": "Council chamber",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=chamber"
+          },
+          {
+            "label": "Freedom Arches",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=arches"
+          },
+          {
+            "label": "Towers from above",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=roof"
+          },
+          {
+            "label": "Ribbed backs from the north",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=north"
+          },
+          {
+            "label": "Ceremonial ramp and walkway",
+            "url": "/asset-preview.html?asset=toronto-city-hall&view=ramp"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=toronto-city-hall&detail=far"
+          }
+        ]
+      },
+      "notes": "SOURCED: roof heights 99.5 / 79.4 m and 27 / 20 storeys (OSM, Wikipedia 99.7 / 79.6 m), podium roof 8 m, saucer 13 to 25 m and 46 m dome across, 23 V struts, pool 55.5 x 30 m (mapped 54.6 x 30.2 m), sign 3 x 22 m, three arches with mapped feet. MAPPED: every plan curve, the street grid rotation (16.7 degrees), podium outline, walkway loop, ramp centre line, roof beds. ESTIMATED from photographs: floor heights and window pattern, rib pitch (1.5 m) and depth (0.38 m), which end of each tower is the ribbed pylon (south) and smooth block (north), strut geometry, podium fascia and columns (4.4 m cantilever), arch rise (12 m) and section, lamp cans, walkway (deck 6.0 m, 6.2 m wide) and ramp sections (9.2 m wide), aerial mast (6 m, estimated). NOT MODELLED: Old City Hall, Henry Moore's Archer, flag poles, Peace Garden, the west stage, Queen Street bridge. The east tower back joint courses (2) are at one third and two thirds. Lit windows (22 % of bays) exist in the near model only. Flat-map grade y=0; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-toronto-city-hall.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "toronto-dominion-centre",
+      "name": "Toronto-Dominion Centre",
+      "kind": "building",
+      "location": "King, Bay, Wellington and York Streets · Toronto, Ontario",
+      "status": "ready",
+      "description": "Mies van der Rohe's black steel-and-bronze-glass complex as one landmark: the 222.9 m TD Bank Tower with its windowless mechanical bands and green TD signs, the 182.9 m TD North (Royal Trust) Tower, the 128 m TD West and 153.6 m TD South towers, and the open, living-roofed Banking Pavilion, all on a raised granite plaza. I-beam mullions every 1.524 m, 3.66 m floors and two-storey glass lobbies set back behind a colonnade.",
+      "manifest": "/models/buildings/toronto-dominion-centre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/toronto-dominion-centre/geometry.js",
+        "build": "pnpm build:toronto-landmarks toronto-dominion-centre",
+        "provenance": "Original procedural geometry authored 2026-09-29 from OpenStreetMap footprints (ODbL 1.0; ways 141693728, 141693739 + part 367642827, 110166031, 27767634 + part 367641020, 27767631; lawns 177602017 and 177602018), the building's published technical specification and public photo references. No third-party mesh, scan, photograph or texture is shipped; reference photographs stay in ignored tmp/. Photos compared (Wikimedia Commons): 'Toronto-Dominion Centre in Toronto 1973' (Balthazar Korab, public domain); 'Toronto-Dominion Centre The Banking Pavilion 2021' and 'TD West Tower 2022' (Canmenwalker, CC BY 4.0); 'Toronto-Dominion Centre, April 27 2026 (01)' (Dillan Payne, CC BY-SA 4.0); 'Toronto-Dominion Centre' (TooMuchFrixion, CC BY-SA 4.0); 'Toronto Financial District August 2017' (Arild Vågen, CC BY-SA 4.0); 'Toronto-Dominion Centre - Paul Bica' (paul (dex) bica, CC BY 2.0).",
+        "references": [
+          {
+            "label": "Toronto-Dominion Centre · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Toronto-Dominion_Centre"
+          },
+          {
+            "label": "Ontario Heritage Trust · Toronto-Dominion Centre background paper",
+            "url": "https://www.heritagetrust.on.ca/provincial-plaque-program/provincial-plaque-background-papers/toronto-dominion-centre"
+          },
+          {
+            "label": "Heritage Toronto · Toronto-Dominion Centre",
+            "url": "https://www.heritagetoronto.org/explore/td-centre-54th-floor/"
+          },
+          {
+            "label": "ERA Architects · The Toronto-Dominion Centre",
+            "url": "https://www.eraarch.ca/projects/the-toronto-dominion-centre/"
+          },
+          {
+            "label": "TCLF · Toronto-Dominion Centre",
+            "url": "https://www.tclf.org/landscapes/toronto-dominion-centre"
+          },
+          {
+            "label": "Cadillac Fairview · TD Bank Tower technical specification (Jan 2022)",
+            "url": "https://assets.cadillacfairview.com/m/200ef1bdeb02696c/original/Technical-Specifications-TD-Bank-Tower.pdf"
+          },
+          {
+            "label": "Skyscraper Center · TD Tower (Bank Tower)",
+            "url": "https://www.skyscrapercenter.com/building/td-tower/1211"
+          },
+          {
+            "label": "Skyscraper Center · TD North Tower",
+            "url": "https://www.skyscrapercenter.com/building/td-north-tower/2210"
+          },
+          {
+            "label": "Skyscraper Center · TD West Tower",
+            "url": "https://www.skyscrapercenter.com/building/td-west-tower/15274"
+          },
+          {
+            "label": "Skyscraper Center · TD South Tower",
+            "url": "https://www.skyscrapercenter.com/toronto/td-south-tower/3756/"
+          },
+          {
+            "label": "OSM footprint · TD Bank Tower, way 141693728",
+            "url": "https://www.openstreetmap.org/way/141693728"
+          },
+          {
+            "label": "OSM footprint · Banking Pavilion, way 110166031",
+            "url": "https://www.openstreetmap.org/way/110166031"
+          },
+          {
+            "label": "Photographic references · Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/Category:Toronto-Dominion_Centre"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/toronto-dominion-centre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=toronto-dominion-centre&view=overview",
+        "views": [
+          {
+            "label": "Overview from King and Bay",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=overview"
+          },
+          {
+            "label": "King Street frontage",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=facade"
+          },
+          {
+            "label": "Roofs and crowns",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=roof"
+          },
+          {
+            "label": "Banking Pavilion",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=pavilion"
+          },
+          {
+            "label": "Plaza and lobbies",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=plaza"
+          },
+          {
+            "label": "Bank Tower crown and TD sign",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=crown"
+          },
+          {
+            "label": "From Wellington Street",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&view=street"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=toronto-dominion-centre&detail=far"
+          }
+        ]
+      },
+      "notes": "Sourced: tower heights and storey counts (OSM, Skyscraper Center), the 1.524 m module, 2.74 m panes and 3.66 m floors (technical specification), plans and orientation (OSM outlines fitted to their own grid), the pavilion's 22 000 sq ft roof. Estimated from photographs: the Bank Tower's three 7.3 m mechanical bands and each crown height, the 8 m recessed lobbies and their columns, mullion sections, TD sign sizes and faces, the pavilion's column pitch and 10.2 m height, the 0.9 m plaza and its margins. TD North is the Royal Trust Tower (182.9 m); the TD Gallery of Inuit Art is in the TD South lobby, not a separate pavilion. 95 Wellington West, 222 Bay Street, First Canadian Place and Scotia Plaza stay provider geometry. PATH, interiors, trees, sculptures and the small black structure between the pavilion and the Bank Tower are not modelled. Flat y=0 grade; no Tesla hardware measurements.",
+      "documentation": "docs/assets/toronto-toronto-dominion-centre.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "union-station",
+      "name": "Union Station",
+      "kind": "building",
+      "location": "65 Front Street West · Toronto, Ontario",
+      "status": "ready",
+      "description": "The 1927 Beaux-Arts headhouse on Front Street: a deep colonnaded loggia of Tuscan columns under a lettered entablature, arched pavilions and window-ranked wings either side of glass-roofed moat, the Great Hall's low hipped copper roof, and the train sheds and glass atrium behind.",
+      "manifest": "/models/buildings/union-station.json",
+      "source": {
+        "path": "src/peregrine/landmarks/toronto/union-station/geometry.js",
+        "build": "pnpm build:toronto-landmarks union-station",
+        "provenance": "Original procedural geometry authored 2026-09-29 (Codriver, with Claude). Plan, heights and column positions read from the OpenStreetMap building:part geometry of way 14744491 and its parts (OSM map API, fetched 2026-09-29, © OpenStreetMap contributors, ODbL 1.0). Wikimedia Commons photographs were viewed for proportion and detail and are not redistributed: Peter Kudlacz, 'Union Station Toronto (3319647720)' (CC BY 2.0); Dillan Payne, 'Front of Union Station in Toronto, April 3 2026' and 'Roof of the Train Shed at Union Station Toronto, June 20 2026' (CC BY-SA 4.0); Wladyslaw, 'Toronto - ON - Union Station' (CC BY-SA 3.0); JasonParis, 'North facade of Toronto's Union Station (16125906818)' (CC BY 2.0); Matt MacGillivray, 'Front facade of Union Station in Toronto Canada' (CC BY 2.0); Oaktree b, 'Angle of Union Station in Toronto' (CC BY-SA 4.0); Duncan Rawlinson, 'Rooftop view of Union Station, Toronto, at night' (CC BY 2.0); IngolfBLN, 'Toronto - Union Station (6265004760)' (CC BY-SA 2.0); Richard Eriksson, 'Union Station Toronto 14' (CC BY 2.0); Archives of Ontario, 'Toronto, Union station, the railyards and Toronto harbour' and a 1927 postcard (public domain). No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · Union Station (Toronto)",
+            "url": "https://en.wikipedia.org/wiki/Union_Station_(Toronto)"
+          },
+          {
+            "label": "OSM way 14744491 · Union Station outline",
+            "url": "https://www.openstreetmap.org/way/14744491"
+          },
+          {
+            "label": "OSM way 290168042 · Great Hall hipped copper roof (26.5-32.5 m)",
+            "url": "https://www.openstreetmap.org/way/290168042"
+          },
+          {
+            "label": "OSM way 951328327 · colonnade entablature strip (12-19 m)",
+            "url": "https://www.openstreetmap.org/way/951328327"
+          },
+          {
+            "label": "ACO Toronto · Union Station, heritage character",
+            "url": "https://acotoronto.ca/building.php?ID=3394"
+          },
+          {
+            "label": "Toronto Journey 416 · Union Station (22 columns, 40 ft; 229 m facade)",
+            "url": "https://www.torontojourney416.com/union-station/"
+          },
+          {
+            "label": "Wikimedia Commons · Category: Facade of Union Station (Toronto)",
+            "url": "https://commons.wikimedia.org/wiki/Category:Facade_of_Union_Station_(Toronto)"
+          },
+          {
+            "label": "Wikimedia Commons · Category: Train shed at Union Station (Toronto)",
+            "url": "https://commons.wikimedia.org/wiki/Category:Train_shed_at_Union_Station_(Toronto)"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/union-station/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=union-station&view=facade",
+        "views": [
+          {
+            "label": "Front Street facade",
+            "url": "/asset-preview.html?asset=union-station&view=facade"
+          },
+          {
+            "label": "Colonnade and porch",
+            "url": "/asset-preview.html?asset=union-station&view=colonnade"
+          },
+          {
+            "label": "West pavilion and moat",
+            "url": "/asset-preview.html?asset=union-station&view=pavilion"
+          },
+          {
+            "label": "Aerial overview",
+            "url": "/asset-preview.html?asset=union-station&view=overview"
+          },
+          {
+            "label": "Great Hall roof and wings",
+            "url": "/asset-preview.html?asset=union-station&view=roof"
+          },
+          {
+            "label": "Rear and train shed",
+            "url": "/asset-preview.html?asset=union-station&view=structure"
+          },
+          {
+            "label": "Shed and glass atrium",
+            "url": "/asset-preview.html?asset=union-station&view=shed"
+          },
+          {
+            "label": "Far",
+            "url": "/asset-preview.html?asset=union-station&detail=far"
+          }
+        ]
+      },
+      "notes": "Mapped, not estimated: 228 m length, plan and bearing (73.65 deg), column positions (24 shafts, 12 m), entablature 12-19 m, wings and pavilions 17 m, the pavilions' 2.8 m copper pyramid roofs (apex 19.5 m), Great Hall walls 26.5 m and copper hip to 32.5 m, light courts, moat glass roofs. Estimated from photographs: stone colour (pale limestone toward OSM's #EEDFCC), shed roof strip pattern, column diameter (1.75 m at the base), cornice profiles, window and arch sizes and counts (14 and 13 wing bays at the 4.4 m column pitch), the great arches' 8.6 m width, lettering size, dormers, moat parapet height, and everything behind the headhouse: the 5.5 m rear range, 6.5 m shed roofs and the 7.5-10.5 m atrium vaults (OSM gives only levels), all standing at Front Street's y=0 although the real platforms lie below it. The original Bush shed's smoke ducts, the Bay/York concourse interiors, Skywalk and the surrounding towers are not modelled. The mapped outline is asymmetric about the pavilion midpoint by ~2 m and the model follows it.",
+      "documentation": "docs/assets/toronto-union-station.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

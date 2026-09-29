@@ -1,0 +1,65 @@
+{
+  "id": "ontario-legislative-building",
+  "name": "Ontario Legislative Building",
+  "kind": "building",
+  "origin": [
+    -79.391663,
+    43.662569
+  ],
+  "height": 63,
+  "padM": 125,
+  "frontageBearing": 163,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The real building stands on a rise in Queen's Park; the base is kept rigid.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, part heights and roof forms follow the ~85 OpenStreetMap building:part ways (unverified mapper heights: octagonal roof 60 m, domes 45 m, pavilions 43 m). Facade rhythm, arcades, dormer placement, the portico arch sizes, turrets, domes' profile, the north block front and every window are estimates from Wikimedia Commons photographs; no survey dimensions were found. The Legislative Building stands on a rise in Queen's Park; the model keeps a rigid flat base at y=0. Grounds, statues, the Whitney Block and the Lieutenant Governor's drive are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ontario-legislative-building-near.glb",
+      "bytes": 2602864,
+      "triangles": 51161,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -73.32121276855469,
+          -4.7683716530855236e-8,
+          -71.38491821289062
+        ],
+        "max": [
+          78.16889953613281,
+          63,
+          63.35752487182617
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ontario-legislative-building-far.glb",
+      "bytes": 419268,
+      "triangles": 9128,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -73.32121276855469,
+          -4.7683716530855236e-8,
+          -71.38491821289062
+        ],
+        "max": [
+          78.16889953613281,
+          63,
+          63.35752487182617
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/toronto/ontario-legislative-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
