@@ -1,0 +1,62 @@
+{
+  "id": "paris-louvre",
+  "name": "Palais du Louvre",
+  "origin": [
+    2.3335,
+    48.86124
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the entrance plaza plane; terrain placement belongs to the host.",
+  "orientation": "Geometry is east/up/south. Explicit volumes and open courtyards are fixed in geographic orientation.",
+  "license": "CC-BY-4.0",
+  "codeLicense": "MIT",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/paris-louvre-near.glb",
+      "bytes": 477976,
+      "triangles": 8960,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -112,
+          0,
+          -126
+        ],
+        "max": [
+          494,
+          56,
+          126
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/paris-louvre-far.glb",
+      "bytes": 29260,
+      "triangles": 504,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -112,
+          0,
+          -126
+        ],
+        "max": [
+          494,
+          56,
+          126
+        ]
+      }
+    }
+  }
+}

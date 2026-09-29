@@ -25,6 +25,7 @@ import { createOratoire } from './peregrine/landmarks/oratoire-saint-joseph-geom
 import { fitOratoire } from '../prototypes/assets3d/oratoire-saint-joseph-inspection.js';
 import { createMercier } from './peregrine/landmarks/pont-honore-mercier-geometry.js';
 import { MERCIER_UPSTREAM } from './peregrine/landmarks/pont-honore-mercier-profile.js';
+import { createLouvre, createPalaisGarnier, createGrandPalais, createPetitPalais, createMuseeOrsay } from './peregrine/landmarks/paris-palaces-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
 document.body.classList.toggle('embedded', params.get('embed') === '1');
@@ -51,6 +52,11 @@ const creators = {
   'tour-de-l-horloge': createTourDeLHorloge,
   'oratoire-saint-joseph': createOratoire,
   'pont-honore-mercier': createMercier,
+  'paris-louvre': createLouvre,
+  'paris-palais-garnier': createPalaisGarnier,
+  'paris-grand-palais': createGrandPalais,
+  'paris-petit-palais': createPetitPalais,
+  'paris-musee-orsay': createMuseeOrsay,
 };
 const profiles = {
   'pont-victoria': VICTORIA,
@@ -126,6 +132,18 @@ function fit() {
   if (entry?.id==='pont-honore-mercier' && view==='overview' && !front) {
     const q=profile.bridgePoint(profile.BRIDGE_LENGTH/2);
     camera.position.copy(center).addScaledVector(new THREE.Vector3(-q.tz,0.52,q.tx).normalize(),distance*0.78);
+  }
+  if (entry?.id?.startsWith('paris-')) {
+    const views={
+      'paris-louvre':{overview:[[-450,290,490],[180,14,0]],facade:[[70,65,210],[95,18,105]],roof:[[80,550,220],[180,12,0]]},
+      'paris-palais-garnier':{overview:[[120,110,215],[0,25,0]],facade:[[0,38,180],[0,23,38]],roof:[[90,180,105],[0,32,0]]},
+      'paris-grand-palais':{overview:[[210,125,250],[0,25,0]],facade:[[205,43,70],[0,22,0]],roof:[[90,240,150],[0,28,0]]},
+      'paris-petit-palais':{overview:[[130,100,125],[0,17,0]],facade:[[-190,45,0],[-35,18,0]],roof:[[75,160,85],[0,15,0]]},
+      'paris-musee-orsay':{overview:[[165,105,-190],[0,20,0]],facade:[[35,45,-170],[0,18,-26]],roof:[[130,175,-75],[0,24,0]]},
+    };
+    const [eye,target]=(views[entry.id]||{})[front?'facade':view]||views[entry.id].overview;
+    camera.position.set(...eye);controls.target.set(...target);
+    camera.near=.2;camera.far=3000;camera.updateProjectionMatrix();
   }
   controls.update();
 }

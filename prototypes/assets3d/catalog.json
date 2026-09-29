@@ -920,6 +920,256 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-louvre",
+      "name": "Palais du Louvre",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Historic wings and pavilions around the Cour Carrée and Cour Napoléon; contemporary pyramid excluded.",
+      "manifest": "/models/buildings/paris-louvre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
+        "build": "pnpm build:paris-palaces",
+        "provenance": "Original procedural geometry commissioned by Codriver, 2026-09-29. Primary institutional references interpreted without reproducing photographs or plans. Coordinates and plan approximations use OpenStreetMap contributors, ODbL 1.0. No third-party meshes, photos or textures shipped.",
+        "references": [
+          {
+            "label": "Louvre press office · 3 km total facade",
+            "url": "https://presse.louvre.fr/le-musee-du-louvre-1063000201419/?lang=fr"
+          },
+          {
+            "label": "OpenStreetMap geographic-data notice",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-louvre&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-louvre&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-louvre&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-louvre&view=roof"
+          }
+        ]
+      },
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export.",
+      "documentation": "docs/assets/paris-louvre.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-palais-garnier",
+      "name": "Palais Garnier",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "South colonnade, auditorium dome, northern fly tower and gilded roof silhouettes.",
+      "manifest": "/models/buildings/paris-palais-garnier.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
+        "build": "pnpm build:paris-palaces",
+        "provenance": "Original procedural geometry commissioned by Codriver, 2026-09-29. Primary institutional references interpreted without reproducing photographs or plans. Coordinates and plan approximations use OpenStreetMap contributors, ODbL 1.0. No third-party meshes, photos or textures shipped.",
+        "references": [
+          {
+            "label": "Paris Opera · Palais Garnier",
+            "url": "https://www.operadeparis.fr/apropos/theatres-et-ateliers/palais-garnier"
+          },
+          {
+            "label": "OpenStreetMap geographic-data notice",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-palais-garnier&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-palais-garnier&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-palais-garnier&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-palais-garnier&view=roof"
+          }
+        ]
+      },
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export.",
+      "documentation": "docs/assets/paris-palais-garnier.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-grand-palais",
+      "name": "Grand Palais",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Glazed barrel nave, crossing dome, ribs and stone facades.",
+      "manifest": "/models/buildings/paris-grand-palais.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
+        "build": "pnpm build:paris-palaces",
+        "provenance": "Original procedural geometry commissioned by Codriver, 2026-09-29. Primary institutional references interpreted without reproducing photographs or plans. Coordinates and plan approximations use OpenStreetMap contributors, ODbL 1.0. No third-party meshes, photos or textures shipped.",
+        "references": [
+          {
+            "label": "Grand Palais · 200 m nave",
+            "url": "https://www.grandpalais.fr/sites/default/files/2025-02/BROCHURE-LOCATION-GRAND-PALAIS-24-25.pdf"
+          },
+          {
+            "label": "OpenStreetMap geographic-data notice",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-grand-palais&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-grand-palais&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-grand-palais&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-grand-palais&view=roof"
+          }
+        ]
+      },
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export.",
+      "documentation": "docs/assets/paris-grand-palais.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-petit-palais",
+      "name": "Petit Palais",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "West entrance arch, dome, colonnaded wings and curved open courtyard.",
+      "manifest": "/models/buildings/paris-petit-palais.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
+        "build": "pnpm build:paris-palaces",
+        "provenance": "Original procedural geometry commissioned by Codriver, 2026-09-29. Primary institutional references interpreted without reproducing photographs or plans. Coordinates and plan approximations use OpenStreetMap contributors, ODbL 1.0. No third-party meshes, photos or textures shipped.",
+        "references": [
+          {
+            "label": "Paris Musées · 125 m facade",
+            "url": "https://parismusees.paris.fr/en/node/5829"
+          },
+          {
+            "label": "OpenStreetMap geographic-data notice",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-petit-palais&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-petit-palais&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-petit-palais&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-petit-palais&view=roof"
+          }
+        ]
+      },
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export.",
+      "documentation": "docs/assets/paris-petit-palais.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "paris-musee-orsay",
+      "name": "Musée d’Orsay",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Long former-station volume, glazed curved roof, clock bays and Seine facade.",
+      "manifest": "/models/buildings/paris-musee-orsay.json",
+      "source": {
+        "path": "src/peregrine/landmarks/paris-palaces-geometry.js",
+        "build": "pnpm build:paris-palaces",
+        "provenance": "Original procedural geometry commissioned by Codriver, 2026-09-29. Primary institutional references interpreted without reproducing photographs or plans. Coordinates and plan approximations use OpenStreetMap contributors, ODbL 1.0. No third-party meshes, photos or textures shipped.",
+        "references": [
+          {
+            "label": "Musée d’Orsay · architecture",
+            "url": "https://www.musee-orsay.fr/en/node/385/architecture"
+          },
+          {
+            "label": "OpenStreetMap geographic-data notice",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=paris-musee-orsay&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=paris-musee-orsay&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=paris-musee-orsay&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=paris-musee-orsay&view=roof"
+          }
+        ]
+      },
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export.",
+      "documentation": "docs/assets/paris-musee-orsay.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
