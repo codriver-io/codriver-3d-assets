@@ -3,6 +3,7 @@
 // MIT source; exported models are CC BY 4.0. Geographic placement © OSM contributors, ODbL.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
+import { architecture } from './paris-architecture.js';
 
 export const PARIS_PALACES = Object.freeze({
   'paris-louvre': {name:'Palais du Louvre',origin:[2.3335,48.86124],radius:490,
@@ -35,9 +36,9 @@ function builder(id,detail) {
   const cyl=(mat,x,y,z,r,h,sides=detail==='near'?16:10)=>{const g=new THREE.CylinderGeometry(r,r,h,sides,1);g.translate(x,y,z);put(g,mat);};
   const dome=(mat,x,y,z,r,h,segments=detail==='near'?20:12)=>{const g=new THREE.SphereGeometry(r,segments,Math.max(5,segments/2),0,Math.PI*2,0,Math.PI/2);
     g.scale(1,h/r,1);g.translate(x,y,z);put(g,mat);};
-  const barrel=(mat,axis,length,r,base)=>{
+  const barrel=(mat,axis,length,r,base,rise=r)=>{
     const steps=detail==='near'?28:14,arr=[];
-    const point=(t,s)=>axis==='z'?[r*Math.cos(t),base+r*Math.sin(t),s]:[s,base+r*Math.sin(t),r*Math.cos(t)];
+    const point=(t,s)=>axis==='z'?[r*Math.cos(t),base+rise*Math.sin(t),s]:[s,base+rise*Math.sin(t),r*Math.cos(t)];
     for(let i=0;i<steps;i++){
       const a=Math.PI*i/steps,c=Math.PI*(i+1)/steps;
       const p=point(a,-length/2),q=point(a,length/2),u=point(c,-length/2),v=point(c,length/2);
@@ -66,11 +67,11 @@ function builder(id,detail) {
       const material=new THREE.MeshStandardMaterial({color:COLORS[name],roughness:name==='glass'?.43:.86,metalness:['iron','gold'].includes(name)?.34:0,side:THREE.DoubleSide});material.name=name;
       const mesh=new THREE.Mesh(geometry,material);mesh.name=`${id}-${name}`;root.add(mesh);}
     return root;};
-  return {root,put,box,bar,cyl,dome,barrel,roof,arcade,windows,finish};
+  return {root,put,box,bar,cyl,dome,barrel,roof,arcade,windows,finish,a:architecture(put,detail==='near')};
 }
 
 function louvre(b,detail){
-  const {box,roof,windows,cyl,dome,arcade}=b;
+  const {box,roof,windows,cyl,dome,arcade,a}=b;
   // Westward U wings and east Cour Carrée. Every court remains physically open.
   const wing=(x,z,w,d,h=22)=>{box('stone',x,h/2,z,w,h,d);roof('roof',x,z,w,d,h,h+7,'x');windows(x-w/2+5,x+w/2-5,z+(z>0?d/2:-d/2),6,2,detail==='near'?9:14,4);};
   wing(135,-105,450,25);wing(135,105,450,25); // cour Napoléon wings
@@ -80,48 +81,95 @@ function louvre(b,detail){
   box('stone',477,12,0,25,24,210);roof('roof',477,0,25,210,24,32,'z');
   box('stone',332,12,0,25,24,210);roof('roof',332,0,25,210,24,32,'z');
   for(const [x,z] of [[-85,-105],[-85,105],[332,-105],[332,105],[477,-105],[477,105]]){
-    box('stoneDark',x,14,z,33,28,34);roof('roof',x,z,34,34,28,41,'x');
+    box('stoneDark',x,14,z,33,28,34);a.mansard('roof',x,28,z,34,34,13);
     if(detail==='near'){for(const q of [-11,0,11])box('shadow',x+q,15,z+17,5,8,.2);}
   }
   // Pavillon Sully center of eastern range; Louvre landmark silhouette.
-  box('stoneDark',332,18,0,44,36,40);cyl('stone',332,39,0,17,9);dome('roof',332,43,0,18,13);
+  box('stoneDark',332,18,0,44,36,40);a.mansard('roof',332,36,0,44,40,18);
+  box('stone',332,42,-20,16,12,2);a.clock(332,43,-21.2,2.1,{yaw:Math.PI});
   // West end porticoes frame court but retain broad central opening.
   box('stone',-100,12,-105,24,24,42);box('stone',-100,12,105,24,24,42);roof('roof',-100,-105,24,42,24,33,'z');roof('roof',-100,105,24,42,24,33,'z');
+  // Recessed bays, projecting orders and dormers on both long elevations.
+  for(const z of [-117.7,-92.3,92.3,117.7]){
+    const yaw=z===-117.7||z===92.3?Math.PI:0;
+    for(let x=-70;x<470;x+=detail==='near'?8:16){
+      for(const y of [2,12])a.window(x,y,z,3.2,7,{yaw,glass:'shadow',stone:'stoneDark',arched:y===2});
+      if(detail==='near'){
+        a.column('stone',x+3.3,10,z,.3,10,6);
+        box('stone',x,26,z*.96,3.4,5,1.8);a.mansard('roof',x,28.5,z*.96,4.2,3,2);
+      }
+    }
+    for(const y of [10.5,21.7])box('stoneDark',197,y,z,542,.6,.6);
+  }
+  // East colonnade remains an open screen in front of the wall.
+  for(let z=-88;z<89;z+=detail==='near'?6:12)for(const dz of [-.8,.8])a.column('stone',490.3,10,z+dz,.5,12,detail==='near'?8:6);
+  for(const z of [-62,62])box('stone',490.3,23,z,3,2,115);
   if(detail==='near'){arcade(350,455,-92,1,11,7);arcade(350,455,92,1,11,7,false);}
 }
 
-function garnier(b,detail){const {box,roof,windows,cyl,dome,bar,arcade}=b;
-  // Front faces south (+Z). 155m north-south, east and west pavilions widen to ~101m.
+function garnier(b,detail){const {box,roof,cyl,bar,a}=b,near=detail==='near';
   box('stone',0,13,42,75,26,31);box('stone',0,16,-9,66,32,85);box('stone',0,16,-62,78,32,25);
-  for(const x of [-44,44]){box('stone',x,13,13,19,26,45);roof('roof',x,13,20,45,26,35,'z');}
-  arcade(-35,35,59,2,17,7);box('stoneDark',0,31,56,76,7,10);
-  for(const x of [-31,31]){box('stoneDark',x,28,52,12,19,11);roof('roof',x,52,14,12,38,46,'z');}
-  cyl('stoneDark',0,33,1,27,9);dome('roof',0,38,1,27,23);
-  // Tall north fly tower and profile above the auditorium.
-  box('stoneDark',0,34,-53,55,40,37);roof('roof',0,-53,59,39,54,66,'z');
-  if(detail==='near'){
-    windows(-33,33,57,9,2,7,6);windows(-29,29,-74,8,3,8,5);
-    for(const x of [-35,-20,0,20,35]){bar('gold',[x,37,60],[x,44,60],.72);dome('gold',x,44,60,2.8,3,8);}
-    for(const x of [-43,43]){bar('gold',[x,36,38],[x,46,38],.8);dome('gold',x,46,38,3,3,8);}
-  }else{for(const x of [-35,0,35])bar('gold',[x,37,60],[x,43,60],1.2);}
+  for(const x of [-38,38]){
+    cyl('stone',x,13,9,12,26);a.dome('roofLight',x,26,9,12,9);
+    for(let i=0;i<12;i++){const t=i*Math.PI/6;a.window(x+12.1*Math.sin(t),6,9+12.1*Math.cos(t),3,12,{yaw:t,glass:'shadow',stone:'stoneDark'});}
+  }
+  // Seven entrance arcades; paired Corinthian upper order and recessed loggia.
+  for(let i=0;i<7;i++){
+    const x=-25.5+i*8.5;
+    a.window(x,1,57.7,5,10,{glass:'shadow',stone:'stoneDark'});
+    a.window(x,15,57.7,4.7,11,{glass:'shadow',stone:'stoneDark'});
+    for(const dx of [-3.05,3.05])a.column('stone',x+dx,13.7,60,.65,13.7);
+    if(near){a.balustrade('stone',x,12,60,6);a.clock(x,30.5,58.8,1.1,{face:'gold',rim:'stone',hands:'gold'});}
+  }
+  for(const y of [12,27.7,29,33.5])box('stoneDark',0,y,59,77,.8,3);
+  for(const x of [-34,34]){
+    box('stone',x,21,58,10,19,5);a.mansard('roof',x,35,52,14,15,6);
+    a.window(x,3,61,5,9,{glass:'shadow',stone:'stoneDark'});
+    box('gold',x,24,61,6,.5,.1);
+  }
+  cyl('stoneDark',0,33,1,25,7);a.dome('roofLight',0,36.5,1,25,17,{ribs:near?24:12,ribMaterial:'iron'});
+  box('stone',0,41,-53,55,26,37);roof('roof',0,-53,59,39,54,66,'x');
+  // Apollo/lyre at the high fly tower and winged roof groups at the front ends.
+  for(const [x,y,z] of [[-34,37,56],[34,37,56],[0,66,-53]]){
+    bar('gold',[x,y,z],[x,y+5,z],.52);cyl('gold',x,y+5.5,z,.58,1.1,8);
+    for(const side of [-1,1]){bar('gold',[x,y+3.5,z],[x+side*2.7,y+5.4,z],.26);bar('gold',[x+side*2.7,y+5.4,z],[x+side*3.3,y+7,z],.18);}
+  }
+  for(const side of [-1,1])for(let z=-66;z<45;z+=near?8:16)for(const y of [4,18])a.window(side*33.2,y,z,3.8,9,{yaw:side*Math.PI/2,glass:'shadow',stone:'stoneDark'});
+  for(let i=0;i<6;i++)box('stone',0,(6-i)*.14,59+i*.8,77,(6-i)*.28,.9);
 }
 
-function grand(b,detail){const {box,bar,cyl,dome,barrel,arcade}=b;
-  // The 200m nave runs north/south; both glass barrel shoulders remain legible.
-  box('stone',0,12,0,108,24,202);box('stoneDark',0,25,0,88,4,202);
-  box('stone',0,14,0,142,28,40); // crossing side volumes
-  // Half-cylinder glass vault over the nave, ribs separately batched.
-  barrel('glass','z',190,36,28);
-  const ribCount=detail==='near'?26:10;for(let i=0;i<=ribCount;i++){const z=-94+188*i/ribCount;
-    for(let j=0;j<(detail==='near'?12:6);j++){const a=Math.PI*j/(detail==='near'?12:6),c=Math.PI*(j+1)/(detail==='near'?12:6);
-      bar('iron',[36*Math.cos(a),28+36*Math.sin(a),z],[36*Math.cos(c),28+36*Math.sin(c),z],detail==='near'?.4:.65,5);}}
-  cyl('iron',0,47,0,24,5);dome('glass',0,50,0,25,18);
-  for(const z of [-82,82]){box('stoneDark',0,27,z,112,10,22);arcade(-51,51,z+(z>0?12:-12),1,18,8,z>0);}
-  // Winston Churchill entrance, west/east facade rhythm.
-  if(detail==='near')for(const x of [-67,67])for(let k=-8;k<=8;k++)box('stoneDark',x,11,k*11,2,22,2);
+function grand(b,detail){const {box,bar,cyl,barrel,a}=b,near=detail==='near';
+  // 200m long nave / 50m clear width; low shoulders and a taller crossing.
+  // Vertical exterior envelope is a photograph estimate, not interior clear height.
+  for(const x of [-41,41])box('stone',x,11,0,24,22,202);
+  for(const z of [-93,93])box('stone',0,12,z,108,24,18);
+  box('stone',0,11,0,142,22,36);
+  barrel('glass','z',184,25,22,18);
+  const ribs=near?32:14,n=near?20:10;
+  for(let i=0;i<=ribs;i++){
+    const z=-92+184*i/ribs;
+    for(let j=0;j<n;j++){const t=Math.PI*j/n,q=Math.PI*(j+1)/n;bar('iron',[25*Math.cos(t),22+18*Math.sin(t),z],[25*Math.cos(q),22+18*Math.sin(q),z],near?.22:.35);}
+  }
+  for(let j=1;j<12;j++){const t=Math.PI*j/12;bar('iron',[25*Math.cos(t),22+18*Math.sin(t),-92],[25*Math.cos(t),22+18*Math.sin(t),92],.15);}
+  cyl('iron',0,35,0,17,4);a.dome('glass',0,37,0,18,12,{ribs:near?24:12,ribMaterial:'iron'});
+  cyl('iron',0,51,0,2,5);bar('iron',[0,53.5,0],[0,58,0],.18);
+  for(const side of [-1,1]){
+    const x=side*54.1,yaw=side*Math.PI/2;
+    for(let z=-82;z<=82;z+=near?8:16){
+      a.window(x,3,z,4.5,13,{yaw,glass:'shadow',stone:'stoneDark'});
+      a.column('stone',x+side*.8,1,z+3.3,.6,18);
+    }
+    for(const y of [2,19.5,22])box('stoneDark',x,y,0,2,.6,190);
+    a.balustrade('stone',x,22,0,187,Math.PI/2);
+    // Projecting central entrance order and pediment.
+    for(const z of [-12,-6,6,12])a.column('stone',side*72,0,z,1,20);
+    box('stone',side*71,21,0,4,2,34);
+    const g=new THREE.ConeGeometry(17,7,4);g.rotateY(Math.PI/4);g.scale(.13,1,1);a.place(g,'stone',side*71,25,0);
+  }
+  for(const z of [-94,94])for(let x=-42;x<=42;x+=near?8.4:16.8)a.window(x,3,z+(z>0?9.1:-9.1),4.5,15,{yaw:z>0?0:Math.PI,glass:'shadow',stone:'stoneDark'});
 }
 
-function petit(b,detail){const {box,roof,bar,cyl,dome,arcade}=b;
+function petit(b,detail){const {box,roof,bar,cyl,dome,arcade,a}=b;
   // Entrance faces west (-X); 125m historic frontage and open courtyard east.
   box('stone',-36,13,-39,25,26,47);box('stone',-36,13,39,25,26,47);
   box('stone',-36,23,0,25,6,31);roof('roof',-36,0,25,125,26,34,'z');
@@ -132,7 +180,7 @@ function petit(b,detail){const {box,roof,bar,cyl,dome,arcade}=b;
     cyl('stone',x,7,z,detail==='near'?.85:1.2,14,7);
     if(i>0){const p=-Math.PI/2+Math.PI*(i-1)/12;bar('stoneDark',[16+37*Math.cos(p),15,37*Math.sin(p)],[x,15,z],1.1,5);}}
   for(const z of [-12,12])box('stoneDark',-50,20,z,10,40,3);
-  box('stoneDark',-50,35,0,10,10,27);cyl('stone',-50,42,0,17,5);dome('roofLight',-50,44,0,17,11);
+  box('stoneDark',-50,35,0,10,10,27);cyl('stone',-43,37,0,14,3);a.dome('roofLight',-43,38.5,0,14,9,{ribs:detail==='near'?16:8,ribMaterial:'iron'});
   // West entrance arch, two jambs and open center. Pediment and gilded gate.
   box('stone',-56,8,-12,2,16,3);box('stone',-56,8,12,2,16,3);
   const n=detail==='near'?12:6;for(let i=0;i<n;i++){
@@ -141,24 +189,43 @@ function petit(b,detail){const {box,roof,bar,cyl,dome,arcade}=b;
   }
   if(detail==='near'){for(let z=-58;z<=58;z+=7)box('stoneDark',-49.2,11,z,0.14,9,3.1);
     for(const z of [-54,54]){cyl('stoneDark',-37,28,z,7,5);dome('roofLight',-37,30,z,7,5);}}
+  for(const z of [-55,-47,-39,-31,31,39,47,55]){
+    a.window(-48.7,5,z,4.6,13,{yaw:-Math.PI/2,glass:'shadow',stone:'stoneDark'});
+    a.column('stone',-50,3,z+3.2,.65,18);
+  }
+  for(const z of [-60,60])for(let x=-26;x<40;x+=detail==='near'?8:16)a.window(x,4,z,4.3,12,{yaw:z>0?0:Math.PI,glass:'shadow',stone:'stoneDark'});
+  for(const z of [-42,42])a.balustrade('stone',-49.3,26,z,37,Math.PI/2);
+  if(detail==='near')for(let z=-10;z<=10;z+=.65)bar('gold',[-56.5,1,z],[-56.5,15+10*Math.sqrt(1-(z/12)**2),z],.055);
   arcade(-20,40,-39,1,9,7);arcade(-20,40,39,1,9,7,false);
 }
 
-function orsay(b,detail){const {box,roof,bar,cyl,dome,barrel,arcade}=b;
-  // Long east-west former station; north/Seine side is -Z. Stone outer wings and iron vault.
-  box('stone',0,13,-31,175,26,19);box('stone',0,13,31,175,26,19);
-  box('stone',-94,18,0,27,36,85);box('stone',94,18,0,27,36,85);
-  roof('roof',0,-31,175,20,26,34,'x');roof('roof',0,31,175,20,26,34,'x');
-  barrel('glass','x',175,31,25);
-  const n=detail==='near'?24:9;for(let i=0;i<=n;i++){const x=-87+174*i/n;
-    for(let j=0;j<10;j++){const a=Math.PI*j/10,c=Math.PI*(j+1)/10;
-      bar('iron',[x,25+31*Math.sin(a),31*Math.cos(a)],[x,25+31*Math.sin(c),31*Math.cos(c)],detail==='near'?.35:.65,5);}}
-  for(const x of [-94,94]){box('stoneDark',x,31,-41,28,14,8);cyl('clock',x,37,-45,8,1,20);
-    // Dial plane oriented to river, with visible hands and rim.
-    if(detail==='near'){bar('iron',[x,37,-46],[x+5,40,-46],.45);bar('iron',[x,37,-46],[x-1,43,-46],.35);}
-    roof('roof',x,0,29,85,36,44,'z');}
-  arcade(-78,78,-41,2,12,8,false);
-  if(detail==='near')for(const x of [-66,-44,-22,0,22,44,66])box('shadow',x,17,-41.3,5,10,.15);
+function orsay(b,detail){const {box,roof,bar,barrel,a}=b,near=detail==='near';
+  // Official hall: 138 x 40 x 32m. The stone hotel envelope surrounds it.
+  box('stone',0,11,-31,175,22,19);box('stone',0,11,31,175,22,19);
+  box('stone',-94,15,0,27,30,85);box('stone',94,15,0,27,30,85);
+  a.mansard('roof',0,22,-31,175,20,10);a.mansard('roof',0,22,31,175,20,10);
+  barrel('glass','x',138,20,20,12);
+  for(let i=0;i<=(near?28:12);i++){
+    const x=-69+138*i/(near?28:12),n=near?16:8;
+    for(let j=0;j<n;j++){const t=Math.PI*j/n,q=Math.PI*(j+1)/n;bar('iron',[x,20+12*Math.sin(t),20*Math.cos(t)],[x,20+12*Math.sin(q),20*Math.cos(q)],near?.16:.28);}
+  }
+  for(let j=1;j<10;j++){const t=Math.PI*j/10;bar('iron',[-69,20+12*Math.sin(t),20*Math.cos(t)],[69,20+12*Math.sin(t),20*Math.cos(t)],.12);}
+  for(const x of [-94,94])a.mansard('roof',x,30,0,29,85,10);
+  for(const side of [-1,1]){
+    const z=side*40.7,yaw=side>0?0:Math.PI;
+    for(let x=-76;x<=76;x+=near?7.6:15.2){
+      a.window(x,1,z,4.5,10,{yaw,glass:'shadow',stone:'stoneDark'});
+      a.window(x,13,z,3.4,6.5,{yaw,glass:'shadow',stone:'stoneDark',arched:false});
+      if(near){box('stone',x,25,z*.94,3.8,5,1.7);a.mansard('roof',x,27.5,z*.94,4.6,3,2.5);}
+    }
+    for(const y of [11.8,21.5])box('stoneDark',0,y,z,180,.65,.8);
+    // The Seine-facing monumental dials stand vertically in two roof pavilions.
+    if(side===-1)for(const x of [-61,61]){
+      box('stone',x,26,-40.8,16,14,4);a.clock(x,27,-43,4.3,{yaw:Math.PI});
+      a.mansard('roof',x,33,-39,19,8,4);
+    }
+  }
+  for(const side of [-1,1])for(let z=-30;z<=30;z+=near?7.5:15)for(const y of [2,14])a.window(side*107.7,y,z,4,9,{yaw:side*Math.PI/2,glass:'shadow',stone:'stoneDark'});
 }
 
 const makers={'paris-louvre':louvre,'paris-palais-garnier':garnier,'paris-grand-palais':grand,'paris-petit-palais':petit,'paris-musee-orsay':orsay};

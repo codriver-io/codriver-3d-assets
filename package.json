@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Open Montréal landmark models, procedural Three.js source and a public 3D library.",
+  "description": "Open Montr\u00e9al landmark models, procedural Three.js source and a public 3D library.",
   "license": "MIT",
   "engines": {
     "node": ">=22"
@@ -12,7 +12,7 @@
   "scripts": {
     "build": "node scripts/build-asset-catalog.mjs",
     "dev": "node scripts/serve.mjs",
-    "check": "node scripts/check.mjs && pnpm check:contributions && node --test scripts/license-models.test.mjs",
+    "check": "node scripts/check.mjs && pnpm check:contributions && node --test scripts/license-models.test.mjs && pnpm test:geometry",
     "models:build": "node scripts/build-all.mjs",
     "models:license": "node scripts/license-models.mjs",
     "deploy": "pnpm build && wrangler pages deploy dist --project-name codriver-3d-assets --branch main",
@@ -33,7 +33,8 @@
     "build:paris-palaces": "node scripts/build-paris-palaces.mjs",
     "test:browser": "node scripts/test-browser.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",
-    "build:paris-historic": "node scripts/build-paris-historic.mjs"
+    "build:paris-historic": "node scripts/build-paris-historic.mjs",
+    "test:geometry": "node --test src/peregrine/landmarks/paris-fidelity.test.js"
   },
   "dependencies": {
     "three": "0.170.0"

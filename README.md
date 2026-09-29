@@ -34,11 +34,11 @@ model represents the architectural structure without its illumination show.
 
 *Biosphère de Montréal: inspect, compare detail levels and download the model.*
 
-![Tour Eiffel near GLB in the model inspector](docs/screenshots/paris-icons/paris-tour-eiffel-near-glb-facade.png)
+![Tour Eiffel near GLB in the model inspector](docs/screenshots/paris-refinement/paris-tour-eiffel.png)
 
 *Tour Eiffel: original procedural structure and an exported near-detail GLB.*
 
-![Pont de Bir-Hakeim near GLB showing its two levels](docs/images/paris-pont-bir-hakeim-overview-glb-near-day.png)
+![Pont de Bir-Hakeim near GLB showing its two levels](docs/screenshots/paris-refinement/paris-pont-bir-hakeim-roof-or-structure.png)
 
 *Pont de Bir-Hakeim: road deck and elevated Métro structure.*
 
@@ -133,3 +133,7 @@ pnpm deploy
 This uses direct upload to the `codriver-3d-assets` Pages project. GitHub stores
 the public source; publishing a source commit alone does not deploy Pages.
 No credentials are stored in this repository.
+
+### Paris street-level revision
+
+The 20 Paris models now include more accurate primary proportions, architectural openings, differentiated roofs and bridge supports. [Review the changes and remaining approximations](docs/paris-street-level-refinement.md). The `/paris-refinement.html` comparison in a built library shows the original release beside this revision. Sculpture and lettering remain simplified; host app and terrain validation are separate.

@@ -7,3 +7,11 @@ Origin [2.3499095, 48.8529723] is the computed centroid of [OSM way 201611261](h
 Build: `pnpm build:paris-icons`. [Inspect source and GLBs](/asset-preview.html?asset=paris-notre-dame), including roof and opposite facade; measured costs are in `public/models/buildings/paris-notre-dame.json`. Host Cityscape: not tested here. Host Full 3D world: not tested here. Hardware timing is unmeasured.
 
 Visual comparison: [Wikimedia west-façade photograph](https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg), supplemented by the cathedral's current spire information. No reference pixels are redistributed. [GLB façade](../../docs/screenshots/paris-icons/paris-notre-dame-near-glb-facade.png) · [source façade](../../docs/screenshots/paris-icons/paris-notre-dame-near-source-facade.png) · [far roof/night](../../docs/screenshots/paris-icons/paris-notre-dame-far-glb-roof-night.png).
+
+## Street-level revision — 29 September 2026
+
+43.5 m west facade, 9.7 m west rose, 13.1 m transept roses, open belfries, narrower nave and two tiers of flying buttresses.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-notre-dame.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-notre-dame-roof-or-structure.png).

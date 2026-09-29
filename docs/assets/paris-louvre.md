@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 477,976 bytes · 8,960 triangles · 4 draws |
-| Far | 29,260 bytes · 504 triangles · 3 draws |
+| Near | 6,609,148 bytes · 130,534 triangles · 6 draws |
+| Far | 1,440,328 bytes · 25,878 triangles · 6 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-louvre&view=facade), [far, roof](/asset-preview.html?asset=paris-louvre&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-louvre). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -33,3 +33,11 @@ These are local Chromium/SwiftShader inspection captures, not images of the driv
 ## Placement status
 
 Cityscape: **not tested in the public library**; app integration is assessed separately. Full 3D world: **not tested in the public library**; the library viewer has no terrain sampler. No Tesla hardware cost is claimed. The model is exterior only.
+
+## Street-level revision — 29 September 2026
+
+Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; pyramid remains excluded.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-louvre.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-louvre-roof-or-structure.png).

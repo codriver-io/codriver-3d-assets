@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 382,644 bytes · 8,072 triangles · 5 draws |
-| Far | 94,608 bytes · 1,916 triangles · 4 draws |
+| Near | 2,347,380 bytes · 60,268 triangles · 5 draws |
+| Far | 703,476 bytes · 18,106 triangles · 5 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-grand-palais&view=facade), [far, roof](/asset-preview.html?asset=paris-grand-palais&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-grand-palais). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -33,3 +33,11 @@ These are local Chromium/SwiftShader inspection captures, not images of the driv
 ## Placement status
 
 Cityscape: **not tested in the public library**; app integration is assessed separately. Full 3D world: **not tested in the public library**; the library viewer has no terrain sampler. No Tesla hardware cost is claimed. The model is exterior only.
+
+## Street-level revision — 29 September 2026
+
+Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-grand-palais.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-grand-palais-roof-or-structure.png).

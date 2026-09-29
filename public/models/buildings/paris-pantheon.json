@@ -24,13 +24,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-pantheon-near.glb",
-      "bytes": 227780,
-      "triangles": 5784,
+      "bytes": 772300,
+      "triangles": 20270,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -70.00000000000001,
-          -1.1920929132713809e-8,
+          -70.36000061035158,
+          -5.7220457705398076e-8,
           -40.000000000000014
         ],
         "max": [
@@ -42,13 +42,13 @@
     },
     "far": {
       "url": "/models/buildings/paris-pantheon-far.glb",
-      "bytes": 134892,
-      "triangles": 3056,
-      "drawCalls": 4,
+      "bytes": 340964,
+      "triangles": 8694,
+      "drawCalls": 5,
       "bounds": {
         "min": [
-          -70.00000000000001,
-          -1.1920929132713809e-8,
+          -70.36000061035158,
+          -5.7220457705398076e-8,
           -40.000000000000014
         ],
         "max": [

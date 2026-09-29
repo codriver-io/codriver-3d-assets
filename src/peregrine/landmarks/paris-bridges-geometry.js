@@ -16,7 +16,7 @@ export const PARIS_BRIDGES = [
     profile: flat },
   { id: 'paris-pont-bir-hakeim', name: 'Pont de Bir-Hakeim', modelDir: 'bridges', terrainPolicy: 'bank-fit', origin: origin(2.28758, 48.85567),
     centerline: [[2.2866942, 48.8565888], [2.2876375, 48.8555794], [2.2884719, 48.8548030]], width: 25, deck: 7.2,
-    roadEdges: [[-11.2, -3.4], [3.4, 11.2]], railGap: 3.3, arches: [2, 1], style: 'bir-hakeim', structuralLength: 237,
+    roadEdges: [[-11.2, -3.4], [3.4, 11.2]], railGap: 3.3, arches: [3, 3], style: 'bir-hakeim', structuralLength: 237,
     profile: flat },
   { id: 'paris-pont-neuf', name: 'Pont Neuf', modelDir: 'bridges', terrainPolicy: 'bank-fit', origin: origin(2.34145, 48.85730),
     centerline: [[2.3405456, 48.8562229], [2.3410051, 48.8567498], [2.3414203, 48.8572051], [2.3423794, 48.8583786]], width: 21, deck: 7.8,
@@ -62,6 +62,17 @@ export function metricFrame(spec) {
   return { nodes, length, point, height };
 }
 
+export function parisBridgeSpans(spec, frame=metricFrame(spec)) {
+  const out=[];
+  const add=(a,b,weights)=>{const sum=weights.reduce((v,w)=>v+w,0);let s=a;for(const w of weights){const end=s+(b-a)*w/sum;out.push([s,end]);s=end;}};
+  if(spec.style==='bir-hakeim'){
+    const island=frame.nodes[1].s;add(0,island-9,[30,54,30]);add(island+9,frame.length,[24,42,24]);
+  }else if(spec.style==='neuf'){
+    add(frame.nodes[0].s,frame.nodes[1].s,[1,1,1,1,1]);add(frame.nodes[2].s,frame.nodes[3].s,[1,1,1,1,1,1,1]);
+  }else if(spec.style==='iena'||spec.style==='concorde')add(0,frame.length,[1,1,1,1,1]);
+  return out;
+}
+
 export function createParisBridge(specOrId, { detail = 'near' } = {}) {
   const spec = typeof specOrId === 'string' ? PARIS_BRIDGES.find(v => v.id === specOrId) : specOrId;
   if (!spec) throw new Error('Unknown Paris bridge');
@@ -98,61 +109,136 @@ export function createParisBridge(specOrId, { detail = 'near' } = {}) {
   }
   // Arch spandrels are open beneath the deck; there is no opaque wall over
   // the river. Each pier is independent for host-side terrain support fitting.
-  function arch(s0, s1, d, rise, mat = 'stone') {
+  function arch(s0, s1, d, rise, mat = 'stone', width = 1.1) {
     const n = near ? 20 : 10, positions = [], indices = [];
     for (let i = 0; i <= n; i++) {
       const s = s0 + (s1 - s0) * i / n, t = i / n;
-      const crown = 1.2 + rise * Math.sqrt(Math.max(0, 1 - (2 * t - 1) ** 2));
       const top = f.height(s) - .55;
-      for (const dd of [d - .55, d + .55]) for (const y of [crown, top]) positions.push(...f.point(s, dd, y));
+      const crown = Math.min(top-.35, 1.2 + rise * Math.sqrt(Math.max(0, 1 - (2 * t - 1) ** 2)));
+      for (const dd of [d - width/2, d + width/2]) for (const y of [crown, top]) positions.push(...f.point(s, dd, y));
       if (!i) continue; const a = (i - 1) * 4, b = i * 4;
-      for (const k of [0, 2]) indices.push(a + k, b + k, a + k + 1, a + k + 1, b + k, b + k + 1);
-      indices.push(a, a + 2, b, a + 2, b + 2, b, a + 1, b + 1, a + 3, a + 3, b + 1, b + 3);
+      // Opposite elevations require opposite winding. The soffit faces down.
+      indices.push(a,a+1,b,a+1,b+1,b,a+2,b+2,a+3,a+3,b+2,b+3);
+      indices.push(a,b,a+2,a+2,b,b+2,a+1,a+3,b+1,a+3,b+3,b+1);
     }
+    const end=n*4;
+    indices.push(0,2,1,1,2,3,end,end+1,end+2,end+1,end+3,end+2);
     const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3)); g.setIndex(indices); g.computeVertexNormals(); add(mat, g);
+  }
+  function pier(s) {
+    const top=Math.max(.8,f.height(s)-.6),weight=y=>Math.max(0,Math.min(1,y/top));
+    box('stone',s,0,top/2,3.6,spec.width-1,top,weight);
+    for(const side of [-1,1]){
+      const g=new THREE.CylinderGeometry(1.8,2.2,top,near?16:8);
+      g.translate(...f.point(s,side*(half-.6),top/2));add('stone',g,weight);
+      box('trim',s,side*(half-.3),top-.15,4.2,3.4,.5,weight);
+    }
+  }
+  function lamp(s,d,ornate=false){
+    const y=f.height(s),h=ornate?5.4:4.2;
+    box('rail',s,d,y+.25,.55,.55,.5);
+    beam('rail',[s,d,y+.5],[s,d,y+h],.085);
+    for(const side of ornate?[-1,0,1]:[0]){
+      if(side)beam('rail',[s,d,y+h-1.3],[s+side*.8,d,y+h-.3],.07);
+      const g=new THREE.SphereGeometry(ornate?.25:.20,near?10:6,6);g.translate(...f.point(s+side*.8,d,y+h));add('trim',g);
+    }
   }
   strip('deck', 0, f.length, -half, half, -.1, .55);
   if (!spec.pedestrian) for (const [a, b] of spec.roadEdges) strip('asphalt', 0, f.length, a, b, .025);
   for (const d of [-half + .45, half - .45]) {
     strip('trim', 0, f.length, d - .4, d + .4, .16, .25);
     strip('rail', 0, f.length, d - .12, d + .12, 1.22, .18);
-    if (near) for (let s = 3; s < f.length - 2; s += 5) box('rail', s, d, f.height(s) + .68, .17, .18, 1.13);
+    const masonry=['neuf','iena','concorde'].includes(spec.style);
+    if(masonry)strip('stone',0,f.length,d-.27,d+.27,.9,.75);
+    else for(let s=2;s<f.length-2;s+=near?.8:2.5)box('rail',s,d,f.height(s)+.68,.08,.1,1.04);
+    if(near)for(let s=6;s<f.length-5;s+=spec.style==='alexandre'?12:20)lamp(s,d,spec.style==='alexandre');
   }
   if (spec.style === 'alexandre') {
     const a = 23, b = f.length - 23;
-    for (const d of [-half + 1.5, -half / 2, 0, half / 2, half - 1.5]) {
+    // Solid bank abutments receive the low steel arch. Keep their toes planted.
+    for(const [start,end] of [[0,a],[b,f.length]]){
+      const count=Math.ceil((end-start)/2);
+      for(let i=0;i<count;i++){
+        const s=start+(end-start)*(i+.5)/count,top=Math.max(.05,f.height(s)-.55);
+        box('stone',s,0,top/2,(end-start)/count+.05,spec.width-.3,top,y=>Math.max(0,Math.min(1,y/top)));
+      }
+    }
+    for (let rib=0;rib<(near?15:7);rib++) {
+      const d=-half+1.5+(spec.width-3)*rib/((near?15:7)-1);
       for (let i = 0; i < (near ? 24 : 12); i++) {
         const s = a + (b - a) * i / (near ? 24 : 12), t = a + (b - a) * (i + 1) / (near ? 24 : 12);
         const y = x => 1.5 + 3.3 * Math.sqrt(Math.max(0, 1 - ((x - (a + b) / 2) / ((b - a) / 2)) ** 2));
-        beam('steel', [s, d, y(s)], [t, d, y(t)], .32);
+        beam('steel', [s, d, y(s)], [t, d, y(t)], .24);
+        beam('steel', [s, d, y(s)+.75], [t, d, y(t)+.75], .17);
+        if(near)beam('steel',[s,d,y(s)],[t,d,y(t)+.75],.09);
         if (near && i % 2 === 0) beam('steel', [s, d, y(s)], [s, d, f.height(s) - .45], .13);
       }
     }
     for (const s of [4, f.length - 4]) for (const d of [-half + 3, half - 3]) {
-      box('stone', s, d, 8.8, 3.4, 3.4, 17, y => Math.max(0, Math.min(1, y / 8)));
-      box('trim', s, d, 17.6, 4.1, 4.1, 1.1);
+      const base=f.height(s);
+      box('stone',s,d,base+.6,4.8,4.8,1.2);
+      box('stone', s, d, base+8.8, 3.4, 3.4, 17, y => Math.max(0, Math.min(1, y / 8)));
+      box('trim', s, d, base+17.6, 4.1, 4.1, 1.1);
+      for(const yy of [2,3,15.5,16.3])box('trim',s,d,base+yy,3.9,3.9,.3);
       // Four restrained winged figures: broad gold silhouettes, no copied sculpture.
-      beam('gold', [s, d, 18], [s, d, 22.4], .48);
+      beam('gold', [s, d, base+18], [s, d, base+22.4], .48);
       for (const side of [-1, 1]) {
-        beam('gold', [s, d, 21], [s + side * 1.5, d + side * 1.6, 24.3], .3);
-        beam('gold', [s, d, 21], [s - side * 1.25, d + side * 1.7, 23.7], .2);
+        beam('gold', [s, d, base+21], [s + side * 1.5, d + side * 1.6, base+24.3], .3);
+        beam('gold', [s, d, base+21], [s - side * 1.25, d + side * 1.7, base+23.7], .2);
       }
     }
   } else {
-    const cuts = f.nodes.map(v => v.s);
-    for (let arm = 0; arm < spec.arches.length; arm++) {
-      const a = cuts[arm], b = cuts[arm + 1], count = spec.arches[arm], bay = (b - a) / count;
-      for (let i = 0; i < count; i++) {
-        const start = a + i * bay + 1.45, end = a + (i + 1) * bay - 1.45;
-        for (const d of [-half + .8, half - .8]) arch(start, end, d, spec.style === 'concorde' ? 3.2 : 4.7, spec.style === 'bir-hakeim' ? 'steel' : 'stone');
-        if (i) {
-          const s = a + i * bay;
-          for (const d of [-half + 1, half - 1]) box('stone', s, d, 3.2, 3.2, 2.9, 6.4, y => Math.max(0, Math.min(1, y / 6.6)));
-          if (spec.style === 'neuf') for (const d of [-half - .25, half + .25]) box('trim', s, d, 2.2, 4.4, 2.6, 3.1, 0);
+    // Structural spans are independent of arbitrary intermediate map vertices.
+    const spans=parisBridgeSpans(spec,f),supports=new Set();
+    for(const [start,end] of spans){
+      const a=start+1.8,b=end-1.8;
+      if(spec.style==='bir-hakeim'){
+        for(const d of [-half+.8,0,half-.8]){
+          const n=near?24:12;
+          for(let i=0;i<n;i++){
+            const p=a+(b-a)*i/n,q=a+(b-a)*(i+1)/n;
+            const archY=s=>Math.min(f.height(s)-1.2,1.1+4.4*Math.sqrt(Math.max(0,1-((s-(a+b)/2)/((b-a)/2))**2)));
+            beam('steel',[p,d,archY(p)],[q,d,archY(q)],.27);
+            beam('steel',[p,d,archY(p)+.65],[q,d,archY(q)+.65],.14);
+            beam('steel',[p,d,archY(p)],[p,d,f.height(p)-.65],.10);
+          }
+        }
+      }else{
+        const rise=spec.style==='concorde'?3.2:4.7;
+        arch(a,b,0,rise,'stone',spec.width-1.1);
+        // Express the dressed arch ring on both elevations with radial joints.
+        for(const d of [-half+.5,half-.5]){
+          const n=near?26:12;
+          const y=s=>Math.min(f.height(s)-.95,1.2+rise*Math.sqrt(Math.max(0,1-((s-(a+b)/2)/((b-a)/2))**2)));
+          for(let i=0;i<n;i++){
+            const p=a+(b-a)*i/n,q=a+(b-a)*(i+1)/n;
+            beam('trim',[p,d,y(p)+.12],[q,d,y(q)+.12],.18);
+            if(near)beam('trim',[p,d,y(p)],[p+(p-(a+b)/2)*.025,d,y(p)+.65],.045);
+          }
         }
       }
+      if(start>1)supports.add(start);if(end<f.length-1)supports.add(end);
     }
+    for(const s of supports){
+      pier(s);
+      if(spec.style==='neuf')for(const sign of [-1,1]){
+        // Pont Neuf's semicircular refuges project over the masonry cutwaters.
+        const g=new THREE.CylinderGeometry(2.2,2.2,.5,near?24:12);g.translate(...f.point(s,sign*(half-.2),f.height(s)));add('stone',g);
+        for(let i=0;i<(near?16:8);i++){
+          const t=i*Math.PI/(near?16:8),q=(i+1)*Math.PI/(near?16:8);
+          beam('stone',[s+2.2*Math.cos(t),sign*(half-.2+2.2*Math.sin(t)),f.height(s)+1],[s+2.2*Math.cos(q),sign*(half-.2+2.2*Math.sin(q)),f.height(s)+1],.27);
+        }
+      }
+      if(near&&spec.style==='iena')for(const sign of [-1,1]){
+        const y=f.height(s)-1.5,d=sign*(half+.05);
+        beam('trim',[s,d,y],[s,d,y+.7],.24);
+        for(const side of [-1,1])beam('trim',[s,d,y+.5],[s+side*1.5,d,y+1.0],.17);
+      }
+    }
+    // Abutments under the approaches, with no opaque wall across the channel.
+    for(const s of [1.8,f.length-1.8])box('stone',s,0,-.45,3.6,spec.width,1.1,y=>Math.max(0,Math.min(1,y)));
   }
+
   if (spec.style === 'bir-hakeim') {
     const island = f.nodes[1].s;
     // Île aux Cygnes portico: paired side towers and an open road passage.
@@ -164,13 +250,26 @@ export function createParisBridge(specOrId, { detail = 'near' } = {}) {
     box('stone', island, 0, 15.2, 7, spec.width + 1.5, 1.5);
     strip('steel', 0, f.length, -5.3, 5.3, 9.4, .65); // elevated Métro deck only
     for (const d of [-3, 3]) strip('rail', 0, f.length, d - .055, d + .055, 9.55, .1);
-    for (let s = 8; s < f.length - 7; s += near ? 8 : 16) {
-      for (const d of [-4.6, 4.6]) {
-        beam('steel', [s, d, f.height(s) + .2], [s, d, f.height(s) + 9.2], .23);
-        beam('steel', [s, d, f.height(s) + 2.2], [s + 3, d, f.height(s) + 8.9], .13);
+    for (let s = 8; s < f.length - 7; s += 6) {
+      for (const d of [-2.65, 2.65]) {
+        beam('steel', [s, d, f.height(s) + .2], [s, d, f.height(s) + 9.2], .20);
+        box('steel',s,d,f.height(s)+.4,.7,.7,.8);box('steel',s,d,f.height(s)+8.5,.85,.85,.4);
+        for(const side of [-1,1]){
+          const n=near?6:3;for(let j=0;j<n;j++){
+            const p=t=>[s+side*2.6*t,d,f.height(s)+5.8+3.1*Math.sqrt(Math.max(0,1-(1-t)**2))];
+            beam('steel',p(j/n),p((j+1)/n),.12);
+          }
+        }
       }
-      beam('steel', [s, -4.6, f.height(s) + 9], [s, 4.6, f.height(s) + 9], .22);
+      beam('steel', [s, -2.65, f.height(s) + 9], [s, 2.65, f.height(s) + 9], .22);
     }
+  }
+  if(spec.style==='bir-hakeim')for(const d of [-5.15,5.15]){
+    strip('steel',0,f.length,d-.1,d+.1,10.8,1.7);
+    for(let s=3;s<f.length-2;s+=near?1.5:6)box('rail',s,d,f.height(s)+10.95,.14,.3,.18);
+  }
+  if(near&&spec.style==='alexandre')for(const d of [-half+.2,half-.2])for(let s=26;s<f.length-25;s+=3){
+    const y=f.height(s)-.4;beam('gold',[s-1,d,y],[s,d,y-.5],.06);beam('gold',[s,d,y-.5],[s+1,d,y],.06);
   }
   if (near && !spec.pedestrian) for (let s = 4; s < f.length - 4; s += 10) for (const [a, b] of spec.roadEdges) {
     const d = (a + b) / 2; strip('paint', s, Math.min(s + 4, f.length), d - .055, d + .055, .045);

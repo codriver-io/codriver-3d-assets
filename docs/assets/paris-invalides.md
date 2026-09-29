@@ -7,3 +7,11 @@ Origin [2.31254, 48.85505] lies at the center of [OSM church way 112452790](http
 Build: `pnpm build:paris-icons`. [Inspect source and GLBs](/asset-preview.html?asset=paris-invalides), including roof and opposite facade; measured costs are in `public/models/buildings/paris-invalides.json`. Host Cityscape: not tested here. Host Full 3D world: not tested here. Hardware timing is unmeasured.
 
 Visual comparison: [Musée de l’Armée south-façade photograph](https://www.musee-armee.fr/votre-visite/les-espaces-du-musee/dome-des-invalides-tombeau-de-napoleon-ier.html). No reference pixels are redistributed. [GLB façade](../../docs/screenshots/paris-icons/paris-invalides-near-glb-facade.png) · [source façade](../../docs/screenshots/paris-icons/paris-invalides-near-source-facade.png) · [far roof/night](../../docs/screenshots/paris-icons/paris-invalides-far-glb-roof-night.png).
+
+## Street-level revision — 29 September 2026
+
+Radial drum openings, curved gold dome ribs, column capitals, side elevations and crown cross.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-invalides.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-invalides-roof-or-structure.png).

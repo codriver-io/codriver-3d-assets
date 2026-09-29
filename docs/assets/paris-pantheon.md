@@ -12,3 +12,11 @@ Origin `[2.34607,48.84619]` is the rounded center of the OSM footprint. Local me
 | Far | 3,056 | 4 | 134,892 |
 
 Inspect [facade GLB](/asset-preview.html?asset=paris-pantheon&view=facade), [roof](/asset-preview.html?asset=paris-pantheon&view=roof), and [procedural facade](/asset-preview.html?asset=paris-pantheon&view=facade&source=procedural). [Near facade](../screenshots/paris-pantheon-near-facade.png) and [far roof/night](../screenshots/paris-pantheon-far-roof-night.png) show labeled exported views. Columns and drum rhythm remain in far detail. Facade relief, statuary and stone carving are simplified. Standalone inspection does not establish Cityscape or Full 3D world behavior.
+
+## Street-level revision — 29 September 2026
+
+Column bases/capitals, stepped portico approach, curved dome ribs, nave bays and pilasters.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pantheon.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pantheon-roof-or-structure.png).

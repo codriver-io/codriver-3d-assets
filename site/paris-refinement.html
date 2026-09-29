@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Paris · Street-level revision · Codriver 3D</title>
+  <link rel="icon" href="/codriver-helmet.svg" type="image/svg+xml">
+  <style>
+    :root{font-family:Inter,system-ui,sans-serif;color:#25483f;background:#f4f5f0}*{box-sizing:border-box}body{margin:0}a{color:inherit}header{padding:22px 4vw;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d9e1d7;gap:20px}header a{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600}header img{width:32px;height:32px}main{margin:30px 4vw}h1{font-size:clamp(28px,4vw,44px);font-weight:500;letter-spacing:-1px;margin:0 0 12px}p{line-height:1.65;color:#62746c;max-width:950px}label{display:grid;gap:7px;font-size:12px}select{font:inherit;font-size:14px;background:white;border:1px solid #cad8ca;border-radius:8px;padding:11px;max-width:100%;color:inherit}.controls{display:flex;gap:16px;flex-wrap:wrap;margin:24px 0}.controls label:first-child{min-width:240px}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{min-width:0;border:1px solid #d5dfd3;border-radius:14px;overflow:hidden;background:#dce7e6}.caption{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:14px 18px;background:#fff;font-size:14px}.caption a{font-size:12px}iframe{display:block;width:100%;height:620px;border:0}body[data-kind=bridge] iframe{height:clamp(220px,32vw,420px)}.note{font-size:13px}#changes{color:#25483f}#error{color:#a2392c}footer{margin:26px 4vw;font-size:12px;color:#718075}a:focus-visible,select:focus-visible{outline:3px solid #71a38c;outline-offset:3px}@media(max-width:850px){.comparison{grid-template-columns:1fr}iframe{height:480px}header{font-size:13px}main{margin-top:22px}.controls{gap:10px}.controls label:first-child{width:100%}}
+  </style>
+</head>
+<body>
+  <header><a href="/"><img src="/codriver-helmet.svg" alt="">codriver / 3D collection</a><a href="https://github.com/codriver-io/codriver-3d-assets/tree/gauthiergarnier/paris-landmarks">Revision source ↗</a></header>
+  <main>
+    <h1>Paris, closer to the real thing.</h1>
+    <p>Compare the first collection with the street-level revision. Look at the proportions, rooflines, openings and bridge supports. Drag to rotate either model.</p>
+    <div class="controls">
+      <label>Landmark<select id="asset" aria-label="Landmark"></select></label>
+      <label>View<select id="view"><option value="facade">Façade / bridge side</option><option value="overview">Overview</option><option value="roof">Roof / structure</option></select></label>
+      <label>Detail<select id="detail"><option value="near">Near</option><option value="far">Far</option></select></label>
+      <label>Lighting<select id="theme"><option value="day">Day</option><option value="night">Night</option></select></label>
+    </div>
+    <p id="changes" aria-live="polite"></p>
+    <div class="comparison">
+      <section class="panel"><div class="caption"><strong>First version</strong><a id="old-link" target="_blank" rel="noopener">Open viewer ↗</a></div><iframe id="before" title="First version of the selected landmark"></iframe></section>
+      <section class="panel"><div class="caption"><strong>Street-level revision</strong><a id="new-link" target="_blank" rel="noopener">Open viewer ↗</a></div><iframe id="after" title="Revised version of the selected landmark"></iframe></section>
+    </div>
+    <p id="cost" class="note"></p>
+    <p class="note">A first refinement pass, with original procedural geometry. Small sculptures, lettering and some dimensions remain approximations. The standalone views do not demonstrate placement on terrain in the driving app.</p>
+    <p id="error" role="alert"></p>
+  </main>
+  <footer>Code MIT · Models CC BY 4.0 · © 2026 Codriver · Geographic data © OpenStreetMap contributors</footer>
+  <script type="module">
+    const $=id=>document.getElementById(id),previous='https://2a66dd7f.codriver-3d-assets.pages.dev';
+    try{
+      const [catalog,notes]=await Promise.all(['/asset-catalog.json','/paris-refinement-notes.json'].map(async url=>{const r=await fetch(url);if(!r.ok)throw Error('Unable to load the comparison.');return r.json();}));
+      const assets=catalog.assets.filter(a=>a.id.startsWith('paris-')),params=new URLSearchParams(location.search);
+      for(const a of assets)$('asset').add(new Option(a.name,a.id));
+      if(assets.some(a=>a.id===params.get('asset')))$('asset').value=params.get('asset');
+      for(const key of ['view','detail','theme'])if([...$(key).options].some(o=>o.value===params.get(key)))$(key).value=params.get(key);
+      function render(){
+        const a=assets.find(a=>a.id===$('asset').value),chosen=$('view').value;
+        const view=a.kind==='bridge'?(chosen==='facade'?'piers':chosen==='roof'?'structure':chosen):chosen;
+        const query=new URLSearchParams({asset:a.id,view,detail:$('detail').value,theme:$('theme').value,source:'glb'});
+        document.body.dataset.kind=a.kind;
+        const path='/asset-preview.html?'+query;
+        $('old-link').href=previous+path;$('new-link').href=path;
+        $('before').src=previous+path+'&embed=1';$('after').src=path+'&embed=1';
+        $('changes').textContent=notes[a.id];
+        const m=a.model.assets[$('detail').value];
+        $('cost').textContent=`Revised ${$('detail').value} model: ${m.triangles.toLocaleString()} triangles · ${m.drawCalls} mesh draws · ${(m.bytes/1048576).toFixed(2)} MB GLB`;
+        history.replaceState(null,'','?'+new URLSearchParams({asset:a.id,view:chosen,detail:$('detail').value,theme:$('theme').value}));
+      }
+      for(const key of ['asset','view','detail','theme'])$(key).addEventListener('change',render);
+      render();
+    }catch(e){$('error').textContent=e.message;}
+  </script>
+</body>
+</html>

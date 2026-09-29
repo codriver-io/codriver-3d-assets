@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 115,548 | 3,696 | 4 |
-| Far | 40,636 | 1,512 | 4 |
+| Near | 858,608 | 18,524 | 4 |
+| Far | 162,268 | 3,660 | 4 |
 
 ## Inspection and placement
 
@@ -42,3 +42,11 @@ The bridge host must fit the deck to both bank approaches and sample each suppor
 ## Rights
 
 Procedural code and this documentation: MIT. Original GLB models: CC BY 4.0, © 2026 9570-6198 Québec inc. (Codriver). Geographic coordinates are derived from open mapping: © OpenStreetMap contributors, ODbL 1.0. This Codriver-commissioned work has no fabricated outside-contributor CLA signature.
+
+## Street-level revision — 29 September 2026
+
+Five regularly distributed masonry vaults independent of alignment nodes, rounded cutwaters and stylized eagle reliefs.
+
+See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
+
+Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-iena.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-iena-roof-or-structure.png).
