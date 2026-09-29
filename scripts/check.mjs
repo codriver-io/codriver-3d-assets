@@ -20,7 +20,7 @@ for(const entry of catalog.assets){
 }
 assert.ok(variants>=catalog.assets.length);
 assert.match(await readFile(join(out,'LICENSE-MODELS.txt'),'utf8'),/Creative Commons Attribution 4.0/);
-for(const name of ['LICENSE','LICENSES.md','THIRD_PARTY_NOTICES.md','licenses/three.txt','licenses.html','404.html','_headers'])await access(join(out,name));
+for(const name of ['LICENSE','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md','docs/contribution-acceptance.md','licenses/three.txt','licenses.html','404.html','_headers'])await access(join(out,name));
 const headers=await readFile(join(out,'_headers'),'utf8');assert.match(headers,/Access-Control-Allow-Origin: \*/);
 async function inspect(dir){for(const item of await readdir(dir,{withFileTypes:true})){
   const file=join(dir,item.name);assert.ok(!item.isSymbolicLink(),file);

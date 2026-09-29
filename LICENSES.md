@@ -24,6 +24,12 @@ and site coordinates are available in the source repository; preserve their
 attribution and comply with the ODbL when redistributing the data or a derivative
 database. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+## Additional permission for Codriver products
+
+Outside contributors expressly accepting the [Contributor License Agreement](CONTRIBUTOR-LICENSE.md) grant Codriver separate commercial and sublicensing rights without individual contributor attribution in its apps, products or marketing. They retain ownership and receive recognition in the public 3D asset library. This permission applies only to identified contributions and rights covered by an accepted grant; see the [acceptance procedure](docs/contribution-acceptance.md).
+
+The agreement does not rewrite MIT or CC BY, waive a third party’s rights, or apply retroactively. People using public models under CC BY still provide that license’s attribution. Codriver must separately comply with OSM and other third-party terms; the agreement removes no notices or credits owed to those parties.
+
 Reference links identify material studied while modeling. Photographs, plans,
 simulator archives, names, trademarks and underlying architectural works are
 not relicensed by this release. No reference photographs or simulator meshes

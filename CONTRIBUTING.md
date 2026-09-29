@@ -10,7 +10,7 @@ Search the catalog and existing issues first. For a substantial new model, open 
 
 Use original geometry and assets you have the right to contribute. A model downloaded from a simulator, a map provider or a “free” asset site is not automatically redistributable. Link reference photos and plans rather than copying them into the repository without permission. Record which dimensions are published, mapped or visually estimated. Models here are visual approximations, not surveys.
 
-Code, procedural generators and documentation are contributed under **MIT**; original model files under **CC BY 4.0**. Keep your copyright and attribution in the catalog. Geographic data retains its own license: OpenStreetMap-derived alignments/footprints require ODbL and contributor credit. See [LICENSES.md](LICENSES.md). AI assistance does not replace provenance or visual review.
+Public releases use **MIT** for code, procedural generators and documentation, and **CC BY 4.0** for original model files. For an outside contribution, also expressly accept the [Contributor License Agreement](CONTRIBUTOR-LICENSE.md): you keep ownership and grant Codriver permanent, worldwide, royalty-free commercial and sublicensing rights **without individual attribution in its apps or products**. Contributor recognition is provided in the 3D asset library; keep truthful copyright and public-license attribution in the catalog. See [how to record acceptance on GitHub](docs/contribution-acceptance.md). Geographic data retains its own license: OpenStreetMap-derived alignments/footprints require ODbL and contributor credit. See [LICENSES.md](LICENSES.md). AI assistance does not replace provenance or visual review.
 
 ## 2. Fork and run the collection
 
@@ -70,9 +70,9 @@ Open `/asset-preview.html?asset=<id>`. Inspect near/far, day/night, and exported
 
 The GitHub workflow runs the build, catalog/metadata checks and browser checks for pull requests. It has no publishing credentials. A maintainer may need to approve a first-time contributor’s workflow run. Passing it validates the library; app integration and terrain QA are separate.
 
-## 6. Open a pull request
+## 6. Open a pull request and record permission
 
-Push to your fork and use GitHub’s **Compare & pull request** button, targeting `codriver-io/codriver-3d-assets:main`. Fill in the supplied template: linked issue, source/license, frame, measured costs, screenshots, and Cityscape/topography status. Mark untested checks honestly. Maintainers review the model and publish accepted assets to the library; merging does not automatically promise inclusion in the driving app.
+Push to your fork and use GitHub’s **Compare & pull request** button, targeting `codriver-io/codriver-3d-assets:main`. Fill in the supplied template: linked issue, source/license, frame, measured costs, screenshots, and Cityscape/topography status. Mark untested checks honestly. Each outside rights holder must post the explicit [acceptance declaration](docs/contribution-acceptance.md) for the covered work; a template checkbox or an AI-generated signature is not consent. Maintainers verify authority and the declaration before merging. Maintainers review the model and publish accepted assets to the library; merging does not automatically promise inclusion in the driving app.
 
 ## Use the builder skill
 

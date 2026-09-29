@@ -17,7 +17,7 @@ Use metres in a local east/up/south frame anchored by longitude/latitude. Docume
 
 `prototypes/assets3d/catalog.json` identifies each model and its source, rights, documentation and views. The manifest owns actual exported metrics. Validation rejects orphan models, broken paths/frames and stale costs. The public collection contains only ready, redistribution-cleared assets; an issue or draft PR can hold a proposal before it is ready. Restricted source captures never enter the public repository or deploy output.
 
-Code and documentation use MIT; original models use CC BY 4.0. Each contributor retains credit. Geographic datasets keep their own terms. Build tooling must preserve per-model copyright and attribution in both manifests and GLB metadata; it must not reassign contributions to Codriver. Trademarks and source references are not relicensed by this policy.
+Code and documentation use MIT; original models use CC BY 4.0. Each contributor retains ownership and public-library credit. [ADR-0003](0003-contributor-product-license.md) adds a separately accepted Codriver product license without individual product attribution; public MIT/CC BY terms remain unchanged. Geographic datasets keep their own terms. Build tooling must preserve per-model copyright and attribution in both manifests and GLB metadata; it must not reassign contributions to Codriver. Trademarks and source references are not relicensed by this policy.
 
 GitHub supplies contribution guidance, proposal/bug issue forms, PR templates and read-only CI on forks. CI builds the library and verifies assets, documentation/skill packaging and browser behavior. Publishing uses a separate maintainer action. An accepted library model does not imply app integration or a product rollout.
 

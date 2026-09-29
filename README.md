@@ -80,6 +80,12 @@ creator(s) named in each manifest. The original collection credits Codriver /
 contributor attribution. See [LICENSES.md](LICENSES.md) for a
 ready-to-use attribution and the scope of each license.
 
+Outside contributors also accept a separate [Contributor License Agreement](CONTRIBUTOR-LICENSE.md):
+they retain ownership and grant Codriver permanent commercial and sublicensing rights
+without individual attribution in its apps or products. Contributor recognition lives
+in the 3D asset library. Public MIT/CC BY licenses and third-party/data obligations
+remain separate; [explicit acceptance](docs/contribution-acceptance.md) is required.
+
 ## Contribute your own landmark
 
 **We believe the world in 3D should be open.** Want to see a landmark on your commute?

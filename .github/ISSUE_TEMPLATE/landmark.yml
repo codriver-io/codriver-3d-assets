@@ -40,7 +40,7 @@ body:
     id: provenance
     attributes:
       label: Available source and rights
-      description: If you already have a model, identify its creator, source and license. Do not attach restricted captures or archives.
+      description: If you already have a model, identify its creator, source and license. Accepted outside work needs separate contributor-license consent for Codriver product use without individual attribution. A proposal is not that consent. Do not attach restricted captures or archives.
   - type: textarea
     id: ground
     attributes:
