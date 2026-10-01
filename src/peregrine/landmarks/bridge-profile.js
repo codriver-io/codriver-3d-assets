@@ -27,9 +27,10 @@ export function createBridgeProfile(spec) {
   }
   const stationAt = (ll) => { const p=bridgeLocal(...ll); return projectBridge(p.x,p.z).s; };
   const landmarks = Object.fromEntries(Object.entries(spec.stations || {}).map(([k,ll]) => [k, stationAt(ll)]));
-  const knots = spec.profile({ length: BRIDGE_LENGTH, ...landmarks });
+  const knots = spec.profile({ length: BRIDGE_LENGTH, deck: spec.deck, ...landmarks });
+  const groundControls = spec.groundControls?.({ length: BRIDGE_LENGTH, ...landmarks });
   const smooth = t => t*t*(3-2*t);
-  function deckHeight(s, approaches=[0,0]) {
+  function deckHeight(s, approaches=spec.defaultApproaches || [0,0]) {
     s=Math.max(0, Math.min(BRIDGE_LENGTH,s));
     let i=1; while(i<knots.length-1 && knots[i][0]<s) i++;
     const a=knots[i-1],b=knots[i],t=smooth((s-a[0])/(b[0]-a[0]));
@@ -64,6 +65,8 @@ export function createBridgeProfile(spec) {
     });
   }
   function fittedLateral(s,d,joins,sections) {
+    // Pedestrian-only landmarks have no vehicle pavement to fit.
+    if (!ROAD_EDGES.length) return d;
     if(railGap && Math.abs(d)<railGap) return d;
     const side=ROAD_EDGES.length===1?0:d<0?0:1,old=ROAD_EDGES[side],next=roadEdges(s,joins,sections)[side];
     if(d<old[0])return d+next[0]-old[0];if(d>old[1])return d+next[1]-old[1];
@@ -89,6 +92,6 @@ export function createBridgeProfile(spec) {
     }
     return changed?{...line,coords,segmentMap}:line;
   }
-  return {surfaceStep:5,CHAMPLAIN,STRETCH,ALIGNMENT,BRIDGE_LENGTH,ROAD_EDGES,halfWidth,railGap,bounds,landmarks,knots,
+  return {surfaceStep:5,CHAMPLAIN,STRETCH,ALIGNMENT,BRIDGE_LENGTH,ROAD_EDGES,halfWidth,railGap,bounds,landmarks,knots,groundControls,
     bridgeLocal,bridgeLngLat,projectBridge,stationAt,bridgePoint,deckHeight,roadEdges,fittedLateral,bridgeRoadHeight,resampleBridgeLine};
 }

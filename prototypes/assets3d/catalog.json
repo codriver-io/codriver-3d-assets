@@ -127,12 +127,12 @@
       "kind": "bridge",
       "location": "Montréal · Longueuil, Québec",
       "status": "ready",
-      "description": "Green cantilever trusses, four finials, curved Montréal approaches and a raised Seaway span.",
+      "description": "Green cantilever bridge, five-lane deck, approach trusses and four-tower Art Deco island pavilion, with separately catalogued access viaducts.",
       "manifest": "/models/landmarks/pont-jacques-cartier.json",
       "source": {
         "path": "src/peregrine/landmarks/montreal-bridges-geometry.js",
         "build": "pnpm build:montreal-landmarks",
-        "provenance": "Original procedural geometry authored 2026-09-27 from public structural/photo references; mapped frame © OpenStreetMap contributors (ODbL 1.0). No captured mesh, third-party texture or simulator asset is shipped.",
+        "provenance": "Original procedural geometry, revised 2026-09-30 using JCCBI structural and pavilion references. Alignments and pavilion footprint © OpenStreetMap contributors (ODbL 1.0). No captured mesh, third-party texture or simulator asset is shipped.",
         "references": [
           {
             "label": "JCCBI technical and structural reference",
@@ -145,12 +145,16 @@
           {
             "label": "Mapped alignment / footprint · OpenStreetMap",
             "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "PJCCI — pavilion roof supports roadway, floors and four towers",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/ile-sainte-helene-pavilion-on-the-jacques-cartier-bridge/"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/montreal-bridges-geometry.js"
       },
       "inspection": {
-        "url": "/asset-preview.html?asset=pont-jacques-cartier&view=structure",
+        "url": "/asset-preview.html?asset=pont-jacques-cartier&view=pavilion",
         "views": [
           {
             "label": "Overview",
@@ -167,17 +171,256 @@
           {
             "label": "Drive",
             "url": "/asset-preview.html?asset=pont-jacques-cartier&view=drive"
+          },
+          {
+            "label": "Island pavilion",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier&view=pavilion"
           }
         ]
       },
-      "notes": "Visual approximation, not surveyed. Deck heights are adapted to the flat map; fine fabrication details are simplified. Five-lane deck; live provider lane markings take precedence. Island pavilion included with its mapped footprint and a simplified height beneath the flat-map roadway.",
+      "notes": "Visual approximation, not surveyed. The main deck sits 22 estimated metres above the island foundation; the roof supports the slab and four pavilion towers retain their silhouette in both LODs. Download the four island-access components separately and place them at the shared geographic origin. No terrain or sea-level datum is baked into these GLBs.",
       "documentation": "docs/assets/pont-jacques-cartier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "components": [
+        "pont-jacques-cartier-north-out",
+        "pont-jacques-cartier-south-out",
+        "pont-jacques-cartier-north-in",
+        "pont-jacques-cartier-south-in"
+      ],
+      "city": "Montréal"
+    },
+    {
+      "id": "pont-jacques-cartier-north-out",
+      "name": "Jacques-Cartier · north-out island access",
+      "kind": "bridge",
+      "location": "Montréal · Longueuil, Québec",
+      "status": "ready",
+      "description": "Mapped concrete access viaduct joining the Jacques-Cartier deck, pavilion loop and island streets.",
+      "manifest": "/models/landmarks/pont-jacques-cartier-north-out.json",
+      "source": {
+        "path": "src/peregrine/landmarks/jacques-island-ramps.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry. OSM road alignments retrieved 2026-09-30 via the OSM API, © OpenStreetMap contributors, ODbL 1.0; estimated relative deck and support heights.",
+        "references": [
+          {
+            "label": "JCCBI technical and structural reference",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/about/"
+          },
+          {
+            "label": "CSCE · span dimensions",
+            "url": "https://legacy.csce.ca/en/historic-site/jacques-cartier-bridge/"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "PJCCI — pavilion roof supports roadway, floors and four towers",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/ile-sainte-helene-pavilion-on-the-jacques-cartier-bridge/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/jacques-island-ramps.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-jacques-cartier-north-out&view=structure",
+        "views": [
+          {
+            "label": "Structure",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-north-out&view=structure"
+          },
+          {
+            "label": "Supports",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-north-out&view=piers"
+          }
+        ]
+      },
+      "integration": "Peregrine geographic landmark; lazy near/far GLB loading and reversible map replacement.",
+      "notes": "Separate component of the Jacques-Cartier bridge kit; use the same origin and axes as the main bridge. Original mapped concrete viaduct with estimated vertical profile. A host must fit the free approach and shared junctions consistently; no DEM is baked into the GLB.",
+      "documentation": "docs/assets/pont-jacques-cartier-north-out.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "parent": "pont-jacques-cartier",
+      "city": "Montréal"
+    },
+    {
+      "id": "pont-jacques-cartier-south-out",
+      "name": "Jacques-Cartier · south-out island access",
+      "kind": "bridge",
+      "location": "Montréal · Longueuil, Québec",
+      "status": "ready",
+      "description": "Mapped concrete access viaduct joining the Jacques-Cartier deck, pavilion loop and island streets.",
+      "manifest": "/models/landmarks/pont-jacques-cartier-south-out.json",
+      "source": {
+        "path": "src/peregrine/landmarks/jacques-island-ramps.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry. OSM road alignments retrieved 2026-09-30 via the OSM API, © OpenStreetMap contributors, ODbL 1.0; estimated relative deck and support heights.",
+        "references": [
+          {
+            "label": "JCCBI technical and structural reference",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/about/"
+          },
+          {
+            "label": "CSCE · span dimensions",
+            "url": "https://legacy.csce.ca/en/historic-site/jacques-cartier-bridge/"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "PJCCI — pavilion roof supports roadway, floors and four towers",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/ile-sainte-helene-pavilion-on-the-jacques-cartier-bridge/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/jacques-island-ramps.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-jacques-cartier-south-out&view=structure",
+        "views": [
+          {
+            "label": "Structure",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-south-out&view=structure"
+          },
+          {
+            "label": "Supports",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-south-out&view=piers"
+          }
+        ]
+      },
+      "integration": "Peregrine geographic landmark; lazy near/far GLB loading and reversible map replacement.",
+      "notes": "Separate component of the Jacques-Cartier bridge kit; use the same origin and axes as the main bridge. Original mapped concrete viaduct with estimated vertical profile. A host must fit the free approach and shared junctions consistently; no DEM is baked into the GLB.",
+      "documentation": "docs/assets/pont-jacques-cartier-south-out.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "parent": "pont-jacques-cartier",
+      "city": "Montréal"
+    },
+    {
+      "id": "pont-jacques-cartier-north-in",
+      "name": "Jacques-Cartier · north-in island access",
+      "kind": "bridge",
+      "location": "Montréal · Longueuil, Québec",
+      "status": "ready",
+      "description": "Mapped concrete access viaduct joining the Jacques-Cartier deck, pavilion loop and island streets.",
+      "manifest": "/models/landmarks/pont-jacques-cartier-north-in.json",
+      "source": {
+        "path": "src/peregrine/landmarks/jacques-island-ramps.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry. OSM road alignments retrieved 2026-09-30 via the OSM API, © OpenStreetMap contributors, ODbL 1.0; estimated relative deck and support heights.",
+        "references": [
+          {
+            "label": "JCCBI technical and structural reference",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/about/"
+          },
+          {
+            "label": "CSCE · span dimensions",
+            "url": "https://legacy.csce.ca/en/historic-site/jacques-cartier-bridge/"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "PJCCI — pavilion roof supports roadway, floors and four towers",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/ile-sainte-helene-pavilion-on-the-jacques-cartier-bridge/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/jacques-island-ramps.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-jacques-cartier-north-in&view=structure",
+        "views": [
+          {
+            "label": "Structure",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-north-in&view=structure"
+          },
+          {
+            "label": "Supports",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-north-in&view=piers"
+          }
+        ]
+      },
+      "integration": "Peregrine geographic landmark; lazy near/far GLB loading and reversible map replacement.",
+      "notes": "Separate component of the Jacques-Cartier bridge kit; use the same origin and axes as the main bridge. Original mapped concrete viaduct with estimated vertical profile. A host must fit the free approach and shared junctions consistently; no DEM is baked into the GLB.",
+      "documentation": "docs/assets/pont-jacques-cartier-north-in.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "parent": "pont-jacques-cartier",
+      "city": "Montréal"
+    },
+    {
+      "id": "pont-jacques-cartier-south-in",
+      "name": "Jacques-Cartier · south-in island access",
+      "kind": "bridge",
+      "location": "Montréal · Longueuil, Québec",
+      "status": "ready",
+      "description": "Mapped concrete access viaduct joining the Jacques-Cartier deck, pavilion loop and island streets.",
+      "manifest": "/models/landmarks/pont-jacques-cartier-south-in.json",
+      "source": {
+        "path": "src/peregrine/landmarks/jacques-island-ramps.js",
+        "build": "pnpm build:montreal-landmarks",
+        "provenance": "Original procedural geometry. OSM road alignments retrieved 2026-09-30 via the OSM API, © OpenStreetMap contributors, ODbL 1.0; estimated relative deck and support heights.",
+        "references": [
+          {
+            "label": "JCCBI technical and structural reference",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/about/"
+          },
+          {
+            "label": "CSCE · span dimensions",
+            "url": "https://legacy.csce.ca/en/historic-site/jacques-cartier-bridge/"
+          },
+          {
+            "label": "Mapped alignment / footprint · OpenStreetMap",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "PJCCI — pavilion roof supports roadway, floors and four towers",
+            "url": "https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/ile-sainte-helene-pavilion-on-the-jacques-cartier-bridge/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/jacques-island-ramps.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-jacques-cartier-south-in&view=structure",
+        "views": [
+          {
+            "label": "Structure",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-south-in&view=structure"
+          },
+          {
+            "label": "Supports",
+            "url": "/asset-preview.html?asset=pont-jacques-cartier-south-in&view=piers"
+          }
+        ]
+      },
+      "integration": "Peregrine geographic landmark; lazy near/far GLB loading and reversible map replacement.",
+      "notes": "Separate component of the Jacques-Cartier bridge kit; use the same origin and axes as the main bridge. Original mapped concrete viaduct with estimated vertical profile. A host must fit the free approach and shared junctions consistently; no DEM is baked into the GLB.",
+      "documentation": "docs/assets/pont-jacques-cartier-south-in.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+      "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "parent": "pont-jacques-cartier",
+      "city": "Montréal"
     },
     {
       "id": "biosphere-montreal",
@@ -919,7 +1162,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "paris-tour-eiffel",

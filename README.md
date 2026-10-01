@@ -2,8 +2,11 @@
 
 Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/codriver-3d-assets).
 
-An open collection of Montréal, Paris and Toronto landmarks: 54 bridges and buildings, 116
-self-contained GLB variants, and the editable Three.js generators behind them.
+**Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
+library for applications, maps and games. The collection starts with real landmarks
+from Montréal, Paris and Toronto: 54 landmarks and four reusable bridge components,
+124 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+reuse and help grow it.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
 **[How to contribute](CONTRIBUTING.md)** · **[Licensing](LICENSES.md)**
@@ -106,7 +109,7 @@ remain separate; [explicit acceptance](docs/contribution-acceptance.md) is requi
 
 ## Contribute your own landmark
 
-**We believe the world in 3D should be open.** Want to see a landmark on your commute?
+**We believe the world in 3D should be open.** Have a model or a place to add?
 [Propose it in a GitHub issue](https://github.com/codriver-io/codriver-3d-assets/issues/new?template=landmark.yml),
 fork the repository and send a pull request. The [contribution guide](CONTRIBUTING.md)
 covers editable Blender or procedural source, near/far exports, creator credit,
@@ -147,3 +150,7 @@ The 20 Paris models now include more accurate primary proportions, architectural
 The Eiffel Tower, Louvre (now including its pyramid), Grand Palais, Musée d’Orsay and Hôtel de Ville have a second architectural refinement. [Changes, sources and measured costs](docs/paris-second-pass.md).
 
 The gallery above shows the current exports, including the [Louvre window and Hôtel de Ville roof corrections](docs/paris-rendering-fixes.md).
+
+### Jacques-Cartier bridge revision
+
+The bridge now includes the roof-supporting island pavilion, four towers, deeper approach trusses and four separately downloadable island ramps. [Placement contract and mode evidence](docs/assets/jacques-cartier-placement.md). The public site also adds model thumbnails, city filters, direct detail-level downloads and a mobile model sheet.

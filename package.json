@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Open Montr\u00e9al landmark models, procedural Three.js source and a public 3D library.",
+  "description": "Open-source 3D models for apps, maps and games, with editable source, portable GLBs and a public library.",
   "license": "MIT",
   "engines": {
     "node": ">=22"
@@ -33,6 +33,7 @@
     "build:paris-palaces": "node scripts/build-paris-palaces.mjs",
     "build:toronto-landmarks": "node scripts/build-toronto-landmarks.mjs --all",
     "test:browser": "node scripts/test-browser.mjs",
+    "thumbnails:build": "node scripts/capture-thumbnails.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",
     "build:paris-historic": "node scripts/build-paris-historic.mjs",
     "test:geometry": "node --test src/peregrine/landmarks/paris-fidelity.test.js"

@@ -66,6 +66,8 @@ pnpm exec playwright install chromium
 pnpm test:browser
 ```
 
+For a new or revised model, with `pnpm dev` running, also run `pnpm thumbnails:build` to capture the catalog images from the exported GLBs. Include its updated `site/thumbnails/<id>.jpg`, then run `pnpm build` again so the public output includes it. The thumbnail generator needs only the local viewer and Chromium, not a map account.
+
 Open `/asset-preview.html?asset=<id>`. Inspect near/far, day/night, and exported geometry; compare procedural geometry when available. Look underneath the bridge and behind the building, not just from the flattering angle. Include at least two screenshots in the PR, with the asset ID, detail level and view. Include a reference link for the matching angle.
 
 The GitHub workflow runs the build, catalog/metadata checks and browser checks for pull requests. It has no publishing credentials. A maintainer may need to approve a first-time contributor’s workflow run. Passing it validates the library; app integration and terrain QA are separate.

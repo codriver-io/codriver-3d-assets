@@ -1,0 +1,60 @@
+{
+  "id": "pont-jacques-cartier-south-in",
+  "name": "Jacques-Cartier · south-in island access",
+  "origin": [
+    -73.5417613,
+    45.5218315
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "length": 43.29385144080517,
+  "width": 5.2,
+  "stations": {},
+  "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "placement": {
+    "groundPolicy": "bank-fit",
+    "groundControls": [
+      {
+        "s": 0,
+        "sampleLngLat": [
+          -73.53530338975675,
+          45.52069871541268
+        ]
+      },
+      {
+        "s": 43.29385144080517,
+        "sampleLngLat": [
+          -73.53530338975675,
+          45.52069871541268
+        ]
+      }
+    ],
+    "localZero": "Foundation ground; structural and deck heights are relative, estimated metres."
+  },
+  "note": "Original procedural visual model. Heights, member sections, details and LOD simplification are approximate; no third-party model or texture is included.",
+  "assets": {
+    "near": {
+      "url": "/models/landmarks/pont-jacques-cartier-south-in-near.glb",
+      "bytes": 17564,
+      "triangles": 504,
+      "drawCalls": 3
+    },
+    "far": {
+      "url": "/models/landmarks/pont-jacques-cartier-south-in-far.glb",
+      "bytes": 14076,
+      "triangles": 440,
+      "drawCalls": 2
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/jacques-island-ramps.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
