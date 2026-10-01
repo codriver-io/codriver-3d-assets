@@ -1,0 +1,66 @@
+{
+  "id": "ferry-building",
+  "name": "Ferry Building",
+  "kind": "building",
+  "origin": [
+    -122.3934298,
+    37.7955383
+  ],
+  "height": 75,
+  "padM": 108,
+  "frontageBearing": 233.8,
+  "axisBearing": 323.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the Embarcadero plaza on the flat Peregrine basemap; no absolute altitude (OSM ele=1 m), no relief, no Mercator scale. The bay-side walkway and the building stand on the same datum.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, bearing (323.8 degrees), pavilion projection and tower position come from the mapped OSM outline; the 16.1 m pavilion and the 245 ft tower are sourced (OSM, Wikipedia). The storey heights, wing window sizes, the stepped tower stage heights (photograph proportions scaled to 75 m), roof profile, bay-side glazing and the Port of San Francisco sign are estimates from photographs. Interior, ferry gates and the piers behind the building are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ferry-building-near.glb",
+      "bytes": 678500,
+      "triangles": 11079,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -79.2386703491211,
+          -9.536743306171047e-8,
+          -96.89031982421875
+        ],
+        "max": [
+          80.88007354736328,
+          75,
+          95.8763427734375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ferry-building-far.glb",
+      "bytes": 359612,
+      "triangles": 5488,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -79.2386703491211,
+          -4.7683716530855236e-8,
+          -96.89031982421875
+        ],
+        "max": [
+          80.88007354736328,
+          75,
+          95.8763427734375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/ferry-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

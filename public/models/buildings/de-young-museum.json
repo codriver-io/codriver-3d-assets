@@ -1,0 +1,65 @@
+{
+  "id": "de-young-museum",
+  "name": "de Young Museum",
+  "kind": "building",
+  "origin": [
+    -122.4687173,
+    37.7714729
+  ],
+  "height": 44,
+  "padM": 96,
+  "frontageBearing": 138,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the plaza and garden level round the museum); no absolute altitude. The sunken Music Concourse, the garden relief and the planting are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Outline, courtyard cut-outs, the 13 m roof, the tower slab positions and their 47.8 to 78.6 degree twist come from OSM (relation 1652482 and the eight Hamon Tower building:parts); the 44 m tower height is the published 144 ft (OSM stacks to 51 m, which is not used). The cantilever depth and soffit height, the glazing, entrance and slit-window positions and the panel pattern are estimated from photographs; the perforated and dimpled copper is a pattern of flat tone panels, not geometry. No trees, interior, tower stair gantries or Music Concourse.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/de-young-museum-near.glb",
+      "bytes": 223904,
+      "triangles": 2723,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -79.27823638916016,
+          0,
+          -85.00576782226562
+        ],
+        "max": [
+          79.18850708007812,
+          44,
+          76.75721740722656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/de-young-museum-far.glb",
+      "bytes": 46280,
+      "triangles": 495,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -79.32978057861328,
+          0,
+          -85.00576782226562
+        ],
+        "max": [
+          79.24005126953125,
+          44,
+          76.7904052734375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/de-young-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "cathedral-of-saint-mary",
+  "name": "Cathedral of Saint Mary of the Assumption",
+  "kind": "building",
+  "origin": [
+    -122.4253877,
+    37.7842352
+  ],
+  "height": 58,
+  "padM": 64,
+  "frontageBearing": 80.9,
+  "gridDeg": 9.1,
+  "blockHalf": 31.4,
+  "slabU": [
+    -37.7,
+    39
+  ],
+  "slabV": [
+    -38.2,
+    39
+  ],
+  "slabBottom": 10.8,
+  "slabTop": 12.7,
+  "towerHalf": 17.8,
+  "finTip": 20.2,
+  "finHalf": 1.65,
+  "wallTop": 45,
+  "finTop": 53.5,
+  "crossBase": 43,
+  "annexHeight": 10.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 at the plaza level on the flat Peregrine basemap; no absolute altitude. The raised plaza, the garage below it and the street stairs are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Overall height, plan size and the shell/glass-cross arrangement are published; the slab thickness, ground-floor wall height, fin and wall-top heights, the curvature of the shell flanks, the apex height and the cross dimensions are estimated from photographs (the shells are modelled as ruled surfaces, not from the structural drawings); the annex south of the cathedral is a plain mass at its OSM height; interior, plaza, steps, door relief, travertine joints and the bell platform are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedral-of-saint-mary-near.glb",
+      "bytes": 213904,
+      "triangles": 5580,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -44.17625045776367,
+          -9.536743306171047e-8,
+          -43.887367248535156
+        ],
+        "max": [
+          66.65349578857422,
+          58,
+          93.9437026977539
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedral-of-saint-mary-far.glb",
+      "bytes": 67256,
+      "triangles": 1248,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -44.17625045776367,
+          -9.536743306171047e-8,
+          -43.887367248535156
+        ],
+        "max": [
+          66.65349578857422,
+          58,
+          93.9437026977539
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/cathedral-of-saint-mary/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

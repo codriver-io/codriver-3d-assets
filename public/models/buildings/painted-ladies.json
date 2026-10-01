@@ -1,0 +1,66 @@
+{
+  "id": "painted-ladies",
+  "name": "Painted Ladies (Postcard Row)",
+  "kind": "building",
+  "origin": [
+    -122.432745,
+    37.776272
+  ],
+  "height": 15.1,
+  "padM": 34,
+  "frontageBearing": 261,
+  "streetDeg": 9.05,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The row steps up the Steiner Street slope toward the south in 0.25 m terraces (710 stands 1.5 m above 722), each house on its own stucco foundation that reaches y=0.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Seven outlines and the 12 m / 13 m heights are mapped; the storey heights, bay and porch positions, gable ornament and paint colours are read from photographs and are approximate (about 0.3 m). The stepping down the street (0.25 m per house, 1.5 m in all) is estimated. Stairs project up to 2.6 m past the mapped front line. Back elevations, side walls and roofs behind the gables are simplified; decorative trim is suggested, not copied.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/painted-ladies-near.glb",
+      "bytes": 575020,
+      "triangles": 10160,
+      "drawCalls": 13,
+      "bounds": {
+        "min": [
+          -13.146552085876465,
+          0,
+          -27.374906539916992
+        ],
+        "max": [
+          11.570722579956055,
+          15.119999885559082,
+          26.90359115600586
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/painted-ladies-far.glb",
+      "bytes": 155600,
+      "triangles": 2506,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -13.101455688476562,
+          0,
+          -27.374906539916992
+        ],
+        "max": [
+          11.541874885559082,
+          15,
+          26.90359115600586
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/painted-ladies/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
