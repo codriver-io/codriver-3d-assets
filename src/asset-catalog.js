@@ -44,7 +44,7 @@ function show(entry, open = false) {
 }
 function render() {
   const query = normalize($('search').value.trim());
-  const visible = assets.filter(e => (kind === 'all' || e.kind === kind) && (city === 'all' || cityOf(e) === city) && normalize(`${e.name} ${e.location} ${e.description}`).includes(query));
+  const visible = assets.filter(e => (kind === 'all' || e.kind === kind) && (city === 'all' || cityOf(e) === city) && normalize(`${e.name} ${cityOf(e)} ${e.location} ${e.description}`).includes(query));
   $('count').textContent = `${visible.length} of ${assets.length} models`; $('reset').hidden = kind === 'all' && city === 'all' && !query; $('empty').hidden = !!visible.length; $('list').replaceChildren();
   for (const entry of visible) { const b = el('button', null, 'asset'); b.dataset.id = entry.id; b.setAttribute('aria-label', `Explore ${entry.name}`); const thumbnail = el('span', null, 'thumbnail'), img = el('img'); img.src = `/thumbnails/${entry.id}.jpg`; img.alt = ''; img.loading = 'lazy'; img.width = 600; img.height = 375; thumbnail.append(img, el('span', entry.parent ? 'Bridge part' : entry.kind, 'type')); const copy = el('span', null, 'asset-copy'); copy.append(el('strong', entry.name), el('small', cityOf(entry)), el('span', 'GLB · Editable source · CC BY 4.0', 'card-format')); b.append(thumbnail, copy); b.onclick = () => show(entry, true); $('list').append(b); }
   if (visible.length && !mobile.matches) show(visible.find(e => e.id === selected) || visible[0]); else updateSelection(); updateUrl();
