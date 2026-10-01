@@ -21,6 +21,6 @@ export async function buildAssetCatalogPreview() {
   await copyFile(resolve(ROOT,'node_modules/three/LICENSE'),resolve(out,'licenses/three.txt'));
   await cp(resolve(ROOT,'site'),out,{recursive:true});
   await writeFile(resolve(out,'robots.txt'),'User-agent: *\nAllow: /\n');
-  console.log(`Public library built: ${catalog.assets.length} landmarks in dist/`);
+  console.log(`Public library built: ${catalog.assets.length} models in dist/`);
 }
 if(process.argv[1]&&resolve(process.argv[1])===resolve(ROOT,'scripts/build-asset-catalog.mjs'))await buildAssetCatalogPreview();

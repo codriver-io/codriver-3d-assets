@@ -11,6 +11,7 @@ for(const entry of catalog.assets){
   assert.ok(entry.source.url.startsWith('https://github.com/codriver-io/codriver-3d-assets/blob/main/'));
   for(const view of [entry.inspection,...entry.inspection.views])await access(resolve(out,view.url.slice(1).split('?')[0]));
   const manifest=JSON.parse(await readFile(resolve(out,'.'+entry.manifest)));
+  await access(join(out,'thumbnails',entry.id+'.jpg'));
   assert.equal(manifest.license,'CC-BY-4.0');assert.equal(manifest.geographicDataLicense,entry.geographicDataLicense);assert.equal(manifest.copyright,entry.copyright);assert.equal(manifest.attribution,entry.attribution);
   for(const variant of Object.values(manifest.assets)){
     const buffer=await readFile(resolve(out,'.'+variant.url)),source=await readFile(resolve(ROOT,'public'+variant.url));

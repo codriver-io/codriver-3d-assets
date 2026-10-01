@@ -6,6 +6,7 @@ import { fiveRosesPoint } from './peregrine/landmarks/five-roses-config.js';
 import { createBiosphere } from './peregrine/landmarks/biosphere-geometry.js';
 import { createChamplain } from './peregrine/landmarks/champlain-geometry.js';
 import { VICTORIA, JACQUES } from './peregrine/landmarks/montreal-profiles.js';
+import { JACQUES_RAMPS, createJacquesIslandRamp } from './peregrine/landmarks/jacques-island-ramps.js';
 import * as CHAMPLAIN from './peregrine/landmarks/champlain-profile.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { createOrangeJulep } from './peregrine/landmarks/orange-julep-geometry.js';
@@ -39,6 +40,7 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.2;
 $('view').append(renderer.domElement);
+renderer.domElement.setAttribute('aria-label', '3D model; drag to orbit and pinch or scroll to zoom');
 const controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
 const sky = new THREE.HemisphereLight(0xe6f3ff, 0x798776, 2.7), sun = new THREE.DirectionalLight(0xfff1dc, 3.2);
 sun.position.set(-400, 900, 600); scene.add(sky, sun);
@@ -75,6 +77,7 @@ const creators = {
   ...Object.fromEntries(TORONTO_LANDMARKS.map((l) => [l.id, l.create])),
 };
 for (const spec of PARIS_BRIDGES) creators[spec.id] = options => createParisBridge(spec, options);
+for (const p of JACQUES_RAMPS) creators[p.CHAMPLAIN.id] = options => createJacquesIslandRamp(p, options);
 const profiles = {
   'pont-victoria': VICTORIA,
   'pont-jacques-cartier': JACQUES,
@@ -89,9 +92,14 @@ for (const spec of PARIS_BRIDGES) {
       return { x: a[0], y: a[1], z: a[2], tx: (b[0] - a[0]) / len, tz: (b[2] - a[2]) / len }; },
   };
 }
+for (const p of JACQUES_RAMPS) profiles[p.CHAMPLAIN.id] = p;
 let entry, model, generation = 0, dark = ['dark', 'night'].includes(params.get('theme')), front = false;
 controls.addEventListener('change', () => { if (entry?.id === 'basilique-notre-dame') updateNotreDameClipping(camera, controls); });
 $('angle').value = params.get('view') || 'overview';
+if (params.get('asset') === 'pont-jacques-cartier') {
+  $('angle').add(new Option('Island pavilion', 'pavilion'));
+  if (params.get('view') === 'pavilion') $('angle').value = 'pavilion';
+}
 function dispose(root) {
   const materials = new Set(), textures = new Set();
   root.traverse((o) => { o.geometry?.dispose(); for (const m of o.material ? [].concat(o.material) : []) materials.add(m); });
@@ -111,9 +119,13 @@ function fit() {
   controls.minDistance = Math.min(0.5, radius / 100); controls.maxDistance = distance * 5;
   const view = $('angle').value, profile = profiles[entry?.id];
   if (profile && view !== 'overview') {
-    const station = Number($('station').value) / 100 * profile.BRIDGE_LENGTH;
+    const station = view === 'pavilion' ? profile.landmarks.island : Number($('station').value) / 100 * profile.BRIDGE_LENGTH;
     const at = profile.bridgePoint(station), vec = (along, across, y) => new THREE.Vector3(at.x + at.tx * along - at.tz * across, y, at.z + at.tz * along + at.tx * across);
-    if (view === 'drive') { camera.position.copy(vec(-25, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 3)); controls.target.copy(vec(75, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 5)); }
+    if (view === 'pavilion') {
+      camera.position.copy(vec(120,-155,85)); controls.target.copy(vec(0,0,16));
+      camera.position.sub(controls.target).multiplyScalar(Math.max(1,1.1/camera.aspect)).add(controls.target);
+    }
+    else if (view === 'drive') { camera.position.copy(vec(-25, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 3)); controls.target.copy(vec(75, profile.ROAD_EDGES?.[0]?.[0] + 2 || -18, at.y + 5)); }
     else if (view === 'piers' && entry?.id?.startsWith('paris-pont-')) {
       camera.position.copy(vec(0, Math.max(210, profile.BRIDGE_LENGTH * 1.45), 23));
       controls.target.copy(vec(0, 0, Math.max(5, at.y * 0.65)));
@@ -236,9 +248,13 @@ async function load() {
     if (token !== generation) { dispose(candidate); return; }
     if (model) { scene.remove(model); dispose(model); }
     model = candidate; scene.add(model); fit(); theme();
+    if ($('loading')) $('loading').hidden = true;
     $('metrics').textContent = `${asset.triangles.toLocaleString()} triangles · ${asset.drawCalls} draws · ${Math.round(asset.bytes / 1024)} KB`;
     $('download').href = modelUrl;
-  } catch (error) { if (token === generation) $('error').textContent = 'Could not load model: ' + error.message; }
+  } catch (error) { if (token === generation) {
+    $('error').textContent = 'Could not load model: ' + error.message;
+    if ($('loading')) { $('loading').hidden = false; $('loading').textContent = 'Preview unavailable. Please refresh to try again.'; }
+  } }
 }
 $('variant').onchange = load; $('source').onchange = load; $('angle').onchange = fit; $('station').oninput = fit; $('overview').onclick = () => { front = false; $('angle').value = 'overview'; fit(); };
 $('front').onclick = () => { front = true; $('angle').value = 'overview'; fit(); }; $('theme').onclick = () => { dark = !dark; theme(); };
@@ -293,4 +309,10 @@ fetch('/asset-catalog.json').then((r) => { if (!r.ok) throw new Error('Catalog u
   return load();
 }).catch((error) => { $('name').textContent = 'Model unavailable'; $('error').textContent = error.message; });
 theme(); renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+const controlsButton = $('toggle-controls');
+if (controlsButton) controlsButton.onclick = () => {
+  const expanded = document.body.classList.toggle('controls-open');
+  controlsButton.setAttribute('aria-expanded', String(expanded));
+  controlsButton.textContent = expanded ? 'Hide controls ×' : 'Model controls';
+};
 window.__assetPreview = { renderer, scene, camera, controls, fit, get model() { return model; } };

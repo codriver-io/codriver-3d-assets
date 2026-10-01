@@ -19,19 +19,142 @@
     "channel": 2357.8626596802724
   },
   "alignmentAttribution": "© OpenStreetMap contributors — https://www.openstreetmap.org/copyright",
+  "placement": {
+    "groundPolicy": "bank-fit",
+    "groundControls": [
+      {
+        "s": 0,
+        "sampleS": 0
+      },
+      {
+        "s": 1511.5927760822933,
+        "sampleS": 1611.5927760822933
+      },
+      {
+        "s": 1711.5927760822933,
+        "sampleS": 1611.5927760822933
+      },
+      {
+        "s": 2837.7922604493383,
+        "sampleS": 2837.7922604493383
+      }
+    ],
+    "localZero": "Foundation ground; structural and deck heights are relative, estimated metres.",
+    "rigidBaseAttribute": "_bridgebase",
+    "rigidBaseStation": 1611.5927760822933,
+    "foundationFootprint": [
+      [
+        -73.5357064,
+        45.5209622
+      ],
+      [
+        -73.5357164,
+        45.5208757
+      ],
+      [
+        -73.5357467,
+        45.5204952
+      ],
+      [
+        -73.5356586,
+        45.5204904
+      ],
+      [
+        -73.535655,
+        45.5205364
+      ],
+      [
+        -73.5352186,
+        45.5205169
+      ],
+      [
+        -73.5351407,
+        45.5205024
+      ],
+      [
+        -73.5349962,
+        45.5205023
+      ],
+      [
+        -73.5349149,
+        45.5205022
+      ],
+      [
+        -73.5349137,
+        45.5204582
+      ],
+      [
+        -73.5348268,
+        45.5204537
+      ],
+      [
+        -73.534818,
+        45.5205608
+      ],
+      [
+        -73.5347944,
+        45.5208266
+      ],
+      [
+        -73.5347909,
+        45.5208362
+      ],
+      [
+        -73.5347893,
+        45.5208637
+      ],
+      [
+        -73.5347856,
+        45.5208638
+      ],
+      [
+        -73.5347804,
+        45.520921
+      ],
+      [
+        -73.5348779,
+        45.5209247
+      ],
+      [
+        -73.5348821,
+        45.5208819
+      ],
+      [
+        -73.5353074,
+        45.5209002
+      ],
+      [
+        -73.5354433,
+        45.5209054
+      ],
+      [
+        -73.5356187,
+        45.5209153
+      ],
+      [
+        -73.535616,
+        45.5209573
+      ],
+      [
+        -73.5357064,
+        45.5209622
+      ]
+    ],
+    "foundationFeatherM": 8
+  },
   "note": "Original procedural visual model. Heights, member sections, details and LOD simplification are approximate; no third-party model or texture is included.",
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-jacques-cartier-near.glb",
-      "bytes": 2257172,
-      "triangles": 45548,
+      "bytes": 2773376,
+      "triangles": 48602,
       "drawCalls": 34
     },
     "far": {
       "url": "/models/landmarks/pont-jacques-cartier-far.glb",
-      "bytes": 955132,
-      "triangles": 23584,
-      "drawCalls": 5
+      "bytes": 1215532,
+      "triangles": 25406,
+      "drawCalls": 6
     }
   },
   "license": "CC-BY-4.0",

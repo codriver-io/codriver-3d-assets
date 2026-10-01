@@ -1,7 +1,7 @@
 import { VICTORIA, JACQUES } from './montreal-profiles.js';
 import alignment from './montreal-alignments.js';
 import { bridgeBuilder } from './asset-geometry.js';
-import { Shape, ExtrudeGeometry } from 'three';
+import { addJacquesPavilion } from './jacques-pavilion-geometry.js';
 
 function roadDeck(b,p,detail){
   const length=p.BRIDGE_LENGTH,half=p.halfWidth,h=p.deckHeight;
@@ -101,22 +101,22 @@ export function createJacquesCartier({detail='near'}={}){
       const s=a+(c-a)*i/n,t=a+(c-a)*(i+1)/n,chunk=detail==='near'?(s<start?0:2+Math.floor((s-end)/500)):2;
       for(const d of [-9,9]){
         b.beam('steel',[s,d,h(s)-1.2],[t,d,h(t)-1.2],0.3,0.5,chunk);
-        b.beam('steel',[s,d,h(s)-5],[t,d,h(t)-5],0.3,0.5,chunk);
+        b.beam('steel',[s,d,h(s)-7],[t,d,h(t)-7],0.4,0.55,chunk);
         const panels=detail==='near'?6:3;
         for(let j=0;j<panels;j++){
           const u=s+(t-s)*j/panels,v=s+(t-s)*(j+1)/panels;
-          b.beam('steel',[u,d,h(u)-1.2],[v,d,h(v)-5],0.22,0.25,chunk);
-          b.beam('steel',[u,d,h(u)-5],[v,d,h(v)-1.2],0.18,0.22,chunk);
+          b.beam('steel',[u,d,h(u)-1.2],[v,d,h(v)-7],0.3,0.35,chunk);
+          b.beam('steel',[u,d,h(u)-7],[v,d,h(v)-1.2],0.26,0.3,chunk);
         }
       }
       if(i && s<start && h(s)>6){
-        for(const d of [-8,8])for(const ds of [-3,3])b.beam('steel',[s+ds*1.5,d*1.15,0],[s+ds,d,h(s)-5],0.65,0.7,chunk,y=>Math.max(0,Math.min(1,y/(h(s)-5))));
-        for(let y=0;y<h(s)-6;y+=8){
-          const top=Math.min(h(s)-5,y+8);
-          b.beam('steel',[s,-8,y],[s,8,top],0.35,0.4,chunk,y=>Math.max(0,Math.min(1,y/(h(s)-5))));
-          b.beam('steel',[s,8,y],[s,-8,top],0.35,0.4,chunk,y=>Math.max(0,Math.min(1,y/(h(s)-5))));
+        for(const d of [-8,8])for(const ds of [-3,3])b.beam('steel',[s+ds*1.5,d*1.15,0],[s+ds,d,h(s)-7],0.65,0.7,chunk,y=>Math.max(0,Math.min(1,y/(h(s)-7))));
+        for(let y=0;y<h(s)-8;y+=8){
+          const top=Math.min(h(s)-7,y+8);
+          b.beam('steel',[s,-8,y],[s,8,top],0.35,0.4,chunk,y=>Math.max(0,Math.min(1,y/(h(s)-7))));
+          b.beam('steel',[s,8,y],[s,-8,top],0.35,0.4,chunk,y=>Math.max(0,Math.min(1,y/(h(s)-7))));
         }
-      }else if(i && Math.abs(s-p.landmarks.channel)>130)b.pier(s,h(s)-5,20,5,false,chunk);
+      }else if(i && Math.abs(s-p.landmarks.channel)>130 && Math.abs(s-p.landmarks.island)>65)b.pier(s,h(s)-7,20,5,false,chunk);
     }
   }
   // Raised Seaway Warren through-truss; no pier in the shipping channel.
@@ -130,19 +130,7 @@ export function createJacquesCartier({detail='near'}={}){
     b.beam('steel',[s,-10.2,h(s)+14],[s,10.2,h(s)+14],0.3,0.4,3);
   }
   for(const s of [channel-120,channel+120])b.pier(s,h(s)-1.1,22,6,false,3);
-  // The island pavilion belongs below the roadway. Its mapped footprint is
-  // retained; vertical proportions follow the renderer's 5m island datum.
-  const footprint=alignment.jacques.pavilion.footprint.map(ll=>p.bridgeLocal(...ll));
-  const shape=new Shape();footprint.forEach((v,i)=>i?shape.lineTo(v.x,-v.z):shape.moveTo(v.x,-v.z));
-  const pavilion=new ExtrudeGeometry(shape,{depth:3.9,bevelEnabled:false,steps:1});
-  pavilion.rotateX(-Math.PI/2);b.put(pavilion,'concrete',4,0);
-  if(detail==='near')for(let i=1;i<footprint.length;i++){
-    const a=footprint[i-1],c=footprint[i],n=Math.floor(Math.hypot(c.x-a.x,c.z-a.z)/4);
-    for(let j=0;j<n;j++){
-      const t=(j+0.5)/n,x=a.x+(c.x-a.x)*t,z=a.z+(c.z-a.z)*t;
-      b.bar('glass',[x,1.6,z],[x,2.7,z],1.2,0.2,4,false,0);
-    }
-  }
+  addJacquesPavilion(b,p,detail);
   if(detail==='near')for(let s=0;s<L;s+=15)for(const d of [-5.49,-1.83,1.83,5.49])b.strip('paint',s,Math.min(s+6,L),d-0.07,d+0.07,0.025,0,Math.floor(s/500));
   return b.finish();
 }

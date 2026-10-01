@@ -10,25 +10,26 @@ export function assetBuilder(spec,detail='near') {
   const root=new THREE.Group();root.name=spec.name;
   root.userData={landmark:spec.id,units:'metres',origin:spec.origin,detail,provenance:'Original procedural geometry; mapped placement © OpenStreetMap contributors'};
   const batches=new Map(),materials=new Map();
-  function put(geometry,material,chunk=0,lift=1) {
+  function put(geometry,material,chunk=0,lift=1,baseStation=-1) {
     if(detail==='far')chunk=0;
     geometry.deleteAttribute('uv');
     if(!geometry.index)geometry.setIndex(Array.from({length:geometry.attributes.position.count},(_,i)=>i));
     const p=geometry.attributes.position;
     geometry.setAttribute('bridgeLift',new THREE.Float32BufferAttribute(Array.from({length:p.count},(_,i)=>typeof lift==='function'?lift(p.getY(i)):lift),1));
+    if(spec.rigidFoundations)geometry.setAttribute('bridgeBase',new THREE.Float32BufferAttribute(new Float32Array(p.count).fill(baseStation),1));
     const key=`${chunk}:${material}`;
     if(!batches.has(key))batches.set(key,{material,chunk,geometries:[]});
     batches.get(key).geometries.push(geometry);
   }
-  function box(material,center,size,angle=0,chunk=0,lift=1) {
-    const g=new THREE.BoxGeometry(...size);g.rotateY(angle);g.translate(...center);put(g,material,chunk,lift);
+  function box(material,center,size,angle=0,chunk=0,lift=1,baseStation=-1) {
+    const g=new THREE.BoxGeometry(...size);g.rotateY(angle);g.translate(...center);put(g,material,chunk,lift,baseStation);
   }
-  function bar(material,a,b,width,depth=width,chunk=0,round=false,lift=1) {
+  function bar(material,a,b,width,depth=width,chunk=0,round=false,lift=1,baseStation=-1) {
     const av=new THREE.Vector3(...a),bv=new THREE.Vector3(...b),direction=bv.clone().sub(av),length=direction.length();
     if(length<1e-5)return;
     const g=round?new THREE.CylinderGeometry(width,width,length,detail==='near'?5:3,1,true):new THREE.BoxGeometry(width,length,depth);
     g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),direction.normalize()));
-    g.translate(...av.add(bv).multiplyScalar(0.5).toArray());put(g,material,chunk,lift);
+    g.translate(...av.add(bv).multiplyScalar(0.5).toArray());put(g,material,chunk,lift,baseStation);
   }
   function finish(){
     let triangles=0;
@@ -79,5 +80,5 @@ export function bridgeBuilder(profile,detail){
     const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setIndex(indices);g.computeVertexNormals();b.put(g,'stone',chunk,y=>Math.max(0,Math.min(1,(y+1)/(top+1))));
     box('concrete',s,0,top-0.3,depth+1,width+1,0.6,chunk);
   }
-  return {...b,xyz,box,beam,strip,pier};
+  return {...b,localBox:b.box,xyz,box,beam,strip,pier};
 }
