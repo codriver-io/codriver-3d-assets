@@ -1,0 +1,66 @@
+{
+  "id": "lefty-odoul-bridge",
+  "name": "Lefty O'Doul Bridge (Third Street Bridge)",
+  "kind": "bridge",
+  "origin": [
+    -122.390281,
+    37.776798
+  ],
+  "height": 25.8,
+  "padM": 52,
+  "frontageBearing": 327.5,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the pavement of Third Street on the flat Peregrine basemap (the real roadway is about 5 m above the channel water). Nothing is below y=0: the hanging fenders, piers and the channel are not modelled. No absolute altitude, terrain or sea level is baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Superstructure only, closed position (traffic open, leaf down). Sourced: 1933 Strauss heel-trunnion single-leaf bascule; 295 ft (89.9 m) overall, 143 ft (43.6 m) Pratt through-truss leaf, 71.5 ft roadway, 1 main and 5 fixed approach spans; roadway cantilevered out beyond the western truss line (HistoricBridges.org), so the two truss planes are not symmetric about the road (west plane V -6.7, east +10.2, pulled inboard so that no low steel enters the mapped westernmost lane or the cycle track); concrete counterweights on the north (ballpark) heel end; operator house and watchman hut on the south-east piers; axis bearing 327.5 deg, 44.6 m leaf and 24.5 m width from the mapped OSM bridge way, lane centre lines from the OSM carriageways. Estimated from photographs: every height above the road (top chord 8.8 m, heel knuckle 22.8 m, counterweights 6.3 to 17.6 m, tower column 18 m), the heel frame and tail-truss layout, the 8 x 10.5 x 3.6 m block size, member sizes, panel count (10), house sizes and details, railings, lamps, colours. The leaf cannot be shown raised.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/lefty-odoul-bridge-near.glb",
+      "bytes": 304112,
+      "triangles": 5480,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.41550636291504,
+          0.0599999725818634,
+          -43.60614776611328
+        ],
+        "max": [
+          41.729618072509766,
+          25.799999237060547,
+          35.799373626708984
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/lefty-odoul-bridge-far.glb",
+      "bytes": 100160,
+      "triangles": 1708,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -30.27369499206543,
+          0.0599999725818634,
+          -43.54085922241211
+        ],
+        "max": [
+          40.68967056274414,
+          25.799999237060547,
+          35.7272834777832
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/lefty-odoul-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

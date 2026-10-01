@@ -1,0 +1,66 @@
+{
+  "id": "palace-of-fine-arts",
+  "name": "Palace of Fine Arts",
+  "kind": "building",
+  "origin": [
+    -122.4484043,
+    37.8029184
+  ],
+  "height": 49.4,
+  "padM": 145,
+  "frontageBearing": 80,
+  "axisDeg": 10,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the ground at the foot of the rotunda steps); no absolute altitude. The lagoon and its banks are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, bearing (arches at 10 deg), pier and colonnade positions, the hall sector, its 12/15/17 m levels and the 49.4 m height come from the mapped OSM building parts and the NRHP/Wikipedia figure of 162 ft; column and arch sizes, entablature stacks, capitals, planter boxes and weeping-woman figures, attic panels and the dome profile are estimated from photographs and simplified. Column capitals are a flared block, fluting is a faceted shaft, sculpture is blocks. No interior, no lagoon, no planting.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palace-of-fine-arts-near.glb",
+      "bytes": 1106896,
+      "triangles": 19140,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -96.78900909423828,
+          -1.941190933243595e-15,
+          -133.46653747558594
+        ],
+        "max": [
+          53.62705993652344,
+          49.400001525878906,
+          137.73641967773438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palace-of-fine-arts-far.glb",
+      "bytes": 294292,
+      "triangles": 5108,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -95.28619384765625,
+          -1.941190933243595e-15,
+          -133.46653747558594
+        ],
+        "max": [
+          53.62705993652344,
+          49.400001525878906,
+          137.73641967773438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/palace-of-fine-arts/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

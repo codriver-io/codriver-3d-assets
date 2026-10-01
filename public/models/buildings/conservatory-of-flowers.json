@@ -1,0 +1,67 @@
+{
+  "id": "conservatory-of-flowers",
+  "name": "Conservatory of Flowers",
+  "kind": "building",
+  "origin": [
+    -122.460228,
+    37.772612
+  ],
+  "height": 18,
+  "padM": 48,
+  "frontageBearing": 174,
+  "axisDeg": 5.9,
+  "ownTolM": 0.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the foot of the masonry foundation course on the building terrace; the 14-step entrance stair, the lawn terraces and the slope of Conservatory Valley are not modelled. No absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan and axis from OSM way 30675038; dome diameter, drum and lantern heights, wing eave and ridge heights and the rear service houses are estimated from published photographs and an aerial view. Glazing is opaque (glass and glow materials); the glass panes are not individually modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/conservatory-of-flowers-near.glb",
+      "bytes": 386672,
+      "triangles": 7722,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -37.438663482666016,
+          0,
+          -19.6251163482666
+        ],
+        "max": [
+          37.870391845703125,
+          18,
+          18.768930435180664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/conservatory-of-flowers-far.glb",
+      "bytes": 126728,
+      "triangles": 2423,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -37.438663482666016,
+          0,
+          -19.6251163482666
+        ],
+        "max": [
+          37.870391845703125,
+          18,
+          18.768930435180664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/conservatory-of-flowers/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

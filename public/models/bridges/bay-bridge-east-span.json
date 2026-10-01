@@ -1,0 +1,66 @@
+{
+  "id": "bay-bridge-east-span",
+  "name": "San Francisco–Oakland Bay Bridge (East Span)",
+  "kind": "bridge",
+  "origin": [
+    -122.3585059,
+    37.8152652
+  ],
+  "height": 160,
+  "padM": 120,
+  "realDeckM": 57,
+  "frontageBearing": 54.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the water); no absolute altitude, DEM or latitude stretch is baked in. The deck is authored at an estimated 48 m over the SAS and eases to the approach roads at runtime (bridge-profile.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Self-anchored suspension span with the published spans (10 + 180 + 385 + 49.385 m), the single 160 m four-leg tower on its mapped outline, one looped main cable in four inclined planes, suspenders every 10 m to the outer box edges, twin decks 41.8 m apart (mapped) with the crossbeams at their mapped stations, and the bike path on the south. Estimated: deck heights (48 m over the SAS, 22 m at E16), Skyway pier stations (E3 160 m past E2, 9 x 160 m then 4 x 122.5 m), girder haunch (5.5 to 9 m), tower leg sections and shear-link spacing, cable sag, the YBI transition and Oakland touchdown structures. The flat-map ramps are a convention, not survey.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/bay-bridge-east-span-near.glb",
+      "bytes": 2760564,
+      "triangles": 72330,
+      "drawCalls": 33,
+      "bounds": {
+        "min": [
+          -340.064697265625,
+          0,
+          -798.2470703125
+        ],
+        "max": [
+          2856.95703125,
+          159.5,
+          278.3414306640625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/bay-bridge-east-span-far.glb",
+      "bytes": 817924,
+      "triangles": 22140,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -340.064697265625,
+          0,
+          -798.2470703125
+        ],
+        "max": [
+          2856.95703125,
+          159.5,
+          278.3414306640625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/bay-bridge-east-span/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

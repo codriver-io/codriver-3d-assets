@@ -32,6 +32,7 @@
     "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
     "build:paris-palaces": "node scripts/build-paris-palaces.mjs",
     "build:toronto-landmarks": "node scripts/build-toronto-landmarks.mjs --all",
+    "build:san-francisco-landmarks": "node scripts/build-san-francisco-landmarks.mjs --all",
     "test:browser": "node scripts/test-browser.mjs",
     "thumbnails:build": "node scripts/capture-thumbnails.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",

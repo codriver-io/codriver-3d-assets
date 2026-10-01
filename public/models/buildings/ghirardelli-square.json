@@ -1,0 +1,69 @@
+{
+  "id": "ghirardelli-square",
+  "name": "Ghirardelli Square",
+  "kind": "building",
+  "origin": [
+    -122.4230036,
+    37.8058609
+  ],
+  "height": 34.5,
+  "padM": 80,
+  "frontageBearing": 350.6,
+  "gridDeg": 9.4,
+  "millDeg": -4.7,
+  "signWidthM": 46.3,
+  "signHeightM": 5.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The real site climbs about 10 m from Beach St to North Point St in terraces; every building is rigid on y=0 and the terraces are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The sign size (152 ft x 19 ft), the OSM outlines, Cocoa and Chocolate heights (22 m) are sourced. Storey and cornice heights, the Mustard, Clock Tower Building and Woolen Mill heights (OSM gives 10 m), the clock tower height (over 100 ft: modelled 34.5 m), roof forms, window counts and the sign scaffold are estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ghirardelli-square-near.glb",
+      "bytes": 549576,
+      "triangles": 10196,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -63.5317268371582,
+          0,
+          -51.59968566894531
+        ],
+        "max": [
+          70.86893463134766,
+          34.5,
+          51.293697357177734
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ghirardelli-square-far.glb",
+      "bytes": 145368,
+      "triangles": 2532,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -63.5317268371582,
+          0,
+          -51.59968566894531
+        ],
+        "max": [
+          70.86893463134766,
+          34.5,
+          51.293697357177734
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/ghirardelli-square/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

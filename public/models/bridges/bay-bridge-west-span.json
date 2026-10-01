@@ -1,0 +1,66 @@
+{
+  "id": "bay-bridge-west-span",
+  "name": "San Francisco–Oakland Bay Bridge (West Span)",
+  "kind": "bridge",
+  "origin": [
+    -122.3778604,
+    37.7981899
+  ],
+  "height": 154,
+  "padM": 60,
+  "frontageBearing": 40.3,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the bay at low water); no absolute altitude, DEM or latitude stretch is baked in. Towers, piers and anchorages stand on y=0. The decks are authored at estimated heights from the published clearance and tower heights; their ends ease to the approach roads at runtime (bridge-profile.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Two suspension bridges end to end (side spans 1160 ft, main spans 2310 ft, HAER CA-32) sharing the central anchorage W4, with every support placed on its mapped OSM outline. Estimated: the deck elevations (from the 220 ft clearance, the 35 ft truss depth and the tower heights), the truss panel and member sizes, the tower bracing proportions, the anchorages above water, the cable sag. On the flat map the deck rises from the SoMa viaduct to the San Francisco anchorage and falls from tower W6 to the Yerba Buena Island tunnel, which the real bridge does not.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/bay-bridge-west-span-near.glb",
+      "bytes": 2456076,
+      "triangles": 58491,
+      "drawCalls": 29,
+      "bounds": {
+        "min": [
+          -1696.9393310546875,
+          -0.10000000149011612,
+          -1338.772705078125
+        ],
+        "max": [
+          1134.818359375,
+          154.10000610351562,
+          1830.613525390625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/bay-bridge-west-span-far.glb",
+      "bytes": 430136,
+      "triangles": 11004,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -1696.9393310546875,
+          -0.10000000149011612,
+          -1338.772705078125
+        ],
+        "max": [
+          1134.818359375,
+          153.39999389648438,
+          1830.613525390625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/bay-bridge-west-span/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "golden-gate-bridge",
+  "name": "Golden Gate Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.4785625,
+    37.8197595
+  ],
+  "height": 227.4,
+  "padM": 60,
+  "frontageBearing": 354.7,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y = 0 is mean high water on the flat Peregrine basemap; no absolute altitude, DEM or latitude stretch is baked in. The deck is authored at its published height (road 75.4 m: towers 227.4 m above the water, 152 m above the roadway) from pylon S2 to pylon N1, and its ends ease to the approach roads at run time (bridge-profile.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: main span 1,280.2 m, side spans 342.9 m, towers 227.4 m above water and 152 m above the roadway, mid-span clearance 67 m, cables 27.4 m apart and 0.92 m thick, suspenders every 15.24 m, roadway 18.9 m between kerbs with 3.05 m sidewalks, Fort Point arch 97 m. Mapped: tower, pylon and anchorage positions, tower leg setbacks and portal strut heights (OSM building parts). Estimated: cable sag and side-span cable ends, leg recesses and strut ornament, the X-bracing below the deck, truss panel layout, the Fort Point arch rise and web, approach viaduct bents, anchorage massing above ground, lamp spacing. Flat-map convention: the deck is level from pylon S2 to pylon N1 and ramps over 900 m at each end down to the approach roads (steepest grade 12.6 %), over the approach viaducts and out along the mapped toll plaza / Presidio Parkway and Redwood Highway.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/golden-gate-bridge-near.glb",
+      "bytes": 2014324,
+      "triangles": 52474,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -531.1968994140625,
+          -0.9599999785423279,
+          -1723.9119873046875
+        ],
+        "max": [
+          659.2236938476562,
+          227.39999389648438,
+          1796.587890625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/golden-gate-bridge-far.glb",
+      "bytes": 475424,
+      "triangles": 12482,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -531.1968994140625,
+          -0.9599999785423279,
+          -1723.9119873046875
+        ],
+        "max": [
+          659.2236938476562,
+          227.39999389648438,
+          1796.587890625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/golden-gate-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

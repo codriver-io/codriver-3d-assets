@@ -1,0 +1,66 @@
+{
+  "id": "alcatraz-island",
+  "name": "Alcatraz Island",
+  "kind": "building",
+  "origin": [
+    -122.4229316,
+    37.8266302
+  ],
+  "height": 28.8,
+  "padM": 75,
+  "frontageBearing": 225.95,
+  "bearingDeg": 135.95,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the cellhouse yard level, about 38 m above the bay; the island rock is not part of the model. The lighthouse base stands 3.2 m above it; the Water Tower footings reach 2.5 m below it (its real ground is about 9 m lower) and its tank top is set at its true height relative to the cellhouse roof (about 5 m above it), so the tower is about 23 m tall instead of 29 m.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the mapped outlines, 25.6 m (84 ft) lighthouse, six-legged water tower with a 13 m tank (the published 94 ft / 29 m height is not reproduced: legs are shortened to keep its true height relative to the cellhouse roof), cellhouse three storeys. Estimated from photographs: storey and parapet heights, window rhythm, roof monitors, the ruin walls, the yard-wall height and guard towers. Grade differences between buildings come from a coarse public DEM and are approximate.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/alcatraz-island-near.glb",
+      "bytes": 613732,
+      "triangles": 11418,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -118.1998291015625,
+          -2.6060311794281006,
+          -112.83586883544922
+        ],
+        "max": [
+          99.85525512695312,
+          28.799999237060547,
+          46.54119110107422
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/alcatraz-island-far.glb",
+      "bytes": 168604,
+      "triangles": 3002,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -118.02484893798828,
+          -2.603851318359375,
+          -112.83586883544922
+        ],
+        "max": [
+          99.85525512695312,
+          28.799999237060547,
+          46.54119110107422
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/alcatraz-island/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

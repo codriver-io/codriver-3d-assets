@@ -11,6 +11,9 @@ export function createBridgeProfile(spec) {
   let BRIDGE_LENGTH = 0;
   ALIGNMENT.forEach((p, i) => { if (i) BRIDGE_LENGTH += Math.hypot(p.x - ALIGNMENT[i-1].x, p.z - ALIGNMENT[i-1].z); p.s = BRIDGE_LENGTH; });
   const halfWidth = spec.width / 2, railGap = spec.railGap || 0, ROAD_EDGES = spec.roadEdges;
+  // Optional authored road edges that vary with the station (same shape as ROAD_EDGES), for an
+  // approach whose carriageways separate (Golden Gate Bridge). Absent, the constant edges apply.
+  const authoredEdges = spec.roadEdgesAt || (() => ROAD_EDGES);
   const bounds = { minX: Math.min(...ALIGNMENT.map(p => p.x)) - halfWidth, maxX: Math.max(...ALIGNMENT.map(p => p.x)) + halfWidth,
     minZ: Math.min(...ALIGNMENT.map(p => p.z)) - halfWidth, maxZ: Math.max(...ALIGNMENT.map(p => p.z)) + halfWidth };
   function projectBridge(x, z) {
@@ -50,10 +53,10 @@ export function createBridgeProfile(spec) {
     if(sections && !sides) {
       // An incomplete tile or polygon sliver cannot shrink a carriageway to
       // a fraction of its width. Fit from complete neighbouring samples.
-      sides=ROAD_EDGES.map(([a,b],i)=>sections.filter(v=>v.edges[i] && v.edges[i][1]-v.edges[i][0]>=Math.max(2,(b-a)*0.6)));
+      sides=ROAD_EDGES.map((_,i)=>sections.filter(v=>{const [a,b]=authoredEdges(v.s)[i];return v.edges[i] && v.edges[i][1]-v.edges[i][0]>=Math.max(2,(b-a)*0.6);}));
       cache.set(sections,sides);
     }
-    return ROAD_EDGES.map((edges,side)=>{
+    return authoredEdges(s).map((edges,side)=>{
       const list=sides?.[side];
       if(list?.length) {
         let lo=0,hi=list.length;while(lo<hi){const m=(lo+hi)>>>1;if(list[m].s<s)lo=m+1;else hi=m;}
@@ -68,7 +71,7 @@ export function createBridgeProfile(spec) {
     // Pedestrian-only landmarks have no vehicle pavement to fit.
     if (!ROAD_EDGES.length) return d;
     if(railGap && Math.abs(d)<railGap) return d;
-    const side=ROAD_EDGES.length===1?0:d<0?0:1,old=ROAD_EDGES[side],next=roadEdges(s,joins,sections)[side];
+    const side=ROAD_EDGES.length===1?0:d<0?0:1,old=authoredEdges(s)[side],next=roadEdges(s,joins,sections)[side];
     if(d<old[0])return d+next[0]-old[0];if(d>old[1])return d+next[1]-old[1];
     return next[0]+(d-old[0])/(old[1]-old[0])*(next[1]-next[0]);
   }
@@ -77,7 +80,12 @@ export function createBridgeProfile(spec) {
     if(p.x<bounds.minX-10||p.x>bounds.maxX+10||p.z<bounds.minZ-10||p.z>bounds.maxZ+10)return null;
     const q=projectBridge(p.x,p.z);
     if(q.beyond || !roadEdges(q.s,joins,sections).some(([a,b])=>q.lateral>=a-0.6 && q.lateral<=b+0.6))return null;
-    if(Number.isFinite(heading)){const h=heading*Math.PI/180;if(Math.abs(Math.sin(h)*q.tx-Math.cos(h)*q.tz)<(spec.headingAlignment??0.8))return null;}
+    if(Number.isFinite(heading)){
+      const h=heading*Math.PI/180,along=Math.sin(h)*q.tx-Math.cos(h)*q.tz;
+      if(Math.abs(along)<(spec.headingAlignment??0.8))return null;
+      // Stacked decks (optional spec.deckOffset): each travel direction reads its own deck.
+      if(spec.deckOffset)return deckHeight(q.s,approaches)+spec.deckOffset(q.s,Math.sign(along));
+    }
     return deckHeight(q.s,approaches);
   }
   function resampleBridgeLine(line) {
@@ -92,6 +100,9 @@ export function createBridgeProfile(spec) {
     }
     return changed?{...line,coords,segmentMap}:line;
   }
+  /** Metres from the deck surface to the deck a vehicle travelling toward increasing (direction
+   * +1) or decreasing (-1) station drives on: 0 unless the spec stacks its two directions. */
+  const deckOffset=(s,direction)=>spec.deckOffset?spec.deckOffset(Math.max(0,Math.min(BRIDGE_LENGTH,s)),direction):0;
   return {surfaceStep:5,CHAMPLAIN,STRETCH,ALIGNMENT,BRIDGE_LENGTH,ROAD_EDGES,halfWidth,railGap,bounds,landmarks,knots,groundControls,
-    bridgeLocal,bridgeLngLat,projectBridge,stationAt,bridgePoint,deckHeight,roadEdges,fittedLateral,bridgeRoadHeight,resampleBridgeLine};
+    bridgeLocal,bridgeLngLat,projectBridge,stationAt,bridgePoint,deckHeight,deckOffset,roadEdges,fittedLateral,bridgeRoadHeight,resampleBridgeLine};
 }

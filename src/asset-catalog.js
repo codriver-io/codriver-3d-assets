@@ -3,7 +3,7 @@ const params = new URLSearchParams(location.search), mobile = matchMedia('(max-w
 let assets = [], kind = params.get('kind') || 'all', city = params.get('city') || 'all';
 let selected = params.get('asset') || 'pont-jacques-cartier', shown, viewUrl;
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-const cityOf = entry => entry.city || ['Montréal', 'Paris', 'Toronto'].find(name => normalize(entry.location).includes(normalize(name))) || entry.location.split(/[·,]/)[0].trim();
+const cityOf = entry => entry.city || ['Montréal', 'Paris', 'Toronto', 'San Francisco'].find(name => normalize(entry.location).includes(normalize(name))) || entry.location.split(/[·,]/)[0].trim();
 function el(tag, text, className) { const node = document.createElement(tag); if (text != null) node.textContent = text; if (className) node.className = className; return node; }
 function link(label, url, className) { const a = el('a', label, className); a.href = url; return a; }
 function updateUrl() {

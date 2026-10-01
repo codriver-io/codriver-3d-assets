@@ -4327,6 +4327,2429 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "555-california-street",
+      "name": "555 California Street",
+      "kind": "building",
+      "location": "Financial District · San Francisco, California",
+      "status": "ready",
+      "description": "The former Bank of America Center (Wurster, Bernardi & Emmons with SOM, 1969): a 237 m tower of dark carnelian-granite and bronze-glass bay windows. The mapped sawtooth plan is extruded as one prism per facet, with four corner arms to the 226 m shaft top, an outer layer of bays whose teeth stop at different heights in stepped cutouts with granite ledges, an inset 237 m crown block with roof plant and masts, two louvre floors and the low pavilion beside the tower.",
+      "manifest": "/models/buildings/555-california-street.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/555-california-street/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks 555-california-street",
+        "provenance": "Original procedural geometry authored 2026-10-01 from published dimensions and photographs studied for proportion only; no scan, traced mesh, photograph or texture in the repository or the GLB. The plan (sawtooth zigzag of the outline, the 52-level shaft with corner arms, the four 48-level outer strips, the 237 m crown block and the 1-level pavilion) is traced from OpenStreetMap ways 288511106, 1244283836, 1244283832-5, 1243267628 and 1244283830, © OpenStreetMap contributors (ODbL 1.0), fetched 2026-10-01 through the shared Overpass helper. Comparison photographs are Wikimedia Commons files kept in ignored tmp/san-francisco/555-california-street/refs/: '555 California Street from Coit Tower' by Supercarwaar (CC BY-SA 4.0); '555 California Street from One Montgomery, San Francisco' by The wub (CC BY-SA 4.0); '555 California Street 2021' and '555 California from ground' by Dead.rabbit (CC BY-SA 4.0); 'Perspective view of 555 California Street building, San Francisco, California, USA' by Semiautonomous (CC BY-SA 4.0); '555 California Street Building, San Francisco (TK)' by Tobias Kleinlercher (CC BY-SA 3.0); 'City and US Flags in front of 555 California Street in San Francisco' by Ronnie Macdonald (CC BY 2.0); '555 California Street 1 2023-12-29' by Fastily (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia · 555 California Street",
+            "url": "https://en.wikipedia.org/wiki/555_California_Street"
+          },
+          {
+            "label": "SOM · 555 California Street (779 ft, 52 storeys, carnelian granite, bay windows, Sierra-inspired setbacks)",
+            "url": "https://www.som.com/projects/555-california-street/"
+          },
+          {
+            "label": "SkyscraperPage · 555 California Street (143 x 243 ft footprint, 779 ft)",
+            "url": "https://skyscraperpage.com/cities/?buildingID=238"
+          },
+          {
+            "label": "Mapped complex outline · OSM way 288511106",
+            "url": "https://www.openstreetmap.org/way/288511106"
+          },
+          {
+            "label": "Mapped 52-level shaft · OSM way 1244283836",
+            "url": "https://www.openstreetmap.org/way/1244283836"
+          },
+          {
+            "label": "Mapped 237 m crown block · OSM way 1243267628",
+            "url": "https://www.openstreetmap.org/way/1243267628"
+          },
+          {
+            "label": "Photograph · 555 California Street from Coit Tower (Supercarwaar, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:555_California_Street_from_Coit_Tower.jpg"
+          },
+          {
+            "label": "Photograph · 555 California Street from One Montgomery (The wub, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:555_California_Street_from_One_Montgomery,_San_Francisco.jpg"
+          },
+          {
+            "label": "Photograph · 555 California from ground (Dead.rabbit, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:555_California_from_ground.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/555-california-street/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=555-california-street",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=555-california-street&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=555-california-street&view=facade"
+          },
+          {
+            "label": "Roof and crown",
+            "url": "/asset-preview.html?asset=555-california-street&view=roof"
+          },
+          {
+            "label": "Stepped cutouts",
+            "url": "/asset-preview.html?asset=555-california-street&view=cutouts"
+          },
+          {
+            "label": "California Street face",
+            "url": "/asset-preview.html?asset=555-california-street&view=north"
+          },
+          {
+            "label": "Hall",
+            "url": "/asset-preview.html?asset=555-california-street&view=hall"
+          }
+        ]
+      },
+      "notes": "Y=0 flat-map grade, no altitude baked in (the real site is about 11 m above sea level). Sourced: 237 m / 779 ft crown roof, 52 storeys, carnelian granite with faceted bronze-tinted bay windows, stepped upper cutouts. Mapped (OSM): sawtooth plan about 78 x 52 m at -9.3 degrees (6 m tooth pitch, about 2.3 m deep), 226 m / 52-level shaft with four corner arms, 48-level outer bay layer, 237 m inset crown block, 1-level pavilion on the east side. Estimated from photographs: 4.25 m floor pitch and window/spandrel split, pier width, the per-tooth cutout heights of the outer layer (OSM carries only the common 48-level figure; the cutouts are an interpretation of photographs and may not match tooth for tooth), louvre floors at about 58 m and 157 m, the 11.5 m pavilion height, roof plant and masts (tip 240 m), the lit-window pattern (night and 22% of panes in the self-lit glow material), far LOD merges windows into one glass span per facet between the louvre floors with about 80 lit-floor bands (glow) so it shows lights at night; window stand-off in the far LOD is 0.4 m (lit bands 0.65 m) so it cannot z-fight at distance. Not modelled: the plaza, steps, entrance arcade recess, the Transcendence sculpture, lobby interior; those stay provider geometry. Tesla hardware cost unmeasured.",
+      "documentation": "docs/assets/san-francisco-555-california-street.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "coit-tower",
+      "name": "Coit Tower",
+      "kind": "building",
+      "location": "1 Telegraph Hill Boulevard · San Francisco, California",
+      "status": "ready",
+      "description": "Coit Memorial Tower (Arthur Brown Jr. and Henry Howard, 1933): the 64 m unpainted-concrete column with 24 shallow flutes, the three-tier arched observation crown with balustraded alcoves, small windows, open arcade and cap, on a stepped Art Deco base of glazed rotunda, entrance terrace, step, porch and block.",
+      "manifest": "/models/buildings/coit-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/coit-tower/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks coit-tower",
+        "provenance": "Original procedural geometry authored 2026-10-01. Footprint, shaft circle, block, porch and step from OpenStreetMap way 28824850 and building:part ways 451331530, 451331532-535 (© OpenStreetMap contributors, ODbL 1.0), read through the OSM API and the shared Overpass helper. Reference photographs used only to compare and kept out of the repository (Wikimedia Commons): 'Coit Memorial Tower 01', '02', '03', '07' (Almonroth, CC BY-SA 3.0), 'Coit Memorial Tower 05', '06' (Almonroth, public domain), 'Coit Memorial Tower, San Francisco.JPG' (Erraticrabbit, public domain), 'Coit Tower, San Francisco (south facing side)' (Wgreaves, CC BY-SA 3.0), 'Coit Tower from the ground' (CC0), 'Coit Tower and Columbus Statue' (JaGa, CC BY-SA 3.0), 'Coit Tower with statue' (James Macfarlane, public domain), 'Coit Tower From Above (Unsplash)' (Sasha, CC0), 'Parking infront of Coit Telegraph tower in SFO' (Nagendraprasad.lr, CC BY-SA 3.0), 'Coit Tower Aproach' (Kognos, CC BY 4.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Coit Tower",
+            "url": "https://en.wikipedia.org/wiki/Coit_Tower"
+          },
+          {
+            "label": "Coit Tower official site",
+            "url": "https://coittower.org"
+          },
+          {
+            "label": "SF Recreation and Parks · Coit Tower brochure",
+            "url": "https://sfrecpark.org/DocumentCenter/View/7387/CoitTowerBrochure_V5"
+          },
+          {
+            "label": "OSM tower · way 28824850",
+            "url": "https://www.openstreetmap.org/way/28824850"
+          },
+          {
+            "label": "OSM shaft · way 451331530",
+            "url": "https://www.openstreetmap.org/way/451331530"
+          },
+          {
+            "label": "OSM square block · way 451331534",
+            "url": "https://www.openstreetmap.org/way/451331534"
+          },
+          {
+            "label": "OSM base outline · way 451331532",
+            "url": "https://www.openstreetmap.org/way/451331532"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Coit_Tower"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/coit-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=coit-tower&view=overview",
+        "views": [
+          {
+            "label": "Whole tower from the entrance side",
+            "url": "/asset-preview.html?asset=coit-tower&view=overview"
+          },
+          {
+            "label": "Entrance terrace, porch and block",
+            "url": "/asset-preview.html?asset=coit-tower&view=facade"
+          },
+          {
+            "label": "Observation crown from the front",
+            "url": "/asset-preview.html?asset=coit-tower&view=crown"
+          },
+          {
+            "label": "Crown from above",
+            "url": "/asset-preview.html?asset=coit-tower&view=roof"
+          },
+          {
+            "label": "Glazed rotunda at the rear",
+            "url": "/asset-preview.html?asset=coit-tower&view=rotunda"
+          },
+          {
+            "label": "Fluted shaft",
+            "url": "/asset-preview.html?asset=coit-tower&view=shaft"
+          },
+          {
+            "label": "Porch, step and phoenix relief",
+            "url": "/asset-preview.html?asset=coit-tower&view=entrance"
+          }
+        ]
+      },
+      "notes": "Height 210 ft / 64 m, the 180 ft shaft, 24 flutes 15 degrees apart, the 18 in taper and the observation level 32 ft below the top are published; the shaft circle (r 5.51 m), the 11.4 m block (12 m), the porch (10 m), the step (8 m), the rotunda arcs and the 345.6 degree front are mapped from OSM. Estimated from photographs: crown arch sizes and the 0.46 m step-in of the crown wall, rotunda height (8.5 m) and terrace height (6.5 m), flute depth (0.15 m), stair slits, balustrade, oculus and relief. The pour joints are not modelled. The Columbus statue (removed June 2020), flagpole, entrance steps, handrails, the car loop and the hill are not modelled; the interior is empty; the arcade cavity and alcove back walls use the self-lit glow material so the crown reads floodlit at night. y=0 is the entrance forecourt grade on the flat map. No Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-coit-tower.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ferry-building",
+      "name": "Ferry Building",
+      "kind": "building",
+      "location": "1 Ferry Building, The Embarcadero · San Francisco, California",
+      "status": "ready",
+      "description": "The 1898 Beaux-Arts ferry terminal at the foot of Market Street: the 201.6 m block along the Embarcadero with its two-storey arcaded city front, the projecting central pavilion of three great arched windows between paired columns, the 75 m clock tower of stepped stages with four lit 6.7 m dials and a copper cupola, the low Grand Nave roof with its glazed clerestories, the arched bay side with its walkway canopy, and the lit PORT OF SAN FRANCISCO roof signs.",
+      "manifest": "/models/buildings/ferry-building.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/ferry-building/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks ferry-building",
+        "provenance": "Original procedural geometry authored 2026-10-01 (Codriver, with Claude). Plan, bearing (323.8 deg), pavilion projection, tower position and the 16.1 m pavilion height read from the OpenStreetMap ways 558731934, 24460886, 1189071405 and the tower building:parts 404449724 to 406710839 (OSM map API bbox fetch, 2026-10-01, © OpenStreetMap contributors, ODbL 1.0). Wikimedia Commons photographs were viewed for proportion and detail and are not redistributed: JaGa, 'San Francisco Ferry Building (cropped)' (CC BY-SA 4.0); Frank Schulenburg, 'Ferry Building clock tower as seen from the North' (CC BY-SA 4.0); Dllu, 'View of the Ferry Building from Pier 1, San Francisco dllu', 'Ferry Building at night', 'View of the Ferry Building from Treasure Island, San Francisco dllu' and 'San Francisco Ferry Building 2017' (CC BY-SA 4.0); King of Hearts, 'San Francisco Ferry Building January 2013 001' (CC BY-SA 3.0). No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · San Francisco Ferry Building",
+            "url": "https://en.wikipedia.org/wiki/San_Francisco_Ferry_Building"
+          },
+          {
+            "label": "OSM way 558731934 · San Francisco Ferry Building outline",
+            "url": "https://www.openstreetmap.org/way/558731934"
+          },
+          {
+            "label": "OSM way 24460886 · main building part, height 16.1 m",
+            "url": "https://www.openstreetmap.org/way/24460886"
+          },
+          {
+            "label": "OSM way 406710838 · clock tower cupola part",
+            "url": "https://www.openstreetmap.org/way/406710838"
+          },
+          {
+            "label": "OSM way 1189071405 · bay-side walkway roof",
+            "url": "https://www.openstreetmap.org/way/1189071405"
+          },
+          {
+            "label": "Wikimedia Commons · San Francisco Ferry Building (cropped).jpg (front elevation)",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Francisco_Ferry_Building_(cropped).jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Ferry Building clock tower as seen from the North.jpg (bay side)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ferry_Building_clock_tower_as_seen_from_the_North.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Ferry Building at night.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Ferry_Building_at_night.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · San Francisco Ferry Building January 2013 001.jpg (frontal elevation)",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Francisco_Ferry_Building_January_2013_001.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · View of the Ferry Building from Pier 1, San Francisco dllu.jpg (north end)",
+            "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Ferry_Building_from_Pier_1,_San_Francisco_dllu.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/ferry-building/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ferry-building&view=facade",
+        "views": [
+          {
+            "label": "Market Street front",
+            "url": "/asset-preview.html?asset=ferry-building&view=facade"
+          },
+          {
+            "label": "Pavilion, portals and paired columns",
+            "url": "/asset-preview.html?asset=ferry-building&view=pavilion"
+          },
+          {
+            "label": "Clock tower and cupola",
+            "url": "/asset-preview.html?asset=ferry-building&view=tower"
+          },
+          {
+            "label": "Aerial overview",
+            "url": "/asset-preview.html?asset=ferry-building&view=overview"
+          },
+          {
+            "label": "Grand Nave roof",
+            "url": "/asset-preview.html?asset=ferry-building&view=roof"
+          },
+          {
+            "label": "Bay side lunettes and canopy",
+            "url": "/asset-preview.html?asset=ferry-building&view=bayside"
+          },
+          {
+            "label": "Gabled north end",
+            "url": "/asset-preview.html?asset=ferry-building&view=end"
+          },
+          {
+            "label": "Port of San Francisco roof signs",
+            "url": "/asset-preview.html?asset=ferry-building&view=sign"
+          }
+        ]
+      },
+      "notes": "Mapped, not estimated: the 201.6 x 47.2 m plan and its bearing (323.8 deg), the 43.3 m pavilion projecting 8.9 m toward Market Street, the pavilion height (16.1 m), the tower's position and plan (12.3 x 11.3 m first stage, OSM) and its sourced height (245 ft = 75 m). Estimated from photographs: storey and window sizes (18 bays a wing at a 4.4 m pitch, 14 m cornice), the pavilion's column pairs and window proportions, the tower's stage heights (photograph proportions scaled to 75 m; OSM maps the stage tops 1-3 m higher above the belfry and the flagpole at 83.1 m), clock hands and numerals, the Grand Nave roof profile (ridge 17.5 m) and its clerestories, the bay-side glazing, lunette sizes (22 at a 9.2 m pitch), the end-wall gables, the PORT OF / SAN FRANCISCO sign size and position (block letters on steel rails), colours. The tower is rotated to the facade by the same 323.8 deg as the block. Not modelled: interior, the ferry gates, the Golden Gate Ferry Terminal roofs and the piers behind the building, the plaza lamp standards, flags, the tram stop.",
+      "documentation": "docs/assets/san-francisco-ferry-building.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ghirardelli-square",
+      "name": "Ghirardelli Square",
+      "kind": "building",
+      "location": "900 North Point Street · San Francisco, California",
+      "status": "ready",
+      "description": "The former Ghirardelli chocolate factory at Fisherman's Wharf: the red-brick Cocoa, Chocolate and Mustard buildings with their white crenellated parapets round the terraced plaza, the corbelled Clock Tower Building with its 34.5 m slate-roofed clock tower, the Wurster and Power House buildings on Beach St, the old Woolen Mill and, above all, the 46 m rooftop \"Ghirardelli\" sign (152 ft x 19 ft) on its steel scaffold facing the bay.",
+      "manifest": "/models/buildings/ghirardelli-square.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/ghirardelli-square/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks ghirardelli-square",
+        "provenance": "Original procedural geometry authored 2026-10-01 (geometry.js, ghirardelli-square-plan.js, -kit.js, -blocks.js, -tower.js, -sign.js) from the mapped OSM outlines and public photographs. Mapped footprints (17 OSM building ways, fetched 2026-10-01) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Ghirardelli Square Sign.JPG' (Ryan U, CC BY-SA 3.0), 'Ghirardelli from warf.JPG' (Bsteckler, CC BY-SA 3.0), 'Ghirardelli Square in San Francisco.jpg' (DroneEddie, CC BY-SA 4.0), 'Looking to North Point St from Larkin St, SF.jpg', 'Looking south-east from Aquatic Park Historic District, SF.jpg' and 'Ghirardelli Square entrance, Larkin St, SF.jpg' (Roman Eugeniusz, CC BY-SA 3.0), 'View from Fort Mason - March 2018 (0084).jpg' (Gregory Varnum, CC BY-SA 4.0), 'Ghirardelli Chocolate Square 12 / 21 / 29 2013-03-28.jpg' (FASTILY, CC BY-SA 3.0), 'San Francisco Ghirardelli square.jpg' (PictorialEvidence, CC BY-SA 3.0), 'Ghiradelli Square 2.JPG' (Candace Barnes, CC BY-SA 3.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Ghirardelli Square",
+            "url": "https://en.wikipedia.org/wiki/Ghirardelli_Square"
+          },
+          {
+            "label": "NRHP · Pioneer Woolen Mills and D. Ghirardelli Company (1982)",
+            "url": "https://noehill.com/sf/landmarks/nat1982002249.asp"
+          },
+          {
+            "label": "The Cultural Landscape Foundation · Ghirardelli Square",
+            "url": "https://www.tclf.org/landscapes/ghirardelli-square"
+          },
+          {
+            "label": "Hoodline · the restored Ghirardelli sign (19 ft x 152 ft)",
+            "url": "https://hoodline.com/2020/10/iconic-ghirardelli-sign-returns-to-ghirardelli-square-after-restoration/"
+          },
+          {
+            "label": "OSM footprint · Mustard Building (way 939539784)",
+            "url": "https://www.openstreetmap.org/way/939539784"
+          },
+          {
+            "label": "Photo · the sign (Ryan U, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ghirardelli_Square_Sign.JPG"
+          },
+          {
+            "label": "Photo · from the bay, Fort Mason (Gregory Varnum, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:View_from_Fort_Mason_-_March_2018_(0084).jpg"
+          },
+          {
+            "label": "Photo · night aerial (DroneEddie, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ghirardelli_Square_in_San_Francisco.jpg"
+          },
+          {
+            "label": "Photo · clock tower from Larkin St (Roman Eugeniusz, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ghirardelli_Square_entrance,_Larkin_St,_SF.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/ghirardelli-square/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ghirardelli-square&view=sign",
+        "views": [
+          {
+            "label": "The sign, from the bay",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=sign"
+          },
+          {
+            "label": "Overview from the bay (north-west)",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=overview"
+          },
+          {
+            "label": "Plaza facades, Mustard and Cocoa",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=facade"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=roof"
+          },
+          {
+            "label": "Clock tower from Larkin St",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=tower"
+          },
+          {
+            "label": "Clock dial",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=clock"
+          },
+          {
+            "label": "North Point St side, scaffold behind the sign",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=back"
+          },
+          {
+            "label": "Larkin St frontage",
+            "url": "/asset-preview.html?asset=ghirardelli-square&view=larkin"
+          }
+        ]
+      },
+      "notes": "Sourced: the sign (152 ft x 19 ft, one-sided, facing the bay, mixed-case serif 'Ghirardelli'), the 17 OSM outlines and their two grids (street grid bearing 80.6 deg, Woolen Mill block 94.7 deg), Cocoa and Chocolate 22 m / 5 storeys, clock tower 'over 100 ft', build years. Estimated from photographs: storey heights, the Mustard (12.6 m), Clock Tower Building (13.4 m), Apartment, Wurster, Power House and Woolen Mill heights (OSM gives 10 m for several, which photographs show is low), the tower's stage heights and the 34.5 m finial, roof forms (flat roofs behind parapets; low hipped tile roofs on the Wurster Building), window counts, the sign letter forms and its scaffold (letters are block strokes, not the real typeface). Not modelled: the plaza terraces and retaining walls, the fountain, the Larkin St arch sign, trees, the glass stair tower, the carousel, the gold board lettering and the slate zigzag. Every building sits rigid on y=0, though the real site climbs about 10 m from Beach St to North Point St. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 10196 triangles / 11 draws / 549044 bytes, far 2532 / 8 / 144840 bytes.",
+      "documentation": "docs/assets/san-francisco-ghirardelli-square.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "grace-cathedral",
+      "name": "Grace Cathedral",
+      "kind": "building",
+      "location": "1100 California Street, Nob Hill · San Francisco, California",
+      "status": "ready",
+      "description": "The Episcopal cathedral on Nob Hill (1928-1964, ferroconcrete French Gothic): twin flat-topped 53 m towers with stepped gablet buttresses and open belfries, rose window and Ghiberti-replica doors on the Taylor Street front above the Great Stairs, a buttressed nave, transepts, apse and chapel wing, and the 75 m flèche over the crossing.",
+      "manifest": "/models/buildings/grace-cathedral.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/grace-cathedral/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks grace-cathedral",
+        "provenance": "Original procedural geometry authored 2026-10-01 (geometry.js, grace-cathedral-tower.js, -front.js, -body.js, -kit.js, -plan.js) from the mapped OSM outline and parts and public photographs. Mapped footprint (OSM way 32946942 with building:part ways 939433954/-55/-56/-57 and building=chapel way 939433952) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Grace Cathedral San Francisco facade' (Everbruin, CC BY-SA 4.0), 'Exterior of Grace Cathedral-San Francisco-2' (Yair Haklai, CC BY-SA 4.0), 'The spire of Grace Cathedral, San Francisco' (HaeB, CC BY-SA 4.0), 'Flood Mansion and Grace Cathedral (San Francisco)' (Sanfranman59, CC BY-SA 4.0), 'View of Grace Cathedral from Huntington Park in San Francisco' (Junipercypress, CC BY-SA 4.0), 'Grace Cathedral San Francisco 2' (CC BY-SA 3.0, author not stated). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Grace Cathedral, San Francisco",
+            "url": "https://en.wikipedia.org/wiki/Grace_Cathedral,_San_Francisco"
+          },
+          {
+            "label": "OSM footprint · way 32946942",
+            "url": "https://www.openstreetmap.org/way/32946942"
+          },
+          {
+            "label": "OSM flèche part · way 939433955",
+            "url": "https://www.openstreetmap.org/way/939433955"
+          },
+          {
+            "label": "OSM chapel · way 939433952",
+            "url": "https://www.openstreetmap.org/way/939433952"
+          },
+          {
+            "label": "Photo · Taylor Street front (Everbruin, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Grace_Cathedral_San_Francisco_facade.jpg"
+          },
+          {
+            "label": "Photo · front and south side from Taylor/California (Yair Haklai, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Grace_Cathedral-San_Francisco-2.jpg"
+          },
+          {
+            "label": "Photo · the flèche (HaeB, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_spire_of_Grace_Cathedral,_San_Francisco.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/grace-cathedral/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=grace-cathedral&view=facade",
+        "views": [
+          {
+            "label": "Taylor Street front",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=facade"
+          },
+          {
+            "label": "Overview from the north-east",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=overview"
+          },
+          {
+            "label": "Towers and belfries",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=towers"
+          },
+          {
+            "label": "Portal and Gates of Paradise",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=portal"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=roof"
+          },
+          {
+            "label": "California Street (south) side",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=south"
+          },
+          {
+            "label": "Flèche",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=fleche"
+          },
+          {
+            "label": "Apse and chapel from the west",
+            "url": "/asset-preview.html?asset=grace-cathedral&view=apse"
+          }
+        ]
+      },
+      "notes": "Sourced: towers 53 m and flèche 75 m above street level, 6.1 m entry level (Wikipedia); the OSM outline (axis bearing 81.2 deg, 95.7 m long, 43.4 m across the transepts, 26.8 m front, towers 8.2 x 10.8 m, flèche base ~3.3 m). Estimated from photographs: nave/aisle/clerestory heights, roof ridges (nave 43.5 m with the gable apex at 43.8 m, transept 41.5 m, choir 37 m, chapel 17.5 m), belfry and portal proportions, rose window (7 m), five nave bays, window rhythm, the chapel and everything on the north, west and apse sides. The mapped transept span (43.4 m) is narrower than Wikipedia's 49 m and the model follows the map. The porch canopy is modelled 1.1 m deeper than the mapped line. Not modelled: carved ornament and tracery (except the rose wheel and a few mullions), the cathedral close, the second labyrinth, neighbouring buildings, side flights of the Great Stairs; the towers are equal height (the brief's taller north tower is not supported by photographs). Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 12185 triangles / 8 draws / 754092 bytes, far 2479 / 7 / 161224.",
+      "documentation": "docs/assets/san-francisco-grace-cathedral.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "lefty-odoul-bridge",
+      "name": "Lefty O'Doul Bridge (Third Street Bridge)",
+      "kind": "bridge",
+      "location": "Third Street over Mission Creek, beside Oracle Park · San Francisco, California",
+      "status": "ready",
+      "description": "1933 Strauss heel-trunnion single-leaf bascule bridge, closed, superstructure only: two Pratt through trusses flanking Third Street, the tall black heel frame at the ballpark end carrying two raised chamfered concrete counterweights, sway bracing, pipe railings, lamps, and the oxblood operator's house with its green roof and two cream huts. No deck, no pavement, nothing in the lanes and nothing below grade: the provider's Third Street stays.",
+      "manifest": "/models/bridges/lefty-odoul-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/lefty-odoul-bridge/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks lefty-odoul-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-01 from published dimensions, the mapped OSM bridge, carriageway and building ways and Wikimedia Commons photographs. Mapped placement, bearing and the two house outlines © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted for shape and colour: Sarah Stierch (Missvain), two views of August 2025, 'Lefty O'Doul Bridge - August 2025 - Sarah Stierch 01.jpg' and '... Sarah Stierch.jpg' (CC0 1.0); Daniel Ramirez, 'The Counterweights at the 3rd Street Bridge (4438954125)', 'The 3rd Street Bridge (4438954745)' and '(4439730846)', 2010 (CC BY 2.0); Mike Peel, 'Lefty O'Doul Bridge 2016 1', '2016 3', '2016 4' (CC BY-SA 4.0); rocknjosie, 'Lefty O'Doul Bridge.jpg', 2007 (CC BY 2.0); Alex Hendricks, 'Lefty O'Doul Bridge, AT&T Park.jpg', 2014 (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia · history, location, use",
+            "url": "https://en.wikipedia.org/wiki/Lefty_O%27Doul_Bridge"
+          },
+          {
+            "label": "Bridgehunter · 143 ft main span, 295 ft length, 71.5 ft roadway, Pratt through truss, heel trunnion",
+            "url": "https://www.bridgehunter.com/bridges/11419"
+          },
+          {
+            "label": "HistoricBridges.org · Strauss heel-trunnion; roadway cantilevered out from the western truss line",
+            "url": "https://historicbridges.org/bridges/browser/?bridgebrowser=california%2F3rd%2F"
+          },
+          {
+            "label": "NoeHill · SF Landmark #194: approach spans, concrete counterweights, operator's and watchman's houses",
+            "url": "https://noehill.com/sf/landmarks/sf194.asp"
+          },
+          {
+            "label": "SF Public Works · 2017-2020 rehabilitation (east and west counterweights)",
+            "url": "https://sfpublicworks.org/ThirdStreetBridge"
+          },
+          {
+            "label": "OpenSFHistory · Third Street Bridge, a closer look (1933 single-leaf replacement)",
+            "url": "https://www.opensfhistory.org/osfhcrucible/2020/12/13/third-street-bridge-a-closer-look/"
+          },
+          {
+            "label": "SF Chronicle · counterweight on the ballpark (north) end, black steel",
+            "url": "https://www.sfchronicle.com/bayarea/article/What-s-up-with-Lefty-O-Doul-Bridge-It-s-12465380.php"
+          },
+          {
+            "label": "OSM way 1088314479 · mapped bridge outline (axis, leaf, heel extent)",
+            "url": "https://www.openstreetmap.org/way/1088314479"
+          },
+          {
+            "label": "OSM way 579664204 · operator's house and watchman's hut (footprint ring)",
+            "url": "https://www.openstreetmap.org/way/579664204"
+          },
+          {
+            "label": "OSM way 1006830800 · heel hut (footprint ring)",
+            "url": "https://www.openstreetmap.org/way/1006830800"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Lefty_O%27Doul_Bridge"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/lefty-odoul-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=overview"
+          },
+          {
+            "label": "Side elevation from the promenade",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=facade"
+          },
+          {
+            "label": "From above",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=roof"
+          },
+          {
+            "label": "Driver's eye, from the south-east",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=deck"
+          },
+          {
+            "label": "Heel frame and counterweights",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=tower"
+          },
+          {
+            "label": "Under the counterweights",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=underside"
+          },
+          {
+            "label": "From the north-west, back along the road",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=heel"
+          },
+          {
+            "label": "Operator's house",
+            "url": "/asset-preview.html?asset=lefty-odoul-bridge&view=house"
+          }
+        ]
+      },
+      "notes": "Sourced: 295 ft overall, 143 ft Pratt through-truss leaf, 71.5 ft roadway, 1933 Strauss heel trunnion with concrete counterweights at the north (ballpark) end, roadway cantilevered beyond the western truss line (so the truss planes sit at V +10.2 and -6.7, not symmetrically, the west one pulled inboard so no low steel enters a mapped lane or the cycle track (tested against the OSM lane centre lines at 3.3 m)), axis bearing 327.5 deg and leaf/heel/house outlines from OSM. Estimated from photographs: all heights above the road (top chord 8.8 m, heel knuckle 22.8 m, top of the lamp masts 25.8 m, counterweights 6.3 to 17.6 m and 8 x 3.6 m), member sizes, panel count, the heel and tail truss layout, house sizes, railings, lamps, colours (black steel, grey concrete, oxblood house, verdigris roof, cream huts as in 2016-2025 photographs). Closed position only; fenders, piers, approach girders and the channel are not modelled. Far LOD drops lacing, plates, rail posts, lamps, window and mullion detail. Near 5 480 triangles / 7 draws / 296 KB; far 1 708 / 6 / 97 KB. Lamps use the self-lit lamp material; no other lighting, no Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-lefty-odoul-bridge.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "painted-ladies",
+      "name": "Painted Ladies (Postcard Row)",
+      "kind": "building",
+      "location": "710–722 Steiner Street, across from Alamo Square · San Francisco, California",
+      "status": "ready",
+      "description": "Postcard Row: six steep-gabled Queen Anne row houses (710–720 Steiner, 1892–1896) and the hipped corner mansion at 722, each in its own pastel paint scheme with white trim — two-storey angled bays or balcony porches, entry stairs, bracketed cornices, balustrades, chimneys — stepping up the Steiner Street slope toward the south, fronts facing west to the park.",
+      "manifest": "/models/buildings/painted-ladies.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/painted-ladies/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks painted-ladies",
+        "provenance": "Original procedural geometry authored 2026-10-01 from published facts and photographs. Footprints from OSM ways 261412887, 261412899, 261412879, 261412894, 261412900, 261412895, 261412896 (c) OpenStreetMap contributors, ODbL 1.0 (heights 12/13 m and roof shapes from their tags). Reference photographs were compared in ignored scratch only and are not shipped: Carol M. Highsmith, 'Painted Ladies row of Victorian houses located at 710 to 720 Steiner Street ... LCCN2013630348' (Library of Congress, public domain); Dietmar Rabich, 'San Francisco (CA, USA), Painted Ladies -- 2022 -- 3055 / 3059' (CC BY-SA 4.0); Another Believer, 'Painted Ladies, from Alamo Square Park, San Francisco (September 2018)' (CC BY-SA 4.0); Alfred Twu, 'Alamo-square-painted-ladies-and-apartment-building' (CC0). No third-party mesh, texture or photograph is in the repository or the GLB.",
+        "references": [
+          {
+            "label": "Wikipedia · Painted ladies (710–720 Steiner, built 1892–1896 by Matthew Kavanaugh)",
+            "url": "https://en.wikipedia.org/wiki/Painted_ladies"
+          },
+          {
+            "label": "Wikipedia · Alamo Square",
+            "url": "https://en.wikipedia.org/wiki/Alamo_Square,_San_Francisco"
+          },
+          {
+            "label": "OSM footprint · 710 Steiner Street (way 261412896)",
+            "url": "https://www.openstreetmap.org/way/261412896"
+          },
+          {
+            "label": "OSM footprint · 722 Steiner Street (way 261412887)",
+            "url": "https://www.openstreetmap.org/way/261412887"
+          },
+          {
+            "label": "Wikimedia Commons · Alamo Square Painted Ladies (Alfred Twu, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alamo-square-painted-ladies-and-apartment-building.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Carol M. Highsmith, Library of Congress (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:%22Painted_Ladies%22_row_of_Victorian_houses_located_at_710_to_720_Steiner_Street,_across_from_Alamo_Square_Park,_San_Francisco,_California_LCCN2013630348.tif"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/painted-ladies/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=painted-ladies&view=overview",
+        "views": [
+          {
+            "label": "The postcard: from the slope of Alamo Square",
+            "url": "/asset-preview.html?asset=painted-ladies&view=postcard"
+          },
+          {
+            "label": "From Alamo Square: the whole row",
+            "url": "/asset-preview.html?asset=painted-ladies&view=overview"
+          },
+          {
+            "label": "Head on across Steiner Street",
+            "url": "/asset-preview.html?asset=painted-ladies&view=facade"
+          },
+          {
+            "label": "Gables at the south end",
+            "url": "/asset-preview.html?asset=painted-ladies&view=gables"
+          },
+          {
+            "label": "Canted bay, balcony and entry stair",
+            "url": "/asset-preview.html?asset=painted-ladies&view=bay"
+          },
+          {
+            "label": "Roofs, ridges and chimneys",
+            "url": "/asset-preview.html?asset=painted-ladies&view=roof"
+          },
+          {
+            "label": "From Hayes Street: the 722 mansion",
+            "url": "/asset-preview.html?asset=painted-ladies&view=north"
+          },
+          {
+            "label": "Rear elevations",
+            "url": "/asset-preview.html?asset=painted-ladies&view=rear"
+          }
+        ]
+      },
+      "notes": "Seven outlines (OSM ways 710–722 Steiner) and the 12 m / 13 m heights are mapped; the fronts face west by south (bearing 261°) on a street grid rotated 9.05° from north. Storey heights (garage 2.7 m, storeys ~3 m, eave 8.9 m, ridge 12.5 m), bay and porch positions, gable ornament and paint colours are read from photographs, about ±0.3 m; each house's own bay/balcony arrangement is an approximation. The row steps up the street toward the south in 0.25 m terraces (1.5 m in all, estimated), each house on its own stucco foundation that reaches y=0; no terrain is baked. Stairs (stringer beams on thin posts, open treads) reach 2.6 m past the mapped front line; upper floors and roofs stay within 0.75 m of the outlines (718 is 0.3 m wider at the back than its outline). Rear elevations, side walls and the roofs behind the gables are simplified; trim is suggested, not copied. 722's mapped outline is narrower at the south front, so its body follows it. Near 10 160 triangles / 13 draws / 561 kB, far 2 506 / 8 / 151 kB. Each house has its own accent trim (cornice, brackets, mouldings, window hoods and sills) in a colour the model already has (a neighbour's paint or the roof's dark), so no extra material or draw; window frames, rails and the rake stay cream-white. No Tesla hardware benchmark.",
+      "documentation": "docs/assets/san-francisco-painted-ladies.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palace-of-fine-arts",
+      "name": "Palace of Fine Arts",
+      "kind": "building",
+      "location": "3601 Lyon Street, Marina District · San Francisco, California",
+      "status": "ready",
+      "description": "Bernard Maybeck's Palace of Fine Arts: the open octagonal rotunda (49.4 m, eight arches, paired Corinthian columns on eight corner piers, a low attic of relief panels and a round drum carrying a steep pale dome), the two curving colonnades of paired columns with their weeping-woman pylons, and the long curved exhibition hall behind, left open to the lagoon side.",
+      "manifest": "/models/buildings/palace-of-fine-arts.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/palace-of-fine-arts/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks palace-of-fine-arts",
+        "provenance": "Original procedural geometry authored 2026-10-01 (Codriver, with Claude). Plan, bearing, pier, colonnade and hall positions and levels read from the OpenStreetMap ways and building parts listed in footprint.js (OSM map API bbox, cross-checked with the shared Overpass helper; (c) OpenStreetMap contributors, ODbL 1.0). Wikimedia Commons photographs were viewed for proportion and detail and are not redistributed: Rhododendrites, 'Palace of Fine Arts (16794p)' (CC BY-SA 4.0); UpdateNerd, 'Palace of Fine Arts colonnade' (CC0); Db7178, 'Palace of Fine Arts - Evening with reflection' and 'Palace of Fine Arts - Interior rotunda dome' (CC BY-SA 3.0); PeteBobb, 'Palace of Fine Arts Columade-MG 4352' (CC BY-SA 3.0); Fred Hsu, 'Palace of Fine Arts Walkways' (CC BY-SA 3.0); Sasha Stories, 'Aerial view of The Palace of Fine Arts' (CC0); Carol M. Highsmith, 'Aerial view from Palace of Fine Arts, San Francisco, California' (public domain). No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · Palace of Fine Arts",
+            "url": "https://en.wikipedia.org/wiki/Palace_of_Fine_Arts"
+          },
+          {
+            "label": "Palace of Fine Arts, official site",
+            "url": "https://palaceoffinearts.com/"
+          },
+          {
+            "label": "SF Heritage · Palace of Fine Arts: Sentiment in a Minor Key",
+            "url": "https://www.sfheritage.org/news/palace-of-fine-arts-sentiment-in-a-minor-key/"
+          },
+          {
+            "label": "OSM way 288371295 · Palace of Fine Arts (rotunda outline, temple, 48 m)",
+            "url": "https://www.openstreetmap.org/way/288371295"
+          },
+          {
+            "label": "OSM way 288371302 · exhibition hall (20 m)",
+            "url": "https://www.openstreetmap.org/way/288371302"
+          },
+          {
+            "label": "Wikimedia Commons · Category: Rotunda of the Palace of Fine Arts, San Francisco",
+            "url": "https://commons.wikimedia.org/wiki/Category:Rotunda_of_the_Palace_of_Fine_Arts,_San_Francisco"
+          },
+          {
+            "label": "Wikimedia Commons · Category: Pergola of the Palace of Fine Arts, San Francisco",
+            "url": "https://commons.wikimedia.org/wiki/Category:Pergola_of_the_Palace_of_Fine_Arts,_San_Francisco"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/palace-of-fine-arts/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=palace-of-fine-arts&view=facade",
+        "views": [
+          {
+            "label": "Lagoon-side facade",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=facade"
+          },
+          {
+            "label": "Street level from the lagoon",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=street"
+          },
+          {
+            "label": "Aerial overview",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=overview"
+          },
+          {
+            "label": "Colonnade pairs and pylon",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=colonnade"
+          },
+          {
+            "label": "Rotunda corner: piers, columns, attic",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=corner"
+          },
+          {
+            "label": "Dome and attic from above",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=roof"
+          },
+          {
+            "label": "Rear: the exhibition hall",
+            "url": "/asset-preview.html?asset=palace-of-fine-arts&view=rear"
+          }
+        ]
+      },
+      "notes": "Mapped, not estimated: plan, the 10 deg axis (bearing 80 deg), the eight pier positions and 36 m height, the entablature ring and 40 m attic, the 16.2 m dome radius, the hall's sector (rIn about 112-116 m, rOut 154-158 m about a point east of the rotunda), its 12 m eaves, 15 m ridge and 17 m monitor and end blocks, the colonnade strips (3.0-3.1 m wide, centrelines and the 6.5-11.5 m pylon bulges), and the 162 ft (49.4 m) height. Estimated from photographs: column and arch sizes (2.8 m rotunda shafts, arch 11.8 m wide to about 25 m, 1.24 m colonnade shafts in pairs, entablature top 12.6 m), the pylon boxes (12.6-17.2 m) and figure heights (to 20-21 m), capitals (a flared block), fluting (faceted shafts), the podium, plinths and attic relief panels, the dome profile (a steep squashed superellipse on a round drum, 41-49.4 m), the pale cream and peach-salmon colours. Simplified: Corinthian capitals, dentils, the Greek-key frieze, relief and the weeping-woman figures are blocks; colonnade shafts are plain hexagons near and pentagons far; the far model folds the podium, panels and night glow into the stone material (4 draws); the dome has no coffers or lantern; the hall is a plain shed (its mapped end blocks are flat boxes). Not modelled: the lagoon, planting, the rotunda interior, the stage house and the trees. The OSM outline has no colonnade column data, so the 3.7 m column rhythm is estimated; the colonnade is a double row (pairs) after the photographs, though the mapped roof strip is only 3 m wide. Full 3D world: the rotunda stands on its own 1.6 m podium at local y=0 and the colonnades and hall at y=0 as well, so the 145 m pad should cover the whole complex.",
+      "documentation": "docs/assets/san-francisco-palace-of-fine-arts.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "salesforce-tower",
+      "name": "Salesforce Tower",
+      "kind": "building",
+      "location": "415 Mission Street, South of Market · San Francisco, California",
+      "status": "ready",
+      "description": "San Francisco's tallest tower (326 m, 61 storeys): a rounded-square prism of blue-grey glass that narrows along one smooth curve into a rounded nose, a white sunshade at every floor line, a recessed glass lobby, and an open lattice crown with inward-facing LED light.",
+      "manifest": "/models/buildings/salesforce-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/salesforce-tower/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks salesforce-tower",
+        "provenance": "Original procedural geometry authored 2026-10-01. Plan, height and footprint from OpenStreetMap way 431972186 (outline, height=326, building:levels=61, Pelli Clarke Pelli) and its parts, ways 1053143796-803 and 1053143805, plus the below-grade duplicate way 1560173288 (© OpenStreetMap contributors, ODbL 1.0, read from the OSM API 2026-10-01). Orientation fitted to the outline and to the Mission, Fremont and First Street bearings in OSM. Reference photographs used only to compare and kept out of the repository: Wikimedia Commons 'Salesforce Tower 2021' (Dead.rabbit, CC BY-SA 4.0), 'Salesforce Tower from Ina Coolbrith Park-01445' (Frank Schulenburg, CC BY-SA 4.0), 'Salesforce Tower Roof' (InvadingInvader, CC BY-SA 4.0), 'Salesforce Tower facade detail (2020)' (HaeB, CC BY-SA 4.0), 'Salesforce Tower Completed 2018' (Leijurv, CC BY-SA 4.0), 'Salesforce Tower from Sacramento and Davis Street 2021' (Dead.rabbit, CC BY-SA 4.0), 'Salesforce tower facing south' (Gorfle, CC BY-SA 4.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Salesforce Tower",
+            "url": "https://en.wikipedia.org/wiki/Salesforce_Tower"
+          },
+          {
+            "label": "Architect · Pelli Clarke & Partners, Salesforce Tower",
+            "url": "https://www.pcparch.com/project/salesforce-tower"
+          },
+          {
+            "label": "OSM tower outline · way 431972186",
+            "url": "https://www.openstreetmap.org/way/431972186"
+          },
+          {
+            "label": "OSM tapering part · way 1053143796",
+            "url": "https://www.openstreetmap.org/way/1053143796"
+          },
+          {
+            "label": "OSM core part · way 1053143805",
+            "url": "https://www.openstreetmap.org/way/1053143805"
+          },
+          {
+            "label": "Photograph · Ina Coolbrith Park (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Salesforce_Tower_from_Ina_Coolbrith_Park-01445.jpg"
+          },
+          {
+            "label": "Photograph · crown from above (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Salesforce_Tower_Roof.jpg"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Salesforce_Tower"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/salesforce-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=salesforce-tower&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=overview"
+          },
+          {
+            "label": "Mission Street face",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=facade"
+          },
+          {
+            "label": "Crown from above",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=roof"
+          },
+          {
+            "label": "Open crown and roof deck",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=crown"
+          },
+          {
+            "label": "Lobby and sunshades",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=base"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=street"
+          },
+          {
+            "label": "Rounded corner",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=corner"
+          },
+          {
+            "label": "Skyline distance",
+            "url": "/asset-preview.html?asset=salesforce-tower&view=skyline"
+          }
+        ]
+      },
+      "notes": "Height 326 m, roof 296 m and 61 storeys are sourced (Wikipedia, OSM). The plan (54 m rounded square, 14.3 m corner radius) and its 45.7 degree orientation are fitted to the OSM outline and the SoMa street grid; the 7 x 5 m bump on one corner of the outline (probably an entrance canopy) is not modelled. The taper is one smooth curve (a prism to about 170 m, 74 % of the base width at the 296 m roof, 55 % at the 326 m rim) measured by edge detection on a telephoto photograph and checked on a second one. The 4.4 m sunshade pitch, 0.7 m sunshade depth, vertical fin pitch, glass colour, lobby recess, roof plant, lit windows and the crown lattice and LED bands are estimates; the LED art is shown as light bands, not the real pixel layout. Not modelled: the fifth-floor bridge to the Transit Center, the plaza, the salesforce sign and the below-grade levels. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-salesforce-tower.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "sutro-tower",
+      "name": "Sutro Tower",
+      "kind": "building",
+      "location": "1 La Avanzada Street, Mount Sutro · San Francisco, California",
+      "status": "ready",
+      "description": "297.8 m broadcast tower (1973): three triangular steel legs in orange and white bands that lean in to a waist at Level 4 and flare out above it, solid triangular decks at Levels 2 to 4, a white lattice triangle at Level 5, three 60 m lattice crossarms at Level 6 and three top masts with stays and aviation lights.",
+      "manifest": "/models/buildings/sutro-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/sutro-tower/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks sutro-tower",
+        "provenance": "Original procedural geometry authored 2026-10-01. Axis, leg bearings (270 / 30 / 150), leg positions, slope and 26 m paint bands, platform and crossarm plans from OpenStreetMap relation 3829019 and its building:part ways and level relations (read from the OSM API with one small-bbox call on 2026-10-01 and cross-checked through the shared Overpass helper; © OpenStreetMap contributors, ODbL 1.0). Level heights and overall height from sutrotower.org and Wikipedia. Leg taper, lattice, masts, stays, pods and lights estimated from Wikimedia Commons photographs used only as local ignored comparison images: Sutro Tower HiRes · PrasadGondi · public domain; Sutro Tower in 2012 · Choinowski · CC0; Monochrome drone sutro tower · Ian Simmonds · CC0; Sutro Tower closeup · Lars Plougmann · CC BY-SA 2.0; Sutro Tower, outside gated entrance · Alec Perkins · CC BY 2.0; Sutro Tower 2020 01/02/05 · Christopher Michel · CC BY-SA 4.0. No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Sutro Tower · Wikipedia (height, levels, history)",
+            "url": "https://en.wikipedia.org/wiki/Sutro_Tower"
+          },
+          {
+            "label": "sutrotower.org · levels, paint, lights, structure",
+            "url": "https://sutrotower.org/"
+          },
+          {
+            "label": "Sutro Tower, Inc. · official site",
+            "url": "https://sutrotower.com/"
+          },
+          {
+            "label": "OSM relation 3829019 · Sutro Tower outline",
+            "url": "https://www.openstreetmap.org/relation/3829019"
+          },
+          {
+            "label": "OSM relation 18290620 · Sutro Tower building parts",
+            "url": "https://www.openstreetmap.org/relation/18290620"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Sutro_Tower"
+          },
+          {
+            "label": "Whole tower, east side · PrasadGondi (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sutro_Tower_HiRes.jpg"
+          },
+          {
+            "label": "Level 4 to masts close-up · Lars Plougmann (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sutro_Tower_closeup.jpg"
+          },
+          {
+            "label": "From the gate at the foot · Alec Perkins (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sutro_Tower,_outside_gated_entrance,_San_Francisco_(4842509310).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/sutro-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=sutro-tower&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=sutro-tower&view=overview"
+          },
+          {
+            "label": "East elevation",
+            "url": "/asset-preview.html?asset=sutro-tower&view=facade"
+          },
+          {
+            "label": "Above the crossarms",
+            "url": "/asset-preview.html?asset=sutro-tower&view=roof"
+          },
+          {
+            "label": "Level 6 crossarms and stays",
+            "url": "/asset-preview.html?asset=sutro-tower&view=crossarm"
+          },
+          {
+            "label": "Level 3 and 4 decks",
+            "url": "/asset-preview.html?asset=sutro-tower&view=platforms"
+          },
+          {
+            "label": "Looking up from the foot",
+            "url": "/asset-preview.html?asset=sutro-tower&view=underside"
+          },
+          {
+            "label": "Top of the masts",
+            "url": "/asset-preview.html?asset=sutro-tower&view=masts"
+          },
+          {
+            "label": "Level 5 and the pods",
+            "url": "/asset-preview.html?asset=sutro-tower&view=pods"
+          },
+          {
+            "label": "Level 2 deck",
+            "url": "/asset-preview.html?asset=sutro-tower&view=level2"
+          },
+          {
+            "label": "Legs at grade",
+            "url": "/asset-preview.html?asset=sutro-tower&view=base"
+          }
+        ]
+      },
+      "notes": "Published: 297.8 m (977 ft), Level 2 at 56.7 m, Level 3 at 116.4 m, Level 4 at 169.8 m, Level 5 at 200.3 m, alternating Aviation Orange and White bands. Mapped (OSM 3D parts, within about 0.5 m): leg bearings, leg positions and the 0.10 / 0.14 m per metre lean in and out, 26 m paint bands, platform and crossarm plans (three 59.5 m bars, 1.9 m wide, 4 m deep), the 4 m slabs. The Level 6 crossarms are modelled at 236.5-240.5 m (mapped 228-232 m, published 241.4 m; photographs give 233-240 m). Estimated from photographs: leg section 3.8 m at grade tapering to 2.9 m, the lattice of the crossarms and masts, the mast heights and radomes (all three reach 297.8 m; the apparent shorter middle mast in east-side photographs is perspective), 18 stays per mast fan, X bracing cables, the five pods, dishes and whips. The Levels 2 to 4 decks are solid plates (photographs show a filled soffit; OSM maps 2 m rings). Far LOD thickens the crossarms (I-sections) and masts (solid columns, 2 m radomes) so they read at 1-3 km, and drops the stays; the deck soffits use a pale brown material. Not modelled: the transmission building at the foot (the provider keeps it), the lift and ladder enclosures, antennas and equipment on the decks, handrails, the 2019-20 antenna repack details, flashing beacons (only steady red lamps, drawn self-lit).",
+      "documentation": "docs/assets/san-francisco-sutro-tower.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "alcatraz-island",
+      "name": "Alcatraz Island",
+      "kind": "building",
+      "location": "Alcatraz Island, San Francisco Bay · California",
+      "status": "ready",
+      "description": "The Alcatraz penitentiary complex as seen from the shore and the Golden Gate: the long three-storey Main Cellhouse with its Dining Hall and Administration Block, the 1909 octagonal lighthouse with a lit lantern, the burnt-out Warden's House ruins, the recreation-yard wall with buttress piers and guard towers and the 1940 water tower on six braced legs. The island rock is not modelled.",
+      "manifest": "/models/buildings/alcatraz-island.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/alcatraz-island/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks alcatraz-island",
+        "provenance": "Original procedural geometry authored 2026-10-01 (geometry.js, alcatraz-island-parts.js, alcatraz-island-plan.js, alcatraz-island-kit.js) from the mapped OSM outlines (ways 128245373, 24433437, 128245367, 99202294, 27996789, 660870452 and the yard wall 99202295; © OpenStreetMap contributors, ODbL 1.0) and public photographs. Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Alcatraz cellhouse, lighthouse and Warden's House ruins' and 'Alcatraz Island Lighthouse Tower' (Centpacrr, CC BY-SA 3.0), 'Alcatraz Island Water Tower' (National Park Service, public domain), 'Alcatraz Island aerial view' (Ralf Baechle, CC BY-SA 4.0), 'NPS alcatraz-island-map' (National Park Service, public domain), 'Alcatraz - Main Cellhouse', 'Alcatraz Wardens House' and 'Alcatraz - West of the Main Cellhouse' (Daniel Ramirez, CC BY 2.0), 'Alcatraz recreation yard, NW view' (Radomianin, public domain), and a Library of Congress aerial of Alcatraz (Carol M. Highsmith, public domain). Sources checked 2026-10-01 against Wikipedia (Alcatraz Island Lighthouse, Alcatraz Federal Penitentiary) and OSM tags. Ground levels were estimated from one public Terrarium elevation tile (z15 5240/12659) and never enter the model. No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Alcatraz Island",
+            "url": "https://en.wikipedia.org/wiki/Alcatraz_Island"
+          },
+          {
+            "label": "Wikipedia · Alcatraz Island Lighthouse (84 ft tower, concrete, octagonal)",
+            "url": "https://en.wikipedia.org/wiki/Alcatraz_Island_Lighthouse"
+          },
+          {
+            "label": "Wikipedia · Alcatraz Federal Penitentiary (cellhouse, water tower 94 ft, Warden's House)",
+            "url": "https://en.wikipedia.org/wiki/Alcatraz_Federal_Penitentiary"
+          },
+          {
+            "label": "National Park Service · Alcatraz Island",
+            "url": "https://www.nps.gov/alca/index.htm"
+          },
+          {
+            "label": "OSM footprint · Main Prison, way 128245373",
+            "url": "https://www.openstreetmap.org/way/128245373"
+          },
+          {
+            "label": "OSM footprint · Water Tower, way 660870452",
+            "url": "https://www.openstreetmap.org/way/660870452"
+          },
+          {
+            "label": "Photo · cellhouse, lighthouse and Warden's House ruins (Centpacrr, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_cellhouse,_lighthouse_and_Warden%27s_House_ruins.jpg"
+          },
+          {
+            "label": "Photo · water tower (National Park Service, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_Island_Water_Tower.jpg"
+          },
+          {
+            "label": "Photo · Warden's House ruins (Daniel Ramirez, CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_Wardens_House_(4409211963).jpg"
+          },
+          {
+            "label": "Photo · recreation yard and cellhouse (Radomianin, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_recreation_yard,_NW_view.jpg"
+          },
+          {
+            "label": "Photo · aerial view of the island (Ralf Baechle, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alcatraz_Island_aerial_view.jpg"
+          },
+          {
+            "label": "Map · NPS Alcatraz Island map (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:NPS_alcatraz-island-map.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/alcatraz-island/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=alcatraz-island&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-west",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=overview"
+          },
+          {
+            "label": "Cellhouse south-west front",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=facade"
+          },
+          {
+            "label": "Roofs and plan from above",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=roof"
+          },
+          {
+            "label": "Lighthouse",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=lighthouse"
+          },
+          {
+            "label": "Water tower",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=tower"
+          },
+          {
+            "label": "Warden's House ruins",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=ruins"
+          },
+          {
+            "label": "Dock (north-east) side",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=back"
+          },
+          {
+            "label": "Recreation yard",
+            "url": "/asset-preview.html?asset=alcatraz-island&view=yard"
+          }
+        ]
+      },
+      "notes": "Sourced: mapped outlines (cellhouse complex 132 m long on a 135.95 degree grid bearing; Wikipedia's 'about 150 m' is not backed by the Wikipedia pages fetched, the model follows OSM), lighthouse 25.6 m (84 ft, Wikipedia and OSM), six-legged water tower with a roughly 13 m tank (published 94 ft / 29 m, 250,000 gal), cellhouse three storeys (Wikipedia). Estimated from photographs: parapet heights (15.6 / 14.0 / 12.4 / 10.8 m), window tiers and rhythm, roof monitors, the lighthouse base block, the ruins' wall breaks, gable and chimney, yard-wall height (4.6 m) and piers, the two guard-tower positions and all colours. Ground levels from one coarse public DEM tile: y=0 is the cellhouse yard (about 38 m above the bay); the lighthouse base is 3.2 m higher and the water tower's real ground about 9 m lower. The water tower's footings are set 2.5 m below y=0 (the lowest point of the model) and its tank top at its true height relative to the cellhouse roof (about 5 m above it), so it is about 23 m tall instead of the published 29 m. Not modelled (low buildings 15-35 m below the summit plateau): Building 64 and the dock, the Power House and chimney, New and Model Industries, Sally Port, chapel, officers' club, morgue and the shoreline. No lettering, no recreation-yard steps or buttress, no roof antennas. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 11418 triangles / 10 draws / 613208 bytes, far 3002 / 7 / 168080.",
+      "documentation": "docs/assets/san-francisco-alcatraz-island.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bay-bridge-east-span",
+      "name": "San Francisco–Oakland Bay Bridge (East Span)",
+      "kind": "bridge",
+      "location": "I-80, Yerba Buena Island to Oakland · California",
+      "status": "ready",
+      "description": "The 2013 East Span: the self-anchored suspension span (624 m, 385 m main span) with its single 160 m tower of four pentagonal steel legs joined by shear links, one main cable looped around the west end of the twin decks in four inclined planes with suspenders splayed to the outer box edges, the two side-by-side orthotropic decks (five lanes each) joined by crossbeams, the bike and pedestrian path on the south side, the Skyway's haunched concrete girders on paired T-columns descending toward Oakland, the YBI transition ramp and the Oakland touchdown. Road-fitted bridge built on the mapped OSM carriageways.",
+      "manifest": "/models/bridges/bay-bridge-east-span.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/bay-bridge-east-span/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks bay-bridge-east-span",
+        "provenance": "Original procedural geometry authored 2026-10-01 from published spans and heights (Caltrans/MTC fact sheets, T.Y. Lin WCEE paper, CGS SMIP04 paper), the mapped OSM carriageways, their separation, the tower outline, the crossbeams between the decks, the Alexander Zuckermann Bay Bridge Trail and the YBI ramps (retrieved 2026-10-01 through the OSM API, ODbL 1.0, © OpenStreetMap contributors; way ids in bay-bridge-east-span-alignment.js), and Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Images consulted: Caltrans, SAS elevation and plan (CalDOT-SASElevPlan4Q2005P42.svg, public domain); Mariordo (Mario Roberto Durán Ortiz), Bay Bridge 04 2015 new eastern span (CC BY-SA 4.0); Crossing the Bay Bridge, Flickr (CC BY 2.0); Earth Science Eastern Span DSC 0670, Flickr (CC BY-SA 2.0); Leonard G., SFOakBayBridgeNewEastTowe (CC0); San Francisco-Oakland Bay Bridge, helicopter views 1 and 3, Flickr (CC BY 2.0).",
+        "references": [
+          {
+            "label": "Wikipedia · East Span replacement: 624.385 m SAS, 385 m main span, 160 m tower, side-by-side decks",
+            "url": "https://en.wikipedia.org/wiki/Eastern_span_replacement_of_the_San_Francisco%E2%80%93Oakland_Bay_Bridge"
+          },
+          {
+            "label": "Caltrans elevation and plan · 10 + 180 + 385 + 49.385 m, piers W2, T1, E2",
+            "url": "https://commons.wikimedia.org/wiki/File:CalDOT-SASElevPlan4Q2005P42.svg"
+          },
+          {
+            "label": "T.Y. Lin (WCEE 0911) · 0.78 m looped cable, suspenders splayed to the box exteriors every 10 m, crossbeams every 30 m, path on the south",
+            "url": "https://www.iitk.ac.in/nicee/wcee/article/0911.pdf"
+          },
+          {
+            "label": "CGS SMIP04 (Maroney) · 25 m decks, 4.8 m path, Skyway spans 120-160 m, girder 5.5-9 m deep, YBI transition 467 m",
+            "url": "https://www.conservation.ca.gov/cgs/documents/program-smi/seminar/smip04/Paper7_Maroney.pdf"
+          },
+          {
+            "label": "MTC fact sheet · the SAS: four tower legs and shear links, cable wrapped under the west end",
+            "url": "https://files.mtc.ca.gov/library/pub/non/47654_22.pdf"
+          },
+          {
+            "label": "MTC fact sheet · the Skyway: 452 segments, piers 45-115 ft, T-shaped pier tables",
+            "url": "https://files.mtc.ca.gov/library/pub/non/47654_23.pdf"
+          },
+          {
+            "label": "ASBI · Skyway frames (4, 4, 4 and 2 piers), 525 ft typical span, 15.5 ft path",
+            "url": "https://asbi-assoc.org/project/san-francisco-oakland-bay-bridge-new-east-span-skyway-san-francisco-and-oakland-california/"
+          },
+          {
+            "label": "OSM way 237731428 · eastbound East Span (station frame with way 236348361, westbound)",
+            "url": "https://www.openstreetmap.org/way/237731428"
+          },
+          {
+            "label": "OSM way 237735191 · the SAS tower outline (bridge:support=pylon, height 160)",
+            "url": "https://www.openstreetmap.org/way/237735191"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Eastern_span_replacement_of_the_San_Francisco%E2%80%93Oakland_Bay_Bridge"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/bay-bridge-east-span/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=bay-bridge-east-span&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-west",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=overview"
+          },
+          {
+            "label": "Side elevation of the SAS",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=facade"
+          },
+          {
+            "label": "Driving eastbound toward the tower",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=deck"
+          },
+          {
+            "label": "The tower close up",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=tower"
+          },
+          {
+            "label": "From above: decks, crossbeams, cable planes",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=roof"
+          },
+          {
+            "label": "Under the Skyway",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=underside"
+          },
+          {
+            "label": "The Skyway from the north",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=skyway"
+          },
+          {
+            "label": "West end: cable wrap at W2 and the YBI ramp",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=west"
+          },
+          {
+            "label": "East end: the Oakland touchdown",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=east"
+          },
+          {
+            "label": "Main span from below",
+            "url": "/asset-preview.html?asset=bay-bridge-east-span&view=structure"
+          }
+        ]
+      },
+      "notes": "Sourced: SAS 624.385 m (10 + 180 + 385 + 49.385 m), tower 160 m with four steel shafts and shear links, single 0.78 m cable anchored in the deck at E2 and looped around W2, suspenders every 10 m splayed to the outer box edges, two 25 m decks with five lanes each, 4.8 m path on the south (eastbound) side, crossbeams every 30 m, Skyway 2.1 km of precast segmental girders 5.5 m deep at mid-span and 9 m at the piers on 14 pairs of piers 45-115 ft tall. Mapped (OSM): both carriageways (41.8 m apart on the SAS and Skyway, converging to 26 m where the alignment starts on YBI), the tower outline (its centroid is the origin; W2 and E2 from the published spans land 0.2 and 0.3 m from the mapped crossbeams), the deck outlines (box and path edges), the crossbeam stations, the trail and the YBI ramps. Estimated: the real deck height (about 57 m over the SAS from the Caltrans elevation, SPEC.realDeckM; 22 m at E16), Skyway pier stations (not mapped; E3 160 m past E2, nine 160 m then four 122.5 m spans), tower leg sections and taper, shear-link spacing, cable sag shape, box and girder sections, YBI transition and touchdown structures, light poles. Flat-map convention (a compromise below the real deck): constant grades with parabolic vertical curves; 15.05 % from the YBI foot to ~30 m at the SAS west end (the westbound viaduct climbs over the eastbound one toward the double-deck tunnel just west of the alignment, so the ramp is 224 m), 5.3 % over the back span to 40 m at the tower, level across the main span, down the Skyway to 22 m at E16 and 4.4 % over the touchdown onto the mapped on-grade I-80. Not modelled: the old East Span piers kept as viewpoints, the belvederes, the cable bands, the night lighting of the tower and cables. The exported GLB is authored on the real profile; Cityscape lowers deck and superstructure together (tower top 142.5 m there, 160 m in world and in the inspector). Near 72 330 triangles / 33 draws / 2.70 MB; far 22 140 / 7 / 0.80 MB. No Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-bay-bridge-east-span.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bay-bridge-west-span",
+      "name": "San Francisco–Oakland Bay Bridge (West Span)",
+      "kind": "bridge",
+      "location": "I-80, Rincon Hill to Yerba Buena Island · San Francisco, California",
+      "status": "ready",
+      "description": "The 1936 West Span: two suspension bridges end to end (side spans 1160 ft, main spans 2310 ft) sharing the concrete central anchorage W4, four silver X-braced battered steel towers, two 26 in cables, and a 66 ft by 35 ft double-deck stiffening truss carrying I-80 westbound on top and eastbound inside, from the San Francisco anchorage and SoMa viaduct to the Yerba Buena Island tunnel. The north suspenders carry the Bay Lights at night.",
+      "manifest": "/models/bridges/bay-bridge-west-span.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/bay-bridge-west-span/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks bay-bridge-west-span",
+        "provenance": "Original procedural geometry authored 2026-10-01 from the HAER CA-32 documentation, Wikipedia, the mapped OSM roadway and support outlines, and Wikimedia Commons photographs. Mapped alignment and supports © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Dllu, 'San Francisco Bay Bridge Western Span at night' (CC BY-SA 4.0); Dllu, 'Western Span of the San Francisco-Oakland Bay Bridge at dusk, seen from Yerba Buena Island' (CC BY-SA 4.0); Radosław Botev, 'Western span of the San Francisco–Oakland Bay Bridge' (CC BY 3.0 pl); Daderot, 'Western span of the San Francisco–Oakland Bay Bridge - DSC06513' (CC0).",
+        "references": [
+          {
+            "label": "Wikipedia · spans, tower height, clearance, decks, Bay Lights",
+            "url": "https://en.wikipedia.org/wiki/San_Francisco%E2%80%93Oakland_Bay_Bridge"
+          },
+          {
+            "label": "HAER CA-32 · West Bay Crossing description (towers, truss, anchorages)",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ca/ca1300/ca1352/data/ca1352data.pdf"
+          },
+          {
+            "label": "OSM way 8921938 · I-80 westbound (upper deck)",
+            "url": "https://www.openstreetmap.org/way/8921938"
+          },
+          {
+            "label": "OSM way 661905446 · I-80 eastbound (lower deck)",
+            "url": "https://www.openstreetmap.org/way/661905446"
+          },
+          {
+            "label": "OSM way 236374789 · central anchorage W4",
+            "url": "https://www.openstreetmap.org/way/236374789"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:San_Francisco%E2%80%93Oakland_Bay_Bridge_western_span"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/bay-bridge-west-span/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=bay-bridge-west-span&view=overview",
+        "views": [
+          {
+            "label": "Overview from the Embarcadero side",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=overview"
+          },
+          {
+            "label": "Side elevation",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=facade"
+          },
+          {
+            "label": "Tower W3",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=tower"
+          },
+          {
+            "label": "Central anchorage W4",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=anchorage"
+          },
+          {
+            "label": "Upper deck, westbound",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=deck"
+          },
+          {
+            "label": "Lower deck, eastbound",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=lower"
+          },
+          {
+            "label": "Under the truss",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=underside"
+          },
+          {
+            "label": "San Francisco approach",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=approach"
+          },
+          {
+            "label": "Yerba Buena Island end",
+            "url": "/asset-preview.html?asset=bay-bridge-west-span&view=island"
+          }
+        ]
+      },
+      "notes": "Sourced: main spans 2310 ft and side spans 1160 ft (towers land within 1.2 m of the published spacing on their mapped OSM outlines), tower tops 458/502 ft above low water (HAER; Wikipedia and OSM give 160 m), 66 ft x 35 ft truss, two 26 in cables, 220 ft clearance, five 57.5 ft lanes per deck, westbound on the upper deck, bearing 40.3 deg. Estimated: deck elevations (70.3 m at W2/W6, 83.7 at W3/W5, 88 at W4), the 9 m deck separation, truss panel and member sizes, leg taper, W4 and anchorage heights, cable sags. Flat-map adaptation: the deck rises from the SoMa viaduct to the San Francisco anchorage (30 m) and W2 (max 9.5 %), the eastbound ramp climbs under it (max 11.8 %), and the deck falls from W6 to the tunnel's east portal (max 16 %), so W1 (46.5 m) and W7 (28 m) are lower than real and the island tunnel is drawn as a concrete tube. Far LOD (2-5 km) draws the truss as its chords and deck slab, every fourth suspender, and keeps the towers, W4 and the cables. Near 58 491 triangles / 29 draws / 2.46 MB; far 11 004 / 8 / 0.43 MB. While the followed car is on the lower deck the upper deck fades (spec.upperDeck). The provider's tower extrusions are masked only once the registry forwards prepareBuildings to road bridges (see the doc). No Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-bay-bridge-west-span.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "california-academy-of-sciences",
+      "name": "California Academy of Sciences",
+      "kind": "building",
+      "location": "55 Music Concourse Drive, Golden Gate Park · San Francisco, California",
+      "status": "ready",
+      "description": "Renzo Piano's 2008 Academy: a 161 by 103 m glass-and-concrete box under a 2.5 acre living roof of seven round hills (the planetarium and rainforest hills dotted with round vents, the rainforest crown a glass dome), a glazed piazza roof, a railed terrace and an 11.9 m photovoltaic canopy on slender columns, the lit glass entrance hall facing the Music Concourse.",
+      "manifest": "/models/buildings/california-academy-of-sciences.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/california-academy-of-sciences/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks california-academy-of-sciences",
+        "provenance": "Original procedural geometry authored 2026-10-01 from public dimensions and photographs; plan, size and orientation from OpenStreetMap way 28695389 (© OpenStreetMap contributors, ODbL 1.0). No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'California Academy of Sciences aerial view.jpg' (Alfred Twu, CC0); 'CalifAcadamyOfSciAug28-2008img0640.JPG' (public domain, author not stated); 'Living roof at the California Academy of Sciences.jpg' (Carol M. Highsmith, public domain); 'Music Concourse from California Academy of Sciences roof 1 of 6.jpg' (Joe Mabel, CC BY-SA 3.0).",
+        "references": [
+          {
+            "label": "California Academy of Sciences · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/California_Academy_of_Sciences"
+          },
+          {
+            "label": "California Academy of Sciences · Renzo Piano Building Workshop",
+            "url": "https://www.rpbw.com/project/california-academy-of-sciences"
+          },
+          {
+            "label": "California Academy of Sciences (CAS) Living Roof · Greenroofs.com",
+            "url": "https://www.greenroofs.com/projects/california-academy-of-sciences-cas-living-roof/"
+          },
+          {
+            "label": "Renzo Piano's California Academy of Sciences · designboom",
+            "url": "https://www.designboom.com/architecture/renzo-pianos-california-academy-of-science/"
+          },
+          {
+            "label": "Academy building outline · OpenStreetMap way 28695389",
+            "url": "https://www.openstreetmap.org/way/28695389"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · California Academy of Sciences aerial view (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:California_Academy_of_Sciences_aerial_view.jpg"
+          },
+          {
+            "label": "Photo · Academy from the de Young tower, 2008 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:CalifAcadamyOfSciAug28-2008img0640.JPG"
+          },
+          {
+            "label": "Photo · Living roof at the California Academy of Sciences (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Living_roof_at_the_California_Academy_of_Sciences.jpg"
+          },
+          {
+            "label": "Photo · Music Concourse from the Academy roof (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Music_Concourse_from_California_Academy_of_Sciences_roof_1_of_6.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/california-academy-of-sciences/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=california-academy-of-sciences&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=overview"
+          },
+          {
+            "label": "Concourse front",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=facade"
+          },
+          {
+            "label": "Living roof",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=roof"
+          },
+          {
+            "label": "Entrance arcade",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=entrance"
+          },
+          {
+            "label": "Rainforest hill",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=rainforest"
+          },
+          {
+            "label": "Planetarium hill",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=planetarium"
+          },
+          {
+            "label": "Photovoltaic canopy",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=canopy"
+          },
+          {
+            "label": "South-east side",
+            "url": "/asset-preview.html?asset=california-academy-of-sciences&view=back"
+          }
+        ]
+      },
+      "notes": "Plan size (161 x 103 m with 3 m corner notches) and axes (long edges bearing 48.1 degrees) come from OpenStreetMap; which side is the front (the north-west Music Concourse side, 318 degrees) is chosen from photographs, not encoded by OSM; the 35 ft (10.7 m; modelled at 10.8 m, OSM height 11) roof edge, 2.5 acre green roof, 27 m domes, 22 x 30 m piazza and 3,500 sq ft terrace are published. Estimated from photographs: the hill positions, radii and profiles (two big hills at about 26 m, five low mounds), the exact number and size of round vents (35 are drawn, each about 3 m across), the 11.9 m canopy depth (chosen so the roof plan matches the published 1 ha), the canopy and wall heights, the stone and glazing split of the walls, the terrace position and the red banner pylon. The glass crown of the rainforest hill is a smooth spherical cap in a white collar with a few ribs (the real dome is a triangulated shell); the hills are spherical-cap domes and the roof is one olive green without ochre patches. The canopy is flat; the real one dips slightly. Planting, interior, trees and surrounding paths are not modelled; the small utility building beside the south-west facade (OSM way 1420082168) is not included. Model heights are over entrance grade.",
+      "documentation": "docs/assets/san-francisco-california-academy-of-sciences.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cathedral-of-saint-mary",
+      "name": "Cathedral of Saint Mary of the Assumption",
+      "kind": "building",
+      "location": "1111 Gough Street · San Francisco, California",
+      "status": "ready",
+      "description": "Pietro Belluschi and Pier Luigi Nervi's 1971 cathedral: a 77 m (255 ft) travertine-clad tower of flat framed walls and concave sloping shell flanks rising from a cantilevered roof slab over a 63 m glazed block, a fin with a black stained-glass slot at the middle of each face, glass strips crossing at the summit under a 58 m (190 ft) dark metal cross, and the three-storey parish buildings south of it as a plain windowed mass.",
+      "manifest": "/models/buildings/cathedral-of-saint-mary.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/cathedral-of-saint-mary/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks cathedral-of-saint-mary",
+        "provenance": "Original procedural geometry authored 2026-10-01 from the OpenStreetMap relation 7814696 (building=cathedral) and its building:part ways 436473547, 436473546 and 435831007 (ODbL 1.0, read through the shared Overpass queue) and published dimensions. No third-party mesh, scan, photograph or texture is shipped; reference photographs stay in ignored tmp/. Photos compared (Wikimedia Commons): 'St Mary's Cathedral - San Francisco' and 'Cathedral Hill, San Francisco, St Mary's' (User:Gndawydiak, public domain); 'The cathedral in San Francisco DSF4299' (Levi Clancy, CC0); 'Saint Mary of the Assumption - San Francisco, CA - 01' (Daderot, CC0); 'Cathedral of Saint Mary of the Assumption (8111318218)' (Franco Folini, CC BY-SA 2.0); 'Cathedral of Saint Mary of the Assumption' (Fred Hsu, CC BY-SA 3.0); interior views 'CathedralofSaintMaryoftheAssumption1' to '3' (David Leigh Ellis, CC BY-SA 3.0).",
+        "references": [
+          {
+            "label": "Cathedral of Saint Mary of the Assumption · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cathedral_of_Saint_Mary_of_the_Assumption_(San_Francisco)"
+          },
+          {
+            "label": "Cathedral of Saint Mary of the Assumption · WikiArquitectura (plans, sections, structure)",
+            "url": "https://en.wikiarquitectura.com/building/cathedral-saint-mary-assumption/"
+          },
+          {
+            "label": "Cattedrale di St. Mary, San Francisco 1963-1971 · Laboratorio Nervi, Politecnico di Milano",
+            "url": "https://www.laboratorionervi.polimi.it/en/portfolio/cattedrale-di-st-mary-san-francisco-1963-1971/"
+          },
+          {
+            "label": "Pier Luigi Nervi in America, part 3: San Francisco · Princeton Form Finding Lab",
+            "url": "https://formfindinglab.wordpress.com/2018/11/27/pier-luigi-nervi-in-america-part-3-san-francisco/"
+          },
+          {
+            "label": "Cathedral of St. Mary of the Assumption · Twentieth Century Society",
+            "url": "https://c20society.org.uk/building-of-the-month/cathedral-of-st-mary-of-the-assumption-san-francisco"
+          },
+          {
+            "label": "Cathedral of Saint Mary of the Assumption · Archeyes",
+            "url": "https://archeyes.com/cathedral-of-saint-mary-of-the-assumption-in-san-francisco-by-pier-luigi-nervi-and-pietro-belluschi/"
+          },
+          {
+            "label": "OpenStreetMap relation 7814696 (the cathedral outline)",
+            "url": "https://www.openstreetmap.org/relation/7814696"
+          },
+          {
+            "label": "OpenStreetMap way 435831007 (the four fins)",
+            "url": "https://www.openstreetmap.org/way/435831007"
+          },
+          {
+            "label": "Photo: The cathedral in San Francisco DSF4299 · Levi Clancy, CC0 (Wikimedia Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_cathedral_in_San_Francisco_DSF4299.jpg"
+          },
+          {
+            "label": "Photo: Saint Mary of the Assumption - San Francisco, CA - 01 · Daderot, CC0 (Wikimedia Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Saint_Mary_of_the_Assumption_-_San_Francisco,_CA_-_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/cathedral-of-saint-mary/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=overview",
+        "views": [
+          {
+            "label": "Whole cathedral from the Gough Street side",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=overview"
+          },
+          {
+            "label": "East facade: bronze door bay, glazed wings and the fin with its slot",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=facade"
+          },
+          {
+            "label": "Summit from above: glass cross, blades and golden cross",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=roof"
+          },
+          {
+            "label": "Corner of the tower: flat framed walls and the two flanks",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=corner"
+          },
+          {
+            "label": "Fin close-up: black glass slot between the stone jambs",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=fin"
+          },
+          {
+            "label": "Entrance bay under the cantilevered slab",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=entrance"
+          },
+          {
+            "label": "Rear (west and south): wall panels and the parish annex",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=back"
+          },
+          {
+            "label": "From Gough Street: bronze door bay, travertine courses and glazed wings",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=gough"
+          },
+          {
+            "label": "From Geary Boulevard: north face and the parish annex",
+            "url": "/asset-preview.html?asset=cathedral-of-saint-mary&view=geary"
+          }
+        ]
+      },
+      "notes": "Published: 255 ft (77.7 m) square, 190 ft (58 m) overall, eight hyperbolic-paraboloid shell segments clad in travertine, black stained-glass slot on each face, glass strips crossing at the summit. Mapped from OSM: the 77 m roof-slab outline, the 63 m ground block, the 35.6 m tower base, the four 3 m fins reaching 20.2 m from the centre, the 9.1 degree grid rotation and the south annex ring. Estimated from photographs: slab thickness (1.9 m) and ground-wall height (10.8 m), wall-top (45 m, so the fins rise about a fifth of their height above the walls as in the straight-on photograph), fin-top (53.5 m) and crossing hub (43 m) heights, the concave crest and 2.4 m depth of the sloping flanks, glass-core and jamb widths, the dark metal cross (15 m tall, 5.2 m bar), the 2.4 m travertine joint pitch (flat quads), the 1.2 m courses and door bay layout of the ground block. The shells are modelled as ruled surfaces, not from the structural drawings. The annex is a plain extrusion with window quads at an assumed three-storey height of 10.5 m (OSM gives 18.9 m for the whole relation, unverified and taller than the 12.7 m slab); the courtyards are squared off. Plaza, steps, door relief figures, interior, bell platform and lamp standards are not modelled. The OSM height tags on the building:part ways (60 m, 77.7 m) are mapping slips and were not used.",
+      "documentation": "docs/assets/san-francisco-cathedral-of-saint-mary.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "chase-center",
+      "name": "Chase Center",
+      "kind": "building",
+      "location": "1 Warriors Way, Mission Bay · San Francisco, California",
+      "status": "ready",
+      "description": "Chase Center, home of the Golden State Warriors: the white aluminium-panel drum in stepped horizontal bands on a dark timber base, the east-facing leaning glass front with its curtain-wall grid and CHASE CENTER sign, the roof visor with its timber soffit and white columns, and the domed roof with parapet, ribs, skylights and plant units.",
+      "manifest": "/models/buildings/chase-center.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/chase-center/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks chase-center",
+        "provenance": "Original procedural geometry authored 2026-10-01 from the mapped plan and photographs; plan from OpenStreetMap way 579646390 (© OpenStreetMap contributors, ODbL 1.0), height from its tag (38.1 m). No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'Chase Center 2019.jpg' (Willowcharter, CC BY-SA 4.0); 'Chase Center - July 2019 (7605).jpg' and 'Chase Center - February 2019 (1943).jpg' (Gregory Varnum, CC BY-SA 4.0); 'Chase Center skin (29905972037).jpg', 'Chase Center 3rd (43829975765).jpg' and 'Chase Center (51775242989).jpg' (Dale Cruse, CC BY 2.0).",
+        "references": [
+          {
+            "label": "Chase Center · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Chase_Center"
+          },
+          {
+            "label": "Chase Center · official site",
+            "url": "https://www.chasecenter.com/"
+          },
+          {
+            "label": "Chase Center building outline · OpenStreetMap way 579646390",
+            "url": "https://www.openstreetmap.org/way/579646390"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · Chase Center 2019, the glass front from the south-east (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chase_Center_2019.jpg"
+          },
+          {
+            "label": "Photo · Chase Center, July 2019, the glass front and sign (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chase_Center_-_July_2019_(7605).jpg"
+          },
+          {
+            "label": "Photo · Chase Center skin, the stepped panel bands (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chase_Center_skin_(29905972037).jpg"
+          },
+          {
+            "label": "Photo · Chase Center, February 2019, the visor and columns under construction (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chase_Center_-_February_2019_(1943).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/chase-center/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=chase-center&view=overview",
+        "views": [
+          {
+            "label": "Overview (south-east corner)",
+            "url": "/asset-preview.html?asset=chase-center&view=overview"
+          },
+          {
+            "label": "Glass front and sign",
+            "url": "/asset-preview.html?asset=chase-center&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=chase-center&view=roof"
+          },
+          {
+            "label": "West drum (Third Street side)",
+            "url": "/asset-preview.html?asset=chase-center&view=west"
+          },
+          {
+            "label": "Plaza level",
+            "url": "/asset-preview.html?asset=chase-center&view=street"
+          },
+          {
+            "label": "Sign, close",
+            "url": "/asset-preview.html?asset=chase-center&view=sign"
+          },
+          {
+            "label": "Visor soffit and columns",
+            "url": "/asset-preview.html?asset=chase-center&view=visor"
+          }
+        ]
+      },
+      "notes": "The 160 m x 157 m plan comes from OpenStreetMap and the 38.1 m height from its tag; every height inside it, the three-band drum profile (lower band flaring out to a ledge, middle band, top band leaning in under the visor), the 3.5 m glass lean, the 6.5-10.5 m visor depth, the roughly 11.5 m column spacing, the panel-slot rhythm, the curtain-wall grid, the sign's letter forms and size and all colours are estimates from photographs. The mapped outline is the roof edge: bands and base are tucked 0.3-4.5 m inside it. The two mapped 'notch' edges where the glass prow meets the drum are drawn as return walls banded like the drum (ledge, shadow gaps, slots, recessed base) with a short plain transition wall at the glass end. The 2.8 m west-entrance tip in the outline is smoothed away and three glazed entrance bays are placed from OSM entrance and box-office nodes. The Seeing Spheres (Olafur Eliasson), the Thrive City pavilions, the Uber towers and the cantilevered terraces north of the front are outside the mapped arena or not modelled. The blue octagon beside the sign is a plain simplification, not the artwork. Interior and seating are not modelled; the roof's parapet, radial ribs, four skylight bands, sixteen plant units and central plant block are plausible inventions (the real layout is not published). The panel slots are single hinged quads. Night: the prow's lit floors, the lobby and the entrance bays use `glow`, the sign is self-lit. `glow` is drawn unshaded, so its day colour is a deep blue chosen to match the shaded glass.",
+      "documentation": "docs/assets/san-francisco-chase-center.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "columbus-tower",
+      "name": "Columbus Tower (Sentinel Building)",
+      "kind": "building",
+      "location": "916 Kearny Street at Columbus Avenue · North Beach / Financial District, San Francisco, California",
+      "status": "ready",
+      "description": "The verdigris-green flatiron on the acute corner of Kearny Street and Columbus Avenue (Salfield & Kohlberg, 1907): eight storeys of white glazed terracotta wall with string courses under narrow copper oriels with recessed Gothic-arcade panels, a round copper corner turret with a slim bell-shaped cap ring, drum, dome, a finial of secondary bulb and gilded ball and a spire, a pale verdigris cornice, arched attic windows, a fire escape on the Columbus face, and the Cafe Zoetrope shop front with its corner door and sloped red canopies.",
+      "manifest": "/models/buildings/columbus-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/columbus-tower/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks columbus-tower",
+        "provenance": "Original procedural geometry authored 2026-10-01 from published facts and photographs; no scan, traced mesh, photograph or texture is in the repository or the GLB. The plan (Kearny face, Columbus face, party wall, round turret) is derived from OpenStreetMap way 288485994 and its dome part way 1092161846, (c) OpenStreetMap contributors (ODbL 1.0), fetched 2026-10-01 through the shared Overpass helper. Comparison photographs are Wikimedia Commons files kept in ignored tmp/san-francisco/columbus-tower/refs/: 'Columbus Tower, 916 Kearny St, San Francisco' and 'Sentinel Building San Francisco at night' by Dllu (CC BY-SA 4.0); 'Columbus Tower (Sentinel Building)' by Billiamwhatcott (CC BY-SA 4.0); 'Columbus Tower San Francisco' by Shane Torgerson (CC BY-SA 3.0); 'Columbus Tower and Transamerica Pyramid' by UpdateNerd (CC0); 'Columbus Tower, SF side 1' and 'side 2' by BrokenSphere (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia · Columbus Tower (San Francisco) (916 Kearny, 1907, Salfield & Kohlberg, 8 floors, copper cladding)",
+            "url": "https://en.wikipedia.org/wiki/Columbus_Tower_(San_Francisco)"
+          },
+          {
+            "label": "Noe Hill · San Francisco Landmark #33: Sentinel Building (white tile and copper, copper dome)",
+            "url": "https://noehill.com/sf/landmarks/sf033.asp"
+          },
+          {
+            "label": "SF Planning · 916 Kearny conditional use packet (8 storeys over basement; patina copper, white glazed terracotta tiles, gold spire; plans A-6, A-7)",
+            "url": "https://commissions.sfplanning.org/cpcpackets/2019-019722CUA.pdf"
+          },
+          {
+            "label": "OSM footprint · way 288485994 (height=29, building:levels=7)",
+            "url": "https://www.openstreetmap.org/way/288485994"
+          },
+          {
+            "label": "OSM turret dome part · way 1092161846",
+            "url": "https://www.openstreetmap.org/way/1092161846"
+          },
+          {
+            "label": "Commons · Columbus Tower, 916 Kearny St (Dllu)",
+            "url": "https://commons.wikimedia.org/wiki/File:Columbus_Tower,_916_Kearny_St,_San_Francisco.jpg"
+          },
+          {
+            "label": "Commons · Columbus Tower and Transamerica Pyramid (UpdateNerd)",
+            "url": "https://commons.wikimedia.org/wiki/File:Columbus_Tower_and_Transamerica_Pyramid.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/columbus-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=columbus-tower&view=overview",
+        "views": [
+          {
+            "label": "Apex-on from Columbus/Kearny/Pacific",
+            "url": "/asset-preview.html?asset=columbus-tower&view=overview"
+          },
+          {
+            "label": "Kearny Street face",
+            "url": "/asset-preview.html?asset=columbus-tower&view=facade"
+          },
+          {
+            "label": "Columbus Avenue face and fire escape",
+            "url": "/asset-preview.html?asset=columbus-tower&view=columbus"
+          },
+          {
+            "label": "Copper turret and cap ring",
+            "url": "/asset-preview.html?asset=columbus-tower&view=turret"
+          },
+          {
+            "label": "Dome, finial group and spire",
+            "url": "/asset-preview.html?asset=columbus-tower&view=dome"
+          },
+          {
+            "label": "Roof and cornice from above",
+            "url": "/asset-preview.html?asset=columbus-tower&view=roof"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=columbus-tower&view=street"
+          }
+        ]
+      },
+      "notes": "Footprint mapped (OSM way 288485994, rotation baked: Kearny face bearing 350 deg, Columbus face 131 deg, turret facing 327 deg); eight storeys (SF Planning), 29 m (OSM height) and the copper / white glazed terracotta / gold spire materials are published. Storey height (2.9 m, ground floor 4.2 m), oriel and window sizes and counts, which oriels are canted or bowed, the arched attic windows, the fire escape, the canopies, the door, the cornice and the dome/finial proportions (tip 29.8 m) are estimates from photographs, +-1 m. The south party wall to 900 Kearny is drawn plain and is not photographed. Oriels, canopies and fire escape overhang the mapped outline by up to ~1.1 m (they project over the sidewalk). Flat local grade y=0. Near 12 302 triangles / 12 draws / 679 KB (679 052 bytes), far 2 693 / 7 / 153 KB (153 464 bytes). No Tesla hardware benchmark.",
+      "documentation": "docs/assets/san-francisco-columbus-tower.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "conservatory-of-flowers",
+      "name": "Conservatory of Flowers",
+      "kind": "building",
+      "location": "100 John F Kennedy Drive, Golden Gate Park · San Francisco, California",
+      "status": "ready",
+      "description": "The 1879 Victorian wood-and-glass greenhouse, the oldest building in Golden Gate Park: an octagonal pavilion under a glazed dome, drum and lantern (about 18 m) with a gabled vestibule on its south face, two vaulted wings of arch-framed glass 73 m long overall that turn toward the lawn in cupola-crowned lobes (the shallow E-shaped plan), and the low service houses behind. Roofs are shaded glass with white arch ribs; the walls, drum and lantern are lit glazing that glows warm at night.",
+      "manifest": "/models/buildings/conservatory-of-flowers.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/conservatory-of-flowers/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks conservatory-of-flowers",
+        "provenance": "Original procedural geometry authored 2026-10-01 from the OpenStreetMap way 30675038 (building=conservatory; ODbL 1.0, read through the shared Overpass queue) and published dimensions (Wikipedia: central dome nearly 60 ft / 18 m, overall length 240 ft / 73 m, shallow E-shaped plan along an east-west axis, one-story gabled vestibule, L-shaped wings with cupolas at the corners). The 5.9 degree axis, the plan and the lobe, alley and rear-house layout come from the mapped outline; heights of the shoulder roof, drum, wing ridge and cupola are estimated from photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs and one aerial tile stay in ignored tmp/ and were only compared by eye. Photos compared (Wikimedia Commons): 'Conservatory of Flowers - panoramio' (harley photo, CC BY-SA 3.0); 'Conservatory of Flowers Greenhouse from overpass MG 7197' and 'Conservatory of Flowers Grounds Greenhouse from tunnel MG 7186' (PeteBobb, CC BY-SA 3.0); 'San Francisco Conservatory of Flowers (3797656556)' (Chris M Morris, CC BY 2.0); 'SF Conservatory of Flowers 2014-05' (WolfmanSF, CC BY-SA 4.0); 'Conservatory of Flowers (2092800123)' (Eric E Castro, CC BY 2.0, an early photograph); 'San Francisco - Conservatory of Flowers - 20180404112306' (Peterquinn925, CC BY-SA 4.0). A single satellite tile (Esri World Imagery) was viewed once to understand the plan behind the wings; nothing was traced or stored.",
+        "references": [
+          {
+            "label": "Conservatory of Flowers · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Conservatory_of_Flowers"
+          },
+          {
+            "label": "OpenStreetMap way 30675038 (the conservatory outline)",
+            "url": "https://www.openstreetmap.org/way/30675038"
+          },
+          {
+            "label": "Photo: Conservatory of Flowers - panoramio · harley photo, CC BY-SA 3.0 (Wikimedia Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Conservatory_of_Flowers_-_panoramio.jpg"
+          },
+          {
+            "label": "Photo: Conservatory of Flowers Greenhouse from overpass · PeteBobb, CC BY-SA 3.0 (Wikimedia Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Conservatory_of_Flowers_Greenhouse_from_overpassMG_7197.jpg"
+          },
+          {
+            "label": "Photo: San Francisco Conservatory of Flowers (3797656556) · Chris M Morris, CC BY 2.0 (Wikimedia Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Francisco_Conservatory_of_Flowers_(3797656556).jpg"
+          },
+          {
+            "label": "Photo: SF Conservatory of Flowers 2014-05 · WolfmanSF, CC BY-SA 4.0 (Wikimedia Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:SF_Conservatory_of_Flowers_2014-05.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/conservatory-of-flowers/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=conservatory-of-flowers&view=overview",
+        "views": [
+          {
+            "label": "Whole conservatory from the south-east: pavilion, wings, lobes",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=overview"
+          },
+          {
+            "label": "South front from the lawn: vestibule, dome and the two cupolas",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=facade"
+          },
+          {
+            "label": "From above: dome, shoulder roof, vaulted wings, alley and rear houses",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=roof"
+          },
+          {
+            "label": "Dome close-up: ribbed glass dome, lit drum, lantern and spire",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=dome"
+          },
+          {
+            "label": "East wing: Tudor-arch vault, cross-vault corner, cupola and lobe",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=wing"
+          },
+          {
+            "label": "Rear: the 3 m alley and the low service houses",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=rear"
+          },
+          {
+            "label": "Entrance: the gabled vestibule against the pavilion",
+            "url": "/asset-preview.html?asset=conservatory-of-flowers&view=vestibule"
+          }
+        ]
+      },
+      "notes": "Published: central dome nearly 60 ft (18 m), overall length 240 ft (73 m), wood skeleton with glass walls on a raised masonry foundation, shallow E-shaped plan along an east-west axis, octagonal pavilion with a one-story gabled vestibule on the south side, dormers on the east, west and south, L-shaped one-story wings with cupolas at the corners, four-centred (Tudor) arches. Mapped from OSM: the 74 m outline, the 5.9 degree axis, pavilion, wing and lobe widths, vestibule depth and the separate rear strip behind a 3 m alley. Estimated: shoulder-roof, drum, dome and lantern heights, the 5.0 m wing ridge (eaves 2.6 m) and 7.5 m cupola tips (about 2.5 m over the ridge), the arch profile, and every dimension of the rear service houses (their roofs are low glazed gables around a flat-roofed core, seen only in an aerial view). Glazing is opaque (shaded glass for roofs, lit glow for walls, drum and lantern); panes are not modelled, only 0.18 m arch ribs at about 3.8 m pitch, purlins and posts at 2 to 2.6 m, so the lattice is a coarse suggestion, not a pane count; roof glass is a cooler blue-grey so the white frames read at 100 to 150 m. The 14-step entrance stair, the lawn terraces, urns and the slope are not modelled (site landscape). Costs: near 7.7 k triangles, 5 draws, 377 KB; far 2.4 k triangles, 5 draws, 123 KB.",
+      "documentation": "docs/assets/san-francisco-conservatory-of-flowers.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "de-young-museum",
+      "name": "de Young Museum",
+      "kind": "building",
+      "location": "50 Hagiwara Tea Garden Drive, Golden Gate Park · San Francisco, California",
+      "status": "ready",
+      "description": "Herzog & de Meuron's 2005 de Young Museum: a long, low mauve-brown copper-clad box (about 145 by 76 m, 13 m high) with courtyards cut through it (five holes in OSM, four courts here), its upper volume cantilevered 118 m over a recessed ground floor of dark mullioned glass, and the 144 ft Hamon Observation Tower at the north-east end, a twisting prism with storey ribs and stair flights that widens from a narrow foot to a glazed observation level under a 7 m solid copper lid.",
+      "manifest": "/models/buildings/de-young-museum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/de-young-museum/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks de-young-museum",
+        "provenance": "Original procedural geometry authored 2026-10-01 (Codriver, with Claude). Outline, five courtyard holes, the 13 m roof and the eight stacked, twisting Hamon Tower building:part slabs read from the OpenStreetMap relation and ways listed in footprint.js (shared Overpass helper; (c) OpenStreetMap contributors, ODbL 1.0). Published figures from Wikipedia (144 ft tower, copper cladding, 2005 opening). Wikimedia Commons photographs were viewed for proportion and detail and are not redistributed: Tuxyso, 'De Young Memorial Museum 2013' (CC BY-SA 3.0); 'DeYoungMemorialMuseum' (CC BY-SA 3.0); Tobias Kleinlercher, 'De Young Museum (TK1)', '(TK3)', '(TK6)' (CC BY-SA 3.0); Fastily, 'De Young Museum - Building 1 2017-04-01', '3 2017-06-09', '4 2017-06-09', '12 2017-06-12', '17 2017-06-12' and '1 2024-01-16' (CC BY-SA 4.0); BrokenSphere, 'Hamon Tower, De Young Museum 1' (CC BY-SA 3.0). No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · de Young Museum",
+            "url": "https://en.wikipedia.org/wiki/De_Young_Museum"
+          },
+          {
+            "label": "Fine Arts Museums of San Francisco (official site; blocks scripted fetches, linked from the OSM museum tag)",
+            "url": "https://www.famsf.org/"
+          },
+          {
+            "label": "OSM relation 1652482 · de Young Museum (outline and courtyards)",
+            "url": "https://www.openstreetmap.org/relation/1652482"
+          },
+          {
+            "label": "OSM way 444230154 · Hamon Tower (outline)",
+            "url": "https://www.openstreetmap.org/way/444230154"
+          },
+          {
+            "label": "OSM way 1418750069 · Hamon Tower, lowest slab (13-18 m)",
+            "url": "https://www.openstreetmap.org/way/1418750069"
+          },
+          {
+            "label": "Wikimedia Commons · Category: De Young Museum - Building",
+            "url": "https://commons.wikimedia.org/wiki/Category:De_Young_Museum_-_Building"
+          },
+          {
+            "label": "Wikimedia Commons · Category: Hamon Observation Tower, De Young Museum",
+            "url": "https://commons.wikimedia.org/wiki/Category:Hamon_Observation_Tower,_De_Young_Museum"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/de-young-museum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=de-young-museum&view=overview",
+        "views": [
+          {
+            "label": "Aerial overview from the south-east",
+            "url": "/asset-preview.html?asset=de-young-museum&view=overview"
+          },
+          {
+            "label": "Entrance front under the cantilever",
+            "url": "/asset-preview.html?asset=de-young-museum&view=facade"
+          },
+          {
+            "label": "Street level at the entrance",
+            "url": "/asset-preview.html?asset=de-young-museum&view=entrance"
+          },
+          {
+            "label": "Roof and courtyards from above",
+            "url": "/asset-preview.html?asset=de-young-museum&view=roof"
+          },
+          {
+            "label": "Hamon Tower twist",
+            "url": "/asset-preview.html?asset=de-young-museum&view=tower"
+          },
+          {
+            "label": "Rear: the north-west wall and the tower",
+            "url": "/asset-preview.html?asset=de-young-museum&view=rear"
+          }
+        ]
+      },
+      "notes": "Mapped, not estimated: the 145 by 76 m roof outline and its bearing (long axis 48 deg), the 13 m roof height, four courtyard cut-outs (OSM's five holes, two of which share an edge and are one court here), the plan of each of the eight Hamon Tower slabs (a shear-twist: the short faces stay parallel to the museum while the long faces swing about 31 deg from running across the museum to running with the street grid), and the 144 ft (44 m) tower height from the published figure. OSM stacks the tower 13 to 51 m in 5 m slabs; the published 144 ft is used instead and the six trunk slab plans are spread over 13 to 34.5 m, under a 2.5 m glazed level and a 7 m lid (37 to 44 m, from the photographs). Estimated from photographs: the 6 m soffit height and 6 m cantilever depth, its extent (u -58 to 60 m along the front), the fascia lip (1 m, 0.3 m proud), the glazing (the whole recessed wall is dark glass with mullions every 3.4 m), the entrance doors, the cafe window, the tall slit window and the north-west portal, the courtyard glazing, the two slit windows in the tower, the storey ribs and the stair flights, and the glazed level and lid thicknesses. The perforated, dimpled copper is a pattern of flat joint-lined tiles (about 3.4 by 3.2 m, offset 0.15 m) whose tone varies about 8% from bay to bay, not geometry; the tower is a copper-grey close to the body tone; the colours are a weathered mauve-brown, not the original bright copper. Not modelled: the real steel-mesh stair gantries and mesh frames on the tower (thin bars stand in), trees and garden, the sunken Music Concourse, the interior, the Three Gems skyspace. The glow material (entrance, cafe and observation level) is an estimate of the lit museum at night and reads as dark glass by day.",
+      "documentation": "docs/assets/san-francisco-de-young-museum.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "golden-gate-bridge",
+      "name": "Golden Gate Bridge",
+      "kind": "bridge",
+      "location": "US 101 over the Golden Gate strait · San Francisco–Marin, California",
+      "status": "ready",
+      "description": "The 1937 suspension bridge in International Orange: two 227 m art-deco towers with four stacked portal struts and X-bracing below the deck, the main cables sweeping down to the deck at mid-span over the 1,280 m main span and 343 m side spans, 250 pairs of suspenders, the open Warren stiffening truss, the Fort Point arch between pylons S2 and S1, the anchorages and approach viaducts, carrying six lanes of US 101 with its movable median barrier, two sidewalks and deck lamps. Road-fitted bridge built on the mapped OSM carriageways.",
+      "manifest": "/models/bridges/golden-gate-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/golden-gate-bridge/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks golden-gate-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-01 from published dimensions (Golden Gate Bridge, Highway and Transportation District; Wikipedia), the mapped OSM US 101 carriageways and approach roads, and the mapped tower leg/strut building parts, pylons S1/S2/N1/N2, anchorages and the south tower fender (Overpass extracts retrieved 2026-10-01, ODbL 1.0, © OpenStreetMap contributors; way ids in golden-gate-bridge-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Christoph Strässler, Golden Gate Bridge seen from Battery Spencer (CC BY-SA 2.0); Radomianin, Golden Gate Bridge, north tower detail (CC BY-SA 4.0); Jet Lowe, HAER CA-31-3, general view looking north with the approach span deck arch (public domain); King of Hearts, Golden Gate Bridge and San Francisco skyline from Hawk Hill at blue hour (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "GGBHTD · design and construction statistics (spans, towers, cables, suspenders, roadway, clearance)",
+            "url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/"
+          },
+          {
+            "label": "Wikipedia · Golden Gate Bridge",
+            "url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+          },
+          {
+            "label": "GGBHTD · Fort Point arch",
+            "url": "https://www.goldengate.org/exhibits/fort-point-arch/"
+          },
+          {
+            "label": "OSM way 595194543 · northbound carriageway (station frame)",
+            "url": "https://www.openstreetmap.org/way/595194543"
+          },
+          {
+            "label": "OSM way 537838948 · southbound carriageway",
+            "url": "https://www.openstreetmap.org/way/537838948"
+          },
+          {
+            "label": "OSM way 1329971884 · south tower pier and leg parts (setbacks, strut heights)",
+            "url": "https://www.openstreetmap.org/way/1329971884"
+          },
+          {
+            "label": "HAER CA-31 photograph · Fort Point arch and south tower (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:GENERAL_VIEW,_LOOKING_NORTH,_WITH_APPROACH_SPAN_DECK_ARCH_ON_LEFT_-_Golden_Gate_Bridge,_Spanning_mouth_of_San_Francisco_Bay,_San_Francisco,_San_Francisco_County,_CA_HAER_CAL,38-SANFRA,140-3.tif"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Golden_Gate_Bridge"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/golden-gate-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=golden-gate-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview, from the Marin headlands",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=overview"
+          },
+          {
+            "label": "Broadside from the bay",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=facade"
+          },
+          {
+            "label": "Driver's eye, northbound at the south tower",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=deck"
+          },
+          {
+            "label": "South tower, portal struts",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=tower"
+          },
+          {
+            "label": "Underside: truss and tower bracing",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=underside"
+          },
+          {
+            "label": "Fort Point arch",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=arch"
+          },
+          {
+            "label": "From above the north tower",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=roof"
+          },
+          {
+            "label": "South approach and ramp",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=approach"
+          },
+          {
+            "label": "North anchorage and approach",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=north"
+          },
+          {
+            "label": "Night",
+            "url": "/asset-preview.html?asset=golden-gate-bridge&view=night"
+          }
+        ]
+      },
+      "notes": "Published: main span 1,280.2 m, side spans 342.9 m, towers 227.4 m above water and 152 m above the roadway (road 75.4 m), 67 m mid-span clearance (truss underside 67.0 m), cables 0.92 m and 27.4 m apart, 250 suspender pairs at 15.24 m, roadway 18.9 m with 3.05 m sidewalks, Fort Point arch 97 m. Mapped (OSM): both carriageways and the US 101 approaches, tower leg setbacks (along-axis) and portal strut heights, piers, pylons S1/S2/N1/N2, anchorage outlines, the south fender (south half, mirrored); towers within 2.1 m of the mapped legs. Estimated: leg across-width above 162 m (the mapped 3.9 m top is not what photographs show), recess and grille ornament, the X-bracing below the deck, cable sag and side-span ends, arch rise and web, approach bents and the anchorage massing above ground, lamp spacing. Railings drawn solid; suspender pairs as one ribbon; no safety net, wind fairing, beacons or toll plaza. Flat-map convention: level from pylon S2 to N1, 900 m smoothstep ramps at both ends (12.6 % steepest) out along the toll plaza / Presidio Parkway and Redwood Highway, on piers then fill; the separated approach carriageways keep their own pavements on one ramp deck. North anchorage: a 22 m low block with pilasters and a tapered cable housing, the deck truss crossing it on steel bents (massing estimated). Far (2-8 km): every other suspender, no lamps. Near 52,474 triangles / 17 draws / 1.97 MB; far 12,482 / 4 / 0.46 MB. No Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-golden-gate-bridge.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "legion-of-honor",
+      "name": "California Palace of the Legion of Honor",
+      "kind": "building",
+      "location": "100 34th Avenue, Lincoln Park · San Francisco, California",
+      "status": "ready",
+      "description": "California Palace of the Legion of Honor (George Applegarth and Henri Guillaume, 1924), the three-quarter-scale replica of the Palais de la Légion d'Honneur: the triumphal entrance arch between two single-row colonnade screens and two tall end pavilions, the open colonnaded Court of Honor with the glass pyramid skylight and The Thinker, the six-column Corinthian portico of the museum block, the low skylit gallery roofs and the domed rotunda on its round apse at the back, all in cream stone.",
+      "manifest": "/models/buildings/legion-of-honor.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/legion-of-honor/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks legion-of-honor",
+        "provenance": "Original procedural geometry authored 2026-10-01. Plan, outline, orientation (48.91 degrees), court, colonnade strips, portico, arch, rotunda and glass pyramid from OpenStreetMap relation 21115818 (outer way 1540340820, court hole 1540340819) and building:part ways 1540337302-05, 1540327029-30, 1540333313-14, 1410202325, 1410202318 and way 393275341 (© OpenStreetMap contributors, ODbL 1.0), read through the shared Overpass helper. Reference photographs used only to compare and kept out of the repository (Wikimedia Commons): 'California Palace of the Legion of Honor - Façade.jpg' (Mpasques, CC BY-SA 4.0), 'California Palace of the Legion of Honor, San Francisco, California LCCN2011630619' (Carol M. Highsmith, public domain), 'California - San Francisco - NARA - 23935697.jpg' (US Army Air Corps aerial 1932, NARA, public domain), 'Legion vintage 01', '02', '03', '04' (anonymous 1920s-30s postcards, public domain), 'California Palace of the Legion of Honor 14', '60', '103', '125', '143' 2015-01-03 (FASTILY, CC BY-SA 4.0) and 'Park in front of the Legion of Honor - panoramio' (K Danko, CC BY-SA 3.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Legion of Honor (museum)",
+            "url": "https://en.wikipedia.org/wiki/Legion_of_Honor_(museum)"
+          },
+          {
+            "label": "Wikidata · Legion of Honor",
+            "url": "https://www.wikidata.org/wiki/Q2468251"
+          },
+          {
+            "label": "OSM relation 21115818 · Legion of Honor",
+            "url": "https://www.openstreetmap.org/relation/21115818"
+          },
+          {
+            "label": "OSM glass pyramid · way 393275341",
+            "url": "https://www.openstreetmap.org/way/393275341"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:California_Palace_of_the_Legion_of_Honor"
+          },
+          {
+            "label": "Entrance arch and colonnades · Commons 'Façade'",
+            "url": "https://commons.wikimedia.org/wiki/File:California_Palace_of_the_Legion_of_Honor_-_Fa%C3%A7ade.jpg"
+          },
+          {
+            "label": "1932 aerial of the whole palace · Commons (NARA)",
+            "url": "https://commons.wikimedia.org/wiki/File:California_-_San_Francisco_-_NARA_-_23935697.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/legion-of-honor/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=legion-of-honor&view=overview",
+        "views": [
+          {
+            "label": "Whole palace from the forecourt: arch, court, galleries and rotunda",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=overview"
+          },
+          {
+            "label": "Entrance front: arch, colonnade screens and end pavilions",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=facade"
+          },
+          {
+            "label": "Court of Honor through the arch: portico, glass pyramid and The Thinker",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=court"
+          },
+          {
+            "label": "Triumphal arch and the colonnade screen",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=arch"
+          },
+          {
+            "label": "Roofs from above: skylit galleries, court and dome",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=roof"
+          },
+          {
+            "label": "Rotunda apse and dome at the west end",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=rotunda"
+          },
+          {
+            "label": "South gallery wall and its pilasters",
+            "url": "/asset-preview.html?asset=legion-of-honor&view=back"
+          }
+        ]
+      },
+      "notes": "Mapped from OSM: the 93.8 x 60.5 m outline turned 48.91 degrees from north, the 40 x 30 m court, the 2.8 m colonnade strips, the 12.6 m portico projecting 5.6 m, the arch block (10.7 m wide, 4.9 m deep) and the 7 m apse with the dome; the glass pyramid (7.4 m diagonal, 1 m rise). OSM heights (dome 21, wings 17, arch 16 with the opening crown at 13, portico 15, colonnades 11) count from the lowest grade; photographs (the arch, portico and colonnade measured against their mapped widths) put the Court of Honor floor about 3 m above it, so the model uses y = 0 at the court and the OSM heights minus 3 m (dome 18, wings 14.2 ridge / 12.4 cornice, arch 13, portico 12, colonnades 8.2). Estimated from photographs: the 4.8 m arch opening and its crown, colonnade pitch (1.8 m) and column proportions, portico column spacing, hip pitch, the rotunda drum, dome profile and window arches, the end-pavilion niches, relief panels (shallow stone-colour panels, no figures), the skylight bay layout and pilaster rhythm; The Thinker's position (arch side of the pyramid, 1.6 m plinth) follows the Highsmith court photograph. Not modelled: statuary other than The Thinker, the lions and balustraded forecourt terraces, steps, the inscription lettering, ashlar joints on the long walls, interiors, the basement levels below the court and the Lincoln Park bluff. Gallery roofs are drawn as low hips round pale decks carrying dark skylight bays (1932 aerial photograph); far merges them into one glazed deck per roof; the colonnade rear walls and the portico recess use the self-lit glow material so the court reads lit at night. No Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-legion-of-honor.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "oracle-park",
+      "name": "Oracle Park",
+      "kind": "building",
+      "location": "24 Willie Mays Plaza · San Francisco, California",
+      "status": "ready",
+      "description": "The Giants' open-air ballpark: a stepped seating bowl wrapped round home plate under a green canopy, the red-brick King Street facade with the clock tower and ORACLE PARK sign at Willie Mays Plaza, six lattice floodlight frames, the two-mast centre-field scoreboard, the 24 ft right-field wall and arched arcade on McCovey Cove, and beyond left field the Coca-Cola bottle and the giant four-fingered glove.",
+      "manifest": "/models/buildings/oracle-park.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/oracle-park/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks oracle-park",
+        "provenance": "Original procedural geometry authored 2026-10-01 from public dimensions and photographs; plan, part outlines and heights from OpenStreetMap (building=stadium relation 7330762 with outer way 24352572, building:part ways 499568642-52, baseball grass way 500283910; © OpenStreetMap contributors, ODbL 1.0). No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'AT&T Park July 24, 2016.jpg' (Coasttocoast, CC BY-SA 3.0); 'AT&T Park in San Francisco (TK19).JPG' and 'AT&T Park Sign with clock (TK1).JPG' (Tobias Kleinlercher, CC BY-SA 3.0); 'Coca Cola and Glove at Oracle Park.jpg' (PcK.10, CC0); 'Oracle Park from China Basin Park.jpg' (Lexi Mattick, CC BY 4.0); 'Aerial photograph of AT&T Park, home of the San Francisco Giants.jpg' (Grant.gibson, CC BY 2.5); 'AT&T Park western side 1.JPG' and 'AT&T Park northern side 1.JPG' (BrokenSphere, CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Oracle Park · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Oracle_Park"
+          },
+          {
+            "label": "Oracle Park ballpark page · San Francisco Giants (MLB)",
+            "url": "https://www.mlb.com/giants/ballpark"
+          },
+          {
+            "label": "Oracle Park stadium building · OpenStreetMap relation 7330762",
+            "url": "https://www.openstreetmap.org/relation/7330762"
+          },
+          {
+            "label": "Stadium outer ring · OpenStreetMap way 24352572",
+            "url": "https://www.openstreetmap.org/way/24352572"
+          },
+          {
+            "label": "Grandstand rim part · OpenStreetMap way 499568642",
+            "url": "https://www.openstreetmap.org/way/499568642"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · Aerial photograph of AT&T Park (CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_AT%26T_Park,_home_of_the_San_Francisco_Giants.jpg"
+          },
+          {
+            "label": "Photo · AT&T Park July 24, 2016 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Park_July_24,_2016.jpg"
+          },
+          {
+            "label": "Photo · Coca Cola and Glove at Oracle Park (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Coca_Cola_and_Glove_at_Oracle_Park.jpg"
+          },
+          {
+            "label": "Photo · AT&T Park western side 1 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Park_western_side_1.JPG"
+          },
+          {
+            "label": "Photo · AT&T Park northern side 1 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Park_northern_side_1.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/oracle-park/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=oracle-park&view=overview",
+        "views": [
+          {
+            "label": "Overview from McCovey Cove",
+            "url": "/asset-preview.html?asset=oracle-park&view=overview"
+          },
+          {
+            "label": "King Street facade",
+            "url": "/asset-preview.html?asset=oracle-park&view=facade"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=oracle-park&view=roof"
+          },
+          {
+            "label": "Willie Mays Plaza: clock tower and sign",
+            "url": "/asset-preview.html?asset=oracle-park&view=entrance"
+          },
+          {
+            "label": "Right-field arcade on the Cove",
+            "url": "/asset-preview.html?asset=oracle-park&view=cove"
+          },
+          {
+            "label": "Behind home plate",
+            "url": "/asset-preview.html?asset=oracle-park&view=field"
+          },
+          {
+            "label": "Bottle and glove",
+            "url": "/asset-preview.html?asset=oracle-park&view=toys"
+          },
+          {
+            "label": "Scoreboard",
+            "url": "/asset-preview.html?asset=oracle-park&view=scoreboard"
+          }
+        ]
+      },
+      "notes": "Plan, the 62-70 m light frames and scoreboard-frame heights, the field outline and the right-field wall are mapped or published; the facade heights (21/25/22/14/12.5 m), the tier profile (a lower deck, a glass club band, an upper deck under a canopy, all as stepped terraces rather than seats), the window and arch rhythm, the clock-tower and brick-tower heights (31 and 34 m shafts), the bottle tilt and the glove shape (a stylised mitt: heel, four fingers and a thumb) are estimates from photographs; the upper deck tapers out toward the first-base end. The left-field foul pole region, the interior concourses, the foghorn, the foul poles, the statues and the water-side pier are not modelled; the east end (Seals Plaza and the ferry pier) is left open because it is plaza, not building. The mapped 60 m rim band (OSM) is read as the canopy zone and drawn at about 35 m; its true height is not published. The field is drawn at y=0.1 on the same datum as the street. Model heights are over street grade.",
+      "documentation": "docs/assets/san-francisco-oracle-park.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "san-francisco-city-hall",
+      "name": "San Francisco City Hall",
+      "kind": "building",
+      "location": "1 Dr Carlton B Goodlett Place · San Francisco, California",
+      "status": "ready",
+      "description": "Arthur Brown Jr.'s 1915 Beaux-Arts City Hall: the 93.7 m (307.5 ft) slate dome with twenty-four gilded ribs and a gilded lantern on a coupled-column drum, the six-column pedimented portico with three arched doors on the Polk Street front, Doric colonnaded wings and pedimented end pavilions, a matching Van Ness Avenue front, and the Civic Center grid bearing (80.9 degrees).",
+      "manifest": "/models/buildings/san-francisco-city-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/san-francisco-city-hall/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks san-francisco-city-hall",
+        "provenance": "Original procedural geometry authored 2026-10-01 (geometry.js, san-francisco-city-hall-facade.js, -dome.js, -kit.js, -plan.js) from the mapped OSM outline and its rotunda building:parts, the published dome height and diameter, and public photographs. Mapped footprint (OSM relation 7261820, outer way 494810795, building:part ways 494810783 to 494810841) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons '2017 City Hall from Pioneer Monument' and '2017 City Hall from United Nations Plaza' (Beyond My Ken, CC BY-SA 4.0), 'City Hall San Francisco 04 2015 1865' and '... 1728' (Mariordo, CC BY-SA 4.0), 'City Hall San Francisco, California' (Tszeiler1, CC BY-SA 4.0), 'Civic Center San Francisco 001' (Iniguezi, CC BY-SA 4.0), 'Aerial view of the Beaux Arts Civic Center of SF' (Dllu, CC BY-SA 4.0), 'San Francisco City Hall night' (Andreas Praefcke, CC BY 3.0), 'SFCityHallWestSide' (Leonard G., CC SA 1.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · San Francisco City Hall",
+            "url": "https://en.wikipedia.org/wiki/San_Francisco_City_Hall"
+          },
+          {
+            "label": "OSM footprint · relation 7261820",
+            "url": "https://www.openstreetmap.org/relation/7261820"
+          },
+          {
+            "label": "OSM outline · way 494810795",
+            "url": "https://www.openstreetmap.org/way/494810795"
+          },
+          {
+            "label": "Photo · Polk Street front from the plaza (Beyond My Ken, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2017_City_Hall_from_Pioneer_Monument.jpg"
+          },
+          {
+            "label": "Photo · dome and portico (Tszeiler1, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:City_Hall_San_Francisco,_California.jpg"
+          },
+          {
+            "label": "Photo · from United Nations Plaza (Beyond My Ken, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2017_City_Hall_from_United_Nations_Plaza.jpg"
+          },
+          {
+            "label": "Photo · aerial at dusk (Dllu, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Beaux_Arts_Civic_Center_of_SF.jpg"
+          },
+          {
+            "label": "Photo · colonnades floodlit at night (Andreas Praefcke, CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Francisco_City_Hall_night.jpg"
+          },
+          {
+            "label": "Photo · dome from the west (Leonard G., CC SA 1.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:SFCityHallWestSide.JPG"
+          },
+          {
+            "label": "Photo · oblique from the north-east (Mariordo, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:City_Hall_San_Francisco_04_2015_1865.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/san-francisco-city-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=san-francisco-city-hall&view=facade",
+        "views": [
+          {
+            "label": "Polk Street front",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=facade"
+          },
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=overview"
+          },
+          {
+            "label": "Roofs and rotunda from above",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=roof"
+          },
+          {
+            "label": "Dome, drum and lantern",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=dome"
+          },
+          {
+            "label": "Portico and doors",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=portico"
+          },
+          {
+            "label": "South wing colonnade",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=colonnade"
+          },
+          {
+            "label": "Van Ness Avenue (west) front",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=rear"
+          },
+          {
+            "label": "McAllister Street (south) side",
+            "url": "/asset-preview.html?asset=san-francisco-city-hall&view=side"
+          }
+        ]
+      },
+      "notes": "Sourced: 93.7 m (307.5 ft) height to the finial, dome base diameter about 28 m (OSM part 13.7 m radius; Wikipedia gives 112 ft), the 127 m x 98 m mapped outline at bearing 80.9 degrees (front) and the rotunda parts (drum 40-56 m, dome 60-75 m, lantern 74-81 m, finial 93 m), Madera County granite, 1915. Estimated from photographs: storey heights (rusticated base 6.5 m, wing parapet 26 m, portico entablature 28.8 m, pediment apex 33.3 m, spine ridge 35.4 m), column counts and spacing (4.07 m bays), column and window sizes, the dome profile and rib count (24), the lantern's stages, the cartouches, and every roof (a simplified hip over the wings, a gabled spine across the middle). The west (Van Ness) front repeats the Polk composition with a deeper stair, and the north and south sides are reasoned extensions of it: no photograph of those was studied closely. Sculpture, carved relief, balusters, flags and the gilded lamps are abstracted or absent; gold leaf is one flat colour; the light courts are closed by the roof. Cornices project up to about 0.7 m beyond the mapped wall line. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 12112 triangles / 8 draws / 572208 bytes, far 4682 / 7 / 233584. The dome's gilded parts are the self-lit `lamp` material (floodlit at night); the night dome and stone palette are lifted to read as floodlit.",
+      "documentation": "docs/assets/san-francisco-san-francisco-city-hall.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "sfmoma",
+      "name": "San Francisco Museum of Modern Art",
+      "kind": "building",
+      "location": "151 Third Street · San Francisco, California",
+      "status": "ready",
+      "description": "SFMOMA in its current form: Mario Botta's 1995 building on Third Street (stepped reddish-brown brick masses, black and white striped turret sliced on the bias with its ribbed skylight, striped columns over a dark glazed ground storey) with Snøhetta's 2016 expansion rising to 62 m behind it, a white fibre-reinforced polymer slab with horizontal waves, ribbon windows and a glazed Howard Street gallery.",
+      "manifest": "/models/buildings/sfmoma.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/sfmoma/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks sfmoma",
+        "provenance": "Original procedural geometry authored 2026-10-01 from OpenStreetMap plan data (hull way 41692824 and its building parts) and published dimensions; photographs were used only to compare and are not shipped. Mapped outlines © OpenStreetMap contributors (ODbL 1.0). No scan, third-party mesh, photograph or texture in the repository or the GLB. Comparison photographs (Wikimedia Commons, kept outside the repo): '2017 SFMOMA from Yerba Buena Gardens.jpg' (Beyond My Ken, CC BY-SA 4.0); 'MoMaSF 2008.jpg' (Andreas Praefcke, CC BY 3.0); 'SF MoMA from Yerba Buena.jpg' (JaGa, CC BY-SA 3.0); 'SF MOMA, San Francisco at night.jpg' (Dllu, CC BY-SA 4.0); 'San Francisco Museum of Modern Art Building.jpg' (Minette Lontsie, CC BY-SA 4.0); 'Exterior of San Francisco Museum of Modern Art, California 06.jpg' and '... 09.jpg' (GualdimG, CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia · San Francisco Museum of Modern Art (Botta building 1995, Snøhetta expansion 2016, FRP panels)",
+            "url": "https://en.wikipedia.org/wiki/San_Francisco_Museum_of_Modern_Art"
+          },
+          {
+            "label": "Skyscraper Center · SFMOMA Expansion (62 m / 203 ft, 10 floors)",
+            "url": "https://www.skyscrapercenter.com/building/san-francisco-museum-of-modern-art-expansion/47773"
+          },
+          {
+            "label": "SFMOMA · Architecture and building information (Botta building: five storeys, brick, striped turret)",
+            "url": "https://www.sfmoma.org/press/release/sfmoma-architecture-and-building-information/"
+          },
+          {
+            "label": "Time (1995) · A Soaring Well of Light (cylinder sliced at a steep angle, oculus 130 ft above)",
+            "url": "https://time.com/archive/6726743/a-soaring-well-of-light/"
+          },
+          {
+            "label": "Architectural Record · San Francisco Museum of Modern Art (200 ft expansion, 700+ FRP panels)",
+            "url": "https://www.architecturalrecord.com/articles/11644-san-francisco-museum-of-modern-art"
+          },
+          {
+            "label": "OSM · hull way 41692824",
+            "url": "https://www.openstreetmap.org/way/41692824"
+          },
+          {
+            "label": "OSM · Snøhetta expansion part 1365384411",
+            "url": "https://www.openstreetmap.org/way/1365384411"
+          },
+          {
+            "label": "OSM · Botta main body part 1365384415",
+            "url": "https://www.openstreetmap.org/way/1365384415"
+          },
+          {
+            "label": "Wikimedia Commons · Exterior of San Francisco Museum of Modern Art",
+            "url": "https://commons.wikimedia.org/wiki/Category:Exterior_of_San_Francisco_Museum_of_Modern_Art"
+          },
+          {
+            "label": "Wikimedia Commons · 2017 SFMOMA from Yerba Buena Gardens (front, both parts)",
+            "url": "https://commons.wikimedia.org/wiki/File:2017_SFMOMA_from_Yerba_Buena_Gardens.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · MoMaSF 2008 (Third Street front before the expansion)",
+            "url": "https://commons.wikimedia.org/wiki/File:MoMaSF_2008.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/sfmoma/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=sfmoma&view=overview",
+        "views": [
+          {
+            "label": "Overview from Third Street and Minna",
+            "url": "/asset-preview.html?asset=sfmoma&view=overview"
+          },
+          {
+            "label": "Third Street front",
+            "url": "/asset-preview.html?asset=sfmoma&view=facade"
+          },
+          {
+            "label": "Striped turret and skylight",
+            "url": "/asset-preview.html?asset=sfmoma&view=turret"
+          },
+          {
+            "label": "Street level, ground storey",
+            "url": "/asset-preview.html?asset=sfmoma&view=street"
+          },
+          {
+            "label": "Snøhetta expansion from Howard Street",
+            "url": "/asset-preview.html?asset=sfmoma&view=expansion"
+          },
+          {
+            "label": "Rear (Natoma side) and annex",
+            "url": "/asset-preview.html?asset=sfmoma&view=back"
+          },
+          {
+            "label": "Roofs and skylight from above",
+            "url": "/asset-preview.html?asset=sfmoma&view=roof"
+          }
+        ]
+      },
+      "notes": "SOURCED: expansion height 62 m / 203 ft, 10 floors (Skyscraper Center); Botta building five storeys, stepped brick masses, striped turret sliced on the bias, expansion about 50 ft taller than Botta (Architectural Record, 200 ft), over 700 FRP panels. MAPPED (OSM, 2026-10-01): the whole plan and the street grid rotation (135.4 degrees, baked into the geometry): Botta body 65.2 x 49 m, turret circle r 9.6 m, the two 14 m end towers and the block behind the turret, the 108.6 m slab of the expansion (Minna to Howard) and its two-storey annex. ESTIMATED from photographs: every height except 62 m (front wall 19.5 m, band 24.5 m, middle tier 29.5 m, towers 40.5 m, turret rim 27.6 to 45.8 m at a 43 degree slope), tier step depths, ground storey 6.2 m, column spacing, brick course pitch (1.3 m) and dash rows, stripe pitch (0.8 m), skylight ribs, the Snøhetta roof profile (46 m at the Minna end rising to 62 m), wave pitch (4.8 m) and depth (0.45 m), ribbon window positions, annex height (10.5 m), the lean (up to 4 m at the roof). SIMPLIFIED: the lower white wall above Third Street is smooth, the expansion is its mapped plan with a sloped roof and a simple inward lean, not the real building's setbacks. NOT MODELLED: the SF MO MA lettering, the oculus bridge and interior, the SFMOMA Garage and rooftop sculpture garden, the Third Street plaza, the living wall, the Snøhetta panels' crystal sparkle. The skylight and a thin strip of ground-floor lighting are drawn unshaded (lit at night). Flat-map grade y=0; no Tesla hardware measurements.",
+      "documentation": "docs/assets/san-francisco-sfmoma.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "transamerica-pyramid",
+      "name": "Transamerica Pyramid",
+      "kind": "building",
+      "location": "600 Montgomery Street · San Francisco, California",
+      "status": "ready",
+      "description": "William Pereira's 1972 Transamerica Pyramid, 260 m: a straight four-sided pyramid 53 m square at grade with a precast grid of about 3,700 recessed window pockets, the A-frame arcade over a glazed lobby, the two vertical wings (elevator shafts east, stair and smoke tower west) rising from about the 29th floor, and the 65 m aluminium spire with its louvres and glass crown. Built on the mapped 9.2 degree rotation of the Financial District grid.",
+      "manifest": "/models/buildings/transamerica-pyramid.json",
+      "source": {
+        "path": "src/peregrine/landmarks/san-francisco/transamerica-pyramid/geometry.js",
+        "build": "pnpm build:san-francisco-landmarks transamerica-pyramid",
+        "provenance": "Original procedural geometry authored 2026-10-01. Axis, rotation (faces at bearings 80.8 / 170.8 / 260.8 / 350.8), the 46 m square at 30 m, the 54 m base outline and the 27.9 x 6.5 m wing footprint from OpenStreetMap way 24222973 and its building:part ways 451336902, 451336893, 451336895, 451336898, 451336901 and 136615987 (read through the shared Overpass queue 2026-10-01; © OpenStreetMap contributors, ODbL 1.0). Height, floors, base width, spire length and window count from the Wikipedia article. Window pockets, arcade, wing tops, louvres and crown estimated from Wikimedia Commons photographs used only as local ignored comparison images: 'South face of the Transamerica Pyramid, 2017' (Dllu, CC BY-SA 4.0); 'Transamerica Pyramid base architecture 1' and '2', 'Transamerica Pyramid base walkway' and 'Transamerica Pyramid from street level 1' (BrokenSphere, CC BY-SA 4.0); '2017 Transamerica Pyramid from Columbus Avenue' (Beyond My Ken, CC BY-SA 4.0); 'Looking up the Transamerican pyramid' (Choinowski, CC BY-SA 4.0); 'Pyramid 101' (Baconstang, CC BY-SA 4.0); 'Transamerica Pyramid 04' (sailko, CC BY-SA 3.0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Transamerica Pyramid · Wikipedia (height, floors, wings, spire, windows)",
+            "url": "https://en.wikipedia.org/wiki/Transamerica_Pyramid"
+          },
+          {
+            "label": "Transamerica Pyramid · official site",
+            "url": "https://transamericapyramid.com"
+          },
+          {
+            "label": "OSM way 24222973 · tower outline",
+            "url": "https://www.openstreetmap.org/way/24222973"
+          },
+          {
+            "label": "OSM way 451336902 · the 46 m pyramid part",
+            "url": "https://www.openstreetmap.org/way/451336902"
+          },
+          {
+            "label": "OSM way 136615987 · wing footprint part",
+            "url": "https://www.openstreetmap.org/way/136615987"
+          },
+          {
+            "label": "South face and window pockets · Dllu (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:South_face_of_the_Transamerica_Pyramid,_2017.jpg"
+          },
+          {
+            "label": "A-frame base detail · BrokenSphere (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Transamerica_Pyramid_base_architecture_1.JPG"
+          },
+          {
+            "label": "Arcade under the tower · BrokenSphere (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Transamerica_Pyramid_base_walkway.JPG"
+          },
+          {
+            "label": "Wing and spire from Columbus Avenue · Beyond My Ken (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2017_Transamerica_Pyramid_from_Columbus_Avenue.jpg"
+          },
+          {
+            "label": "The wing's flat face from below · Choinowski (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Looking_up_the_Transamerican_pyramid.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/transamerica-pyramid/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=transamerica-pyramid&view=overview",
+        "views": [
+          {
+            "label": "Whole pyramid",
+            "url": "/asset-preview.html?asset=transamerica-pyramid&view=overview"
+          },
+          {
+            "label": "South face window grid",
+            "url": "/asset-preview.html?asset=transamerica-pyramid&view=facade"
+          },
+          {
+            "label": "Spire and crown",
+            "url": "/asset-preview.html?asset=transamerica-pyramid&view=roof"
+          },
+          {
+            "label": "A-frame arcade",
+            "url": "/asset-preview.html?asset=transamerica-pyramid&view=base"
+          },
+          {
+            "label": "Wing tops and spire foot",
+            "url": "/asset-preview.html?asset=transamerica-pyramid&view=wings"
+          },
+          {
+            "label": "West wing from Montgomery Street",
+            "url": "/asset-preview.html?asset=transamerica-pyramid&view=west"
+          }
+        ]
+      },
+      "notes": "Published: 260 m, 48 floors, 53.3 m base, 65 m spire, 3,678 windows (model: 3,632 windows counted on a 1.37 m module). Mapped: axis, 9.2 degree rotation, 46 m square at 30 m (the model is 3% wider there), 54 m base outline, wing footprint 27.9 x 6.5 m (model wing face 13.8 m from the axis). Estimated from photographs: the four-storey base (11 m A-frame arcade over a lobby set back 4.3 m, fascia, recessed strip, 20.4 m to the first window row), the window proportions (recessed pockets 0.5 m deep with a 2.0 m opening over a 1.6 m sloped sill on the lowest 14 rows, to 76 m; flat bronze-black panes 0.15 m proud of a plain wall above, to keep the near model light; 4 m floors; flat piers rather than the real bevelled shields), the wing start (128 m, about the 29th floor) and pitched tops (209.5 to 214.5 m), the louvres and the 6 m glass crown. The faces are one straight slope to a 1.2 m flat at 260 m; the real spire may steepen slightly. Not modelled: Redwood Park and its glass pavilion (OSM way 1316030009, provider-owned), the X-braced soffit frames in the arcade, the rooftop cameras, the interior. Night: about a fifth of the windows, the spire louvres and the crown are self-lit; the seasonal crown beacon is a single glow material.",
+      "documentation": "docs/assets/san-francisco-transamerica-pyramid.md",
+      "city": "San Francisco",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

@@ -4,8 +4,8 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal, Paris and Toronto: 54 landmarks and four reusable bridge components,
-124 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal, Paris, Toronto and San Francisco: 79 landmarks and four reusable
+bridge components, 174 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
@@ -36,17 +36,28 @@ Edward Viaduct and the Humber Bay Arch Bridge. Build them with
 `pnpm build:toronto-landmarks`; each folder under
 `src/peregrine/landmarks/toronto/` holds one landmark's generator and mapped footprint.
 
+San Francisco: Golden Gate Bridge, the Bay Bridge West and East spans, the Lefty
+O'Doul Bridge, Transamerica Pyramid, Salesforce Tower, 555 California Street,
+Columbus Tower, Ferry Building, SFMOMA, City Hall, Coit Tower, Sutro Tower, Grace
+Cathedral, St. Mary's Cathedral, the Painted Ladies, Palace of Fine Arts,
+Ghirardelli Square, Alcatraz, Oracle Park, Chase Center, Conservatory of Flowers,
+de Young Museum, California Academy of Sciences and the Legion of Honor. Build them
+with `pnpm build:san-francisco-landmarks`; the collection, frame and budgets are in
+[docs/san-francisco-landmarks.md](docs/san-francisco-landmarks.md).
+
 ## A look inside
 
-Captured from the current exported GLBs on 29 September 2026. Select an image
+Captured from the current exported GLBs (San Francisco on 1 October 2026). Select an image
 to open the interactive model, compare detail levels or download it.
 
-| Montréal, Paris and Toronto | |
+| Montréal, Paris, Toronto and San Francisco | |
 | --- | --- |
 | [![Samuel-De Champlain — Montréal](docs/screenshots/readme/samuel-de-champlain.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=samuel-de-champlain&view=piers)<br>Samuel-De Champlain — Montréal | [![Biosphère — Montréal](docs/screenshots/readme/biosphere-montreal.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=biosphere-montreal&view=overview)<br>Biosphère — Montréal |
 | [![Tour Eiffel — Paris](docs/screenshots/readme/paris-tour-eiffel.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-tour-eiffel&view=facade)<br>Tour Eiffel — Paris | [![Palais du Louvre and pyramid — Paris](docs/screenshots/readme/paris-louvre.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-louvre&view=facade)<br>Palais du Louvre and pyramid — Paris |
 | [![Grand Palais glass roof — Paris](docs/screenshots/readme/paris-grand-palais.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-grand-palais&view=roof)<br>Grand Palais glass roof — Paris | [![Musée d’Orsay — Paris](docs/screenshots/readme/paris-musee-orsay.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-musee-orsay&view=facade)<br>Musée d’Orsay — Paris |
 | [![Hôtel de Ville — Paris](docs/screenshots/readme/paris-hotel-de-ville.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-hotel-de-ville&view=facade)<br>Hôtel de Ville — Paris | [![CN Tower — Toronto](docs/screenshots/readme/cn-tower.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=cn-tower&view=overview)<br>CN Tower — Toronto |
+| [![Golden Gate Bridge — San Francisco](docs/screenshots/readme/golden-gate-bridge.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=golden-gate-bridge&view=overview)<br>Golden Gate Bridge — San Francisco | [![Painted Ladies — San Francisco](docs/screenshots/readme/painted-ladies.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=painted-ladies&view=postcard)<br>Painted Ladies — San Francisco |
+| [![Transamerica Pyramid — San Francisco](docs/screenshots/readme/transamerica-pyramid.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=transamerica-pyramid&view=overview)<br>Transamerica Pyramid — San Francisco | [![Bay Bridge East Span — San Francisco](docs/screenshots/readme/bay-bridge-east-span.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=bay-bridge-east-span&view=overview)<br>Bay Bridge East Span — San Francisco |
 
 ## Use a model
 
