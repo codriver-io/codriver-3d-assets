@@ -1,0 +1,107 @@
+{
+  "id": "calgary-peace-bridge",
+  "name": "Peace Bridge",
+  "kind": "bridge",
+  "origin": [
+    -114.0789103,
+    51.0539135
+  ],
+  "height": 4.05,
+  "padM": 75,
+  "frontageBearing": 137.88,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -114.0782312,
+          51.0535486
+        ],
+        [
+          -114.0780587,
+          51.0534286
+        ],
+        [
+          -114.0782283,
+          51.0533322
+        ],
+        [
+          -114.0784008,
+          51.0534522
+        ]
+      ],
+      [
+        [
+          -114.0795923,
+          51.0544947
+        ],
+        [
+          -114.0794198,
+          51.0543748
+        ],
+        [
+          -114.0795894,
+          51.0542784
+        ],
+        [
+          -114.0797619,
+          51.0543984
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 12
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the provider footway grade on the flat Peregrine basemap (both banks, and the deck: the real deck is several metres above the water, which the flat map does not show). The walking surface is 5 cm above it so the two never fight; the tube ring reaches 1.9 m below the deck and the abutments 2.9 m below grade; nothing is lower. No absolute altitude, terrain or sea level is baked in. Full 3D world uses an explicit terrain pad (one small ring per abutment, median datum), not a disc.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced (Wikipedia, Peace Bridge): single span, tube girder 126 m, 130.6 m out to out, 5.85 m total height, 6.2 m inside width (3.7 m pedestrian + 2.5 m cycleway), helical steel structure with a glass roof, no pier in the river, concrete abutments, opened 2012. Mapped (OSM ways 158753074, 1313657677 and the footways): axis bearing 137.88 deg, origin at mid-span, 7.25 m outline width, a central two-lane cycleway between two one-way footways. Estimated from Commons photographs: the elliptical ring section (7.3 x 5.85 m), tube radii (strands 0.25 m near and 0.35 m far, with their centre line set inside that of the hoops so every tube keeps the 7.25 x 5.85 m envelope; hoops 0.18 m), 6 + 6 strands with a 37.8 m pitch (diamonds 6.3 m long), hoops at every other node plane, the glazed-roof layout (the whole upper arc from 30 to 150 degrees round the ring, down to the shoulders; below the rail the sides are open), rail height, lane markings, the abutment mass and landings. The roof glass is opaque in the app (no transparency): blue-grey by day, so it does not read as a white spine. Some glass panels were replaced by steel cables from 2023; the model shows the original glazed roof.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/calgary-peace-bridge-near.glb",
+      "bytes": 736324,
+      "triangles": 35234,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -46.72920227050781,
+          -2.8999998569488525,
+          -51.08139419555664
+        ],
+        "max": [
+          46.72920227050781,
+          4.050000190734863,
+          51.08139419555664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/calgary-peace-bridge-far.glb",
+      "bytes": 196684,
+      "triangles": 9248,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -46.72920227050781,
+          -2.8999998569488525,
+          -51.08139419555664
+        ],
+        "max": [
+          46.72920227050781,
+          4.050000190734863,
+          51.08139419555664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-peace-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

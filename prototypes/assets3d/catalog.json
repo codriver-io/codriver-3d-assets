@@ -6750,6 +6750,1487 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bankers-hall",
+      "name": "Bankers Hall",
+      "kind": "building",
+      "location": "855 2 Street SW · Downtown Calgary, Alberta",
+      "status": "ready",
+      "description": "Bankers Hall, Calgary's twin 52-storey postmodern office towers (East 1989, West 2000; Cohos Evamy, now Design Dialog), 197 m each, on a shared four-level retail podium. Both towers are modelled from the mapped staggered plan: a pink-tan stone wall with a punched window grid, a flat south face, a north end stepping down in three tiers, and the signature peaked crowns (gold on the West tower, silver on the East, ribbed metal hips) with a pedimented glass slot on the south and north faces, masts and red beacons; the podium parts (4, 5 and 3 levels) with glazed bands and a glass ridge over the galleria between the towers. Lit offices glow at night; the crowns stay dark.",
+      "manifest": "/models/buildings/bankers-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/bankers-hall/geometry.js",
+        "build": "pnpm build:calgary-landmarks bankers-hall",
+        "provenance": "Original procedural geometry authored 2026-10-02 from published dimensions and photographs studied for proportion only; no scan, traced mesh, photograph or texture in the repository or the GLB. The plan (two staggered tower blocks, the 4-, 5- and 3-level podium parts and the neighbouring Hollinsworth and Royal Bank outlines used only to avoid drawing in their planes) is converted from OpenStreetMap ways 548390399, 294875872, 807001350, 1557739183, 1557739184, 548390400, 548390398, 294876657 and its parts 1557739180-2, (c) OpenStreetMap contributors (ODbL 1.0), fetched through the shared Overpass helper. Comparison photographs are Wikimedia Commons files kept in ignored tmp/calgary/bankers-hall/refs/: 'Bankers-Hall-Szmurlo.jpg' by Cszmurlo (CC BY 2.5); 'Bankers hall west.jpg' by Surrealplaces (CC BY-SA 3.0); 'Bankers Halls-Calgary.JPG' and 'Bankers Hall-Calgary.JPG' and 'Bankers hall shopping atrium.JPG' by Qyd (CC BY 2.5); 'Bankers Hall, NE corner.JPG' by Tyson2k (public domain).",
+        "references": [
+          {
+            "label": "Wikipedia · Bankers Hall (twin 52-storey towers, 197 m, East 1989, West 2000, four-level podium, West gold roof, East silver)",
+            "url": "https://en.wikipedia.org/wiki/Bankers_Hall"
+          },
+          {
+            "label": "SkyscraperPage · Bankers Hall West Tower (roof 645 ft, finished 2000, Cohos Evamy)",
+            "url": "http://skyscraperpage.com/cities/?buildingID=7073"
+          },
+          {
+            "label": "Mapped complex outline · OSM way 548390399",
+            "url": "https://www.openstreetmap.org/way/548390399"
+          },
+          {
+            "label": "Mapped West tower (197 m, 52 levels) · OSM way 294875872",
+            "url": "https://www.openstreetmap.org/way/294875872"
+          },
+          {
+            "label": "Mapped East tower (197 m, 52 levels) · OSM way 807001350",
+            "url": "https://www.openstreetmap.org/way/807001350"
+          },
+          {
+            "label": "Mapped 4-level podium part · OSM way 1557739183",
+            "url": "https://www.openstreetmap.org/way/1557739183"
+          },
+          {
+            "label": "Photograph · Bankers-Hall-Szmurlo.jpg (both crowns, gold West and silver East; Cszmurlo, CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankers-Hall-Szmurlo.jpg"
+          },
+          {
+            "label": "Photograph · Bankers Hall-Calgary.JPG (pedimented slot, crown, stepped side; Qyd, CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankers_Hall-Calgary.JPG"
+          },
+          {
+            "label": "Photograph · Bankers Halls-Calgary.JPG (the towers lit at night, dark crowns, red beacons; Qyd, CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankers_Halls-Calgary.JPG"
+          },
+          {
+            "label": "Photograph · Bankers hall west.jpg (stone-and-glass grid from the street; Surrealplaces, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankers_hall_west.jpg"
+          },
+          {
+            "label": "Photograph · Bankers hall shopping atrium.JPG (galleria with glazed roof; Qyd, CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankers_hall_shopping_atrium.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/bankers-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=bankers-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bankers-hall&view=overview"
+          },
+          {
+            "label": "2 Street face",
+            "url": "/asset-preview.html?asset=bankers-hall&view=facade"
+          },
+          {
+            "label": "Crowns from above",
+            "url": "/asset-preview.html?asset=bankers-hall&view=roof"
+          },
+          {
+            "label": "West crown and slot",
+            "url": "/asset-preview.html?asset=bankers-hall&view=crown"
+          },
+          {
+            "label": "South faces",
+            "url": "/asset-preview.html?asset=bankers-hall&view=south"
+          },
+          {
+            "label": "Stepped north ends",
+            "url": "/asset-preview.html?asset=bankers-hall&view=north"
+          },
+          {
+            "label": "Podium",
+            "url": "/asset-preview.html?asset=bankers-hall&view=podium"
+          }
+        ]
+      },
+      "notes": "Y=0 flat-map grade, no altitude baked in (the site is about 1,045 m above sea level). Sourced: two towers of 197 m / 52 storeys (OSM, Wikipedia; SkyscraperPage roof 645 ft), East 1989 and West 2000, four-level podium, West crown gold and East crown silver (Wikipedia), twin crowns peaked like a cowboy hat. Mapped (OSM): the plan of both towers (two staggered 35 x 54 m blocks with 6 m ears at opposite corners, turned 2.4 degrees from the compass), the podium parts (4 levels, 5-level south entrance, 3-level west wing) and the outline. Estimated from photographs: 3.67 m floor pitch, window and spandrel sizes, the stepped north end (tier roofs at 173, 158, 134 and 116 m, the dark mechanical band under the crowns), the 21 m crown height, slope and flat top, the 4.6 m wide pedimented slot and its position, the 4.4 m podium level height and glazing, the glass ridge over the galleria, masts and beacons, and the 50% lit-window pattern (self-lit glow at night; crowns not lit; red beacons). The crown gold/silver tone is a flat approximation of standing-seam metal. Where a provider building shares a wall (Hollinsworth Building, Royal Bank Building) the model draws a plain wall recessed 0.3 m so the two cannot flicker. Not modelled: the West Parkade, Plus-15 skywalks, the Hollinsworth Building, street furniture, lobby interior. Tesla hardware cost unmeasured.",
+      "documentation": "docs/assets/calgary-bankers-hall.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "brookfield-place-calgary",
+      "name": "Brookfield Place",
+      "kind": "building",
+      "location": "225 6 Avenue SW, Downtown Calgary, Alberta",
+      "status": "ready",
+      "description": "Calgary's tallest building (Brookfield Place East, 247 m, 56 storeys, 2017): a straight prism of dark blue reflective glass, 66 x 41 m with rounded corners, a silver floor line and slim mullions at every floor, a two-storey dark lobby under a belt cornice, and an 18 m glass lantern crown ringed by ribs that flare out under a proud rim. The three-storey glass pavilion with its sloping glass roof stands against the tower's west and south-west faces.",
+      "manifest": "/models/buildings/brookfield-place-calgary.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/brookfield-place-calgary/geometry.js",
+        "build": "pnpm build:calgary-landmarks brookfield-place-calgary",
+        "provenance": "Original procedural geometry authored 2026-10-02. Tower outline, height and storey count from OpenStreetMap way 252560101 (height=247, building:levels=56, building:material=glass) and the glass pavilion outline from way 575090048 (© OpenStreetMap contributors, ODbL 1.0, read through the shared Overpass queue 2026-10-02). Orientation (2 degrees clockwise from the avenue grid) fitted to the four edges of the mapped tower outline. Facts from Wikipedia (Arney Fender Katsalidis architect, Dialog delivery architect, 2017, 247 m, 56 storeys, three-storey 50,000 sq ft glass pavilion). Reference photographs used only to compare and kept out of the repository: Wikimedia Commons 'Brookfield Place, Calgary, southeast view from Calgary Tower 20240819 1' (DXR, CC BY-SA 4.0), 'Brookfield Place from Calgary Tower, Calgary, Alberta, 2025-07-14' (Chris Woodrich, CC BY-SA 4.0), 'Brookfield Place, Calgary, Alberta 2017' (Malcolm, public domain, owner-released), 'South view of Brookfield Place, Telus Sky and The Bow, from Calgary Tower 20240819 1' (DXR, CC BY-SA 4.0), 'Calgary AB CTrain Downtown 7-Avenue-SW 4-Street-SW 2022-09-26 (5)' (Milan Suvajac, CC BY-SA 4.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Brookfield Place (Calgary)",
+            "url": "https://en.wikipedia.org/wiki/Brookfield_Place_(Calgary)"
+          },
+          {
+            "label": "OSM tower outline · way 252560101",
+            "url": "https://www.openstreetmap.org/way/252560101"
+          },
+          {
+            "label": "OSM glass pavilion · way 575090048",
+            "url": "https://www.openstreetmap.org/way/575090048"
+          },
+          {
+            "label": "Photograph · south-east from the Calgary Tower (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Brookfield_Place,_Calgary,_southeast_view_from_Calgary_Tower_20240819_1.jpg"
+          },
+          {
+            "label": "Photograph · crown and top floors (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Brookfield_Place_from_Calgary_Tower,_Calgary,_Alberta,_2025-07-14.jpg"
+          },
+          {
+            "label": "Photograph · tower from the south (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Brookfield_Place,_Calgary,_Alberta_2017.jpg"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Brookfield_Place_(Calgary)"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/brookfield-place-calgary/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=brookfield-place-calgary&view=overview",
+        "views": [
+          {
+            "label": "Whole tower from the south-east",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=overview"
+          },
+          {
+            "label": "South face and lobby",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=facade"
+          },
+          {
+            "label": "Crown from above",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=roof"
+          },
+          {
+            "label": "Glass crown and ribs",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=crown"
+          },
+          {
+            "label": "Lobby, belt cornice and pavilion",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=base"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=street"
+          },
+          {
+            "label": "Rounded corner",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=corner"
+          },
+          {
+            "label": "Glass pavilion",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=pavilion"
+          },
+          {
+            "label": "Skyline distance",
+            "url": "/asset-preview.html?asset=brookfield-place-calgary&view=skyline"
+          }
+        ]
+      },
+      "notes": "Height (247 m), 56 storeys, the 66 x 41 m plan with 5.5 m corner radius (fitted to the outline's chamfered corners) and its 2 degree clockwise turn are sourced or fitted (OSM, Wikipedia). The 4.16 m floor pitch (52 floor lines between the 12.9 m belt cornice and the 229 m crown ledge), the 1.5 m mullion rhythm, the 12.9 m two-storey lobby with its 0.6 m recess, the 18 m crown (ledge, three rings, 2 m ribs flaring out over their top 9 m, a rim with a flared lip) and its pale glass, the roof plant, the lit-office pattern, the glass colours and the crown lighting at night are estimated from photographs. The pavilion is the OSM outline simplified (small jogs of its west side dropped) with an estimated 12 to 17 m glass roof rising toward the tower; its curved south-west glass corner and interior are not modelled. The crown corner slits seen in one photograph, the 7 Avenue plaza, the Plus 15 bridges, signage and the below-grade levels are not modelled. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/calgary-brookfield-place-calgary.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "calgary-central-library",
+      "name": "Calgary Central Library",
+      "kind": "building",
+      "location": "800 3 Street SE · Calgary, Alberta",
+      "status": "ready",
+      "description": "Calgary Central Library (Snøhetta with DIALOG, opened 2018) as a driver sees it: a 140 m x 57 m pointed-ellipse building, 20.4 m tall, in white aluminium with a crystalline pattern of hexagon-derived glazed, fritted and silver panels, a steam-bent western red cedar arch over a terraced entrance plaza on its west side, a raised oculus, and a lifted north prow over a stone portal where the CTrain emerges from its tunnel.",
+      "manifest": "/models/buildings/calgary-central-library.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/calgary-central-library/geometry.js",
+        "build": "pnpm build:calgary-landmarks calgary-central-library",
+        "provenance": "Original procedural geometry authored 2026-10-02 from OpenStreetMap plan data (way 496824026 for the building; tunnel ways 19166950 and 481522733 and the at-grade ways 481522734 and 132895852 for the CTrain alignment) and published descriptions; photographs were used only to compare and are not shipped. Mapped outline and tunnel alignment © OpenStreetMap contributors (ODbL 1.0). No scan, third-party mesh, photograph or texture in the repository or the GLB. Comparison photographs (Wikimedia Commons, kept outside the repo): '20181109 Calgary Central Library with Ctrain.jpg' (Kelapstick, CC BY-SA 4.0); 'Calgary Central Library, Canada; October 2019 (cropped).jpg' (Bernard Spragg. NZ, CC0); '-calgary -alberta -centrallibrary (46158048075).jpg' (Elsie Hui, CC BY 2.0); 'Central Library - Calgary Public Library.jpg' (Calgary Public Library, CC0).",
+        "references": [
+          {
+            "label": "Wikipedia · Calgary Central Library (oval building, four storeys, elevated over a 135 m encapsulated CTrain tunnel, wood-clad arches at the entrance, skylit atrium)",
+            "url": "https://en.wikipedia.org/wiki/Calgary_Central_Library"
+          },
+          {
+            "label": "Wallpaper · Snøhetta and DIALOG's Calgary Central Library (pointed ellipse, fritted glass and iridescent aluminium panels, red cedar arch, terraced slopes)",
+            "url": "https://www.wallpaper.com/architecture/snohetta-dialog-calgary-central-library-canada"
+          },
+          {
+            "label": "DIALOG · Calgary Central Library (modular hexagonal pattern, wood-clad arches, terraced topography over the LRT line)",
+            "url": "https://dialogdesign.ca/projects/calgary-central-library-2/"
+          },
+          {
+            "label": "OSM · building way 496824026 (height 20.4, 4 levels)",
+            "url": "https://www.openstreetmap.org/way/496824026"
+          },
+          {
+            "label": "OSM · CTrain South Line tunnel, way 19166950",
+            "url": "https://www.openstreetmap.org/way/19166950"
+          },
+          {
+            "label": "OSM · CTrain South Line tunnel, way 481522733",
+            "url": "https://www.openstreetmap.org/way/481522733"
+          },
+          {
+            "label": "OSM · CTrain South Line at grade beside the tunnel mouth, way 481522734",
+            "url": "https://www.openstreetmap.org/way/481522734"
+          },
+          {
+            "label": "Wikimedia Commons · 20181109 Calgary Central Library with Ctrain (the portal and the lifted prow)",
+            "url": "https://commons.wikimedia.org/wiki/File:20181109_Calgary_Central_Library_with_Ctrain.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Calgary Central Library, October 2019 (cedar arch, south wall, panels)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_Central_Library,_Canada;_October_2019_(cropped).jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Central Library, Calgary Public Library (west facade from the street)",
+            "url": "https://commons.wikimedia.org/wiki/File:Central_Library_-_Calgary_Public_Library.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-central-library/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=calgary-central-library&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-west",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=overview"
+          },
+          {
+            "label": "West facade: the cedar arch and the panel pattern",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=facade"
+          },
+          {
+            "label": "Street level in front of the arch",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=arch"
+          },
+          {
+            "label": "Under the vault: terraced plaza, glazing and cedar soffit",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=vault"
+          },
+          {
+            "label": "North prow and the CTrain portal",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=portal"
+          },
+          {
+            "label": "Driver's view from the south-west at 100 m",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=street"
+          },
+          {
+            "label": "East flank",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=east"
+          },
+          {
+            "label": "Roof and oculus from above",
+            "url": "/asset-preview.html?asset=calgary-central-library&view=roof"
+          }
+        ]
+      },
+      "notes": "SOURCED: OSM building way 496824026 (height 20.4 m, 4 levels; the plan, 140 x 57 m); Wikipedia and press coverage (oval or pointed-ellipse plan; hexagon-derived panels of fritted glass and iridescent aluminium, reported as 465 hexagons; steam-bent western red cedar arch framing the entrance with gently terraced slopes; four-storey atrium under a skylight; building raised to cover a 135 m encapsulated section of CTrain tunnel, the trains entering a tunnel beneath the 'prow' at the northern corner). MAPPED (OSM, 2026-10-02): the outline with its rotation baked in (a pointed ellipse whose long axis bears about 7 degrees, flat 33 m south wall, notch on the east side) and the two tunnel tracks under the north prow (centreline bearing about 146 degrees at the mouth, curving south) with the at-grade tracks that leave it to the north-west. ESTIMATED from four photographs: the arch (lower facade edge peaking at about 10 m on the west side and over 3 m high along about 121 m of it, glazing up to 13.6 m behind it, three plaza treads rising to about 3.3 m under the high part of the arch only, about 34 m wide, cedar soffit 10 to 14 m up, level over its outer half and climbing toward the glazing), the prow lift (9.6 m) and the portal (7 m stone wall, opening 10.4 x 5.6 m, 14 m of tunnel box), the panel size (hexagon side 2.1 m), which cells are glazed, fritted or silver, the oculus (28 x 12 m), the wall inset (0.25 m) and every colour. NOT MODELLED: the interior, the cedar atrium, the plaza beyond the building outline, the CTrain trains and rails, the sculpture and plantings, panel seams, signage. Limits: the facade is a vertical wall (no lean), the tunnel box is straight (the real one curves south), the wedge between the portal wall and the tip is open underneath, and the cedar soffit is a smooth dish without planking detail beyond alternating bands (two bands in far). Within budget with headroom: near 6 729 triangles / 10 draws / 523 KB, far 1 488 / 7 / 120 KB. Cityscape and Full 3D world: not tested yet.",
+      "documentation": "docs/assets/calgary-calgary-central-library.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "calgary-city-hall",
+      "name": "Calgary City Hall (Old City Hall)",
+      "kind": "building",
+      "location": "716 / 800 Macleod Trail SE · Calgary, Alberta",
+      "status": "ready",
+      "description": "William M. Dodd's 1911 Romanesque Revival city hall: four storeys of rusticated sandstone under steep red tile roofs with stone-gabled dormers, a round-arched entrance on four red granite columns, and the 32.7 m clock tower with four lit dials, corner cupolas and a tile pyramid. The adjacent Calgary Municipal Building is not modelled.",
+      "manifest": "/models/buildings/calgary-city-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/calgary-city-hall/geometry.js",
+        "build": "pnpm build:calgary-landmarks calgary-city-hall",
+        "provenance": "Original procedural geometry authored 2026-10-02 (geometry.js, calgary-city-hall-tower.js, calgary-city-hall-solids.js, calgary-city-hall-plan.js) from the mapped OSM outline and public photographs. Mapped footprint (OSM way 37829977) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Calgary City Hall National Historic Site of Canada 2012-09-30 12-11-21' (JaeNadon, CC BY-SA 3.0), 'Calgary City Hall 1910 NA-2861-16' (unknown author, public domain; massing only, the building was restored 2017-2021), 'Old Calgary City Hall' (Rockies77, CC BY-SA 4.0), 'City Hall, Calgary' (XeresNelro, CC BY-SA 4.0) and 'Calgary AB CTrain Downtown City-Hall-Station 2022-09-26 (3)' (Milan Suvajac, CC BY-SA 4.0; neighbouring building only). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Calgary City Hall",
+            "url": "https://en.wikipedia.org/wiki/Calgary_City_Hall"
+          },
+          {
+            "label": "Canadian Register of Historic Places · Calgary City Hall National Historic Site",
+            "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=7562"
+          },
+          {
+            "label": "City of Calgary · The Making of Historic City Hall",
+            "url": "https://www.calgary.ca/arts-culture/heritage-sites/city-hall-construction.html"
+          },
+          {
+            "label": "City of Calgary · Heritage rehabilitation of Historic City Hall",
+            "url": "https://www.calgary.ca/arts-culture/heritage-sites/city-hall-rehabilitation.html"
+          },
+          {
+            "label": "OSM footprint · way 37829977",
+            "url": "https://www.openstreetmap.org/way/37829977"
+          },
+          {
+            "label": "Photo · entrance and tower (JaeNadon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_City_Hall_National_Historic_Site_of_Canada_2012-09-30_12-11-21.jpg"
+          },
+          {
+            "label": "Photo · front from 7 Avenue (Rockies77, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_Calgary_City_Hall.jpg"
+          },
+          {
+            "label": "Photo · 1910 massing (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_City_Hall_1910_NA-2861-16.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-city-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=calgary-city-hall&view=facade",
+        "views": [
+          {
+            "label": "North front on 7 Avenue SE",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=facade"
+          },
+          {
+            "label": "Overview from the north-west",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=overview"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=roof"
+          },
+          {
+            "label": "Clock tower",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=tower"
+          },
+          {
+            "label": "Clock dial",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=clock"
+          },
+          {
+            "label": "Entrance, columns and stair",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=entrance"
+          },
+          {
+            "label": "West side and gabled bay (Macleod Trail)",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=west"
+          },
+          {
+            "label": "South (rear) side",
+            "url": "/asset-preview.html?asset=calgary-city-hall&view=back"
+          }
+        ]
+      },
+      "notes": "Sourced: 1911, Romanesque Revival, rusticated Paskapoo sandstone, four storeys, recessed round-arched entrance on four red granite columns, steeply pitched tile roof with stone-gabled dormers, central glass dome, clock tower 'more than 32 metres (100 feet)' (the model uses 32.7 m to the finial), mapped outline (43 x 32 m, 1,106 m2, 2.08 degrees off the grid, tower on the north front facing 7 Avenue SE). Estimated from photographs: cornice (12.8 m) and roof top (17.7 m) heights, tower stage proportions and shaft width (8.4 m), dial diameter (2.9 m) and the four-dial arrangement, window rhythm and counts, dormer and cupola positions (the east wing carries a larger gable, the west wing only a dormer), the rear and side elevations, the plain flat-roofed two-storey wing that fills the mapped east bump (no photograph shows its real form; the first pass's pitched lean-to was an invention and is removed), the sandstone colour (brown-grey, darkened after review) and the raised crown over the centre, which is tiled like the roof (the register's glass dome is not drawn as glass). OSM parts 1455566323, 1455566324 and 1455566318 and the Municipal Building are not part of the 1911 hall and are not drawn. The mapped east wall jogs between 18.1 and 18.8 m and is drawn straight at 18.45 m (35 cm error). Stone coursing is flat strips, the carved ornament, rock-face texture and the real window glazing bars are abstracted; window surrounds, quoins and corbels are drawn in relief on the north (7 Avenue) and west (Macleod Trail) faces and as flat sheets on the east, south and rear walls. Cornices project up to 0.75 m, the balcony 0.85 m and the entrance porch and stair about 3.7 m beyond the mapped wall. No Tesla hardware measurements: near 9179 triangles / 6 draws / 532508 bytes, far 1074 / 6 / 74796.",
+      "documentation": "docs/assets/calgary-calgary-city-hall.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "calgary-peace-bridge",
+      "name": "Peace Bridge",
+      "kind": "bridge",
+      "location": "Bow River, between Eau Claire and Sunnyside · Calgary, Alberta",
+      "status": "ready",
+      "description": "Santiago Calatrava's pedestrian and cycle bridge (2012): a single 126 m span with no pier in the river, a red double-helix steel truss braided into diamonds around the deck, a glazed roof, a separate 2.5 m cycleway and pedestrian ways, concrete abutments on both banks.",
+      "manifest": "/models/bridges/calgary-peace-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/calgary-peace-bridge/geometry.js",
+        "build": "pnpm build:calgary-landmarks calgary-peace-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-02 from published dimensions (Wikipedia, the architect's project page), the mapped OSM outline and cycleway, and Wikimedia Commons photographs. Mapped alignment and outline © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only (tmp/calgary/calgary-peace-bridge/refs/). Photographs consulted: Aurorachaseryyc, Calgary Peace Bridge with Red Ball (CC BY-SA 4.0); Ryan Quan, The Peace Bridge in Calgary an HDR photo (CC BY-SA 3.0); People talking, Peace bridge pano (CC BY-SA 4.0); Greenwood714, CalgaryPeaceBridgeOct2010 and PeaceBridgeCalgaryUnderConstruction (CC BY-SA 3.0, construction views: massing only); Qyd, Peace Bridge-temporary bridge (CC BY-SA 3.0, construction view: massing only).",
+        "references": [
+          {
+            "label": "Wikipedia · Peace Bridge (dimensions, features, history)",
+            "url": "https://en.wikipedia.org/wiki/Peace_Bridge_(Calgary)"
+          },
+          {
+            "label": "Santiago Calatrava · project page (126 m, helix over an oval section, glazed upper openings)",
+            "url": "https://calatrava.com/projects/peace-bridge-calgary.html"
+          },
+          {
+            "label": "OSM way 1313657677 · mapped outline (building=bridge; footprint, bearing)",
+            "url": "https://www.openstreetmap.org/way/1313657677"
+          },
+          {
+            "label": "OSM way 158753074 · cycleway on the span (origin, axis)",
+            "url": "https://www.openstreetmap.org/way/158753074"
+          },
+          {
+            "label": "Commons · Calgary Peace Bridge with Red Ball (interior from the deck)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_Peace_Bridge_with_Red_Ball.jpg"
+          },
+          {
+            "label": "Commons · The Peace Bridge in Calgary an HDR photo (side elevation, lit at night)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Peace_Bridge_in_Calgary_an_HDR_photo.jpg"
+          },
+          {
+            "label": "Commons · Peace bridge pano (panorama of the deck and arches)",
+            "url": "https://commons.wikimedia.org/wiki/File:Peace_bridge_pano.jpg"
+          },
+          {
+            "label": "Commons · CalgaryPeaceBridgeOct2010 (tube segments under assembly)",
+            "url": "https://commons.wikimedia.org/wiki/File:CalgaryPeaceBridgeOct2010.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-peace-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=calgary-peace-bridge&view=overview",
+        "views": [
+          {
+            "label": "Three-quarter from the south-west bank",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=overview"
+          },
+          {
+            "label": "Side elevation of the whole span",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=facade"
+          },
+          {
+            "label": "From above",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=roof"
+          },
+          {
+            "label": "On the deck, looking down the tube",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=deck"
+          },
+          {
+            "label": "End-on from the landing",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=end"
+          },
+          {
+            "label": "Diamonds, hoops, glass and silver bars",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=detail"
+          },
+          {
+            "label": "South-east abutment and landing",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=abutment"
+          },
+          {
+            "label": "Low and close, under the deck line",
+            "url": "/asset-preview.html?asset=calgary-peace-bridge&view=underside"
+          }
+        ]
+      },
+      "notes": "Sourced: single span, tube girder 126 m, 130.6 m out to out, 5.85 m total height, 6.2 m inside width (3.7 m pedestrian + 2.5 m cycleway), steel double helix over an oval section with glazed upper openings, no pier in the river, concrete abutments, opened 2012. Mapped: axis bearing 137.88 deg, origin at mid-span, 7.25 m outline width (the architect gives 8 m overall; the model follows the mapped outline, and abutments are 8 m wide), cycleway in the middle between two one-way footways. Estimated from photographs: the elliptical ring section (an ellipse stands in for the oval of two tangential radii), tube radii (strands 0.25 m near and 0.35 m far, their centre line inset so every tube keeps the 7.25 x 5.85 m envelope; hoops 0.18 m), 6 + 6 strands with a 37.8 m pitch (diamonds 6.3 m long), hoops at every other node plane, the glazed roof over the whole upper arc, 30 to 150 degrees round the ring (below the shoulders the sides are open), rail height, lane markings, abutment mass and landings. The roof glass is opaque in the app (no transparency): blue-grey by day, glowing warm white at night. Some glass panels were replaced by steel cables from 2023; the model shows the original glazed roof. Flat Cityscape: the deck walks at the footway grade (5 cm over it), so the lower half of the tube ring (to 1.9 m under the deck) is under the flat ground and only shows in Full 3D world; abutments reach -2.9 m, nothing lower. Near 35 234 triangles / 6 draws / 0.72 MB; far 9 248 / 5 / 0.19 MB. No Tesla hardware measurements.",
+      "documentation": "docs/assets/calgary-calgary-peace-bridge.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "calgary-tower",
+      "name": "Calgary Tower",
+      "kind": "building",
+      "location": "101 9 Avenue SW · Calgary, Alberta",
+      "status": "ready",
+      "description": "190.8 m observation tower (the Husky Tower, 1968): a round concrete shaft that tapers upward from about 15 m at its foot to 10 m, a 31 m turret with a ribbed flared soffit, red fluted cladding between dark glazing bands, a brown overhanging rim with railing, a white dome with oval skylights and a brown drum, the Olympic cauldron with its flame and a thin mast, on a glass rotunda with a shallow cone roof.",
+      "manifest": "/models/buildings/calgary-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/calgary-tower/geometry.js",
+        "build": "pnpm build:calgary-landmarks calgary-tower",
+        "provenance": "Original procedural geometry authored 2026-10-02. The axis and the 19 m rotunda circle come from OpenStreetMap way 25719793 and its building:part ways 1502697873, 1502697874 and 1502697875 (© OpenStreetMap contributors, ODbL 1.0, fetched through the shared Overpass helper). Heights from the published figures (190.8 m tip, 171 m roof, 157.6 m top floor). The turret profile, the shaft taper and the crown are estimated from Wikimedia Commons photographs used only as local ignored comparison images: 'Calgary Tower (8033515499) straightened 2012' by Tony Hisgett (CC BY 2.0); 'Calgary Tower 1' and 'Calgary Tower with flame 2' by Thivierr (CC BY-SA 3.0); 'CalgaryTowerBelow' by HordeFTL (public domain); 'Calgary Tower 1978' by Nxr-at (CC BY-SA 4.0); 'Calgary - Calgary Tower - Downtown 01' and 'Calgary Tower - Observation deck 01' by Benefactor123 (CC BY 3.0); 'Calgarytowershot' by Eternalsleeper (public domain). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Calgary Tower · Wikipedia (heights, history, architecture)",
+            "url": "https://en.wikipedia.org/wiki/Calgary_Tower"
+          },
+          {
+            "label": "Calgary Tower · official site",
+            "url": "https://www.calgarytower.com/"
+          },
+          {
+            "label": "OSM way 25719793 · the tower outline",
+            "url": "https://www.openstreetmap.org/way/25719793"
+          },
+          {
+            "label": "OSM way 1502697874 · rotunda part (roof:shape=cone)",
+            "url": "https://www.openstreetmap.org/way/1502697874"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Calgary_Tower"
+          },
+          {
+            "label": "Turret and shaft · Tony Hisgett (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_Tower_(8033515499)_straightened_2012.jpg"
+          },
+          {
+            "label": "Whole tower from the street · Thivierr (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_Tower_1.jpg"
+          },
+          {
+            "label": "Cauldron with the flame lit · Thivierr (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_Tower_with_flame_2.jpg"
+          },
+          {
+            "label": "From below · HordeFTL (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:CalgaryTowerBelow.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=calgary-tower&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=calgary-tower&view=overview"
+          },
+          {
+            "label": "Turret",
+            "url": "/asset-preview.html?asset=calgary-tower&view=pod"
+          },
+          {
+            "label": "Dome, drum and cauldron from above",
+            "url": "/asset-preview.html?asset=calgary-tower&view=roof"
+          },
+          {
+            "label": "Ribbed soffit from below",
+            "url": "/asset-preview.html?asset=calgary-tower&view=underside"
+          },
+          {
+            "label": "Cauldron and mast",
+            "url": "/asset-preview.html?asset=calgary-tower&view=crown"
+          },
+          {
+            "label": "Glass rotunda at street level",
+            "url": "/asset-preview.html?asset=calgary-tower&view=facade"
+          },
+          {
+            "label": "Glass-floor extension (north)",
+            "url": "/asset-preview.html?asset=calgary-tower&view=north"
+          }
+        ]
+      },
+      "notes": "Published: 190.8 m tip, 171 m roof, 157.6 m top floor, cauldron lit since 1988, glass rotunda 1990, glass-floor extension on the north side 2005. Mapped: the axis and the 19 m circle of the foot, three levels and a cone roof for the rotunda. Estimated from photographs (about +-3% in width, +-2 m in height): the turret's 31 m diameter and profile, the 10 m shaft under it and the taper to ~15 m at the foot, the dome, drum, cauldron and mast. Guessed: the rotunda's 9.6 m height, mullion rhythm and cone pitch (no photograph of the base was available), the size and shape of the glass-floor extension, the three red aviation lights on the drum roof. The flame is shown lit; the real one burns only on special occasions. The colour-changing LED lighting of 2014 is not modelled: at night the two glazing bands glow warm, the cauldron is a lamp and the lights are red. The Tower Centre mall, the Plus 15 skyway, the window-cleaning cradle and the interior are not modelled.",
+      "documentation": "docs/assets/calgary-calgary-tower.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "canada-olympic-park",
+      "name": "Canada Olympic Park ski jumps",
+      "kind": "building",
+      "location": "88 Canada Olympic Road SW, Calgary, Alberta (Paskapoo Slopes, south of the Trans-Canada Highway)",
+      "status": "ready",
+      "description": "The 1988 Winter Olympics ski jumps as a driver sees them from the Trans-Canada Highway: the 58 m concrete tower of the 90 m (K114) jump with its cantilevered head, glazed bands, Olympic rings and antenna mast; the K114 inrun girder on its sourced profile with a concrete pier and steel trestle bents; beside it the 70 m (K89) tower and inrun; east of them the K63 and K38 training hills. The landing hills are terrain, not model.",
+      "manifest": "/models/buildings/canada-olympic-park.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/canada-olympic-park/geometry.js",
+        "build": "pnpm build:calgary-landmarks canada-olympic-park",
+        "provenance": "Original procedural geometry authored 2026-10-02. Inrun profiles from the skisprungschanzen.com hill data (K114: inrun 111 m at 35 deg, take-off 7 m at 11 deg, 4 m high; K89: 88.2 m at 35 deg, 6.2 m at 10 deg, 3.2 m high); the 58 m tower height and architect (J.H. Cook, 1986) from Heritage Calgary; cast-in-place concrete towers and steel inrun structures from CANA. Start-house and inrun outlines from OpenStreetMap ways 272201820, 272201821 and 272201822 (© OpenStreetMap contributors, ODbL 1.0), used to remove the provider's extrusions; the plan positions and bearings of the towers and inruns were measured on Esri World Imagery (viewed as a reference, nothing traced or shipped). Ground heights between the parts from the public AWS Terrarium DEM (z13). Massing, windows and supports estimated from Wikimedia Commons photographs used only as local ignored comparison images: Canada Olympic Park – Ski Jumping Center (Calgary, CAN) · Thivierr · CC BY-SA 3.0; Canada olympic park 90m ski jump flag summer 2005 · Mtruch · CC BY-SA 3.0; Canada olympic park summer 2005 · CC BY-SA 3.0; Canada Olympic Park home of the 1988 olympics and Eddie the Eagle · CC BY 2.0. No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Canada Olympic Park · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Canada_Olympic_Park"
+          },
+          {
+            "label": "Hill data (K114, K89, smaller hills) · skisprungschanzen.com",
+            "url": "https://www.skisprungschanzen.com/EN/Ski+Jumps/CAN-Canada/AB-Alberta/Calgary/0101-Canada+Olympic+Park/"
+          },
+          {
+            "label": "Winter Olympics 90m Ski Jump (58 m, J.H. Cook) · Heritage Calgary",
+            "url": "https://www.heritagecalgary.ca/heritage-calgary-blog/inventory1000"
+          },
+          {
+            "label": "Ski jump structures (concrete towers, steel inruns) · CANA",
+            "url": "https://cana.ca/project-details/Canada-Olympic-Park-Ski-Jump-Structures"
+          },
+          {
+            "label": "OSM way 272201822 · K114 inrun",
+            "url": "https://www.openstreetmap.org/way/272201822"
+          },
+          {
+            "label": "OSM way 272201821 · K89 inrun",
+            "url": "https://www.openstreetmap.org/way/272201821"
+          },
+          {
+            "label": "Both towers from the north-west · Thivierr (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canada_Olympic_Park_%E2%80%93_Ski_Jumping_Center_(Calgary,_CAN).jpg"
+          },
+          {
+            "label": "90 m tower head, west face and rings · Mtruch (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canada_olympic_park_90m_ski_jump_flag_summer_2005.jpeg"
+          },
+          {
+            "label": "From the day lodge, summer 2005 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canada_olympic_park_summer_2005.jpeg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/canada-olympic-park/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=canada-olympic-park&view=overview",
+        "views": [
+          {
+            "label": "From the north-east (highway side)",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=overview"
+          },
+          {
+            "label": "West elevation: rings and both profiles",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=facade"
+          },
+          {
+            "label": "Low from the highway side",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=highway"
+          },
+          {
+            "label": "Inrun girders, pier and trestles",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=inruns"
+          },
+          {
+            "label": "Take-off tables",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=takeoff"
+          },
+          {
+            "label": "90 m tower head",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=tower"
+          },
+          {
+            "label": "Above the tower head",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=roof"
+          },
+          {
+            "label": "From the south (uphill)",
+            "url": "/asset-preview.html?asset=canada-olympic-park&view=back"
+          }
+        ]
+      },
+      "notes": "Sourced: 58 m tower (Heritage Calgary); K114 inrun 111 m at 35 deg, take-off 7 m at 11 deg, 4 m high; K89 inrun 88.2 m at 35 deg, take-off 6.2 m at 10 deg, 3.2 m high (skisprungschanzen.com); concrete towers, steel inruns (CANA). Estimated: the transition radii (FIS rule), the tower plans (90 m head 16 x 15 m on a 10.5 x 11.2 m lift core (70 % of the head), 70 m head 10 x 10 m on a 7 x 7 m shaft; Olympic-pair inrun girders at least 2.5 m deep), storey, window and ring heights, the support layout, the girder sections, and the whole K63 and K38 profiles (checked against their mapped plan lengths). Plan positions and bearings measured on aerial imagery; the OSM ways are coarse (a K114 corner is 14 m off the girder axis) and are used only to remove the provider slabs. Ground heights between the parts from a public 12 m DEM, good to a few metres. On the flat Cityscape map the towers read taller than in life (the 90 m tower shaft starts 25.5 m below its real base) and the training hills stand on 11-30 m piers. The Olympic rings follow 2005 photographs. Not modelled: landing hills (terrain), K20/K10, judges' towers, coaches' platforms, floodlights, the zipline, the day lodge. WinSport plans to demolish all but the 90 m tower; this is the state still standing in 2026. Near 2 932 triangles / 10 draws / 129 KB; far 1 026 / 4 / 51 KB.",
+      "documentation": "docs/assets/calgary-canada-olympic-park.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "centre-street-bridge",
+      "name": "Centre Street Bridge",
+      "kind": "bridge",
+      "location": "Centre Street over the Bow River and Memorial Drive · Calgary, Alberta",
+      "status": "ready",
+      "description": "The 1916 Centre Street Bridge (John F. Green): three open-spandrel reinforced-concrete arches on piers skewed with the Bow, an upper deck carrying four lanes of Centre Street on cantilevered balconies with ornamental balustrades and lamp standards, four lions on pavilions over the end piers, and an I-girder lower deck (two reversible lanes, Riverfront Avenue to Memorial Drive) hung between the arch ribs.",
+      "manifest": "/models/bridges/centre-street-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/centre-street-bridge/geometry.js",
+        "build": "pnpm build:calgary-landmarks centre-street-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-02 from Wikipedia (dimensions, decks, lions), the mapped OSM upper and lower roadways, bridge outline (pier bays), sidewalks and crossing roads, and Wikimedia Commons photographs. Mapped geometry © OpenStreetMap contributors (ODbL 1.0). No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Cszmurlo, 'Centre-Street-Bridge-Szmurlo' (CC BY 2.5); Ryan L. C. Quan, 'Centre Street Bridge Calgary Flood 2013' (CC BY-SA 3.0); Sean Esopenko, 'Centre Street Bridge, Calgary June 2013' (CC BY-SA 2.0); 'Thank you for visiting my page from Canada', 'Centre street bridge Calgary Aug 2015' (three photographs, CC BY 2.0).",
+        "references": [
+          {
+            "label": "Wikipedia · history, decks (upper 178 m x 15 m, lower 150 m x 5.5 m, 2.7 m clearance), lions",
+            "url": "https://en.wikipedia.org/wiki/Centre_Street_Bridge_(Calgary)"
+          },
+          {
+            "label": "OSM way 1323929179 · bridge outline and pier bays",
+            "url": "https://www.openstreetmap.org/way/1323929179"
+          },
+          {
+            "label": "OSM way 4637525 · Centre Street S, upper deck",
+            "url": "https://www.openstreetmap.org/way/4637525"
+          },
+          {
+            "label": "OSM way 420030805 · Centre Street S, lower deck",
+            "url": "https://www.openstreetmap.org/way/420030805"
+          },
+          {
+            "label": "Photograph · Cszmurlo (CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Centre-Street-Bridge-Szmurlo.jpg"
+          },
+          {
+            "label": "Photograph · Sean Esopenko, June 2013 (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Centre_Street_Bridge,_Calgary_June_2013.jpg"
+          },
+          {
+            "label": "Photograph · under the arches, Aug 2015 (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Centre_street_bridge_Calgary_Aug_2015_(20259603272).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/centre-street-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=centre-street-bridge&view=overview",
+        "views": [
+          {
+            "label": "Three-quarter view from the east bank",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=overview"
+          },
+          {
+            "label": "Side elevation from downstream (east)",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=facade"
+          },
+          {
+            "label": "From above: deck, balconies, pavilions",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=roof"
+          },
+          {
+            "label": "Driving north on the upper deck",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=deck"
+          },
+          {
+            "label": "Under the arches: ribs, floor beams, the lower deck",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=underside"
+          },
+          {
+            "label": "North pavilion pair and lions",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=tower"
+          },
+          {
+            "label": "A south pavilion and its lion",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=lion"
+          },
+          {
+            "label": "The lower deck from the river",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=lower"
+          },
+          {
+            "label": "South end span over Riverfront Avenue",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=south"
+          },
+          {
+            "label": "North span over Memorial Drive and the embankment",
+            "url": "/asset-preview.html?asset=centre-street-bridge&view=north"
+          }
+        ]
+      },
+      "notes": "Sourced: opened 1916, John F. Green, upper deck 178 m x 15 m, lower deck 150 m x 5.5 m with 2.7 m clearance, four lions on two pairs of pavilions (Wikipedia); mapped upper and lower roadways, outline 21.3 m wide with pier bays (piers placed within 0.4 m of all eight bays, spans 50.2/50.7/50.4 m, skew 22 deg). Estimated: arch crown intrados (6.8 m) and ring depth (1.2 m at the crown), arcade rhythm (three 2.8 m openings per haunch), pier plan and cutwater, end-span bents, balcony consoles, balustrade and lamp spacing (14 per side, 7 m), pavilion and lion proportions. Flat map: upper road level at 9.0 m (4 m above the provider's 5 m lower deck), ramps 106 m at 9.2 % (south, to 2 Avenue SE) and 143 m at 6.7 % (north, down the Centre Street N embankment, open over Memorial Drive NW). The structure is symmetric about the mapped roadway (outline centred 0.8 m east). Lions are simplified sculpted forms in one material; no lamp banners. Approach fills are drawn with vertical retaining walls. The arch rings are pale concrete faces over a darker spandrel infill and soffit. In Standard roads the lower roadway's flat ribbon is removed inside the corridor by the shared SD mask; our lower slab stands in. Near 29 440 triangles / 22 draws / 1.65 MB; far 7 828 / 9 / 0.39 MB. No Tesla hardware measurements.",
+      "documentation": "docs/assets/calgary-centre-street-bridge.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fairmont-palliser",
+      "name": "Fairmont Palliser Hotel",
+      "kind": "building",
+      "location": "133 9 Avenue SW, Calgary, Alberta",
+      "status": "ready",
+      "description": "1914 Canadian Pacific Railway hotel (Edward and William S. Maxwell; four storeys added in 1929): a 60 m buff-brick block on a grey-buff stone base, with an E-shaped plan of three arms (west wing, central stem, east wing) joined by 2-storey courts to the 70 m front on 9 Avenue, the stem stepping up from 12 to 15 levels to a slate penthouse roof with the PALLISER sign (pale grey by day, lit at night), a heavy projecting cornice one storey under every roof, a 1 m cornice at the roofline, a dark granite base band, and the canopied entrance.",
+      "manifest": "/models/buildings/fairmont-palliser.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/fairmont-palliser/geometry.js",
+        "build": "pnpm build:calgary-landmarks fairmont-palliser",
+        "provenance": "Original procedural geometry authored 2026-10-02 from OpenStreetMap building:part levels and plan, published facts and public photographs. Plan and levels: OSM way 213930558 (outline, height=60) and building:part ways 1502697839 to 1502697849 (retrieved 2026-10-02 through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0. Photographs were compared only, from Wikimedia Commons, never copied into the repository or the GLBs: 'Palliser Hotel 9th Ave. Calgary' (unknown author, public domain), 'Fairmont Palliser Hotel 1' (User:Thivierr, CC BY-SA 3.0), 'Palliser Hotel, 9th Avenue, Calgary, Alberta' (Gowen Sutton Co. Ltd., public domain), 'Entrance to Fairmont Palliser Hotel, Calgary, Alberta, 2025-07-14' (Chris Woodrich, CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia · Fairmont Palliser Hotel (1914, Edward and W. S. Maxwell, 8 storeys + 4 in 1929, Chicago school look)",
+            "url": "https://en.wikipedia.org/wiki/Fairmont_Palliser_Hotel"
+          },
+          {
+            "label": "OSM footprint · way 213930558",
+            "url": "https://www.openstreetmap.org/way/213930558"
+          },
+          {
+            "label": "Photo · the hotel from 9th Avenue, 1920s (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palliser_Hotel_9th_Ave._Calgary.jpg"
+          },
+          {
+            "label": "Photo · three stepped blocks and the rooftop sign (Thivierr, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Palliser_Hotel_1.jpg"
+          },
+          {
+            "label": "Photo · postcard of the hotel on 9th Avenue (Gowen Sutton Co., public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palliser_Hotel,_9th_Avenue,_Calgary,_Alberta.jpg"
+          },
+          {
+            "label": "Photo · entrance, canopy and base (Chris Woodrich, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Entrance_to_Fairmont_Palliser_Hotel,_Calgary,_Alberta,_2025-07-14.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/fairmont-palliser/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=fairmont-palliser&view=overview",
+        "views": [
+          {
+            "label": "Overview from the southwest",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=overview"
+          },
+          {
+            "label": "9 Avenue facade",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=facade"
+          },
+          {
+            "label": "Roofs, courts and penthouse from above",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=roof"
+          },
+          {
+            "label": "Entrance and canopy at street level",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=entrance"
+          },
+          {
+            "label": "Penthouse roof and PALLISER sign",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=sign"
+          },
+          {
+            "label": "North side: three arms and two courts",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=north"
+          },
+          {
+            "label": "East face",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=east"
+          },
+          {
+            "label": "West face",
+            "url": "/asset-preview.html?asset=fairmont-palliser&view=west"
+          }
+        ]
+      },
+      "notes": "Plan and levels follow OSM: outline and eleven building:part ways (12 / 13 / 14 / 15 levels on the stem and arms, 2 on the courts, 1 on the 9 Avenue podium); the roof heights come from fitting OSM's height=60 m to 15 levels (7.2 m ground storey, 3.77 m storeys: 12 levels = 48.7 m, 14 = 56.2 m). Estimated from photographs: the storey height split, the grey-buff stone base to an 11 m belt on a 1.9 m dark granite band, window size and 2.75 m bay pitch, paired lights and balconettes in the central bay, the cornice profiles (1.3 m projection one storey under the roof and a 1 m stepped cornice with parapet at the roofline), the attic row, the second-storey loggia, the quoins, the canopy and the PALLISER lettering (word inferred from the visible '..ER' on the roof in a 2010s photo; letter forms are ours, pale grey by day and lit warm at night). The penthouse roof is a plain slate mansard; the 1930s cupola of the old postcards is not modelled. No ornament (carved cartouches, balusters, dentils, flags, lamp standards) and no rustication: the base reads heavy through colour and the dark band only. Models here are visual approximations, not surveys.",
+      "documentation": "docs/assets/calgary-fairmont-palliser.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "reconciliation-bridge",
+      "name": "Reconciliation Bridge",
+      "kind": "bridge",
+      "location": "4 Street NE / 4 Avenue SE over the Bow River, between Bridgeland and downtown · Calgary, Alberta",
+      "status": "ready",
+      "description": "The 1910 Langevin Bridge, renamed Reconciliation Bridge in 2017: two riveted steel Parker camelback through trusses of eight panels each, painted silver-grey, on one concrete river pier and two abutments, carrying two southbound lanes of Edmonton Trail / 4 Street NE into downtown between 1.5 m steel sidewalks with a lattice balustrade. Laced verticals, Pratt diagonals with counters, laced portals and top struts kept above the carriageway, the floor system and bearings, the programmable LED strips on the top chords (lit at night) and the art banners on the verticals. Road-fitted bridge built on the mapped OSM roadway.",
+      "manifest": "/models/bridges/reconciliation-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/reconciliation-bridge/geometry.js",
+        "build": "pnpm build:calgary-landmarks reconciliation-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-02 from published figures (City of Calgary heritage inventory statement of significance, as reproduced by HistoricBridges.org: 1910, two-span Parker camelback riveted-steel through truss, 116.58 m long, 14.02 m wide, one pier and two abutments, 1.5 m steel sidewalks with a lattice balustrade; HistoricBridges.org: 8 panels, 190 ft main spans; Wikipedia), the mapped OSM roadway, approach roads, deck outline and sidewalk bridges (Overpass extract, OSM base 2026-10-02, ODbL 1.0, © OpenStreetMap contributors; way ids in reconciliation-bridge-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Qyd, Reconciliation Bridge-Calgary (CC BY-SA 3.0); Daniel from Glasgow, Bridge over the River Bow (CC BY 2.0), Bridges over the Bow River (CC BY 2.0), Calgary, April 2016 (19) and (22) (CC BY 2.0); Crisco 1492, 4th Ave and Reconciliation Bridge from Calgary Tower, 2025-07-14 (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "HistoricBridges.org · Reconciliation Bridge (Langevin Bridge): structure type, spans, City of Calgary heritage statement",
+            "url": "https://historicbridges.org/bridges/browser/?bridgebrowser=alberta/langevinbridge/"
+          },
+          {
+            "label": "Wikipedia · Reconciliation Bridge",
+            "url": "https://en.wikipedia.org/wiki/Reconciliation_Bridge"
+          },
+          {
+            "label": "OSM way 257636719 · 4 Avenue SE on the bridge (station frame, one-way southbound, maxheight 4.2)",
+            "url": "https://www.openstreetmap.org/way/257636719"
+          },
+          {
+            "label": "OSM way 1325528737 · deck outline",
+            "url": "https://www.openstreetmap.org/way/1325528737"
+          },
+          {
+            "label": "Photograph · side elevation of the south span from the RiverWalk (Daniel from Glasgow, CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(19)_(25929867813).jpg"
+          },
+          {
+            "label": "Photograph · both spans and the river pier (Daniel from Glasgow, CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(22)_(25929886483).jpg"
+          },
+          {
+            "label": "Photograph · from the Calgary Tower, with the 4th Avenue Flyover (Crisco 1492, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:4th_Ave_and_Reconciliation_Bridge_from_Calgary_Tower,_Calgary,_Alberta,_2025-07-14.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/reconciliation-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=reconciliation-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview from the downtown bank",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=overview"
+          },
+          {
+            "label": "Side elevation from upstream",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=facade"
+          },
+          {
+            "label": "Driver's eye, southbound into the north portal",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=deck"
+          },
+          {
+            "label": "North portal and knee braces",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=tower"
+          },
+          {
+            "label": "Underside: pier, floor beams and bearings",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=underside"
+          },
+          {
+            "label": "From above",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=roof"
+          },
+          {
+            "label": "Downstream elevation",
+            "url": "/asset-preview.html?asset=reconciliation-bridge&view=east"
+          }
+        ]
+      },
+      "notes": "Sourced: 1910 two-span Parker camelback riveted steel through truss, 8 panels, 190 ft spans, 116.58 m long, 14.02 m wide, one pier, two abutments, 1.5 m sidewalks with a lattice balustrade; one-way southbound, 2 lanes. Model: 2 x 57.6 m spans (0.5 % short), 14.0 m wide. Estimated from photographs: truss depth 7.8 m at the hips to 11.0 m at mid-span, member sizes, lacing, portals and sway bracing, floor system, pier and abutments, balustrade, LED strip and banner positions (one muted banner colour), colours. Portal and strut clearance kept >= 5 m over the carriageway although the signed clearance is 4.2 m. No flat-map ramp: the deck is level with the approach streets (the real deck is at bank level and both approaches meet at-grade junctions within 15 m). The abutment backwalls are 2 mm tall in the GLB and drop to the ground in Full 3D world (the flat map's ground writes no depth). No rivets, gussets, lamp standards or bottom lateral bracing.",
+      "documentation": "docs/assets/calgary-reconciliation-bridge.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "scotiabank-saddledome",
+      "name": "Scotiabank Saddledome",
+      "kind": "building",
+      "location": "555 Saddledome Rise SE, Stampede Park · Calgary, Alberta",
+      "status": "ready",
+      "description": "Scotiabank Saddledome (1983), home of the Calgary Flames: the hyperbolic-paraboloid saddle roof high toward the north-east and south-west and dipping toward the south-east and north-west, its orange-lit edge ring, the grey ribbed wall with sixteen leaning piers over a concourse band and deck, the concrete portals with the Scotiabank Saddledome lettering and the roof loop, and the red towers, pavilion and yellow stair towers at the two high ends.",
+      "manifest": "/models/buildings/scotiabank-saddledome.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/scotiabank-saddledome/geometry.js",
+        "build": "pnpm build:calgary-landmarks scotiabank-saddledome",
+        "provenance": "Original procedural geometry authored 2026-10-02 from the mapped plan and photographs; plan from OpenStreetMap way 4397328 (© OpenStreetMap contributors, ODbL 1.0); roof geometry from published figures (edge ring on a 67.7 m radius sphere, centre 14 m below the higher and 6 m above the lower point of the ring, 4.3 m precast ring elements, venue maximum building height 89 ft). No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'Saddledome from Calgary Tower.JPG' (Resolute, CC BY-SA 3.0); '2020 Calgary Saddledome night.jpg' and '2020 Calgary Saddledome.jpg' (AceYYC, CC BY-SA 4.0); 'Scotiabank Saddledome, southeast view 20240819 1.jpg' and 'Scotiabank Saddledome, southwest view 20240819 1.jpg' (DXR, CC BY-SA 4.0); 'Scotiabank Saddledome sign.jpg' (Quintin Soloviev, CC BY 4.0).",
+        "references": [
+          {
+            "label": "Scotiabank Saddledome · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Scotiabank_Saddledome"
+          },
+          {
+            "label": "Technical information · Scotiabank Saddledome (maximum building height 89 ft)",
+            "url": "https://www.scotiabanksaddledome.com/technical-information/"
+          },
+          {
+            "label": "Pengrowth Saddledome · cable-net roof dimensions (67.7 m sphere, 14 m and 6 m centre offsets)",
+            "url": "https://www.arcaro.org/tension/album/saddledome.htm"
+          },
+          {
+            "label": "Scotiabank Saddledome building outline · OpenStreetMap way 4397328",
+            "url": "https://www.openstreetmap.org/way/4397328"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · Saddledome from Calgary Tower, the roof from the north-west (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Saddledome_from_Calgary_Tower.JPG"
+          },
+          {
+            "label": "Photo · 2020 Calgary Saddledome, the south-east low side (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2020_Calgary_Saddledome.jpg"
+          },
+          {
+            "label": "Photo · 2020 Calgary Saddledome night, the lit edge ring and roof loop (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2020_Calgary_Saddledome_night.jpg"
+          },
+          {
+            "label": "Photo · Scotiabank Saddledome, southeast view (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Scotiabank_Saddledome,_southeast_view_20240819_1.jpg"
+          },
+          {
+            "label": "Photo · Scotiabank Saddledome, southwest view, the west entrance (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Scotiabank_Saddledome,_southwest_view_20240819_1.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/scotiabank-saddledome/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=scotiabank-saddledome&view=overview",
+        "views": [
+          {
+            "label": "Overview (south-east, above Stampede Park)",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=overview"
+          },
+          {
+            "label": "South-east low side: portal, lettering, loop",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=facade"
+          },
+          {
+            "label": "Roof from above",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=roof"
+          },
+          {
+            "label": "South-west high end (west entrance)",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=west"
+          },
+          {
+            "label": "North-west low side (downtown side)",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=northwest"
+          },
+          {
+            "label": "Plaza level under the south-east portal",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=street"
+          },
+          {
+            "label": "Lettering and roof loop, close",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=sign"
+          },
+          {
+            "label": "Red towers and pavilion, close",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=tower"
+          },
+          {
+            "label": "Looking up under the eaves",
+            "url": "/asset-preview.html?asset=scotiabank-saddledome&view=eave"
+          }
+        ]
+      },
+      "notes": "The plan (a 70.0 m circle plus the 52-degree south-west entrance bulge reaching 81.6 m) is mapped. The saddle's form is published: the edge ring on a 67.7 m radius sphere, the roof centre 14 m below the higher and 6 m above the lower point of the ring, 4.3 m wide ring elements; the model uses a true hyperbolic paraboloid through those points. Estimated: the absolute heights (the venue's 89 ft maximum building height is read as the roof centre, 27.1 m, which puts the ring at 40.7 m high and 21.1 m low; an alternative reading would move the whole roof several metres), the 1.5 m ring depth, the high-axis bearing (61 and 241 degrees, from the mapped bulge's centre and five photographs, good to about 10 degrees), the deck, concourse band, ribbon window, upper wall lean and the sixteen piers' size and spacing, the red towers (a 9 m x 5.4 m x 19 m box with a sloped white top; the real ones have a rounded outer corner), the 22 m pavilion, the stairs (ten steep steps; no railings), the yellow stair towers (they climb to the underside of the roof ring, about 37 m), the eight thin darker seam strips on the roof (stand-ins for the roof's panel joints, along its two principal directions, about 0.1 m proud of the shell; not surveyed), the slit windows and portholes, the pixel lettering, the roof loop (a figure eight; the real one has two tones and a stem with the S emblem, not modelled) and every colour. The north-east end is not mapped as a bulge: its towers and vestibule are placed on the deck inside the circle from photographs. The lettering is on the south-east portal only; the north-west one is left plain (not verified). The concrete shell is modelled as a surface with a closing ring and soffit; the interior, the seating bowl, the scoreboard and the 2013-flood details are not. The BMO Centre, the parkade and the Stampede grounds are separate buildings and are not modelled. Self-lit materials: the orange edge ring (glow), the concourse ribbon and slit windows (light) and the lettering and roof loop (sign); the roof seam strips are lit like the roof. Near 7 195 triangles / 10 draws / 0.23 MB; far 1 935 / 8 / 0.07 MB.",
+      "documentation": "docs/assets/calgary-scotiabank-saddledome.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "studio-bell",
+      "name": "Studio Bell, National Music Centre",
+      "kind": "building",
+      "location": "850 4 Street SE, East Village, Calgary",
+      "status": "ready",
+      "description": "Allied Works Architecture's Studio Bell (2016), home of the National Music Centre: nine interlocking, subtly curved towers of different heights clad in glazed terracotta in dark gunmetal and bronze courses with a soft gold only low down, narrow vertical slot windows, a triangular window and a street arch, and the enclosed skybridge that carries over 4 Street SE (about 18.6 m clear) and on over the restored brick King Edward Hotel (1905-1910, three and five storeys) into the west block. The model draws the east block (seven flat-walled, round-cornered towers, the tallest at about 34 m), the west block, the flared bridge with a concave cove under each end, and the hotel.",
+      "manifest": "/models/buildings/studio-bell.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/studio-bell/geometry.js",
+        "build": "pnpm build:calgary-landmarks studio-bell",
+        "provenance": "Original procedural geometry authored 2026-10-02 (Codriver, with Claude). Outlines of Studio Bell (OSM way 317559844: east block, west block and the skybridge with its flared ends) and the King Edward Hotel (way 550777783) from the OpenStreetMap ways listed in footprint.js (shared Overpass helper; (c) OpenStreetMap contributors, ODbL 1.0), including the 2.4 degree grid rotation and the 4 Street SE centreline used to size the clear span. Published figures: Wikipedia and the Studio Bell architecture brochure (nine interlocking towers, five storeys, 160,000 sq ft, about 220,000 glazed terracotta tiles), Canadian Architect (charcoal flat faces, gold curved elements, bridge straddling 4 Street SE), architecture web summaries (35 m span, walkway 65 ft / 19.8 m above the roadway; hotel built 1905-1910 in two sections of three and five storeys). Wikimedia Commons photographs were viewed for proportion, colour and detail and are not redistributed: Mack Male, 'National Music Centre (26135834041)' (CC BY-SA 2.0); Craig Talbert, 'Studio Bell home of the National Music Center (43870574572)' (CC BY 2.0); sf-dvs, 'Studio Bell, home of the National Music Centre and Hall of Fame (43313199661)' (CC BY 2.0); Daniel from Glasgow, 'Studio Bell in Calgary (48719528203)' and '(48719862166)' (CC BY 2.0). No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · National Music Centre",
+            "url": "https://en.wikipedia.org/wiki/National_Music_Centre"
+          },
+          {
+            "label": "Wikipedia · King Edward Hotel (Calgary)",
+            "url": "https://en.wikipedia.org/wiki/King_Edward_Hotel_(Calgary)"
+          },
+          {
+            "label": "Canadian Architect · Music of the Spheres: Studio Bell",
+            "url": "https://www.canadianarchitect.com/music-of-the-spheres/"
+          },
+          {
+            "label": "Allied Works · National Music Centre (architect)",
+            "url": "https://alliedworks.com/projects/national-music-centre/"
+          },
+          {
+            "label": "Studio Bell · The Building (official)",
+            "url": "https://www.studiobell.ca/the-building"
+          },
+          {
+            "label": "Designing Buildings · Studio Bell, Calgary",
+            "url": "https://www.designingbuildings.co.uk/wiki/Studio_Bell,_Calgary"
+          },
+          {
+            "label": "OSM way 317559844 · Studio Bell (outline incl. skybridge)",
+            "url": "https://www.openstreetmap.org/way/317559844"
+          },
+          {
+            "label": "OSM way 550777783 · King Edward Hotel (outline)",
+            "url": "https://www.openstreetmap.org/way/550777783"
+          },
+          {
+            "label": "Wikimedia Commons · Studio Bell in Calgary (48719528203), Daniel from Glasgow, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Studio_Bell_in_Calgary_(48719528203).jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Studio Bell in Calgary (48719862166), Daniel from Glasgow, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Studio_Bell_in_Calgary_(48719862166).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/studio-bell/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=studio-bell&view=overview",
+        "views": [
+          {
+            "label": "Aerial overview from the north-west",
+            "url": "/asset-preview.html?asset=studio-bell&view=overview"
+          },
+          {
+            "label": "North-west approach: sign tower, bridge landing and hotel",
+            "url": "/asset-preview.html?asset=studio-bell&view=facade"
+          },
+          {
+            "label": "From 4 Street SE looking south at the skybridge",
+            "url": "/asset-preview.html?asset=studio-bell&view=street"
+          },
+          {
+            "label": "Under the skybridge: soffit and clear height",
+            "url": "/asset-preview.html?asset=studio-bell&view=underside"
+          },
+          {
+            "label": "Bridge landing, triangular window and arch",
+            "url": "/asset-preview.html?asset=studio-bell&view=detail"
+          },
+          {
+            "label": "Roofs, vaults and the bridge top from above",
+            "url": "/asset-preview.html?asset=studio-bell&view=roof"
+          },
+          {
+            "label": "East and south sides of the tower block",
+            "url": "/asset-preview.html?asset=studio-bell&view=rear"
+          }
+        ]
+      },
+      "notes": "Mapped, not estimated: the outlines and their 2.4 degree rotation from the cardinal grid (east block about 42 x 37 m, west block about 11 x 36 m, hotel about 13 x 39 m), the skybridge plan (8.2 m wide between flanks, 7 m radius flares into both blocks, about 32 m from the hotel's street face to the east block) and the roads under it. Published: nine towers, five storeys, 35 m span over 4 Street SE, walkway 65 ft (19.8 m) above the roadway (soffit set at 18.6 m), hotel in a three-storey and a five-storey section. Estimated from photographs: the tallest tower (34 m; OSM tags the whole building 15.24 m / 5 levels, which understates the double-height towers), the other tower heights (24, 30, 31 + 2.8 m vault, 21, 19, 27 m and 30 m for the west block), the split into seven east towers, the bridge top at 30 m, the hotel heights (12.6 and 16.8 m) and which end is the five-storey part, the tile tones (dark gunmetal, bronze, and gold only in the lowest 10 m, with the gold-to-gunmetal contrast halved) and 1.2 m course height, the slot windows, the triangular window beside the bridge landing (a true triangle 3.4 m wide at a 15 m base with its apex at 22 m), the concave coves under the bridge ends, the entrance arch and the roof vaults. Terracotta is modelled as merged horizontal courses in three tones, not individual tiles, and the real iridescent sheen is not reproduced (only the tone mix). The towers are flat-walled with rounded exterior corners and the exterior walls stand 0.1 m inside the mapped outline; the real concave swooping surfaces are simplified to one 8.2 m wide quarter-round cove under each bridge end (5.5 m radius at the east block, 1.6 m at the west block). Not modelled: the StudioBell sign and lettering, the interior, the Hall of Fame glazing detail, trees, street furniture, the hotel's shopfront signs. The glow material (slot windows, bridge windows, entrance arch) is an estimate of the lit building at night and reads as dark glass by day.",
+      "documentation": "docs/assets/calgary-studio-bell.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "suncor-energy-centre",
+      "name": "Suncor Energy Centre",
+      "kind": "building",
+      "location": "150 6 Avenue SW · Calgary, Alberta",
+      "status": "ready",
+      "description": "The two red-granite and dark-glass office towers of the former Petro-Canada Centre (WZMH, 1984): a 215 m west and a 130 m east tower, each a rectangle with two opposite corners cut by long diagonal faces, 6 m notches at the other two corners, and one sloping dark roof plane that falls toward the south-west, joined at the foot by a low three-storey block with a narrow wing running south.",
+      "manifest": "/models/buildings/suncor-energy-centre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/suncor-energy-centre/geometry.js",
+        "build": "pnpm build:calgary-landmarks suncor-energy-centre",
+        "provenance": "Original procedural geometry authored 2026-10-02. Plans and the 130 m east-tower height come from OpenStreetMap ways 505391964 (west tower), 127741493 (east tower, height=130) and 127741496 (the low block between them) (© OpenStreetMap contributors, ODbL 1.0, fetched through the shared Overpass helper). The 215 m west-tower roof and the storey counts are the published figures (Wikipedia, CTBUH Skyscraper Center). The slope and direction of the roof planes, the facade module, window size, lobby heights, granite and glass tone and the heights of the low block and its wing are estimated from Wikimedia Commons photographs used only as local ignored comparison images: 'View From Calgary Tower, 1991. 01 (cropped)' by Lankyrider (CC BY-SA 4.0); 'Telus Sky under construction, with the Bow and Suncor Energy Centre, Calgary, June 2018' by dancing_triss (CC BY 2.0); 'Suncor Building Calgary. (8068090771)' by Bernard Spragg (CC0); 'The Suncor Energy Centre, Calgary. (52938836101)' by Bernard Spragg (public domain); 'Centre Streey North-Calgary' by Qyd (CC BY 2.5); 'Suncor Energy Center (East tower), Calgary, June 2013' by Ultimateshot (CC BY-SA 3.0); 'Petro-Canada-Centre-Szmurlo' by Chuck Szmurlo (CC BY 2.5). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Suncor Energy Centre · Wikipedia (heights, storeys, granite, history)",
+            "url": "https://en.wikipedia.org/wiki/Suncor_Energy_Centre"
+          },
+          {
+            "label": "Suncor Energy Centre I · CTBUH Skyscraper Center",
+            "url": "http://www.skyscrapercenter.com/building/suncor-energy-centre-i/1350"
+          },
+          {
+            "label": "Suncor Energy Centre · Brookfield Properties",
+            "url": "https://www.brookfieldproperties.com/en/our-properties/suncor-energy-centre-528"
+          },
+          {
+            "label": "OSM way 505391964 · west tower",
+            "url": "https://www.openstreetmap.org/way/505391964"
+          },
+          {
+            "label": "OSM way 127741493 · east tower",
+            "url": "https://www.openstreetmap.org/way/127741493"
+          },
+          {
+            "label": "OSM way 127741496 · the low block and wing between the towers",
+            "url": "https://www.openstreetmap.org/way/127741496"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Suncor_Energy_Centre"
+          },
+          {
+            "label": "Both towers from the Calgary Tower, sloping roofs · Lankyrider (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:View_From_Calgary_Tower,_1991._01_(cropped).jpg"
+          },
+          {
+            "label": "From below, granite and glass faces · Bernard Spragg (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Suncor_Building_Calgary._(8068090771).jpg"
+          },
+          {
+            "label": "East tower from the street · Ultimateshot (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Suncor_Energy_Center_(East_tower),_Calgary,_June_2013.jpg"
+          },
+          {
+            "label": "Both towers at night · Chuck Szmurlo (CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Petro-Canada-Centre-Szmurlo.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/suncor-energy-centre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=suncor-energy-centre&view=overview",
+        "views": [
+          {
+            "label": "Both towers from the Calgary Tower deck",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=overview"
+          },
+          {
+            "label": "From the north-east",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=northeast"
+          },
+          {
+            "label": "South faces from 6 Avenue",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=facade"
+          },
+          {
+            "label": "South-west diagonal face",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=diagonal"
+          },
+          {
+            "label": "Sloping roofs from above",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=roof"
+          },
+          {
+            "label": "West tower crown, windows stepping down the slope",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=crown"
+          },
+          {
+            "label": "Stepped corner notch",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=notch"
+          },
+          {
+            "label": "Low block between the towers",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=base"
+          },
+          {
+            "label": "East tower from the east",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=east"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=suncor-energy-centre&view=street"
+          }
+        ]
+      },
+      "notes": "Roof heights 215 m (west) and 130 m (east) and the plans, including the 6 m corner notches and the 48/228 degree diagonal faces, are sourced (Wikipedia/CTBUH, OSM). The roof planes (22 degrees, falling toward bearing 228, each peaking exactly on its north-east face) were read from photographs and checked against a Calgary Tower view, the direction and slope are estimates. Floor pitch 3.95 m, 1.6-2 m window module on a 3.05 m bay, lobby heights (9.6 m west, 7.55 m east), granite and glass tone (granite brick-maroon #7f4a40, glass blue-black #2b3440), the 11.5 m height of the low block and the 6 m height of its south wing are estimated; the wing may in reality be a raised link. Near windows are real openings: granite spandrels and piers with the glass 15 cm behind, about a fifth of them lit (glow) at night; far draws a ribbon strip per about 8 floors with the same glass share. Not modelled: the glazed canopies beside the towers (OSM ways 964045475, 1319374918), the plazas and below-grade levels, rooftop antennas, and the 2025-2027 lobby and terrace redevelopment. Near GLB 4.8 k triangles / 259 KB, far 0.8 k / 41 KB (ribbon strips instead of window rows). y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/calgary-suncor-energy-centre.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "telus-sky",
+      "name": "Telus Sky (Calgary House)",
+      "kind": "building",
+      "location": "685 Centre Street SW, Calgary, Alberta",
+      "status": "ready",
+      "description": "Calgary's pixelated glass tower (222.3 m, 59 mapped storeys, BIG with Dialog, 2019): a flush office rectangle on a recessed lobby, then residential floors whose plates step back and pixelate into a mosaic of small terraces, the north face receding and the roof stepping up toward the east, with a 10-level podium strip on the west and Coupland's 'Northern Lights' LED fascia on the north and south faces.",
+      "manifest": "/models/buildings/telus-sky.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/telus-sky/geometry.js",
+        "build": "pnpm build:calgary-landmarks telus-sky",
+        "provenance": "Original procedural geometry authored 2026-10-02. Plate, podium, overhanging volumes, orientation and footprint from OpenStreetMap way 500294061 (Telus Sky, building:levels=59, 685 Centre Street S) and its building:part ways 1328504264, 1328504258, 1328504261, 1328504262 and 1328504263 (© OpenStreetMap contributors, ODbL 1.0, read through the shared Overpass queue 2026-10-02). Height, storey and office/residential split from Wikipedia. Reference photographs used only to compare and kept out of the repository (Wikimedia Commons, all CC BY-SA): 'TELUS SKY' (Ultimograph5, 4.0), 'Telus Sky May' (Jason Corbett, 4.0), 'Telus Sky October' (Chadillaccc, 4.0), 'Telus Sky May 2018' (Chad Koski, 4.0), 'Telus Sky September 2017' (Chad Koski, 4.0), 'Telus Sky March 2018 - 2' (Chad Koski, 4.0), 'Telus Sky from Calgary Tower, Calgary, Alberta, 2025-07-14' (Chris Woodrich, 4.0), 'Brookfield Place and Telus Sky 2020' (Alex Szczuczko, 2.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Telus Sky (Calgary House)",
+            "url": "https://en.wikipedia.org/wiki/Telus_Sky"
+          },
+          {
+            "label": "Wikidata · Telus Sky",
+            "url": "https://www.wikidata.org/wiki/Q16255317"
+          },
+          {
+            "label": "Developer · Westbank, Calgary House",
+            "url": "https://living.westbankcorp.com/property/calgary-house/"
+          },
+          {
+            "label": "OSM tower outline · way 500294061",
+            "url": "https://www.openstreetmap.org/way/500294061"
+          },
+          {
+            "label": "OSM west podium · way 1328504264",
+            "url": "https://www.openstreetmap.org/way/1328504264"
+          },
+          {
+            "label": "Photograph · south face from the Calgary Tower (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Telus_Sky_from_Calgary_Tower,_Calgary,_Alberta,_2025-07-14.jpg"
+          },
+          {
+            "label": "Photograph · from the street (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:TELUS_SKY.jpg"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Telus_Sky"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/telus-sky/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=telus-sky&view=overview",
+        "views": [
+          {
+            "label": "Whole tower from the south-east",
+            "url": "/asset-preview.html?asset=telus-sky&view=overview"
+          },
+          {
+            "label": "South face onto 7 Avenue",
+            "url": "/asset-preview.html?asset=telus-sky&view=facade"
+          },
+          {
+            "label": "Stepped roof from above",
+            "url": "/asset-preview.html?asset=telus-sky&view=roof"
+          },
+          {
+            "label": "Pixelated crown",
+            "url": "/asset-preview.html?asset=telus-sky&view=crown"
+          },
+          {
+            "label": "East profile, north face receding",
+            "url": "/asset-preview.html?asset=telus-sky&view=east"
+          },
+          {
+            "label": "North face",
+            "url": "/asset-preview.html?asset=telus-sky&view=north"
+          },
+          {
+            "label": "Street level on 7 Avenue",
+            "url": "/asset-preview.html?asset=telus-sky&view=street"
+          },
+          {
+            "label": "Lobby, podium and overhangs",
+            "url": "/asset-preview.html?asset=telus-sky&view=base"
+          },
+          {
+            "label": "From the Calgary Tower",
+            "url": "/asset-preview.html?asset=telus-sky&view=tower"
+          },
+          {
+            "label": "Skyline distance",
+            "url": "/asset-preview.html?asset=telus-sky&view=skyline"
+          }
+        ]
+      },
+      "notes": "Sourced: 222.3 m roof (Wikipedia), 59 storeys mapped (OSM; Wikipedia counts 60), offices on floors 1 to 29 and residences above (Wikipedia), the 51.4 x 34.3 m tower plate, its 2.45 degree grid rotation, the 10-level west podium strip and the north, south and south-east overhanging volumes (all OSM). Estimated from photographs: the storey heights (7 m lobby, 4.1 m office, 3.3 m residential, 3.6 m plant), how far each face steps back (north about 12 m, west about 6 m, east about 2.5 m, south about 1 m by the roof, so the top plate is about 43 x 22 m, roughly half the base area, which agrees with the published residential floor area), the 7 m pixel columns, the 1.2 to 1.4 m cell depth, the dithered pixel pattern, the stepped roof (about 13.5 m lower at the west end, six steps) and the colours. The north face receding is inferred from an east-side photograph and from the south face staying plumb in an elevated south view; no elevation drawing was found. The 'Northern Lights' LED is shown as green fascia strips on the north and south faces in an aurora-curtain pattern, not its real layout or colours; by day the strips read as silver-grey slab edges. The overhanging volumes (north L, south-east annex, south bay) are mapped but their glazing, heights and the columns under the north volume are guesses. Not modelled: the +15 skywalk links, the plaza, the 31 m excavation, mullion detail beyond a 3.6 m module, balcony balustrades, rooftop equipment beyond one plant box. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/calgary-telus-sky.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "the-bow",
+      "name": "The Bow",
+      "kind": "building",
+      "location": "500 Centre Street SE · Calgary, Alberta",
+      "status": "ready",
+      "description": "236 m, 58-storey crescent tower by Foster + Partners (2012): a bow-shaped plan with a convex north-east face and a concave south-south-west face, a nine-band diagrid of pale members over blue-grey glass on both curved faces, plain dark wing columns at the tips, two louvred mechanical floors, three recessed sky gardens, a flat roof with the window-washing rig, and Plensa's 12 m wire head Wonderland in the plaza.",
+      "manifest": "/models/buildings/the-bow.json",
+      "source": {
+        "path": "src/peregrine/landmarks/calgary/the-bow/geometry.js",
+        "build": "pnpm build:calgary-landmarks the-bow",
+        "provenance": "Original procedural geometry authored 2026-10-02. Crescent plan (two fitted circles and the wing ends), height and storey count from OpenStreetMap way 127741499 (read through the shared Overpass helper 2026-10-02; © OpenStreetMap contributors, ODbL 1.0) and Wikipedia. Diagrid bands and pitch, member sizes, wing zones, mechanical floors, sky-garden heights, roof and the Wonderland head estimated from Wikimedia Commons photographs used only as local ignored comparison images (DXR · CC BY-SA 4.0; Florian Fuchs · CC BY 3.0; Bernard Spragg · CC0; Greenwood714 · CC BY-SA 3.0; Ron Cogswell · CC BY 2.0; IQRemix · CC BY-SA 2.0; Qyd · CC BY 2.5). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "The Bow · Wikipedia (height, storeys, sky gardens, Wonderland, architects)",
+            "url": "https://en.wikipedia.org/wiki/The_Bow_(skyscraper)"
+          },
+          {
+            "label": "The Bow · Skyscraper Center",
+            "url": "https://www.skyscrapercenter.com/building/the-bow/1036"
+          },
+          {
+            "label": "OSM way 127741499 · The Bow outline",
+            "url": "https://www.openstreetmap.org/way/127741499"
+          },
+          {
+            "label": "The Bow · Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q1229086"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:The_Bow_(skyscraper)"
+          },
+          {
+            "label": "East view, the diagrid · DXR (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Bow,_Calgary,_east_view_20240819_1.jpg"
+          },
+          {
+            "label": "Concave face and wings · Florian Fuchs (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Bow_in_Calgary.jpg"
+          },
+          {
+            "label": "Wonderland and the base · Ron Cogswell (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:%27Wonderland%27_(2012)_by_Jaume_Plensa_--_The_Bow_Calgary_(AB)_September_2019_(48817664497).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/the-bow/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=the-bow&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=the-bow&view=overview"
+          },
+          {
+            "label": "Convex face from the north",
+            "url": "/asset-preview.html?asset=the-bow&view=facade"
+          },
+          {
+            "label": "Concave face and sky gardens",
+            "url": "/asset-preview.html?asset=the-bow&view=concave"
+          },
+          {
+            "label": "Roof and rig",
+            "url": "/asset-preview.html?asset=the-bow&view=roof"
+          },
+          {
+            "label": "Plaza and Wonderland",
+            "url": "/asset-preview.html?asset=the-bow&view=plaza"
+          },
+          {
+            "label": "Diagrid close-up",
+            "url": "/asset-preview.html?asset=the-bow&view=detail"
+          },
+          {
+            "label": "West wing",
+            "url": "/asset-preview.html?asset=the-bow&view=west"
+          },
+          {
+            "label": "South-east wing",
+            "url": "/asset-preview.html?asset=the-bow&view=wing"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=the-bow&view=street"
+          }
+        ]
+      },
+      "notes": "Published: 236 m, 58 storeys (4 mechanical floors, 3 sky gardens about 18 floors apart), crescent plan, Wonderland 12 m in the south plaza. Mapped: the crescent outline (concave circle 39.2 m, convex circle 46 to 47.5 m, rounded wing ends), modelled 0.6 m inside the ring at worst. Estimated from photographs: nine diagrid bands of 25.96 m, half-bay pitch of 9.7 m, member sizes, which zones carry the diagrid and which are plain wings, two bronze louvred floors (79 to 87 m and 157 to 165 m), sky-garden heights, 2.5 m recess and extent, the 233.6 m flat roof and its 5 m concave-rim dip (a hedge: the real roofline may be flat), the roof plant and rig, glass colours, lit-office pattern and the stylised head and its position. Not modelled: +15 skywalks, entrance canopies, plaza paving, parkade, Alberta's Dream, the reconstructed York Hotel walls, interiors, cast-steel nodes. The glass is opaque. Downtown here is nearly flat: no terrainPad declared.",
+      "documentation": "docs/assets/calgary-the-bow.md",
+      "city": "Calgary",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

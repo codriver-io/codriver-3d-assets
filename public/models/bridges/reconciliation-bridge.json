@@ -1,0 +1,66 @@
+{
+  "id": "reconciliation-bridge",
+  "name": "Reconciliation Bridge",
+  "kind": "bridge",
+  "origin": [
+    -114.0523221,
+    51.0499241
+  ],
+  "height": 11.3,
+  "padM": 70,
+  "frontageBearing": 209.1,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the road surface, level with the approach streets on both banks (the real deck is at bank level, several metres above the Bow). No absolute altitude, DEM or latitude stretch is baked in. On the flat Cityscape map the deck stays level with the loaded approach roads (no ramp); in Full 3D world (terrainPolicy absolute-deck) the deck spans between the two approach roads' ground while the pier and abutments reach their own ground. Pier and abutment feet stop at y=-2.9.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 1910 two-span riveted steel Parker camelback through truss, 8 panels per span, 190 ft (57.9 m) spans, 116.58 m long, 14.02 m wide, one concrete river pier and two abutments, 1.5 m steel sidewalks with a lattice balustrade on either side (City of Calgary heritage inventory via HistoricBridges.org); southbound one-way, 2 lanes, signed clearance 4.2 m (OSM). Mapped: alignment, bearing 209.1 deg, deck outline and sidewalks. Estimated from photographs: truss depth (7.8 m at the hips to 11.0 m at mid-span), member sizes, laced verticals and struts, portal and sway bracing (kept >= 5 m over the carriageway), floor system, pier plan and cutwaters, abutments, balustrade pattern, LED strip and banner positions, colours.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/reconciliation-bridge-near.glb",
+      "bytes": 1155296,
+      "triangles": 18556,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.84077835083008,
+          -2.9000000953674316,
+          -56.44660568237305
+        ],
+        "max": [
+          35.556095123291016,
+          11.209860801696777,
+          56.99571990966797
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/reconciliation-bridge-far.glb",
+      "bytes": 327956,
+      "triangles": 5224,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.84077835083008,
+          -2.9000000953674316,
+          -56.44660568237305
+        ],
+        "max": [
+          35.556095123291016,
+          11.209860801696777,
+          56.99571990966797
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/reconciliation-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

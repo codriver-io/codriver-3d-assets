@@ -1,0 +1,65 @@
+{
+  "id": "fairmont-palliser",
+  "name": "Fairmont Palliser Hotel",
+  "kind": "building",
+  "origin": [
+    -114.0649533,
+    51.0443112
+  ],
+  "height": 60,
+  "padM": 54,
+  "frontageBearing": 182.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan and storey counts follow the OSM outline and its eleven building:part ways; the storey height (3.77 m above a 7.2 m ground storey, so that 15 levels reach the mapped 60 m), the stone base and its dark granite band, window rhythm, cornices (including the 1 m cornice at the roofline), canopy, penthouse roof and sign lettering are reconstructed from photographs and are approximate.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fairmont-palliser-near.glb",
+      "bytes": 512584,
+      "triangles": 10003,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -37.51633834838867,
+          0,
+          -28.133214950561523
+        ],
+        "max": [
+          36.96889877319336,
+          60,
+          30.73100471496582
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fairmont-palliser-far.glb",
+      "bytes": 117496,
+      "triangles": 2283,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -37.51633834838867,
+          0,
+          -28.133214950561523
+        ],
+        "max": [
+          36.96889877319336,
+          60,
+          30.690908432006836
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/fairmont-palliser/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
