@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { track } from './analytics.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { createChamplain, disposeChamplain, BRIDGE_PALETTES } from './peregrine/landmarks/champlain-geometry.js';
@@ -6,6 +7,7 @@ import { bridgePoint, BRIDGE_LENGTH, TOWER_STATION } from './peregrine/landmarks
 
 document.body.classList.toggle('embedded', new URLSearchParams(location.search).get('embed') === '1');
 const $ = (id) => document.getElementById(id);
+$('download').addEventListener('click', () => track('Download', { asset: 'samuel-de-champlain', detail: /-(near|far)\.glb$/.exec($('download').getAttribute('href'))?.[1] || 'near', kind: 'bridge', from: 'bridge-viewer' }));
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));

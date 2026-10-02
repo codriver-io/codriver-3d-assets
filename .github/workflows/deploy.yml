@@ -1,0 +1,52 @@
+name: Deploy library
+# Publishes the library to Cloudflare Pages (https://3d-assets.codriver.io) after "Validate library" passes on a
+# push to main, i.e. every merged pull request. Pull-request runs never reach this job and never see the token.
+# Needs the repository secret CLOUDFLARE_API_TOKEN (Account > Cloudflare Pages > Edit) and the repository
+# variable CLOUDFLARE_ACCOUNT_ID. "Run workflow" redeploys the current main by hand.
+on:
+  workflow_run:
+    workflows: [Validate library]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: production
+      url: https://3d-assets.codriver.io
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - name: Skip a superseded commit
+        id: latest
+        if: github.event_name == 'workflow_run'
+        run: |
+          main=$(git ls-remote "https://github.com/${GITHUB_REPOSITORY}.git" refs/heads/main | cut -f1)
+          if [ "$main" != "$(git rev-parse HEAD)" ]; then echo "main moved on to $main; its own validation deploys it."; echo "skip=1" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        if: steps.latest.outputs.skip != '1'
+        with:
+          node-version: '22'
+      - name: Install pinned pnpm
+        if: steps.latest.outputs.skip != '1'
+        run: corepack enable && corepack prepare pnpm@11.2.2 --activate
+      - if: steps.latest.outputs.skip != '1'
+        run: pnpm install --frozen-lockfile
+      - if: steps.latest.outputs.skip != '1'
+        run: pnpm build
+      - name: Deploy to Cloudflare Pages
+        if: steps.latest.outputs.skip != '1'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: pnpm exec wrangler pages deploy dist --project-name codriver-3d-assets --branch main --commit-hash "$(git rev-parse HEAD)" --commit-message "$(git log -1 --format=%s)"

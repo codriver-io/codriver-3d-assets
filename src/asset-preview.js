@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { track } from './analytics.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { createVictoria, createJacquesCartier } from './peregrine/landmarks/montreal-bridges-geometry.js';
 import { createFiveRoses } from './peregrine/landmarks/five-roses-geometry.js';
@@ -100,6 +101,7 @@ for (const spec of PARIS_BRIDGES) {
 }
 for (const p of JACQUES_RAMPS) profiles[p.CHAMPLAIN.id] = p;
 let entry, model, generation = 0, dark = ['dark', 'night'].includes(params.get('theme')), front = false;
+$('download').addEventListener('click', () => { if (entry) track('Download', { asset: entry.id, detail: $('variant').value, kind: entry.kind, from: 'viewer' }); });
 controls.addEventListener('change', () => { if (entry?.id === 'basilique-notre-dame') updateNotreDameClipping(camera, controls); });
 $('angle').value = params.get('view') || 'overview';
 if (params.get('asset') === 'pont-jacques-cartier') {
