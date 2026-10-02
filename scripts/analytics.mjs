@@ -3,7 +3,7 @@
 // on the production hosts, so local builds, previews and forks send nothing. Events: pageviews (the viewer's
 // `asset` as a property), 'Model Open' and 'Download' with asset / detail / city / kind (src/analytics.js), and
 // outbound links when enabled for the site in Plausible. An empty PLAUSIBLE_SCRIPT turns analytics off.
-export const PLAUSIBLE_SCRIPT = '';
+export const PLAUSIBLE_SCRIPT = 'https://stats.codriver.io/js/pa-wBXA_yuDcQpfhkN135MWb.js';
 export const PRODUCTION_HOSTS = ['3d-assets.codriver.io', 'codriver-3d-assets.pages.dev'];
 
 export function analyticsSnippet(script = PLAUSIBLE_SCRIPT) {
