@@ -27,3 +27,5 @@ How to stay small without losing the look: one merged mesh per material (5–10 
 ## Working with an AI agent cheaply
 
 Agents re-read their whole context on every turn, so images are the main cost: look at one contact sheet per iteration instead of many single renders, run export + checks in one command, and query large JSON files instead of reading them whole.
+
+Locating a defect costs more than fixing it. A coplanar flag from `qa-metrics.mjs` reads `small-material on big-material <area> at [x, y, z]` (model-space metres): search the source for the part at that position instead of hunting through renders, and skip the contact sheet for such mechanical fixes unless a silhouette changes.

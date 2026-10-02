@@ -5,6 +5,7 @@
 // free-standing structure), far-vs-near bounds, parts below grade, coplanar overlapping faces of
 // different materials (z-fighting candidates) and an outside-in ray sweep for back-face hits
 // (holes, inside-out or missing faces). Prints one compact line per landmark; JSON for details.
+// A coplanar flag names the worst material pairs ("small on big") and where their largest overlap is.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import * as THREE from 'three';
@@ -47,7 +48,7 @@ function coplanarOverlaps(tris) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(t);
   }
-  let pairs = 0, area = 0;
+  let pairs = 0, area = 0; const byPair = new Map();
   for (const g of groups.values()) {
     if (g.length < 2 || g.length > 4000) continue;
     const n = g[0].n, ax = Math.abs(n.x) > 0.9 ? 'y' : 'x', ay = Math.abs(n.z) > 0.9 ? 'y' : 'z';
@@ -58,14 +59,23 @@ function coplanarOverlaps(tris) {
       return (d1 > m && d2 > m && d3 > m) || (d1 < -m && d2 < -m && d3 < -m);
     };
     const cen = g.map((t) => [(t.a[ax] + t.b[ax] + t.c[ax]) / 3, (t.a[ay] + t.b[ay] + t.c[ay]) / 3]);
+    const c3 = g.map((t) => t.a.clone().add(t.b).add(t.c).divideScalar(3));
     for (let i = 0; i < g.length; i++) for (let j = 0; j < g.length; j++) {
       if (i === j || g[i].mat === g[j].mat || g[j].area > g[i].area) continue;
       if (PAINT.test(g[i].mat) && PAINT.test(g[j].mat)) continue; // deck lane paint over asphalt: drawn with offsets/HD overlay
       // the smaller face j sits inside the bigger face i, in the same plane, in another material
-      if (inside(cen[j], g[i])) { pairs++; area += g[j].area; }
+      // the rounded plane key can group facets of a curved facade ~0.3 m apart: require the true plane
+      if (g[i].n.dot(g[j].n) < 0.999 || Math.abs(g[i].n.dot(c3[j]) - g[i].n.dot(g[i].a)) > 0.02 || !inside(cen[j], g[i])) continue;
+      pairs++; area += g[j].area;
+      const k = `${g[j].mat} on ${g[i].mat}`, e = byPair.get(k) || { pair: k, pairs: 0, area: 0, maxArea: 0, at: null };
+      e.pairs++; e.area += g[j].area;
+      if (g[j].area > e.maxArea) { e.maxArea = g[j].area; e.at = ['x', 'y', 'z'].map((c) => +((g[j].a[c] + g[j].b[c] + g[j].c[c]) / 3).toFixed(1)); }
+      byPair.set(k, e);
     }
   }
-  return { pairs, areaM2: Math.round(area) };
+  // Where to look: the worst material pairs and the model-space centre of their biggest overlapping face.
+  const top = [...byPair.values()].sort((a, b) => b.area - a.area).slice(0, 3).map(({ pair, pairs, area, at }) => ({ pair, pairs, areaM2: +area.toFixed(1), at }));
+  return { pairs, areaM2: Math.round(area), top };
 }
 // Rays from a sphere round the model at random points inside its box: a first hit on a face whose
 // normal points away from the ray origin is a hole, an inside-out face or a missing cap.
@@ -116,7 +126,7 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.url.repl
       if (label === 'near') {
         const tris = triangles(meshesOf(g.scene));
         m.coplanar = coplanarOverlaps(tris); m.sweep = backfaceSweep(g.scene, box);
-        if (m.coplanar.pairs > 20 && m.coplanar.areaM2 >= 5) row.issues.push(`near coplanar overlaps ${m.coplanar.pairs} (${m.coplanar.areaM2} m²)`);
+        if (m.coplanar.pairs > 20 && m.coplanar.areaM2 >= 5) row.issues.push(`near coplanar overlaps ${m.coplanar.pairs} (${m.coplanar.areaM2} m²: ${m.coplanar.top.map((t) => `${t.pair} ${t.areaM2} m² at [${t.at}]`).join(', ')})`);
         if (m.sweep.backfacePct > 2) row.issues.push(`near back-face hits ${m.sweep.backfacePct}%`);
       }
       row[label] = m;
