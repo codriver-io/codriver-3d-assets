@@ -43,7 +43,7 @@ Everything not in this table (parapet heights, window tiers, monitors, ruin brea
 
 The published tower is 94 ft (29 m) tall, but it stands on ground about 9 m below the cellhouse yard, so its tank top is only about 5 m above the cellhouse roof (the lighthouse stays the highest point). A rigid model cannot go more than 3 m below `y=0` without drawing through the flat Cityscape ground. The model therefore keeps the footings at -2.5 m and sets the tank top at **20.6 m above `y=0`, 4.8 m above the central roof**, so the tower is **about 23 m from footing to hatch, not 29 m**: the legs are shortened by about 6 m to 11 m; tank (13 m across, 11.8 m including bowl and dome) and leg splay are unchanged. The sourced 29 m is not reproduced.
 
-**Known Full 3D world limitation:** the water tower is outside the terrain pad (`padM` 75 m covers the cellhouse complex only, about 70 m from the origin; the tower is 137 m away), so on the island's real terrain its footings will float about 6.5 m above the ground. `padM` is deliberately **not** enlarged: a disc reaching the tower would raise the surrounding bay. Host-side suggestion: a small secondary terrain pad (radius about 12 m) at the tower, centred about 137 m from the origin at bearing about 320 degrees (`u -136.6, w -9.7`), levelled to the tower's own footing level, or a per-part datum so the tower sits on its own local grade. Not implemented or tested here; the manifest no longer carries a `waterTowerFootY` field (the -2.5 m footing level is a plan constant, `TOWER.footY`, in the plan module).
+**Full 3D world: the tower stands on its own terrace.** The footing level is a plan constant (`TOWER.footY`, -2.5 m). The explicit terrain pad (see Placement) holds a 15 m disc round the tower at the pad's datum minus 2.5 m. The footings meet the drawn ground within 0.8 m; with the old 75 m disc they were buried 11-14 m. Because the legs are shortened, the terrace is a mound up to about 10 m above the DEM there.
 
 ## Dimensions
 
@@ -87,7 +87,7 @@ The dock and Building 64, the Power House and chimney, New and Model Industries,
 * The cellhouse is a clean idealisation: window tiers and parapet heights are estimated from a handful of photographs; the real concrete ranges from pinkish beige to grey with staining, the model uses one weathered grey-beige.
 * The ruins read as a roofless shell but are blocky; the real shell has timber, irregular breaks and a curved gable.
 * The yard wall has constant height on flat ground; in life it retains a slope and varies in height.
-* The water tower is 6 m shorter than published (see above) and floats in Full 3D world; the lighthouse base stands on flat ground in Cityscape. Grade offsets come from a coarse DEM and are good to a few metres.
+* The water tower is 6 m shorter than published (see above). In Full 3D world it stands on a raised terrace, up to about 10 m above the DEM. The lighthouse base stands on flat ground in Cityscape. Grade offsets come from a coarse DEM and are good to a few metres.
 * Cornices project 0.35 m past the mapped wall lines; yard-wall, pier and guard-tower parts lie outside the building rings by design.
 
 ## Costs
@@ -96,7 +96,34 @@ Near 11,418 triangles / 10 draws / 613,208 bytes; far 3,002 / 7 / 168,080 (budge
 
 ## Placement
 
-`padM` is 75 m: it covers the cellhouse complex (Dining Hall end to Administration Block end are within 70 m of the origin). The lighthouse (u 69), the ruins (u 78-97) and the water tower (u -137) stand outside the pad on natural island terrain. Cityscape: **not tested** in the running app. Full 3D world: **not tested**; integration is checked separately. `SPEC.height` is 28.8 m (lighthouse vane).
+`SPEC.height` is 28.8 m (lighthouse vane). **Cityscape: verified** in the running app (2026-10-01): it stays flat, the group stays at y = 0, no flatten zone exists, and `padM` (75 m) is not used. Screenshot: `tmp/landmark-qa/alcatraz/after-cityscape/alcatraz-island-near.png`.
+
+**Full 3D world: verified** in the running app (2026-10-01; local server, AWS Terrarium DEM at z15), with the residual gaps below. `SPEC.terrainPad` replaces the default disc (`building-layer.js` reads it through `terrain-footprints.js#padFootprint`). The 75 m disc reached the island's slopes and took their lowest DEM sample (14.6 m) as the datum. That sank the complex about 23 m into a flattened pit and raised the bay round the island by up to 11 m. The pad now:
+
+* flattens the mapped Main Prison, Dining Hall and Administration Block outlines to the **median** DEM over the Main Prison outline (37.6 m), feathered back to the DEM over 30 m;
+* holds two terraces. The water tower's 15 m disc sits at the datum minus 2.5 m (its footings), with a 25 m feather. The recreation yard's wall line, pushed out 12 m, sits at the datum, with a 12 m feather. Each terrace reaches past its part because the app draws terrain on a lattice of about 30 m;
+* flattens nothing else and raises no water.
+
+The measurements below come from `tmp/landmark-qa/alcatraz/measure.mjs`. Each value is the part's base relative to the drawn ground: + means the part floats, - means it is sunk.
+
+| Part | Before (75 m disc) | After (`terrainPad`) |
+| --- | --- | --- |
+| Datum | 14.6 m | 37.6 m |
+| Cellhouse walls (DEM 32.8-41.5) | 0, on a pit cut up to 27 m below the DEM | -0.3 to +0.8 |
+| Dining Hall | -1.9 to 0 | 0 to +1.9 (west corner) |
+| Lighthouse (DEM 41.5) | -0.5 | 0 |
+| Warden's House ruins (DEM 38.7) | -3.2 | +1.3 |
+| Water tower footings (DEM 24.3-30.2) | -14.2 to -11.2 | -0.8 to +0.8 |
+| Recreation-yard wall vertices | -11.7 to 0 | 0 to +2.9; west corner +8.4 |
+| Bay raised | up to 11 m | none |
+
+**Still not right in Full 3D world:**
+
+* The yard wall's west corner (u -137, w 31) stands on the cliff edge, about 8 m above the drawn ground. The 30 m lattice cannot hold a narrower step there without raising the bay.
+* The Dining Hall's west corner floats up to 1.9 m and the ruins 1.3 m. Both come from lattice interpolation.
+* The yard floor sits about 4 m above the DEM median, which is 33.4 m; the model puts the yard at the cellhouse grade.
+
+Terraces are offset in model metres, so they follow terrain exaggeration (`offsetM / k`); exaggeration other than 1 is not tested. Screenshots: `tmp/landmark-qa/alcatraz/before/` and `tmp/landmark-qa/alcatraz/after/` (far, near, street).
 
 ## Verification evidence
 
