@@ -4,8 +4,8 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal, Paris, Toronto and San Francisco: 79 landmarks and four reusable
-bridge components, 174 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal, Paris, Toronto, San Francisco and Calgary: 94 landmarks and four reusable
+bridge components, 204 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
 **[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
@@ -44,6 +44,13 @@ Ghirardelli Square, Alcatraz, Oracle Park, Chase Center, Conservatory of Flowers
 de Young Museum, California Academy of Sciences and the Legion of Honor. Build them
 with `pnpm build:san-francisco-landmarks`; the collection, frame and budgets are in
 [docs/san-francisco-landmarks.md](docs/san-francisco-landmarks.md).
+
+Calgary: the Calgary Tower, The Bow, Brookfield Place, Telus Sky, Suncor Energy
+Centre, Bankers Hall, the Scotiabank Saddledome, the Central Library, Studio Bell,
+Old City Hall, the Fairmont Palliser, the Canada Olympic Park ski jumps, and the
+Peace, Centre Street and Reconciliation bridges. Build them with
+`pnpm build:calgary-landmarks`; the collection and frame are in
+[docs/calgary-landmarks.md](docs/calgary-landmarks.md).
 
 ## A look inside
 

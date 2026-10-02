@@ -1,0 +1,68 @@
+{
+  "id": "calgary-tower",
+  "name": "Calgary Tower",
+  "kind": "building",
+  "origin": [
+    -114.0631348,
+    51.0443015
+  ],
+  "height": 190.8,
+  "padM": 22,
+  "frontageBearing": 0,
+  "rangeM": 6000,
+  "minZoom": 12.5,
+  "nearM": 450,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Calgary is at about 1,045 m above sea level, not baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 190.8 m tip, 171 m roof, 157.6 m top floor. Mapped: the axis and the 19 m circle (rotunda). Estimated from photographs (about +-3% in width, +-2 m in height): the turret profile and its ~31 m diameter, the shaft taper (10 m under the turret, ~15 m at the foot), the crown, the mast; guessed: the rotunda height (9.6 m) and its cone pitch, the glass-floor extension, the roof aviation lights. The flame is shown lit (the real one burns on special occasions). Interior, the Tower Centre mall beside the rotunda, the 15 Plus skyway and site furniture are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/calgary-tower-near.glb",
+      "bytes": 398412,
+      "triangles": 12588,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -17.799999237060547,
+          0,
+          -17.799999237060547
+        ],
+        "max": [
+          17.799999237060547,
+          190.8000030517578,
+          17.799999237060547
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/calgary-tower-far.glb",
+      "bytes": 66896,
+      "triangles": 2636,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -17.799999237060547,
+          0,
+          -17.799999237060547
+        ],
+        "max": [
+          17.799999237060547,
+          190.8000030517578,
+          17.799999237060547
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

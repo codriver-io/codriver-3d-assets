@@ -1,0 +1,66 @@
+{
+  "id": "calgary-central-library",
+  "name": "Calgary Central Library",
+  "kind": "building",
+  "origin": [
+    -114.0550316,
+    51.0454
+  ],
+  "height": 20.4,
+  "roofY": 20.1,
+  "padM": 86,
+  "frontageBearing": 253,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (3 Street SE at the west facade and the CTrain tracks at the north prow); no absolute altitude. Roof 20.1 m, skylight curb 20.4 m (OSM height tag).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The 140 x 57 m plan and the 20.4 m height are mapped from OSM; the arch profile, recess depths, terrace heights, portal opening, panel pattern, oculus and every colour are estimated from photographs. See docs/3d-calgary-calgary-central-library.md.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/calgary-central-library-near.glb",
+      "bytes": 535764,
+      "triangles": 6729,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -26.51729393005371,
+          0,
+          -78.34978485107422
+        ],
+        "max": [
+          30.345848083496094,
+          20.399999618530273,
+          61.910804748535156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/calgary-central-library-far.glb",
+      "bytes": 123868,
+      "triangles": 1488,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -26.437288284301758,
+          0,
+          -78.33015441894531
+        ],
+        "max": [
+          30.265840530395508,
+          20.399999618530273,
+          61.815486907958984
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-central-library/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -32,8 +32,9 @@ import { createPantheon, createHotelDeVille, createConciergerie, createMadeleine
 import { PARIS_HISTORIC_BY_ID } from './peregrine/landmarks/paris-historic-config.js';
 import { TORONTO_LANDMARKS, torontoLandmark } from './peregrine/landmarks/toronto/authoring.js';
 import { SAN_FRANCISCO_LANDMARKS, sanFranciscoLandmark } from './peregrine/landmarks/san-francisco/authoring.js';
-// Folder-registry landmarks (Toronto, San Francisco) share one inspector path.
-const registryLandmark = (id) => torontoLandmark(id) || sanFranciscoLandmark(id);
+import { CALGARY_LANDMARKS, calgaryLandmark } from './peregrine/landmarks/calgary/authoring.js';
+// Folder-registry landmarks (Toronto, San Francisco, Calgary) share one inspector path.
+const registryLandmark = (id) => torontoLandmark(id) || sanFranciscoLandmark(id) || calgaryLandmark(id);
 import { PARIS_BRIDGES, createParisBridge, metricFrame } from './peregrine/landmarks/paris-bridges-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
@@ -79,6 +80,7 @@ const creators = {
   'paris-institut-de-france': createInstitutDeFrance,
   ...Object.fromEntries(TORONTO_LANDMARKS.map((l) => [l.id, l.create])),
   ...Object.fromEntries(SAN_FRANCISCO_LANDMARKS.map((l) => [l.id, l.create])),
+  ...Object.fromEntries(CALGARY_LANDMARKS.map((l) => [l.id, l.create])),
 };
 for (const spec of PARIS_BRIDGES) creators[spec.id] = options => createParisBridge(spec, options);
 for (const p of JACQUES_RAMPS) creators[p.CHAMPLAIN.id] = options => createJacquesIslandRamp(p, options);

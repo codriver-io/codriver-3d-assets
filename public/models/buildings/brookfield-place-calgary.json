@@ -1,0 +1,80 @@
+{
+  "id": "brookfield-place-calgary",
+  "name": "Brookfield Place",
+  "kind": "building",
+  "origin": [
+    -114.0660248,
+    51.0471806
+  ],
+  "height": 247,
+  "padM": 78,
+  "frontageBearing": 0,
+  "plan": {
+    "halfU": 32.9,
+    "halfV": 20.5,
+    "radius": 5.5,
+    "rotationDeg": 2
+  },
+  "lobbyY": 12.9,
+  "roofY": 229,
+  "crownBaseY": 229.9,
+  "floors": 52,
+  "pavilion": {
+    "eaveY": 11.5,
+    "slope": 0.2,
+    "westX": -58.3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The lobby floor and the pavilion floor are y=0; the 7 Avenue plaza, the Plus 15 bridges and the below-grade levels are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height (247 m), storey count (56), plan size (66 x 41 m, corner radius 5.5 m) and orientation follow OSM and Wikipedia. The 4.16 m floor pitch, 1.5 m mullion rhythm, the 12.9 m two-storey lobby, the 18 m glass crown with its 2 m ribs, the roof plant and the pavilion roof pitch and height are estimated from photographs. The tower is modelled without the crown corner slits; lit offices are a deterministic pattern, not the real one.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/brookfield-place-calgary-near.glb",
+      "bytes": 586092,
+      "triangles": 14505,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.59979248046875,
+          0,
+          -25.58993148803711
+        ],
+        "max": [
+          34.252933502197266,
+          247,
+          47.80987548828125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/brookfield-place-calgary-far.glb",
+      "bytes": 129772,
+      "triangles": 3037,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.59979248046875,
+          0,
+          -25.58993148803711
+        ],
+        "max": [
+          34.252933502197266,
+          247,
+          47.80987548828125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/brookfield-place-calgary/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
