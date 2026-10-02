@@ -85,8 +85,11 @@ export function roofDeck(half = Tw - 0.4, rim = Yw - 0.1, centre = Yc - 0.6) {
 /** Plain extruded mass for the annex: ring with courtyard holes in the grid frame, from y = 0 to `height`. */
 export function annexMass() {
   const pt = ([u, v]) => new THREE.Vector2(u, -v); // shape plane (x, y) -> grid (u, v) with y = -v so that +extrude goes up after the rotation below
-  const shape = new THREE.Shape(ANNEX.ring.map(pt));
-  for (const h of ANNEX.holes) shape.holes.push(new THREE.Path(h.map(([u, v]) => pt([u, Math.max(v, ANNEX.ring[0][1] + 0.8)])))); // courtyards touch the mapped slab edge; keep a 0.8 m wall on that side
+  // ExtrudeGeometry only normalises hole winding when it reverses the outer ring, so give it a clockwise ring and counter-clockwise
+  // holes itself; otherwise the courtyard walls come out inside-out (back faces seen from the courtyards).
+  const winding = (pts, clockwise) => (THREE.ShapeUtils.isClockWise(pts) === clockwise ? pts : pts.slice().reverse());
+  const shape = new THREE.Shape(winding(ANNEX.ring.map(pt), true));
+  for (const h of ANNEX.holes) shape.holes.push(new THREE.Path(winding(h.map(([u, v]) => pt([u, Math.max(v, ANNEX.ring[0][1] + 0.8)])), false))); // courtyards touch the mapped slab edge; keep a 0.8 m wall on that side
   const g = new THREE.ExtrudeGeometry(shape, { depth: ANNEX.height, bevelEnabled: false });
   g.rotateX(-Math.PI / 2); // (x, y, z) -> (x, z, -y): extrusion goes up, shape y = -v becomes grid z = v
   return g;

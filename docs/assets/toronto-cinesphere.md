@@ -76,8 +76,12 @@ lights, drawn unshaded, warm in the night palette). Both palettes use the same k
   3.6 m connector of the same kind turns from that end straight to the cladding (its last ~5 m lies outside
   every mapped ring, on open water) and ends in a door frame; the walkway deck stays within 6.5 m of a mapped
   outline (tested). An earlier draft ran the spine 20 m past its mapped end; that was wrong.
-- Far LOD: same silhouette (5-frequency lattice, three glass bands per face, masts and stays,
-  fewer supports) without mullions, rods, rails, stairs or hub lights.
+- Far LOD: same silhouette (5-frequency lattice, glazed bays, masts and stays, fewer supports) without
+  mullions, rods, rails, stairs or hub lights. To meet the far budget (12,000 triangles / 500 KB; it was 16,661 /
+  871 KB) the lattice is drawn as flat outward-facing ribbons (2 triangles a strut, not a 3-sided tube's 6), each pod
+  face is one glazed run and two posts per ~20 m with the open bays closed, only the lowest and the roof plate are
+  drawn, mast and support pipes are open-ended, and walkways and ramps keep deck, canopy, glazing and top chords but
+  no truss diagonals, sill chords or lower chords.
 
 ## Approximations and known gaps
 
@@ -93,8 +97,8 @@ lights, drawn unshaded, warm in the night palette). Both palettes use the same k
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 46,533 | 8 | 2,591,988 |
-| Far | 16,661 | 7 | 999,668 |
+| Near | 46,533 | 8 | 2,262,000 |
+| Far | 8,553 | 7 | 480,112 |
 
 ## Verification evidence
 

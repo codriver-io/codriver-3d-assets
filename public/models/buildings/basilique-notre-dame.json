@@ -158,8 +158,8 @@
     },
     "far": {
       "url": "/models/buildings/basilique-notre-dame-far.glb",
-      "bytes": 962852,
-      "triangles": 14100,
+      "bytes": 125500,
+      "triangles": 2608,
       "drawCalls": 6,
       "bounds": {
         "min": [

@@ -29,6 +29,17 @@ export const PALETTES = {
     sign: '#ff5058', glow: '#7484bd', corten: '#583a2b',
   },
 };
+// Draw-call budget (docs/3d-toronto-scotiabank-arena.md): design names on the left, the exported material on the right.
+// Near keeps all twelve (12 draws). Far folds look-alikes: the dark plinth into the dark cladding, the grey window frames
+// into the grey louvres, the granite base into the grey roof tone and the thin patina band into the glazing's teal, which
+// leaves eight (the lit screen, the red sign and the sculpture stay their own materials).
+export const FOLD = {
+  near: {},
+  far: { plinth: 'cladding', frame: 'louvre', granite: 'roof', patina: 'glass' },
+};
+/** The exported material for a design name at a detail level. */
+export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
+
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Roof crown 31 m, limestone cornice 19 m and glazed front 19.5 m above that grade are estimates within the sourced 28 m clear height to the roof underside.',
   attribution: 'Original procedural mesh. Mapped footprints (c) OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',

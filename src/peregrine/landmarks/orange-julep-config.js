@@ -9,6 +9,6 @@ export const ORANGE_JULEP = {
 };
 
 export const ORANGE_JULEP_PALETTES = {
-  light: { orange: '#ed5718', seam: '#ce501c', stone: '#928879', trim: '#e7e4cf', glass: '#273a3e', sign: '#f4eccf', ink: '#b72c12', metal: '#434846' },
-  dark: { orange: '#b44d1a', seam: '#98431c', stone: '#615f58', trim: '#a9b7b9', glass: '#596c62', sign: '#ffedb5', ink: '#d95323', metal: '#37424a' },
+  light: { orange: '#e4451c', seam: '#c23f19', stone: '#928879', trim: '#e7e4cf', glass: '#273a3e', sign: '#f4eccf', ink: '#b72c12', metal: '#434846' },
+  dark: { orange: '#b0431a', seam: '#923a1a', stone: '#615f58', trim: '#a9b7b9', glass: '#596c62', sign: '#ffedb5', ink: '#d95323', metal: '#37424a' },
 };

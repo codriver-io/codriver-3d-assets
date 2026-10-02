@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 834,772 | 18,042 | 6 |
-| Far | 164,624 | 3,692 | 5 |
+| Near | 858,552 | 19,038 | 6 |
+| Far | 121,980 | 3,688 | 5 |
 
 ## Inspection and placement
 
@@ -50,3 +50,7 @@ Five regularly distributed shallow vaults independent of alignment nodes, full-w
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-concorde.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-concorde-roof-or-structure.png).
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). thin rail replaced by a continuous stone parapet with coping; far ramps follow the deck; the end flare is the shared 18 m S-curve ramp profile. Exported cost: near 19,038 triangles / 6 draws / 858,552 bytes; far 3,688 / 5 / 121,980.

@@ -9,8 +9,8 @@ export const PARIS_HISTORIC = [
     note:'Main cruciform mass and portico. Main body length 100 m, 22 columns (2 m diameter, 20 m tall), dome crown 82 m published by CMN; width, transept and roof tiers are estimates.'
   },
   {
-    id:'paris-hotel-de-ville',name:'Hôtel de Ville de Paris',...PARIS_BUILDING_FRAMES['paris-hotel-de-ville'], width:150,length:105,height:50,pad:85,
-    note:'50 m campanile published by Ville de Paris; perimeter and wings are approximate map/photo interpretation. Open central courtyard and western square stay empty.'
+    id:'paris-hotel-de-ville',name:'Hôtel de Ville de Paris',...PARIS_BUILDING_FRAMES['paris-hotel-de-ville'], width:150,length:105,height:51,pad:85,
+    note:'Ville de Paris publishes a 50 m campanile; the model\'s belfry finial reaches about 51 m. Perimeter and wings are approximate map/photo interpretation. Open central courtyard and western square stay empty.'
   },
   {
     id:'paris-conciergerie',name:'Conciergerie',...PARIS_BUILDING_FRAMES['paris-conciergerie'], width:170,length:38,height:50,pad:90,

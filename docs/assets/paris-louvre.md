@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 8,397,548 bytes · 155,885 triangles · 8 draws |
-| Far | 2,459,088 bytes · 44,059 triangles · 8 draws |
+| Near | 766,348 bytes · 17,252 triangles · 8 draws |
+| Far | 180,816 bytes · 3,602 triangles · 8 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-louvre&view=facade), [far, roof](/asset-preview.html?asset=paris-louvre&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-louvre). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -57,3 +57,7 @@ Rendering fixes: see the [window, niche and roof-support corrections](../paris-r
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). Cour Carrée re-sited to the OSM footprint (about 167 m square, court about 127 m square); windows are flat framed quads; Richelieu/Denon wings stay 25 m deep. Exported cost: near 17,252 triangles / 8 draws / 766,348 bytes; far 3,602 / 8 / 180,816.

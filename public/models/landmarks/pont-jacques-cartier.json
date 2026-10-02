@@ -146,15 +146,15 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-jacques-cartier-near.glb",
-      "bytes": 2773376,
-      "triangles": 48602,
+      "bytes": 2746908,
+      "triangles": 49416,
       "drawCalls": 34
     },
     "far": {
       "url": "/models/landmarks/pont-jacques-cartier-far.glb",
-      "bytes": 1215532,
-      "triangles": 25406,
-      "drawCalls": 6
+      "bytes": 724132,
+      "triangles": 13224,
+      "drawCalls": 5
     }
   },
   "license": "CC-BY-4.0",

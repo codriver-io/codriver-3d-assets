@@ -62,6 +62,9 @@ export function createChamplain({ detail = 'near', theme = 'light', unlit = fals
     g.translate((a.x + b.x) / 2, (a.y + b.y) / 2, (a.z + b.z) / 2);
     put(g, mat, chunk);
   };
+  // Nothing hangs more than 3 m below the local ground datum. Where the deck
+  // meets grade at the abutments the girders end there, inside the earth.
+  const FLOOR = -2.95;
   const strip = (mat, s0, s1, left, right, lift, thickness, chunk, step = 25) => {
     const positions = [], indices = [];
     const stride = thickness ? 4 : 2;
@@ -71,7 +74,7 @@ export function createChamplain({ detail = 'near', theme = 'light', unlit = fals
       const section = [[left, 0], [right, 0]];
       if (thickness) section.push([left, -thickness], [right, -thickness]);
       for (const [d, dh] of section) {
-        const p = bridgePoint(s, d, deckHeight(s) + lift + dh);
+        const p = bridgePoint(s, d, Math.max(FLOOR, deckHeight(s) + lift + dh));
         positions.push(p.x, p.y, p.z);
       }
       if (!i) continue;
@@ -181,7 +184,11 @@ export function createChamplain({ detail = 'near', theme = 'light', unlit = fals
   for (let ci = 0; ci < cuts.length - 1; ci++) {
     const a = cuts[ci], b = cuts[ci + 1];
     for (const [l, r] of [[-30, -10.5], [-5, 5], [10.5, 30]]) {
-      strip('concrete', a, b, l, r, -0.10, 1.1, ci, step);
+      // The slab top under the asphalt, path and barriers is hidden; sink it a
+      // further 15 cm (bottom stays at -1.2 m) so no layer grazes it at distance.
+      // The REM bed keeps its top: its rails sit on it.
+      const sunk = r - l > 10 ? 0.15 : 0;
+      strip('concrete', a, b, l, r, -0.10 - sunk, 1.1 - sunk, ci, step);
       if (detail !== 'far') for (const d of [l + 3, r - 3]) strip('steel', a, b, d - 1.5, d + 1.5, -1.2, 2.2, ci, step);
     }
     strip('asphalt', a, b, -25.5, -11.1, 0, 0, ci, step);

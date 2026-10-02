@@ -25,3 +25,7 @@ Source: [`src/peregrine/landmarks/oratoire-saint-joseph-geometry.js`](../../src/
 - [Oratory basilica dimensions and datums](https://saint-joseph.org/en/incontournable/the-basilica/)
 - [OSM basilica relation 6275154](https://www.openstreetmap.org/relation/6275154)
 - [OSM mapped dome](https://www.openstreetmap.org/way/132499529)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). portico has an entablature and an attic with the great arch under the front pediment; turret roofs are reddish-brown copper; aisle windows and buttresses sit on the walls. Exported cost: near 8,483 triangles / 7 draws / 414,308 bytes; far 4,191 / 7 / 225,252.

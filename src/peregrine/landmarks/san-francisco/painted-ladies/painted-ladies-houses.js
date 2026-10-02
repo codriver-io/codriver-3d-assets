@@ -46,8 +46,9 @@ function windowOn(k, face, u, y0, y1, w, lit, { hood = true, sill = true, acc = 
   if (!hood) T.py(y1 + e, xl - e, xr + e, 0, f);
   if (!sill) T.ny(y0 - e, xl - e, xr + e, 0, f);
   G.pz(xl, xr, y0, y1, pn);
-  if (w > 0.7) T.pz(u - 0.03, u + 0.03, y0, y1, pn + 0.012); // mullion
-  const yt = (y0 + y1) / 2 + h * 0.18; T.pz(xl, xr, yt - 0.025, yt + 0.025, pn + 0.02); // transom bar
+  // mullion and transom stand 5 cm proud of the pane (flush with the frame front, so no face shares the pane's plane), with their flanks
+  if (w > 0.7) { T.pz(u - 0.03, u + 0.03, y0, y1, f); T.px(u + 0.03, y0, y1, pn, f); T.nx(u - 0.03, y0, y1, pn, f); } // mullion
+  const yt = (y0 + y1) / 2 + h * 0.18; T.pz(xl, xr, yt - 0.025, yt + 0.025, f); T.py(yt + 0.025, xl, xr, pn, f); T.ny(yt - 0.025, xl, xr, pn, f); // transom bar
   if (sill) { A.pz(xl - 0.18, xr + 0.18, y0 - 0.2, y0 - 0.1, 0.24); A.py(y0 - 0.1, xl - 0.18, xr + 0.18, 0, 0.24); A.ny(y0 - 0.2, xl - 0.18, xr + 0.18, 0, 0.24); A.px(xr + 0.18, y0 - 0.2, y0 - 0.1, 0, 0.24); A.nx(xl - 0.18, y0 - 0.2, y0 - 0.1, 0, 0.24); }
   if (hood) { A.pz(xl - 0.17, xr + 0.17, y1 + 0.1, y1 + 0.23, 0.2); A.py(y1 + 0.23, xl - 0.17, xr + 0.17, 0, 0.2); A.ny(y1 + 0.1, xl - 0.17, xr + 0.17, 0, 0.2); A.px(xr + 0.17, y1 + 0.1, y1 + 0.23, 0, 0.2); A.nx(xl - 0.17, y1 + 0.1, y1 + 0.23, 0, 0.2); }
   k.putFace('trim', T.geometry(), face); k.putFace(pane, G.geometry(), face);
@@ -148,7 +149,7 @@ export function gabledHouse(b, matrix, house, detail, remap) {
     // garage under the bay
     const gx0 = bx0 + 0.45, gx1 = gx0 + 2.4;
     k.box('trim', gx0, gx1, yb + 0.02, yb + 2.25, 0, 0.07);
-    if (near) k.box('glass', gx0 + 0.25, gx1 - 0.25, yb + 1.6, yb + 1.95, 0.07, 0.1);
+    if (near) k.box('glass', gx0 + 0.25, gx1 - 0.25, yb + 1.6, yb + 1.95, 0.07, 0.12, 'b');
     // entry porch on the other side
     const px0 = bx1 + 0.2, px1 = hw - 0.05, pc = (px0 + px1) / 2;
     k.box('base', px0, px1, 0, F1, 0, FRONT);
@@ -156,7 +157,7 @@ export function gabledHouse(b, matrix, house, detail, remap) {
     k.box(A, px0 - 0.1, px1 + 0.1, F2 - 0.4, F2 - 0.18, 0, FRONT + 0.1); // canopy over the entry
     for (const x of [px0 + 0.1, px1 - 0.1]) k.column('trim', x, FRONT - 0.12, F1 + 0.1, F2 - 0.4, 0.09);
     k.box('trim', pc - 0.62, pc + 0.62, F1 + 0.1, F1 + 2.65, 0, 0.05); // door surround
-    k.box('glass', pc - 0.42, pc + 0.42, F1 + 0.1, F1 + 2.4, 0.05, 0.09, 'b'); // door
+    k.box('glass', pc - 0.42, pc + 0.42, F1 + 0.1, F1 + 2.4, 0.05, 0.1, 'b'); // door
     win(face0, pc, F2 + 0.7, F2 + 2.3, 0.9); // window above the porch
     stairs(k, pc, 1.1, FRONT, 2.6, yb, L.f1, near ? 13 : 1);
   } else {
@@ -169,14 +170,14 @@ export function gabledHouse(b, matrix, house, detail, remap) {
     balusters(k, px0 - 0.05, px1 + 0.05, FRONT + 0.05, F2, 0.9);
     for (const x of [px0 - 0.05, px1 + 0.05]) railZ(k, x, 0, FRONT + 0.05, F2, 0.9);
     k.box('trim', px0 + 0.35, px0 + 1.55, F1 + 0.1, F1 + 2.65, 0, 0.05); // door surround
-    k.box('glass', px0 + 0.5, px0 + 1.4, F1 + 0.1, F1 + 2.4, 0.05, 0.09, 'b');
+    k.box('glass', px0 + 0.5, px0 + 1.4, F1 + 0.1, F1 + 2.4, 0.05, 0.1, 'b');
     win(face0, px0 + 2.35, F1 + 0.8, F1 + 2.35, 0.8);
     // floor 2: three windows across the wall; floor 1 above the garage: two
     const cs = [-hw + 1.05, 0, hw - 1.05];
     cs.forEach((c, i) => win(face0, c, F2 + 0.65, F2 + 2.3, i === 1 ? 1.45 : 0.9));
     const gx0 = px1 + 0.45, gx1 = Math.min(gx0 + 2.4, hw - 0.1);
     k.box('trim', gx0, gx1, yb + 0.02, yb + 2.25, 0, 0.07);
-    if (near) k.box('glass', gx0 + 0.25, gx1 - 0.25, yb + 1.6, yb + 1.95, 0.07, 0.1);
+    if (near) k.box('glass', gx0 + 0.25, gx1 - 0.25, yb + 1.6, yb + 1.95, 0.07, 0.12, 'b');
     k.box(A, -hw, hw, E - L.frieze, E, 0, 0.26);
     stairs(k, px0 + 0.95, 1.1, FRONT, 2.6, yb, L.f1, near ? 13 : 1);
     // the stairs of the garage side: none, the garage opens on the street level
@@ -203,7 +204,7 @@ export function gabledHouse(b, matrix, house, detail, remap) {
     for (const c of [-hw + 1.2, 0, hw - 1.2]) { win(back, c, F1 + 0.6, F1 + 2.2, 0.9, { hood: false }); win(back, c, F2 + 0.6, F2 + 2.2, 0.9, { hood: false }); }
     win(back, 0, E + 0.85, E + 1.9, 0.8, { hood: false });
     // the rear door and two small windows of the garden level
-    k.box('trim', -0.5, 0.5, yb + 0.02, yb + 2.2, zB - 0.06, zB, 'f'); k.box('glass', -0.38, 0.38, yb + 0.1, yb + 2.1, zB - 0.09, zB - 0.06, 'f');
+    k.box('trim', -0.5, 0.5, yb + 0.02, yb + 2.2, zB - 0.06, zB, 'f'); k.box('glass', -0.38, 0.38, yb + 0.1, yb + 2.1, zB - 0.11, zB - 0.06, 'f');
     for (const c of [-hw + 1.2, hw - 1.2]) win(back, c, yb + 0.9, yb + 1.9, 0.7, { hood: false });
     // 710 ends the row: its south wall is exposed
     if (house.number === 710) for (const z of [-3.5, -7.5, -11.5]) for (const [y0, y1] of [[F1 + 0.6, F1 + 2.2], [F2 + 0.6, F2 + 2.2]]) win({ o: [hw, 0], a: Math.PI / 2 }, -z, y0, y1, 0.85, { hood: false });
@@ -269,7 +270,7 @@ export function hippedHouse(b, matrix, house, detail, remap) {
   k.box('base', dc - 0.65, dc + 0.65, 0, F1, 0, 1.2);
   k.box('trim', dc - 0.55, dc + 0.55, F1, F1 + 0.1, 0, 1.24, 'bd');
   k.box('trim', dc - 0.5, dc + 0.5, F1 + 0.1, F1 + 2.5, 0, 0.05);
-  k.box('glass', dc - 0.38, dc + 0.38, F1 + 0.1, F1 + 2.3, 0.05, 0.09, 'b');
+  k.box('glass', dc - 0.38, dc + 0.38, F1 + 0.1, F1 + 2.3, 0.05, 0.1, 'b');
   stairs(k, dc, 1.0, 1.2, near ? 1.6 : 1.6, yb, H.f1, near ? 8 : 1);
   // north flank (visible from Hayes Street): three windows a floor
   if (near) for (const z of [-3, -7, -11]) for (const [y0, y1] of [[F1 + 0.5, F1 + 2.3], [F2 + 0.6, F2 + 2.4]]) win({ o: [-hw, 0], a: -Math.PI / 2 }, z, y0, y1, 0.8, { hood: false });

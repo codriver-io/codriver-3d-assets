@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 4,339,040 | 76,784 | 7 |
-| Far | 1,472,104 | 27,204 | 6 |
+| Near | 4,405,024 | 78,908 | 7 |
+| Far | 499,560 | 12,600 | 6 |
 
 ## Inspection and placement
 
@@ -50,3 +50,7 @@ Three unequal spans per arm, open steel arches, full-width river piers, repeated
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-bir-hakeim.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-bir-hakeim-roof-or-structure.png).
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). island piers are stepped masonry masses with a standing figure on top; far LOD cut to 12.6 k triangles with open 4-sided tubes and no railing bars. Exported cost: near 78,908 triangles / 7 draws / 4,405,024 bytes; far 12,600 / 6 / 499,560.

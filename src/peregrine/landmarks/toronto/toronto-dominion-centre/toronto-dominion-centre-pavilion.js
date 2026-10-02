@@ -16,7 +16,7 @@ import { tdLetters } from './toronto-dominion-centre-tower.js';
 const GLAZING_SETBACK = 0.9;
 
 export function buildPavilion(k, P, near) {
-  const { panel, faceBox, rectBox } = k;
+  const { panel, faceBox, slab, rectBox } = k;
   const p = SPEC.plinth, faces = rectFaces(P), { soffit, top } = P;
 
   // Perimeter columns on the 3.048 m pitch (16 a side, corners shared): I-sections in near.
@@ -25,15 +25,15 @@ export function buildPavilion(k, P, near) {
     for (let i = 0; i <= bays; i += (i + stride > bays && i < bays ? 1 : stride)) {
       if (fi >= 2 && (i === 0 || i === bays)) continue; // the long faces own the corners
       const corner = i === 0 || i === bays, s = Math.min(face.len - 0.28, Math.max(0.28, i * pitch));
-      if (corner) { faceBox('steel', face, s - 0.28, s + 0.28, p, top, -0.56, 0); continue; }
+      if (corner) { slab('steel', face, s - 0.28, s + 0.28, p, top, -0.56, 0, 'flr'); continue; }
       if (near) {
-        faceBox('steel', face, s - 0.07, s + 0.07, p, top, -0.5, 0); // web
-        faceBox('steel', face, s - 0.18, s + 0.18, p, top, -0.05, 0); // outer flange
-        faceBox('steel', face, s - 0.18, s + 0.18, p, top, -0.5, -0.45); // inner flange
-      } else faceBox('steel', face, s - 0.22, s + 0.22, p, top, -0.6, 0);
+        slab('steel', face, s - 0.07, s + 0.07, p, top, -0.5, 0, 'lr'); // web (its faces are between the flanges)
+        slab('steel', face, s - 0.18, s + 0.18, p, top, -0.05, 0, 'flr'); // outer flange
+        slab('steel', face, s - 0.18, s + 0.18, p, top, -0.5, -0.45, 'flr'); // inner flange
+      } else slab('steel', face, s - 0.22, s + 0.22, p, top, -0.6, 0, 'flr');
     }
     // Fascia: the roof's deep perimeter I-beam, flush with the column faces.
-    faceBox('steel', face, 0, face.len, soffit, top, -0.45, 0);
+    slab('steel', face, 0, face.len, soffit, top, -0.45, 0, 'fd'); // the deep fascia: its face and underside
   });
 
   // Roof: living roof inside a black parapet; the waffle ceiling below it is luminous.
@@ -56,9 +56,9 @@ export function buildPavilion(k, P, near) {
   if (near) {
     faces.forEach((face) => {
       const q = -GLAZING_SETBACK, bays = Math.round(face.len / P.bay) * 2, pitch = face.len / bays;
-      for (let i = 1; i < bays; i++) faceBox('steel', face, i * pitch - 0.035, i * pitch + 0.035, p, soffit, q - 0.06, q + 0.06);
-      for (const y of [p + 0.12, p + 2.4]) faceBox('steel', face, 0, face.len, y - 0.05, y + 0.05, q - 0.06, q + 0.06);
-      faceBox('steel', face, 0, face.len, soffit - 0.12, soffit, q - 0.08, q + 0.08);
+      for (let i = 1; i < bays; i++) slab('steel', face, i * pitch - 0.035, i * pitch + 0.035, p, soffit, q - 0.06, q + 0.06, 'f');
+      for (const y of [p + 0.12, p + 2.4]) slab('steel', face, 0, face.len, y - 0.05, y + 0.05, q - 0.06, q + 0.06, 'fu');
+      slab('steel', face, 0, face.len, soffit - 0.12, soffit, q - 0.08, q + 0.08, 'fd');
     });
   }
 

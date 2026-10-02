@@ -62,8 +62,8 @@ What a driver reads: at 100 m the flat-topped towers with open belfries, crenell
 
 | LOD | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 12,185 | 8 | 754,092 |
-| Far | 2,479 | 7 | 161,224 |
+| Near | 12,185 | 8 | 754,616 |
+| Far | 2,479 | 7 | 161,748 |
 
 Budgets 60,000 / 14 / 2.5 MB and 12,000 / 8 / 500 KB. Desktop numbers, not in-car measurements.
 

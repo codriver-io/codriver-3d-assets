@@ -55,7 +55,7 @@ Twelve named materials, the same keys in `PALETTES.light` and `.dark`: `limeston
 - **Retained facade.** A solid limestone podium along the mapped outer line with rounded corners; black base course, pink-grey pilasters at an 8 m pitch, tall windows with mullion and transom grids, ribbon-window end blocks that wrap the Lake Shore corner, a verdigris frieze line, a cornice, and "Scotiabank Arena" in the frieze (near LOD).
 - **Plaza front.** Glass prisms from the mapped west outline (front, south return, north wing) with a mullion grid, the thick canopy fascia, the 5.6 m entrance canopy, the 9.1 x 15.2 m screen, the red sign, two flagpoles.
 - **Near vs far.** Near (14,173 triangles) carries mullions, transoms, sign letters, fins, roof plant and flagpoles. Far (5,830 triangles, 41 percent) keeps the roof arch (attic tops sampled every 6 m, four roof rings), the attic bay fins (12 m), pilasters and windows as recessed boxes, the ribbon windows, the north dock doors, roof seams, the screen and a solid sign bar, so the arch, the black band over the pale colonnade and the glazed front still read at 800 m.
-- Materials are merged per name (12 draws in both LODs; budget 48 / 14).
+- Materials are merged per name: 12 draws near, 8 far. Far folds look-alikes through `FOLD` in `config.js`: `plinth` into `cladding`, `frame` into `louvre`, `granite` into `roof` (the pilasters keep their geometry and their count), and the thin `patina` band into `glass`; the lit screen, the red sign and the sculpture stay their own materials. Building budgets: near 60,000 / 14 / 2.5 MB, far 12,000 / 8 / 500 KB. Sills, heads, mullions and the plinth were re-dimensioned so none shares a plane with the glazing (coplanar overlap 73 m2 to 6 m2 over 18 faces).
 
 ## Approximations
 
@@ -65,8 +65,8 @@ Heights are photo and structure-based estimates, not a survey. The roof arch is 
 
 | LOD | Triangles | Mesh draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 14,173 | 12 | 740,420 |
-| Far | 5,830 | 12 | 314,528 |
+| Near | 14,173 | 12 | 740,944 |
+| Far | 5,830 | 8 | 311,160 |
 
 ## Verification evidence
 

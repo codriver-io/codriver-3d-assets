@@ -91,8 +91,8 @@ mapped bearings, footprint containment and the GLB round trip. `toronto.test.js`
 
 | LOD | Triangles | Mesh draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 14,878 | 8 | 505,740 |
-| Far | 4,338 | 8 | 121,528 |
+| Near | 14,878 | 8 | 506,252 |
+| Far | 4,338 | 8 | 122,040 |
 
 Photograph credits used for comparison only (not redistributed): Taxiarchos228 (Free Art Licence), Wladyslaw Sojka (CC BY 3.0 /
 CC BY-SA 3.0), Chris Woodrich (CC BY-SA 4.0), Niabot (CC BY-SA 3.0), Diego Delso (CC BY-SA 3.0), G. Edward Johnson (CC BY 4.0), Dillan Payne

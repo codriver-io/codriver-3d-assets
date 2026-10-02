@@ -46,6 +46,17 @@ export const TURRETS = [
   [6.3, 20.4, 1.15, 15.6, 20.4], [-29.5, 21.1, 1.0, 14.0, 18.2], [4.7, -9.6, 1.5, 16.2, 22.0], [-29.7, -18.3, 1.2, 15.4, 20.0], [20.8, -24.2, 1.3, 15.6, 20.6],
 ];
 
+/** Plan ring moved `d` metres inward (mitred at the corners); the ring may run either way round. */
+function insetRing(ring, d) {
+  let area = 0; for (let i = 0; i < ring.length; i++) { const p = ring[i], q = ring[(i + 1) % ring.length]; area += p[0] * q[1] - q[0] * p[1]; }
+  const sg = Math.sign(area) || 1, n = ring.length;
+  const edge = (a, b) => { const du = b[0] - a[0], dv = b[1] - a[1], L = Math.hypot(du, dv) || 1; return [-sg * dv / L, sg * du / L]; }; // inward normal
+  return ring.map((p, i) => {
+    const n1 = edge(ring[(i + n - 1) % n], p), n2 = edge(p, ring[(i + 1) % n]), k = d / (1 + n1[0] * n2[0] + n1[1] * n2[1]);
+    return [p[0] + (n1[0] + n2[0]) * k, p[1] + (n1[1] + n2[1]) * k];
+  });
+}
+
 const inRect = (r, u, v) => u >= r.u[0] && u <= r.u[1] && v >= r.v[0] && v <= r.v[1];
 const tone = (near, a, b) => (near ? a : b);
 
@@ -60,23 +71,23 @@ export function buildCastle(k) {
   const buriedM = (u, v, y) => buried(u, v, y) || gableRects.some((b) => inRect(b, u, v));
 
   // -- 1. The mapped outline, extruded: this is the exact footprint, so no provider extrusion peeks out.
-  k.poly('rubble', CASTLE_RING, -1.6, 1.4);
+  k.poly('rubble', CASTLE_RING, -1.6, 1.4, { top: false }); // the stone course stands on it with the same ring
   k.poly('stone', CASTLE_RING, 1.4, H.base);
-  k.poly('lead', CASTLE_RING, H.base, H.base + 0.12);
+  k.poly('lead', insetRing(CASTLE_RING, 0.15), H.base, H.base + 0.12); // inset: its edge shares no plane with the stone below
 
   // -- 2. Upper storeys, cornices, merlons, roofs.
   for (const b of BLOCKS) {
     const [u0, u1] = b.u, [v0, v1] = b.v, w = u1 - u0, d = v1 - v0, cu = (u0 + u1) / 2, cv = (v0 + v1) / 2;
-    k.box('stone', cu, H.base, cv, w, b.top - H.base, d);
+    k.box('stone', cu, H.base - 0.1, cv, w, b.top - H.base + 0.1, d); // sunk 10 cm into the base: its underside shares no plane with the base roof
     k.box('trim', cu, b.top - 0.9, cv, w + 0.5, 0.42, d + 0.5); // cornice / corbel table
     k.box('trim', cu, H.base - 0.15, cv, w + 0.36, 0.36, d + 0.36); // string course on the base slab
     if (near) parapet(k, b, buriedM);
-    if (!b.roof) { k.box('lead', cu, b.top, cv, w - 0.3, 0.14, d - 0.3); continue; }
+    if (!b.roof) { k.box('lead', cu, b.top - 0.1, cv, w - 0.3, 0.24, d - 0.3); continue; } // lead plates sit 10 cm into the block top
     const r = b.roof, i = r.inset;
     if (r.kind === 'hip') k.hip('roof', u0 + i, u1 - i, v0 + i, v1 - i, b.top, r.rise);
     else {
       k.ridge('roof', u0 + i, u1 - i, v0 + i, v1 - i, b.top, r.rise, r.axis);
-      k.box('lead', cu, b.top, cv, w - 0.3, 0.14, d - 0.3);
+      k.box('lead', cu, b.top - 0.1, cv, w - 0.3, 0.24, d - 0.3);
     }
   }
 
@@ -109,7 +120,7 @@ function parapet(k, b, buried) {
 
 function gatehouse(k) {
   const { near } = k, [u0, u1] = GATEHOUSE.u, [v0, v1] = GATEHOUSE.v, w = u1 - u0, d = v1 - v0, cu = (u0 + u1) / 2, cv = (v0 + v1) / 2;
-  k.box('stone', cu, H.base, cv, w, H.gatehouse - H.base, d);
+  k.box('stone', cu, H.base - 0.1, cv, w, H.gatehouse - H.base + 0.1, d);
   // corbelled crown: stepped machicolation table, parapet, battlement, corner pinnacles
   k.box('trim', cu, H.gatehouse - 1.5, cv, w + 0.7, 0.5, d + 0.7);
   k.box('trim', cu, H.gatehouse - 1.0, cv, w + 1.1, 0.5, d + 1.1);
@@ -173,7 +184,6 @@ function scottishTower(k) {
     k.merlons('trim', u + edge, v - edge, u + edge, v + edge, yp + 3.5, { mw: 1.3, gap: 0.9, h: 1.0, thick: 0.7 });
   } else k.box('trim', u, yp + 3.5, v, 2 * half + 0.6, 0.9, 2 * half + 0.6);
   for (const [du, dv] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) k.pinnacle('trim', u + du * (half + 0.3), v + dv * (half + 0.3), yp + 3.5, near ? 2.2 : 1.9, 0.4);
-  k.cyl('lead', u, v, yp + 3.2, yp + 3.32, half, half, 8); // (hidden floor under the skirt)
   k.cyl('roof', u, v, yp + 3.3, yp + 5.4, half - 0.6, 4.05, tone(near, 32, 12), true); // tile skirt round the upper drum
   // upper stage: slimmer drum, its own corbelled crown and the tall tile cone
   const r2 = 3.9, y2 = H.scottishShaft + 3.25, yc = y2 + 3.95; // yc: where the upper drum's corbel starts
@@ -260,7 +270,7 @@ function chimneys(k) {
     const y0 = Math.max(H.base, top - 7.0), sh = 1.15; // slim cream stacks with a corbelled cap
     k.box('trim', u, y0, v, sh, top - y0 - 0.55, sh);
     k.box('trim', u, top - 0.65, v, sh + 0.4, 0.4, sh + 0.4);
-    if (near) { k.box('stone', u, top - 0.3, v, sh + 0.05, 0.4, sh + 0.05); k.box('lead', u, top + 0.02, v, sh + 0.5, 0.12, sh + 0.5); }
+    if (near) { k.box('stone', u, top - 0.3, v, sh + 0.05, 0.4, sh + 0.05); k.box('lead', u, top + 0.05, v, sh + 0.5, 0.12, sh + 0.5); }
     else k.box('trim', u, top - 0.3, v, sh + 0.35, 0.4, sh + 0.35);
   }
 }
@@ -345,8 +355,8 @@ function crossGables(k) {
     const face = g.dir < 0 ? Math.PI : 0;
     if (k.near) {
       k.stepGable('trim', g.v + g.dir * 0.35, g.u, top + 0.02, g.w + 0.7, rise + 0.9, 5, 'u', 0.38);
-      k.arch('glass', g.u, g.v + g.dir * 0.32, top + 0.7, 1.0, 1.5, face, 0.1);
-      k.archFrame('trim', g.u, g.v + g.dir * 0.34, top + 0.7, 1.0, 1.5, 0.28, face, 0.2);
+      k.arch('glass', g.u, g.v + g.dir * 0.36, top + 0.7, 1.0, 1.5, face, 0.1); // 6 cm proud of the gable wall (0.3 half-thickness)
+      k.archFrame('trim', g.u, g.v + g.dir * 0.42, top + 0.7, 1.0, 1.5, 0.28, face, 0.2);
     }
     k.pinnacle('trim', g.u, g.v + g.dir * 0.3, top + rise + 0.5, k.near ? 1.8 : 1.5, 0.3);
     k.box('trim', g.u, top - 0.9, g.v + g.dir * 0.05, g.w + 0.5, 0.42, 0.9);
@@ -365,7 +375,7 @@ function ringDressing(k) {
   };
   for (let i = 0; i < n; i++) {
     const a = ring[i], b = ring[(i + 1) % n], e = norm(a, b);
-    if (e.L < 1.9) continue;
+    if (e.L < (k.near ? 1.9 : 4.5)) continue; // far skips the short facets that only approximate the curved bays: sub-pixel courses
     for (const y of [4.6, 8.55]) k.box('trim', e.mu + e.nu * 0.08, y, e.mv + e.nv * 0.08, e.L + 0.06, 0.32, 0.36, e.rot);
   }
   if (!k.near) return;

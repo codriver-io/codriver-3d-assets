@@ -29,12 +29,15 @@
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
   "geographicDataLicense": "ODbL-1.0",
   "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-palais-garnier-near.glb",
-      "bytes": 1713476,
-      "triangles": 33580,
-      "drawCalls": 7,
+      "bytes": 576224,
+      "triangles": 16058,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -68.44589889217573,
@@ -43,16 +46,16 @@
         ],
         "max": [
           68.44589889217573,
-          73.05473327636719,
+          80.10946655273438,
           85.26010728455579
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-palais-garnier-far.glb",
-      "bytes": 609560,
-      "triangles": 11800,
-      "drawCalls": 7,
+      "bytes": 138524,
+      "triangles": 4512,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -67.8809626654521,
@@ -60,14 +63,11 @@
           -85.09950072308692
         ],
         "max": [
-          68.42252739552495,
-          73.05473327636719,
+          67.8809626654521,
+          80.10946655273438,
           85.09950072308692
         ]
       }
     }
-  },
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+  }
 }

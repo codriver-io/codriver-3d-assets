@@ -35,8 +35,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-tour-eiffel-near.glb",
-      "bytes": 2232352,
-      "triangles": 55248,
+      "bytes": 2192032,
+      "triangles": 54128,
       "drawCalls": 5,
       "bounds": {
         "min": [
@@ -53,8 +53,8 @@
     },
     "far": {
       "url": "/models/buildings/paris-tour-eiffel-far.glb",
-      "bytes": 511416,
-      "triangles": 13584,
+      "bytes": 297820,
+      "triangles": 7608,
       "drawCalls": 5,
       "bounds": {
         "min": [

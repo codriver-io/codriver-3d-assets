@@ -50,6 +50,16 @@ export function create({ detail = 'near' } = {}) {
     return [[a, hi], [a, lo], [c, lo], [c, hi]];
   }, { closed: true, flat: true, ...opts });
 
+  /**
+   * A deck body under a road surface (`il`..`ir` laterally): the box of wall()/slab() without the top face
+   * between the road's edges. That face is hidden under the asphalt and lay 10 cm from it, which z-fights at
+   * distance. Only the margins beside the road keep their top (the rails and barriers stand on them).
+   * `open` false keeps the full closed box (the lower deck has no asphalt in the far LOD).
+   */
+  const body = (open, mat, st, dl, dr, y0, y1, il, ir, opts) => (open
+    ? sweep(mat, st, (s) => { const a = dl(s), c = dr(s), lo = y0(s), hi = y1(s); return [[il(s), hi], [a, hi], [a, lo], [c, lo], [c, hi], [ir(s), hi]]; }, { closed: false, flat: true, ...opts })
+    : wall(mat, st, dl, dr, y0, y1, opts));
+
   // ---- 1. The upper (westbound) deck ------------------------------------------------------------------
   const SLAB_W = TH - 0.6;                                   // slab edge, clear of the chords' inner faces
   // Over the stacked stretch the upper road, its paint and its slab are their own materials: the layer
@@ -74,9 +84,9 @@ export function create({ detail = 'near' } = {}) {
   const girderBottom = (s) => (h(s) < FILL_TOP ? 0 : Math.max(0, h(s) - 2.3));
   const fillLift = (y) => clamp01(y / FILL_TOP);
   const deckMat = (a0, a1, c) => (upper('concrete', (a0 + a1) / 2) === 'concrete' ? ['concrete', c] : [UPPER_MAT.concrete, 0]);
-  for (const [a0, a1] of [[0, UP0], [UP0, T_START]]) along(a0, a1, (st, c) => wall(...deckMat(a0, a1, c).slice(0, 1), st, () => -KERB - 0.9, () => KERB + 0.9, girderBottom, (s) => h(s) - 0.1, { chunk: deckMat(a0, a1, c)[1], lift: fillLift }));
-  along(T_START, T_END, (st) => slab(UPPER_MAT.concrete, st, () => -SLAB_W, () => SLAB_W, (s) => h(s) - 0.1, 0.45));
-  for (const [a0, a1] of [[T_END, UP1], [UP1, L]]) along(a0, a1, (st, c) => wall(...deckMat(a0, a1, c).slice(0, 1), st, () => -KERB - 0.9, () => KERB + 0.9, (s) => (h(s) < FILL_TOP ? 0 : h(s) - 1.9), (s) => h(s) - 0.1, { chunk: deckMat(a0, a1, c)[1], lift: fillLift }));
+  for (const [a0, a1] of [[0, UP0], [UP0, T_START]]) along(a0, a1, (st, c) => body(true, ...deckMat(a0, a1, c).slice(0, 1), st, () => -KERB - 0.9, () => KERB + 0.9, girderBottom, (s) => h(s) - 0.1, () => -KERB, () => KERB, { chunk: deckMat(a0, a1, c)[1], lift: fillLift }));
+  along(T_START, T_END, (st) => body(true, UPPER_MAT.concrete, st, () => -SLAB_W, () => SLAB_W, (s) => h(s) - 0.55, (s) => h(s) - 0.1, () => -KERB, () => KERB, {}));
+  for (const [a0, a1] of [[T_END, UP1], [UP1, L]]) along(a0, a1, (st, c) => body(true, ...deckMat(a0, a1, c).slice(0, 1), st, () => -KERB - 0.9, () => KERB + 0.9, (s) => (h(s) < FILL_TOP ? 0 : h(s) - 1.9), (s) => h(s) - 0.1, () => -KERB, () => KERB, { chunk: deckMat(a0, a1, c)[1], lift: fillLift }));
 
   // ---- 2. The lower (eastbound) deck --------------------------------------------------------------------
   // From San Francisco it climbs beside, then under, the westbound viaduct; inside the truss it runs
@@ -89,12 +99,12 @@ export function create({ detail = 'near' } = {}) {
     if (near) for (const e of [ebL, ebR]) surface('paint', st, (s) => e(s) + (e === ebL ? 0.27 : -0.43), (s) => e(s) + (e === ebL ? 0.43 : -0.27), (s) => lowY(s) + 0.02, { chunk: c });
   });
   let sEbHigh = S_EB_IN; while (lower(sEbHigh) < 3 && sEbHigh < S.SFA) sEbHigh += 1;
-  along(S_EB_IN, sEbHigh, (st, c) => wall('concrete', st, (s) => ebL(s) - 0.6, (s) => ebR(s) + 0.6, () => 0, (s) => lowY(s) - 0.1, { chunk: c, lift: fillLift }));
+  along(S_EB_IN, sEbHigh, (st, c) => body(near, 'concrete', st, (s) => ebL(s) - 0.6, (s) => ebR(s) + 0.6, () => 0, (s) => lowY(s) - 0.1, ebL, ebR, { chunk: c, lift: fillLift }));
   along(sEbHigh, T_START, (st, c) => {
-    slab('concrete', st, (s) => ebL(s) - 0.6, (s) => ebR(s) + 0.6, (s) => lowY(s) - 0.1, 1.2, { chunk: c });
+    body(near, 'concrete', st, (s) => ebL(s) - 0.6, (s) => ebR(s) + 0.6, (s) => lowY(s) - 1.3, (s) => lowY(s) - 0.1, ebL, ebR, { chunk: c });
     for (const o of [-1, 1]) wall('concrete', st, (s) => (o < 0 ? ebL(s) - 0.55 : ebR(s) + 0.15), (s) => (o < 0 ? ebL(s) - 0.15 : ebR(s) + 0.55), (s) => lowY(s) - 0.1, (s) => lowY(s) + 0.9, { chunk: c });
   });
-  if (near) along(T_START, LOW_END, (st, c) => slab('concrete', st, () => -SLAB_W, () => SLAB_W, (s) => lowY(s) - 0.1, 0.45, { chunk: c }));
+  if (near) along(T_START, LOW_END, (st, c) => body(true, 'concrete', st, () => -SLAB_W, () => SLAB_W, (s) => lowY(s) - 0.55, (s) => lowY(s) - 0.1, ebL, ebR, { chunk: c }));
 
   // ---- 3. The double-deck stiffening truss (San Francisco anchorage to W7) -------------------------------
   along(T_START, T_END, (st, c) => {

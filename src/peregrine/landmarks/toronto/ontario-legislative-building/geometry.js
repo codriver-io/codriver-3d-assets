@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
-import { kit } from './ontario-legislative-building-kit.js';
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
+import { kit, dropGroundFaces } from './ontario-legislative-building-kit.js';
 import { PLAN } from './ontario-legislative-building-site.js';
 
 // Ontario Legislative Building, "the Pink Palace" (Richardsonian Romanesque, 1893).
@@ -59,9 +60,9 @@ export function create({ detail = 'near' } = {}) {
   };
   // Flat roof with a parapet ring and a dark membrane inside it.
   function flatRoof(u0, u1, v0, v1, h, t = 0.6, ph = 0.7) {
-    box('roof', u0, u1, h - 0.05, h + 0.06, v0, v1);
-    box('trim', u0 - 0.3, u1 + 0.3, h - 0.05, h + ph, v0 - 0.3, v0 + t); box('trim', u0 - 0.3, u1 + 0.3, h - 0.05, h + ph, v1 - t, v1 + 0.3);
-    box('trim', u0 - 0.3, u0 + t, h - 0.05, h + ph, v0 + t, v1 - t); box('trim', u1 - t, u1 + 0.3, h - 0.05, h + ph, v0 + t, v1 - t);
+    box('roof', u0, u1, h + 0.1, h + 0.1, v0, v1, 'dsewn');     // the membrane: one quad, 7 cm above the cornice courses below
+    box('trim', u0 - 0.3, u1 + 0.3, h, h + ph, v0 - 0.3, v0 + t, 'd'); box('trim', u0 - 0.3, u1 + 0.3, h, h + ph, v1 - t, v1 + 0.3, 'd');
+    box('trim', u0 - 0.3, u0 + t, h, h + ph, v0 + t, v1 - t, 'd'); box('trim', u1 - t, u1 + 0.3, h, h + ph, v0 + t, v1 - t, 'd');
   }
   const ring = (rect, out) => [[rect.u0 - out, rect.v0 - out], [rect.u1 + out, rect.v0 - out], [rect.u1 + out, rect.v1 + out], [rect.u0 - out, rect.v1 + out]];
 
@@ -74,7 +75,7 @@ export function create({ detail = 'near' } = {}) {
     const [ax, az] = P.apex, k1 = 1.06;
     polyPyramid('roof', P.octagon.map(([u, v]) => [ax + (u - ax) * k1, az + (v - az) * k1]), C.eave, [ax, C.peak, az]);
     if (near) for (const [u, v] of P.octagon) b.bar('trim', [ax, C.peak - 0.2, az], [ax + (u - ax) * k1, C.eave + 0.2, az + (v - az) * k1], 0.34, 0.34);
-    cyl('trim', ax, C.peak, C.peak + 1.1, az, 0.55, 0.6, 8); cone('trim', ax, C.peak + 1.1, C.peak + 3.0, az, 0.42, 8);
+    cyl('trim', ax, C.peak, C.peak + 1.1, az, 0.55, 0.6, 8, 't'); cone('trim', ax, C.peak + 1.1, C.peak + 3.0, az, 0.42, 8);
     // south front between the towers
     const zf = C.v1;
     course('trim', AX - 10, AX + 10, zf - 0.2, zf, 11.0, 0.7, 0.55);                       // over the balcony
@@ -84,7 +85,7 @@ export function create({ detail = 'near' } = {}) {
       win(AX + x, 11.7, zf, 5.0, 10.6, S, { arch: true, rise: 2.5, mat: 'glow', frame: false });
       if (near) { for (const y of [5.4, 9.8]) k.box('trim', AX + x - 2.5, AX + x + 2.5, 11.7 + y - 0.5, 11.7 + y - 0.25, zf, zf + 0.12); }
     }
-    for (const x of [-2.95, 2.95, -8.85, 8.85]) if (near) cyl('trim', AX + x, 11.4, 20.2, zf + 0.2, 0.42, 0.42, 10);
+    for (const x of [-2.95, 2.95, -8.85, 8.85]) if (near) cyl('trim', AX + x, 11.4, 20.2, zf + 0.2, 0.42, 0.42, 10, 't');
     for (const x of [-8.8, -4.4, 0, 4.4, 8.8]) {                                               // oculi and the arms medallion
       const r = x === 0 ? 1.55 : 1.15;
       put(onWall(new THREE.CircleGeometry(r, near ? 16 : 8), AX + x, 26.4, zf + 0.06, S), x === 0 ? 'trim' : 'glow');
@@ -116,12 +117,12 @@ export function create({ detail = 'near' } = {}) {
     // balcony slab, balustrade
     box('trim', u0 - 0.9, u1 + 0.9, top, top + 1.0, zb - 0.1, zf + 0.9);
     if (near) {
-      for (let x = u0 - 0.6; x <= u1 + 0.61; x += 0.8) box('trim', x - 0.15, x + 0.15, top + 1.0, top + 2.3, zf + 0.4, zf + 0.75);
+      for (let x = u0 - 0.6; x <= u1 + 0.61; x += 0.8) box('trim', x - 0.15, x + 0.15, top + 1.0, top + 2.3, zf + 0.4, zf + 0.75, 'du');
       box('trim', u0 - 0.9, u1 + 0.9, top + 2.3, top + 2.55, zf + 0.3, zf + 0.85);
       for (const x of [u0 - 0.5, cu - 3, cu + 3, u1 + 0.5]) box('trim', x - 0.35, x + 0.35, top + 1.0, top + 2.8, zf + 0.25, zf + 0.95);
     } else box('trim', u0 - 0.9, u1 + 0.9, top + 1.0, top + 2.4, zf + 0.3, zf + 0.7);
     // clustered pier columns
-    if (near) for (const x of [u0 + 0.6, cu - 3.4, cu + 3.4, u1 - 0.6]) for (const d of [-0.42, 0.42]) { cyl('stoneDark', x + d, 0.9, 6.6, zf + 0.15, 0.3, 0.32, 8); box('trim', x + d - 0.42, x + d + 0.42, 6.6, 7.1, zf - 0.25, zf + 0.55); }
+    if (near) for (const x of [u0 + 0.6, cu - 3.4, cu + 3.4, u1 - 0.6]) for (const d of [-0.42, 0.42]) { cyl('stoneDark', x + d, 0.9, 6.6, zf + 0.15, 0.3, 0.32, 8, ''); box('trim', x + d - 0.42, x + d + 0.42, 6.6, 7.1, zf - 0.25, zf + 0.55); }
     // eight steps (OSM: front steps way 960958887)
     const st = P.steps, n = 8, run = (st.v1 - st.v0) / n;
     for (let i = 0; i < n; i++) box('stone', st.u0, st.u1, 0, 0.95 - i * 0.12, st.v0 + run * i, st.v0 + run * (i + 1));
@@ -141,14 +142,21 @@ export function create({ detail = 'near' } = {}) {
     if (near) for (let y = 3.4; y < 32; y += 2.6) { const r = 1.78 - 0.3 * y / 32; foot.push([r + 0.09, y - 0.55], [r - 0.02, y]); }
     else foot.push([1.6, 16], [1.5, 30]);
     foot.push([1.5, 32.4], [1.68, 33.0], [2.1, 33.5], [2.1, 34.2], [1.55, 34.7], [0.95, 35.4], [0.4, 35.9], [0, 36.1]);
-    for (const tx of [t.u0 + 1.05, t.u1 - 1.05]) lathe('stoneDark', tx, 0, tz, foot, near ? 14 : 8);
+    // The quarter of each turret that turns toward the tower is buried in the shaft up to the belfry (y 32), so the
+    // shaft part is a three-quarter sweep; the capped crown above it is a full one.
+    const shaftPts = foot.filter((q) => q[1] <= 32.4), crownPts = foot.filter((q) => q[1] >= 32.4);
+    for (const tx of [t.u0 + 1.05, t.u1 - 1.05]) {
+      const west = tx < cx, phi0 = t.front ? (west ? Math.PI : 1.5 * Math.PI) : (west ? 0.5 * Math.PI : 0);
+      lathe('stoneDark', tx, 0, tz, shaftPts, near ? 9 : 6, phi0, 1.5 * Math.PI);
+      lathe('stoneDark', tx, 0, tz, crownPts, near ? 12 : 8);
+    }
     // belfry drum and copper dome
-    cyl('stone', cx, P.shaft, P.domeBase, cz, hw - 0.5, hw - 0.5, near ? 16 : 8);
-    cyl('trim', cx, P.domeBase - 0.9, P.domeBase, cz, hw + 0.05, hw + 0.05, near ? 16 : 8);
-    cyl('trim', cx, P.shaft, P.shaft + 0.5, cz, hw + 0.05, hw + 0.05, near ? 16 : 8);
+    cyl('stone', cx, P.shaft, P.domeBase, cz, hw - 0.5, hw - 0.5, near ? 16 : 8, '');
+    cyl('trim', cx, P.domeBase - 0.9, P.domeBase, cz, hw + 0.05, hw + 0.05, near ? 16 : 8, 'b');
+    cyl('trim', cx, P.shaft, P.shaft + 0.5, cz, hw + 0.05, hw + 0.05, near ? 16 : 8, 't');
     const r0 = hw + 0.05, H = P.domeTop - P.domeBase;
     lathe('copper', cx, P.domeBase, cz, [[r0, 0], [r0 + 0.15, 0.4], [r0 - 0.15, 1.2], [r0 - 0.7, 2.2], [r0 - 1.5, 3.2], [r0 - 2.5, 4.1], [r0 - 3.4, 4.7], [0.4, H - 0.1], [0, H]]);
-    cyl('trim', cx, P.domeTop, P.domeTop + 2.4, cz, 0.14, 0.14, 6); cone('trim', cx, P.domeTop + 2.4, P.domeTop + 3.2, cz, 0.3, 6);
+    cyl('trim', cx, P.domeTop, P.domeTop + 2.4, cz, 0.14, 0.14, 6, 't'); cone('trim', cx, P.domeTop + 2.4, P.domeTop + 3.2, cz, 0.3, 6);
     if (near) for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; win(cx + Math.sin(a) * (hw - 0.5), 33.4, cz + Math.cos(a) * (hw - 0.5), 1.1, 4.2, a, { arch: true, rise: 0.55 }); }
     // faces
     const facesOut = t.front ? [['S', t.v1], ['E', t.u1], ['W', t.u0]] : [['N', t.v0], ['E', t.u1], ['W', t.u0]];
@@ -204,7 +212,7 @@ export function create({ detail = 'near' } = {}) {
     gableRoof('roof', cu - gw / 2, cu + gw / 2, p.v1 - 15, p.v1 - 0.6, p.eave, rise, { along: 'z', over: 0.3 });
     gableWall('stone', 'z', p.v1 - 0.3, cu - gw / 2, cu + gw / 2, p.eave, rise, 0.6, 0.2);
     for (const dx of [-3.4, -1.7, 0, 1.7, 3.4]) win(cu + dx, p.eave + 0.6, p.v1 + 0.02, 1.0, 2.0 + (1 - Math.abs(dx) / 3.4) * 3.2, S, { arch: true, rise: 0.5, frame: false });
-    for (const x of [p.u0 + 1.2, p.u1 - 1.2]) { cyl('stoneDark', x, p.eave - 0.4, p.eave + 6.6, p.v1 - 0.7, 0.6, 0.55, near ? 8 : 5); cone('roof', x, p.eave + 6.6, p.eave + 9.0, p.v1 - 0.7, 0.75, near ? 8 : 5); }
+    for (const x of [p.u0 + 1.2, p.u1 - 1.2]) { cyl('stoneDark', x, p.eave - 0.4, p.eave + 6.6, p.v1 - 0.7, 0.6, 0.55, near ? 8 : 5, ''); cone('roof', x, p.eave + 6.6, p.eave + 9.0, p.v1 - 0.7, 0.75, near ? 8 : 5); }
     const fl = [
       { y: 1.8, h: 3.3, w: 1.6, gap: 3.4 }, { y: 6.9, h: 3.3, w: 1.6, pair: 2.3, n: 3 }, { y: 12.0, h: 3.3, w: 1.5, pair: 2.3, n: 3, arch: true, rise: 0.75 },
       { y: 17.1, h: 3.0, w: 1.3, gap: 2.4, arch: true, rise: 0.65 }, ...(p.eave > 25 ? [{ y: 22.0, h: 2.6, w: 1.2, gap: 2.2, arch: true, rise: 0.6 }] : []),
@@ -236,8 +244,8 @@ export function create({ detail = 'near' } = {}) {
     else for (const x of [e.u0 + 1.6, e.u1 - 1.6]) stack(x, e.eave - 3, 40, e.v0 + 1.7, 3.0);
     // the round stair bays on the inner faces of the north-end pavilions (OSM 844 west, 29 m; 819 with roofs 815/816 east, 25 m)
     const bay = s < 0 ? { u: -41.5, v: -22.8, r: 4.5, h: 26, top: 29 } : { u: 40.4, v: -23.25, r: 4.35, h: 22, top: 25 };
-    cyl('stone', bay.u, 0, bay.h, bay.v, bay.r, bay.r, near ? 16 : 8); cyl('stoneDark', bay.u, 0, 1.3, bay.v, bay.r + 0.3, bay.r + 0.3, near ? 16 : 8);
-    cyl('trim', bay.u, bay.h - 0.8, bay.h, bay.v, bay.r + 0.45, bay.r + 0.45, near ? 16 : 8); cone('roof', bay.u, bay.h, bay.top, bay.v, bay.r + 0.6, near ? 16 : 8);
+    cyl('stone', bay.u, 0, bay.h, bay.v, bay.r, bay.r, near ? 16 : 8, ''); cyl('stoneDark', bay.u, 0, 1.3, bay.v, bay.r + 0.3, bay.r + 0.3, near ? 16 : 8, 't');
+    cyl('trim', bay.u, bay.h - 0.8, bay.h, bay.v, bay.r + 0.45, bay.r + 0.45, near ? 16 : 8, 'b'); cone('roof', bay.u, bay.h, bay.top, bay.v, bay.r + 0.6, near ? 16 : 8);
     if (near) for (const phi of [-0.8, 0, 0.8]) for (const y of [4, 9, 14]) { const ang = (s < 0 ? E : W) + phi; win(bay.u + Math.sin(ang) * bay.r, y, bay.v + Math.cos(ang) * bay.r, 1.3, 3.3, ang, { frame: false }); }
     // entrance bay on the outer flank
     const eb = s < 0 ? { u0: -65.5, u1: -62.7, v0: 2.4, v1: 20.5 } : { u0: 62.7, u1: 65.8, v0: 2.7, v1: 19.9 };
@@ -269,9 +277,9 @@ export function create({ detail = 'near' } = {}) {
     // the two tall round stacks with their little domes
     for (const s of P.stacks) {
       lathe('stone', s.u, 0, s.v, [[s.r + 0.5, 0], [s.r + 0.3, 8], [s.r + 0.1, s.h - 3], [s.r, s.h - 1.4]], near ? 16 : 8);
-      cyl('trim', s.u, s.h - 1.4, s.h - 0.4, s.v, s.r + 0.45, s.r + 0.45, near ? 16 : 8);
+      cyl('trim', s.u, s.h - 1.4, s.h - 0.4, s.v, s.r + 0.45, s.r + 0.45, near ? 16 : 8, 'b');
       lathe('roof', s.u, s.h - 0.4, s.v, [[s.r + 0.45, 0], [s.r * 0.75, 0.9], [s.r * 0.35, 1.5], [0, 1.9]], near ? 16 : 8);
-      for (const y of [14, 27, 40]) if (y < s.h - 2) cyl('trim', s.u, y, y + 0.5, s.v, s.r + 0.32, s.r + 0.32, near ? 16 : 8);
+      for (const y of [14, 27, 40]) if (y < s.h - 2) cyl('trim', s.u, y, y + 0.5, s.v, s.r + 0.42, s.r + 0.42, near ? 16 : 8);
     }
   }
 
@@ -292,8 +300,8 @@ export function create({ detail = 'near' } = {}) {
     facade('E', nb.u1, nb.v0, -50, fl, 1.7); facade('E', nb.u1, -39, nb.v1, fl, 1.7);
     facade('W', nb.u0, nb.v0, -50, fl, 1.7); facade('W', nb.u0, -39, nb.v1, fl, 1.7);
     for (const bay of P.bays) {
-      cyl('stone', bay.u, 0, bay.h, bay.v, bay.r, bay.r, near ? 16 : 8); cyl('trim', bay.u, bay.h - 0.9, bay.h, bay.v, bay.r + 0.5, bay.r + 0.5, near ? 16 : 8);
-      cyl('roof', bay.u, bay.h, bay.h + 0.15, bay.v, bay.r + 0.2, bay.r + 0.2, near ? 16 : 8);
+      cyl('stone', bay.u, 0, bay.h, bay.v, bay.r, bay.r, near ? 16 : 8, ''); cyl('trim', bay.u, bay.h - 0.9, bay.h, bay.v, bay.r + 0.5, bay.r + 0.5, near ? 16 : 8);
+      cyl('roof', bay.u, bay.h, bay.h + 0.15, bay.v, bay.r + 0.2, bay.r + 0.2, near ? 16 : 8, 't');
     }
     // north front: projecting centre bay, arched entrance flanked by lions, arcade, pediment
     const nz = nb.v0, cu = (nb.u0 + nb.u1) / 2 - 1.2;
@@ -305,7 +313,7 @@ export function create({ detail = 'near' } = {}) {
     put(onWall(new THREE.ShapeGeometry(k.archShape(5.2, 6.6, 2.6), near ? 10 : 5), cu, 1.0, nz - 1.46, N), 'iron');
     for (const dx of [-3.7, 3.7]) box('stone', cu + dx - 0.7, cu + dx + 0.7, 1.4, 5.4, nz - 2.6, nz - 1.4);      // the lions' plinths
     box('trim', cu - 7.2, cu + 7.2, 8.6, 9.0, nz - 2.0, nz - 0.5);                                              // balcony
-    if (near) for (let x = cu - 6.8; x <= cu + 6.81; x += 0.8) box('trim', x - 0.14, x + 0.14, 9.0, 10.0, nz - 1.95, nz - 1.65);
+    if (near) for (let x = cu - 6.8; x <= cu + 6.81; x += 0.8) box('trim', x - 0.14, x + 0.14, 9.0, 10.0, nz - 1.95, nz - 1.65, 'du');
     for (const dx of [-4.6, 0, 4.6]) { archRing(cu + dx, 10.4, nz - 1.4, 3.6, 7.0, N, { rim: 0.55, depth: 0.4, rise: 1.8 }); win(cu + dx, 10.4, nz - 1.4, 3.6, 7.0, N, { arch: true, rise: 1.8, frame: false }); }
     // pediment over the centre with a five-arch blind arcade
     gableWall('trim', 'z', nz - 0.9, cu - 6.6, cu + 6.6, nb.h + 0.5, 4.0, 1.4, 0.3);
@@ -319,7 +327,8 @@ export function create({ detail = 'near' } = {}) {
   const root = b.finish();
   root.traverse((o) => {
     if (!o.isMesh) return;
-    o.geometry.deleteAttribute('bridgeLift'); o.geometry.rotateY(P.angle);
+    o.geometry.deleteAttribute('bridgeLift'); o.geometry.rotateY(P.angle); dropGroundFaces(o.geometry);
+    o.geometry = mergeVertices(o.geometry, 1e-4); // flat faces share their corners: 4 vertices a quad, not 6
     o.geometry.computeBoundingBox(); o.geometry.computeBoundingSphere();
   });
   void ring;

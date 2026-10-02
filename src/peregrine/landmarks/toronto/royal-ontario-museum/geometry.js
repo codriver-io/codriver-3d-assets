@@ -1,5 +1,5 @@
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, FOLD } from './config.js';
 import { SITE_ANGLE } from './royal-ontario-museum-site.js';
 import { kit } from './royal-ontario-museum-solids.js';
 import { buildHeritage } from './royal-ontario-museum-heritage.js';
@@ -12,7 +12,7 @@ export function create({ detail = 'near' } = {}) {
   // ground line, so anything below grade is lifted onto it.
   const put = (g, m) => {
     const p = g.attributes.position; for (let i = 0; i < p.count; i++) if (p.getY(i) < 0) p.setY(i, 0);
-    g.rotateY(SITE_ANGLE); b.put(g, m);
+    g.rotateY(SITE_ANGLE); b.put(g, FOLD[detail][m] ?? m);
   };
   const K = kit(put, { near });
 

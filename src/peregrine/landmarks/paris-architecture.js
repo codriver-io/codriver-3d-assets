@@ -10,7 +10,8 @@ export function architecture(put, near = true) {
   const bar = (m,a,b,r=.15) => {
     const p=new THREE.Vector3(...a),q=new THREE.Vector3(...b),v=q.clone().sub(p);
     if(v.length()<1e-5)return;
-    const g=new THREE.CylinderGeometry(r,r,v.length(),near?6:4);
+    // Open ends: every joint hides them, and closed caps doubled the cost of each bar.
+    const g=new THREE.CylinderGeometry(r,r,v.length(),near?6:4,1,true);
     g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),v.normalize()));
     place(g,m,...p.add(q).multiplyScalar(.5).toArray());
   };
@@ -69,8 +70,10 @@ export function architecture(put, near = true) {
       place(new THREE.LatheGeometry(profile,near?6:4),m,x+u*Math.cos(yaw),y,z-u*Math.sin(yaw));
   }
   function clock(x,y,z,r,{yaw=0,face='clock',rim='stoneDark',hands='iron'}={}) {
+    // Small dials do not need a 40-gon: segment count follows the radius.
+    const seg=near?(r>2?40:r>1?24:12):(r>2?20:10);
     for(const [rr,depth,mat,offset] of [[r+.35,.3,rim,0],[r,.12,face,.18]]){
-      const g=new THREE.CylinderGeometry(rr,rr,depth,near?40:20);g.rotateX(Math.PI/2);place(g,mat,x+offset*Math.sin(yaw),y,z+offset*Math.cos(yaw),yaw);
+      const g=new THREE.CylinderGeometry(rr,rr,depth,seg);g.rotateX(Math.PI/2);place(g,mat,x+offset*Math.sin(yaw),y,z+offset*Math.cos(yaw),yaw);
     }
     const p=(u,v)=>[x+u*Math.cos(yaw)+.3*Math.sin(yaw),y+v,z-u*Math.sin(yaw)+.3*Math.cos(yaw)];
     for(let i=0;i<12;i++){const a=i*Math.PI/6;bar(hands,p(Math.sin(a)*r*.76,Math.cos(a)*r*.76),p(Math.sin(a)*r*.88,Math.cos(a)*r*.88),r*.018);}

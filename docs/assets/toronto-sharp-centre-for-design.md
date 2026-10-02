@@ -55,7 +55,7 @@ the McCaul Street north end, later brick wings up to 1981). The neighbouring hou
   tops in the 2.4 m strip of soffit overhanging the block's east wall, leaning along the
   street; two pairs stand on the south lot, clear of 74 McCaul. A test walks every leg's
   axis and fails if it enters a wing.
-- **Legs are tapered spindles**, smooth-normalled, on small concrete footings (near).
+- **Legs are tapered spindles**, smooth-normalled (the small concrete footings of the first pass were 480 triangles and a draw for 0.35 m of grey; dropped).
 - **Red slab, cores, plant.** The slab is an oriented box that runs into the soffit; the
   cores are the mapped 26 m building parts in black cladding; the plant enclosure is
   black.
@@ -91,8 +91,15 @@ Full 3D world verified: not tested yet, integration is checked separately.
 
 ## Verification log (2026-09-29)
 
-Cost of the exported default scenes: near 10 942 triangles / 19 draws / 559 624 bytes;
-far 2 256 triangles / 14 draws / 113 872 bytes (budgets 160 000 / 48 and 45 000 / 14).
+Cost of the exported default scenes: near 9 968 triangles / 14 draws / 513 080 bytes;
+far 2 088 triangles / 8 draws / 98 852 bytes (budgets: building near 60 000 / 14 / 2.5 MB, far 12 000 / 8 / 500 KB).
+
+**Draw budget.** One draw per exported material, folded in `FOLD` (`config.js`): near merges only
+materials that share a colour (the white and black legs are the skin's own `panel_white` / `panel_black`, the
+tabletop deck is `panel_white`, the blue parapet band takes `leg_blue`), which with the footings gone leaves 14.
+Far also folds the dark and purple legs into `panel_black`, the maroon leg into `brick`, the pale wing and the flat
+roofs into `panel_white`, which leaves 8 (yellow and blue legs, red slab, glass, lit glass, brick, white, black).
+Palette keys that no export uses (`leg_white`, `leg_black`, `band_blue`, `roof`, `concrete`) were removed from both themes.
 
 Compared with the Commons photographs (Taxiarchos228 SE and SW three-quarters,
 Arild Vågen from McCaul, Tony Hisgett from Grange Park, Maksim Sokolov skin close-up,

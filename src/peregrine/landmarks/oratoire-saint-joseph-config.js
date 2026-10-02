@@ -8,8 +8,8 @@ export const ORATOIRE = {
   rotation: 55.3 * Math.PI / 180,
 };
 export const ORATOIRE_PALETTES = {
-  light: { stone: '#c1bbae', trim: '#d9d1bf', copper: '#678e7d', rib: '#405e57', glass: '#394c50', earth: '#737864', wood: '#84735c' },
-  dark: { stone: '#7b8993', trim: '#a7b2b6', copper: '#477c73', rib: '#304c4c', glass: '#b0a07b', earth: '#424f49', wood: '#596066' },
+  light: { stone: '#c1bbae', trim: '#d9d1bf', copper: '#678e7d', rib: '#405e57', glass: '#394c50', earth: '#737864', wood: '#8a5a47' },
+  dark: { stone: '#7b8993', trim: '#a7b2b6', copper: '#477c73', rib: '#304c4c', glass: '#b0a07b', earth: '#424f49', wood: '#664c44' },
 };
 export const ORATOIRE_STRETCH = mercStretch(ORATOIRE.origin[1]);
 export const ORATOIRE_MERC = [lngToMercX(ORATOIRE.origin[0]), -latToMercY(ORATOIRE.origin[1])];

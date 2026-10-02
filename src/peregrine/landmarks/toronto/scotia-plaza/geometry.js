@@ -66,7 +66,7 @@ function wings(M, near) {
 
 // 44 King Street West: OSM massing (a 25.6 m base and set-back tiers to 81, 98 and 115 m) in limestone.
 function heritage(M, near) {
-  const style = { mat: 'stone', bay: 3.2, winMin: 1.1, winMax: 1.6, winFrac: 0.42, rd: 0.5, reveals: 'lh' };
+  const style = { mat: 'stone', bay: 3.2, winMin: 1.1, winMax: 1.6, winFrac: 0.42, rd: 0.5, reveals: 'l' };
   const rowsFor = (y0, y1) => y0 < 0.5
     ? [{ y0: 0, y1: 9.8, sill: 1.4, head: 8.6 }, ...evenRows(9.8, y1, 4.0)]
     : evenRows(y0, y1, 3.95);

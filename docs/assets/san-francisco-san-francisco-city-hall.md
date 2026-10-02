@@ -66,8 +66,8 @@ Eight names, in both palettes: `stone` (granite), `stone2` (shaded walls behind 
 
 | LOD | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 12,112 | 8 | 572,208 |
-| Far | 4,682 | 7 | 233,584 |
+| Near | 12,112 | 8 | 572,740 |
+| Far | 4,682 | 7 | 234,116 |
 
 Budgets are 60,000 / 14 / 2.5 MB and 12,000 / 8 / 500 KB. Far is about 39% of near by triangles. Triangle counts describe the export, not Tesla performance.
 

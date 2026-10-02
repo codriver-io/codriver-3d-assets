@@ -60,7 +60,7 @@ export function buildRotunda(b, kit, near) {
     slab('stone', 19.0, 28.0, 8.4, R.floor - 0.2, R.plinth);                  // plinth
     slab('stone', 19.8, 24.6, 6.0, R.plinth, R.abacus1);                      // pier
     if (near) slab('stone', 23.6, 27.8, 8.2, R.cap1, R.abacus1);              // abacus over both capitals
-    slab('stone', 20.0, 28.2, 8.0, R.abacus1, R.cornice1 + 0.2);              // broken entablature over the pair
+    slab('stone', 20.0, 28.2, 8.0, R.abacus1 - 0.15, R.cornice1 + 0.2);       // broken entablature over the pair, its soffit 15 cm below the glowing ceiling (no shared plane)
     slab('stone', 19.4, 27.0, 6.0, R.cornice1 + 0.2, near ? R.attic1 - 0.4 : R.attic1 + 0.2); // attic corner block (kept low: the dome shows above it)
     if (near) slab('stone', 20.0, 27.6, 6.8, R.attic1 - 0.4, R.attic1 + 0.2);  // its cap
     for (const tau of [-1.9, 1.9]) {
@@ -84,7 +84,7 @@ export function buildRotunda(b, kit, near) {
     const phi = rad(AXIS_DEG + 45 * k), a = ROTUNDA.apothem;
     const cx = a * Math.cos(phi), cz = -a * Math.sin(phi), yaw = phi + Math.PI / 2;
     archWall('stone', cx, cz, yaw, wallW, R.floor - 0.8, R.abacus1, 5.0, {
-      half: R.archHalf, spring: R.archSpring, crown: R.archCrown, bottom: R.floor,
+      half: R.archHalf, spring: R.archSpring, crown: R.archCrown, bottom: R.floor - 0.15, // the opening floor sinks 15 cm into the podium, whose top is the visible floor
     });
     if (!near) continue;
     // archivolt: a stone band proud of the face around the arch

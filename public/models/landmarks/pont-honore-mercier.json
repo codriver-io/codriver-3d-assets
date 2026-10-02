@@ -51,63 +51,63 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-honore-mercier-near.glb",
-      "bytes": 2915220,
-      "triangles": 74580,
+      "bytes": 3074408,
+      "triangles": 73608,
       "drawCalls": 38
     },
     "upstream-near": {
       "url": "/models/landmarks/pont-honore-mercier-upstream-near.glb",
-      "bytes": 1271728,
-      "triangles": 30472,
+      "bytes": 1332528,
+      "triangles": 30254,
       "drawCalls": 14
     },
     "downstream-near": {
       "url": "/models/landmarks/pont-honore-mercier-downstream-near.glb",
-      "bytes": 1318468,
-      "triangles": 32312,
+      "bytes": 1385004,
+      "triangles": 32042,
       "drawCalls": 14
     },
     "laprairie-out-near": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_out-near.glb",
-      "bytes": 164564,
-      "triangles": 5908,
+      "bytes": 180536,
+      "triangles": 5672,
       "drawCalls": 5
     },
     "laprairie-in-near": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_in-near.glb",
-      "bytes": 162424,
-      "triangles": 5888,
+      "bytes": 178316,
+      "triangles": 5640,
       "drawCalls": 5
     },
     "far": {
       "url": "/models/landmarks/pont-honore-mercier-far.glb",
-      "bytes": 1522888,
-      "triangles": 40578,
-      "drawCalls": 18
+      "bytes": 1022732,
+      "triangles": 26134,
+      "drawCalls": 10
     },
     "upstream-far": {
       "url": "/models/landmarks/pont-honore-mercier-upstream-far.glb",
-      "bytes": 639376,
-      "triangles": 15726,
-      "drawCalls": 5
+      "bytes": 413936,
+      "triangles": 10004,
+      "drawCalls": 3
     },
     "downstream-far": {
       "url": "/models/landmarks/pont-honore-mercier-downstream-far.glb",
-      "bytes": 676016,
-      "triangles": 17192,
-      "drawCalls": 5
+      "bytes": 443256,
+      "triangles": 10978,
+      "drawCalls": 3
     },
     "laprairie-out-far": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_out-far.glb",
-      "bytes": 105316,
-      "triangles": 3852,
-      "drawCalls": 4
+      "bytes": 84212,
+      "triangles": 2588,
+      "drawCalls": 2
     },
     "laprairie-in-far": {
       "url": "/models/landmarks/pont-honore-mercier-laprairie_in-far.glb",
-      "bytes": 104288,
-      "triangles": 3808,
-      "drawCalls": 4
+      "bytes": 83516,
+      "triangles": 2564,
+      "drawCalls": 2
     }
   },
   "license": "CC-BY-4.0",

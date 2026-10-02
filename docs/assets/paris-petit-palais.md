@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 705,468 bytes · 16,354 triangles · 7 draws |
-| Far | 280,384 bytes · 6,286 triangles · 6 draws |
+| Near | 351,256 bytes · 8,294 triangles · 7 draws |
+| Far | 134,368 bytes · 2,906 triangles · 6 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-petit-palais&view=facade), [far, roof](/asset-preview.html?asset=paris-petit-palais&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-petit-palais). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -46,3 +46,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). end-wall windows stand proud; a 20-column paired colonnade on a 3 m stylobate fronts the west entrance; slate ridges lowered to 28.5 m (west block), 24.8 m (wings). Exported cost: near 8,294 triangles / 7 draws / 351,256 bytes; far 2,906 / 6 / 134,368.

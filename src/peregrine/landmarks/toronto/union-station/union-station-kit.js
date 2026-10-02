@@ -20,6 +20,20 @@ export function unionStationKit(b, near) {
     return g;
   }
 
+  // Drop the triangles of a non-indexed geometry whose flat normal satisfies `drop(nx, ny, nz)` and rebuild it with only
+  // the kept vertices (an index would leave the dropped ones in the GLB).
+  function without(g, drop) {
+    const p = g.attributes.position, n = g.attributes.normal, pos = [], nor = [];
+    for (let i = 0; i + 2 < n.count; i += 3) {
+      if (drop(n.getX(i), n.getY(i), n.getZ(i))) continue;
+      for (let j = i; j < i + 3; j++) { pos.push(p.getX(j), p.getY(j), p.getZ(j)); nor.push(n.getX(j), n.getY(j), n.getZ(j)); }
+    }
+    const out = new THREE.BufferGeometry();
+    out.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    out.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+    return out;
+  }
+
   // A prism over a plan polygon [[u, v], ...] from y0 to y1: sides in matSide, top in matTop, no floor.
   function prism(matTop, matSide, pts, y0, y1) {
     const shape = new THREE.Shape(pts.map(([u, v]) => new THREE.Vector2(u, -v)));
@@ -89,7 +103,9 @@ export function unionStationKit(b, near) {
     for (const h of holes) shape.holes.push(new THREE.Path(openingPoints(h).map(([x, y]) => new THREE.Vector2(x, y))));
     const g = new THREE.ExtrudeGeometry(shape, { depth: t, bevelEnabled: false, curveSegments: 1 });
     g.translate(0, 0, facing < 0 ? vFace : vFace - t);
-    b.put(g, mat);
+    // The slab's back cap lies against the mass behind it (or the pane tucked into it): never seen, and it shared its plane
+    // with that mass and the glass, so it is dropped (a third of the slab's triangles).
+    b.put(without(g, (nx, ny, nz) => (facing < 0 ? nz > 0.99 : nz < -0.99)), mat);
   }
   // The same in the (v, y) plane, facing -u (-1) or +u (+1). Holes give v0/v1 in their u0/u1 slots.
   function wallV(mat, v0, v1, y0, y1, uFace, t, holes, facing = 1) {
@@ -102,7 +118,7 @@ export function unionStationKit(b, near) {
     const g = new THREE.ExtrudeGeometry(shape, { depth: t, bevelEnabled: false, curveSegments: 1 });
     g.rotateY(Math.PI / 2);
     g.translate(facing < 0 ? uFace : uFace - t, 0, 0);
-    b.put(g, mat);
+    b.put(without(g, (nx) => (facing < 0 ? nx > 0.99 : nx < -0.99)), mat); // back cap dropped, as in wallU
   }
 
   // Glass (or any infill) filling one opening: a whisker proud of the body face at v = vFace, on

@@ -50,6 +50,17 @@ export function createOrangeJulep({ detail = 'near' } = {}) {
     const a=i/count*Math.PI*2,r=radiusAt(y),x=r*Math.sin(a),z=r*Math.cos(a);
     positions.push(x,y,z);normals.push(x/radius,(y-cy)/radius,z/radius);
   }
+  // The rear service notch is bounded by two vertical planes: the shell columns on its edge are moved onto them (still on
+  // the sphere), so the return walls are exact planar quads and the notch edge is clean instead of twisted.
+  const step=Math.PI*2/count,backEdge=Math.ceil(.36/step-.5)*step,notchX=radiusAt(2.75)*Math.sin(backEdge);
+  for(let j=0;j<levels.length;j++){
+    if(levels[j]>2.75)break;
+    const r=radiusAt(levels[j]);
+    for(const [i,side] of [[count/2-Math.round(backEdge/step),1],[count/2+Math.round(backEdge/step),-1]]){
+      const k=(j*(count+1)+i)*3,x=side*notchX,z=-Math.sqrt(r*r-notchX*notchX);
+      positions[k]=x;positions[k+2]=z;normals[k]=x/radius;normals[k+2]=z/radius;
+    }
+  }
   for(let j=0;j<levels.length-1;j++)for(let i=0;i<count;i++){
     const a=(i+.5)/count*Math.PI*2,front=Math.min(a,2*Math.PI-a)<1.14,back=Math.abs(a-Math.PI)<.36;
     if((front&&levels[j]<3.25)||(back&&levels[j]<2.75))continue;
@@ -59,24 +70,27 @@ export function createOrangeJulep({ detail = 'near' } = {}) {
   const shell=new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(positions,3)).setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));
   shell.setIndex(indices);put(shell,'orange');
   // Service frontage: faceted recessed glazing, masonry knee wall, projecting counter,
-  // aluminium frames and thin orange canopy. No closed cylinder behind the windows.
+  // aluminium frames and thin orange canopy.
   arc('stone',7.7,8.0,0,.95,-1.14,.89);
   arc('orange',7.7,8.03,.95,1.13,-1.14,.89);
   arc('trim',7.75,8.4,1.1,1.18,-1.16,.89);
   arc('metal',7.8,8.72,2.88,3.0,-1.17,1.17);
   arc('orange',7.8,8.68,3.0,3.25,-1.17,1.17);
   arc('trim',8.66,8.73,2.94,3.01,-1.17,1.17);
-  const bays=near?10:6;
-  for(let i=0;i<bays;i++){
-    const a=-1.12+(i+.5)*2.24/bays,w=2*7.85*Math.sin(1.12/bays);
-    if(i===bays-1)continue; // Full-height entrance: no counter or glazing across it.
-    const c=polar(7.85,a,1.97);
-    b.box('glass',c,[w-.06,1.53,.09],rotation+a,0,0);
-    for(const y of [1.19,2.77])b.box('trim',polar(7.88,a,y),[w,.055,.07],rotation+a,0,0);
-    b.box('trim',polar(7.87,a-1.12/bays,1.97),[.075,1.6,.1],rotation+a,0,0);
+  const bays=near?10:6,pitch=2.24/bays,span=-1.12+(bays-1)*pitch;
+  // Solid orange wall between knee wall and canopy, with discrete framed windows: no continuous glass drum.
+  arc('orange',7.7,7.84,1.13,2.88,-1.14,span+.02);
+  const ww=near?1.0:1.5;
+  for(let i=0;i<bays-1;i++){ // The last bay is the full-height entrance: no wall, counter or glazing across it.
+    const a=-1.12+(i+.5)*pitch,w=2*7.85*Math.sin(pitch/2);
+    b.box('glass',polar(7.85,a,1.95),[ww,1.0,.09],rotation+a,0,0);
     if(near){
-      b.box('trim',polar(7.94,a,2.56),[w*.6,.3,.04],rotation+a,0,0);
-      for(let k=0;k<3;k++)b.box('ink',polar(7.97,a+(k-1)*.035,2.55),[.13,.035,.02],rotation+a,0,0);
+      for(const y of [1.42,2.48])b.box('trim',polar(7.88,a,y),[ww+.14,.07,.1],rotation+a,0,0);
+      for(const side of [-1,1])b.box('trim',polar(7.88,a+side*(ww/2+.035)/7.85,1.95),[.07,1.0,.1],rotation+a,0,0);
+      b.box('trim',polar(7.9,a,2.65),[ww*.82,.24,.04],rotation+a,0,0);
+      for(let k=0;k<3;k++)b.box('ink',polar(7.93,a+(k-1)*.03,2.65),[.12,.035,.02],rotation+a,0,0);
+    }else{
+      b.box('trim',polar(7.88,a,1.42),[w*.5,.07,.1],rotation+a,0,0);
     }
   }
   // End entrance is an inset doorway with jambs, lintel, glazing and a pull handle.
@@ -91,15 +105,12 @@ export function createOrangeJulep({ detail = 'near' } = {}) {
   box('glass',1.42,1.15,-5.14,.88,2.3,.1);
   box('trim',1.42,2.34,-5.18,1.04,.1,.15);
   box('metal',0,2.69,-6.8,6.4,.12,2.1);
-  // Return walls follow the cut shell edge and stay inside its envelope,
-  // preventing an oblique view through the access notch into the front windows.
-  const backEdge=Math.ceil(.36/(Math.PI*2/count)-.5)*Math.PI*2/count;
+  // Return walls: two vertical planar quads from the notch edge on the shell back to the rear wall plane (z=-5.1).
   for(const side of [-1,1]){
-    const v=[];for(const y of [0,1.375,2.75]){
-      const r=radiusAt(y);v.push(side*r*Math.sin(backEdge),y,-r*Math.cos(backEdge),side*3.35,y,-5.1);
-    }
+    const x=side*notchX,z0=-Math.sqrt(radiusAt(0)**2-notchX**2),z1=-Math.sqrt(radiusAt(2.75)**2-notchX**2);
+    const v=[x,0,z0,x,0,-5.1,x,2.75,z1,x,2.75,-5.1];
     const g=new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(v,3));
-    g.setIndex([0,1,2,1,3,2,2,3,4,3,5,4,0,2,1,1,2,3,2,4,3,3,4,5]);
+    g.setIndex([0,1,2,1,3,2,0,2,1,1,2,3]);
     const walls=g.toNonIndexed();walls.computeVertexNormals();g.dispose();put(walls,'orange');
   }
   if(near){

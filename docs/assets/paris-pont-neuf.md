@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 2,532,848 | 52,542 | 6 |
-| Far | 609,952 | 12,688 | 5 |
+| Near | 2,579,704 | 53,576 | 6 |
+| Far | 410,072 | 10,424 | 5 |
 
 ## Inspection and placement
 
@@ -50,3 +50,7 @@ Full-width masonry vaults, cutwaters, semicircular refuges, dressed arch rings a
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-neuf.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-neuf-roof-or-structure.png).
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). island has dressed-stone retaining walls and a Henri IV equestrian group on a pedestal; ramp piers follow the deck, removing the pale band across the roadway. Exported cost: near 53,576 triangles / 6 draws / 2,579,704 bytes; far 10,424 / 5 / 410,072.

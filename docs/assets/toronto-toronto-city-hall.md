@@ -64,7 +64,7 @@ Viewpoints: front (the square, Queen St), back (north), above (overview, roof, p
 
 ## Cost
 
-Near 30 418 triangles, 10 draw calls, 2.34 MB. Far 9 618 triangles, 8 draw calls, 0.73 MB. Budgets are 160 000 / 48 and 45 000 / 14. No Tesla hardware measurements.
+Near 30 418 triangles, 10 draw calls, 2.03 MB. Far 6 806 triangles, 8 draw calls, 0.43 MB. Budgets: building near 60 000 / 14 / 2.5 MB, far 12 000 / 8 / 500 KB. Far keeps its eight materials and gets lighter by drawing each floor-group ledge as its front face only (no caps), sampling the two belt courses and the coping every 6 degrees instead of 3, and leaving the colonnade and walkway columns open-ended. The paved deck is inset 12 cm and sunk into the podium so it shares no plane with the walls or the chamber base ring (coplanar overlap 249 m2 to 0). No Tesla hardware measurements.
 
 ## Tests
 

@@ -22,7 +22,7 @@ The island deck is estimated at 22 m, with the pavilion roof contacting the slab
 - [Measured manifest](../../public/models/landmarks/pont-jacques-cartier.json)
 - [Pavilion inspector](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=pont-jacques-cartier&view=pavilion)
 
-The main export has 48,602 near triangles / 34 draws and 25,406 far triangles / 6 draws. Including all four ramps: 53,780 near triangles / 46 draws and 29,932 far triangles / 14 draws. The manifests own exact file sizes after license metadata is added; no mobile or in-car performance claim follows from these counts.
+The main export has 49,416 near triangles / 34 draws and 13,224 far triangles / 5 draws. Including all four ramps: 54,594 near triangles / 46 draws and 17,750 far triangles / 13 draws. The far level uses open-ended truss members, one Warren diagonal per approach panel, and keeps approach trusses and footings no lower than about -1 m. The manifests own exact file sizes after license metadata is added; no mobile or in-car performance claim follows from these counts.
 
 Matching public-viewer captures: [near GLB](../screenshots/jacques-cartier/pavilion-glb-near.png), [far GLB](../screenshots/jacques-cartier/pavilion-glb-far.png), and [editable near source](../screenshots/jacques-cartier/pavilion-procedural-near.png). These establish library geometry inspection; host-mode evidence is reported separately in the placement handoff.
 
@@ -32,3 +32,7 @@ Matching public-viewer captures: [near GLB](../screenshots/jacques-cartier/pavil
 - [JCCBI · technical and structural reference](https://jacquescartierchamplain.ca/en/structures/jacques-cartier-bridge/about/)
 - [CSCE · span dimensions](https://legacy.csce.ca/en/historic-site/jacques-cartier-bridge/)
 - [Mapped alignment / footprint · OpenStreetMap](https://www.openstreetmap.org/copyright)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). approach trusses and footings stop at about −1.3 m (were −7.3 m); far LOD 25k → 13k triangles with one Warren diagonal per panel; alignment, profile and pavilion unchanged. Exported cost: near 49,416 triangles / 34 draws / 2,746,908 bytes; far 13,224 / 5 / 724,132.

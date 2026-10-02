@@ -26,3 +26,7 @@ Source: [`src/peregrine/landmarks/basilique-notre-dame-geometry.js`](../../src/p
 - [Québec heritage inventory · identity](https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?id=100116&methode=consulter&type=bien)
 - [OSM building footprint · way 4320792](https://www.openstreetmap.org/way/4320792)
 - [Tourisme Montréal · starting reference](https://www.mtl.org/en/experience/montreal-most-famous-icons)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). Far LOD keeps the towers with corner pinnacles, portico holes, nave window rhythm and roofs; crenellations, buttress pinnacles and statuary are near-only; stone darkened to #706e67. Exported cost: near 29,382 triangles / 6 draws / 2,018,440 bytes; far 2,608 / 6 / 125,500.

@@ -8,8 +8,8 @@ Origin `[2.35253,48.85643]` is the rounded center of the OSM civic-palace envelo
 
 | Detail | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 1,942,068 bytes · 41,804 triangles · 7 draws | 6 | 149,036 |
-| Far | 824,408 bytes · 17,880 triangles · 7 draws | 6 | 73,828 |
+| Near | 1,566,816 bytes · 34,436 triangles · 7 draws |
+| Far | 115,672 bytes · 2,448 triangles · 7 draws |
 
 Inspect [front](/asset-preview.html?asset=paris-hotel-de-ville&view=facade), [roof/court](/asset-preview.html?asset=paris-hotel-de-ville&view=roof), and [procedural source](/asset-preview.html?asset=paris-hotel-de-ville&view=facade&source=procedural). [Near facade](../screenshots/paris-hotel-de-ville-near-facade.png) and [far roof/night](../screenshots/paris-hotel-de-ville-far-roof-night.png) show labeled exported views. Sculptures, dormers and clock mechanics are simplified. Cityscape and terrain claims require host-app evidence.
 
@@ -36,3 +36,7 @@ Rendering fixes: see the [window, niche and roof-support corrections](../paris-r
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). the campanile belfry finial reaches about 51 m (Ville de Paris publishes 50 m). Exported cost: near 34,436 triangles / 7 draws / 1,566,816 bytes; far 2,448 / 7 / 115,672.

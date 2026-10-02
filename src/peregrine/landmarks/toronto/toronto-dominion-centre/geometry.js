@@ -1,3 +1,4 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
 import { TOWERS, PAVILION, PLINTH, LAWNS, SOUTH_PLATFORM, offsetConvex } from './toronto-dominion-centre-site.js';
@@ -20,5 +21,11 @@ export function create({ detail = 'near' } = {}) {
 
   for (const tower of TOWERS) buildTower(k, tower, near);
   buildPavilion(k, PAVILION, near);
-  return b.finish();
+  const root = b.finish();
+  root.traverse((o) => { // flat faces share their corners: 4 vertices a quad, not 6 (a free-standing building carries no bridgeLift)
+    if (!o.isMesh) return;
+    o.geometry.deleteAttribute('bridgeLift');
+    o.geometry = mergeVertices(o.geometry, 1e-4); o.geometry.computeBoundingBox(); o.geometry.computeBoundingSphere();
+  });
+  return root;
 }

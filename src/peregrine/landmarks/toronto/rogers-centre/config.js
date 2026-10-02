@@ -34,6 +34,16 @@ export const PALETTES = {
     sign: '#ff4453', bronze: '#8a6c33', jays: '#2c5fb8', light: '#9fd0ff',
   },
 };
+// Draw-call budget (docs/3d-toronto-rogers-centre.md): design names on the left, the exported material on the right.
+// Near keeps all thirteen (13 draws). Far folds the 4-triangle team-colour banner and the prow glass bands into the
+// hotel glass (a pale blue-grey window tone), which leaves eight.
+export const FOLD = {
+  near: {},
+  far: { jays: 'glass_hotel', glass: 'glass_hotel' },
+};
+/** The exported material for a design name at a detail level. */
+export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
+
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap (street and concourse level); no absolute altitude. The 86 m crown (published, and the OSM height tag) is taken as height over this grade; distant photographs scaled against the CN Tower put the crown about 55 m over the 32 m concrete wall, consistent with it.',
   attribution: 'Original procedural mesh. Mapped footprint and hotel terraces © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',

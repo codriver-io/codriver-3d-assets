@@ -24,13 +24,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/old-city-hall-near.glb",
-      "bytes": 3547156,
-      "triangles": 53798,
+      "bytes": 1526740,
+      "triangles": 31271,
       "drawCalls": 8,
       "bounds": {
         "min": [
           -55.62343215942383,
-          -9.536743306171047e-8,
+          0,
           -55.632728576660156
         ],
         "max": [
@@ -42,13 +42,13 @@
     },
     "far": {
       "url": "/models/buildings/old-city-hall-far.glb",
-      "bytes": 470660,
-      "triangles": 8498,
+      "bytes": 368376,
+      "triangles": 7184,
       "drawCalls": 8,
       "bounds": {
         "min": [
           -55.62343215942383,
-          -9.536743306171047e-8,
+          0,
           -55.632728576660156
         ],
         "max": [
