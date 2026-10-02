@@ -27,6 +27,9 @@ const UA = { 'user-agent': 'codriver-dev (+https://codriver.io)' };
 const catalog = await loadAssetCatalog(ROOT);
 const wanted = opt('ids')?.split(','), city = opt('city');
 const entries = catalog.assets.filter((e) => e.model && (!wanted || wanted.includes(e.id)) && (!city || cityOf(e) === city));
+// Before/after comparisons: --no-ref puts a name tile (with --tag text, e.g. "Before") where the reference photo goes,
+// so the sheet can be shared; --bounds <json> ({ id: { near: {min,max}, far: {min,max} } }) frames every version alike.
+const noRef = args.includes('--no-ref'), tag = opt('tag', ''), frame = opt('bounds') ? JSON.parse(readFileSync(resolve(ROOT, opt('bounds')), 'utf8')) : {};
 const metrics = existsSync(join(ROOT, 'tmp/landmark-qa/metrics.json')) ? JSON.parse(readFileSync(join(ROOT, 'tmp/landmark-qa/metrics.json'), 'utf8')) : [];
 
 // Reference photo: the lead image of the best English Wikipedia match for "name city" (cached).
@@ -117,10 +120,12 @@ try {
   for (const e of entries) {
     const v = Object.entries(e.model.assets), near = (v.find(([k]) => k === 'near') || v[0])[1].url, far = v.find(([k]) => k === 'far')?.[1].url;
     const tiles = [], tile = (name) => join(work, `${e.id}-${name}.png`);
-    const ref = await referencePhoto(e);
-    if (ref) { execFileSync('magick', [ref, '-resize', '480x300^', '-gravity', 'center', '-extent', '480x300', tile('ref')]); tiles.push(tile('ref')); }
+    const ref = noRef ? null : await referencePhoto(e);
+    if (noRef) { execFileSync('magick', ['-size', '480x300', 'xc:#e9ecea', ...(FONT ? ['-font', FONT] : []), '-fill', '#333', '-gravity', 'center', '-pointsize', '28', '-annotate', '+0-24', e.name, '-pointsize', '22', '-fill', '#666', '-annotate', '+0+24', tag, tile('ref')]); tiles.push(tile('ref')); }
+    else if (ref) { execFileSync('magick', [ref, '-resize', '480x300^', '-gravity', 'center', '-extent', '480x300', tile('ref')]); tiles.push(tile('ref')); }
     else { execFileSync('magick', ['-size', '480x300', 'xc:#eeeeee', tile('ref')]); tiles.push(tile('ref')); }
     let b = await page.evaluate((u) => window.__load(u), near);
+    if (frame[e.id]?.near) b = frame[e.id].near;
     const h = b.max[1] - b.min[1], c = b.min.map((x, i) => (x + b.max[i]) / 2), span = Math.max(b.max[0] - b.min[0], b.max[2] - b.min[2]);
     const shots = [
       ['nsw', ...fit(b, [-1, 0.55, 1])], ['nne', ...fit(b, [1, 0.55, -1])],
@@ -130,6 +135,7 @@ try {
     for (const [name, eye, target, up] of shots) { await page.evaluate(([a, t, u]) => window.__shot(a, t, u), [eye, target, up]); await page.screenshot({ path: tile(name) }); tiles.push(tile(name)); }
     if (far) {
       b = await page.evaluate((u) => window.__load(u), far);
+      if (frame[e.id]?.far) b = frame[e.id].far;
       for (const [name, dir] of [['fsw', [-1, 0.55, 1]], ['fne', [1, 0.55, -1]]]) { const [eye, target] = fit(b, dir, 1); await page.evaluate(([a, t]) => window.__shot(a, t), [eye, target]); await page.screenshot({ path: tile(name) }); tiles.push(tile(name)); }
     }
     const m = metrics.find((x) => x.id === e.id);

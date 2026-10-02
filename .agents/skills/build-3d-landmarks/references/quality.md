@@ -22,6 +22,7 @@ How to stay small without losing the look: one merged mesh per material (5–10 
 
 - `node .agents/skills/build-3d-landmarks/scripts/qa-metrics.mjs --ids <id>`: budgets, removable bytes, far-vs-near bounds, parts below grade, coplanar overlaps between different materials, and an outside-in ray sweep for back-face hits. No LLM needed.
 - `node .agents/skills/build-3d-landmarks/scripts/qa-sheet.mjs --ids <id>` (no server needed): one contact sheet of the exported GLBs (near 3/4 views, street level, plan, far LOD) beside a reference photograph fetched for local comparison only (never commit it).
+- For a shareable before/after, render both versions with `--no-ref --tag Before|After --bounds <json>` (a name tile instead of the photo, identical framing).
 - Review the sheet against the photo: recognisability 1–5, proportions, distinctive features, artifacts, far LOD, weight. Fix, re-export, look again; two or three iterations are usually enough.
 
 ## Working with an AI agent cheaply
