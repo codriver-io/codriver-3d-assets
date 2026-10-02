@@ -19,6 +19,10 @@ For bridges read [bridge structure](references/bridges.md); for buildings read [
 
 Preserve openings, structural contacts and distinguishing features in both LODs. Merge compatible materials/geometry where it reduces draws. Prefer simple self-contained materials without new decoders. Measure actual exported default-scene triangles, draw calls and bytes. Inspect normals, winding, transforms and bounds after a GLB round trip.
 
+## Budgets and QA
+
+Hold each model to the budgets in [quality](references/quality.md) (building near ≤ 60 k triangles / 14 draws / 2.5 MB, far ≤ 12 k / 8 / 500 KB; bridges about twice that). Run `scripts/qa-metrics.mjs` for the deterministic checks and judge looks from one `scripts/qa-sheet.mjs` contact sheet against a reference photograph.
+
 ## Prepare placement without claiming integration
 
 Read [placement modes](references/placement.md). Cityscape uses a flat ground reference; Full 3D world uses terrain and a host-owned datum. Keep buildings rigid and give bridges explicit abutments/support footprints. Document the foundation plane, site relief and deck attachments needed by a host. Do not pre-drape the reusable model or assume a whole bridge can follow a valley floor.
