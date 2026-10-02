@@ -1,6 +1,6 @@
 # San Francisco landmarks
 
-Twenty-five original procedural models of the San Francisco Bay Area's best-known bridges and buildings, each exported as a high-detail (`near`) and a low-detail (`far`) self-contained GLB. Code and generators are MIT, models are CC BY 4.0, and mapped footprints and alignments come from OpenStreetMap (ODbL 1.0). Browse them in the [library](https://codriver-3d-assets.pages.dev/?city=San+Francisco#library).
+Twenty-five original procedural models of the San Francisco Bay Area's best-known bridges and buildings, each exported as a high-detail (`near`) and a low-detail (`far`) self-contained GLB. Code and generators are MIT, models are CC BY 4.0, and mapped footprints and alignments come from OpenStreetMap (ODbL 1.0). Browse them in the [library](https://3d-assets.codriver.io/?city=San+Francisco#library).
 
 Build every model: `pnpm build:san-francisco-landmarks` (one or more ids, or all). Each landmark has its own documentation page in [docs/assets](assets/), named `san-francisco-<id>.md`.
 

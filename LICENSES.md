@@ -15,7 +15,7 @@ The full terms are in [LICENSE-MODELS.txt](LICENSE-MODELS.txt).
 Credit the creator(s) listed in each model manifest. For the original Codriver collection, suggested credit is:
 
 > “[Model name]” by Codriver / 9570-6198 Québec inc., CC BY 4.0.
-> https://codriver-3d-assets.pages.dev/ — geographic data © OpenStreetMap
+> https://3d-assets.codriver.io/ — geographic data © OpenStreetMap
 > contributors, https://www.openstreetmap.org/copyright. [Describe any changes.]
 
 Geographic data derived from OpenStreetMap remains under ODbL 1.0. MIT and

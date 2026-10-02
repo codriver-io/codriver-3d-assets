@@ -20,7 +20,7 @@ The island deck is estimated at 22 m, with the pavilion roof contacting the slab
 - [Rigid pavilion generator](../../src/peregrine/landmarks/jacques-pavilion-geometry.js)
 - [Ramp generator](../../src/peregrine/landmarks/jacques-island-ramps.js)
 - [Measured manifest](../../public/models/landmarks/pont-jacques-cartier.json)
-- [Pavilion inspector](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=pont-jacques-cartier&view=pavilion)
+- [Pavilion inspector](https://3d-assets.codriver.io/asset-preview.html?asset=pont-jacques-cartier&view=pavilion)
 
 The main export has 49,416 near triangles / 34 draws and 13,224 far triangles / 5 draws. Including all four ramps: 54,594 near triangles / 46 draws and 17,750 far triangles / 13 draws. The far level uses open-ended truss members, one Warren diagonal per approach panel, and keeps approach trusses and footings no lower than about -1 m. The manifests own exact file sizes after license metadata is added; no mobile or in-car performance claim follows from these counts.
 

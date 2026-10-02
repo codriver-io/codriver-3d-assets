@@ -1,8 +1,9 @@
-import { copyFile, cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { build } from 'esbuild';
 import { ROOT, loadAssetCatalog } from './asset-catalog.mjs';
 import { licenseModels } from './license-models.mjs';
+import { withAnalytics } from './analytics.mjs';
 
 export async function buildAssetCatalogPreview() {
   await licenseModels();
@@ -21,6 +22,7 @@ export async function buildAssetCatalogPreview() {
   await copyFile(resolve(ROOT,'node_modules/three/LICENSE'),resolve(out,'licenses/three.txt'));
   await cp(resolve(ROOT,'site'),out,{recursive:true});
   await writeFile(resolve(out,'robots.txt'),'User-agent: *\nAllow: /\n');
+  for(const name of (await readdir(out)).filter((n)=>n.endsWith('.html'))){const file=resolve(out,name);await writeFile(file,withAnalytics(await readFile(file,'utf8')));}
   console.log(`Public library built: ${catalog.assets.length} models in dist/`);
 }
 if(process.argv[1]&&resolve(process.argv[1])===resolve(ROOT,'scripts/build-asset-catalog.mjs'))await buildAssetCatalogPreview();

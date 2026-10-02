@@ -8,7 +8,7 @@ from Montréal, Paris, Toronto, San Francisco and Calgary: 94 landmarks and four
 bridge components, 204 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
-**[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
+**[Explore the public library](https://3d-assets.codriver.io/)** ·
 **[How to contribute](CONTRIBUTING.md)** · **[Licensing](LICENSES.md)**
 
 The library is public, without accounts or passwords. Orbit each model, compare
@@ -59,12 +59,12 @@ to open the interactive model, compare detail levels or download it.
 
 | Montréal, Paris, Toronto and San Francisco | |
 | --- | --- |
-| [![Samuel-De Champlain — Montréal](docs/screenshots/readme/samuel-de-champlain.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=samuel-de-champlain&view=piers)<br>Samuel-De Champlain — Montréal | [![Biosphère — Montréal](docs/screenshots/readme/biosphere-montreal.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=biosphere-montreal&view=overview)<br>Biosphère — Montréal |
-| [![Tour Eiffel — Paris](docs/screenshots/readme/paris-tour-eiffel.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-tour-eiffel&view=facade)<br>Tour Eiffel — Paris | [![Palais du Louvre and pyramid — Paris](docs/screenshots/readme/paris-louvre.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-louvre&view=facade)<br>Palais du Louvre and pyramid — Paris |
-| [![Grand Palais glass roof — Paris](docs/screenshots/readme/paris-grand-palais.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-grand-palais&view=roof)<br>Grand Palais glass roof — Paris | [![Musée d’Orsay — Paris](docs/screenshots/readme/paris-musee-orsay.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-musee-orsay&view=facade)<br>Musée d’Orsay — Paris |
-| [![Hôtel de Ville — Paris](docs/screenshots/readme/paris-hotel-de-ville.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-hotel-de-ville&view=facade)<br>Hôtel de Ville — Paris | [![CN Tower — Toronto](docs/screenshots/readme/cn-tower.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=cn-tower&view=overview)<br>CN Tower — Toronto |
-| [![Golden Gate Bridge — San Francisco](docs/screenshots/readme/golden-gate-bridge.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=golden-gate-bridge&view=overview)<br>Golden Gate Bridge — San Francisco | [![Painted Ladies — San Francisco](docs/screenshots/readme/painted-ladies.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=painted-ladies&view=postcard)<br>Painted Ladies — San Francisco |
-| [![Transamerica Pyramid — San Francisco](docs/screenshots/readme/transamerica-pyramid.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=transamerica-pyramid&view=overview)<br>Transamerica Pyramid — San Francisco | [![Bay Bridge East Span — San Francisco](docs/screenshots/readme/bay-bridge-east-span.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=bay-bridge-east-span&view=overview)<br>Bay Bridge East Span — San Francisco |
+| [![Samuel-De Champlain — Montréal](docs/screenshots/readme/samuel-de-champlain.png)](https://3d-assets.codriver.io/asset-preview.html?asset=samuel-de-champlain&view=piers)<br>Samuel-De Champlain — Montréal | [![Biosphère — Montréal](docs/screenshots/readme/biosphere-montreal.png)](https://3d-assets.codriver.io/asset-preview.html?asset=biosphere-montreal&view=overview)<br>Biosphère — Montréal |
+| [![Tour Eiffel — Paris](docs/screenshots/readme/paris-tour-eiffel.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-tour-eiffel&view=facade)<br>Tour Eiffel — Paris | [![Palais du Louvre and pyramid — Paris](docs/screenshots/readme/paris-louvre.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-louvre&view=facade)<br>Palais du Louvre and pyramid — Paris |
+| [![Grand Palais glass roof — Paris](docs/screenshots/readme/paris-grand-palais.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-grand-palais&view=roof)<br>Grand Palais glass roof — Paris | [![Musée d’Orsay — Paris](docs/screenshots/readme/paris-musee-orsay.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-musee-orsay&view=facade)<br>Musée d’Orsay — Paris |
+| [![Hôtel de Ville — Paris](docs/screenshots/readme/paris-hotel-de-ville.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-hotel-de-ville&view=facade)<br>Hôtel de Ville — Paris | [![CN Tower — Toronto](docs/screenshots/readme/cn-tower.png)](https://3d-assets.codriver.io/asset-preview.html?asset=cn-tower&view=overview)<br>CN Tower — Toronto |
+| [![Golden Gate Bridge — San Francisco](docs/screenshots/readme/golden-gate-bridge.png)](https://3d-assets.codriver.io/asset-preview.html?asset=golden-gate-bridge&view=overview)<br>Golden Gate Bridge — San Francisco | [![Painted Ladies — San Francisco](docs/screenshots/readme/painted-ladies.png)](https://3d-assets.codriver.io/asset-preview.html?asset=painted-ladies&view=postcard)<br>Painted Ladies — San Francisco |
+| [![Transamerica Pyramid — San Francisco](docs/screenshots/readme/transamerica-pyramid.png)](https://3d-assets.codriver.io/asset-preview.html?asset=transamerica-pyramid&view=overview)<br>Transamerica Pyramid — San Francisco | [![Bay Bridge East Span — San Francisco](docs/screenshots/readme/bay-bridge-east-span.png)](https://3d-assets.codriver.io/asset-preview.html?asset=bay-bridge-east-span&view=overview)<br>Bay Bridge East Span — San Francisco |
 
 ## Use a model
 
@@ -148,15 +148,25 @@ and [submission checklist](docs/model-submission.md) document the handoff.
 
 ## Deploy
 
-With Cloudflare Pages access configured locally:
+The library is served at [3d-assets.codriver.io](https://3d-assets.codriver.io) from the
+`codriver-3d-assets` Cloudflare Pages project (`codriver-3d-assets.pages.dev` keeps working).
+Merging to `main` deploys it: once the *Validate library* workflow passes on `main`, the
+*Deploy library* workflow builds `dist/` and uploads it. A maintainer can redeploy by running
+that workflow by hand, or from a machine with Cloudflare access:
 
 ```sh
-pnpm deploy
+pnpm run deploy
 ```
 
-This uses direct upload to the `codriver-3d-assets` Pages project. GitHub stores
-the public source; publishing a source commit alone does not deploy Pages.
-No credentials are stored in this repository.
+The workflow reads the `CLOUDFLARE_API_TOKEN` secret, which pull-request runs never see; no
+credential is stored in this repository.
+
+## Analytics
+
+The public site counts visits, opened models and model downloads with Codriver's self-hosted
+[Plausible](https://plausible.io) instance (`stats.codriver.io`): no cookies and no personal
+data. Only the production hosts load it, so local builds, previews and forks send nothing
+(`scripts/analytics.mjs`, `src/analytics.js`).
 
 ### Paris street-level revision
 
