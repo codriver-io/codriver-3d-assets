@@ -25,3 +25,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). each wing is one continuous curved ribbon (facade, cornice, roof); stepped chapel with cornices and pilasters. Exported cost: near 16,481 triangles / 6 draws / 839,204 bytes; far 4,013 / 6 / 164,316.

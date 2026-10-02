@@ -48,7 +48,7 @@ Every material is a key of both palettes: `stone` (ashlar walls), `band` (mid-br
 
 * **The plan is the mapped outline**, tiled into disjoint boxes (four pavilions, four wings, the shoulder bay, three central bays), so no two exterior walls share a plane. The tower and porch stand on the mapped projection. The roof volumes are closed convex solids that overlap and let the depth buffer make the valleys, with the wing ridges buried inside the pavilion hips.
 * **The tower is the far-LOD hero.** It is built stage by stage with sourced overall height and belfry cornice, and its silhouette (spire, stone clock stage, gargoyles, belfry, shaft ribs) survives in the far model. The far model also keeps the dials, hands and the arched openings as dark quads.
-* **Facades are rhythms, not textures**: string courses, banded courses, corner quoins, framed arched windows and giant arches are merged boxes and extruded frames. Repeated elements share one draw per material (8 in each LOD).
+* **Facades are rhythms, not textures**: string courses, banded courses, corner quoins, framed arched windows and giant arches are merged boxes and extruded frames, built from the faces that can be seen: wall courses drop their back, quoins and flat strips are one or two quads, extruded frames lose their back cap. Repeated elements share one draw per material (8 in each LOD).
 * **Roofs and gables are real volumes**: parapet gables (stone triangle, raking coping, small arches, rose window) in front of pitched roof blocks that run back into the main roof.
 * **No lettering** was modelled: the building has none that reads from a road.
 
@@ -60,16 +60,18 @@ Every material is a key of both palettes: `stone` (ashlar walls), `band` (mid-br
 * The north central bay carries square turrets and the west and east central bays round ones by analogy with the photographed west face. Whether the east face matches the west is unverified.
 * Cornices, string courses and eaves project up to about 1.3 m beyond the mapped wall line (ground-level detail at most 0.7 m). The layer removes only provider triangles wholly inside the outline, so this only affects how the model sits against the street.
 * Colours are two flat sandstone tones plus a mid band; the real building mixes several sandstones.
-* Triangle counts describe the export, not Tesla performance. Near is heavy on bytes because the flat-shaded solids are unindexed.
+* Triangle counts describe the export, not Tesla performance. Flat faces share their corners (vertices welded after the final rotation), and the ground-resting bottoms are dropped, so near is about 1.5 MB.
 
 ## Cost (exported default scenes)
 
 | LOD | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 53,798 | 8 | 3,546,640 |
-| Far | 8,498 | 8 | 470,144 |
+| Near | 31,271 | 8 | 1,526,740 |
+| Far | 7,184 | 8 | 368,376 |
 
-Budgets are 160,000 / 48 and 45,000 / 14.
+Weight pass (2026-10-01): near was 53,798 triangles / 3.55 MB with 690 m2 of coplanar overlap. Quoins (900 boxes) became a front and an end face, ashlar strips a single quad, arch frames lost their back cap and some arc segments, clock ticks and hands became quads, hidden bottoms, tower-base tops and gable feet were removed and the porch glass and roof moved off coplanar planes (about 4 m2 of hidden overlap left). The silhouette, quoins, string courses, arches, clock and colours are unchanged.
+
+Budgets are 160,000 / 48 and 45,000 / 14 (the San Francisco budgets, 60,000 / 14 / 2.5 MB near and 12,000 / 8 / 500 KB far, also hold).
 
 ## Verification evidence
 

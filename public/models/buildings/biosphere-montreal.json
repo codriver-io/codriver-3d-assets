@@ -18,15 +18,15 @@
   "assets": {
     "near": {
       "url": "/models/buildings/biosphere-montreal-near.glb",
-      "bytes": 4531348,
-      "triangles": 98824,
-      "drawCalls": 7
+      "bytes": 1654788,
+      "triangles": 53724,
+      "drawCalls": 6
     },
     "far": {
       "url": "/models/buildings/biosphere-montreal-far.glb",
-      "bytes": 464364,
-      "triangles": 10506,
-      "drawCalls": 5
+      "bytes": 336568,
+      "triangles": 10722,
+      "drawCalls": 6
     }
   },
   "license": "CC-BY-4.0",

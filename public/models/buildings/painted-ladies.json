@@ -22,8 +22,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/painted-ladies-near.glb",
-      "bytes": 575020,
-      "triangles": 10160,
+      "bytes": 618000,
+      "triangles": 10956,
       "drawCalls": 13,
       "bounds": {
         "min": [

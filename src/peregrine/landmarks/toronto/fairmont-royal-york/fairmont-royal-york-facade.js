@@ -95,7 +95,7 @@ export function wing(ctx) {
   const { kit, slab, near, rand } = ctx;
   ctx.zones = [];
   const skipZones = (e, uc, yc, h) => ctx.zones.some((z) => z.e === e && uc + 0.9 > z.u0 && uc - 0.9 < z.u1 && yc + h / 2 > z.y0 && yc - h / 2 < z.y1);
-  const grid = (s, rows, { bay = 3.4, w = 1.7, h = 2.25, d = 0.22, margin = 1.3, lit = 0.3, piers = 0 } = {}) => {
+  const grid = (s, rows, { bay = 3.4, w = 1.7, h = 2.25, d = 0.16, margin = 1.3, lit = 0.3, piers = 0 } = {}) => {
     for (const e of s.edges) {
       if (e.L < 4.2) continue;
       const n = Math.max(1, Math.round((e.L - 2 * margin) / bay)), pitch = (e.L - 2 * margin) / n;
@@ -116,8 +116,9 @@ export function wing(ctx) {
         const uc = margin + pitch * (i + 0.5);
         for (const yc of rows) {
           if (skipZones(e, uc, yc, h)) continue;
-          kit.slab(rand() < lit ? 'glow' : 'glass', e.p, e.t, e.n, uc - w / 2, uc + w / 2, yc - h / 2, yc + h / 2, d);
-          kit.slab('limestone', e.p, e.t, e.n, uc - 0.07, uc + 0.07, yc - h / 2, yc + h / 2, d + 0.08, { top: false, bottom: false }); // mullion: reads as paired lights
+          // a window is one quad proud of the wall, its mullion a slender quad in front (paired lights): no boxes
+          kit.panel(rand() < lit ? 'glow' : 'glass', e.p, e.t, e.n, uc - w / 2, uc + w / 2, yc - h / 2, yc + h / 2, d);
+          kit.panel('limestone', e.p, e.t, e.n, uc - 0.07, uc + 0.07, yc - h / 2, yc + h / 2, d + 0.07);
         }
       }
       if (piers) { // slender piers every few bays and at both ends, clear of the arcades

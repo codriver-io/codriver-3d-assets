@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/golden-gate-bridge-near.glb",
-      "bytes": 2014324,
+      "bytes": 1771080,
       "triangles": 52474,
       "drawCalls": 17,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/golden-gate-bridge-far.glb",
-      "bytes": 475424,
+      "bytes": 418280,
       "triangles": 12482,
       "drawCalls": 4,
       "bounds": {

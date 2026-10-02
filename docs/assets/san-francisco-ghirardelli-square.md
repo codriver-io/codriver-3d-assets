@@ -63,8 +63,8 @@ What a driver sees, and what the model spends its budget on:
 
 | LOD | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 10,196 | 11 | 549,044 |
-| Far | 2,532 | 8 | 144,840 |
+| Near | 10,196 | 11 | 549,576 |
+| Far | 2,532 | 8 | 145,368 |
 
 Budgets are 60,000 / 14 / 2.5 MB and 12,000 / 8 / 500 KB.
 

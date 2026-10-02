@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 3,301,684 bytes · 60,215 triangles · 7 draws |
-| Far | 1,037,004 bytes · 18,819 triangles · 7 draws |
+| Near | 664,164 bytes · 15,580 triangles · 7 draws |
+| Far | 201,032 bytes · 3,772 triangles · 7 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-musee-orsay&view=facade), [far, roof](/asset-preview.html?asset=paris-musee-orsay&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-musee-orsay). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -55,3 +55,7 @@ Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-m
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). windows are framed quads on the real wall planes (far uses window bands); dormers now sit on the hotel wings' steep lower slopes. Exported cost: near 15,580 triangles / 7 draws / 664,164 bytes; far 3,772 / 7 / 201,032.

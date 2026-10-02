@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/rogers-centre-near.glb",
-      "bytes": 2002964,
+      "bytes": 1751504,
       "triangles": 40618,
       "drawCalls": 13,
       "bounds": {
@@ -39,9 +39,9 @@
     },
     "far": {
       "url": "/models/buildings/rogers-centre-far.glb",
-      "bytes": 714244,
-      "triangles": 12418,
-      "drawCalls": 10,
+      "bytes": 442068,
+      "triangles": 9106,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -133.7649688720703,

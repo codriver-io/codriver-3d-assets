@@ -25,3 +25,7 @@ Source: [`src/peregrine/landmarks/five-roses-geometry.js`](../../src/peregrine/l
 - [OSM industrial footprint](https://www.openstreetmap.org/way/1391560364)
 - [Tourisme Montréal — landmark identity](https://www.mtl.org/en/experience/montreal-most-famous-icons)
 - [Wikimedia — mill and silo photograph by Chicoutimi](https://commons.wikimedia.org/wiki/File:Montreal_-_Farine_five_roses.jpg)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). Exported cost: near 17,984 triangles / 8 draws / 927,152 bytes; far 6,716 / 8 / 375,796.

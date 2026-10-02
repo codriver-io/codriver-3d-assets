@@ -23,6 +23,16 @@ export const PALETTES = {
     glass: '#2c3c42', glow: '#c79a52', ink: '#161b1a', plaster: '#a7a79c', sign: '#d8bb63', concrete: '#74746f',
   },
 };
+// Draw-call budget (docs/3d-toronto-st-lawrence-market.md): design names on the left, the exported material on the
+// right. Near keeps all eleven (11 draws). Far folds the small look-alikes: the sill glass into the lit hall glazing, the
+// gold lettering and the off-white fascia into buff, and the dark cladding into the roof brown, which leaves seven.
+export const FOLD = {
+  near: {},
+  far: { glass: 'glow', sign: 'buff', plaster: 'buff', cladding: 'roof' },
+};
+/** The exported material for a design name at a detail level. */
+export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
+
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The real site falls about one storey from Front Street to The Esplanade; the model keeps one flat grade and carries that fall as a solid base on the Front Street half and an open colonnade under the deck on the Esplanade half.',
   attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',

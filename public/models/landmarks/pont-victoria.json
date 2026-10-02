@@ -21,15 +21,15 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-victoria-near.glb",
-      "bytes": 3354524,
-      "triangles": 61068,
+      "bytes": 3086900,
+      "triangles": 56988,
       "drawCalls": 29
     },
     "far": {
       "url": "/models/landmarks/pont-victoria-far.glb",
-      "bytes": 1163648,
-      "triangles": 25592,
-      "drawCalls": 5
+      "bytes": 547568,
+      "triangles": 10298,
+      "drawCalls": 4
     }
   },
   "license": "CC-BY-4.0",

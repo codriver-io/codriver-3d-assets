@@ -112,7 +112,7 @@
           }
         ]
       },
-      "notes": "Visual approximation, not surveyed. Deck heights are adapted to the flat map; fine fabrication details are simplified. Lift span shown lowered; the separate rail diversion is outside this road bridge model.",
+      "notes": "Visual approximation, not surveyed. Deck heights are adapted to the flat map; fine fabrication details are simplified. Lift span shown lowered; the separate rail diversion is outside this road bridge model. QA pass (2026-10): far drops parapet and track rails and sub-pixel bracing; near removes hidden and coplanar slab, bed and pier-top faces; alignment, profile and deck heights unchanged.",
       "documentation": "docs/assets/pont-victoria.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -178,7 +178,7 @@
           }
         ]
       },
-      "notes": "Visual approximation, not surveyed. The main deck sits 22 estimated metres above the island foundation; the roof supports the slab and four pavilion towers retain their silhouette in both LODs. Download the four island-access components separately and place them at the shared geographic origin. No terrain or sea-level datum is baked into these GLBs.",
+      "notes": "Visual approximation, not surveyed. The main deck sits 22 estimated metres above the island foundation; the roof supports the slab and four pavilion towers retain their silhouette in both LODs. Download the four island-access components separately and place them at the shared geographic origin. No terrain or sea-level datum is baked into these GLBs. QA pass (2026-10): approach trusses and footings stop at about −1.3 m (were −7.3 m); far LOD 25k → 13k triangles with one Warren diagonal per panel; alignment, profile and pavilion unchanged.",
       "documentation": "docs/assets/pont-jacques-cartier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -428,7 +428,7 @@
       "kind": "building",
       "location": "Île Sainte-Hélène · Montréal, Québec",
       "status": "ready",
-      "description": "An open geodesic double shell around the museum pavilion, with no acrylic skin.",
+      "description": "An open geodesic double shell around the museum pavilion, with no acrylic skin, pierced by the Minirail station and its ramp.",
       "manifest": "/models/buildings/biosphere-montreal.json",
       "source": {
         "path": "src/peregrine/landmarks/biosphere-geometry.js",
@@ -599,7 +599,7 @@
           }
         ]
       },
-      "notes": "18.3m sphere follows operator near-60ft account; secondary 40ft reports conflict. Mapped envelope ~21.1m. Height, facade bearing and roadside sign offset are photo estimates; flat-map grade y=0. No Tesla hardware measurements.",
+      "notes": "18.3m sphere follows operator near-60ft account; secondary 40ft reports conflict. Mapped envelope ~21.1m. Height, facade bearing and roadside sign offset are photo estimates; flat-map grade y=0. No Tesla hardware measurements. QA pass (2026-10): shell is red-orange; the frontage is an orange wall with discrete framed windows rather than a continuous glass band.",
       "documentation": "docs/assets/orange-julep.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -677,7 +677,7 @@
           }
         ]
       },
-      "notes": "Y=0 flat-map grade; compact supported plaza, no sea-level lift. Tower envelope 188.1 m; beacon reaches 191.1 m. Facade bays, skylights, crown and ring tube/clearance are visual estimates. Surrounding PVM towers remain untouched. Tesla hardware cost unmeasured.",
+      "notes": "Y=0 flat-map grade; compact supported plaza, no sea-level lift. Tower envelope 188.1 m; beacon reaches 191.1 m. Facade bays, skylights, crown and ring tube/clearance are visual estimates. Surrounding PVM towers remain untouched. Tesla hardware cost unmeasured. QA pass (2026-10): near glass and spandrels are blue-grey with fewer, smaller, muted window dots; far folds plaza and skylights into the pale concrete and the ring into aluminium.",
       "documentation": "docs/assets/place-ville-marie.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -747,7 +747,7 @@
           }
         ]
       },
-      "notes": "Explicit 354-module composition approximates the researched zigzag footprint, three pyramids and two lower saddles; not apartment-accurate. Grounded flat-map plaza; no surveyed terrain or elevation. Software checks do not measure Tesla hardware.",
+      "notes": "Explicit 354-module composition approximates the researched zigzag footprint, three pyramids and two lower saddles; not apartment-accurate. Grounded flat-map plaza; no surveyed terrain or elevation. Software checks do not measure Tesla hardware. QA pass (2026-10): modules are face-culled shells with eight opening patterns on a 14.0 m course pitch, terraces have green patches and conifers; far uses one dark band per wall.",
       "documentation": "docs/assets/habitat-67.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -895,7 +895,7 @@
           }
         ]
       },
-      "notes": "60m overall height and 42 cabins are sourced; rim diameter 56.64m and plane are OSM-derived estimates. Member sizes, gondolas, hub and boarding deck are visual approximations. Flat plaza datum, static upright cabins, opaque glazing and restrained lighting. Cafés remain map geometry.",
+      "notes": "60m overall height and 42 cabins are sourced; rim diameter 56.64m and plane are OSM-derived estimates. Member sizes, gondolas, hub and boarding deck are visual approximations. Flat plaza datum, static upright cabins, opaque glazing and restrained lighting. Cafés remain map geometry. QA pass (2026-10): rim tubes 0.52 m, spokes 0.28 m; boarding deck lowered so the lowest cabin clears it by about 0.11 m.",
       "documentation": "docs/assets/grande-roue-montreal.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -965,7 +965,7 @@
           }
         ]
       },
-      "notes": "66 m towers and 77 × 41 m nave from heritage reference; mapped overall complex about 109 m. Ground-relative flat map, no survey elevation. Roof heights, chapel massing, tracery and statues simplified; excludes temporary scaffolding and interiors. No road surface or plaza replacement. Tesla hardware unmeasured.",
+      "notes": "66 m towers and 77 × 41 m nave from heritage reference; mapped overall complex about 109 m. Ground-relative flat map, no survey elevation. Roof heights, chapel massing, tracery and statues simplified; excludes temporary scaffolding and interiors. No road surface or plaza replacement. Tesla hardware unmeasured. QA pass (2026-10): Far LOD keeps the towers with corner pinnacles, portico holes, nave window rhythm and roofs; crenellations, buttress pinnacles and statuary are near-only; stone darkened to #706e67.",
       "documentation": "docs/assets/basilique-notre-dame.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1042,8 +1042,8 @@
       "kind": "building",
       "status": "ready",
       "location": "Montréal, Québec, Canada",
-      "description": "Copper dome and octagonal drum above the stone basilica, open colonnade, crypt terrace and monumental approach stairs.",
-      "notes": "Original procedural model; local hillside compressed to 24 m at basilica floor with solid foundations. Vehicle roads are unchanged. Fine sculpture, interior, surrounding annexes and modern reception complex are omitted.",
+      "description": "Copper dome and octagonal drum above the stone basilica, six-column portico, crypt terrace and monumental approach stairs.",
+      "notes": "Original procedural model; local hillside compressed to 24 m at basilica floor with solid foundations. Vehicle roads are unchanged. Fine sculpture, interior, surrounding annexes and modern reception complex are omitted. QA pass (2026-10): portico has an entablature and an attic with the great arch under the front pediment; turret roofs are reddish-brown copper; aisle windows and buttresses sit on the walls.",
       "manifest": "/models/buildings/oratoire-saint-joseph.json",
       "documentation": "docs/assets/oratoire-saint-joseph.md",
       "source": {
@@ -1155,7 +1155,7 @@
           }
         ]
       },
-      "notes": "Vertical datum, steel sections, pier spacing and Seaway span are visual approximations. Current bridge only; proposed replacement and adjacent railway excluded. Complete near/far models are inspection exports; runtime loads only the four partitions.",
+      "notes": "Vertical datum, steel sections, pier spacing and Seaway span are visual approximations. Current bridge only; proposed replacement and adjacent railway excluded. Complete near/far models are inspection exports; runtime loads only the four partitions. QA pass (2026-10): far runtime partitions total 26.1 k triangles / 10 draws / 1.0 MB (stone merged into concrete, open-prism truss members); no near concrete is coplanar with pavement.",
       "documentation": "docs/assets/pont-honore-mercier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1210,7 +1210,7 @@
           }
         ]
       },
-      "notes": "Daytime permanent structure; estimated structural members. Street-level refinement (2026-09-29): Broader curved lower piers, four-sided X bracing, separate upper shaft, framed floors and connected decorative arches. Second pass: curved chords with dense secondary lattice, lift rails, deep platform trusses, glazed observation strips and a two-storey summit gallery. Original architectural geometry only; illumination shows are excluded. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Daytime permanent structure; estimated structural members. Street-level refinement (2026-09-29): Broader curved lower piers, four-sided X bracing, separate upper shaft, framed floors and connected decorative arches. Second pass: curved chords with dense secondary lattice, lift rails, deep platform trusses, glazed observation strips and a two-storey summit gallery. Original architectural geometry only; illumination shows are excluded. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): far LOD uses a 3-sided secondary lattice, one balustrade rail, no lift rails or mullions; duplicate beams removed in both LODs; deck glass neutral grey.",
       "documentation": "docs/assets/paris-tour-eiffel.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1265,7 +1265,7 @@
           }
         ]
       },
-      "notes": "Relief masses and arch profiles are visual estimates. Street-level refinement (2026-09-29): Layered cornices, masonry courses, framed relief groups and a more legible frieze; sculpture remains abstract. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Relief masses and arch profiles are visual estimates. Street-level refinement (2026-09-29): Layered cornices, masonry courses, framed relief groups and a more legible frieze; sculpture remains abstract. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): relief panels, frames and course lines are seated 0.2-0.3 m proud of the wall; archivolts are abutting bands; sculpture groups are stacked tapered blocks (near).",
       "documentation": "docs/assets/paris-arc-de-triomphe.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1328,7 +1328,7 @@
           }
         ]
       },
-      "notes": "Current permanent exterior, no construction scaffolding. Street-level refinement (2026-09-29): 43.5 m west facade, 9.7 m west rose, 13.1 m transept roses, open belfries, narrower nave and two tiers of flying buttresses. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Current permanent exterior, no construction scaffolding. Street-level refinement (2026-09-29): 43.5 m west facade, 9.7 m west rose, 13.1 m transept roses, open belfries, narrower nave and two tiers of flying buttresses. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): nave, aisle and transept roofs are two-plane gables of about 48-50 degrees with a hipped apse; west facade gains four buttress strips and a gallery band.",
       "documentation": "docs/assets/paris-notre-dame.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1383,7 +1383,7 @@
           }
         ]
       },
-      "notes": "Building foundation and separate pedestrian terraces; estimated massing. Street-level refinement (2026-09-29): Tapered central cupola, small corner domes, centered rear campanile, stepped frontispiece, open triple porch and bronze equestrian silhouettes. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Building foundation and separate pedestrian terraces; estimated massing. Street-level refinement (2026-09-29): Tapered central cupola, small corner domes, centered rear campanile, stepped frontispiece, open triple porch and bronze equestrian silhouettes. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): central cupola widened to 33 m across by 37 m tall on a taller drum, four small domes moved clear; far domes are 14-gons without ribs.",
       "documentation": "docs/assets/paris-sacre-coeur.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1438,7 +1438,7 @@
           }
         ]
       },
-      "notes": "Scoped to church, excludes hospital complex. Street-level refinement (2026-09-29): Radial drum openings, curved gold dome ribs, column capitals, side elevations and crown cross. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Scoped to church, excludes hospital complex. Street-level refinement (2026-09-29): Radial drum openings, curved gold dome ribs, column capitals, side elevations and crown cross. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): dome has twelve thicker ribs (was 24); wing and nave roofs are pitched, flat-shaded grey-blue slate (#6d7885) instead of green barrels; roof winding fixed.",
       "documentation": "docs/assets/paris-invalides.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1497,7 +1497,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; subsequently expanded to include the pyramid in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid is registered to its mapped geographic center; palace wing plan remains schematic. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; subsequently expanded to include the pyramid in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid is registered to its mapped geographic center; palace wing plan remains schematic. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): Cour Carrée re-sited to the OSM footprint (about 167 m square, court about 127 m square); windows are flat framed quads; Richelieu/Denon wings stay 25 m deep.",
       "documentation": "docs/assets/paris-louvre.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1556,7 +1556,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): auditorium and rotunda domes are green verdigris ('patina') with gilded ribs; gilded corner and Apollo groups are twice their first size (about 14 m).",
       "documentation": "docs/assets/paris-palais-garnier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1611,7 +1611,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): vault lattice kept sparse (major ribs about every 8 m, 13 m far, no fine transverse bars); columns, windows and balustrade are simple shafts, framed quads and parapets.",
       "documentation": "docs/assets/paris-grand-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1666,7 +1666,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): end-wall windows stand proud; a 20-column paired colonnade on a 3 m stylobate fronts the west entrance; slate ridges lowered to 28.5 m (west block), 24.8 m (wings).",
       "documentation": "docs/assets/paris-petit-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1725,7 +1725,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): windows are framed quads on the real wall planes (far uses window bands); dormers now sit on the hotel wings' steep lower slopes.",
       "documentation": "docs/assets/paris-musee-orsay.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1784,7 +1784,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Column bases/capitals, stepped portico approach, curved dome ribs, nave bays and pilasters. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Column bases/capitals, stepped portico approach, curved dome ribs, nave bays and pilasters. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): arm roofs are near-flat leaded decks behind a continuous parapet; nave doors sit in 3 m recesses; side walls carry blind panels.",
       "documentation": "docs/assets/paris-pantheon.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1800,7 +1800,7 @@
       "kind": "building",
       "location": "Paris, France",
       "status": "ready",
-      "description": "Renaissance civic palace with statue niches, chimney-lined mansards, clock frontispiece and an open octagonal campanile.",
+      "description": "Renaissance civic palace with statue niches, chimney-lined mansards, clock frontispiece and an open octagonal campanile (hexagonal in far).",
       "manifest": "/models/buildings/paris-hotel-de-ville.json",
       "source": {
         "path": "src/peregrine/landmarks/paris-historic-geometry.js",
@@ -1847,7 +1847,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes. Rendering correction: statue niche separated from the clock pediment; ridge ironwork and statues fitted to the narrower mansard crest with supported plinths. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Mansard roofs, visible gabled dormers, detailed clock face, façade pilasters, balustrade and side/rear bays. Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes. Rendering correction: statue niche separated from the clock pediment; ridge ironwork and statues fitted to the narrower mansard crest with supported plinths. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): the campanile belfry finial reaches about 51 m (Ville de Paris publishes 50 m).",
       "documentation": "docs/assets/paris-hotel-de-ville.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1910,7 +1910,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Distinct western crenellated tower, closer twin central towers, Gothic bays and gilded eastern clock. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Distinct western crenellated tower, closer twin central towers, Gothic bays and gilded eastern clock. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): steep slate hip roof, tall dormers and slender conical tower roofs about 24 m high; near minY is now 0.",
       "documentation": "docs/assets/paris-conciergerie.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1973,7 +1973,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): 52 articulated columns, complete ascending steps, continuous peristyle, entablature and abstract pediment relief. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): 52 articulated columns, complete ascending steps, continuous peristyle, entablature and abstract pediment relief. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): recessed tympanum with three relief groups, low gabled roof, shallow side niches; podium and steps widened so columns stand on the podium top.",
       "documentation": "docs/assets/paris-madeleine.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2036,7 +2036,7 @@
           }
         ]
       },
-      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Tangent-aligned curved-wing bays, cornices, entrance order, radial drum openings and curved dome ribs. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope.",
+      "notes": "Rigid y=0 foundation; measured local GLB near/far variants. Architectural details and some footprint dimensions are approximate, as documented per asset. Cityscape and Full 3D world require separate app verification; no hardware performance claim. Street-level refinement (2026-09-29): Tangent-aligned curved-wing bays, cornices, entrance order, radial drum openings and curved dome ribs. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): each wing is one continuous curved ribbon (facade, cornice, roof); stepped chapel with cornices and pilasters.",
       "documentation": "docs/assets/paris-institut-de-france.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2099,7 +2099,7 @@
           }
         ]
       },
-      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): 15 near-detail steel ribs, open spandrels, bank abutments, pylon cornices, candelabra and denser ironwork.",
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): 15 near-detail cream ribs, open spandrels, bank abutments, pylon cornices, candelabra and denser ironwork. QA pass (2026-10): arch ribs and spandrel posts are cream; the four pylon groups are gilded winged horses with a Fame rider; lamps are three-globe candelabra.",
       "documentation": "docs/assets/paris-pont-alexandre-iii.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2173,7 +2173,7 @@
           }
         ]
       },
-      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Three unequal spans per arm, open steel arches, full-width river piers, repeated curved Métro brackets; posts moved out of vehicle lanes.",
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Three unequal spans per arm, open steel arches, full-width river piers, repeated curved Métro brackets; posts moved out of vehicle lanes. QA pass (2026-10): island piers are stepped masonry masses with a standing figure on top; far LOD cut to 12.6 k triangles with open 4-sided tubes and no railing bars.",
       "documentation": "docs/assets/paris-pont-bir-hakeim.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2251,7 +2251,7 @@
           }
         ]
       },
-      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Full-width masonry vaults, cutwaters, semicircular refuges, dressed arch rings and lamps; five/seven arch split retained.",
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Full-width masonry vaults, cutwaters, semicircular refuges, dressed arch rings and lamps; five/seven arch split retained. QA pass (2026-10): island has dressed-stone retaining walls and a Henri IV equestrian group on a pedestal; ramp piers follow the deck, removing the pale band across the roadway.",
       "documentation": "docs/assets/paris-pont-neuf.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2317,7 +2317,7 @@
           }
         ]
       },
-      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Five regularly distributed masonry vaults independent of alignment nodes, rounded cutwaters and stylized eagle reliefs.",
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Five regularly distributed masonry vaults independent of alignment nodes, rounded cutwaters and stylized eagle reliefs. QA pass (2026-10): four equestrian groups on end plinths (original blocky silhouettes); continuous stone parapet with coping; far end slabs no longer show stone through the paving.",
       "documentation": "docs/assets/paris-pont-iena.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2383,7 +2383,7 @@
           }
         ]
       },
-      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Five regularly distributed shallow vaults independent of alignment nodes, full-width piers, parapets and lamps.",
+      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Five regularly distributed shallow vaults independent of alignment nodes, full-width piers, parapets and lamps. QA pass (2026-10): thin rail replaced by a continuous stone parapet with coping; far ramps follow the deck; the end flare is the shared 18 m S-curve ramp profile.",
       "documentation": "docs/assets/paris-pont-concorde.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2869,7 +2869,7 @@
           }
         ]
       },
-      "notes": "Plan, slab heights (25/67/87/94/100 m) and stack plan follow OSM building:part ways; the 124 m top is the published height (OSM ends the stack at 114 m), so the top 10 m (corbelled parapet, copper pyramid, lantern, finial) is interpretation. Roof pitch follows OSM (8.7 m) approximately. Facade rhythm (pane 1.7 x 2.25 m with mullion, 3.4 m bays, ~3.5 m floors), the Concert Hall arcade of eight arches, the 12-arch west podium arcade, the five-arch loggia, dormers, turrets, cornices, piers, awnings and the sign lettering are read from photographs, not surveyed. No ornament (grotesques, tracery, balustrade balusters), flags or doors. The 1959 east addition is not distinguished. Night: 30% of window panes glow warm, the sign is self-lit; by day glow equals glass. Flat-map grade y=0; no Tesla hardware measurements.",
+      "notes": "Plan, slab heights (25/67/87/94/100 m) and stack plan follow OSM building:part ways; the 124 m top is the published height (OSM ends the stack at 114 m), so the top 10 m (corbelled parapet, copper pyramid, lantern, finial) is interpretation. Roof pitch follows OSM (8.7 m) approximately. Facade rhythm (pane 1.7 x 2.25 m with mullion, 3.4 m bays, ~3.5 m floors), the Concert Hall arcade of eight arches, the 12-arch west podium arcade, the five-arch loggia, dormers, turrets, cornices, piers, awnings and the sign lettering are read from photographs, not surveyed. No ornament (grotesques, tracery, balustrade balusters), flags or doors. The 1959 east addition is not distinguished. Night: 30% of window panes glow warm, the sign is self-lit; by day glow equals glass. Flat-map grade y=0; no Tesla hardware measurements. QA pass (2026-10): Windows are flat quads proud of the wall (mullion a slender quad in front); no per-window boxes.",
       "documentation": "docs/assets/toronto-fairmont-royal-york.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3221,7 +3221,7 @@
           }
         ]
       },
-      "notes": "Sourced: 103.64 m tower height, 6 m dial, mapped outline (88 m x 95 m, grid bearing 73.25 deg), tower base ~12 m, 7 storeys, belfry cornice at 240 ft. Estimated from photographs: storey heights and cornice line (25-26.4 m), roof pitches (pavilion apex ~46 m, wing ridges ~38-41 m), tower stage heights, window counts and grouping, gable and turret positions, and everything on the north and east elevations and behind the pavilions (the four wing roofs slope into an L-shaped court closed by a flat dark deck, not the real skylit structure). Carved ornament, the small stone gargoyles, rustication and the cenotaph are abstracted; the several sandstones are two flat colours plus one mid band. Cornices and eaves project up to ~1.3 m beyond the mapped wall line. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 53798 triangles / 8 draws / 3546640 bytes, far 8498 / 8 / 470144.",
+      "notes": "Sourced: 103.64 m tower height, 6 m dial, mapped outline (88 m x 95 m, grid bearing 73.25 deg), tower base ~12 m, 7 storeys, belfry cornice at 240 ft. Estimated from photographs: storey heights and cornice line (25-26.4 m), roof pitches (pavilion apex ~46 m, wing ridges ~38-41 m), tower stage heights, window counts and grouping, gable and turret positions, and everything on the north and east elevations and behind the pavilions (the four wing roofs slope into an L-shaped court closed by a flat dark deck, not the real skylit structure). Carved ornament, the small stone gargoyles, rustication and the cenotaph are abstracted; the several sandstones are two flat colours plus one mid band. Cornices and eaves project up to ~1.3 m beyond the mapped wall line. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 31271 triangles / 8 draws / 1526220 bytes, far 7184 / 8 / 367860.",
       "documentation": "docs/assets/toronto-old-city-hall.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3311,7 +3311,7 @@
           }
         ]
       },
-      "notes": "No survey dimensions exist in the sources consulted; every height (octagonal roof 60 m, domes 45 m, pavilions 43 m, wings 34-35 m, north block 20 m) is the OSM mapper's, checked against photographs. Facade rhythm, portico arch proportions, turrets, dome profile, dormers, the north entrance bay and every window are estimates; rock-faced masonry is not textured. Rigid flat base at y=0: the real building stands on a rise in Queen's Park and that slope is not modelled. The north entrance bay projects up to 2.6 m beyond the mapped outline. Grounds, statues, the Whitney Block and interiors are excluded. Near 51 161 triangles / 8 draws / 2.6 MB, far 9 128 / 8 / 0.4 MB; Tesla hardware unmeasured.",
+      "notes": "No survey dimensions exist in the sources consulted; every height (octagonal roof 60 m, domes 45 m, pavilions 43 m, wings 34-35 m, north block 20 m) is the OSM mapper's, checked against photographs. Facade rhythm, portico arch proportions, turrets, dome profile, dormers, the north entrance bay and every window are estimates; rock-faced masonry is not textured. Rigid flat base at y=0: the real building stands on a rise in Queen's Park and that slope is not modelled. The north entrance bay projects up to 2.6 m beyond the mapped outline. Grounds, statues, the Whitney Block and interiors are excluded. Near 24 335 triangles / 8 draws / 0.98 MB, far 7 782 / 8 / 0.32 MB; Tesla hardware unmeasured.",
       "documentation": "docs/assets/toronto-ontario-legislative-building.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3417,7 +3417,7 @@
           }
         ]
       },
-      "notes": "Sourced: 40 m clearance (38 m in one source), spans 85.8 / 73.6 / 48.2 m, five arches, three-hinged crescent arches, 5 lanes with bike lanes, subway lower deck since 1966, Luminous Veil 2003 (5 m rods, 5.5 m over the sidewalk). Mapped (OSM): the 469.5 m roadway (the published 494 m includes approaches beyond it) and 238 m of Bloor Street East / Danforth Avenue beyond its ends, the 26.2 m deck outline and its pier notches (pier stations checked against it; P5 by symmetry), sidewalks, and every crossing road/rail/river below. Arch pin spans are exactly the published 48.2 / 73.6 / 85.8 / 73.6 / 48.2 m; piers centred on the middle arch (7 m pier base) land within 2.7 m of the outline notches. Estimated from photographs: rib spacing and depth, web pattern, subway room, pier plan and taper, niches, the concrete approach spans, edge beam and parapet sections, Veil mast spacing, lean and rod spacing (ribbons are sparser and wider than the real 12.7 cm rods), lamps. Flat-map convention: the deck is level at 40 m from the first pier to the last, with symmetric 170 m ramps (35 % steepest grade) that run out over 90 m of mapped Bloor Street East and 148 m of Danforth Avenue and ease to the approach datum; beyond the arches a concrete girder on piers, then a ramp on fill (no Veil there). Not modelled: subway train and tracks, portals through the piers, Veil LED lighting, fluting, rivets. `layer.js` redirects the shared factory's /models/landmarks/ request to /models/bridges/. Near 49 492 triangles / 17 draws / 2.06 MB; far 20 960 / 7 / 0.59 MB. No Tesla hardware measurements.",
+      "notes": "Sourced: 40 m clearance (38 m in one source), spans 85.8 / 73.6 / 48.2 m, five arches, three-hinged crescent arches, 5 lanes with bike lanes, subway lower deck since 1966, Luminous Veil 2003 (5 m rods, 5.5 m over the sidewalk). Mapped (OSM): the 469.5 m roadway (the published 494 m includes approaches beyond it) and 238 m of Bloor Street East / Danforth Avenue beyond its ends, the 26.2 m deck outline and its pier notches (pier stations checked against it; P5 by symmetry), sidewalks, and every crossing road/rail/river below. Arch pin spans are exactly the published 48.2 / 73.6 / 85.8 / 73.6 / 48.2 m; piers centred on the middle arch (7 m pier base) land within 2.7 m of the outline notches. Estimated from photographs: rib spacing and depth, web pattern, subway room, pier plan and taper, niches, the concrete approach spans, edge beam and parapet sections, Veil mast spacing, lean and rod spacing (ribbons are sparser and wider than the real 12.7 cm rods), lamps. Flat-map convention: the deck is level at 40 m from the first pier to the last, with symmetric 170 m ramps (35 % steepest grade) that run out over 90 m of mapped Bloor Street East and 148 m of Danforth Avenue and ease to the approach datum; beyond the arches a concrete girder on piers, then a ramp on fill (no Veil there). Not modelled: subway train and tracks, portals through the piers, Veil LED lighting, fluting, rivets. `layer.js` redirects the shared factory's /models/landmarks/ request to /models/bridges/. Near 48 580 triangles / 17 draws / 2.04 MB; far 20 228 / 7 / 0.58 MB. No Tesla hardware measurements.",
       "documentation": "docs/assets/toronto-prince-edward-viaduct.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3613,7 +3613,7 @@
           }
         ]
       },
-      "notes": "Massing, wing heights, Crystal prism outlines and roof planes follow OSM building parts (Crystal heights scaled 37/39 to the published 37 m apex). Wall lean (11-27 degrees), the 10-12 m cantilever, every glazing band and window row are photo estimates, not a survey; the rear prisms are the least certain. Glazing is 23 % of the Crystal seen from Bloor Street and 10 % from above, against a published 20-25 % of the envelope. Plaza, OpenROM works, interiors, carved stonework and street furniture are not modelled. Near 14,790 triangles / 15 draws / 862 KB; far 1,731 / 13 / 105 KB. Flat-map grade y=0. No Tesla hardware measurements.",
+      "notes": "Massing, wing heights, Crystal prism outlines and roof planes follow OSM building parts (Crystal heights scaled 37/39 to the published 37 m apex). Wall lean (11-27 degrees), the 10-12 m cantilever, every glazing band and window row are photo estimates, not a survey; the rear prisms are the least certain. Glazing is 23 % of the Crystal seen from Bloor Street and 10 % from above, against a published 20-25 % of the envelope. Plaza, OpenROM works, interiors, carved stonework and street furniture are not modelled. Near 14,642 triangles / 13 draws / 741,304 B; far 1,731 / 8 / 86,152 B. Flat-map grade y=0. No Tesla hardware measurements.",
       "documentation": "docs/assets/toronto-royal-ontario-museum.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3715,7 +3715,7 @@
           }
         ]
       },
-      "notes": "Roof 274.9 m and 68 storeys are sourced (OSM, Wikipedia); the chevron, sawtooth corners, 4 m bands and wings follow mapped OSM parts. Floor pitch 3.95 m, 1.6 x 2.2 m windows, 0.9 m reveals, granite tone, roof plant (top 277 m), the plain red S mark and all heritage-building facade detail are estimates. Not modelled: the glazed canopies and atria beside the tower (OSM ways 366568729, 366570218), the plaza and below-grade levels. Near GLB is 3.9 MB because of window reveals. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "notes": "Roof 274.9 m and 68 storeys are sourced (OSM, Wikipedia); the chevron, sawtooth corners, 4 m bands and wings follow mapped OSM parts. Floor pitch 3.95 m, 1.6 x 2.2 m windows, 0.9 m reveals, granite tone, roof plant (top 277 m), the plain red S mark and all heritage-building facade detail are estimates. Not modelled: the glazed canopies and atria beside the tower (OSM ways 366568729, 366570218), the plaza and below-grade levels. Near GLB is 2.4 MB (53 k triangles): tower windows keep left and right reveals, heritage windows the left one; sills and heads are not drawn. y=0 is flat-map grade. No Tesla hardware measurements.",
       "documentation": "docs/assets/toronto-scotia-plaza.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3911,7 +3911,7 @@
           }
         ]
       },
-      "notes": "Published: 84 x 31 x 9 m tabletop, underside 26 m above ground, twelve 28 m legs (914 mm tapering to 450 mm) in six pairs. OSM tags the tabletop height=26 / min_height=19 and the mapped outline is 86.7 x 31.6 m; the model follows the published figures (underside 26 m, roof 35 m) and sits inside the outline. Estimated: pixel layout (density and 0.75 m module from photographs), leg plan positions and colours, red slab route, brick block heights and split, the two black cores beyond their mapped outlines, the roof plant enclosure, window rhythm, brick and cladding colours. Flat-map grade y=0; no Tesla hardware measurements.",
+      "notes": "Published: 84 x 31 x 9 m tabletop, underside 26 m above ground, twelve 28 m legs (914 mm tapering to 450 mm) in six pairs. OSM tags the tabletop height=26 / min_height=19 and the mapped outline is 86.7 x 31.6 m; the model follows the published figures (underside 26 m, roof 35 m) and sits inside the outline. Estimated: pixel layout (density and 0.75 m module from photographs), leg plan positions and colours, red slab route, brick block heights and split, the two black cores beyond their mapped outlines, the roof plant enclosure, window rhythm, brick and cladding colours. Flat-map grade y=0; no Tesla hardware measurements. QA pass (2026-10): concrete leg footings removed; white and black legs, deck and blue parapet band share the skin colours; far folds dark and purple legs into black, maroon into brick.",
       "documentation": "docs/assets/toronto-sharp-centre-for-design.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -5498,7 +5498,7 @@
           }
         ]
       },
-      "notes": "Sourced: SAS 624.385 m (10 + 180 + 385 + 49.385 m), tower 160 m with four steel shafts and shear links, single 0.78 m cable anchored in the deck at E2 and looped around W2, suspenders every 10 m splayed to the outer box edges, two 25 m decks with five lanes each, 4.8 m path on the south (eastbound) side, crossbeams every 30 m, Skyway 2.1 km of precast segmental girders 5.5 m deep at mid-span and 9 m at the piers on 14 pairs of piers 45-115 ft tall. Mapped (OSM): both carriageways (41.8 m apart on the SAS and Skyway, converging to 26 m where the alignment starts on YBI), the tower outline (its centroid is the origin; W2 and E2 from the published spans land 0.2 and 0.3 m from the mapped crossbeams), the deck outlines (box and path edges), the crossbeam stations, the trail and the YBI ramps. Estimated: the real deck height (about 57 m over the SAS from the Caltrans elevation, SPEC.realDeckM; 22 m at E16), Skyway pier stations (not mapped; E3 160 m past E2, nine 160 m then four 122.5 m spans), tower leg sections and taper, shear-link spacing, cable sag shape, box and girder sections, YBI transition and touchdown structures, light poles. Flat-map convention (a compromise below the real deck): constant grades with parabolic vertical curves; 15.05 % from the YBI foot to ~30 m at the SAS west end (the westbound viaduct climbs over the eastbound one toward the double-deck tunnel just west of the alignment, so the ramp is 224 m), 5.3 % over the back span to 40 m at the tower, level across the main span, down the Skyway to 22 m at E16 and 4.4 % over the touchdown onto the mapped on-grade I-80. Not modelled: the old East Span piers kept as viewpoints, the belvederes, the cable bands, the night lighting of the tower and cables. The exported GLB is authored on the real profile; Cityscape lowers deck and superstructure together (tower top 142.5 m there, 160 m in world and in the inspector). Near 72 330 triangles / 33 draws / 2.70 MB; far 22 140 / 7 / 0.80 MB. No Tesla hardware measurements.",
+      "notes": "Sourced: SAS 624.385 m (10 + 180 + 385 + 49.385 m), tower 160 m with four steel shafts and shear links, single 0.78 m cable anchored in the deck at E2 and looped around W2, suspenders every 10 m splayed to the outer box edges, two 25 m decks with five lanes each, 4.8 m path on the south (eastbound) side, crossbeams every 30 m, Skyway 2.1 km of precast segmental girders 5.5 m deep at mid-span and 9 m at the piers on 14 pairs of piers 45-115 ft tall. Mapped (OSM): both carriageways (41.8 m apart on the SAS and Skyway, converging to 26 m where the alignment starts on YBI), the tower outline (its centroid is the origin; W2 and E2 from the published spans land 0.2 and 0.3 m from the mapped crossbeams), the deck outlines (box and path edges), the crossbeam stations, the trail and the YBI ramps. Estimated: the real deck height (about 57 m over the SAS from the Caltrans elevation, SPEC.realDeckM; 22 m at E16), Skyway pier stations (not mapped; E3 160 m past E2, nine 160 m then four 122.5 m spans), tower leg sections and taper, shear-link spacing, cable sag shape, box and girder sections, YBI transition and touchdown structures, light poles. Flat-map convention (a compromise below the real deck): constant grades with parabolic vertical curves; 15.05 % from the YBI foot to ~30 m at the SAS west end (the westbound viaduct climbs over the eastbound one toward the double-deck tunnel just west of the alignment, so the ramp is 224 m), 5.3 % over the back span to 40 m at the tower, level across the main span, down the Skyway to 22 m at E16 and 4.4 % over the touchdown onto the mapped on-grade I-80. Not modelled: the old East Span piers kept as viewpoints, the belvederes, the cable bands, the night lighting of the tower and cables. The exported GLB is authored on the real profile; Cityscape lowers deck and superstructure together (tower top 142.5 m there, 160 m in world and in the inspector). Near 73 304 triangles / 33 draws / 2.79 MB; far 22 692 / 7 / 0.84 MB. No Tesla hardware measurements.",
       "documentation": "docs/assets/san-francisco-bay-bridge-east-span.md",
       "city": "San Francisco",
       "license": "CC-BY-4.0",
@@ -5589,7 +5589,7 @@
           }
         ]
       },
-      "notes": "Sourced: main spans 2310 ft and side spans 1160 ft (towers land within 1.2 m of the published spacing on their mapped OSM outlines), tower tops 458/502 ft above low water (HAER; Wikipedia and OSM give 160 m), 66 ft x 35 ft truss, two 26 in cables, 220 ft clearance, five 57.5 ft lanes per deck, westbound on the upper deck, bearing 40.3 deg. Estimated: deck elevations (70.3 m at W2/W6, 83.7 at W3/W5, 88 at W4), the 9 m deck separation, truss panel and member sizes, leg taper, W4 and anchorage heights, cable sags. Flat-map adaptation: the deck rises from the SoMa viaduct to the San Francisco anchorage (30 m) and W2 (max 9.5 %), the eastbound ramp climbs under it (max 11.8 %), and the deck falls from W6 to the tunnel's east portal (max 16 %), so W1 (46.5 m) and W7 (28 m) are lower than real and the island tunnel is drawn as a concrete tube. Far LOD (2-5 km) draws the truss as its chords and deck slab, every fourth suspender, and keeps the towers, W4 and the cables. Near 58 491 triangles / 29 draws / 2.46 MB; far 11 004 / 8 / 0.43 MB. While the followed car is on the lower deck the upper deck fades (spec.upperDeck). The provider's tower extrusions are masked only once the registry forwards prepareBuildings to road bridges (see the doc). No Tesla hardware measurements.",
+      "notes": "Sourced: main spans 2310 ft and side spans 1160 ft (towers land within 1.2 m of the published spacing on their mapped OSM outlines), tower tops 458/502 ft above low water (HAER; Wikipedia and OSM give 160 m), 66 ft x 35 ft truss, two 26 in cables, 220 ft clearance, five 57.5 ft lanes per deck, westbound on the upper deck, bearing 40.3 deg. Estimated: deck elevations (70.3 m at W2/W6, 83.7 at W3/W5, 88 at W4), the 9 m deck separation, truss panel and member sizes, leg taper, W4 and anchorage heights, cable sags. Flat-map adaptation: the deck rises from the SoMa viaduct to the San Francisco anchorage (30 m) and W2 (max 9.5 %), the eastbound ramp climbs under it (max 11.8 %), and the deck falls from W6 to the tunnel's east portal (max 16 %), so W1 (46.5 m) and W7 (28 m) are lower than real and the island tunnel is drawn as a concrete tube. Far LOD (2-5 km) draws the truss as its chords and deck slab, every fourth suspender, and keeps the towers, W4 and the cables. Near 59 825 triangles / 29 draws / 2.54 MB; far 11 396 / 8 / 0.45 MB. While the followed car is on the lower deck the upper deck fades (spec.upperDeck). The provider's tower extrusions are masked only once the registry forwards prepareBuildings to road bridges (see the doc). No Tesla hardware measurements.",
       "documentation": "docs/assets/san-francisco-bay-bridge-west-span.md",
       "city": "San Francisco",
       "license": "CC-BY-4.0",

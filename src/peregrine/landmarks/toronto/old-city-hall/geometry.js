@@ -1,9 +1,10 @@
 import * as THREE from 'three';
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
 import { MASSES, WALLS, TOWER, PORCH, TURRET, Y, EAVE, PAV_EAVE, CENTRE_EAVE, WING_RISE, PAV_RISE, wallSpan } from './old-city-hall-plan.js';
 import { buildTower } from './old-city-hall-tower.js';
-import { hipRoof, gableRoof, localGable, localShed, rakeBar, pyramid, archPoints, openingPanel, openingFrame, wallMatrix } from './old-city-hall-solids.js';
+import { hipRoof, gableRoof, localGable, localShed, rakeBar, pyramid, archPoints, openingPanel, openingFrame, wallMatrix, wallBoxer, dropFaces, dropGroundFaces } from './old-city-hall-solids.js';
 
 // Old City Hall (E. J. Lennox, 1899): an original procedural model. The plan is
 // the mapped outline (OSM relation 3116); heights, roof pitches and window
@@ -54,7 +55,7 @@ export function create({ detail = 'near' } = {}) {
   for (const w of WALLS) {
     const M = wallMatrix(w.side, w.plane), [s0, s1] = wallSpan(w), L = s1 - s0, yMin = w.yMin ?? 0;
     const at = (g, m) => { g.applyMatrix4(M); put(g, m); };
-    const wbox = (m, sa, sb, y0, y1, d0, d1) => { const g = new THREE.BoxGeometry(sb - sa, y1 - y0, d1 - d0); g.translate((sa + sb) / 2, (y0 + y1) / 2, (d0 + d1) / 2); at(g, m); };
+    const wbox = wallBoxer(at);
     // string courses, plinth and cornice
     wbox('redstone', s0, s1, Math.max(yMin, 0), Y.base, -0.05, 0.28);
     for (const y of [Y.l0, Y.l1, Y.l2, Y.l3]) if (y > yMin) wbox('redstone', s0, s1, y - 0.28, y + 0.28, -0.05, 0.22);
@@ -63,10 +64,10 @@ export function create({ detail = 'near' } = {}) {
     wbox('redstone', s0 - 0.05, s1 + 0.05, w.top - 0.1, w.top + 0.12, -0.05, 0.78);
     if (near) for (let y = 2.1; y < w.top - 2.6; y += 2.1) { // banded ashlar courses
       if (Math.abs(y - Y.l0) < 1.0 || Math.abs(y - Y.l1) < 1.0 || Math.abs(y - Y.l2) < 1.0 || Math.abs(y - Y.l3) < 1.0 || y < yMin) continue;
-      wbox('band', s0, s1, y, y + 0.34, -0.05, 0.07);
+      wbox('band', s0, s1, y, y + 0.34, -0.05, 0.07, 'f'); // a flat strip: front only
     }
-    if (near && (w.kind === 'pavilion' || w.kind === 'centre' || w.kind === 'bay') && L > 8) for (const s of [s0 + 0.35, s1 - 0.35]) { // corner quoins
-      for (let y = yMin ? Math.max(yMin, 0.9) : 0.9; y < w.top - 2.4; y += 1.0) wbox(Math.floor(y) % 2 ? 'band' : 'stone', s - 0.5, s + 0.5, y, y + 0.9, -0.05, 0.16);
+    if (near && (w.kind === 'pavilion' || w.kind === 'centre' || w.kind === 'bay') && L > 8) for (const s of [s0 + 0.35, s1 - 0.35]) { // corner quoins: the front and the end that turns the corner
+      for (let y = yMin ? Math.max(yMin, 0.9) : 0.9; y < w.top - 2.4; y += 1.0) wbox(Math.floor(y) % 2 ? 'band' : 'stone', s - 0.5, s + 0.5, y, y + 0.9, -0.05, 0.16, s < (s0 + s1) / 2 ? 'fl' : 'fr');
     }
     if (w.kind === 'centre') { // lean-to roof over the projecting centre bay, up to the wing wall
       const depth = w.side === 'N' ? 3.3 : 3.1;
@@ -85,22 +86,22 @@ export function create({ detail = 'near' } = {}) {
           const g = lv.kind === 'rect' ? new THREE.PlaneGeometry(w0, lv.h).translate(c, lv.y + lv.h / 2, 0.12) : openingPanel(c, lv.y, w0, lv.h, 0.12, 2);
           at(g, 'glass'); continue;
         }
-        at(lv.kind === 'rect' ? new THREE.PlaneGeometry(w0, lv.h).translate(c, lv.y + lv.h / 2, 0.12) : openingPanel(c, lv.y, w0, lv.h, 0.12, 5), 'glass');
+        at(lv.kind === 'rect' ? new THREE.PlaneGeometry(w0, lv.h).translate(c, lv.y + lv.h / 2, 0.12) : openingPanel(c, lv.y, w0, lv.h, 0.12, lv.kind === 'arcade' ? 3 : 4), 'glass');
         if (lv.kind === 'rect') { wbox('redstone', c - w0 / 2 - 0.25, c + w0 / 2 + 0.25, lv.y + lv.h, lv.y + lv.h + 0.4, 0.0, 0.38); wbox('stone', c - w0 / 2 - 0.2, c + w0 / 2 + 0.2, lv.y - 0.25, lv.y, 0.0, 0.32); }
-        else { at(openingFrame(c, lv.y, w0, lv.h, lv.kind === 'arcade' ? 0.22 : 0.4, lv.kind === 'arcade' ? 0.22 : 0.34, 5), 'redstone'); if (lv.kind === 'arch') wbox('stone', c - 0.06, c + 0.06, lv.y, lv.y + lv.h - w0 / 2, 0.1, 0.24); }
+        else { at(openingFrame(c, lv.y, w0, lv.h, lv.kind === 'arcade' ? 0.22 : 0.4, lv.kind === 'arcade' ? 0.22 : 0.34, lv.kind === 'arcade' ? 3 : 4), 'redstone'); if (lv.kind === 'arch') wbox('stone', c - 0.06, c + 0.06, lv.y, lv.y + lv.h - w0 / 2, 0.1, 0.24); }
       }
     }
     if (giant && yMin === 0) { // two-storey round arches over grouped, mullioned windows
       const n = Math.max(1, Math.round((L - 2 * margin) / 5.9)), step = (L - 2 * margin) / n;
       for (let i = 0; i < n; i++) {
         const c = s0 + margin + (i + 0.5) * step, aw = 4.3, y0 = 6.6, ah = 11.4;
-        at(openingPanel(c, y0, aw, ah, 0.12, near ? 8 : 2), 'glass');
+        at(openingPanel(c, y0, aw, ah, 0.12, near ? 7 : 2), 'glass');
         if (!near) continue;
-        at(openingFrame(c, y0, aw, ah, 0.55, 0.36, 8), 'redstone');
-        at(openingFrame(c, y0, aw + 1.1, ah + 0.55, 0.22, 0.5, 8), 'stone');
-        wbox('stone', c - 0.09, c + 0.09, y0, y0 + ah - aw / 2 + 0.6, 0.1, 0.3);
-        for (const y of [10.6, 14.4]) wbox('stone', c - aw / 2, c + aw / 2, y, y + 0.28, 0.1, 0.3);
-        wbox('redstone', c - aw / 2 - 0.3, c + aw / 2 + 0.3, y0 + 3.6, y0 + 3.95, 0.05, 0.45); // impost course
+        at(openingFrame(c, y0, aw, ah, 0.55, 0.36, 7, { outerSide: false }), 'redstone');
+        at(openingFrame(c, y0, aw + 1.1, ah + 0.55, 0.22, 0.5, 7), 'stone');
+        wbox('stone', c - 0.09, c + 0.09, y0, y0 + ah - aw / 2 + 0.6, 0.1, 0.3, 'fulr');
+        for (const y of [10.6, 14.4]) wbox('stone', c - aw / 2, c + aw / 2, y, y + 0.28, 0.1, 0.3, 'fud'); // transoms butt against the frame's reveals
+        wbox('redstone', c - aw / 2 - 0.3, c + aw / 2 + 0.3, y0 + 3.6, y0 + 3.95, 0.05, 0.42); // impost course
       }
     }
     // gables over the middle of pavilions, bays and centres (centres also take a smaller one either side)
@@ -116,11 +117,11 @@ export function create({ detail = 'near' } = {}) {
           const arches = g0 > 6 ? 3 : 2;
           for (let k = 0; k < arches; k++) {
             const x = c + (k - (arches - 1) / 2) * (g0 > 6 ? 1.9 : 1.5);
-            at(openingPanel(x, base + 1.3, 1.1, 2.3, 0.62, 5), 'glass'); at(openingFrame(x, base + 1.3, 1.1, 2.3, 0.2, 0.66, 5), 'redstone');
+            at(openingPanel(x, base + 1.3, 1.1, 2.3, 0.62, 3), 'glass'); at(openingFrame(x, base + 1.3, 1.1, 2.3, 0.2, 0.66, 3), 'redstone');
           }
           if (g0 > 6) { const rose = new THREE.CircleGeometry(0.55, 12); rose.translate(c, base + rise - 2.2, 0.63); at(rose, 'glass'); }
         }
-        const g = new THREE.ExtrudeGeometry(tg, { depth: 0.6, bevelEnabled: false }); g.translate(0, 0, -0.05); at(g, 'stone');
+        const g = new THREE.ExtrudeGeometry(tg, { depth: 0.6, bevelEnabled: false }); g.translate(0, 0, -0.05); at(dropFaces(g, (n) => n[1] < -0.5 || n[2] < -0.5), 'stone'); // the plate's foot and back are inside the wall and roof
         for (const k of [-1, 1]) at(rakeBar(c + k * (g0 / 2 + 0.05), base - 0.05, c + k * 0.05, base + rise + 0.15, 0.34, -0.05, 0.78), 'redstone'); // raking coping
         at(localGable(c - g0 / 2 + 0.5, c + g0 / 2 - 0.5, -depth, 0.42, base, rise - 0.75, { over: 0.0, drop: 0.0 }), 'roof');
       }
@@ -172,7 +173,9 @@ export function create({ detail = 'near' } = {}) {
   root.traverse((o) => {
     if (!o.isMesh) return;
     o.geometry.deleteAttribute('bridgeLift');
-    o.geometry.rotateY(phi); o.geometry.computeBoundingBox(); o.geometry.computeBoundingSphere();
+    o.geometry.rotateY(phi); dropGroundFaces(o.geometry);
+    o.geometry = mergeVertices(o.geometry, 1e-4); // flat faces share their corners: 4 vertices per quad, not 6
+    o.geometry.computeBoundingBox(); o.geometry.computeBoundingSphere();
     o.material.color.set(PALETTES.light[o.material.name]);
   });
   root.userData.elevationDatum = 'Local grade y=0; the Queen St frontage and courtyard are one level';
@@ -185,7 +188,7 @@ export function create({ detail = 'near' } = {}) {
 function buildPorch({ b, put, near, box, cyl }) {
   const { u0, u1, v0, top, arch, pier, springY } = PORCH, M = wallMatrix('S', v0);
   const at = (g, m) => { g.applyMatrix4(M); put(g, m); };
-  const wbox = (m, sa, sb, y0, y1, d0, d1) => { const g = new THREE.BoxGeometry(sb - sa, y1 - y0, d1 - d0); g.translate((sa + sb) / 2, (y0 + y1) / 2, (d0 + d1) / 2); at(g, m); };
+  const wbox = wallBoxer(at);
   const depth = 1.5, ends = (u1 - u0 - 3 * arch - 2 * pier) / 2;
   const centres = [0, 1, 2].map((i) => u0 + ends + arch / 2 + i * (arch + pier));
   // front wall with three arched portals, then the solid mass behind it
@@ -193,9 +196,9 @@ function buildPorch({ b, put, near, box, cyl }) {
   for (const c of centres) shape.holes.push(new THREE.Path(archPoints(c, 0.05, arch, springY + arch / 2, near ? 10 : 6).map(([s, y]) => new THREE.Vector2(s, y))));
   const wall = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: false }); wall.translate(0, 0, -depth); at(wall, 'redstone');
   wbox('redstone', u0, u1, 0, top - 0.05, -depth - 9.9, -depth);
-  wbox('roof', u0, u1, top - 0.05, top, -depth - 9.9, -0.02);
+  wbox('roof', u0, u1, top - 0.05, top + 0.06, -depth - 9.9, -0.02); // a hair over the wall's top, not coplanar with it
   for (const c of centres) {
-    at(openingPanel(c, 0, arch - 0.1, springY + arch / 2 - 0.05, -depth + 0.02, near ? 10 : 6), 'glass');
+    at(openingPanel(c, 0, arch - 0.1, springY + arch / 2 - 0.05, -depth + 0.08, near ? 8 : 6), 'glass');
     at(openingFrame(c, 0, arch, springY + arch / 2, 0.42, 0.34, near ? 10 : 6), 'stone');
     if (near) {
       at(openingFrame(c, 0, arch + 0.84, springY + arch / 2 + 0.42, 0.34, 0.5, 10), 'redstone');

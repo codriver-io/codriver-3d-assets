@@ -22,9 +22,9 @@
   "assets": {
     "near": {
       "url": "/models/buildings/sharp-centre-for-design-near.glb",
-      "bytes": 533476,
-      "triangles": 10448,
-      "drawCalls": 19,
+      "bytes": 513608,
+      "triangles": 9968,
+      "drawCalls": 14,
       "bounds": {
         "min": [
           -80.14849090576172,
@@ -32,17 +32,17 @@
           -92.03575134277344
         ],
         "max": [
-          31.399263381958008,
+          30.75912094116211,
           38.599998474121094,
-          48.95313262939453
+          48.26206588745117
         ]
       }
     },
     "far": {
       "url": "/models/buildings/sharp-centre-for-design-far.glb",
-      "bytes": 105324,
+      "bytes": 99380,
       "triangles": 2088,
-      "drawCalls": 14,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -80.14849090576172,

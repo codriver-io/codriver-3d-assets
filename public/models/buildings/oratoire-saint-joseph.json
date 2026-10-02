@@ -30,15 +30,15 @@
   "assets": {
     "near": {
       "url": "/models/buildings/oratoire-saint-joseph-near.glb",
-      "bytes": 438792,
-      "triangles": 8954,
-      "drawCalls": 6
+      "bytes": 414308,
+      "triangles": 8483,
+      "drawCalls": 7
     },
     "far": {
       "url": "/models/buildings/oratoire-saint-joseph-far.glb",
-      "bytes": 255044,
-      "triangles": 4810,
-      "drawCalls": 6
+      "bytes": 225252,
+      "triangles": 4191,
+      "drawCalls": 7
     }
   },
   "license": "CC-BY-4.0",

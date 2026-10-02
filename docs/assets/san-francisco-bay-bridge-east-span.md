@@ -53,6 +53,7 @@ Adopted from the Golden Gate branch (merged): no corridor flattening; the struct
 - **Recognition features**: the tower's four faceted legs with the shear-link "ladder" in the gaps; one cable in four inclined planes from the single saddle to the outer deck edges (the X in plan), wrapped under the decks at W2 and anchored at E2; the angled suspender canopy over each deck; the twin decks with the open gap and crossbeams; the south path with its fence; the long Skyway with haunched girders on paired T-columns.
 - **Layout**: the profile is the shared `createBridgeProfile` plus a station-dependent layout (`layoutEdges`): the carriageway separation follows the mapped ways and the deck widens (a gore) where the YBI westbound off-ramp (OSM 322962944) and eastbound on-ramp (329394287) meet the carriageways. `roadEdges`, `fittedLateral` and `bridgeRoadHeight` are the shared functions with these edges; HD pavement sections still win, clamped to 3 m of the layout so a trail captured on the same side cannot stretch a carriageway. No shared file was changed.
 - **Lift weights**: decks, boxes and girders move with the deck (1); columns grade from 0 at the ground to 1 under the deck; pile caps and footings stay (0).
+- **Path slab**: the cantilever under the path has no top face between the path surface's edges (it lay 5 cm under it and z-fought at distance); only its two margins, where the railings stand, keep theirs.
 - **Far LOD**: same decks, boxes, girders, tower, cable (10 samples per half span), every other suspender, outer barriers, path fence top rail; no paint, lamps, inner barriers, fence sheets or W2 footings.
 - **Materials** (both themes): `steel`, `concrete`, `footing`, `cable`, `asphalt`, `paint`, `rail`, `path`, `lamp`.
 
@@ -60,8 +61,8 @@ Adopted from the Golden Gate branch (merged): no corridor flattening; the struct
 
 | | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 72,330 | 33 | 2,695 KB |
-| Far | 22,140 | 7 | 798 KB |
+| Near | 73,304 | 33 | 2,728 KB |
+| Far | 22,692 | 7 | 817 KB |
 
 Budgets: near ≤ 120,000 / 40 / 4.5 MB, far ≤ 30,000 / 10 / 1.2 MB. Near has four spatial chunks (YBI + SAS, three along the Skyway).
 

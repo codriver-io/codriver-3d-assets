@@ -23,8 +23,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/casa-loma-near.glb",
-      "bytes": 1780632,
-      "triangles": 29786,
+      "bytes": 1641392,
+      "triangles": 27721,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -41,9 +41,9 @@
     },
     "far": {
       "url": "/models/buildings/casa-loma-far.glb",
-      "bytes": 583900,
-      "triangles": 9435,
-      "drawCalls": 9,
+      "bytes": 428156,
+      "triangles": 7082,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -94.32421875,

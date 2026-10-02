@@ -68,10 +68,10 @@ A driver sees, and the model has:
 
 | | Triangles | Draw calls | Bytes |
 | --- | --- | --- | --- |
-| Near | 40,618 | 13 | 2,002,444 |
-| Far | 12,418 | 10 | 713,724 |
+| Near | 40,618 | 13 | 1,750,988 |
+| Far | 9,106 | 8 | 441,552 |
 
-Budgets are 160,000 / 48 and 45,000 / 14. Measured from the exported GLBs; these are model primitives, not Tesla hardware timings.
+Budgets: building near 60,000 / 14 / 2.5 MB, far 12,000 / 8 / 500 KB. Far is lighter than before because the 3,520 triangles of ROGERS CENTRE strokes (a few pixels at far range) became four red bars per sign (192 triangles in all), and two small materials were folded into the hotel glass (`FOLD` in `config.js`: the 4-triangle `jays` banner and the prow `glass` bands). Window mullions, transoms and posts now overlap the glazing by 6 cm so they share no plane with it (coplanar overlap 111 m2 to 0). Measured from the exported GLBs; these are model primitives, not Tesla hardware timings.
 
 ## Approximations and open problems
 

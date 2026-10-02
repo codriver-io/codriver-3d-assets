@@ -49,6 +49,26 @@ export function kit(b) {
     const [x, z] = facePoint(f, (s0 + s1) / 2, (q0 + q1) / 2);
     b.box(material, [x, (y0 + y1) / 2, z], [s1 - s0, y1 - y0, q1 - q0], Math.atan2(-f.t[1], f.t[0]));
   }
+  /**
+   * The visible faces of a face-aligned box, nothing else (a box is 12 triangles; a mullion or a spandrel seen from
+   * outside needs two to six). `faces` is any of: f front (q1, outward), b back (q0), l left (s0), r right (s1),
+   * u up, d down. Winding follows each face's outward direction, whichever way the quad is listed.
+   */
+  function slab(material, f, s0, s1, y0, y1, q0, q1, faces = 'flrud') {
+    const P = (s, y, q) => { const [x, z] = facePoint(f, s, q); return [x, y, z]; };
+    const side = (pts, hint) => {
+      const [a, b, c] = pts, u = [b[0] - a[0], b[1] - a[1], b[2] - a[2]], v = [c[0] - a[0], c[1] - a[1], c[2] - a[2]];
+      const nrm = [u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]];
+      quad(material, ...(nrm[0] * hint[0] + nrm[1] * hint[1] + nrm[2] * hint[2] < 0 ? [pts[0], pts[3], pts[2], pts[1]] : pts));
+    };
+    const n = [f.n[0], 0, f.n[1]], t = [f.t[0], 0, f.t[1]];
+    if (faces.includes('f')) side([P(s0, y0, q1), P(s1, y0, q1), P(s1, y1, q1), P(s0, y1, q1)], n);
+    if (faces.includes('b')) side([P(s0, y0, q0), P(s1, y0, q0), P(s1, y1, q0), P(s0, y1, q0)], [-n[0], 0, -n[2]]);
+    if (faces.includes('l')) side([P(s0, y0, q0), P(s0, y0, q1), P(s0, y1, q1), P(s0, y1, q0)], [-t[0], 0, -t[2]]);
+    if (faces.includes('r')) side([P(s1, y0, q0), P(s1, y0, q1), P(s1, y1, q1), P(s1, y1, q0)], t);
+    if (faces.includes('u')) side([P(s0, y1, q0), P(s1, y1, q0), P(s1, y1, q1), P(s0, y1, q1)], [0, 1, 0]);
+    if (faces.includes('d')) side([P(s0, y0, q0), P(s1, y0, q0), P(s1, y0, q1), P(s0, y0, q1)], [0, -1, 0]);
+  }
   /** A box aligned to a rectangle: centre (u, y, v) in its local frame, sizes along u, up, along v. */
   function rectBox(material, r, u, y, v, w, h, d) {
     const [x, z] = rectFrame(r).at(u, v);
@@ -60,7 +80,7 @@ export function kit(b) {
     const g = new THREE.ExtrudeGeometry(shape, { depth: y1 - y0, bevelEnabled: false, steps: 1 });
     g.rotateX(-Math.PI / 2); g.translate(0, y0, 0); b.put(g, material);
   }
-  return { quad, panel, faceBox, rectBox, prism };
+  return { quad, panel, faceBox, slab, rectBox, prism };
 }
 
 /** Deterministic 0..1 hash of four integers (lit-window selection). */

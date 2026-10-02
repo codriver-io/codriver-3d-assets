@@ -66,7 +66,9 @@ arches and Great Hall clerestory, which the night palette lights warm).
 
 - Walls with windows are slabs with the openings punched through (`union-station-kit.js` `wallU`/`wallV`),
   the mass behind starts where the slab ends, and one glass strip per window row is tucked into the back of the
-  slab. A wall of 60 windows therefore costs four boxes, no coplanar sheets, and the reveal is real.
+  slab. A wall of 60 windows therefore costs four boxes, no coplanar sheets, and the reveal is real. The slab's
+  back cap lies against the mass behind it and the glass, so `wallU` / `wallV` drop it (about a third of the
+  slab's triangles, and the stone-over-glass coplanar overlap of 1,479 m2).
 - Cornices are stacked slabs whose projecting sides are chosen per block, so adjoining blocks never overlap
   same-facing tops. Column shafts are lathed with entasis, echinus and separate plinth / abacus.
 - The lettering is block strokes built from boxes (no font); it reads left to right from Front Street.
@@ -74,7 +76,12 @@ arches and Great Hall clerestory, which the night palette lights warm).
 - Lathed columns have no pole caps (the plinth and abacus close them), which removed 864 degenerate and 36 inside-out triangles; a test now asserts none remain.
 - The far model keeps every punched window bay (as bands would have turned the wings into dark glass), the
   columns as tapered lathes, the moat, cornices, hip, sheds and vaults; it drops muntins, dentils, roundels,
-  dormers, grilles, lettering and seams.
+  dormers, grilles, lettering and seams, and leaves the two rear ranges (facing the rail corridor) without
+  window holes.
+- **Draw budget** (`FOLD` in `config.js`): near keeps all eleven materials. Far folds the granite plinth (`base`) and the
+  shed roof (`shed`) into `roof`, which is the same grey in both themes, and the dark steel seams (`metal`) into
+  `glass`, which leaves seven draws and 425 KB. Overlap fixes: shed-roof seams are sunk into the roof, the moat glass
+  roof ends inside the plinth and the moat pier caps start inside the coping (coplanar overlap 1,981 m2 to 2 m2).
 
 ## Approximations
 
@@ -94,8 +101,8 @@ pins that every model vertex is within 1.2 m of these rings (cornice overhang, p
 
 | LOD | Triangles | Mesh draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 29,627 | 11 | 1,398,008 |
-| Far | 9,225 | 10 | 596,512 |
+| Near | 28,159 | 11 | 1,284,020 |
+| Far | 7,045 | 7 | 425,252 |
 
 ## Verification
 

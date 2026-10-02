@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 4,686,944 bytes · 114,000 triangles · 6 draws |
-| Far | 1,060,784 bytes · 27,966 triangles · 6 draws |
+| Near | 1,096,828 bytes · 27,902 triangles · 6 draws |
+| Far | 258,416 bytes · 6,314 triangles · 6 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-grand-palais&view=facade), [far, roof](/asset-preview.html?asset=paris-grand-palais&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-grand-palais). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -55,3 +55,7 @@ Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-g
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). vault lattice kept sparse (major ribs about every 8 m, 13 m far, no fine transverse bars); columns, windows and balustrade are simple shafts, framed quads and parapets. Exported cost: near 27,902 triangles / 6 draws / 1,096,828 bytes; far 6,314 / 6 / 258,416.

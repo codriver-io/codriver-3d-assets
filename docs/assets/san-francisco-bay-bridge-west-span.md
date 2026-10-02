@@ -54,6 +54,9 @@ landmark and is not modelled here.
   necklace lights and the Bay Lights bright, south suspenders dim.
 - **Tunnel portal**: a concrete face with an arched bore (dark above the tunnel roof), two concentric arch
   rings ("three planes of broad arches"), stepped blocks over the crown and wing walls splayed toward the bridge.
+- **Deck bodies** (concrete under the asphalt) have no top face between the road's edges: it was hidden 10 cm
+  under the asphalt and z-fought at distance. Only the margins beside the road keep their top (rails and barriers
+  stand on them). The lower deck keeps its closed box in the far LOD, which has no lower asphalt.
 - **Far LOD** (seen from 2–5 km): the truss is its two chords and the deck slab, a band; the diagonals,
   verticals, rails, paint, beacons, lower deck and portal bore are near only; every fourth suspender;
   5-sided cables; towers keep all bracing, W4 and the anchorages keep their mass.
@@ -104,7 +107,7 @@ the faded deck (`drive/eb-car-after.png`), layer state `_upperFade = 1`; westbou
 
 ## Costs
 
-From the manifest bytes: near 58 491 triangles / 29 draws / 2.46 MB; far 11 004 / 8 / 0.43 MB
+From the manifest bytes: near 59 825 triangles / 29 draws / 2.54 MB; far 11 396 / 8 / 0.45 MB
 (budget 120 000 / 40 / 4.5 MB and 30 000 / 10 / 1.2 MB).
 
 ## Verification

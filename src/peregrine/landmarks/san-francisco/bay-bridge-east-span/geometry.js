@@ -221,7 +221,12 @@ export function create({ detail = 'near' } = {}) {
 
   // ---- Bike/pedestrian path cantilevered off the south side of the eastbound deck --------------
   const pathIn = (s) => deckEdges(s, 1)[1], pathOut = (s) => pathIn(s) + PATH_W;
-  sweep('concrete', PATH_FROM, L, (s) => { const i = pathIn(s) - 0.1, o = pathOut(s), y = h(s) + 0.05; return [[i, y], [o, y], [o, y - 0.7], [i, y - 1.3]]; }, { caps: [true, true] });
+  // The slab has no top face under the path surface (it was 5 cm below it and z-fought at distance): only the
+  // two margins beside the path keep theirs, where the railings stand. The path ribbon closes the opening.
+  sweep('concrete', PATH_FROM, L, (s) => {
+    const i = pathIn(s) - 0.1, o = pathOut(s), y = h(s) + 0.05, a = pathIn(s) + 0.05, c = pathOut(s) - 0.3;
+    return [[i, y], [a, y], [c, y], [o, y], [o, y - 0.7], [i, y - 1.3]];
+  }, { caps: [true, true], open: [1] });
   ribbon('path', PATH_FROM, L, (s) => pathIn(s) + 0.05, (s) => pathOut(s) - 0.3, (s) => h(s) + 0.1);
   // Outer railing: a top rail on a see-through fence (one double-sided sheet), inner fence low.
   for (const [d, top] of (near ? [[(s) => pathOut(s) - 0.15, 1.45], [(s) => pathIn(s) + 0.15, 1.1]] : [[(s) => pathOut(s) - 0.15, 1.45]])) {

@@ -1,5 +1,5 @@
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, FOLD } from './config.js';
 import { meshKit, vec } from './sharp-centre-for-design-mesh.js';
 import { pixelPattern, resample, rng, WHITE, BLACK, WINDOW } from './sharp-centre-for-design-skin.js';
 import {
@@ -79,13 +79,12 @@ function tabletop(k, near) {
   k.quad('roof', pt(u0, y1, v0), pt(u1, y1, v0), pt(u1, y1, v1), pt(u0, y1, v1), [0, 1, 0]);
   k.ubox('panel_black', PLANT.u0, PLANT.u1, PLANT.y0, PLANT.y1, PLANT.v0, PLANT.v1, ['bottom']);
 }
-/** Twelve tapered steel legs (914 mm to 450 mm at both ends, 28 m long), each on a small footing. */
+/** Twelve tapered steel legs (914 mm to 450 mm at both ends, 28 m long). */
 function legs(k, near) {
   const { rMid, rEnd, taper } = LEG, profile = [[0, rEnd], [taper, rMid], [1 - taper, rMid], [1, rEnd]];
   for (const leg of LEGS) {
     const foot = pt(...[leg.foot[0], 0, leg.foot[2]]), top = pt(leg.top[0], leg.top[1], leg.top[2]);
     k.spindle(leg.color, foot, top, profile, near ? 14 : 8);
-    if (near) k.spindle('concrete', [foot[0], 0, foot[2]], [foot[0], 0.35, foot[2]], [[0, 0.9], [1, 0.9]], 10);
   }
 }
 
@@ -147,7 +146,7 @@ function block(k, near) {
     facade(k, { ...common, from: [u1, BLOCK.v1], along: [-1, 0], length: uSpan, n: west });
     facade(k, { ...common, from: [u0, BLOCK.v1], along: [0, -1], length: vSpan, n: north });
     facade(k, { ...common, from: [u1, BLOCK.v0], along: [0, 1], length: vSpan, n: south });
-    k.quad(near ? 'roof_dark' : 'roof', pt(u0, h, BLOCK.v0), pt(u1, h, BLOCK.v0), pt(u1, h, BLOCK.v1), pt(u0, h, BLOCK.v1), [0, 1, 0]);
+    k.quad('roof_dark', pt(u0, h, BLOCK.v0), pt(u1, h, BLOCK.v0), pt(u1, h, BLOCK.v1), pt(u0, h, BLOCK.v1), [0, 1, 0]);
     if (near) { // a low brick parapet round the roof edge
       const t = 0.35, p = 0.6;
       k.ubox(brick, u0, u1, h, h + p, BLOCK.v0, BLOCK.v0 + t, ['bottom']);
@@ -160,7 +159,7 @@ function block(k, near) {
   for (const c of CORES) k.ubox('panel_black', c.u0, c.u1, BLOCK_TOP, CORE_TOP, c.v0, c.v1, ['bottom']);
   // The stem toward Grange Park: two storeys of brick under a dark gable roof.
   {
-    const { u0, u1, v0, v1, wallH, ridgeH } = STEM, um = (u0 + u1) / 2, roofMat = near ? 'roof_dark' : 'roof';
+    const { u0, u1, v0, v1, wallH, ridgeH } = STEM, um = (u0 + u1) / 2, roofMat = 'roof_dark';
     k.ubox('brick', u0, u1, 0, wallH, v0, v1, ['top', 'bottom']);
     const up = [0, 1, 0], rise = ridgeH - wallH, half = (u1 - u0) / 2, m = Math.hypot(half, rise);
     // Roof slopes lean away from the ridge (toward +/-u) and up.
@@ -178,11 +177,11 @@ function block(k, near) {
   }
 }
 
-export function create({ detail = 'near' } = {}) {
+export function create({ detail = 'near', legs: withLegs = true } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  const k = meshKit(b);
-  tabletop(k, near); legs(k, near); slab(k); block(k, near);
+  const k = meshKit(b, FOLD[detail]);
+  tabletop(k, near); if (withLegs) legs(k, near); slab(k); block(k, near);
   k.flush();
   const root = b.finish();
   // Buildings have no road/deformation contract.

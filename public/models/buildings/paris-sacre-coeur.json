@@ -35,8 +35,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-sacre-coeur-near.glb",
-      "bytes": 1693888,
-      "triangles": 34918,
+      "bytes": 1588732,
+      "triangles": 32608,
       "drawCalls": 5,
       "bounds": {
         "min": [
@@ -53,9 +53,9 @@
     },
     "far": {
       "url": "/models/buildings/paris-sacre-coeur-far.glb",
-      "bytes": 799732,
-      "triangles": 16390,
-      "drawCalls": 5,
+      "bytes": 161540,
+      "triangles": 4280,
+      "drawCalls": 4,
       "bounds": {
         "min": [
           -28.83145370179801,

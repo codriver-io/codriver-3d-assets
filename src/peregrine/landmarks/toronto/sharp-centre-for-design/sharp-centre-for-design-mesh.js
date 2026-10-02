@@ -14,9 +14,9 @@ const add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
 const mul = (a, s) => [a[0] * s, a[1] * s, a[2] * s];
 export const vec = { sub, cross, dot, len, norm, add, mul };
 
-export function meshKit(builder) {
+export function meshKit(builder, fold = {}) {
   const acc = new Map();
-  const bucket = (m) => { if (!acc.has(m)) acc.set(m, { p: [], n: [], i: [] }); return acc.get(m); };
+  const bucket = (m) => { m = fold[m] ?? m; if (!acc.has(m)) acc.set(m, { p: [], n: [], i: [] }); return acc.get(m); };
   /** Quad p0..p3 (a loop) whose front side faces `n`. */
   function quad(mat, p0, p1, p2, p3, n) {
     const g = bucket(mat), base = g.p.length / 3, geo = cross(sub(p1, p0), sub(p2, p0));

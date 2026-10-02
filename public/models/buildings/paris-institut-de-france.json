@@ -35,35 +35,35 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-institut-de-france-near.glb",
-      "bytes": 926932,
-      "triangles": 17789,
-      "drawCalls": 5,
+      "bytes": 839204,
+      "triangles": 16481,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -69.05996900447403,
-          0,
-          -36.18276757924259
+          -2.3841858265427618e-8,
+          -35.8820371144372
         ],
         "max": [
-          67.96631826602473,
+          67.72501724716622,
           44,
-          41.01172305654468
+          41.059625929310315
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-institut-de-france-far.glb",
-      "bytes": 442456,
-      "triangles": 8525,
-      "drawCalls": 5,
+      "bytes": 164316,
+      "triangles": 4013,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -69.05996900447403,
-          0,
-          -36.37502969209764
+          -2.3841858265427618e-8,
+          -35.8820371144372
         ],
         "max": [
-          68.02326889913775,
+          67.72501724716622,
           44,
           41.01172305654468
         ]

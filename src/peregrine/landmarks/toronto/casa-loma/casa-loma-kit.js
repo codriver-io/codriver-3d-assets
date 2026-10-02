@@ -43,11 +43,24 @@ export function createKit(b, near) {
     g.translate(u, (y0 + y1) / 2, v);
     out(g, m);
   }
-  /** Extruded plan polygon [[u, v], ...] from y0 up to y1. */
-  function poly(m, ring, y0, y1) {
+  /**
+   * Extruded plan polygon [[u, v], ...] from y0 up to y1. The floor is never seen (it stands on the ground or on the
+   * solid below), so it is dropped; pass `top: false` when another solid with the same ring stands on it.
+   */
+  function poly(m, ring, y0, y1, { top = true } = {}) {
     const shape = new THREE.Shape(ring.map(([u, v]) => new THREE.Vector2(u, -v)));
-    const g = new THREE.ExtrudeGeometry(shape, { depth: y1 - y0, bevelEnabled: false, steps: 1 });
-    g.rotateX(-Math.PI / 2); g.translate(0, y0, 0);
+    const full = new THREE.ExtrudeGeometry(shape, { depth: y1 - y0, bevelEnabled: false, steps: 1 });
+    full.rotateX(-Math.PI / 2); full.translate(0, y0, 0);
+    const p = full.attributes.position, n = full.attributes.normal, pos = [], nor = [];
+    for (let i = 0; i + 2 < n.count; i += 3) {
+      const ny = n.getY(i);
+      if (ny < -0.99 || (!top && ny > 0.99)) continue;
+      for (let j = i; j < i + 3; j++) { pos.push(p.getX(j), p.getY(j), p.getZ(j)); nor.push(n.getX(j), n.getY(j), n.getZ(j)); }
+    }
+    full.dispose();
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
     out(g, m);
   }
   /** Lathe solid of revolution: profile [[radius, y], ...] about the vertical axis at (u, v). */
@@ -149,7 +162,8 @@ export function createKit(b, near) {
   }
   /** Triangular gable wall (stone) standing on the u0..u1 side at plan v (axis 'u') or the v0..v1 side at plan u (axis 'v'). */
   function gableWall(m, at, lo, hi, y0, rise, axis = 'u', thick = 0.5) {
-    const shape = new THREE.Shape([new THREE.Vector2(lo, 0), new THREE.Vector2(hi, 0), new THREE.Vector2((lo + hi) / 2, rise)]);
+    // apex 8 cm below the ridge: the wall's sloping edges then sit just inside the roof slopes instead of in their plane
+    const shape = new THREE.Shape([new THREE.Vector2(lo, 0), new THREE.Vector2(hi, 0), new THREE.Vector2((lo + hi) / 2, rise - 0.08)]);
     const g = new THREE.ExtrudeGeometry(shape, { depth: thick, bevelEnabled: false, steps: 1 });
     g.translate(0, 0, -thick / 2);
     if (axis === 'v') { g.rotateY(-Math.PI / 2); g.translate(at, y0, 0); } else g.translate(0, y0, at);

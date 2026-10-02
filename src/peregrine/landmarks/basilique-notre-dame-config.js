@@ -8,7 +8,7 @@ export const NOTRE_DAME = {
   width: 41, naveLength: 77, totalLength: 109.5, height: 66,
 };
 export const NOTRE_DAME_PALETTES = {
-  light: { stone: '#9b9a8c', concrete: '#c2c0ae', roof: '#747f7b', glass: '#344443', iron: '#3d3530', museum: '#65716b' },
+  light: { stone: '#706e67', concrete: '#99968a', roof: '#6c7673', glass: '#344443', iron: '#3d3530', museum: '#65716b' },
   dark: { stone: '#667981', concrete: '#9ba6a7', roof: '#3c505b', glass: '#42666e', iron: '#303d44', museum: '#586971' },
 };
 export const ND_STRETCH = mercStretch(NOTRE_DAME.origin[1]);

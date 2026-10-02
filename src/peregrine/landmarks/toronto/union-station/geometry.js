@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, materialFor } from './config.js';
 import { unionStationKit } from './union-station-kit.js';
 import { addLettering } from './union-station-letters.js';
 import {
@@ -21,6 +21,9 @@ const centres = (u0, u1, n) => range(n).map((i) => u0 + ((i + 0.5) * (u1 - u0)) 
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
+  // Every material goes through the draw-budget fold (config.js FOLD): near is unchanged, far shares draws.
+  const { put: put0, box: box0 } = b, fold = (m) => materialFor(m, detail);
+  b.put = (g, m, ...rest) => put0(g, fold(m), ...rest); b.box = (m, ...rest) => box0(fold(m), ...rest);
   const k = unionStationKit(b, near);
   const { box, wallU, wallV, paneU, paneV, slabs, prism, hip, column } = k;
 
@@ -75,15 +78,18 @@ export function create({ detail = 'near' } = {}) {
 
   const WING_ROWS = [[1.1, 4.5], [5.5, 8.9], [10.0, 13.4], [14.0, 15.2]];
   const REAR_ROWS = [[7.2, 10.6], [11.8, 15.0]];
+  // The two rear ranges face the rail corridor, away from the street: near punches their window rows, far leaves them plain
+  // (66 holes are a fifth of the far stone and the rows are a few pixels tall at far range).
+  const rearHoles = (cs) => (near ? rows(cs, 2.6, REAR_ROWS) : []);
 
   // ---- the moat: glass roofs and the stone parapet in front of the wings ----
   for (const [u0, u1, vIn] of [[-100.3, -42.7, V.wing], [44.5, 99.2, V.wing]]) {
-    box('atrium', u0, u1, 0.2, 0.55, V.moat + 0.7, vIn);
+    box('atrium', u0, u1, 0.2, 0.55, V.moat + 0.7, vIn - 0.1); // ends inside the plinth, not flush with its back
     box('stone', u0 - 0.7, u1 + 0.7, 0, 1.05, V.moat, V.moat + 0.7);           // parapet, outer face
     box('stone', u0 - 0.7, u0, 0, 1.05, V.moat + 0.7, V.pavilion);             // returns
     box('stone', u1, u1 + 0.7, 0, 1.05, V.moat + 0.7, u1 > 0 ? V.pavilion + 0.2 : vIn);
     box('base', u0 - 0.8, u1 + 0.8, 1.05, 1.2, V.moat - 0.05, V.moat + 0.8); // coping
-    if (near) for (let u = u0 + 4; u < u1; u += 4.4) box('stone', u - 0.35, u + 0.35, 1.05, 1.5, V.moat - 0.05, V.moat + 0.75); // capped piers
+    if (near) for (let u = u0 + 4; u < u1; u += 4.4) box('stone', u - 0.35, u + 0.35, 1.15, 1.5, V.moat - 0.05, V.moat + 0.75); // capped piers
   }
 
   // ---- the west block: pavilion, front range, end range, light court, rear range ----
@@ -94,7 +100,7 @@ export function create({ detail = 'near' } = {}) {
   box('stone', -113.4, -100.3, 0, bodyH, -8.8, VR); cornice(-114.3, -100.3, -8.8, V.rear, bodyH, 'ws'); roofPlate(-114.3, -100.3, -8.8, V.rear, H.wing, 0.6);
   box('stone', -100.3, -90.7, 0, bodyH, -3.4, VR); cornice(-100.3, -90.7, -3.4, V.rear, bodyH, 's'); roofPlate(-100.3, -90.7, -3.4, V.rear, H.wing, 0.5);
   box('stone', -90.7, -38.5, 0, bodyH, 9.6, VR); cornice(-90.7, -38.5, 9.6, V.rear, bodyH, 's'); roofPlate(-90.7, -38.5, 9.6, V.rear, H.wing, 0.5);
-  windowWallU('stone', -113.4, -38.5, 0, bodyH, V.rear, rows(centres(-113.4, -38.5, 17), 2.6, REAR_ROWS).map((h) => ({ ...h })), 1);
+  windowWallU('stone', -113.4, -38.5, 0, bodyH, V.rear, rearHoles(centres(-113.4, -38.5, 17)), 1);
   box('roof', -90.7, -38.5, 0, H.court, -3.4, 9.6);                         // light court floor (the roof of the concourse below)
   box('glass', -89.4, -41.3, H.court, H.court + 0.05, -2.5, 8.2);
   // ---- the east block ----
@@ -105,7 +111,7 @@ export function create({ detail = 'near' } = {}) {
   box('stone', 60.3, 99.2, 0, bodyH, -4.1, VR); cornice(60.3, 99.2, -4.1, V.rear, bodyH, 's'); roofPlate(60.3, 99.2, -4.1, V.rear, H.wing, 0.5);
   box('stone', 42.1, 60.3, 0, bodyH, 9.2, VR); cornice(42.1, 60.3, 9.2, V.rear, bodyH, 's'); roofPlate(42.1, 60.3, 9.2, V.rear, H.wing, 0.5);
   box('stone', 99.2, 112.9, 0, bodyH, -7.4, VR); cornice(99.2, 113.8, -7.4, V.rear, bodyH, 'es'); roofPlate(99.2, 113.8, -7.4, V.rear, H.wing, 0.6);
-  windowWallU('stone', 42.1, 112.9, 0, bodyH, V.rear, rows(centres(42.1, 112.9, 16), 2.6, REAR_ROWS), 1);
+  windowWallU('stone', 42.1, 112.9, 0, bodyH, V.rear, rearHoles(centres(42.1, 112.9, 16)), 1);
   box('roof', 41.8, 60.3, 0, H.court, -4.1, 9.2);
   box('glass', 42.8, 50.3, H.court, H.court + 0.05, -1.5, 6.0);
 
@@ -225,7 +231,7 @@ export function create({ detail = 'near' } = {}) {
   const strips = (u0, u1) => { for (let u = u0, n = 0; u < u1; u += pitch, n++) {
     const [v0, v1] = seamEnds(u);
     if (n % 2 === 0) box('roof', u, Math.min(u + pitch, u1), lo, lo + 0.05, v0, v1);
-    if (u > u0) box('metal', u - 0.18, u + 0.18, lo, lo + 0.12, v0, v1);
+    if (u > u0) box('metal', u - 0.18, u + 0.18, lo - 0.1, lo + 0.12, v0, v1); // seam sunk into the shed roof: its underside shares no plane with the strips'
   } };
   strips(-170, -37.2); strips(42, 176);
 

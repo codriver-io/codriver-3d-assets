@@ -90,6 +90,19 @@ export const DOME = Object.freeze({
 });
 export const domeCentreY = () => DOME.baseY + DOME.tubeR * Math.sin(DOME.cutDeg * Math.PI / 180);
 
+/** Flat strip `2 * half` wide along a -> b, lying on the sphere about `centre` and facing outward. */
+export function ribbon(a, c, centre, half) {
+  const mid = a.clone().add(c).multiplyScalar(0.5), n = mid.clone().sub(centre).normalize();
+  const side = new THREE.Vector3().subVectors(c, a).cross(n).normalize().multiplyScalar(half);
+  const pts = [a.clone().sub(side), a.clone().add(side), c.clone().add(side), c.clone().sub(side)];
+  const flat = pts.flatMap((p) => [p.x, p.y, p.z]), g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(flat, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(pts.flatMap(() => [n.x, n.y, n.z]), 3));
+  const wind = new THREE.Vector3().subVectors(pts[1], pts[0]).cross(new THREE.Vector3().subVectors(pts[2], pts[0])).dot(n) >= 0;
+  g.setIndex(wind ? [0, 1, 2, 0, 2, 3] : [0, 2, 1, 0, 3, 2]);
+  return g;
+}
+
 /**
  * Adds the shell to the builder `b` centred on ground point [cx, cz] and
  * rotated `yaw` about the vertical so the pentagon-hub zenith pattern can be
@@ -108,11 +121,14 @@ export function buildDome(b, detail, cx, cz, yaw = 0) {
     const ring = clipPolygon(face.map((i) => at(nodes[i], DOME.panelR)), plane);
     if (ring.length >= 3) b.put(facet(ring.map(shift), centre), 'panel');
   }
-  // Tubes along every geodesic edge above the plane.
+  // Tubes along every geodesic edge above the plane. Far draws each as a flat ribbon at the tube radius, facing outward
+  // (a 0.4 m line on a 37 m ball is a pixel or two at far range): 2 triangles where a 3-sided tube takes 6.
   const radius = near ? 0.11 : 0.2;
   for (const [i, j] of edges) {
     const seg = clipSegment(at(nodes[i], DOME.tubeR), at(nodes[j], DOME.tubeR), plane);
-    if (seg) b.bar('frame', shift(seg[0]).toArray(), shift(seg[1]).toArray(), radius, radius, 0, true);
+    if (!seg) continue;
+    if (near) { b.bar('frame', shift(seg[0]).toArray(), shift(seg[1]).toArray(), radius, radius, 0, true); continue; }
+    b.put(ribbon(shift(seg[0]), shift(seg[1]), centre, radius), 'frame');
   }
   // Hub caps: the lights the architects fixed at every node; self-lit at night.
   if (near) for (const v of nodes) {

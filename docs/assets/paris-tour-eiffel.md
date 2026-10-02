@@ -29,3 +29,7 @@ Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-t
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). far LOD uses a 3-sided secondary lattice, one balustrade rail, no lift rails or mullions; duplicate beams removed in both LODs; deck glass neutral grey. Exported cost: near 54,128 triangles / 5 draws / 2,192,032 bytes; far 7,608 / 5 / 297,820.

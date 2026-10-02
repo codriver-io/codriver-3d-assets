@@ -115,6 +115,57 @@ export function archPoints(cs, y0, w, h, n = 8) {
   return pts;
 }
 
+
+/**
+ * Wall-local box (x = s along the wall, y up, z = d out of it) with only the faces that can be seen:
+ * f front (+d), u up, d down, l left (-s), r right (+s). The back, against the wall, is never drawn, so a
+ * course costs 10 triangles instead of 12; a flat strip proud of the wall by a few cm needs only 'f'.
+ */
+export function wallBox(sa, sb, y0, y1, d0, d1, faces = 'fudlr') {
+  const P = [], N = [], I = [];
+  const quad = (a, b, c, d, n) => { const o = P.length / 3; P.push(...a, ...b, ...c, ...d); for (let i = 0; i < 4; i++) N.push(...n); I.push(o, o + 1, o + 2, o, o + 2, o + 3); };
+  if (faces.includes('f')) quad([sa, y0, d1], [sb, y0, d1], [sb, y1, d1], [sa, y1, d1], [0, 0, 1]);
+  if (faces.includes('u')) quad([sa, y1, d1], [sb, y1, d1], [sb, y1, d0], [sa, y1, d0], [0, 1, 0]);
+  if (faces.includes('d')) quad([sa, y0, d0], [sb, y0, d0], [sb, y0, d1], [sa, y0, d1], [0, -1, 0]);
+  if (faces.includes('l')) quad([sa, y0, d0], [sa, y0, d1], [sa, y1, d1], [sa, y1, d0], [-1, 0, 0]);
+  if (faces.includes('r')) quad([sb, y0, d1], [sb, y0, d0], [sb, y1, d0], [sb, y1, d1], [1, 0, 0]);
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
+  g.setIndex(I);
+  return g;
+}
+/** `wbox(material, sa, sb, y0, y1, d0, d1, faces)`: a wallBox placed with the wall's `at(geometry, material)`. */
+export const wallBoxer = (at) => (m, sa, sb, y0, y1, d0, d1, faces) => at(wallBox(sa, sb, y0, y1, d0, d1, faces), m);
+
+/** Drop the triangles of a non-indexed geometry whose three vertex normals satisfy `drop([nx, ny, nz])`. */
+export function dropFaces(g, drop) { // drop(normal, vertexIndex)
+  const p = g.attributes.position, n = g.attributes.normal, P = [], N = [];
+  for (let i = 0; i < p.count; i += 3) {
+    if ([0, 1, 2].every((k) => drop([n.getX(i + k), n.getY(i + k), n.getZ(i + k)], i + k))) continue;
+    for (let k = 0; k < 3; k++) { P.push(p.getX(i + k), p.getY(i + k), p.getZ(i + k)); N.push(n.getX(i + k), n.getY(i + k), n.getZ(i + k)); }
+  }
+  const out = new THREE.BufferGeometry();
+  out.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
+  out.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
+  g.dispose();
+  return out;
+}
+/** Drop the back cap (it faces -z, flush against the wall) of a wall-local extrusion. */
+const dropBack = (g) => dropFaces(g, (n) => n[2] < -0.5);
+
+/** Drop the downward faces that rest on the ground (y <= 1 cm) from an indexed geometry: nobody sees them. */
+export function dropGroundFaces(g) {
+  const p = g.attributes.position, n = g.attributes.normal, idx = g.index, keep = [];
+  for (let i = 0; i < idx.count; i += 3) {
+    const a = idx.getX(i), b = idx.getX(i + 1), c = idx.getX(i + 2);
+    if (n.getY(a) < -0.9 && p.getY(a) < 0.01 && p.getY(b) < 0.01 && p.getY(c) < 0.01) continue;
+    keep.push(a, b, c);
+  }
+  g.setIndex(keep);
+  return g;
+}
+
 /** Wall-local flat opening panel (normal +d) at depth d. */
 export function openingPanel(cs, y0, w, h, d, n = 6) {
   const g = new THREE.ShapeGeometry(new THREE.Shape(archPoints(cs, y0, w, h, n).map(([s, y]) => new THREE.Vector2(s, y))));
@@ -126,13 +177,17 @@ export function openingPanel(cs, y0, w, h, d, n = 6) {
  * Wall-local archivolt: a U-shaped frame of width `rim` round the sides and head of an
  * opening, `depth` proud of the wall. One simple polygon (no hole touching its boundary).
  */
-export function openingFrame(cs, y0, w, h, rim, depth, n = 8) {
+export function openingFrame(cs, y0, w, h, rim, depth, n = 8, { outerSide = true } = {}) {
   const out = archPoints(cs, y0, w + 2 * rim, h + rim, n), inn = archPoints(cs, y0, w, h, n);
   // archPoints: [bottom-left, bottom-right, right spring, arc right->left ..., left spring]
   const ring = (pts) => ({ bl: pts[0], br: pts[1], right: pts[2], left: pts[pts.length - 1], arc: pts.slice(3, -1) });
   const o = ring(out), i = ring(inn);
   const poly = [o.bl, o.left, ...o.arc.slice().reverse(), o.right, o.br, i.br, i.right, ...i.arc, i.left, i.bl];
-  return new THREE.ExtrudeGeometry(new THREE.Shape(poly.map(([s, y]) => new THREE.Vector2(s, y))), { depth, bevelEnabled: false, steps: 1 });
+  const g = dropBack(new THREE.ExtrudeGeometry(new THREE.Shape(poly.map(([s, y]) => new THREE.Vector2(s, y))), { depth, bevelEnabled: false, steps: 1 }));
+  if (outerSide) return g;
+  // a frame that sits inside another one: its outer edge (normals pointing away from the opening) is hidden
+  const p = g.attributes.position, yc = y0 + h / 2;
+  return dropFaces(g, (nn, k) => Math.abs(nn[2]) < 0.5 && nn[0] * (p.getX(k) - cs) + nn[1] * (p.getY(k) - yc) > 0);
 }
 
 /** Wall-local lean-to roof: low edge at d = dLow (height yLow), rising `rise` to d = dHigh. */

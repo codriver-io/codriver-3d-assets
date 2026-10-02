@@ -21,7 +21,7 @@ export const STABLE_TURRETS = [
 
 export function buildStables(k) {
   const { near } = k, n = near ? 16 : 8;
-  k.poly('rubble', STABLES_RING, -1.0, 0.9); // rubble plinth
+  k.poly('rubble', STABLES_RING, -1.0, 0.9, { top: false }); // rubble plinth, the brick course stands on it
   k.poly('brick', STABLES_RING, 0.9, 4.2);
   for (const b of STABLE_BLOCKS) {
     const [u0, u1] = b.u, [v0, v1] = b.v, cu = (u0 + u1) / 2, cv = (v0 + v1) / 2, w = u1 - u0, d = v1 - v0;
@@ -40,7 +40,7 @@ export function buildStables(k) {
   k.box('copper', -67.9, 10.4, -171.2, 0.08, 1.0, 0.08);
   for (const [u, v, r, top, tip] of STABLE_TURRETS) {
     k.cyl('brick', u, v, 4.1, top, r, r, 10, true);
-    k.cyl('trim', u, v, top - 0.5, top + 0.2, r + 0.2, r + 0.35, 10);
+    k.cyl('trim', u, v, top - 0.5, top + 0.25, r + 0.2, r + 0.35, 10);
     k.cone('roof', u, v, top + 0.2, tip, r + 0.5, 10);
   }
   waterTower(k);
@@ -51,7 +51,7 @@ function waterTower(k) {
   const { near } = k, { u, v, side: s, top } = WATER_TOWER, h = s / 2;
   k.box('brick', u, 1.0, v, s, top - 1.0, s);
   // cream limestone quoins up all four corners and a string course at mid height
-  for (const [du, dv] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) k.box('trim', u + du * h, 1.0, v + dv * h, 0.75, top - 1.0, 0.75);
+  for (const [du, dv] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) k.box('trim', u + du * h, 0.75, v + dv * h, 0.75, top - 0.65, 0.75); // quoins run past the brick at foot and head (the foot sinks into the rubble plinth)
   k.box('trim', u, 12.0, v, s + 0.3, 0.35, s + 0.3);
   // corbelled crown, white parapet, then a cluster of crenellated round turrets of different heights
   k.box('trim', u, top - 0.2, v, s + 0.9, 0.7, s + 0.9);
@@ -78,14 +78,17 @@ function windows(k) {
   const ring = STABLES_RING;
   for (const b of STABLE_BLOCKS) {
     const [u0, u1] = b.u, [v0, v1] = b.v;
-    const face = (ua, va, ub, vb, ang) => {
+    // A wall that stands against another wing is not a facade: windows there would sit inside the neighbour.
+    const buried = (pu, pv, nu, nv) => STABLE_BLOCKS.some((o) => o !== b && pu + nu * 0.6 >= o.u[0] && pu + nu * 0.6 <= o.u[1] && pv + nv * 0.6 >= o.v[0] && pv + nv * 0.6 <= o.v[1]);
+    const face = (ua, va, ub, vb, ang, nu, nv) => {
       const L = Math.hypot(ub - ua, vb - va), n = Math.floor((L - 1.5) / 3.6);
       for (let j = 0; j < n; j++) {
         const pu = ua + (ub - ua) * (j + 0.5) / n, pv = va + (vb - va) * (j + 0.5) / n;
+        if (buried(pu, pv, nu, nv)) continue;
         k.win(pu, pv, 1.4, ang, 1.0, 1.7, { frame: 'trim' }); k.win(pu, pv, 4.6, ang, 0.9, 1.0, { frame: 'trim' });
       }
     };
-    face(u0, v0, u1, v0, Math.PI); face(u0, v1, u1, v1, 0); face(u0, v0, u0, v1, -Math.PI / 2); face(u1, v0, u1, v1, Math.PI / 2);
+    face(u0, v0, u1, v0, Math.PI, 0, -1); face(u0, v1, u1, v1, 0, 0, 1); face(u0, v0, u0, v1, -Math.PI / 2, -1, 0); face(u1, v0, u1, v1, Math.PI / 2, 1, 0);
   }
   void ring;
 }

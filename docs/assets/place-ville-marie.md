@@ -28,3 +28,7 @@ Source: [`src/peregrine/landmarks/place-ville-marie-geometry.js`](../../src/pere
 - [Ring constructor · JCB](https://www.jcb.ca/en/project/the-ring-at-place-ville-marie)
 - [Mapped banking hall base](https://www.openstreetmap.org/way/108457145)
 - [Mapped L’Anneau](https://www.openstreetmap.org/node/11191781037)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). near glass and spandrels are blue-grey with fewer, smaller, muted window dots; far folds plaza and skylights into the pale concrete and the ring into aluminium. Exported cost: near 10,562 triangles / 10 draws / 427,336 bytes; far 4,724 / 6 / 238,236.

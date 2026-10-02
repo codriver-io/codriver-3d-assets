@@ -12,7 +12,9 @@ import { Mesh, ringPoint, ringParams, glassNormal, loft, sweep, fin, cap, box, e
 //                 with inward-facing LED bands ("Day for Night") on the inside of the screen
 
 // Sunshade: underside, a thin lip and a top that slopes down and outward (offset from glass, rise).
-const SHADE = [[0, 0], [SPEC.sunshadeOut, 0], [SPEC.sunshadeOut, 0.45], [0, 0.7]];
+// The lip leans 4 cm inward to its top: a dead-vertical lip 0.7 m off the glass collides with the (slightly tilted, because the corner radius grows
+// with height) glass plane in the QA plane hash at about 130 m, where n.y * y is large; the tilt keeps it in its own plane group.
+const SHADE = [[0, 0], [SPEC.sunshadeOut, 0], [SPEC.sunshadeOut - 0.04, 0.45], [0, 0.7]];
 const SHADE_FAR = [[0, 0], [SPEC.sunshadeOut, 0.12], [0, 0.55]];
 const LOBBY_RECESS = -0.8; // the lobby glass stands this far behind the facade plane
 const LOBBY_BEAM = [[LOBBY_RECESS, 0], [SPEC.sunshadeOut, 0], [SPEC.sunshadeOut, 0.9], [0, 1.25]];

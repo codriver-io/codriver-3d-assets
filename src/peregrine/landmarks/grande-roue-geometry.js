@@ -36,17 +36,20 @@ export function createGrandeRoue({ detail='near' }={}) {
 
   // Two shallow rims with cross-ties, not an opaque disk. The innermost rings
   // are thin circumferential tension ties visible in the manufacturer's photo.
-  for(const v of [-1.12,1.12])ring(r,v,0.15);
-  if(near)for(const radius of [9,15,22])ring(radius,0,0.035,'lattice',84);
+  // Rim chords are 0.52 m tubes and spokes at least 0.28 m, so they still read from a distance.
+  for(const v of [-1.12,1.12])ring(r,v,0.26);
+  if(near)for(const radius of [9,15,22])ring(radius,0,0.05,'lattice',84);
   for(let i=0;i<SPEC.cabins;i++) {
     const a=i*Math.PI*2/SPEC.cabins,next=(i+1)*Math.PI*2/SPEC.cabins;
-    beam(p(a,r,-1.12),p(a,r,1.12),near?0.075:0.09);
+    beam(p(a,r,-1.12),p(a,r,1.12),near?0.2:0.22);
     // 21 paired trussed radial members; near includes their open zigzag web.
     if(i%2===0) {
-      for(const v of [-1.12,1.12])beam(p(a,1.7,v*0.75),p(a,r,v),near?0.085:0.12);
-      if(near)for(let j=0;j<8;j++)beam(p(a,2+j*(r-2)/8,j%2?-1.12:1.12),p(a,2+(j+1)*(r-2)/8,j%2?1.12:-1.12),0.042);
-    } else if(near)beam(p(a,1.8,0),p(a,r,0),0.032);
-    if(near)beam(p(a,r,-1.12),p(next,r,1.12),0.044);
+      // Far merges the pair into one flat 0.5 m ribbon in the wheel plane; near keeps both tubes and the zigzag web.
+      if(near)for(const v of [-1.12,1.12])beam(p(a,1.7,v*0.75),p(a,r,v),0.14);
+      else b.bar('lattice',p(a,1.7,0),p(a,r,0),0.5,0.16,0,false,0);
+      if(near)for(let j=0;j<8;j++)beam(p(a,2+j*(r-2)/8,j%2?-1.12:1.12),p(a,2+(j+1)*(r-2)/8,j%2?1.12:-1.12),0.06);
+    } else if(near)beam(p(a,1.8,0),p(a,r,0),0.05);
+    if(near)beam(p(a,r,-1.12),p(next,r,1.12),0.06);
 
     const [u,y]=p(a),cy=y-1.62;
     beam([u,y,-1.2],[u,y,1.2],0.1,'iron');
@@ -69,11 +72,12 @@ export function createGrandeRoue({ detail='near' }={}) {
 
   // Raised loading platform under the bottom cabins; open rails and access
   // stairs. Adjacent café/ticket buildings remain provider-owned.
-  box('iron',[0,0.74,0],[14,0.3,6]);
+  // The deck top is 0.45 m: the lowest cabin sill passes about 0.11 m above it instead of sinking into it.
+  box('iron',[0,0.325,0],[14,0.25,6]);
   for(const v of [-3,3]) {
-    for(const y of [1.2,1.8])beam([-7,y,v],[7,y,v],0.045);
-    for(let u=-7;u<=7;u+=2)beam([u,0.8,v],[u,1.8,v],0.045);
-    for(let i=0;i<5;i++)box('concrete',[0,0.075*(5-i),v+Math.sign(v)*(0.3+i*0.3)],[3,0.15*(5-i),0.3]);
+    for(const y of [1.0,1.5])beam([-7,y,v],[7,y,v],0.045);
+    for(let u=-7;u<=7;u+=2)beam([u,0.45,v],[u,1.5,v],0.045);
+    box('concrete',[0,0.1625,v+Math.sign(v)*0.4],[3,0.325,0.6]);
   }
   if(near) {
     // Drive/service landing and lattice staircase at the northern lower rim.

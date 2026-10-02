@@ -23,7 +23,8 @@ function pod(b, detail, p) {
   // Open frame: floor plates on the mapped outline, posts and spandrels round it, glazing in most bays and
   // open bays showing the core and the floors behind; short chamfer and stair-bump faces stay solid.
   const floors = [[y0, y0 + 0.65], [11.95, 12.4], [16.45, 16.9], [y1 - 0.5, y1]];
-  for (const [fa, fb] of floors) extrude(b, 'white', ring, fa, fb);
+  // Far keeps the lowest and the roof plate: the two between show through glass at a few pixels.
+  for (const [fa, fb] of near ? floors : [floors[0], floors[3]]) extrude(b, 'white', ring, fa, fb);
   const roof = scaled(ring, centre, 0.94);
   extrude(b, 'concrete', roof, y1, y1 + 0.15);
   const storeys = [[y0 + 0.65, 11.95], [12.4, 16.45], [16.9, y1 - 0.5]];
@@ -36,7 +37,7 @@ function pod(b, detail, p) {
       b.box('white', [m[0], (y0 + y1) / 2, m[1]], [L, y1 - y0, 0.35], th);
       continue;
     }
-    const bays = Math.max(2, Math.round(L / (near ? 3 : 6)));
+    const bays = near ? Math.max(2, Math.round(L / 3)) : Math.max(1, Math.round(L / 20)); // far: one glazed run and two posts per ~20 m
     for (let k = 0; k <= bays; k++) { // posts, corner to corner
       const q = at(L * k / bays, 0.1);
       b.box('white', [q[0], (y0 + y1) / 2, q[1]], [0.24, y1 - y0, 0.24], th);
@@ -46,7 +47,7 @@ function pod(b, detail, p) {
       const m = at(L / 2, 0.1);
       b.box('white', [m[0], sa + 0.45, m[1]], [L, 0.9, 0.2], th);
       for (let k = 0; k < bays; k++) {
-        const open = s === 0 ? (k > 0 && k < bays - 1) : k % 3 === 1, mid = at(L * (k + 0.5) / bays, 0.08), w = L / bays - 0.3;
+        const open = !near ? false : s === 0 ? (k > 0 && k < bays - 1) : k % 3 === 1, mid = at(L * (k + 0.5) / bays, 0.08), w = L / bays - 0.3;
         if (open) {
           if (near) b.bar('white', [mid[0] - ux * w / 2, sa + 1.1, mid[1] - uz * w / 2], [mid[0] + ux * w / 2, sa + 1.1, mid[1] + uz * w / 2], 0.03, 0.05);
           continue;
@@ -73,7 +74,7 @@ function pod(b, detail, p) {
   const rr = scaled(ring, centre, 0.96);
   for (let i = 0; i < rr.length; i++) {
     const a = rr[i], c = rr[(i + 1) % rr.length], L = Math.hypot(c[0] - a[0], c[1] - a[1]);
-    if (L < 1) continue;
+    if (L < (near ? 1 : 4)) continue;
     b.bar('white', [a[0], y1 + 1.15, a[1]], [c[0], y1 + 1.15, c[1]], 0.04, 0.07);
     if (near) {
       b.bar('white', [a[0], y1 + 0.6, a[1]], [c[0], y1 + 0.6, c[1]], 0.025, 0.04);
@@ -84,7 +85,7 @@ function pod(b, detail, p) {
 
   // Masts: the four mapped pipe columns, lake bed to 32 m, tied by ring braces and a top platform.
   const mc = [masts.reduce((s, m) => s + m[0], 0) / 4, masts.reduce((s, m) => s + m[1], 0) / 4];
-  for (const m of masts) pipe(b, 'white', [m[0], 0, m[1]], [m[0], mastTop, m[1]], 0.5, near ? 10 : 6);
+  for (const m of masts) pipe(b, 'white', [m[0], 0, m[1]], [m[0], mastTop, m[1]], 0.5, near ? 10 : 6, near);
   const braces = near ? [12, 16, 24, 27.5, 31] : [26];
   for (const y of braces) for (let i = 0; i < 4; i++) {
     const m = masts[i], o = masts[(i + 1) % 4];
@@ -114,7 +115,7 @@ function pod(b, detail, p) {
   for (const su of [-1, 0, 1]) for (const sv of [-1, 0, 1]) {
     if (!su && !sv) continue;
     const q = f.p(su * (halfU - 3.2), 0, sv * (halfV - 3.2));
-    pipe(b, 'white', [q[0], 0, q[2]], [q[0], y0 + 0.3, q[2]], 0.36, near ? 8 : 5);
+    pipe(b, 'white', [q[0], 0, q[2]], [q[0], y0 + 0.3, q[2]], 0.36, near ? 8 : 5, near);
   }
   // A glazed core between the mast pipes, down to the lake (lifts and stairs).
   b.box('glass', [mc[0], y0 / 2, mc[1]], [3.0, y0, 2.8], fy);
