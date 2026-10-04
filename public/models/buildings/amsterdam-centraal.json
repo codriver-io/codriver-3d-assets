@@ -1,0 +1,66 @@
+{
+  "id": "amsterdam-centraal",
+  "name": "Amsterdam Centraal station",
+  "kind": "building",
+  "origin": [
+    4.9,
+    52.37833
+  ],
+  "height": 36.65,
+  "padM": 270,
+  "frontageBearing": 210.67,
+  "axisBearing": 120.67,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is Stationsplein / platform grade on the flat Peregrine basemap; no absolute altitude is baked in. The station stands on made ground in the Open Havenfront and the site is level.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Headhouse plan, the 23.3 m wing ridge, 22.45 m cross-gables, 29.25 m central gable, 34.25 m tower apexes and the three shed footprints are the mapped OSM parts. The tower finials and lanterns, intermediate gables, window rhythm, the upper arches and the middle and north shed crowns are estimated. The Noord-Zuid Hollandsch Koffiehuis and the IJ bus station are separate buildings and are not in this model.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/amsterdam-centraal-near.glb",
+      "bytes": 470980,
+      "triangles": 11884,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -139.18222045898438,
+          -4.7683716530855236e-8,
+          -214.48324584960938
+        ],
+        "max": [
+          200.84461975097656,
+          36.650001525878906,
+          99.88079071044922
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/amsterdam-centraal-far.glb",
+      "bytes": 215100,
+      "triangles": 4741,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -139.18222045898438,
+          -4.7683716530855236e-8,
+          -214.48324584960938
+        ],
+        "max": [
+          200.84461975097656,
+          36.650001525878906,
+          99.88079071044922
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/amsterdam-centraal/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
