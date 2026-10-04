@@ -10802,6 +10802,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-pauls-cathedral",
+      "name": "St Paul's Cathedral",
+      "kind": "building",
+      "location": "St Paul's Churchyard, Ludgate Hill, London EC4M 8AD, United Kingdom",
+      "status": "ready",
+      "description": "Wren's English Baroque cathedral (completed 1710): a ribbed warm-grey lead dome on a colonnaded drum, a stone lantern with a gilded ball and cross at 365 ft, two west towers with black-and-gold clocks in pilastered surrounds and pineapple finials on tiered lead ogee cupolas, a two-storey paired-column west portico, and semicircular columned porches on the transepts. Portland stone, about 156 m from the west steps to the apse.",
+      "manifest": "/models/buildings/st-pauls-cathedral.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-pauls-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks st-pauls-cathedral",
+        "provenance": "Original procedural geometry authored 2026-10-04 (Codriver). Plan, nave bearing 83.8° and the dome and tower positions are the OpenStreetMap outline way 369161987 and the building:part ways listed in footprint.js (shared Overpass helper; (c) OpenStreetMap contributors, ODbL 1.0). Heights from Wikipedia's specification table, which matches the 1911 Britannica within a foot: 365 ft to the cross, 278 ft outer dome, 221 ft towers, 518 ft length. Wikimedia Commons photographs were viewed for proportion and are not redistributed: Colin, 'St Paul's Cathedral Dome from One New Change - Square Crop' (CC BY-SA 4.0); Julie Anne Workman, 'South west tower of St Paul's Cathedral' (CC BY-SA 3.0); Canaletto, 'St. Paul's Cathedral' (public domain). No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · St Paul's Cathedral",
+            "url": "https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral"
+          },
+          {
+            "label": "OSM way 369161987 · St Paul's Cathedral outline",
+            "url": "https://www.openstreetmap.org/way/369161987"
+          },
+          {
+            "label": "OSM way 664613340 · outer dome",
+            "url": "https://www.openstreetmap.org/way/664613340"
+          },
+          {
+            "label": "Wikimedia Commons · St Paul's Cathedral Dome from One New Change (Colin, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:St_Paul%27s_Cathedral_Dome_from_One_New_Change_-_Square_Crop.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · South west tower of St Paul's Cathedral (Julie Anne Workman, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:South_west_tower_of_St_Paul%27s_Cathedral.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Canaletto, St. Paul's Cathedral (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canaletto_-_St._Paul%27s_Cathedral_-_Google_Art_Project.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-pauls-cathedral/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-pauls-cathedral&view=overview",
+        "views": [
+          {
+            "label": "From the south-west, the driver's oblique",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=overview"
+          },
+          {
+            "label": "West front, Ludgate Hill",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=facade"
+          },
+          {
+            "label": "West portico and the great door",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=entrance"
+          },
+          {
+            "label": "South flank and the transept porch",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=south"
+          },
+          {
+            "label": "East apse",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=east"
+          },
+          {
+            "label": "Dome, lantern and cross",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=dome"
+          },
+          {
+            "label": "South-west tower, clock and cupola",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=tower"
+          },
+          {
+            "label": "Roof plan",
+            "url": "/asset-preview.html?asset=st-pauls-cathedral&view=roof"
+          }
+        ]
+      },
+      "notes": "Sourced: 111.25 m to the cross (365 ft), 84.7 m outer dome (278 ft), 67.4 m towers (221 ft), 158 m published length (518 ft), 37 m nave width (121 ft), 75 m across the transept bodies (246 ft). The model is 156 m long because the mapped outline is 157.5 m and the cornices stop inside it; the screen is 17.7 m off the nave axis because the choir's north wall is mapped at 18.1 m. The dome springing radius is the OSM ring (16.7 m), not the unsourced 112 ft diameter. Estimated from photographs: screen-wall and entablature heights, the two-storey bay rhythm (paired pilasters, lower round-headed windows, upper blind niches), the 32-column peristyle with a recessed dark core and a balustraded gallery, the slim tower cupolas (open drum, concave lead cap, pineapple), clock pilasters, pediment rises, and the lantern's proportions between the 278 ft crown and the 365 ft cross. Lead is warm grey (#8f9294 by day, #4d5154 at night), including the dome, lantern, cupolas and nave roofs. Not modelled: pediment sculpture, individual balusters, fluting, carved Corinthian capitals, clock numerals, and the neighbouring chapter house. The lead ribs are a lighter grey so the hemisphere still reads; night stone stays floodlit and pale, and light/lamp are the unshaded windows, cross, ball and pineapples.",
+      "documentation": "docs/assets/top-cities-st-pauls-cathedral.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
