@@ -35,6 +35,7 @@
     "build:san-francisco-landmarks": "node scripts/build-san-francisco-landmarks.mjs --all",
     "build:calgary-landmarks": "node scripts/build-calgary-landmarks.mjs --all",
     "build:quebec-landmarks": "node scripts/build-quebec-landmarks.mjs --all",
+    "build:top-cities-landmarks": "node scripts/build-top-cities-landmarks.mjs --all",
     "test:browser": "node scripts/test-browser.mjs",
     "thumbnails:build": "node scripts/capture-thumbnails.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",
