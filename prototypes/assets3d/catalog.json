@@ -10438,6 +10438,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "amsterdam-centraal",
+      "name": "Amsterdam Centraal station",
+      "kind": "building",
+      "location": "Stationsplein 9, Amsterdam",
+      "status": "ready",
+      "description": "The 1889 Cuypers headhouse on Stationsplein: a red-brick centre with three tall glazed arches over rectangular ground-floor bays and a steep clock gable, flanked by two clock towers with stone dial panels and tiered slate spires, long wings of stone-banded windows and cross-gables, the Koningspaviljoen and De Oost to the east, and three iron-and-glass train sheds behind.",
+      "manifest": "/models/buildings/amsterdam-centraal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/amsterdam-centraal/geometry.js",
+        "build": "pnpm build:top-cities-landmarks amsterdam-centraal",
+        "provenance": "Original procedural geometry authored 2026-10-04 (Codriver). Plan, axis and heights read from the OpenStreetMap building and building:part ways listed below (dossier extract, © OpenStreetMap contributors, ODbL 1.0). Wikimedia Commons photographs were viewed for proportion and are not redistributed: Slaunger, 'Amsterdam Centraal 2016-09-13' (CC BY-SA 4.0); Calstanhope, 'Amsterdam Centraal Centrumzijde entrance' (CC0); Christian Alexander Tietgen, 'Amsterdam Centraal am 19.1.2019 14' (CC BY 4.0); an anonymous public-domain city-side view, 'Amsterdam Centraal Station2'. The IJ bus platform and the modern bus-station interior were looked at and left out. No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · Amsterdam Centraal station",
+            "url": "https://en.wikipedia.org/wiki/Amsterdam_Centraal_station"
+          },
+          {
+            "label": "Wikipedia (nl) · Station Amsterdam Centraal",
+            "url": "https://nl.wikipedia.org/wiki/Station_Amsterdam_Centraal"
+          },
+          {
+            "label": "Rijksmonument 5681 · Centraal Station, P.J.H. Cuypers, 1881–1889",
+            "url": "https://monumentenregister.cultureelerfgoed.nl/monumenten/5681"
+          },
+          {
+            "label": "OSM way 1239767708 · Cuypersgebouw",
+            "url": "https://www.openstreetmap.org/way/1239767708"
+          },
+          {
+            "label": "OSM way 752653565 · main roof, height 23.3 m",
+            "url": "https://www.openstreetmap.org/way/752653565"
+          },
+          {
+            "label": "OSM ways 752653568 and 752653567 · clock towers, apex 34.25 m",
+            "url": "https://www.openstreetmap.org/way/752653568"
+          },
+          {
+            "label": "OSM way 451533145 · Zuidkap",
+            "url": "https://www.openstreetmap.org/way/451533145"
+          },
+          {
+            "label": "OSM way 1239767701 · De Oost",
+            "url": "https://www.openstreetmap.org/way/1239767701"
+          },
+          {
+            "label": "Wikimedia Commons · Amsterdam Centraal 2016-09-13 (Slaunger, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_Centraal_2016-09-13.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/amsterdam-centraal/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=amsterdam-centraal&view=facade",
+        "views": [
+          {
+            "label": "Stationsplein facade",
+            "url": "/asset-preview.html?asset=amsterdam-centraal&view=facade"
+          },
+          {
+            "label": "Centre, arches and clocks",
+            "url": "/asset-preview.html?asset=amsterdam-centraal&view=detail"
+          },
+          {
+            "label": "Roofs and train sheds",
+            "url": "/asset-preview.html?asset=amsterdam-centraal&view=roof"
+          },
+          {
+            "label": "Overview from the city",
+            "url": "/asset-preview.html?asset=amsterdam-centraal&view=overview"
+          },
+          {
+            "label": "Sheds from the IJ side",
+            "url": "/asset-preview.html?asset=amsterdam-centraal&view=sheds"
+          },
+          {
+            "label": "De Oost from the east",
+            "url": "/asset-preview.html?asset=amsterdam-centraal&view=east"
+          }
+        ]
+      },
+      "notes": "Mapped: Cuypers plan and bearing 120.67°, wing ridge 23.3 m, five cross-gables at 22.45 m, central gable 29.25 m, tower apexes 34.25 m, Koningspaviljoen 26 m, west wing 12 m, De Oost 20 m, three shed footprints. Estimated: finials to 36.65 m, the tower lanterns between the skirt and the spire, intermediate gables, window rhythm, the three upper arches (opening 5.9 m, crown about 19.1 m) and the rectangular ground-floor bays, and the middle and north shed crowns (semicircles on their own spans; only the Zuidkap has a published height, about 23 m, modelled at 21.5 m so the shell stays inside the ring). The wing part's roof:height of 0.75 m was rejected; the eave is the gable spring, 17.8 m. De Oost is drawn as a gable although OSM says skillion. The Noord-Zuid Hollandsch Koffiehuis, the IJ bus station and the entrance lettering are not in the model. The centre's rear roof meets the wing ridge at 23.45 m.",
+      "documentation": "docs/assets/top-cities-amsterdam-centraal.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
