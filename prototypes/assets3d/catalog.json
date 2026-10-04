@@ -10707,6 +10707,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palacio-real-de-madrid",
+      "name": "Palacio Real de Madrid",
+      "kind": "building",
+      "location": "Calle de Bailén · Plaza de la Armería, Madrid",
+      "status": "ready",
+      "description": "Sacchetti's square Baroque-classical palace (1738–1764) on the old Alcázar: a granite base under white Colmenar limestone, a giant order, an open court, and the Prince's Gate on the Plaza de la Armería under a royal crown, with lower arcaded galleries running south toward the Almudena. The cathedral, the plaza statues and the gardens are not modelled.",
+      "manifest": "/models/buildings/palacio-real-de-madrid.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palacio-real-de-madrid/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palacio-real-de-madrid",
+        "provenance": "Original procedural geometry authored 2026-10-04 (geometry.js, palacio-real-de-madrid-plan.js) from the mapped OSM outline of relation 30399 and public photographs. Mapped footprint © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Royal Palace of Madrid Panorama' (Fernando, CC BY-SA 4.0), 'Royal Palace of Madrid viewed from a distance' (Sheila1988, CC BY-SA 4.0), 'Main Staircase of the Royal Palace of Madrid' (European Commission / Dati Bendo, CC BY 4.0; interior only, not modelled), 'Royal Palace of Madrid 01' (Bernard Gagnon, CC BY-SA 3.0), 'Plaza de Oriente (Madrid) 11' (Brian Snelson, CC BY 2.0) and 'Palacio Real de Madrid Julio 2016 (cropped)' (Tim Adams, CC BY-SA 4.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Royal Palace of Madrid",
+            "url": "https://en.wikipedia.org/wiki/Royal_Palace_of_Madrid"
+          },
+          {
+            "label": "Wikipedia (es) · Palacio Real de Madrid",
+            "url": "https://es.wikipedia.org/wiki/Palacio_Real_de_Madrid"
+          },
+          {
+            "label": "Patrimonio Nacional · Palacio Real de Madrid",
+            "url": "https://www.patrimonionacional.es/visita/palacio-real-de-madrid"
+          },
+          {
+            "label": "OSM footprint · relation 30399",
+            "url": "https://www.openstreetmap.org/relation/30399"
+          },
+          {
+            "label": "Secondary dimension note · fachadas de 131 m y 33 m (Casiopea)",
+            "url": "https://wiki.ead.pucv.cl/index.php/PALACIO_REAL_DE_MADRID"
+          },
+          {
+            "label": "Photo · south front from the cathedral (Fernando, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Palace_of_Madrid_Panorama.jpg"
+          },
+          {
+            "label": "Photo · east front from a distance (Sheila1988, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Palace_of_Madrid_viewed_from_a_distance.jpg"
+          },
+          {
+            "label": "Photo · Prince's Gate (Bernard Gagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Palace_of_Madrid_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palacio-real-de-madrid/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=facade",
+        "views": [
+          {
+            "label": "South front, Plaza de la Armería",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=facade"
+          },
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=overview"
+          },
+          {
+            "label": "Roofs and court",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=roof"
+          },
+          {
+            "label": "Prince's Gate",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=entrance"
+          },
+          {
+            "label": "East front, Plaza de Oriente",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=east"
+          },
+          {
+            "label": "West front, Campo del Moro",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=west"
+          },
+          {
+            "label": "North front, Sabatini gardens",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=north"
+          },
+          {
+            "label": "Courtyard",
+            "url": "/asset-preview.html?asset=palacio-real-de-madrid&view=court"
+          }
+        ]
+      },
+      "notes": "Sourced: Sacchetti's square palace on Juvarra's idea, built 1738 and occupied by Charles III in 1764, granite base and Colmenar limestone, giant order, balustrade, Prince's Gate on the Plaza de la Armería with the royal arms, BIC RI-51-0001061 (1931), 135,000 m² and 3,418 rooms, Wikipedia coordinates 40°25′05″N 3°42′51″W. A secondary compilation repeats facades of 131 m a side and 33 m high, six storeys; the mapped square is 129.6 m north–south and 129.9 m east–west. The model sets the balustrade at 33.2 m, the crown at 40.4 m and the Royal Chapel lantern at 47.6 m on the north-centre pavilion (OSM has no chapel outline; the spot is the mapped north projection, checked against the photographs). Estimated: every storey height other than that balustrade, bay pitch (5.15 m), the crown and attic group, wing heights (wall 11.5 m, hip 14.7 m), roof pitches, and colours. The south long wall is drawn at v=60.55, about 1 m inside the mapped 61.8 m line, so the cornice clears the two bites beside the gate. Light wells 307006518, 307006516 and 307006515 are covered. Pavilion caps are flat slabs; hips are separate planes with stone parapet showing between them. The arch is a 10-sided polygon. The Almudena, plaza statues and gardens are not modelled. No Tesla hardware measurements.",
+      "documentation": "docs/assets/top-cities-palacio-real-de-madrid.md",
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
