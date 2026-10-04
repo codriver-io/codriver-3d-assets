@@ -10343,6 +10343,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tower-bridge",
+      "name": "Tower Bridge",
+      "kind": "bridge",
+      "location": "A100 across the Thames · London, UK",
+      "status": "ready",
+      "description": "Original procedural present-day Tower Bridge with closed bascules, twin Gothic towers, two separated upper lattice walkways, blue suspension chains and white hangers, pointed river piers and low abutment arches. Road-fitted on the mapped A100.",
+      "manifest": "/models/bridges/tower-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tower-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tower-bridge --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-04. Published dimensions from the Tower Bridge official visitor site and the planning heritage statement; mapped A100 and bridge outlines from the prepared OpenStreetMap dossier (ODbL 1.0, © OpenStreetMap contributors). Reference photographs only, kept in ignored scratch: Heresy0uk, Tower Bridge - 1950 (CC BY-SA 4.0); Fuzzypiggy, Tower Bridge at Dawn (CC BY-SA 3.0); Benh LIEU SONG, Tower Bridge London 2022-10-10 (CC BY-SA 4.0); Doyle of London, South Arch of Tower Bridge (South Face - 01) (CC BY-SA 4.0); HyunJae Park, Tower Bridge in London at night (public domain); Fry72, Krkavec (raven), Tower, City, Londýn, Anglie 01 (CC BY-SA 4.0). No reference image, texture, scan or third-party mesh is shipped.",
+        "references": [
+          {
+            "label": "Tower Bridge official site · upper walkways 33.5 m above road, 70 m between towers",
+            "url": "https://www.towerbridge.org.uk/explore-inside"
+          },
+          {
+            "label": "Planning heritage statement · 65 m towers, 61 m bascule span, 82 m suspension side spans",
+            "url": "https://docs.planning.org.uk/20250910/54/T24DANKBG9900/oz2eqj61rsqdhm0v.pdf"
+          },
+          {
+            "label": "OpenStreetMap · bridge outline",
+            "url": "https://www.openstreetmap.org/way/378541210"
+          },
+          {
+            "label": "Reference photograph · File:Tower Bridge - 1950.jpg · Heresy0uk · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_-_1950.jpg"
+          },
+          {
+            "label": "Reference photograph · File:Tower Bridge at Dawn.jpg · Fuzzypiggy · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Dawn.jpg"
+          },
+          {
+            "label": "Reference photograph · File:Tower Bridge London 2022-10-10.jpg · Benh LIEU SONG (Flickr) · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_2022-10-10.jpg"
+          },
+          {
+            "label": "Reference photograph · File:South Arch of Tower Bridge (South Face - 01).jpg · Doyle of London · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:South_Arch_of_Tower_Bridge_(South_Face_-_01).jpg"
+          },
+          {
+            "label": "Reference photograph · File:Tower Bridge in London at night.jpg · HyunJae Park · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_in_London_at_night.jpg"
+          },
+          {
+            "label": "Reference photograph · File:Krkavec (raven), Tower, City, Londýn, Anglie 01.jpg · Fry72 · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Krkavec_(raven),_Tower,_City,_Lond%C3%BDn,_Anglie_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tower-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=tower-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=tower-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=tower-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=tower-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=tower-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=tower-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=tower-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=tower-bridge&view=tower"
+          }
+        ]
+      },
+      "notes": "65 m tower crowns; walkways 33.5 m above road. Road/water datum 8.5 m is an illustrative high-tide convention, not survey. Mapped tower centres 82.82 m apart; 61 m bascule span is the nominal published pivot span, distinct from the ~72 m visible opening. Deck width, tower arch and roof details, window rhythm, chain section, night lighting and tide level are estimated. Flat ramps 112 m, peak 11.4%; river cutwaters intentionally project outside the mapped road outline. Closed bascules only, no opening animation or machinery/interiors. Both LODs keep genuine roadway arches and separate upper walkways. No shared files changed.",
+      "documentation": "docs/assets/top-cities-tower-bridge.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

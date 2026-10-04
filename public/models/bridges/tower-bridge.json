@@ -1,0 +1,67 @@
+{
+  "id": "tower-bridge",
+  "name": "Tower Bridge",
+  "kind": "bridge",
+  "origin": [
+    -0.0753637,
+    51.5055166
+  ],
+  "height": 65,
+  "padM": 190,
+  "frontageBearing": 112.8,
+  "rangeM": 4000,
+  "nearM": 1000,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0; flat-map roadway 8.5 m; walkway floor 42 m (33.5 m above road). Terrain placement is fitted separately, no DEM baked into the mesh.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Closed bascules; 65 m towers, 61 m nominal bascule span, 82 m suspension spans. Tower spacing is mapped; architecture, chain section, deck width and tide datum are visual estimates. No textures or third-party meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/tower-bridge-near.glb",
+      "bytes": 2098240,
+      "triangles": 33950,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -85.66191101074219,
+          -9.141727375094888e-9,
+          -164.83262634277344
+        ],
+        "max": [
+          75.4593276977539,
+          65,
+          190.18399047851562
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/tower-bridge-far.glb",
+      "bytes": 691828,
+      "triangles": 11422,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -85.66191101074219,
+          -9.141727375094888e-9,
+          -164.83262634277344
+        ],
+        "max": [
+          75.4593276977539,
+          65,
+          190.18399047851562
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tower-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

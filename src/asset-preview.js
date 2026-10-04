@@ -35,8 +35,9 @@ import { TORONTO_LANDMARKS, torontoLandmark } from './peregrine/landmarks/toront
 import { SAN_FRANCISCO_LANDMARKS, sanFranciscoLandmark } from './peregrine/landmarks/san-francisco/authoring.js';
 import { CALGARY_LANDMARKS, calgaryLandmark } from './peregrine/landmarks/calgary/authoring.js';
 import { QUEBEC_LANDMARKS, quebecLandmark } from './peregrine/landmarks/quebec/authoring.js';
+import { TOP_CITIES_LANDMARKS, topCitiesLandmark } from './peregrine/landmarks/top-cities/authoring.js';
 // Folder-registry landmarks (Toronto, San Francisco, Calgary, Québec) share one inspector path.
-const registryLandmark = (id) => torontoLandmark(id) || sanFranciscoLandmark(id) || calgaryLandmark(id) || quebecLandmark(id);
+const registryLandmark = (id) => torontoLandmark(id) || sanFranciscoLandmark(id) || calgaryLandmark(id) || quebecLandmark(id) || topCitiesLandmark(id);
 import { PARIS_BRIDGES, createParisBridge, metricFrame } from './peregrine/landmarks/paris-bridges-geometry.js';
 
 const $ = (id) => document.getElementById(id), params = new URLSearchParams(location.search);
@@ -84,6 +85,7 @@ const creators = {
   ...Object.fromEntries(SAN_FRANCISCO_LANDMARKS.map((l) => [l.id, l.create])),
   ...Object.fromEntries(CALGARY_LANDMARKS.map((l) => [l.id, l.create])),
   ...Object.fromEntries(QUEBEC_LANDMARKS.map((l) => [l.id, l.create])),
+  ...Object.fromEntries(TOP_CITIES_LANDMARKS.map((l) => [l.id, l.create])),
 };
 for (const spec of PARIS_BRIDGES) creators[spec.id] = options => createParisBridge(spec, options);
 for (const p of JACQUES_RAMPS) creators[p.CHAMPLAIN.id] = options => createJacquesIslandRamp(p, options);
