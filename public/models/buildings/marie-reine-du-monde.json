@@ -1,0 +1,70 @@
+{
+  "id": "marie-reine-du-monde",
+  "name": "Cathédrale Marie-Reine-du-Monde",
+  "kind": "building",
+  "origin": [
+    -73.568406,
+    45.499274
+  ],
+  "height": 77,
+  "padM": 70,
+  "frontageBearing": 303.5,
+  "rotationDeg": -123.5,
+  "axisM": [
+    9.65,
+    7.04
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the boulevard René-Lévesque pavement at the foot of the stair); no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the 77 m total height, the cupola (23 m across per Wikipedia, 24.8 m for the outer shell in OSM), the thirteen façade statues, and the plan (mapped outline and OSM building parts). Estimated from photographs: the dome profile and lantern stages, the drum, the ten-column order, window rhythm, every roof pitch and the statue size; sculpture, relief and lettering are abstracted. The Monument à Mgr Bourget on the stair is not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/marie-reine-du-monde-near.glb",
+      "bytes": 396052,
+      "triangles": 8640,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -59.925819396972656,
+          -3.814697322468419e-7,
+          -51.84995651245117
+        ],
+        "max": [
+          54.354129791259766,
+          77,
+          41.932308197021484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/marie-reine-du-monde-far.glb",
+      "bytes": 159292,
+      "triangles": 3440,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -59.925819396972656,
+          0,
+          -51.84995651245117
+        ],
+        "max": [
+          54.12282180786133,
+          77,
+          41.70100021362305
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/marie-reine-du-monde/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

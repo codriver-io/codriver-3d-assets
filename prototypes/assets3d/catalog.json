@@ -8231,6 +8231,2118 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "basilique-sainte-anne-de-beaupre",
+      "name": "Basilique Sainte-Anne-de-Beaupré",
+      "kind": "building",
+      "location": "10018 avenue Royale, Sainte-Anne-de-Beaupré, Québec",
+      "status": "ready",
+      "description": "The shrine basilica of Sainte-Anne-de-Beaupré (Roisin, Daoust and Audet, from 1923; Neo-Romanesque with Gothic proportions in light granite): a wide facade with a great arch and rose window, a gable topped by the gilded statue of Sainte Anne between two stone towers with octagonal spires reaching 91 m, with small gabled lucarnes and corner pinnacles, a five-aisle nave under green copper roofs, a transept with apsidal ends, and a choir ringed by radiating chapels, facing south-west onto its plaza.",
+      "manifest": "/models/buildings/basilique-sainte-anne-de-beaupre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/basilique-sainte-anne-de-beaupre/geometry.js",
+        "build": "pnpm build:quebec-landmarks basilique-sainte-anne-de-beaupre",
+        "provenance": "Original procedural geometry authored 2026-10-03 (geometry.js, basilique-sainte-anne-de-beaupre-plan.js, -kit.js, -front.js, -body.js) from the mapped OSM outline and public photographs. Mapped footprint (OSM way 104582533) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Front View of the Basilica and the Fountain of Saint Anne and the Holy Child Mary – Basilique Sainte-Anne-de-Beaupré 2' (Hayden Soloviev, CC BY 4.0), 'Sainte-Anne-de-Beaupré - Extérieur en2017 (2)' and '(3)' (Pierre André, CC BY-SA 4.0), 'Basilique Sainte-Anne-de-Beaupré - Vue aérienne 01-2024' (Gabriel Picard, CC BY-SA 4.0), 'Basilica of Sainte-Anne-de-Beaupré 46' (Thomas1313, CC BY-SA 4.0), 'Saint Anne de Beaupré Maçonnerie 002' (Tomodachidami, CC BY-SA 3.0), 'Chapelle commémorative, Sainte-Anne, Québec' (Judith Bourque, CC BY-SA 2.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Basilica of Sainte-Anne-de-Beaupré",
+            "url": "https://en.wikipedia.org/wiki/Basilica_of_Sainte-Anne-de-Beaupr%C3%A9"
+          },
+          {
+            "label": "Wikipédia · Basilique Sainte-Anne-de-Beaupré",
+            "url": "https://fr.wikipedia.org/wiki/Basilique_Sainte-Anne-de-Beaupr%C3%A9"
+          },
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Basilique de Sainte-Anne-de-Beaupré",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/detail.do?methode=consulter&id=93392&type=bien"
+          },
+          {
+            "label": "Sanctuaire Sainte-Anne · Architecture",
+            "url": "https://sanctuairesainteanne.org/en/pages/architecture"
+          },
+          {
+            "label": "OSM footprint · way 104582533",
+            "url": "https://www.openstreetmap.org/way/104582533"
+          },
+          {
+            "label": "Photo · front from the lawn (Hayden Soloviev, CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Front_View_of_the_Basilica_and_the_Fountain_of_Saint_Anne_and_the_Holy_Child_Mary_%E2%80%93_Basilique_Sainte-Anne-de-Beaupr%C3%A9_2.jpg"
+          },
+          {
+            "label": "Photo · front and plaza (Pierre André, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Sainte-Anne-de-Beaupr%C3%A9_-_Ext%C3%A9rieur_en2017_(3).JPG"
+          },
+          {
+            "label": "Photo · aerial view from the south-west (Gabriel Picard, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique_Sainte-Anne-de-Beaupr%C3%A9_-_Vue_a%C3%A9rienne_01-2024.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/basilique-sainte-anne-de-beaupre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=facade",
+        "views": [
+          {
+            "label": "South-west front with the rose window",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=facade"
+          },
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=overview"
+          },
+          {
+            "label": "Towers, belfries and spires",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=towers"
+          },
+          {
+            "label": "Central portal and pier groups",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=portal"
+          },
+          {
+            "label": "South-east side of the nave and transept",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=side"
+          },
+          {
+            "label": "Apse and radiating chapels",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=apse"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=basilique-sainte-anne-de-beaupre&view=roof"
+          }
+        ]
+      },
+      "notes": "Sourced: spire height 91 m / 299 ft, length 105 m overall, 61 m across the transept, 48 m facade (Wikipedia, Répertoire du patrimoine culturel du Québec); the OSM outline (axis bearing 55.5 deg, facade to the south-west, 100.2 m long, 62.8 m across the transept apses, 49.8 m front with its buttresses, seven radiating chapels of 3.4 m radius). Estimated from photographs: every height below the spire tips (belfry stage 35-56 m, gable apex 45.6 m, aisle, clerestory and ridge heights 11-37.5 m), the five-aisle widths and roof arrangement, rose window (7.5 m), window and pilaster rhythm, the lucarnes (one small gablet on each cardinal face of each spire) and the eight belfry-cornice pinnacles, the transept and choir roofs, and everything not visible from the front or the aerial view. The 91 m published height is kept (the reviewer's front elevation measures 1.86 times the 49 m front width), although some level photographs of the front measure about 1.55 times as tall as wide to the cross tips, which would be 80-88 m for a 48-50 m front, so the model's towers read roughly 10 percent taller and slimmer than those photographs. The spires are stone, not copper (the brief's premise), flat-shaded eight-sided pyramids in mid-grey granite; the roofs are copper, modelled aged green. Not modelled: carving and statues except the gilded Sainte Anne, tracery, the plaza fountain, the other sanctuary buildings, side flights of the front stairs, interior. The front stairs and podium extend up to 8 m past the mapped outline (the provider draws no extrusion there). Full 3D world: an explicit terrain pad (terrainPad) holds the outline and the podium and front stairs (a second ring, up to 8 m past the outline) at the median ground under both with an 8 m feather. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 7878 triangles / 6 draws / 447632 bytes, far 1668 / 6 / 102912.",
+      "documentation": "docs/assets/quebec-basilique-sainte-anne-de-beaupre.md",
+      "city": "Sainte-Anne-de-Beaupré",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "biodome-de-montreal",
+      "name": "Biodôme de Montréal",
+      "kind": "building",
+      "location": "4777 avenue Pierre-De Coubertin, Parc olympique · Montréal, Québec",
+      "status": "ready",
+      "description": "Biodôme de Montréal, the former 1976 Olympic Velodrome by Roger Taillibert: the 33.5 m prestressed concrete shell resting on four pointed abutments (a kite-shaped plan about 160 m across), its clear arches with the glazed walls set back under the roof edge, the entrance canopy and sign facing the Olympic Stadium, the two heavy ribs along a central spindle with sixteen ribbed skylights, and the lens skylights near the long back edges.",
+      "manifest": "/models/buildings/biodome-de-montreal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/biodome-de-montreal/geometry.js",
+        "build": "pnpm build:quebec-landmarks biodome-de-montreal",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the mapped plan and photographs; plan from OpenStreetMap way 26699302 (© OpenStreetMap contributors, ODbL 1.0), crown height (33.5 m / 110 ft), 172 m average length and four abutments from the Parc olympique's description of the Velodrome roof. No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'Biodome 1.jpg' (Mover of molehills, CC BY-SA 4.0), 'Montreal Biodome - Gulf of St. Lawrence - above shot.jpg' (Wackistan, CC BY-SA 4.0), 'Montreal Olympic Stadium aerial view.jpg' (Bobjagendorf, CC BY-SA 3.0), 'Biodome.jpg' (Fishhead64, CC BY-SA 3.0), 'Penguin in Captivity.JPG' (Ilikepie2221, CC BY-SA 3.0) and 'Biodome Montreal.jpg' (PtitLutin, photograph; Roger Taillibert, architect; CC BY-SA 2.5).",
+        "references": [
+          {
+            "label": "Montreal Biodome · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Montreal_Biodome"
+          },
+          {
+            "label": "Biodôme de Montréal · Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Biod%C3%B4me_de_Montr%C3%A9al"
+          },
+          {
+            "label": "Le toit du Vélodrome · Parc olympique (height 33.5 m, 172 m, four abutments)",
+            "url": "https://www.stadeolympiquemontreal.ca/le-toit-du-velodrome.php"
+          },
+          {
+            "label": "Biodôme · Espace pour la vie",
+            "url": "https://espacepourlavie.ca/en/biodome"
+          },
+          {
+            "label": "Biodôme building outline · OpenStreetMap way 26699302",
+            "url": "https://www.openstreetmap.org/way/26699302"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · Biodome Montreal, the shell from above (CC BY-SA 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Biodome_Montreal.jpg"
+          },
+          {
+            "label": "Photo · Biodome, the entrance arch and shell from the stadium tower (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Biodome.jpg"
+          },
+          {
+            "label": "Photo · Montreal Olympic Stadium aerial view (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Montreal_Olympic_Stadium_aerial_view.jpg"
+          },
+          {
+            "label": "Photo · Biodome 1, the skylights from inside (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Biodome_1.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/biodome-de-montreal/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=biodome-de-montreal&view=overview",
+        "views": [
+          {
+            "label": "Overview (from the stadium side)",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=overview"
+          },
+          {
+            "label": "Entrance arch, canopy and sign",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=facade"
+          },
+          {
+            "label": "Roof from the south-east",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=roof"
+          },
+          {
+            "label": "Back, from the north-east",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=back"
+          },
+          {
+            "label": "Plaza level at the south-west foot",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=street"
+          },
+          {
+            "label": "Spine skylights and ribs, close",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=detail"
+          },
+          {
+            "label": "Plan, straight down",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=plan"
+          },
+          {
+            "label": "From the stadium tower (vantage of the reference photos)",
+            "url": "/asset-preview.html?asset=biodome-de-montreal&view=tower"
+          }
+        ]
+      },
+      "notes": "The plan is the OpenStreetMap roof outline (way 26699302, 101 vertices, about 160 m x 158 m, 16 496 m2; the Parc olympique gives 16 723 m2) and the 33.5 m crown and four abutments are sourced; everything else is estimated from photographs. The shell is a height field over the plan: a dome profile (exponent 1.8) whose edge follows arches of 6 to 8.5 m clear height between the four feet (8.5 m on the stadium-side arch B-C, 8 m on C-D, 7 m and 6 m on the long back edges), a 1.1 m edge beam and a 1.5 m raised spindle along the spine. The ribs, the sixteen spine skylights, the four flank skylights per side and the eleven edge skylights per side are placed by eye from two aerial photographs: counts and sizes are approximate and the real skylights are stepped, louvred banks rather than glass bubbles with white bars. The glazed walls under the arches are an opaque dark teal (no interior), set back 3.6 m with mullions about every 3.8 m; near the feet they turn to solid concrete. The entrance (canopy at 5.6 m, two slim posts, a plain dark sign panel without lettering) is on the arch that faces the Olympic Stadium, west-south-west, as in the photographs; the brief's remark that the entrance is on the Planétarium (north) side was not borne out by the photographs. The access ramps, the sunken courts, the Planétarium, the Olympic Stadium and its tower are not modelled. Night: the glass and skylights are only dimmed (no lit interior is claimed); the sign is self-lit.",
+      "documentation": "docs/assets/quebec-biodome-de-montreal.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "canadian-museum-of-history",
+      "name": "Canadian Museum of History",
+      "kind": "building",
+      "location": "100 rue Laurier, Gatineau, Québec",
+      "status": "ready",
+      "description": "Douglas Cardinal's 1989 museum on the Ottawa River facing Parliament Hill, both wings: the southern public wing with the glass-fronted Grand Hall behind a colonnade of flared stone piers under a layered, wave-like cornice, verdigris copper domes (the long dome, the north rotunda, the 27 m west dome) and copper-roofed strips; and the northern curatorial wing, a cascade of four stepped, curving stone terraces under a copper roof, 4.5 to 15 m high. Buff Tyndall-type limestone throughout; the Grand Hall glows at night.",
+      "manifest": "/models/buildings/canadian-museum-of-history.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/canadian-museum-of-history/geometry.js",
+        "build": "pnpm build:quebec-landmarks canadian-museum-of-history",
+        "provenance": "Original procedural geometry authored 2026-10-03 from the OpenStreetMap outlines of the two wings (ways 68588595 and 68588601) and the 17 building:part ways that tile them (1043614694-98, 1043614700-07, 1043614710-13; fetched 2026-10-03 through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0; published facts (Wikipedia: Douglas Cardinal, 1989, 75,000 m2, 30,000 m2 of Tyndall stone, about 11,000 m2 of copper roof); public photographs compared only, from Wikimedia Commons: Rick Ligthelm (CC BY 2.0, the river front from the east), Wladyslaw (CC BY-SA 3.0 and CC BY 3.0, the colonnade and rotunda at dusk and the entrance front). No third-party mesh, font, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia · Canadian Museum of History (Douglas Cardinal, 1989, 75,000 m2, Tyndall stone, copper roof)",
+            "url": "https://en.wikipedia.org/wiki/Canadian_Museum_of_History"
+          },
+          {
+            "label": "Wikipédia · Musée canadien de l'histoire",
+            "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_canadien_de_l%27histoire"
+          },
+          {
+            "label": "Canadian Museum of History · official site",
+            "url": "https://www.historymuseum.ca/"
+          },
+          {
+            "label": "OSM public wing · way 68588595 (height 27 m)",
+            "url": "https://www.openstreetmap.org/way/68588595"
+          },
+          {
+            "label": "OSM curatorial wing · way 68588601",
+            "url": "https://www.openstreetmap.org/way/68588601"
+          },
+          {
+            "label": "Photo · the river front, Grand Hall colonnade and domes (Rick Ligthelm, CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ottawa,_Canada_(18317720018).jpg"
+          },
+          {
+            "label": "Photo · colonnade and rotunda at dusk (Wladyslaw, CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gatineau_-_QC_-_Museum_of_Civilisation3.jpg"
+          },
+          {
+            "label": "Photo · the entrance front and its stone waves (Wladyslaw, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gatineau_-_QC_-_Museum_of_Civilisation.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/canadian-museum-of-history/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=canadian-museum-of-history&view=overview",
+        "views": [
+          {
+            "label": "Both wings from the east",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=overview"
+          },
+          {
+            "label": "Grand Hall colonnade on the river front",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=facade"
+          },
+          {
+            "label": "Domes and roofs from above",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=roof"
+          },
+          {
+            "label": "Glazed entrance front and rotunda",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=entrance"
+          },
+          {
+            "label": "Curatorial wing from the west",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=rear"
+          },
+          {
+            "label": "Curatorial wing terraces from the east",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=curatorial"
+          },
+          {
+            "label": "Flared piers and cornice close up",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=detail"
+          },
+          {
+            "label": "South-west side from the lawns",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=south"
+          },
+          {
+            "label": "Street level from the river bank",
+            "url": "/asset-preview.html?asset=canadian-museum-of-history&view=street"
+          }
+        ]
+      },
+      "notes": "Both outlines, the 17 building:part plans and their heights (Grand Hall slab 14 m, west drum 18 m and dome to 27 m, long dome 14 to 20 m, rotunda dome to 19 m, curatorial terraces 4.5, 8, 11.5 and 15 m) are OSM, as is the 27 m overall height; where OSM is a mapper's estimate it is used as is. Estimated from photographs: the colonnade pier pitch (6.4 m), flare and foot width (about 2 m), the glass wall 2.3 m behind the piers, the three-band cornice (4 m) and the drift of its waves, the dome skirts and the cap profiles (plain ellipsoids, no ribs; the long dome is two overlapping ellipsoid lobes crowning at 20 m, rising its stated 6 m from the roof deck), the copper roof of the curatorial top terrace (OSM only gives a grey roof colour for the wing), and every window ribbon on the stone walls (the real masonry is mostly blank). The stone is a flat buff tone; the cornice bands alternate about 8 % lighter and darker; the real facing is rough-dressed Tyndall limestone. The copper is a dark patinated olive-green. Absent: the landscaping, river wall, plaza, the sculptures, the tall stone shaft beside the west dome, the interior, signage and lettering. Night: only the Grand Hall's glazing glows (warm); the real building is also floodlit. Flat-map grade y=0 is the perimeter level; no Tesla hardware measurements.",
+      "documentation": "docs/assets/quebec-canadian-museum-of-history.md",
+      "city": "Gatineau",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "casino-de-montreal",
+      "name": "Casino de Montréal",
+      "kind": "building",
+      "location": "1 avenue du Casino · Île Notre-Dame, Montréal, Québec",
+      "status": "ready",
+      "description": "Casino de Montréal in its two Expo 67 pavilions: the Pavillon de la France (Jean Faugeron), a drum of flared and vertical aluminium ribs over lit glazing with a glazed lantern, its west cascade of terraces with the mast, the concrete shaft stack and the north-east entrance canopy with its mushroom umbrella; the low glazed link block (white piers under a white band) and corridor; and the Pavillon du Québec, a box of gold glass with white tapered corner posts on a recessed glazed ground floor.",
+      "manifest": "/models/buildings/casino-de-montreal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/casino-de-montreal/geometry.js",
+        "build": "pnpm build:quebec-landmarks casino-de-montreal",
+        "provenance": "Original procedural geometry authored 2026-10-03 from OpenStreetMap plan data (ways 26698931 and 439917766, read through the shared Overpass queue) and photographs used only to compare; none is shipped. Mapped outlines © OpenStreetMap contributors (ODbL 1.0). No scan, third-party mesh, photograph or texture in the repository or the GLB. Comparison photographs (Wikimedia Commons, kept outside the repo): 'Casino de Montréal 2.JPG' (Andrijko Z., CC BY-SA 3.0); 'Casino De Montreal (219955723).jpeg' (Igor Galx, CC BY-SA 3.0); 'Casino de Montréal, pavillon du Québec.jpg' (Idej Elixe, CC BY-SA 3.0); 'Casino de Montréal (entrée).jpg' (Benoit Rochon, CC BY-SA 2.5 ca); 'Expo 67, pavillon de la France.jpg' (Laurent Bélanger, CC BY-SA 3.0); 'Montreal Casino - Montreal, Quebec 2019-05-12 (04).jpg' and '(03).jpg' (Ryan Hodnett, CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia · Montreal Casino (two former Expo 67 pavilions, Jean Faugeron, opened 1993)",
+            "url": "https://en.wikipedia.org/wiki/Montreal_Casino"
+          },
+          {
+            "label": "Wikipédia · Casino de Montréal (pavillon de la France, Faugeron et Blouin, pavillon du Québec ajouté en 2013-2017)",
+            "url": "https://fr.wikipedia.org/wiki/Casino_de_Montr%C3%A9al"
+          },
+          {
+            "label": "Casino de Montréal · official site (Loto-Québec)",
+            "url": "https://casinos.lotoquebec.com/en/montreal/home"
+          },
+          {
+            "label": "OSM · way 26698931 (the south and east of the complex)",
+            "url": "https://www.openstreetmap.org/way/26698931"
+          },
+          {
+            "label": "OSM · way 439917766 (the terrace tower and entrance canopy)",
+            "url": "https://www.openstreetmap.org/way/439917766"
+          },
+          {
+            "label": "Wikimedia Commons · Casino de Montréal (category)",
+            "url": "https://commons.wikimedia.org/wiki/Category:Casino_de_Montr%C3%A9al"
+          },
+          {
+            "label": "Wikimedia Commons · Expo 67, pavillon de la France (the French pavilion in 1967)",
+            "url": "https://commons.wikimedia.org/wiki/File:Expo_67,_pavillon_de_la_France.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Casino de Montréal (entrée) (mushroom canopy, flared ribs, terraces)",
+            "url": "https://commons.wikimedia.org/wiki/File:Casino_de_Montr%C3%A9al_(entr%C3%A9e).jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Casino de Montréal, pavillon du Québec (gold glass box)",
+            "url": "https://commons.wikimedia.org/wiki/File:Casino_de_Montr%C3%A9al,_pavillon_du_Qu%C3%A9bec.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Montreal Casino 2019-05-12 (04) (drum, terraces, shaft stack and stairs)",
+            "url": "https://commons.wikimedia.org/wiki/File:Montreal_Casino_-_Montreal,_Quebec_2019-05-12_(04).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/casino-de-montreal/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=casino-de-montreal&view=overview",
+        "views": [
+          {
+            "label": "Overview from the north-east, the drop-off side",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=overview"
+          },
+          {
+            "label": "Drum and flared rib wing from the east-south-east",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=facade"
+          },
+          {
+            "label": "Entrance canopy and mushroom umbrella",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=canopy"
+          },
+          {
+            "label": "West terrace tower and mast",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=terraces"
+          },
+          {
+            "label": "Pavillon du Québec, the gold glass box",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=quebec"
+          },
+          {
+            "label": "Link block and south-east ramp",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=link"
+          },
+          {
+            "label": "Rear from the west",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=back"
+          },
+          {
+            "label": "Roofs and lantern from above",
+            "url": "/asset-preview.html?asset=casino-de-montreal&view=roof"
+          }
+        ]
+      },
+      "notes": "MAPPED (OSM, 2026-10-03): the whole plan, with the orientation baked in: the drum circle (rim radius 32.0 m on the north-west, 39.7 m on the east where the ribs flare out, centre = model origin), the west terrace bulge, the north-east canopy triangle, the north apron, the link block, the 10 m corridor, the Québec pavilion's 48 x 48 m square (edges skewed 1.7 degrees) and the south-east wedge. SOURCED: two former Expo 67 pavilions, Jean Faugeron, opened 9 October 1993, six storeys, Pavillon du Québec joined by the 2013-2017 expansion (Wikipedia). No published heights exist. ESTIMATED from photographs: podium roof 9 m, fan 9.6 to 20 m with a 6.5 m flare, ring beam to 21.2 m, louvre drum to 30.4 m (crown 31.6 m), lantern to 35 m, six terrace decks 3.4 m apart (8 to 26 m), shaft stack 22 to 36 m, mast 44 m, canopy 8.6 to 9.6 m, Québec pavilion gold body 6 to 28.4 m with a 3.5 m roof band (31.9 m), 10 per cent lean, gold colour (a deeper bronze-gold in near; far uses one average of gold and white bars), rib counts (120 fan and 120 louvre ribs), mullion pitch (2.0 m), the south-east wedge slope (a ramp from 9 m to grade). INFERRED: the placement of the terrace tower (west), shaft stack (north apron) and entrance canopy relative to the drum comes from the outline and four photographs taken from different sides; the real arrangement may differ in detail. SIMPLIFIED: the wedge is a solid ramp (the real one carries stairs and landings), the mushroom canopy is a single umbrella, the podium and link glazing is a pale blue-grey glass between white piers every ~6 m under a white band, the shaft windows are slits. NOT MODELLED: lettering and signs, the flags and pennants on the drum crown, the fountain under the canopy, the hotel announced for 2028, the flower clock, the outdoor stairs, the waterfront. The ribs' glazing, the lantern and the canopy edge are drawn unshaded (pale glass by day, warm light at night). Flat-map grade y=0; no Tesla hardware measurements.",
+      "documentation": "docs/assets/quebec-casino-de-montreal.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "centre-bell",
+      "name": "Centre Bell",
+      "kind": "building",
+      "location": "1909 avenue des Canadiens-de-Montréal, Montréal, Québec",
+      "status": "ready",
+      "description": "Centre Bell (Bell Centre), home of the Canadiens de Montréal: the 146 m x 107 m brick box turned 41 degrees from north, its 28 m lower volume of orange brick, tan cladding and silver panels with a grid of small windows, the 10 m band of dark glass above, the glazed entrance front with two LED screens on the Place des Canadiens side, the glazed arcade under the Rue de la Montagne face, and the tan sign tower 20 m in from the north corner, standing proud of the glazed frontage, with the blue \"Centre Bell\" lettering.",
+      "manifest": "/models/buildings/centre-bell.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/centre-bell/geometry.js",
+        "build": "pnpm build:quebec-landmarks centre-bell",
+        "provenance": "Original procedural geometry authored 2026-10-03 from the mapped plan and photographs; plan and bearing from OpenStreetMap way 19911284 (© OpenStreetMap contributors, ODbL 1.0). No height is published: every height is estimated from photographs. No scan, traced mesh, photograph or texture is shipped. Reference photographs were used only to compare and to scale proportions (kept out of the repository): Commons 'Bell Centre August 2005.jpg' (Michael Barera, CC BY-SA 4.0), 'Centre Bell (2009).jpg' (Alexcaban, CC BY-SA 3.0) and 'Façade Centre Bell Center Front.JPG' (Fleurdelisé, CC BY-SA 3.0).",
+        "references": [
+          {
+            "label": "Bell Centre · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Bell_Centre"
+          },
+          {
+            "label": "Centre Bell · Wikipédia (146 m x 107 m, 15 622 m2)",
+            "url": "https://fr.wikipedia.org/wiki/Centre_Bell"
+          },
+          {
+            "label": "Centre Bell · official site",
+            "url": "https://www.centrebell.ca/"
+          },
+          {
+            "label": "Centre Bell building outline · OpenStreetMap way 19911284",
+            "url": "https://www.openstreetmap.org/way/19911284"
+          },
+          {
+            "label": "OpenStreetMap copyright",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Photo · Bell Centre, August 2005, the brick south-west face and the grey-green glass band (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bell_Centre_August_2005.jpg"
+          },
+          {
+            "label": "Photo · Centre Bell (2009), the glazed front, dark band and sign tower (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Centre_Bell_(2009).jpg"
+          },
+          {
+            "label": "Photo · Façade Centre Bell, the sign tower and its lettering from the corner of Gauchetière and Drummond (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_Centre_Bell_Center_Front.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/centre-bell/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=centre-bell&view=overview",
+        "views": [
+          {
+            "label": "Overview (Place des Canadiens side)",
+            "url": "/asset-preview.html?asset=centre-bell&view=overview"
+          },
+          {
+            "label": "Glazed entrance front and LED screens",
+            "url": "/asset-preview.html?asset=centre-bell&view=facade"
+          },
+          {
+            "label": "Sign tower and lettering",
+            "url": "/asset-preview.html?asset=centre-bell&view=tower"
+          },
+          {
+            "label": "South-west brick face (Rue de la Montagne)",
+            "url": "/asset-preview.html?asset=centre-bell&view=sw"
+          },
+          {
+            "label": "South-east silver end (Rue Saint-Antoine Ouest)",
+            "url": "/asset-preview.html?asset=centre-bell&view=se"
+          },
+          {
+            "label": "Avenue des Canadiens-de-Montréal end",
+            "url": "/asset-preview.html?asset=centre-bell&view=nw"
+          },
+          {
+            "label": "Street level, glazed arcade",
+            "url": "/asset-preview.html?asset=centre-bell&view=street"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=centre-bell&view=roof"
+          }
+        ]
+      },
+      "notes": "The 146 m x 107 m plan, its 41 degree bearing, the 6 m south-west set-back, the 3.4 m glazed front and the 15 046 m2 area come from OpenStreetMap (Wikipedia gives 107 m x 146 m). No height is published: the 28 m brick volume (5.5 m base, brick to 21 m, tan band or brick to 28 m), the 10 m dark band, the 38.4 m roof, the 47 m sign tower, the 2.9 m window pitch in pairs between blank bays and seven window rows, the 3.6 m mullion grid, the sign's size and letter forms and all colours are estimates from three exterior photographs. The sign tower's position (20 m in from the north corner, between a pale glazed bay and the entrance front, glass on both sides), which face is brick, tan or silver, and where the glazed arcade and entrance doors are, are read from those photographs and the street nodes, not surveyed. The real dark band probably overhangs the south-west set-back; the model keeps everything inside the mapped outline and sets the band 1 m behind the brick. The small rounded bay near the east corner of the outline is not modelled. The roof plant (ten boxes, four stacks) is a plausible invention. The blue lettering is plain rectangular block letters, not the Bell typeface. The Tour des Canadiens condominium towers, L'Avenue and Gare Lucien-L'Allier beside the arena are separate buildings and are not modelled. Interior and seating are not modelled. Night: the glazed front is `glow` (warm, unshaded), the sign is `sign` (self-lit light blue) and the LED screens are `lamp` (dark by day, lit at night); `glow` is drawn unshaded, so its day colour is a pale grey-blue chosen to match the shaded glass.",
+      "documentation": "docs/assets/quebec-centre-bell.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "chateau-frontenac",
+      "name": "Château Frontenac",
+      "kind": "building",
+      "location": "1 rue des Carrières, Vieux-Québec, Québec",
+      "status": "ready",
+      "description": "Bruce Price's 1893 Canadian Pacific château hotel on the Cap Diamant cliff, with the 1924 central tower: red-brown brick with grey stone trim around two courtyards, the long south-east facade above the Dufferin Terrace with its stone arcade, gabled bays and conical-capped turrets, steep green copper roofs with dormers and tall chimneys, the round north-east tower, and the 14-storey tower with its steep dark roof and pinnacles reaching about 80 m.",
+      "manifest": "/models/buildings/chateau-frontenac.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/chateau-frontenac/geometry.js",
+        "build": "pnpm build:quebec-landmarks chateau-frontenac",
+        "provenance": "Original procedural geometry authored 2026-10-03 from the OpenStreetMap outline of the hotel (relation 32580, outer way 27072105, with its building:part ways 397610024, 396948398, 396293672, 396948396, 397610021, 396293665, 396294279, 396940763, 1365627870 and the in-court buildings 396294280, 396293674, 1365627869; fetched 2026-10-03 through the shared Overpass helper and the OSM API), © OpenStreetMap contributors, ODbL 1.0; the published height and storeys (Wikipedia), and public photographs compared only, from Wikimedia Commons: 0x010C (CC BY-SA 4.0), Wilfredor (CC0 and CC BY-SA 4.0), Jeangagnon (CC BY-SA 3.0), Ymblanter (CC BY-SA 4.0), Emilemv (CC BY-SA 3.0), Hayden Soloviev (CC BY 4.0). The terrain notes use the public Terrarium DEM tiles for measurement only. No third-party mesh, font, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia · Château Frontenac (80 m, 18 floors, Bruce Price 1893, tower 1924)",
+            "url": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_Frontenac"
+          },
+          {
+            "label": "Wikipédia · Château Frontenac",
+            "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_Frontenac"
+          },
+          {
+            "label": "Fairmont Le Château Frontenac · official site",
+            "url": "https://www.fairmont.com/frontenac-quebec/"
+          },
+          {
+            "label": "OSM hotel outline · relation 32580",
+            "url": "https://www.openstreetmap.org/relation/32580"
+          },
+          {
+            "label": "OSM tower block (14 levels) · way 396293672",
+            "url": "https://www.openstreetmap.org/way/396293672"
+          },
+          {
+            "label": "Photo · terrace facade and tower from the Dufferin Terrace (Wilfredor, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Ch%C3%A2teau_Frontenac_and_Terrasse_Dufferin.jpg"
+          },
+          {
+            "label": "Photo · from the Dufferin Terrace (Ymblanter, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Quebec_City_Ch%C3%A2teau_Frontenac_seen_from_Terrasse_Dufferin_01.jpg"
+          },
+          {
+            "label": "Photo · at dusk from the Dufferin Terrace (Wilfredor, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chateau_Frontenac_at_dusk_from_the_Terrasse_Dufferin.jpg"
+          },
+          {
+            "label": "Photo · turrets, dormers and roofs (0x010C, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2016-11_Ch%C3%A2teau_Frontenac_06.jpg"
+          },
+          {
+            "label": "Photo · stone gateway and facade (Jeangagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chateau_Frontenac_37.JPG"
+          },
+          {
+            "label": "Photo · aerial view of the plan and roofs (Emilemv, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_Frontenac_vu_en_avion.JPG"
+          },
+          {
+            "label": "Photo · night aerial view (Hayden Soloviev, CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chateau_Frontenac_and_Dufferin_Terrace,_night_aerial_view.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/chateau-frontenac/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=chateau-frontenac&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=overview"
+          },
+          {
+            "label": "Terrace facade above the Dufferin Terrace",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=facade"
+          },
+          {
+            "label": "Tower and roofs from the south-east",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=tower"
+          },
+          {
+            "label": "Roofs and courtyards from above",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=roof"
+          },
+          {
+            "label": "East wing and round tower from the terrace",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=terrace"
+          },
+          {
+            "label": "Arcade and bays at terrace level",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=arcade"
+          },
+          {
+            "label": "Centre bay and turrets",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=centre"
+          },
+          {
+            "label": "Place d'Armes side with the porte-cochère",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=north"
+          },
+          {
+            "label": "From the river at Lévis",
+            "url": "/asset-preview.html?asset=chateau-frontenac&view=river"
+          }
+        ]
+      },
+      "notes": "Plan, courtyards, storey counts (tower 14, wings 5 and 6) and the published height (about 80 m, 18 floors) follow OSM and Wikipedia. Floor heights (4.5 m ground storey, 3.6 m above), roof pitches, the roofs and heights of the unmapped wings (the west wing, the long south-east wing, the filler blocks), every dormer, turret, chimney and gable position, the window rhythm, the stone arcade, the porte-cochère (its position on the Place d'Armes side is a guess from one close photograph) and the tower pinnacles are read from photographs, not surveyed. The round north-east tower, the hexagonal tower, the terrace turret, the east wing and the small square tower follow their OSM building:part footprints. Ornament (carved stone, balconies, flags, signs, the Dufferin Terrace, the funicular station and the Champlain monument) is absent; the courtyard fronts are as plain as the street fronts. A few facade bays, cornices and turret bellies reach up to 2.4 m past the mapped outline. The tower roof is near-black slate, a tall steep hip (ridge 77.3 m under the 80 m pinnacles); the wing roofs are a dark teal-green copper and the wide spans close in shallow copper hips rather than flat decks. Night: a third of the window panes glow warm; nothing else is self-lit. Flat-map grade y=0 is the Dufferin Terrace level; no Tesla hardware measurements.",
+      "documentation": "docs/assets/quebec-chateau-frontenac.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edifice-marie-guyart",
+      "name": "Édifice Marie-Guyart",
+      "kind": "building",
+      "location": "675 boulevard René-Lévesque Est (1037 rue De La Chevrotière), Québec",
+      "status": "ready",
+      "description": "Complexe G (Gauthier, Guité, Roy, Fiset et Deschamps; Édouard Fiset, 1967-72): Québec City's tallest building, a brutalist 132 m tower of grey-taupe precast concrete on a 42 m by 47 m plan. Glazed ground storey set back under the upper floors; on all four faces a continuous ribbon of dark glass under a row of square windows in protruding precast frames; wide, plain, braced corner shafts that stand above the roof and 1 m proud of the windows; a glazed belvedere floor (Observatoire de la Capitale); a rooftop penthouse and a 177 m mast. Beside it the low government complex: three 4-level wings with cantilevered upper storeys and five 5-level stair and plant cores round an open court.",
+      "manifest": "/models/buildings/edifice-marie-guyart.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/edifice-marie-guyart/geometry.js",
+        "build": "pnpm build:quebec-landmarks edifice-marie-guyart",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the OpenStreetMap plan of the tower (way 27372377), the government base outline (way 38947693) and its nine building:part ways (1495832340 to 1495832348), fetched 2026-10-04 through the shared Overpass helper, © OpenStreetMap contributors, ODbL 1.0; published facts (132 m roof, 177 m spire, 31 levels, 1967-72) from Wikipedia (English and French) and the Répertoire du patrimoine culturel du Québec and the Société québécoise des infrastructures descriptions; and public photographs compared only, kept in the ignored tmp/quebec/edifice-marie-guyart/refs/ and never in the repository or the GLBs: 'Édifice Marie-Guyart (Complexe G)' by Quintin Soloviev and Hayden Soloviev (CC BY 4.0); 'Quebec-Marie-Guyart.JPG' by Gilbert Bochenek (public domain); 'Québec - Édifice Marie-Guyart 20241030.jpg' by Pymouss (CC BY-SA 4.0); 'Edifice Marie-Guyart 02.JPG' by Jeangagnon (CC BY-SA 3.0); 'EdificeMarieGuyart.JPG' by Datch78 (public domain). No scan, traced mesh, photograph or texture is in the repository or the GLB.",
+        "references": [
+          {
+            "label": "Wikipedia · Édifice Marie-Guyart",
+            "url": "https://en.wikipedia.org/wiki/%C3%89difice_Marie-Guyart"
+          },
+          {
+            "label": "Wikipédia · Édifice Marie-Guyart (roof 132 m, spire 177 m, 33 floors)",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89difice_Marie-Guyart"
+          },
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Édifice Marie-Guyart",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=170046&type=bien"
+          },
+          {
+            "label": "Société québécoise des infrastructures · Édifice Marie-Guyart (four blocks, precast panels, Vierendeel beams)",
+            "url": "https://www.sqi.gouv.qc.ca/expertises/gestion-immobiliere/registre-des-immeubles-patrimoniaux/edifice-marie-guyart"
+          },
+          {
+            "label": "Observatoire de la Capitale (31st floor)",
+            "url": "https://observatoire-capitale.com/en/"
+          },
+          {
+            "label": "Mapped tower · OSM way 27372377",
+            "url": "https://www.openstreetmap.org/way/27372377"
+          },
+          {
+            "label": "Mapped base complex · OSM way 38947693",
+            "url": "https://www.openstreetmap.org/way/38947693"
+          },
+          {
+            "label": "Photograph · Édifice Marie-Guyart (Complexe G) (Quintin and Hayden Soloviev, CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:%C3%89difice_Marie-Guyart_(Complexe_G).jpg"
+          },
+          {
+            "label": "Photograph · Quebec-Marie-Guyart.JPG (Gilbert Bochenek, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Quebec-Marie-Guyart.JPG"
+          },
+          {
+            "label": "Photograph · Édifice Marie-Guyart 02 (Jeangagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Edifice_Marie-Guyart_02.JPG"
+          },
+          {
+            "label": "Photograph · EdificeMarieGuyart.JPG (Datch78, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:EdificeMarieGuyart.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/edifice-marie-guyart/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=edifice-marie-guyart&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=overview"
+          },
+          {
+            "label": "Entrance face from boulevard René-Lévesque",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=facade"
+          },
+          {
+            "label": "Street level under the entrance face",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=street"
+          },
+          {
+            "label": "Corner pier between two faces",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=corner"
+          },
+          {
+            "label": "Roof, penthouse and mast from above",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=roof"
+          },
+          {
+            "label": "Crown and belvedere floor",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=crown"
+          },
+          {
+            "label": "Base wings and court from the south-east",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=base"
+          },
+          {
+            "label": "Stair core and south wing in front of the tower",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=south"
+          },
+          {
+            "label": "East-north-east face",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=east"
+          },
+          {
+            "label": "Approach from the north-west at 400 m",
+            "url": "/asset-preview.html?asset=edifice-marie-guyart&view=approach"
+          }
+        ]
+      },
+      "notes": "Sourced: the plan of the tower (42 m by 47 m, rotated 60.7 degrees east of north) and of the wings and cores (60.1 degrees), the 132 m roof and 31 levels, the 177 m mast tip (fr.wikipedia), the 4 and 5 levels of the base parts, the ground storey glazed and set back, the ribbon and square-window grid on all four faces, the braced corner shafts and the glazed belvedere (RPCQ, SQI). Estimated from photographs: the 4.2 m storey pitch and 5.4 m ground storey, window and frame proportions (1.6 m windows in 3.05 m bays, 6 m windowless corner piers on the envelope standing 1 m proud of the window frames, frames 0.6 m proud of the field), the 1.5 m corner caps, the penthouse and the mast lattice (about 22 m, with a thin whip), every height of the base (4.8 m ground storey and three of 3.6 m; cores 19.2 m), the 1.5 m cantilever of the upper two storeys of the wings (applied on every side; the sources say two cantilevered storeys on the public sides and one on the court sides), and the position of the rooftop units. RPCQ calls the tower plan cruciform; the model is the mapped rectangular envelope with the braced corner shafts as 6 m piers on it and the windows set 1 m back. Not modelled: the plaza, stairs and pergola, the sunken court, the skyways, the lobby interior, the second ground floor and the setbacks under the wings, signage, flags and the roof dishes. Night: a third of the windows and ribbons and 70 percent of the ground storey glow warm; the belvedere floor is 60 percent lit. Flat-map grade y=0 is the plaza level at the foot of the tower; no Tesla hardware measurements.",
+      "documentation": "docs/assets/quebec-edifice-marie-guyart.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "gare-du-palais",
+      "name": "Gare du Palais",
+      "kind": "building",
+      "location": "450 rue de la Gare-du-Palais, Québec (Lower Town)",
+      "status": "ready",
+      "description": "Harry Edward Prindle's 1915 Canadian Pacific station in Québec's Lower Town, a Château-style cousin of the Château Frontenac: red-brown brick with grey limestone trim under steep verdigris copper mansard roofs. The tall central hall shows its great glazed bay of seven mullioned windows under seven arches, the stone clock gable with two pinnacles, an arcature, and two round turrets under conical copper caps, over a glazed entrance canopy facing the forecourt; a long low west wing and a north wing (toward the tracks) with rows of pedimented dormers and brick chimneys complete the truncated-Y plan.",
+      "manifest": "/models/buildings/gare-du-palais.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/gare-du-palais/geometry.js",
+        "build": "pnpm build:quebec-landmarks gare-du-palais",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the OpenStreetMap outline of the station (way 33893247 and its building:part ways 1489885118, 1489885117 and 1489885116; fetched 2026-10-04 through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0; the date, architect, materials, plan and the seven-window central bay (Wikipedia EN and FR, Parks Canada Directory of Federal Heritage Designations); and public photographs compared only, from Wikimedia Commons: Wilfredor, 'Ornate clock at Gare du Palais in Quebec City', 'Gare du Palais, Quebec city, Quebec, Canada 2340 24' and 'Main hall of Gare du Palais in Quebec City' (all CC0), and Daniel Di Palma, 'Gare du Palais at dawn' (CC BY-SA 4.0). The public Terrarium DEM was read for measurement only. No photograph, scan, traced mesh or texture is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · Gare du Palais (1915, Château style, copper roofs, ticket lobby and concourse dimensions)",
+            "url": "https://en.wikipedia.org/wiki/Gare_du_Palais"
+          },
+          {
+            "label": "Wikipédia · Gare du Palais (Québec)",
+            "url": "https://fr.wikipedia.org/wiki/Gare_du_Palais_(Qu%C3%A9bec)"
+          },
+          {
+            "label": "Parks Canada · Du Palais Station (Heritage Railway Station, truncated-Y plan, conical turrets, glazed bay of seven windows)",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_hrs_eng.aspx?id=2116"
+          },
+          {
+            "label": "OSM station outline · way 33893247",
+            "url": "https://www.openstreetmap.org/way/33893247"
+          },
+          {
+            "label": "OSM main block (4 levels) · way 1489885116",
+            "url": "https://www.openstreetmap.org/way/1489885116"
+          },
+          {
+            "label": "OSM west wing · way 1489885117",
+            "url": "https://www.openstreetmap.org/way/1489885117"
+          },
+          {
+            "label": "OSM north wing · way 1489885118",
+            "url": "https://www.openstreetmap.org/way/1489885118"
+          },
+          {
+            "label": "Photo · facade with clock, glass bay and turrets (Wilfredor, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ornate_clock_at_Gare_du_Palais_in_Quebec_City.jpg"
+          },
+          {
+            "label": "Photo · facade (Wilfredor, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gare_du_Palais,_Quebec_city,_Quebec,_Canada_2340_24.jpg"
+          },
+          {
+            "label": "Photo · concourse (Wilfredor, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Main_hall_of_Gare_du_Palais_in_Quebec_City.jpg"
+          },
+          {
+            "label": "Photo · west wing and main block at dawn (Daniel Di Palma, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gare_du_Palais_at_dawn.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/gare-du-palais/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=gare-du-palais&view=overview",
+        "views": [
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=overview"
+          },
+          {
+            "label": "Facade over the forecourt",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=facade"
+          },
+          {
+            "label": "Clock gable, turrets and glass bay",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=clock"
+          },
+          {
+            "label": "Street view from the forecourt",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=street"
+          },
+          {
+            "label": "Entrance canopy and doors",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=entrance"
+          },
+          {
+            "label": "West wing and the main block from the south-west",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=west"
+          },
+          {
+            "label": "Main block from the west",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=corner"
+          },
+          {
+            "label": "North wing and hall from the tracks side",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=tracks"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=roof"
+          },
+          {
+            "label": "East side",
+            "url": "/asset-preview.html?asset=gare-du-palais&view=east"
+          }
+        ]
+      },
+      "notes": "The plan (outline and the three parts, their 2 and 4 levels, the two grids 30 degrees apart: main block 67 deg east of north, wings 97 deg) follows OSM and agrees with the truncated-Y plan and the 13.7 m ticket lobby width published for the station. Every height (hall roof 19.4 m, eaves 11.8 / 6.7 / 3.6 m, wing ridges 10.8 m, cones 17.4 m), the roof profiles (steep mansards with flat or ridged tops, wings gabled into the main roofs), the clock, the seven-bay glass wall, the arcature, the turrets, the canopy, dormers, windows, quoins and chimneys are read from four photographs, not surveyed; the 40 ft window quoted historically does not fit the mapped 14.8 m pavilion and is modelled at about 6 m as photographed. The roofs of the north wing and of the rear of the main block are inferred from the outline and the west wing. The long covered walkway along the west wing, the forecourt (Place Jean-Pelletier, the Éclatement II fountain 35 m ahead), the neighbouring 6-storey office (way 103861185) and service building (way 163393183) and all lettering, coats of arms and signs are not modelled. The far LOD keeps the roofs, turrets, clock gable, dormers and chimneys and replaces windows with lit and dark slots. The two turrets are continuous round brick towers from the ground to the stone belt and cone (they stood on a grey inverted corbel cone before); each wing's joined end is a gable clipped into the hall and side-block roofs with valleys (it was a hip pyramid butting them), the two wings still meet each other as separate roofs; roof cresting is a thin strip (0.1 m wide).",
+      "documentation": "docs/assets/quebec-gare-du-palais.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "hotel-de-ville-de-montreal",
+      "name": "Hôtel de Ville de Montréal",
+      "kind": "building",
+      "location": "275 rue Notre-Dame Est, Vieux-Montréal, Québec",
+      "status": "ready",
+      "description": "Perrault and Hutchison's Second Empire city hall (1872-78, rebuilt inside after the 1922 fire): a five-part grey-limestone front on rue Notre-Dame with a pedimented central pavilion, its portal, the balcony of de Gaulle's 1967 \"Vive le Québec libre\", a clock frontispiece and a copper campanile, end pavilions under their own mansards, dark patinated copper roofs with dormers and two Renaissance chimneys, and the 1932-34 terrace block behind it toward the Champ-de-Mars.",
+      "manifest": "/models/buildings/hotel-de-ville-de-montreal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/hotel-de-ville-de-montreal/geometry.js",
+        "build": "pnpm build:quebec-landmarks hotel-de-ville-de-montreal",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the OpenStreetMap outlines of the City Hall (way 20919180, 275 rue Notre-Dame Est) and of the untagged rear block (way 396654637, the 1932-34 extension toward the Champ-de-Mars; fetched through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0; the published facts (five storeys, five-part symmetrical front with a projecting central pavilion, grey stone, copper mansard roofs, 30 ft campanile, 1923-26 rebuild, 1932-34 extension) and photographs listed below. No scan, traced mesh, photograph or texture is used or shipped; the photographs were only compared with the renders.",
+        "references": [
+          {
+            "label": "Wikipedia · Montreal City Hall (Perrault and Hutchison, 1872-78, Second Empire, 275 Notre-Dame East)",
+            "url": "https://en.wikipedia.org/wiki/Montreal_City_Hall"
+          },
+          {
+            "label": "Wikipédia · Hôtel de ville de Montréal (five-part front, copper roofs, 1923-26 rebuild and 1932-34 extension to the Champ-de-Mars, campanile of thirty feet)",
+            "url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Montr%C3%A9al"
+          },
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Hôtel de ville de Montréal",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=100488&type=bien"
+          },
+          {
+            "label": "Parcs Canada · Lieu historique national de l'Hôtel-de-Ville-de-Montréal (character-defining elements: entrance pavilion, mansard roofs, cupola, rear extension of 1932)",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_fra.aspx?id=653"
+          },
+          {
+            "label": "OSM City Hall outline · way 20919180",
+            "url": "https://www.openstreetmap.org/way/20919180"
+          },
+          {
+            "label": "OSM rear block (1932-34 extension) · way 396654637",
+            "url": "https://www.openstreetmap.org/way/396654637"
+          },
+          {
+            "label": "Photo · the rue Notre-Dame front from the street (Canmenwalker, CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Montreal_City_Hall_2026.JPG"
+          },
+          {
+            "label": "Photo · the rear and campanile floodlit from the Champ-de-Mars side (Joanne Lévesque, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_Ville_de_Montr%C3%A9al,_vu_du_Champ-de-Mars.jpg"
+          },
+          {
+            "label": "Photo · the City Hall and the old courthouse seen from the Champ-de-Mars (Joanne Lévesque, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_Ville_et_Ancien_Palais_de_Justice,_vus_du_Champ-de-Mars.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/hotel-de-ville-de-montreal/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=overview",
+        "views": [
+          {
+            "label": "Overview from the rue Notre-Dame side",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=overview"
+          },
+          {
+            "label": "Five-part front on rue Notre-Dame",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=facade"
+          },
+          {
+            "label": "Portal, balcony, colonnade and stair",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=portico"
+          },
+          {
+            "label": "Clock frontispiece and copper campanile",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=campanile"
+          },
+          {
+            "label": "Mansard roofs, dormers and chimneys from above",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=roof"
+          },
+          {
+            "label": "Rear façade and terrace block toward the Champ-de-Mars",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=rear"
+          },
+          {
+            "label": "Front corner with the end pavilion and the recessed end wall",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=corner"
+          },
+          {
+            "label": "End wall",
+            "url": "/asset-preview.html?asset=hotel-de-ville-de-montreal&view=end"
+          }
+        ]
+      },
+      "notes": "Sourced: the two mapped outlines and their 29.45 degree frame, five storeys, the five-part front with a projecting central pavilion, grey stone with copper mansard roofs and dormers, two chimneys, a campanile of thirty feet (9.1 m), and a 1932-34 rear extension. Estimated from photographs: the 40 m total (cornice 15.5 m, ridge 24.4 m), storey heights, bay counts, window and column sizes, the roof profile, the rear block height (terrace top 4.8 m on the flat map), and the rear block's walls, which run down to -2.5 m as a slope skirt (the only geometry below y=0) so they stand on a ground that falls toward the Champ-de-Mars instead of floating. The left end pavilion is drawn as proud of the wing as the right one (the outline maps only the right one) and projects about 2 m past its mapped wall. Sculpture, carved relief, the bronze doors, lettering, flags, the front parterres and the glazed roof on the rear terrace are abstracted or left out. The ground-floor storey of the rear is hidden by the terrace block. The campanile cap is patinated copper in the same dark material as the mansards (it was a separate bright orange unshaded copper, floodlit gold at night; it is no longer a gold night accent). The rear block's terrace is closed by a dark roof membrane between its parapets, with a darker coping strip, so it no longer reads as a pale slab from above. Models here are visual approximations, not surveys.",
+      "documentation": "docs/assets/quebec-hotel-de-ville-de-montreal.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "hotel-du-parlement",
+      "name": "Hôtel du Parlement",
+      "kind": "building",
+      "location": "1045 rue des Parlementaires, Québec",
+      "status": "ready",
+      "description": "Eugène-Étienne Taché's Second Empire parliament of Québec (1877-86), seat of the Assemblée nationale: a grey-ashlar quadrangle of four wings round a courtyard, four storeys under slate mansards with rows of pedimented dormers, four corner pavilions under taller mansards with iron cresting and masts, a projecting central frontispiece with two sculpture groups on its roof and, on the north-east front, the clock tower with its steep slate spire, iron crest and the fleurdelisé; bronze statues of the figures of Québec's history stand in the facade niches and on pedestals along the ground storey.",
+      "manifest": "/models/buildings/hotel-du-parlement.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/hotel-du-parlement/geometry.js",
+        "build": "pnpm build:quebec-landmarks hotel-du-parlement",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the OpenStreetMap outer ring of the Hôtel du Parlement (relation 196002, outer way 27072400 and its courtyard hole, way 39012651; fetched through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0; the published facts (Taché, 1877-86, Second Empire, four levels under mansard roofs, four wings round a square courtyard, a central tower of eight storeys with a clock and an iron crest, corner pavilions, tower 52.4 m, bronze statues in the facade niches, two allegorical groups crowning the avant-corps; Wikipedia, Wikipédia FR, Répertoire du patrimoine culturel du Québec) and the photographs listed below, which were downloaded only to ignored tmp/quebec/hotel-du-parlement/refs/ to compare. Photographs used: 'Assemblée nationale du Québec, Canada.jpg' (Wilfredor, CC0); 'Jean Talon 01.JPG' and 'Jean-Jacques Olier 02.jpg' (Jean Gagnon, CC BY-SA 3.0); 'Guy Carleton Lord Dorchester 03.jpg' (sculpture Alfred Laliberté, photo Jean Gagnon, CC BY-SA 3.0). A public Terrarium DEM tile (z15 9901/11550) was read to decide the terrain pad. No scan, traced mesh, photograph or texture is used in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipedia · Parliament Building (Quebec) (Taché, Second Empire, 1877-86, eight floors incl. basement and roof, 52.4 m)",
+            "url": "https://en.wikipedia.org/wiki/Parliament_Building,_Quebec"
+          },
+          {
+            "label": "Wikipédia · Hôtel du Parlement du Québec (Second Empire néorenaissance, toits à mansardes, statues de bronze dans les niches, groupes de Hébert sur les avant-corps)",
+            "url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_du_Parlement_du_Qu%C3%A9bec"
+          },
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Hôtel du Parlement (quatre corps de bâtiment autour d'une cour carrée, quatre étages, toits mansardés, tour centrale de huit étages à toit en pavillon et crête en fer, pavillons d'angle en saillie)",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=105639&type=bien"
+          },
+          {
+            "label": "OSM Hôtel du Parlement · relation 196002",
+            "url": "https://www.openstreetmap.org/relation/196002"
+          },
+          {
+            "label": "Wikidata · Hôtel du Parlement du Québec (Q1067302)",
+            "url": "https://www.wikidata.org/wiki/Q1067302"
+          },
+          {
+            "label": "Photo · the north-east front with the clock tower and the esplanade (Wilfredor, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_nationale_du_Qu%C3%A9bec,_Canada.jpg"
+          },
+          {
+            "label": "Photo · Jean Talon, a bronze statue on the facade (Jean Gagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Jean_Talon_01.JPG"
+          },
+          {
+            "label": "Photo · Jean-Jacques Olier in his niche (Jean Gagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Jean-Jacques_Olier_02.jpg"
+          },
+          {
+            "label": "Photo · Guy Carleton, Lord Dorchester, facade statue by Alfred Laliberté (Jean Gagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Guy_Carleton_Lord_Dorchester_03.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/hotel-du-parlement/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=hotel-du-parlement&view=overview",
+        "views": [
+          {
+            "label": "Overview from the north-east front (the Fontaine de Tourny side)",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=overview"
+          },
+          {
+            "label": "North-east front: pavilions, wings, central frontispiece and clock tower",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=facade"
+          },
+          {
+            "label": "Clock tower: dials, belfry, slate spire, iron crest and flag",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=tower"
+          },
+          {
+            "label": "Corner pavilion with its mansard, cresting and mast",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=pavilion"
+          },
+          {
+            "label": "Mansard roofs, courtyard and central chamber body from above",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=roof"
+          },
+          {
+            "label": "Courtyard faces and the chamber body",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=courtyard"
+          },
+          {
+            "label": "Back and north-west wing",
+            "url": "/asset-preview.html?asset=hotel-du-parlement&view=back"
+          }
+        ]
+      },
+      "notes": "Sourced: the mapped outer ring of the quadrangle and its courtyard hole (central T-shaped body), the 48.9 degree frame (front toward the Fontaine de Tourny), four levels, Second Empire style with mansard roofs, bronze statues in the facade niches, the two sculpture groups on the avant-corps, and the clock tower at 52.4 m (read as the slate spire's apex; the iron crest adds about 4.8 m and the flagpole about 7.6 m, so the model reaches 64.8 m). Estimated from photographs: every storey, cornice and roof height other than the tower, bay counts and window sizes, the pavilion and tower profiles (the clock-tower shaft is 11.0 x 10.8 m, widened 15 % from the first 9.6 x 9.3 m after the oblique views read it slim; a frontal check against the lead photograph reads about 10.6 m; the 52.4 m apex is unchanged), the roof pitches, the statue count and positions (30 simplified figures against the real 22 or so), the lantern, the pavilion pediments, the chamber body and everything on the back and the two sides, where no photograph was used. The ground-storey doors are the front pavilions' side entrances; the sunken esplanade entrance of 2019, the Fontaine de Tourny, the lamps, the grounds and the neighbouring Édifices (Pamphile-Le May, Honoré-Mercier, André-Laurendeau, Jean-Talon, Jean-Antoine-Panet) are not modelled. Models here are visual approximations, not surveys.",
+      "documentation": "docs/assets/quebec-hotel-du-parlement.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "marche-bonsecours",
+      "name": "Marché Bonsecours",
+      "kind": "building",
+      "location": "350 rue Saint-Paul Est, Vieux-Montréal, Québec",
+      "status": "ready",
+      "description": "William Footner's 1847 neoclassical market hall, the former City Hall and, in 1849, Parliament of the Province of Canada: a 164 m block of grey cut limestone between rue Saint-Paul and rue de la Commune facing the Old Port, two storeys of tall window bays under a bold cornice on a stone plinth, three-storey gabled pavilions at both ends, the Doric portico of six columns and a pediment on the Saint-Paul side, and above the middle of the roof the central block with its 16-bay drum and the ribbed silver tin dome, lantern and mast about 49 m up.",
+      "manifest": "/models/buildings/marche-bonsecours.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/marche-bonsecours/geometry.js",
+        "build": "pnpm build:quebec-landmarks marche-bonsecours",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the OpenStreetMap outline of the market (way 87389029, with building:part way 207977352 'Le Cabaret du Roy' lying inside it; fetched 2026-10-03 through the shared Overpass helper), © OpenStreetMap contributors, ODbL 1.0; the published description (Parks Canada / Canadian Register of Historic Places, Répertoire du patrimoine culturel du Québec, Wikipedia) and public photographs compared only, from Wikimedia Commons: Shrakel 'Old port skyline' (CC BY-SA 3.0), Dpalma01 'Marché Bonsecours in Old Montreal' (CC BY-SA 4.0), Conrad Poirier / BAnQ P48S1P05244 (public domain), Guilhem Vellut 'Dome @ Marché Bonsecours 2 Old Port' (CC BY 2.0), AnnaKucsma 'Marché Bonsecours and Foliage' (CC BY-SA 2.5). The terrain notes use the public Terrarium DEM tiles for measurement only. No third-party mesh, font, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia · Bonsecours Market (Footner, 1847, neoclassical, 350 Saint-Paul East)",
+            "url": "https://en.wikipedia.org/wiki/Bonsecours_Market"
+          },
+          {
+            "label": "Wikipédia · Marché Bonsecours (1844-1847, dôme détruit par l'incendie de 1976)",
+            "url": "https://fr.wikipedia.org/wiki/March%C3%A9_Bonsecours"
+          },
+          {
+            "label": "Canadian Register of Historic Places · Bonsecours Market National Historic Site of Canada (Doric columns, ground-floor arcade, central dome, projecting pavilions)",
+            "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=7560&pid=0"
+          },
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Marché Bonsecours",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=100101&type=bien"
+          },
+          {
+            "label": "The Canadian Encyclopedia · The Marché Bonsecours (cast-iron Doric columns, portico completed 1860)",
+            "url": "https://www.thecanadianencyclopedia.ca/en/article/the-marche-bonsecours"
+          },
+          {
+            "label": "Marché Bonsecours · official site",
+            "url": "https://marchebonsecours.qc.ca/"
+          },
+          {
+            "label": "OSM market outline · way 87389029",
+            "url": "https://www.openstreetmap.org/way/87389029"
+          },
+          {
+            "label": "OSM building part · way 207977352",
+            "url": "https://www.openstreetmap.org/way/207977352"
+          },
+          {
+            "label": "Photo · portico, pediment and dome from rue Saint-Paul (Dpalma01, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:March%C3%A9_Bonsecours_in_Old_Montreal.jpg"
+          },
+          {
+            "label": "Photo · the dome and wings along rue Saint-Paul at dusk (Guilhem Vellut, CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Dome_@_March%C3%A9_Bonsecours_2_Old_Port_@_Montreal_(29773217973).jpg"
+          },
+          {
+            "label": "Photo · river side with the dome from the Bassin Bonsecours (AnnaKucsma, CC BY-SA 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:March%C3%A9_Bonsecours_and_Foliage.jpg"
+          },
+          {
+            "label": "Photo · the Saint-Paul front with the portico in 1948 (Conrad Poirier, BAnQ, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Feature._Bonsecours_Market_BAnQ_P48S1P05244.jpg"
+          },
+          {
+            "label": "Photo · the market from the Old Port at night (Shrakel, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_port_skyline.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/marche-bonsecours/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=marche-bonsecours&view=overview",
+        "views": [
+          {
+            "label": "Overview from the north-west",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=overview"
+          },
+          {
+            "label": "Saint-Paul front with the portico and dome",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=facade"
+          },
+          {
+            "label": "Doric portico, pediment and stepped podium",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=portico"
+          },
+          {
+            "label": "Drum, ribbed silver dome and lantern",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=dome"
+          },
+          {
+            "label": "River side toward the Old Port",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=river"
+          },
+          {
+            "label": "Basement arches and window bays on the river wall",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=arcade"
+          },
+          {
+            "label": "Three-storey gabled end pavilion",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=pavilion"
+          },
+          {
+            "label": "End wall toward rue Bonsecours",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=end"
+          },
+          {
+            "label": "Roofs and central block from above",
+            "url": "/asset-preview.html?asset=marche-bonsecours&view=roof"
+          }
+        ]
+      },
+      "notes": "The plan, the 18.2 degree bearing, the 24 m end pavilions, the projecting river bays, the 0.7 m Saint-Paul bay and the 19.8 m portico footprint follow OSM way 87389029; the six Doric portico columns, two main storeys with three-storey pavilions and the central drum and dome follow the Parks Canada and Quebec heritage descriptions. No height is mapped or published: every height is read from photographs (cornice 12.9 m, pavilions 15 m, central block 18.8 m, dome crown 35 m, mast tip 49.4 m, the last from the popular '100-foot dome' above the block roof), as are the window sizes and rhythm (4.7 m bays, 1.5 x 3.5 m windows), the 15 m drum with 16 bays, the lantern (a pale stone core with eight slender columns and a silver mast, the dome's tin, no longer a dark metal bar), the stone colour (a cool grey, about 10 percent greyer than the first pass), the roof pitches (a shallow metal ridge on the wings, gables on the pavilions), the 1.7 m plinth, the basement arches and the stepped podium. The plinth is a flat-map compromise: the street is about 1.4 m above the model's grade on rue Saint-Paul and 1.4 m below on the river side, so the front shows a 1.7 m podium and the river basement is shallower than the real arcade. The dome is a 24-rib tin shell; the real one is floodlit in changing colours at night, which is not modelled (night: warm windows and eight lit slits in the lantern only). Not modelled: the lettering MARCHÉ BONSECOURS and the medallion detail (a plain disc stands for it), balustrades and railings, doors in detail, the cast-iron entasis, quoins and stone coursing, interior, street furniture, terraces and the neighbouring buildings. The Cabaret du Roy part lies inside the outline. Flat-map grade y=0 is the mid-slope grade of the block; no Tesla hardware measurements.",
+      "documentation": "docs/assets/quebec-marche-bonsecours.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "marie-reine-du-monde",
+      "name": "Cathédrale Marie-Reine-du-Monde",
+      "kind": "building",
+      "location": "1085 rue de la Cathédrale, Montréal, Québec",
+      "status": "ready",
+      "description": "Victor Bourgeau's Cathédrale Marie-Reine-du-Monde (1875 to 1894), the one-third-scale Montréal replica of St Peter's in Rome: the ribbed copper dome on a coupled-column drum with its colonnaded lantern, spire and cross at 77 m, the façade on boulevard René-Lévesque with its pedimented portico of ten giant Corinthian columns, copper-lined cornice and the thirteen statues of the patron saints along the attic, the Latin-cross plan with a long nave, a transept with three-sided ends and two small domes, in the rotated Montréal grid (façade facing bearing 303.5 degrees).",
+      "manifest": "/models/buildings/marie-reine-du-monde.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/marie-reine-du-monde/geometry.js",
+        "build": "pnpm build:quebec-landmarks marie-reine-du-monde",
+        "provenance": "Original procedural geometry authored 2026-10-04 (geometry.js, marie-reine-du-monde-body.js, -facade.js, -dome.js, -kit.js, -plan.js) from the mapped OSM outline (way 21335240) and its building:part ways (dome, lantern, drum ring, small domes, porch pediment, roof halves), the published height, length and cupola figures, and public photographs. Mapped footprint © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Marie-Reine-du-Monde, Montréal' (Thomas Ledl, CC BY-SA 4.0), 'Cathédrale Marie-Reine-du-Monde (façade)' (Joanne Lévesque, CC BY-SA 3.0), 'Montréal - Marie-Reine-du-Monde - Extérieur' (Concierge.2C, CC BY-SA 3.0), 'Marie-Reine-du-Monde Cathedral Montreal 07' and 'Basilique-cathedrale Marie-Reine-du-Monde 25' (interior dome, Elena Tatiana Chis CC BY-SA 4.0 and Jeangagnon CC BY-SA 3.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Mary, Queen of the World Cathedral (101 m long, 46 m wide, 77 m high at the cupola, cupola 23 m across; Bourgeau, 1894)",
+            "url": "https://en.wikipedia.org/wiki/Mary,_Queen_of_the_World_Cathedral"
+          },
+          {
+            "label": "Wikipédia · Cathédrale Marie-Reine-du-Monde de Montréal (réplique réduite de Saint-Pierre de Rome; statues des saints patrons de treize paroisses sur la façade)",
+            "url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Marie-Reine-du-Monde_de_Montr%C3%A9al"
+          },
+          {
+            "label": "Basilique-cathédrale Marie-Reine-du-Monde · site officiel",
+            "url": "https://www.cathedralemontreal.org/"
+          },
+          {
+            "label": "OSM footprint · way 21335240 (building=cathedral) and its building:part ways",
+            "url": "https://www.openstreetmap.org/way/21335240"
+          },
+          {
+            "label": "Photo · the façade and nave side from boulevard René-Lévesque (Thomas Ledl, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Marie-Reine-du-Monde,_Montr%C3%A9al.jpg"
+          },
+          {
+            "label": "Photo · the façade, frontal (Joanne Lévesque, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Marie-Reine-du-Monde_(fa%C3%A7ade).jpg"
+          },
+          {
+            "label": "Photo · exterior with the dome and lantern (Concierge.2C, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Montr%C3%A9al_-_Marie-Reine-du-Monde_-_Ext%C3%A9rieur.jpg"
+          },
+          {
+            "label": "Photo · the dome from inside, drum windows and ribs (Jeangagnon, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique-cathedrale_Marie-Reine-du-Monde_25.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/marie-reine-du-monde/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=marie-reine-du-monde&view=facade",
+        "views": [
+          {
+            "label": "Façade on boulevard René-Lévesque: portico, pediment, attic and the thirteen statues",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=facade"
+          },
+          {
+            "label": "From boulevard René-Lévesque at about 100 m: façade, statues, dome and lantern",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=street"
+          },
+          {
+            "label": "Overview from the south-west: nave, transept, corner domes and the great dome",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=overview"
+          },
+          {
+            "label": "Portico at street level: Corinthian columns, doors and the stair",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=portico"
+          },
+          {
+            "label": "Dome, drum, lantern, spire and cross",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=dome"
+          },
+          {
+            "label": "Roofs from above: nave, transept hips, choir and the small domes",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=roof"
+          },
+          {
+            "label": "South-west side wall with two window tiers",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=side"
+          },
+          {
+            "label": "Rear block, choir and transept ends",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=rear"
+          },
+          {
+            "label": "Colonnaded lantern, copper spire, ball and cross",
+            "url": "/asset-preview.html?asset=marie-reine-du-monde&view=lantern"
+          }
+        ]
+      },
+      "notes": "Sourced: 77 m (252 ft) to the top of the cross (Wikipedia; OSM lantern part to 77 m), the 23 m cupola diameter at the dome base (OSM dome part 12.4 m radius), 101 m length and 46 m width (Wikipedia; the mapped outline is 119 m long including the stair bump and the rear block, and 69 m across the transept), thirteen statues of parish patron saints on the façade (Wikipédia), the mapped outline at bearing 33.5 / 123.5 degrees (façade toward 303.5), and the OSM part heights (roof halves 25 to 31 m, drum ring 33 m, dome part 63 m, façade block 27 m, porch pediment 21 to 25 m, rear block 10 m, low blocks 15 m). Estimated from photographs: the dome profile (crown at 61 m with the lantern base there, rather than OSM's 63 m: a frontal photograph puts the lantern base, ball and cross at 61, 71 and 77 m), the drum (sixteen coupled-column bays, windows) and entablature, the lantern's stages, the ten column positions and heights, door and window rhythm, attic, stair (five risers, 1.8 m), every roof pitch, the aisle lean-tos and corner hips, the choir hip, the transept end fans, and the statue size (about 3.8 m with plinth; each is a stone plinth, one tapered robe and a head). Abstracted or absent: sculpture and carved relief, the Corinthian capitals' foliage, the lattice cross (a plain cross), lettering on the frieze, balustrades, lamp posts, the Monument à Mgr Bourget on the stair, the Place du Canada gardens and the archbishop's palace. The rear block is a half-round apse of 8 facets (radius 15.6 m, one arched window per facet) after a 10.4 m straight run, inscribed in the mapped 10 m rectangle, under a gable and half-cone copper roof to 14.2 m; the real chevet's curve and roof slope are estimated. Cornices project up to 0.9 m beyond the mapped wall line at the façade corners. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 8640 triangles / 6 draws / 395528 bytes, far 3440 / 6 / 158768. Windows are self-lit glow at night; the floodlit dome and stone are lifted in the night palette.",
+      "documentation": "docs/assets/quebec-marie-reine-du-monde.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "mnbaq-pavillon-lassonde",
+      "name": "Pavillon Pierre-Lassonde (MNBAQ)",
+      "kind": "building",
+      "location": "179 Grande Allée Ouest, Québec",
+      "status": "ready",
+      "description": "OMA's Pierre Lassonde Pavilion of the Musée national des beaux-arts du Québec (opened 2016): three stacked glass-and-steel volumes of decreasing size that cascade down from Grande Allée toward the Plains of Abraham, each shifted toward the street so that the pale diffuser-glass top box, braced by a diagonal truss and capped by a gold lantern, cantilevers 21 m over the entrance plaza above a 12.5 m glazed Grand Hall; the clear-glazed ground floor, the translucent bands, the glazed stair hung on the south-west wall and the green terraced roofs of the lower volumes. The top box and the lit floors glow at night.",
+      "manifest": "/models/buildings/mnbaq-pavillon-lassonde.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/mnbaq-pavillon-lassonde/geometry.js",
+        "build": "pnpm build:quebec-landmarks mnbaq-pavillon-lassonde",
+        "provenance": "Original procedural geometry authored 2026-10-04 from the OpenStreetMap outline of the pavilion (way 487158604, 4 201 m2, fetched through the shared Overpass helper; a staircase-shaped plan on the 139.3 degree grid), © OpenStreetMap contributors, ODbL 1.0; the published facts (OMA with Provencher_Roy, opened 24 June 2016; three stacked volumes of decreasing size, 50 x 50, 45 x 35 and 42.5 x 25 m, a 26.5 m cantilever over an urban plaza, a Grand Hall 26.5 m wide and 12.5 m high on Grande Allée, a glazed stair hung on a side facade, triple-layer glass with printed frit mimicking the truss, green roofs and terraces, 14 900 m2; Wikipédia FR, Archello, Area, ArchDaily) and the photographs listed below, which were downloaded only to ignored tmp/quebec/mnbaq-pavillon-lassonde/refs2/ to compare. Photographs used: 'Pavillon Pierre-Lassonde-Québec.jpg' (Gilbert Bochenek, CC BY-SA 4.0), 'Pierre-Lassonde 18.jpg' (Cephas, CC BY-SA 4.0), and 'Pavillon Pierre-Lassonde 02, 04, 05, 06.jpg' (Jeangagnon, CC BY-SA 3.0, taken during construction). A public Terrarium DEM tile (z15) was read to decide the terrain pad. No scan, traced mesh, photograph or texture is used in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Wikipédia · Pavillon Pierre Lassonde (OMA et Provencher Roy, trois blocs de verre superposés en porte-à-faux aux volumes régressifs, hall de 26,5 m par 12,5 m, escalier vitré en surplomb, toits verdis)",
+            "url": "https://fr.wikipedia.org/wiki/Pavillon_Pierre_Lassonde"
+          },
+          {
+            "label": "Wikipedia · Musée national des beaux-arts du Québec",
+            "url": "https://en.wikipedia.org/wiki/Mus%C3%A9e_national_des_beaux-arts_du_Qu%C3%A9bec"
+          },
+          {
+            "label": "Archello · Pierre Lassonde Pavilion (three volumes of decreasing size, 50 x 50, 45 x 35, 42.5 x 25 m; 26.5 m cantilever over the plaza; triple-layer glass with truss-patterned frit)",
+            "url": "https://archello.com/project/pierre-lassonde-pavilion"
+          },
+          {
+            "label": "ArchDaily · OMA's Pierre Lassonde Pavilion of the MNBAQ to open in June",
+            "url": "https://www.archdaily.com/785982/omas-pierre-lassonde-pavilion-of-the-musee-national-des-beaux-arts-du-quebec-to-open-in-june"
+          },
+          {
+            "label": "Area · Pierre Lassonde Pavilion, OMA",
+            "url": "https://www.area-arch.it/en/pierre-lassonde-pavilion/"
+          },
+          {
+            "label": "OSM Pavillon Pierre-Lassonde · way 487158604",
+            "url": "https://www.openstreetmap.org/way/487158604"
+          },
+          {
+            "label": "Photo · the glazed hall under the cantilever, from the park (Gilbert Bochenek, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pavillon_Pierre-Lassonde-Qu%C3%A9bec.jpg"
+          },
+          {
+            "label": "Photo · the pavilion at night (Cephas, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pierre-Lassonde_18.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/mnbaq-pavillon-lassonde/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=overview",
+        "views": [
+          {
+            "label": "Overview from the Grande Allée side: the cascade of three volumes and the cantilever",
+            "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=overview"
+          },
+          {
+            "label": "Street end from Grande Allée: the top box over the plaza and the glazed hall",
+            "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=facade"
+          },
+          {
+            "label": "Under the cantilever: soffit and the 12.5 m glazed Grand Hall",
+            "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=hall"
+          },
+          {
+            "label": "South-west side: the glazed stair hung on the wall, truss and ground-floor glazing",
+            "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=stair"
+          },
+          {
+            "label": "From the park: the stepped green terraces and the gold lantern",
+            "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=park"
+          },
+          {
+            "label": "Roofs from above: terraces, skylights and the lantern",
+            "url": "/asset-preview.html?asset=mnbaq-pavillon-lassonde&view=roof"
+          }
+        ]
+      },
+      "notes": "Sourced: the mapped staircase plan (the street end 25.3 m wide, stepping out at 21 m and 41 m to 58.2 m, 91.9 m long) on the 139.3 degree street grid, the three stacked volumes of decreasing size placed on it (the mapped steps reproduce OMA's 42.5 x 25, 45 x 35 and 50 x 50 m boxes to within 10 %), the top box cantilevered over the plaza, the 12.5 m Grand Hall, the glazed stair hung on a side facade, green roofs and terraces. Estimated from photographs: every height (ground floor 5 m, first roof 8.5 m, second roof 13 m, top box roof 26.5 m, gold lantern 29.6 m), the cantilever length (21 m on the mapped plan against OMA's 26.5 m, which is probably measured from the structural core), the glazed stair (a 4.4 m tall tube climbing about 34 degrees, 17 m from the plaza to the top box along the south-west wall, 0.3 m outside the mapped line), the bay rhythm, the truss pattern (drawn as 0.26 m braces; the real one is printed frit), the gold lantern's footprint and the colours (pale frosted diffuser glass, dark reflective clear glass, lit floors at night). The hall's concrete pentagon, the interior stair, the older pavilions, the Église Saint-Dominique and its presbytery (way 389475849), the sculpture garden and the trees are not modelled. Models here are visual approximations, not surveys.",
+      "documentation": "docs/assets/quebec-mnbaq-pavillon-lassonde.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "notre-dame-de-quebec",
+      "name": "Basilique-cathédrale Notre-Dame de Québec",
+      "kind": "building",
+      "location": "16 rue De Buade, Vieux-Québec, Québec",
+      "status": "ready",
+      "description": "Primatial cathedral of Canada in the Upper Town: Thomas Baillairgé's 1843-44 Neoclassical west front on the Place de l'Hôtel-de-Ville, a pedimented stone screen between two towers (the south one finished with its octagonal belfry, two arcaded lanterns and cross, the north one stopped under a low hipped roof), the long nave under a steep copper-green roof over low dark aisle roofs, the half-round apse and the sacristy blocks at the east end, about 52 m to the cross.",
+      "manifest": "/models/buildings/notre-dame-de-quebec.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/notre-dame-de-quebec/geometry.js",
+        "build": "pnpm build:quebec-landmarks notre-dame-de-quebec",
+        "provenance": "Original procedural geometry authored 2026-10-04 (geometry.js, notre-dame-de-quebec-front.js, -kit.js, -plan.js) from the mapped OpenStreetMap outline (way 103862161, building=cathedral) and its building:part ways 396802386, 396802387, 396940757, 396940758, 396940760 and 396802487, taken from the lead's dossier (shared Overpass helper, 2026-10-04), © OpenStreetMap contributors, ODbL 1.0, and from public photographs compared only, from Wikimedia Commons: Judicieux 'Basilique-cathédrale Notre-Dame de Québec, sept. 2016' (CC BY-SA 4.0), Adam Bishop 'Notre Dame de Quebec Cathedral Basilica' (CC BY-SA 4.0), EgorovaSvetlana 'Notre-Dame de Québec Basilica-Cathedral View from 15 Rue des Jardins' (CC BY-SA 4.0) and Wilfredo Rafael Rodriguez Hernandez 'Intérieur de la basilique-cathédrale Notre-Dame de Québec 45' (CC0, interior proportions only). The terrain notes use the public Terrarium DEM tiles for measurement only. No third-party mesh, font, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Wikipédia · Basilique-cathédrale Notre-Dame de Québec (history: 1759, Baillairgé façade 1843-44, fire 1922)",
+            "url": "https://fr.wikipedia.org/wiki/Basilique-cath%C3%A9drale_Notre-Dame_de_Qu%C3%A9bec"
+          },
+          {
+            "label": "Wikipedia · Cathedral Basilica of Notre-Dame de Québec",
+            "url": "https://en.wikipedia.org/wiki/Cathedral-Basilica_of_Notre-Dame_de_Qu%C3%A9bec"
+          },
+          {
+            "label": "OSM cathedral outline · way 103862161",
+            "url": "https://www.openstreetmap.org/way/103862161"
+          },
+          {
+            "label": "OSM nave roof part · way 396802386",
+            "url": "https://www.openstreetmap.org/way/396802386"
+          },
+          {
+            "label": "Photo · west front and belfry from the Place de l'Hôtel-de-Ville (Judicieux, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique-cath%C3%A9drale_Notre-Dame_de_Qu%C3%A9bec,_sept._2016.jpg"
+          },
+          {
+            "label": "Photo · west front from the street (Adam Bishop, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Notre_Dame_de_Quebec_Cathedral_Basilica.jpg"
+          },
+          {
+            "label": "Photo · the belfry lantern seen from the south-east (EgorovaSvetlana, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Qu%C3%A9bec_Basilica-Cathedral_View_from_15_Rue_des_Jardins_Qu%C3%A9bec_Canada.jpg"
+          },
+          {
+            "label": "Photo · nave interior (Wilfredo Rafael Rodriguez Hernandez, CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Int%C3%A9rieur_de_la_basilique-cath%C3%A9drale_Notre-Dame_de_Qu%C3%A9bec_45.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/notre-dame-de-quebec/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=facade",
+        "views": [
+          {
+            "label": "West front from the Place de l'Hôtel-de-Ville",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=facade"
+          },
+          {
+            "label": "Street level at the front, as a driver sees it",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=street"
+          },
+          {
+            "label": "Overview from the north-west",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=overview"
+          },
+          {
+            "label": "Belfry, cap and lanterns",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=belfry"
+          },
+          {
+            "label": "Towers and roofs",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=tower"
+          },
+          {
+            "label": "South flank of the nave",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=nave"
+          },
+          {
+            "label": "Roofs from above",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=roof"
+          },
+          {
+            "label": "East end, apse and sacristy blocks",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=east"
+          },
+          {
+            "label": "North flank from the Séminaire side",
+            "url": "/asset-preview.html?asset=notre-dame-de-quebec&view=back"
+          }
+        ]
+      },
+      "notes": "Plan, nave axis (bearing 91.3 deg, baked in), building-part footprints and storey counts follow OSM. No published height was found, so every height is read from two photographs with a fitted pinhole camera (about 10 %, roughly 5 m at the cross; the fit is weakly constrained and the photograph suggests the belfry could be taller still): north tower masonry 32.2 m under a roof apex at 34.6 m (about 1:1.5 under the belfry cross; it was 26.4 / 28.8 m, which the street photograph showed too short), belfry cross 52.3 m, nave ridge 23 m, aisle eaves 12 m, pediment apex 16.5 m. Roof pitches, the 12.6 m centre bay against the 10.3 m between the tower bases, window sizes and rhythm, and the whole east end (ambulatory, chevet, chapel, south-east block, north vestibule) are estimated from one or two photographs and the mapped outline. The nave roof is a dark grey-green verdigris (the outline's roof:colour, about 0.7 of the first pale sage); OSM tags the nave part itself dark brown, so a darker green could still be argued. Ornament (statues, carved stone, the wrought-iron railings and the parvis steps in front, the crypt) is absent, and the Séminaire, the Cathédrale Sainte-Trinité and the street are not drawn. Stone trims stay within 0.3 m of the mapped outline. Night: only the great stained-glass window is self-lit (the real facade is floodlit). Flat-map grade y=0 is the foot of the west front; the DEM falls 44.3 to 49.5 m under the footprint and the explicit terrain pad holds it at the 47.8 m median. No Tesla hardware measurement was made.",
+      "documentation": "docs/assets/quebec-notre-dame-de-quebec.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "notre-dame-du-cap",
+      "name": "Basilique Notre-Dame-du-Cap",
+      "kind": "building",
+      "location": "626 rue Notre-Dame Est, Cap-de-la-Madeleine, Trois-Rivières, Québec",
+      "status": "ready",
+      "description": "Adrien Dufresne's national shrine on the St. Lawrence (built 1955-64): a stone octagon extended by four transept arms under a steep dark copper roof in verdigris patches, eight triangular glazed dormers, a louvred lantern and spire with a cross at 78.6 m (258 ft), a tapering portal tower with a 24 m parabolic arch framing the 7.3 m statue of Mary over three doors (stair, belfry crown of pointed gablets), diagonal gables with roses and mitre windows, tall stained-glass windows, the two colonnaded galleries ending in green-roofed pavilions, and the sacristy block behind.",
+      "manifest": "/models/buildings/notre-dame-du-cap.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/notre-dame-du-cap/geometry.js",
+        "build": "pnpm build:quebec-landmarks notre-dame-du-cap",
+        "provenance": "Original procedural geometry authored 2026-10-04 (geometry.js, notre-dame-du-cap-parts.js) from the mapped OpenStreetMap outline (way 66794334, building=church, wikidata Q2886971) taken from the lead's dossier (shared Overpass helper, 2026-10-04), © OpenStreetMap contributors, ODbL 1.0, from the published facts of French Wikipedia (258 ft to the cross, 125 ft inside, 24 ft statue), the Répertoire du patrimoine culturel du Québec (octagonal plan with four transept arms, pyramidal copper roof with a lantern, parabolic portal arch, rose and mitre windows, covered ramps ending in edicules, rectangular sacristy) and the sanctuary's own site (statue by Paul Gingras, 7.3 m; windows by Jan Tillemans), and from public photographs compared only, from Wikimedia Commons: Inphasis 'Notre-Dame-du-Cap Basilica @ Trois-Rivières, Quebec' (CC BY-SA 4.0), Tango7174 'TroisRivieres NDduCap1' (CC BY-SA 4.0) and Saffron Blaze 'Basilique Notre-Dame du Cap' and 'Madeline Du Cap' (CC BY-SA 3.0). The terrain notes use the public Terrarium DEM tiles for measurement only. No third-party mesh, font, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Wikipédia · Basilique Notre-Dame-du-Cap (258 pieds à la croix, 1954-1965, Adrien Dufresne)",
+            "url": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame-du-Cap"
+          },
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Basilique Notre-Dame-du-Cap (plan octogonal, quatre bras de transept, portail dans un arc parabolique)",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=156291&type=bien"
+          },
+          {
+            "label": "Sanctuaire Notre-Dame-du-Cap · La basilique (statue de 7,3 m, vitraux de Jan Tillemans)",
+            "url": "https://www.sanctuaire-ndc.ca/decouvre/decouvre-la-basilique/"
+          },
+          {
+            "label": "OSM basilica outline · way 66794334",
+            "url": "https://www.openstreetmap.org/way/66794334"
+          },
+          {
+            "label": "Wikidata · Notre-Dame-du-Cap Basilica (Q2886971)",
+            "url": "https://www.wikidata.org/wiki/Q2886971"
+          },
+          {
+            "label": "Photo · the facade from the plaza (Saffron Blaze, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Madeline_Du_Cap.jpg"
+          },
+          {
+            "label": "Photo · portal, roof and lantern from the south-west corner (Saffron Blaze, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique_Notre-Dame_du_Cap.jpg"
+          },
+          {
+            "label": "Photo · aerial view over the plaza and the St. Lawrence (Inphasis, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Notre-Dame-du-Cap_Basilica_@_Trois-Rivi%C3%A8res,_Quebec.jpg"
+          },
+          {
+            "label": "Photo · the facade and its galleries (Tango7174, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:TroisRivieres_NDduCap1_tango7174.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/notre-dame-du-cap/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=notre-dame-du-cap&view=facade",
+        "views": [
+          {
+            "label": "Facade from the plaza: portal tower, arch, galleries and pavilions",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=facade"
+          },
+          {
+            "label": "Street level in front of the portal, as a driver sees it",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=street"
+          },
+          {
+            "label": "Corner view from the south-west, tower, gable and roof",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=corner"
+          },
+          {
+            "label": "Overview from the front-left",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=overview"
+          },
+          {
+            "label": "Portal: arch, tympanum, statue, doors and stair",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=portal"
+          },
+          {
+            "label": "Roof from above: pyramid, dormers, lantern",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=roof"
+          },
+          {
+            "label": "Lantern, spire and cross",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=lantern"
+          },
+          {
+            "label": "Covered gallery and pavilion",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=gallery"
+          },
+          {
+            "label": "Side wall with tall stained-glass windows",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=transept"
+          },
+          {
+            "label": "Back: choir and sacristy block",
+            "url": "/asset-preview.html?asset=notre-dame-du-cap&view=back"
+          }
+        ]
+      },
+      "notes": "Sourced: 258 ft (78.6 m) from the ground to the cross; the octagonal plan with four transept arms; the pyramidal copper roof with a lantern; the portal inscribed in a parabolic arch with the 7.3 m statue; the two covered ramps ending in edicules; the rectangular sacristy beside the choir; the mapped outline and its axis (bearing 48/228 deg, baked in; the portal faces south-west). Estimated from photographs and the outline (no other published dimension was found; about 10 %): the octagon apothem 26.5 m, eaves 19.5 m, gable apexes 29 m, the portal tower (24 m wide at the base, 10.4 m at the 36 m crown), the arch (16 m wide, 24.5 m high, set back 3.2 m), the lantern (8 m across, 58 to 64.6 m) and spire, the gallery depth and pavilion size, window and rose positions, the 8 dormers and the roof patchwork (fall-line streaks of light and dark copper; the far roof is one mid colour, the near mean). Which faces carry gables (the four diagonal ones, from the photographs) and the plain side and choir walls are read from photographs; the back of the building and the sacristy are inferred from the outline. The mapped outline draws the left gallery thinner than the right one, so the symmetric galleries and pavilions stand up to 3.8 m outside it. Not modelled: the interior, ornament and lettering, the stair railings, stone coursing on the side walls, the Petit Sanctuaire, the plaza and the visitor pavilion. Night: the stained glass and the dormer windows are self-lit (glow); the real building is floodlit. Flat-map grade y=0 is the plaza at the foot of the portal stair (the portal floor is 2.2 m above it). No Tesla hardware measurement was made.",
+      "documentation": "docs/assets/quebec-notre-dame-du-cap.md",
+      "city": "Trois-Rivières",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-de-quebec",
+      "name": "Pont de Québec",
+      "kind": "bridge",
+      "location": "Route 175, the CN railway and a walkway over the St. Lawrence · Québec (Sainte-Foy)–Lévis, Québec",
+      "status": "ready",
+      "description": "The 1917 Quebec Bridge (opened 1919 after the 1907 and 1916 collapses), still the world's longest cantilever span: 548.6 m between the main piers, 987 m long. Two dark charcoal-brown steel K-trusses 26.8 m apart: 157 m anchor arms rising from tall granite anchor piers to 104 m main posts on pin shoes, 176.8 m cantilever arms and the camel-backed 195 m suspended span, the bottom chords dipping in a V to each main pier while the floor runs level at 48 m through the trusses. Route 175 (three lanes) runs inside the east truss beside the walkway, the CN track near the centre line, under portals at least 6.5 m above the road. Short deck-truss approach spans to the clifftop abutments. Road-fitted bridge built on the mapped OSM Route 175 roadway.",
+      "manifest": "/models/bridges/pont-de-quebec.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/pont-de-quebec/geometry.js",
+        "build": "pnpm build:quebec-landmarks pont-de-quebec",
+        "provenance": "Original procedural geometry authored 2026-10-03 from published dimensions (Parks Canada; Wikipedia; Wikipédia; STRUCTURE magazine; CSCE) and the mapped OSM Route 175 roadway, CN track, walkway, bridge outline and approach roads (Overpass extracts retrieved 2026-10-03, ODbL 1.0, © OpenStreetMap contributors; way ids in pont-de-quebec-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Quintin Soloviev, Pont de Québec 2026 (CC BY 4.0); Blanchardb, Quebec and Pierre-Laporte Bridges (CC BY 3.0); Sébastien Savard, Pont de Québec vu du Parc aquarium du Québec (CC BY-SA 2.5); Martin St-Amant, Quebec Bridge - Pont de Québec (public domain); Wilfredor, Pont de Québec, Quebec ville, Canada (CC BY-SA 4.0). The AWS Terrain Tiles (Terrarium) DEM was sampled along the alignment to place the main span against the shorelines and to author the real-deck profile for Full 3D world; no elevation data is shipped.",
+        "references": [
+          {
+            "label": "Parks Canada · Québec Bridge National Historic Site (987 m, 548.6 m between main piers, K truss, components)",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=851"
+          },
+          {
+            "label": "Wikipedia · Quebec Bridge (987 m, 549 m span, 177 m arms, 195 m suspended span, 104 m high, 46 m clearance)",
+            "url": "https://en.wikipedia.org/wiki/Quebec_Bridge"
+          },
+          {
+            "label": "Wikipédia · Pont de Québec (195,07 m travée suspendue, 45,72 m dégagement à marée haute, 28,7 m de large)",
+            "url": "https://fr.wikipedia.org/wiki/Pont_de_Qu%C3%A9bec"
+          },
+          {
+            "label": "STRUCTURE magazine · Quebec Bridge Failure #2, 1916 (515 ft anchor arms, 580 ft cantilever arms)",
+            "url": "https://www.structuremag.org/article/quebec-bridge-failure-2-1916/"
+          },
+          {
+            "label": "CSCE · The Québec Bridge (historic civil engineering site)",
+            "url": "https://legacy.csce.ca/en/historic-site/the-quebec-bridge/"
+          },
+          {
+            "label": "OSM way 25734031 · Route 175 on the bridge",
+            "url": "https://www.openstreetmap.org/way/25734031"
+          },
+          {
+            "label": "OSM way 25734029 · CN track (Subdivision Bridge) on the bridge",
+            "url": "https://www.openstreetmap.org/way/25734029"
+          },
+          {
+            "label": "OSM way 39456261 · walkway on the bridge",
+            "url": "https://www.openstreetmap.org/way/39456261"
+          },
+          {
+            "label": "OSM way 487189031 · bridge outline",
+            "url": "https://www.openstreetmap.org/way/487189031"
+          },
+          {
+            "label": "Photograph · Quintin Soloviev, Pont de Québec 2026 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_de_Qu%C3%A9bec_2026.jpg"
+          },
+          {
+            "label": "Photograph · Blanchardb, Quebec and Pierre-Laporte Bridges (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Quebec_and_Pierre-Laporte_Bridges.jpg"
+          },
+          {
+            "label": "Photograph · Sébastien Savard, Pont de Québec vu du Parc aquarium du Québec (CC BY-SA 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_de_Qu%C3%A9bec_vu_du_Parc_aquarium_du_Qu%C3%A9bec.JPG"
+          },
+          {
+            "label": "Photograph · Martin St-Amant, Quebec Bridge - Pont de Québec (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Quebec_Bridge_-_Pont_de_Qu%C3%A9bec.jpg"
+          },
+          {
+            "label": "Photograph · Wilfredor, Pont de Québec, Quebec ville, Canada (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_de_Qu%C3%A9bec,_Quebec_ville,_Canada.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-de-quebec/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-de-quebec&view=overview",
+        "views": [
+          {
+            "label": "Overview from the north shore, downstream",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=overview"
+          },
+          {
+            "label": "Broadside from downstream",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=facade"
+          },
+          {
+            "label": "Driver's eye, southbound at the north anchor portal",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=deck"
+          },
+          {
+            "label": "Under the deck at the north main pier: the V of the bottom chords",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=underside"
+          },
+          {
+            "label": "North main post",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=tower"
+          },
+          {
+            "label": "North end: abutment, approach spans, anchor pier and end portal",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=approach"
+          },
+          {
+            "label": "The suspended span from the river",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=span"
+          },
+          {
+            "label": "Night",
+            "url": "/asset-preview.html?asset=pont-de-quebec&view=night"
+          }
+        ]
+      },
+      "notes": "Published: total length, main span, anchor and cantilever arms, suspended span, 104 m height, 45.72 m clearance at high tide, ~29 m width, K-truss, three road lanes, one track, one walkway. Mapped: the Route 175 roadway (9.17 m), the track and the walkway positions, the bridge ends and the approach roads. Estimated: the main span centred on the mapped bridge (no pier is mapped; this puts the north main pier ~80 m out in the river and the south one at the south shore), truss spacing 26.8 m (88 ft), truss depths (21 m at the tips and anchor ends, 33 m at the suspended-span crown, 94 m main posts on 10.5 m shoes), panel counts (10 / 11 / 12), the bracing layout, granite pier and abutment massing, the two ~62 m deck-truss approach spans per end, the floor depth (2.3 m), lamp spacing. Members are plain boxes (no lacing, gussets, eyebars or pins); railings are solid bars; the walkway is concrete, not grating; signage and the floodlighting are not modelled. Flat-map convention: the road is level between the bridge ends and ramps 258 m north (20.0 %) and 241 m south (21.5 %) to the approach roads, on concrete girders, piers and fill, the feet placed by the mapped junctions (every link meets Route 175 at grade, Boulevard Champlain's overpass crosses at grade, Route Marie-Victorin passes under a slab span with >= 4.6 m clearance); the northbound branch of Boulevard Guillaume-Couture, which joins 93 m from the south end, has its own ramp (13.6 %, 14.1 % after the merge) drawn in separate leg meshes that Full 3D world hides; the track and walkway end at the abutments. The grades are about twice the 12 % aimed for: the 48 m deck has to reach grade between clifftop junctions.",
+      "documentation": "docs/assets/quebec-pont-de-quebec.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-dubuc",
+      "name": "Pont Dubuc",
+      "kind": "bridge",
+      "location": "Route 175 over the Saguenay · Chicoutimi–Chicoutimi-Nord (Saguenay), Québec",
+      "status": "ready",
+      "description": "The Route 175 crossing of the Saguenay at Chicoutimi, opened in October 1972 to replace the 1933 Pont de Sainte-Anne: a plain, functional steel girder bridge rather than an architectural one. A 458 m continuous dark-green steel box girder in seven spans carries a 22.8 m deck (four lanes either side of a median wall, a sidewalk behind a barrier on each side, railed parapets) on six pale twin-column concrete piers whose square columns rise from a battered wall, and a concrete end pier at the Chicoutimi end; inclined steel brackets reach from the box out to the fascia girders under the wide overhangs. Thirteen double-arm lamp posts stand on the median wall. Road-fitted bridge built on the two mapped OSM Route 175 carriageways.",
+      "manifest": "/models/bridges/pont-dubuc.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/pont-dubuc/geometry.js",
+        "build": "pnpm build:quebec-landmarks pont-dubuc",
+        "provenance": "Original procedural geometry authored 2026-10-04 from published facts (Wikipédia; Portail Constructo; Ville de Saguenay heritage signpost) and the mapped OSM Route 175 carriageways, approach roads, bridge outline, sidewalks, junctions and the roads passing under the Route 175 north of the bridge (Overpass extracts retrieved 2026-10-04, ODbL 1.0, © OpenStreetMap contributors; way ids in pont-dubuc-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Adqproductions, PONT DUBUC (CC BY-SA 3.0); ADQproductions, Saguenaychicout1 (CC BY-SA 3.0); Simon Villeneuve, Pilier Pont Dubuc 01, 02, 04 and 06 (CC BY-SA 3.0). The AWS Terrain Tiles (Terrarium) DEM was sampled along the axis to check the shorelines, the river level and Route 172 under the north end; no elevation data is shipped.",
+        "references": [
+          {
+            "label": "Wikipédia · Pont Dubuc (1970-1972, opened October 1972; 458 m; seven continuous spans on box girders; seven reinforced-concrete piers; four lanes and a concrete median; 13 lamp posts with two lamps; 2016-2023 refurbishment)",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Dubuc"
+          },
+          {
+            "label": "Portail Constructo · Le pont Dubuc (458 m, opened October 1972, 45,000 users a day, the December 2013 pier fire)",
+            "url": "https://www.portailconstructo.com/actualites/grands_chantiers/pont_dubuc"
+          },
+          {
+            "label": "Ville de Saguenay · Les ponts Sainte-Anne et Dubuc (heritage signpost: the Pont Dubuc built from 1968, inaugurated October 1972)",
+            "url": "https://ville.saguenay.ca/files/medias/La-ville-et-vie-d%C3%A9mocratique/Patrimoine/B%C3%A2timents-et-lieux-dint%C3%A9r%C3%AAt/Les-ponts-Sainte-Anne-et-Dubuc.pdf"
+          },
+          {
+            "label": "Commission de toponymie · Pont Dubuc",
+            "url": "https://toponymie.gouv.qc.ca/ct/ToposWeb/Fiche.aspx?no_seq=98600"
+          },
+          {
+            "label": "OSM way 252486247 · Route 175 northbound on the bridge",
+            "url": "https://www.openstreetmap.org/way/252486247"
+          },
+          {
+            "label": "OSM way 1387995420 · Route 175 southbound on the bridge",
+            "url": "https://www.openstreetmap.org/way/1387995420"
+          },
+          {
+            "label": "OSM way 1387995469 · bridge outline",
+            "url": "https://www.openstreetmap.org/way/1387995469"
+          },
+          {
+            "label": "Photograph · Adqproductions, PONT DUBUC (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:PONT_DUBUC.jpg"
+          },
+          {
+            "label": "Photograph · ADQproductions, Saguenaychicout1 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Saguenaychicout1.jpg"
+          },
+          {
+            "label": "Photograph · Simon Villeneuve, Pilier Pont Dubuc02 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pilier_Pont_Dubuc02.JPG"
+          },
+          {
+            "label": "Photograph · Simon Villeneuve, Pilier Pont Dubuc01 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pilier_Pont_Dubuc01.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-dubuc/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-dubuc&view=overview",
+        "views": [
+          {
+            "label": "From the water upstream of pier P2: the piers marching to Chicoutimi-Nord",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=overview"
+          },
+          {
+            "label": "Broadside from upstream: seven spans, six river piers",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=facade"
+          },
+          {
+            "label": "From above the west side along the deck",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=roof"
+          },
+          {
+            "label": "Driver's eye, northbound on the crest",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=deck"
+          },
+          {
+            "label": "Under the deck at pier P3: box, brackets and fascia girders",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=underside"
+          },
+          {
+            "label": "Pier P3 close, from upstream",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=tower"
+          },
+          {
+            "label": "South end: the concrete end pier and the ramp",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=abutment"
+          },
+          {
+            "label": "North end from downstream",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=north"
+          },
+          {
+            "label": "Night",
+            "url": "/asset-preview.html?asset=pont-dubuc&view=night"
+          }
+        ]
+      },
+      "notes": "Not an architectural bridge: an ordinary continuous steel box-girder bridge, modelled faithfully. Published: opened October 1972; 458 m; seven continuous spans on box girders (with plate-girder members); seven reinforced-concrete piers; four lanes separated by a concrete wall; 13 lamp posts with two lamps. Mapped: the two carriageways (485.5 m, straight at 20.7°), the 22.9 m bridge outline with a joint 26 m from the south end, the sidewalks, the junctions at both ends, the roads passing under the Route 175 just north of the bridge. Estimated: the span layout (53 m end spans, five 70.4 m interior spans; no pier is mapped), the box girder running south over the concrete end pier P1 (at the mapped outline joint, 26 m from the south end) to the abutment, as far as the flat-map deck can hold it, the deck 12 m above the river, the cross-section, the box (2.5 m deep, 8-9.5 m wide), the brackets and fascia girders, pier shapes, colours and lamp positions. Not modelled: the curved concrete viaduct south of the bridge over Boulevard du Saguenay and the Route 175 overpass over Route 172 north of it (the provider's roads beyond the alignment), drainage, signage, expansion joints. Flat-map convention: junctions sit at both ends of the bridge (the southbound exit 34 m beyond the south end; Route 172 passing under 2 m beyond the north end), so the ramps climb over the end spans themselves from the alignment ends; steepest grade 6.7 %; the steel box gets shallower near the ramp feet.",
+      "documentation": "docs/assets/quebec-pont-dubuc.md",
+      "city": "Saguenay",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-laviolette",
+      "name": "Pont Laviolette",
+      "kind": "bridge",
+      "location": "Autoroute 55 over the St. Lawrence · Trois-Rivières–Bécancour, Québec",
+      "status": "ready",
+      "description": "The 1967 A-55 crossing of the St. Lawrence, the only bridge over the river between Montréal and Québec: 2,707 m long. A continuous turquoise steel truss carries the four-lane deck through 1,383 m; over the navigation channel its top chords sweep up into a through arch (crown 106.6 m, 335 m main span: a 269 m arch hung on rope hangers between two 33 m cantilevers) whose lower chords dip through the deck in a V to the two main piers, flanked by 167 m anchor spans and three 119 m through-truss spans each side. Long plate-girder and precast approaches on twin-column piers climb from both shores over the streets beneath. Road-fitted bridge built on the two mapped OSM A-55 carriageways.",
+      "manifest": "/models/bridges/pont-laviolette.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/pont-laviolette/geometry.js",
+        "build": "pnpm build:quebec-landmarks pont-laviolette",
+        "provenance": "Original procedural geometry authored 2026-10-03 from published dimensions (Wikipédia; Wikipedia; MTQ environmental impact study for the south approach rebuild, Teknika HBA 2005; Douville, Fay et Breault, MTQ deck-rebuild paper; Patrimoine Trois-Rivières) and the mapped OSM A-55 carriageways, approach roads, bridge outline and the roads passing under the approaches (Overpass extracts retrieved 2026-10-03, ODbL 1.0, © OpenStreetMap contributors; way ids in pont-laviolette-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: John White, Laviolette Bridge (CC BY-SA 3.0); Abxbay, Trois-Rivieres Pont Laviolette (public domain); KimonBerlin, Pont Laviolette (CC BY-SA 2.0); Bouchecl, Trois-Rivières PontLaviolette (CC BY-SA 3.0); Peter Van den Bossche, Laviolette Bridge in Trois-Rivières City (CC BY-SA 2.0). The AWS Terrain Tiles (Terrarium) DEM was sampled along the axis to check the shorelines and the river level; no elevation data is shipped.",
+        "references": [
+          {
+            "label": "Wikipédia · Pont Laviolette (2,707 m; approaches 641 m and 683 m; steel structure 1,383 m; 335 m arch span; 34 piers; 16.7 m wide; 106.6 m high)",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Laviolette"
+          },
+          {
+            "label": "Wikipedia · Laviolette Bridge (through arch, 335 m main span, 2,707 m)",
+            "url": "https://en.wikipedia.org/wiki/Laviolette_Bridge"
+          },
+          {
+            "label": "MTQ · Étude d'impact, chemin d'accès pour la réfection de l'approche sud (269 m arch on 33 m cantilevers, 167 m anchor spans, hangers, 52.02 m deck height, pier types S5-S21)",
+            "url": "http://www.bv.transports.gouv.qc.ca/mono/1312933/01_Rapport.pdf"
+          },
+          {
+            "label": "MTQ · Douville, Fay et Breault, stratégies d'intervention du tablier (37 spans, seven structure types, 304.8 m x 49.4 m navigation clearance, four lanes, 16.7 m)",
+            "url": "http://www.bv.transports.gouv.qc.ca/mono/0981440/04_Strategies_intervention_remplacement_refection_tablier_pont_Laviolette.pdf"
+          },
+          {
+            "label": "Patrimoine Trois-Rivières · Le pont Laviolette (1967-2017)",
+            "url": "https://patrimoine3r.quebec/le-pont-laviolette-1967-2017/"
+          },
+          {
+            "label": "OSM way 84720759 · A-55 southbound on the bridge",
+            "url": "https://www.openstreetmap.org/way/84720759"
+          },
+          {
+            "label": "OSM way 84720761 · A-55 northbound on the bridge",
+            "url": "https://www.openstreetmap.org/way/84720761"
+          },
+          {
+            "label": "OSM way 1217384804 · bridge outline",
+            "url": "https://www.openstreetmap.org/way/1217384804"
+          },
+          {
+            "label": "Photograph · John White, Laviolette Bridge (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Laviolette_Bridge.jpg"
+          },
+          {
+            "label": "Photograph · Abxbay, Trois-Rivieres Pont Laviolette (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Trois-Rivieres_Pont_Laviolette.JPG"
+          },
+          {
+            "label": "Photograph · KimonBerlin, Pont Laviolette (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Laviolette.jpg"
+          },
+          {
+            "label": "Photograph · Bouchecl, Trois-Rivières PontLaviolette (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Trois-Rivi%C3%A8res_PontLaviolette.JPG"
+          },
+          {
+            "label": "Photograph · Peter Van den Bossche, Laviolette Bridge in Trois-Rivières City (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Laviolette_Bridge_in_Trois-Rivi%C3%A8res_City.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-laviolette/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-laviolette&view=overview",
+        "views": [
+          {
+            "label": "Overview from the Trois-Rivières shore, downstream",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=overview"
+          },
+          {
+            "label": "Broadside from upstream: the arch and its anchor spans",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=facade"
+          },
+          {
+            "label": "From above the north main pier towards the crown",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=roof"
+          },
+          {
+            "label": "Driver's eye, southbound at the north truss portal",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=deck"
+          },
+          {
+            "label": "Under the deck at the north main pier: the V of the lower chords",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=underside"
+          },
+          {
+            "label": "North main pier and the arch springing",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=tower"
+          },
+          {
+            "label": "Driving through the arch under the hangers, northbound",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=span"
+          },
+          {
+            "label": "South approach: plate girders and precast spans",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=approach"
+          },
+          {
+            "label": "North abutment and ramp",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=abutment"
+          },
+          {
+            "label": "Night",
+            "url": "/asset-preview.html?asset=pont-laviolette&view=night"
+          }
+        ]
+      },
+      "notes": "Published: total length, approach and steel-structure lengths, main span, arch and cantilever lengths, anchor spans, 34 piers and 2 abutments, approach girder types by pier, 16.7 m deck and four lanes, 52.02 m deck height at high water, 106.6 m overall, 49.4 m navigation clearance, hangers at every panel point. Mapped: the two carriageways (2,707 m, 130.1°), the approach roads, the roads under the approaches. Estimated: the main span placed by the published spans from the mapped north end (no pier is mapped), three equal 119 m truss spans each side, approach pier positions (between the roads underneath; the north spans 40-86 m, the last south span 39 m over Boulevard Bécancour), the vertical profile apart from the crest, truss depths (11 m through truss, 9.5 m arch at the crown, 28 m top chord over the main piers), chord curves, panel counts, bracing, pier shapes, colours, lamps. Members are plain boxes (no lacing, gussets or pins); the main-pier protection islands, gantries, signage and the architectural lighting are not modelled. Flat-map convention: ramps on the approach roads, 75 m north and 115 m south of the bridge ends on retaining-wall embankments, steepest grade 9.3 %, the deck 4.4 m and 6.2 m above grade at the bridge ends so the roads beneath pass under.",
+      "documentation": "docs/assets/quebec-pont-laviolette.md",
+      "city": "Trois-Rivières",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-papineau-leblanc",
+      "name": "Pont Papineau-Leblanc",
+      "kind": "bridge",
+      "location": "Autoroute 19 over the Rivière des Prairies · Montréal (Ahuntsic)–Laval, Québec",
+      "status": "ready",
+      "description": "The 1969 A-19 crossing of the Rivière des Prairies between Montréal (Ahuntsic) and Laval, one of the first cable-stayed bridges in North America and the first with its towers in the roadway median. A rust-brown weathering-steel box girder with an orthotropic deck carries six lanes over a 241 m main span and two 90 m side spans (421 m); two single square steel pylons (near-black chocolate, sRGB 55/42/36, against the rust-brown deck) rise 38.4 m above the deck in the median, each holding a fan of two stays a side in the central plane, on round concrete piers in the river. Road-fitted bridge built on the two mapped OSM A-19 carriageways.",
+      "manifest": "/models/bridges/pont-papineau-leblanc.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/pont-papineau-leblanc/geometry.js",
+        "build": "pnpm build:quebec-landmarks pont-papineau-leblanc",
+        "provenance": "Original procedural geometry authored 2026-10-04 from published dimensions (Wikipédia; Wikipedia; Structurae) and the mapped OSM A-19 carriageways, approach roads, junctions, bridge outline (relation 12989251) and the ways passing under the bridge ends (Overpass extracts retrieved 2026-10-04, ODbL 1.0, © OpenStreetMap contributors; way ids in pont-papineau-leblanc-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Blanchardb, Papineau-Leblanc Bridge (CC BY-SA 3.0); Parcours riverain Montréal, Pont Papineau-Leblanc (Ahuntsic-Cartierville) (CC BY 2.0); Antony.zonato, Pont Papineau-Leblanc (CC BY-SA 3.0); Richard Mc Neil, Pont Papineau Bridge, Montréal, Québec (CC BY 3.0); Emmanuel Huybrechts, Papineau-Leblanc at night (CC BY 2.0). The AWS Terrain Tiles (Terrarium) DEM was sampled along the axis to check the shorelines, the river level and the approach terrain; no elevation data is shipped.",
+        "references": [
+          {
+            "label": "Wikipédia · Pont Papineau-Leblanc (241 m main span, 90 m side spans, 458.6 m, 27.6 m wide, two 38.4 m central pylons 1.8 m square, four bundles of 12 cables, 11.3 m above the water, 7.6 m clearance, 1968-1969)",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Papineau-Leblanc"
+          },
+          {
+            "label": "Wikipedia · Papineau-Leblanc Bridge (one of the first cable-stayed spans in North America, weathering steel, orthotropic deck, 240 m main span, 420.6 m, 27.2 m, six lanes)",
+            "url": "https://en.wikipedia.org/wiki/Papineau-Leblanc_Bridge"
+          },
+          {
+            "label": "Structurae · Papineau-Leblanc Bridge (three-span cable-stayed, fan system, 241 m main span, 421 m, towers 126 ft above the deck at the median, stays every 140-170 ft, two-cell box girder)",
+            "url": "https://structurae.net/en/structures/papineau-leblanc-bridge"
+          },
+          {
+            "label": "OSM relation 12989251 · bridge outline",
+            "url": "https://www.openstreetmap.org/relation/12989251"
+          },
+          {
+            "label": "OSM way 965280263 · A-19 southbound on the bridge",
+            "url": "https://www.openstreetmap.org/way/965280263"
+          },
+          {
+            "label": "OSM way 165090517 · A-19 northbound on the bridge",
+            "url": "https://www.openstreetmap.org/way/165090517"
+          },
+          {
+            "label": "Photograph · Blanchardb, Papineau-Leblanc Bridge (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Papineau-Leblanc_Bridge.jpg"
+          },
+          {
+            "label": "Photograph · Parcours riverain Montréal, Pont Papineau-Leblanc (Ahuntsic-Cartierville) (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Papineau-Leblanc_(Ahuntsic-Cartierville).jpg"
+          },
+          {
+            "label": "Photograph · Antony.zonato, Pont Papineau-Leblanc (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Papineau-Leblanc.jpg"
+          },
+          {
+            "label": "Photograph · Richard Mc Neil, Pont Papineau Bridge, Montréal, Québec (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Papineau_Bridge,Montr%C3%A9al,Qu%C3%A9bec.jpg"
+          },
+          {
+            "label": "Photograph · Emmanuel Huybrechts, Papineau-Leblanc at night (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Papineau-Leblanc_at_night_-_BIG_(4671087557).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-papineau-leblanc/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=overview",
+        "views": [
+          {
+            "label": "Overview from the Laval bank, downstream",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=overview"
+          },
+          {
+            "label": "Broadside from upstream: the three spans and both fans",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=facade"
+          },
+          {
+            "label": "From above the north pylon towards Montréal",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=roof"
+          },
+          {
+            "label": "Driver's eye, southbound, approaching the north pylon",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=deck"
+          },
+          {
+            "label": "Under the deck at the north pylon: box girder, ribs and pier",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=underside"
+          },
+          {
+            "label": "South pylon and its fan from downstream",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=tower"
+          },
+          {
+            "label": "Laval end: ramp, abutment and north side span",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=abutment"
+          },
+          {
+            "label": "Montréal end: south side span and ramp",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=approach"
+          },
+          {
+            "label": "Driver's eye, northbound at mid-span",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=span"
+          },
+          {
+            "label": "Night",
+            "url": "/asset-preview.html?asset=pont-papineau-leblanc&view=night"
+          }
+        ]
+      },
+      "notes": "Published: opened 1969; cable-stayed, fan system, three spans; weathering steel, orthotropic deck, two-cell box girder; 241 m main span (240 m on Wikipedia), 90 m side spans, 421 m cable-stayed (458.6 m over the abutments); 27.2-27.6 m wide, six lanes; two central steel pylons 1.8 m square, 38.4 m (126 ft) above the deck; four bundles of 12 cables; stays every 140-170 ft; deck 11.3 m above the water, 7.6 m clearance. Mapped: the two carriageways (445 m, 142.5°), approach roads, junctions, bridge outline, the ways under both ends. Estimated: the cable-stayed unit centred on the mapped bridge (1.5 m towards Montréal; no pier is mapped), the stay anchor stations (47/95 m into the main span, 43/85 m into the side spans), stays drawn as two cables either side of the median, the box section (17 m top, 12 m bottom, 3.7 m under the road), the short plate-girder end spans, pier, end-pier and abutment shapes, colours, lamps, the vertical profile apart from the deck height. Members are plain boxes; stay anchorages, the bearings, the expansion joints, signage and gantries are not modelled. Flat-map convention: ramps on the approach roads, 85 m (Laval, short of the Boulevard Lévesque exit) and 120 m (Montréal) beyond the bridge ends on retaining-wall embankments, steepest grade 7.2 %.",
+      "documentation": "docs/assets/quebec-pont-papineau-leblanc.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-pierre-laporte",
+      "name": "Pont Pierre-Laporte",
+      "kind": "bridge",
+      "location": "Autoroute 73 over the St. Lawrence · Québec (Sainte-Foy)–Lévis, Québec",
+      "status": "ready",
+      "description": "The 1970 suspension bridge, Canada's longest main span (667.5 m between towers, 186.5 m side spans, 1,040.6 m between anchorages): two pale cream steel towers 122.5 m high, each a pair of cruciform legs joined at the top by a round-arched portal and under the deck by a deep strut with an arched soffit, two 62 cm main cables with 65 pairs of suspenders each, the grey Warren stiffening trusses carried continuously between the clifftop anchorages, the Marie-Victorin approach viaduct, carrying six lanes of the A-73 with a median barrier and lamp standards. Road-fitted bridge built on the mapped OSM carriageways.",
+      "manifest": "/models/bridges/pont-pierre-laporte.json",
+      "source": {
+        "path": "src/peregrine/landmarks/quebec/pont-pierre-laporte/geometry.js",
+        "build": "pnpm build:quebec-landmarks pont-pierre-laporte",
+        "provenance": "Original procedural geometry authored 2026-10-03 from published dimensions (Répertoire du patrimoine culturel du Québec; Montreal Roads; Wikipedia) and the mapped OSM A-73 carriageways, bridge outline and approach roads (Overpass extract retrieved 2026-10-03, ODbL 1.0, © OpenStreetMap contributors; way ids in pont-pierre-laporte-alignment.js and footprint.js), checked against Wikimedia Commons photographs. No third-party mesh, scan, photograph or texture is shipped; reference photographs were kept in ignored local study files only. Photographs consulted: Quintin Soloviev, Pierre Laporte Bridge (CC BY 4.0); Daniel Lévesque, LaPorte de Quebec (CC0); Blanchardb, Quebec and Pierre-Laporte Bridges (CC BY 3.0); Punkzealot, Pont pierre laporte under and Pont pierre-laporte full (CC BY-SA 4.0). The AWS Terrain Tiles (Terrarium) DEM was sampled along the alignment to place the real-deck profile for Full 3D world; no elevation data is shipped.",
+        "references": [
+          {
+            "label": "Répertoire du patrimoine culturel du Québec · Pont Pierre-Laporte (towers, height, cables, trusses, anchorages)",
+            "url": "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=170253&type=bien"
+          },
+          {
+            "label": "Montreal Roads · Pierre Laporte Bridge (A-73): spans, 122.5 m towers, 45.7 m clearance, 27.4 m width",
+            "url": "https://www.montrealroads.com/crossings/pierre-laporte/"
+          },
+          {
+            "label": "Wikipédia · Pont Pierre-Laporte",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Pierre-Laporte"
+          },
+          {
+            "label": "Wikipedia · Pierre Laporte Bridge",
+            "url": "https://en.wikipedia.org/wiki/Pierre_Laporte_Bridge"
+          },
+          {
+            "label": "OSM way 157685069 · northbound carriageway on the bridge",
+            "url": "https://www.openstreetmap.org/way/157685069"
+          },
+          {
+            "label": "OSM way 157685071 · southbound carriageway on the bridge",
+            "url": "https://www.openstreetmap.org/way/157685071"
+          },
+          {
+            "label": "OSM way 974494218 · bridge outline",
+            "url": "https://www.openstreetmap.org/way/974494218"
+          },
+          {
+            "label": "Photograph · Daniel Lévesque, LaPorte de Quebec (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:LaPorte_de_Quebec_(5802230245).jpg"
+          },
+          {
+            "label": "Photograph · Punkzealot, Pont pierre laporte under (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_pierre_laporte_under.jpg"
+          },
+          {
+            "label": "Photograph · Punkzealot, Pont pierre-laporte full (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_pierre-laporte_full.jpg"
+          },
+          {
+            "label": "Photograph · Quintin Soloviev, Pierre Laporte Bridge (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pierre_Laporte_Bridge.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-pierre-laporte/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-pierre-laporte&view=overview",
+        "views": [
+          {
+            "label": "Overview, from the north shore upstream",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=overview"
+          },
+          {
+            "label": "Broadside from upstream",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=facade"
+          },
+          {
+            "label": "Driver's eye, southbound at the north tower",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=deck"
+          },
+          {
+            "label": "Under the deck at the south tower: arched strut and trusses",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=underside"
+          },
+          {
+            "label": "North tower: cruciform legs and arched portal",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=tower"
+          },
+          {
+            "label": "North anchorage and approach",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=approach"
+          },
+          {
+            "label": "Night",
+            "url": "/asset-preview.html?asset=pont-pierre-laporte&view=night"
+          }
+        ]
+      },
+      "notes": "Published: spans, total length, tower height above high water, mid-span clearance, cable diameter and spacing, roadway width, six lanes. Mapped: the carriageways, the bridge ends and the approach roads. Estimated: the tower positions (no tower is mapped; the main span is centred on the mapped bridge, which puts both towers at the water's edge as in photographs), leg sections, taper and grooves, the portal and strut arches, truss depth (8.3 m below the road) and panel layout, suspender spacing (15.2 m), cable sag, anchorage and pier massing, approach viaduct piers, lamp spacing. Railings and the barrier are solid; suspender pairs are one ribbon; truss gusset detail, aviation beacons other than one red light per leg, deck drainage, the service gantries and the toll-free signage are not modelled. Flat-map convention: the deck is level between the anchorages and ramps over 800 m at each end down to the approach roads (steepest grade 10.1 %), on concrete girders and piers and fill near the feet.",
+      "documentation": "docs/assets/quebec-pont-pierre-laporte.md",
+      "city": "Québec",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
