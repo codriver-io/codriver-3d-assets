@@ -1,0 +1,79 @@
+{
+  "id": "washington-monument",
+  "name": "Washington Monument",
+  "kind": "building",
+  "origin": [
+    -77.0352426,
+    38.8894753
+  ],
+  "height": 169.29417500000002,
+  "padM": 18,
+  "frontageBearing": 90,
+  "baseM": 16.8021,
+  "shaftTopM": 10.506075000000001,
+  "shaftM": 152.4,
+  "jointM": 45.72,
+  "jointBandM": 0.6096,
+  "aluminumM": 0.22606,
+  "aluminumBaseM": 0.14223999999999998,
+  "doorWM": 1.8288000000000002,
+  "doorHM": 2.4384,
+  "winWM": 0.9144000000000001,
+  "winGapM": 1.2192,
+  "winSillM": 153.6192,
+  "winHM": 0.4572,
+  "winHEastM": 0.6095999999999999,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat circular plaza. No absolute altitude and no terrain is baked in. The grassy knoll beyond the plaza is not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height, shaft, base, pyramidion, colour line, door and the eight windows are published (NPS, HAER, NRHP). The aluminium apex is the 1884 cap. The east lobby height (4 m) and the exact width of the third-marble course are estimated. Flags, lightning rods, the circular plaza and the interior are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/washington-monument-near.glb",
+      "bytes": 36636,
+      "triangles": 420,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -8.401049613952637,
+          0,
+          -8.401049613952637
+        ],
+        "max": [
+          19.1200008392334,
+          169.29417419433594,
+          8.401049613952637
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/washington-monument-far.glb",
+      "bytes": 30140,
+      "triangles": 348,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -8.401049613952637,
+          0,
+          -8.401049613952637
+        ],
+        "max": [
+          19.1200008392334,
+          169.29417419433594,
+          8.401049613952637
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-monument/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

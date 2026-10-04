@@ -10616,6 +10616,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "washington-monument",
+      "name": "Washington Monument",
+      "kind": "building",
+      "location": "2 15th Street NW, National Mall, Washington, D.C.",
+      "status": "ready",
+      "description": "Washington Monument (Robert Mills, completed 1884 by Lt. Col. Thomas Lincoln Casey): the 169.294 m marble obelisk, battering from 16.80 m at the plaza to 10.51 m at 152.4 m, with the 150 ft marble colour break, the aluminium apex, eight pyramidion windows and red aircraft beacons, the bronze east door, and the one-storey glass screening lobby on the east face.",
+      "manifest": "/models/buildings/washington-monument.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/washington-monument/geometry.js",
+        "build": "pnpm build:top-cities-landmarks washington-monument",
+        "provenance": "Original procedural geometry authored 2026-10-04. Footprint from OpenStreetMap way 766761337 (the shaft) and way 897141356 (the east lobby), © OpenStreetMap contributors, ODbL 1.0, taken from the prepared dossier. Reference photographs used only to compare and kept out of the repository (Wikimedia Commons): 'Washington Monument 2022.jpg' (Greyfiveys, CC BY-SA 4.0), 'Overhead view of Washington Monument.jpg' (Bill Ingalls, public domain), 'Three-lightning-strikes-washingtondc-night' (ForestWander, CC BY-SA 3.0 us). The 1878 completion proposals, the 2026 Delaware projection and a scaffolded construction photograph were in the dossier and were not modelled. No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Washington Monument",
+            "url": "https://en.wikipedia.org/wiki/Washington_Monument"
+          },
+          {
+            "label": "National Park Service · Washington Monument",
+            "url": "https://www.nps.gov/wamo/index.htm"
+          },
+          {
+            "label": "NRHP 66000035",
+            "url": "https://npgallery.nps.gov/AssetDetail/c853f807-7778-4ba7-b87e-e041b5ad8bf2"
+          },
+          {
+            "label": "DC Inventory of Historic Sites · 655",
+            "url": "https://historicsites.dcpreservation.org/items/show/655"
+          },
+          {
+            "label": "OSM shaft · way 766761337",
+            "url": "https://www.openstreetmap.org/way/766761337"
+          },
+          {
+            "label": "OSM east lobby · way 897141356",
+            "url": "https://www.openstreetmap.org/way/897141356"
+          },
+          {
+            "label": "Photograph · Washington Monument 2022 (Greyfiveys, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Washington_Monument_2022.jpg"
+          },
+          {
+            "label": "Photograph · overhead (Bill Ingalls, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Overhead_view_of_Washington_Monument.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-monument/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=washington-monument&view=overview",
+        "views": [
+          {
+            "label": "Whole obelisk from the southeast",
+            "url": "/asset-preview.html?asset=washington-monument&view=overview"
+          },
+          {
+            "label": "East face, lobby and colour line",
+            "url": "/asset-preview.html?asset=washington-monument&view=facade"
+          },
+          {
+            "label": "Pyramidion and lobby roof from above",
+            "url": "/asset-preview.html?asset=washington-monument&view=roof"
+          },
+          {
+            "label": "Glass screening lobby",
+            "url": "/asset-preview.html?asset=washington-monument&view=entrance"
+          },
+          {
+            "label": "Pyramidion windows, beacons and apex",
+            "url": "/asset-preview.html?asset=washington-monument&view=pyramidion"
+          },
+          {
+            "label": "Marble colour break at 150 ft",
+            "url": "/asset-preview.html?asset=washington-monument&view=joint"
+          },
+          {
+            "label": "From the Reflecting Pool side",
+            "url": "/asset-preview.html?asset=washington-monument&view=west"
+          }
+        ]
+      },
+      "notes": "Height 555 ft 5⅛ in (169.294 m) is the NPS / Casey 1884 figure to the aluminium apex; NGS 2013–2014 measured 554 ft 7 11/32 in (169.046 m) from a raised 1975 entrance datum and is not used. Base 55 ft 1½ in and shaft 500 ft are HAER; shaft top 34 ft 5⅝ in is the published figure. The colour line is at 150 ft (HAER / DC historic district; the NRHP nomination says 152 ft). The aluminium cap is the 1884 Frishmuth pyramid (8.9 in tall, 5.6 in square); lightning rods above it are omitted. Door opening 6 ft by 8 ft (HAER); the leaf was reduced to 5 ft 8 in in 1885 and the model uses the opening. Pyramidion windows are two per face, 3 ft wide, inner edges 4 ft apart, sill at 504 ft; north, south and west are 18 in high and the east pair is 24 in. Estimated: lobby height 4.0 m plus a 0.22 m roof (OSM has building:levels=1 and no height), mullion spacing, the 0.55 m door reveal and the 0.12 m window reveal, and the one 2 ft course of third marble at the colour line. Not modelled: the fifty flags, lightning rods, circular plaza, interior, 2 ft ashlar courses, and the 1878 completion proposals. Far folds the aluminium apex into the upper marble so the silhouette stays and the draw count stays at eight. y=0 is plaza grade on the flat map. No Tesla hardware measurements.",
+      "documentation": "docs/assets/top-cities-washington-monument.md",
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
