@@ -10889,6 +10889,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "margaret-hunt-hill-bridge",
+      "name": "Margaret Hunt Hill Bridge",
+      "kind": "bridge",
+      "location": "Woodall Rodgers Freeway / Spur 366 across the Trinity River · Dallas, Texas",
+      "status": "ready",
+      "description": "Original road-fitted model of the 2012 Calatrava bridge: one transverse tapered white arch, twisting centreline cable fan, six-lane deck, white edge/spine girders and open approach bents.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/margaret-hunt-hill-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks margaret-hunt-hill-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-04 from published project and city facts, mapped OSM carriageways/bridge outline (ODbL 1.0; © OpenStreetMap contributors), and photographic visual comparison. No mesh capture, tracing, photograph or texture ships. Dossier reference-only photographs: View of Margaret Hunt Hill Bridge from Reunion Tower August 2015 23, Michael Barera, CC BY-SA 4.0; Arch MHH Bridge 02, M.I.B., CC BY-SA 3.0; MHH Bridge Panorama 02, author unspecified in dossier, CC BY-SA 3.0; Margaret Hunt Hill Bridge Construction - March 2010, M.I.B., CC BY-SA 3.0; Margaret Hunt Hill Bridge, Fkbowen, CC BY-SA 4.0; Margaret Hunt Hill Bridge 7-23-26, FeaturingDallas, CC BY-SA 4.0. License metadata of the Barera and Fkbowen file pages checked independently. All images remain in ignored dossier storage.",
+        "references": [
+          {
+            "label": "Calatrava: spans, width, central spine and 58 stays",
+            "url": "https://calatrava.com/projects/margaret-hunt-hill-bridge.html"
+          },
+          {
+            "label": "City of Dallas: arch, column and tube dimensions",
+            "url": "https://trinityrivercorridor.com/transportations/Shared%20Documents/margaret-hunt-hill-fast-facts.pdf"
+          },
+          {
+            "label": "EnginSoft: engineering cross-validation and 122 m arch",
+            "url": "https://www.enginsoft.com/expertise/cross-validation-of-the-final-design-for-the-margaret-hunt-hill-bridge.html"
+          },
+          {
+            "label": "Wikipedia: Margaret Hunt Hill Bridge",
+            "url": "https://en.wikipedia.org/wiki/Margaret_Hunt_Hill_Bridge"
+          },
+          {
+            "label": "OSM mapped bridge outline",
+            "url": "https://www.openstreetmap.org/way/1275449057"
+          },
+          {
+            "label": "OSM eastbound roadway",
+            "url": "https://www.openstreetmap.org/way/639824866"
+          },
+          {
+            "label": "Michael Barera: Reunion Tower August 2015 23 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:View_of_Margaret_Hunt_Hill_Bridge_from_Reunion_Tower_August_2015_23.jpg"
+          },
+          {
+            "label": "Fkbowen: Margaret Hunt Hill Bridge (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Margaret_Hunt_Hill_Bridge.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/margaret-hunt-hill-bridge/geometry.js"
+      },
+      "notes": "Estimated 13 m deck elevation, 44.4 m arch footing spread, tube taper and cable attachment ordering, approach supports/lights. City sheet 400 ft steel arch plus 30 ft concrete pedestal interpreted as 131.064 m total; architect quotes 136 m above banks, a differing unresolved datum. 368 m cable section is distinguished from longer mapped approach-inclusive outline. Shared registry bank-fit parent-datum condition corrected in standalone commit 3934156; original geometry/profile machinery unchanged. Near: 28,218 triangles / 17 draws / 959 KiB; far: 11,214 / 6 / 309 KiB. Near/far bounds identical. Deterministic QA clean (zero detected coplanar overlaps, 0% back-face hits). Flat ramps 166.5 m west / 246.4 m east, peak grades 11.71% / 7.91%. No independent reviewer verdict yet; inspection ready for lead review. No hardware measurement. Follow-up: 362 requested focused tests pass, including new registry-ground tests and a coordinator-authorized Paris-only selection in its existing terrain-arrival test.",
+      "documentation": "docs/assets/top-cities-margaret-hunt-hill-bridge.md",
+      "manifest": "/models/bridges/margaret-hunt-hill-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=margaret-hunt-hill-bridge&view=underside"
+          }
+        ]
+      },
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

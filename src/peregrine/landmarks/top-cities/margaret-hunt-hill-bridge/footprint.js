@@ -1,4 +1,56 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// The mapped bridge outline, not neighboring Ronald Kirk or railway bridges.
+// No building=* tower/pier parts exist in the supplied and extended OSM extract.
+// © OpenStreetMap contributors, ODbL 1.0.
+export const FOOTPRINTS = [
+  [
+    [
+      -96.819199,
+      32.7811796
+    ],
+    [
+      -96.8190043,
+      32.7808471
+    ],
+    [
+      -96.8191434,
+      32.780816
+    ],
+    [
+      -96.8245726,
+      32.7789484
+    ],
+    [
+      -96.8247541,
+      32.778886
+    ],
+    [
+      -96.8249202,
+      32.7788353
+    ],
+    [
+      -96.8249881,
+      32.7788145
+    ],
+    [
+      -96.8250692,
+      32.7787898
+    ],
+    [
+      -96.8252762,
+      32.7791016
+    ],
+    [
+      -96.8248622,
+      32.7792107
+    ],
+    [
+      -96.819579,
+      32.7810264
+    ],
+    [
+      -96.819199,
+      32.7811796
+    ]
+  ]
+];
+export const OSM_WAYS = [1275449057, 79307979, 934284957, 499406774, 639824866, 128674803, 499406775, 499406776, 499406777, 499406791, 170396033, 128674804, 419226146, 1041339659, 1041339658, 241991624, 1041339656, 499406773, 847942332];
