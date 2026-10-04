@@ -1,0 +1,66 @@
+{
+  "id": "margaret-hunt-hill-bridge",
+  "name": "Margaret Hunt Hill Bridge",
+  "kind": "bridge",
+  "origin": [
+    -96.8221256,
+    32.7799486
+  ],
+  "height": 131.064,
+  "padM": 420,
+  "frontageBearing": 67.4,
+  "terrainPolicy": "bank-fit",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the flat-map foundation grade; no DEM, sea-level elevation or latitude stretch is baked into this asset. Steel arch 121.92 m above 9.144 m concrete bases; deck 13 m is an estimated visual datum.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 368 m cable-supported section, 184 m spans, 36.7 m width, 58 centreline stays; city fact sheet gives 400 ft steel arch, 30 ft concrete columns and 14 ft 7 in steel base diameter. Architect gives 136 m above riverbanks; differing height datums remain unresolved. Estimated transverse arch spread, deck height, taper, cable attachment ordering, approach supports and lights; tower station inferred from dossier coordinate projected onto averaged OSM carriageways.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/margaret-hunt-hill-bridge-near.glb",
+      "bytes": 982856,
+      "triangles": 28218,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -332.4173889160156,
+          -1.5083112714364688e-7,
+          -178.587158203125
+        ],
+        "max": [
+          403.2315368652344,
+          131.06399536132812,
+          141.68638610839844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/margaret-hunt-hill-bridge-far.glb",
+      "bytes": 316780,
+      "triangles": 11214,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -332.4173889160156,
+          -1.5083112714364688e-7,
+          -178.587158203125
+        ],
+        "max": [
+          403.2315368652344,
+          131.06399536132812,
+          141.68638610839844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/margaret-hunt-hill-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
