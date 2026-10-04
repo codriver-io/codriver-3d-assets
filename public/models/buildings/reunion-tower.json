@@ -1,0 +1,90 @@
+{
+  "id": "reunion-tower",
+  "name": "Reunion Tower",
+  "kind": "building",
+  "origin": [
+    -96.808943125,
+    32.775362575
+  ],
+  "height": 171,
+  "padM": 24,
+  "frontageBearing": 208.9,
+  "rangeM": 4500,
+  "minZoom": 12.5,
+  "nearM": 700,
+  "sphereR": 16.15,
+  "centerY": 154.59,
+  "nodeR": 0.26,
+  "centerShaftR": 6.05,
+  "outerShaftR": 2.18,
+  "shafts": [
+    {
+      "x": 8.996,
+      "z": 1.804,
+      "bearing": 101.34
+    },
+    {
+      "x": -6.821,
+      "z": -5.821,
+      "bearing": 310.48
+    },
+    {
+      "x": -5.119,
+      "z": 9.254,
+      "bearing": 208.95
+    }
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The Reunion district grade is flat downtown fill, not baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sphere diameter follows the mapped ring (inscribed 32.7 m) rather than the schoolbook \"about 118 ft\". Shaft radii and bearings are mapped; band pitch, glass-band height, crown and the open underside of the geodesic are estimated from photographs. The Hyatt Regency, plaza and foundation piers are not modelled. Night lighting is three static colour bands on the 259-style nodes, not the animated show.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/reunion-tower-near.glb",
+      "bytes": 743260,
+      "triangles": 25128,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.40999984741211,
+          2.1571205266468496e-8,
+          -16.40999984741211
+        ],
+        "max": [
+          16.40999984741211,
+          171,
+          16.40999984741211
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/reunion-tower-far.glb",
+      "bytes": 131036,
+      "triangles": 4244,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.40999984741211,
+          3.814697322468419e-7,
+          -16.40999984741211
+        ],
+        "max": [
+          16.40999984741211,
+          171,
+          16.40999984741211
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/reunion-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

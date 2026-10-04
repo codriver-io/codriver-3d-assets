@@ -10529,6 +10529,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "reunion-tower",
+      "name": "Reunion Tower",
+      "kind": "building",
+      "location": "300 Reunion Boulevard · Dallas, Texas",
+      "status": "ready",
+      "description": "171 m observation tower: an open geodesic ball (aluminium struts, light nodes, a blue glass belt and a concrete crown) on a banded central concrete shaft and three glazed elevator shafts.",
+      "manifest": "/models/buildings/reunion-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/reunion-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks reunion-tower",
+        "provenance": "Original procedural geometry authored 2026-10-04. Ball ring and four shaft circles from OpenStreetMap ways 1428779225, 1491048358 and 1491048355–57 / 1491048359 (read 2026-10-04; © OpenStreetMap contributors, ODbL 1.0). Height, architect and the 259-node lighting from Wikipedia. The 2026 fixture upgrade (259 nodes, now with extra pixels) from The Dallas Morning News. Sphere, crown, glass belt and pour bands estimated from Wikimedia Commons photographs used only as local ignored comparison images (Michael Barera CC BY-SA 4.0; Batrak CC BY-SA 2.0; texas_mustang CC BY 2.0; Kevin D. Hartnell CC BY-SA 3.0; Loadmaster / David R. Tribble CC BY-SA 3.0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Reunion Tower · Wikipedia (height, architect, 259 fixtures)",
+            "url": "https://en.wikipedia.org/wiki/Reunion_Tower"
+          },
+          {
+            "label": "Lighting upgrade, 259 nodes to 8,547 points · The Dallas Morning News (2026-03-20)",
+            "url": "https://www.dallasnews.com/news/2026/03/20/reunion-tower-upgrade-adds-thousands-of-lights-to-dallas-skyline/"
+          },
+          {
+            "label": "OSM way 1428779225 · ball",
+            "url": "https://www.openstreetmap.org/way/1428779225"
+          },
+          {
+            "label": "OSM way 1491048359 · central shaft",
+            "url": "https://www.openstreetmap.org/way/1491048359"
+          },
+          {
+            "label": "OSM way 1491048355 · east elevator shaft",
+            "url": "https://www.openstreetmap.org/way/1491048355"
+          },
+          {
+            "label": "Photo from the south · Batrak (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Reunion_tower_dallas.jpg"
+          },
+          {
+            "label": "Shafts and ball from below · Loadmaster / David R. Tribble (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Reunion-Tower-0244.jpg"
+          },
+          {
+            "label": "Four shafts · Loadmaster / David R. Tribble (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Reunion-Tower-0262.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/reunion-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=reunion-tower&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=reunion-tower&view=overview"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=reunion-tower&view=facade"
+          },
+          {
+            "label": "Crown and upper cap",
+            "url": "/asset-preview.html?asset=reunion-tower&view=roof"
+          },
+          {
+            "label": "Geodesic ball",
+            "url": "/asset-preview.html?asset=reunion-tower&view=ball"
+          },
+          {
+            "label": "Shafts and open basket",
+            "url": "/asset-preview.html?asset=reunion-tower&view=shafts"
+          },
+          {
+            "label": "Plan of the feet",
+            "url": "/asset-preview.html?asset=reunion-tower&view=plan"
+          }
+        ]
+      },
+      "notes": "Published: 561 ft (171 m) to the roof, Welton Becket and Associates, 1978, 259 light nodes (each fixture gained extra pixels in the 2026 upgrade; the show is not animated here). Mapped: origin on the central shaft, ball ring 16.45–17.47 m, shaft radii and bearings. The sphere is inscribed in that ring (centreline 16.15 m, housings to 16.41 m, top node at 171.0 m) rather than the looser “about 118 ft” diameter. Estimated from photographs: 3.6 m pour bands, glass belt, deck ring, crown, and the south-cap cut that keeps the basket open. The Hyatt, plaza, maintenance walkways and the underground foundation are not modelled. Night lighting is three static colour bands on the nodes. Downtown Dallas grade is flat; no terrain pad.",
+      "documentation": "docs/assets/top-cities-reunion-tower.md",
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
