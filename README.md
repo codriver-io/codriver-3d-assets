@@ -4,8 +4,8 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 5 more cities: 121 landmarks and four
-reusable bridge components, 258 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 5 more cities: 122 landmarks and four
+reusable bridge components, 260 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
 **[Explore the public library](https://3d-assets.codriver.io/)** ·
@@ -61,7 +61,7 @@ Dubuc bridges. Build them with `pnpm build:quebec-landmarks`; the collection and
 are in [docs/quebec-landmarks.md](docs/quebec-landmarks.md).
 
 <!-- top-cities -->
-Top cities: London: Tower Bridge, St Paul's Cathedral; Amsterdam: Amsterdam Centraal station; Madrid: Palacio Real de Madrid; Dallas: Reunion Tower, Margaret Hunt Hill Bridge; Washington: Washington Monument. Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
+Top cities: London: Tower Bridge, St Paul's Cathedral; Amsterdam: Rijksmuseum, Amsterdam Centraal station; Madrid: Palacio Real de Madrid; Dallas: Reunion Tower, Margaret Hunt Hill Bridge; Washington: Washington Monument. Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
 <!-- /top-cities -->
 
 ## A look inside

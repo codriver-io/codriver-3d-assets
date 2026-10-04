@@ -10984,6 +10984,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rijksmuseum",
+      "name": "Rijksmuseum",
+      "kind": "building",
+      "location": "Museumstraat 1, 1071 XX Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Cuypers' Rijksmuseum (1876–1885), as it stands after the 2013 reopening: a long brown-red brick front on Stadhouderskade with pale stone bands, two clock towers under stepped slate spires, a semicircular passage about half the central bay, and a tall arched window under a crow-stepped gable. The Museumplein front repeats the arch under a horizontal arcade and a continuous slate roof, with blue-grey glass strips and a rectangular ridge skylight. Two glass courtyard roofs sit inside. The Asian pavilion is the low white block in the south garden.",
+      "manifest": "/models/buildings/rijksmuseum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rijksmuseum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks rijksmuseum",
+        "provenance": "Original procedural geometry authored 2026-10-04 (Codriver). The plan and the 39.32° frontage come from OpenStreetMap outline way 431070185 and the building:part ways in footprint.js, including the north towers 749429998 and 749429999 (shared Overpass helper; © OpenStreetMap contributors, ODbL 1.0). Heights are the 3DBAG tags on those parts. The 1885 delivery figures are from nl.wikipedia.org/wiki/Rijksmuseumgebouw. Wikimedia Commons photographs were viewed for proportion and are not redistributed: Derbrauni, 'North facade of the Rijksmuseum Amsterdam 01' (CC BY 4.0); C messier, 'Rijksmuseum 2022' (CC BY-SA 4.0). The dossier contact sheet is paintings from the collection, not the building, and was not used for massing. No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "Dutch Wikipedia · Rijksmuseumgebouw",
+            "url": "https://nl.wikipedia.org/wiki/Rijksmuseumgebouw"
+          },
+          {
+            "label": "Rijksmuseum · address and route",
+            "url": "https://www.rijksmuseum.nl/en/general-information/address-and-route"
+          },
+          {
+            "label": "OSM way 431070185 · Rijksmuseum outline",
+            "url": "https://www.openstreetmap.org/way/431070185"
+          },
+          {
+            "label": "OSM way 749429998 · west north tower",
+            "url": "https://www.openstreetmap.org/way/749429998"
+          },
+          {
+            "label": "Wikimedia Commons · North facade (Derbrauni, CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:North_facade_of_the_Rijksmuseum_Amsterdam_01.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Museumplein front, 2022 (C messier, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rijksmuseum_2022.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rijksmuseum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=rijksmuseum&view=overview",
+        "views": [
+          {
+            "label": "From the north-east, the driver's oblique",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=overview"
+          },
+          {
+            "label": "Stadhouderskade front and the passage",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=facade"
+          },
+          {
+            "label": "The arch, from the street",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=passage"
+          },
+          {
+            "label": "Museumplein front",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=south"
+          },
+          {
+            "label": "West tower, clock and spire",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=tower"
+          },
+          {
+            "label": "East range",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=east"
+          },
+          {
+            "label": "Roof plan",
+            "url": "/asset-preview.html?asset=rijksmuseum&view=roof"
+          }
+        ]
+      },
+      "notes": "Sourced: 135.54 m greatest length and 33.64 m greatest width at the 1885 delivery (the width is the central range, not the ~88 m depth of the whole footprint), towers 52.90 m in 1885, Cuypers 1876–1885, a passage through the middle wing, two courtyards. The model follows the 3DBAG/OSM tower tag of 54 m (roof:height 20, so the wall stops at 34 m) and the tagged gallery ridges of 27 m, corner pavilions 38 m, south turrets 43 m, Asian pavilion 7 m. Estimated from the north and south photographs: the semicircular arch (10.2 m, half the bay between the towers, springing at 1.15 m, crown at 6.25 m) with a continuous stone archivolt, the north tall arched window and crow-stepped gable, and the Museumplein front as a horizontal arcade under a continuous slate roof with segmented blue-grey glass and a rectangular ridge skylight. North towers have clock dials and a hip, lantern, pinnacles and needle on both LODs. The 2013 atrium glass peaks near 22 m under the slate. Brick is #8a4a3a by day and #4f2a22 at night; roof glass is #4a5560 by day and a faint cool #8ea0ae at night. The mapped 17 m part on the passage axis is kept as a 1.35 m plinth split by the path, because the Museumplein photograph shows that ground open. Night windows use the unshaded light material. Not modelled: banners, the sculptural programme (one stone finial stands in for the gable group), iron cresting, and the Fragmentengebouw / Teekenschool / Villa, which sit outside the outline. The Museumplein site is flat; no terrain pad.",
+      "documentation": "docs/assets/top-cities-rijksmuseum.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
