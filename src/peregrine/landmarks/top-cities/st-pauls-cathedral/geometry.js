@@ -1,9 +1,9 @@
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
+import { buildCathedral } from './st-pauls-cathedral-build.js';
 
-// STUB placeholder massing; the builder replaces it with the landmark.
 export function create({ detail = 'near' } = {}) {
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  b.box('stone', [0, SPEC.height / 2, 0], [20, SPEC.height, 20]);
+  buildCathedral(b, detail === 'near');
   return b.finish();
 }

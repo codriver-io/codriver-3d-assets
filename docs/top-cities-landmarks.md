@@ -4,11 +4,12 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (5 released)
+## The collection (6 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
 | `tower-bridge` | Tower Bridge | London | bridge, road-fitted |
+| `st-pauls-cathedral` | St Paul's Cathedral | London | building |
 | `amsterdam-centraal` | Amsterdam Centraal station | Amsterdam | building |
 | `palacio-real-de-madrid` | Palacio Real de Madrid | Madrid | building |
 | `reunion-tower` | Reunion Tower | Dallas | building |
