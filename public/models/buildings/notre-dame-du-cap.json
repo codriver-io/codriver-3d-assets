@@ -1,0 +1,299 @@
+{
+  "id": "notre-dame-du-cap",
+  "name": "Basilique Notre-Dame-du-Cap",
+  "kind": "building",
+  "origin": [
+    -72.4971941,
+    46.3682209
+  ],
+  "height": 78.6,
+  "padM": 62,
+  "frontageBearing": 228,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -72.4970076,
+          46.3680203
+        ],
+        [
+          -72.4968235,
+          46.3681375
+        ],
+        [
+          -72.4967484,
+          46.36833
+        ],
+        [
+          -72.4966519,
+          46.3683892
+        ],
+        [
+          -72.4969308,
+          46.3686039
+        ],
+        [
+          -72.4970866,
+          46.3685167
+        ],
+        [
+          -72.4973301,
+          46.368497
+        ],
+        [
+          -72.4975638,
+          46.3683522
+        ],
+        [
+          -72.4975947,
+          46.3682414
+        ],
+        [
+          -72.497714,
+          46.3683004
+        ],
+        [
+          -72.4977891,
+          46.3683226
+        ],
+        [
+          -72.4978535,
+          46.3682485
+        ],
+        [
+          -72.4977033,
+          46.3681967
+        ],
+        [
+          -72.4975749,
+          46.3681063
+        ],
+        [
+          -72.4976496,
+          46.3680561
+        ],
+        [
+          -72.4974911,
+          46.3679264
+        ],
+        [
+          -72.4974344,
+          46.3678811
+        ],
+        [
+          -72.497358,
+          46.367936
+        ],
+        [
+          -72.4972741,
+          46.3678118
+        ],
+        [
+          -72.4972098,
+          46.3677525
+        ],
+        [
+          -72.4971561,
+          46.3678192
+        ],
+        [
+          -72.4972461,
+          46.367974
+        ],
+        [
+          -72.4970674,
+          46.3679759
+        ],
+        [
+          -72.4970076,
+          46.3680203
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -72.4970076,
+        46.3680203
+      ],
+      [
+        -72.4968235,
+        46.3681375
+      ],
+      [
+        -72.4967484,
+        46.36833
+      ],
+      [
+        -72.4966519,
+        46.3683892
+      ],
+      [
+        -72.4969308,
+        46.3686039
+      ],
+      [
+        -72.4970866,
+        46.3685167
+      ],
+      [
+        -72.4973301,
+        46.368497
+      ],
+      [
+        -72.4975638,
+        46.3683522
+      ],
+      [
+        -72.4975947,
+        46.3682414
+      ],
+      [
+        -72.497714,
+        46.3683004
+      ],
+      [
+        -72.4977891,
+        46.3683226
+      ],
+      [
+        -72.4978535,
+        46.3682485
+      ],
+      [
+        -72.4977033,
+        46.3681967
+      ],
+      [
+        -72.4975749,
+        46.3681063
+      ],
+      [
+        -72.4976496,
+        46.3680561
+      ],
+      [
+        -72.4974911,
+        46.3679264
+      ],
+      [
+        -72.4974344,
+        46.3678811
+      ],
+      [
+        -72.497358,
+        46.367936
+      ],
+      [
+        -72.4972741,
+        46.3678118
+      ],
+      [
+        -72.4972098,
+        46.3677525
+      ],
+      [
+        -72.4971561,
+        46.3678192
+      ],
+      [
+        -72.4972461,
+        46.367974
+      ],
+      [
+        -72.4970674,
+        46.3679759
+      ],
+      [
+        -72.4970076,
+        46.3680203
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8
+  },
+  "axisDeg": 48,
+  "anchor": [
+    1.1,
+    -0.8
+  ],
+  "octApothem": 26.5,
+  "wallTop": 19.5,
+  "gableApex": 29,
+  "gableHalf": 7.5,
+  "roofTop": 58,
+  "lanternHalf": 4,
+  "lanternTop": 64.6,
+  "spireTip": 73.2,
+  "crossTip": 78.6,
+  "portalZ": 40,
+  "towerBaseHalf": 12,
+  "towerTopHalf": 5.2,
+  "towerTop": 36,
+  "archHalf": 8,
+  "archApex": 24.5,
+  "floorY": 2.2,
+  "choirZ": -41.5,
+  "galleryZ": [
+    30.5,
+    36.5
+  ],
+  "pavilionX": [
+    27,
+    36.5
+  ],
+  "galleryTop": 5.3,
+  "statueHeight": 7.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the plaza in front of the portal stair (about 11 m above sea level on the public DEM: 10.1 to 12.2 m under the outline, median 11.0); the portal floor is 2.2 m above it, the galleries 0.6 m. The terrace, the bank to the St. Lawrence and the plaza are not modelled. Full 3D world uses an explicit terrain pad (terrainPad): the outline held at its median DEM with an 8 m feather.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 258 ft (78.6 m) to the cross, the octagonal plan with four transept arms, the pyramidal copper roof with a lantern and spire, the parabolic portal arch with a 7.3 m statue, the two covered galleries ending in edicules, the sacristy, the mapped outline and axis. Estimated from photographs and the outline (no other published dimension was found): the octagon apothem (26.5 m), the eaves (19.5 m), gable apexes (30 m), the portal tower (24 m wide at the base, 36 m to the crown), the arch size (16 m wide, 24.5 m to the apex), the lantern and spire heights, the gallery and pavilion sizes, window and rose positions and the roof patchwork. The diagonal gables follow the photographs; the back of the building is inferred from the outline. Interior, ornament, lettering, the Petit Sanctuaire, the Pavillon des visiteurs and the plaza are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/notre-dame-du-cap-near.glb",
+      "bytes": 200560,
+      "triangles": 4389,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -51.17269515991211,
+          -4.7683716530855236e-8,
+          -41.57395553588867
+        ],
+        "max": [
+          40.97377014160156,
+          78.5999984741211,
+          51.43568801879883
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/notre-dame-du-cap-far.glb",
+      "bytes": 64568,
+      "triangles": 1074,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -51.17269515991211,
+          -4.7683716530855236e-8,
+          -41.57395553588867
+        ],
+        "max": [
+          40.97377014160156,
+          78.5999984741211,
+          51.43568801879883
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/notre-dame-du-cap/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

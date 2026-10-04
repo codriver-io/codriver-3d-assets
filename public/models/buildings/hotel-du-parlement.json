@@ -1,0 +1,118 @@
+{
+  "id": "hotel-du-parlement",
+  "name": "Hôtel du Parlement",
+  "kind": "building",
+  "origin": [
+    -71.2141891,
+    46.8086847
+  ],
+  "height": 65,
+  "padM": 75,
+  "frontageBearing": 48.9,
+  "rotationDeg": 48.9,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -71.2147028,
+          46.8084678
+        ],
+        [
+          -71.2150497,
+          46.808721
+        ],
+        [
+          -71.214138,
+          46.8092749
+        ],
+        [
+          -71.2133329,
+          46.8086402
+        ],
+        [
+          -71.2133914,
+          46.808602
+        ],
+        [
+          -71.2142479,
+          46.8080968
+        ],
+        [
+          -71.2145781,
+          46.8083686
+        ],
+        [
+          -71.2145982,
+          46.8083594
+        ],
+        [
+          -71.2146196,
+          46.8083753
+        ],
+        [
+          -71.2147229,
+          46.8084522
+        ],
+        [
+          -71.2147028,
+          46.8084678
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 12
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the foot of the facade walls on the Colline Parlementaire, about 85 m above sea level (median of a public DEM over the outline); the plan climbs about 5.4 m toward the south corner, which the rigid base does not follow. No absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the mapped outer ring of the quadrangle (relation 196002) and its courtyard hole, four levels, Second Empire style, Taché 1877-86, clock tower 52.4 m (Wikipedia, citing Ledoux and Jacob 2003), bronze statues of historical figures in the facade niches. Estimated from photographs: every storey, cornice and roof height except the tower, bay counts, window sizes, the pavilion and tower profiles, the roof pitches, the statue count and positions, the central chamber block and everything on the back and the sides. The Fontaine de Tourny, the esplanade, the lamps, the grounds and the neighbouring Édifices are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/hotel-du-parlement-near.glb",
+      "bytes": 806024,
+      "triangles": 15927,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -64.26344299316406,
+          0,
+          -63.739139556884766
+        ],
+        "max": [
+          63.585235595703125,
+          64.80000305175781,
+          64.33078002929688
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/hotel-du-parlement-far.glb",
+      "bytes": 151512,
+      "triangles": 2922,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -64.26344299316406,
+          0,
+          -63.739139556884766
+        ],
+        "max": [
+          63.585235595703125,
+          64.80000305175781,
+          64.33078002929688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/hotel-du-parlement/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

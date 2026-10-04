@@ -4,8 +4,8 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal, Paris, Toronto, San Francisco and Calgary: 94 landmarks and four reusable
-bridge components, 204 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal and the rest of Québec, Paris, Toronto, San Francisco and Calgary: 114 landmarks and four
+reusable bridge components, 244 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
 **[Explore the public library](https://3d-assets.codriver.io/)** ·
@@ -51,6 +51,14 @@ Old City Hall, the Fairmont Palliser, the Canada Olympic Park ski jumps, and the
 Peace, Centre Street and Reconciliation bridges. Build them with
 `pnpm build:calgary-landmarks`; the collection and frame are in
 [docs/calgary-landmarks.md](docs/calgary-landmarks.md).
+
+Québec: the Château Frontenac, Hôtel du Parlement, Notre-Dame de Québec, Édifice
+Marie-Guyart, Pavillon Pierre-Lassonde and Gare du Palais in Québec City; the Casino
+de Montréal, Centre Bell, Marché Bonsecours, Hôtel de Ville, Marie-Reine-du-Monde and
+Biodôme in Montréal; the Canadian Museum of History, the basilicas of Sainte-Anne-de-Beaupré
+and Notre-Dame-du-Cap; and the Pierre-Laporte, Québec, Laviolette, Papineau-Leblanc and
+Dubuc bridges. Build them with `pnpm build:quebec-landmarks`; the collection and frame
+are in [docs/quebec-landmarks.md](docs/quebec-landmarks.md).
 
 ## A look inside
 

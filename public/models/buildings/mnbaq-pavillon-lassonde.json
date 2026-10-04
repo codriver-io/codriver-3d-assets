@@ -1,0 +1,118 @@
+{
+  "id": "mnbaq-pavillon-lassonde",
+  "name": "Pavillon Pierre-Lassonde (MNBAQ)",
+  "kind": "building",
+  "origin": [
+    -71.224914,
+    46.8007043
+  ],
+  "height": 29.6,
+  "padM": 75,
+  "frontageBearing": 319.3,
+  "rotationDeg": 139.3,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -71.2256138,
+          46.8009025
+        ],
+        [
+          -71.2250309,
+          46.8004438
+        ],
+        [
+          -71.2249864,
+          46.800469
+        ],
+        [
+          -71.224783,
+          46.8003033
+        ],
+        [
+          -71.2242389,
+          46.8006148
+        ],
+        [
+          -71.2246785,
+          46.8009608
+        ],
+        [
+          -71.2248528,
+          46.8008653
+        ],
+        [
+          -71.2250244,
+          46.8009947
+        ],
+        [
+          -71.2251095,
+          46.8009486
+        ],
+        [
+          -71.2251723,
+          46.8009078
+        ],
+        [
+          -71.2253582,
+          46.8010443
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 10
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the plaza and ground-floor level on Grande Allée (about 93 m above sea level, the median of a public DEM over the outline; the plan falls about 2 m toward the park, which the rigid base does not follow). Ground-floor glazing to 5 m, first roof 8.5 m, second roof 13 m, top box roof 26.5 m, lantern 29.6 m.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan, orientation and the three stepped volumes are mapped from OSM way 487158604 and matched to OMA's published box sizes (50 x 50, 45 x 35, 42.5 x 25 m); the hall height (12.5 m) and the cantilever over the plaza are sourced. Every height other than the hall, the stair slope, the truss/bay pattern, the roof terraces and the colours are estimated from photographs. The neighbouring Église Saint-Dominique and its presbytery (way 389475849), the older pavilions and the sculpture garden are not modelled. See docs/3d-quebec-mnbaq-pavillon-lassonde.md.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mnbaq-pavillon-lassonde-near.glb",
+      "bytes": 162004,
+      "triangles": 1952,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -53.03620147705078,
+          0,
+          -38.52092361450195
+        ],
+        "max": [
+          51.25862121582031,
+          29.600000381469727,
+          44.97382354736328
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mnbaq-pavillon-lassonde-far.glb",
+      "bytes": 26612,
+      "triangles": 242,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -52.93000030517578,
+          0,
+          -38.41472244262695
+        ],
+        "max": [
+          51.137149810791016,
+          29.600000381469727,
+          44.85235595703125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/mnbaq-pavillon-lassonde/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

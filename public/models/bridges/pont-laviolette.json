@@ -1,0 +1,67 @@
+{
+  "id": "pont-laviolette",
+  "name": "Pont Laviolette",
+  "kind": "bridge",
+  "origin": [
+    -72.5615492,
+    46.3074037
+  ],
+  "height": 106.6,
+  "padM": 60,
+  "frontageBearing": 130.1,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y = 0 is high water on the flat Peregrine basemap; no absolute altitude, DEM or latitude stretch is baked in. The road surface is authored on one vertical profile: ramps from grade 0 on the approach roads (75 m beyond the north end, 115 m beyond the south end), 4.4 m and 6.2 m at the bridge ends, 52.0 m at the crest over the arch (published 52.02 m from high water to the top of the deck). Cityscape fits the ramp feet to the loaded approach roads; Full 3D world refits the same shape between the terrain roads and 58.0 m above sea level (high water 6.02 m) at run time (pont-laviolette-profile.js, layer.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 2,707 m long; steel structure 1,383 m with a 335 m central span (a 269 m arch hung between two 33 m cantilevers) and 167 m anchor spans; steel approaches 641 m north and 683 m south (plate girders, then precast girders from pier S10); 34 piers and 2 abutments; deck 16.7 m wide, four lanes, a central wall; 52.02 m from high water to the deck top; 106.6 m overall; 304.8 m x 49.4 m navigation clearance; rope hangers at every lower-chord panel point of the arch. Mapped: the two carriageways, the bridge ends, the approach roads and the roads that pass under the approaches. Estimated: the main span placed 641 + 3 x 119 + 167 m from the north end, three equal 119 m truss spans each side, the approach pier positions (between the roads underneath), the vertical profile apart from the crest (knees over the roads under the ends, 3.7-3.9 % grades, a 700 m crest curve), truss depths and chord curves, panel counts, pier shapes, colours, lamp spacing. Flat-map convention: ramps on the approach roads, 75 m north and 115 m south of the bridge ends, steepest grade 9.3 %.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-laviolette-near.glb",
+      "bytes": 1393428,
+      "triangles": 29040,
+      "drawCalls": 32,
+      "bounds": {
+        "min": [
+          -1080.8701171875,
+          -0.25,
+          -914.3370361328125
+        ],
+        "max": [
+          1143.9931640625,
+          107.05000305175781,
+          967.6392822265625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-laviolette-far.glb",
+      "bytes": 378544,
+      "triangles": 7550,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -1080.8701171875,
+          -0.25,
+          -914.3370361328125
+        ],
+        "max": [
+          1143.9931640625,
+          107.05000305175781,
+          967.6392822265625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-laviolette/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

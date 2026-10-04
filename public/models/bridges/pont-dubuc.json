@@ -1,0 +1,67 @@
+{
+  "id": "pont-dubuc",
+  "name": "Pont Dubuc",
+  "kind": "bridge",
+  "origin": [
+    -71.0704956,
+    48.4327514
+  ],
+  "height": 24.2,
+  "padM": 60,
+  "frontageBearing": 20.7,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y = 0 is the Saguenay on the flat Peregrine basemap; no absolute altitude, DEM or latitude stretch is baked in. The road surface is authored on one vertical profile: ramps from grade 0 at the alignment ends (35 m beyond the mapped south end, just before the southbound exit; the mapped north end, just before Route 172 passes under the Route 175) to 12.0 m over the river spans. Cityscape fits the ramp feet to the loaded approach roads; Full 3D world refits the same shape between the terrain roads and 16.0 m above sea level (the DEM river at 4 m) at run time (pont-dubuc-profile.js, layer.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: opened October 1972 (built 1970-1972, 12 M$); 458 m in seven continuous spans on steel box girders with plate-girder members, seven reinforced-concrete piers; four lanes separated by a concrete wall; 13 lamp posts with two lamps each; refurbished 2016-2023 (girders sandblasted and repainted). Mapped: the two carriageways (485.5 m, straight at 20.7 deg), the bridge outline (22.9 m wide, a joint 26 m from the south end), the sidewalks, the junctions and roads at both ends. Estimated: the span layout (two 53 m end spans and five 70.4 m spans; photographs show equal interior spans), the box girder running south over the concrete end pier P1 (at the mapped outline joint, 26 m from the south end) to the abutment, as far as the flat-map deck can hold it, the deck height (12 m above the river), the cross-section, the box and bracket dimensions, the pier shapes, colours and lamp spacing. Flat-map convention: the ramps climb over the end spans (no room on the approach roads, see the documentation); steepest grade 6.7 %.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-dubuc-near.glb",
+      "bytes": 833920,
+      "triangles": 12990,
+      "drawCalls": 18,
+      "bounds": {
+        "min": [
+          -108.81564331054688,
+          -0.25,
+          -232.9852752685547
+        ],
+        "max": [
+          97.1672592163086,
+          24.207801818847656,
+          263.857421875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-dubuc-far.glb",
+      "bytes": 331752,
+      "triangles": 5148,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -108.81564331054688,
+          -0.25,
+          -232.9852752685547
+        ],
+        "max": [
+          97.1672592163086,
+          24.261770248413086,
+          263.857421875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-dubuc/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
