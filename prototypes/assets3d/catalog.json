@@ -13539,6 +13539,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "gratte-ciel-villeurbanne",
+      "name": "Gratte-Ciel de Villeurbanne",
+      "kind": "building",
+      "location": "Avenue Henri-Barbusse · Villeurbanne, France",
+      "status": "ready",
+      "description": "The paired 1934 Art Deco gateway towers and four residential wings along avenue Henri-Barbusse: pale render, redented backs, avenue-side terraces, tall glazed stairwells, shop bases and open crown rails.",
+      "manifest": "/models/buildings/gratte-ciel-villeurbanne.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/gratte-ciel-villeurbanne/geometry.js",
+        "build": "pnpm build:top-cities-landmarks gratte-ciel-villeurbanne --no-check",
+        "provenance": "Original procedural geometry authored for Codriver 2026-10-05; no scan, third-party mesh, texture or photograph shipped. Mapped footprint data © OpenStreetMap contributors (ODbL 1.0), dossier plus one northern query through the shared helper. Commons comparison images held only in ignored tmp: Fichier:Gratte-Ciel ensemble sud.jpg — Colophanne (CC BY-SA 4.0); Fichier:Lyon skyline from a Villeurbanne \"gratte-ciel\".jpg — SashiRolls (CC BY-SA 4.0); Fichier:Villeurbanne - Avenue Henri Barbusse - Appartement témoin des Gratte-Ciel 02.jpg — Romainbehar (CC0); Fichier:Villeurbanne gratteciel placechanoineboursier (11).jpg — Karldupart (CC BY-SA 3.0); Fichier:Villeurbanne gratteciel courszola (4).jpg — Karldupart (CC BY-SA 3.0); Fichier:La Rue Michel Servet et les Gratte Ciel de Villeurbanne vus du côté Ouest.jpg — Jules Sylvestre (Public domain).",
+        "references": [
+          {
+            "label": "SVU owner booklet (65m / 19 storeys key-figures table, conflicting 61m narrative)",
+            "url": "https://www.svu.fr/wp-content/uploads/2025/04/SVU-livret-gratte-ciel-ok-web.pdf"
+          },
+          {
+            "label": "Le Rize municipal history — residential ensemble",
+            "url": "https://lerizeplus.villeurbanne.fr/decouvertes/ressources-pedagogiques/visitez-les-gratte-ciels/les-logements"
+          },
+          {
+            "label": "Fichier:Gratte-Ciel ensemble sud.jpg — Colophanne (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gratte-Ciel_ensemble_sud.jpg"
+          },
+          {
+            "label": "Fichier:Lyon skyline from a Villeurbanne \"gratte-ciel\".jpg — SashiRolls (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lyon_skyline_from_a_Villeurbanne_%22gratte-ciel%22.jpg"
+          },
+          {
+            "label": "Fichier:Villeurbanne - Avenue Henri Barbusse - Appartement témoin des Gratte-Ciel 02.jpg — Romainbehar (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Villeurbanne_-_Avenue_Henri_Barbusse_-_Appartement_t%C3%A9moin_des_Gratte-Ciel_02.jpg"
+          },
+          {
+            "label": "Fichier:Villeurbanne gratteciel placechanoineboursier (11).jpg — Karldupart (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Villeurbanne_gratteciel_placechanoineboursier_(11).jpg"
+          },
+          {
+            "label": "Fichier:Villeurbanne gratteciel courszola (4).jpg — Karldupart (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Villeurbanne_gratteciel_courszola_(4).jpg"
+          },
+          {
+            "label": "Fichier:La Rue Michel Servet et les Gratte Ciel de Villeurbanne vus du côté Ouest.jpg — Jules Sylvestre (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:La_Rue_Michel_Servet_et_les_Gratte_Ciel_de_Villeurbanne_vus_du_c%C3%B4t%C3%A9_Ouest.jpg"
+          },
+          {
+            "label": "Mapped footprint 84817585",
+            "url": "https://www.openstreetmap.org/way/84817585"
+          },
+          {
+            "label": "Mapped footprint 466475080",
+            "url": "https://www.openstreetmap.org/way/466475080"
+          },
+          {
+            "label": "Mapped footprint 84818263",
+            "url": "https://www.openstreetmap.org/way/84818263"
+          },
+          {
+            "label": "Mapped footprint 84817879",
+            "url": "https://www.openstreetmap.org/way/84817879"
+          },
+          {
+            "label": "Mapped footprint 84817757",
+            "url": "https://www.openstreetmap.org/way/84817757"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gratte-ciel-villeurbanne/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=gratte-ciel-villeurbanne&view=detail"
+          }
+        ]
+      },
+      "notes": "Published towers: 65m / 19 floors in SVU key table (same booklet says 61m elsewhere; municipal history says 60m). Estimated roof setbacks, 32.6m wings, floor/window rhythms, rail dimensions and night-lit window selection. Partial residential ensemble: only four named outline wings and the separately mapped west tower; excludes city hall, TNP, further southern residential groups, detached courtyard buildings, artwork, shop signs and vegetation. Far groups window rows and omits fine mullions, apartment terrace rails and thin rooftop surfaces; crowns, redents, avenue void and stair glazing survive. Export visual QA only; independent review and hardware/app placement remain to do.",
+      "documentation": "docs/assets/top-cities-gratte-ciel-villeurbanne.md",
+      "city": "Villeurbanne",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
