@@ -1,6 +1,7 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
+import { worldPoint } from './liberty-memorial-parts.js';
+const view = (e,t) => [worldPoint(...e),worldPoint(...t)];
 export const VIEWS = {
-  overview: [[146, 93, 192], [0, 33, 0]],
-  facade: [[0, 12, 129], [0, 22, 0]],
-  roof: [[60, 172, 60], [0, 53, 0]],
+ overview:view([120,105,150],[0,25,8]), facade:view([0,19,160],[0,31,0]),
+ back:view([-65,50,-145],[0,24,0]), roof:view([35,180,80],[0,5,10]),
+ entrance:view([22,5,76],[0,4,44]), detail:view([18,64,26],[0,64,0]), hall:view([80,20,38],[55,12,0]),
 };

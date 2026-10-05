@@ -12997,6 +12997,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "liberty-memorial",
+      "name": "Liberty Memorial (National WWI Museum)",
+      "kind": "building",
+      "location": "Kansas City, Missouri, USA",
+      "status": "ready",
+      "description": "Original Egyptian Revival memorial: tapered limestone tower, four Guardian Spirits, paired halls, sphinxes, north frieze and recessed modern museum entrance.",
+      "manifest": "/models/buildings/liberty-memorial.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/liberty-memorial/geometry.js",
+        "build": "pnpm build:top-cities-landmarks liberty-memorial --no-check",
+        "provenance": "Original texture-free procedural geometry by Codriver, 2026-10-05; no third-party mesh. Mapped outlines © OpenStreetMap contributors, ODbL 1.0. Reference photos retained only in ignored tmp: National World War I Museum and Memorial aerial, National WWI Museum, CC0; Liberty Memorial 2008, Charvex, public domain; Kansascitylibertymemorialsculpture, sculpture Edmond Amateis/photo Matthew Field, public domain in the US as labeled on Commons (checked 2026-10-05). Reference photos are not incorporated into exports.",
+        "references": [
+          {
+            "label": "Museum: dimensions, elements and architectural history",
+            "url": "https://www.theworldwar.org/explore/elements-museum-and-memorial"
+          },
+          {
+            "label": "Aerial photograph — National WWI Museum (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:National_World_War_I_Museum_and_Memorial_aerial.jpg"
+          },
+          {
+            "label": "South facade — Charvex (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Liberty_Memorial_2008.jpg"
+          },
+          {
+            "label": "Frieze detail — Matthew Field (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Kansascitylibertymemorialsculpture.jpg"
+          },
+          {
+            "label": "OSM memorial courtyard outline",
+            "url": "https://www.openstreetmap.org/way/587083043"
+          },
+          {
+            "label": "OSM tower",
+            "url": "https://www.openstreetmap.org/way/466820799"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/liberty-memorial/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=liberty-memorial&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=detail"
+          },
+          {
+            "label": "Hall",
+            "url": "/asset-preview.html?asset=liberty-memorial&view=hall"
+          }
+        ]
+      },
+      "notes": "Sourced tower 217 ft above courtyard, 36/28 ft base/top diameter, Guardian Spirits 40 ft and Great Frieze 148 x 18 ft. Mapped courtyard and paired halls use 104 degree long-axis bearing; orientation baked once. Estimated courtyard rise 6.6 m, halls 9.6 m plus parapets, stair flights and skylight. Sculpture is abstract original geometry, not a replica: four winged figures, two veiled sphinxes and rhythmic north relief. No readable inscriptions, steam plume, park lawns/trees, lower north hill or interiors. OSM tower ring is undersized compared with published base diameter; complete tower lies within courtyard replacement. Trim protrudes under 0.9 m beyond courtyard. Hardware and app placement unverified.",
+      "documentation": "docs/assets/top-cities-liberty-memorial.md",
+      "city": "Kansas City",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

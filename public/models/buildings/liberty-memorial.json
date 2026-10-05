@@ -1,0 +1,224 @@
+{
+  "id": "liberty-memorial",
+  "name": "Liberty Memorial (National WWI Museum)",
+  "kind": "building",
+  "origin": [
+    -94.585953,
+    39.081066
+  ],
+  "height": 72.7416,
+  "towerHeight": 66.1416,
+  "courtyardY": 6.6,
+  "baseDiameter": 10.9728,
+  "topDiameter": 8.5344,
+  "padM": 88,
+  "frontageBearing": 194,
+  "nearM": 650,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -94.58684,
+          39.081031
+        ],
+        [
+          -94.5868239,
+          39.0810803
+        ],
+        [
+          -94.5868518,
+          39.0810869
+        ],
+        [
+          -94.5867527,
+          39.0813764
+        ],
+        [
+          -94.5863742,
+          39.0812989
+        ],
+        [
+          -94.5862565,
+          39.081275
+        ],
+        [
+          -94.5862377,
+          39.0813313
+        ],
+        [
+          -94.5855266,
+          39.0811908
+        ],
+        [
+          -94.585543,
+          39.0811407
+        ],
+        [
+          -94.585434,
+          39.0811188
+        ],
+        [
+          -94.5850786,
+          39.0810491
+        ],
+        [
+          -94.5850625,
+          39.0810455
+        ],
+        [
+          -94.5850752,
+          39.0810111
+        ],
+        [
+          -94.5851696,
+          39.0807565
+        ],
+        [
+          -94.58519,
+          39.0807025
+        ],
+        [
+          -94.5852955,
+          39.0807241
+        ],
+        [
+          -94.5853786,
+          39.0807411
+        ],
+        [
+          -94.5854144,
+          39.0807484
+        ],
+        [
+          -94.5854475,
+          39.0807552
+        ],
+        [
+          -94.5854813,
+          39.0807621
+        ],
+        [
+          -94.5855143,
+          39.0807689
+        ],
+        [
+          -94.5855462,
+          39.0807754
+        ],
+        [
+          -94.5855936,
+          39.080612
+        ],
+        [
+          -94.5857906,
+          39.0806517
+        ],
+        [
+          -94.5858256,
+          39.0806608
+        ],
+        [
+          -94.5858444,
+          39.0806051
+        ],
+        [
+          -94.5863346,
+          39.0806991
+        ],
+        [
+          -94.586316,
+          39.0807576
+        ],
+        [
+          -94.5863488,
+          39.0807646
+        ],
+        [
+          -94.5865395,
+          39.0807992
+        ],
+        [
+          -94.5864879,
+          39.080962
+        ],
+        [
+          -94.5867399,
+          39.0810114
+        ],
+        [
+          -94.58684,
+          39.081031
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8,
+    "refs": [
+      [
+        -94.58618,
+        39.080704
+      ],
+      [
+        -94.58586,
+        39.080641
+      ],
+      [
+        -94.58571,
+        39.080665
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is estimated lower south museum entrance grade. Memorial Courtyard is y=6.6 m; tower rises 66.1416 m above it. No park hill or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "217 ft tower, 36/28 ft taper and 40 ft Guardian Spirits from the National WWI Museum. Hall heights, courtyard rise, steps, urns and abstract sculpture are photo estimates. OSM tower ring maps narrower top; full base stays within memorial envelope. Terrain pad requires separate in-app validation.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/liberty-memorial-near.glb",
+      "bytes": 1318980,
+      "triangles": 34932,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -77.6673583984375,
+          -1.1444091541079615e-7,
+          -34.55356979370117
+        ],
+        "max": [
+          76.95014190673828,
+          72.7416000366211,
+          51.307151794433594
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/liberty-memorial-far.glb",
+      "bytes": 391364,
+      "triangles": 7996,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -77.6673583984375,
+          -1.1444091541079615e-7,
+          -34.55356979370117
+        ],
+        "max": [
+          76.95014190673828,
+          72.7416000366211,
+          51.307151794433594
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/liberty-memorial/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
