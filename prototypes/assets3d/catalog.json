@@ -12625,6 +12625,109 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "christ-cathedral",
+      "name": "Christ Cathedral",
+      "kind": "building",
+      "location": "Garden Grove, Orange County, California",
+      "status": "ready",
+      "description": "Original four-pointed blue mirror-glass cathedral with folded glazing roof, fine aluminium grid, paired tall door bays and detached open-prism Crean Tower over its circular prayer chapel.",
+      "manifest": "/models/buildings/christ-cathedral.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/christ-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks christ-cathedral --no-check",
+        "provenance": "Original texture-free procedural geometry by Codriver, 2026-10-05; no external mesh or photographic asset included. Placement derived from OpenStreetMap contributors (ODbL 1.0). Commons images used only for visual comparison in ignored scratch; titles, creators and licences below. No redistribution of reference photographs.",
+        "references": [
+          {
+            "label": "Structural engineer: 128-foot triodetic shell",
+            "url": "https://www.severud.com/cultural/garden-grove-community-church/"
+          },
+          {
+            "label": "Parish: current cathedral and restoration",
+            "url": "https://www.christcathedralcalifornia.org/campus-architecture/christ-cathedral/"
+          },
+          {
+            "label": "Parish: Crean Tower and chapel",
+            "url": "https://www.christcathedralcalifornia.org/campus-architecture/crean-tower/"
+          },
+          {
+            "label": "Renovation architect: night lighting",
+            "url": "https://www.johnsonfain.com/projects/architecture/spiritual-cultural/christ-cathedral/"
+          },
+          {
+            "label": "Mapped cathedral outline",
+            "url": "https://www.openstreetmap.org/way/29280620"
+          },
+          {
+            "label": "Mapped Crean Tower outline",
+            "url": "https://www.openstreetmap.org/way/120714044"
+          },
+          {
+            "label": "File:2018 Christ Cathedral campus - Garden Grove, California 01.jpg — Farragutful — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2018_Christ_Cathedral_campus_-_Garden_Grove,_California_01.jpg"
+          },
+          {
+            "label": "File:Christ Cathedral, altar, baldachino, organ 3.jpg — Nick Manhart — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Christ_Cathedral,_altar,_baldachino,_organ_3.jpg"
+          },
+          {
+            "label": "File:Christ Cathedral Interior July 17 2019.jpg — Virtuous09 — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Christ_Cathedral_Interior_July_17_2019.jpg"
+          },
+          {
+            "label": "File:OrgelCrystalCathedral.JPG — Ischa1 at Dutch Wikipedia — Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:OrgelCrystalCathedral.JPG"
+          },
+          {
+            "label": "File:Crystal Cathedral on edge.jpg — Wattewyl — CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Crystal_Cathedral_on_edge.jpg"
+          },
+          {
+            "label": "File:Crys-ext.jpg — Arnold C (Buchanan-Hermit) — Attribution",
+            "url": "https://commons.wikimedia.org/wiki/File:Crys-ext.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/christ-cathedral/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=christ-cathedral",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=christ-cathedral&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=christ-cathedral&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=christ-cathedral&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=christ-cathedral&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=christ-cathedral&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=christ-cathedral&view=detail"
+          }
+        ]
+      },
+      "notes": "Mapped shell span about 128 × 63 m; 39.0144 m shell height follows structural engineer 128 ft, differing from parish page 120 ft. Crean Tower 71.9328 m follows parish 236 ft rather than OSM 73 m. Roof valley depths, crossing/ridges, panel spacing, bronze entrance proportions, circular chapel details and 24 staggered steel prisms are photographic estimates. Exterior opaque mirrored-glass model; no interior, four-petal shade liners, organ, statues, trees, reflecting pools or adjacent campus buildings. Carillon is a simplified 52-bell cluster, not an exact measured arrangement. Sparse lit panes suggest evening interior light rather than reproducing the complete measured lighting scheme.",
+      "documentation": "docs/assets/top-cities-christ-cathedral.md",
+      "city": "Garden Grove",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
