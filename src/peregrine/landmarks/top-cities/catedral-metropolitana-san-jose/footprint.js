@@ -1,4 +1,83 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// Cathedral only; the neighbouring Curia remains provider.
+// © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+export const FOOTPRINTS = [
+  [
+    [
+      -84.0791222,
+      9.9328957
+    ],
+    [
+      -84.0788022,
+      9.9328667
+    ],
+    [
+      -84.0787988,
+      9.9329031
+    ],
+    [
+      -84.078739,
+      9.9328977
+    ],
+    [
+      -84.0787428,
+      9.9328615
+    ],
+    [
+      -84.0786203,
+      9.9328513
+    ],
+    [
+      -84.0786131,
+      9.9329108
+    ],
+    [
+      -84.0787155,
+      9.9329201
+    ],
+    [
+      -84.0787085,
+      9.9329955
+    ],
+    [
+      -84.0783693,
+      9.932965
+    ],
+    [
+      -84.0784006,
+      9.9325861
+    ],
+    [
+      -84.0784347,
+      9.9325895
+    ],
+    [
+      -84.0785487,
+      9.9325999
+    ],
+    [
+      -84.0787476,
+      9.9326177
+    ],
+    [
+      -84.0787523,
+      9.9325711
+    ],
+    [
+      -84.0788316,
+      9.9325783
+    ],
+    [
+      -84.0788275,
+      9.9326223
+    ],
+    [
+      -84.0791447,
+      9.9326542
+    ],
+    [
+      -84.0791222,
+      9.9328957
+    ]
+  ]
+];
+export const OSM_WAYS = [264042444];

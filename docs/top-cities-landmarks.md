@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (39 released)
+## The collection (40 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -39,6 +39,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `altare-della-patria` | Altare della Patria | Rome | building |
 | `st-peters-basilica` | St. Peter's Basilica | Rome | building |
 | `teatro-nacional-de-costa-rica` | Teatro Nacional de Costa Rica | San José | building |
+| `catedral-metropolitana-san-jose` | Catedral Metropolitana de San José | San José | building |
 | `basilique-de-fourviere` | Basilique Notre-Dame de Fourvière | Lyon | building |
 | `tour-part-dieu` | Tour Part-Dieu (le Crayon) | Lyon | building |
 | `musee-des-confluences` | Musée des Confluences | Lyon | building |
