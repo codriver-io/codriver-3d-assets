@@ -11293,6 +11293,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edificio-coltejer",
+      "name": "Edificio Coltejer",
+      "kind": "building",
+      "location": "Avenida La Playa #47-42 · La Candelaria, Medellín",
+      "status": "ready",
+      "description": "Edificio Coltejer (Raúl Fajardo Moreno with Esguerra Sáenz y Samper, Vélez and Jorge Manjarrés, 1972): a 175 m concrete office tower whose long faces are a grid of vertical fins and dark glass, whose short ends are near-white with one column of square windows, and whose gables close to a needle with a dark horizontal eye and two flagstaffs. A low wing fills the bulge of the mapped footprint.",
+      "manifest": "/models/buildings/edificio-coltejer.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/edificio-coltejer/geometry.js",
+        "build": "pnpm build:top-cities-landmarks edificio-coltejer --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-04. Footprint from OpenStreetMap way 31973359 (© OpenStreetMap contributors, ODbL 1.0). Reference photographs used only to compare and kept out of the repository (Wikimedia Commons): 'Coltejer-Medellin.jpg' (laloking97, CC BY-SA 2.0), '2018 Torre Coltejer en contrapicado.jpg' (Felipe Restrepo Acosta, CC BY-SA 4.0), 'Plaza Botero7.JPG' (Staticshakedown, CC BY-SA 3.0), 'Edificio Coltejer-Medellin.jpg' (laloking97, CC BY-SA 2.0), 'BOGOTA CITY.jpg' (Kevin Castañeda Villamil, CC BY-SA 4.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · Coltejer Building",
+            "url": "https://en.wikipedia.org/wiki/Coltejer_Building"
+          },
+          {
+            "label": "Wikipedia · Centro Coltejer",
+            "url": "https://es.wikipedia.org/wiki/Centro_Coltejer"
+          },
+          {
+            "label": "Skyscraper Center · Centro Coltejer",
+            "url": "https://www.skyscrapercenter.com/building/centro-coltejer/3473"
+          },
+          {
+            "label": "Wikidata Q3057904",
+            "url": "https://www.wikidata.org/wiki/Q3057904"
+          },
+          {
+            "label": "OSM building · way 31973359",
+            "url": "https://www.openstreetmap.org/way/31973359"
+          },
+          {
+            "label": "Photographs · Wikimedia Commons category",
+            "url": "https://commons.wikimedia.org/wiki/Category:Edificio_Coltejer"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-coltejer/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=edificio-coltejer&view=overview",
+        "views": [
+          {
+            "label": "West corner, needle and finned face",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=overview"
+          },
+          {
+            "label": "Crown from the same corner",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=facade"
+          },
+          {
+            "label": "White gable, eye and flagstaffs",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=gable"
+          },
+          {
+            "label": "Roof slopes and staffs",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=roof"
+          },
+          {
+            "label": "Street corner, fins and podium",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=street"
+          },
+          {
+            "label": "The eye",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=crown"
+          },
+          {
+            "label": "Low wing on the north-east side",
+            "url": "/asset-preview.html?asset=edificio-coltejer&view=annex"
+          }
+        ]
+      },
+      "notes": "175 m to the concrete ridge, 36/37 floors and the east-west lookout on floor 34 are published. The eave at 143.2 m, the 4.5% taper, 18 bays, the annex height (14.2 m) and which long face fronts La Playa are estimated from the mapped outline and photographs. Flagstaffs are modelled at 8 m (tips at 183 m); the alcaldía's poles are about 14 m and were added later. The north wall is set in an extra 0.9 m so the fins stay inside the ring, which leaves the chord and follows a shorter edge there. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/top-cities-edificio-coltejer.md",
+      "city": "Medellín",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

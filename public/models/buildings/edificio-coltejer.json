@@ -1,0 +1,65 @@
+{
+  "id": "edificio-coltejer",
+  "name": "Edificio Coltejer",
+  "kind": "building",
+  "origin": [
+    -75.5660596,
+    6.2501496
+  ],
+  "height": 175,
+  "padM": 50,
+  "frontageBearing": 210,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The ground floor is y=0.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "175 m ridge, 36/37 floors and the east-west eye on floor 34 are published. The eave at 143.2 m, the 4.5% shaft taper, bay spacing, the annex height and which long face fronts La Playa are estimated from the mapped outline and photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edificio-coltejer-near.glb",
+      "bytes": 481404,
+      "triangles": 8785,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -25.300594329833984,
+          0,
+          -20.414936065673828
+        ],
+        "max": [
+          25.050790786743164,
+          183,
+          23.426538467407227
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edificio-coltejer-far.glb",
+      "bytes": 170780,
+      "triangles": 3033,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -25.300594329833984,
+          0,
+          -20.414936065673828
+        ],
+        "max": [
+          25.050790786743164,
+          183,
+          23.426538467407227
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-coltejer/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
