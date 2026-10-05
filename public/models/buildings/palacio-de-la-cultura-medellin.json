@@ -1,0 +1,222 @@
+{
+  "id": "palacio-de-la-cultura-medellin",
+  "name": "Palacio de la Cultura Rafael Uribe Uribe",
+  "kind": "building",
+  "origin": [
+    -75.56820644866352,
+    6.251686397758602
+  ],
+  "height": 40,
+  "corniceM": 22.4,
+  "domeRadiusM": 8.8,
+  "rotationDeg": -23,
+  "frontageBearing": 113,
+  "padM": 44,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -75.5682849,
+          6.2520288
+        ],
+        [
+          -75.5685174,
+          6.2515484
+        ],
+        [
+          -75.5682738,
+          6.2514273
+        ],
+        [
+          -75.5682724,
+          6.2514104
+        ],
+        [
+          -75.568269,
+          6.2513999
+        ],
+        [
+          -75.5682499,
+          6.2513885
+        ],
+        [
+          -75.5682334,
+          6.2513824
+        ],
+        [
+          -75.5682208,
+          6.2513816
+        ],
+        [
+          -75.5681214,
+          6.2514102
+        ],
+        [
+          -75.5680643,
+          6.2514268
+        ],
+        [
+          -75.5679297,
+          6.251738
+        ],
+        [
+          -75.5679019,
+          6.2518063
+        ],
+        [
+          -75.5679227,
+          6.2518155
+        ],
+        [
+          -75.5680647,
+          6.2518781
+        ],
+        [
+          -75.5680498,
+          6.2519173
+        ],
+        [
+          -75.5680844,
+          6.2519337
+        ],
+        [
+          -75.5681085,
+          6.2519451
+        ],
+        [
+          -75.5682849,
+          6.2520288
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -75.5682849,
+        6.2520288
+      ],
+      [
+        -75.5685174,
+        6.2515484
+      ],
+      [
+        -75.5682738,
+        6.2514273
+      ],
+      [
+        -75.5682724,
+        6.2514104
+      ],
+      [
+        -75.568269,
+        6.2513999
+      ],
+      [
+        -75.5682499,
+        6.2513885
+      ],
+      [
+        -75.5682334,
+        6.2513824
+      ],
+      [
+        -75.5682208,
+        6.2513816
+      ],
+      [
+        -75.5681214,
+        6.2514102
+      ],
+      [
+        -75.5680643,
+        6.2514268
+      ],
+      [
+        -75.5679297,
+        6.251738
+      ],
+      [
+        -75.5679019,
+        6.2518063
+      ],
+      [
+        -75.5679227,
+        6.2518155
+      ],
+      [
+        -75.5680647,
+        6.2518781
+      ],
+      [
+        -75.5680498,
+        6.2519173
+      ],
+      [
+        -75.5680844,
+        6.2519337
+      ],
+      [
+        -75.5681085,
+        6.2519451
+      ],
+      [
+        -75.5682849,
+        6.2520288
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid grade y=0; no altitude, DEM or latitude stretch baked in. Full 3D world requests a footprint-bounded median terrain pad.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present built palace with two historic wings, courtyard and octagonal assembly hall, not the unbuilt full Goovaerts proposal. Horizontal plan mapped from relation 7460245; all heights, ornament and roof profiles estimated from photographs. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palacio-de-la-cultura-medellin-near.glb",
+      "bytes": 1478744,
+      "triangles": 33471,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.75152587890625,
+          -1.984193313668038e-15,
+          -38.45899200439453
+        ],
+        "max": [
+          34.05284881591797,
+          40,
+          34.35979461669922
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palacio-de-la-cultura-medellin-far.glb",
+      "bytes": 442988,
+      "triangles": 11023,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.75152587890625,
+          -1.984193313668038e-15,
+          -38.45899200439453
+        ],
+        "max": [
+          34.05284881591797,
+          40,
+          34.35979461669922
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palacio-de-la-cultura-medellin/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
