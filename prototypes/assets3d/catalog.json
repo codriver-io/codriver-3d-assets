@@ -13080,6 +13080,105 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "torre-colpatria",
+      "name": "Torre Colpatria",
+      "kind": "building",
+      "location": "Centro Internacional · Bogotá, Colombia",
+      "status": "ready",
+      "description": "The 196 m, 50-storey Torre Colpatria: a chamfered pale concrete tube with continuous vertical fins, narrow dark glazing slots, a raised square helipad and programmable LED facade represented by a static Colombian flag at night.",
+      "manifest": "/models/buildings/torre-colpatria.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/torre-colpatria/geometry.js",
+        "build": "pnpm build:top-cities-landmarks torre-colpatria --no-check",
+        "provenance": "Original procedural Three.js geometry authored 2026-10-05 from published heights, mapped outlines and visual references; no traced mesh, scan, image or texture in source/runtime GLBs. OSM outline 955123534 and parts 767352739, 1175248695, 1175248694 from the coordinator-prepared shared-helper dossier; © OpenStreetMap contributors, ODbL 1.0. Reference photographs remain only in ignored tmp/top-cities/torre-colpatria/refs/: Colpatria desde la cra 7.JPG by Felipe Restrepo Acosta (CC BY-SA 3.0); BOGOTA CITY.jpg by KEVIN CASTAÑEDA VILLAMIL (CC BY-SA 4.0); Vista aérea Bogotá - 15 - Torre Colpatria.jpg by ProtoplasmaKid (CC BY-SA 4.0); Bandera en Torre Colpatria.jpg by EEIM (CC BY-SA 3.0); Bogotá over the night. Torre Colpatria.jpg by CARLOS ANDRES MESA GIRALDO (CC BY 2.0).",
+        "references": [
+          {
+            "label": "Operator · history, address, 50 storeys, 1979 opening and Philips LED installation",
+            "url": "https://www.davibank.com/torre-colpatria"
+          },
+          {
+            "label": "Wikipedia · Torre Colpatria, 196 m",
+            "url": "https://en.wikipedia.org/wiki/Torre_Colpatria"
+          },
+          {
+            "label": "Mapped tower outline · OSM 955123534",
+            "url": "https://www.openstreetmap.org/way/955123534"
+          },
+          {
+            "label": "Mapped mirror core, 192 m and 50 storeys · OSM 1175248695",
+            "url": "https://www.openstreetmap.org/way/1175248695"
+          },
+          {
+            "label": "Mapped helipad, 192–196 m · OSM 1175248694",
+            "url": "https://www.openstreetmap.org/way/1175248694"
+          },
+          {
+            "label": "Colpatria desde la cra 7.JPG — Felipe Restrepo Acosta (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Colpatria_desde_la_cra_7.JPG"
+          },
+          {
+            "label": "BOGOTA CITY.jpg — KEVIN CASTAÑEDA VILLAMIL (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:BOGOTA_CITY.jpg"
+          },
+          {
+            "label": "Vista aérea Bogotá - 15 - Torre Colpatria.jpg — ProtoplasmaKid (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_Bogot%C3%A1_-_15_-_Torre_Colpatria.jpg"
+          },
+          {
+            "label": "Bandera en Torre Colpatria.jpg — EEIM (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bandera_en_Torre_Colpatria.jpg"
+          },
+          {
+            "label": "Bogotá over the night. Torre Colpatria.jpg — CARLOS ANDRES MESA GIRALDO (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_over_the_night._Torre_Colpatria.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/torre-colpatria/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=torre-colpatria",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=torre-colpatria&view=top"
+          }
+        ]
+      },
+      "notes": "Sourced 196 m total and 50 storeys; OSM roof 192 m. Core plan regularised within approximately 0.3 m to 30.8 × 28.8 m with four chamfered corners; rotation −11.3515° from east is baked from two helipad control points. Fin count/relief, 3.76 m floor pitch, window divisions, entrance trim, observation guardrail, helipad support and marking, roof plant and 30–182 m static flag lighting are estimates from photographs. Far keeps all fins, floor bands, chamfers, helipad and flag colours; omits railings, mullions, roof plant and sparse office lights. Adjacent seven-storey Edificio Colpatria stays provider geometry. Rooftop wordmarks and the live LED animation are omitted. Night lighting uses named self-lit materials; daytime LED hardware is neutral dark glass. No app placement or Tesla hardware measurements yet.",
+      "documentation": "docs/assets/top-cities-torre-colpatria.md",
+      "city": "Bogotá",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
