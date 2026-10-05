@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (38 released)
+## The collection (39 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -44,6 +44,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `musee-des-confluences` | Musée des Confluences | Lyon | building |
 | `gratte-ciel-villeurbanne` | Gratte-Ciel de Villeurbanne | Villeurbanne | building |
 | `torre-colpatria` | Torre Colpatria | Bogotá | building |
+| `catedral-primada-de-colombia` | Catedral Primada de Colombia | Bogotá | building |
 | `liberty-memorial` | Liberty Memorial (National WWI Museum) | Kansas City | building |
 | `christopher-s-bond-bridge` | Christopher S. Bond Bridge | Kansas City | bridge, road-fitted |
 
