@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { copyFile, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { build } from 'esbuild';
@@ -24,6 +26,14 @@ export async function buildAssetCatalogPreview() {
   await cp(resolve(ROOT,'site'),out,{recursive:true});
   await writeFile(resolve(out,'robots.txt'),'User-agent: *\nAllow: /\n');
   for(const name of (await readdir(out)).filter((n)=>n.endsWith('.html'))){const file=resolve(out,name);await writeFile(file,withAnalytics(await readFile(file,'utf8')));}
+  // Cache-bust the pages' own scripts and stylesheets: browsers keep /asset-catalog.js for hours, so a deploy
+  // would otherwise not show until the cache expires. Each local .js/.css reference gets ?v=<content hash>.
+  const version=async(path)=>createHash('sha256').update(await readFile(resolve(out,path.replace(/^\//,'')))).digest('hex').slice(0,10);
+  for(const name of (await readdir(out)).filter((n)=>n.endsWith('.html'))){
+    const file=resolve(out,name);let html=await readFile(file,'utf8');
+    for(const m of [...html.matchAll(/(src|href)="(\/[^"?#]+\.(?:js|css))"/g)])if(existsSync(resolve(out,m[2].slice(1))))html=html.replace(m[0],`${m[1]}="${m[2]}?v=${await version(m[2])}"`);
+    await writeFile(file,html);
+  }
   console.log(`Public library built: ${catalog.assets.length} models in dist/`);
 }
 if(process.argv[1]&&resolve(process.argv[1])===resolve(ROOT,'scripts/build-asset-catalog.mjs'))await buildAssetCatalogPreview();
