@@ -11067,6 +11067,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "puerta-de-alcala",
+      "name": "Puerta de Alcalá",
+      "kind": "building",
+      "location": "Plaza de la Independencia, Madrid",
+      "status": "ready",
+      "description": "Francesco Sabatini's Puerta de Alcalá (1769–1778) at the Plaza de la Independencia: a granite triumphal arch with five openings, Ionic columns on the east front, a REGE CAROLO III tablet, and a pediment whose sculpture reaches 23.79 m.",
+      "manifest": "/models/buildings/puerta-de-alcala.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/puerta-de-alcala/geometry.js",
+        "build": "pnpm build:top-cities-landmarks puerta-de-alcala",
+        "provenance": "Original procedural geometry. Footprint and axis from OpenStreetMap way 174805987 and parts 323039763, 323039764, 323039766, 323039769, 323039771, 323039772 (© OpenStreetMap contributors, ODbL 1.0). Height 23.79 m, width 43.07 m, depth 11.74 m and opening heights 9.28 m / 6.10 m from the Ayuntamiento de Madrid restoration survey; Wikipedia's infobox is the lower 19.50 m figure. Photographs used only as local comparison images, not shipped: Puerta de Alcalá 2025 (Fernando Pascullo, CC BY-SA 4.0); east elevation and pediment, 2017 (Diego Delso, CC BY-SA 4.0); oblique 2024 (kallerna, CC BY-SA 4.0). No third-party mesh, scan, photograph or texture is in the GLBs.",
+        "references": [
+          {
+            "label": "Puerta de Alcalá · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Puerta_de_Alcal%C3%A1"
+          },
+          {
+            "label": "OSM way 174805987 · triumphal arch outline",
+            "url": "https://www.openstreetmap.org/way/174805987"
+          },
+          {
+            "label": "East elevation · Diego Delso (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Puerta_de_Alcal%C3%A1,_Madrid,_Espa%C3%B1a,_2017-05-18,_DD_14.jpg"
+          },
+          {
+            "label": "Pediment · Diego Delso (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Puerta_de_Alcal%C3%A1,_Madrid,_Espa%C3%B1a,_2017-05-18,_DD_13.jpg"
+          },
+          {
+            "label": "Puerta de Alcalá 2025 · Fernando Pascullo (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Puerta_de_Alcal%C3%A1_2025.jpg"
+          },
+          {
+            "label": "Oblique, 2024 · kallerna (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Puerta_de_Alcal%C3%A1_2024_2.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/puerta-de-alcala/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=puerta-de-alcala&view=overview",
+        "views": [
+          {
+            "label": "From the south-east",
+            "url": "/asset-preview.html?asset=puerta-de-alcala&view=overview"
+          },
+          {
+            "label": "East front and inscription",
+            "url": "/asset-preview.html?asset=puerta-de-alcala&view=facade"
+          },
+          {
+            "label": "West front",
+            "url": "/asset-preview.html?asset=puerta-de-alcala&view=west"
+          },
+          {
+            "label": "Pediment and attic",
+            "url": "/asset-preview.html?asset=puerta-de-alcala&view=roof"
+          },
+          {
+            "label": "Street, from the south-east",
+            "url": "/asset-preview.html?asset=puerta-de-alcala&view=street"
+          },
+          {
+            "label": "REGE CAROLO III tablet",
+            "url": "/asset-preview.html?asset=puerta-de-alcala&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: tip 23.79 m, published width 43.07 m and depth 11.74 m, doors 6.10 m. The survey side opening is 9.28 m and OSM puts a cornice near 15.24 m; using both left the arches under a blank belt. The model keeps semicircular arches (spring 10.05 m, side crown 12.63 m, central crown 13.35 m) and a cornice at 16.60 m, so the entablature sits on the capitals. The wall is 42.3 m so the chamfered outline contains it, and the through-depth is about 11.1 m at the column noses. The pediment projects about 0.85 m, with a dark tympanum and a narrow stacked coat of arms whose finial is still 23.79 m. Reliefs are recessed granite, not limestone. The inscription is east only. Estimated: column diameters, volutes and the block sculpture. The rainbow night photograph was not used as the lighting.",
+      "documentation": "docs/assets/top-cities-puerta-de-alcala.md",
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
