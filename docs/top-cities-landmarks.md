@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (28 released)
+## The collection (29 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -34,6 +34,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `arcul-de-triumf` | Arcul de Triumf | Bucharest | building |
 | `colosseum` | Colosseum | Rome | building |
 | `altare-della-patria` | Altare della Patria | Rome | building |
+| `teatro-nacional-de-costa-rica` | Teatro Nacional de Costa Rica | San José | building |
 | `basilique-de-fourviere` | Basilique Notre-Dame de Fourvière | Lyon | building |
 | `tour-part-dieu` | Tour Part-Dieu (le Crayon) | Lyon | building |
 

@@ -12819,6 +12819,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "teatro-nacional-de-costa-rica",
+      "name": "Teatro Nacional de Costa Rica",
+      "kind": "building",
+      "location": "San José",
+      "status": "ready",
+      "description": "Original texture-free exterior of San José’s 1897 national theatre: nine upper façade arches, rusticated entrance, balcony, triangular pediment and three allegories, red roofs and tall rear barrel-crowned stage house.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/teatro-nacional-de-costa-rica/geometry.js",
+        "build": "pnpm build:top-cities-landmarks teatro-nacional-de-costa-rica",
+        "provenance": "Original procedural geometry authored for Codriver on 2026-10-05; OSM way 24857113 placement © OpenStreetMap contributors (ODbL 1.0). Observational references only: Costa Rica-Teatro Nacional.JPG, Andres Alvarez, CC BY-SA 3.0; Teatro Nacional at Night.JPG, Andreas C. Vogt, CC BY-SA 4.0; official TNCR fronton_tncr2014 elevated photograph, photographer/licence unspecified (reference-only, no redistribution). Photos kept in ignored scratch and never embedded in models; no third-party mesh, texture or traced geometry.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/National_Theatre_of_Costa_Rica"
+          },
+          {
+            "label": "Official theatre: inauguration in 1897, construction 1890–1897",
+            "url": "https://www.teatronacional.go.cr/Seccion/101/antecedentes"
+          },
+          {
+            "label": "OSM mapped building way 24857113",
+            "url": "https://www.openstreetmap.org/way/24857113"
+          },
+          {
+            "label": "Day façade — Andres Alvarez, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Costa_Rica-Teatro_Nacional.JPG"
+          },
+          {
+            "label": "Night façade — Andreas C. Vogt, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Teatro_Nacional_at_Night.JPG"
+          },
+          {
+            "label": "Official elevated exterior photograph, reference-only",
+            "url": "https://teatronacional.go.cr/Comunicados/detalle/119/teatro-nacional-de-costa-rica-estreno-sitio-web"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/teatro-nacional-de-costa-rica/geometry.js"
+      },
+      "notes": "Mapped 72.74 × 32.46 m envelope, west frontage bearing 263.7° from two OSM corner control points, rotation baked once; all heights estimated (14.3 m side cornice, 18.05 m pediment, 26 m rear barrel crown). Sculpture/relief is stylised, not anatomically detailed; side/rear windows and stage-house height/profile estimated from limited references. Spanish inscription in near only. Forecourt, fence, temporary entrance sculpture, interiors, surrounding trees and neighbouring buildings excluded. No Tesla hardware measurement or app/terrain lifecycle QA; independent coordinator review pending.",
+      "documentation": "docs/assets/top-cities-teatro-nacional-de-costa-rica.md",
+      "manifest": "/models/buildings/teatro-nacional-de-costa-rica.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=back"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=teatro-nacional-de-costa-rica&view=top"
+          }
+        ]
+      },
+      "city": "San José",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
