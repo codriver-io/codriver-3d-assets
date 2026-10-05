@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (18 released)
+## The collection (19 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `palacio-real-de-madrid` | Palacio Real de Madrid | Madrid | building |
 | `puerta-de-alcala` | Puerta de Alcalá | Madrid | building |
 | `reunion-tower` | Reunion Tower | Dallas | building |
+| `bank-of-america-plaza-dallas` | Bank of America Plaza | Dallas | building |
 | `margaret-hunt-hill-bridge` | Margaret Hunt Hill Bridge | Dallas | bridge, road-fitted |
 | `washington-monument` | Washington Monument | Washington | building |
 | `united-states-capitol` | United States Capitol | Washington | building |

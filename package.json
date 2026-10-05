@@ -43,6 +43,7 @@
     "test:geometry": "node --test src/peregrine/landmarks/paris-fidelity.test.js"
   },
   "dependencies": {
+    "polygon-clipping": "^0.15.7",
     "three": "0.170.0"
   },
   "devDependencies": {

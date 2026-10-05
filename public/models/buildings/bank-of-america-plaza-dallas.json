@@ -1,0 +1,65 @@
+{
+  "id": "bank-of-america-plaza-dallas",
+  "name": "Bank of America Plaza",
+  "kind": "building",
+  "origin": [
+    -96.803901097,
+    32.780014871
+  ],
+  "height": 280.7,
+  "padM": 43,
+  "frontageBearing": 167,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid foundation, no terrain, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "280.7 m architectural height; OSM tower and stepped upper outlines. Facade modules, crown step elevations, lobby doors and equipment are approximated from photos. Default night lighting is green; real programmable lighting varies. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bank-of-america-plaza-dallas-near.glb",
+      "bytes": 1306168,
+      "triangles": 25008,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -28.48259925842285,
+          0,
+          -32.209720611572266
+        ],
+        "max": [
+          28.43795394897461,
+          280.70001220703125,
+          32.21546173095703
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bank-of-america-plaza-dallas-far.glb",
+      "bytes": 196164,
+      "triangles": 4032,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.41708755493164,
+          0,
+          -32.1522102355957
+        ],
+        "max": [
+          28.463186264038086,
+          280.70001220703125,
+          32.21546173095703
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-america-plaza-dallas/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
