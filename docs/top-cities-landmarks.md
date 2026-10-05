@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (25 released)
+## The collection (26 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -27,6 +27,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `lincoln-memorial` | Lincoln Memorial | Washington | building |
 | `arlington-memorial-bridge` | Arlington Memorial Bridge | Washington | bridge, road-fitted |
 | `edificio-coltejer` | Edificio Coltejer | Medellín | building |
+| `catedral-metropolitana-de-medellin` | Catedral Metropolitana de Medellín | Medellín | building |
 | `old-orange-county-courthouse` | Old Orange County Courthouse | Santa Ana | building |
 | `palace-of-the-parliament` | Palace of the Parliament | Bucharest | building |
 | `arcul-de-triumf` | Arcul de Triumf | Bucharest | building |

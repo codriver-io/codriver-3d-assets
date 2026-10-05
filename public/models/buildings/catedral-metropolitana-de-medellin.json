@@ -1,0 +1,156 @@
+{
+  "id": "catedral-metropolitana-de-medellin",
+  "name": "Catedral Metropolitana de Medellín",
+  "kind": "building",
+  "origin": [
+    -75.56394147086847,
+    6.254024779938192
+  ],
+  "height": 53.2,
+  "padM": 65,
+  "frontageBearing": 211.35,
+  "rotationDeg": -31.35,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -75.563963,
+          6.2535209
+        ],
+        [
+          -75.5639224,
+          6.2535869
+        ],
+        [
+          -75.5639718,
+          6.2536169
+        ],
+        [
+          -75.5637707,
+          6.2539438
+        ],
+        [
+          -75.5636669,
+          6.2538807
+        ],
+        [
+          -75.5635728,
+          6.2540337
+        ],
+        [
+          -75.5635967,
+          6.2540482
+        ],
+        [
+          -75.5634708,
+          6.2542552
+        ],
+        [
+          -75.5639386,
+          6.2545397
+        ],
+        [
+          -75.5641387,
+          6.2542123
+        ],
+        [
+          -75.5640757,
+          6.254174
+        ],
+        [
+          -75.5643105,
+          6.2537923
+        ],
+        [
+          -75.5643548,
+          6.2538192
+        ],
+        [
+          -75.5643817,
+          6.2537754
+        ],
+        [
+          -75.563963,
+          6.2535209
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -75.56394147,
+        6.25402478
+      ],
+      [
+        -75.564156,
+        6.253661
+      ],
+      [
+        -75.5637,
+        6.25394
+      ],
+      [
+        -75.5637,
+        6.25435
+      ],
+      [
+        -75.56407,
+        6.2543
+      ]
+    ],
+    "datum": "median",
+    "featherM": 7
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local flat-map grade y=0; no DEM altitude baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current brick Neo-Romanesque cathedral: sourced 53.2 m tower/cross height, 98.45 m length, 14.5 m nave and 63.4 m transept. Outline follows OSM; pitches, ornament and window sizes are photographic estimates. Median footprint terrain pad is declared conservatively; both app modes require separate integration verification.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/catedral-metropolitana-de-medellin-near.glb",
+      "bytes": 1719016,
+      "triangles": 36218,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -48.268890380859375,
+          -1.9073486612342094e-7,
+          -56.833805084228516
+        ],
+        "max": [
+          51.725643157958984,
+          53.20000076293945,
+          55.694618225097656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/catedral-metropolitana-de-medellin-far.glb",
+      "bytes": 281312,
+      "triangles": 6344,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -48.268890380859375,
+          -1.9073486612342094e-7,
+          -56.833805084228516
+        ],
+        "max": [
+          51.725643157958984,
+          53.20000076293945,
+          55.694618225097656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-metropolitana-de-medellin/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

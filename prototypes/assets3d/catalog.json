@@ -12546,6 +12546,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "catedral-metropolitana-de-medellin",
+      "name": "Catedral Metropolitana de Medellín",
+      "kind": "building",
+      "location": "Villanueva, Medellín, Colombia",
+      "status": "ready",
+      "description": "Original brick Neo-Romanesque cathedral with twin 53.2 m square bell towers, open paired belfry arches, copper pyramidal roofs and crosses, triple portal, gabled choir facade and clock, clerestory, transept lantern and rear apses.",
+      "manifest": "/models/buildings/catedral-metropolitana-de-medellin.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/catedral-metropolitana-de-medellin/geometry.js",
+        "build": "pnpm build:top-cities-landmarks catedral-metropolitana-de-medellin --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-05, authored from mapped outline and architectural/photo observations; no copied mesh, scan, photograph or texture shipped. Geographic outline © OpenStreetMap contributors (ODbL 1.0). Photo references only: Fachada completa - C. de Medellín, www.hippopx.com, CC0; Vista del Parque Bolivar, Abodrocc, CC BY-SA 3.0. Other supplied sheet photographs were contextual, not geometry inputs. Context sheet sources: SajoR, Parque Bolivar-Medellin (CC BY-SA 2.5); Pastor Restrepo Maya, Medellín - Panorámica Villanueva - 1875 (public domain); Benjamín de la Calle Muñoz, Procesión del Corpus Christi por Junín (public domain).",
+        "references": [
+          {
+            "label": "Official parish: history and address",
+            "url": "https://lacatedralmedellin.org/2025/06/29/historia/"
+          },
+          {
+            "label": "Architecture, dimensions and history (Spanish Wikipedia)",
+            "url": "https://es.wikipedia.org/wiki/Catedral_Metropolitana_de_Medell%C3%ADn"
+          },
+          {
+            "label": "Mapped cathedral outline, OSM way 366050226",
+            "url": "https://www.openstreetmap.org/way/366050226"
+          },
+          {
+            "label": "Fachada completa - C. de Medellín; www.hippopx.com, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fachada_completa_-_C._de_Medell%C3%ADn.jpg"
+          },
+          {
+            "label": "Vista del Parque Bolivar; Abodrocc, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vista_del_Parque_Bolivar.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-metropolitana-de-medellin/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=back"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-de-medellin&view=plan"
+          }
+        ]
+      },
+      "notes": "53.2 m towers including 2.8 m crosses are sourced; 98.45 m nave length, 14.5 m nave width, 52 m frontage and 63.4 m transept are published dimensional references. Main massing is constrained to OSM way 366050226; OSM front/rear envelope differs slightly from published architectural measurements. Window widths, roof pitches, facade tier elevations, rear rooms, apses and ornament are photographic/architectural estimates; not a surveyed restoration model. Belfries are genuinely open through their paired arches; other windows use inset panes or shallow arched overlays; no full interior is modeled. Far retains tower apertures, clock, roof hierarchy and all eight clerestory/aisle bays, dropping fine course relief, twin arch subdivisions and corbels. Night is a dim brick/copper palette; no invented self-lit window grid. Both renderer modes and real hardware remain untested. Independent coordinator visual review remains required before release.",
+      "documentation": "docs/assets/top-cities-catedral-metropolitana-de-medellin.md",
+      "city": "Medellín",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

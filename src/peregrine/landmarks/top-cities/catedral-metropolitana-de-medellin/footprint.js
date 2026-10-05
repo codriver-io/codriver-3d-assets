@@ -1,4 +1,67 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// OSM way 366050226, fetched 2026-10-05 through the shared Overpass helper.
+// © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+export const OSM_WAYS = [366050226];
+export const FOOTPRINTS = [
+  [
+    [
+      -75.563963,
+      6.2535209
+    ],
+    [
+      -75.5639224,
+      6.2535869
+    ],
+    [
+      -75.5639718,
+      6.2536169
+    ],
+    [
+      -75.5637707,
+      6.2539438
+    ],
+    [
+      -75.5636669,
+      6.2538807
+    ],
+    [
+      -75.5635728,
+      6.2540337
+    ],
+    [
+      -75.5635967,
+      6.2540482
+    ],
+    [
+      -75.5634708,
+      6.2542552
+    ],
+    [
+      -75.5639386,
+      6.2545397
+    ],
+    [
+      -75.5641387,
+      6.2542123
+    ],
+    [
+      -75.5640757,
+      6.254174
+    ],
+    [
+      -75.5643105,
+      6.2537923
+    ],
+    [
+      -75.5643548,
+      6.2538192
+    ],
+    [
+      -75.5643817,
+      6.2537754
+    ],
+    [
+      -75.563963,
+      6.2535209
+    ]
+  ]
+];
