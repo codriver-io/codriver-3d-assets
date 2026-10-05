@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (17 released)
+## The collection (18 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -25,6 +25,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `old-orange-county-courthouse` | Old Orange County Courthouse | Santa Ana | building |
 | `palace-of-the-parliament` | Palace of the Parliament | Bucharest | building |
 | `colosseum` | Colosseum | Rome | building |
+| `basilique-de-fourviere` | Basilique Notre-Dame de Fourvière | Lyon | building |
 
 ## A landmark is a folder
 

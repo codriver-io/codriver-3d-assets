@@ -11874,6 +11874,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "basilique-de-fourviere",
+      "name": "Basilique Notre-Dame de Fourvière",
+      "kind": "building",
+      "location": "8 place de Fourvière, Lyon, France",
+      "status": "ready",
+      "description": "Lyon’s Romano-Byzantine hilltop basilica: four octagonal 48 m towers with open lanterns and crenellated crowns, a three-arched west porch, nine-bay gallery, sculptured pediment, pale stone nave under a long blue-green roof, high columned chevet with recessed upper lights and adjoining Virgin/Saint-Thomas chapel with a gilded statue.",
+      "manifest": "/models/buildings/basilique-de-fourviere.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/basilique-de-fourviere/geometry.js",
+        "build": "pnpm build:top-cities-landmarks basilique-de-fourviere --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-04; no external mesh or texture. Main basilica and all mapped roof/tower parts, plus adjoining Saint-Thomas chapel: OpenStreetMap contributors, ODbL 1.0, dossier and shared Overpass helper query. Exterior reference photographs compared only: Tim Adams, Exterior Basilica of Notre Dame de Fourvière Lyon France (2022, CC BY 3.0); Sergey Ashmarin, Church of Notre Dame de Fourviere - Lyon, France - panoramio (2012, CC BY-SA 3.0). Supplied dossier reviewed: Pierre Bossan/Joanny Séon early design drawing (Commons CC BY-SA 4.0), and five interior photographs by Jean-Christophe BENOIST (CC BY 4.0). Reference images stay in ignored scratch output and are not shipped. Independent-review correction: city-facing Fourviere Lyon photograph by Elwood j blues (2007, CC BY-SA 3.0), supplied in the reviewer sheet and ignored QA cache, compared only to correct chevet elevations and Virgin chapel rib silhouette.",
+        "references": [
+          {
+            "label": "Lyon Fête des Lumières / Office de tourisme: 86 × 35 m, towers 48 m; dates and architects",
+            "url": "https://www.fetedeslumieres.lyon.fr/fr/lieu/basilique-de-fourviere"
+          },
+          {
+            "label": "Fondation Fourvière: temporary tower restoration begins March 2026",
+            "url": "https://www.fourviere.org/fr/basilique-n-d-de-fourviere-les-travaux-de-restauration-des-quatre-tours-debutent-fin-mars-2026/"
+          },
+          {
+            "label": "OSM main basilica outline, way 29179429",
+            "url": "https://www.openstreetmap.org/way/29179429"
+          },
+          {
+            "label": "OSM all-parts basilica envelope, way 247450124",
+            "url": "https://www.openstreetmap.org/way/247450124"
+          },
+          {
+            "label": "OSM Saint-Thomas chapel, way 60752859",
+            "url": "https://www.openstreetmap.org/way/60752859"
+          },
+          {
+            "label": "West front photograph: Tim Adams, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_Basilica_of_Notre_Dame_de_Fourvi%C3%A8re_Lyon_France.jpg"
+          },
+          {
+            "label": "West/south overview and Virgin chapel: Sergey Ashmarin, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Church_of_Notre_Dame_de_Fourviere_-_Lyon,_France_-_panoramio.jpg"
+          },
+          {
+            "label": "City-facing chevet and open Virgin chapel crown: Elwood j blues, 2007, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fourviere_Lyon.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilique-de-fourviere/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=basilique-de-fourviere&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=basilique-de-fourviere&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=basilique-de-fourviere&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=basilique-de-fourviere&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=basilique-de-fourviere&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=basilique-de-fourviere&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=basilique-de-fourviere&view=detail"
+          }
+        ]
+      },
+      "notes": "Permanent completed basilica, omitting temporary 2026 scaffolding. Plan and 7° baked rotation are mapped; 48 m tower tops are sourced. Intermediate heights, roof colour/pitch, sculptural figures, window rhythm and the adjoining chapel’s 38 m gilded statue are estimates from photos. Main published 86 × 35 m is nominal: mapped roof envelope is smaller and steps/chevet footing fill the wider outline. Window panels are proud abstractions of glazing; porch/gallery and tower lanterns have real empty space. Fine carved relief, crypt entrance sculpture, interiors, cast-iron railings and scaffolding omitted. Night glowing nave glass is stylized; exact exterior floodlighting is not reproduced. Simplified chapel rectangular body sits within the mapped overall envelope; isolated details do not reproduce every minor footprint indentation. No hill geometry, absolute elevation or textures; no device-performance measurement. Independent visual reviewer pending. Review revision: chevet drum/crown raised from 24.8 m to 33.5/35.15 m, with a copper cap hidden below the stone crown, physically recessed tall windows, engaged columns, belts/cornice and a small green roof figure; Virgin chapel copper core narrowed from radius 3.75 m to 2.45 m with open pointed stone ribs/arches in both LODs. New intermediate heights remain photographic estimates. Far uses simple tapered shafts and omits minor window rings to retain the new signature details within budget; independent re-review pending.",
+      "documentation": "docs/assets/top-cities-basilique-de-fourviere.md",
+      "city": "Lyon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
