@@ -1,0 +1,108 @@
+{
+  "id": "united-states-capitol",
+  "name": "United States Capitol",
+  "kind": "building",
+  "origin": [
+    -77.0090014,
+    38.8898134
+  ],
+  "height": 87.78,
+  "padM": 125,
+  "frontageBearing": 90.12,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -77.009576,
+          38.88878
+        ],
+        [
+          -77.008325,
+          38.88878
+        ],
+        [
+          -77.008325,
+          38.890845
+        ],
+        [
+          -77.009576,
+          38.890845
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -77.00868,
+        38.88981
+      ],
+      [
+        -77.00907,
+        38.88981
+      ],
+      [
+        -77.00896,
+        38.89061
+      ],
+      [
+        -77.00896,
+        38.88902
+      ]
+    ],
+    "datum": "median",
+    "featherM": 10
+  },
+  "rotationDeg": -0.12,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the east-front plaza, the Architect of the Capitol baseline for the 288 ft height. No absolute altitude and no terrain is baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 288 ft to the Statue of Freedom, 751 ft 4 in north–south, 350 ft greatest width, dome exterior diameter 135 ft, 36 peristyle columns, 12 tholos columns; statue 19.5 ft on an 18.5 ft pedestal. The 22-column east portico, storey heights, dome profile between the sourced 135 ft diameter and 210 ft tholos balcony, window bays and west stair are estimated from the mapped outline and photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/united-states-capitol-near.glb",
+      "bytes": 1578232,
+      "triangles": 32580,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -49.2529296875,
+          -1.059638137235197e-7,
+          -114.45015716552734
+        ],
+        "max": [
+          56.21601867675781,
+          87.78300476074219,
+          114.42921447753906
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/united-states-capitol-far.glb",
+      "bytes": 320548,
+      "triangles": 6738,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -49.2529296875,
+          -4.7683716530855236e-8,
+          -114.27467346191406
+        ],
+        "max": [
+          56.21601867675781,
+          87.78300476074219,
+          114.25373077392578
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/united-states-capitol/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
