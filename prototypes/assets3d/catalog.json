@@ -12123,6 +12123,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "puerta-de-europa",
+      "name": "Puerta de Europa (KIO Towers)",
+      "kind": "building",
+      "location": "Paseo de la Castellana 189 / 216, Plaza de Castilla, Madrid, Spain",
+      "status": "ready",
+      "description": "Paired inward-leaning glass office towers: 35 m square horizontal plates, 14.3 degree opposed lean, 114.7 m roofs, silver perimeter and centre bands, horizontal thirds and diagonal flank bracing, bronze mullions, geometric tenant lettering and blue/red rooftop heliports. The full street-width gap stays open.",
+      "manifest": "/models/buildings/puerta-de-europa.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/puerta-de-europa/geometry.js",
+        "build": "pnpm build:top-cities-landmarks puerta-de-europa --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-05, with no scan, borrowed mesh, font, texture or photo in exports. Placement and complete provider envelopes from OSM ways 11103227 / 965429323 and 55 building parts via the shared Overpass helper (2026-10-05); © OpenStreetMap contributors, ODbL 1.0. Published 35 m square bases and 14.3° lean from official Madrid Tourism. Visual reference: Commons “Torres KIO (37719354701).jpg”, Deensel, CC BY 2.0 (2017 night view); and official Madrid Tourism image f_i_pg_gd_puertaeuropa_003.jpg (day front view), rights not granted for redistribution, used only as an ignored local comparison reference. The remaining dossier skyline images were not used to author facade detail.",
+        "references": [
+          {
+            "label": "Official Madrid Tourism · dimensions, materials, heliports and address",
+            "url": "https://www.esmadrid.com/en/tourist-information/torres-kio-puerta-europa"
+          },
+          {
+            "label": "Wikipedia · Gate of Europe identity and blue/red heliports",
+            "url": "https://en.wikipedia.org/wiki/Gate_of_Europe"
+          },
+          {
+            "label": "Commons night photograph · Deensel · CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Torres_KIO_(37719354701).jpg"
+          },
+          {
+            "label": "OSM east tower outline",
+            "url": "https://www.openstreetmap.org/way/11103227"
+          },
+          {
+            "label": "OSM west tower outline",
+            "url": "https://www.openstreetmap.org/way/965429323"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/puerta-de-europa/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=puerta-de-europa&view=overview",
+        "views": [
+          {
+            "label": "Twin towers from the southwest",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=overview"
+          },
+          {
+            "label": "South facade and open gap",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=facade"
+          },
+          {
+            "label": "North facade",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=back"
+          },
+          {
+            "label": "Blue and red heliports",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=roof"
+          },
+          {
+            "label": "Street-level lean",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=street"
+          },
+          {
+            "label": "Curtain wall and silver bracing",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=detail"
+          },
+          {
+            "label": "Lobby doors",
+            "url": "/asset-preview.html?asset=puerta-de-europa&view=entrance"
+          }
+        ]
+      },
+      "notes": "Official tourism gives 14.3° lean and 35 m bases (technical descriptions often round to 15°); height follows mapped roof 114.7 m plus 0.2 m heliport rather than rounded published 114 m. OSM maps 27 levels; the authored 26 facade levels follow published ground/equipment/24-office count. OSM floor centroids shift 26.4 m over 110.5 m; the published lean shifts 29.2 m over 114.7 m, so the two replacement rings are convex unions of OSM outlines and corrected structural sweeps, extending the inner crown projection by about 3 m. Facade module counts, diagonal layout/width, lobby doors, colours, lit-window distribution and original monoline tenant lettering are visual estimates. No faithful corporate logo, roof equipment, plaza monuments, street furniture, basements or neighbours. Far retains both leans, open gap, silver frame and rooftop marks with half the facade rows and one third of the pane columns. No hardware performance measurement or independent reviewer approval yet.",
+      "documentation": "docs/assets/top-cities-puerta-de-europa.md",
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
