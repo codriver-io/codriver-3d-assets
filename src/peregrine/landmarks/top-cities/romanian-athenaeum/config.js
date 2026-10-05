@@ -1,16 +1,15 @@
-// Romanian Athenaeum, Bucharest.
-// STUB: the landmark's builder replaces this file. Contract: docs/3d-top-cities-landmarks.md.
+// Ateneul Român: exterior following the 1994–2004 restoration.
 export const SPEC = {
-  id: 'romanian-athenaeum', name: "Romanian Athenaeum", kind: 'building',
-  ready: false, // true only once near/far GLBs are exported, verified and catalogued
-  origin: [26.0973, 44.4413], // approximate; the builder sets it from the mapped footprint/alignment
-  height: 41, // m to the highest point, approximate
-  padM: 60,
-  frontageBearing: 0,
+  id: 'romanian-athenaeum', name: 'Romanian Athenaeum', kind: 'building',
+  ready: true, origin: [26.0973, 44.4413], height: 31, padM: 49,
+  frontageBearing: 235.3696501104, rotation: -55.3696501104, domeDiameter: 29.16,
 };
-export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
+export const PALETTES = {
+  light: { stone: '#dfcda4', trim: '#eee1c0', roof: '#596361', glass: '#34443f', wood: '#986735', gold: '#b89848', glow: '#625b43' },
+  dark: { stone: '#888475', trim: '#b8ae91', roof: '#354447', glass: '#354b52', wood: '#695339', gold: '#a9935e', glow: '#efb85f' },
+};
 export const MANIFEST = {
-  elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude.',
-  attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Stub: not yet authored.',
+  elevationDatum: 'Local entrance grade y=0; rigid metric base, no terrain or absolute altitude baked in.',
+  attribution: 'Original procedural geometry. Mapped envelope © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
+  note: '31 m top follows detailed OSM parts and photo proportions; parent OSM and published sources instead claim 41 m. Published external dome diameter 29.16 m. Facade heights, reliefs and rear roof reconstruction are estimated. Cityscape and Full 3D world not tested yet; integration is checked separately.',
 };

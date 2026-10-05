@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (32 released)
+## The collection (33 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -32,6 +32,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `christ-cathedral` | Christ Cathedral | Garden Grove | building |
 | `palace-of-the-parliament` | Palace of the Parliament | Bucharest | building |
 | `arcul-de-triumf` | Arcul de Triumf | Bucharest | building |
+| `romanian-athenaeum` | Romanian Athenaeum | Bucharest | building |
 | `colosseum` | Colosseum | Rome | building |
 | `altare-della-patria` | Altare della Patria | Rome | building |
 | `st-peters-basilica` | St. Peter's Basilica | Rome | building |
