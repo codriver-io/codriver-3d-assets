@@ -11720,6 +11720,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "kind": "building",
+      "location": "Rome, Italy",
+      "status": "ready",
+      "description": "Original procedural model of the standing Colosseum ruin: intact northern travertine arcade and attic, missing southern outer wall, surviving inner arcades, cavea ribs and exposed hypogeum.",
+      "manifest": "/models/buildings/colosseum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/colosseum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks colosseum --no-check",
+        "provenance": "Original texture-free procedural geometry, completed 2026-10-04 from the preceding partial authoring; no external mesh, scan or photograph embedded. Dimensions from Platner and Ashby (1929). Placement and replacement outline © OpenStreetMap contributors, ODbL 1.0. Reference photos remain in ignored tmp only: Colosseo 2020.jpg — FeaturedPics, CC BY-SA 4.0; Colosseum, Rome.jpg and Colosseum, Eastern Interior.jpg — Julian Lupyan, CC0; Colosseum and Arch of Constantine seen from Palatine.jpg — Livioandronico2013, CC BY-SA 4.0; Colosseum under renovation in Rome, Italy (Ank Kumar) 03.jpg — Ank kumar, CC BY-SA 4.0. Gérôme painting in the dossier sheet is historical context only; it was not used for the standing-ruin geometry.",
+        "references": [
+          {
+            "label": "Platner and Ashby: Amphitheatrum Flavium (dimensions and structure)",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Amphitheatrum_Flavium.html"
+          },
+          {
+            "label": "OSM building multipolygon 1834818",
+            "url": "https://www.openstreetmap.org/relation/1834818"
+          },
+          {
+            "label": "Colosseo 2020 — FeaturedPics (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg"
+          },
+          {
+            "label": "Eastern Interior — Julian Lupyan (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Colosseum,_Eastern_Interior.jpg"
+          },
+          {
+            "label": "View from Palatine — Livioandronico2013 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Colosseum_and_Arch_of_Constantine_seen_from_Palatine.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colosseum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=colosseum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=colosseum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=colosseum&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=colosseum&view=roof"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=colosseum&view=south"
+          },
+          {
+            "label": "East",
+            "url": "/asset-preview.html?asset=colosseum&view=east"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=colosseum&view=detail"
+          }
+        ]
+      },
+      "notes": "Published 188 × 156 m ellipse and 48.5 m maximum wall; original surveyed outline is incomplete on the ruined south. Center and 106° major-axis bearing fitted to northern OSM arc. Replacement follows the actual multipolygon, including its inner-wall southern edge; stylobate and facade fit can overhang that outline by up to 5.1 m, without broadening the provider mask. Ruin-edge heights, arcade storey splits, engaged capitals, eastern support wedge, internal terraces and hypogeum passages are estimated. Far retains the three northern arcade orders and south facade openings, with coarser terraces and parallel hypogeum walls. No textures, individual masonry courses, scaffolding, tourists or fine railings; current visitor floor and walkways are omitted. Four material draws in each LOD; night uses subdued warm stone rather than simulated floodlight beams.",
+      "documentation": "docs/assets/top-cities-colosseum.md",
+      "city": "Rome",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
