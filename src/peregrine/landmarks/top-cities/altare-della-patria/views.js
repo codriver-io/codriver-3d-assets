@@ -1,6 +1,11 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
-export const VIEWS = {
-  overview: [[170, 109, 222], [0, 41, 0]],
-  facade: [[0, 12, 147], [0, 27, 0]],
-  roof: [[69, 202, 69], [0, 65, 0]],
+import { world } from './altare-della-patria-parts.js';
+const view=(eye,target)=>[world(eye),world(target)];
+export const VIEWS={
+  overview:view([155,115,-210],[-7,32,10]),
+  facade:view([-7,48,-250],[-7,34,18]),
+  roof:view([110,230,145],[-7,25,20]),
+  back:view([120,80,250],[0,31,38]),
+  street:view([-65,18,-180],[-7,35,15]),
+  detail:view([2,65,-25],[-7,52,37]),
+  quadriga:view([89,90,-26],[38,64,37]),
 };
