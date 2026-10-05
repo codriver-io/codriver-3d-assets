@@ -13444,6 +13444,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palacio-de-la-cultura-medellin",
+      "name": "Palacio de la Cultura Rafael Uribe Uribe",
+      "kind": "building",
+      "location": "Medellín, Antioquia, Colombia",
+      "status": "ready",
+      "description": "Original procedural present-day palace with checker masonry, a tall recessed and mullioned Gothic entrance bay with opaque stone crest, substantial stepped parapet pinnacles, elongated ribbed turret domes, octagonal assembly-hall dome and open Patio de las Azaleas.",
+      "manifest": "/models/buildings/palacio-de-la-cultura-medellin.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palacio-de-la-cultura-medellin/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palacio-de-la-cultura-medellin --no-check",
+        "provenance": "Original texture-free procedural mesh authored 2026-10-05. OSM relation 7460245 / outer way 31964639 / inner garden 514510200, © OpenStreetMap contributors (ODbL 1.0). Photo references are used for comparison only, stored in ignored tmp and never shipped. Commons: Terraza del Palacio (Kamilokardona, CC BY-SA 3.0); vista desde estación Parque Berrío (Kamilokardona, CC BY-SA 3.0); Alumbrado Medellín 2008 (Luis Pérez, CC BY 2.0); Palacio 3 (Juancllinasl, CC BY-SA 3.0); Palacio 2 (Martinduquea, CC BY-SA 3.0). Additional restoration photo: Fundación Ferrocarril de Antioquia, palace project image 11, photographer unspecified, no redistribution licence asserted; visual comparison only. No third-party mesh or photographic material retained in runtime.",
+        "references": [
+          {
+            "label": "ICPA official palace history",
+            "url": "https://culturantioquia.gov.co/palacio-de-la-cultura/"
+          },
+          {
+            "label": "Restoration foundation, plan and 2012–2015 intervention",
+            "url": "https://fundacionferrocarrildeantioquia.com/proyectos/palacio-cultura-rafael-uribe-uribe/"
+          },
+          {
+            "label": "Mapped palace relation",
+            "url": "https://www.openstreetmap.org/relation/7460245"
+          },
+          {
+            "label": "Wikipedia identity (dossier)",
+            "url": "https://en.wikipedia.org/wiki/Rafael_Uribe_Uribe_Palace_of_Culture"
+          },
+          {
+            "label": "File:Terraza del Palacio de la Cultura Rafael Uribe Uribe.JPG — Kamilokardona — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Terraza_del_Palacio_de_la_Cultura_Rafael_Uribe_Uribe.JPG"
+          },
+          {
+            "label": "File:Palacio de la Cultura Rafael Uribe Uribe, vista desde estación del metro Parque Berrío..jpg — Kamilokardona — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Cultura_Rafael_Uribe_Uribe,_vista_desde_estaci%C3%B3n_del_metro_Parque_Berr%C3%ADo..jpg"
+          },
+          {
+            "label": "File:Alumbrado Medellín 2008.jpg — Luis Pérez — CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alumbrado_Medell%C3%ADn_2008.jpg"
+          },
+          {
+            "label": "File:Palacio de la Cultura Rafael Uribe Uribe 3.JPG — Juancllinasl — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Cultura_Rafael_Uribe_Uribe_3.JPG"
+          },
+          {
+            "label": "File:Palacio de la Cultura Rafael Uribe Uribe 2.jpg — Martinduquea — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Cultura_Rafael_Uribe_Uribe_2.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palacio-de-la-cultura-medellin/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=detail"
+          },
+          {
+            "label": "Gothic entrance",
+            "url": "/asset-preview.html?asset=palacio-de-la-cultura-medellin&view=entrance"
+          }
+        ]
+      },
+      "notes": "Mapped horizontal envelope and real bearing; all vertical heights and facade counts are photo estimates, not survey measurements. Rounded turrets and cornices extend up to 2.8 m (mostly the 2.2 m turret projections) beyond the mapped wall. Rear plaster elevation and roof valleys reconstructed; carved sculpture, exact interior, fine masonry joints, dome lattice relief and iron fencing omitted. Fanlight openings are glazed panels; the courtyard and lantern are genuine open negative spaces. Costs describe exported scenes, not measured vehicle hardware. Independent-review fixes strengthen stepped street pinnacles, the recessed layered entrance bay (gable 33.6 m) and elongated turret domes (29.4 m, estimated); all survive far LOD. Reviewed exported sheets and deterministic QA have no flagged artifacts. Far costs 11,023 triangles / 8 draws / 432 KiB, close to its triangle/draw caps; modes remain untested. Final REVIEW-2 corrections remove unsupported terminal frieze blocks on all facades and replace entrance rose glazing with a shaded opaque stone coat-of-arms relief in both LODs. Heraldic relief is simplified from photographs. Final near 33,471 triangles / 8 draws / 1,444 KiB, far 11,023 / 8 / 432 KiB; all 14 focused checks and deterministic QA pass.",
+      "documentation": "docs/assets/top-cities-palacio-de-la-cultura-medellin.md",
+      "city": "Medellín",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
