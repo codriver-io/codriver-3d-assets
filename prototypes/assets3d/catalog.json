@@ -13808,6 +13808,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "catedral-metropolitana-san-jose",
+      "name": "Catedral Metropolitana de San José",
+      "kind": "building",
+      "location": "Calle Central Alfredo Volio, entre avenidas 2 y 4, San José, Costa Rica",
+      "status": "ready",
+      "description": "Original exterior model of the cathedral facing Parque Central: six-column open portico, broad stair, three arched doors, central clock below a broken curved crest, twin square open belfries with suspended bells and low green cupolas, arched nave windows and smaller side-chapel cupolas. Round tower caps follow the February 2023 reference, not the historic pointed caps.",
+      "manifest": "/models/buildings/catedral-metropolitana-san-jose.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/catedral-metropolitana-san-jose/geometry.js",
+        "build": "pnpm build:top-cities-landmarks catedral-metropolitana-san-jose --no-check",
+        "provenance": "Original procedural geometry authored for Codriver on 2026-10-05. Complete cathedral plan and orientation from OpenStreetMap way 264042444, © OpenStreetMap contributors, ODbL 1.0. Dossier exterior references compared: Metropolitan Cathedral of San José, Costa Rica (Bernard Gagnon, CC0, photographed 2023-02-11); Metropolitan Cathedral in San Jose, Costa Rica (Andy Rusch, CC BY 2.0, photographed 2011-01-09). Other dossier images were inspected on the contact sheet only: Catedral Metropolitana inner view (Leon petrosyan, CC BY-SA 4.0); METROPOLITAN CATHEDRAL, SAN JOSE, COSTA RICA (JERRYE AND ROY KLOTZ MD, CC BY-SA 3.0, older pointed caps); Sillon Presidencial Catedral XIX Museo Nacional CRI 01 2020 1889 (Mariordo, CC BY-SA 4.0, museum artifact, not modelled). No scan, tracing of a mesh, third-party geometry, photo or texture is shipped.",
+        "references": [
+          {
+            "label": "OSM cathedral footprint, way 264042444 (building=cathedral; four levels; no mapped height)",
+            "url": "https://www.openstreetmap.org/way/264042444"
+          },
+          {
+            "label": "Identity: Metropolitan Cathedral of San José, Calle Central and Avenues 2/4",
+            "url": "https://en.wikipedia.org/wiki/Metropolitan_Cathedral_of_San_Jos%C3%A9"
+          },
+          {
+            "label": "February 2023 exterior with round green tower caps: Bernard Gagnon, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Metropolitan_Cathedral_of_San_Jos%C3%A9,_Costa_Rica.jpg"
+          },
+          {
+            "label": "January 2011 facade and portico: Andy Rusch, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Metropolitan_Cathedral_in_San_Jose,_Costa_Rica.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-metropolitana-san-jose/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=facade",
+        "views": [
+          {
+            "label": "West and north overview",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=overview"
+          },
+          {
+            "label": "Clock facade and twin belfries",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=facade"
+          },
+          {
+            "label": "Portico from Calle Central",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=street"
+          },
+          {
+            "label": "East and south rear wings",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=rear"
+          },
+          {
+            "label": "Nave roofs and green cupolas",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=roof"
+          },
+          {
+            "label": "Belfry arches and curved crest",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=detail"
+          },
+          {
+            "label": "Columns and three entrance arches",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=portico"
+          },
+          {
+            "label": "Mapped plan and baked orientation",
+            "url": "/asset-preview.html?asset=catedral-metropolitana-san-jose&view=top"
+          }
+        ]
+      },
+      "notes": "Mapped: about 82 m long envelope, 27 m west portico frontage, 42 m rear envelope; west facade bearing about 275 degrees, baked once. Estimated: all heights including 34.5 m cross tips, 10.8 m nave walls, 14.4 m ridge, 30.2 m belfry cornices, 19.7 m chapel dome crowns, 1.2 m stair; column order, window rhythm, roof subdivisions, dome ribs, clock, bells and rear roof forms. Rear ancillary elevations are inferred, since the dossier has no clear rear photograph. Capitals and urns are simplified; fence, street furniture, trees, detailed sculptures, inscriptions, interior and adjoining Curia are omitted. Cornices and engaged orders project at most 1 m beyond the mapped polygon. Night windows are subdued warm self-lit approximations, not a surveyed lighting installation. Far keeps all six columns, open bell arches, clock, crosses and domes; trims become single front faces and fine flutes/ribs are removed. Independent visual review and app integration remain separate. Exported scene costs: near 32,571 triangles / 8 draws / 1,513,824 bytes (1,478 KiB); far 6,379 / 8 / 290,328 bytes (284 KiB). Geometry QA: no coplanar pairs, 0.3% back-face sweep hits (below 2% threshold), no removable attributes and matching LOD bounds.",
+      "documentation": "docs/assets/top-cities-catedral-metropolitana-san-jose.md",
+      "city": "San José",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
