@@ -1,0 +1,66 @@
+{
+  "id": "st-peters-basilica",
+  "name": "St. Peter's Basilica",
+  "kind": "building",
+  "origin": [
+    12.453372,
+    41.902166
+  ],
+  "height": 136.57,
+  "padM": 145,
+  "frontageBearing": 89.45,
+  "rotationDeg": 0.55,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0; a rigid basilica foundation, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height 136.57 m is published by the basilica; facade 114.69 m wide and 45.55 m high is published in the dossier/Wikipedia. Dome axis, outer envelope and bearing are mapped. Intermediate elevations, facade bay sizes, dome profile and sculpture are estimated from reference photographs. Piazza, Bernini colonnades and sacristy excluded. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/st-peters-basilica-near.glb",
+      "bytes": 1535072,
+      "triangles": 36640,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -80.3680419921875,
+          -7.629394644936838e-7,
+          -78.06794738769531
+        ],
+        "max": [
+          137.14796447753906,
+          136.57000732421875,
+          79.04845428466797
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/st-peters-basilica-far.glb",
+      "bytes": 460740,
+      "triangles": 10707,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -80.3680419921875,
+          -7.629394644936838e-7,
+          -78.06794738769531
+        ],
+        "max": [
+          137.14796447753906,
+          136.57000732421875,
+          79.04845428466797
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-peters-basilica/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

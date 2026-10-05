@@ -12902,6 +12902,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-peters-basilica",
+      "name": "St. Peter's Basilica",
+      "kind": "building",
+      "location": "Piazza San Pietro · Vatican City, Rome metropolitan area",
+      "status": "ready",
+      "description": "Present Renaissance and Baroque basilica: ribbed ogival dome and open-column lantern, paired drum columns, four smaller domes, Latin-cross nave and apses, Maderno facade with giant Corinthian columns, entrance porch, central pediment, thirteen rooftop figures and twin clocks.",
+      "manifest": "/models/buildings/st-peters-basilica.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-peters-basilica/geometry.js",
+        "build": "pnpm build:top-cities-landmarks st-peters-basilica --no-check",
+        "provenance": "Original procedural texture-free geometry authored by Codriver on 2026-10-05; no scan, photograph or third-party mesh shipped. OSM way 244159210 and associated basilica building parts © OpenStreetMap contributors, ODbL 1.0. Reference-only photos viewed in ignored scratch: Basilica di San Pietro in Vaticano September 2015-1a.jpg (Alvesgaspar, CC BY-SA 4.0); PonteSantAngeloRom.jpg (Rabax63, CC BY-SA 4.0); Aerial shot of St. Peters Basilica, the Vatican, Rome, by Fedele Azari (Getty 108JM1), Fedele Azari / Getty, CC0 1.0 (1920s, massing reference only); Saint Peters Basilica Dome 2020 P04.jpg (Fallaner, CC BY-SA 4.0). Dossier interior photographs were visible on the supplied reference sheet, but no interior is modelled.",
+        "references": [
+          {
+            "label": "Official basilica: 136.57 m to the cross",
+            "url": "https://www.basilicasanpietro.va/en/faq/what-is-the-height-of-st-peters-dome"
+          },
+          {
+            "label": "Official basilica: dome history and ogival double shell",
+            "url": "https://www.basilicasanpietro.va/en/san-pietro/the-dome"
+          },
+          {
+            "label": "Wikipedia: facade dimensions and thirteen statues",
+            "url": "https://en.wikipedia.org/wiki/St._Peter%27s_Basilica"
+          },
+          {
+            "label": "Mapped basilica envelope, OSM way 244159210",
+            "url": "https://www.openstreetmap.org/way/244159210"
+          },
+          {
+            "label": "Facade photo, Alvesgaspar, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg"
+          },
+          {
+            "label": "Distant city view, Rabax63, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:PonteSantAngeloRom.jpg"
+          },
+          {
+            "label": "Historical aerial, Fedele Azari / Getty, CC0 1.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_St._Peter%27s_Basilica,_the_Vatican,_Rome,_by_Fedele_Azari_(Getty_108JM1).jpg"
+          },
+          {
+            "label": "Rear dome exterior, Fallaner, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Saint_Peter%27s_Basilica_Dome_2020_P04.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-peters-basilica/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-peters-basilica&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=roof"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=rear"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=detail"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=dome"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=st-peters-basilica&view=top"
+          }
+        ]
+      },
+      "notes": "Published dome height and facade dimensions; mapped outline, dome axis and bearing. All intermediate heights, external dome profile, openings, Corinthian carving, roof geometry and statue proportions are estimates. Sculptures and clock scrolls are abstracted. No interior or piazza colonnade; lower roofs and service projections are simplified. Shaded glazing and warm lantern/drum windows define night treatment rather than an exact lighting survey. No Tesla hardware benchmark or app placement certification. Exported near: 36640 triangles / 8 draws / 1534544 bytes; far: 10707 / 8 / 460212. Far is above the preferred 3–8k triangle target but below all hard budgets. Builder inspected tmp/top-cities/shots/st-peters-basilica/st-peters-basilica-final-contact.jpg (reference photos plus 32 exported views, both LODs/themes); independent review remains required. Focused raycast tests and QA metrics pass, including zero back-face hits. Cornices project about 1.5 m beyond some wall lines. No exact night illumination survey.",
+      "documentation": "docs/assets/top-cities-st-peters-basilica.md",
+      "city": "Rome",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
