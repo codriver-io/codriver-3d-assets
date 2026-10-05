@@ -11546,6 +11546,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "united-states-capitol",
+      "name": "United States Capitol",
+      "kind": "building",
+      "location": "Washington, D.C., United States",
+      "status": "ready",
+      "description": "Original marble Capitol with Senate and House wings, open classical galleries, ribbed cast-iron dome, windowed attic, twelve-column tholos and the Statue of Freedom.",
+      "manifest": "/models/buildings/united-states-capitol.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/united-states-capitol/geometry.js",
+        "build": "pnpm build:top-cities-landmarks united-states-capitol --no-check",
+        "provenance": "Original texture-free procedural geometry, completed from the previous author’s partial source; no external mesh or image shipped. OSM geometry © OpenStreetMap contributors, ODbL 1.0. Reference photographs retained only in ignored scratch: Ted Eytan, 2020.09.19 Grieving for Ruth Bader Ginsburg (CC BY-SA 2.0); Bernini123, Facade of Senate chamber (CC0); Carol M. Highsmith, Aerial view United States Capitol building 04492v (public domain; crop by Cristiano Tomás); Emw, US Capitol during government shutdown east side panorama 2013-10-06 (CC BY-SA 3.0). Historical dossier photos were used only for the reference comparison, not the current-version dimensions.",
+        "references": [
+          {
+            "label": "Architect of the Capitol: building dimensions and history",
+            "url": "https://www.aoc.gov/explore-capitol-campus/buildings-grounds/capitol-building"
+          },
+          {
+            "label": "Architect of the Capitol: dome dimensions, columns and statue",
+            "url": "https://www.aoc.gov/what-we-do/projects/dome-restoration-project/by-the-numbers"
+          },
+          {
+            "label": "Architect of the Capitol: Statue of Freedom",
+            "url": "https://www.aoc.gov/explore-capitol-campus/art/statue-freedom"
+          },
+          {
+            "label": "OpenStreetMap building outline 66418809",
+            "url": "https://www.openstreetmap.org/way/66418809"
+          },
+          {
+            "label": "Ted Eytan, dome and west front (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2020.09.19_Grieving_for_Ruth_Bader_Ginsburg,_Washington,_DC_USA263_66239_(50360217701).jpg"
+          },
+          {
+            "label": "Bernini123, Senate facade (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Facade_of_Senate_chamber.jpg"
+          },
+          {
+            "label": "Carol M. Highsmith, aerial west front (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_view,_United_States_Capitol_building_04492v_(cropped).jpg"
+          },
+          {
+            "label": "Emw, east-front panorama (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:US_Capitol_during_government_shutdown;_east_side,_panorama;_Washington,_DC;_2013-10-06.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/united-states-capitol/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=united-states-capitol",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=overview"
+          },
+          {
+            "label": "East front",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=facade"
+          },
+          {
+            "label": "Mall front",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=west"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=street"
+          },
+          {
+            "label": "Dome detail",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=dome"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=united-states-capitol&view=portico"
+          }
+        ]
+      },
+      "notes": "AOC height 288 ft (87.7824 m), north–south length 751 ft 4 in (229.0064 m), greatest width including approaches 350 ft (106.68 m), exterior dome diameter 135 ft (41.148 m), 36 peristyle and 12 tholos columns. Storey divisions, attic and shell profile, window rhythm and porch count/depth estimated against photographs and mapped outline. Simplified pediment relief, capitals, statue and chamber roofs; no interiors, roof light courts, flags, Visitor Center skylights or Olmsted lawn terraces. Far retains all major column galleries, dome stages and statue; base/capital mouldings and balusters simplified. Independent visual review and in-app terrain/placement review remain with coordinator.",
+      "documentation": "docs/assets/top-cities-united-states-capitol.md",
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
