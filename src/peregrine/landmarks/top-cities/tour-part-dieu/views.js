@@ -1,6 +1,10 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
 export const VIEWS = {
-  overview: [[304, 202, 390], [0, 83, 0]],
-  facade: [[0, 12, 248], [0, 55, 0]],
-  roof: [[119, 370, 119], [0, 132, 0]],
+  overview: [[-180, 152, 210], [0, 82, 0]],
+  facade: [[-240, 72, 20], [0, 82, 0]],
+  back: [[210, 94, -180], [0, 83, 0]],
+  roof: [[-65, 209, 76], [0, 141, 0]],
+  street: [[-94, 3, 6], [0, 63, 0]],
+  entrance: [[-38, 5, 0], [-20, 4, 0]],
+  detail: [[-47, 82, 12], [-21, 79, 0]],
+  plan: [[0, 250, 0], [0, 0, 0]],
 };
