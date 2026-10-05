@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (34 released)
+## The collection (35 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `catedral-metropolitana-de-medellin` | Catedral Metropolitana de Medellín | Medellín | building |
 | `old-orange-county-courthouse` | Old Orange County Courthouse | Santa Ana | building |
 | `christ-cathedral` | Christ Cathedral | Garden Grove | building |
+| `mission-inn` | Mission Inn | Riverside | building |
 | `palace-of-the-parliament` | Palace of the Parliament | Bucharest | building |
 | `arcul-de-triumf` | Arcul de Triumf | Bucharest | building |
 | `romanian-athenaeum` | Romanian Athenaeum | Bucharest | building |
