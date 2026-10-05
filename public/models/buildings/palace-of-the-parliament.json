@@ -1,0 +1,239 @@
+{
+  "id": "palace-of-the-parliament",
+  "name": "Palace of the Parliament",
+  "kind": "building",
+  "origin": [
+    26.08735814,
+    44.42747051
+  ],
+  "height": 89.5,
+  "padM": 210,
+  "frontageBearing": 93.3,
+  "nearM": 800,
+  "rangeM": 2500,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          26.0862503,
+          44.4269342
+        ],
+        [
+          26.0862356,
+          44.4267292
+        ],
+        [
+          26.086044,
+          44.4265924
+        ],
+        [
+          26.0858857,
+          44.4265977
+        ],
+        [
+          26.0858695,
+          44.4263483
+        ],
+        [
+          26.0862236,
+          44.4263365
+        ],
+        [
+          26.0862297,
+          44.4264205
+        ],
+        [
+          26.0864318,
+          44.4265549
+        ],
+        [
+          26.0871305,
+          44.4265282
+        ],
+        [
+          26.0871258,
+          44.4264609
+        ],
+        [
+          26.0875522,
+          44.4264469
+        ],
+        [
+          26.0875565,
+          44.4265055
+        ],
+        [
+          26.0881763,
+          44.4264817
+        ],
+        [
+          26.0883727,
+          44.4263384
+        ],
+        [
+          26.0883578,
+          44.4262087
+        ],
+        [
+          26.088726,
+          44.4261898
+        ],
+        [
+          26.0887491,
+          44.4264415
+        ],
+        [
+          26.0886166,
+          44.4264495
+        ],
+        [
+          26.088416,
+          44.4266165
+        ],
+        [
+          26.0884864,
+          44.427456
+        ],
+        [
+          26.0885482,
+          44.4282727
+        ],
+        [
+          26.0887818,
+          44.4284299
+        ],
+        [
+          26.088925,
+          44.4284254
+        ],
+        [
+          26.0889476,
+          44.4286736
+        ],
+        [
+          26.0886063,
+          44.4286878
+        ],
+        [
+          26.088592,
+          44.4285566
+        ],
+        [
+          26.0883068,
+          44.4283882
+        ],
+        [
+          26.0875163,
+          44.4284201
+        ],
+        [
+          26.0866583,
+          44.4284612
+        ],
+        [
+          26.086429,
+          44.428654
+        ],
+        [
+          26.0864437,
+          44.4287723
+        ],
+        [
+          26.0861413,
+          44.4287901
+        ],
+        [
+          26.0860858,
+          44.4287934
+        ],
+        [
+          26.0860533,
+          44.4285325
+        ],
+        [
+          26.0862088,
+          44.4285252
+        ],
+        [
+          26.0864385,
+          44.4283247
+        ],
+        [
+          26.0864002,
+          44.4278533
+        ],
+        [
+          26.0860291,
+          44.4278672
+        ],
+        [
+          26.0860094,
+          44.4275645
+        ],
+        [
+          26.0859911,
+          44.4272961
+        ],
+        [
+          26.0862828,
+          44.4272831
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 18
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the terrace at the foot of the walls on Dealul Spirii (Dealul Arsenalului). The civic gardens step down toward Bulevardul Unirii and are not part of the model. No absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: outer ring of relation 2230391, architectural height 84 m, plan about 270 m by 240–245 m (Wikipedia), 12 floors, Anca Petrescu, limestone, east front to Unirii. OSM tags the central part 86 m and a broad middle part 58 m; the relation height 29 m is not used. The 58 m part anchors the first broad setback tier; a second tier reaches 66 m before the 84 m central crown. Estimated: bastion parapet 42.4 m, outer wings 48 m, setback envelopes and 66 m tier, storey heights, the 6.8 m recess, the giant-order bay, column size, cornice profile, courtyard openness, and the flagpole above 84 m.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palace-of-the-parliament-near.glb",
+      "bytes": 1220028,
+      "triangles": 23361,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -119.76700751800033,
+          0,
+          -147.83598999694968
+        ],
+        "max": [
+          127.025201645223,
+          89.5,
+          143.31364602791447
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palace-of-the-parliament-far.glb",
+      "bytes": 475312,
+      "triangles": 8875,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -119.76700751800033,
+          0,
+          -147.83598999694968
+        ],
+        "max": [
+          127.025201645223,
+          89.5,
+          143.31364602791447
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palace-of-the-parliament/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
