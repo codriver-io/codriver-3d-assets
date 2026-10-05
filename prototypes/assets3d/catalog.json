@@ -12467,6 +12467,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "arcul-de-triumf",
+      "name": "Arcul de Triumf",
+      "kind": "building",
+      "location": "Bucharest, Romania",
+      "status": "ready",
+      "description": "Original procedural model of Petre Antonescu’s restored stone triumphal arch: open barrel passage, medallions, relief frieze, dentilled cornice, stepped attic and Romanian flag.",
+      "manifest": "/models/buildings/arcul-de-triumf.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/arcul-de-triumf/geometry.js",
+        "build": "pnpm build:top-cities-landmarks arcul-de-triumf --no-check",
+        "provenance": "Original parameterized Three.js geometry authored 2026-10-05; no scan, traced mesh, texture or photograph redistributed. Geographic outline and 29 mapped monument ways from the shared-helper dossier dated 2026-10-04, © OpenStreetMap contributors (ODbL 1.0). Reference photographs remain ignored and reference-only: Diego Delso, Arco de Triunfo, Bucarest, Rumanía, 2016-05-30, DD 24, CC BY-SA 4.0 (English Wikipedia warns architectural freedom of panorama is US-only); Rsandu, Crown lateral Arch of Triumph Bucharest, CC BY-SA 4.0; Alexandra Belu, Arcul de Triumf-Bucuresti, CC BY-SA 3.0; Illustrated London News staff, Russians’ triumphal entry in Bucharest, public domain (historical arch, not current design); Bucuresti Arcul de Triumf.JPG, author unspecified in dossier, CC BY-SA 3.0; David Stanley, Arcul de Triumf (24396923048), CC BY 2.0. Photo licensing is not a grant to distribute a copied sculpture: relief here is original simplified symbolism.",
+        "references": [
+          {
+            "label": "Restoration architect Aurora Târșoagă, Revista Monumentelor Istorice 1/2017, pp.118–127 (dimensions, restored royal portraits, cornice and attic levels)",
+            "url": "https://www.revistamonumenteloristorice.ro/fisiere/RMI-2017_118-Tarsoaga.pdf"
+          },
+          {
+            "label": "PSC: Petre Antonescu, 27 m overall, published 25 × 11.5 m foundation",
+            "url": "https://www.psc.ro/stiri-psc/arcul-de-triumf-din-bucuresti"
+          },
+          {
+            "label": "Diego Delso frontal photograph and checked CC BY-SA 4.0 / US-only architectural notice",
+            "url": "https://en.wikipedia.org/wiki/File:Arco_de_Triunfo,_Bucarest,_Ruman%C3%ADa,_2016-05-30,_DD_24.jpg"
+          },
+          {
+            "label": "Rsandu crown and side relief detail, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Crown_lateral_Arch_of_Triumph_Bucharest.jpg"
+          },
+          {
+            "label": "OSM monument outline and associated building parts",
+            "url": "https://www.openstreetmap.org/way/217851530"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arcul-de-triumf/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=arcul-de-triumf",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=detail"
+          },
+          {
+            "label": "Passage",
+            "url": "/asset-preview.html?asset=arcul-de-triumf&view=passage"
+          }
+        ]
+      },
+      "notes": "Facade bearing 159.695° from mapped control points, baked once. Current visible envelope follows OSM, not the larger published foundation depth. Crown, portrait profiles, victory figures, masonry and vault ornament are approximate; inscriptions are shallow broken marks, not legible lettering; no museum interior/stairs or roundabout furniture. Southern portrait medallions and northern floral allegories differ. Independent reviewer acceptance remains for the coordinator; no device/runtime verification.",
+      "documentation": "docs/assets/top-cities-arcul-de-triumf.md",
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
