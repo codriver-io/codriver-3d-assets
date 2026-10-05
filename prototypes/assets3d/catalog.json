@@ -13353,6 +13353,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "mission-inn",
+      "name": "Mission Inn",
+      "kind": "building",
+      "location": "Riverside, California, USA",
+      "status": "ready",
+      "description": "Original procedural Mission Inn Hotel & Spa: tall open-arched Carmel tower and elongated dome, deep brown masonry Spanish Wing gallery with pale pinnacles, projecting courtyard balconies, open Rotunda and Mission Wing arcades, Carillon belfry and blue Amistad dome.",
+      "manifest": "/models/buildings/mission-inn.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/mission-inn/geometry.js",
+        "build": "pnpm build:top-cities-landmarks mission-inn --no-check",
+        "provenance": "Original procedural texture-free geometry authored for Codriver, 2026-10-05; OSM outline from prepared dossier, © OpenStreetMap contributors, ODbL 1.0. References viewed only in ignored scratch: Spanish Wing by Oleknutlee (public domain); rooftop plaza by Gmbgall (CC BY-SA 4.0); Mission Inn Avenue front by 3Kathleen3 (CC BY-SA 3.0); northwest end by Johnwayne Stroud (CC BY-SA 3.0). No photograph, texture, scan or third-party mesh embedded.",
+        "references": [
+          {
+            "label": "Official hotel history",
+            "url": "https://www.missioninn.com/about-us/history/"
+          },
+          {
+            "label": "NPS historic landmark nomination",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/1a3b7284-b729-4066-9d43-5501c6f8559b"
+          },
+          {
+            "label": "OSM hotel outline",
+            "url": "https://www.openstreetmap.org/way/206742226"
+          },
+          {
+            "label": "Spanish Wing — Oleknutlee, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:MissionInn_SpanishWing.jpg"
+          },
+          {
+            "label": "Rooftop central plaza — Gmbgall, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rooftop_view_of_the_central_plaza_Mission_Inn,_Riverside,_CA.jpg"
+          },
+          {
+            "label": "Entrance tower — 3Kathleen3, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Front_of_Mission_Inn_from_Mission_Inn_Avenue.JPG"
+          },
+          {
+            "label": "Northwest corner — Johnwayne Stroud, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Northwest_end_of_Mission_Inn_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mission-inn/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=mission-inn",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=mission-inn&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=mission-inn&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=mission-inn&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=mission-inn&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=mission-inn&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=mission-inn&view=detail"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=mission-inn&view=tower"
+          },
+          {
+            "label": "Carmel tower",
+            "url": "/asset-preview.html?asset=mission-inn&view=carmel"
+          }
+        ]
+      },
+      "notes": "Mapped four-level main hotel outline plus two low courtyard ways; annex and neighbouring buildings excluded. All heights, tower positions, courtyard dimensions, window counts and roof pitches estimated from reference photos. Rotunda staircase and galleries simplified; Spanish Patio arrangement is indicative, carvings, vegetation and seasonal lights omitted. Original dome ribs suggest glazed pattern without copying tiles. Near/far preserve courtyard voids, open belfry, domes and pinnacles. Independent visual review remains with coordinator. Review revision: Carmel drum now open-arched with 7.2 m dome rise and 32.6 m estimated top; Spanish gallery masonry piers deepened to 1.8 m with 26 m pinnacles; courtyard balconies and pale surrounds strengthened. Exact tuple reuse reduces exported bytes without changing visible geometry. Revised export visual acceptance remains with the independent coordinator reviewer.",
+      "documentation": "docs/assets/top-cities-mission-inn.md",
+      "city": "Riverside",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

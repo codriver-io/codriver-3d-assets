@@ -1,0 +1,66 @@
+{
+  "id": "mission-inn",
+  "name": "Mission Inn",
+  "kind": "building",
+  "origin": [
+    -117.37293,
+    33.9831
+  ],
+  "height": 32.6,
+  "padM": 90,
+  "frontageBearing": 209,
+  "ownTolM": 1.2,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local street grade y=0; rigid hotel foundation, no terrain or altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped outline and 119°/29° plan bearing; all heights, tower locations, courtyard sizes and facade counts estimated from attributed photographs. Annex and seasonal decorations omitted. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mission-inn-near.glb",
+      "bytes": 2145276,
+      "triangles": 48291,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -59.92372131347656,
+          -5.7220457705398076e-8,
+          -80.17643737792969
+        ],
+        "max": [
+          75.21822357177734,
+          32.599998474121094,
+          53.95896911621094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mission-inn-far.glb",
+      "bytes": 372048,
+      "triangles": 8395,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -59.5653190612793,
+          -5.7220457705398076e-8,
+          -80.042724609375
+        ],
+        "max": [
+          74.92510223388672,
+          32.599998474121094,
+          53.61131286621094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mission-inn/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
