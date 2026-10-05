@@ -11795,6 +11795,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palace-of-the-parliament",
+      "name": "Palace of the Parliament",
+      "kind": "building",
+      "location": "Strada Izvor 2-4, Dealul Spirii, Bucharest",
+      "status": "ready",
+      "description": "Anca Petrescu's Palace of the Parliament (Palatul Parlamentului, 1984–1997): pale limestone wings, giant-order columns, arched piano nobile, two broad courtyard-preserving setback tiers rising to an 84 m central crown, and a Romanian roof flag.",
+      "manifest": "/models/buildings/palace-of-the-parliament.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palace-of-the-parliament/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palace-of-the-parliament",
+        "provenance": "Original procedural geometry. Footprint from OpenStreetMap relation 2230391 (outer way 14325732, courtyards 167231786 and 178309073, parts 232360843 and 283976783; © OpenStreetMap contributors, ODbL 1.0). Architectural height 84 m, about 270 m by 240 m, 12 floors and Anca Petrescu from the English Wikipedia infobox. Photographs used only as local comparison images, not shipped: oblique terraces 2024 (Jorge Franganillo, CC BY 2.0); frontal from the square (William John Gauthier, CC BY-SA 2.0); Union Square (Dennis Jarvis, CC BY-SA 2.0); corner cornice (Robert Anders, CC BY 2.0). No third-party mesh, scan, photograph or texture is in the GLBs.",
+        "references": [
+          {
+            "label": "Palace of the Parliament · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Palace_of_the_Parliament"
+          },
+          {
+            "label": "OSM relation 2230391 · Palatul Parlamentului",
+            "url": "https://www.openstreetmap.org/relation/2230391"
+          },
+          {
+            "label": "Oblique, 2024 · Jorge Franganillo (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bucharest_-_Palace_of_the_Parliament_(2024)_(2).jpg"
+          },
+          {
+            "label": "Frontal · William John Gauthier (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palace_of_the_Parliament_in_Bucharest_(51879943436).jpg"
+          },
+          {
+            "label": "Union Square · Dennis Jarvis (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Romania-1193_-_Union_Square_(7557758988).jpg"
+          },
+          {
+            "label": "Corner cornice · Robert Anders (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palatul_Parlamentului_I_(42630333435).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palace-of-the-parliament/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=palace-of-the-parliament&view=overview",
+        "views": [
+          {
+            "label": "From the south-east",
+            "url": "/asset-preview.html?asset=palace-of-the-parliament&view=overview"
+          },
+          {
+            "label": "East front, Unirii",
+            "url": "/asset-preview.html?asset=palace-of-the-parliament&view=facade"
+          },
+          {
+            "label": "Roof and courts",
+            "url": "/asset-preview.html?asset=palace-of-the-parliament&view=roof"
+          },
+          {
+            "label": "Street, colonnade",
+            "url": "/asset-preview.html?asset=palace-of-the-parliament&view=street"
+          },
+          {
+            "label": "West side",
+            "url": "/asset-preview.html?asset=palace-of-the-parliament&view=west"
+          },
+          {
+            "label": "Portico and piano nobile",
+            "url": "/asset-preview.html?asset=palace-of-the-parliament&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: outer ring of OSM relation 2230391, architectural height 84 m, 12 floors, limestone, east front toward Bulevardul Unirii. OSM tags the central part 86 m and a broad middle part 58 m; the relation height 29 m is not used. Original procedural visual estimates: bastion parapet 42.4 m, outer wings 48 m, broad setback tiers at 58 and 66 m, tier envelopes 190 by 147 m and 162 by 122 m, central crown 105 by 23 m, storey heights, 6.8 m central entrance recess, giant-order bay 8.4 m and shaft height 22.2 m. Both mapped courtyard holes remain open through both broad tiers; the upper crown sits east of the courts. Three recessed glazed storeys are separated by stone spandrels behind the tall shafts; stacked wing/bastion rows and profiled cornices remain in both LODs. Near retains jambs/mullions and secondary cornice ledges; far merges minor stone shades and omits those small profiles. Final exported QA: zero coplanar pairs and back-face hits; near 23361 triangles/10 draws/1219496 bytes, far 8875/8/474780 bytes. Gardens, fountains, sculpture and underground levels omitted; Cityscape and Full 3D world integration remain untested.",
+      "documentation": "docs/assets/top-cities-palace-of-the-parliament.md",
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
