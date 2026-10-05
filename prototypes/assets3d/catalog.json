@@ -13729,6 +13729,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "catedral-primada-de-colombia",
+      "name": "Catedral Primada de Colombia",
+      "kind": "building",
+      "location": "Carrera 7 #10-80, Plaza de Bolívar, Bogotá, Colombia",
+      "status": "ready",
+      "description": "Original procedural model of Domingo de Petrés’s neoclassical cathedral: paired 52 m open belfries, northern clock, stepped stone tower caps and lanterns, three column-framed doors, pedimented central attic, red-tiled nave and crossing dome. The adjoining Casa del Cabildo, Sagrario and rear Casa Cural are excluded.",
+      "manifest": "/models/buildings/catedral-primada-de-colombia.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/catedral-primada-de-colombia/geometry.js",
+        "build": "pnpm build:top-cities-landmarks catedral-primada-de-colombia --no-check",
+        "provenance": "Original procedural geometry authored for Codriver 2026-10-05; no third-party mesh, scan, image or texture shipped. Geographic placement and partial envelope derived from OSM way 24251969, checked through the shared Overpass helper, © OpenStreetMap contributors, ODbL 1.0. Photo comparison only: Bernard Gagnon, Primatial Cathedral of Bogotá 01 (CC BY-SA 4.0); SajoR, Catedral de Bogotá - Nave Central (CC BY-SA 4.0); Edward Mark Walhouse, Plaza Mayor de Bogotá, 1846 (public domain, historic context only); Felipe Restrepo Acosta, Catedral desde CCGGM (CC BY-SA 3.0); José Luiz, Calle 11 and north wall of Primate Cathedral of Bogotá - Bogotá - Colombia 2024 (2) (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia: dimensions, current facade and history",
+            "url": "https://es.wikipedia.org/wiki/Catedral_primada_de_Colombia"
+          },
+          {
+            "label": "OSM cathedral mapped outline",
+            "url": "https://www.openstreetmap.org/way/24251969"
+          },
+          {
+            "label": "Bernard Gagnon · exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Primatial_Cathedral_of_Bogot%C3%A1_01.jpg"
+          },
+          {
+            "label": "Felipe Restrepo Acosta · east dome, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Catedral_desde_CCGGM.jpg"
+          },
+          {
+            "label": "José Luiz · north street wall, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Calle_11_and_north_wall_of_Primate_Cathedral_of_Bogot%C3%A1_-_Bogot%C3%A1_-_Colombia_2024_(2).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-primada-de-colombia/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=facade",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=back"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=detail"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=catedral-primada-de-colombia&view=north"
+          }
+        ]
+      },
+      "notes": "52 m published tower height used at the cross tips. Main and side door sizes are published (7.2×3.6 m and 5.6×2.8 m); heights start above a 0.5 m threshold. Tower stage split, roof pitches, crossing dome position/size, facade subdivisions and ornament are estimates. Mapped northern boundary and frontage bearing constrain the 88.8×41.6 m partial ownership rectangle; the east cutoff is estimated to preserve the rear house. Side/rear massing is less certain than the well-photographed west front. Sculpture simplified, no inscriptions, plaza furniture, interior or adjoining Sagrario. No artificial emissive windows: nighttime materials are dimmed. No hardware performance measurement. Independent visual review remains pending.",
+      "documentation": "docs/assets/top-cities-catedral-primada-de-colombia.md",
+      "city": "Bogotá",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
