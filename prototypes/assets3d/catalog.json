@@ -11961,6 +11961,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bank-of-america-plaza-dallas",
+      "name": "Bank of America Plaza",
+      "kind": "building",
+      "location": "Dallas, Texas, United States",
+      "status": "ready",
+      "description": "Original texture-free procedural blue-glass tower with mapped faceted plan, six-tier stepped crown, dense marble floor bands, lobby piers and green night outline lighting.",
+      "manifest": "/models/buildings/bank-of-america-plaza-dallas.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bank-of-america-plaza-dallas/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bank-of-america-plaza-dallas --no-check",
+        "provenance": "Original Codriver procedural geometry, 2026-10-05; no third-party meshes or textures. Mapped outline and six building parts from dossier OSM extract, © OpenStreetMap contributors (ODbL 1.0). Photo comparison only: Michael Barera (CC BY-SA 4.0), Matthew T Rader (CC BY-SA 4.0), RomDales (CC BY-SA 4.0), FeaturingDallas (CC BY-SA 4.0), Justin Cozart (CC BY 2.0); titles and links recorded in landmark documentation. Images remain in ignored scratch.",
+        "references": [
+          {
+            "label": "Official building: 901 Main Street, 72 stories",
+            "url": "https://baplaza.com/"
+          },
+          {
+            "label": "Identity, 280.7 m architectural height, blue glazing and lighting",
+            "url": "https://en.wikipedia.org/wiki/Bank_of_America_Plaza_(Dallas)"
+          },
+          {
+            "label": "Mapped outline and stepped upper parts",
+            "url": "https://www.openstreetmap.org/way/138670474"
+          },
+          {
+            "label": "Michael Barera: Reunion Tower view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:View_of_Bank_of_America_Plaza_from_Reunion_Tower_August_2015_20.jpg"
+          },
+          {
+            "label": "Justin Cozart: green crown lighting, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dallas_Bank_of_America_Plaza_top_night.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-america-plaza-dallas/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-dallas&view=detail"
+          }
+        ]
+      },
+      "notes": "280.7 m architectural height sourced; mapped plan and upper outlines. OSM intermediate tier heights adopted as estimates; top raised to sourced architectural height. Facade bay pitch, band width, lobby entrances and lighting thickness are photo-based estimates. Programmable lighting represented by its iconic green state; seasonal colours omitted. Small upper outline discrepancies are intersected with lower outlines to avoid protrusions. Nearby canopy, parking garage, streets and plaza remain provider geometry. No terrain or hardware-performance certification; independent visual reviewer pending.",
+      "documentation": "docs/assets/top-cities-bank-of-america-plaza-dallas.md",
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
