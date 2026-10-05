@@ -12364,6 +12364,109 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "altare-della-patria",
+      "name": "Altare della Patria",
+      "kind": "building",
+      "location": "Piazza Venezia, Rome, Italy",
+      "status": "ready",
+      "description": "Original texture-free Vittoriano with marble stair terraces, a shallow curved sixteen-column Corinthian portico, twin open propylaea, bronze quadrigas, equestrian Victor Emmanuel II, the gilded altar niche and flame bowls, triumphal Victories, regional roof statues and attached museum.",
+      "manifest": "/models/buildings/altare-della-patria.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/altare-della-patria/geometry.js",
+        "build": "pnpm build:top-cities-landmarks altare-della-patria --no-check",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-05. Mapped outer rings from OSM relations 1849830/1849831 and parts in the dossier; © OpenStreetMap contributors, ODbL 1.0. Photographic comparison only, no image, scan, mesh or texture embedded or committed: File:Piazza Venezia, Towards Altare della Patria.jpg (Fitzws, CC BY-SA 4.0); File:Vittoriano monumento equestre VE II P1000703.jpg (Carlomorino, CC BY-SA 4.0); File:Altare della Patria-July 2016 (95).jpg (Darafsh, CC BY-SA 3.0); File:Altare della Patria-July 2016 (80).jpg (Darafsh, CC BY-SA 3.0); File:Altare della Patria-July 2016 (59).jpg (Darafsh, CC BY-SA 3.0); File:Altare della Patria-July 2016 (13).jpg (Darafsh, CC BY-SA 3.0). References retained solely in ignored tmp/top-cities/altare-della-patria/refs/.",
+        "references": [
+          {
+            "label": "VIVE · Main Colonnade: 70 m, sixteen 15 m columns, marble and gilded ceiling",
+            "url": "https://vive.cultura.gov.it/_cms/en/vittoriano/what-see/main-colonnade"
+          },
+          {
+            "label": "VIVE · Two pairs of triumphal columns, 7 m monolithic marble shafts",
+            "url": "https://vive.cultura.gov.it/_cms/en/vittoriano/what-see/triumphal-columns"
+          },
+          {
+            "label": "Wikipedia · Vittoriano, 81 m overall, 135 × 130 m, Sacconi, 1885–1935",
+            "url": "https://en.wikipedia.org/wiki/Victor_Emmanuel_II_Monument"
+          },
+          {
+            "label": "OpenStreetMap · main monument outline",
+            "url": "https://www.openstreetmap.org/relation/1849830"
+          },
+          {
+            "label": "OpenStreetMap · attached Risorgimento museum",
+            "url": "https://www.openstreetmap.org/relation/1849831"
+          },
+          {
+            "label": "File:Piazza Venezia, Towards Altare della Patria.jpg — Fitzws, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Piazza_Venezia,_Towards_Altare_della_Patria.jpg"
+          },
+          {
+            "label": "File:Vittoriano monumento equestre VE II P1000703.jpg — Carlomorino, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vittoriano_monumento_equestre_VE_II_P1000703.jpg"
+          },
+          {
+            "label": "File:Altare della Patria-July 2016 (95).jpg — Darafsh, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Altare_della_Patria-July_2016_(95).jpg"
+          },
+          {
+            "label": "File:Altare della Patria-July 2016 (80).jpg — Darafsh, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Altare_della_Patria-July_2016_(80).jpg"
+          },
+          {
+            "label": "File:Altare della Patria-July 2016 (59).jpg — Darafsh, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Altare_della_Patria-July_2016_(59).jpg"
+          },
+          {
+            "label": "File:Altare della Patria-July 2016 (13).jpg — Darafsh, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Altare_della_Patria-July_2016_(13).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/altare-della-patria/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=altare-della-patria&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=back"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=detail"
+          },
+          {
+            "label": "Quadriga",
+            "url": "/asset-preview.html?asset=altare-della-patria&view=quadriga"
+          }
+        ]
+      },
+      "notes": "Sourced overall height 81 m and main portico 70 m with sixteen 15 m columns; mapped facade bearing 343 degrees (17 degree rotation baked once and verified in top view). Site width/depth from OSM include front stairs and attached museum, separately from the nominal 135 × 130 m monument dimensions. Final estimated floors align at 42 m; central capitals 57 m, cornice 65 m, regional figures 68.1 m; propylaea columns 20 m, deep triangular pediments 63.2–67.4 m and roof 70 m. The compact quadrigas have four forward-facing horses abreast, chariot, wheels and narrowed Victory wings, with the 81 m summit preserved. Estimated terrace levels, sculptural anatomy, Corinthian ornament, gilded mural and rear museum elevations/windows; source is original low-poly geometry, no inscriptions, interior, roads, church or hill. Front visibility, physical pediment profile and four horse-head gaps have geometry regression tests; app placement and independent release review remain separate.",
+      "documentation": "docs/assets/top-cities-altare-della-patria.md",
+      "city": "Rome",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
