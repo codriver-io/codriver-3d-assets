@@ -10,3 +10,9 @@
 /asset-catalog.json
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=300
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
