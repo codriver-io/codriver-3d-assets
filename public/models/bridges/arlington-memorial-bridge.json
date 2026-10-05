@@ -1,0 +1,66 @@
+{
+  "id": "arlington-memorial-bridge",
+  "name": "Arlington Memorial Bridge",
+  "kind": "bridge",
+  "origin": [
+    -77.05549895,
+    38.8873481
+  ],
+  "height": 17.2,
+  "padM": 120,
+  "frontageBearing": 65.2,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map ground y=0. Estimated deck 9.5 m above river grade, 150 m smooth approach transitions; no DEM or latitude stretch baked into mesh. Absolute-deck terrain policy fits bank datum separately.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "NPS: 2163 ft length, 90 ft between balustrades, 60 ft roadway, 15 ft walks; nine river arches and two roadway openings. Mapped pier stations. Deck datum, arch rises, masonry courses, ornament and sculptural abstractions are estimates; current fixed central span retains its historic metal arch fascia.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/arlington-memorial-bridge-near.glb",
+      "bytes": 2882672,
+      "triangles": 83078,
+      "drawCalls": 28,
+      "bounds": {
+        "min": [
+          -340.3623046875,
+          0,
+          -153.31924438476562
+        ],
+        "max": [
+          349.46270751953125,
+          16.22614288330078,
+          180.08619689941406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/arlington-memorial-bridge-far.glb",
+      "bytes": 763984,
+      "triangles": 21026,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -340.3623046875,
+          0,
+          -153.31924438476562
+        ],
+        "max": [
+          349.46270751953125,
+          16.22614288330078,
+          180.08619689941406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arlington-memorial-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
