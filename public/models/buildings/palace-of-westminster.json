@@ -1,0 +1,65 @@
+{
+  "id": "palace-of-westminster",
+  "name": "Palace of Westminster and Elizabeth Tower",
+  "kind": "building",
+  "origin": [
+    -0.1245759,
+    51.4993173
+  ],
+  "height": 120.8,
+  "padM": 175,
+  "frontageBearing": 100.19,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the yard and Embankment terrace beside the Thames. The site is flat floodplain; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: Elizabeth Tower 96.3 m, 12.2 m square, dials 6.9 m centred at 54.9 m; Victoria Tower 98.5 m to the flagstaff base and 120.8 m to the crown finial; Central Tower spire 91.4 m; palace about 300 m long. Estimated from photographs and the mapped parts: every other height, the bay rhythm, roof pitches, pinnacles, and the court layout simplified to the large courts plus the hall.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palace-of-westminster-near.glb",
+      "bytes": 1037692,
+      "triangles": 18957,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -81.12885284423828,
+          0,
+          -161.75772094726562
+        ],
+        "max": [
+          61.451805114746094,
+          120.80000305175781,
+          128.92127990722656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palace-of-westminster-far.glb",
+      "bytes": 399368,
+      "triangles": 7204,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -80.7972640991211,
+          0,
+          -161.75772094726562
+        ],
+        "max": [
+          61.451805114746094,
+          120.80000305175781,
+          128.92127990722656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palace-of-westminster/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

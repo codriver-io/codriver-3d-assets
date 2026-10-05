@@ -11146,6 +11146,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palace-of-westminster",
+      "name": "Palace of Westminster and Elizabeth Tower",
+      "kind": "building",
+      "location": "Westminster, London SW1A 0AA, United Kingdom",
+      "status": "ready",
+      "description": "Barry and Pugin's Perpendicular Gothic Revival palace (1840-70): the river front between Victoria Tower, with its corner turrets and the Union flag, and Elizabeth Tower, with a dial on each face and the Ayrton light. The Central Tower spire rises over the crossing. Honey limestone, slate roofs, gilt ironwork.",
+      "manifest": "/models/buildings/palace-of-westminster.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palace-of-westminster/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palace-of-westminster",
+        "provenance": "Original procedural geometry authored 2026-10-04 (Codriver). Plan and the 10.19° / 100.19° frame are the OpenStreetMap outline of relation 1567699 (outer way 367642719) plus Elizabeth Tower way 123557148, Victoria Tower way 367642689, Westminster Hall way 367642704, St Stephen's Hall way 367642699 and St Stephen's Porch way 367642700, fetched through the shared Overpass helper. © OpenStreetMap contributors, ODbL 1.0. Heights from parliament.uk and Wikipedia, cited in the landmark doc. Wikimedia Commons photographs were viewed for proportion and are not redistributed. No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "UK Parliament · The towers of Parliament",
+            "url": "https://www.parliament.uk/about/living-heritage/building/palace/architecture/palacestructure/towers-of-parliament"
+          },
+          {
+            "label": "UK Parliament · Facts and figures: Big Ben and Elizabeth Tower",
+            "url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/"
+          },
+          {
+            "label": "Wikipedia · Victoria Tower",
+            "url": "https://en.wikipedia.org/wiki/Victoria_Tower"
+          },
+          {
+            "label": "Wikipedia · Elizabeth Tower",
+            "url": "https://en.wikipedia.org/wiki/Elizabeth_Tower"
+          },
+          {
+            "label": "OSM relation 1567699 · Palace of Westminster",
+            "url": "https://www.openstreetmap.org/relation/1567699"
+          },
+          {
+            "label": "Wikimedia Commons · Victoria Tower from the gardens (Julian Herzog, CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster_Victoria_Tower_Gardens_South_2020_Tower.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Elizabeth Tower and the north front (Christian David, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Elizabeth Tower from the street (Dietmar Rabich, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:London,_Elizabeth_Tower_--_2016_--_4624.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palace-of-westminster/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=palace-of-westminster&view=overview",
+        "views": [
+          {
+            "label": "From the river, both towers",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=overview"
+          },
+          {
+            "label": "River front",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=facade"
+          },
+          {
+            "label": "Roof and the three courts",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=roof"
+          },
+          {
+            "label": "Elizabeth Tower",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=elizabeth"
+          },
+          {
+            "label": "Victoria Tower and the flag",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=victoria"
+          },
+          {
+            "label": "West yard and Westminster Hall",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=west"
+          },
+          {
+            "label": "Clock face",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=clock"
+          },
+          {
+            "label": "Westminster Hall",
+            "url": "/asset-preview.html?asset=palace-of-westminster&view=hall"
+          }
+        ]
+      },
+      "notes": "Sourced: Elizabeth Tower 96.3 m (316 ft), 12.2 m square, dials 6.9 m (22.5 ft; parliament.uk says 7 m) centred at 54.9 m (180 ft); Victoria Tower 98.5 m to the flagstaff base and 120.8 m to the crown finial (98.5 + 22.3); Central Tower 91.4 m (parliament.uk; the OSM lantern part is 78 m). Estimated: wall and roof heights, the 5.2 m river bay, pinnacles, spire springing, Victoria Tower's grouped window stages, and its stone corner turrets and open parapet. The river wall is straight but 3.1° off the long axis, so that range is a prism. Three courts stay open (Lords, central-north, north); smaller light wells are filled. The flag is a red cross on a navy field, not the full Union flag. Elizabeth Tower has a ribbed shaft, hour marks, a recessed louvred belfry and a stepped slate spire with gilt ribs and a gold cross. Victoria Tower has no slate pyramid and no gilded cage. Not modelled: lettered Roman numerals, crocketed tracery, the Victoria iron crest, Westminster Abbey, and the Parliamentary Estate. Thames floodplain: no terrainPad; padM 175. Expect under 2 m of relief in Full 3D world.",
+      "documentation": "docs/assets/top-cities-palace-of-westminster.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
