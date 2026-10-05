@@ -1,0 +1,65 @@
+{
+  "id": "christopher-s-bond-bridge",
+  "name": "Christopher S. Bond Bridge",
+  "kind": "bridge",
+  "origin": [
+    -94.56562945,
+    39.1229174
+  ],
+  "height": 95.7072,
+  "padM": 600,
+  "frontageBearing": 340,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0 represents the pylon foundation; heights are relative, not geodetic elevations. No DEM baked into the GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2010 Kansas City bridge; 314 ft pylon, 145 ft deck, 550/451.5 ft spans. Deck elevation, member sections, approach supports and fittings are photographic estimates. Cityscape ramps are a visual convention; terrain certification is separate.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/christopher-s-bond-bridge-near.glb",
+      "bytes": 1949248,
+      "triangles": 40160,
+      "drawCalls": 20,
+      "bounds": {
+        "min": [
+          -187.2500762939453,
+          -2.549999952316284,
+          -468.1728515625
+        ],
+        "max": [
+          121.2879638671875,
+          95.70719909667969,
+          501.0906677246094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/christopher-s-bond-bridge-far.glb",
+      "bytes": 442184,
+      "triangles": 11780,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -187.2500762939453,
+          -2.549999952316284,
+          -468.1728515625
+        ],
+        "max": [
+          121.2879638671875,
+          95.70719909667969,
+          501.0906677246094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/christopher-s-bond-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
