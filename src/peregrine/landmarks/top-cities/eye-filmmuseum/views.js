@@ -1,6 +1,10 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
+// East/up/south metres. Waterfront facade faces south (185.4 degrees).
 export const VIEWS = {
-  overview: [[80, 48, 110], [0, 13, 0]],
-  facade: [[0, 12, 80], [0, 8, 0]],
-  roof: [[35, 90, 35], [0, 20, 0]],
+  overview: [[105, 55, 115], [0, 10, 0]],
+  facade: [[-5, 20, 140], [0, 12, 10]],
+  roof: [[25, 160, 45], [0, 7, 0]],
+  back: [[20, 40, -130], [0, 10, 0]],
+  street: [[85, 7, 110], [20, 11, 22]],
+  detail: [[-16, 9, 69], [-14, 8, 25]],
+  top: [[3, 170, 7], [3, 0, 7]],
 };

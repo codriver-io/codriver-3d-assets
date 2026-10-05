@@ -12036,6 +12036,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "eye-filmmuseum",
+      "name": "EYE Filmmuseum",
+      "kind": "building",
+      "location": "Amsterdam",
+      "status": "ready",
+      "description": "Original procedural exterior of DMAA’s 2012 waterfront EYE Filmmuseum: bent crystalline white shell, rising eastern cinema prow, diagonal facade ribbon, recessed glazing and access stair.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/eye-filmmuseum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks eye-filmmuseum",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-05; no mesh capture, tracing, bitmap, or texture. Derived geographic data © OpenStreetMap contributors (ODbL 1.0), ways 127505497, 1206726812, 1207014127 and relation 20772608. Reference-only photos retained under ignored tmp/: EYE Film Institute Netherlands, Amsterdam.jpg by JoachimKohlerBremen (CC BY-SA 4.0); 20130421 Amsterdam 13 EYE Film Institute Netherlands.JPG by Mark Ahsmann (CC BY-SA 3.0). DMAA section and plan © DMAA, reference only. No external images or drawings included in model exports.",
+        "references": [
+          {
+            "label": "DMAA — Eye Filmmuseum: architect, project facts, section and plan",
+            "url": "https://www.dmaa.at/work/eye-film-institute"
+          },
+          {
+            "label": "Eye — museum address and separate collection centre",
+            "url": "https://www.eyefilm.nl/en/plan-your-visit"
+          },
+          {
+            "label": "Waterfront photograph — JoachimKohlerBremen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:EYE_Film_Institute_Netherlands,_Amsterdam.jpg"
+          },
+          {
+            "label": "Glazing and cladding detail — Mark Ahsmann, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:20130421_Amsterdam_13_EYE_Film_Institute_Netherlands.JPG"
+          },
+          {
+            "label": "OSM upper shell outline",
+            "url": "https://www.openstreetmap.org/way/127505497"
+          },
+          {
+            "label": "OSM lower core",
+            "url": "https://www.openstreetmap.org/way/1206726812"
+          },
+          {
+            "label": "OSM entrance stair",
+            "url": "https://www.openstreetmap.org/way/1207014127"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eye-filmmuseum/geometry.js"
+      },
+      "notes": "Upper plan follows mapped BAG/OSM envelope. Heights (25 m eastern prow), roof folds, structural supports, glazing setback, stair rise (4.1 m), mullion spacing and panel lattice are estimates from references, not a surveyed model. Near has geometric triangular cladding joints; actual panels have a more varied rhombus pattern. Far keeps shell, both glazing wedges, diagonal ribbon, window slot, recessed core, open prow and stair. No terrace furniture, interior seating, doors, signs or neighbouring A’DAM tower. Independent reviewer and both placement modes still pending.",
+      "documentation": "docs/assets/top-cities-eye-filmmuseum.md",
+      "manifest": "/models/buildings/eye-filmmuseum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=eye-filmmuseum",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=back"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=detail"
+          },
+          {
+            "label": "top",
+            "url": "/asset-preview.html?asset=eye-filmmuseum&view=top"
+          }
+        ]
+      },
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
