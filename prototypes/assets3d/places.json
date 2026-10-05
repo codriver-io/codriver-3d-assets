@@ -1,0 +1,122 @@
+{
+  "Amsterdam": {
+    "country": "Netherlands",
+    "continent": "Europe"
+  },
+  "Bogotá": {
+    "country": "Colombia",
+    "continent": "South America"
+  },
+  "Bucharest": {
+    "country": "Romania",
+    "continent": "Europe"
+  },
+  "Calgary": {
+    "country": "Canada",
+    "region": "Alberta",
+    "continent": "North America"
+  },
+  "Dallas": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
+  "Garden Grove": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Gatineau": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Kansas City": {
+    "country": "United States",
+    "region": "Missouri",
+    "continent": "North America"
+  },
+  "London": {
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
+  "Lyon": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Madrid": {
+    "country": "Spain",
+    "continent": "Europe"
+  },
+  "Medellín": {
+    "country": "Colombia",
+    "continent": "South America"
+  },
+  "Montréal": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Paris": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Québec": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Riverside": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Rome": {
+    "country": "Italy",
+    "continent": "Europe"
+  },
+  "Saguenay": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Sainte-Anne-de-Beaupré": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "San Francisco": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "San José": {
+    "country": "Costa Rica",
+    "region": "San José",
+    "continent": "North America"
+  },
+  "Santa Ana": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Toronto": {
+    "country": "Canada",
+    "region": "Ontario",
+    "continent": "North America"
+  },
+  "Trois-Rivières": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Villeurbanne": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Washington": {
+    "country": "United States",
+    "region": "District of Columbia",
+    "continent": "North America"
+  }
+}

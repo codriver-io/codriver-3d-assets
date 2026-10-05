@@ -178,7 +178,24 @@ credential is stored in this repository.
 The public site counts visits, opened models and model downloads with Codriver's self-hosted
 [Plausible](https://plausible.io) instance (`stats.codriver.io`): no cookies and no personal
 data. Only the production hosts load it, so local builds, previews and forks send nothing
-(`scripts/analytics.mjs`, `src/analytics.js`).
+(`scripts/analytics.mjs`, `src/analytics.js`). Custom goals are `Model Open`
+(`asset`, `city`, `kind`), `Download` (`asset`, `detail`, `city`, `kind`, `from`),
+and `Open In App` (`asset`, `city`, `kind`). A maintainer must add the **Open In App**
+goal in Plausible to count the new outbound links.
+
+The library groups models by continent → country → city, with province/state
+between country and city in North America. `prototypes/assets3d/places.json` covers
+current catalog cities and every city present in the planned top-cities input;
+`pnpm check` rejects catalog cities without geography. Place filters are shareable:
+`?continent=Europe`, `?country=Canada`, `?region=Québec`, and existing `?city=Paris`
+links work together with `kind`, `q` and `asset`.
+
+Each selected model links to `https://app.codriver.io/?at=<lat>,<lng>&zoom=17&bearing=-25&pitch=60&view=cityscape`
+(bridges use zoom 16 and bearing 25), using its manifest origin. Cityscape requires
+Codriver Premium; the app validates the camera values and its existing entitlement,
+opens in free-look without navigation, and consumes the parameters. GPS updates
+leave the linked place on screen until Recenter. The standalone model viewer does
+not establish Cityscape or Full 3D world integration.
 
 ### Paris street-level revision
 

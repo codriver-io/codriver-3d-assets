@@ -1,18 +1,34 @@
 import { track } from './analytics.js';
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search), mobile = matchMedia('(max-width: 760px)');
-let assets = [], kind = params.get('kind') || 'all', city = params.get('city') || 'all';
+let assets = [], places = {}, kind = params.get('kind') || 'all';
+const levels = ['continent', 'country', 'region', 'city'];
+let geography = Object.fromEntries(levels.map(key => [key, params.get(key) || 'all']));
+const collapsed = new Set();
 let selected = params.get('asset') || 'pont-jacques-cartier', shown, viewUrl;
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-const cityOf = entry => entry.city || ['Montréal', 'Paris', 'Toronto', 'San Francisco', 'Calgary'].find(name => normalize(entry.location).includes(normalize(name))) || entry.location.split(/[·,]/)[0].trim();
+const cityOf = entry => entry.city;
+const placeOf = entry => ({ ...places[cityOf(entry)], city: cityOf(entry) });
 function el(tag, text, className) { const node = document.createElement(tag); if (text != null) node.textContent = text; if (className) node.className = className; return node; }
 function link(label, url, className) { const a = el('a', label, className); a.href = url; return a; }
 function updateUrl() {
   const url = new URL(location.href);
-  for (const [key, value, fallback] of [['asset', selected, null], ['kind', kind, 'all'], ['city', city, 'all'], ['q', $('search').value.trim(), '']]) { if (value && value !== fallback) url.searchParams.set(key, value); else url.searchParams.delete(key); }
+  for (const [key, value, fallback] of [['asset', selected, null], ['kind', kind, 'all'], ['q', $('search').value.trim(), '']]) { if (value && value !== fallback) url.searchParams.set(key, value); else url.searchParams.delete(key); }
+  for (const key of levels) { if (geography[key] !== 'all') url.searchParams.set(key, geography[key]); else url.searchParams.delete(key); }
   history.replaceState(null, '', url);
 }
-function updateSelection() { for (const button of $('list').children) button.setAttribute('aria-pressed', String(button.dataset.id === selected)); }
+function updateSelection() { for (const button of $('list').querySelectorAll('.asset')) button.setAttribute('aria-pressed', String(button.dataset.id === selected)); }
+function appLink(entry) {
+  const [lng, lat] = entry.model.origin;
+  const url = new URL('https://app.codriver.io/');
+  url.search = new URLSearchParams({ at: `${lat},${lng}`, zoom: entry.kind === 'bridge' ? '16' : '17', bearing: entry.kind === 'bridge' ? '25' : '-25', pitch: '60', view: 'cityscape' });
+  const a = link('Open in Codriver ↗', url.href, 'app-link');
+  a.target = '_blank'; a.rel = 'noopener';
+  a.title = 'Explore this landmark in Cityscape. Codriver Premium required.';
+  a.append(el('small', 'Cityscape · Premium required'));
+  a.addEventListener('click', () => track('Open In App', { asset: entry.id, city: cityOf(entry), kind: entry.kind }));
+  return a;
+}
 function inspectionUrl(entry, view) { const url = new URL(view || entry.inspection?.url || `/asset-preview.html?asset=${entry.id}`, location.origin); url.searchParams.set('embed', '1'); return url.href; }
 function show(entry, open = false) {
   selected = entry.id; updateUrl(); updateSelection();
@@ -23,6 +39,7 @@ function show(entry, open = false) {
     viewUrl = inspect; frame.src = inspectionUrl(entry); frame.title = `Interactive model of ${entry.name}`;
     stage.append(frame, el('span', 'Drag to orbit · Scroll to zoom', 'stage-hint'), link('Full screen ↗', inspect, 'open')); card.append(stage);
     const info = el('div', null, 'info'); info.append(el('span', `${entry.kind}${entry.parent ? ' component' : ''} / ${cityOf(entry)}`, 'eyebrow'), el('h2', entry.name), el('p', entry.description));
+    info.append(appLink(entry));
     const views = el('nav', null, 'views'); views.setAttribute('aria-label', 'Model views');
     for (const view of entry.inspection?.views || []) { const b = el('button', view.label); b.setAttribute('aria-pressed', String(view.url === inspect)); b.onclick = () => { if (viewUrl === view.url) return; viewUrl = view.url; frame.src = inspectionUrl(entry, view.url); stage.querySelector('.open').href = view.url; for (const button of views.children) button.setAttribute('aria-pressed', String(button === b)); }; views.append(b); } info.append(views);
     const variants = Object.entries(entry.model.assets), primary = variants.find(([key]) => key === 'near') || variants[0];
@@ -45,14 +62,50 @@ function show(entry, open = false) {
 }
 function render() {
   const query = normalize($('search').value.trim());
-  const visible = assets.filter(e => (kind === 'all' || e.kind === kind) && (city === 'all' || cityOf(e) === city) && normalize(`${e.name} ${cityOf(e)} ${e.location} ${e.description}`).includes(query));
-  $('count').textContent = `${visible.length} of ${assets.length} models`; $('reset').hidden = kind === 'all' && city === 'all' && !query; $('empty').hidden = !!visible.length; $('list').replaceChildren();
-  for (const entry of visible) { const b = el('button', null, 'asset'); b.dataset.id = entry.id; b.setAttribute('aria-label', `Explore ${entry.name}`); const thumbnail = el('span', null, 'thumbnail'), img = el('img'); img.src = `/thumbnails/${entry.id}.jpg`; img.alt = ''; img.loading = 'lazy'; img.width = 600; img.height = 375; thumbnail.append(img, el('span', entry.parent ? 'Bridge part' : entry.kind, 'type')); const copy = el('span', null, 'asset-copy'); copy.append(el('strong', entry.name), el('small', cityOf(entry)), el('span', 'GLB · Editable source · CC BY 4.0', 'card-format')); b.append(thumbnail, copy); b.onclick = () => { track('Model Open', { asset: entry.id, city: cityOf(entry), kind: entry.kind }); show(entry, true); }; $('list').append(b); }
+  const visible = assets.filter(e => (kind === 'all' || e.kind === kind) && levels.every(key => geography[key] === 'all' || placeOf(e)[key] === geography[key]) && normalize(`${e.name} ${cityOf(e)} ${e.location} ${e.description}`).includes(query));
+  $('count').textContent = `${visible.length} of ${assets.length} models`; $('reset').hidden = kind === 'all' && levels.every(key => geography[key] === 'all') && !query; $('empty').hidden = !!visible.length; $('list').replaceChildren();
+  const cards = new Map();
+  for (const entry of visible) { const b = el('button', null, 'asset'); b.dataset.id = entry.id; b.setAttribute('aria-label', `Explore ${entry.name}`); const thumbnail = el('span', null, 'thumbnail'), img = el('img'); img.src = `/thumbnails/${entry.id}.jpg`; img.alt = ''; img.loading = 'lazy'; img.width = 600; img.height = 375; thumbnail.append(img, el('span', entry.parent ? 'Bridge part' : entry.kind, 'type')); const copy = el('span', null, 'asset-copy'); copy.append(el('strong', entry.name), el('small', cityOf(entry)), el('span', 'GLB · Editable source · CC BY 4.0', 'card-format')); b.append(thumbnail, copy); b.onclick = () => { track('Model Open', { asset: entry.id, city: cityOf(entry), kind: entry.kind }); show(entry, true); }; cards.set(entry.id, b); }
+  renderGroups(visible, cards, $('list'));
   if (visible.length && !mobile.matches) show(visible.find(e => e.id === selected) || visible[0]); else updateSelection(); updateUrl();
 }
 function updateFilters() { for (const b of document.querySelectorAll('[data-kind]')) b.setAttribute('aria-pressed', String(b.dataset.kind === kind)); }
-function reset() { kind = city = 'all'; $('city').value = 'all'; $('search').value = ''; updateFilters(); render(); $('search').focus(); }
-$('search').value = params.get('q') || ''; $('search').oninput = render; $('city').onchange = () => { city = $('city').value; render(); }; $('reset').onclick = $('empty-reset').onclick = reset;
+function renderGroups(entries, cards, container, depth = 0, path = '') {
+  const key = depth === 0 ? 'continent' : depth === 1 ? 'country' : depth === 2 && placeOf(entries[0]).continent === 'North America' ? 'region' : 'city';
+  const names = [...new Set(entries.map(entry => placeOf(entry)[key]))].sort((a, b) => a.localeCompare(b));
+  for (const name of names) {
+    const members = entries.filter(entry => placeOf(entry)[key] === name), id = `${path}/${name}`;
+    const group = el('details', null, `place-group place-${key}`);
+    group.open = !collapsed.has(id);
+    const summary = el('summary'); summary.append(el('span', name), el('small', `${members.length} ${members.length === 1 ? 'model' : 'models'}`)); group.append(summary);
+    group.addEventListener('toggle', () => { if (group.open) collapsed.delete(id); else collapsed.add(id); });
+    const content = el('div', null, key === 'city' ? 'model-grid' : 'place-children'); group.append(content);
+    if (key === 'city') for (const entry of members) content.append(cards.get(entry.id));
+    else renderGroups(members, cards, content, depth + 1, id);
+    container.append(group);
+  }
+}
+function populatePlaces() {
+  $('city').replaceChildren(new Option('Every place', 'all'));
+  function options(entries, depth = 0, path = {}) {
+    const key = depth === 0 ? 'continent' : depth === 1 ? 'country' : depth === 2 && placeOf(entries[0]).continent === 'North America' ? 'region' : 'city';
+    for (const name of [...new Set(entries.map(e => placeOf(e)[key]))].sort((a,b) => a.localeCompare(b))) {
+      const scope = { ...path, [key]: name };
+      $('city').add(new Option(`${'— '.repeat(depth)}${name}`, JSON.stringify(scope)));
+      if (key !== 'city') options(entries.filter(e => placeOf(e)[key] === name), depth + 1, scope);
+    }
+  }
+  options(assets);
+  const scope = Object.fromEntries(levels.filter(key => geography[key] !== 'all').map(key => [key, geography[key]]));
+  // Keep old city-only links working, even when the selector uses a full path.
+  const option = [...$('city').options].find(o => o.value !== 'all' && Object.entries(scope).length && Object.entries(scope).every(([k,v]) => JSON.parse(o.value)[k] === v));
+  if (option) $('city').value = option.value;
+  else { geography = Object.fromEntries(levels.map(key => [key, 'all'])); $('city').value = 'all'; }
+}
+function reset() { kind = 'all'; geography = Object.fromEntries(levels.map(key => [key, 'all'])); $('city').value = 'all'; $('search').value = ''; updateFilters(); render(); $('search').focus(); }
+$('search').value = params.get('q') || ''; $('search').oninput = render;
+$('city').onchange = () => { geography = { ...Object.fromEntries(levels.map(key => [key, 'all'])), ...($('city').value === 'all' ? {} : JSON.parse($('city').value)) }; render(); };
+$('reset').onclick = $('empty-reset').onclick = reset;
 for (const b of document.querySelectorAll('[data-kind]')) b.onclick = () => { kind = b.dataset.kind; updateFilters(); render(); };
 $('close-detail').onclick = () => $('inspector-dialog').close();
 $('inspector-dialog').addEventListener('click', event => { if (event.target === $('inspector-dialog')) { const r = event.target.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) event.target.close(); } });
@@ -66,10 +119,11 @@ mobile.addEventListener('change', () => {
   if (!mobile.matches) { $('inspector-dialog').close(); const entry = assets.find(e => e.id === selected); if (entry) show(entry); }
   else if (!$('inspector-dialog').open) { $('detail').replaceChildren(); shown = null; }
 });
-fetch('/asset-catalog.json').then(r => { if (!r.ok) throw new Error('The library could not load. Please refresh to try again.'); return r.json(); }).then(data => {
+Promise.all(['/asset-catalog.json', '/places.json'].map(url => fetch(url).then(r => { if (!r.ok) throw new Error('The library could not load. Please refresh to try again.'); return r.json(); }))).then(([data, geographyTable]) => {
+  places = geographyTable;
   const featured = ['pont-jacques-cartier','paris-tour-eiffel','cn-tower','biosphere-montreal','paris-louvre','samuel-de-champlain'];
   const rank = entry => featured.includes(entry.id) ? featured.indexOf(entry.id) : featured.length;
-  assets = data.assets.sort((a,b) => rank(a)-rank(b)); const cities = [...new Set(assets.map(cityOf))].sort(); for (const name of cities) $('city').add(new Option(name, name)); if (!cities.includes(city)) city = 'all'; $('city').value = city; if (!['all','bridge','building'].includes(kind)) kind = 'all'; updateFilters();
+  assets = data.assets.sort((a,b) => rank(a)-rank(b)); const cities = [...new Set(assets.map(cityOf))]; populatePlaces(); if (!['all','bridge','building'].includes(kind)) kind = 'all'; updateFilters();
   $('total-models').textContent = assets.length; $('total-variants').textContent = assets.reduce((n, e) => n + Object.keys(e.model.assets).length, 0); $('total-cities').textContent = cities.length; render();
   if (mobile.matches && params.has('asset')) { const entry = assets.find(e => e.id === selected); if (entry) show(entry, true); }
 }).catch(error => { $('error').textContent = error.message; $('detail').replaceChildren(); $('count').textContent = 'Library unavailable'; });

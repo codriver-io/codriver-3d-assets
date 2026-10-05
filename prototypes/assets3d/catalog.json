@@ -65,7 +65,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "pont-victoria",
@@ -119,7 +120,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "pont-jacques-cartier",
@@ -470,7 +472,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "farine-five-roses",
@@ -540,7 +543,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "orange-julep",
@@ -606,7 +610,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "place-ville-marie",
@@ -684,7 +689,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "habitat-67",
@@ -754,7 +760,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "stade-olympique",
@@ -832,7 +839,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "grande-roue-montreal",
@@ -902,7 +910,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "basilique-notre-dame",
@@ -972,7 +981,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "tour-de-l-horloge",
@@ -1034,7 +1044,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "oratoire-saint-joseph",
@@ -1100,7 +1111,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Montréal"
     },
     {
       "id": "pont-honore-mercier",
@@ -1218,7 +1230,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-arc-de-triomphe",
@@ -1273,7 +1286,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-notre-dame",
@@ -1336,7 +1350,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-sacre-coeur",
@@ -1391,7 +1406,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-invalides",
@@ -1446,7 +1462,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-louvre",
@@ -1505,7 +1522,8 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-palais-garnier",
@@ -1564,7 +1582,8 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-grand-palais",
@@ -1619,7 +1638,8 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-petit-palais",
@@ -1674,7 +1694,8 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-musee-orsay",
@@ -1733,7 +1754,8 @@
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-pantheon",
@@ -1792,7 +1814,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-hotel-de-ville",
@@ -1855,7 +1878,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-conciergerie",
@@ -1918,7 +1942,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-madeleine",
@@ -1981,7 +2006,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-institut-de-france",
@@ -2044,7 +2070,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "placementDocumentation": "docs/paris/placement.md"
+      "placementDocumentation": "docs/paris/placement.md",
+      "city": "Paris"
     },
     {
       "id": "paris-pont-alexandre-iii",
@@ -2106,7 +2133,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Paris"
     },
     {
       "id": "paris-pont-bir-hakeim",
@@ -2180,7 +2208,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Paris"
     },
     {
       "id": "paris-pont-neuf",
@@ -2258,7 +2287,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Paris"
     },
     {
       "id": "paris-pont-iena",
@@ -2324,7 +2354,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Paris"
     },
     {
       "id": "paris-pont-concorde",
@@ -2390,7 +2421,8 @@
       "attribution": "Codriver / 9570-6198 Québec inc.; geographic data © OpenStreetMap contributors",
       "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Paris"
     },
     {
       "id": "art-gallery-of-ontario",
@@ -2484,7 +2516,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "casa-loma",
@@ -2590,7 +2623,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "cinesphere",
@@ -2684,7 +2718,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "cn-tower",
@@ -2778,7 +2813,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "fairmont-royal-york",
@@ -2876,7 +2912,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "first-canadian-place",
@@ -2966,7 +3003,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "flatiron-building",
@@ -3052,7 +3090,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "humber-bay-arch-bridge",
@@ -3142,7 +3181,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "old-city-hall",
@@ -3228,7 +3268,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "ontario-legislative-building",
@@ -3318,7 +3359,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "prince-edward-viaduct",
@@ -3424,7 +3466,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "rogers-centre",
@@ -3530,7 +3573,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "royal-ontario-museum",
@@ -3620,7 +3664,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "scotia-plaza",
@@ -3722,7 +3767,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "scotiabank-arena",
@@ -3820,7 +3866,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "sharp-centre-for-design",
@@ -3918,7 +3965,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "st-lawrence-market",
@@ -4008,7 +4056,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "toronto-city-hall",
@@ -4118,7 +4167,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "toronto-dominion-centre",
@@ -4232,7 +4282,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "union-station",
@@ -4326,7 +4377,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "city": "Toronto"
     },
     {
       "id": "555-california-street",

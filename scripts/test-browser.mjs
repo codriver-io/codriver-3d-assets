@@ -15,7 +15,7 @@ try{
  assert.ok(await page.locator('.brand img').evaluate(img=>img.complete&&img.naturalWidth>0),'Helmet logo loaded');
  await page.locator('[data-kind="building"]').click();assert.equal(await page.locator('#list .asset').count(),catalog.assets.filter(a=>a.kind==='building').length);
  await page.locator('#search').fill('Habitat');assert.equal(await page.locator('#list .asset').count(),1);
- await page.locator('#search').fill('');await page.selectOption('#city','Paris');
+ await page.locator('#search').fill('');await page.selectOption('#city',{label:'— — Paris'});
  assert.equal(await page.locator('#list .asset').count(),catalog.assets.filter(a=>a.kind==='building'&&a.location.includes('Paris')).length);
  await page.locator('#search').fill('not-a-real-model');assert.ok(await page.locator('#empty').isVisible());
  await page.locator('#empty-reset').click();await page.locator('#search').fill('Montreal');
@@ -40,6 +40,49 @@ try{
  await page.locator('[data-id="pont-jacques-cartier"]').click();await page.locator('#close-detail').click();
  await page.locator('#search').fill('');
  await page.setViewportSize({width:1200,height:900});
+ // Geographic paths, keyboard collapse, outbound contract and responsive themes.
+ for (const [key,value] of [['continent','Europe'],['country','Canada'],['region','Québec'],['city','Paris']]) {
+  await page.goto(base+'/?'+new URLSearchParams({[key]:value}));
+  await page.waitForSelector('#list .asset');
+  const places=JSON.parse(await readFile('dist/places.json'));
+  const expected=catalog.assets.filter(e => key==='city' ? e.city===value : places[e.city][key]===value);
+  assert.equal(await page.locator('#list .asset').count(),expected.length, `${key} deep link`);
+  assert.equal(new URL(page.url()).searchParams.get(key),value);
+ }
+ await page.goto(base+'/?country=Canada&region='+encodeURIComponent('Québec')+'&asset=pont-jacques-cartier');
+ await page.waitForSelector('#detail .app-link');
+ const openUrl = new URL(await page.locator('#detail .app-link').getAttribute('href'));
+ const model = catalog.assets.find(e => e.id==='pont-jacques-cartier');
+ assert.equal(openUrl.origin,'https://app.codriver.io');
+ assert.equal(openUrl.searchParams.get('at'),`${model.model.origin[1]},${model.model.origin[0]}`);
+ assert.equal(openUrl.searchParams.get('view'),'cityscape');
+ assert.match(await page.locator('#detail .app-link').innerText(),/Premium required/);
+ assert.equal(await page.locator('#detail .app-link').getAttribute('target'),'_blank');
+ assert.equal(await page.locator('#detail .app-link').getAttribute('rel'),'noopener');
+ const summary=page.locator('.place-continent > summary').first();
+ await summary.focus();await page.keyboard.press('Enter');
+ assert.equal(await summary.evaluate(s=>s.parentElement.open),false,'Keyboard collapses geographic section');
+ await page.keyboard.press('Enter');
+ for(const theme of ['light','dark']) {
+  await page.emulateMedia({colorScheme:theme});
+  await page.setViewportSize({width:1440,height:1100});
+  await page.frameLocator('#detail iframe').locator('#metrics').filter({hasText:'triangles'}).waitFor({state:'attached'});
+  await page.evaluate(()=>{document.activeElement?.blur();window.scrollTo({top:document.querySelector('#library').offsetTop,behavior:'instant'});});
+  await page.screenshot({path:`${out}/grouped-desktop-${theme}.png`});
+  await page.setViewportSize({width:390,height:844});
+  await page.locator('#library').scrollIntoViewIfNeeded();
+  await page.setViewportSize({width:320,height:740});
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`${theme} narrow-phone overflow`);
+  await page.setViewportSize({width:390,height:844});
+  await page.evaluate(()=>window.scrollTo({top:document.querySelector('#library').offsetTop,behavior:'instant'}));
+  await page.screenshot({path:`${out}/grouped-phone-${theme}.png`});
+  await page.locator('[data-id="pont-jacques-cartier"]').click();
+  await page.frameLocator('#mobile-detail iframe').locator('#metrics').filter({hasText:'triangles'}).waitFor({state:'attached'});
+  await page.locator('#mobile-detail .app-link').scrollIntoViewIfNeeded();
+  await page.screenshot({path:`${out}/open-in-codriver-phone-${theme}.png`});
+  await page.locator('#close-detail').click();
+ }
+ await page.emulateMedia({colorScheme:'light'});await page.setViewportSize({width:1200,height:900});
  for(const entry of catalog.assets){
   await page.goto(base+'/asset-preview.html?asset='+entry.id);
   await page.waitForFunction(()=>document.querySelector('#metrics')?.textContent.includes('triangles'),null,{timeout:30000});
