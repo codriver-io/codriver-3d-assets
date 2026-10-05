@@ -1,0 +1,65 @@
+{
+  "id": "teatro-nacional-de-costa-rica",
+  "name": "Teatro Nacional de Costa Rica",
+  "kind": "building",
+  "origin": [
+    -84.07697215,
+    9.93315805
+  ],
+  "height": 26,
+  "padM": 41,
+  "frontageBearing": 263.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Original procedural exterior; OSM plan 72.74 × 32.46 m, orientation baked once. Vertical dimensions, stage-house profile, side/rear windows and simplified rooftop allegories estimated from photographs. No survey height found; no textures or reference meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/teatro-nacional-de-costa-rica-near.glb",
+      "bytes": 1262872,
+      "triangles": 31624,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -36.83159637451172,
+          0,
+          -19.743947982788086
+        ],
+        "max": [
+          37.25351333618164,
+          26.104976654052734,
+          19.83766746520996
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/teatro-nacional-de-costa-rica-far.glb",
+      "bytes": 304160,
+      "triangles": 7620,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -36.83159637451172,
+          0,
+          -19.743947982788086
+        ],
+        "max": [
+          37.25351333618164,
+          26,
+          19.83766746520996
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/teatro-nacional-de-costa-rica/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
