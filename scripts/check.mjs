@@ -5,8 +5,15 @@ import { ROOT, loadAssetCatalog, glbMetrics } from './asset-catalog.mjs';
 
 const catalog=await loadAssetCatalog(),out=resolve(ROOT,'dist');
 assert.ok(catalog.assets.length>0);
+const places=JSON.parse(await readFile(resolve(ROOT,'prototypes/assets3d/places.json')));
+assert.deepEqual(JSON.parse(await readFile(resolve(out,'places.json'))),places);
+for(const [city,place] of Object.entries(places)){
+  assert.ok(place.country && place.continent, `Incomplete geography: ${city}`);
+  assert.equal(!!place.region,place.continent==='North America', `Province/state required only for North America: ${city}`);
+}
 let variants=0;
 for(const entry of catalog.assets){
+  assert.ok(places[entry.city], `${entry.id}: missing geography for city ${entry.city}`);
   assert.equal(entry.status,'ready');assert.equal(entry.license,'CC-BY-4.0');assert.equal(entry.codeLicense,'MIT');
   assert.ok(entry.source.url.startsWith('https://github.com/codriver-io/codriver-3d-assets/blob/main/'));
   for(const view of [entry.inspection,...entry.inspection.views])await access(resolve(out,view.url.slice(1).split('?')[0]));
