@@ -11376,6 +11376,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "arlington-memorial-bridge",
+      "name": "Arlington Memorial Bridge",
+      "kind": "bridge",
+      "location": "Washington, D.C., United States — Potomac River",
+      "status": "ready",
+      "description": "Original procedural model of the current neoclassical granite bridge: nine river arches, two bank road openings, pier eagle medallions, balustrades, globe lamps, west pylons and east gilded horsemen.",
+      "manifest": "/models/bridges/arlington-memorial-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/arlington-memorial-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks arlington-memorial-bridge --no-check",
+        "provenance": "Original texture-free procedural geometry, Codriver, October 2026. Mapped roadway and outline © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photographs: Arlington Memorial Bridge 2020c and renovation 2019a, Antony-22, CC BY-SA 4.0; Arts of War after regilding Washington DC 2026-07-31, G. Edward Johnson, CC BY 4.0. No source photography or third-party mesh redistributed. Historic unbuilt proposal drawings in the dossier excluded.",
+        "references": [
+          {
+            "label": "NPS National Register nomination — dimensions and ornament",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/80000346_text"
+          },
+          {
+            "label": "NPS current fixed-span rehabilitation",
+            "url": "https://www.nps.gov/gwmp/learn/management/amb-rehabilitation.htm"
+          },
+          {
+            "label": "Commons 2020 granite arch elevation, Antony-22, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Arlington_Memorial_Bridge_2020c.jpg"
+          },
+          {
+            "label": "Commons 2019 central span fascia, Antony-22, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Arlington_Memorial_Bridge_renovation_2019a.jpg"
+          },
+          {
+            "label": "Commons current gilded horsemen, G. Edward Johnson, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Arlington_Memorial_Bridge_Arts_of_War_after_regilding_Washington_DC_2026-07-31_09-33-26.jpg"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/368707612"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arlington-memorial-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=arlington-memorial-bridge",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=tower"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=arlington-memorial-bridge&view=detail"
+          }
+        ]
+      },
+      "notes": "NPS dimensions: 659.3 m structural length, 27.432 m between rails, 18.288 m roadway, 4.572 m walks; mapped roadway extends 670 m. Deck datum 9.5 m, arch rises, ashlar/voussoir joints, colours, lamp spacing and sculptural details are photographic estimates. Flat map cannot reproduce river/bank relief; ramps extend 45 m onto each mapped approach and 105 m into bridge ends (9.5 percent steepest grade). Eagles, bison, equestrians and companion figures are intentionally simplified original geometry; no exact sculpture reproduction. World mode requires separate terrain verification. No shared files changed. World west approach is visibly faceted at the divided junction; one common approach corridor simplifies the fork. Review with HD lane service before rollout.",
+      "documentation": "docs/assets/top-cities-arlington-memorial-bridge.md",
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
