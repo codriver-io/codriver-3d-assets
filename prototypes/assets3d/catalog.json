@@ -12285,6 +12285,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "margaret-mcdermott-bridge",
+      "name": "Margaret McDermott Bridge",
+      "kind": "bridge",
+      "status": "ready",
+      "location": "Dallas, Texas, United States",
+      "description": "I-30 over the Trinity River: two white fork-foot thrust arches suspend narrow cycle/pedestrian spans outside an independent concrete freeway.",
+      "manifest": "/models/bridges/margaret-mcdermott-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/margaret-mcdermott-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks margaret-mcdermott-bridge --no-check",
+        "provenance": "Original texture-free procedural model authored 2026-10-05; no traced or imported mesh. Placement derived from supplied OSM roadway and cycle-path geometry, © OpenStreetMap contributors, ODbL 1.0. Visual studies only: 20160730-DSC 9933, Ryanussery, CC BY-SA 4.0; MMB Dallas Nima2, Nightryder84, CC BY-SA 4.0; Margaret-McDermott-bridge, Art davis, CC BY-SA 4.0. Photos remain in ignored scratch and are not distributed.",
+        "references": [
+          {
+            "label": "Engineer: span, rise above deck and pedestrian cross-section",
+            "url": "https://www.huitt-zollars.com/projects/bridges/margaret-mcdermott-pedestrian-bridge"
+          },
+          {
+            "label": "Foundation contractor: 1,125 ft span, 350 ft crown, split foot foundations",
+            "url": "https://texas-shafts.com/project/margaret-mcdermott-bridge/"
+          },
+          {
+            "label": "Ryanussery construction photograph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:20160730-DSC_9933.jpg"
+          },
+          {
+            "label": "Nightryder84 aerial, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:MMB_Dallas_Nima2.jpg"
+          },
+          {
+            "label": "Art davis construction photograph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Margaret-McDermott-bridge.jpg"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/1275449056"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/margaret-mcdermott-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=margaret-mcdermott-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=margaret-mcdermott-bridge&view=overview"
+          },
+          {
+            "label": "Arch elevation",
+            "url": "/asset-preview.html?asset=margaret-mcdermott-bridge&view=facade"
+          },
+          {
+            "label": "Opposite side",
+            "url": "/asset-preview.html?asset=margaret-mcdermott-bridge&view=back"
+          },
+          {
+            "label": "Above",
+            "url": "/asset-preview.html?asset=margaret-mcdermott-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=margaret-mcdermott-bridge&view=deck"
+          },
+          {
+            "label": "Arch foot openings",
+            "url": "/asset-preview.html?asset=margaret-mcdermott-bridge&view=tower"
+          }
+        ]
+      },
+      "notes": "Original mesh follows mapped east-northeast roadway alignment. Freeway cross-section, approach span count, girder sizes, cable pitch and fork openings are photographic estimates. Cityscape climbs to a 19.812 m deck over 250 m cubic ramps: steepest 11.89%. World uses an estimated 118 m river datum; DEM and live-provider checks are separate. The freeway is not carried by the decorative pedestrian arches. Far preserves both arches, fork holes, independent pedestrian spans and freeway gaps; reduces rail posts, piers, girders and suspenders. World west approach has a measured up-to-1.10 m offset from lateral DEM slope; shared transverse-level fitting was retained without renderer edits. Independent visual review is pending.",
+      "documentation": "docs/assets/top-cities-margaret-mcdermott-bridge.md",
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
