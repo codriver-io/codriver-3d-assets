@@ -11637,6 +11637,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "old-orange-county-courthouse",
+      "name": "Old Orange County Courthouse",
+      "kind": "building",
+      "location": "211 W. Santa Ana Boulevard · Santa Ana, California",
+      "status": "ready",
+      "description": "The present restored 1901 Romanesque Revival courthouse: red sandstone ashlar on a granite basement, a recessed three-arch entrance and broad stair, five upper central arches, paired hip-roofed ranges, pediments and arched dormers.",
+      "manifest": "/models/buildings/old-orange-county-courthouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/old-orange-county-courthouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks old-orange-county-courthouse --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-04 by Codriver from the dossier OSM way 228740921 and photographs. Mapped data © OpenStreetMap contributors, ODbL 1.0. Photographs used for visual comparison only: Old Orange County Courthouse Santa Ana CA.jpg (Nkpug, CC BY-SA 4.0); Old Orange County Courthouse, Santa Ana, California.jpg (Cbl62, CC BY-SA 3.0); \"Old Orange County Courthouse\" Santa Ana CA. - panoramio.jpg (Loco Steve, CC BY 3.0); cropped version and plaque photograph (Nkpug, CC BY-SA 4.0). Reference sheet retained only in ignored tmp; no photograph, third-party mesh, scan or texture is shipped.",
+        "references": [
+          {
+            "label": "OC Parks · identity, 1901 dedication, 30,000 square feet and granite/sandstone construction",
+            "url": "https://parks.oc.gov/historic-sites/old-orange-county-courthouse"
+          },
+          {
+            "label": "OC Parks · construction and restoration history",
+            "url": "https://parks.oc.gov/historic-sites/old-orange-county-courthouse/history"
+          },
+          {
+            "label": "OpenStreetMap · building outline 228740921",
+            "url": "https://www.openstreetmap.org/way/228740921"
+          },
+          {
+            "label": "Oblique facade · Nkpug, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_Orange_County_Courthouse_Santa_Ana_CA.jpg"
+          },
+          {
+            "label": "Front facade · Cbl62, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_Orange_County_Courthouse,_Santa_Ana,_California.jpg"
+          },
+          {
+            "label": "Frontal reference · Loco Steve, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:%22Old_Orange_County_Courthouse%22_Santa_Ana_CA._-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/old-orange-county-courthouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=overview",
+        "views": [
+          {
+            "label": "South-west overview",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=overview"
+          },
+          {
+            "label": "Santa Ana Boulevard facade",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=facade"
+          },
+          {
+            "label": "Opposite facade",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=back"
+          },
+          {
+            "label": "Roof and footprint",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=roof"
+          },
+          {
+            "label": "Street-level entrance",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=street"
+          },
+          {
+            "label": "Three-portal entrance detail",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=detail"
+          },
+          {
+            "label": "West facade",
+            "url": "/asset-preview.html?asset=old-orange-county-courthouse&view=side"
+          }
+        ]
+      },
+      "notes": "OSM outer wall envelope about 43.1 × 28.1 m; rotation -0.45 degrees baked into vertices. Second footprint ring is the authored entrance stair, not another OSM way. Photo estimates: eave 15.6 m, highest coping/finial 23.29 m, granite basement 2.7 m, window and roof dimensions. Rear elevation, roof junctions and exact stone courses are reconstructed; interior, carved foliage, lettering, flagpole, cannons, trees and site furniture are omitted. Eaves project up to 0.6 m beyond the mapped wall, stair extends 7.3 m beyond the central south wall. Ordinary window lighting at night is illustrative, not a surveyed illumination plan. Near has relief masonry, mullions and tile ribs; far preserves true window recesses, entrance arches and full roofline with simplified planar trim. No actual Tesla performance measurement; independent visual review remains with the coordinator.",
+      "documentation": "docs/assets/top-cities-old-orange-county-courthouse.md",
+      "city": "Santa Ana",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (14 released)
+## The collection (15 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -22,6 +22,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `united-states-capitol` | United States Capitol | Washington | building |
 | `arlington-memorial-bridge` | Arlington Memorial Bridge | Washington | bridge, road-fitted |
 | `edificio-coltejer` | Edificio Coltejer | Medellín | building |
+| `old-orange-county-courthouse` | Old Orange County Courthouse | Santa Ana | building |
 
 ## A landmark is a folder
 
