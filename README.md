@@ -4,8 +4,8 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 6 more cities: 128 landmarks and four
-reusable bridge components, 272 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 7 more cities: 129 landmarks and four
+reusable bridge components, 274 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
 **[Explore the public library](https://3d-assets.codriver.io/)** ·
@@ -61,7 +61,7 @@ Dubuc bridges. Build them with `pnpm build:quebec-landmarks`; the collection and
 are in [docs/quebec-landmarks.md](docs/quebec-landmarks.md).
 
 <!-- top-cities -->
-Top cities: London: Tower Bridge, Palace of Westminster and Elizabeth Tower, St Paul's Cathedral, The Shard; Amsterdam: Rijksmuseum, Amsterdam Centraal station; Madrid: Palacio Real de Madrid, Puerta de Alcalá; Dallas: Reunion Tower, Margaret Hunt Hill Bridge; Washington: Washington Monument, United States Capitol, Arlington Memorial Bridge; Medellín: Edificio Coltejer. Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
+Top cities: London: Tower Bridge, Palace of Westminster and Elizabeth Tower, St Paul's Cathedral, The Shard; Amsterdam: Rijksmuseum, Amsterdam Centraal station; Madrid: Palacio Real de Madrid, Puerta de Alcalá; Dallas: Reunion Tower, Margaret Hunt Hill Bridge; Washington: Washington Monument, United States Capitol, Arlington Memorial Bridge; Medellín: Edificio Coltejer; Santa Ana: Old Orange County Courthouse. Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
 <!-- /top-cities -->
 
 ## A look inside

@@ -1,0 +1,68 @@
+{
+  "id": "old-orange-county-courthouse",
+  "name": "Old Orange County Courthouse",
+  "kind": "building",
+  "origin": [
+    -117.8691702,
+    33.75021915
+  ],
+  "height": 23.29,
+  "padM": 29,
+  "frontageBearing": 180.45,
+  "rotationDeg": -0.45,
+  "eaveM": 15.6,
+  "graniteM": 2.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; granite basement starts at grade. No altitude or terrain stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present restored 1901 courthouse, without former tower. OSM way 228740921 supplies the outline and 0.45-degree grid skew; heights, roof pitch, window sizes and rear facade are estimated from photographs. Three recessed entry arches, granite stairs, five-window central arcade, hip roofs, gables, dormers and ashlar are modelled. Night window lighting is illustrative. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/old-orange-county-courthouse-near.glb",
+      "bytes": 1964180,
+      "triangles": 37209,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -22.091318130493164,
+          -2.3841858265427618e-8,
+          -14.535183906555176
+        ],
+        "max": [
+          21.851587295532227,
+          23.290000915527344,
+          18.51650047302246
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/old-orange-county-courthouse-far.glb",
+      "bytes": 220616,
+      "triangles": 4655,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -22.091318130493164,
+          -2.3841858265427618e-8,
+          -14.535183906555176
+        ],
+        "max": [
+          21.851587295532227,
+          23.290000915527344,
+          18.51650047302246
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/old-orange-county-courthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
