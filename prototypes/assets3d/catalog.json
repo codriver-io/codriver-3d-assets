@@ -13262,6 +13262,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "christopher-s-bond-bridge",
+      "name": "Christopher S. Bond Bridge",
+      "kind": "bridge",
+      "location": "I-29 / I-35 / US 71 over the Missouri River · Kansas City, Missouri",
+      "status": "ready",
+      "description": "Original single diamond-pylon cable-stayed freeway bridge: 40 inclined semi-fan stays, open upper portal and lower diamond, blue steel edge girders, broad seven-lane deck and column-bent approach spans, fitted to the mapped carriageways.",
+      "manifest": "/models/bridges/christopher-s-bond-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/christopher-s-bond-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks christopher-s-bond-bridge --no-check",
+        "provenance": "Original procedural geometry authored by Codriver 2026-10-05 from primary project dimensions and OSM roads/bridge outline (ODbL 1.0, © OpenStreetMap contributors), checked against photographs only; no third-party meshes or textures. Reference photographs remain in ignored scratch: Todd Wade, Christopher Bond Bridge U0T7762.jpg (CC BY 2.0); Smuckola, New Paseo Bridge, Kansas City, Missouri.jpg (CC BY-SA 4.0); Americasroof, Paseo-bridge2a.jpg (CC BY 3.0; construction context including the demolished predecessor).",
+        "references": [
+          {
+            "label": "Massman construction · dimensions and current bridge",
+            "url": "https://www.massman.net/massman-bridges/christopherbondbridge"
+          },
+          {
+            "label": "TRB · Parsons engineering paper abstract, main/back spans",
+            "url": "https://trid.trb.org/View/1125807"
+          },
+          {
+            "label": "FHWA · kcICON project and bridge construction",
+            "url": "https://www.fhwa.dot.gov/hfl/projects/mo_designbuild_i29_35_kansascity.pdf"
+          },
+          {
+            "label": "Engineering presentation · 550/451.5 ft spans",
+            "url": "https://eswp.com/wp-content/uploads/2015/04/IBC09OnSiteBro.pdf"
+          },
+          {
+            "label": "OSM · mapped bridge outline",
+            "url": "https://www.openstreetmap.org/way/708969114"
+          },
+          {
+            "label": "Todd Wade · side view, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Christopher_Bond_Bridge_U0T7762.jpg"
+          },
+          {
+            "label": "Smuckola · driving view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:New_Paseo_Bridge,_Kansas_City,_Missouri.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/christopher-s-bond-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=underside"
+          },
+          {
+            "label": "Approach",
+            "url": "/asset-preview.html?asset=christopher-s-bond-bridge&view=approach"
+          }
+        ]
+      },
+      "notes": "Published: pylon 314 ft (95.7072 m), deck 145 ft (44.196 m), main span 550 ft (167.64 m), back span 451.5 ft (137.6172 m). Mapped: origin from tower outline notches, two carriageways and approach alignments, bridge outline. Estimated: 25 m deck elevation, pylon sections/openings, girder depth, stay thickness, approach bent sections/spacing, lamps and lighting panels. The flat-map 350 m smooth ramps are a compromise, about 10.7% maximum grade; the 1,005 m approach-inclusive profile is not the 523 m structural length. Seven lanes reflect current OSM 3+4 configuration. No pavement textures, rivets, internal tower stairs or actual animated lighting. HD road paint and hardware performance not measured. Footings start at y=0; only thin deck/girder skirts at ramp feet extend down to -2.55 m and are buried on flat ground. Pylon centre projects 3.65 m from the chosen outline-notch anchor. Independent visual review is pending coordinator acceptance.",
+      "documentation": "docs/assets/top-cities-christopher-s-bond-bridge.md",
+      "city": "Kansas City",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

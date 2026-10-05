@@ -1,16 +1,13 @@
-// Christopher S. Bond Bridge, Kansas City.
-// STUB: the landmark's builder replaces this file. Contract: docs/3d-top-cities-landmarks.md.
 export const SPEC = {
-  id: 'christopher-s-bond-bridge', name: "Christopher S. Bond Bridge", kind: 'bridge',
-  ready: false, // true only once near/far GLBs are exported, verified and catalogued
-  origin: [-94.56622, 39.12412], // approximate; the builder sets it from the mapped footprint/alignment
-  height: 84, // m to the highest point, approximate
-  padM: 60,
-  frontageBearing: 0,
+  id: 'christopher-s-bond-bridge', name: 'Christopher S. Bond Bridge', kind: 'bridge', ready: true,
+  origin: [-94.56562945, 39.1229174], height: 95.7072, padM: 600, frontageBearing: 340,
 };
-export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
+export const PALETTES = {
+  light: { concrete: '#c9c6b7', steel: '#246073', cable: '#d8d9d0', asphalt: '#747c7f', rail: '#a5aeb0', paint: '#eeeae0', lamp: '#ece4c4', glow: '#527f98' },
+  dark: { concrete: '#a6a99f', steel: '#25576b', cable: '#939f9f', asphalt: '#303c47', rail: '#7c8e98', paint: '#bec4c2', lamp: '#ffdd9b', glow: '#4b93d4' },
+};
 export const MANIFEST = {
-  elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude.',
-  attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Stub: not yet authored.',
+  elevationDatum: 'Local flat-map grade y=0 represents the pylon foundation; heights are relative, not geodetic elevations. No DEM baked into the GLB.',
+  attribution: 'Original procedural geometry by Codriver. Mapped alignment and outline © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',
+  note: '2010 Kansas City bridge; 314 ft pylon, 145 ft deck, 550/451.5 ft spans. Deck elevation, member sections, approach supports and fittings are photographic estimates. Cityscape ramps are a visual convention; terrain certification is separate.',
 };
