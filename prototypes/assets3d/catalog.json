@@ -12202,6 +12202,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "lincoln-memorial",
+      "name": "Lincoln Memorial",
+      "kind": "building",
+      "location": "Washington, DC, United States",
+      "status": "ready",
+      "description": "Henry Bacon’s east-facing marble memorial: 36 fluted exterior Doric columns, two entrance columns, an open central doorway with seated Lincoln, broad two-flight stairs, terrace, urns, layered cornices, garland attic and three recessed skylights.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/lincoln-memorial/geometry.js",
+        "build": "pnpm build:top-cities-landmarks lincoln-memorial --no-check",
+        "provenance": "Original texture-free procedural geometry authored for Codriver 2026-10-05; no scan or traced third-party mesh. OSM way 398769543 and memorial parts 443679930–443679983 from the prepared 2026-10-04 dossier; main outline verified via the shared Overpass helper. © OpenStreetMap contributors, ODbL 1.0. Comparison-only Commons photographs, retained only in ignored scratch: Lincoln Memorial east side.JPG (Martin Falbisoner, CC BY-SA 3.0); Aerial view of Lincoln Memorial - east side EDIT.jpeg (Carol M. Highsmith, edit UpstateNYer, public domain); The Lincoln Memorial Statue, with inscription in background.jpg (MC BSU, public domain). Dossier sheet additionally includes US $5 series 2003 reverse.jpg (US government, public domain), Taft Harding Robert Lincoln 1922.jpg (National Photo Company, public domain), Signed copies of the 13th Amendment and Emancipation Proclamation.jpg and Concrete pylons, Lincoln Memorial Undercroft.jpg (Northern-Virginia-Photographer, CC0). No reference image or texture ships.",
+        "references": [
+          {
+            "label": "NPS building dimensions and materials",
+            "url": "https://www.nps.gov/linc/learn/historyculture/lincoln-memorial-building-statistics.htm"
+          },
+          {
+            "label": "NPS exterior architectural features",
+            "url": "https://www.nps.gov/linc/learn/historyculture/exterior-features.htm"
+          },
+          {
+            "label": "Mapped memorial outline",
+            "url": "https://www.openstreetmap.org/way/398769543"
+          },
+          {
+            "label": "East facade, Martin Falbisoner, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_east_side.JPG"
+          },
+          {
+            "label": "Aerial roof reference, Highsmith / UpstateNYer, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Lincoln_Memorial_-_east_side_EDIT.jpeg"
+          },
+          {
+            "label": "Seated Lincoln, MC BSU, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Lincoln_Memorial_Statue,_with_inscription_in_background.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lincoln-memorial/geometry.js"
+      },
+      "notes": "Sourced overall height, colonnade dimensions, column height/diameter/count, platform rise, retaining-wall height, urn height and statue/pedestal scale. Mapped orientation and provider envelope. Estimated chamber-wall placement, stair division, capital profile, relief and roof framing. Lincoln is a stylised seated figure, not a portrait-quality sculpture; inscription lettering, murals, drum joints, precise eagles/lions/palmettes and undercroft are omitted. Far removes flutes, wreath medallions and palmettes, coarsens stairs/skylight frames, retaining every exterior column and entrance opening. No hardware performance measured.",
+      "documentation": "docs/assets/top-cities-lincoln-memorial.md",
+      "manifest": "/models/buildings/lincoln-memorial.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=lincoln-memorial&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=lincoln-memorial&view=plan"
+          }
+        ]
+      },
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
