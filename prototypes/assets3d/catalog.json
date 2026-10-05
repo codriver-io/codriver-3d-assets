@@ -11463,6 +11463,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "the-shard",
+      "name": "The Shard",
+      "kind": "building",
+      "location": "London, United Kingdom",
+      "status": "ready",
+      "description": "Original procedural model of Renzo Piano’s 309.6 m eight-shard glass tower, with recessed facade fractures, an open unequal crown and the two mapped backpack wings.",
+      "manifest": "/models/buildings/the-shard.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/the-shard/geometry.js",
+        "build": "pnpm build:top-cities-landmarks the-shard --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-04; no external mesh or texture. Mapped outlines and building parts © OpenStreetMap contributors, ODbL 1.0. Reference-only photos retained in ignored tmp; no images are redistributed. Commons references: Shard London Bridge, April 2011 — aurélien, CC BY-SA 2.0; The early morning Shard — Quist, CC BY-SA 4.0; The Shard, Inauguration Lightshow, 2012 — Richard Goldschmidt, CC BY 2.0; Shard from Great Tower Street — EEPaul, CC BY 2.0; Shard London Bridge 4 and Shard 4 — George Rex Photography, CC BY-SA 2.0. Additional completed-building references on RPBW project page: aerial by Chris Martin and street view by Michel Denancé, all rights reserved, reference only.",
+        "references": [
+          {
+            "label": "Operator: height, storeys, address, viewing floors",
+            "url": "https://www.the-shard.com/about/"
+          },
+          {
+            "label": "Renzo Piano Building Workshop: eight shards and facade fractures",
+            "url": "https://www.rpbw.com/project/the-shard-london-bridge-tower"
+          },
+          {
+            "label": "OpenStreetMap main building and linked parts",
+            "url": "https://www.openstreetmap.org/way/31110737"
+          },
+          {
+            "label": "Commons street reference — EEPaul, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Shard_from_Great_Tower_Street.jpg"
+          },
+          {
+            "label": "Commons lightshow — Richard Goldschmidt, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Shard,_Inauguration_Lightshow,_2012.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-shard/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=the-shard",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=the-shard&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=the-shard&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=the-shard&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=the-shard&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=the-shard&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=the-shard&view=detail"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=the-shard&view=entrance"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=the-shard&view=plan"
+          }
+        ]
+      },
+      "notes": "Eight sloping planar shards and open crown retained in both LODs; 309.6 m sourced height. Base outline and 70/74 m wings mapped from OSM. Taper law, uneven tip profiles, 252 m closed deck, 3.35 m facade rhythm, glazing colours, winter-garden recesses, lobby and window lighting estimated; individual tip levels are not surveyed. Straight simplified backpack edges replace finer real canopy/roof curvature. No station, News Building, Shard Place, plaza, interiors, blinds, text, antennas or lightshow animation. Independent review and application placement remain separate gates.",
+      "documentation": "docs/assets/top-cities-the-shard.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

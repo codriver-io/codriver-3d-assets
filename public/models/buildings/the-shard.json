@@ -1,0 +1,65 @@
+{
+  "id": "the-shard",
+  "name": "The Shard",
+  "kind": "building",
+  "origin": [
+    -0.0865,
+    51.5045
+  ],
+  "height": 309.6,
+  "padM": 70,
+  "frontageBearing": 213.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map street grade y=0; rigid base, no terrain or absolute altitude baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "309.6 m height and eight glass shards follow the operator and RPBW. OSM supplies base outlines, bearings and 70/74 m annex heights. Taper, uneven blade tips, floor/bay pitch, mullions, lighting and entrances are photo-based estimates. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/the-shard-near.glb",
+      "bytes": 1497240,
+      "triangles": 37358,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.61199951171875,
+          0,
+          -32.32697296142578
+        ],
+        "max": [
+          38.589813232421875,
+          309.6000061035156,
+          61.26686096191406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/the-shard-far.glb",
+      "bytes": 352224,
+      "triangles": 7122,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.61199951171875,
+          0,
+          -32.32697296142578
+        ],
+        "max": [
+          38.602264404296875,
+          309.6000061035156,
+          61.27682113647461
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-shard/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
