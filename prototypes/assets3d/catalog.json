@@ -12728,6 +12728,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tour-part-dieu",
+      "name": "Tour Part-Dieu (le Crayon)",
+      "kind": "building",
+      "location": "129 rue Servient · Lyon, France",
+      "status": "ready",
+      "description": "The 165 m brown cylindrical landmark completed in 1977: 71 perimeter piers, deep-set rectangular window grid, double-height glazed lobby, pale crown collar and a 23 m square glass pyramid. Original texture-free procedural exterior.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tour-part-dieu/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tour-part-dieu --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-05. Height and column count from Ville de Lyon; roof heights and geographic outlines from OpenStreetMap contributors (ODbL 1.0), fetched through the shared helper on 2026-10-05. Reference photographs remain in ignored scratch only: Tour Part-Dieu (2022), Matgrt, CC BY-SA 4.0; Caluire-et-Cuire skyline, Romainbehar, CC0; Esplanade Charles-de-Gaulle entrance, Benoît Prieur, CC0. The fourth dossier image is a station clock and was excluded as unrelated. No third-party mesh, photograph, scan or texture is included in the exports.",
+        "references": [
+          {
+            "label": "Ville de Lyon — Tour du Crédit Lyonnais: 165 m, 71 columns, 1974–1977, brown exterior and glass pyramid",
+            "url": "https://www.lyon.fr/lieu/architecture-contemporaine/tour-du-credit-lyonnais"
+          },
+          {
+            "label": "Radisson Blu Lyon — current hotel identity and address",
+            "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-lyon"
+          },
+          {
+            "label": "OSM way 62337459 — tower outline",
+            "url": "https://www.openstreetmap.org/way/62337459"
+          },
+          {
+            "label": "OSM way 250863538 — 141.9 m shell, 42 levels",
+            "url": "https://www.openstreetmap.org/way/250863538"
+          },
+          {
+            "label": "OSM way 163278566 — mapped square pyramid, 23 m rise",
+            "url": "https://www.openstreetmap.org/way/163278566"
+          },
+          {
+            "label": "Tour Part-Dieu (2022) — Matgrt, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tour_Part-Dieu_(2022).jpg"
+          },
+          {
+            "label": "Esplanade Charles-de-Gaulle, entrance — Benoît Prieur, CC0; diameter plaque",
+            "url": "https://commons.wikimedia.org/wiki/File:Esplanade_Charles-de-Gaulle_(Lyon)_-_entr%C3%A9e_de_la_Tour_Part-Dieu.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-part-dieu/geometry.js"
+      },
+      "notes": "Estimated: 40 window rows above double-height lobby, sill/reveal/mullion sizes, bronze entrance location/portal framing, glazing subdivision, material colours and sparse night occupancy. Near retains 71 piers; far groups bays into 48 and floor pairs into 20 rows. Opaque glass; no interior, hotel/LCL lettering, roof maintenance equipment, plaza paving or adjoining eastern low-rise office annex. Owns the two duplicate cylindrical shells and the roof outline only. Rotation of the square crown is baked directly from mapped corners.",
+      "documentation": "docs/assets/top-cities-tour-part-dieu.md",
+      "manifest": "/models/buildings/tour-part-dieu.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=tour-part-dieu&view=overview",
+        "views": [
+          {
+            "label": "Whole pencil tower",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=overview"
+          },
+          {
+            "label": "West facade",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=facade"
+          },
+          {
+            "label": "Opposite facade",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=back"
+          },
+          {
+            "label": "Square glass pyramid",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=roof"
+          },
+          {
+            "label": "Street perspective",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=street"
+          },
+          {
+            "label": "Bronze entrance portal",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=entrance"
+          },
+          {
+            "label": "Recessed window grid",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=detail"
+          },
+          {
+            "label": "Mapped orientation",
+            "url": "/asset-preview.html?asset=tour-part-dieu&view=plan"
+          }
+        ]
+      },
+      "city": "Lyon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
