@@ -13179,6 +13179,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "romanian-athenaeum",
+      "name": "Romanian Athenaeum",
+      "kind": "building",
+      "location": "Bucharest, Romania",
+      "status": "ready",
+      "description": "Original texture-free Ateneul Român with an open six-column Ionic portico, five gilded medallions, triangular pediment, twenty oculus windows with lyres, ribbed zinc dome and double-tier lantern.",
+      "manifest": "/models/buildings/romanian-athenaeum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/romanian-athenaeum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks romanian-athenaeum --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-05, using metre-scale OSM footprint and building:parts (© OpenStreetMap contributors, ODbL 1.0), accessed through the shared Overpass helper; no third-party mesh or tracing. Reference-only photographs stay in ignored scratch: Diego Delso, 'Ateneo Rumano, Bucarest, Rumanía, 2016-05-29, DD 73.jpg', CC BY-SA 4.0; Albert Galleron, 'Albert Galleron - Atheneul Român project.jpg', public domain; Luca Volpi (Goldmund100), 'Ateneul Român Facade night.jpg', CC BY-SA 3.0. Dossier sheet also contains interior views (fusion-of-horizons, 'Flickr - fusion-of-horizons - Ateneul Român (4).jpg', CC BY 2.0; nl:User:Al, 'Ateneul Roman binnenkant.jpg', CC BY-SA 3.0; Goldmund100, 'Ateneul Român stage.jpg', CC BY-SA 3.0); interior content was not modeled. No image, texture, capture or external geometry ships.",
+        "references": [
+          {
+            "label": "Identity, architect and 1888 opening — Romanian Athenaeum",
+            "url": "https://en.wikipedia.org/wiki/Romanian_Athenaeum"
+          },
+          {
+            "label": "Construction history: 29.16 m dome, twenty round windows, published 41 m height (conflicts with detailed OSM) — Revista Constructiilor, February 2011, page 8",
+            "url": "https://www.revistaconstructiilor.eu/wp-content/uploads/2011/02/nr_67_februarie_2011.pdf"
+          },
+          {
+            "label": "Mapped complete building envelope, OSM way 16291602",
+            "url": "https://www.openstreetmap.org/way/16291602"
+          },
+          {
+            "label": "Front photograph — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ateneo_Rumano,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_73.jpg"
+          },
+          {
+            "label": "Architect original elevation — Albert Galleron, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Galleron_-_Atheneul_Rom%C3%A2n_project.jpg"
+          },
+          {
+            "label": "Night facade — Luca Volpi / Goldmund100, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ateneul_Rom%C3%A2n_Facade_night.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/romanian-athenaeum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=romanian-athenaeum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=romanian-athenaeum&view=top"
+          }
+        ]
+      },
+      "notes": "Detailed OSM part heights and photograph proportions support 31 m to the finial, used with coordinator agreement; the parent outline and published article claim 41 m, an unresolved source discrepancy, not a verified surveyed dimension. External drum/dome diameter 29.16 m is published; outline and southwest frontage bearing 235.36965 degrees are mapped. Individual heights, profiles, Ionic volutes, lyres, shallow bust reliefs and rear annex roof reconstruction are estimated. The 28.5 m concert-hall diameter refers to the interior and is not used as the external diameter. Lettering, full sculptures, garden, interiors and basement are omitted. Far retains every portico bay and twenty oculi but drops fine fluting, grilles and dentils. No independent reviewer or app/device evidence yet.",
+      "documentation": "docs/assets/top-cities-romanian-athenaeum.md",
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
