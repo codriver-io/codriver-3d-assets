@@ -14948,6 +14948,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fairmont-empress",
+      "name": "Fairmont Empress",
+      "kind": "building",
+      "location": "721 Government Street, Victoria, British Columbia, Canada",
+      "status": "ready",
+      "description": "Original procedural post-restoration Empress hotel: warm brick and pale stone, paired tall harbour gabled pavilions, projecting oriel windows, polygonal turrets with green copper caps, steep dormered slate-grey broad roofs, four open Tudor entrance arches and asymmetric later hotel wings.",
+      "manifest": "/models/buildings/fairmont-empress.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fairmont-empress/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fairmont-empress --no-check",
+        "provenance": "Original procedural geometry, Codriver, 2026-10-06. Hotel mapped from OpenStreetMap relation 1371841 and eleven member ways through the shared Overpass helper; © OpenStreetMap contributors, ODbL 1.0. Comparison photos only: Dllu (The Fairmont Empress, blue hour, CC BY-SA 4.0); Adam Jones (Architectural Detail - Empress Hotel - Victoria - BC - Canada - 01, CC BY-SA 2.0); Michal Klajban (Fairmont Empress, Victoria, British Columbia, Canada 08, CC BY-SA 4.0); Wpcpey (Fairmont Empress Lobby Lounge 2018, CC BY-SA 4.0, supplied contact sheet only); NevinThompson (Empress hotel may 2024, CC BY-SA 4.0); R6, State & Private Forestry, Forest Health Protection (1930. Empress Hotel. Victoria, BC. Canada., public domain). No copied mesh, scan, photograph, texture or third-party font in source or GLB.",
+        "references": [
+          {
+            "label": "Fairmont Empress · official hotel site",
+            "url": "https://www.fairmont.com/en/hotels/victoria/fairmont-empress.html"
+          },
+          {
+            "label": "The Empress · published 35.4 m, eight levels, 1908 and restoration history",
+            "url": "https://en.wikipedia.org/wiki/The_Empress_(hotel)"
+          },
+          {
+            "label": "Mapped hotel envelope · OSM relation 1371841",
+            "url": "https://www.openstreetmap.org/relation/1371841"
+          },
+          {
+            "label": "File:The Fairmont Empress, blue hour.jpg · Dllu · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Fairmont_Empress,_blue_hour.jpg"
+          },
+          {
+            "label": "File:Architectural Detail - Empress Hotel - Victoria - BC - Canada - 01 (16662647148) (2).jpg · Adam Jones from Kelowna, BC, Canada · CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Architectural_Detail_-_Empress_Hotel_-_Victoria_-_BC_-_Canada_-_01_(16662647148)_(2).jpg"
+          },
+          {
+            "label": "File:Fairmont Empress, Victoria, British Columbia, Canada 08.jpg · Michal Klajban · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Empress,_Victoria,_British_Columbia,_Canada_08.jpg"
+          },
+          {
+            "label": "File:Fairmont Empress Lobby Lounge 2018.jpg · Wpcpey · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Empress_Lobby_Lounge_2018.jpg"
+          },
+          {
+            "label": "File:Empress hotel may 2024.jpg · NevinThompson · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Empress_hotel_may_2024.jpg"
+          },
+          {
+            "label": "File:1930. Empress Hotel. Victoria, BC. Canada. (34182327803).jpg · R6, State &amp; Private Forestry, Forest Health Protection · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:1930._Empress_Hotel._Victoria,_BC._Canada._(34182327803).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fairmont-empress/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=fairmont-empress&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=detail"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=fairmont-empress&view=north"
+          }
+        ]
+      },
+      "notes": "35.4 m and eight storeys are published and mapped; footprint and orientation from OSM. Roof heights, facade bay pitch, window sizes, turrets, chimneys and porch dimensions are photo estimates. Independent review revision lowers main pavilion eaves to 23.4 m, raises roof tops to 34.4 m and pointed gables to 32.6 m, retaining the 35.4 m finials. Broad roof planes are dark slate grey with green copper only on turret caps, describing reference appearance rather than a material survey. Northeast wing and its connecting link follow the mapped asymmetrical envelope but use simplified roofs and facade detail. Stone carving, flags, hotel lettering, landscaping and interiors omitted. Cornices and turrets may extend roughly 1.5 m past the main mapped frontage. Far retains every block, gable, turret and porch opening, with simplified facade detail. No Tesla hardware or application terrain verification. Independent reviewer acceptance remains a coordinator gate.",
+      "documentation": "docs/assets/top-cities-fairmont-empress.md",
+      "city": "Victoria",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

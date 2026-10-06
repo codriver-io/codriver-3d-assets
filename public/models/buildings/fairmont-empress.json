@@ -1,0 +1,66 @@
+{
+  "id": "fairmont-empress",
+  "name": "Fairmont Empress",
+  "kind": "building",
+  "origin": [
+    -123.36797,
+    48.42185
+  ],
+  "height": 35.4,
+  "padM": 130,
+  "frontageBearing": 278.5,
+  "gridAngle": 8.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid hotel foundations at local flat-map grade y=0; no absolute elevation or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "35.4 m published overall height, eight levels including roof storeys. OSM relation 1371841 fixes the asymmetrical hotel envelope. Facade rhythm, roofs and ornament are photo estimates. Conference Centre and Conservatory excluded. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fairmont-empress-near.glb",
+      "bytes": 1934164,
+      "triangles": 35811,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.9564642906188965,
+          0,
+          -73.60444641113281
+        ],
+        "max": [
+          105.46562957763672,
+          35.400001525878906,
+          79.9607925415039
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fairmont-empress-far.glb",
+      "bytes": 398628,
+      "triangles": 7303,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.9564642906188965,
+          0,
+          -73.60444641113281
+        ],
+        "max": [
+          105.46562957763672,
+          35.400001525878906,
+          79.9607925415039
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fairmont-empress/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
