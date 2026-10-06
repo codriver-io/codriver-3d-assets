@@ -14544,6 +14544,117 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "harbour-centre",
+      "name": "Harbour Centre (Vancouver Lookout)",
+      "kind": "building",
+      "location": "555 West Hastings Street · Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Off-axis flying-saucer Lookout with two sloping glazed rings and pale eaves above the 28-row concrete office tower, twin exterior glass elevators, stepped Spencer masonry podium and collar aerial mast.",
+      "manifest": "/models/buildings/harbour-centre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/harbour-centre/geometry.js",
+        "build": "pnpm build:top-cities-landmarks harbour-centre --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-06; no external mesh, scan, textures or retained captures. Mapped outlines, bearing and building-part heights from the prepared Overpass dossier dated 2026-10-06; © OpenStreetMap contributors, ODbL 1.0. Photo references used only in ignored local comparison files: Diego Delso (CC BY-SA 4.0), David Herrera (CC BY 2.0), Wpcpey (CC BY-SA 4.0), Xicotencatl (CC BY-SA 4.0), Dietmar Rabich (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Harbour Centre facts / published height conventions",
+            "url": "https://en.wikipedia.org/wiki/Harbour_Centre"
+          },
+          {
+            "label": "CTBUH architectural height, office floors and completion",
+            "url": "https://www.skyscrapercenter.com/building/harbour-centre/4144"
+          },
+          {
+            "label": "Building plans height and entrance grade conventions",
+            "url": "https://skyscraperpage.com/b60/vancouver/harbour-centre"
+          },
+          {
+            "label": "Official Vancouver Lookout",
+            "url": "https://vancouverlookout.com/"
+          },
+          {
+            "label": "OSM full Harbour Centre envelope",
+            "url": "https://www.openstreetmap.org/way/1371268997"
+          },
+          {
+            "label": "OSM office tower part",
+            "url": "https://www.openstreetmap.org/way/363385368"
+          },
+          {
+            "label": "OSM saucer maximum envelope",
+            "url": "https://www.openstreetmap.org/way/363385371"
+          },
+          {
+            "label": "File:Harbour Centre, Vancouver, Canadá, 2017-08-14, DD 30.jpg · Diego Delso (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Harbour_Centre,_Vancouver,_Canad%C3%A1,_2017-08-14,_DD_30.jpg"
+          },
+          {
+            "label": "File:Vancouver Lookout, Harbour Centre.jpg · David Herrera (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Lookout,_Harbour_Centre.jpg"
+          },
+          {
+            "label": "File:Vancouver Lookout Lobby 2018.jpg · Wpcpey (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Lookout_Lobby_2018.jpg"
+          },
+          {
+            "label": "File:Vancouver Lookout Interior 2018.jpg · Wpcpey (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Lookout_Interior_2018.jpg"
+          },
+          {
+            "label": "File:Spencer Building Vancouver 02.JPG · Xicotencatl (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Spencer_Building_Vancouver_02.JPG"
+          },
+          {
+            "label": "File:Vancouver (BC, Canada), Harbour Centre -- 2022 -- 1843.jpg · Dietmar Rabich (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Harbour_Centre_--_2022_--_1843.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/harbour-centre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=harbour-centre&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=harbour-centre&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=harbour-centre&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=harbour-centre&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=harbour-centre&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=harbour-centre&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=harbour-centre&view=detail"
+          },
+          {
+            "label": "Podium",
+            "url": "/asset-preview.html?asset=harbour-centre&view=podium"
+          }
+        ]
+      },
+      "notes": "Mapped office roof 116 m, saucer envelope 38.5 m, rim about 148 m and mast about 177 m; model tip 177.1 m follows the published pinnacle convention. CTBUH 147 m is architectural height, not the office roof; advertised 168 m elevation is not used as local-grade geometry. Saucer bands, roof profile, windows/reveals, static glass elevator cabins, mast collars, simplified flag and Spencer decoration are photo-based estimates. Podium interiors, signage text, small antennas and moving lifts/restaurant are omitted; common flat podium base simplifies the actual slope. Night uses sparse warm windows, not a measured lighting survey. Independent review accepted PASS-WITH-NITS, recognisability 5/5; palette follow-up darkens tower/underside concrete to warm tan #a8957c (dark #635d55), retaining pale eaves and cream Spencer masonry. In-app placement and Tesla hardware performance remain untested.",
+      "documentation": "docs/assets/top-cities-harbour-centre.md",
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
