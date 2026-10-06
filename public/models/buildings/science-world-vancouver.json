@@ -1,0 +1,270 @@
+{
+  "id": "science-world-vancouver",
+  "name": "Science World",
+  "kind": "building",
+  "origin": [
+    -123.10391135,
+    49.27334995
+  ],
+  "height": 47.2,
+  "padM": 78,
+  "frontageBearing": 115,
+  "diameter": 40,
+  "sphereCenterY": 27,
+  "collarY": 15,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -123.1039066,
+          49.2736641
+        ],
+        [
+          -123.1037592,
+          49.2736502
+        ],
+        [
+          -123.1036119,
+          49.2735883
+        ],
+        [
+          -123.1035758,
+          49.2736267
+        ],
+        [
+          -123.1036538,
+          49.2736656
+        ],
+        [
+          -123.1035174,
+          49.2738134
+        ],
+        [
+          -123.1034339,
+          49.2737807
+        ],
+        [
+          -123.1033476,
+          49.273866
+        ],
+        [
+          -123.1032278,
+          49.273797
+        ],
+        [
+          -123.1032445,
+          49.2737843
+        ],
+        [
+          -123.1031554,
+          49.2737134
+        ],
+        [
+          -123.1030747,
+          49.2736281
+        ],
+        [
+          -123.1030246,
+          49.2735445
+        ],
+        [
+          -123.1030496,
+          49.2735354
+        ],
+        [
+          -123.1030218,
+          49.2734518
+        ],
+        [
+          -123.1029939,
+          49.2734555
+        ],
+        [
+          -123.1029744,
+          49.2733574
+        ],
+        [
+          -123.10298,
+          49.2732629
+        ],
+        [
+          -123.1030008,
+          49.2732094
+        ],
+        [
+          -123.1030196,
+          49.2731613
+        ],
+        [
+          -123.1031192,
+          49.2731848
+        ],
+        [
+          -123.1031599,
+          49.2731204
+        ],
+        [
+          -123.1034203,
+          49.2732005
+        ],
+        [
+          -123.1034039,
+          49.2732304
+        ],
+        [
+          -123.103471,
+          49.2732443
+        ],
+        [
+          -123.1035312,
+          49.2731646
+        ],
+        [
+          -123.1036233,
+          49.2731075
+        ],
+        [
+          -123.103756,
+          49.2730584
+        ],
+        [
+          -123.1039099,
+          49.2730413
+        ],
+        [
+          -123.1040425,
+          49.2730541
+        ],
+        [
+          -123.1040343,
+          49.2730776
+        ],
+        [
+          -123.1041326,
+          49.2731033
+        ],
+        [
+          -123.1041424,
+          49.2730904
+        ],
+        [
+          -123.1042226,
+          49.2731364
+        ],
+        [
+          -123.1042848,
+          49.2731909
+        ],
+        [
+          -123.104334,
+          49.2732689
+        ],
+        [
+          -123.1043503,
+          49.2733543
+        ],
+        [
+          -123.1043389,
+          49.2734312
+        ],
+        [
+          -123.1042947,
+          49.273505
+        ],
+        [
+          -123.1042275,
+          49.2735648
+        ],
+        [
+          -123.1041424,
+          49.2736075
+        ],
+        [
+          -123.1041326,
+          49.2736011
+        ],
+        [
+          -123.104054,
+          49.2736257
+        ],
+        [
+          -123.1040624,
+          49.2736512
+        ],
+        [
+          -123.1039066,
+          49.2736641
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 6,
+    "refs": [
+      [
+        -123.103031,
+        49.27334
+      ],
+      [
+        -123.10308,
+        49.27365
+      ],
+      [
+        -123.10316,
+        49.27303
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local waterfront plaza grade y=0; rigid metric building, no sea-level/DEM heights baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Permanent silver Expo 86 dome and post-2011 podium; excludes temporary FIFA 2026 wrap. Dome 40 m diameter, approximately 47 m overall height. Panel frequency, lamps, facade rhythm and roof equipment estimated from photographs; waterfront median terrain pad proposed, not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/science-world-vancouver-near.glb",
+      "bytes": 1759824,
+      "triangles": 29133,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -32.070064544677734,
+          0,
+          -57.59925842285156
+        ],
+        "max": [
+          68.30746459960938,
+          47.33000183105469,
+          34.54811096191406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/science-world-vancouver-far.glb",
+      "bytes": 427228,
+      "triangles": 6947,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -31.88130760192871,
+          0,
+          -57.446685791015625
+        ],
+        "max": [
+          68.24556732177734,
+          47.38999938964844,
+          34.358917236328125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/science-world-vancouver/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
