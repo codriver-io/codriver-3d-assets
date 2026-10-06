@@ -1,4 +1,68 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// Full podium outline plus upper cantilever envelope; © OpenStreetMap contributors, ODbL 1.0.
+export const OSM_WAYS = [742009401,1092241825];
+export const FOOTPRINTS = [
+  [
+    [
+      -123.1310393,
+      49.2746326
+    ],
+    [
+      -123.1310048,
+      49.2746075
+    ],
+    [
+      -123.1312204,
+      49.2744651
+    ],
+    [
+      -123.130971,
+      49.2742995
+    ],
+    [
+      -123.1306455,
+      49.2749416
+    ],
+    [
+      -123.1304164,
+      49.2753955
+    ],
+    [
+      -123.130506,
+      49.2754532
+    ],
+    [
+      -123.1309648,
+      49.2751554
+    ],
+    [
+      -123.131425,
+      49.2748774
+    ],
+    [
+      -123.1310393,
+      49.2746326
+    ]
+  ],
+  [
+    [
+      -123.1309648,
+      49.2751554
+    ],
+    [
+      -123.130679,
+      49.2749757
+    ],
+    [
+      -123.131094,
+      49.2746958
+    ],
+    [
+      -123.131379,
+      49.2748756
+    ],
+    [
+      -123.1309648,
+      49.2751554
+    ]
+  ]
+];
