@@ -13887,6 +13887,109 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "lions-gate-bridge",
+      "name": "Lions Gate Bridge",
+      "kind": "bridge",
+      "location": "Vancouver, British Columbia, Canada",
+      "status": "ready",
+      "description": "Current three-lane suspension bridge: green open X-braced towers, thin deck trusses, arched portals, illuminated cables and north steel approach viaduct.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/lions-gate-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks lions-gate-bridge --no-check",
+        "provenance": "Original procedural Three.js geometry authored 2026-10-06. OSM alignment © OpenStreetMap contributors (ODbL 1.0). Commons photos consulted only, credited in references; no copied mesh or texture.",
+        "references": [
+          {
+            "label": "Parks Canada — heritage character",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=11273"
+          },
+          {
+            "label": "Canada — published bridge dimensions",
+            "url": "https://www.canada.ca/en/news/archive/2010/05/lions-gate-bridge-national-historic-site.html"
+          },
+          {
+            "label": "Engineering paper — 473 m span",
+            "url": "https://www.iitk.ac.in/nicee/wcee/article/6_vol3_2835.pdf"
+          },
+          {
+            "label": "Wikipedia — Lions Gate Bridge",
+            "url": "https://en.wikipedia.org/wiki/Lions_Gate_Bridge"
+          },
+          {
+            "label": "File:Lions Gate BridgeI13 Vancouver BC Canada visit-world.jpg — Visit-World. com Author: wwww.visit-world.com (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_BridgeI13_Vancouver_BC_Canada_visit-world.jpg"
+          },
+          {
+            "label": "File:Lions Gate Bridge, Vancouver (44672850422).jpg — dronepicr (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge,_Vancouver_(44672850422).jpg"
+          },
+          {
+            "label": "File:Lion's Gate Bridge at Sunset.JPG — Tom Richards (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lion%27s_Gate_Bridge_at_Sunset.JPG"
+          },
+          {
+            "label": "File:Lions Gate bridge.JPG — Tom Richards (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_bridge.JPG"
+          },
+          {
+            "label": "File:Lions-Gate-Bridge-North-Shore.jpg — Penapox (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lions-Gate-Bridge-North-Shore.jpg"
+          },
+          {
+            "label": "File:CVA 1184-3461 - (H.M.C.S. Warrior passing under the Lions' Gate Bridge).jpg — Jack Lindsay (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:CVA_1184-3461_-_(H.M.C.S._Warrior_passing_under_the_Lions%27_Gate_Bridge).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lions-gate-bridge/geometry.js"
+      },
+      "notes": "Published 473 m main span preserved; mapped pylon centres 455.7 m apart require symmetric 8.6 m station adjustment. Width, cable sag, tower leg sections, portals, trestles, anchorage blocks and lighting rhythm estimated from photos. No building=* extrusions in supplied bridge extract; footprintless road ownership. Marega concrete lions omitted. North roadway mapped as straight two-node way, with gentle departure bend; larger curve needs better alignment data.",
+      "documentation": "docs/assets/top-cities-lions-gate-bridge.md",
+      "manifest": "/models/bridges/lions-gate-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=lions-gate-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=underside"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=lions-gate-bridge&view=north"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

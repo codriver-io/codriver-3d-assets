@@ -161,6 +161,62 @@ import { MANIFEST as lm_christopher_s_bond_bridgeManifest } from './christopher-
 import { OSM_WAYS as lm_christopher_s_bond_bridgeWays } from './christopher-s-bond-bridge/footprint.js';
 import { create as lm_christopher_s_bond_bridgeCreate } from './christopher-s-bond-bridge/geometry.js';
 import { VIEWS as lm_christopher_s_bond_bridgeViews } from './christopher-s-bond-bridge/views.js';
+import { MANIFEST as lm_lions_gate_bridgeManifest } from './lions-gate-bridge/config.js';
+import { OSM_WAYS as lm_lions_gate_bridgeWays } from './lions-gate-bridge/footprint.js';
+import { create as lm_lions_gate_bridgeCreate } from './lions-gate-bridge/geometry.js';
+import { VIEWS as lm_lions_gate_bridgeViews } from './lions-gate-bridge/views.js';
+import { MANIFEST as lm_port_mann_bridgeManifest } from './port-mann-bridge/config.js';
+import { OSM_WAYS as lm_port_mann_bridgeWays } from './port-mann-bridge/footprint.js';
+import { create as lm_port_mann_bridgeCreate } from './port-mann-bridge/geometry.js';
+import { VIEWS as lm_port_mann_bridgeViews } from './port-mann-bridge/views.js';
+import { MANIFEST as lm_burrard_street_bridgeManifest } from './burrard-street-bridge/config.js';
+import { OSM_WAYS as lm_burrard_street_bridgeWays } from './burrard-street-bridge/footprint.js';
+import { create as lm_burrard_street_bridgeCreate } from './burrard-street-bridge/geometry.js';
+import { VIEWS as lm_burrard_street_bridgeViews } from './burrard-street-bridge/views.js';
+import { MANIFEST as lm_canada_placeManifest } from './canada-place/config.js';
+import { OSM_WAYS as lm_canada_placeWays } from './canada-place/footprint.js';
+import { create as lm_canada_placeCreate } from './canada-place/geometry.js';
+import { VIEWS as lm_canada_placeViews } from './canada-place/views.js';
+import { MANIFEST as lm_science_world_vancouverManifest } from './science-world-vancouver/config.js';
+import { OSM_WAYS as lm_science_world_vancouverWays } from './science-world-vancouver/footprint.js';
+import { create as lm_science_world_vancouverCreate } from './science-world-vancouver/geometry.js';
+import { VIEWS as lm_science_world_vancouverViews } from './science-world-vancouver/views.js';
+import { MANIFEST as lm_bc_placeManifest } from './bc-place/config.js';
+import { OSM_WAYS as lm_bc_placeWays } from './bc-place/footprint.js';
+import { create as lm_bc_placeCreate } from './bc-place/geometry.js';
+import { VIEWS as lm_bc_placeViews } from './bc-place/views.js';
+import { MANIFEST as lm_harbour_centreManifest } from './harbour-centre/config.js';
+import { OSM_WAYS as lm_harbour_centreWays } from './harbour-centre/footprint.js';
+import { create as lm_harbour_centreCreate } from './harbour-centre/geometry.js';
+import { VIEWS as lm_harbour_centreViews } from './harbour-centre/views.js';
+import { MANIFEST as lm_vancouver_houseManifest } from './vancouver-house/config.js';
+import { OSM_WAYS as lm_vancouver_houseWays } from './vancouver-house/footprint.js';
+import { create as lm_vancouver_houseCreate } from './vancouver-house/geometry.js';
+import { VIEWS as lm_vancouver_houseViews } from './vancouver-house/views.js';
+import { MANIFEST as lm_bc_parliament_buildingsManifest } from './bc-parliament-buildings/config.js';
+import { OSM_WAYS as lm_bc_parliament_buildingsWays } from './bc-parliament-buildings/footprint.js';
+import { create as lm_bc_parliament_buildingsCreate } from './bc-parliament-buildings/geometry.js';
+import { VIEWS as lm_bc_parliament_buildingsViews } from './bc-parliament-buildings/views.js';
+import { MANIFEST as lm_fairmont_empressManifest } from './fairmont-empress/config.js';
+import { OSM_WAYS as lm_fairmont_empressWays } from './fairmont-empress/footprint.js';
+import { create as lm_fairmont_empressCreate } from './fairmont-empress/geometry.js';
+import { VIEWS as lm_fairmont_empressViews } from './fairmont-empress/views.js';
+import { MANIFEST as lm_alberta_legislature_buildingManifest } from './alberta-legislature-building/config.js';
+import { OSM_WAYS as lm_alberta_legislature_buildingWays } from './alberta-legislature-building/footprint.js';
+import { create as lm_alberta_legislature_buildingCreate } from './alberta-legislature-building/geometry.js';
+import { VIEWS as lm_alberta_legislature_buildingViews } from './alberta-legislature-building/views.js';
+import { MANIFEST as lm_walterdale_bridgeManifest } from './walterdale-bridge/config.js';
+import { OSM_WAYS as lm_walterdale_bridgeWays } from './walterdale-bridge/footprint.js';
+import { create as lm_walterdale_bridgeCreate } from './walterdale-bridge/geometry.js';
+import { VIEWS as lm_walterdale_bridgeViews } from './walterdale-bridge/views.js';
+import { MANIFEST as lm_fairmont_banff_springsManifest } from './fairmont-banff-springs/config.js';
+import { OSM_WAYS as lm_fairmont_banff_springsWays } from './fairmont-banff-springs/footprint.js';
+import { create as lm_fairmont_banff_springsCreate } from './fairmont-banff-springs/geometry.js';
+import { VIEWS as lm_fairmont_banff_springsViews } from './fairmont-banff-springs/views.js';
+import { MANIFEST as lm_canadian_museum_for_human_rightsManifest } from './canadian-museum-for-human-rights/config.js';
+import { OSM_WAYS as lm_canadian_museum_for_human_rightsWays } from './canadian-museum-for-human-rights/footprint.js';
+import { create as lm_canadian_museum_for_human_rightsCreate } from './canadian-museum-for-human-rights/geometry.js';
+import { VIEWS as lm_canadian_museum_for_human_rightsViews } from './canadian-museum-for-human-rights/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -203,6 +259,20 @@ const authoring = {
   'catedral-primada-de-colombia': { manifest: lm_catedral_primada_de_colombiaManifest, osmWays: lm_catedral_primada_de_colombiaWays, create: lm_catedral_primada_de_colombiaCreate, views: lm_catedral_primada_de_colombiaViews },
   'liberty-memorial': { manifest: lm_liberty_memorialManifest, osmWays: lm_liberty_memorialWays, create: lm_liberty_memorialCreate, views: lm_liberty_memorialViews },
   'christopher-s-bond-bridge': { manifest: lm_christopher_s_bond_bridgeManifest, osmWays: lm_christopher_s_bond_bridgeWays, create: lm_christopher_s_bond_bridgeCreate, views: lm_christopher_s_bond_bridgeViews },
+  'lions-gate-bridge': { manifest: lm_lions_gate_bridgeManifest, osmWays: lm_lions_gate_bridgeWays, create: lm_lions_gate_bridgeCreate, views: lm_lions_gate_bridgeViews },
+  'port-mann-bridge': { manifest: lm_port_mann_bridgeManifest, osmWays: lm_port_mann_bridgeWays, create: lm_port_mann_bridgeCreate, views: lm_port_mann_bridgeViews },
+  'burrard-street-bridge': { manifest: lm_burrard_street_bridgeManifest, osmWays: lm_burrard_street_bridgeWays, create: lm_burrard_street_bridgeCreate, views: lm_burrard_street_bridgeViews },
+  'canada-place': { manifest: lm_canada_placeManifest, osmWays: lm_canada_placeWays, create: lm_canada_placeCreate, views: lm_canada_placeViews },
+  'science-world-vancouver': { manifest: lm_science_world_vancouverManifest, osmWays: lm_science_world_vancouverWays, create: lm_science_world_vancouverCreate, views: lm_science_world_vancouverViews },
+  'bc-place': { manifest: lm_bc_placeManifest, osmWays: lm_bc_placeWays, create: lm_bc_placeCreate, views: lm_bc_placeViews },
+  'harbour-centre': { manifest: lm_harbour_centreManifest, osmWays: lm_harbour_centreWays, create: lm_harbour_centreCreate, views: lm_harbour_centreViews },
+  'vancouver-house': { manifest: lm_vancouver_houseManifest, osmWays: lm_vancouver_houseWays, create: lm_vancouver_houseCreate, views: lm_vancouver_houseViews },
+  'bc-parliament-buildings': { manifest: lm_bc_parliament_buildingsManifest, osmWays: lm_bc_parliament_buildingsWays, create: lm_bc_parliament_buildingsCreate, views: lm_bc_parliament_buildingsViews },
+  'fairmont-empress': { manifest: lm_fairmont_empressManifest, osmWays: lm_fairmont_empressWays, create: lm_fairmont_empressCreate, views: lm_fairmont_empressViews },
+  'alberta-legislature-building': { manifest: lm_alberta_legislature_buildingManifest, osmWays: lm_alberta_legislature_buildingWays, create: lm_alberta_legislature_buildingCreate, views: lm_alberta_legislature_buildingViews },
+  'walterdale-bridge': { manifest: lm_walterdale_bridgeManifest, osmWays: lm_walterdale_bridgeWays, create: lm_walterdale_bridgeCreate, views: lm_walterdale_bridgeViews },
+  'fairmont-banff-springs': { manifest: lm_fairmont_banff_springsManifest, osmWays: lm_fairmont_banff_springsWays, create: lm_fairmont_banff_springsCreate, views: lm_fairmont_banff_springsViews },
+  'canadian-museum-for-human-rights': { manifest: lm_canadian_museum_for_human_rightsManifest, osmWays: lm_canadian_museum_for_human_rightsWays, create: lm_canadian_museum_for_human_rightsCreate, views: lm_canadian_museum_for_human_rightsViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));

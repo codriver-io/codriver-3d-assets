@@ -86,6 +86,38 @@ import { FOOTPRINTS as lm_liberty_memorialFootprints } from './liberty-memorial/
 import { SPEC as lm_christopher_s_bond_bridgeSpec, PALETTES as lm_christopher_s_bond_bridgePalettes } from './christopher-s-bond-bridge/config.js';
 import { FOOTPRINTS as lm_christopher_s_bond_bridgeFootprints } from './christopher-s-bond-bridge/footprint.js';
 import { ROAD_LAYER as lm_christopher_s_bond_bridgeRoad } from './christopher-s-bond-bridge/layer.js';
+import { SPEC as lm_lions_gate_bridgeSpec, PALETTES as lm_lions_gate_bridgePalettes } from './lions-gate-bridge/config.js';
+import { FOOTPRINTS as lm_lions_gate_bridgeFootprints } from './lions-gate-bridge/footprint.js';
+import { ROAD_LAYER as lm_lions_gate_bridgeRoad } from './lions-gate-bridge/layer.js';
+import { SPEC as lm_port_mann_bridgeSpec, PALETTES as lm_port_mann_bridgePalettes } from './port-mann-bridge/config.js';
+import { FOOTPRINTS as lm_port_mann_bridgeFootprints } from './port-mann-bridge/footprint.js';
+import { ROAD_LAYER as lm_port_mann_bridgeRoad } from './port-mann-bridge/layer.js';
+import { SPEC as lm_burrard_street_bridgeSpec, PALETTES as lm_burrard_street_bridgePalettes } from './burrard-street-bridge/config.js';
+import { FOOTPRINTS as lm_burrard_street_bridgeFootprints } from './burrard-street-bridge/footprint.js';
+import { ROAD_LAYER as lm_burrard_street_bridgeRoad } from './burrard-street-bridge/layer.js';
+import { SPEC as lm_canada_placeSpec, PALETTES as lm_canada_placePalettes } from './canada-place/config.js';
+import { FOOTPRINTS as lm_canada_placeFootprints } from './canada-place/footprint.js';
+import { SPEC as lm_science_world_vancouverSpec, PALETTES as lm_science_world_vancouverPalettes } from './science-world-vancouver/config.js';
+import { FOOTPRINTS as lm_science_world_vancouverFootprints } from './science-world-vancouver/footprint.js';
+import { SPEC as lm_bc_placeSpec, PALETTES as lm_bc_placePalettes } from './bc-place/config.js';
+import { FOOTPRINTS as lm_bc_placeFootprints } from './bc-place/footprint.js';
+import { SPEC as lm_harbour_centreSpec, PALETTES as lm_harbour_centrePalettes } from './harbour-centre/config.js';
+import { FOOTPRINTS as lm_harbour_centreFootprints } from './harbour-centre/footprint.js';
+import { SPEC as lm_vancouver_houseSpec, PALETTES as lm_vancouver_housePalettes } from './vancouver-house/config.js';
+import { FOOTPRINTS as lm_vancouver_houseFootprints } from './vancouver-house/footprint.js';
+import { SPEC as lm_bc_parliament_buildingsSpec, PALETTES as lm_bc_parliament_buildingsPalettes } from './bc-parliament-buildings/config.js';
+import { FOOTPRINTS as lm_bc_parliament_buildingsFootprints } from './bc-parliament-buildings/footprint.js';
+import { SPEC as lm_fairmont_empressSpec, PALETTES as lm_fairmont_empressPalettes } from './fairmont-empress/config.js';
+import { FOOTPRINTS as lm_fairmont_empressFootprints } from './fairmont-empress/footprint.js';
+import { SPEC as lm_alberta_legislature_buildingSpec, PALETTES as lm_alberta_legislature_buildingPalettes } from './alberta-legislature-building/config.js';
+import { FOOTPRINTS as lm_alberta_legislature_buildingFootprints } from './alberta-legislature-building/footprint.js';
+import { SPEC as lm_walterdale_bridgeSpec, PALETTES as lm_walterdale_bridgePalettes } from './walterdale-bridge/config.js';
+import { FOOTPRINTS as lm_walterdale_bridgeFootprints } from './walterdale-bridge/footprint.js';
+import { ROAD_LAYER as lm_walterdale_bridgeRoad } from './walterdale-bridge/layer.js';
+import { SPEC as lm_fairmont_banff_springsSpec, PALETTES as lm_fairmont_banff_springsPalettes } from './fairmont-banff-springs/config.js';
+import { FOOTPRINTS as lm_fairmont_banff_springsFootprints } from './fairmont-banff-springs/footprint.js';
+import { SPEC as lm_canadian_museum_for_human_rightsSpec, PALETTES as lm_canadian_museum_for_human_rightsPalettes } from './canadian-museum-for-human-rights/config.js';
+import { FOOTPRINTS as lm_canadian_museum_for_human_rightsFootprints } from './canadian-museum-for-human-rights/footprint.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -133,6 +165,20 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_catedral_primada_de_colombiaSpec, lm_catedral_primada_de_colombiaPalettes, lm_catedral_primada_de_colombiaFootprints),
   entry(lm_liberty_memorialSpec, lm_liberty_memorialPalettes, lm_liberty_memorialFootprints),
   entry(lm_christopher_s_bond_bridgeSpec, lm_christopher_s_bond_bridgePalettes, lm_christopher_s_bond_bridgeFootprints, lm_christopher_s_bond_bridgeRoad),
+  entry(lm_lions_gate_bridgeSpec, lm_lions_gate_bridgePalettes, lm_lions_gate_bridgeFootprints, lm_lions_gate_bridgeRoad),
+  entry(lm_port_mann_bridgeSpec, lm_port_mann_bridgePalettes, lm_port_mann_bridgeFootprints, lm_port_mann_bridgeRoad),
+  entry(lm_burrard_street_bridgeSpec, lm_burrard_street_bridgePalettes, lm_burrard_street_bridgeFootprints, lm_burrard_street_bridgeRoad),
+  entry(lm_canada_placeSpec, lm_canada_placePalettes, lm_canada_placeFootprints),
+  entry(lm_science_world_vancouverSpec, lm_science_world_vancouverPalettes, lm_science_world_vancouverFootprints),
+  entry(lm_bc_placeSpec, lm_bc_placePalettes, lm_bc_placeFootprints),
+  entry(lm_harbour_centreSpec, lm_harbour_centrePalettes, lm_harbour_centreFootprints),
+  entry(lm_vancouver_houseSpec, lm_vancouver_housePalettes, lm_vancouver_houseFootprints),
+  entry(lm_bc_parliament_buildingsSpec, lm_bc_parliament_buildingsPalettes, lm_bc_parliament_buildingsFootprints),
+  entry(lm_fairmont_empressSpec, lm_fairmont_empressPalettes, lm_fairmont_empressFootprints),
+  entry(lm_alberta_legislature_buildingSpec, lm_alberta_legislature_buildingPalettes, lm_alberta_legislature_buildingFootprints),
+  entry(lm_walterdale_bridgeSpec, lm_walterdale_bridgePalettes, lm_walterdale_bridgeFootprints, lm_walterdale_bridgeRoad),
+  entry(lm_fairmont_banff_springsSpec, lm_fairmont_banff_springsPalettes, lm_fairmont_banff_springsFootprints),
+  entry(lm_canadian_museum_for_human_rightsSpec, lm_canadian_museum_for_human_rightsPalettes, lm_canadian_museum_for_human_rightsFootprints),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;
