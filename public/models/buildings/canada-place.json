@@ -1,0 +1,67 @@
+{
+  "id": "canada-place",
+  "name": "Canada Place",
+  "kind": "building",
+  "origin": [
+    -123.11112,
+    49.28863
+  ],
+  "height": 81.5,
+  "padM": 290,
+  "frontageBearing": 152,
+  "nearM": 850,
+  "rangeM": 3200,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map pier/shore grade y=0; no sea level or terrain baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Five original curved thin-shell sail approximations on mapped roof bays, pier terminal and Pan Pacific hotel. 81.5 m hotel height from the supplied Wikipedia dossier; roof profiles, facade spacing and podium levels are photographic estimates. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/canada-place-near.glb",
+      "bytes": 1736748,
+      "triangles": 44292,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -249.60459899902344,
+          -8.136680653520693e-15,
+          -112.69781494140625
+        ],
+        "max": [
+          246.11936950683594,
+          81.5,
+          133.09417724609375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/canada-place-far.glb",
+      "bytes": 428756,
+      "triangles": 9448,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -249.60459899902344,
+          -8.136680653520693e-15,
+          -112.69781494140625
+        ],
+        "max": [
+          246.11936950683594,
+          81.5,
+          133.09417724609375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/canada-place/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
