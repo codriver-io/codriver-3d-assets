@@ -14200,6 +14200,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "port-mann-bridge",
+      "name": "Port Mann Bridge",
+      "kind": "bridge",
+      "location": "Highway 1 over Fraser River, Coquitlam–Surrey, Metro Vancouver, British Columbia",
+      "city": "Vancouver",
+      "status": "ready",
+      "description": "Original procedural model of the 2012 Port Mann crossing: two central single-mast concrete pylons, four stay planes on each tower, separated five-lane decks and long approach viaducts.",
+      "manifest": "/models/bridges/port-mann-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/port-mann-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks port-mann-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-06 from BC Ministry and SEABC published dimensions, OpenStreetMap road/bridge outlines (© OSM contributors, ODbL 1.0) and visual photographic comparison. No traced mesh, capture, photograph or texture is shipped. Reference-only dossier: The New Port Mann Bridge2, Reg Natarajan, CC BY 2.0; Vancouver Portmann-Bridge 2015, Dgarte, CC0; Old and new Port Mann bridges, TimBray, CC BY-SA 3.0; Looking up while driving over the Port Mann Bridge, Dllu, CC BY-SA 4.0. Natarajan Commons licence independently checked; remaining licences from supplied dossier. SEABC structural brochure drawings/photos reviewed in ignored scratch.",
+        "references": [
+          {
+            "label": "BC Ministry: 850/470 m spans, 75 m tower rise, footing datum, 288 cables",
+            "url": "https://archive.news.gov.bc.ca/releases/news_releases_2009-2013/2012PREM0152-001945.htm"
+          },
+          {
+            "label": "SEABC/IABSE 2017 p43: mono-towers, four cable planes, 190 m side spans and framing",
+            "url": "https://www.seabc.ca/wordpress/files/notable_structures/Vancouver_Notable_Structures_IABSE_SEABC_2017.pdf"
+          },
+          {
+            "label": "OSM current bridge outline",
+            "url": "https://www.openstreetmap.org/way/673896312"
+          },
+          {
+            "label": "Reg Natarajan: The New Port Mann Bridge2 (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_New_Port_Mann_Bridge2.jpg"
+          },
+          {
+            "label": "Wikipedia: current and demolished crossings",
+            "url": "https://en.wikipedia.org/wiki/Port_Mann_Bridge"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/port-mann-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=port-mann-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=port-mann-bridge&view=underside"
+          }
+        ]
+      },
+      "notes": "Visual model independently accepted, recognition 4/5; only FIX item (world north landing) corrected in owned files. Sourced main span 470 m, side spans 190 m, width 65 m, median 10 m, stays 288, tower rise 75 m. Estimated road 46 m and crown 121 m local datum; published 163 m starts at omitted deep footings. Estimated pylon sections, anchors, girders and approach supports. Near 74,716 triangles / 28 draws / 3001 KiB; far 28,790 / 7 / 818 KiB. QA has no issues, zero detected coplanar overlaps and 0% back-face hits. New reference/export sheet and near/far light/dark views inspected. World north foot -2.007/+2.995 m and ramp start +4.248/+6.195 m become 0/0 m; southern foot retains -0.236/+0.465 m (outside north-only fix). No shared source change, no terrain baked into exports.",
+      "documentation": "docs/assets/top-cities-port-mann-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

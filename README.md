@@ -4,8 +4,8 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 17 more cities: 157 landmarks and four
-reusable bridge components, 330 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 17 more cities: 158 landmarks and four
+reusable bridge components, 332 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
 **[Explore the public library](https://3d-assets.codriver.io/)** ·
@@ -61,7 +61,7 @@ Dubuc bridges. Build them with `pnpm build:quebec-landmarks`; the collection and
 are in [docs/quebec-landmarks.md](docs/quebec-landmarks.md).
 
 <!-- top-cities -->
-Top cities: London: Tower Bridge, Palace of Westminster and Elizabeth Tower, St Paul's Cathedral, The Shard; Amsterdam: Rijksmuseum, Amsterdam Centraal station, EYE Filmmuseum; Madrid: Palacio Real de Madrid, Puerta de Alcalá, Puerta de Europa (KIO Towers); Dallas: Reunion Tower, Bank of America Plaza, Margaret Hunt Hill Bridge, Margaret McDermott Bridge; Washington: Washington Monument, United States Capitol, Lincoln Memorial, Arlington Memorial Bridge; Medellín: Edificio Coltejer, Catedral Metropolitana de Medellín, Palacio de la Cultura Rafael Uribe Uribe; Santa Ana: Old Orange County Courthouse; Garden Grove: Christ Cathedral; Riverside: Mission Inn; Bucharest: Palace of the Parliament, Arcul de Triumf, Romanian Athenaeum; Rome: Colosseum, Altare della Patria, St. Peter's Basilica; San José: Teatro Nacional de Costa Rica, Catedral Metropolitana de San José; Lyon: Basilique Notre-Dame de Fourvière, Tour Part-Dieu (le Crayon), Musée des Confluences; Villeurbanne: Gratte-Ciel de Villeurbanne; Bogotá: Torre Colpatria, Catedral Primada de Colombia; Kansas City: Liberty Memorial (National WWI Museum), Christopher S. Bond Bridge; Vancouver: Lions Gate Bridge, Burrard Street Bridge, Canada Place. Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
+Top cities: London: Tower Bridge, Palace of Westminster and Elizabeth Tower, St Paul's Cathedral, The Shard; Amsterdam: Rijksmuseum, Amsterdam Centraal station, EYE Filmmuseum; Madrid: Palacio Real de Madrid, Puerta de Alcalá, Puerta de Europa (KIO Towers); Dallas: Reunion Tower, Bank of America Plaza, Margaret Hunt Hill Bridge, Margaret McDermott Bridge; Washington: Washington Monument, United States Capitol, Lincoln Memorial, Arlington Memorial Bridge; Medellín: Edificio Coltejer, Catedral Metropolitana de Medellín, Palacio de la Cultura Rafael Uribe Uribe; Santa Ana: Old Orange County Courthouse; Garden Grove: Christ Cathedral; Riverside: Mission Inn; Bucharest: Palace of the Parliament, Arcul de Triumf, Romanian Athenaeum; Rome: Colosseum, Altare della Patria, St. Peter's Basilica; San José: Teatro Nacional de Costa Rica, Catedral Metropolitana de San José; Lyon: Basilique Notre-Dame de Fourvière, Tour Part-Dieu (le Crayon), Musée des Confluences; Villeurbanne: Gratte-Ciel de Villeurbanne; Bogotá: Torre Colpatria, Catedral Primada de Colombia; Kansas City: Liberty Memorial (National WWI Museum), Christopher S. Bond Bridge; Vancouver: Lions Gate Bridge, Port Mann Bridge, Burrard Street Bridge, Canada Place. Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
 <!-- /top-cities -->
 
 ## A look inside
