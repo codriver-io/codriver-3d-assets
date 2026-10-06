@@ -14370,6 +14370,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "walterdale-bridge",
+      "name": "Walterdale Bridge",
+      "kind": "bridge",
+      "location": "Edmonton, Alberta, Canada",
+      "city": "Edmonton",
+      "status": "ready",
+      "description": "The current 2017 crossing: inward-leaning white twin through arches, three northbound lanes, western sidewalk and separate curved eastern shared-use path.",
+      "manifest": "/models/bridges/walterdale-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/walterdale-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks walterdale-bridge --no-check",
+        "provenance": "Original texture-free procedural geometry authored October 2026. OSM placement © OpenStreetMap contributors, ODbL 1.0. Photos used only for visual study; no third-party mesh or image included. References: 1.jpg | File:105st bridge may 2016 (27011756265).jpg | jasonwoodhead23 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:105st_bridge_may_2016_(27011756265).jpg\n2.jpg | File:Walterdale Bridge Edmonton Winter2013.jpg | Kmw2700 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Walterdale_Bridge_Edmonton_Winter2013.jpg\n3.jpg | File:Near finished structure of new Walterdale Bridge with surrounding city of Edmonton, Canada (Sept -2016).jpg | Kmw2700 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Near_finished_structure_of_new_Walterdale_Bridge_with_surrounding_city_of_Edmonton,_Canada_(Sept_-2016).jpg\n4.jpg | File:Walterdale bridge from below.jpg | Smackaay | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Walterdale_bridge_from_below.jpg\n5.jpg | File:Walterdale bridge over the North Saskatchewan river in winter, Edmonton, Alberta.jpg | Joli Rumi | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Walterdale_bridge_over_the_North_Saskatchewan_river_in_winter,_Edmonton,_Alberta.jpg\n6.jpg | File:Walterdale May 2017.jpg | Kurt Bauschardt | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Walterdale_May_2017.jpg\n",
+        "references": [
+          {
+            "label": "DIALOG — Walterdale Bridge",
+            "url": "https://dialogdesign.ca/projects/walterdale-bridge/"
+          },
+          {
+            "label": "Pedelta — New Walterdale Bridge",
+            "url": "https://www.pedelta.com/new-walterdale-bridge-p-66-en"
+          },
+          {
+            "label": "City of Edmonton — Walterdale Bridge",
+            "url": "https://www.edmonton.ca/projects_plans/walterdale-bridge"
+          },
+          {
+            "label": "File:105st bridge may 2016 (27011756265).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:105st_bridge_may_2016_(27011756265).jpg"
+          },
+          {
+            "label": "File:Near finished structure of new Walterdale Bridge with surrounding city of Edmonton, Canada (Sept -2016).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Near_finished_structure_of_new_Walterdale_Bridge_with_surrounding_city_of_Edmonton,_Canada_(Sept_-2016).jpg"
+          },
+          {
+            "label": "File:Walterdale bridge over the North Saskatchewan river in winter, Edmonton, Alberta.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Walterdale_bridge_over_the_North_Saskatchewan_river_in_winter,_Edmonton,_Alberta.jpg"
+          },
+          {
+            "label": "File:Walterdale May 2017.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Walterdale_May_2017.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/walterdale-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=walterdale-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=walterdale-bridge&view=tower"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-walterdale-bridge.md",
+      "notes": "206 m arch span, 230 m deck, 56 m crown and 22.4 m main-deck width sourced; tapered box sections, inward inclination, SUP width, supports, light fittings, approach profile and world deck altitude estimated. Model excludes old green truss bridge and construction machinery. Flat ramps 180 m, maximum grade 10.84%; terrain absolute-deck uses estimated 625 m main deck with DEM-fitted banks. Catalog readiness is asset readiness; integration evidence is separate.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
