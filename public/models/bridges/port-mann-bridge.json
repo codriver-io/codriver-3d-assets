@@ -1,0 +1,68 @@
+{
+  "id": "port-mann-bridge",
+  "name": "Port Mann Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.81306,
+    49.21972
+  ],
+  "height": 121,
+  "padM": 1250,
+  "frontageBearing": 164.7,
+  "rangeM": 7000,
+  "nearM": 1800,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual water/flat-map grade. Road 46 m, girder soffit 42 m, crown 121 m. Published 163 m is measured from deep footings: that submerged/buried portion is omitted. No DEM, latitude stretch or moving scene datum is baked into the GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 470 m main span, 190 m back spans, 850 m cable-supported section, 65 m width, 10 lanes, 288 stays, 75 m tower rise above road; source widths differ (SEABC 67 m, TYLin 52 m deck). Estimated local road datum, pylon sections/anchor spacing, girder and fairing sections, lamp details and approach pier stations. Ramps are a flat-map convention; tower station inferred from dossier north-pylon anchor, not surveyed.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/port-mann-bridge-near.glb",
+      "bytes": 3073928,
+      "triangles": 74716,
+      "drawCalls": 28,
+      "bounds": {
+        "min": [
+          -626.83056640625,
+          -6.247176997931092e-7,
+          -885.8475952148438
+        ],
+        "max": [
+          508.6744079589844,
+          121,
+          1158.021728515625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/port-mann-bridge-far.glb",
+      "bytes": 838108,
+      "triangles": 28790,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -626.83056640625,
+          -6.247176997931092e-7,
+          -885.8475952148438
+        ],
+        "max": [
+          508.6744079589844,
+          121,
+          1158.021728515625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/port-mann-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
