@@ -13990,6 +13990,109 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "burrard-street-bridge",
+      "name": "Burrard Street Bridge",
+      "kind": "bridge",
+      "location": "Vancouver, British Columbia, Canada",
+      "status": "ready",
+      "description": "1932 Art Deco Burrard Bridge with two open gallery portals, four memorial towers, polygonal through-truss and flanking deck trusses; 2017 protected cycling arrangement.",
+      "manifest": "/models/bridges/burrard-street-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/burrard-street-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks burrard-street-bridge --no-check",
+        "provenance": "Original texture-free procedural geometry. Reference photographs studied only: Diego Delso CC BY-SA 4.0, DougVancouver CC BY 3.0, Eduardo CC BY-SA 3.0, approach photo by Alethe~commonswiki (author field self), CC BY-SA 3.0, Luke.Ernz CC BY-SA 4.0. Mapped data OpenStreetMap contributors ODbL 1.0. No source photograph or third-party mesh is included.",
+        "references": [
+          {
+            "label": "SEABC / IABSE 2017 - Notable Structures p. 2, structural spans",
+            "url": "https://www.seabc.ca/wordpress/files/notable_structures/Vancouver_Notable_Structures_IABSE_SEABC_2017.pdf"
+          },
+          {
+            "label": "City of Vancouver / TAC - bridge renewal and protected bike lanes",
+            "url": "https://www.tac-atc.ca/wp-content/uploads/burard_complete.pdf"
+          },
+          {
+            "label": "Vancouver Heritage Foundation - braziers and galleries",
+            "url": "https://www.heritagesitefinder.ca/location/burrard-street-bridge/"
+          },
+          {
+            "label": "File:Puente Burrard, Vancouver, Canadá, 2017-08-14, DD 24-26 PAN.jpg - Diego Delso, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Puente_Burrard,_Vancouver,_Canad%C3%A1,_2017-08-14,_DD_24-26_PAN.jpg"
+          },
+          {
+            "label": "File:Puente Burrard, Vancouver, Canadá, 2017-08-14, DD 27.jpg - Diego Delso, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Puente_Burrard,_Vancouver,_Canad%C3%A1,_2017-08-14,_DD_27.jpg"
+          },
+          {
+            "label": "File:Burrard St Bridge And Jan Fog Jan 18 2009.JPG - DougVancouver, CC BY 3.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Burrard_St_Bridge_And_Jan_Fog_Jan_18_2009.JPG"
+          },
+          {
+            "label": "File:Burrardeduardo.jpg - Eduardo, CC BY-SA 3.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Burrardeduardo.jpg"
+          },
+          {
+            "label": "File:Burrard ne approach.jpg - Alethe~commonswiki (author field self), CC BY-SA 3.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Burrard_ne_approach.jpg"
+          },
+          {
+            "label": "File:20201204 1436 Burrard statue on bridge (cropped).jpg - Luke.Ernz, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:20201204_1436_Burrard_statue_on_bridge_(cropped).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/burrard-street-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=burrard-street-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=tower"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=south"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=burrard-street-bridge&view=north"
+          }
+        ]
+      },
+      "notes": "Published 96.2 m support span differs from dossier 89.6 m span; convention unresolved. Deck 24 m, tower heights, ornamental details and pier depths estimated. Simplified facial sculpture and heraldry. Flat-map ramps are a compromise. OSM still tags five lanes; original fallback represents current four lanes plus cycling. Approaches extend outside the mapped bridge outline. HD pavement and lane counts depend on live provider data. Marine cornice projection exceeds the mapped outline by up to 0.42 m; tests allow 0.5 m. Independent visual review is pending.",
+      "documentation": "docs/assets/top-cities-burrard-street-bridge.md",
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

@@ -1,4 +1,4 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+import { OUTLINE } from './burrard-street-bridge-mapped.js';
+// OSM man_made=bridge outline; no building extrusions were present in the dossier.
+export const FOOTPRINTS = [OUTLINE];
+export const OSM_WAYS = [492631024, 23188868, 849900149, 74094190, 50844353, 123986646];
