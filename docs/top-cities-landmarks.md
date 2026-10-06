@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (51 released)
+## The collection (52 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -57,6 +57,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `harbour-centre` | Harbour Centre (Vancouver Lookout) | Vancouver | building |
 | `vancouver-house` | Vancouver House | Vancouver | building |
 | `bc-parliament-buildings` | British Columbia Parliament Buildings | Victoria | building |
+| `fairmont-empress` | Fairmont Empress | Victoria | building |
 | `alberta-legislature-building` | Alberta Legislature Building | Edmonton | building |
 | `walterdale-bridge` | Walterdale Bridge | Edmonton | bridge, road-fitted |
 
