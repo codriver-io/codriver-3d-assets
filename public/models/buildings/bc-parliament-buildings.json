@@ -1,0 +1,65 @@
+{
+  "id": "bc-parliament-buildings",
+  "name": "British Columbia Parliament Buildings",
+  "kind": "building",
+  "origin": [
+    -123.37028,
+    48.41944
+  ],
+  "height": 41.6,
+  "padM": 112,
+  "frontageBearing": 12.26,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid base at local flat-map grade y=0; main floor estimated at +2 m. No terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "152.4 m official facade, 39.6 m main-floor-to-statue height (+2 m estimated grade offset). Other part heights follow OSM; facade ornament and window rhythm are estimates from licensed comparison photos. Rotation baked once. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bc-parliament-buildings-near.glb",
+      "bytes": 2096088,
+      "triangles": 52221,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -70.44596862792969,
+          -2.3841858265427618e-8,
+          -56.58027648925781
+        ],
+        "max": [
+          82.5984878540039,
+          41.599998474121094,
+          72.67190551757812
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bc-parliament-buildings-far.glb",
+      "bytes": 464164,
+      "triangles": 11073,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -70.44596862792969,
+          -2.3841858265427618e-8,
+          -56.58027648925781
+        ],
+        "max": [
+          82.5984878540039,
+          41.599998474121094,
+          72.67190551757812
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bc-parliament-buildings/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

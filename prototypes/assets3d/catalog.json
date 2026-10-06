@@ -14750,6 +14750,109 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bc-parliament-buildings",
+      "name": "British Columbia Parliament Buildings",
+      "kind": "building",
+      "location": "501 Belleville Street · Victoria, British Columbia, Canada",
+      "status": "ready",
+      "description": "A long harbour-facing stone facade with an octagonal central copper dome, gilded Vancouver statue, domed corner turrets, open annex arcades, ceremonial arch and the rear Legislative Library.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bc-parliament-buildings/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bc-parliament-buildings --no-check",
+        "provenance": "Original procedural exterior authored for Codriver, 2026-10-06; no mesh, photo or texture distributed. Mapped plan from OSM relation 1371742 and 115 building parts (© OpenStreetMap contributors, ODbL 1.0). Licensed photos used for comparison only: British Columbia Parliament Buildings - Pano - HDR, Ryan Bushby (HighInBC), CC BY 2.5; illuminated at dusk, Dllu, CC BY-SA 4.0; legislature building roof close up, Ryan Bushby, CC BY 2.5. Photos remain in ignored tmp/. Additional rear comparison: Victoria Legislature building from rear - panoramio, Larry LaRose, CC BY-SA 3.0; licence checked on the Commons file page.",
+        "references": [
+          {
+            "label": "Assembly: exterior features and official 152.4 m frontage",
+            "url": "https://www.leg.bc.ca/learn/discover-your-legislature/building-tour/exterior-features"
+          },
+          {
+            "label": "Assembly: 39.6 m main floor to Vancouver statue",
+            "url": "https://www.leg.bc.ca/learn/discover-your-legislature/building-tour/interior-features/upper-rotunda-and-entrance-to-legislative-chamber"
+          },
+          {
+            "label": "Assembly: ceremonial entrance and coat of arms",
+            "url": "https://www.leg.bc.ca/learn/discover-your-legislature/building-tour/exterior-features/legislative-precinct/front-facade-and-ceremonial-entrance"
+          },
+          {
+            "label": "Assembly: completed 1897, opened 1898, additions 1911–1915",
+            "url": "https://www.leg.bc.ca/learn/discover-your-legislature/1897-new-parliament-buildings-completed"
+          },
+          {
+            "label": "Assembly outdoor walking tour: 33 copper domes, two-metre statue",
+            "url": "https://www.leg.bc.ca/sites/default/files/images/pdf/peo/Legislative-Assembly-Outdoor-Walking-Tour-English.pdf"
+          },
+          {
+            "label": "OSM complete building relation",
+            "url": "https://www.openstreetmap.org/relation/1371742"
+          },
+          {
+            "label": "File:British Columbia Parliament Buildings - Pano - HDR.jpg — Ryan Bushby (HighInBC); CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:British_Columbia_Parliament_Buildings_-_Pano_-_HDR.jpg"
+          },
+          {
+            "label": "File:British Columbia Parliament Buildings illuminated at dusk.jpg — Dllu; CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:British_Columbia_Parliament_Buildings_illuminated_at_dusk.jpg"
+          },
+          {
+            "label": "File:British Columbia legislature building roof close up.jpg — Ryan Bushby; CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:British_Columbia_legislature_building_roof_close_up.jpg"
+          },
+          {
+            "label": "Library exterior: 1915 addition and 2.74 m historical figures",
+            "url": "https://www.leg.bc.ca/learn/discover-your-legislature/building-tour/legislative-library/legislative-library-exterior"
+          },
+          {
+            "label": "Rear library reference — Larry LaRose, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Victoria_Legislature_building_from_rear_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bc-parliament-buildings/geometry.js"
+      },
+      "notes": "Main floor assumed 2 m above flat local grade. 152.4 m official front width; height main-floor-to-statue 39.6 m. Remaining heights are OSM estimates, not a survey. Window spacing, dome profiles, ornament and rear roof forms are estimated. Night outline strips approximate the real bulbs; sculpture is stylised. Grounds, fountains and interiors excluded; front stairs project roughly 5 m beyond the central mapped wall. Independent review and app integration remain pending. Near 52,221 triangles / 8 draws / 2,046 KiB; far 11,073 / 8 / 453 KiB. Window rhythm and carved stone relief are simplified; the front is less ornate than the reference at close range. Dome lobes, roof edge lights and simplified library figures are retained. GLB geometry QA clean; actual Tesla hardware unmeasured.",
+      "documentation": "docs/assets/top-cities-bc-parliament-buildings.md",
+      "manifest": "/models/buildings/bc-parliament-buildings.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=bc-parliament-buildings&view=overview",
+        "views": [
+          {
+            "label": "Harbour side overview",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=overview"
+          },
+          {
+            "label": "North facade and annex arcades",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=facade"
+          },
+          {
+            "label": "Domes, roofs and courtyards",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=roof"
+          },
+          {
+            "label": "Rear Legislative Library",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=back"
+          },
+          {
+            "label": "Ceremonial arch and stairs",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=entrance"
+          },
+          {
+            "label": "Copper dome and Vancouver statue",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=dome"
+          },
+          {
+            "label": "Mapped footprint alignment",
+            "url": "/asset-preview.html?asset=bc-parliament-buildings&view=plan"
+          }
+        ]
+      },
+      "city": "Victoria",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
