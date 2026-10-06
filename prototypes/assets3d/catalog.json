@@ -14457,6 +14457,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bc-place",
+      "name": "BC Place",
+      "kind": "building",
+      "location": "777 Pacific Boulevard · Vancouver, British Columbia, Canada",
+      "status": "ready",
+      "description": "BC Place after the 2011 roof renovation: oval concrete stadium bowl, teal clerestory, 36 tall white outward leaning masts, cable-supported scalloped membrane annulus and open retractable centre with storage pod, red seating terraces and pitch.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bc-place/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bc-place --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-06; no third-party mesh, texture or scan. Outline and roof parts from OpenStreetMap ways 24705904, 1415412262, 390133856 and 390133855, © OpenStreetMap contributors (ODbL 1.0). Comparison photographs retained only in ignored tmp: BC Place (Vancouver).jpg, Quintin Soloviev, CC BY 4.0; BC Place - Canada vs Qatar.jpg, Aeacad, CC0; BC Place (19186581723) (2).jpg, Nicki Dugan Pogue, CC BY-SA 2.0; Australia vs Türkiye at BC Place - June 13, 2026.jpg, Aeacad, CC0; Group G final match (55364664383).jpg, Mafue, CC BY-SA 4.0. Dossier SkyTrain photograph is unrelated and was not used for the stadium model.",
+        "references": [
+          {
+            "label": "Government of BC: 36 masts, 50 m mast lengths, 2011 roof",
+            "url": "https://archive.news.gov.bc.ca/releases/news_releases_2009-2013/2011SU0010-000190.htm"
+          },
+          {
+            "label": "Roof fabric designer Tony Hogg: 100 × 85 m retractable area and central pod",
+            "url": "https://www.tonyhoggdesign.co.uk/site/projects_58.asp?catID=94"
+          },
+          {
+            "label": "Geiger Engineers project article: 47.5 m mast rise and 227 × 186 m clear spans",
+            "url": "https://www.structuremag.org/article/bc-place-revitalization/"
+          },
+          {
+            "label": "Mapped stadium outline",
+            "url": "https://www.openstreetmap.org/way/24705904"
+          },
+          {
+            "label": "OSM licence",
+            "url": "https://www.openstreetmap.org/copyright"
+          },
+          {
+            "label": "Aerial reference by Quintin Soloviev (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:BC_Place_(Vancouver).jpg"
+          },
+          {
+            "label": "Interior reference by Aeacad (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:BC_Place_-_Canada_vs_Qatar.jpg"
+          },
+          {
+            "label": "Interior roof reference by Nicki Dugan Pogue (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:BC_Place_(19186581723)_(2).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bc-place/geometry.js"
+      },
+      "notes": "Open-roof state of the 2011 renovated stadium. Mapped outer envelope approximately 233 × 194 m along its axes; 36 masts rise 47.5 m above a photograph-estimated 30 m ringbeam (77.5 m total). The mapped envelope includes the mast crown. Shape, mast taper/lean, facade heights, gate locations, cloth billows and cable routing are estimates; a radial cable approximation is used rather than an engineering cable-net replica. Night uses a static pink illuminated facade band, not the real colour-changing animation. Interior has simplified stepped red bands, not individual seats. No neighbours, plaza, screens imagery, branding, photo textures or scanned meshes are shipped. In-app terrain and provider replacement require separate checks; no shared file changes.",
+      "documentation": "docs/assets/top-cities-bc-place.md",
+      "manifest": "/models/buildings/bc-place.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=bc-place&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bc-place&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=bc-place&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=bc-place&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=bc-place&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=bc-place&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=bc-place&view=detail"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
