@@ -14853,6 +14853,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "alberta-legislature-building",
+      "name": "Alberta Legislature Building",
+      "kind": "building",
+      "location": "10800 97 Avenue NW · Edmonton, Alberta, Canada",
+      "status": "ready",
+      "description": "Jeffers and Blakey’s Beaux-Arts legislature (1907–1913): mapped T-shaped sandstone wings, a six-column north portico on a granite basement, paired-column rotunda drum, eight-rib terra-cotta dome and open lantern, plus the southern chamber saucer dome.",
+      "manifest": "/models/buildings/alberta-legislature-building.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/alberta-legislature-building/geometry.js",
+        "build": "pnpm build:top-cities-landmarks alberta-legislature-building --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-06 from geographic outlines and architectural references; no scan, third-party mesh, photos or textures shipped. OSM ways 42782487 and building parts 949845607–949845610 © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs viewed in ignored tmp: Alberta Legislature Building, June 7, 2024 (D. Benjamin Miller, CC0); Alberta Legislature Building at night (Hugh Lee, CC BY-SA 2.0); Alberta Legislature Building (Alexscuccato, CC BY-SA 4.0). Dome materials, eight octants and T-plan dimensions from the restoration team’s Construction Canada article; overall height from CTBUH.",
+        "references": [
+          {
+            "label": "CTBUH · published overall height 57 m",
+            "url": "https://www.skyscrapercenter.com/building/alberta-legislature-building/47212"
+          },
+          {
+            "label": "Restoration authors Binder, Pacholok and Sturgeon · A legislative legacy (2014)",
+            "url": "https://www.constructioncanada.net/a-legislative-legacy/"
+          },
+          {
+            "label": "Legislative Assembly · chamber history",
+            "url": "https://www.assembly.ab.ca/learn/the-legislative-assembly/chamber"
+          },
+          {
+            "label": "Wikipedia · Alberta Legislature Building",
+            "url": "https://en.wikipedia.org/wiki/Alberta_Legislature_Building"
+          },
+          {
+            "label": "OSM · building outline 42782487",
+            "url": "https://www.openstreetmap.org/way/42782487"
+          },
+          {
+            "label": "North facade · D. Benjamin Miller, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alberta_Legislature_Building,_June_7,_2024.jpg"
+          },
+          {
+            "label": "Night facade · Hugh Lee, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alberta_Legislature_Building_at_night.jpg"
+          },
+          {
+            "label": "Plaza view · Alexscuccato, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alberta_Legislature_Building.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/alberta-legislature-building/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=alberta-legislature-building&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=street"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=dome"
+          },
+          {
+            "label": "Portico",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=portico"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=alberta-legislature-building&view=top"
+          }
+        ]
+      },
+      "notes": "Overall height uses CTBUH 57 m; restoration authors give major dome peak 54 m, likely a different measurement endpoint, unresolved. Drum subdivisions, lantern height, column sizes, window rhythm and heraldic ornament estimated from front photographs. Rear/side elevations extrapolated from mapped setbacks and front rhythms, no close rear photo. Eight main ribs and separate low chamber dome preserved in far. Granite basement and Paskapoo sandstone upper facade use flat colors; carved Corinthian capitals and arms are abstract. The 5.2 m stair projection and cornices up to 0.5 m extend beyond the provider outline; no building masks expanded onto plaza. Plaza/fountain, trees, flags, interiors and statues omitted. Independent review PASS-WITH-NITS (4/5); three dome nits fixed and awaiting coordinator recheck; no Tesla measurements. Final export costs: near 34724 triangles / 8 draws / 1632516 bytes; far 8896 / 8 / 430264. Reference/export comparison reviewed at tmp/top-cities/shots/alberta-legislature-building/comparison-final.jpg; geometry QA has no issues and 0% back-face hits, with 2 m² of minor near-coplanar heuristic pairs below its threshold. Dome review fix: light terra-cotta changed to warm darker brown (#88694f), continuous eight-wave springing skirt retained in far, thicker clustered lantern supports and stepped bands; original 57 m height and dome/portico mass proportions preserved. Updated exported reference comparison inspected at tmp/top-cities/shots/alberta-legislature-building/dome-fix/comparison.jpg; QA review sheet at dome-fix-review/alberta-legislature-building.jpg.",
+      "documentation": "docs/assets/top-cities-alberta-legislature-building.md",
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
