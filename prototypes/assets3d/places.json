@@ -3,6 +3,11 @@
     "country": "Netherlands",
     "continent": "Europe"
   },
+  "Banff": {
+    "country": "Canada",
+    "region": "Alberta",
+    "continent": "North America"
+  },
   "Bogotá": {
     "country": "Colombia",
     "continent": "South America"
@@ -19,6 +24,11 @@
   "Dallas": {
     "country": "United States",
     "region": "Texas",
+    "continent": "North America"
+  },
+  "Edmonton": {
+    "country": "Canada",
+    "region": "Alberta",
     "continent": "North America"
   },
   "Garden Grove": {
@@ -110,6 +120,16 @@
     "region": "Québec",
     "continent": "North America"
   },
+  "Vancouver": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Victoria": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
   "Villeurbanne": {
     "country": "France",
     "continent": "Europe"
@@ -117,6 +137,11 @@
   "Washington": {
     "country": "United States",
     "region": "District of Columbia",
+    "continent": "North America"
+  },
+  "Winnipeg": {
+    "country": "Canada",
+    "region": "Manitoba",
     "continent": "North America"
   }
 }
