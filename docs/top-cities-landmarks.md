@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (42 released)
+## The collection (43 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -50,6 +50,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `christopher-s-bond-bridge` | Christopher S. Bond Bridge | Kansas City | bridge, road-fitted |
 | `lions-gate-bridge` | Lions Gate Bridge | Vancouver | bridge, road-fitted |
 | `burrard-street-bridge` | Burrard Street Bridge | Vancouver | bridge, road-fitted |
+| `canada-place` | Canada Place | Vancouver | building |
 
 ## A landmark is a folder
 

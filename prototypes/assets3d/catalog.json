@@ -14093,6 +14093,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "canada-place",
+      "name": "Canada Place",
+      "kind": "building",
+      "location": "Vancouver, British Columbia, Canada",
+      "status": "ready",
+      "description": "Five doubly curved thin-shell fabric saddles with exposed mast peaks, a pale rounded pier-end hall, and Pan Pacific hotel with a convex harbour bow, horizontal bands and stepped podium terraces.",
+      "manifest": "/models/buildings/canada-place.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/canada-place/geometry.js",
+        "build": "pnpm build:top-cities-landmarks canada-place --no-check",
+        "provenance": "Original procedural texture-free Three.js mesh by Codriver, authored 2026-10-06. OSM ways/relation 16532084 queried through the shared helper; © OpenStreetMap contributors, ODbL 1.0. Photographs inspected only, retained in ignored tmp: Heritage Horns at the Pan Pacific Vancouver (Pan Pacific, CC BY 2.0); Exhibition hall in Canada Place 2026 (Canmenwalker, CC BY 4.0); Canada Place with Downtown Vancouver, British Columbia, Canada Masson (Spyder212, CC BY-SA 4.0); Vancouver (BC, Canada), Canada Place -- 2022 -- 1847 (Dietmar Rabich, CC BY-SA 4.0). No image pixels, textures or third-party geometry shipped. Revision references: Canada Place Landing (Nicolas Untz, 2001, CC BY-SA 2.0), the independent review sheet lead photograph; license verified on its Commons file page.",
+        "references": [
+          {
+            "label": "DA Architects: project, 1986 completion, five sails and 34,840 m²",
+            "url": "https://www.da-architects.ca/projects/canada-place-pan-pacific-hotel/"
+          },
+          {
+            "label": "Government of Canada: five replacement sails, 2010",
+            "url": "https://www.canada.ca/en/news/archive/2010/07/canada-place-begins-work-replace-iconic-sails.html"
+          },
+          {
+            "label": "Canada Place identity and 81.5 m height (supplied dossier)",
+            "url": "https://en.wikipedia.org/wiki/Canada_Place"
+          },
+          {
+            "label": "OSM main pier way",
+            "url": "https://www.openstreetmap.org/way/223635729"
+          },
+          {
+            "label": "OSM hotel relation",
+            "url": "https://www.openstreetmap.org/relation/16532084"
+          },
+          {
+            "label": "Dietmar Rabich: 2022 five-sails side photograph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Canada_Place_--_2022_--_1847.jpg"
+          },
+          {
+            "label": "Pan Pacific: Heritage Horns, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Heritage_Horns_at_the_Pan_Pacific_Vancouver.jpg"
+          },
+          {
+            "label": "Spyder212: waterfront overview, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Canada_Place_with_Downtown_Vancouver,_British_Columbia,_Canada_Masson.jpg"
+          },
+          {
+            "label": "Canmenwalker: exhibition hall 2026, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Exhibition_hall_in_Canada_Place_2026.JPG"
+          },
+          {
+            "label": "Nicolas Untz: Canada Place Landing, 2001, CC BY-SA 2.0; rounded hall, hotel bow and terraces",
+            "url": "https://commons.wikimedia.org/wiki/File:Canada_Place_Landing.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/canada-place/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=canada-place",
+        "views": [
+          {
+            "label": "Harbour overview",
+            "url": "/asset-preview.html?asset=canada-place&view=overview"
+          },
+          {
+            "label": "East facade",
+            "url": "/asset-preview.html?asset=canada-place&view=facade"
+          },
+          {
+            "label": "Opposite facade",
+            "url": "/asset-preview.html?asset=canada-place&view=back"
+          },
+          {
+            "label": "Roof and mapped plan",
+            "url": "/asset-preview.html?asset=canada-place&view=roof"
+          },
+          {
+            "label": "Shore entrance",
+            "url": "/asset-preview.html?asset=canada-place&view=street"
+          },
+          {
+            "label": "Sail detail",
+            "url": "/asset-preview.html?asset=canada-place&view=sails"
+          },
+          {
+            "label": "Hotel grid",
+            "url": "/asset-preview.html?asset=canada-place&view=hotel"
+          },
+          {
+            "label": "Rounded end hall",
+            "url": "/asset-preview.html?asset=canada-place&view=hall"
+          },
+          {
+            "label": "Convex hotel harbour facade",
+            "url": "/asset-preview.html?asset=canada-place&view=harbour"
+          }
+        ]
+      },
+      "notes": "Revised after the independent FIX review: opaque fabric curtains and straight diagonal edge stays removed; continuous doubly curved tensile shells retain all five paired peaks, deep curved valleys and exposed 46.35 m mast tips. Pale oval end-hall drum and shallow dome, convex hotel harbour bow, rounded rear corners, strong horizontal facade bands and two setback podium terraces added. Sail heights/curvature, hall location/dimensions and hotel bow/podium levels remain photographic estimates within the mapped envelope. Hotel height 81.5 m is the supplied secondary-source value. Lower dock arcade depth, interiors, horns, gardens, signage and animated sail lighting remain simplified or omitted. Far retains the corrected silhouette. Cityscape and Full 3D world not tested yet, integration is checked separately; independent re-review pending.",
+      "documentation": "docs/assets/top-cities-canada-place.md",
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
