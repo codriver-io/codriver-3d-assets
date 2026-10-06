@@ -1,4 +1,3 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// No mapped building extrusion. Roadway ownership is provided by PROFILE.
+export const FOOTPRINTS=[];
+export const OSM_WAYS=[175326660,451293733,709287392,8515751,931254808,1516540140,471835847,693128386,471835844,697598850];
