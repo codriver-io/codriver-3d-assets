@@ -14283,6 +14283,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "science-world-vancouver",
+      "name": "Science World",
+      "kind": "building",
+      "location": "Vancouver, British Columbia, Canada",
+      "status": "ready",
+      "description": "Original geodesic silver Expo 86 sphere, triangular panels and night light nodes above a red drum, curved glazed waterfront podium and taller eastern gallery wing.",
+      "manifest": "/models/buildings/science-world-vancouver.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/science-world-vancouver/geometry.js",
+        "build": "pnpm build:top-cities-landmarks science-world-vancouver --no-check",
+        "provenance": "Original procedural metric Three.js geometry authored 2026-10-06; no external mesh, photographic texture or scan. OSM building outline and four parts © OpenStreetMap contributors (ODbL 1.0). Commons titles/authors/licences listed below are visual references only, retained in ignored tmp; no photo is distributed. Permanent silver shell modeled; temporary FIFA wrap excluded.",
+        "references": [
+          {
+            "label": "File:Science World in Vancouver during 2026 FIFA World Cup.jpg — Quintin Soloviev, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Science_World_in_Vancouver_during_2026_FIFA_World_Cup.jpg"
+          },
+          {
+            "label": "File:Science World (10930112275).jpg — GoToVan from Vancouver, Canada, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Science_World_(10930112275).jpg"
+          },
+          {
+            "label": "File:Science World at TELUS World of Science.jpg — Differense, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Science_World_at_TELUS_World_of_Science.jpg"
+          },
+          {
+            "label": "File:Vancouver Science World Dome.jpg — Janusz Sobolewski, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Science_World_Dome.jpg"
+          },
+          {
+            "label": "Science World: history of the Expo 86 dome, Bruno Freschi",
+            "url": "https://www.scienceworld.ca/stories/built-to-be-torn-down-dreamed-to-last-the-history-behind-science-worlds-dome/"
+          },
+          {
+            "label": "Summit BIM: consulting structural engineer reports 47 m dome and 2011 retrofit",
+            "url": "https://summitbim.com/just-published-moving-into-the-21st-century-science-world-reaps-benefits-of-bim/"
+          },
+          {
+            "label": "BC Government: 40 m diameter temporary 2026 FIFA dome wrap",
+            "url": "https://news.gov.bc.ca/releases/2026TACS0022-000498"
+          },
+          {
+            "label": "Mapped Science World outline (OSM 37084312)",
+            "url": "https://www.openstreetmap.org/way/37084312"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/science-world-vancouver/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=science-world-vancouver",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=science-world-vancouver&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=science-world-vancouver&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=science-world-vancouver&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=science-world-vancouver&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=science-world-vancouver&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=science-world-vancouver&view=detail"
+          }
+        ]
+      },
+      "notes": "Diameter 40 m (BC Government and mapped dome); overall apex approximately 47 m (engineer interview). Podium 10 m and east gallery 14 m mapped OSM heights; center/cut elevation, panel subdivision, node lights, mullions, red piers, roof modules and tension masts estimated from reference photographs. Opaque silver panels approximate reflective glass without an environment texture. No interior, piles below plaza, exact lettering, plaza/seawall, temporary wrap or neighboring outbuilding. Lamps are geometric warm points; lighting patterns not animated. Source/export inspection establishes asset readiness; independent reviewer and runtime integration remain separate.",
+      "documentation": "docs/assets/top-cities-science-world-vancouver.md",
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
