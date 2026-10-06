@@ -14655,6 +14655,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "vancouver-house",
+      "name": "Vancouver House",
+      "kind": "building",
+      "location": "1480 Howe Street, Vancouver, British Columbia, Canada",
+      "status": "ready",
+      "description": "BIG / DIALOG residential tower completed 2020: a triangular base expands toward Granville Bridge into a rectangular crown, with staggered white balcony slab edges, recessed blue-grey glazing and basket-weave party walls.",
+      "manifest": "/models/buildings/vancouver-house.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/vancouver-house/geometry.js",
+        "build": "pnpm build:top-cities-landmarks vancouver-house --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-06, without third-party meshes or textures. Podium and upper tower outlines from OSM ways 742009401 and 1092241825, rechecked through the shared Overpass helper 2026-10-06 (© OpenStreetMap contributors, ODbL 1.0). Height 155.6 m, 52 physical floors and completion 2020 from the current Skyscraper Center entry; Westbank markets 59 storeys, while the dossier and OSM count 49. Triangular-to-rectangular expansion above 30 m from BIG / International Highrise Award. Ignored comparison references: Commons Vancouver House - 22 (Haatu, CC BY 2.0), The Tower Rises, Vancouver House, Vancouver (W & J, CC BY-SA 2.0), Vancouver House, Vancouver, British Columbia 04 - Nov 30, 2019 (Ken Lund, CC BY-SA 2.0). Two developer photographs BIG VancouverHouse 0113 EDIT and BIG VancouverHouse 0660 were viewed from the Westbank page; copyright retained by their respective creators, reference only, no redistribution. No photograph ships in source or GLBs.",
+        "references": [
+          {
+            "label": "Current architectural height, floors and completion · Skyscraper Center",
+            "url": "https://www.skyscrapercenter.com/building/id/13987"
+          },
+          {
+            "label": "Developer identity and nine-storey podium · Westbank",
+            "url": "https://westbankcorp.com/body-of-work/vancouver-house"
+          },
+          {
+            "label": "Architect · BIG",
+            "url": "https://big.dk/projects/van"
+          },
+          {
+            "label": "Expansion above bridge-clearance datum · International Highrise Award",
+            "url": "https://www.international-highrise-award.com/en/best-high-rises/20222023/vancouver-house/"
+          },
+          {
+            "label": "Mapped podium · OSM way 742009401",
+            "url": "https://www.openstreetmap.org/way/742009401"
+          },
+          {
+            "label": "Mapped upper tower envelope · OSM way 1092241825",
+            "url": "https://www.openstreetmap.org/way/1092241825"
+          },
+          {
+            "label": "Photograph · Haatu, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_House_-_22.jpg"
+          },
+          {
+            "label": "Photograph · W & J, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Tower_Rises,_Vancouver_House,_Vancouver.jpg"
+          },
+          {
+            "label": "Photograph · Ken Lund, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_House,_Vancouver,_British_Columbia_04_-_Nov_30,_2019.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vancouver-house/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=vancouver-house&view=overview",
+        "views": [
+          {
+            "label": "Whole tower from the bridge side",
+            "url": "/asset-preview.html?asset=vancouver-house&view=overview"
+          },
+          {
+            "label": "Peeling east facade",
+            "url": "/asset-preview.html?asset=vancouver-house&view=facade"
+          },
+          {
+            "label": "Opposite west facade",
+            "url": "/asset-preview.html?asset=vancouver-house&view=back"
+          },
+          {
+            "label": "Roof and crown",
+            "url": "/asset-preview.html?asset=vancouver-house&view=roof"
+          },
+          {
+            "label": "Street-level underside",
+            "url": "/asset-preview.html?asset=vancouver-house&view=street"
+          },
+          {
+            "label": "Staggered balconies",
+            "url": "/asset-preview.html?asset=vancouver-house&view=detail"
+          },
+          {
+            "label": "Mapped outline and baked orientation",
+            "url": "/asset-preview.html?asset=vancouver-house&view=plan"
+          }
+        ]
+      },
+      "notes": "Mapped upper envelope 43.3 x 28.8 m, baked plan rotation -46 degrees from east (+u bearing 44 degrees). The eastern corner unfolds from a half-area triangular plate above 30 m to the full rectangle by 115 m. Its exact curve, 3.8 m balcony module, two-floor phasing, 1.05 m ledge recesses, 2.6 m glass inset and colours are estimates, not surveyed. Low site-wide retail plinth 4.2 m and nine-storey site-tail wings to 27 m are estimated from the OSM envelope and developer description; they are a deliberately simplified podium. Far preserves all storey bands but doubles bay widths and omits rails, mullions and apartment lights. Roof plant and crown details estimated. No signage, interiors, furniture, swimming pool, Spinning Chandelier or detached buildings. Current height and floor counts differ from the older dossier and marketed levels. Near rails are opaque glass-colour geometry; lighting is a sparse invented apartment pattern. No hardware performance measurement; independent visual review remains for the coordinator.",
+      "documentation": "docs/assets/top-cities-vancouver-house.md",
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

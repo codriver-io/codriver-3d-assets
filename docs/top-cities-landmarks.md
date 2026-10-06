@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (48 released)
+## The collection (49 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -55,6 +55,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `science-world-vancouver` | Science World | Vancouver | building |
 | `bc-place` | BC Place | Vancouver | building |
 | `harbour-centre` | Harbour Centre (Vancouver Lookout) | Vancouver | building |
+| `vancouver-house` | Vancouver House | Vancouver | building |
 | `walterdale-bridge` | Walterdale Bridge | Edmonton | bridge, road-fitted |
 
 ## A landmark is a folder
