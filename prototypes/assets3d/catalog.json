@@ -15043,6 +15043,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fairmont-banff-springs",
+      "name": "Fairmont Banff Springs",
+      "kind": "building",
+      "location": "405 Spray Avenue, Banff, Alberta, Canada",
+      "status": "ready",
+      "description": "The castle in the Rockies: dark Rundle-stone hotel with the 1914 central tower, steep copper roofs, paired pavilion gables, corbelled turrets, dormer rows and 1928 connecting wings. Includes simplified connected southern halls.",
+      "manifest": "/models/buildings/fairmont-banff-springs.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fairmont-banff-springs/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fairmont-banff-springs --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-06; mapped main hotel way 24823886 from prepared Overpass dossier, © OpenStreetMap contributors ODbL 1.0. Photographs used only as visual references: Thank you for visiting my page (CC BY 2.0), Adam Jones (CC BY-SA 3.0), Audree (CC BY-SA 3.0), Library of Congress (public domain), Kimpayant (CC BY-SA 3.0), Tony Hisgett (CC BY 2.0). No external meshes, fonts, photographs or textures shipped.",
+        "references": [
+          {
+            "label": "Parks Canada: National Historic Site, Rundle stone and copper roofs",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=2&lang=en"
+          },
+          {
+            "label": "Banff Springs Hotel: published overall height 59.5 m and history",
+            "url": "https://en.wikipedia.org/wiki/Banff_Springs_Hotel"
+          },
+          {
+            "label": "OSM main hotel way 24823886",
+            "url": "https://www.openstreetmap.org/way/24823886"
+          },
+          {
+            "label": "File:The Banff Springs Hotel Alberta Canada (23528586849).jpg — Thank you for visiting my page from Canada, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Banff_Springs_Hotel_Alberta_Canada_(23528586849).jpg"
+          },
+          {
+            "label": "File:Banff Springs Hotel - Interior - Banff - Alberta - Canada - 01.jpg — Adam Jones, Ph.D., CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Banff_Springs_Hotel_-_Interior_-_Banff_-_Alberta_-_Canada_-_01.jpg"
+          },
+          {
+            "label": "File:Banff Springs Hotel-1.jpg — Audree, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Banff_Springs_Hotel-1.jpg"
+          },
+          {
+            "label": "File:Banff Springs Hotel, Alberta, Canada LCCN92516579.jpg — Miscellaneous Items in High Demand, PPOC, Library of Congress, Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Banff_Springs_Hotel,_Alberta,_Canada_LCCN92516579.jpg"
+          },
+          {
+            "label": "File:Banff Spring Hotel Alberta Kim Payant 02.jpg — Kimpayant, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Banff_Spring_Hotel_Alberta_Kim_Payant_02.jpg"
+          },
+          {
+            "label": "Aerial photograph: Banff Springs Hotel (266360222), Tony Hisgett, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Banff_Springs_Hotel_(266360222).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fairmont-banff-springs/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=fairmont-banff-springs&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fairmont-banff-springs&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fairmont-banff-springs&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fairmont-banff-springs&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fairmont-banff-springs&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=fairmont-banff-springs&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fairmont-banff-springs&view=detail"
+          }
+        ]
+      },
+      "notes": "Published height 59.5 m; OSM outer envelope and 151-degree main-axis bearing mapped. Block subdivision, floor heights, roof pitches, turrets, dormer/window counts, porch and connected hall heights estimated from photographs. Porch footprint is a supplementary photo estimate. Carved ornament, signage, interiors, landscaping, pool and detached Rundle building omitted. Far keeps massing and two-tier gables but simplifies windows, masonry and dormers. No hardware performance claim. Upper blocks approximate OSM edge steps with up to a 3 m tested projection margin; exported QA: zero different-material coplanar overlaps and 2.0% first-hit back faces, at the sweep threshold. Independent visual approval remains pending.",
+      "documentation": "docs/assets/top-cities-fairmont-banff-springs.md",
+      "city": "Banff",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
