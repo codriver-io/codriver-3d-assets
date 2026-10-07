@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (53 released)
+## The collection (54 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -61,6 +61,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `alberta-legislature-building` | Alberta Legislature Building | Edmonton | building |
 | `walterdale-bridge` | Walterdale Bridge | Edmonton | bridge, road-fitted |
 | `fairmont-banff-springs` | Fairmont Banff Springs | Banff | building |
+| `canadian-museum-for-human-rights` | Canadian Museum for Human Rights | Winnipeg | building |
 
 ## A landmark is a folder
 
