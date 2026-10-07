@@ -15134,6 +15134,105 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "canadian-museum-for-human-rights",
+      "name": "Canadian Museum for Human Rights",
+      "kind": "building",
+      "location": "Winnipeg, Manitoba, Canada",
+      "city": "Winnipeg",
+      "status": "ready",
+      "description": "Antoine Predock’s 2014 museum: spreading limestone roots and prairie roofs, four overlapping angular glass shells, stepped stone galleries, broad approach stairs and the continuously tapering 100 m Tower of Hope.",
+      "manifest": "/models/buildings/canadian-museum-for-human-rights.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/geometry.js",
+        "build": "pnpm build:top-cities-landmarks canadian-museum-for-human-rights --no-check",
+        "provenance": "Original procedural geometry by Codriver. Geographic outlines from OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photographs: Quintin Soloviev CC BY 4.0; Ethan Sahagun CC BY 4.0; Herb Neufeld CC BY 2.0; Client42 CC BY-SA 4.0; Wpg guy CC BY-SA 3.0; Ccyyrree CC0. All six photos were viewed in the supplied dossier contact sheet; no photographs, texture pixels or third-party meshes are redistributed.",
+        "references": [
+          {
+            "label": "CMHR: The Building (100 m tower, custom-cut glass, Tyndall stone, green roofs)",
+            "url": "https://humanrights.ca/about/building"
+          },
+          {
+            "label": "OSM museum outline and building parts",
+            "url": "https://www.openstreetmap.org/way/131229325"
+          },
+          {
+            "label": "Museum history and opening",
+            "url": "https://en.wikipedia.org/wiki/Canadian_Museum_for_Human_Rights"
+          },
+          {
+            "label": "File:Canadian Museum for Human Rights (Winnipeg, MB).jpg — Quintin Soloviev (CC BY 4.0, reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canadian_Museum_for_Human_Rights_(Winnipeg,_MB).jpg"
+          },
+          {
+            "label": "File:Canadian Museum for Human Rights and downtown Winnipeg skyline at night, Manitoba, Canada.jpg — Ethan Sahagun (CC BY 4.0, reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canadian_Museum_for_Human_Rights_and_downtown_Winnipeg_skyline_at_night,_Manitoba,_Canada.jpg"
+          },
+          {
+            "label": "File:Winnipeg (6381787999).jpg — Herb Neufeld (CC BY 2.0, reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Winnipeg_(6381787999).jpg"
+          },
+          {
+            "label": "File:Winnipeg view from CMHR.jpg — Client42 (CC BY-SA 4.0, reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Winnipeg_view_from_CMHR.jpg"
+          },
+          {
+            "label": "File:CMHR.jpg — Wpg guy (CC BY-SA 3.0, reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:CMHR.jpg"
+          },
+          {
+            "label": "File:Canadian Museum for Human Rights, April 2014, showing sign with expected opening date.jpg — Ccyyrree (CC0, reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Canadian_Museum_for_Human_Rights,_April_2014,_showing_sign_with_expected_opening_date.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=canadian-museum-for-human-rights",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=detail"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=tower"
+          },
+          {
+            "label": "Distant",
+            "url": "/asset-preview.html?asset=canadian-museum-for-human-rights&view=distant"
+          }
+        ]
+      },
+      "notes": "Revised after independent FIX review: the smooth glass bowl and pale deck became four overlapping planar-panel shells with folded glass roof returns, tower shelves became a continuous hexagonal taper and transparent lattice-like crown, and a broad straight stair flight was added between the roots. The 100 m overall tower height is sourced; gallery/root heights and the tower plan use OSM. Cloud folds, tower taper/glazing, stairs, limestone courses and vegetation colours are estimated from the dossier. Cloud glass remains opaque blue-grey; upper tower glass uses standard alpha blending. The stair rectangle is an authored twentieth footprint ring, separate from nineteen mapped OSM ways. Interiors, small signs, full plaza landscaping and actual panel inventory are omitted. Independent re-review is pending; Cityscape and Full 3D world integration are checked separately.",
+      "documentation": "docs/assets/top-cities-canadian-museum-for-human-rights.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
