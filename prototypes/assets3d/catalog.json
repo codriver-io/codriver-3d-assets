@@ -15320,6 +15320,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "oslo-opera-house",
+      "name": "Oslo Opera House",
+      "kind": "building",
+      "location": "Oslo",
+      "status": "ready",
+      "description": "Original procedural exterior of Snøhetta's 2008 Oslo Opera House: a white marble glacier roof you can walk up, a glass foyer wall, and a 35 m aluminium fly tower at the Bjørvika waterline.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/oslo-opera-house/geometry.js",
+        "build": "pnpm build:top-cities-landmarks oslo-opera-house",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-08; no mesh capture, tracing, bitmap, or texture. Derived geographic data © OpenStreetMap contributors (ODbL 1.0), ways 810259696, 397360403, 397360407, 397511591, 810259693, 935939345, 397360404, 397360405, 910163883, 910545060, 910589015, 910589016 and 910884295. Reference-only photos retained under ignored tmp/: Oslo - Opera House.jpg and Oslo - Opera House - 2026.jpg by Jorge Franganillo (CC BY 4.0); Oslo Opera House 2023 2.jpg by kallerna (CC BY-SA 4.0); Employees of the Oslo Opera begin arriving at work.jpg by WmCheez (CC BY-SA 4.0). Interior oak photographs were not used as the fly-tower cladding. No external images are included in the model exports.",
+        "references": [
+          {
+            "label": "Wikipedia — Oslo Opera House",
+            "url": "https://en.wikipedia.org/wiki/Oslo_Opera_House"
+          },
+          {
+            "label": "Store norske leksikon — Operahuset i Bjørvika",
+            "url": "https://snl.no/Operahuset_i_Bj%C3%B8rvika"
+          },
+          {
+            "label": "NTNU / Statsbygg — The Opera House in Oslo (project paper)",
+            "url": "https://www.ntnu.edu/documents/1261865083/1263544276/paper_opera_eng.pdf/d42ea5b5-02aa-4013-afcf-de981cde8809"
+          },
+          {
+            "label": "Den Norske Opera & Ballett",
+            "url": "https://www.operaen.no/"
+          },
+          {
+            "label": "Waterfront photograph — Jorge Franganillo, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Oslo_-_Opera_House.jpg"
+          },
+          {
+            "label": "Foyer facade — kallerna, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Oslo_Opera_House_2023_2.jpg"
+          },
+          {
+            "label": "OSM building outline",
+            "url": "https://www.openstreetmap.org/way/810259696"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oslo-opera-house/geometry.js"
+      },
+      "notes": "Plan follows the OSM outline, about 241 m along the waterfront. Exterior fly-tower height is the tagged 35 m. The published 54 m figure is the interior clear height over a stage about 16 m below sea level, not the roof. Roof-fold heights, the cantilever, mullion spacing, slab joints and the shallow tower relief are estimates. The foyer glass leans toward the fjord, dark blue-green, with white diagonal columns. Far keeps the blade, the glass, a coarse joint grid and a light tower panel. No interior, no oak wave wall, no lettering, no neighbouring Barcode blocks. Independent review and both placement modes are still pending.",
+      "documentation": "docs/assets/top-cities-oslo-opera-house.md",
+      "manifest": "/models/buildings/oslo-opera-house.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=oslo-opera-house",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=back"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=detail"
+          },
+          {
+            "label": "top",
+            "url": "/asset-preview.html?asset=oslo-opera-house&view=top"
+          }
+        ]
+      },
+      "city": "Oslo",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
