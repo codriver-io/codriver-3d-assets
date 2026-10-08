@@ -16147,6 +16147,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "helgeland-bridge",
+      "name": "Helgeland Bridge",
+      "kind": "bridge",
+      "location": "Fv17, Leirfjorden, Leirfjord–Alstahaug, Nordland, Norway",
+      "city": "Leirfjord",
+      "status": "ready",
+      "description": "Original procedural 1991 Helgelandsbrua: unequal modified-diamond concrete pylons with deck-level crossbeams, two edge stay planes, slim concrete deck and slender approach viaduct piers.",
+      "manifest": "/models/bridges/helgeland-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/helgeland-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks helgeland-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-08 using published dimensions, supplied Commons reference photographs and mapped alignment © OpenStreetMap contributors, ODbL 1.0. No traced mesh, photographic texture or capture shipped. Reference-only photographs: Helgelandsbrua, Heiko Hübscher, CC BY-SA 2.5; Helgelandsbrua-2006-07-02, ZorroIII, CC BY 2.5 (both Commons file pages checked); 20240720 Helgelandsbrua - 5039, Zinnmann, CC BY-SA 4.0; Helgelandsbrua & Leirfjorden, Ximonic/Simo Räsänen, CC BY-SA 3.0 (last two licences supplied by dossier).",
+        "references": [
+          {
+            "label": "University of Tromsø: modified-diamond towers, 127.5/138 m, 425 m span, 1065 m length, 1991",
+            "url": "https://arkitekturguide.uit.no/index.php/items/show/1146"
+          },
+          {
+            "label": "Wikipedia dossier: 12 m width and 45 m navigation clearance",
+            "url": "https://en.wikipedia.org/wiki/Helgeland_Bridge"
+          },
+          {
+            "label": "OpenStreetMap bridge outline",
+            "url": "https://www.openstreetmap.org/way/654218196"
+          },
+          {
+            "label": "Helgelandsbrua, Heiko Hübscher, CC BY-SA 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Helgelandsbrua.jpg"
+          },
+          {
+            "label": "Helgelandsbrua-2006-07-02, ZorroIII, CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Helgelandsbrua-2006-07-02.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/helgeland-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=helgeland-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=helgeland-bridge&view=underside"
+          }
+        ]
+      },
+      "notes": "Published unequal modified-diamond 138/127.5 m pylons, 425 m main span, 1065 m length and 12 m platform; estimated sections, cable count/anchors/diameters, deck datum/camber, side spans and pier rhythm. Near 65,240 triangles / 20 draws / 2939 KiB; far 16,656 / 7 / 445 KiB. Export contact sheet viewed beside licensed reference photographs, near/far light/dark. 222 focused tests and catalog checks pass; QA no issues, zero coplanar overlaps and 0% back-face hits. World north foot -0.437/+0.143 m corrected to 0/0 m, both banks and headings checked. Pylon bases extend beyond mapped deck outline; flat-map roadway extends beyond the physical bridge. No shared source change or terrain baked into GLBs. Independent review pending; real HD, active navigation and full lifecycle/hardware QA remain not tested.",
+      "documentation": "docs/assets/top-cities-helgeland-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
