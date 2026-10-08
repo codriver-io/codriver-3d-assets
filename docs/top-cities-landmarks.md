@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (57 released)
+## The collection (58 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -65,6 +65,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `storseisundet-bridge` | Storseisundet Bridge (Atlantic Ocean Road) | Averøy | bridge, road-fitted |
 | `halogaland-bridge` | Hålogaland Bridge | Narvik | bridge, road-fitted |
 | `oslo-opera-house` | Oslo Opera House | Oslo | building |
+| `oslo-city-hall` | Oslo City Hall | Oslo | building |
 
 ## A landmark is a folder
 

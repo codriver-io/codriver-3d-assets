@@ -15498,6 +15498,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "oslo-city-hall",
+      "name": "Oslo City Hall",
+      "kind": "building",
+      "location": "Oslo",
+      "status": "ready",
+      "description": "Original procedural exterior of Oslo City Hall (Oslo rådhus, 1950): a dark brown-red brick functionalist block with two unequal flat-topped towers, a flat harbour roof behind a brick parapet, and clocks on the east tower and the courtyard.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/oslo-city-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks oslo-city-hall",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-08; no mesh capture, tracing, bitmap, or texture. Derived geographic data © OpenStreetMap contributors (ODbL 1.0), ways 24900009, 621514223, 292242403, 292242405, 404712578, 503263073, 503349980, 503349981, 1062312302, 1062312303, 1062316583 and 1062316584. Reference-only photos retained under ignored tmp/: harbour view by Ole Brastad (CC BY 2.0); north courtyard panorama by Wolfmann (CC BY-SA 4.0); courtyard relief by Jorge Láscar (CC BY 2.0). Interior photographs were not used. No external images are included in the model exports.",
+        "references": [
+          {
+            "label": "Wikipedia — Oslo City Hall",
+            "url": "https://en.wikipedia.org/wiki/Oslo_City_Hall"
+          },
+          {
+            "label": "Oslo Byleksikon — Rådhuset",
+            "url": "https://www.oslobyleksikon.no/side/R%C3%A5dhuset"
+          },
+          {
+            "label": "Oslo Byleksikon — City Hall (English)",
+            "url": "https://oslobyleksikon.no/index.php?title=City_Hall"
+          },
+          {
+            "label": "Lokalhistoriewiki — Oslo rådhus",
+            "url": "https://lokalhistoriewiki.no/Oslo_r%C3%A5dhus"
+          },
+          {
+            "label": "Harbour photograph — Ole Brastad, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2018-05-27_Oslo_R%C3%A5dhus_(1).jpg"
+          },
+          {
+            "label": "Courtyard panorama — Wolfmann, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Oslo_r%C3%A5dhus_City_Hall_Norway_Main_Entrance_Inngang_borgg%C3%A5rd_Fridtjof_Nansens_plass_Morning_sunlight_Shadows_Blue_skye_Sett_paving_Restaurants_outdoor_tables_Astronomical_clock_Stairs_etc_Distorted_panorama_2020-09-02_IMG_9673.jpg"
+          },
+          {
+            "label": "OSM building outline",
+            "url": "https://www.openstreetmap.org/way/24900009"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oslo-city-hall/geometry.js"
+      },
+      "notes": "East tower 66 m and west tower 63 m, the 8.6 m south clock and the 5 m astronomical clock are sourced. The harbour block is a 27 m brick parapet with a flat copper roof at 25.05 m set behind it; OSM's 0.3 m gable is not used. Both towers are flat brick, with a recessed loggia under a blank crown and a thin stone cornice; the east clock sits below that crown. The courtyard link at 32.6 m, the window grid, the colonnade, the loggia spacing and the relief bars are estimates. Hands stay inside the dial. Neighbours, the swan fountain, St. Hallvard as a figure, and the interiors are omitted. Far keeps both towers, both clocks, the slot, the parapet and a coarser window grid.",
+      "documentation": "docs/assets/top-cities-oslo-city-hall.md",
+      "manifest": "/models/buildings/oslo-city-hall.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=oslo-city-hall",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=facade"
+          },
+          {
+            "label": "plaza",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=plaza"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=street"
+          },
+          {
+            "label": "clock",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=clock"
+          },
+          {
+            "label": "courtyard",
+            "url": "/asset-preview.html?asset=oslo-city-hall&view=courtyard"
+          }
+        ]
+      },
+      "city": "Oslo",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
