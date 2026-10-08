@@ -118,6 +118,52 @@ import { SPEC as lm_fairmont_banff_springsSpec, PALETTES as lm_fairmont_banff_sp
 import { FOOTPRINTS as lm_fairmont_banff_springsFootprints } from './fairmont-banff-springs/footprint.js';
 import { SPEC as lm_canadian_museum_for_human_rightsSpec, PALETTES as lm_canadian_museum_for_human_rightsPalettes } from './canadian-museum-for-human-rights/config.js';
 import { FOOTPRINTS as lm_canadian_museum_for_human_rightsFootprints } from './canadian-museum-for-human-rights/footprint.js';
+import { SPEC as lm_storseisundet_bridgeSpec, PALETTES as lm_storseisundet_bridgePalettes } from './storseisundet-bridge/config.js';
+import { FOOTPRINTS as lm_storseisundet_bridgeFootprints } from './storseisundet-bridge/footprint.js';
+import { ROAD_LAYER as lm_storseisundet_bridgeRoad } from './storseisundet-bridge/layer.js';
+import { SPEC as lm_halogaland_bridgeSpec, PALETTES as lm_halogaland_bridgePalettes } from './halogaland-bridge/config.js';
+import { FOOTPRINTS as lm_halogaland_bridgeFootprints } from './halogaland-bridge/footprint.js';
+import { ROAD_LAYER as lm_halogaland_bridgeRoad } from './halogaland-bridge/layer.js';
+import { SPEC as lm_hardanger_bridgeSpec, PALETTES as lm_hardanger_bridgePalettes } from './hardanger-bridge/config.js';
+import { FOOTPRINTS as lm_hardanger_bridgeFootprints } from './hardanger-bridge/footprint.js';
+import { ROAD_LAYER as lm_hardanger_bridgeRoad } from './hardanger-bridge/layer.js';
+import { SPEC as lm_tromso_bridgeSpec, PALETTES as lm_tromso_bridgePalettes } from './tromso-bridge/config.js';
+import { FOOTPRINTS as lm_tromso_bridgeFootprints } from './tromso-bridge/footprint.js';
+import { ROAD_LAYER as lm_tromso_bridgeRoad } from './tromso-bridge/layer.js';
+import { SPEC as lm_helgeland_bridgeSpec, PALETTES as lm_helgeland_bridgePalettes } from './helgeland-bridge/config.js';
+import { FOOTPRINTS as lm_helgeland_bridgeFootprints } from './helgeland-bridge/footprint.js';
+import { ROAD_LAYER as lm_helgeland_bridgeRoad } from './helgeland-bridge/layer.js';
+import { SPEC as lm_svinesund_bridgeSpec, PALETTES as lm_svinesund_bridgePalettes } from './svinesund-bridge/config.js';
+import { FOOTPRINTS as lm_svinesund_bridgeFootprints } from './svinesund-bridge/footprint.js';
+import { ROAD_LAYER as lm_svinesund_bridgeRoad } from './svinesund-bridge/layer.js';
+import { SPEC as lm_oslo_opera_houseSpec, PALETTES as lm_oslo_opera_housePalettes } from './oslo-opera-house/config.js';
+import { FOOTPRINTS as lm_oslo_opera_houseFootprints } from './oslo-opera-house/footprint.js';
+import { SPEC as lm_oslo_city_hallSpec, PALETTES as lm_oslo_city_hallPalettes } from './oslo-city-hall/config.js';
+import { FOOTPRINTS as lm_oslo_city_hallFootprints } from './oslo-city-hall/footprint.js';
+import { SPEC as lm_royal_palace_osloSpec, PALETTES as lm_royal_palace_osloPalettes } from './royal-palace-oslo/config.js';
+import { FOOTPRINTS as lm_royal_palace_osloFootprints } from './royal-palace-oslo/footprint.js';
+import { SPEC as lm_holmenkollbakkenSpec, PALETTES as lm_holmenkollbakkenPalettes } from './holmenkollbakken/config.js';
+import { FOOTPRINTS as lm_holmenkollbakkenFootprints } from './holmenkollbakken/footprint.js';
+import { SPEC as lm_munch_museumSpec, PALETTES as lm_munch_museumPalettes } from './munch-museum/config.js';
+import { FOOTPRINTS as lm_munch_museumFootprints } from './munch-museum/footprint.js';
+import { SPEC as lm_akershus_fortressSpec, PALETTES as lm_akershus_fortressPalettes } from './akershus-fortress/config.js';
+import { FOOTPRINTS as lm_akershus_fortressFootprints } from './akershus-fortress/footprint.js';
+import { SPEC as lm_astrup_fearnley_museumSpec, PALETTES as lm_astrup_fearnley_museumPalettes } from './astrup-fearnley-museum/config.js';
+import { FOOTPRINTS as lm_astrup_fearnley_museumFootprints } from './astrup-fearnley-museum/footprint.js';
+import { SPEC as lm_bryggenSpec, PALETTES as lm_bryggenPalettes } from './bryggen/config.js';
+import { FOOTPRINTS as lm_bryggenFootprints } from './bryggen/footprint.js';
+import { SPEC as lm_nidaros_cathedralSpec, PALETTES as lm_nidaros_cathedralPalettes } from './nidaros-cathedral/config.js';
+import { FOOTPRINTS as lm_nidaros_cathedralFootprints } from './nidaros-cathedral/footprint.js';
+import { SPEC as lm_arctic_cathedralSpec, PALETTES as lm_arctic_cathedralPalettes } from './arctic-cathedral/config.js';
+import { FOOTPRINTS as lm_arctic_cathedralFootprints } from './arctic-cathedral/footprint.js';
+import { SPEC as lm_norwegian_petroleum_museumSpec, PALETTES as lm_norwegian_petroleum_museumPalettes } from './norwegian-petroleum-museum/config.js';
+import { FOOTPRINTS as lm_norwegian_petroleum_museumFootprints } from './norwegian-petroleum-museum/footprint.js';
+import { SPEC as lm_vikingskipetSpec, PALETTES as lm_vikingskipetPalettes } from './vikingskipet/config.js';
+import { FOOTPRINTS as lm_vikingskipetFootprints } from './vikingskipet/footprint.js';
+import { SPEC as lm_kilden_performing_arts_centreSpec, PALETTES as lm_kilden_performing_arts_centrePalettes } from './kilden-performing-arts-centre/config.js';
+import { FOOTPRINTS as lm_kilden_performing_arts_centreFootprints } from './kilden-performing-arts-centre/footprint.js';
+import { SPEC as lm_borgund_stave_churchSpec, PALETTES as lm_borgund_stave_churchPalettes } from './borgund-stave-church/config.js';
+import { FOOTPRINTS as lm_borgund_stave_churchFootprints } from './borgund-stave-church/footprint.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -179,6 +225,26 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_walterdale_bridgeSpec, lm_walterdale_bridgePalettes, lm_walterdale_bridgeFootprints, lm_walterdale_bridgeRoad),
   entry(lm_fairmont_banff_springsSpec, lm_fairmont_banff_springsPalettes, lm_fairmont_banff_springsFootprints),
   entry(lm_canadian_museum_for_human_rightsSpec, lm_canadian_museum_for_human_rightsPalettes, lm_canadian_museum_for_human_rightsFootprints),
+  entry(lm_storseisundet_bridgeSpec, lm_storseisundet_bridgePalettes, lm_storseisundet_bridgeFootprints, lm_storseisundet_bridgeRoad),
+  entry(lm_halogaland_bridgeSpec, lm_halogaland_bridgePalettes, lm_halogaland_bridgeFootprints, lm_halogaland_bridgeRoad),
+  entry(lm_hardanger_bridgeSpec, lm_hardanger_bridgePalettes, lm_hardanger_bridgeFootprints, lm_hardanger_bridgeRoad),
+  entry(lm_tromso_bridgeSpec, lm_tromso_bridgePalettes, lm_tromso_bridgeFootprints, lm_tromso_bridgeRoad),
+  entry(lm_helgeland_bridgeSpec, lm_helgeland_bridgePalettes, lm_helgeland_bridgeFootprints, lm_helgeland_bridgeRoad),
+  entry(lm_svinesund_bridgeSpec, lm_svinesund_bridgePalettes, lm_svinesund_bridgeFootprints, lm_svinesund_bridgeRoad),
+  entry(lm_oslo_opera_houseSpec, lm_oslo_opera_housePalettes, lm_oslo_opera_houseFootprints),
+  entry(lm_oslo_city_hallSpec, lm_oslo_city_hallPalettes, lm_oslo_city_hallFootprints),
+  entry(lm_royal_palace_osloSpec, lm_royal_palace_osloPalettes, lm_royal_palace_osloFootprints),
+  entry(lm_holmenkollbakkenSpec, lm_holmenkollbakkenPalettes, lm_holmenkollbakkenFootprints),
+  entry(lm_munch_museumSpec, lm_munch_museumPalettes, lm_munch_museumFootprints),
+  entry(lm_akershus_fortressSpec, lm_akershus_fortressPalettes, lm_akershus_fortressFootprints),
+  entry(lm_astrup_fearnley_museumSpec, lm_astrup_fearnley_museumPalettes, lm_astrup_fearnley_museumFootprints),
+  entry(lm_bryggenSpec, lm_bryggenPalettes, lm_bryggenFootprints),
+  entry(lm_nidaros_cathedralSpec, lm_nidaros_cathedralPalettes, lm_nidaros_cathedralFootprints),
+  entry(lm_arctic_cathedralSpec, lm_arctic_cathedralPalettes, lm_arctic_cathedralFootprints),
+  entry(lm_norwegian_petroleum_museumSpec, lm_norwegian_petroleum_museumPalettes, lm_norwegian_petroleum_museumFootprints),
+  entry(lm_vikingskipetSpec, lm_vikingskipetPalettes, lm_vikingskipetFootprints),
+  entry(lm_kilden_performing_arts_centreSpec, lm_kilden_performing_arts_centrePalettes, lm_kilden_performing_arts_centreFootprints),
+  entry(lm_borgund_stave_churchSpec, lm_borgund_stave_churchPalettes, lm_borgund_stave_churchFootprints),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

@@ -217,6 +217,86 @@ import { MANIFEST as lm_canadian_museum_for_human_rightsManifest } from './canad
 import { OSM_WAYS as lm_canadian_museum_for_human_rightsWays } from './canadian-museum-for-human-rights/footprint.js';
 import { create as lm_canadian_museum_for_human_rightsCreate } from './canadian-museum-for-human-rights/geometry.js';
 import { VIEWS as lm_canadian_museum_for_human_rightsViews } from './canadian-museum-for-human-rights/views.js';
+import { MANIFEST as lm_storseisundet_bridgeManifest } from './storseisundet-bridge/config.js';
+import { OSM_WAYS as lm_storseisundet_bridgeWays } from './storseisundet-bridge/footprint.js';
+import { create as lm_storseisundet_bridgeCreate } from './storseisundet-bridge/geometry.js';
+import { VIEWS as lm_storseisundet_bridgeViews } from './storseisundet-bridge/views.js';
+import { MANIFEST as lm_halogaland_bridgeManifest } from './halogaland-bridge/config.js';
+import { OSM_WAYS as lm_halogaland_bridgeWays } from './halogaland-bridge/footprint.js';
+import { create as lm_halogaland_bridgeCreate } from './halogaland-bridge/geometry.js';
+import { VIEWS as lm_halogaland_bridgeViews } from './halogaland-bridge/views.js';
+import { MANIFEST as lm_hardanger_bridgeManifest } from './hardanger-bridge/config.js';
+import { OSM_WAYS as lm_hardanger_bridgeWays } from './hardanger-bridge/footprint.js';
+import { create as lm_hardanger_bridgeCreate } from './hardanger-bridge/geometry.js';
+import { VIEWS as lm_hardanger_bridgeViews } from './hardanger-bridge/views.js';
+import { MANIFEST as lm_tromso_bridgeManifest } from './tromso-bridge/config.js';
+import { OSM_WAYS as lm_tromso_bridgeWays } from './tromso-bridge/footprint.js';
+import { create as lm_tromso_bridgeCreate } from './tromso-bridge/geometry.js';
+import { VIEWS as lm_tromso_bridgeViews } from './tromso-bridge/views.js';
+import { MANIFEST as lm_helgeland_bridgeManifest } from './helgeland-bridge/config.js';
+import { OSM_WAYS as lm_helgeland_bridgeWays } from './helgeland-bridge/footprint.js';
+import { create as lm_helgeland_bridgeCreate } from './helgeland-bridge/geometry.js';
+import { VIEWS as lm_helgeland_bridgeViews } from './helgeland-bridge/views.js';
+import { MANIFEST as lm_svinesund_bridgeManifest } from './svinesund-bridge/config.js';
+import { OSM_WAYS as lm_svinesund_bridgeWays } from './svinesund-bridge/footprint.js';
+import { create as lm_svinesund_bridgeCreate } from './svinesund-bridge/geometry.js';
+import { VIEWS as lm_svinesund_bridgeViews } from './svinesund-bridge/views.js';
+import { MANIFEST as lm_oslo_opera_houseManifest } from './oslo-opera-house/config.js';
+import { OSM_WAYS as lm_oslo_opera_houseWays } from './oslo-opera-house/footprint.js';
+import { create as lm_oslo_opera_houseCreate } from './oslo-opera-house/geometry.js';
+import { VIEWS as lm_oslo_opera_houseViews } from './oslo-opera-house/views.js';
+import { MANIFEST as lm_oslo_city_hallManifest } from './oslo-city-hall/config.js';
+import { OSM_WAYS as lm_oslo_city_hallWays } from './oslo-city-hall/footprint.js';
+import { create as lm_oslo_city_hallCreate } from './oslo-city-hall/geometry.js';
+import { VIEWS as lm_oslo_city_hallViews } from './oslo-city-hall/views.js';
+import { MANIFEST as lm_royal_palace_osloManifest } from './royal-palace-oslo/config.js';
+import { OSM_WAYS as lm_royal_palace_osloWays } from './royal-palace-oslo/footprint.js';
+import { create as lm_royal_palace_osloCreate } from './royal-palace-oslo/geometry.js';
+import { VIEWS as lm_royal_palace_osloViews } from './royal-palace-oslo/views.js';
+import { MANIFEST as lm_holmenkollbakkenManifest } from './holmenkollbakken/config.js';
+import { OSM_WAYS as lm_holmenkollbakkenWays } from './holmenkollbakken/footprint.js';
+import { create as lm_holmenkollbakkenCreate } from './holmenkollbakken/geometry.js';
+import { VIEWS as lm_holmenkollbakkenViews } from './holmenkollbakken/views.js';
+import { MANIFEST as lm_munch_museumManifest } from './munch-museum/config.js';
+import { OSM_WAYS as lm_munch_museumWays } from './munch-museum/footprint.js';
+import { create as lm_munch_museumCreate } from './munch-museum/geometry.js';
+import { VIEWS as lm_munch_museumViews } from './munch-museum/views.js';
+import { MANIFEST as lm_akershus_fortressManifest } from './akershus-fortress/config.js';
+import { OSM_WAYS as lm_akershus_fortressWays } from './akershus-fortress/footprint.js';
+import { create as lm_akershus_fortressCreate } from './akershus-fortress/geometry.js';
+import { VIEWS as lm_akershus_fortressViews } from './akershus-fortress/views.js';
+import { MANIFEST as lm_astrup_fearnley_museumManifest } from './astrup-fearnley-museum/config.js';
+import { OSM_WAYS as lm_astrup_fearnley_museumWays } from './astrup-fearnley-museum/footprint.js';
+import { create as lm_astrup_fearnley_museumCreate } from './astrup-fearnley-museum/geometry.js';
+import { VIEWS as lm_astrup_fearnley_museumViews } from './astrup-fearnley-museum/views.js';
+import { MANIFEST as lm_bryggenManifest } from './bryggen/config.js';
+import { OSM_WAYS as lm_bryggenWays } from './bryggen/footprint.js';
+import { create as lm_bryggenCreate } from './bryggen/geometry.js';
+import { VIEWS as lm_bryggenViews } from './bryggen/views.js';
+import { MANIFEST as lm_nidaros_cathedralManifest } from './nidaros-cathedral/config.js';
+import { OSM_WAYS as lm_nidaros_cathedralWays } from './nidaros-cathedral/footprint.js';
+import { create as lm_nidaros_cathedralCreate } from './nidaros-cathedral/geometry.js';
+import { VIEWS as lm_nidaros_cathedralViews } from './nidaros-cathedral/views.js';
+import { MANIFEST as lm_arctic_cathedralManifest } from './arctic-cathedral/config.js';
+import { OSM_WAYS as lm_arctic_cathedralWays } from './arctic-cathedral/footprint.js';
+import { create as lm_arctic_cathedralCreate } from './arctic-cathedral/geometry.js';
+import { VIEWS as lm_arctic_cathedralViews } from './arctic-cathedral/views.js';
+import { MANIFEST as lm_norwegian_petroleum_museumManifest } from './norwegian-petroleum-museum/config.js';
+import { OSM_WAYS as lm_norwegian_petroleum_museumWays } from './norwegian-petroleum-museum/footprint.js';
+import { create as lm_norwegian_petroleum_museumCreate } from './norwegian-petroleum-museum/geometry.js';
+import { VIEWS as lm_norwegian_petroleum_museumViews } from './norwegian-petroleum-museum/views.js';
+import { MANIFEST as lm_vikingskipetManifest } from './vikingskipet/config.js';
+import { OSM_WAYS as lm_vikingskipetWays } from './vikingskipet/footprint.js';
+import { create as lm_vikingskipetCreate } from './vikingskipet/geometry.js';
+import { VIEWS as lm_vikingskipetViews } from './vikingskipet/views.js';
+import { MANIFEST as lm_kilden_performing_arts_centreManifest } from './kilden-performing-arts-centre/config.js';
+import { OSM_WAYS as lm_kilden_performing_arts_centreWays } from './kilden-performing-arts-centre/footprint.js';
+import { create as lm_kilden_performing_arts_centreCreate } from './kilden-performing-arts-centre/geometry.js';
+import { VIEWS as lm_kilden_performing_arts_centreViews } from './kilden-performing-arts-centre/views.js';
+import { MANIFEST as lm_borgund_stave_churchManifest } from './borgund-stave-church/config.js';
+import { OSM_WAYS as lm_borgund_stave_churchWays } from './borgund-stave-church/footprint.js';
+import { create as lm_borgund_stave_churchCreate } from './borgund-stave-church/geometry.js';
+import { VIEWS as lm_borgund_stave_churchViews } from './borgund-stave-church/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -273,6 +353,26 @@ const authoring = {
   'walterdale-bridge': { manifest: lm_walterdale_bridgeManifest, osmWays: lm_walterdale_bridgeWays, create: lm_walterdale_bridgeCreate, views: lm_walterdale_bridgeViews },
   'fairmont-banff-springs': { manifest: lm_fairmont_banff_springsManifest, osmWays: lm_fairmont_banff_springsWays, create: lm_fairmont_banff_springsCreate, views: lm_fairmont_banff_springsViews },
   'canadian-museum-for-human-rights': { manifest: lm_canadian_museum_for_human_rightsManifest, osmWays: lm_canadian_museum_for_human_rightsWays, create: lm_canadian_museum_for_human_rightsCreate, views: lm_canadian_museum_for_human_rightsViews },
+  'storseisundet-bridge': { manifest: lm_storseisundet_bridgeManifest, osmWays: lm_storseisundet_bridgeWays, create: lm_storseisundet_bridgeCreate, views: lm_storseisundet_bridgeViews },
+  'halogaland-bridge': { manifest: lm_halogaland_bridgeManifest, osmWays: lm_halogaland_bridgeWays, create: lm_halogaland_bridgeCreate, views: lm_halogaland_bridgeViews },
+  'hardanger-bridge': { manifest: lm_hardanger_bridgeManifest, osmWays: lm_hardanger_bridgeWays, create: lm_hardanger_bridgeCreate, views: lm_hardanger_bridgeViews },
+  'tromso-bridge': { manifest: lm_tromso_bridgeManifest, osmWays: lm_tromso_bridgeWays, create: lm_tromso_bridgeCreate, views: lm_tromso_bridgeViews },
+  'helgeland-bridge': { manifest: lm_helgeland_bridgeManifest, osmWays: lm_helgeland_bridgeWays, create: lm_helgeland_bridgeCreate, views: lm_helgeland_bridgeViews },
+  'svinesund-bridge': { manifest: lm_svinesund_bridgeManifest, osmWays: lm_svinesund_bridgeWays, create: lm_svinesund_bridgeCreate, views: lm_svinesund_bridgeViews },
+  'oslo-opera-house': { manifest: lm_oslo_opera_houseManifest, osmWays: lm_oslo_opera_houseWays, create: lm_oslo_opera_houseCreate, views: lm_oslo_opera_houseViews },
+  'oslo-city-hall': { manifest: lm_oslo_city_hallManifest, osmWays: lm_oslo_city_hallWays, create: lm_oslo_city_hallCreate, views: lm_oslo_city_hallViews },
+  'royal-palace-oslo': { manifest: lm_royal_palace_osloManifest, osmWays: lm_royal_palace_osloWays, create: lm_royal_palace_osloCreate, views: lm_royal_palace_osloViews },
+  'holmenkollbakken': { manifest: lm_holmenkollbakkenManifest, osmWays: lm_holmenkollbakkenWays, create: lm_holmenkollbakkenCreate, views: lm_holmenkollbakkenViews },
+  'munch-museum': { manifest: lm_munch_museumManifest, osmWays: lm_munch_museumWays, create: lm_munch_museumCreate, views: lm_munch_museumViews },
+  'akershus-fortress': { manifest: lm_akershus_fortressManifest, osmWays: lm_akershus_fortressWays, create: lm_akershus_fortressCreate, views: lm_akershus_fortressViews },
+  'astrup-fearnley-museum': { manifest: lm_astrup_fearnley_museumManifest, osmWays: lm_astrup_fearnley_museumWays, create: lm_astrup_fearnley_museumCreate, views: lm_astrup_fearnley_museumViews },
+  'bryggen': { manifest: lm_bryggenManifest, osmWays: lm_bryggenWays, create: lm_bryggenCreate, views: lm_bryggenViews },
+  'nidaros-cathedral': { manifest: lm_nidaros_cathedralManifest, osmWays: lm_nidaros_cathedralWays, create: lm_nidaros_cathedralCreate, views: lm_nidaros_cathedralViews },
+  'arctic-cathedral': { manifest: lm_arctic_cathedralManifest, osmWays: lm_arctic_cathedralWays, create: lm_arctic_cathedralCreate, views: lm_arctic_cathedralViews },
+  'norwegian-petroleum-museum': { manifest: lm_norwegian_petroleum_museumManifest, osmWays: lm_norwegian_petroleum_museumWays, create: lm_norwegian_petroleum_museumCreate, views: lm_norwegian_petroleum_museumViews },
+  'vikingskipet': { manifest: lm_vikingskipetManifest, osmWays: lm_vikingskipetWays, create: lm_vikingskipetCreate, views: lm_vikingskipetViews },
+  'kilden-performing-arts-centre': { manifest: lm_kilden_performing_arts_centreManifest, osmWays: lm_kilden_performing_arts_centreWays, create: lm_kilden_performing_arts_centreCreate, views: lm_kilden_performing_arts_centreViews },
+  'borgund-stave-church': { manifest: lm_borgund_stave_churchManifest, osmWays: lm_borgund_stave_churchWays, create: lm_borgund_stave_churchCreate, views: lm_borgund_stave_churchViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));
