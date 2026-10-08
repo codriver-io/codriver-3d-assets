@@ -1,0 +1,65 @@
+{
+  "id": "oslo-city-hall",
+  "name": "Oslo City Hall",
+  "kind": "building",
+  "origin": [
+    10.73358,
+    59.91176
+  ],
+  "height": 66,
+  "padM": 120,
+  "frontageBearing": 204.91,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. Rådhusplassen and the north courtyard are taken as one level.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "East tower 66 m, west tower 63 m, the 8.6 m south clock and the 5 m astronomical clock are sourced. The harbour block is a 27 m brick parapet with a flat roof set behind it; the loggia bands and the storey grid are estimated from photographs. OSM tags a 0.3 m gable on the wing and calls the west tower about 20 levels.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/oslo-city-hall-near.glb",
+      "bytes": 812500,
+      "triangles": 15000,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -40.85231391800328,
+          0,
+          -102.60702123320694
+        ],
+        "max": [
+          61.13479091022431,
+          66,
+          19.520373615251934
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/oslo-city-hall-far.glb",
+      "bytes": 269184,
+      "triangles": 4914,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -40.85231391800328,
+          0,
+          -102.60702123320694
+        ],
+        "max": [
+          61.13479091022431,
+          66,
+          19.520373615251934
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oslo-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
