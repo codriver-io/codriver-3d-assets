@@ -15878,6 +15878,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "hardanger-bridge",
+      "name": "Hardanger Bridge",
+      "kind": "bridge",
+      "location": "Ulvik / Ullensvang, Vestland, Norway",
+      "status": "ready",
+      "description": "The 2013 Eidfjorden suspension bridge: two slender tapered concrete portal towers, aerodynamic steel box deck, two cable planes, pedestrian/cycle lane and short tunnel mouths.",
+      "manifest": "/models/bridges/hardanger-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/hardanger-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks hardanger-bridge --no-check",
+        "provenance": "Original procedural geometry, authored 2026-10-08. OSM roadway data © OpenStreetMap contributors, ODbL 1.0. Photographs consulted only, no images or textures shipped: Bosc d’Anjou, Hardangerbroen 01 (CC BY 2.0); Holger Uwe Schmitt, Die Nebel lichten sich, Morgenstimmung am Hardangerfjord. 02 (CC BY-SA 4.0); Christoffer H. S., Hardangerbrua juli 2010 (CC BY-SA 3.0); Aleksander Gjøsæter, Constructing a bridge (CC BY-SA 2.0); Goodwin Steel Castings, Cable saddle for Hardanger bridge (CC BY-SA 2.0). Construction photos inform tower geometry only, not temporary scaffolding.",
+        "references": [
+          {
+            "label": "Aas-Jakobsen design fact sheet (precompletion dimensions)",
+            "url": "https://www.aas-jakobsen.com/wp-content/uploads/2017/09/Hardanger_referanse_eng.pdf"
+          },
+          {
+            "label": "Completed bridge identity",
+            "url": "https://en.wikipedia.org/wiki/Hardanger_Bridge"
+          },
+          {
+            "label": "Bosc d’Anjou, road and portal view, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Hardangerbroen_01.jpg"
+          },
+          {
+            "label": "Holger Uwe Schmitt, fjord side view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Die_Nebel_lichten_sich,_Morgenstimmung_am_Hardangerfjord._02.jpg"
+          },
+          {
+            "label": "Mapped road alignment",
+            "url": "https://www.openstreetmap.org/way/71221277"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/hardanger-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=hardanger-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=tower"
+          },
+          {
+            "label": "Portals",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=portals"
+          },
+          {
+            "label": "Opposite",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=opposite"
+          }
+        ]
+      },
+      "notes": "Published design girder width 18.3 m is preferred over the smaller OSM outline; separate cycle lane on the northeast side. Tower transverse/longitudinal taper, high beam, construction joints, hanger spacing, lamps, tunnel arch shapes and backstays are photographic estimates. Authored 55 m midpoint soffit with 20000 m vertical radius; actual surveyed portal and foundation elevations are unavailable. Only 80 m of mapped tunnel roadway at each end, open mouths; no mountains, interior roundabouts or restricted captured meshes. Cityscape lowers the girder and attached superstructure by about 42 m at the portals; terrain keeps the authored heights. Backstay rock anchorages and surveyed tunnel elevations are unavailable; cables are truncated at the mountainside boundary. World terrain handoff remains unsupported pending an underground datum independent of the DEM roof.",
+      "documentation": "docs/assets/top-cities-hardanger-bridge.md",
+      "city": "Ulvik",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
