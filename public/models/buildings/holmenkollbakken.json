@@ -1,0 +1,109 @@
+{
+  "id": "holmenkollbakken",
+  "name": "Holmenkollbakken",
+  "kind": "building",
+  "origin": [
+    10.6659277,
+    59.964539
+  ],
+  "height": 133.46,
+  "padM": 240,
+  "frontageBearing": 120.19,
+  "rangeM": 4500,
+  "minZoom": 13,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          10.6690493,
+          59.9637234
+        ],
+        [
+          10.6693286,
+          59.9636421
+        ],
+        [
+          10.6691661,
+          59.9635023
+        ],
+        [
+          10.6688869,
+          59.9635836
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        10.6690533,
+        59.9636911
+      ],
+      [
+        10.6692394,
+        59.9636368
+      ],
+      [
+        10.6691311,
+        59.9635437
+      ],
+      [
+        10.668945,
+        59.9635979
+      ]
+    ],
+    "datum": "lowest",
+    "featherM": 12
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the outrun floor at the bottom of the bowl. Lip, landing and start terrace are heights above that floor. No DEM, sea level or latitude stretch is baked in. On the flat Cityscape map the landing is a closed graded earth embankment beneath the snow; a slender start tower rises from the upper ridge. Full 3D world: terrainPad holds only the flat outrun (u=196–214) at its lowest reference DEM sample, so the real hill can cover the lower wedge. The rigid wedge can still cut a coarse DEM.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: FIS HS134 certificate (inrun 95.65 m, 36° to 11°, r1 108.80 m, table 6.60 m, take-off 3 m, h 59.10 m, n 103.70 m, landing angles 35.7/33.2/30.8), 2010 faktaark (64 m tower, wind screen 2 m at the lip and 12 m at its highest, judges on the jumper's left). Estimated: screen height at the gate (8 m), truss sag, start-house plan, stand row count, the square start tower plan, short raked root strut and embankment batters. The snow follows the mapped pitch, which is narrower than 25.2 m above K. The white-clad inrun spans openly above the ridge, carried by the start tower and one short raked strut. The pre-2010 concrete tower is not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/holmenkollbakken-near.glb",
+      "bytes": 1897680,
+      "triangles": 34922,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -95.89210510253906,
+          -0.017071925103664398,
+          -62.90407180786133
+        ],
+        "max": [
+          230.00863647460938,
+          133.45860290527344,
+          159.87393188476562
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/holmenkollbakken-far.glb",
+      "bytes": 343216,
+      "triangles": 6190,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -95.89210510253906,
+          0.006705882493406534,
+          -62.90407180786133
+        ],
+        "max": [
+          230.00863647460938,
+          133.45860290527344,
+          159.87393188476562
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/holmenkollbakken/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
