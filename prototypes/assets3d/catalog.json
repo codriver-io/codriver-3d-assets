@@ -16040,6 +16040,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "munch-museum",
+      "name": "MUNCH (Munch Museum)",
+      "kind": "building",
+      "location": "Edvard Munchs plass 1, 0194 Oslo, Norway",
+      "status": "ready",
+      "description": "estudio Herreros museum in Bjørvika, opened 2021: a broad ribbed podium with a lilac MUNCH wordmark, and a slim light-grey tower. Where the shaft leaves the podium it runs down to the quay. Above 37 m the plate slides west-northwest; the long front is a glazed leaning head, the narrow end keeps a glass corner strip beside ribbed aluminium, and the crown steps back under a projecting roof lip.",
+      "manifest": "/models/buildings/munch-museum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/munch-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks munch-museum --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-08, without third-party meshes or textures. Civic outline, podium, shaft and the two inclined parts from OSM ways 545260792, 995726956, 727490336, 995726957 and 995726958 (© OpenStreetMap contributors, ODbL 1.0). Roof 57.4 m from Dezeen and the building record; the museum, Lindner and Bollinger+Grohmann round the same tower to 60 m. The 7 m published overhang is the mapped 7.5 m west-northwest shift between the 37 m and 57 m parts. Neighbouring apartment ways are not part of the museum. Comparison photographs, reference only, no redistribution: MUNCH Bjørvika Oslo (Hanne Evensen, CC BY 4.0), Munch Museum in the evening 2 (Nurtenge, CC BY-SA 4.0), MUNCH with Bjørvika in the background (Premeditated, CC BY-SA 4.0). No photograph ships in source or GLBs.",
+        "references": [
+          {
+            "label": "Museum identity, architect, opening and address · MUNCH press",
+            "url": "https://www.mynewsdesk.com/munchmuseet/pressreleases/a-museum-built-for-the-future-3107960"
+          },
+          {
+            "label": "57.4 m height and the leaning tower · Dezeen",
+            "url": "https://www.dezeen.com/2021/07/25/estudio-herreross-munch-museum-oslo-architecture/"
+          },
+          {
+            "label": "Recycled-aluminium skin, 7 m overhang, 25 m vertical plus 20 m incline · Lindner",
+            "url": "https://www.lindner-group.com/en/references/munch-museum"
+          },
+          {
+            "label": "Structure and the rounded 60 m figure · Bollinger+Grohmann",
+            "url": "https://www.bollinger-grohmann.com/en.projects.new-munch-museum.html"
+          },
+          {
+            "label": "Civic outline · OSM way 545260792",
+            "url": "https://www.openstreetmap.org/way/545260792"
+          },
+          {
+            "label": "Podium, height 13 · OSM way 995726956",
+            "url": "https://www.openstreetmap.org/way/995726956"
+          },
+          {
+            "label": "Vertical shaft, height 37 · OSM way 727490336",
+            "url": "https://www.openstreetmap.org/way/727490336"
+          },
+          {
+            "label": "Incline, min height 37 · OSM way 995726957",
+            "url": "https://www.openstreetmap.org/way/995726957"
+          },
+          {
+            "label": "Head, height 57 · OSM way 995726958",
+            "url": "https://www.openstreetmap.org/way/995726958"
+          },
+          {
+            "label": "Photograph · Hanne Evensen, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:MUNCH_Bj%C3%B8rvika_Oslo.jpg"
+          },
+          {
+            "label": "Photograph · Nurtenge, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Munch_Museum_in_the_evening_2.jpg"
+          },
+          {
+            "label": "Photograph · Premeditated, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:MUNCH_with_Bj%C3%B8rvika_in_the_background_(2021).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/munch-museum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=munch-museum&view=overview",
+        "views": [
+          {
+            "label": "Glazed face and the bent head",
+            "url": "/asset-preview.html?asset=munch-museum&view=overview"
+          },
+          {
+            "label": "Glazed leaning head",
+            "url": "/asset-preview.html?asset=munch-museum&view=facade"
+          },
+          {
+            "label": "Aluminium faces",
+            "url": "/asset-preview.html?asset=munch-museum&view=back"
+          },
+          {
+            "label": "Roof and the shifted plate",
+            "url": "/asset-preview.html?asset=munch-museum&view=roof"
+          },
+          {
+            "label": "MUNCH wordmark on the quay",
+            "url": "/asset-preview.html?asset=munch-museum&view=street"
+          },
+          {
+            "label": "Kink and upper glass",
+            "url": "/asset-preview.html?asset=munch-museum&view=detail"
+          },
+          {
+            "label": "Mapped outline and baked orientation",
+            "url": "/asset-preview.html?asset=munch-museum&view=plan"
+          }
+        ]
+      },
+      "notes": "Roof is the published 57.4 m, not the rounded 60 m, so the OSM breaks at 13 / 37 / 57 m line up with Lindner's 25 m vertical front and 20 m incline. The plate shift is measured, 7.5 m toward bearing about 296 degrees. Where the shaft plan leaves the podium the aluminium continues to grade, so the waterfront side does not hang over open air. Glass starts at the kink on the leaning front; the south narrow end is ribbed except a 5 m glass strip at the corner beside that front. The other aluminium faces step back about 2.4 m under a projecting cap from 52.6 m to 55.8 m. Day cladding is light silver #b9bdc0, with slightly darker groove stripes; the wordmark is lilac. Wave pitch, glass bay and letter size are estimates. The skin is a sawtooth, not 4,018 panels. Far keeps the step, the grade shaft, the corner strip and the amplitudes, with a coarser pitch and no lit panes or slot windows. No doors, interiors, sculpture or textures.",
+      "documentation": "docs/assets/top-cities-munch-museum.md",
+      "city": "Oslo",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
