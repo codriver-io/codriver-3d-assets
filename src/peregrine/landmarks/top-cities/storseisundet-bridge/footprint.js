@@ -1,4 +1,5 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+import { OUTLINE } from './storseisundet-bridge-mapped.js';
+// No building ways in the dossier. Conservatively mask provider bridge extrusions.
+// Fitting approaches are roadway corridors, not building replacement footprints.
+export const FOOTPRINTS = [OUTLINE];
+export const OSM_WAYS = [1159266079, 123498061, 123498060, 751715045];

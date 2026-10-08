@@ -15407,6 +15407,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "storseisundet-bridge",
+      "name": "Storseisundet Bridge (Atlantic Ocean Road)",
+      "kind": "bridge",
+      "location": "Averøy / Hustadvika, Møre og Romsdal, Norway",
+      "status": "ready",
+      "description": "Curved, steeply humped three-span concrete cantilever bridge with tapered box girder, two slender piers, galvanized guardrails and rock-fill approaches.",
+      "manifest": "/models/bridges/storseisundet-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/storseisundet-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks storseisundet-bridge --no-check",
+        "provenance": "Original procedural texture-free geometry. OSM roadway and outline © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photographs: Iwoelbern public domain; Ernst Vikne CC BY-SA 2.0; CHG CC BY 3.0; dconvertini CC BY-SA 2.0. No photos, textures, scans or third-party mesh shipped.",
+        "references": [
+          {
+            "label": "Riksantikvaren, protected Atlantic Road: three-span concrete cantilever, 260 m, about 23 m clearance",
+            "url": "https://riksantikvaren.no/content/uploads/2022/11/Vedlegg-29.16-Atlanterhavsvegen.pdf"
+          },
+          {
+            "label": "Storseisundet Bridge, dossier main span 130 m",
+            "url": "https://en.wikipedia.org/wiki/Storseisundet_Bridge"
+          },
+          {
+            "label": "Storseisundet bridge.jpg — Iwoelbern, public domain, reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Storseisundet_bridge.jpg"
+          },
+          {
+            "label": "Storseisundet Bridge 2.jpg — Ernst Vikne, CC BY-SA 2.0, reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Storseisundet_Bridge_2.jpg"
+          },
+          {
+            "label": "Atlantic Ocean Road.jpg — CHG, CC BY 3.0, reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Atlantic_Ocean_Road.jpg"
+          },
+          {
+            "label": "Storseisundbrua, Atlanterhavsveien, Norway 20170531.jpg — dconvertini, CC BY-SA 2.0, reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Storseisundbrua,_Atlanterhavsveien,_Norway_20170531.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/storseisundet-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=storseisundet-bridge",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=deck"
+          },
+          {
+            "label": "eastApproach",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=eastApproach"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=tower"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=storseisundet-bridge&view=detail"
+          }
+        ]
+      },
+      "notes": "OSM structural length 264.26 m versus published 260 m; no rescaling. Published 23 m is sailing clearance, not road crest height. Width, 25.2 m crest, 13 m abutments, 7.4 m pier-root box depth, pier stations, guardrail sections and causeway slopes are estimates. Two 180 m fitting ramps; 10.83% approach peak grade, 13.85% hump peak grade. Approach fill beyond bridge footprint is an engineered support approximation, not modeled island terrain. World bank terrain partly occludes the approximate fill/embedded stones; exact fill-edge appearance is not certified. Independent visual review pending.",
+      "documentation": "docs/assets/top-cities-storseisundet-bridge.md",
+      "city": "Averøy",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
