@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (61 released)
+## The collection (62 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -64,6 +64,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `canadian-museum-for-human-rights` | Canadian Museum for Human Rights | Winnipeg | building |
 | `storseisundet-bridge` | Storseisundet Bridge (Atlantic Ocean Road) | Averøy | bridge, road-fitted |
 | `halogaland-bridge` | Hålogaland Bridge | Narvik | bridge, road-fitted |
+| `hardanger-bridge` | Hardanger Bridge | Ulvik | bridge, road-fitted |
 | `tromso-bridge` | Tromsø Bridge | Tromsø | bridge, road-fitted |
 | `svinesund-bridge` | Svinesund Bridge | Halden | bridge, road-fitted |
 | `oslo-opera-house` | Oslo Opera House | Oslo | building |

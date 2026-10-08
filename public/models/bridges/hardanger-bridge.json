@@ -1,0 +1,67 @@
+{
+  "id": "hardanger-bridge",
+  "name": "Hardanger Bridge",
+  "kind": "bridge",
+  "origin": [
+    6.83033,
+    60.47848
+  ],
+  "height": 201.5,
+  "padM": 35,
+  "frontageBearing": 148.8,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the nominal water/footing reference, not a baked DEM. Authored tower top 201.5 m; box underside 55 m at midspan. World uses absolute-deck; Cityscape lowers the portal deck to 4 m and ramps over short mapped tunnel entries.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published design: main span 1310 m, tower height 201.5 m, box width 18.3 m and depth 3.25 m, vertical radius 20000 m, cable diameter 0.6 m, sag/span 1:10.8. Estimated: tower sections/crossbeam, portals, hanger spacing, backstays, roadway partition and lamps. No fjord terrain, textures, underground roundabout or full tunnel model.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/hardanger-bridge-near.glb",
+      "bytes": 2542756,
+      "triangles": 49358,
+      "drawCalls": 21,
+      "bounds": {
+        "min": [
+          -410.8572692871094,
+          0,
+          -673.9713745117188
+        ],
+        "max": [
+          415.3218078613281,
+          201.5,
+          682.9334106445312
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/hardanger-bridge-far.glb",
+      "bytes": 357648,
+      "triangles": 8244,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -410.8434753417969,
+          0,
+          -673.9549560546875
+        ],
+        "max": [
+          415.3302917480469,
+          201.5,
+          682.9220581054688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/hardanger-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
