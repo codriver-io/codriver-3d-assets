@@ -15961,6 +15961,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "holmenkollbakken",
+      "name": "Holmenkollbakken",
+      "kind": "building",
+      "location": "Oslo",
+      "status": "ready",
+      "description": "Original procedural Holmenkollbakken: white-clad cantilever on a slender start tower and raked root strut, snow above a bounded neutral embankment, shallow front truss, dark OSLO word and continuous grey flank/horseshoe stands.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/holmenkollbakken/geometry.js",
+        "build": "pnpm build:top-cities-landmarks holmenkollbakken",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-08; no mesh capture, tracing, bitmap, or texture. Derived geographic data © OpenStreetMap contributors (ODbL 1.0), ways 81176911, 173145217, 923540818-923540828, 923958455, 923958456, 81147230, 173145219, 173048162, 173048163, 925524959 and 925524960. Reference-only photos retained under ignored tmp/: New Holmenkollen ski jump by Egil (CC BY 2.5); Ski Jump at Holmenkollen by Max Froumentin (CC BY 2.0); construction aerial by Wilhelm Joys Andersen (CC BY-SA 2.0). The pre-2010 concrete tower was not modelled. No external images are included in the model exports.",
+        "references": [
+          {
+            "label": "Wikipedia — Holmenkollbakken",
+            "url": "https://en.wikipedia.org/wiki/Holmenkollbakken"
+          },
+          {
+            "label": "FIS hill certificate HS134 (2022), via skisprungschanzen.com",
+            "url": "https://www.skisprungschanzen.com/EN/Ski+Jumps/NOR-Norway/03-Oslo/Oslo/0058-Holmenkollen/"
+          },
+          {
+            "label": "JDS Architects — Holmenkollen Ski Jump",
+            "url": "https://jdsa.eu/holmenkollen-ski-jump/"
+          },
+          {
+            "label": "Finished jump at night — Egil, CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:New_Holmenkollen_ski_jump.jpg"
+          },
+          {
+            "label": "Finished jump from the bowl — Max Froumentin, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ski_Jump_at_Holmenkollen.jpg"
+          },
+          {
+            "label": "OSM steel jump",
+            "url": "https://www.openstreetmap.org/way/173145217"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/holmenkollbakken/geometry.js"
+      },
+      "notes": "Final REVIEW-3: olive mound changed to neutral ground (#d6d8d0/#c4c8bc; dark #2b3440/#252d38); rear taper trimmed to 15 m and shoulder toes capped near landing/stand outlines. Left/right stand gaps joined, concrete terraces reach screen feet, dark steel OSLO widened from 10.24 to 13.4 m. Sourced inrun/FIS profile, 59.1 m lip-to-K drop and 64 m rail-to-grate dimension retained. Estimated tower plan, screen sag, stand rows, connecting terraces and hillside. Far glass merges into steel to keep eight draws. Exported daylight sheet, far dark sheet and app Cityscape/world screenshots inspected under tmp/top-cities/holmenkollbakken/final-review; metrics: no flagged issues, zero coplanar pairs, 1.4% back-face rays. Provider building masks remain mapped rings, separate from the bounded mound. World hillside mismatch remains explicitly documented.",
+      "documentation": "docs/assets/top-cities-holmenkollbakken.md",
+      "manifest": "/models/buildings/holmenkollbakken.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=holmenkollbakken",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=holmenkollbakken&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=holmenkollbakken&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=holmenkollbakken&view=roof"
+          },
+          {
+            "label": "side",
+            "url": "/asset-preview.html?asset=holmenkollbakken&view=side"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=holmenkollbakken&view=back"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=holmenkollbakken&view=detail"
+          }
+        ]
+      },
+      "city": "Oslo",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
