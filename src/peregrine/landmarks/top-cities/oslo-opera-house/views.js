@@ -1,6 +1,10 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
+// East/up/south metres. Foyer faces the fjord, about bearing 206°.
 export const VIEWS = {
-  overview: [[91, 55, 124], [0, 16, 0]],
-  facade: [[0, 12, 88], [0, 11, 0]],
-  roof: [[39, 104, 39], [0, 26, 0]],
+  overview: [[-81.4, 36, 132.7], [6.9, 12, 20.1]],
+  facade: [[-27, 7, 73.6], [2.2, 11, 36.7]],
+  roof: [[0.1, 190, 11.2], [0.1, 0, 11.2]],
+  back: [[57.4, 32, -72.1], [13.4, 14, -4.6]],
+  street: [[-32.5, 3.2, 55.3], [-5, 8, 37.6]],
+  detail: [[-0.3, 9, 57.7], [11.2, 13, 45.5]],
+  top: [[0.1, 240, 11.2], [0.1, 0, 11.2]],
 };

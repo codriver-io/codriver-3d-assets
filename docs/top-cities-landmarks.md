@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (55 released)
+## The collection (56 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -63,6 +63,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `fairmont-banff-springs` | Fairmont Banff Springs | Banff | building |
 | `canadian-museum-for-human-rights` | Canadian Museum for Human Rights | Winnipeg | building |
 | `halogaland-bridge` | Hålogaland Bridge | Narvik | bridge, road-fitted |
+| `oslo-opera-house` | Oslo Opera House | Oslo | building |
 
 ## A landmark is a folder
 
