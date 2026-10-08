@@ -15771,6 +15771,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tromso-bridge",
+      "name": "Tromsø Bridge (Tromsøbrua)",
+      "kind": "bridge",
+      "location": "Tromsøysundet, Tromsø, Norway",
+      "status": "ready",
+      "description": "Original road-fitted concrete cantilever crossing with high hump, 80 m navigation span, deep haunches, 58 bays on slender paired piers, eastern curved approach and inward-curving safety fence. Permanent structure in the pre-2026 widening state.",
+      "manifest": "/models/bridges/tromso-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tromso-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tromso-bridge",
+        "provenance": "Original procedural geometry; OSM alignment and deck outline © OpenStreetMap contributors (ODbL 1.0), supplied dossier dated October 2026. No third-party mesh or imagery shipped. Reference photos held only in ignored scratch: File:20140731 Arribada a Tromsø.jpg; Federació d'Escacs Valls d'Andorra from Andorra; CC BY 2.0; File:Tromsøbrua suicide prevention fence 2008-06-28.jpg; Kagee; Public domain; File:Tromsö Tromsöbrücke 6.JPG; Zairon; CC BY-SA 3.0; File:Tromsö Tromsöbrücke 4.JPG; Zairon; CC BY-SA 3.0; File:Tromsø Bridge.jpg; Andreas Rümpel; CC BY-SA 3.0; File:Tromsøsund bridge.jpg; Lars Tiede from Karlsruhe, Germany; CC BY-SA 2.0",
+        "references": [
+          {
+            "label": "UiT Architecture Guide: 1960, 1036 m, 8.3 m, slender concrete columns",
+            "url": "https://arkitekturguide.uit.no/items/show/805"
+          },
+          {
+            "label": "Wikipedia: 80 m main span, 38 m navigation clearance, 58 spans",
+            "url": "https://en.wikipedia.org/wiki/Troms%C3%B8_Bridge"
+          },
+          {
+            "label": "Tenk Tromsø: 2026 widening project; current temporary closure",
+            "url": "https://www.tenktromso.no/prosjekter/utvidelse-av-sykkelveien-pa-tromsobrua"
+          },
+          {
+            "label": "OSM mapped road 38705387",
+            "url": "https://www.openstreetmap.org/way/38705387"
+          },
+          {
+            "label": "OSM bridge outline 467000219",
+            "url": "https://www.openstreetmap.org/way/467000219"
+          },
+          {
+            "label": "Reference: File:20140731 Arribada a Tromsø.jpg; Federació d'Escacs Valls d'Andorra from Andorra; CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:20140731_Arribada_a_Troms%C3%B8.jpg"
+          },
+          {
+            "label": "Reference: File:Tromsøbrua suicide prevention fence 2008-06-28.jpg; Kagee; Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Troms%C3%B8brua_suicide_prevention_fence_2008-06-28.jpg"
+          },
+          {
+            "label": "Reference: File:Tromsö Tromsöbrücke 6.JPG; Zairon; CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Troms%C3%B6_Troms%C3%B6br%C3%BCcke_6.JPG"
+          },
+          {
+            "label": "Reference: File:Tromsö Tromsöbrücke 4.JPG; Zairon; CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Troms%C3%B6_Troms%C3%B6br%C3%BCcke_4.JPG"
+          },
+          {
+            "label": "Reference: File:Tromsø Bridge.jpg; Andreas Rümpel; CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Troms%C3%B8_Bridge.jpg"
+          },
+          {
+            "label": "Reference: File:Tromsøsund bridge.jpg; Lars Tiede from Karlsruhe, Germany; CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Troms%C3%B8sund_bridge.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tromso-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=tromso-bridge&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=tower"
+          },
+          {
+            "label": "approach",
+            "url": "/asset-preview.html?asset=tromso-bridge&view=approach"
+          }
+        ]
+      },
+      "notes": "Published historic length 1036 m, width 8.3 m, 80 m main span, 38 m clearance, 58 spans. Mapped alignment is 1043 m and preserved without rescaling. Estimated crest station 470 m, road crest 39.25 m, approach profile, pier positions, 35 m anchor spans, twin-column sections, haunch depths, fence and lamp spacing. Primary UiT guide reports 36 m centre height; the 38 m navigation clearance uses Wikipedia/project sources and an estimated slab depth. Historic cross-section: widened 2026 cycleway and temporary construction closure are not represented. No safety-fence wire mesh, signs, underwater foundations, neighbouring cathedral or terrain in GLB. Far reduces rods but keeps all piers, hump, haunches and lamp envelope.",
+      "documentation": "docs/assets/top-cities-tromso-bridge.md",
+      "city": "Tromsø",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
