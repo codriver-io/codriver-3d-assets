@@ -15233,6 +15233,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "halogaland-bridge",
+      "name": "Hålogaland Bridge",
+      "kind": "bridge",
+      "location": "Narvik, Nordland, Norway",
+      "status": "ready",
+      "description": "2018 E6 suspension bridge: two slender converging concrete portal towers, perforated crowns, steel box girder, 1145 m suspension span and curved Karistrand viaduct.",
+      "manifest": "/models/bridges/halogaland-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/halogaland-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks halogaland-bridge --no-check",
+        "provenance": "Original procedural Three.js geometry authored 2026-10-08. OSM alignment © OpenStreetMap contributors (ODbL 1.0); dossier plus a small OSM API north road extract. Reference photos consulted only; no traced mesh, photo or texture shipped.",
+        "references": [
+          {
+            "label": "Statens vegvesen — technical data, dimensions and cross section",
+            "url": "https://www.vegvesen.no/vegprosjekter/fullfort/e6halogalandsbrua/english/technical-data/"
+          },
+          {
+            "label": "Statens vegvesen — 9 December 2018 opening and asymmetric tower elevations",
+            "url": "https://www.vegvesen.no/vegprosjekter/fullfort/e6halogalandsbrua/nyhetsarkiv/apnet-e6-halogalandsbrua/"
+          },
+          {
+            "label": "File:Hålogalandsbrua august 2016 03.jpg — TorbjørnS (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%A5logalandsbrua_august_2016_03.jpg"
+          },
+          {
+            "label": "File:Hålogalandsbrua 17. juni 2015b.JPG — TorbjørnS (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%A5logalandsbrua_17._juni_2015b.JPG"
+          },
+          {
+            "label": "File:Hålogalandsbrua april 2018.jpg — TorbjørnS (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%A5logalandsbrua_april_2018.jpg"
+          },
+          {
+            "label": "File:Nordnorwegen 2019 0066 (48616430347).jpg — Markus Trienke (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Nordnorwegen_2019_0066_(48616430347).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/halogaland-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=halogaland-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=underside"
+          },
+          {
+            "label": "Approach",
+            "url": "/asset-preview.html?asset=halogaland-bridge&view=approach"
+          }
+        ]
+      },
+      "notes": "Deck top 43 m / 3 m box depth, tower sections, head apertures, cable sag, 20 m hangers, anchorage sockets, support stations and lamp rhythm estimated. Tower stations adjusted by 0.91 m to preserve published 1145 m span. South/north viaducts 250/148 m follow technical data, whose sum with the main span differs by 10 m from the published 1533 m total. Extended flat ramps deliberately include mapped approach roads: 1103.3 / 718.8 m, smoothstep peak grades 5.85 / 8.97 percent. Cycle path 3.5 m on steel main span, narrowed on 15.4 m viaducts. No building=* tower extrusions in dossier; empty building mask. Rock cuts, tunnel shells, anchorage halls, individual cable wires and surveyed foundations omitted.",
+      "documentation": "docs/assets/top-cities-halogaland-bridge.md",
+      "city": "Narvik",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
