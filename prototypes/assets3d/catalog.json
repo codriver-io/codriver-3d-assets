@@ -15585,6 +15585,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "svinesund-bridge",
+      "name": "Svinesund Bridge",
+      "kind": "bridge",
+      "location": "Halden, Norway / Strömstad, Sweden",
+      "city": "Halden",
+      "status": "ready",
+      "description": "The new 2005 E6 crossing: one white concrete arch between two separate steel carriageways, six hanger pairs and centrally supported approach viaducts.",
+      "manifest": "/models/bridges/svinesund-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/svinesund-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks svinesund-bridge --no-check",
+        "provenance": "Original procedural texture-free geometry authored October 2026; OSM alignment and bridge outlines © OpenStreetMap contributors, ODbL 1.0. Photographs studied only: Svinesundsbrua.jpg, Håkon Aurlien, CC BY-SA 3.0; Svinesund bruene.jpg, John Erlandsen, CC BY 2.0; Hjelmkollen utstikt mot svinesund (1).jpg, TommyG, CC BY-SA 3.0. Old Svinesund Bridge.jpg is a different bridge and was excluded. No third-party mesh, photograph or texture shipped.",
+        "references": [
+          {
+            "label": "Aas-Jakobsen — design and 247/704 m dimensions",
+            "url": "https://www.aas-jakobsen.com/project/svinesund-bridge-2/"
+          },
+          {
+            "label": "SEH Engineering — six hanger pairs and central piers",
+            "url": "https://seh-engineering.de/referenzen/svinesund-bruecke-norwegen-/-schweden"
+          },
+          {
+            "label": "KTH — New Svinesund Bridge monitoring report",
+            "url": "https://kth.diva-portal.org/smash/get/diva2:431868/FULLTEXT01.pdf"
+          },
+          {
+            "label": "fib — bridge structural system",
+            "url": "https://www.fib-international.org/news/198-2007-4-abstract-5.html"
+          },
+          {
+            "label": "Trafikverket — official bridge report and elevation diagram",
+            "url": "https://trafikverket.diva-portal.org/smash/get/diva2:1389783/FULLTEXT01.pdf"
+          },
+          {
+            "label": "Svinesundsbrua, Håkon Aurlien, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Svinesundsbrua.jpg"
+          },
+          {
+            "label": "Svinesund bruene, John Erlandsen, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Svinesund_bruene.jpg"
+          },
+          {
+            "label": "Hjelmkollen view, TommyG, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Hjelmkollen_utstikt_mot_svinesund_(1).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/svinesund-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=svinesund-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=tower"
+          },
+          {
+            "label": "Approach",
+            "url": "/asset-preview.html?asset=svinesund-bridge&view=approach"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-svinesund-bridge.md",
+      "notes": "Published 704 m length, 247 m arch, twin 11 m carriageways, 6 m central gap, six hanger pairs, four Swedish piers and one Norwegian pier. Circular arch curve, local ramp profile, structural details and lighting estimated; no terrain baked into GLB. Flat ramps 450 m each, max grade 7.71%; separate real main deck +59.9 m. Owned world-only transverse landing fit corrects both ramp toes; full lifecycle/hardware rollout remains separately gated.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
