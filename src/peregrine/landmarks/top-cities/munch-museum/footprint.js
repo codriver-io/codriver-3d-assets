@@ -1,4 +1,49 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// Extrusions the model replaces. Outline, podium, vertical shaft, and the two
+// inclined slices. Neighbouring apartments south of the quay are not included.
 // Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+export const OSM_WAYS = [545260792, 995726956, 727490336, 995726957, 995726958];
+export const FOOTPRINTS = [
+  // way 545260792 — building=civic, name=Munchmuseet
+  [
+    [10.7559512, 59.905971],
+    [10.7557917, 59.9058054],
+    [10.7552849, 59.9052701],
+    [10.7545583, 59.9054424],
+    [10.7550964, 59.9061782],
+  ],
+  // way 995726956 — podium, height 13
+  [
+    [10.7550964, 59.9061782],
+    [10.7559512, 59.905971],
+    [10.7557917, 59.9058054],
+    [10.7554104, 59.9058979],
+    [10.7548949, 59.9053627],
+    [10.7549847, 59.9053416],
+    [10.7549397, 59.9052953],
+    [10.7545318, 59.9054024],
+    [10.7545583, 59.9054424],
+  ],
+  // way 727490336 — vertical shaft, height 37
+  [
+    [10.7549847, 59.9053416],
+    [10.7548949, 59.9053627],
+    [10.7554104, 59.9058979],
+    [10.7557917, 59.9058054],
+    [10.7552849, 59.9052701],
+  ],
+  // way 995726957 — incline, min_height 37, height 50
+  [
+    [10.755332, 59.9059167],
+    [10.7557121, 59.9058247],
+    [10.7552038, 59.9052895],
+    [10.7549847, 59.9053416],
+    [10.7548221, 59.9053802],
+  ],
+  // way 995726958 — head, min_height 50, height 57
+  [
+    [10.7552885, 59.9059273],
+    [10.7556704, 59.9058348],
+    [10.7551585, 59.9053002],
+    [10.7547767, 59.9053907],
+  ],
+];
