@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (64 released)
+## The collection (65 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -66,6 +66,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `halogaland-bridge` | Hålogaland Bridge | Narvik | bridge, road-fitted |
 | `hardanger-bridge` | Hardanger Bridge | Ulvik | bridge, road-fitted |
 | `tromso-bridge` | Tromsø Bridge | Tromsø | bridge, road-fitted |
+| `helgeland-bridge` | Helgeland Bridge | Leirfjord | bridge, road-fitted |
 | `svinesund-bridge` | Svinesund Bridge | Halden | bridge, road-fitted |
 | `oslo-opera-house` | Oslo Opera House | Oslo | building |
 | `oslo-city-hall` | Oslo City Hall | Oslo | building |

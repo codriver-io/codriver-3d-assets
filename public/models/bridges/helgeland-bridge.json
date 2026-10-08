@@ -1,0 +1,68 @@
+{
+  "id": "helgeland-bridge",
+  "name": "Helgeland Bridge",
+  "kind": "bridge",
+  "origin": [
+    12.72017,
+    66.038
+  ],
+  "height": 138,
+  "padM": 1100,
+  "frontageBearing": 167.9,
+  "rangeM": 6000,
+  "nearM": 1800,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is visual water/flat-map grade; tallest crown 138 m, southern crown 127.5 m, main road 46.2–47 m. Published heights are above sea level; no DEM or geographic stretch is baked into geometry. Submerged foundations omitted.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 1065 m length, 425 m main span, 12 m width, unequal modified-diamond pylons (138/127.5 m). Deck datum/camber, side-span division, cable count/diameters, pylon sections and pier stations are visual estimates. Extra flat-map approach roadway is separate from the structural bridge length.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/helgeland-bridge-near.glb",
+      "bytes": 3010232,
+      "triangles": 65240,
+      "drawCalls": 20,
+      "bounds": {
+        "min": [
+          -257.6054382324219,
+          -2.3841858265427618e-8,
+          -792.2022705078125
+        ],
+        "max": [
+          347.185546875,
+          138,
+          599.3614501953125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/helgeland-bridge-far.glb",
+      "bytes": 456312,
+      "triangles": 16656,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -257.6054382324219,
+          -2.3841858265427618e-8,
+          -792.2022705078125
+        ],
+        "max": [
+          347.185546875,
+          138,
+          599.3614501953125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/helgeland-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
