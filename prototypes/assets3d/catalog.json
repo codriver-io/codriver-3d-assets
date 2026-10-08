@@ -16230,6 +16230,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "akershus-fortress",
+      "name": "Akershus Fortress",
+      "kind": "building",
+      "location": "Oslo",
+      "status": "ready",
+      "description": "Original procedural exterior of Akershus slott on its harbour promontory: a pale Renaissance castle with dark slate roofs, a brick crow-step gable, Romerikstårnet’s clock and pointed copper spire, Blåtårnet’s copper onion and needle, and the mapped stone bastion. Later barracks are omitted.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/akershus-fortress/geometry.js",
+        "build": "pnpm build:top-cities-landmarks akershus-fortress",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-08; no mesh capture, tracing, bitmap, or texture. Derived geographic data © OpenStreetMap contributors (ODbL 1.0), relation 13931023 and the building:part ways listed in footprint.js. Reference-only photos retained under ignored tmp/: harbour elevation by Ralf Roletschek (GFDL 1.2); land-side bastion panorama by jimg944 (CC BY 2.0); Karpedammen grounds by Spike (CC BY-SA 4.0). Interior photographs were not used for massing. No external images are included in the model exports.",
+        "references": [
+          {
+            "label": "Wikipedia — Akershus slott og festning",
+            "url": "https://no.wikipedia.org/wiki/Akershus_slott_og_festning"
+          },
+          {
+            "label": "Store norske leksikon — Akershus slott og festning",
+            "url": "https://www.snl.no/Akershus_slott_og_festning"
+          },
+          {
+            "label": "Visit Oslofjorden — fakta",
+            "url": "https://www.visitoslofjorden.no/fakta-akershus-slott-og-festning"
+          },
+          {
+            "label": "Harbour photograph — Ralf Roletschek, GFDL 1.2",
+            "url": "https://commons.wikimedia.org/wiki/File:14-09-02-oslo-RalfR-370.jpg"
+          },
+          {
+            "label": "Bastion panorama — jimg944, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Akershus_Fortress_panorama.jpg"
+          },
+          {
+            "label": "OSM relation",
+            "url": "https://www.openstreetmap.org/relation/13931023"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/akershus-fortress/geometry.js"
+      },
+      "notes": "Both stair-tower tips are the OpenStreetMap 36 m tags (mapper estimates, not a surveyed publication). Wing eaves are lower than those part-height tags so the harbour side reads as about three storeys with the spires clear of the roofs; that storey count is from the Roletschek photograph. Renaissance walls are warm pink-tan render with pale quoins; crow-step gables are darker brick and near-only. The long harbour halls have tall arched lower windows and a smaller upper row. The bastion is grey coursed rubble, thickened on the mapped rings (west curtain about 9 m). The 15–20 m drop to the quay is terrain, not mesh. Main roofs are dark slate. Copper is the two stair-tower caps, Vågehalstårnet’s flat roof and the mausoleum. Munks tårn keeps its mapped pyramidal roof and stands apart on purpose. The south gap between Jomfrutårnet and Munks tårn is open on purpose. Way 904552992, a pier of about 4 m², is omitted because a footprint ring must be larger than 4 m². Barracks, the flag, the ferry terminal and the cliff below y=0 are omitted. Far keeps the silhouette, drops brick, mullions, shutters and quoins, and stays at 8 draws.",
+      "documentation": "docs/assets/top-cities-akershus-fortress.md",
+      "manifest": "/models/buildings/akershus-fortress.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=akershus-fortress",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=akershus-fortress&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=akershus-fortress&view=facade"
+          },
+          {
+            "label": "harbour",
+            "url": "/asset-preview.html?asset=akershus-fortress&view=harbour"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=akershus-fortress&view=roof"
+          },
+          {
+            "label": "south",
+            "url": "/asset-preview.html?asset=akershus-fortress&view=south"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=akershus-fortress&view=detail"
+          }
+        ]
+      },
+      "city": "Oslo",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
