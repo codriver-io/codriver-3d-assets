@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (59 released)
+## The collection (60 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -67,6 +67,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `svinesund-bridge` | Svinesund Bridge | Halden | bridge, road-fitted |
 | `oslo-opera-house` | Oslo Opera House | Oslo | building |
 | `oslo-city-hall` | Oslo City Hall | Oslo | building |
+| `royal-palace-oslo` | Royal Palace, Oslo | Oslo | building |
 
 ## A landmark is a folder
 

@@ -15680,6 +15680,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "royal-palace-oslo",
+      "name": "Royal Palace, Oslo",
+      "kind": "building",
+      "location": "Slottsplassen 1, Oslo",
+      "status": "ready",
+      "description": "Linstow's neoclassical Royal Palace (Det kongelige slott, 1825–1849) at the head of Karl Johans gate: a long warm-beige stucco block on a grey stone base, a hexastyle Ionic portico with a pediment and an arched loggia, rectangular ground-floor windows on the flanks, a balcony, and two lower wings forming a shallow U toward the park. The Karl Johan statue, the stair, the grass banks and the guardhouses are not modelled.",
+      "manifest": "/models/buildings/royal-palace-oslo.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/royal-palace-oslo/geometry.js",
+        "build": "pnpm build:top-cities-landmarks royal-palace-oslo",
+        "provenance": "Original procedural geometry authored 2026-10-08 (geometry.js, royal-palace-oslo-plan.js) from the mapped OSM outline of relation 12267199 and public photographs. Mapped footprint © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Slottet i Oslo 1' (Andreas Haldorsen, CC BY-SA 4.0), '1292 A2. Oslo' (National Library of Norway, no restrictions), 'Slott noreg bak 1' (Bjørn Erik Pedersen, CC BY-SA 3.0), 'Slottet IMG 6069' (Bjoertvedt, CC BY-SA 3.0 no) and 'Royal Palace from Karl Johans Gate' (Andy Mitchell, CC BY-SA 2.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Det kongelige hoff · Slottets historie (published dimensions)",
+            "url": "https://www.kongehuset.no/artikkel.html?tid=27630"
+          },
+          {
+            "label": "Det kongelige hoff · Det kongelige slott",
+            "url": "https://www.kongehuset.no/kongelige-eiendommer/det-kongelige-slott"
+          },
+          {
+            "label": "Wikipedia · Royal Palace, Oslo",
+            "url": "https://en.wikipedia.org/wiki/Royal_Palace,_Oslo"
+          },
+          {
+            "label": "Wikipedia (no) · Det kongelige slott",
+            "url": "https://no.wikipedia.org/wiki/Det_kongelige_slott"
+          },
+          {
+            "label": "OSM footprint · relation 12267199",
+            "url": "https://www.openstreetmap.org/relation/12267199"
+          },
+          {
+            "label": "Photo · south front (Andreas Haldorsen, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Slottet_i_Oslo_1.jpg"
+          },
+          {
+            "label": "Photo · park side (Bjørn Erik Pedersen, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Slott_noreg_bak_1.jpg"
+          },
+          {
+            "label": "Photo · balcony (Bjoertvedt, CC BY-SA 3.0 no)",
+            "url": "https://commons.wikimedia.org/wiki/File:Slottet_IMG_6069_rk_85500.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/royal-palace-oslo/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=royal-palace-oslo&view=facade",
+        "views": [
+          {
+            "label": "South front, Karl Johans gate",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=facade"
+          },
+          {
+            "label": "Overview from the south-east",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=overview"
+          },
+          {
+            "label": "Roofs",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=roof"
+          },
+          {
+            "label": "Portico and balcony",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=entrance"
+          },
+          {
+            "label": "Park side",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=north"
+          },
+          {
+            "label": "West side",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=side"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=royal-palace-oslo&view=plan"
+          }
+        ]
+      },
+      "notes": "Sourced from kongehuset.no: Hans Linstow, foundation stone 1 October 1825, taken into use 1849 and inaugurated 26 July 1849, main wing 100.8 × 24.1 × 23 m, side wings 40.7 × 14.3 × 16 m, highest point 25 m, gross footprint 3,320 m², 173 rooms. Plastered brick on a cut-stone base, three storeys, hexastyle Ionic portico. The mapped ring (relation 12267199) is 100.5 m along the front, so the model follows the outline rather than the extra published decimetres. Wall depth is 24.10 m. Estimated: every storey height except the column band (OSM building:part height 19, min_height 8), bay pitch (about 3.2 m, 11 bays each side of the portico), cornice projection and pediment apex 24.25 m. The flagpole is 36.5 m so the Norwegian flag clears the pediment; the published 25 m is the building. Eight column parts sit inside the ring and are under 2 m², so they are not separate footprints. The court pavement is omitted because the U is the footprint and the court is outside it. Ground-floor flank windows are short rectangles; arches are only the five portico bays. The flag is the Norwegian cross (blue on the near LOD only). The Karl Johan statue, the stair, the grass banks and the Gardens guardhouses are not modelled. No Tesla hardware measurements.",
+      "documentation": "docs/assets/top-cities-royal-palace-oslo.md",
+      "city": "Oslo",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
