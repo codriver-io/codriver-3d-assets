@@ -16669,6 +16669,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "norwegian-petroleum-museum",
+      "name": "Norwegian Petroleum Museum",
+      "kind": "building",
+      "location": "Stavanger, Norway",
+      "status": "ready",
+      "description": "Original procedural exterior of the 1999 Lunde & Løvseth harbour museum: three elevated silver offshore-platform drums, glass circulation bridges, granite bedrock wings and an inclined silver exhibition volume.",
+      "manifest": "/models/buildings/norwegian-petroleum-museum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/norwegian-petroleum-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks norwegian-petroleum-museum --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-08; texture-free, no mesh capture or tracing. Geographic data © OpenStreetMap contributors (ODbL 1.0), ways 31722952, 31820507, 32323150, 32323166. Reference-only photographs: Stavanger Norwegisches Ölmuseum 3.JPG by Zairon, CC BY-SA 3.0; Museum Oil Stavanger.JPG by Fxp42, CC BY-SA 3.0; Oljemuseet2.jpg by Ranveig, CC SA 1.0. All photographs remain in ignored tmp; no photo bytes or textures in exports.",
+        "references": [
+          {
+            "label": "Museum official building history: Lunde & Løvseth, bedrock/coast/platform symbolism, 20 May 1999 opening",
+            "url": "https://www.norskolje.museum.no/en/om-museet/the-building-of-the-norwegian-petroleum-museum/"
+          },
+          {
+            "label": "Official location: Kjeringholmen, Stavanger",
+            "url": "https://www.norskolje.museum.no/en/home/visit-the-museum/where-is-the-museum/"
+          },
+          {
+            "label": "Pavilion cladding and supports — Zairon, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Stavanger_Norwegisches_%C3%96lmuseum_3.JPG"
+          },
+          {
+            "label": "Overall silhouette — Fxp42, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Museum_Oil_Stavanger.JPG"
+          },
+          {
+            "label": "Harbour side — Ranveig, CC SA 1.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Oljemuseet2.jpg"
+          },
+          {
+            "label": "OSM mapped building 31722952",
+            "url": "https://www.openstreetmap.org/way/31722952"
+          },
+          {
+            "label": "OSM mapped building 31820507",
+            "url": "https://www.openstreetmap.org/way/31820507"
+          },
+          {
+            "label": "OSM mapped building 32323150",
+            "url": "https://www.openstreetmap.org/way/32323150"
+          },
+          {
+            "label": "OSM mapped building 32323166",
+            "url": "https://www.openstreetmap.org/way/32323166"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/norwegian-petroleum-museum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=norwegian-petroleum-museum",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=back"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=detail"
+          },
+          {
+            "label": "top",
+            "url": "/asset-preview.html?asset=norwegian-petroleum-museum&view=top"
+          }
+        ]
+      },
+      "notes": "All heights, inclined roof section, granite-wing proportions, supports, roof plant, glazing and panel modules are photographic estimates; mapped plan gives scale and orientation. Four estimated circulation-link footprint envelopes accompany four OSM building rings. Far retains all three drums, stilts and east caisson, unequal roof caps, glass links and granite wings. Interior, waterfront wall, water plane, exhibition objects, furniture and flags omitted. Independent visual reviewer acceptance pending.",
+      "documentation": "docs/assets/top-cities-norwegian-petroleum-museum.md",
+      "city": "Stavanger",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
