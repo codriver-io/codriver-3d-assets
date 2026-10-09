@@ -164,6 +164,31 @@ import { SPEC as lm_kilden_performing_arts_centreSpec, PALETTES as lm_kilden_per
 import { FOOTPRINTS as lm_kilden_performing_arts_centreFootprints } from './kilden-performing-arts-centre/footprint.js';
 import { SPEC as lm_borgund_stave_churchSpec, PALETTES as lm_borgund_stave_churchPalettes } from './borgund-stave-church/config.js';
 import { FOOTPRINTS as lm_borgund_stave_churchFootprints } from './borgund-stave-church/footprint.js';
+import { SPEC as lm_farris_badSpec, PALETTES as lm_farris_badPalettes } from './farris-bad/config.js';
+import { FOOTPRINTS as lm_farris_badFootprints } from './farris-bad/footprint.js';
+import { SPEC as lm_pont_neuf_toulouseSpec, PALETTES as lm_pont_neuf_toulousePalettes } from './pont-neuf-toulouse/config.js';
+import { FOOTPRINTS as lm_pont_neuf_toulouseFootprints } from './pont-neuf-toulouse/footprint.js';
+import { ROAD_LAYER as lm_pont_neuf_toulouseRoad } from './pont-neuf-toulouse/layer.js';
+import { SPEC as lm_pont_des_catalansSpec, PALETTES as lm_pont_des_catalansPalettes } from './pont-des-catalans/config.js';
+import { FOOTPRINTS as lm_pont_des_catalansFootprints } from './pont-des-catalans/footprint.js';
+import { ROAD_LAYER as lm_pont_des_catalansRoad } from './pont-des-catalans/layer.js';
+import { SPEC as lm_viaduc_de_millauSpec, PALETTES as lm_viaduc_de_millauPalettes } from './viaduc-de-millau/config.js';
+import { FOOTPRINTS as lm_viaduc_de_millauFootprints } from './viaduc-de-millau/footprint.js';
+import { ROAD_LAYER as lm_viaduc_de_millauRoad } from './viaduc-de-millau/layer.js';
+import { SPEC as lm_basilique_saint_serninSpec, PALETTES as lm_basilique_saint_serninPalettes } from './basilique-saint-sernin/config.js';
+import { FOOTPRINTS as lm_basilique_saint_serninFootprints } from './basilique-saint-sernin/footprint.js';
+import { SPEC as lm_capitole_de_toulouseSpec, PALETTES as lm_capitole_de_toulousePalettes } from './capitole-de-toulouse/config.js';
+import { FOOTPRINTS as lm_capitole_de_toulouseFootprints } from './capitole-de-toulouse/footprint.js';
+import { SPEC as lm_dome_de_la_graveSpec, PALETTES as lm_dome_de_la_gravePalettes } from './dome-de-la-grave/config.js';
+import { FOOTPRINTS as lm_dome_de_la_graveFootprints } from './dome-de-la-grave/footprint.js';
+import { SPEC as lm_cite_de_l_espaceSpec, PALETTES as lm_cite_de_l_espacePalettes } from './cite-de-l-espace/config.js';
+import { FOOTPRINTS as lm_cite_de_l_espaceFootprints } from './cite-de-l-espace/footprint.js';
+import { SPEC as lm_couvent_des_jacobinsSpec, PALETTES as lm_couvent_des_jacobinsPalettes } from './couvent-des-jacobins/config.js';
+import { FOOTPRINTS as lm_couvent_des_jacobinsFootprints } from './couvent-des-jacobins/footprint.js';
+import { SPEC as lm_cite_de_carcassonneSpec, PALETTES as lm_cite_de_carcassonnePalettes } from './cite-de-carcassonne/config.js';
+import { FOOTPRINTS as lm_cite_de_carcassonneFootprints } from './cite-de-carcassonne/footprint.js';
+import { SPEC as lm_cathedrale_sainte_cecile_albiSpec, PALETTES as lm_cathedrale_sainte_cecile_albiPalettes } from './cathedrale-sainte-cecile-albi/config.js';
+import { FOOTPRINTS as lm_cathedrale_sainte_cecile_albiFootprints } from './cathedrale-sainte-cecile-albi/footprint.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -245,6 +270,17 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_vikingskipetSpec, lm_vikingskipetPalettes, lm_vikingskipetFootprints),
   entry(lm_kilden_performing_arts_centreSpec, lm_kilden_performing_arts_centrePalettes, lm_kilden_performing_arts_centreFootprints),
   entry(lm_borgund_stave_churchSpec, lm_borgund_stave_churchPalettes, lm_borgund_stave_churchFootprints),
+  entry(lm_farris_badSpec, lm_farris_badPalettes, lm_farris_badFootprints),
+  entry(lm_pont_neuf_toulouseSpec, lm_pont_neuf_toulousePalettes, lm_pont_neuf_toulouseFootprints, lm_pont_neuf_toulouseRoad),
+  entry(lm_pont_des_catalansSpec, lm_pont_des_catalansPalettes, lm_pont_des_catalansFootprints, lm_pont_des_catalansRoad),
+  entry(lm_viaduc_de_millauSpec, lm_viaduc_de_millauPalettes, lm_viaduc_de_millauFootprints, lm_viaduc_de_millauRoad),
+  entry(lm_basilique_saint_serninSpec, lm_basilique_saint_serninPalettes, lm_basilique_saint_serninFootprints),
+  entry(lm_capitole_de_toulouseSpec, lm_capitole_de_toulousePalettes, lm_capitole_de_toulouseFootprints),
+  entry(lm_dome_de_la_graveSpec, lm_dome_de_la_gravePalettes, lm_dome_de_la_graveFootprints),
+  entry(lm_cite_de_l_espaceSpec, lm_cite_de_l_espacePalettes, lm_cite_de_l_espaceFootprints),
+  entry(lm_couvent_des_jacobinsSpec, lm_couvent_des_jacobinsPalettes, lm_couvent_des_jacobinsFootprints),
+  entry(lm_cite_de_carcassonneSpec, lm_cite_de_carcassonnePalettes, lm_cite_de_carcassonneFootprints),
+  entry(lm_cathedrale_sainte_cecile_albiSpec, lm_cathedrale_sainte_cecile_albiPalettes, lm_cathedrale_sainte_cecile_albiFootprints),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

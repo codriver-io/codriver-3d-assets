@@ -297,6 +297,50 @@ import { MANIFEST as lm_borgund_stave_churchManifest } from './borgund-stave-chu
 import { OSM_WAYS as lm_borgund_stave_churchWays } from './borgund-stave-church/footprint.js';
 import { create as lm_borgund_stave_churchCreate } from './borgund-stave-church/geometry.js';
 import { VIEWS as lm_borgund_stave_churchViews } from './borgund-stave-church/views.js';
+import { MANIFEST as lm_farris_badManifest } from './farris-bad/config.js';
+import { OSM_WAYS as lm_farris_badWays } from './farris-bad/footprint.js';
+import { create as lm_farris_badCreate } from './farris-bad/geometry.js';
+import { VIEWS as lm_farris_badViews } from './farris-bad/views.js';
+import { MANIFEST as lm_pont_neuf_toulouseManifest } from './pont-neuf-toulouse/config.js';
+import { OSM_WAYS as lm_pont_neuf_toulouseWays } from './pont-neuf-toulouse/footprint.js';
+import { create as lm_pont_neuf_toulouseCreate } from './pont-neuf-toulouse/geometry.js';
+import { VIEWS as lm_pont_neuf_toulouseViews } from './pont-neuf-toulouse/views.js';
+import { MANIFEST as lm_pont_des_catalansManifest } from './pont-des-catalans/config.js';
+import { OSM_WAYS as lm_pont_des_catalansWays } from './pont-des-catalans/footprint.js';
+import { create as lm_pont_des_catalansCreate } from './pont-des-catalans/geometry.js';
+import { VIEWS as lm_pont_des_catalansViews } from './pont-des-catalans/views.js';
+import { MANIFEST as lm_viaduc_de_millauManifest } from './viaduc-de-millau/config.js';
+import { OSM_WAYS as lm_viaduc_de_millauWays } from './viaduc-de-millau/footprint.js';
+import { create as lm_viaduc_de_millauCreate } from './viaduc-de-millau/geometry.js';
+import { VIEWS as lm_viaduc_de_millauViews } from './viaduc-de-millau/views.js';
+import { MANIFEST as lm_basilique_saint_serninManifest } from './basilique-saint-sernin/config.js';
+import { OSM_WAYS as lm_basilique_saint_serninWays } from './basilique-saint-sernin/footprint.js';
+import { create as lm_basilique_saint_serninCreate } from './basilique-saint-sernin/geometry.js';
+import { VIEWS as lm_basilique_saint_serninViews } from './basilique-saint-sernin/views.js';
+import { MANIFEST as lm_capitole_de_toulouseManifest } from './capitole-de-toulouse/config.js';
+import { OSM_WAYS as lm_capitole_de_toulouseWays } from './capitole-de-toulouse/footprint.js';
+import { create as lm_capitole_de_toulouseCreate } from './capitole-de-toulouse/geometry.js';
+import { VIEWS as lm_capitole_de_toulouseViews } from './capitole-de-toulouse/views.js';
+import { MANIFEST as lm_dome_de_la_graveManifest } from './dome-de-la-grave/config.js';
+import { OSM_WAYS as lm_dome_de_la_graveWays } from './dome-de-la-grave/footprint.js';
+import { create as lm_dome_de_la_graveCreate } from './dome-de-la-grave/geometry.js';
+import { VIEWS as lm_dome_de_la_graveViews } from './dome-de-la-grave/views.js';
+import { MANIFEST as lm_cite_de_l_espaceManifest } from './cite-de-l-espace/config.js';
+import { OSM_WAYS as lm_cite_de_l_espaceWays } from './cite-de-l-espace/footprint.js';
+import { create as lm_cite_de_l_espaceCreate } from './cite-de-l-espace/geometry.js';
+import { VIEWS as lm_cite_de_l_espaceViews } from './cite-de-l-espace/views.js';
+import { MANIFEST as lm_couvent_des_jacobinsManifest } from './couvent-des-jacobins/config.js';
+import { OSM_WAYS as lm_couvent_des_jacobinsWays } from './couvent-des-jacobins/footprint.js';
+import { create as lm_couvent_des_jacobinsCreate } from './couvent-des-jacobins/geometry.js';
+import { VIEWS as lm_couvent_des_jacobinsViews } from './couvent-des-jacobins/views.js';
+import { MANIFEST as lm_cite_de_carcassonneManifest } from './cite-de-carcassonne/config.js';
+import { OSM_WAYS as lm_cite_de_carcassonneWays } from './cite-de-carcassonne/footprint.js';
+import { create as lm_cite_de_carcassonneCreate } from './cite-de-carcassonne/geometry.js';
+import { VIEWS as lm_cite_de_carcassonneViews } from './cite-de-carcassonne/views.js';
+import { MANIFEST as lm_cathedrale_sainte_cecile_albiManifest } from './cathedrale-sainte-cecile-albi/config.js';
+import { OSM_WAYS as lm_cathedrale_sainte_cecile_albiWays } from './cathedrale-sainte-cecile-albi/footprint.js';
+import { create as lm_cathedrale_sainte_cecile_albiCreate } from './cathedrale-sainte-cecile-albi/geometry.js';
+import { VIEWS as lm_cathedrale_sainte_cecile_albiViews } from './cathedrale-sainte-cecile-albi/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -373,6 +417,17 @@ const authoring = {
   'vikingskipet': { manifest: lm_vikingskipetManifest, osmWays: lm_vikingskipetWays, create: lm_vikingskipetCreate, views: lm_vikingskipetViews },
   'kilden-performing-arts-centre': { manifest: lm_kilden_performing_arts_centreManifest, osmWays: lm_kilden_performing_arts_centreWays, create: lm_kilden_performing_arts_centreCreate, views: lm_kilden_performing_arts_centreViews },
   'borgund-stave-church': { manifest: lm_borgund_stave_churchManifest, osmWays: lm_borgund_stave_churchWays, create: lm_borgund_stave_churchCreate, views: lm_borgund_stave_churchViews },
+  'farris-bad': { manifest: lm_farris_badManifest, osmWays: lm_farris_badWays, create: lm_farris_badCreate, views: lm_farris_badViews },
+  'pont-neuf-toulouse': { manifest: lm_pont_neuf_toulouseManifest, osmWays: lm_pont_neuf_toulouseWays, create: lm_pont_neuf_toulouseCreate, views: lm_pont_neuf_toulouseViews },
+  'pont-des-catalans': { manifest: lm_pont_des_catalansManifest, osmWays: lm_pont_des_catalansWays, create: lm_pont_des_catalansCreate, views: lm_pont_des_catalansViews },
+  'viaduc-de-millau': { manifest: lm_viaduc_de_millauManifest, osmWays: lm_viaduc_de_millauWays, create: lm_viaduc_de_millauCreate, views: lm_viaduc_de_millauViews },
+  'basilique-saint-sernin': { manifest: lm_basilique_saint_serninManifest, osmWays: lm_basilique_saint_serninWays, create: lm_basilique_saint_serninCreate, views: lm_basilique_saint_serninViews },
+  'capitole-de-toulouse': { manifest: lm_capitole_de_toulouseManifest, osmWays: lm_capitole_de_toulouseWays, create: lm_capitole_de_toulouseCreate, views: lm_capitole_de_toulouseViews },
+  'dome-de-la-grave': { manifest: lm_dome_de_la_graveManifest, osmWays: lm_dome_de_la_graveWays, create: lm_dome_de_la_graveCreate, views: lm_dome_de_la_graveViews },
+  'cite-de-l-espace': { manifest: lm_cite_de_l_espaceManifest, osmWays: lm_cite_de_l_espaceWays, create: lm_cite_de_l_espaceCreate, views: lm_cite_de_l_espaceViews },
+  'couvent-des-jacobins': { manifest: lm_couvent_des_jacobinsManifest, osmWays: lm_couvent_des_jacobinsWays, create: lm_couvent_des_jacobinsCreate, views: lm_couvent_des_jacobinsViews },
+  'cite-de-carcassonne': { manifest: lm_cite_de_carcassonneManifest, osmWays: lm_cite_de_carcassonneWays, create: lm_cite_de_carcassonneCreate, views: lm_cite_de_carcassonneViews },
+  'cathedrale-sainte-cecile-albi': { manifest: lm_cathedrale_sainte_cecile_albiManifest, osmWays: lm_cathedrale_sainte_cecile_albiWays, create: lm_cathedrale_sainte_cecile_albiCreate, views: lm_cathedrale_sainte_cecile_albiViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));

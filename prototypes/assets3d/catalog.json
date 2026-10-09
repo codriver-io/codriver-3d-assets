@@ -17005,6 +17005,105 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cite-de-l-espace",
+      "name": "Cité de l'espace (Ariane 5)",
+      "kind": "building",
+      "location": "Toulouse, France",
+      "city": "Toulouse",
+      "status": "ready",
+      "description": "Original procedural full-scale Ariane 5 replica: ivory central core, white ogival fairing, twin solid boosters, umbilical mast with its splayed sloping foot, service ties and compact exhibit plinths.",
+      "manifest": "/models/buildings/cite-de-l-espace.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cite-de-l-espace/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cite-de-l-espace --no-check",
+        "provenance": "Original texture-free procedural geometry by Codriver, 2026-10-09; no third-party mesh, traced mesh, photo or texture included. OSM ways 1276158601–1276158605 from supplied dossier and shared Overpass helper, © OpenStreetMap contributors, ODbL 1.0. Reference photos remain ignored scratch files: 1.jpg | File:Ariane 5 (mock-up).jpg | Poppy | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Ariane_5_(mock-up).jpg; 2.jpg | File:Cité de l'espace Toulouse 1.jpg | kallerna | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cit%C3%A9_de_l%27espace_Toulouse_1.jpg; 3.jpg | File:Ariane 5 at the Cité de l'Espace-IMG 1889.jpg | Rama | CC BY-SA 3.0 fr | https://commons.wikimedia.org/wiki/File:Ariane_5_at_the_Cit%C3%A9_de_l%27Espace-IMG_1889.jpg; 4.jpg | File:Ariane 5 at Cite de l'Espace 9.jpg | Photograph by Mike Peel (www.mikepeel.net). | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ariane_5_at_Cite_de_l%27Espace_9.jpg; 5.jpg | File:France-Toulouse-Cite de l'espace-Ariane 5.jpg | Yoshi Canopus | Public domain | https://commons.wikimedia.org/wiki/File:France-Toulouse-Cite_de_l%27espace-Ariane_5.jpg; 6.jpg | File:Fusée Ariane 5 (4332428498).jpg | Jamiecat * | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Fus%C3%A9e_Ariane_5_(4332428498).jpg; ",
+        "references": [
+          {
+            "label": "Full-scale replica manufacturer: 53 m Ariane 5",
+            "url": "https://www.maquettes-industrielles.com/en/space-models.html"
+          },
+          {
+            "label": "ESA: core 5.4 m diameter",
+            "url": "https://www.esa.int/ESA_Multimedia/Images/2021/11/Ariane_5_booster_transfer"
+          },
+          {
+            "label": "ESA: 31 m boosters, 3 m diameter",
+            "url": "https://www.esa.int/Enabling_Support/Space_Transportation/Ariane/Ariane_5_boosters_EAP"
+          },
+          {
+            "label": "ESA Ariane 5 technical brochure: 3.05 m EAP diameter",
+            "url": "https://www.esa.int/esapub/br/br250/br250.pdf"
+          },
+          {
+            "label": "File:Ariane 5 (mock-up).jpg — Poppy — CC BY-SA 3.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ariane_5_(mock-up).jpg"
+          },
+          {
+            "label": "File:Cité de l'espace Toulouse 1.jpg — kallerna — CC BY-SA 4.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Cit%C3%A9_de_l%27espace_Toulouse_1.jpg"
+          },
+          {
+            "label": "File:Ariane 5 at the Cité de l'Espace-IMG 1889.jpg — Rama — CC BY-SA 3.0 fr (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ariane_5_at_the_Cit%C3%A9_de_l%27Espace-IMG_1889.jpg"
+          },
+          {
+            "label": "File:Ariane 5 at Cite de l'Espace 9.jpg — Photograph by Mike Peel (www.mikepeel.net). — CC BY-SA 4.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ariane_5_at_Cite_de_l%27Espace_9.jpg"
+          },
+          {
+            "label": "File:France-Toulouse-Cite de l'espace-Ariane 5.jpg — Yoshi Canopus — Public domain (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:France-Toulouse-Cite_de_l%27espace-Ariane_5.jpg"
+          },
+          {
+            "label": "File:Fusée Ariane 5 (4332428498).jpg — Jamiecat * — CC BY 2.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fus%C3%A9e_Ariane_5_(4332428498).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cite-de-l-espace/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cite-de-l-espace",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=cite-de-l-espace&view=top"
+          }
+        ]
+      },
+      "notes": "Published replica height 53 m; core diameter 5.4 m; EAP diameter 3.05 m. Booster tip 32.3 m including exhibit stand is a photo-calibrated estimate, deliberately overriding OSM height=27. Origin is mapped core centroid; booster baseline bearing 123.25 degrees derived from the two mapped EAP centers, baked into geometry once. Mast height 49 m is mapped; revised 3.6 × 2.5 m section and center z=6.95 m are photo-review estimates (OSM section 3.18 × 1.96 m, center z=10.5 m); fairing shoulder, cladding tiles, engine shapes, flag grids, orbit marks, stencil title, umbilicals, stairs and tapered buttress estimated from reference photographs. No park, planetarium, Mir/Soyuz/LEM exhibit or La Cité des Petits museum model or museum replacement ring. Provider overlap underneath the elevated exhibit must be reviewed in app. Compact rigid plinths stand at local y=0; Full 3D world DEM and lifecycle are not verified. Static dimmer night palette; no animated light show. Looked at exported near/far light/dark sheets against dossier photos; initial independent review PASS-WITH-NITS; palette, skirts and mast/ties revised and visually checked against the same references; application integration remains a separate gate. Review fixes: khaki core and mast replaced with lighter ivory/white rocket cladding and separate cream-beige mast; core has a 3 m high white inverted-cone skirt, boosters have white flared skirts exposing metallic bells; mast clear gap reduced from 6.87 m to approximately 3 m and ties enlarged from 0.12/0.18 m to 0.26 m. Original provider rings retained, with two authored bounded rings for photo-estimated revised mast and buttress; no neighbor outline added.",
+      "documentation": "docs/assets/top-cities-cite-de-l-espace.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
