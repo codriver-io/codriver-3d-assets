@@ -70,8 +70,11 @@ function render() {
   if (visible.length && !mobile.matches) show(visible.find(e => e.id === selected) || visible[0]); else updateSelection(); updateUrl();
 }
 function updateFilters() { for (const b of document.querySelectorAll('[data-kind]')) b.setAttribute('aria-pressed', String(b.dataset.kind === kind)); }
+// The list stops at the country (or the province/state in North America): one grid per country keeps
+// single-model cities from leaving half-empty rows. Each card names its city, and the place filter still
+// reaches every city.
 function renderGroups(entries, cards, container, depth = 0, path = '') {
-  const key = depth === 0 ? 'continent' : depth === 1 ? 'country' : depth === 2 && placeOf(entries[0]).continent === 'North America' ? 'region' : 'city';
+  const key = depth === 0 ? 'continent' : depth === 1 ? 'country' : 'region';
   const names = [...new Set(entries.map(entry => placeOf(entry)[key]))].sort((a, b) => a.localeCompare(b));
   for (const name of names) {
     const members = entries.filter(entry => placeOf(entry)[key] === name), id = `${path}/${name}`;
@@ -79,8 +82,9 @@ function renderGroups(entries, cards, container, depth = 0, path = '') {
     group.open = !collapsed.has(id);
     const summary = el('summary'); summary.append(el('span', name), el('small', `${members.length} ${members.length === 1 ? 'model' : 'models'}`)); group.append(summary);
     group.addEventListener('toggle', () => { if (group.open) collapsed.delete(id); else collapsed.add(id); });
-    const content = el('div', null, key === 'city' ? 'model-grid' : 'place-children'); group.append(content);
-    if (key === 'city') for (const entry of members) content.append(cards.get(entry.id));
+    const isLeaf = key === 'region' || (key === 'country' && placeOf(members[0]).continent !== 'North America');
+    const content = el('div', null, isLeaf ? 'model-grid' : 'place-children'); group.append(content);
+    if (isLeaf) for (const entry of [...members].sort((a, b) => cityOf(a).localeCompare(cityOf(b)) || a.name.localeCompare(b.name))) content.append(cards.get(entry.id));
     else renderGroups(members, cards, content, depth + 1, id);
     container.append(group);
   }
@@ -90,9 +94,11 @@ function populatePlaces() {
   function options(entries, depth = 0, path = {}) {
     const key = depth === 0 ? 'continent' : depth === 1 ? 'country' : depth === 2 && placeOf(entries[0]).continent === 'North America' ? 'region' : 'city';
     for (const name of [...new Set(entries.map(e => placeOf(e)[key]))].sort((a,b) => a.localeCompare(b))) {
-      const scope = { ...path, [key]: name };
+      const scope = { ...path, [key]: name }, members = entries.filter(e => placeOf(e)[key] === name);
+      // A city that is the only place in a same-named province (San José, Costa Rica) is already that option.
+      if (key === 'city' && name === path.region && entries.every(e => placeOf(e).city === name)) continue;
       $('city').add(new Option(`${'— '.repeat(depth)}${name}`, JSON.stringify(scope)));
-      if (key !== 'city') options(entries.filter(e => placeOf(e)[key] === name), depth + 1, scope);
+      if (key !== 'city') options(members, depth + 1, scope);
     }
   }
   options(assets);
