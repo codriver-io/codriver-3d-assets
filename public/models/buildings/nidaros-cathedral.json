@@ -1,0 +1,65 @@
+{
+  "id": "nidaros-cathedral",
+  "name": "Nidaros Cathedral",
+  "kind": "building",
+  "origin": [
+    10.3968665,
+    63.4269167
+  ],
+  "height": 87,
+  "padM": 70,
+  "frontageBearing": 268.108,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the west-front pavement. The close is a flat river terrace; no absolute altitude is baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Heights follow Store norske leksikon (102 × 50 m, nave vault 21 m, tower and spire 87 m after the 2016 survey) and the OSM Simple 3D eaves. The copper spire ends at 84 m and a cross carries the tip to 87 m; OSM tags the copper at 82 m. West-front statues are relief bands, not the restored portrait set. Bay count is the seven mapped aisle nibs. The chapter house is a hall with an east apse, not the real miniature cruciform plan. No terrain pad: the terrace under the footprint varies by less than 2 m.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/nidaros-cathedral-near.glb",
+      "bytes": 1759012,
+      "triangles": 24651,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -48.85986328125,
+          -3.814697322468419e-7,
+          -24.72469711303711
+        ],
+        "max": [
+          51.23622512817383,
+          87,
+          25.071760177612305
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/nidaros-cathedral-far.glb",
+      "bytes": 260000,
+      "triangles": 4262,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -48.85986328125,
+          -3.814697322468419e-7,
+          -24.68683433532715
+        ],
+        "max": [
+          51.23622512817383,
+          87,
+          25.071760177612305
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/nidaros-cathedral/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

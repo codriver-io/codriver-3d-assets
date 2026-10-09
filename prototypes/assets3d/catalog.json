@@ -16408,6 +16408,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "nidaros-cathedral",
+      "name": "Nidaros Cathedral",
+      "kind": "building",
+      "location": "Kongsgårdsgata, Trondheim, Norway",
+      "status": "ready",
+      "description": "Nidarosdomen, the Church of Norway cathedral in Trondheim: grey-green soapstone, a sculpted west screen with a rose window between two towers, a long copper nave, a crossing tower with a green spire to 87 m, and the octagonal choir at the east end.",
+      "manifest": "/models/buildings/nidaros-cathedral.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/nidaros-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks nidaros-cathedral",
+        "provenance": "Original procedural geometry authored 2026-10-08 (geometry.js, nidaros-cathedral-build.js, nidaros-cathedral-kit.js, nidaros-cathedral-plan.js) from the mapped OSM outline and public photographs. Mapped footprint (OSM way 417245741 and its building:part ways) © OpenStreetMap contributors (ODbL 1.0). Reference photographs were viewed to compare proportions and are not shipped: Wikimedia Commons 'Nidaros Cathedral, Trondheim, West view' (DXR, CC BY-SA 4.0) and 'Nidarosdomen fra øst' (Thomas Bjørkan, CC BY-SA 4.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Store norske leksikon · Nidarosdomen",
+            "url": "https://snl.no/Nidarosdomen"
+          },
+          {
+            "label": "Wikipedia · Nidaros Cathedral",
+            "url": "https://en.wikipedia.org/wiki/Nidaros_Cathedral"
+          },
+          {
+            "label": "Nidaros Domkirke",
+            "url": "https://www.nidarosdomen.no/"
+          },
+          {
+            "label": "OSM footprint · way 417245741",
+            "url": "https://www.openstreetmap.org/way/417245741"
+          },
+          {
+            "label": "Photo · west front (DXR, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Nidaros_Cathedral,_Trondheim,_West_view_20150605_1.jpg"
+          },
+          {
+            "label": "Photo · from the east (Thomas Bjørkan, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Nidarosdomen_fra_%C3%B8st.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/nidaros-cathedral/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=nidaros-cathedral&view=facade",
+        "views": [
+          {
+            "label": "West front",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=facade"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=overview"
+          },
+          {
+            "label": "Roofs",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=roof"
+          },
+          {
+            "label": "South side",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=south"
+          },
+          {
+            "label": "Octagon from the east",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=east"
+          },
+          {
+            "label": "Rose window",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=rose"
+          },
+          {
+            "label": "West portal",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=portal"
+          },
+          {
+            "label": "Crossing spire",
+            "url": "/asset-preview.html?asset=nidaros-cathedral&view=spire"
+          }
+        ]
+      },
+      "notes": "Sourced: length 102 m, greatest width 50 m, nave vault 21 m, tower with spire 87 m (Store norske leksikon, 2016 survey; older guides said 91 m and some accounts still say about 97 m). OSM Simple 3D tags the copper spire at 82 m (way 404802446); the model ends the copper at 84 m and a cross carries the tip to 87 m. West towers 36 m with pinnacles to 44 m, crossing 38 m with pinnacles to 48 m, nave ridge 35 m, choir ridge 32 m, octagon pyramid 36 m, transept ridges 26 m, chapter house 14 m: the OSM part eaves. West screen faces 268.1°. Estimated from the DXR west photograph and the Bjørkan east aerial: statue rows as relief bands (not the restored portraits), rose spokes, portal with a trumeau, flying-buttress rhythm on the seven aisle nibs, spire ribs, gable niche. Not modelled: interior vaults, the 2015 gable scaffold, carved canopies as individual figures, the real cruciform chapter house (a hall with an east apse instead), and the thin north and south octagon lobes (only the east chapel fits the outline). Near 24651 triangles / 7 draws / 1758488 bytes; far 4262 / 7 / 259472. Light stone is grey-green soapstone #6f746c and the copper is muted verdigris #5f9a82. Tall west-tower lancets sit above the gallery band.",
+      "documentation": "docs/assets/top-cities-nidaros-cathedral.md",
+      "city": "Trondheim",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
