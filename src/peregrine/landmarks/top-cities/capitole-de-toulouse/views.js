@@ -1,6 +1,11 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
+import { world } from './capitole-de-toulouse-plan.js';
+const view = (eye,target) => [world(...eye),world(...target)];
 export const VIEWS = {
-  overview: [[88, 53, 120], [0, 15, 0]],
-  facade: [[0, 12, 86], [0, 10, 0]],
-  roof: [[38, 100, 38], [0, 24, 0]],
+  overview: view([100,75,145],[-3,10,0]),
+  facade: view([-3,13,170],[-3,10,23]),
+  entrance: view([-2.5,4.2,66],[-2.5,10.5,25]),
+  detail: view([-2.5,20,67],[-2.5,17.2,25]),
+  back: view([45,40,-135],[-3,10,0]),
+  roof: view([40,130,80],[-3,8,0]),
+  plan: [[-1,190,0],[-1,0,0]],
 };
