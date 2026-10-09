@@ -17373,6 +17373,105 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cite-de-carcassonne",
+      "name": "Cité de Carcassonne",
+      "kind": "building",
+      "location": "Carcassonne, France",
+      "status": "ready",
+      "description": "Original procedural restored fortified Cité: the two mapped concentric curtain rings, 45 mapped towers plus two twin-tower gateways, Château Comtal wings, three barbicans and the Saint-Nazaire basilica roof; inner city represented by nine merged low terracotta roof quarters.",
+      "manifest": "/models/buildings/cite-de-carcassonne.json",
+      "documentation": "docs/assets/top-cities-cite-de-carcassonne.md",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cite-de-carcassonne/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cite-de-carcassonne --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-09; no mesh captures, textures or bitmap content. Geographic outlines derived from OpenStreetMap contributors, ODbL 1.0, using the supplied dossier and one bounded OSM API map extract after the shared Overpass helper failed. Reference-only Commons photographs: Chensiyuan, Diego Delso, Lynx1211, PIERRE ANDRE LECLERCQ and Krzysztof Golik, all CC BY-SA 4.0; retained only in ignored tmp/.",
+        "references": [
+          {
+            "label": "Centre des monuments nationaux — iconographic silhouette, Narbonnaise towers 30 m",
+            "url": "https://www.remparts-carcassonne.fr/decouvrir/une-silhouette-iconique"
+          },
+          {
+            "label": "Carcassonne Tourism — 52 towers, 3 km of double ramparts",
+            "url": "https://www.tourisme-carcassonne.fr/decouvrir/la-cite-medievale/"
+          },
+          {
+            "label": "Ville de Carcassonne — Narbonnaise gateway",
+            "url": "https://www.carcassonne.fr/article-page/porte-narbonnaise"
+          },
+          {
+            "label": "OpenStreetMap — Narbonnaise outline",
+            "url": "https://www.openstreetmap.org/way/26769971"
+          },
+          {
+            "label": "OpenStreetMap — Saint-Nazaire outline",
+            "url": "https://www.openstreetmap.org/way/26769986"
+          },
+          {
+            "label": "File:1 carcassonne aerial 2016.jpg — Chensiyuan, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:1_carcassonne_aerial_2016.jpg"
+          },
+          {
+            "label": "File:Ciudadela, Carcasona, Francia, 2023-01-07, DD 216-218 HDR.jpg — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ciudadela,_Carcasona,_Francia,_2023-01-07,_DD_216-218_HDR.jpg"
+          },
+          {
+            "label": "File:Cité de Carcassonne – Vue depuis le Pont-Vieux.jpg — Lynx1211, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cit%C3%A9_de_Carcassonne_%E2%80%93_Vue_depuis_le_Pont-Vieux.jpg"
+          },
+          {
+            "label": "File:Carcassonne, Vue générale de la cité Médiévale.jpg — PIERRE ANDRE LECLERCQ, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Carcassonne,_Vue_g%C3%A9n%C3%A9rale_de_la_cit%C3%A9_M%C3%A9di%C3%A9vale.jpg"
+          },
+          {
+            "label": "File:Porte Narbonnaise Carcassone.jpg — Krzysztof Golik, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Porte_Narbonnaise_Carcassone.jpg"
+          },
+          {
+            "label": "File:Ramparts of the historic fortified city of Carcassone 12.jpg — Krzysztof Golik, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ramparts_of_the_historic_fortified_city_of_Carcassone_12.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cite-de-carcassonne/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cite-de-carcassonne",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=cite-de-carcassonne&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=cite-de-carcassonne&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=cite-de-carcassonne&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=cite-de-carcassonne&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=cite-de-carcassonne&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=cite-de-carcassonne&view=detail"
+          }
+        ]
+      },
+      "notes": "The modern restored exterior, not a reconstruction of the pre-restoration medieval state. Horizontal outlines are mapped; all curtain heights, ordinary tower eaves/cone heights, the 28 m Pinte shaft and enlarged keep, castle and basilica roof profiles are estimates. Twin Narbonnaise tips are 30 m as published by CMN. Gateway circular archetypes have explicit enlarged replacement rings; ordinary tower drums are 18% fuller and eaves remain within a documented 4 m ownership-envelope tolerance. 49 tower volumes and three barbicans approximate the published 52 towers/defensive forms; no surveyed tower-by-tower elevations. Arrow slits and masonry joints are offset quads near only, not carved holes. Floodlighting is a warm material surrogate, not physical lights. Far drops collars, joints, window slits and alternate small battlements. Individual houses are approximated by nine aggregate low roof quarters; trees, hill/scarp, drawbridge detail and interior furnishings are omitted. Independent reviewer and runtime terrain checks remain separate. Review revision: ordinary cone rises 7–7.7 m → 9–10.2 m; Narbonnaise shafts diameter 14.3 → 17.2 m, cone rise 9 → 11 m with tips still at the CMN 30 m; western keep eaves 17 → 24 m and ridge 21 → 30 m; stone palette shifted toward ochre/gold and slate lightened. The 32.2 m Tréseau apex is an estimated ordinary-tower restoration silhouette, not a published survey.",
+      "city": "Carcassonne",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
