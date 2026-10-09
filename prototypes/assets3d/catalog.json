@@ -17472,6 +17472,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "basilique-saint-sernin",
+      "name": "Basilique Saint-Sernin",
+      "kind": "building",
+      "location": "Place Saint-Sernin, Toulouse, France",
+      "status": "ready",
+      "description": "Romanesque basilica in Toulouse: brick and pale stone, stepped tiled nave and broad transept, radiating chevet chapels, five solid brick octagonal belfry tiers with recessed bays and a slate spire, and the detached stone Renaissance abbey gate.",
+      "manifest": "/models/buildings/basilique-saint-sernin.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/basilique-saint-sernin/geometry.js",
+        "build": "pnpm build:top-cities-landmarks basilique-saint-sernin --no-check",
+        "provenance": "Original procedural Three.js geometry authored 2026-10-09. Mapped building outlines and parts © OpenStreetMap contributors, ODbL 1.0; dossier supplied 2026-10-09. Reference photos were compared only and are not shipped: Wikimedia Commons ‘Basilique Saint-Sernin de Toulouse nef et transept sud, clocher.jpg’ and ‘Basilique Saint-Sernin de Toulouse - exposition ouest-1-.jpg’ and ‘31 - Toulouse - Basilique Saint-Sernin - Porte Renaissance de l’abbaye.jpg’, Didier Descouens, CC BY-SA 4.0; ‘Basilique de Saint-Sernin 4.jpg’, Guiguilacagouille, CC BY-SA 3.0 (dossier licence). No scan, third-party mesh, photo or texture is included.",
+        "references": [
+          {
+            "label": "Toulouse Mairie Métropole: identity and dimensions",
+            "url": "https://metropole.toulouse.fr/annuaire/basilique-saint-sernin"
+          },
+          {
+            "label": "Basilica official site: plan and nave",
+            "url": "https://basilique-saint-sernin.fr/saint-sernin-parcours1fr/"
+          },
+          {
+            "label": "Toulouse Tourisme: current Othoniel rose window",
+            "url": "https://www.toulouse-tourisme.com/en/activite/saint-sernin-basilica/"
+          },
+          {
+            "label": "OSM church outline",
+            "url": "https://www.openstreetmap.org/way/260584755"
+          },
+          {
+            "label": "Tower photo · Didier Descouens · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique_Saint-Sernin_de_Toulouse_nef_et_transept_sud,_clocher.jpg"
+          },
+          {
+            "label": "West facade · Didier Descouens · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg"
+          },
+          {
+            "label": "Abbey gate · Didier Descouens · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:31_-_Toulouse_-_Basilique_Saint-Sernin_-_Porte_Renaissance_de_l%27abbaye.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilique-saint-sernin/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=basilique-saint-sernin&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=overview"
+          },
+          {
+            "label": "West facade",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=facade"
+          },
+          {
+            "label": "East chevet",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=chevet"
+          },
+          {
+            "label": "Roofs and mapped outline",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=roof"
+          },
+          {
+            "label": "South nave",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=street"
+          },
+          {
+            "label": "Open octagonal belfry",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=tower"
+          },
+          {
+            "label": "West portals and rose",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=portal"
+          },
+          {
+            "label": "Renaissance gate",
+            "url": "/asset-preview.html?asset=basilique-saint-sernin&view=gate"
+          }
+        ]
+      },
+      "notes": "Official tower 65 m; OSM tag 67 m is superseded. Official nominal length 115 m and transept 64 m; model fits the mapped approximately 110 × 63 m envelope. OSM eaves/roof heights are mapping estimates. Independent-review revision: five brick octagonal stages with smaller paired round/mitred bays, dark recessed backing, thin pale archivolts/stringcourses and grey-slate spire; lower stone/brick banding, stone Miégeville surround and authentic Renaissance gate; transept trim attached to mapped wall edges, unsupported corner vents omitted; contrasting tile pitches and attached ridge caps retained in far. Estimated bay spacing, capitals, continuous roof tiles, geometric rose glazing and omitted sculpture/interiors. Dark is dim masonry without invented illumination. The detached south-plan feature is the real mapped Renaissance gate, not a stray mesh. Fresh Overpass verification had returned HTTP 403; the supplied full dossier is the placement source. Current focused tests and shared catalog pass; deterministic QA has no flagged issues. Local inspection does not establish app placement or hardware performance. Near: 36,006 triangles / 8 draws / 2,317,004 bytes (2,263 KiB). Far: 8,056 triangles / 8 draws / 375,172 bytes (366 KiB).",
+      "documentation": "docs/assets/top-cities-basilique-saint-sernin.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

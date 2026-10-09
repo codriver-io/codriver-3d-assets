@@ -1,9 +1,14 @@
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, MANIFEST } from './config.js';
+import { THETA } from './basilique-saint-sernin-plan.js';
+import { makeKit } from './basilique-saint-sernin-kit.js';
+import { buildBasilica } from './basilique-saint-sernin-build.js';
 
-// STUB placeholder massing; the builder replaces it with the landmark.
 export function create({ detail = 'near' } = {}) {
-  const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  b.box('stone', [0, SPEC.height / 2, 0], [20, SPEC.height, 20]);
-  return b.finish();
+  const b=assetBuilder({...SPEC,palette:PALETTES.light},detail);
+  buildBasilica(makeKit(b,detail==='near'));
+  const root=b.finish();
+  root.traverse(o=>{if(!o.isMesh)return;o.geometry.deleteAttribute('bridgeLift');o.geometry.rotateY(THETA);o.geometry.computeBoundingBox();o.geometry.computeBoundingSphere();});
+  root.userData.elevationDatum=MANIFEST.elevationDatum;
+  return root;
 }
