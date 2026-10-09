@@ -1,0 +1,65 @@
+{
+  "id": "bryggen",
+  "name": "Bryggen",
+  "kind": "building",
+  "origin": [
+    5.323184,
+    60.397329
+  ],
+  "height": 16.25,
+  "padM": 90,
+  "frontageBearing": 219.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Front-row tenements only, one unbroken quay line. Per-house ridges follow OSM height (12–16 m) except ways 331274562 and 331274575 (no height tag; ridges estimated at 15 m and 13 m) and the unmapped closure between 292320261 and 331274562 (ochre, ridge 14 m). Paint follows the quay panorama: oxblood dominant, white, ochre, one pink. Most roofs are dark red-brown tile; a few are grey-brown. The shop floor is set 0.82 m back under the jetty; eaves cross the mapped wall by about 0.24 m.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bryggen-near.glb",
+      "bytes": 1744824,
+      "triangles": 22218,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -61.32761001586914,
+          0,
+          -57.46863555908203
+        ],
+        "max": [
+          49.52546691894531,
+          16.15999984741211,
+          40.48088073730469
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bryggen-far.glb",
+      "bytes": 484080,
+      "triangles": 6092,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -61.32761001586914,
+          0,
+          -57.46863555908203
+        ],
+        "max": [
+          49.52546691894531,
+          16.15999984741211,
+          40.48088073730469
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bryggen/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

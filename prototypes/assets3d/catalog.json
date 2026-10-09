@@ -16309,6 +16309,105 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bryggen",
+      "name": "Bryggen",
+      "kind": "building",
+      "location": "Bryggen, Vågen, Bergen",
+      "status": "ready",
+      "description": "The front row of Hanseatic wooden tenements on the east side of Vågen: sixteen tall gabled houses in one unbroken line, mostly oxblood with white, ochre and one pink, dark red-brown tile roofs, and shopfronts set back under a jetty.",
+      "manifest": "/models/buildings/bryggen.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bryggen/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bryggen",
+        "provenance": "Original procedural geometry. Footprints and per-house height and roof:height from OpenStreetMap ways 488690084, 331274578, 331274560, 331274567, 292320260, 292320261, 331274562, 331274574, 331274575, 331274541, 331274582, 488690088, 488690087, 292320275 and 292320266 (© OpenStreetMap contributors, ODbL 1.0). Ways 331274562 and 331274575 have no height or colour tag (ridges estimated at 15 m and 13 m). The gable between 292320261 and 331274562 is an authored closure: OSM has no waterfront polygon there. Wall colours follow the quay panoramas (oxblood, white, ochre, one pink), and roofs are dark red-brown tile with three grey-brown houses. Photographs used only as local comparison images, not shipped: Diego Delso, CC BY-SA 4.0 (two panoramas); TimOve, CC BY 2.0; Gerd A.T. Mueller, CC BY-SA 3.0; Balou46, CC BY-SA 4.0; Stch2022, CC0. No third-party mesh, scan, photograph or texture is in the GLBs.",
+        "references": [
+          {
+            "label": "Bryggen · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Bryggen"
+          },
+          {
+            "label": "Bryggen · UNESCO World Heritage List",
+            "url": "https://whc.unesco.org/en/list/59/"
+          },
+          {
+            "label": "Stiftelsen Bryggen",
+            "url": "https://stiftelsenbryggen.no/"
+          },
+          {
+            "label": "OSM way 488690084 · north end of the quay row",
+            "url": "https://www.openstreetmap.org/way/488690084"
+          },
+          {
+            "label": "OSM way 331274575 · restored quay tenement",
+            "url": "https://www.openstreetmap.org/way/331274575"
+          },
+          {
+            "label": "Bryggen panorama · Diego Delso (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bryggen,_Bergen,_Noruega,_2019-09-08,_DD_118-121_PAN.jpg"
+          },
+          {
+            "label": "Bryggen from the quay · Diego Delso (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bryggen,_Bergen,_Noruega,_2019-09-08,_DD_115-117_PAN.jpg"
+          },
+          {
+            "label": "National day at Bryggen · TimOve (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Norwegian_national_day_at_Bryggen_with_Ulriken_in_the_horizon.jpg"
+          },
+          {
+            "label": "Bryggen 2005 · Gerd A.T. Mueller (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Brygge_Norway_2005-08-18.jpg"
+          },
+          {
+            "label": "Bryggen row · Balou46 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:NO-bergen-bryggen-02.jpg"
+          },
+          {
+            "label": "Bryggen from the harbour, 2026 · Stch2022 (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Bryggen_buidlings_in_Bergen,_Norway_in_2026.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bryggen/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=bryggen&view=overview",
+        "views": [
+          {
+            "label": "Quay row from the harbour",
+            "url": "/asset-preview.html?asset=bryggen&view=overview"
+          },
+          {
+            "label": "Gables",
+            "url": "/asset-preview.html?asset=bryggen&view=facade"
+          },
+          {
+            "label": "Roofs",
+            "url": "/asset-preview.html?asset=bryggen&view=roof"
+          },
+          {
+            "label": "Along the quay",
+            "url": "/asset-preview.html?asset=bryggen&view=street"
+          },
+          {
+            "label": "A gable close up",
+            "url": "/asset-preview.html?asset=bryggen&view=detail"
+          },
+          {
+            "label": "Inland ends",
+            "url": "/asset-preview.html?asset=bryggen&view=back"
+          }
+        ]
+      },
+      "notes": "Sourced: OSM height is the ridge (12–16 m) and roof:height is the gable above the eave. Estimated: way 331274562 (no height or colour; ridge 15 m, red), way 331274575 (no height or colour; ridge 13 m, red, quay block only), the unmapped ochre closure between 292320261 and 331274562 (ridge 14 m), the 0.82 m shop recess, eaves about 0.24 m past the mapped wall, and a slight lean. Paint follows the quay panoramas: oxblood dominant, several white, ochre, one pink. Roofs are dark red-brown tile, with grey-brown tile on 488690084, 331274541 and 292320266. The south continuation and the second rank of tenements are not in this model; 331274574 and 331274541 stay shallow (about 11 m). Far LOD keeps the quay windows and a simpler inland grid, drops side-lane windows, and merges pink into red.",
+      "documentation": "docs/assets/top-cities-bryggen.md",
+      "city": "Bergen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
