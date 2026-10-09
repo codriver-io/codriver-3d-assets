@@ -17563,6 +17563,117 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "couvent-des-jacobins",
+      "name": "Couvent des Jacobins",
+      "kind": "building",
+      "location": "Place des Jacobins, Toulouse, France",
+      "status": "ready",
+      "description": "Southern French Gothic brick church with three octagonal spired west turrets, twin roses, buttressed nave, four open tapering octagonal mitre-arch belfry tiers, projecting pinnacled crown and north cloister with convent halls.",
+      "manifest": "/models/buildings/couvent-des-jacobins.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/couvent-des-jacobins/geometry.js",
+        "build": "pnpm build:top-cities-landmarks couvent-des-jacobins --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-09; no scans, textures or external meshes. OSM-derived mapped outlines © OpenStreetMap contributors (ODbL 1.0), assembled by node IDs from three relation API responses after the shared Overpass helper returned HTTP 403. Reference photos viewed only in ignored tmp: File:Toulouse - Jacobins et ND du Taur.jpg: Frédéric Neupont, CC BY-SA 4.0; File:Couvent des Jacobins de Toulouse.jpg: Didier Descouens, CC BY-SA 4.0; File:La façade des Jacobins - panoramio.jpg: Pistolero, CC BY 3.0; File:Toulouse - Clocher des Jacobins.jpg: Frédéric Neupont, CC BY-SA 4.0; File:Couvent des Jacobins (Toulouse) (1).jpg: Gzen92, CC BY-SA 4.0; File:Toulouse. Ensemble conventuel des Jacobins Eglise des Jacobins, exterieur, GD003745.jpg: Unknown authorUnknown author, Public domain; Cloitre des Jacobins (panorama 2): Pom², CC BY-SA 3.0.",
+        "references": [
+          {
+            "label": "Official architecture: 45 m belfry, four paired mitre tiers, 160 cloister colonnettes",
+            "url": "https://jacobins.toulouse.fr/fr/architecture-couvent-des-jacobins-toulouse/"
+          },
+          {
+            "label": "Official highlights: 28 m palmier and refectory dimensions",
+            "url": "https://jacobins.toulouse.fr/fr/incontournables-jacobins-toulouse/"
+          },
+          {
+            "label": "File:Toulouse - Jacobins et ND du Taur.jpg (Frédéric Neupont, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Jacobins_et_ND_du_Taur.jpg"
+          },
+          {
+            "label": "File:Couvent des Jacobins de Toulouse.jpg (Didier Descouens, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Couvent_des_Jacobins_de_Toulouse.jpg"
+          },
+          {
+            "label": "File:La façade des Jacobins - panoramio.jpg (Pistolero, CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:La_fa%C3%A7ade_des_Jacobins_-_panoramio.jpg"
+          },
+          {
+            "label": "File:Toulouse - Clocher des Jacobins.jpg (Frédéric Neupont, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Clocher_des_Jacobins.jpg"
+          },
+          {
+            "label": "File:Couvent des Jacobins (Toulouse) (1).jpg (Gzen92, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Couvent_des_Jacobins_(Toulouse)_(1).jpg"
+          },
+          {
+            "label": "File:Toulouse. Ensemble conventuel des Jacobins Eglise des Jacobins, exterieur, GD003745.jpg (Unknown authorUnknown author, Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse._Ensemble_conventuel_des_Jacobins_Eglise_des_Jacobins,_exterieur,_GD003745.jpg"
+          },
+          {
+            "label": "Cloître panorama (Pom², CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Cloitre_des_Jacobins_(panorama_2).jpg"
+          },
+          {
+            "label": "OSM relation 1562254",
+            "url": "https://www.openstreetmap.org/relation/1562254"
+          },
+          {
+            "label": "OSM relation 1605505",
+            "url": "https://www.openstreetmap.org/relation/1605505"
+          },
+          {
+            "label": "OSM relation 1605509",
+            "url": "https://www.openstreetmap.org/relation/1605509"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/couvent-des-jacobins/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=couvent-des-jacobins&view=facade",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=facade"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=south"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=entrance"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=tower"
+          },
+          {
+            "label": "Cloister",
+            "url": "/asset-preview.html?asset=couvent-des-jacobins&view=cloister"
+          }
+        ]
+      },
+      "notes": "Official tower 45 m overrides OSM height=49; exterior nave roof 32 m, interior palmier 28 m (not modeled). Independent review fixes: square corner pinnacles replaced by octagonal turret shafts and eight-sided tile spires to 36.5 m, center turret 38.5 m; belfry tiers taper 7.48 to 6.88 m flat-to-flat beneath a 7.96 m projecting pierced crown and larger pinnacles; tile roof is darker red-brown; west and north refectory facades have eleven new pointed openings. All revised dimensions are photographic estimates. Nave buttress depth retains its mapped envelope. Simplified convent/annex roofs, glazing and carving; interiors, garden vegetation and temporary works omitted. Near 160 cloister shafts; far 80 paired shafts and the courtyard void. Both LODs and themes visually judged against dossier photographs in the revision comparison sheet. Numeric QA: no flagged artifact, zero back-face hits and no removable attributes; five small coincident candidates below threshold at the belfry/nave junction. Near 42735 triangles / 7 draws / 1844472 bytes (1801.2 KiB). Far 11527 triangles / 7 draws / 493892 bytes (482.3 KiB). Both placement modes remain not tested yet, integration is checked separately.",
+      "documentation": "docs/assets/top-cities-couvent-des-jacobins.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

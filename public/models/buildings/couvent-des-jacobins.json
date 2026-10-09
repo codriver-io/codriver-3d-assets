@@ -1,0 +1,65 @@
+{
+  "id": "couvent-des-jacobins",
+  "name": "Couvent des Jacobins",
+  "kind": "building",
+  "origin": [
+    1.44023,
+    43.60349
+  ],
+  "height": 45,
+  "padM": 115,
+  "frontageBearing": 261.01,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat pavement y=0; rigid monastery foundation, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Official Couvent site: octagonal belfry 45 m and four tiers of paired mitre arches; OSM tags 49 m, superseded by official height. Nave exterior roof 32 m follows OSM; vault height 28 m is a separate interior measurement. Convent hall heights, buttress profiles, window tracery and tiled roof relief are estimates from photographs. Temporary works and interiors omitted. Flat central Toulouse site; Full 3D world rigid foundation/pad placement is not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/couvent-des-jacobins-near.glb",
+      "bytes": 1845000,
+      "triangles": 42735,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -52.416080474853516,
+          -3.814697322468419e-7,
+          -102.09110260009766
+        ],
+        "max": [
+          43.85352325439453,
+          45,
+          19.469650268554688
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/couvent-des-jacobins-far.glb",
+      "bytes": 494420,
+      "triangles": 11527,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -52.416080474853516,
+          -9.536743306171047e-8,
+          -102.09110260009766
+        ],
+        "max": [
+          43.85352325439453,
+          45,
+          19.469650268554688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/couvent-des-jacobins/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
