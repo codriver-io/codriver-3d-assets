@@ -16926,6 +16926,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "astrup-fearnley-museum",
+      "name": "Astrup Fearnley Museum of Modern Art",
+      "kind": "building",
+      "location": "Strandpromenaden 2, Tjuvholmen, Oslo, Norway",
+      "city": "Oslo",
+      "status": "ready",
+      "description": "Renzo Piano’s 2012 Tjuvholmen museum: three weathered grey-brown timber pavilions under one swept glass sail that rises from the sculpture-park lip toward two canal gables, with a quay footbridge, a glazed skybridge and tall dark office glazing with selective amber blinds.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/astrup-fearnley-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks astrup-fearnley-museum --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-08; no third-party mesh or texture. Footprints from OpenStreetMap ways 1039892347, 1039892620, 218345909, 156850509, 911296361, 911296363, 911553420 and 911553421, © OpenStreetMap contributors, ODbL 1.0. The English Wikipedia coordinate is about 1.3 km too far east and was not used. Reference sheet viewed: Holger Uwe Schmitt, canal and fjord views (CC BY-SA 4.0); Ottestad, entrance, canal and office (CC BY-SA 3.0); Alhill42, timber and roof grid (CC BY-SA 4.0). Photographs stay in ignored tmp and are never shipped.",
+        "references": [
+          {
+            "label": "Fondazione Renzo Piano: 25 m, 2012, site and floor areas",
+            "url": "https://www.fondazionerenzopiano.org/en/project/astrup-fearnley-museum-of-modern-art/"
+          },
+          {
+            "label": "Astrup Fearnley Museet: the museum building",
+            "url": "https://www.afmuseet.no/en/the-museum-building/"
+          },
+          {
+            "label": "OSM museum node Astrup Fearnley Museet",
+            "url": "https://www.openstreetmap.org/node/1931359713"
+          },
+          {
+            "label": "OSM north glass roof way/1039892347",
+            "url": "https://www.openstreetmap.org/way/1039892347"
+          },
+          {
+            "label": "Holger Uwe Schmitt, fjord view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:%22Stararchitekt%22_Renzo_Piano_entwarf_die_neuen_Geb%C3%A4ude_des_Astrup_Fearnley_Museums._10.jpg"
+          },
+          {
+            "label": "Ottestad, canal and office, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Astrup_Fearnley_Museum_of_Modern_Art.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/astrup-fearnley-museum/geometry.js"
+      },
+      "notes": "Published height 25 m (Fondazione Renzo Piano). OSM part heights 20 / 16 / 8 / 4 m and roof tags 20 m and 8 m set the timber volumes and the low park eave. The sail profile between those anchors, glulam spacing, column rhythm, punched-window pitch and the canal footbridge and skybridge are estimated from the attributed photographs. Opaque glass stands in for the double skin. No lettering, sculpture-park artworks, or the separate 84 m Tjuvtitten tower. The English Wikipedia pin (10.74417, 59.9075) is wrong for this building. Near 15732 triangles / 9 draws / 1157772 bytes; far 3132 / 7 / 232340 bytes. Independent review PASS-WITH-NITS, recognition 4/5; corrected pale timber to weathered grey-brown and orange window dots to taller dark glazing with selective muted amber blinds on 2026-10-08. Exported near/far day and night sheets inspected; no budget or artifact flags in deterministic QA. Cityscape and Full 3D world integration remain untested.",
+      "documentation": "docs/assets/top-cities-astrup-fearnley-museum.md",
+      "manifest": "/models/buildings/astrup-fearnley-museum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=facade"
+          },
+          {
+            "label": "water",
+            "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=water"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=roof"
+          },
+          {
+            "label": "canal",
+            "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=canal"
+          },
+          {
+            "label": "park",
+            "url": "/asset-preview.html?asset=astrup-fearnley-museum&view=park"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

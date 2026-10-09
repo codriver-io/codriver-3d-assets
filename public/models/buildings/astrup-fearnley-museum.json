@@ -1,0 +1,65 @@
+{
+  "id": "astrup-fearnley-museum",
+  "name": "Astrup Fearnley Museum of Modern Art",
+  "kind": "building",
+  "origin": [
+    10.721644,
+    59.907011
+  ],
+  "height": 25,
+  "padM": 78,
+  "frontageBearing": 45,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local quay grade y=0 on the flat Peregrine basemap. No terrain, sea level or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published height 25 m (Fondazione Renzo Piano). OSM part heights 20 / 16 / 8 / 4 m and roof tags 20 m and 8 m are kept for the timber volumes and the low park eave. Peak spacing, glulam spacing, column rhythm, canal bridges and the sail profile between those anchors are estimated from attributed photographs. No textures or external meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/astrup-fearnley-museum-near.glb",
+      "bytes": 1158300,
+      "triangles": 15732,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -36.559566497802734,
+          -2.484283356807282e-7,
+          -51.875247955322266
+        ],
+        "max": [
+          48.00187683105469,
+          25.119571685791016,
+          51.42924880981445
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/astrup-fearnley-museum-far.glb",
+      "bytes": 232872,
+      "triangles": 3132,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -36.559566497802734,
+          -2.484283356807282e-7,
+          -51.875247955322266
+        ],
+        "max": [
+          48.00187683105469,
+          25.119571685791016,
+          51.42924880981445
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/astrup-fearnley-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
