@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (73 released)
+## The collection (74 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -74,6 +74,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `holmenkollbakken` | Holmenkollbakken | Oslo | building |
 | `munch-museum` | MUNCH (Munch Museum) | Oslo | building |
 | `akershus-fortress` | Akershus Fortress | Oslo | building |
+| `astrup-fearnley-museum` | Astrup Fearnley Museum of Modern Art | Oslo | building |
 | `bryggen` | Bryggen | Bergen | building |
 | `nidaros-cathedral` | Nidaros Cathedral | Trondheim | building |
 | `arctic-cathedral` | Arctic Cathedral | Tromsø | building |

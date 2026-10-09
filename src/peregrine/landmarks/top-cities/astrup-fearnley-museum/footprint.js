@@ -1,4 +1,27 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// Astrup Fearnley Museet, Tjuvholmen. The English Wikipedia coordinate
+// (59.90750, 10.74417) sits about 1.3 km east, by Havnelageret; these rings are
+// the 2012 Renzo Piano complex. © OpenStreetMap contributors, ODbL 1.0.
+// https://www.openstreetmap.org/copyright
+//
+// Order: north glass roof, south glass roof, museum outline, north-building
+// outline, museum parts (8 m, 4 m), north parts (20 m, 16 m).
+export const OSM_WAYS = [1039892347, 1039892620, 218345909, 156850509, 911296361, 911296363, 911553420, 911553421];
+
+export const FOOTPRINTS = [
+  // way/1039892347 building=roof, layer 2, tagged height 20 (skillion). North sail.
+  [[10.72182, 59.907132], [10.722127, 59.907289], [10.721409, 59.907477], [10.720989, 59.907103], [10.72145, 59.906822], [10.721567, 59.90688], [10.721457, 59.906946]],
+  // way/1039892620 building=roof, layer 2, tagged height 8. South sail over the museum and the park tip.
+  [[10.721567, 59.90688], [10.72145, 59.906822], [10.721282, 59.906735], [10.721208, 59.906697], [10.721015, 59.906597], [10.721275, 59.906549], [10.722504, 59.906879], [10.722183, 59.907197]],
+  // way/218345909 building=museum, relation/12370134 outline.
+  [[10.7213309, 59.9065911], [10.7211824, 59.9066192], [10.7212871, 59.9066719], [10.7221869, 59.9071245], [10.722273, 59.9070668], [10.7222233, 59.9070417], [10.722447, 59.9068945], [10.7218816, 59.9067404]],
+  // way/156850509 building=yes, height 15, relation/12373875 outline (office and gallery).
+  [[10.7213594, 59.9069622], [10.7210943, 59.9071198], [10.7214674, 59.9074447], [10.7216362, 59.9073968], [10.7216219, 59.9073841], [10.7217148, 59.9073585], [10.7218159, 59.90733], [10.7218355, 59.9073403], [10.7219538, 59.9072654]],
+  // way/911296361 building:part, 2 levels, height 8.
+  [[10.7221869, 59.9071245], [10.722273, 59.9070668], [10.7217713, 59.9068139], [10.7218816, 59.9067404], [10.7213309, 59.9065911], [10.7211824, 59.9066192], [10.7212871, 59.9066719]],
+  // way/911296363 building:part museum, 1 level, height 4.
+  [[10.722447, 59.9068945], [10.7218816, 59.9067404], [10.7217713, 59.9068139], [10.7222233, 59.9070417]],
+  // way/911553420 building:part, 5 levels, height 20, skillion.
+  [[10.7216219, 59.9073841], [10.7218159, 59.90733], [10.7218355, 59.9073403], [10.7219538, 59.9072654], [10.7213594, 59.9069622], [10.7212308, 59.9070388], [10.7212997, 59.9070999], [10.7213413, 59.9070737], [10.7217108, 59.907261], [10.7215358, 59.9073081]],
+  // way/911553421 building:part, 4 levels, height 16.
+  [[10.7214674, 59.9074447], [10.7216362, 59.9073968], [10.7212308, 59.9070388], [10.7210943, 59.9071198]],
+];
