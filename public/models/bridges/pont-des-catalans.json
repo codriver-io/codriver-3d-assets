@@ -1,0 +1,66 @@
+{
+  "id": "pont-des-catalans",
+  "name": "Pont des Catalans",
+  "kind": "bridge",
+  "origin": [
+    1.427967,
+    43.603224
+  ],
+  "height": 21.8,
+  "padM": 150,
+  "frontageBearing": 2.8,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map river/grade y=0; deck 16 m is a photograph estimate, not sea-level altitude. Terrain bank-fit interpolates the mapped banks, with separate validation limitations.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "257.21 m structure, 22.50 m deck, twin 3.25 m masonry rings separated by 9.90 m (DRAC). Five openings 38.5/42/46/42/38.5 m. Estimated vertical dimensions, cutwater profiles, arched spandrel openings, masonry joints and modern fittings. 220 m flat-map ramps; no textures or reference meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-des-catalans-near.glb",
+      "bytes": 1994716,
+      "triangles": 44240,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -17.78728675842285,
+          -0.20000000298023224,
+          -344.3359069824219
+        ],
+        "max": [
+          93.29011535644531,
+          21.825000762939453,
+          327.62744140625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-des-catalans-far.glb",
+      "bytes": 598636,
+      "triangles": 14328,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -17.811988830566406,
+          -0.20000000298023224,
+          -344.3359069824219
+        ],
+        "max": [
+          93.29011535644531,
+          21.825000762939453,
+          327.62744140625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-des-catalans/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

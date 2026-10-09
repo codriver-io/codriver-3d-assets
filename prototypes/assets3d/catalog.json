@@ -17191,6 +17191,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-des-catalans",
+      "name": "Pont des Catalans",
+      "kind": "bridge",
+      "location": "Garonne · Toulouse, France",
+      "status": "ready",
+      "description": "Five paired masonry arches, small semicircular spandrel openings and banded, flared and pointed cutwaters under a broad concrete road deck with green iron balustrades and twin lanterns. Original procedural road-fitted model of the current bridge.",
+      "manifest": "/models/bridges/pont-des-catalans.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-des-catalans/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-des-catalans --no-check",
+        "provenance": "Original procedural authoring, 2026-10-09. OSM dossier roadway and outline © OpenStreetMap contributors, ODbL 1.0. Reference photographs: Pont des Catalans nuit.JPG by Maxime Lafage (CC BY-SA 3.0); Toulouse - Pont des Catalans -2.JPG by MOSSOT (CC BY-SA 3.0); Pont des Catalans - Fonds Trutat - MHNT.PHa.138.b34.002.jpg by Eugène Trutat (public domain); Pont des Catalans, Garonne, Toulouse - panoramio.jpg by M.Strīķis (CC BY-SA 3.0). Consulted solely as visual references, kept in ignored scratch; no photo, texture, scan or third-party mesh is shipped.",
+        "references": [
+          {
+            "label": "DRAC Occitanie: historic monument description and dimensions",
+            "url": "https://www.culture.gouv.fr/content/download/208610/2204747"
+          },
+          {
+            "label": "Toulouse filming office: current bridge and opening spans",
+            "url": "https://www.toulouse-tournages.fr/decor/pont-des-catalans/"
+          },
+          {
+            "label": "OSM mapped bridge outline",
+            "url": "https://www.openstreetmap.org/way/108979310"
+          },
+          {
+            "label": "Commons: daylight detail, MOSSOT, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont_des_Catalans_-2.JPG"
+          },
+          {
+            "label": "Commons: night lighting, Maxime Lafage, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_des_Catalans_nuit.JPG"
+          },
+          {
+            "label": "Commons: construction, Eugène Trutat, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_des_Catalans_-_Fonds_Trutat_-_MHNT.PHa.138.b34.002.jpg"
+          },
+          {
+            "label": "Commons: downstream side, M.Strīķis, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_des_Catalans,_Garonne,_Toulouse_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-des-catalans/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-des-catalans",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-des-catalans&view=detail"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-pont-des-catalans.md",
+      "notes": "Deck elevation 16 m, rise 9.75 m, arched spandrel openings, cutwater details and fittings are photo estimates. 45 m is not a Catalans height: the DRAC document uses it for Pont Adolphe. Structure extends 4.27 m past each mapped roadway endpoint to match published length. 220 m flat approach ramps peak at 10.91%; their embankments are a flat-map convention. Night floodlighting is represented by a narrow warm arch wash. No measured hardware performance. Review revision: near 77,856 to 44,240 triangles (below 55k); far 20,880 to 14,328; coplanar pairs 277 to zero, back-face sweep zero. Thin exterior arch/joint surfaces replace hidden solids, eight recessed pier courses and cutwater tips strengthen the supports, and dark corbels support the overhang. Far folds geometry by material, uses two major pier courses and merged baluster faces, and omits brick joints.",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
