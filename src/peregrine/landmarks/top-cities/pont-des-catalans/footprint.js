@@ -1,4 +1,5 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+import alignment from './pont-des-catalans-alignment.js';
+// Bridge inspection outline; no building=* extrusion occurs on this deck.
+// © OpenStreetMap contributors, ODbL 1.0.
+export const FOOTPRINTS = [alignment.outline];
+export const OSM_WAYS = alignment.wayIds;
