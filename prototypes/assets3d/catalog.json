@@ -16843,6 +16843,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "borgund-stave-church",
+      "name": "Borgund Stave Church (Borgund stavkyrkje)",
+      "kind": "building",
+      "location": "Vindhella 606 · Borgund, Lærdal, Vestland, Norway",
+      "status": "ready",
+      "description": "Medieval tarred-wood stave church: steep layered scale-shingled roofs, pierced dragon-head ridge finials, a diminishing three-stage ridge turret, rounded eastern apse, timber corner staves and the low covered external gallery with open slit bays and gabled portals.",
+      "manifest": "/models/buildings/borgund-stave-church.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/borgund-stave-church/geometry.js",
+        "build": "pnpm build:top-cities-landmarks borgund-stave-church --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-08; no external mesh, scan, photograph or texture shipped. Geographic plan from prepared OpenStreetMap way 557505485, © OpenStreetMap contributors, ODbL 1.0. Reference photos remain in ignored tmp/: Borgund Stave Church in Lærdalen, 2013 June (Ximonic / Simo Räsänen, CC BY-SA 3.0); Borgund stavechurch (JarleN, GFDL 1.2 or later); Borgund stavkirke 2016, ute, detalj-5 (Bjørn Erik Pedersen, CC BY-SA 4.0); 8334 Borgunds kirke i Lærdal (Knud Knudsen, public domain); Borgund-Churches-2020 (Bjørn Christian Tørrissen, CC BY-SA 4.0). Pierced dragon ornaments are original stylizations, not traced carvings.",
+        "references": [
+          {
+            "label": "Owner: medieval church, seven-tiered roofs, dragon heads, galleries, stave structure and 1180 date",
+            "url": "https://fortidsminneforeningen.no/en/museum/borgund-stave-church/"
+          },
+          {
+            "label": "Mapped medieval church envelope",
+            "url": "https://www.openstreetmap.org/way/557505485"
+          },
+          {
+            "label": "Identity and c.1200 date",
+            "url": "https://en.wikipedia.org/wiki/Borgund_Stave_Church"
+          },
+          {
+            "label": "Eastern apse and stacked roofs · Ximonic, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Borgund_Stave_Church_in_L%C3%A6rdalen,_2013_June.jpg"
+          },
+          {
+            "label": "Western oblique · JarleN, GFDL",
+            "url": "https://commons.wikimedia.org/wiki/File:Borgund_stavechurch.JPG"
+          },
+          {
+            "label": "Dragon carving detail · Bjørn Erik Pedersen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Borgund_stavkirke_2016,_ute,_detalj-5.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/borgund-stave-church/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=borgund-stave-church&view=overview",
+        "views": [
+          {
+            "label": "Southwest overview",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=overview"
+          },
+          {
+            "label": "West portal and gable",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=facade"
+          },
+          {
+            "label": "Eastern apse",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=back"
+          },
+          {
+            "label": "Layered roofs",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=roof"
+          },
+          {
+            "label": "South gallery portal",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=entrance"
+          },
+          {
+            "label": "Dragon and ridge turret",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=detail"
+          },
+          {
+            "label": "Mapped orientation",
+            "url": "/asset-preview.html?asset=borgund-stave-church&view=plan"
+          }
+        ]
+      },
+      "notes": "Church only, excluding the separate medieval bell tower, newer church, graveyard and visitor centre. OSM outer envelope about 16.5 × 11 m, axis bearing 76° (west front 256°). Overall 20 m height and all vertical subdivisions are photograph estimates, not surveyed or published dimensions. Scale shingles, gallery posts, board seams, open slit bays, door recesses and pierced dragons are modeled as geometry. Carvings and portals simplified; no interior or nighttime illumination claimed. Shared-helper OSM refresh returned HTTP 403; complete prepared dossier geometry was used. Independent review pending; no device benchmark. Final measured near 29,264 triangles / 6 draws / 1,405 KiB; far 5,924 / 6 / 297 KiB. Four-variant exported GLB comparison inspected against dossier reference photos; shingles corrected to outward-facing rooted geometry and explicit exposed edge closure. Far shingles coarse at close range. Deterministic QA has no issues; 2 m² small residual coplanar framing contacts, 0% back-face sweep hits.",
+      "documentation": "docs/assets/top-cities-borgund-stave-church.md",
+      "city": "Lærdal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
