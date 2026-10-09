@@ -341,6 +341,18 @@ import { MANIFEST as lm_cathedrale_sainte_cecile_albiManifest } from './cathedra
 import { OSM_WAYS as lm_cathedrale_sainte_cecile_albiWays } from './cathedrale-sainte-cecile-albi/footprint.js';
 import { create as lm_cathedrale_sainte_cecile_albiCreate } from './cathedrale-sainte-cecile-albi/geometry.js';
 import { VIEWS as lm_cathedrale_sainte_cecile_albiViews } from './cathedrale-sainte-cecile-albi/views.js';
+import { MANIFEST as lm_pont_saint_pierreManifest } from './pont-saint-pierre/config.js';
+import { OSM_WAYS as lm_pont_saint_pierreWays } from './pont-saint-pierre/footprint.js';
+import { create as lm_pont_saint_pierreCreate } from './pont-saint-pierre/geometry.js';
+import { VIEWS as lm_pont_saint_pierreViews } from './pont-saint-pierre/views.js';
+import { MANIFEST as lm_pont_saint_michelManifest } from './pont-saint-michel/config.js';
+import { OSM_WAYS as lm_pont_saint_michelWays } from './pont-saint-michel/footprint.js';
+import { create as lm_pont_saint_michelCreate } from './pont-saint-michel/geometry.js';
+import { VIEWS as lm_pont_saint_michelViews } from './pont-saint-michel/views.js';
+import { MANIFEST as lm_ponts_jumeauxManifest } from './ponts-jumeaux/config.js';
+import { OSM_WAYS as lm_ponts_jumeauxWays } from './ponts-jumeaux/footprint.js';
+import { create as lm_ponts_jumeauxCreate } from './ponts-jumeaux/geometry.js';
+import { VIEWS as lm_ponts_jumeauxViews } from './ponts-jumeaux/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -428,6 +440,9 @@ const authoring = {
   'couvent-des-jacobins': { manifest: lm_couvent_des_jacobinsManifest, osmWays: lm_couvent_des_jacobinsWays, create: lm_couvent_des_jacobinsCreate, views: lm_couvent_des_jacobinsViews },
   'cite-de-carcassonne': { manifest: lm_cite_de_carcassonneManifest, osmWays: lm_cite_de_carcassonneWays, create: lm_cite_de_carcassonneCreate, views: lm_cite_de_carcassonneViews },
   'cathedrale-sainte-cecile-albi': { manifest: lm_cathedrale_sainte_cecile_albiManifest, osmWays: lm_cathedrale_sainte_cecile_albiWays, create: lm_cathedrale_sainte_cecile_albiCreate, views: lm_cathedrale_sainte_cecile_albiViews },
+  'pont-saint-pierre': { manifest: lm_pont_saint_pierreManifest, osmWays: lm_pont_saint_pierreWays, create: lm_pont_saint_pierreCreate, views: lm_pont_saint_pierreViews },
+  'pont-saint-michel': { manifest: lm_pont_saint_michelManifest, osmWays: lm_pont_saint_michelWays, create: lm_pont_saint_michelCreate, views: lm_pont_saint_michelViews },
+  'ponts-jumeaux': { manifest: lm_ponts_jumeauxManifest, osmWays: lm_ponts_jumeauxWays, create: lm_ponts_jumeauxCreate, views: lm_ponts_jumeauxViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));

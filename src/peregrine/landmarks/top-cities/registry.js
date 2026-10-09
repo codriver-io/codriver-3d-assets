@@ -189,6 +189,15 @@ import { SPEC as lm_cite_de_carcassonneSpec, PALETTES as lm_cite_de_carcassonneP
 import { FOOTPRINTS as lm_cite_de_carcassonneFootprints } from './cite-de-carcassonne/footprint.js';
 import { SPEC as lm_cathedrale_sainte_cecile_albiSpec, PALETTES as lm_cathedrale_sainte_cecile_albiPalettes } from './cathedrale-sainte-cecile-albi/config.js';
 import { FOOTPRINTS as lm_cathedrale_sainte_cecile_albiFootprints } from './cathedrale-sainte-cecile-albi/footprint.js';
+import { SPEC as lm_pont_saint_pierreSpec, PALETTES as lm_pont_saint_pierrePalettes } from './pont-saint-pierre/config.js';
+import { FOOTPRINTS as lm_pont_saint_pierreFootprints } from './pont-saint-pierre/footprint.js';
+import { ROAD_LAYER as lm_pont_saint_pierreRoad } from './pont-saint-pierre/layer.js';
+import { SPEC as lm_pont_saint_michelSpec, PALETTES as lm_pont_saint_michelPalettes } from './pont-saint-michel/config.js';
+import { FOOTPRINTS as lm_pont_saint_michelFootprints } from './pont-saint-michel/footprint.js';
+import { ROAD_LAYER as lm_pont_saint_michelRoad } from './pont-saint-michel/layer.js';
+import { SPEC as lm_ponts_jumeauxSpec, PALETTES as lm_ponts_jumeauxPalettes } from './ponts-jumeaux/config.js';
+import { FOOTPRINTS as lm_ponts_jumeauxFootprints } from './ponts-jumeaux/footprint.js';
+import { ROAD_LAYER as lm_ponts_jumeauxRoad } from './ponts-jumeaux/layer.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -281,6 +290,9 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_couvent_des_jacobinsSpec, lm_couvent_des_jacobinsPalettes, lm_couvent_des_jacobinsFootprints),
   entry(lm_cite_de_carcassonneSpec, lm_cite_de_carcassonnePalettes, lm_cite_de_carcassonneFootprints),
   entry(lm_cathedrale_sainte_cecile_albiSpec, lm_cathedrale_sainte_cecile_albiPalettes, lm_cathedrale_sainte_cecile_albiFootprints),
+  entry(lm_pont_saint_pierreSpec, lm_pont_saint_pierrePalettes, lm_pont_saint_pierreFootprints, lm_pont_saint_pierreRoad),
+  entry(lm_pont_saint_michelSpec, lm_pont_saint_michelPalettes, lm_pont_saint_michelFootprints, lm_pont_saint_michelRoad),
+  entry(lm_ponts_jumeauxSpec, lm_ponts_jumeauxPalettes, lm_ponts_jumeauxFootprints, lm_ponts_jumeauxRoad),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

@@ -17104,6 +17104,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "capitole-de-toulouse",
+      "name": "Capitole de Toulouse",
+      "kind": "building",
+      "location": "Place du Capitole, Toulouse, France",
+      "status": "ready",
+      "description": "Cammas’s brick-and-stone town-hall frontage, eight paired pink-marble columns, clock, central triangular pediment and two segmental pavilion pediments, rooftop stone statuary, rusticated ground floor, balustrade and wrought-iron galleries; mapped rear wings surround three open courts. Detached donjon is excluded.",
+      "manifest": "/models/buildings/capitole-de-toulouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/capitole-de-toulouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks capitole-de-toulouse --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-09, no scans, external meshes or textures. Mapped geometry © OpenStreetMap contributors, ODbL 1.0, relation 367073 / outer way 10157283; three mapped courtyard holes retained. Reference-only photographs remain in ignored scratch: Capitole-27 (Frédéric Neupont, CC0); Panorama du Capitole de Toulouse (PierreSelim, CC BY 3.0); Capitolio Toulouse Francia 2023-01-06 DD 120-122 HDR (Diego Delso, CC BY-SA 4.0); Toulouse Capitole Extérieure Facade 1 (Zairon, CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Toulouse Métropole · Capitole (Cammas, brick/stone, eight marble columns)",
+            "url": "https://metropole.toulouse.fr/annuaire/capitole"
+          },
+          {
+            "label": "Toulouse Métropole · completed façade restoration",
+            "url": "https://metropole.toulouse.fr/espace-presse/le-capitole-retrouve-sa-beaute-dorigine"
+          },
+          {
+            "label": "OSM multipolygon · Capitole, height 25 m",
+            "url": "https://www.openstreetmap.org/relation/367073"
+          },
+          {
+            "label": "File:Capitole-27.jpg · Frédéric Neupont · CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Capitole-27.jpg"
+          },
+          {
+            "label": "File:Panorama du Capitole de Toulouse.jpg · PierreSelim · CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Panorama_du_Capitole_de_Toulouse.jpg"
+          },
+          {
+            "label": "File:Capitolio, Toulouse, Francia, 2023-01-06, DD 120-122 HDR.jpg · Diego Delso · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Capitolio,_Toulouse,_Francia,_2023-01-06,_DD_120-122_HDR.jpg"
+          },
+          {
+            "label": "File:Toulouse Capitole Extérieure Facade 1.jpg · Zairon · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_Capitole_Ext%C3%A9rieure_Facade_1.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/capitole-de-toulouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=capitole-de-toulouse&view=facade",
+        "views": [
+          {
+            "label": "Place du Capitole façade",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=facade"
+          },
+          {
+            "label": "Oblique overview",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=overview"
+          },
+          {
+            "label": "Central portal and columns",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=entrance"
+          },
+          {
+            "label": "Clock and pediment",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=detail"
+          },
+          {
+            "label": "Garden side",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=back"
+          },
+          {
+            "label": "Roofs and open courtyards",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=roof"
+          },
+          {
+            "label": "Mapped plan",
+            "url": "/asset-preview.html?asset=capitole-de-toulouse&view=plan"
+          }
+        ]
+      },
+      "notes": "Footprint envelope is about 106.8 m along the façade: official sources disagree (100 m restoration description versus over 120 m monument description); the mapped ring is authoritative for placement. Height 25 m comes from OSM, not a survey. Storey heights, bay widths, roof heights, clock diameter and cornice profiles are photo estimates. Cornices project up to 1.32 m past the cadastral wall (ownTolM 1.4); no surrounding plaza slab. Eight column shafts, three pediments, heraldic relief approximation, CAPITOLIUM lettering near only and three open courts retained. Rear/court window rhythm and roof ridges are schematic; statuary is supported but simplified. Night changes first-floor window skins to warm self-lit glass; facade floodlights are not individually simulated. No Tesla hardware measurements. Independent coordinator review and app integration remain separate. Independent review fixes: darker red-brown brick, pale stone/marble columns, 0.38 m base courses and slate grey-brown roof; broader parapet/pavilion cornices, supported near companion statuary and flank courses behind glass. Near 20,118 triangles / 8 draws / 939 KiB, far 5,150 / 7 / 264 KiB, with consolidated far window rows and planar small details; same three courtyard openings and clock/column/pediment silhouettes. Revised exported comparison sheet inspected; artifact QA has zero overlaps and zero back-face hits.",
+      "documentation": "docs/assets/top-cities-capitole-de-toulouse.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
