@@ -1,4 +1,8 @@
 {
+  "Albi": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Amsterdam": {
     "country": "Netherlands",
     "continent": "Europe"
@@ -28,6 +32,10 @@
     "country": "Canada",
     "region": "Alberta",
     "continent": "North America"
+  },
+  "Carcassonne": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Dallas": {
     "country": "United States",
@@ -70,6 +78,10 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Larvik": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
   "Leirfjord": {
     "country": "Norway",
     "continent": "Europe"
@@ -89,6 +101,10 @@
   "Medellín": {
     "country": "Colombia",
     "continent": "South America"
+  },
+  "Millau": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Montréal": {
     "country": "Canada",
@@ -154,6 +170,10 @@
     "country": "Canada",
     "region": "Ontario",
     "continent": "North America"
+  },
+  "Toulouse": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Trois-Rivières": {
     "country": "Canada",
