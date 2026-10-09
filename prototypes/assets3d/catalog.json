@@ -16495,6 +16495,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "arctic-cathedral",
+      "name": "Arctic Cathedral (Tromsdalen kirke)",
+      "kind": "building",
+      "location": "Hans Nilsens vei 41 · Tromsdalen, Tromsø, Norway",
+      "status": "ready",
+      "description": "Jan Inge Hovig’s 1965 church: eleven paired pearl-white aluminium-clad A-frame slabs, narrowing down to a saddle then rising to the eastern mosaic gable, a 35 m west glass facade and tall structural cross, glazed ribbons between the slabs and a low east sacristy.",
+      "manifest": "/models/buildings/arctic-cathedral.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/arctic-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks arctic-cathedral --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-08. No third-party mesh, scan, photo or texture shipped. Mapped footprints from prepared OSM dossier: eleven building:part ways and east sacristy 395048138, ODbL 1.0, © OpenStreetMap contributors. Reference photographs retained only in ignored tmp/: Tromsø 2015 (Larry Lamsa, CC BY 2.0), Arctic Cathedral in Tromsoe (Henrik, CC BY 2.5), Tromsdalen Church West, organ and mosaic (Evgenii Salganik, CC BY-SA 4.0). The east glazing is an original abstract pattern, not a copy of the mosaic artwork.",
+        "references": [
+          {
+            "label": "Official church: architect, date, eleven slabs, west cross and east mosaic",
+            "url": "https://ishavskatedralen.no/en/om-kirken/"
+          },
+          {
+            "label": "Store norske leksikon: 35 m gable, structural cross, glass ribbons and sacristy",
+            "url": "https://snl.no/Ishavskatedralen"
+          },
+          {
+            "label": "Mapped cathedral relation 21003810",
+            "url": "https://www.openstreetmap.org/relation/21003810"
+          },
+          {
+            "label": "West front · Evgenii Salganik, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tromsdalen_Church_West.jpg"
+          },
+          {
+            "label": "Mosaic · Evgenii Salganik, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tromsdalen_Church_mosaic.jpg"
+          },
+          {
+            "label": "Oblique · Henrik, CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Arctic_Cathedral_in_Tromsoe.jpg"
+          },
+          {
+            "label": "Across the sound · Larry Lamsa, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Troms%C3%B8_2015.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arctic-cathedral/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=arctic-cathedral&view=overview",
+        "views": [
+          {
+            "label": "West oblique",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=overview"
+          },
+          {
+            "label": "West glass wall and structural cross",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=facade"
+          },
+          {
+            "label": "East mosaic and sacristy",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=back"
+          },
+          {
+            "label": "Eleven paired A-frame slabs",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=roof"
+          },
+          {
+            "label": "Two west entrance doors",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=entrance"
+          },
+          {
+            "label": "Original faceted east glazing",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=detail"
+          },
+          {
+            "label": "Descending and ascending bay profile",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=side"
+          },
+          {
+            "label": "Mapped footprint alignment",
+            "url": "/asset-preview.html?asset=arctic-cathedral&view=plan"
+          }
+        ]
+      },
+      "notes": "35 m west gable sourced to Store norske leksikon. Eleven paired aluminium-clad slabs and 1965 Jan Inge Hovig identity sourced to official church; east mosaic installed 1972. Plan widths, bay stations, 17.5–35 m height progression and 5 m sacristy from OSM. Panel thickness, leaning front slab, sheet-metal joints, glazing grids, cross size and door arrangement estimated from reference photographs. Original blue/cyan/amber colour field approximates the east glass character without reproducing figures. No interior, organ, furniture, flags, plaza stairs, surrounding hill or neighboring parish buildings modeled. Relation membership refresh through the shared Overpass helper returned HTTP 403; complete individual building:part geometry in the prepared dossier was used. Independent visual review pending; no device performance claim. Independent review fix: level bay ridges replaced by pointed front tips with an estimated 1.1 m fall to the rear in both LODs; dense metal-sheet grid replaced by three broad course seams per inclined panel. Roof section has a 0.8 m lower inner apex. Exact tapering panels are approximated by triangulated lofts. Re-review pending.",
+      "documentation": "docs/assets/top-cities-arctic-cathedral.md",
+      "city": "Tromsø",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

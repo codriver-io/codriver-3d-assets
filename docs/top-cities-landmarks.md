@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (68 released)
+## The collection (69 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -76,6 +76,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `akershus-fortress` | Akershus Fortress | Oslo | building |
 | `bryggen` | Bryggen | Bergen | building |
 | `nidaros-cathedral` | Nidaros Cathedral | Trondheim | building |
+| `arctic-cathedral` | Arctic Cathedral | Tromsø | building |
 
 ## A landmark is a folder
 
