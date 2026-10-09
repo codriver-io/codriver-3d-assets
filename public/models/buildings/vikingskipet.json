@@ -1,0 +1,65 @@
+{
+  "id": "vikingskipet",
+  "name": "Vikingskipet (Hamar Olympic Hall)",
+  "kind": "building",
+  "origin": [
+    11.10098302,
+    60.79298595
+  ],
+  "height": 35,
+  "padM": 145,
+  "frontageBearing": 295,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the filled Åkersvika shore); no absolute altitude. The keel crown is 35 m over this grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan fitted inside OSM way 28287844 (about 254 × 105 m): modelled outer eaves 248 m × 102 m, which sits between the 96 m glulam span and the published 110 m overall width. Ridge 35 m is the published exterior/Structurae height; the 36 m figure is the clear height under the roof. Eave line, plank count, stem upturn, glass-skirt height and the road-side entrance recess are read from photographs. The 17 interior glulam arches are not modelled. The neighbouring building to the north and the X sculpture are separate and omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/vikingskipet-near.glb",
+      "bytes": 1662680,
+      "triangles": 21416,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -54.189884185791016,
+          0,
+          -112.38216400146484
+        ],
+        "max": [
+          54.189884185791016,
+          35,
+          112.38216400146484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/vikingskipet-far.glb",
+      "bytes": 388116,
+      "triangles": 4980,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -54.189205169677734,
+          0,
+          -112.38216400146484
+        ],
+        "max": [
+          54.189205169677734,
+          35,
+          112.38216400146484
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vikingskipet/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -16586,6 +16586,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "vikingskipet",
+      "name": "Vikingskipet (Hamar Olympic Hall)",
+      "kind": "building",
+      "location": "Hamar",
+      "status": "ready",
+      "description": "Original procedural Vikingskipet: a 248 m upturned-hull speed-skating hall in silver longitudinal ribs, a blue-grey glass skirt, glazed-to-metal stems on the plinth, and a recessed road-side entrance under a dark canopy.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/vikingskipet/geometry.js",
+        "build": "pnpm build:top-cities-landmarks vikingskipet",
+        "provenance": "Original procedural geometry by Codriver, authored 2026-10-08; no mesh capture, tracing, bitmap, or texture. Derived geographic data © OpenStreetMap contributors (ODbL 1.0), way 28287844. Reference-only photos retained under ignored tmp/: profile by Jeanie Mackinder (CC BY 2.0); entrance by Guntars Mednis (CC BY-SA 3.0); winter end by Rosemoon (public domain). The 17 interior glulam arches and the X sculpture are not in the model. No external images are included in the model exports.",
+        "references": [
+          {
+            "label": "Store norske leksikon — Vikingskipet",
+            "url": "https://snl.no/Vikingskipet_-_Hamar_Olympiahall"
+          },
+          {
+            "label": "Structurae — Vikingskipet",
+            "url": "https://structurae.net/en/structures/vikingskipet"
+          },
+          {
+            "label": "Wikipedia — Vikingskipet",
+            "url": "https://en.wikipedia.org/wiki/Vikingskipet"
+          },
+          {
+            "label": "Visit Norway — Vikingskipet",
+            "url": "https://www.visitnorway.com/listings/vikingskipet/3204/"
+          },
+          {
+            "label": "Hamar Olympiske Anlegg, tall og fakta (archived 2011)",
+            "url": "https://web.archive.org/web/20110919183640/http://www.hoa.no/no/vikingskipet/tall-og-fakta/"
+          },
+          {
+            "label": "Profile from the lake — Jeanie Mackinder, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vikingskipet_profile.jpg"
+          },
+          {
+            "label": "OSM way 28287844",
+            "url": "https://www.openstreetmap.org/way/28287844"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vikingskipet/geometry.js"
+      },
+      "notes": "Exterior is pale silver metal with longitudinal ribs. The dark wood in some descriptions is the interior glulam, which is not modelled, and neither is the X sculpture or the north neighbour (way 987946525). Plan 248 × 102.3 m sits inside way 28287844, between the 96 m arch span and the published 110 m overall width. Crown 35 m is the Structurae exterior height; 36 m is the clear height. Eave line, ten planks a side, the stem and the road recess are read from photographs. Far keeps the same silhouette, glass, entrance and a coarser set of ribs. Grazing views break the thinnest ribs into dashes.",
+      "documentation": "docs/assets/top-cities-vikingskipet.md",
+      "manifest": "/models/buildings/vikingskipet.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=vikingskipet",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=vikingskipet&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=vikingskipet&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=vikingskipet&view=roof"
+          },
+          {
+            "label": "prow",
+            "url": "/asset-preview.html?asset=vikingskipet&view=prow"
+          },
+          {
+            "label": "lake",
+            "url": "/asset-preview.html?asset=vikingskipet&view=lake"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=vikingskipet&view=detail"
+          }
+        ]
+      },
+      "city": "Hamar",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
