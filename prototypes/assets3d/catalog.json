@@ -17278,6 +17278,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "dome-de-la-grave",
+      "name": "Dôme de la Grave (Chapelle Saint-Joseph)",
+      "kind": "building",
+      "location": "23 rue du Pont Saint-Pierre, Saint-Cyprien, Toulouse, France",
+      "status": "ready",
+      "description": "Brick chapel rotonde with eight arched windows separated by paired pilasters, turquoise ribbed copper dome, glazed lantern and cross, and a six-pilaster entrance beneath an unfinished triangular pediment. One short hospital wing is simple low brick massing.",
+      "manifest": "/models/buildings/dome-de-la-grave.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/dome-de-la-grave/geometry.js",
+        "build": "pnpm build:top-cities-landmarks dome-de-la-grave --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-09. Mapped chapel outline 219747752, dome part 1563601036 and adjoining part 869732616: © OpenStreetMap contributors, ODbL 1.0, through the shared Overpass helper. Reference-only Commons photographs: Didier Descouens, Chapelle de l’hôpital Saint-Joseph de la Grave (CC BY-SA 4.0); PierreSelim, Toulouse - 2012-03-26 - Dome Hospital de la Grave (CC BY-SA 3.0); Gzen92, Hôpital de La Grave - dôme (Toulouse) (CC BY-SA 4.0). Photos viewed in ignored tmp only; no third-party meshes, photos or textures redistributed. Additional dossier photos viewed: PierreSelim, Hopital de la Grave et Pont Saint-Pierre (CC BY 3.0); Gzen92, Hôpital de La Grave et la Garonne (Toulouse) (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "CHU Toulouse: chapel history, eight arched windows, six pilasters and 24 m interior diameter",
+            "url": "https://www.chu-toulouse.fr/IMG/pdf/histoire_de_la_chapelle_de_la_grave.pdf"
+          },
+          {
+            "label": "Municipal monument history and restoration",
+            "url": "https://monuments.toulouse.fr/chapelle-de-la-grave/histoire/"
+          },
+          {
+            "label": "La Dépêche, 2022 restoration report: summit 56 m (provisional)",
+            "url": "https://www.ladepeche.fr/2022/03/02/le-dome-de-la-grave-se-refait-une-beaute-pour-cet-ete-10143086.php"
+          },
+          {
+            "label": "OSM chapel outline 219747752",
+            "url": "https://www.openstreetmap.org/way/219747752"
+          },
+          {
+            "label": "Didier Descouens, chapel facade, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Chapelle_de_l%27h%C3%B4pital_Saint-Joseph_de_la_Grave.jpg"
+          },
+          {
+            "label": "PierreSelim, lantern detail, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_2012-03-26_-_Dome_Hospital_de_la_Grave.jpg"
+          },
+          {
+            "label": "Gzen92, river dome, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4pital_de_La_Grave_-_d%C3%B4me_(Toulouse).jpg"
+          },
+          {
+            "label": "PierreSelim, night river view, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Hopital_de_la_Grave_et_Pont_Saint-Pierre.jpg"
+          },
+          {
+            "label": "Gzen92, river context, CC BY-SA 4.0 (dossier metadata)",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4pital_de_La_Grave_et_la_Garonne_(Toulouse).jpg"
+          },
+          {
+            "label": "Municipal visitor listing: conflicting 85 m figure",
+            "url": "https://metropole.toulouse.fr/annuaire/chapelle-saint-joseph-hospice-de-la-grave"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/dome-de-la-grave/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=dome-de-la-grave&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=dome-de-la-grave&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=dome-de-la-grave&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=dome-de-la-grave&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=dome-de-la-grave&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=dome-de-la-grave&view=entrance"
+          },
+          {
+            "label": "dome",
+            "url": "/asset-preview.html?asset=dome-de-la-grave&view=dome"
+          }
+        ]
+      },
+      "notes": "Provisional 56 m total summit: published dimensions conflict (municipal 40 m dome and 85 m above the river, OSM part 30 m). Exact stage heights, pilaster capitals, window width and copper joints are estimated from photos. The chapel footprint and dome diameter are mapped. Entrance mouldings project up to 1 m beyond the mapped wall. Interior, hospital complex, individual bricks, iron balcony scrolls and detailed stone carving omitted. Rigid level courtyard base with 40 m pad; a separate terrain check must ensure the pad avoids the riverbank. Independent review refinements: daylight brick darkened to #8a4a38, eight drum windows narrowed 20% and shortened 25% with higher sills, copper dome rise flattened from 13.05 to 11.55 m while retaining the lantern position, and springing/cornice radii tightened to 12.2/12.3 m. Lower mapped outline retained; optional rectangular rear re-massing deferred.",
+      "documentation": "docs/assets/top-cities-dome-de-la-grave.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
