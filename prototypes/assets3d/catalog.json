@@ -17674,6 +17674,117 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cathedrale-sainte-cecile-albi",
+      "name": "Cathédrale Sainte-Cécile d’Albi",
+      "kind": "building",
+      "location": "Albi, France",
+      "status": "ready",
+      "description": "Southern French Gothic brick fortress cathedral: single nave, rounded buttress turrets, semicircular chevet, stepped west bell tower and open pale-stone flamboyant south baldaquin. The attached cathedral sacristy and southeast gate are included; the Palais de la Berbie and Pont Vieux are excluded.",
+      "manifest": "/models/buildings/cathedrale-sainte-cecile-albi.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cathedrale-sainte-cecile-albi/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cathedrale-sainte-cecile-albi --no-check",
+        "provenance": "Original texture-free procedural model authored 2026-10-09 from OSM way 260816263 and cathedral Simple 3D parts, © OpenStreetMap contributors, ODbL 1.0. Reference photos are comparison material only, held in ignored tmp and never shipped: Krzysztof Golik and Didier Descouens (CC BY-SA 4.0); Guiguilacagouille and GO69 (CC BY-SA 3.0); unknown historic photographer (public domain); Thérèse Gaigé (CC BY-SA 4.0). No scan, third-party mesh or texture.",
+        "references": [
+          {
+            "label": "Albi Tourisme — dimensions and cathedral history",
+            "url": "https://www.albi-tourisme.fr/decouvrir-albi/patrimoine-unesco/la-cathedrale-sainte-cecile/"
+          },
+          {
+            "label": "French Ministry of Culture — Occitanie cathedral survey, Albi",
+            "url": "https://www.culture.gouv.fr/content/download/182716/pdf_file/Duo_cathedrales_Occitanie_2017_09.pdf"
+          },
+          {
+            "label": "OSM cathedral footprint and Simple 3D parts",
+            "url": "https://www.openstreetmap.org/way/260816263"
+          },
+          {
+            "label": "Albi Cathedral — exterior and portal history",
+            "url": "https://en.wikipedia.org/wiki/Albi_Cathedral"
+          },
+          {
+            "label": "File:Vieux Pont and Saint Cecilia Cathedral of Albi 05.jpg — Krzysztof Golik, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vieux_Pont_and_Saint_Cecilia_Cathedral_of_Albi_05.jpg"
+          },
+          {
+            "label": "File:(Albi) North views of the Ste Cécile Cathedral and the Old Bridge.jpg — Didier Descouens, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:(Albi)_North_views_of_the_Ste_C%C3%A9cile_Cathedral_and_the_Old_Bridge.jpg"
+          },
+          {
+            "label": "File:Cathédrale Sainte-Cécile 2.jpg — Guiguilacagouille, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Sainte-C%C3%A9cile_2.jpg"
+          },
+          {
+            "label": "File:Albi. Cathédrale Sainte-Cécile Exterieur, GD017562.jpg — Unknown authorUnknown author, Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Albi._Cath%C3%A9drale_Sainte-C%C3%A9cile_Exterieur,_GD017562.jpg"
+          },
+          {
+            "label": "File:(Albi) Bell tower of the Ste Cécile Cathedral - West exposure.jpg — Didier Descouens, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:(Albi)_Bell_tower_of_the_Ste_C%C3%A9cile_Cathedral_-_West_exposure.jpg"
+          },
+          {
+            "label": "File:Albi (81) Cathédrale Sainte-Cécile Extérieur 02.JPG — GO69, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albi_(81)_Cath%C3%A9drale_Sainte-C%C3%A9cile_Ext%C3%A9rieur_02.JPG"
+          },
+          {
+            "label": "File:Albi (81) Cathédrale Sainte-Cécile Extérieur 03.JPG — GO69, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albi_(81)_Cath%C3%A9drale_Sainte-C%C3%A9cile_Ext%C3%A9rieur_03.JPG"
+          },
+          {
+            "label": "Partie supérieure du baldaquin.jpg — Thérèse Gaigé, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Partie_sup%C3%A9rieure_du_baldaquin.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-sainte-cecile-albi/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=back"
+          },
+          {
+            "label": "east",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=east"
+          },
+          {
+            "label": "west",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=west"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=roof"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=detail"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=cathedrale-sainte-cecile-albi&view=street"
+          }
+        ]
+      },
+      "notes": "Sourced dimensions: Albi Tourisme 113 m × 35 m and tower 78 m. OSM nave eaves/ridge 40/44 m and tower stages 41/58/66/78 m; the mapped hull is approximately 113.4 m long and 32.2 m across its side buttresses. Width 35 m is the published whole nave envelope, not a horizontal scale imposed on its cadastral outline. Rounded buttresses, inset lancets, blind lower tower arches, paired belfry openings and open porch tracery are procedural. Brick mortar courses are sparse relief rings; no literal brick-by-brick texture. Porch carvings and vault rib web are simplified, interiors omitted. Current roofline, without the removed 19th-century balustrade. Independent-review correction: square lower keep to the gallery, broad chamfered belfry faces with one tall pair per cardinal face, half-round corner turrets retained after comparison to refs 3/5/6. Pale porch now has solid piers, thick arcades, spandrels and a gabled screen, with relief tracery and an open passage. Wider low-pitch tiled roof and visible ridge roll; buttresses use a slightly lighter brick tone. Near radial segments reduced from 14 to 10, sparse course interval increased, hidden cylinder caps omitted; far still omits mortar relief. Exported metrics: near 28764 triangles / 7 draws / 1229820 bytes; far 7530 triangles / 7 draws / 352676 bytes. Judged final review/night comparison in tmp/top-cities/shots/cathedrale-sainte-cecile-albi/revision-final/review-night-contact-sheet.jpg; zero back-face hits, no coplanar-overlap issue. Cityscape and Full 3D world: not tested yet, integration is checked separately.",
+      "documentation": "docs/assets/top-cities-cathedrale-sainte-cecile-albi.md",
+      "city": "Albi",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
