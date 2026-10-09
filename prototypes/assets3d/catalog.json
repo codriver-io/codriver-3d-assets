@@ -16764,6 +16764,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "kilden-performing-arts-centre",
+      "name": "Kilden Performing Arts Centre",
+      "kind": "building",
+      "location": "Sjølystveien, Odderøya, Kristiansand, Norway",
+      "city": "Kristiansand",
+      "status": "ready",
+      "description": "ALA Architects and SMS Arkitekter’s 2012 performing-arts centre: a dark hall whose harbour front is a high oak canopy, two unequal lobes over a full-height glass wall.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/kilden-performing-arts-centre/geometry.js",
+        "build": "pnpm build:top-cities-landmarks kilden-performing-arts-centre --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-08; no third-party mesh or texture. One mapped ring from the provided shared-helper OSM dossier, way 273362400, © OpenStreetMap contributors, ODbL 1.0. Reference sheet viewed: trolvag, Kilden, Kristiansand (CC BY-SA 3.0); Ad Meskens, Kristiansand Kilden teater og konserthus (CC BY-SA 4.0); Knut Arne Gjertsen, Kilden teater og konserthus (CC BY-SA 3.0); Nico-dk, Kilden teater og koncerhus Kristiansand (CC BY-SA 3.0); Bjoertvedt, Kilden kristiansand IMG 1542 (CC BY-SA 3.0). Photographs stay in ignored tmp and are never shipped.",
+        "references": [
+          {
+            "label": "ALA Architects: Kilden, opened January 2012, oak front wall, 24,600 m²",
+            "url": "https://ala.fi/work/kilden-performing-arts-centre/"
+          },
+          {
+            "label": "Dezeen, 30 March 2012: undulating oak canopy over the glazed harbour front",
+            "url": "https://www.dezeen.com/2012/03/30/kilden-performing-arts-centreby-ala-architects/"
+          },
+          {
+            "label": "OSM way 273362400, Kilden",
+            "url": "https://www.openstreetmap.org/way/273362400"
+          },
+          {
+            "label": "Knut Arne Gjertsen, Kilden teater og konserthus, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Kilden_teater_og_konserthus.jpg"
+          },
+          {
+            "label": "trolvag, Kilden, Kristiansand, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Kilden,_Kristiansand,_Vest-Agder,_Norway_-_panoramio_(1).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/kilden-performing-arts-centre/geometry.js"
+      },
+      "notes": "Roof height 22 m is the published line of the cantilevered oak wall. The lip stays near half to three-quarters of that height: a shallower north lobe and a deeper south lobe, plus a small central nick, so the glass below stays open. Harbour edge of way 273362400 is about 93 m. Lip positions, 0.32–1.15 m oak thickness and the 26 m glass setback are photographic estimates. The published whole oak wall projects further because the foyer ceiling continues behind the glass. Glass panes are opaque glow so the night grid stays lit. Near board lines are a second oak colour, not the 12,000 planks; far drops them. Dark cladding is a shallow pleat with horizontal seams. No interior, boats, Kunstsilo or quay clutter. 2026-10-08 review fix raised the lip off grade. Hardware cost and terrain lifecycle not verified.",
+      "documentation": "docs/assets/top-cities-kilden-performing-arts-centre.md",
+      "manifest": "/models/buildings/kilden-performing-arts-centre.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=detail"
+          },
+          {
+            "label": "south",
+            "url": "/asset-preview.html?asset=kilden-performing-arts-centre&view=south"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
