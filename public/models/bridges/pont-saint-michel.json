@@ -1,0 +1,65 @@
+{
+  "id": "pont-saint-michel",
+  "name": "Pont Saint-Michel",
+  "kind": "bridge",
+  "origin": [
+    1.43865,
+    43.59238
+  ],
+  "height": 14.9,
+  "padM": 320,
+  "frontageBearing": 97,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0; deck 8 m is a photographic estimate, not absolute altitude. Terrain uses shared bank-fit placement.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Four open V-piers, five parallel beam lines, 326 m principal structure and two eastern river-arm crossings. Vertical datum, sections and fittings estimated; 100 m flat-map approach ramps.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-saint-michel-near.glb",
+      "bytes": 1554540,
+      "triangles": 38012,
+      "drawCalls": 16,
+      "bounds": {
+        "min": [
+          -284.1391296386719,
+          -1.5999990701675415,
+          -44.64389419555664
+        ],
+        "max": [
+          277.0022277832031,
+          14.899999618530273,
+          47.48284912109375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-saint-michel-far.glb",
+      "bytes": 597696,
+      "triangles": 15888,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -284.1391296386719,
+          -1.5999990701675415,
+          -44.64389419555664
+        ],
+        "max": [
+          277.0022277832031,
+          14.899999618530273,
+          47.48284912109375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-saint-michel/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
