@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (83 released)
+## The collection (84 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -83,6 +83,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `kilden-performing-arts-centre` | Kilden Performing Arts Centre | Kristiansand | building |
 | `borgund-stave-church` | Borgund Stave Church | Lærdal | building |
 | `farris-bad` | Farris Bad | Larvik | building |
+| `pont-neuf-toulouse` | Pont Neuf (Toulouse) | Toulouse | bridge, road-fitted |
 | `pont-des-catalans` | Pont des Catalans | Toulouse | bridge, road-fitted |
 | `basilique-saint-sernin` | Basilica of Saint-Sernin | Toulouse | building |
 | `capitole-de-toulouse` | Capitole de Toulouse | Toulouse | building |
