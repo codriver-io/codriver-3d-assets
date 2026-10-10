@@ -18,7 +18,7 @@ Code and mesh are original procedural work by Codriver. Geographic data © OpenS
 
 Real metres, +X east, +Y up, +Z south, origin `[2.36405,43.20633]`. The rings bake mapped orientation into the export. Gateway facade bearing is approximately **110°**. Two control points on the mapped rear edge `[2.3653391,43.2067605]` and `[2.3654370,43.2069337]` establish a roughly 22° north/east shaft alignment; its east-facing normal is about 112°. The procedural gateway uses 20° / 110°.
 
-`y=0` denotes the rigid plateau grade. The terrain hill and absolute elevation are never baked in. Wall and tower foundations continue down to **-2.8 m**, just above the shared -3 m lower-bound gate. This skirt is intentional below-grade support, not hanging ornament. The site is about **364 × 457 m**, mapped extent; `padM=290` covers its envelope. `terrainPad` owns only listed structure rings, uses the eastern gateway footprint for the **median** reference datum and feathers **6 m**. This is a placement handoff: larger slope differences could exceed the skirt and must be checked in Full 3D world.
+`y=0` denotes flat Cityscape grade; its geometry still ends at **-2.8 m**. The site is about **364 × 457 m**, mapped extent; `padM=290` covers its envelope. Full 3D world now applies compact relative rigid-part offsets around an inner-plateau median, with world-only deeper footings and **3 m** terrace feathers. Broad sloping footprint rings do not flatten the hill. No absolute elevation or terrain mesh is baked into the GLBs. See the terrain-fit revision below for measured residuals and mode evidence.
 
 | Feature | Dimension | Evidence |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ Focused tests check both published 30 m tower tips by raycast, open gate and sol
 
 Curtain heights, tower-by-tower elevation variations, roof profiles and church detailing are estimates. Gateway spur-form shafts are simplified circles. Roof intersections remain at castle wing joins; windows are dark surface panels rather than carved openings. Individual house facades, timber hoarding/drawbridge detail, trees and the hill/scarp are omitted. The 4 m eave/gateway tolerance is explicit, not a claim of survey precision. The original independent review was PASS-WITH-NITS (recognition 3/5); the review follow-up improves all four named massing/palette issues and awaits the coordinator’s acceptance of the revision.
 
-**Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately.** No runtime, terrain gate, road, shared renderer, other landmark or shared catalog files were edited. Terrain arrival, large hillside datum differences, provider replacement and regional-to-street transitions still need app validation.
+**Current terrain-fit status (2026-10-10): Cityscape verified; Full 3D world verified for the documented cameras and terrain on/off checks below.** No runtime, terrain gate, road, shared renderer, other landmark or shared catalog files were edited. Terrain arrival, large hillside datum differences, provider replacement and regional-to-street transitions still need app validation.
 
 ## Independent review revision (2026-10-09)
 
@@ -84,3 +84,44 @@ node .agents/skills/build-3d-city/scripts/qa-sheet.mjs --ids cite-de-carcassonne
 ```
 
 Looked at both `revision-1/cite-de-carcassonne.jpg` and `revision-2/cite-de-carcassonne.jpg`: exported near/far, opposite oblique views, street elevation, close west elevation and plan next to the dossier aerial. The first showed overly uniform roof rows; the second staggers their ends and heights and mutes the tile orange. The roofscape remains deliberately coarse. Near/far dark sheets in `revision-2/` verify the same new massing with night palettes. Revision metrics report **zero issues, zero coplanar overlaps, zero back-face hits and zero removable lift bytes**. Both modes remain **not tested yet, integration is checked separately**.
+
+
+## Full 3D world terrain-fit revision (2026-10-10)
+
+REVIEW-2 replaces the earlier massing nits for this round. The 145.3 m eastern-gateway datum previously held all 164 structure rings at one height, filling the northern/western slope by 20–27 m and cutting the southeast inner plateau by about 7 m. Five references under the southeast inner enceinte now give a **152.12 m** median on the cached AWS Terrarium z15 tiles. The authored file stores relative levels, **−31 to +0.5 m**, rounded to half-metres; it contains no absolute altitude.
+
+Each mapped part remains rigid above its foundation: walls, towers, castle wings, gateway arches, basilica and each aggregate roof strip receive one relative site level. Only buried footing vertices extend farther down, by **10–16 m** beyond their unchanged −2.8 m flat skirt, to close joins between steps and reach the slope. In Cityscape those extensions are absent. Vertex ordering groups equal offsets into compact metadata runs, preserving every authored triangle and the seven/four merged material draws. No extra attributes remain in either export.
+
+The pad now holds 142 bounded rings; the other 22 wide sloping envelopes retain the DEM. This includes the western spurs and broad roof quarters: they no longer excavate or fill their whole footprints. Terrace offsets match the structures they support. Across padded-ring vertices the largest raw residual is **+3.00 / −2.71 m** (above/below), covered by the world skirt. Long unpadded spurs 102/106 have roughly **±5 m** residual around their rigid grade, supported by their extended masonry foundations. Unpadded roof-quarter base planes stand up to **14.92 m** above the low side of their raw DEM envelope; their upper-grade placement and up to 16 m footing extension keep the plateau intact rather than cutting it down. This is an aggregate-house approximation, not raised terrain.
+
+| Review defect / ring | Before | After (nominal base vs raw z15 DEM vertices) |
+| --- | --- | --- |
+| North/west raised table, ring 70 | +22.65 m maximum fill | +1.97 / −2.17 m, stepped bounded terrace |
+| Lowest northern tower, ring 76 | +25.30 m fill | +1.12 / −0.63 m, offset −31 m |
+| Northern tower 77 / curtain 78 | +23.86 / +24.12 m fill | +0.68 / −0.81 and +0.44 / −0.70 m |
+| Western spur 102 / 106 | +26.65 / +27.59 m fill | +4.96 / −5.01 and +4.91 / −4.63 m; no flatten pad |
+| Plateau towers 3 / 4 / 15 | −6.92 / −7.19 / −7.09 m cut | −0.10 / −0.37 / −0.28 m; datum at plateau |
+| First revision’s step-join gaps | 2.8 m skirt did not reach lower tiers | World-only deeper footings; flat skirt and silhouette restored on off |
+
+Per-ring residuals (all 164, measured at raw DEM vertices and centroid, not a screen-space terrain-lattice assertion): `tmp/top-cities/cite-de-carcassonne/TERRAIN-RESIDUALS.md` and `terrain-residuals.json`. The public terrain raster is an approximate site-level reference, not a structural survey. Sloped castle wings and aggregate roof quarters remain approximations; exposed footing stone is not a surveyed retaining-wall reconstruction.
+
+Final exported costs replace the earlier table for this revision:
+
+| LOD | Triangles | Draws | Bytes | KiB |
+| --- | ---: | ---: | ---: | ---: |
+| Near | 41,633 | 7 | 2,175,124 | 2,124.1 |
+| Far | 9,114 | 4 | 471,204 | 460.2 |
+
+Both remain within their hard byte, triangle and draw budgets. `terrain-metrics.json` reports zero issues, coplanar pairs, back-face hits and removable lift bytes. The standard Prepare equivalents are the named export command, `qa-metrics.mjs --ids cite-de-carcassonne`, and `qa-sheet.mjs --ids cite-de-carcassonne`; REVIEW.md supplies no literal Prepare command. Two look/fix rounds only were used. Inspected the new `terrain-2/inspector/cite-de-carcassonne.jpg` near/far sheet next to the dossier aerial and `terrain-2/before-after-world-cityscape.jpg`: first two rows compare the lead’s original north/west world views to the corrected views; third row gives south/east world; last two rows show all four Cityscape fronts. Scratch root: `tmp/top-cities/shots/cite-de-carcassonne/`.
+
+The real app ran on approved slot A **3270/3272**. Final world edge reports show seven offset meshes and a 208.73 Mercator-unit group datum (152.12 real metres at this latitude); Cityscape reports zero offset meshes and zero datum. Far/near/street shots are under `terrain-2/world/`. The final live toggle check (`app-toggle.json`) verifies far/near loads, terrain off/on/off, exact restored source Y values and no cumulative drift. Local account/CORS and unavailable HD-lane endpoints appear in app logs; model and terrain loads succeed. Local HD lane paint and device performance are not asserted.
+
+**Cityscape: verified** flat silhouette from all four fronts, with the original grade and structure heights. **Full 3D world: verified** for terrain fit, four edge views, regional-to-street LOD progression and terrain toggles with the stated z15 limitations. Wider device/exaggeration and provider lifecycle rollout remains separate.
+
+Coordinator-approved shared changes (commit separately from the landmark):
+
+- `building-layer.js`: optional `mesh.userData.terrainOffsets` runs; save immutable Y once, update on mode/LOD change, recompute bounds, restore exactly on terrain off; no per-frame traversal and no mutation for ordinary GLBs.
+- `registry-landmarks-layer.js`: forward terrain enabled state from `setGroundY` to buildings.
+- `building-layer.test.js`: plain-model compatibility, load-before-terrain / terrain-before-load, near/far changes, exact repeated-toggle restoration and no per-frame traversal.
+
+All **454** requested focused tests pass, including the eleven Carcassonne tests, shared landmark layer tests, top-cities conformance, Alcatraz and terrain-footprint tests. `node scripts/asset-catalog.mjs` passes (212 entries / 412 variants). No other landmark was edited; no deployment or git write was performed. Preview bundles were built for verification and restored afterward, and slot A servers were stopped.

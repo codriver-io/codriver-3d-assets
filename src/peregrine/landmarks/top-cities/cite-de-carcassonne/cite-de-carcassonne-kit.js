@@ -3,12 +3,13 @@ import {mergeVertices} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
 // Original compact surface kit. All faces get outward winding from an explicit normal.
 export function meshKit(builder) {
-  const batch = new Map();
+  const batch = new Map(), offsets = new Map(),depths = new Map();
+  let terrainOffset = 0,footingDepth = 0;
   function tri(mat,a,b,c,n) {
     const normal=new THREE.Vector3().subVectors(new THREE.Vector3(...b),new THREE.Vector3(...a)).cross(new THREE.Vector3().subVectors(new THREE.Vector3(...c),new THREE.Vector3(...a)));
     if(normal.lengthSq()<1e-10)return;
     if(normal.dot(new THREE.Vector3(...n))<0)[b,c]=[c,b];
-    if(!batch.has(mat))batch.set(mat,[]);batch.get(mat).push(...a,...b,...c);
+    if(!batch.has(mat)){batch.set(mat,[]);offsets.set(mat,[]);depths.set(mat,[]);}batch.get(mat).push(...a,...b,...c);offsets.get(mat).push(terrainOffset,terrainOffset,terrainOffset);depths.get(mat).push(footingDepth,footingDepth,footingDepth);
   }
   const quad=(m,a,b,c,d,n)=>{tri(m,a,b,c,n);tri(m,a,c,d,n);};
   function prism(ring,lo,hi,mat,sideMaterial=null) {
@@ -25,8 +26,8 @@ export function meshKit(builder) {
     const [h,s]=levels.at(-1);if(s>0)prism(ring.map(p=>[c[0]+(p[0]-c[0])*s,c[1]+(p[1]-c[1])*s]),h-0.01,h,mat);
   }
   function panel(mat,c,t,n,w,h,y,offset=0.08){const p=(u,v)=>[c[0]+t[0]*u+n[0]*offset,v,c[1]+t[1]*u+n[1]*offset];quad(mat,p(-w/2,y),p(w/2,y),p(w/2,y+h),p(-w/2,y+h),[n[0],0,n[1]]);}
-  function flush(){for(const [mat,p]of batch){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(p,3));g.computeVertexNormals();builder.put(mergeVertices(g,0.0001),mat);g.dispose();}}
-  return {tri,quad,prism,loft,panel,flush};
+  function flush(){for(const [mat,p]of batch){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(p,3));g.setAttribute('terrainOffset',new THREE.Float32BufferAttribute(offsets.get(mat),1));g.setAttribute('footingDepth',new THREE.Float32BufferAttribute(depths.get(mat),1));g.computeVertexNormals();builder.put(mergeVertices(g,0.0001),mat);g.dispose();}}
+  return {tri,quad,prism,loft,panel,flush,setTerrainOffset:(value,depth=0)=>{terrainOffset=value;footingDepth=depth;}};
 }
 export const center=ring=>ring.reduce((s,p)=>[s[0]+p[0]/ring.length,s[1]+p[1]/ring.length],[0,0]);
 export function inside(p,ring){let yes=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])yes=!yes;}return yes;}
