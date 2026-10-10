@@ -18153,6 +18153,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-saint-pierre",
+      "name": "Pont Saint-Pierre",
+      "kind": "bridge",
+      "location": "Garonne · Toulouse, France",
+      "status": "ready",
+      "description": "The 1987 five-span steel/concrete bridge: white shallow lattice girders, four brick-and-stone piers with rising pylons, green open parapets and ornate lantern standards. Road-fitted to the mapped seasonal pedestrian roadway.",
+      "manifest": "/models/bridges/pont-saint-pierre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-saint-pierre/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-saint-pierre --no-check",
+        "provenance": "Original procedural model authored 2026-10-09. OSM alignment and structural outline © OpenStreetMap contributors (ODbL 1.0). Reference photographs used only for visual comparison, kept in ignored scratch; no photograph, texture, scan or third-party mesh is shipped. Fichier:Pont-Saint-Pierre - Toulouse.jpg / Didier Descouens / CC BY-SA 4.0; Fichier:Pont Saint-Pierre - Fete de la musique 2011.jpg / PierreSelim / CC BY 3.0; File:Toulouse - Pont Saint-Pierre 01.jpg / FrDr / CC BY-SA 4.0; File:Toulouse - Pont Saint-Pierre 03.jpg / FrDr / CC BY-SA 4.0; File:Pont Saint-Pierre et dôme de la Grave (3211595308).jpg / KimonBerlin / CC BY-SA 2.0; File:Pont-Saint-Pierre - Toulouse -Sous-face du tablier en béton.jpg / Didier Descouens / CC BY-SA 4.0",
+        "references": [
+          {
+            "label": "Muller & Renault, RGRA 652 (1988), engineering abstract: length, width, sidewalks",
+            "url": "https://trid.trb.org/View/1021133"
+          },
+          {
+            "label": "Municipal Archives: inaugurated 14 November 1987",
+            "url": "https://www.archives.toulouse.fr/histoire-de-toulouse/patrimoine-urbain/dans-ma-rue/-/asset_publisher/CLQUBtXHFZEQ/content/le-pont-saint-pierre-ou-quand-la-ville-de-toulouse-sable-le-champagne-pour-la-5e-fois-?inheritRedirect=false"
+          },
+          {
+            "label": "Wikipedia: five span lengths and modern bridge identity",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Saint-Pierre_de_Toulouse"
+          },
+          {
+            "label": "OSM roadway and seasonal pedestrianisation note",
+            "url": "https://www.openstreetmap.org/way/5149948"
+          },
+          {
+            "label": "OSM structural outline and pier notches",
+            "url": "https://www.openstreetmap.org/way/1007478960"
+          },
+          {
+            "label": "Fichier:Pont-Saint-Pierre - Toulouse.jpg · Didier Descouens · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont-Saint-Pierre_-_Toulouse.jpg"
+          },
+          {
+            "label": "Fichier:Pont Saint-Pierre - Fete de la musique 2011.jpg · PierreSelim · CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Saint-Pierre_-_Fete_de_la_musique_2011.jpg"
+          },
+          {
+            "label": "File:Toulouse - Pont Saint-Pierre 01.jpg · FrDr · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont_Saint-Pierre_01.jpg"
+          },
+          {
+            "label": "File:Toulouse - Pont Saint-Pierre 03.jpg · FrDr · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont_Saint-Pierre_03.jpg"
+          },
+          {
+            "label": "File:Pont Saint-Pierre et dôme de la Grave (3211595308).jpg · KimonBerlin · CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Saint-Pierre_et_d%C3%B4me_de_la_Grave_(3211595308).jpg"
+          },
+          {
+            "label": "File:Pont-Saint-Pierre - Toulouse -Sous-face du tablier en béton.jpg · Didier Descouens · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont-Saint-Pierre_-_Toulouse_-Sous-face_du_tablier_en_b%C3%A9ton.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-saint-pierre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-saint-pierre&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-saint-pierre&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: 1987 reconstruction; 240 m between abutments, 13.2 m deck, 8 m original roadway and 0.75 m raised sidewalks. OSM road 236.09 m; pier centres from outline notches, central pitch 55 m. Estimated 7.4 m flat deck, pylon sections and brick/stone balance, 2.43 m girder camber, railing panels and lantern details. Near has masonry courses, six-sided lantern panes, denser Warren webs; far retains all five girder arches, four piers, pylons, open green rails and lantern silhouette. No temporary furniture, murals or lane paint. App pedestrian restrictions follow provider data; this model does not enable vehicle routing. Final export: near 52,228 triangles / 14 draws / 2,855 KiB (2,923,836 bytes); far 18,438 / 8 / 886 KiB (906,856 bytes). QA: zero cross-material coplanar pairs, zero back-face hits in the exterior ray sweep. Approximate flat ramp grades 9.67% south / 11.53% north; real world deck elevation is bank-fit, not surveyed. Independent review PASS-WITH-NITS (recognisability 4/5): four corrections implemented and visually checked, awaiting coordinator acceptance. White thicker lattice/thinner cornice, wider rust-brick pylons and caissons, saturated matching far piers, and 10% taller lanterns; 26 standards retained. Fresh GLB/manifest/header agree on far metrics; old review image was stale. Focused 262 tests pass; no flagged QA artifacts; app near/far rechecked in both modes. See documentation for actual inspected sheets and height table.",
+      "documentation": "docs/assets/top-cities-pont-saint-pierre.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

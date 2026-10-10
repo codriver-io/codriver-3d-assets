@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (86 released)
+## The collection (87 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -93,6 +93,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `couvent-des-jacobins` | Couvent des Jacobins | Toulouse | building |
 | `cite-de-carcassonne` | Cité de Carcassonne | Carcassonne | building |
 | `cathedrale-sainte-cecile-albi` | Albi Cathedral (Sainte-Cécile) | Albi | building |
+| `pont-saint-pierre` | Pont Saint-Pierre | Toulouse | bridge, road-fitted |
 | `pont-saint-michel` | Pont Saint-Michel | Toulouse | bridge, road-fitted |
 
 ## A landmark is a folder
