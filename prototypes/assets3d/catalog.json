@@ -17785,6 +17785,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "farris-bad",
+      "name": "Farris Bad",
+      "kind": "building",
+      "location": "Batteristranda / Fritzøe Brygge 2, Larvik, Norway",
+      "status": "ready",
+      "description": "Original procedural model of the 2009 Halvorsen & Reine spa hotel: open four-wing atrium, dark Larvikite room wings with beech balconies and aluminium shutters, 24 m sea cantilever and single concrete column, hanging glazed spa bridge, and white red-capped promenade lighthouse.",
+      "manifest": "/models/buildings/farris-bad.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/farris-bad/geometry.js",
+        "build": "pnpm build:top-cities-landmarks farris-bad --no-check",
+        "provenance": "Original texture-free procedural Three.js geometry authored 2026-10-09. Hotel outer way 219135154 and courtyard way 219135174 from OSM relation 2899596, © OpenStreetMap contributors, ODbL 1.0. Shared-helper dossier used; relation geometry obtained through a single OSM API relation/full fallback after shared Overpass returned HTTP 403. Visual-only Commons references retained exclusively in ignored tmp: Farris bad, Larvik, Vestfold, Norway - panoramio.jpg by trolvag (CC BY-SA 3.0); Farris Bad.JPG by Arnstein Rønning (CC BY-SA 3.0); Farris Bad, Larvik, 2016.jpg by Ssu (CC BY-SA 4.0); Farris Bad uteområde.jpg by GullikGulliksenAS (CC BY-SA 3.0). Architect photo Farris_03.jpg by Tove Lauluten, copyright retained; visual reference only, no redistribution. Architect-authored MUR+BETONG 2–2009 article by Øystein Rognebakke used for structure and drawings, not traced. No third-party mesh, photo or texture is shipped.",
+        "references": [
+          {
+            "label": "Halvorsen & Reine — four-wing atrium, single column and 24 m clear span",
+            "url": "https://www.heras.no/prosjekter/farrisbad"
+          },
+          {
+            "label": "Architect article, MUR+BETONG 2–2009, pages 22–27 — original plan, storeys and materials",
+            "url": "https://murbetong.no/wp-content/uploads/converted/joomdocs/902-farris.pdf"
+          },
+          {
+            "label": "Lundhs — Larvikite stone supplier, 2009 completion and façade materials",
+            "url": "https://lundhsrealstone.com/en/projects/farris-bad-larvik-a-spa-hotel-rooted-in-nature"
+          },
+          {
+            "label": "Wikipedia — 5 March 2009 opening (provided dossier)",
+            "url": "https://no.wikipedia.org/wiki/Farris_Bad_hotell"
+          },
+          {
+            "label": "OSM hotel multipolygon relation 2899596",
+            "url": "https://www.openstreetmap.org/relation/2899596"
+          },
+          {
+            "label": "trolvag — promenade, lighthouse and two hotel-room floors, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Farris_bad,_Larvik,_Vestfold,_Norway_-_panoramio.jpg"
+          },
+          {
+            "label": "Arnstein Rønning — suspended glass spa bridge and column, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Farris_Bad.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/farris-bad/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=farris-bad",
+        "views": [
+          {
+            "label": "Open atrium and sea wings",
+            "url": "/asset-preview.html?asset=farris-bad&view=overview"
+          },
+          {
+            "label": "Balcony and shutter rhythm",
+            "url": "/asset-preview.html?asset=farris-bad&view=facade"
+          },
+          {
+            "label": "Landward glazed entrance",
+            "url": "/asset-preview.html?asset=farris-bad&view=rear"
+          },
+          {
+            "label": "Footprint and suite setback",
+            "url": "/asset-preview.html?asset=farris-bad&view=roof"
+          },
+          {
+            "label": "Promenade lighthouse",
+            "url": "/asset-preview.html?asset=farris-bad&view=entrance"
+          },
+          {
+            "label": "Single sea pier and hanging spa bridge",
+            "url": "/asset-preview.html?asset=farris-bad&view=detail"
+          },
+          {
+            "label": "Inner glass façades",
+            "url": "/asset-preview.html?asset=farris-bad&view=courtyard"
+          }
+        ]
+      },
+      "notes": "Mapped hotel outline is 66.2 m across the sea wing and about 80 m deep; orientation is baked from mapped sea-edge control points. Main roof 14.6 m, NW suite roof 17.8 m, soffit 7.4 m, 1.6 m loggias and 10.56 m lighthouse are estimates. Lighthouse position is photo-located, not surveyed; its small authored replacement ring is separate from the hotel outline. Upper floor facades retain the open courtyard and under-building beach. Opaque glazing approximates reflections; thin aluminium shutters and beech dividers are geometry. Far retains the balcony bay count with planar shutter strips and simplifies glass grids and stairs. Basement, interior spa, artwork, water, beach landscaping and surrounding commercial buildings omitted. No device-performance claim. Independent review corrections: pale shutters and panels became charcoal; west/end base volumes received dark cladding and a timber band; public-floor glass is darker, divided by stone piers and recessed beneath the room-wing soffit; the lighthouse keeps its 3.1 m shaft diameter but is compacted to 10.56 m with bright white cladding and a supported gallery rim. Far folds dark metal trim into stone while retaining the white lighthouse material. Revised exported sheets and reference comparison are in tmp/top-cities/shots/farris-bad/review-fix/; automated qa-sheet reference is still the unrelated Farris bottles, so only the dossier hotel photos were used for judging.",
+      "documentation": "docs/assets/top-cities-farris-bad.md",
+      "city": "Larvik",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
