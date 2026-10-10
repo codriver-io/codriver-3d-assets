@@ -1,6 +1,10 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
 export const VIEWS = {
-  overview: [[56, 31, 80], [0, 5, 0]],
-  facade: [[0, 12, 62], [0, 3, 0]],
-  roof: [[26, 60, 26], [0, 8, 0]],
+ overview: [[-105,48,83],[0,2,0]],
+ facade: [[-95,10,20],[1,2.5,9]],
+ roof: [[25,140,55],[0,1,0]],
+ deck: [[-32,13,-70],[-8,3.5,-36]],
+ underside: [[-25,1.8,-8],[0,1.8,-7]],
+ tower: [[-27,6,12],[1,2.2,12]], // inspector's bridge-detail slot: Lucas panel, no tower here
+ back: [[80,28,-15],[0,2,5]],
+ detail: [[-23,5,15],[1,2.2,15]],
 };
