@@ -17872,6 +17872,105 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-neuf-toulouse",
+      "name": "Pont Neuf (Toulouse)",
+      "kind": "bridge",
+      "location": "Toulouse, France — Garonne",
+      "status": "ready",
+      "description": "Seven unequal brick basket arches, six pierced flood openings with pale stone surrounds, pointed cutwaters, pyramidal caps and modern lamps; original procedural road-fitted model.",
+      "manifest": "/models/bridges/pont-neuf-toulouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-neuf-toulouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-neuf-toulouse --no-check",
+        "provenance": "Original texture-free procedural model by Codriver, October 2026. Geographic outline / roadway © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photographs by Didier Descouens, Frédéric Neupont and kallerna, CC BY-SA 4.0; titles and links below. No photos, textures, scans or third-party meshes redistributed.",
+        "references": [
+          {
+            "label": "DRAC Occitanie, Pont-Neuf dimensions and architecture, pp. 48–49",
+            "url": "https://www.culture.gouv.fr/Media/Regions/Drac-Occitanie/Files/Doc-Ressources-documentaires/Doc-Publications/Doc-collection-DUO/Patrimoine-protege/Ponts-en-Occitanie/Du-pont-du-Gard-au-viaduc-de-Millau"
+          },
+          {
+            "label": "Toulouse tourism office, seven arches and flood openings",
+            "url": "https://www.toulouse-tourisme.com/en/unmissables/must-see-banks-garonne/"
+          },
+          {
+            "label": "OSM bridge outline and pier noses",
+            "url": "https://www.openstreetmap.org/way/420826560"
+          },
+          {
+            "label": "Fichier:Le Pont-Neuf de Toulouse.jpg / Didier Descouens / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Le_Pont-Neuf_de_Toulouse.jpg"
+          },
+          {
+            "label": "Fichier:Toulouse - Pont-Neuf détail pile.jpg / Frédéric Neupont / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont-Neuf_d%C3%A9tail_pile.jpg"
+          },
+          {
+            "label": "Fichier:Le pont Neuf à Toulouse.jpg / Didier Descouens / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Le_pont_Neuf_%C3%A0_Toulouse.jpg"
+          },
+          {
+            "label": "Fichier:Pont-Neuf de Toulouse 4.jpg / kallerna / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont-Neuf_de_Toulouse_4.jpg"
+          },
+          {
+            "label": "Fichier:Pont-Neuf de Toulouse 9.jpg / kallerna / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont-Neuf_de_Toulouse_9.jpg"
+          },
+          {
+            "label": "Fichier:Toulouse - Pont-Neuf (1) 01.jpg / Frédéric Neupont / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont-Neuf_(1)_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-neuf-toulouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-neuf-toulouse",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=tower"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=pont-neuf-toulouse&view=detail"
+          }
+        ]
+      },
+      "notes": "DRAC: 220 m length, 20 m deck, seven arches with 13.47–31.70 m openings. Mapped length 222.214 m retained. Deck heights, arch rises, intermediate widths, flood-opening diameters, pier widths, cutwaters, masonry, colors and lamps estimated. Flat approach steepest 10.91%. No terrain baked into GLB. No shared-file changes. Independent reviewer acceptance pending. Local-grade terrain uses existing bank-fit, after an initial absolute-deck inspection exposed buried crowns. Structural geometry is within mapped footprint plus 0.8 m provider slack; largest estimated cutwater offset 0.726 m. Near 31,426 triangles / 17 draws / 2,031 KiB; far 13,746 / 8 / 791 KiB. Review revision: deeper red brick, attached pointed stepped cutwater caps meeting flood sills, 15% larger flood openings with thicker surrounds, 30% thicker arch bands; no flagged overlaps or backfaces. Flood-opening ornament, weathering and masonry patterns remain simplified.",
+      "documentation": "docs/assets/top-cities-pont-neuf-toulouse.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
