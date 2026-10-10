@@ -2,6 +2,8 @@
 import * as THREE from 'three';
 import {assetBuilder} from '../../asset-geometry.js';
 import {SPEC,PALETTES} from './config.js';
+import {RING_OFFSETS,FOOTING_DEPTHS} from './cite-de-carcassonne-terrain.js';
+import {FOOTPRINTS} from './footprint.js';
 import {PARTS,WALLS} from './cite-de-carcassonne-plan.js';
 import {ROOF_BLOCKS,roofStrips} from './cite-de-carcassonne-roofscape.js';
 import {meshKit,center,simplify,inside} from './cite-de-carcassonne-kit.js';
@@ -11,6 +13,18 @@ const circle=(c,r,n)=>Array.from({length:n},(_,i)=>[c[0]+r*Math.cos(i*2*Math.PI/
 function edges(ring){const sign=Math.sign(ring.reduce((s,p,i)=>{const q=ring[(i+1)%ring.length];return s+p[0]*q[1]-q[0]*p[1];},0));return ring.map((a,i)=>{const c=ring[(i+1)%ring.length],L=Math.hypot(c[0]-a[0],c[1]-a[1]);return {a,c,L,t:[(c[0]-a[0])/L,(c[1]-a[1])/L],n:[sign*(c[1]-a[1])/L,-sign*(c[0]-a[0])/L]};}).filter(e=>e.L>0.15);}
 export function create({detail='near'}={}){
  const near=detail==='near',b=assetBuilder({...SPEC,palette:PALETTES.light},detail),k=meshKit(b);
+ let offset=0,footingDepth=0;
+ const setOffset=(value,depth=10)=>{offset=value;footingDepth=depth;k.setTerrainOffset(value,depth);};
+ const originalPut=b.put;
+ b.put=(g,material)=>{
+  if(!g.getAttribute('terrainOffset'))g.setAttribute('terrainOffset',new THREE.Float32BufferAttribute(Array(g.attributes.position.count).fill(offset),1));
+  if(!g.getAttribute('footingDepth'))g.setAttribute('footingDepth',new THREE.Float32BufferAttribute(Array(g.attributes.position.count).fill(footingDepth),1));
+  originalPut(g,material);
+ };
+ b.box=(material,c,size,angle=0)=>{const g=new THREE.BoxGeometry(...size);g.rotateY(angle);g.translate(...c);b.put(g,material);};
+ const sx=111319.490793*Math.cos(SPEC.origin[1]*Math.PI/180),sz=111319.490793;
+ const lineCenters=FOOTPRINTS.slice(111,134).map(r=>center(r.map(p=>[(p[0]-SPEC.origin[0])*sx,-(p[1]-SPEC.origin[1])*sz])));
+
  function wall(p){
   const r=simplify(p.ring,near?0.1:0.6),h=outer(p)?8.2:12.8;k.prism(r,BASE,h,'stone',(a,c,n)=>((a[0]+c[0])/2+30)*n[0]+((a[1]+c[1])/2+10)*n[2]>0?'glow':'stone');
   for(const e of edges(r)){
@@ -81,7 +95,8 @@ export function create({detail='near'}={}){
    // The smaller restored gatehouse cap between the twin cones.
    const rr=[[-w-1,-depth/2],[w+1,-depth/2],[w+1,depth/2],[-w-1,depth/2]].map(([u,d])=>[at(u,d,H)[0],at(u,d,H)[2]]);k.loft(rr,c,[[H,1],[H+5,0]],narbonnaise?'tile':'slate');
  }
- for(const p of PARTS){
+ for(const [partIndex,p] of PARTS.entries()){
+  setOffset(RING_OFFSETS[partIndex],FOOTING_DEPTHS[partIndex]);
   if(p.role==='wall')wall(p);
   else if(p.role==='tower')tower(p);
   else if(p.role==='gate')gate(p,p.id===26769971);
@@ -100,8 +115,25 @@ export function create({detail='near'}={}){
   }
  }
  for(const w of WALLS)for(let i=0;i<w.line.length-1;i++){
-  const a=w.line[i],c=w.line[i+1],dx=c[0]-a[0],dz=c[1]-a[1],L=Math.hypot(dx,dz);if(L<1)continue;const n=[dz/L*.75,-dx/L*.75];wall({id:54852952,ring:[[a[0]+n[0],a[1]+n[1]],[c[0]+n[0],c[1]+n[1]],[c[0]-n[0],c[1]-n[1]],[a[0]-n[0],a[1]-n[1]]]});
+  const a=w.line[i],c=w.line[i+1],dx=c[0]-a[0],dz=c[1]-a[1],L=Math.hypot(dx,dz);if(L<1)continue;const mid=[(a[0]+c[0])/2,(a[1]+c[1])/2];let closest=0;for(let j=1;j<lineCenters.length;j++)if(Math.hypot(...lineCenters[j].map((v,k)=>v-mid[k]))<Math.hypot(...lineCenters[closest].map((v,k)=>v-mid[k])))closest=j;setOffset(RING_OFFSETS[111+closest]);const n=[dz/L*.75,-dx/L*.75];wall({id:54852952,ring:[[a[0]+n[0],a[1]+n[1]],[c[0]+n[0],c[1]+n[1]],[c[0]-n[0],c[1]-n[1]],[a[0]-n[0],a[1]-n[1]]]});
  }
- for(const block of ROOF_BLOCKS)for(const strip of roofStrips(block))gabled(strip.ring,BASE,strip.eave,strip.rise,'tile');
- k.flush();return b.finish();
+ let roofIndex=135;
+ for(const block of ROOF_BLOCKS)for(const strip of roofStrips(block)){setOffset(RING_OFFSETS[roofIndex],FOOTING_DEPTHS[roofIndex++]);gabled(strip.ring,BASE,strip.eave,strip.rise,'tile');}
+ k.flush();const model=b.finish();
+ for(const mesh of model.children){
+  const g=mesh.geometry,pos=g.attributes.position,offsets=g.getAttribute('terrainOffset'),depths=g.getAttribute('footingDepth');
+  const values=Array.from({length:pos.count},(_,i)=>offsets.getX(i)-(Math.abs(pos.getY(i)-BASE)<.01?depths.getX(i):0));
+  // Stable vertex reordering leaves every triangle and normal unchanged, while
+  // compacting world offsets to one run per level instead of per stone face.
+  const order=Array.from({length:pos.count},(_,i)=>i).sort((a,b)=>values[a]-values[b]),inverse=new Uint32Array(pos.count);
+  order.forEach((old,i)=>{inverse[old]=i;});
+  g.deleteAttribute('terrainOffset');g.deleteAttribute('footingDepth');
+  for(const attr of Object.values(g.attributes)){const before=attr.array.slice();for(let i=0;i<order.length;i++)for(let j=0;j<attr.itemSize;j++)attr.array[i*attr.itemSize+j]=before[order[i]*attr.itemSize+j];}
+  for(let i=0;i<g.index.count;i++)g.index.array[i]=inverse[g.index.array[i]];
+  const runs=[];
+  for(let start=0;start<order.length;){const value=values[order[start]];let end=start+1;while(end<order.length&&values[order[end]]===value)end++;if(value!==0)runs.push([start,end-start,value]);start=end;}
+  mesh.userData.terrainOffsets=runs;
+ }
+
+ return model;
 }
