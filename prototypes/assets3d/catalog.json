@@ -18260,6 +18260,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ponts-jumeaux",
+      "name": "Ponts-Jumeaux",
+      "kind": "bridge",
+      "location": "Toulouse, France",
+      "city": "Toulouse",
+      "status": "ready",
+      "description": "Historic brick canal arches with pale stone rings and coping, the basin-facing raised Lucas marble relief, and two independently fitted adjacent boulevard decks.",
+      "manifest": "/models/bridges/ponts-jumeaux.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ponts-jumeaux/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ponts-jumeaux --no-check",
+        "provenance": "Original texture-free procedural geometry authored for Codriver, 2026-10-09. OSM dossier alignments © OpenStreetMap contributors, ODbL 1.0. Reference-only photos: Didier Descouens, Ponts-Jumeaux Toulouse (CC BY-SA 3.0), Bas-relief de François Lucas and Canal latéral à la Garonne (CC BY-SA 4.0); images remain in ignored scratch and are not embedded or traced. Relief shapes are an abstract original panel, not reproduced sculpture.",
+        "references": [
+          {
+            "label": "Mérimée IA31124758: historic bridges, materials and Lucas relief",
+            "url": "https://pop.culture.gouv.fr/notice/merimee/IA31124758"
+          },
+          {
+            "label": "Mérimée PA00094628: protected twin bridges",
+            "url": "https://pop.culture.gouv.fr/notice/merimee/PA00094628"
+          },
+          {
+            "label": "Toulouse Métropole: Lucas bas-relief",
+            "url": "https://metropole.toulouse.fr/annuaire/bas-relief-des-ponts-jumeaux"
+          },
+          {
+            "label": "Didier Descouens: Ponts-Jumeaux Toulouse, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ponts-Jumeaux_Toulouse.jpg"
+          },
+          {
+            "label": "Didier Descouens: Lucas relief, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bas-relief_de_Fran%C3%A7ois_Lucas_-_Ponts_Jumeaux_-_Toulouse.jpg"
+          },
+          {
+            "label": "Didier Descouens: Canal latéral à la Garonne, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Canal_lat%C3%A9ral_%C3%A0_la_Garonne.jpg"
+          },
+          {
+            "label": "OpenStreetMap north boulevard way",
+            "url": "https://www.openstreetmap.org/way/441406351"
+          },
+          {
+            "label": "OpenStreetMap south boulevard way",
+            "url": "https://www.openstreetmap.org/way/22689673"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ponts-jumeaux/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ponts-jumeaux",
+        "views": [
+          {
+            "label": "Basin frontage",
+            "url": "/asset-preview.html?asset=ponts-jumeaux&view=facade"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ponts-jumeaux&view=overview"
+          },
+          {
+            "label": "Plan / road alignment",
+            "url": "/asset-preview.html?asset=ponts-jumeaux&view=roof"
+          },
+          {
+            "label": "Arch underside",
+            "url": "/asset-preview.html?asset=ponts-jumeaux&view=underside"
+          },
+          {
+            "label": "Lucas panel",
+            "url": "/asset-preview.html?asset=ponts-jumeaux&view=detail"
+          },
+          {
+            "label": "Canal side",
+            "url": "/asset-preview.html?asset=ponts-jumeaux&view=back"
+          }
+        ]
+      },
+      "notes": "All vertical dimensions, masonry widths, connecting wall / historic arch dimensions and stations and relief dimensions are visual estimates; horizontal road centerlines are mapped. Modern boulevard decks are deliberately subordinate and simplified. The panel is a shallow raised low-poly interpretation. No shared bridge files changed. North flat ramp 45.49 m (13.85% maximum), other ramps 60 m (10.5%). Live HD lane paint requires Redis and is unavailable locally; terrain/lifecycle status is recorded in the document. The central historic arch is pedestrian; the south historic arch belongs to its road profile and supports its deck. The relief wall and return follow the basin outside car lanes. Independent review PASS-WITH-NITS findings addressed: wider warm-white continuous relief, merged plain brick faces without mortar moire, thin coping and a shared 5.23 m wall top; final exports and both app modes checked again.",
+      "documentation": "docs/assets/top-cities-ponts-jumeaux.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "id": "ponts-jumeaux",
+  "name": "Ponts-Jumeaux",
+  "kind": "bridge",
+  "origin": [
+    1.41868,
+    43.61099
+  ],
+  "height": 5.25,
+  "padM": 100,
+  "frontageBearing": 258,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local canal-side grade y=0, metres east/up/south; no DEM or sea-level altitude baked in. Historic deck 4.7 m, boulevard decks 4.2 m are estimated flat-map offsets. Bank-fit terrain profiles are checked separately.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Historic basket-handle brick arches, stone rings and coping, and a raised abstract Carrara marble relief panel. Dimensions other than OSM horizontal alignment are photographic estimates, not survey. Adjacent north/south vehicle bridges have independent profiles and simpler fascias; ornamental relief is not a reproduction of the sculpture.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/ponts-jumeaux-near.glb",
+      "bytes": 330892,
+      "triangles": 5121,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -69.30122375488281,
+          -0.23499999940395355,
+          -55.84479904174805
+        ],
+        "max": [
+          70.6460952758789,
+          5.230000019073486,
+          67.76334381103516
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/ponts-jumeaux-far.glb",
+      "bytes": 205772,
+      "triangles": 3744,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -69.30122375488281,
+          -0.23499999940395355,
+          -55.84479904174805
+        ],
+        "max": [
+          70.6460952758789,
+          5.230000019073486,
+          67.76334381103516
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ponts-jumeaux/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
