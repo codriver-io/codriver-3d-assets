@@ -17971,6 +17971,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "viaduc-de-millau",
+      "name": "Millau Viaduct",
+      "kind": "bridge",
+      "location": "A75, Millau–Creissels, Aveyron, France",
+      "city": "Millau",
+      "status": "ready",
+      "description": "Original procedural multi-span cable-stayed viaduct with seven A-shaped steel masts, 154 single-plane fan stays, tapered twin-shaft concrete piers and a thin curved steel deck.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/viaduc-de-millau/geometry.js",
+        "build": "pnpm build:top-cities-landmarks viaduc-de-millau --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-09; no captured/traced mesh or photographic textures. Mapped outline and roadway © OpenStreetMap contributors (ODbL 1.0). Reference photographs used only for visual comparison: Millau Viaduct, France (39307678014), Mike McBey, CC BY 2.0; ViaducdeMillau, Mike Switzerland, CC BY-SA 2.5; Creissels et Viaduct de Millau, Stefan Krause, CC BY-SA 3.0; Panorama Viadukt von Millau 2004 A75, Wolfgang Pehlemann, CC BY-SA 3.0; Viaduc de Millau 1, Vincent, public domain. Licences from supplied dossier.",
+        "references": [
+          {
+            "label": "Eiffage official key figures: spans, pylons, stay count, grade and curvature",
+            "url": "https://www.leviaducdemillau.com/sites/viaducdemillau/accueil-viaduc-de-millau/le-viaduc/les-chiffres-cles.html"
+          },
+          {
+            "label": "Identity, exact width and structural summary",
+            "url": "https://en.wikipedia.org/wiki/Millau_Viaduct"
+          },
+          {
+            "label": "Mapped deck outline",
+            "url": "https://www.openstreetmap.org/way/440836275"
+          },
+          {
+            "label": "Aerial reference: Mike Switzerland, CC BY-SA 2.5 (file page checked; Commons copy deleted)",
+            "url": "https://en.wikipedia.org/wiki/File:ViaducdeMillau.jpg"
+          },
+          {
+            "label": "Buonomo, Raas, Schröter (fabricator article): published pier heights, mast sections, deck and wind screens",
+            "url": "https://www.dillinger.de/app/uploads/2024/03/20160215023853-dh_gro__e_viadukt_von_millau.pdf"
+          },
+          {
+            "label": "Valley reference: Stefan Krause, CC BY-SA 3.0 (file page checked)",
+            "url": "https://commons.wikimedia.org/wiki/File:Creissels_et_Viaduct_de_Millau.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/viaduc-de-millau/geometry.js"
+      },
+      "documentation": "docs/assets/top-cities-viaduc-de-millau.md",
+      "notes": "Near 68,442 triangles / 32 draws / 2034 KiB; far 14,280 / 7 / 334 KiB. Export/source and near/far light/dark contact sheet viewed beside licensed supplied photos; 255 focused tests and catalog checks pass. North finished-road datum, negative published pier lengths; belowGradeM=240 relies on coordinator conformance exception ca15277f. Cityscape flattens deck and hides piers below grade; world uses live plateau datum and trims lower support shafts. Zero coplanar overlaps and 0% back-face hits; generic QA flags intentional negative feet only. Approximate stay anchors, section interpolation, continuous 3.2 m wind screens with near louvre bands and abutments. Published 343 m is foundation-to-crown, distinct from local +155.25 m crown. No buried foundation geometry or texture assets. Independent review corrections: light steel whitened to #e6e9e8; stay radii enlarged to 0.45 m near / 1.30 m far for visibility, with four representative strands per far half-fan. Two export look-fix iterations; physical stay diameters are not claimed. Whole-bridge 480 px QA tiles still undersample thin geometry; full-sized facade and mast renders show continuous fans. Final rebuilt app-shot far/near/street check reports loaded and active in Cityscape and terrain; app mode sheet viewed after the second export.",
+      "manifest": "/models/bridges/viaduc-de-millau.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=viaduc-de-millau&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=underside"
+          },
+          {
+            "label": "Footing",
+            "url": "/asset-preview.html?asset=viaduc-de-millau&view=footing"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

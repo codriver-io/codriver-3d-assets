@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (84 released)
+## The collection (85 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -85,6 +85,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `farris-bad` | Farris Bad | Larvik | building |
 | `pont-neuf-toulouse` | Pont Neuf (Toulouse) | Toulouse | bridge, road-fitted |
 | `pont-des-catalans` | Pont des Catalans | Toulouse | bridge, road-fitted |
+| `viaduc-de-millau` | Millau Viaduct | Millau | bridge, road-fitted |
 | `basilique-saint-sernin` | Basilica of Saint-Sernin | Toulouse | building |
 | `capitole-de-toulouse` | Capitole de Toulouse | Toulouse | building |
 | `dome-de-la-grave` | Dôme de la Grave (Chapelle Saint-Joseph) | Toulouse | building |
