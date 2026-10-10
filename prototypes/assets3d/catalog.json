@@ -18062,6 +18062,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-saint-michel",
+      "name": "Pont Saint-Michel",
+      "kind": "bridge",
+      "location": "Toulouse, France",
+      "status": "ready",
+      "description": "Freyssinet’s concrete bridge across the Garonne and northern Île du Ramier: four open V-shaped piers with broad chamfered arms and tapered beam haunches below five longitudinal soffit lines and a continuous shallow 26 m deck, with reserved tram tracks.",
+      "manifest": "/models/bridges/pont-saint-michel.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-saint-michel/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-saint-michel --no-check",
+        "provenance": "Original procedural geometry, 2026-10-09. OSM-derived alignment and envelope © OpenStreetMap contributors, ODbL 1.0. Supplied Commons reference photographs inspected: Pont Saint-Michel Toulouse.JPG and Pile du pont Saint-Michel Toulouse.JPG, Serydicule, CC BY-SA 3.0; Toulouse - Pont Saint-Michel -1.JPG and -2.JPG, MOSSOT, CC BY-SA 3.0. References remain ignored scratch; no photograph, texture, scan or third-party mesh ships.",
+        "references": [
+          {
+            "label": "French Ministry of Culture — dimensions and construction",
+            "url": "https://pop.culture.gouv.fr/notice/merimee/EA31000008"
+          },
+          {
+            "label": "Eugène Freyssinet Association — 1959–1962 construction",
+            "url": "https://efreyssinet-association.com/apropos/ses-ouvrages/"
+          },
+          {
+            "label": "Mapped bridge envelope",
+            "url": "https://www.openstreetmap.org/way/563384165"
+          },
+          {
+            "label": "Pont Saint-Michel Toulouse — Serydicule, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Saint-Michel_Toulouse.JPG"
+          },
+          {
+            "label": "Pile du pont Saint-Michel Toulouse — Serydicule, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pile_du_pont_Saint-Michel_Toulouse.JPG"
+          },
+          {
+            "label": "Toulouse - Pont Saint-Michel -2 — MOSSOT, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont_Saint-Michel_-2.JPG"
+          },
+          {
+            "label": "Toulouse - Pont Saint-Michel -1 — MOSSOT, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Pont_Saint-Michel_-1.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-saint-michel/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-saint-michel&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-saint-michel&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced main structure 326 m, five spans 65.2 m, four V-piers, five parallel rectangular girder lines, 26 m width. The 550 m published total is approximate compared to the full mapped alignment. Eight-metre deck datum, V-arm section/attachment reach, footings, east short-span piers, railings, lamps and tram fittings estimated. Flat-map deck ramps over the first/last 100 m: 12% peak grade. Green night wash approximates the supplied illuminated photographs; current illumination programme is not asserted. No surveyed absolute elevation. Near 38,012 triangles / 16 draws / 1,517.59 KiB; far 15,888 / 8 / 583.18 KiB. QA: zero coplanar overlaps and back-face hits. App evidence is limited standard-road/relative terrain validation. Independent review: broad chamfered V-arm plates replace isolated ribs; principal face is approximately 51 degrees, five short tapered haunches meet each shoulder, and fascia/girders share the pale neutral grey pier albedo. Near/far openings, width, silhouette and road profile retained; original photos used for verification.",
+      "documentation": "docs/assets/top-cities-pont-saint-michel.md",
+      "city": "Toulouse",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
