@@ -1,0 +1,66 @@
+{
+  "id": "pont-saint-pierre",
+  "name": "Pont Saint-Pierre",
+  "kind": "bridge",
+  "origin": [
+    1.4348263,
+    43.60220035
+  ],
+  "height": 14.9,
+  "padM": 170,
+  "frontageBearing": 27.6,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat Cityscape grade y=0, no sea-level or DEM elevations baked in. Estimated 7.4 m main deck; ends join mapped approaches. World uses bank-fit, interpolated bank datums and independently grounded pier feet.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current 1987 steel/concrete bridge, five shallow lattice girder spans, four brick-and-stone river piers, raised stone pylons, green cast-metal railings and paired lantern arms. Published length 240 m and width 13.2 m; mapped road 236.09 m, mapped pier pitch approximately 55 m. Pylon, steel sections, lanterns and deck clearance are photographic estimates. Seasonal pedestrian OSM tags preserved; no lane paint or seasonal furniture authored.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-saint-pierre-near.glb",
+      "bytes": 2924360,
+      "triangles": 52228,
+      "drawCalls": 14,
+      "bounds": {
+        "min": [
+          -95.87166595458984,
+          -0.1599999964237213,
+          -160.60313415527344
+        ],
+        "max": [
+          84.17646789550781,
+          14.892999649047852,
+          177.03076171875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-saint-pierre-far.glb",
+      "bytes": 907384,
+      "triangles": 18438,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -95.87166595458984,
+          -0.1599999964237213,
+          -160.60313415527344
+        ],
+        "max": [
+          84.17646789550781,
+          14.892999649047852,
+          177.03076171875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-saint-pierre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
