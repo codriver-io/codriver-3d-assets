@@ -16,6 +16,10 @@
     "region": "Alberta",
     "continent": "North America"
   },
+  "Bénouville": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Bergen": {
     "country": "Norway",
     "continent": "Europe"
@@ -26,6 +30,10 @@
   },
   "Bucharest": {
     "country": "Romania",
+    "continent": "Europe"
+  },
+  "Caen": {
+    "country": "France",
     "continent": "Europe"
   },
   "Calgary": {
@@ -63,6 +71,14 @@
   },
   "Hamar": {
     "country": "Norway",
+    "continent": "Europe"
+  },
+  "Hérouville-Saint-Clair": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Honfleur": {
+    "country": "France",
     "continent": "Europe"
   },
   "Kansas City": {
