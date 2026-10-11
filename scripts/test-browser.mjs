@@ -1,6 +1,7 @@
 import {chromium} from 'playwright';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 const base=process.argv[2]||'http://localhost:4173',out=process.argv[3]||'tmp/browser';
 await mkdir(out,{recursive:true});
 const catalog=JSON.parse(await readFile('dist/asset-catalog.json'));
@@ -30,7 +31,12 @@ try{
  await page.locator('#library').scrollIntoViewIfNeeded();await page.screenshot({path:out+'/mobile-library.png'});
  await page.locator('#search').fill('Jacques');await page.locator('[data-id="pont-jacques-cartier"]').click();
  assert.ok(await page.locator('#inspector-dialog').evaluate(d=>d.open),'Mobile sheet opens');
- assert.equal(await page.locator('#mobile-detail .files a[download]').count(),2);
+ assert.equal(await page.locator('#mobile-detail .files:not(.scene-files) a[download]').count(),2);
+ const scenes=JSON.parse(await readFile('dist/scenes/catalog.json')),scene=scenes.scenes[0];
+ assert.equal(await page.locator('#mobile-detail .scene-files a[download]').count(),1);
+ const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#mobile-detail .scene-files a[download]').click()]);
+ await download.saveAs(out+'/downloaded-scene.zip');
+ assert.equal(createHash('sha256').update(await readFile(out+'/downloaded-scene.zip')).digest('hex'),scene.sha256);
  await page.locator('#mobile-detail iframe').waitFor();
  await page.frameLocator('#mobile-detail iframe').locator('#metrics').filter({hasText:'triangles'}).waitFor({state:'attached'});
  await page.screenshot({path:out+'/mobile-model.png'});
@@ -110,5 +116,8 @@ try{
  await page.goto(base+'/bridge-preview.html?view=piers');await page.waitForFunction(()=>Number.parseFloat(document.querySelector('#triangles')?.textContent)>0);
  assert.equal(await page.locator('#error').textContent(),'');await page.screenshot({path:out+'/champlain-piers.png'});
  await page.goto(base+'/licenses.html');assert.match(await page.locator('body').innerText(),/CC BY 4.0/);
+ await page.goto(base+'/scenes.html');assert.match(await page.locator('body').innerText(),/Experimental scene/);
+ await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Scene page fits mobile');
+ await page.screenshot({path:out+'/mobile-scene-info.png'});
  assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);console.log(`PASS public library, logo/contribution link, desktop/mobile, ${report.length} viewers, GLB/procedural, LOD/theme, Champlain piers, licenses`);
 }finally{await writeFile(out+'/report.json',JSON.stringify({base,report,errors,failed},null,2));await browser.close();}

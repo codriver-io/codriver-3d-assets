@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { access, readFile, readdir, stat } from 'node:fs/promises';
 import { resolve, join, relative } from 'node:path';
 import { ROOT, loadAssetCatalog, glbMetrics } from './asset-catalog.mjs';
+import { checkSceneReleases } from './check-scenes.mjs';
 
 const catalog=await loadAssetCatalog(),out=resolve(ROOT,'dist');
 assert.ok(catalog.assets.length>0);
@@ -40,4 +41,5 @@ async function inspect(dir){for(const item of await readdir(dir,{withFileTypes:t
   }
 }}
 await inspect(out);
+await checkSceneReleases(out);
 console.log(`PASS ${catalog.assets.length} licensed models, ${variants} self-contained GLBs, public views, metadata, notices and deployment contents`);

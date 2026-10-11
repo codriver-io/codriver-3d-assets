@@ -1,7 +1,7 @@
 import { track } from './analytics.js';
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search), mobile = matchMedia('(max-width: 760px)');
-let assets = [], places = {}, kind = params.get('kind') || 'all';
+let assets = [], scenes = [], places = {}, kind = params.get('kind') || 'all';
 const levels = ['continent', 'country', 'region', 'city'];
 let geography = Object.fromEntries(levels.map(key => [key, params.get(key) || 'all']));
 const collapsed = new Set();
@@ -47,6 +47,13 @@ function show(entry, open = false) {
     const files = el('div', null, 'files');
     for (const [variant, file] of variants) { const a = link(null, `${file.url}?v=${file.bytes}-${file.triangles}`); a.download = ''; a.addEventListener('click', () => track('Download', { asset: entry.id, detail: variant, city: cityOf(entry), kind: entry.kind, from: 'library' })); const label = el('span', `${variant === 'near' ? 'High detail' : variant === 'far' ? 'Low detail' : variant} GLB`); label.append(el('small', `${(file.bytes / 1024 / 1024).toFixed(2)} MB · ${file.triangles.toLocaleString()} triangles`)); a.append(label, el('span', '↓')); files.append(a); } info.append(files);
     const sources = el('div', null, 'source-links'); sources.append(link('Editable source ↗', entry.source.url), link('Manifest / coordinates ↗', entry.manifest)); info.append(sources);
+    const scene = scenes.find(s => s.assetId === entry.id);
+    if (scene) {
+      const heading = el('div', null, 'download-heading'); heading.append(el('span', 'Experimental scene'), link('What’s included ↗', '/scenes.html')); info.append(heading);
+      const files = el('div', null, 'files scene-files'), a = link(null, `${scene.url}?v=${scene.sha256.slice(0, 12)}`); a.download = '';
+      const label = el('span', 'Bridge + terrain scene'); label.append(el('small', `${(scene.bytes / 1024 / 1024).toFixed(2)} MB ZIP · Flat + terrain GLBs · Source inputs`));
+      a.append(label, el('span', '↓')); files.append(a); info.append(files);
+    }
     if (entry.components?.length || entry.parent) { info.append(el('p', entry.parent ? 'Part of the Jacques-Cartier bridge kit. Components share one geographic origin.' : 'Complete the bridge kit with four separately downloadable island-access ramps.')); const components = el('div', null, 'components'); for (const id of entry.components || [entry.parent]) { const item = assets.find(a => a.id === id); if (!item) continue; const b = el('button', item.parent ? id.replace('pont-jacques-cartier-', '').replace('-', ' ') + ' ramp ↗' : 'Main bridge ↗'); b.onclick = () => show(item, mobile.matches); components.append(b); } info.append(components); }
     const metrics = el('div', null, 'metrics'); for (const [value, label] of [[primary[1].triangles.toLocaleString(), `${primary[0]} triangles`], [String(primary[1].drawCalls), 'draw calls'], [String(variants.length), 'detail variants']]) { const metric = el('div', null, 'metric'); metric.append(el('strong', value), el('span', label)); metrics.append(metric); } info.append(metrics);
     const provenance = el('details'); provenance.append(el('summary', 'Provenance & references'), el('p', entry.source.provenance)); const refs = el('ul'); for (const ref of entry.source.references) { const li = el('li'), a = link(ref.label + ' ↗', ref.url); a.target = '_blank'; a.rel = 'noopener'; li.append(a); refs.append(li); } provenance.append(refs); info.append(provenance);
@@ -125,8 +132,10 @@ mobile.addEventListener('change', () => {
   if (!mobile.matches) { $('inspector-dialog').close(); const entry = assets.find(e => e.id === selected); if (entry) show(entry); }
   else if (!$('inspector-dialog').open) { $('detail').replaceChildren(); shown = null; }
 });
-Promise.all(['/asset-catalog.json', '/places.json'].map(url => fetch(url).then(r => { if (!r.ok) throw new Error('The library could not load. Please refresh to try again.'); return r.json(); }))).then(([data, geographyTable]) => {
+Promise.all([...['/asset-catalog.json', '/places.json'].map(url => fetch(url).then(r => { if (!r.ok) throw new Error('The library could not load. Please refresh to try again.'); return r.json(); })),
+  fetch('/scenes/catalog.json').then(r => { if (!r.ok) throw new Error('Scene catalog unavailable'); return r.json(); }).catch(() => ({ scenes: [] }))]).then(([data, geographyTable, packages]) => {
   places = geographyTable;
+  scenes = packages.scenes;
   const featured = ['pont-jacques-cartier','paris-tour-eiffel','cn-tower','biosphere-montreal','paris-louvre','samuel-de-champlain'];
   const rank = entry => featured.includes(entry.id) ? featured.indexOf(entry.id) : featured.length;
   assets = data.assets.sort((a,b) => rank(a)-rank(b)); const cities = [...new Set(assets.map(cityOf))]; populatePlaces(); if (!['all','bridge','building'].includes(kind)) kind = 'all'; updateFilters();

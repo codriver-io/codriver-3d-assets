@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "jacques-cartier-scene",
+      "assetId": "pont-jacques-cartier",
+      "url": "/scenes/jacques-cartier-scene.zip",
+      "bytes": 3341891,
+      "sha256": "84f9c87f20f06cadaedb13c350782ff441fceecabfd43f9a4c2ffa7799b68fa4",
+      "verifiedFiles": 13,
+      "format": "codriver-scene",
+      "version": 1,
+      "validation": {
+        "viewer": "verified",
+        "app": {
+          "cityscape": "not tested",
+          "world": "not tested"
+        },
+        "evidence": "GLB export/reload: equal topology, <1 mm bounds difference; browser hashes checked"
+      },
+      "geometry": {
+        "near.glb": {
+          "meshes": 34,
+          "triangles": 48602
+        },
+        "far.glb": {
+          "meshes": 6,
+          "triangles": 25406
+        },
+        "cityscape.glb": {
+          "meshes": 37,
+          "triangles": 69338
+        },
+        "world.glb": {
+          "meshes": 37,
+          "triangles": 69338
+        }
+      }
+    }
+  ]
+}
