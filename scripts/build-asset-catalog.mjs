@@ -13,6 +13,7 @@ export async function buildAssetCatalogPreview() {
   for(const [name,dir] of pages)await copyFile(resolve(ROOT,dir,`${name}.html`),resolve(out,`${name}.html`));
   await copyFile(resolve(out,'asset-catalog.html'),resolve(out,'index.html'));
   await cp(resolve(ROOT,'public/models'),resolve(out,'models'),{recursive:true});
+  await cp(resolve(ROOT,'public/scenes'),resolve(out,'scenes'),{recursive:true});
   await writeFile(resolve(out,'asset-catalog.json'),JSON.stringify(catalog,null,2)+'\n');
   for(const file of ['LICENSE','LICENSE-MODELS.txt','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md'])await copyFile(resolve(ROOT,file),resolve(out,file));
   await mkdir(resolve(out,'docs'),{recursive:true});
