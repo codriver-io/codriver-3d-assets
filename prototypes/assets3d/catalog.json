@@ -19119,6 +19119,129 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "abbaye-aux-dames",
+      "name": "Abbaye aux Dames (La Trinité)",
+      "kind": "building",
+      "location": "Place Reine Mathilde, Caen, Normandie, France",
+      "status": "ready",
+      "description": "Present Romanesque abbey church with twin square balustraded west towers, layered triple portals, slate-roofed crossing tower and semicircular apse, plus classical three-wing convent, dormers, open cloister arcades and connected Hôtel-Dieu/Sainte-Anne annexes.",
+      "manifest": "/models/buildings/abbaye-aux-dames.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/abbaye-aux-dames/geometry.js",
+        "build": "pnpm build:top-cities-landmarks abbaye-aux-dames --no-check",
+        "provenance": "Original procedural Three.js model authored 2026-10-10. No textures, scans, traced third-party meshes or retained photos ship. OSM outlines and all building parts verified through the shared Overpass helper, © OpenStreetMap contributors, ODbL 1.0. Supplied Commons references: 1702 layout engraving by Louis Boudan (public domain; layout only), facade photos by Pradigue (CC BY-SA 3.0), HUOT Jean-Louis (CC0), Paul Hermans (CC BY-SA 4.0) and Patrick from Compiègne (CC BY-SA 2.0); supplementary present-day convent photo by Tango7174 (CC BY-SA 4.0) and portico photo by Karldupart (CC BY-SA 3.0), checked on their Commons description pages. These are visual references only.",
+        "references": [
+          {
+            "label": "Région Normandie: official identity and visitor information",
+            "url": "https://www.normandie.fr/visites-de-labbaye-aux-dames"
+          },
+          {
+            "label": "Région Normandie: chronology, unfinished cloister and terrain drop beneath apse",
+            "url": "https://www.normandie.fr/sites/default/files/2020-09/Depliant_abbaye-aux-dames_2018.pdf"
+          },
+          {
+            "label": "Wikipedia: church plan dimensions and nineteenth-century restoration",
+            "url": "https://fr.wikipedia.org/wiki/Abbaye_aux_Dames_de_Caen"
+          },
+          {
+            "label": "OpenStreetMap: church footprint",
+            "url": "https://www.openstreetmap.org/way/155702894"
+          },
+          {
+            "label": "OpenStreetMap: convent footprint",
+            "url": "https://www.openstreetmap.org/way/50073918"
+          },
+          {
+            "label": "Reference 1.jpg · Louis Boudan · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_abbayeauxdames_1702.jpg"
+          },
+          {
+            "label": "Reference 2.jpg · Pradigue · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Abbaye_aux-dames_caen.jpg"
+          },
+          {
+            "label": "Reference 3.jpg · HUOT Jean-Louis · CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Abbaye_aux_dames_caen_(3).jpg"
+          },
+          {
+            "label": "Reference 4.jpg · Paul Hermans · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_-_Abbaye_aux_Dames_21-08-2013_12-47-06.jpg"
+          },
+          {
+            "label": "Reference 5.jpg · Patrick from Compiègne, France · CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_(Calvados)_-_Abbaye_aux_Dames_-_Eglise_abbatiale_de_la_Trinit%C3%A9_(48735707111).jpg"
+          },
+          {
+            "label": "Reference 6.jpg · Patrick from Compiègne, France · CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_(Calvados)_-_Abbaye_aux_Dames_-_Eglise_abbatiale_de_la_Trinit%C3%A9_(48730534401).jpg"
+          },
+          {
+            "label": "Modern convent exterior · Tango7174 · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Normandie_Calvados_Caen1_tango7174.jpg"
+          },
+          {
+            "label": "Portico gallery · Karldupart · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_abbayeauxdames_portique_galerie.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/abbaye-aux-dames/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=abbaye-aux-dames&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=roof"
+          },
+          {
+            "label": "Apse",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=apse"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=street"
+          },
+          {
+            "label": "Portal",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=portal"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=tower"
+          },
+          {
+            "label": "South-east stair turret",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=turret"
+          },
+          {
+            "label": "Cloister",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=cloister"
+          },
+          {
+            "label": "Arcade",
+            "url": "/asset-preview.html?asset=abbaye-aux-dames&view=arcade"
+          }
+        ]
+      },
+      "notes": "Church mapped envelope agrees with nominal 80 m length, 19 m nave and 32 m transept; buttress feet widen the transept to approximately 33 m. Heights are photographic estimates: west crowns 34 m, crossing finial 36 m, convent eaves 14 m, hipped pavilion ridges 23 m. West crowns have actual holes, belfries have solid dark inset backing, cloister arcades have a real gallery, and the courtyard remains empty. Portal relief projects up to 1.2 m beyond the cadastre wall line. Fine sculpture, masonry joints, roof tiles and interiors are simplified; dark theme has dim masonry/glass without invented lights. Costs are read from the exported manifest; Tesla performance and terrain integration are unverified. Independent review fixes: buried stair turrets now project visibly with curved walls and slit openings; west tower corner pilasters are thicker and a short blind arcade precedes the belfry; nave/facade corbel tables and stepped gable plinth are readable; transept and apse windows sit on actual mapped walls; four broad apse pilaster strips and a cornice articulate the drum; church limestone is darker than the paler convent in both palettes, with eight draws preserved. Final GLBs: near 44,475 triangles / 8 draws / 1,923,364 bytes (1,878 KiB); far 10,958 triangles / 8 draws / 466,684 bytes (456 KiB). All nine applicable Abbaye aux Dames checks and the catalog passed; combined run has an unrelated Bayeux far-byte failure. Deterministic QA has no issues, 0% back-face hits and no removable attributes. Exported near/far light/dark comparison sheet was opened and judged beside current attributed reference photos; one revision visual iteration was sufficient.",
+      "documentation": "docs/assets/top-cities-abbaye-aux-dames.md",
+      "city": "Caen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
