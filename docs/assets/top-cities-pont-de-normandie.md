@@ -121,6 +121,8 @@ HD pavement/paint is unavailable locally: `/osm-lanes` returns 503 without Redis
 
 Independent visual review and any release remain the coordinator's separate gates. Only this landmark's source folder, catalog fragment, documentation and exports are retained; generated renderer bundles are restored and slot D servers are stopped before completion.
 
+The historical HD 503 limitations above describe the original October 10 run. The October 11 live-HD correction and evidence below supersede them.
+
 
 ## Independent review correction, 2026-10-10
 
@@ -140,3 +142,54 @@ The final metrics file `tmp/top-cities/pont-de-normandie/review-fix-metrics.json
 Re-ran app far/near/street captures and live `heightAt` queries in both Cityscape and Full 3D world on slot D. All six app views loaded/activated the expected LOD; all 20 mapped roadway vertices remain owned in both directions in each mode. The live table above now records the revised crown: Cityscape **59.5 / 59.5 m**, world **59.053 / 59.127 m** above local ground. Every tower, physical abutment, grade foot and 20 m landing sample is unchanged from the previous fit; feet/landings remain **0 / 0 m**. The maximum main-span grade is 4.22%, below the unchanged maximum approach grade of 7.25%.
 
 Opened the new `review-fix/app-modes-sheet.jpg` and `review-fix/app-approaches-sheet.jpg` (six mode views and sixteen bank/heading views). The higher crown preserves the existing deck/approach contact without an observed step or gap; ordinary-road width/colour transitions remain visible. Live HD pavement/paint still returns 503 without Redis, so its existing synthetic tests supply the HD landing evidence; a complete active navigation session remains untested. No shared integration source changed.
+
+## Live HD correction, 2026-10-11
+
+Only `REVIEW-2.md` is addressed in this pass. The released proportions, cables, palettes and static geometry are retained. Two look/fix iterations were used on coordinator-authorized slot C: Cityscape 3278, Full 3D world 3280, Redis 6391, Protomaps tiles and 256 px Terrarium DEM (max zoom 15).
+
+The initial live north-bank probe captured **four** visible overlays, two pavement and two paint batches, spanning stations approximately 32.64–1297.17 m. Ownership and the +0.06 m pavement / +0.08 m paint lifts were working. The missing paint came from the fitted model: OSM carriageway polygons overlap the median slightly, and a polygon's first vertex can lie on the opposite side. Without a declared median gap, the width sampler produced negative-side edges such as `[-0.701,10.002]` and positive-side edges `[-9.979,0.723]`. Those samples exchange carriageways, fold the slab/rails and cover the live paint.
+
+The landmark profile now declares the existing **0.7 m median half-width** through `railGap`. The shared capturer clips at each median edge before side classification; measured north-bank sections become `[-9.979,-0.7]` / `[0.7,10.002]`. The same correction applies to both modes and LODs, keeps the median fixed, and retains provider lane/dash attributes and shared materials. No shared runtime source is changed.
+
+The first contact sheet showed visible HD lanes in Cityscape but obscured paint in world. The owned landing adapter had applied polygon offset `-4/-4` to all fallback asphalt/paint in world, including pavement covered by live HD. That bias now applies only while HD is off; enabling HD restores the authored material's original depth state, disabling it restores the world fallback bias, and leaving world restores the flat state. Navigation heights and geometry coordinates are unaffected by this depth change.
+
+Two regression cases cover overlapping provider polygons, ordered carriageways, upward-facing fitted asphalt, stationary median, preserved dash distance, lifted pavement/paint and original-index restoration; and world fallback depth state across HD enable/disable and terrain removal. No new reference photos or geographic queries were needed.
+
+Final local bundle **5fa71fccfccb** was checked with HD on and `landmarks=off`, at zoom 18.2 / pitch 55 for both grade feet, both physical abutments +40 m inward, both mid-approaches and midspan. Both bank street views were additionally checked at zoom 20 / pitch 74 in both headings. All **44 on/off captures** loaded HD successfully; all 22 model-on captures loaded the near model. I opened and judged:
+
+- `tmp/top-cities/pont-de-normandie/hd-fix/live-hd-sheet.jpg`: Cityscape on/off and world on/off at seven stations.
+- `tmp/top-cities/pont-de-normandie/hd-fix/street-sheet.jpg`: both banks, both headings, both modes, on/off.
+- `tmp/top-cities/pont-de-normandie/hd-fix/paint-off-sheet.jpg`: both modes with HD paint off; the fallback dashes remain covered.
+- `tmp/top-cities/pont-de-normandie/hd-fix/export-sheet/pont-de-normandie.jpg`: regenerated reference/near/far GLB sheet; geometry is unchanged.
+
+Both modes now show two lanes in each direction with the provider's lane dashes and outer edge lines visible along the structural bridge. The physical median replaces paint in its own occupied band. Railings, walkways and the median remain outside driving lanes. The paint switch hides the markings and restoring it sets all three shared HD materials to `uPaint=1`. The initial blank-deck baseline and first iteration are retained in `hd-fix/baseline/` and `hd-fix/iteration-1/`.
+
+The reports `hd-fix/cityscape/report.json` and `hd-fix/world/report.json` include 15 stations × three laterals × two headings per view. All **30 lane-centre samples / 60 heading queries** return non-null heights and agree between forward/reverse headings in each mode. The actual alignment centreline is the median: all 15 centre samples correctly return null in both headings. Representative final values, metres above queried ground:
+
+| Station | Cityscape −5 / +5 m | World −5 / +5 m |
+| --- | ---: | ---: |
+| North grade foot | 2.869 / 2.869 | 2.869 / 2.869 |
+| North physical abutment | 8.294 / 8.294 | 10.690 / 10.818 |
+| North mid-approach | 28.842 / 28.842 | 29.909 / 29.969 |
+| North pylon | 48 / 48 | 47.544 / 47.690 |
+| Midspan | 59.5 / 59.5 | 59.053 / 59.127 |
+| South pylon | 48 / 48 | 46.423 / 46.613 |
+| South mid-approach | 30.091 / 30.091 | 20.350 / 20.646 |
+| South physical abutment | 10.431 / 10.401 | 5.360 / 5.607 |
+| South grade foot | 1.273 / 1.273 | 1.273 / 1.273 |
+
+The newly available HD approach samples replace the original zero-height fallback at the grade feet; the main deck heights remain fixed. This difference is provider fitting, not a change to the authored datum or profile. World lane differences reflect transverse DEM and the mapped south alignment turn.
+
+`pnpm build:top-cities-landmarks pont-de-normandie --no-check` was rerun after each fix; both exports are byte-identical to the released files. Near remains **86,928 triangles / 25 draws / 3,776,992 bytes (3688.5 KiB)**, far **25,176 / 8 / 688,836 bytes (672.7 KiB)**. Artifact QA reports zero issues, zero coplanar pairs, 0% back-face hits and minY=0. `pnpm assets:preview`, all **300 combined focused tests (14 landmark tests)** and `node scripts/asset-catalog.mjs` pass (222 records / 414 variants).
+
+Visible live HD overlays range from **4 to 10 draws**, with a maximum **18,245 triangles / 15,587 vertices / 732,950 bytes of geometry buffers**, separate from GLB download bytes. The corresponding near structure plus overlays uses at most **105,173 triangles / 35 draws** in the captured views. No per-frame tessellation was added and hardware performance is not measured.
+
+| Current HD case | Status |
+| --- | --- |
+| Cityscape live OSM pavement/paint, both ends/approaches/midspan | Verified locally on slot C |
+| World live OSM pavement/paint with Terrarium terrain, same stations | Verified locally on slot C |
+| Both bank street views, both headings, paint off/on | Verified locally in both modes |
+| Lane-centre common height, median rejection, depth-state reversal | Live queries and focused tests verified |
+| Full active route/car/traffic/camera/picking session and MCU hardware | Not tested; checked separately |
+
+Generated renderer bundles are restored before the owned-file commit, and both slot C servers are stopped by PID. Redis remains running. No shared source or other landmark is changed.
