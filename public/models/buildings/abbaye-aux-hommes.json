@@ -1,0 +1,65 @@
+{
+  "id": "abbaye-aux-hommes",
+  "name": "Abbaye aux Hommes (Saint-Étienne and Hôtel de Ville)",
+  "kind": "building",
+  "origin": [
+    -0.3731,
+    49.1818
+  ],
+  "height": 82,
+  "padM": 175,
+  "frontageBearing": 275,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local y=0 at the west-front pavement; no sea-level or terrain height baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "North/south west towers 82/80 m and front gable 27.30 m follow the OSM part tags and published church dimensions. All footprint rings are OSM. Roofs, lantern height, flying buttresses, town-hall elevation, chapels and ornament are photo-based estimates. Detached Palais Ducal is included. Flat asset only; both app placement modes require separate integration checks.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/abbaye-aux-hommes-near.glb",
+      "bytes": 1758584,
+      "triangles": 40092,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -126.98294830322266,
+          -7.629394644936838e-7,
+          -20.799118041992188
+        ],
+        "max": [
+          79.53165435791016,
+          82,
+          141.77420043945312
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/abbaye-aux-hommes-far.glb",
+      "bytes": 463956,
+      "triangles": 9017,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -126.98294830322266,
+          -7.629394644936838e-7,
+          -20.799118041992188
+        ],
+        "max": [
+          79.5305404663086,
+          82,
+          141.60769653320312
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/abbaye-aux-hommes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

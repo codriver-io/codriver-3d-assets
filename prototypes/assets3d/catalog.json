@@ -18454,6 +18454,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "abbaye-aux-hommes",
+      "name": "Abbaye aux Hommes (Saint-Étienne and Hôtel de Ville)",
+      "kind": "building",
+      "location": "Esplanade Jean-Marie-Louvel and place Saint-Martin, Caen, France",
+      "status": "ready",
+      "description": "Pale Caen-stone abbey ensemble: the Romanesque church with its unequal twin Gothic spires, octagonal crossing lantern, chevet flyers and four smaller spires; eighteenth-century municipal wings and open cloister; detached Gothic Palais Ducal.",
+      "manifest": "/models/buildings/abbaye-aux-hommes.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/abbaye-aux-hommes/geometry.js",
+        "build": "pnpm build:top-cities-landmarks abbaye-aux-hommes --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-10, no scan, third-party mesh or textures. OSM church 155629129, monastery 155629494, Palais Ducal 1432516139 and their building parts; cloister relation 19644543 and outer/inner ways 1432566826/1432566827: © OpenStreetMap contributors, ODbL 1.0. Six Commons photographs used only as visual references, retained under ignored tmp: Patrick from Compiègne (CC BY-SA 2.0), Zairon (CC BY-SA 4.0), Selbymay (CC BY-SA 4.0), Ptyx (CC BY-SA 4.0), Ikmo-ned (CC BY-SA 3.0), Viault (CC BY-SA 3.0); exact titles and links below. No photographs are included in exports.",
+        "references": [
+          {
+            "label": "Ville de Caen · Abbaye-aux-Hommes",
+            "url": "https://caen.fr/abbaye-aux-hommes/"
+          },
+          {
+            "label": "Church dimensions and architectural history",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89tienne_de_Caen"
+          },
+          {
+            "label": "OSM church outline",
+            "url": "https://www.openstreetmap.org/way/155629129"
+          },
+          {
+            "label": "OSM monastery outline",
+            "url": "https://www.openstreetmap.org/way/155629494"
+          },
+          {
+            "label": "OSM Palais Ducal",
+            "url": "https://www.openstreetmap.org/way/1432516139"
+          },
+          {
+            "label": "OSM cloister",
+            "url": "https://www.openstreetmap.org/relation/19644543"
+          },
+          {
+            "label": "Fichier:Caen (Calvados) - Abbaye aux Hommes (48640752602).jpg · Patrick from Compiègne, France · CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_(Calvados)_-_Abbaye_aux_Hommes_(48640752602).jpg"
+          },
+          {
+            "label": "Fichier:Caen Abbaye aux Hommes Hôtel de Ville & Église Saint-Étienne 8.jpg · Zairon · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_Abbaye_aux_Hommes_H%C3%B4tel_de_Ville_%26_%C3%89glise_Saint-%C3%89tienne_8.jpg"
+          },
+          {
+            "label": "Fichier:CaenPalaisDucal 02.jpg · Selbymay · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:CaenPalaisDucal_02.jpg"
+          },
+          {
+            "label": "File:2019 09 abbatiale abbaye aux hommes Caen façade.jpg · Ptyx · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2019_09_abbatiale_abbaye_aux_hommes_Caen_fa%C3%A7ade.jpg"
+          },
+          {
+            "label": "File:FranceNormandieCaenEgliseAbbatialeStEtienneChevet.jpg · Ikmo-ned · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:FranceNormandieCaenEgliseAbbatialeStEtienneChevet.jpg"
+          },
+          {
+            "label": "File:Abbaye aux Hommes 02.jpg · Viault · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Abbaye_aux_Hommes_02.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/abbaye-aux-hommes/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=roof"
+          },
+          {
+            "label": "East",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=east"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=detail"
+          },
+          {
+            "label": "Palais",
+            "url": "/asset-preview.html?asset=abbaye-aux-hommes&view=palais"
+          }
+        ]
+      },
+      "notes": "Published/OSM: north and south west spires 82/80 m, facade top 27.30 m, external church length 111 m (mapped 109.8 m). Estimated: lantern apex 54 m; four chevet spires 44.5 m; municipal eaves 18.1 m and mansard top 23.6 m; Gothic hall eaves 13.6 m. Ornament, stone frames, doors, radial chapels, dormers, flying buttresses and roof slopes are simplified; no individual sculpture or interior. Roof bearing baked once from mapped controls (nave 95°, west front 275°). Procedural and exported visual QA, measured budgets and test details in documentation. Final exports: near 40092 triangles / 7 draws / 1758060 bytes; far 9017 / 7 / 463432. QA metrics pass with 0% back-face hits; 4 m² of sub-threshold candidates remain mainly at ground contacts. The original build passed 292 conformance/focused tests; the review fix passes all 7 landmark tests and the shared catalog check. Looked at the final exported comparison sheet (near/far, light/dark, facade/east/street/detail/roof) directly beside Commons references and the exported top footprint view. Independent review corrections: isolated civic pavilion glow changed to glass; nave ridge raised behind the 27.30 m west screen to 35.3 m and transepts to 36 m (photo estimates); straight chevet rods replaced by thick curved-intrados masonry flyers and an arcaded gallery band added below the apse roof; Palais tile desaturated to #665e55. New exported QA and dark/light sheets were judged; deterministic metrics report no issues and 0% back-face hits. Cityscape/Full 3D world integration remains separately untested.",
+      "documentation": "docs/assets/top-cities-abbaye-aux-hommes.md",
+      "city": "Caen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
