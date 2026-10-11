@@ -18937,6 +18937,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "memorial-de-caen",
+      "name": "Mémorial de Caen",
+      "kind": "building",
+      "location": "Esplanade Général Eisenhower, Caen, France",
+      "city": "Caen",
+      "status": "ready",
+      "description": "Jacques Millet’s pale Caen-stone peace museum: two broad low slabs divided by a tall jagged entrance fracture, a stepped west gallery and later curved halls. Bare facade, without the temporary 2014 banner.",
+      "manifest": "/models/buildings/memorial-de-caen.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/memorial-de-caen/geometry.js",
+        "build": "pnpm build:top-cities-landmarks memorial-de-caen --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-10. No external mesh, texture or photograph shipped. Provided OSM API-prefill dossier: ways 155629535 and 155656141; © OpenStreetMap contributors, ODbL 1.0. Viewed reference photographs: MémorialCaen, La salle immersive et le Mémorial de Caen (CC BY-SA 4.0); Benoit-caen, Façade du Mémorial juin 2014 (CC BY-SA 3.0); Mickaël Schauli, Musée du mémorial de Caen - 2 (CC BY-SA 4.0, interior, not used for geometry). Supplemental bare-front photo Memorial-de-caen-02 on the original architect’s project page, copyright MCG Architectes / photographer unspecified; reference-only, no redistribution rights assumed. All photos stay under ignored tmp.",
+        "references": [
+          {
+            "label": "Museum: 6 June 1988 opening, Jacques Millet, white Caen stone, symbolic fracture and 14,000 m² on three levels",
+            "url": "https://www.memorial-caen.fr/le-musee/linstitution/"
+          },
+          {
+            "label": "Original architect: 1988 project, Eisenhower esplanade, bare-front photograph",
+            "url": "https://www.mcg-architectes.fr/projet/memorial-de-caen-02-jpg/"
+          },
+          {
+            "label": "SOPREMA / CCS Ouest: 2019 immersive room, 18 m frame diameter, 8 m frame height, 4 m sheet skin, matte black",
+            "url": "https://www.soprema-entreprises.fr/realisation/memorial-de-caen/"
+          },
+          {
+            "label": "OSM main museum footprint, cadastre 2012 geometry",
+            "url": "https://www.openstreetmap.org/way/155629535"
+          },
+          {
+            "label": "OSM wall=no entrance apron",
+            "url": "https://www.openstreetmap.org/way/155656141"
+          },
+          {
+            "label": "MémorialCaen, curved immersive room reference, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:La_salle_immersive_et_le_M%C3%A9morial_de_Caen.jpg"
+          },
+          {
+            "label": "Benoit-caen, temporary 2014 facade banner reference, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_du_M%C3%A9morial_juin_2014.JPG"
+          },
+          {
+            "label": "Mickaël Schauli, interior supplementary photograph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_du_m%C3%A9morial_de_Caen_-_2.jpeg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/memorial-de-caen/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=memorial-de-caen&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=detail"
+          },
+          {
+            "label": "extension",
+            "url": "/asset-preview.html?asset=memorial-de-caen&view=extension"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-memorial-de-caen.md",
+      "notes": "Main slab 72 × about 54 m and west-wing outline mapped from OSM; frontage faces 197.168° and rotation is baked. Main height 15 m, gallery 7.3 m, curved west hall 8.1 m, four-metre fracture width, glazing depth and roof details are estimates. The 2019 room uses a 4 m visible skin, based on the contractor’s sheet height and photo; the 8 m structural frame is not an eight-metre exterior wall. Its 20 m outer diameter and centre west of the original block are approximate; the 2012 cadastre does not map it. Supplemental footprint rings include the upper facade envelope across the ground entry recess and the estimated drum; these are authored replacement envelopes, not claimed OSM outlines. The wall=no entry apron is modeled as a shallow paved slab, with no speculative canopy. West hall elevation and gallery glazing are weakly evidenced schematic features. Subsurface connections, gardens, flags, exhibits, the poem lettering, temporary banners and rooftop services omitted. Independent visual review and in-app placement remain separate; no hardware performance claim. Independent review 2026-10-10 rated the initial export PASS-WITH-NITS, recognisability 4/5; follow-up fixes give the large western curved hall warm bronze walls and a muted grass-toned roof, lower it 1 m, make entrance glass continuous along jagged jambs, and close the rear fracture and rear roof pocket with plain stone. These finish and height choices remain estimates; the separate 2019 immersive drum retains its contractor-described matte-black skin.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
