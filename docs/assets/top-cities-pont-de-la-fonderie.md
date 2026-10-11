@@ -17,14 +17,14 @@ The provided Commons contact sheet was inspected: Jérémy Qtn, “Pont de la fo
 | Orientation | about 126.8° NW to SE | mapped road endpoints |
 | Road lanes / markings | 2 / no markings | OSM tags; authored road width 6 m estimated |
 | Navigation channel | 12 m tagged | OSM seamark:bridge:clearance_width; approximate open geometry 12.54 m |
-| Deck in flat Cityscape | 1.55 m | photographic estimate / flat-map compromise |
+| Deck road surface | 0.10 m above quay grade | flush closed swing deck, reference photo |
 | Solid main girder | 1.55 m above deck, 0.49 m below | photographic estimate |
 | Counterweight tail | 3.1 m long, top 0.64 m above deck | photographic estimate |
 | Pivot station / bearing diameter | 5 m from NW structural end / 7.70 m | photographic estimate |
-| Highest safety rail | 3.555 m | photographic estimate |
-| Approach ramps | 22 m at both ends; maximum grade 7.38% | mapped approach length / constant grade with 1 m vertical curves |
+| Highest safety rail | 2.105 m | photographic estimate |
+| Quay walls / slewing drum | to 2.5 m below grade | estimate; shown in Full 3D world only |
 
-Origin `[-0.35227315, 49.18295345]` is the midpoint of the mapped structural road endpoints. Real metres, +X east, +Y up, +Z south; y=0 is local grade. Orientation is baked once. Original OSM extract is retained in ignored `tmp/top-cities/pont-de-la-fonderie/osm-alignment.json`; attributed roadway/approach coordinates are in the landmark-owned alignment module. The outline is skewed laterally by approximately 0.5 m across the span; deck edges follow that skew. FOOTPRINTS contains only the original bridge outline, no neighbouring buildings. Full-width bank approaches extend beyond it as part of the road surface, including their concrete walks. They maintain the authored 9.85 m deck width for the inner 14 m and smoothly blend to the six-metre road over the outer eight metres; their endpoint locations and mapped bends are unchanged. No absolute elevation is baked in; `terrainPolicy: bank-fit` avoids flattening the canal and separately grounds supports.
+Origin `[-0.35227315, 49.18295345]` is the midpoint of the mapped structural road endpoints. Real metres, +X east, +Y up, +Z south; y=0 is local grade. Orientation is baked once. Original OSM extract is retained in ignored `tmp/top-cities/pont-de-la-fonderie/osm-alignment.json`; attributed roadway/approach coordinates are in the landmark-owned alignment module. The outline is skewed laterally by approximately 0.5 m across the span; deck edges follow that skew. FOOTPRINTS contains only the original bridge outline, no neighbouring buildings. The model ends at the mapped structure: the quay streets beyond it are ordinary live roads. No absolute elevation is baked in; `terrainPolicy: bank-fit` avoids flattening the canal and separately grounds supports.
 
 ## Model and delivery
 
@@ -40,6 +40,17 @@ The independent review in `tmp/top-cities/review/pont-de-la-fonderie/REVIEW.md` 
 - Approaches: the six-metre grey planks become full 9.85 m asphalt foundations carrying continuous concrete walks, with rounded width transitions to the six-metre live road. Mitered cross-sections at the mapped bends remove the tapered corner wedge; structural endpoints use the span tangent. Both closed endpoint caps meet y=0. The walks are inset 0.06 m from the asphalt shoulder and their underside is separated to eliminate cross-material coincident faces.
 - Steel sides: main plates rise from 1.30 m to 1.55 m above the deck, matching the taller panels in the red restoration photo; the main top flange deepens from 0.07 m to 0.11 m. Safety rails move up with the plate, preserving their open silhouette. The short low counterweight step remains 0.64 m.
 - Ramp profile: the full-rise smoothstep peak of 10.57% becomes a 7.38% tangent grade with one-metre parabolic vertical curves. Both 22 m lengths, mapped roadway joins, 1.55 m flat deck and runtime endpoint datums are preserved. The shared heading/corridor/road-width acceptance is reused; no shared bridge module is changed. Tests now use the actual endpoint travel headings and explicitly require numeric height results, including nonzero live bank datums.
+
+## Flush-deck revision (2026-10-11)
+
+In the app with HD lanes on, the 1.55 m deck and its two 22 m authored ramps covered the live HD pavement and paint of the quay streets: the stop lines at both joints, the centre dashes and the pedestrian crossing disappeared under the model. The south-east ramp also followed the tight mapped bend, where its 10.7 m wide cross-sections folded over on the inside of the curve. The reference photo shows the closed deck flush with the quays, so the 1.55 m rise was not real.
+
+- The centreline is now the mapped 22.78 m structure only. The deck height is the straight line between the two live quay datums plus 0.10 m, in both modes. No approach asphalt, walks or ramps are authored.
+- Every vertical dimension keeps its offset from the deck, so the girders, counterweight, floor grid and bearing go down with it. The quay walls and slewing drum now stand from 2.5 m below grade (fixed foot, deck-following head).
+- Flat Cityscape ground does not hide below-grade geometry, so `layer.js` hides the stone quay walls and drum in Cityscape and shows them in Full 3D world, as the Millau Viaduct does with its piers.
+- Near 23,992 triangles / 7 draws / 1,175 KB; far 2,692 / 7 / 109 KB. All 293 focused/conformance tests pass, rewritten for the flush deck; `qa-metrics.mjs` reports ok.
+
+Lead app check with live HD lanes (local Redis and `/osm-lanes`, Protomaps standard tiles, HD roads switched on): Cityscape on port 3260, Full 3D world on Terrarium DEM on port 3262. Overhead (zoom 19.3, pitch 35) and street (zoom 20.2, pitch 74) views from both ends were compared with `?landmarks=off`. The bend, both stop lines, the centre dashes and the crossing are visible and unchanged, and there is no buried paint, folded bend or below-grade artefact. `landmarks.heightAt` on the four mapped roadway points returns 0.10 m in both travel directions in both modes, and null for a transverse heading. Cityscape **verified locally**; Full 3D world **verified locally**. The earlier evidence below describes the superseded raised-deck revision.
 
 ## Verification evidence
 
