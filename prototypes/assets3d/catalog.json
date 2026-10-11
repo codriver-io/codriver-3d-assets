@@ -18561,6 +18561,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pegasus-bridge",
+      "name": "Pegasus Bridge (1994)",
+      "kind": "bridge",
+      "location": "Bénouville",
+      "status": "ready",
+      "description": "Original procedural closed Scherzer rolling-lift bascule: white portal, rolling quadrants, counterweight housing, machinery cabin and cylindrical control tower.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pegasus-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pegasus-bridge",
+        "provenance": "Original procedural geometry for Codriver (2026-10-10); OSM alignment/bridge outline and cadastre tower way © OpenStreetMap contributors, ODbL 1.0. Visual references only: Pegasus Bridge Neu 01 09 (Хрюша, CC BY-SA 3.0); Bénouville - Pegasus Bridge 01 (Kev22, CC BY-SA 4.0); Pegasus Bridge - Bénouville … Feb. 2011 (dynamosquito, CC BY-SA 2.0). Dossier ref 2 is the museum original and excluded. No image-derived mesh, capture or texture retained in runtime.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Pegasus_Bridge"
+          },
+          {
+            "label": "Mapped bridge outline (OSM 745702717)",
+            "url": "https://www.openstreetmap.org/way/745702717"
+          },
+          {
+            "label": "D514 carriageway (OSM 30319467)",
+            "url": "https://www.openstreetmap.org/way/30319467"
+          },
+          {
+            "label": "Control tower footprint (OSM 725863483)",
+            "url": "https://www.openstreetmap.org/way/725863483"
+          },
+          {
+            "label": "Portal and rolling segment reference, Хрюша, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pegasus_Bridge_Neu_01_09.jpg"
+          },
+          {
+            "label": "Road approach reference, Kev22, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:B%C3%A9nouville_-_Pegasus_Bridge_01.jpg"
+          },
+          {
+            "label": "Closed structure and cylindrical tower, dynamosquito, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pegasus_Bridge_-_B%C3%A9nouville_(Calvados)_-_Basse-Normandie_-_France_-_Feb._2011.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pegasus-bridge/geometry.js"
+      },
+      "notes": "45.7 m bascule is the nominal dimension supplied by the lead; 78 m total crossing is mapped. Deck datum, all heights, member dimensions, machinery and tower details are estimates. Closed state only; no animation or museum span. Approaches follow OSM for 70 m each; steepest smooth ramp grade 6.86%. No photographs/textures in exports. Review fixes: red/white banded raised barriers and round sign heads, #aeb7bd steel/darker rolling shoes, 1.2 m exterior girder fascia, deck-level railed tower catwalk in both LODs and supported upper catwalk/stair in near.",
+      "documentation": "docs/assets/top-cities-pegasus-bridge.md",
+      "manifest": "/models/bridges/pegasus-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=pegasus-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=roof"
+          },
+          {
+            "label": "Crossing",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=crossing"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pegasus-bridge&view=underside"
+          }
+        ]
+      },
+      "city": "Bénouville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

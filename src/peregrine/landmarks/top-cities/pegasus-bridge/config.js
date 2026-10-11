@@ -1,16 +1,14 @@
-// Pegasus Bridge, Bénouville.
-// STUB: the landmark's builder replaces this file. Contract: docs/3d-top-cities-landmarks.md.
+// Current 1994 Scherzer bridge, closed; not the museum original.
 export const SPEC = {
-  id: 'pegasus-bridge', name: "Pegasus Bridge", kind: 'bridge',
-  ready: false, // true only once near/far GLBs are exported, verified and catalogued
-  origin: [-0.27422, 49.24238], // approximate; the builder sets it from the mapped footprint/alignment
-  height: 12, // m to the highest point, approximate
-  padM: 60,
-  frontageBearing: 0,
+ id:'pegasus-bridge', name:'Pegasus Bridge (1994)', kind:'bridge', ready:true,
+ origin:[-0.27419275,49.24239125], height:24.2, padM:125, frontageBearing:115.8, footprintless:true,
 };
-export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
+export const PALETTES = {
+ light:{steel:'#aeb7bd',edge:'#89979f',concrete:'#b0ada0',asphalt:'#555d63',rail:'#d9dcd7',glass:'#4c6770',tower:'#cbbda0',roof:'#33514f',red:'#823e35',lamp:'#fff0c7'},
+ dark:{steel:'#899ba4',edge:'#617783',concrete:'#6c7680',asphalt:'#303c47',rail:'#9cabb6',glass:'#365464',tower:'#887f6c',roof:'#29494e',red:'#6d3938',lamp:'#ffd69a'},
+};
 export const MANIFEST = {
-  elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude.',
-  attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Stub: not yet authored.',
+ elevationDatum:'Local flat-map grade y=0; estimated closed deck +3.2 m; no absolute altitude or DEM baked in.',
+ attribution:'Original procedural mesh for Codriver; geographic alignment and outlines © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',
+ note:'1994 replacement, closed traffic position. Nominal 45.7 m bascule from lead brief, 78 m mapped crossing. Heights, machinery and member sizes estimated from photographs. Portal, curved rolling sectors, counterweight, cabin and detached cylindrical tower; no animation or museum span.',
 };
