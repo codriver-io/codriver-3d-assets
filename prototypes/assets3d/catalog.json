@@ -19242,6 +19242,109 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cathedrale-de-bayeux",
+      "name": "Bayeux Cathedral (Notre-Dame)",
+      "kind": "building",
+      "location": "Rue du Bienvenu, Bayeux, Normandy, France",
+      "status": "ready",
+      "description": "Original procedural Notre-Dame-de-l’Assomption: paired Romanesque west towers and Gothic stone spires, five west portals, slate-roofed nave and radiating chevet, flying buttresses and pinnacles, octagonal central clock tower and nineteenth-century copper lantern.",
+      "manifest": "/models/buildings/cathedrale-de-bayeux.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cathedrale-de-bayeux/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cathedrale-de-bayeux --no-check",
+        "provenance": "Original procedural exterior authored 2026-10-10; no scan, traced third-party mesh or texture. Footprints © OpenStreetMap contributors, ODbL 1.0, cathedral way 132132649 and parts 448934051/52/53 and 1362297699, from the supplied dossier. The shared Overpass helper was attempted for these five ways but returned HTTP 504, so the complete existing dossier geometry is retained. Reference photos used only for visual comparison, never shipped: File:P1240007 Bayeux cathedrale ND rwk.jpg (Mbzt, CC BY-SA 3.0); File:Bayeux (14) Cathédrale Façade ouest 01.JPG (GO69, CC BY-SA 3.0); File:Bayeux Cathedral, Normandy.jpg (MagicRubberDuck, CC BY-SA 4.0); File:Bayeux Cathédrale Notre-Dame Südseite 3.jpg (Zairon, CC BY-SA 4.0); File:Bayeux Cathedral 1.jpg (PsamatheM, CC BY-SA 4.0); File:Notre Dame Cathedral, Bayeux - panoramio.jpg (M.Strīķis, CC BY-SA 3.0).",
+        "references": [
+          {
+            "label": "Cathédrale de Bayeux · architectural history",
+            "url": "https://www.cathedraledebayeux.fr/la-cathedrale"
+          },
+          {
+            "label": "Ministère de la Culture · cathedral restoration history",
+            "url": "https://www.culture.gouv.fr/regions/drac-normandie/Dossiers/ressources/la-cathedrale-de-bayeux"
+          },
+          {
+            "label": "French dimension table · west spires 76.6 m and central tower 74.5 m",
+            "url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Bayeux"
+          },
+          {
+            "label": "OSM cathedral outline",
+            "url": "https://www.openstreetmap.org/way/132132649"
+          },
+          {
+            "label": "File:P1240007 Bayeux cathedrale ND rwk.jpg · Mbzt · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:P1240007_Bayeux_cathedrale_ND_rwk.jpg"
+          },
+          {
+            "label": "File:Bayeux (14) Cathédrale Façade ouest 01.JPG · GO69 · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bayeux_(14)_Cath%C3%A9drale_Fa%C3%A7ade_ouest_01.JPG"
+          },
+          {
+            "label": "File:Bayeux Cathedral, Normandy.jpg · MagicRubberDuck · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bayeux_Cathedral,_Normandy.jpg"
+          },
+          {
+            "label": "File:Bayeux Cathédrale Notre-Dame Südseite 3.jpg · Zairon · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bayeux_Cath%C3%A9drale_Notre-Dame_S%C3%BCdseite_3.jpg"
+          },
+          {
+            "label": "File:Bayeux Cathedral 1.jpg · PsamatheM · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bayeux_Cathedral_1.jpg"
+          },
+          {
+            "label": "File:Notre Dame Cathedral, Bayeux - panoramio.jpg · M.Strīķis · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Notre_Dame_Cathedral,_Bayeux_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-de-bayeux/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=facade",
+        "views": [
+          {
+            "label": "West screen and towers",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=facade"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=overview"
+          },
+          {
+            "label": "Roofs and footprint",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=roof"
+          },
+          {
+            "label": "Chevet and eastern chapel",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=east"
+          },
+          {
+            "label": "Nave and flying buttresses",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=south"
+          },
+          {
+            "label": "Street-level west front",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=street"
+          },
+          {
+            "label": "West portal mouldings",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=portal"
+          },
+          {
+            "label": "Copper lantern",
+            "url": "/asset-preview.html?asset=cathedrale-de-bayeux&view=lantern"
+          }
+        ]
+      },
+      "notes": "French dimension table: length 102 m, transept 37.6 m, west spires 76.6 m, clock tower 74.5 m. All stage/eave heights, copper profile, tracery, buttress curves, annex roofs and sculpture relief are photo estimates. Schematic OSM tower parts say 60 m, superseded by the dimension table. Rotation -25.3 degrees baked once; origin at the mapped crossing. Independent-review repair: smaller subdivided pointed west window with a small central portal rose, broader five portals, gallery bands and canopies; raised octagonal stages and corner pinnacles, narrower ribbed copper ogee crown and finial; two chevet galleries, masonry flying arches, pinnacled piers and five separate chapel roofs; narrower west belfry openings, spire lucarnes and near crockets. The real pointed west opening is retained per dossier ref 2, and the crown follows ref 1 rather than a plain needle. Carved figures and intricate screen ornament remain schematic; no interiors, tapestry, individual stonework or surveyed terrain. Seven materials in both LODs; far retains every tower, chapel, flying buttress and portal while simplifying mouldings and small galleries. Near: 34953 triangles / 7 draws / 1408540 bytes (1376 KiB); far: 10779 triangles / 7 draws / 467064 bytes (456 KiB). Repair export QA: zero coplanar overlaps, zero back-face hits, no flagged artifact or removable attributes; observed near/far light/dark GLB contact sheets beside dossier references in tmp/top-cities/shots/cathedrale-de-bayeux/revision-2/.",
+      "documentation": "docs/assets/top-cities-cathedrale-de-bayeux.md",
+      "city": "Bayeux",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

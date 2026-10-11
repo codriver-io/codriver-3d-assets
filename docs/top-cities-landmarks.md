@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (97 released)
+## The collection (98 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -105,6 +105,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `eglise-saint-pierre-caen` | Église Saint-Pierre de Caen | Caen | building |
 | `abbaye-aux-dames` | Abbaye aux Dames (La Trinité) | Caen | building |
 | `memorial-de-caen` | Mémorial de Caen | Caen | building |
+| `cathedrale-de-bayeux` | Bayeux Cathedral (Notre-Dame) | Bayeux | building |
 
 ## A landmark is a folder
 
