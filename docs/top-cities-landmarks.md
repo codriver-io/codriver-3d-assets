@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (93 released)
+## The collection (94 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -101,6 +101,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `pont-de-la-fonderie` | Pont de la Fonderie | Caen | bridge, road-fitted |
 | `pont-de-normandie` | Pont de Normandie | Honfleur | bridge, road-fitted |
 | `abbaye-aux-hommes` | Abbaye aux Hommes (Saint-Étienne and Hôtel de Ville) | Caen | building |
+| `chateau-de-caen` | Château de Caen | Caen | building |
 
 ## A landmark is a folder
 
