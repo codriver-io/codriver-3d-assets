@@ -1,6 +1,11 @@
-// Inspector cameras, [eye, target] in the model's metres (+x east, +y up, +z south). STUB.
-export const VIEWS = {
-  overview: [[168, 108, 220], [0, 40, 0]],
-  facade: [[0, 12, 146], [0, 27, 0]],
-  roof: [[68, 200, 68], [0, 64, 0]],
+import { world } from './abbaye-aux-hommes-plan.js';
+const v=(eye,target)=>[world(...eye),world(...target)];
+export const VIEWS={
+ overview:v([-180,130,250],[-7,24,40]),
+ facade:v([-165,36,-5],[-29,35,-2]),
+ roof:v([140,200,220],[-12,12,55]),
+ east:v([200,55,78],[35,28,12]),
+ street:v([117,8,119],[32,20,59]),
+ detail:v([-79,54,43],[-26,52,2]),
+ palais:v([-42,19,99],[-94,10,43]),
 };
