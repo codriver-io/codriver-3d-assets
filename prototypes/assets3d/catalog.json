@@ -18826,6 +18826,117 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "chateau-de-caen",
+      "name": "Château de Caen",
+      "kind": "building",
+      "location": "Caen, France",
+      "status": "ready",
+      "description": "Original present-day Château de Caen: tall battered limestone scarp and dark plinth supporting an elevated green bailey, projecting square towers, round Puchot/Mathilde towers, hollow barbicans and donjon chemise, low keep ruins, historic slate-roof halls and stepped modern museum blocks.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/chateau-de-caen/geometry.js",
+        "build": "pnpm build:top-cities-landmarks chateau-de-caen --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-10. Geographic data © OpenStreetMap contributors, ODbL 1.0; ways in footprint.js from supplied building dossier and one shared-helper wall query. No photographs, textures, meshes or captures ship. Reference-only Commons photos in ignored tmp/: Karldupart (CC BY-SA 3.0 and 4.0), Benoit-caen (CC BY-SA 3.0), Florian Pépellin (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Musée de Normandie — remparts, tours et portes",
+            "url": "https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-forteresse-remparts-tours-et-portes"
+          },
+          {
+            "label": "Musée de Normandie — Porte des Champs",
+            "url": "https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs"
+          },
+          {
+            "label": "Musée de Normandie — Porte Saint-Pierre et barbacane",
+            "url": "https://musee-de-normandie.caen.fr/node/19887"
+          },
+          {
+            "label": "Mondes Normands — donjon et vieux palais",
+            "url": "https://mondes-normands.caen.fr/france/patrimoine_architectural/normandie/campagne_caen/caen/1222bdonjon/index.htm"
+          },
+          {
+            "label": "OSM complete enceinte",
+            "url": "https://www.openstreetmap.org/way/205610830"
+          },
+          {
+            "label": "OSM chemise",
+            "url": "https://www.openstreetmap.org/way/92032474"
+          },
+          {
+            "label": "Fichier:Caen chateau donjon panoramique.jpg — Karldupart, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_chateau_donjon_panoramique.jpg"
+          },
+          {
+            "label": "Fichier:Angle sud ouest donjon de Caen.JPG — Benoit-caen, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Angle_sud_ouest_donjon_de_Caen.JPG"
+          },
+          {
+            "label": "Fichier:Caen rue de geole fouilles 2018-01 (6).jpg — Karldupart, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_rue_de_geole_fouilles_2018-01_(6).jpg"
+          },
+          {
+            "label": "File:Rempart extérieur Château de Caen (juillet 2025).JPG — Florian Pépellin, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rempart_ext%C3%A9rieur_Ch%C3%A2teau_de_Caen_(juillet_2025).JPG"
+          },
+          {
+            "label": "File:Porte St-Pierre et rempart du château de Caen (juillet 2025).JPG — Florian Pépellin, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Porte_St-Pierre_et_rempart_du_ch%C3%A2teau_de_Caen_(juillet_2025).JPG"
+          },
+          {
+            "label": "File:Caen chateau rempart nordouest.jpg — Karldupart, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_chateau_rempart_nordouest.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chateau-de-caen/geometry.js"
+      },
+      "notes": "Independent review correction: original 10 m wall from flat grade becomes a 10 m curtain above an estimated 8 m battered scarp, with a darker 2.8 m plinth; no excavation below y=0. Tower shafts are raised 4 m and projected 2.1–2.5 m outward, with 18–20% wider plans; Puchot/Mathilde retain round silhouettes and top merlons in both LODs. Tallest street-height point is 27 m; original 15 m OSM tower tags remain provenance, while the revised profile is a photo/review estimate rather than a surveyed claim. The 24 × 26 m low keep ruin and hollow gates/barbicans remain. Modern museum uses stepped flat-roof blocks, dark slate roofs and glazing instead of large pale caps. The grass bailey and gravel paths are ground surfaces separate from provider building masks. Current walls generally have level coping; gate and round-tower merlons are simplified. Southern outer entrance/staircase and actual moat excavation remain simplified. Far retains the scarp, projecting towers, merlons, barbicans, museum steps, roofs and ground colours.",
+      "documentation": "docs/assets/top-cities-chateau-de-caen.md",
+      "manifest": "/models/buildings/chateau-de-caen.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=chateau-de-caen",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=detail"
+          },
+          {
+            "label": "barbican",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=barbican"
+          },
+          {
+            "label": "boulevard",
+            "url": "/asset-preview.html?asset=chateau-de-caen&view=boulevard"
+          }
+        ]
+      },
+      "city": "Caen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
