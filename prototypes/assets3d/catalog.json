@@ -19028,6 +19028,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "eglise-saint-pierre-caen",
+      "name": "Église Saint-Pierre de Caen",
+      "kind": "building",
+      "location": "Place Saint-Pierre / passage Sohier, Caen, France",
+      "status": "ready",
+      "description": "Restored Gothic church with 75 m crocketed stone needle, separate belfry corner pinnacles, open triple-arch tower, strongly traced west rose and decorated Renaissance chevet with two pierced parapets and dense chapel pinnacles.",
+      "manifest": "/models/buildings/eglise-saint-pierre-caen.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/eglise-saint-pierre-caen/geometry.js",
+        "build": "pnpm build:top-cities-landmarks eglise-saint-pierre-caen --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-10; no textures, scans or copied meshes. OSM way 154620108 from the supplied shared-helper dossier, © OpenStreetMap contributors, ODbL 1.0. Photos retained only in ignored scratch: Fichier:Église Saint Pierre - Caen (FR14) - 2021-11-11 - 22.jpg — Chabe01 — CC BY-SA 4.0; Fichier:Caen France (22).JPG — DennisPeeters (talk) — Public domain; Fichier:Caen eglisesaintpierre congres.jpg — Auteur inconnuUnknown author — Public domain; Fichier:Église Saint-Pierre (Caen) (1).jpg — Julien1978 — CC BY-SA 3.0; Fichier:Église Saint-Pierre de Caen (2021).jpg — Kahouanne — CC0. Original model CC BY 4.0; editable code MIT.",
+        "references": [
+          {
+            "label": "City of Caen: 75 m stone spire, no transept, restoration",
+            "url": "https://caen.fr/la-restauration-de-leglise-saint-pierre"
+          },
+          {
+            "label": "City of Caen: restored stone spire and Italian Renaissance chevet",
+            "url": "https://caen.fr/node/6538"
+          },
+          {
+            "label": "Mapped church envelope, OSM way 154620108",
+            "url": "https://www.openstreetmap.org/way/154620108"
+          },
+          {
+            "label": "Fichier:Église Saint Pierre - Caen (FR14) - 2021-11-11 - 22.jpg — Chabe01 — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:%C3%89glise_Saint_Pierre_-_Caen_(FR14)_-_2021-11-11_-_22.jpg"
+          },
+          {
+            "label": "Fichier:Caen France (22).JPG — DennisPeeters (talk) — Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_France_(22).JPG"
+          },
+          {
+            "label": "Fichier:Caen eglisesaintpierre congres.jpg — Auteur inconnuUnknown author — Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen_eglisesaintpierre_congres.jpg"
+          },
+          {
+            "label": "Fichier:Église Saint-Pierre (Caen) (1).jpg — Julien1978 — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:%C3%89glise_Saint-Pierre_(Caen)_(1).jpg"
+          },
+          {
+            "label": "Fichier:Église Saint-Pierre de Caen (2021).jpg — Kahouanne — CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:%C3%89glise_Saint-Pierre_de_Caen_(2021).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eglise-saint-pierre-caen/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=facade",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=entrance"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=tower"
+          },
+          {
+            "label": "Chevet",
+            "url": "/asset-preview.html?asset=eglise-saint-pierre-caen&view=chevet"
+          }
+        ]
+      },
+      "notes": "Independent review fixes: chevet lower pinnacles now reach 21 m, with intermediate spikes and truly pierced lower/upper parapets; darker ornament contrasts with lighter coping. Four independent belfry corner pinnacles reach 55.05 m, needle-base pinnacles project clear of the cone, and enlarged ridge crockets survive near and far. Twelve rose petals and stronger tracery survive both LODs. Stone/trim shifted to grey-tan #918b7c / #aaa394, ornament #797568. Sourced total height 75 m and mapped orientation/ownership are unchanged; details are estimated, bay spacing regularized and Renaissance sculpture/chapel roofs simplified. Judged final reference/GLB sheet at tmp/top-cities/shots/eglise-saint-pierre-caen/revision-final/comparison.jpg. Near 37944 triangles / 7 draws / 1714.8 KiB; far 10766 / 7 / 479.3 KiB. Numeric QA: zero back-face hits, no flagged artifacts or budget issues; four small west-gable trim/stone candidates total about 1 m² below threshold. Own tests and registry conformance pass. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+      "documentation": "docs/assets/top-cities-eglise-saint-pierre-caen.md",
+      "city": "Caen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
