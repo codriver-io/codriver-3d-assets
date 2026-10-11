@@ -1,0 +1,66 @@
+{
+  "id": "pegasus-bridge",
+  "name": "Pegasus Bridge (1994)",
+  "kind": "bridge",
+  "origin": [
+    -0.27419275,
+    49.24239125
+  ],
+  "height": 24.2,
+  "padM": 125,
+  "frontageBearing": 115.8,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; estimated closed deck +3.2 m; no absolute altitude or DEM baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1994 replacement, closed traffic position. Nominal 45.7 m bascule from lead brief, 78 m mapped crossing. Heights, machinery and member sizes estimated from photographs. Portal, curved rolling sectors, counterweight, cabin and detached cylindrical tower; no animation or museum span.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pegasus-bridge-near.glb",
+      "bytes": 710204,
+      "triangles": 11964,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -103.03131866455078,
+          -0.699999988079071,
+          -50.649986267089844
+        ],
+        "max": [
+          95.45062255859375,
+          24.25,
+          64.05406951904297
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pegasus-bridge-far.glb",
+      "bytes": 207348,
+      "triangles": 3764,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -103.03131866455078,
+          -0.699999988079071,
+          -50.649986267089844
+        ],
+        "max": [
+          95.45062255859375,
+          24.25,
+          64.05406951904297
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pegasus-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
