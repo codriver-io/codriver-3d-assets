@@ -12,5 +12,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local flat Cityscape grade y=0 = quay street level; the closed swing deck is flush with its quays (road surface 0.10 m). Quay walls and slewing drum reach 2.5 m below grade. No DEM or sea-level elevations baked in. World bank-fit interpolates bank datums and grounds fixed foundations separately.',
   attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Current closed red steel swing bridge restored in 2023, not an unchanged 1854 bridge. OSM mapped span 22.78 m, deck about 9.96 m wide, two unmarked lanes and 12 m navigable clearance width tag. Heights, steel sections, rivets, counterweight step, bank-side pivot and abutment sizes are photographic estimates. No opening animation, graffiti, textures or construction equipment.',
+  note: 'Current closed red steel swing bridge restored in 2023, not an unchanged 1854 bridge. OSM mapped span 22.78 m, deck about 9.96 m wide, two unmarked lanes paved girder to girder (about 9.5 m, no raised walks) and 12 m navigable clearance width tag. Heights, steel sections, rivets, counterweight step, bank-side pivot and abutment sizes are photographic estimates. No opening animation, graffiti, textures or construction equipment.',
 };

@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { bridgeBuilder } from '../../asset-geometry.js';
-import { PROFILE as p, STRUCTURE_START as A, STRUCTURE_END as Z, DECK_H as H, PIVOT_S, deckEdges } from './pont-de-la-fonderie-profile.js';
+import { PROFILE as p, STRUCTURE_START as A, STRUCTURE_END as Z, DECK_H as H, PIVOT_S, deckEdges, carriageway } from './pont-de-la-fonderie-profile.js';
 
 /** Original plate-girder swing bridge. Station runs NW → SE; all geometry is in mapped metres. */
 export function create({detail='near'}={}) {
@@ -41,13 +41,11 @@ export function create({detail='near'}={}) {
     const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));g.setIndex(indices);g.computeVertexNormals();b.put(g,mat,0,lift);
   }
   const edge=(side,s)=>deckEdges(s)[side];
-  // Fallback two-lane asphalt; OSM lane_markings=no. Runtime HD remains authoritative.
-  ribbon('asphalt',A,Z,-3,3,H,.045);
+  // Two unmarked lanes (OSM lane_markings=no) paved girder to girder; runtime HD remains authoritative.
+  ribbon('asphalt',A,Z,s=>carriageway(s)[0]-.02,s=>carriageway(s)[1]+.02,H,.045); // tucked into the webs
   ribbon('iron',A+.03,Z-.03,s=>edge(0,s),s=>edge(1,s),H-.07,.28);
   for(const side of [0,1]) {
-    const outer=s=>edge(side,s),inner=side===0?-3:3;
-    ribbon('concrete',A+.03,Z-.03,side===0?outer:inner,side===0?inner:outer,H+.15,.18);
-    ribbon('concrete',A+.03,Z-.03,side===0?-3.13:3,side===0?-3:3.13,H+.22,.25);
+    const outer=s=>edge(side,s);
     // Solid riveted side webs with lower counterweight tail and stepped main side.
     const webD=s=>outer(s)+(side===0?.14:-.14);
     const top=s=>H+(s<A+3.1?.64:1.55),low=H-.49;
@@ -105,8 +103,8 @@ export function create({detail='near'}={}) {
     }
   }
   for(const d of [-3.8,3.8])b.box('iron',Z-.48,d,H-.585,.7,.6,.23);
-  // Compact road-side safety housings/posts; no barriers across the lanes.
-  for(const [s,d] of [[A+.65,-3.65],[Z-.7,3.7]]) {
+  // Compact safety housings/posts tucked against the girders; no barriers across the lanes.
+  for(const [s,d] of [[A+.65,carriageway(A+.65)[0]+.17],[Z-.7,carriageway(Z-.7)[1]-.17]]) {
     b.box('iron',s,d,H+.35,.32,.30,.7);
     beam('iron',[s,d,H+.65],[s,d,H+1.85],.075);
     b.box('iron',s,d,H+1.6,.22,.18,.36);

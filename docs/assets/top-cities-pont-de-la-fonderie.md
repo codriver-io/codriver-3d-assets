@@ -15,7 +15,7 @@ The provided Commons contact sheet was inspected: Jérémy Qtn, “Pont de la fo
 | Current road span | 22.775 m | OSM way 234575726, measured without rescaling |
 | Structural deck width | about 9.96 m; authored 9.85 m inside outline | OSM outline 234575732, slight skew |
 | Orientation | about 126.8° NW to SE | mapped road endpoints |
-| Road lanes / markings | 2 / no markings | OSM tags; authored road width 6 m estimated |
+| Road lanes / markings | 2 / no markings | OSM tags; paved girder to girder, about 9.5 m (IGN orthophoto, 2023 photos) |
 | Navigation channel | 12 m tagged | OSM seamark:bridge:clearance_width; approximate open geometry 12.54 m |
 | Deck road surface | 0.10 m above quay grade | flush closed swing deck, reference photo |
 | Solid main girder | 1.55 m above deck, 0.49 m below | photographic estimate |
@@ -40,6 +40,21 @@ The independent review in `tmp/top-cities/review/pont-de-la-fonderie/REVIEW.md` 
 - Approaches: the six-metre grey planks become full 9.85 m asphalt foundations carrying continuous concrete walks, with rounded width transitions to the six-metre live road. Mitered cross-sections at the mapped bends remove the tapered corner wedge; structural endpoints use the span tangent. Both closed endpoint caps meet y=0. The walks are inset 0.06 m from the asphalt shoulder and their underside is separated to eliminate cross-material coincident faces.
 - Steel sides: main plates rise from 1.30 m to 1.55 m above the deck, matching the taller panels in the red restoration photo; the main top flange deepens from 0.07 m to 0.11 m. Safety rails move up with the plate, preserving their open silhouette. The short low counterweight step remains 0.64 m.
 - Ramp profile: the full-rise smoothstep peak of 10.57% becomes a 7.38% tangent grade with one-metre parabolic vertical curves. Both 22 m lengths, mapped roadway joins, 1.55 m flat deck and runtime endpoint datums are preserved. The shared heading/corridor/road-width acceptance is reused; no shared bridge module is changed. Tests now use the actual endpoint travel headings and explicitly require numeric height results, including nonzero live bank datums.
+
+## Width revision (2026-10-11)
+
+User report: in the app the bridge looked like a one-way crossing. Two causes:
+
+- The authored road was a 6 m strip between two raised 1.9 m concrete walks. The IGN orthophoto and the 2023 restoration photos show one asphalt surface from girder to girder (about 9.5 m), with no raised walks; OSM's `sidewalk:both=separate` footways are unraised strips beside the girders.
+- The shared lateral fit moved the deck to the live HD pavement width. On this bridge the live `/osm-lanes` sections arrive in fragments: a single 4.3 m sample covering one half of the road at the NW joint (lateral −0.24 to 4.03 m) and a 2 m sliver at the SE joint. The fit kept the 4.3 m sample for the whole span, so in the app the deck rendered about 2.3 m narrower and off-centre.
+
+Changes:
+
+- The asphalt now runs between the inner faces of the plate girders (`carriageway(s)`, 9.47 m, following the mapped 0.5 m skew). The concrete walks and kerbs are removed; the two small safety housings are moved against the girders.
+- The riveted steel deck is rigid. The profile's `fittedLateral` is the identity, and `roadEdges`/`bridgeRoadHeight` accept against the authored carriageway, not the live sections. Both lanes, at lateral ±4.3 m, return the deck height in both travel directions.
+- Near 23,176 triangles / 7 draws / 1,159 KB; far 2,228 / 7 / 100 KB. All 294 focused/conformance tests pass. One test replays the live fragmentary sections.
+
+Lead app check with live HD lanes (same local set-up as below): overhead (zoom 19.6, pitch 45) and street (zoom 20.3, pitch 72) views from both ends. The deck reads as a two-lane bridge, slightly wider than its quay streets, and the stop lines and crossings beyond both joints remain visible. `landmarks.heightAt` mid-span returns 0.10 m in Cityscape and 0.104 m in Full 3D world. Cityscape **verified locally**; Full 3D world **verified locally**.
 
 ## Flush-deck revision (2026-10-11)
 
