@@ -4,7 +4,9 @@ import { CENTERLINE, NORTH_ABUTMENT, SOUTH_ABUTMENT, NORTH_PYLON } from './pont-
 export const WIDTH=23.6, MAIN_SPAN=856, TOWER_H=214, DECK_H=48, PEAK_H=59.5;
 export const ROAD_EDGES=[[-9.8,-.7],[.7,9.8]], LANDING=20, CURVE=50;
 const base=createBridgeProfile({...SPEC,width:WIDTH,centerline:CENTERLINE,palette:PALETTES.light,
-  roadEdges:ROAD_EDGES,clipStandardEnds:true,profile:({length})=>[[0,'start'],[length,'end']]});
+  // Provider pavement overlaps the median slightly. Clip at its edges before
+  // sampling each carriageway, so triangle winding cannot exchange the sides.
+  roadEdges:ROAD_EDGES,railGap:.7,clipStandardEnds:true,profile:({length})=>[[0,'start'],[length,'end']]});
 export const L=base.BRIDGE_LENGTH;
 export const BRIDGE_START=base.stationAt(NORTH_ABUTMENT),BRIDGE_END=base.stationAt(SOUTH_ABUTMENT);
 export const NORTH_TOWER=base.stationAt(NORTH_PYLON), SOUTH_TOWER=NORTH_TOWER+MAIN_SPAN;
