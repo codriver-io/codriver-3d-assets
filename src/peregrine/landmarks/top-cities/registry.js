@@ -198,6 +198,30 @@ import { ROAD_LAYER as lm_pont_saint_michelRoad } from './pont-saint-michel/laye
 import { SPEC as lm_ponts_jumeauxSpec, PALETTES as lm_ponts_jumeauxPalettes } from './ponts-jumeaux/config.js';
 import { FOOTPRINTS as lm_ponts_jumeauxFootprints } from './ponts-jumeaux/footprint.js';
 import { ROAD_LAYER as lm_ponts_jumeauxRoad } from './ponts-jumeaux/layer.js';
+import { SPEC as lm_viaduc_de_calixSpec, PALETTES as lm_viaduc_de_calixPalettes } from './viaduc-de-calix/config.js';
+import { FOOTPRINTS as lm_viaduc_de_calixFootprints } from './viaduc-de-calix/footprint.js';
+import { ROAD_LAYER as lm_viaduc_de_calixRoad } from './viaduc-de-calix/layer.js';
+import { SPEC as lm_pegasus_bridgeSpec, PALETTES as lm_pegasus_bridgePalettes } from './pegasus-bridge/config.js';
+import { FOOTPRINTS as lm_pegasus_bridgeFootprints } from './pegasus-bridge/footprint.js';
+import { ROAD_LAYER as lm_pegasus_bridgeRoad } from './pegasus-bridge/layer.js';
+import { SPEC as lm_pont_de_la_fonderieSpec, PALETTES as lm_pont_de_la_fonderiePalettes } from './pont-de-la-fonderie/config.js';
+import { FOOTPRINTS as lm_pont_de_la_fonderieFootprints } from './pont-de-la-fonderie/footprint.js';
+import { ROAD_LAYER as lm_pont_de_la_fonderieRoad } from './pont-de-la-fonderie/layer.js';
+import { SPEC as lm_pont_de_normandieSpec, PALETTES as lm_pont_de_normandiePalettes } from './pont-de-normandie/config.js';
+import { FOOTPRINTS as lm_pont_de_normandieFootprints } from './pont-de-normandie/footprint.js';
+import { ROAD_LAYER as lm_pont_de_normandieRoad } from './pont-de-normandie/layer.js';
+import { SPEC as lm_abbaye_aux_hommesSpec, PALETTES as lm_abbaye_aux_hommesPalettes } from './abbaye-aux-hommes/config.js';
+import { FOOTPRINTS as lm_abbaye_aux_hommesFootprints } from './abbaye-aux-hommes/footprint.js';
+import { SPEC as lm_chateau_de_caenSpec, PALETTES as lm_chateau_de_caenPalettes } from './chateau-de-caen/config.js';
+import { FOOTPRINTS as lm_chateau_de_caenFootprints } from './chateau-de-caen/footprint.js';
+import { SPEC as lm_eglise_saint_pierre_caenSpec, PALETTES as lm_eglise_saint_pierre_caenPalettes } from './eglise-saint-pierre-caen/config.js';
+import { FOOTPRINTS as lm_eglise_saint_pierre_caenFootprints } from './eglise-saint-pierre-caen/footprint.js';
+import { SPEC as lm_abbaye_aux_damesSpec, PALETTES as lm_abbaye_aux_damesPalettes } from './abbaye-aux-dames/config.js';
+import { FOOTPRINTS as lm_abbaye_aux_damesFootprints } from './abbaye-aux-dames/footprint.js';
+import { SPEC as lm_memorial_de_caenSpec, PALETTES as lm_memorial_de_caenPalettes } from './memorial-de-caen/config.js';
+import { FOOTPRINTS as lm_memorial_de_caenFootprints } from './memorial-de-caen/footprint.js';
+import { SPEC as lm_cathedrale_de_bayeuxSpec, PALETTES as lm_cathedrale_de_bayeuxPalettes } from './cathedrale-de-bayeux/config.js';
+import { FOOTPRINTS as lm_cathedrale_de_bayeuxFootprints } from './cathedrale-de-bayeux/footprint.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -293,6 +317,16 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_pont_saint_pierreSpec, lm_pont_saint_pierrePalettes, lm_pont_saint_pierreFootprints, lm_pont_saint_pierreRoad),
   entry(lm_pont_saint_michelSpec, lm_pont_saint_michelPalettes, lm_pont_saint_michelFootprints, lm_pont_saint_michelRoad),
   entry(lm_ponts_jumeauxSpec, lm_ponts_jumeauxPalettes, lm_ponts_jumeauxFootprints, lm_ponts_jumeauxRoad),
+  entry(lm_viaduc_de_calixSpec, lm_viaduc_de_calixPalettes, lm_viaduc_de_calixFootprints, lm_viaduc_de_calixRoad),
+  entry(lm_pegasus_bridgeSpec, lm_pegasus_bridgePalettes, lm_pegasus_bridgeFootprints, lm_pegasus_bridgeRoad),
+  entry(lm_pont_de_la_fonderieSpec, lm_pont_de_la_fonderiePalettes, lm_pont_de_la_fonderieFootprints, lm_pont_de_la_fonderieRoad),
+  entry(lm_pont_de_normandieSpec, lm_pont_de_normandiePalettes, lm_pont_de_normandieFootprints, lm_pont_de_normandieRoad),
+  entry(lm_abbaye_aux_hommesSpec, lm_abbaye_aux_hommesPalettes, lm_abbaye_aux_hommesFootprints),
+  entry(lm_chateau_de_caenSpec, lm_chateau_de_caenPalettes, lm_chateau_de_caenFootprints),
+  entry(lm_eglise_saint_pierre_caenSpec, lm_eglise_saint_pierre_caenPalettes, lm_eglise_saint_pierre_caenFootprints),
+  entry(lm_abbaye_aux_damesSpec, lm_abbaye_aux_damesPalettes, lm_abbaye_aux_damesFootprints),
+  entry(lm_memorial_de_caenSpec, lm_memorial_de_caenPalettes, lm_memorial_de_caenFootprints),
+  entry(lm_cathedrale_de_bayeuxSpec, lm_cathedrale_de_bayeuxPalettes, lm_cathedrale_de_bayeuxFootprints),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

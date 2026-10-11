@@ -18347,6 +18347,113 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "viaduc-de-calix",
+      "name": "Viaduc de Calix",
+      "kind": "bridge",
+      "location": "Caen / Hérouville-Saint-Clair / Mondeville, Normandy, France",
+      "status": "ready",
+      "description": "Original procedural N814 viaduct: 15 spans, single continuous road slab on twin variable-depth prestressed box girders, independent flared piers and widened southern interchange.",
+      "manifest": "/models/bridges/viaduc-de-calix.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/viaduc-de-calix/geometry.js",
+        "build": "pnpm build:top-cities-landmarks viaduc-de-calix --no-check",
+        "provenance": "Original procedural geometry; geographic alignment and outline © OpenStreetMap contributors (ODbL 1.0). Reference-only supplied Commons photos: Reference: Fichier:Travaux de rénovation du viaduc de Calix juin 2026.jpg; Benoit-caen; CC0; Reference: Fichier:Caen-Calix.JPG; Rundvald (uploader, public-domain self release); Public domain; Reference: Fichier:FranceNormandieMondevilleHerouvilleViaducCalixCouchant.jpg; Ikmo-ned; CC BY-SA 3.0; Reference: File:Caen-Calix.JPG; Rundvald (uploader, public-domain self release); Public domain; Reference: File:Viaduc Calix 01.07.2025 (1).jpg; Loxyger; CC BY-SA 4.0; Reference: File:Viaduc Calix presqu'île.jpg; Loxyger; CC BY-SA 4.0. No third-party mesh, photograph or texture shipped.",
+        "references": [
+          {
+            "label": "G Lacombe, PCM September 1976 pp 55–57: exact span sequence, slab, box girders, pier sections and road crest",
+            "url": "https://www.unipef.org/revue/fusion/810-pcm-1976-1976-09-ch00.pdf"
+          },
+          {
+            "label": "ARCIS: 1183 m, 15 spans, 156 m main span and girder depths",
+            "url": "https://viaducdecalix.wordpress.com/les-caracteristiques/"
+          },
+          {
+            "label": "Travee: structural repair of prestressed box segments",
+            "url": "https://travee.fr/project/viaduc-de-calix/"
+          },
+          {
+            "label": "OSM structural outline 377837685",
+            "url": "https://www.openstreetmap.org/way/377837685"
+          },
+          {
+            "label": "Reference: Fichier:Travaux de rénovation du viaduc de Calix juin 2026.jpg; Benoit-caen; CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Travaux_de_r%C3%A9novation_du_viaduc_de_Calix_juin_2026.jpg"
+          },
+          {
+            "label": "Reference: Fichier:Caen-Calix.JPG; Rundvald (uploader, public-domain self release); Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen-Calix.JPG"
+          },
+          {
+            "label": "Reference: Fichier:FranceNormandieMondevilleHerouvilleViaducCalixCouchant.jpg; Ikmo-ned; CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:FranceNormandieMondevilleHerouvilleViaducCalixCouchant.jpg"
+          },
+          {
+            "label": "Reference: File:Caen-Calix.JPG; Rundvald (uploader, public-domain self release); Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Caen-Calix.JPG"
+          },
+          {
+            "label": "Reference: File:Viaduc Calix 01.07.2025 (1).jpg; Loxyger; CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Viaduc_Calix_01.07.2025_(1).jpg"
+          },
+          {
+            "label": "Reference: File:Viaduc Calix presqu'île.jpg; Loxyger; CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Viaduc_Calix_presqu%27%C3%AEle.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/viaduc-de-calix/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=viaduc-de-calix&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=tower"
+          },
+          {
+            "label": "approach",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=approach"
+          },
+          {
+            "label": "north",
+            "url": "/asset-preview.html?asset=viaduc-de-calix&view=north"
+          }
+        ]
+      },
+      "notes": "Permanent structure without renovation scaffolding. Engineering source: 1182.60 m, 15 spans [50.3,70,70,113,156,113,8×70,50.3], 16.50–23.39 m roadway slab, twin 3.82 m box girders at 9.6 m centres, 1.9–9.7 m depth, ordinary 2.6 m square and main 2.6×5.1 m pier shafts. Road crest 38 m above water is interpreted as a local absolute-deck estimate, not surveyed NGF altitude. Flat-map ramps, widening transition, rails, lamps, segment seam rhythm and colour estimated. No underwater foundations, gantries, noise walls or port infrastructure. Far keeps all piers and haunches, omits paint/segment seams and thins rail posts. Review revision: cool grey #a4a8a8 daytime concrete; near rail posts every 7 m. Rails, posts and lamp stems share the existing four chunk steel batches; self-lit lamp heads remain separate.",
+      "documentation": "docs/assets/top-cities-viaduc-de-calix.md",
+      "city": "Caen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
