@@ -1,0 +1,66 @@
+{
+  "id": "grace-cathedral",
+  "name": "Grace Cathedral",
+  "kind": "building",
+  "origin": [
+    -122.4134362,
+    37.7918386
+  ],
+  "height": 75,
+  "padM": 62,
+  "frontageBearing": 81.2,
+  "rotationDeg": 98.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. y=0 is the Taylor Street pavement at the foot of the Great Stairs; the church floor and the doors stand 6.1 m above it (20 ft, Wikipedia).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: tower height 53 m, flèche 75 m (above street level), the 6.1 m entry level, the OSM outline (axis bearing, 95.7 m long, 43.4 m across the transepts, 26.8 m front). Estimated from photographs: every height below the tower tops (aisle and nave walls, roof ridges, belfry, rose window and portal), bay count, window rhythm and all north, south and apse elevations. Carved ornament, tracery (other than the rose window wheel) and the cathedral close are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/grace-cathedral-near.glb",
+      "bytes": 754616,
+      "triangles": 12185,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -53.177276611328125,
+          -7.629394644936838e-7,
+          -24.369548797607422
+        ],
+        "max": [
+          59.404266357421875,
+          75,
+          27.397518157958984
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/grace-cathedral-far.glb",
+      "bytes": 161748,
+      "triangles": 2479,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -53.177276611328125,
+          -7.629394644936838e-7,
+          -24.369548797607422
+        ],
+        "max": [
+          59.404266357421875,
+          75,
+          27.397518157958984
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/grace-cathedral/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

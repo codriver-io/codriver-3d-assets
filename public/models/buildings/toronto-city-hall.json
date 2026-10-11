@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/toronto-city-hall-near.glb",
-      "bytes": 2335616,
+      "bytes": 2027952,
       "triangles": 30418,
       "drawCalls": 10,
       "bounds": {
@@ -44,8 +44,8 @@
     },
     "far": {
       "url": "/models/buildings/toronto-city-hall-far.glb",
-      "bytes": 731456,
-      "triangles": 9618,
+      "bytes": 426748,
+      "triangles": 6806,
       "drawCalls": 8,
       "bounds": {
         "min": [

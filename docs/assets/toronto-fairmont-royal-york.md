@@ -62,7 +62,9 @@ steel frame; the brief's "brick" is not right and is not modelled.
 * **Detail is geometry, and is merged.** All windows, arches, cornices, piers, awnings, dormers and the
   lettering are flat-shaded quads with an explicit outward normal (`fairmont-royal-york-mesh.js`), merged
   per material. Arch openings are recessed glass in a limestone frame with reveals, mullions and transoms.
-  Belts sit on the boundaries between window rows, never across a pane.
+  Belts sit on the boundaries between window rows, never across a pane. A window pane is one quad 0.16 m proud of
+  the wall and its mullion a slender quad 7 cm in front of it (no boxes: the sides of a 0.2 m reveal are sub-pixel);
+  `flush` welds vertices that share a position and a normal, so a quad costs four vertices, not six.
 * **The sign is stroke lettering** (`fairmont-royal-york-sign.js`), not a plate: about 95 square-section bars. The south slope carries only the sign: the two south dormers stand outboard of it and the secondary turrets are on the north side only.
 * **Far LOD** keeps every slab, cornice and copper coping, the arcades, the whole crown (roof, turrets, stack,
   finial) and replaces the window grid with one dark slot per two bays cut around the arcades. The sign
@@ -88,10 +90,14 @@ steel frame; the brief's "brick" is not right and is not modelled.
 
 | | Triangles | Draw calls | Bytes |
 | --- | --- | --- | --- |
-| Near | 44,634 | 9 | 4,162,188 |
-| Far | 5,665 | 7 | 518,436 |
+| Near | 23,062 | 9 | 1,122,584 |
+| Far | 5,665 | 7 | 294,132 |
 
-Budgets: near 160,000 / 48, far 45,000 / 14. Costs describe scene meshes and uncompressed bytes, not
+Weight pass (2026-10-01): near was 44,634 triangles / 3.62 MB (window boxes, six vertices a quad, the roof boxes' top drawn twice
+which also left 449 m2 of coplanar overlap); the quad windows, welded vertices and single roof caps cut it to 23,062 / 1.12 MB with
+the same silhouette, crown, arcades, sign and colours. Far is unchanged in triangles.
+
+Budgets: near 160,000 / 48, far 45,000 / 14 (the San Francisco budgets, 60,000 / 14 / 2.5 MB near and 12,000 / 8 / 500 KB far, also hold). Costs describe scene meshes and uncompressed bytes, not
 measured Tesla performance. Bounds: x -80.9 to 80.7, y 0 to 124, z -50.5 to 51.6 m around the origin
 (-79.3815238, 43.6459096).
 

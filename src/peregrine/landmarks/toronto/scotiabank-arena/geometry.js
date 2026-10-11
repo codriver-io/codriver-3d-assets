@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, materialFor } from './config.js';
 import { V, RINGS, shoelace, centroid, edgeFrame, roundCorner, makePath, makeRoofHeight } from './scotiabank-arena-site.js';
 import { GLYPHS, TEXT } from './scotiabank-arena-sign.js';
 
@@ -15,10 +15,13 @@ import { GLYPHS, TEXT } from './scotiabank-arena-sign.js';
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
+  // Every material goes through the draw-budget fold (config.js FOLD): near is unchanged, far shares draws.
+  const { put: put0, box: box0 } = b, fold = (m) => materialFor(m, detail);
+  b.put = (g, m, ...rest) => put0(g, fold(m), ...rest); b.box = (m, ...rest) => box0(fold(m), ...rest);
   const { eave, rise } = SPEC.roof, LIME = SPEC.facadeM, ATR = SPEC.atriumM;
   const roofH = makeRoofHeight(SPEC.roof);
   const acc = new Map();
-  const bucket = (mat) => { if (!acc.has(mat)) acc.set(mat, { pos: [], idx: [] }); return acc.get(mat); };
+  const bucket = (mat) => { mat = fold(mat); if (!acc.has(mat)) acc.set(mat, { pos: [], idx: [] }); return acc.get(mat); };
 
   // ---- primitives -------------------------------------------------------
   // A quad p0..p3 (arrays [x,y,z]) wound so its normal faces `out`.
@@ -98,23 +101,23 @@ export function create({ detail = 'near' } = {}) {
     const n = Math.max(1, Math.ceil((s1 - s0) / CH)), step = (s1 - s0) / n;
     for (let i = 0; i < n; i++) fn(s0 + step * (i + 0.5), step);
   };
-  chain(facade, 0, facade.length, (s, l) => { onPath('plinth', facade, s, 0.12, 0.55, l + 0.05, 1.1, 0.25); onPath('limestone', facade, s, 0.4, LIME - 0.55, l + 0.05, 1.1, 0.8); });
+  chain(facade, 0, facade.length, (s, l) => { onPath('plinth', facade, s, 0.2, 0.55, l + 0.05, 1.1, 0.52); onPath('limestone', facade, s, 0.4, LIME - 0.55, l + 0.05, 1.1, 0.8); });
   // Tall vertical windows between pink-grey granite pilasters: pitch 8 m (4.8 m glass + 3.2 m pilaster).
   const PITCH = 8;
   function colonnade(s0, bays) {
     for (let i = 0; i <= bays; i++) {
       const s = s0 + i * PITCH;
       onPath('granite', facade, s, 0.5, (3.4 + 17.9) / 2, 3.2, 17.9 - 3.4, 1.0);
-      onPath('plinth', facade, s, 0.55, 1.5, 3.4, 3.0, 1.1);
+      onPath('plinth', facade, s, 0.55, 1.5, 3.6, 3.0, 1.1);
     }
     for (let i = 0; i < bays; i++) {
       const s = s0 + i * PITCH + PITCH / 2;
       onPath('glass', facade, s, 0.14, (4.3 + 17.0) / 2, 4.8, 17.0 - 4.3, 0.3);
       onPath('glass', facade, s, 0.14, 2.4, 4.8, 3.6, 0.3);
-      onPath('frame', facade, s, 0.2, 4.3, 4.8, 0.3, 0.4);
+      onPath('frame', facade, s, 0.2, 4.3, 5.0, 0.3, 0.4);
       if (near) {
-        for (const k of [-1.2, 0, 1.2]) onPath('frame', facade, s + k, 0.22, (4.3 + 17.0) / 2, 0.14, 17.0 - 4.3, 0.36);
-        for (let y = 6.0; y < 17.0; y += 1.9) onPath('frame', facade, s, 0.22, y, 4.8, 0.12, 0.36);
+        for (const k of [-1.2, 0, 1.2]) onPath('frame', facade, s + k, 0.22, (4.2 + 17.1) / 2, 0.14, 17.1 - 4.2, 0.36); // mullions run a hand past the glass sill and head
+        for (let y = 6.0; y < 17.0; y += 1.9) onPath('frame', facade, s, 0.22, y, 5.0, 0.12, 0.36);
       }
     }
   }
@@ -124,7 +127,7 @@ export function create({ detail = 'near' } = {}) {
   function ribbon(s0, s1) {
     for (const [y0, y1] of [[7.4, 11.4], [13.0, 16.0]]) chain(facade, s0, s1, (s, l) => {
       onPath('glass', facade, s, 0.16, (y0 + y1) / 2, l + 0.02, y1 - y0, 0.3);
-      if (near) { onPath('frame', facade, s, 0.24, (y0 + y1) / 2, l + 0.02, 0.14, 0.4); onPath('frame', facade, s, 0.24, y0 + 0.1, l + 0.02, 0.2, 0.4); onPath('frame', facade, s, 0.24, y1 - 0.1, l + 0.02, 0.2, 0.4); }
+      if (near) { onPath('frame', facade, s, 0.3, (y0 + y1) / 2, l + 0.16, 0.14, 0.4); onPath('frame', facade, s, 0.3, y0 - 0.1, l + 0.16, 0.2, 0.4); onPath('frame', facade, s, 0.3, y1 + 0.1, l + 0.16, 0.2, 0.4); } // sill and head sit just outside the glass, not flush with it
     });
   }
   ribbon(sBay0 + 0.8, sBay0 + 14.3); // north end block
@@ -201,7 +204,7 @@ export function create({ detail = 'near' } = {}) {
   }
 
   // Standing-seam joints across the roof, along the Lake Shore axis, clipped to the bowl outline and
-  // draped on the arch (0.06 m above it): breaks up the membrane so it reads as roofing, not a plate.
+  // draped on the arch (0.1 m above it, clear of the chord sag): breaks up the membrane so it reads as roofing, not a plate.
   {
     const ax = edgeFrame(V.P2, V.P1, 1), ux = ax.ux, uz = ax.uz, vx = -uz, vz = ux, ring = RINGS.bowl, c0 = centroid(ring);
     const pitch = near ? 6 : 12, seg = near ? 4 : 10, w = near ? 0.2 : 0.35, dOf = (p) => (p[0] - c0[0]) * vx + (p[1] - c0[1]) * vz;
@@ -218,7 +221,7 @@ export function create({ detail = 'near' } = {}) {
         for (let i = 0; i < n; i++) {
           const ta = t0 + (t1 - t0) * i / n, tb = t0 + (t1 - t0) * (i + 1) / n;
           const pa = [c0[0] + vx * d + ux * ta, c0[1] + vz * d + uz * ta], pb = [c0[0] + vx * d + ux * tb, c0[1] + vz * d + uz * tb];
-          const ha = roofH(pa[0], pa[1]) + 0.06, hb = roofH(pb[0], pb[1]) + 0.06;
+          const ha = roofH(pa[0], pa[1]) + 0.1, hb = roofH(pb[0], pb[1]) + 0.1;
           quad('louvre', [pa[0] - vx * w / 2, ha, pa[1] - vz * w / 2], [pa[0] + vx * w / 2, ha, pa[1] + vz * w / 2], [pb[0] + vx * w / 2, hb, pb[1] + vz * w / 2], [pb[0] - vx * w / 2, hb, pb[1] - vz * w / 2], [0, 1, 0]);
         }
       }
@@ -250,7 +253,7 @@ export function create({ detail = 'near' } = {}) {
     for (const s of [7, 18.5, 31, 43.5, 55]) {
       onEdge('plinth', f, s, 0.1, 2.5, 5.0, 5.0, 0.2);
       onEdge('frame', f, s, 0.14, 5.1, 5.7, 0.4, 0.24);
-      if (near) for (const d of [-2.65, 2.65]) onEdge('frame', f, s + d, 0.14, 2.5, 0.35, 5.0, 0.24);
+      if (near) for (const d of [-2.65, 2.65]) onEdge('frame', f, s + d, 0.14, 2.5, 0.35, 4.8, 0.24);
       onEdge('cladding', f, s, 0.13, 6.6, 4.4, 1.6, 0.18); // vent panel over each dock door
     }
     for (const s of [12.6, 25, 37, 49.5]) onEdge('plinth', f, s, 0.1, 1.4, 1.5, 2.8, 0.2);

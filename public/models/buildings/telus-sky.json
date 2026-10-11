@@ -1,0 +1,81 @@
+{
+  "id": "telus-sky",
+  "name": "Telus Sky",
+  "kind": "building",
+  "origin": [
+    -114.0635398,
+    51.0467718
+  ],
+  "height": 222.3,
+  "padM": 42,
+  "frontageBearing": 182,
+  "gridBearingDeg": 2.45,
+  "plan": {
+    "width": 51.43,
+    "depth": 34.27,
+    "bayCells": 6,
+    "rowCells": 5
+  },
+  "levels": {
+    "lobby": 7,
+    "office": 4.1,
+    "officeCount": 28,
+    "residential": 3.3,
+    "residentialCount": 29,
+    "plant": 3.6,
+    "roofPlant": 1.2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The street-level lobby floor is y=0; the +15 skywalk, the 31 m excavation and the underground levels are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height (222.3 m), plate size, grid rotation and the west podium follow OSM, Wikipedia and the street grid; the storey heights, how far the north, west and east faces step back and the pixel pattern are estimated from photographs. The Northern Lights LED is shown as green fascia strips on the north and south faces, not its real layout; the small overhanging volumes are mapped but their structure is a guess.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/telus-sky-near.glb",
+      "bytes": 966548,
+      "triangles": 17772,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.350257873535156,
+          0,
+          -27.58171844482422
+        ],
+        "max": [
+          30.299795150756836,
+          222.3000030517578,
+          20.062515258789062
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/telus-sky-far.glb",
+      "bytes": 289924,
+      "triangles": 5260,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -31.350257873535156,
+          0,
+          -27.58171844482422
+        ],
+        "max": [
+          30.299795150756836,
+          222.3000030517578,
+          20.062515258789062
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/telus-sky/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

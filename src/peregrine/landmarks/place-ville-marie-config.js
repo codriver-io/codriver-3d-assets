@@ -23,6 +23,6 @@ export function pvmSite(u, y, v) { return [u*c-v*s, y, u*s+v*c]; }
 export function pvmUnsite(x,z) { return [x*c+z*s,-x*s+z*c]; }
 export const PVM_RING_SITE = pvmUnsite(...pvmLocal(...PLACE_VILLE_MARIE.ring.origin));
 export const PVM_PALETTES = {
-  light: { concrete:'#c7c5ba', lattice:'#b9bec1', glass:'#34434a', roof:'#828886', paint:'#ced2d0', rail:'#5a6266', museum:'#a3a9a9', stone:'#9f9f95', iron:'#ebe5d5', steel:'#fff0d0' },
+  light: { concrete:'#c7c5ba', lattice:'#b9bec1', glass:'#5e7a8a', roof:'#828886', paint:'#ced2d0', rail:'#5a6266', museum:'#8497a2', stone:'#9f9f95', iron:'#aab3b4', steel:'#fff0d0' },
   dark: { concrete:'#77838c', lattice:'#89979e', glass:'#263d4c', roof:'#4d5965', paint:'#b8cbd4', rail:'#637482', museum:'#526676', stone:'#596975', iron:'#ded4b9', steel:'#ffe8ab' },
 };

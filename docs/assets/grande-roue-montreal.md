@@ -25,3 +25,7 @@ Source: [`src/peregrine/landmarks/grande-roue-geometry.js`](../../src/peregrine/
 - [Dutch Wheels · manufacturer and photo gallery](https://www.dutchwheels.com/en/portfolio/la-grande-roue-de-montreal)
 - [OSM attraction footprint 1097403710](https://www.openstreetmap.org/way/1097403710)
 - [OSM attribution and ODbL](https://www.openstreetmap.org/copyright)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). rim tubes 0.52 m, spokes 0.28 m; boarding deck lowered so the lowest cabin clears it by about 0.11 m. Exported cost: near 19,666 triangles / 6 draws / 753,908 bytes; far 5,792 / 6 / 283,168.

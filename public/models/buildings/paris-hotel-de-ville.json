@@ -26,46 +26,46 @@
   "dimensions": {
     "width": 150,
     "length": 105,
-    "height": 50
+    "height": 51
   },
   "elevationDatum": "Local y=0 is the rigid foundation plane; the host samples and places the model on flat ground or terrain. No DEM, elevation or Mercator scale is baked.",
   "footprint": "Approximate bounded architectural footprint in the rotated width × length envelope; public squares, streets and interior courtyards are excluded.",
-  "note": "50 m campanile published by Ville de Paris; perimeter and wings are approximate map/photo interpretation. Open central courtyard and western square stay empty.",
+  "note": "Ville de Paris publishes a 50 m campanile; the model's belfry finial reaches about 51 m. Perimeter and wings are approximate map/photo interpretation. Open central courtyard and western square stay empty.",
   "provenance": "Original procedural geometry commissioned for Codriver in 2026. Official photographs and publications informed proportions only. OpenStreetMap coordinates used for geographic placement; no third-party mesh, image or texture is included.",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-hotel-de-ville-near.glb",
-      "bytes": 1942232,
-      "triangles": 41804,
+      "bytes": 1566816,
+      "triangles": 34436,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -66.45935697724799,
-          -5.9604645663569045e-9,
-          -83.01588979548
+          -66.2331388776116,
+          0,
+          -82.79837045293706
         ],
         "max": [
-          66.58137654893314,
-          50,
-          83.06679331917772
+          66.31567800492572,
+          51,
+          82.8283143909086
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-hotel-de-ville-far.glb",
-      "bytes": 824620,
-      "triangles": 17880,
+      "bytes": 115672,
+      "triangles": 2448,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -66.4410632599056,
-          -5.9604645663569045e-9,
-          -83.01588979548
+          -65.8783946095893,
+          0,
+          -82.39958151681293
         ],
         "max": [
-          66.58137654893314,
-          50,
-          83.06679331917772
+          66.0023861226462,
+          51,
+          82.36963887979017
         ]
       }
     }

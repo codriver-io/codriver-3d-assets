@@ -28,3 +28,7 @@ Source: [`src/peregrine/landmarks/stade-olympique-geometry.js`](../../src/peregr
 - [OSM stadium footprint](https://www.openstreetmap.org/way/108505523)
 - [OSM tower/centre footprint](https://www.openstreetmap.org/way/20213158)
 - [Starting visitor reference — Tourisme Montréal](https://www.mtl.org/en/experience/go-gold-montreal-olympic-park)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). Exported cost: near 23,460 triangles / 7 draws / 833,760 bytes; far 10,964 / 7 / 449,568.

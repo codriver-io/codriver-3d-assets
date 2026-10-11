@@ -35,6 +35,16 @@ export const PALETTES = {
   },
 };
 
+// Draw-call budget (docs/3d-toronto-union-station.md): design names on the left, the exported material on the right.
+// Near keeps all eleven (11 draws). Far folds look-alikes: the granite plinth and the shed roof into the grey roof tone
+// (same grey in both themes), and the dark steel seams into the dark glass, which leaves seven.
+export const FOLD = {
+  near: {},
+  far: { base: 'roof', shed: 'roof', metal: 'glass' },
+};
+/** The exported material for a design name at a detail level. */
+export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
+
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 is Front Street pavement on the flat Peregrine basemap; no absolute altitude. The train sheds stand at the same y=0 datum although the real platforms lie a few metres below Front Street.',
   attribution: 'Original procedural mesh. Mapped footprint and building parts © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',

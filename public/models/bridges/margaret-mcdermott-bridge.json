@@ -1,0 +1,69 @@
+{
+  "id": "margaret-mcdermott-bridge",
+  "name": "Margaret McDermott Bridge",
+  "kind": "bridge",
+  "origin": [
+    -96.817955425,
+    32.77028005
+  ],
+  "height": 106.68,
+  "padM": 65,
+  "frontageBearing": 76.6,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "rangeM": 4500,
+  "nearM": 1350,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local metres, y=0 flat Cityscape grade. Deck 19.812 m and arch crown 106.68 m above that datum. Full 3D world uses a separate absolute-deck profile (estimated river datum 118 m), never baked into the GLB; foundations refit to the DEM.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published arch span 1,125 ft (342.9 m), arch height 350 ft (106.68 m), 285 ft above deck (86.868 m), pedestrian width 20 ft 4 in (6.1976 m). Cross-section, fork openings, cable pitch, concrete bents, deck datum and flat approach profile are visual estimates; no engineering survey. Mapped 337.5 m straight cycle-path segments locate the published span to within 3 m per end. World elevation is approximate; integration verification is recorded separately.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/margaret-mcdermott-bridge-near.glb",
+      "bytes": 3040544,
+      "triangles": 66108,
+      "drawCalls": 22,
+      "bounds": {
+        "min": [
+          -501.2408447265625,
+          -1.3200000524520874,
+          -179.3353729248047
+        ],
+        "max": [
+          501.2193298339844,
+          106.68000030517578,
+          179.3353729248047
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/margaret-mcdermott-bridge-far.glb",
+      "bytes": 709044,
+      "triangles": 18104,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -501.2533264160156,
+          -1.3200000524520874,
+          -179.3353729248047
+        ],
+        "max": [
+          501.2193298339844,
+          106.68000030517578,
+          179.3353729248047
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/margaret-mcdermott-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

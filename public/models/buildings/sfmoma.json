@@ -1,0 +1,69 @@
+{
+  "id": "sfmoma",
+  "name": "San Francisco Museum of Modern Art",
+  "kind": "building",
+  "origin": [
+    -122.400673,
+    37.785899
+  ],
+  "height": 62,
+  "padM": 80,
+  "frontageBearing": 225.4,
+  "gridDeg": 135.4,
+  "brickTop": 40.5,
+  "turretTop": 45.8,
+  "expansionTop": 62,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (Third Street level at the entrance); no absolute altitude. Botta brick masses 19.5 / 24.5 / 29.5 / 40.5 m, turret rim 27.6 to 45.8 m, Snohetta roof 46 m (north-west end) rising to 62 m (Howard Street end).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan (Botta body, turret circle, end towers, Snohetta slab, annex) is mapped from OSM; the 62 m top is sourced (Skyscraper Center); every other height, the step depths, the skylight slope, stripe pitch, the Snohetta roof profile, ribbon windows and wave pattern are estimated from photographs. See docs/3d-san-francisco-sfmoma.md.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/sfmoma-near.glb",
+      "bytes": 638012,
+      "triangles": 19258,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -61.18967819213867,
+          0,
+          -57.059993743896484
+        ],
+        "max": [
+          68.71410369873047,
+          62,
+          49.011878967285156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/sfmoma-far.glb",
+      "bytes": 98028,
+      "triangles": 2693,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -61.09000015258789,
+          0,
+          -57.059993743896484
+        ],
+        "max": [
+          68.71410369873047,
+          62,
+          48.91219711303711
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/sfmoma/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

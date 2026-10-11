@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 2,440,468 | 49,386 | 8 |
-| Far | 314,788 | 5,678 | 7 |
+| Near | 2,516,896 | 50,156 | 7 |
+| Far | 249,460 | 5,474 | 7 |
 
 ## Inspection and placement
 
@@ -50,3 +50,7 @@ Procedural code and this documentation: MIT. Original GLB models: CC BY 4.0, © 
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-alexandre-iii.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-alexandre-iii-roof-or-structure.png).
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). arch ribs and spandrel posts are cream; the four pylon groups are gilded winged horses with a Fame rider; lamps are three-globe candelabra. Exported cost: near 50,156 triangles / 7 draws / 2,516,896 bytes; far 5,474 / 7 / 249,460.

@@ -1,0 +1,108 @@
+{
+  "id": "canada-olympic-park",
+  "name": "Canada Olympic Park ski jumps",
+  "kind": "building",
+  "origin": [
+    -114.2128861,
+    51.0767341
+  ],
+  "height": 93,
+  "padM": 140,
+  "frontageBearing": 8.8,
+  "rangeM": 4000,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -114.2129472,
+          51.0778369
+        ],
+        [
+          -114.2129209,
+          51.0779069
+        ],
+        [
+          -114.2128541,
+          51.0778969
+        ],
+        [
+          -114.2128804,
+          51.077827
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -114.2128941,
+        51.0778844
+      ],
+      [
+        -114.2129154,
+        51.077906
+      ],
+      [
+        -114.212881,
+        51.0779194
+      ],
+      [
+        -114.2128597,
+        51.0778978
+      ]
+    ],
+    "datum": "median",
+    "featherM": 4
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the ground at the K89 (70 m) take-off edge, the lowest footing of the complex. Every part stands at its height above that point on the Paskapoo Slopes (public DEM: 90 m tower base +25.5 m, 70 m tower base +18.1 m, K114 take-off ground +4.2 m, K63 tower +29.3 m, K38 take-off +11.1 m), and every support and tower shaft continues straight down to y=0, so on the flat Cityscape map the complex stands on y=0 and the shafts below each real ground stand in for the hill. No terrain, sea level or latitude stretch is baked in. Full 3D world: an explicit terrain pad (terrainPad) hangs the group from the DEM at the K89 take-off; only the take-off table footprint is held at that datum and the hill hides the supports below their ground.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the 58 m tower (Heritage Calgary), the K114 and K89 inrun lengths, angles, take-off lengths and heights (skisprungschanzen.com), cast-in-place concrete towers with steel inrun structures (CANA). Estimated: the tower plans, storey, window and ring heights, the head taper, the transition radii (FIS rule), the pier and trestle positions, the 70 m and K63 towers, the whole K63 and K38 profiles, and the plan positions and bearings (aerial imagery; the OSM ways are coarse). Ground heights between parts come from a public 12 m DEM and are good to a few metres. The landing hills (terrain), the K20/K10 hills, the judges towers, floodlights and the zipline are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/canada-olympic-park-near.glb",
+      "bytes": 132368,
+      "triangles": 2932,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -24.87652015686035,
+          -6.708846740366425e-7,
+          -130.85118103027344
+        ],
+        "max": [
+          94.39933776855469,
+          93.11699676513672,
+          50.38901901245117
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/canada-olympic-park-far.glb",
+      "bytes": 52584,
+      "triangles": 1026,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -24.87652015686035,
+          -6.708846740366425e-7,
+          -130.5521240234375
+        ],
+        "max": [
+          94.39933776855469,
+          93,
+          50.38901901245117
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/canada-olympic-park/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

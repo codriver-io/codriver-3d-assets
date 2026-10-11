@@ -1,0 +1,90 @@
+{
+  "id": "puerta-de-europa",
+  "name": "Puerta de Europa (KIO Towers)",
+  "kind": "building",
+  "origin": [
+    -3.68911225135,
+    40.46686163068
+  ],
+  "height": 114.9,
+  "roofHeight": 114.7,
+  "width": 35,
+  "depth": 35,
+  "levels": 26,
+  "leanDeg": 14.3,
+  "padM": 116,
+  "frontageBearing": 191.5,
+  "towers": [
+    {
+      "name": "CaixaBank",
+      "center": [
+        -87.91119341,
+        -18.47386551
+      ],
+      "gridDeg": 11.70627233,
+      "lean": 1
+    },
+    {
+      "name": "REALIA",
+      "center": [
+        87.91119341,
+        18.47386551
+      ],
+      "gridDeg": 11.26724158,
+      "lean": -1
+    }
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid lobby grade y=0; no sea-level, terrain or latitude stretch baked into the mesh.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "35 m square bases and 14.3 degree lean from Madrid tourism; OSM 114.7 m roof plus 0.2 m heliport. Mapped 26.4 m floor displacement differs from the published 29.2 m lean: replacement envelopes include the corrected upper overhang. Facade modules, bracing widths, lobby and rooftop fittings are estimates; current tenant lettering is stylized geometry. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/puerta-de-europa-near.glb",
+      "bytes": 1226072,
+      "triangles": 22396,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -109.01158905029297,
+          0,
+          -39.57426452636719
+        ],
+        "max": [
+          108.90479278564453,
+          114.9000015258789,
+          39.467464447021484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/puerta-de-europa-far.glb",
+      "bytes": 288664,
+      "triangles": 5056,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -109.01158905029297,
+          0,
+          -39.57426452636719
+        ],
+        "max": [
+          108.90479278564453,
+          114.9000015258789,
+          39.467464447021484
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/puerta-de-europa/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

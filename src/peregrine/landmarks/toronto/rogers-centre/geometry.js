@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, materialFor } from './config.js';
 import { OUTLINE, HOTEL, RING_TOP, ROOF, site } from './rogers-centre-site.js';
 import { halfWidth, roofHeight } from './rogers-centre-roof.js';
 import { wordSegments } from './rogers-centre-letters.js';
@@ -17,6 +17,9 @@ const EDGE_MIN = 3.5, LEAN = 9, WALL_R = 99.6;
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
+  // Every material goes through the draw-budget fold (config.js FOLD): near is unchanged, far shares draws.
+  const { put: put0, box: box0, bar: bar0 } = b, fold = (m) => materialFor(m, detail);
+  b.put = (g, m, ...rest) => put0(g, fold(m), ...rest); b.box = (m, ...rest) => box0(fold(m), ...rest); b.bar = (m, ...rest) => bar0(fold(m), ...rest);
   const { R } = ROOF;
 
   // ---- small geometry helpers ------------------------------------------------------
@@ -152,14 +155,14 @@ export function create({ detail = 'near' } = {}) {
     for (let k = 0; k < nb; k++) {
       const s = (k + 0.5) * bay, w = bay - 1.9, r = rnd(e.i + h, k), r2 = rnd(e.i + h, k, 2), lit = gateSide && r > 0.25;
       wbox(lit ? 'glow' : 'concrete_dark', e, s, 3.3, 0.15, w, 5.8, 0.4);
-      if (lit) for (const m of [-0.5, 0.5]) wbox('concrete', e, s + m * w / 2.2, 3.3, 0.35, 0.22, 5.8, 0.4);
+      if (lit) for (const m of [-0.5, 0.5]) wbox('concrete', e, s + m * w / 2.2, 3.3, 0.35, 0.22, 5.92, 0.4); // posts run 6 cm past the glazing: no shared plane
       const band = (y0, y1, pWin, pLouvre) => {
         if (y1 > h) return;
         const yc = (y0 + y1) / 2, bh = y1 - y0, q = rnd(e.i + h, k, y0);
         if (q < pWin) {
           wbox(q < pWin * 0.3 && y0 < 15 ? 'glow' : 'glass', e, s, yc, 0.15, w, bh, 0.4);
-          for (const m of [-0.5, 0, 0.5]) wbox('concrete', e, s + m * (w - 0.2), yc, 0.32, 0.2, bh, 0.3);
-          wbox('concrete', e, s, yc, 0.32, w, 0.2, 0.3);
+          for (const m of [-0.5, 0, 0.5]) wbox('concrete', e, s + m * (w - 0.1), yc, 0.32, 0.2, bh + 0.12, 0.3); // mullions and transom overlap the glazing by a hand,
+          wbox('concrete', e, s, yc, 0.32, w + 0.12, 0.2, 0.3); // so none of their faces lies in the glass's plane
         } else if (q < pWin + pLouvre) {
           wbox('louvre', e, s, yc, 0.15, w, bh, 0.4);
           for (const m of [-0.25, 0.25]) wbox('concrete_dark', e, s, yc + m * bh, 0.36, w - 0.4, 0.18, 0.2);
@@ -252,9 +255,17 @@ export function create({ detail = 'near' } = {}) {
     for (const [su, sv] of [[-62, 80], [62, 80], [-108, -35], [109, -35]]) {
       const s0 = nearestS(su, sv), yBase = 26.8;
       const at = (x) => { const w = wallAt(s0 + word.width / 2 - x); return [w.p[0] + w.n[0] * 0.5, w.p[1] + w.n[1] * 0.5]; };
-      for (const [[x0, y0], [x1, y1]] of word.segments) {
+      if (near) for (const [[x0, y0], [x1, y1]] of word.segments) {
         const p0 = at(x0), p1 = at(x1);
-        b.bar('sign', W(p0[0], yBase + y0, p0[1]), W(p1[0], yBase + y1, p1[1]), near ? 0.55 : 0.9, near ? 0.6 : 0.9, 0, false, 0);
+        b.bar('sign', W(p0[0], yBase + y0, p0[1]), W(p1[0], yBase + y1, p1[1]), 0.55, 0.6, 0, false, 0);
+      } else {
+        // Far: the letters are 4 m tall and 28 m long, a few pixels at far range. Four red bars along the word's
+        // mid-line keep the red band and its length for a tenth of the triangles (3,520 -> 192 over the four signs).
+        const SEG = 4, bandY = yBase + 2.5;
+        for (let i = 0; i < SEG; i++) {
+          const p0 = at(word.width * i / SEG), p1 = at(word.width * (i + 1) / SEG);
+          b.bar('sign', W(p0[0], bandY, p0[1]), W(p1[0], bandY, p1[1]), 1.5, 0.6, 0, false, 0);
+        }
       }
     }
   }

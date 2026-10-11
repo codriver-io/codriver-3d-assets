@@ -46,7 +46,7 @@ Real metres, +X east, +Y up, +Z south. `origin` `[-79.3815354, 43.647541]` is th
 ## Modelling decisions
 
 - **One landmark, five bodies.** The Mies group and the later black towers are separate buildings with their own footprints; one origin and one owned-footprint list (seven OSM rings: the parts are listed beside their outlines because the provider extrudes whichever it receives) replace them together.
-- **Facade rhythm is geometry.** A tower is a bronze-glass box recessed 0.3 m behind the steel: spandrels per floor, I-beam mullions per module, corner columns, windowless louvered bands and crown, a recessed glass lobby with its own frame. Lit-or-not panes are separate quads (`glow`) placed 0.07 m off the glass and behind the steel, chosen by a deterministic hash: a warm daytime reflection in the light palette, a lit window in the dark one.
+- **Facade rhythm is geometry.** A tower is a bronze-glass box recessed 0.3 m behind the steel: spandrels per floor, I-beam mullions per module, corner columns, windowless louvered bands and crown, a recessed glass lobby with its own frame. Spandrels, mullions, louvers and columns are built from their visible faces only (`slab` in the kit: a spandrel is its face and underside, an I-beam mullion its two web flanks and the outer flange's front and sides). Lit-or-not panes are separate quads (`glow`) placed 0.07 m off the glass and behind the steel, chosen by a deterministic hash (neighbouring lit bays and floors merge into one rectangle, since the mullions and spandrels in front draw the grid): a warm daytime reflection in the light palette, a lit window in the dark one.
 - **The pavilion is open.** Columns, deep perimeter fascia, glazing frames and a two-way beam grid over a `lamp` ceiling and floor, with the living roof on top: it reads as the transparent hall it is, and glows at night through its open sides.
 - **Far keeps the silhouette.** The same five bodies, bands, crown, recessed lobbies with columns, the pavilion colonnade (every other column) and the four green signs; mullions on the 9.14 m grid only; no per-floor detail, panes, louvers, letters or ceiling grid (they are sub-pixel at range and shimmer).
 - **Palettes.** Light: matte black steel `#18191b`, bronze glass `#443d36`. Dark: `#0e0f11` / `#1e1c1a` with amber lit panes, lobbies, pavilion floor and ceiling. `sign` is TD green, `light` the white of the lettering.
@@ -61,10 +61,12 @@ Measured from the exported GLBs (`public/models/buildings/toronto-dominion-centr
 
 | Export | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 46 724 | 9 | 2 910 924 |
-| far | 3 060 | 7 | 200 168 |
+| near | 19 592 | 9 | 1 062 320 |
+| far | 1 796 | 7 | 100 784 |
 
-Budgets are 160 000 / 48 and 45 000 / 14. Bounds (near and far): X -126.1 to 102.9, Y 0 to 222.86, Z -107.0 to 135.0 m. Texture-free GLB 2.0. Software-GL screenshots are not Tesla hardware timings.
+Weight pass (2026-10-01): near was 46 724 triangles / 2.91 MB (2.48 MB with the stripped `bridgeLift`; every spandrel, mullion, louver and lobby frame was a 12-triangle box and 5 900 lit panes were separate quads). The silhouette, grid, bands, lobbies, pavilion colonnade, signs and colours are unchanged; far shares the new column and mullion faces (3 060 to 1 796 triangles).
+
+Budgets are 160 000 / 48 and 45 000 / 14 (the San Francisco budgets, 60 000 / 14 / 2.5 MB near and 12 000 / 8 / 500 KB far, also hold). Bounds (near and far): X -126.1 to 102.9, Y 0 to 222.86, Z -107.0 to 135.0 m. Texture-free GLB 2.0. Software-GL screenshots are not Tesla hardware timings.
 
 ## Verification evidence
 

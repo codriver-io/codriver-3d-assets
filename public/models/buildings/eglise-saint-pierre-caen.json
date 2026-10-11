@@ -1,0 +1,65 @@
+{
+  "id": "eglise-saint-pierre-caen",
+  "name": "Église Saint-Pierre de Caen",
+  "kind": "building",
+  "origin": [
+    -0.3609,
+    49.18402
+  ],
+  "height": 75,
+  "padM": 49,
+  "frontageBearing": 320,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid foundation at local flat pavement y=0. No terrain, altitude or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "City of Caen gives 75 m stone spire and no transept. Church envelope mapped from OSM way 154620108; SE axis approximately 140 degrees from two outline controls. Nave/chevet heights, Gothic tracery, Renaissance relief and spire crockets are photographic estimates. Scaffold-free restored exterior; interiors and adjoining buildings omitted. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/eglise-saint-pierre-caen-near.glb",
+      "bytes": 1756444,
+      "triangles": 37944,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.337446212768555,
+          -1.7757378700740444e-16,
+          -30.57192039489746
+        ],
+        "max": [
+          39.778053283691406,
+          75,
+          30.355993270874023
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/eglise-saint-pierre-caen-far.glb",
+      "bytes": 491300,
+      "triangles": 10766,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.337446212768555,
+          -1.7757378700740444e-16,
+          -30.57192039489746
+        ],
+        "max": [
+          39.778053283691406,
+          75,
+          30.355993270874023
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eglise-saint-pierre-caen/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

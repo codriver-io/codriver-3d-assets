@@ -1,0 +1,66 @@
+{
+  "id": "pont-de-la-fonderie",
+  "name": "Pont de la Fonderie",
+  "kind": "bridge",
+  "origin": [
+    -0.35227315,
+    49.18295345
+  ],
+  "height": 2.105,
+  "padM": 40,
+  "frontageBearing": 126.8,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat Cityscape grade y=0 = quay street level; the closed swing deck is flush with its quays (road surface 0.10 m). Quay walls and slewing drum reach 2.5 m below grade. No DEM or sea-level elevations baked in. World bank-fit interpolates bank datums and grounds fixed foundations separately.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current closed red steel swing bridge restored in 2023, not an unchanged 1854 bridge. OSM mapped span 22.78 m, deck about 9.96 m wide, two unmarked lanes paved girder to girder (about 9.5 m, no raised walks) and 12 m navigable clearance width tag. Heights, steel sections, rivets, counterweight step, bank-side pivot and abutment sizes are photographic estimates. No opening animation, graffiti, textures or construction equipment.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-de-la-fonderie-near.glb",
+      "bytes": 1187496,
+      "triangles": 23176,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -11.977192878723145,
+          -2.5,
+          -10.943692207336426
+        ],
+        "max": [
+          11.866911888122559,
+          2.1050000190734863,
+          11.025294303894043
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-de-la-fonderie-far.glb",
+      "bytes": 102492,
+      "triangles": 2228,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -11.977192878723145,
+          -2.5,
+          -10.943692207336426
+        ],
+        "max": [
+          11.866911888122559,
+          2.1050000190734863,
+          11.025294303894043
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-la-fonderie/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

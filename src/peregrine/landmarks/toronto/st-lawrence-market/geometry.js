@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, materialFor } from './config.js';
 import {
   PHI, HW, V_N, V_S, BASE_H, SILL, SPRING, EAVE, LANTERN_TOP, LANTERN_U, LANTERN_EAVE, LANTERN_END_S,
   MODULE, WIN_W, WIN_RISE, PAVILION_LEN, PAVILION_PROUD, BAY_FIRST, BAYS, DECK_FROM, DECK_OUT,
@@ -35,6 +35,9 @@ const SIDES = ['east', 'west'];
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
+  // Every material goes through the draw-budget fold (config.js FOLD): near is unchanged, far shares draws.
+  const { put: put0, box: box0, bar: bar0 } = b, fold = (m) => materialFor(m, detail);
+  b.put = (g, m, ...rest) => put0(g, fold(m), ...rest); b.box = (m, ...rest) => box0(fold(m), ...rest); b.bar = (m, ...rest) => bar0(fold(m), ...rest);
   const put = (g, m) => b.put(g, m, 0, 0);
   const box = (m, u, y, v, w, h, d) => b.box(m, [u, y, v], [w, h, d], 0, 0, 0);
   const range = (m, u0, u1, y0, y1, v0, v1) => box(m, (u0 + u1) / 2, (y0 + y1) / 2, (v0 + v1) / 2, Math.abs(u1 - u0), Math.abs(y1 - y0), Math.abs(v1 - v0));
@@ -122,10 +125,12 @@ export function create({ detail = 'near' } = {}) {
     const v0 = V_N + 0.6, v1 = LANTERN_END_S, len = v1 - v0, vMid = (v0 + v1) / 2, yLow = roofY(LANTERN_U) - 0.15, yMid = (yLow + LANTERN_EAVE) / 2, hgt = LANTERN_EAVE - yLow;
     for (const sg of [1, -1]) {
       box('glow', sg * LANTERN_U, yMid, vMid, 0.18, hgt, len);
-      box('concrete', sg * (LANTERN_U + 0.03), LANTERN_EAVE - 0.06, vMid, 0.34, 0.16, len);
+      // Rails run 6 cm past the glazing at each end and mullions stop short of its top and bottom faces, so no two
+      // materials share a plane (z-fighting).
+      box('concrete', sg * (LANTERN_U + 0.03), LANTERN_EAVE - 0.06, vMid, 0.34, 0.16, len + 0.12);
       if (near) {
-        box('concrete', sg * (LANTERN_U + 0.03), yLow + 0.85, vMid, 0.3, 0.14, len);
-        for (let v = v0 + 1.2; v < v1; v += 2.4) box('concrete', sg * (LANTERN_U + 0.05), yMid, v, 0.28, hgt, 0.14);
+        box('concrete', sg * (LANTERN_U + 0.03), yLow + 0.85, vMid, 0.3, 0.14, len + 0.12);
+        for (let v = v0 + 1.2; v < v1; v += 2.4) box('concrete', sg * (LANTERN_U + 0.04), (yLow - 0.05 + LANTERN_EAVE - 0.1) / 2, v, 0.3, hgt - 0.05, 0.14);
       }
     }
     // cap: a shallow gable, overhanging the glazing
@@ -165,7 +170,7 @@ export function create({ detail = 'near' } = {}) {
     // the pent: a green copper eave flaring out below the roof
     const run = V_S - (V_N + 8.4);
     prism(side === 'east' ? frame([HW, 0, V_N + 8.4], [1, 0, 0]) : frame([-HW, 0, V_S], [-1, 0, 0]),
-      [[-0.2, EAVE], [0, EAVE], [1.35, 9.95], [1.35, 9.8], [0, 10.05], [-0.2, 10.05]], run, 'copper');
+      [[-0.2, EAVE - 0.06], [0, EAVE - 0.06], [1.35, 9.95], [1.35, 9.8], [0, 10.05], [-0.2, 10.05]], run, 'copper');
     // the open lower storey: a dark recessed wall behind the colonnade
     range('ink', sg > 0 ? HW - 1.2 : -HW + 0.6, sg > 0 ? HW - 0.6 : -HW + 1.2, 0, BASE_H, DECK_FROM, V_S);
   }
@@ -200,7 +205,7 @@ export function create({ detail = 'near' } = {}) {
       range('brick', u - 0.7, u + 0.7, BASE_H, 9.25, V_S, V_S + 0.32); range('buff', u - 0.88, u + 0.88, 9.25, 9.6, V_S, V_S + 0.4);
     }
     range('buff', -HW, HW, 9.75, 10.1, V_S, V_S + 0.3);
-    prism(frame([HW + 1.35, 0, V_S], [0, 0, 1]), [[-0.2, EAVE], [0, EAVE], [1.35, 9.95], [1.35, 9.8], [0, 10.05], [-0.2, 10.05]], 2 * (HW + 1.35), 'copper');
+    prism(frame([HW + 1.35, 0, V_S], [0, 0, 1]), [[-0.2, EAVE - 0.06], [0, EAVE - 0.06], [1.35, 9.95], [1.35, 9.8], [0, 10.05], [-0.2, 10.05]], 2 * (HW + 1.35), 'copper');
     range('ink', -HW, HW, 0, BASE_H, V_S - 1.2, V_S - 0.6);
     // the arched gable in dark ribbed metal, set back behind the eave
     const arch = archPoints(near ? 24 : 10, -HW);
@@ -287,7 +292,7 @@ export function create({ detail = 'near' } = {}) {
     range('brick', sg > 0 ? 19.8 : -HW, sg > 0 ? HW : -19.8, 0, EAVE, V_N - 0.4, V_N); // the pavilion's return on the facade
     range('roof', sg > 0 ? 19.8 : -HW, sg > 0 ? HW : -19.8, EAVE, EAVE + 0.12, V_N - 0.4, V_N);
     const outer = HW + PAVILION_PROUD + 0.55;
-    range('plaster', sg > 0 ? HW + PAVILION_PROUD - 0.45 : -outer, sg > 0 ? outer : -HW - PAVILION_PROUD + 0.45, 8.6, EAVE, p0 - 0.3, p1 + 0.3); // fascia board
+    range('plaster', sg > 0 ? HW + PAVILION_PROUD - 0.45 : -outer, sg > 0 ? outer : -HW - PAVILION_PROUD + 0.45, 8.76, EAVE - 0.16, p0 - 0.3, p1 + 0.3); // fascia board
     range('copper', sg > 0 ? HW + PAVILION_PROUD - 0.45 : -outer - 0.07, sg > 0 ? outer + 0.07 : -HW - PAVILION_PROUD + 0.45, EAVE - 0.16, EAVE, p0 - 0.32, p1 + 0.32);
     range('copper', sg > 0 ? HW + PAVILION_PROUD - 0.45 : -outer - 0.07, sg > 0 ? outer + 0.07 : -HW - PAVILION_PROUD + 0.45, 8.6, 8.76, p0 - 0.32, p1 + 0.32);
     if (near) text(side, 'ST LAWRENCE MARKET', A[side](mid), 8.76 + 0.34, 0.55, -(outer - HW) - 0.05, 'ink', 0.17, 0.1);

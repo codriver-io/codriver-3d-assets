@@ -38,14 +38,14 @@
   "assets": {
     "near": {
       "url": "/models/bridges/paris-pont-alexandre-iii-near.glb",
-      "bytes": 2440468,
-      "triangles": 49386,
-      "drawCalls": 8
+      "bytes": 2516896,
+      "triangles": 50156,
+      "drawCalls": 7
     },
     "far": {
       "url": "/models/bridges/paris-pont-alexandre-iii-far.glb",
-      "bytes": 314788,
-      "triangles": 5678,
+      "bytes": 249460,
+      "triangles": 5474,
       "drawCalls": 7
     }
   },

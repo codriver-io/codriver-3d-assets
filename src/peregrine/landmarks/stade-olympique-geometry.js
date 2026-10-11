@@ -9,7 +9,26 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
   const rx = STADE.width / 2, rz = STADE.length / 2;
   const e = (a, r, y) => p(Math.sin(a) * rx * r, y, Math.cos(a) * rz * r);
   const beam = (mat, a, z, w, d = w) => b.bar(mat, p(...a), p(...z), w, d, 0, false, 0);
-  function surface(mat, rows, segments = n, start = 0, end = Math.PI * 2) {
+  // Every authored surface faces a stated way (the app shades from normals and culls back faces):
+  // winding is flipped as a whole when its area-weighted normals oppose the hint.
+  const UP = new THREE.Vector3(0, 1, 0);
+  const FACING = {
+    out: c => new THREE.Vector3(c.x, 0, c.z).normalize().add(UP.clone().multiplyScalar(0.5)),
+    in: c => new THREE.Vector3(-c.x, 0, -c.z).normalize().add(UP.clone().multiplyScalar(0.5)),
+    up: () => UP,
+  };
+  function orient(pos, idx, facing) {
+    const hint = typeof facing === 'function' ? facing : FACING[facing];
+    const a = new THREE.Vector3(), c = new THREE.Vector3(), d = new THREE.Vector3(), mid = new THREE.Vector3();
+    let score = 0;
+    for (let i = 0; i < idx.length; i += 3) {
+      a.fromArray(pos, idx[i] * 3); c.fromArray(pos, idx[i + 1] * 3); d.fromArray(pos, idx[i + 2] * 3);
+      mid.copy(a).add(c).add(d).multiplyScalar(1 / 3);
+      score += c.sub(a).cross(d.sub(a)).dot(hint(mid));
+    }
+    if (score < 0) for (let i = 0; i < idx.length; i += 3) [idx[i + 1], idx[i + 2]] = [idx[i + 2], idx[i + 1]];
+  }
+  function surface(mat, rows, facing, segments = n, start = 0, end = Math.PI * 2) {
     const pos = [], idx = [];
     for (let j = 0; j < rows.length; j++) for (let i = 0; i <= segments; i++) {
       const a = start + (end - start) * i / segments;
@@ -19,25 +38,28 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
         idx.push(prev - 1, v - 1, prev, prev, v - 1, v);
       }
     }
+    orient(pos, idx, facing);
     const g = new THREE.BufferGeometry();g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));g.setIndex(idx);g.computeVertexNormals();
     b.put(g, mat, 0, 0);
   }
   const ellipse = (r, y) => a => e(a, r, typeof y === 'function' ? y(a) : y);
   // Grounded plinth with recessed glazing. No citywide elevation or road surface.
-  surface('concrete', [ellipse(1.025, -0.6), ellipse(1.025, 2), ellipse(0.995, 2)]);
-  surface('glass', [ellipse(0.975, 2), ellipse(0.975, 12)]);
-  surface('concrete', [ellipse(1, 11), ellipse(1, 16), ellipse(0.965, 19)]);
+  surface('concrete', [ellipse(1.025, -0.6), ellipse(1.025, 2), ellipse(0.995, 2)], 'out');
+  surface('glass', [ellipse(0.975, 2), ellipse(0.975, 12)], 'out');
+  surface('concrete', [ellipse(1, 11), ellipse(1, 16), ellipse(0.965, 19)], 'out');
   // Convex ribbed shell. Green roof strips stop before the exposed ring works.
   const shell = [[1,16],[0.97,24],[0.90,34],[0.80,42],[0.73,46]];
-  surface('roof', shell.map(([r,y]) => ellipse(r, a => y + 2 * Math.cos(a))));
+  surface('roof', shell.map(([r,y]) => ellipse(r, a => y + 2 * Math.cos(a))), 'out');
   // A substantial rim, inner bowl, and open upper concourse, seen through roof gap.
-  surface('concrete', [ellipse(0.705,43),ellipse(0.705,49),ellipse(0.755,49),ellipse(0.755,43)]);
-  surface('glass', [ellipse(0.693,38),ellipse(0.693,43)]);
-  surface('concrete', [ellipse(0.45,1),ellipse(0.45,3),ellipse(0.70,37),ellipse(0.705,43)]);
+  surface('concrete', [ellipse(0.705,43),ellipse(0.705,49)], 'in');
+  surface('concrete', [ellipse(0.705,49),ellipse(0.755,49)], 'up');
+  surface('concrete', [ellipse(0.755,49),ellipse(0.755,43)], 'out');
+  surface('glass', [ellipse(0.693,38),ellipse(0.693,43)], 'in');
+  surface('concrete', [ellipse(0.45,1),ellipse(0.45,3),ellipse(0.70,37),ellipse(0.705,43)], 'in');
   const levels = near ? 20 : 7;
   for (let j = 0; j < levels; j++) {
     const t=j/levels, t1=(j+1)/levels, r=0.46+0.22*t, r1=0.46+0.22*t1, y=5+32*t, y1=5+32*t1;
-    surface('museum', [ellipse(r,y),ellipse(r1,y),ellipse(r1,y1)], near ? 114 : 76);
+    surface('museum', [ellipse(r,y),ellipse(r1,y),ellipse(r1,y1)], 'in', near ? 114 : 76);
   }
   // March work floor, rather than a grass pitch or a completed rigid roof.
   const floor = new THREE.CylinderGeometry(1,1,0.4,near?76:38);
@@ -48,7 +70,8 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
     const points = truncated ? [[0.76,46],[0.84,40],[0.96,24]] : [[1.027,0],[1.025,9],[1,18],[0.964,27],[0.89,37],[0.79,46],[0.705,50]];
     for(let k=1;k<points.length;k++){
       const [r0,y0]=points[k-1],[r1,y1]=points[k];
-      b.bar('concrete',e(a,r0,y0+2*Math.cos(a)),e(a,r1,y1+2*Math.cos(a)),near?3.3:3.8,near?2.3:2.8,0,false,0);
+      // The 2 m tilt must not push the foot of a console below the esplanade.
+      b.bar('concrete',e(a,r0,Math.max(0,y0+2*Math.cos(a))),e(a,r1,Math.max(0,y1+2*Math.cos(a))),near?3.3:3.8,near?2.3:2.8,0,false,0);
     }
     // Exposed replacement ring: black steel top chords and sectional braces.
     const a1=a+Math.PI*2/38;
@@ -62,6 +85,14 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
   // Tower: concave flared foot, narrowing waist, then inclined upper steel shaft.
   // Cross sections are [elevation, half-width, front-v, rear-v] in local metres.
   const sections = [[0,58,127,239],[15,45,128,225],[35,32,128,210],[60,22,123,190],[87,15,108,165],[115,14,87,140],[143,19,64,116],[160,25,49,104],[165,26,47,102]];
+  // Faces look away from the shaft's centre line at their own elevation (the shaft leans, so
+  // the stadium-side face looks down and forward).
+  const towerAxis = y => {
+    let k = 1; while (k < sections.length - 1 && sections[k][0] < y) k++;
+    const [y0, , f0, b0] = sections[k - 1], [y1, , f1, b1] = sections[k], t = Math.min(1, Math.max(0, (y - y0) / (y1 - y0)));
+    return new THREE.Vector3(...p(0, y, ((f0 + b0) + ((f1 + b1) - (f0 + b0)) * t) / 2));
+  };
+  const awayFromShaft = c => c.clone().sub(towerAxis(c.y));
   function towerStrip(mat, side, f0, f1, rows=sections) {
     const pos=[],ids=[];
     for(const [y,w,vf,vb] of rows){
@@ -70,20 +101,21 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
       pos.push(...at(f0),...at(f1));
       if(pos.length>6){const k=pos.length/3-2;ids.push(k-2,k-1,k,k-1,k+1,k);}
     }
+    orient(pos,ids,awayFromShaft);
     const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setIndex(ids);g.computeVertexNormals();b.put(g,mat,0,0);
   }
+  // Pale concrete throughout; only narrow dark glazed slits recess into the lower stadium-side face.
   for(let side=0;side<4;side++){
     towerStrip('concrete',side,0,0.19);towerStrip('concrete',side,0.81,1);
     if(side===0){
       towerStrip('concrete',side,0.43,0.57);
       for(const [l,r] of [[0.19,0.43],[0.57,0.81]]){
-        towerStrip('glass',side,l,r,sections.slice(0,5));
-        towerStrip('concrete',side,l,r,sections.slice(4));
+        const c=(l+r)/2;
+        towerStrip('concrete',side,l,c-0.05);towerStrip('concrete',side,c+0.05,r);
+        towerStrip('glass',side,c-0.05,c+0.05,sections.slice(0,5));
+        towerStrip('concrete',side,c-0.05,c+0.05,sections.slice(4));
       }
-    }else{
-      towerStrip(side===3?'concrete':'glass',side,0.19,0.81,sections.slice(0,5));
-      towerStrip('concrete',side,0.19,0.81,sections.slice(4));
-    }
+    }else towerStrip('concrete',side,0.19,0.81);
   }
   // Roof cap and observation glazing stay at the official 165 m tower height.
   const cap=new THREE.BoxGeometry(52,1,55);cap.rotateY(-STADE.bearing*Math.PI/180);cap.translate(...p(0,164.5,74.5));b.put(cap,'concrete',0,0);
@@ -102,14 +134,15 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
       const t=k/8, v=239+61*t, w=45*(1-t)+9*t, y=5+12*Math.sin(Math.PI*t);
       rows.push(a=>p(side*(9+(w-9)*a/Math.PI),y+3*Math.sin(a),v));
     }
-    surface('glass',rows,near?16:8,0,Math.PI);
+    surface('glass',rows,'up',near?16:8,0,Math.PI);
     // Follow the glazing crown so the ribs stay continuously above its surface.
     for(let k=0;k<8;k++){
       const t=k/8,v=239+61*t,w=45*(1-t)+9*t,y=5+12*Math.sin(Math.PI*t),steps=near?8:4;
       const rib=a=>[side*(9+(w-9)*a/Math.PI),y+3*Math.sin(a)+0.65,v];
       for(let j=0;j<steps;j++)beam('concrete',rib(j*Math.PI/steps),rib((j+1)*Math.PI/steps),1.1,1.1);
     }
-    surface('concrete',[a=>{const t=a/Math.PI;return p(side*(45*(1-t)+9*t),-0.5,239+61*t);},a=>{const t=a/Math.PI;return p(side*(45*(1-t)+9*t),5+12*Math.sin(Math.PI*t),239+61*t);}],8,0,Math.PI);
+    const outward=new THREE.Vector3(...p(side,0,0));
+    surface('concrete',[a=>{const t=a/Math.PI;return p(side*(45*(1-t)+9*t),-0.5,239+61*t);},a=>{const t=a/Math.PI;return p(side*(45*(1-t)+9*t),5+12*Math.sin(Math.PI*t),239+61*t);}],()=>outward,8,0,Math.PI);
   }
   // Hanging cable bundles in March photos: NOT the old fan connected to a membrane.
   // Symbolic 24 temporary vertical lines; their ends hang over the work floor.
@@ -121,6 +154,6 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
   }
   const model=b.finish();
   model.userData.modeledState=STADE.modeledState;
-  model.traverse(o=>{if(o.isMesh){o.material.color.set(STADE_PALETTES.light[o.material.name]);o.material.side=THREE.DoubleSide;}});
+  model.traverse(o=>{if(o.isMesh){o.geometry.deleteAttribute('bridgeLift');o.material.color.set(STADE_PALETTES.light[o.material.name]);o.material.side=THREE.DoubleSide;}});
   return model;
 }

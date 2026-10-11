@@ -1,0 +1,66 @@
+{
+  "id": "canadian-museum-for-human-rights",
+  "name": "Canadian Museum for Human Rights",
+  "kind": "building",
+  "origin": [
+    -97.131,
+    49.8908
+  ],
+  "height": 100,
+  "padM": 90,
+  "frontageBearing": 177,
+  "nearM": 700,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local plaza grade y=0; rigid structure, no terrain or absolute elevations baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "100 m tower sourced from CMHR; stone gallery/roots and cloud envelopes from OSM. Freeform glass folds, limestone course pattern, curved roof profiles and tower taper estimated from reference photographs. Rotation is baked into east/up/south coordinates. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/canadian-museum-for-human-rights-near.glb",
+      "bytes": 1754832,
+      "triangles": 33668,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -74.31330108642578,
+          0,
+          -42.59080123901367
+        ],
+        "max": [
+          61.00979995727539,
+          100.01231384277344,
+          77.56739807128906
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/canadian-museum-for-human-rights-far.glb",
+      "bytes": 360728,
+      "triangles": 6442,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -74.31330108642578,
+          0,
+          -42.59080123901367
+        ],
+        "max": [
+          61.00979995727539,
+          100.01461791992188,
+          77.56739807128906
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

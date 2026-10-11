@@ -40,14 +40,14 @@
     },
     "far": {
       "url": "/models/buildings/st-lawrence-market-far.glb",
-      "bytes": 218096,
+      "bytes": 214416,
       "triangles": 3566,
-      "drawCalls": 11,
+      "drawCalls": 7,
       "bounds": {
         "min": [
           -38.762055408676346,
           0,
-          -58.3206446858694
+          -58.482028250449794
         ],
         "max": [
           39.398591289432076,

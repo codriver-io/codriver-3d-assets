@@ -22,8 +22,8 @@
   "assets": {
     "near": {
       "url": "/models/bridges/prince-edward-viaduct-near.glb",
-      "bytes": 2060300,
-      "triangles": 49492,
+      "bytes": 2042284,
+      "triangles": 48580,
       "drawCalls": 17,
       "bounds": {
         "min": [
@@ -40,8 +40,8 @@
     },
     "far": {
       "url": "/models/bridges/prince-edward-viaduct-far.glb",
-      "bytes": 588340,
-      "triangles": 20960,
+      "bytes": 581436,
+      "triangles": 20228,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -51,7 +51,7 @@
         ],
         "max": [
           343.64471435546875,
-          45.779998779296875,
+          49.75,
           133.37905883789062
         ]
       }

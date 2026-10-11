@@ -1,0 +1,275 @@
+{
+  "id": "oslo-opera-house",
+  "name": "Oslo Opera House",
+  "kind": "building",
+  "origin": [
+    10.7526853526,
+    59.907498943
+  ],
+  "height": 35,
+  "padM": 142,
+  "frontageBearing": 206,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          10.751056,
+          59.9083138
+        ],
+        [
+          10.7506981,
+          59.9076858
+        ],
+        [
+          10.7506578,
+          59.9076901
+        ],
+        [
+          10.7506688,
+          59.9076365
+        ],
+        [
+          10.7505489,
+          59.9074257
+        ],
+        [
+          10.7524919,
+          59.9069536
+        ],
+        [
+          10.7527876,
+          59.9068824
+        ],
+        [
+          10.7529508,
+          59.9068431
+        ],
+        [
+          10.7529823,
+          59.9068799
+        ],
+        [
+          10.7530389,
+          59.9069483
+        ],
+        [
+          10.7534428,
+          59.9068509
+        ],
+        [
+          10.7538258,
+          59.9067585
+        ],
+        [
+          10.7542526,
+          59.9066547
+        ],
+        [
+          10.7545756,
+          59.9072117
+        ],
+        [
+          10.7545162,
+          59.9072254
+        ],
+        [
+          10.7546054,
+          59.9073205
+        ],
+        [
+          10.754635,
+          59.9073142
+        ],
+        [
+          10.7548133,
+          59.9076218
+        ],
+        [
+          10.753948,
+          59.9078324
+        ],
+        [
+          10.7539304,
+          59.9078144
+        ],
+        [
+          10.7529577,
+          59.907985
+        ],
+        [
+          10.7527354,
+          59.9080227
+        ],
+        [
+          10.7525568,
+          59.9080537
+        ],
+        [
+          10.7517818,
+          59.9081881
+        ],
+        [
+          10.7514822,
+          59.90824
+        ],
+        [
+          10.7514306,
+          59.9082489
+        ],
+        [
+          10.751056,
+          59.9083138
+        ]
+      ],
+      [
+        [
+          10.7536509,
+          59.9072515
+        ],
+        [
+          10.7545259,
+          59.9070408
+        ],
+        [
+          10.7545375,
+          59.907038
+        ],
+        [
+          10.7543994,
+          59.9067997
+        ],
+        [
+          10.7539061,
+          59.9069205
+        ],
+        [
+          10.7534419,
+          59.9070327
+        ],
+        [
+          10.7536348,
+          59.9072345
+        ],
+        [
+          10.7536418,
+          59.9072329
+        ],
+        [
+          10.7534508,
+          59.9070344
+        ],
+        [
+          10.7539095,
+          59.906924
+        ],
+        [
+          10.7541016,
+          59.9071229
+        ],
+        [
+          10.7536349,
+          59.9072346
+        ],
+        [
+          10.7536509,
+          59.9072515
+        ]
+      ],
+      [
+        [
+          10.7545756,
+          59.9072117
+        ],
+        [
+          10.7546386,
+          59.9071969
+        ],
+        [
+          10.7543164,
+          59.9066397
+        ],
+        [
+          10.754291,
+          59.9066457
+        ],
+        [
+          10.7542526,
+          59.9066547
+        ],
+        [
+          10.7545756,
+          59.9072117
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8,
+    "refs": [
+      [
+        10.7527639,
+        59.9075797
+      ],
+      [
+        10.7535651,
+        59.9075836
+      ],
+      [
+        10.7525204,
+        59.9077392
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid waterfront grade y=0. No sea-level height, DEM or Mercator scale baked into the geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Snøhetta opera house, opened 2008. Marble glacier roof, glass foyer and 35 m aluminium fly tower follow OSM ways 810259696, 397360403 and 397360407. The 54 m figure is the interior clear height over a stage below sea level, not the exterior. Fold heights, overhang, mullions and the weave module are estimates. Cityscape and Full 3D world not tested yet; integration is checked separately. See docs/3d-top-cities-oslo-opera-house.md.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/oslo-opera-house-near.glb",
+      "bytes": 1028036,
+      "triangles": 13907,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -119.24677276611328,
+          0,
+          -90.71057891845703
+        ],
+        "max": [
+          115.304931640625,
+          35,
+          87.96957397460938
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/oslo-opera-house-far.glb",
+      "bytes": 217312,
+      "triangles": 3111,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -119.24677276611328,
+          0,
+          -90.71057891845703
+        ],
+        "max": [
+          115.304931640625,
+          35,
+          87.96957397460938
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oslo-opera-house/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

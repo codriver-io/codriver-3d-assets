@@ -20,3 +20,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). relief panels, frames and course lines are seated 0.2-0.3 m proud of the wall; archivolts are abutting bands; sculpture groups are stacked tapered blocks (near). Exported cost: near 5,992 triangles / 3 draws / 365,336 bytes; far 1,656 / 2 / 105,252.

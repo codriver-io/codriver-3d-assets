@@ -20,3 +20,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). central cupola widened to 33 m across by 37 m tall on a taller drum, four small domes moved clear; far domes are 14-gons without ribs. Exported cost: near 32,608 triangles / 5 draws / 1,588,732 bytes; far 4,280 / 4 / 161,540.

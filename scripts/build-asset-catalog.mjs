@@ -1,8 +1,11 @@
-import { copyFile, cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { copyFile, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { build } from 'esbuild';
 import { ROOT, loadAssetCatalog } from './asset-catalog.mjs';
 import { licenseModels } from './license-models.mjs';
+import { withAnalytics } from './analytics.mjs';
 
 export async function buildAssetCatalogPreview() {
   await licenseModels();
@@ -15,6 +18,7 @@ export async function buildAssetCatalogPreview() {
   await cp(resolve(ROOT,'public/models'),resolve(out,'models'),{recursive:true});
   await cp(resolve(ROOT,'public/scenes'),resolve(out,'scenes'),{recursive:true});
   await writeFile(resolve(out,'asset-catalog.json'),JSON.stringify(catalog,null,2)+'\n');
+  await copyFile(resolve(ROOT,'prototypes/assets3d/places.json'),resolve(out,'places.json'));
   for(const file of ['LICENSE','LICENSE-MODELS.txt','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md'])await copyFile(resolve(ROOT,file),resolve(out,file));
   await mkdir(resolve(out,'docs'),{recursive:true});
   await copyFile(resolve(ROOT,'docs/contribution-acceptance.md'),resolve(out,'docs/contribution-acceptance.md'));
@@ -22,6 +26,15 @@ export async function buildAssetCatalogPreview() {
   await copyFile(resolve(ROOT,'node_modules/three/LICENSE'),resolve(out,'licenses/three.txt'));
   await cp(resolve(ROOT,'site'),out,{recursive:true});
   await writeFile(resolve(out,'robots.txt'),'User-agent: *\nAllow: /\n');
+  for(const name of (await readdir(out)).filter((n)=>n.endsWith('.html'))){const file=resolve(out,name);await writeFile(file,withAnalytics(await readFile(file,'utf8')));}
+  // Cache-bust the pages' own scripts and stylesheets: browsers keep /asset-catalog.js for hours, so a deploy
+  // would otherwise not show until the cache expires. Each local .js/.css reference gets ?v=<content hash>.
+  const version=async(path)=>createHash('sha256').update(await readFile(resolve(out,path.replace(/^\//,'')))).digest('hex').slice(0,10);
+  for(const name of (await readdir(out)).filter((n)=>n.endsWith('.html'))){
+    const file=resolve(out,name);let html=await readFile(file,'utf8');
+    for(const m of [...html.matchAll(/(src|href)="(\/[^"?#]+\.(?:js|css))"/g)])if(existsSync(resolve(out,m[2].slice(1))))html=html.replace(m[0],`${m[1]}="${m[2]}?v=${await version(m[2])}"`);
+    await writeFile(file,html);
+  }
   console.log(`Public library built: ${catalog.assets.length} models in dist/`);
 }
 if(process.argv[1]&&resolve(process.argv[1])===resolve(ROOT,'scripts/build-asset-catalog.mjs'))await buildAssetCatalogPreview();

@@ -47,7 +47,7 @@ Real metres, +X east, +Y up, +Z south, origin `[-79.394695, 43.667694]` (area ce
 
 ## Materials
 
-Twelve named, merged materials, each in both palettes:
+Eleven named, merged materials (the concrete grey was folded into `roofFlat`), each in both palettes:
 
 | Name | Use | Day | Night |
 | --- | --- | --- | --- |
@@ -60,14 +60,16 @@ Twelve named, merged materials, each in both palettes:
 | `frame` | glazing frames, mullions | `#0f1215` | `#07090b` |
 | `stone` / `stoneWest` / `stoneDeep` | 1933 buff stone / 1914 grey-brown stone / courses and window surrounds | `#b9a684` / `#9a8f7e` / `#8f8064` | dimmer |
 | `copper` | green copper naves and rotunda pyramid | `#6f9282` | `#4b665b` |
-| `slate`, `roofFlat`, `concrete`, `window` | west-wing roof, flat roofs, curatorial block, heritage windows | | |
+| `slate`, `roofFlat`, `window` | west-wing roof, flat roofs and the curatorial block (`concrete` was the same grey and is folded into `roofFlat`), heritage windows | | |
 
 ## Modelling decisions
 
 * **The Crystal is the OSM decomposition, sheared.** Each part is a slab: the mapped ring is its roof outline, the mapped skillion plane is its roof, and the walls are planar quads down to a foot that sits back from the roof edge by a shear. Because the roof height is affine over the ring, the foot polygon is an affine image of it, so a wall can never twist whatever the lean (`royal-ontario-museum-solids.js#slab`). This is what makes the prisms lean out over Bloor Street rather than stand as vertical extrusions.
 * **Glazing is laid on the faces**, in each face's own 2D frame, so a window cannot drift off its plane: long bands and crossing bands on A's roof (the tall prism beside the 1933 gable), the long dark band down A's leaning north wall, the large glazed plane at the foot of A's leaning wall beside the entrance, the lozenge, lobby and west-face glazing on B, the lit Crystal Court glass on three faces of C, big glazed planes on the west prism G and D's overhanging face, bands on the rear roofs. Every glass shape is clipped to the face it lies on. Near LOD adds framed outlines, mullion grids and 0.6 m cladding seams (5,000+ seam quads); far LOD keeps only the glass shapes.
 * **The heritage wings** are the OSM parts extruded, with the 1933 east wing's copper-roofed gabled naves, the round-headed window and three-light window in the north gable (the postcard view), the rotunda with its octagonal drum and pyramid, the east porch with its grand arch, and the 1914 west wing with three storeys of round-headed windows. Window rows, courses and cornices are near-only; far keeps coarse windows.
-* **Far LOD** (1,705 triangles) has the same bounds as near to within 1 % and keeps every prism, roof plane and glazing band.
+* **Far LOD** (1,731 triangles) has the same bounds as near to within 1 % and keeps every prism, roof plane and glazing band.
+* **Draw budget** (`FOLD` in `config.js`): near folds the concrete grey into `roofFlat` and the 8-triangle dark aluminium trim into `seam` (13 draws). Far also folds deep stone into stone, mid aluminium into aluminium, the dark trim into the window tone and the lit lobby glass into the glass (8 draws).
+* **No shared planes.** Overlays stand at least 5 cm off the face they dress (seams 5 cm, glazing 10 cm, frames 15 cm, window surrounds 5 cm, mullions 20 cm), so the coplanar-overlap check dropped from 1,253 m2 to 3 m2. Three walls of prism D that cross a neighbour at a shallow angle (`plainWalls` in `royal-ontario-museum-crystal.js`) carry no seams: a seam there ran within centimetres of the neighbour's plane along the crossing line.
 
 ## Approximations and open points
 
@@ -90,7 +92,7 @@ What the looks changed: the first extrusion of the OSM parts already showed the 
 
 Review round 1 (PASS-WITH-NITS): street glazing was too sparse (now 23 % of Crystal pixels from Bloor Street), the cladding read beige with faint seams (now silver with dark seams and frames, both palettes), and a dark sliver poked out at the top of the tall glazing band on A's north wall (glass shapes were not clipped to their face; now every band and plane is).
 
-Costs (exported): near 14,790 triangles / 15 draws / 861,924 bytes; far 1,731 / 13 / 104,664 bytes.
+Costs (exported): near 14,642 triangles / 13 draws / 741,304 bytes; far 1,731 / 8 / 86,152 bytes.
 
 Tests: `royal-ontario-museum.test.js` pins the 37 m apex and the footprint, the 24 m ridge and 33.6 m pyramid by raycast, the 9+ m cantilever with a downward-facing underside, the glazing share, containment in the mapped outline and clearance from Bloor Street and Queen's Park, in both LODs; `toronto.test.js` covers budgets, palettes and the exported bytes.
 

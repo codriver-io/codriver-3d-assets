@@ -20,3 +20,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). nave, aisle and transept roofs are two-plane gables of about 48-50 degrees with a hipped apse; west facade gains four buttress strips and a gallery band. Exported cost: near 34,723 triangles / 5 draws / 1,500,564 bytes; far 2,552 / 6 / 131,952.

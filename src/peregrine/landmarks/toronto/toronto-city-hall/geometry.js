@@ -11,6 +11,16 @@ const gc = Math.cos(GRID), gs = Math.sin(GRID);
 // Grid axes in model space: u east-along-the-grid, v south-along-the-grid.
 const EU = [gc, 0, -gs], EV = [gs, 0, gc], UP = [0, 1, 0];
 const hash = (a, b, c) => (((a * 73856093) ^ (b * 19349663) ^ (c * 83492791)) >>> 0) % 1000 / 1000;
+/** [x, z] ring moved `d` metres inward (mitred corners); either winding. */
+function insetRing(ring, d) {
+  let area = 0; for (let i = 0; i < ring.length; i++) { const p = ring[i], q = ring[(i + 1) % ring.length]; area += p[0] * q[1] - q[0] * p[1]; }
+  const sg = Math.sign(area) || 1, n = ring.length;
+  const edge = (a, b) => { const dx = b[0] - a[0], dz = b[1] - a[1], L = Math.hypot(dx, dz) || 1; return [-sg * dz / L, sg * dx / L]; }; // inward normal
+  return ring.map((p, i) => {
+    const n1 = edge(ring[(i + n - 1) % n], p), n2 = edge(p, ring[(i + 1) % n]), k = d / (1 + n1[0] * n2[0] + n1[1] * n2[1]);
+    return [p[0] + (n1[0] + n2[0]) * k, p[1] + (n1[1] + n2[1]) * k];
+  });
+}
 const steps = (a, b, step) => { const n = Math.max(1, Math.ceil(Math.abs(b - a) / step)); return Array.from({ length: n + 1 }, (_, i) => a + (b - a) * i / n); };
 
 /**
@@ -87,7 +97,7 @@ export function create({ detail = 'near' } = {}) {
       soup('concreteDark').quad([pa[0], podiumRoof - 0.3, pa[1]], [pc[0], podiumRoof - 0.3, pc[1]], [pc[0], bodyTop, pc[1]], [pa[0], bodyTop, pa[1]], [pa[0] * 3, (podiumRoof + bodyTop) / 2, pa[1] * 3]);
     }
     // Parapet coping round the outer edge, and the two belt courses on the ribbed back.
-    const smooth = steps(0, phiMax, 3).map((ph) => ph);
+    const smooth = steps(0, phiMax, near ? 3 : 6); // far: 6 degree chords (0.1 m off the arc at tower radius)
     const band = (dOut, dIn, y0, y1, mat) => {
       const o = smooth.map((ph) => t.at(ph, t.rOuter(ph) + dOut)), i = smooth.map((ph) => t.at(ph, t.rOuter(ph) + dIn)).reverse();
       put(prism(o.concat(i), y0, y1), mat);
@@ -108,8 +118,10 @@ export function create({ detail = 'near' } = {}) {
       const y0 = podiumRoof + f * fh, y1 = Math.min(y0 + n * fh - 0.12, bodyTop - 0.05);
       ribbon(soup(kind), main.map((ph) => glassR(ph, -stand)), y0 + 0.85, y1, [0, y0 + 2, 0]);
       // Ledge: a thin projecting course under each band.
-      const o = main.map((ph) => glassR(ph, 0.02)), i = main.map((ph) => glassR(ph, -stand - 0.35)).reverse();
-      put(prism(o.concat(i), y0, y0 + 0.34), 'concrete');
+      if (near) {
+        const o = main.map((ph) => glassR(ph, 0.02)), i = main.map((ph) => glassR(ph, -stand - 0.35)).reverse();
+        put(prism(o.concat(i), y0, y0 + 0.34), 'concrete');
+      } else ribbon(soup('concrete'), main.map((ph) => glassR(ph, -stand - 0.35)), y0, y0 + 0.34, [0, y0 + 2, 0]); // far: the course's front face only
       if (near && kind === 'glass') {
         // Lit windows, a deterministic ~22 % of bays, for the night palette.
         const arc = (blockStart - slotEnd) * DEG * (t.rGlass((slotEnd + blockStart) / 2) + rec);
@@ -170,7 +182,7 @@ export function create({ detail = 'near' } = {}) {
   {
     const ring = PODIUM.ring.map(([u, v]) => uv(u, v));
     put(prism(ring, 0, podiumRoof), 'concrete');
-    put(prism(ring, podiumRoof, podiumRoof + 0.06), 'concreteDark'); // paved deck
+    put(prism(insetRing(ring, 0.12), podiumRoof - 0.1, podiumRoof + 0.06), 'concreteDark'); // paved deck: 12 cm inside the podium edge, underside sunk into it, so it shares no plane with the walls, the base ring or the towers
     for (const g of ROOF_GARDENS) put(prism(g.map(([u, v]) => uv(u, v)), podiumRoof + 0.06, podiumRoof + (near ? 0.34 : 0.3)), 'grass');
     // The colonnaded south fronts: recessed glazing, a cantilevered fascia, round columns.
     for (const [a, c] of PODIUM.fronts) {
@@ -181,7 +193,7 @@ export function create({ detail = 'near' } = {}) {
       const cols = Math.max(2, Math.round(L / 6.2));
       for (let i = 0; i <= cols; i++) {
         const [x, , z] = p(i / cols, out - 0.7, 0);
-        const g = new THREE.CylinderGeometry(0.42, 0.42, 5.6, near ? 10 : 6); g.translate(x, 2.8, z); put(g, 'concrete');
+        const g = new THREE.CylinderGeometry(0.42, 0.42, 5.6, near ? 10 : 6, 1, !near); g.translate(x, 2.8, z); put(g, 'concrete'); // far: open ends (they sit on the plaza and under the fascia)
       }
     }
   }
@@ -221,7 +233,7 @@ export function create({ detail = 'near' } = {}) {
       const n = Math.max(1, Math.round(L / (near ? 7.5 : 12)));
       for (let k = 0; k <= n; k++) {
         const t = k / n, [x, z] = uv(a[0] + (c[0] - a[0]) * t, a[1] + (c[1] - a[1]) * t);
-        const g = new THREE.CylinderGeometry(0.42, 0.42, deckY - 0.8, near ? 8 : 5); g.translate(x, (deckY - 0.8) / 2, z); put(g, 'concrete');
+        const g = new THREE.CylinderGeometry(0.42, 0.42, deckY - 0.8, near ? 8 : 5, 1, !near); g.translate(x, (deckY - 0.8) / 2, z); put(g, 'concrete'); // far: open ends
       }
     }
   }

@@ -60,11 +60,11 @@ The runtime layer shades each vertex from its normal (0.66 to 1.0 of the palette
 
 ## Modelling decisions
 
-- **Facade.** Every wall is a lattice built quad by quad in `scotia-plaza-facade.js`: full-width spandrel bands, piers between windows, a glass strip at the back of the reveals, and up to four reveal quads per window (left, right, sill, head). Vertices are welded by position and normal, and near meshes are cut into chunks under 65 000 vertices so indices stay 16-bit. Lit windows are small quads 3 cm in front of the glass and are hashed deterministically.
+- **Facade.** Every wall is a lattice built quad by quad in `scotia-plaza-facade.js`: full-width spandrel bands, piers between windows, one glass quad behind the whole wall (the piers and spandrels hide all but the windows) and two reveal quads per tower window (left and right; the heritage windows keep only the left one). Sills and heads are sub-pixel at driving range and are not drawn. Vertices are welded by position and normal, and near meshes are cut into chunks under 65 000 vertices so indices stay 16-bit. Lit windows are small quads 8 cm in front of the glass and are hashed deterministically.
 - **Chevron.** Real geometry, not a texture: each of the eleven strips per side is a granite column ending in a ledge at its mapped height, with the stepped returns between neighbours and glass on the core face behind, 4 m back. Both LODs keep it.
 - **Sawtooth and wings.** Walls follow the mapped polygon; walls that a wing hides below 30 m are solid quads so nothing can be seen through.
 - **Heritage building.** OSM massing with narrow recessed windows in limestone piers, a banking-hall row of tall slots, and a cornice course at every tier. It is the least detailed part.
-- **Far LOD.** Same silhouette, ledges and recess; each wall is one quad behind a flat glass quad per window, with no reveals or glazing bars. 13.7k triangles, 8 draws.
+- **Far LOD.** Same silhouette, ledges and recess; each wall is one quad behind one flat glass quad per two windows and two floors (twice the width and height, so the glass-to-granite ratio and the lit share are those of near), with no reveals or glazing bars. 6.1k triangles, 8 draws.
 
 ## Approximations and gaps
 
@@ -83,10 +83,12 @@ node scripts/asset-catalog.mjs
 
 | Export | Bytes | Triangles | Draws |
 | --- | ---: | ---: | ---: |
-| `public/models/buildings/scotia-plaza-near.glb` | 3 933 720 | 82 760 | 9 |
-| `public/models/buildings/scotia-plaza-far.glb` | 735 624 | 13 680 | 8 |
+| `public/models/buildings/scotia-plaza-near.glb` | 2 427 564 | 53 446 | 9 |
+| `public/models/buildings/scotia-plaza-far.glb` | 324 380 | 6 064 | 8 |
 
-Within the contract budgets (160 000 / 48 near, 45 000 / 14 far). The near file is large because of the window reveals (about 5 600 windows on the tower); MCU2 draws far. No Tesla timing was measured.
+Within the San Francisco budgets (60 000 / 14 / 2.5 MB near, 12 000 / 8 / 500 KB far) and the older contract budgets (160 000 / 48 near, 45 000 / 14 far). The near file is still large because of the window reveals (about 4 500 windows on the tower); MCU2 draws far. No Tesla timing was measured.
+
+Weight pass (2026-10-01): near was 82 760 triangles / 3.93 MB (back-face sweep 2.1 %, 342 m2 of coplanar overlap from lit windows 3 cm in front of the glass), far 13 680 / 736 KB. The sill and head reveals, the right-hand reveal of the heritage windows and the 4 000 per-row glass strips were removed; the far glass is merged by two bays and two floors. The look in the contact sheet is unchanged.
 
 `scotia-plaza.test.js` pins: the 274.9 m roof, nothing below grade; the recess is 4 m deep at the apex on both faces, has glass above each ledge and granite below, and full-height shoulders; the sawtooth treads and the 30 m wing roof; granite and recessed glass by raycast; the mark on both end bays; the heritage tiers at 81, 98 and 115 m; 512 rays from outside that must all hit a front face (no holes, no inverted walls) in near and far; every vertex within a metre of the mapped footprints; far bounds within 1.5 m of near.
 

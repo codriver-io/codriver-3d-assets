@@ -1,0 +1,409 @@
+{
+  "id": "edifice-marie-guyart",
+  "name": "Édifice Marie-Guyart",
+  "kind": "building",
+  "origin": [
+    -71.217564,
+    46.808054
+  ],
+  "height": 177,
+  "padM": 140,
+  "frontageBearing": 330.7,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -71.21748,
+          46.8083346
+        ],
+        [
+          -71.2177187,
+          46.808243
+        ],
+        [
+          -71.2179623,
+          46.8081496
+        ],
+        [
+          -71.2178583,
+          46.8080226
+        ],
+        [
+          -71.2176593,
+          46.8077796
+        ],
+        [
+          -71.2174747,
+          46.8078504
+        ],
+        [
+          -71.217177,
+          46.8079645
+        ],
+        [
+          -71.2173133,
+          46.808131
+        ],
+        [
+          -71.21748,
+          46.8083346
+        ]
+      ],
+      [
+        [
+          -71.2172257,
+          46.8085993
+        ],
+        [
+          -71.2166308,
+          46.8088341
+        ],
+        [
+          -71.2165982,
+          46.808795
+        ],
+        [
+          -71.2165911,
+          46.8087981
+        ],
+        [
+          -71.2165982,
+          46.8088064
+        ],
+        [
+          -71.2165545,
+          46.8088238
+        ],
+        [
+          -71.2164727,
+          46.8087276
+        ],
+        [
+          -71.2165163,
+          46.8087102
+        ],
+        [
+          -71.2165322,
+          46.8087289
+        ],
+        [
+          -71.2165409,
+          46.8087255
+        ],
+        [
+          -71.2165164,
+          46.8086959
+        ],
+        [
+          -71.216593,
+          46.8086662
+        ],
+        [
+          -71.2165881,
+          46.8086604
+        ],
+        [
+          -71.2165694,
+          46.8086677
+        ],
+        [
+          -71.2165287,
+          46.8086226
+        ],
+        [
+          -71.2165495,
+          46.8086144
+        ],
+        [
+          -71.2165439,
+          46.8086079
+        ],
+        [
+          -71.2164875,
+          46.80863
+        ],
+        [
+          -71.2160799,
+          46.8081438
+        ],
+        [
+          -71.2161393,
+          46.8081221
+        ],
+        [
+          -71.2161339,
+          46.8081155
+        ],
+        [
+          -71.2161252,
+          46.8081189
+        ],
+        [
+          -71.2160866,
+          46.8080726
+        ],
+        [
+          -71.2159941,
+          46.808109
+        ],
+        [
+          -71.2159691,
+          46.8080795
+        ],
+        [
+          -71.215962,
+          46.8080822
+        ],
+        [
+          -71.21597,
+          46.8080917
+        ],
+        [
+          -71.2159036,
+          46.8081179
+        ],
+        [
+          -71.2157612,
+          46.8079488
+        ],
+        [
+          -71.2158276,
+          46.8079226
+        ],
+        [
+          -71.2158409,
+          46.8079385
+        ],
+        [
+          -71.2158479,
+          46.807936
+        ],
+        [
+          -71.2158151,
+          46.807897
+        ],
+        [
+          -71.2159785,
+          46.8078327
+        ],
+        [
+          -71.2173718,
+          46.8072844
+        ],
+        [
+          -71.2173979,
+          46.807314
+        ],
+        [
+          -71.2174089,
+          46.8073096
+        ],
+        [
+          -71.217406,
+          46.8073062
+        ],
+        [
+          -71.217471,
+          46.8072806
+        ],
+        [
+          -71.2176116,
+          46.8074475
+        ],
+        [
+          -71.2175467,
+          46.8074731
+        ],
+        [
+          -71.2175414,
+          46.8074669
+        ],
+        [
+          -71.2175288,
+          46.8074715
+        ],
+        [
+          -71.2175505,
+          46.8074966
+        ],
+        [
+          -71.217006,
+          46.8077109
+        ],
+        [
+          -71.2163411,
+          46.8079725
+        ],
+        [
+          -71.21638,
+          46.8080197
+        ],
+        [
+          -71.2163491,
+          46.8080317
+        ],
+        [
+          -71.2163539,
+          46.8080375
+        ],
+        [
+          -71.2163988,
+          46.8080214
+        ],
+        [
+          -71.2168059,
+          46.8085078
+        ],
+        [
+          -71.2167615,
+          46.8085246
+        ],
+        [
+          -71.2167656,
+          46.8085298
+        ],
+        [
+          -71.2167822,
+          46.8085233
+        ],
+        [
+          -71.2168212,
+          46.8085702
+        ],
+        [
+          -71.2171063,
+          46.8084574
+        ],
+        [
+          -71.2171284,
+          46.8084842
+        ],
+        [
+          -71.2171363,
+          46.8084811
+        ],
+        [
+          -71.2171256,
+          46.8084684
+        ],
+        [
+          -71.2171666,
+          46.8084523
+        ],
+        [
+          -71.2172472,
+          46.8085481
+        ],
+        [
+          -71.2172062,
+          46.8085642
+        ],
+        [
+          -71.2172013,
+          46.8085584
+        ],
+        [
+          -71.2171939,
+          46.8085611
+        ],
+        [
+          -71.2172257,
+          46.8085993
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -71.21748,
+        46.8083346
+      ],
+      [
+        -71.2177187,
+        46.808243
+      ],
+      [
+        -71.2179623,
+        46.8081496
+      ],
+      [
+        -71.2178583,
+        46.8080226
+      ],
+      [
+        -71.2176593,
+        46.8077796
+      ],
+      [
+        -71.2174747,
+        46.8078504
+      ],
+      [
+        -71.217177,
+        46.8079645
+      ],
+      [
+        -71.2173133,
+        46.808131
+      ],
+      [
+        -71.21748,
+        46.8083346
+      ]
+    ],
+    "datum": "median",
+    "featherM": 10
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the plaza level at the foot of the tower, about 90 m above sea level in the public DEM (the ground varies by about 3 m under the complex and falls to the north); stairs, ramps, the plaza and below-grade levels are not modelled. Full 3D world uses an explicit terrain pad (terrainPad): the tower and base outlines are held at the median DEM of the tower outline with a 10 m feather.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the mapped plan of the tower (42 m by 47 m) and of the base wings and cores, the 132 m roof and 31 levels (OSM, Wikipedia), the 177 m mast tip (fr.wikipedia infobox), the 4 and 5 levels of the base parts. Estimated from photographs: the 4.2 m storey pitch, the window and pier proportions, which faces carry the punched-window grid and which the narrow-slot grid, the corner piers and crown, the rooftop plant, the mast lattice, the base facades and all heights of the base.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edifice-marie-guyart-near.glb",
+      "bytes": 962464,
+      "triangles": 18018,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -30.225671768188477,
+          0,
+          -87.12965393066406
+        ],
+        "max": [
+          137.39236450195312,
+          177,
+          86.14059448242188
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edifice-marie-guyart-far.glb",
+      "bytes": 80796,
+      "triangles": 1394,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -30.225671768188477,
+          0,
+          -87.12965393066406
+        ],
+        "max": [
+          137.39236450195312,
+          177,
+          86.14059448242188
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/edifice-marie-guyart/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

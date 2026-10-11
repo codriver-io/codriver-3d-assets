@@ -17,8 +17,8 @@ Run `pnpm build:paris-palaces` to generate both variants deterministically from 
 
 | Detail | Cost |
 | --- | --- |
-| Near | 1,713,248 bytes · 33,580 triangles · 7 draws |
-| Far | 609,328 bytes · 11,800 triangles · 7 draws |
+| Near | 576,224 bytes · 16,058 triangles · 6 draws |
+| Far | 138,524 bytes · 4,512 triangles · 6 draws |
 
 Inspect [near, facade](/asset-preview.html?asset=paris-palais-garnier&view=facade), [far, roof](/asset-preview.html?asset=paris-palais-garnier&detail=far&view=roof), and [catalog](/asset-catalog.html?asset=paris-palais-garnier). The source selector in the inspector compares procedural geometry with the exported GLB.
 
@@ -46,3 +46,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). auditorium and rotunda domes are green verdigris ('patina') with gilded ribs; gilded corner and Apollo groups are twice their first size (about 14 m). Exported cost: near 16,058 triangles / 6 draws / 576,224 bytes; far 4,512 / 6 / 138,524.

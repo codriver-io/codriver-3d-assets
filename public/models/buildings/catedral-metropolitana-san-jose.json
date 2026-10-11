@@ -1,0 +1,66 @@
+{
+  "id": "catedral-metropolitana-san-jose",
+  "name": "Catedral Metropolitana de San José",
+  "kind": "building",
+  "origin": [
+    -84.07872089647573,
+    9.932770976079796
+  ],
+  "height": 34.5,
+  "padM": 53,
+  "frontageBearing": 275,
+  "rotationDeg": -95,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local pavement y=0, rigid flat base; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "OSM way 264042444 supplies plan and orientation. All heights, roof pitches and architectural profiles are photographic estimates; 34.5 m is not a published height. Cupola-topped state follows Bernard Gagnon’s February 2023 exterior photograph, rather than older pointed tower caps.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/catedral-metropolitana-san-jose-near.glb",
+      "bytes": 1514360,
+      "triangles": 32571,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -46.38512420654297,
+          -2.3841858265427618e-8,
+          -24.993898391723633
+        ],
+        "max": [
+          39.04682922363281,
+          34.5,
+          22.25009536743164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/catedral-metropolitana-san-jose-far.glb",
+      "bytes": 290864,
+      "triangles": 6379,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -46.38512420654297,
+          -2.3841858265427618e-8,
+          -24.993898391723633
+        ],
+        "max": [
+          39.04682922363281,
+          34.5,
+          22.25009536743164
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-metropolitana-san-jose/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -22,8 +22,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/union-station-near.glb",
-      "bytes": 1398528,
-      "triangles": 29627,
+      "bytes": 1284020,
+      "triangles": 28159,
       "drawCalls": 11,
       "bounds": {
         "min": [
@@ -40,9 +40,9 @@
     },
     "far": {
       "url": "/models/buildings/union-station-far.glb",
-      "bytes": 597032,
-      "triangles": 9225,
-      "drawCalls": 10,
+      "bytes": 425252,
+      "triangles": 7045,
+      "drawCalls": 7,
       "bounds": {
         "min": [
           -163.27304077148438,

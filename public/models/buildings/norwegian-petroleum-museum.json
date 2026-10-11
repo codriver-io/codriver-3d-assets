@@ -1,0 +1,65 @@
+{
+  "id": "norwegian-petroleum-museum",
+  "name": "Norwegian Petroleum Museum",
+  "kind": "building",
+  "origin": [
+    5.73472,
+    58.97361
+  ],
+  "height": 17.31,
+  "padM": 66,
+  "frontageBearing": 147,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local harbour promenade grade y=0; pavilion feet terminate at grade. No sea level, DEM or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped four building outlines; exterior heights, cladding, roof profiles and supports estimated from photographs. Three elevated silver platform pavilions and granite bedrock wings retained in both LODs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/norwegian-petroleum-museum-near.glb",
+      "bytes": 1185520,
+      "triangles": 29114,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -40.9415283203125,
+          -4.7683716530855236e-8,
+          -53.63035202026367
+        ],
+        "max": [
+          45.236595153808594,
+          17.252164840698242,
+          35.388301849365234
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/norwegian-petroleum-museum-far.glb",
+      "bytes": 173532,
+      "triangles": 4322,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -40.9415283203125,
+          -4.7683716530855236e-8,
+          -53.63035202026367
+        ],
+        "max": [
+          45.236595153808594,
+          17.252164840698242,
+          35.388301849365234
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/norwegian-petroleum-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

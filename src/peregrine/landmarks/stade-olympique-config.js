@@ -10,6 +10,6 @@ const angle = STADE.bearing * Math.PI / 180, c = Math.cos(angle), s = Math.sin(a
 // u = across the stadium, v = along its axis toward the tower (NNW).
 export function stadePoint(u, y, v) { return [u * c + v * s, y, u * s - v * c]; }
 export const STADE_PALETTES = {
-  light: { concrete: '#d5d4c9', roof: '#72958b', glass: '#294752', rail: '#818b91', steel: '#424e55', museum: '#c1aa69', asphalt: '#555d63' },
-  dark: { concrete: '#8d9da9', roof: '#426a65', glass: '#263e4d', rail: '#a3b3bd', steel: '#6e8897', museum: '#897c56', asphalt: '#303c47' },
+  light: { concrete: '#d5d4c9', roof: '#e1e0d7', glass: '#294752', rail: '#818b91', steel: '#424e55', museum: '#c1aa69', asphalt: '#555d63' },
+  dark: { concrete: '#8d9da9', roof: '#9aa8b1', glass: '#263e4d', rail: '#a3b3bd', steel: '#6e8897', museum: '#897c56', asphalt: '#303c47' },
 };

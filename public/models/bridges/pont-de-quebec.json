@@ -1,0 +1,67 @@
+{
+  "id": "pont-de-quebec",
+  "name": "Pont de Québec",
+  "kind": "bridge",
+  "origin": [
+    -71.2879747,
+    46.7457311
+  ],
+  "height": 104,
+  "padM": 60,
+  "frontageBearing": 157.6,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y = 0 is high water on the flat Peregrine basemap; no absolute altitude, DEM or latitude stretch is baked in. The road surface is authored level at 48.0 m between the two mapped bridge ends (45.72 m published clearance plus an estimated 2.3 m chord and floor); beyond them the flat-map ramps ease to the approach roads at run time (bridge-profile.js; the real-deck profile in Full 3D world, layer.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 987 m long, main span 548.6 m (1,800 ft) between the main piers, anchor arms 157.0 m (515 ft), cantilever arms 176.8 m (580 ft), suspended span 195.07 m (640 ft), 104 m high, 45.72 m clearance at high tide, about 29 m wide; K-truss; three road lanes, one track, one walkway. Mapped: the roadway (9.17 m), the track and the walkway on the bridge, the bridge ends and the approach roads. Estimated: truss spacing 26.8 m (88 ft), the main span centred on the mapped bridge (no pier mapped), main-post and end-post heights, truss depths (21 m at the tips and anchor ends, 33 m at the suspended span crown), panel counts (10/11/12), bracing layout, pier and abutment masonry, the ~62 m deck-truss approach spans, floor depth, lamp spacing. Flat-map convention: the road is level between the bridge ends and ramps 560 m north (9.8 %) and 480 m south (11.7 %) down to the approach roads.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-de-quebec-near.glb",
+      "bytes": 598268,
+      "triangles": 15648,
+      "drawCalls": 27,
+      "bounds": {
+        "min": [
+          -289.4299621582031,
+          -0.9599999785423279,
+          -698.4959106445312
+        ],
+        "max": [
+          405.41363525390625,
+          104,
+          679.303466796875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-de-quebec-far.glb",
+      "bytes": 175500,
+      "triangles": 4126,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -289.4299621582031,
+          -0.9599999785423279,
+          -698.4959106445312
+        ],
+        "max": [
+          405.41363525390625,
+          104,
+          679.303466796875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-de-quebec/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "munch-museum",
+  "name": "MUNCH (Munch Museum)",
+  "kind": "building",
+  "origin": [
+    10.75523029,
+    59.90572569
+  ],
+  "height": 57.4,
+  "padM": 72,
+  "frontageBearing": 290.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is local flat-map grade on the Bjørvika quay; rigid foundation, no absolute altitude or baked terrain.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Roof 57.4 m (Dezeen / building record); museum, Lindner and Bollinger+Grohmann say 60 m. Kink at the mapped 37 m part, incline to the 57 m part, 7.5 m west-northwest shift (Lindner publishes a 7 m overhang). Where the shaft plan leaves the podium the aluminium runs down to grade, so nothing hangs over open air. Glass is the leaning front plus a vertical corner strip on the narrow end; the rest of that end is ribbed. Aluminium elsewhere, light silver with darker grooves, and a recessed crown under a projecting cap. Podium 13 m, lilac MUNCH wordmark. Wave pitch, glass grid and letter size are estimated. No textures or external meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/munch-museum-near.glb",
+      "bytes": 1835044,
+      "triangles": 23423,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -39.330162048339844,
+          0,
+          -50.69763946533203
+        ],
+        "max": [
+          40.56414031982422,
+          57.400001525878906,
+          50.91453552246094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/munch-museum-far.glb",
+      "bytes": 355104,
+      "triangles": 4463,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -39.330162048339844,
+          0,
+          -50.69763946533203
+        ],
+        "max": [
+          40.56414031982422,
+          57.400001525878906,
+          50.91453552246094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/munch-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

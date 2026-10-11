@@ -85,28 +85,30 @@ export function create({ detail = 'near' } = {}) {
     wput(g, 'brick', F, item.s0);
   }
 
-  // A double-hung window: dark frame plate, glass, meeting rail, stone sill. Wall-local.
+  // A double-hung window: dark frame plate, glass, meeting rail, stone sill. Wall-local. Every layer stands 5 cm proud of the one behind
+  // (the frame plate of the recess, the glass of the plate, the bars of the glass) so no two faces of different materials share a plane;
+  // the sill top stands 5 cm above the opening's bottom edge for the same reason (the brick panel's opening floor is at y0).
   function windowRect(F, sc, y0, y1, width, material, sill = true, plane = -RECESS) {
     const o = plane;
-    wbox('iron', F, sc - width / 2, sc + width / 2, y0, y1, o + 0.01, o + 0.04);
-    wbox(material, F, sc - width / 2 + 0.07, sc + width / 2 - 0.07, y0 + 0.07, y1 - 0.07, o + 0.04, o + 0.06);
+    wbox('iron', F, sc - width / 2, sc + width / 2, y0, y1, o + 0.01, o + 0.05);
+    wbox(material, F, sc - width / 2 + 0.07, sc + width / 2 - 0.07, y0 + 0.07, y1 - 0.07, o + 0.05, o + 0.1);
     if (near) {
-      wbox('iron', F, sc - width / 2 + 0.05, sc + width / 2 - 0.05, (y0 + y1) / 2 - 0.03, (y0 + y1) / 2 + 0.03, o + 0.06, o + 0.09);
-      if (width > 1.15) wbox('iron', F, sc - 0.03, sc + 0.03, y0 + 0.07, y1 - 0.07, o + 0.06, o + 0.09);
+      wbox('iron', F, sc - width / 2 + 0.05, sc + width / 2 - 0.05, (y0 + y1) / 2 - 0.03, (y0 + y1) / 2 + 0.03, o + 0.1, o + 0.15);
+      if (width > 1.15) wbox('iron', F, sc - 0.03, sc + 0.03, y0 + 0.07, y1 - 0.07, o + 0.1, o + 0.15);
     }
-    if (sill) wbox('stone', F, sc - width / 2 - 0.12, sc + width / 2 + 0.12, y0 - 0.13, y0, o, o + 0.3);
+    if (sill) wbox('stone', F, sc - width / 2 - 0.12, sc + width / 2 + 0.12, y0 - 0.13, y0 + 0.05, o - 0.05, o + 0.3); // the back sinks 5 cm into the recess wall: no shared plane with the panel's back
   }
   function windowArch(F, sc, y0, spring, width, material) {
     const o = -RECESS, rw = width / 2;
     let g = new THREE.ShapeGeometry(new THREE.Shape(archOutline(-rw, rw, y0, spring, 12).map(([x, y]) => new THREE.Vector2(x, y))));
     wput(g, 'iron', F, sc, o + 0.02);
     g = new THREE.ShapeGeometry(new THREE.Shape(archOutline(-rw + 0.07, rw - 0.07, y0 + 0.07, spring, 12).map(([x, y]) => new THREE.Vector2(x, y))));
-    wput(g, material, F, sc, o + 0.035);
+    wput(g, material, F, sc, o + 0.07);
     if (near) {
-      wbox('iron', F, sc - rw + 0.05, sc + rw - 0.05, spring - 0.03, spring + 0.03, o + 0.045, o + 0.075);
-      wbox('iron', F, sc - 0.03, sc + 0.03, y0 + 0.07, spring + rw - 0.09, o + 0.045, o + 0.075);
+      wbox('iron', F, sc - rw + 0.05, sc + rw - 0.05, spring - 0.03, spring + 0.03, o + 0.07, o + 0.12);
+      wbox('iron', F, sc - 0.03, sc + 0.03, y0 + 0.07, spring + rw - 0.09, o + 0.07, o + 0.12);
     }
-    wbox('stone', F, sc - rw - 0.12, sc + rw + 0.12, y0 - 0.13, y0, o, o + 0.3);
+    wbox('stone', F, sc - rw - 0.12, sc + rw + 0.12, y0 - 0.13, y0 + 0.05, o - 0.05, o + 0.3); // the back sinks 5 cm into the recess wall: no shared plane with the panel's back
   }
 
   function hoodMould(F, sc, aw) {
@@ -152,7 +154,7 @@ export function create({ detail = 'near' } = {}) {
       const { F, items } = layouts[name];
       items.forEach((item) => {
         const sc = (item.s0 + item.s1) / 2, w = item.s1 - item.s0;
-        const glass = (y0, y1, width) => wbox(lit(name.length, item.index ?? 9, Math.round(y0)) ? 'glow' : 'glass', F, sc - width / 2, sc + width / 2, y0, y1, -0.01, 0.03);
+        const glass = (y0, y1, width) => wbox(lit(name.length, item.index ?? 9, Math.round(y0)) ? 'glow' : 'glass', F, sc - width / 2, sc + width / 2, y0, y1, -0.01, 0.06);
         if (item.type === 'side') for (const [y0, y1] of [W.f1, W.f2, W.f3, W.f4]) glass(y0, y1, 0.72);
         else { const hw = Math.min(0.85, 0.26 * w), aw = Math.min(0.9, 0.29 * w); glass(W.f1[0], W.f1[1], hw * 2 - 0.16); glass(W.f2[0], W.f2[1], hw * 2 - 0.16); glass(W.f3[0], W.f3[1], aw * 2 - 0.5); glass(W.f4[0], L.archSpring + 0.35, aw * 2 - 0.5); }
       });
@@ -218,7 +220,7 @@ export function create({ detail = 'near' } = {}) {
       const { F, items } = layouts[name];
       for (const item of items) {
         const sc = (item.s0 + item.s1) / 2, yc = 1.0, out = 0.35 * (1 - yc / L.plinth);
-        for (const [m, w, h, o] of [['iron', 1.0, 0.86, 0.03], [lit(4, item.index ?? 9, 0) ? 'glow' : 'glass', 0.86, 0.72, 0.045]]) {
+        for (const [m, w, h, o] of [['iron', 1.0, 0.86, 0.03], [lit(4, item.index ?? 9, 0) ? 'glow' : 'glass', 0.86, 0.72, 0.085]]) { // glass front 5.5 cm proud of the iron plate
           wput(new THREE.BoxGeometry(w, h, 0.04).rotateX(-tilt).translate(0, yc, out + o), m, F, sc);
         }
       }
@@ -307,8 +309,8 @@ export function create({ detail = 'near' } = {}) {
         const pad = 0.02;
         skin('iron', R_b - RECESS + 0.015, p0 + pad, p1 - pad, y0, y1);
         const mat = lit(9, p0 > 0 ? 1 : 0, f) ? 'glow' : 'glass';
-        skin(mat, R_b - RECESS + 0.03, p0 + 0.06, p1 - 0.06, y0 + 0.07, y1 - 0.07);
-        bow('iron', R_b - RECESS + 0.03, R_b - RECESS + 0.07, p0 + 0.05, p1 - 0.05, (y0 + y1) / 2 - 0.03, (y0 + y1) / 2 + 0.03, { inner: false, caps: false });
+        skin(mat, R_b - RECESS + 0.065, p0 + 0.06, p1 - 0.06, y0 + 0.07, y1 - 0.07);
+        bow('iron', R_b - RECESS + 0.065, R_b - RECESS + 0.115, p0 + 0.05, p1 - 0.05, (y0 + y1) / 2 - 0.03, (y0 + y1) / 2 + 0.03, { inner: false, caps: false });
         bow('stone', R_b - RECESS, R_b + 0.07, p0 - 0.03, p1 + 0.03, y0 - 0.13, y0, { inner: false, caps: false }); // sill
         bow('stone', R_b - RECESS, R_b + 0.05, p0 - 0.03, p1 + 0.03, y1, y1 + 0.18, { inner: false, caps: false }); // segmental hood
       });
@@ -316,7 +318,7 @@ export function create({ detail = 'near' } = {}) {
     for (const y of [5.2, 12.45]) bow('stone', R_b - 0.1, R_b + 0.14, -HALF, HALF, y, y + 0.26, { inner: false, caps: false });
   } else {
     bow('brick', R_b - 0.05, R_b, -HALF, HALF, L.plinth, L.frieze[1], { inner: false, caps: false, top: false, bottom: false });
-    for (const [p0, p1] of [winA, winB]) for (const [y0, y1] of [W.f1, W.f2, W.f3, W.f4]) skin('glass', R_b + 0.02, p0 + 0.05, p1 - 0.05, y0, y1);
+    for (const [p0, p1] of [winA, winB]) for (const [y0, y1] of [W.f1, W.f2, W.f3, W.f4]) skin('glass', R_b + 0.06, p0 + 0.05, p1 - 0.05, y0, y1);
   }
 
   // ---- the turret ----
@@ -334,14 +336,14 @@ export function create({ detail = 'near' } = {}) {
       const top = (t) => { const x = (t - 0.5) * 2 * rw; return spring + Math.sqrt(Math.max(0, rw * rw - x * x)); };
       skin('iron', R_b - 0.4 + 0.015, p0, p1, y0, spring + rw, top);
       put(cylinderSkin({ c: APEX.c, r: R_b - 0.4 + 0.012, a0: ARC.mid + p0, a1: ARC.mid + p1, y0: ty2, y1: ty2, topAt: () => ty2, bottomAt: (t) => top(t), steps: bowSteps(p0, p1) }), 'brick'); // brick above the arched head
-      skin(lit(11, p0 > 0 ? 1 : 0, 0) ? 'glow' : 'glass', R_b - 0.4 + 0.03, p0 + 0.05, p1 - 0.05, y0 + 0.07, spring + rw - 0.08, (t) => Math.max(y0 + 0.2, top(0.06 + t * 0.88) - 0.08));
-      bow('iron', R_b - 0.4 + 0.03, R_b - 0.4 + 0.07, p0 + 0.04, p1 - 0.04, 18.2, 18.26, { inner: false, caps: false });
+      skin(lit(11, p0 > 0 ? 1 : 0, 0) ? 'glow' : 'glass', R_b - 0.4 + 0.065, p0 + 0.05, p1 - 0.05, y0 + 0.07, spring + rw - 0.08, (t) => Math.max(y0 + 0.2, top(0.06 + t * 0.88) - 0.08));
+      bow('iron', R_b - 0.4 + 0.065, R_b - 0.4 + 0.115, p0 + 0.04, p1 - 0.04, 18.2, 18.26, { inner: false, caps: false });
       bow('stone', R_b - 0.4, R_b + 0.06, p0 - 0.03, p1 + 0.03, y0 - 0.13, y0, { inner: false, caps: false });
       bow('stone', R_b - 0.1, R_b + 0.09, pc - 0.5 * (p1 - p0) - 0.05, pc + 0.5 * (p1 - p0) + 0.05, spring + rw + 0.02, spring + rw + 0.16, { inner: false, caps: false });
     }
   } else {
     put(new THREE.CylinderGeometry(R_b, R_b, ty3 - ty0, 14, 1, true).translate(APEX.c[0], (ty3 + ty0) / 2, APEX.c[1]), 'brick');
-    for (const [p0, p1] of [turretWindow, turretWindowB]) skin('glass', R_b + 0.02, p0, p1, 17.5, 19.4);
+    for (const [p0, p1] of [turretWindow, turretWindowB]) skin('glass', R_b + 0.06, p0, p1, 17.5, 19.4);
   }
   const cone = new THREE.LatheGeometry([
     [R_b, ty3 - 0.1], [1.88, ty3 + 0.05], [1.9, ty3 + 0.18], [1.88, ty3 + 0.33], [1.78, L.coneBase],

@@ -2,7 +2,7 @@
 
 Want to see a familiar bridge or building on your commute? Suggest it, improve an existing model, or contribute your own. You can work in Blender, write a Three.js generator, or use the shared builder skill with Codex or Claude Code.
 
-[Suggest a landmark](https://github.com/codriver-io/codriver-3d-assets/issues/new?template=landmark.yml) · [Report a model problem](https://github.com/codriver-io/codriver-3d-assets/issues/new?template=model-problem.yml) · [Explore the library](https://codriver-3d-assets.pages.dev/)
+[Suggest a landmark](https://github.com/codriver-io/codriver-3d-assets/issues/new?template=landmark.yml) · [Report a model problem](https://github.com/codriver-io/codriver-3d-assets/issues/new?template=model-problem.yml) · [Explore the library](https://3d-assets.codriver.io/)
 
 ## 1. Choose the place and check its sources
 
@@ -70,7 +70,7 @@ For a new or revised model, with `pnpm dev` running, also run `pnpm thumbnails:b
 
 Open `/asset-preview.html?asset=<id>`. Inspect near/far, day/night, and exported geometry; compare procedural geometry when available. Look underneath the bridge and behind the building, not just from the flattering angle. Include at least two screenshots in the PR, with the asset ID, detail level and view. Include a reference link for the matching angle.
 
-The GitHub workflow runs the build, catalog/metadata checks and browser checks for pull requests. It has no publishing credentials. A maintainer may need to approve a first-time contributor’s workflow run. Passing it validates the library; app integration and terrain QA are separate.
+The GitHub workflow runs the build, catalog/metadata checks and browser checks for pull requests. Pull-request runs have no publishing credentials; after a maintainer merges, the library deploys automatically. A maintainer may need to approve a first-time contributor’s workflow run. Passing it validates the library; app integration and terrain QA are separate.
 
 ## 6. Open a pull request and record permission
 

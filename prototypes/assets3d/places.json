@@ -1,0 +1,239 @@
+{
+  "Albi": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Amsterdam": {
+    "country": "Netherlands",
+    "continent": "Europe"
+  },
+  "Averøy": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Banff": {
+    "country": "Canada",
+    "region": "Alberta",
+    "continent": "North America"
+  },
+  "Bayeux": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Bénouville": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Bergen": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Bogotá": {
+    "country": "Colombia",
+    "continent": "South America"
+  },
+  "Bucharest": {
+    "country": "Romania",
+    "continent": "Europe"
+  },
+  "Caen": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Calgary": {
+    "country": "Canada",
+    "region": "Alberta",
+    "continent": "North America"
+  },
+  "Carcassonne": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Dallas": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
+  "Edmonton": {
+    "country": "Canada",
+    "region": "Alberta",
+    "continent": "North America"
+  },
+  "Garden Grove": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Gatineau": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Halden": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Hamar": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Hérouville-Saint-Clair": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Honfleur": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Kansas City": {
+    "country": "United States",
+    "region": "Missouri",
+    "continent": "North America"
+  },
+  "Kristiansand": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Lærdal": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Larvik": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Leirfjord": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "London": {
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
+  "Lyon": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Madrid": {
+    "country": "Spain",
+    "continent": "Europe"
+  },
+  "Medellín": {
+    "country": "Colombia",
+    "continent": "South America"
+  },
+  "Millau": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Montréal": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Narvik": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Oslo": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Paris": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Québec": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Riverside": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Rome": {
+    "country": "Italy",
+    "continent": "Europe"
+  },
+  "Saguenay": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Sainte-Anne-de-Beaupré": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "San Francisco": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "San José": {
+    "country": "Costa Rica",
+    "region": "San José",
+    "continent": "North America"
+  },
+  "Santa Ana": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Stavanger": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Toronto": {
+    "country": "Canada",
+    "region": "Ontario",
+    "continent": "North America"
+  },
+  "Toulouse": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Trois-Rivières": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Tromsø": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Trondheim": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Ulvik": {
+    "country": "Norway",
+    "continent": "Europe"
+  },
+  "Vancouver": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Victoria": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Villeurbanne": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Washington": {
+    "country": "United States",
+    "region": "District of Columbia",
+    "continent": "North America"
+  },
+  "Winnipeg": {
+    "country": "Canada",
+    "region": "Manitoba",
+    "continent": "North America"
+  }
+}

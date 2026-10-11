@@ -1,0 +1,65 @@
+{
+  "id": "scotiabank-saddledome",
+  "name": "Scotiabank Saddledome",
+  "kind": "building",
+  "origin": [
+    -114.0519639,
+    51.0373999
+  ],
+  "height": 41,
+  "padM": 85,
+  "frontageBearing": 151,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the Stampede Park plaza round the arena); no absolute altitude. The roof centre is placed at 27.1 m (the venue's 89 ft maximum building height) over this grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The plan (a 70 m circle plus the south-west entrance bulge) comes from OpenStreetMap; the saddle geometry (67.7 m edge-ring sphere, 14 m and 6 m centre offsets, 4.3 m ring) is published. The absolute heights (edge 41 m high and 21 m low), the high-axis bearing (61/241 degrees, read from the mapped bulge and five photographs), the facade bands and piers, the end towers (the yellow stair towers climb to the underside of the roof ring), the north-east end, the roof loop, the eight thin seam strips on the roof (stand-ins for the panel joints of the roof, along its two principal directions) and the lettering are estimates from photographs. The BMO Centre, the parkade and the Stampede grounds are separate buildings and are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/scotiabank-saddledome-near.glb",
+      "bytes": 236488,
+      "triangles": 7195,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -75.54059600830078,
+          0,
+          -69.49189758300781
+        ],
+        "max": [
+          69.49189758300781,
+          40.7945442199707,
+          69.49189758300781
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/scotiabank-saddledome-far.glb",
+      "bytes": 71572,
+      "triangles": 1935,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -75.54059600830078,
+          0,
+          -69.48941802978516
+        ],
+        "max": [
+          69.48941802978516,
+          40.7945442199707,
+          69.48941802978516
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/scotiabank-saddledome/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

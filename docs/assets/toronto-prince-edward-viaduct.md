@@ -50,20 +50,20 @@ The basemap has no valley: roads on both banks are at `y = 0`. Like Victoria and
 ## Modelling decisions
 
 - **Recognition feature**: the five crescent arches, each two braced ribs (extrados and intrados chords, web posts and diagonals, spandrel columns rising to the road slab, spandrel bracing, cross bracing between the ribs, hinge shoes on the piers) with the first and last shallower. Members are built with an explicit frame (`member()`), not the builder's `beam`, which twists on a skewed bridge. Pin spans are the published ones exactly.
-- Deck: slab between two edge beams (inset so no faces are coplanar), stone parapets with a cornice, sidewalks, asphalt (recoloured at run time to the map's pavement), lane paint and a yellow centre line in near.
+- Deck: slab between two edge beams (inset so no faces are coplanar; its top and the approach girder's sit 18 cm under the road layers), stone parapets with a 16 cm projecting cornice, sidewalks, asphalt (recoloured at run time to the map's pavement), lane paint and a yellow centre line in near.
 - Lower deck: a dark steel room under the roadway, inboard of the ribs so the columns read in front of it, with lamps on its side (near).
 - Piers are lofted octagonal rings (footing, tapered shaft, flared capital) with a lighter arched niche on each long face (near). Shafts are weighted so the footing stays on the valley floor and the shaft stretches to the deck when the road is fitted (`bridgeLift`); arch members are weighted by height.
 - **Luminous Veil**: modelled, because it is the second thing a driver sees. Top rail (both LODs), leaning masts with a diagonal arm and a stone pilaster each (near), stainless rods as thin double-sided ribbons (near only, a lighter `veil` material). The 2015 colour-changing LED lighting is not modelled; the dark palette lightens the rods instead.
 - Lamp standards: davit arms alternating sides every 30 m (near only).
-- Far LOD: same deck, edge beams, parapets, room, piers, arches (chords, spandrel columns, half the panels) and Veil rail; no rods, masts are 13 m apart, no bracing, paint or lamps.
+- Far LOD: same deck, edge beams, parapets, room, piers, arches (chords, spandrel columns, half the panels) and Veil rail; no rods, masts are 13 m apart, no bracing, paint or lamps. The lamp standards (every 30 m, alternating sides) stay as bare 9.75 m posts (the tallest part, 49.8 m above the valley floor), so the far silhouette height matches the near one.
 - Materials (both themes): `concrete`, `stone`, `steel`, `asphalt`, `paint`, `yellow`, `rail`, `veil`, `lamp`.
 
 ## Cost
 
 | | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 49,492 | 17 | 2,059,776 |
-| Far | 20,960 | 7 | 587,812 |
+| Near | 48,580 | 17 | 2,041,760 |
+| Far | 20,228 | 7 | 580,912 |
 
 Budgets: near 160,000 / 48, far 45,000 / 14. The deck is meshed every 2 m so its chords stay under the HD pavement overlay (a 5 m step sagged 0.14 m); that, and the 238 m of approach, are most of the far model. Overlay draws are added at run time by the shared bridge factory.
 

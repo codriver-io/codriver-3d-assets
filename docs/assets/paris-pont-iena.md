@@ -24,8 +24,8 @@ Editable source: [paris-bridges-geometry.js](../../src/peregrine/landmarks/paris
 
 | LOD | Bytes | Triangles | Mesh draws |
 | --- | ---: | ---: | ---: |
-| Near | 858,608 | 18,524 | 4 |
-| Far | 162,268 | 3,660 | 4 |
+| Near | 935,572 | 20,676 | 4 |
+| Far | 151,204 | 4,440 | 4 |
 
 ## Inspection and placement
 
@@ -50,3 +50,7 @@ Five regularly distributed masonry vaults independent of alignment nodes, rounde
 See the [refinement notes](../paris-street-level-refinement.md) for references, remaining approximations and separate host-mode status. Earlier screenshot links show the initial collection; the current GLB costs are in the manifest.
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-pont-iena.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-pont-iena-roof-or-structure.png).
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). four equestrian groups on end plinths (original blocky silhouettes); continuous stone parapet with coping; far end slabs no longer show stone through the paving. Exported cost: near 20,676 triangles / 4 draws / 935,572 bytes; far 4,440 / 4 / 151,204.

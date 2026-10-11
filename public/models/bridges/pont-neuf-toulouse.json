@@ -1,0 +1,66 @@
+{
+  "id": "pont-neuf-toulouse",
+  "name": "Pont Neuf (Toulouse)",
+  "kind": "bridge",
+  "origin": [
+    1.43906915,
+    43.5993578
+  ],
+  "height": 16.8,
+  "padM": 45,
+  "frontageBearing": 75.8,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map y=0; deck 8 m at banks, asymmetric 11 m crown (estimated); 110 m approach ramps. No DEM, absolute altitude or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "DRAC Occitanie: 220 m length, 20 m deck, seven basket arches, spans 13.47–31.70 m. OSM structural road length ~222 m retained. Pier widths, deck datum, arch rises, masonry, cutwater caps and lamps estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-neuf-toulouse-near.glb",
+      "bytes": 2080680,
+      "triangles": 31426,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -215.07070922851562,
+          0,
+          -64.33341979980469
+        ],
+        "max": [
+          213.41111755371094,
+          16.62896728515625,
+          58.187015533447266
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-neuf-toulouse-far.glb",
+      "bytes": 810788,
+      "triangles": 13746,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -215.07070922851562,
+          0,
+          -64.33341979980469
+        ],
+        "max": [
+          213.41111755371094,
+          16.62896728515625,
+          58.187015533447266
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-neuf-toulouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

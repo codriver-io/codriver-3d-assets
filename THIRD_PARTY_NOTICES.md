@@ -36,3 +36,7 @@ Each model's catalog entry and documentation link its structural, dimensional
 and photographic references. Those materials remain with their respective
 authors. They are not bundled or offered for download here. The collection
 contains original procedural models, with no converted Flight Simulator assets.
+
+## polygon-clipping
+
+Some landmark generators (for example `top-cities/bank-of-america-plaza-dallas`) use polygon-clipping, © Mike Fogel, under MIT. It is bundled into the inspector's procedural preview with those generators and is not part of the exported GLBs.

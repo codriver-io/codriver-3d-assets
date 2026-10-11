@@ -31,7 +31,7 @@ export function towerSections(t) {
 }
 
 export function buildTower(k, t, near) {
-  const { panel, faceBox, rectBox } = k;
+  const { panel, faceBox, slab, rectBox } = k;
   const f = SPEC.floorToFloor, p = SPEC.plinth, m0 = SPEC.module, top = t.H;
   const faces = rectFaces(t), sections = towerSections(t);
   const inner = { ...t, L: t.L - 2 * -GLASS_Q, W: t.W - 2 * -GLASS_Q };
@@ -44,22 +44,29 @@ export function buildTower(k, t, near) {
   }
   rectBox('steel', solid, 0, top - 0.3, 0, solid.L, 0.6, solid.W); // roof cap
 
-  // Spandrels (one black band per floor) and lit-or-not window panes.
+  // Spandrels (one black band per floor: its face and its underside) and lit-or-not window panes. A lit pane is one
+  // rectangle however many neighbouring windows are lit: the mullions and spandrels in front draw the grid, so
+  // adjacent lit bays and floors merge behind them.
   if (near) {
     let towerIndex = Math.round(Math.abs(t.cx * 7 + t.cz * 13));
     faces.forEach((face, fi) => {
       const bays = Math.round(face.len / m0), pitch = face.len / bays;
       for (const s of sections) {
         if (s.kind !== 'glass') continue;
+        const lit = [];
         for (let floor = 0; floor < s.floors; floor++) {
           const y = s.y0 + floor * f;
-          faceBox('steel', face, 0, face.len, y, y + SPANDREL, GLASS_Q, -0.02);
-          const bias = hash4(towerIndex, fi, Math.round(y), -1);
-          for (let bay = 1; bay < bays - 1; bay++) {
-            if (hash4(towerIndex, fi, Math.round(y), bay) < 0.16 + 0.42 * bias * bias) {
-              panel('glow', face, bay * pitch + 0.09, (bay + 1) * pitch - 0.09, y + SPANDREL, y + f, GLASS_Q + 0.07);
-            }
-          }
+          slab('steel', face, 0, face.len, y, y + SPANDREL, GLASS_Q, -0.02, 'fd');
+          const bias = hash4(towerIndex, fi, Math.round(y), -1), row = [];
+          for (let bay = 0; bay < bays; bay++) row.push(bay >= 1 && bay < bays - 1 && hash4(towerIndex, fi, Math.round(y), bay) < 0.16 + 0.42 * bias * bias);
+          lit.push(row);
+        }
+        for (let floor = 0; floor < s.floors; floor++) for (let bay = 0; bay < bays; bay++) { // greedy rectangles of lit cells
+          if (!lit[floor][bay]) continue;
+          let b1 = bay; while (b1 + 1 < bays && lit[floor][b1 + 1]) b1++;
+          let f1 = floor; while (f1 + 1 < s.floors && lit[f1 + 1].slice(bay, b1 + 1).every(Boolean)) f1++;
+          for (let fl = floor; fl <= f1; fl++) for (let bb = bay; bb <= b1; bb++) lit[fl][bb] = false;
+          panel('glow', face, bay * pitch + 0.09, (b1 + 1) * pitch - 0.09, s.y0 + floor * f + SPANDREL, s.y0 + f1 * f + f, GLASS_Q + 0.07);
         }
       }
     });
@@ -72,9 +79,9 @@ export function buildTower(k, t, near) {
     const step = near ? m0 : GRID_COL, bays = Math.max(1, Math.round(face.len / step)), pitch = face.len / bays;
     for (let i = 1; i < bays; i++) {
       if (near) { // an I-beam: a thin web standing out from the glass and a wider outer flange
-        faceBox('steel', face, i * pitch - 0.03, i * pitch + 0.03, t.lobby, top, GLASS_Q, -0.04);
-        faceBox('steel', face, i * pitch - 0.08, i * pitch + 0.08, t.lobby, top, -0.06, 0);
-      } else faceBox('steel', face, i * pitch - 0.14, i * pitch + 0.14, t.lobby, top, GLASS_Q, 0);
+        slab('steel', face, i * pitch - 0.03, i * pitch + 0.03, t.lobby, top, GLASS_Q, -0.04, 'lr'); // the web: its flanks (the flange hides its front)
+        slab('steel', face, i * pitch - 0.08, i * pitch + 0.08, t.lobby, top, -0.06, 0, 'flr');   // the outer flange
+      } else slab('steel', face, i * pitch - 0.14, i * pitch + 0.14, t.lobby, top, GLASS_Q, 0, 'flr');
     }
   });
   for (const [u, v] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) {
@@ -89,7 +96,7 @@ export function buildTower(k, t, near) {
       for (const face of faces) {
         for (let i = 0; i < count; i++) {
           const y = s.y0 + 0.3 + i * pitch;
-          faceBox('glass', face, 0.6, face.len - 0.6, y, y + 0.42, -0.02, 0.05);
+          slab('glass', face, 0.6, face.len - 0.6, y, y + 0.42, -0.02, 0.05, 'fd');
         }
       }
     }
@@ -99,18 +106,18 @@ export function buildTower(k, t, near) {
   const lobbyGlass = { ...t, L: t.L - 2 * RECESS, W: t.W - 2 * RECESS };
   rectBox('glow', lobbyGlass, 0, (p + t.lobby) / 2, 0, lobbyGlass.L, t.lobby - p, lobbyGlass.W);
   faces.forEach((face, fi) => {
-    faceBox('steel', face, 0, face.len, t.lobby - 1.1, t.lobby, -0.7, 0);
+    slab('steel', face, 0, face.len, t.lobby - 1.1, t.lobby, -0.7, 0, 'fd');
     const bays = Math.max(1, Math.round(face.len / GRID_COL)), pitch = face.len / bays;
     for (let i = 0; i <= bays; i++) {
       if (fi >= 2 && (i === 0 || i === bays)) continue; // the long faces own the corner columns
       const s = Math.min(face.len - COLUMN / 2, Math.max(COLUMN / 2, i * pitch));
-      faceBox('steel', face, s - COLUMN / 2, s + COLUMN / 2, p, t.lobby - 1.1, -COLUMN, 0);
+      slab('steel', face, s - COLUMN / 2, s + COLUMN / 2, p, t.lobby - 1.1, -COLUMN, 0, 'flr');
     }
     if (near) { // lobby glazing frame: a mullion every module and a transom at door height
       const gq = -RECESS + 0.02, lens = face.kind === 'long' ? lobbyGlass.L : lobbyGlass.W;
       const b0 = (face.len - lens) / 2, n = Math.round(lens / m0), pt = lens / n;
-      for (let i = 0; i <= n; i++) faceBox('steel', face, b0 + i * pt - 0.04, b0 + i * pt + 0.04, p, t.lobby - 1.1, gq - 0.04, gq + 0.06);
-      faceBox('steel', face, b0, b0 + lens, p + 2.7, p + 2.82, gq - 0.04, gq + 0.06);
+      for (let i = 0; i <= n; i++) slab('steel', face, b0 + i * pt - 0.04, b0 + i * pt + 0.04, p, t.lobby - 1.1, gq - 0.04, gq + 0.06, 'f');
+      slab('steel', face, b0, b0 + lens, p + 2.7, p + 2.82, gq - 0.04, gq + 0.06, 'fu');
     }
   });
 

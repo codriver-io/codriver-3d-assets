@@ -1,0 +1,65 @@
+{
+  "id": "studio-bell",
+  "name": "Studio Bell, National Music Centre",
+  "kind": "building",
+  "origin": [
+    -114.0530586,
+    51.0445886
+  ],
+  "height": 34,
+  "padM": 60,
+  "frontageBearing": 272,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the sidewalk and plaza level round the building); no absolute altitude. Rotation (2.4 deg clockwise from the cardinal grid) is baked into the geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Outline, orientation and the skybridge plan (8.2 m wide, about 32 m from the hotel street face to the east block, with 7 m flared ends) come from OSM; the 35 m span over 4 Street SE and the walkway about 19.8 m (65 ft) above the roadway are published figures quoted by architecture web summaries. Tower heights (34 m tallest), the split into seven east towers plus the west block and the bridge, the 30 m bridge top, the hotel heights (12.6 and 16.8 m for its three and five storeys), the tile tones (dark gunmetal with a bronze sheen, gold only in the lowest 10 m) and course height, slot windows, the triangular window (3.4 m wide, 15 to 22 m up, beside the bridge landing), the concave coves under the bridge ends and the entrance are estimated from photographs. The tower walls are flat with rounded corners (no barrelling). Tiles are merged horizontal courses, not individual tiles. No signage lettering, no interior, no trees or street furniture.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/studio-bell-near.glb",
+      "bytes": 238428,
+      "triangles": 5129,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -49.03115463256836,
+          0,
+          -20.720142364501953
+        ],
+        "max": [
+          49.00992202758789,
+          34,
+          20.301176071166992
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/studio-bell-far.glb",
+      "bytes": 71308,
+      "triangles": 1220,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -49.03115463256836,
+          0,
+          -20.54706382751465
+        ],
+        "max": [
+          49.00992202758789,
+          34,
+          20.301176071166992
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/studio-bell/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

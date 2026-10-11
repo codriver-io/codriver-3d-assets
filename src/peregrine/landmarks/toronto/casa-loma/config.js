@@ -54,6 +54,16 @@ export const PALETTES = {
   },
 };
 
+// Draw-call budget (docs/3d-toronto-casa-loma.md): design names on the left, the exported material on the right.
+// Near keeps all nine (9 draws). Far folds the 12-triangle porte-cochere opening into the blue-grey lead, which leaves
+// eight; the weight comes down by dropping hidden floors/caps and sub-pixel courses (see the doc), not by merging.
+export const FOLD = {
+  near: {},
+  far: { glass: 'lead' },
+};
+/** The exported material for a design name at a detail level. */
+export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
+
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 at the castle\'s ground-floor terrace and north courtyard on the flat Peregrine basemap; no absolute altitude. The real site stands ~140 m above sea level on the brow of Davenport Hill (66 m above Lake Ontario); that slope is deliberately NOT baked in.',
   attribution: 'Original procedural mesh. Mapped footprints © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',

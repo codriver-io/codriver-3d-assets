@@ -1,0 +1,65 @@
+{
+  "id": "biodome-de-montreal",
+  "name": "Biodôme de Montréal",
+  "kind": "building",
+  "origin": [
+    -73.549709,
+    45.559599
+  ],
+  "height": 33.5,
+  "padM": 102,
+  "frontageBearing": 250,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the Olympic Park esplanade round the building); no absolute altitude. The 33.5 m crown is taken as height over this grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The plan comes from OpenStreetMap and the 33.5 m crown and four abutments from the Parc olympique. The shell profile, arch heights, rib and skylight layout, glazed walls, entrance canopy and colours are estimates from photographs. The Olympic Stadium and its tower, the Planétarium, the access ramps and the landscaping are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/biodome-de-montreal-near.glb",
+      "bytes": 455440,
+      "triangles": 18962,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -88.5,
+          -2.2678986510982213e-7,
+          -71.5999984741211
+        ],
+        "max": [
+          71.69999694824219,
+          33.40011978149414,
+          86.69999694824219
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/biodome-de-montreal-far.glb",
+      "bytes": 75240,
+      "triangles": 2974,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -88.5,
+          0,
+          -71.5999984741211
+        ],
+        "max": [
+          71.69999694824219,
+          33.40011978149414,
+          86.4000015258789
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/biodome-de-montreal/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

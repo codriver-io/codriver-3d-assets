@@ -4,11 +4,11 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal, Paris and Toronto: 54 landmarks and four reusable bridge components,
-124 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
+from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 43 more cities: 212 landmarks and four
+reusable bridge components, 440 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
-**[Explore the public library](https://codriver-3d-assets.pages.dev/)** ·
+**[Explore the public library](https://3d-assets.codriver.io/)** ·
 **[How to contribute](CONTRIBUTING.md)** · **[Licensing](LICENSES.md)**
 
 The library is public, without accounts or passwords. Orbit each model, compare
@@ -36,17 +36,47 @@ Edward Viaduct and the Humber Bay Arch Bridge. Build them with
 `pnpm build:toronto-landmarks`; each folder under
 `src/peregrine/landmarks/toronto/` holds one landmark's generator and mapped footprint.
 
+San Francisco: Golden Gate Bridge, the Bay Bridge West and East spans, the Lefty
+O'Doul Bridge, Transamerica Pyramid, Salesforce Tower, 555 California Street,
+Columbus Tower, Ferry Building, SFMOMA, City Hall, Coit Tower, Sutro Tower, Grace
+Cathedral, St. Mary's Cathedral, the Painted Ladies, Palace of Fine Arts,
+Ghirardelli Square, Alcatraz, Oracle Park, Chase Center, Conservatory of Flowers,
+de Young Museum, California Academy of Sciences and the Legion of Honor. Build them
+with `pnpm build:san-francisco-landmarks`; the collection, frame and budgets are in
+[docs/san-francisco-landmarks.md](docs/san-francisco-landmarks.md).
+
+Calgary: the Calgary Tower, The Bow, Brookfield Place, Telus Sky, Suncor Energy
+Centre, Bankers Hall, the Scotiabank Saddledome, the Central Library, Studio Bell,
+Old City Hall, the Fairmont Palliser, the Canada Olympic Park ski jumps, and the
+Peace, Centre Street and Reconciliation bridges. Build them with
+`pnpm build:calgary-landmarks`; the collection and frame are in
+[docs/calgary-landmarks.md](docs/calgary-landmarks.md).
+
+Québec: the Château Frontenac, Hôtel du Parlement, Notre-Dame de Québec, Édifice
+Marie-Guyart, Pavillon Pierre-Lassonde and Gare du Palais in Québec City; the Casino
+de Montréal, Centre Bell, Marché Bonsecours, Hôtel de Ville, Marie-Reine-du-Monde and
+Biodôme in Montréal; the Canadian Museum of History, the basilicas of Sainte-Anne-de-Beaupré
+and Notre-Dame-du-Cap; and the Pierre-Laporte, Québec, Laviolette, Papineau-Leblanc and
+Dubuc bridges. Build them with `pnpm build:quebec-landmarks`; the collection and frame
+are in [docs/quebec-landmarks.md](docs/quebec-landmarks.md).
+
+<!-- top-cities -->
+Top cities: London: Tower Bridge, Palace of Westminster and Elizabeth Tower, St Paul's Cathedral, The Shard; Amsterdam: Rijksmuseum, Amsterdam Centraal station, EYE Filmmuseum; Madrid: Palacio Real de Madrid, Puerta de Alcalá, Puerta de Europa (KIO Towers); Dallas: Reunion Tower, Bank of America Plaza, Margaret Hunt Hill Bridge, Margaret McDermott Bridge; Washington: Washington Monument, United States Capitol, Lincoln Memorial, Arlington Memorial Bridge; Medellín: Edificio Coltejer, Catedral Metropolitana de Medellín, Palacio de la Cultura Rafael Uribe Uribe; Santa Ana: Old Orange County Courthouse; Garden Grove: Christ Cathedral; Riverside: Mission Inn; Bucharest: Palace of the Parliament, Arcul de Triumf, Romanian Athenaeum; Rome: Colosseum, Altare della Patria, St. Peter's Basilica; San José: Teatro Nacional de Costa Rica, Catedral Metropolitana de San José; Lyon: Basilique Notre-Dame de Fourvière, Tour Part-Dieu (le Crayon), Musée des Confluences; Villeurbanne: Gratte-Ciel de Villeurbanne; Bogotá: Torre Colpatria, Catedral Primada de Colombia; Kansas City: Liberty Memorial (National WWI Museum), Christopher S. Bond Bridge; Vancouver: Lions Gate Bridge, Port Mann Bridge, Burrard Street Bridge, Canada Place, Science World, BC Place, Harbour Centre (Vancouver Lookout), Vancouver House; Victoria: British Columbia Parliament Buildings, Fairmont Empress; Edmonton: Alberta Legislature Building, Walterdale Bridge; Banff: Fairmont Banff Springs; Winnipeg: Canadian Museum for Human Rights; Averøy: Storseisundet Bridge (Atlantic Ocean Road); Narvik: Hålogaland Bridge; Ulvik: Hardanger Bridge; Tromsø: Tromsø Bridge, Arctic Cathedral; Leirfjord: Helgeland Bridge; Halden: Svinesund Bridge; Oslo: Oslo Opera House, Oslo City Hall, Royal Palace, Oslo, Holmenkollbakken, MUNCH (Munch Museum), Akershus Fortress, Astrup Fearnley Museum of Modern Art; Bergen: Bryggen; Trondheim: Nidaros Cathedral; Stavanger: Norwegian Petroleum Museum; Hamar: Vikingskipet (Hamar Olympic Hall); Kristiansand: Kilden Performing Arts Centre; Lærdal: Borgund Stave Church; Larvik: Farris Bad; Toulouse: Pont Neuf (Toulouse), Pont des Catalans, Basilica of Saint-Sernin, Capitole de Toulouse, Dôme de la Grave (Chapelle Saint-Joseph), Cité de l'espace (Ariane 5), Couvent des Jacobins, Pont Saint-Pierre, Pont Saint-Michel, Ponts-Jumeaux; Millau: Millau Viaduct; Carcassonne: Cité de Carcassonne; Albi: Albi Cathedral (Sainte-Cécile); Caen: Viaduc de Calix, Pont de la Fonderie, Abbaye aux Hommes (Saint-Étienne and Hôtel de Ville), Château de Caen, Église Saint-Pierre de Caen, Abbaye aux Dames (La Trinité), Mémorial de Caen; Bénouville: Pegasus Bridge; Honfleur: Pont de Normandie; Bayeux: Bayeux Cathedral (Notre-Dame). Build them with `pnpm build:top-cities-landmarks`; the collection and frame are in [docs/top-cities-landmarks.md](docs/top-cities-landmarks.md).
+<!-- /top-cities -->
+
 ## A look inside
 
-Captured from the current exported GLBs on 29 September 2026. Select an image
+Captured from the current exported GLBs (San Francisco on 1 October 2026). Select an image
 to open the interactive model, compare detail levels or download it.
 
-| Montréal, Paris and Toronto | |
+| Montréal, Paris, Toronto and San Francisco | |
 | --- | --- |
-| [![Samuel-De Champlain — Montréal](docs/screenshots/readme/samuel-de-champlain.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=samuel-de-champlain&view=piers)<br>Samuel-De Champlain — Montréal | [![Biosphère — Montréal](docs/screenshots/readme/biosphere-montreal.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=biosphere-montreal&view=overview)<br>Biosphère — Montréal |
-| [![Tour Eiffel — Paris](docs/screenshots/readme/paris-tour-eiffel.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-tour-eiffel&view=facade)<br>Tour Eiffel — Paris | [![Palais du Louvre and pyramid — Paris](docs/screenshots/readme/paris-louvre.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-louvre&view=facade)<br>Palais du Louvre and pyramid — Paris |
-| [![Grand Palais glass roof — Paris](docs/screenshots/readme/paris-grand-palais.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-grand-palais&view=roof)<br>Grand Palais glass roof — Paris | [![Musée d’Orsay — Paris](docs/screenshots/readme/paris-musee-orsay.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-musee-orsay&view=facade)<br>Musée d’Orsay — Paris |
-| [![Hôtel de Ville — Paris](docs/screenshots/readme/paris-hotel-de-ville.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=paris-hotel-de-ville&view=facade)<br>Hôtel de Ville — Paris | [![CN Tower — Toronto](docs/screenshots/readme/cn-tower.png)](https://codriver-3d-assets.pages.dev/asset-preview.html?asset=cn-tower&view=overview)<br>CN Tower — Toronto |
+| [![Samuel-De Champlain — Montréal](docs/screenshots/readme/samuel-de-champlain.png)](https://3d-assets.codriver.io/asset-preview.html?asset=samuel-de-champlain&view=piers)<br>Samuel-De Champlain — Montréal | [![Biosphère — Montréal](docs/screenshots/readme/biosphere-montreal.png)](https://3d-assets.codriver.io/asset-preview.html?asset=biosphere-montreal&view=overview)<br>Biosphère — Montréal |
+| [![Tour Eiffel — Paris](docs/screenshots/readme/paris-tour-eiffel.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-tour-eiffel&view=facade)<br>Tour Eiffel — Paris | [![Palais du Louvre and pyramid — Paris](docs/screenshots/readme/paris-louvre.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-louvre&view=facade)<br>Palais du Louvre and pyramid — Paris |
+| [![Grand Palais glass roof — Paris](docs/screenshots/readme/paris-grand-palais.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-grand-palais&view=roof)<br>Grand Palais glass roof — Paris | [![Musée d’Orsay — Paris](docs/screenshots/readme/paris-musee-orsay.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-musee-orsay&view=facade)<br>Musée d’Orsay — Paris |
+| [![Hôtel de Ville — Paris](docs/screenshots/readme/paris-hotel-de-ville.png)](https://3d-assets.codriver.io/asset-preview.html?asset=paris-hotel-de-ville&view=facade)<br>Hôtel de Ville — Paris | [![CN Tower — Toronto](docs/screenshots/readme/cn-tower.png)](https://3d-assets.codriver.io/asset-preview.html?asset=cn-tower&view=overview)<br>CN Tower — Toronto |
+| [![Golden Gate Bridge — San Francisco](docs/screenshots/readme/golden-gate-bridge.png)](https://3d-assets.codriver.io/asset-preview.html?asset=golden-gate-bridge&view=overview)<br>Golden Gate Bridge — San Francisco | [![Painted Ladies — San Francisco](docs/screenshots/readme/painted-ladies.png)](https://3d-assets.codriver.io/asset-preview.html?asset=painted-ladies&view=postcard)<br>Painted Ladies — San Francisco |
+| [![Transamerica Pyramid — San Francisco](docs/screenshots/readme/transamerica-pyramid.png)](https://3d-assets.codriver.io/asset-preview.html?asset=transamerica-pyramid&view=overview)<br>Transamerica Pyramid — San Francisco | [![Bay Bridge East Span — San Francisco](docs/screenshots/readme/bay-bridge-east-span.png)](https://3d-assets.codriver.io/asset-preview.html?asset=bay-bridge-east-span&view=overview)<br>Bay Bridge East Span — San Francisco |
 
 ## Use a model
 
@@ -130,15 +160,42 @@ and [submission checklist](docs/model-submission.md) document the handoff.
 
 ## Deploy
 
-With Cloudflare Pages access configured locally:
+The library is served at [3d-assets.codriver.io](https://3d-assets.codriver.io) from the
+`codriver-3d-assets` Cloudflare Pages project (`codriver-3d-assets.pages.dev` keeps working).
+Merging to `main` deploys it: once the *Validate library* workflow passes on `main`, the
+*Deploy library* workflow builds `dist/` and uploads it. A maintainer can redeploy by running
+that workflow by hand, or from a machine with Cloudflare access:
 
 ```sh
-pnpm deploy
+pnpm run deploy
 ```
 
-This uses direct upload to the `codriver-3d-assets` Pages project. GitHub stores
-the public source; publishing a source commit alone does not deploy Pages.
-No credentials are stored in this repository.
+The workflow reads the `CLOUDFLARE_API_TOKEN` secret, which pull-request runs never see; no
+credential is stored in this repository.
+
+## Analytics
+
+The public site counts visits, opened models and model downloads with Codriver's self-hosted
+[Plausible](https://plausible.io) instance (`stats.codriver.io`): no cookies and no personal
+data. Only the production hosts load it, so local builds, previews and forks send nothing
+(`scripts/analytics.mjs`, `src/analytics.js`). Custom goals are `Model Open`
+(`asset`, `city`, `kind`), `Download` (`asset`, `detail`, `city`, `kind`, `from`),
+and `Open In App` (`asset`, `city`, `kind`). A maintainer must add the **Open In App**
+goal in Plausible to count the new outbound links.
+
+The library groups models by continent → country → city, with province/state
+between country and city in North America. `prototypes/assets3d/places.json` covers
+current catalog cities and every city present in the planned top-cities input;
+`pnpm check` rejects catalog cities without geography. Place filters are shareable:
+`?continent=Europe`, `?country=Canada`, `?region=Québec`, and existing `?city=Paris`
+links work together with `kind`, `q` and `asset`.
+
+Each selected model links to `https://app.codriver.io/?at=<lat>,<lng>&zoom=17&bearing=-25&pitch=60&view=cityscape`
+(bridges use zoom 16 and bearing 25), using its manifest origin. Cityscape requires
+Codriver Premium; the app validates the camera values and its existing entitlement,
+opens in free-look without navigation, and consumes the parameters. GPS updates
+leave the linked place on screen until Recenter. The standalone model viewer does
+not establish Cityscape or Full 3D world integration.
 
 ### Paris street-level revision
 

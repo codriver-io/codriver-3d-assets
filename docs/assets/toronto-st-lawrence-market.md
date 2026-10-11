@@ -57,7 +57,9 @@ The market hall rebuilt in 1902-04 to John William Siddall's design (city archit
 
 ## Verification
 
-Cost: near 18 674 triangles, 11 draws, 1.10 MB; far 3 566 triangles, 11 draws, 0.22 MB (budgets 160 000/48 and 45 000/14).
+Cost: near 18 674 triangles, 11 draws, 1.10 MB; far 3 566 triangles, 7 draws, 0.21 MB (budgets: building near 60 000 / 14 / 2.5 MB, far 12 000 / 8 / 500 KB).
+
+Draw budget: far folds the sill glass into the lit hall glazing (`glow`), the gold lettering and the off-white fascia into `buff`, and the gable cladding into the roof brown (`FOLD` in `config.js`); near keeps all eleven. Lantern rails and mullions, the fascia board and the pent eave were re-dimensioned so no two materials share a plane (coplanar overlap 133 m2 to 14 m2 over 14 faces).
 
 Screenshots looked at (all in ignored `local-scratch/shots/st-lawrence-market/`), procedural and exported GLB, compared with the Commons photographs listed in the catalog record: front (`facade`), Front Street corner (`entrance`, `ne-corner`), west and east long walls (`side`, `structure`), Esplanade end and colonnade (`colonnade`, `sw-corner`), roof and lantern from above (`roof`, `overview`), pavilion close-up (`porch`), near/far, light/dark (`--theme dark`, plus the layer's own shading with `--runtime`). Changes made because of them: the west-side piers were rendering inside-out (negative box size) and were fixed; windows were reshaped from semicircular to shallow segmental heads on the long walls after the detail photograph; the deck was lowered so the sills sit ~1.7 m above it as in the February 2026 photograph; awnings and shopfront panels were added; the shopfront panels' z-fighting with the dark wall was removed; the roof and cladding were darkened; the far remnant's single glass block was split into two window bands.
 

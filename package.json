@@ -32,6 +32,10 @@
     "build:tour-de-l-horloge": "node scripts/build-tour-de-l-horloge.mjs",
     "build:paris-palaces": "node scripts/build-paris-palaces.mjs",
     "build:toronto-landmarks": "node scripts/build-toronto-landmarks.mjs --all",
+    "build:san-francisco-landmarks": "node scripts/build-san-francisco-landmarks.mjs --all",
+    "build:calgary-landmarks": "node scripts/build-calgary-landmarks.mjs --all",
+    "build:quebec-landmarks": "node scripts/build-quebec-landmarks.mjs --all",
+    "build:top-cities-landmarks": "node scripts/build-top-cities-landmarks.mjs --all",
     "test:browser": "node scripts/test-browser.mjs",
     "thumbnails:build": "node scripts/capture-thumbnails.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",
@@ -39,6 +43,7 @@
     "test:geometry": "node --test src/peregrine/landmarks/paris-fidelity.test.js"
   },
   "dependencies": {
+    "polygon-clipping": "^0.15.7",
     "three": "0.170.0"
   },
   "devDependencies": {

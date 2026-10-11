@@ -51,7 +51,7 @@ export function create({ detail = 'near' } = {}) {
 
   // A solid body between two stations across [dl, dr] from a fixed base up to the slab, with the
   // top and both faces (used for the abutments, where the deck meets the ground).
-  function solid(mat, s0, s1, dl, dr, base, topOff = -0.12) {
+  function solid(mat, s0, s1, dl, dr, base, topOff = -0.5) {   // top inside the 0.9 m slab, so it is never coplanar with the road layers
     const n = Math.max(2, Math.ceil((s1 - s0) / 4)), pos = [], idx = [];
     for (let i = 0; i <= n; i++) {
       const s = s0 + (s1 - s0) * i / n, top = Math.max(h(s) + topOff, base + 0.02);
@@ -110,12 +110,16 @@ export function create({ detail = 'near' } = {}) {
 
   // ---- The deck: slab, edge beams, sidewalks, parapets, roadway -------------------------------
   const [wA0, wA1] = WEST_RUN, [eA0, eA1] = EAST_RUN;
-  strips('concrete', 0, L, EDGE_N + 0.8, EDGE_S - 0.8, -0.12, 0.9);      // slab between the edge beams (no coplanar faces)
+  // The slab and girder tops are hidden under the asphalt and sidewalks: they sit 18 cm below the road layers
+  // (their bottoms are unchanged), so no road layer ever grazes a structural face. The edge beams stay at -0.12:
+  // the sidewalks and parapets rest on them.
+  const SLAB_TOP = -0.3;
+  for (const [a, c] of [[0, wA0], [wA1, eA0], [eA1, L]]) strips('concrete', a, c, EDGE_N + 0.8, EDGE_S - 0.8, SLAB_TOP, 1.02 + SLAB_TOP);   // slab between the edge beams
   for (const [d0, d1] of [[EDGE_N, EDGE_N + 0.8], [EDGE_S - 0.8, EDGE_S]]) strips('concrete', 0, L, d0, d1, -0.12, 2.0);
   // Beyond the last arches: a solid girder on evenly spaced concrete piers while the ramp is high,
   // then a solid ramp on fill down to the approach road.
   for (const [a, c] of [[wA0, wA1], [eA0, eA1]]) {
-    strips('concrete', a, c, EDGE_N + 0.8, EDGE_S - 0.8, -0.12, 2.0);
+    strips('concrete', a, c, EDGE_N + 0.8, EDGE_S - 0.8, SLAB_TOP, 2.12 + SLAB_TOP);
     const n = Math.max(1, Math.round((c - a) / 19));
     for (let i = 1; i < n; i++) pier(a + (c - a) * i / n, { base: 4.0, top: 3.4, across: [21, 19.8], cap: [4.2, 25.0], capH: 1.4 });
   }
@@ -126,10 +130,13 @@ export function create({ detail = 'near' } = {}) {
   strips('concrete', 0, L, EDGE_N + 0.55, KERB_N, 0.15, 0.27);            // north sidewalk
   strips('stone', 0, L, EDGE_S - 0.55, EDGE_S, 1.05, 1.17);               // parapets, red-aggregate stone, flush with the edge beam below
   strips('stone', 0, L, EDGE_N, EDGE_N + 0.55, 1.05, 1.17);
-  if (near) for (const [d0, d1] of [[EDGE_N - 0.16, EDGE_N + 0.8], [EDGE_S - 0.8, EDGE_S + 0.16]]) strips('stone', 0, L, d0, d1, -0.12, 0.34);   // cornice under the parapet
+  // cornice under the parapet: only the 16 cm that projects beyond the edge beam (the rest lies inside it, and its
+  // top and inner face would be coplanar with the beam's)
+  if (near) for (const [d0, d1] of [[EDGE_N - 0.16, EDGE_N], [EDGE_S, EDGE_S + 0.16]]) strips('stone', 0, L, d0, d1, -0.12, 0.34);
 
   // Lane paint (the HD pavement's own paint replaces it in the app): edge lines, dashes, yellow centre.
-  const line = (mat, d, w = 0.13, a = 0, c = L) => strips(mat, a, c, d - w / 2, d + w / 2, 0.025, 0);
+  // The yellow sits 5 cm up, not 2.5: it was the one marking that grazed the asphalt's plane on the 35 % ramps.
+  const line = (mat, d, w = 0.13, a = 0, c = L) => strips(mat, a, c, d - w / 2, d + w / 2, mat === 'yellow' ? 0.05 : 0.025, 0);
   const CENTRE = KERB_N + 1.5 + 6.6;   // -1.1: two westbound lanes left of it, three eastbound right
   line('paint', KERB_N + 1.5); line('paint', KERB_S - 1.5);
   line('yellow', CENTRE - 0.1, 0.11); line('yellow', CENTRE + 0.1, 0.11);
@@ -217,13 +224,17 @@ export function create({ detail = 'near' } = {}) {
       put(g, 'veil', 0, 1);
     }
   }
-  if (near) {
+  {
     let side = 0;
     for (let s = STRUCTURE_START + 14; s < STRUCTURE_END - 8; s += 30) {
       const edge = side++ % 2 ? KERB_N - 0.35 : KERB_S + 0.35, o = edge > C0 ? -1 : 1, ck = chunk(s);
-      member('rail', at(s, edge, 0.15), at(s, edge, 9.2), 0.22, 0.22, ck);
-      member('rail', at(s, edge, 9.2), at(s, edge + o * 2.3, 9.75), 0.14, 0.16, ck);
-      b.box('lamp', s, edge + o * 2.3, h(s) + 9.7, 0.95, 0.4, 0.22, ck);
+      // The lamp standards are the tallest part of the bridge (50 m, the Veil tops out at 46): the far LOD keeps each
+      // as one bare post to the arm's height, so its silhouette height matches the near one.
+      member('rail', at(s, edge, 0.15), at(s, edge, near ? 9.2 : 9.75), 0.22, 0.22, ck);
+      if (near) {
+        member('rail', at(s, edge, 9.2), at(s, edge + o * 2.3, 9.75), 0.14, 0.16, ck);
+        b.box('lamp', s, edge + o * 2.3, h(s) + 9.7, 0.95, 0.4, 0.22, ck);
+      }
     }
   }
   return b.finish();

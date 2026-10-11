@@ -1,0 +1,66 @@
+{
+  "id": "calgary-city-hall",
+  "name": "Calgary City Hall (Old City Hall)",
+  "kind": "building",
+  "origin": [
+    -114.05735267,
+    51.04606148
+  ],
+  "height": 32.7,
+  "padM": 30,
+  "frontageBearing": 2,
+  "rotationDeg": 2.079,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The plinth stands on y=0 on all sides (downtown is nearly flat here).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Tower height (32.7 m, \"more than 32 m / 100 ft\"), four storeys, sandstone, round-arched entrance on four red granite columns, steep tile roofs and the mapped outline are sourced. Storey heights, cornice and roof heights, tower stage proportions, dial size, window counts, dormer and cupola positions, the plain flat-roofed two-storey wing that fills the mapped east bump, the tiled crown over the centre and the rear and side elevations are estimated from photographs; surrounds are drawn in relief only on the street faces.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/calgary-city-hall-near.glb",
+      "bytes": 533028,
+      "triangles": 9179,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -23.06005096435547,
+          -2.3841858265427618e-8,
+          -20.10637855529785
+        ],
+        "max": [
+          21.049489974975586,
+          32.70000076293945,
+          17.067628860473633
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/calgary-city-hall-far.glb",
+      "bytes": 75316,
+      "triangles": 1074,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -23.06005096435547,
+          -2.3841858265427618e-8,
+          -20.10637855529785
+        ],
+        "max": [
+          21.049489974975586,
+          32.70000076293945,
+          17.067628860473633
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/calgary-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

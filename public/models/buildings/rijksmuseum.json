@@ -1,0 +1,65 @@
+{
+  "id": "rijksmuseum",
+  "name": "Rijksmuseum",
+  "kind": "building",
+  "origin": [
+    4.8851455,
+    52.3600098
+  ],
+  "height": 54,
+  "padM": 100,
+  "frontageBearing": 39.32,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Tower tops follow the 3DBAG height of 54 m (OSM roof:height 20 on a 54 m part). The 1885 delivery height is 52.90 m. Gallery ridges are the tagged 27 m. The passage is about half the central bay (10.2 m, spring 1.15 m, crown 6.25 m), with a stone archivolt. The north gable is crow-stepped with a tall arched window; the Museumplein front is a continuous slate roof, a rectangular ridge skylight and a horizontal arcade, not a second stepped gable. North towers carry clock dials and a hip, lantern and needle on both LODs. Roof glass is blue-grey by day and a faint cool tone at night. The mapped 17 m part south of the arch is a low plinth: the Museumplein elevation shows that ground open.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rijksmuseum-near.glb",
+      "bytes": 241232,
+      "triangles": 4295,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -75.83129119873047,
+          0,
+          -68.89385986328125
+        ],
+        "max": [
+          80.73233795166016,
+          54,
+          69.44480895996094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rijksmuseum-far.glb",
+      "bytes": 150520,
+      "triangles": 2622,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -75.83129119873047,
+          0,
+          -68.89385986328125
+        ],
+        "max": [
+          80.73233795166016,
+          54,
+          69.44480895996094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rijksmuseum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

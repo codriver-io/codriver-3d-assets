@@ -1,0 +1,65 @@
+{
+  "id": "columbus-tower",
+  "name": "Columbus Tower (Sentinel Building)",
+  "kind": "building",
+  "origin": [
+    -122.4050486,
+    37.7965438
+  ],
+  "height": 29.8,
+  "padM": 20,
+  "frontageBearing": 330,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude (the OSM node reads ele=8 m). The model stands on the sidewalk at its own ground floor.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Wedge outline and turret size are mapped and the 29 m height (OSM) and eight storeys (SF Planning) are published; storey height (about 2.9 m, ground floor 4.2 m), oriel and window sizes, the spire tip and the fire escape are estimated from photographs. The party wall to 900 Kearny is drawn plain. Awning and fire escape overhang the footprint slightly.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/columbus-tower-near.glb",
+      "bytes": 679576,
+      "triangles": 12302,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -7.814584255218506,
+          0,
+          -10.536437034606934
+        ],
+        "max": [
+          11.854613304138184,
+          29.799999237060547,
+          7.298635482788086
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/columbus-tower-far.glb",
+      "bytes": 153988,
+      "triangles": 2693,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.840214729309082,
+          0,
+          -10.359051704406738
+        ],
+        "max": [
+          11.996984481811523,
+          29.799999237060547,
+          7.298635482788086
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/columbus-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "gratte-ciel-villeurbanne",
+  "name": "Gratte-Ciel de Villeurbanne",
+  "kind": "building",
+  "origin": [
+    4.87947,
+    45.76793
+  ],
+  "height": 65,
+  "padM": 190,
+  "frontageBearing": 87.8,
+  "gridAngle": 0.038397243543875255,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid buildings at local grade y=0; no absolute altitude or DEM baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1934 residential ensemble: two northern gateway towers and four mapped apartment wings; excludes Hôtel de Ville, TNP, streets, shops signage and courtyard neighbours. SVU publishes conflicting 61/65 m tower figures; 65 m selected from its key-dimensions table. Terrace heights, glazing rhythm, crown setbacks and roof rails estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gratte-ciel-villeurbanne-near.glb",
+      "bytes": 1903984,
+      "triangles": 36384,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -45.63020324707031,
+          0,
+          -179.08224487304688
+        ],
+        "max": [
+          54.04280090332031,
+          65.02458190917969,
+          111.63414764404297
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gratte-ciel-villeurbanne-far.glb",
+      "bytes": 419924,
+      "triangles": 8322,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -45.66642379760742,
+          0,
+          -179.08224487304688
+        ],
+        "max": [
+          53.96717834472656,
+          65.02458190917969,
+          111.56417846679688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gratte-ciel-villeurbanne/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

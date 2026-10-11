@@ -1,0 +1,66 @@
+{
+  "id": "burrard-street-bridge",
+  "name": "Burrard Street Bridge",
+  "kind": "bridge",
+  "origin": [
+    -123.1368002926185,
+    49.275523599305906
+  ],
+  "height": 40.65,
+  "padM": 400,
+  "frontageBearing": 64.4,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat-map river/ground grade. Estimated deck 24 m; no DEM or Mercator stretch baked in. Absolute-deck terrain policy keeps the central structure rigid and fits ramp ends/support feet to terrain.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "SEABC/IABSE 2017: 96.2 m main through-truss; four marine deck-truss spans 56.8/70.7/70.7/56.3 m. Dossier/Wikipedia gives 89.6 m; differing span conventions unresolved. Deck height, truss rise, portal dimensions and ornament proportions are photographic estimates. Four vehicle lanes, two 2.5 m protected cycle lanes, two 2.6 m sidewalks; OSM still tags five vehicle lanes. Extended mapped approaches give a 1042.8 m fitting corridor, versus the 865.0 m mapped bridge and published 836 m original structure. Simplified busts, ship prows and coat of arms; texture-free.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/burrard-street-bridge-near.glb",
+      "bytes": 4081564,
+      "triangles": 82144,
+      "drawCalls": 18,
+      "bounds": {
+        "min": [
+          -519.3148193359375,
+          -2.0927746295928955,
+          -250.4691162109375
+        ],
+        "max": [
+          407.7944641113281,
+          40.474998474121094,
+          265.8768310546875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/burrard-street-bridge-far.glb",
+      "bytes": 957080,
+      "triangles": 23636,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -519.3148193359375,
+          -2.0927746295928955,
+          -250.4691162109375
+        ],
+        "max": [
+          407.7944641113281,
+          40.474998474121094,
+          265.8768310546875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/burrard-street-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

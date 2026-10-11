@@ -1,0 +1,227 @@
+{
+  "id": "gare-du-palais",
+  "name": "Gare du Palais",
+  "kind": "building",
+  "origin": [
+    -71.2139626,
+    46.81756
+  ],
+  "height": 20.4,
+  "padM": 60,
+  "frontageBearing": 157,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -71.2136989,
+          46.8180077
+        ],
+        [
+          -71.2137712,
+          46.8176205
+        ],
+        [
+          -71.2137625,
+          46.8176034
+        ],
+        [
+          -71.2136702,
+          46.8176318
+        ],
+        [
+          -71.2135694,
+          46.8174605
+        ],
+        [
+          -71.2137207,
+          46.8174167
+        ],
+        [
+          -71.2137272,
+          46.8173862
+        ],
+        [
+          -71.2138335,
+          46.8173534
+        ],
+        [
+          -71.2139064,
+          46.8173349
+        ],
+        [
+          -71.2139454,
+          46.8173516
+        ],
+        [
+          -71.2141009,
+          46.8173065
+        ],
+        [
+          -71.2141632,
+          46.8174087
+        ],
+        [
+          -71.2146993,
+          46.8174551
+        ],
+        [
+          -71.2146682,
+          46.8176236
+        ],
+        [
+          -71.214061,
+          46.8175711
+        ],
+        [
+          -71.2140443,
+          46.8176616
+        ],
+        [
+          -71.2139713,
+          46.8180364
+        ],
+        [
+          -71.2137761,
+          46.8180162
+        ],
+        [
+          -71.2136989,
+          46.8180077
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -71.2136989,
+        46.8180077
+      ],
+      [
+        -71.2137712,
+        46.8176205
+      ],
+      [
+        -71.2137625,
+        46.8176034
+      ],
+      [
+        -71.2136702,
+        46.8176318
+      ],
+      [
+        -71.2135694,
+        46.8174605
+      ],
+      [
+        -71.2137207,
+        46.8174167
+      ],
+      [
+        -71.2137272,
+        46.8173862
+      ],
+      [
+        -71.2138335,
+        46.8173534
+      ],
+      [
+        -71.2139064,
+        46.8173349
+      ],
+      [
+        -71.2139454,
+        46.8173516
+      ],
+      [
+        -71.2141009,
+        46.8173065
+      ],
+      [
+        -71.2141632,
+        46.8174087
+      ],
+      [
+        -71.2146993,
+        46.8174551
+      ],
+      [
+        -71.2146682,
+        46.8176236
+      ],
+      [
+        -71.214061,
+        46.8175711
+      ],
+      [
+        -71.2140443,
+        46.8176616
+      ],
+      [
+        -71.2139713,
+        46.8180364
+      ],
+      [
+        -71.2137761,
+        46.8180162
+      ],
+      [
+        -71.2136989,
+        46.8180077
+      ]
+    ],
+    "datum": "median",
+    "featherM": 6
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the forecourt level in front of the entrance, about 6 to 7 m above sea level (public DEM 5.6 to 7.1 m under the station); the Lower Town, the tracks and the plaza are not modelled. Full 3D world uses an explicit terrain pad (terrainPad): the station outline held at the median DEM of its outline with a 6 m feather.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the mapped outline and the three building:part footprints (north wing, west wing, main block, with their 2 and 4 levels); the 1915 date and architect. Estimated from photographs: every height, the roof profiles, the clock, towers, glass wall and canopy, dormers, windows and chimneys. The forecourt, fountain and street furniture are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gare-du-palais-near.glb",
+      "bytes": 264664,
+      "triangles": 5543,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -56.44529724121094,
+          0,
+          -53.054012298583984
+        ],
+        "max": [
+          30.234676361083984,
+          20.399999618530273,
+          28.41815948486328
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gare-du-palais-far.glb",
+      "bytes": 59504,
+      "triangles": 1014,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -56.190101623535156,
+          0,
+          -52.776309967041016
+        ],
+        "max": [
+          29.976530075073242,
+          20.399999618530273,
+          28.160011291503906
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/gare-du-palais/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

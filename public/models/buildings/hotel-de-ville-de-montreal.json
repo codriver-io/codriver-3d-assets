@@ -1,0 +1,67 @@
+{
+  "id": "hotel-de-ville-de-montreal",
+  "name": "Hôtel de Ville de Montréal",
+  "kind": "building",
+  "origin": [
+    -73.5541401,
+    45.5088246
+  ],
+  "height": 40,
+  "padM": 52,
+  "frontageBearing": 119.45,
+  "rotationDeg": 29.45,
+  "axisS": -0.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap: the rue Notre-Dame pavement at the foot of the front stair. The ground falls about 5 m toward the Champ-de-Mars; the public DEM does not show it, so the rear block is modelled as a terrace at +4.8 m, with a slope skirt: its walls run down to -2.5 m (the only geometry below y=0) so they stand on a ground that does fall instead of floating. No absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: the mapped outlines of the City Hall (way 20919180) and of the rear block (way 396654637); five storeys; five-part symmetrical front with a projecting central pavilion; grey stone, copper roofs with mansards and dormers, two chimneys; a 30 ft (9.1 m) campanile; the 1932-34 rear extension toward the Champ-de-Mars. Estimated from photographs: storey and cornice heights (cornice 15.5 m, ridge 24.4 m, total 40 m, good to about 4 m), bay counts and sizes, column and window sizes, the roof profile, the rear block height. Sculpture, carved relief, the bronze doors, lettering, flags and the front parterres are abstracted or left out.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/hotel-de-ville-de-montreal-near.glb",
+      "bytes": 491496,
+      "triangles": 9591,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.55244445800781,
+          -2.5,
+          -47.79884719848633
+        ],
+        "max": [
+          35.045997619628906,
+          40,
+          40.83115005493164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/hotel-de-ville-de-montreal-far.glb",
+      "bytes": 177536,
+      "triangles": 3360,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.55244445800781,
+          -2.5,
+          -47.79884719848633
+        ],
+        "max": [
+          35.045997619628906,
+          40,
+          40.83115005493164
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/hotel-de-ville-de-montreal/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

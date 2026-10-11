@@ -4,6 +4,19 @@ import * as THREE from 'three';
 // building's own frame (+X along the south front toward the east end, +Z toward
 // the front, i.e. the facade faces +Z, north is -Z) and rotated onto the mapped
 // footprint once, at the very end of geometry.js. `b` is an assetBuilder.
+// Drop the back cap (it faces -z, flush against the wall) of a wall-local extrusion.
+function dropBack(g) {
+  const p = g.attributes.position, n = g.attributes.normal, P = [], N = [];
+  for (let i = 0; i < p.count; i += 3) {
+    if (n.getZ(i) < -0.5 && n.getZ(i + 1) < -0.5 && n.getZ(i + 2) < -0.5) continue;
+    for (let k = 0; k < 3; k++) { P.push(p.getX(i + k), p.getY(i + k), p.getZ(i + k)); N.push(n.getX(i + k), n.getY(i + k), n.getZ(i + k)); }
+  }
+  const out = new THREE.BufferGeometry();
+  out.setAttribute('position', new THREE.Float32BufferAttribute(P, 3)); out.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
+  g.dispose();
+  return out;
+}
+
 export function kit(b, near) {
   const put = (g, m) => b.put(g, m);
   const V = (x, y, z) => new THREE.Vector3(x, y, z);
@@ -25,7 +38,21 @@ export function kit(b, near) {
     g.computeVertexNormals(); put(g, material);
   }
 
-  const box = (m, x0, x1, y0, y1, z0, z1) => b.box(m, [(x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2], [x1 - x0, y1 - y0, z1 - z0]);
+  // Axis-aligned box. `omit` lists faces that nobody sees (hidden against the ground or another solid):
+  // d = down (-y), u = up (+y), e / w = +x / -x, s / n = +z / -z. Flat shading, four vertices a face.
+  function box(m, x0, x1, y0, y1, z0, z1, omit = '') {
+    const P = [], N = [], I = [];
+    const face = (key, n, a, c, d, e) => { if (omit.includes(key)) return; const o = P.length / 3; P.push(...a, ...c, ...d, ...e); for (let i = 0; i < 4; i++) N.push(...n); I.push(o, o + 1, o + 2, o, o + 2, o + 3); };
+    face('s', [0, 0, 1], [x0, y0, z1], [x1, y0, z1], [x1, y1, z1], [x0, y1, z1]);
+    face('n', [0, 0, -1], [x1, y0, z0], [x0, y0, z0], [x0, y1, z0], [x1, y1, z0]);
+    face('e', [1, 0, 0], [x1, y0, z1], [x1, y0, z0], [x1, y1, z0], [x1, y1, z1]);
+    face('w', [-1, 0, 0], [x0, y0, z0], [x0, y0, z1], [x0, y1, z1], [x0, y1, z0]);
+    face('u', [0, 1, 0], [x0, y1, z1], [x1, y1, z1], [x1, y1, z0], [x0, y1, z0]);
+    face('d', [0, -1, 0], [x0, y0, z0], [x1, y0, z0], [x1, y0, z1], [x0, y0, z1]);
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3)); g.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3)); g.setIndex(I);
+    put(g, m);
+  }
   const boxR = (m, cx, cy, cz, w, h, d, ang) => b.box(m, [cx, cy, cz], [w, h, d], ang);
 
   // Hipped roof over the rectangle x0..x1, z0..z1 from eave height y0. The ridge runs
@@ -77,56 +104,69 @@ export function kit(b, near) {
     const lo = at - t / 2, hi = at + t / 2, p = axis === 'z';
     const P = (a, y, c) => (p ? [a, y, c] : [c, y, a]);
     solid(m, [P(a0 - grow, y0, lo), P(a1 + grow, y0, lo), P(mid, yt, lo), P(a0 - grow, y0, hi), P(a1 + grow, y0, hi), P(mid, yt, hi)],
-      [[0, 1, 2], [3, 4, 5], [0, 1, 4, 3], [1, 2, 5, 4], [2, 0, 3, 5]]);
+      [[0, 1, 2], [3, 4, 5], [1, 2, 5, 4], [2, 0, 3, 5]]); // no foot: it stands on the wall and the roof
   }
 
   // Lofted dome from a [radius, height] profile (bottom to top), centred at (x, z).
-  function lathe(m, x, y0, z, profile, seg = near ? 20 : 10) {
-    const g = new THREE.LatheGeometry(profile.map(([r, h]) => new THREE.Vector2(r, h)), seg);
+  function lathe(m, x, y0, z, profile, seg = near ? 20 : 10, phiStart = 0, phiLength = Math.PI * 2) {
+    const g = new THREE.LatheGeometry(profile.map(([r, h]) => new THREE.Vector2(r, h)), seg, phiStart, phiLength);
     g.translate(x, y0, z); put(g, m);
   }
-  function cyl(m, x, y0, y1, z, r0, r1 = r0, seg = near ? 14 : 8) {
-    const g = new THREE.CylinderGeometry(r1, r0, y1 - y0, seg, 1);
+  // Cylinder (r0 at the bottom, r1 at the top). `caps` is 't', 'b', 'tb' or '': a cap that sits on or under
+  // another solid is never drawn.
+  function cyl(m, x, y0, y1, z, r0, r1 = r0, seg = near ? 14 : 8, caps = 'tb') {
+    const g = new THREE.CylinderGeometry(r1, r0, y1 - y0, seg, 1, true);
     g.translate(x, (y0 + y1) / 2, z); put(g, m);
+    if (caps.includes('t') && r1 > 0) put(new THREE.CircleGeometry(r1, seg).rotateX(-Math.PI / 2).translate(x, y1, z), m);
+    if (caps.includes('b') && r0 > 0) put(new THREE.CircleGeometry(r0, seg).rotateX(Math.PI / 2).translate(x, y0, z), m);
   }
   function cone(m, x, y0, y1, z, r, seg = 8) {
-    const g = new THREE.ConeGeometry(r, y1 - y0, seg);
+    const g = new THREE.ConeGeometry(r, y1 - y0, seg, 1, true); // open: a cone always stands on something
     g.translate(x, (y0 + y1) / 2, z); put(g, m);
   }
 
   // Arch outline (a semicircular head) in a local x/y plane, base at y = 0.
-  function archShape(w, h, rise = null) {
+  function archShape(w, h, rise = null, segs = near ? 10 : 5) {
     const r = w / 2, s = rise == null ? r : rise, sh = new THREE.Shape();
     sh.moveTo(-r, 0); sh.lineTo(r, 0); sh.lineTo(r, h - s);
-    const n = near ? 10 : 5;
+    const n = segs;
     for (let i = 1; i <= n; i++) { const a = Math.PI * i / n; sh.lineTo(Math.cos(a) * r, h - s + Math.sin(a) * s); }
     sh.lineTo(-r, 0); return sh;
   }
   // Place a local geometry (normal +Z) on a wall: face angle `ang` (0 faces +Z, PI faces -Z,
   // PI/2 faces +X, -PI/2 faces -X), with its origin at (x, y, z).
   const onWall = (g, x, y, z, ang) => { g.rotateY(ang); g.translate(x, y, z); return g; };
-  // A window: dark glass pane with a dressed-stone head and sill. `arch` gives a round head.
+  // Wall-local box (x along the wall, y up, z out of it) with only the faces that can be seen: f front, u up,
+  // d down, l left, r right. The back stands against the wall and is never drawn.
+  function wbox(m, sa, sb, y0, y1, d0, d1, faces, x, y, z, ang) {
+    const P = [], N = [], I = [];
+    const q = (a, c, d, e, n) => { const o = P.length / 3; P.push(...a, ...c, ...d, ...e); for (let i = 0; i < 4; i++) N.push(...n); I.push(o, o + 1, o + 2, o, o + 2, o + 3); };
+    if (faces.includes('f')) q([sa, y0, d1], [sb, y0, d1], [sb, y1, d1], [sa, y1, d1], [0, 0, 1]);
+    if (faces.includes('u')) q([sa, y1, d1], [sb, y1, d1], [sb, y1, d0], [sa, y1, d0], [0, 1, 0]);
+    if (faces.includes('d')) q([sa, y0, d0], [sb, y0, d0], [sb, y0, d1], [sa, y0, d1], [0, -1, 0]);
+    if (faces.includes('l')) q([sa, y0, d0], [sa, y0, d1], [sa, y1, d1], [sa, y1, d0], [-1, 0, 0]);
+    if (faces.includes('r')) q([sb, y0, d1], [sb, y0, d0], [sb, y1, d0], [sb, y1, d1], [1, 0, 0]);
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3)); g.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3)); g.setIndex(I);
+    put(onWall(g, x, y, z, ang), m);
+  }
+  // A window: dark glass pane with a dressed-stone head, sill and jambs. `arch` gives a round head. The dressing
+  // is built from visible faces only (no boxes): the 650 windows of the building are most of its triangles.
   function win(x, y, z, w, h, ang, { arch = false, mat = 'glass', frame = true, rise = null } = {}) {
-    const glass = arch ? new THREE.ShapeGeometry(archShape(w, h, rise), near ? 8 : 4) : new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);
+    const glass = arch ? new THREE.ShapeGeometry(archShape(w, h, rise, near ? (w < 2 ? 4 : 6) : 3)) : new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);
     glass.translate(0, 0, 0.05); put(onWall(glass, x, y, z, ang), mat);
     if (!frame || !near) return;
-    if (!arch) {
-      const head = new THREE.BoxGeometry(w + 0.7, 0.32, 0.34).translate(0, h + 0.14, 0.14);
-      put(onWall(head, x, y, z, ang), 'trim');
-    }
-    const sill = new THREE.BoxGeometry(w + 0.5, 0.22, 0.42).translate(0, -0.1, 0.16);
-    put(onWall(sill, x, y, z, ang), 'trim');
-    for (const s of [-1, 1]) {
-      const jamb = new THREE.BoxGeometry(0.2, arch ? h - (rise == null ? w / 2 : rise) : h, 0.26).translate(s * (w / 2 + 0.06), (arch ? h - (rise == null ? w / 2 : rise) : h) / 2, 0.1);
-      put(onWall(jamb, x, y, z, ang), 'trim');
-    }
+    if (!arch) wbox('trim', -(w + 0.7) / 2, (w + 0.7) / 2, h, h + 0.28, -0.03, 0.31, 'fud', x, y, z, ang);                // head
+    wbox('trim', -(w + 0.5) / 2, (w + 0.5) / 2, -0.21, 0.01, -0.05, 0.37, 'fu', x, y, z, ang);                               // sill
+    const jh = arch ? h - (rise == null ? w / 2 : rise) : h;
+    for (const s of [-1, 1]) wbox('trim', s * (w / 2 + 0.06) - 0.1, s * (w / 2 + 0.06) + 0.1, 0, jh, -0.03, 0.23, 'f', x, y, z, ang); // jambs
   }
   // An arch ring in dressed stone around a round-headed opening (extruded, hollow).
   function archRing(x, y, z, w, h, ang, { rim = 0.45, depth = 0.5, rise = null } = {}) {
     const outer = archShape(w + rim * 2, h + rim, rise == null ? null : rise + rim);
     outer.holes.push(new THREE.Path(archShape(w, h, rise).getPoints(near ? 10 : 5)));
-    const g = new THREE.ExtrudeGeometry(outer, { depth, bevelEnabled: false, curveSegments: near ? 10 : 5 });
-    g.translate(0, 0, 0.0); put(onWall(g, x, y, z, ang), 'trim');
+    const g = dropBack(new THREE.ExtrudeGeometry(outer, { depth, bevelEnabled: false, curveSegments: near ? 10 : 5 }));
+    put(onWall(g, x, y, z, ang), 'trim');
   }
   // A row of identical windows along a wall. Wall runs from (x0,z0) to (x1,z1); n windows.
   function windowRow(x0, z0, x1, z1, y, n, w, h, ang, opts) {
@@ -162,4 +202,16 @@ export function kit(b, near) {
     if (near && !round) for (const s of [-1, 1]) { box('stoneDark', x + s * (size / 2 - 0.06), x + s * (size / 2 + 0.05), y0, y1 - 0.6, z - size / 2 + 0.25, z + size / 2 - 0.25); }
   }
   return { solid, box, boxR, frustum, polyPyramid, hipRoof, gableRoof, gableWall, lathe, cyl, cone, archShape, onWall, win, archRing, windowRow, course, dormer, stack, V, put };
+}
+
+// Drop the downward faces that rest on the ground (y <= 1 cm) from an indexed geometry: nobody sees them.
+export function dropGroundFaces(g) {
+  const p = g.attributes.position, n = g.attributes.normal, idx = g.index, keep = [];
+  for (let i = 0; i < idx.count; i += 3) {
+    const a = idx.getX(i), b = idx.getX(i + 1), c = idx.getX(i + 2);
+    if (n.getY(a) < -0.9 && p.getY(a) < 0.01 && p.getY(b) < 0.01 && p.getY(c) < 0.01) continue;
+    keep.push(a, b, c);
+  }
+  g.setIndex(keep);
+  return g;
 }

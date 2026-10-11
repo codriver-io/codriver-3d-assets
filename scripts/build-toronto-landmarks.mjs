@@ -23,6 +23,8 @@ for (const landmark of TORONTO_LANDMARKS.filter((l) => all || wanted.includes(l.
   await mkdir(out, { recursive: true });
   for (const detail of ['near', 'far']) {
     const model = landmark.create({ detail }), bounds = new Box3().setFromObject(model);
+    // Buildings drop `bridgeLift` (only a host's road-fitted bridge reads it): 4 bytes per vertex.
+    if (spec.kind !== 'bridge') model.traverse((o) => { if (o.isMesh && o.geometry.getAttribute('bridgeLift')) o.geometry.deleteAttribute('bridgeLift'); });
     const bytes = Buffer.from(await new GLTFExporter().parseAsync(model, { binary: true }));
     const file = `${id}-${detail}.glb`; await writeFile(new URL(file, out), bytes);
     assets[detail] = { url: `/models/${dir}/${file}`, ...glbMetrics(bytes), bounds: { min: bounds.min.toArray(), max: bounds.max.toArray() } };

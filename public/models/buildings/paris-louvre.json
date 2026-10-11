@@ -29,11 +29,14 @@
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
   "geographicDataLicense": "ODbL-1.0",
   "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-louvre-near.glb",
-      "bytes": 8397668,
-      "triangles": 155885,
+      "bytes": 766348,
+      "triangles": 17252,
       "drawCalls": 8,
       "bounds": {
         "min": [
@@ -42,16 +45,16 @@
           -216.77917809557522
         ],
         "max": [
-          347.6079193703877,
-          54,
-          231.48788823991492
+          327.9378034207435,
+          53.95000076293945,
+          224.13353316774507
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-louvre-far.glb",
-      "bytes": 2459212,
-      "triangles": 44059,
+      "bytes": 180816,
+      "triangles": 3602,
       "drawCalls": 8,
       "bounds": {
         "min": [
@@ -60,14 +63,11 @@
           -216.77917809557522
         ],
         "max": [
-          347.6079193703877,
-          54,
-          231.48788823991492
+          327.9378034207435,
+          53.95000076293945,
+          224.13353316774507
         ]
       }
     }
-  },
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
+  }
 }

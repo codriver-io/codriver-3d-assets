@@ -1,0 +1,70 @@
+{
+  "id": "coit-tower",
+  "name": "Coit Tower",
+  "kind": "building",
+  "origin": [
+    -122.4058354,
+    37.8023738
+  ],
+  "height": 64,
+  "padM": 18,
+  "frontageBearing": 345.6,
+  "shaftBaseR": 5.74,
+  "shaftTopR": 5.51,
+  "shaftTopY": 52.9,
+  "flutes": 24,
+  "bays": 8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 at the entrance forecourt on the flat Peregrine basemap; no absolute altitude. Telegraph Hill is about 85-89 m above sea level there and is not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Total height, shaft height, flute count, taper and observation level are published; the crown arch sizes, the rotunda height, the stepped base heights beyond the mapped parts, the pour lines and the relief are estimated from photographs; the Columbus statue (removed 2020), the flagpole, the hill and the car loop are not modelled; interior is empty.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/coit-tower-near.glb",
+      "bytes": 181584,
+      "triangles": 3186,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -11.49647331237793,
+          0,
+          -12.109251022338867
+        ],
+        "max": [
+          11.497804641723633,
+          64,
+          11.499283790588379
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/coit-tower-far.glb",
+      "bytes": 82848,
+      "triangles": 1392,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -11.196565628051758,
+          0,
+          -12.109251022338867
+        ],
+        "max": [
+          11.19786262512207,
+          64,
+          11.196918487548828
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/coit-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

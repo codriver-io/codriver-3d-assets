@@ -1,0 +1,68 @@
+{
+  "id": "svinesund-bridge",
+  "name": "Svinesund Bridge",
+  "kind": "bridge",
+  "origin": [
+    11.2518319,
+    59.094368
+  ],
+  "height": 63.4,
+  "padM": 30,
+  "frontageBearing": 352,
+  "terrainPolicy": "absolute-deck",
+  "rangeM": 3500,
+  "nearM": 1100,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0 at arch foundation toes: crown 63.4 m, road 31.6 m. Terrain uses separate published circa +59.9 m main road datum, DEM-fitted supports; no DEM baked into GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "704 m structure, single 247 m concrete arch, two 11 m carriageways with 6 m central gap, six hanger pairs. Arch sections 6.2×4.2 m at feet and 4×2.7 m at crown; elevation conventions from KTH monitoring report. Circular arch curve, pier tapers, girders, barriers, lamps and local ramp profile are approximations. Cityscape and world integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/svinesund-bridge-near.glb",
+      "bytes": 2629876,
+      "triangles": 57868,
+      "drawCalls": 25,
+      "bounds": {
+        "min": [
+          -87.34098815917969,
+          -2.9000000953674316,
+          -690.1183471679688
+        ],
+        "max": [
+          48.6209831237793,
+          63.401058197021484,
+          899.2277221679688
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/svinesund-bridge-far.glb",
+      "bytes": 703704,
+      "triangles": 18196,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -87.34098815917969,
+          -2.9000000953674316,
+          -690.1183471679688
+        ],
+        "max": [
+          48.6209831237793,
+          63.400001525878906,
+          899.2277221679688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/svinesund-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

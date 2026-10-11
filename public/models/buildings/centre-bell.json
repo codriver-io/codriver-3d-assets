@@ -1,0 +1,65 @@
+{
+  "id": "centre-bell",
+  "name": "Centre Bell",
+  "kind": "building",
+  "origin": [
+    -73.5692786,
+    45.4960583
+  ],
+  "height": 47,
+  "padM": 95,
+  "frontageBearing": 41,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the street and plaza level round the arena); no absolute altitude. The 47 m to the top of the sign tower is an estimate over this grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The plan and its bearing come from OpenStreetMap (way 19911284). No height is published: the 28 m brick volume, the 10 m dark-glass band, the 47 m sign tower, the window groups and mullion rhythm, the sign size and all colours are estimates from photographs. The sign tower stands 20 m in from the north corner at the north-west end of the glazed front, with glass on both sides; that position, its 47 m height and the grouping of the windows are read from the photographs, not surveyed. The arena's dark upper band overhangs the south-west notch in reality; the model keeps it inside the mapped outline. The Tour des Canadiens condominium towers beside the arena are separate buildings and are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/centre-bell-near.glb",
+      "bytes": 396620,
+      "triangles": 4938,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -84.22360229492188,
+          0,
+          -84.37068176269531
+        ],
+        "max": [
+          84.58031463623047,
+          47,
+          84.68309020996094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/centre-bell-far.glb",
+      "bytes": 112308,
+      "triangles": 1330,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -84.22360229492188,
+          0,
+          -84.37068176269531
+        ],
+        "max": [
+          84.58031463623047,
+          47,
+          84.68309020996094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/centre-bell/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

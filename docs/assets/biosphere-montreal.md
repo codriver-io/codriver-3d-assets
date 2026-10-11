@@ -22,3 +22,7 @@ Source: [`src/peregrine/landmarks/biosphere-geometry.js`](../../src/peregrine/la
 
 - [Espace pour la vie · the Biosphère](https://m.espacepourlavie.ca/en/about-biosphere)
 - [Mapped alignment / footprint · OpenStreetMap](https://www.openstreetmap.org/copyright)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). Exported cost: near 53,724 triangles / 6 draws / 1,654,788 bytes; far 10,722 / 6 / 336,568.

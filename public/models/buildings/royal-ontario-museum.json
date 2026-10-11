@@ -22,27 +22,27 @@
   "assets": {
     "near": {
       "url": "/models/buildings/royal-ontario-museum-near.glb",
-      "bytes": 862448,
-      "triangles": 14790,
-      "drawCalls": 15,
+      "bytes": 741828,
+      "triangles": 14642,
+      "drawCalls": 13,
       "bounds": {
         "min": [
-          -65.66881561279297,
+          -65.67733764648438,
           0,
-          -87.65830993652344
+          -87.67357635498047
         ],
         "max": [
           66.80636596679688,
-          37.03777313232422,
+          37.05653381347656,
           85.27127838134766
         ]
       }
     },
     "far": {
       "url": "/models/buildings/royal-ontario-museum-far.glb",
-      "bytes": 105188,
+      "bytes": 86676,
       "triangles": 1731,
-      "drawCalls": 13,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -65.64637756347656,

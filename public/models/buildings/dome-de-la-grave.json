@@ -1,0 +1,66 @@
+{
+  "id": "dome-de-la-grave",
+  "name": "Dôme de la Grave (Chapelle Saint-Joseph)",
+  "kind": "building",
+  "origin": [
+    1.43298,
+    43.60083
+  ],
+  "height": 56,
+  "padM": 40,
+  "frontageBearing": 114,
+  "rotationDeg": 66,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local courtyard grade y=0; no absolute altitude or terrain stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "24.8 m dome footprint mapped in OSM; eight arched drum windows and six facade pilasters documented by CHU Toulouse. Provisional 56 m cross summit follows the 2022 restoration report; municipal pages variously say 40 m and 85 m without a clear datum. Stage heights and ornament are photograph estimates. Hospital scope is one short adjoining wing; full hospital is not modelled. Rotation is baked.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/dome-de-la-grave-near.glb",
+      "bytes": 798132,
+      "triangles": 27584,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -22.478864669799805,
+          -1.4218976914133225e-15,
+          -36.10107421875
+        ],
+        "max": [
+          22.408649444580078,
+          56,
+          23.329795837402344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/dome-de-la-grave-far.glb",
+      "bytes": 297152,
+      "triangles": 8044,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -22.478864669799805,
+          -1.4218976914133225e-15,
+          -36.10107421875
+        ],
+        "max": [
+          22.408649444580078,
+          56,
+          23.329795837402344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/dome-de-la-grave/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

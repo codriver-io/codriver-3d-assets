@@ -1,0 +1,65 @@
+{
+  "id": "colosseum",
+  "name": "Colosseum",
+  "kind": "building",
+  "origin": [
+    12.49229914,
+    41.89019898
+  ],
+  "height": 48.5,
+  "padM": 115,
+  "frontageBearing": 16,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the valley-floor plaza). No absolute altitude and no terrain pad: the Palatine and Oppian rise outside the footprint.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan and height are Platner’s surveyed ellipse (188 × 156 m, 48.50 m), rotated to the mapped outer arc (bearing 106°). The replacement ring is the actual OSM multipolygon outline; south-side steps follow the surviving inner wall. The south-west outer wall is the ruin as it stands, without the modern scaffolding. Inner radii, the hypogeum grid and the colours are estimates from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/colosseum-near.glb",
+      "bytes": 1607744,
+      "triangles": 30666,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -83.22486114501953,
+          0,
+          -81.86155700683594
+        ],
+        "max": [
+          95.36430358886719,
+          48.5,
+          66.8139419555664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/colosseum-far.glb",
+      "bytes": 486408,
+      "triangles": 9360,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -83.22486114501953,
+          0,
+          -81.86155700683594
+        ],
+        "max": [
+          95.36430358886719,
+          48.5,
+          66.8139419555664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colosseum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

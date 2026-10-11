@@ -20,7 +20,7 @@ export const CRYSTALS = {
   cA: { shear: [0, -0.5] },
   cB: { shear: [0, -0.45], wall: 'aluMid' },
   cC: { shear: [0, -0.5] },
-  cD: { shear: [0, -0.3] },
+  cD: { shear: [0, -0.3], plainWalls: [0, 4, 6] },
   cE: { shear: [0, -0.2] },
   cF: { shear: [0, -0.2] },
   cG: { shear: [0, -0.2] },
@@ -54,9 +54,11 @@ export function buildCrystal(K, { near }) {
   const poly = (F, Q, pts, o = {}) => lay(F, pts.map((p) => Q(...p)), o);
 
   // ---- cladding seams --------------------------------------------------------------------------------------------
-  if (near) for (const f of Object.values(solids)) {
+  // Interlocking prisms cross each other at shallow angles; a seam laid on one of those walls runs within centimetres of the
+  // neighbour's plane along the crossing line and shimmers (the QA coplanar check flags it), so those walls stay plain.
+  if (near) for (const [name, f] of Object.entries(solids)) {
     K.seams(f.roof, { step: 0.62, width: 0.06, angle: 0 });
-    f.walls.forEach((w, i) => { if (w) K.seams(w, { step: 0.62, width: 0.06, angle: (i % 2) * Math.PI / 2 }); });
+    f.walls.forEach((w, i) => { if (w && !CRYSTALS[name].plainWalls?.includes(i)) K.seams(w, { step: 0.62, width: 0.06, angle: (i % 2) * Math.PI / 2 }); });
   }
 
   // ---- A: the tallest prism, beside the 1933 gable. Its roof plane (about 46 x 30 m) carries the crossed glazed bands. ----

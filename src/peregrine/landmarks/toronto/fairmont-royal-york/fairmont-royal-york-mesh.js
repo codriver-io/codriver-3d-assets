@@ -57,6 +57,9 @@ export function meshKit() {
     if (bottom) quad(m, A, B, B2, A2, [0, -1, 0]);
     if (sides) { quad(m, A, A2, D2, D, [-t[0], 0, -t[1]]); quad(m, B, B2, C2, C, [t[0], 0, t[1]]); }
   }
+  // A flat panel on a wall: u0..u1 along, y0..y1 up, offset d out of the wall. One quad, no sides (a window or
+  // mullion read from outside; the gap behind it is the wall).
+  const panel = (m, o, t, n, u0, u1, y0, y1, d) => quad(m, wp(o, t, n, u0, y0, d), wp(o, t, n, u1, y0, d), wp(o, t, n, u1, y1, d), wp(o, t, n, u0, y1, d), hint(n));
   // Arch-headed opening profile in (u, y): pointed (equilateral) or round.
   function archProfile(u0, u1, y0, ys, { pointed = true, steps = 6 } = {}) {
     const w = u1 - u0, pts = [[u0, y0], [u1, y0], [u1, ys]];
@@ -94,14 +97,28 @@ export function meshKit() {
   // Pyramid / hip on a plan ring (convex), apex or ridge points given.
   function cone(m, ring, y0, apex) { for (const e of edges(ring)) tri(m, [e.p[0], y0, e.p[1]], [e.q[0], y0, e.q[1]], apex, [e.n[0], 0.6, e.n[1]]); }
 
+  // Weld vertices that share a position and a (flat) normal: a quad costs 4 vertices instead of 6 and a
+  // fan n + 1 instead of 3 per triangle. Smooth/sharp normals are untouched: only identical pairs merge.
+  function weld({ p, n, i }) {
+    const map = new Map(), P = [], N = [], I = [];
+    for (const k of i) {
+      const x = p[k * 3], y = p[k * 3 + 1], z = p[k * 3 + 2], a = n[k * 3], b = n[k * 3 + 1], c = n[k * 3 + 2];
+      const key = `${Math.round(x * 1e4)},${Math.round(y * 1e4)},${Math.round(z * 1e4)},${Math.round(a * 1e3)},${Math.round(b * 1e3)},${Math.round(c * 1e3)}`;
+      let j = map.get(key);
+      if (j === undefined) { j = P.length / 3; map.set(key, j); P.push(x, y, z); N.push(a, b, c); }
+      I.push(j);
+    }
+    return { p: P, n: N, i: I };
+  }
+
   function flush(b) {
-    for (const [m, s] of acc) {
-      const g = new THREE.BufferGeometry();
+    for (const [m, raw] of acc) {
+      const s = weld(raw), g = new THREE.BufferGeometry();
       g.setAttribute('position', new THREE.Float32BufferAttribute(s.p, 3));
       g.setAttribute('normal', new THREE.Float32BufferAttribute(s.n, 3));
       g.setIndex(s.i);
       b.put(g, m);
     }
   }
-  return { tri, quad, fan, cap, edges, wp, hint, wall, walls, slab, archProfile, profileSlab, block, cone, flush, stats };
+  return { tri, quad, fan, cap, edges, wp, hint, wall, walls, slab, panel, archProfile, profileSlab, block, cone, flush, stats };
 }

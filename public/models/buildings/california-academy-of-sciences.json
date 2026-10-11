@@ -1,0 +1,65 @@
+{
+  "id": "california-academy-of-sciences",
+  "name": "California Academy of Sciences",
+  "kind": "building",
+  "origin": [
+    -122.466091,
+    37.769828
+  ],
+  "height": 27.4,
+  "padM": 100,
+  "frontageBearing": 318.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the Music Concourse entrance level); no absolute altitude. The roof edge stands 10.8 m over it (published 35 ft = 10.7 m; OSM height 11).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan size and axes come from OpenStreetMap; the north-west entrance side (318 degrees) is chosen from photographs, not encoded by OSM; the 35 ft roof, 2.5 acre green roof, 27 m domes and 22 x 30 m piazza are published. The hill positions and profiles, the 11.9 m canopy depth, wall heights, glazing pattern, vent count and the terrace position are estimates from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/california-academy-of-sciences-near.glb",
+      "bytes": 499576,
+      "triangles": 15260,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -91.89993286132812,
+          -9.536743306171047e-8,
+          -89.77074432373047
+        ],
+        "max": [
+          91.73297882080078,
+          27.57845687866211,
+          89.69631958007812
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/california-academy-of-sciences-far.glb",
+      "bytes": 81840,
+      "triangles": 2744,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -91.89993286132812,
+          -4.7683716530855236e-8,
+          -89.77074432373047
+        ],
+        "max": [
+          91.73297882080078,
+          27.399999618530273,
+          89.69631958007812
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/california-academy-of-sciences/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

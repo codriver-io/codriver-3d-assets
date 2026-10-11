@@ -77,10 +77,10 @@ Casa Loma stands at about 140 m above sea level on the brow of Davenport Hill, 6
 
 | LOD | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 29,786 | 9 | 1,780,120 |
-| Far | 9,435 | 9 | 583,384 |
+| Near | 27,721 | 9 | 1,641,392 |
+| Far | 7,082 | 8 | 428,156 |
 
-Budgets: near <= 160,000 / 48, far <= 45,000 / 14, far no heavier than near. Software rendering in headless Chromium only; no Tesla hardware measurement.
+Budgets: building near 60,000 / 14 / 2.5 MB, far 12,000 / 8 / 500 KB. Far folds only the 12-triangle porte-cochere opening into the blue-grey `lead` (`FOLD` in `config.js`); its weight came down by dropping hidden floors (the extruded footing, stone course and stables plinth no longer carry a floor cap, and the footing no longer carries a top cap under the stone course) and, in far, the string courses on the short facets that only approximate the curved bays. The lead roof slab is inset 15 cm and the lead plates and blocks sink 10 cm into the base so no two materials share a plane; stable windows are no longer placed on walls that stand against another wing (coplanar overlap 1,909 m2 to 4 m2). Software rendering in headless Chromium only; no Tesla hardware measurement.
 
 ## Verification evidence
 

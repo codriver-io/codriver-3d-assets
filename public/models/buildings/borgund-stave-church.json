@@ -1,0 +1,66 @@
+{
+  "id": "borgund-stave-church",
+  "name": "Borgund Stave Church",
+  "kind": "building",
+  "origin": [
+    7.81229,
+    61.047203
+  ],
+  "height": 20,
+  "padM": 12,
+  "frontageBearing": 256,
+  "axisDegrees": 14,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid foundation on local grade y=0; no absolute altitude or terrain baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Conserved Borgund stavkyrkje, c.1180–1200. Mapped plan and 76° eastward nave axis; 20 m overall height and roof heights, gallery openings, timber and simplified dragon carving dimensions estimated from photographs. Separate bell tower and newer church excluded. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/borgund-stave-church-near.glb",
+      "bytes": 1439448,
+      "triangles": 29264,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -8.029427528381348,
+          -4.172325152040912e-9,
+          -5.4546799659729
+        ],
+        "max": [
+          8.44591236114502,
+          19.950000762939453,
+          6.2115983963012695
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/borgund-stave-church-far.glb",
+      "bytes": 304208,
+      "triangles": 5924,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -8.029427528381348,
+          -4.172325152040912e-9,
+          -5.4546799659729
+        ],
+        "max": [
+          8.449767112731934,
+          19.950000762939453,
+          6.2115983963012695
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/borgund-stave-church/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

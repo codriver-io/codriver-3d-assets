@@ -60,7 +60,7 @@ function rooftop({ kit, near, L }) {
     [tw, -45, 4, 2.8, 2.2, 3.6, L.tower, RINGS.STEP], [tw, 5, 4, 2.6, 2.0, 3.2, L.tower, RINGS.STEP],
   ];
   for (const [ring, u, v, hw, hd, h, y, keepOut] of boxes) {
-    const c = at(u, v), r = kit.block('limestone', c[0], y, y + h, c[1], hw, hd, yaw);
+    const c = at(u, v), r = kit.block('limestone', c[0], y, y + h, c[1], hw, hd, yaw, { top: false }); // the roof cap below is the top
     if (!r.every(([x, z]) => inside(ring, x, z) && !(keepOut && inside(keepOut, x, z)))) throw new Error(`rooftop box (${u}, ${v}) is off its roof`);
     kit.cap('roof', r, y + h, true);
   }

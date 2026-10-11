@@ -1,0 +1,67 @@
+{
+  "id": "lions-gate-bridge",
+  "name": "Lions Gate Bridge",
+  "kind": "bridge",
+  "origin": [
+    -123.13858845,
+    49.31544355
+  ],
+  "height": 111,
+  "padM": 800,
+  "frontageBearing": 31,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at water/flat-map grade. Absolute-deck terrain policy; no DEM or latitude stretch baked into geometry. Road surface 64.4 m and truss bottom 61 m, approximate published navigation clearance.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "473 m main span, 187 m side spans, 111 m tower top. Tapered X-braced towers, arched portals, suspension cables, modern thin deck and north steel viaduct. Published tower height varies with datum (111 versus 118 m); use mapped 111 m. Mapped pylon spacing 456 m differs from published span: tower stations symmetrically adjusted 8.6 m. Cable sag, member sections, piers and lighting spacing estimated. Cityscape ramps 900 m south and 730.3 m north, smoothstep grades 10.7 / 13.23 percent. Lions, rivets and individual cable wires omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/lions-gate-bridge-near.glb",
+      "bytes": 3301400,
+      "triangles": 69854,
+      "drawCalls": 16,
+      "bounds": {
+        "min": [
+          -498.142578125,
+          -0.25,
+          -993.7469482421875
+        ],
+        "max": [
+          600.6780395507812,
+          111.05000305175781,
+          1205.748291015625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/lions-gate-bridge-far.glb",
+      "bytes": 966084,
+      "triangles": 25022,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -498.142578125,
+          -0.25,
+          -993.7469482421875
+        ],
+        "max": [
+          600.6780395507812,
+          111,
+          1205.7708740234375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lions-gate-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

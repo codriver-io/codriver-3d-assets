@@ -35,36 +35,36 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-conciergerie-near.glb",
-      "bytes": 241328,
-      "triangles": 5086,
+      "bytes": 257016,
+      "triangles": 5282,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -87.52388992394656,
-          -0.5,
-          -53.41885430021853
+          -87.18148985588493,
+          0,
+          -53.26756498803697
         ],
         "max": [
           93.37987927119885,
-          50,
+          52,
           44.03766426194107
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-conciergerie-far.glb",
-      "bytes": 111912,
-      "triangles": 2334,
+      "bytes": 78104,
+      "triangles": 1615,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -87.20207322285303,
+          -87.02194639019328,
           0,
-          -53.41885430021853
+          -53.26756498803697
         ],
         "max": [
           93.37987927119885,
-          50,
+          52,
           44.03766426194107
         ]
       }

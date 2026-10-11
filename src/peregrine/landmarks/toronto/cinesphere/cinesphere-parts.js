@@ -6,11 +6,12 @@ import * as THREE from 'three';
 
 const UP = new THREE.Vector3(0, 1, 0);
 
-/** Vertical or arbitrary cylinder between two points (closed, flat rim). */
-export function pipe(b, material, a, c, radius, segments = 8) {
+/** Vertical or arbitrary cylinder between two points (closed, flat rim; `caps = false` leaves the ends open, for pipes
+ *  whose ends sit inside a plate or under the lake level). */
+export function pipe(b, material, a, c, radius, segments = 8, caps = true) {
   const av = new THREE.Vector3(...a), cv = new THREE.Vector3(...c), d = cv.clone().sub(av), len = d.length();
   if (len < 1e-4) return;
-  const g = new THREE.CylinderGeometry(radius, radius, len, segments, 1, false);
+  const g = new THREE.CylinderGeometry(radius, radius, len, segments, 1, !caps);
   g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(UP, d.normalize()));
   g.translate(...av.add(cv).multiplyScalar(0.5).toArray());
   b.put(g, material);
@@ -67,8 +68,8 @@ export function walkway(b, a, c, y, { width = 4, height = 3.2, spacing = 14, nea
   for (const s of [-1, 1]) {
     f.box(b, 'glass', 0, y + height * 0.5, s * hw, len, height - 0.5, 0.1); // glazing
     f.bar(b, 'white', [-hl, y + height, s * hw + s * 0.1], [hl, y + height, s * hw + s * 0.1], 0.14, 0.22);
-    f.bar(b, 'white', [-hl, y + 0.05, s * hw + s * 0.1], [hl, y + 0.05, s * hw + s * 0.1], 0.14, 0.22);
-    const bays = Math.max(2, Math.round(len / (near ? bay : bay * 2.4)));
+    if (near) f.bar(b, 'white', [-hl, y + 0.05, s * hw + s * 0.1], [hl, y + 0.05, s * hw + s * 0.1], 0.14, 0.22); // the sill chord lies on the deck edge: far drops it
+    const bays = near ? Math.max(2, Math.round(len / bay)) : 0; // far drops the truss diagonals: sub-pixel members
     for (let i = 0; i < bays; i++) {
       const up = i % 2 === 0, x0 = -hl + (i / bays) * len, x1 = -hl + ((i + 1) / bays) * len;
       f.bar(b, 'white', [x0, up ? y + 0.05 : y + height, s * hw + s * 0.1], [x1, up ? y + height : y + 0.05, s * hw + s * 0.1], 0.1, 0.16);
@@ -95,8 +96,8 @@ export function ramp(b, a, c, { width = 2, near = true } = {}) {
   for (const s of [-1, 1]) {
     const o = s * width / 2;
     b.bar('white', at(0, 1.1, o), at(1, 1.1, o), 0.05, 0.08);            // hand rail / top chord
-    b.bar('white', at(0, -0.15, o), at(1, -0.15, o), 0.05, 0.1);          // bottom chord
-    const bays = Math.max(2, Math.round(len / (near ? 1.7 : 4.5)));
+    if (near) b.bar('white', at(0, -0.15, o), at(1, -0.15, o), 0.05, 0.1); // bottom chord (far: under the deck, not drawn)
+    const bays = near ? Math.max(2, Math.round(len / 1.7)) : 0; // far keeps the chords and the deck, not the diagonals
     for (let i = 0; i < bays; i++) {
       const up = i % 2 === 0, t0 = i / bays, t1 = (i + 1) / bays;
       b.bar('white', at(t0, up ? -0.15 : 1.1, o), at(t1, up ? 1.1 : -0.15, o), 0.04, 0.06);

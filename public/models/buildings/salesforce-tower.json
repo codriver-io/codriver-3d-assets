@@ -1,0 +1,79 @@
+{
+  "id": "salesforce-tower",
+  "name": "Salesforce Tower",
+  "kind": "building",
+  "origin": [
+    -122.39693,
+    37.789776
+  ],
+  "height": 326,
+  "padM": 55,
+  "frontageBearing": 316,
+  "planBearingDeg": 45.7,
+  "roofY": 296,
+  "lobbyY": 9,
+  "floorPitch": 4.4,
+  "sunshadeOut": 0.7,
+  "plan": {
+    "baseHalf": 26.45,
+    "baseRadius": 14.3,
+    "taperStartY": 170,
+    "taperPower": 2.5,
+    "topWidth": 0.55,
+    "topRho": 0.85,
+    "rhoPower": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The lobby floor is y=0; the plaza, the fifth-floor bridge to the Transit Center and the below-grade levels are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height, storey count, plan size, corner radius and orientation follow OSM and the street grid; the taper law, floor pitch, fin sizes, the glass colour and the crown lattice are estimated from photographs. The crown LED art is shown as inward-facing light bands, not the real pixel layout.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/salesforce-tower-near.glb",
+      "bytes": 965208,
+      "triangles": 30918,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.480274200439453,
+          0,
+          -31.480274200439453
+        ],
+        "max": [
+          31.480274200439453,
+          326,
+          31.480274200439453
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/salesforce-tower-far.glb",
+      "bytes": 193100,
+      "triangles": 5498,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.183422088623047,
+          0,
+          -31.183422088623047
+        ],
+        "max": [
+          31.183422088623047,
+          326,
+          31.183422088623047
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/salesforce-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

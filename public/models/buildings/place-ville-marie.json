@@ -29,8 +29,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/place-ville-marie-near.glb",
-      "bytes": 444184,
-      "triangles": 10874,
+      "bytes": 427336,
+      "triangles": 10562,
       "drawCalls": 10,
       "bounds": {
         "min": [
@@ -47,9 +47,9 @@
     },
     "far": {
       "url": "/models/buildings/place-ville-marie-far.glb",
-      "bytes": 265120,
-      "triangles": 5768,
-      "drawCalls": 10,
+      "bytes": 238236,
+      "triangles": 4724,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -121.3094482421875,

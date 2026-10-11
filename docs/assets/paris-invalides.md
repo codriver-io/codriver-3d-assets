@@ -20,3 +20,7 @@ Current revision: [near GLB facade/support](../screenshots/paris-refinement/pari
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). dome has twelve thicker ribs (was 24); wing and nave roofs are pitched, flat-shaded grey-blue slate (#6d7885) instead of green barrels; roof winding fixed. Exported cost: near 10,673 triangles / 5 draws / 514,544 bytes; far 2,523 / 5 / 117,828.

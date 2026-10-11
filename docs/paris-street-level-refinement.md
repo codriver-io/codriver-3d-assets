@@ -70,7 +70,7 @@ retain open river passages. Support weights and the host's road datum are retain
 - Louvre footprint/orientation, sculpted figures, cathedral tracery, historical
   pediment reliefs and facade lettering still need more precise reference work.
   The second pass adds the Louvre pyramid, with schematic court placement. Iéna's equestrian
-  groups are not yet modeled. These should be judged in the next visual review.
+  groups were added in the October 2026 QA pass. These should be judged in the next visual review.
 
 ## Authoring lessons
 

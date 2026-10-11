@@ -5,8 +5,20 @@ import { PLACE_VILLE_MARIE as PVM, PVM_RING_SITE, PVM_PALETTES, pvmSite } from '
 // Authoring only: imported by the exporter and local inspector, never the map.
 export function createPlaceVilleMarie({ detail = 'near' } = {}) {
   const b = assetBuilder(PVM, detail), near = detail === 'near';
-  const box = (mat, u,y,v, w,h,d) => b.box(mat,pvmSite(u,y,v),[w,h,d],-PVM.siteAngle);
-  const put = (g,mat) => { g.rotateY(-PVM.siteAngle); b.put(g,mat); };
+  // Far folds minor materials into neighbours (draws <= 8): plaza and skylights share the pale
+  // concrete, the ring joins the aluminium, the beacon mast joins the roof tone and the near-only
+  // lit-window dots disappear. Near keeps every material.
+  const FAR = { stone: 'concrete', paint: 'lattice', rail: 'roof' }, M = (mat) => near ? mat : (FAR[mat] ?? mat);
+  const box = (mat, u,y,v, w,h,d) => b.box(M(mat),pvmSite(u,y,v),[w,h,d],-PVM.siteAngle);
+  const put = (g,mat) => { g.rotateY(-PVM.siteAngle); b.put(g,M(mat)); };
+  // Flat horizontal quad (joint line, paving) in site axes, normal up: two triangles, no hidden box.
+  const flat = (mat, u,y,v, w,d) => {
+    const g=new THREE.BufferGeometry();
+    g.setAttribute('position',new THREE.Float32BufferAttribute([[-w/2,-d/2],[-w/2,d/2],[w/2,d/2],[w/2,-d/2]].flatMap(([du,dv])=>pvmSite(u+du,y,v+dv)),3));
+    g.setIndex([0,1,2,0,2,3]);g.computeVertexNormals();
+    if(g.attributes.normal.getY(0)<0)g.setIndex([0,2,1,0,3,2]),g.computeVertexNormals();
+    b.put(g,M(mat));
+  };
   const prism = (outline,base,height,mat) => {
     const shape = new THREE.Shape(outline.map(([u,v])=>new THREE.Vector2(u,-v)));
     const g = new THREE.ExtrudeGeometry(shape,{depth:height,bevelEnabled:false,steps:1});
@@ -27,8 +39,8 @@ export function createPlaceVilleMarie({ detail = 'near' } = {}) {
       box('glass',u+du,15.64,v+dv,3.35,0.08,3.35);
     }
     if (near) for (let offset=-12;offset<=12;offset+=6) {
-      box('lattice',u+offset,3.1,v+14.9,0.22,4.8,0.26);
-      box('lattice',u+14.9,3.1,v+offset,0.26,4.8,0.22);
+      box('lattice',u+offset,3.05,v+14.9,0.22,4.9,0.26);
+      box('lattice',u+14.9,3.05,v+offset,0.26,4.9,0.22);
     }
   }
   // Full-height cruciform, not four disconnected slabs. Crown set back above
@@ -59,10 +71,10 @@ export function createPlaceVilleMarie({ detail = 'near' } = {}) {
       const t=i/bays,u=a[0]+du*t+nx*0.13,v=a[1]+dv*t+nz*0.13;
       box('lattice',u,(start+top)/2,v,du?0.17:0.36,top-start,du?0.36:0.17);
     }
-    // Deterministic restrained warm windows, no lights/transparency.
-    if(near) for(let floor=2;floor<39;floor++)for(let bay=0;bay<bays;bay++)if((floor*17+bay*11+edge*7)%29===0){
-      const y=24.6+floor*3.7675;
-      quad(pt((bay+0.12)/bays,y,0.16),pt((bay+0.12)/bays,y+2.55,0.16),pt((bay+0.88)/bays,y+2.55,0.16),pt((bay+0.88)/bays,y,0.16),'iron');
+    // Deterministic sparse warm windows (a few per face, small, muted by day), no lights/transparency.
+    if(near) for(let floor=2;floor<39;floor++)for(let bay=0;bay<bays;bay++)if((floor*17+bay*11+edge*7)%41===0){
+      const y=24.9+floor*3.7675;
+      quad(pt((bay+0.22)/bays,y,0.16),pt((bay+0.22)/bays,y+2.2,0.16),pt((bay+0.78)/bays,y+2.2,0.16),pt((bay+0.78)/bays,y,0.16),'iron');
     }
   }
   // Rooftop gyrophare: compact mast and four emissive apertures. No beams,
@@ -75,11 +87,12 @@ export function createPlaceVilleMarie({ detail = 'near' } = {}) {
   // Stays clear of 2/3, 4 and 5 PVM, which are left to the map provider.
   box('stone',-53,0.9,33,14,1.8,73);
   box('stone',-59.5,0.9,76,27,1.8,23);
-  box('concrete',-53,1.82,33,14,0.08,73);
-  box('concrete',-59.5,1.82,76,27,0.08,23);
+  // Paving is a quad 2.5 cm over the podium top; joint lines sit 4.5 cm above the paving.
+  flat('concrete',-53,1.825,33,14,73);
+  flat('concrete',-59.5,1.825,76,27,23);
   if(near) {
-    for(let u=-59;u<-46;u+=6)box('stone',u,1.87,33,0.13,0.015,72);
-    for(let v=0;v<69;v+=6)box('stone',-53,1.87,v,13,0.015,0.13);
+    for(let u=-59;u<-46;u+=6)flat('stone',u,1.87,33,0.13,72);
+    for(let v=0;v<69;v+=6)flat('stone',-53,1.87,v,13,0.13);
     for(const v of [8,32,56])box('concrete',-58,2.15,v,1.5,0.55,5);
   }
   const [ru,rv]=PVM_RING_SITE;
@@ -90,7 +103,7 @@ export function createPlaceVilleMarie({ detail = 'near' } = {}) {
   // Torus starts in XY. Its horizontal axis follows the mapped gap (site v)
   // and its plane normal follows McGill College (site u).
   ring.rotateY(Math.PI/2);ring.translate(ru,PVM.ring.centerHeight,rv);put(ring,'paint');
-  for(const face of [-1,1]) {
+  for(const face of near?[-1,1]:[]) {
     const light = new THREE.TorusGeometry(r,0.06,4,near?128:64);
     light.rotateY(Math.PI/2);light.translate(ru+face*0.45,PVM.ring.centerHeight,rv);put(light,'iron');
   }

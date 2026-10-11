@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
-import { SPEC, PALETTES } from './config.js';
+import { SPEC, PALETTES, materialFor } from './config.js';
 import { Soup, extrude } from './art-gallery-of-ontario-mesh.js';
 import { PLAN, HULL, TEARS, LEVEL_M, ROT_DEG, pt, along, hullY } from './art-gallery-of-ontario-site.js';
 
@@ -13,7 +13,10 @@ const secNormal = (dv, dy) => { const l = Math.hypot(dv, dy) || 1; return [-dy /
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  const soups = {}, S = (m) => (soups[m] ??= new Soup());
+  // Every material goes through the draw-budget fold (config.js FOLD): near is unchanged, far shares draws.
+  const { put, box, bar } = b, fold = (m) => materialFor(m, detail);
+  b.put = (g, m, ...rest) => put(g, fold(m), ...rest); b.box = (m, ...rest) => box(fold(m), ...rest); b.bar = (m, ...rest) => bar(fold(m), ...rest);
+  const soups = {}, S = (m) => (soups[fold(m)] ??= new Soup());
 
   // Site-aligned box: (u, y, v) centre, (along Dundas, height, depth).
   const ubox = (m, u, y, v, du, h, dv) => b.box(m, pt(u, y, v), [du, h, dv], ROT);
@@ -69,7 +72,7 @@ export function create({ detail = 'near' } = {}) {
       const out2 = dir(nu, 0, nv);
       for (let y = LEVEL_M; y < y1 - 0.5; y += LEVEL_M) {
         if (y < covered) continue;
-        S('roof').quad(pt(a[0] + nu * 0.03, y, a[1] + nv * 0.03), pt(c2[0] + nu * 0.03, y, c2[1] + nv * 0.03), pt(c2[0] + nu * 0.03, y + 0.14, c2[1] + nv * 0.03), pt(a[0] + nu * 0.03, y + 0.14, a[1] + nv * 0.03), out2);
+        S('roof').quad(pt(a[0] + nu * 0.06, y, a[1] + nv * 0.06), pt(c2[0] + nu * 0.06, y, c2[1] + nv * 0.06), pt(c2[0] + nu * 0.06, y + 0.14, c2[1] + nv * 0.06), pt(a[0] + nu * 0.06, y + 0.14, a[1] + nv * 0.06), out2);
       }
     }
   }

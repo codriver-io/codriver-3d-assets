@@ -1,0 +1,66 @@
+{
+  "id": "san-francisco-city-hall",
+  "name": "San Francisco City Hall",
+  "kind": "building",
+  "origin": [
+    -122.419239,
+    37.7792759
+  ],
+  "height": 93.7,
+  "padM": 80,
+  "frontageBearing": 80.9,
+  "rotationDeg": 9.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the Polk Street and Van Ness Avenue pavements); no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Dome, drum, lantern and the 93.7 m height are sourced (307.5 ft). The plan follows the OSM outline and its rotunda parts. Facade heights, bay counts, column sizes, the roof and every ornament are estimated from photographs; sculpture and carved relief are abstracted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/san-francisco-city-hall-near.glb",
+      "bytes": 572740,
+      "triangles": 12112,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -52.92372131347656,
+          -2.3841858265427618e-8,
+          -69.56034851074219
+        ],
+        "max": [
+          53.86176300048828,
+          93.69999694824219,
+          69.41800689697266
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/san-francisco-city-hall-far.glb",
+      "bytes": 234116,
+      "triangles": 4682,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -52.92372131347656,
+          -2.3841858265427618e-8,
+          -69.56034851074219
+        ],
+        "max": [
+          53.86176300048828,
+          93.69999694824219,
+          69.41800689697266
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/san-francisco-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

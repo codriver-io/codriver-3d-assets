@@ -24,3 +24,7 @@ Source: [`src/peregrine/landmarks/orange-julep-geometry.js`](../../src/peregrine
 - [Operator history · nearly 60ft current orange](https://orangejulep.ca/our-history/)
 - [OSM footprint · way 364067316](https://www.openstreetmap.org/way/364067316)
 - [Photographic references · Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Gibeau_Orange_Julep)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). shell is red-orange; the frontage is an orange wall with discrete framed windows rather than a continuous glass band. Exported cost: near 13,792 triangles / 8 draws / 539,608 bytes; far 3,052 / 7 / 156,268.

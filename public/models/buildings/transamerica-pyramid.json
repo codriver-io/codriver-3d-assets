@@ -1,0 +1,66 @@
+{
+  "id": "transamerica-pyramid",
+  "name": "Transamerica Pyramid",
+  "kind": "building",
+  "origin": [
+    -122.4027858,
+    37.7951663
+  ],
+  "height": 260,
+  "padM": 42,
+  "frontageBearing": 260.8,
+  "rotationDeg": 9.22,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the Montgomery Street pavement at the lobby); no absolute altitude. The site is about 5 m above sea level (OSM ele=5), not baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 260 m, 48 floors, 53.3 m base, 65 m spire, 3,678 windows. Mapped: axis, 9.2 degree rotation, 46 m square at 30 m, 54 m base outline, 27.9 x 6.5 m wing footprint (model wing face 13.8 m from the axis). Estimated from photographs: the four-storey base (A-frame arcade 11 m, fascia bands, 20.4 m to the first window row), window pocket proportions (recessed pockets 0.5 m deep with a 2.0 m opening on the lowest 14 rows, flat panes above, 1.37 m module), the wing tops, the spire louvres and the crown. Redwood Park, the glass pavilion east of the tower, the interior and the rooftop cameras are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/transamerica-pyramid-near.glb",
+      "bytes": 933084,
+      "triangles": 17088,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.541290283203125,
+          0,
+          -30.541290283203125
+        ],
+        "max": [
+          30.541290283203125,
+          260,
+          30.541290283203125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/transamerica-pyramid-far.glb",
+      "bytes": 170924,
+      "triangles": 2970,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.541290283203125,
+          0,
+          -30.541290283203125
+        ],
+        "max": [
+          30.541290283203125,
+          260,
+          30.541290283203125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/transamerica-pyramid/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

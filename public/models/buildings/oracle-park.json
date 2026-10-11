@@ -1,0 +1,65 @@
+{
+  "id": "oracle-park",
+  "name": "Oracle Park",
+  "kind": "building",
+  "origin": [
+    -122.3895,
+    37.77855
+  ],
+  "height": 70,
+  "padM": 150,
+  "frontageBearing": 305,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is street/concourse level at the ballpark; the playing field is drawn at y=0.1 on the same datum (its real few-metre drop below the concourse is not modelled). No absolute altitude, terrain or latitude stretch is baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Seating is stepped terraces, not seats. Wall heights, tier profile, window rhythm, tower heights and the shape of the bottle and glove are estimated from photographs; the plan, the 62-70 m light frames and the field outline are mapped. The mapped field opening is a hole in the provider extrusion and is not drawn as a roof.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/oracle-park-near.glb",
+      "bytes": 671652,
+      "triangles": 10789,
+      "drawCalls": 13,
+      "bounds": {
+        "min": [
+          -148.2274932861328,
+          -1.9073486612342094e-7,
+          -133.98440551757812
+        ],
+        "max": [
+          147.48167419433594,
+          70.0999984741211,
+          134.65660095214844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/oracle-park-far.glb",
+      "bytes": 170388,
+      "triangles": 2224,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -148.14561462402344,
+          -1.9073486612342094e-7,
+          -133.91329956054688
+        ],
+        "max": [
+          147.4112548828125,
+          70,
+          134.56744384765625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/oracle-park/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

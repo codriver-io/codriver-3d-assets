@@ -1,0 +1,321 @@
+{
+  "id": "musee-des-confluences",
+  "name": "Musée des Confluences",
+  "kind": "building",
+  "origin": [
+    4.81808,
+    45.732595
+  ],
+  "height": 41,
+  "padM": 100,
+  "frontageBearing": 8,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          4.8186229,
+          45.7332597
+        ],
+        [
+          4.8185751,
+          45.7329014
+        ],
+        [
+          4.8185706,
+          45.7327688
+        ],
+        [
+          4.8185475,
+          45.7327627
+        ],
+        [
+          4.8185152,
+          45.7325307
+        ],
+        [
+          4.8184073,
+          45.7319784
+        ],
+        [
+          4.8183719,
+          45.7319715
+        ],
+        [
+          4.81831,
+          45.732113
+        ],
+        [
+          4.8182941,
+          45.7321826
+        ],
+        [
+          4.8179953,
+          45.7322739
+        ],
+        [
+          4.8178554,
+          45.7320572
+        ],
+        [
+          4.8177309,
+          45.7320956
+        ],
+        [
+          4.8176555,
+          45.7319793
+        ],
+        [
+          4.8174279,
+          45.7320585
+        ],
+        [
+          4.8173761,
+          45.7320741
+        ],
+        [
+          4.8175687,
+          45.7323602
+        ],
+        [
+          4.817642,
+          45.7324439
+        ],
+        [
+          4.8177028,
+          45.7324974
+        ],
+        [
+          4.8177733,
+          45.7325495
+        ],
+        [
+          4.8177696,
+          45.7325786
+        ],
+        [
+          4.8177287,
+          45.7325929
+        ],
+        [
+          4.817874,
+          45.7328093
+        ],
+        [
+          4.8179365,
+          45.7328268
+        ],
+        [
+          4.8180306,
+          45.7329194
+        ],
+        [
+          4.8181088,
+          45.7329872
+        ],
+        [
+          4.8180881,
+          45.7330027
+        ],
+        [
+          4.8183253,
+          45.733344
+        ],
+        [
+          4.8184682,
+          45.7333009
+        ],
+        [
+          4.8185427,
+          45.7332811
+        ]
+      ],
+      [
+        [
+          4.8177287,
+          45.7325929
+        ],
+        [
+          4.8177696,
+          45.7325786
+        ],
+        [
+          4.8177733,
+          45.7325495
+        ],
+        [
+          4.8177028,
+          45.7324974
+        ],
+        [
+          4.817642,
+          45.7324439
+        ],
+        [
+          4.8175958,
+          45.732468
+        ],
+        [
+          4.8175519,
+          45.7324909
+        ],
+        [
+          4.8175181,
+          45.7325085
+        ],
+        [
+          4.8175843,
+          45.732535
+        ],
+        [
+          4.8176839,
+          45.732575
+        ]
+      ],
+      [
+        [
+          4.8180881,
+          45.7330027
+        ],
+        [
+          4.8181088,
+          45.7329872
+        ],
+        [
+          4.8180306,
+          45.7329194
+        ],
+        [
+          4.8179365,
+          45.7328268
+        ],
+        [
+          4.817874,
+          45.7328093
+        ]
+      ],
+      [
+        [
+          4.8183719,
+          45.7319715
+        ],
+        [
+          4.81831,
+          45.732113
+        ],
+        [
+          4.8182941,
+          45.7321826
+        ],
+        [
+          4.8179953,
+          45.7322739
+        ],
+        [
+          4.8178554,
+          45.7320572
+        ],
+        [
+          4.8177309,
+          45.7320956
+        ],
+        [
+          4.8176555,
+          45.7319793
+        ],
+        [
+          4.8174279,
+          45.7320585
+        ],
+        [
+          4.8173797,
+          45.7319704
+        ],
+        [
+          4.8173475,
+          45.7319114
+        ],
+        [
+          4.817439,
+          45.7319154
+        ],
+        [
+          4.8175042,
+          45.7319182
+        ],
+        [
+          4.8179298,
+          45.7319623
+        ],
+        [
+          4.8179837,
+          45.732045
+        ],
+        [
+          4.8182752,
+          45.7319762
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        4.81808,
+        45.732595
+      ]
+    ],
+    "datum": "median",
+    "featherM": 4
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local plaza grade y=0; rigid building, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "41 m published height. OSM body envelope is smaller than the architect’s 190 × 90 m overall project dimensions. Fold locations, glass frame, roof funnels, supports and plinth heights estimated from attributed photographs; no textures or external meshes. Cityscape and Full 3D world not tested yet, integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/musee-des-confluences-near.glb",
+      "bytes": 1304872,
+      "triangles": 18022,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -56.916900634765625,
+          -2.3841858265427618e-8,
+          -82.07242584228516
+        ],
+        "max": [
+          41.164737701416016,
+          41,
+          76.09835052490234
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/musee-des-confluences-far.glb",
+      "bytes": 230284,
+      "triangles": 3491,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -56.916900634765625,
+          -2.3841858265427618e-8,
+          -82.11467742919922
+        ],
+        "max": [
+          41.2025032043457,
+          41,
+          76.09835052490234
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/musee-des-confluences/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

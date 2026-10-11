@@ -1,0 +1,67 @@
+{
+  "id": "pont-pierre-laporte",
+  "name": "Pont Pierre-Laporte",
+  "kind": "bridge",
+  "origin": [
+    -71.290433,
+    46.7451018
+  ],
+  "height": 122.5,
+  "padM": 60,
+  "frontageBearing": 157.6,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y = 0 is mean high water on the flat Peregrine basemap; no absolute altitude, DEM or latitude stretch is baked in. The road surface is authored level at 54.0 m from the north anchorage to the south anchorage (45.7 m published clearance at mid-span plus an estimated 8.3 m truss and floor) and the ends ease to the approach roads at run time (bridge-profile.js; the real-deck profile in Full 3D world, layer.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: main span 667.5 m, side spans 186.5 m, 1,040.6 m between anchorages, towers 122.5 m above mean high water, 45.7 m clearance at mid-span, cable planes 27.4 m apart, roadway 21.9 m, six lanes, cables 0.62 m. Mapped: the two carriageways, the bridge ends and the approach roads. Estimated: tower positions (centred on the mapped bridge, both at the water's edge), leg sections and taper, portal arches, the deck-level strut, truss depth and panel layout, suspender spacing (15.2 m), cable sag, anchorage and pier massing, approach viaduct piers, lamp spacing. Flat-map convention: the deck is level between the anchorages and ramps over 800 m at each end down to the approach roads (steepest grade 10.1 %).",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-pierre-laporte-near.glb",
+      "bytes": 722764,
+      "triangles": 19840,
+      "drawCalls": 20,
+      "bounds": {
+        "min": [
+          -463.74444580078125,
+          -0.9599999785423279,
+          -1244.3646240234375
+        ],
+        "max": [
+          613.3416137695312,
+          122.5,
+          1177.0330810546875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-pierre-laporte-far.glb",
+      "bytes": 203756,
+      "triangles": 5340,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -463.74444580078125,
+          -0.9599999785423279,
+          -1244.3646240234375
+        ],
+        "max": [
+          613.3416137695312,
+          122.5,
+          1177.0330810546875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-pierre-laporte/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

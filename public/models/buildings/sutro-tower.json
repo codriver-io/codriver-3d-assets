@@ -1,0 +1,73 @@
+{
+  "id": "sutro-tower",
+  "name": "Sutro Tower",
+  "kind": "building",
+  "origin": [
+    -122.4528526,
+    37.7552413
+  ],
+  "height": 297.8,
+  "padM": 34,
+  "frontageBearing": 90,
+  "rangeM": 9000,
+  "minZoom": 12.5,
+  "nearM": 700,
+  "legBearings": [
+    270,
+    30,
+    150
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The tower foot is about 254 m above sea level on Mount Sutro, not baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Leg, platform and crossarm plans, leg slope and paint bands come from the OSM 3D mapping and the published level heights; the leg taper, the lattice and mast construction, the guy cables, the antenna pods and the aviation lights are estimated from photographs. The platforms are solid plates (pale brown soffits); the transmission building, antennas on the platforms and the ladder and lift enclosures are not modelled; the interior is empty.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/sutro-tower-near.glb",
+      "bytes": 282936,
+      "triangles": 7297,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -30.719268798828125,
+          0,
+          -29.839454650878906
+        ],
+        "max": [
+          21.794269561767578,
+          297.79998779296875,
+          29.858552932739258
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/sutro-tower-far.glb",
+      "bytes": 51128,
+      "triangles": 863,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -30.70916175842285,
+          0,
+          -29.75855255126953
+        ],
+        "max": [
+          21.784162521362305,
+          297.79998779296875,
+          29.75855255126953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/san-francisco/sutro-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

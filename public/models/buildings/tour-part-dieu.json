@@ -1,0 +1,68 @@
+{
+  "id": "tour-part-dieu",
+  "name": "Tour Part-Dieu (le Crayon)",
+  "kind": "building",
+  "origin": [
+    4.85375495,
+    45.7610615
+  ],
+  "height": 165,
+  "padM": 25,
+  "frontageBearing": 270,
+  "radius": 22.05,
+  "shoulderY": 141.9,
+  "columns": 71,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid tower foundation, no terrain, absolute altitude or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "165 m overall height and 71 perimeter columns: Ville de Lyon. OSM shell 141.9 m and glass pyramid 23 m; 44 m diameter corroborated by the photographed entrance plaque. Window/reveal sizes, storey distribution, crown glazing grid and entrance position estimated from photographs. Opaque glazing; signage, interiors and adjoining low office annex omitted. Rotation of the square roof is baked from its OSM corners. Both placement modes require separate app verification.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-part-dieu-near.glb",
+      "bytes": 1677268,
+      "triangles": 30883,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -22.036357879638672,
+          0,
+          -22.048120498657227
+        ],
+        "max": [
+          22.049999237060547,
+          165,
+          22.048120498657227
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-part-dieu-far.glb",
+      "bytes": 292884,
+      "triangles": 5260,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -22.018798828125,
+          0,
+          -22.018798828125
+        ],
+        "max": [
+          22.018798828125,
+          165,
+          22.018798828125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-part-dieu/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bankers-hall",
+  "name": "Bankers Hall",
+  "kind": "building",
+  "origin": [
+    -114.069122,
+    51.045251
+  ],
+  "height": 197,
+  "padM": 74,
+  "frontageBearing": 92,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude (downtown Calgary stands about 1,045 m above sea level). The mast tips at 197 m are above this local grade.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan of both towers and of the podium parts, the 197 m / 52-level height and the 4/5/3-level podium counts are mapped (OpenStreetMap) or sourced; the floor pitch, window layout and lit-window pattern, the stepped tier heights, the crown height, slope and the pedimented slot, the podium level height and glazing, the glass roof over the galleria and the masts are estimates from published photographs. The West Parkade, the Plus-15 bridges and the street furniture are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bankers-hall-near.glb",
+      "bytes": 1045188,
+      "triangles": 19139,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -56.04999923706055,
+          0,
+          -43.77921676635742
+        ],
+        "max": [
+          58.067378997802734,
+          197,
+          43.391910552978516
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bankers-hall-far.glb",
+      "bytes": 248136,
+      "triangles": 4415,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -56.04999923706055,
+          0,
+          -44.01660919189453
+        ],
+        "max": [
+          58.329097747802734,
+          197,
+          43.64064407348633
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/calgary/bankers-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -22,3 +22,7 @@ Source: [`src/peregrine/landmarks/montreal-bridges-geometry.js`](../../src/pereg
 
 - [Québec heritage inventory](https://www.patrimoine-culturel.gouv.qc.ca/detail.do?id=190922&methode=consulter&type=bien)
 - [Mapped alignment / footprint · OpenStreetMap](https://www.openstreetmap.org/copyright)
+
+## QA pass — October 2026
+
+Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). far drops parapet and track rails and sub-pixel bracing; near removes hidden and coplanar slab, bed and pier-top faces; alignment, profile and deck heights unchanged. Exported cost: near 56,988 triangles / 29 draws / 3,086,900 bytes; far 10,298 / 4 / 547,568.

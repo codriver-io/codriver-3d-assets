@@ -157,15 +157,15 @@ export function kit(put, { near = true } = {}) {
   }
 
   /** Glazing: a glass polygon, its frame, and an optional mullion grid. `pts` are 3D points near the face plane. */
-  function glaze(F, pts, { mat = 'glass', frame = 0.22, grid = null, gridStep = 2, gridAngle = 0.8, gridWidth = 0.09, off = 0.06, is2 = false } = {}) {
+  function glaze(F, pts, { mat = 'glass', frame = 0.22, grid = null, gridStep = 2, gridAngle = 0.8, gridWidth = 0.09, off = 0.1, is2 = false } = {}) {
     const r2 = patch(F, pts, mat, off, is2);
-    if (frame > 0 && near) outline(F, r2, { width: frame, off: off + 0.03 });
+    if (frame > 0 && near) outline(F, r2, { width: frame, off: off + 0.05 });
     if (grid && near) hatch(F, r2, { angle: gridAngle, step: gridStep, width: gridWidth, off: off + 0.05 });
     return r2;
   }
 
   /** Cladding seams over a whole face. */
-  const seams = (F, o) => hatch(F, F.ring, { off: 0.025, mat: 'seam', ...o });
+  const seams = (F, o) => hatch(F, F.ring, { off: 0.05, mat: 'seam', ...o });
 
   /**
    * Slab: an extruded polygon whose top is a plane, walls leaning by a shear. Roof outline `ring` is

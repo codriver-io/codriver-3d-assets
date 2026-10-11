@@ -1,0 +1,69 @@
+{
+  "id": "walterdale-bridge",
+  "name": "Walterdale Bridge",
+  "kind": "bridge",
+  "origin": [
+    -113.5017319,
+    53.5283206
+  ],
+  "height": 56,
+  "padM": 50,
+  "frontageBearing": 17.2,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "rangeM": 2500,
+  "nearM": 850,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; deck 13 m, crown 56 m. World uses a separate estimated 625 m absolute deck, fitted to DEM banks; no terrain baked into GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 230 m deck, 206 m arch span, 22.4 m main deck, three northbound lanes, 16 hangers per plane. DIALOG gives 56 m arch height; City project sheet gives 43 m above deck. Rib section, inclination, foundation details, SUP widths, lamp fittings and absolute elevation are photographic estimates, not survey.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/walterdale-bridge-near.glb",
+      "bytes": 1303472,
+      "triangles": 26264,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -114.5450439453125,
+          -0.8700000047683716,
+          -289.13311767578125
+        ],
+        "max": [
+          69.69222259521484,
+          56,
+          280.4238586425781
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/walterdale-bridge-far.glb",
+      "bytes": 366484,
+      "triangles": 8272,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -114.5450439453125,
+          -0.8700000047683716,
+          -289.13311767578125
+        ],
+        "max": [
+          69.69222259521484,
+          56,
+          280.4238586425781
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/walterdale-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

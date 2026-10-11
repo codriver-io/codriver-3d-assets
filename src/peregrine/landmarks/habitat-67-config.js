@@ -8,8 +8,8 @@ export const HABITAT = {
   datum: 'Local flat-map ground = 0 m; plaza underside touches ground. No sea-level elevation or drivable surface.',
 };
 export const HABITAT_PALETTES = {
-  light: { concrete: '#bfb7a3', stone: '#968d7d', glass: '#35484c', rail: '#53554c', roof: '#b1a18a', steel: '#6b7953' },
-  dark: { concrete: '#889298', stone: '#6f7982', glass: '#425967', rail: '#a3adb3', roof: '#77848c', steel: '#4e655a' },
+  light: { concrete: '#a39b8c', stone: '#8a8274', glass: '#35484c', rail: '#53554c', roof: '#a99a84', steel: '#6b7953' },
+  dark: { concrete: '#7a858b', stone: '#636d76', glass: '#425967', rail: '#a3adb3', roof: '#6d7a82', steel: '#4e655a' },
 };
 export const HABITAT_STRETCH = mercStretch(HABITAT.origin[1]);
 export const HABITAT_MERCATOR = [lngToMercX(HABITAT.origin[0]), -latToMercY(HABITAT.origin[1])];

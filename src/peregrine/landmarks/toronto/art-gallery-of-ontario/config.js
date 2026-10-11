@@ -30,6 +30,17 @@ export const PALETTES = {
   },
 };
 
+// Draw-call budget (docs/3d-toronto-art-gallery-of-ontario.md): design names on the left, the exported material on the
+// right. Near keeps all twelve (12 draws). Far folds look-alikes into one draw: the two blue titanium tones, the grey
+// roof into the grey metal, the off-white stone and plant paint into the off-white precast, and the unshaded belt
+// glazing into the unshaded ribbed glazing (both light amber after dark), which leaves seven.
+export const FOLD = {
+  near: {},
+  far: { titaniumDeep: 'titanium', roof: 'metal', stone: 'precast', paint: 'precast', light: 'glow' },
+};
+/** The exported material for a design name at a detail level. */
+export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
+
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap (the Dundas Street West sidewalk); no absolute altitude. The site is level in the model; the real block falls gently toward Grange Park.',
   attribution: 'Original procedural mesh. Mapped footprint and building parts © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',

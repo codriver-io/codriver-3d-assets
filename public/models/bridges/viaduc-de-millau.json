@@ -1,0 +1,69 @@
+{
+  "id": "viaduc-de-millau",
+  "name": "Millau Viaduct",
+  "kind": "bridge",
+  "origin": [
+    3.02242,
+    44.07999
+  ],
+  "height": 155.25,
+  "padM": 1450,
+  "frontageBearing": 173,
+  "rangeM": 8500,
+  "nearM": 2600,
+  "terrainPolicy": "absolute-deck",
+  "belowGradeM": 240,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the north abutment finished road. Published unequal pier lengths extend below this datum; no DEM or absolute altitude is baked. Cityscape flattens the deck to live approach grade; Full 3D world fits the rigid graded deck between live plateau samples and lands each pier on local DEM.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2460 m deck, 204 + 6×342 + 204 m spans, 32.05 m width, seven 87 m steel pylons, 154 single-plane stays, 3.025% grade. Estimated pier sections, anchor heights, rail/wind-screen construction and abutments. 343 m is maximum real ground-to-crown height, not the local-datum crown ordinate.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/viaduc-de-millau-near.glb",
+      "bytes": 2083280,
+      "triangles": 68442,
+      "drawCalls": 32,
+      "bounds": {
+        "min": [
+          -119.66436004638672,
+          -232.64349365234375,
+          -1310.0123291015625
+        ],
+        "max": [
+          198.99789428710938,
+          155.24400329589844,
+          1284.3839111328125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/viaduc-de-millau-far.glb",
+      "bytes": 342252,
+      "triangles": 14280,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -119.66436004638672,
+          -232.64349365234375,
+          -1310.0123291015625
+        ],
+        "max": [
+          198.99789428710938,
+          155.24400329589844,
+          1284.3839111328125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/viaduc-de-millau/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

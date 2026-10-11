@@ -1,0 +1,3 @@
+// No mapped building extrusion. Roadway ownership is provided by PROFILE.
+export const FOOTPRINTS=[];
+export const OSM_WAYS=[175326660,451293733,709287392,8515751,931254808,1516540140,471835847,693128386,471835844,697598850];

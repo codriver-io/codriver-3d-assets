@@ -1,0 +1,109 @@
+{
+  "id": "catedral-primada-de-colombia",
+  "name": "Catedral Primada de Colombia",
+  "kind": "building",
+  "origin": [
+    -74.07524,
+    4.59796
+  ],
+  "height": 52,
+  "padM": 80,
+  "frontageBearing": 302,
+  "rotationDeg": 32,
+  "nearM": 600,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -74.07533306853097,
+          4.59821499257166
+        ],
+        [
+          -74.07465439614165,
+          4.59779227580321
+        ],
+        [
+          -74.0748530649881,
+          4.59747536239322
+        ],
+        [
+          -74.07553173737742,
+          4.59789807916167
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -74.07533306853097,
+        4.59821499257166
+      ],
+      [
+        -74.07465439614165,
+        4.59779227580321
+      ],
+      [
+        -74.0748530649881,
+        4.59747536239322
+      ],
+      [
+        -74.07553173737742,
+        4.59789807916167
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid building on local flat grade y=0; no absolute altitude or terrain deformation.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "52 m tower height from published description; doorway dimensions 7.2×3.6 m and 5.6×2.8 m. Partial cathedral envelope derived from OSM way 24251969; adjoining Cabildo/Sagrario and rear house remain provider-owned. Roof, dome, tower stages and ornament are photo-based estimates. Rotation baked once at 32 degrees. Terrain median pad is proposed; integration not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/catedral-primada-de-colombia-near.glb",
+      "bytes": 1780080,
+      "triangles": 31568,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -31.417699813842773,
+          0,
+          -27.479503631591797
+        ],
+        "max": [
+          63.65464782714844,
+          52,
+          52.65669631958008
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/catedral-primada-de-colombia-far.glb",
+      "bytes": 368088,
+      "triangles": 6734,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -31.417699813842773,
+          0,
+          -27.479503631591797
+        ],
+        "max": [
+          63.65464782714844,
+          52,
+          52.65669631958008
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-primada-de-colombia/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

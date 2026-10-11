@@ -1,0 +1,169 @@
+{
+  "id": "royal-palace-oslo",
+  "name": "Royal Palace, Oslo",
+  "kind": "building",
+  "origin": [
+    10.72740248,
+    59.91714405
+  ],
+  "height": 36.5,
+  "padM": 100,
+  "frontageBearing": 120,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          10.727635,
+          59.9169471
+        ],
+        [
+          10.7277441,
+          59.9169157
+        ],
+        [
+          10.7278577,
+          59.917014
+        ],
+        [
+          10.7278589,
+          59.917015
+        ],
+        [
+          10.7279722,
+          59.9171129
+        ],
+        [
+          10.7278628,
+          59.9171443
+        ],
+        [
+          10.7281983,
+          59.9174366
+        ],
+        [
+          10.7278053,
+          59.9175499
+        ],
+        [
+          10.7271752,
+          59.9177316
+        ],
+        [
+          10.7270427,
+          59.9176186
+        ],
+        [
+          10.7270625,
+          59.9176128
+        ],
+        [
+          10.7276718,
+          59.9174342
+        ],
+        [
+          10.7274653,
+          59.9172542
+        ],
+        [
+          10.7274182,
+          59.9172678
+        ],
+        [
+          10.7272001,
+          59.9170777
+        ],
+        [
+          10.7272485,
+          59.9170637
+        ],
+        [
+          10.7270443,
+          59.9168858
+        ],
+        [
+          10.7264285,
+          59.9170643
+        ],
+        [
+          10.7264082,
+          59.9170701
+        ],
+        [
+          10.7262734,
+          59.9169512
+        ],
+        [
+          10.7269085,
+          59.916768
+        ],
+        [
+          10.7272785,
+          59.9166614
+        ],
+        [
+          10.7273,
+          59.9166552
+        ],
+        [
+          10.727635,
+          59.9169471
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 16
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the palace terrace on Bellevue. The grass banks down to Slottsplassen and the park slopes are not modelled. Full 3D world holds the footprint at its median DEM (terrainPad) so a sample on the avenue does not sink the terrace.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: Linstow, 1825–1849, plastered brick on a cut-stone base, main wing 100.8 × 24.1 × 23 m, side wings 40.7 × 14.3 × 16 m, highest point of the building 25 m, hexastyle Ionic portico. Estimated: every storey height except the column band (OSM 8–19 m), bay widths, cornice projection, pediment apex 24.25 m. The flagpole is carried to 36.5 m so the Norwegian flag clears the pediment as in the south-front photograph. The Karl Johan statue, the stair and the guardhouses are not modelled.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/royal-palace-oslo-near.glb",
+      "bytes": 723592,
+      "triangles": 13117,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -62.451026916503906,
+          -1.9073486612342094e-7,
+          -65.0345687866211
+        ],
+        "max": [
+          43.91122055053711,
+          36.5,
+          53.95502853393555
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/royal-palace-oslo-far.glb",
+      "bytes": 352556,
+      "triangles": 6273,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -62.451026916503906,
+          -1.9073486612342094e-7,
+          -65.0345687866211
+        ],
+        "max": [
+          43.91122055053711,
+          36.5,
+          53.95502853393555
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/royal-palace-oslo/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

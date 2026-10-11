@@ -63,10 +63,12 @@ Ribs are drawn in vertical section planes (the real arches are raked); the spira
 
 | Export | Bytes | Triangles | Draw calls |
 | --- | ---: | ---: | ---: |
-| `art-gallery-of-ontario-near.glb` | 981 792 | 18 108 | 12 |
-| `art-gallery-of-ontario-far.glb` | 293 184 | 5 144 | 12 |
+| `art-gallery-of-ontario-near.glb` | 856 884 | 18 108 | 12 |
+| `art-gallery-of-ontario-far.glb` | 250 608 | 5 144 | 7 |
 
-Texture-free, self-contained GLB 2.0. Contract budgets: near 160 000 / 48, far 45 000 / 14. Costs are scene metrics, not Tesla hardware measurements.
+Texture-free, self-contained GLB 2.0. Budgets: building near 60 000 / 14 / 2.5 MB, far 12 000 / 8 / 500 KB.
+
+**Draw budget.** Near keeps all twelve materials. Far folds look-alikes through `FOLD` in `config.js`: `titaniumDeep` into `titanium` (far uses one tone anyway), the grey `roof` into the grey `metal`, the off-white `stone` and `paint` into the off-white `precast`, and the belt glazing `light` into the ribbed glazing `glow` (both unshaded, both amber after dark). That is seven draws. The storey reveal bands now stand 6 cm off the walls, which took the near coplanar overlap from 79 m2 to 2 m2. Costs are scene metrics, not Tesla hardware measurements.
 
 ## Verification evidence
 

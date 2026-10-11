@@ -1,0 +1,65 @@
+{
+  "id": "kilden-performing-arts-centre",
+  "name": "Kilden Performing Arts Centre",
+  "kind": "building",
+  "origin": [
+    7.996949782420708,
+    58.13912380863734
+  ],
+  "height": 22,
+  "padM": 68,
+  "frontageBearing": 257.992650796286,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local quay grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "22 m roof is the published cantilever line. The lip stays near half to three-quarters of that height; lobe positions, the 26 m glass setback and oak thickness are photographic estimates. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/kilden-performing-arts-centre-near.glb",
+      "bytes": 578564,
+      "triangles": 15599,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -43.684810638427734,
+          0,
+          -52.00910568237305
+        ],
+        "max": [
+          44.307823181152344,
+          22,
+          52.378273010253906
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/kilden-performing-arts-centre-far.glb",
+      "bytes": 138820,
+      "triangles": 4227,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -43.684810638427734,
+          0,
+          -51.91950607299805
+        ],
+        "max": [
+          44.28392791748047,
+          22,
+          52.378273010253906
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/kilden-performing-arts-centre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "pont-papineau-leblanc",
+  "name": "Pont Papineau-Leblanc",
+  "kind": "bridge",
+  "origin": [
+    -73.6668392,
+    45.5761582
+  ],
+  "height": 49.7,
+  "padM": 60,
+  "frontageBearing": 142.5,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y = 0 is the river on the flat Peregrine basemap; no absolute altitude, DEM or latitude stretch is baked in. The road surface is authored on one vertical profile: ramps from grade 0 on the approach roads (85 m beyond the Laval end, 120 m beyond the Montréal end), level at 11.3 m (published deck height above the water) across the main span. Cityscape fits the ramp feet to the loaded approach roads; Full 3D world refits the deck between the terrain roads and 28.2 m above sea level (river 16.9 m) at run time (pont-papineau-leblanc-profile.js, layer.js).",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: opened 1969, cable-stayed with a fan of stays, weathering steel, orthotropic deck; 241 m main span, 90 m side spans, 421 m cable-stayed length (458.6 m over the abutments); 27.2 m wide, six lanes; two central steel pylons 1.8 m x 1.8 m, 38.4 m above the deck; four stay bundles of 12 cables; stays every 43-52 m along the deck; deck 11.3 m above the water, 7.6 m clearance. Mapped: the two carriageways (444.9 m, 142.4°), approach roads, junctions, bridge outline. Estimated: the cable-stayed unit centred on the mapped bridge (no pier is mapped), the stay anchor stations, the box-girder section, pier and abutment shapes, the short end spans, the vertical profile apart from the deck height, colours, lamps. Flat-map convention: ramps on the approach roads, 85 m (Laval, short of the Boulevard Lévesque exit) and 120 m (Montréal) beyond the bridge ends, steepest grade 7.2 %.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-papineau-leblanc-near.glb",
+      "bytes": 501040,
+      "triangles": 7800,
+      "drawCalls": 27,
+      "bounds": {
+        "min": [
+          -199.0172882080078,
+          -0.30000001192092896,
+          -253.5832977294922
+        ],
+        "max": [
+          218.4926300048828,
+          50.54999923706055,
+          278.9691467285156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-papineau-leblanc-far.glb",
+      "bytes": 154808,
+      "triangles": 2400,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -199.0172882080078,
+          -0.30000001192092896,
+          -253.5832977294922
+        ],
+        "max": [
+          218.4926300048828,
+          50.54999923706055,
+          278.9691467285156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/quebec/pont-papineau-leblanc/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
