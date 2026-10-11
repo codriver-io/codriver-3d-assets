@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (92 released)
+## The collection (93 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -98,6 +98,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `ponts-jumeaux` | Ponts-Jumeaux | Toulouse | bridge, road-fitted |
 | `viaduc-de-calix` | Viaduc de Calix | Caen | bridge, road-fitted |
 | `pegasus-bridge` | Pegasus Bridge | Bénouville | bridge, road-fitted |
+| `pont-de-la-fonderie` | Pont de la Fonderie | Caen | bridge, road-fitted |
 | `pont-de-normandie` | Pont de Normandie | Honfleur | bridge, road-fitted |
 | `abbaye-aux-hommes` | Abbaye aux Hommes (Saint-Étienne and Hôtel de Ville) | Caen | building |
 

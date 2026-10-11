@@ -18731,6 +18731,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-de-la-fonderie",
+      "name": "Pont de la Fonderie",
+      "kind": "bridge",
+      "location": "Caen, canal entrance / Bassin Saint-Pierre, France",
+      "status": "ready",
+      "description": "Restored red steel swing bridge in its closed road position, with stepped plate girders, riveted stiffeners, low counterweight tail, circular bank-side slewing bearing and open navigation channel.",
+      "manifest": "/models/bridges/pont-de-la-fonderie.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-de-la-fonderie/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-de-la-fonderie --no-check",
+        "provenance": "Original procedural model authored 2026-10-10. Mapped geometry © OpenStreetMap contributors, ODbL 1.0. Visual references only: File:Pont de la fonderie.jpg / Jérémy Qtn / CC BY-SA 4.0 and File:Port de Caen 382.JPG / Viault / CC BY-SA 3.0 (context only). Two restoration photographs from Ports de Normandie (2023): © Ports de Normandie and © Eric Destable, no redistribution licence asserted; both remain ignored reference-only scratch. No photographs, textures, scans or outside meshes are delivered.",
+        "references": [
+          {
+            "label": "Current bridge identity, 1952 construction and 2023 restoration, Ports de Normandie",
+            "url": "https://portsdenormandie.fr/fr/node/961"
+          },
+          {
+            "label": "Caen la mer: current bridge in service 1951, renovation launched 2022",
+            "url": "https://caenlamer.fr/actualites/pont-de-la-fonderie-travaux-de-renovation"
+          },
+          {
+            "label": "Municipal Caen Mag 230: red repaint and reopening 29 September 2023",
+            "url": "https://caen.fr/sites/default/files/2023-11/CAENmag230_planches.pdf"
+          },
+          {
+            "label": "Restoration photographs, riveted sides, counterweight and slewing bearing",
+            "url": "https://portsdenormandie.fr/fr/actualites/port-de-caen-ouistreham-repose-du-pont-de-la-fonderie"
+          },
+          {
+            "label": "Mapped swing roadway, two lanes, no lane markings",
+            "url": "https://www.openstreetmap.org/way/234575726"
+          },
+          {
+            "label": "Mapped bridge outline and 12 m navigation width tag",
+            "url": "https://www.openstreetmap.org/way/234575732"
+          },
+          {
+            "label": "Older blue bridge reference, Jérémy Qtn, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_de_la_fonderie.jpg"
+          },
+          {
+            "label": "Port context only, Viault, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Port_de_Caen_382.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-la-fonderie/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-de-la-fonderie&view=detail"
+          }
+        ]
+      },
+      "notes": "Current restored red closed position, checked against both official 2023 restoration photos; 1854 historical crossing and 1951/1952 current structure dates remain distinct. OSM 22.78 m roadway / about 9.96 m deck / 12 m navigation width; no survey. Estimated 1.55 m flat deck, six-metre central road, main plates raised 1.30 to 1.55 m, bearing enlarged 5.76 to 7.70 m at the same 5 m bank-side station, charcoal counterweight caps. Full 9.85 m approach paving with eight-metre width blends preserves live joins; both 22 m ramps peak at 7.38%, previously 10.57%. Final near 26,912 triangles / 7 draws / 1,225 KiB (1,254,308 bytes), far 5,804 / 7 / 170 KiB (174,192 bytes), within budget. All 293 requested focused/conformance tests pass; QA zero coplanar overlaps and back-face hits, no flags. Revised exported near/far light/dark reference contact sheet and both-mode app approach sheet were inspected. No opening animation, lane stripes, graffiti, photographs or textures ship; mechanism sizes and vertical dimensions remain approximations.",
+      "documentation": "docs/assets/top-cities-pont-de-la-fonderie.md",
+      "city": "Caen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
