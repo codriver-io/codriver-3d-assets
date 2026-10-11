@@ -1,6 +1,6 @@
 # Pegasus Bridge — current 1994 road crossing
 
-Original procedural model of the Scherzer rolling-lift bascule carrying D514 across the Caen canal, Bénouville, in closed traffic position. The 1934/35 original exhibited at Memorial Pegasus (dossier reference 2) is excluded. Independent review rated the first export PASS-WITH-NITS, recognisability 4/5; the four requested corrections are implemented below. Updated reviewer sign-off remains separate from builder verification.
+Original procedural model of the closed Scherzer rolling-lift bascule carrying D514 across the Caen canal at Bénouville. The 1934/35 museum original (dossier reference 2) is excluded. This revision addresses the lead's REVIEW-2 live HD lane defect; the previous review's darker steel, striped barriers, sign heads, deep fascia and tower catwalk remain.
 
 ## Sources and dimensions
 
@@ -10,79 +10,78 @@ Visual references: [portal and rolling shoes](https://commons.wikimedia.org/wiki
 
 | Quantity | Model | Basis |
 | --- | ---: | --- |
-| Bascule leaf | 45.7 m | Nominal dimension supplied by lead; public dimension metadata is ambiguous between versions, not a modern engineering survey |
-| Mapped crossing | 78.165 m | Actual OSM roadway endpoints |
+| Bascule leaf | 45.7 m | Lead's nominal dimension; not a modern engineering survey |
+| Mapped crossing / authored road length | 78.165 m | OSM movable road way 30319467, bank to bank |
 | Bridge axis | 115.9° east of north | Mapped roadway |
-| Deck / carriageway | 15.6 / 7.4 m | Outline and photo estimate |
-| Deck above flat datum | 3.2 m | Photo estimate, not published clearance |
+| Deck / carriageway | 15.6 / 7.4 m | Outline and photo estimate, fitted to live carriageway width |
+| Deck above bank road datum | 0.10 m | Render clearance, not canal altitude or surveyed clearance |
 | Main portal height | 20 m above deck | Photo estimate |
 | Rolling quadrant radius | 8.4 m | Photo estimate |
 | Counterweight housing | 6.2 × 10.7 × 8.7 m | Photo estimate |
-| Control shaft / cab | radius 2.15 / 3.25 m; roof 9.81 m high | Cadastre shaft radius approximately 2.4 m; heights/overhang estimated |
-| Ramps | 70 m each, maximum 6.857% | Flat-map convention; previously 45 m / 10.667% |
-| Exterior fascia | 1.2 m deep | Reference-photo estimate |
-| Deck / upper tower catwalk | deck +0.15 m / local y=7.55 m | Photo estimate, with railed stair to the machinery platform |
+| Control shaft / cab | radius 2.15 / 3.25 m; roof y=9.81 m | Cadastre shaft radius approximately 2.4 m; heights/overhang estimated |
+| Authored approaches | None | Ordinary streets remain provider-owned |
+| Exterior fascia | 1.2 m deep | Photo estimate; below grade, world only |
+| Abutments | y=-2.3 to -0.6 m | Estimated shallow supports; not a surveyed foundation |
+| Deck / upper tower catwalk | deck +0.15 m / local y=7.55 m | Photo estimate |
 
-## Frame, geometry and road fitting
+## Frame and road fitting
 
-Origin `[-0.27419275,49.24239125]`; +X east, +Y up, +Z south. Station runs west to east along mapped D514 nodes, positive lateral to the right (south). Rotation baked once through `PROFILE.bridgePoint`. Local `y=0` is flat-map grade; no terrain, canal water plane or absolute sea-level altitude is baked in.
+Origin `[-0.27419275,49.24239125]`; +X east, +Y up, +Z south. Station runs west to east along the mapped bridge, positive lateral to the right (south). Rotation is baked once through `PROFILE.bridgePoint`. Local y=0 is bank road grade; no terrain, water plane or sea-level altitude is baked in.
 
-The profile follows roadway ways 4889065, 1263068387, 128915830, 1263068388, 30319467, 1265906734, 884677048, 1265645555 and 106423247. The last way continues the east ramp along the real curve, without extrapolating a straight axis. The 218.165 m alignment includes 70 m at each approach; deck remains level across the structural 78.165 m. Shared registry layer owns HD overlay, road replacement and navigation surfaces. `terrainPolicy: 'bank-fit'` uses the renderer's bank datum without flattening the canal; this is a relative deck estimate, not surveyed absolute altitude.
+The runtime alignment is exactly the bridge way's endpoints, stations 0 to 78.165 m. The remaining D514 nodes are retained only as geographic source data. No asphalt, walks, kerbs or barriers are authored over ordinary streets beyond the structure ends. `clipStandardEnds: true` and a 0.25 m ownership margin constrain replacement to the span. The shared registry layer preserves and drapes live HD pavement and paint; authored asphalt is the fallback beneath it. A single straight deck interpolates the live bank road datums and adds 0.10 m in both Cityscape and world; `terrainPolicy: 'bank-fit'` supplies the renderer's bank terrain datum without flattening the canal. Heading and lateral corridor rejection remain shared with ordinary bridge road acceptance.
 
-Portal A-frames, open lower X braces, quarter-circle rolling shoes, high counterweight with ribs, machinery cabin, plate-girder leaf and dense rail balusters preserve recognition. The cylindrical tower has cream shaft, green cab/roof and red external stair. Concrete abutment feet and the upper walkway trestle use clamped lift weights; tower stays grade-fixed and superstructure uses deck attachment. Exported `_bridgelift` survives the GLB round trip.
+The bascule frame, counterweight, cabin, rolling sectors, leaf and barriers move down 3.1 m with the new deck datum. The cream control tower retains its actual cadastre centroid and grade-fixed shaft, green cab/roof and red external stair. The structural frame extrapolates only for that detached tower and its access walkway; road ownership never extrapolates. Tower and trestle foot weights remain fixed; superstructure follows the deck. `_bridgelift` survives export.
 
-Materials merged into ten near / nine far batches. Day steel is `#aeb7bd`; the rolling quadrants use darker `edge` (`#89979f`). Dark theme uses corresponding blue-grey values; lamp material stays self-lit. Both LODs retain curved sectors, open portal, fascia, deck-level railed catwalk, banded barrier arms and round red/white sign heads. Near adds seams, bolts, machinery stair, upper catwalk and trestle; far drops fine fittings and most railing posts.
+Geometry is split at bank grade: the submerged fascia, lower girders, slab and abutments share one `foundation` batch. The landmark's own layer hides it on initial load and terrain-off in Cityscape, and restores it with enabled world terrain, including LOD replacement. All other authored vertices are at/above grade. World foundation material is the darker blue-grey edge colour. The detached tower remains separately masked; nearby houses and Café Gondrée stay provider-owned.
 
-## Review changes: before → after
+## Review-2 changes: before → after
 
-1. Plain red pins → red/white banded raised barrier arms with grey base and round prohibition sign heads facing both driving directions, outside the vehicle lanes; both LODs.
-2. White-on-white portal and rolling shoes → mid blue-grey portal steel and darker quadrants; broad bracing and sector outlines remain visible in the distant export views.
-3. 45 m / 10.667% hump with thin exterior edge → 70 m / 6.857% ramps following mapped roads, unchanged 3.2 m central deck and live endpoint datum; full 1.2 m grey exterior girder fascia.
-4. Detached-looking tower / thin diagonal access member → deck-level railed catwalk to tower shaft in both LODs, plus upper horizontal access catwalk, stair, handrails and grounded trestle in near.
+1. **Approach HD paint buried:** 218.165 m of authored road including two 70 m ramps covered pedestrian crossings, centre dashes and a signal stop line → 78.165 m mapped bridge structure only, leaving ordinary approach roads and their paint visible.
+2. **Invented deck hump:** closed deck +3.2 m with 6.857% ramps → straight bank-to-bank deck +0.10 m, with no authored ramps. Portal and bascule silhouette retain their heights relative to the deck.
+3. **Newly buried structural pieces:** lowering would expose underground components through flat Cityscape → below-grade geometry split into a world-only foundation batch; no underground Cityscape vertices in the remaining visible batches.
 
-## Export costs and deterministic checks
+## Export and checks
 
-| LOD | Triangles | Draws | Bytes | KiB |
-| --- | ---: | ---: | ---: | ---: |
-| Before near | 10,644 | 10 | 649,804 | 634.6 |
-| Final near | 11,964 | 10 | 709,680 | 693.0 |
-| Before far | 2,864 | 8 | 167,800 | 163.9 |
-| Final far | 3,764 | 9 | 206,828 | 202.0 |
+| LOD | Previous triangles / draws / bytes (KiB) | Current triangles / draws / bytes (KiB) |
+| --- | --- | --- |
+| Near | 11,964 / 10 / 709,680 (693.0) | 12,748 / 11 / 847,728 (827.9) |
+| Far | 3,764 / 9 / 206,828 (202.0) | 4,100 / 10 / 294,500 (287.6) |
 
-Budget headroom remains large (near ≤120k/40/4.5 MB; far ≤30k/10/1.2 MB). Source and both GLBs have identical bounds per LOD; near/far keep the same silhouette. Eight landmark tests pin actual raycast geometry: leaf contacts, open portal/traffic corridor, rolling quadrant, 1.2 m fascia, round sign head and tower walkway, plus alignment, smooth endpoint joins, heading rejection, footprint envelope and exported attachment weights. Final focused conformance passed all 294 tests, including the eight landmark tests; catalog validation passed 222 records / 414 GLB variants, and the local asset viewer build passed. Deterministic QA reports no budget overrun, zero coplanar overlaps and zero back-face hits in 64 rays; minY remains -0.7 m.
+Within bridge budgets: near ≤120k triangles / 40 draws / 4.5 MB; far ≤30k / 10 / 1.2 MB. The far draw limit includes one world-only batch (Cityscape uses 9; near Cityscape uses 10). Byte increase includes indexed clipping of grade-crossing faces and exported attachment weights. Source and exported bounds agree; minY=-2.3 m, top approximately 21.15 m. Deterministic QA reports no issues, zero coplanar overlaps and 0% back-face hits in 117 rays.
 
-The supplied REVIEW file has no Prepare block and no REVIEW-2 file exists. Equivalent preparation was rerun:
+Focused landmark + registry conformance passed all 296 tests (10 for Pegasus). Tests pin straight datum interpolation, both headings, rejection of ordinary approaches, pavement extent, mapped tower position, both LODs' bascule negative space/contacts, fascia/sign/catwalk, foundation mode visibility and GLB attachment round trip. `node scripts/asset-catalog.mjs` passed 222 records / 414 variants; local catalog inspection build passed. No shared renderer files changed.
+
+REVIEW.md has no Prepare block. Equivalent preparation was rerun after the export:
 
 ```sh
 pnpm build:top-cities-landmarks pegasus-bridge --no-check
-node .agents/skills/build-3d-city/scripts/qa-metrics.mjs --ids pegasus-bridge --out tmp/top-cities/review/pegasus-bridge/metrics-after.json
-node .agents/skills/build-3d-city/scripts/qa-sheet.mjs --ids pegasus-bridge --no-ref --tag 'Review fixes' --out tmp/top-cities/review/pegasus-bridge/after
+node .agents/skills/build-3d-city/scripts/qa-metrics.mjs --ids pegasus-bridge --out tmp/top-cities/pegasus-bridge/metrics-after.json
+node .agents/skills/build-3d-city/scripts/qa-sheet.mjs --ids pegasus-bridge --no-ref --tag 'Span-only flush deck' --out tmp/top-cities/pegasus-bridge/after
 ```
 
-Read the regenerated `tmp/top-cities/review/pegasus-bridge/after/pegasus-bridge.jpg` and the exported camera sheet `tmp/top-cities/shots/pegasus-bridge/review-near-light/pegasus-bridge-glb-near-light-sheet.jpg`. Also read `review-export-reference-sheet.jpg` in the same shots root: dossier refs 4/5 beside final near light side/crossing/detail, near dark, far light and far dark exports. The second and final visual pass turned the initially edge-on sign faces toward traffic; the resulting sheet confirmed the bands/sign head, deeper fascia, darker structural members and connected tower access. No photos were fetched or committed during this review pass.
+Read `tmp/top-cities/pegasus-bridge/after/pegasus-bridge.jpg` against the supplied dossier reference sheet: source/export silhouette, near/far, street, opposite and top views preserve the bascule and tower. One authored look-fix iteration; no reference photos fetched.
 
-## App verification
+## Live HD evidence, 2026-10-11
 
-Source baseline `dd8905d48ab52b3f81a56acfd635329288b5e117` plus isolated landmark changes; local bundle stamp `8e8f9e137355` (generated bundles excluded from commit). Protomaps `tiles.codriver.io`, Cityscape port 3274, terrain port 3276 with Terrarium DEM at zoom ≤15. Both approach points were captured facing 115.8° and 295.8° after rebuilding; scratch helper adapts repository `app-shot.mjs` and records the shared `window.__map.landmarks.heightAt` API. Read `tmp/top-cities/shots/pegasus-bridge/review-approaches-sheet.jpg`: all four west/east forward/reverse approaches are shown in Cityscape and again in world. Both joins meet the loaded roads without an obvious step/gap or doubled generic deck, and the longer ramps remain smooth. Full reports: `review-approaches-cityscape/report.json` and `review-approaches-world/report.json` under the same shots root.
+Isolated branch preview, runtime build `85aebb345d11`; Protomaps `tiles.codriver.io`, Redis 6391. Slot A used Cityscape 3270 and world 3272 with Terrarium DEM zoom ≤15. Ordinary approach/crossing stations, both banks and midspan were captured with HD enabled, paired against `landmarks=off`. Street captures at both banks face each driving direction. Files below are under ignored `tmp/top-cities/pegasus-bridge/hd-check/`:
 
-| Station / sample | Cityscape forward/reverse m | World forward/reverse m above queried ground |
+- `cityscape-banks-sheet.jpg`, `cityscape-approaches-sheet.jpg`, `cityscape-street-sheet.jpg`: Cityscape on|off comparisons.
+- `world-banks-sheet.jpg`, `world-approaches-sheet.jpg`, `world-street-sheet.jpg`: Full 3D world on|off comparisons.
+- `{cityscape,world}-on/report.json`: centreline heightAt in both directions, including ordinary approach/crossing rejection.
+- `street-{cityscape,world}-on/report.json`: both direction captures with loaded/active LOD and foundation visibility.
+
+Both pedestrian crossings, the signal stop lines, centre dashes and surrounding side-road paint remain visible with the model on in both modes. The bank joints show no visible hump, gap, slab/kerb crossing a lane or overlapping authored approach. Near/far export recognition is checked separately from these live near LOD checks.
+
+| Centreline sample | Cityscape forward / reverse (m) | World forward / reverse (m relative to local queried ground) |
 | --- | ---: | ---: |
-| 0, west ramp endpoint | 0 / 0 | approximately 0 / 0 |
-| 0.1, inside west join | 0.00001957 / 0.00001957 | 0.00001957 / 0.00001957 |
-| 70, west abutment | 3.2 / 3.2 | 3.2 / 3.2 |
-| 109.082, span midpoint | 3.2 / 3.2 | 3.34334009 / 3.34334009 |
-| 148.165, east abutment | 3.2 / 3.2 | 3.2 / 3.2 |
-| 218.165, east ramp endpoint | 0 / 0 | approximately 0 / 0 |
-| 12 m beside midpoint | null / null | null / null |
+| West ordinary approach / crossing | null / null | null / null |
+| 0, west bank | 0.10 / 0.10 | 0.10 / 0.10 |
+| 39.082, midpoint | 0.10 / 0.10 | 0.24334009 / 0.24334009 |
+| 78.165, east bank | 0.10 / 0.10 | 0.10 / 0.10 |
+| East ordinary crossing / approach | null / null | null / null |
 
-World midpoint differs because the shared bank datum interpolates between the two mapped bridge ends while query ground samples the canal location. The endpoints compose to zero local road offset in both modes, preserving the loaded join datum. Both directions agree at every sample. These are renderer/API checks, not a real vehicle drive.
+The world midpoint difference is the bank-to-bank ground datum minus the terrain sample under the canal, composed once by the shared renderer. It is not an authored bump. Cityscape HD paint, bank joins, both-direction height API and foundation visibility: **verified locally**. Full 3D world equivalents: **verified locally**. This evidence is not a physical vehicle drive or hardware performance measurement.
 
-Final near/far/street captures were repeated after the last export: every capture reports `loaded: true`, `active: true` and the expected near/far detail. Read `tmp/top-cities/shots/pegasus-bridge/review-app-final-sheet.jpg` (Cityscape top row, Full 3D world bottom row), with reports in `review-app-cityscape/report.json` and `review-app-world/report.json` under the same shots root. The darker portal and rolling sectors remain readable; tower access and fascia remain present in both modes.
+## Limits
 
-Cityscape and Full 3D world near/far visual placement, approach placement and both-direction height API: verified locally for this Protomaps/DEM session. HD lane paint remains not tested; mode/load/terrain lifecycle and hardware remain not tested. All owned source, exports, catalog and documentation are committed together on the isolated landmark branch for release; generated runtime bundles and ignored QA captures are excluded.
-
-## Known approximations and remaining checks
-
-No bascule animation, gears/interior machinery, quay/water model or lettering. Members, cabin/housing heights and operating fittings are photographic estimates. Sidewalks keep a simplified outer edge; the narrow leaf walkway is wider than its local OSM main-span outline by up to approximately 1.8 m, within the full bridge footprint envelope. The approach slab extends outside the structural footprint intentionally. Roof/cab overhang extends beyond cadastre tower shaft mask. These approximations are visible and not a survey.
-
-Local `/osm-lanes` returns 503 without Redis, so HD lane widths/paint/dash continuity remain unverified. Live car/traffic simulation, late/missing terrain, failed loads, mode/reanchor/lifecycle matrix and Tesla hardware remain untested. Updated independent review remains for the coordinator; no shared renderer extensions or rollout changes were needed.
+No bascule animation, gears/interior machinery, quay/water model or lettering. Heights, operating fittings, member sizes and foundations are photographic estimates. Cab overhang exceeds the tower shaft's cadastre footprint; structural tower access is separately accounted for beyond the roadway. Foundation material is consolidated blue-grey for draw economy. Live car/route/traffic/halo/camera motion, paint toggling, far LOD in the app, late/missing terrain, failed loads, repeated mode/reanchor/lifecycle transitions and Tesla hardware remain **not tested**. Updated independent review belongs to the coordinator; no staging rollout or publication occurred.

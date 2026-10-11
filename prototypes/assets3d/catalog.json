@@ -18568,7 +18568,7 @@
       "kind": "bridge",
       "location": "Bénouville",
       "status": "ready",
-      "description": "Original procedural closed Scherzer rolling-lift bascule: white portal, rolling quadrants, counterweight housing, machinery cabin and cylindrical control tower.",
+      "description": "Original procedural closed Scherzer rolling-lift bascule: blue-grey portal, rolling quadrants, counterweight housing, machinery cabin and cylindrical control tower.",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/pegasus-bridge/geometry.js",
         "build": "pnpm build:top-cities-landmarks pegasus-bridge",
@@ -18605,7 +18605,7 @@
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pegasus-bridge/geometry.js"
       },
-      "notes": "45.7 m bascule is the nominal dimension supplied by the lead; 78 m total crossing is mapped. Deck datum, all heights, member dimensions, machinery and tower details are estimates. Closed state only; no animation or museum span. Approaches follow OSM for 70 m each; steepest smooth ramp grade 6.86%. No photographs/textures in exports. Review fixes: red/white banded raised barriers and round sign heads, #aeb7bd steel/darker rolling shoes, 1.2 m exterior girder fascia, deck-level railed tower catwalk in both LODs and supported upper catwalk/stair in near.",
+      "notes": "45.7 m bascule is the nominal dimension supplied by the lead; 78.165 m crossing is mapped. Deck +0.10 m is a render clearance above live bank road datums, not a surveyed canal altitude. No authored approach pavement, walks, kerbs or barriers beyond the mapped bridge ends. Portal/member dimensions and machinery/tower details are photographic estimates. Closed state only, no animation or museum span. Red/white raised barriers and round sign heads, #aeb7bd steel/darker rolling shoes, 1.2 m exterior fascia, deck-level railed tower catwalk in both LODs; supported upper catwalk/stair in near. Below-grade structure split into a mode-dependent foundation batch; no photos/textures in exports.",
       "documentation": "docs/assets/top-cities-pegasus-bridge.md",
       "manifest": "/models/bridges/pegasus-bridge.json",
       "inspection": {

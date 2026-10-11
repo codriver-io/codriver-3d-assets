@@ -6,8 +6,8 @@
     -0.27419275,
     49.24239125
   ],
-  "height": 24.2,
-  "padM": 125,
+  "height": 21.2,
+  "padM": 55,
   "frontageBearing": 115.8,
   "footprintless": true,
   "units": "metres",
@@ -16,43 +16,43 @@
     "y": "up",
     "z": "south"
   },
-  "elevationDatum": "Local flat-map grade y=0; estimated closed deck +3.2 m; no absolute altitude or DEM baked in.",
+  "elevationDatum": "Local bank road grade y=0; closed deck +0.10 m, fitted linearly between live bank datums; no absolute altitude or DEM baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
   "note": "1994 replacement, closed traffic position. Nominal 45.7 m bascule from lead brief, 78 m mapped crossing. Heights, machinery and member sizes estimated from photographs. Portal, curved rolling sectors, counterweight, cabin and detached cylindrical tower; no animation or museum span.",
   "assets": {
     "near": {
       "url": "/models/bridges/pegasus-bridge-near.glb",
-      "bytes": 710204,
-      "triangles": 11964,
-      "drawCalls": 10,
+      "bytes": 848252,
+      "triangles": 12748,
+      "drawCalls": 11,
       "bounds": {
         "min": [
-          -103.03131866455078,
-          -0.699999988079071,
-          -50.649986267089844
+          -38.633914947509766,
+          -2.299999952316284,
+          -24.23138999938965
         ],
         "max": [
-          95.45062255859375,
-          24.25,
-          64.05406951904297
+          43.69077682495117,
+          21.149999618530273,
+          37.317440032958984
         ]
       }
     },
     "far": {
       "url": "/models/bridges/pegasus-bridge-far.glb",
-      "bytes": 207348,
-      "triangles": 3764,
-      "drawCalls": 9,
+      "bytes": 295024,
+      "triangles": 4100,
+      "drawCalls": 10,
       "bounds": {
         "min": [
-          -103.03131866455078,
-          -0.699999988079071,
-          -50.649986267089844
+          -38.633914947509766,
+          -2.299999952316284,
+          -24.23138999938965
         ],
         "max": [
-          95.45062255859375,
-          24.25,
-          64.05406951904297
+          43.69077682495117,
+          21.149999618530273,
+          37.317440032958984
         ]
       }
     }

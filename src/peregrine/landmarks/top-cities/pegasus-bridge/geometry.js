@@ -6,7 +6,7 @@ import { parts } from './pegasus-bridge-parts.js';
 /** Original closed 1994 rolling-lift bridge. No photograph, texture or traced mesh. */
 export function create({detail='near'}={}) {
  const near=detail==='near',b=assetBuilder({...SPEC,palette:PALETTES.light},detail);
- const {box,beam,cylinder,disk,sector}=parts(b),deck=bridgeBuilder(PROFILE,detail);
+ const {box,beam,cylinder,disk,sector,put}=parts(b),deck=bridgeBuilder(PROFILE,detail);
  // Shared strips provide dense curve sampling and live road-fit attachment weights.
  deck.strip('concrete',0,PROFILE.BRIDGE_LENGTH,-7.8,7.8,-.28,.42);
  deck.strip('asphalt',0,PROFILE.BRIDGE_LENGTH,-3.7,3.7,-.025,.03);
@@ -82,7 +82,7 @@ export function create({detail='near'}={}) {
  }
  box('glass',S-6.42,H+10.7,0,.12,1.12,3.1);
  // Fixed concrete abutments: feet remain at grade while caps fit to the deck.
- for(const s of [A+1,Z-1])box('concrete',s,(H-.7)/2,0,3,H-.7,15.8,y=>Math.max(0,Math.min(1,y/(H-.7))));
+ for(const s of [A+1,Z-1])box('concrete',s,-1.45,0,2,1.7,15.8,y=>Math.max(0,Math.min(1,(y+2.3)/1.7)));
  // Circular, cream control tower on its surveyed cadastre outline; dark green cantilever cab.
  const ts=TOWER.s,td=TOWER.lateral;
  cylinder('tower',ts,4.2,td,2.15,8.4,near?32:16,0);
@@ -147,7 +147,7 @@ export function create({detail='near'}={}) {
  // Keep highest thin apex fittings in both LODs.
  for(const d of [-6,6])box('edge',S+1,H+20.5,d,.11,1.1,.11);
  // Merge profile strips into the same material batches, with attributes intact.
- const g=deck.finish();g.children.forEach(m=>b.put(m.geometry.clone(),m.material.name));
+ const g=deck.finish();g.children.forEach(m=>put(m.geometry.clone(),m.material.name,1,true));
  g.children.forEach(m=>{m.geometry.dispose();m.material.dispose();});
  return b.finish();
 }
