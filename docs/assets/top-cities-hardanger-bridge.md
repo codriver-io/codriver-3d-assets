@@ -29,27 +29,39 @@ Original procedural model of Hardangerbrua, the completed August 2013 suspension
 | Tower leg sections | 7.8 × 5.4 m base, 4.5 × 3.4 m top | Photographic estimate |
 | High crossbeam | y=186.75–192.25 m, 20 m across | Photographic estimate |
 | Hanger pitch | 16.375 m near / 32.75 m far | Visual estimate, not engineering fabrication data |
+| Backstay horizontal reach | 260 m behind each saddle, along the main-span bearing | Estimated flat-map anchorage compromise, not surveyed |
+| Anchorage collar / cable terminal | 6 × 4 × 2 m / y=0.8 m | Estimated; four collars have ground attachment weight zero |
 
 Local origin `[6.83033, 60.47848]`, +X east, +Y up, +Z south; station increases north shore to south shore, bearing about 148.97 degrees. Rotation is baked into source/export. Mercator stretch is applied once by the shared layer. No DEM or geographic altitude offsets are baked into vertices. `terrainPolicy: absolute-deck` avoids flattening the fjord and mountains; supports have zero-weight feet, an interpolated lower shaft, and rigid deck-attached upper structure. Tunnel station ranges suppress above-ground clamping beneath mountains.
 
-There are no building/building:part ways in the dossier. `FOOTPRINTS=[]` and `footprintless=true` are deliberate: the man_made=bridge outline is not a provider building extrusion. Road replacement is bounded by the shared centerline/lateral corridor; tests enforce a 16 m lateral model envelope. No shared file was changed.
+There are no building/building:part ways in the dossier. `FOOTPRINTS=[]` and `footprintless=true` are deliberate: the man_made=bridge outline is not a provider building extrusion. Road replacement is bounded by the shared centerline/lateral corridor; tests enforce a 16 m lateral roadway envelope and an 11 m envelope along the extended main-span bearing for the off-road anchorages. No shared file was changed.
 
 ## Geometry and LOD
 
-The main span is a closed six-sided lofted steel box with crisp aerodynamic edges; short side spans are concrete viaducts without hangers. The towers are lofted inward-tapered solid shafts with an open high portal, one top crossbeam and a low bearing beam beneath the girder. Near adds restrained casting joints, cable clamps, hanger shoes, transparent railings, fallback two-lane paint and roadside lamps. Cables are eight-sided near / five-sided far lofts; hanger stations coincide exactly with cable samples. Compatible members merge per material, with three station chunks near and no chunks far. Far preserves tower openings, deck profile, cycle lane, tunnel mouths and both cable planes; it drops lamps, casting joints, paint and railing posts.
+The main span is a six-sided lofted steel box with crisp aerodynamic edges; pavement and sidewalk surfaces replace its hidden broad roof face to prevent layered-face artifacts; short side spans are concrete viaducts without hangers. The towers are lofted inward-tapered solid shafts with an open high portal, one top crossbeam and a low bearing beam beneath the girder. Near adds restrained concrete casting-joint relief, cable clamps, hanger shoes, transparent railings, fallback two-lane paint and roadside lamps. Cables are eight-sided near / five-sided far lofts; hanger stations coincide exactly with cable samples. Compatible members merge per material, with three station chunks near and no chunks far. Far preserves tower openings, deck profile, cycle lane, tunnel mouths and both cable planes; it drops lamps, casting joints, paint and railing posts.
 
-Both palettes have the same seven semantic keys. The pale concrete stays recognizable at night; metal dims and real deck lamp positions emit warm light. Palette changes do not change the structural geometry. Tunnel mouths and the smaller adjacent cycle entrance are estimated open arches, not texture plates; only short visible mouths are included. Backstays end at the asset boundary where the unmodeled mountainside/rock anchorage belongs; their endpoints/shape are estimates, not surveyed anchorage geometry. The standalone ground therefore does not support those truncated cable ends visually.
+Both palettes have the same seven semantic keys. The pale concrete stays recognizable at night; metal dims and real deck lamp positions emit warm light. Palette changes do not change the structural geometry. Tunnel mouths and the smaller adjacent cycle entrance are estimated open arches, not texture plates; only short visible mouths are included. Each backstay continues the main-span bearing 260 m behind its saddle to a concrete anchorage collar. Its terminal ring is embedded at y=0.8 m inside a 2 m tall block. Both LODs sample each backstay at the same 24 intervals, and hangers remain only on the main span. Attachment weights blend linearly from zero at the anchorage to one at the saddle: Cityscape keeps the terminal at grade while the saddle follows the lowered deck; world uses the existing per-vertex DEM support fit. No DEM values are baked in. The exact rock tunnel locations, reach and block dimensions are estimates. Collar feet follow the ground; in mountainous terrain the backstay can enter the hillside before its modeled terminal.
 
 ## Costs
 
 | Export | Triangles | Mesh draws | Bytes | KiB |
 | --- | ---: | ---: | ---: | ---: |
-| Near | 49,358 | 21 | 2,542,232 | 2,482.6 |
-| Far | 8,244 | 4 | 357,124 | 348.8 |
+| Near | 50,706 | 23 | 2,596,204 | 2,535.4 |
+| Far | 9,350 | 4 | 409,572 | 400.0 |
 
 Texture-free standard GLB 2.0, no compression extensions or decoders. Bridge attachment attributes are retained and round-trip tested. These costs exclude provider roads and terrain, and are not Tesla hardware measurements.
 
-## Verification evidence
+## Anchorage correction, 2026-10-11
+
+The lead’s REVIEW-2 identified four cables ending in air at authored y=92 m. All four now terminate inside grounded concrete collars at y=0.8 m (tube radius 0.3 m), with the same anchored silhouette near/far. The first look confirmed the new full backstays; the second checked the cleanup of hidden layered deck faces and concrete joint relief against the supplied reference sheet. Removed hidden roof surfaces, lowered the short tunnel-road support slabs 0.6 m, retained yellow lane paint under the semantic `marking` material name, and omitted hidden saddle boxes in far LOD. The bridge’s visible dimensions remain unchanged.
+
+Judged final sheets: `tmp/top-cities/shots/hardanger-bridge/anchorage-fix/hardanger-bridge-glb-near-light-sheet.jpg`, `hardanger-bridge-glb-far-dark-sheet.jpg`, and `review-sheet/hardanger-bridge.jpg`. They show both complete back spans, full bridge, crossing view, and automatic front/back/top/street near/far framing. The new `northAnchorage` / `southAnchorage` presets are registered in the catalog. REVIEW-2 has no Prepare command; the standard replacement was `node .agents/skills/build-3d-city/scripts/qa-sheet.mjs --ids hardanger-bridge --no-ref --tag 'Anchored backstays' --out tmp/top-cities/shots/hardanger-bridge/anchorage-fix/review-sheet`, with the supplied reference sheet opened separately. The automatic sheet header reads the older shared `tmp/landmark-qa/metrics.json`; its printed costs are stale. The current costs above and landmark-local `anchorage-metrics.json` are authoritative.
+
+Focused landmark tests: **6 passed**; registry plus landmark tests: **301 passed, 0 failed**. Tests inspect all terminal rings and concrete contacts in source and both exported LODs, then exercise the actual renderer’s flat and sloping-ground fits and repeated refits. Catalog: **222 entries, 432 GLB variants valid**. `anchorage-metrics.json` records no budget overrun or flagged artifact, min y=0, zero coplanar overlaps and 0% back-face hits. Remaining layered area rounds to 0 m² near and is zero far.
+
+Current correction: Cityscape **not tested in the live app yet**; Full 3D world **not tested against the live DEM yet**. Synthetic support-fit tests establish attachment behavior only. The historical app evidence below predates these corrected exports; the underground road handoff remains unsupported as described below. The builder brief prohibits bundle builds/dev servers, so a QA slot or coordinator app validation is required for the requested fresh two-mode shots.
+
+## Historical verification evidence (before the anchorage correction)
 
 The reference dossier `refs-sheet.jpg` was opened before modeling. Judged contact sheets are under `tmp/top-cities/shots/hardanger-bridge/`: `hardanger-bridge-procedural-near-light-sheet.jpg`, all four `hardanger-bridge-glb-{near,far}-{light,dark}-sheet.jpg`, `export-matrix.jpg`, and `reference-comparison.jpg` (completed reference photos adjacent to exported renders). They cover front/back, above, crossing, underside, tower detail and both tunnel mouths. Initial views clipped the distant tower and hid the portals behind a tower leg; cameras were moved wider/closer. Inspection then prompted extending cycleway pavement beneath both cycle entrances and distinguishing the concrete side spans from the aerodynamic suspended main deck. Final GLBs were rendered and opened after those corrections.
 
