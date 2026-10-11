@@ -18648,6 +18648,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-de-normandie",
+      "name": "Pont de Normandie",
+      "kind": "bridge",
+      "location": "N1029/A29, Seine estuary, Honfleur–Sandouville, Normandy, France",
+      "city": "Honfleur",
+      "status": "ready",
+      "description": "Original procedural 1995 cable-stayed toll bridge: two inverted-Y concrete pylons, twin-plane dense stays, aerofoil steel/concrete deck, blue edge trim and long approach viaducts.",
+      "manifest": "/models/bridges/pont-de-normandie.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-de-normandie/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-de-normandie --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-10 from published dimensions and reference-only photographs, with mapped alignment © OpenStreetMap contributors, ODbL 1.0. No photographic texture, scan or traced mesh ships. Dossier reference photographs: Pont de Normandie, User:Glabb, CC BY-SA 3.0; Vue panoramique du pont de Normandie, Citron, CC BY-SA 3.0; Normandy bridge (294800107), Jean-Marc Astesana, CC BY-SA 2.0; Le Pont de Normandie 2, Fabrice LANG/Woodstock, Free Art License (Commons file page checked); J79164 Yul cdg 20140624-051332.55 France, Emdx, CC BY-SA 4.0. Remaining photo licences supplied by dossier.",
+        "references": [
+          {
+            "label": "CCI operator history: length 2141.25 m, deck 23.60 m, pylon 214 m, January 1995",
+            "url": "https://www.pontsnormandietancarville.fr/lhistoire/"
+          },
+          {
+            "label": "CCI operator structure: 856 m span, 184 stays, 624 m steel section, 15/11 approach piers",
+            "url": "https://www.pontsnormandietancarville.fr/lhistoire/pont-de-normandie/le-pont-en-details/"
+          },
+          {
+            "label": "Wikipedia dossier, conflicting vertical datums",
+            "url": "https://en.wikipedia.org/wiki/Pont_de_Normandie"
+          },
+          {
+            "label": "Mapped bridge envelope",
+            "url": "https://www.openstreetmap.org/way/440837974"
+          },
+          {
+            "label": "Le Pont de Normandie 2, Fabrice LANG, Free Art License",
+            "url": "https://commons.wikimedia.org/wiki/File:Le_Pont_de_Normandie_2.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-normandie/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-de-normandie&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-de-normandie&view=underside"
+          }
+        ]
+      },
+      "notes": "Published 856 m span, 23.6 m width, 184 stays and selected 214 m operator-history crown; unresolved conflicting height datums. Estimated sections, deck profile, pier stations, anchors and hardware; 2152.891 m mapped physical bridge versus published 2141.25–2143.21 m. Original texture-free near 86,928 triangles / 25 draws / 3688.5 KiB; far 25,176 / 8 / 672.7 KiB. Export near/far light/dark inspected beside licensed dossier photographs. 298 focused tests and catalog check pass, QA zero issues/coplanar pairs/back-face hits. Footings and flat-map ramps extend beyond mapped deck envelope intentionally. Owned terrain landing correction; no shared source changes. Independent review, live HD/navigation/lifecycle and hardware QA checked separately. Independent PASS-WITH-NITS corrections: far stays 96 to 48, four-sided prisms with minimum width 1.273 m; crown 56 to 59.5 m with fixed tower/approach heights; cap/shaft palettes matched. Oversized far cables are an intentional distance visibility concession; near cable inventory/detail retained.",
+      "documentation": "docs/assets/top-cities-pont-de-normandie.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

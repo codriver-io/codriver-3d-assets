@@ -1,0 +1,68 @@
+{
+  "id": "pont-de-normandie",
+  "name": "Pont de Normandie",
+  "kind": "bridge",
+  "origin": [
+    0.27402,
+    49.43226
+  ],
+  "height": 214,
+  "padM": 1450,
+  "frontageBearing": 174.9,
+  "rangeM": 10000,
+  "nearM": 2600,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is visual water/flat-map grade; 214 m crown above this authored datum. Real terrain is fitted at runtime, with no DEM or Mercator stretch baked in. Buried foundations omitted.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "856 m main span, 23.6 m deck and 184 stays from published dimensions. Operator history gives 214 m pylons; other references give 202.74/204/215 m; vertical datums are unresolved. Deck profile, pylon sections, pier stations, stay anchors and hardware are visual estimates. Mapped physical length differs slightly from published 2141.25–2143.21 m.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-de-normandie-near.glb",
+      "bytes": 3777516,
+      "triangles": 86928,
+      "drawCalls": 25,
+      "bounds": {
+        "min": [
+          -129.24916076660156,
+          -1.1920929132713809e-8,
+          -1308.1160888671875
+        ],
+        "max": [
+          114.63153839111328,
+          214,
+          1154.117919921875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-de-normandie-far.glb",
+      "bytes": 689360,
+      "triangles": 25176,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -129.24916076660156,
+          -1.1920929132713809e-8,
+          -1308.1160888671875
+        ],
+        "max": [
+          114.63153839111328,
+          214,
+          1154.117919921875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-normandie/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
