@@ -5,8 +5,8 @@ export const SPEC = {
   frontageBearing: 148.8, footprintless: true, terrainPolicy: 'absolute-deck',
 };
 export const PALETTES = {
-  light: { concrete: '#c5c6bd', steel: '#76878b', cable: '#bac3bd', asphalt: '#555d63', paint: '#ebece3', yellow: '#d7b83c', lamp: '#e1e7dc' },
-  dark: { concrete: '#738089', steel: '#566c7b', cable: '#899fa8', asphalt: '#303c47', paint: '#b9bdbe', yellow: '#a79242', lamp: '#ffe0a2' },
+  light: { concrete: '#c5c6bd', steel: '#76878b', cable: '#bac3bd', asphalt: '#555d63', paint: '#ebece3', marking: '#d7b83c', lamp: '#e1e7dc' },
+  dark: { concrete: '#738089', steel: '#566c7b', cable: '#899fa8', asphalt: '#303c47', paint: '#b9bdbe', marking: '#a79242', lamp: '#ffe0a2' },
 };
 export const MANIFEST = {
   elevationDatum: 'Local y=0 is the nominal water/footing reference, not a baked DEM. Authored tower top 201.5 m; box underside 55 m at midspan. World uses absolute-deck; Cityscape lowers the portal deck to 4 m and ramps over short mapped tunnel entries.',

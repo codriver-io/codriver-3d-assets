@@ -15949,10 +15949,18 @@
           {
             "label": "Opposite",
             "url": "/asset-preview.html?asset=hardanger-bridge&view=opposite"
+          },
+          {
+            "label": "North anchorage",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=northAnchorage"
+          },
+          {
+            "label": "South anchorage",
+            "url": "/asset-preview.html?asset=hardanger-bridge&view=southAnchorage"
           }
         ]
       },
-      "notes": "Published design girder width 18.3 m is preferred over the smaller OSM outline; separate cycle lane on the northeast side. Tower transverse/longitudinal taper, high beam, construction joints, hanger spacing, lamps, tunnel arch shapes and backstays are photographic estimates. Authored 55 m midpoint soffit with 20000 m vertical radius; actual surveyed portal and foundation elevations are unavailable. Only 80 m of mapped tunnel roadway at each end, open mouths; no mountains, interior roundabouts or restricted captured meshes. Cityscape lowers the girder and attached superstructure by about 42 m at the portals; terrain keeps the authored heights. Backstay rock anchorages and surveyed tunnel elevations are unavailable; cables are truncated at the mountainside boundary. World terrain handoff remains unsupported pending an underground datum independent of the DEM roof.",
+      "notes": "Published design girder width 18.3 m is preferred over the smaller OSM outline; separate cycle lane on the northeast side. Tower transverse/longitudinal taper, high beam, construction joints, hanger spacing, lamps, tunnel arch shapes and backstays are photographic estimates. Authored 55 m midpoint soffit with 20000 m vertical radius; actual surveyed portal and foundation elevations are unavailable. Only 80 m of mapped tunnel roadway at each end, open mouths; no mountains, interior roundabouts or restricted captured meshes. Cityscape lowers the girder and attached superstructure by about 42 m at the portals; terrain keeps the authored heights. Backstays now extend 260 m behind each saddle along the main-span bearing into four grounded 6 × 4 × 2 m concrete anchorage collars (estimated, not surveyed). Cable terminal rings at y=0.8 m and collar feet use zero attachment weight; weights blend to one at each saddle, using the existing DEM support fit. Both LODs retain anchored backstays with identical 24-interval samples; hangers remain on the main span. Exact rock anchorage locations and tunnel elevations remain unavailable. Hidden deck roof faces are replaced by visible pavement/sidewalk surfaces to avoid layered artifacts. World terrain handoff remains unsupported pending an underground datum independent of the DEM roof.",
       "documentation": "docs/assets/top-cities-hardanger-bridge.md",
       "city": "Ulvik",
       "license": "CC-BY-4.0",
