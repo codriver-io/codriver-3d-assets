@@ -353,6 +353,46 @@ import { MANIFEST as lm_ponts_jumeauxManifest } from './ponts-jumeaux/config.js'
 import { OSM_WAYS as lm_ponts_jumeauxWays } from './ponts-jumeaux/footprint.js';
 import { create as lm_ponts_jumeauxCreate } from './ponts-jumeaux/geometry.js';
 import { VIEWS as lm_ponts_jumeauxViews } from './ponts-jumeaux/views.js';
+import { MANIFEST as lm_viaduc_de_calixManifest } from './viaduc-de-calix/config.js';
+import { OSM_WAYS as lm_viaduc_de_calixWays } from './viaduc-de-calix/footprint.js';
+import { create as lm_viaduc_de_calixCreate } from './viaduc-de-calix/geometry.js';
+import { VIEWS as lm_viaduc_de_calixViews } from './viaduc-de-calix/views.js';
+import { MANIFEST as lm_pegasus_bridgeManifest } from './pegasus-bridge/config.js';
+import { OSM_WAYS as lm_pegasus_bridgeWays } from './pegasus-bridge/footprint.js';
+import { create as lm_pegasus_bridgeCreate } from './pegasus-bridge/geometry.js';
+import { VIEWS as lm_pegasus_bridgeViews } from './pegasus-bridge/views.js';
+import { MANIFEST as lm_pont_de_la_fonderieManifest } from './pont-de-la-fonderie/config.js';
+import { OSM_WAYS as lm_pont_de_la_fonderieWays } from './pont-de-la-fonderie/footprint.js';
+import { create as lm_pont_de_la_fonderieCreate } from './pont-de-la-fonderie/geometry.js';
+import { VIEWS as lm_pont_de_la_fonderieViews } from './pont-de-la-fonderie/views.js';
+import { MANIFEST as lm_pont_de_normandieManifest } from './pont-de-normandie/config.js';
+import { OSM_WAYS as lm_pont_de_normandieWays } from './pont-de-normandie/footprint.js';
+import { create as lm_pont_de_normandieCreate } from './pont-de-normandie/geometry.js';
+import { VIEWS as lm_pont_de_normandieViews } from './pont-de-normandie/views.js';
+import { MANIFEST as lm_abbaye_aux_hommesManifest } from './abbaye-aux-hommes/config.js';
+import { OSM_WAYS as lm_abbaye_aux_hommesWays } from './abbaye-aux-hommes/footprint.js';
+import { create as lm_abbaye_aux_hommesCreate } from './abbaye-aux-hommes/geometry.js';
+import { VIEWS as lm_abbaye_aux_hommesViews } from './abbaye-aux-hommes/views.js';
+import { MANIFEST as lm_chateau_de_caenManifest } from './chateau-de-caen/config.js';
+import { OSM_WAYS as lm_chateau_de_caenWays } from './chateau-de-caen/footprint.js';
+import { create as lm_chateau_de_caenCreate } from './chateau-de-caen/geometry.js';
+import { VIEWS as lm_chateau_de_caenViews } from './chateau-de-caen/views.js';
+import { MANIFEST as lm_eglise_saint_pierre_caenManifest } from './eglise-saint-pierre-caen/config.js';
+import { OSM_WAYS as lm_eglise_saint_pierre_caenWays } from './eglise-saint-pierre-caen/footprint.js';
+import { create as lm_eglise_saint_pierre_caenCreate } from './eglise-saint-pierre-caen/geometry.js';
+import { VIEWS as lm_eglise_saint_pierre_caenViews } from './eglise-saint-pierre-caen/views.js';
+import { MANIFEST as lm_abbaye_aux_damesManifest } from './abbaye-aux-dames/config.js';
+import { OSM_WAYS as lm_abbaye_aux_damesWays } from './abbaye-aux-dames/footprint.js';
+import { create as lm_abbaye_aux_damesCreate } from './abbaye-aux-dames/geometry.js';
+import { VIEWS as lm_abbaye_aux_damesViews } from './abbaye-aux-dames/views.js';
+import { MANIFEST as lm_memorial_de_caenManifest } from './memorial-de-caen/config.js';
+import { OSM_WAYS as lm_memorial_de_caenWays } from './memorial-de-caen/footprint.js';
+import { create as lm_memorial_de_caenCreate } from './memorial-de-caen/geometry.js';
+import { VIEWS as lm_memorial_de_caenViews } from './memorial-de-caen/views.js';
+import { MANIFEST as lm_cathedrale_de_bayeuxManifest } from './cathedrale-de-bayeux/config.js';
+import { OSM_WAYS as lm_cathedrale_de_bayeuxWays } from './cathedrale-de-bayeux/footprint.js';
+import { create as lm_cathedrale_de_bayeuxCreate } from './cathedrale-de-bayeux/geometry.js';
+import { VIEWS as lm_cathedrale_de_bayeuxViews } from './cathedrale-de-bayeux/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -443,6 +483,16 @@ const authoring = {
   'pont-saint-pierre': { manifest: lm_pont_saint_pierreManifest, osmWays: lm_pont_saint_pierreWays, create: lm_pont_saint_pierreCreate, views: lm_pont_saint_pierreViews },
   'pont-saint-michel': { manifest: lm_pont_saint_michelManifest, osmWays: lm_pont_saint_michelWays, create: lm_pont_saint_michelCreate, views: lm_pont_saint_michelViews },
   'ponts-jumeaux': { manifest: lm_ponts_jumeauxManifest, osmWays: lm_ponts_jumeauxWays, create: lm_ponts_jumeauxCreate, views: lm_ponts_jumeauxViews },
+  'viaduc-de-calix': { manifest: lm_viaduc_de_calixManifest, osmWays: lm_viaduc_de_calixWays, create: lm_viaduc_de_calixCreate, views: lm_viaduc_de_calixViews },
+  'pegasus-bridge': { manifest: lm_pegasus_bridgeManifest, osmWays: lm_pegasus_bridgeWays, create: lm_pegasus_bridgeCreate, views: lm_pegasus_bridgeViews },
+  'pont-de-la-fonderie': { manifest: lm_pont_de_la_fonderieManifest, osmWays: lm_pont_de_la_fonderieWays, create: lm_pont_de_la_fonderieCreate, views: lm_pont_de_la_fonderieViews },
+  'pont-de-normandie': { manifest: lm_pont_de_normandieManifest, osmWays: lm_pont_de_normandieWays, create: lm_pont_de_normandieCreate, views: lm_pont_de_normandieViews },
+  'abbaye-aux-hommes': { manifest: lm_abbaye_aux_hommesManifest, osmWays: lm_abbaye_aux_hommesWays, create: lm_abbaye_aux_hommesCreate, views: lm_abbaye_aux_hommesViews },
+  'chateau-de-caen': { manifest: lm_chateau_de_caenManifest, osmWays: lm_chateau_de_caenWays, create: lm_chateau_de_caenCreate, views: lm_chateau_de_caenViews },
+  'eglise-saint-pierre-caen': { manifest: lm_eglise_saint_pierre_caenManifest, osmWays: lm_eglise_saint_pierre_caenWays, create: lm_eglise_saint_pierre_caenCreate, views: lm_eglise_saint_pierre_caenViews },
+  'abbaye-aux-dames': { manifest: lm_abbaye_aux_damesManifest, osmWays: lm_abbaye_aux_damesWays, create: lm_abbaye_aux_damesCreate, views: lm_abbaye_aux_damesViews },
+  'memorial-de-caen': { manifest: lm_memorial_de_caenManifest, osmWays: lm_memorial_de_caenWays, create: lm_memorial_de_caenCreate, views: lm_memorial_de_caenViews },
+  'cathedrale-de-bayeux': { manifest: lm_cathedrale_de_bayeuxManifest, osmWays: lm_cathedrale_de_bayeuxWays, create: lm_cathedrale_de_bayeuxCreate, views: lm_cathedrale_de_bayeuxViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));
