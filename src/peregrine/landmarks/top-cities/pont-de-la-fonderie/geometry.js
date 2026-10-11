@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { bridgeBuilder } from '../../asset-geometry.js';
-import { PROFILE as p, STRUCTURE_START as A, STRUCTURE_END as Z, DECK_H as H, PIVOT_S, deckEdges, approachEdges } from './pont-de-la-fonderie-profile.js';
+import { PROFILE as p, STRUCTURE_START as A, STRUCTURE_END as Z, DECK_H as H, PIVOT_S, deckEdges } from './pont-de-la-fonderie-profile.js';
 
 /** Original plate-girder swing bridge. Station runs NW → SE; all geometry is in mapped metres. */
 export function create({detail='near'}={}) {
@@ -43,8 +43,6 @@ export function create({detail='near'}={}) {
   const edge=(side,s)=>deckEdges(s)[side];
   // Fallback two-lane asphalt; OSM lane_markings=no. Runtime HD remains authoritative.
   ribbon('asphalt',A,Z,-3,3,H,.045);
-  for(const [a,z] of [[0,A],[Z,p.BRIDGE_LENGTH]])
-    ribbon('asphalt',a,z,s=>approachEdges(s)[0],s=>approachEdges(s)[1],s=>p.deckHeight(s),.045,1,.5);
   ribbon('iron',A+.03,Z-.03,s=>edge(0,s),s=>edge(1,s),H-.07,.28);
   for(const side of [0,1]) {
     const outer=s=>edge(side,s),inner=side===0?-3:3;
@@ -88,32 +86,25 @@ export function create({detail='near'}={}) {
   for(const d of [-2,0,2])beam('iron',[A+.05,d,H-.40],[Z-.05,d,H-.40],.10,.24);
   // Concrete counterweight enclosed in low NW tail; turntable touches the floor structure.
   b.box('concrete',A+1.55,-.12,H-.59,2.8,7.7,.45);
-  const grip=y=>Math.max(0,Math.min(1,y/(H-.66)));
-  cylinder('stone',PIVOT_S,-.08,0,2.75,2.75,H-.96,near?24:12,grip);
+  // Quay walls and the slewing drum stand on the canal banks below the flush deck: fixed at their
+  // foot (weight 0), following the deck at their head.
+  const FOOT=H-2.6,grip=y=>Math.max(0,Math.min(1,(y-FOOT)/(H-.66-FOOT)));
+  cylinder('stone',PIVOT_S,-.08,FOOT,2.75,2.75,H-.96-FOOT,near?24:12,grip);
   cylinder('iron',PIVOT_S,-.08,H-.96,3.85,3.85,.35,near?32:16);
   cylinder('iron',PIVOT_S,-.08,H-.61,.42,.42,.28);
   // Bank-side foundations only: no pier obstructs the navigable channel.
   for(const [a,z] of [[A+.03,A+9.35],[Z-.88,Z-.03]]) {
     if(a<A+1) {
       // Two bank wings expose the circular slewing assembly in the middle.
-      ribbon('stone',a,z,s=>edge(0,s)+.18,-3.15,H-1.05,H-1.05,grip);
-      ribbon('stone',a,z,3.15,s=>edge(1,s)-.18,H-1.05,H-1.05,grip);
-    } else ribbon('stone',a,z,s=>edge(0,s)+.18,s=>edge(1,s)-.18,H-.70,H-.70,grip);
-    if(near)for(let y=.24;y<(a<A+1?H-1.10:H-.75);y+=.3)for(const side of [0,1]) {
+      ribbon('stone',a,z,s=>edge(0,s)+.18,-3.15,H-1.05,H-1.05-FOOT,grip);
+      ribbon('stone',a,z,3.15,s=>edge(1,s)-.18,H-1.05,H-1.05-FOOT,grip);
+    } else ribbon('stone',a,z,s=>edge(0,s)+.18,s=>edge(1,s)-.18,H-.70,H-.70-FOOT,grip);
+    if(near)for(let y=FOOT+.24;y<(a<A+1?H-1.10:H-.75);y+=.3)for(const side of [0,1]) {
       const dd=s=>edge(side,s)+(side===0?.16:-.16);
       beam('stone',[a,dd(a),y],[z,dd(z),y],.045,.04,grip);
     }
   }
   for(const d of [-3.8,3.8])b.box('iron',Z-.48,d,H-.585,.7,.6,.23);
-  // Broad bank approaches taper to six-metre live road joins over the outer eight metres.
-  for(const [a,z] of [[0,A],[Z,p.BRIDGE_LENGTH]]) {
-    ribbon('stone',a,z,s=>approachEdges(s)[0],s=>approachEdges(s)[1],s=>Math.max(0,p.deckHeight(s)-.04),s=>Math.max(0,p.deckHeight(s)-.04),y=>Math.max(0,Math.min(1,y/H)),.5);
-    const blend=s=>Math.min(1,(s<A?s:p.BRIDGE_LENGTH-s)/8),rise=s=>.15*blend(s);
-    const inset=(s,side)=>Math.min(.06,Math.max(0,(Math.abs(approachEdges(s)[side])-3)/4));
-    for(const side of [0,1]) {
-      ribbon('concrete',a,z,side===0?s=>approachEdges(s)[0]+inset(s,0):3,side===0?-3:s=>approachEdges(s)[1]-inset(s,1),s=>p.deckHeight(s)+rise(s),s=>p.deckHeight(s)+rise(s)-Math.max(-.04,p.deckHeight(s)-.12),1,.5);
-    }
-  }
   // Compact road-side safety housings/posts; no barriers across the lanes.
   for(const [s,d] of [[A+.65,-3.65],[Z-.7,3.7]]) {
     b.box('iron',s,d,H+.35,.32,.30,.7);
