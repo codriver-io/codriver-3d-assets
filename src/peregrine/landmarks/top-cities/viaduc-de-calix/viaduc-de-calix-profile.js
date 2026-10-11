@@ -45,4 +45,7 @@ const bridgeRoadHeight=(lng,lat,heading,approaches,joins,sections)=>{
   if(Math.abs(station.lateral)<.32)return null;
   return deckHeight(station.s,approaches);
 };
-export const PROFILE={...frame,deckHeight,bridgePoint,bridgeRoadHeight};
+// HD section unions include the interchange slip roads. They remain useful for
+// pavement/height ownership, but must never pull the rigid slab, median or rails
+// sideways through a lane. Calix's surveyed-width structure keeps its own frame.
+export const PROFILE={...frame,deckHeight,bridgePoint,bridgeRoadHeight,fittedLateral:(_s,d)=>d};

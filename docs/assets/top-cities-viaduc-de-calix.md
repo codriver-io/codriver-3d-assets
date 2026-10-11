@@ -41,8 +41,8 @@ Cityscape uses 25 m entrance and 50 m crest vertical curves, with constant grade
 
 | LOD | Triangles | Mesh draws | Bytes | KiB |
 | --- | ---: | ---: | ---: | ---: |
-| near | 46,564 | 24 | 2,938,624 | 2869.8 |
-| far | 16,044 | 3 | 987,792 | 964.6 |
+| near | 39,968 | 24 | 2,529,644 | 2470.4 |
+| far | 13,048 | 3 | 802,040 | 783.2 |
 
 Both variants fit the 120k/40/4.5 MB near and 30k/10/1.2 MB far caps. These are exported mesh costs, not app-wide or Tesla hardware measurements. GLBs retain `_bridgelift`, semantic materials, finite normals and source bounds, with identical near/far envelopes. QA reports zero different-material coplanar overlaps, zero back-face hits in the coarse 18-hit ray sweep, no below-grade parts and no issues (`tmp/top-cities/viaduc-de-calix/metrics.json`).
 
@@ -86,3 +86,63 @@ One revision addressed the review nits without changing structural proportions. 
 Re-exported with `pnpm build:top-cities-landmarks viaduc-de-calix --no-check`. All 291 focused landmark/conformance tests passed and catalog validation passed (222 entries / 414 variants). Revised metrics report no budget overrun, overlap, back-face or below-grade artifact. The supplied `REVIEW.md` has no Prepare command; its normal preparation equivalent, `qa-metrics.mjs` plus `qa-sheet.mjs`, was rerun. Opened the new photo/near/far sheet and underside/capital/deck detail sheet at `tmp/top-cities/review/viaduc-de-calix/revised/`. The harness's green ground light still tints downward faces; actual app inspection is the colour check.
 
 Rebuilt and reran daytime app captures in Cityscape and Full 3D world: near/far/street, both approaches in both directions, and closer underside inspection. Revised `app-sheet.jpg`, `approaches-sheet.jpg`, and `inspection-{city,world}/spot-underside-street.png` are under the same `revised/` directory. The last two render the actual loaded app scene using the registered underside inspection camera; both show neutral grey soffits and preserve the loaded placement. Both modes load the active bridge and retain the fitted pavement joins. Each mode's height report again checks 18 carriageway positions in both directions, crossing rejection and null median/off-deck ownership; endpoint datums remain 22.459 / 12.483 m in world. HD pavement/paint, moving-vehicle traversal and lifecycle stress remain not tested for the reasons above.
+
+
+## Live HD lane review (REVIEW-2, 2026-10-11)
+
+The live HD section union alternated carriageway sides at merge triangles and
+included slip-road widths. Previously `fittedLateral` applied those discontinuous
+sections to the whole structure, pulling kerbs, median, rails and lamps through
+lanes in X shapes. The Calix profile now keeps every structural vertex in its
+authored lateral frame; only the vertical approach/terrain fit changes it. Raw HD
+sections still serve pavement and navigation ownership. The shared HD draping,
+materials, lane layout and paint code are unchanged.
+
+Kerbs, the central separator, rails/posts and lamps now stop at the structural
+abutments (stations 123.416–1306.490 m). The 123 m northern and 260 m southern
+ordinary embankment approaches have no authored raised road furniture. Their
+fallback pavement and low retaining treatment remain. The engineering slab
+width and southern structural widening retain the sourced proportions. This is
+a visual integration approximation, not a surveyed barrier placement.
+
+One look/fix iteration addressed REVIEW-2 only. Before → after: both approach
+X patterns → no sideways deformation and no approach furniture; southeast ramp
+barrier fragments → rails/kerbs end at the abutment; correctly draped HD paint →
+retained. Near costs fall from 46,564 / 24 / 2869.8 KiB to 39,968 / 24 / 2470.4
+KiB; far falls from 16,044 / 3 / 964.6 KiB to 13,048 / 3 / 783.2 KiB.
+
+Evidence root: `tmp/top-cities/viaduc-de-calix/hd-review/`. Opened and judged
+`glb-sheet/viaduc-de-calix.jpg` (exported near/far against the reference),
+`city-on-off.jpg` and `world-on-off.jpg` (on left, off right; north approach,
+north abutment, south abutment, south approach, then mid-span), plus
+`street-sheet.jpg` (both directions at those four ends in both modes).
+Cityscape and Full 3D world are each **verified locally for live HD paint and
+this barrier fix** with Protomaps/OSM and Redis 6391 on slot B ports 3274/3276.
+World uses Terrarium DEM; both modes load 61 HD surface sections. The HD-on
+screenshots preserve visible provider lane lines, merging lines and arrows;
+there are no X-shaped authored barriers or southeast barrier fragments across
+slip roads. Existing authored fallback pavement can still be visible in small
+gaps in HD coverage at the north alignment endpoint; this is outside REVIEW-2.
+
+`city-on/height-report.json` and `world-on/height-report.json` record seven
+stations including both ends, both abutments and the crest, at lateral offsets
+±3.4 m (carriageway centrelines) and 0 m (separator). All fourteen carriageway
+positions return the same height in forward and reverse headings (maximum
+difference 0); all seven separator queries return null. City HD endpoint surface
+datums are 0.364 / 1.296 m. World DEM endpoint datums remain 22.459 / 12.483 m,
+with HD offsets giving fitted endpoint surface datums 22.823 / 13.779 m. The
+crest remains 38 m in Cityscape, about 37.999 m above local terrain in world.
+This is surface-query and static visual evidence, not vehicle traversal.
+
+Re-exported with `pnpm build:top-cities-landmarks viaduc-de-calix --no-check`.
+REVIEW.md contains no Prepare command; its equivalent `qa-metrics.mjs --ids
+viaduc-de-calix` and `qa-sheet.mjs --ids viaduc-de-calix` were rerun. Metrics report
+no issues, no coplanar overlaps, no back-face hits and no below-grade artifact.
+All 292 focused landmark/conformance tests pass, including the new observable
+regression that applies adversarial HD ramp sections to both LODs and verifies
+unchanged horizontal vertices and no raised approach furniture. Catalog
+validation passes (222 entries / 414 variants), and `pnpm assets:preview` builds
+the ignored local inspector. The local renderer bundle was rebuilt for QA only
+and restored before the owned-files commit; slot B servers were stopped, Redis
+left running. Night, live traffic, paint-toggle/lifecycle stress and real Tesla
+hardware remain not tested for this revision.

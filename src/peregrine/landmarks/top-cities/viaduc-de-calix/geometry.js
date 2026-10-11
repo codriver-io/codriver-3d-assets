@@ -38,12 +38,13 @@ export function create({ detail='near' }={}) {
   for(const d of BOX_CENTRES) ribbon('concrete',A,C,constant(d-1.91),constant(d+1.91),s=>Math.max(0,h(s)-.54),s=>Math.max(0,h(s)-girderDepth(s)));
   // Flat-map retaining cheeks support the two road ramps outside the original structure.
   for(const [a,c] of [[15,A],[C,L-15]])for(const o of [-1,1]) ribbon('concrete',a,c,s=>o*(halfWidth(s)-.6)-.25,s=>o*(halfWidth(s)-.6)+.25,s=>Math.max(0,h(s)-.54),()=>0,{lift:y=>Math.max(0,Math.min(1,y/8))});
-  // Kerb bands have open roadside rails above; one continuous median safety barrier.
+  // Structural furniture stops at the abutments. The ordinary embankment roads
+  // beyond them merge/diverge; provider pavement/paint owns those approaches.
   for(const sign of [-1,1]) {
-    strip('concrete',0,L,s=>sign<0?-halfWidth(s):halfWidth(s)-1.5,s=>sign<0?-halfWidth(s)+1.5:halfWidth(s),.18,.35);
+    strip('concrete',A,C,s=>sign<0?-halfWidth(s):halfWidth(s)-1.5,s=>sign<0?-halfWidth(s)+1.5:halfWidth(s),.18,.35);
 
   }
-  loft('concrete',0,L,s=>{const y=h(s);return [[-.15,y+.82],[.15,y+.82],[.30,y+.25],[.30,y],[-.30,y],[-.30,y+.25]];});
+  loft('concrete',A,C,s=>{const y=h(s);return [[-.15,y+.82],[.15,y+.82],[.30,y+.25],[.30,y],[-.30,y],[-.30,y+.25]];});
   // 14 pairs of independent square/rectangular shafts with inverted-pyramid capitals.
   for(const s of PIER_S.slice(1,-1)) {
     const main=MAIN_PIERS.includes(s), y=h(s)-girderDepth(s), capH=main?1.9:1.2,shaftTop=y-capH;
@@ -72,8 +73,8 @@ export function create({ detail='near' }={}) {
   // Rails, posts and lamp stems share the steel batch in each station chunk.
   // Rectangular beams already use 12 triangles; there are no radial subdivisions.
   for(const o of [-1,1]) {
-    for(const y of [.52,.92,1.25]) strip('steel',2,L-2,s=>o*(halfWidth(s)-.15)-.045,s=>o*(halfWidth(s)-.15)+.045,y,.075);
-    for(let s=2;s<L-1;s+=near?7:21){const d=o*(halfWidth(s)-.15),y=h(s);b.beam('steel',[s,d,y+.18],[s,d,y+1.31],near?.085:.12,undefined,chunk(s));}
+    for(const y of [.52,.92,1.25]) strip('steel',A,C,s=>o*(halfWidth(s)-.15)-.045,s=>o*(halfWidth(s)-.15)+.045,y,.075);
+    for(let s=A;s<=C;s+=near?7:21){const d=o*(halfWidth(s)-.15),y=h(s);b.beam('steel',[s,d,y+.18],[s,d,y+1.31],near?.085:.12,undefined,chunk(s));}
   }
   if(near) {
     for(const o of [-1,1]){
@@ -84,7 +85,7 @@ export function create({ detail='near' }={}) {
     for(const o of [-1,1])for(let s=C-120;s<C-5;s+=12)strip('paint',s,s+3,o*7.0-.065,o*7.0+.065,.028,.009);
   }
   // Slender single-arm luminaires alternate along the two outside kerbs.
-  for(let s=25,i=0;s<L-20;s+=35,i++) {
+  for(let s=A+10,i=0;s<C-10;s+=35,i++) {
     const o=i%2?1:-1,d=o*(halfWidth(s)-.55),y=h(s),ck=chunk(s);
     b.beam('steel',[s,d,y+.18],[s,d,y+8.2],.13,undefined,ck);
     b.beam('steel',[s,d,y+8.2],[s,d-o*1.6,y+8.5],.10,undefined,ck);
