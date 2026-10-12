@@ -20,12 +20,12 @@
   },
   "elevationDatum": "Local esplanade = y 0, adapted to flat map. 165 m tower above local ground; not 190 m above sea level.",
   "alignmentAttribution": "© OpenStreetMap contributors, ODbL 1.0 — ways 108505523 and 20213158 — https://www.openstreetmap.org/copyright",
-  "note": "Original procedural visual model. Inclined shaft, shell, seats and hanging cables are simplified. No historical membrane or future rigid roof. No third-party texture or decoder.",
+  "note": "Original procedural visual model. Inclined shaft, shell and seats are simplified; loose construction cables are omitted. No historical membrane or future rigid roof. No third-party texture or decoder.",
   "assets": {
     "near": {
       "url": "/models/buildings/stade-olympique-near.glb",
-      "bytes": 833760,
-      "triangles": 23460,
+      "bytes": 816364,
+      "triangles": 23136,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -42,8 +42,8 @@
     },
     "far": {
       "url": "/models/buildings/stade-olympique-far.glb",
-      "bytes": 449568,
-      "triangles": 10964,
+      "bytes": 432176,
+      "triangles": 10640,
       "drawCalls": 7,
       "bounds": {
         "min": [

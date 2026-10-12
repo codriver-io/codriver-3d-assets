@@ -92,3 +92,15 @@ Screenshots looked at (under the ignored `tmp/quebec/shots/biodome-de-montreal/`
 - `qa-metrics.mjs` flagged one coplanar pair (mullions against the glass, 0.6 m2); the mullions were embedded behind the glass and it now reports none, 0 % back-face hits on 278 rays, minimum y 0.
 
 Tests: `node --test src/peregrine/landmarks/quebec/biodome-de-montreal/biodome-de-montreal.test.js` pins the 33.5 m crown, the plan envelope against the footprint ring, the long-axis bearing, the four abutments reaching the ground, clear arches with the glazed wall behind each, the sixteen spine skylights with the two spindle ribs standing proud, the eleven edge skylights per side, the entrance canopy and sign facing the stadium, and the far model keeping the silhouette and the open arches.
+
+## QA revision 2026-10-11
+
+QA 2026-10-11: spindle lift 0.45 m and shallow 0.12 m skylight caps, with dense roof-following louvres in near and simplified louvres retained in far. Skylight subdivisions avoid shell intersections; counts and positions remain photographic estimates.
+
+Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
+
+Current measured exports: near: 28,730 triangles / 6 draws / 719,924 bytes; far: 7,942 triangles / 5 draws / 218,168 bytes. Geometry metrics report no unresolved issues.
+
+Louvre bars use the dark frame material in both details; the skylight glass is muted dark grey-blue. The final far export has five material draws.
+
+Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.

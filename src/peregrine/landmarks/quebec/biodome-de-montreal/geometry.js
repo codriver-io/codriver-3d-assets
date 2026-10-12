@@ -78,11 +78,11 @@ export function create({ detail = 'near' } = {}) {
 
   // Skylights, each with two white louvre bars across it in the near model.
   for (const l of skylightLayout()) {
-    b.put(lens(l.c[0], l.c[1], l.angle, l.hl, l.hw, near ? { nu: 12, nv: 4 } : { nu: 6, nv: 2 }), 'skylight');
-    if (near && l.hl > 5) for (const xi of (l.hl > 10 ? [-0.6, -0.2, 0.2, 0.6] : [-0.4, 0.4])) {
+    b.put(lens(l.c[0], l.c[1], l.angle, l.hl, l.hw, near ? { nu: 24, nv: 4, gap: 0.25 } : { nu: 12, nv: 2, gap: 0.4 }), 'skylight');
+    if (l.hl > 5) for (const xi of Array.from({ length: near ? 15 : 7 }, (_, i) => -0.9 + 1.8 * (i + 0.5) / (near ? 15 : 7))) {
       const dx = Math.cos(l.angle), dz = Math.sin(l.angle);
       const cx = l.c[0] + dx * l.hl * xi, cz = l.c[1] + dz * l.hl * xi, half = l.hw * Math.pow(1 - xi * xi, 0.8) * 1.02;
-      b.put(ribStrip([[cx + dz * half, cz - dx * half], [cx, cz], [cx - dz * half, cz + dx * half]], { step: half, wb: 0.5, wt: 0.3, hr: BUBBLE_RISE + 0.24, taper: 0.4, sink: 0.05, lift: 0.16 }), 'rib');
+      b.put(ribStrip([[cx + dz * half, cz - dx * half], [cx, cz], [cx - dz * half, cz + dx * half]], { step: near ? half : half * 3, wb: near ? 0.24 : 0.35, wt: near ? 0.18 : 0.28, hr: BUBBLE_RISE + 0.18, taper: 0.4, sink: 0.05, lift: near ? 0.25 : 0.4 }), 'frame');
     }
   }
 

@@ -18,7 +18,7 @@ export const PIER_Z = 48.6; // front of the two pier groups beside the great arc
 export const WALL_X = 21.9; // outer face of the tower bases (and of the facade block)
 export const TOWER = {
   cx: 16.1, cz: 40.4, z0: 33.6, x0: 10.5, // tower axis; plan of the base block x 10.5..21.9, z 33.6..47.2
-  half: 5.1, cornice: 35.0, top: 56.0, tip: 87.6, cross: 91.0, spireR: 4.4, // stage 2 is 10.2 m square, spire tip 87.6, cross tip 91
+  half: 5.1, cornice: 35.0, top: 62.0, tip: 87.6, cross: 91.0, spireR: 4.4, // stage 2 is 10.2 m square, spire tip 87.6, cross tip 91
 };
 export const NAVE = { hw: 7.4, ais1: 14.2, ais2: 20.8, z0: 5.4, z1: 33.6, clere: 29.5, ridge: 37.5 };
 export const AISLE = { wall2: 11.0, roof2: 14.9, wall1: 20.5, roof1: 25.4 }; // outer aisle wall / lean-to top, inner aisle wall / lean-to top

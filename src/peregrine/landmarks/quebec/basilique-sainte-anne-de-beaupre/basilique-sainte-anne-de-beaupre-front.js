@@ -41,11 +41,11 @@ export function buildFacade(k) {
   const RY = 26.5;
   k.panel('recess', arch(13.8, 27.0, 17.0, segA), 'F', 0, 17.0, B + 0.05);
   k.panel('glow', disc(3.0, near ? 20 : 10), 'F', 0, RY, B + 0.15);
-  k.frame('stone', disc(3.75, near ? 20 : 10), disc(2.95, near ? 20 : 10), 0.35, 'F', 0, RY, B + 0.1);
+  if (near) k.frame('stone', disc(3.75, near ? 20 : 10), disc(2.95, near ? 20 : 10), 0.35, 'F', 0, RY, B + 0.1);
   if (near) {
     k.frame('stone', archBand(6.7, 5.9, 27.0, 17.0, 10), null, 0.5, 'F', 0, 0, B + 0.1); // archivolt orders
     k.frame('stone', archBand(5.5, 4.9, 27.0, 17.0, 10), null, 0.8, 'F', 0, 0, B + 0.1);
-    k.panelRing('recess', disc(1.0, 10), disc(0.35, 6), 'F', 0, RY, B + 0.3);
+    k.panelRing('glass', disc(1.0, 10), disc(0.35, 6), 'F', 0, RY, B + 0.4);
     for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2; k.panel('glass', disc(0.42, 6), 'F', 1.95 * Math.cos(a), RY + 1.95 * Math.sin(a), B + 0.3); }
     for (let i = 0; i < 9; i++) k.panel('glass', arch(0.95, 21.5, 18.0, 3), 'F', -6.0 + i * 1.5, 18.0, B + 0.2); // arcade under the rose
   }
@@ -105,52 +105,52 @@ function buildTower(k, sx) {
     k.box('stone', Math.min(x0, x1) + 0.3, Math.max(x0, x1) - 0.3, 28.4, 28.7, TOWER.z0 - 0.2, TOWER.z0 + 0.1);
   }
   // belfry stage and cornice
-  k.box('stone', cx - h, cx + h, TOWER.cornice - 0.1, 55.2, cz - h, cz + h);
-  k.box('stone', cx - 5.5, cx + 5.5, 55.0, TOWER.top, cz - 5.5, cz + 5.5);
+  k.box('stone', cx - h, cx + h, TOWER.cornice - 0.1, 61.2, cz - h, cz + h);
+  k.box('stone', cx - 5.5, cx + 5.5, 61.0, TOWER.top, cz - 5.5, cz + 5.5);
   const faces = [['F', cx, cz + h], ['B', cx, cz - h], [sx > 0 ? 'E' : 'W', cz, cx + sx * h], [sx > 0 ? 'W' : 'E', cz, cx - sx * h]];
   for (const [side, s, wall] of faces) {
     const out = (side === 'F' || side === 'E') ? 1 : -1;
     const o = (d) => wall + out * d; // offset from the wall, outward
-    if (!near && side !== 'F' && side !== (sx > 0 ? 'E' : 'W')) continue;
-    k.panel('recess', arch(4.9, 47.0, 39.0, seg), side, s, 39.0, o(0.1));
-    for (const dx of [-1.35, 1.35]) k.panel('glass', arch(1.55, 46.6, 39.6, seg), side, s + dx, 39.6, o(0.2));
+    // All four belfry faces retain openings in both details.
+    k.panel('recess', arch(4.9, 53.0, 39.0, seg), side, s, 39.0, o(0.1));
+    for (const dx of [-1.35, 1.35]) k.panel('glass', arch(1.55, 52.6, 39.6, seg), side, s + dx, 39.6, o(0.2));
     if (near) {
-      k.frame('stone', archBand(2.75, 2.45, 47.0, 38.7, 8), null, 0.35, side, s, 0, o(-0.05)); // frame round the twin windows
-      k.panel('recess', disc(1.1, 12), side, s, 52.6, o(0.1));
-      k.panel('glass', disc(0.7, 10), side, s, 52.6, o(0.2));
+      k.frame('stone', archBand(2.75, 2.45, 53.0, 38.7, 8), null, 0.35, side, s, 0, o(-0.05)); // frame round the twin windows
+      k.panel('recess', disc(1.1, 12), side, s, 58.4, o(0.1));
+      k.panel('glass', disc(0.7, 10), side, s, 58.4, o(0.2));
       for (let i = 0; i < 7; i++) k.panel('glass', arch(0.7, 37.4, 36.0, 3), side, s + (i - 3) * 1.2, 36.0, o(0.1));
     }
   }
   // four corner turrets with pointed caps
   for (const tx of [-4.6, 4.6]) for (const tz of [-4.6, 4.6]) {
-    k.cyl('stone', cx + tx, cz + tz, TOWER.cornice - 0.05, 45.2, 0.75, 0.7, near ? 8 : 5, false);
-    k.cone('stone', cx + tx, cz + tz, 45.1, 49.4, 1.0, near ? 8 : 5);
+    k.cyl('stone', cx + tx, cz + tz, TOWER.cornice - 0.05, 48.8, 1.0, 0.9, near ? 8 : 5, false);
+    k.cone('stone', cx + tx, cz + tz, 48.7, 54.4, 1.25, near ? 8 : 5);
   }
   // octagonal stone spire, edge ribs, then the cross
   k.spire('stone', cx, cz, TOWER.top - 0.1, TOWER.tip, TOWER.spireR, 8);
   k.box('glass', cx - 0.15, cx + 0.15, TOWER.tip - 0.3, TOWER.cross, cz - 0.15, cz + 0.15);
   k.box('glass', cx - 0.8, cx + 0.8, 89.4, 89.9, cz - 0.17, cz + 0.17);
-  if (near) {
+  {
     const len = TOWER.tip - TOWER.top, R = TOWER.spireR;
     for (let i = 0; i < 8; i++) { // thin ribs along the eight edges
       const a = Math.PI / 8 + (i * Math.PI) / 4, f = (y) => R * (1 - (y - TOWER.top) / len) * 1.01;
-      k.bar('stone', [cx + f(57) * Math.sin(a), 57, cz + f(57) * Math.cos(a)], [cx + f(84) * Math.sin(a), 84, cz + f(84) * Math.cos(a)], 0.22, 0.22);
+      k.bar('stone', [cx + f(TOWER.top) * Math.sin(a), TOWER.top, cz + f(TOWER.top) * Math.cos(a)], [cx + f(84) * Math.sin(a), 84, cz + f(84) * Math.cos(a)], near ? 0.38 : 0.5, near ? 0.38 : 0.5);
     }
     // one small gabled lucarne on each of the four cardinal faces of the spire (the faces lean back by about 7 deg), and a
     // square pinnacle at each corner of the belfry cornice
-    const a0 = R * Math.cos(Math.PI / 8), yL = 62.4, back = a0 * (1 - (yL + 1.8 - TOWER.top) / len) - 0.3, front = a0 * (1 - (yL - TOWER.top) / len) + 0.55;
-    const hw = 0.55, hg = 0.75;
-    k.box('stone', cx - hw, cx + hw, yL, yL + 1.8, cz + back, cz + front); k.gableZ('stone', cx, cz + back, cz + front, yL + 1.8, hg, 0.7);
-    k.box('stone', cx - hw, cx + hw, yL, yL + 1.8, cz - front, cz - back); k.gableZ('stone', cx, cz - front, cz - back, yL + 1.8, hg, 0.7);
-    k.box('stone', cx + back, cx + front, yL, yL + 1.8, cz - hw, cz + hw); k.gableX('stone', cx + back, cx + front, cz, yL + 1.8, hg, 0.7);
-    k.box('stone', cx - front, cx - back, yL, yL + 1.8, cz - hw, cz + hw); k.gableX('stone', cx - front, cx - back, cz, yL + 1.8, hg, 0.7);
-    k.panel('glass', arch(0.7, yL + 1.3, yL + 0.2, 3), 'F', cx, yL + 0.2, cz + front + 0.04);
-    k.panel('glass', arch(0.7, yL + 1.3, yL + 0.2, 3), 'B', cx, yL + 0.2, cz - front - 0.04);
-    k.panel('glass', arch(0.7, yL + 1.3, yL + 0.2, 3), 'E', cz, yL + 0.2, cx + front + 0.04);
-    k.panel('glass', arch(0.7, yL + 1.3, yL + 0.2, 3), 'W', cz, yL + 0.2, cx - front - 0.04);
+    const a0 = R * Math.cos(Math.PI / 8), yL = 67.0, back = a0 * (1 - (yL + 2.8 - TOWER.top) / len) - 0.3, front = a0 * (1 - (yL - TOWER.top) / len) + 0.55;
+    const hw = 1.0, hg = 1.3;
+    k.box('stone', cx - hw, cx + hw, yL, yL + 2.8, cz + back, cz + front); k.gableZ('stone', cx, cz + back, cz + front, yL + 2.8, hg, 1.2);
+    k.box('stone', cx - hw, cx + hw, yL, yL + 2.8, cz - front, cz - back); k.gableZ('stone', cx, cz - front, cz - back, yL + 2.8, hg, 1.2);
+    k.box('stone', cx + back, cx + front, yL, yL + 2.8, cz - hw, cz + hw); k.gableX('stone', cx + back, cx + front, cz, yL + 2.8, hg, 1.2);
+    k.box('stone', cx - front, cx - back, yL, yL + 2.8, cz - hw, cz + hw); k.gableX('stone', cx - front, cx - back, cz, yL + 2.8, hg, 1.2);
+    k.panel('glass', arch(1.3, yL + 2.3, yL + 0.2, 3), 'F', cx, yL + 0.2, cz + front + 0.15);
+    k.panel('glass', arch(1.3, yL + 2.3, yL + 0.2, 3), 'B', cx, yL + 0.2, cz - front - 0.15);
+    k.panel('glass', arch(1.3, yL + 2.3, yL + 0.2, 3), 'E', cz, yL + 0.2, cx + front + 0.15);
+    k.panel('glass', arch(1.3, yL + 2.3, yL + 0.2, 3), 'W', cz, yL + 0.2, cx - front - 0.15);
     for (const tx of [-4.5, 4.5]) for (const tz of [-4.5, 4.5]) {
-      k.box('stone', cx + tx - 0.4, cx + tx + 0.4, TOWER.top - 0.1, 57.3, cz + tz - 0.4, cz + tz + 0.4);
-      k.pyramid('stone', cx + tx, cz + tz, 57.2, 59.4, 0.62);
+      k.box('stone', cx + tx - 0.4, cx + tx + 0.4, TOWER.top - 0.1, 64.3, cz + tz - 0.4, cz + tz + 0.4);
+      k.pyramid('stone', cx + tx, cz + tz, 64.2, 67.4, 0.8);
     }
   }
 }

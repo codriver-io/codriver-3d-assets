@@ -3,7 +3,7 @@ import { SPEC, PALETTES } from './config.js';
 import { PLAN, H, UP_RING, BODY_RING, surfaces, wordRects } from './centre-bell-parts.js';
 
 // Centre Bell (Bell Centre): the Canadiens' arena as a driver reads it: a 146 m x 107 m box turned 41 degrees from
-// north (OSM way 19911284), its lower 28 m in orange brick (windows in a grid on the south-west face, silver
+// north (OSM way 19911284), its lower 28 m in orange brick (grouped service openings on the south-west face, silver
 // panels on the Rue Saint-Antoine end, tan cladding round the north corner), a 10 m band of dark glass on top, a
 // glazed entrance front on the Place des Canadiens side with two LED screens, and at the north corner the tall tan
 // sign tower with the blue "Centre Bell" lettering. Authored on the building's own grid (u south-east, v
@@ -119,11 +119,11 @@ export function create({ detail = 'near' } = {}) {
   S.wall('clad', [T.u0, T.v0], [T.u1, T.v0], H.ROOF, H.TOWER, [0, -1]); // below the roof this face is inside the building
   S.cap('conc', [[T.u0, T.v0], [T.u1, T.v0], [T.u1, T.v1], [T.u0, T.v1]], [], H.TOWER, true);
   // "Centre" over "Bell" in blue block letters, on the north-east face (read toward -u) and the north-west
-  // face (read toward -v): the real sign faces both streets. Far keeps each word as one plain block.
+  // face (read toward -v): the real sign faces both streets. Far retains the same letter silhouettes.
   const bell = wordRects('Bell', 3.0), centre = wordRects('Centre', 1.8);
   const lines = [[bell, H.ROOF + 1.9], [centre, H.ROOF + 5.6]];
   for (const [word, base] of lines) {
-    const rects = near ? word.rects : [{ s0: 0, s1: word.length, y0: 0, y1: word === bell ? 3.0 : 1.3 }];
+    const rects = word.rects;
     for (const r of rects) {
       S.onWall('sign', nePlane, T.u1 - 3.2 - r.s1, T.u1 - 3.2 - r.s0, base + r.y0, base + r.y1, 0.25);
       S.onWall('sign', towerNwPlane, T.v1 - 3.6 - r.s1, T.v1 - 3.6 - r.s0, base + r.y0, base + r.y1, 0.25);
@@ -131,37 +131,19 @@ export function create({ detail = 'near' } = {}) {
   }
 
   // ---- windows, slots and panels -----------------------------------------------------------------------------
-  const vents = [[-0.5, 10.1], [13.5, 24.1]];
-  const inVent = (c) => vents.some(([a, z]) => c + 0.85 > a && c - 0.85 < z);
-  // south-west face: a grid of small windows in seven rows (ribbons in the far model)
-  for (let k = 0; k < 7; k++) {
-    const y0 = 7.0 + 2.9 * k;
-    if (near) {
-      for (let i = 0; i < 39; i++) {
-        const c = -43.2 + 2.9 * i;
-        if (i % 3 === 2 || (k >= 5 && inVent(c))) continue; // pairs of windows between blank brick bays
-        S.onWall('glass', swPlane, c - 0.85, c + 0.85, y0, y0 + 1.3, 0.15);
-      }
-    } else {
-      // far: one box per pair of windows
-      for (let g = 0; g < 13; g++) {
-        const c0 = -43.2 + 8.7 * g, a = c0 - 0.85, z = c0 + 2.9 + 0.85;
-        if (k >= 5 && (inVent(c0) || inVent(c0 + 2.9))) continue;
-        S.onWall('glass', swPlane, a, z, y0, y0 + 1.3, 0.15);
-      }
-    }
+  // Broad opaque brick piers dominate the street elevations; openings are grouped into
+  // a few tall service bays rather than a repeated field of bright square dots.
+  const overlay = (mat, a, z, y0, y1, depth) => S.wall(mat, [a,V0-depth], [z,V0-depth], y0,y1,[0,-1]);
+  const relief = near ? 0.25 : 0.6;
+  for (const c of [-34, -20, 37, 53]) {
+    overlay('dark', c - 2.3, c + 2.3, 7.5, 18.5, relief);
+    for (const dx of [-0.8, 0.8]) overlay('brick', c + dx - 0.18, c + dx + 0.18, 7.5, 18.5, relief + 0.25);
   }
-  // two louvre grids high on the brick (the dark vertical slots above the windows)
   for (const u0 of [0, 14]) {
-    if (near) for (let j = 0; j < 9; j++) S.onWall('dark', swPlane, u0 + 1.2 * j - 0.25, u0 + 1.2 * j + 0.25, 20.5, 26.5, 0.15);
-    else S.onWall('dark', swPlane, u0 - 0.25, u0 + 9.85, 20.5, 26.5, 0.15);
+    overlay('dark', u0 - 0.25, u0 + 9.85, 20.5, 26.5, relief);
+    for (let j = 0; j < 9; j++) overlay('brick', u0 + 1.2 * j, Math.min(u0 + 9.85, u0 + 1.2 * j + 0.35), 20.5, 26.5, relief + 0.25);
   }
-  // north-east face east of the front: five rows of windows
-  for (let k = 0; k < 5; k++) {
-    const y0 = 7.0 + 2.9 * k;
-    if (near) for (let i = 0; i < 9; i++) { if (i % 3 !== 2) { const c = 44.5 + 2.9 * i; S.onWall('glass', nePlane, c - 0.85, c + 0.85, y0, y0 + 1.3, 0.15); } }
-    else for (let g = 0; g < 3; g++) S.onWall('glass', nePlane, 44.5 + 8.7 * g - 0.85, 44.5 + 8.7 * g + 3.75, y0, y0 + 1.3, 0.15);
-  }
+  for (const c of [48, 62]) S.onWall('dark', nePlane, c - 2, c + 2, 8, 19, relief);
   // south-west set-back: three ribbon windows in the pale wall
   for (const y0 of [9.5, 15, 20.5]) S.onWall('glass', { axis: 'v', at: NOTCH_V, out: -1 }, -70.5, -46.5, y0, y0 + 1.4, 0.15);
   if (near) {

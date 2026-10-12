@@ -1283,7 +1283,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/canadian-museum-of-history-near.glb",
-      "bytes": 1116784,
+      "bytes": 1116780,
       "triangles": 18249,
       "drawCalls": 9,
       "bounds": {
@@ -1301,8 +1301,8 @@
     },
     "far": {
       "url": "/models/buildings/canadian-museum-of-history-far.glb",
-      "bytes": 230628,
-      "triangles": 3737,
+      "bytes": 251240,
+      "triangles": 4001,
       "drawCalls": 4,
       "bounds": {
         "min": [

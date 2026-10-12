@@ -10,9 +10,9 @@ import { RING, FEET, AXIS } from './biodome-de-montreal-plan.js';
 // (stadeolympiquemontreal.ca/le-toit-du-velodrome.php). Estimated: everything else here.
 export const CROWN = 33.5;
 const LIP = 1.1;          // thickness of the roof edge beam seen from the front
-const BUBBLE = 0.46;
+const BUBBLE = 0.12;
 const SKY_GAP = 0.16;     // glass floats this far over the shell at its rim (shell faces are larger than 50 m)      // how far a skylight's glass rises over the shell
-const LIFT = 1.5;         // how far the spindle stands proud of the flanks at the crown
+const LIFT = 0.45;         // how far the spindle stands proud of the flanks at the crown
 const HC = CROWN - BUBBLE - LIFT - 0.25; // dome height at the centre; spindle lift and the middle skylight bubble bring it to CROWN
 const P_EXP = 1.8;        // fullness of the dome profile, t = 0 at the crown, 1 at the edge
 const KAPPA = 0.22;       // how much the dome drops between the feet (ridges run down to the abutments)
@@ -221,7 +221,7 @@ export function shellParts(detail) {
 export const toWorld = (s, w) => [s * AXIS.u[0] + w * AXIS.v[0], s * AXIS.u[1] + w * AXIS.v[1]];
 function spacedPlan(points, step) {
   const curve = new THREE.CatmullRomCurve3(points.map(([x, z]) => new THREE.Vector3(x, 0, z)), false, 'centripetal');
-  const n = Math.max(4, Math.round(curve.getLength() / step));
+  const n = Math.max(2, Math.round(curve.getLength() / step));
   return curve.getSpacedPoints(n).map((v) => [v.x, v.z]);
 }
 export function ribStrip(points, { step = 3, wb = 2, wt = 0.8, hr = 0.9, taper = 5, sink = 0.14, lift = 0, follow = heightAt } = {}) {
@@ -251,14 +251,14 @@ export function ribStrip(points, { step = 3, wb = 2, wt = 0.8, hr = 0.9, taper =
 
 // ---------------------------------------------------------------------------------------------
 // A lens-shaped skylight: pointed at both ends, a low glass bubble over the shell.
-export function lens(cx, cz, angle, halfLength, halfWidth, { nu = 10, nv = 4 } = {}) {
+export function lens(cx, cz, angle, halfLength, halfWidth, { nu = 10, nv = 4, gap = SKY_GAP } = {}) {
   const dx = Math.cos(angle), dz = Math.sin(angle), px = -dz, pz = dx;
   const pos = [], idx = [];
   const put = (xi, eta) => {
     const om = Math.pow(Math.max(0, 1 - xi * xi), 0.8);
     const x = cx + xi * halfLength * dx + eta * halfWidth * om * px, z = cz + xi * halfLength * dz + eta * halfWidth * om * pz;
-    const bubble = BUBBLE * (1 - eta * eta) * Math.sqrt(Math.max(0, 1 - xi * xi));
-    pos.push(x, heightAt(x, z) + SKY_GAP + bubble, z);
+    const bubble = BUBBLE * (1 - eta * eta);
+    pos.push(x, heightAt(x, z) + gap + bubble, z);
   };
   put(-1, 0);
   const col = (c) => 1 + (c - 1) * (nv + 1);
