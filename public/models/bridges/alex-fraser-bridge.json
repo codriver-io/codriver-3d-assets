@@ -1,0 +1,69 @@
+{
+  "id": "alex-fraser-bridge",
+  "name": "Alex Fraser Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.943,
+    49.1598
+  ],
+  "height": 154,
+  "padM": 1600,
+  "frontageBearing": 164.9,
+  "rangeM": 7500,
+  "nearM": 1900,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual water/pile-cap/flat-map grade. Deck top 60 m, soffit 57 m, concrete tower crown 154 m. No DEM, Mercator stretch or scene-origin offset baked into the asset; absolute-deck runtime fits foundations and approach ends to terrain.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published main span 465 m, deck width 32 m, crown 154 m, clearance 57 m and overall bridge 2525 m. Estimated 182.75 m back spans, H crossbeam heights, shaft sections, 144 representative stays, seven-lane stripe widths, girders, lamp and approach support spacing. Full-length mapped curved approach alignment; the first/last 100 m taper to mapped road connections, with provider width and pavement colour fitted locally; the main 32 m deck stays rigid. Flat ramps are a map convention. Reversible lane is shown in one static 4/3 configuration.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/alex-fraser-bridge-near.glb",
+      "bytes": 2768616,
+      "triangles": 70516,
+      "drawCalls": 28,
+      "bounds": {
+        "min": [
+          -485.0221252441406,
+          -6.138933485999587e-7,
+          -1114.177001953125
+        ],
+        "max": [
+          359.8515319824219,
+          154,
+          1243.2078857421875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/alex-fraser-bridge-far.glb",
+      "bytes": 762268,
+      "triangles": 26996,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -485.0221252441406,
+          -6.138933485999587e-7,
+          -1114.177001953125
+        ],
+        "max": [
+          359.8515319824219,
+          154,
+          1243.2078857421875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/alex-fraser-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

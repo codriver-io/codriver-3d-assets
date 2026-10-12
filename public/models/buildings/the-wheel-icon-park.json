@@ -1,0 +1,70 @@
+{
+  "id": "the-wheel-icon-park",
+  "name": "The Wheel at ICON Park",
+  "kind": "building",
+  "origin": [
+    -81.468199,
+    28.4432359
+  ],
+  "height": 122,
+  "padM": 42,
+  "frontageBearing": 269.3168902113,
+  "bearing": 179.3168902113,
+  "radius": 56.5,
+  "hubHeight": 61.5,
+  "capsuleOrbit": 58,
+  "capsules": 30,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local foundation grade y=0; real metres, no terrain elevation baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "122 m overall height and 30 capsules/spokes, eight legs from official Orlando Eye facts. Rim radius, hub datum, capsule sizes and support spacing estimated from photographs. Rotation baked once from OSM way 331551657; adjoining aquarium remains provider-owned. Static upright capsules; simplified opaque glazing and fixed blue/pink LED scheme.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/the-wheel-icon-park-near.glb",
+      "bytes": 1043284,
+      "triangles": 29172,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -12.405618667602539,
+          -2.9802322831784522e-9,
+          -59.995887756347656
+        ],
+        "max": [
+          21.404977798461914,
+          122.27999877929688,
+          59.995887756347656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/the-wheel-icon-park-far.glb",
+      "bytes": 367812,
+      "triangles": 8204,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -12.405618667602539,
+          -2.9802322831784522e-9,
+          -59.995887756347656
+        ],
+        "max": [
+          21.404977798461914,
+          122,
+          59.995887756347656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-wheel-icon-park/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

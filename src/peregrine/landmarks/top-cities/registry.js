@@ -309,6 +309,51 @@ import { FOOTPRINTS as lm_washington_dc_templeFootprints } from './washington-dc
 import { SPEC as lm_ironworkers_memorial_bridgeSpec, PALETTES as lm_ironworkers_memorial_bridgePalettes } from './ironworkers-memorial-bridge/config.js';
 import { FOOTPRINTS as lm_ironworkers_memorial_bridgeFootprints } from './ironworkers-memorial-bridge/footprint.js';
 import { ROAD_LAYER as lm_ironworkers_memorial_bridgeRoad } from './ironworkers-memorial-bridge/layer.js';
+import { SPEC as lm_magere_brugSpec, PALETTES as lm_magere_brugPalettes } from './magere-brug/config.js';
+import { FOOTPRINTS as lm_magere_brugFootprints } from './magere-brug/footprint.js';
+import { SPEC as lm_tower_of_londonSpec, PALETTES as lm_tower_of_londonPalettes } from './tower-of-london/config.js';
+import { FOOTPRINTS as lm_tower_of_londonFootprints } from './tower-of-london/footprint.js';
+import { SPEC as lm_fountain_placeSpec, PALETTES as lm_fountain_placePalettes } from './fountain-place/config.js';
+import { FOOTPRINTS as lm_fountain_placeFootprints } from './fountain-place/footprint.js';
+import { SPEC as lm_motherland_monumentSpec, PALETTES as lm_motherland_monumentPalettes } from './motherland-monument/config.js';
+import { FOOTPRINTS as lm_motherland_monumentFootprints } from './motherland-monument/footprint.js';
+import { SPEC as lm_vincent_thomas_bridgeSpec, PALETTES as lm_vincent_thomas_bridgePalettes } from './vincent-thomas-bridge/config.js';
+import { FOOTPRINTS as lm_vincent_thomas_bridgeFootprints } from './vincent-thomas-bridge/footprint.js';
+import { ROAD_LAYER as lm_vincent_thomas_bridgeRoad } from './vincent-thomas-bridge/layer.js';
+import { SPEC as lm_marine_buildingSpec, PALETTES as lm_marine_buildingPalettes } from './marine-building/config.js';
+import { FOOTPRINTS as lm_marine_buildingFootprints } from './marine-building/footprint.js';
+import { SPEC as lm_basilica_de_los_angeles_cartagoSpec, PALETTES as lm_basilica_de_los_angeles_cartagoPalettes } from './basilica-de-los-angeles-cartago/config.js';
+import { FOOTPRINTS as lm_basilica_de_los_angeles_cartagoFootprints } from './basilica-de-los-angeles-cartago/footprint.js';
+import { SPEC as lm_edificio_metropolisSpec, PALETTES as lm_edificio_metropolisPalettes } from './edificio-metropolis/config.js';
+import { FOOTPRINTS as lm_edificio_metropolisFootprints } from './edificio-metropolis/footprint.js';
+import { SPEC as lm_high_museum_of_artSpec, PALETTES as lm_high_museum_of_artPalettes } from './high-museum-of-art/config.js';
+import { FOOTPRINTS as lm_high_museum_of_artFootprints } from './high-museum-of-art/footprint.js';
+import { SPEC as lm_williams_towerSpec, PALETTES as lm_williams_towerPalettes } from './williams-tower/config.js';
+import { FOOTPRINTS as lm_williams_towerFootprints } from './williams-tower/footprint.js';
+import { SPEC as lm_basarab_overpassSpec, PALETTES as lm_basarab_overpassPalettes } from './basarab-overpass/config.js';
+import { FOOTPRINTS as lm_basarab_overpassFootprints } from './basarab-overpass/footprint.js';
+import { ROAD_LAYER as lm_basarab_overpassRoad } from './basarab-overpass/layer.js';
+import { SPEC as lm_john_hancock_centerSpec, PALETTES as lm_john_hancock_centerPalettes } from './john-hancock-center/config.js';
+import { FOOTPRINTS as lm_john_hancock_centerFootprints } from './john-hancock-center/footprint.js';
+import { SPEC as lm_att_building_nashvilleSpec, PALETTES as lm_att_building_nashvillePalettes } from './att-building-nashville/config.js';
+import { FOOTPRINTS as lm_att_building_nashvilleFootprints } from './att-building-nashville/footprint.js';
+import { SPEC as lm_granville_street_bridgeSpec, PALETTES as lm_granville_street_bridgePalettes } from './granville-street-bridge/config.js';
+import { FOOTPRINTS as lm_granville_street_bridgeFootprints } from './granville-street-bridge/footprint.js';
+import { ROAD_LAYER as lm_granville_street_bridgeRoad } from './granville-street-bridge/layer.js';
+import { SPEC as lm_jefferson_memorialSpec, PALETTES as lm_jefferson_memorialPalettes } from './jefferson-memorial/config.js';
+import { FOOTPRINTS as lm_jefferson_memorialFootprints } from './jefferson-memorial/footprint.js';
+import { SPEC as lm_adam_torenSpec, PALETTES as lm_adam_torenPalettes } from './adam-toren/config.js';
+import { FOOTPRINTS as lm_adam_torenFootprints } from './adam-toren/footprint.js';
+import { SPEC as lm_buckingham_palaceSpec, PALETTES as lm_buckingham_palacePalettes } from './buckingham-palace/config.js';
+import { FOOTPRINTS as lm_buckingham_palaceFootprints } from './buckingham-palace/footprint.js';
+import { SPEC as lm_samuel_beckett_bridgeSpec, PALETTES as lm_samuel_beckett_bridgePalettes } from './samuel-beckett-bridge/config.js';
+import { FOOTPRINTS as lm_samuel_beckett_bridgeFootprints } from './samuel-beckett-bridge/footprint.js';
+import { ROAD_LAYER as lm_samuel_beckett_bridgeRoad } from './samuel-beckett-bridge/layer.js';
+import { SPEC as lm_fairmont_hotel_vancouverSpec, PALETTES as lm_fairmont_hotel_vancouverPalettes } from './fairmont-hotel-vancouver/config.js';
+import { FOOTPRINTS as lm_fairmont_hotel_vancouverFootprints } from './fairmont-hotel-vancouver/footprint.js';
+import { SPEC as lm_pennybacker_bridgeSpec, PALETTES as lm_pennybacker_bridgePalettes } from './pennybacker-bridge/config.js';
+import { FOOTPRINTS as lm_pennybacker_bridgeFootprints } from './pennybacker-bridge/footprint.js';
+import { ROAD_LAYER as lm_pennybacker_bridgeRoad } from './pennybacker-bridge/layer.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -454,6 +499,26 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_the_wheel_icon_parkSpec, lm_the_wheel_icon_parkPalettes, lm_the_wheel_icon_parkFootprints),
   entry(lm_washington_dc_templeSpec, lm_washington_dc_templePalettes, lm_washington_dc_templeFootprints),
   entry(lm_ironworkers_memorial_bridgeSpec, lm_ironworkers_memorial_bridgePalettes, lm_ironworkers_memorial_bridgeFootprints, lm_ironworkers_memorial_bridgeRoad),
+  entry(lm_magere_brugSpec, lm_magere_brugPalettes, lm_magere_brugFootprints),
+  entry(lm_tower_of_londonSpec, lm_tower_of_londonPalettes, lm_tower_of_londonFootprints),
+  entry(lm_fountain_placeSpec, lm_fountain_placePalettes, lm_fountain_placeFootprints),
+  entry(lm_motherland_monumentSpec, lm_motherland_monumentPalettes, lm_motherland_monumentFootprints),
+  entry(lm_vincent_thomas_bridgeSpec, lm_vincent_thomas_bridgePalettes, lm_vincent_thomas_bridgeFootprints, lm_vincent_thomas_bridgeRoad),
+  entry(lm_marine_buildingSpec, lm_marine_buildingPalettes, lm_marine_buildingFootprints),
+  entry(lm_basilica_de_los_angeles_cartagoSpec, lm_basilica_de_los_angeles_cartagoPalettes, lm_basilica_de_los_angeles_cartagoFootprints),
+  entry(lm_edificio_metropolisSpec, lm_edificio_metropolisPalettes, lm_edificio_metropolisFootprints),
+  entry(lm_high_museum_of_artSpec, lm_high_museum_of_artPalettes, lm_high_museum_of_artFootprints),
+  entry(lm_williams_towerSpec, lm_williams_towerPalettes, lm_williams_towerFootprints),
+  entry(lm_basarab_overpassSpec, lm_basarab_overpassPalettes, lm_basarab_overpassFootprints, lm_basarab_overpassRoad),
+  entry(lm_john_hancock_centerSpec, lm_john_hancock_centerPalettes, lm_john_hancock_centerFootprints),
+  entry(lm_att_building_nashvilleSpec, lm_att_building_nashvillePalettes, lm_att_building_nashvilleFootprints),
+  entry(lm_granville_street_bridgeSpec, lm_granville_street_bridgePalettes, lm_granville_street_bridgeFootprints, lm_granville_street_bridgeRoad),
+  entry(lm_jefferson_memorialSpec, lm_jefferson_memorialPalettes, lm_jefferson_memorialFootprints),
+  entry(lm_adam_torenSpec, lm_adam_torenPalettes, lm_adam_torenFootprints),
+  entry(lm_buckingham_palaceSpec, lm_buckingham_palacePalettes, lm_buckingham_palaceFootprints),
+  entry(lm_samuel_beckett_bridgeSpec, lm_samuel_beckett_bridgePalettes, lm_samuel_beckett_bridgeFootprints, lm_samuel_beckett_bridgeRoad),
+  entry(lm_fairmont_hotel_vancouverSpec, lm_fairmont_hotel_vancouverPalettes, lm_fairmont_hotel_vancouverFootprints),
+  entry(lm_pennybacker_bridgeSpec, lm_pennybacker_bridgePalettes, lm_pennybacker_bridgeFootprints, lm_pennybacker_bridgeRoad),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

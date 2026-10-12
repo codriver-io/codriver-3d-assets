@@ -1,0 +1,325 @@
+{
+  "id": "washington-dc-temple",
+  "name": "Washington D.C. Temple",
+  "kind": "building",
+  "origin": [
+    -77.0656083,
+    39.014052
+  ],
+  "height": 87.7824,
+  "wallHeight": 40,
+  "statueHeight": 5.4864,
+  "padM": 54,
+  "frontageBearing": 359.72,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -77.0659429,
+          39.0140179
+        ],
+        [
+          -77.0658413,
+          39.0139396
+        ],
+        [
+          -77.0658719,
+          39.0139123
+        ],
+        [
+          -77.0658062,
+          39.0138654
+        ],
+        [
+          -77.0657498,
+          39.0139155
+        ],
+        [
+          -77.0654668,
+          39.0139154
+        ],
+        [
+          -77.0654065,
+          39.0138674
+        ],
+        [
+          -77.0653482,
+          39.0139156
+        ],
+        [
+          -77.0653773,
+          39.0139396
+        ],
+        [
+          -77.0653394,
+          39.0139715
+        ],
+        [
+          -77.0653164,
+          39.0139909
+        ],
+        [
+          -77.0652991,
+          39.0140057
+        ],
+        [
+          -77.0652804,
+          39.0140217
+        ],
+        [
+          -77.0652415,
+          39.0139967
+        ],
+        [
+          -77.0651824,
+          39.0140409
+        ],
+        [
+          -77.0651678,
+          39.0140519
+        ],
+        [
+          -77.0651834,
+          39.0140641
+        ],
+        [
+          -77.0652416,
+          39.0141092
+        ],
+        [
+          -77.0652724,
+          39.0140863
+        ],
+        [
+          -77.0653095,
+          39.0141159
+        ],
+        [
+          -77.0653286,
+          39.0141311
+        ],
+        [
+          -77.0653539,
+          39.0141512
+        ],
+        [
+          -77.065377,
+          39.0141696
+        ],
+        [
+          -77.0653528,
+          39.0141936
+        ],
+        [
+          -77.0654106,
+          39.0142384
+        ],
+        [
+          -77.0654668,
+          39.0141936
+        ],
+        [
+          -77.0656225,
+          39.0141941
+        ],
+        [
+          -77.0657512,
+          39.0141925
+        ],
+        [
+          -77.0658075,
+          39.0142374
+        ],
+        [
+          -77.0658678,
+          39.0141957
+        ],
+        [
+          -77.065837,
+          39.0141696
+        ],
+        [
+          -77.0659469,
+          39.0140852
+        ],
+        [
+          -77.0659805,
+          39.0141082
+        ],
+        [
+          -77.0660488,
+          39.0140509
+        ],
+        [
+          -77.0659765,
+          39.0139988
+        ]
+      ],
+      [
+        [
+          -77.0657172,
+          39.0145721
+        ],
+        [
+          -77.0656917,
+          39.014555
+        ],
+        [
+          -77.0656685,
+          39.0145725
+        ],
+        [
+          -77.0657343,
+          39.0146297
+        ],
+        [
+          -77.0656738,
+          39.0146802
+        ],
+        [
+          -77.0655423,
+          39.0146802
+        ],
+        [
+          -77.065485,
+          39.0146257
+        ],
+        [
+          -77.0655562,
+          39.0145704
+        ],
+        [
+          -77.0655329,
+          39.0145502
+        ],
+        [
+          -77.0655035,
+          39.0145686
+        ],
+        [
+          -77.065423,
+          39.0145015
+        ],
+        [
+          -77.0655084,
+          39.0144351
+        ],
+        [
+          -77.0655314,
+          39.0144513
+        ],
+        [
+          -77.0655636,
+          39.0144272
+        ],
+        [
+          -77.0656263,
+          39.0144263
+        ],
+        [
+          -77.0656775,
+          39.0144262
+        ],
+        [
+          -77.0657061,
+          39.0144518
+        ],
+        [
+          -77.0657263,
+          39.0144353
+        ],
+        [
+          -77.065807,
+          39.0145001
+        ]
+      ],
+      [
+        [
+          -77.0656488,
+          39.014424
+        ],
+        [
+          -77.0655678,
+          39.014424
+        ],
+        [
+          -77.0655678,
+          39.014191
+        ],
+        [
+          -77.0656488,
+          39.014191
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -77.0656083,
+        39.014052
+      ],
+      [
+        -77.0656083,
+        39.014501
+      ],
+      [
+        -77.0656083,
+        39.014677
+      ]
+    ],
+    "datum": "median",
+    "featherM": 10
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat footing y=0; east/up/south metres. No DEM or absolute elevation baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "87.7824 m (288 ft) including the 5.4864 m (18 ft) Moroni statue is sourced. Mapped plans and six tower anchors are retained; white tower tiers, lesser spire heights, marble fluting and the untagged enclosed link are photo estimates. OSM height=100 is not used. Rotation is already in the exported mapped geometry. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/washington-dc-temple-near.glb",
+      "bytes": 546844,
+      "triangles": 8438,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -38.30512237548828,
+          0,
+          -70.16999816894531
+        ],
+        "max": [
+          38.10074234008789,
+          87.78240203857422,
+          20.77219009399414
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/washington-dc-temple-far.glb",
+      "bytes": 356316,
+      "triangles": 5262,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -38.15251159667969,
+          0,
+          -70.16999816894531
+        ],
+        "max": [
+          38.10074234008789,
+          87.78240203857422,
+          20.77219009399414
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-dc-temple/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (118 released)
+## The collection (128 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -126,6 +126,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `mercedes-benz-museum` | Mercedes-Benz Museum | Stuttgart | building |
 | `notre-dame-de-la-garde` | Notre-Dame de la Garde | Marseille | building |
 | `att-stadium` | AT&T Stadium | Arlington | building |
+| `museo-nacional-de-costa-rica` | Museo Nacional (Cuartel Bellavista) | San José | building |
+| `los-angeles-city-hall` | Los Angeles City Hall | Los Angeles | building |
+| `palacio-de-cibeles` | Palacio de Cibeles | Madrid | building |
+| `alex-fraser-bridge` | Alex Fraser Bridge | Delta | bridge, road-fitted |
+| `the-alamo` | The Alamo | San Antonio | building |
+| `skyview-atlanta` | SkyView Atlanta | Atlanta | building |
+| `frauenkirche-munich` | Frauenkirche | Munich | building |
+| `the-wheel-icon-park` | The Wheel at ICON Park | Orlando | building |
+| `washington-dc-temple` | Washington D.C. Temple | Kensington | building |
+| `ironworkers-memorial-bridge` | Ironworkers Memorial Second Narrows Crossing | Vancouver | bridge, road-fitted |
 
 ## A landmark is a folder
 

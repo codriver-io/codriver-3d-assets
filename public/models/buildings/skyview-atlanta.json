@@ -1,0 +1,70 @@
+{
+  "id": "skyview-atlanta",
+  "name": "SkyView Atlanta",
+  "kind": "building",
+  "origin": [
+    -84.391851775,
+    33.758831225
+  ],
+  "height": 60.96,
+  "diameter": 50.5968,
+  "hubHeight": 35.6616,
+  "boardingDeckHeight": 1,
+  "cabins": 42,
+  "wheelBearing": 41.42019157305619,
+  "frontageBearing": 311.4201915730562,
+  "padM": 30,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local foundation grade y=0; reusable rigid geometry, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Operator study guide: overall height 200 ft (60.96 m), outer rim diameter 166 ft (50.5968 m), 42 gondolas. Hub datum 35.6616 m preserves the published height and diameter; hub, spokes and gondola stations share that wheel frame. The 1 m boarding deck is an independent photographic estimate; support spread, rim depth and cabin dimensions are also estimated. Static capsules do not simulate boarding access. Bearings baked into geometry. Site terrain and access datum require separate app verification.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/skyview-atlanta-near.glb",
+      "bytes": 1246336,
+      "triangles": 27288,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -17.959918975830078,
+          -1.1920929132713809e-8,
+          -20.15407371520996
+        ],
+        "max": [
+          17.959918975830078,
+          60.959999084472656,
+          20.15407371520996
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/skyview-atlanta-far.glb",
+      "bytes": 497116,
+      "triangles": 8688,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -17.907785415649414,
+          -1.1920929132713809e-8,
+          -20.122238159179688
+        ],
+        "max": [
+          17.907785415649414,
+          60.9521369934082,
+          20.122238159179688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/skyview-atlanta/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

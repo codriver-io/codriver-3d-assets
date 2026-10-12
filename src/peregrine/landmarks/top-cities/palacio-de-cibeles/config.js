@@ -1,16 +1,15 @@
-// Palacio de Cibeles, Madrid, Spain.
-// STUB: the landmark's builder replaces this file. Contract: docs/3d-top-cities-landmarks.md.
+import { FOOTPRINTS } from './footprint.js';
 export const SPEC = {
-  id: 'palacio-de-cibeles', name: "Palacio de Cibeles", kind: 'building',
-  ready: false, // true only once near/far GLBs are exported, verified and catalogued
-  origin: [-3.69208, 40.41891], // approximate; the builder sets it from the mapped footprint/alignment
-  height: 70, // m to the highest point, approximate
-  padM: 60,
-  frontageBearing: 0,
+  id: 'palacio-de-cibeles', name: 'Palacio de Cibeles', kind: 'building', ready: true,
+  origin: [-3.69208,40.41891], height: 70, padM: 95, frontageBearing: 308,
+  terrainPad: { rings: [FOOTPRINTS[0]], datum: 'median', featherM: 10 },
 };
-export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
+export const PALETTES = {
+  light: { stone: '#dedbd0', glass: '#414e51', roof: '#838c89', glow: '#727b76', clock: '#eee5d3', iron: '#414845' },
+  dark: { stone: '#8d979f', glass: '#273b49', roof: '#4a5965', glow: '#bd9563', clock: '#ddc798', iron: '#3b4950' },
+};
 export const MANIFEST = {
-  elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude.',
-  attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Stub: not yet authored.',
+  elevationDatum: 'Rigid palace foundation on local y=0; no absolute elevation or terrain baked into the model.',
+  attribution: 'Original procedural model by Codriver. Mapped geometry © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright. Reference photographs by Carlos Delgado, Tamorlan and Concepcion AMAT ORTA (Commons; images not redistributed).',
+  note: '70 m octagonal tower sourced from Madrid heritage record; other heights, bay spacing and ornament are estimates. Original texture-free exterior; Fountain of Cibeles excluded. Cityscape and Full 3D world integration not tested yet.',
 };
