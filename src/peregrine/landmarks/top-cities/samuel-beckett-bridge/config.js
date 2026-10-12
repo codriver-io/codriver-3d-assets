@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'samuel-beckett-bridge', name: "Samuel Beckett Bridge", kind: 'bridge',
   ready: false,
-  origin: [-6.2413, 53.347],
+  origin: [-6.2413,53.347],
   height: 48,
   padM: 60,
   frontageBearing: 0,

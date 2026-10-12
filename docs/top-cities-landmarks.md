@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (128 released)
+## The collection (138 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -126,6 +126,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `mercedes-benz-museum` | Mercedes-Benz Museum | Stuttgart | building |
 | `notre-dame-de-la-garde` | Notre-Dame de la Garde | Marseille | building |
 | `att-stadium` | AT&T Stadium | Arlington | building |
+| `golden-ears-bridge` | Golden Ears Bridge | Maple Ridge | bridge, road-fitted |
+| `westin-peachtree-plaza` | Westin Peachtree Plaza | Atlanta | building |
+| `ponte-25-de-abril` | Ponte 25 de Abril | Lisbon | bridge, road-fitted |
+| `white-house` | White House | Washington | building |
+| `westerkerk` | Westerkerk | Amsterdam | building |
+| `cologne-cathedral` | Cologne Cathedral | Cologne | building |
+| `london-eye` | London Eye | London | building |
+| `fred-hartman-bridge` | Fred Hartman Bridge | Baytown | bridge, road-fitted |
+| `peoples-salvation-cathedral` | People's Salvation Cathedral | Bucharest | building |
+| `pitt-river-bridge` | Pitt River Bridge | Pitt Meadows | bridge, road-fitted |
 | `museo-nacional-de-costa-rica` | Museo Nacional (Cuartel Bellavista) | San José | building |
 | `los-angeles-city-hall` | Los Angeles City Hall | Los Angeles | building |
 | `palacio-de-cibeles` | Palacio de Cibeles | Madrid | building |

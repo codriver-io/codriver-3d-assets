@@ -1,0 +1,67 @@
+{
+  "id": "westerkerk",
+  "name": "Westerkerk",
+  "kind": "building",
+  "origin": [
+    4.8835355,
+    52.3745297
+  ],
+  "height": 87,
+  "padM": 65,
+  "frontageBearing": 272.86,
+  "crownHeight": 81,
+  "towerMasonryHeight": 40,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local pavement y=0, rigid flat foundation; no terrain, latitude stretch or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Westertoren 85 m excluding rooster / 87 m including rooster per official church. OSM outlines and tagged 40/52/64/72 m stages; facade profiles, ornament and crown proportions estimated from reference photographs. Rotation baked once; both app placement modes not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/westerkerk-near.glb",
+      "bytes": 1168432,
+      "triangles": 31712,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -6.443235874176025,
+          -1.9073486612342094e-7,
+          -26.64995765686035
+        ],
+        "max": [
+          56.22364807128906,
+          87,
+          18.76192855834961
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/westerkerk-far.glb",
+      "bytes": 426556,
+      "triangles": 9963,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -6.368328094482422,
+          -1.9073486612342094e-7,
+          -26.64995765686035
+        ],
+        "max": [
+          56.22364807128906,
+          87,
+          18.76192855834961
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/westerkerk/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

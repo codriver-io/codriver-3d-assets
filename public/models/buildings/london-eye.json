@@ -1,0 +1,144 @@
+{
+  "id": "london-eye",
+  "name": "London Eye",
+  "kind": "building",
+  "origin": [
+    -0.1196765,
+    51.5033416
+  ],
+  "height": 135,
+  "padM": 12,
+  "frontageBearing": 277.36,
+  "diameter": 120,
+  "hubHeight": 69,
+  "capsules": 32,
+  "capsuleRadius": 63.75,
+  "wheelBearing": 7.36,
+  "terrainPad": {
+    "datum": "median",
+    "featherM": 3,
+    "rings": [
+      [
+        [
+          -0.119164,
+          51.503445
+        ],
+        [
+          -0.119055,
+          51.503445
+        ],
+        [
+          -0.119055,
+          51.503392
+        ],
+        [
+          -0.119164,
+          51.503392
+        ]
+      ],
+      [
+        [
+          -0.119206,
+          51.503205
+        ],
+        [
+          -0.119097,
+          51.503205
+        ],
+        [
+          -0.119097,
+          51.503151
+        ],
+        [
+          -0.119206,
+          51.503151
+        ]
+      ],
+      [
+        [
+          -0.118636,
+          51.503279
+        ],
+        [
+          -0.118547,
+          51.503279
+        ],
+        [
+          -0.118547,
+          51.50323
+        ],
+        [
+          -0.118636,
+          51.50323
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -0.11911,
+        51.503418
+      ],
+      [
+        -0.119151,
+        51.503178
+      ],
+      [
+        -0.11859,
+        51.503255
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0 at South Bank foundation tables; no terrain, river level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "135 m height and 32 pods sourced from operator/architect; 120 m rim from Wikipedia. Capsule shape, hub height, tube sizes and static capsule phase estimated from photographs. Complete 32-pod design shown; temporary maintenance omissions and sponsor graphics omitted. Rotation baked once from OSM outline controls. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/london-eye-near.glb",
+      "bytes": 999304,
+      "triangles": 32728,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -12.27247142791748,
+          -4.7683716530855236e-8,
+          -65.50869750976562
+        ],
+        "max": [
+          78.04869079589844,
+          135.1600341796875,
+          65.50869750976562
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/london-eye-far.glb",
+      "bytes": 421476,
+      "triangles": 11824,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -12.029877662658691,
+          -4.7683716530855236e-8,
+          -65.53055572509766
+        ],
+        "max": [
+          78.04869079589844,
+          135.18309020996094,
+          65.53055572509766
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/london-eye/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

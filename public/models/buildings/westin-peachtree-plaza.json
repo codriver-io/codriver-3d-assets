@@ -1,0 +1,72 @@
+{
+  "id": "westin-peachtree-plaza",
+  "name": "Westin Peachtree Plaza",
+  "kind": "building",
+  "origin": [
+    -84.388577,
+    33.7594283
+  ],
+  "height": 220.37,
+  "radius": 19.6,
+  "podiumHeight": 24,
+  "restaurantBase": 208.2,
+  "restaurantTop": 218.9,
+  "elevatorBearing": 58,
+  "elevatorOffset": 20.5,
+  "elevatorRadius": 2.55,
+  "padM": 68,
+  "frontageBearing": 90.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map hotel grade y=0; rigid base, no sea level or DEM baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "220.37 m roof; 39.2 m diameter fitted independently to OSM, versus a conflicting published 57 m. Restaurant tiers, facade bays and podium heights are photo estimates. Historical 269.1 m antenna omitted: current mast configuration unverified. Both app modes require separate integration QA.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/westin-peachtree-plaza-near.glb",
+      "bytes": 1623120,
+      "triangles": 29872,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -45.99665069580078,
+          -1.2732947605426201e-15,
+          -23.00973892211914
+        ],
+        "max": [
+          78.86065673828125,
+          220.3699951171875,
+          20.79448127746582
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/westin-peachtree-plaza-far.glb",
+      "bytes": 381684,
+      "triangles": 6908,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -45.99665069580078,
+          -1.2732947605426201e-15,
+          -23.00973892211914
+        ],
+        "max": [
+          78.86065673828125,
+          220.3699951171875,
+          20.79448127746582
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/westin-peachtree-plaza/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
