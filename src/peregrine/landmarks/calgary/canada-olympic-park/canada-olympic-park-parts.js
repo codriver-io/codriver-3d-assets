@@ -6,7 +6,8 @@
 //              glazed bands, Olympic rings (flat annuli), mast
 //   tower70()  the 70 m tower: concrete shaft and box head with the K89 start
 // Every support and shaft reaches y = 0 (see the plan for why). Numbers live in canada-olympic-park-plan.js.
-import { JUMPS, SUPPORTS, TOWER90, TOWER70, TOWER50, HUT38, axes, inrunProfile, deckY, jumpPoint, girderDepth, GIRDER_STEEL } from './canada-olympic-park-plan.js';
+import * as THREE from 'three';
+import { hillHeight, JUMPS, SUPPORTS, TOWER90, TOWER70, TOWER50, HUT38, axes, inrunProfile, deckY, jumpPoint, girderDepth, GIRDER_STEEL } from './canada-olympic-park-plan.js';
 import { polys, prism, sweep, bar, ring } from './canada-olympic-park-mesh.js';
 
 const WALL = 0.3; // parapet thickness
@@ -114,7 +115,7 @@ function mullions(b, jump, profile, box, ranges, pitch) {
 
 /** Window bands as quads 6 cm proud of the four (or listed) faces of an axis box in a jump frame. */
 function bands(b, jump, profile, box, ranges, faces = ['n', 'e', 's', 'w'], inset = 0.6) {
-  const { d, r } = axes(jump.bearing), o = 0.06, list = [];
+  const { d, r } = axes(jump.bearing), o = 0.12, list = [];
   for (const [y0, y1] of ranges) {
     for (const f of faces) {
       if (f === 'n') list.push([P(jump, profile, box.u1 + o, box.v0 + inset, y0), P(jump, profile, box.u1 + o, box.v1 - inset, y0), P(jump, profile, box.u1 + o, box.v1 - inset, y1), P(jump, profile, box.u1 + o, box.v0 + inset, y1), [d[0], 0, d[1]]]);
@@ -148,9 +149,12 @@ export function tower90(b, ctx) {
   polys(b, 'glass', [[P(jump, profile, 0.06, -W - g, yd - jump.depth - 0.3), P(jump, profile, 0.06, W + g, yd - jump.depth - 0.3),
     P(jump, profile, 0.06, W + g, yd + jump.parapet + 0.9), P(jump, profile, 0.06, -W - g, yd + jump.parapet + 0.9), n]]);
   bands(b, jump, profile, T.head, T.bands, ['n', 'e', 'w', 's']);
-  if (ctx.near) mullions(b, jump, profile, T.head, T.bands, T.mullion);
+  mullions(b, jump, profile, T.head, T.bands, T.mullion);
+  const coreRanges = [];
+  for (let y = T.base + 1; y < T.frustumY - 2; y += 3.2) coreRanges.push([y, y + .22]);
+  bands(b, jump, profile, T.shaft, coreRanges, ['w', 'e'], 0.8);
   // Glazed lift-core strip on the west face, from the tower's real ground to the cornice.
-  const o = 0.06, s0 = T.core.u0, s1 = T.core.u1, west = [-r[0], 0, -r[1]];
+  const o = 0.12, s0 = T.core.u0, s1 = T.core.u1, west = [-r[0], 0, -r[1]];
   const wv = T.shaft.v0 - o, hv = T.head.v0 - o;
   polys(b, 'glass', [
     [P(jump, profile, s0, wv, T.base + 0.5), P(jump, profile, s1, wv, T.base + 0.5), P(jump, profile, s1, wv, T.frustumY - 0.3), P(jump, profile, s0, wv, T.frustumY - 0.3), west],
@@ -202,4 +206,21 @@ export function hut38(b, ctx) {
     bar(b, 'steel', P(jump, profile, u, v, 0), P(jump, profile, u, v, y0 + 0.05), 0.4, angle);
   }
   if (ctx.near) bands(b, jump, profile, H.box, [[y1 - 1.6, y1 - 0.7]], ['n', 'e', 'w'], 0.5);
+}
+
+/** Authored planted hill surfaces, from the tower foot through take-off to
+ * the landing outrun. Rounded lateral shoulders meet local grade, rather than
+ * exposing vertical retaining walls or a rectangular pad. Photo-estimated. */
+export function landingHills(b, ctx) {
+  const NX = ctx.near ? 48 : 32, NZ = ctx.near ? 72 : 48;
+  const positions = [], indices = [];
+  for (let iz=0;iz<=NZ;iz++) for(let ix=0;ix<=NX;ix++) {
+    const x=-85+255*ix/NX,z=-295+445*iz/NZ;
+    positions.push(x,hillHeight(x,z),z);
+    if(iz&&ix){const a=(iz-1)*(NX+1)+ix-1,c=iz*(NX+1)+ix-1;indices.push(a,c,c+1,a,c+1,a+1);}
+  }
+  const visible=[];for(let i=0;i<indices.length;i+=3){const tri=indices.slice(i,i+3);if(tri.some(k=>positions[k*3+1]>.1))visible.push(...tri);}
+  const used=[...new Set(visible)],remap=new Map(used.map((k,i)=>[k,i]));
+  const packed=used.flatMap(k=>positions.slice(k*3,k*3+3));
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(packed,3));g.setIndex(visible.map(k=>remap.get(k)));g.computeVertexNormals();b.put(g,'grass');
 }

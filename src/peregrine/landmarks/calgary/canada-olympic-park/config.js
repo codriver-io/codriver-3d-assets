@@ -7,7 +7,7 @@
 // Origin: centre of the 90 m tower head, on the K114 axis (aerial imagery; the OSM inrun ways are coarse, see footprint.js).
 // y = 0 is the ground at the K89 take-off edge, the complex's lowest footing; the plan explains the frame.
 import { lngToMercX, latToMercY, mercXToLng, mercYToLat, mercStretch } from '../../../facade/geo.js';
-import { JUMPS, TOWER90, inrunProfile, jumpPoint } from './canada-olympic-park-plan.js';
+import { hillHeight, JUMPS, TOWER90, inrunProfile, jumpPoint } from './canada-olympic-park-plan.js';
 
 const ORIGIN = [-114.2128861, 51.0767341];
 // Local (x east, z south) → [lng, lat], rounded to 1e-7 deg.
@@ -15,16 +15,24 @@ const lngLat = ([x, z]) => {
   const s = mercStretch(ORIGIN[1]), r7 = (v) => Math.round(v * 1e7) / 1e7;
   return [r7(mercXToLng(lngToMercX(ORIGIN[0]) + x * s)), r7(mercYToLat(latToMercY(ORIGIN[1]) - z * s))];
 };
-// Full 3D world (ADR-0045). The default disc would take the LOWEST DEM sample under it and flatten a pit round the tower.
-// The complex is instead hung from ONE point: the group's y = 0 is the DEM at the K89 take-off edge (median of four
-// samples 2 m round it), and the only ring held at that datum is the K89 take-off table's own footprint, with a 4 m
-// feather. Everything else keeps the DEM: the hill rises round the uphill supports and hides them below their real
-// ground, so no pit, no mound and no terrace is needed (measured: docs/3d-calgary-canada-olympic-park.md, Placement).
+// Rigid authored landscape: local zero is the lower K89 outrun. Four small
+// take-off terraces meet the model's relative hill heights; the wider authored
+// slope feathers to grade instead of an exposed retaining pad.
 const k89 = JUMPS.k89, p89 = inrunProfile(k89), at89 = (u, v) => lngLat(jumpPoint(k89, p89, u, v));
+const terraces = [];
+// Only lower terrain immediately beneath the authored landform. Small local
+// tables sample the LOWEST corner of each patch, so their ground is always
+// hidden under the curved grass skin; no all-site trench or plateau cut.
+for (let x=-70;x<150;x+=25) for(let z=-270;z<120;z+=25) {
+  const ring=[[x,z],[x+25,z],[x+25,z+25],[x,z+25]];
+  const floor=Math.min(...ring.map(([x,z])=>hillHeight(x,z)));
+  if(floor<3)continue;
+  terraces.push({ring:ring.map(lngLat),offsetM:floor-2,featherM:18});
+}
 const TERRAIN_PAD = {
-  rings: [[at89(p89.uT - 8, -2.4), at89(p89.uT, -2.4), at89(p89.uT, 2.4), at89(p89.uT - 8, 2.4)]],
-  refs: [at89(p89.uT - 2, 0), at89(p89.uT, -2), at89(p89.uT + 2, 0), at89(p89.uT, 2)],
-  datum: 'median', featherM: 4,
+  rings: [[at89(p89.uT+112,-8),at89(p89.uT+128,-8),at89(p89.uT+128,8),at89(p89.uT+112,8)]],
+  refs: [at89(p89.uT+120,-3),at89(p89.uT+120,3)],
+  datum:'median',featherM:8,terraces,
 };
 export const SPEC = {
   id: 'canada-olympic-park', name: 'Canada Olympic Park ski jumps', kind: 'building',
@@ -38,16 +46,16 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
-    concrete: '#bdbbb2', clad: '#bcbbb5', track: '#a9b0b4', steel: '#64686b', glass: '#4d727b', // clad -15 %: mid-grey cladding, not white; steel -25 %: the dark soffit
+    grass: '#63794c', concrete: '#bdbbb2', clad: '#bcbbb5', track: '#a9b0b4', steel: '#64686b', glass: '#4d727b', // clad -15 %: mid-grey cladding, not white; steel -25 %: the dark soffit
     ringBlue: '#0a81c4', ringYellow: '#f2ac2c', ringBlack: '#2a2a2a', ringGreen: '#14a050', ringRed: '#e23a4f',
   },
   dark: {
-    concrete: '#6e7178', clad: '#73767b', track: '#596066', steel: '#393d41', glass: '#22303a',
+    grass: '#354d37', concrete: '#6e7178', clad: '#73767b', track: '#596066', steel: '#393d41', glass: '#22303a',
     ringBlue: '#0b5c8c', ringYellow: '#a87a22', ringBlack: '#1b1b1c', ringGreen: '#11703b', ringRed: '#9c2b3a',
   },
 };
 export const MANIFEST = {
-  elevationDatum: 'Local y=0 is the ground at the K89 (70 m) take-off edge, the lowest footing of the complex. Every part stands at its height above that point on the Paskapoo Slopes (public DEM: 90 m tower base +25.5 m, 70 m tower base +18.1 m, K114 take-off ground +4.2 m, K63 tower +29.3 m, K38 take-off +11.1 m), and every support and tower shaft continues straight down to y=0, so on the flat Cityscape map the complex stands on y=0 and the shafts below each real ground stand in for the hill. No terrain, sea level or latitude stretch is baked in. Full 3D world: an explicit terrain pad (terrainPad) hangs the group from the DEM at the K89 take-off; only the take-off table footprint is held at that datum and the hill hides the supports below their ground.',
+  elevationDatum: 'Local y=0 is the lower K89 landing outrun. K89 take-off is +35 m, K114 +39.2 m, and K114 tower ground +60.5 m. The added 35 m landing relief is photo-estimated; tower/inrun relative dimensions are preserved. Every support reaches local grade and is embedded in the authored hill. Full 3D world samples the lower K89 outrun with median datum and small local terraces beneath the authored hill, each held below its lowest mesh corner; no sea-level or scene stretch is baked in.',
   attribution: 'Original procedural mesh. Mapped inrun and start-house outlines © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Sourced: the 58 m tower (Heritage Calgary), the K114 and K89 inrun lengths, angles, take-off lengths and heights (skisprungschanzen.com), cast-in-place concrete towers with steel inrun structures (CANA). Estimated: the tower plans, storey, window and ring heights, the head taper, the transition radii (FIS rule), the pier and trestle positions, the 70 m and K63 towers, the whole K63 and K38 profiles, and the plan positions and bearings (aerial imagery; the OSM ways are coarse). Ground heights between parts come from a public 12 m DEM and are good to a few metres. The landing hills (terrain), the K20/K10 hills, the judges towers, floodlights and the zipline are not modelled.',
+  note: 'Sourced: the 58 m tower (Heritage Calgary), the K114 and K89 inrun lengths, angles, take-off lengths and heights (skisprungschanzen.com), cast-in-place concrete towers with steel inrun structures (CANA). Estimated: the tower plans, storey, window and ring heights, the head taper, the transition radii (FIS rule), the pier and trestle positions, the 70 m and K63 towers, the whole K63 and K38 profiles, and the plan positions and bearings (aerial imagery; the OSM ways are coarse). Ground heights between parts come from a public 12 m DEM and are good to a few metres. Authored rounded landing hills and 35 m outrun relief are photo estimates; the K20/K10 hills, the judges towers, floodlights and the zipline are not modelled.',
 };

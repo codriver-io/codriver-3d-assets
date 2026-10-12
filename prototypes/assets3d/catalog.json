@@ -5851,7 +5851,7 @@
           }
         ]
       },
-      "notes": "Published: 255 ft (77.7 m) square, 190 ft (58 m) overall, eight hyperbolic-paraboloid shell segments clad in travertine, black stained-glass slot on each face, glass strips crossing at the summit. Mapped from OSM: the 77 m roof-slab outline, the 63 m ground block, the 35.6 m tower base, the four 3 m fins reaching 20.2 m from the centre, the 9.1 degree grid rotation and the south annex ring. Estimated from photographs: slab thickness (1.9 m) and ground-wall height (10.8 m), wall-top (45 m, so the fins rise about a fifth of their height above the walls as in the straight-on photograph), fin-top (53.5 m) and crossing hub (43 m) heights, the concave crest and 2.4 m depth of the sloping flanks, glass-core and jamb widths, the dark metal cross (15 m tall, 5.2 m bar), the 2.4 m travertine joint pitch (flat quads), the 1.2 m courses and door bay layout of the ground block. The shells are modelled as ruled surfaces, not from the structural drawings. The annex is a plain extrusion with window quads at an assumed three-storey height of 10.5 m (OSM gives 18.9 m for the whole relation, unverified and taller than the 12.7 m slab); the courtyards are squared off. Plaza, steps, door relief figures, interior, bell platform and lamp standards are not modelled. The OSM height tags on the building:part ways (60 m, 77.7 m) are mapping slips and were not used.",
+      "notes": "Four closed bilinear saddle quadrants replace the disconnected flat-wall shell. The summit glazing is enclosed along the rising shell/jamb contacts; 35 cm soffits close the shell edges. Parish-annex window rows survive far. Original photographic reconstruction; dimensions and detail approximations remain in the landmark documentation. Current metrics and mode evidence: tmp/landmark-qa/fix/REPORT.md. Independent acceptance remains with the coordinator.",
       "documentation": "docs/assets/san-francisco-cathedral-of-saint-mary.md",
       "city": "San Francisco",
       "license": "CC-BY-4.0",
@@ -5859,7 +5859,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified in slot D daytime far/near/street app captures on 2026-10-11. Full 3D world: verified in slot D daytime far/near/street app captures with AWS Terrarium terrain on 2026-10-11. Evidence and limitations: tmp/landmark-qa/fix/REPORT.md. Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
     },
     {
       "id": "chase-center",
@@ -7189,7 +7190,7 @@
           }
         ]
       },
-      "notes": "Sourced: 1911, Romanesque Revival, rusticated Paskapoo sandstone, four storeys, recessed round-arched entrance on four red granite columns, steeply pitched tile roof with stone-gabled dormers, central glass dome, clock tower 'more than 32 metres (100 feet)' (the model uses 32.7 m to the finial), mapped outline (43 x 32 m, 1,106 m2, 2.08 degrees off the grid, tower on the north front facing 7 Avenue SE). Estimated from photographs: cornice (12.8 m) and roof top (17.7 m) heights, tower stage proportions and shaft width (8.4 m), dial diameter (2.9 m) and the four-dial arrangement, window rhythm and counts, dormer and cupola positions (the east wing carries a larger gable, the west wing only a dormer), the rear and side elevations, the plain flat-roofed two-storey wing that fills the mapped east bump (no photograph shows its real form; the first pass's pitched lean-to was an invention and is removed), the sandstone colour (brown-grey, darkened after review) and the raised crown over the centre, which is tiled like the roof (the register's glass dome is not drawn as glass). OSM parts 1455566323, 1455566324 and 1455566318 and the Municipal Building are not part of the 1911 hall and are not drawn. The mapped east wall jogs between 18.1 and 18.8 m and is drawn straight at 18.45 m (35 cm error). Stone coursing is flat strips, the carved ornament, rock-face texture and the real window glazing bars are abstracted; window surrounds, quoins and corbels are drawn in relief on the north (7 Avenue) and west (Macleod Trail) faces and as flat sheets on the east, south and rear walls. Cornices project up to 0.75 m, the balcony 0.85 m and the entrance porch and stair about 3.7 m beyond the mapped wall. No Tesla hardware measurements: near 9179 triangles / 6 draws / 532508 bytes, far 1074 / 6 / 74796.",
+      "notes": "Weathered grey sandstone and muted clay roof replace the tan/salmon palette; staggered 10 cm rock-face relief adds the masonry rhythm; all four far clocks retain contrasting hands and hour marks. Original photographic reconstruction; dimensions and detail approximations remain in the landmark documentation. Current metrics and mode evidence: tmp/landmark-qa/fix/REPORT.md. Independent acceptance remains with the coordinator.",
       "documentation": "docs/assets/calgary-calgary-city-hall.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -7197,7 +7198,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified in slot D daytime far/near/street app captures on 2026-10-11. Full 3D world: verified in slot D daytime far/near/street app captures with AWS Terrarium terrain on 2026-10-11. Evidence and limitations: tmp/landmark-qa/fix/REPORT.md. Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
     },
     {
       "id": "calgary-peace-bridge",
@@ -7478,7 +7480,7 @@
           }
         ]
       },
-      "notes": "Sourced: 58 m tower (Heritage Calgary); K114 inrun 111 m at 35 deg, take-off 7 m at 11 deg, 4 m high; K89 inrun 88.2 m at 35 deg, take-off 6.2 m at 10 deg, 3.2 m high (skisprungschanzen.com); concrete towers, steel inruns (CANA). Estimated: the transition radii (FIS rule), the tower plans (90 m head 16 x 15 m on a 10.5 x 11.2 m lift core (70 % of the head), 70 m head 10 x 10 m on a 7 x 7 m shaft; Olympic-pair inrun girders at least 2.5 m deep), storey, window and ring heights, the support layout, the girder sections, and the whole K63 and K38 profiles (checked against their mapped plan lengths). Plan positions and bearings measured on aerial imagery; the OSM ways are coarse (a K114 corner is 14 m off the girder axis) and are used only to remove the provider slabs. Ground heights between the parts from a public 12 m DEM, good to a few metres. On the flat Cityscape map the towers read taller than in life (the 90 m tower shaft starts 25.5 m below its real base) and the training hills stand on 11-30 m piers. The Olympic rings follow 2005 photographs. Not modelled: landing hills (terrain), K20/K10, judges' towers, coaches' platforms, floodlights, the zipline, the day lodge. WinSport plans to demolish all but the 90 m tower; this is the state still standing in 2026. Near 2 932 triangles / 10 draws / 129 KB; far 1 026 / 4 / 51 KB.",
+      "notes": "A continuous rounded planted ski landform now runs beneath the inruns and beyond every take-off. Tower service divisions survive both LODs. Local zero moved to the lower K89 outrun, 35 m below its take-off, preserving tower and inrun relative dimensions; this additional relief is estimated. The world terrain pad samples the lower outrun and uses small feathered under-hill terraces held below each local mesh patch; no all-site flattening ring remains. Original photographic reconstruction; dimensions and detail approximations remain in the landmark documentation. Current metrics and mode evidence: tmp/landmark-qa/fix/REPORT.md. Independent acceptance remains with the coordinator.",
       "documentation": "docs/assets/calgary-canada-olympic-park.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -7486,7 +7488,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified in slot D daylight far/near/street and highway-facing captures on 2026-10-11. Full 3D world: verified in the same frames with AWS Terrarium terrain. Small under-hill terraces replace the all-site flattening pad, preserving the surrounding hill. Static captures do not certify vehicles, roads, night, lifecycle or hardware performance; see tmp/landmark-qa/fix/REPORT.md."
     },
     {
       "id": "centre-street-bridge",
@@ -15229,14 +15232,15 @@
           }
         ]
       },
-      "notes": "Revised after independent FIX review: the smooth glass bowl and pale deck became four overlapping planar-panel shells with folded glass roof returns, tower shelves became a continuous hexagonal taper and transparent lattice-like crown, and a broad straight stair flight was added between the roots. The 100 m overall tower height is sourced; gallery/root heights and the tower plan use OSM. Cloud folds, tower taper/glazing, stairs, limestone courses and vegetation colours are estimated from the dossier. Cloud glass remains opaque blue-grey; upper tower glass uses standard alpha blending. The stair rectangle is an authored twentieth footprint ring, separate from nineteen mapped OSM ways. Interiors, small signs, full plaza landscaping and actual panel inventory are omitted. Independent re-review is pending; Cityscape and Full 3D world integration are checked separately.",
+      "notes": "Asymmetric inclined glass sheets and overlapping diagonal edges replace the near-horizontal cloud bands. The tower crown is continuous pale glass with restrained anchored ribs. Planting-root toes have rounded outlines and eased height profiles. End returns face along the shell tangent, closing the back-face defect. Original photographic reconstruction; dimensions and detail approximations remain in the landmark documentation. Current metrics and mode evidence: tmp/landmark-qa/fix/REPORT.md. Independent acceptance remains with the coordinator.",
       "documentation": "docs/assets/top-cities-canadian-museum-for-human-rights.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified in slot D daytime far/near/street app captures on 2026-10-11. Full 3D world: verified in slot D daytime far/near/street app captures with AWS Terrarium terrain on 2026-10-11. Evidence and limitations: tmp/landmark-qa/fix/REPORT.md. Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
     },
     {
       "id": "halogaland-bridge",
@@ -16282,7 +16286,7 @@
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/akershus-fortress/geometry.js"
       },
-      "notes": "Both stair-tower tips are the OpenStreetMap 36 m tags (mapper estimates, not a surveyed publication). Wing eaves are lower than those part-height tags so the harbour side reads as about three storeys with the spires clear of the roofs; that storey count is from the Roletschek photograph. Renaissance walls are warm pink-tan render with pale quoins; crow-step gables are darker brick and near-only. The long harbour halls have tall arched lower windows and a smaller upper row. The bastion is grey coursed rubble, thickened on the mapped rings (west curtain about 9 m). The 15–20 m drop to the quay is terrain, not mesh. Main roofs are dark slate. Copper is the two stair-tower caps, Vågehalstårnet’s flat roof and the mausoleum. Munks tårn keeps its mapped pyramidal roof and stands apart on purpose. The south gap between Jomfrutårnet and Munks tårn is open on purpose. Way 904552992, a pier of about 4 m², is omitted because a footprint ring must be larger than 4 m². Barracks, the flag, the ferry terminal and the cliff below y=0 are omitted. Far keeps the silhouette, drops brick, mullions, shutters and quoins, and stays at 8 draws.",
+      "notes": "Grey-tan walls and taller exposed stone bases replace salmon render on the harbour wings and stair towers. Broad rubble colour variation is part of the rampart mesh faces, with no coplanar veneer. Strong brick colour stays on the gables. Original photographic reconstruction; dimensions and detail approximations remain in the landmark documentation. Current metrics and mode evidence: tmp/landmark-qa/fix/REPORT.md. Independent acceptance remains with the coordinator.",
       "documentation": "docs/assets/top-cities-akershus-fortress.md",
       "manifest": "/models/buildings/akershus-fortress.json",
       "inspection": {
@@ -16320,7 +16324,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified in slot D daytime far/near/street app captures on 2026-10-11. Full 3D world: verified in slot D daytime far/near/street app captures with AWS Terrarium terrain on 2026-10-11. Evidence and limitations: tmp/landmark-qa/fix/REPORT.md. Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
     },
     {
       "id": "bryggen",

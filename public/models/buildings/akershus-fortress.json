@@ -1011,12 +1011,12 @@
   },
   "elevationDatum": "Local grade y=0 is the inner-fortress plateau on the flat Peregrine basemap. The rocky drop to Akershusstranda and the fjord is not modelled. Full 3D world uses terrainPad: every mapped part is held at the median of the castle podium, with an 8 m feather.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Spire tips stay at the OpenStreetMap 36 m tags. Wing eaves are lower than the part height tags so the harbour elevation reads as three storeys with the spires clear of the roofs; those tags are mapper estimates. Renaissance walls are warm pink-tan render with darker brick crow-step gables (near only) and pale quoins. The bastion is grey rubble, thickened on the mapped rings; the 15–20 m drop from the plateau to the quay is terrain, not mesh. Wing roofs are dark slate. Copper is the two stair-tower caps, the mausoleum and Vågehalstårnet. Munks tårn keeps its mapped pyramidal roof.",
+  "note": "Spire tips stay at the OpenStreetMap 36 m tags. Wing eaves are lower than the part height tags so the harbour elevation reads as three storeys with the spires clear of the roofs; those tags are mapper estimates. Renaissance walls are grey-tan weathered render with darker brick crow-step gables (both LODs) and pale quoins. The bastion is grey rubble, thickened on the mapped rings; the 15–20 m drop from the plateau to the quay is terrain, not mesh. Wing roofs are dark slate. Copper is the two stair-tower caps, the mausoleum and Vågehalstårnet. Munks tårn keeps its mapped pyramidal roof.",
   "assets": {
     "near": {
       "url": "/models/buildings/akershus-fortress-near.glb",
-      "bytes": 843796,
-      "triangles": 15989,
+      "bytes": 865068,
+      "triangles": 16697,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -1033,8 +1033,8 @@
     },
     "far": {
       "url": "/models/buildings/akershus-fortress-far.glb",
-      "bytes": 167304,
-      "triangles": 3090,
+      "bytes": 180368,
+      "triangles": 3502,
       "drawCalls": 8,
       "bounds": {
         "min": [

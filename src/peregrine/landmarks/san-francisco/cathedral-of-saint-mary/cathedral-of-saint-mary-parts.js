@@ -139,7 +139,7 @@ export function annexWindows({ pitch = 3.4, width = 1.9, rows = [[1.1, 2.7], [4.
       if (!outside) n = [-n[0], -n[1]];
       const count = Math.floor((L - 1.2) / pitch);
       for (let k = 0; k < count; k++) {
-        const s = (L - (count - 1) * pitch) / 2 + k * pitch, cx = a[0] + t[0] * s + n[0] * 0.06, cz = a[1] + t[1] * s + n[1] * 0.06;
+        const s = (L - (count - 1) * pitch) / 2 + k * pitch, cx = a[0] + t[0] * s + n[0] * 0.12, cz = a[1] + t[1] * s + n[1] * 0.12;
         for (const [y0, y1] of rows) {
           const p0 = [cx - t[0] * width / 2, y0, cz - t[1] * width / 2], p1 = [cx + t[0] * width / 2, y0, cz + t[1] * width / 2];
           const p2 = [p1[0], y1, p1[2]], p3 = [p0[0], y1, p0[2]];

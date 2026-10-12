@@ -14,7 +14,7 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
-    stone: '#a89070', trim: '#bea888', roof: '#ab5242', glass: '#364852', granite: '#8c4a44', lamp: '#ebe6d1',
+    stone: '#797269', trim: '#999085', roof: '#583b38', glass: '#364852', granite: '#8c4a44', lamp: '#ebe6d1',
   },
   dark: {
     stone: '#635a4a', trim: '#756c5a', roof: '#5c3731', glass: '#1b252b', granite: '#4d302e', lamp: '#ffe6a4',
@@ -23,5 +23,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The plinth stands on y=0 on all sides (downtown is nearly flat here).',
   attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Tower height (32.7 m, "more than 32 m / 100 ft"), four storeys, sandstone, round-arched entrance on four red granite columns, steep tile roofs and the mapped outline are sourced. Storey heights, cornice and roof heights, tower stage proportions, dial size, window counts, dormer and cupola positions, the plain flat-roofed two-storey wing that fills the mapped east bump, the tiled crown over the centre and the rear and side elevations are estimated from photographs; surrounds are drawn in relief only on the street faces.',
+  note: 'Tower height (32.7 m, "more than 32 m / 100 ft"), four storeys, sandstone, round-arched entrance on four red granite columns, steep tile roofs and the mapped outline are sourced. Storey heights, cornice and roof heights, tower stage proportions, dial size, window counts, dormer and cupola positions, the plain flat-roofed two-storey wing that fills the mapped east bump, the tiled crown over the centre and the rear and side elevations are estimated from photographs; surrounds are drawn in relief only on the street faces. QA correction: weathered grey sandstone, muted clay roofing, staggered rock-faced street/tower blocks and readable clock hands/hour marks in both LODs.',
 };

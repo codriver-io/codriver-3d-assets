@@ -1,18 +1,15 @@
 // Canada Olympic Park ski jumps: every number the geometry, the terrain pad, the tests and the docs share.
 // Frame: real metres, +x east, +y up, +z south, origin = centre of the 90 m (K114) tower head (config.js ORIGIN).
 //
-// y = 0 is the ground at the K89 (70 m) take-off edge, the LOWEST footing of the complex. Every other part stands at its
-// real height above that point on the Paskapoo Slopes (public AWS Terrarium DEM, z13 as the app samples it, 2026-10-02;
-// see docs/3d-calgary-canada-olympic-park.md, "Placement"), and every support continues straight down to y = 0:
-//   Cityscape (flat)      the whole complex stands on the flat map; the part of each support below its real ground stands in
-//                         for the hill (plain concrete or steel, no grass, no earthwork).
-//   Full 3D world         the group sits on the DEM at the K89 take-off (spec.terrainPad); the hill rises round the uphill parts
-//                         and hides each support below its real ground, so nothing floats and no pit or mound is cut.
-// Nothing goes below y = 0.
+// y = 0 is the lower K89 landing outrun. Existing measured relative elevations
+// are raised together by an estimated 35 m of landing relief; the source tower
+// heights and inrun profiles are unchanged. Supports continue to y=0 and sit
+// inside the authored hill. Full 3D world uses the outrun datum and bounded
+// take-off terraces. Nothing goes below grade.
 
 /** Ground (DEM z13 on the app's ~24 m TIN) at each footing, metres above the K89 take-off ground. Measured, not sourced. */
 // Tower values are the mean over the shaft corners (90 m: 24.4-26.6; 70 m: 17.2-19.0); take-offs at the edge centre.
-export const GROUND = Object.freeze({ k89TakeOff: 0, k114TakeOff: 4.2, tower70: 18.1, tower90: 25.5, k63TakeOff: 18.1, tower50: 29.3, k38TakeOff: 11.1, k38Start: 20.8 });
+export const GROUND = Object.freeze({ k89TakeOff: 35, k114TakeOff: 39.2, tower70: 53.1, tower90: 60.5, k63TakeOff: 53.1, tower50: 64.3, k38TakeOff: 46.1, k38Start: 55.8 });
 
 /**
  * Inrun profiles (skisprungschanzen.com hill data for Canada Olympic Park): inrun length e from the highest start to the
@@ -110,16 +107,16 @@ export function jumpPoint(jump, profile, u, v) {
  */
 export const TOWER90 = Object.freeze({
   height: 58, base: GROUND.tower90, roof: GROUND.tower90 + 58,
-  head: { u0: -15, u1: 0, v0: -8, v1: 8, y0: 51.5 }, // walls from y0 (32 m with the cap, was 25.5) up to `eave`, then the cap; the K114 girder enters the north face
+  head: { u0: -15, u1: 0, v0: -8, v1: 8, y0: 86.5 }, // walls from y0 (32 m with the cap, was 25.5) up to `eave`, then the cap; the K114 girder enters the north face
   eave: GROUND.tower90 + 58 - 3.2, capSetback: 3.4, // the roof's north edge is chamfered back over the inrun
   shaft: { u0: -14.7, u1: -4.2, v0: -4.4, v1: 6.8 }, // 10.5 x 11.2 m = 70 % of the head, at its back (south-east): the lift core
   flare: { h: 6, out: 1.2 }, // the lowest 6 m of the shaft widen by 1.2 m on every side (y = 0 to 6: the Cityscape footing)
-  frustumY: 46, // the head's underside tapers to the shaft here: the "prow" seen from the west and north-west
+  frustumY: 81, // the head's underside tapers to the shaft here: the "prow" seen from the west and north-west
   gateOpening: 0.7, // dark margin round the girder where it enters the head (the start gate)
-  bands: [[71.6, 73.4], [74.6, 76.4]], // two glazed bands, 7 to 12 m below the roof (photographs)
+  bands: [[106.6, 108.4], [109.6, 111.4]], // two glazed bands, 7 to 12 m below the roof (photographs)
   mullion: 1.6, // spacing of the vertical mullion quads on the bands
   core: { u0: -14.2, u1: -12.6 }, // vertical glazed strip of the stair/lift core on the west face, from the real ground up
-  rings: { u: -7.2, y: 80.2, r: 1.25, tube: 0.17, off: 0.07 }, // Olympic rings on the west face (2005 photographs); top-row centre, flat annuli `off` proud of the wall
+  rings: { u: -7.2, y: 115.2, r: 1.25, tube: 0.17, off: 0.07 }, // Olympic rings on the west face (2005 photographs); top-row centre, flat annuli `off` proud of the wall
   penthouse: { u0: -14.2, u1: -9, v0: -2, v1: 5, h: 2.6 },
   mast: { u: -11.5, v: 2.6, top: 9.5 }, // lattice antenna mast above the roof, metres
 });
@@ -127,21 +124,21 @@ export const TOWER90 = Object.freeze({
 /** The 70 m tower: a concrete shaft carrying a box head with the K89 start, in the K89 frame. Estimated from photographs. */
 export const TOWER70 = Object.freeze({
   jump: 'k89', base: GROUND.tower70,
-  head: { u0: -10, u1: 0, v0: -5, v1: 5, y0: 39.2, top: 50.8 }, // walls 11.6 m (was 9.3)
+  head: { u0: -10, u1: 0, v0: -5, v1: 5, y0: 74.2, top: 85.8 }, // walls 11.6 m (was 9.3)
   shaft: { u0: -8.7, u1: -1.7, v0: -3.5, v1: 3.5 }, // 7 x 7 m = 70 % of the head
   flare: { h: 6, out: 1 },
-  frustumY: 34.7,
-  band: [47.0, 48.6],
+  frustumY: 69.7,
+  band: [82.0, 83.6],
 });
 
 /** The K63 start tower: the same language, smaller (photographs 2 and 5). Estimated. */
 export const TOWER50 = Object.freeze({
   jump: 'k63', base: GROUND.tower50,
-  head: { u0: -7.5, u1: 0, v0: -3.8, v1: 3.8, y0: 48.9, top: 57.4 }, // walls 8.5 m (was 6.8)
+  head: { u0: -7.5, u1: 0, v0: -3.8, v1: 3.8, y0: 83.9, top: 92.4 }, // walls 8.5 m (was 6.8)
   shaft: { u0: -6.5, u1: -1.25, v0: -2.65, v1: 2.65 }, // 5.25 x 5.3 m = 70 % of the head
   flare: { h: 6, out: 0.8 },
-  frustumY: 46.3,
-  band: [54.6, 55.8],
+  frustumY: 81.3,
+  band: [89.6, 90.8],
 });
 
 /** The K38 start: a small hut on four steel legs over the slope. Estimated. */
@@ -158,3 +155,18 @@ export const SUPPORTS = Object.freeze({
   k63: { piers: [{ u: 19, along: 2.6, across: 2.4 }, { u: 39, along: 2.6, across: 2.4 }], trestle: null, table: 6 },
   k38: { piers: [{ u: 14, along: 2.2, across: 2.0 }, { u: 29, along: 2.2, across: 2.0 }], trestle: null, table: 5 },
 });
+
+/** Shared relative landscape profile for mesh and bounded world terraces. */
+export function hillHeight(x,z) {
+  let y=0;
+  for(const [key,length,grade] of [['k114',145,60.5],['k89',120,53.1],['k63',90,64.3],['k38',65,55.8]]) {
+    const jump=JUMPS[key],profile=inrunProfile(jump),{d,r}=axes(jump.bearing),dx=x-jump.takeOff[0],dz=z-jump.takeOff[1];
+    const u=profile.uT+dx*d[0]+dz*d[1],v=Math.abs(dx*r[0]+dz*r[1]);
+    if(u < -80 || u > profile.uT+length || v>65)continue;
+    const center=u<0?grade:u<profile.uT?grade+(jump.ground-grade)*u/profile.uT:jump.ground*Math.max(0,1-(u-profile.uT)/length)**1.65;
+    const shoulder=Math.max(0,Math.min(1,(65-v)/50)),uphill=Math.max(0,Math.min(1,(u+80)/65));
+    y=Math.max(y,center*shoulder*shoulder*(3-2*shoulder)*uphill);
+  }
+  const border=Math.max(0,Math.min(1,(x+85)/21.25,(170-x)/21.25,(z+295)/24.7222,(150-z)/24.7222));
+  return y*border;
+}

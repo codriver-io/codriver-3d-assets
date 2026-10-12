@@ -1,9 +1,5 @@
 # Canada Olympic Park ski jumps, Calgary
 
-Original procedural model of the 1988 Winter Olympics ski jumps at Canada Olympic Park (WinSport), 88 Canada Olympic Road SW, for Cityscape and Full 3D world. Part of the [Calgary landmarks](../calgary-landmarks.md).
-
-Build: `pnpm build:calgary-landmarks canada-olympic-park`. Source: `src/peregrine/landmarks/calgary/canada-olympic-park/` (`config.js`, `footprint.js`, `geometry.js`, `views.js`, plus `canada-olympic-park-plan.js` (every number), `canada-olympic-park-parts.js`, `canada-olympic-park-mesh.js`, `canada-olympic-park.test.js`). Catalog record: `prototypes/assets3d/catalog.d/canada-olympic-park.json`.
-
 ## What it is
 
 The ski-jump complex on the Paskapoo Slopes, built 1984-86 for the 1988 Games and closed in 2018. It faces north-north-east, downhill toward the Trans-Canada Highway, and is what a driver recognises from the highway: the 58 m concrete tower of the **90 m (K114) jump** with its cantilevered head, glazed bands and antenna mast, the long grey **K114 inrun** dropping from its head, and beside it the **70 m (K89) tower and inrun**. East of them the model also has the two training hills whose inrun ways are mapped as buildings: the **K63** with its own small tower and the **K38**.
@@ -121,3 +117,14 @@ Inspector renders read (`tmp/cop/shots/`; red rings = OSM ways, 10 m grid):
 **Not re-measured in the app.** The new shaft footprints contain the old ones (corners moved up to 2.4 m, about 0.5 m of ground on the 12° slope), so a real base can differ by a few tenths of a metre from the table above and every shaft still reaches y = 0 (nothing floats). The flares (y 0 to 6) sit 19 to 25 m below the drawn ground in Full 3D world and show only on the flat Cityscape map. The deeper lower inrun lowers the K114 and K89 undersides by up to 0.7 m and 0.9 m: by subtraction the minimum clearance becomes 0.7 m (K114) and about -0.2 m (K89, the girder meets the knoll, hidden); the decks do not move.
 
 Tests: `node --test src/peregrine/landmarks/calgary/calgary.test.js src/peregrine/landmarks/calgary/canada-olympic-park/*.test.js` (53 pass, about 1 s). They pin the 58 m tower, the 16 m head, the shaft at 70 % of it with a flared foot, the 2.5 m beams with a steel soffit, the 35° straights, the 11°/10° tables, the drops and edge heights, the start inside each head, plan bearings and spacing, each OSM way near its girder, the open span under the K114 girder in near and far, nothing below 0, every table down to 0, a pad without terraces sampled at the K89 edge, the near-only rings and the far silhouette.
+
+## Current QA revision — 2026-10-11
+
+A continuous rounded planted ski landform now runs beneath the inruns and beyond every take-off. Tower service divisions survive both LODs. Local zero moved to the lower K89 outrun, 35 m below its take-off, preserving tower and inrun relative dimensions; this additional relief is estimated. The world terrain pad uses median lower-outrun datum and small feathered under-hill terraces, held below each local mesh patch. The broad flattening ring was removed after world captures showed a steep perimeter cut. Cityscape and Full 3D world are verified in the final daylight captures, including a highway-facing view.
+
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/canada-olympic-park.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/canada-olympic-park-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
+
+
+Original procedural model of the 1988 Winter Olympics ski jumps at Canada Olympic Park (WinSport), 88 Canada Olympic Road SW, for Cityscape and Full 3D world. Part of the [Calgary landmarks](../calgary-landmarks.md).
+
+Build: `pnpm build:calgary-landmarks canada-olympic-park`. Source: `src/peregrine/landmarks/calgary/canada-olympic-park/` (`config.js`, `footprint.js`, `geometry.js`, `views.js`, plus `canada-olympic-park-plan.js` (every number), `canada-olympic-park-parts.js`, `canada-olympic-park-mesh.js`, `canada-olympic-park.test.js`). Catalog record: `prototypes/assets3d/catalog.d/canada-olympic-park.json`.
