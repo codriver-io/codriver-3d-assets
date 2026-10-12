@@ -544,7 +544,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/basilique-sainte-anne-de-beaupre-near.glb",
-      "bytes": 448168,
+      "bytes": 448152,
       "triangles": 7878,
       "drawCalls": 6,
       "bounds": {
@@ -562,8 +562,8 @@
     },
     "far": {
       "url": "/models/buildings/basilique-sainte-anne-de-beaupre-far.glb",
-      "bytes": 103448,
-      "triangles": 1668,
+      "bytes": 128448,
+      "triangles": 2136,
       "drawCalls": 6,
       "bounds": {
         "min": [

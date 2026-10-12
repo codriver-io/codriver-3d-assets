@@ -92,3 +92,13 @@ Review fix (regions batch): the stone was near-white cream and the roofs pastel 
 Tests: `basilique-sainte-anne-de-beaupre.test.js` (16 tests, adding flat-shaded spire faces and the granite grey, four lucarnes and corner pinnacles inside the tower footprint, and the terrain pad covering every stair vertex; the original 12: outline length, transept span, front width and symmetry; spire tips at 91 m on two equal towers with nothing else above 56 m, in both LODs; the spires are stone, octagonal and taper by raycast; the rose window is a glowing disc 0.4 m deep in its niche, the portal door is recessed and the pier groups stand proud, the front stairs climb by raycast; five-aisle wall and roof heights and the nave ridge at 37.5 m by raycast; the seven radiating chapels on their circle by raycast; footprint containment within 1 m; far keeps the envelope; the exported GLBs match the source) plus the shared `quebec.test.js`.
 
 Cityscape: **not tested yet, integration is checked separately.** Full 3D world: **not tested yet, integration is checked separately** (see Terrain above).
+
+## QA revision 2026-10-11
+
+QA 2026-10-11: belfry cornice raised to an estimated 62 m with shorter spires, stronger ribs, enlarged lucarnes and cornice pinnacles. Tips remain 91 m; all four belfry faces retain twin arched openings in far, along with the rose window and cornices.
+
+Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
+
+Current measured exports: near: 7,878 triangles / 6 draws / 447,616 bytes; far: 2,136 triangles / 6 draws / 127,912 bytes. Geometry metrics report no unresolved issues.
+
+Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.

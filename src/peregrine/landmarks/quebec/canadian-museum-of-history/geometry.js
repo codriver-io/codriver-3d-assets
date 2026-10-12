@@ -161,7 +161,7 @@ export function create({ detail = 'near' } = {}) {
         }
       }
       // ribbon windows on stone walls
-      if (near && blk.windows && lay && !run && a.layered && c.layered && yb <= blk.windows.y0 + 0.01 && blk.windows.at(mid)) {
+      if (blk.windows && lay && !run && a.layered && c.layered && yb <= blk.windows.y0 + 0.01 && blk.windows.at(mid)) {
         const w = blk.windows, wa = bodyOff(sA) + 0.12, wc = bodyOff(sC) + 0.12, len = Math.hypot(c.p[0] - a.p[0], c.p[1] - a.p[1]);
         if (len > 1.6) {
           const t0 = 0.12, t1 = 0.88, pa = posAt(a, wa, w.y0), pc = posAt(c, wc, w.y0);
@@ -238,7 +238,7 @@ export function create({ detail = 'near' } = {}) {
       const lc = centroid(lobe), rows = [lobe.map((p) => [p[0], y1, p[1]])];
       for (let k = 1; k <= steps; k++) {
         const th = (k / steps) * Math.PI / 2, s = Math.cos(th);
-        rows.push(lobe.map((p) => [lc[0] + (p[0] - lc[0]) * s, y1 + rise * Math.sin(th), lc[1] + (p[1] - lc[1]) * s]));
+        rows.push(lobe.map((p) => [lc[0] + (p[0] - lc[0]) * s, y1 + rise * Math.pow(Math.sin(th), 0.55), lc[1] + (p[1] - lc[1]) * s]));
       }
       M('copper').grid(rows, { closed: true, dir: (f) => [f[0] - lc[0], f[1] - (base - 4), f[2] - lc[1]] });
     }

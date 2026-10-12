@@ -17,7 +17,7 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
-    concrete: '#cac8bf', rib: '#efeee8', skylight: '#869fa8', glass: '#4a6068',
+    concrete: '#cac8bf', rib: '#efeee8', skylight: '#52616a', glass: '#4a6068',
     frame: '#555b5e', sign: '#2c4a3f',
   },
   dark: {

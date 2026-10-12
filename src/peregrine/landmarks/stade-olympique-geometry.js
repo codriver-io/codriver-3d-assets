@@ -144,14 +144,7 @@ export function createStadeOlympique({ detail = 'near' } = {}) {
     const outward=new THREE.Vector3(...p(side,0,0));
     surface('concrete',[a=>{const t=a/Math.PI;return p(side*(45*(1-t)+9*t),-0.5,239+61*t);},a=>{const t=a/Math.PI;return p(side*(45*(1-t)+9*t),5+12*Math.sin(Math.PI*t),239+61*t);}],()=>outward,8,0,Math.PI);
   }
-  // Hanging cable bundles in March photos: NOT the old fan connected to a membrane.
-  // Symbolic 24 temporary vertical lines; their ends hang over the work floor.
-  beam('concrete',[-8,157,50],[8,157,50],1.6,1.6);
-  for(const u of [-7,7])beam('concrete',[u,157,49.5],[u,157,60],1.6,1.6);
-  for(let i=0;i<24;i++){
-    const u=(i%8-3.5)*1.6,v=50+Math.floor(i/8)*3;
-    beam('rail',[u,157,v],[u,8+(i%3)*2,v],near?0.12:0.22);
-  }
+  // Temporary loose construction cable bundles are omitted: only secured structural members ship.
   const model=b.finish();
   model.userData.modeledState=STADE.modeledState;
   model.traverse(o=>{if(o.isMesh){o.geometry.deleteAttribute('bridgeLift');o.material.color.set(STADE_PALETTES.light[o.material.name]);o.material.side=THREE.DoubleSide;}});

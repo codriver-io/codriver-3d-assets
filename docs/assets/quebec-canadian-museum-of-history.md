@@ -52,7 +52,7 @@ Nine names, same keys in light and dark: `stone`, `stoneLight` (piers, a light c
 - **The Grand Hall front.** Along the mapped NE arc the ground floor is a recessed glass wall (`glow`) with a mullion every 2.1 m and two transoms, in front of flared stone piers; the cornice rests on them over a soffit. The piers have no back face (the glass wall closes them) and a cap at their top. The north front uses the same system with plain piers. The ends of each run are closed by a stone face.
 - **Domes.** A short vertical skirt (`copperDark`), then an ellipsoidal cap made by scaling the mapped footprint about its centroid, smooth-shaded. The long dome takes the stated 6 m rise (14 to 20 m) from the roof deck at once: its skirt is 0.3 m and its foot is sunk 0.4 m into the deck so no stone or dark rim shows, and the cap is two ellipsoid lobes (the footprint cut along its principal axis into two overlapping pieces, each scaled about its own centroid), crowning at 20 m with a saddle about 2 m lower between them, as the real two-lobed profile reads from the street. Strip roofs are a flat copper deck behind a 1.4 m chamfer rising 1 m.
 - **Curatorial cascade.** The four nested OSM polygons are four stacked blocks, each with its lip; the top terrace is copper.
-- **Far**: same outline (decimated at 0.7 m), no courses, one cornice band, no mullions or windows, piers kept (they are the negative space of the front), domes at 4 steps instead of 8.
+- **Far**: same outline (decimated at 0.7 m), no courses, one cornice band, no mullions; continuous ribbon glazing retained, piers kept (they are the negative space of the front), domes at 4 steps instead of 8.
 
 ## Approximations and what is missing
 
@@ -83,3 +83,13 @@ Review fix (regions batch): the copper was a pale mint plate and is now a dark p
 The site slopes to the Ottawa River and the two wings stand 80-200 m apart. The public DEM (Copernicus 90 m via Open-Meteo, a surface model that includes buildings and trees, so only indicative) reads 52 m at the river, 53-56 m on the public wing's north and west sides, 59-62 m at its south-east nose and 55-59 m under the curatorial wing: a spread of about 9 m across the 380 m, well over the 2 m threshold. The default 200 m disc would take the lowest sample and sink both wings, so `spec.terrainPad` holds both mapped outlines at the median DEM of their own vertices with a 14 m feather and lets the river bank fall away. Both wings share one datum; if the lead finds in the running app that the curatorial wing's ground sits several metres off the public wing's, give the curatorial ring its own terrace offset.
 
 Cityscape (flat ground reference): not tested yet; integration is checked separately. Full 3D world (topography): not tested yet; expected: both wings flat at the median ground, the river bank outside the 14 m feathers untouched. The models are rigid on local `y = 0` (the perimeter level); no relief is baked in.
+
+## QA revision 2026-10-11
+
+QA 2026-10-11: far retains public and curatorial ribbon glazing at near heights; dome shoulders are flatter and copper uses a muted weathered tone. Footprints and mapped crown heights remain unchanged.
+
+Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
+
+Current measured exports: near: 18,249 triangles / 9 draws / 1,116,252 bytes; far: 4,001 triangles / 4 draws / 250,708 bytes. Geometry metrics report no unresolved issues.
+
+Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.

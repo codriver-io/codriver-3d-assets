@@ -21,27 +21,27 @@
   "assets": {
     "near": {
       "url": "/models/buildings/biodome-de-montreal-near.glb",
-      "bytes": 455440,
-      "triangles": 18962,
+      "bytes": 720448,
+      "triangles": 28730,
       "drawCalls": 6,
       "bounds": {
         "min": [
           -88.5,
-          -2.2678986510982213e-7,
+          -2.0799609501409577e-7,
           -71.5999984741211
         ],
         "max": [
           71.69999694824219,
-          33.40011978149414,
+          33.669677734375,
           86.69999694824219
         ]
       }
     },
     "far": {
       "url": "/models/buildings/biodome-de-montreal-far.glb",
-      "bytes": 75240,
-      "triangles": 2974,
-      "drawCalls": 4,
+      "bytes": 218688,
+      "triangles": 7942,
+      "drawCalls": 5,
       "bounds": {
         "min": [
           -88.5,
@@ -50,7 +50,7 @@
         ],
         "max": [
           71.69999694824219,
-          33.40011978149414,
+          33.819679260253906,
           86.4000015258789
         ]
       }
