@@ -10,7 +10,7 @@ import { TOWER } from './edifice-marie-guyart-site.js';
 //   r = -lobby   the glazed ground storey, set back under the upper storeys
 // Each floor: a continuous dark ribbon over a row of square windows in protruding precast frames (RPCQ: "fenetres en bandeaux" and "panneaux rectangulaires
 // de beton prefabrique legerement saillants", on all four elevations). The top floor is the glazed belvedere of the Observatoire de la Capitale.
-const FIELD = 0.6, GLASS = 0.45, LIT = 0.3, GLOW_R = 0.3, FR = -TOWER.pier;
+const FIELD = 1.2, GLASS = 0.65, LIT = 0.3, GLOW_R = 0.3, FR = -TOWER.pier;
 
 const front = (wf, s0, s1, y0, y1, r) => [wf.P(s0, y0, r), wf.P(s1, y0, r), wf.P(s1, y1, r), wf.P(s0, y1, r)];
 const side = (wf, s, y0, y1, r0, r1) => [wf.P(s, y0, r0), wf.P(s, y0, r1), wf.P(s, y1, r1), wf.P(s, y1, r0)];
@@ -71,7 +71,7 @@ function floorsOf(M, near, wf, f0, f1, W, id, tag) {
     if (top) { belvedere(M, near, wf, f, f0, f1, nb, bay, id, tag); continue; }
     // Ribbon (continuous glass) and the window row's glass, behind the frames.
     glass.quad(...front(wf, f0, f1, f + 0.3, f + 1.5, FR - GLASS), N);
-    glass.quad(...(near ? front(wf, f0, f1, f + 2.2, f + 3.55, FR - GLASS) : front(wf, f0, f1, f + 2.55, f + 3.2, FR - GLASS)), N);
+    glass.quad(...front(wf, f0, f1, f + 2.2, f + 3.55, FR - GLASS), N);
     if (near) {
       // The frame band: sill and lintel across the whole field, a pier between neighbouring windows, soffit and roof of the band.
       concrete.quad(...front(wf, f0, f1, f + 1.5, f + 2.2, FR), N);
@@ -92,8 +92,18 @@ function floorsOf(M, near, wf, f0, f1, W, id, tag) {
         if (hash01(tag + 9, id * 64 + k, j) < LIT * 0.8) glow.quad(...front(wf, f0 + j * bay + 0.15, f0 + (j + 1) * bay - 0.15, f + 0.4, f + 1.4, FR - GLOW_R), N);
       }
     } else {
-      // Far: the frame band is the field itself; lit windows are whole pairs of bays.
-      for (let j = 0; j < nb; j += 2) if (hash01(tag, id * 64 + k, j) < LIT) glow.quad(...front(wf, f0 + j * bay + 0.2, f0 + Math.min(nb, j + 2) * bay - 0.2, f + 2.6, f + 3.15, FR - GLOW_R), N);
+      // Far keeps the square precast grid. Flat frame masks avoid the near reveals.
+      concrete.quad(...front(wf, f0, f1, f + 1.5, f + 2.2, FR), N);
+      concrete.quad(...front(wf, f0, f1, f + 3.55, f + 4.16, FR), N);
+      for (let j = 0; j <= nb; j++) {
+        const c = f0 + j * bay;
+        concrete.quad(...front(wf, Math.max(f0, c - pier / 2), Math.min(f1, c + pier / 2), f + 2.2, f + 3.55, FR), N);
+      }
+      for (let j = 0; j < nb; j++) if (hash01(tag, id * 64 + k, j) < LIT) {
+        const a = f0 + j * bay + pier / 2;
+        glow.quad(...front(wf, a + 0.12, a + winW - 0.12, f + 2.3, f + 3.45, FR - GLOW_R), N);
+      }
+      for (let j = 0; j < nb; j++) if (hash01(tag + 9, id * 64 + k, j) < LIT * 0.8) glow.quad(...front(wf, f0 + j * bay + 0.15, f0 + (j + 1) * bay - 0.15, f + 0.4, f + 1.4, FR - GLOW_R), N);
     }
   }
 }
@@ -104,6 +114,6 @@ function belvedere(M, near, wf, f, f0, f1, nb, bay, id, tag) {
   glass.quad(...front(wf, f0, f1, y0, y1, FR - GLASS), N);
   concrete.quad(...front(wf, f0, f1, f, y0, FR), N);
   concrete.quad(...flat(wf, f0, f1, y0, FR - GLASS, FR), UP);
-  if (near) for (let j = 0; j <= nb; j++) concrete.quad(...front(wf, Math.max(f0, f0 + j * bay - 0.15), Math.min(f1, f0 + j * bay + 0.15), y0, y1, FR - 0.2), N);
+  if (near) for (let j = 0; j <= nb; j++) concrete.quad(...front(wf, Math.max(f0, f0 + j * bay - 0.15), Math.min(f1, f0 + j * bay + 0.15), y0, y1, FR + 0.15), N);
   for (let j = 0; j < nb; j++) if (hash01(tag + 21, id, j) < 0.6) glow.quad(...front(wf, f0 + j * bay + 0.25, f0 + (j + 1) * bay - 0.25, y0 + 0.3, y1 - 0.4, FR - GLOW_R), N);
 }

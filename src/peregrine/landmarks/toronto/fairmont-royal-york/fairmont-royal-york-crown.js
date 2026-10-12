@@ -18,18 +18,16 @@ export function crown(ctx) {
   const P = (u, v, y) => { const p = at(u, v); return [p[0], y, p[1]]; };
 
   // --- the little arcade of the setback block (D, 87..94), small round arches all round ---
-  if (near) for (const e of slab.D.edges) {
+  for (const e of slab.D.edges) {
     const n = Math.max(2, Math.round(e.L / 1.65)), pitch = e.L / n;
     for (let i = 0; i < n; i++) smallArch(ctx, e, pitch * (i + 0.5), 1.0, 89.6, 91.6, { frame: 0.2, dFrame: 0.3 });
-  } else for (const e of slab.D.edges) kit.slab('glass', e.p, e.t, e.n, 1.2, e.L - 1.2, 89.6, 92.4, 0.15, { bottom: false });
+  }
   // --- crown storeys (E, 94..100.4): paired arched windows ---
   for (const e of slab.E.edges) {
-    if (!near) { kit.slab('glass', e.p, e.t, e.n, 1.6, e.L - 1.6, 95.2, 99.0, 0.15, { bottom: false }); continue; }
     const n = Math.max(2, Math.round(e.L / 2.4)), pitch = e.L / n;
     for (let i = 0; i < n; i++) smallArch(ctx, e, pitch * (i + 0.5), 1.2, 95.3, 97.4, { frame: 0.3, dFrame: 0.35 });
     for (const [y0, y1, d] of [[93.9, 94.4, 0.55], [99.5, 100.4, 0.7]]) kit.slab('limestone', e.p, e.t, e.n, -0.6, e.L + 0.6, y0, y1, d, { bottom: false });
   }
-  if (!near) for (const e of slab.E.edges) kit.slab('limestone', e.p, e.t, e.n, -0.6, e.L + 0.6, 99.5, 100.4, 0.7, { bottom: false });
 
   // --- corner turrets on the crown: stone shafts with copper spires ---
   const tur = (u, v, yBase, size, top, spire) => {
@@ -68,7 +66,7 @@ export function crown(ctx) {
     const fl = add(base, tan, -w), fr = add(base, tan, w), tl = add(fl, Y, wallH), tr = add(fr, Y, wallH), pk = add(base, Y, wallH + gable);
     const back = (p) => add(p, nrm, -depth), neg = (v) => v.map((x) => -x);
     kit.fan('copper', [fl, fr, tr, pk, tl], nrm);
-    kit.quad('glass', add(add(base, tan, -0.55), nrm, 0.05, 0), add(add(base, tan, 0.55), nrm, 0.05), add(add(add(base, tan, 0.55), Y, 1.55), nrm, 0.05), add(add(add(base, tan, -0.55), Y, 1.55), nrm, 0.05), nrm);
+    kit.quad('glass', add(add(base, tan, -0.55), nrm, 0.15, 0), add(add(base, tan, 0.55), nrm, 0.15), add(add(add(base, tan, 0.55), Y, 1.55), nrm, 0.15), add(add(add(base, tan, -0.55), Y, 1.55), nrm, 0.15), nrm);
     kit.quad('copper', fl, back(fl), back(tl), tl, neg(tan));
     kit.quad('copper', fr, back(fr), back(tr), tr, tan);
     kit.quad('copper', tl, back(tl), back(pk), pk, add(neg(tan), Y));

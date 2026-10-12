@@ -383,8 +383,8 @@
     },
     "far": {
       "url": "/models/buildings/edifice-marie-guyart-far.glb",
-      "bytes": 80796,
-      "triangles": 1394,
+      "bytes": 297368,
+      "triangles": 5614,
       "drawCalls": 5,
       "bounds": {
         "min": [

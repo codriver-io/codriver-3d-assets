@@ -618,8 +618,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fairmont-banff-springs-near.glb",
-      "bytes": 1518580,
-      "triangles": 31876,
+      "bytes": 1589448,
+      "triangles": 33312,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -636,9 +636,9 @@
     },
     "far": {
       "url": "/models/buildings/fairmont-banff-springs-far.glb",
-      "bytes": 357844,
-      "triangles": 8096,
-      "drawCalls": 6,
+      "bytes": 440816,
+      "triangles": 9660,
+      "drawCalls": 7,
       "bounds": {
         "min": [
           -75.62372589111328,

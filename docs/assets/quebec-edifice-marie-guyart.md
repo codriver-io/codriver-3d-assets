@@ -38,7 +38,7 @@ Real metres, +X east, +Y up, +Z south, `y = 0` the plaza level at the foot of th
 | Plan | 42.0 m by 47.1 m, rectangle | **Mapped** (OSM: 42.1 m by 47.2 m); RPCQ calls it cruciform, the mapped envelope is a rectangle |
 | Storey pitch | 4.16 m; crown band 1.8 m (5.4 + 30 × 4.16 = 130.2) | Estimated from the photographs (about 30 window rows) |
 | Corner piers | 6.0 m wide (was 4.2 m, which read as thin edge strips), plain and windowless, on the mapped envelope and 1 m proud of the window frames, 1.5 m above the roof | Corner bracing and shafts are **sourced** (SQI); width and cap height estimated |
-| Window grid | 1.6 m wide by 1.35 m high windows in 3.05 m bays; frames 0.6 m proud of the field, glass 0.15 m behind the field; ribbon 1.2 m high | Estimated from photographs |
+| Window grid | 1.6 m wide by 1.35 m high windows in 3.05 m bays; frames 1.2 m proud of the field, glass 0.15 m behind the field; ribbon 1.2 m high | Estimated from photographs |
 | Ground storey | Glass set back 2.5 m, columns about every 7 m | Glazed and set back **sourced** (RPCQ); depth, columns estimated |
 | Belvedere | Top floor: one band of glass 3.6 m high, mullions on the bay lines | **Sourced** (glazed belvedere); size estimated |
 | Penthouse | 22 m by 14 m, 4.2 m high, with a louvre band | Estimated from the aerial photograph |
@@ -64,7 +64,7 @@ About a third of the windows and ribbons glow at night (a deterministic hash), t
 - **Set-back ground storey.** Dark glass 3.5 m behind the corner piers (2.5 m behind the window frames above), a header, the soffit under the overhang and columns; the corner piers run to the ground as the shafts do.
 - **Belvedere and crown.** The top floor is one glazed band with slim mullions, under a 1.8 m crown band; the four corner piers rise 1.5 m above the roof deck, the penthouse and mast stand on it.
 - **Base from the mapped parts.** Each wing and core is a flat-roofed box on its mapped rectangle (jogs under a metre merged); a wall exists only where nothing taller touches it. Wing walls have the cantilevered precast storeys with two ribbons, the soffit, and set-back steel and glass storeys with columns, closed with end caps where a wall ends against another volume. Cores are blank concrete with one band of louvres.
-- **Far LOD.** Same plan, corner piers, crown band, lobby, belvedere, roofs, penthouse, mast legs and whip and base boxes, with a ribbon strip and a narrower window strip per floor (no frames or piers), lit bays in pairs, and per wing three ribbon strips and a ground strip: 1.5 k triangles, 5 draws.
+- **Far LOD.** Same envelope, piers, crown, lobby, belvedere, roof and mast, retaining ribbon glass and the square precast grid with flat sill/lintel and pier masks on every floor. Night panes keep the same deterministic bay pattern.
 
 ## Approximations and gaps
 
@@ -84,12 +84,12 @@ node scripts/asset-catalog.mjs
 
 | Export | Bytes | Triangles | Draws |
 | --- | ---: | ---: | ---: |
-| `public/models/buildings/edifice-marie-guyart-near.glb` | 961 940 | 18 018 | 5 |
-| `public/models/buildings/edifice-marie-guyart-far.glb` | 80 272 | 1 394 | 5 |
+| `public/models/buildings/edifice-marie-guyart-near.glb` | 961,940 | 18,018 | 5 |
+| `public/models/buildings/edifice-marie-guyart-far.glb` | 296,844 | 5,614 | 5 |
 
 Both are far inside the building budgets (60 000 / 14 / 2.5 MB near, 12 000 / 8 / 500 KB far). `qa-metrics.mjs`: near and far OK, 0 coplanar overlapping pairs, 0 % back-face hits, minimum y 0, top 177 m. No Tesla timing was measured.
 
-`edifice-marie-guyart.test.js` pins: roof deck at 132 m, mast tip at 177 m, nothing below grade; the crown band on the mapped envelope and the 42.0 m by 47.1 m widths by ray; on all four faces the glass 45 cm behind the frames, the concrete field 60 cm behind them, the frames 1 m behind the corner shafts and a window row of 10 (42 m faces) or 12 (47 m faces) alternating windows and piers; the 6 m plain corner shafts on the envelope; the ground storey glazed 3.5 m behind the corner shafts with them running to the ground; the corner piers 1.5 m over the roof and the field clear; the belvedere glass under the crown band; penthouse roof 4.2 m over the main roof, the mast legs and whip, near and far; wing roofs at 15.6 m and core roofs at 19.2 m round an open court; the wings' cantilever 1.5 m over the set-back storeys; every vertex within 1.2 m of a mapped ring; far bounds within 1.5 m of near; a lit-window share between 8 and 66 % of the glass area.
+`edifice-marie-guyart.test.js` pins: roof deck at 132 m, mast tip at 177 m, nothing below grade; the crown band on the mapped envelope and the 42.0 m by 47.1 m widths by ray; on all four faces the glass 65 cm behind the frames, the concrete field 1.2 m behind them, the frames 1 m behind the corner shafts and a window row of 10 (42 m faces) or 12 (47 m faces) alternating windows and piers; the 6 m plain corner shafts on the envelope; the ground storey glazed 3.5 m behind the corner shafts with them running to the ground; the corner piers 1.5 m over the roof and the field clear; the belvedere glass under the crown band; penthouse roof 4.2 m over the main roof, the mast legs and whip, near and far; wing roofs at 15.6 m and core roofs at 19.2 m round an open court; the wings' cantilever 1.5 m over the set-back storeys; every vertex within 1.2 m of a mapped ring; far bounds within 1.5 m of near; a lit-window share between 8 and 66 % of the glass area.
 
 Screenshots looked at (`shot.mjs`, output in the ignored `tmp/quebec/shots/edifice-marie-guyart/it1` to `it4`):
 
@@ -101,6 +101,16 @@ Screenshots looked at (`shot.mjs`, output in the ignored `tmp/quebec/shots/edifi
 
 ## Placement modes
 
-- Cityscape: **not tested yet, integration is checked separately.**
-- Full 3D world (terrain): **not tested yet, integration is checked separately.** The Colline Parlementaire is nearly level under the buildings but not around them. The Terrarium DEM (zoom 15, 5 m samples inside the mapped rings) gives 89.8 to 91.2 m under the tower (median 90.0) and 87 to 93 m under the whole base (median 90.0, 10th to 90th percentile 89 to 92 m), while the ground falls to 82 m 110 m north of the tower and the lowest sample in a 130 m disc (needed to reach the far wing corners, 138 m out) is 79 m. The default disc takes the lowest sample, so it would sink the complex by about 11 m. `spec.terrainPad` therefore holds the tower outline and the base outline at the median DEM of the tower outline (about 90 m, local `y = 0`) with a 10 m feather. Expect in the app: the tower on level ground, the north wing up to 3 m of fill and the south end of the long wing up to 3 m of cut inside the base outline; the model is rigid and stays at `y = 0`. If the fill or cut is visible, the cure is a terrace ring for the wing concerned at an offset. This is an expectation from a coarse DEM, not a measurement in the app.
+- Cityscape: **verified for far/near/street visual placement (2026-10-11).**
+- Full 3D world (terrain): **verified for far/near/street visual placement (2026-10-11).** The Colline Parlementaire is nearly level under the buildings but not around them. The Terrarium DEM (zoom 15, 5 m samples inside the mapped rings) gives 89.8 to 91.2 m under the tower (median 90.0) and 87 to 93 m under the whole base (median 90.0, 10th to 90th percentile 89 to 92 m), while the ground falls to 82 m 110 m north of the tower and the lowest sample in a 130 m disc (needed to reach the far wing corners, 138 m out) is 79 m. The default disc takes the lowest sample, so it would sink the complex by about 11 m. `spec.terrainPad` therefore holds the tower outline and the base outline at the median DEM of the tower outline (about 90 m, local `y = 0`) with a 10 m feather. Expect in the app: the tower on level ground, the north wing up to 3 m of fill and the south end of the long wing up to 3 m of cut inside the base outline; the model is rigid and stays at `y = 0`. If the fill or cut is visible, the cure is a terrace ring for the wing concerned at an offset. This is an expectation from a coarse DEM, not a measurement in the app.
 - Failed load, LOD switch and reanchoring are handled by the shared building layer and covered by its own tests, not re-tested here.
+
+## QA fix — 2026-10-11
+
+Far retains the square precast window grid, sill/lintel masks and ribbon glass on every floor, including deterministic night panes. The concrete field and glazing are separated by 1.2 m and 0.65 m behind the frames to remove opposing material depth cycles.
+
+The supplied independent review sheet and its reference tile were compared with the new exported sheet; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
+
+Evidence: `tmp/landmark-qa/fix/sheets/edifice-marie-guyart.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
+
+The scripted near camera stays on the far LOD for this tall tower, and the street angle is occluded by another building. Supplemental true-near views at bearing 60.7°, zoom 17.3 and pitch 65° show the grid and base in `tmp/landmark-qa/fix/{city,world}-alternate/edifice-marie-guyart-near.png`.

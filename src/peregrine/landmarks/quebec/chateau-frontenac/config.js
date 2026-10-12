@@ -25,7 +25,7 @@ export const SPEC = {
 // tower's roof is near-black slate (about linear 0.03).
 export const PALETTES = {
   light: {
-    brick: '#9b5f4a', stone: '#b7b2a6', copper: '#45695d', slate: '#2f3133',
+    brick: '#754b40', stone: '#9d9c91', copper: '#45695d', slate: '#2f3133',
     glass: '#46535c', glow: '#46535c', metal: '#6c716f',
   },
   dark: {

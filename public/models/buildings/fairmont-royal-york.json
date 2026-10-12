@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fairmont-royal-york-near.glb",
-      "bytes": 1123108,
+      "bytes": 1123104,
       "triangles": 23062,
       "drawCalls": 9,
       "bounds": {
@@ -39,9 +39,9 @@
     },
     "far": {
       "url": "/models/buildings/fairmont-royal-york-far.glb",
-      "bytes": 294656,
-      "triangles": 5665,
-      "drawCalls": 7,
+      "bytes": 494088,
+      "triangles": 9883,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -80.87493896484375,

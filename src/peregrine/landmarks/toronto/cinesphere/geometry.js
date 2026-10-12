@@ -20,13 +20,13 @@ function pod(b, detail, p) {
   const near = detail === 'near', { ring, centre, yaw: edgeAngle, tabs, masts } = p;
   const { podBottom: y0, podRoof: y1, mastTop } = LEVELS, fy = -edgeAngle, f = frame(centre, fy);
   const orient = signedArea(ring) > 0 ? 1 : -1;
-  // Open frame: floor plates on the mapped outline, posts and spandrels round it, glazing in most bays and
-  // open bays showing the core and the floors behind; short chamfer and stair-bump faces stay solid.
+  // Suspended glazed volumes: slim floor bands and posts retain the mapped outline.
+  // Short chamfer and stair-bump faces stay solid.
   const floors = [[y0, y0 + 0.65], [11.95, 12.4], [16.45, 16.9], [y1 - 0.5, y1]];
   // Far keeps the lowest and the roof plate: the two between show through glass at a few pixels.
   for (const [fa, fb] of near ? floors : [floors[0], floors[3]]) extrude(b, 'white', ring, fa, fb);
   const roof = scaled(ring, centre, 0.94);
-  extrude(b, 'concrete', roof, y1, y1 + 0.15);
+  extrude(b, 'white', roof, y1, y1 + 0.15);
   const storeys = [[y0 + 0.65, 11.95], [12.4, 16.45], [16.9, y1 - 0.5]];
   for (let i = 0; i < ring.length; i++) {
     const a = ring[i], c = ring[(i + 1) % ring.length], dx = c[0] - a[0], dz = c[1] - a[1], L = Math.hypot(dx, dz);
@@ -45,14 +45,10 @@ function pod(b, detail, p) {
     storeys.forEach(([sa, sb], s) => {
       // spandrel above each floor plate, then glazing
       const m = at(L / 2, 0.1);
-      b.box('white', [m[0], sa + 0.45, m[1]], [L, 0.9, 0.2], th);
+      b.box('white', [m[0], sa + 0.2, m[1]], [L, 0.4, 0.2], th);
       for (let k = 0; k < bays; k++) {
-        const open = !near ? false : s === 0 ? (k > 0 && k < bays - 1) : k % 3 === 1, mid = at(L * (k + 0.5) / bays, 0.08), w = L / bays - 0.3;
-        if (open) {
-          if (near) b.bar('white', [mid[0] - ux * w / 2, sa + 1.1, mid[1] - uz * w / 2], [mid[0] + ux * w / 2, sa + 1.1, mid[1] + uz * w / 2], 0.03, 0.05);
-          continue;
-        }
-        b.box('glass', [mid[0], (sa + 0.9 + sb) / 2, mid[1]], [w, sb - sa - 0.95, 0.1], th);
+        const mid = at(L * (k + 0.5) / bays, 0.25), w = L / bays - 0.3;
+        b.box('glass', [mid[0], (sa + 0.4 + sb) / 2, mid[1]], [w, sb - sa - 0.45, 0.1], th);
         if (near && k % 2 === 0) { // tension rods, as photographed across the upper storeys
           const k2 = Math.min(bays, k + 3), s0 = L * k / bays, s1 = L * k2 / bays;
           if (s > 0) {
@@ -63,16 +59,16 @@ function pod(b, detail, p) {
       }
     });
   }
-  // The core the masts stand in, and four interior posts: what shows through the open bays.
-  b.box('deck', [centre[0], (y0 + y1) / 2, centre[1]], [6.4, y1 - y0, 6.4], fy);
-  for (const [su, sv] of [[-1, -1], [-1, 1], [1, -1], [1, 1]]) {
+  // Near keeps the core and interior posts behind the opaque glazing.
+  if (near) b.box('deck', [centre[0], (y0 + y1) / 2, centre[1]], [6.4, y1 - y0, 6.4], fy);
+  if (near) for (const [su, sv] of [[-1, -1], [-1, 1], [1, -1], [1, 1]]) {
     const q = f.p(su * 9, 0, sv * 9);
     b.box('white', [q[0], (y0 + y1) / 2, q[2]], [0.3, y1 - y0, 0.3], fy);
   }
 
   // Roof deck parapet: a rail loop just inside the edge.
   const rr = scaled(ring, centre, 0.96);
-  for (let i = 0; i < rr.length; i++) {
+  for (let i = 0; near && i < rr.length; i++) {
     const a = rr[i], c = rr[(i + 1) % rr.length], L = Math.hypot(c[0] - a[0], c[1] - a[1]);
     if (L < (near ? 1 : 4)) continue;
     b.bar('white', [a[0], y1 + 1.15, a[1]], [c[0], y1 + 1.15, c[1]], 0.04, 0.07);
@@ -106,7 +102,10 @@ function pod(b, detail, p) {
     heads.forEach((h, k) => {
       const lat = (k - (heads.length - 1) / 2) * (near ? 5.5 : 8);
       const top = [mc[0] + per[0] * lat * 0.22 + d[0] * 1.6, h, mc[1] + per[1] * lat * 0.22 + d[1] * 1.6];
-      const foot = [mc[0] + d[0] * (half - 2.2 - k * 1.5) + per[0] * lat, y1 + 0.7, mc[1] + d[1] * (half - 2.2 - k * 1.5) + per[1] * lat];
+      const foot = [mc[0] + d[0] * (half - 2.2 - k * 1.5) + per[0] * lat, y1 + 0.15, mc[1] + d[1] * (half - 2.2 - k * 1.5) + per[1] * lat];
+      const mast = masts.reduce((a, m) => Math.hypot(m[0]-top[0],m[1]-top[2]) < Math.hypot(a[0]-top[0],a[1]-top[2]) ? m : a);
+      b.bar('white', [mast[0],h,mast[1]], top, 0.16);
+      b.box('white', foot, [0.4,0.3,0.4], fy);
       b.bar('cable', top, foot, near ? 0.04 : 0.09, near ? 0.04 : 0.09, 0, true);
     });
   }

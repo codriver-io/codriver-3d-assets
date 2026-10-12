@@ -10,7 +10,7 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
-    panel: '#e9e8e2', frame: '#c6cac9', white: '#efefeb', glass: '#7fa3af', concrete: '#b9b8b0',
+    panel: '#e9e8e2', frame: '#c6cac9', white: '#efefeb', glass: '#344d59', concrete: '#b9b8b0',
     deck: '#7a8086', cable: '#88909a', glow: '#f4ecd2',
   },
   dark: {
