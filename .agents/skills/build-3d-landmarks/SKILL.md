@@ -21,16 +21,16 @@ Preserve openings, structural contacts and distinguishing features in both LODs.
 
 ## Budgets and QA
 
-Hold each model to the budgets in [quality](references/quality.md) (building near ≤ 60 k triangles / 14 draws / 2.5 MB, far ≤ 12 k / 8 / 500 KB; bridges about twice that). Run `scripts/qa-metrics.mjs` for the deterministic checks and judge looks from one `scripts/qa-sheet.mjs` contact sheet against a reference photograph.
+Hold each model to the budgets in [quality](references/quality.md) (building near ≤ 60 k triangles / 14 draws / 2.5 MB, far ≤ 12 k / 8 / 500 KB; bridges about twice that). Run deterministic `scripts/qa-metrics.mjs` first, then judge one exported near/far contact sheet against a reference photograph. An independent reviewer checks the evidence; independently re-review every fix. Use at most two look-fix rounds, then lead judgement and batched releases. Host integration requires unobstructed app shots in both flat and terrain modes; a contact sheet alone cannot verify shading, provider replacement or ground contacts.
 
 ## Prepare placement without claiming integration
 
-Read [placement modes](references/placement.md). Cityscape uses a flat ground reference; Full 3D world uses terrain and a host-owned datum. Keep buildings rigid and give bridges explicit abutments/support footprints. Document the foundation plane, site relief and deck attachments needed by a host. Do not pre-drape the reusable model or assume a whole bridge can follow a valley floor.
+Read [placement modes](references/placement.md). Cityscape uses a flat ground reference; Full 3D world uses terrain and a host-owned datum. Keep buildings rigid and give bridges explicit abutments/support footprints. Document the foundation plane, site relief, exact provider way/part ids replaced and deck attachments needed by a host. Every cable/stay/hanger/rail/walkway/beam end must meet a support in both LODs; visible defects remain FIX even when documented. Do not pre-drape the reusable model or assume a whole bridge can follow a valley floor.
 
 ## Catalog and verify
 
 Register identity, generator/editable source, references, contributor credit, geographic-data license, local frame, variants, measured costs, inspection views and approximations. Only redistribution-cleared assets belong in the public collection. Follow the repository’s contributor agreement and acceptance procedure when present; record actual human/rightsholder acceptance evidence and never sign, accept legal terms or invent consent for a contributor. Keep public creator credit even where a separate license permits the host to omit individual in-app attribution.
 
-Compare source and GLB from matching angles, near/far and day/night. Include an underside/support view for bridges and roof/opposite facade for buildings. Run the repository build and catalog checks, then inspect the actual browser result. Report Cityscape and topography separately as verified with evidence, not tested, or unsupported. The standalone inspector has no terrain engine.
+Compare source and GLB from matching angles, near/far and day/night. Include an underside/support view for bridges and roof/opposite facade for buildings. Run the repository build and catalog checks, then inspect the actual browser result. Report Cityscape and topography separately as verified with evidence, not tested, or unsupported. The standalone inspector has no terrain engine. Verify per-terrace footing residuals against the DEM, pad coverage of surrounding terrain lattice nodes and continuous stepped stairs/approaches in the host. Host layers must consistently use their shared shading path; viewer materials alone are insufficient.
 
 Deliver file paths, preview views, measured costs, provenance and known limitations. A build or model submission does not authorize deployment or changing a host application’s access gates.
