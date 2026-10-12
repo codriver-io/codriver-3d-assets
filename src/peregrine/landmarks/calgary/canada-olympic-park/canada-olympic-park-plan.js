@@ -1,13 +1,15 @@
+import { hillHeight } from './canada-olympic-park-dem.js';
+export { hillHeight } from './canada-olympic-park-dem.js';
 // Canada Olympic Park ski jumps: every number the geometry, the terrain pad, the tests and the docs share.
 // Frame: real metres, +x east, +y up, +z south, origin = centre of the 90 m (K114) tower head (config.js ORIGIN).
 //
-// y = 0 is the lower K89 landing outrun. Existing measured relative elevations
+// Cityscape y = 0 is the lower K89 landing outrun. Existing measured relative elevations
 // are raised together by an estimated 35 m of landing relief; the source tower
 // heights and inrun profiles are unchanged. Supports continue to y=0 and sit
 // inside the authored hill. Full 3D world uses the outrun datum and bounded
 // take-off terraces. Nothing goes below grade.
 
-/** Ground (DEM z13 on the app's ~24 m TIN) at each footing, metres above the K89 take-off ground. Measured, not sourced. */
+/** Legacy Cityscape levels: measured z13 footing offsets plus 35 m photo-estimated landing relief. World uses the literal survey below. */
 // Tower values are the mean over the shaft corners (90 m: 24.4-26.6; 70 m: 17.2-19.0); take-offs at the edge centre.
 export const GROUND = Object.freeze({ k89TakeOff: 35, k114TakeOff: 39.2, tower70: 53.1, tower90: 60.5, k63TakeOff: 53.1, tower50: 64.3, k38TakeOff: 46.1, k38Start: 55.8 });
 
@@ -157,7 +159,7 @@ export const SUPPORTS = Object.freeze({
 });
 
 /** Shared relative landscape profile for mesh and bounded world terraces. */
-export function hillHeight(x,z) {
+export function flatHillHeight(x,z) {
   let y=0;
   for(const [key,length,grade] of [['k114',145,60.5],['k89',120,53.1],['k63',90,64.3],['k38',65,55.8]]) {
     const jump=JUMPS[key],profile=inrunProfile(jump),{d,r}=axes(jump.bearing),dx=x-jump.takeOff[0],dz=z-jump.takeOff[1];
@@ -170,3 +172,8 @@ export function hillHeight(x,z) {
   const border=Math.max(0,Math.min(1,(x+85)/21.25,(170-x)/21.25,(z+295)/24.7222,(150-z)/24.7222));
   return y*border;
 }
+
+// World assembly datums follow the surveyed take-off. Source relative dimensions
+// within each tower/inrun assembly stay rigid; footings follow local ground.
+export const WORLD_GROUND = Object.freeze(Object.fromEntries(Object.entries(JUMPS).map(([key,jump])=>[key,hillHeight(...jump.takeOff)])));
+export const WORLD_SHIFT = Object.freeze(Object.fromEntries(Object.entries(JUMPS).map(([key,jump])=>[key,WORLD_GROUND[key]-jump.ground])));
