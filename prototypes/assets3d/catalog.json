@@ -7404,7 +7404,7 @@
       "kind": "building",
       "location": "88 Canada Olympic Road SW, Calgary, Alberta (Paskapoo Slopes, south of the Trans-Canada Highway)",
       "status": "ready",
-      "description": "The 1988 Winter Olympics ski jumps as a driver sees them from the Trans-Canada Highway: the 58 m concrete tower of the 90 m (K114) jump with its cantilevered head, glazed bands, Olympic rings and antenna mast; the K114 inrun girder on its sourced profile with a concrete pier and steel trestle bents; beside it the 70 m (K89) tower and inrun; east of them the K63 and K38 training hills. The landing hills are terrain, not model.",
+      "description": "The 1988 Winter Olympics ski jumps as a driver sees them from the Trans-Canada Highway: the 58 m concrete tower of the 90 m (K114) jump with its cantilevered head, glazed bands, Olympic rings and antenna mast; the K114 inrun girder on its sourced profile with a concrete pier and steel trestle bents; beside it the 70 m (K89) tower and inrun; east of them the K63 and K38 training hills. The green landing landform is preserved exactly in Cityscape; both Full 3D world LODs expose the native DEM hillside and conceal authored grass through reversible per-vertex offsets.",
       "manifest": "/models/buildings/canada-olympic-park.json",
       "source": {
         "path": "src/peregrine/landmarks/calgary/canada-olympic-park/geometry.js",
@@ -7487,7 +7487,7 @@
           }
         ]
       },
-      "notes": "A continuous rounded planted ski landform now runs beneath the inruns and beyond every take-off. Tower service divisions survive both LODs. Local zero moved to the lower K89 outrun, 35 m below its take-off, preserving tower and inrun relative dimensions; this additional relief is estimated. The world terrain pad samples the lower outrun and uses small feathered under-hill terraces held below each local mesh patch; no all-site flattening ring remains. Original photographic reconstruction; dimensions and detail approximations remain in the landmark documentation.",
+      "notes": "Fixed the World hillside colour pop by concealing authored grass in BOTH near and far beneath both surveyed TINs; Cityscape green hill is unchanged. Near concealed grass residual: -4.940 to -2.769 m against displayed near TIN, -4.970 to -2.898 m against regional TIN; far -5.136 to -2.748 m and -4.945 to -2.853 m respectively. Footing depths and minimal node trims remain unchanged: near feet -0.850 to -0.793 m against near TIN; far feet -1.652 to -1.000 m against regional TIN. Near feet against regional-only fallback can reach +0.587 m; near captures validate resident z13 terrain. K89 outrun datum 1166.2831 m, take-off relief 25.9973 m; terraces cut at most 0.15 m. Sourced tower/inrun dimensions stay rigid.",
       "documentation": "docs/assets/calgary-canada-olympic-park.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -7496,7 +7496,7 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "integration": "Full 3D world: verified in the same frames with AWS Terrarium terrain. Small under-hill terraces replace the all-site flattening pad, preserving the surrounding hill."
+      "integration": "Final app-r3 captures include near bearings 0/90/180/270, far bearings 90/180 and the 400-to-520 m LOD transition. Both World LODs use native terrain with no hillside colour pop, pit, cliff or floating footing in those frames. Evidence: tmp/top-cities/canada-olympic-park/app-r3/ and REPORT-r3.md. Night, vehicles, real hardware, other terrain and broader lifecycle remain not tested."
     },
     {
       "id": "centre-street-bridge",

@@ -5,9 +5,9 @@
 //   tower90()  the 58 m tower: flared lift-core shaft (70 % of the head), cantilevered head with a tapered underside,
 //              glazed bands, Olympic rings (flat annuli), mast
 //   tower70()  the 70 m tower: concrete shaft and box head with the K89 start
-// Every support and shaft reaches y = 0 (see the plan for why). Numbers live in canada-olympic-park-plan.js.
+// Every Cityscape support and shaft reaches y = 0; geometry.js supplies world footing offsets. Numbers live in canada-olympic-park-plan.js.
 import * as THREE from 'three';
-import { hillHeight, JUMPS, SUPPORTS, TOWER90, TOWER70, TOWER50, HUT38, axes, inrunProfile, deckY, jumpPoint, girderDepth, GIRDER_STEEL } from './canada-olympic-park-plan.js';
+import { flatHillHeight, JUMPS, SUPPORTS, TOWER90, TOWER70, TOWER50, HUT38, axes, inrunProfile, deckY, jumpPoint, girderDepth, GIRDER_STEEL } from './canada-olympic-park-plan.js';
 import { polys, prism, sweep, bar, ring } from './canada-olympic-park-mesh.js';
 
 const WALL = 0.3; // parapet thickness
@@ -216,7 +216,7 @@ export function landingHills(b, ctx) {
   const positions = [], indices = [];
   for (let iz=0;iz<=NZ;iz++) for(let ix=0;ix<=NX;ix++) {
     const x=-85+255*ix/NX,z=-295+445*iz/NZ;
-    positions.push(x,hillHeight(x,z),z);
+    positions.push(x,flatHillHeight(x,z),z);
     if(iz&&ix){const a=(iz-1)*(NX+1)+ix-1,c=iz*(NX+1)+ix-1;indices.push(a,c,c+1,a,c+1,a+1);}
   }
   const visible=[];for(let i=0;i<indices.length;i+=3){const tri=indices.slice(i,i+3);if(tri.some(k=>positions[k*3+1]>.1))visible.push(...tri);}
