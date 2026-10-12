@@ -4,11 +4,14 @@
 // Per variant: triangles / draws / bytes against the budgets, removable bytes (bridgeLift on a
 // free-standing structure), far-vs-near bounds, parts below grade, coplanar overlapping faces of
 // different materials (z-fighting candidates) and an outside-in ray sweep for back-face hits
-// (holes, inside-out or missing faces). Prints one compact line per landmark; JSON for details.
+// (holes, inside-out or missing faces), window-rhythm loss and unsupported member-end candidates.
+// Prints one compact line per landmark; JSON for details.
 // A coplanar flag names the worst material pairs ("small on big") and where their largest overlap is.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import * as THREE from 'three';
+import { windowFacades, windowRhythm, memberEnds } from './quality-checks.mjs';
+export { windowFacades, windowRhythm, memberEnds } from './quality-checks.mjs';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { loadAssetCatalog, glbMetrics } from '../../../../scripts/asset-catalog.mjs';
 
@@ -21,8 +24,8 @@ export const BUDGET = {
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const cityOf = (e) => e.city || ['Montréal', 'Paris', 'Toronto', 'San Francisco'].find((c) => norm(e.location).includes(norm(c))) || '?';
 
-const meshesOf = (scene) => { const out = []; scene.updateMatrixWorld(true); scene.traverse((o) => { if (o.isMesh) out.push(o); }); return out; };
-function triangles(meshes) {
+export const meshesOf = (scene) => { const out = []; scene.updateMatrixWorld(true); scene.traverse((o) => { if (o.isMesh) out.push(o); }); return out; };
+export function triangles(meshes) {
   const tris = [], a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3();
   for (const m of meshes) {
     const p = m.geometry.attributes.position, idx = m.geometry.index;
@@ -33,7 +36,7 @@ function triangles(meshes) {
       const nrm = new THREE.Vector3().crossVectors(b.clone().sub(a), c.clone().sub(a)), area = nrm.length() / 2;
       if (area < 1e-6) continue;
       nrm.normalize();
-      tris.push({ a: a.clone(), b: b.clone(), c: c.clone(), n: nrm, area, mat: m.material.name });
+      tris.push({ a: a.clone(), b: b.clone(), c: c.clone(), n: nrm, area, mat: (Array.isArray(m.material) ? m.material[m.geometry.groups.find((g) => i >= g.start && i < g.start + g.count)?.materialIndex ?? 0] : m.material).name });
     }
   }
   return tris;
@@ -77,10 +80,64 @@ function coplanarOverlaps(tris) {
   const top = [...byPair.values()].sort((a, b) => b.area - a.area).slice(0, 3).map(({ pair, pairs, area, at }) => ({ pair, pairs, areaM2: +area.toFixed(1), at }));
   return { pairs, areaM2: Math.round(area), top };
 }
+// Parallel stacked materials can flicker without being coplanar. Conservative model-metre
+// screening gaps: near 20 cm, far 50 cm. Host camera precision and depth ordering still need QA.
+export const LAYER_GAP = { near: 0.2, far: 0.5 };
+export function layeredFaces(tris, maxGap, ranks = {}) {
+  const groups = new Map();
+  for (const t of tris) {
+    const n = t.n, key = `${Math.round(n.x * 20)},${Math.round(n.y * 20)},${Math.round(n.z * 20)}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(t);
+  }
+  const byPair = new Map(); let area = 0, faces = 0;
+  for (const g of groups.values()) {
+    if (g.length < 2) continue;
+    const n = g[0].n.clone().normalize(), u = new THREE.Vector3().crossVectors(n, Math.abs(n.y) < 0.9 ? new THREE.Vector3(0, 1, 0) : new THREE.Vector3(1, 0, 0)).normalize(), v = new THREE.Vector3().crossVectors(n, u);
+    const P = (p) => [p.dot(u), p.dot(v)];
+    const rows = g.map((t) => { const a = P(t.a), b = P(t.b), c = P(t.c); return { t, a, b, c, d: n.dot(t.a), cen: [(a[0] + b[0] + c[0]) / 3, (a[1] + b[1] + c[1]) / 3], min: [Math.min(a[0], b[0], c[0]), Math.min(a[1], b[1], c[1])], max: [Math.max(a[0], b[0], c[0]), Math.max(a[1], b[1], c[1])] }; });
+    // Spatial hash of every face's 2D box (2 m cells; huge faces capped to 4000 cells).
+    const C = 2, grid = new Map(), large = [];
+    rows.forEach((r, i) => {
+      const x0 = Math.floor(r.min[0] / C), x1 = Math.floor(r.max[0] / C), y0 = Math.floor(r.min[1] / C), y1 = Math.floor(r.max[1] / C);
+      if ((x1 - x0 + 1) * (y1 - y0 + 1) > 4000) { large.push(i); return; }
+      for (let x = x0; x <= x1; x++) for (let y = y0; y <= y1; y++) { const k = x + ',' + y; if (!grid.has(k)) grid.set(k, []); grid.get(k).push(i); }
+    });
+    const inside = (p, r) => { const s = (a, b, w) => (b[0] - a[0]) * (w[1] - a[1]) - (b[1] - a[1]) * (w[0] - a[0]); const d1 = s(r.a, r.b, p), d2 = s(r.b, r.c, p), d3 = s(r.c, r.a, p); return (d1 >= 0 && d2 >= 0 && d3 >= 0) || (d1 <= 0 && d2 <= 0 && d3 <= 0); };
+    for (const j of rows) {
+      const cands = [...(grid.get(Math.floor(j.cen[0] / C) + ',' + Math.floor(j.cen[1] / C)) || []), ...large];
+      const backing = new Set();
+      for (const i of cands) {
+        const r = rows[i], gap = j.d - r.d;
+        // Positive outward gap is in front. Exactly coplanar faces have no geometric
+        // ordering: only the strictly smaller face can be an overlay.
+        if (r === j || r.t.mat === j.t.mat || r.t.area < j.t.area || gap < -1e-5 || gap >= maxGap) continue;
+        if (Math.abs(gap) <= 1e-5 && r.t.area <= j.t.area + 1e-6) continue;
+        if (r.t.n.dot(j.t.n) < 0.99999 || backing.has(r.t.mat)) continue;
+        if ((ranks[j.t.mat] || 0) > (ranks[r.t.mat] || 0)) continue;
+        if (PAINT.test(r.t.mat) && PAINT.test(j.t.mat)) continue;
+        if (!inside(j.cen, r)) continue;
+        faces++; area += j.t.area;
+        backing.add(r.t.mat);
+        const k = `${j.t.mat} on ${r.t.mat}`, e = byPair.get(k) || { pair: k, front: j.t.mat, back: r.t.mat, faces: 0, area: 0, minGap: Infinity, maxArea: 0, at: null };
+        e.faces++; e.area += j.t.area; e.minGap = Math.min(e.minGap, gap);
+        if (j.t.area > e.maxArea) { e.maxArea = j.t.area; e.at = ['x', 'y', 'z'].map((c) => +((j.t.a[c] + j.t.b[c] + j.t.c[c]) / 3).toFixed(1)); }
+        byPair.set(k, e);
+      }
+    }
+  }
+  const edges = [...byPair.values()].sort((a, b) => b.area - a.area || a.pair.localeCompare(b.pair));
+  const top = edges.slice(0, 4).map(({ pair, faces, area, minGap, at }) => ({ pair, faces, areaM2: +area.toFixed(1), gapCm: Math.round(minGap * 100), at }));
+  return { faces, areaM2: Math.round(area), top, edges };
+}
 // Rays from a sphere round the model at random points inside its box: a first hit on a face whose
 // normal points away from the ray origin is a hole, an inside-out face or a missing cap.
 function backfaceSweep(scene, box, rays = 500) {
-  const meshes = meshesOf(scene); for (const m of meshes) { m.material = m.material.clone(); m.material.side = THREE.DoubleSide; }
+  const meshes = meshesOf(scene);
+  for (const m of meshes) {
+    const materials = (Array.isArray(m.material) ? m.material : [m.material]).map(mat => { const copy = mat.clone(); copy.side = THREE.DoubleSide; return copy; });
+    m.material = Array.isArray(m.material) ? materials : materials[0];
+  }
   const rc = new THREE.Raycaster(), center = box.getCenter(new THREE.Vector3()), r = box.getSize(new THREE.Vector3()).length() * 0.75 + 5;
   let hits = 0, back = 0, s = 12345; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
   for (let k = 0; k < rays; k++) {
@@ -96,7 +153,7 @@ function backfaceSweep(scene, box, rays = 500) {
   }
   return { rays: hits, backfacePct: hits ? Math.round((back / hits) * 1000) / 10 : 0 };
 }
-async function loadGlb(file) {
+export async function loadGlb(file) {
   const data = await readFile(file);
   const scene = (await new GLTFLoader().parseAsync(data.buffer.slice(data.byteOffset, data.byteOffset + data.byteLength), '')).scene;
   const len = data.readUInt32LE(12), json = JSON.parse(data.subarray(20, 20 + len));
@@ -123,15 +180,24 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.url.repl
       for (const [k, lim, val] of [['tris', b.triangles, m.tris], ['draws', b.draws, m.draws], ['bytes', b.bytes, g.metrics.bytes]]) if (val > lim) row.issues.push(`${label} ${k} ${val} > ${lim}`);
       if (e.kind === 'building' && g.liftBytes) row.issues.push(`${label} removable bridgeLift ${m.liftKB} KB`);
       if (box.min.y < -3) row.issues.push(`${label} below grade ${m.minY} m`);
+      const tris = triangles(meshesOf(g.scene));
+      m.layered = layeredFaces(tris, LAYER_GAP[label]);
+      if (m.layered.areaM2 >= 2) row.issues.push(`${label} layered faces < ${LAYER_GAP[label] * 100} cm ${m.layered.areaM2} m² (${m.layered.top.map(t => `${t.pair} at [${t.at}]`).join(', ')})`);
       if (label === 'near') {
-        const tris = triangles(meshesOf(g.scene));
         m.coplanar = coplanarOverlaps(tris); m.sweep = backfaceSweep(g.scene, box);
         if (m.coplanar.pairs > 20 && m.coplanar.areaM2 >= 5) row.issues.push(`near coplanar overlaps ${m.coplanar.pairs} (${m.coplanar.areaM2} m²: ${m.coplanar.top.map((t) => `${t.pair} ${t.areaM2} m² at [${t.at}]`).join(', ')})`);
         if (m.sweep.backfacePct > 2) row.issues.push(`near back-face hits ${m.sweep.backfacePct}%`);
       }
+      m.windows = windowFacades(tris);
+      m.memberEnds = memberEnds(tris);
+      if (m.memberEnds.ends) row.issues.push(`${label} unsupported member-end candidates ${m.memberEnds.ends} (${m.memberEnds.flags.slice(0, 4).map(t => `${t.material} at [${t.at}]`).join(', ')})`);
       row[label] = m;
     }
     if (sizes.near && sizes.far) for (const ax of ['x', 'y', 'z']) if (Math.abs(sizes.far[ax] - sizes.near[ax]) > Math.max(1.5, sizes.near[ax] * 0.05)) row.issues.push(`far silhouette ${ax} ${sizes.far[ax].toFixed(1)} vs ${sizes.near[ax].toFixed(1)} m`);
+    if (row.near && row.far) {
+      row.windowRhythm = windowRhythm(row.near.windows, row.far.windows);
+      if (row.windowRhythm.facades) row.issues.push(`far window-rhythm candidates (${row.windowRhythm.flags.map(f => `bearing bin ${f.bearingBin}: ${f.reasons.join(', ')}`).join('; ')})`);
+    }
     out.push(row);
     const n = row.near, f = row.far;
     console.log(`${row.id.padEnd(32)} near ${n.tris}t/${n.draws}d/${n.kb}KB${f ? `  far ${f.tris}t/${f.draws}d/${f.kb}KB` : ''}  ${row.issues.length ? 'ISSUES: ' + row.issues.join('; ') : 'ok'}`);
