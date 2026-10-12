@@ -1,0 +1,66 @@
+{
+  "id": "fox-theatre-atlanta",
+  "name": "Fox Theatre",
+  "kind": "building",
+  "origin": [
+    -84.38556,
+    33.7725
+  ],
+  "height": 32.8,
+  "padM": 74,
+  "frontageBearing": 94.3,
+  "ownTolM": 1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local flat-map grade y=0; no terrain or absolute altitude baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1929 Moorish movie palace, present exterior. Footprint and roof positions mapped; heights, minarets, striped masonry, dome lattice and geometry-only FOX lettering estimated from attributed photos. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fox-theatre-atlanta-near.glb",
+      "bytes": 1099452,
+      "triangles": 27373,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.845367431640625,
+          0,
+          -45.922882080078125
+        ],
+        "max": [
+          56.78422164916992,
+          32.79999923706055,
+          19.436315536499023
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fox-theatre-atlanta-far.glb",
+      "bytes": 425620,
+      "triangles": 9239,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.915000915527344,
+          0,
+          -46.00239562988281
+        ],
+        "max": [
+          56.78422164916992,
+          32.79999923706055,
+          19.436315536499023
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fox-theatre-atlanta/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

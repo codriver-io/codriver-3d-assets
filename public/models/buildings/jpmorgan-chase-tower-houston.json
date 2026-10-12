@@ -1,0 +1,65 @@
+{
+  "id": "jpmorgan-chase-tower-houston",
+  "name": "JPMorgan Chase Tower",
+  "kind": "building",
+  "origin": [
+    -95.3640051633,
+    29.7603990667
+  ],
+  "height": 305.4,
+  "padM": 43,
+  "frontageBearing": 259.1554,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid base, no absolute altitude or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "305.4 m roof and 75 storeys are sourced; the mapped eight-vertex envelope retains five main faces and three narrow corner bevels. Window pitch, granite grid, lobby glazing, roof finish and occupied-window pattern are photographic estimates. West cut facade follows the mapped 34 m span rather than rescaling to the architect’s 85-foot clear internal span. Plaza, art and Chase Center are outside ownership. Cityscape and Full 3D world not tested; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/jpmorgan-chase-tower-houston-near.glb",
+      "bytes": 921360,
+      "triangles": 16968,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -23.496103286743164,
+          0,
+          -31.31792449951172
+        ],
+        "max": [
+          29.24860191345215,
+          305.3999938964844,
+          32.72417449951172
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/jpmorgan-chase-tower-houston-far.glb",
+      "bytes": 244612,
+      "triangles": 4436,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -23.496103286743164,
+          0,
+          -31.31792449951172
+        ],
+        "max": [
+          29.24860191345215,
+          305.3999938964844,
+          32.72417449951172
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jpmorgan-chase-tower-houston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

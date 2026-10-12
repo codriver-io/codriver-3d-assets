@@ -1,0 +1,68 @@
+{
+  "id": "sunshine-skyway-bridge",
+  "name": "Sunshine Skyway Bridge",
+  "kind": "bridge",
+  "origin": [
+    -82.65655,
+    27.62179
+  ],
+  "height": 131,
+  "padM": 2200,
+  "frontageBearing": 147.2,
+  "rangeM": 7500,
+  "nearM": 1900,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat-map/water grade. Nominal brief clearance 59 m is the main girder soffit; pavement 63.5 m and pylon crowns 131 m. Absolute-deck world placement is applied at runtime; no DEM or Mercator stretch baked into exports.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1987 crossing only: sourced 366 m main span, 165 m side spans, 29 m width, 84 stay legs in a central plane. Adopted 131 m height and nominal 59 m clearance from task; published clearances/datum differ. Aerial-projected north tower, second tower at 366 m; estimated pylon sections, approach pier spacing, lamps and median. High section with flat-map landings, omitting remaining low trestles, protective dolphins and old fishing piers.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/sunshine-skyway-bridge-near.glb",
+      "bytes": 3198136,
+      "triangles": 45084,
+      "drawCalls": 19,
+      "bounds": {
+        "min": [
+          -778.1122436523438,
+          -0.20000000298023224,
+          -1193.4989013671875
+        ],
+        "max": [
+          1049.3299560546875,
+          131,
+          1615.534423828125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/sunshine-skyway-bridge-far.glb",
+      "bytes": 728864,
+      "triangles": 22332,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -778.1122436523438,
+          -0.20000000298023224,
+          -1193.4989013671875
+        ],
+        "max": [
+          1049.3299560546875,
+          131,
+          1615.534423828125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/sunshine-skyway-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

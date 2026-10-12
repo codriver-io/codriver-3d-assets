@@ -19400,6 +19400,900 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bank-of-america-plaza-atlanta",
+      "name": "Bank of America Plaza (Atlanta)",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original procedural 312 m Atlanta tower: mapped serrated diagonal plan, red-brown granite piers, separate 55-storey window cells, receding shoulders, open gold lattice pyramid and square obelisk tip.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bank-of-america-plaza-atlanta/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bank-of-america-plaza-atlanta --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-11; no photographs, textures, scans or third-party meshes in source or exports. Mapped plan derived from OSM way 39449840 in the supplied dossier, © OpenStreetMap contributors, ODbL 1.0. References studied only for proportions: Bankofamerica-atlanta-new.jpg and Bankofamerica-atlanta-feb09.jpg by connor.carey (CC BY-SA 3.0); Bank-of-America-Plaza-Atlanta-24802603.jpg by J. Geierman (CC BY-SA 3.0); Bank of America Atlanta 2.jpg by Atlantacitizen (CC BY-SA 3.0); Scraper (259777575).jpeg by Kailash U (CC0); Sunday morning kickball game on the Active Oval at Piedmont Park.jpg by Marc Merlin (CC BY-SA 4.0). Reference images stay only in ignored tmp.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Bank_of_America_Plaza_(Atlanta)"
+          },
+          {
+            "label": "Official building site · address and current renovation context",
+            "url": "https://www.bankofamericaplaza.com/"
+          },
+          {
+            "label": "Mapped serrated tower · OSM way 39449840",
+            "url": "https://www.openstreetmap.org/way/39449840"
+          },
+          {
+            "label": "Bankofamerica-atlanta-new.jpg · connor.carey · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankofamerica-atlanta-new.jpg"
+          },
+          {
+            "label": "Bankofamerica-atlanta-feb09.jpg · connor.carey · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bankofamerica-atlanta-feb09.jpg"
+          },
+          {
+            "label": "Bank-of-America-Plaza-Atlanta-24802603.jpg · J. Geierman · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bank-of-America-Plaza-Atlanta-24802603.jpg"
+          },
+          {
+            "label": "Scraper_(259777575).jpeg · Kailash U · CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Scraper_(259777575).jpeg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-america-plaza-atlanta/geometry.js"
+      },
+      "notes": "Sourced: 312 m / 1023 ft architectural height, 55 storeys, 1992 shell, granite cladding and gold/open steel crown. Mapped: 1965 m² serrated footprint, roughly 49 × 50 m in tower axes, southeast face bearing 135.90 degrees. Estimated: shoulders at 250/258/264 m, 270 m crown-support roof (published 284 m roof is not treated as visible lattice springing), 4.75 m window pitch, pier widths, 35.6 m open lattice of 34 m base width plus 6.6 m obelisk split, illumination pattern. Surrounding hospital, detached ATM, street sign, driveways, lawns and garage ramps are outside model ownership. Ground-level interior and current West Wing renovation are not represented. Tesla performance and terrain pad/entrance continuity remain unverified. Review fix 2026-10-12: taller tapered summit and clustered setbacks in both LODs; full-height inspector cameras corrected; app recapture and independent re-review remain lead-owned.",
+      "documentation": "docs/assets/top-cities-bank-of-america-plaza-atlanta.md",
+      "manifest": "/models/buildings/bank-of-america-plaza-atlanta.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=bank-of-america-plaza-atlanta&view=detail"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "dallas-city-hall",
+      "name": "Dallas City Hall",
+      "kind": "building",
+      "location": "Dallas, Texas",
+      "status": "ready",
+      "description": "Dallas City Hall: long buff-concrete inverted pyramid, sloping north glazing, stepped cantilevered end bays, three cylindrical stair pylons, roof vaults and a circular plaza pool.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/dallas-city-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks dallas-city-hall",
+        "provenance": "Authored 2026-10-11 as original parameterized Three.js geometry in real metres. Building outline from OpenStreetMap way 27129838 (ODbL 1.0). Visual reference only: Michael Barera, View of Dallas City Hall from Reunion Tower August 2015 14 (CC BY-SA 4.0); Kent Wang, DallasCityHall view and DallasCityHallInterior (CC BY-SA 2.0); Daquella manera, DallasCityHallA (CC BY 2.0). Architect photographs/sections credited on PCF&P to Balthazar Korab Ltd., PCF&P and Nathaniel Lieberman are rights-reserved references kept only in ignored scratch, never exported or published. No photograph, texture, scan or mesh was incorporated. Adapt/re:Adapt conservation photograph retained in ignored scratch only; photographer unspecified and no redistribution licence stated, so rights reserved and not shipped.",
+        "references": [
+          {
+            "label": "National Park Service HABS TX-3325: 560-foot length, 122-foot height, 34-degree slope and seven office floors",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0500/tx0564/data/tx0564data.pdf"
+          },
+          {
+            "label": "Pei Cobb Freed & Partners: architect project facts and sections",
+            "url": "https://www.pcf-p.com/projects/dallas-city-hall/"
+          },
+          {
+            "label": "Mapped civic building, seven levels, way 27129838",
+            "url": "https://www.openstreetmap.org/way/27129838"
+          },
+          {
+            "label": "Wikipedia identity, stair cylinders and plaza sculpture",
+            "url": "https://en.wikipedia.org/wiki/Dallas_City_Hall"
+          },
+          {
+            "label": "File:View of Dallas City Hall from Reunion Tower August 2015 14.jpg — Michael Barera, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:View_of_Dallas_City_Hall_from_Reunion_Tower_August_2015_14.jpg"
+          },
+          {
+            "label": "File:DallasCityHall view.jpg — Kent Wang, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:DallasCityHall_view.jpg"
+          },
+          {
+            "label": "File:DallasCityHallInterior.jpg — Kent Wang, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:DallasCityHallInterior.jpg"
+          },
+          {
+            "label": "File:DallasCityHallA.jpg — Daquella manera, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:DallasCityHallA.jpg"
+          },
+          {
+            "label": "Adapt/re:Adapt conservation photograph: Vertebrae in Three Pieces — After Conservation, Henry Moore, 1978; visual reference only, photographer unspecified, rights reserved",
+            "url": "https://www.adaptreadapt.com/art-conservation/recent-work-sculpture"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/dallas-city-hall/geometry.js"
+      },
+      "notes": "Original procedural interpretation, no textures or reference meshes. 560-foot length, 122-foot top and 34-degree north lean are sourced; roof/storey division, pylon diameters, glazing and plaza placement are estimates. Review b1b sculpture nit fixed: three separated rounded organic fin/hook/C profiles, open concavities, varied heights/orientations, smooth bevel normals and muted bronze; all toes meet the existing paving plinth in near/far tests. Original road-distance approximation of the Henry Moore group, not an exact reproduction. Exported day near/far overview, entrance and sculpture sheets under tmp/top-cities/shots/dallas-city-hall/review-fix-2. Trees, flags, fountains and interiors omitted; app recapture and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-dallas-city-hall.md",
+      "manifest": "/models/buildings/dallas-city-hall.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=dallas-city-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=roof"
+          },
+          {
+            "label": "End",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=end"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=detail"
+          },
+          {
+            "label": "Sculpture",
+            "url": "/asset-preview.html?asset=dallas-city-hall&view=sculpture"
+          }
+        ]
+      },
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edificio-de-correos-costa-rica",
+      "name": "Edificio de Correos",
+      "kind": "building",
+      "location": "San José, Costa Rica",
+      "status": "ready",
+      "description": "Original procedural exterior of the 1917 central post and telegraph building: ochre walls, pale paired columns, arched iron entrances, open balustrades, crested central inscription attic and curved pavilion crowns with low corner domes.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/edificio-de-correos-costa-rica/geometry.js",
+        "build": "pnpm build:top-cities-landmarks edificio-de-correos-costa-rica --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-12. Geographic placement © OpenStreetMap contributors, ODbL 1.0. Dossier photos 2–7 observed for reference only; titles, photographers and licences listed in references; no photographic texture, scan or third-party mesh embedded. Dossier photo 1 (postage stamps) ignored.",
+        "references": [
+          {
+            "label": "Official postal history: inauguration October 1917, architect Luis Llach Llagostera",
+            "url": "https://correos.go.cr/edificio-central-de-correos-y-telegrafos-fiel-testigo-de-la-construccion-de-la-democracia/"
+          },
+          {
+            "label": "Mapped replacement envelope, OSM way 264142839",
+            "url": "https://www.openstreetmap.org/way/264142839"
+          },
+          {
+            "label": "Correos de Costa Rica.jpg — Raúl Arias, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Correos_de_Costa_Rica.jpg"
+          },
+          {
+            "label": "Costa Rica - San José 01.jpg — Wayne77, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Costa_Rica_-_San_Jos%C3%A9_01.jpg"
+          },
+          {
+            "label": "CostaRica (6165173417).jpg — Javier Losa, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:CostaRica_(6165173417).jpg"
+          },
+          {
+            "label": "CostaRica (6165175029).jpg — Javier Losa, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:CostaRica_(6165175029).jpg"
+          },
+          {
+            "label": "Edificio Central de Correos y Telégrafos de Correos de Costa Rica.jpg — Correos de Costa Rica Museo Filatélico, CC BY-SA 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Central_de_Correos_y_Tel%C3%A9grafos_de_Correos_de_Costa_Rica.jpg"
+          },
+          {
+            "label": "Edificio de Correos y Telegrafos. San Jose. Costa Rica.JPG — Rodtico21, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_de_Correos_y_Telegrafos._San_Jose._Costa_Rica.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-de-correos-costa-rica/geometry.js"
+      },
+      "manifest": "/models/buildings/edificio-de-correos-costa-rica.json",
+      "documentation": "docs/assets/top-cities-edificio-de-correos-costa-rica.md",
+      "notes": "Review fix 2026-10-12: curved inscription ribbon, rounded attic shoulders and stronger wreath/scroll crest replace the flat angular centre. Ochre walls, pale trims, arcade, paired columns, window rows and low domes retained. Near inscription follows the curved band; far retains its pale single-surface mass and omits lettering to avoid depth cycles. Heights and rear/side details estimated; provider way 264142839 retained. Independent re-review and lead app recaptures in both modes pending.",
+      "inspection": {
+        "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=back"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=edificio-de-correos-costa-rica&view=top"
+          }
+        ]
+      },
+      "city": "San José",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fox-theatre-atlanta",
+      "name": "Fox Theatre",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original texture-free Fox Theatre: mapped stepped palace volumes, striped buff masonry, turquoise patterned onion dome and smaller domes, deep arched Ponce portal, Peachtree twin minarets, crenellated storefronts, glowing two-sided FOX blade and marquee.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fox-theatre-atlanta/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fox-theatre-atlanta --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-11. Mapped OSM dossier, © OpenStreetMap contributors (ODbL 1.0). Reference photographs viewed only in ignored scratch: Fox Theatre, Atlanta (2024)-104A8449 by Frank Schulenburg, CC BY-SA 4.0; Side and elevated view of Fabulous Fox Threater by Daniel Mayer, CC BY-SA 3.0. No photographs, textures, scans or third-party meshes retained in exports.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fox_Theatre_(Atlanta)"
+          },
+          {
+            "label": "OSM theater outline",
+            "url": "https://www.openstreetmap.org/way/208355446"
+          },
+          {
+            "label": "Peachtree facade — Frank Schulenburg, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fox_Theatre,_Atlanta_(2024)-104A8449.jpg"
+          },
+          {
+            "label": "Elevated Ponce facade — Daniel Mayer, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Side_and_elevated_view_of_Fabulous_Fox_Threater.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fox-theatre-atlanta/geometry.js"
+      },
+      "notes": "Mapped plan and all 13 provider outlines/parts registered. Heights and decorative proportions are photographic estimates; simplified dome lattice, lettering crown, lantern carving, storefront mullions and rooftop equipment. Sign/marquee extend over the sidewalk by about 4 m, as in photos; no ground/plaza slab. No interiors, photo textures or third-party meshes. Original code/models for Codriver; OSM-derived geographic data retains ODbL contributor attribution. Review fix 2026-10-12: brick bands changed from khaki #95866e to muted red-brown #85604e, with corresponding night #49352d; separate near/far bands and buff stone retained. Occluded app entrance/base evidence is recaptured by the lead.",
+      "documentation": "docs/assets/top-cities-fox-theatre-atlanta.md",
+      "manifest": "/models/buildings/fox-theatre-atlanta.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fox-theatre-atlanta",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fox-theatre-atlanta&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fox-theatre-atlanta&view=facade"
+          },
+          {
+            "label": "Peachtree",
+            "url": "/asset-preview.html?asset=fox-theatre-atlanta&view=peachtree"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=fox-theatre-atlanta&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fox-theatre-atlanta&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fox-theatre-atlanta&view=detail"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "georgia-state-capitol",
+      "name": "Georgia State Capitol",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original procedural model of the 1889 Atlanta Capitol in its present gold-dome state: pale Indiana limestone wings, six-column west portico, windowed drum, lantern and Miss Freedom.",
+      "manifest": "/models/buildings/georgia-state-capitol.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/georgia-state-capitol/geometry.js",
+        "build": "pnpm build:top-cities-landmarks georgia-state-capitol --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-11; no external mesh or texture. OSM outline way 113041732 and dome part 536753432, © OpenStreetMap contributors, ODbL 1.0. Ignored reference photos only: DXR, Georgia State Capitol Atlanta West view 20160716 1, CC BY-SA 4.0; Ken Lund, Georgia State Capitol Atlanta Georgia, CC BY-SA 2.0; Connor.carey, Georgia-state-capitol-dome, CC BY-SA 3.0. Commons author/licence pages checked during authoring; dossier photos 2 and 6 excluded.",
+        "references": [
+          {
+            "label": "Georgia state visitor brochure, 2005 (Digital Library of Georgia)",
+            "url": "https://dlg.usg.edu/record/dlg_ggpd_s-ga-bs700-b-pm1-b2005-bc33-belec-p-btext"
+          },
+          {
+            "label": "Georgia state visitor brochure, 1987 — dimensions and six-column entrance",
+            "url": "https://dlg.usg.edu/record/dlg_ggpd_s-ga-bs700-b-pm1-b1987-bv5"
+          },
+          {
+            "label": "DXR west facade, 2016 — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Georgia_State_Capitol,_Atlanta,_West_view_20160716_1.jpg"
+          },
+          {
+            "label": "Ken Lund entrance — CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Georgia_State_Capitol,_Atlanta,_Georgia.jpg"
+          },
+          {
+            "label": "Connor.carey dome detail — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Georgia-state-capitol-dome.jpg"
+          },
+          {
+            "label": "OSM complete civic outline",
+            "url": "https://www.openstreetmap.org/way/113041732"
+          },
+          {
+            "label": "OSM dome part",
+            "url": "https://www.openstreetmap.org/way/536753432"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/georgia-state-capitol/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=georgia-state-capitol",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=street"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=dome"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=georgia-state-capitol&view=entrance"
+          }
+        ]
+      },
+      "notes": "Mapped footprint takes precedence over brochure maximum width/length. 72.34 m overall authoring height uses the official 237 ft 4 in figure, whose wording describes the rotunda rather than a surveyed summit datum. 22.86 m dome and six west columns are sourced. Drum/stage heights, bay sizes and roof pitches are estimated from photographs. State brochures disagree on Miss Freedom height (15 versus 22 ft); simplified original white robed silhouette uses the 15 ft interpretation. Fine Corinthian carving, exact bas-relief, flags, courtyard equipment and landscaping omitted. Day gold shell is shaded #b7a15d for visible volume, with bright #d8c27b ribs and lantern; continuous shared seams avoid overlays; night glass is stylized warm light. No measured night luminance or Tesla performance. Independent visual review and application terrain/lifecycle review remain. Review nit fixed 2026-10-12: muted yellow-gold broad panels and brighter ribs replace the flat lemon-yellow shell; unchanged silhouette and costs. Fresh app shading and independent re-review remain lead-owned.",
+      "documentation": "docs/assets/top-cities-georgia-state-capitol.md",
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "jpmorgan-chase-tower-houston",
+      "name": "JPMorgan Chase Tower",
+      "kind": "building",
+      "location": "Houston, Texas",
+      "status": "ready",
+      "description": "Original 305.4 m five-sided tower: mapped cut west corner, broad glazed west elevation, pale gray granite window grid, flat roof and recessed lobby glazing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/jpmorgan-chase-tower-houston/geometry.js",
+        "build": "pnpm build:top-cities-landmarks jpmorgan-chase-tower-houston",
+        "provenance": "Original procedural model authored 2026-10-11; no scan, third-party mesh, texture or photo is shipped. OSM way 44130644 from the supplied cached dossier defines the plan; © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photos retained under ignored tmp: Houston Morgan Chase Building Ike by Adam Baker (CC BY 2.0); JPMorgan Chase Tower (Houston) by Jim Evans (CC BY-SA 4.0); JP Morgan Chase Tower in Houston 2 - Dec 2013 (cropped) by Agsftw (CC BY-SA 3.0); JPMorganChaseTowerEntranceHoustonTX by WhisperToMe (public domain); Chasetowerreflection by Reagan Rothenberger (CC BY 3.0). The dossier also includes Jpmorganchasetower (CC0, creator not supplied); it is used only as visual comparison.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/JPMorgan_Chase_Tower_(Houston)"
+          },
+          {
+            "label": "Pei Cobb Freed & Partners: 75 storeys, pale gray granite, 45° cut corner, 85-foot column-free facade",
+            "url": "https://www.pcf-p.com/projects/jpmorgan-chase-tower-formerly-texas-commerce-tower/"
+          },
+          {
+            "label": "Mapped tower outline and height: OSM 44130644",
+            "url": "https://www.openstreetmap.org/way/44130644"
+          },
+          {
+            "label": "File:Houston Morgan Chase Building Ike.jpg — Adam Baker (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Houston_Morgan_Chase_Building_Ike.jpg"
+          },
+          {
+            "label": "File:JPMorgan Chase Tower (Houston).jpg — Jim Evans (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:JPMorgan_Chase_Tower_(Houston).jpg"
+          },
+          {
+            "label": "File:JP Morgan Chase Tower in Houston 2 - Dec 2013 (cropped).JPG — Agsftw (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:JP_Morgan_Chase_Tower_in_Houston_2_-_Dec_2013_(cropped).JPG"
+          },
+          {
+            "label": "File:Jpmorganchasetower.jpg —  (CC0)",
+            "url": "https://en.wikipedia.org/wiki/File:Jpmorganchasetower.jpg"
+          },
+          {
+            "label": "File:JPMorganChaseTowerEntranceHoustonTX.JPG — WhisperToMe (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:JPMorganChaseTowerEntranceHoustonTX.JPG"
+          },
+          {
+            "label": "File:Chasetowerreflection.jpg — Reagan Rothenberger (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Chasetowerreflection.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jpmorgan-chase-tower-houston/geometry.js"
+      },
+      "notes": "Published roof 305.4 m, top floor 296.8 m, 75 storeys. Mapped five main elevations with three small corner bevels. Estimated grid pitch, 12 m lobby, granite piers, glazing colour and occupancy lights. Near upper windows are contiguous flush tessellation; only lobby windows are recessed. Far groups pairs of rows and bays. No plaza, sculpture, roof plant or neighbouring Chase Center; no terrain or hardware verification.",
+      "documentation": "docs/assets/top-cities-jpmorgan-chase-tower-houston.md",
+      "manifest": "/models/buildings/jpmorgan-chase-tower-houston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=jpmorgan-chase-tower-houston&view=detail"
+          }
+        ]
+      },
+      "city": "Houston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "lviv-national-opera",
+      "name": "Lviv National Opera",
+      "kind": "building",
+      "location": "Lviv, Ukraine",
+      "status": "ready",
+      "description": "Original procedural model of the 1900 Neo-Renaissance opera: three arched loggias, paired Corinthian columns, sculptural attic, winged bronze acroterions and copper cupola.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/lviv-national-opera/geometry.js",
+        "build": "pnpm build:top-cities-landmarks lviv-national-opera --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-11; source MIT, original models CC BY 4.0. Placement/envelope © OpenStreetMap contributors, ODbL 1.0. Photo references kept only in ignored scratch; no mesh, scan or texture derived from them. File:Львів Театр опери та балету Львів 02.jpg; Aniskov; CC BY-SA 4.0. File:Львівський національний академічний театр опери та балету імені Соломії Крушельницької 13.jpg; Konstantin Brizhnichenko; CC BY-SA 4.0. File:Lviv Opera House. Project by Gorgolewski 1.jpg; Zygmunt Gorgolewski (1845-1903); Public domain. File:Lwów Opera 01.jpg; Zala; CC BY-SA 4.0. File:Театр опери і балету з Ратуші.jpg; D.Rovchak; CC BY-SA 3.0. File:Театр опери та балету (Вигляд збоку).jpg; Ysmolsky; CC BY-SA 3.0. ",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Lviv_Theatre_of_Opera_and_Ballet"
+          },
+          {
+            "label": "Center for Urban History: architecture, loggia, sculptures and six-metre bronze groups",
+            "url": "https://lia.lvivcenter.org/en/objects/opera-house/"
+          },
+          {
+            "label": "Visit Lviv: approximately 45 × 95 m base",
+            "url": "https://visitlviv.net/en/about-lviv/the-facade-of-the-lviv-opera/"
+          },
+          {
+            "label": "OSM complete opera way 459807007",
+            "url": "https://www.openstreetmap.org/way/459807007"
+          },
+          {
+            "label": "File:Львів Театр опери та балету Львів 02.jpg — Aniskov, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D0%B8_%D1%82%D0%B0_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_02.jpg"
+          },
+          {
+            "label": "File:Львівський національний академічний театр опери та балету імені Соломії Крушельницької 13.jpg — Konstantin Brizhnichenko, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D0%B8_%D1%82%D0%B0_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC%D1%96%D1%97_%D0%9A%D1%80%D1%83%D1%88%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D1%97_13.jpg"
+          },
+          {
+            "label": "File:Lviv Opera House. Project by Gorgolewski 1.jpg — Zygmunt Gorgolewski (1845-1903), Public domain (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lviv_Opera_House._Project_by_Gorgolewski_1.jpg"
+          },
+          {
+            "label": "File:Lwów Opera 01.jpg — Zala, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lw%C3%B3w_Opera_01.jpg"
+          },
+          {
+            "label": "File:Театр опери і балету з Ратуші.jpg — D.Rovchak, CC BY-SA 3.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D0%B8_%D1%96_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D0%B7_%D0%A0%D0%B0%D1%82%D1%83%D1%88%D1%96.jpg"
+          },
+          {
+            "label": "File:Театр опери та балету (Вигляд збоку).jpg — Ysmolsky, CC BY-SA 3.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D0%B8_%D1%82%D0%B0_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_(%D0%92%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4_%D0%B7%D0%B1%D0%BE%D0%BA%D1%83).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lviv-national-opera/geometry.js"
+      },
+      "notes": "Review fix 2026-10-12: separate seated allegorical pairs flank standing winged Glory and its palm; broad Corinthian foliage/arch mouldings and nine clustered upright/reclining pediment figures survive both LODs. Abstract human silhouettes and photo-estimated carving remain. Mapped envelope, sourced 6 m group height, rigid grade and provider way 459807007 retained. Independent re-review and lead app recaptures in both modes pending.",
+      "documentation": "docs/assets/top-cities-lviv-national-opera.md",
+      "manifest": "/models/buildings/lviv-national-opera.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=lviv-national-opera",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=lviv-national-opera&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=lviv-national-opera&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=lviv-national-opera&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=lviv-national-opera&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=lviv-national-opera&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=lviv-national-opera&view=detail"
+          }
+        ]
+      },
+      "city": "Lviv",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "mercedes-benz-stadium",
+      "name": "Mercedes-Benz Stadium",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original procedural 2017 Atlanta stadium with eight skewed ETFE petals and an open roof aperture, folded silver falcon-wing facade, recessed panel glazing and interior bowl.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/mercedes-benz-stadium/geometry.js",
+        "build": "pnpm build:top-cities-landmarks mercedes-benz-stadium",
+        "provenance": "Original procedural geometry authored 2026-10-12 by Codriver; original models CC BY 4.0, source MIT. OSM way 536744534 geographic data © OpenStreetMap contributors, ODbL 1.0. Reference-only ignored photographs: Georgia Dome 2017.JPG, WheresMyFC, CC BY-SA 4.0 (stadium at left only); Mercedes-Benz Stadium Pedestrian Bridge.jpg, Droidman1231, CC BY-SA 4.0 (context only); Mercedes-Benz Stadium, Atlanta, Georgia, United States.jpg, Gatorfan252525, CC BY-SA 4.0; Mercedes-Benz Stadium, December 2024.jpg, BullDawg2021, CC BY 4.0; Mercedes-Benz Stadium, July 2018.jpg, Thomson200, CC0; Mercedes-Benz Stadium in Atlanta three days prior to the 2019 Super Bowl.jpg, Marc Merlin, CC BY-SA 4.0. Two additional reference-only images: Mercedes-Benz-3a, HOK project page, copyright HOK/photographer; Mercedes-Benz-Stadium-Slide-6, Uni-Systems Engineering portfolio, copyright respective rights holder; author unspecified, no redistribution licence, images remain ignored and are not incorporated into the model.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_Stadium"
+          },
+          {
+            "label": "HOK — architectural design and eight 220-foot petals",
+            "url": "https://www.hok.com/projects/view/mercedes-benz-stadium/"
+          },
+          {
+            "label": "Uni-Systems — eight triangular ETFE petals on straight tracks",
+            "url": "https://www.uni-engineer.com/portfolio/mercedes-benz-stadium-atlanta-georgia/"
+          },
+          {
+            "label": "OSM stadium envelope and 93 m height",
+            "url": "https://www.openstreetmap.org/way/536744534"
+          },
+          {
+            "label": "File:Georgia Dome 2017.JPG — WheresMyFC, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Georgia_Dome_2017.JPG"
+          },
+          {
+            "label": "File:Mercedes-Benz Stadium Pedestrian Bridge.jpg — Droidman1231, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Stadium_Pedestrian_Bridge.jpg"
+          },
+          {
+            "label": "File:Mercedes-Benz Stadium, Atlanta, Georgia, United States.jpg — Gatorfan252525, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Stadium,_Atlanta,_Georgia,_United_States.jpg"
+          },
+          {
+            "label": "File:Mercedes-Benz Stadium, December 2024.jpg — BullDawg2021, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Stadium,_December_2024.jpg"
+          },
+          {
+            "label": "File:Mercedes-Benz Stadium, July 2018.jpg — Thomson200, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Stadium,_July_2018.jpg"
+          },
+          {
+            "label": "File:Mercedes-Benz Stadium in Atlanta three days prior to the 2019 Super Bowl.jpg — Marc Merlin, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Stadium_in_Atlanta_three_days_prior_to_the_2019_Super_Bowl.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mercedes-benz-stadium/geometry.js"
+      },
+      "notes": "Original procedural stadium: eight triangular ETFE roof blades with strong diagonal pinwheel seams in an estimated static mid-travel state; unequal facade wing bearings, heights and projections; recessed nine-metre glazed concourse grounded at local y=0. Roof pose, folds, concourse, bowl and halo are estimates, not fabrication drawings. Eight halo ties meet their named roof soffit and display cap in both LODs. b1ra repair trims the floor to the concourse walls and covers the near-lattice halo plus coarse far-TIN support nodes, keeping the roof/facade unchanged. Maximum actual DEM footing residual improves from 0.547 m near and 4.405 m coarse to numerical zero. Near/far export sheets under tmp/top-cities/shots/mercedes-benz-stadium/terrain-fix. Pad approach-road and feather appearance still need world recapture. No textures, moving machinery, logos, Georgia Dome or pedestrian bridge. App recapture and independent re-review are the lead's separate gate.",
+      "documentation": "docs/assets/top-cities-mercedes-benz-stadium.md",
+      "manifest": "/models/buildings/mercedes-benz-stadium.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=mercedes-benz-stadium",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=mercedes-benz-stadium&view=top"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "sunshine-skyway-bridge",
+      "name": "Sunshine Skyway Bridge",
+      "kind": "bridge",
+      "location": "St. Petersburg – Terra Ceia, Florida",
+      "status": "ready",
+      "description": "Original 1987 Sunshine Skyway crossing: two central single-column pylons, yellow single-plane fans, segmental box girder and twin high approaches.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/sunshine-skyway-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks sunshine-skyway-bridge --no-check",
+        "provenance": "Original procedural model authored 2026-10-11. Geographic data © OpenStreetMap contributors, ODbL 1.0. Reference-only photos: Sunshine Skyway Bridge (2023), Joseph Gage, CC BY-SA 2.0; Sunshine Skyway from Tampa Bay, Kelly C. Cook, public domain; Skyway Bridge 3, Apelbaum, CC BY-SA 3.0 (licence from supplied dossier). Two Esri World Imagery aerial extracts inspected in ignored scratch for tower locations and deck widths; imagery is not redistributed.",
+        "references": [
+          {
+            "label": "FIGG designer: current 1987 bridge",
+            "url": "https://www.figgbridge.com/i-275-bob-graham-sunshine-skyway-br"
+          },
+          {
+            "label": "PCI Journal 1986: section drawings, 366/165 m spans and central stays",
+            "url": "https://www.skywaybridge.com/files/861100.pdf"
+          },
+          {
+            "label": "FHWA: 84 cables in one plane",
+            "url": "https://www.fhwa.dot.gov/publications/research/infrastructure/bridge/05083/chap3.cfm"
+          },
+          {
+            "label": "OSM current crossing",
+            "url": "https://www.openstreetmap.org/way/1087109061"
+          },
+          {
+            "label": "Joseph Gage, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Sunshine_Skyway_Bridge_(2023).jpg"
+          },
+          {
+            "label": "Kelly C. Cook, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Sunshine_Skyway_from_Tampa_Bay.jpeg"
+          },
+          {
+            "label": "Esri World Imagery, reference only",
+            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/sunshine-skyway-bridge/geometry.js"
+      },
+      "notes": "Published 366 m main span, 165 m side spans, 29 m width, 84 stay legs; task nominal 131 m crown and 59 m clearance. Estimated pier/pylon sections and flat-map ramp landings. High 3.325 km section only, no old truss bridge or fishing piers. Near 45084 triangles / 19 draws / 3123 KiB; far 22332 / 9 / 711 KiB. No photos or textures shipped. Exported near/far light/dark contact sheet inspected beside current-bridge reference photos; geometry metrics ok and depth cycles zero.",
+      "documentation": "docs/assets/top-cities-sunshine-skyway-bridge.md",
+      "manifest": "/models/bridges/sunshine-skyway-bridge.json",
+      "city": "St. Petersburg",
+      "inspection": {
+        "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=underside"
+          },
+          {
+            "label": "Approach",
+            "url": "/asset-preview.html?asset=sunshine-skyway-bridge&view=approach"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "willis-tower",
+      "name": "Willis Tower",
+      "kind": "building",
+      "location": "Chicago, Illinois",
+      "status": "ready",
+      "description": "Original procedural Willis Tower: nine bundled tubes with asymmetric 200/260/355/442 m setbacks, paired tapered white antennas, black mullions and bronze-tinted glazing, plus the mapped Catalog podium.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/willis-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks willis-tower --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-11; no external mesh or texture. Plan derived from OpenStreetMap © contributors, ODbL 1.0. Reference photos kept only in ignored tmp: WillisTowerPanorama01 — MisterStegs, CC BY-SA 3.0; Sears Willis Tower — Steveboerger, CC BY-SA 3.0 (construction-era context); Chicago skyline labelled — Urban/Buphoff/Fir0002, CC BY-SA 3.0; View down from the Sears-Willis Tower Skydeck — endymion120, CC BY 2.0; Sears Tower, Wacker Drive and Jackson Boulevard, Chicago, IL - 54189600901 — w_lemay, CC BY-SA 2.0; Base of the Willis Tower (2021) — Bobertrobert0709, CC BY-SA 4.0. Current morphology judged primarily against the latter two exterior photographs.",
+        "references": [
+          {
+            "label": "SOM: nine 75 ft square tubes, black aluminium and bronze glazing",
+            "url": "https://www.som.com/projects/willis-tower-formerly-sears-tower/"
+          },
+          {
+            "label": "Operator: history, antenna lighting, current Catalog podium",
+            "url": "https://www.willistower.com/about"
+          },
+          {
+            "label": "Skydeck teacher guide: tube termination sequence",
+            "url": "https://theskydeck.com/wp-content/uploads/2023/10/The-Hows-Whats-and-Wows-of-Willis-Tower-A-Guide-For-Teachers.pdf.pdf"
+          },
+          {
+            "label": "Mapped building and linked parts",
+            "url": "https://www.openstreetmap.org/way/380868216"
+          },
+          {
+            "label": "Exterior reference — w_lemay, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Sears_Tower,_Wacker_Drive_and_Jackson_Boulevard,_Chicago,_IL_-_54189600901.jpg"
+          },
+          {
+            "label": "Base reference — Bobertrobert0709, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Base_of_the_Willis_Tower_(2021).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/willis-tower/geometry.js"
+      },
+      "notes": "Mapped cladding envelope ~70 x 71 m differs from nominal 68.58 m structural tube bundle; no uniform horizontal rescale. Roof 442 m and tip 527 m, mapped 200/260/355 m intermediate tiers; east tip 520 m estimated. Floor pitch, bay spacing, mechanical belt heights, office lighting and antenna taper are estimates. Catalog podium, Wacker atrium and canopies are simplified mapped volumes; rooftop landscape, curved atrium glazing, Ledge boxes, interiors and signage omitted. Standalone export QA only; application placement and independent review remain separate gates.",
+      "documentation": "docs/assets/top-cities-willis-tower.md",
+      "manifest": "/models/buildings/willis-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=willis-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=willis-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=willis-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=willis-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=willis-tower&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=willis-tower&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=willis-tower&view=detail"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=willis-tower&view=entrance"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=willis-tower&view=plan"
+          }
+        ]
+      },
+      "city": "Chicago",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

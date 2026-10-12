@@ -1,0 +1,127 @@
+{
+  "id": "mercedes-benz-stadium",
+  "name": "Mercedes-Benz Stadium",
+  "kind": "building",
+  "origin": [
+    -84.4008481722,
+    33.755414838
+  ],
+  "height": 93,
+  "padM": 170,
+  "frontageBearing": 92,
+  "terrainPad": {
+    "datum": "median",
+    "featherM": 18,
+    "rings": [
+      [
+        [
+          -84.4038412722538,
+          33.75402970155682
+        ],
+        [
+          -84.40097378367959,
+          33.75397245460845
+        ],
+        [
+          -84.40028281632041,
+          33.75397245460845
+        ],
+        [
+          -84.39834378633995,
+          33.75402970155682
+        ],
+        [
+          -84.39834378633995,
+          33.75631685653877
+        ],
+        [
+          -84.39971707735558,
+          33.757458614560655
+        ],
+        [
+          -84.40246798123817,
+          33.757458614560655
+        ],
+        [
+          -84.4038412722538,
+          33.75631685653877
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -84.4008481722,
+        33.755414838
+      ],
+      [
+        -84.40185,
+        33.7554
+      ],
+      [
+        -84.3998,
+        33.7554
+      ],
+      [
+        -84.40085,
+        33.7561
+      ],
+      [
+        -84.40085,
+        33.7547
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid stadium base at local flat grade y=0; world placement uses the median of five interior DEM references, a surrounding near-lattice-node halo and the coarser far-TIN support nodes used during terrain arrival. No DEM, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2017 stadium with eight triangular ETFE blades and strong diagonal pinwheel seams in an estimated static mid-travel aperture state. OSM height 93 m and exact mapped envelope; unequal facade wing heights/projections, recessed nine-metre glazed concourse, petal pose, interior bowl, halo and panel spacing estimated from reference photographs. Georgia Dome and pedestrian bridge excluded. Floor clipped to the concourse walls; median terrain pad covers surrounding near and coarse TIN nodes. Post-fix Cityscape and Full 3D world app recapture and independent review pending.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mercedes-benz-stadium-near.glb",
+      "bytes": 1733436,
+      "triangles": 22126,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -140.62559509277344,
+          0,
+          -125.4278335571289
+        ],
+        "max": [
+          135.01034545898438,
+          93,
+          120.61305236816406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mercedes-benz-stadium-far.glb",
+      "bytes": 432348,
+      "triangles": 5446,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -140.62559509277344,
+          0,
+          -125.4278335571289
+        ],
+        "max": [
+          135.01034545898438,
+          93,
+          120.61305236816406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mercedes-benz-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

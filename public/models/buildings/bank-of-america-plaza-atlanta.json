@@ -1,0 +1,65 @@
+{
+  "id": "bank-of-america-plaza-atlanta",
+  "name": "Bank of America Plaza (Atlanta)",
+  "kind": "building",
+  "origin": [
+    -84.386139175,
+    33.770864835
+  ],
+  "height": 312,
+  "padM": 39,
+  "frontageBearing": 135.89789182665317,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid foundation grade y=0; no sea-level or DEM height baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "312 m architectural height, 55 floors and red-brown granite/gold crown are sourced. Photo-estimated crown springing at 270 m supersedes the prior literal 284 m roof interpretation to match the visible tapered summit. Mapped serrated plan and southeast facade bearing 135.90 degrees are baked into geometry. Shoulder heights, window spacing and lattice subdivision are photo estimates. Cityscape and Full 3D world are not tested; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bank-of-america-plaza-atlanta-near.glb",
+      "bytes": 1289844,
+      "triangles": 24213,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -26.86570930480957,
+          0,
+          -25.55517578125
+        ],
+        "max": [
+          26.204071044921875,
+          312,
+          26.431264877319336
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bank-of-america-plaza-atlanta-far.glb",
+      "bytes": 393284,
+      "triangles": 7407,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -26.86570930480957,
+          0,
+          -25.55517578125
+        ],
+        "max": [
+          26.204071044921875,
+          312,
+          26.431264877319336
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-america-plaza-atlanta/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

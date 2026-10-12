@@ -1,0 +1,66 @@
+{
+  "id": "lviv-national-opera",
+  "name": "Lviv National Opera",
+  "kind": "building",
+  "origin": [
+    24.02623964019201,
+    49.84404123377512
+  ],
+  "height": 43,
+  "padM": 50,
+  "frontageBearing": 159.62842875984188,
+  "rotation": 20.371571240158126,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local entrance grade y=0; rigid metric foundation, no terrain height baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped footprint approximately 43 × 85 m; published 45 × 95 m base is a separate approximate envelope, not stretched to fit. Bronze front acroterions follow the sourced 6 m height. Other vertical levels, dome and ornament sizes are photo estimates. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/lviv-national-opera-near.glb",
+      "bytes": 1698004,
+      "triangles": 37840,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.185943603515625,
+          -2.587430696944764e-15,
+          -45.92848205566406
+        ],
+        "max": [
+          31.13970375061035,
+          43,
+          44.62042999267578
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/lviv-national-opera-far.glb",
+      "bytes": 455396,
+      "triangles": 10368,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.185943603515625,
+          -2.587430696944764e-15,
+          -45.92848205566406
+        ],
+        "max": [
+          31.13970375061035,
+          43,
+          44.62042999267578
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lviv-national-opera/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
