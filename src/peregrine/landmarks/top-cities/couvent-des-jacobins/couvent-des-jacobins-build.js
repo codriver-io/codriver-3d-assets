@@ -39,8 +39,8 @@ function sideWall(k,f,sign) {
     const v=sign===1?12.42:-11.42;
     k.box('brick',u,4.4,v,1.17,8.8,1.56);
     k.box('brick',u,17.85,v-sign*.22,1.03,18.1,1.12);
-    k.box('trim',u,9.075,v-sign*.03,1.22,.25,1.42);
-    k.box('trim',u,26.85,v-sign*.15,1.15,.24,1.10);
+    k.box('brick',u,9.075,v-sign*.03,1.22,.25,1.42);
+    k.box('brick',u,26.85,v-sign*.15,1.15,.24,1.10);
     k.cone('roof',u,v-sign*.2,27,29.5,.72,4);
     if(k.near)for(let y=1.15;y<26;y+=.46)k.panel('trim',rect(1.08,.024),f,sign*u,y,.82);
   }
@@ -194,7 +194,7 @@ function gallery(k,u0,u1,v0,v1,axis){
     for(const shift of [-.19,.19]){
       const xx=axis==='u'?x:x+shift,zz=axis==='u'?z+shift:z;
       k.cyl('stone',xx,zz,.66,3.6,k.near?.10:.105,k.near?8:4);
-      if(k.near){k.box('stone',xx,.77,zz,.31,.22,.31);k.box('stone',xx,3.55,zz,.33,.28,.34);}
+      if(k.near){k.box('stone',xx,.77,zz,.31,.22,.31);k.box('stone',xx,3.47,zz,.33,.22,.34);}
     }
     const f=axis==='u'?{x:0,z:(v0+v1)/2+.43,angle:0}:{x:(u0+u1)/2+.43,z:0,angle:Math.PI/2};
     const a=axis==='u'?x:-z;

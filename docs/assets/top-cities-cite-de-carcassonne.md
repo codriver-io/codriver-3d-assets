@@ -122,3 +122,18 @@ Final world edge reports show seven offset meshes and a 208.73 Mercator-unit gro
 - `building-layer.test.js`: plain-model compatibility, load-before-terrain / terrain-before-load, near/far changes, exact repeated-toggle restoration and no per-frame traversal.
 
 All **454** requested focused tests pass, including the eleven Carcassonne tests, shared landmark layer tests, top-cities conformance, Alcatraz and terrain-footprint tests. `node scripts/asset-catalog.mjs` passes (212 entries / 412 variants). No other landmark was edited; no deployment or git write was performed.
+
+## Landmark QA correction — 2026-10-11
+
+This section supersedes older model cost and untested-mode claims above. Nine quarters now contain varied short house roofs with different eaves, ridge directions and three muted terracotta tones. Stone/floodlight materials are grey-buff. Replacement rings include owned quarter envelopes, while stable per-row terrace controls retain the previous world site levels. Far welds redundant vertices and retains every short roof and colour group.
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 43,613 | 9 | 2,271,784 |
+| far | 11,094 | 6 | 300,236 |
+
+**Cityscape: verified. Full 3D world: verified.** These claims cover loaded near/far models and the inspected far, near and street frames; they do not certify driving routes, terrain arrival/eviction, all exaggeration settings, dark mode or physical hardware.
+
+Remaining approximations: House quarters remain procedural approximations, not a cadastral house-by-house reconstruction. Provider houses outside the nine owned quarters remain visible and white. Individual arrow slits stay near-only; major roofs, crenellated silhouette and colour groups survive far.
+
+Reference input: supplied top-cities dossier photos and provenance, original contact sheets, reviewer findings and app shots. Ariane and Jacobins automatic lead-photo tiles were replaced locally with the correct dossier photographs; these reference images are not shipped. Caen gate identification also checked against the Musée de Normandie Porte des Champs page (https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs).

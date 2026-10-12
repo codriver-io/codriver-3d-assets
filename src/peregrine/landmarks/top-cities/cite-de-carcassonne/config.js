@@ -5,11 +5,11 @@ export const SPEC = {
   terrainPad:TERRAIN_PAD,
 };
 export const PALETTES = {
-  light:{stone:'#b29a64',course:'#766347',trim:'#b6a073',slate:'#5c6571',tile:'#ab623e',wood:'#634b32',glass:'#252c30',glow:'#ac8e54'},
-  dark:{stone:'#473e2f',course:'#493f32',trim:'#746349',slate:'#39434e',tile:'#623b29',wood:'#3b3025',glass:'#161d23',glow:'#9d7436'},
+  light:{stone:'#aca798',course:'#76756b',trim:'#c1b9a7',slate:'#5c6571',tile:'#976b54',tileDark:'#79584b',tilePale:'#aa8269',wood:'#634b32',glass:'#252c30',glow:'#a5a08f'},
+  dark:{stone:'#473e2f',course:'#493f32',trim:'#746349',slate:'#39434e',tile:'#623b29',tileDark:'#47352e',tilePale:'#6a5040',wood:'#3b3025',glass:'#161d23',glow:'#9d7436'},
 };
 export const MANIFEST = {
  elevationDatum:'Flat Cityscape grade y=0; world mode uses compact rigid-part relative terrace offsets around the inner plateau datum, with -2.8 m foundation skirts. No absolute elevation or terrain mesh baked in.',
  attribution:'Original procedural mesh by Codriver. Geographic data © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
- note:'Restored double enceinte, Château Comtal and Saint-Nazaire; mapped outlines with estimated curtain/eave heights. Narbonnaise towers 30 m per Centre des monuments nationaux. Nine low terracotta roof quarters approximate the inner city; world terrain placement uses relative per-structure terrace offsets.',
+ note:'Restored double enceinte, Château Comtal and Saint-Nazaire; mapped outlines with estimated curtain/eave heights. Narbonnaise towers 30 m per Centre des monuments nationaux. Nine owned roof quarters contain varied short house roofs in three muted terracotta tones; world terrain placement uses relative per-structure terrace offsets.',
 };

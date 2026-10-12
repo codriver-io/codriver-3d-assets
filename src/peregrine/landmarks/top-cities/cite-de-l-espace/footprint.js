@@ -242,3 +242,7 @@ FOOTPRINTS.push(
   [[-2.02,5.7],[1.58,5.7],[1.58,8.2],[-2.02,8.2]].map(lngLat),
   [[-4.1,5.75],[4.35,5.75],[4.35,10.63],[-4.1,10.63]].map(lngLat),
 );
+
+// Provider simplification merges the replica's lower exhibit into a broad block.
+// Own the exhibit stand and booster envelope, stopping before the museum wings.
+FOOTPRINTS.push([[-9,-12],[9,-12],[9,13],[-9,13]].map(lngLat));

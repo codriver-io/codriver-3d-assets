@@ -68,3 +68,28 @@ The review file contains no Prepare command. Its auto-framed layout was regenera
 Revision costs: near 40,955 → 42,735 triangles / 7 draws / 1,740 → 1,801 KiB; far 10,803 → 11,527 / 7 / 456 → 482 KiB. Both stay below the hard 60k/14/2.5 MB and 12k/8/500,000-byte caps. `qa-metrics-revision.json` reports no flagged issue, 0% back-face hits, grade 0, top 45 m, no bridgeLift and matching silhouette; its five small coincident candidates total 1.6 m² at the belfry/nave junction, below its artifact threshold. Landmark tests additionally raycast both corner spire tips and the taller center, and measure the crown projection relative to the top tier. Placement integration remains not tested in both modes.
 
 Final revision acceptance: the focused `node --test .../top-cities.test.js .../couvent-des-jacobins.test.js` command passes 256/256, `node scripts/asset-catalog.mjs` passes, and numeric metrics report no budget or artifact flags. No shared files were modified; full application integration remains separate.
+
+## Landmark QA correction — 2026-10-11
+
+This section supersedes older model cost and untested-mode claims above. Replacement ownership splits the cloister into four perimeter wings and excludes the courtyard. Buttress weathering uses body masonry; gallery capitals meet their spandrels rather than overlapping. The approved extra placement-only correction includes the western cloister-side wing of way 141709408 (Bâtiment des Jacobins C), u=-61..-39.2, v=-68..-12 m. Its northern campus return remains provider-owned.
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 42,735 | 7 | 1,844,472 |
+| far | 11,527 | 7 | 493,892 |
+
+**Cityscape: verified. Full 3D world: verified.** The final extra far/near/street frames are inspected; the formerly obscured colonnade is exposed to its base, with the court open. This does not certify dark mode, all terrain lifecycle cases or physical hardware.
+
+Remaining approximations: About 2 m² of small near-only trim contacts remain (brick on trim 1.8 m², trim on recess 0.2 m², trim on glass 0.1 m²); these were retained rather than distort the attached facade trim. The primary perimeter-overlap finding is resolved. An unowned roof fragment of the northern campus return is retained beside the western annex.
+
+Reference input: supplied top-cities dossier photos and provenance, original contact sheets, reviewer findings and app shots. Ariane and Jacobins automatic lead-photo tiles were replaced locally with the correct dossier photographs; these reference images are not shipped. Caen gate identification also checked against the Musée de Normandie Porte des Champs page (https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs).
+
+Its cloister-side western strip corresponds to OSM way 141709408. Existing ground, neighbouring buildings and the courtyard are retained. The gallery/perimeter exclusion test and all three relevant city conformance checks pass.
+
+## Round 2 — complete annex roof replacement (2026-10-11)
+
+Supersedes the previous retained-roof-fragment limitation. The visible wedge was traced through the z14 provider compound roof, tile 14/8257/5982, polygon 154. Its crossing triangles terminate at three generalized eastern attachment vertices outside the precise OSM hall rings: (u,v) = [9.76,-70.56], [19.49,-71.21], [10.98,-58.99]. A bounded five-point annex roof completion ring includes those vertices; the existing all-vertices mask can now remove the entire crossing triangles. The original western strip is unchanged, and the neighbouring northern campus return (u≈-54..-27, v≈-101..-109) and courtyard remain unowned. No shared renderer code or authored geometry changed.
+
+Re-exported GLBs and regenerated material depth entries are byte-identical: near 42,735 triangles / 7 draws / 1,844,472 bytes; far 11,527 / 7 / 493,892 bytes. All four own tests and three city conformance cases pass. The accepted near-only 2 m² trim-contact flag remains; far has no flag. These small attached contacts were left as judged by the independent re-review.
+
+**Cityscape: verified. The same street angle now shows the full annex/windowed wall, without a white triangular roof crossing it; the colonnade remains exposed to grade and the court open. `jacobins-tests.log`, `metrics.json` and `depth-check-final.log`. The first Round 2 capture under `{city,world}/couvent-des-jacobins-*` was a failed mask attempt and is superseded by these final files. Two look iterations were used. Dark mode, full terrain lifecycle and physical hardware remain not tested; coarse provider geometry outside the owned annex remains live.

@@ -21,7 +21,7 @@
   },
   "elevationDatum": "Local grade y=0 at exhibit plinth; rigid flat foundation, no terrain or absolute altitude baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "53 m Ariane 5 replica and 49 m mapped umbilical mast only. Core 5.4 m diameter; booster 3.05 m diameter and ~31 m height follow ESA, not the understated OSM booster height=27. Exhibit cladding, fairing profile, service arms, lettering, plinth and mast buttress are photo estimates. Mast shifted toward rocket from OSM center 10.5 m to 6.95 m, enlarged to 3.6 × 2.5 m and service ties widened to 0.26 m after independent photo review; original OSM replacement rings retained plus photo-estimated mast coverage. Park and adjoining museum excluded. Rotation baked once from mapped booster axes.",
+  "note": "53 m Ariane 5 replica and 49 m mapped umbilical mast only. Core 5.4 m diameter; booster 3.05 m diameter and ~31 m height follow ESA, not the understated OSM booster height=27. Exhibit cladding, fairing profile, service arms, lettering, plinth and mast buttress are photo estimates. Mast shifted toward rocket from OSM center 10.5 m to 6.95 m, enlarged to 3.6 × 2.5 m and service ties widened to 0.26 m after independent photo review; original OSM replacement rings retained plus photo-estimated mast and complete exhibit-stand coverage. Far drops tiny flag grids while retaining blue exhibit/agency marks to avoid cyclic decal depth layering. Park and adjoining museum excluded. Rotation baked once from mapped booster axes.",
   "assets": {
     "near": {
       "url": "/models/buildings/cite-de-l-espace-near.glb",
@@ -43,9 +43,9 @@
     },
     "far": {
       "url": "/models/buildings/cite-de-l-espace-far.glb",
-      "bytes": 179120,
-      "triangles": 5640,
-      "drawCalls": 8,
+      "bytes": 114940,
+      "triangles": 4488,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -9.25713062286377,

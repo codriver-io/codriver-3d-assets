@@ -32,7 +32,9 @@ export function create({detail='near'}={}){
   }
  }
  // A separate coloured ground surface is not a provider-building replacement footprint.
- base.cap(offsetRing(simplify(OUTER,.2),-2.7),BAILEY_LEVEL-.08,'bailey');
+ // Inward mitres self-intersect at turret recesses; use the actual bailey boundary.
+ const grass=simplify(OUTER,.2).map(([x,z])=>[x*.999,z*.999]);
+ base.cap(grass,BAILEY_LEVEL-.08,'bailey');
  const path=[[65,117],[0,50],[50,-35],[75,-64]];
  const tangents=path.slice(0,-1).map((a,i)=>{const c=path[i+1],L=Math.hypot(c[0]-a[0],c[1]-a[1]);return [(c[0]-a[0])/L,(c[1]-a[1])/L];});
  const margins=path.map((p,i)=>{const a=tangents[Math.max(0,i-1)],c=tangents[Math.min(i,tangents.length-1)],x=a[1]+c[1],z=-a[0]-c[0],den=Math.max(.5,x*c[1]-z*c[0]);return [x*2.5/den,z*2.5/den];});
@@ -97,6 +99,9 @@ export function create({detail='near'}={}){
   for(let i=0;i<steps;i++){const a=Math.PI-i*Math.PI/steps,z=Math.PI-(i+1)*Math.PI/steps,ua=w*Math.cos(a),ub=w*Math.cos(z),ya=spring+w*Math.sin(a),yb=spring+w*Math.sin(z);for(const d of [d0,d1])k.quad('stone',P(ua,d,ya),P(ub,d,yb),P(ub,d,spring+w+.01),P(ua,d,spring+w+.01),[n[0]*Math.sign(d),0,n[1]*Math.sign(d)]);k.quad('stone',P(ua,d0,ya),P(ua,d1,ya),P(ub,d1,yb),P(ub,d0,yb),[0,-1,0]);}
   for(const e of edges(r)){masonry(e,0,H);if(near&&e.L>2){k.panel('glass',e,e.L/2,H-3,.32,1.1,.12);}}
   if(p.id===226316851){
+   // Porte des Champs: one roof over the paired round towers and logis,
+   // unlike the unroofed Saint-Pierre assembly. Photo-estimated 4 m rise.
+   roof(r,H,4);
    // Machicolation corbels and small surviving battlements read on the east approach.
    for(const e of edges(r))if(e.L>2){const count=Math.ceil(e.L/1.8);for(let i=0;i<count;i++){const u=(i+.5)*e.L/count;const x=e.a[0]+u*e.t[0],z=e.a[1]+u*e.t[1];b.box('stone',[x,H+.55,z],[.85,1.1,.6],-Math.atan2(e.t[1],e.t[0]));if(near)b.box('trim',[x+e.n[0]*.15,H-1.2,z+e.n[1]*.15],[.38,.7,.65],-Math.atan2(e.t[1],e.t[0]));}}
   }
@@ -117,7 +122,7 @@ export function create({detail='near'}={}){
   }
   if(p.role==='modern'){
    for(const block of museumBlocks(p)){const rr=simplify(block.ring,.1);if(rr.length<3)continue;k.prism(rr,0,block.h,'modern',()=>true,'slate');
-    for(const e of edges(rr))if(e.L>6){k.panel('glass',e,e.L/2,block.h-1.9,e.L-1.5,1.1,.12);if(near)for(let u=2;u<e.L-1;u+=3.2)k.panel('modern',e,u,block.h-1.95,.16,1.25,.2);}
+    for(const e of edges(rr))if(e.L>6){k.panel('glass',e,e.L/2,block.h-1.9,e.L-1.5,1.1,.12);if(near)for(let u=2;u<e.L-1;u+=3.2)k.panel('modernFrame',e,u,block.h-1.95,.16,1.25,.35);}
    }continue;
   }
   const isModern=p.role==='modern',rise=p.roof==='gabled'?3.4:0,eave=p.h-rise;

@@ -57,3 +57,18 @@ Two look/fix passes were used: the first revised standard sheet showed the corre
 | far | 8,056 | 8 | 375,172 | 366 |
 
 Final focused tests: five pass, zero fail, under 3 seconds. They pin brick centre piers, dark backed openings and at least 0.5 m of visible recess, slate material on the spire, mapped vent attachment, dimensions, roof ridge, grounded/walk-through gate and far silhouette/cost. The shared asset catalog passes. QA reports no budget/artifact issues, zero removable attributes, numerical grade zero and 0% back-face hits; remaining 10 tiny coplanar candidates total 0.8 m² at a cornice contact, below the broad-overlap threshold. See `tmp/top-cities/basilique-saint-sernin/review-fix-metrics.json` for exact values. No shared file was changed. Sculpture, rose artwork and individual tiles remain simplified; Cityscape and Full 3D world are not tested yet, integration is checked separately.
+
+## Landmark QA correction — 2026-10-11
+
+This section supersedes older model cost and untested-mode claims above. Belfry half-widths step from 6.15, 5.55, 4.90, 4.12 to 3.48 m, with the original five stages, paired recessed bays and 65 m tip. Principal pale nave/transept and lower wall courses remain in far; terracotta roof pitches have subdued separation from the brick walls. Bands stand 15 cm proud.
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 36,478 | 8 | 2,342,496 |
+| far | 10,246 | 8 | 493,152 |
+
+**Cityscape: verified. Full 3D world: verified.** These claims cover loaded near/far models and the inspected far, near and street frames; they do not certify driving routes, terrain arrival/eviction, all exaggeration settings, dark mode or physical hardware.
+
+Remaining approximations: Sculpture, interior, continuous individual roof tiles and exact rose artwork remain simplified. Standard street framing clips the spire, so the full tip is checked in the contact sheet and near app frames. Sub-square-metre tower/stone contacts remain below the deterministic issue threshold.
+
+Reference input: supplied top-cities dossier photos and provenance, original contact sheets, reviewer findings and app shots. Ariane and Jacobins automatic lead-photo tiles were replaced locally with the correct dossier photographs; these reference images are not shipped. Caen gate identification also checked against the Musée de Normandie Porte des Champs page (https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs).

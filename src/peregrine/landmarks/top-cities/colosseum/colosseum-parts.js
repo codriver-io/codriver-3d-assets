@@ -42,13 +42,15 @@ function addQuad(mesh, a, b, c, d, hint) {
   if (area(a,c,d)>1e-8) mesh.idx.push(i,i+2,i+3);
 }
 
-function toGeom(mesh) {
+function toGeom(mesh, smooth=false) {
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(mesh.pos, 3));
   g.setIndex(new THREE.BufferAttribute(new Uint32Array(mesh.idx), 1));
   g.computeVertexNormals();
   // Weld only identical positions AND normals: retain crisp edges, reduce exported bytes.
+  if(smooth) g.deleteAttribute('normal');
   const compact = mergeVertices(g, 1e-4); g.dispose();
+  if(smooth) compact.computeVertexNormals();
   return compact;
 }
 
@@ -105,7 +107,7 @@ function cornice(mesh, a, b, t0, t1, y0, y1, proj) {
 }
 
 // One bay of an arcade: piers, semicircular arch, intrados and reveals. Wall face stops at the crown.
-function arcadeBay(mesh, a, b, inset, thick, q, level, segs) {
+function arcadeBay(mesh, a, b, inset, thick, q, level, segs, backSkin = true) {
   const y0 = level.y0, crown = level.crown;
   const rise = q.spanHalfY ?? level.span / 2;
   const spring = crown - rise;
@@ -113,8 +115,10 @@ function arcadeBay(mesh, a, b, inset, thick, q, level, segs) {
   const yOf = (phi) => spring + rise * Math.sin(phi);
   panel(mesh, a, b, inset, q.t0, q.tL, y0, crown, true);
   panel(mesh, a, b, inset, q.tR, q.t1, y0, crown, true);
-  panel(mesh, a, b, inset + thick, q.t0, q.tL, y0, crown, false);
-  panel(mesh, a, b, inset + thick, q.tR, q.t1, y0, crown, false);
+  if (backSkin) {
+    panel(mesh, a, b, inset + thick, q.t0, q.tL, y0, crown, false);
+    panel(mesh, a, b, inset + thick, q.tR, q.t1, y0, crown, false);
+  }
   const tgL = ellipseTangent(a, b, q.tL), tgR = ellipseTangent(a, b, q.tR);
   cap(mesh, a, b, q.tL, inset, inset + thick, y0, spring, [tgL[0], 0, tgL[1]]);
   cap(mesh, a, b, q.tR, inset, inset + thick, y0, spring, [-tgR[0], 0, -tgR[1]]);
@@ -123,7 +127,7 @@ function arcadeBay(mesh, a, b, inset, thick, q, level, segs) {
     const tA = tOf(p0), tB = tOf(p1), yA = yOf(p0), yB = yOf(p1);
     const hintO = nOut(a, b, (tA + tB) / 2);
     addQuad(mesh, P(a, b, tA, inset, yA), P(a, b, tB, inset, yB), P(a, b, tB, inset, crown), P(a, b, tA, inset, crown), hintO);
-    addQuad(mesh, P(a, b, tA, inset + thick, yA), P(a, b, tB, inset + thick, yB), P(a, b, tB, inset + thick, crown), P(a, b, tA, inset + thick, crown), [-hintO[0], 0, -hintO[2]]);
+    if (backSkin) addQuad(mesh, P(a, b, tA, inset + thick, yA), P(a, b, tB, inset + thick, yB), P(a, b, tB, inset + thick, crown), P(a, b, tA, inset + thick, crown), [-hintO[0], 0, -hintO[2]]);
     const midT = (tA + tB) / 2, midY = (yA + yB) / 2;
     const on = P(a, b, midT, inset + thick / 2, midY);
     const center = P(a, b, q.tC, inset + thick / 2, spring);
@@ -133,28 +137,34 @@ function arcadeBay(mesh, a, b, inset, thick, q, level, segs) {
   }
 }
 
-function halfColumn(mesh, a, b, t, y0, y1, radius, segs) {
+// Shafts occupy about three fifths of the 2.4 m pier. Their rear chords are
+// embedded in the wall; the base sits on the storey sill and the capital meets
+// the architrave. No detached capital, millimetre overlay or floating shaft.
+function halfColumn(mesh, a, b, t, y0, y1, radius, segs, baseMesh = mesh) {
   const n = ellipseNormal(a, b, t), tg = ellipseTangent(a, b, t);
   const [x, z] = ellipse(a, b, t);
-  const cx = x + n[0] * 0.18, cz = z + n[1] * 0.18;
-  const band = (yLo, yHi, rad) => {
-    const row = (y) => {
-      const pts = [];
-      for (let i = 0; i <= segs; i++) {
-        const ang = -Math.PI / 2 + (Math.PI * i) / segs;
-        const dx = n[0] * Math.cos(ang) + tg[0] * Math.sin(ang);
-        const dz = n[1] * Math.cos(ang) + tg[1] * Math.sin(ang);
-        pts.push([cx + dx * rad, y, cz + dz * rad]);
-      }
-      return pts;
-    };
-    const lo = row(yLo), hi = row(yHi);
-    for (let i = 0; i < segs; i++) addQuad(mesh, lo[i], lo[i + 1], hi[i + 1], hi[i], [n[0], 0.12, n[1]]);
-    for (let i = 1; i < segs; i++) addTri(mesh, hi[0], hi[i], hi[i + 1], [0, 1, 0]);
+  const cx = x - n[0] * 0.08, cz = z - n[1] * 0.08;
+  const row = (y, rad) => Array.from({length: segs + 1}, (_, i) => {
+    const ang = -Math.PI / 2 + Math.PI * i / segs;
+    return [cx + (n[0]*Math.cos(ang)+tg[0]*Math.sin(ang))*rad, y,
+      cz + (n[1]*Math.cos(ang)+tg[1]*Math.sin(ang))*rad];
+  });
+  const band = (yLo, yHi, rLo, rHi, target = mesh) => {
+    const lo=row(yLo,rLo), hi=row(yHi,rHi);
+    for(let i=0;i<segs;i++) {
+      const ang=-Math.PI/2+Math.PI*(i+.5)/segs;
+      addQuad(target,lo[i],lo[i+1],hi[i+1],hi[i],
+        [n[0]*Math.cos(ang)+tg[0]*Math.sin(ang),0,n[1]*Math.cos(ang)+tg[1]*Math.sin(ang)]);
+    }
+    // Top shoulders are real ledges; subsequent bands sit directly on them.
+    if(target===baseMesh) for(let i=1;i<segs;i++) addTri(target,hi[0],hi[i],hi[i+1],[0,1,0]);
   };
-  band(y0, y0 + 0.28, radius * 1.28);
-  band(y0 + 0.28, y1 - 0.55, radius);
-  band(y1 - 0.55, y1 - 0.12, radius * 1.34);
+  band(y0,y0+.38,radius*1.22,radius*1.22,baseMesh);
+  band(y0+.38,y1-.72,radius,radius*.87);
+  if(segs>2) {
+    band(y1-.72,y1-.28,radius*.87,radius*1.35);
+    band(y1-.28,y1,radius*1.35,radius*1.35);
+  } else band(y1-.72,y1,radius*.87,radius*1.35);
 }
 
 function rectWindow(stone, voidMesh, a, b, q, y0, y1, span, depth) {
@@ -219,19 +229,22 @@ function steps(mesh, detail) {
   }
 }
 
-function outerWall(stone, voids, detail) {
-  const segs = detail === 'near' ? 8 : 3;
-  const colSegs = detail === 'near' ? 6 : 0;
+function outerWall(stone, orders, voids, detail) {
+  const segs = detail === 'near' ? 8 : 2;
+  const colSegs = detail === 'near' ? 6 : 2;
   for (let i = 0; i < BAYS; i++) {
     const q = bay(i);
     q.spanHalfY = (q.tR - q.tC) * Math.hypot(-OUTER_A * Math.sin(q.tC), OUTER_B * Math.cos(q.tC));
     if (!standing(i)) continue;
-    for (const level of LEVELS) arcadeBay(stone, OUTER_A, OUTER_B, 0, WALL_T, q, level, segs);
+    for (const level of LEVELS) arcadeBay(stone, OUTER_A, OUTER_B, 0, WALL_T, q, level, segs, detail === 'near');
     for (const level of LEVELS) {
-      if (detail === 'near') cornice(stone, OUTER_A, OUTER_B, q.t0, q.t1, level.crown, level.ent1, level.proj);
-      else panel(stone, OUTER_A, OUTER_B, 0, q.t0, q.t1, level.crown, level.ent1, true);
+      // A recessed architrave and projecting upper cornice make the order
+      // legible under the app's diffuse shading, in both LODs.
+      const shoulder = level.ent1 - .48;
+      cornice(orders, OUTER_A, OUTER_B, q.t0, q.t1, level.crown, shoulder, level.proj*.65);
+      cornice(orders, OUTER_A, OUTER_B, q.t0, q.t1, shoulder, level.ent1, level.proj+ .35);
       panel(stone, OUTER_A, OUTER_B, 0, q.t0, q.t1, level.ent1, level.ped1, true);
-      panel(stone, OUTER_A, OUTER_B, WALL_T, q.t0, q.t1, level.crown, level.ped1, false);
+      if(detail==='near') panel(stone, OUTER_A, OUTER_B, WALL_T, q.t0, q.t1, level.crown, level.ped1, false);
     }
     // Attic pier wall with one rectangular window per bay, and the crowning cornice.
     if (i % 2 === 0) rectWindow(stone, voids, OUTER_A, OUTER_B, q, ATTIC_Y + 4.6, ATTIC_Y + 8.7, 2.15, 0.9);
@@ -244,7 +257,7 @@ function outerWall(stone, voids, detail) {
     if (detail === 'near') pilaster(stone, OUTER_A, OUTER_B, q.t0, ATTIC_Y + 0.35, CROWN_Y0 - 0.15);
     if (detail === 'near') cornice(stone, OUTER_A, OUTER_B, q.t0, q.t1, ATTIC_Y + 4.15, ATTIC_Y + 4.55, 0.28);
     if (colSegs) {
-      for (const level of LEVELS) halfColumn(stone, OUTER_A, OUTER_B, q.t0, level.y0 + 0.08, level.crown - 0.02, 0.46, colSegs);
+      for (const level of LEVELS) halfColumn(orders, OUTER_A, OUTER_B, q.t0, level.y0, level.crown, 0.74, colSegs, stone);
     }
     if (detail === 'near') {
       const speed = Math.hypot(-OUTER_A * Math.sin(q.tC), OUTER_B * Math.cos(q.tC));
@@ -268,7 +281,7 @@ function outerWall(stone, voids, detail) {
   cap(stone, OUTER_A, OUTER_B, tEnd, -CROWN_PROJ, 0, CROWN_Y0, HEIGHT, [tgE[0], 0, tgE[1]]);
   // Close the last standing bay's outer pilaster twin on the west broken pier.
   if (colSegs) {
-    for (const level of LEVELS) halfColumn(stone, OUTER_A, OUTER_B, tEnd, level.y0 + 0.15, level.crown - 0.02, 0.42, colSegs);
+    for (const level of LEVELS) halfColumn(orders, OUTER_A, OUTER_B, tEnd, level.y0, level.crown, 0.74, colSegs, stone);
   }
 }
 
@@ -313,21 +326,7 @@ function southInnerBay(brick, i, segs) {
 }
 
 function innerWalls(brick, detail) {
-  const segs = detail === 'near' ? 5 : 3;
-  if (detail === 'far') {
-    // The far drum keeps the outer arches. Behind the standing half a solid brick wall
-    // stops the eye, cheaper than a second run of 37 arches. The quarried south half
-    // still shows its two inner orders, which are the facade on that side.
-    solidRing(brick, OUTER_A, OUTER_B, WALL2, WALL2_T, 0.42, innerCrown, 0, STANDING_TO, 2);
-    const tS = bay(0).t0, tE = bay(STANDING_TO).t1;
-    const tgS = ellipseTangent(OUTER_A, OUTER_B, tS), tgE = ellipseTangent(OUTER_A, OUTER_B, tE);
-    cap(brick, OUTER_A, OUTER_B, tS, WALL2, WALL2 + WALL2_T, 0.42, innerCrown(0), [-tgS[0], 0, -tgS[1]]);
-    cap(brick, OUTER_A, OUTER_B, tE, WALL2, WALL2 + WALL2_T, 0.42, innerCrown(STANDING_TO), [tgE[0], 0, tgE[1]]);
-    for (let i = STANDING_TO + 1; i < BAYS; i++) southInnerBay(brick, i, segs);
-    solidRing(brick, OUTER_A, OUTER_B, 24, 1.35, 0.42, () => 15.2, 0, BAYS - 1, detail === 'far' ? 4 : 1);
-    solidRing(brick, ARENA_A, ARENA_B, -2.15, 2.15, 0.15, () => 6.3, 0, BAYS - 1, detail === 'far' ? 4 : 1);
-    return;
-  }
+  const segs = detail === 'near' ? 5 : 2;
   // Surviving inner facade: two or three arcade orders, then a pierced band (tall behind the
   // intact facade, broken and lower on the quarried south side).
   for (let i = 0; i < BAYS; i++) {
@@ -348,17 +347,17 @@ function innerWalls(brick, detail) {
   }
   // Third wall: solid, so a view through the arcades ends on brick rather than the far sky.
   // Tall enough to close the third-order arches. Above it the outer attic is solid.
-  solidRing(brick, OUTER_A, OUTER_B, WALL3, WALL3_T, 0.42,
-    i => 29.5 + 1.7 * Math.sin(i * 1.15), 0, STANDING_TO);
-  solidRing(brick, OUTER_A, OUTER_B, 23, WALL3_T, 0.42,
-    i => 18.5 + 2 * Math.sin(i * 0.91), STANDING_TO+1, BAYS-1);
+  if(detail==='near') solidRing(brick, OUTER_A, OUTER_B, WALL3, WALL3_T, 0.42,
+    i => 29.5 + 1.7 * Math.sin(i * 1.15), 0, STANDING_TO, detail === 'far' ? 4 : 1);
+  if(detail==='near') solidRing(brick, OUTER_A, OUTER_B, 23, WALL3_T, 0.42,
+    i => 18.5 + 2 * Math.sin(i * 0.91), STANDING_TO+1, BAYS-1, detail === 'far' ? 4 : 1);
   // Cavea terraces and the arena podium, stepping down toward the sand.
-  solidRing(brick, OUTER_A, OUTER_B, 24, 1.35, 0.42, () => 15.2, 0, BAYS - 1, detail === 'far' ? 4 : 1);
-  solidRing(brick, OUTER_A, OUTER_B, 33.5, 1.2, 0.42, () => 10.4, 0, BAYS - 1);
+  solidRing(brick, OUTER_A, OUTER_B, 24, 1.35, 0.42, () => 15.2, 0, BAYS - 1, detail === 'far' ? 16 : 1);
+  solidRing(brick, OUTER_A, OUTER_B, 33.5, 1.2, 0.42, () => 10.4, 0, BAYS - 1, detail === 'far' ? 16 : 1);
   // Podium: inner face on the arena ellipse, thickness outward.
   solidRing(brick, ARENA_A, ARENA_B, -2.15, 2.15, 0.15, () => 6.3, 0, BAYS - 1, detail === 'far' ? 4 : 1);
   // Radial ribs under the missing seats. Every other bay near, every fourth far.
-  const step = detail === 'near' ? 2 : 4;
+  const step = detail === 'near' ? 2 : 8;
   for (let i = 0; i < BAYS; i += step) {
     const t = bay(i).tC;
     const tg = ellipseTangent(OUTER_A, OUTER_B, t);
@@ -380,7 +379,7 @@ function hypogeum(mesh, floor, detail) {
   const au = 40.2, av = 24.6;
   const y0 = 0.16, y1 = 3.35, th = 0.5;
   const gapU = 3.6, gapV = 2.7;
-  const vStep = detail === 'near' ? 3.35 : 6.7;
+  const vStep = detail === 'near' ? 3.35 : 10;
   const uStep = detail === 'near' ? 3.9 : 7.8;
   const inside = (u, v) => (u / au) ** 2 + (v / av) ** 2 < 1;
   const box = (u0, v0, u1, v1) => {
@@ -431,7 +430,7 @@ function hypogeum(mesh, floor, detail) {
 
 // Close height changes between neighboring bays, including the circular wrap seam.
 function closeRuinTops(brick,detail) {
-  const top=i=>innerCrown(detail==='far' && standing(i)?i-i%2:i);
+  const top=i=>innerCrown(i);
   for(let i=0;i<BAYS;i++){
     const before=top((i+BAYS-1)%BAYS),after=top(i),t=bay(i).t0,tg=ellipseTangent(OUTER_A,OUTER_B,t);
     if(Math.abs(before-after)>0.01) cap(brick,OUTER_A,OUTER_B,t,standing(i)?WALL2:WALL3,(standing(i)?WALL2:WALL3)+WALL2_T,Math.min(before,after),Math.max(before,after),before>after?[tg[0],0,tg[1]]:[-tg[0],0,-tg[1]]);
@@ -449,17 +448,18 @@ function eastButtress(brick) {
 }
 
 export function buildColosseum(detail) {
-  const stone = mesh(), brick = mesh(), hypo = mesh(), voids = mesh();
+  const stone = mesh(), orders = mesh(), brick = mesh(), hypo = mesh(), voids = mesh();
   steps(stone, detail);
-  outerWall(stone, voids, detail);
+  outerWall(stone, orders, voids, detail);
   innerWalls(brick, detail);
   eastButtress(brick);
   closeRuinTops(brick,detail);
   hypogeum(hypo, voids, detail);
   return [
-    { material: 'travertine', geometry: toGeom(stone) },
-    { material: 'brick', geometry: toGeom(brick) },
-    { material: 'hypogeum', geometry: toGeom(hypo) },
-    { material: 'void', geometry: toGeom(voids) },
+    { material: 'travertine', geometry: toGeom(stone,detail==='far') },
+    { material: 'orders', geometry: toGeom(orders) },
+    { material: 'brick', geometry: toGeom(brick,detail==='far') },
+    { material: 'hypogeum', geometry: toGeom(hypo,detail==='far') },
+    { material: 'void', geometry: toGeom(voids,detail==='far') },
   ];
 }

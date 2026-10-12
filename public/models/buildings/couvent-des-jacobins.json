@@ -17,7 +17,7 @@
   },
   "elevationDatum": "Local flat pavement y=0; rigid monastery foundation, no terrain or absolute altitude baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Official Couvent site: octagonal belfry 45 m and four tiers of paired mitre arches; OSM tags 49 m, superseded by official height. Nave exterior roof 32 m follows OSM; vault height 28 m is a separate interior measurement. Convent hall heights, buttress profiles, window tracery and tiled roof relief are estimates from photographs. Temporary works and interiors omitted. Flat central Toulouse site; Full 3D world rigid foundation/pad placement is not tested.",
+  "note": "Official Couvent site: octagonal belfry 45 m and four tiers of paired mitre arches; OSM tags 49 m, superseded by official height. Nave exterior roof 32 m follows OSM; vault height 28 m is a separate interior measurement. Convent hall heights, buttress profiles, window tracery and tiled roof relief are estimates from photographs. Temporary works and interiors omitted. Replacement ownership covers the four cloister perimeter wings while leaving the courtyard unmasked. Flat central Toulouse site; app-mode evidence is documented separately.",
   "assets": {
     "near": {
       "url": "/models/buildings/couvent-des-jacobins-near.glb",

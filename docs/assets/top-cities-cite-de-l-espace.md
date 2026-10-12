@@ -166,3 +166,18 @@ Revision validation: requested two-file test command **257/257 passed**, seven
 landmark tests plus three conformance tests for this asset; exported QA has
 zero coplanar pairs, zero back-face hits, no removable bytes, bounds y=0–53 m.
 Near **14,020 / 8 / 418 KiB**, far **5,640 / 8 / 174 KiB**.
+
+## Landmark QA correction — 2026-10-11
+
+This section supersedes older model cost and untested-mode claims above. An 18 × 25 m owned exhibit envelope clears the front engine bells and plinths from the simplified provider block. Museum buildings remain outside replacement ownership. Far removes tiny multicolour flag grids that produced cyclic depth edges, retaining blue agency/title marks, rocket colour bands, mast, service ties and full silhouette.
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 14,020 | 8 | 428,120 |
+| far | 4,488 | 6 | 114,416 |
+
+**Cityscape: verified. Full 3D world: verified.** These claims cover loaded near/far models and the inspected far, near and street frames; they do not certify driving routes, terrain arrival/eviction, all exaggeration settings, dark mode or physical hardware.
+
+Remaining approximations: A provider portion behind/left of the replica remains outside the owned exhibit envelope; the front rocket bases are clear. The adjoining park, museum, Mir and other exhibits remain provider-owned. Tiny far flags are deliberately omitted; all structure and principal colours remain.
+
+Reference input: supplied top-cities dossier photos and provenance, original contact sheets, reviewer findings and app shots. Ariane and Jacobins automatic lead-photo tiles were replaced locally with the correct dossier photographs; these reference images are not shipped. Caen gate identification also checked against the Musée de Normandie Porte des Champs page (https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs).

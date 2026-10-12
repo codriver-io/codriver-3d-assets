@@ -62,7 +62,7 @@ export function parts(b, near) {
     for(const side of [-1,1]) {
       const face=z+side*1.58;
       for(const y of [8.2,22.3]) surfaceBox('blue',0,y,side,x,z,1.565,.53,.65,.20);
-      for(const base of [16.9,24.2]) for(let row=0;row<4;row++) for(let col=0;col<3;col++) {
+      if(near) for(const base of [16.9,24.2]) for(let row=0;row<4;row++) for(let col=0;col<3;col++) {
         const mat=['blue','red','gold','green'][(row+col)%4];
         surfaceBox(mat,(col-1)*.33,base-row*.37,side,x,z,1.565,.25,.24,.20);
       }

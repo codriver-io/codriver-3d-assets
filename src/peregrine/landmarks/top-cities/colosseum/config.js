@@ -19,12 +19,14 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
+    orders: '#cbbb9e', // weathered engaged orders; relief survives diffuse app shading
     travertine: '#e7dcc6', // pale outer stone, sunlit
     brick: '#af9680', // muted mixed tuff/brick of the cavea
     hypogeum: '#9a846c', // passage walls in the arena
     void: '#241e1a', // attic recesses and the arena floor
   },
   dark: {
+    orders: '#ad9473',
     travertine: '#cbb892', // floodlit buff, still a lit stone
     brick: '#75614e',
     hypogeum: '#5a4937',
@@ -34,5 +36,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap (the valley-floor plaza). No absolute altitude and no terrain pad: the Palatine and Oppian rise outside the footprint.',
   attribution: 'Original procedural mesh. Mapped placement © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Plan and height are Platner’s surveyed ellipse (188 × 156 m, 48.50 m), rotated to the mapped outer arc (bearing 106°). The replacement ring is the actual OSM multipolygon outline; south-side steps follow the surviving inner wall. The south-west outer wall is the ruin as it stands, without the modern scaffolding. Inner radii, the hypogeum grid and the colours are estimates from photographs.',
+  note: 'Plan and height are Platner’s surveyed ellipse (188 × 156 m, 48.50 m), rotated to the mapped outer arc (bearing 106°). The replacement ring is the actual OSM multipolygon outline; south-side steps follow the surviving inner wall. The south-west outer wall is the ruin as it stands, without the modern scaffolding. Both LODs retain engaged shafts, capitals, projected entablatures and the northern inner arcade openings. Order geometry retains crisp normals and a subdued weathered stone tone. Far smooth normals compact wall vertices; concealed corridor-facing outer arcade skins and hidden backing walls and sparse hypogeum detail are simplified. Inner radii, the hypogeum grid and the colours are estimates from photographs.',
 };

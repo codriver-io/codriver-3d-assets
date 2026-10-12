@@ -836,3 +836,27 @@ export const OSM_WAYS = [
   "way/128537994"
 ];
 export const CLOISTER_COURT = [[1.4400621, 43.603645], [1.43972, 43.6036033], [1.4396671, 43.6038334], [1.4399654, 43.6038697], [1.4400092, 43.6038751], [1.4400191, 43.6038321], [1.4400621, 43.603645]];
+
+// Gallery ownership follows the authored perimeter only; courtyard remains open.
+const axis=Math.atan2(3.929396,24.723),origin=[1.44023,43.60349];
+const geo=([u,v])=>{
+ const x=u*Math.cos(axis)+v*Math.sin(axis),z=-u*Math.sin(axis)+v*Math.cos(axis);
+ return [origin[0]+x/(111319.49*Math.cos(origin[1]*Math.PI/180)),origin[1]-z/111319.49];
+};
+export const GALLERY_FOOTPRINTS=[[-61,-39.2,-68,-12],[-10.4,-1,-55,-13.5],[-39.2,-10.4,-18.5,-12.3],[-39.2,-10.4,-55,-45.5]].map(([u0,u1,v0,v1])=>[[u0,v0],[u1,v0],[u1,v1],[u0,v1]].map(geo));
+// Relation outer ring included the open court; split it into the four owned wings.
+FOOTPRINTS[2]=GALLERY_FOOTPRINTS[0];
+FOOTPRINTS.push(...GALLERY_FOOTPRINTS.slice(1));
+
+// z14 Protomaps merges the low western cloister-side hall into its surrounding
+// campus volume. Claim that wing of way 141709408, leaving its northern return.
+OSM_WAYS.push('way/141709408');
+
+// The merged provider roof spans the refectory/annex using three generalized
+// eastern attachment vertices (u,v): [9.76,-70.56], [19.49,-71.21], [10.98,-58.99].
+// Roof triangles run from these vertices through the authored windowed hall.
+// This small completion ring owns those attachment points so the existing
+// all-vertices mask removes the crossing faces, without claiming the campus
+// northern return or the cloister court. z14 tile 14/8257/5982, polygon 154.
+export const ANNEX_ROOF_FOOTPRINT = [[9.0,-72.1],[20.3,-72.1],[20.3,-70.3],[11.8,-58.1],[10.0,-58.1]].map(geo);
+FOOTPRINTS.push(ANNEX_ROOF_FOOTPRINT);

@@ -7983,13 +7983,13 @@
   },
   "elevationDatum": "Flat Cityscape grade y=0; world mode uses compact rigid-part relative terrace offsets around the inner plateau datum, with -2.8 m foundation skirts. No absolute elevation or terrain mesh baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Restored double enceinte, Château Comtal and Saint-Nazaire; mapped outlines with estimated curtain/eave heights. Narbonnaise towers 30 m per Centre des monuments nationaux. Nine low terracotta roof quarters approximate the inner city; world terrain placement uses relative per-structure terrace offsets.",
+  "note": "Restored double enceinte, Château Comtal and Saint-Nazaire; mapped outlines with estimated curtain/eave heights. Narbonnaise towers 30 m per Centre des monuments nationaux. Nine owned roof quarters contain varied short house roofs in three muted terracotta tones; world terrain placement uses relative per-structure terrace offsets.",
   "assets": {
     "near": {
       "url": "/models/buildings/cite-de-carcassonne-near.glb",
-      "bytes": 2175652,
-      "triangles": 41633,
-      "drawCalls": 7,
+      "bytes": 2272312,
+      "triangles": 43613,
+      "drawCalls": 9,
       "bounds": {
         "min": [
           -207.25332641601562,
@@ -8005,9 +8005,9 @@
     },
     "far": {
       "url": "/models/buildings/cite-de-carcassonne-far.glb",
-      "bytes": 471732,
-      "triangles": 9114,
-      "drawCalls": 4,
+      "bytes": 300760,
+      "triangles": 11094,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -207.27462768554688,
