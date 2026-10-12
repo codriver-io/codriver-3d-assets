@@ -1,2 +1,3 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// Mapped bridge outline, not neighbouring quay buildings. © OSM contributors, ODbL 1.0.
+export const FOOTPRINTS = [[[-6.2414268, 53.3474554], [-6.2410272, 53.3474274], [-6.241193, 53.3464494], [-6.241149, 53.346343], [-6.2411452, 53.3463338], [-6.2415394, 53.3463618], [-6.2416898, 53.3463737], [-6.2416752, 53.3463935], [-6.2416184, 53.3464663], [-6.2414268, 53.3474554]]];
+export const OSM_WAYS = [381481630];

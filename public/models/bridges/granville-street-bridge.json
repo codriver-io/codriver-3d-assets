@@ -1,0 +1,66 @@
+{
+  "id": "granville-street-bridge",
+  "name": "Granville Street Bridge",
+  "kind": "bridge",
+  "origin": [
+    -123.133049,
+    49.272551
+  ],
+  "height": 42.5,
+  "padM": 850,
+  "frontageBearing": 45.2,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local metres east/up/south. Authored y=0 is sea/flat-map grade; deck 35 m, estimated from 27.4 m published clearance plus midspan truss/slab depth. Absolute-deck world policy fits ramp ends and pier feet to the shared DEM; no DEM baked into vertices.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1954 fixed deck-truss bridge: seven steel spans, published range 29–121 m, concrete approach girders. Individual span registration, support dimensions and truss depth are photo/map estimates. Models the primary Granville crossing; branching Howe/Seymour/Fir/Hemlock ramps remain generic provider structures. Original eight-lane envelope; current west Connector and six fallback vehicle lanes. Original photographs used as references only, no textures.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/granville-street-bridge-near.glb",
+      "bytes": 3279044,
+      "triangles": 68902,
+      "drawCalls": 21,
+      "bounds": {
+        "min": [
+          -403.3489990234375,
+          -0.14000000059604645,
+          -514.15283203125
+        ],
+        "max": [
+          500.6604309082031,
+          42.398921966552734,
+          653.1409301757812
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/granville-street-bridge-far.glb",
+      "bytes": 1096680,
+      "triangles": 27504,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -403.3481750488281,
+          -0.14000000059604645,
+          -514.15283203125
+        ],
+        "max": [
+          500.6604309082031,
+          42.398921966552734,
+          653.1409301757812
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/granville-street-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

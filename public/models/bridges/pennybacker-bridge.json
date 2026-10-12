@@ -1,0 +1,74 @@
+{
+  "id": "pennybacker-bridge",
+  "name": "Pennybacker Bridge (Loop 360)",
+  "kind": "bridge",
+  "origin": [
+    -97.797196,
+    30.349475525
+  ],
+  "height": 54.6764,
+  "padM": 45,
+  "frontageBearing": 28.9,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "rangeM": 3200,
+  "nearM": 1000,
+  "lateralBankFit": {
+    "blendM": 320,
+    "terrainClamp": true,
+    "clearanceM": 0.22
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local metres east/up/south, y=0 flat Cityscape grade. Deck 21.336 m; arch crown 54.6764 m. World selects a separate 150.20544 m lake datum; no terrain, sea level or latitude stretch is baked into GLBs.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "TxDOT: 600 ft arch, 87 ft deck, 4×11 ft arch box, 18 groups of four 2.25 in strand hangers, four 12 ft lanes, 6 ft sidewalk, 7 ft floor beams, one north and three south approach spans. Arch rise, deck datum, shoulder placement, approach lengths and minor fittings are visual estimates. Lake datum is LCRA full-pool elevation; runtime terrain verification is documented separately.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pennybacker-bridge-near.glb",
+      "bytes": 1306964,
+      "triangles": 36300,
+      "drawCalls": 15,
+      "bounds": {
+        "min": [
+          -261.31689453125,
+          -0.8700000047683716,
+          -442.0168762207031
+        ],
+        "max": [
+          254.40428161621094,
+          54.67639923095703,
+          443.34197998046875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pennybacker-bridge-far.glb",
+      "bytes": 510208,
+      "triangles": 15908,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -261.31689453125,
+          -0.8700000047683716,
+          -442.0168762207031
+        ],
+        "max": [
+          254.40428161621094,
+          54.67639923095703,
+          443.34197998046875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pennybacker-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

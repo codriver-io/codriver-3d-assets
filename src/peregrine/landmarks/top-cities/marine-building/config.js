@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'marine-building', name: "Marine Building", kind: 'building',
   ready: false,
-  origin: [-123.11694, 49.2875],
+  origin: [-123.11710198836293, 49.287513755091574],
   height: 98,
   padM: 60,
   frontageBearing: 0,
