@@ -66,7 +66,6 @@ The continuous real folded skins are simplified to planar/ruled facets, the roof
 
 Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The building remains rigid; an explicit median terrain pad follows the four owned rings, with a plaza reference and 4 m feather, rather than flattening a wide disc across the Rhône or Saône. Validate bank edges, entrance datum and changing DEM resolution in the app; no terrain or runtime integration claims follow from these inspector views. No shared source file or runtime bundle was edited, and nothing was published.
 
-
 ## Independent-review fix pass (2026-10-05)
 
 The initial independent verdict was FIX, recognition 3/5, citing the box-like cloud and isolated pyramid-like funnels. Two look/fix iterations addressed both findings:

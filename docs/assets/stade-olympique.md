@@ -4,7 +4,7 @@ March 2026 construction state: oval ribbed bowl, open technical ring and 165 m i
 
 Original procedural geometry authored 2026-09-27. Placement/footprints © OpenStreetMap contributors (ODbL 1.0). Official photographs informed proportions; no photo, scan, texture or third-party mesh is shipped.
 
-Dated March 2026 state, not a live construction feed: old membrane removed; future rigid roof not installed. Tower sections, windows, shell, seats approximate; loose construction cable bundles omitted. Cranes, winter snow and temporary equipment omitted. Grounded on the flat map, not surveyed terrain. Tesla hardware performance unmeasured. QA 2026-10-11: loose temporary cable bundles omitted; dated open-bowl construction state retained. Cityscape verified and Full 3D world verified in slot C app captures, 2026-10-11; camera and terrain limitations are recorded in the QA report.
+Dated March 2026 state, not a live construction feed: old membrane removed; future rigid roof not installed. Tower sections, windows, shell, seats approximate; loose construction cable bundles omitted. Cranes, winter snow and temporary equipment omitted. Grounded on the flat map, not surveyed terrain. Tesla hardware performance unmeasured. QA 2026-10-11: loose temporary cable bundles omitted; dated open-bowl construction state retained.
 
 Models: CC BY 4.0. Procedural code: MIT. See [licensing](../../LICENSES.md) and [third-party notices](../../THIRD_PARTY_NOTICES.md).
 
@@ -77,8 +77,6 @@ No photography, captured mesh or third-party texture is included in either GLB.
 
 QA 2026-10-11: loose temporary cable bundles omitted; dated open-bowl construction state retained.
 
-Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
-
 Current measured exports: near: 23,136 triangles / 7 draws / 815,836 bytes; far: 10,640 triangles / 7 draws / 431,648 bytes. Geometry metrics report no unresolved issues.
 
-Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.
+Current mode validation (2026-10-11): **Cityscape verified; Asset readiness and inspector output alone were not used to establish terrain verification.

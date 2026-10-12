@@ -77,7 +77,7 @@ Tests: `pont-dubuc.test.js` (10: published 458 m / seven spans / seven piers, th
 
 ### Cityscape: verified (local app, flat, no HD lanes)
 
-Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. `/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
+`/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
 
 `window.__map.landmarks.heightAt` (near LOD) on the northbound (d = +4.2, heading 20.7°) and southbound (d = −4.2, 200.7°) lanes, identical, each equal to the authored deck: south foot 0.00; ramp 20 m in 0.42; mapped south end 1.14; P1 2.75; P2 5.85; P3 9.92; P4 11.99; crest 12.00; P5 10.54; P6 6.71; P7 2.80; mapped north end 0.01; north foot (2 m past it) 0.00. **null** for a crossing heading, 40 m beside the deck, on both sidewalks, and on every join and road under the north end at its own heading both ways (68/68).
 
@@ -85,7 +85,7 @@ Street shots at both ends in both directions (`app3/`): the ramps leave the prov
 
 ### Full 3D world: verified with `terrainPolicy: 'absolute-deck'` (local app, Terrarium DEM)
 
-Same bundle, terrain server on port 3272, `--mode world`. Terrain approaches 4.5 m (south) and 7.9 m (north). Absolute deck = `heightAt` + ground (`queryGroundAt` / stretch), identical both headings:
+Terrain approaches 4.5 m (south) and 7.9 m (north). Absolute deck = `heightAt` + ground (`queryGroundAt` / stretch), identical both headings:
 
 | Station | ground (m) | heightAt (m) | deck (m) |
 | --- | --- | --- | --- |

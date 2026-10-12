@@ -70,7 +70,7 @@ The landmark tests raycast actual deck, soffit, open shipping channel, twin colu
 
 ## Local app evidence
 
-Local servers used slot B, ports 3274 (Cityscape) and 3276 (world), with Protomaps/OSM tiles and Terrarium DEM. `pnpm build:peregrine` succeeded; generated bundles are excluded from this landmark commit and the lead rebuilds them after merging. `app-shot.mjs --ids tromso-bridge --shots far,near,street` loaded both LODs in each mode. The app-shot initialization and settle logic was reused in ignored `app-fit.mjs` and `app-approaches.mjs` to inspect both shores in both directions and capture height queries. The synthetic local QA grant did not change production gates.
+`pnpm build:peregrine` succeeded; generated bundles are excluded from this landmark commit and the lead rebuilds them after merging. `app-shot.mjs --ids tromso-bridge --shots far,near,street` loaded both LODs in each mode. The app-shot initialization and settle logic was reused in ignored `app-fit.mjs` and `app-approaches.mjs` to inspect both shores in both directions and capture height queries. The synthetic local QA grant did not change production gates.
 
 Evidence under `tmp/top-cities/tromso-bridge/`: `app-city/`, `app-world/`, `fit-city/`, `fit-world/`, `approaches-city/`, `approaches-world/`, `app-sheet.jpg`, `fit-sheet.jpg`, `approaches-sheet.jpg`. Approach files are `spot-{west,east}-{forward,reverse}-street.png`; each directory retains `height-report.json`. The real bridge is active in all four approach captures per mode (custom spot rows in ordinary app-shot's report say active=false because no layer has the spot's name; the accompanying fit report checks the actual Tromsø layer).
 

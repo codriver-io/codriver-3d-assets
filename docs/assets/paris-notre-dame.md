@@ -16,7 +16,6 @@ See the [refinement notes](../paris-street-level-refinement.md) for references, 
 
 Current revision: [near GLB facade/support](../screenshots/paris-refinement/paris-notre-dame.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-notre-dame-roof-or-structure.png).
 
-
 ## Geographic registration revision
 
 The source and GLBs now include the mapped origin, facade bearing and documented horizontal fit. Heights remain unchanged; the host must apply only geographic scale and its ground datum. See [Paris registration](../paris/placement.md) for reference coordinates, partial-palace scope and approximation limits. Host Cityscape and Full 3D world were checked in the desktop renderer with live map data; this is not vehicle-hardware or authenticated-session evidence.
@@ -24,3 +23,13 @@ The source and GLBs now include the mapped origin, facade bearing and documented
 ## QA pass — October 2026
 
 Reviewed against reference photographs and checked with `qa-metrics.mjs` (budgets, far-LOD silhouette, grade, coplanar faces, back faces). nave, aisle and transept roofs are two-plane gables of about 48-50 degrees with a hipped apse; west facade gains four buttress strips and a gallery band. Exported cost: near 34,723 triangles / 5 draws / 1,500,564 bytes; far 2,552 / 6 / 131,952.
+
+## Landmark QA revision — 11 October 2026
+
+Staged open octagonal spire with connected galleries, crocketed ribs and slim weatherproof upper core; clustered nave shafts, connected pinnacles, recessed suspended bells and radial rose tracery in both LODs. Far drops overlapping stone/trim layers.
+
+Sculpture and secondary dimensions are estimates; no photograph pixels, external mesh or textures are included.
+
+Measured QA exports (triangles / draws / bytes): near 38243 / 5 / 1664400; far 8408 / 6 / 446440. Deterministic QA: no unresolved issues.
+
+Night, hardware performance and driving-camera continuity were not tested in this visual pass.

@@ -87,8 +87,6 @@ Budgets for a building: near 60,000 triangles / 14 draws / 2.5 MB, far 12,000 / 
 
 QA 2026-10-11: broad opaque brick piers and grouped dark service openings replace the square-dot grid; far keeps matching grouped openings and Centre Bell letter silhouettes.
 
-Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
-
 Current measured exports: near: 2,822 triangles / 11 draws / 231,044 bytes; far: 1,034 triangles / 8 draws / 88,716 bytes. Geometry metrics report no unresolved issues.
 
-Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.
+Current mode validation (2026-10-11): **Cityscape verified; Asset readiness and inspector output alone were not used to establish terrain verification.

@@ -60,7 +60,7 @@ Images were opened and judged against the supplied references:
 
 ## Local app and height evidence
 
-Cityscape: **verified locally** for near/far loading, standard-road replacement, both approaches/directions and navigation surface queries. Full 3D world: **verified locally** for the same limited cases with Terrarium DEM and independent support fitting. Slot A used ports 3270/3272 and Protomaps/OSM. Local app logs retain guest API/CORS errors; these did not prevent model or DEM loading. Servers are stopped after QA.
+Cityscape: **verified locally** for near/far loading, standard-road replacement, both approaches/directions and navigation surface queries. Full 3D world: **verified locally** for the same limited cases with Terrarium DEM and independent support fitting. Local app logs retain guest API/CORS errors; these did not prevent model or DEM loading. Servers are stopped after QA.
 
 `app-city/`, `app-world/`, `approaches-city/` and `approaches-world/` contain screenshot reports. `fit-city/height-report.json` and `fit-world/height-report.json` record the actual active bridge layer, 18 carriageway queries, forward/reverse agreement, crossing rejection, and off-deck/median null. The last two supersede the earlier approach height reports, which queried the correct map surface but did not identify the layer metadata. World north/south endpoint datums were 22.459 / 12.483 m. The API returns height above local ground, not an absolute altitude; lateral DEM variation causes at most about 0.05 m endpoint difference from the centreline surface.
 
@@ -78,7 +78,6 @@ Cityscape: **verified locally** for near/far loading, standard-road replacement,
 
 Forward and reverse queries agree at every station on both carriageways; crossing headings, the centre separator and a point 30 m beside the crest return null. This checks the navigation surface used by route/car/camera, not a moving vehicle traversal. HD sections are zero: the local `/osm-lanes` service returns 503 without Redis, so HD pavement/paint lane count and dash continuity are **not tested**. Live traffic, halo, picking, paint toggles, mode/lifecycle stress, missing/late terrain, repeated reanchor and real hardware remain **not tested**. The absolute crest datum and ramp widths are estimates; independent visual review and coordinated release remain with the lead.
 
-
 ## Independent review follow-up
 
 One revision addressed the review nits without changing structural proportions. Daytime concrete changed from warm `#a9aaa0` to cool `#a4a8a8`; near railing posts changed from 3.5 m to 7 m spacing. Near falls from 51,916 triangles / 24 draws / 3193.8 KiB to 46,564 / 24 / 2869.8 KiB (10.3% fewer triangles, 10.1% fewer bytes). Far remains 16,044 / 3 / 964.6 KiB. Draw count stays constant because rails, posts and lamp stems already merge into one steel mesh per station chunk, four in total. `b.beam` has a rectangular 12-triangle section, with no radial subdivisions to reduce; self-lit lamp heads retain their separate material for night rendering. Segment seams remain as reviewed.
@@ -86,7 +85,6 @@ One revision addressed the review nits without changing structural proportions. 
 Re-exported with `pnpm build:top-cities-landmarks viaduc-de-calix --no-check`. All 291 focused landmark/conformance tests passed and catalog validation passed (222 entries / 414 variants). Revised metrics report no budget overrun, overlap, back-face or below-grade artifact. The supplied `REVIEW.md` has no Prepare command; its normal preparation equivalent, `qa-metrics.mjs` plus `qa-sheet.mjs`, was rerun. Opened the new photo/near/far sheet and underside/capital/deck detail sheet at `tmp/top-cities/review/viaduc-de-calix/revised/`. The harness's green ground light still tints downward faces; actual app inspection is the colour check.
 
 Rebuilt and reran daytime app captures in Cityscape and Full 3D world: near/far/street, both approaches in both directions, and closer underside inspection. Revised `app-sheet.jpg`, `approaches-sheet.jpg`, and `inspection-{city,world}/spot-underside-street.png` are under the same `revised/` directory. The last two render the actual loaded app scene using the registered underside inspection camera; both show neutral grey soffits and preserve the loaded placement. Both modes load the active bridge and retain the fitted pavement joins. Each mode's height report again checks 18 carriageway positions in both directions, crossing rejection and null median/off-deck ownership; endpoint datums remain 22.459 / 12.483 m in world. HD pavement/paint, moving-vehicle traversal and lifecycle stress remain not tested for the reasons above.
-
 
 ## Live HD lane review (REVIEW-2, 2026-10-11)
 
@@ -117,7 +115,7 @@ Evidence root: `tmp/top-cities/viaduc-de-calix/hd-review/`. Opened and judged
 north abutment, south abutment, south approach, then mid-span), plus
 `street-sheet.jpg` (both directions at those four ends in both modes).
 Cityscape and Full 3D world are each **verified locally for live HD paint and
-this barrier fix** with Protomaps/OSM and Redis 6391 on slot B ports 3274/3276.
+
 World uses Terrarium DEM; both modes load 61 HD surface sections. The HD-on
 screenshots preserve visible provider lane lines, merging lines and arrows;
 there are no X-shaped authored barriers or southeast barrier fragments across
@@ -143,6 +141,6 @@ regression that applies adversarial HD ramp sections to both LODs and verifies
 unchanged horizontal vertices and no raised approach furniture. Catalog
 validation passes (222 entries / 414 variants), and `pnpm assets:preview` builds
 the ignored local inspector. The local renderer bundle was rebuilt for QA only
-and restored before the owned-files commit; slot B servers were stopped, Redis
+
 left running. Night, live traffic, paint-toggle/lifecycle stress and real Tesla
 hardware remain not tested for this revision.

@@ -83,7 +83,7 @@ Tests: `pont-laviolette.test.js` (11: published spans and supports, origin and 1
 
 ### Cityscape: verified (local app, flat, no HD lanes)
 
-Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. `/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
+`/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
 
 - The layer loads `/models/bridges/pont-laviolette-{far,near}.glb`; active near and far.
 - `window.__map.landmarks.heightAt` on the southbound (d = +3.95, heading 130.17°) and northbound (d = −3.95, 310.17°) lanes, identical, each equal to the authored deck: north foot 0.00; ramp, 40 m out 1.13; north end 4.37; over the U-turn loop 9.87; over Rue Notre-Dame 12.62; +240 m 16.66; truss portal N5 32.11; main pier N1 50.46; crest 52.00; S1 50.50; S5 32.69; 240 m from the south end 16.10; over Boulevard Bécancour 7.77; south end 6.18; ramp 60 m out 1.88; south foot 0.00. **null** for a wrong heading, 40 m beside the deck, and on every join and under-road at its own heading (both ways).
@@ -91,7 +91,7 @@ Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. 
 
 ### Full 3D world: verified with `terrainPolicy: 'absolute-deck'` (local app, Terrarium DEM)
 
-Same bundle, terrain server on port 3272, `--mode world`. Terrain approaches 10.0 m at both alignment ends. Absolute deck = `heightAt` + ground (ground = `queryGroundAt` / 1.447 stretch), identical both headings:
+Terrain approaches 10.0 m at both alignment ends. Absolute deck = `heightAt` + ground (ground = `queryGroundAt` / 1.447 stretch), identical both headings:
 
 | Station | ground (m) | heightAt (m) | deck (m) |
 | --- | --- | --- | --- |

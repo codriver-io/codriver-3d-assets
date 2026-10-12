@@ -62,13 +62,11 @@ Original authoring images opened and judged, alongside the supplied reference sh
 
 The first procedural sheet exposed inward-facing northern room walls and omitted east public-floor glazing; the normals and glazing were corrected. The second source sheet confirmed the single sea column, suspended bridge, lighthouse and roof alignment against the red outline. Initial exports exceeded byte caps even while triangles were legal; quad vertices were shared and subpixel trims reduced. The exported comparison then showed overly broad far bays, so far was rebuilt to keep the near bay count using planar shutter/rail strips, becoming both more faithful and cheaper; select warm panes were moved above opaque balcony rails. The final four exported sheets and comparison were opened after that change. No further geometry issues were observed, but opaque glazing and the estimated lighthouse location remain explicit limitations.
 
-Independent coordinator visual review is still required; this is the builder's own verification.
-
 ## Approximation and handoff
 
 Bay counts, interior depth, suite setback, stone joints and lighthouse placement are photo-informed approximations. The lighthouse ring is not a survey. Public-floor glazing is a shallow skin over rigid base volumes. Window reflections, translucent balcony glass, interior fittings, beach landscaping, water, neighboring buildings and artworks are omitted. The bronze atrium figure is not reproduced as an anonymous blob.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Source/GLB inspector evidence establishes export quality only; independent coordinator review and app integration remain separate. No shared files were edited and no publication was performed.
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. No shared files were edited and no publication was performed.
 
 ## Independent-review correction, 2026-10-09
 

@@ -57,7 +57,7 @@ Read the exported near/far and light/dark comparison beside the facade, aerial a
 | Near | 36,704 | 7 | 948 |
 | Far | 7,192 | 7 | 254 |
 
-All 108 tests in the specified two-file command pass (five landmark-specific tests); `node scripts/asset-catalog.mjs` passes with 164 entries and 280 variants. Focused tests observe the exterior and entrance columns by raycast, doorway clearance, recessed statue, cella floor, upward roof normals, three roof ridges, mapped containment and identical LOD bounds. Independent review and application integration remain separate coordinator checks.
+All 108 tests in the specified two-file command pass (five landmark-specific tests); `node scripts/asset-catalog.mjs` passes with 164 entries and 280 variants. Focused tests observe the exterior and entrance columns by raycast, doorway clearance, recessed statue, cella floor, upward roof normals, three roof ridges, mapped containment and identical LOD bounds.
 
 ## Rebuild and check
 

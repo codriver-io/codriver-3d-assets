@@ -111,6 +111,6 @@ Far retains the square precast window grid, sill/lintel masks and ribbon glass o
 
 The supplied independent review sheet and its reference tile were compared with the new exported sheet; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
 
-Evidence: `tmp/landmark-qa/fix/sheets/edifice-marie-guyart.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
+Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
 
-The scripted near camera stays on the far LOD for this tall tower, and the street angle is occluded by another building. Supplemental true-near views at bearing 60.7°, zoom 17.3 and pitch 65° show the grid and base in `tmp/landmark-qa/fix/{city,world}-alternate/edifice-marie-guyart-near.png`.
+The scripted near camera stays on the far LOD for this tall tower, and the street angle is occluded by another building.

@@ -26,46 +26,46 @@
   "dimensions": {
     "width": 170,
     "length": 75,
-    "height": 44
+    "height": 57.8
   },
   "elevationDatum": "Local y=0 is the rigid foundation plane; the host samples and places the model on flat ground or terrain. No DEM, elevation or Mercator scale is baked.",
   "footprint": "Approximate bounded architectural footprint in the rotated width × length envelope; public squares, streets and interior courtyards are excluded.",
-  "note": "44 m dome height published by Institut de France; half-moon frontage is documented. Wing curvature, lengths and openings are visual/map estimates.",
+  "note": "Half-moon frontage is documented. Crown proportions are estimated from the official facade photograph; authored 57.8 m overall height is a visual estimate, not the published 44 m dimension. Wing curvature, lengths and openings are visual/map estimates.",
   "provenance": "Original procedural geometry commissioned for Codriver in 2026. Official photographs and publications informed proportions only. OpenStreetMap coordinates used for geographic placement; no third-party mesh, image or texture is included.",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-institut-de-france-near.glb",
-      "bytes": 839204,
-      "triangles": 16481,
-      "drawCalls": 6,
+      "bytes": 1483184,
+      "triangles": 27593,
+      "drawCalls": 7,
       "bounds": {
         "min": [
-          -69.05996900447403,
+          -69.59100772532862,
           -2.3841858265427618e-8,
-          -35.8820371144372
+          -35.932507206584646
         ],
         "max": [
-          67.72501724716622,
-          44,
-          41.059625929310315
+          67.85851399428307,
+          57.79999923706055,
+          41.78130794911458
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-institut-de-france-far.glb",
-      "bytes": 164316,
-      "triangles": 4013,
-      "drawCalls": 6,
+      "bytes": 229532,
+      "triangles": 5453,
+      "drawCalls": 7,
       "bounds": {
         "min": [
-          -69.05996900447403,
+          -69.48027001527822,
           -2.3841858265427618e-8,
-          -35.8820371144372
+          -35.89970520205445
         ],
         "max": [
-          67.72501724716622,
-          44,
-          41.01172305654468
+          67.74777628423266,
+          57.79999923706055,
+          41.74850594458438
         ]
       }
     }

@@ -60,7 +60,7 @@ Scratch evidence is under `tmp/top-cities/shots/christopher-s-bond-bridge/` in t
 
 ## App integration evidence
 
-Local feature worktree only: standard Protomaps tiles from tiles.codriver.io. Cityscape port 3270; Terrarium terrain port 3272. Bundle stamp during QA: `97d93813b144`. No online deployment or rollout changes.
+Local feature worktree only: standard Protomaps tiles from tiles.codriver.io. Bundle stamp during QA: `97d93813b144`. No online deployment or rollout changes.
 
 | Mode / case | Status and evidence |
 | --- | --- |
@@ -92,4 +92,4 @@ Both ramp endpoints have exactly 0 height in the local standard-road run. A poin
 
 ## Limitations and review handoff
 
-Deck clearance, tower cross sections, bent spacing, cable diameter, rail fittings and lane widths are visual estimates. The mapped outline is less uniform than the published deck width, and only the bridge plus its road-fitting approaches is modelled, without the rest of kcICON. No rivets, construction cranes, old Paseo bridge, internal stairs, signs or animated lighting. The night palette is an approximation. The legacy terrain corridor can flatten bank relief; a terrain-preserving Missouri River datum/abutment integration needs separate work and review. HD surfaces and a driven route remain unverified locally. Independent reviewer acceptance is pending the coordinator's review; exports and documentation are ready for that review.
+Deck clearance, tower cross sections, bent spacing, cable diameter, rail fittings and lane widths are visual estimates. The mapped outline is less uniform than the published deck width, and only the bridge plus its road-fitting approaches is modelled, without the rest of kcICON. No rivets, construction cranes, old Paseo bridge, internal stairs, signs or animated lighting. The night palette is an approximation. The legacy terrain corridor can flatten bank relief; a terrain-preserving Missouri River datum/abutment integration needs separate work and review. HD surfaces and a driven route remain unverified locally.

@@ -96,7 +96,7 @@ Near 11,418 triangles / 10 draws / 613,208 bytes; far 3,002 / 7 / 168,080 (budge
 
 ## Placement
 
-`SPEC.height` is 28.8 m (lighthouse vane). **Cityscape: verified** in the running app (2026-10-01): it stays flat, the group stays at y = 0, no flatten zone exists, and `padM` (75 m) is not used. Screenshot: `tmp/landmark-qa/alcatraz/after-cityscape/alcatraz-island-near.png`.
+`SPEC.height` is 28.8 m (lighthouse vane). **Cityscape: verified** in the running app (2026-10-01): it stays flat, the group stays at y = 0, no flatten zone exists, and `padM` (75 m) is not used.
 
 **Full 3D world: verified** in the running app (2026-10-01; local server, AWS Terrarium DEM at z15), with the residual gaps below. `SPEC.terrainPad` replaces the default disc (`building-layer.js` reads it through `terrain-footprints.js#padFootprint`). The 75 m disc reached the island's slopes and took their lowest DEM sample (14.6 m) as the datum. That sank the complex about 23 m into a flattened pit and raised the bay round the island by up to 11 m. The pad now:
 
@@ -104,7 +104,7 @@ Near 11,418 triangles / 10 draws / 613,208 bytes; far 3,002 / 7 / 168,080 (budge
 * holds two terraces. The water tower's 15 m disc sits at the datum minus 2.5 m (its footings), with a 25 m feather. The recreation yard's wall line, pushed out 12 m, sits at the datum, with a 12 m feather. Each terrace reaches past its part because the app draws terrain on a lattice of about 30 m;
 * flattens nothing else and raises no water.
 
-The measurements below come from `tmp/landmark-qa/alcatraz/measure.mjs`. Each value is the part's base relative to the drawn ground: + means the part floats, - means it is sunk.
+Each value is the part's base relative to the drawn ground: + means the part floats, - means it is sunk.
 
 | Part | Before (75 m disc) | After (`terrainPad`) |
 | --- | --- | --- |
@@ -123,7 +123,7 @@ The measurements below come from `tmp/landmark-qa/alcatraz/measure.mjs`. Each va
 * The Dining Hall's west corner floats up to 1.9 m and the ruins 1.3 m. Both come from lattice interpolation.
 * The yard floor sits about 4 m above the DEM median, which is 33.4 m; the model puts the yard at the cellhouse grade.
 
-Terraces are offset in model metres, so they follow terrain exaggeration (`offsetM / k`); exaggeration other than 1 is not tested. Screenshots: `tmp/landmark-qa/alcatraz/before/` and `tmp/landmark-qa/alcatraz/after/` (far, near, street).
+Terraces are offset in model metres, so they follow terrain exaggeration (`offsetM / k`); exaggeration other than 1 is not tested.
 
 ## Verification evidence
 

@@ -43,7 +43,6 @@ Judged procedural sheet: `tmp/top-cities/shots/couvent-des-jacobins/couvent-des-
 
 Cityscape and Full 3D world: **not tested yet, integration is checked separately**. Device performance, provider mask lifecycle, terrain arrival, mode changes and pad behavior are not established by these asset checks.
 
-
 Initial authoring export evidence (superseded by the revision below): `tmp/top-cities/shots/couvent-des-jacobins/couvent-des-jacobins-final-comparison.jpg` places reference photos beside all eight exported GLB views for near/light, near/dark, far/light and far/dark; all four component `couvent-des-jacobins-glb-<near|far>-<light|dark>-sheet.jpg` sheets were included in that visual review. Also judged `couvent-des-jacobins-glb-near-light-top.png` for mapped footprint/orientation. The corrected apse is closed from the opposite facade, all four tower tiers remain open in far, and night colors preserve the brick silhouette. Convent roofs remain approximate; the small east annex roof is a simplified pointed hip rather than a smooth dome.
 
 | Export | Triangles | Draws | Bytes | KiB |
@@ -53,8 +52,7 @@ Initial authoring export evidence (superseded by the revision below): `tmp/top-c
 
 Focused landmark assertions pass in both LODs: sourced 45 m height, approximately 80 m church mass, both rose windows, door, four genuinely open belfry tiers with central supports, courtyard void, no below-grade vertices, mapped footprint containment with 0.55 m projection allowance, and near/far silhouette within 0.2 m. The three conformance checks for this landmark also pass (spec/catalog, geometry/budgets, and exported GLB/source/manifest agreement). The revision run passes all 256 focused tests, including the three Jacobins conformance cases and its three landmark-specific cases. Test output: `tmp/top-cities/couvent-des-jacobins/test-results-revision.txt`.
 
-`node scripts/asset-catalog.mjs` passes after revision: 209 entries / 400 GLB variants. The initial `qa-metrics.mjs --ids couvent-des-jacobins` run passed with zero coplanar pairs, zero back-face hits (210 intersecting sweep rays), zero removable bridgeLift, minimum Y=0, top=45 m and matching LOD silhouette; saved `tmp/top-cities/couvent-des-jacobins/qa-metrics.json`. Weathering-band rear planes, belfry floor interfaces and refectory glass offsets were corrected after the numeric sweep identified coincident surfaces. Full application integration and independent coordinator review remain outstanding; no shared files, git write commands, runtime build, installation or dev service were used.
-
+`node scripts/asset-catalog.mjs` passes after revision: 209 entries / 400 GLB variants. The initial `qa-metrics.mjs --ids couvent-des-jacobins` run passed with zero coplanar pairs, zero back-face hits (210 intersecting sweep rays), zero removable bridgeLift, minimum Y=0, top=45 m and matching LOD silhouette; saved `tmp/top-cities/couvent-des-jacobins/qa-metrics.json`. Weathering-band rear planes, belfry floor interfaces and refectory glass offsets were corrected after the numeric sweep identified coincident surfaces.
 
 ## Independent review revision, 2026-10-09
 

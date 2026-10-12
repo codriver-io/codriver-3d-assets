@@ -63,7 +63,7 @@ Read `tmp/top-cities/pegasus-bridge/after/pegasus-bridge.jpg` against the suppli
 
 ## Live HD evidence, 2026-10-11
 
-Isolated branch preview, runtime build `85aebb345d11`; Protomaps `tiles.codriver.io`, Redis 6391. Slot A used Cityscape 3270 and world 3272 with Terrarium DEM zoom ≤15. Ordinary approach/crossing stations, both banks and midspan were captured with HD enabled, paired against `landmarks=off`. Street captures at both banks face each driving direction. Files below are under ignored `tmp/top-cities/pegasus-bridge/hd-check/`:
+Isolated branch preview, runtime build `85aebb345d11`; Protomaps `tiles.codriver.io`, Redis 6391. Ordinary approach/crossing stations, both banks and midspan were captured with HD enabled, paired against `landmarks=off`. Street captures at both banks face each driving direction. Files below are under ignored `tmp/top-cities/pegasus-bridge/hd-check/`:
 
 - `cityscape-banks-sheet.jpg`, `cityscape-approaches-sheet.jpg`, `cityscape-street-sheet.jpg`: Cityscape on|off comparisons.
 - `world-banks-sheet.jpg`, `world-approaches-sheet.jpg`, `world-street-sheet.jpg`: Full 3D world on|off comparisons.
@@ -84,4 +84,4 @@ The world midpoint difference is the bank-to-bank ground datum minus the terrain
 
 ## Limits
 
-No bascule animation, gears/interior machinery, quay/water model or lettering. Heights, operating fittings, member sizes and foundations are photographic estimates. Cab overhang exceeds the tower shaft's cadastre footprint; structural tower access is separately accounted for beyond the roadway. Foundation material is consolidated blue-grey for draw economy. Live car/route/traffic/halo/camera motion, paint toggling, far LOD in the app, late/missing terrain, failed loads, repeated mode/reanchor/lifecycle transitions and Tesla hardware remain **not tested**. Updated independent review belongs to the coordinator; no staging rollout or publication occurred.
+No bascule animation, gears/interior machinery, quay/water model or lettering. Heights, operating fittings, member sizes and foundations are photographic estimates. Cab overhang exceeds the tower shaft's cadastre footprint; structural tower access is separately accounted for beyond the roadway. Foundation material is consolidated blue-grey for draw economy. Live car/route/traffic/halo/camera motion, paint toggling, far LOD in the app, late/missing terrain, failed loads, repeated mode/reanchor/lifecycle transitions and Tesla hardware remain **not tested**.

@@ -121,7 +121,6 @@ node .agents/skills/build-3d-city/scripts/qa-metrics.mjs --ids cite-de-l-espace 
 Only this landmark's source, record, documentation and exports changed; no
 shared runtime files, runtime clones, bundle build or deployment involved.
 
-
 ## Independent-review corrections (2026-10-09)
 
 Initial independent verdict: PASS-WITH-NITS, recognisability 4/5; three requested

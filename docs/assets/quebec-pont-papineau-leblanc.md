@@ -70,7 +70,7 @@ Tests: `pont-papineau-leblanc.test.js` (11: the published spans on the mapped al
 
 ### Cityscape: verified (local app, flat, no HD lanes)
 
-Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. `/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
+`/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
 
 - The layer loads `/models/bridges/pont-papineau-leblanc-{far,near}.glb`; active near and far.
 - `window.__map.landmarks.heightAt` on the southbound (d = +7.1, heading 142.5° and reversed) and northbound (d = −7.1, 322.5°) lanes, identical, each equal to the authored deck: Laval foot 0.00; ramp 40 m out 2.16; Laval end 5.12; over the service track 5.37; north end pier 6.04; north pylon 11.29; mid-span 11.30; south pylon 11.30; over the cycleway 7.52; Montréal end 6.63; ramp 75 m out 1.40; Montréal foot 0.00. **null** for a crossing heading (52°), 40 m beside the deck, and on the Lévesque exit and entrance, the service track, the cycleway, its footway and Boulevard Lévesque at their own headings (both ways).
@@ -78,7 +78,7 @@ Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. 
 
 ### Full 3D world: verified with `terrainPolicy: 'absolute-deck'` (local app, Terrarium DEM)
 
-Same bundle, terrain server on port 3272, `--mode world`. Terrain approaches 32.57 m (Laval) and 19.13 m (Montréal) at the alignment ends. Absolute deck = `heightAt` + ground under the probe (`queryGroundAt` / 1.429 stretch), identical for both carriageways and both headings, each equal to the real profile:
+Terrain approaches 32.57 m (Laval) and 19.13 m (Montréal) at the alignment ends. Absolute deck = `heightAt` + ground under the probe (`queryGroundAt` / 1.429 stretch), identical for both carriageways and both headings, each equal to the real profile:
 
 | Station | ground at the axis (m) | heightAt SB (m) | deck (m) |
 | --- | --- | --- | --- |

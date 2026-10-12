@@ -97,10 +97,8 @@ Tests: `node --test src/peregrine/landmarks/quebec/biodome-de-montreal/biodome-d
 
 QA 2026-10-11: spindle lift 0.45 m and shallow 0.12 m skylight caps, with dense roof-following louvres in near and simplified louvres retained in far. Skylight subdivisions avoid shell intersections; counts and positions remain photographic estimates.
 
-Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
-
 Current measured exports: near: 28,730 triangles / 6 draws / 719,924 bytes; far: 7,942 triangles / 5 draws / 218,168 bytes. Geometry metrics report no unresolved issues.
 
 Louvre bars use the dark frame material in both details; the skylight glass is muted dark grey-blue. The final far export has five material draws.
 
-Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.
+Current mode validation (2026-10-11): **Cityscape verified; Asset readiness and inspector output alone were not used to establish terrain verification.

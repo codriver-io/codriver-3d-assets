@@ -78,7 +78,7 @@ Tests: `pont-de-quebec.test.js` (12: published spans and arms centred on the map
 
 ### Cityscape: verified (local app, flat, no HD lanes)
 
-Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. `/osm-lanes` answers 503 locally, so HD lane paint, HD lateral fitting and the HD half of the leg mask were **not** checked; standard roads were. Probe `tmp/quebec/pont-de-quebec/probe2.mjs` (worktree scratch).
+`/osm-lanes` answers 503 locally, so HD lane paint, HD lateral fitting and the HD half of the leg mask were **not** checked; standard roads were. Probe `tmp/quebec/pont-de-quebec/probe2.mjs` (worktree scratch).
 
 - The layer loads `/models/bridges/pont-de-quebec-{far,near}.glb` with the two leg meshes visible and the leg mask on (3 standard tiles masked).
 - `window.__map.landmarks.heightAt` on both lanes (d = ±2.3, headings 157.6° and 337.6°, identical): 0.01 at the north foot, 10.80 / 24.80 / 38.80 at 60 / 130 / 200 m, 48.00 from the north end to the south end, 30.58 at the junction with the branch, 17.59 at s = 1400, 8.62 and 6.82 over Route Marie-Victorin's westbound and eastbound carriageways, 2.54 at 1470, 0.01 at the south foot, each equal to the authored deck. On the branch (inbound heading): 30.58, 28.64, 25.69, 22.97, 19.93, 14.31, 7.29, 1.68, 0.05 at t = 0, 10, 25, 40, 60, 100, 150, 190, 205 m, each its authored surface, null past its foot. **null** on every vertex of the Champlain exit, the on-ramp, the Marie-Victorin link and loop, the Champlain overpass and Route Marie-Victorin, at their own headings both ways.
@@ -86,7 +86,7 @@ Worktree bundle (`pnpm build:peregrine`), server on port 3270, Protomaps tiles. 
 
 ### Full 3D world: verified with `terrainPolicy: 'absolute-deck'` and the real-deck profile (local app, Terrarium DEM)
 
-Same bundle, terrain server on port 3272, `--mode world`. Terrain approaches 60.0 m (north) and 51.9 m (south), the new feet. Absolute deck = `heightAt` + ground (southbound lane; northbound within 0.45 m):
+Terrain approaches 60.0 m (north) and 51.9 m (south), the new feet. Absolute deck = `heightAt` + ground (southbound lane; northbound within 0.45 m):
 
 | Station | ground (m) | heightAt (m) | deck (m) |
 | --- | --- | --- | --- |

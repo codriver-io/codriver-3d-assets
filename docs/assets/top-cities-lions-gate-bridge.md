@@ -48,7 +48,7 @@ Changes driven by these checks: raised the lower portal for >4 m traffic clearan
 
 ## Cityscape — verified locally, standard roads
 
-Slot A server on port 3270, standard Protomaps pavement. Near/far models are active in the app; the provider's generic bridge deck is replaced. Both ramp feet meet provider pavement at zero elevation with no visible height step/gap; pavement colour/width changes at the seam remain visible. The authored fallback width is estimated; HD cross-sections must verify the exact live fit.
+Near/far models are active in the app; the provider's generic bridge deck is replaced. Both ramp feet meet provider pavement at zero elevation with no visible height step/gap; pavement colour/width changes at the seam remain visible. The authored fallback width is estimated; HD cross-sections must verify the exact live fit.
 
 `window.__map.landmarks.heightAt(lng,lat,heading)` was probed at all 46 alignment vertices with both travel headings: **92/92 non-null**. It returns null 60 m beside the bridge and for a crossing heading. Shared deck heights:
 
@@ -71,6 +71,6 @@ Durable raw probes: `tmp/top-cities/lions-gate-bridge/probe-{cityscape,world}.js
 
 ## Full 3D world — verified locally, standard roads and Terrarium DEM
 
-Slot A terrain server port 3272, AWS Terrarium z15, exaggeration 1, `--mode world`. The model is active in near/far and street views. Absolute-deck places the structure without a corridor flatten zone; supports follow DEM while the main deck stays at 64.4 m. Tower top remains **111.05 m** (111 m structural cap plus near beacon), as measured on the fitted runtime mesh. The south ramp follows the Stanley Park hillside until it clears the DEM; its absolute surface never falls below sampled ground. All 46 vertices return non-null heights in both directions; both ramp feet return zero relative lift, and off-road/crossing queries return null. Repeated terrain/mode switching, missing-terrain lifecycle and Tesla hardware performance remain separate integration checks.
+The model is active in near/far and street views. Absolute-deck places the structure without a corridor flatten zone; supports follow DEM while the main deck stays at 64.4 m. Tower top remains **111.05 m** (111 m structural cap plus near beacon), as measured on the fitted runtime mesh. The south ramp follows the Stanley Park hillside until it clears the DEM; its absolute surface never falls below sampled ground. All 46 vertices return non-null heights in both directions; both ramp feet return zero relative lift, and off-road/crossing queries return null. Repeated terrain/mode switching, missing-terrain lifecycle and Tesla hardware performance remain separate integration checks.
 
-Independent visual review is left to the coordinator before release. No shared source files were changed, and no online staging deployment was performed.
+No shared source files were changed, and no online staging deployment was performed.

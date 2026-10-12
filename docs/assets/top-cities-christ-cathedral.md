@@ -6,7 +6,7 @@ Editable source: `src/peregrine/landmarks/top-cities/christ-cathedral/`. Export 
 
 ## Sources and provenance
 
-Read the coordinator's OSM/facts dossier and six-photo Commons reference sheet first. Checked the exterior photo description/licence pages and the following primary sources on 2026-10-05:
+Checked the exterior photo description/licence pages and the following primary sources on 2026-10-05:
 
 - [Severud Associates, structural engineer](https://www.severud.com/cultural/garden-grove-community-church/): completed 1980, four-point plan, glazed walls and roof, 128-foot triodetic structure.
 - [Christ Cathedral parish, cathedral](https://www.christcathedralcalifornia.org/campus-architecture/christ-cathedral/): Johnson/Burgee, 1980, exterior retained through the 2017–2019 restoration, 10,660 mirrored panels. Its listed 120-foot height and 141-foot length disagree with the structural account and map envelope; they are not used as the exterior envelope.
@@ -46,7 +46,7 @@ The Crean Tower has open steel prisms, staggered tapered tips, an open central c
 
 Roof fold depths and ridge arrangement are inferred from oblique photos rather than survey drawings. Glazing grids are coarsened and opaque; reflections are material shading, without environment/photo textures. The spire reed layout and bell shapes are representative; chapel interior and 12 inner white columns are omitted. No organs, shade petals, statues, landscaping, pools, roads, surrounding buildings or underground rooms. Cathedral and tower are rigid on local grade. This campus appears approximately level; no hill or site relief is baked in, and no terrainPad terraces are declared. `padM=69` covers only the immediate modeled extent with normal feathering; actual DEM foundation behavior needs app review.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Duplicate provider removal, failure restoration, terrain arrival, mode transitions and actual Tesla performance are unverified. Independent visual review remains a coordinator/reviewer gate.
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Duplicate provider removal, failure restoration, terrain arrival, mode transitions and actual Tesla performance are unverified.
 
 ## Visual evidence and changes
 

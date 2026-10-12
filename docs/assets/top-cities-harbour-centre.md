@@ -156,7 +156,6 @@ passes all Harbour Centre checks; the standalone landmark tests take about
 Place documentation was completed by its owner. No shared files were edited,
 no git write commands were run, and no app server or full test suite was used.
 
-
 ## Accepted-review palette follow-up
 
 The independent review accepted the model **PASS-WITH-NITS, recognisability 5/5**.

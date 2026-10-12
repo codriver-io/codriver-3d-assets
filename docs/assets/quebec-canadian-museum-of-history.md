@@ -88,8 +88,6 @@ Cityscape (flat ground reference): not tested yet; integration is checked separa
 
 QA 2026-10-11: far retains public and curatorial ribbon glazing at near heights; dome shoulders are flatter and copper uses a muted weathered tone. Footprints and mapped crown heights remain unchanged.
 
-Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
-
 Current measured exports: near: 18,249 triangles / 9 draws / 1,116,252 bytes; far: 4,001 triangles / 4 draws / 250,708 bytes. Geometry metrics report no unresolved issues.
 
-Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.
+Current mode validation (2026-10-11): **Cityscape verified; Asset readiness and inspector output alone were not used to establish terrain verification.

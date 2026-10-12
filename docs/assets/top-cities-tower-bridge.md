@@ -53,13 +53,13 @@ Focused conformance plus landmark tests: 93 passing, under 1 second total on thi
 
 The reference sheet was opened before modelling. Procedural contact sheets inspected: `tmp/top-cities/shots/tower-bridge/tower-bridge-procedural-near-light-sheet.jpg` and `iteration2/tower-bridge-procedural-near-light-sheet.jpg`, each overview/front/back/above/street/underside/tower. First-look fixes: corrected winding after the reflected station/lateral transform, added pointed window heads and facade crests. Deterministic ray checks then exposed inverted ribbon pavement, corrected its winding, separated internal coplanar buttress toes and omitted invisible approach ground faces. The final exported GLBs were inspected in `tmp/top-cities/shots/tower-bridge/final/export-reference-sheet.jpg`, which combines all four near/far light/dark sheets beside the dossier photos. Each variant includes overview, facade, back, above, street, underside and close tower views. The blue side chains, pointed tower crowns, twin walkways, roadway arches and open river channel read consistently; far preserves silhouette while simplifying windows and lanterns. Night retains the structure but is much dimmer than the real floodlit bridge, a documented approximation.
 
-`app-mode-sheet.jpg` combines the prescribed application far/near/street captures for Cityscape and world. Both exported LODs loaded and the model replaced the generic bridge without a second deck in the shots. Local bundle built successfully; standalone catalog/inspector generated through `pnpm assets:preview`. No shared source changes were required. Independent review remains the coordinator's delivery gate.
+`app-mode-sheet.jpg` combines the prescribed application far/near/street captures for Cityscape and world. Both exported LODs loaded and the model replaced the generic bridge without a second deck in the shots. Local bundle built successfully; standalone catalog/inspector generated through `pnpm assets:preview`. No shared source changes were required.
 
 ## Mode verification
 
-Cityscape: **verified locally for standard roads**, Protomaps tiles, bundle build 4f3ccdcf4639, port 3270; near/far GLBs active. The height API matches the deck in both directions, starts and ends at zero, returns null for crossing headings and 30 m off-road. Full route/car playback was not exercised.
+The height API matches the deck in both directions, starts and ends at zero, returns null for crossing headings and 30 m off-road. Full route/car playback was not exercised.
 
-Full 3D world: **verified locally for standard roads and terrain fitting**, port 3272, AWS Terrarium DEM z15. Absolute deck stays at 8.5 m between the ramp crests; supports meet the DEM and the ramps blend into terrain roads. This validates this illustrative datum, not surveyed tide/Ordnance Datum accuracy. Ground is converted from Mercator world units by the latitude stretch 1.60658 exactly once.
+Absolute deck stays at 8.5 m between the ramp crests; supports meet the DEM and the ramps blend into terrain roads. This validates this illustrative datum, not surveyed tide/Ordnance Datum accuracy. Ground is converted from Mercator world units by the latitude stretch 1.60658 exactly once.
 
 Height samples from the live app (forward and reverse are equal; all crossing-heading samples are null):
 

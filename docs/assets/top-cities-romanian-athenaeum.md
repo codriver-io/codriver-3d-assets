@@ -22,7 +22,7 @@ Source folder: `src/peregrine/landmarks/top-cities/romanian-athenaeum/`. Build: 
 | Lantern roof / finial | 28.3 / 31 m | Detailed OSM parts 1493204404: 28 m and 1493204405: 31 m |
 | Total height published elsewhere | **41 m, deliberately not used** | Parent OSM way 16291602 and the construction article; conflicts with detailed part heights and photo ratios |
 
-The 41 m versus 31 m discrepancy is unresolved. The coordinator explicitly agreed to preserve the detailed mapped and photograph-supported 31 m profile rather than stretch the whole building vertically. Neither value is represented as a new survey measurement. The detailed model has a 29.16 m external drum and a roughly 12 m column order, consistent with the facade photos; all individual vertical levels beyond the mapped tags remain estimates.
+The 41 m versus 31 m discrepancy is unresolved. Neither value is represented as a new survey measurement. The detailed model has a 29.16 m external drum and a roughly 12 m column order, consistent with the facade photos; all individual vertical levels beyond the mapped tags remain estimates.
 
 Sources checked on 2026-10-05:
 
@@ -56,8 +56,7 @@ Exported default-scene costs, uncompressed GLB:
 
 Under the building caps of 60k / 14 / 2.5 MB and 12k / 8 / 500 KB. These are asset costs, not measured device performance.
 
-Visual QA and focused verification evidence follow. Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Foundation/pad behavior, late/failed loads, provider replacement and Tesla hardware remain unverified; no runtime edits were made. Independent review is pending with the coordinator.
-
+Visual QA and focused verification evidence follow. Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Foundation/pad behavior, late/failed loads, provider replacement and Tesla hardware remain unverified; no runtime edits were made.
 
 ### Screenshots actually judged
 
@@ -71,5 +70,5 @@ Opened `tmp/top-cities/shots/romanian-athenaeum/final/comparison-sheet.jpg` afte
 - `node scripts/asset-catalog.mjs`: valid. Exact output saved in ignored `tmp/top-cities/romanian-athenaeum/catalog-result.txt`.
 - `node .agents/skills/build-3d-city/scripts/qa-metrics.mjs --ids romanian-athenaeum --out tmp/top-cities/romanian-athenaeum/metrics.json`: clean, **zero different-material coplanar pairs**, **0% back-face hits across 282 intersecting rays**, no leftover bridgeLift attribute. It originally found hidden small-cap bases sharing the roof bottom plane at y=11.5; raising those embedded bases to 11.62 cleared the overlap without changing the visible silhouette.
 - `SPEC.ready = true`; texture-free near/far exports and catalog record are complete.
-- The shared `pnpm assets:preview` generator writes outside this worker's owned scratch directories and was left for the coordinator; landmark-local screenshots used the approved shot helper without starting a persistent dev server.
+
 - Independent visual review, Cityscape, Full 3D world and real hardware remain pending. No shared file changes were needed.

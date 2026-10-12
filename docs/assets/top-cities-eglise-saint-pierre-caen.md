@@ -45,7 +45,6 @@ Viewed procedural evidence:
 
 Final exported GLB visual evidence, costs and numeric QA are recorded below. Cityscape and Full 3D world: **not tested yet, integration is checked separately**. Asset inspection does not verify provider replacement, terrain behavior, runtime lifecycle or device performance.
 
-
 Final comparison judged: `tmp/top-cities/shots/eglise-saint-pierre-caen/final/comparison.jpg` places DennisPeeters’ west-front photo and Kahouanne’s chevet photo above all seven GLB views (overview, facade, back, roof, entrance, tower, chevet) in near/light, near/dark, far/light and far/dark. The four component `eglise-saint-pierre-caen-glb-<near|far>-<light|dark>-sheet.jpg` sheets are in the same directory. The exported models preserve the rose, tower needle, open belfry and stepped chevet; far intentionally simplifies tracery and spire niches. The reference chevet’s exact sculpted capitals and chapel roof details remain approximate. The final roof view includes the mapped red ring. No detached structure or changed rotation was seen after export.
 
 Numeric QA exposed reversed aisle-roof triangles; their winding was corrected and the hidden horizontal nave-roof base was removed where it coincided with masonry. Final `tmp/top-cities/eglise-saint-pierre-caen/qa-metrics.json`: no flagged issue, zero back-face hits in 164 intersecting sweep rays, zero removable bridgeLift, grade 0 and top 75 m. Seven small internal masonry/trim coincidence candidates total approximately 1 m² at the west gable/buttress junction, below the artifact threshold; they produced no visible flicker in the judged sheets.
@@ -58,7 +57,6 @@ Numeric QA exposed reversed aisle-roof triangles; their winding was corrected an
 All three landmark-specific tests pass (approximately 0.7 s): sourced height and finial, actual open triple belfry bays and mullion support, rose/portal/chevet raycasts, estimated roof ridge, no below-grade vertices, mapped footprint with a 0.8 m cornice allowance, and near/far bounds within 0.5 m. All three Saint-Pierre registry conformance cases pass, including source/GLB bounds, materials and byte metrics. Final required command output is saved to `tmp/top-cities/eglise-saint-pierre-caen/test-results-final.txt`; it reported 290 passes and two failures belonging to other active builders: abbaye-aux-dames far geometry over budget and a transient cathedrale-de-bayeux catalog/readiness mismatch. All six Saint-Pierre cases passed.
 
 `node scripts/asset-catalog.mjs` passes: 222 entries / 424 GLB variants; output saved to `tmp/top-cities/eglise-saint-pierre-caen/catalog-check-final.txt`. Earlier transient unregistered Bayeux exports and missing sibling authoring helpers resolved without edits to any shared or sibling file. No git writes, installation command, full suite, app bundle, local launcher or persistent development server was run. Independent reviewer approval and both placement modes remain separate.
-
 
 ## Independent-review revision, 2026-10-10
 

@@ -59,7 +59,7 @@ The landmark tests check mapped plan dimensions, the estimated 26 m rear crown a
 
 The requested two-file test command passed **117/117 tests**, including all three Teatro conformance checks and its six dedicated tests. The global catalog check passed on retry: **164 entries / 296 GLB variants valid**; its earlier failure was another worker's absent St Peter's Basilica document, and no other landmark files were edited.
 
-Deterministic exported QA is saved at `tmp/top-cities/teatro-nacional-de-costa-rica/qa-metrics.json`: no budget or silhouette issues, **zero coplanar pairs**, zero back-face hits (391 intersecting sweep rays), no geometry below grade and no removable bridge attributes. Final measured costs are recorded in the exported manifest and below; actual Tesla performance is unmeasured. The coordinator's independent visual review remains pending.
+Deterministic exported QA is saved at `tmp/top-cities/teatro-nacional-de-costa-rica/qa-metrics.json`: no budget or silhouette issues, **zero coplanar pairs**, zero back-face hits (391 intersecting sweep rays), no geometry below grade and no removable bridge attributes. Final measured costs are recorded in the exported manifest and below; actual Tesla performance is unmeasured.
 
 | Exported default scene | Triangles | Draws | Bytes | KiB |
 | --- | ---: | ---: | ---: | ---: |

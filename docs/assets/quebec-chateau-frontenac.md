@@ -144,6 +144,6 @@ Muted red-brown brick and quieter stone trim replace the orange/pale contrast; t
 
 The supplied independent review sheet and its reference tile were compared with the new exported sheet; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
 
-Evidence: `tmp/landmark-qa/fix/sheets/chateau-frontenac.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
+Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
 
 Far also retains framed window rows on the large round towers and hexagonal tower, with their roof dormers.

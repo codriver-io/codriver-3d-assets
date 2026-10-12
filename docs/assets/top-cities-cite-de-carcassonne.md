@@ -60,7 +60,7 @@ Focused tests check both published 30 m tower tips by raycast, open gate and sol
 
 ## Limitations and handoff
 
-Curtain heights, tower-by-tower elevation variations, roof profiles and church detailing are estimates. Gateway spur-form shafts are simplified circles. Roof intersections remain at castle wing joins; windows are dark surface panels rather than carved openings. Individual house facades, timber hoarding/drawbridge detail, trees and the hill/scarp are omitted. The 4 m eave/gateway tolerance is explicit, not a claim of survey precision. The original independent review was PASS-WITH-NITS (recognition 3/5); the review follow-up improves all four named massing/palette issues and awaits the coordinator’s acceptance of the revision.
+Curtain heights, tower-by-tower elevation variations, roof profiles and church detailing are estimates. Gateway spur-form shafts are simplified circles. Roof intersections remain at castle wing joins; windows are dark surface panels rather than carved openings. Individual house facades, timber hoarding/drawbridge detail, trees and the hill/scarp are omitted. The 4 m eave/gateway tolerance is explicit, not a claim of survey precision.
 
 **Current terrain-fit status (2026-10-10): Cityscape verified; Full 3D world verified for the documented cameras and terrain on/off checks below.** No runtime, terrain gate, road, shared renderer, other landmark or shared catalog files were edited. Terrain arrival, large hillside datum differences, provider replacement and regional-to-street transitions still need app validation.
 
@@ -84,7 +84,6 @@ node .agents/skills/build-3d-city/scripts/qa-sheet.mjs --ids cite-de-carcassonne
 ```
 
 Looked at both `revision-1/cite-de-carcassonne.jpg` and `revision-2/cite-de-carcassonne.jpg`: exported near/far, opposite oblique views, street elevation, close west elevation and plan next to the dossier aerial. The first showed overly uniform roof rows; the second staggers their ends and heights and mutes the tile orange. The roofscape remains deliberately coarse. Near/far dark sheets in `revision-2/` verify the same new massing with night palettes. Revision metrics report **zero issues, zero coplanar overlaps, zero back-face hits and zero removable lift bytes**. Both modes remain **not tested yet, integration is checked separately**.
-
 
 ## Full 3D world terrain-fit revision (2026-10-10)
 
@@ -114,14 +113,12 @@ Final exported costs replace the earlier table for this revision:
 
 Both remain within their hard byte, triangle and draw budgets. `terrain-metrics.json` reports zero issues, coplanar pairs, back-face hits and removable lift bytes. The standard Prepare equivalents are the named export command, `qa-metrics.mjs --ids cite-de-carcassonne`, and `qa-sheet.mjs --ids cite-de-carcassonne`; REVIEW.md supplies no literal Prepare command. Two look/fix rounds only were used. Inspected the new `terrain-2/inspector/cite-de-carcassonne.jpg` near/far sheet next to the dossier aerial and `terrain-2/before-after-world-cityscape.jpg`: first two rows compare the lead’s original north/west world views to the corrected views; third row gives south/east world; last two rows show all four Cityscape fronts. Scratch root: `tmp/top-cities/shots/cite-de-carcassonne/`.
 
-The real app ran on approved slot A **3270/3272**. Final world edge reports show seven offset meshes and a 208.73 Mercator-unit group datum (152.12 real metres at this latitude); Cityscape reports zero offset meshes and zero datum. Far/near/street shots are under `terrain-2/world/`. The final live toggle check (`app-toggle.json`) verifies far/near loads, terrain off/on/off, exact restored source Y values and no cumulative drift. Local account/CORS and unavailable HD-lane endpoints appear in app logs; model and terrain loads succeed. Local HD lane paint and device performance are not asserted.
+Final world edge reports show seven offset meshes and a 208.73 Mercator-unit group datum (152.12 real metres at this latitude); Cityscape reports zero offset meshes and zero datum. Far/near/street shots are under `terrain-2/world/`. The final live toggle check (`app-toggle.json`) verifies far/near loads, terrain off/on/off, exact restored source Y values and no cumulative drift. Local account/CORS and unavailable HD-lane endpoints appear in app logs; model and terrain loads succeed. Local HD lane paint and device performance are not asserted.
 
 **Cityscape: verified** flat silhouette from all four fronts, with the original grade and structure heights. **Full 3D world: verified** for terrain fit, four edge views, regional-to-street LOD progression and terrain toggles with the stated z15 limitations. Wider device/exaggeration and provider lifecycle rollout remains separate.
-
-Coordinator-approved shared changes (commit separately from the landmark):
 
 - `building-layer.js`: optional `mesh.userData.terrainOffsets` runs; save immutable Y once, update on mode/LOD change, recompute bounds, restore exactly on terrain off; no per-frame traversal and no mutation for ordinary GLBs.
 - `registry-landmarks-layer.js`: forward terrain enabled state from `setGroundY` to buildings.
 - `building-layer.test.js`: plain-model compatibility, load-before-terrain / terrain-before-load, near/far changes, exact repeated-toggle restoration and no per-frame traversal.
 
-All **454** requested focused tests pass, including the eleven Carcassonne tests, shared landmark layer tests, top-cities conformance, Alcatraz and terrain-footprint tests. `node scripts/asset-catalog.mjs` passes (212 entries / 412 variants). No other landmark was edited; no deployment or git write was performed. Preview bundles were built for verification and restored afterward, and slot A servers were stopped.
+All **454** requested focused tests pass, including the eleven Carcassonne tests, shared landmark layer tests, top-cities conformance, Alcatraz and terrain-footprint tests. `node scripts/asset-catalog.mjs` passes (212 entries / 412 variants). No other landmark was edited; no deployment or git write was performed.

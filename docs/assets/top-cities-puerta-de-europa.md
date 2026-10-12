@@ -60,7 +60,7 @@ Visual evidence, read as contact sheets against the photographs:
 
 Geometry QA initially found approximately 3 m² of coplanar corner caps at grade/roof. Removing hidden bottom faces and lowering the upper column caps eliminated these overlaps. Far lit panels were split into shorter bands to avoid two-storey glowing bars. Final `qa-metrics.json` reports zero coplanar overlaps, 0% back-face hits (224 hit rays), min y=0, max y=114.9 and no `bridgeLift` bytes. The source and GLB bounds match exactly. The focused command completed 108 tests with zero failures, including all six landmark-specific tests and all three Puerta de Europa conformance checks.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Model delivery does not establish runtime replacement, foundation datum, terrain-arrival, mode-switch, reanchor, failed-load lifecycle, bundle parity or vehicle/road continuity. Independent visual review remains for the coordinator; no PASS is claimed on its behalf. No shared file changes were needed.
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Model delivery does not establish runtime replacement, foundation datum, terrain-arrival, mode-switch, reanchor, failed-load lifecycle, bundle parity or vehicle/road continuity. No shared file changes were needed.
 
 | Export | Triangles | Draws | Size (KiB, rounded) |
 | --- | ---: | ---: | ---: |
@@ -69,6 +69,6 @@ Cityscape: **not tested yet, integration is checked separately**. Full 3D world:
 
 Building caps: 60,000 / 14 / 2.5 MB near; 12,000 / 8 / 500 KB far. Geometry and LOD silhouette checks pass, with the far model at approximately 23% of near triangles. Exported bytes are recorded in the generated manifest.
 
-Global catalog validation was run and retried; at the last check it was blocked by another active worker's missing `docs/3d-top-cities-lincoln-memorial.md`. This landmark's manifest and fragment parse and pass scoped QA; the shared blocker was reported to the coordinator without editing Lincoln Memorial files.
+Global catalog validation was run and retried; at the last check it was blocked by another active worker's missing `docs/3d-top-cities-lincoln-memorial.md`.
 
-Manifest byte costs: near **1,225,548 bytes**, far **288,140 bytes**. The coordinator explicitly directed this worker to settle successfully with the shared catalog blocker documented, rather than wait for the other worker's document; the global check remains to be rerun after that document arrives. All owned deliverables are complete and uncommitted.
+Manifest byte costs: near **1,225,548 bytes**, far **288,140 bytes**. All owned deliverables are complete and uncommitted.

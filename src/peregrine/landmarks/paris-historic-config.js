@@ -21,8 +21,8 @@ export const PARIS_HISTORIC = [
     note:'108 × 43 × 30 m and 52 columns, each 20 m, published by Ville de Paris. Stylobate and cella setback are estimates.'
   },
   {
-    id:'paris-institut-de-france',name:'Institut de France',...PARIS_BUILDING_FRAMES['paris-institut-de-france'], width:170,length:75,height:44,pad:85,
-    note:'44 m dome height published by Institut de France; half-moon frontage is documented. Wing curvature, lengths and openings are visual/map estimates.'
+    id:'paris-institut-de-france',name:'Institut de France',...PARIS_BUILDING_FRAMES['paris-institut-de-france'], width:170,length:75,height:57.8,pad:85,
+    note:'Half-moon frontage is documented. Crown proportions are estimated from the official facade photograph; authored 57.8 m overall height is a visual estimate, not the published 44 m dimension. Wing curvature, lengths and openings are visual/map estimates.'
   },
 ];
 export const PARIS_HISTORIC_BY_ID=Object.fromEntries(PARIS_HISTORIC.map(s=>[s.id,s]));

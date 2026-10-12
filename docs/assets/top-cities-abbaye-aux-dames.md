@@ -47,7 +47,6 @@ The final exported comparison sheet was opened and judged: `tmp/top-cities/shots
 
 No shared source, runtime renderer, roads, terrain gates, deployment or git history were changed. Rebuild with `pnpm build:top-cities-landmarks abbaye-aux-dames --no-check`.
 
-
 ## Independent review corrections
 
 All four findings in `tmp/top-cities/review/abbaye-aux-dames/REVIEW.md` were addressed in one new visual iteration. That file contains no Prepare command and no `REVIEW-2.md` exists, so the standard exported-GLB preparation was run instead:

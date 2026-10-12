@@ -42,7 +42,6 @@ See the [refinement notes](../paris-street-level-refinement.md) for references, 
 
 First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-louvre.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-louvre-roof-or-structure.png).
 
-
 ## Second architectural pass
 
 Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid location (170, 0) follows the schematic court frame and needs surveyed geographic alignment.
@@ -52,7 +51,6 @@ See [references and validation](../paris-second-pass.md).
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-louvre.png) · [near GLB roof](../screenshots/paris-second-pass/paris-louvre-roof.png).
 
 Rendering fixes: see the [window, niche and roof-support corrections](../paris-rendering-fixes.md).
-
 
 ## Geographic registration revision
 

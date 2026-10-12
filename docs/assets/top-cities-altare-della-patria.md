@@ -70,7 +70,7 @@ Research sheet: `tmp/top-cities/altare-della-patria/refs-sheet.jpg`.
 2. `tmp/top-cities/shots/altare-della-patria/iteration2/altare-della-patria-procedural-near-light-sheet.jpg`: confirmed closed stair massing and added rear articulation. Exported deterministic QA then found the portico floor coplanar with the podium roof; the floor now stands 0.18 m above it. Flame bowls were moved onto their support ledge.
 3. `tmp/top-cities/shots/altare-della-patria/final/comparison-sheet.jpg`: the exported GLBs alongside supplied reference photos, near/far, light/dark; frontal, opposite/rear, above, street, close portico, quadriga and mapped top. Confirmed overall recognizable portico/twin quadriga silhouette, open bays, supported sculptures and consistent near/far massing. Top view shows the mapped outline and the museum extension separately. Source and exports have matching bounds/materials.
 
-Individual captures and four raw GLB contact sheets remain under the same `final/` directory. Builder visual verification is complete. Independent reviewer PASS/PASS-WITH-NITS remains the coordinator's release gate.
+Individual captures and four raw GLB contact sheets remain under the same `final/` directory. Builder visual verification is complete.
 
 ## Placement modes
 

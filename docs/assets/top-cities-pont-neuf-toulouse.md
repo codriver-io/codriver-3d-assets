@@ -26,8 +26,7 @@ Approximations: arch rise and detailed basket curvature, deck datum, pier height
 
 Verification: initial procedural near/light contact sheet `tmp/top-cities/shots/pont-neuf-toulouse/pont-neuf-toulouse-procedural-near-light-sheet.jpg` opened in overview/front/back/roof/deck/underside/pier/detail views against the dossier. It exposed inward-facing mortar and cutwater faces; winding was corrected before export. Further exported and runtime evidence follows.
 
-The first Full 3D world inspection exposed an invalid absolute-deck policy for this local-grade asset (buried arch crowns at the bank terrain altitude); changed to the existing bank-fit policy with per-station support weights. Cityscape / Full 3D world verification continues below. Independent reviewer acceptance remains a coordinator gate.
-
+The first Full 3D world inspection exposed an invalid absolute-deck policy for this local-grade asset (buried arch crowns at the bank terrain altitude); changed to the existing bank-fit policy with per-station support weights. Cityscape / Full 3D world verification continues below.
 
 Final exported GLB contact sheet opened: `tmp/top-cities/shots/pont-neuf-toulouse/export-reference-contact-sheet.jpg`, with four dossier photos beside overview/front/back/above/deck/underside/pier/detail for near/far and light/dark. All seven river arches and six flood tunnels survive both LODs. Coarse far voussoirs and smooth unweathered brick remain deliberate simplifications; the stone flood surrounds approximate the original rough ornament. Coplanar flags at pier parapet seams and cutwater course strips were removed; initial-build QA reports **0 overlapping material pairs, 0% back-facing exterior hits on 69 rays, minY 0, top 16.629 m**. All structural vertices fit the mapped outline within its 0.8 m provider slack (worst offset 0.726 m at an estimated cutwater); fallback approach pavement extends beyond that outline along the mapped roadway.
 
@@ -54,8 +53,7 @@ Live height samples below are metres relative to the query ground and are identi
 | East ramp end minus 1 m | 0.001971 | -0.015086 |
 | East approach end, s=442.214 | 0 | approximately 0 |
 
-World terrain-ready was true: bank ground at the two structural banks 137.4885 / 141.0539 m, at fourth pier 134.2987 m versus query ground 134.0000 m. The -1.5 cm east-end query-ground interpolation discrepancy is negligible in the inspected standard pavement but should be rechecked with HD coverage. Real road/deck datum remains estimated. Actual moving route/car/traffic/camera behavior, load failures, reanchoring, mode-transition lifecycle, terrain replacement, exaggerated/negative terrain and device performance are not tested. Independent reviewer acceptance and HD-enabled integration remain coordinator gates; there are no shared-file changes, deployments or external publications.
-
+World terrain-ready was true: bank ground at the two structural banks 137.4885 / 141.0539 m, at fourth pier 134.2987 m versus query ground 134.0000 m. The -1.5 cm east-end query-ground interpolation discrepancy is negligible in the inspected standard pavement but should be rechecked with HD coverage. Real road/deck datum remains estimated. Actual moving route/car/traffic/camera behavior, load failures, reanchoring, mode-transition lifecycle, terrain replacement, exaggerated/negative terrain and device performance are not tested.
 
 Independent review revision (October 2026): all four requested corrections are retained in both LODs, based on the existing licensed dossier photos rather than new research. The mapped dimensions, seven unequal arches, six through-pier tunnels and bank-fit profile are unchanged; color, ring thickness and cutwater proportions remain photographic estimates.
 
