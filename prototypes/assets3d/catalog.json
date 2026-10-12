@@ -21192,6 +21192,840 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "alex-fraser-bridge",
+      "name": "Alex Fraser Bridge",
+      "kind": "bridge",
+      "city": "Delta",
+      "location": "Highway 91, Annacis Island–North Delta, British Columbia",
+      "status": "ready",
+      "description": "Original procedural 1986 cable-stayed crossing in its seven-lane configuration: two concrete open H towers, double-plane modified fan stays, composite deck and curved approach viaducts.",
+      "manifest": "/models/bridges/alex-fraser-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/alex-fraser-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks alex-fraser-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-12; no mesh tracing, photograph or texture shipped. Geographic data © OpenStreetMap contributors, ODbL 1.0. Visual references only: Alex Fraser Bridge, Euan Forrester, CC BY-SA 2.0; Alex Fraser Bridge 01 and 05, Joe Mabel, CC BY-SA 3.0, licences checked on Commons. Reference files remain ignored scratch.",
+        "references": [
+          {
+            "label": "ETH Zürich structural engineering course: 465 m span, 32 m deck, 154 m tower, 57 m clearance",
+            "url": "https://concrete.ethz.ch/assets/brd/autographies/cable-supported-bridges-part-2-cable-stayed-bridges-2024-02-13_notes_inv.pdf"
+          },
+          {
+            "label": "Current identity and seven-lane configuration",
+            "url": "https://en.wikipedia.org/wiki/Alex_Fraser_Bridge"
+          },
+          {
+            "label": "Mapped complete bridge outline",
+            "url": "https://www.openstreetmap.org/way/820900975"
+          },
+          {
+            "label": "Euan Forrester: aerial reference (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alex_Fraser_Bridge.jpg"
+          },
+          {
+            "label": "Joe Mabel: side elevation (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alex_Fraser_Bridge_01.jpg"
+          },
+          {
+            "label": "Joe Mabel: H tower detail (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Alex_Fraser_Bridge_05.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/alex-fraser-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=alex-fraser-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=underside"
+          },
+          {
+            "label": "North landing",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=north-landing"
+          },
+          {
+            "label": "South landing",
+            "url": "/asset-preview.html?asset=alex-fraser-bridge&view=south-landing"
+          }
+        ]
+      },
+      "notes": "Sourced main span 465 m, deck width 32 m, towers 154 m and soffit clearance 57 m. Estimated tower stations, shaft/crossbeam sections, side spans, cable count and support spacing; static reversible median. Flat ramps 8.24% north / 7.68% south. Landing-only taper corrects review b4b square ends; no shared renderer changes. Near 70,516 triangles / 28 draws / 2703 KiB; far 26,996 / 6 / 744 KiB. Near paint is 12 cm proud and omitted far. Named structural contacts, rigid-span preservation, repeated terrain restoration, zoom and theme fitting tested. Independent re-review remains before publication.",
+      "documentation": "docs/assets/top-cities-alex-fraser-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "frauenkirche-munich",
+      "name": "Frauenkirche",
+      "kind": "building",
+      "location": "Munich, Germany",
+      "status": "ready",
+      "description": "Munich’s late Gothic brick cathedral: twin green Welsche Hauben domes over battered towers, steep red tiled roof, tall pointed lights and a faceted eastern choir.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/frauenkirche-munich/geometry.js",
+        "build": "pnpm build:top-cities-landmarks frauenkirche-munich",
+        "provenance": "Original procedural geometry authored 2026-10-12. Mapped church outline and all 12 subordinate provider parts © OpenStreetMap contributors (ODbL 1.0). Reference photos inspected only, not redistributed: Frauenkirche Munich - View from Peterskirche Tower2 (Diliff, CC BY 2.5); Munich Frauenkirche (Bmdavll, CC BY-SA 3.0); Katedrala, München - tornjevi (Silverije, CC BY-SA 4.0). No scan, third-party mesh or texture used.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Frauenkirche,_Munich"
+          },
+          {
+            "label": "OSM church outline and parts",
+            "url": "https://www.openstreetmap.org/way/225698612"
+          },
+          {
+            "label": "Aerial reference — Diliff, CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich_-_View_from_Peterskirche_Tower2.jpg"
+          },
+          {
+            "label": "Front towers — Bmdavll, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Munich_Frauenkirche.jpg"
+          },
+          {
+            "label": "Tower detail — Silverije, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Katedrala,_M%C3%BCnchen_-_tornjevi.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/frauenkirche-munich/geometry.js"
+      },
+      "notes": "Published north/south tips 98.57 / 98.45 m; plan 109 × 40 m. OSM main ridge/eaves 60 / 30 m; guessed sacristy ridge 22 m. Dome profile, battered tiers, clock faces, belfry bays and dormers estimated from photographs. Interior, individual masonry and temporary scaffolding omitted. Seven merged texture-free materials in both LODs.",
+      "documentation": "docs/assets/top-cities-frauenkirche-munich.md",
+      "manifest": "/models/buildings/frauenkirche-munich.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=frauenkirche-munich&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=frauenkirche-munich&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=frauenkirche-munich&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=frauenkirche-munich&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=frauenkirche-munich&view=back"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=frauenkirche-munich&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=frauenkirche-munich&view=detail"
+          }
+        ]
+      },
+      "city": "Munich",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ironworkers-memorial-bridge",
+      "name": "Ironworkers Memorial Second Narrows Crossing",
+      "kind": "bridge",
+      "location": "Vancouver – North Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Original road-fitted deck-truss cantilever with the curved lower chords, 335 m main span, 103 m suspended centre, north truss/concrete approaches, caissons, six-lane deck and fenced cycle paths.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ironworkers-memorial-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ironworkers-memorial-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-12. Roadway alignment/deck outline © OpenStreetMap contributors, ODbL 1.0. Reference only: 2nd-narrows-bridge-2.jpg, EdwardFIrvine, CC BY-SA 4.0; Ironworkers Memorial Bridge Vancouver BC.jpg, Webgeer / photo-tips.ca, CC BY-SA 2.5; TCH-1 West - Facing Mountains from Bridge (50737840087).jpg, formulanone, CC BY-SA 2.0. BC Ministry 2018 report figures 2.3 and 3.1 used for structural proportions only. Mesh original; no images redistributed.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ironworkers_Memorial_Second_Narrows_Crossing"
+          },
+          {
+            "label": "BC Ministry / MMM, 2018 Vessel Collision Risk Assessment, sections 1.2 and 3.1, figures 2.3 and 3.1",
+            "url": "https://www2.gov.bc.ca/assets/gov/driving-and-transportation/reports-and-reference/reports-and-studies/lower-mainland/2018-03-16-ironworkers-risk-assessment.pdf"
+          },
+          {
+            "label": "SEABC / IABSE 2017 Notable Structures, page 45",
+            "url": "https://www.seabc.ca/wordpress/files/notable_structures/Vancouver_Notable_Structures_IABSE_SEABC_2017.pdf"
+          },
+          {
+            "label": "Webgeer side photograph (CC BY-SA 2.5; credit photo-tips.ca)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ironworkers_Memorial_Bridge_Vancouver_BC.jpg"
+          },
+          {
+            "label": "EdwardFIrvine overview (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2nd-narrows-bridge-2.jpg"
+          },
+          {
+            "label": "formulanone driving photograph (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:TCH-1_West_-_Facing_Mountains_from_Bridge_(50737840087).jpg"
+          },
+          {
+            "label": "Mapped structure outline (OSM 378869560)",
+            "url": "https://www.openstreetmap.org/way/378869560"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ironworkers-memorial-bridge/geometry.js"
+      },
+      "notes": "Deck heights, member sections, pier masonry, fence rhythm and lamp spacing are estimates. BC Ministry gives 103 m suspended centre (IABSE rounds to 110 m). Mapped extent includes a 33 m southern landing beyond the published 1292 m total; south road profile continues to the first junction. No reference photography or textures shipped. World approach uses existing per-vertex terrainClamp with cross-deck endpoint DEM sampling and 2 m near / 3 m far southern pavement cells; no shared bridge source extension. Review b4b fix: first/last 150 m landing-only taper to mapped carriageway centres and live standard/HD endpoint widths; paths/parapets/median ends at the full rigid deck while paths/parapets narrow, fence lowers onto its path, slab noses thin to grade and approach girders/caps finish 25 m inside the road connection. Runtime road-palette blend follows theme/terrain/LOD updates. Truss spans remain rigid. Zero depth cycles; near/far 79,678/26,334 triangles, 21/5 draws. Landing slabs split into independent carriageway ribbons to preserve the sloped bank gap; slab/asphalt share taper-boundary samples.",
+      "documentation": "docs/assets/top-cities-ironworkers-memorial-bridge.md",
+      "manifest": "/models/bridges/ironworkers-memorial-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=ironworkers-memorial-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=ironworkers-memorial-bridge&view=tower"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "los-angeles-city-hall",
+      "name": "Los Angeles City Hall",
+      "kind": "building",
+      "location": "Los Angeles, California",
+      "status": "ready",
+      "description": "Original texture-free model of the 1928 Art Deco tower, terracotta-clad wings, five mapped light courts, columned observation crown and stepped Mausoleum-inspired pyramid.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/los-angeles-city-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks los-angeles-city-hall",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-12; source MIT, models CC BY 4.0. OSM relation 6333145 and ways 425993492, 443103746–443103750, ODbL 1.0. Photos used only for comparison in ignored tmp: Neon Tommy, Los Angeles City Hall front view 2014 (CC BY-SA 2.0); Busition, Los Angeles City Hall April 2025 (CC BY 4.0); LEKI, LA City Hall at night (public domain). No photo/texture or third-party mesh distributed.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Los_Angeles_City_Hall"
+          },
+          {
+            "label": "OSM base relation",
+            "url": "https://www.openstreetmap.org/relation/6333145"
+          },
+          {
+            "label": "Neon Tommy — front, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_City_Hall_front_view_2014.jpg"
+          },
+          {
+            "label": "Busition — April 2025, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_City_Hall_(April_2025).jpg"
+          },
+          {
+            "label": "LEKI — night, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:LA_City_Hall_at_night.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/los-angeles-city-hall/geometry.js"
+      },
+      "notes": "Tower footprint and setbacks mapped; 138.4 m OSM roof height agrees with published 138 m. Five light courts remain open. Estimated window pitches, ornament, crown courses and wing roof profiles; no interior or freestanding flags, landscaping, City Hall East/South or connecting bridge. No terrain elevation baked in.",
+      "documentation": "docs/assets/top-cities-los-angeles-city-hall.md",
+      "manifest": "/models/buildings/los-angeles-city-hall.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=los-angeles-city-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=los-angeles-city-hall&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=los-angeles-city-hall&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=los-angeles-city-hall&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=los-angeles-city-hall&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=los-angeles-city-hall&view=entrance"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=los-angeles-city-hall&view=crown"
+          }
+        ]
+      },
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "museo-nacional-de-costa-rica",
+      "name": "Museo Nacional (Cuartel Bellavista)",
+      "kind": "building",
+      "location": "San José, Costa Rica",
+      "status": "ready",
+      "description": "Original procedural Bellavista barracks museum: ochre courtyard wings, paired crenellated west turrets and scissor stair, preserved stone corner watchtowers and modern glass butterfly-garden entrance.",
+      "manifest": "/models/buildings/museo-nacional-de-costa-rica.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/museo-nacional-de-costa-rica/geometry.js",
+        "build": "pnpm build:top-cities-landmarks museo-nacional-de-costa-rica --no-check",
+        "provenance": "Original procedural mesh authored for Codriver on 2026-10-12; original model CC BY 4.0, source MIT. Geographic outer rings from OpenStreetMap relation 4144800, outer ways 24857110, 1001217457 and 1001217461, ODbL 1.0, © OpenStreetMap contributors. Photographs inspected only, no photo pixels or third-party meshes shipped: Fachada del Museo Nacional de Costa Rica.JPG — Fespinozalemistre, CC BY-SA 4.0; Fachada Oeste Museo Nacional CRI 01 2020 4219.jpg — Mariordo (Mario Roberto Durán Ortiz), CC BY-SA 4.0; Cuartel Bellavista este.jpg — John Wolf, CC BY 2.0. Official museum interactive plan used to identify the southwest garden and ticket entrance; plan stays in ignored scratch.",
+        "references": [
+          {
+            "label": "Official museum: west entrance, former barracks and visitor plan",
+            "url": "https://www.museocostarica.go.cr/visitar/"
+          },
+          {
+            "label": "Official interactive site plan",
+            "url": "https://www.museocostarica.go.cr/visitar/plano-interactivo/"
+          },
+          {
+            "label": "Museum identity and history",
+            "url": "https://en.wikipedia.org/wiki/Museo_Nacional_de_Costa_Rica"
+          },
+          {
+            "label": "Historic west front, Fespinozalemistre, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fachada_del_Museo_Nacional_de_Costa_Rica.JPG"
+          },
+          {
+            "label": "West stair and turrets, Mariordo, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fachada_Oeste_Museo_Nacional_CRI_01_2020_4219.jpg"
+          },
+          {
+            "label": "Southeast tower and wall, John Wolf, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cuartel_Bellavista_este.jpg"
+          },
+          {
+            "label": "OpenStreetMap museum multipolygon",
+            "url": "https://www.openstreetmap.org/relation/4144800"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/museo-nacional-de-costa-rica/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=museo-nacional-de-costa-rica&view=detail"
+          }
+        ]
+      },
+      "notes": "Footprint rings and facade skew are mapped; 14.6 m height, +3.2 m main terrace, window dimensions, turret crowns and pavilion shape are estimates from photographs and the official plan. Glass is stylised opaque without textures or simulated interiors. Weathering and bullet holes are omitted; no adjacent plaza, streets, trees or Castillo Azul modeled. Southwest butterfly wing and ticket sphere are approximate massing, not a surveyed reconstruction. Detached east annexes use coarse original massing. Rotation is baked into vertices. Export QA does not establish app integration, independent approval or actual device performance. Review nit fixed: butterfly pavilion shell now has separate opaque panes, thin metal mullions and restrained dark reflection strips using existing materials; roof ribs and masonry contacts retained. Mullions stop before cream support columns to avoid material cycles. No additional material draw or transparency; pavilion remains an estimated abstraction. Post-fix exported near/far QA and scoped depth checks pass; lead app recapture and independent re-review pending.",
+      "documentation": "docs/assets/top-cities-museo-nacional-de-costa-rica.md",
+      "city": "San José",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palacio-de-cibeles",
+      "name": "Palacio de Cibeles",
+      "kind": "building",
+      "location": "Madrid, Spain",
+      "status": "ready",
+      "description": "Original texture-free procedural Palacio de Cibeles: white Neo-Plateresque plaza facade, octagonal clock lantern, pentagonal corner turrets, pinnacles and glass-gallery roof.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palacio-de-cibeles/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palacio-de-cibeles",
+        "provenance": "Original procedural Three.js model by Codriver, authored 2026-10-12; no third-party mesh, texture or photograph in exports. Geographic rings © OpenStreetMap contributors (ODbL 1.0). Reference-only Commons photographs: Palacio de Comunicaciones - 47 (Carlos Delgado, CC BY-SA 3.0); Fachada 01/02/03 and Fachada trasera-Palacio de Comunicaciones-2011 (Tamorlan, CC BY 3.0); MADRID E.U.S. PALACIO DE CIBELES-VISTAS - panoramio (2) (Concepcion AMAT ORTA, CC BY 3.0). Photographs retained only in ignored scratch.",
+        "references": [
+          {
+            "label": "Madrid municipal heritage: 70 m octagonal tower; pentagonal facade towers",
+            "url": "https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Palacio-de-Comunicaciones-Palacio-de-Cibeles-Ayuntamiento-de-Madrid-/?vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD&vgnextfmt=default&vgnextoid=4128f7d9560a4510f7d9560a45102e085a0aRCRD"
+          },
+          {
+            "label": "OSM palace outline",
+            "url": "https://www.openstreetmap.org/way/16322055"
+          },
+          {
+            "label": "Carlos Delgado, CC BY-SA 3.0: plaza exterior",
+            "url": "https://commons.wikimedia.org/wiki/File:Palacio_de_Comunicaciones_-_47.jpg"
+          },
+          {
+            "label": "Tamorlan, CC BY 3.0: rear facade",
+            "url": "https://commons.wikimedia.org/wiki/File:Fachada_trasera-Palacio_de_Comunicaciones-2011.JPG"
+          },
+          {
+            "label": "Concepcion AMAT ORTA, CC BY 3.0: gallery roof",
+            "url": "https://commons.wikimedia.org/wiki/File:MADRID_E.U.S._PALACIO_DE_CIBELES-VISTAS_-_panoramio_(2).jpg"
+          },
+          {
+            "label": "Tamorlan, CC BY 3.0: relief",
+            "url": "https://commons.wikimedia.org/wiki/File:Palacio_de_Comunicaciones_-_Fachada_01.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palacio-de-cibeles/geometry.js"
+      },
+      "notes": "70 m height from Madrid municipal heritage record; mapped palace and all building parts owned. Other heights, windows and ornament estimated from photographs. Gallery roof and reliefs abstracted; Fountain of Cibeles excluded; actual Tesla performance untested. Review fix: loggia cut through backing walls, with recessed glazing and an unobstructed broad archivolt; competing stepped blocks removed. Paired plaza pilasters, upper-bay stone surrounds and arched near turret bays redirect detail into the frontage. Octagonal lantern has three slots per face, stronger corner ribs, tier cornices and embedded pinnacle bases in both LODs. Far keeps coarse separate bay rhythm and stone orders; exact sculpture remains abstracted. Post-fix exported near/far QA and scoped depth checks pass; lead app recapture and independent re-review pending.",
+      "documentation": "docs/assets/top-cities-palacio-de-cibeles.md",
+      "manifest": "/models/buildings/palacio-de-cibeles.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=palacio-de-cibeles",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=palacio-de-cibeles&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=palacio-de-cibeles&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=palacio-de-cibeles&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=palacio-de-cibeles&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=palacio-de-cibeles&view=entrance"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=palacio-de-cibeles&view=tower"
+          }
+        ]
+      },
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "skyview-atlanta",
+      "name": "SkyView Atlanta",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "SkyView Atlanta: a 200 ft observation wheel with 42 upright enclosed capsules, paired white open truss rims, 21 radial trusses and six grounded support legs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/skyview-atlanta/geometry.js",
+        "build": "pnpm build:top-cities-landmarks skyview-atlanta",
+        "provenance": "Original texture-free procedural geometry authored 2026-10-12. Geographic frame from OSM way 1292668916 (ODbL 1.0). Dimensions from SkyView Atlanta official study guide, identity from operator and Bussink. Reference-only local photo comparisons: SkyView Atlanta closest 12313.JPG by Michael Rivera (CC BY-SA 3.0); SkyView Atlanta, July 2018.jpg by Thomson200 (CC0); Skyview Atlanta.jpg by Mcooney1 (CC BY-SA 4.0). No external mesh, photograph or texture shipped.",
+        "references": [
+          {
+            "label": "SkyView Atlanta official operator / address / height",
+            "url": "https://www.skyviewatlanta.com/"
+          },
+          {
+            "label": "Official study guide: 200 ft height, 166 ft diameter, 42 gondolas",
+            "url": "https://www.skyviewatlanta.com/s/TKE_Skyview_Study-Guide_FINAL_11618.pdf"
+          },
+          {
+            "label": "Bussink: SkyView Atlanta R60, 2013",
+            "url": "https://www.bussink.com/observation-wheels"
+          },
+          {
+            "label": "Mapped wheel outline / OSM way 1292668916",
+            "url": "https://www.openstreetmap.org/way/1292668916"
+          },
+          {
+            "label": "Street approach: Michael Rivera, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:SkyView_Atlanta_closest_12313.JPG"
+          },
+          {
+            "label": "Axle / cabins: Thomson200, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:SkyView_Atlanta,_July_2018.jpg"
+          },
+          {
+            "label": "Truss / support detail: Mcooney1, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Skyview_Atlanta.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/skyview-atlanta/geometry.js"
+      },
+      "notes": "Published 200 ft overall height (60.96 m), 166 ft outer rim diameter (50.5968 m) and 42 gondolas restored after b4rb re-review. Hub datum 35.6616 m; hub radius, spoke roots/web bays and gondola attachment stations follow the corrected rim centreline radius 25.0984 m. Fixed 1 m low deck is an independent photo estimate; static lowest capsule floor is 8.0032 m, so exact boarding access is omitted. Twenty-one paired radial frames keep connected zigzag webs in both LODs; named-support endpoint tests pass. Only wheel way 1292668916 is replaced; adjacent buildings remain provider-owned. Capsules extend about 1 m past mapped longitudinal ends over open ground. Static lamps and capsules; no machinery or animation. One GLB look-fix iteration checked near/far light and far dark sheets. Near 27288 tris / 5 draws / 1245812 bytes; far 8688 / 5 / 496592. Fresh Cityscape/world re-review remains the lead gate.",
+      "documentation": "docs/assets/top-cities-skyview-atlanta.md",
+      "manifest": "/models/buildings/skyview-atlanta.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=skyview-atlanta&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=detail"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=entrance"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=skyview-atlanta&view=plan"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "the-alamo",
+      "name": "The Alamo",
+      "kind": "building",
+      "location": "San Antonio, Texas",
+      "status": "ready",
+      "description": "Original texture-free procedural model of the present-day Alamo church and Long Barrack: rounded crest, recessed arched doorway, engaged columns, niches, barred windows and barrel roof.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/the-alamo/geometry.js",
+        "build": "pnpm build:top-cities-landmarks the-alamo",
+        "provenance": "Original procedural geometry authored 2026-10-12 for Codriver from OSM plan and attributed photographs; no mesh, scan, photo or texture reused. Mapped outlines © OpenStreetMap contributors (ODbL 1.0). Visual references: Alamo pano.jpg, Daniel Schwen, CC BY-SA 4.0; Alamo Entrance.jpg, Mattstone911, CC BY-SA 3.0; Alamo Mission, San Antonio, Texas, USA.jpg, Zygmunt Put (Zetpe0202), CC BY-SA 4.0; retained only in ignored dossier.",
+        "references": [
+          {
+            "label": "Alamo Church — official history and 1921 barrel roof",
+            "url": "https://www.thealamo.org/visit/whats-at-the-alamo/alamo-church"
+          },
+          {
+            "label": "Long Barrack — official history",
+            "url": "https://www.thealamo.org/visit/whats-at-the-alamo/long-barrack"
+          },
+          {
+            "label": "Alamo pano — Daniel Schwen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alamo_pano.jpg"
+          },
+          {
+            "label": "Alamo Entrance — Mattstone911, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alamo_Entrance.jpg"
+          },
+          {
+            "label": "Church and Long Barrack — Zygmunt Put, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Alamo_Mission,_San_Antonio,_Texas,_USA.jpg"
+          },
+          {
+            "label": "OSM church footprint",
+            "url": "https://www.openstreetmap.org/way/92060042"
+          },
+          {
+            "label": "OSM Long Barrack footprint",
+            "url": "https://www.openstreetmap.org/way/100052478"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-alamo/geometry.js"
+      },
+      "notes": "Peak 9.8 m and shoulder 7.6 m use mapped OSM tags, not survey heights. Other heights, openings, carved stonework and roof curvature are photo estimates; fine sculpture, interiors, grounds, gift shop and current construction are omitted. Original untextured geometry; photos are reference-only in ignored tmp and not shipped. Review nit fixed: near west-facade limestone has varied course heights, joint lengths and staggered vertical joints, clipped clear of openings and the curved crest; barrack courses also vary. Low-contrast original geometry is retained, far omits joints and preserves every opening. Individual rubble shapes and carving remain simplified. Post-fix exported near/far QA and scoped depth checks pass; lead app recapture and independent re-review pending.",
+      "documentation": "docs/assets/top-cities-the-alamo.md",
+      "manifest": "/models/buildings/the-alamo.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=the-alamo",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=the-alamo&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=the-alamo&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=the-alamo&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=the-alamo&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=the-alamo&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=the-alamo&view=detail"
+          },
+          {
+            "label": "Barrack",
+            "url": "/asset-preview.html?asset=the-alamo&view=barrack"
+          }
+        ]
+      },
+      "city": "San Antonio",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "the-wheel-icon-park",
+      "name": "The Wheel at ICON Park",
+      "kind": "building",
+      "location": "Orlando, Florida, United States",
+      "status": "ready",
+      "description": "Original 122 m white observation wheel: 30 upright glass capsules, open double rim, radial spokes, concentric tension rings and eight inclined A-frame legs.",
+      "manifest": "/models/buildings/the-wheel-icon-park.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/the-wheel-icon-park/geometry.js",
+        "build": "pnpm build:top-cities-landmarks the-wheel-icon-park --no-check",
+        "provenance": "Original procedural Three.js geometry authored 2026-10-12 for Codriver; no third-party mesh, scan or textures. Placement from OSM attraction outline 331551657, © OpenStreetMap contributors (ODbL 1.0). Photographs used for visual comparison only, retained in ignored tmp and never distributed. Steveo89: Orlando Eye.jpg (CC BY-SA 4.0). Two official Merlin Orlando Eye photographs (daytime capsule detail and overhead purple sunset), author not specified, copyright reserved; reference-only.",
+        "references": [
+          {
+            "label": "Official Orlando Eye height and 30 glass capsules",
+            "url": "https://www.theorlandoeye.com/plan-your-day/"
+          },
+          {
+            "label": "Official technical facts: eight legs, 30 spokes and capsules",
+            "url": "https://www.theorlandoeye.com/media/nkylmsvm/the-orlando-eye-teacherresourceguide-grades3-5_new.pdf"
+          },
+          {
+            "label": "Official opening history: May 4, 2015; aerial reference photo",
+            "url": "https://www.theorlandoeye.com/explore/the-orlando-eye/history/"
+          },
+          {
+            "label": "Official daytime capsule photograph (Merlin, copyright reserved, reference only)",
+            "url": "https://www.theorlandoeye.com/explore/"
+          },
+          {
+            "label": "Orlando Eye.jpg — Steveo89, CC BY-SA 4.0, visual reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Orlando_Eye.jpg"
+          },
+          {
+            "label": "OSM attraction ground outline 331551657",
+            "url": "https://www.openstreetmap.org/way/331551657"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-wheel-icon-park/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=the-wheel-icon-park",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=the-wheel-icon-park&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=the-wheel-icon-park&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=the-wheel-icon-park&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=the-wheel-icon-park&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=the-wheel-icon-park&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=the-wheel-icon-park&view=detail"
+          }
+        ]
+      },
+      "notes": "Published overall height 122 m, 30 capsules/spokes and eight legs retained. Rim radius 56.5 m, hub 61.5 m, capsule orbit 58 m and capsule sizes are photo estimates. Western support feet now use axle offsets 8/10 m inside mapped open attraction pockets; eastern feet keep 16/19 m offsets. All footing corners and low leg surfaces clear exact adjacent SEA LIFE way 331551654 in both LODs; that provider building and all unrelated geometry remain unclaimed. Only attraction way 331551657 is owned; north/south aerial wheel overhang is intentional. Static capsules, opaque glass, simplified low boarding deck and fixed blue/pink LEDs. Exported review-fix sheets inspected; fresh both-mode app re-review remains the lead gate.",
+      "documentation": "docs/assets/top-cities-the-wheel-icon-park.md",
+      "city": "Orlando",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "washington-dc-temple",
+      "name": "Washington D.C. Temple",
+      "kind": "building",
+      "location": "Kensington, Maryland",
+      "status": "ready",
+      "description": "Original white-marble modern Gothic temple with six slender gold spires, a human Moroni silhouette, fluted walls and mapped low entrance pavilion.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/washington-dc-temple/geometry.js",
+        "build": "pnpm build:top-cities-landmarks washington-dc-temple",
+        "provenance": "Original texture-free procedural mesh by Codriver, October 2026; OSM mapped plans © OpenStreetMap contributors, ODbL 1.0. Photo references are retained only in ignored tmp and are not redistributed: Warren K. Leffler, Washington Temple 1974 (public domain); Carol M. Highsmith, Washdctemplehighsmith13341u and Washdctemplehighsmithabove17320u (public domain); Joe Ravi, Washington D.C. Temple At Dusk (CC BY-SA 3.0); MamaGeek, Festival of Lights (CC BY-SA 4.0); interior model photo (CC0). No third-party mesh or texture used.",
+        "references": [
+          {
+            "label": "Official temple facts: 288 ft including Moroni; six gold spires; Alabama marble",
+            "url": "https://newsroom.churchofjesuschrist.org/multimedia/file/english-dc-press-kit-2022.pdf"
+          },
+          {
+            "label": "Official account: 18 ft Avard Fairbanks Moroni",
+            "url": "https://www.churchofjesuschrist.org/study/ensign/2000/01/i-saw-another-angel-fly?lang=eng"
+          },
+          {
+            "label": "Washington Temple 1974 — Warren K. Leffler, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Washington_Temple_1974.jpg"
+          },
+          {
+            "label": "Entrance photograph — Carol M. Highsmith, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Washdctemplehighsmith13341u.jpg"
+          },
+          {
+            "label": "At Dusk — Joe Ravi, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Washington_D.C._Temple_At_Dusk.jpg"
+          },
+          {
+            "label": "Aerial — Carol M. Highsmith, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Washdctemplehighsmithabove17320u.jpg"
+          },
+          {
+            "label": "Interior model reference — CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Model_of_the_Interior_of_the_WashingtonDC_LDS_Temple.jpeg"
+          },
+          {
+            "label": "OSM temple outline and nested parts",
+            "url": "https://www.openstreetmap.org/way/87324809"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-dc-temple/geometry.js"
+      },
+      "notes": "Published total height 87.7824 m and statue height 5.4864 m retained. Mapped plans and six tower anchors retained; conflicting OSM 100 m rejected. Main wall height 40 m, tower tiers, lesser needles and marble flute profiles are photo estimates. Broad facade is an integrated folded marble skin with 0.50 m relief, disjoint shaded side faces and valley-aligned four-row slit windows; far retains wider distinct flutes. Six slender gold needles and Moroni silhouette remain. Near/far relief sampling changes the western extremum by 0.153 m within the owned provider envelope. Marble veins, detailed sculpture, interiors and landscaping omitted. Exported review-fix sheets inspected; fresh Cityscape/world app re-review remains the lead gate.",
+      "documentation": "docs/assets/top-cities-washington-dc-temple.md",
+      "manifest": "/models/buildings/washington-dc-temple.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=washington-dc-temple",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=washington-dc-temple&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=washington-dc-temple&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=washington-dc-temple&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=washington-dc-temple&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=washington-dc-temple&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=washington-dc-temple&view=detail"
+          }
+        ]
+      },
+      "city": "Kensington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

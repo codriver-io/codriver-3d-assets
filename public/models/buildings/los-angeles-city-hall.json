@@ -1,0 +1,66 @@
+{
+  "id": "los-angeles-city-hall",
+  "name": "Los Angeles City Hall",
+  "kind": "building",
+  "origin": [
+    -118.242769,
+    34.053691
+  ],
+  "height": 138.4,
+  "padM": 82,
+  "frontageBearing": 128,
+  "rotationDeg": -38,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local flat grade y=0; no DEM, absolute elevation or Mercator stretch baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1928 tower and five light courts. Height/setbacks mapped from OSM; floor rhythm, column widths, crown courses and entrance details estimated from attributed photographs. Both runtime placement modes await separate integration review.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/los-angeles-city-hall-near.glb",
+      "bytes": 1521996,
+      "triangles": 30300,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -70.18677520751953,
+          0,
+          -75.73094940185547
+        ],
+        "max": [
+          70.44501495361328,
+          138.39999389648438,
+          75.35186767578125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/los-angeles-city-hall-far.glb",
+      "bytes": 488676,
+      "triangles": 9806,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -70.18677520751953,
+          0,
+          -75.73094940185547
+        ],
+        "max": [
+          70.44501495361328,
+          138.39999389648438,
+          75.35186767578125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/los-angeles-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

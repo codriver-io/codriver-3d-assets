@@ -553,6 +553,86 @@ import { MANIFEST as lm_ironworkers_memorial_bridgeManifest } from './ironworker
 import { OSM_WAYS as lm_ironworkers_memorial_bridgeWays } from './ironworkers-memorial-bridge/footprint.js';
 import { create as lm_ironworkers_memorial_bridgeCreate } from './ironworkers-memorial-bridge/geometry.js';
 import { VIEWS as lm_ironworkers_memorial_bridgeViews } from './ironworkers-memorial-bridge/views.js';
+import { MANIFEST as lm_magere_brugManifest } from './magere-brug/config.js';
+import { OSM_WAYS as lm_magere_brugWays } from './magere-brug/footprint.js';
+import { create as lm_magere_brugCreate } from './magere-brug/geometry.js';
+import { VIEWS as lm_magere_brugViews } from './magere-brug/views.js';
+import { MANIFEST as lm_tower_of_londonManifest } from './tower-of-london/config.js';
+import { OSM_WAYS as lm_tower_of_londonWays } from './tower-of-london/footprint.js';
+import { create as lm_tower_of_londonCreate } from './tower-of-london/geometry.js';
+import { VIEWS as lm_tower_of_londonViews } from './tower-of-london/views.js';
+import { MANIFEST as lm_fountain_placeManifest } from './fountain-place/config.js';
+import { OSM_WAYS as lm_fountain_placeWays } from './fountain-place/footprint.js';
+import { create as lm_fountain_placeCreate } from './fountain-place/geometry.js';
+import { VIEWS as lm_fountain_placeViews } from './fountain-place/views.js';
+import { MANIFEST as lm_motherland_monumentManifest } from './motherland-monument/config.js';
+import { OSM_WAYS as lm_motherland_monumentWays } from './motherland-monument/footprint.js';
+import { create as lm_motherland_monumentCreate } from './motherland-monument/geometry.js';
+import { VIEWS as lm_motherland_monumentViews } from './motherland-monument/views.js';
+import { MANIFEST as lm_vincent_thomas_bridgeManifest } from './vincent-thomas-bridge/config.js';
+import { OSM_WAYS as lm_vincent_thomas_bridgeWays } from './vincent-thomas-bridge/footprint.js';
+import { create as lm_vincent_thomas_bridgeCreate } from './vincent-thomas-bridge/geometry.js';
+import { VIEWS as lm_vincent_thomas_bridgeViews } from './vincent-thomas-bridge/views.js';
+import { MANIFEST as lm_marine_buildingManifest } from './marine-building/config.js';
+import { OSM_WAYS as lm_marine_buildingWays } from './marine-building/footprint.js';
+import { create as lm_marine_buildingCreate } from './marine-building/geometry.js';
+import { VIEWS as lm_marine_buildingViews } from './marine-building/views.js';
+import { MANIFEST as lm_basilica_de_los_angeles_cartagoManifest } from './basilica-de-los-angeles-cartago/config.js';
+import { OSM_WAYS as lm_basilica_de_los_angeles_cartagoWays } from './basilica-de-los-angeles-cartago/footprint.js';
+import { create as lm_basilica_de_los_angeles_cartagoCreate } from './basilica-de-los-angeles-cartago/geometry.js';
+import { VIEWS as lm_basilica_de_los_angeles_cartagoViews } from './basilica-de-los-angeles-cartago/views.js';
+import { MANIFEST as lm_edificio_metropolisManifest } from './edificio-metropolis/config.js';
+import { OSM_WAYS as lm_edificio_metropolisWays } from './edificio-metropolis/footprint.js';
+import { create as lm_edificio_metropolisCreate } from './edificio-metropolis/geometry.js';
+import { VIEWS as lm_edificio_metropolisViews } from './edificio-metropolis/views.js';
+import { MANIFEST as lm_high_museum_of_artManifest } from './high-museum-of-art/config.js';
+import { OSM_WAYS as lm_high_museum_of_artWays } from './high-museum-of-art/footprint.js';
+import { create as lm_high_museum_of_artCreate } from './high-museum-of-art/geometry.js';
+import { VIEWS as lm_high_museum_of_artViews } from './high-museum-of-art/views.js';
+import { MANIFEST as lm_williams_towerManifest } from './williams-tower/config.js';
+import { OSM_WAYS as lm_williams_towerWays } from './williams-tower/footprint.js';
+import { create as lm_williams_towerCreate } from './williams-tower/geometry.js';
+import { VIEWS as lm_williams_towerViews } from './williams-tower/views.js';
+import { MANIFEST as lm_basarab_overpassManifest } from './basarab-overpass/config.js';
+import { OSM_WAYS as lm_basarab_overpassWays } from './basarab-overpass/footprint.js';
+import { create as lm_basarab_overpassCreate } from './basarab-overpass/geometry.js';
+import { VIEWS as lm_basarab_overpassViews } from './basarab-overpass/views.js';
+import { MANIFEST as lm_john_hancock_centerManifest } from './john-hancock-center/config.js';
+import { OSM_WAYS as lm_john_hancock_centerWays } from './john-hancock-center/footprint.js';
+import { create as lm_john_hancock_centerCreate } from './john-hancock-center/geometry.js';
+import { VIEWS as lm_john_hancock_centerViews } from './john-hancock-center/views.js';
+import { MANIFEST as lm_att_building_nashvilleManifest } from './att-building-nashville/config.js';
+import { OSM_WAYS as lm_att_building_nashvilleWays } from './att-building-nashville/footprint.js';
+import { create as lm_att_building_nashvilleCreate } from './att-building-nashville/geometry.js';
+import { VIEWS as lm_att_building_nashvilleViews } from './att-building-nashville/views.js';
+import { MANIFEST as lm_granville_street_bridgeManifest } from './granville-street-bridge/config.js';
+import { OSM_WAYS as lm_granville_street_bridgeWays } from './granville-street-bridge/footprint.js';
+import { create as lm_granville_street_bridgeCreate } from './granville-street-bridge/geometry.js';
+import { VIEWS as lm_granville_street_bridgeViews } from './granville-street-bridge/views.js';
+import { MANIFEST as lm_jefferson_memorialManifest } from './jefferson-memorial/config.js';
+import { OSM_WAYS as lm_jefferson_memorialWays } from './jefferson-memorial/footprint.js';
+import { create as lm_jefferson_memorialCreate } from './jefferson-memorial/geometry.js';
+import { VIEWS as lm_jefferson_memorialViews } from './jefferson-memorial/views.js';
+import { MANIFEST as lm_adam_torenManifest } from './adam-toren/config.js';
+import { OSM_WAYS as lm_adam_torenWays } from './adam-toren/footprint.js';
+import { create as lm_adam_torenCreate } from './adam-toren/geometry.js';
+import { VIEWS as lm_adam_torenViews } from './adam-toren/views.js';
+import { MANIFEST as lm_buckingham_palaceManifest } from './buckingham-palace/config.js';
+import { OSM_WAYS as lm_buckingham_palaceWays } from './buckingham-palace/footprint.js';
+import { create as lm_buckingham_palaceCreate } from './buckingham-palace/geometry.js';
+import { VIEWS as lm_buckingham_palaceViews } from './buckingham-palace/views.js';
+import { MANIFEST as lm_samuel_beckett_bridgeManifest } from './samuel-beckett-bridge/config.js';
+import { OSM_WAYS as lm_samuel_beckett_bridgeWays } from './samuel-beckett-bridge/footprint.js';
+import { create as lm_samuel_beckett_bridgeCreate } from './samuel-beckett-bridge/geometry.js';
+import { VIEWS as lm_samuel_beckett_bridgeViews } from './samuel-beckett-bridge/views.js';
+import { MANIFEST as lm_fairmont_hotel_vancouverManifest } from './fairmont-hotel-vancouver/config.js';
+import { OSM_WAYS as lm_fairmont_hotel_vancouverWays } from './fairmont-hotel-vancouver/footprint.js';
+import { create as lm_fairmont_hotel_vancouverCreate } from './fairmont-hotel-vancouver/geometry.js';
+import { VIEWS as lm_fairmont_hotel_vancouverViews } from './fairmont-hotel-vancouver/views.js';
+import { MANIFEST as lm_pennybacker_bridgeManifest } from './pennybacker-bridge/config.js';
+import { OSM_WAYS as lm_pennybacker_bridgeWays } from './pennybacker-bridge/footprint.js';
+import { create as lm_pennybacker_bridgeCreate } from './pennybacker-bridge/geometry.js';
+import { VIEWS as lm_pennybacker_bridgeViews } from './pennybacker-bridge/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -693,6 +773,26 @@ const authoring = {
   'the-wheel-icon-park': { manifest: lm_the_wheel_icon_parkManifest, osmWays: lm_the_wheel_icon_parkWays, create: lm_the_wheel_icon_parkCreate, views: lm_the_wheel_icon_parkViews },
   'washington-dc-temple': { manifest: lm_washington_dc_templeManifest, osmWays: lm_washington_dc_templeWays, create: lm_washington_dc_templeCreate, views: lm_washington_dc_templeViews },
   'ironworkers-memorial-bridge': { manifest: lm_ironworkers_memorial_bridgeManifest, osmWays: lm_ironworkers_memorial_bridgeWays, create: lm_ironworkers_memorial_bridgeCreate, views: lm_ironworkers_memorial_bridgeViews },
+  'magere-brug': { manifest: lm_magere_brugManifest, osmWays: lm_magere_brugWays, create: lm_magere_brugCreate, views: lm_magere_brugViews },
+  'tower-of-london': { manifest: lm_tower_of_londonManifest, osmWays: lm_tower_of_londonWays, create: lm_tower_of_londonCreate, views: lm_tower_of_londonViews },
+  'fountain-place': { manifest: lm_fountain_placeManifest, osmWays: lm_fountain_placeWays, create: lm_fountain_placeCreate, views: lm_fountain_placeViews },
+  'motherland-monument': { manifest: lm_motherland_monumentManifest, osmWays: lm_motherland_monumentWays, create: lm_motherland_monumentCreate, views: lm_motherland_monumentViews },
+  'vincent-thomas-bridge': { manifest: lm_vincent_thomas_bridgeManifest, osmWays: lm_vincent_thomas_bridgeWays, create: lm_vincent_thomas_bridgeCreate, views: lm_vincent_thomas_bridgeViews },
+  'marine-building': { manifest: lm_marine_buildingManifest, osmWays: lm_marine_buildingWays, create: lm_marine_buildingCreate, views: lm_marine_buildingViews },
+  'basilica-de-los-angeles-cartago': { manifest: lm_basilica_de_los_angeles_cartagoManifest, osmWays: lm_basilica_de_los_angeles_cartagoWays, create: lm_basilica_de_los_angeles_cartagoCreate, views: lm_basilica_de_los_angeles_cartagoViews },
+  'edificio-metropolis': { manifest: lm_edificio_metropolisManifest, osmWays: lm_edificio_metropolisWays, create: lm_edificio_metropolisCreate, views: lm_edificio_metropolisViews },
+  'high-museum-of-art': { manifest: lm_high_museum_of_artManifest, osmWays: lm_high_museum_of_artWays, create: lm_high_museum_of_artCreate, views: lm_high_museum_of_artViews },
+  'williams-tower': { manifest: lm_williams_towerManifest, osmWays: lm_williams_towerWays, create: lm_williams_towerCreate, views: lm_williams_towerViews },
+  'basarab-overpass': { manifest: lm_basarab_overpassManifest, osmWays: lm_basarab_overpassWays, create: lm_basarab_overpassCreate, views: lm_basarab_overpassViews },
+  'john-hancock-center': { manifest: lm_john_hancock_centerManifest, osmWays: lm_john_hancock_centerWays, create: lm_john_hancock_centerCreate, views: lm_john_hancock_centerViews },
+  'att-building-nashville': { manifest: lm_att_building_nashvilleManifest, osmWays: lm_att_building_nashvilleWays, create: lm_att_building_nashvilleCreate, views: lm_att_building_nashvilleViews },
+  'granville-street-bridge': { manifest: lm_granville_street_bridgeManifest, osmWays: lm_granville_street_bridgeWays, create: lm_granville_street_bridgeCreate, views: lm_granville_street_bridgeViews },
+  'jefferson-memorial': { manifest: lm_jefferson_memorialManifest, osmWays: lm_jefferson_memorialWays, create: lm_jefferson_memorialCreate, views: lm_jefferson_memorialViews },
+  'adam-toren': { manifest: lm_adam_torenManifest, osmWays: lm_adam_torenWays, create: lm_adam_torenCreate, views: lm_adam_torenViews },
+  'buckingham-palace': { manifest: lm_buckingham_palaceManifest, osmWays: lm_buckingham_palaceWays, create: lm_buckingham_palaceCreate, views: lm_buckingham_palaceViews },
+  'samuel-beckett-bridge': { manifest: lm_samuel_beckett_bridgeManifest, osmWays: lm_samuel_beckett_bridgeWays, create: lm_samuel_beckett_bridgeCreate, views: lm_samuel_beckett_bridgeViews },
+  'fairmont-hotel-vancouver': { manifest: lm_fairmont_hotel_vancouverManifest, osmWays: lm_fairmont_hotel_vancouverWays, create: lm_fairmont_hotel_vancouverCreate, views: lm_fairmont_hotel_vancouverViews },
+  'pennybacker-bridge': { manifest: lm_pennybacker_bridgeManifest, osmWays: lm_pennybacker_bridgeWays, create: lm_pennybacker_bridgeCreate, views: lm_pennybacker_bridgeViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));

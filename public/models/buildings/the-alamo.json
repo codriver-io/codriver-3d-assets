@@ -1,0 +1,66 @@
+{
+  "id": "the-alamo",
+  "name": "The Alamo",
+  "kind": "building",
+  "origin": [
+    -98.48611,
+    29.42583
+  ],
+  "height": 9.8,
+  "padM": 60,
+  "frontageBearing": 279,
+  "ownTolM": 0.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present-day church with rounded army-era crest and 1921 barrel roof, plus Long Barrack. Facade peak 9.8 m and shoulder 7.6 m use OSM parts, not a survey. Other heights, openings, carvings and roof curvature are photo estimates. West facade bearing 279° is baked in. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/the-alamo-near.glb",
+      "bytes": 384484,
+      "triangles": 8594,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -39.231468200683594,
+          -4.7683716530855236e-8,
+          -62.987701416015625
+        ],
+        "max": [
+          17.471908569335938,
+          9.800000190734863,
+          24.646108627319336
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/the-alamo-far.glb",
+      "bytes": 108124,
+      "triangles": 2302,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -39.1615104675293,
+          -4.7683716530855236e-8,
+          -62.91795349121094
+        ],
+        "max": [
+          17.471908569335938,
+          9.800000190734863,
+          24.646108627319336
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-alamo/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

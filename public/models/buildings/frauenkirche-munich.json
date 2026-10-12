@@ -1,0 +1,65 @@
+{
+  "id": "frauenkirche-munich",
+  "name": "Frauenkirche",
+  "kind": "building",
+  "origin": [
+    11.57358,
+    48.1385668
+  ],
+  "height": 98.57,
+  "padM": 59,
+  "frontageBearing": 268.846,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local Frauenplatz pavement y=0; rigid foundation, no terrain or sea-level heights baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published tower tips 98.57 / 98.45 m; plan 109 × 40 m. OSM roof/eaves 60 / 30 m. Battered tower tiers, belfry arcades, glazing, dome profile and dormers are photo-estimated. Orientation baked once, 1.154 degrees north of east. Both placement modes require separate app verification.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/frauenkirche-munich-near.glb",
+      "bytes": 673196,
+      "triangles": 14776,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -53.89628982543945,
+          0,
+          -26.23596954345703
+        ],
+        "max": [
+          56.38237762451172,
+          98.56999969482422,
+          21.059249877929688
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/frauenkirche-munich-far.glb",
+      "bytes": 154992,
+      "triangles": 4036,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -53.78390884399414,
+          0,
+          -26.23596954345703
+        ],
+        "max": [
+          56.38237762451172,
+          98.56999969482422,
+          21.059249877929688
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/frauenkirche-munich/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,4 +1,4 @@
-// OpenStreetMap extrusions the model replaces. STUB: empty until the builder maps them.
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
-// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+// Attraction/site outline, not an aquarium replacement. Wheel overhang is wider than the ground outline.
+// Derived data © OpenStreetMap contributors, ODbL 1.0.
+export const OSM_WAYS = [331551657];
+export const FOOTPRINTS = [[[-81.468019, 28.4429462], [-81.4680269, 28.4435288], [-81.4682465, 28.4435265], [-81.4683233, 28.4435262], [-81.4683634, 28.4435263], [-81.4683626, 28.4434009], [-81.4683344, 28.4434017], [-81.4683355, 28.4430741], [-81.4683786, 28.4430738], [-81.4683791, 28.4430094], [-81.4683548, 28.4430096], [-81.4683548, 28.442943], [-81.468337, 28.4429433], [-81.4682617, 28.4429436], [-81.468019, 28.4429462]]];

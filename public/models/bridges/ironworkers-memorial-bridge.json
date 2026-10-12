@@ -1,0 +1,73 @@
+{
+  "id": "ironworkers-memorial-bridge",
+  "name": "Ironworkers Memorial Second Narrows Crossing",
+  "kind": "bridge",
+  "origin": [
+    -123.026291,
+    49.29467
+  ],
+  "height": 64,
+  "padM": 1050,
+  "frontageBearing": 178.9,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "lateralBankFit": {
+    "terrainClamp": true,
+    "clearanceM": 0.15,
+    "blendM": 120
+  },
+  "clipStandardEnds": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Metric east/up/south about the main-span centre. Authored y=0 is a local water/grade reference; no DEM or Mercator stretch baked in. World keeps the engineering-shaped absolute deck and fits feet/endpoints to terrain; Cityscape uses a separate junction-safe flat profile.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 1292 m total, 335 m main, 142 m anchor spans. BC Ministry 2018 drawing gives 116 m cantilevers and 103 m suspended centre (IABSE rounds centre to 110 m). Estimated deck crest 56.5 m, curved bottom-chord geometry and member sections; outline-measured 27.8 m deck. Mapped outline is 1326 m including the south landing; the profile continues 130 m to the first motorway junction.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/ironworkers-memorial-bridge-near.glb",
+      "bytes": 3157404,
+      "triangles": 79678,
+      "drawCalls": 21,
+      "bounds": {
+        "min": [
+          -52.73628234863281,
+          -8.455235160909069e-7,
+          -986.6558837890625
+        ],
+        "max": [
+          20.997726440429688,
+          63.979248046875,
+          475.587158203125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/ironworkers-memorial-bridge-far.glb",
+      "bytes": 1014344,
+      "triangles": 26334,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -52.73628234863281,
+          -8.455235160909069e-7,
+          -986.2037963867188
+        ],
+        "max": [
+          20.997726440429688,
+          63.979248046875,
+          475.587158203125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ironworkers-memorial-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
