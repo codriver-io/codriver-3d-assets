@@ -7,7 +7,7 @@ const STEEL = 'steel', CONC = 'concrete', HOUSE = 'house', TRIM = 'trim', CREAM 
 
 /**
  * Lefty O'Doul Bridge (Third Street Bridge, 1933, Strauss heel-trunnion single-leaf bascule), closed
- * position, SUPERSTRUCTURE ONLY. Authored in bridge coordinates (B along the axis toward the NNW heel,
+ * position, with a street-grade fallback carriageway. Authored in bridge coordinates (B along the axis toward the NNW heel,
  * y above the road, V across toward the ENE) and turned once onto the mapped bearing (see the site file).
  *
  *  - two Pratt through trusses (143 ft leaf) flanking the carriageway, with overhead sway bracing;
@@ -15,14 +15,18 @@ const STEEL = 'steel', CONC = 'concrete', HOUSE = 'house', TRIM = 'trim', CREAM 
  *    trunnion, the tail truss carrying the raised concrete counterweight, the front leg and tower column;
  *  - two chamfered concrete counterweights, one per side, hanging from the tail knuckles;
  *  - the operator's house (oxblood panels, balcony, glazed cab, green roof) and two cream huts;
- *  - black pipe railings along both sidewalks, lamps hung from the top chords.
- * No deck, no pavement, nothing under the road: the provider draws Third Street, and every structural
- * member between the trusses stays at least DIM.roadClear metres above it.
+ *  - grey-green pipe railings along both sidewalks, lamps hung from the top chords.
+ * The provider retains Third Street pavement/paint above the embedded fallback road slab. Every
+ * structural member between the trusses stays at least DIM.roadClear metres above it.
  */
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
   const { cuboid, beam, knuckle, hull, frustum, prism } = makeKit(b);
+  // Near clears terrain/standard-road triangles by 20 cm, with flush street joints.
+  // Far is inset below provider pavement, avoiding stacked surfaces at distance.
+  if(near)prism('asphalt', [[-36,-.55],[DIM.tailEndB,-.55],[DIM.tailEndB,0],[DIM.tailEndB-3,.2],[-33,.2],[-36,0]], [-11.05,9.5]);
+  else cuboid('asphalt', [-36, DIM.tailEndB], [-.55,-.2], [-11.05,9.5]);
   const VE = DIM.trussE, VW = DIM.trussW, L = DIM.leafHalf, RAIL = DIM.railV, TC = DIM.topChordY;
   const planes = [{ s: 1, V: VE }, { s: -1, V: VW }]; // the two truss / heel-frame planes (s = +1 on the Oracle Park side)
   const th = (v, t) => [v - t / 2, v + t / 2]; // V range of thickness t centred on v
@@ -77,7 +81,7 @@ export function create({ detail = 'near' } = {}) {
       for (let q = 0; q < 4; q++) { // louvres on the road side, small windows on the sidewalk side
         const f = V - s * 1.2, g = V + s * 1.2;
         cuboid(STEEL, [31.6, 36.6], [6.0 + q * 0.5, 6.18 + q * 0.5], [Math.min(f, f - s * 0.07), Math.max(f, f - s * 0.07)]);
-        if (q < 2) cuboid(GLASS, [32.2 + q * 2.3, 33.4 + q * 2.3], [6.4, 7.6], [Math.min(g - s * 0.04, g + s * 0.1), Math.max(g - s * 0.04, g + s * 0.1)]);
+        if (q < 2) cuboid(GLASS, [32.2 + q * 2.3, 33.4 + q * 2.3], [6.4, 7.6], [Math.min(g - s * 0.04, g + s * 0.25), Math.max(g - s * 0.04, g + s * 0.25)]);
       }
       // Riveted straps across the front leg, bands on the column, plates at the frame's joints.
       const e = [0.865, 0.502], n = [-0.502, 0.865];
@@ -170,34 +174,37 @@ export function create({ detail = 'near' } = {}) {
   // ---- operator's house (south-east end, east side) -------------------------------------------------
   {
     const body = { b0: -34.0, b1: -27.4, v0: 13.7, v1: 19.1 };
-    cuboid(HOUSE, [body.b0, body.b1], [0.06, 4.7], [body.v0, body.v1]); // oxblood panelled block
+    cuboid(HOUSE, [body.b0, body.b1], [0.5, 4.5], [body.v0, body.v1]); // oxblood panelled block
     cuboid(CONC, [body.b0 - 0.2, body.b1 + 0.2], [0.06, 0.5], [body.v0 - 0.2, body.v1 + 0.2]); // plinth
     cuboid(CONC, [-35.0, -26.4], [4.5, 5.0], [12.8, 20.0]); // cantilevered balcony slab
     cuboid(HOUSE, [-34.4, -27.0], [4.95, 6.25], [13.25, 19.55]); // cab base band
-    cuboid(GLASS, [-34.3, -27.1], [6.25, 7.95], [13.4, 19.4]); // glazed control cab
+    cuboid(GLASS, [-34.3, -27.1], [6.25, 7.9], [13.4, 19.4]); // glazed control cab
     cuboid(HOUSE, [-35.4, -26.0], [7.9, 8.5], [12.4, 20.4]); // roof fascia
     frustum(TRIM, { b0: -35.52, b1: -25.88, v0: 12.28, v1: 20.52 }, 8.5, { b0: -33.4, b1: -28.0, v0: 15.0, v1: 17.8 }, 9.3); // green hip roof
     if (near) {
-      // Window on a wall: trim frame proud 0.06, glass proud 0.10 (never coplanar with the wall or each other).
+      // Window on a wall: four separate trim bars around a pane, all 25 cm proud of the wall.
       const slab = (wall, o, out, inn) => (o > 0 ? [wall - inn, wall + out] : [wall - out, wall + inn]);
       const win = (axis, wall, o, along, y0, y1, w) => {
-        const f = slab(wall, o, 0.06, 0.05), g = slab(wall, o, 0.1, 0.05), a = [along - w / 2 - 0.1, along + w / 2 + 0.1], c = [along - w / 2, along + w / 2];
-        if (axis === 'v') { cuboid(TRIM, a, [y0 - 0.1, y1 + 0.1], f); cuboid(GLASS, c, [y0, y1], g); } else { cuboid(TRIM, f, [y0 - 0.1, y1 + 0.1], a); cuboid(GLASS, g, [y0, y1], c); }
+        const f = slab(wall, o, 0.25, 0.05), a = [along - w / 2 - 0.1, along + w / 2 + 0.1], c = [along - w / 2, along + w / 2];
+        const panel=(mat,u,y)=>axis==='v'?cuboid(mat,u,y,f):cuboid(mat,f,y,u);
+        // Four solid frame bars around the pane: no stacked trim/glass faces or depth cycle.
+        panel(TRIM,[a[0],c[0]],[y0-.1,y1+.1]);panel(TRIM,[c[1],a[1]],[y0-.1,y1+.1]);
+        panel(TRIM,c,[y0-.1,y0]);panel(TRIM,c,[y1,y1+.1]);panel(GLASS,c,[y0,y1]);
       };
       for (const x of [-32.8, -30.6]) { win('v', body.v0, -1, x, 1.6, 2.9, 0.9); win('v', body.v1, 1, x, 1.6, 2.9, 0.9); }
       win('b', body.b0, -1, 16.4, 1.6, 2.9, 0.9); win('b', body.b1, 1, 16.4, 1.6, 2.9, 0.9);
-      cuboid(TRIM, [-29.4, -28.2], [0.06, 2.3], [body.v0 - 0.07, body.v0 + 0.05]); // door, road side
-      cuboid(GLASS, [-29.1, -28.5], [1.3, 2.0], [body.v0 - 0.12, body.v0 + 0.05]);
+      cuboid(TRIM, [-29.4, -28.2], [0.06, 2.3], [body.v0 - 0.25, body.v0 + 0.05]); // door, road side
+
       // Mullions of the glazed cab and its balcony rail.
       for (let q = 0; q <= 5; q++) {
         const x = -34.3 + (7.2 * q) / 5;
-        cuboid(TRIM, [x - 0.06, x + 0.06], [6.2, 7.9], [13.32, 13.46]);
-        cuboid(TRIM, [x - 0.06, x + 0.06], [6.2, 7.9], [19.34, 19.48]);
+        cuboid(TRIM, [x - 0.06, x + 0.06], [6.2, 7.9], [13.15, 13.4]);
+        cuboid(TRIM, [x - 0.06, x + 0.06], [6.2, 7.9], [19.4, 19.65]);
       }
       for (let q = 1; q <= 4; q++) {
         const z = 13.4 + (6.0 * q) / 5;
-        cuboid(TRIM, [-34.36, -34.22], [6.2, 7.9], [z - 0.06, z + 0.06]);
-        cuboid(TRIM, [-27.18, -27.04], [6.2, 7.9], [z - 0.06, z + 0.06]);
+        cuboid(TRIM, [-34.55, -34.3], [6.2, 7.9], [z - 0.06, z + 0.06]);
+        cuboid(TRIM, [-27.1, -26.85], [6.2, 7.9], [z - 0.06, z + 0.06]);
       }
       for (const x of [-34.9, -26.5]) cuboid(TRIM, [x - 0.015, x + 0.015], [5.4, 6.0], [12.9, 19.9]);
       for (const z of [12.9, 19.9]) cuboid(TRIM, [-34.9, -26.5], [5.4, 6.0], [z - 0.015, z + 0.015]);
@@ -217,9 +224,9 @@ export function create({ detail = 'near' } = {}) {
     frustum(STEEL, { b0: b0 - 0.4, b1: b1 + 0.4, v0: v0 - 0.4, v1: v1 + 0.4 }, 2.95, { b0: b0 + 1.7, b1: b1 - 1.7, v0: v0 + 1.1, v1: v1 - 1.1 }, 4.05);
     if (near) {
       const mid = (b0 + b1) / 2;
-      cuboid(GLASS, [mid - 1.6, mid - 0.6], [1.3, 2.3], [v0 - 0.08, v0 + 0.05]);
-      cuboid(GLASS, [mid + 0.5, mid + 1.5], [1.3, 2.3], [v0 - 0.08, v0 + 0.05]);
-      cuboid(GLASS, [b1 - 0.05, b1 + 0.08], [1.3, 2.3], [(v0 + v1) / 2 - 0.5, (v0 + v1) / 2 + 0.5]);
+      cuboid(GLASS, [mid - 1.6, mid - 0.6], [1.3, 2.3], [v0 - 0.25, v0 + 0.05]);
+      cuboid(GLASS, [mid + 0.5, mid + 1.5], [1.3, 2.3], [v0 - 0.25, v0 + 0.05]);
+      cuboid(GLASS, [b1 - 0.05, b1 + 0.25], [1.3, 2.3], [(v0 + v1) / 2 - 0.5, (v0 + v1) / 2 + 0.5]);
     }
   }
   hut(-25.0, -19.8, 13.6, 17.4);

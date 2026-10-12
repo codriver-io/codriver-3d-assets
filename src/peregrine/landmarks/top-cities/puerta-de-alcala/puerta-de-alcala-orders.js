@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import {
   ATTIC_FACE, ATTIC_HALF, CAP_TOP, CENTER_CROWN, CENTER_HALF, CORNER_U, CORNICE_TOP, DOOR_H,
   DOOR_HALF, DOOR_OUT, DOOR_U, EAST, ENTABLATURE, HALF_W, P, PAIR_OUT, PAIR_U, PED_BASE, PED_HALF,
-  SA, SIDE_ATTIC, SIDE_CROWN, SIDE_HALF, SIDE_OUT, SIDE_U, SINGLE_OUT, SINGLE_U, SPRING, WEST, slab,
+  SA, SIDE_ATTIC, SIDE_CROWN, SIDE_HALF, SIDE_OUT, SIDE_U, SINGLE_OUT, SINGLE_U, SPRING, WEST, place, slab,
 } from './puerta-de-alcala-frame.js';
 
 // Roman capitals as centreline strokes. The tablet is the landmark; the words are the east face.
@@ -121,17 +121,22 @@ function lineOfText(b, text, sCenter, y, t, em) {
 // Both fronts and both LODs, so the skyline does not change with distance.
 function coatOfArms(b, face) {
   const t = face * 4.74;
-  slab(b, 'limestone', SA, 20.55, t, 1.70, 0.70, 0.48); // base of the group
-  slab(b, 'limestone', SA, 21.70, t, 1.28, 1.85, 0.46); // shield
-  slab(b, 'limestone', SA, 22.85, t, 0.92, 0.50, 0.38); // crown
-  slab(b, 'limestone', SA, 23.48, t, 0.28, 0.62, 0.22); // finial, top 23.79
+  // A shaped shield, crown and reclining figures merge into the pediment face.
+  const shield = new THREE.Shape();
+  shield.moveTo(SA - 0.90, 22.65); shield.lineTo(SA + 0.90, 22.65);
+  shield.lineTo(SA + 0.78, 21.48); shield.lineTo(SA, 20.82);
+  shield.lineTo(SA - 0.78, 21.48); shield.closePath();
+  const g = new THREE.ExtrudeGeometry(shield, { depth: 1.4, bevelEnabled: false });
+  g.translate(0, 0, face > 0 ? 3.85 : -5.25);
+  b.put(place(g), 'limestone');
+  slab(b, 'limestone', SA, 22.88, t, 1.45, 0.42, 1.2);
+  slab(b, 'limestone', SA, 23.48, t, 0.28, 0.62, 0.8);
   for (const sign of [1, -1]) {
-    const s = SA + sign * 1.05;
-    slab(b, 'limestone', s, 21.35, t, 0.58, 1.55, 0.40); // supporter
-    slab(b, 'limestone', s, 22.25, t, 0.32, 0.38, 0.28); // head
-    const u = SA + sign * 2.15;
-    b.bar('limestone', P(u, 20.85, t), P(u + sign * 0.85, 22.15, t), 0.22, 0.14); // slope trophy
-    slab(b, 'limestone', SA + sign * 2.55, 20.85, t, 0.42, 0.85, 0.30);
+    // Feet and draped bodies rest on the rake; arms meet shield or torso.
+    b.bar('limestone', P(SA + sign * 0.75, 21.6, t), P(SA + sign * 2.9, 20.86, t), 0.70, 1.2);
+    b.bar('limestone', P(SA + sign * 1.7, 21.25, t), P(SA + sign * 1.5, 22.12, t), 0.68, 1.15);
+    slab(b, 'limestone', SA + sign * 1.5, 22.45, t, 0.48, 0.58, 1.1);
+    b.bar('limestone', P(SA + sign * 1.5, 21.85, t), P(SA + sign * 0.65, 22.32, t), 0.32, 0.8);
   }
 }
 
@@ -211,17 +216,17 @@ export function buildOrders(b, near) {
       }
     }
     const em = 0.28;
-    const tabletT = ATTIC_FACE + 0.20;
-    const tabletY = (CORNICE_TOP + PED_BASE) / 2 + 0.12;
-    slab(b, 'granite', SA, tabletY, ATTIC_FACE + 0.08, 5.20, 1.95, 0.12); // frame
-    slab(b, 'limestone', SA, tabletY, tabletT, 4.65, 1.50, 0.10);
-    lineOfText(b, 'REGE CAROLO III', SA, tabletY + 0.36, tabletT + 0.10, em);
-    lineOfText(b, 'ANNO', SA, tabletY - 0.06, tabletT + 0.10, em);
-    lineOfText(b, 'MDCCLXXVIII', SA, tabletY - 0.46, tabletT + 0.10, em * 0.82);
+    const tabletT = ATTIC_FACE + 0.36;
+    const tabletY = 18.28;
+    slab(b, 'granite', SA, tabletY, ATTIC_FACE + 0.08, 5.70, 2.80, 0.32); // frame
+    slab(b, 'limestone', SA, tabletY, tabletT, 4.95, 2.30, 0.12);
+    lineOfText(b, 'REGE CAROLO III', SA, tabletY + 0.36, tabletT + 0.20, em);
+    lineOfText(b, 'ANNO', SA, tabletY - 0.06, tabletT + 0.20, em);
+    lineOfText(b, 'MDCCLXXVIII', SA, tabletY - 0.46, tabletT + 0.20, em * 0.82);
     // West attic: a darker cartouche, no inscription.
     relief(b, SA, tabletY, -(ATTIC_FACE + 0.08), 2.3, 1.55);
   } else {
-    slab(b, 'limestone', SA, (CORNICE_TOP + PED_BASE) / 2 + 0.12, ATTIC_FACE + 0.20, 4.65, 1.50, 0.10);
+    slab(b, 'limestone', SA, 18.28, ATTIC_FACE + 0.20, 4.95, 2.30, 0.12);
   }
 
   // Pilasters flank the tablet on both fronts. Coat of arms, trophies and end flames

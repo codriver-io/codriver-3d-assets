@@ -1,5 +1,5 @@
 import site from './oratoire-saint-joseph-site.js';
-import { lngToMercX, latToMercY, mercStretch } from '../facade/geo.js';
+import { lngToMercX, latToMercY, mercStretch, mercXToLng, mercYToLat } from '../facade/geo.js';
 
 export const ORATOIRE = {
   id: 'oratoire-saint-joseph', name: 'Oratoire Saint-Joseph', origin: site.origin,
@@ -35,3 +35,27 @@ export function oratoireOwns(u, v, tolerance = 1.2) {
   }
   return hit;
 }
+
+// Only Full 3D world uses these bounded site levels; Cityscape keeps authored grade.
+const siteRing = (u0, u1, v0, v1) => [[u0,v0],[u1,v0],[u1,v1],[u0,v1]].map(([u,v]) => {
+  const [x,,z] = oratoirePoint(u,0,v);
+  return [mercXToLng(ORATOIRE_MERC[0] + x * ORATOIRE_STRETCH), mercYToLat(-ORATOIRE_MERC[1] - z * ORATOIRE_STRETCH)];
+});
+ORATOIRE.terrainPad = {
+  rings: [siteRing(-19,25,-202,-188)],
+  refs: siteRing(-4,10,-199,-193), datum: 'median', featherM: 12,
+  // TIN cells span ~27 real metres here. Each grade starts uphill of the
+  // matching stair's low end, and the wider rings hold every adjacent node
+  // below the rigid treads. The authored stone landings define the exact
+  // walking datums; the ground grades deliberately trail them underneath.
+  terraces: [
+    { ring: siteRing(-49,55,-220,-177), offsetM: -0.6, featherM: 12 },
+    { ring: siteRing(-49,55,-177,-143), offsetM: 1.4, featherM: 12 },
+    { ring: siteRing(-49,55,-143,-122), offsetM: 3.4, featherM: 12 },
+    { ring: siteRing(-49,55,-122,-110), offsetM: 5.9, featherM: 12 },
+    { ring: siteRing(-55,59,-110,-98), offsetM: 7.4, featherM: 12 },
+    { ring: siteRing(-47,53,-98,-72), offsetM: 14.4, featherM: 12 },
+    { ring: siteRing(-50,56,-72,-25), offsetM: 19.2, featherM: 18 },
+    { ring: site.ways.find(w => w.id === 235293860).points.filter(p => oratoireLocal(...p)[1] > -25), offsetM: 24, featherM: 26 },
+  ],
+};

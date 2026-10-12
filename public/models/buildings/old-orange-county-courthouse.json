@@ -20,13 +20,13 @@
   },
   "elevationDatum": "Rigid local grade y=0; granite basement starts at grade. No altitude or terrain stretch baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Present restored 1901 courthouse, without former tower. OSM way 228740921 supplies the outline and 0.45-degree grid skew; heights, roof pitch, window sizes and rear facade are estimated from photographs. Three recessed entry arches, granite stairs, five-window central arcade, hip roofs, gables, dormers and ashlar are modelled. Night window lighting is illustrative. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "note": "Present restored 1901 courthouse, without former tower. OSM way 228740921 supplies the outline and 0.45-degree grid skew; heights, roof pitch, window sizes and rear facade are estimated from photographs. Three recessed entry arches, granite stairs, five-window central arcade, hip roofs, gables, dormers and ashlar are modelled. Night window lighting is illustrative. Mode-specific QA evidence and limits are in the documentation.",
   "assets": {
     "near": {
       "url": "/models/buildings/old-orange-county-courthouse-near.glb",
-      "bytes": 1964180,
+      "bytes": 1961444,
       "triangles": 37209,
-      "drawCalls": 9,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -22.091318130493164,
@@ -42,9 +42,9 @@
     },
     "far": {
       "url": "/models/buildings/old-orange-county-courthouse-far.glb",
-      "bytes": 220616,
+      "bytes": 218656,
       "triangles": 4655,
-      "drawCalls": 8,
+      "drawCalls": 7,
       "bounds": {
         "min": [
           -22.091318130493164,

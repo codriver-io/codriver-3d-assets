@@ -1,3 +1,6 @@
+import { lngToMercX, latToMercY, mercXToLng, mercYToLat, mercStretch } from '../../../facade/geo.js';
+import { uv } from './toronto-city-hall-site.js';
+
 // Toronto City Hall's mapped outlines: the OSM ways whose extrusions the model replaces,
 // read 2026-09-29 through the shared Overpass queue (way(around:130) building and
 // building:part, out geom). Rings are [lng, lat], closed implicitly.
@@ -11,6 +14,13 @@
 //   963504345 chamber drum (r 13 m, 8 to 13 m); 293907515 hollow central column (r 3 m).
 //   963504343 / 963504344  the two link blocks between chamber and towers (5 levels).
 // Mapped data (c) OpenStreetMap contributors, ODbL 1.0.
+// The authored plaza owns the open area inside the walkway, including the pool.
+// Provider tiles incorrectly extrude its plaza polygon; Old City Hall east of Bay stays outside.
+const origin = [-79.3839615, 43.6534932], scale = mercStretch(origin[1]);
+const PLAZA = [[-66, 42], [66, 42], [66, 178], [-66, 178]].map(([u, v]) => {
+  const [x, z] = uv(u, v);
+  return [mercXToLng(lngToMercX(origin[0]) + x * scale), mercYToLat(latToMercY(origin[1]) - z * scale)];
+});
 export const FOOTPRINTS = [
   // 198500761: Toronto City Hall base (building=civic, building:part=yes, height 8, 3 levels), the podium and its curved ramp wall
   [
@@ -138,5 +148,6 @@ export const FOOTPRINTS = [
     [-79.3838056, 43.6535191], [-79.3838190, 43.6535437], [-79.3836263, 43.6536454],
     [-79.3836077, 43.6536223],
   ],
+  PLAZA,
 ];
 export const OSM_WAYS = ['way/198500761', 'way/27767543', 'way/963504341', 'way/27767544', 'way/963504342', 'way/27767545', 'way/963504345', 'way/293907515', 'way/963504343', 'way/963504344', 'relation/542980'];

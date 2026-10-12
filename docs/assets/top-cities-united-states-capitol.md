@@ -65,3 +65,10 @@ Deterministic export QA: `tmp/top-cities/united-states-capitol/metrics.json`, no
 
 Focused tests: seven landmark tests plus three Capitol registry checks pass (dimensions, bronze summit, all 36 open peristyle bays, twelve tholos supports/lantern openings, porch and wing column gaps, stairs, footprint containment, LOD bounds and GLB source agreement). The prescribed two-file test run is also recorded; any failures belonging to concurrently authored landmarks are outside this asset's ownership. `node scripts/asset-catalog.mjs` passed at the completed-catalog checkpoint (164 entries, 270 GLB variants), and `pnpm assets:preview` successfully built the local inspector at `tmp/champlain-preview/asset-catalog.html`. The latest prescribed two-file run (`tmp/top-cities/united-states-capitol/focused-tests.txt`) passed all ten Capitol checks but failed on concurrently changing Old Orange County Courthouse readiness and Palace of the Parliament far bytes; the later catalog retry was blocked by the missing Fourvière documentation file. No other landmark/shared files were edited to make global checks pass.
 
+## Follow-up QA, 11 October 2026 (united-states-capitol)
+
+Reshaped the cast-iron shell from a shallow 13 m cap to a curved 17.6 m shell, retained 36 projecting ribs in both LODs with 0.65–0.75 m relief, widened all 36 free peristyle columns, lowered the attic, and added tholos bases/capitals. Far now retains the upper-shell window band. Unified body stone contacts and moved pediment relief forward to remove material depth cycles.
+
+Current exports supersede the historical cost tables above: near 35652 triangles / 6 draws / 1680428 bytes; far 8454 triangles / 6 draws / 377740 bytes. The geometry-derived depth table was regenerated; selected-model QA has no issues or dropped cycle edges.
+
+Far, near and street daytime frames were inspected in both modes; visible grade contacts remain clean. This is viewpoint-specific visual evidence; night, terrain refinement/eviction, mode toggles and Tesla hardware are not retested. Earlier statements that these modes were untested describe the historical build.

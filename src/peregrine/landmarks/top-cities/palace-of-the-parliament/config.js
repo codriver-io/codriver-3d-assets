@@ -29,10 +29,10 @@ export const SPEC = {
 export const PALETTES = {
   light: {
     stone: '#e4d9c4',
-    trim: '#f3eee4',
+    trim: '#e4d9c8',
     stoneDark: '#c9bba4',
-    glass: '#5c707a',
-    glow: '#8fa3ad',
+    glass: '#465052',
+    glow: '#626c6b',
     void: '#2c2824',
     iron: '#3c3a36',
     sign: '#002B7F',

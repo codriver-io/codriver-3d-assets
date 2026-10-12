@@ -22,7 +22,7 @@ is the long cornice, the higher central attic and pediment, and the sculpture ti
 | Width | published anchura 43.07 m (Wikipedia 43 m). Model wall 42.30 m | Restoration survey. The mapped outline is chamfered, so a 43.07 m rectangle would leave the footprint |
 | Depth | published 11.74 m. Model nose-to-nose about 11.1 m | Restoration survey. The 7.0 m body is the wall; the extra depth is the central pedestals |
 | Openings | doors 6.10 m (survey). Model spring 10.05 m, side crown 12.63 m, central crown 13.35 m | Survey side opening is 9.28 m. Keeping that crown under the OSM cornice left a blank belt the elevation does not show. The model arches are semicircles on one spring, with the central crown just under the architrave |
-| Cornice / attic | cornice top 16.60 m; side attic 18.20 m; pediment base 19.72 m, apex 22.62 m; tip 23.79 m | OSM parts put a cornice near 15.24 m and a central block at 20.1 m. The model cornice is higher so the order, not the attic, is the mass. Above the cornice is 7.19 m, 30% of the tip |
+| Cornice / attic | cornice top 15.70 m; side attic 17.30 m; pediment base 19.72 m, apex 22.62 m; tip 23.79 m | OSM parts put a cornice near 15.24 m and a central block at 20.1 m. The model cornice is higher so the order, not the attic, is the mass. Above the cornice is 8.09 m, 34% of the tip |
 | Plan | along-axis bearing 170.4°, through-axis (east front) 80.4°. Origin is the vertex centroid of way 174805987 | OSM way 174805987 and parts 323039763, 323039764, 323039766, 323039769, 323039771, 323039772 |
 | Materials | Segovia granite mass; Colmenar limestone tablet and sculpture | Wikipedia / the restoration account of Gutiérrez and Michel's stone |
 
@@ -33,7 +33,7 @@ south, t through the arches toward the inscribed east front) and baked with that
 plaza grade. Nothing is baked for terrain or sea level. `padM` 30 m covers the outline (about 22 m out).
 The circle is level, so there is no `terrainPad`.
 
-Cityscape and Full 3D world: not tested yet, integration is checked separately. On Full 3D world the
+Initial authoring did not test app integration; current results appear below. On Full 3D world the
 plaza should stay near one grade; the model does not carry a hillside pad.
 
 ## Materials
@@ -68,15 +68,15 @@ wall the outline allows; they read heavier than the real ashlar. Rustication is 
 drafted block. Arch crowns follow the photographed order (central crown at 80% of the cornice height);
 they are not the survey's 9.28 m side opening. A semicircular arch of this width cannot also put the
 impost at 45% of the cornice and the attic at 25% of the tip, so the impost sits at 10.05 m (61% of the
-cornice) and the attic-to-tip band is 30%. The WorldPride rainbow lighting is not the model.
+cornice) and the attic-to-tip band is 34%. The WorldPride rainbow lighting is not the model.
 Coffers inside the arches, the iron fence and the garden are not modelled.
 
 ## Costs (exported)
 
 | | triangles | draw calls | bytes |
 | --- | --- | --- | --- |
-| near | 6 936 | 3 | 354 KB (362 640 bytes) |
-| far | 2 436 | 2 | 124 KB (126 764 bytes) |
+| near | 6,930 | 3 | 362,748 bytes (354 KB) |
+| far | 2,430 | 2 | 126,872 bytes (124 KB) |
 
 Budget for a building: near ≤ 60 000 / 14 / 2.5 MB, far ≤ 12 000 / 8 / 500 KB. Far bounds match near.
 
@@ -92,3 +92,11 @@ architrave, the pediment projects with a dark tympanum, the crest is a narrow st
 reliefs are stone-coloured frames. Checked on `tmp/top-cities/review/puerta-de-alcala/puerta-de-alcala.jpg`
 (near and far, both fronts). qa-metrics reports no issue: coplanar pairs 0, back-face hits 0. The plan
 view sits inside the red OSM rings. Shots: `tmp/top-cities/shots/puerta-de-alcala/`.
+
+## Landmark QA correction — 2026-10-11
+
+QA correction: entablature reduced to 1.8 m with the cornice at 15.70 m, continuous beams over the paired capitals, larger framed inscription tablet and a shaped shield with reclining supporters. Five passages and the 23.79 m tip remain in both LODs. Sculpture remains an estimated relief silhouette rather than surveyed carving.
+
+Compared against the supplied independent review and reference tile in the original contact sheet. No new external model or texture was retained.
+
+Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction.

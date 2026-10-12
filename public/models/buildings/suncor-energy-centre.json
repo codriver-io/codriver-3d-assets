@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/suncor-energy-centre-near.glb",
-      "bytes": 259584,
+      "bytes": 259580,
       "triangles": 4797,
       "drawCalls": 4,
       "bounds": {
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/suncor-energy-centre-far.glb",
-      "bytes": 41988,
-      "triangles": 759,
+      "bytes": 159544,
+      "triangles": 2941,
       "drawCalls": 4,
       "bounds": {
         "min": [

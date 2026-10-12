@@ -23,9 +23,9 @@ const ww = bbox(A, WEST_WING), nw = bbox(A, NORTH_WING);
 nw.v0 = NORTH_WING.slice(0, 3).reduce((a, p) => a + A.uv(p)[1], 0) / 3; // the mapped north end is a line 1.4 deg off the grid: take its middle
 
 // Heights (m above the forecourt), estimated from the photographs. prof: [inset from the wall, roof height] up to the top; Infinity = the ridge.
-export const H = { hallEave: 11.8, hallTop: 19.4, sideEave: 6.7, sideTop: 12.4, wingEave: 3.6, wingRidge: 10.8, finial: 20.4, cone: 17.4 };
+export const H = { hallEave: 14.3, hallTop: 19.4, sideEave: 6.7, sideTop: 12.4, wingEave: 3.6, wingRidge: 10.8, finial: 20.4, cone: 19.2 };
 export const BLOCKS = {
-  hall: { fr: M, u0: PAV.u0, u1: PAV.u1, v0: V_BACK, v1: V_WALL, eave: H.hallEave, prof: [[2.4, 15.6], [6.8, H.hallTop]], plain: true },
+  hall: { fr: M, u0: PAV.u0, u1: PAV.u1, v0: V_BACK, v1: V_WALL, eave: H.hallEave, prof: [[2.4, 17.0], [6.8, H.hallTop]], plain: true },
   left: { fr: M, u0: U_LEFT, u1: PAV.u0 + 3, v0: V_BACK, v1: V_SIDE, eave: H.sideEave, prof: [[1.9, 10.6], [4.2, H.sideTop]] },
   right: { fr: M, u0: PAV.u1 - 3, u1: U_RIGHT, v0: V_BACK, v1: V_SIDE, eave: H.sideEave, prof: [[1.9, 10.6], [4.2, H.sideTop]] },
   // gable: the wing's ridge axis; its far end (a0) is hipped, its joined end (a1) is a gable running into the main block's roof (clipped, with a valley)
@@ -75,13 +75,13 @@ const PART_ROWS = [
 ];
 
 function windows(kit, w, e, rows, near) {
-  if (!near) { // far: one dark slot per two windows, a quarter of them lit at night
+  if (!near) { // far: one pane per window bay, a quarter of them lit at night
     let k = 0;
     for (const r of rows) {
-      const step = r.pitch * 2, count = Math.floor((e.b - e.a - 2 * r.margin) / step) + 1;
+      const step = r.pitch, count = Math.floor((e.b - e.a - 2 * r.margin) / step) + 1;
       if (count < 1) continue;
       const start = (e.a + e.b) / 2 - (count - 1) * step / 2;
-      for (let i = 0; i < count; i++) { const c = start + i * step; kit.panel(k++ % 4 === 1 ? 'glow' : 'glass', w.o, w.t, w.n, Math.max(e.a + 0.6, c - r.w * 1.1), Math.min(e.b - 0.6, c + r.w * 1.1), r.y0, r.y1, 0.1); }
+      for (let i = 0; i < count; i++) { const c = start + i * step; kit.panel(k++ % 4 === 1 ? 'glow' : 'glass', w.o, w.t, w.n, Math.max(e.a + 0.6, c - r.w / 2), Math.min(e.b - 0.6, c + r.w / 2), r.y0, r.y1, 0.1); }
     }
     return;
   }
@@ -94,13 +94,13 @@ function windows(kit, w, e, rows, near) {
       const c = start + i * r.pitch + off, hw = r.w / 2, lit = (idx++ % 3) === 1, mat = lit ? 'glow' : 'glass';
       kit.slab('stone', w.o, w.t, w.n, c - hw - 0.22, c + hw + 0.22, r.y0 - 0.32, r.y0 - 0.15, 0.2, { top: false });
       if (r.shape === 'arch') {
-        kit.arch('stone', w.o, w.t, w.n, c - hw - 0.15, c + hw + 0.15, r.y0 - 0.15, r.y1 - hw, 0.06);
-        kit.arch(mat, w.o, w.t, w.n, c - hw, c + hw, r.y0, r.y1 - hw, 0.11);
-        kit.panel('stone', w.o, w.t, w.n, c - 0.04, c + 0.04, r.y0, r.y1 - hw, 0.15);
+        kit.arch('stone', w.o, w.t, w.n, c - hw - 0.15, c + hw + 0.15, r.y0 - 0.15, r.y1 - hw, 0.15);
+        kit.arch(mat, w.o, w.t, w.n, c - hw, c + hw, r.y0, r.y1 - hw, 0.30);
+        kit.panel('mullion', w.o, w.t, w.n, c - 0.04, c + 0.04, r.y0, r.y1 - hw, 0.60);
       } else {
-        kit.panel('stone', w.o, w.t, w.n, c - hw - 0.14, c + hw + 0.14, r.y0 - 0.14, r.y1 + 0.14, 0.06);
-        kit.panel(mat, w.o, w.t, w.n, c - hw, c + hw, r.y0, r.y1, 0.11);
-        kit.panel('stone', w.o, w.t, w.n, c - 0.04, c + 0.04, r.y0, r.y1, 0.15);
+        kit.panel('stone', w.o, w.t, w.n, c - hw - 0.14, c + hw + 0.14, r.y0 - 0.14, r.y1 + 0.14, 0.15);
+        kit.panel(mat, w.o, w.t, w.n, c - hw, c + hw, r.y0, r.y1, 0.30);
+        kit.panel('mullion', w.o, w.t, w.n, c - 0.04, c + 0.04, r.y0, r.y1, 0.60);
       }
     }
   }
@@ -167,8 +167,8 @@ function dormer(kit, b, w, s, spec, near) {
   kit.gable(spec.front, o, t, n, s - hw, s + hw, y0, y1, ya, d0);
   if (near && spec.window) {
     const ww2 = spec.window, top = y1 + 0.1;
-    kit.arch(spec.glass || 'glass', o, t, n, s - ww2 / 2, s + ww2 / 2, y0 + 0.5, top - ww2 / 2, d0 + 0.05);
-    kit.panel('stone', o, t, n, s - 0.04, s + 0.04, y0 + 0.5, top - ww2 / 2, d0 + 0.09);
+    kit.arch(spec.glass || 'glass', o, t, n, s - ww2 / 2, s + ww2 / 2, y0 + 0.5, top - ww2 / 2, d0 + 0.15);
+    kit.panel('mullion', o, t, n, s - 0.04, s + 0.04, y0 + 0.5, top - ww2 / 2, d0 + 0.40);
   }
   for (const sg of [-1, 1]) {
     kit.tri(spec.cheek || 'copper', P(sg * hw, y0, d0), P(sg * hw, y1, d0), P(sg * hw, y1, s1), [t[0] * sg, 0, t[1] * sg]);
@@ -222,7 +222,7 @@ const spread = (L, n, margin = 2.4) => Array.from({ length: n }, (_, i) => margi
 // ---- round turrets under cones ----
 function turret(kit, cx, cz, near) {
   const seg = near ? 12 : 8, ring = (r) => Array.from({ length: seg }, (_, i) => { const a = (i / seg) * Math.PI * 2; return [cx + r * Math.cos(a), cz + r * Math.sin(a)]; });
-  const r0 = 1.5, rBelt = 1.66, rDrum = 1.52, rCorn = 1.9, yBelt = 10.7, yBeltTop = 11.15, yDrum = 12.9, yCone = 13.2;
+  const r0 = 1.5, rBelt = 1.66, rDrum = 1.52, rCorn = 1.9, yBelt = 12.9, yBeltTop = 13.35, yDrum = 14.9, yCone = 15.2;
   // a continuous round brick tower from the ground (the photographs show no corbel or pier under the shaft), with the same stone base course as the walls
   kit.loft('brick', ring(r0), 0, ring(r0), yBelt, 0);
   if (near) { kit.loft('stone', ring(r0 + 0.15), 0, ring(r0 + 0.15), 0.7, 0); kit.annulus('stone', ring(r0), ring(r0 + 0.15), 0.7, true); }
@@ -237,66 +237,60 @@ function turret(kit, cx, cz, near) {
   const pole = [[cx - 0.06, cz - 0.06], [cx + 0.06, cz - 0.06], [cx + 0.06, cz + 0.06], [cx - 0.06, cz + 0.06]];
   kit.prism('metal', pole, H.cone - 0.1, H.cone + 0.95);
   if (!near) return;
-  const slit = (r, y0, y1, ang) => { const nn = [Math.cos(ang), Math.sin(ang)], tt = [-nn[1], nn[0]]; kit.panel('glass', [cx + nn[0] * (r + 0.04), cz + nn[1] * (r + 0.04)], tt, nn, -0.14, 0.14, y0, y1, 0); };
+  const slit = (r, y0, y1, ang) => { const nn = [Math.cos(ang), Math.sin(ang)], tt = [-nn[1], nn[0]]; kit.panel('glass', [cx + nn[0] * (r + 0.15), cz + nn[1] * (r + 0.15)], tt, nn, -0.14, 0.14, y0, y1, 0); };
   for (let i = 0; i < seg; i++) { // a corbel table of small arches under the cornice
     const a = ((i + 0.5) / seg) * Math.PI * 2, nn = [Math.cos(a), Math.sin(a)], tt = [-nn[1], nn[0]];
-    kit.arch('glass', [cx + nn[0] * (rDrum + 0.03), cz + nn[1] * (rDrum + 0.03)], tt, nn, -0.2, 0.2, 12.3, 12.45, 0, 3);
+    kit.arch('glass', [cx + nn[0] * (rDrum + 0.15), cz + nn[1] * (rDrum + 0.15)], tt, nn, -0.2, 0.2, 14.3, 14.45, 0, 3);
   }
   const toFront = Math.atan2(M.V[1], M.V[0]);
-  for (const da of [-0.55, 0.55]) { slit(r0, 8.6, 9.9, toFront + da); slit(rDrum, 11.6, 12.4, toFront + da); }
-  slit(r0, 8.6, 9.9, toFront); slit(rDrum, 11.6, 12.4, toFront);
+  for (const da of [-0.55, 0.55]) { slit(r0, 8.6, 9.9, toFront + da); slit(rDrum, 13.6, 14.4, toFront + da); }
+  slit(r0, 8.6, 9.9, toFront); slit(rDrum, 13.6, 14.4, toFront);
 }
 
 // ---- the central pavilion: glass wall, arcature, clock, canopy ----
 function pavilion(kit, near) {
   const o = M.at(PAV.uc, V_WALL), t = M.U, n = M.V;
   const S = (u0, u1, y0, y1, d, opt) => kit.slab('stone', o, t, n, u0, u1, y0, y1, d, opt);
+  const grid = (u0, u1, y0, y1) => kit.slab('mullion', o, t, n, u0, u1, y0, y1, 0.75, { top: false, bottom: false });
   const sq = (u, d, h) => [[-h, -h], [h, -h], [h, h], [-h, h]].map(([a, b]) => [o[0] + t[0] * (u + a) + n[0] * (d + b), o[1] + t[1] * (u + a) + n[1] * (d + b)]);
   // doorway: stone surround, five glazed doors, metal mullions
   S(-5.0, 5.0, 0, 4.5, 0.14, { top: false });
-  for (let i = 0; i < 5; i++) kit.panel('glow', o, t, n, (i - 2) * 1.8 - 0.8, (i - 2) * 1.8 + 0.8, 0.12, 3.2, 0.2);
-  if (near) { for (let i = 0; i < 6; i++) S((i - 2.5) * 1.8 - 0.06, (i - 2.5) * 1.8 + 0.06, 0.12, 3.4, 0.26, { bottom: false }); S(-4.5, 4.5, 3.2, 3.4, 0.24, { bottom: false }); }
+  for (let i = 0; i < 5; i++) kit.panel('glow', o, t, n, (i - 2) * 1.8 - 0.8, (i - 2) * 1.8 + 0.8, 0.12, 3.2, 0.30);
+  if (near) { for (let i = 0; i < 6; i++) S((i - 2.5) * 1.8 - 0.06, (i - 2.5) * 1.8 + 0.06, 0.12, 3.4, 0.45, { bottom: false }); S(-4.5, 4.5, 3.2, 3.4, 0.45, { bottom: false }); }
   // canopy: a closed wedge
   const Q = (u, y, d) => kit.wp(o, t, n, u, y, d), cw = 5.0, cd = 2.2;
   kit.quad('copper', Q(-cw, 4.6, 0.14), Q(cw, 4.6, 0.14), Q(cw, 3.95, cd), Q(-cw, 3.95, cd), [0, 1, 0.1]);
   kit.quad('copper', Q(-cw, 3.4, cd), Q(cw, 3.4, cd), Q(cw, 3.95, cd), Q(-cw, 3.95, cd), kit.hint(n));
   kit.quad('metal', Q(-cw, 3.4, 0.14), Q(cw, 3.4, 0.14), Q(cw, 3.4, cd), Q(-cw, 3.4, cd), [0, -1, 0]);
   for (const sg of [-1, 1]) kit.quad('copper', Q(sg * cw, 3.4, 0.14), Q(sg * cw, 4.6, 0.14), Q(sg * cw, 3.95, cd), Q(sg * cw, 3.4, cd), [t[0] * sg, 0, t[1] * sg]);
-  kit.panel('sign', o, t, n, -4.3, 4.3, 3.55, 3.8, cd + 0.05);
+  kit.panel('sign', o, t, n, -4.3, 4.3, 3.55, 3.8, cd + 0.15);
   for (const sg of [-1, 1]) kit.prism('metal', sq(sg * 4.7, cd - 0.2, 0.12), 0, 3.4, { top: false });
-  // glass wall: stone frame, seven tall panes under seven arched transoms (the seven windows of the central bay, Parks Canada), stone mullions
-  S(-3.9, 3.9, 4.4, 10.5, 0.35, { top: false });
-  const bay = 1.02, hwp = 0.41;
+  // Seven full-height panes and arched transoms: the great hall, not a short grid under the roof.
+  S(-5.15, 5.15, 4.4, 13.35, 0.35, { top: false });
+  const bay = 1.32, hwp = 0.54;
   for (let i = 0; i < 7; i++) {
     const c = (i - 3) * bay;
-    kit.panel('glow', o, t, n, c - hwp, c + hwp, 4.7, 8.4, 0.4);
-    kit.arch('glow', o, t, n, c - hwp, c + hwp, 8.7, 9.7, 0.4, near ? 4 : 2);
+    kit.panel('glow', o, t, n, c - hwp, c + hwp, 4.7, 11.2, 0.50);
+    kit.arch('glow', o, t, n, c - hwp, c + hwp, 11.45, 12.55, 0.50, near ? 5 : 3);
+    if (near) for (const y of [6.3, 7.9, 9.5]) grid(c - hwp, c + hwp, y, y + 0.10);
   }
-  S(-3.55, 3.55, 8.4, 8.7, 0.48, { bottom: false });
-  if (near) for (let i = 0; i < 6; i++) { const m = (i - 2.5) * bay; S(m - 0.11, m + 0.11, 4.6, 10.3, 0.52, { top: false, bottom: false }); }
-  // stone base course either side of the doorway
+  grid(-4.7, 4.7, 11.2, 11.45);
+  for (let i = 0; i < 6; i++) { const m = (i - 2.5) * bay; grid(m - 0.10, m + 0.10, 4.6, 13.15); }
   S(-7.4, -5.0, 0, 0.7, 0.15, { bottom: false }); S(5.0, 7.4, 0, 0.7, 0.15, { bottom: false });
-  // arcature band under the roof, between the turrets
-  S(-7.4, 7.4, 10.5, 11.6, 0.4);
-  if (near) for (let i = 0; i < 9; i++) kit.arch('glass', o, t, n, (i - 4) * 0.85 - 0.22, (i - 4) * 0.85 + 0.22, 10.78, 11.1, 0.45, 3);
-  // clock gable: a stone dormer rising through the roof, with the dial; two pinnacles beside it
+  S(-7.4, 7.4, 13.35, 14.3, 0.4);
+  for (let i = 0; i < 11; i++) kit.arch('glass', o, t, n, (i - 5) * 0.85 - 0.22, (i - 5) * 0.85 + 0.22, 13.55, 13.9, 0.55, near ? 4 : 2);
   const hall = BLOCKS.hall;
-  dormer(kit, hall, { o, t, n }, 0, { w: 3.4, y0: 11.6, h1: 2.8, hApex: 4.5, d0: 0.55, front: 'stone' }, near);
+  dormer(kit, hall, { o, t, n }, 0, { w: 3.4, y0: 14.3, h1: 2.7, hApex: 4.2, d0: 0.55, front: 'stone' }, near);
   const disc = (r, y, d, m) => kit.fan(m, Array.from({ length: near ? 16 : 10 }, (_, i) => Q(r * Math.cos((i / (near ? 16 : 10)) * Math.PI * 2), y + r * Math.sin((i / (near ? 16 : 10)) * Math.PI * 2), d)), kit.hint(n));
-  disc(1.2, 13.0, 0.6, 'metal'); disc(1.05, 13.0, 0.66, 'sign'); // the real dial is eight feet (2.4 m)
+  disc(1.2, 15.7, 0.70, 'stone'); disc(1.05, 15.7, 0.85, 'sign');
   if (near) {
-    const hand = (ang, len, wid, d) => { const dir = [Math.sin(ang), Math.cos(ang)], pp = [dir[1], -dir[0]]; kit.quad('metal', Q(-pp[0] * wid, 13.0 - pp[1] * wid, d), Q(pp[0] * wid, 13.0 + pp[1] * wid, d), Q(dir[0] * len + pp[0] * wid * 0.5, 13.0 + dir[1] * len + pp[1] * wid * 0.5, d), Q(dir[0] * len - pp[0] * wid * 0.5, 13.0 + dir[1] * len - pp[1] * wid * 0.5, d), kit.hint(n)); };
-    hand(Math.PI / 3, 0.9, 0.05, 0.71); hand(-Math.PI * 0.34, 0.58, 0.065, 0.74);
-  }
-  if (near) for (const [u, y0] of [[-3.25, 13.05], [3.25, 13.05], [-2.9, 15.1], [2.9, 15.1]]) { // louvred vents on the hall's front slope
-    const sd = -(sAt(hall, y0) + 0.05); // the vent stands on the slope, inside the wall plane
-    dormer(kit, hall, { o, t, n }, u, { w: 0.7, y0, h1: 0.5, hApex: 0.95, d0: sd, front: 'copper', cheek: 'copper' }, near);
-    kit.panel('metal', o, t, n, u - 0.2, u + 0.2, y0 + 0.1, y0 + 0.4, sd + 0.04);
+    const hand = (ang, len, wid, d) => { const dir = [Math.sin(ang), Math.cos(ang)], pp = [dir[1], -dir[0]]; kit.quad('metal', Q(-pp[0] * wid, 15.7 - pp[1] * wid, d), Q(pp[0] * wid, 15.7 + pp[1] * wid, d), Q(dir[0] * len + pp[0] * wid * 0.5, 15.7 + dir[1] * len + pp[1] * wid * 0.5, d), Q(dir[0] * len - pp[0] * wid * 0.5, 15.7 + dir[1] * len - pp[1] * wid * 0.5, d), kit.hint(n)); };
+    hand(Math.PI / 3, 0.9, 0.05, 1.0); hand(-Math.PI * 0.34, 0.58, 0.065, 1.0);
   }
   for (const sg of [-1, 1]) {
-    const ring = sq(sg * 2.45, 0.25, 0.2); // the pinnacle stands on the band, within its depth
-    kit.prism('stone', ring, 11.6, 14.1, { top: false });
-    kit.cone('stone', ring, 14.1, [o[0] + t[0] * sg * 2.45 + n[0] * 0.25, 15.1, o[1] + t[1] * sg * 2.45 + n[1] * 0.25]);
+    const ring = sq(sg * 2.45, 0.25, 0.2);
+    kit.prism('stone', ring, 14.3, 16.8, { top: false });
+    kit.cone('stone', ring, 16.8, [o[0] + t[0] * sg * 2.45 + n[0] * 0.25, 17.8, o[1] + t[1] * sg * 2.45 + n[1] * 0.25]);
   }
   // finial on the crest of the hall roof
   const mid = M.at(PAV.uc, (hall.v0 + hall.v1) / 2);

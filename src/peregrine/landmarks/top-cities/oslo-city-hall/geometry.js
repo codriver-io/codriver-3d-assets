@@ -1,3 +1,4 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
@@ -94,7 +95,7 @@ export function create({ detail = 'near' } = {}) {
   function cols(face, fixed, a0, pitch, n, y0, y1, w, h, stepY, rich) {
     const rows = [];
     for (let y = y0; y <= y1 + 1e-6; y += stepY) rows.push(y);
-    const use = near ? rows : rows.filter((_, i) => i % 2 === 0);
+    const use = rows;
     for (let i = 0; i < n; i++) {
       const a = a0 + i * pitch;
       const u = face === 'e' || face === 'w' ? fixed : a;
@@ -138,19 +139,29 @@ export function create({ detail = 'near' } = {}) {
     g.translate(c[0], c[1], c[2]);
     b.put(g, 'brass');
   }
-  function clock(face, u, v, y, r) {
+  function clock(face, u, v, y, r, astronomical = false) {
     const segs = near ? 28 : 14;
-    disc('brass', face, u, y, v, r + 0.28, segs, 0.40);
-    disc('glow', face, u, y, v, r, segs, 0.52);
-    hand(face, u, y, v, r * 0.62, -0.7, 0.64);
-    hand(face, u, y, v, r * 0.9, 0.55, 0.68);
-    if (near) {
+    if (astronomical) {
+      const rim = new THREE.RingGeometry(r + 0.02,r + 0.28,segs);
+      if (face === 'n') rim.rotateY(Math.PI);
+      rim.translate(...at(face,u,y,v,0.4)); b.put(rim,'brass');
+      disc('glow', face, u, y, v, r, segs, 0.72);
+    } else {
+      // Harbour dial is open metalwork: brick remains visible through its rim.
+      const g = new THREE.RingGeometry(r - 0.10, r + 0.10, segs);
+      if (face === 'n') g.rotateY(Math.PI);
+      const c = at(face, u, y, v, 0.42);
+      g.translate(...c); b.put(g, 'brass');
+    }
+    hand(face, u, y, v, r * 0.62, -0.7, 1.0);
+    hand(face, u, y, v, r * 0.9, 0.55, 1.14);
+    {
       for (let i = 0; i < 12; i++) {
         const a = (i / 12) * Math.PI * 2 - Math.PI / 2;
         const du = Math.cos(a) * (r - 0.45), dy = Math.sin(a) * (r - 0.45);
         const uu = face === 'e' || face === 'w' ? u : u + du;
         const vv = face === 'e' || face === 'w' ? v + du : v;
-        faceBox('brass', face, uu, y + dy, vv, 0.12, 0.42, 0.06, 0.60);
+        faceBox('brass', face, uu, y + dy, vv, 0.12, 0.42, 0.06, 1.24);
       }
     }
   }
@@ -222,13 +233,13 @@ export function create({ detail = 'near' } = {}) {
 
   // Wing windows. South is the driver's view from Rådhusplassen: two tall rows
   // between the stone courses, not a grid of small squares. The parapet above is blank.
-  const southStep = near ? 3.7 : 7.4;
+  const southStep = 3.7;
   for (let u = WING.u0 + 2.6; u < WING.u1 - 1.4; u += southStep) {
     win('s', u, WING.v0, 9.9, 1.85, 3.55, near);
     win('s', u, WING.v0, 17.25, 1.95, 4.2, near);
   }
-  cols('e', WING.u1, WING.v0 + 2.4, near ? 3.8 : 7.6, near ? 9 : 5, 9.2, 18.4, 1.55, 3.4, near ? 7.6 : 8, false);
-  cols('w', WING.u0, WING.v0 + 2.4, near ? 3.8 : 7.6, near ? 9 : 5, 9.2, 18.4, 1.55, 3.4, near ? 7.6 : 8, false);
+  cols('e', WING.u1, WING.v0 + 2.4, 3.8, 9, 9.2, 18.4, 1.55, 3.4, 7.6, false);
+  cols('w', WING.u0, WING.v0 + 2.4, 3.8, 9, 9.2, 18.4, 1.55, 3.4, 7.6, false);
 
   // Towers. Short faces (harbour and plaza) carry the slot; the east harbour face carries the 8.6 m clock.
   const CROWN = { [EAST.h]: { y0: 57.2, y1: 62.3 }, [WEST.h]: { y0: 54.6, y1: 59.3 } };
@@ -241,17 +252,17 @@ export function create({ detail = 'near' } = {}) {
     if (!withClock) slot(face, uC, v, yLow, yTop - 0.6, 2.9);
     const side = [-4.55, 4.55];
     const rows = [];
-    for (let y = yLow + 1.3; y < yTop - 1.2; y += near ? 3.15 : 6.3) rows.push(y);
+    for (let y = yLow + 1.3; y < yTop - 1.2; y += 3.15) rows.push(y);
     for (const du of side) {
       for (const y of rows) {
         if (withClock && y > CLOCK.y - CLOCK.r - 0.8 && y < CLOCK.y + CLOCK.r + 0.6) continue;
-        win(face, uC + du, v, y, 1.55, 2.15, true);
+        win(face, uC + du, v, y, 1.55, 2.15, near);
       }
     }
     if (withClock) {
       const below = rows.filter((y) => y < CLOCK.y - CLOCK.r - 1);
-      const show = near ? below : below.filter((_, i) => i % 2 === 0);
-      for (const y of show) win(face, uC, v, y, 1.7, 2.15, true);
+      const show = below;
+      for (const y of show) win(face, uC, v, y, 1.7, 2.15, near);
     }
     band('stone', face, v, tower.u0 + 0.4, tower.u1 - 0.4, crown.y0 - 0.4, 0.32, 0.34, 0.14);
     band('stone', face, v, tower.u0 + 0.2, tower.u1 - 0.2, tower.h - 0.45, 0.4, 0.28, 0.14);
@@ -269,12 +280,12 @@ export function create({ detail = 'near' } = {}) {
     const inner = (tower === WEST && face === 'e') || (tower === EAST && face === 'w');
     const crown = tower === EAST ? CROWN[EAST.h] : CROWN[WEST.h];
     const vCourt0 = MID.v1 + 1.1;
-    const pitch = near ? 3.5 : 7;
+    const pitch = 3.5;
     const yHi = crown.y0 - 1.4;
     const nCourt = Math.max(2, Math.floor((tower.v1 - 1.4 - vCourt0) / pitch));
-    cols(face, u, vCourt0, pitch, nCourt, 3.4, yHi, 1.2, 2.2, near ? 3.2 : 6.4, false);
-    if (!inner) cols(face, u, tower.v0 + 1.6, pitch, Math.max(2, Math.floor((MID.v1 - tower.v0 - 2) / pitch)), 3.4, yHi, 1.2, 2.2, near ? 3.2 : 6.4, false);
-    else cols(face, u, tower.v0 + 1.6, pitch, Math.max(1, Math.floor((MID.v1 - tower.v0 - 2) / pitch)), MID.h + 1.4, yHi, 1.2, 2.2, near ? 3.2 : 6.4, false);
+    cols(face, u, vCourt0, pitch, nCourt, 3.4, yHi, 1.2, 2.2, 3.2, false);
+    if (!inner) cols(face, u, tower.v0 + 1.6, pitch, Math.max(2, Math.floor((MID.v1 - tower.v0 - 2) / pitch)), 3.4, yHi, 1.2, 2.2, 3.2, false);
+    else cols(face, u, tower.v0 + 1.6, pitch, Math.max(1, Math.floor((MID.v1 - tower.v0 - 2) / pitch)), MID.h + 1.4, yHi, 1.2, 2.2, 3.2, false);
     band('stone', face, u, tower.v0 + 0.3, tower.v1 - 0.3, crown.y0 - 0.4, 0.3, 0.32, 0.14);
     band('stone', face, u, tower.v0 + 0.2, tower.v1 - 0.2, tower.h - 0.45, 0.38, 0.26, 0.12);
     loggia(face, tower, crown.y0, crown.y1);
@@ -291,10 +302,10 @@ export function create({ detail = 'near' } = {}) {
   faceBox('stone', 'n', MID_U - 3.5, doorY, MID.v1, 0.7, 8.2, 0.4, 0.72);
   faceBox('stone', 'n', MID_U + 3.5, doorY, MID.v1, 0.7, 8.2, 0.4, 0.72);
   frieze('n', MID_U, 13.7, MID.v1, 11.2, 3.6);
-  clock('n', ASTRO.u, ASTRO.v, ASTRO.y, ASTRO.r);
+  clock('n', ASTRO.u, ASTRO.v, ASTRO.y, ASTRO.r, true);
   for (const u of [MID_U - 10.2, MID_U - 7.4, MID_U + 7.4, MID_U + 10.2]) {
-    const ys = near ? [4.2, 8.2, 17.4, 21.2, 26.4, 29.6] : [4.2, 17.4, 26.4];
-    for (const y of ys) win('n', u, MID.v1, y, 1.45, 2.05, true);
+    const ys = [4.2, 8.2, 17.4, 21.2, 26.4, 29.6];
+    for (const y of ys) win('n', u, MID.v1, y, 1.45, 2.05, near);
   }
   mass('stone', -22.6, 6.6, 53.4, 71.4, 0, 1.05);
 
@@ -306,6 +317,7 @@ export function create({ detail = 'near' } = {}) {
 
   q.flush();
   const root = b.finish();
+  root.traverse(o=>{if(o.isMesh){const old=o.geometry;o.geometry=mergeVertices(old,1e-4);old.dispose();}});
   root.rotation.y = PHI;
   root.userData.world = world;
   return root;

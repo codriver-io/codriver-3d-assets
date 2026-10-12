@@ -3,7 +3,7 @@ import { SPEC, PALETTES } from './config.js';
 import { buildReunionTower } from './reunion-tower-parts.js';
 
 // Reunion Tower. Near is an 8-frequency geodesic (the published subdivision) with the
-// banded shafts and elevator glass; far keeps the same ball, open underside, crown and
+// pale shafts with thin pour joints and elevator glass; far keeps the same ball, open underside, crown and
 // four shafts at 4-frequency, about a quarter of the triangles.
 export function create({ detail = 'near' } = {}) {
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);

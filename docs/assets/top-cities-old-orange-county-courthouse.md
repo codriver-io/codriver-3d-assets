@@ -26,7 +26,7 @@ The small 0.25 m survey steps along the east outline are consolidated in the aut
 
 `src/peregrine/landmarks/top-cities/old-orange-county-courthouse/` contains the spec, exact mapped footprint plus authored stair envelope, geometry, original solid constructors, view presets and observable tests. Model signature: three genuinely recessed arched portals above the granite stair, five central upper arches, three-window corner groups, tall centre and side pediments, arched corner dormers, hipped red roofs, corbel cornices and rusticated sandstone courses. Openings are cut from facade shells; glazing is behind the wall, not pasted over a solid extrusion. Near includes mortar gaps, relief blocks, divided sash, basement grilles and roof ribs. Far retains the openings, roofline and full footprint, using planar trim and fewer arch segments.
 
-Materials: warm red/brown sandstone, relief ashlar, slightly lighter carved trim, pale grey granite, red clay roof, dark glass, dark timber and iron. Both theme palettes use the same names. Sparse `glow` window panes illustrate evening occupancy; the actual lighting pattern is not surveyed.
+Materials: warm red/brown sandstone, relief ashlar, carved cornices sharing the sandstone material to avoid opposing depth stacks, pale grey granite, muted red-brown roof, dark glass, dark timber and iron. Both theme palettes use the same names. Sparse `glow` window panes illustrate evening occupancy; the actual lighting pattern is not surveyed.
 
 Reference sheet `tmp/top-cities/old-orange-county-courthouse/refs-sheet.jpg` was viewed before authoring. Checked comparison references:
 
@@ -46,17 +46,30 @@ The exported contact sheet was opened and judged next to the frontal Cbl62 and o
 
 | Export | Triangles | Scene draws | Bytes | KiB |
 | --- | --- | --- | --- | --- |
-| near | 37,209 | 9 | 1,963,644 | 1917.6 |
-| far | 4,655 | 8 | 220,080 | 214.9 |
+| near | 37,209 | 8 | 1,960,908 | 1914.9 |
+| far | 4,655 | 7 | 218,120 | 213.0 |
 
 Rebuild: `pnpm build:top-cities-landmarks old-orange-county-courthouse --no-check`. Focused tests: `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/old-orange-county-courthouse/old-orange-county-courthouse.test.js`. The landmark tests pin the observable width, roof tip, grade contact, ownership envelope, recessed three portals, five upper arched windows, open gable glazing, stair connection and near/far silhouette; heights are explicitly estimated, not claimed as sourced survey dimensions. Deterministic exported QA is recorded in `tmp/top-cities/old-orange-county-courthouse/qa-metrics.json`: budgets pass, no removable bridgeLift bytes, no coplanar issues above the 5 m² gate (2 m² of tiny ridge/trim candidates remain), 0.5% near back-face sweep hits (below the 2% gate), bounds agree between LODs.
 
 ## Integration handoff
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Runtime loading, provider replacement, terrain arrival, terrain toggles, origin shifts and actual hardware were not checked in this asset-authoring task. The structure must remain rigid on its local granite base; the surrounding site is expected to be approximately level.
+Runtime loading, provider replacement, terrain arrival, terrain toggles, origin shifts and actual hardware were not checked in this asset-authoring task. The structure must remain rigid on its local granite base; the surrounding site is expected to be approximately level.
 
 Validation results (2026-10-04): all five landmark-specific tests pass and all three courthouse conformance checks pass, including exported byte metrics and source/GLB bounds. The combined conformance command exits nonzero because another landmark (`palace-of-the-parliament`) exceeds the far byte budget; the global catalog check initially fails because `docs/3d-top-cities-basilique-de-fourviere.md` is missing. The courthouse record has valid source/doc/inspection links and measured exports, independently checked by the targeted QA tool.
 
 The final exported top-view sheet `tmp/top-cities/shots/old-orange-county-courthouse/old-orange-county-courthouse-glb-near-light-top-sheet.jpg` was also opened to verify the mapped skew, envelope and authored stair against the red ownership rings.
 
 The unchanged `loadAssetCatalog` validator from `scripts/asset-catalog.mjs` also passes against an isolated scratch catalog containing only this record and links to this source, documentation and exports: **1 ready record / 2 measured variants** (`tmp/top-cities/old-orange-county-courthouse/catalog-validation.json`). All eight selected courthouse-specific/conformance tests pass when filtering out other landmarks.
+
+## QA fix pass — 2026-10-11
+
+Muted roof to red-brown and sandstone/ashlar to subdued reddish brown. Carved cornices share the sandstone material so the opposing sandstone/trim stack is gone; geometry still supplies relief. Ridge-tile caps share the roof material. Portals, window openings, ashlar and complete roofline remain.
+
+| LOD | Triangles before → after | Draws before → after | Bytes before → after |
+| --- | ---: | ---: | ---: |
+| near | 37,209 → 37,209 | 9 → 8 | 1,963,644 → 1,960,908 |
+| far | 4,655 → 4,655 | 8 → 7 | 220,080 → 218,120 |
+
+Cityscape: **verified**. Full 3D world: **verified**.
+
+Rear facade, carving and stone-course dimensions remain estimates. A sub-threshold door wood/glass edge contact (rounded 0.0 m² in depth diagnostics) remains; there are no unresolved QA issues or visible broad cyclic stacks. Historic missing tower, trees and site furniture remain omitted. Lifecycle terrain toggles, failure/late reloads, origin shifts and Tesla hardware were not tested.

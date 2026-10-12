@@ -1054,7 +1054,7 @@
       "status": "ready",
       "location": "Montréal, Québec, Canada",
       "description": "Copper dome and octagonal drum above the stone basilica, six-column portico, crypt terrace and monumental approach stairs.",
-      "notes": "Original procedural model; local hillside compressed to 24 m at basilica floor with solid foundations. Vehicle roads are unchanged. Fine sculpture, interior, surrounding annexes and modern reception complex are omitted. QA pass (2026-10): portico has an entablature and an attic with the great arch under the front pediment; turret roofs are reddish-brown copper; aisle windows and buttresses sit on the walls.",
+      "notes": "Original procedural model; local hillside compressed to 24 m at basilica floor with solid foundations. Vehicle roads are unchanged. Fine sculpture, interior, surrounding annexes and modern reception complex are omitted. QA pass (2026-10): portico has an entablature and an attic with the great arch under the front pediment; turret roofs are reddish-brown copper; aisle windows and buttresses sit on the walls. QA 2026-10-11: actual recessed facade arch, deeper portico, shallow pediment relief and crypt bays. Round 2 QA 2026-10-11: widened, uphill-delayed ground grades (-0.6/+1.4/+3.4/+5.9/+7.4/+14.4/+19.2/+24 m) keep the coarse TIN below the continuous authored approach and its landings. The rigid basilica floor remains +24 m; Cityscape geometry and both GLBs are unchanged.",
       "manifest": "/models/buildings/oratoire-saint-joseph.json",
       "documentation": "docs/assets/oratoire-saint-joseph.md",
       "source": {
@@ -1514,7 +1514,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; subsequently expanded to include the pyramid in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid is registered to its mapped geographic center; palace wing plan remains schematic. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): Cour Carrée re-sited to the OSM footprint (about 167 m square, court about 127 m square); windows are flat framed quads; Richelieu/Denon wings stay 25 m deep.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Mansard pavilions, Sully roof and clock, articulated street/court bays, dormers and eastern paired colonnade; subsequently expanded to include the pyramid in the second pass. Second pass: projecting courtyard pavilions, articulated dormers and west-facing Sully detail; includes a 35 m square, 21 m high entrance pyramid with transparent diamond glazing. Pyramid is registered to its mapped geographic center; palace wing plan remains schematic. Rendering correction: removed legacy overlapping window/arcade grids and coincident long-wing shells. Projecting pavilions own their bays; window panes are separated from their backing walls. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): Cour Carrée re-sited to the OSM footprint (about 167 m square, court about 127 m square); windows are flat framed quads; Richelieu/Denon wings stay 25 m deep. QA refinement (2026-10-11): Court-facing ground arcades now sit behind projecting piers and upper pilasters; projecting pavilions have layered frontispieces. Every far elevation preserves separate major windows, the central clock and the pyramid. Palace-wing plan remains schematic; sculpture is reduced to supported relief masses. Fine capitals and far dormers stay simplified to fit the 500 KB far budget. See docs/paris/paris-louvre-qa.md for measured costs and verification limits.",
       "documentation": "docs/assets/paris-louvre.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1574,7 +1574,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): auditorium and rotunda domes are green verdigris ('patina') with gilded ribs; gilded corner and Apollo groups are twice their first size (about 14 m).",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Seven entrance bays, paired upper columns, loggia, rounded side pavilions, ribbed cupola and differentiated fly tower. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): auditorium and rotunda domes are green verdigris ('patina') with gilded ribs; the oversized first-pass gilded groups were corrected in the subsequent refinement. QA refinement (2026-10-11): The oversized Y figures are replaced with compact bodies, wings and companion figures on plinths. Curved flanking pediments, layered cornices and the rear fly-tower bays and mansard crown remain in near and far. The lower rear service block remains a plain mass, while the fly tower above it has monumental bays; individual sculpted leaves and statues are approximated for driving distances. See docs/paris/paris-palais-garnier-qa.md for measured costs and verification limits.",
       "documentation": "docs/assets/paris-palais-garnier.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1630,7 +1630,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): vault lattice kept sparse (major ribs about every 8 m, 13 m far, no fine transverse bars); columns, windows and balustrade are simple shafts, framed quads and parapets.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): Lower glazed nave with transverse ribs and longitudinal bars, raised crossing, side colonnades and entrance orders. Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): vault lattice kept sparse (major ribs about every 8 m, 13 m far, no fine transverse bars); columns, windows and balustrade are simple shafts, framed quads and parapets. QA refinement (2026-10-11): The long facades now have a deep continuous order with individual bays, full-height piers/columns and layered entablatures. The entrances project with six columns and stone pediments; four corner pavilion cupolas restore the roof silhouette. Corner sculpture and quadriga figures are omitted; retained cupolas and stone orders carry the silhouette. Glazed structural lattice is coarser in far. See docs/paris/paris-grand-palais-qa.md for measured costs and verification limits.",
       "documentation": "docs/assets/paris-grand-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1686,7 +1686,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): end-wall windows stand proud; a 20-column paired colonnade on a 3 m stylobate fronts the west entrance; slate ridges lowered to 28.5 m (west block), 24.8 m (wings).",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): West-facing arch and gilded gate, façade columns and bays, shallow ribbed entrance dome, retained garden void. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): end-wall windows stand proud; a 20-column paired colonnade on a 3 m stylobate fronts the west entrance; slate ridges lowered to 28.5 m (west block), 24.8 m (wings). QA refinement (2026-10-11): The square entrance tower has been replaced with layered curved archivolts, supporting jambs, a gilded gate and supported crest masses. The curved garden peristyle now has arches, a seven-metre-deep continuous roof and rear gallery wall connected to the wings; far keeps individual facade openings. Sculpture is represented by relief masses; the gallery has dark recessed glazing rather than individually sculpted interior furnishings. Dome and gate proportions are visual estimates. See docs/paris/paris-petit-palais-qa.md for measured costs and verification limits.",
       "documentation": "docs/assets/paris-petit-palais.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -1746,7 +1746,7 @@
           }
         ]
       },
-      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): windows are framed quads on the real wall planes (far uses window bands); dormers now sit on the hotel wings' steep lower slopes.",
+      "notes": "Local entrance plaza y=0. Published dimensions are identified in documentation; footprint, roof and ornament are visual estimates pending survey. No terrain height baked into export. Street-level refinement (2026-09-29): 138 x 40 x 32 m hall guide, lower vault, mansards, dormers and vertically oriented river-facing clock dials. Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary. Geographic registration (2026-09-29): mapped origins, facade bearings and horizontal fits; exports already use east/up/south. See docs/paris/placement.md for approximate palace scope. QA pass (2026-10): near windows are framed quads on the real wall planes (the former far bands are replaced by individual bays); dormers now sit on the hotel wings' steep lower slopes. QA refinement (2026-10-11): The river clock pavilions have layered deep arch surrounds, curved pediments/volute shoulders and connected crest silhouettes. Major side and hotel windows remain individual in far; cornice and capital materials remove the previous depth cycles. The old sheet reference depicts the underground station, not the museum; river facade form is interpreted from existing authored/institutional references and general knowledge. Sculpture and historical clocks are simplified. See docs/paris/paris-musee-orsay-qa.md for measured costs and verification limits.",
       "documentation": "docs/assets/paris-musee-orsay.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -2414,7 +2414,7 @@
           }
         ]
       },
-      "notes": "Current named OSM bridge ways checked 29 September 2026. Structural dimensions and visual estimates are distinguished in the per-asset documentation. App Cityscape/terrain mode integration requires separate validation. Street-level refinement (2026-09-29): Five regularly distributed shallow vaults independent of alignment nodes, full-width piers, parapets and lamps. QA pass (2026-10): thin rail replaced by a continuous stone parapet with coping; far ramps follow the deck; the end flare is the shared 18 m S-curve ramp profile.",
+      "notes": "Original procedural five-arch masonry bridge; current named OSM ways checked 29 September 2026. Focused QA restores the shallow 54 m approaches, 5.4 m deck and mapped quay endpoints (155.2 m alignment), retaining the Round 3 opt-in lateral bank fit blended over 18 m. Five vaults and continuous stone parapets remain in both LODs; buried end boxes are omitted. Other bridges without the opt-in field remain byte-identical in the golden test. Live HD driving, broad lifecycle/provider cases and hardware remain not tested; independent re-review pending. See the per-asset documentation and local fix report.",
       "documentation": "docs/assets/paris-pont-concorde.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3657,7 +3657,7 @@
           }
         ]
       },
-      "notes": "Massing, wing heights, Crystal prism outlines and roof planes follow OSM building parts (Crystal heights scaled 37/39 to the published 37 m apex). Wall lean (11-27 degrees), the 10-12 m cantilever, every glazing band and window row are photo estimates, not a survey; the rear prisms are the least certain. Glazing is 23 % of the Crystal seen from Bloor Street and 10 % from above, against a published 20-25 % of the envelope. Plaza, OpenROM works, interiors, carved stonework and street furniture are not modelled. Near 14,642 triangles / 13 draws / 741,304 B; far 1,731 / 8 / 86,152 B. Flat-map grade y=0. No Tesla hardware measurements.",
+      "notes": "Massing, wing heights, Crystal prism outlines and roof planes follow OSM building parts (Crystal heights scaled 37/39 to the published 37 m apex). Wall lean (11-27 degrees), the 10-12 m cantilever, every glazing band and window row are photo estimates, not a survey; the rear prisms are the least certain. Glazing is 23 % of the Crystal seen from Bloor Street and 10 % from above, against a published 20-25 % of the envelope. Plaza, OpenROM works, interiors, fine carved stonework away from the Bloor arch and street furniture are not modelled. Near 10,455 triangles / 13 draws / 545,536 B; far 1,801 / 8 / 89,936 B. Flat-map grade y=0. No Tesla hardware measurements. QA fix 2026-10-11: Cladding seams are 2.5 cm wide at 1.24 m pitch and low contrast, dropped in far. Major angular glazing stays in both LODs. Added concentric Bloor arch orders, a recessed three-light window, stone mullions, raised gable borders and a small medallion. Far uses separated panes. Removed surround backing plaques that crossed string courses and regenerated acyclic main material ordering. Remaining: Exact decorative carving and rear prisms remain estimates. Default street/night framing sits behind provider geometry; the additional curb capture clearly shows the new Bloor arch, Crystal and grade in both modes. Main-entrance ground contact is visible in the exported entrance preset, rather than claimed from the obstructed default street frame.",
       "documentation": "docs/assets/toronto-royal-ontario-museum.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3665,7 +3665,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "city": "Toronto"
+      "city": "Toronto",
+      "integration": "Normal Peregrine Cityscape: lazy regional GLBs, MCU2 far LOD, reversible owned-building replacement (museum outline plus two small parts). Roads and navigation unchanged; the Crystal overhangs the sidewalk but stays 9 m from Bloor Street's centre line."
     },
     {
       "id": "scotia-plaza",
@@ -3859,7 +3860,7 @@
           }
         ]
       },
-      "notes": "Estimated: roof crown 31 m and eave 27-29 m (sourced 28 m clear height to the roof underside; OSM 22 m + 4 m round roof), limestone cornice 19 m, glazed front 19.5 m, ribbon-window bands, window/pilaster module (8 m pitch, 8 bays on Bay Street, 6 on Lake Shore), attic bay rhythm, roof plant, sculpture form and position, colours. Sourced: address, 1999 opening, retained east and south limestone facades (Postal Delivery Building, 1941), 102 x 110 m roof span, 9.1 x 15.2 m screen, plan outline from OSM. Simplified: the roof arch is a smooth low two-way cap, attic is today's black cladding, star perforations of the sculpture, doors, signage on the facade, the skywalk annexes and the office tower are omitted. The brief's 45 m height was not supported by the sources; the arena tops out near 31 m, the tower is 55 m. Flat-map grade y=0. No Tesla hardware measurements.",
+      "notes": "Estimated: roof crown 31 m and eave 27-29 m (sourced 28 m clear height to the roof underside; OSM 22 m + 4 m round roof), limestone cornice 19 m, glazed front 19.5 m, ribbon-window bands, window/pilaster module (8 m pitch, 8 bays on Bay Street, 6 on Lake Shore), attic bay rhythm, roof plant, sculpture form and position, colours. Sourced: address, 1999 opening, retained east and south limestone facades (Postal Delivery Building, 1941), 102 x 110 m roof span, 9.1 x 15.2 m screen, plan outline from OSM. Simplified: the roof arch is a smooth low two-way cap, attic is today's black cladding, doors, signage on the facade, the skywalk annexes and the office tower are omitted. The brief's 45 m height was not supported by the sources; the arena tops out near 31 m, the tower is 55 m. Flat-map grade y=0. No Tesla hardware measurements. QA fix 2026-10-11: Replaced smooth solid sculpture cylinders with tapered eight-sided steel shells, 96 true star/slot apertures and annular terminal rims. Tilted feet are cut onto the plaza plane. Both LODs retain all aperture groups; merged duplicate shell vertices keeps far below 500 KB. Added static red event-art blocks/bars on the video board without pseudo-lettering; isolated material stacks avoid graphic/facade depth cycles. Remaining: Perforation count/pattern and sculpture dimensions remain stylized estimates; no attempt to model every small reference hole. Default near/night views can be partly obscured by foreground provider buildings; exported plaza/detail/close sculpture views establish shell holes and screen artwork. Tiny pre-existing ground-contact depth-cycle candidates (0.1 m²) remain below the deterministic gate and are not visible defects in reviewed frames.",
       "documentation": "docs/assets/toronto-scotiabank-arena.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -3867,7 +3868,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "city": "Toronto"
+      "city": "Toronto",
+      "integration": "Normal Peregrine Cityscape: lazy regional GLBs, MCU2 far LOD, reversible replacement of the six mapped building:part extrusions listed in footprint.js. The 15-storey office tower on the same lot is not replaced."
     },
     {
       "id": "sharp-centre-for-design",
@@ -4160,7 +4162,7 @@
           }
         ]
       },
-      "notes": "SOURCED: roof heights 99.5 / 79.4 m and 27 / 20 storeys (OSM, Wikipedia 99.7 / 79.6 m), podium roof 8 m, saucer 13 to 25 m and 46 m dome across, 23 V struts, pool 55.5 x 30 m (mapped 54.6 x 30.2 m), sign 3 x 22 m, three arches with mapped feet. MAPPED: every plan curve, the street grid rotation (16.7 degrees), podium outline, walkway loop, ramp centre line, roof beds. ESTIMATED from photographs: floor heights and window pattern, rib pitch (1.5 m) and depth (0.38 m), which end of each tower is the ribbed pylon (south) and smooth block (north), strut geometry, podium fascia and columns (4.4 m cantilever), arch rise (12 m) and section, lamp cans, walkway (deck 6.0 m, 6.2 m wide) and ramp sections (9.2 m wide), aerial mast (6 m, estimated). NOT MODELLED: Old City Hall, Henry Moore's Archer, flag poles, Peace Garden, the west stage, Queen Street bridge. The east tower back joint courses (2) are at one third and two thirds. Lit windows (22 % of bays) exist in the near model only. Flat-map grade y=0; no Tesla hardware measurements.",
+      "notes": "SOURCED: roof heights 99.5 / 79.4 m and 27 / 20 storeys (OSM, Wikipedia 99.7 / 79.6 m), podium roof 8 m, saucer 13 to 25 m and 46 m dome across, 23 V struts, pool 55.5 x 30 m (mapped 54.6 x 30.2 m), sign 3 x 22 m, three arches with mapped feet. MAPPED: every plan curve, the street grid rotation (16.7 degrees), podium outline, walkway loop, ramp centre line, roof beds. ESTIMATED from photographs: floor heights and window pattern, rib pitch (1.5 m) and depth (0.38 m), which end of each tower is the ribbed pylon (south) and smooth block (north), strut geometry, podium fascia and columns (4.4 m cantilever), arch rise (12 m) and section, lamp cans, walkway (deck 6.0 m, 6.2 m wide) and ramp sections (9.2 m wide), aerial mast (6 m, estimated). NOT MODELLED: Old City Hall, Henry Moore's Archer, flag poles, Peace Garden, the west stage, Queen Street bridge. The east tower back joint courses (2) are at one third and two thirds. Lit windows (22 % of bays) exist in the near model only. Flat-map grade y=0; no Tesla hardware measurements. QA revision 2026-10-11: Far retains a glass band and thin floor course for each storey on both concave faces. Provider ownership also covers the open square inside the elevated walkway, while Old City Hall and perimeter offices remain separate. Inner mullions use the concrete material and the far podium deck uses concrete, removing cross-region material-layer cycles.",
       "documentation": "docs/assets/toronto-toronto-city-hall.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -4168,7 +4170,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "city": "Toronto"
+      "city": "Toronto",
+      "integration": "Normal Peregrine Cityscape; lazy regional GLBs, MCU2 far LOD, reversible owned-footprint replacement (podium, both towers and strips, chamber, drum, column and link blocks). Roads and navigation unchanged.  QA 2026-10-11: Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed. Top views confirm the owned square/pavilion is clear; legitimate foreground buildings still project over it in the default angled camera."
     },
     {
       "id": "toronto-dominion-centre",
@@ -4275,7 +4278,7 @@
           }
         ]
       },
-      "notes": "Sourced: tower heights and storey counts (OSM, Skyscraper Center), the 1.524 m module, 2.74 m panes and 3.66 m floors (technical specification), plans and orientation (OSM outlines fitted to their own grid), the pavilion's 22 000 sq ft roof. Estimated from photographs: the Bank Tower's three 7.3 m mechanical bands and each crown height, the 8 m recessed lobbies and their columns, mullion sections, TD sign sizes and faces, the pavilion's column pitch and 10.2 m height, the 0.9 m plaza and its margins. TD North is the Royal Trust Tower (182.9 m); the TD Gallery of Inuit Art is in the TD South lobby, not a separate pavilion. 95 Wellington West, 222 Bay Street, First Canadian Place and Scotia Plaza stay provider geometry. PATH, interiors, trees, sculptures and the small black structure between the pavilion and the Bank Tower are not modelled. Flat y=0 grade; no Tesla hardware measurements.",
+      "notes": "Sourced: tower heights and storey counts (OSM, Skyscraper Center), the 1.524 m module, 2.74 m panes and 3.66 m floors (technical specification), plans and orientation (OSM outlines fitted to their own grid), the pavilion's 22 000 sq ft roof. Estimated from photographs: the Bank Tower's three 7.3 m mechanical bands and each crown height, the 8 m recessed lobbies and their columns, mullion sections, TD sign sizes and faces, the pavilion's column pitch and 10.2 m height, the 0.9 m plaza and its margins. TD North is the Royal Trust Tower (182.9 m); the TD Gallery of Inuit Art is in the TD South lobby, not a separate pavilion. 95 Wellington West, 222 Bay Street, First Canadian Place and Scotia Plaza stay provider geometry. PATH, interiors, trees, sculptures and the small black structure between the pavilion and the Bank Tower are not modelled. Flat y=0 grade; no Tesla hardware measurements. QA revision 2026-10-11: Far retains each 3.66 m floor spandrel and bronze-glass interval. A separate provider envelope covers the Banking Pavilion roof with 1.5 m quantisation allowance without changing its model plan. Recessed facade glazing has no hidden box caps; distinct louver/lobby materials and separated logo layers eliminate depth-layer cycles.",
       "documentation": "docs/assets/toronto-toronto-dominion-centre.md",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
@@ -4283,7 +4286,8 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-      "city": "Toronto"
+      "city": "Toronto",
+      "integration": "Normal Peregrine Cityscape once integrated: lazy regional GLBs, MCU2 far LOD, reversible owned-building replacement inside the seven mapped outlines (TD Bank, North, West and South towers, Banking Pavilion, and two building parts). Roads and navigation unchanged.  QA 2026-10-11: Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed. Top views confirm the owned square/pavilion is clear; legitimate foreground buildings still project over it in the default angled camera."
     },
     {
       "id": "union-station",
@@ -4861,7 +4865,7 @@
       "kind": "bridge",
       "location": "Third Street over Mission Creek, beside Oracle Park · San Francisco, California",
       "status": "ready",
-      "description": "1933 Strauss heel-trunnion single-leaf bascule bridge, closed, superstructure only: two Pratt through trusses flanking Third Street, the tall black heel frame at the ballpark end carrying two raised chamfered concrete counterweights, sway bracing, pipe railings, lamps, and the oxblood operator's house with its green roof and two cream huts. No deck, no pavement, nothing in the lanes and nothing below grade: the provider's Third Street stays.",
+      "description": "1933 Strauss heel-trunnion single-leaf bascule: two open Pratt through trusses, a readable grey-green heel frame, two raised concrete counterweights and the oxblood operator house. A continuous near fallback carriageway clears grade by 20 cm in the interior and tapers to y=0 at both street joints; far is inset below provider pavement.",
       "manifest": "/models/bridges/lefty-odoul-bridge.json",
       "source": {
         "path": "src/peregrine/landmarks/san-francisco/lefty-odoul-bridge/geometry.js",
@@ -4952,7 +4956,7 @@
           }
         ]
       },
-      "notes": "Sourced: 295 ft overall, 143 ft Pratt through-truss leaf, 71.5 ft roadway, 1933 Strauss heel trunnion with concrete counterweights at the north (ballpark) end, roadway cantilevered beyond the western truss line (so the truss planes sit at V +10.2 and -6.7, not symmetrically, the west one pulled inboard so no low steel enters a mapped lane or the cycle track (tested against the OSM lane centre lines at 3.3 m)), axis bearing 327.5 deg and leaf/heel/house outlines from OSM. Estimated from photographs: all heights above the road (top chord 8.8 m, heel knuckle 22.8 m, top of the lamp masts 25.8 m, counterweights 6.3 to 17.6 m and 8 x 3.6 m), member sizes, panel count, the heel and tail truss layout, house sizes, railings, lamps, colours (black steel, grey concrete, oxblood house, verdigris roof, cream huts as in 2016-2025 photographs). Closed position only; fenders, piers, approach girders and the channel are not modelled. Far LOD drops lacing, plates, rail posts, lamps, window and mullion detail. Near 5 480 triangles / 7 draws / 296 KB; far 1 708 / 6 / 97 KB. Lamps use the self-lit lamp material; no other lighting, no Tesla hardware measurements.",
+      "notes": "Sourced: 295 ft overall, 143 ft Pratt through-truss leaf, 71.5 ft roadway, 1933 Strauss heel trunnion with concrete counterweights at the north (ballpark) end, roadway cantilevered beyond the western truss line (so the truss planes sit at V +10.2 and -6.7, not symmetrically, the west one pulled inboard so no low steel enters a mapped lane or the cycle track (tested against the OSM lane centre lines at 3.3 m)), axis bearing 327.5 deg and leaf/heel/house outlines from OSM. Estimated from photographs: all heights above the road (top chord 8.8 m, heel knuckle 22.8 m, top of the lamp masts 25.8 m, counterweights 6.3 to 17.6 m and 8 x 3.6 m), member sizes, panel count, the heel and tail truss layout, house sizes, railings, lamps, colours (lifted grey-green steel, grey concrete, oxblood house, verdigris roof, cream huts as in 2016-2025 photographs). Closed position only; fenders, piers, approach girders and the channel are not modelled. Far LOD drops lacing, plates, rail posts, lamps, window and mullion detail. Near 5 704 triangles / 8 draws / 317 136 bytes; far 1 720 / 7 / 101 252 bytes. Lamps use the self-lit lamp material; no other lighting, no Tesla hardware measurements. QA 2026-10-11: separate pane/frame geometry and non-overlapping house plinth, overlays 25 cm proud near, no unresolved deterministic issues or material cycles. A 3 m taper keeps both near street joints at y=0; far top is inset at -0.20 m to avoid provider overlap.",
       "documentation": "docs/assets/san-francisco-lefty-odoul-bridge.md",
       "city": "San Francisco",
       "license": "CC-BY-4.0",
@@ -4960,7 +4964,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Free-standing bridge in the San Francisco layer, with the existing house masks and terrain pad. Dedicated road fitting, HD draping, vehicle heightAt and route/car continuity remain a separate integration; no such contract is implemented by this asset."
     },
     {
       "id": "painted-ladies",
@@ -6196,7 +6201,7 @@
           }
         ]
       },
-      "notes": "Mapped, not estimated: the 145 by 76 m roof outline and its bearing (long axis 48 deg), the 13 m roof height, four courtyard cut-outs (OSM's five holes, two of which share an edge and are one court here), the plan of each of the eight Hamon Tower slabs (a shear-twist: the short faces stay parallel to the museum while the long faces swing about 31 deg from running across the museum to running with the street grid), and the 144 ft (44 m) tower height from the published figure. OSM stacks the tower 13 to 51 m in 5 m slabs; the published 144 ft is used instead and the six trunk slab plans are spread over 13 to 34.5 m, under a 2.5 m glazed level and a 7 m lid (37 to 44 m, from the photographs). Estimated from photographs: the 6 m soffit height and 6 m cantilever depth, its extent (u -58 to 60 m along the front), the fascia lip (1 m, 0.3 m proud), the glazing (the whole recessed wall is dark glass with mullions every 3.4 m), the entrance doors, the cafe window, the tall slit window and the north-west portal, the courtyard glazing, the two slit windows in the tower, the storey ribs and the stair flights, and the glazed level and lid thicknesses. The perforated, dimpled copper is a pattern of flat joint-lined tiles (about 3.4 by 3.2 m, offset 0.15 m) whose tone varies about 8% from bay to bay, not geometry; the tower is a copper-grey close to the body tone; the colours are a weathered mauve-brown, not the original bright copper. Not modelled: the real steel-mesh stair gantries and mesh frames on the tower (thin bars stand in), trees and garden, the sunken Music Concourse, the interior, the Three Gems skyspace. The glow material (entrance, cafe and observation level) is an estimate of the lit museum at night and reads as dark glass by day.",
+      "notes": "2026-10-11 QA correction: Weathered grey-brown copper with low-contrast roof panels; far tower keeps narrow storey frames and the two slit bands. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.",
       "documentation": "docs/assets/san-francisco-de-young-museum.md",
       "city": "San Francisco",
       "license": "CC-BY-4.0",
@@ -6204,7 +6209,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, lifecycle transitions, DEM replacement and hardware performance not tested in this pass."
     },
     {
       "id": "golden-gate-bridge",
@@ -6794,7 +6800,7 @@
           }
         ]
       },
-      "notes": "Published: 260 m, 48 floors, 53.3 m base, 65 m spire, 3,678 windows (model: 3,632 windows counted on a 1.37 m module). Mapped: axis, 9.2 degree rotation, 46 m square at 30 m (the model is 3% wider there), 54 m base outline, wing footprint 27.9 x 6.5 m (model wing face 13.8 m from the axis). Estimated from photographs: the four-storey base (11 m A-frame arcade over a lobby set back 4.3 m, fascia, recessed strip, 20.4 m to the first window row), the window proportions (recessed pockets 0.5 m deep with a 2.0 m opening over a 1.6 m sloped sill on the lowest 14 rows, to 76 m; flat bronze-black panes 0.15 m proud of a plain wall above, to keep the near model light; 4 m floors; flat piers rather than the real bevelled shields), the wing start (128 m, about the 29th floor) and pitched tops (209.5 to 214.5 m), the louvres and the 6 m glass crown. The faces are one straight slope to a 1.2 m flat at 260 m; the real spire may steepen slightly. Not modelled: Redwood Park and its glass pavilion (OSM way 1316030009, provider-owned), the X-braced soffit frames in the arcade, the rooftop cameras, the interior. Night: about a fifth of the windows, the spire louvres and the crown are self-lit; the seasonal crown beacon is a single glow material.",
+      "notes": "2026-10-11 follow-up QA: Added the exact Protomaps z13–15 quantized tower contours (provider feature 35184396311805 / OSM way 24222973) to this landmark’s footprint list. Added vertex ownership and 44-floor far window-ray regressions. Kept all existing tower parts and the adjacent Redwood Park pavilion ownership boundary. The reported own-provider prism was not reproduced on the current rebuilt source: live unmasked provider geometry within 40 m contains no triangles above 20 m; the only retained part there is the 5 m park pavilion. Real neighboring towers still overlap it in the default screenshot because they lie between camera and landmark; deleting those would erase unowned buildings. The newer geometry-only window check flags the continuous far backing glass as four tall/wide panes, but all 44 visible bands and intervening quartz spandrels pass outward-ray tests. This is a backing-geometry false positive, not a dropped window band.",
       "documentation": "docs/assets/san-francisco-transamerica-pyramid.md",
       "city": "San Francisco",
       "license": "CC-BY-4.0",
@@ -6802,7 +6808,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified daytime visual inspection of near/far and street frames. Night, full lifecycle/mode transitions, hardware performance and terrain refinement sweeps not tested."
     },
     {
       "id": "bankers-hall",
@@ -7861,7 +7868,7 @@
           }
         ]
       },
-      "notes": "The plan (a 70.0 m circle plus the 52-degree south-west entrance bulge reaching 81.6 m) is mapped. The saddle's form is published: the edge ring on a 67.7 m radius sphere, the roof centre 14 m below the higher and 6 m above the lower point of the ring, 4.3 m wide ring elements; the model uses a true hyperbolic paraboloid through those points. Estimated: the absolute heights (the venue's 89 ft maximum building height is read as the roof centre, 27.1 m, which puts the ring at 40.7 m high and 21.1 m low; an alternative reading would move the whole roof several metres), the 1.5 m ring depth, the high-axis bearing (61 and 241 degrees, from the mapped bulge's centre and five photographs, good to about 10 degrees), the deck, concourse band, ribbon window, upper wall lean and the sixteen piers' size and spacing, the red towers (a 9 m x 5.4 m x 19 m box with a sloped white top; the real ones have a rounded outer corner), the 22 m pavilion, the stairs (ten steep steps; no railings), the yellow stair towers (they climb to the underside of the roof ring, about 37 m), the eight thin darker seam strips on the roof (stand-ins for the roof's panel joints, along its two principal directions, about 0.1 m proud of the shell; not surveyed), the slit windows and portholes, the pixel lettering, the roof loop (a figure eight; the real one has two tones and a stem with the S emblem, not modelled) and every colour. The north-east end is not mapped as a bulge: its towers and vestibule are placed on the deck inside the circle from photographs. The lettering is on the south-east portal only; the north-west one is left plain (not verified). The concrete shell is modelled as a surface with a closing ring and soffit; the interior, the seating bowl, the scoreboard and the 2013-flood details are not. The BMO Centre, the parkade and the Stampede grounds are separate buildings and are not modelled. Self-lit materials: the orange edge ring (glow), the concourse ribbon and slit windows (light) and the lettering and roof loop (sign); the roof seam strips are lit like the roof. Near 7 195 triangles / 10 draws / 0.23 MB; far 1 935 / 8 / 0.07 MB.",
+      "notes": "The plan (a 70.0 m circle plus the 52-degree south-west entrance bulge reaching 81.6 m) is mapped. The saddle's form is published: the edge ring on a 67.7 m radius sphere, the roof centre 14 m below the higher and 6 m above the lower point of the ring, 4.3 m wide ring elements; the model uses a true hyperbolic paraboloid through those points. Estimated: the absolute heights (the venue's 89 ft maximum building height is read as the roof centre, 27.1 m, which puts the ring at 40.7 m high and 21.1 m low; an alternative reading would move the whole roof several metres), the 1.5 m ring depth, the high-axis bearing (61 and 241 degrees, from the mapped bulge's centre and five photographs, good to about 10 degrees), the deck, concourse band, ribbon window, upper wall lean and the sixteen piers' size and spacing, the red towers (a 9 m x 5.4 m x 19 m box with a sloped white top; the real ones have a rounded outer corner), the 22 m pavilion, the stairs (ten steep steps; no railings), the yellow stair towers (they climb to the underside of the roof ring, about 37 m), the eight thin darker seam strips on the roof (stand-ins for the roof's panel joints, along its two principal directions, about 0.1 m proud of the shell; not surveyed), the slit windows and portholes, the pixel lettering, the roof loop (a figure eight; the real one has two tones and a stem with the S emblem, not modelled) and every colour. The north-east end is not mapped as a bulge: its towers and vestibule are placed on the deck inside the circle from photographs. The lettering is on the south-east portal only; the north-west one is left plain (not verified). The concrete shell is modelled as a surface with a closing ring and soffit; the interior, the seating bowl, the scoreboard and the 2013-flood details are not. The BMO Centre, the parkade and the Stampede grounds are separate buildings and are not modelled. Self-lit materials: the dark day / orange night edge ring (glow), the concourse ribbon and slit windows (light) and the lettering and roof loop (sign); the roof seam strips are lit like the roof. Near 7,011 triangles / 10 draws / 232,172 B; far 2,383 / 8 / 89,864 B. QA fix 2026-10-11: Day fascia is dark neutral; orange illumination stays in the dark palette. Muted brick and stair-tower tones; added dark entrance-door/louvre panels. Both LODs retain three principal upper-wall divisions and the slit/porthole rhythm. Roof ring, saddle, piers and roof seam silhouette are retained. Remaining: Absolute height interpretation and end-tower rounded corners remain original estimates. Far has a slightly coarser division ribbon sampling. No hill or new site platform was authored; observed world frames show ordinary ground contact without an exposed pad edge.",
       "documentation": "docs/assets/calgary-scotiabank-saddledome.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -7869,7 +7876,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Normal Peregrine Cityscape: lazy regional near/far GLBs, MCU2 far LOD, reversible replacement of the mapped Saddledome extrusion (OSM way 4397328). No explicit terrainPad is declared; the captured world views show grade contact with no exposed pad edge."
     },
     {
       "id": "studio-bell",
@@ -7877,7 +7885,7 @@
       "kind": "building",
       "location": "850 4 Street SE, East Village, Calgary",
       "status": "ready",
-      "description": "Allied Works Architecture's Studio Bell (2016), home of the National Music Centre: nine interlocking, subtly curved towers of different heights clad in glazed terracotta in dark gunmetal and bronze courses with a soft gold only low down, narrow vertical slot windows, a triangular window and a street arch, and the enclosed skybridge that carries over 4 Street SE (about 18.6 m clear) and on over the restored brick King Edward Hotel (1905-1910, three and five storeys) into the west block. The model draws the east block (seven flat-walled, round-cornered towers, the tallest at about 34 m), the west block, the flared bridge with a concave cove under each end, and the hotel.",
+      "description": "Allied Works Architecture's Studio Bell (2016), home of the National Music Centre: nine interlocking, subtly curved towers of different heights clad in glazed terracotta in dark gunmetal and bronze courses with a soft gold only low down, narrow vertical slot windows, a triangular window and a street arch, and the enclosed skybridge that carries over 4 Street SE (about 18.6 m clear) and on over the restored brick King Edward Hotel (1905-1910, three and five storeys) into the west block. The model draws the east block (seven concave-faced, round-cornered vessels, the tallest at about 34 m), the west block, the flared bridge with a concave cove under each end, and the hotel.",
       "manifest": "/models/buildings/studio-bell.json",
       "source": {
         "path": "src/peregrine/landmarks/calgary/studio-bell/geometry.js",
@@ -7960,7 +7968,7 @@
           }
         ]
       },
-      "notes": "Mapped, not estimated: the outlines and their 2.4 degree rotation from the cardinal grid (east block about 42 x 37 m, west block about 11 x 36 m, hotel about 13 x 39 m), the skybridge plan (8.2 m wide between flanks, 7 m radius flares into both blocks, about 32 m from the hotel's street face to the east block) and the roads under it. Published: nine towers, five storeys, 35 m span over 4 Street SE, walkway 65 ft (19.8 m) above the roadway (soffit set at 18.6 m), hotel in a three-storey and a five-storey section. Estimated from photographs: the tallest tower (34 m; OSM tags the whole building 15.24 m / 5 levels, which understates the double-height towers), the other tower heights (24, 30, 31 + 2.8 m vault, 21, 19, 27 m and 30 m for the west block), the split into seven east towers, the bridge top at 30 m, the hotel heights (12.6 and 16.8 m) and which end is the five-storey part, the tile tones (dark gunmetal, bronze, and gold only in the lowest 10 m, with the gold-to-gunmetal contrast halved) and 1.2 m course height, the slot windows, the triangular window beside the bridge landing (a true triangle 3.4 m wide at a 15 m base with its apex at 22 m), the concave coves under the bridge ends, the entrance arch and the roof vaults. Terracotta is modelled as merged horizontal courses in three tones, not individual tiles, and the real iridescent sheen is not reproduced (only the tone mix). The towers are flat-walled with rounded exterior corners and the exterior walls stand 0.1 m inside the mapped outline; the real concave swooping surfaces are simplified to one 8.2 m wide quarter-round cove under each bridge end (5.5 m radius at the east block, 1.6 m at the west block). Not modelled: the StudioBell sign and lettering, the interior, the Hall of Fame glazing detail, trees, street furniture, the hotel's shopfront signs. The glow material (slot windows, bridge windows, entrance arch) is an estimate of the lit building at night and reads as dark glass by day.",
+      "notes": "Mapped, not estimated: the outlines and their 2.4 degree rotation from the cardinal grid (east block about 42 x 37 m, west block about 11 x 36 m, hotel about 13 x 39 m), the skybridge plan (8.2 m wide between flanks, 7 m radius flares into both blocks, about 32 m from the hotel's street face to the east block) and the roads under it. Published: nine towers, five storeys, 35 m span over 4 Street SE, walkway 65 ft (19.8 m) above the roadway (soffit set at 18.6 m), hotel in a three-storey and a five-storey section. Estimated from photographs: the tallest tower (34 m; OSM tags the whole building 15.24 m / 5 levels, which understates the double-height towers), the other tower heights (24, 30, 31 + 2.8 m vault, 21, 19, 27 m and 30 m for the west block), the split into seven east towers, the bridge top at 30 m, the hotel heights (12.6 and 16.8 m) and which end is the five-storey part, the tile tones (dark gunmetal, bronze, and gold only in the lowest 10 m, with the gold-to-gunmetal contrast halved) and 1.2 m course height, the slot windows, the triangular window beside the bridge landing (a true triangle 3.4 m wide at a 15 m base with its apex at 22 m), the concave coves under the bridge ends, the entrance arch and the roof vaults. Terracotta is modelled as merged horizontal courses in three tones, not individual tiles, and the real iridescent sheen is not reproduced (only the tone mix). Tower walls curve inward between rounded corners; broad coves span the complete flared bridge mouths. Not modelled: the StudioBell sign and lettering, the interior, the Hall of Fame glazing detail, trees, street furniture, the hotel's shopfront signs. The glow material (slot windows, bridge windows, entrance arch) is an estimate of the lit building at night and reads as dark glass by day. QA revision 2026-10-11: Concave vessel walls replace the flat spans, including the walls beside both bridge landings; internal landing faces are omitted so the flared bridge joins continuously. Upper courses use a calm dominant glaze, while smaller bronze/gold tile divisions articulate the lower walls and entrance. The curves and tile mosaic remain in far. Follow-up QA: the concave bridge underside now spans the complete flared landing mouth and closes into both towers, rather than using a narrow rectangular cove. Upper walls retain restrained tile-scale bronze/dark variation in both LODs. The 18.6 m straight-span soffit and lower flared landing clearance are retained; geometric curves and glaze are photographic approximations.",
       "documentation": "docs/assets/calgary-studio-bell.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -7968,7 +7976,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified visually in the 2026-10-11 follow-up, far/near/street, Protomaps tiles.codriver.io. Full 3D world: verified visually with terrain enabled at far/near/street; b8-world-state.json confirms active terrain rings and rigid model datums. Rigid local grade; no road/navigation changes. Captures do not certify night, lifecycle, mode toggles or hardware."
     },
     {
       "id": "suncor-energy-centre",
@@ -8075,7 +8084,7 @@
           }
         ]
       },
-      "notes": "Roof heights 215 m (west) and 130 m (east) and the plans, including the 6 m corner notches and the 48/228 degree diagonal faces, are sourced (Wikipedia/CTBUH, OSM). The roof planes (22 degrees, falling toward bearing 228, each peaking exactly on its north-east face) were read from photographs and checked against a Calgary Tower view, the direction and slope are estimates. Floor pitch 3.95 m, 1.6-2 m window module on a 3.05 m bay, lobby heights (9.6 m west, 7.55 m east), granite and glass tone (granite brick-maroon #7f4a40, glass blue-black #2b3440), the 11.5 m height of the low block and the 6 m height of its south wing are estimated; the wing may in reality be a raised link. Near windows are real openings: granite spandrels and piers with the glass 15 cm behind, about a fifth of them lit (glow) at night; far draws a ribbon strip per about 8 floors with the same glass share. Not modelled: the glazed canopies beside the towers (OSM ways 964045475, 1319374918), the plazas and below-grade levels, rooftop antennas, and the 2025-2027 lobby and terrace redevelopment. Near GLB 4.8 k triangles / 259 KB, far 0.8 k / 41 KB (ribbon strips instead of window rows). y=0 is flat-map grade. No Tesla hardware measurements.",
+      "notes": "Roof heights 215 m (west) and 130 m (east) and the plans, including the 6 m corner notches and the 48/228 degree diagonal faces, are sourced (Wikipedia/CTBUH, OSM). The roof planes (22 degrees, falling toward bearing 228, each peaking exactly on its north-east face) were read from photographs and checked against a Calgary Tower view, the direction and slope are estimates. Floor pitch 3.95 m, 1.6-2 m window module on a 3.05 m bay, lobby heights (9.6 m west, 7.55 m east), granite and glass tone (granite brick-maroon #7f4a40, glass blue-black #2b3440), the 11.5 m height of the low block and the 6 m height of its south wing are estimated; the wing may in reality be a raised link. Near windows are real openings: granite spandrels and piers with the glass 15 cm behind, about a fifth of them lit (glow) at night; far draws a ribbon strip per about 8 floors with the same glass share. Not modelled: the glazed canopies beside the towers (OSM ways 964045475, 1319374918), the plazas and below-grade levels, rooftop antennas, and the 2025-2027 lobby and terrace redevelopment. Near GLB 4.8 k triangles / 259 KB, far 0.8 k / 41 KB (ribbon strips instead of window rows). y=0 is flat-map grade. No Tesla hardware measurements. QA revision 2026-10-11: Every office storey retains its granite spandrel and dark glass opening in far; vertical mullions simplify to 12 m bays. Granite is muted warm brown rather than brick red. Lit panes stand 15 cm ahead of the recessed glass.",
       "documentation": "docs/assets/calgary-suncor-energy-centre.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -8083,7 +8092,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Normal Peregrine Cityscape; lazy regional GLBs, MCU2 far LOD, reversible replacement of only the three mapped extrusions (both towers and the low block with its wing). Roads and navigation unchanged. Downtown Calgary is nearly flat at this site, so the default terrain pad (padM 75) is expected to be enough and no terrainPad is declared.  QA 2026-10-11: Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed."
     },
     {
       "id": "telus-sky",
@@ -8178,7 +8188,7 @@
           }
         ]
       },
-      "notes": "Sourced: 222.3 m roof (Wikipedia), 59 storeys mapped (OSM; Wikipedia counts 60), offices on floors 1 to 29 and residences above (Wikipedia), the 51.4 x 34.3 m tower plate, its 2.45 degree grid rotation, the 10-level west podium strip and the north, south and south-east overhanging volumes (all OSM). Estimated from photographs: the storey heights (7 m lobby, 4.1 m office, 3.3 m residential, 3.6 m plant), how far each face steps back (north about 12 m, west about 6 m, east about 2.5 m, south about 1 m by the roof, so the top plate is about 43 x 22 m, roughly half the base area, which agrees with the published residential floor area), the 7 m pixel columns, the 1.2 to 1.4 m cell depth, the dithered pixel pattern, the stepped roof (about 13.5 m lower at the west end, six steps) and the colours. The north face receding is inferred from an east-side photograph and from the south face staying plumb in an elevated south view; no elevation drawing was found. The 'Northern Lights' LED is shown as green fascia strips on the north and south faces in an aurora-curtain pattern, not its real layout or colours; by day the strips read as silver-grey slab edges. The overhanging volumes (north L, south-east annex, south bay) are mapped but their glazing, heights and the columns under the north volume are guesses. Not modelled: the +15 skywalk links, the plaza, the 31 m excavation, mullion detail beyond a 3.6 m module, balcony balustrades, rooftop equipment beyond one plant box. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "notes": "Sourced: 222.3 m roof (Wikipedia), 59 storeys mapped (OSM; Wikipedia counts 60), offices on floors 1 to 29 and residences above (Wikipedia), the 51.4 x 34.3 m tower plate, its 2.45 degree grid rotation, the 10-level west podium strip and the north, south and south-east overhanging volumes (all OSM). Estimated from photographs: the storey heights (7 m lobby, 4.1 m office, 3.3 m residential, 3.6 m plant), how far each face steps back (north about 12 m, west about 6 m, east about 2.5 m, south about 1 m by the roof, so the top plate is about 43 x 22 m, roughly half the base area, which agrees with the published residential floor area), the 3.7 m north/south pixel columns, the 1.2 to 1.4 m cell depth, the dithered pixel pattern, the stepped roof (about 13.5 m lower at the west end, six steps) and the colours. The north face receding is inferred from an east-side photograph and from the south face staying plumb in an elevated south view; no elevation drawing was found. The 'Northern Lights' LED is shown as green fascia strips on the north and south faces in an aurora-curtain pattern, not its real layout or colours; by day the strips read as silver-grey slab edges. The overhanging volumes (north L, south-east annex, south bay) are mapped but their glazing, heights and the columns under the north volume are guesses. Not modelled: the +15 skywalk links, the plaza, the 31 m excavation, mullion detail beyond a 3.6 m module, balcony balustrades, rooftop equipment beyond one plant box. y=0 is flat-map grade. No Tesla hardware measurements. QA revision 2026-10-11: North/south residential pixel columns are approximately 3.7 m wide (14 per face), with projecting pale slab and jamb frames. Far retains every residential floor and its alternating cell outlines; office geometry may group pairs but draws the intervening floor band. Greedy terrace rectangles and welded vertices keep the far model within budget.",
       "documentation": "docs/assets/calgary-telus-sky.md",
       "city": "Calgary",
       "license": "CC-BY-4.0",
@@ -8186,7 +8196,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Normal Peregrine Cityscape; lazy regional GLBs, MCU2 far LOD, reversible replacement of only the mapped Telus Sky extrusions (outline and parts; the neighbouring Hanover Place parts are not touched). Downtown Calgary is flat, so the default terrain pad (padM 42) applies.  QA 2026-10-11: Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed. Default street capture is fogged; the alternate capture is still partly blocked by a legitimate adjacent tower, so the lobby base is not fully visually verified."
     },
     {
       "id": "the-bow",
@@ -9117,7 +9128,7 @@
           }
         ]
       },
-      "notes": "The plan (outline and the three parts, their 2 and 4 levels, the two grids 30 degrees apart: main block 67 deg east of north, wings 97 deg) follows OSM and agrees with the truncated-Y plan and the 13.7 m ticket lobby width published for the station. Every height (hall roof 19.4 m, eaves 11.8 / 6.7 / 3.6 m, wing ridges 10.8 m, cones 17.4 m), the roof profiles (steep mansards with flat or ridged tops, wings gabled into the main roofs), the clock, the seven-bay glass wall, the arcature, the turrets, the canopy, dormers, windows, quoins and chimneys are read from four photographs, not surveyed; the 40 ft window quoted historically does not fit the mapped 14.8 m pavilion and is modelled at about 6 m as photographed. The roofs of the north wing and of the rear of the main block are inferred from the outline and the west wing. The long covered walkway along the west wing, the forecourt (Place Jean-Pelletier, the Éclatement II fountain 35 m ahead), the neighbouring 6-storey office (way 103861185) and service building (way 163393183) and all lettering, coats of arms and signs are not modelled. The far LOD keeps the roofs, turrets, clock gable, dormers and chimneys and replaces windows with lit and dark slots. The two turrets are continuous round brick towers from the ground to the stone belt and cone (they stood on a grey inverted corbel cone before); each wing's joined end is a gable clipped into the hall and side-block roofs with valleys (it was a hip pyramid butting them), the two wings still meet each other as separate roofs; roof cresting is a thin strip (0.1 m wide).",
+      "notes": "Raised and widened the seven-pane great hall to an 8.65 m glazed field under taller transoms; moved the arcature, clock gable and turret shoulders together, retained the 20.4 m overall height, and changed the ochre/chalk palette to muted red-brown brick and cool grey limestone. Far retains every exterior window bay and the seven entrance panes. Separate mullion material and larger depth separation remove cyclic layers. Plan and primary dimensions follow the existing OSM and attributed sources; architectural detail is a visual estimate, not a survey. Sculpture and small ornament remain simplified. Export costs describe default GLB scenes and do not establish Tesla hardware performance.",
       "documentation": "docs/assets/quebec-gare-du-palais.md",
       "city": "Québec",
       "license": "CC-BY-4.0",
@@ -9125,7 +9136,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Québec registry layer: lazy near/far GLBs, baked geographic orientation and reversible replacement of the owned building footprint. Cityscape: verified in daylight far/near/street app captures. Full 3D world: verified in daylight far/near/street app captures, with no visible sheer foundation or cake-stand pad. Verification is visual; hardware, night driving and terrain lifecycle remain not tested."
     },
     {
       "id": "hotel-de-ville-de-montreal",
@@ -9216,7 +9228,7 @@
           }
         ]
       },
-      "notes": "Sourced: the two mapped outlines and their 29.45 degree frame, five storeys, the five-part front with a projecting central pavilion, grey stone with copper mansard roofs and dormers, two chimneys, a campanile of thirty feet (9.1 m), and a 1932-34 rear extension. Estimated from photographs: the 40 m total (cornice 15.5 m, ridge 24.4 m), storey heights, bay counts, window and column sizes, the roof profile, the rear block height (terrace top 4.8 m on the flat map), and the rear block's walls, which run down to -2.5 m as a slope skirt (the only geometry below y=0) so they stand on a ground that falls toward the Champ-de-Mars instead of floating. The left end pavilion is drawn as proud of the wing as the right one (the outline maps only the right one) and projects about 2 m past its mapped wall. Sculpture, carved relief, the bronze doors, lettering, flags, the front parterres and the glazed roof on the rear terrace are abstracted or left out. The ground-floor storey of the rear is hidden by the terrace block. The campanile cap is patinated copper in the same dark material as the mansards (it was a separate bright orange unshaded copper, floodlit gold at night; it is no longer a gold night accent). The rear block's terrace is closed by a dark roof membrane between its parapets, with a darker coping strip, so it no longer reads as a pale slab from above. Models here are visual approximations, not surveys.",
+      "notes": "Rebuilt the crown as a flared faceted copper base, open eight-post lantern, stepped bell cap and needle, retaining the 40 m tip. Deepened the six-column balcony with supported bases, capitals, shadowed soffit and heavier entablature/pediment. Window panes and surrounds use wider depth separation; far folds the soffit into stone. Plan and primary dimensions follow the existing OSM and attributed sources; architectural detail is a visual estimate, not a survey. Sculpture and small ornament remain simplified. Export costs describe default GLB scenes and do not establish Tesla hardware performance.",
       "documentation": "docs/assets/quebec-hotel-de-ville-de-montreal.md",
       "city": "Montréal",
       "license": "CC-BY-4.0",
@@ -9224,7 +9236,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Québec registry layer: lazy near/far GLBs, baked geographic orientation and reversible replacement of the owned building footprint. Cityscape: verified in daylight far/near/street app captures. Full 3D world: verified in daylight far/near/street app captures, with no visible sheer foundation or cake-stand pad. Verification is visual; hardware, night driving and terrain lifecycle remain not tested."
     },
     {
       "id": "hotel-du-parlement",
@@ -9311,7 +9324,7 @@
           }
         ]
       },
-      "notes": "Sourced: the mapped outer ring of the quadrangle and its courtyard hole (central T-shaped body), the 48.9 degree frame (front toward the Fontaine de Tourny), four levels, Second Empire style with mansard roofs, bronze statues in the facade niches, the two sculpture groups on the avant-corps, and the clock tower at 52.4 m (read as the slate spire's apex; the iron crest adds about 4.8 m and the flagpole about 7.6 m, so the model reaches 64.8 m). Estimated from photographs: every storey, cornice and roof height other than the tower, bay counts and window sizes, the pavilion and tower profiles (the clock-tower shaft is 11.0 x 10.8 m, widened 15 % from the first 9.6 x 9.3 m after the oblique views read it slim; a frontal check against the lead photograph reads about 10.6 m; the 52.4 m apex is unchanged), the roof pitches, the statue count and positions (30 simplified figures against the real 22 or so), the lantern, the pavilion pediments, the chamber body and everything on the back and the two sides, where no photograph was used. The ground-storey doors are the front pavilions' side entrances; the sunken esplanade entrance of 2019, the Fontaine de Tourny, the lamps, the grounds and the neighbouring Édifices (Pamphile-Le May, Honoré-Mercier, André-Laurendeau, Jean-Talon, Jean-Antoine-Panet) are not modelled. Models here are visual approximations, not surveys.",
+      "notes": "Deepened shaft and pavilion corner orders and cornice breaks, replaced the single pale belfry bay with paired dark arched bays on all four sides, strengthened the four turret caps and retained an open crest lantern in far. Near window surrounds project 0.60 m; far uses coarse 0.42 m surrounds and keeps exterior dormers and courtyard/chamber window bands. Plan and primary dimensions follow the existing OSM and attributed sources; architectural detail is a visual estimate, not a survey. Sculpture and small ornament remain simplified. Export costs describe default GLB scenes and do not establish Tesla hardware performance.",
       "documentation": "docs/assets/quebec-hotel-du-parlement.md",
       "city": "Québec",
       "license": "CC-BY-4.0",
@@ -9319,7 +9332,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Québec registry layer: lazy near/far GLBs, baked geographic orientation and reversible replacement of the owned building footprint. Cityscape: verified in daylight far/near/street app captures. Full 3D world: verified in daylight far/near/street app captures, with no visible sheer foundation or cake-stand pad. Verification is visual; hardware, night driving and terrain lifecycle remain not tested."
     },
     {
       "id": "marche-bonsecours",
@@ -9529,7 +9543,7 @@
           }
         ]
       },
-      "notes": "Sourced: 77 m (252 ft) to the top of the cross (Wikipedia; OSM lantern part to 77 m), the 23 m cupola diameter at the dome base (OSM dome part 12.4 m radius), 101 m length and 46 m width (Wikipedia; the mapped outline is 119 m long including the stair bump and the rear block, and 69 m across the transept), thirteen statues of parish patron saints on the façade (Wikipédia), the mapped outline at bearing 33.5 / 123.5 degrees (façade toward 303.5), and the OSM part heights (roof halves 25 to 31 m, drum ring 33 m, dome part 63 m, façade block 27 m, porch pediment 21 to 25 m, rear block 10 m, low blocks 15 m). Estimated from photographs: the dome profile (crown at 61 m with the lantern base there, rather than OSM's 63 m: a frontal photograph puts the lantern base, ball and cross at 61, 71 and 77 m), the drum (sixteen coupled-column bays, windows) and entablature, the lantern's stages, the ten column positions and heights, door and window rhythm, attic, stair (five risers, 1.8 m), every roof pitch, the aisle lean-tos and corner hips, the choir hip, the transept end fans, and the statue size (about 3.8 m with plinth; each is a stone plinth, one tapered robe and a head). Abstracted or absent: sculpture and carved relief, the Corinthian capitals' foliage, the lattice cross (a plain cross), lettering on the frieze, balustrades, lamp posts, the Monument à Mgr Bourget on the stair, the Place du Canada gardens and the archbishop's palace. The rear block is a half-round apse of 8 facets (radius 15.6 m, one arched window per facet) after a 10.4 m straight run, inscribed in the mapped 10 m rectangle, under a gable and half-cone copper roof to 14.2 m; the real chevet's curve and roof slope are estimated. Cornices project up to 0.9 m beyond the mapped wall line at the façade corners. Cityscape and Full 3D world in the running app not tested yet. No Tesla hardware measurements: near 8640 triangles / 6 draws / 395528 bytes, far 3440 / 6 / 158768. Windows are self-lit glow at night; the floodlit dome and stone are lifted in the night palette.",
+      "notes": "Reduced the dome oculi from dark 0.62/0.50 m discs to subdued bronze-green 0.38/0.30 m discs; retained sixteen continuous copper ribs in both LODs. The correct cathedral mask is unchanged; the original reported overlap is an office across the boulevard occluding the default camera. Plan and primary dimensions follow the existing OSM and attributed sources; architectural detail is a visual estimate, not a survey. Sculpture and small ornament remain simplified. Export costs describe default GLB scenes and do not establish Tesla hardware performance.",
       "documentation": "docs/assets/quebec-marie-reine-du-monde.md",
       "city": "Montréal",
       "license": "CC-BY-4.0",
@@ -9537,7 +9551,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Québec registry layer: lazy near/far GLBs, baked geographic orientation and reversible replacement of the owned building footprint. Cityscape: verified in daylight far/near/street app captures. Full 3D world: verified in daylight far/near/street app captures, with no visible sheer foundation or cake-stand pad. Verification is visual; hardware, night driving and terrain lifecycle remain not tested."
     },
     {
       "id": "mnbaq-pavillon-lassonde",
@@ -9616,7 +9631,7 @@
           }
         ]
       },
-      "notes": "Sourced: the mapped staircase plan (the street end 25.3 m wide, stepping out at 21 m and 41 m to 58.2 m, 91.9 m long) on the 139.3 degree street grid, the three stacked volumes of decreasing size placed on it (the mapped steps reproduce OMA's 42.5 x 25, 45 x 35 and 50 x 50 m boxes to within 10 %), the top box cantilevered over the plaza, the 12.5 m Grand Hall, the glazed stair hung on a side facade, green roofs and terraces. Estimated from photographs: every height (ground floor 5 m, first roof 8.5 m, second roof 13 m, top box roof 26.5 m, gold lantern 29.6 m), the cantilever length (21 m on the mapped plan against OMA's 26.5 m, which is probably measured from the structural core), the glazed stair (a 4.4 m tall tube climbing about 34 degrees, 17 m from the plaza to the top box along the south-west wall, 0.3 m outside the mapped line), the bay rhythm, the truss pattern (drawn as 0.26 m braces; the real one is printed frit), the gold lantern's footprint and the colours (pale frosted diffuser glass, dark reflective clear glass, lit floors at night). The hall's concrete pentagon, the interior stair, the older pavilions, the Église Saint-Dominique and its presbytery (way 389475849), the sculpture garden and the trees are not modelled. Models here are visual approximations, not surveys.",
+      "notes": "Changed the top-box diagonals from dark steel to narrow pale frit; softened the lower steel grid. Far retains the glazed stair prism with eight coarse frames, the glazing joints on every wall and the top-box frit diagonals, with glass inset behind the far grid. The original cantilever and green terraces are unchanged. Plan and primary dimensions follow the existing OSM and attributed sources; architectural detail is a visual estimate, not a survey. Sculpture and small ornament remain simplified. Export costs describe default GLB scenes and do not establish Tesla hardware performance.",
       "documentation": "docs/assets/quebec-mnbaq-pavillon-lassonde.md",
       "city": "Québec",
       "license": "CC-BY-4.0",
@@ -9624,7 +9639,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Québec registry layer: lazy near/far GLBs, baked geographic orientation and reversible replacement of the owned building footprint. Cityscape: verified in daylight far/near/street app captures. Full 3D world: verified in daylight far/near/street app captures, with no visible sheer foundation or cake-stand pad. Verification is visual; hardware, night driving and terrain lifecycle remain not tested."
     },
     {
       "id": "notre-dame-de-quebec",
@@ -9822,7 +9838,7 @@
           }
         ]
       },
-      "notes": "Sourced: 258 ft (78.6 m) from the ground to the cross; the octagonal plan with four transept arms; the pyramidal copper roof with a lantern; the portal inscribed in a parabolic arch with the 7.3 m statue; the two covered ramps ending in edicules; the rectangular sacristy beside the choir; the mapped outline and its axis (bearing 48/228 deg, baked in; the portal faces south-west). Estimated from photographs and the outline (no other published dimension was found; about 10 %): the octagon apothem 26.5 m, eaves 19.5 m, gable apexes 29 m, the portal tower (24 m wide at the base, 10.4 m at the 36 m crown), the arch (16 m wide, 24.5 m high, set back 3.2 m), the lantern (8 m across, 58 to 64.6 m) and spire, the gallery depth and pavilion size, window and rose positions, the 8 dormers and the roof patchwork (fall-line streaks of light and dark copper; the far roof is one mid colour, the near mean). Which faces carry gables (the four diagonal ones, from the photographs) and the plain side and choir walls are read from photographs; the back of the building and the sacristy are inferred from the outline. The mapped outline draws the left gallery thinner than the right one, so the symmetric galleries and pavilions stand up to 3.8 m outside it. Not modelled: the interior, ornament and lettering, the stair railings, stone coursing on the side walls, the Petit Sanctuaire, the plaza and the visitor pavilion. Night: the stained glass and the dormer windows are self-lit (glow); the real building is floodlit. Flat-map grade y=0 is the plaza at the foot of the portal stair (the portal floor is 2.2 m above it). No Tesla hardware measurement was made.",
+      "notes": "Sourced: 258 ft (78.6 m) from the ground to the cross; the octagonal plan with four transept arms; the pyramidal copper roof with a lantern; the portal inscribed in a parabolic arch with the 7.3 m statue; the two covered ramps ending in edicules; the rectangular sacristy beside the choir; the mapped outline and its axis (bearing 48/228 deg, baked in; the portal faces south-west). Estimated from photographs and the outline (no other published dimension was found; about 10 %): the octagon apothem 26.5 m, eaves 19.5 m, gable apexes 29 m, the portal tower (24 m wide at the base, 10.4 m at the 36 m crown), the arch (16 m wide, 24.5 m high, set back 3.2 m), the lantern (8 m across, 58 to 64.6 m) and spire, the gallery depth and pavilion size, window and rose positions, the 8 dormers and the roof patchwork (fall-line streaks of light and dark copper; the far roof is one mid colour, the near mean). Which faces carry gables (the four diagonal ones, from the photographs) and the plain side and choir walls are read from photographs; the back of the building and the sacristy are inferred from the outline. The mapped outline draws the left gallery thinner than the right one, so the symmetric galleries and pavilions stand up to 3.8 m outside it. Not modelled: the interior, ornament and lettering, the stair railings, stone coursing on the side walls, the Petit Sanctuaire, the plaza and the visitor pavilion. Night: the stained glass and the dormer windows are self-lit (glow); the real building is floodlit. Flat-map grade y=0 is the plaza at the foot of the portal stair (the portal floor is 2.2 m above it). No Tesla hardware measurement was made. QA correction: narrow continuous fall-line roof weathering in two low-contrast copper tones, shared by near and far, replacing large camouflage blocks and the uniform pale far roof. Window mullions sit 30 cm proud of glass; terrain uses the existing median footprint pad. Precise weathering locations and sculpture remain photo-based approximations.",
       "documentation": "docs/assets/quebec-notre-dame-du-cap.md",
       "city": "Trois-Rivières",
       "license": "CC-BY-4.0",
@@ -9830,7 +9846,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction."
     },
     {
       "id": "pont-de-quebec",
@@ -10579,7 +10596,7 @@
           }
         ]
       },
-      "notes": "Mapped: Cuypers plan and bearing 120.67°, wing ridge 23.3 m, five cross-gables at 22.45 m, central gable 29.25 m, tower apexes 34.25 m, Koningspaviljoen 26 m, west wing 12 m, De Oost 20 m, three shed footprints. Estimated: finials to 36.65 m, the tower lanterns between the skirt and the spire, intermediate gables, window rhythm, the three upper arches (opening 5.9 m, crown about 19.1 m) and the rectangular ground-floor bays, and the middle and north shed crowns (semicircles on their own spans; only the Zuidkap has a published height, about 23 m, modelled at 21.5 m so the shell stays inside the ring). The wing part's roof:height of 0.75 m was rejected; the eave is the gable spring, 17.8 m. De Oost is drawn as a gable although OSM says skillion. The Noord-Zuid Hollandsch Koffiehuis, the IJ bus station and the entrance lettering are not in the model. The centre's rear roof meets the wing ridge at 23.45 m.",
+      "notes": "2026-10-11 QA correction: Broader central gable, full-height stone tower piers and larger clock panels; all main wing window bays survive far LOD. Published/mapped heights are retained. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.",
       "documentation": "docs/assets/top-cities-amsterdam-centraal.md",
       "city": "Amsterdam",
       "license": "CC-BY-4.0",
@@ -10587,7 +10604,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, lifecycle transitions, DEM replacement and hardware performance not tested in this pass."
     },
     {
       "id": "reunion-tower",
@@ -10595,7 +10613,7 @@
       "kind": "building",
       "location": "300 Reunion Boulevard · Dallas, Texas",
       "status": "ready",
-      "description": "171 m observation tower: an open geodesic ball (aluminium struts, light nodes, a blue glass belt and a concrete crown) on a banded central concrete shaft and three glazed elevator shafts.",
+      "description": "171 m observation tower: an open geodesic ball (aluminium struts, light nodes, a neutral blue-grey glass belt and a concrete crown) on a pale central concrete shaft and three glazed elevator shafts.",
       "manifest": "/models/buildings/reunion-tower.json",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/reunion-tower/geometry.js",
@@ -10666,7 +10684,7 @@
           }
         ]
       },
-      "notes": "Published: 561 ft (171 m) to the roof, Welton Becket and Associates, 1978, 259 light nodes (each fixture gained extra pixels in the 2026 upgrade; the show is not animated here). Mapped: origin on the central shaft, ball ring 16.45–17.47 m, shaft radii and bearings. The sphere is inscribed in that ring (centreline 16.15 m, housings to 16.41 m, top node at 171.0 m) rather than the looser “about 118 ft” diameter. Estimated from photographs: 3.6 m pour bands, glass belt, deck ring, crown, and the south-cap cut that keeps the basket open. The Hyatt, plaza, maintenance walkways and the underground foundation are not modelled. Night lighting is three static colour bands on the nodes. Downtown Dallas grade is flat; no terrain pad.",
+      "notes": "Published: 561 ft (171 m) to the roof, Welton Becket and Associates, 1978, 259 light nodes (each fixture gained extra pixels in the 2026 upgrade; the show is not animated here). Mapped: origin on the central shaft, ball ring 16.45–17.47 m, shaft radii and bearings. The sphere is inscribed in that ring (centreline 16.15 m, housings to 16.41 m, top node at 171.0 m) rather than the looser “about 118 ft” diameter. Estimated from photographs: 3.6 m pour-joint pitch, glass belt, deck ring, crown, and the south-cap cut that keeps the basket open. The Hyatt, plaza, maintenance walkways and the underground foundation are not modelled. Night lighting is three static colour bands on the nodes. Downtown Dallas grade is flat; no terrain pad. QA fix 2026-10-11: Replaced alternating full-height shaft bands with uniform pale concrete and 8 cm high, low-contrast pour seams near; far shafts are continuous. Elevator glazing stands 10 cm clear of the shaft. Observation glass is neutral blue-grey; the silver geodesic cage remains visible above and below it. Remaining: Animated light show, maintenance walkways and Hyatt remain omitted. Default street capture crops the globe; the near app frame and expanded exported sheet show the whole tower. The night street frames verify lower shafts/base, while the globe night palette was additionally verified in current near/far exported ball/shaft sheets under details/reunion.",
       "documentation": "docs/assets/top-cities-reunion-tower.md",
       "city": "Dallas",
       "license": "CC-BY-4.0",
@@ -10674,7 +10692,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Normal Peregrine Cityscape once the registry loads a ready landmark: lazy regional GLBs (drawn from 4.5 km at zoom 12.5), MCU2 far LOD, reversible replacement of the six mapped tower ways. Roads and navigation unchanged. The Hyatt Regency stays provider-owned."
     },
     {
       "id": "washington-monument",
@@ -10852,7 +10871,7 @@
           }
         ]
       },
-      "notes": "Sourced: Sacchetti's square palace on Juvarra's idea, built 1738 and occupied by Charles III in 1764, granite base and Colmenar limestone, giant order, balustrade, Prince's Gate on the Plaza de la Armería with the royal arms, BIC RI-51-0001061 (1931), 135,000 m² and 3,418 rooms, Wikipedia coordinates 40°25′05″N 3°42′51″W. A secondary compilation repeats facades of 131 m a side and 33 m high, six storeys; the mapped square is 129.6 m north–south and 129.9 m east–west. The model sets the balustrade at 33.2 m, the crown at 40.4 m and the Royal Chapel lantern at 47.6 m on the north-centre pavilion (OSM has no chapel outline; the spot is the mapped north projection, checked against the photographs). Estimated: every storey height other than that balustrade, bay pitch (5.15 m), the crown and attic group, wing heights (wall 11.5 m, hip 14.7 m), roof pitches, and colours. The south long wall is drawn at v=60.55, about 1 m inside the mapped 61.8 m line, so the cornice clears the two bites beside the gate. Light wells 307006518, 307006516 and 307006515 are covered. Pavilion caps are flat slabs; hips are separate planes with stone parapet showing between them. The arch is a 10-sided polygon. The Almudena, plaza statues and gardens are not modelled. No Tesla hardware measurements.",
+      "notes": "Sourced: Sacchetti's square palace on Juvarra's idea, built 1738 and occupied by Charles III in 1764, granite base and Colmenar limestone, giant order, balustrade, Prince's Gate on the Plaza de la Armería with the royal arms, BIC RI-51-0001061 (1931), 135,000 m² and 3,418 rooms, Wikipedia coordinates 40°25′05″N 3°42′51″W. A secondary compilation repeats facades of 131 m a side and 33 m high, six storeys; the mapped square is 129.6 m north–south and 129.9 m east–west. The model sets the balustrade at 33.2 m, the crown at 40.4 m and the Royal Chapel lantern at 47.6 m on the north-centre pavilion (OSM has no chapel outline; the spot is the mapped north projection, checked against the photographs). Estimated: every storey height other than that balustrade, bay pitch (5.15 m), the crown and attic group, wing heights (wall 11.5 m, hip 14.7 m), roof pitches, and colours. The south long wall is drawn at v=60.55, about 1 m inside the mapped 61.8 m line, so the cornice clears the two bites beside the gate. Light wells 307006518, 307006516 and 307006515 are covered. Pavilion caps are flat slabs; hips are separate planes with stone parapet showing between them. The arch is a 10-sided polygon. The Almudena, plaza statues and gardens are not modelled. No Tesla hardware measurements. QA revision 2026-10-11: Wider giant-order shafts with bases and stepped capitals, projecting south/west window surrounds and pediments, perforated linked balustrade, draped silhouette figure groups and a crown-and-arms entrance profile. Far keeps facade bands, profiles, windows and sculptures as compact outward faces. Near 32751 triangles / 6 draws / 1758588 bytes; far 5906 triangles / 6 draws / 319300 bytes. Follow-up QA 2026-10-11: Broadened upper two-storey pilasters to 2.04 m with wider bases/capitals, recessed upper backing walls by 0.5 m, added exposed shaft side facets in far, and split the cornice into three projection stages. The perforated balustrade retains its supported posts and rails. Current exports: near 33687 triangles / 6 draws / 1798572 bytes; far 6674 triangles / 6 draws / 357416 bytes. These current results supersede earlier untested-mode notes.",
       "documentation": "docs/assets/top-cities-palacio-real-de-madrid.md",
       "city": "Madrid",
       "license": "CC-BY-4.0",
@@ -10860,7 +10879,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reversible owned-building replacement and existing placement policy retained."
     },
     {
       "id": "st-pauls-cathedral",
@@ -10939,7 +10959,7 @@
           }
         ]
       },
-      "notes": "Sourced: 111.25 m to the cross (365 ft), 84.7 m outer dome (278 ft), 67.4 m towers (221 ft), 158 m published length (518 ft), 37 m nave width (121 ft), 75 m across the transept bodies (246 ft). The model is 156 m long because the mapped outline is 157.5 m and the cornices stop inside it; the screen is 17.7 m off the nave axis because the choir's north wall is mapped at 18.1 m. The dome springing radius is the OSM ring (16.7 m), not the unsourced 112 ft diameter. Estimated from photographs: screen-wall and entablature heights, the two-storey bay rhythm (paired pilasters, lower round-headed windows, upper blind niches), the 32-column peristyle with a recessed dark core and a balustraded gallery, the slim tower cupolas (open drum, concave lead cap, pineapple), clock pilasters, pediment rises, and the lantern's proportions between the 278 ft crown and the 365 ft cross. Lead is warm grey (#8f9294 by day, #4d5154 at night), including the dome, lantern, cupolas and nave roofs. Not modelled: pediment sculpture, individual balusters, fluting, carved Corinthian capitals, clock numerals, and the neighbouring chapter house. The lead ribs are a lighter grey so the hemisphere still reads; night stone stays floodlit and pale, and light/lamp are the unshaded windows, cross, ball and pineapples.",
+      "notes": "Sourced: 111.25 m to the cross (365 ft), 84.7 m outer dome (278 ft), 67.4 m towers (221 ft), 158 m published length (518 ft), 37 m nave width (121 ft), 75 m across the transept bodies (246 ft). The model is 156 m long because the mapped outline is 157.5 m and the cornices stop inside it; the screen is 17.7 m off the nave axis because the choir's north wall is mapped at 18.1 m. The dome springing radius is the OSM ring (16.7 m), not the unsourced 112 ft diameter. Estimated from photographs: screen-wall and entablature heights, the two-storey bay rhythm (paired pilasters, lower round-headed windows, upper blind niches), the 32-column peristyle with a recessed dark core and a balustraded gallery, the slim tower cupolas (open drum, concave lead cap, pineapple), clock pilasters, pediment rises, and the lantern's proportions between the 278 ft crown and the 365 ft cross. Lead is warm grey (#8f9294 by day, #4d5154 at night), including the dome, lantern, cupolas and nave roofs. Not modelled: pediment sculpture, individual balusters, fluting, carved Corinthian capitals, clock numerals, and the neighbouring chapter house. The lead ribs are a lighter grey so the hemisphere still reads; night stone stays floodlit and pale, and light/lamp are the unshaded windows, cross, ball and pineapples. QA correction: stacked shaft orders, larger belfry columns and ogee cupola profiles, stronger two-storey facade relief, all 32 drum columns and balustrade piers retained in far. Structural cornices share body stone; street-facing relief has its own warm stone tone to eliminate ordering cycles; gilded clock ticks sit clear of dials. Far is 63 percent of near triangles to preserve facade rhythm, within the 12k / 8 draws / 500KB budget. Sculpture and detailed carvings remain omitted.",
       "documentation": "docs/assets/top-cities-st-pauls-cathedral.md",
       "city": "London",
       "license": "CC-BY-4.0",
@@ -10947,7 +10967,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction."
     },
     {
       "id": "margaret-hunt-hill-bridge",
@@ -11050,7 +11071,7 @@
       "kind": "building",
       "location": "Museumstraat 1, 1071 XX Amsterdam, Netherlands",
       "status": "ready",
-      "description": "Cuypers' Rijksmuseum (1876–1885), as it stands after the 2013 reopening: a long brown-red brick front on Stadhouderskade with pale stone bands, two clock towers under stepped slate spires, a semicircular passage about half the central bay, and a tall arched window under a crow-stepped gable. The Museumplein front repeats the arch under a horizontal arcade and a continuous slate roof, with blue-grey glass strips and a rectangular ridge skylight. Two glass courtyard roofs sit inside. The Asian pavilion is the low white block in the south garden.",
+      "description": "Cuypers' Rijksmuseum (1876–1885), as it stands after the 2013 reopening: a long brown-red brick front on Stadhouderskade with pale stone bands, two clock towers under steep slate spires, a semicircular passage about half the central bay, and a tall arched window under a crow-stepped gable. The Museumplein front repeats the arch under a horizontal arcade and a continuous slate roof, with blue-grey glass strips and a rectangular ridge skylight. Two glass courtyard roofs sit inside. The Asian pavilion is the low white block in the south garden.",
       "manifest": "/models/buildings/rijksmuseum.json",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/rijksmuseum/geometry.js",
@@ -11117,7 +11138,7 @@
           }
         ]
       },
-      "notes": "Sourced: 135.54 m greatest length and 33.64 m greatest width at the 1885 delivery (the width is the central range, not the ~88 m depth of the whole footprint), towers 52.90 m in 1885, Cuypers 1876–1885, a passage through the middle wing, two courtyards. The model follows the 3DBAG/OSM tower tag of 54 m (roof:height 20, so the wall stops at 34 m) and the tagged gallery ridges of 27 m, corner pavilions 38 m, south turrets 43 m, Asian pavilion 7 m. Estimated from the north and south photographs: the semicircular arch (10.2 m, half the bay between the towers, springing at 1.15 m, crown at 6.25 m) with a continuous stone archivolt, the north tall arched window and crow-stepped gable, and the Museumplein front as a horizontal arcade under a continuous slate roof with segmented blue-grey glass and a rectangular ridge skylight. North towers have clock dials and a hip, lantern, pinnacles and needle on both LODs. The 2013 atrium glass peaks near 22 m under the slate. Brick is #8a4a3a by day and #4f2a22 at night; roof glass is #4a5560 by day and a faint cool #8ea0ae at night. The mapped 17 m part on the passage axis is kept as a 1.35 m plinth split by the path, because the Museumplein photograph shows that ground open. Night windows use the unshaded light material. Not modelled: banners, the sculptural programme (one stone finial stands in for the gable group), iron cresting, and the Fragmentengebouw / Teekenschool / Villa, which sit outside the outline. The Museumplein site is flat; no terrain pad.",
+      "notes": "Sourced: 135.54 m greatest length and 33.64 m greatest width at the 1885 delivery (the width is the central range, not the ~88 m depth of the whole footprint), towers 52.90 m in 1885, Cuypers 1876–1885, a passage through the middle wing, two courtyards. The model follows the 3DBAG/OSM tower tag of 54 m (roof:height 20, so the wall stops at 34 m) and the tagged gallery ridges of 27 m, corner pavilions 38 m, south turrets 43 m, Asian pavilion 7 m. Estimated from the north and south photographs: the semicircular arch (10.2 m, half the bay between the towers, springing at 1.15 m, crown at 6.25 m) with a continuous stone archivolt, the north tall arched window and crow-stepped gable, and the Museumplein front as a horizontal arcade under a continuous slate roof with segmented blue-grey glass and a rectangular ridge skylight. North towers have clock dials and a hip, lantern, pinnacles and needle on both LODs. The 2013 atrium glass peaks near 22 m under the slate. Brick is #8a4a3a by day and #4f2a22 at night; roof glass is #4a5560 by day and a faint cool #8ea0ae at night. The mapped 17 m part on the passage axis is kept as a 1.35 m plinth split by the path, because the Museumplein photograph shows that ground open. Night windows use the unshaded light material. Not modelled: banners, the sculptural programme (one stone finial stands in for the gable group), iron cresting, and the Fragmentengebouw / Teekenschool / Villa, which sit outside the outline. The Museumplein site is flat; no terrain pad. QA correction: four-bay north tower arcade/pilaster stages and pale masonry panels, broad steep slate roofs with two dormers and a 54 m pinnacle, separated window bays in both LODs. Fine heraldic sculpture and masonry carving remain approximations; roof profiles are photograph estimates.",
       "documentation": "docs/assets/top-cities-rijksmuseum.md",
       "city": "Amsterdam",
       "license": "CC-BY-4.0",
@@ -11125,7 +11146,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction."
     },
     {
       "id": "puerta-de-alcala",
@@ -11196,7 +11218,7 @@
           }
         ]
       },
-      "notes": "Sourced: tip 23.79 m, published width 43.07 m and depth 11.74 m, doors 6.10 m. The survey side opening is 9.28 m and OSM puts a cornice near 15.24 m; using both left the arches under a blank belt. The model keeps semicircular arches (spring 10.05 m, side crown 12.63 m, central crown 13.35 m) and a cornice at 16.60 m, so the entablature sits on the capitals. The wall is 42.3 m so the chamfered outline contains it, and the through-depth is about 11.1 m at the column noses. The pediment projects about 0.85 m, with a dark tympanum and a narrow stacked coat of arms whose finial is still 23.79 m. Reliefs are recessed granite, not limestone. The inscription is east only. Estimated: column diameters, volutes and the block sculpture. The rainbow night photograph was not used as the lighting.",
+      "notes": "Sourced: tip 23.79 m, published width 43.07 m and depth 11.74 m, doors 6.10 m. The survey side opening is 9.28 m and OSM puts a cornice near 15.24 m; using both left the arches under a blank belt. The model keeps semicircular arches (spring 10.05 m, side crown 12.63 m, central crown 13.35 m) and a cornice at 15.70 m, so the entablature sits on the capitals. The wall is 42.3 m so the chamfered outline contains it, and the through-depth is about 11.1 m at the column noses. The pediment projects about 0.85 m, with a dark tympanum and a narrow stacked coat of arms whose finial is still 23.79 m. Reliefs are recessed granite, not limestone. The inscription is east only. Estimated: column diameters, volutes and the block sculpture. The rainbow night photograph was not used as the lighting. QA correction: entablature reduced to 1.8 m with the cornice at 15.70 m, continuous beams over the paired capitals, larger framed inscription tablet and a shaped shield with reclining supporters. Five passages and the 23.79 m tip remain in both LODs. Sculpture remains an estimated relief silhouette rather than surveyed carving.",
       "documentation": "docs/assets/top-cities-puerta-de-alcala.md",
       "city": "Madrid",
       "license": "CC-BY-4.0",
@@ -11204,7 +11226,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction."
     },
     {
       "id": "palace-of-westminster",
@@ -11291,7 +11314,7 @@
           }
         ]
       },
-      "notes": "Sourced: Elizabeth Tower 96.3 m (316 ft), 12.2 m square, dials 6.9 m (22.5 ft; parliament.uk says 7 m) centred at 54.9 m (180 ft); Victoria Tower 98.5 m to the flagstaff base and 120.8 m to the crown finial (98.5 + 22.3); Central Tower 91.4 m (parliament.uk; the OSM lantern part is 78 m). Estimated: wall and roof heights, the 5.2 m river bay, pinnacles, spire springing, Victoria Tower's grouped window stages, and its stone corner turrets and open parapet. The river wall is straight but 3.1° off the long axis, so that range is a prism. Three courts stay open (Lords, central-north, north); smaller light wells are filled. The flag is a red cross on a navy field, not the full Union flag. Elizabeth Tower has a ribbed shaft, hour marks, a recessed louvred belfry and a stepped slate spire with gilt ribs and a gold cross. Victoria Tower has no slate pyramid and no gilded cage. Not modelled: lettered Roman numerals, crocketed tracery, the Victoria iron crest, Westminster Abbey, and the Parliamentary Estate. Thames floodplain: no terrainPad; padM 175. Expect under 2 m of relief in Full 3D world.",
+      "notes": "Sourced: Elizabeth Tower 96.3 m (316 ft), 12.2 m square, dials 6.9 m (22.5 ft; parliament.uk says 7 m) centred at 54.9 m (180 ft); Victoria Tower 98.5 m to the flagstaff base and 120.8 m to the crown finial (98.5 + 22.3); Central Tower 91.4 m (parliament.uk; the OSM lantern part is 78 m). Estimated: wall and roof heights, the 5.2 m river bay, pinnacles, spire springing, Victoria Tower's grouped window stages, and its stone corner turrets and open parapet. The river wall is straight but 3.1° off the long axis, so that range is a prism. Three courts stay open (Lords, central-north, north); smaller light wells are filled. The flag is a red cross on a navy field, not the full Union flag. Elizabeth Tower has a ribbed shaft, hour marks, a recessed louvred belfry and a stepped slate spire with gilt ribs and a gold cross. Victoria Tower has no slate pyramid and no gilded cage. Not modelled: lettered Roman numerals, crocketed tracery, the Victoria iron crest, Westminster Abbey, and the Parliamentary Estate. Thames floodplain: no terrainPad; padM 175. Expect under 2 m of relief in Full 3D world. QA revision 2026-10-11: Projecting river bay buttresses and layered surrounds, linked perforated parapet, Victoria Tower vertical ribs and stage ornament, and an open octagonal central lantern. Far retains pointed bays, parapet and lantern; small applied ribs use single outward faces. Near 22779 triangles / 9 draws / 1143224 bytes; far 9018 triangles / 7 draws / 470208 bytes.",
       "documentation": "docs/assets/top-cities-palace-of-westminster.md",
       "city": "London",
       "license": "CC-BY-4.0",
@@ -11299,7 +11322,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reversible owned-building replacement and existing placement policy retained."
     },
     {
       "id": "edificio-coltejer",
@@ -11635,7 +11659,7 @@
           }
         ]
       },
-      "notes": "AOC height 288 ft (87.7824 m), north–south length 751 ft 4 in (229.0064 m), greatest width including approaches 350 ft (106.68 m), exterior dome diameter 135 ft (41.148 m), 36 peristyle and 12 tholos columns. Storey divisions, attic and shell profile, window rhythm and porch count/depth estimated against photographs and mapped outline. Simplified pediment relief, capitals, statue and chamber roofs; no interiors, roof light courts, flags, Visitor Center skylights or Olmsted lawn terraces. Far retains all major column galleries, dome stages and statue; base/capital mouldings and balusters simplified.",
+      "notes": "AOC height 288 ft (87.7824 m), north–south length 751 ft 4 in (229.0064 m), greatest width including approaches 350 ft (106.68 m), exterior dome diameter 135 ft (41.148 m), 36 peristyle and 12 tholos columns. Storey divisions, attic and shell profile, window rhythm and porch count/depth estimated against photographs and mapped outline. Simplified pediment relief, capitals, statue and chamber roofs; no interiors, roof light courts, flags, Visitor Center skylights or Olmsted lawn terraces. Far retains all major column galleries, dome stages and statue; base/capital mouldings and balusters simplified. Follow-up QA 2026-10-11: Reshaped the cast-iron shell from a shallow 13 m cap to a curved 17.6 m shell, retained 36 projecting ribs in both LODs with 0.65–0.75 m relief, widened all 36 free peristyle columns, lowered the attic, and added tholos bases/capitals. Far now retains the upper-shell window band. Unified body stone contacts and moved pediment relief forward to remove material depth cycles. Current exports: near 35652 triangles / 6 draws / 1680428 bytes; far 8454 triangles / 6 draws / 377740 bytes. These current results supersede earlier untested-mode notes.",
       "documentation": "docs/assets/top-cities-united-states-capitol.md",
       "city": "Washington",
       "license": "CC-BY-4.0",
@@ -11718,7 +11742,7 @@
           }
         ]
       },
-      "notes": "OSM outer wall envelope about 43.1 × 28.1 m; rotation -0.45 degrees baked into vertices. Second footprint ring is the authored entrance stair, not another OSM way. Photo estimates: eave 15.6 m, highest coping/finial 23.29 m, granite basement 2.7 m, window and roof dimensions. Rear elevation, roof junctions and exact stone courses are reconstructed; interior, carved foliage, lettering, flagpole, cannons, trees and site furniture are omitted. Eaves project up to 0.6 m beyond the mapped wall, stair extends 7.3 m beyond the central south wall. Ordinary window lighting at night is illustrative, not a surveyed illumination plan. Near has relief masonry, mullions and tile ribs; far preserves true window recesses, entrance arches and full roofline with simplified planar trim.",
+      "notes": "OSM outer wall envelope about 43.1 × 28.1 m; rotation -0.45 degrees baked into vertices. Second footprint ring is the authored entrance stair, not another OSM way. Photo estimates: eave 15.6 m, highest coping/finial 23.29 m, granite basement 2.7 m, window and roof dimensions. Rear elevation, roof junctions and exact stone courses are reconstructed; interior, carved foliage, lettering, flagpole, cannons, trees and site furniture are omitted. Eaves project up to 0.6 m beyond the mapped wall, stair extends 7.3 m beyond the central south wall. Ordinary window lighting at night is illustrative, not a surveyed illumination plan. Near has relief masonry, mullions and tile ribs; far preserves true window recesses, entrance arches and full roofline with simplified planar trim. QA fix 2026-10-11: Muted roof to red-brown and sandstone/ashlar to subdued reddish brown. Carved cornices share the sandstone material so the opposing sandstone/trim stack is gone; geometry still supplies relief. Ridge-tile caps share the roof material. Portals, window openings, ashlar and complete roofline remain. Remaining: Rear facade, carving and stone-course dimensions remain estimates. A sub-threshold door wood/glass edge contact (rounded 0.0 m² in depth diagnostics) remains; there are no unresolved QA issues or visible broad cyclic stacks. Historic missing tower, trees and site furniture remain omitted.",
       "documentation": "docs/assets/top-cities-old-orange-county-courthouse.md",
       "city": "Santa Ana",
       "license": "CC-BY-4.0",
@@ -11726,7 +11750,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reusable rigid granite foundation at y=0; no exposed pad edge in the captured world views. Lifecycle and hardware limits are in the documentation."
     },
     {
       "id": "colosseum",
@@ -11872,7 +11897,7 @@
           }
         ]
       },
-      "notes": "Sourced: outer ring of OSM relation 2230391, architectural height 84 m, 12 floors, limestone, east front toward Bulevardul Unirii. OSM tags the central part 86 m and a broad middle part 58 m; the relation height 29 m is not used. Original procedural visual estimates: bastion parapet 42.4 m, outer wings 48 m, broad setback tiers at 58 and 66 m, tier envelopes 190 by 147 m and 162 by 122 m, central crown 105 by 23 m, storey heights, 6.8 m central entrance recess, giant-order bay 8.4 m and shaft height 22.2 m. Both mapped courtyard holes remain open through both broad tiers; the upper crown sits east of the courts. Three recessed glazed storeys are separated by stone spandrels behind the tall shafts; stacked wing/bastion rows and profiled cornices remain in both LODs. Near retains jambs/mullions and secondary cornice ledges; far merges minor stone shades and omits those small profiles. Final exported QA: zero coplanar pairs and back-face hits; near 23361 triangles/10 draws/1219496 bytes, far 8875/8/474780 bytes. Gardens, fountains, sculpture and underground levels omitted; Cityscape and Full 3D world integration remain untested.",
+      "notes": "Sourced: outer ring of OSM relation 2230391, architectural height 84 m, 12 floors, limestone, east front toward Bulevardul Unirii. OSM tags the central part 86 m and a broad middle part 58 m; the relation height 29 m is not used. Original procedural visual estimates: bastion parapet 42.4 m, outer wings 48 m, broad setback tiers at 58 and 66 m, tier envelopes 190 by 147 m and 162 by 122 m, central crown 105 by 23 m, storey heights, 6.8 m central entrance recess, giant-order bay 8.4 m and shaft height 22.2 m. Both mapped courtyard holes remain open through both broad tiers; the upper crown sits east of the courts. Three recessed glazed storeys are separated by stone spandrels behind the tall shafts; stacked wing/bastion rows and profiled cornices remain in both LODs. Near retains jambs/mullions and secondary cornice ledges; far merges minor stone shades and omits those small profiles. Final exported QA: zero coplanar pairs and back-face hits; near 29177 triangles/10 draws/1415564 bytes, far 10041/8/479112 bytes. Gardens, fountains, sculpture and underground levels omitted; Cityscape and Full 3D world integration remain untested. QA revision 2026-10-11: Deeper giant-order bases and capitals, profiled upper arches, projecting crown end piers and a connected parapet rhythm; darker neutral glazing. Far retains every window storey and colonnade bay, with facade cornice faces and compact capitals. Near 29177 triangles / 10 draws / 1415564 bytes; far 10041 triangles / 8 draws / 479112 bytes. Follow-up QA 2026-10-11: Broadened three-storey giant columns to 2.4–2.6 m diameter, recessed their backing walls by 0.8 m, retained all glazed rows, and added paired-storey pilasters and projecting capital/cornice relief to the east-facing stepped crown. Secondary back/side ornament stays abbreviated to protect the far byte budget. Current exports: near 31801 triangles / 10 draws / 1557260 bytes; far 10345 triangles / 8 draws / 495532 bytes. These current results supersede earlier untested-mode notes.",
       "documentation": "docs/assets/top-cities-palace-of-the-parliament.md",
       "city": "Bucharest",
       "license": "CC-BY-4.0",
@@ -11880,7 +11905,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reversible owned-building replacement and existing placement policy retained."
     },
     {
       "id": "basilique-de-fourviere",
@@ -12034,7 +12060,7 @@
           }
         ]
       },
-      "notes": "280.7 m architectural height sourced; mapped plan and upper outlines. OSM intermediate tier heights adopted as estimates; top raised to sourced architectural height. Facade bay pitch, band width, lobby entrances and lighting thickness are photo-based estimates. Programmable lighting represented by its iconic green state; seasonal colours omitted. Small upper outline discrepancies are intersected with lower outlines to avoid protrusions. Nearby canopy, parking garage, streets and plaza remain provider geometry. No terrain or hardware-performance certification; independent visual reviewer pending.",
+      "notes": "2026-10-11 QA correction: Broad light stone spandrels and vertical strips surround dark grey-green windows in both LODs; six mapped crown levels remain intact. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.",
       "documentation": "docs/assets/top-cities-bank-of-america-plaza-dallas.md",
       "city": "Dallas",
       "license": "CC-BY-4.0",
@@ -12042,7 +12068,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, lifecycle transitions, DEM replacement and hardware performance not tested in this pass."
     },
     {
       "id": "eye-filmmuseum",
@@ -12249,7 +12276,7 @@
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lincoln-memorial/geometry.js"
       },
-      "notes": "Sourced overall height, colonnade dimensions, column height/diameter/count, platform rise, retaining-wall height, urn height and statue/pedestal scale. Mapped orientation and provider envelope. Estimated chamber-wall placement, stair division, capital profile, relief and roof framing. Lincoln is a stylised seated figure, not a portrait-quality sculpture; inscription lettering, murals, drum joints, precise eagles/lions/palmettes and undercroft are omitted. Far removes flutes, wreath medallions and palmettes, coarsens stairs/skylight frames, retaining every exterior column and entrance opening. No hardware performance measured.",
+      "notes": "2026-10-11 follow-up QA: Widened the portal from 18.5 m to 21.6 m and extended its interior clearance from 20.15 m to 23.4 m. Retained four-metre recessed returns, darkened the real cella surfaces and chamber floor, and made the seated statue/chair use an ivory unshaded material. The floor is an actual partition of the platform top, avoiding a stacked overlay. Statue and interior ornament remain stylised; lettering is omitted. The peristyle lintel limits exterior-visible opening height even though the inner chamber extends higher.",
       "documentation": "docs/assets/top-cities-lincoln-memorial.md",
       "manifest": "/models/buildings/lincoln-memorial.json",
       "inspection": {
@@ -12291,7 +12318,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified daytime visual inspection of near/far and street frames. Night, full lifecycle/mode transitions, hardware performance and terrain refinement sweeps not tested."
     },
     {
       "id": "margaret-mcdermott-bridge",
@@ -13260,7 +13288,7 @@
           }
         ]
       },
-      "notes": "External drum/dome diameter 29.16 m is published; outline and southwest frontage bearing 235.36965 degrees are mapped. Individual heights, profiles, Ionic volutes, lyres, shallow bust reliefs and rear annex roof reconstruction are estimated. The 28.5 m concert-hall diameter refers to the interior and is not used as the external diameter. Lettering, full sculptures, garden, interiors and basement are omitted. Far retains every portico bay and twenty oculi but drops fine fluting, grilles and dentils. No independent reviewer or app/device evidence yet.",
+      "notes": "External drum/dome diameter 29.16 m is published; outline and southwest frontage bearing 235.36965 degrees are mapped. Individual heights, profiles, Ionic volutes, lyres, shallow bust reliefs and rear annex roof reconstruction are estimated. The 28.5 m concert-hall diameter refers to the interior and is not used as the external diameter. Lettering, full sculptures, garden, interiors and basement are omitted. Far retains every portico bay and twenty oculi but drops fine fluting, grilles and dentils. No independent reviewer or app/device evidence yet. QA correction: a narrower taller lantern, layered crown and larger clustered zinc crests; repeated raised cornice ornaments survive in far. Height stays 31 m. Trim boxes share masonry material while sculptural seams retain relief; carved floral motifs remain simplified masses.",
       "documentation": "docs/assets/top-cities-romanian-athenaeum.md",
       "city": "Bucharest",
       "license": "CC-BY-4.0",
@@ -13268,7 +13296,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction."
     },
     {
       "id": "christopher-s-bond-bridge",
@@ -13442,7 +13471,7 @@
           }
         ]
       },
-      "notes": "Mapped four-level main hotel outline plus two low courtyard ways; annex and neighbouring buildings excluded. All heights, tower positions, courtyard dimensions, window counts and roof pitches estimated from reference photos. Rotunda staircase and galleries simplified; Spanish Patio arrangement is indicative, carvings, vegetation and seasonal lights omitted. Original dome ribs suggest glazed pattern without copying tiles. Near/far preserve courtyard voids, open belfry, domes and pinnacles. Review revision: Carmel drum now open-arched with 7.2 m dome rise and 32.6 m estimated top; Spanish gallery masonry piers deepened to 1.8 m with 26 m pinnacles; courtyard balconies and pale surrounds strengthened. Exact tuple reuse reduces exported bytes without changing visible geometry.",
+      "notes": "2026-10-11 follow-up QA: Deepened the Gothic gallery returns from 1.45 m to 3.8 m, varied pointed arch crowns from 4.1–6.0 m and independently varied pinnacle stems/cones from 3.2–5.2 m above their supporting piers. Kept true pointed openings in both LODs and restored all four rotunda gallery/window levels in far. Gallery dimensions and uneven crowns are reference-photo estimates, not measured architecture. Fine tracery and decorations remain simplified for the budget.",
       "documentation": "docs/assets/top-cities-mission-inn.md",
       "city": "Riverside",
       "license": "CC-BY-4.0",
@@ -13450,7 +13479,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Cityscape: verified daytime visual inspection of near/far and street frames. Night, full lifecycle/mode transitions, hardware performance and terrain refinement sweeps not tested."
     },
     {
       "id": "palacio-de-la-cultura-medellin",
@@ -13690,7 +13720,7 @@
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/musee-des-confluences/geometry.js"
       },
-      "notes": "41 m height sourced from architect. Mapped exported body is roughly 98 m east-west by 158 m north-south; architect’s 190 × 90 m describes the overall project and is not imposed on the cadastral body. Fold positions, 14–21 m soffit, 31 m roof, second 37 m funnel, plinth, branching supports and glass cage are photographic estimates. Opaque shaded glass approximates reflectance; no transparent interior, vortex interior, pool, street furniture, planting, boats or rivers. Roof funnels use broad asymmetric rounded-rectangle shoulders and six leaning profiles, approximating continuously warped skins. Near/far retain the same major diagonal cloud planes and tapered edges; far has a denser eight-division crystal cage. Review FIX findings on the box-like cloud and pyramid-like funnels have been addressed; independent re-review pending. Southern canopy mapped separately. Hardware cost and terrain lifecycle not verified. Independent review pending.",
+      "notes": "41 m height sourced from architect. Mapped exported body is roughly 98 m east-west by 158 m north-south; architect’s 190 × 90 m describes the overall project and is not imposed on the cadastral body. Fold positions, 14–21 m soffit, 31 m roof, second 37 m funnel, plinth, branching supports and glass cage are photographic estimates. Opaque shaded glass approximates reflectance; no transparent interior, vortex interior, pool, street furniture, planting, boats or rivers. Roof funnels use broad asymmetric rounded-rectangle shoulders and six leaning profiles, approximating continuously warped skins. Near/far retain the same major diagonal cloud planes and tapered edges; far has a denser eight-division crystal cage. Review FIX findings on the box-like cloud and pyramid-like funnels have been addressed; independent re-review pending. Southern canopy mapped separately. Hardware cost and terrain lifecycle not verified. Independent review pending. QA revision 2026-10-11: Broad asymmetric offset roof shoulders with recessed openings, continuous silver cantilever folds with fewer tonal creases, and a varied north glass envelope and diagrid. Roof apertures have opaque recessed floors; interiors and transparent glass remain approximate. Near 17468 triangles / 9 draws / 1243580 bytes; far 3443 triangles / 6 draws / 212796 bytes.",
       "documentation": "docs/assets/top-cities-musee-des-confluences.md",
       "manifest": "/models/buildings/musee-des-confluences.json",
       "inspection": {
@@ -13735,7 +13765,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reversible owned-building replacement and existing placement policy retained."
     },
     {
       "id": "catedral-primada-de-colombia",
@@ -14457,13 +14488,17 @@
         ]
       },
       "documentation": "docs/assets/top-cities-walterdale-bridge.md",
-      "notes": "206 m arch span, 230 m deck, 56 m crown and 22.4 m main-deck width sourced; tapered box sections, inward inclination, SUP width, supports, light fittings, approach profile and world deck altitude estimated. Model excludes old green truss bridge and construction machinery. Flat ramps 180 m, maximum grade 10.84%; terrain absolute-deck uses estimated 625 m main deck with DEM-fitted banks. Catalog readiness is asset readiness; integration evidence is separate.",
+      "notes": "206 m arch span, 230 m deck, 56 m crown and 22.4 m main-deck width sourced; tapered box sections, inward inclination, SUP width, supports, light fittings, approach profile and world deck altitude estimated. Model excludes old green truss bridge and construction machinery. Flat ramps 180 m, maximum grade 10.84%; terrain absolute-deck uses estimated 625 m main deck with DEM-fitted banks. Catalog readiness is asset readiness; integration evidence is separate. QA follow-up 2026-10-11: embedded SUP rail returns, 48 visible hanger sockets in both LODs, rigid lateral fitting; deterministic QA has no issues. HD checks used primary OSM way/full corridor data in disposable Redis because Overpass coverage was partial.",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": {
+        "cityscape": "Verified on slot D: near/far/street, both approach directions, 34 mapped roadway/sample heightAt points both directions and real OSM corridor HD pavement/paint clear of fallback. Complete area tiles, live driving and hardware not tested.",
+        "world": "Verified on slot D with resident Terrarium DEM and estimated 625 m absolute deck: near/far/street, both approaches, 34 roadway/sample points both directions and OSM corridor HD clearance. Surveyed elevation, complete area tiles, live driving and hardware not tested."
+      }
     },
     {
       "id": "bc-place",
@@ -15497,7 +15532,7 @@
           }
         ]
       },
-      "notes": "OSM structural length 264.26 m versus published 260 m; no rescaling. Published 23 m is sailing clearance, not road crest height. Width, 25.2 m crest, 13 m abutments, 7.4 m pier-root box depth, pier stations, guardrail sections and causeway slopes are estimates. Two 180 m fitting ramps; 10.83% approach peak grade, 13.85% hump peak grade. Approach fill beyond bridge footprint is an engineered support approximation, not modeled island terrain. World bank terrain partly occludes the approximate fill/embedded stones; exact fill-edge appearance is not certified. Independent visual review pending.",
+      "notes": "Original procedural cantilever bridge: OSM structural length 264.26 m versus published 260 m; no rescaling. Width, crest/abutments, haunches, piers, rails and engineered fill are visual estimates. Round 3 keeps the continuous cubic crest/abutment curve, rounded smooth fill and both LOD yellow centre dashes/curb-rooted rail terminals. Focused follow-up subdivides approach pavement to 1 m longitudinal / maximum 0.45 m lateral cells in both LODs, with shared paint stations and source heights matching projected fitting/navigation stations. This removes the former visible 0.370470 m near / 0.063878 m far interior terrain penetration under the existing opt-in actual-vertex 12 cm clamp. No shared runtime changed; absent-field bridge golden hashes remain unchanged. Export budgets, deterministic metrics, depth checks and both-mode focused app evidence pass. Independent visual re-review pending.",
       "documentation": "docs/assets/top-cities-storseisundet-bridge.md",
       "city": "Averøy",
       "license": "CC-BY-4.0",
@@ -15505,7 +15540,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Road-fitted through createRegistryBridgeLayer and absolute-deck policy. Sampled world pavement penetration is zero in both LODs (minimum clearance 0.073042 m near / 0.095779 m far); 310 lane-position probes accept both directions. Live HD lanes, tracked driving, broad lifecycle/terrain-failure cases and hardware remain not tested; see documentation."
     },
     {
       "id": "oslo-city-hall",
@@ -15550,7 +15586,7 @@
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oslo-city-hall/geometry.js"
       },
-      "notes": "East tower 66 m and west tower 63 m, the 8.6 m south clock and the 5 m astronomical clock are sourced. The harbour block is a 27 m brick parapet with a flat copper roof at 25.05 m set behind it; OSM's 0.3 m gable is not used. Both towers are flat brick, with a recessed loggia under a blank crown and a thin stone cornice; the east clock sits below that crown. The courtyard link at 32.6 m, the window grid, the colonnade, the loggia spacing and the relief bars are estimates. Hands stay inside the dial. Neighbours, the swan fountain, St. Hallvard as a figure, and the interiors are omitted. Far keeps both towers, both clocks, the slot, the parapet and a coarser window grid.",
+      "notes": "East tower 66 m and west tower 63 m, the 8.6 m south clock and the 5 m astronomical clock are sourced. The harbour block is a 27 m brick parapet with a flat copper roof at 25.05 m set behind it; OSM's 0.3 m gable is not used. Both towers are flat brick, with a recessed loggia under a blank crown and a thin stone cornice; the east clock sits below that crown. The courtyard link at 32.6 m, the window grid, the colonnade, the loggia spacing and the relief bars are estimates. Hands stay inside the dial. Neighbours, the swan fountain, St. Hallvard as a figure, and the interiors are omitted. Far keeps both towers, both clocks, the slot, the parapet and a coarser window grid. QA revision 2026-10-11: Open harbour clock rim, twelve marks and hands over brick, with the courtyard astronomical face retained independently; subdued pale stone trim. Far preserves every storey and bay through simple panes. Near 15028 triangles / 6 draws / 710872 bytes; far 4316 triangles / 6 draws / 235456 bytes.",
       "documentation": "docs/assets/top-cities-oslo-city-hall.md",
       "manifest": "/models/buildings/oslo-city-hall.json",
       "inspection": {
@@ -15592,7 +15628,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reversible owned-building replacement and existing placement policy retained."
     },
     {
       "id": "svinesund-bridge",
@@ -16503,7 +16540,7 @@
           }
         ]
       },
-      "notes": "Sourced: length 102 m, greatest width 50 m, nave vault 21 m, tower with spire 87 m (Store norske leksikon, 2016 survey; older guides said 91 m and some accounts still say about 97 m). OSM Simple 3D tags the copper spire at 82 m (way 404802446); the model ends the copper at 84 m and a cross carries the tip to 87 m. West towers 36 m with pinnacles to 44 m, crossing 38 m with pinnacles to 48 m, nave ridge 35 m, choir ridge 32 m, octagon pyramid 36 m, transept ridges 26 m, chapter house 14 m: the OSM part eaves. West screen faces 268.1°. Estimated from the DXR west photograph and the Bjørkan east aerial: statue rows as relief bands (not the restored portraits), rose spokes, portal with a trumeau, flying-buttress rhythm on the seven aisle nibs, spire ribs, gable niche. Not modelled: interior vaults, the 2015 gable scaffold, carved canopies as individual figures, the real cruciform chapter house (a hall with an east apse instead), and the thin north and south octagon lobes (only the east chapel fits the outline). Near 24651 triangles / 7 draws / 1758488 bytes; far 4262 / 7 / 259472. Light stone is grey-green soapstone #6f746c and the copper is muted verdigris #5f9a82. Tall west-tower lancets sit above the gallery band.",
+      "notes": "Sourced: length 102 m, greatest width 50 m, nave vault 21 m, tower with spire 87 m (Store norske leksikon, 2016 survey; older guides said 91 m and some accounts still say about 97 m). OSM Simple 3D tags the copper spire at 82 m (way 404802446); the model ends the copper at 84 m and a cross carries the tip to 87 m. West towers 36 m with pinnacles to 44 m, crossing 38 m with pinnacles to 48 m, nave ridge 35 m, choir ridge 32 m, octagon pyramid 36 m, transept ridges 26 m, chapter house 14 m: the OSM part eaves. West screen faces 268.1°. Estimated from the DXR west photograph and the Bjørkan east aerial: statue rows as relief bands (not the restored portraits), rose spokes, portal with a trumeau, flying-buttress rhythm on the seven aisle nibs, spire ribs, gable niche. Not modelled: interior vaults, the 2015 gable scaffold, carved canopies as individual figures, the real cruciform chapter house (a hall with an east apse instead), and the thin north and south octagon lobes (only the east chapel fits the outline). Near 36194 triangles / 7 draws / 1602220 bytes; far 8039 / 7 / 369680. Light stone is grey-green soapstone #6f746c and the copper is muted verdigris #5f9a82. Tall west-tower lancets sit above the gallery band. QA revision 2026-10-11: West-screen and tower-front pointed canopy arcades with grouped projecting figures and shelves, concentric rose surround and branching tracery, and grouped side openings. Relief is architectural approximation, not individual restored sculpture; far preserves niche rhythm with planar pointed canopies. Tower-front masonry sits 0.40 m behind its former plane so the three sculpture tiers are exposed and held by their projecting shelves. Near 36194 triangles / 7 draws / 1602220 bytes; far 8118 triangles / 7 draws / 372340 bytes. Follow-up QA 2026-10-11: Filled the blank panels beside the rose with four tall canopied bays, each carrying three statue silhouettes on shelves, and added paired niche rows to the gable. All groups survive in far; sculptural portraits remain approximations. Current exports: near 38724 triangles / 7 draws / 1719016 bytes; far 9228 triangles / 7 draws / 427820 bytes. These current results supersede earlier untested-mode notes.",
       "documentation": "docs/assets/top-cities-nidaros-cathedral.md",
       "city": "Trondheim",
       "license": "CC-BY-4.0",
@@ -16511,7 +16548,8 @@
       "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
-      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Reversible owned-building replacement and existing placement policy retained."
     },
     {
       "id": "arctic-cathedral",

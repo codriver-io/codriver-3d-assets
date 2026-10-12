@@ -24,7 +24,7 @@ export const SPEC = {
 // glazing (drawn unshaded by the layer; by day it reads as dark glass).
 export const PALETTES = {
   light: {
-    tileDark: '#383a3c', tileBronze: '#443f39', tileGold: '#51483d',
+    tileDark: '#494847', tileBronze: '#5d554a', tileGold: '#6d614e',
     glass: '#40596a', glow: '#363c40', soffit: '#2e2f31', roof: '#4a4846',
     brick: '#7d4f3e', trim: '#a99c88',
   },
@@ -38,5 +38,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap (the sidewalk and plaza level round the building); no absolute altitude. Rotation (2.4 deg clockwise from the cardinal grid) is baked into the geometry.',
   attribution: 'Original procedural mesh. Mapped outlines of Studio Bell (way 317559844) and the King Edward Hotel (way 550777783) © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Outline, orientation and the skybridge plan (8.2 m wide, about 32 m from the hotel street face to the east block, with 7 m flared ends) come from OSM; the 35 m span over 4 Street SE and the walkway about 19.8 m (65 ft) above the roadway are published figures quoted by architecture web summaries. Tower heights (34 m tallest), the split into seven east towers plus the west block and the bridge, the 30 m bridge top, the hotel heights (12.6 and 16.8 m for its three and five storeys), the tile tones (dark gunmetal with a bronze sheen, gold only in the lowest 10 m) and course height, slot windows, the triangular window (3.4 m wide, 15 to 22 m up, beside the bridge landing), the concave coves under the bridge ends and the entrance are estimated from photographs. The tower walls are flat with rounded corners (no barrelling). Tiles are merged horizontal courses, not individual tiles. No signage lettering, no interior, no trees or street furniture.',
+  note: 'Outline, orientation and the skybridge plan (8.2 m wide, about 32 m from the hotel street face to the east block, with 7 m flared ends) come from OSM; the 35 m span over 4 Street SE and the walkway about 19.8 m (65 ft) above the roadway are published figures quoted by architecture web summaries. Tower heights (34 m tallest), the split into seven east towers plus the west block and the bridge, the 30 m bridge top, the hotel heights (12.6 and 16.8 m for its three and five storeys), the tile tones (dark gunmetal with a bronze sheen, gold only in the lowest 10 m) and course height, slot windows, the triangular window (3.4 m wide, 15 to 22 m up, beside the bridge landing), the concave coves under the bridge ends and the entrance are estimated from photographs. Tower faces curve shallowly inward between rounded corners; bridge landings omit their internal wall faces, and continuous flared sidewalls and underside coves meet the towers. Tile divisions are a merged material mosaic, with reduced upper-wall contrast and bronze/gold variation at street level. No signage lettering, no interior, no trees or street furniture.',
 };

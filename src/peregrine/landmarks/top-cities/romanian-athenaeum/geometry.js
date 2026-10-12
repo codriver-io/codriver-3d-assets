@@ -11,7 +11,7 @@ const DC = [-0.6,0.8];
 export function create({detail='near'}={}) {
   const near=detail==='near', N=near?40:20;
   const b=assetBuilder({...SPEC,palette:PALETTES.light},detail);
-  function put(g,mat,x=0,y=0,z=0,angle=0) { g.rotateY(angle);g.translate(x,y,z);g.rotateY(ROT);b.put(g,mat); }
+  function put(g,mat,x=0,y=0,z=0,angle=0) { g.rotateY(angle);g.translate(x,y,z);g.rotateY(ROT);b.put(g,mat==='trim'?'stone':mat); }
   function box(mat,x,y,z,w,h,d,angle=0) { put(new THREE.BoxGeometry(w,h,d),mat,x,y,z,angle); }
   function bar(mat,a,c,w,depth=w) { b.bar(mat,plan(...a),plan(...c),w,depth); }
   function cyl(mat,x,z,y0,y1,r0,r1=r0,n=N) { put(new THREE.CylinderGeometry(r1,r0,y1-y0,n),mat,x,(y0+y1)/2,z); }
@@ -99,8 +99,8 @@ export function create({detail='near'}={}) {
     if(near) {
       const head=new THREE.SphereGeometry(.17,8,5);head.scale(1,1.2,.4);put(head,'wood',x,10.57,17.07);
       box('wood',x,10.18,17.04,.35,.28,.10);
-      for(const dx of [-1.32,0,1.32])box('wood',x+dx,4.8,17.06,.09,5.0,.11);
-      for(const yy of [2.7,4.3,6.3])box('wood',x,yy,17.06,2.6,.10,.11);
+      for(const dx of [-1.32,0,1.32])box('wood',x+dx,4.8,17.35,.09,5.0,.11);
+      for(const yy of [2.7,4.3,6.3])box('wood',x,yy,17.35,2.6,.10,.11);
       for(const dx of [-1.60,1.60])box('trim',x+dx,4.6,17.0,.18,7.1,.35);
     }
   }
@@ -144,27 +144,28 @@ export function create({detail='near'}={}) {
       bar('roof',[cx+r0*Math.sin(a),y0+.07,cz+r0*Math.cos(a)],[cx+r1*Math.sin(a),y1+.07,cz+r1*Math.cos(a)],near?.105:.16);
     }
   }
-  cyl('trim',cx,cz,25.1,25.55,5.0);
-  cyl('glass',cx,cz,25.55,26.8,4.55);
-  for(let i=0;i<(near?20:10);i++){const a=i*2*Math.PI/(near?20:10);box('trim',cx+4.6*Math.sin(a),26.13,cz+4.6*Math.cos(a),.18,1.28,.3,a);}
-  profile('roof',cx,cz,[[4.85,26.75],[4.9,27],[3.7,27.45],[2.1,27.85],[1.2,28.25],[0,28.3]]);
-  // Repeated zinc crest leaves at the lantern foot and cornice; simplified botanical relief.
-  for(let i=0;i<(near?20:10);i++) {
-    const a=i*Math.PI*2/(near?20:10),r=4.85;
-    const leaf=new THREE.SphereGeometry(near?.19:.22,near?8:5,near?5:3);
-    leaf.scale(1,3,.7);put(leaf,'roof',cx+r*Math.sin(a),25.72,cz+r*Math.cos(a),a);
-    if(near) {
-      for(const sg of [-1,1]) {
-        const curl=new THREE.TorusGeometry(.25,.055,4,10,Math.PI*1.6);
-        curl.rotateZ(sg*.5);put(curl,'roof',cx+r*Math.sin(a)+sg*.22*Math.cos(a),25.7,cz+r*Math.cos(a)-sg*.22*Math.sin(a),a);
-      }
-      const rr=R-.3,sculpt=new THREE.SphereGeometry(.22,8,5);
-      sculpt.scale(1,2.4,.6);put(sculpt,'roof',cx+rr*Math.sin(a),21.94,cz+rr*Math.cos(a),a);
-    }
+  // Layered ornamental crown: narrower tall lantern and clustered zinc scrolls.
+  profile('trim',cx,cz,[[4.8,25.12],[4.9,25.5],[4.1,25.85],[3.45,26.0]]);
+  cyl('glass',cx,cz,25.7,27.6,3.25);
+  for(let i=0;i<20;i++) {
+    const a=i*2*Math.PI/20;
+    box('trim',cx+3.35*Math.sin(a),26.65,cz+3.35*Math.cos(a),.32,2.0,.46,a);
   }
-  cyl('gold',cx,cz,28.2,28.65,.65,.48,near?12:6);
-  profile('trim',cx,cz,[[.48,28.6],[.67,28.85],[.25,29.1],[.20,29.6],[0,29.65]],near?16:8);
-  cyl('gold',cx,cz,29.35,31,.05,.05,near?8:5);
+  profile('roof',cx,cz,[[3.7,27.45],[3.95,27.7],[3.2,28.05],[2.45,28.45],[1.35,28.9],[.62,29.1]]);
+  for(let i=0;i<20;i++) {
+    const a=i*Math.PI*2/20;
+    const leaf=new THREE.SphereGeometry(.44,near?8:5,near?5:3);
+    leaf.scale(1,2.3,1.3);put(leaf,'roof',cx+4.2*Math.sin(a),25.85,cz+4.2*Math.cos(a),a);
+    const crest=new THREE.SphereGeometry(.36,near?8:5,near?5:3);
+    crest.scale(1,2.0,1.2);put(crest,'roof',cx+3.55*Math.sin(a),28.05,cz+3.55*Math.cos(a),a);
+    // Pronounced cornice crests remain in far; foot of every mass touches roof.
+    const rr=R-.4,sculpt=new THREE.SphereGeometry(.48,near?8:5,near?5:3);
+    sculpt.scale(1.45,1.85,.95);put(sculpt,'roof',cx+rr*Math.sin(a),21.98,cz+rr*Math.cos(a),a);
+    box('trim',cx+(R+.12)*Math.sin(a),21.0,cz+(R+.12)*Math.cos(a),.8,.65,.85,a);
+  }
+  cyl('gold',cx,cz,29.0,29.35,.65,.48,near?12:6);
+  profile('trim',cx,cz,[[.48,29.3],[.67,29.5],[.25,29.7],[.20,29.85],[0,29.9]],near?16:8);
+  cyl('gold',cx,cz,29.7,31,.05,.05,near?8:5);
   // Small caps over the four spiral stair enclosures.
   for(const [x,z] of [[-17,10],[16,10],[-17,-11],[16,-11]]) {
     cyl('stone',x,z,11.62,12.5,3.4,3.4,near?16:8);

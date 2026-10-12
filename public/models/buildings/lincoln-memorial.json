@@ -2114,6 +2114,44 @@
           -77.050376,
           38.889171
         ]
+      ],
+      [
+        [
+          -77.0497475,
+          38.8894536
+        ],
+        [
+          -77.0492607,
+          38.8894572
+        ],
+        [
+          -77.0492589,
+          38.8892811
+        ],
+        [
+          -77.0492565,
+          38.8891086
+        ],
+        [
+          -77.0497433,
+          38.8891051
+        ],
+        [
+          -77.0497435,
+          38.8891238
+        ],
+        [
+          -77.0497451,
+          38.8892777
+        ],
+        [
+          -77.0497472,
+          38.8894308
+        ],
+        [
+          -77.0497475,
+          38.8894536
+        ]
       ]
     ],
     "refs": [
@@ -2141,13 +2179,13 @@
   },
   "elevationDatum": "y=0 is grade at the foot of the terrace retaining walls; reusable rigid geometry, no DEM or absolute altitude.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "NPS dimensions for height, colonnade, columns and statue. Estimated vertical tier split, chamber wall details, reliefs and roof framing; inscriptions omitted. Rotation baked once from OSM. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "note": "NPS dimensions for height, colonnade, columns and statue. Estimated vertical tier split, chamber wall details, reliefs and roof framing; inscriptions omitted. Rotation baked once from OSM. Daytime visual integration is recorded separately in the landmark documentation.",
   "assets": {
     "near": {
       "url": "/models/buildings/lincoln-memorial-near.glb",
-      "bytes": 971132,
-      "triangles": 36704,
-      "drawCalls": 7,
+      "bytes": 986376,
+      "triangles": 36742,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -28.220836639404297,
@@ -2155,7 +2193,7 @@
           -40.07511901855469
         ],
         "max": [
-          35.90725326538086,
+          79.71246337890625,
           30.175199508666992,
           38.88380432128906
         ]
@@ -2163,9 +2201,9 @@
     },
     "far": {
       "url": "/models/buildings/lincoln-memorial-far.glb",
-      "bytes": 260564,
-      "triangles": 7192,
-      "drawCalls": 7,
+      "bytes": 275808,
+      "triangles": 7230,
+      "drawCalls": 8,
       "bounds": {
         "min": [
           -28.220836639404297,
@@ -2173,7 +2211,7 @@
           -40.07511901855469
         ],
         "max": [
-          35.90725326538086,
+          79.71246337890625,
           30.175199508666992,
           38.88380432128906
         ]

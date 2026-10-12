@@ -1,5 +1,5 @@
 import { PARTS } from './royal-ontario-museum-site.js';
-import { inside2, area2 } from './royal-ontario-museum-solids.js';
+import { inside2, area2, clipConvex } from './royal-ontario-museum-solids.js';
 
 // The heritage wings: Darling & Pearson's 1914 west wing (Romanesque-Italianate, grey-brown stone, slate roof),
 // Chapman & Oxley's 1933 east wing (Byzantine-Romanesque, buff stone, copper roofs, gabled naves, domed rotunda)
@@ -25,8 +25,15 @@ export function buildHeritage(K, { near }) {
         if (arch) { const N = near ? 8 : 4; for (let i = 1; i < N; i++) { const th = Math.PI * i / N; pts.push(P(tc + (hw + x(g)) * Math.cos(th), top + (rise + g) * Math.sin(th))); } pts.push(P(tc - hw - x(g), top)); } else { pts.push(P(tc + hw + x(g), top + g)); pts.push(P(tc - hw - x(g), top + g)); }
         return pts;
       };
-      if (surround && near) K.patch(F, shape(0.32), 'stoneDeep', 0.05);
-      K.glaze(F, shape(0), { mat, frame: near ? frame : 0, off: 0.1 });
+      // Window frames supply the minor surrounds; full backing plaques would cross the stone string courses.
+      if (!near && w > 4) {
+        const outline = shape(0).map(p=>[((p[0]-a[0])*(b[0]-a[0])+(p[2]-a[1])*(b[1]-a[1]))/L,p[1]]);
+        for(let k=0;k<3;k++) {
+          const lo=c-w/2+k*w/3+.12,hi=c-w/2+(k+1)*w/3-.12;
+          const pane=clipConvex(outline,[[lo,y],[hi,y],[hi,y+h],[lo,y+h]]);
+          if(pane.length>2)K.glaze(F,pane.map(([s,h])=>P(x(s),h)),{mat,frame:0,off:.12});
+        }
+      } else K.glaze(F, shape(0), { mat, frame: near ? frame : 0, off: near ? 0.24 : 0.12 });
     };
     /** A horizontal course (plinth, string course, cornice): projects `out` metres. */
     const course = (y, h, out = 0.25, mat = 'stoneDeep', t0 = 0, t1 = 1) => near && K.patch(F, rect(t0, y, t1, y + h), mat, out);
@@ -82,10 +89,37 @@ export function buildHeritage(K, { near }) {
   {
     const W = wall(eN.Gn, [eN.u1, eN.v0], [eN.u0, eN.v0], [0, -1]), c = W.L / 2;
     W.course(0, 1.5, 0.25); W.course(8.4, 0.45, 0.18);
-    W.win(c, 9.8, 6.6, 9.6, { arch: true, frame: 0.2 });       // the tall round-headed window under a carved arch
-    if (near) for (const k of [-1.1, 1.1]) K.patch(eN.Gn, W.rect(W.x(c + k - 0.13), 9.8, W.x(c + k + 0.13), 17.6), 'stoneDeep', 0.2);
-    W.win(c, 3.3, 6.6, 4.2, { frame: 0.2 });                   // the three-light window below it
-    if (near) K.patch(eN.Gn, W.rect(W.x(c - 0.7), 21.2, W.x(c + 0.7), 22.8), 'stoneDeep', 0.08);
+    // The Bloor postcard bay: a deep round arch with concentric carved stone orders.
+    // Glass sits behind the projecting jambs and voussoirs; both LODs keep the three lights.
+    W.win(c, 9.8, 6.6, 9.6, { arch: true, frame: 0.16, surround: false });
+    const arc = (r0, r1, off) => {
+      const spring = 16.1, count = near ? 16 : 8;
+      for (let i = 0; i < count; i++) {
+        const a = i * Math.PI / count, b = (i + 1) * Math.PI / count;
+        const P = (r, t) => W.P(W.x(c + r * Math.cos(t)), spring + r * Math.sin(t));
+        K.patch(eN.Gn, [P(r0,a), P(r1,a), P(r1,b), P(r0,b)], 'stoneDeep', off);
+      }
+      for (const d of [-1,1]) K.patch(eN.Gn, W.rect(W.x(c+d*r0),9.5,W.x(c+d*r1),spring), 'stoneDeep', off);
+    };
+    arc(3.3, 3.85, 0.46);
+    arc(3.98, 4.28, 0.34);
+    if (near) for (const k of [-1.1, 1.1]) {
+      K.patch(eN.Gn, W.rect(W.x(c+k-.13),9.8,W.x(c+k+.13),17.65), 'stoneDeep', 0.46);
+      K.patch(eN.Gn, W.rect(W.x(c+k-.23),16.0,W.x(c+k+.23),16.3), 'stoneDeep', 0.46);
+    }
+    if (near) K.patch(eN.Gn, W.rect(W.x(c-3.3),14.25,W.x(c+3.3),14.48), 'stoneDeep', 0.46);
+    W.win(c, 3.3, 6.6, 4.2, { frame: 0.16 });
+    if (near) for (const k of [-1.1,1.1]) K.patch(eN.Gn,W.rect(W.x(c+k-.12),3.3,W.x(c+k+.12),7.5),'stoneDeep',0.46);
+    // Raised gable borders and the central carved medallion sit on the masonry.
+    const rib = (a,b,w) => {
+      const dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy),nx=-dy/l*w/2,ny=dx/l*w/2;
+      K.patch(eN.Gn,[[a[0]+nx,a[1]+ny,eN.v0],[b[0]+nx,b[1]+ny,eN.v0],[b[0]-nx,b[1]-ny,eN.v0],[a[0]-nx,a[1]-ny,eN.v0]],'stoneDeep',0.35);
+    };
+    for (const u of [eN.u0+.35,eN.u1-.35]) rib([u,20],[eN.um,23.55],.3);
+    K.patch(eN.Gn,W.rect(W.x(c-.65),21.35,W.x(c+.65),22.65),'stoneDeep',0.35);
+    K.patch(eN.Gn,W.rect(W.x(c-.13),21.47,W.x(c+.13),22.53),'frame',0.49);
+    K.patch(eN.Gn,W.rect(W.x(c-.50),21.9,W.x(c+.50),22.13),'frame',0.49);
+
   }
   block('eRot', 26);
   block('eAisleSW', 18, { dress: aisleDress });
@@ -111,7 +145,7 @@ export function buildHeritage(K, { near }) {
       const W = wall(F, [u1, v0], [u1, v1], [1, 0]), c = W.L / 2;
       W.course(0, 1.8, 0.3); W.course(6.4, 0.8, 0.4); W.course(h - 1.3, 1.3, 0.5);
       W.win(c, 8.6, 7.0, 12.4, { arch: true, frame: 0.2 });                  // the tall stained-glass window under the carved arch
-      if (near) for (const k of [-1.2, 1.2]) K.patch(F, W.rect(W.x(c + k - 0.14), 8.6, W.x(c + k + 0.14), 18.5), 'stoneDeep', 0.2); // stone mullions between the three lights
+      if (near) for (const k of [-1.2, 1.2]) K.patch(F, W.rect(W.x(c + k - 0.14), 8.6, W.x(c + k + 0.14), 18.5), 'stoneDeep', 0.46); // stone mullions between the three lights
       for (const k of [-2.6, 0, 2.6]) W.win(c + k, 1.9, 2.0, 4.2, { mat: 'glass', frame: 0.14 }); // the three doors
       for (const k of [-6.8, 6.8]) W.course(0, h - 1.3, 0.35, 'stoneDeep', W.x(c + k - 0.7), W.x(c + k + 0.7)); // flanking piers
     }

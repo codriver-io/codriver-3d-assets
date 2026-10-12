@@ -20,10 +20,10 @@ export function create({detail='near'}={}){
  k.hip(-25,-6,-5.3,2.1,3.48,1.25);k.hip(-4.3,3.3,-2.7,2.5,3.67,1.2);
  // International Rotunda: open well and concentric galleries, never a solid roof disc.
  k.poly('stone',circle(-31,-43,15.4,near?48:16),13.8,6.6,[circle(-31,-43,11.5,near?48:16)]);
- for(const y of (near?[5.0,9.3,13.6,17.9]:[17.9])){
+ for(const y of [5.0,9.3,13.6,17.9]){
   k.poly('trim',circle(-31,-43,11.65,near?48:16),y,.18,[circle(-31,-43,10.6,near?48:16)]);
-  const n=near?24:8;
-  for(let i=0;i<n;i++){const a=i*2*Math.PI/n,u=-31+11.05*Math.cos(a),v=-43+11.05*Math.sin(a);k.box('trim',u,y+.18,v,.25,1.15,.25);if(near)k.window(-31+11.45*Math.cos(a),-43+11.45*Math.sin(a),y+.5,1.2,Math.min(2.8,20.25-y-.5),-a-Math.PI/2,i%6===0);}
+  const n=near?24:12;
+  for(let i=0;i<n;i++){const a=i*2*Math.PI/n,u=-31+11.05*Math.cos(a),v=-43+11.05*Math.sin(a);k.box('trim',u,y+.18,v,.25,1.15,.25);k.window(-31+11.45*Math.cos(a),-43+11.45*Math.sin(a),y+.5,1.2,Math.min(2.8,20.25-y-.5),-a-Math.PI/2,i%6===0);}
  }
  if(near)for(let i=0;i<80;i++){const a=i*Math.PI*3.8/80,u=-31+10.15*Math.cos(a),v=-43+10.15*Math.sin(a);k.box('trim',u,.25+i*.195,v,1.1,.16,.64,-a);}
  k.poly('trim',circle(-31,-43,15.6,near?48:16),20.3,.35,[circle(-31,-43,11.5,near?48:16)]);
@@ -39,19 +39,21 @@ export function create({detail='near'}={}){
  k.hip(-48.5,5,-63,-52.5,14.1,2.0);k.hip(5,49.5,-60.6,-51.5,14.1,2.0);k.hip(35.6,51,-51.5,-27.5,14.1,2.0);
  // Spanish Wing: deep brick piers and pointed stone crowns frame the open Gothic gallery.
  k.box('stone',8,13.8,-48.5,36,4.4,8.6);
- for(let u=-7;u<26;u+=3.3){
-  k.box('masonry',u,18.1,-44.45,1.02,4.35,1.8);
-  // Deep splayed arch spandrels; the centre remains a real opening at both LODs.
-  const s=new THREE.Shape([new THREE.Vector2(-1.2,0),new THREE.Vector2(1.2,0),new THREE.Vector2(1.2,2.36),new THREE.Vector2(0,3.85),new THREE.Vector2(-1.2,2.36)]);
-  const h=new THREE.Path([new THREE.Vector2(-.95,0),new THREE.Vector2(.95,0),new THREE.Vector2(.95,2.29),new THREE.Vector2(0,3.44),new THREE.Vector2(-.95,2.29)]);s.holes.push(h);k.shape('masonry',s,u+1.65,-43.68,18.05,.9,0,true);
-  k.box('trim',u,22.4,-44.45,1.15,.28,1.9);
-  k.box('trim',u,22.66,-44.38,.76,1.0,.9);k.cyl('trim',u,-44.38,23.65,2.35,.58,0,4);
-  if(near){
-   for(const y of [19.0,20.45,21.7])k.box('trim',u,y,-43.49,1.18,.16,.2);
-   for(const y of [24.0,24.55,25.05]){k.box('trim',u,y,-44.38,.7,.16,.7);}
-  }
+ const archHeights=[4.1,5.1,4.65,5.8,4.45,5.3,6.0,4.8,5.55,4.35,5.05];
+ const pinnacleHeights=[3.5,4.8,3.2,5.0,3.7,4.3,5.2,3.3,4.7,3.6,4.1];
+ for(let i=0;i<11;i++){
+  const u=-7+i*3.3,head=archHeights[i],pierTop=18.05+Math.max(head,archHeights[Math.max(0,i-1)])+.35;
+  k.box('masonry',u,18.1,-45.0,1.30,pierTop-18.1,3.8);
+  // Unequal pointed crowns and deep returns retain the open Spanish gallery.
+  const s=new THREE.Shape([new THREE.Vector2(-1.2,0),new THREE.Vector2(1.2,0),new THREE.Vector2(1.2,head-1.49),new THREE.Vector2(0,head),new THREE.Vector2(-1.2,head-1.49)]);
+  const h=new THREE.Path([new THREE.Vector2(-.95,0),new THREE.Vector2(.95,0),new THREE.Vector2(.95,head-1.56),new THREE.Vector2(0,head-.41),new THREE.Vector2(-.95,head-1.56)]);s.holes.push(h);k.shape('masonry',s,u+1.65,-43.1,18.05,3.8,0,true);
+  k.box('trim',u,pierTop,-45.0,1.48,.38,3.9);
+  const ph=pinnacleHeights[i];
+  k.box('trim',u,pierTop+.38,-44.4,1.02,ph*.35,1.25);
+  k.cyl('trim',u,-44.4,pierTop+.38+ph*.35,ph*.65,.73,0,4);
+  if(near)for(const y of [19.0,20.45,21.7])k.box('trim',u,y,-43.0,1.18,.16,.2);
  }
- k.hip(-10,26.5,-53,-44.5,22.47,1.5);k.box('trim',8,17.78,-43.86,36.4,.3,.55);
+ k.hip(-10,26.5,-53,-44.5,22.47,1.5);k.box('trim',8,17.78,-44.75,36.4,.3,3.9);
  // Carillon tower: open pillared belfry and visible bells under a broad hip.
  k.box('stone',-39,13.8,15,8,9.2,8);k.box('trim',-39,22.8,15,8.5,.5,8.5);
  for(const u of [-42.3,-39,-35.7])for(const v of [11.7,18.3])k.box('trim',u,23.3,v,.55,4.4,.55);
@@ -62,7 +64,7 @@ export function create({detail='near'}={}){
  for(const y of [16,19.2])k.window(-39,19.02,y,.7,1.65);
  function dome(u,v,base,r,rise,m){const count=near?12:6,profile=Array.from({length:count},(_,i)=>{const t=i/(count-1)*Math.PI/2;return [Math.max(.04,r*Math.cos(t)),base+rise*Math.sin(t)];});profile.push([0,base+rise]);k.lathe(m,u,v,profile,near?32:16);}
  // Northwest Amistad dome: octagonal stone base, blue glazed crown and lantern.
- k.cyl('stone',-43.4,-54.8,14,7.2,6.2,6.2,8);k.cyl('trim',-43.4,-54.8,21.05,.4,6.35,6.35,8);dome(-43.4,-54.8,21.45,5.8,4,'tile');
+ k.cyl('stone',-43.4,-54.8,14,7.2,6.2,6.2,8);k.cyl('trim',-43.4,-54.8,21.05,.4,6.75,6.75,8);dome(-43.4,-54.8,21.45,5.8,4,'tile');
  if(near)for(let i=0;i<16;i++){const a=i*2*Math.PI/16;for(let j=0;j<4;j++){const t0=j*Math.PI/8,t1=(j+1)*Math.PI/8;k.bar('trim',[-43.4+5.85*Math.cos(t0)*Math.cos(a),21.49+4.02*Math.sin(t0),-54.8+5.85*Math.cos(t0)*Math.sin(a)],[-43.4+5.85*Math.cos(t1)*Math.cos(a+.06),21.49+4.02*Math.sin(t1),-54.8+5.85*Math.cos(t1)*Math.sin(a+.06)],.14);}}
  for(let i=0;i<8;i++){const a=i*Math.PI/4;k.box('trim',-43.4+1.45*Math.cos(a),25.45,-54.8+1.45*Math.sin(a),.32,1.65,.32);}
  k.cyl('trim',-43.4,-54.8,27.1,.22,1.7,1.7,8);dome(-43.4,-54.8,27.32,1.5,1.2,'tile');k.cyl('trim',-43.4,-54.8,28.52,1,.4,0,8);
@@ -70,14 +72,14 @@ export function create({detail='near'}={}){
  for(const y of [2,6.3,10.6,15.3]){k.window(-43.4,-60.58,y,3.1,3.4,Math.PI,y===6.3);k.window(-49.18,-54.8,y,3.1,3.4,-Math.PI/2,y===10.6);}
  // Carmel tower: tall arched octagonal drum, projecting corner pinnacles and elongated tile dome.
  k.cyl('stone',44,-54,14,5.7,5.8,5.8,8);
- k.cyl('trim',44,-54,19.55,.3,6,6,8);
+ k.cyl('trim',44,-54,19.55,.3,6.4,6.4,8);
  for(let i=0;i<8;i++){
   const a=(i+.5)*Math.PI/4,nx=Math.sin(a),nz=Math.cos(a);
   k.arch('trim',44+5.40*nx,-54+5.40*nz,19.7,3.3,4.45,.24,.55,a);
   const c=i*Math.PI/4;
   k.box('stone',44+5.8*Math.sin(c),19.65,-54+5.8*Math.cos(c),.7,4.9,.7);
  }
- k.cyl('trim',44,-54,24.38,.35,6,6,8);
+ k.cyl('trim',44,-54,24.38,.35,6.4,6.4,8);
  dome(44,-54,24.7,5.5,7.2,'roof');
  for(let i=0;i<8;i++){const a=i*Math.PI/4;k.pinnacle(44+5.85*Math.cos(a),-54+5.85*Math.sin(a),24.5,2.7);}
  k.cyl('trim',44,-54,31.9,.7,.43,.13,8);
@@ -96,7 +98,7 @@ export function create({detail='near'}={}){
   const [a,c]=[ring[i-1],ring[i]],du=c[0]-a[0],dv=c[1]-a[1],len=Math.hypot(du,dv);if(len<6)continue;
   const nx=(area>0?1:-1)*dv/len,nz=(area>0?-1:1)*du/len,angle=Math.atan2(nx,nz),count=Math.floor(len/5);
   for(let j=0;j<count;j++)for(let row=0;row<3;row++){
-   if(!near&&j%2===1)continue;
+   
    const t=(j+.5)/count,x=a[0]+du*t+nx*.07,z=a[1]+dv*t+nz*.07,y=1.6+row*4.1;
    const courtFront=Math.abs(z+9.6)<1.2||(x>-32&&x<-29&&z>0)||(x>30&&x<35&&z>0);
    k.window(x,z,y,1.8,2.8,angle,(j+row)%5===0,near&&courtFront);
@@ -106,11 +108,11 @@ export function create({detail='near'}={}){
  facade(-6,22,-43.1,0,3.5);facade(-40,-22,25.1,-Math.PI/2);
  // Projecting two-storey Spanish Patio walkways and individual east-side balconies.
  for(const y of [5.65,9.75]){
-  k.box('trim',8,y-.32,-42.4,33,.28,1.45);
-  k.rail(-8.4,-41.73,24.4,-41.73,y,'iron');
+  k.box('wood',8,y-.32,-42.08,33,.28,2.09);
+  k.rail(-8.4,-41.10,24.4,-41.10,y,'iron');
   for(const u of [-7.7,.4,8.5,16.6,23.8]){
-   k.bar('trim',[u,y-1.4,-43.04],[u,y-.35,-41.8],.3);
-   if(!near)k.box('iron',u,y,-41.73,.07,1,.07);
+   k.bar('trim',[u,y-1.4,-43.04],[u,y-.35,-41.25],.3);
+   if(!near)k.box('iron',u,y,-41.10,.07,1,.07);
   }
  }
  for(const v of [-38.6,-30.6,-22.6])for(const y of [5.65,9.75]){
@@ -122,8 +124,8 @@ export function create({detail='near'}={}){
 
  for(let u=-6;u<25;u+=3.5)k.window(u,-44.12,14.6,1.5,2.6,0,u===8,near||Math.abs(u-8)<2);
  // Entrance court fronts have the same projecting balcony rhythm, visible from the avenue.
- for(const y of (near?[5.65,9.75]:[9.75])){
-  k.box('trim',1.6,y-.32,-9.15,55,.28,1.0);
+ for(const y of [5.65,9.75]){
+  k.box('trim',1.6,y-.32,-9.0,55,.28,1.3);
   k.rail(-25.8,-8.61,29.0,-8.61,y,'iron',1.2);
   for(const u of [-25.4,-8,10,28.5]){
    if(near)k.bar('trim',[u,y-1.4,-9.75],[u,y-.35,-8.7],.28);
@@ -137,12 +139,11 @@ export function create({detail='near'}={}){
  k.shape('stone',gate,-16,2.55,0,.6);
  for(const [x,y]of [[-22.7,3.4],[-9.3,3.4],[-16,5.6]]){k.cyl('iron',x,2.2,y,.65,.4,.18,near?10:6);k.bar('iron',[x,y+.65,2.2],[x,y+1.05,2.2],.08);}
 
- for(const y of [4.9,9,13.65]){k.box('trim',-23.7,y,-63.43,53.4,.2,.3);k.box('trim',27.5,y,-61.0,43,.2,.3);k.box('trim',-47.2,y,6.3,.3,.2,61.5);k.box('trim',49.2,y,2.5,.3,.2,54.8);}
+ for(const y of [4.9,9,13.2]){k.box('trim',-23.7,y,-63.43,53.4,.2,.3);k.box('trim',27.5,y,-61.0,43,.2,.3);k.box('trim',-47.2,y,6.3,.3,.2,61.5);k.box('trim',49.2,y,2.5,.3,.2,54.8);}
  for(let v=-50;v<-28;v+=4.3){k.box('stone',51.45,0,v,.8,7,.8);k.box('stone',51.32,7,v,.55,4,.7);k.box('trim',51.32,10.95,v,.6,.22,.8);}
  if(near){
   for(let v=-22;v<34;v+=.8){k.bar('roof',[-46.2,18.03,v],[-38.75,20.30,v],.15);k.bar('roof',[-38.75,20.30,v],[-31.3,18.03,v],.15);}
   for(let u=-25;u<31;u+=.8){k.bar('roof',[u,17.99,-16.6],[u,19.4,-13.65],.15);k.bar('roof',[u,19.4,-13.65],[u,17.99,-10.7],.15);}
-  for(let u=-47;u<3;u+=1.15)k.box('wood',u,13.4,-63.6,.18,.5,.45);for(let u=7;u<49;u+=1.15)k.box('wood',u,13.4,-61.0,.18,.5,.45);
  }
  const model=b.finish();model.traverse(o=>{
   if(!o.isMesh)return;

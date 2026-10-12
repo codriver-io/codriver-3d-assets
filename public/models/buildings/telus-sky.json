@@ -13,7 +13,7 @@
   "plan": {
     "width": 51.43,
     "depth": 34.27,
-    "bayCells": 6,
+    "bayCells": 3,
     "rowCells": 5
   },
   "levels": {
@@ -37,8 +37,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/telus-sky-near.glb",
-      "bytes": 966548,
-      "triangles": 17772,
+      "bytes": 1632152,
+      "triangles": 30096,
       "drawCalls": 6,
       "bounds": {
         "min": [
@@ -55,8 +55,8 @@
     },
     "far": {
       "url": "/models/buildings/telus-sky-far.glb",
-      "bytes": 289924,
-      "triangles": 5260,
+      "bytes": 399404,
+      "triangles": 9510,
       "drawCalls": 5,
       "bounds": {
         "min": [

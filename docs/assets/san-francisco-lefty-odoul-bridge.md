@@ -1,10 +1,10 @@
 # Lefty O'Doul Bridge (Third Street Bridge), San Francisco
 
-Asset `lefty-odoul-bridge`: the 1933 Strauss heel-trunnion single-leaf bascule that carries Third Street over the Mission Creek (China Basin) channel beside Oracle Park. Original procedural model, **superstructure only** (`kind: 'bridge'`, `footprintless`): the provider keeps drawing Third Street's pavement, so the model has no deck, nothing in the lanes and nothing below grade. Contract: [3d-san-francisco-landmarks.md](../san-francisco-landmarks.md). Source: `src/peregrine/landmarks/san-francisco/lefty-odoul-bridge/`. Rebuild: `pnpm build:san-francisco-landmarks lefty-odoul-bridge`. Tests: `lefty-odoul-bridge.test.js` in the same folder.
+Asset `lefty-odoul-bridge`: the 1933 Strauss heel-trunnion single-leaf bascule that carries Third Street over the Mission Creek (China Basin) channel beside Oracle Park. Original procedural model, **free-standing bridge with a continuous fallback carriageway** (`kind: 'bridge'`, `footprintless`): the provider retains Third Street's pavement and paint with a near fallback slab lifted 0.20 m in the interior and tapered to exact street grade y=0 at both joints; far is inset below provider pavement. Only that slab embeds to -0.55 m; structural steel remains above grade. Contract: [3d-san-francisco-landmarks.md](../san-francisco-landmarks.md). Source: `src/peregrine/landmarks/san-francisco/lefty-odoul-bridge/`. Rebuild: `pnpm build:san-francisco-landmarks lefty-odoul-bridge`. Tests: `lefty-odoul-bridge.test.js` in the same folder.
 
 ## Identity and version
 
-Opened 12 May 1933 (Joseph Strauss's company; contractor Barrett & Hilp), renamed for Francis "Lefty" O'Doul in 1980, retrofitted 1999, rehabilitated 2017-2020 (counterweight repair, deck and steel repairs; no change of form). It is a **single-leaf** bascule: one leaf hinges at the north-west (ballpark) end on a heel trunnion at the top of a tall frame, and its two concrete counterweights swing down behind it when it opens. Modelled in the **closed** position, which is what a driver sees: a black Pratt through truss over the road, and at the far end a huge steel frame with two concrete blocks hanging high above the sidewalks. The operator's house (oxblood panels, balcony, glazed cab, green roof) and two cream huts stand on the piers.
+Opened 12 May 1933 (Joseph Strauss's company; contractor Barrett & Hilp), renamed for Francis "Lefty" O'Doul in 1980, retrofitted 1999, rehabilitated 2017-2020 (counterweight repair, deck and steel repairs; no change of form). It is a **single-leaf** bascule: one leaf hinges at the north-west (ballpark) end on a heel trunnion at the top of a tall frame, and its two concrete counterweights swing down behind it when it opens. Modelled in the **closed** position, which is what a driver sees: a Pratt through truss over the road, and at the far end a huge steel frame with two concrete blocks hanging high above the sidewalks. The operator's house (oxblood panels, balcony, glazed cab, green roof) and two cream huts stand on the piers.
 
 ## Sources
 
@@ -38,11 +38,11 @@ Authored in bridge coordinates (`lefty-odoul-bridge-site.js`): B along the axis 
 
 ## Materials
 
-Seven names, same keys in light and dark: `steel` (black riveted steel and railings), `concrete` (counterweights, house plinth and balcony), `house` (oxblood panels), `trim` (verdigris roof, mullions, frames), `cream` (huts), `glass` (operator's cab), `lamp` (bridge lamps, unshaded so they stay lit at night). Colours follow the 2016-2025 photographs; the dark theme is dimmer but legible.
+Eight names, same keys in light and dark: `steel` (muted grey-green riveted steel and railings), `concrete` (counterweights, house plinth and balcony), `house` (oxblood panels), `trim` (verdigris roof, mullions, frames), `cream` (huts), `glass` (operator's cab), `lamp` (bridge lamps, unshaded so they stay lit at night), and `asphalt` (fallback carriageway). Steel was lifted to #78877e by day and #82948c at night for app readability; it is intentionally lighter than the black steel in the reference photograph.
 
 ## Modelling decisions
 
-- Superstructure only. Every structural member between the trusses is above 5.4 m (tested with 300+ upward rays per LOD). The mapped lanes (OSM carriageway centre lines V -9.1, -2.45 two-lane way, +3.6, cycle track +7.75, taken as 3.3 m lanes) are checked directly: 1,000+ upward rays per LOD plus every vertex under 5 m must stay outside each lane's width, so the west truss' 1.4 m shoe plates end at V -7.4 and the east ones at +9.5. The sidewalks are open. The lowest vertex is 0.06 m, so nothing is coplanar with the provider pavement.
+- Free-standing superstructure plus an embedded fallback slab. Every structural member between the trusses is above 5.4 m (tested with 300+ upward rays per LOD). The mapped lanes (OSM carriageway centre lines V -9.1, -2.45 two-lane way, +3.6, cycle track +7.75, taken as 3.3 m lanes) are checked directly: 1,000+ upward rays per LOD plus every vertex under 5 m must stay outside each lane's width, so the west truss' 1.4 m shoe plates end at V -7.4 and the east ones at +9.5. The sidewalks are open. Structural steel starts above grade; the near fallback slab top is 0.20 m in the interior with 3 m tapers to y=0 at both joints; far is inset at -0.20 m, and the slab bottom is -0.55 m.
 - Pieces are convex solids with different member thicknesses wherever they overlap, so no two faces share a plane (checked with a scratch pairwise coplanarity pass: nothing under 2 cm, large surfaces at 7 cm or more).
 - The two operator houses are the only footprint rings: the provider extrudes OSM ways 579664204 and 1006830800 as buildings and the model draws both itself.
 - Far LOD keeps the Pratt truss, the heel frame, tail truss, counterweights, houses and rail lines (same bounding box within 1.1 m) and drops lacing, gusset plates, rail posts, lamps, windows and mullions.
@@ -53,7 +53,7 @@ Closed position only (the leaf cannot be shown raised). The members' exact secti
 
 ## Costs
 
-Near 5 480 triangles, 7 draws, 296 KB; far 1 708 triangles, 6 draws, 97 KB (budget: 120 000 / 40 / 4.5 MB and 30 000 / 10 / 1.2 MB; aim 15 000 and 3 000). Desktop numbers, not Tesla measurements.
+Near 5 704 triangles, 8 draws, 317 136 bytes (310 KiB); far 1 720 triangles, 7 draws, 101 252 bytes (99 KiB) (budget: 120 000 / 40 / 4.5 MB and 30 000 / 10 / 1.2 MB; aim 15 000 and 3 000). Desktop numbers, not Tesla measurements.
 
 ## Verification
 
@@ -62,5 +62,17 @@ Procedural source and exported GLB, near and far, light and dark, with the red f
 | Environment | Status |
 | --- | --- |
 | Inspector, exported GLB near/far, light/dark | verified (screenshots above) |
-| Cityscape, flat ground | not tested yet, integration is checked separately |
-| Full 3D world, topography | not tested yet, integration is checked separately |
+| Cityscape, flat ground | verified for rendering and street joints in the QA follow-up below |
+| Full 3D world, topography | verified for rendering and street joints in the QA follow-up below |
+
+## QA follow-up, 2026-10-11
+
+Lifted the app steel palette to muted grey-green (#78877e day, #82948c night), preserving the Pratt truss, tall heel frame, raised counterweights and houses. Added a continuous 88.5 m fallback carriageway: near interior +0.20 m, 3 m tapers to exact y=0 at both street joints; far inset at -0.20 m. The second and final look-fix removed terrain/provider triangles visible through the initial y=0 slab in world mode. No shared runtime code or placement gate changed.
+
+The house body now starts on its plinth and meets its balcony slab without overlapping vertical skins. Window frames have four real bars around each pane rather than a solid trim face behind the glass; panes, mullions, door and machinery/hut glass are 0.25 m proud near. Tiny layered door glass was dropped. The cab glazing meets its fascia. Deterministic layered-face issues fell from about 11 m² per LOD to zero, and the regenerated depth table has no material cycles for this bridge.
+
+Cityscape **verified** on 3282 and Full 3D world **verified** on 3284 for near/far/street rendering and both-direction close views of the two road joints. Steel uses the shared unlit vertex shading path (`MeshBasicMaterial`) in both modes and reads grey-green, with a continuous carriageway and no visible near threshold or white terrain triangles in the final close views. Provider buildings and Oracle Park obscure some automatic wide views; the close views supply the useful joint evidence.
+
+Dedicated road fitting, HD pavement/paint draping, vehicle `heightAt`, live route/car continuity and full terrain rollout are **not implemented or verified** by this change and remain a separate integration. No Tesla hardware measurement or independent re-review is claimed. Baseline review files/dossiers were unavailable; baseline GLB sheets were regenerated and compared to their retrieved reference photographs and existing documented dimensions.
+
+Landmark and San Francisco conformance tests passed 90/90, including continuous fallback road rays at all mapped lane bands and near joint heights. Bridge budgets, geometry QA, depth table check, asset catalog, assets check/preview and Peregrine build pass. Servers are stopped at handoff and generated renderer bundles are excluded from the commit.

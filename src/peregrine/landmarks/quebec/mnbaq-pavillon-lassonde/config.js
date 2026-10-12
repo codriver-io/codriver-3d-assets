@@ -38,7 +38,7 @@ export const SPEC = {
 export const PALETTES = {
   light: {
     frit: '#c6d3d9', glow: '#e1e9ec', glass: '#59727f', light: '#627c8a', soffit: '#6d665f',
-    steel: '#56626a', gold: '#cdb07a', green: '#6d8a55', concrete: '#bbb8b0',
+    steel: '#a0b0b7', gold: '#cdb07a', green: '#6d8a55', concrete: '#bbb8b0',
   },
   dark: {
     frit: '#6c7b85', glow: '#fff0d4', glass: '#1d2a31', light: '#ffd18a', soffit: '#86837d',

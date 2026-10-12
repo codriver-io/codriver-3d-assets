@@ -112,7 +112,7 @@ export function kit(put, { near = true } = {}) {
   const ghost = (pts, hint) => { const f = frameOf(pts, hint); return f ? { pts, ...f, ring: pts.map((p) => to2(f, p)) } : null; };
 
   /** Geometry laid on the face plane: polygon given in 3D (projected onto the plane) or as 2D face coordinates. */
-  function patch(F, ring, mat, off = 0.05, is2 = false) {
+  function patch(F, ring, mat, off = 0.11, is2 = false) {
     const r2 = is2 ? ring : ring.map((p) => to2(F, p));
     const p3 = r2.map((q) => to3(F, q, off));
     const g = polyGeom(p3, F.n); if (g) put(g, mat);
@@ -157,10 +157,10 @@ export function kit(put, { near = true } = {}) {
   }
 
   /** Glazing: a glass polygon, its frame, and an optional mullion grid. `pts` are 3D points near the face plane. */
-  function glaze(F, pts, { mat = 'glass', frame = 0.22, grid = null, gridStep = 2, gridAngle = 0.8, gridWidth = 0.09, off = 0.1, is2 = false } = {}) {
+  function glaze(F, pts, { mat = 'glass', frame = 0.22, grid = null, gridStep = 2, gridAngle = 0.8, gridWidth = 0.09, off = near ? 0.24 : 0.12, is2 = false } = {}) {
     const r2 = patch(F, pts, mat, off, is2);
-    if (frame > 0 && near) outline(F, r2, { width: frame, off: off + 0.05 });
-    if (grid && near) hatch(F, r2, { angle: gridAngle, step: gridStep, width: gridWidth, off: off + 0.05 });
+    if (frame > 0 && near) outline(F, r2, { width: frame, off: off + 0.12 });
+    if (grid && near) hatch(F, r2, { angle: gridAngle, step: gridStep, width: gridWidth, off: off + 0.12 });
     return r2;
   }
 

@@ -7,7 +7,7 @@ const RW = L.roof;
 /** A dormer on the mansard's steep slope, in front of the wall plane E: stone cheeks, a lit window, a small pediment. */
 function dormer(F, near, c, E) {
   F.box('stone', c - 0.8, c + 0.8, 18.4, 20.8, E - 4.4, E - 2.0);
-  F.quad('light', c - 0.45, c + 0.45, 18.9, 20.4, E - 2.0 + 0.1);
+  F.quad('light', c - 0.45, c + 0.45, 18.9, 20.4, E - 2.0 + 0.15);
   if (near) F.pediment('stone', c - 1.05, c + 1.05, 20.8, 1.0, E - 3.8, E - 1.9);
 }
 
@@ -20,7 +20,7 @@ function dormer(F, near, c, E) {
 export function facade(F, near, a0, a1, E, { bay = 3.9, y0 = 0, q = 0, cL = false, cR = false, dormers = true, floors = [1, 1, 1, 1], dbay = bay } = {}) {
   const x0 = a0 - (cL ? 0.55 : 0), x1 = a1 + (cR ? 0.55 : 0);
   const w0 = a0 + q, w1 = a1 - q, n = Math.max(1, Math.round((w1 - w0) / bay)), bw = (w1 - w0) / n;
-  if (y0 < 0.5) F.box('stone2', x0, x1, 0, L.plinth, E, E + 0.25); // plinth
+  if (y0 < 0.5) F.box('stone2', x0, x1, 0, L.plinth, E, E + 0.35); // plinth
   F.box('stone', x0, x1, L.belt[0], L.belt[1], E - 0.3, E + 0.35);
   F.box('stone', x0, x1, L.cor1[0], L.cor1[1], E - 0.3, E + 0.5);
   F.box('stone', x0, x1, L.cor2[0], L.cor2[1], E - 0.3, E + 0.6);
@@ -30,8 +30,8 @@ export function facade(F, near, a0, a1, E, { bay = 3.9, y0 = 0, q = 0, cL = fals
     if (y0 < 0.5) for (let y = 1.75; y < L.belt[0] - 0.4; y += 0.95) F.quad('stone2', x0 + 0.3, x1 - 0.3, y, y + 0.12, E + 0.15); // rustication joints
     for (let a = x0 + 0.7; a < x1 - 0.4; a += 1.0) F.quad('stone2', a, a + 0.35, 16.35, 16.85, E - 0.3 + 0.12); // balusters seen as slots
     for (let a = a0 + 0.5; a < a1 - 0.4; a += 0.9) { // modillions under the cornice and dentils under the first one, as dark slots on their faces
-      F.quad('stone2', a, a + 0.4, 13.45, 13.75, E + 0.6 + 0.06);
-      F.quad('stone2', a, a + 0.3, 9.7, 10.05, E + 0.5 + 0.06);
+      F.quad('stone2', a, a + 0.4, 13.45, 13.75, E + 0.6 + 0.15);
+      F.quad('stone2', a, a + 0.3, 9.7, 10.05, E + 0.5 + 0.15);
     }
   }
   if (q) { for (const [u0, u1] of [[a0, a0 + q], [a1 - q, a1]]) F.box('stone', u0, u1, y0 < 0.5 ? L.plinth : y0, L.wallTop, E - 0.2, E + 0.3); }
@@ -39,18 +39,18 @@ export function facade(F, near, a0, a1, E, { bay = 3.9, y0 = 0, q = 0, cL = fals
     const c = w0 + (i + 0.5) * bw, gw = Math.min(1.7, bw * 0.44);
     const row = (key, mat, w, sillOffset = 0) => {
       const [y, h] = L.win[key]; if (y < y0) return;
-      F.arch(mat, c, y, w, h, E + 0.25);
-      if (near) F.arch('stone2', c, y - 0.12 - sillOffset, w + 0.5, h + 0.42, E + 0.2);
+      F.arch(mat, c, y, w, h, E + 0.35);
+      if (near) F.arch('stone2', c, y - 0.12 - sillOffset, w + 0.5, h + 0.42, E + 0.20);
     };
     if (floors[0]) row('ground', 'glass', gw);
     if (floors[1]) row('first', 'light', Math.min(1.8, bw * 0.46));
     if (floors[2]) row('second', 'light', Math.min(1.4, bw * 0.36));
     if (floors[3] && L.win.attic[0] >= y0) {
-      F.quad('light', c - 0.45, c + 0.45, L.win.attic[0], L.win.attic[0] + L.win.attic[1], E + 0.25);
-      if (near) F.quad('stone2', c - 0.7, c + 0.7, L.win.attic[0] - 0.15, L.win.attic[0] + L.win.attic[1] + 0.2, E + 0.2);
+      F.quad('light', c - 0.45, c + 0.45, L.win.attic[0], L.win.attic[0] + L.win.attic[1], E + 0.35);
+      if (near) F.quad('stone2', c - 0.7, c + 0.7, L.win.attic[0] - 0.15, L.win.attic[0] + L.win.attic[1] + 0.2, E + 0.20);
     }
-    if (near && floors[1] && L.win.first[0] >= y0) F.box('stone', c - 0.16, c + 0.16, 9.2, 9.6, E + 0.12, E + 0.42); // keystone
-    if (near && floors[0] && y0 < 0.5) F.box('stone', c - 0.16, c + 0.16, 4.35, 4.8, E + 0.1, E + 0.36);
+    if (near && floors[1] && L.win.first[0] >= y0) F.box('stone', c - 0.16, c + 0.16, 9.2, 9.6, E + 0.12, E + 0.7); // keystone
+    if (near && floors[0] && y0 < 0.5) F.box('stone', c - 0.16, c + 0.16, 4.35, 4.8, E + 0.1, E + 0.7);
   }
   if (near) for (let i = 0; i <= n; i++) { // pilasters between the bays, the upper two floors; capitals under the cornices
     const a = w0 + i * bw; if (i === 0 && q) continue; if (i === n && q) continue;
@@ -73,30 +73,32 @@ export function centralPavilion(F, near) {
   facade(F, near, 4.8, h, E, { bay: 2.45, cR: true, dormers: false, floors: [1, 1, 1, 1] });
   F.box('stone', -4.8, 4.8, L.topCor[0], L.topCor[1], E - 0.3, E + 0.55); // crowning cornice over the middle
   // arched portal with its double doors, the stone surround and the balcony above it
-  F.arch('glass', 0, ph, 3.4, 2.7, E + 0.25);
-  if (near) { F.arch('stone2', 0, ph - 0.02, 4.0, 3.15, E + 0.2); F.box('stone', -0.2, 0.2, 4.55, 5.1, E + 0.1, E + 0.4); }
-  F.box('stone', -4.4, 4.4, 5.3, 5.62, E - 0.3, E + 1.5); // balcony slab
-  F.box('stone', -4.4, 4.4, 5.62, 6.5, E + 1.2, E + 1.5); // balustrade, front
-  for (const sg of [-1, 1]) F.box('stone', sg > 0 ? 4.1 : -4.4, sg > 0 ? 4.4 : -4.1, 5.62, 6.5, E, E + 1.2); // balustrade, returns
-  if (near) for (let a = -4.0; a < 4.0; a += 0.8) F.quad('stone2', a, a + 0.3, 5.75, 6.4, E + 1.5 + 0.12);
-  // tall arched windows behind the colonnade, the colonnade, entablature and pediment
+  F.arch('glass', 0, ph, 3.4, 2.7, E + 0.35);
+  if (near) { F.arch('stone2', 0, ph - 0.02, 4.0, 3.15, E + 0.20); F.box('stone', -0.2, 0.2, 4.55, 5.1, E + 0.1, E + 0.7); }
+  F.box(near ? 'soffit' : 'stone', -4.5, 4.5, 5.05, 5.3, E - 0.3, E + 2.2); // shadowed soffit
+  F.box('stone', -4.6, 4.6, 5.3, 5.62, E - 0.3, E + 2.4);
+  F.box('stone', -4.6, 4.6, 5.62, 6.5, E + 2.1, E + 2.4);
+  for (const sg of [-1, 1]) F.box('stone', sg > 0 ? 4.3 : -4.6, sg > 0 ? 4.6 : -4.3, 5.62, 6.5, E, E + 2.1);
+  if (near) for (let a = -4.0; a < 4.0; a += 0.8) F.quad('stone2', a, a + 0.3, 5.75, 6.4, E + 2.55);
   for (const [c, w] of [[0, 2.3], [-2.2, 1.2], [2.2, 1.2]]) {
-    F.arch('light', c, 6.1, w, 4.6, E + 0.25);
-    if (near) F.arch('stone2', c, 5.95, w + 0.4, 5.0, E + 0.2);
+    F.arch('light', c, 6.1, w, 4.6, E + 0.35);
+    if (near) F.arch('stone2', c, 5.95, w + 0.4, 5.0, E + 0.20);
   }
   for (const a of [-3.9, -3.1, -1.3, 1.3, 3.1, 3.9]) {
-    F.col('stone', a, E + 1.0, 5.62, 10.9, 0.3, near ? 8 : 4);
-    if (near) F.box('stone', a - 0.4, a + 0.4, 10.5, 10.9, E + 0.6, E + 1.4);
+    F.box('stone', a - 0.43, a + 0.43, 5.62, 5.95, E + 1.32, E + 2.18);
+    F.col('stone', a, E + 1.75, 5.95, 10.5, 0.34, near ? 8 : 6);
+    F.box('stone', a - 0.48, a + 0.48, 10.5, 10.9, E + 1.27, E + 2.23);
   }
-  F.box('stone', -4.9, 4.9, 10.9, 11.8, E - 0.3, E + 1.6);
-  F.pediment('stone', -5.0, 5.0, 11.8, 2.0, E - 0.3, E + 1.6);
-  if (near) F.pediment('stone2', -3.9, 3.9, 12.1, 1.3, E + 1.6, E + 1.75);
+  F.box(near ? 'soffit' : 'stone', -5.0, 5.0, 10.9, 11.2, E - 0.3, E + 2.3);
+  F.box('stone', -5.2, 5.2, 11.2, 11.8, E - 0.3, E + 2.6);
+  F.pediment('stone', -5.3, 5.3, 11.8, 2.0, E - 0.3, E + 2.6);
+  if (near) F.pediment('stone2', -4.0, 4.0, 12.1, 1.3, E + 2.6, E + 2.75);
   // clock frontispiece rising from the roof behind the pediment
   F.box('stone', -3.9, 3.9, L.wallTop, 21.6, 13.0, 18.9);
   F.pediment('stone', -4.3, 4.3, 21.6, 2.6, 13.0, 19.2);
   if (near) F.pediment('stone2', -3.1, 3.1, 21.95, 1.7, 19.2, 19.35);
   F.disc('stone2', 0, 18.6, 1.75, 18.9 + 0.1);
-  F.disc('sign', 0, 18.6, 1.4, 18.9 + 0.16);
+  F.disc('sign', 0, 18.6, 1.4, 18.9 + 0.25);
   if (near) for (const sg of [-1, 1]) F.arch('light', sg * 2.55, 16.4, 0.9, 1.9, 18.9 + 0.1);
   // stair: eleven risers, stone cheeks sloping down to the street
   const steps = near ? 11 : 4, dy = ph / steps, dd = (P.stairFront - E) / steps, pts = [[E, 0], [P.stairFront, 0]];
@@ -132,23 +134,20 @@ export function extension(k, F, near) {
   }
 }
 
-/** The campanile (the "trente pieds" lantern of the 1923-26 rebuild): a stone stage, an octagonal arched lantern, a copper dome and spire. */
+/** The campanile (the "trente pieds" lantern of the 1923-26 rebuild): a flared copper base, open eight-post lantern and stepped cap with spire. */
 export function campanile(k, near) {
-  const { s, d } = P.tower, r = 2.4, ap = r * Math.cos(Math.PI / 8);
-  k.gbox('stone', s - 3.1, s + 3.1, 23.9, 26.8, d - 3.1, d + 3.1);
-  k.gbox('stone', s - 3.55, s + 3.55, 26.8, 27.35, d - 3.55, d + 3.55);
-  for (let i = 0; i < 4; i++) { // arched openings on the four faces of the stage
-    const phi = i * Math.PI / 2, F = k.frame(s + 3.1 * Math.sin(phi), d + 3.1 * Math.cos(phi), phi);
-    F.arch('light', 0, 24.6, 1.5, 1.9, 0.08);
+  const { s, d } = P.tower;
+  // Flared, faceted copper base behind the clock pediment, with a strong cornice break.
+  k.hip('roof', s - 4.4, s + 4.4, d - 4.4, d + 4.4, [[23.9, 0], [24.8, -0.25], [27.2, 1.1], [28.4, 1.45]]);
+  k.cyl('roof', s, d, 3.5, 8, 28.4, 28.9, 3.5, Math.PI / 8);
+  // Open lantern: eight posts carry the upper collar. No solid stone drum hides the voids.
+  for (let i = 0; i < 8; i++) {
+    const a = i * Math.PI / 4, u = Math.sin(a), v = Math.cos(a);
+    k.cyl('roof', s + 2.55 * u, d + 2.55 * v, 0.3, near ? 8 : 5, 28.9, 33.0, 0.25);
   }
-  k.cyl('stone', s, d, r, 8, 27.35, 32.1, r, Math.PI / 8);
-  k.cyl('stone', s, d, 2.85, 8, 32.1, 32.6, 2.85, Math.PI / 8);
-  for (let i = 0; i < 8; i += near ? 1 : 2) { // lantern: eight tall arched openings
-    const phi = i * Math.PI / 4, F = k.frame(s + ap * Math.sin(phi), d + ap * Math.cos(phi), phi);
-    F.arch('light', 0, 28.0, 1.1, 3.6, 0.08, near ? 5 : 3);
-  }
-  const prof = [[2.7, 32.6], [2.78, 33.0], [2.5, 33.8], [1.9, 34.6], [1.15, 35.3], [0.55, 35.8], [0.28, 36.1], [0.2, 36.4], [0.34, 36.7], [0.16, 37.0], [0.1, 37.5], [0.03, 40.0]];
-  k.lathe('roof', s, d, prof, near ? 14 : 8); // patinated copper, the same material as the mansards
+  k.cyl('roof', s, d, 3.1, 8, 33.0, 33.5, 3.1, Math.PI / 8);
+  // Bell-shaped cap with a shallow flared skirt, secondary collar and needle.
+  k.lathe('roof', s, d, [[3.1, 33.5], [3.2, 33.8], [2.7, 34.25], [2.1, 34.9], [1.25, 35.5], [0.8, 35.7], [0.8, 36.2], [1.15, 36.2], [1.1, 36.5], [0.45, 37.1], [0.18, 37.6], [0.03, 40.0]], near ? 16 : 8);
 }
 
 /** Two tall Renaissance chimneys on the front roof, above the junction of each wing and end pavilion. */

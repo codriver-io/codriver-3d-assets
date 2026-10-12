@@ -87,14 +87,15 @@ function windows(k, near) {
   const bay = (f, centers, sSign = 1) => {
     for (const u of centers) {
       const s = sSign * u;
-      f.arch('glass', s, 3.4, 2.4, 10.4, 0.14);
-      f.arch('stone2', s, 18.3, 2.05, 9.4, 0.09);
-      if (!near) continue;
-      f.box('stone2', s - 1.55, s + 1.55, 3.15, 3.45, 0.1, 0.24);
+      f.arch('relief', s, 3.2, 2.9, 10.8, 0.12);
+      f.arch('glass', s, 3.4, 2.4, 10.4, 0.35);
+      f.arch('relief', s, 18.3, 2.05, 9.4, 0.22);
+      f.box('relief', s - 1.55, s + 1.55, 3.15, 3.45, 0.1, 0.24);
       for (const side of [-1, 1]) {
         const p = s + side * 2.15;
-        f.box('stone2', p - 0.32, p + 0.32, 2.6, 15.2, 0.08, 0.24);
-        f.box('stone2', p - 0.28, p + 0.28, 17.3, 32.6, 0.06, 0.2);
+        f.box('relief', p - 0.32, p + 0.32, 2.6, 15.2, 0.02, 0.38);
+        f.box('relief', p - 0.28, p + 0.28, 17.3, 32.6, 0.02, 0.38);
+        for (const y of [14.7, 31.8]) f.box('relief', p - 0.52, p + 0.52, y, y + 0.6, 0, 0.40);
       }
     }
   };
@@ -116,14 +117,14 @@ function windows(k, near) {
     for (const v of [22, 28]) {
       const s = side > 0 ? v : -v;
       f.arch('glass', s, 3.6, 2.15, 9.6, 0.16);
-      f.arch('stone2', s, 18.5, 1.85, 8.2, 0.1);
+      f.arch('relief', s, 18.5, 1.85, 8.2, 0.1);
       f.arch('glass', -s, 3.6, 2.15, 9.6, 0.16);
-      f.arch('stone2', -s, 18.5, 1.85, 8.2, 0.1);
+      f.arch('relief', -s, 18.5, 1.85, 8.2, 0.1);
       if (!near) continue;
       for (const sign of [s, -s]) {
         for (const side of [-1, 1]) {
           const p = sign + side * 1.7;
-          f.box('stone2', p - 0.22, p + 0.22, 2.7, 15.15, 0.08, 0.22);
+          f.box('relief', p - 0.22, p + 0.22, 2.7, 15.15, 0.08, 0.22);
         }
       }
     }
@@ -166,13 +167,25 @@ function tower(k, near, vSign) {
   // top of the same shaft (a smaller cap would put two skins in one plane).
   wbox('stone', u - h, u + h, 0, 44.6, v - h, v + h);
   wbox('stone', u - h - 0.16, u + h + 0.16, 43.8, 45.7, v - h - 0.16, v + h + 0.16);
+  // Stacked square orders articulate the shafts beneath the clock stage.
+  for (const [fu, fv, phi] of [[u-h,v,Math.PI],[u,v+h*vSign,vSign>0?Math.PI/2:-Math.PI/2]]) {
+    const f=frame(fu,fv,phi);
+    for (const y of [14.8, 27.8, 34.6]) f.box('relief',-h,h,y,y+.85,-.08,.48);
+    for (const [y0,y1] of [[2.6,14.7],[16.0,27.6],[29.0,34.5]]) {
+      for (const p of [-4.7,4.7]) {
+        f.box('relief',p-.4,p+.4,y0,y1,-.05,.38);
+        f.box('relief',p-.65,p+.65,y1-.45,y1+.15,-.08,.48);
+      }
+      f.arch('relief',0,y0+1.3,2.6,y1-y0-2.0,.18);
+    }
+  }
   // Clocks: west face, and the outer face. Black dial, gold ring, twelve ticks on near.
   // Pilasters and a curved hood and apron sit outside the dial so the centre ray still hits clock.
   const clock = (fu, fv, phi) => {
     const f = frame(fu, fv, phi);
     const cy = 39.6;
     f.disc('lamp', 0, cy, 2.35, 0.07);
-    f.disc('clock', 0, cy, 2.02, 0.15);
+    f.disc('clock', 0, cy, 2.02, 0.28);
     // stone2, not the shaft's stone: a same-colour strip vanishes head-on. The dial centre stays clear.
     f.box('stone2', -3.72, -2.82, 35.85, 43.45, 0.05, 0.2);
     f.box('stone2', 2.82, 3.72, 35.85, 43.45, 0.05, 0.2);
@@ -184,7 +197,7 @@ function tower(k, near, vSign) {
     if (!near) return;
     for (let i = 0; i < 12; i++) {
       const a = (i / 12) * Math.PI * 2;
-      f.box('lamp', Math.sin(a) * 1.62 - 0.08, Math.sin(a) * 1.62 + 0.08, cy + Math.cos(a) * 1.62 - 0.12, cy + Math.cos(a) * 1.62 + 0.12, 0.08, 0.2);
+      f.box('lamp', Math.sin(a) * 1.62 - 0.08, Math.sin(a) * 1.62 + 0.08, cy + Math.cos(a) * 1.62 - 0.12, cy + Math.cos(a) * 1.62 + 0.12, 0.35, 0.55);
     }
   };
   clock(u - h, v, Math.PI);
@@ -194,17 +207,17 @@ function tower(k, near, vSign) {
   // open drum (7.2 m across, 11 m tall) and a concave lead cap, not a squat bell on a fat cylinder.
   const cr = 3.6;
   const nC = near ? 12 : 8;
-  cyl('clock', u, v, 2.05, 46.5, 57.2, near ? 10 : 8, 2.05, true);
+  cyl('clock', u, v, 2.75, 47.8, 55.7, near ? 10 : 8, 2.05, true);
   for (let i = 0; i < nC; i++) {
     const a = (i / nC) * Math.PI * 2 + 0.22;
-    col('stone', u + Math.sin(a) * cr, v + Math.cos(a) * cr, 46.0, 57.2, near ? 0.34 : 0.44, near ? 6 : 5);
+    col('stone', u + Math.sin(a) * cr, v + Math.cos(a) * cr, 46.0, 57.2, near ? 0.52 : 0.58, near ? 6 : 5);
   }
   cyl('stone', u, v, 4.15, 56.8, 58.35, near ? 12 : 8);
   cyl('stone2', u, v, 4.28, 58.15, 58.85, near ? 12 : 8);
   const seg = near ? 12 : 8;
   lathe('lead', u, v, [
-    [3.05, 58.7], [3.4, 59.15], [2.95, 59.7], [2.15, 60.45], [1.45, 61.15], [1.05, 61.7],
-    [1.12, 62.05], [0.95, 62.7], [0.62, 63.35], [0.32, 63.95], [0.12, 64.4],
+    [4.05, 58.7], [4.25, 59.15], [3.9, 59.7], [3.15, 60.45], [2.05, 61.15], [1.45, 61.7],
+    [1.52, 62.05], [1.45, 62.7], [1.05, 63.35], [0.42, 63.95], [0.12, 64.55],
   ], seg);
   lathe('lamp', u, v, [
     [0.08, 64.55], [0.14, 64.9], [0.28, 65.4], [0.4, 66.0], [0.44, 66.55], [0.36, 67.0], [0.2, 67.22], [0.06, H.tower],
@@ -310,24 +323,25 @@ function dome(k, near) {
     frame(Math.sin(a) * 16.5, Math.cos(a) * 16.5, a).disc('glass', 0, 44.2, 1.45, 0.16, near ? 12 : 8);
   }
   // Free-standing peristyle. The core is set well back so the bays are dark depth, not a
-  // window band. Far keeps every other shaft, so the rhythm is still light column / dark gap.
+  // window band. Far keeps all 32 shafts, so the rhythm is still light column / dark gap.
   cyl('stone', 0, 0, D.galleryR, 48.5, 50.15, seg);
-  cyl('clock', 0, 0, 14.6, 50.25, 58.4, seg, 14.6, true);
-  const nCol = near ? D.columnN : 16;
+  cyl('clock', 0, 0, 14.6, 51.1, 57.7, seg, 14.6, true);
+  const nCol = D.columnN;
   for (let i = 0; i < nCol; i++) {
     const a = (i / nCol) * Math.PI * 2;
     const cu = Math.sin(a) * D.columnR, cv = Math.cos(a) * D.columnR;
-    const shaft = near ? 0.5 : 0.58;
+    const shaft = near ? 0.68 : 0.72;
     col('stone', cu, cv, 50.05, 58.15, shaft, near ? 8 : 6);
     col('stone2', cu, cv, 57.85, 58.85, shaft * 1.42, near ? 6 : 5);
   }
   cyl('stone', 0, 0, D.galleryR - 0.1, 58.55, 61.15, seg);
   cyl('stone2', 0, 0, D.galleryR - 0.4, 61.05, 61.85, seg);
-  const nBal = near ? 32 : 12;
+  const nBal = 32;
   for (let i = 0; i < nBal; i++) {
     const a = (i / nBal) * Math.PI * 2;
     col('stone', Math.sin(a) * (D.galleryR - 0.55), Math.cos(a) * (D.galleryR - 0.55), 61.1, near ? 62.7 : 62.45, near ? 0.2 : 0.28, 4);
   }
+  cyl('stone', 0, 0, D.galleryR - 0.35, 62.45, 63.05, seg);
   // Attic under the lead, with small windows rather than a dark band.
   cyl('stone', 0, 0, 17.15, 62.0, 66.5, seg);
   const nAttic = near ? 16 : 8;

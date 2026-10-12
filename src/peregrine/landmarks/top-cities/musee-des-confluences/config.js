@@ -13,5 +13,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local plaza grade y=0; rigid building, no terrain or absolute altitude baked in.',
   attribution: 'Original procedural geometry, Codriver 2026. Mapped placement © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',
-  note: '41 m published height. OSM body envelope is smaller than the architect’s 190 × 90 m overall project dimensions. Fold locations, glass frame, roof funnels, supports and plinth heights estimated from attributed photographs; no textures or external meshes. Cityscape and Full 3D world not tested yet, integration checked separately.',
+  note: '41 m published height. OSM body envelope is smaller than the architect’s 190 × 90 m overall project dimensions. Fold locations, glass frame, roof funnels, supports and plinth heights estimated from attributed photographs; no textures or external meshes. Cityscape and Full 3D world static far/near/street snapshots verified on 2026-10-11; dynamic terrain lifecycle and driving are not tested.',
 };

@@ -21,14 +21,14 @@
   "assets": {
     "near": {
       "url": "/models/buildings/nidaros-cathedral-near.glb",
-      "bytes": 1759012,
-      "triangles": 24651,
+      "bytes": 1719540,
+      "triangles": 38724,
       "drawCalls": 7,
       "bounds": {
         "min": [
           -48.85986328125,
           -3.814697322468419e-7,
-          -24.72469711303711
+          -24.744686126708984
         ],
         "max": [
           51.23622512817383,
@@ -39,14 +39,14 @@
     },
     "far": {
       "url": "/models/buildings/nidaros-cathedral-far.glb",
-      "bytes": 260000,
-      "triangles": 4262,
+      "bytes": 428344,
+      "triangles": 9228,
       "drawCalls": 7,
       "bounds": {
         "min": [
           -48.85986328125,
           -3.814697322468419e-7,
-          -24.68683433532715
+          -24.744686126708984
         ],
         "max": [
           51.23622512817383,

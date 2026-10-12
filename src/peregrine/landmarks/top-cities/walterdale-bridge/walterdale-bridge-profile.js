@@ -20,7 +20,8 @@ function bridgeRoadHeight(lng,lat,heading,a,joins,sections){
  if(Number.isFinite(heading)){const h=heading*Math.PI/180;if(Math.abs(Math.sin(h)*q.tx-Math.cos(h)*q.tz)<.8)return null;}
  return deckHeight(q.s,a);
 }
-export const PROFILE={...base,deckHeight,bridgePoint,bridgeRoadHeight};
+// The rigid arch and independent SUP retain their measured lateral frame when HD sections fit.
+export const PROFILE={...base,deckHeight,bridgePoint,bridgeRoadHeight,fittedLateral:(_s,d)=>d};
 // Independent mapped eastern path, projected into the SAME station/lateral frame.
 const path=way(451293733).map(ll=>{const p=base.bridgeLocal(...ll);return base.projectBridge(p.x,p.z);}).sort((a,b)=>a.s-b.s);
 export function pathD(s){let i=1;while(i<path.length-1&&path[i].s<s)i++;const a=path[i-1],b=path[i],t=Math.max(0,Math.min(1,(s-a.s)/(b.s-a.s)));return a.lateral+(b.lateral-a.lateral)*t;}

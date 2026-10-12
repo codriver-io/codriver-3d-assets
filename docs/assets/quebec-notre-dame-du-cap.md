@@ -60,7 +60,7 @@ sacristy roofs) and `metal` (the cross). Far merges `stoneDark` into `stone`, `w
 
 * **Everything is authored in the building frame** (x to the viewer's right in front of the portal, z toward the portal, origin on the octagon's axis) and turned by -48 deg onto
   the mapped outline when added, so the rotation is baked once; the octagon is a regular prism whose faces are the eight "facets", each rotated a multiple of 45 deg.
-* **The roof is eight faces of patch rows**: 30 rows by 10 columns per face near, merged where neighbouring patches share a colour. The value noise is stretched about 5:1 down the fall line (and the occasional flips are whole six-row runs), so the patches are streaks that follow the slope and converge on the lantern, not square cells (a test measures it: 0.71 of sample pairs 3 m apart agree along the fall line against 0.54 across it). Far paints each face as one `copperMid` polygon, the near mean, so the roof does not change tone at the level-of-detail swap (the first far roof was mostly near-black with light ribs). Gable and dormer roofs are tetrahedra that sit on a face (their fourth side is the roof itself), which costs three triangles each.
+* **The roof is eight weathered copper faces**: 12 rows and 48 narrow segments near, 6 rows and 16 segments far, merged into continuous fall-line runs. Both LODs use the same dark overall tone and vertical pattern. Copper contrast is deliberately muted; gable and dormer roofs remain attached tetrahedral shells.
 * **The portal tower is one extrusion** of a tapering trapezoid with the parabolic arch cut through it (depth 25 m, the back cap dropped); the tympanum is a separate plaster
   face 3.2 m back, so the arch has real jambs, a floor and a visible recess; doors, frame, pillars, the statue (a lathe), the arch band and the ashlar courses sit on those
   planes at 0.07-0.15 m; no two surfaces share a plane.
@@ -81,8 +81,8 @@ and pavilions stand up to 3.8 m outside the mapped outline on the left (the stai
 
 | | triangles | draws | KB |
 | --- | --- | --- | --- |
-| near | 4 389 | 11 | 195 |
-| far | 1 074 | 8 | 63 |
+| near | 4,069 | 11 | 184,788 bytes (180 KB) |
+| far | 1,778 | 7 | 86,668 bytes (85 KB) |
 
 Budgets: building near <= 60 000 / 14 / 2.5 MB, far <= 12 000 / 8 / 500 KB. `qa-metrics.mjs`: no coplanar overlaps, 0 % back-face hits on 183 outside-in rays, nothing
 below grade, far bounds equal to near.
@@ -109,7 +109,7 @@ triangles, all fixed.
 The public Terrarium DEM (zoom 15, bilinear, 2026-10-04) is a levelled terrace: 10.1 to 12.2 m under the outline (median 11.0 m, 10th to 90th percentile 10.9 to 11.2 m), 9.8 m at the
 lowest in a 62 m disc around the origin, and it falls towards the river only 60 to 90 m to the south-east (to 6-7 m at 90 m). The default disc would take its lowest sample and sink the
 basilica about 1.2 m, so `spec.terrainPad` is the outline held at its own median DEM with an 8 m feather: expect a very small cut and fill (the median is within about 0.3 m of the
-ground under the portal). No cliff, no terrace needed. Cityscape ignores the pad. **Cityscape and Full 3D world: not tested yet, integration is checked separately.**
+ground under the portal). No cliff, no terrace needed. Cityscape ignores the pad. **Initial authoring did not test app integration; current results appear below.**
 
 ## References
 
@@ -120,3 +120,11 @@ ground under the portal). No cliff, no terrace needed. Cityscape ignores the pad
 * Photos (Wikimedia Commons, compared only, never shipped): Saffron Blaze, *Madeline Du Cap* and *Basilique Notre-Dame du Cap* (CC BY-SA 3.0); Inphasis, *Notre-Dame-du-Cap Basilica @ Trois-Rivières, Quebec* (CC BY-SA 4.0);
   Tango7174, *TroisRivieres NDduCap1* (CC BY-SA 4.0).
 * DEM: Terrarium elevation tiles (zoom 15), measurement only.
+
+## Landmark QA correction — 2026-10-11
+
+QA correction: narrow continuous fall-line roof weathering in two low-contrast copper tones, shared by near and far, replacing large camouflage blocks and the uniform pale far roof. Window mullions sit 30 cm proud of glass; terrain uses the existing median footprint pad. Precise weathering locations and sculpture remain photo-based approximations.
+
+Compared against the supplied independent review and reference tile in the original contact sheet. No new external model or texture was retained.
+
+Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction.

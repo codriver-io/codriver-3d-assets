@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/de-young-museum-near.glb",
-      "bytes": 223904,
+      "bytes": 223896,
       "triangles": 2723,
       "drawCalls": 11,
       "bounds": {
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/de-young-museum-far.glb",
-      "bytes": 46280,
-      "triangles": 495,
+      "bytes": 63804,
+      "triangles": 719,
       "drawCalls": 7,
       "bounds": {
         "min": [

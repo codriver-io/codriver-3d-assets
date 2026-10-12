@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palace-of-westminster-near.glb",
-      "bytes": 1037692,
-      "triangles": 18957,
+      "bytes": 1143752,
+      "triangles": 22779,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/palace-of-westminster-far.glb",
-      "bytes": 399368,
-      "triangles": 7204,
+      "bytes": 470736,
+      "triangles": 9018,
       "drawCalls": 7,
       "bounds": {
         "min": [

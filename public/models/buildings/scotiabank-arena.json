@@ -31,12 +31,12 @@
   "assets": {
     "near": {
       "url": "/models/buildings/scotiabank-arena-near.glb",
-      "bytes": 740944,
-      "triangles": 14173,
+      "bytes": 915512,
+      "triangles": 17821,
       "drawCalls": 12,
       "bounds": {
         "min": [
-          -87.40690612792969,
+          -87.36798858642578,
           -4.1431280806136783e-7,
           -72.8226089477539
         ],
@@ -49,12 +49,12 @@
     },
     "far": {
       "url": "/models/buildings/scotiabank-arena-far.glb",
-      "bytes": 311160,
-      "triangles": 5830,
+      "bytes": 488760,
+      "triangles": 9550,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -87.3355484008789,
+          -87.36798858642578,
           -4.1431280806136783e-7,
           -73.05864715576172
         ],

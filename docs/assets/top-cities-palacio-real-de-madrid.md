@@ -42,7 +42,7 @@ Source `src/peregrine/landmarks/top-cities/palacio-real-de-madrid/`: `geometry.j
 
 Both LODs keep the square, the projecting pavilions, the open court, the hip roofs, the Prince's Gate with six columns and the crown, the balustrade, the Royal Chapel dome on the north range, and the two south galleries including the west notch. The dome is a stone drum, a lead-grey ribbed shell and a lantern, topping out at 47.6 m. A solid parapet with statue posts runs the outer eaves, and the hip eaves and pavilion caps sit behind it. Giant-order pilasters stand about 0.8 m proud on the south, east and west fronts, over a channelled granite base. The Armería galleries have round-arched openings and wider end piers. Windows are one bay at a time on the outer fronts and the court, including the south centre bay behind the giant order. Near adds pediments, pier blocks in the rustication and separate statue posts. Far keeps the dome, the parapet, the pilasters and the arches, with fewer posts. The same outer bounds are used at both LODs.
 
-Cost (exported default scenes, after the second review pass): **near 17,564 triangles / 6 draws / 961,116 bytes; far 5,865 / 6 / 327,980.** The task budget for this pass is 35,000 / 10 draws near and 10,000 / 10 far; the shared building budget is 60,000 / 14 / 2.5 MB and 12,000 / 8 / 500 KB. Untested on Tesla hardware.
+Cost (exported default scenes, after the second review pass): **near 32,288 triangles / 6 draws / 1,731,976 bytes; far 5,443 / 6 / 292,688.** The task budget for this pass is 35,000 / 10 draws near and 10,000 / 10 far; the shared building budget is 60,000 / 14 / 2.5 MB and 12,000 / 8 / 500 KB. Untested on Tesla hardware.
 
 ## Terrain (Full 3D world)
 
@@ -52,11 +52,11 @@ The palace stands on the bluff above the Manzanares. No DEM was sampled in this 
 
 - Storey heights other than the 33.2 m balustrade, the bay pitch, the crown, the roofs and the gallery heights are estimated from the photographs.
 - Hips are separate planes set behind the parapet. Pavilion caps are flat slabs under the balustrade, not hips.
-- The crown is stacked blocks, and the arch is a ten-sided polygon (six at far). The chapel dome is a faceted shell with raised ribs, not a smooth surface.
+- The crown is a stepped shield, supporters and five prongs, and the arch is a ten-sided polygon (six at far). The chapel dome is a faceted shell with raised ribs, not a smooth surface.
 - The giant order is a row of square pilasters, 0.80 m proud (0.82 m at the capital). Two bites in the mapped ring, on the north-east recess and the west front, keep the local projection at 0.52 m so the mesh stays inside the footprint.
 - Light wells 307006518, 307006516 and 307006515 stay covered.
 - Small mapped jogs (pilaster bumps, the north statue plinths) are left out. The south wall is about a metre inside its mapped line so the cornice clears the gate bites.
-- King statues are posts, not likenesses. Most of the real balustrade was cleared under Charles III; the model keeps a regular row, which matches the restored south and east fronts more than a bare cornice.
+- King statues are grouped draped silhouettes, not restored likenesses. Most of the real balustrade was cleared under Charles III; the model keeps a regular row, which matches the restored south and east fronts more than a bare cornice.
 - The Almudena, the plaza statues and both gardens are not modelled.
 
 ## Verification
@@ -76,3 +76,19 @@ Second review (`REVIEW-2.md`, recognisability 3/5): from a distance the roof rea
 Tests: `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/palacio-real-de-madrid/palacio-real-de-madrid.test.js`. The landmark test pins the ~130 m square, the 40.4 m crown, the 33.2 m balustrade, nothing below grade, the glass door set back in the Prince's Gate, the six granite columns, the lit piano nobile, the granite base, the open court, the north hip, the east gallery roof, the empty west notch, containment in the outer ring, and far versus near bounds.
 
 Placement modes: **Cityscape** (flat ground): not tested yet, integration is checked separately. **Full 3D world**: not tested yet, integration is checked separately (`terrainPad` declared; no DEM sample).
+
+## QA revision — 2026-10-11
+
+Wider giant-order shafts with bases and stepped capitals, projecting south/west window surrounds and pediments, perforated linked balustrade, draped silhouette figure groups and a crown-and-arms entrance profile. Far keeps facade bands, profiles, windows and sculptures as compact outward faces.
+
+Near 32751 triangles / 6 draws / 1758588 bytes; far 5906 triangles / 6 draws / 319300 bytes. All variants meet the building budgets; current costs supersede the older authoring/review totals above.
+
+Cityscape: **verified** for requested local static snapshots. Full 3D world: **verified** for requested local static snapshots.
+
+## Follow-up QA, 11 October 2026 (palacio-real-de-madrid)
+
+Broadened upper two-storey pilasters to 2.04 m with wider bases/capitals, recessed upper backing walls by 0.5 m, added exposed shaft side facets in far, and split the cornice into three projection stages. The perforated balustrade retains its supported posts and rails.
+
+Current exports supersede the historical cost tables above: near 33687 triangles / 6 draws / 1798572 bytes; far 6674 triangles / 6 draws / 357416 bytes. The geometry-derived depth table was regenerated; selected-model QA has no issues or dropped cycle edges.
+
+Far, near and street daytime frames were inspected in both modes; visible grade contacts remain clean. This is viewpoint-specific visual evidence; night, terrain refinement/eviction, mode toggles and Tesla hardware are not retested. Earlier statements that these modes were untested describe the historical build.

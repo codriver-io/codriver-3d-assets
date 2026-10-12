@@ -33,8 +33,8 @@ The material palette remains pale limestone, lighter trim, darker base, cool gla
 
 | LOD | Triangles | Draws | KiB | Exact bytes |
 | --- | --- | --- | --- | --- |
-| Near | 23,361 | 10 | 1,191 | 1,219,496 |
-| Far | 8,875 | 8 | 464 | 474,780 |
+| Near | 29,177 | 10 | 1,415,564 | 1382 |
+| Far | 10,041 | 8 | 479,112 | 468 |
 
 Before this round: near 14,143 / 10 / 903 KiB, far 6,818 / 8 / 473 KiB. Final-round caps are 35 k near / 9 k far triangles and 12 draws, plus the repository's 2.5 MB near / 500,000 bytes far and 8 far draws. Both exports pass. Near/far bounds match exactly, min y=0, flagpole tip=89.5 m, no removable bridgeLift, zero coplanar pairs and zero back-face hits in the deterministic sweep.
 
@@ -51,3 +51,19 @@ Compared the new exported near/far sheet `tmp/top-cities/review/palace-of-the-pa
 The setback envelopes, storey dimensions, shallow central crown, cornice profiles and pavilion heights are visual estimates, not a measured architectural survey. Sculpture, dense ornament, gardens, fountains and underground floors are omitted. The colonnade is glazing behind round shafts rather than a full carved loggia. At sharp bastion corners the entablature overhangs the mapped ring by about 2.4 m; long walls stay closer.
 
 The rigid foundation uses `terrainPad: { rings: FOOTPRINTS, datum: 'median', featherM: 18 }` for the terraced Arsenal hill. No terrain sample was taken. Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately. Catalog readiness and these inspector sheets do not certify app placement.
+
+## QA revision — 2026-10-11
+
+Deeper giant-order bases and capitals, profiled upper arches, projecting crown end piers and a connected parapet rhythm; darker neutral glazing. Far retains every window storey and colonnade bay, with facade cornice faces and compact capitals.
+
+Near 29177 triangles / 10 draws / 1415564 bytes; far 10041 triangles / 8 draws / 479112 bytes. All variants meet the building budgets; current costs supersede the older authoring/review totals above.
+
+Cityscape: **verified** for requested local static snapshots. Full 3D world: **verified** for requested local static snapshots.
+
+## Follow-up QA, 11 October 2026 (palace-of-the-parliament)
+
+Broadened three-storey giant columns to 2.4–2.6 m diameter, recessed their backing walls by 0.8 m, retained all glazed rows, and added paired-storey pilasters and projecting capital/cornice relief to the east-facing stepped crown. Secondary back/side ornament stays abbreviated to protect the far byte budget.
+
+Current exports supersede the historical cost tables above: near 31801 triangles / 10 draws / 1557260 bytes; far 10345 triangles / 8 draws / 495532 bytes. The geometry-derived depth table was regenerated; selected-model QA has no issues or dropped cycle edges.
+
+Far, near and street daytime frames were inspected in both modes; visible grade contacts remain clean. This is viewpoint-specific visual evidence; night, terrain refinement/eviction, mode toggles and Tesla hardware are not retested. Earlier statements that these modes were untested describe the historical build.

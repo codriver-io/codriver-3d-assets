@@ -23,7 +23,7 @@ export function create({ detail = 'near' } = {}) {
   const tops = new Map();
   const top = (p) => { if (!tops.has(p)) tops.set(p, P.wallTop(p)); return tops.get(p); };
 
-  // ---- the roof: the saddle surface, its edge ring (fascia lit orange, soffit under it) ----
+  // ---- the roof: the saddle surface, its edge ring (fascia neutral by day and lit orange at night, soffit under it) ----
   put('roof', P.roofSurface(N, J));
   { // eight thin darker seams along the roof's two principal directions: the eye reads the saddle, not an egg
     const height = P.shellHeight(P.roofSurface(N, J));
@@ -42,13 +42,13 @@ export function create({ detail = 'near' } = {}) {
   band('light', pt(P.BAND_R + 0.2, 9.8), pt(P.BAND_R + 0.2, 11.6), out); // the concourse ribbon window
   band('pier', pt(P.BAND_R, P.LEDGE_Y), pt(P.WALL_R0, P.LEDGE_Y), UP);
   band('concrete', pt(P.WALL_R0, P.LEDGE_Y), (p) => pt(top(p).r, top(p).y)(p), out);
-  if (near) { // dark reveal lines that follow the roof's curve across the ribbed panels
-    for (const f of [0.2, 0.4, 0.6, 0.8]) {
+  { // principal reveal lines retained in both LODs that follow the roof's curve across the ribbed panels
+    for (const f of [0.25, 0.5, 0.75]) {
       const y = (p, d) => P.LEDGE_Y + f * (top(p).y - P.LEDGE_Y) + d;
-      band('dark', (p) => pt(P.wallR(y(p, -0.22)) + 0.15, y(p, -0.22))(p), (p) => pt(P.wallR(y(p, 0.22)) + 0.15, y(p, 0.22))(p), out);
+      band('dark', (p) => pt(P.wallR(y(p, -0.10)) + 0.15, y(p, -0.10))(p), (p) => pt(P.wallR(y(p, 0.10)) + 0.15, y(p, 0.10))(p), out);
     }
   }
-  if (near) { // small windows in the tall panels of the two high ends: a row of slits and, above, a few portholes
+  { // openings retained in both LODs in the tall panels of the two high ends: a row of slits and, above, a few portholes
     const slits = [], holes = [];
     for (const pe of [0, 180]) {
       for (const d of [-56.25, -33.75, -11.25, 11.25, 33.75, 56.25]) {
@@ -144,6 +144,11 @@ export function create({ detail = 'near' } = {}) {
   const tower = (phi, a0, a1, y0, y1, rise) => {
     const s = P.slab(phi, a0, a1, -4.5, 4.5, y0, y1, rise);
     put('red', s.wall); put('roof', s.top);
+    // Dark door and louvre panels articulate the broad brick entrance towers.
+    const panel = P.slab(phi, a1 + 0.10, a1 + 0.22, -2.4, 2.4, y0 + 1, Math.min(y0 + 6, y1 - 1));
+    put('dark', panel.wall);
+    const vent = P.slab(phi, a1 + 0.10, a1 + 0.22, -2.8, 2.8, y1 - 4, y1 - 2);
+    put('dark', vent.wall);
   };
 
   // south-west end (phi 180): the west entrance. Stairs, a stadium-shaped pavilion with its dark entrance, two towers.
@@ -198,6 +203,7 @@ export function create({ detail = 'near' } = {}) {
     for (const side of [-1, 1]) tower(side * 21.5, 64.5, 69.3, P.DECK_Y, 21, 1.5);
     const v = P.slab(0, 66.2, 69.2, -6, 6, P.DECK_Y, 12, 1);
     put('red', v.wall); put('roof', v.top);
+    put('dark', P.slab(0, 69.30, 69.42, -3.8, 3.8, P.DECK_Y + 0.5, 11).wall);
     yellow(-16, 67);
   }
   return b.finish();

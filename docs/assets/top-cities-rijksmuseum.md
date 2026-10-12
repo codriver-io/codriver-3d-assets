@@ -37,11 +37,19 @@ The arch width and springing are judged from the photographs, not from a measure
 
 | LOD | Triangles | Draws | GLB |
 | --- | --- | --- | --- |
-| near | 4295 | 9 | 235 KB |
-| far | 2622 | 8 | 146 KB |
+| near | 4,699 | 9 | 262,108 bytes (256 KB) |
+| far | 3,594 | 8 | 201,964 bytes (197 KB) |
 
 Budgets are 60 000 / 14 / 2.5 MB near and 12 000 / 8 / 500 KB far.
 
 ## Verification
 
-Looked at `tmp/top-cities/shots/rijksmuseum/` against the two photographs. The first sheet showed a plinth across the arch and a stone slab filling the opening; the plinth was split at the jambs and the soffit was cut down to a ceiling. A review then found the opening filling the whole bay, a blank gable, no Museumplein roof glass, and far spires as plain pyramids. The opening is now half the bay with a continuous stone ring, and the north gable has the arched window and crow steps. A second review found the Museumplein gable was invented, the towers lacked clocks, the roof glass read white, and the brick was too red. The south front is now the arcade and continuous slate roof with a rectangular lantern, the towers carry dials and the stepped spire on both LODs, the glass is blue-grey, and the brick is the deeper brown-red. The Asian pavilion's box was outside its ring and was inscribed in way 517791046. `node --test` on `top-cities.test.js` and `rijksmuseum.test.js`, and `node scripts/asset-catalog.mjs`. Cityscape and Full 3D world were not opened.
+Looked at `tmp/top-cities/shots/rijksmuseum/` against the two photographs. The first sheet showed a plinth across the arch and a stone slab filling the opening; the plinth was split at the jambs and the soffit was cut down to a ceiling. A review then found the opening filling the whole bay, a blank gable, no Museumplein roof glass, and far spires as plain pyramids. The opening is now half the bay with a continuous stone ring, and the north gable has the arched window and crow steps. A second review found the Museumplein gable was invented, the towers lacked clocks, the roof glass read white, and the brick was too red. The south front is now the arcade and continuous slate roof with a rectangular lantern, the towers carry dials and the steep spire on both LODs, the glass is blue-grey, and the brick is the deeper brown-red. The Asian pavilion's box was outside its ring and was inscribed in way 517791046. `node --test` on `top-cities.test.js` and `rijksmuseum.test.js`, and `node scripts/asset-catalog.mjs`. At initial authoring Cityscape and Full 3D world were not opened; current results appear below.
+
+## Landmark QA correction — 2026-10-11
+
+QA correction: four-bay north tower arcade/pilaster stages and pale masonry panels, broad steep slate roofs with two dormers and a 54 m pinnacle, separated window bays in both LODs. Fine heraldic sculpture and masonry carving remain approximations; roof profiles are photograph estimates.
+
+Compared against the supplied independent review and reference tile in the original contact sheet. No new external model or texture was retained.
+
+Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction.

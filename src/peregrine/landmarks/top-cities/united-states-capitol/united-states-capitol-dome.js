@@ -33,8 +33,8 @@ function ribGeometry(angle, steps, width, rise) {
 
 export function buildDome(kit) {
   const { prism, lathe, bar, quad, put, near } = kit;
-  const seg = near ? 36 : 24;
-  const ribs = near ? 36 : 18;
+  const seg = near ? 72 : 36;
+  const ribs = 36;
   const colSides = near ? 8 : 5;
 
   // Circular podium on the centre roof, then the peristyle.
@@ -43,9 +43,9 @@ export function buildDome(kit) {
   prism('stone', DX, DZ, DOME_R + 0.15, seg, 28.25, 31.6, 0);
   prism('stone2', DX, DZ, 16.15, seg, 31.35, 42.65, 0); // wall behind the columns
   prism('stone', DX, DZ, DOME_R, seg, 42.25, 44.4, 0); // entablature
-  prism('stone', DX, DZ, 16.8, seg, 44.2, 51.65, 0); // attic the shell springs from
+  prism('stone', DX, DZ, 15.5, seg, 44.2, 47.1, 0); // attic the shell springs from
 
-  const colR = 18.55, colRad = 0.62;
+  const colR = 18.55, colRad = 0.82;
   for (let k = 0; k < PERISTYLE; k++) {
     const a = (k * 2 * Math.PI) / PERISTYLE;
     const x = DX + colR * Math.cos(a), z = DZ + colR * Math.sin(a);
@@ -64,13 +64,13 @@ export function buildDome(kit) {
       prism('stone', x, z, colRad, 4, 31.5, 42.55);
     }
     // window in the bay, on the drum, just outside the stone2 core
-    if (near || k % 2 === 0) {
+    if (true) {
       const wa = a + Math.PI / PERISTYLE;
       const wr = 16.32;
       quad('light',
         new THREE.Vector3(DX + wr * Math.cos(wa), 36.9, DZ + wr * Math.sin(wa)),
         new THREE.Vector3(Math.cos(wa), 0, Math.sin(wa)),
-        near ? 1.35 : 1.7, 6.0);
+        1.35, 6.0);
     }
   }
 
@@ -79,9 +79,9 @@ export function buildDome(kit) {
     for (let k = 0; k < PERISTYLE; k++) {
       const a = ((k + 0.5) * 2 * Math.PI) / PERISTYLE;
       quad('light',
-        new THREE.Vector3(DX + 16.97 * Math.cos(a), 47.7, DZ + 16.97 * Math.sin(a)),
+        new THREE.Vector3(DX + 15.78 * Math.cos(a), 45.7, DZ + 15.78 * Math.sin(a)),
         new THREE.Vector3(Math.cos(a), 0, Math.sin(a)),
-        1.05, 4.2);
+        1.05, 1.9);
     }
   }
 
@@ -99,15 +99,15 @@ export function buildDome(kit) {
   }
 
   lathe('stone', DX, DZ, DOME_PROFILE, seg);
-  const ribSteps = near ? 8 : 5;
+  const ribSteps = near ? 14 : 8;
   for (let k = 0; k < ribs; k++) {
-    put(ribGeometry((k * 2 * Math.PI) / ribs, ribSteps, near ? 0.55 : 0.95, near ? 0.28 : 0.42), 'stone');
+    put(ribGeometry((k * 2 * Math.PI) / ribs, ribSteps, near ? 0.72 : 0.85, near ? 0.65 : 0.75), 'stone2');
   }
   // Two mouldings splitting the shell into the three bands a driver reads.
-  prism('stone', DX, DZ, domeRadius(56.4) + 0.22, seg, 56.15, 56.7, 0);
-  prism('stone', DX, DZ, domeRadius(60.6) + 0.2, seg, 60.35, 60.85, 0);
+  lathe('stone',DX,DZ,[[domeRadius(53.1)+0.25,53.1],[domeRadius(53.45)+0.25,53.45]],seg);
+  lathe('stone',DX,DZ,[[domeRadius(59.7)+0.25,59.7],[domeRadius(60.0)+0.25,60.0]],seg);
 
-  if (near) {
+  {
     for (const y of [53.6]) {
       const r = domeRadius(y) + 0.16;
       for (let k = 0; k < ribs; k++) {
@@ -128,9 +128,11 @@ export function buildDome(kit) {
   for (let k = 0; k < THOLOS; k++) {
     const a = (k * 2 * Math.PI) / THOLOS;
     const x = DX + tholosR * Math.cos(a), z = DZ + tholosR * Math.sin(a);
-    const g = new THREE.CylinderGeometry(0.32, 0.36, 5.85, near ? 6 : 4, 1, true);
+    const g = new THREE.CylinderGeometry(0.44, 0.48, 5.85, near ? 6 : 4, 1, true);
     g.translate(x, 68.3, z);
     put(g, 'stone');
+    prism('stone',x,z,0.62,near?8:4,65.4,65.9);
+    prism('stone',x,z,0.65,near?8:4,70.65,71.15);
   }
   lathe('stone', DX, DZ, [[4.3, 72.3], [4.15, 73.1], [3.5, 74.3], [2.45, 75.35], [1.55, 76.15]], near ? 16 : 10);
 

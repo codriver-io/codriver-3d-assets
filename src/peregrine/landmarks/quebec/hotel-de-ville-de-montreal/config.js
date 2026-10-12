@@ -26,8 +26,8 @@ export const SPEC = {
 // roofs frame the pale stone). Night: the front is floodlit, windows glow. `light` is the window glass (day dark glass, night warm glow),
 // `sign` the clock dial (unshaded); `glass` is the dark ground-floor glazing. The campanile cap uses `roof`, the same patina as the mansards.
 export const PALETTES = {
-  light: { stone: '#aaa79e', stone2: '#7d7b75', roof: '#414b47', glass: '#2f3943', light: '#43515c', sign: '#ebe5d0' },
-  dark: { stone: '#85817b', stone2: '#575450', roof: '#34413b', glass: '#141a20', light: '#ffdc98', sign: '#ffeab0' },
+  light: { stone: '#aaa79e', soffit: '#88877e', stone2: '#7d7b75', roof: '#414b47', glass: '#2f3943', light: '#43515c', sign: '#ebe5d0' },
+  dark: { stone: '#85817b', soffit: '#4c4e4c', stone2: '#575450', roof: '#34413b', glass: '#141a20', light: '#ffdc98', sign: '#ffeab0' },
 };
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap: the rue Notre-Dame pavement at the foot of the front stair. The ground falls about 5 m toward the Champ-de-Mars; the public DEM does not show it, so the rear block is modelled as a terrace at +4.8 m, with a slope skirt: its walls run down to -2.5 m (the only geometry below y=0) so they stand on a ground that does fall instead of floating. No absolute altitude.',

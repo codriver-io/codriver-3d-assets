@@ -1,3 +1,4 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
@@ -37,6 +38,7 @@ function addBox(b, mat, u, y, v, su, sy, sv) {
 // A run of wall. `back`/`front` are offsets along the outward normal from the stone plane.
 function segBox(b, mat, s, y0, y1, back, front, t0 = s.t0, t1 = s.t1) {
   if (t1 - t0 < 0.08 || y1 - y0 < 0.04) return;
+  if (b.root.userData.detail === 'far') { pane(b,mat,s,y0,y1,front,t0,t1); return; }
   const depth = Math.abs(front - back);
   const mid = s.out * (front + back) / 2;
   const cy = (y0 + y1) / 2;
@@ -81,7 +83,11 @@ function quadUp(b, mat, pts) {
 function mass(b) {
   const top = H.wallTop;
   for (const [u0, u1, v0, v1] of MASSES) {
-    addBox(b, 'stone', (u0 + u1) / 2, top / 2, (v0 + v1) / 2, u1 - u0, top, v1 - v0);
+    addBox(b,'stone',(u0+u1)/2,5.25,(v0+v1)/2,u1-u0,10.5,v1-v0);
+    // Upper backing walls recede; the projecting order retains its mapped outer envelope.
+    const inset = (axis,value,out) => WALLS.some(s=>s.axis===axis && s.out===out && Math.abs(s.face-value)<0.4) ? 0.5 : 0;
+    const a=u0+inset('u',u0,-1),c=u1-inset('u',u1,1),d=v0+inset('v',v0,-1),e=v1-inset('v',v1,1);
+    addBox(b,'stone',(a+c)/2,(10.5+top)/2,(d+e)/2,c-a,top-10.5,e-d);
   }
   const g = GATE;
   // Lintel and the wall above the arch, from the portal back to the stone face.
@@ -95,8 +101,11 @@ function mass(b) {
 // the two thin rails so the hip eaves stay hidden behind it.
 const SKIN = [
   ['trim', H.string0, H.string1, -0.04, 0.40],
-  ['trim', H.cornice0, H.cornice1, -0.08, 0.68],
-  ['trim', 31.70, 33.15, 0.06, 0.74],
+  ['trim', H.cornice0, H.cornice0+0.55, -0.08, 0.38],
+  ['trim', H.cornice0+0.55, H.cornice1-0.35, -0.08, 0.54],
+  ['trim', H.cornice1-0.35, H.cornice1, -0.08, 0.78],
+  ['trim', 31.70, 32.05, 0.06, 0.74],
+  ['trim', 32.85, 33.2, 0.06, 0.74],
 ];
 
 function skinRun(b, s, mat, y0, y1, back, front) {
@@ -136,6 +145,8 @@ function skins(b, near) {
     if (!outer.has(s)) skinRun(b, s, 'granite', 0, H.baseTop, -0.06, skinFront(s, 0.28));
     for (const [mat, y0, y1, back, front] of SKIN) skinRun(b, s, mat, y0, y1, back, skinFront(s, front));
     if (near) skinRun(b, s, 'trim', 19.35, 19.62, 0.10, 0.28);
+    // Perforated balustrade joins the sculptures; rails are supported at every bay.
+    for (let t=s.t0+0.35;t<s.t1-0.2;t+=1.25) segBox(b,'trim',s,32.0,32.95,0.08,Math.min(skinFront(s,0.70),localCap(s,t)),t-0.15,t+0.15);
   }
 }
 
@@ -161,9 +172,18 @@ function pilasters(b, near) {
     if (!ORDER_IDS.has(s.id)) continue;
     for (const t of piersOf(s)) {
       const cap = localCap(s, t);
+      if (!near) {
+        const f=s.face+s.out*Math.min(0.80,cap),back=s.face-s.out*0.45;
+        for (const edge of [t-1.02,t+1.02]) {
+          const pts=s.axis==='v'?[[edge,10.55,back],[edge,10.55,f],[edge,28.6,f],[edge,28.6,back]]:[[back,10.55,edge],[f,10.55,edge],[f,28.6,edge],[back,28.6,edge]];
+          quad(b,'stone',pts);quad(b,'stone',pts.slice().reverse());
+        }
+      }
       // 0.80–0.82 m proud: the ring only clears about 0.87 m on the east and west pavilions.
-      segBox(b, 'stone', s, 10.55, near ? 28.4 : 29.2, 0.08, Math.min(0.80, cap), t - 0.48, t + 0.48);
-      if (near) segBox(b, 'trim', s, 28.15, 29.5, 0.02, Math.min(0.82, cap), t - 0.68, t + 0.68);
+      segBox(b, 'stone', s, 10.55, 28.6, 0.08, Math.min(0.80, cap), t - 1.02, t + 1.02);
+      segBox(b,'stone',s,10.55,11.45,0.02,Math.min(0.82,cap),t-1.17,t+1.17);
+      segBox(b,'stone',s,28.15,29.65,0.02,Math.min(0.84,cap),t-1.24,t+1.24);
+      if (near) segBox(b,'stone',s,28.6,29.05,0.02,Math.min(0.86,cap),t-1.32,t+1.32);
     }
   }
 }
@@ -237,7 +257,7 @@ function pane(b, mat, s, y0, y1, front, t0, t1) {
 
 function windows(b, near) {
   const fronts = [...WALLS, ...COURT_WALLS];
-  const pedimentWalls = new Set(['s-wl', 's-wr', 's-sw', 's-se', 's-ct', 'e-w', 'e-ne', 'e-se']);
+  const pedimentWalls = new Set(['s-wl', 's-wr', 's-sw', 's-se', 's-ct', 'e-w', 'e-ne', 'e-se', 'w-w', 'w-nw', 'w-sw']);
   for (const s of fronts) {
     const bays = windowBays(s);
     for (const bay of bays) {
@@ -247,25 +267,44 @@ function windows(b, near) {
         const back = row.base ? 0.42 : 0.08;
         const front = Math.min(row.base ? 0.68 : back + 0.12, localCap(s, bay.t));
         const t0 = bay.t - row.w / 2, t1 = bay.t + row.w / 2;
+        if (row.y0 > 12 && row.y0 < 26 && ORDER_IDS.has(s.id)) {
+          const proud = Math.min(0.62,localCap(s,bay.t));
+          segBox(b,'trim',s,row.y0-0.35,row.y0+0.05,0.02,proud,t0-0.25,t1+0.25);
+          segBox(b,'trim',s,row.y0,row.y1+0.12,0.02,proud,t0-0.22,t0);
+          segBox(b,'trim',s,row.y0,row.y1+0.12,0.02,proud,t1,t1+0.22);
+        }
         if (near) segBox(b, row.mat, s, row.y0, row.y1, back, front, t0, t1);
         else pane(b, row.mat, s, row.y0, row.y1, front, t0, t1);
       }
     }
-    if (!near || !pedimentWalls.has(s.id)) continue;
+    if (!pedimentWalls.has(s.id)) continue;
     bays.forEach((bay, i) => {
-      if (!s.gate && i % 2) return;
-      if (bay.rows.every((row) => row.y0 < 12) || bay.rows[0].w < 2.2) return;
-      pediment(b, s, bay.t, 17.82, Math.min(3.15, bay.rows[0].w + 0.4));
+      const orderRow = bay.rows.find(row => row.y0 > 12 && row.y0 < 18);
+      if (!orderRow || orderRow.w < 2.2) return;
+      pediment(b, s, bay.t, 17.82, Math.min(3.15, orderRow.w + 0.4));
     });
   }
 }
 
 function pediment(b, s, t, y, w) {
-  const h = 0.55;
-  const back = 0.18, front = 0.36;
+  const h = 0.95;
+  const back = 0.1, front = Math.min(0.68,localCap(s,t),localCap(s,t-w/2),localCap(s,t+w/2));
   const mid = s.out * (front + back) / 2;
   const depth = front - back;
   const y0 = y, y1 = y + h;
+  // Close the triangular outward face; the profiled sides alone left an empty pediment.
+  const plane = s.face + s.out * front;
+  const pts = s.axis === 'v'
+    ? [[t-w/2,y0,plane],[t+w/2,y0,plane],[t,y1,plane]]
+    : [[plane,y0,t-w/2],[plane,y0,t+w/2],[plane,y1,t]];
+  const wp = pts.map(p=>world(...p));
+  const n = new THREE.Vector3(...wp[1]).sub(new THREE.Vector3(...wp[0]))
+    .cross(new THREE.Vector3(...wp[2]).sub(new THREE.Vector3(...wp[0])));
+  const outward = world(s.axis === 'u' ? s.out : 0,0,s.axis === 'v' ? s.out : 0);
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(wp.flat(),3));
+  g.setIndex(n.dot(new THREE.Vector3(...outward)) >= 0 ? [0,1,2] : [0,2,1]);
+  g.computeVertexNormals(); b.put(g,'trim');
   if (s.axis === 'v') {
     const v0 = s.face + mid - depth / 2, v1 = s.face + mid + depth / 2;
     const tri = (v) => [[t - w / 2, y0, v], [t + w / 2, y0, v], [t, y1, v]];
@@ -282,7 +321,7 @@ function pediment(b, s, t, y, w) {
 }
 
 function statues(b, near) {
-  const gap = near ? 7.8 : 14.5;
+  const gap = 7.8;
   for (const s of WALLS) {
     if (s.gate) continue;
     for (let t = s.t0 + gap * 0.55; t < s.t1 - 1.1; t += gap) statue(b, s, t, near);
@@ -296,23 +335,30 @@ function statue(b, s, t, near) {
   const cap = localCap(s, t);
   const stand = (y0, y1, back, front, half) => segBox(b, 'trim', s, y0, y1, back, Math.min(front, cap), t - half, t + half);
   // The foot is buried in the parapet so the two trim faces do not flicker.
-  stand(33.02, 34.15, 0.16, 0.80, near ? 0.52 : 0.62);
-  stand(34.0, H.statueTop, 0.26, 0.68, near ? 0.30 : 0.40);
+  stand(33.05,34.0,0.06,0.78,0.56);
+  stand(33.85,35.65,0.08,0.64,0.38); // draped body
+  stand(35.1,35.65,0.10,0.68,0.65); // shoulders / arms
+  stand(35.55,H.statueTop,0.14,0.56,0.24); // head
+
 }
 
 function crown(b, near) {
   const s = WALLS.find((w) => w.gate);
   // Arms and crown over the Prince's Gate. The finial stays at 40.4; the base is
   // wide enough to read with the balustrade from the plaza.
-  segBox(b, 'trim', s, H.bal1, H.bal1 + 1.15, 0.10, 0.70, -5.2, 5.2);
-  segBox(b, 'trim', s, H.bal1 + 0.9, H.bal1 + 3.4, 0.16, 0.62, -3.4, 3.4);
-  segBox(b, 'trim', s, H.bal1 + 3.1, H.bal1 + 5.6, 0.22, 0.56, -2.0, 2.0);
-  segBox(b, 'trim', s, H.crownTop - 0.85, H.crownTop, 0.28, 0.48, -0.35, 0.35);
-  if (near) {
-    segBox(b, 'trim', s, H.crownTop - 0.55, H.crownTop, 0.34, 0.44, -0.08, 0.08);
-    segBox(b, 'trim', s, H.bal1 + 0.15, H.bal1 + 2.6, 0.20, 0.58, -6.3, -4.6);
-    segBox(b, 'trim', s, H.bal1 + 0.15, H.bal1 + 2.6, 0.20, 0.58, 4.6, 6.3);
+  segBox(b,'trim',s,H.bal1,H.bal1+0.7,0.02,0.70,-5.2,5.2);
+  // Heraldic shield, flanking supporters and a five-point royal crown.
+  segBox(b,'trim',s,H.bal1+0.6,H.bal1+3.5,0.05,0.60,-1.65,1.65);
+  for (const side of [-1,1]) {
+    segBox(b,'trim',s,H.bal1+0.5,H.bal1+2.8,0.05,0.58,side*3.1-0.75,side*3.1+0.75);
+    segBox(b,'trim',s,H.bal1+2.35,H.bal1+3.3,0.05,0.56,side*2.6-0.55,side*2.6+0.55);
   }
+  segBox(b,'trim',s,H.bal1+3.25,H.bal1+4.0,0.05,0.56,-2.5,2.5);
+  for (let i=-2;i<=2;i++) {
+    const top=H.crownTop-Math.abs(i)*0.65;
+    segBox(b,'trim',s,H.bal1+3.8,top,0.05,0.5,i*0.9-0.21,i*0.9+0.21);
+  }
+
 }
 
 function arch(b, near) {
@@ -543,5 +589,7 @@ export function create({ detail = 'near' } = {}) {
   chapel(b, near);
   wings(b, near);
   courtFloor(b);
-  return b.finish();
+  const model = b.finish();
+  model.traverse(o=>{if(o.isMesh){const old=o.geometry;o.geometry=mergeVertices(old,1e-4);old.dispose();}});
+  return model;
 }

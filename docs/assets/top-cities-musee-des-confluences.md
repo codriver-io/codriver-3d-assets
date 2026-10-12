@@ -43,8 +43,8 @@ Near has nine materials: `metal`, `facet`, `seam`, `soffit`, `concrete`, `glass`
 
 | Export | Triangles | Draws | Size |
 | --- | ---: | ---: | ---: |
-| Near | 18,022 | 9 | 1,274 KiB (1,304,340 bytes) |
-| Far | 3,491 | 6 | 224 KiB (229,756 bytes) |
+| Near | 17,468 | 9 | 1214 KiB (1,243,580 bytes) |
+| Far | 3,443 | 6 | 208 KiB (212,796 bytes) |
 
 Measured by `pnpm build:top-cities-landmarks musee-des-confluences --no-check`; exact bytes and bounds are in `public/models/buildings/musee-des-confluences.json`. Far differs from near bounds by under 0.06 m per axis. No texture, decoder, compression dependency or removable bridgeLift survives export.
 
@@ -64,7 +64,7 @@ Initial targeted geometry QA (`tmp/top-cities/musee-des-confluences/qa-metrics.j
 
 The continuous real folded skins are simplified to planar/ruled facets, the roof is flatter, and the funnel shoulders approximated by six unequal profiles. The crystal is opaque and its glass cage is approximate. The underside wave geometry, plinth/core, column positions, roof vents, glazing apertures and steps are photo estimates, not construction drawings. The roof’s smaller technical openings, panoramic glazing beyond the modeled strip, interior vortex, basin, landscaping, quay walls, boats, neighbouring bridge and street furniture are omitted. No Tesla hardware measurements were performed. Independent visual review is pending.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The building remains rigid; an explicit median terrain pad follows the four owned rings, with a plaza reference and 4 m feather, rather than flattening a wide disc across the Rhône or Saône. Validate bank edges, entrance datum and changing DEM resolution in the app; no terrain or runtime integration claims follow from these inspector views. No shared source file or runtime bundle was edited, and nothing was published.
+Cityscape: **verified** for local static snapshots. Full 3D world: **verified** for local static snapshots (2026-10-11); dynamic integration gates remain not tested. The building remains rigid; an explicit median terrain pad follows the four owned rings, with a plaza reference and 4 m feather, rather than flattening a wide disc across the Rhône or Saône. Validate bank edges, entrance datum and changing DEM resolution in the app; no terrain or runtime integration claims follow from these inspector views. No shared source file or runtime bundle was edited, and nothing was published.
 
 ## Independent-review fix pass (2026-10-05)
 
@@ -74,7 +74,7 @@ The initial independent verdict was FIX, recognition 3/5, citing the box-like cl
 | --- | --- | --- |
 | Cloud envelope | Long almost-vertical side bands and rectangular southern ends | Roof outline inset 13%, alternating unequal diagonal planar folds, connected triangular soffit planes, and 28.4 m underside at the thin 31 m cantilever tips |
 | Roof funnels | Narrow six-sided pyramid-like isolated bumps | Broad asymmetric rounded-rectangle bases (main about 33 × 42 m), six progressively narrowing shoulder/neck profiles, unequal crown heights and lean up to 5 m east / 6 m north |
-| Far fidelity | 1,642 triangles, coarse crystal cage and abrupt funnels | 3,491 triangles, eight-division crystal cage, sixteen-section funnels with all six silhouette profiles, and exactly the same large cloud planes as near |
+| Far fidelity | 1,642 triangles, coarse crystal cage and abrupt funnels | 3,443 triangles, eight-division crystal cage, sixteen-section funnels with all six silhouette profiles, and exactly the same large cloud planes as near |
 | Surface closure | Some flared supports lacked top closure; radial orientation guesses could invert leaning funnel sides | Closed support ends, edge-derived funnel normals and corrected southern canopy wall orientation |
 
 The first fix sheet established the improved folds but exposed overly conical funnel shoulders. The second changed the profiles to rounded rectangles with more gradual, unequal shoulders. QA briefly flagged 2.1% back-face hits; closure and winding corrections within that iteration reduced this to 1.0%, with zero coplanar overlaps and no flagged artifacts.
@@ -86,3 +86,11 @@ node .agents/skills/build-3d-city/scripts/qa-sheet.mjs --ids musee-des-confluenc
 ```
 
 Final export costs are in the table above. `fix-metrics.json` records clean budgets, 1.0% back-face hits, zero coplanar overlap and no removable attributes. All eight museum tests pass, including new raycast checks for sloping cloud planes, taper and broad funnel shoulders in both LODs; the combined focused suite passes 126/126. The catalog passes at 164 entries / 310 GLB variants. Re-review remains pending; Cityscape and Full 3D world retain their separate not-tested status.
+
+## QA revision — 2026-10-11
+
+Broad asymmetric offset roof shoulders with recessed openings, continuous silver cantilever folds with fewer tonal creases, and a varied north glass envelope and diagrid. Roof apertures have opaque recessed floors; interiors and transparent glass remain approximate.
+
+Near 17468 triangles / 9 draws / 1243580 bytes; far 3443 triangles / 6 draws / 212796 bytes. All variants meet the building budgets; current costs supersede the older authoring/review totals above.
+
+Cityscape: **verified** for requested local static snapshots. Full 3D world: **verified** for requested local static snapshots.

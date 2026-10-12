@@ -1,7 +1,8 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
 import {
-  Mesh, NU, NV, STRIP, BAY, ROW, uAt, vAt, HALF_W, HALF_D, Y0, Y1, ROOF_Y, TOP_K, PODIUM_TOP_K,
+  Mesh, NU, NV, STRIP, BAY, ROW, uAt, vAt, HALF_W, HALF_D, Y0, Y1, ROOF_Y, TOP_K, PODIUM_TOP_K, FIRST_RES,
   recessions, occupancy, levelGroups, hash01,
 } from './telus-sky-parts.js';
 
@@ -26,12 +27,20 @@ const aurora = (c, k, face) => Math.sin(c * 0.9 + k * 0.21 + Math.sin(k * 0.07 +
 // A run of cells along one wall: a glass wall with its slab-edge band, glow strip and lit panes, or (a narrow notch) a plain dark side.
 function wallRun(M, o, axis, side, plane, s0, s1, y0, y1, k, lenCells, group) {
   const put = (m, p, a, b, ya, yb) => (axis === 'v' ? m.wallV(p, a, b, ya, yb, side) : m.wallU(p, a, b, ya, yb, side));
-  if (lenCells < 3) { put(M.frame, plane, s0, s1, y0, y1); return; }
+  if (k > 0 && lenCells < 2) { put(M.frame, plane, s0, s1, y0, y1); return; }
   put(M.glass, plane, s0, s1, y0, y1);
   if (k === 0) return; // the lobby is plain glass
-  const band = o.near ? 0.95 : 1.7;
-  put(M.frame, plane + side * PROUD, s0, s1, y1 - band, y1);
-  if (axis === 'v' && k >= 3 && aurora(group, k, side > 0 ? 1 : 0)) put(M.glow, plane + side * GLOW_OUT, s0 + 0.3, s1 - 0.3, y1 - band + 0.1, y1 - 0.1);
+  const residential = k >= FIRST_RES - 1;
+  const band = residential ? 0.38 : 0.8;
+  const frame = residential ? M.ledge : M.frame;
+  put(frame, plane + side * PROUD, s0, s1, y1 - band, y1);
+  if (!o.near && !residential && y1 - y0 > 5) put(frame, plane + side * PROUD, s0, s1, y0 + 4.1 - band, y0 + 4.1);
+  if (axis === 'v' && !residential && k >= 3 && aurora(group, k, side > 0 ? 1 : 0)) put(M.glow, plane + side * GLOW_OUT, s0 + 0.3, s1 - 0.3, y1 - band + 0.1, y1 - 0.1);
+  if (residential) {
+    // White slab and jamb frames meet at every cell corner, connected to its floor plate.
+    for (const [a, b] of (o.near ? [[s0, s0 + 0.24], [s1 - 0.24, s1]] : [[s0, s0 + 0.24]])) put(frame, plane + side * PROUD, a, b, y0, y1 - band);
+    if (o.near) put(frame, plane + side * PROUD, s0, s1, y0, y0 + 0.24);
+  }
   if (!o.near) return;
   // dark vertical frames at both ends of the run (adjacent runs make one 0.5 m frame) and a 0.2 m mullion between window modules of about
   // 3.6 m, all under the band; a share of the modules are lit at night as 0.1 m proud panes between the mullions
@@ -61,13 +70,28 @@ function levelFaces(M, o, group, prev, next) {
     }
     return list;
   };
-  const colOf = (a) => (a < 0 ? -1 : Math.floor(a / BAY)), rowOf = (b) => Math.floor(b / ROW);
+  const officeFar = !o.near && k1 < FIRST_RES - 1;
+  const colOf = a => officeFar ? 0 : (a < 0 ? -1 : Math.floor(a / BAY));
+  const rowOf = b => officeFar ? 0 : Math.floor(b / ROW);
   for (let b = 0; b < NV; b++) {
     for (const r of collect(-STRIP, NU, (a) => here(a, b) && !here(a, b - 1), colOf)) wallRun(M, o, 'v', -1, vAt(b), uAt(r.start), uAt(r.end + 1), y0, y1, k1, r.end - r.start + 1, r.g);
     for (const r of collect(-STRIP, NU, (a) => here(a, b) && !here(a, b + 1), colOf)) wallRun(M, o, 'v', 1, vAt(b + 1), uAt(r.start), uAt(r.end + 1), y0, y1, k1, r.end - r.start + 1, r.g);
     // terraces (the cell is covered by nothing above) and soffits (nothing below), merged along u
-    for (const r of collect(-STRIP, NU, (a) => here(a, b) && !(up && up(a, b)), () => 0)) M.ledge.flat(uAt(r.start), uAt(r.end + 1), vAt(b), vAt(b + 1), y1, 1);
+    if (o.near) for (const r of collect(-STRIP, NU, (a) => here(a, b) && !(up && up(a, b)), () => 0)) M.ledge.flat(uAt(r.start), uAt(r.end + 1), vAt(b), vAt(b + 1), y1, 1);
     if (prev) for (const r of collect(-STRIP, NU, (a) => here(a, b) && !down(a, b), () => 0)) M.frame.flat(uAt(r.start), uAt(r.end + 1), vAt(b), vAt(b + 1), y0, -1);
+  }
+  if (!o.near) {
+    // Greedy planar rectangles keep every terrace outline while avoiding one quad per grid row.
+    const used = new Set();
+    const terrace = (a, b) => here(a, b) && !(up && up(a, b)) && !used.has(`${a},${b}`);
+    for (let b = 0; b < NV; b++) for (let a = -STRIP; a < NU; a++) {
+      if (!terrace(a, b)) continue;
+      let a1 = a + 1, b1 = b + 1;
+      while (a1 < NU && terrace(a1, b)) a1++;
+      while (b1 < NV && Array.from({ length: a1 - a }, (_, i) => terrace(a + i, b1)).every(Boolean)) b1++;
+      for (let bb = b; bb < b1; bb++) for (let aa = a; aa < a1; aa++) used.add(`${aa},${bb}`);
+      M.ledge.flat(uAt(a), uAt(a1), vAt(b), vAt(b1), y1, 1);
+    }
   }
   for (let a = -STRIP; a < NU; a++) {
     for (const r of collect(0, NV, (b) => here(a, b) && !here(a - 1, b), rowOf)) wallRun(M, o, 'u', -1, uAt(a), vAt(r.start), vAt(r.end + 1), y0, y1, k1, r.end - r.start + 1, r.g);
@@ -119,7 +143,7 @@ export function create({ detail = 'near' } = {}) {
   base(M, o);
   // the roof plant, on the highest (east) end of the roof, well inside the top plate
   M.metal.box(14.5, 21.5, ROOF_Y, SPEC.height, -1.0, 9.5, 'nswet');
-  for (const [name, m] of Object.entries(M)) if (m.count) b.put(m.geometry(), name);
+  for (const [name, m] of Object.entries(M)) if (m.count) b.put(near ? m.geometry() : mergeVertices(m.geometry(), 1e-5), name);
   const root = b.finish();
   root.traverse((n) => { if (n.isMesh) n.geometry.deleteAttribute('bridgeLift'); }); // a building carries no road contract
   root.userData.elevationDatum = 'Y=0 is local flat-map grade, not sea level; the street-level lobby floor stands on it.';

@@ -14,7 +14,7 @@ import { SPEC } from './config.js';
 import { rectFaces, faceToward, facePoint, hash4 } from './toronto-dominion-centre-kit.js';
 import { GRID } from './toronto-dominion-centre-site.js';
 
-const SPANDREL = 0.92, GLASS_Q = -0.30, COLUMN = 0.9, RECESS = 3.05, GRID_COL = 9.144;
+const SPANDREL = 0.92, GLASS_Q = -0.70, COLUMN = 0.9, RECESS = 3.05, GRID_COL = 9.144;
 const LOGO = 4.6;
 
 /** Sections of the shell from the lobby roof up: glazed floors, windowless bands, the crown. */
@@ -37,9 +37,9 @@ export function buildTower(k, t, near) {
   const inner = { ...t, L: t.L - 2 * -GLASS_Q, W: t.W - 2 * -GLASS_Q };
   const solid = { ...t, L: t.L - 0.04, W: t.W - 0.04 };
 
-  // Shell: bronze glass recessed 0.3 m behind the steel, windowless steel bands.
+  // Shell: bronze glass recessed 0.7 m behind the steel, windowless steel bands.
   for (const s of sections) {
-    if (s.kind === 'glass') rectBox('glass', inner, 0, (s.y0 + s.y1) / 2, 0, inner.L, s.y1 - s.y0, inner.W);
+    if (s.kind === 'glass') for (const face of rectFaces(inner)) panel('glass', face, 0, face.len, s.y0, s.y1);
     else rectBox('steel', solid, 0, (s.y0 + s.y1) / 2, 0, solid.L, s.y1 - s.y0, solid.W);
   }
   rectBox('steel', solid, 0, top - 0.3, 0, solid.L, 0.6, solid.W); // roof cap
@@ -66,12 +66,19 @@ export function buildTower(k, t, near) {
           let b1 = bay; while (b1 + 1 < bays && lit[floor][b1 + 1]) b1++;
           let f1 = floor; while (f1 + 1 < s.floors && lit[f1 + 1].slice(bay, b1 + 1).every(Boolean)) f1++;
           for (let fl = floor; fl <= f1; fl++) for (let bb = bay; bb <= b1; bb++) lit[fl][bb] = false;
-          panel('glow', face, bay * pitch + 0.09, (b1 + 1) * pitch - 0.09, s.y0 + floor * f + SPANDREL, s.y0 + f1 * f + f, GLASS_Q + 0.07);
+          panel('glow', face, bay * pitch + 0.09, (b1 + 1) * pitch - 0.09, s.y0 + floor * f + SPANDREL, s.y0 + f1 * f + f, GLASS_Q + 0.15);
         }
       }
     });
   } else {
-    // Far: no per-floor detail (it is sub-pixel at range and would shimmer).
+    // Far keeps every black spandrel; only the steel mullions use the coarser structural grid.
+    for (const face of faces) for (const s of sections) {
+      if (s.kind !== 'glass') continue;
+      for (let floor = 0; floor < s.floors; floor++) {
+        const y = s.y0 + floor * f;
+        panel('steel', face, 0, face.len, y, y + SPANDREL, -0.02);
+      }
+    }
   }
 
   // Mullions: black I-beams every module on every face; a bigger column at each corner.
@@ -96,7 +103,7 @@ export function buildTower(k, t, near) {
       for (const face of faces) {
         for (let i = 0; i < count; i++) {
           const y = s.y0 + 0.3 + i * pitch;
-          slab('glass', face, 0.6, face.len - 0.6, y, y + 0.42, -0.02, 0.05, 'fd');
+          slab('louver', face, 0.6, face.len - 0.6, y, y + 0.42, -0.02, 0.05, 'fd');
         }
       }
     }
@@ -104,7 +111,7 @@ export function buildTower(k, t, near) {
 
   // Lobby: glazing set back one colonnade deep, a transfer beam on top, columns on the 9.14 m grid.
   const lobbyGlass = { ...t, L: t.L - 2 * RECESS, W: t.W - 2 * RECESS };
-  rectBox('glow', lobbyGlass, 0, (p + t.lobby) / 2, 0, lobbyGlass.L, t.lobby - p, lobbyGlass.W);
+  for (const face of rectFaces(lobbyGlass)) panel('lobby', face, 0, face.len, p, t.lobby);
   faces.forEach((face, fi) => {
     slab('steel', face, 0, face.len, t.lobby - 1.1, t.lobby, -0.7, 0, 'fd');
     const bays = Math.max(1, Math.round(face.len / GRID_COL)), pitch = face.len / bays;
@@ -126,8 +133,8 @@ export function buildTower(k, t, near) {
     const dir = { north: [-GRID.across[0], -GRID.across[1]], south: GRID.across, east: GRID.along, west: [-GRID.along[0], -GRID.along[1]] }[logo.face];
     const face = faceToward(faces, dir), y1 = top - t.crown - 1.6, y0 = y1 - LOGO;
     const s0 = Math.min(face.len - LOGO - 3, Math.max(3, logo.at * face.len - LOGO / 2));
-    panel('sign', face, s0, s0 + LOGO, y0, y1, 0.10);
-    if (near) tdLetters(k, face, s0, y0, 0.14);
+    panel('sign', face, s0, s0 + LOGO, y0, y1, 0.30);
+    if (near) tdLetters(k, face, s0, y0, 0.42);
   }
 }
 

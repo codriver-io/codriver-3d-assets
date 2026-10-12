@@ -60,7 +60,7 @@ export function createOratoire({ detail = 'near' } = {}) {
       if (lawn && h < .26) continue; // fully buried in the 0.2 m lawn strip
       // Every tread has solid support to the local flat ground, no floating sheet. Over the
       // lawn strip the buried underside (shared with the lawn's own) is not emitted.
-      cube('trim', u, (h - .35) / 2, start + (end - start) * (i + .5) / n, width, h + .35, (end - start) / n + .015, lawn ? ['y-'] : []);
+      cube('stone', u, (h - .35) / 2, start + (end - start) * (i + .5) / n, width, h + .35, (end - start) / n + .015, lawn ? ['y-'] : []);
     }
     for (const side of [-1, 1]) b.bar('stone', [u + side * width / 2, y0 + .8, start], [u + side * width / 2, y1 + .8, end], .65, .65, 0, false, 0);
   }
@@ -70,8 +70,12 @@ export function createOratoire({ detail = 'near' } = {}) {
   // approaches within 2.4 m of the historic footprint. Keep 4+ m for pavement.
   slab(ORATOIRE_FOOTPRINT.filter(([, v]) => v > -65).map(([u,v]) => [v > 30 ? Math.max(-28,u) : u, v]), -.4, ORATOIRE.floor);
   const crypt = site.ways.find(w => w.id === 132499526).points.map(p => oratoireLocal(...p));
-  slab(crypt, -.4, 15, 'stone', { topCap: false }); slab(crypt, 15, 15.55, 'trim', { bottomCap: false });
+  slab(crypt, -.4, 15, 'stone', { topCap: false }); slab(crypt, 15, 15.55, 'stone', { bottomCap: false });
   for (const u of [-10, -3.5, 3, 9.5, 16]) arch(u, -115.55, 3, 3, 9, Math.PI);
+  for (const side of [-1,1]) for (const v of [-48,-33,-18,0,18,30]) {
+    const wall = side < 0 ? -28 : 29;
+    arch(wall + side * 0.25,v,3,3.2,8,side*Math.PI/2);
+  }
   // Pedestrian axis only: lawns/retaining terraces taper back to the map at the
   // lower stair. No new terrain or automobile surface is registered.
   slab([[-19,-200],[25,-200],[29,-120],[-23,-120]], -.35, .2, 'earth');
@@ -79,7 +83,7 @@ export function createOratoire({ detail = 'near' } = {}) {
   for (let i=0;i<runs.length;i++) {
     const [start,end,low,high,count] = runs[i]; stairs(3,start,end,low,high,9,count,true);
     const next = runs[i+1]?.[0] ?? -115.3;
-    cube('trim',3,(high-.35)/2,(end+next)/2,9,high+.35,next-end,next<-119.9?['y-']:[]);
+    cube('stone',3,(high-.35)/2,(end+next)/2,9,high+.35,next-end,next<-119.9?['y-']:[]);
   }
   // Continuous supported embankments, with landings at the same levels as the
   // stairs. Their narrow lateral extent avoids the west parking access.
@@ -91,10 +95,10 @@ export function createOratoire({ detail = 'near' } = {}) {
   }
   // Rounded crypt ends and twin side flights lead to the main upper stair.
   for (const u of [-24,29]) stairs(u,-121,-93,8,15.55,5,42);
-  box('trim',2,7.6,-90,29,15.9,9);
+  box('stone',2,7.6,-90,29,15.9,9);
   // Treads and the entrance landing finish 2.5 cm over the foundation top (y 24): no shared plane.
   stairs(2,-88.9,-61.4,15.55,24.025,17,61);
-  box('trim',1.5,23.625,-59.1,37,.8,5);
+  box('stone',1.5,23.625,-59.1,37,.8,5);
   // Basilica: lower side aisles, tall nave, transepts, and east apse.
   box('stone',1,34,-29,41,20,56);
   box('stone',0,40,-18,37,32,76);
@@ -112,22 +116,30 @@ export function createOratoire({ detail = 'near' } = {}) {
   // entablature and its pediment crowns the attic, as in the front elevation.
   const columns = [-13, -8, -3, 3, 8, 13], shaftSides = near ? 16 : 8;
   for (const u of columns) {
-    if (near) cylinder('trim', u, -59.2, 24, 25, 1.05, 1.05, 16);
-    cylinder('stone', u, -59.2, near ? 25 : 24, 41.2, 1, .78, shaftSides);
-    if (near) cylinder('trim', u, -59.2, 41, 42, 1.2, 1.2, 16);
-    box('trim', u, 42.25, -59.2, 2.6, .5, 2.6);
+    if (near) cylinder('trim', u, -59.8, 24, 25, 1.05, 1.05, 16);
+    cylinder('stone', u, -59.8, near ? 25 : 24, 41.2, 1, .78, shaftSides);
+    if (near) cylinder('trim', u, -59.8, 41, 42, 1.2, 1.2, 16);
+    box('trim', u, 42.25, -59.8, 2.6, .5, 2.6);
   }
   for (const u of [-17.25, 17.25]) box('stone', u, 34, -58.75, 2.5, 20, 5.5);
-  box('trim', 0, 43.5, -59, 36.4, 2, 5.6);
+  box('trim', 0, 43.5, -59.3, 36.4, 2, 6.2);
   // Attic over the entablature, flush with the nave sides at its feet; arch and tympanum are
   // slightly proud so no two materials share a plane.
-  box('stone', 0, 50.1, -57.6, 28, 12.9, 2);
-  arch(0, -58.7, 45, 16, 10, Math.PI);
-  for (const u of [-5, 0, 5]) box('trim', u, 49, -58.85, .6, 8, .35);
+  // A real recessed opening: the front masonry is cut away, and glazing lies 1.1 m back.
+  const attic = new THREE.Shape([[-14,43.65],[14,43.65],[14,56.55],[-14,56.55]].map(p => new THREE.Vector2(...p)));
+  const hole = new THREE.Path(); hole.moveTo(-8,45); hole.lineTo(8,45); hole.lineTo(8,47);
+  hole.absarc(0,47,8,0,Math.PI,false); hole.lineTo(-8,45); attic.holes.push(hole);
+  const atticG = new THREE.ExtrudeGeometry(attic,{depth:2,bevelEnabled:false,curveSegments:near?12:6});
+  atticG.translate(0,0,-58.6); put(atticG,'stone');
+  arch(0, -57.5, 45, 16, 10, Math.PI);
+  for (const u of [-5, 0, 5]) box('trim', u, 49, -58.05, .6, 8, .3);
   pediment(0, -58.8, 30, 56.5, 61.7, 2.2);
-  if (near) pediment(0, -58.83, 24, 57.2, 60.6, .06, 'stone');
+  if (near) {
+    pediment(0, -59.05, 24, 57.2, 60.6, .25, 'stone');
+    cylinder('trim',0,-59.15,57.5,59.5,1.0,.7,8);
+  }
   // Doors in the aisle-block front wall (plane v -57) behind each bay, 4 cm proud of it.
-  for (const u of [-10.5, -5.5, 0, 5.5, 10.5]) arch(u, -57.04, 24.05, 3.6, 12, Math.PI);
+  for (const u of [-10.5, -5.5, 0, 5.5, 10.5]) arch(u, -57.25, 24.05, 3.6, 12, Math.PI);
   // Four crossing turrets, their copper pyramids remain in both LODs.
   for(const u of [-24,24])for(const v of [-22,22]) {
     cube('stone',u,44,v,7.5,40,7.5,['y+']);box('trim',u,63.5,v,8.2,1,8.2);
@@ -161,10 +173,10 @@ export function createOratoire({ detail = 'near' } = {}) {
     // The side-aisle box spans u -19.5..21.5 (centred on 1), so each wall carries its own offset.
     for(const side of [-1,1])for(const v of [-46,-36,-26]) {
       const wall=side<0?-19.5:21.5;
-      arch(wall+side*.05,v,29,2,9,side*Math.PI/2);
+      arch(wall+side*.25,v,29,2,9,side*Math.PI/2);
       box('trim',wall+side*.45,33.9,v+4,1,19.8,1.2);
     }
-    for(const side of [-1,1])for(const v of [-10,0,10])arch(side*32.6,v,30,2.5,16,side*Math.PI/2);
+    for(const side of [-1,1])for(const v of [-10,0,10])arch(side*32.75,v,30,2.5,16,side*Math.PI/2);
     for(const v of [-47,-37,-27])for(const u of [-18.6,18.6])box('glass',u,51,v,.06,4,1.6);
   }
   const model=b.finish();

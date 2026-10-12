@@ -23,14 +23,14 @@ export const SPEC = {
 // the observation level (drawn unshaded by the layer; by day it reads as dark glass).
 export const PALETTES = {
   light: {
-    copper: '#664a44', copperWarm: '#6e5049', copperDark: '#5e443f',
-    roof: '#3b2f2b', roofPanel: '#413530', roofPatina: '#363f39', soffit: '#352a26',
-    tower: '#554b45', towerRib: '#6a6057', glass: '#1d2a30', glow: '#2a3a41',
+    copper: '#68625d', copperWarm: '#6c6560', copperDark: '#635d58',
+    roof: '#514d48', roofPanel: '#54504b', roofPatina: '#504e49', soffit: '#352a26',
+    tower: '#625d57', towerRib: '#77716a', glass: '#1d2a30', glow: '#2a3a41',
   },
   dark: {
-    copper: '#5b423c', copperWarm: '#644841', copperDark: '#533b36',
+    copper: '#595450', copperWarm: '#5d5752', copperDark: '#55504c',
     roof: '#392d28', roofPanel: '#40332d', roofPatina: '#313a35', soffit: '#2a2220',
-    tower: '#51453f', towerRib: '#645a50', glass: '#111b20', glow: '#b08a4a',
+    tower: '#554f49', towerRib: '#6b655d', glass: '#111b20', glow: '#b08a4a',
   },
 };
 

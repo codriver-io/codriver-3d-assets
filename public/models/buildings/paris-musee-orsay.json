@@ -29,45 +29,45 @@
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
   "geographicDataLicense": "ODbL-1.0",
   "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-musee-orsay-near.glb",
-      "bytes": 664164,
-      "triangles": 15580,
+      "bytes": 767996,
+      "triangles": 17588,
       "drawCalls": 7,
       "bounds": {
         "min": [
           -101.06174010687752,
           0,
-          -73.44051570811106
+          -74.96545065673793
         ],
         "max": [
-          101.44098300323459,
-          40.400001525878906,
-          73.6809712333454
+          102.28752415602966,
+          42.95000076293945,
+          73.65975594375746
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-musee-orsay-far.glb",
-      "bytes": 201032,
-      "triangles": 3772,
+      "bytes": 284920,
+      "triangles": 5561,
       "drawCalls": 7,
       "bounds": {
         "min": [
           -101.06174010687752,
           0,
-          -73.27785269334672
+          -74.9406963702378
         ],
         "max": [
-          101.27698877930044,
-          40.400001525878906,
-          73.51830821858105
+          102.23219221986295,
+          42.95000076293945,
+          73.66810375728888
         ]
       }
     }
-  }
+  },
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
 }

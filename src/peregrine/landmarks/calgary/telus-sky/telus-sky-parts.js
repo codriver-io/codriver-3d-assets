@@ -41,7 +41,7 @@ export function hash01(a, b) {
   return ((h ^ (h >>> 16)) >>> 0) / 4294967296;
 }
 
-/** Cells each face steps back at level k: arrays per pixel column (N, S: 7) and per row (W, E: 5). */
+/** Cells each face steps back at level k: arrays per pixel column (N, S: 14) and per row (W, E: 5). */
 export function recessions(k) {
   const nCol = NU / BAY, nRow = NV / ROW;
   const zero = (n) => Array(n).fill(0);
@@ -73,8 +73,8 @@ export function levelGroups(near) {
   if (near) { for (let k = 1; k <= TOP_K; k++) out.push({ k0: k, k1: k }); return out; }
   for (let k = 1; k < PODIUM_TOP_K; k += 2) out.push({ k0: k, k1: k + 1 });
   out.push({ k0: PODIUM_TOP_K, k1: PODIUM_TOP_K });
-  for (let k = PODIUM_TOP_K + 1; k <= TOP_K - 6; k += 2) out.push({ k0: k, k1: k + 1 });
-  for (let k = TOP_K - 4; k <= TOP_K; k++) out.push({ k0: k, k1: k });
+  for (let k = PODIUM_TOP_K + 1; k < FIRST_RES - 1; k += 2) out.push({ k0: k, k1: Math.min(k + 1, FIRST_RES - 2) });
+  for (let k = FIRST_RES - 1; k <= TOP_K; k++) out.push({ k0: k, k1: k });
   return out;
 }
 

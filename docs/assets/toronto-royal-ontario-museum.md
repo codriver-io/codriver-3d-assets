@@ -51,10 +51,10 @@ Eleven named, merged materials (the concrete grey was folded into `roofFlat`), e
 
 | Name | Use | Day | Night |
 | --- | --- | --- | --- |
-| `alu` | silver anodised aluminium cladding, strong dark seams and frames | `#c6cbce` | `#868e96` |
+| `alu` | silver anodised aluminium cladding, subtle panel joints and dark glazing frames | `#c6cbce` | `#868e96` |
 | `aluMid` | the darker cladding on the entrance prism | `#8f969b` | `#636b72` |
 | `aluDark` | soffits under raised prisms | `#54595d` | `#40464b` |
-| `seam` | cladding panel joints | `#3c4145` | `#262b30` |
+| `seam` | cladding panel joints | `#aeb4b8` | `#777f86` |
 | `glass` | Crystal glazing | `#2b4550` | `#1f3640` |
 | `glow` (unshaded) | the Crystal Court front and the entrance lobby | `#8fb3c4` | `#ffcf8a` |
 | `frame` | glazing frames, mullions | `#0f1215` | `#07090b` |
@@ -65,11 +65,11 @@ Eleven named, merged materials (the concrete grey was folded into `roofFlat`), e
 ## Modelling decisions
 
 * **The Crystal is the OSM decomposition, sheared.** Each part is a slab: the mapped ring is its roof outline, the mapped skillion plane is its roof, and the walls are planar quads down to a foot that sits back from the roof edge by a shear. Because the roof height is affine over the ring, the foot polygon is an affine image of it, so a wall can never twist whatever the lean (`royal-ontario-museum-solids.js#slab`). This is what makes the prisms lean out over Bloor Street rather than stand as vertical extrusions.
-* **Glazing is laid on the faces**, in each face's own 2D frame, so a window cannot drift off its plane: long bands and crossing bands on A's roof (the tall prism beside the 1933 gable), the long dark band down A's leaning north wall, the large glazed plane at the foot of A's leaning wall beside the entrance, the lozenge, lobby and west-face glazing on B, the lit Crystal Court glass on three faces of C, big glazed planes on the west prism G and D's overhanging face, bands on the rear roofs. Every glass shape is clipped to the face it lies on. Near LOD adds framed outlines, mullion grids and 0.6 m cladding seams (5,000+ seam quads); far LOD keeps only the glass shapes.
+* **Glazing is laid on the faces**, in each face's own 2D frame, so a window cannot drift off its plane: long bands and crossing bands on A's roof (the tall prism beside the 1933 gable), the long dark band down A's leaning north wall, the large glazed plane at the foot of A's leaning wall beside the entrance, the lozenge, lobby and west-face glazing on B, the lit Crystal Court glass on three faces of C, big glazed planes on the west prism G and D's overhanging face, bands on the rear roofs. Every glass shape is clipped to the face it lies on. Near LOD adds framed outlines, mullion grids and 2.5 cm wide, low-contrast cladding seams at 1.24 m pitch; far LOD keeps only the glass shapes.
 * **The heritage wings** are the OSM parts extruded, with the 1933 east wing's copper-roofed gabled naves, the round-headed window and three-light window in the north gable (the postcard view), the rotunda with its octagonal drum and pyramid, the east porch with its grand arch, and the 1914 west wing with three storeys of round-headed windows. Window rows, courses and cornices are near-only; far keeps coarse windows.
-* **Far LOD** (1,731 triangles) has the same bounds as near to within 1 % and keeps every prism, roof plane and glazing band.
-* **Draw budget** (`FOLD` in `config.js`): near folds the concrete grey into `roofFlat` and the 8-triangle dark aluminium trim into `seam` (13 draws). Far also folds deep stone into stone, mid aluminium into aluminium, the dark trim into the window tone and the lit lobby glass into the glass (8 draws).
-* **No shared planes.** Overlays stand at least 5 cm off the face they dress (seams 5 cm, glazing 10 cm, frames 15 cm, window surrounds 5 cm, mullions 20 cm), so the coplanar-overlap check dropped from 1,253 m2 to 3 m2. Three walls of prism D that cross a neighbour at a shallow angle (`plainWalls` in `royal-ontario-museum-crystal.js`) carry no seams: a seam there ran within centimetres of the neighbour's plane along the crossing line.
+* **Far LOD** (1,801 triangles) has the same bounds as near to within 1 % and keeps every prism, roof plane and glazing band.
+* **Draw budget** (`FOLD` in `config.js`): near folds the concrete grey into `roofFlat` and the 8-triangle dark aluminium trim into `window` (13 draws). Far also folds deep stone into stone, mid aluminium into aluminium, the dark trim into the window tone and the lit lobby glass into the glass (8 draws).
+* **Depth separation.** Cladding seams stand 11 cm proud, glazing 24 cm near / 12 cm far, and glazing frames another 12 cm forward. The Bloor stone arch and mullions project 46 cm, enclosing glass behind them; far uses separated panes so no masonry overlay crosses the glazing. Fine cladding seams disappear in far. Three crossing walls of prism D remain unhatched. The regenerated depth table resolves the remaining material stacks.
 
 ## Approximations and open points
 
@@ -77,7 +77,7 @@ Eleven named, merged materials (the concrete grey was folded into `roofFlat`), e
 * The Crystal's leaning walls, glazing bands and their positions are read from photographs, not from drawings: the shards and the cantilever are right in kind and size, but no individual band or window is surveyed. The largest uncertainty is the lean of the rear prisms (F, G, I, H), which are mostly hidden from the street.
 * OSM gives roof planes for a wall-less mass; the real prisms are skewed boxes. The lean values are tuned by eye against Diesterheft's, Aptd's and Pemolo's photographs.
 * The OpenROM plaza works, the Reed Family Plaza paving, the red "Crystal" pylon, benches, the stone gate posts and iron fence at the west end, and every interior are not modelled. The plaza is the basemap's.
-* Heritage stone is one flat colour per wing; carved tympana, friezes, quoins and eave brackets are not modelled. Rooftop plant is a few estimated boxes.
+* Heritage stone is one flat colour per wing; the Bloor gable has concentric arch orders, three-light mullions and a small medallion; other carved tympana, friezes, quoins and eave brackets are omitted. Rooftop plant is a few estimated boxes.
 * The provider extrusions replaced are the museum outline and two small parts just outside it; the outline way carries `height=0.1`, so the provider's own drawing of the museum is a thin slab that the model replaces.
 
 ## Verification
@@ -92,13 +92,26 @@ What the looks changed: the first extrusion of the OSM parts already showed the 
 
 Review round 1 (PASS-WITH-NITS): street glazing was too sparse (now 23 % of Crystal pixels from Bloor Street), the cladding read beige with faint seams (now silver with dark seams and frames, both palettes), and a dark sliver poked out at the top of the tall glazing band on A's north wall (glass shapes were not clipped to their face; now every band and plane is).
 
-Costs (exported): near 14,642 triangles / 13 draws / 741,304 bytes; far 1,731 / 8 / 86,152 bytes.
+Costs (exported): near 10,455 triangles / 13 draws / 545,536 bytes; far 1,801 / 8 / 89,936 bytes.
 
 Tests: `royal-ontario-museum.test.js` pins the 37 m apex and the footprint, the 24 m ridge and 33.6 m pyramid by raycast, the 9+ m cantilever with a downward-facing underside, the glazing share, containment in the mapped outline and clearance from Bloor Street and Queen's Park, in both LODs; `toronto.test.js` covers budgets, palettes and the exported bytes.
 
 | Environment | Status |
 | --- | --- |
 | Inspector (procedural and GLB, near/far, day/night) | verified as above |
-| Cityscape, flat ground | not tested yet, integration is checked separately |
-| Full 3D world, terrain | not tested yet, integration is checked separately |
+| Cityscape, flat ground | verified in the 2026-10-11 slot D captures (limits below) |
+| Full 3D world, terrain | verified in the 2026-10-11 slot D captures (limits below) |
 | Tesla hardware | not measured |
+
+## QA fix pass — 2026-10-11
+
+Cladding seams are 2.5 cm wide at 1.24 m pitch and low contrast, dropped in far. Major angular glazing stays in both LODs. Added concentric Bloor arch orders, a recessed three-light window, stone mullions, raised gable borders and a small medallion. Far uses separated panes. Removed surround backing plaques that crossed string courses and regenerated acyclic main material ordering.
+
+| LOD | Triangles before → after | Draws before → after | Bytes before → after |
+| --- | ---: | ---: | ---: |
+| near | 14,642 → 10,455 | 13 → 13 | 741,304 → 545,536 |
+| far | 1,731 → 1,801 | 8 → 8 | 86,152 → 89,936 |
+
+Cityscape: **verified**. Full 3D world: **verified**.
+
+Exact decorative carving and rear prisms remain estimates. Default street/night framing sits behind provider geometry; the additional curb capture clearly shows the new Bloor arch, Crystal and grade in both modes. Main-entrance ground contact is visible in the exported entrance preset, rather than claimed from the obstructed default street frame. Lifecycle terrain toggles, failure/late reloads, origin shifts and Tesla hardware were not tested.

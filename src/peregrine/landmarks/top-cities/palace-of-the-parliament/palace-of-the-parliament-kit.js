@@ -60,11 +60,11 @@ export function build(b, near) {
     const t0 = -ext, t1 = e.len + ext;
     const N = [e.nx, 0, e.nz];
     quad(m, at(e, t0, y0, d1), at(e, t0, y1, d1), at(e, t1, y1, d1), at(e, t1, y0, d1), N);
-    quad(m, at(e, t0, y1, d0), at(e, t1, y1, d0), at(e, t1, y1, d1), at(e, t0, y1, d1), [0, 1, 0]);
-    if (y0 > 0.04) quad(m, at(e, t0, y0, d0), at(e, t0, y0, d1), at(e, t1, y0, d1), at(e, t1, y0, d0), [0, -1, 0]);
-    if (d0 > 0.08 || d0 < 0) quad(m, at(e, t1, y0, d0), at(e, t1, y1, d0), at(e, t0, y1, d0), at(e, t0, y0, d0), [-e.nx, 0, -e.nz]);
-    quad(m, at(e, t0, y0, d0), at(e, t0, y1, d0), at(e, t0, y1, d1), at(e, t0, y0, d1), [-e.tx, 0, -e.tz]);
-    quad(m, at(e, t1, y0, d1), at(e, t1, y1, d1), at(e, t1, y1, d0), at(e, t1, y0, d0), [e.tx, 0, e.tz]);
+    if (near || d0 < 0) quad(m, at(e, t0, y1, d0), at(e, t1, y1, d0), at(e, t1, y1, d1), at(e, t0, y1, d1), [0, 1, 0]);
+    if (near && y0 > 0.04) quad(m, at(e, t0, y0, d0), at(e, t0, y0, d1), at(e, t1, y0, d1), at(e, t1, y0, d0), [0, -1, 0]);
+    if (near && (d0 > 0.08 || d0 < 0)) quad(m, at(e, t1, y0, d0), at(e, t1, y1, d0), at(e, t0, y1, d0), at(e, t0, y0, d0), [-e.nx, 0, -e.nz]);
+    if (near) quad(m, at(e, t0, y0, d0), at(e, t0, y1, d0), at(e, t0, y1, d1), at(e, t0, y0, d1), [-e.tx, 0, -e.tz]);
+    if (near) quad(m, at(e, t1, y0, d1), at(e, t1, y1, d1), at(e, t1, y1, d0), at(e, t1, y0, d0), [e.tx, 0, e.tz]);
   };
   const pane = (e, t, y0, y1, w, d, m) => quad(m,
     at(e, t - w / 2, y0, d), at(e, t - w / 2, y1, d), at(e, t + w / 2, y1, d), at(e, t + w / 2, y0, d),
@@ -104,18 +104,24 @@ export function build(b, near) {
     const shaft = H.ent0 - 1.35;
     r.cols.forEach((t, i) => {
       if (skip && skip(xAt(e, t))) return;
-      if (!near && i % 2 === 1 && i !== r.cols.length - 1) return;
-      const p = at(e, t, 0, 0.78);
-      const g = new THREE.CylinderGeometry(0.7, 0.7, shaft, near ? 12 : 5, 1, true);
+      const p = at(e, t, 0, 0.45);
+      const g = new THREE.CylinderGeometry(1.18, 1.30, shaft, near ? 10 : 4, 1, true);
       g.translate(p[0], 1.35 + shaft / 2, p[2]);
       b.put(g, 'stone');
+      if (near) {
+        b.box('stone',at(e,t,1.45,0.28),[2.8,0.7,2.8]);
+        b.box('stone',at(e,t,H.ent0-0.55,0.28),[2.9,1.2,2.9]);
+      } else {
+        pane(e,t,1.1,1.8,2.25,2.2,T);
+        pane(e,t,H.ent0-1.15,H.ent0+0.05,2.5,2.3,T);
+      }
     });
     r.wins.forEach((t, i) => {
       if (skip && skip(xAt(e, t))) return;
       const mat = i % 3 === 0 ? 'glow' : 'glass';
       const w = Math.min(5.6, r.step * 0.64);
-      for (const [y0, y1] of [[2.05, 7.3], [8.65, 14.0], [15.35, H.ent0 - 0.4]]) {
-        pane(e, t, y0, y1, w, 0.05, mat);
+      for (const [y0, y1] of [[2.05, 7.3], [8.65, 14.0], [15.35, H.ent0 - 1.45]]) {
+        pane(e, t, y0, y1, w, -0.45, mat);
         // Stone jambs and central sash stay behind the giant shafts in both LODs.
         if (near) {
           pane(e, t - w / 2 - 0.13, y0 - 0.1, y1 + 0.1, 0.24, 0.2, T);
@@ -131,12 +137,22 @@ export function build(b, near) {
     if (!r) return;
     rows.forEach((row, ri) => {
       r.wins.forEach((t, i) => {
-        if (!near && e.nz < 0.5 && i % 2 === 1) return;
         if (skip && skip(xAt(e, t), row)) return;
         const w = Math.min(row.w, r.step * 0.68);
         const mat = row.glow || row.arch || i % 3 === 0 ? 'glow' : 'glass';
         if (row.arch && arches) archPane(e, t, row.y, row.h, w, 0.18, mat);
         else pane(e, t, row.y, row.y + row.h, w, 0.18, mat);
+        if (row.arch && arches && e.nz > 0.5) {
+          const radius = w / 2, spring = row.y + row.h - radius;
+          const n = near ? 6 : 2;
+          for (let k = 0; k < n; k++) {
+            const a0 = Math.PI * k / n, a1 = Math.PI * (k + 1) / n;
+            const p = (a,r) => at(e,t + Math.cos(a)*r,spring + Math.sin(a)*r,0.65);
+            quad(T,p(a0,radius),p(a0,radius+0.55),p(a1,radius+0.55),p(a1,radius),[e.nx,0,e.nz]);
+          }
+          pane(e,t-w/2-0.25,row.y,spring,0.5,0.65,T);
+          pane(e,t+w/2+0.25,row.y,spring,0.5,0.65,T);
+        }
         if (!frames) return;
         pane(e, t, row.y - 0.22, row.y + 0.05, w + 0.5, 0.36, T);
         if (!row.arch) pane(e, t, row.y + row.h - 0.02, row.y + row.h + 0.26, w + 0.5, 0.36, T);
@@ -158,6 +174,25 @@ export function build(b, near) {
     if (near) slab(e, y0 - 1.35, y0 - 0.55, 0.02, 0.5, T);
     slab(e, y0 - 0.55, y0, 0.02, 0.95, T);
     slab(e, y0, y1, -0.8, 0.42, 'stone');
+    const r = rhythm(e.len, COL_BAY);
+    if (near && r && e.nz > 0.5 && e.len > 12) for (const t of r.cols) {
+      if (near) b.box(T,at(e,t,y0-0.85,0.6),[0.95,1.0,1.2]);
+      else pane(e,t,y0-1.35,y0-0.45,1.0,1.2,'stone');
+    }
+  };
+  const upperOrder = (e, base, roof) => {
+    const r = rhythm(e.len, BAY * 2);
+    if (!r || e.nz < 0.5) return;
+    for (const t of r.cols) {
+      // Three exposed faces in far; boxes in near. Feet/capitals meet the tier cornices.
+      if (near) {
+        b.box('stone', at(e,t,(base+roof)/2,0.35),[1.8,roof-base,1.4]);
+        b.box('stone',at(e,t,roof-0.8,0.5),[2.6,0.95,1.7]);
+      } else {
+        pane(e,t,base,roof,1.8,1.05,'stone');
+        pane(e,t,roof-1.25,roof-0.3,2.6,1.35,'stone');
+      }
+    }
   };
   const isRecess = (e) => {
     const mx = (e.a[0] + e.c[0]) / 2;
@@ -189,7 +224,9 @@ export function build(b, near) {
     const bastion = bastionEdge(e);
     const roof = bastion ? H.bastionRoof : H.wingRoof;
     const parapet = bastion ? H.bastion : H.wing;
-    face(e, 0, roof, 'stone');
+    face(e, H.ent0, roof, 'stone');
+    const recessed = { ...e, a: [e.a[0]-e.nx*0.8,e.a[1]-e.nz*0.8], c: [e.c[0]-e.nx*0.8,e.c[1]-e.nz*0.8] };
+    face(recessed, 0, H.ent0, 'stone');
     dress(e, roof, parapet, bastion ? BASTION_ROWS : UPPER, { arches: near || e.nz > 0.5 });
   }
   for (const court of COURTS) {
@@ -220,7 +257,8 @@ export function build(b, near) {
   // Ground-level central frontage joins the outer wing but its roof now leads
   // into a succession of setback terraces, rather than one full-height screen.
   const front = edgeOf([SCREEN.x1, SCREEN.z1], [SCREEN.x0, SCREEN.z1]);
-  boxFaces(SCREEN.x0, SCREEN.x1, 0, H.wingRoof, SCREEN.z0, SCREEN.z1, 'stone', 'bud');
+  boxFaces(SCREEN.x0, SCREEN.x1, 0, H.ent0, SCREEN.z0-0.8, SCREEN.z1-0.8, 'stone', 'bud');
+  boxFaces(SCREEN.x0, SCREEN.x1, H.ent0, H.wingRoof, SCREEN.z0, SCREEN.z1, 'stone', 'bud');
   dress(front, H.wingRoof, H.wing, UPPER, { arches: true, frames: near });
 
   // Full intermediate volumes: broad 58/66 m courtyard rings, both with
@@ -231,6 +269,7 @@ export function build(b, near) {
       face(e, s.base, s.roof, 'stone');
       windows(e, s.rows, { frames: near, arches: true, bay: BAY });
       for (const y of [s.base + 0.2, s.rows[0].y + s.rows[0].h + 0.3]) slab(e, y, y + 0.45, 0.04, 0.5, T);
+      upperOrder(e,s.base+1.0,s.roof-1.5);
       crown(e, s.roof, s.top);
     }
     if (s.courts) for (const court of COURTS) for (const e of ringEdges(court)) face(e, s.base, s.roof, 'stone');
@@ -243,8 +282,17 @@ export function build(b, near) {
   for (const e of ringEdges(topRing)) {
     face(e, SETBACK_TIERS[1].roof, H.towerRoof, 'stone');
     windows(e, TOWER_ROWS, { frames: near, arches: true, bay: BAY });
+    upperOrder(e,SETBACK_TIERS[1].roof+1.0,H.towerRoof-1.5);
     slab(e, 77.25, 77.7, 0.04, 0.52, T);
     crown(e, H.towerRoof, H.tower);
+    // Strong end pavilions and parapet piers held by the upper crown.
+    for (const t of [1.8, e.len - 1.8]) {
+      const p = at(e,t,(SETBACK_TIERS[1].roof+H.tower)/2,0.55);
+      b.box('stone',p,[3.7,H.tower-SETBACK_TIERS[1].roof,3.7]);
+      b.box('stone',at(e,t,H.tower-0.5,0.55),[4.5,1.1,4.5]);
+    }
+    const rhythmTop = rhythm(e.len, BAY);
+    if (rhythmTop) for (const t of rhythmTop.cols) b.box(T,at(e,t,H.tower-0.45,0.2),[0.65,1.4,0.7]);
   }
   cap(topRing, [], H.towerRoof, 'stone');
 
@@ -266,7 +314,7 @@ export function build(b, near) {
   const pN = 8;
   for (let i = 0; i < pN; i++) {
     const x = px0 + 1.6 + (px1 - px0 - 3.2) * (i + 0.5) / pN;
-    const g = new THREE.CylinderGeometry(0.92, 0.92, shaft, near ? 12 : 5, 1, true);
+    const g = new THREE.CylinderGeometry(0.92, 0.92, shaft, near ? 10 : 4, 1, true);
     g.translate(x, 1.35 + shaft / 2, pz1 - 1.35);
     b.put(g, 'stone');
   }

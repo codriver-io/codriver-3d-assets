@@ -43,17 +43,17 @@ Nine names, same keys in light and dark: `tileDark`, `tileBronze`, `tileGold` (t
 ## Modelling decisions
 
 - **One cell list, one neighbour rule.** The plan is authored as rectangular cells (towers and hotel parts) in the street frame. A wall is drawn only where it rises above whatever stands across it, so the towers read as interlocked and no two faces are coplanar. This also gives the west block's wall above the hotel roof for free.
-- **Flat towers with rounded corners.** Exterior walls are flat (the earlier per-tower barrelling was dropped: its convex bulge inverted the real concave swoop under the bridge), exterior corners are rounded (4 to 5 m radius) with smooth normals, and the exterior cell edges stand 0.1 m inside the mapped outline. Roofs are flat with three shallow vaults (centre, south-east, north-east; all bronze) and a few plant boxes, nothing above 34 m.
-- **Merged courses.** Each wall is split into 1.2 m rows at absolute heights, so courses line up across neighbouring towers; each course takes a tone from the tower's family with pseudo-random runs; a gold course above 10 m is drawn bronze. No individual tiles.
+- **Concave vessels with rounded corners.** Exterior spans curve inward by up to 1.25 m between tangent rounded corners; the curve closes at roof and grade. At both landings it returns to the bridge wall plane at the soffit, while internal walls inside the bridge envelope are omitted. Roofs retain their vaults and plant boxes, with no vertex above 34 m.
+- **Merged tile mosaic.** Near walls use 0.8 m rows with approximately 1.8 m tile divisions; far uses 1.2 m rows and 3.6 m divisions. Upper walls use one dominant glaze; bronze/gold variation stays in the lowest 10 m.
 - **The bridge** is a lofted band between two flanks (8.2 m apart) with true 7 m fillets into the blocks, a flat top, a dark soffit, gunmetal tile-clad flanks in the same courses, a concave cove under each end (a quarter-round from the soffit down into the tower wall, so the underside sweeps into the vessel instead of meeting it at a corner), and a long window strip (with mullions near) 22.6 to 25.4 m up. It ends exactly on the wall planes of the east and west blocks and passes 1.8 m over the hotel roof.
 - **Hotel** brick volumes with a window grid, ground-floor shopfront glass between piers and a stone cornice (near); far keeps one glass band per floor.
-- **Far LOD** keeps the silhouette and the clear span (bounds within 1.5 m of near): flat walls with 3.6 m courses, vaults, the bridge with its lit window strip, hotel floor bands, the four tallest towers' slot windows.
+- **Far LOD** keeps the silhouette and the clear span (bounds within 1.5 m of near): shallow concave walls with 1.2 m tile courses, vaults, the bridge with its lit window strip, hotel floor bands, the four tallest towers' slot windows.
 - Terrain: Downtown East Village is flat (about 1,045 m), so no `terrainPad` is declared and `padM` is 60 m (the farthest corner is 52 m out).
 
 ## Approximations and what is missing
 
 - The tower arrangement (which tower is tallest, the seven-way split of the east block) is a reading of five photographs, not a drawing. The sign tower position (north-west) follows the "StudioBell" sign in the street-front photographs; the lettering is not modelled.
-- The real surfaces are doubly curved and concave in places (the sweeping vessel that rises into the bridge); the model gives flat walls, rounded corners, the bridge fillets and one concave cove under each bridge end, so the swoop is simplified (it is 8.2 m wide, not the full width of the landing) and the silhouette from the street is more boxy than the photographs. The triangular window sits on the flat wall beside the flare; in the photographs it is cut into the swooping face under the bridge.
+- The real surfaces are doubly curved and concave in places (the sweeping vessel that rises into the bridge); the model gives shallow concave walls, rounded corners, the bridge fillets and one concave cove under each bridge end, so the swoop is simplified (it is 8.2 m wide, not the full width of the landing) and the silhouette from the street is more boxy than the photographs. The triangular window sits on the flat wall beside the flare; in the photographs it is cut into the swooping face under the bridge.
 - The soffit height follows the published 65 ft. In the street-front photographs the bridge band looks at least as deep as the opening under it, which would put the soffit lower (roughly 12 to 18 m); either way the clearance is well over 5 m.
 - Iridescence is only a tone mix; colours are dark gunmetal and bronze with a faint gold low down, not the bright gold of the close-up tiles.
 - Hotel storey heights, which end is five-storey, and its window pattern are estimated.
@@ -66,8 +66,8 @@ Measured from the exported GLBs by `pnpm build:calgary-landmarks studio-bell` (d
 
 | | triangles | draw calls | bytes |
 | --- | --- | --- | --- |
-| near | 5,129 | 9 | 232 KB |
-| far | 1,220 | 7 | 69 KB |
+| Near | 23,755 | 9 | 1012 KB |
+| Far | 9,560 | 7 | 408 KB |
 
 Before the review fix: near 7,617 / 9 / 304 KB, far 1,196 / 7 / 68 KB (dropping the barrels saved about 2,500 triangles; the coves add about 50).
 
@@ -91,8 +91,31 @@ Deterministic checks (a local copy of `scripts/qa-metrics.mjs` that skips other 
 
 Independent review (recognisability 3/5: a striped layer cake with convex barrels and a triangular window nobody could find). Changed: the gold-to-gunmetal contrast was halved and gold confined to the lowest 10 m, the bridge faces and soffit were made gunmetal, the per-tower barrels were dropped for flat walls and a concave cove was added under each bridge end, and the triangle was moved to 15 to 22 m and given a lighter blue-grey `glass` so it reads. Looked at again: the `qa-sheet` of the exported GLBs and near-light `street`, `facade`, `underside` and `detail` renders (`tmp/calgary/shots/fix-east-village/`): calm dark tile, a visible apex-up triangle beside the bridge landing, the cove sweeping into the tower under the bridge. `qa-metrics` on the new GLBs: no issues, 0 coplanar pairs, 0.5 % back-face hits.
 
-`node --test src/peregrine/landmarks/calgary/studio-bell/studio-bell.test.js` pins: the 34 m top and the roof height of each of the seven east towers in both LODs, the bridge soffit at 18.6 m (above 5 m) at seven points across the street, the street open under the span at 10 m, the bridge top running over the hotel into the west block with a gap above the hotel roof, the hotel's 12.6 and 16.8 m roofs and brick street front, glow slot window, a true glass triangle (wide at its 15 m base, narrow near the 22 m apex, tile beside and above it), the arch, the concave coves under both bridge ends (steep at the wall, flat toward the span), flat tower walls, the halved tile contrast with `tileGold` only in the lowest 10 m, the three tile tones, the baked 2.4 degree rotation, every vertex inside the mapped rings (1 m slack) and the far envelope.
+`node --test src/peregrine/landmarks/calgary/studio-bell/studio-bell.test.js` pins: the 34 m top and the roof height of each of the seven east towers in both LODs, the bridge soffit at 18.6 m (above 5 m) at seven points across the street, the street open under the span at 10 m, the bridge top running over the hotel into the west block with a gap above the hotel roof, the hotel's 12.6 and 16.8 m roofs and brick street front, glow slot window, a true glass triangle (wide at its 15 m base, narrow near the 22 m apex, tile beside and above it), the arch, the concave coves under both bridge ends (steep at the wall, flat toward the span), shallow concave vessel walls, the halved tile contrast with `tileGold` only in the lowest 10 m, the three tile tones, the baked 2.4 degree rotation, every vertex inside the mapped rings (1 m slack) and the far envelope.
 
 ## Integration
 
-Normal Peregrine Cityscape: lazy regional GLBs, MCU2 far LOD, reversible owned-building replacement over two OSM rings (Studio Bell with its skybridge, and the King Edward Hotel). No road, terrain or navigation contract. Cityscape and Full 3D world: not tested yet, integration is checked separately.
+Normal Peregrine Cityscape: lazy regional GLBs, MCU2 far LOD, reversible owned-building replacement over two OSM rings (Studio Bell with its skybridge, and the King Edward Hotel). No road, terrain or navigation contract. Cityscape and Full 3D world: verified visually in the 2026-10-11 QA run; see current evidence and limits below.
+
+## QA revision 2026-10-11
+
+Concave vessel walls replace the flat spans, including the walls beside both bridge landings; internal landing faces are omitted so the flared bridge joins continuously. Upper courses use a calm dominant glaze, while smaller bronze/gold tile divisions articulate the lower walls and entrance. The curves and tile mosaic remain in far.
+
+Reference basis: the supplied review and reference photograph in its contact sheet, plus the existing authoring notes. No new city dossier exists for these first-run Calgary/Toronto assets; the sculptural approximation uses the existing documented plan and general architectural knowledge.
+
+Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed.
+
+## Follow-up QA, 2026-10-11
+
+Follow-up QA: the concave bridge underside now spans the complete flared landing mouth and closes into both towers, rather than using a narrow rectangular cove. Upper walls retain restrained tile-scale bronze/dark variation in both LODs. The 18.6 m straight-span soffit and lower flared landing clearance are retained; geometric curves and glaze are photographic approximations.
+
+The architect’s [Allied Works project page](https://alliedworks.com/projects/national-music-centre-canada/) was checked for the interlocking terracotta tower concept. 
+
+All landmark tests and city conformance tests pass; metrics report no issues, asset-catalog validation and assets:preview pass, and the depth-layer check is current. Cityscape: **verified** at far, near and street. Full 3D world: **verified** at far, near and street with terrain enabled; These are visual captures only; no lifecycle, night, toggle or hardware certification is claimed.
+
+Current exported costs:
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 23,771 | 9 | 1,036,176 |
+| far | 9,560 | 7 | 417,004 |

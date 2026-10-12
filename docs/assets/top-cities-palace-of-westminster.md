@@ -44,7 +44,7 @@ Nine materials on the near model, seven on the far model. `stone` (honey Anston 
 
 Both LODs have the river screen and its three rows of glazed bays at the same 5.2 m rhythm, with a pinnacle on every bay, the Lords front, the north pavilion, Westminster Hall, St Stephen's Hall and porch, and the three open courts. Elizabeth Tower has a ribbed shaft, four lit dials with twelve iron hour marks (longer at the quarters) and an iron chapter ring, an open belfry of paired louvred arches, and a stepped slate spire to 96.3 m. Gold on that spire is the hip ribs, four corner finials and the cross-orb. Victoria Tower's shaft has four stages of grouped pointed windows with mullions, and stringcourses between the stages. Its crown is four square stone corner turrets, each with a setback and a pyramidal cap, and an open stone parapet between them. The flagstaff rises from the centre, from 98.5 m to the 120.8 m finial. There is no gilded cage and no slate pyramid. Near adds window surrounds, a third light in each Victoria group, blind panels, the clock hands, and the flag's red cross. Far keeps two lights a group, the parapet, the turrets, the slate stages and the dial marks, and drops `trim` and `red`.
 
-Cost (exported): **near 18 957 triangles / 9 draws / 1 037 164 bytes; far 7 204 / 7 / 398 836.** Budgets are 60 000 / 14 / 2.5 MB and 12 000 / 8 / 500 KB. This pass stays inside the asked band of about 15–30 k near and 4–8 k far, with the same 9 and 7 draws.
+Cost (exported): **near 22 779 triangles / 9 draws / 1 143 224 bytes; far 9 018 / 7 / 470 208.** Budgets are 60 000 / 14 / 2.5 MB and 12 000 / 8 / 500 KB. This pass stays inside the asked band of about 15–30 k near and 4–8 k far, with the same 9 and 7 draws.
 
 ## Terrain (Full 3D world)
 
@@ -74,3 +74,11 @@ A review (recog 3/5) sent the first export back: a blank Elizabeth belfry with g
 Tests: `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/palace-of-westminster/palace-of-westminster.test.js`. The landmark test pins the 120.8 m finial and a clear grade, the 12.2 m shaft and a lit dial on each face, the gold tip at 96.3 m, Victoria Tower's 20 m shaft, south-flying flag and finial, the 91.4 m central spire, the three open courts, a glazed river bay, containment inside 2 m of the mapped rings, the far silhouette, and the draw budgets.
 
 Placement modes: **Cityscape** (flat ground): not tested yet, integration is checked separately. **Full 3D world**: not tested yet, integration is checked separately. Expect under 2 m of relief; `padM = 175` covers the footprint.
+
+## QA revision — 2026-10-11
+
+Projecting river bay buttresses and layered surrounds, linked perforated parapet, Victoria Tower vertical ribs and stage ornament, and an open octagonal central lantern. Far retains pointed bays, parapet and lantern; small applied ribs use single outward faces.
+
+Near 22779 triangles / 9 draws / 1143224 bytes; far 9018 triangles / 7 draws / 470208 bytes. All variants meet the building budgets; current costs supersede the older authoring/review totals above.
+
+Cityscape: **verified** for requested local static snapshots. Full 3D world: **verified** for requested local static snapshots.

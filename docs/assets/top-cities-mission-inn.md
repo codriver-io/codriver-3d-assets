@@ -1,5 +1,6 @@
 # Mission Inn, Riverside
 
+Current QA results are recorded below under 2026-10-11. Earlier costs, palettes and integration statements describe historical authoring snapshots.
 Original procedural model of the present-day Mission Inn Hotel & Spa at 3649 Mission Inn Avenue, excluding the Annex across Sixth Street and adjacent shops. The official history establishes the 1876 boarding-house origin, 1903 Mission Wing and later Cloister, Spanish and Rotunda wings; the NPS nomination identifies the three principal courts and four named towers. No published metric height was found: every height below is an estimate, not a surveyed value.
 
 Sources and reference licences are recorded in `prototypes/assets3d/catalog.d/mission-inn.json`. Reference photographs remain only in ignored `tmp/top-cities/mission-inn/refs/`. The dossier's `facts.txt` describes a disambiguation page; it was not used as evidence. Reference plaque photographs were read on the dossier sheet but were not needed for mesh authoring. No scans, photographs or textures enter the asset.
@@ -65,3 +66,33 @@ The first independent review (`tmp/top-cities/review/mission-inn/REVIEW.md`, FIX
 The regenerated main review sheet `tmp/top-cities/mission-inn/fix-sheet-final/mission-inn.jpg` was read against its Spanish Wing reference photo. The detail/reference contact sheet `tmp/top-cities/shots/mission-inn/fix-final/fix-details-reference.jpg` was also read: it compares the actual reference with near/far Carmel drum and Spanish Wing close views, near dark versions, the avenue-facing courtyard and roof. Those views show the requested tall dome, strong masonry/pinnacle rhythm and projecting balcony bands in both LODs. Courtyard composition and every revised height remain photographic estimates; carvings, plants and the exact glazing pattern remain omitted.
 
 Near/far preserve the same silhouette bounds apart from the deliberately raised Carmel tower. The added masonry uses nine near draws and eight far draws; far retains one upper Rotunda gallery, with the sky-open well unchanged. Identical position/normal tuples are merged at 1e-7 m tolerance before export, preserving triangle counts, sharp normals and visible surfaces while reducing bytes. The final deterministic audit has no flagged artifact, zero coplanar overlaps, zero back-face hits and no removable attributes. Landmark tests now raycast the open Carmel drum, contrasting gallery piers/pointed openings and projecting entrance balcony in addition to the existing courts/belfry checks.
+
+## 2026-10-11 QA correction
+
+2026-10-11 QA correction: Deeper dark Gothic masonry, wider pinnacle bases and supported projecting two-storey wood walkways. Far keeps both entrance balcony bands and the main facade window rhythm. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 48291 / 9 / 2094 | 46217 / 9 / 1985 |
+| far | 8395 / 8 / 363 | 9007 / 8 / 388 |
+
+No unresolved deterministic QA issues. All five landmark tests and four focused conformance tests pass; asset catalog validation and local preview build pass. Depth ordering changed to trim above wood; the regenerated table hunk is committed with this asset. Buried sill/back faces and cheap intersecting eave blocks were removed to eliminate material cycles.
+
+Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, mode/lifecycle transitions, DEM replacement and hardware performance not tested in this pass.
+
+Every final contact-sheet tile and all six app frames were viewed. Pinnacles and courtyard massing remain photograph estimates; fine carvings, plants, and the complete inner Rotunda gallery remain simplified.
+
+## 2026-10-11 follow-up QA (current)
+
+Deepened the Gothic gallery returns from 1.45 m to 3.8 m, varied pointed arch crowns from 4.1–6.0 m and independently varied pinnacle stems/cones from 3.2–5.2 m above their supporting piers. Kept true pointed openings in both LODs and restored all four rotunda gallery/window levels in far.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 46217 / 9 / 1985 | 45929 / 9 / 1970 |
+| far | 9007 / 8 / 388 | 10187 / 8 / 441 |
+
+Mandatory exported QA reports no unresolved issues. Focused landmark and city conformance tests, catalog validation, preview generation and the full depth-layer freshness check pass. Mission Inn’s regenerated far material ordering is committed; the other four regenerated entries are unchanged.
+
+Cityscape: verified daytime visual inspection of near/far and street frames. Full 3D world: verified daytime visual inspection with Terrarium terrain. Near-named shots on the tall towers select far LOD at their auto-adjusted zoom; street shots select near. Night, full lifecycle/mode transitions, hardware performance and terrain refinement sweeps were not tested.
+
+Remaining: Gallery dimensions and uneven crowns are reference-photo estimates, not measured architecture. Fine tracery and decorations remain simplified for the budget.

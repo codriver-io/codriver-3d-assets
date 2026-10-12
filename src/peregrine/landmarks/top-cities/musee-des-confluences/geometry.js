@@ -1,3 +1,4 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
@@ -14,8 +15,8 @@ const mapped = FOOTPRINTS[0].map(local);
 const CLOUD = [[38.4,-34], ...mapped.slice(2,24), [2,-40]];
 const inset = (p,k) => [-5+(p[0]+5)*k, 15+(p[1]-15)*k];
 const upper = CLOUD.map(p=>{const q=inset(p,.87);return [q[0],31,q[1]];});
-const waist = CLOUD.map((p,i)=>{const q=inset(p,.994);return [q[0],p[1]>48?28.4:20+(i%4===1?-2.5:i%4===2?6:1),q[1]];});
-const lower = CLOUD.map((p,i)=>{const q=inset(p,.72);return [q[0],14+(i%5===0?3:0),q[1]];});
+const waist = CLOUD.map((p,i)=>{const q=inset(p,.994);return [q[0],p[1]>48?28.4:23.5+1.5*Math.sin(p[1]/28),q[1]];});
+const lower = CLOUD.map((p,i)=>{const q=inset(p,.72);return [q[0],14.8+0.6*Math.sin(p[1]/35),q[1]];});
 
 export function create({detail='near'}={}) {
   const near=detail==='near', b=assetBuilder({...SPEC,palette:PALETTES.light},detail), soups=new Map();
@@ -65,9 +66,9 @@ export function create({detail='near'}={}) {
     const mid=centroid([waist[i],waist[j],upper[j],upper[i]]),out=[mid[0]+dz*4,mid[1],mid[2]-dx*4];
     // Strong unequal diagonals: one ridge rises almost to the roof, the next
     // falls to the soffit. The outer waist remains within the mapped outline.
-    const crest=lerp(lerp(waist[i],waist[j],.57),lerp(upper[i],upper[j],.57),i%2?.72:.25);
+    const crest=lerp(lerp(waist[i],waist[j],.57),lerp(upper[i],upper[j],.57),.46);
     const panels=[[upper[i],upper[j],crest],[upper[j],waist[j],crest],[waist[j],waist[i],crest],[waist[i],upper[i],crest]];
-    panels.forEach((p,k)=>foldedTriangle((i+k)%3===0?'facet':'metal',...p,out));
+    panels.forEach((p,k)=>foldedTriangle(i%6===0?'facet':'metal',...p,out));
     const lo=centroid([lower[i],lower[j],waist[j],waist[i]]),underOut=[lo[0]+dz*5,lo[1]-20,lo[2]-dx*5];
     foldedTriangle(i%2?'soffit':'facet',lower[i],lower[j],waist[j],underOut);
     foldedTriangle(i%2?'facet':'soffit',lower[i],waist[j],waist[i],underOut);
@@ -92,24 +93,26 @@ export function create({detail='near'}={}) {
   lid(lower,[],'soffit',-1);
   // Broad asymmetrical shoulders blend into the roof before tightening into
   // leaning truncated necks. Near and far share all four silhouette rings.
-  const funnels=[{x:9,z:3,w:33,l:42,y:41,leanX:5,leanZ:-6},{x:-26,z:38,w:22,l:24,y:37,leanX:4,leanZ:-4}];
-  const holes=[],segments=near?24:16;
+  const funnels=[{x:9,z:3,w:33,l:42,y:41,leanX:-3,leanZ:-7},{x:-26,z:38,w:22,l:24,y:37,leanX:5,leanZ:1}];
+  const holes=[],segments=near?24:12;
   for(const f of funnels) {
     const ring=(scale,y,lean)=>Array.from({length:segments},(_,i)=>{
-      const a=i/segments*Math.PI*2,r=1+.035*Math.sin(a*3+.6);
-      const rounded=v=>Math.sign(v)*Math.pow(Math.abs(v),.56);
+      const a=i/segments*Math.PI*2,r=1+.13*Math.sin(a*2+.6)+.08*Math.cos(a*3);
+      const rounded=v=>Math.sign(v)*Math.pow(Math.abs(v),.74);
       return [f.x+rounded(Math.cos(a))*f.w*.5*scale*r+f.leanX*lean,
-        y-lean*.65*(1+Math.sin(a)),f.z+rounded(Math.sin(a))*f.l*.5*scale*r+f.leanZ*lean];
+        y-lean*1.5*(1+Math.sin(a)),f.z+rounded(Math.sin(a))*f.l*.5*scale*r+f.leanZ*lean];
     });
     const h=f.y-31;
-    const rings=[ring(1,31,0),ring(.84,31+h*.05,.05),ring(.65,31+h*.22,.25),ring(.47,31+h*.5,.55),ring(.34,31+h*.8,.9),ring(.30,f.y,1)];
+    const rings=[ring(1,31,0),ring(.9,31+h*.12,.08),ring(.8,31+h*.38,.3),ring(.68,31+h*.68,.6),ring(.60,31+h*.90,.88),ring(.56,f.y,1)];
     holes.push(rings[0]);
     for(let k=0;k<rings.length-1;k++)for(let i=0;i<segments;i++){
       const j=(i+1)%segments,ps=[rings[k][i],rings[k][j],rings[k+1][j],rings[k+1][i]],m=centroid(ps);
       const dx=ps[1][0]-ps[0][0],dz=ps[1][2]-ps[0][2];
       face(...ps,[m[0]+dz*10,m[1],m[2]-dx*10],i%7===0?'facet':'metal');
     }
-    lid(rings.at(-1),[],'facet');
+    const rim=rings.at(-1),inside=rim.map(p=>[f.x+f.leanX+(p[0]-f.x-f.leanX)*.86,p[1]-.45,f.z+f.leanZ+(p[2]-f.z-f.leanZ)*.86]);
+    for(let i=0;i<segments;i++){const j=(i+1)%segments;quad('metal',rim[i],rim[j],inside[j],inside[i],[f.x,60,f.z]);}
+    lid(inside.map(p=>[p[0],p[1]-.7,p[2]]),[],'seam');
   }
   lid(upper,holes,'metal');
   // Plinth within the mapped footprint: low stepped service core, undercroft
@@ -131,7 +134,7 @@ export function create({detail='near'}={}) {
   // triangulated steel cage. Flat panels are opaque architectural stand-ins;
   // the intricate interior is deliberately omitted.
   const A=[-2,3.2,-35],B=[37.7,3.2,-34],C=[41.1,3.2,-73],D=[19.2,3.2,-82],
-    E=[3,34,-38],F=[36.8,31,-37],G=[30,16,-76],H=[20,8,-80];
+    E=[3,34,-38],F=[36.8,31,-37],G=[34,17.5,-74],H=[18,10,-80];
   function crystal(a,c,d,roof=false) {
     const mid=centroid([a,c,d]),out=roof?[mid[0],mid[1]+30,mid[2]]:[mid[0]+(mid[0]-23)*5,mid[1]+(mid[1]-12)*5,mid[2]+(mid[2]+54)*5];
     const n=near?12:8;
@@ -139,7 +142,7 @@ export function create({detail='near'}={}) {
     const pane=(ps,i,j)=>{
       const m=centroid(ps); let norm=vec(ps[1]).sub(vec(ps[0])).cross(vec(ps[2]).sub(vec(ps[0]))).normalize();
       if(norm.dot(vec(out).sub(vec(ps[0])))<0)norm.negate();
-      tri((i+j)%4===0?'glassPale':'glass',...ps.map(q=>vec(lerp(q,m,.035)).addScaledVector(norm,.07).toArray()),out);
+      tri((roof?i%3===0:j%4===0)?'glassPale':'glass',...ps.map(q=>vec(lerp(q,m,.035)).addScaledVector(norm,near?.15:0).toArray()),out);
     };
     // Backing glass closes the hairline joints; no transparent GLB dependency.
     tri('glass',a,c,d,out);
@@ -175,5 +178,7 @@ export function create({detail='near'}={}) {
   b.box('glow',[26,4.45,-76],[14,2.2,.3],-.12);
   if(near)for(let k=0;k<8;k++)b.box('concrete',[24, .2+k*.2,-79+k*.45],[11,.4,.4],-.12);
   for(const [mat,positions] of soups){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.computeVertexNormals();b.put(g,mat);}
-  return b.finish();
+  const model = b.finish();
+  model.traverse(o=>{if(o.isMesh){const old=o.geometry;o.geometry=mergeVertices(old,1e-4);old.dispose();}});
+  return model;
 }

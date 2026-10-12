@@ -273,21 +273,21 @@
   },
   "elevationDatum": "Local plaza grade y=0; rigid building, no terrain or absolute altitude baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "41 m published height. OSM body envelope is smaller than the architect’s 190 × 90 m overall project dimensions. Fold locations, glass frame, roof funnels, supports and plinth heights estimated from attributed photographs; no textures or external meshes. Cityscape and Full 3D world not tested yet, integration checked separately.",
+  "note": "41 m published height. OSM body envelope is smaller than the architect’s 190 × 90 m overall project dimensions. Fold locations, glass frame, roof funnels, supports and plinth heights estimated from attributed photographs; no textures or external meshes. Cityscape and Full 3D world static far/near/street snapshots verified on 2026-10-11; dynamic terrain lifecycle and driving are not tested.",
   "assets": {
     "near": {
       "url": "/models/buildings/musee-des-confluences-near.glb",
-      "bytes": 1304872,
-      "triangles": 18022,
+      "bytes": 1244108,
+      "triangles": 17468,
       "drawCalls": 9,
       "bounds": {
         "min": [
           -56.916900634765625,
           -2.3841858265427618e-8,
-          -82.07242584228516
+          -82.12963104248047
         ],
         "max": [
-          41.164737701416016,
+          41.241817474365234,
           41,
           76.09835052490234
         ]
@@ -295,8 +295,8 @@
     },
     "far": {
       "url": "/models/buildings/musee-des-confluences-far.glb",
-      "bytes": 230284,
-      "triangles": 3491,
+      "bytes": 213324,
+      "triangles": 3443,
       "drawCalls": 6,
       "bounds": {
         "min": [

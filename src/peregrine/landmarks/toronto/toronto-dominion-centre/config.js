@@ -25,11 +25,11 @@ export const SPEC = {
 // `sign` the TD green.
 export const PALETTES = {
   light: {
-    steel: '#18191b', glass: '#443d36', glow: '#4f463b', lamp: '#cdc4ae', light: '#f4f5ef', sign: '#33ae3b',
+    steel: '#18191b', glass: '#443d36', louver: '#443d36', glow: '#4f463b', lobby: '#4f463b', lamp: '#cdc4ae', light: '#f4f5ef', sign: '#33ae3b',
     granite: '#a59f98', lawn: '#7f9b5c', stone: '#cbc2b0',
   },
   dark: {
-    steel: '#0e0f11', glass: '#1e1c1a', glow: '#f1c684', lamp: '#ffd894', light: '#ffffff', sign: '#43c34f',
+    steel: '#0e0f11', glass: '#1e1c1a', louver: '#1e1c1a', glow: '#f1c684', lobby: '#f1c684', lamp: '#ffd894', light: '#ffffff', sign: '#43c34f',
     granite: '#565860', lawn: '#2f402d', stone: '#6d6c6a',
   },
 };

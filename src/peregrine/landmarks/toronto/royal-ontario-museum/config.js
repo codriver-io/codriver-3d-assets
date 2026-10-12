@@ -16,21 +16,21 @@ export const SPEC = {
 export const PALETTES = {
   light: {
     stone: '#b9a684', stoneWest: '#9a8f7e', stoneDeep: '#8f8064', copper: '#6f9282', slate: '#6f7276', roofFlat: '#a4a39c',
-    window: '#2f373c', alu: '#c6cbce', aluMid: '#8f969b', aluDark: '#54595d', seam: '#3c4145', glass: '#2b4550', frame: '#0f1215', glow: '#86a9ba',
+    window: '#2f373c', alu: '#c6cbce', aluMid: '#8f969b', aluDark: '#54595d', seam: '#aeb4b8', glass: '#2b4550', frame: '#0f1215', glow: '#86a9ba',
   },
   dark: {
     stone: '#807966', stoneWest: '#6a645b', stoneDeep: '#5d564a', copper: '#4b665b', slate: '#3f454b', roofFlat: '#5e656c',
-    window: '#1b2126', alu: '#868e96', aluMid: '#636b72', aluDark: '#40464b', seam: '#262b30', glass: '#1f3640', frame: '#07090b', glow: '#ffcf8a',
+    window: '#1b2126', alu: '#868e96', aluMid: '#636b72', aluDark: '#40464b', seam: '#777f86', glass: '#1f3640', frame: '#07090b', glow: '#ffcf8a',
   },
 };
 // Draw-call budget (docs/3d-toronto-royal-ontario-museum.md): design names on the left, the exported material on the
 // right; one draw per exported material, so near is 13 and far 8. Near folds only look-alikes: the concrete walls
-// and flat roofs are the same grey, and the 8-triangle dark aluminium trim takes the seam colour. Far also folds
+// and flat roofs are the same grey, and the 8-triangle dark aluminium trim takes the window colour. Far also folds
 // minor tones into their neighbour: deep stone into stone, mid aluminium into aluminium, the dark trim and the
 // lit lobby glass into the window and glass tones.
 export const FOLD = {
-  near: { concrete: 'roofFlat', aluDark: 'seam' },
-  far: { concrete: 'roofFlat', stoneDeep: 'stone', aluMid: 'alu', aluDark: 'window', glow: 'glass' },
+  near: { concrete: 'roofFlat', aluDark: 'window' },
+  far: { frame: 'window', concrete: 'roofFlat', stoneDeep: 'stone', aluMid: 'alu', aluDark: 'window', glow: 'glass' },
 };
 /** The exported material for a design name at a detail level. */
 export const materialFor = (name, detail) => FOLD[detail]?.[name] ?? name;
