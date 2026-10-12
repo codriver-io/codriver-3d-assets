@@ -1,0 +1,65 @@
+{
+  "id": "edificio-de-correos-costa-rica",
+  "name": "Edificio de Correos",
+  "kind": "building",
+  "origin": [
+    -84.07998335,
+    9.9354046
+  ],
+  "height": 22,
+  "padM": 43,
+  "frontageBearing": 94.93,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no altitude or DEM baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1917 eclectic post and telegraph exterior. OSM 79.39 × 31.28 m plan; east-facing façade 94.93° bearing, rotation baked once. Heights, rear elevation, roof and simplified ornament estimated from photographs. No textures or captured mesh.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edificio-de-correos-costa-rica-near.glb",
+      "bytes": 1514568,
+      "triangles": 43495,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -18.601848602294922,
+          -2.086162576020456e-9,
+          -39.69646072387695
+        ],
+        "max": [
+          18.426620483398438,
+          22,
+          39.57301712036133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edificio-de-correos-costa-rica-far.glb",
+      "bytes": 472684,
+      "triangles": 11501,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -18.601848602294922,
+          -2.086162576020456e-9,
+          -39.69646072387695
+        ],
+        "max": [
+          18.426620483398438,
+          22,
+          39.5589599609375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-de-correos-costa-rica/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

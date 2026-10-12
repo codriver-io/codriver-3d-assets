@@ -1,10 +1,10 @@
 # Top-cities landmarks
 
-Original procedural models of landmarks and architectural road bridges in the cities where Codriver is driven most, beyond the Paris, Toronto, Montréal, Québec, San Francisco and Calgary sets. Forty are planned; each one is published here as soon as it passes review, as a high-detail (`near`) and a low-detail (`far`) self-contained GLB. Code and generators are MIT, models are CC BY 4.0, and mapped footprints and alignments come from OpenStreetMap (ODbL 1.0).
+Original procedural models of landmarks and architectural road bridges in the cities where Codriver is driven most, beyond the Paris, Toronto, Montréal, Québec, San Francisco and Calgary sets. Each one is published here as soon as it passes review, as a high-detail (`near`) and a low-detail (`far`) self-contained GLB. Code and generators are MIT, models are CC BY 4.0, and mapped footprints and alignments come from OpenStreetMap (ODbL 1.0).
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (98 released)
+## The collection (108 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -65,7 +65,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `storseisundet-bridge` | Storseisundet Bridge (Atlantic Ocean Road) | Averøy | bridge, road-fitted |
 | `halogaland-bridge` | Hålogaland Bridge | Narvik | bridge, road-fitted |
 | `hardanger-bridge` | Hardanger Bridge | Ulvik | bridge, road-fitted |
-| `tromso-bridge` | Tromsø Bridge | Tromsø | bridge, road-fitted |
+| `tromso-bridge` | Tromsø Bridge (Tromsøbrua) | Tromsø | bridge, road-fitted |
 | `helgeland-bridge` | Helgeland Bridge | Leirfjord | bridge, road-fitted |
 | `svinesund-bridge` | Svinesund Bridge | Halden | bridge, road-fitted |
 | `oslo-opera-house` | Oslo Opera House | Oslo | building |
@@ -77,27 +77,27 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `astrup-fearnley-museum` | Astrup Fearnley Museum of Modern Art | Oslo | building |
 | `bryggen` | Bryggen | Bergen | building |
 | `nidaros-cathedral` | Nidaros Cathedral | Trondheim | building |
-| `arctic-cathedral` | Arctic Cathedral | Tromsø | building |
+| `arctic-cathedral` | Arctic Cathedral (Tromsdalen kirke) | Tromsø | building |
 | `norwegian-petroleum-museum` | Norwegian Petroleum Museum | Stavanger | building |
 | `vikingskipet` | Vikingskipet (Hamar Olympic Hall) | Hamar | building |
 | `kilden-performing-arts-centre` | Kilden Performing Arts Centre | Kristiansand | building |
-| `borgund-stave-church` | Borgund Stave Church | Lærdal | building |
+| `borgund-stave-church` | Borgund Stave Church (Borgund stavkyrkje) | Lærdal | building |
 | `farris-bad` | Farris Bad | Larvik | building |
 | `pont-neuf-toulouse` | Pont Neuf (Toulouse) | Toulouse | bridge, road-fitted |
 | `pont-des-catalans` | Pont des Catalans | Toulouse | bridge, road-fitted |
 | `viaduc-de-millau` | Millau Viaduct | Millau | bridge, road-fitted |
-| `basilique-saint-sernin` | Basilica of Saint-Sernin | Toulouse | building |
+| `basilique-saint-sernin` | Basilique Saint-Sernin | Toulouse | building |
 | `capitole-de-toulouse` | Capitole de Toulouse | Toulouse | building |
 | `dome-de-la-grave` | Dôme de la Grave (Chapelle Saint-Joseph) | Toulouse | building |
 | `cite-de-l-espace` | Cité de l'espace (Ariane 5) | Toulouse | building |
 | `couvent-des-jacobins` | Couvent des Jacobins | Toulouse | building |
 | `cite-de-carcassonne` | Cité de Carcassonne | Carcassonne | building |
-| `cathedrale-sainte-cecile-albi` | Albi Cathedral (Sainte-Cécile) | Albi | building |
+| `cathedrale-sainte-cecile-albi` | Cathédrale Sainte-Cécile d’Albi | Albi | building |
 | `pont-saint-pierre` | Pont Saint-Pierre | Toulouse | bridge, road-fitted |
 | `pont-saint-michel` | Pont Saint-Michel | Toulouse | bridge, road-fitted |
 | `ponts-jumeaux` | Ponts-Jumeaux | Toulouse | bridge, road-fitted |
 | `viaduc-de-calix` | Viaduc de Calix | Caen | bridge, road-fitted |
-| `pegasus-bridge` | Pegasus Bridge | Bénouville | bridge, road-fitted |
+| `pegasus-bridge` | Pegasus Bridge (1994) | Bénouville | bridge, road-fitted |
 | `pont-de-la-fonderie` | Pont de la Fonderie | Caen | bridge, road-fitted |
 | `pont-de-normandie` | Pont de Normandie | Honfleur | bridge, road-fitted |
 | `abbaye-aux-hommes` | Abbaye aux Hommes (Saint-Étienne and Hôtel de Ville) | Caen | building |
@@ -106,6 +106,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `abbaye-aux-dames` | Abbaye aux Dames (La Trinité) | Caen | building |
 | `memorial-de-caen` | Mémorial de Caen | Caen | building |
 | `cathedrale-de-bayeux` | Bayeux Cathedral (Notre-Dame) | Bayeux | building |
+| `georgia-state-capitol` | Georgia State Capitol | Atlanta | building |
+| `bank-of-america-plaza-atlanta` | Bank of America Plaza (Atlanta) | Atlanta | building |
+| `sunshine-skyway-bridge` | Sunshine Skyway Bridge | St. Petersburg | bridge, road-fitted |
+| `dallas-city-hall` | Dallas City Hall | Dallas | building |
+| `fox-theatre-atlanta` | Fox Theatre | Atlanta | building |
+| `lviv-national-opera` | Lviv National Opera | Lviv | building |
+| `jpmorgan-chase-tower-houston` | JPMorgan Chase Tower | Houston | building |
+| `willis-tower` | Willis Tower | Chicago | building |
+| `mercedes-benz-stadium` | Mercedes-Benz Stadium | Atlanta | building |
+| `edificio-de-correos-costa-rica` | Edificio de Correos | San José | building |
 
 ## A landmark is a folder
 

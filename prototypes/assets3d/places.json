@@ -7,6 +7,21 @@
     "country": "Netherlands",
     "continent": "Europe"
   },
+  "Arlington": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
+  "Atlanta": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
+  },
+  "Austin": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
   "Averøy": {
     "country": "Norway",
     "continent": "Europe"
@@ -20,6 +35,11 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Baytown": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
   "Bénouville": {
     "country": "France",
     "continent": "Europe"
@@ -27,6 +47,11 @@
   "Bergen": {
     "country": "Norway",
     "continent": "Europe"
+  },
+  "Birmingham": {
+    "country": "United States",
+    "region": "Alabama",
+    "continent": "North America"
   },
   "Bogotá": {
     "country": "Colombia",
@@ -49,10 +74,38 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Cartago": {
+    "country": "Costa Rica",
+    "region": "Cartago",
+    "continent": "North America"
+  },
+  "Chicago": {
+    "country": "United States",
+    "region": "Illinois",
+    "continent": "North America"
+  },
+  "Cologne": {
+    "country": "Germany",
+    "continent": "Europe"
+  },
+  "Columbus": {
+    "country": "United States",
+    "region": "Ohio",
+    "continent": "North America"
+  },
   "Dallas": {
     "country": "United States",
     "region": "Texas",
     "continent": "North America"
+  },
+  "Delta": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Dublin": {
+    "country": "Ireland",
+    "continent": "Europe"
   },
   "Edmonton": {
     "country": "Canada",
@@ -77,6 +130,10 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Helsinki": {
+    "country": "Finland",
+    "continent": "Europe"
+  },
   "Hérouville-Saint-Clair": {
     "country": "France",
     "continent": "Europe"
@@ -85,13 +142,27 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Houston": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
   "Kansas City": {
     "country": "United States",
     "region": "Missouri",
     "continent": "North America"
   },
+  "Kensington": {
+    "country": "United States",
+    "region": "Maryland",
+    "continent": "North America"
+  },
   "Kristiansand": {
     "country": "Norway",
+    "continent": "Europe"
+  },
+  "Kyiv": {
+    "country": "Ukraine",
     "continent": "Europe"
   },
   "Lærdal": {
@@ -106,8 +177,21 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Lisbon": {
+    "country": "Portugal",
+    "continent": "Europe"
+  },
   "London": {
     "country": "United Kingdom",
+    "continent": "Europe"
+  },
+  "Los Angeles": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Lviv": {
+    "country": "Ukraine",
     "continent": "Europe"
   },
   "Lyon": {
@@ -118,9 +202,23 @@
     "country": "Spain",
     "continent": "Europe"
   },
+  "Maple Ridge": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Marseille": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Medellín": {
     "country": "Colombia",
     "continent": "South America"
+  },
+  "Miami": {
+    "country": "United States",
+    "region": "Florida",
+    "continent": "North America"
   },
   "Millau": {
     "country": "France",
@@ -131,9 +229,23 @@
     "region": "Québec",
     "continent": "North America"
   },
+  "Munich": {
+    "country": "Germany",
+    "continent": "Europe"
+  },
   "Narvik": {
     "country": "Norway",
     "continent": "Europe"
+  },
+  "Nashville": {
+    "country": "United States",
+    "region": "Tennessee",
+    "continent": "North America"
+  },
+  "Orlando": {
+    "country": "United States",
+    "region": "Florida",
+    "continent": "North America"
   },
   "Oslo": {
     "country": "Norway",
@@ -142,6 +254,11 @@
   "Paris": {
     "country": "France",
     "continent": "Europe"
+  },
+  "Pitt Meadows": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
   },
   "Québec": {
     "country": "Canada",
@@ -167,6 +284,11 @@
     "region": "Québec",
     "continent": "North America"
   },
+  "San Antonio": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
+  },
   "San Francisco": {
     "country": "United States",
     "region": "California",
@@ -182,8 +304,17 @@
     "region": "California",
     "continent": "North America"
   },
+  "St. Petersburg": {
+    "country": "United States",
+    "region": "Florida",
+    "continent": "North America"
+  },
   "Stavanger": {
     "country": "Norway",
+    "continent": "Europe"
+  },
+  "Stuttgart": {
+    "country": "Germany",
     "continent": "Europe"
   },
   "Toronto": {
