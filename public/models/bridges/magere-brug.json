@@ -1,0 +1,117 @@
+{
+  "id": "magere-brug",
+  "name": "Magere Brug",
+  "kind": "bridge",
+  "origin": [
+    4.9023731,
+    52.36358365
+  ],
+  "height": 11.5,
+  "padM": 5,
+  "frontageBearing": 73,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          4.901760736963086,
+          52.36351629353063
+        ],
+        [
+          4.901817009141431,
+          52.363526799209545
+        ],
+        [
+          4.901860019470012,
+          52.36344089289108
+        ],
+        [
+          4.901803747291667,
+          52.36343038721216
+        ]
+      ],
+      [
+        [
+          4.902858044440816,
+          52.36372115426947
+        ],
+        [
+          4.90291431661916,
+          52.363731659948385
+        ],
+        [
+          4.9029573269477424,
+          52.36364575362992
+        ],
+        [
+          4.902901054769397,
+          52.363635247951
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        4.901810378216549,
+        52.36347859321086
+      ],
+      [
+        4.902907685694279,
+        52.36368345394969
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the lower exposed support/bank foundation datum; deck at 2.6 m is a photographic clearance estimate, not surveyed river or terrain altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current bridge in its closed position, free-standing pedestrian/cycle landmark. OSM crossing 80.96 m and bearing 73 degrees; gantry height, clearances, timber details and light spacing estimated from photos. Bank-only terrain-pad policy awaits independent app integration.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/magere-brug-near.glb",
+      "bytes": 1703396,
+      "triangles": 42956,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -41.239994049072266,
+          -1.4305114426349519e-8,
+          -16.173999786376953
+        ],
+        "max": [
+          39.13612365722656,
+          11.484999656677246,
+          16.817216873168945
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/magere-brug-far.glb",
+      "bytes": 568884,
+      "triangles": 8908,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -41.13053512573242,
+          -1.4305114426349519e-8,
+          -16.071182250976562
+        ],
+        "max": [
+          39.026668548583984,
+          11.484999656677246,
+          16.780244827270508
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/magere-brug/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

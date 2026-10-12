@@ -1,0 +1,288 @@
+{
+  "id": "motherland-monument",
+  "name": "Motherland Monument",
+  "kind": "building",
+  "origin": [
+    30.563060582456142,
+    50.426552964912275
+  ],
+  "height": 102,
+  "padM": 82,
+  "frontageBearing": 56.5,
+  "figureBaseM": 40,
+  "figureHeightM": 62,
+  "swordLengthM": 16,
+  "shieldHeightM": 13,
+  "shieldWidthM": 8,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          30.5636901,
+          50.4270853
+        ],
+        [
+          30.5634625,
+          50.4269815
+        ],
+        [
+          30.5634077,
+          50.426984
+        ],
+        [
+          30.5633703,
+          50.4269968
+        ],
+        [
+          30.5631782,
+          50.4271658
+        ],
+        [
+          30.5631058,
+          50.427147
+        ],
+        [
+          30.5630104,
+          50.4271223
+        ],
+        [
+          30.562829,
+          50.4271205
+        ],
+        [
+          30.5626847,
+          50.4270845
+        ],
+        [
+          30.5625479,
+          50.4270409
+        ],
+        [
+          30.5625806,
+          50.4270068
+        ],
+        [
+          30.562539,
+          50.426985
+        ],
+        [
+          30.5625197,
+          50.4270011
+        ],
+        [
+          30.5623725,
+          50.426914
+        ],
+        [
+          30.5622952,
+          50.4268505
+        ],
+        [
+          30.5622208,
+          50.426752
+        ],
+        [
+          30.5621851,
+          50.4266715
+        ],
+        [
+          30.5621691,
+          50.4265892
+        ],
+        [
+          30.5621691,
+          50.4265175
+        ],
+        [
+          30.5621785,
+          50.4264508
+        ],
+        [
+          30.5622006,
+          50.4263962
+        ],
+        [
+          30.5621664,
+          50.4263859
+        ],
+        [
+          30.5621828,
+          50.4263657
+        ],
+        [
+          30.5621917,
+          50.4263547
+        ],
+        [
+          30.5622429,
+          50.4262864
+        ],
+        [
+          30.5623334,
+          50.426221
+        ],
+        [
+          30.5624943,
+          50.4261377
+        ],
+        [
+          30.5626854,
+          50.4260783
+        ],
+        [
+          30.5628671,
+          50.4260476
+        ],
+        [
+          30.5630623,
+          50.4260416
+        ],
+        [
+          30.5632272,
+          50.4260531
+        ],
+        [
+          30.5634257,
+          50.4260954
+        ],
+        [
+          30.5635706,
+          50.4261591
+        ],
+        [
+          30.5637194,
+          50.4262338
+        ],
+        [
+          30.5638281,
+          50.4263167
+        ],
+        [
+          30.5638871,
+          50.4263842
+        ],
+        [
+          30.5639467,
+          50.4264731
+        ],
+        [
+          30.5639922,
+          50.4265254
+        ],
+        [
+          30.5640399,
+          50.4265803
+        ],
+        [
+          30.5640993,
+          50.4266163
+        ],
+        [
+          30.5641749,
+          50.4266621
+        ],
+        [
+          30.5640446,
+          50.4267762
+        ],
+        [
+          30.5640149,
+          50.4268022
+        ],
+        [
+          30.5639984,
+          50.4268177
+        ],
+        [
+          30.563874,
+          50.4269256
+        ],
+        [
+          30.5637431,
+          50.4270391
+        ],
+        [
+          30.5637204,
+          50.42706
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8,
+    "refs": [
+      [
+        30.5630606,
+        50.426553
+      ],
+      [
+        30.56318,
+        50.42655
+      ],
+      [
+        30.56294,
+        50.42655
+      ],
+      [
+        30.56306,
+        50.42663
+      ],
+      [
+        30.56306,
+        50.42648
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at museum entrance/plaza grade; rigid base, no hill or absolute elevation baked into the GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Post-2023 Ukrainian trident version. Rotation baked once: front 56.5° from north. Cityscape and Full 3D world not tested; hillside pad/entrance residuals require separate integration review.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/motherland-monument-near.glb",
+      "bytes": 455044,
+      "triangles": 13995,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -63.41400146484375,
+          0,
+          -68.22000122070312
+        ],
+        "max": [
+          79.0250015258789,
+          102,
+          56.92499923706055
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/motherland-monument-far.glb",
+      "bytes": 215728,
+      "triangles": 4543,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -63.41400146484375,
+          0,
+          -68.22000122070312
+        ],
+        "max": [
+          79.0250015258789,
+          102,
+          56.92499923706055
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/motherland-monument/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

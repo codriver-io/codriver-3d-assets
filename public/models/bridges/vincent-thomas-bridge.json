@@ -1,0 +1,67 @@
+{
+  "id": "vincent-thomas-bridge",
+  "name": "Vincent Thomas Bridge",
+  "kind": "bridge",
+  "origin": [
+    -118.271390075,
+    33.7494748
+  ],
+  "height": 111.25,
+  "padM": 1100,
+  "frontageBearing": 100,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at water/flat-map grade. Road surface 60 m, truss underside 56 m, tower top 111.25 m; absolute-deck terrain policy with DEM-fitted approaches. No latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "457.2 m main span, 154.2288 m side spans, 111.252 m towers, 15.8496 m roadway from Port of Los Angeles historical report. Cable sag, sections, blue lighting, maintenance margins and anchorage form are photo estimates. Approach-inclusive alignment exceeds the published 1847.1 m structural length to meet flat Cityscape grade. No textures.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/vincent-thomas-bridge-near.glb",
+      "bytes": 2832752,
+      "triangles": 79072,
+      "drawCalls": 23,
+      "bounds": {
+        "min": [
+          -1364.928955078125,
+          -0.07999999821186066,
+          -138.80560302734375
+        ],
+        "max": [
+          1161.5133056640625,
+          111.25,
+          105.91956329345703
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/vincent-thomas-bridge-far.glb",
+      "bytes": 945656,
+      "triangles": 26216,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -1364.928955078125,
+          -0.07999999821186066,
+          -138.8057098388672
+        ],
+        "max": [
+          1161.5133056640625,
+          111.25,
+          105.85325622558594
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vincent-thomas-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

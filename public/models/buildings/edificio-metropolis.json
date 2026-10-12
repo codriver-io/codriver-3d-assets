@@ -1,0 +1,189 @@
+{
+  "id": "edificio-metropolis",
+  "name": "Edificio Metrópolis",
+  "kind": "building",
+  "origin": [
+    -3.69747,
+    40.41878
+  ],
+  "height": 45,
+  "padM": 30,
+  "frontageBearing": 90,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -3.6976931,
+          40.4189001
+        ],
+        [
+          -3.6975816,
+          40.418894
+        ],
+        [
+          -3.6973379,
+          40.4188814
+        ],
+        [
+          -3.6973374,
+          40.4188714
+        ],
+        [
+          -3.6973259,
+          40.4188759
+        ],
+        [
+          -3.6973092,
+          40.4188797
+        ],
+        [
+          -3.6972919,
+          40.4188806
+        ],
+        [
+          -3.6972772,
+          40.4188791
+        ],
+        [
+          -3.6972632,
+          40.4188756
+        ],
+        [
+          -3.697249,
+          40.4188696
+        ],
+        [
+          -3.6972367,
+          40.4188616
+        ],
+        [
+          -3.6972251,
+          40.4188496
+        ],
+        [
+          -3.6972176,
+          40.4188359
+        ],
+        [
+          -3.6972146,
+          40.4188196
+        ],
+        [
+          -3.6972174,
+          40.4188033
+        ],
+        [
+          -3.6972243,
+          40.4187902
+        ],
+        [
+          -3.697235,
+          40.4187786
+        ],
+        [
+          -3.6972465,
+          40.4187706
+        ],
+        [
+          -3.6972598,
+          40.4187643
+        ],
+        [
+          -3.6972747,
+          40.4187602
+        ],
+        [
+          -3.6972904,
+          40.4187583
+        ],
+        [
+          -3.697311,
+          40.4187594
+        ],
+        [
+          -3.6973052,
+          40.418745
+        ],
+        [
+          -3.6974463,
+          40.4186988
+        ],
+        [
+          -3.697653,
+          40.418631
+        ],
+        [
+          -3.6976738,
+          40.4186697
+        ],
+        [
+          -3.6977388,
+          40.4187907
+        ],
+        [
+          -3.6976531,
+          40.4188145
+        ],
+        [
+          -3.6976777,
+          40.4188672
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 6
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid foundation at local flat-map y=0; terrain and absolute elevation excluded.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1911 Beaux-Arts exterior with present-day winged Victory, not the original Phoenix. Published 45 m overall height; individual tiers, columns, ornaments and sculpture proportions estimated from photographs. Cityscape and Full 3D world not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edificio-metropolis-near.glb",
+      "bytes": 932088,
+      "triangles": 26136,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -23.359773635864258,
+          0,
+          -13.791473388671875
+        ],
+        "max": [
+          22.100000381469727,
+          44.931129455566406,
+          17.077857971191406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edificio-metropolis-far.glb",
+      "bytes": 348568,
+      "triangles": 8484,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -23.359773635864258,
+          0,
+          -13.791473388671875
+        ],
+        "max": [
+          22.100000381469727,
+          44.931129455566406,
+          17.077857971191406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-metropolis/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

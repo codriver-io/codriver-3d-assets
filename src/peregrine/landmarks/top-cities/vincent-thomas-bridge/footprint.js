@@ -1,2 +1,4 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+import { ROAD_WAYS } from './vincent-thomas-bridge-alignment.js';
+// Exact provider tower/support buildings from the dossier OSM extract.
+export const FOOTPRINTS = [[[-118.2690362,33.7489797],[-118.2689659,33.748971],[-118.2689207,33.7492252],[-118.2689908,33.7492339],[-118.2690362,33.7489797]],[[-118.2738595,33.7497244],[-118.2737893,33.7497157],[-118.273744,33.7499699],[-118.2738142,33.7499786],[-118.2738595,33.7497244]]];
+export const OSM_WAYS = [...ROAD_WAYS,1011852501,1011852499,1011852500];
