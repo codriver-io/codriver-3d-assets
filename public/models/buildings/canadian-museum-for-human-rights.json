@@ -22,8 +22,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/canadian-museum-for-human-rights-near.glb",
-      "bytes": 1700044,
-      "triangles": 33074,
+      "bytes": 1720180,
+      "triangles": 33382,
       "drawCalls": 10,
       "bounds": {
         "min": [
@@ -40,8 +40,8 @@
     },
     "far": {
       "url": "/models/buildings/canadian-museum-for-human-rights-far.glb",
-      "bytes": 346392,
-      "triangles": 6239,
+      "bytes": 354840,
+      "triangles": 6363,
       "drawCalls": 7,
       "bounds": {
         "min": [

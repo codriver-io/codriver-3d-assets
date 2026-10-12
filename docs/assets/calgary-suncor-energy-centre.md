@@ -106,3 +106,14 @@ Every office storey retains its granite spandrel and dark glass opening in far; 
 Reference basis: the supplied review and reference photograph in its contact sheet, plus the existing authoring notes. No new city dossier exists for these first-run Calgary/Toronto assets; the sculptural approximation uses the existing documented plan and general architectural knowledge.
 
 Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed.
+
+## Live-model reconciliation, 2026-10-11
+
+The live far LOD already retained every floor; its remaining defect was very wide continuous window bands. Added 6.1 m horizontal bays with flat 0.24 m piers to the existing floor bands, preserving the near model and all live colour, silhouette, roof, notch and podium improvements. Window-rhythm candidates fall from two to zero; floor-scale panes remain about 1.85 m high, with the same office-floor pitch as near.
+
+| LOD | Live triangles / draws / bytes | Reconciled triangles / draws / bytes |
+| --- | ---: | ---: |
+| near | 4,797 / 4 / 259,056 | 4,797 / 4 / 259,056 |
+| far | 2,941 / 4 / 159,020 | 3,473 / 4 / 187,556 |
+
+These captures verify the shown views; night, lifecycle transitions, terrain refinement and Tesla hardware performance were not retested. Focused landmark/city conformance tests, the full landmark suite (2,245 tests), catalog checks, preview generation and selected-model depth-layer freshness checks pass.

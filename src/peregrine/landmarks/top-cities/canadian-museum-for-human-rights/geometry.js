@@ -84,7 +84,9 @@ export function create({detail='near'}={}) {
     const faces=THREE.ShapeUtils.triangulateShape(ring.map(q=>new THREE.Vector2(...q)),[]);
     for(const f of faces) {
       const vs=f.map(i=>ring[i]), n=c[3]?(near?6:3):1;
-      const at=(i,j)=>mix(mix(vs[0],vs[1],i/n),vs[2],j/n/(1-i/n||1));
+      // Uniform barycentric subdivision shares identical vertices along
+      // adjacent roof triangles, keeping the live curved roots watertight.
+      const at=(i,j)=>vs[0].map((v,k)=>v*(1-(i+j)/n)+vs[1][k]*i/n+vs[2][k]*j/n);
       for(let i=0;i<n;i++)for(let j=0;j<n-i;j++) {
         const a=at(i,j),d=at(i+1,j),e=at(i,j+1);
         const draw=(a,d,e)=>{

@@ -40,8 +40,8 @@ export function meshKit() {
     else quad(m, [u0, y0, v], [u1, y0, v], [u1, y1, v], [u0, y1, v]);
   }
   function panelEW(m, v0, v1, y0, y1, u, sign) {
-    if (sign < 0) quad(m, [u, y0, v1], [u, y0, v0], [u, y1, v0], [u, y1, v1]);
-    else quad(m, [u, y0, v0], [u, y0, v1], [u, y1, v1], [u, y1, v0]);
+    if (sign < 0) quad(m, [u, y0, v0], [u, y0, v1], [u, y1, v1], [u, y1, v0]);
+    else quad(m, [u, y0, v1], [u, y0, v0], [u, y1, v0], [u, y1, v1]);
   }
 
   // Gable roof, ridge running along u (street facades). Eaves at ye, ridge at yr.

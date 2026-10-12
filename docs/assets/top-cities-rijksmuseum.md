@@ -53,3 +53,14 @@ QA correction: four-bay north tower arcade/pilaster stages and pale masonry pane
 Compared against the supplied independent review and reference tile in the original contact sheet. No new external model or texture was retained.
 
 Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction.
+
+## Live-model reconciliation, 2026-10-11
+
+Rear north-tower shafts now carry courses, three arched bays and upper windows in both LODs. All four south turrets retain upper courses and bays on both faces and sides. The local side-panel helper had reversed east/west winding; correcting it makes the existing and new side windows face outward and reduces outside-in back-face hits from 0.8% to 0%. The live front facade, clock hands, north roof profiles, gallery window cadence and skylight detail are preserved.
+
+| LOD | Live triangles / draws / bytes | Reconciled triangles / draws / bytes |
+| --- | ---: | ---: |
+| near | 4,699 / 9 / 262,108 | 5,859 / 9 / 323,116 |
+| far | 3,594 / 8 / 201,964 | 4,688 / 8 / 260,032 |
+
+These captures verify the shown views; night, lifecycle transitions, terrain refinement and Tesla hardware performance were not retested. Focused landmark/city conformance tests, the full landmark suite (2,245 tests), catalog checks, preview generation and selected-model depth-layer freshness checks pass.

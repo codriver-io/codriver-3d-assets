@@ -524,9 +524,23 @@ function orsay(b,detail){const {box,roof,bar,barrel,parapet,a,cyl}=b,near=detail
     box('stone',x,40,-44,7,1.2,3);cyl('stone',x,41.4,-44,.7,1.7,8);
     cyl('stone',x,42.6,-44,.42,.7,8);
     const drum=new THREE.CylinderGeometry(6.15,6.15,3.2,near?24:12);drum.rotateX(Math.PI/2);a.place(drum,'stone',x,29.7,-45);
-    a.clock(x,29.7,-46.7,5.5,{yaw:Math.PI,face:'shadow',rim:'stone',hands:'roofLight'});
+    // Keep the live drum, crown and arch framing. The large dials use
+    // rank-neutral roof/clock materials and 65 cm clearance for app depth.
+    const ring=new THREE.RingGeometry(5.5,5.88,near?40:24);ring.rotateY(Math.PI);
+    a.place(ring,'stone',x,29.7,-47.2);
+    const dial=new THREE.CircleGeometry(5.5,near?40:24);dial.rotateY(Math.PI);
+    a.place(dial,'roof',x,29.7,-47.25);
+    const markZ=-47.9;
+    for(let i=0;i<12;i++){
+      const t=i*Math.PI/6,p=(r)=>[x+Math.sin(t)*r,29.7+Math.cos(t)*r,markZ];
+      bar('clock',p(4.15),p(4.95),.14,4);
+      bar('clock',p(.48),p(5.45),.08,4);
+    }
+    bar('clock',[x,29.7,markZ-.2],[x+2.4,30.7,markZ-.2],.22,6);
+    bar('clock',[x,29.7,markZ-.2],[x-.8,33.4,markZ-.2],.18,6);
+    const hub=new THREE.CircleGeometry(.38,near?12:8);hub.rotateY(Math.PI);
+    a.place(hub,'clock',x,29.7,markZ-.3);
     if(near){
-      for(let i=0;i<12;i++){const t=i*Math.PI/6;bar('roofLight',[x+Math.sin(t)*1.3,29.7+Math.cos(t)*1.3,-47.1],[x+Math.sin(t)*4.5,29.7+Math.cos(t)*4.5,-47.1],.035,4);}
       for(const side of [-1,1])figure(x+side*6,21,-44.7,1.05);
       for(const u of [-6,0,6])for(const y of [30,34])a.clock(x+u,y,-37.7, .55,{yaw:Math.PI,face:'shadow',rim:'roofLight',hands:'roofLight'});
     }

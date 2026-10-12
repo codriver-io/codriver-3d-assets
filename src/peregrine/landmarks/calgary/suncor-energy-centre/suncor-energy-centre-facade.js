@@ -60,7 +60,7 @@ function clip(s0, s1, y1, y2, top) {
  *   a, b      wall ends (x, z), n its outward normal; inA, inB the same ends on the inset outline (the glass plane)
  *   topAt     y of the roof at a plan point (flat or the sloped plane); the wall is cut by it
  *   rows      [{ sill, head, lit? }] windows; yLo the bottom of the wall (above a podium where one hides the foot)
- *   near      full rhythm (3 m bays, piers as proud fins, lit windows); far has 12 m bays and every floor strip
+ *   near      full rhythm (3 m bays, piers as proud fins, lit windows); far has 6 m bays and every floor strip
  * A window exists where its head clears the roof line by 0.5 m, so the top floors step down with the slope.
  */
 export function wall(M, near, o) {
@@ -82,8 +82,8 @@ export function wall(M, near, o) {
   };
   if (solid || L < 2.4 || !rows.length) { emit(clip(0, L, yLo, Infinity, top)); glassOn(yLo > 0 ? 0 : yLo); return; }
 
-  // Far: 12 m bays only so a strip can stop where the roof falls; no piers between them, the strips run on
-  const bay = near ? 3.05 : 12.2, pw = near ? 0.32 : 0;
+  // Far retains a coarse horizontal grid as well as every office floor.
+  const bay = near ? 3.05 : 6.1, pw = near ? 0.32 : .24;
   const nb = Math.max(1, Math.round(L / bay)), pitch = L / nb;
   // Which bays carry which rows: the head must clear the lower end of the bay's roof line by 0.5 m.
   const runs = rows.map((r) => {
@@ -110,12 +110,12 @@ export function wall(M, near, o) {
   // The glass: one quad on the inset outline behind all the windows, cut 0.5 m under the roof line.
   glassOn(yLo > 0 ? 0 : rows[kf].sill - 0.05);
 
-  // Piers between neighbouring windows stand 15 cm proud of the spandrels, one quad per boundary.
-  if (near) {
+  // Near piers project 15 cm; far keeps flat piers with the same floor cadence.
+  {
     for (let i = 1; i < nb; i++) {
       let lo = Infinity, hi = -Infinity;
       rows.forEach((r, k) => { const run = runs[k]; if (run && run.j0 <= i - 1 && run.j1 >= i) { lo = Math.min(lo, r.sill); hi = Math.max(hi, r.head); } });
-      if (hi > lo) M.get('granite').quad(P(i * pitch - pw / 2, lo, 0.15), P(i * pitch + pw / 2, lo, 0.15), P(i * pitch + pw / 2, hi, 0.15), P(i * pitch - pw / 2, hi, 0.15), N);
+      if (hi > lo) M.get('granite').quad(P(i * pitch - pw / 2, lo, near ? .15 : 0), P(i * pitch + pw / 2, lo, near ? .15 : 0), P(i * pitch + pw / 2, hi, near ? .15 : 0), P(i * pitch - pw / 2, hi, near ? .15 : 0), N);
     }
   }
 
