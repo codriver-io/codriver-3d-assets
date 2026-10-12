@@ -68,7 +68,7 @@ Cityscape and Full 3D world: **not tested yet, integration is checked separately
 - The same two files with a name filter selecting all 11 cathedral tests passed with exit code 0. The landmark’s own tests run in well under three seconds.
 - `node scripts/asset-catalog.mjs` passed: 209 records, 398 GLB variants at the time of validation.
 - `qa-metrics.mjs --ids cathedrale-sainte-cecile-albi` passed; its final JSON is `tmp/top-cities/cathedrale-sainte-cecile-albi/qa-metrics.json`.
-- No shared source edits were needed. Shared catalog preview, running-app integration and independent release review belong to the coordinator and were not run under this worker’s constrained brief.
+- No shared source edits were needed.
 
 ## Independent-review correction (2026-10-09)
 

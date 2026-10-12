@@ -42,6 +42,6 @@ The final technical cleanup moved buried hall trim bottoms off the wall-bottom p
 
 Focused command passed **116/116 tests**, including all three Liberty Memorial conformance checks and its four landmark tests; its own tests finish in about 0.23 s. Tests pin height/taper, museum portal depth, descending flights, six hall windows, four crown figures, sphinx massing and footprint containment. Shared catalog validation was run twice: both attempts failed exclusively on the other worker’s unregistered `/models/buildings/torre-colpatria-far.glb`; no Liberty Memorial errors were reported, and its record/manifest/exports passed focused conformance and QA validation. Standalone asset inspection only; no app, staging or public deployment.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. North hillside/pad edges, both entrance elevations, replacement lifecycle and hardware performance need separate app validation. Independent reviewer acceptance remains with the coordinator.
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. North hillside/pad edges, both entrance elevations, replacement lifecycle and hardware performance need separate app validation.
 
 Rebuild: `pnpm build:top-cities-landmarks liberty-memorial --no-check`. Focused tests: `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/liberty-memorial/liberty-memorial.test.js`.

@@ -103,4 +103,4 @@ Cityscape and Full 3D world in the running app: **not tested yet, integration is
 
 Weathered grey sandstone and muted clay roof replace the tan/salmon palette; staggered 10 cm rock-face relief adds the masonry rhythm; all four far clocks retain contrasting hands and hour marks.
 
-This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/calgary-city-hall.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/calgary-city-hall-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.

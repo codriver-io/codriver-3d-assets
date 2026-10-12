@@ -97,8 +97,6 @@ Cityscape: **not tested yet, integration is checked separately.** Full 3D world:
 
 QA 2026-10-11: belfry cornice raised to an estimated 62 m with shorter spires, stronger ribs, enlarged lucarnes and cornice pinnacles. Tips remain 91 m; all four belfry faces retain twin arched openings in far, along with the rose window and cornices.
 
-Current export costs and Cityscape/Full 3D world evidence are recorded in `tmp/landmark-qa/fix/REPORT.md`; older measurements and screenshots above describe previous revisions.
-
 Current measured exports: near: 7,878 triangles / 6 draws / 447,616 bytes; far: 2,136 triangles / 6 draws / 127,912 bytes. Geometry metrics report no unresolved issues.
 
-Current mode validation (2026-10-11): **Cityscape verified; Full 3D world verified**, in the normal app on isolated slot C with live Protomaps and public Terrarium terrain. Far, near and street captures are listed in `tmp/landmark-qa/fix/REPORT.md`; these mode claims supersede older not-tested notes above. Asset readiness and inspector output alone were not used to establish terrain verification.
+Current mode validation (2026-10-11): **Cityscape verified; Asset readiness and inspector output alone were not used to establish terrain verification.

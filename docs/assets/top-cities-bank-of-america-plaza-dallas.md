@@ -60,6 +60,6 @@ Both are well below the contract caps. Exported bounds and material names agree 
 
 ## Limits and integration
 
-Intermediate crown elevations, facade bay layout, lobby doors and lighting tube thickness are approximations. The shell has no interiors, operating doors, small rooftop communications equipment, exact marble joints, reflected skyline textures or programmable color schedule. Self-lit geometry approximates luminous tubes without bloom. Photograph reflections and office occupancy are stylized. Independent visual review remains the coordinator's separate acceptance step.
+Intermediate crown elevations, facade bay layout, lobby doors and lighting tube thickness are approximations. The shell has no interiors, operating doors, small rooftop communications equipment, exact marble joints, reflected skyline textures or programmable color schedule. Self-lit geometry approximates luminous tubes without bloom. Photograph reflections and office occupancy are stylized.
 
 **Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately.** The rigid grade-level tower and bounded 43 m pad should suit the downtown site, but DEM relief, entrances, provider masking, late loads, terrain refinement, mode switches and actual device performance remain unverified. No app/server/deployment or shared files were changed.

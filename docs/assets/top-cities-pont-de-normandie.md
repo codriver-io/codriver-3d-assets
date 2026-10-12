@@ -83,7 +83,7 @@ Focused tests cover crown/separation from geometry, inverted-Y apertures and sol
 
 ## App integration evidence
 
-Local bundle **dd6a54dde2e1**, slot D **3282 / 3284**, standard Protomaps tiles from `tiles.codriver.io`. World mode uses 256 px Terrarium DEM, max zoom 15. Prescribed `app-shot.mjs --ids pont-de-normandie --shots far,near,street` runs load and activate both exported LODs in both modes. Both banks were additionally photographed at each physical abutment and each grade foot, facing both directions, using the same page automation and live map APIs. `final/app-approaches-sheet.jpg` was opened and judged: slab-to-ramp continuity and grade-foot contact are visible, with no observed vertical step/gap or duplicate elevated generic deck. The fallback road changes width/colour where it joins the ordinary road ribbon; live HD lane fit remains unverified.
+World mode uses 256 px Terrarium DEM, max zoom 15. Prescribed `app-shot.mjs --ids pont-de-normandie --shots far,near,street` runs load and activate both exported LODs in both modes. Both banks were additionally photographed at each physical abutment and each grade foot, facing both directions, using the same page automation and live map APIs. `final/app-approaches-sheet.jpg` was opened and judged: slab-to-ramp continuity and grade-foot contact are visible, with no observed vertical step/gap or duplicate elevated generic deck. The fallback road changes width/colour where it joins the ordinary road ribbon; live HD lane fit remains unverified.
 
 The final `final/app-modes-sheet.jpg` and `final/reference-and-export-sheet.jpg` were regenerated and opened after the landing correction. The approach sheet has four columns: northern physical abutment both headings, southern physical abutment both headings; next row has northern and southern grade feet both headings. First two rows are Cityscape, last two are Full 3D world.
 
@@ -119,10 +119,7 @@ HD pavement/paint is unavailable locally: `/osm-lanes` returns 503 without Redis
 | Full mode/late-load/reanchor/failure lifecycle matrix | Focused terrain gate/restoration verified; complete app matrix not tested |
 | MCU2/MCU3 hardware performance | Not measured |
 
-Independent visual review and any release remain the coordinator's separate gates. Only this landmark's source folder, catalog fragment, documentation and exports are retained; generated renderer bundles are restored and slot D servers are stopped before completion.
-
 The historical HD 503 limitations above describe the original October 10 run. The October 11 live-HD correction and evidence below supersede them.
-
 
 ## Independent review correction, 2026-10-10
 
@@ -139,13 +136,13 @@ I opened `review-fix/review-fix-sheet.jpg`, which contains the reproduced refere
 
 The final metrics file `tmp/top-cities/pont-de-normandie/review-fix-metrics.json` reports zero issues, zero coplanar overlap pairs and 0% back-face hits in 44 exterior rays; neither LOD exceeds budget. A new geometry test raycasts through an outer far stay from both sides and checks its visible thickness, and pins the 48 four-sided prism inventory. The existing terrain, deck-contact and round-trip tests were updated for the new crown/soffit; 298 combined focused tests and catalog validation pass.
 
-Re-ran app far/near/street captures and live `heightAt` queries in both Cityscape and Full 3D world on slot D. All six app views loaded/activated the expected LOD; all 20 mapped roadway vertices remain owned in both directions in each mode. The live table above now records the revised crown: Cityscape **59.5 / 59.5 m**, world **59.053 / 59.127 m** above local ground. Every tower, physical abutment, grade foot and 20 m landing sample is unchanged from the previous fit; feet/landings remain **0 / 0 m**. The maximum main-span grade is 4.22%, below the unchanged maximum approach grade of 7.25%.
+All six app views loaded/activated the expected LOD; all 20 mapped roadway vertices remain owned in both directions in each mode. The live table above now records the revised crown: Cityscape **59.5 / 59.5 m**, world **59.053 / 59.127 m** above local ground. Every tower, physical abutment, grade foot and 20 m landing sample is unchanged from the previous fit; feet/landings remain **0 / 0 m**. The maximum main-span grade is 4.22%, below the unchanged maximum approach grade of 7.25%.
 
 Opened the new `review-fix/app-modes-sheet.jpg` and `review-fix/app-approaches-sheet.jpg` (six mode views and sixteen bank/heading views). The higher crown preserves the existing deck/approach contact without an observed step or gap; ordinary-road width/colour transitions remain visible. Live HD pavement/paint still returns 503 without Redis, so its existing synthetic tests supply the HD landing evidence; a complete active navigation session remains untested. No shared integration source changed.
 
 ## Live HD correction, 2026-10-11
 
-Only `REVIEW-2.md` is addressed in this pass. The released proportions, cables, palettes and static geometry are retained. Two look/fix iterations were used on coordinator-authorized slot C: Cityscape 3278, Full 3D world 3280, Redis 6391, Protomaps tiles and 256 px Terrarium DEM (max zoom 15).
+Only `REVIEW-2.md` is addressed in this pass. The released proportions, cables, palettes and static geometry are retained.
 
 The initial live north-bank probe captured **four** visible overlays, two pavement and two paint batches, spanning stations approximately 32.64–1297.17 m. Ownership and the +0.06 m pavement / +0.08 m paint lifts were working. The missing paint came from the fitted model: OSM carriageway polygons overlap the median slightly, and a polygon's first vertex can lie on the opposite side. Without a declared median gap, the width sampler produced negative-side edges such as `[-0.701,10.002]` and positive-side edges `[-9.979,0.723]`. Those samples exchange carriageways, fold the slab/rails and cover the live paint.
 
@@ -192,4 +189,4 @@ Visible live HD overlays range from **4 to 10 draws**, with a maximum **18,245 t
 | Lane-centre common height, median rejection, depth-state reversal | Live queries and focused tests verified |
 | Full active route/car/traffic/camera/picking session and MCU hardware | Not tested; checked separately |
 
-Generated renderer bundles are restored before the owned-file commit, and both slot C servers are stopped by PID. Redis remains running. No shared source or other landmark is changed.
+Redis remains running. No shared source or other landmark is changed.

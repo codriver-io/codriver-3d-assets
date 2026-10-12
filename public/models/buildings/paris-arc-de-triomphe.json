@@ -35,17 +35,17 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-arc-de-triomphe-near.glb",
-      "bytes": 365336,
-      "triangles": 5992,
+      "bytes": 896320,
+      "triangles": 28096,
       "drawCalls": 3,
       "bounds": {
         "min": [
-          -20.658549321106108,
+          -20.463586297046312,
           0,
           -25.885000232694864
         ],
         "max": [
-          20.658549321106108,
+          20.463586297046312,
           50.25,
           25.885000232694864
         ]
@@ -53,9 +53,9 @@
     },
     "far": {
       "url": "/models/buildings/paris-arc-de-triomphe-far.glb",
-      "bytes": 105252,
-      "triangles": 1656,
-      "drawCalls": 2,
+      "bytes": 386412,
+      "triangles": 9928,
+      "drawCalls": 3,
       "bounds": {
         "min": [
           -20.463586297046312,

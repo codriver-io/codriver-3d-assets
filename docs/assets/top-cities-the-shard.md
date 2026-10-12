@@ -6,7 +6,7 @@ Original procedural model of the completed Renzo Piano tower at 32 London Bridge
 
 - [The Shard operator](https://www.the-shard.com/about/): 309.6 m total height, 95 storeys, highest occupied level 72, viewing floors 68–72 and 244 m gallery elevation, address and completed uses.
 - [Renzo Piano Building Workshop](https://www.rpbw.com/project/the-shard-london-bridge-tower): eight glass shards, naturally ventilated winter-garden fractures and extra-white double glazing; completed building photographs by Chris Martin and Michel Denancé.
-- [OSM main building](https://www.openstreetmap.org/way/31110737), way 226737912 and the eight blade/core parts from the coordinator's queued Overpass dossier. Geometry is derived ODbL data, © OpenStreetMap contributors. Reused the supplied JSON rather than making another network query.
+Geometry is derived ODbL data, © OpenStreetMap contributors. Reused the supplied JSON rather than making another network query.
 - Dossier Commons photographs and licences are listed in the catalog provenance and `tmp/top-cities/the-shard/refs/SOURCES.txt`. The completed street view `Shard from Great Tower Street` by EEPaul (CC BY 2.0) provides the principal dossier skyline reference. The additional RPBW aerial by Chris Martin and street image by Michel Denancé are copyrighted reference-only images, retained under ignored `tmp/` and never redistributed.
 
 | Quantity | Value | Evidence |
@@ -66,4 +66,4 @@ Final visual comparison actually read: `tmp/top-cities/shots/the-shard/final/the
 
 - Cityscape: **not tested yet, integration is checked separately**.
 - Full 3D world: **not tested yet, integration is checked separately**. Rigid local-grade foundation; pad and entrance datum need application verification.
-- Independent reviewer: pending the coordinator's exported-GLB review. Asset-authoring readiness does not establish terrain, device performance or runtime lifecycle correctness.
+Asset-authoring readiness does not establish terrain, device performance or runtime lifecycle correctness.

@@ -51,8 +51,7 @@ The final exported GLBs were viewed beside the facade, river and night photos in
 
 Both exported bounds match exactly: x −22.479 to 22.409 m, y 0 to 56 m, z −36.101 to 23.330 m. `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/dome-de-la-grave/dome-de-la-grave.test.js` passed all 256 tests, including all four landmark-specific tests (eight glazing raycasts, solid inter-window wall, lantern/door, mapped diameter, grade and footprint envelope). `node scripts/asset-catalog.mjs` passed, 209 entries / 398 GLB variants. Targeted deterministic QA in `tmp/top-cities/dome-de-la-grave/metrics.json` found no issues: 0% back-face hits in 288 rays, no removable attributes and no material-overlap area at reported precision. These are asset checks, not device benchmarks.
 
-Initial independent review returned PASS-WITH-NITS (recognisability 4/5); the requested refinements are documented below for coordinator re-review. Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately. Static export readiness is not terrain, lifecycle or hardware certification.
-
+Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately. Static export readiness is not terrain, lifecycle or hardware certification.
 
 ## Independent review refinement, 2026-10-09
 

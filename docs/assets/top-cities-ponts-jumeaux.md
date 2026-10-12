@@ -69,7 +69,6 @@ Live HD pavement/paint, Tesla hardware and production traffic are not establishe
 
 Delivery is committed on the dedicated landmark branch; only the owned landmark source, catalog fragment, document and exports are retained. Local servers were stopped after QA, and generated shared renderer bundles were restored to the original branch contents.
 
-
 ## Independent review fixes (2026-10-09)
 
 Addressed all four findings from `tmp/top-cities/review/ponts-jumeaux/REVIEW.md` in two look/fix rounds:

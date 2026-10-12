@@ -35,8 +35,7 @@ Eight semantic materials have matching light/dark keys; only globe lamps are emi
 
 Initial procedural contact sheet: `tmp/top-cities/shots/arlington-memorial-bridge/arlington-memorial-bridge-procedural-near-light-sheet.jpg` inspected in overview/front/back/roof/deck/underside/pylon/sculpture views against the dossier reference sheet. This exposed the need for ashlar rhythm on the broad spandrel faces; clipped bed/head joints were then added. Export and app verification results follow.
 
-Cityscape: verified locally for model loading, standard-road approach continuity and navigation-height sampling; the broader lifecycle matrix is not tested. Full 3D world: inspected locally with terrain enabled; terrain-fit numbers and limitations follow. HD lane details are unavailable locally without Redis (`/osm-lanes` 503), so standard-road evidence cannot establish HD pavement/paint continuity. Independent reviewer acceptance remains a coordinator gate.
-
+Cityscape: verified locally for model loading, standard-road approach continuity and navigation-height sampling; the broader lifecycle matrix is not tested. Full 3D world: inspected locally with terrain enabled; terrain-fit numbers and limitations follow. HD lane details are unavailable locally without Redis (`/osm-lanes` 503), so standard-road evidence cannot establish HD pavement/paint continuity.
 
 Final exported GLB comparison: `tmp/top-cities/shots/arlington-memorial-bridge/export-reference-contact-sheet.jpg` was opened and judged with the three current-bridge reference photos in its first row. It contains front/back/above/deck/underside/monument details in near/far and light/dark; the separate `arlington-memorial-bridge-glb-{near,far}-{light,dark}-sheet.jpg` files retain all eight cameras. Both LODs keep the arch silhouette and original sculptural abstractions; the ornaments are much less realistic than the architectural geometry and remain a deliberate approximation.
 

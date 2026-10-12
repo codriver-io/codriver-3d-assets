@@ -66,7 +66,6 @@ Inspector views: `/asset-preview.html?asset=abbaye-aux-hommes&view=overview` and
 
 Cityscape and Full 3D world: **not tested yet, integration is checked separately**. Provider masking, failed/late loads, origin changes, entrance slopes and real-device costs have not been exercised in the app. No shared files, runtime layer, renderer bundle or deployment were changed.
 
-
 ## Independent review corrections
 
 Addressed all four findings in `tmp/top-cities/review/abbaye-aux-hommes/REVIEW.md` (PASS-WITH-NITS, recognition 4/5), in one look-fix iteration:

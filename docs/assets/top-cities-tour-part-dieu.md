@@ -54,8 +54,6 @@ Visual evidence judged:
 
 Focused combined conformance and landmark checks passed all 11 Tour Part-Dieu assertions. The required unfiltered combined run had unrelated failures for St Peter’s Basilica (far byte budget) and Teatro Nacional (catalog/ready mismatch); Tour Part-Dieu passed. The shared catalog validator initially stopped on the missing St Peter’s Basilica documentation. Named-record QA succeeded with no issues: near coplanar pairs 0 and backface hits 0% over 439 rays; both LODs within budgets and no removable lift data. No other worker’s files were changed.
 
-Independent reviewer approval is pending coordinator review; this authoring report does not claim it.
-
 ## Placement modes
 
 - Cityscape: **not tested yet, integration is checked separately**.

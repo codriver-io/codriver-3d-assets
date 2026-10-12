@@ -184,6 +184,16 @@ function madeleine(t){
   box('shade',0,14.3,0,27,20.6,79);
   for(const z of [-48,48])for(let i=0;i<8;i++)
     a.column('stone',-18+i*36/7,3.95,z,1,20.05);
+  // Corinthian crowns on both end rows: overlapping leaf masses under a stepped abacus.
+  for(const z of [-48,48])for(let i=0;i<8;i++){
+    const x=-18+i*36/7;
+    box('stone',x,23.75,z,2.95,.35,2.95);
+    box('stone',x,24.12,z,3.2,.38,3.2);
+    for(let j=0;j<(near?8:4);j++){
+      const q=j*Math.PI*2/(near?8:4),g=new THREE.SphereGeometry(1,near?6:4,near?4:3);
+      g.scale(.48,.75,.35);g.rotateY(-q);a.place(g,'stone',x+1.05*Math.sin(q),23.05,z+1.05*Math.cos(q));
+    }
+  }
   for(const x of [-18,18])for(let i=0;i<18;i++)
     a.column('stone',x,3.95,-43+i*86/17,1,20.05);
   // Entablature and a low gabled leaded roof (thin stone rim, ridge along the nave).
@@ -195,9 +205,21 @@ function madeleine(t){
     gable('shade',0,25.7,side*49.3,38.4,6.2,1.2);
     for(const s of [-1,1])a.bar('stone',[s*20.4,25.9,zf],[0,32.4,zf],.6);
     box('stone',0,26,side*50.1,41.4,.4,.8);
-    // Three relief groups on the tympanum, each standing 40 cm off its recessed face.
-    for(const [x,y,w,h] of [[0,28.9,4.6,4.2],[-9,27.9,5,2],[9,27.9,5,2]])box('stone',x,y,side*50.1,w,h,.4);
-    for(const y of [24.3,25.1])box('shade',0,y,zf+side*.1,41.2,.22,.3);
+    // Original draped figure silhouettes fill the triangle, tapering to seated side groups.
+    // Every relief's back is seated in the tympanum; far keeps the complete group.
+    for(let i=-9;i<=9;i++){
+      const x=i*1.75,h=4.9*(1-Math.abs(x)/19),w=.7+(i===0?.3:0),base=26.35;
+      const s=new THREE.Shape();
+      const pts=near?[[-.5,0],[.5,0],[.35,.38],[.4,.66],[.85,.8],[.7,.87],[.28,.77],[.18,.9],[-.18,.9],[-.28,.77],[-.65,.65],[-.75,.73],[-.85,.65],[-.35,.54]]:[[-.5,0],[.5,0],[.3,.68],[.8,.84],[.2,.9],[-.2,.9],[-.8,.72],[-.3,.56]];
+      pts.forEach(([u,v],j)=>j?s.lineTo(u*w,v*h):s.moveTo(u*w,v*h));s.closePath();
+      const g=new THREE.ExtrudeGeometry(s,{depth:.38,bevelEnabled:false});
+      if(side<0)g.rotateY(Math.PI);a.place(g,'stone',x,base,side*49.88);
+      const head=new THREE.SphereGeometry(1,near?8:5,near?5:3);head.scale(w*.25,h*.095,.25);
+      a.place(head,'stone',x,base+h*.91,side*50.02);
+    }
+    // Repeated dentils express the entablature shadow without text-sized noise.
+    if(near)for(let x=-19;x<=19;x+=1)box('stone',x,25.4,side*50.03,.42,.45,.46);
+    if(near)for(const y of [24.3,25.1])box('shade',0,y,zf+side*.1,41.2,.22,.3);
   }
   // Cella door and shallow side niches: lighter than the cella wall, framed by stone.
   win(0,4.1,-39.5,7,14.9,{yaw:Math.PI,arched:true,pane:'roof',trim:'stone',mullions:false});
@@ -355,11 +377,16 @@ function institut(t){
     loft('slate',st,roof,{center:[0,10]});
     loft('shade',st,[[-9.1,17],[-9.1,17.9],[-8.4,17.9],[-8.4,17]],{center:[-8.75,17.4]});
     if(near)for(const y of [9.35,17.0])loft('shade',st,[[-8.95,y],[-8.95,y+.3],[-8.45,y+.3],[-8.45,y]],{center:[-8.7,y+.15]});
+    for(const y of [1,9.35,17])loft('shade',st,[[8.45,y],[8.45,y+.3],[8.95,y+.3],[8.95,y]],{center:[8.7,y+.15]});
     // Windows sit on each chord of the faceted front, aligned to that chord (two flat panes per chord in far).
     for(let i=0;i<K;i++){
       const [x0,z0]=pt(st[i],-half),[x1,z1]=pt(st[i+1],-half),dx=x1-x0,dz=z1-z0,l=Math.hypot(dx,dz);
       const yaw=Math.atan2(side*dz/l,-side*dx/l);
       for(const fr of near?[.5]:[.27,.73])for(const y of [3,11])win(x0+dx*fr,y,z0+dz*fr,2.5,5.5,{yaw,arched:y===3,trim:'shade'});
+      const [rx0,rz0]=pt(st[i],half),[rx1,rz1]=pt(st[i+1],half),rdx=rx1-rx0,rdz=rz1-rz0;
+      const rearYaw=Math.atan2(-side*rdz,side*rdx);
+      for(const fr of near?[.5]:[.27,.73])for(const y of [3,11])win(rx0+rdx*fr,y,rz0+rdz*fr,2.5,5.5,{yaw:rearYaw,arched:y===3,trim:'shade'});
+      if(near||i%2===0)a.box('shade',rx0+.12*Math.sin(rearYaw),9,rz0+.12*Math.cos(rearYaw),.6,17,.45,rearYaw);
     }
     // Close the open inner end against the chapel mass.
     const s=st[0],c=[[-half,0],[-half,18],[-6.3,21.6],[-2,23.4],[2,23.4],[6.3,21.6],[half,18],[half,0]];
@@ -372,13 +399,22 @@ function institut(t){
   for(const x of [-75,75]){
     slab('stone',x,0,8,19,24,23);mansard('slate',x,24,8,20,24,7,{ins:2.2,ridge:.8});
     for(const u of [-5,0,5])for(const y of [3,12])win(x+u,y,-3.5,2.6,6,{yaw:Math.PI,trim:'shade'});
+    for(const u of [-5,0,5])for(const y of [3,12]){
+      win(x+u,y,19.5,2.6,6,{trim:'shade'});
+      for(const side of [-1,1])win(x+side*9.5,y,8+u,2.6,6,{yaw:side*Math.PI/2,trim:'shade'});
+    }
+    for(const y of [1,10,23.5]){
+      box('shade',x,y,19.55,19.4,.4,.5);
+      for(const side of [-1,1])box('shade',x+side*9.55,y,8,.5,.4,23.4);
+    }
+    for(const side of [-1,1])box('shade',x+side*8.8,12,19.6,.75,23,.6);
   }
   // Chapelle: stepped mass (podium block, then a narrower attic) with cornices and pilasters.
   slab('stone',0,0,5,36,19.5,37,[2,3]);
   box('shade',0,19.8,5,37.4,.6,38.4);
   slab('stone',0,20.1,5,31,5.9,31,[2,3]);
   box('shade',0,25.7,5,32.8,.6,32.8);
-  if(near){
+  {
     for(const side of [-1,1])for(let z=5;z<=22;z+=6)box('shade',side*18.2,9.5,z,.5,18.6,1.4);
     for(let x=-14;x<=14;x+=7)box('shade',x,9.5,23.7,1.4,18.6,.5);
     for(const x of [-10.5,-3.5,3.5,10.5])for(const y of [3,11])win(x,y,23.5,2.4,5.5,{yaw:0,arched:y===3,trim:'shade'});
@@ -390,17 +426,26 @@ function institut(t){
   gable('stone',0,20.9,-17,35,5,2.3);
   box('clock',0,22.5,-18.2,2.5,2.5,.15);
   win(0,1.3,-13.5,7,14.9,{yaw:Math.PI,arched:true,trim:'shade'});
-  // Arched drum, 44 m cupola.
-  cyl('stone',0,27.4,5,15.5,15.5,14.8,near?28:16);
+  // Full-height drum openings clear the chapel cornice/pediment; the photo-informed
+  // crown is not compressed to force an assumed overall height.
+  cyl('stone',0,31.5,5,15.5,15.5,11,near?28:16);
   for(let i=0;i<16;i++){const q=i*Math.PI*2/16;
     const x=Math.cos(q)*15.52,z=5+Math.sin(q)*15.52;
-    cyl('stone',x,30,z,.55,.62,6,near?8:6);
-    if(i%2===0)a.window(Math.cos(q)*15.7,25.5,5+Math.sin(q)*15.7,2.3,6,{yaw:Math.PI/2-q,stone:'shade'});
+    cyl('stone',x,31.8,z,.55,.62,10,near?8:6);
+    if(i%2===0)a.window(Math.cos(q)*15.7,27,5+Math.sin(q)*15.7,3.2,8.5,{yaw:Math.PI/2-q,stone:'shade'});
   }
-  cyl('shade',0,34,5,16,16,2,near?28:16);
-  a.dome('slate',0,35,5,15,8,{ribs:near?16:8,ribMaterial:'shade'});
-  cyl('stone',0,42,5,2.2,2.6,2,near?12:8);
-  dome('slate',0,43,5,2.6,1,2.6);
+  cyl('shade',0,37,5,16,16,1.2,near?28:16);
+  a.dome('slate',0,37.6,5,15,12.5,{ribs:near?16:8,ribMaterial:'shade'});
+  // An open, taller lantern sits on the dome's crown; every post meets both rings.
+  cyl('shade',0,50.2,5,2.8,2.9,.6,near?16:8);
+  for(let i=0;i<8;i++){
+    const q=i*Math.PI/4,x=2.3*Math.sin(q),z=5+2.3*Math.cos(q);
+    cyl('shade',x,52.7,z,.2,.25,4.7,near?6:4);
+  }
+  cyl('shade',0,55.1,5,2.9,2.9,.35,near?16:8);
+  dome('slate',0,55.27,5,2.9,1.6,2.9);
+  cyl('gold',0,57,5,.2,.3,.5,near?8:6);
+  a.bar('gold',[0,57.25,5],[0,57.8,5],.09);
 }
 
 export function createParisHistoric(id,{detail='near'}={}){

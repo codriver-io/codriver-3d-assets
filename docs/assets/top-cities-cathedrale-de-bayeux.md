@@ -40,8 +40,7 @@ The initial procedural contact sheet exposed a reversed transept roof extending 
 
 Inspector views: `overview`, `facade`, `roof`, `east`, `south`, `street`, `portal`, `lantern`, at `/asset-preview.html?asset=cathedrale-de-bayeux&view=<key>`.
 
-Final export metrics and QA evidence follow below. Independent review remains the coordinator’s release gate; author inspection does not establish app integration or hardware performance.
-
+Final export metrics and QA evidence follow below.
 
 ## Independent-review repairs and final measured export
 
@@ -68,4 +67,4 @@ Judged final images, alongside all six dossier photos:
 - `tmp/top-cities/shots/cathedrale-de-bayeux/revision-2/reference-export-comparison.jpg`: all six reference photos above near/far × light/dark GLB sheets; west facade, roof/footprint, east chevet and central crown detail.
 - The four `cathedrale-de-bayeux-glb-{near,far}-{light,dark}-sheet.jpg` files in that directory provide the original comparison panels; first-pass evidence is preserved in `revision-1/`.
 
-Fine Gothic screen ornament, sculptural carving and copper finial details are simplified. The model’s facade motifs remain less intricate than the photographs, particularly in far LOD. Independent reviewer acceptance and in-app Cityscape/Full 3D world validation remain coordinator gates; no shared source was changed and no new geographic research was needed.
+Fine Gothic screen ornament, sculptural carving and copper finial details are simplified. The model’s facade motifs remain less intricate than the photographs, particularly in far LOD.

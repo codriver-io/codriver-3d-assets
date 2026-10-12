@@ -49,7 +49,6 @@ Focused tests pin every mast sector, crown height, mapped major/minor extents, c
 
 Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Ground/pad fit, live provider replacement, LOD/theme lifecycle and device performance remain app integration checks. Flat stadium precinct is assumed for the export; exact entrance elevations remain unmeasured.
 
-
 ## Final exported asset inspection and costs
 
 Looked at `tmp/top-cities/shots/bc-place/final/bc-place-export-reference-contact-sheet.jpg`: 20 labelled tiles with the aerial and interior reference photographs next to exported GLBs. It covers near/light overview, facade, back, roof, street and mast detail; near/dark overview, back, roof, street and detail; far/light overview, facade and roof; far/dark overview, back, roof and street. All corresponding PNGs and individual variant sheets are under `final/{near-light,near-dark,far-light,far-dark}/`. Source plan comparison remains in `iteration-2/comparison.jpg`.
@@ -65,4 +64,4 @@ Both satisfy hard building caps (60k/14/2,500,000 bytes near; 12k/8/500,000 byte
 
 Final command `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/bc-place/bc-place.test.js`: **165 passed, 0 failed**, including all BC Place conformance checks and 8 landmark-specific tests. `node scripts/asset-catalog.mjs`: **valid, 178 records and 332 GLB variants** at verification time. `qa-metrics.mjs --ids bc-place --out tmp/top-cities/bc-place/qa-metrics.json`: **no issues**, 0 coplanar pairs, 0% back-face hits in 318 near rays, no removable attributes, grade and LOD bounds clean. GLB source round-trip bounds agree. The catalog registers six inspection views and `SPEC.ready=true`.
 
-Independent reviewer verdict remains pending the coordinator's review; the author inspection and tests do not substitute for that verdict. Cityscape and Full 3D world remain not tested yet, integration is checked separately. No shared-file changes or blocker.
+Cityscape and Full 3D world remain not tested yet, integration is checked separately. No shared-file changes or blocker.

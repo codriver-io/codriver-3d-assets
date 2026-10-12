@@ -188,14 +188,18 @@ function eiffel(b) {
 }
 
 function triomphe(b){
-  const {near,box,beam,arc,archBand,archCap,tbox}=b;
+  const {near,arc,archBand,archCap}=b;
+  const mat=m=>!near&&m==='trim'?'stone':m;
+  const box=(m,...v)=>b.box(mat(m),...v),beam=(m,...v)=>b.beam(mat(m),...v),sphere=(m,...v)=>b.sphere(mat(m),...v);
+  const sculpt=near?'trim':'relief';
   // Main opening across the east-west avenue; transverse portal stays open.
   const W=44.8,D=22.2,zf=D/2,xf=22.3; // pier wall faces: the front/back faces at z=+-zf, the flanks at x=+-xf
   for(const sx of [-1,1])for(const sz of [-1,1]){
     box('stone',sx*14.7,16.75,sz*7.5,15.2,33.5,7.2);
     box('trim',sx*14.7,2,sz*7.5,15.4,3.5,8);
     // Relief panels are seated into the wall and stand 0.2 m proud: back face 0.1 m inside, no gap.
-    if(near){box('relief',sx*15.3,13,sz*(zf+.05),8,13,.3);box('relief',sx*(xf+.05),13,sz*7.5,.3,12,5.5);}
+    if(near)box('relief',sx*15.3,13,sz*(zf+.05),8,13,.3);
+    if(near)box('relief',sx*(xf+.05),13,sz*7.5,.3,12,5.5);
   }
   // Arch voussoirs trace both visible faces and the crossing tunnel roof; they stand 0.3 m proud of the wall.
   for(const sz of [-1,1]){archBand('trim',0,15,sz*(zf+.05),7.3,14.2,1.8,.5);archBand('stone',0,15,sz*zf,9.1,16,.8,.45);}
@@ -212,18 +216,36 @@ function triomphe(b){
     for(const x of [-15.3,15.3]){
       for(const dx of [-4.4,4.4])box('trim',x+dx,13,sign*(zf+.1),.25,14,.4);
       for(const y of [6,20])box('trim',x,y,sign*(zf+.1),9,.35,.4);
-      if(near)for(let i=0;i<5;i++){
-        // Sculpture group: three stacked tapering blocks (plinth, torso, head) and a raised arm, on the panel.
-        const u=x-3+i*1.5,base=7+(i%2)*1.7,zg=sign*(zf+.65);
-        tbox('relief',u,base,zg,1.3,.9,.62,2.2);
-        tbox('relief',u,base+2.2,zg,.82,.62,.78,1.5);
-        tbox('relief',u,base+3.7,zg,.56,.5,.7,.62);
-        beam('relief',[u,base+3.1,zg],[u+.95,base+4.6,zg],.16);
+      for(let i=0;i<7;i++){
+        // Interlocking original human relief silhouettes, embedded in the backing panel.
+        // Central allegory rises above the soldiers; limbs join torsos and planted feet.
+        const u=x-3+i,base=6.5+(i%2)*.7,k=i===3?1.45:1,zg=sign*(zf+.22);
+        sphere(sculpt,u,base+2.9*k,zg,.52*k,1.05*k,.32,near?8:4);
+        sphere(sculpt,u,base+4.25*k,zg,.35*k,.44*k,.31,near?8:4);
+        for(const s of [-1,1]){
+          beam(sculpt,[u+s*.23*k,base+2.3*k,zg],[u+s*.48*k,base,zg],.22*k,near?6:4);
+          beam(sculpt,[u+s*.4*k,base+3.5*k,zg],[u+s*.95*k,base+(s===1?4.6:2.7)*k,zg],.18*k,near?6:4);
+        }
+        if(i===3)for(const s of [-1,1])beam(sculpt,[u,base+3.4*k,zg],[u+s*1.8,base+5.6*k,zg],.3,near?6:4);
       }
     }
     if(near)for(let y=3;y<32;y+=1.7)for(const x of [-15.3,15.3])if(y<6.2||y>19.8)box('relief',x,y,sign*(zf+.02),14.1,.055,.06);
   }
-  if(near)for(const z of [-11.2,11.2]){for(let x=-16;x<=16;x+=3.2)box('relief',x,45.5,z,2.1,3.5,.4);for(let x=-21;x<=21;x+=3)box('trim',x,49.6,z,.6,1.2,.7);}
+  for(const sign of [-1,1]){
+    const z=sign*(zf+.12);
+    // Attic shields and a continuous relief frieze survive at distance.
+    for(let x=-19.2;x<=19.3;x+=3.2){
+      if(near)box('relief',x,45.2,z,2.5,4.1,.35);
+      sphere(sculpt,x,45.5,sign*(zf+.28),.72,1.15,.3,near?8:4);
+      for(const s of [-1,1])beam(sculpt,[x+s*.8,44.3,sign*(zf+.25)],[x+s*.8,46.3,sign*(zf+.25)],.12,4);
+    }
+    if(near)box('relief',0,37,z,43.6,1.6,.35);
+    for(let x=-21;x<=21;x+=near?2.4:4.8){
+      sphere(sculpt,x,37.3,sign*(zf+.28),.27,.38,.25,6);
+      beam(sculpt,[x-.4,36.5,sign*(zf+.28)],[x+.4,37.1,sign*(zf+.28)],.16,4);
+    }
+    if(near)for(let x=-21;x<=21;x+=3)box('trim',x,49.6,z,.6,1.2,.7);
+  }
 }
 
 function notreDame(b){
@@ -243,10 +265,10 @@ function notreDame(b){
   box('stone',0,22.5,51,43.5,45,20);
   // Vertical buttress strips divide the three portals and frame the facade; a gallery band wraps the towers.
   for(const x of [-20.6,-7.2,7.2,20.6])box('stone',x,22.5,61.55,1.8,45,1.2);
-  for(const x of [-20.6,-7.2,7.2,20.6])box('trim',x,45.3,61.65,2.4,.7,1.5);
+  for(const x of [-20.6,-7.2,7.2,20.6])box(near?'trim':'stone',x,45.3,61.65,2.4,.7,1.5);
   for(const side of [-1,1]){
     for(const z of [43,51,59])box('stone',side*22.15,22.5,z,.9,45,1.1);
-    box('trim',side*22.1,45.3,51,1.2,.7,20.8);
+    box(near?'trim':'stone',side*22.1,45.3,51,1.2,.7,20.8);
   }
   for(const x of [-15.3,15.3]){
     const w=12.9;
@@ -254,17 +276,20 @@ function notreDame(b){
     for(const u of [-w/2+.6,w/2-.6])for(const z of [41.5,60.5])box('stone',x+u,56.5,z,1.2,23,1.2);
     for(const z of [41.2,60.8])for(const u of [-5.6,0,5.6])box('stone',x+u,53.5,z,u===0?1.1:1.6,17,1.1);
     for(const side of [-1,1])for(const z of [43,51,59])box('stone',x+side*w/2,53.5,z,1.1,17,1.2);
-    if(near){
+    {
       for(const z of [41.2,60.8])for(const u of [-2.8,2.8])archCap('stone',x+u,57,z,2.25,5.8,67,1.2);
       for(const side of [-1,1]){
         const xx=x+side*w/2;
         box('stone',xx,64.5,51,1.1,5,20);
         for(const z of [47,55])a.arch('trim',xx,57,z,6.7,5.3,.5,1.1,Math.PI/2);
       }
-    }else box('stone',x,64.5,51,w,5,20); // far: plain header slab over the open openings
+    }
+    // Recessed bell silhouettes behind the open belfry, suspended from its header.
+    beam('iron',[x,63,51],[x,55,51],.18);
+    cylinder('iron',x,54.5,51,1.1,.65,1.8,near?10:6);
     box('trim',x,68,51,14,1.3,21.4);
-    a.balustrade('stone',x,67.7,61.7,13);
-    a.balustrade('stone',x,67.7,40.3,13);
+    a.balustrade('trim',x,67.7,61.7,13);
+    a.balustrade('trim',x,67.7,40.3,13);
   }
   for(const x of [-14,0,14]){
     a.window(x,1,61.12,x===0?8:7,15,{pointed:true,stone:'trim'});
@@ -289,19 +314,16 @@ function notreDame(b){
   function rose(x,y,z,r,yaw=0){
     const p=(u,v,d)=>[x+u*Math.cos(yaw)+d*Math.sin(yaw),y+v,z-u*Math.sin(yaw)+d*Math.cos(yaw)];
     const g=new THREE.CylinderGeometry(r,r,.18,near?48:16);g.rotateX(Math.PI/2);a.place(g,'glass',x,y,z,yaw);
-    if(!near){
-      // Far: a flat stone disc behind the glass reads as the tracery ring.
-      const ring=new THREE.CylinderGeometry(r+.45,r+.45,.1,16);ring.rotateX(Math.PI/2);a.place(ring,'trim',x,y,z-.0,yaw);return;
+    const segments=near?40:16;
+    for(const rr of [r,r*.38])for(let i=0;i<segments;i++){
+      const t=i*2*Math.PI/segments,q=(i+1)*2*Math.PI/segments;
+      beam('trim',p(rr*Math.cos(t),rr*Math.sin(t),.32),p(rr*Math.cos(q),rr*Math.sin(q),.32),rr===r?.28:.16,near?6:4);
     }
-    for(const rr of [r,r*.38])for(let i=0;i<40;i++){
-      const t=i*2*Math.PI/40,q=(i+1)*2*Math.PI/40;
-      beam('trim',p(rr*Math.cos(t),rr*Math.sin(t),.2),p(rr*Math.cos(q),rr*Math.sin(q),.2),rr===r?.28:.16);
-    }
-    for(let i=0;i<16;i++){const t=i*Math.PI*2/16;beam('trim',p(r*.12*Math.cos(t),r*.12*Math.sin(t),.25),p(r*.94*Math.cos(t),r*.94*Math.sin(t),.25),.10);}
+    for(let i=0;i<(near?16:8);i++){const t=i*Math.PI*2/(near?16:8);beam('trim',p(0,0,.32),p(r*Math.cos(t),r*Math.sin(t),.32),near?.10:.15,near?6:4);}
   }
   rose(0,31.5,61.1,4.85);
   for(const x of [-15.3,15.3])for(const u of [-2.8,2.8])a.window(x+u,27,61.18,3.4,10,{pointed:true,stone:'trim'});
-  for(const y of [38.8,44.3])box('trim',0,y,61.4,44.2,.8,1.2);
+  for(const y of [38.8,44.3])box(near?'trim':'stone',0,y,61.4,44.2,.8,1.2);
   if(near)for(let x=-20;x<=20;x+=2.2){a.column('trim',x,39.3,61.55,.19,4.4);a.arch('trim',x+1.1,42.5,61.4,1.8,1.1,.18,.25);}
   else box('relief',0,41.5,61.15,40.4,4,.2);
   for(const side of [-1,1]){
@@ -309,9 +331,10 @@ function notreDame(b){
     for(let z=-39;z<=31;z+=8){
       a.window(side*8.61,24,z,3.8,7.2,{yaw:side*Math.PI/2,pointed:true,stone:'trim'});
       a.window(side*20.1,3,z,3,9,{yaw:side*Math.PI/2,pointed:true,stone:'trim'});
-      box('stone',side*23.7,8,z,2.1,16,2.3);
+      box('stone',side*23.7,9.5,z,2.1,19,2.3);
+      for(const dz of [-.55,.55])beam('trim',[side*8.7,15,z+dz],[side*8.7,33,z+dz],.22,near?6:4);
+      cone('trim',side*23.7,22.5,z,1.3,7,4);
       if(near){
-        cone('trim',side*23.7,23,z,1.3,7,4);
         // Two tiers of flyers attach the aisle buttress to the nave wall.
         for(const [lo,hi] of [[15,25],[19,31]])beam('trim',[side*23.7,lo,z],[side*8.9,hi,z],.42);
       }else tilt('trim',[side*23.7,17,z],[side*8.9,29,z],1.2,1.3); // far: one sloped slab per buttress bay
@@ -319,14 +342,34 @@ function notreDame(b){
   }
   for(let i=0;i<9;i++){
     const t=Math.PI+i*Math.PI/8,x=23*Math.cos(t),z=-49+23*Math.sin(t);
-    box('stone',x,7,z,2,14,2);
-    if(near){cone('trim',x,19,z,1.2,6,4);beam('trim',[x,16,z],[9*Math.cos(t),29,-49+9*Math.sin(t)],.5);}
+    box('stone',x,9,z,2,18,2);
+    cone('trim',x,21,z,1.2,6,4);
+    if(near){beam('trim',[x,16,z],[9*Math.cos(t),29,-49+9*Math.sin(t)],.5);}
     else tilt('trim',[x,17,z],[9*Math.cos(t),29,-49+9*Math.sin(t)],1.2,1.3);
   }
-  cylinder('roof',0,51,-5,4.2,3.5,16,8);
-  if(near)for(let i=0;i<8;i++){const t=i*Math.PI/4;beam('trim',[4*Math.cos(t),43,-5+4*Math.sin(t)],[2.8*Math.cos(t),59,-5+2.8*Math.sin(t)],.22);}
-  cone('roof',0,75,-5,3.8,36,8);beam('iron',[0,93,-5],[0,96,-5],.18);
-  if(near)for(let z=-42;z<41;z+=3)beam('iron',[-.4,43,z],[.4,43,z],.1);
+  // Restored octagonal spire: low roof skirt, two open galleries and a crocketed shaft.
+  cylinder('roof',0,44.5,-5,4.3,3.7,3,8);
+  const stages=[[46,3.7],[52,3.3],[59,2.7],[67,2.2],[76,1.55],[85,.85],[93,.12]];
+  const p=(y,r,i)=>[r*Math.cos(i*Math.PI/4),y,-5+r*Math.sin(i*Math.PI/4)];
+  for(let j=0;j<stages.length;j++){
+    const [y,r]=stages[j];
+    for(let i=0;i<8;i++){
+      if(j<3)beam('roof',p(y,r,i),p(y,r,i+1),.16,near?6:4);
+      if(j){
+        const [lo,rr]=stages[j-1];
+        beam('roof',p(lo,rr,i),p(y,r,i),j<3?.22:.13,near?6:4);
+        if(j<3)beam('roof',p(lo,rr,i),p(y,r,i+1),near?.10:.13,near?6:4);
+      }
+      if(j>=3&&j<6)beam('roof',p(y,r,i),p(y+.8,r+.35,i),.10,4);
+    }
+  }
+  // Slim weatherproof core above the galleries; outer ribs retain open negative space.
+  cone('roof',0,76,-5,1.15,34,8);
+  beam('iron',[0,93,-5],[0,96,-5],.18);
+  for(let z=-42;z<41;z+=near?3:6){
+    beam('iron',[-.45,43.1,z],[.45,43.1,z],.10,4);
+    beam('iron',[0,43.1,z],[0,44.0,z],.10,4);
+  }
 }
 
 function sacreCoeur(b){

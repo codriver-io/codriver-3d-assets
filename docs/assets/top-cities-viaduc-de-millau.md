@@ -32,7 +32,7 @@ The five supplied photos were viewed in `refs-sheet.jpg`. Only two were used bes
 
 **y=0 is the north abutment finished-road surface.** Published unequal pier lengths are structural geometry and extend below this datum; no DEM or absolute altitude is baked into GLBs. Lowest exposed foot is −232.6435 m; highest source crown is +155.244 m. `SPEC.height=155.25` describes that crown ordinate, while `belowGradeM=240` declares the intentional negative support range. The published **343 m above the foundation** is a different datum: this visual model omits buried foundation shafts and represents the exposed pier and mast lengths; it does not claim a survey-grade reproduction of the full foundation-to-tip measurement.
 
-The coordinator authorized this datum and supplied a backward-compatible shared conformance exception, commit `ca15277f` (`belowGradeM`), already staged in this worktree. The worker did not edit shared files. This prerequisite must accompany integration; no bridge-* source extension was needed.
+The worker did not edit shared files. This prerequisite must accompany integration; no bridge-* source extension was needed.
 
 **Cityscape:** the valley is absent. The local road profile flattens to the two live approach-road heights with 0.35 m camber; piers remain below ground by design; their concrete meshes are hidden explicitly because the flat basemap otherwise draws negative geometry through the ground. There is no implausible 270 m ramp on the flat basemap. Pylons retain their 87 m road-relative height and single-plane fans. Grade feet meet the shared endpoint road heights exactly.
 
@@ -59,7 +59,7 @@ Viewed **`final/reference-and-export-sheet.jpg`**, with reference photos alongsi
 
 ## Application evidence
 
-Local slot C, Cityscape 3278 / terrain 3280, Protomaps tiles and Terrarium 256 px / maximum zoom 15. The prescribed app-shot far/near/street runs loaded both LODs and activated the landmark in both modes. Viewed `app-modes-sheet.jpg` and `app-approaches-sheet.jpg`: both physical abutments in both headings, grade feet, and a world view from the Millau valley. No duplicate generic deck was observed. The narrow white standard-road ribbons join the broader fallback deck; the change in width/colour is visible because HD pavement is unavailable. This is not HD lane-width or paint certification.
+The prescribed app-shot far/near/street runs loaded both LODs and activated the landmark in both modes. Viewed `app-modes-sheet.jpg` and `app-approaches-sheet.jpg`: both physical abutments in both headings, grade feet, and a world view from the Millau valley. No duplicate generic deck was observed. The narrow white standard-road ribbons join the broader fallback deck; the change in width/colour is visible because HD pavement is unavailable. This is not HD lane-width or paint certification.
 
 Live `window.__map.landmarks.heightAt(lng,lat,heading)` samples below are **metres above local ground** at lateral +7 m; reversing heading gives identical values. Perpendicular headings return null. Raw observations and capture coordinates are `tmp/top-cities/viaduc-de-millau/app-height-cityscape.json` / `app-height-world.json`.
 
@@ -95,8 +95,7 @@ Deterministic exported QA reports **zero different-material coplanar overlaps**,
 | Full terrain revision / failed-load / leave-return / reanchor lifecycle | Not tested in app; immutable refits covered by tests |
 | MCU2 / MCU3 performance | Not measured |
 
-Only the landmark folder, catalog fragment, document and three runtime exports are delivered. No shared bridge source was edited. Coordinator conformance prerequisite `ca15277f` remains necessary. Generated bundles are restored and local slot C servers stopped before completion. Live HD lane paint remains not tested because local `/osm-lanes` returns 503 without Redis. Actual paired driving, active navigation/traffic/picking, the full late-terrain/failure/reanchor/mode matrix and MCU hardware performance remain separate QA gates.
-
+Only the landmark folder, catalog fragment, document and three runtime exports are delivered. No shared bridge source was edited. Live HD lane paint remains not tested because local `/osm-lanes` returns 503 without Redis. Actual paired driving, active navigation/traffic/picking, the full late-terrain/failure/reanchor/mode matrix and MCU hardware performance remain separate QA gates.
 
 ## Independent review corrections (2026-10-09)
 
@@ -110,7 +109,6 @@ The local `tmp/top-cities/review/viaduc-de-millau/REVIEW.md` has three findings 
 
 The cable widths are deliberate visual compensation, not measured physical stay diameters. Full-sized facade and mast renders show continuous fans; the generic 480 px, whole-bridge QA tiles still undersample thin geometry and should not be interpreted as missing cable segments. Screen panels are opaque pale glass-colour geometry so traffic is obscured without transparency sorting. No photos or textures are exported.
 
-Near changed from 75,290 triangles / 32 draws / 2,715,248 bytes to 68,442 / 32 / 2,082,756; far changed from 15,312 / 6 / 365,528 to 14,280 / 7 / 341,728. Both retain the same bounds and stay within budget. Post-review focused tests pass (255 / 0), catalog validation passes (209 entries / 386 GLBs), and exported geometry QA finds zero coplanar pairs and 0% back-face hits over 51 exterior rays. Only the already-agreed below-grade support datum is flagged by the older generic metrics script. Coordinator conformance change `ca15277f` is preserved unchanged.
+Near changed from 75,290 triangles / 32 draws / 2,715,248 bytes to 68,442 / 32 / 2,082,756; far changed from 15,312 / 6 / 365,528 to 14,280 / 7 / 341,728. Both retain the same bounds and stay within budget. Post-review focused tests pass (255 / 0), catalog validation passes (209 entries / 386 GLBs), and exported geometry QA finds zero coplanar pairs and 0% back-face hits over 51 exterior rays. Only the already-agreed below-grade support datum is flagged by the older generic metrics script.
 
-
-Rebuilt the final runtime (`82043386a67d`) and re-ran `app-shot.mjs` at slot C after the second export: Cityscape and Full 3D world each report `loaded=true`, `active=true`, far/near/near for far/near/street captures, and zero pending downloads. Opened `revision-2/app-modes-sheet.jpg`: fan silhouettes and continuous edge screens are visible in the app, with white pylons and no duplicate deck. The world street preset looks from the valley below the elevated deck, so its close view primarily checks support landing; the near world view checks the stays and screens. Existing terrain, HD-service and lifecycle limitations above remain unchanged. Generated bundles were restored and both local servers stopped after inspection.
+Opened `revision-2/app-modes-sheet.jpg`: fan silhouettes and continuous edge screens are visible in the app, with white pylons and no duplicate deck. The world street preset looks from the valley below the elevated deck, so its close view primarily checks support landing; the near world view checks the stays and screens. Existing terrain, HD-service and lifecycle limitations above remain unchanged. Generated bundles were restored and both local servers stopped after inspection.

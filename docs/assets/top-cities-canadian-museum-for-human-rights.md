@@ -45,7 +45,7 @@ Ten merged named materials near, seven far. Stone shades vary subtly by course; 
 
 The cloud curvature and fold are authored from the reference photographs rather than architectural CAD; small individual panel cuts, the complex internal steel framework and roof folds are simplified. The upper tower uses a continuous crystal profile and a transparent lattice-like crown; its detailed panel cuts and frame arrangement remain approximate. Prairie roof slopes and hues are approximate, and the plinth is more regular than the real limestone masses. Exterior lettering, furniture, other paths, trees, interior ramps and the full landscaped plaza are omitted. No claim is made that the authored panel count matches the 1,335 actual unique panes.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The Forks site is expected to use a rigid grade-level foundation; no separate hill/terrace is authored. Because the nearby rivers could affect the default lowest-sample disc, pad datum and terrain edges require app verification. Roads, traffic and navigation are outside this asset task. Independent reviewer acceptance remains for the coordinator.
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The Forks site is expected to use a rigid grade-level foundation; no separate hill/terrace is authored. Because the nearby rivers could affect the default lowest-sample disc, pad datum and terrain edges require app verification. Roads, traffic and navigation are outside this asset task.
 
 ## Export cost and verification after independent-review fixes
 
@@ -76,13 +76,12 @@ Before this fix: near 34,906 / 9 / 1,792.6 KiB; far 5,960 / 6 / 322.8 KiB. Both 
 - REVIEW.md supplied no Prepare block; the repository’s standard `qa-metrics.mjs` and `qa-sheet.mjs` commands were used for this ID, with final sheet output under `tmp/top-cities/shots/canadian-museum-for-human-rights/review-fix-final/`.
 - `pnpm assets:check` and `pnpm assets:preview`: passed for the revised models; output remains an ignored local inspection tool.
 
-Remaining approximations: the four cloud sheets are an original photographic reconstruction rather than surveyed panel geometry; roof folds and limestone massing are still simplified, tower transparency is stylized, and stair dimensions/placement are estimated. Cityscape and Full 3D world remain **not tested yet, integration is checked separately**. The revised exported sheets are ready for the coordinator’s independent re-review. No shared source files, app code, roads, deployments or Git writes were required.
+Remaining approximations: the four cloud sheets are an original photographic reconstruction rather than surveyed panel geometry; roof folds and limestone massing are still simplified, tower transparency is stylized, and stair dimensions/placement are estimated. Cityscape and Full 3D world remain **not tested yet, integration is checked separately**. No shared source files, app code, roads, deployments or Git writes were required.
 
 ## Current QA revision — 2026-10-11
 
 Asymmetric inclined glass sheets and overlapping diagonal edges replace the near-horizontal cloud bands. The tower crown is continuous pale glass with restrained anchored ribs. Planting-root toes have rounded outlines and eased height profiles. End returns face along the shell tangent, closing the back-face defect.
 
-This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/canadian-museum-for-human-rights.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/canadian-museum-for-human-rights-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
-
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
 
 Original procedural reconstruction of Antoine Predock’s museum, completed in 2014, at 85 Israel Asper Way, The Forks. Source: `src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/`. The recognizable elements are the spreading stone roots and planted roofs, four overlapping blue glass shells, stepped limestone gallery cliff, a broad approach stair flight and continuously tapering 100 m Israel Asper Tower of Hope. Both LODs preserve these elements.

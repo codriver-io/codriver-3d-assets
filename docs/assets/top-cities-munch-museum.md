@@ -43,4 +43,4 @@ Final exported costs, as printed by the build (KB is bytes / 1024):
 
 Both LODs share the same bounds, min y = 0 and max y = 57.4 m. No textures and no `bridgeLift` attribute.
 
-Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The quay is expected to need only a small foundation correction if the terrain sampler is turned on later. Independent visual review remains with the coordinator. No shared file was edited.
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The quay is expected to need only a small foundation correction if the terrain sampler is turned on later. No shared file was edited.

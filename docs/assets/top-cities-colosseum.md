@@ -46,8 +46,7 @@ Cityscape: **not tested yet, integration is checked separately**. Full 3D world:
 
 ## Verification
 
-The first procedural contact sheet exposed cropped cameras, excessive orange brick and a featureless tall inner ring. These were corrected along with the fitted geographic frame, actual OSM replacement ring, alternating attic windows, exposed southern foundation and broken inner crown. The second exported near/light sheet confirmed the corrected ruin silhouette and masonry palette. Final exported near/far, light/dark and top-plan sheets are listed below. Independent visual approval is left to the coordinator; local image inspection is not app integration evidence.
-
+The first procedural contact sheet exposed cropped cameras, excessive orange brick and a featureless tall inner ring. These were corrected along with the fitted geographic frame, actual OSM replacement ring, alternating attic windows, exposed southern foundation and broken inner crown. The second exported near/light sheet confirmed the corrected ruin silhouette and masonry palette. Final exported near/far, light/dark and top-plan sheets are listed below.
 
 Final contact sheet inspected with the file/image tool: `tmp/top-cities/shots/colosseum/final/colosseum-reference-export-comparison.jpg`, displaying the dossier photos alongside exported GLB near/light, near/dark, far/light, far/dark (overview, north facade, roof, southern ruin, east, ground-arch close detail) and the top plan. The source near/light sheet was inspected in `iteration-1/`, then the exported near/light sheet in `iteration-2/`. Final views show the missing southern outer wall and open arena; stone is appropriately pale, interior brick/tuff is muted, near arches have actual depth, and far preserves all three northern arcade orders. The far top view drops radial cavea ribs and has coarse interior rings; the interior is less detailed than the photos and remains a documented approximation.
 
@@ -65,6 +64,5 @@ Six local geometry tests cover 48.5 m height, mapped crown locations, lost south
 Reference frame checks from the retained OSM response:
 - Control 83: [12.4930936, 41.8906418].
 - Control 99: [12.4924109, 41.8908995].
-
 
 Final validation: the requested combined `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/colosseum/colosseum.test.js` run passed with zero failures, including all nine Colosseum-specific/conformance checks (`tmp/top-cities/colosseum/tests-final.txt`). `node scripts/asset-catalog.mjs` and `pnpm assets:check` passed for 164 records / 272 GLB variants; `pnpm assets:preview` built the ignored local catalog. Metrics evidence is `tmp/top-cities/colosseum/metrics.json`: near outside-in back-face hits 1.1%, zero coplanar different-material overlap, zero removable bridgeLift bytes. No shared source file was required or modified. Independent exported visual review and both app modes remain untested.

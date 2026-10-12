@@ -42,7 +42,6 @@ See the [refinement notes](../paris-street-level-refinement.md) for references, 
 
 First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-musee-orsay.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-musee-orsay-roof-or-structure.png).
 
-
 ## Second architectural pass
 
 Second pass: seven monumental river-facing arches, full-height clock pavilions with curved crowns, dark steep roofs, raised glazing strips, pier ornament and abstract roof statuary.
@@ -50,7 +49,6 @@ Second pass: seven monumental river-facing arches, full-height clock pavilions w
 See [references and validation](../paris-second-pass.md).
 
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-musee-orsay.png) · [near GLB roof](../screenshots/paris-second-pass/paris-musee-orsay-roof.png).
-
 
 ## Geographic registration revision
 

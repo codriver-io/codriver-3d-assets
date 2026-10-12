@@ -76,7 +76,7 @@ Tests: `pont-pierre-laporte.test.js` (10: spans and anchorages, 122.5 m top, roa
 
 ### Cityscape: verified (local app, flat, no HD lanes)
 
-Worktree bundle `pnpm build:peregrine`, server on port 3270, Protomaps tiles. `/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
+`/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
 
 - The layer loads `/models/bridges/pont-pierre-laporte-{far,near}.glb`, active in both LODs (far at zoom 15.2, near at 17.2); the bridge sits on the mapped river crossing; no generic provider bridge doubles the deck; the Pont de Québec's Route 175 is left to the provider.
 - `window.__map.landmarks.heightAt` equals the authored deck on both carriageways in both directions at 14 stations (0, 8.44, 36.91, 53.59 at the north bridge end, 54.0 at the anchorages, towers and mid-span, 53.59, 43.77 at the viaduct end, 21.02, 4.41, 0 m) and at **all 64 mapped carriageway vertices** with their travel headings; null 45 m beside the deck and for a crossing heading.
@@ -84,7 +84,7 @@ Worktree bundle `pnpm build:peregrine`, server on port 3270, Protomaps tiles. `/
 
 ### Full 3D world: verified with `terrainPolicy: 'absolute-deck'` and the real-deck profile (local app, Terrarium DEM)
 
-Same bundle, terrain server on port 3272 (AWS Terrarium z15), `--mode world`. Terrain approaches 70.0 m (north) and 31.9 m (south). `heightAt` (height above the ground under the point) southbound / northbound, at the southbound lane's ground:
+Terrain approaches 70.0 m (north) and 31.9 m (south). `heightAt` (height above the ground under the point) southbound / northbound, at the southbound lane's ground:
 
 | Station | ground (m) | heightAt SB / NB (m) | before (m) |
 | --- | --- | --- | --- |

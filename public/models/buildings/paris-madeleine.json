@@ -35,8 +35,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-madeleine-near.glb",
-      "bytes": 536572,
-      "triangles": 15963,
+      "bytes": 957100,
+      "triangles": 26227,
       "drawCalls": 4,
       "bounds": {
         "min": [
@@ -53,8 +53,8 @@
     },
     "far": {
       "url": "/models/buildings/paris-madeleine-far.glb",
-      "bytes": 227068,
-      "triangles": 8693,
+      "bytes": 387628,
+      "triangles": 11805,
       "drawCalls": 4,
       "bounds": {
         "min": [

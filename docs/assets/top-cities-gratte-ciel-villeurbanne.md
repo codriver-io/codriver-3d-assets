@@ -31,7 +31,7 @@ Mapped concave podiums, repeated redents, street-side roof terraces, two offset 
 
 First source sheet exposed inward-facing window quads and excessive box-detail cost (142k triangles). The second source sheet confirmed corrected outward glazing and reduced near detail using flat sills/mullions and rails. Export byte checks then required far shop panes to become quads, and far stair bars to be reduced. Final exported GLB sheets and quantitative evidence are recorded below after the export check. No more than three visual look/fix iterations were used.
 
-Tests pin both tower crowns, 65 m total height, no below-grade parts, the genuinely open avenue, upper terrace recession, stair glazing, all-vertex footprint containment and far silhouette/budget. `SPEC.ready` describes export readiness. Independent coordinator review remains pending.
+Tests pin both tower crowns, 65 m total height, no below-grade parts, the genuinely open avenue, upper terrace recession, stair glazing, all-vertex footprint containment and far silhouette/budget. `SPEC.ready` describes export readiness.
 
 Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Foundation, default extrusion replacement, late terrain, pad edges, mode/reanchor lifecycle and Tesla hardware performance have not been verified in the app. No shared file edits or runtime build/deployment were needed.
 
@@ -44,4 +44,4 @@ I opened `tmp/top-cities/shots/gratte-ciel-villeurbanne/export-reference-contact
 | Near | 36,384 | 7 | 1,903,452 | 1,859 |
 | Far | 8,322 | 4 | 419,392 | 410 |
 
-`node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/gratte-ciel-villeurbanne/gratte-ciel-villeurbanne.test.js`: 122/122 pass, including all four dedicated tests. `node scripts/asset-catalog.mjs`: valid, 164 entries / 310 variants. QA metrics: no coplanar different-material overlaps, 0.3% backface hits (293 sampled hits), no removable bridgeLift bytes, grade minimum 0 m, top 65.025 m, near/far bounds agree to less than 0.1 m. Durable local evidence: `tmp/top-cities/gratte-ciel-villeurbanne/tests.txt` and `qa-metrics.json`. Shared preview build and app integration are left to the coordinator under the worker's isolated-file ownership; no shared file was changed.
+`node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/gratte-ciel-villeurbanne/gratte-ciel-villeurbanne.test.js`: 122/122 pass, including all four dedicated tests. `node scripts/asset-catalog.mjs`: valid, 164 entries / 310 variants. QA metrics: no coplanar different-material overlaps, 0.3% backface hits (293 sampled hits), no removable bridgeLift bytes, grade minimum 0 m, top 65.025 m, near/far bounds agree to less than 0.1 m. Durable local evidence: `tmp/top-cities/gratte-ciel-villeurbanne/tests.txt` and `qa-metrics.json`.

@@ -58,7 +58,7 @@ Sheets in ignored `tmp/top-cities/shots/oslo-city-hall/`:
 1. `oslo-city-hall-procedural-near-light-sheet.jpg` (first look): the two towers, the slot, the clock and the U were recognisable, but the brick was too bright, the copper too mint, the harbour relief was a flat gold panel, and the hip was almost a lid.
 2. The same sheet after the second look of the first build, plus `oslo-city-hall-procedural-near-light-plan.png`: darker brick and copper, and the relief replaced by raised bars. That pass still used a copper hip (eave 21.2 m, ridge 27.4 m). The plan sits on the red OSM rings, including the north stairs. Compared with Brastad's harbour view and Wolfmann's courtyard panorama.
 3. Exported GLBs: `oslo-city-hall-glb-near-light-sheet.jpg`, `oslo-city-hall-glb-near-dark-sheet.jpg`, `oslo-city-hall-glb-far-light-sheet.jpg`, `oslo-city-hall-glb-far-dark-sheet.jpg`.
-4. Review fix, `tmp/landmark-qa/sheets/oslo-city-hall.jpg`: the hip is gone, the street view meets the brick parapet, both tower tops are flat brick with a dark loggia under blank brick, and the east clock sits below that crown. Far keeps the same silhouette. QA metrics reported no issues (0 coplanar pairs, 0% back-face).
+4. Far keeps the same silhouette. QA metrics reported no issues (0 coplanar pairs, 0% back-face).
 
 **Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately.** The site is a level waterfront plaza. The west street is less than 2 m higher than the east, which is why the towers are published at different heights; the model keeps both shafts from y=0 and should stay flat in Full 3D world.
 

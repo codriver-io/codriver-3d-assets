@@ -71,8 +71,7 @@ Wikipedia [Cathedral of Saint Mary of the Assumption (San Francisco)](https://en
 
 Four closed bilinear saddle quadrants replace the disconnected flat-wall shell. The summit glazing is enclosed along the rising shell/jamb contacts; 35 cm soffits close the shell edges. Parish-annex window rows survive far.
 
-This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/cathedral-of-saint-mary.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/cathedral-of-saint-mary-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
-
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
 
 Landmark id `cathedral-of-saint-mary`. Original procedural model of the cathedral at 1111 Gough Street, San Francisco (Pietro Belluschi and Pier Luigi Nervi with McSweeney, Ryan and Lee, cornerstone 1967, consecrated 1971), in its current state: the cantilevered roof slab over the glazed ground block, the travertine tower of flat framed walls and sweeping shell flanks, the fin with a black stained-glass slot at the middle of each face, the glass strips that cross at the summit and the dark metal cross. The parish buildings south of it are drawn as a plain windowed three-storey mass only because the mapped cathedral outline covers them. The old Saint Mary's (Old Saint Mary's, Chinatown) and the second cathedral (burned 1962) are different buildings.
 

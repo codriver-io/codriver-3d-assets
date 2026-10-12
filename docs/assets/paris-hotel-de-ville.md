@@ -21,7 +21,6 @@ See the [refinement notes](../paris-street-level-refinement.md) for references, 
 
 First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-hotel-de-ville.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-hotel-de-ville-roof-or-structure.png).
 
-
 ## Second architectural pass
 
 Second pass: projecting pavilions, chimney stacks, cross-mullioned windows, pediments, statue niches, roof cresting and a two-level open octagonal campanile. Sculptures remain abstract original silhouettes.
@@ -31,7 +30,6 @@ See [references and validation](../paris-second-pass.md).
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-hotel-de-ville.png) · [near GLB roof](../screenshots/paris-second-pass/paris-hotel-de-ville-roof.png).
 
 Rendering fixes: see the [window, niche and roof-support corrections](../paris-rendering-fixes.md).
-
 
 ## Geographic registration revision
 

@@ -42,7 +42,6 @@ See the [refinement notes](../paris-street-level-refinement.md) for references, 
 
 First refinement: [near GLB facade/support](../screenshots/paris-refinement/paris-grand-palais.png) · [near GLB roof/structure](../screenshots/paris-refinement/paris-grand-palais-roof-or-structure.png).
 
-
 ## Second architectural pass
 
 Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, paired truss ribs, raised ridge lanterns and a flattened cupola with radial and concentric framing. The glass roof uses tinted opaque glazing for predictable rendering; interiors are not modeled.
@@ -50,7 +49,6 @@ Second pass: intersecting glazed vaults, rounded nave ends, fine glazing bars, p
 See [references and validation](../paris-second-pass.md).
 
 Current second pass: [near GLB façade](../screenshots/paris-second-pass/paris-grand-palais.png) · [near GLB roof](../screenshots/paris-second-pass/paris-grand-palais-roof.png).
-
 
 ## Geographic registration revision
 

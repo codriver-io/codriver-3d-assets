@@ -81,7 +81,6 @@ The modern museum's roof-step heights, individual stones, crenellation spacing a
 
 Earlier boulevard-revision checks: the requested combined landmark/conformance command passed **292/292** tests, including five dedicated Château de Caen tests completing in under one second; `node scripts/asset-catalog.mjs` passed with 222 entries and 416 GLB variants; `pnpm assets:preview` rebuilt the local inspector successfully. Both final contact sheets named above were opened after the last export. Final metrics are retained in `tmp/top-cities/chateau-de-caen/revision-final-metrics.json`; test/catalog/preview logs use the same `revision-final-` prefix in that dossier directory.
 
-
 ## Bailey terrain correction verification
 
 Before → after: the decimated/shrunken footprint and +8 m DEM terrace could obscure the 7.92 m grass → full inner-enceinte median pad with 2 m feather and rigid world-only -7.8 m offsets leaves 0.12 m clearance; ground, walls and scarp keep their relative dimensions. The previously accepted Cityscape → exactly identical position/index hashes and materials, with exact terrain-off restoration verified from both exported GLBs. Geometry cost is unchanged: near 38,643 triangles / 9 draws / 1,990 KiB (2,037,740 bytes), far 6,072 / 8 / 306 KiB (313,852 bytes); only runtime metadata adds 396 / 344 bytes.

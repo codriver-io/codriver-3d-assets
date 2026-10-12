@@ -61,7 +61,7 @@ Tests: `bridge-absolute-deck.test.js` (the shared policy), `golden-gate-bridge.t
 
 ### Cityscape: verified (local app, flat, no HD lanes)
 
-Worktree bundle `pnpm build:peregrine`, server on port 3270, Protomaps tiles. `/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
+`/osm-lanes` answers 503 locally, so HD lane paint and HD lateral fitting were **not** checked; standard roads were.
 
 - The layer loads `/models/bridges/golden-gate-bridge-{far,near}.glb`, active in both LODs (far at zoom 15.2, near at 17.2); the bridge sits on the mapped strait, towers in the water; no generic provider bridge doubles the deck and no provider tower extrusions show.
 - `window.__map.landmarks.heightAt` equals the authored deck height at 16 stations on both carriageways (0, 0.43, 5.59, 25.34, 63.2, 64.14, 75.4 ... 40.07, 19.43, 3.64, 0.43, 0 m) and at **all 211 mapped carriageway vertices** with their travel headings (0 misses); null 60 m beside the ramp and null for a crossing heading.
@@ -70,7 +70,7 @@ Worktree bundle `pnpm build:peregrine`, server on port 3270, Protomaps tiles. `/
 
 ### Full 3D world: verified with `terrainPolicy: 'absolute-deck'` (local app, Terrarium DEM)
 
-Same bundle, terrain server on port 3272 (AWS Terrarium, z15, exaggeration k = 1), `--mode world`. The default corridor policy was tested first and rejected: one flatten zone along the whole alignment at its lowest vertex DEM (9.3 m) cut a trench through the Presidio and Marin bluffs and laid a 9.3 m strip across the strait. The bridge now uses the shared policy `'absolute-deck'` (commit `28158f46`, `bridge-layer.js`): no flattening; the group stands at baked 0 (sea level), so the towers, anchorages and the deck keep their authored heights; supports with weight 0 (approach piers and bents, pylon and anchorage feet, the tower piers' base) reach their local DEM; the ramps' `'start'`/`'end'` take the DEM at the alignment ends and a ramp never dips below the DEM sampled every 20 m along the alignment; `heightAt`, the route and the HD overlays read the same surface; unknown DEM keeps the bridge inactive.
+The default corridor policy was tested first and rejected: one flatten zone along the whole alignment at its lowest vertex DEM (9.3 m) cut a trench through the Presidio and Marin bluffs and laid a 9.3 m strip across the strait. The bridge now uses the shared policy `'absolute-deck'` (commit `28158f46`, `bridge-layer.js`): no flattening; the group stands at baked 0 (sea level), so the towers, anchorages and the deck keep their authored heights; supports with weight 0 (approach piers and bents, pylon and anchorage feet, the tower piers' base) reach their local DEM; the ramps' `'start'`/`'end'` take the DEM at the alignment ends and a ramp never dips below the DEM sampled every 20 m along the alignment; `heightAt`, the route and the HD overlays read the same surface; unknown DEM keeps the bridge inactive.
 
 Measured in the app (`tmp/san-francisco/golden-gate-bridge/world.mjs`): terrain footprint null, no zone, group y = 0; ramp ends at the DEM: 51.8 m (south, Presidio Parkway) and 89.7 m (north, Redwood Highway). Absolute deck = `heightAt` + DEM under the point:
 

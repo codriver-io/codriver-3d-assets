@@ -68,7 +68,7 @@ Personally viewed evidence, under `tmp/top-cities/shots/memorial-de-caen/`:
 
 Initial validation ran 298 tests, with 296 passing and unrelated concurrent-builder failures in `abbaye-aux-dames` geometry and `cathedrale-de-bayeux` readiness. After review fixes, all ten landmark tests plus three filtered Mémorial conformance tests pass in about 0.3 s (source/export bounds, palettes, costs, manifest and catalog). `node scripts/asset-catalog.mjs` passed, 222 records / 426 GLB variants. QA metrics are at `tmp/top-cities/memorial-de-caen/qa-metrics.json`; command logs are `tests.log` and `catalog-check.log` in that dossier. Catalog preview build passed into ignored `tmp/champlain-preview/`.
 
-No shared file change or shared-file assistance was needed. Initial independent verdict was PASS-WITH-NITS, 4/5; the coordinator’s recheck of these fixes remains the next gate; ready describes the measured authoring export, not app or terrain acceptance.
+No shared file change or shared-file assistance was needed.
 
 ## Independent-review fix pass, 2026-10-10
 

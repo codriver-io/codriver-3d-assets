@@ -61,7 +61,7 @@ Visual evidence was opened with the image tool, not inferred from a successful r
 - `tmp/top-cities/shots/catedral-primada-de-colombia/catedral-primada-de-colombia-glb-far-dark-sheet.jpg`: facade, back and roof.
 - `tmp/top-cities/shots/catedral-primada-de-colombia/comparison.jpg`: combined references and exported near/far light/dark sheets, all opened together.
 
-Independent reviewer acceptance remains pending with the coordinator. No shared source files were required or modified.
+No shared source files were required or modified.
 
 ## Placement handoff
 
