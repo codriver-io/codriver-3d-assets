@@ -66,3 +66,31 @@ Reference frame checks from the retained OSM response:
 - Control 99: [12.4924109, 41.8908995].
 
 Final validation: the requested combined `node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/landmarks/top-cities/colosseum/colosseum.test.js` run passed with zero failures, including all nine Colosseum-specific/conformance checks (`tmp/top-cities/colosseum/tests-final.txt`). `node scripts/asset-catalog.mjs` and `pnpm assets:check` passed for 164 records / 272 GLB variants; `pnpm assets:preview` built the ignored local catalog. Metrics evidence is `tmp/top-cities/colosseum/metrics.json`: near outside-in back-face hits 1.1%, zero coplanar different-material overlap, zero removable bridgeLift bytes. No shared source file was required or modified. Independent exported visual review and both app modes remain untested.
+
+## Landmark QA correction — 2026-10-11
+
+This section supersedes older model cost and untested-mode claims above. Far retains the surviving northern inner arcade openings in place of the blank wall. Both LODs retain engaged shafts, attached capitals and projecting entablature bands. Far removes hidden backing walls, sparsifies cavea ribs and hypogeum detail, and welds vertices with smooth normals to remain within budget.
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 30,666 | 4 | 1,607,228 |
+| far | 11,984 | 4 | 303,612 |
+
+**Cityscape: verified. Full 3D world: verified.** These claims cover loaded near/far models and the inspected far, near and street frames; they do not certify driving routes, terrain arrival/eviction, all exaggeration settings, dark mode or physical hardware.
+
+Remaining approximations: Masonry courses, current visitor walkways and fine sculpture remain omitted. Two-segment far arches and smooth far normals are the budget compromise; silhouette, openings, columns and colours remain. No road/navigation ownership is added.
+
+Reference input: supplied top-cities dossier photos and provenance, original contact sheets, reviewer findings and app shots. Ariane and Jacobins automatic lead-photo tiles were replaced locally with the correct dossier photographs; these reference images are not shipped. Caen gate identification also checked against the Musée de Normandie Porte des Champs page (https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs).
+
+## Round 2 — street facade orders (2026-10-11)
+
+Supersedes the previous correction's facade-legibility claim. Engaged shafts now occupy 1.48 m of each 2.4 m pier, with the rear chord embedded 8 cm in the wall; their bases sit on the storey sill and the widened capitals meet the entablature. Capitals taper into attached upper blocks near; far retains the taper and wide head. Architraves step to a 0.71–0.81 m projecting upper cornice. A subdued weathered travertine material and crisp order normals keep relief visible under the app's diffuse shading. The existing 2.7 m arch reveals remain physical geometry.
+
+| LOD | Before triangles / draws / bytes | After triangles / draws / bytes |
+| --- | ---: | ---: |
+| near | 30,666 / 4 / 1,607,228 | 31,560 / 5 / 1,662,504 |
+| far | 11,984 / 4 / 303,612 | 11,924 / 5 / 355,976 |
+
+Far spends its geometry on the visible orders: concealed corridor-facing outer arcade skins are omitted; cavea terrace rings are coarse while the arena podium keeps its original 80-bay approximation at stride four. All three outer and inner arcade orders, ruined skyline, attic window rhythm and colours remain. No source dimensions or overall bounds changed. `qa-metrics` has no unresolved issues; all six own tests and three city conformance cases pass. The regenerated depth table is byte-identical: the order parts are attached structural profiles, with no positive-depth material overlap requiring an offset.
+
+**Cityscape: verified. The same street angle now shows broad shaft faces, capitals and entablatures rather than faint outlines; the ground contact remains clean. This claim does not cover dark mode, driving/navigation, terrain lifecycle or hardware performance. Individual Ionic volutes, Corinthian leaves and masonry courses remain omitted as details below the driving-distance budget.

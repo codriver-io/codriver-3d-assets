@@ -17,41 +17,41 @@
   },
   "elevationDatum": "Local flat grade y=0 at Place Saint-Sernin. No terrain/sea-level elevation or latitude stretch baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Official city: 115 m length, 64 m transept, 65 m tower. The model follows the approximately 110 × 63 m mapped exterior envelope rather than stretching it; OSM roof/eaves levels and photographic detail are approximate. Five brick octagonal belfry tiers with recessed backed bays, terracotta roofs, chevet chapels and Renaissance gate. Sculpture and the 2024 Othoniel rose glazing are simplified; no interiors. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "note": "Official city: 115 m length, 64 m transept, 65 m tower. The model follows the approximately 110 × 63 m mapped exterior envelope rather than stretching it; OSM roof/eaves levels and photographic detail are approximate. Five brick octagonal belfry tiers with recessed backed bays, terracotta roofs, chevet chapels and Renaissance gate. Sculpture and the 2024 Othoniel rose glazing are simplified; no interiors. Lower belfry half-widths step from 6.15 to 3.48 m; pale principal masonry bands survive far. Cityscape and Full 3D world evidence is documented separately.",
   "assets": {
     "near": {
       "url": "/models/buildings/basilique-saint-sernin-near.glb",
-      "bytes": 2317536,
-      "triangles": 36006,
+      "bytes": 2343028,
+      "triangles": 36478,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -58.508995056152344,
+          -58.581668853759766,
           -9.536743306171047e-8,
           -42.62434768676758
         ],
         "max": [
-          44.70000457763672,
+          44.73598861694336,
           64.93000030517578,
-          42.567989349365234
+          42.64018249511719
         ]
       }
     },
     "far": {
       "url": "/models/buildings/basilique-saint-sernin-far.glb",
-      "bytes": 375700,
-      "triangles": 8056,
+      "bytes": 493680,
+      "triangles": 10246,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -58.508995056152344,
+          -58.581668853759766,
           -9.536743306171047e-8,
           -42.62434768676758
         ],
         "max": [
-          44.70000457763672,
+          44.73598861694336,
           64.93000030517578,
-          42.567989349365234
+          42.64018249511719
         ]
       }
     }

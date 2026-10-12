@@ -43,14 +43,16 @@ export function buildBasilica(k){
   const PARTS=near?MAPPED_PARTS:Object.fromEntries(Object.entries(MAPPED_PARTS).map(([id,ring])=>[id,simplify(ring)]));
   // Mapped masonry shell: no stacked coplanar exterior walls.
   k.shell(PARTS[260584870],0,8);
-  k.courses(PARTS[260584870],near?[[.45,.9],[1.45,1.8],[2.75,3.1]]:[[.5,1.15]]);
+  k.courses(PARTS[260584870],near?[[.45,.9],[1.45,1.8],[2.75,3.1]]:[[.45,.9],[1.45,1.8],[2.75,3.1]]);
   const aisleH=(u,v)=>8+3*clamp((16.6-Math.abs(v+1.7))/5.8);
   k.roof(PARTS[260584777],aisleH,[[1,-12.5],[1,9.1]],['roof','tile']);
   const naveH=(u,v)=>17+4.1*clamp(1-Math.abs(v+1.9)/10.6);
   k.shell(PARTS[260584771],8,naveH);
+  k.courses(PARTS[260584771],[[11.0,11.25],[16.4,16.7]]);
   k.roof(PARTS[260584771],naveH,[[1,-1.9]],['roof','tile']);
   const tranH=(u,v)=>16.1+5*clamp(1-Math.abs(u-17.9)/12.3);
   k.shell(PARTS[260584770],8,tranH);
+  k.courses(PARTS[260584770],[[9.0,9.25],[15.65,15.9]]);
   k.roof(PARTS[260584825],tranH,[[0,17.9]],['roof','tile']);
   const westH=(u,v)=>20+3.1*clamp(1-Math.abs(v+1.65)/17.8);
   k.shell(PARTS[260584889],8,westH);
@@ -153,8 +155,8 @@ export function buildBasilica(k){
 function buildTower(k){
   const {b,near}=k,[u,v]=TOWER;
   // Brick crossing pedestal and solid-backed faceted belfry stages.
-  k.drum(u,v,5.05,19.5,22.35);
-  const levels=[22.35,28.2,34.1,40,45.9,51.8],flats=[4.72,4.4,4.08,3.78,3.48];
+  k.drum(u,v,6.35,19.5,22.35);
+  const levels=[22.35,28.2,34.1,40,45.9,51.8],flats=[6.15,5.55,4.9,4.12,3.48];
   for(let tier=0;tier<5;tier++){
     const bot=levels[tier],top=levels[tier+1],flat=flats[tier],w=2*flat*Math.tan(Math.PI/8),h=top-bot;
     k.drum(u,v,flat+.12,bot,bot+.23,'stone');

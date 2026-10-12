@@ -17,13 +17,13 @@
   },
   "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the valley-floor plaza). No absolute altitude and no terrain pad: the Palatine and Oppian rise outside the footprint.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Plan and height are Platner’s surveyed ellipse (188 × 156 m, 48.50 m), rotated to the mapped outer arc (bearing 106°). The replacement ring is the actual OSM multipolygon outline; south-side steps follow the surviving inner wall. The south-west outer wall is the ruin as it stands, without the modern scaffolding. Inner radii, the hypogeum grid and the colours are estimates from photographs.",
+  "note": "Plan and height are Platner’s surveyed ellipse (188 × 156 m, 48.50 m), rotated to the mapped outer arc (bearing 106°). The replacement ring is the actual OSM multipolygon outline; south-side steps follow the surviving inner wall. The south-west outer wall is the ruin as it stands, without the modern scaffolding. Both LODs retain engaged shafts, capitals, projected entablatures and the northern inner arcade openings. Order geometry retains crisp normals and a subdued weathered stone tone. Far smooth normals compact wall vertices; concealed corridor-facing outer arcade skins and hidden backing walls and sparse hypogeum detail are simplified. Inner radii, the hypogeum grid and the colours are estimates from photographs.",
   "assets": {
     "near": {
       "url": "/models/buildings/colosseum-near.glb",
-      "bytes": 1607744,
-      "triangles": 30666,
-      "drawCalls": 4,
+      "bytes": 1663024,
+      "triangles": 31560,
+      "drawCalls": 5,
       "bounds": {
         "min": [
           -83.22486114501953,
@@ -39,9 +39,9 @@
     },
     "far": {
       "url": "/models/buildings/colosseum-far.glb",
-      "bytes": 486408,
-      "triangles": 9360,
-      "drawCalls": 4,
+      "bytes": 356492,
+      "triangles": 11924,
+      "drawCalls": 5,
       "bounds": {
         "min": [
           -83.22486114501953,

@@ -29,7 +29,7 @@ export function makeKit(b, near) {
   const seg=near?8:3;
   // XY shapes face outward with +Z; arbitrary wall normal in the u/v plane.
   function place(g, u, v, y, nx, nz, plane=0){g.rotateY(Math.atan2(nx,nz));g.translate(u+nx*plane,y,v+nz*plane);return g;}
-  function panel(m,pts,u,v,y,nx,nz,offset=.07){put(place(new THREE.ShapeGeometry(path(pts)),u,v,y,nx,nz,offset),m);}
+  function panel(m,pts,u,v,y,nx,nz,offset=.12){put(place(new THREE.ShapeGeometry(path(pts)),u,v,y,nx,nz,offset),m);}
   function arch(m,w,h,border,u,v,y,nx,nz,offset=.12,mitre=false){
     const sh=path(archOutline(w,h,seg,mitre));
     const hole=archOutline(w-border*2,h-border*1.4,seg,mitre).map(([x,y])=>[x,y+border*.45]);
@@ -94,7 +94,7 @@ export function makeKit(b, near) {
     for(let i=0;i<pts.length;i++){
       const a=pts[i],c=pts[(i+1)%pts.length],dx=c[0]-a[0],dz=c[1]-a[1],len=Math.hypot(dx,dz);
       if(len<.01)continue;const nx=dz/len,nz=-dx/len;
-      for(const [low,high] of bands)quad(m,[a[0]+nx*.065,low,a[1]+nz*.065],[a[0]+nx*.065,high,a[1]+nz*.065],[c[0]+nx*.065,high,c[1]+nz*.065],[c[0]+nx*.065,low,c[1]+nz*.065]);
+      for(const [low,high] of bands)quad(m,[a[0]+nx*.15,low,a[1]+nz*.15],[a[0]+nx*.15,high,a[1]+nz*.15],[c[0]+nx*.15,high,c[1]+nz*.15],[c[0]+nx*.15,low,c[1]+nz*.15]);
     }
   }
   function cornice(ring,y,m='stone',width=.23){

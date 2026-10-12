@@ -88,3 +88,18 @@ Before → after: the decimated/shrunken footprint and +8 m DEM terrace could ob
 Re-exported with the required build command. REVIEW.md has no Prepare command, so the standard `qa-sheet.mjs --ids chateau-de-caen --out tmp/top-cities/shots/chateau-de-caen/terrain-final` prepared the new exported sheet. Opened that sheet, the lead app sheet, the reference sheet, and `tmp/top-cities/shots/chateau-de-caen/terrain-final/review-with-references.jpg`, which places near/far light/dark exports beside the reference photographs. The accepted massing, hollow bailey, gates, scarp, tower relief and roof contrast remain intact; no visual geometry revision was needed in this round.
 
 All nine target checks pass (six dedicated tests plus three shared conformance checks); the full requested focused command reported 293/295 passing, with failures only in other active landmarks `abbaye-aux-dames` and `cathedrale-de-bayeux`. Catalog retry passed: 222 entries / 422 GLB variants. QA metrics report no issues, zero backface hits, zero-area edge contacts only, and no budget overrun. Logs and metrics: `tmp/top-cities/chateau-de-caen/terrain-{tests,target-tests,catalog-retry}.log`, `terrain-metrics.json`, and `terrain-export-verification.json`. No shared file was edited, and nothing was committed. Lead recheck of both modes in the app remains pending.
+
+## Landmark QA correction — 2026-10-11
+
+This section supersedes older model cost and untested-mode claims above. The grass uses the actual bailey boundary rather than self-intersecting inward mitres. A bounded 30 m terrain support halo keeps the coarse terrain lattice below the bailey; original inner-enceinte references retain the median datum and all meshes keep their rigid -7.8 m world offset. Porte des Champs has its photo-estimated slate roof, distinct from unroofed Saint-Pierre. Museum mullions use a separate material and 35 cm relief to break the modern/glass depth cycle.
+
+| LOD | Triangles | Draws | Bytes |
+| --- | ---: | ---: | ---: |
+| near | 38,681 | 10 | 2,039,904 |
+| far | 6,110 | 8 | 314,996 |
+
+**Cityscape: verified. Full 3D world: verified.** These claims cover loaded near/far models and the inspected far, near and street frames; they do not certify driving routes, terrain arrival/eviction, all exaggeration settings, dark mode or physical hardware.
+
+Remaining approximations: Gate roof rise and restoration details remain photographic estimates; no moat excavation, full interior or surveyed roof profile. The one-cell support halo deliberately changes terrain immediately outside the curtain to keep coarse lattice interpolation flat; surrounding terrain beyond it remains live.
+
+Reference input: supplied top-cities dossier photos and provenance, original contact sheets, reviewer findings and app shots. Ariane and Jacobins automatic lead-photo tiles were replaced locally with the correct dossier photographs; these reference images are not shipped. Caen gate identification also checked against the Musée de Normandie Porte des Champs page (https://musee-de-normandie.caen.fr/le-chateau-de-caen/la-porte-des-champs).

@@ -1,5 +1,6 @@
 // Original procedural restored fortifications. Mapped polygons carry the orientation.
 import * as THREE from 'three';
+import {mergeVertices} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import {assetBuilder} from '../../asset-geometry.js';
 import {SPEC,PALETTES} from './config.js';
 import {RING_OFFSETS,FOOTING_DEPTHS} from './cite-de-carcassonne-terrain.js';
@@ -117,10 +118,11 @@ export function create({detail='near'}={}){
  for(const w of WALLS)for(let i=0;i<w.line.length-1;i++){
   const a=w.line[i],c=w.line[i+1],dx=c[0]-a[0],dz=c[1]-a[1],L=Math.hypot(dx,dz);if(L<1)continue;const mid=[(a[0]+c[0])/2,(a[1]+c[1])/2];let closest=0;for(let j=1;j<lineCenters.length;j++)if(Math.hypot(...lineCenters[j].map((v,k)=>v-mid[k]))<Math.hypot(...lineCenters[closest].map((v,k)=>v-mid[k])))closest=j;setOffset(RING_OFFSETS[111+closest]);const n=[dz/L*.75,-dx/L*.75];wall({id:54852952,ring:[[a[0]+n[0],a[1]+n[1]],[c[0]+n[0],c[1]+n[1]],[c[0]-n[0],c[1]-n[1]],[a[0]-n[0],a[1]-n[1]]]});
  }
- let roofIndex=135;
- for(const block of ROOF_BLOCKS)for(const strip of roofStrips(block)){setOffset(RING_OFFSETS[roofIndex],FOOTING_DEPTHS[roofIndex++]);gabled(strip.ring,BASE,strip.eave,strip.rise,'tile');}
+
+ for(const [bi,block] of ROOF_BLOCKS.entries())for(const strip of roofStrips(block)){const index=135+bi*3+strip.row;setOffset(RING_OFFSETS[index],FOOTING_DEPTHS[index]);gabled(strip.ring,BASE,strip.eave,strip.rise,strip.material);}
  k.flush();const model=b.finish();
  for(const mesh of model.children){
+  if(!near){const old=mesh.geometry;old.deleteAttribute('normal');mesh.geometry=mergeVertices(old,.0001);mesh.geometry.computeVertexNormals();old.dispose();}
   const g=mesh.geometry,pos=g.attributes.position,offsets=g.getAttribute('terrainOffset'),depths=g.getAttribute('footingDepth');
   const values=Array.from({length:pos.count},(_,i)=>offsets.getX(i)-(Math.abs(pos.getY(i)-BASE)<.01?depths.getX(i):0));
   // Stable vertex reordering leaves every triangle and normal unchanged, while
