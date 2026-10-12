@@ -1,0 +1,65 @@
+{
+  "id": "marine-building",
+  "name": "Marine Building",
+  "kind": "building",
+  "origin": [
+    -123.11710198836293,
+    49.287513755091574
+  ],
+  "height": 98,
+  "padM": 40,
+  "frontageBearing": 134.55,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; real metres east/up/south, no terrain or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1930 Art Deco exterior. Mapped setbacks at 26/40/68/74/80/88 m; hipped crown to 96 m and finial to 98 m. Grouped pale piers, stepped pale/green crown friezes and carved portal. Low north podium, facade bays, marine reliefs and portal dimensions are photo estimates. Rotation baked into mapped rings. Cityscape and Full 3D world not tested; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/marine-building-near.glb",
+      "bytes": 882300,
+      "triangles": 20055,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -29.27705955505371,
+          -1.9073486612342094e-7,
+          -26.554697036743164
+        ],
+        "max": [
+          37.05186462402344,
+          98,
+          28.381471633911133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/marine-building-far.glb",
+      "bytes": 260680,
+      "triangles": 7206,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -29.27705955505371,
+          -1.9073486612342094e-7,
+          -26.554697036743164
+        ],
+        "max": [
+          37.05186462402344,
+          98,
+          28.381471633911133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/marine-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

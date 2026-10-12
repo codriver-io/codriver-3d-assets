@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (148 released)
+## The collection (158 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -146,6 +146,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `the-wheel-icon-park` | The Wheel at ICON Park | Orlando | building |
 | `washington-dc-temple` | Washington D.C. Temple | Kensington | building |
 | `ironworkers-memorial-bridge` | Ironworkers Memorial Second Narrows Crossing | Vancouver | bridge, road-fitted |
+| `magere-brug` | Magere Brug | Amsterdam | bridge |
+| `tower-of-london` | Tower of London | London | building |
+| `fountain-place` | Fountain Place | Dallas | building |
+| `motherland-monument` | Motherland Monument | Kyiv | building |
+| `vincent-thomas-bridge` | Vincent Thomas Bridge | Los Angeles | bridge, road-fitted |
+| `marine-building` | Marine Building | Vancouver | building |
+| `basilica-de-los-angeles-cartago` | Basílica de Nuestra Señora de los Ángeles | Cartago | building |
+| `edificio-metropolis` | Edificio Metrópolis | Madrid | building |
+| `high-museum-of-art` | High Museum of Art | Atlanta | building |
+| `williams-tower` | Williams Tower | Houston | building |
 | `basarab-overpass` | Basarab Overpass | Bucharest | bridge, road-fitted |
 | `john-hancock-center` | 875 North Michigan (John Hancock Center) | Chicago | building |
 | `att-building-nashville` | AT&T Building ("Batman Building") | Nashville | building |

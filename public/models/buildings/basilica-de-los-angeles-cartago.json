@@ -1,0 +1,66 @@
+{
+  "id": "basilica-de-los-angeles-cartago",
+  "name": "Basílica de Nuestra Señora de los Ángeles",
+  "kind": "building",
+  "origin": [
+    -83.91286411707607,
+    9.864092100316496
+  ],
+  "height": 42,
+  "padM": 49,
+  "frontageBearing": 187,
+  "rotationDeg": -7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid flat local pavement y=0; no DEM, absolute altitude or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Full outline from OSM way 102243517. All vertical dimensions including the 42 m dome finial are photographic estimates, not published measurements. Grey stone body, pale facade and neutral silver-grey roofs follow Bernard Gagnon exterior references; rear elevations are inferred.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/basilica-de-los-angeles-cartago-near.glb",
+      "bytes": 1911776,
+      "triangles": 37048,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -41.05916213989258,
+          -1.1920929132713809e-8,
+          -31.59249496459961
+        ],
+        "max": [
+          36.69765853881836,
+          42,
+          27.32422637939453
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/basilica-de-los-angeles-cartago-far.glb",
+      "bytes": 492928,
+      "triangles": 10044,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -41.05916213989258,
+          -1.1920929132713809e-8,
+          -31.59249496459961
+        ],
+        "max": [
+          36.69765853881836,
+          42,
+          27.32422637939453
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilica-de-los-angeles-cartago/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

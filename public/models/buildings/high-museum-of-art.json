@@ -1,0 +1,65 @@
+{
+  "id": "high-museum-of-art",
+  "name": "High Museum of Art",
+  "kind": "building",
+  "origin": [
+    -84.38557,
+    33.79005
+  ],
+  "height": 28,
+  "padM": 155,
+  "frontageBearing": 151,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid foundation y=0; no terrain or absolute altitude baked into the GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Meier 1983 and Piano 2005 campus. OSM plans and 61° long-edge bearing; heights (28 m peak), panel pitches, atrium tiers and ramp are photographic estimates. Roof scoops are representative rather than all 1,000. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/high-museum-of-art-near.glb",
+      "bytes": 1874712,
+      "triangles": 34474,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -81.70108795166016,
+          0,
+          -34.53105926513672
+        ],
+        "max": [
+          30.428470611572266,
+          28,
+          145.85142517089844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/high-museum-of-art-far.glb",
+      "bytes": 323088,
+      "triangles": 7375,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -81.70108795166016,
+          0,
+          -34.53105926513672
+        ],
+        "max": [
+          30.428470611572266,
+          28,
+          145.85142517089844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/high-museum-of-art/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

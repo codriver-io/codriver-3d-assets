@@ -1,0 +1,70 @@
+{
+  "id": "fountain-place",
+  "name": "Fountain Place",
+  "kind": "building",
+  "origin": [
+    -96.802544,
+    32.784797
+  ],
+  "height": 219.5,
+  "padM": 48,
+  "frontageBearing": 135,
+  "halfWidth": 29.35,
+  "halfDepth": 31.25,
+  "shoulderM": 160,
+  "lowFacetM": 46,
+  "arcadeM": 18.288,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local lobby grade y=0; no DEM, altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "219.5 m height published; 18.288 m base carving published by architect. Mapped 59 x 63 m envelope and 135-degree edge bearing. Crown and long wing facets fitted to OSM roof parts and Commons photographs; panel modules and base bevels estimated. Garden, AMLI tower and garage excluded. Rotation baked once.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fountain-place-near.glb",
+      "bytes": 1360672,
+      "triangles": 25102,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -42.850669860839844,
+          0,
+          -42.850669860839844
+        ],
+        "max": [
+          42.850669860839844,
+          219.5,
+          42.850669860839844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fountain-place-far.glb",
+      "bytes": 260232,
+      "triangles": 4724,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -42.850669860839844,
+          0,
+          -42.850669860839844
+        ],
+        "max": [
+          42.850669860839844,
+          219.5,
+          42.850669860839844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fountain-place/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -23806,6 +23806,912 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "basilica-de-los-angeles-cartago",
+      "name": "Basílica de Nuestra Señora de los Ángeles",
+      "kind": "building",
+      "location": "Cartago, Costa Rica",
+      "status": "ready",
+      "description": "Original exterior model of the national pilgrimage basilica: pale ornate three-portal facade, paired traceried windows, rose windows, central clock crest and open belfry, angel silhouettes, grey stone aisles and a large ribbed dome with two smaller cupolas and paired side bell turrets.",
+      "manifest": "/models/buildings/basilica-de-los-angeles-cartago.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/basilica-de-los-angeles-cartago/geometry.js",
+        "build": "pnpm build:top-cities-landmarks basilica-de-los-angeles-cartago --no-check",
+        "provenance": "Original procedural model authored for Codriver, October 2026. Mapped outline © OpenStreetMap contributors (ODbL 1.0), way 102243517. Exterior references: Basilica of Our Lady of the Angels, Cartago 01 and 02, Bernard Gagnon, CC0; angel detail 04, Bernard Gagnon, CC0. Dossier sheet also inspected Romeria 2026, Saprissa40, CC BY-SA 4.0, and souvenir/statue images 05/06, Bernard Gagnon, CC0; these are not exterior dimensional evidence. No third-party mesh, photo or texture shipped.",
+        "references": [
+          {
+            "label": "Mapped basilica outer envelope, four levels, no height",
+            "url": "https://www.openstreetmap.org/way/102243517"
+          },
+          {
+            "label": "Basilica identity and Byzantine/colonial architecture",
+            "url": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Angels,_Cartago"
+          },
+          {
+            "label": "Frontal exterior — Bernard Gagnon, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_Our_Lady_of_the_Angels,_Cartago_01.jpg"
+          },
+          {
+            "label": "Oblique exterior — Bernard Gagnon, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_Our_Lady_of_the_Angels,_Cartago_02.jpg"
+          },
+          {
+            "label": "Angel detail — Bernard Gagnon, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_Our_Lady_of_the_Angels,_Cartago_04.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilica-de-los-angeles-cartago/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=facade",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=facade"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=street"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=roof"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=detail"
+          },
+          {
+            "label": "top",
+            "url": "/asset-preview.html?asset=basilica-de-los-angeles-cartago&view=top"
+          }
+        ]
+      },
+      "notes": "All vertical dimensions, roof pitches, cupola positions, clock and sculptural silhouettes are photographic estimates; 42 m is not a published height. Outline and roughly 187 degree facade bearing are mapped. Rear elevations and roof subdivisions are inferred, stone joints and statuary simplified, interiors/fences/plaza/neighboring shops omitted. Night windows are an artistic subdued warm approximation. Far retains physical arch openings, window rhythm, roses, turrets, clock and dome silhouette while dropping joints, door panels and fine dome ribs. Review b5b: seven-bay belfry now has 0.75 m deep dark interior/back/reveal surfaces while retaining genuine through apertures and pale front piers in both LODs. Existing shade material gives neutral interior shadow; roof and dome palettes are neutral silver-grey from exterior dossier photos 1/3, with the pale facade retained. No souvenir model colours used. Physical arch openings, roses, turrets and far window rhythm retained. Current exported costs: near 37,048 triangles / 8 draws / 1,911,236 bytes; far 10,044 triangles / 8 draws / 492,388 bytes. Scoped geometry QA and depth checks pass with zero material cycles; fresh both-mode app recapture and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-basilica-de-los-angeles-cartago.md",
+      "city": "Cartago",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edificio-metropolis",
+      "name": "Edificio Metrópolis",
+      "kind": "building",
+      "location": "Madrid, Spain",
+      "status": "ready",
+      "description": "Original procedural Beaux-Arts corner building: paired giant columns, open courtyard, slate mansards, gilded black dome and bronze winged Victory.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/edificio-metropolis/geometry.js",
+        "build": "pnpm build:top-cities-landmarks edificio-metropolis",
+        "provenance": "Original texture-free procedural mesh by Codriver, 2026-10-12; no third-party mesh or imagery in GLBs. Geographic rings © OpenStreetMap contributors, ODbL 1.0. Reference-only photos: Edificio Metrópolis, calle de Alcalá, Madrid, España, 2017-05-18, DD 08 (Diego Delso, CC BY-SA 4.0); Edificio Metrópolis (Madrid) 18 (Roger Schultz, CC BY 2.0); Edificio Metrópolis (Madrid) 20 (Riverac, CC BY 2.0); Cúpula do edificio Metrópolis en Madrid no 2016 (En reforma) (Pedro Seoane Prado, CC BY-SA 4.0); Hôtel de la Cie. d’Assurance La Union et le Phénix Espagnol, Madrid 02 (Jules et Raymond Février, public domain). All images remain in ignored scratch; the obsolete Phoenix photo is excluded as a current-form reference.",
+        "references": [
+          {
+            "label": "Wikipedia: identity, 45 m, 1911, current Victory",
+            "url": "https://en.wikipedia.org/wiki/Metropolis_Building,_Madrid"
+          },
+          {
+            "label": "OSM multipolygon with courtyard",
+            "url": "https://www.openstreetmap.org/relation/4655046"
+          },
+          {
+            "label": "OSM lower rotunda part",
+            "url": "https://www.openstreetmap.org/way/331667818"
+          },
+          {
+            "label": "OSM upper dome part",
+            "url": "https://www.openstreetmap.org/way/332068538"
+          },
+          {
+            "label": "File:Edificio Metrópolis, calle de Alcalá, Madrid, España, 2017-05-18, DD 08.jpg — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Metr%C3%B3polis,_calle_de_Alcal%C3%A1,_Madrid,_Espa%C3%B1a,_2017-05-18,_DD_08.jpg"
+          },
+          {
+            "label": "File:Edificio Metrópolis (Madrid) 18.jpg — Roger Schultz from Buenos Aires (Argentina), CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Metr%C3%B3polis_(Madrid)_18.jpg"
+          },
+          {
+            "label": "File:Cúpula do edificio Metrópolis en Madrid no 2016 (En reforma).jpg — Pedro Seoane Prado, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:C%C3%BApula_do_edificio_Metr%C3%B3polis_en_Madrid_no_2016_(En_reforma).jpg"
+          },
+          {
+            "label": "File:Edificio Metrópolis (Madrid) 20.jpg — Riverac, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Metr%C3%B3polis_(Madrid)_20.jpg"
+          },
+          {
+            "label": "File:Hôtel de la Cie. d'Assurance \"La Union et le Phénix Espagnol\", Madrid 02.jpg — Jules et Raymond Février, Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_la_Cie._d%27Assurance_%22La_Union_et_le_Ph%C3%A9nix_Espagnol%22,_Madrid_02.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-metropolis/geometry.js"
+      },
+      "notes": "45 m total height and five floors from Wikipedia/dossier; other tier heights, ornament and statue estimated from photographs. Present-day Victory, not the removed Phoenix. Repeated bays regularized; sculpture is an original silhouette abstraction. Runtime shading and actual Tesla performance untested. Review b5a: near gilded swags now have varied thickness and attached leaf/pendant masses; near seated allegories have a broader lap, bent knees, feet and drapery folds. Far black/gold dome and present-day Victory envelope preserved. Fine sculpture remains an original abstraction, with no texture or copied mesh. Current exported costs: near 26,136 triangles / 6 draws / 931,564 bytes; far 8,484 triangles / 6 draws / 348,040 bytes. Scoped geometry QA and depth checks pass with zero material cycles; fresh both-mode app recapture and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-edificio-metropolis.md",
+      "manifest": "/models/buildings/edificio-metropolis.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=edificio-metropolis",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=edificio-metropolis&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=edificio-metropolis&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=edificio-metropolis&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=edificio-metropolis&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=edificio-metropolis&view=entrance"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=edificio-metropolis&view=dome"
+          }
+        ]
+      },
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fountain-place",
+      "name": "Fountain Place",
+      "kind": "building",
+      "location": "Dallas, Texas",
+      "status": "ready",
+      "description": "Henry N. Cobb / Pei Cobb Freed & Partners’ 1986 green-glass crystal: 219.5 m, crisp short crown ridge, diagonal gable ends, long sloping wings and opposite carved base corners.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fountain-place/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fountain-place --no-check",
+        "provenance": "Original procedural geometry, 2026-10-12. Height 219.5 m from published Wikipedia infobox; double-square prism and sixty-foot base carving from architect project page. Outline and five building parts from dossier OSM extract, ODbL 1.0. Ignored comparison photographs: View of Fountain Place from Reunion Tower August 2015 21 (Michael Barera, CC BY-SA 4.0), Fountain Place and AMLI Fountain Place (BullDawg2021, CC BY 4.0), Fountain place (Kumar Appaiah, CC BY-SA 2.0), and three Fountain Place Dallas Texas garden/base photographs (mliu92, CC BY-SA 2.0). Architect Tower plans and Tower section: Pei Cobb Freed & Partners, copyrighted reference-only drawings retained in ignored tmp; no redistribution. No third-party mesh, image or texture ships.",
+        "references": [
+          {
+            "label": "Height, completion, address · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fountain_Place"
+          },
+          {
+            "label": "Architect · double-square geometry, 60-foot carving, plans and section",
+            "url": "https://www.pcf-p.com/projects/fountain-place-originally-allied-bank-tower/"
+          },
+          {
+            "label": "Mapped tower envelope · OSM 73213058",
+            "url": "https://www.openstreetmap.org/way/73213058"
+          },
+          {
+            "label": "File:View of Fountain Place from Reunion Tower August 2015 21.jpg · Michael Barera (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:View_of_Fountain_Place_from_Reunion_Tower_August_2015_21.jpg"
+          },
+          {
+            "label": "File:Fountain Place and AMLI Fountain Place.jpg · BullDawg2021 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fountain_Place_and_AMLI_Fountain_Place.jpg"
+          },
+          {
+            "label": "File:Fountain place.jpg · Kumar Appaiah (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fountain_place.jpg"
+          },
+          {
+            "label": "File:Fountain Place, Dallas Texas (28092934748).jpg · mliu92 from San Mateo (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fountain_Place,_Dallas_Texas_(28092934748).jpg"
+          },
+          {
+            "label": "File:Fountain Place, Dallas Texas (27095153607).jpg · mliu92 from San Mateo (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fountain_Place,_Dallas_Texas_(27095153607).jpg"
+          },
+          {
+            "label": "File:Fountain Place, Dallas Texas (41245105144).jpg · mliu92 from San Mateo (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Fountain_Place,_Dallas_Texas_(41245105144).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fountain-place/geometry.js"
+      },
+      "notes": "Original texture-free procedural shell. Crown, long wing planes and lower corner carvings remain identical in far. All six mapped tower ways included; AMLI tower, water garden, separate garage and street excluded. Panel pitch, shoulder/low facet heights and carved soffit slope are estimates; no interior or fountain landscaping. Runtime and hardware checks remain separate. Review fix: daytime office panes use the same colour and normal shading as glass (office material rather than reserved unshaded light); muted facet tint leaves the crystal planes to normals. Night retains brighter office panes; far keeps separate mullion rows. Source/export verified; revised Cityscape and Full 3D world app captures (2026-10-12) show the grounded base without provider overlap, and an independent re-review passed it.",
+      "documentation": "docs/assets/top-cities-fountain-place.md",
+      "manifest": "/models/buildings/fountain-place.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fountain-place&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=fountain-place&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=fountain-place&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=fountain-place&view=back"
+          },
+          {
+            "label": "side",
+            "url": "/asset-preview.html?asset=fountain-place&view=side"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=fountain-place&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=fountain-place&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=fountain-place&view=detail"
+          }
+        ]
+      },
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "high-museum-of-art",
+      "name": "High Museum of Art",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original procedural High Museum campus: white-panelled Meier galleries, quarter-circle glazed atrium and entrance ramp, Piano pavilions and north-light roof scoops.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/high-museum-of-art/geometry.js",
+        "build": "pnpm build:top-cities-landmarks high-museum-of-art",
+        "provenance": "Original procedural mesh, authored 2026-10-12. © OpenStreetMap contributors, ODbL 1.0 for mapped footprint/parts. Reference-only photographs viewed, not redistributed: James Emery, Annie Leibovitz High Museum of Art (CC BY 2.0); Atlantacitizen, Midtown Excursion 020 (CC BY-SA 3.0); BakedintheHole, High Museum in Atlanta (CC0); Bubba73, Rodin The Shade (CC BY-SA 3.0, cladding detail only). Official High Museum entrance photo DSC08446 (copyright retained, author not stated) and ExteriorCampus-1 (© Timothy Hursley as credited in adjacent architecture section; reference-only). Dossier painting and banner close-up ignored. No third-party geometry, photos or textures shipped.",
+        "references": [
+          {
+            "label": "High Museum official history: 1983/2005, cladding and 1,000 scoops",
+            "url": "https://high.org/history-of-the-high-museum/"
+          },
+          {
+            "label": "Fondazione Renzo Piano: expansion archive",
+            "url": "https://www.fondazionerenzopiano.org/en/project/high-museum-of-art-expansion/"
+          },
+          {
+            "label": "OSM campus outline and part ids (see footprint.js)",
+            "url": "https://www.openstreetmap.org/way/28961738"
+          },
+          {
+            "label": "Meier front, BakedintheHole, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:High_Museum_in_Atlanta.jpg"
+          },
+          {
+            "label": "Piano facade, Atlantacitizen, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Midtown_Excursion_020.jpg"
+          },
+          {
+            "label": "White-panel facade, James Emery, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Annie_Leibovitz_High_Museum_of_Art.jpg"
+          },
+          {
+            "label": "Panel detail, Bubba73, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rodin_The_Shade.jpg"
+          },
+          {
+            "label": "Official entrance photo (reference only)",
+            "url": "https://highmuseum-redesign.s3.amazonaws.com/uploads/2023/02/DSC08446.jpg"
+          },
+          {
+            "label": "Official campus dusk photo (reference only)",
+            "url": "https://highmuseum-redesign.s3.amazonaws.com/uploads/2023/05/ExteriorCampus-1-1024x837.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/high-museum-of-art/geometry.js"
+      },
+      "notes": "No textures or external meshes. Roof scoops represent the published 1,000 with a reduced grid. Heights, tiers and panel pitches estimated from photos; footprint and baked 61° bearing mapped from OSM. Temporary exhibition banners, sculpture, interiors, trees and the surrounding Woodruff arts center are omitted. Final exported near/far light/dark contact sheet inspected at tmp/top-cities/shots/high-museum-of-art/export-reference-contact-sheet.jpg; deterministic QA reports no issues and zero depth cycles; separate app integration gates remain pending. Requested focused/conformance run passes every High Museum assertion; its only shared failure is Fairmont Hotel Vancouver far bytes (0.51 MB > 0.5 MB), outside this builder ownership.",
+      "documentation": "docs/assets/top-cities-high-museum-of-art.md",
+      "manifest": "/models/buildings/high-museum-of-art.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=high-museum-of-art&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=facade"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=entrance"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=detail"
+          },
+          {
+            "label": "Piano",
+            "url": "/asset-preview.html?asset=high-museum-of-art&view=piano"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "magere-brug",
+      "name": "Magere Brug",
+      "kind": "bridge",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original white timber double-leaf bascule landmark over the Amstel, with paired arched gantries, balance beams, chains, shallow approach arches and night outline bulbs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/magere-brug/geometry.js",
+        "build": "pnpm build:top-cities-landmarks magere-brug --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-12; no external mesh or texture. OSM outline way 601096321 and path controls 601096320 / 27311768 / 601096318, © OpenStreetMap contributors, ODbL 1.0. Visual-only Commons references: Amsterdam Magere Brug 3, Zairon, CC BY-SA 4.0; Amsterdam - Magere Brug Bridge - 0815, Jorge Royan, CC BY-SA 3.0; Magere brug - panoramio, Rokus C, CC BY 3.0; The Netherlands, Amsterdam, Amstel - Magere Brug - panoramio, dennis22photos, CC BY-SA 3.0. Historical photo 3 compared only for mechanism continuity; photo 4 excluded.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Magere_Brug"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/601096321"
+          },
+          {
+            "label": "Day silhouette — Zairon, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_Magere_Brug_3.jpg"
+          },
+          {
+            "label": "Night outline — Jorge Royan, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Magere_Brug_Bridge_-_0815.jpg"
+          },
+          {
+            "label": "Portal detail — Rokus C, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Magere_brug_-_panoramio.jpg"
+          },
+          {
+            "label": "Open mechanism reference — dennis22photos, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Netherlands,_Amsterdam,_Amstel_-_Magere_Brug_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/magere-brug/geometry.js"
+      },
+      "notes": "Closed state only. Dimensions follow the OSM outline; gantry heights, timber profiles, bank/support datum and lights are photographic estimates. Nine mapped shallow approach bays plus the central navigation opening are represented; not a reconstruction of the demolished nineteenth-century bridge. Photo 4 is excluded as an unrelated light installation. No textures, water, crowds or moving mechanics.",
+      "documentation": "docs/assets/top-cities-magere-brug.md",
+      "manifest": "/models/bridges/magere-brug.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=magere-brug",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=magere-brug&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=magere-brug&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=magere-brug&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=magere-brug&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=magere-brug&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=magere-brug&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=magere-brug&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=magere-brug&view=detail"
+          }
+        ]
+      },
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "marine-building",
+      "name": "Marine Building",
+      "kind": "building",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "1930 Art Deco skyscraper: mapped buff masonry setbacks, pale sea-green hipped crown, vertical piers, recessed window grids and an arched brass entrance with stylised marine reliefs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/marine-building/geometry.js",
+        "build": "pnpm build:top-cities-landmarks marine-building --no-check",
+        "provenance": "Original procedural geometry, 2026-10-12. Plan and building-part heights from supplied OSM dossier, © OpenStreetMap contributors (ODbL 1.0). Reference photos compared only, not shipped: Major James Skitt Matthews, Marine Building in 1947 (public domain); Wpcpey, Marine Building Entrance 2018 and Lobby 2018 (CC BY-SA 4.0); Bobanny, Marine Building from granville (public domain); Arnold C, Marine-bldg (Attribution); Alethe, Marine Bldg zeppelin decoration (CC BY-SA 3.0). No third-party mesh, image, font or texture shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Marine_Building"
+          },
+          {
+            "label": "OSM building outline and part heights",
+            "url": "https://www.openstreetmap.org/way/125579375"
+          },
+          {
+            "label": "File:Marine Building in 1947.jpg · Major James Skitt Matthews (1878-1970) · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Marine_Building_in_1947.jpg"
+          },
+          {
+            "label": "File:Marine Building Lobby 2018.jpg · Wpcpey · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Marine_Building_Lobby_2018.jpg"
+          },
+          {
+            "label": "File:Marine Building Entrance 2018.jpg · Wpcpey · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Marine_Building_Entrance_2018.jpg"
+          },
+          {
+            "label": "File:Marine Building from granville.jpg · Bobanny · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Marine_Building_from_granville.jpg"
+          },
+          {
+            "label": "File:Marine-bldg.jpg · Arnold C · Attribution",
+            "url": "https://commons.wikimedia.org/wiki/File:Marine-bldg.jpg"
+          },
+          {
+            "label": "File:Marine Bldg zeppelin decoration.jpg · Alethe · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Marine_Bldg_zeppelin_decoration.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/marine-building/geometry.js"
+      },
+      "notes": "Published height 97.8 m, mapped finial 98 m. Setback heights mapped from OSM. Northeastern podium is estimated at 22 m except the mapped 8 m porch; facade grid, ribs, portal and ornament are photo approximations. Separate window rows/bays survive far LOD. Reliefs suggest scallops, waves and a sailing ship, rather than reproducing the detailed historical sculptures. No interior, signage, textures or scanned geometry. No Tesla hardware measurements. Review b5a: strengthened grouped pale terra-cotta piers, green spandrels, stepped pendant crown frames and carved pale/green portal voussoirs in both LODs. Near piers replace the original wall and project 0.22 m with closed returns; far retains separate flush window quads in cut wall openings, eliminating buried reveals without losing rows/bays. Existing nine OSM ownership ways and rigid grade retained; no provider overlap was established by obscured app views. Ornamental proportions and marine motifs remain photo-based abstractions. Current exported costs: near 20,055 triangles / 7 draws / 881,776 bytes; far 7,206 triangles / 7 draws / 260,156 bytes. Scoped geometry QA and depth checks pass with zero material cycles; fresh both-mode app recapture and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-marine-building.md",
+      "manifest": "/models/buildings/marine-building.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=marine-building&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=marine-building&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=marine-building&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=marine-building&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=marine-building&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=marine-building&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=marine-building&view=detail"
+          },
+          {
+            "label": "crown",
+            "url": "/asset-preview.html?asset=marine-building&view=crown"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "motherland-monument",
+      "name": "Motherland Monument",
+      "kind": "building",
+      "location": "Kyiv, Ukraine",
+      "status": "ready",
+      "description": "Original procedural stainless-steel Motherland Monument with the post-2023 Ukrainian trident shield, raised sword, pleated human figure, tapered pedestal and mapped museum roof terraces.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/motherland-monument/geometry.js",
+        "build": "pnpm build:top-cities-landmarks motherland-monument",
+        "provenance": "Original authored procedural geometry; no traced mesh, scan or photo texture. OSM mapped museum and statue parts © OpenStreetMap contributors, ODbL 1.0. Commons photographs used only as visual references in ignored tmp, with author/license credits below.",
+        "references": [
+          {
+            "label": "Mother Ukraine — dimensions and 2023 shield change",
+            "url": "https://en.wikipedia.org/wiki/Mother_Ukraine"
+          },
+          {
+            "label": "Mapped parent museum envelope, OSM way 1421908687",
+            "url": "https://www.openstreetmap.org/way/1421908687"
+          },
+          {
+            "label": "Mapped pedestal axis, OSM way 1421908684",
+            "url": "https://www.openstreetmap.org/way/1421908684"
+          },
+          {
+            "label": "File:«Батьківщина-Мати на фоні похмурого неба».jpg — Арманов; CC-BY-SA-4.0 (visual reference only)",
+            "url": "https://en.wikipedia.org/wiki/File:%C2%AB%D0%91%D0%B0%D1%82%D1%8C%D0%BA%D1%96%D0%B2%D1%89%D0%B8%D0%BD%D0%B0-%D0%9C%D0%B0%D1%82%D0%B8_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D1%96_%D0%BF%D0%BE%D1%85%D0%BC%D1%83%D1%80%D0%BE%D0%B3%D0%BE_%D0%BD%D0%B5%D0%B1%D0%B0%C2%BB.jpg"
+          },
+          {
+            "label": "File:Motherland Monument Tank.jpg — Omar David Sandoval Sida; CC-BY-SA-4.0 (visual reference only)",
+            "url": "https://en.wikipedia.org/wiki/File:Motherland_Monument_Tank.jpg"
+          },
+          {
+            "label": "File:Mother Ukraine 2023.jpg — Гусєв Олександр; CC-BY-SA-4.0 (visual reference only)",
+            "url": "https://en.wikipedia.org/wiki/File:Mother_Ukraine_2023.jpg"
+          },
+          {
+            "label": "File:Монумент та прапор.jpg — Seencleyr; CC BY-SA 4.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%D1%82%D0%B0_%D0%BF%D1%80%D0%B0%D0%BF%D0%BE%D1%80.jpg"
+          },
+          {
+            "label": "File:Kyiv - Mother monument.jpg — Віктор Полянко; CC BY-SA 4.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Kyiv_-_Mother_monument.jpg"
+          },
+          {
+            "label": "File:Rodina mat Kiev (arms).jpg — Георгий Долгопский; CC-BY-SA-4.0 (visual reference only)",
+            "url": "https://en.wikipedia.org/wiki/File:Rodina_mat_Kiev_(arms).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/motherland-monument/geometry.js"
+      },
+      "notes": "Published 102 m overall, 62 m statue, 16 m sword, 13 x 8 m shield; contemporary tryzub version. Figure anatomy, folds, face, pedestal profile and buttress dimensions estimated from reference photos; museum outlines and part heights mapped from OSM. Hill, tanks, flag, paths and interiors not modeled; no source photos/textures or third-party mesh retained in runtime. No hardware measurement. Review fix: removed the uniform 7.5 m outer slab; continuous museum roof tiers taper to a 0.25 m grade lip outside the two glazed entrance wings, while the central thirteen-metre museum roof and pedestal remain rigid. Broader asymmetric hips, deeper folds and hanging sleeves survive far; sword/shield contacts and current trident are retained. Roof elevations between mapped tiers and exact entrance bay widths are estimated; both modes were visually verified in revised app captures (2026-10-12, four bearings in Full 3D world) and passed independent re-review; hillside DEM residuals were not measured numerically.",
+      "documentation": "docs/assets/top-cities-motherland-monument.md",
+      "manifest": "/models/buildings/motherland-monument.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=motherland-monument",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=motherland-monument&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=motherland-monument&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=motherland-monument&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=motherland-monument&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=motherland-monument&view=detail"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=motherland-monument&view=street"
+          }
+        ]
+      },
+      "city": "Kyiv",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tower-of-london",
+      "name": "Tower of London",
+      "kind": "building",
+      "location": "London, United Kingdom",
+      "status": "ready",
+      "description": "Original procedural Tower of London fortress: pale ragstone White Tower with four lead turret caps and weathervanes, projecting chapel apse, concentric crenellated curtain walls and D-shaped mural towers, Waterloo Barracks, Traitors Gate and dry moat grass strips.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tower-of-london/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tower-of-london --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-12. No third-party mesh, scan, tracing or bitmap. Geographic outlines © OpenStreetMap contributors, ODbL 1.0; complete owned way IDs in footprint.js. Reference-only Commons photographs under ignored tmp/: White Tower and Waterloo Barracks by Tristan Surtel (CC BY-SA 4.0); cropped panorama by MatthiasKabel / Nev1 (CC BY-SA 3.0). No reference imagery ships in source or GLBs.",
+        "references": [
+          {
+            "label": "Historic England — monument 1002061",
+            "url": "https://historicengland.org.uk/listing/the-list/list-entry/1002061?section=official-list-entry"
+          },
+          {
+            "label": "Historic Royal Palaces — White Tower",
+            "url": "https://www.hrp.org.uk/tower-of-london/whats-on/white-tower/"
+          },
+          {
+            "label": "Historic Royal Palaces — visitor map (reference only)",
+            "url": "https://www.hrp.org.uk/media/3394/tower-visitor-map.pdf"
+          },
+          {
+            "label": "Wikipedia — White Tower dimensions and history",
+            "url": "https://en.wikipedia.org/wiki/White_Tower_(Tower_of_London)"
+          },
+          {
+            "label": "White Tower, City of London — Tristan Surtel, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:White_Tower,_City_of_London.jpg"
+          },
+          {
+            "label": "Waterloo Barracks — Tristan Surtel, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Waterloo_Barracks.jpg"
+          },
+          {
+            "label": "Panoramic view from Tower of London cropped — MatthiasKabel / Nev1, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_from_Tower_of_London_cropped.jpg"
+          },
+          {
+            "label": "OSM White Tower",
+            "url": "https://www.openstreetmap.org/way/369135772"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tower-of-london/geometry.js"
+      },
+      "notes": "Published White Tower keep 36 by 32.5 m, southern battlements 27 m. Body is fitted independently to the mapped footprint; turret finials 34–35 m, secondary heights and dry moat surfaces are estimates. No below-grade terrain trench is baked. Original texture-free stonework, simplified secondary buildings and turret caps. See landmark documentation for actual metrics and inspected evidence. Review fix: two continuous sloping timber stringers support every tread in both LODs; lowest tread underside is y=0, heads embed in the extended first-floor landing. Named-support raycasts include a failing unsupported-tread control. Far retains ten open treads. Stair profile and landing extent are estimates fitted within mapped stair ownership; revised app captures remain with the lead.",
+      "documentation": "docs/assets/top-cities-tower-of-london.md",
+      "manifest": "/models/buildings/tower-of-london.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=tower-of-london",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=tower-of-london&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=tower-of-london&view=facade"
+          },
+          {
+            "label": "north",
+            "url": "/asset-preview.html?asset=tower-of-london&view=north"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=tower-of-london&view=roof"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=tower-of-london&view=detail"
+          },
+          {
+            "label": "gate",
+            "url": "/asset-preview.html?asset=tower-of-london&view=gate"
+          },
+          {
+            "label": "thames",
+            "url": "/asset-preview.html?asset=tower-of-london&view=thames"
+          }
+        ]
+      },
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "vincent-thomas-bridge",
+      "name": "Vincent Thomas Bridge",
+      "kind": "bridge",
+      "location": "San Pedro – Terminal Island, California",
+      "status": "ready",
+      "description": "Original green suspension bridge with two diamond-braced steel towers, a 457.2 m main span, open stiffening trusses, four-lane roadway and blue night lighting.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/vincent-thomas-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks vincent-thomas-bridge --no-check",
+        "provenance": "Original procedural Three.js geometry, 2026-10-12. Alignment © OpenStreetMap contributors (ODbL 1.0). Commons photographs consulted only; no third-party geometry or textures.",
+        "references": [
+          {
+            "label": "Port of Los Angeles — Historical Built Environment Report (dimensions)",
+            "url": "https://kentico.portoflosangeles.org/getmedia/33557b3c-6ae6-4b75-a4db-c3e011be4477/AppxF-3_historic-built_techreport"
+          },
+          {
+            "label": "Caltrans — deck replacement FAQ (existing four-lane bridge)",
+            "url": "https://dot.ca.gov/caltrans-near-me/district-7/district-7-projects/d7-vincent-thomas-bridge-deck-replacement-faq"
+          },
+          {
+            "label": "File:Vincent Thomas Bridge Night View.jpg — Bamsb900 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vincent_Thomas_Bridge_Night_View.jpg"
+          },
+          {
+            "label": "File:Vincent Thomas bridge.San Pedro.JPG — Intersofia (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vincent_Thomas_bridge.San_Pedro.JPG"
+          },
+          {
+            "label": "File:VTbridge2009.jpg — Regular Daddy (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:VTbridge2009.jpg"
+          },
+          {
+            "label": "File:Vincent Thomas Bridge bridge anchor San Pedro CA.jpg — Jeff Kwapil (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vincent_Thomas_Bridge_bridge_anchor_San_Pedro_CA.jpg"
+          },
+          {
+            "label": "File:Vincent Thomas Bridge aerial view.jpg — United States Coast Guard, PA3 Louis Hebert (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vincent_Thomas_Bridge_aerial_view.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vincent-thomas-bridge/geometry.js"
+      },
+      "notes": "Published main/side spans, tower height and curb-to-curb roadway width. 22.2 m overall model envelope, cable sag, shaft sections, maintenance margins, anchors, viaduct pier spacing and light spacing are photographic estimates. Model depicts the existing bridge, excluding temporary deck replacement construction. Ramp-inclusive alignment 2605 m exceeds the 1847 m actual structural extent for flat-map approaches; tower station adjustment under 2 m. B5 review: final 180 m landing ribbons follow mapped split carriageways, maintenance slabs stop inland, rail terminals descend to pavement, and four subdued pavement tones blend to standard-road white. Eastbound east continuation follows a literal live Protomaps motorway sample because shared Overpass queries timed out. Exact building-tagged tower rings 1011852499/1011852500 are now masked; the earlier no-building assertion was incorrect. B5r3a correction: upright 1.2 m viaduct caps embed 0.10 m into the fitted slab underside, fully attached to its deck datum; shaft tops follow each cap while their feet follow local DEM. Both LOD costs are unchanged.",
+      "documentation": "docs/assets/top-cities-vincent-thomas-bridge.md",
+      "manifest": "/models/bridges/vincent-thomas-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=vincent-thomas-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=underside"
+          },
+          {
+            "label": "West landing",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=westLanding"
+          },
+          {
+            "label": "East landing",
+            "url": "/asset-preview.html?asset=vincent-thomas-bridge&view=eastLanding"
+          }
+        ]
+      },
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "williams-tower",
+      "name": "Williams Tower",
+      "kind": "building",
+      "location": "Houston, Texas",
+      "status": "ready",
+      "description": "Original procedural model of the 1983 Johnson/Burgee 275 m, 64-storey Uptown Houston tower: mapped stepped glass wings, discrete curtain-wall bays and rows, a low pyramidal crown and beacon lens, 88-foot granite arched portal and elevated west link.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/williams-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks williams-tower",
+        "provenance": "Original procedural Three.js surface geometry authored 2026-10-12; no third-party mesh, scan or texture. Geographic outlines and provider IDs from dossier OSM ways 48486714, 581342682/685/686, 581354690–699, © OpenStreetMap contributors, ODbL 1.0. Comparison photographs remain in ignored tmp only: Williams Tower Front, Ksaziz, CC BY-SA 4.0; Wiliams Tower Texans and Uptown Houston, Henry Han, CC BY-SA 3.0; Williams Tower, Bill Jacobus, CC BY 2.0; Williams Tower Spotlight, Trey Perry, CC BY 3.0. Original models CC BY 4.0; source MIT; photo licences are comparison-reference provenance only.",
+        "references": [
+          {
+            "label": "Wikipedia: dimensions and identity",
+            "url": "https://en.wikipedia.org/wiki/Williams_Tower"
+          },
+          {
+            "label": "Hines: architect, 64 floors, 1983, 88-foot entry and revolving beacon",
+            "url": "https://www.hines.com/properties/williams-tower-houston"
+          },
+          {
+            "label": "OSM: whole tower outline",
+            "url": "https://www.openstreetmap.org/way/48486714"
+          },
+          {
+            "label": "OSM: pyramidal crown",
+            "url": "https://www.openstreetmap.org/way/581354698"
+          },
+          {
+            "label": "File:Williams Tower Front.jpg — Ksaziz (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Williams_Tower_Front.jpg"
+          },
+          {
+            "label": "File:Wiliams Tower Texans.jpg — Henry Han (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Wiliams_Tower_Texans.jpg"
+          },
+          {
+            "label": "File:Uptown Houston.jpg — Henry Han (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Uptown_Houston.jpg"
+          },
+          {
+            "label": "File:Williams Tower.jpg — w:Flickr user Bill Jacobus (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Williams_Tower.jpg"
+          },
+          {
+            "label": "File:Williams Tower Spotlight.jpg — Trey Perry (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Williams_Tower_Spotlight.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/williams-tower/geometry.js"
+      },
+      "notes": "Sourced: 275 m roof / 64 storeys, 1983 Johnson/Burgee tower and 88-foot granite arch (Hines). Mapped: setbacks 197/226/233/250/261 m, 28 m podium, elevated west link underside 6.6 m, pyramid 266–274 m and beacon 275 m. Estimated: bay/floor grid, clerestory 261–266 m, portal width 22 m and opening radius 7 m, recessed glazing 1.8 m, subdued glass colour, occupied-window pattern and beacon housing. Static luminous lens only; rotating beam and interior omitted. Neighbouring garage, park and waterwall are outside ownership. Near/far bounds identical; no photo textures, baked terrain or latitude stretch. Tesla performance unmeasured. Review b5b: daytime roof and terrace caps changed from taupe to restrained cool grey metal, retaining reflective blue glass, stepped corners, low pyramid and static beacon lens. Geometry and near/far costs unchanged; rotating night beam remains omitted from the static reusable model. Current exported costs: near 37,144 triangles / 6 draws / 1,662,168 bytes; far 7,809 triangles / 6 draws / 352,040 bytes. Scoped geometry QA and depth checks pass with zero material cycles; fresh both-mode app recapture and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-williams-tower.md",
+      "manifest": "/models/buildings/williams-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=williams-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=williams-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=williams-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=williams-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=williams-tower&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=williams-tower&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=williams-tower&view=detail"
+          }
+        ]
+      },
+      "city": "Houston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
