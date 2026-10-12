@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/suncor-energy-centre-far.glb",
-      "bytes": 159544,
-      "triangles": 2941,
+      "bytes": 188080,
+      "triangles": 3473,
       "drawCalls": 4,
       "bounds": {
         "min": [

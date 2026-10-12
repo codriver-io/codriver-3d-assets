@@ -353,6 +353,11 @@ export function buildRijksmuseum(b, near) {
       for (const d of [-0.62, 0.62]) k.box('stone', u + d - 0.10, u + d + 0.10, t.v0 - 0.32, t.v0 + 0.04, 14.5, 21.6);
     }
     for (const y of [14.1, 21.7, 28.3, 33.0]) bandNS('stone', t.u0, t.u1, t.v0, -1, y, 0.3, 0.38);
+    // Rear shafts remain visible above the courtyard roofs in both LODs.
+    const rear = t.v1 + 3.6;
+    for (const y of [22.2, 28.55, 33.0]) bandNS('stone', t.u0, t.u1, rear, 1, y, 0.34, 0.18);
+    archRowNS(t.u0 + 0.85, t.u1 - 0.85, rear, 1, 23.5, 26.5, 3);
+    rowNS(t.u0 + 0.65, t.u1 - 0.65, rear, 1, 29.2, 32.4);
     // outer side of each tower
     const west = t === TOWER.west;
     dressEW(t.v0 + 0.6, t.v1 - 0.4, west ? t.u0 : t.u1, west ? -1 : 1, H.towerWall);
@@ -450,7 +455,15 @@ export function buildRijksmuseum(b, near) {
   for (const t of turrets) {
     k.box('brick', t.u0, t.u1, t.v0, t.v1, 0, H.turretWall, 'bt');
     spire(t.u0, t.u1, t.v0, t.v1, H.turretWall, H.turret, near ? 'metal' : 'slate');
-    dressNS(t.u0 + 0.25, t.u1 - 0.25, t.v1, 1, Math.min(H.turretWall, 22));
+    dressNS(t.u0 + 0.25, t.u1 - 0.25, t.v1, 1, H.turretWall);
+    for (const [v, sign] of [[t.v0, -1], [t.v1, 1]]) {
+      for (const y of [22.2, 28.5]) bandNS('stone', t.u0, t.u1, v, sign, y, .34, .18);
+      archRowNS(t.u0 + .6, t.u1 - .6, v, sign, 23.3, 26.1, 2);
+    }
+    for (const [u, sign] of [[t.u0, -1], [t.u1, 1]]) {
+      for (const y of [22.2, 28.5]) bandEW('stone', t.v0, t.v1, u, sign, y, .34, .18);
+      rowEW(t.v0 + .6, t.v1 - .6, u, sign, 23.3, 27.8);
+    }
   }
 
   // southeast block between the east range and the outer turret (tagged 31 m)

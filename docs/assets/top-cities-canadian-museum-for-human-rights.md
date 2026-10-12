@@ -85,3 +85,14 @@ Asymmetric inclined glass sheets and overlapping diagonal edges replace the near
 This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
 
 Original procedural reconstruction of Antoine Predock’s museum, completed in 2014, at 85 Israel Asper Way, The Forks. Source: `src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/`. The recognizable elements are the spreading stone roots and planted roofs, four overlapping blue glass shells, stepped limestone gallery cliff, a broad approach stair flight and continuously tapering 100 m Israel Asper Tower of Hope. Both LODs preserve these elements.
+
+## Live-model reconciliation, 2026-10-11
+
+Retained only the held fix’s barycentric roof subdivision correction. It removes stretched/overlapping roof facets and visible creases on the existing smooth curved root roofs. The live four-fold glass cloud, softened root outlines, root-height profiles, tower crown, rear galleries and stairs are unchanged. The held three-fold cloud redesign and broader root re-authoring were dropped because they cannot establish a positive improvement over the reviewed live version.
+
+| LOD | Live triangles / draws / bytes | Reconciled triangles / draws / bytes |
+| --- | ---: | ---: |
+| near | 33,074 / 10 / 1,699,504 | 33,382 / 10 / 1,719,640 |
+| far | 6,239 / 7 / 345,852 | 6,363 / 7 / 354,300 |
+
+These captures verify the shown views; night, lifecycle transitions, terrain refinement and Tesla hardware performance were not retested. Focused landmark/city conformance tests, the full landmark suite (2,245 tests), catalog checks, preview generation and selected-model depth-layer freshness checks pass.

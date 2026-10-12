@@ -101,3 +101,14 @@ Replaced smooth solid sculpture cylinders with tapered eight-sided steel shells,
 Cityscape: **verified**. Full 3D world: **verified**.
 
 Perforation count/pattern and sculpture dimensions remain stylized estimates; no attempt to model every small reference hole. Default near/night views can be partly obscured by foreground provider buildings; exported plaza/detail/close sculpture views establish shell holes and screen artwork. Tiny pre-existing ground-contact depth-cycle candidates (0.1 m²) remain below the deterministic gate and are not visible defects in reviewed frames. Lifecycle terrain toggles, failure/late reloads, origin shifts and Tesla hardware were not tested.
+
+## Live-model reconciliation, 2026-10-11
+
+Added only the measured Protomaps plaza-atrium envelope as a seventh ownership ring around existing mapped ways 1104128157/1104128159. Its quantized boundary extends roughly 2 m beyond the OSM outline and previously left a white provider wall over the plaza glazing and screen. The whole-lot way 19882585 is still excluded, and office-tower and neighbouring-plaza points remain unowned. Both exported GLBs are byte-for-byte unchanged, including the reviewed perforated plaza sculpture.
+
+| LOD | Live triangles / draws / bytes | Reconciled triangles / draws / bytes |
+| --- | ---: | ---: |
+| near | 17,821 / 12 / 914,992 | 17,821 / 12 / 914,992 |
+| far | 9,550 / 8 / 488,240 | 9,550 / 8 / 488,240 |
+
+These captures verify the shown views; night, lifecycle transitions, terrain refinement and Tesla hardware performance were not retested. Focused landmark/city conformance tests, the full landmark suite (2,245 tests), catalog checks, preview generation and selected-model depth-layer freshness checks pass.
