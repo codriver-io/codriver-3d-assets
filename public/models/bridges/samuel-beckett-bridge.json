@@ -1,0 +1,66 @@
+{
+  "id": "samuel-beckett-bridge",
+  "name": "Samuel Beckett Bridge",
+  "kind": "bridge",
+  "origin": [
+    -6.2413,
+    53.347
+  ],
+  "height": 48,
+  "padM": 110,
+  "frontageBearing": 6.3,
+  "terrainPolicy": "bank-fit",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local foundation grade y=0; flat deck 1.6 m estimated above quay grade, pylon apex 48 m. No DEM or sea-level datum baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Architect: 124 m length, 27 m width, pier 28 m from south, 46 m apex and 5.6 m deck ASL; popular 48 m height has a differing water datum. 48 m local apex is a visual approximation. Pylon curves, opening, stay placement, underside and quay-relative deck height estimated from photos.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/samuel-beckett-bridge-near.glb",
+      "bytes": 412116,
+      "triangles": 6494,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -22.229225158691406,
+          -8.344650304081824e-9,
+          -85.26539611816406
+        ],
+        "max": [
+          18.368244171142578,
+          48,
+          91.00856018066406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/samuel-beckett-bridge-far.glb",
+      "bytes": 179380,
+      "triangles": 2638,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -22.229225158691406,
+          -8.344650304081824e-9,
+          -85.26539611816406
+        ],
+        "max": [
+          18.368244171142578,
+          48,
+          91.00856018066406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/samuel-beckett-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

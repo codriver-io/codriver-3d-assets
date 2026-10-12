@@ -1,0 +1,68 @@
+{
+  "id": "att-building-nashville",
+  "name": "AT&T Building (\"Batman Building\")",
+  "kind": "building",
+  "origin": [
+    -86.7769592,
+    36.1624127
+  ],
+  "height": 188,
+  "padM": 62,
+  "frontageBearing": 197,
+  "planBearingDeg": 107,
+  "roofY": 138,
+  "crownY": 161,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid base, no absolute elevation or terrain baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "188 m spire height, 138 m occupied roof and 33 storeys sourced; plan and 107 degree axis mapped from OSM. Crown, stepped piers, window grid, winter garden and spire tier dimensions estimated from reference photographs. Both placement modes require separate integration review.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/att-building-nashville-near.glb",
+      "bytes": 1178408,
+      "triangles": 34690,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -58.076534271240234,
+          0,
+          -24.71303939819336
+        ],
+        "max": [
+          32.01309585571289,
+          188,
+          96.41425323486328
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/att-building-nashville-far.glb",
+      "bytes": 279892,
+      "triangles": 7619,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -58.076534271240234,
+          0,
+          -24.71303939819336
+        ],
+        "max": [
+          32.01309585571289,
+          188,
+          96.41425323486328
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/att-building-nashville/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

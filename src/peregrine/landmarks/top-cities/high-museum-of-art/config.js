@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'high-museum-of-art', name: "High Museum of Art", kind: 'building',
   ready: false,
   origin: [-84.38557, 33.79005],
-  height: 30,
+  height: 28,
   padM: 60,
   frontageBearing: 0,
 };

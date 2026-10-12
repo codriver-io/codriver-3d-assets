@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (138 released)
+## The collection (148 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -146,6 +146,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `the-wheel-icon-park` | The Wheel at ICON Park | Orlando | building |
 | `washington-dc-temple` | Washington D.C. Temple | Kensington | building |
 | `ironworkers-memorial-bridge` | Ironworkers Memorial Second Narrows Crossing | Vancouver | bridge, road-fitted |
+| `basarab-overpass` | Basarab Overpass | Bucharest | bridge, road-fitted |
+| `john-hancock-center` | 875 North Michigan (John Hancock Center) | Chicago | building |
+| `att-building-nashville` | AT&T Building ("Batman Building") | Nashville | building |
+| `granville-street-bridge` | Granville Street Bridge | Vancouver | bridge, road-fitted |
+| `jefferson-memorial` | Jefferson Memorial | Washington | building |
+| `adam-toren` | A'DAM Toren | Amsterdam | building |
+| `buckingham-palace` | Buckingham Palace | London | building |
+| `samuel-beckett-bridge` | Samuel Beckett Bridge | Dublin | bridge, road-fitted |
+| `fairmont-hotel-vancouver` | Fairmont Hotel Vancouver | Vancouver | building |
+| `pennybacker-bridge` | Pennybacker Bridge (Loop 360) | Austin | bridge, road-fitted |
 
 ## A landmark is a folder
 

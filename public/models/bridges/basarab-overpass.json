@@ -1,0 +1,68 @@
+{
+  "id": "basarab-overpass",
+  "name": "Basarab Overpass",
+  "kind": "bridge",
+  "origin": [
+    26.06785,
+    44.44945
+  ],
+  "height": 94,
+  "padM": 900,
+  "frontageBearing": 46,
+  "nearM": 1600,
+  "rangeM": 4500,
+  "terrainPolicy": "bank-fit",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Original 2011 Basarab railway crossing, 168 m main span, 60 stays, twin vertical chamfered shafts rising 80 m above road (CFC ACHE paper). Estimated 14 m local deck datum, pylon station, canopy and fittings. Long mapped approaches use flat-map ramps; southern Dâmbovița arch and side branches are outside this asset. Terrain datum is sampled separately; no DEM or geodetic height is baked.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/basarab-overpass-near.glb",
+      "bytes": 3037844,
+      "triangles": 58416,
+      "drawCalls": 23,
+      "bounds": {
+        "min": [
+          -539.7620849609375,
+          -2.549999952316284,
+          -366.983154296875
+        ],
+        "max": [
+          417.6220703125,
+          94,
+          468.5845031738281
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/basarab-overpass-far.glb",
+      "bytes": 1104900,
+      "triangles": 26140,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -539.7620849609375,
+          -2.549999952316284,
+          -366.983154296875
+        ],
+        "max": [
+          417.6220703125,
+          94,
+          468.5845031738281
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basarab-overpass/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "adam-toren",
+  "name": "A'DAM Toren",
+  "kind": "building",
+  "origin": [
+    4.9021043,
+    52.3838518
+  ],
+  "height": 99,
+  "padM": 62,
+  "frontageBearing": 234,
+  "shaftHeight": 64,
+  "lookoutY": 75,
+  "shaftWidth": 25.2,
+  "crownWidth": 32.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0, east/up/south; no sea-level, DEM or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "OSM: 64 m shaft, 70–75 m rotated crown, 99 m mast; architectural sources: 22 m circular restaurant and 1.75 × 3 m facade elements. 100 m visitor-height descriptions are approximate. Window grouping, roof equipment and static swing pose estimated from exterior photographs. Shaft bearing 9° and crown bearing 54° are baked into exports.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/adam-toren-near.glb",
+      "bytes": 1360880,
+      "triangles": 25054,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -22.628196716308594,
+          -9.536743306171047e-8,
+          -22.628196716308594
+        ],
+        "max": [
+          33.0014762878418,
+          99,
+          39.76350402832031
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/adam-toren-far.glb",
+      "bytes": 257800,
+      "triangles": 4628,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -22.628196716308594,
+          -9.536743306171047e-8,
+          -22.628196716308594
+        ],
+        "max": [
+          33.0014762878418,
+          99,
+          39.76350402832031
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/adam-toren/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -22936,6 +22936,868 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "adam-toren",
+      "name": "A'DAM Toren",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural model of the renovated 2016 A’DAM tower: dark modular facade, white V supports, circular restaurant, rotated glazed lookout, roof mast and cantilevered twin-seat swing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/adam-toren/geometry.js",
+        "build": "pnpm build:top-cities-landmarks adam-toren --no-check",
+        "provenance": "Original texture-free procedural geometry authored for Codriver; no external mesh or image incorporated. Mapped outline and all nine replaced provider ways © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: Amsterdam A’DAM Tower Außen.jpg, Zairon, CC BY-SA 4.0; Top A’DAM tower (2026).jpg, Sneeuwvlakte, CC BY-SA 4.0; A’DAM Lookout-01-Entry.jpg, Muck, CC BY-SA 4.0. Images retained only in ignored tmp.",
+        "references": [
+          {
+            "label": "A’DAM LOOKOUT official: skydeck and swing",
+            "url": "https://www.adamlookout.com/"
+          },
+          {
+            "label": "Staalmakers: 2016 construction, 22 m restaurant and facade modules",
+            "url": "https://www.staalmakers.nl/projecten/adam-toren-amsterdam/"
+          },
+          {
+            "label": "OSM: tower and building parts",
+            "url": "https://www.openstreetmap.org/way/44824385"
+          },
+          {
+            "label": "Exterior photograph — Zairon, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_A%27DAM_Tower_Au%C3%9Fen.jpg"
+          },
+          {
+            "label": "2026 crown photograph — Sneeuwvlakte, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Top_A%27DAM_tower_(2026).jpg"
+          },
+          {
+            "label": "Entrance photograph — Muck, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:A%27DAM_Lookout-01-Entry.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/adam-toren/geometry.js"
+      },
+      "manifest": "/models/buildings/adam-toren.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=adam-toren",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=adam-toren&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=adam-toren&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=adam-toren&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=adam-toren&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=adam-toren&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=adam-toren&view=detail"
+          }
+        ]
+      },
+      "notes": "64 m mapped shaft; 75 m roof deck; 99 m mapped mast, distinct from the approximately 80 m tower description and 100 m visitor marketing height. Geometry bearings 9° shaft / 54° crown are baked into GLBs. The actual exterior uses a regular beveled facade grid, not an invented full-height diagonal diagrid. Window bay grouping, butterfly roof shields, rail spacing and swing static pose are estimates. Swing seats extend approximately 1.2 m beyond the roof edge, intentionally over the IJ side. No animation, lettering, interiors, parked objects or surrounding plaza. Both GLBs are locally inspected; independent and app review remain separate.",
+      "documentation": "docs/assets/top-cities-adam-toren.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "att-building-nashville",
+      "name": "AT&T Building (\"Batman Building\")",
+      "kind": "building",
+      "location": "Nashville, Tennessee",
+      "status": "ready",
+      "description": "Original 188 m Nashville Batman Building: stepped twin spires, broad folded glass crown, pale stepped corner piers, blue-black window bands and the brick winter garden annex.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/att-building-nashville/geometry.js",
+        "build": "pnpm build:top-cities-landmarks att-building-nashville",
+        "provenance": "Original procedural geometry authored 2026-10-12 from the supplied OSM dossier and photographic comparison; no copied mesh, scan, image or texture ships. Mapped footprint © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: Commons “333 Commerce Street (formerly AT&T Building) - Nashville, TN” by Quintin Soloviev (CC BY 4.0), and “AT&T Building, Commerce Street and 3rd Avenue, Nashville, TN” images 54385436310, 54385062416, 54384181982, 54384181782 and 54385435835 by Warren LeMay (CC BY-SA 2.0); retained only in ignored tmp.",
+        "references": [
+          {
+            "label": "Wikipedia: 333 Commerce, height and architecture",
+            "url": "https://en.wikipedia.org/wiki/333_Commerce"
+          },
+          {
+            "label": "Official building website",
+            "url": "https://www.333commerce.com/"
+          },
+          {
+            "label": "Mapped building outline",
+            "url": "https://www.openstreetmap.org/way/130910785"
+          },
+          {
+            "label": "Mapped tower part",
+            "url": "https://www.openstreetmap.org/way/465454851"
+          },
+          {
+            "label": "Quintin Soloviev: telephoto crown and facade, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:333_Commerce_Street_(formerly_AT%26T_Building)_-_Nashville,_TN.jpg"
+          },
+          {
+            "label": "Warren LeMay: winter garden, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Building,_Commerce_Street_and_3rd_Avenue,_Nashville,_TN_(54385436310).jpg"
+          },
+          {
+            "label": "Warren LeMay: low-angle tower, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Building,_Commerce_Street_and_3rd_Avenue,_Nashville,_TN_(54385435835).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/att-building-nashville/geometry.js"
+      },
+      "notes": "Sourced: 188 m architectural spires, 137.8 m occupied roof, 33 storeys, completion 1994. Mapped: tower/annex outlines and 107 degree crown axis. Estimated: 161 m crown ridge, 164 m connecting screen, stepped spire dimensions, facade bays, night window occupancy and winter-garden roof. Omits corporate lettering, plaza planting, underground parking and fine mechanical details; no app-mode or hardware certification. Review correction 2026-10-12: Replaced the fine stone checkerboard with broad grouped vertical piers and thin spandrels; near has three subordinate panes per band and far one coarser discrete pane. Kept the stepped wing heights, folded glass crown and both 188 m tips. Widened the full-facade camera so both tips are framed; comparison now uses dossier refs/1.jpg rather than the unrelated aerial batch tile.",
+      "documentation": "docs/assets/top-cities-att-building-nashville.md",
+      "manifest": "/models/buildings/att-building-nashville.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=att-building-nashville&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=roof"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=crown"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=entrance"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=att-building-nashville&view=street"
+          }
+        ]
+      },
+      "city": "Nashville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "basarab-overpass",
+      "name": "Basarab Overpass",
+      "kind": "bridge",
+      "location": "Bucharest, Romania",
+      "status": "ready",
+      "description": "Original 2011 Basarab railway crossing: twin chamfered portal pylons, 60 stays, central tram station and mapped curved road approaches.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/basarab-overpass/geometry.js",
+        "build": "pnpm build:top-cities-landmarks basarab-overpass",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-12; no textures, meshes or photographs shipped. OSM-derived alignment © OpenStreetMap contributors, ODbL 1.0. Visual reference Pasajul Basarab - Noaptea.jpg, Mihai Petre, CC BY-SA 4.0, licence checked on Commons; dossier photographs retained only in ignored scratch.",
+        "references": [
+          {
+            "label": "Designer CFC engineering project: dimensions and shaft form",
+            "url": "https://cfcsl.com/portfolio-items/puente-de-basarab-bucarest-rumania-2012/"
+          },
+          {
+            "label": "CFC ACHE paper, plans, tower and deck details",
+            "url": "https://cfcsl.com/wp-content/uploads/2023/09/articulo-basarab.pdf"
+          },
+          {
+            "label": "BBR: 168 m main span and five spans",
+            "url": "https://pf.bbrnetwork.com/installation1537A.html?setcookie=1"
+          },
+          {
+            "label": "FCC: project extent, tram station and grades",
+            "url": "https://www.ciudadfcc.com/en/-/basarab-viaduct"
+          },
+          {
+            "label": "Mihai Petre, Pasajul Basarab - Noaptea, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pasajul_Basarab_-_Noaptea.jpg"
+          },
+          {
+            "label": "Mapped main road",
+            "url": "https://www.openstreetmap.org/way/23770172"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basarab-overpass/geometry.js"
+      },
+      "notes": "Primary CFC paper specifies vertical chamfered shafts rising 80 m above deck; local deck elevation, tower location, shaft spacing, canopy and fittings are estimates. Southern river arch, transverse branch ramps and station access stairs are outside this asset. Original near/far exports pass budgets and depth/geometry checks; HD paint/lifecycle/hardware certification remains separate. Review b6b: final 40 m split into tapered carriageway slab noses with rail/shoulder feathering, provider-width fitting and theme-aware pavement blending; elevated spans remain rigid. Near 58416 triangles / 23 draws / 3037320 bytes; far 26140 / 7 / 1104376; zero depth cycles.",
+      "documentation": "docs/assets/top-cities-basarab-overpass.md",
+      "manifest": "/models/bridges/basarab-overpass.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=basarab-overpass",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=overview"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=detail"
+          },
+          {
+            "label": "South landing",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=southLanding"
+          },
+          {
+            "label": "North landing",
+            "url": "/asset-preview.html?asset=basarab-overpass&view=northLanding"
+          }
+        ]
+      },
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "buckingham-palace",
+      "name": "Buckingham Palace",
+      "kind": "building",
+      "location": "London, United Kingdom",
+      "status": "ready",
+      "description": "Original procedural Buckingham Palace: Aston Webb east front, pedimented royal balcony, roof balustrade, flagpole, open quadrangle and Nash garden wings.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/buckingham-palace/geometry.js",
+        "build": "pnpm build:top-cities-landmarks buckingham-palace --no-check",
+        "provenance": "Original texture-free procedural geometry authored 2026-10-12; geographic outlines © OpenStreetMap contributors (ODbL 1.0). Commons photographs used only as visual reference and retained only in ignored tmp/; no mesh or texture copied.",
+        "references": [
+          {
+            "label": "Royal Collection Trust: History of the East Wing",
+            "url": "https://www.rct.uk/visit/buckingham-palace/history-of-the-east-wing-of-buckingham-palace"
+          },
+          {
+            "label": "Wikipedia: dimensions and Aston Webb Portland stone facade",
+            "url": "https://en.wikipedia.org/wiki/Buckingham_Palace"
+          },
+          {
+            "label": "OpenStreetMap palace relation",
+            "url": "https://www.openstreetmap.org/relation/5208404"
+          },
+          {
+            "label": "File:Buckingham Palace Garden Party in 2024.jpg — Tony Hisgett; CC BY 2.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_Garden_Party_in_2024.jpg"
+          },
+          {
+            "label": "File:Buckingham Palace aerial view 2016.jpg — SAC Matthew 'Gerry' Gerrard RAF/© MoD Crown Copyright 2016; OGL v1.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_aerial_view_2016.jpg"
+          },
+          {
+            "label": "File:Buckingham Palace June 2017.jpg — MrsEllacott; CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_June_2017.jpg"
+          },
+          {
+            "label": "File:Buckingham Palace at Dusk.jpg — MrsEllacott; CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_at_Dusk.jpg"
+          },
+          {
+            "label": "File:Buckingham Palace 001.jpg — MrsEllacott; CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_001.jpg"
+          },
+          {
+            "label": "File:Buckingham Palace 002.jpg — MrsEllacott; CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_002.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/buckingham-palace/geometry.js"
+      },
+      "notes": "Mapped outer envelope and 18 building parts; front width 108 m, principal roofline approximately 24 m. Flagpole, bays and roof detail estimated; no Victoria Memorial, gate lodges or forecourt fences. Cityscape and Full 3D world not tested yet; integration is checked separately. Review correction 2026-10-12: Added shallow alternating triangular/segmental stone crowns with heavier first-floor jambs and sills outside the central portico in near. Crowns use closed shallow solids in the existing trim material; far window grid, roof balustrade and palace silhouette remain unchanged. Removed duplicate arc endpoints so the segmental solids have no degenerate support-test triangles.",
+      "documentation": "docs/assets/top-cities-buckingham-palace.md",
+      "manifest": "/models/buildings/buckingham-palace.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=buckingham-palace",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=buckingham-palace&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=buckingham-palace&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=buckingham-palace&view=roof"
+          },
+          {
+            "label": "Garden",
+            "url": "/asset-preview.html?asset=buckingham-palace&view=garden"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=buckingham-palace&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=buckingham-palace&view=detail"
+          }
+        ]
+      },
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fairmont-hotel-vancouver",
+      "name": "Fairmont Hotel Vancouver",
+      "kind": "building",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Original 1939 limestone Châteauesque hotel: stepped wings, enormous verdigris hipped roof, paired rows of dormers, stone stack, upper loggia and recessed hotel window grid.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fairmont-hotel-vancouver/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fairmont-hotel-vancouver --no-check",
+        "provenance": "Original procedural metric geometry, authored 2026-10-12. Mapped hotel outline and fifteen building parts © OpenStreetMap contributors, ODbL 1.0. Reference photos compared only, retained in ignored tmp; no mesh or image is redistributed.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Hotel_Vancouver"
+          },
+          {
+            "label": "Fairmont official hotel page",
+            "url": "https://www.fairmont.com/en/hotels/vancouver/fairmont-hotel-vancouver.html"
+          },
+          {
+            "label": "Mapped hotel outline",
+            "url": "https://www.openstreetmap.org/way/139571554"
+          },
+          {
+            "label": "File:Facade of Hotel Vancouver - Vancouver - BC - Canada (37269677994) (2).jpg — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Facade_of_Hotel_Vancouver_-_Vancouver_-_BC_-_Canada_(37269677994)_(2).jpg"
+          },
+          {
+            "label": "File:Hotel vanc 2007.jpg — Ken Walker kgw@lunar.ca, CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Hotel_vanc_2007.jpg"
+          },
+          {
+            "label": "File:Hotel Vancouver 01.JPG — Xicotencatl, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Hotel_Vancouver_01.JPG"
+          },
+          {
+            "label": "File:Luxury Fairmont Hotel in Vancouver (44723867431).jpg — dronepicr, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Luxury_Fairmont_Hotel_in_Vancouver_(44723867431).jpg"
+          },
+          {
+            "label": "File:Fairmont Hotel Vancouver (42914514460).jpg — dronepicr, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Hotel_Vancouver_(42914514460).jpg"
+          },
+          {
+            "label": "File:Fairmont Vancouver Hotel (2651640206).jpg — TravelingOtter from Houston, Texas, USA, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Vancouver_Hotel_(2651640206).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fairmont-hotel-vancouver/geometry.js"
+      },
+      "notes": "Published tip 112.47 m, architectural height 110.64 m and 17 floors; OSM levels 15/40/60/80/105 m. Window spacing, dormers, gargoyles, chimney lantern and canopy are photo estimates; ornament is simplified. No textures, interior, temporary scaffolding or neighbors. Runtime and independent review remain separate gates. Review correction 2026-10-12: Sharpened both dormer rows with tall pointed copper caps and attached sill cornices; replaced the flat triangular frontispiece surface with a closed stepped stone pediment, paired attached pilasters and tiered cornices with copper coping. Both LODs keep the refined outline. Shared vertices are merged locally to recover far byte headroom without removing window rhythm or roof features.",
+      "documentation": "docs/assets/top-cities-fairmont-hotel-vancouver.md",
+      "manifest": "/models/buildings/fairmont-hotel-vancouver.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fairmont-hotel-vancouver",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fairmont-hotel-vancouver&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fairmont-hotel-vancouver&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fairmont-hotel-vancouver&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fairmont-hotel-vancouver&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=fairmont-hotel-vancouver&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fairmont-hotel-vancouver&view=detail"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "granville-street-bridge",
+      "name": "Granville Street Bridge",
+      "kind": "bridge",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "1954 seven-span haunched steel deck-truss crossing over False Creek and Granville Island, with concrete approach girders and the 2025 west-side Connector.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/granville-street-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks granville-street-bridge",
+        "provenance": "Original texture-free procedural geometry. OSM contributors ODbL 1.0. Reference-only photographs: Wpcpey, Granville Street Bridge 2018, CC BY-SA 4.0 (Commons license section; introductory template also mentions CC BY 3.0); Usgnus, False Creek and Granville Island - Vancouver, CC BY-SA 3.0. SEABC structural brochure photographs credited to Associated Engineering and City of Vancouver Archives/Lew Parry Film Productions; viewed only, retained under ignored tmp. No photograph or third-party mesh ships.",
+        "references": [
+          {
+            "label": "SEABC / IABSE Notable Structures 2017, printed p.7",
+            "url": "https://www.seabc.ca/wordpress/files/notable_structures/Vancouver_Notable_Structures_IABSE_SEABC_2017.pdf"
+          },
+          {
+            "label": "City of Vancouver - maintained bridge identity",
+            "url": "https://vancouver.ca/streets-transportation/granville-bridge.aspx"
+          },
+          {
+            "label": "City of Vancouver - 2025 Connector opening",
+            "url": "https://vancouver.ca/news-calendar/granville-connector-opens-july-2025.aspx"
+          },
+          {
+            "label": "Wikipedia - third bridge, length and clearance",
+            "url": "https://en.wikipedia.org/wiki/Granville_Street_Bridge"
+          },
+          {
+            "label": "Wpcpey, 2018 side view, reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Granville_Street_Bridge_2018.jpg"
+          },
+          {
+            "label": "Usgnus, island/side view, reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:False_Creek_and_Granville_Island_-_Vancouver.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/granville-street-bridge/geometry.js"
+      },
+      "notes": "Primary Granville alignment only; branch ramps remain provider structures. Seven estimated span registrations and sourced 29–121 m span range retained. Original eight-lane structural envelope with current six-lane fallback and west Connector; only the outer 90 m taper. South toes follow mapped ways 341691651/341691649; downtown follows way 975327011. Walking surfaces/divider taper into ground-level shoulders and rails terminate on named posts/slabs. Hidden buried toe undersides are omitted to avoid reverse material depth cycles; girder toes stop under the supported deck. Far keeps all seven trusses/piers. Independent re-review pending.",
+      "documentation": "docs/assets/top-cities-granville-street-bridge.md",
+      "manifest": "/models/bridges/granville-street-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=granville-street-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=underside"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=south"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=granville-street-bridge&view=north"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "jefferson-memorial",
+      "name": "Jefferson Memorial",
+      "kind": "building",
+      "location": "Washington, D.C.",
+      "status": "ready",
+      "description": "White-marble Jefferson Memorial with 54 unfluted Ionic columns, open four-portal chamber and standing Jefferson, shallow dome, north octastyle portico, committee pediment relief and mapped granite/grass terraces.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/jefferson-memorial/geometry.js",
+        "build": "pnpm build:top-cities-landmarks jefferson-memorial --no-check",
+        "provenance": "Original procedural texture-free geometry authored for Codriver, 2026-10-12; no scan, traced mesh, photograph or texture ships. Complete 49-way OSM building/part dossier, © OpenStreetMap contributors (ODbL 1.0). Reference-only Commons photos in ignored scratch: Jefferson Memorial Washington April 2017 002.jpg (King of Hearts, CC BY-SA 4.0); Thomas Jefferson Memorial in Cherry blossom.jpg (Vedaantom, CC BY-SA 4.0); Jefferson Memorial Overlooking the Tidal Basin.png (pmcizhere, CC BY-SA 4.0); Jefferson Memorial - panoramio (7).jpg (Idawriter, CC BY-SA 3.0); southwest/southeast wall inscriptions, 2018-04-08 (Famartin, CC BY-SA 4.0). Federal USGS report 93-350 supplies column setting diagram; NPS historic memorial booklet supplies datum-specific heights.",
+        "references": [
+          {
+            "label": "NPS dimensions",
+            "url": "https://www.nps.gov/thje/learn/historyculture/places.htm"
+          },
+          {
+            "label": "NPS exterior, column counts and materials",
+            "url": "https://www.nps.gov/thje/learn/historyculture/memorialfeatures.htm"
+          },
+          {
+            "label": "NPS historical booklet, structural statistics (roadway and floor datums)",
+            "url": "https://npshistory.com/publications/thje/memorial.pdf"
+          },
+          {
+            "label": "USGS original column-setting schematic, report 93-350",
+            "url": "https://pubs.usgs.gov/of/1993/0350/report.pdf"
+          },
+          {
+            "label": "NPS National Register architectural description",
+            "url": "https://npgallery.nps.gov/GetAsset/9de39bc1-a695-4052-968d-97b45e54feb1"
+          },
+          {
+            "label": "OSM complete principal envelope",
+            "url": "https://www.openstreetmap.org/way/1491844988"
+          },
+          {
+            "label": "Front facade, King of Hearts, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Jefferson_Memorial_Washington_April_2017_002.jpg"
+          },
+          {
+            "label": "Rotunda interior, Idawriter, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Jefferson_Memorial_-_panoramio_(7).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jefferson-memorial/geometry.js"
+      },
+      "notes": "Original procedural architectural approximation; column counts and portico dimensions sourced, shaft pattern regularized from OSM and the USGS diagram, 4 m chamber floor follows mapped upper stylobate. Dome apex 29.1592 m above floor, distinct from published 39.4208 m roadway-to-apex. Drum, dome curvature, exterior shell thickness, mouldings and relief/statue volumes estimated. Lettering omitted. Terrain datum and terrace interfaces require separate in-app validation. Review correction 2026-10-12: Removed the raised lawn disk and exposed granite sidewall. An original open turf bank slopes from y=3 at the mapped lower architectural terrace to y=0 on the mapped landscaped perimeter in both LODs; stone terrace steps and stair approach are retained. Raycasts observe the slope descending from approximately 1.88 m at x=35 to 0.40 m at x=43. Terrain-pad metadata remains unchanged; the lead must verify the outer contact against runtime terrain in both modes.",
+      "documentation": "docs/assets/top-cities-jefferson-memorial.md",
+      "manifest": "/models/buildings/jefferson-memorial.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=jefferson-memorial&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=jefferson-memorial&view=plan"
+          }
+        ]
+      },
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "john-hancock-center",
+      "name": "875 North Michigan (John Hancock Center)",
+      "kind": "building",
+      "location": "Chicago, Illinois",
+      "status": "ready",
+      "description": "Original procedural model of Chicago’s tapered black trussed-tube tower: five giant X tiers on all four faces, bronze-glass window grids, two roof antennas and mapped entrance canopies.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/john-hancock-center/geometry.js",
+        "build": "pnpm build:top-cities-landmarks john-hancock-center",
+        "provenance": "Original texture-free procedural Three.js authoring by Codriver, 2026-10-12; no external mesh, scan or image texture retained in exports. OSM geometry © OpenStreetMap contributors, ODbL 1.0. Ignored reference photos: “John Hancock Center, Chicago, Illinois. Exterior. Night view (1974)” — Balthazar Korab, public domain; “Chicago in 2022 John Hancock Center (52054925135)” — Chris Rycroft, CC BY 2.0. Other dossier photos were viewed for context but do not provide detailed tower geometry.",
+        "references": [
+          {
+            "label": "SOM — design and exposed trussed tube",
+            "url": "https://www.som.com/projects/875-north-michigan-avenue-formerly-john-hancock-center/"
+          },
+          {
+            "label": "CTBUH — measured heights and 100 floors",
+            "url": "https://www.skyscrapercenter.com/building/875-north-michigan-avenue/345"
+          },
+          {
+            "label": "OSM — tower outline",
+            "url": "https://www.openstreetmap.org/way/31064573"
+          },
+          {
+            "label": "Chris Rycroft — 2022 facade, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Chicago_in_2022_John_Hancock_Center_(52054925135).jpg"
+          },
+          {
+            "label": "Balthazar Korab — night facade, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:John_Hancock_Center,_Chicago,_Illinois._Exterior._Night_view_(1974).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/john-hancock-center/geometry.js"
+      },
+      "notes": "Architectural height 343.7 m and antenna tip 456.9 m sourced from CTBUH; 100 storeys. Base 82.3 x 52.8 m and roof 48.9 x 31 m fitted to OSM, orientation from mapped control points. X tiers, glazing bays, mast equipment and entrance details estimated. Attached parking tower, guards, sunken plaza and interiors omitted and not masked. Exterior steel may extend ~1.4 m beyond mapped curtain-wall rings. Export inspection is not app/terrain or Tesla performance evidence.",
+      "documentation": "docs/assets/top-cities-john-hancock-center.md",
+      "manifest": "/models/buildings/john-hancock-center.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=john-hancock-center",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=detail"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=entrance"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=john-hancock-center&view=plan"
+          }
+        ]
+      },
+      "city": "Chicago",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pennybacker-bridge",
+      "name": "Pennybacker Bridge (Loop 360)",
+      "kind": "bridge",
+      "status": "ready",
+      "location": "Austin, Texas, United States",
+      "description": "Rust-brown two-hinge through arch over Lake Austin: twin weathering-steel boxes, open Vierendeel struts and 72 vertical strand hangers above a four-lane road.",
+      "manifest": "/models/bridges/pennybacker-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pennybacker-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pennybacker-bridge --no-check",
+        "provenance": "Original texture-free procedural mesh authored 2026-10-12. OSM alignment © OpenStreetMap contributors, ODbL 1.0. Reference study only: PennybackerBridge, Dbtfz, public domain; Pennybacker bridge sunset 2006, Larry D. Moore, CC BY 4.0; 360 Bridge - panoramio and (2), Todd Dwyer, CC BY-SA 3.0; 360 Bridge Sunset, Austin TX, sbmeaper1, CC0. TxDOT construction presentation supplies structural dimensions. Photos and PDF stay ignored; no textures or third-party geometry distributed.",
+        "references": [
+          {
+            "label": "TxDOT: construction and structural dimensions",
+            "url": "https://ftp.txdot.gov/pub/txdot-info/brg/texas-steel/2022/nov/steel-arch-bridges-in-texas-pennybacker-bridge.pdf"
+          },
+          {
+            "label": "AIA Austin architecture guide: through arch and weathering steel",
+            "url": "https://guidetoaustinarchitecture.com/places/pennybacker-bridge/"
+          },
+          {
+            "label": "LCRA: Lake Austin full pool datum",
+            "url": "https://www.lcra.org/water/dams-and-lakes/"
+          },
+          {
+            "label": "Dbtfz aerial, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:PennybackerBridge.jpg"
+          },
+          {
+            "label": "Larry D. Moore side view, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pennybacker_bridge_sunset_2006.jpg"
+          },
+          {
+            "label": "Todd Dwyer river/underside view, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:360_Bridge_-_panoramio.jpg"
+          },
+          {
+            "label": "Mapped bridge outline",
+            "url": "https://www.openstreetmap.org/way/708944434"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pennybacker-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pennybacker-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pennybacker-bridge&view=tower"
+          }
+        ]
+      },
+      "notes": "Main span 182.88 m, deck 26.5176 m wide, arch boxes 1.2192 × 3.3528 m, 18 groups of four hangers near (two per group far). Three south approach spans and one north, no river pier. Estimated 50 m arch rise and 21.336 m deck above local flat grade; separate 150.20544 m lake datum in world. Road surface, route and model share one OSM frame; rigid width; absolute deck preserves limestone terrain. Independent review pending. Final near 36,300 triangles / 15 draws / 1,276 KiB; far 15,908 / 6 / 498 KiB. Independent-review square joins fixed with split ramp ribbons and 50 m width tapers, mapped carriageway controls, tapered walk/barriers and standard-road width/colour matching; river spans stay rigid. North approach slab/pavement share a 2/4 m grid to prevent terrain-fit intersections. Zero depth cycles and QA issues; verified against exported light/dark contact sheets and both-mode app captures.",
+      "documentation": "docs/assets/top-cities-pennybacker-bridge.md",
+      "city": "Austin",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "samuel-beckett-bridge",
+      "name": "Samuel Beckett Bridge",
+      "kind": "bridge",
+      "location": "Dublin, Ireland",
+      "status": "ready",
+      "description": "Original procedural road-fitted Calatrava swing bridge in its closed position: curved white longitudinal spar, circular opening, stay harp, backstays and central swing pier.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/samuel-beckett-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks samuel-beckett-bridge",
+        "provenance": "Original procedural geometry; OSM placement © OpenStreetMap contributors (ODbL 1.0). Reference-only supplied dossier photos: Dublin Samuel Beckett Bridge 08, J.-H. Janßen, CC0 (license page independently checked); Samuel Beckett Bridge Dublin, Ajolk, CC BY-SA 3.0; At Sunset Dublin Ireland, Giuseppe Milo, CC BY 3.0; Dublin Ireland, Ana Rey, CC BY-SA 3.0; two Samuel Beckett Bridge Dublin panoramio images, William Murphy, CC BY-SA 3.0 (dossier metadata). Photographs remain in ignored scratch; no captured geometry or textures.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Samuel_Beckett_Bridge"
+          },
+          {
+            "label": "Architect: dimensions, deck section and pier station",
+            "url": "https://calatrava.com/index.php/projects/samuel-beckett-bridge-dublin.html"
+          },
+          {
+            "label": "Mapped bridge outline",
+            "url": "https://www.openstreetmap.org/way/381481630"
+          },
+          {
+            "label": "J.-H. Janßen, CC0 reference photo",
+            "url": "https://commons.wikimedia.org/wiki/File:Dublin_Samuel_Beckett_Bridge_08.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/samuel-beckett-bridge/geometry.js"
+      },
+      "notes": "B6b review fix: near/far ramp edges now smoothly narrow to the 5 m provider ribbon, median closes at toes, south tangent matches its road and north toe snaps to Guild Street. Application blends asphalt to standard-road palette without additional draws; rigid 124.59 m / 27 m harp structure and member contacts preserved. Near 6494 triangles / 10 draws / 411588 bytes (402 KiB), far 2638 / 9 / 178852 (175 KiB), unchanged triangles/draws. 48 m local apex / 1.6 m deck are estimates, not architect ASL datums. Ramps 23.16 / 33.58 m, peak grades 10.36 / 7.15%. Zero depth cycles; 480 focused tests pass; clear approach sheets and exported near/far sheets documented. Provider SD widths vary with zoom; the 5 m toe targets driving zoom 18.6. Independent reviewer pending; no hardware measurements.",
+      "documentation": "docs/assets/top-cities-samuel-beckett-bridge.md",
+      "city": "Dublin",
+      "manifest": "/models/bridges/samuel-beckett-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=samuel-beckett-bridge&view=underside"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

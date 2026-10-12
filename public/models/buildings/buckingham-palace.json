@@ -1,0 +1,67 @@
+{
+  "id": "buckingham-palace",
+  "name": "Buckingham Palace",
+  "kind": "building",
+  "origin": [
+    -0.14194,
+    51.50083
+  ],
+  "height": 33,
+  "padM": 150,
+  "frontageBearing": 57,
+  "bodyHeight": 24,
+  "facadeWidth": 108,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no DEM or absolute altitude baked into the reusable mesh.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "108 m east-front width and 24 m principal roofline sourced; mapped wings and open quadrangle. Bay sizes, pediments, roof pitches and 33 m flagpole tip estimated from photographs. Rotation -57 degrees baked into east/up/south geometry. Victoria Memorial and freestanding gates excluded. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/buckingham-palace-near.glb",
+      "bytes": 823700,
+      "triangles": 16200,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -119.47418975830078,
+          0,
+          -123.9986572265625
+        ],
+        "max": [
+          44.432655334472656,
+          33,
+          123.05210876464844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/buckingham-palace-far.glb",
+      "bytes": 311732,
+      "triangles": 6072,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -119.47418975830078,
+          0,
+          -123.9986572265625
+        ],
+        "max": [
+          44.432655334472656,
+          33,
+          123.05210876464844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/buckingham-palace/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

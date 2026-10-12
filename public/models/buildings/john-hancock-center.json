@@ -1,0 +1,71 @@
+{
+  "id": "john-hancock-center",
+  "name": "875 North Michigan (John Hancock Center)",
+  "kind": "building",
+  "origin": [
+    -87.62309465,
+    41.8988181
+  ],
+  "height": 456.9,
+  "roofM": 343.7,
+  "baseWidthM": 82.3,
+  "baseDepthM": 52.8,
+  "roofWidthM": 48.9,
+  "roofDepthM": 31,
+  "rotation": 0.0195,
+  "padM": 57,
+  "frontageBearing": 268.88,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no terrain, sea-level altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "343.7 m architectural height, 456.9 m tip, 100 storeys: CTBUH. Mapped base/roof envelope and antenna locations; five X tiers, facade bays, masts and entrance canopies simplified from reference photographs. Rotation baked into vertices. Cityscape and Full 3D world not tested; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/john-hancock-center-near.glb",
+      "bytes": 1990568,
+      "triangles": 36610,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -44.546878814697266,
+          0,
+          -31.35866355895996
+        ],
+        "max": [
+          43.031463623046875,
+          456.8999938964844,
+          31.351470947265625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/john-hancock-center-far.glb",
+      "bytes": 405368,
+      "triangles": 7234,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -44.546878814697266,
+          0,
+          -31.35866355895996
+        ],
+        "max": [
+          43.031463623046875,
+          456.8999938964844,
+          31.351470947265625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/john-hancock-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

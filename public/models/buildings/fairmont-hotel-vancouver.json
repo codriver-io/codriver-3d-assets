@@ -1,0 +1,65 @@
+{
+  "id": "fairmont-hotel-vancouver",
+  "name": "Fairmont Hotel Vancouver",
+  "kind": "building",
+  "origin": [
+    -123.12096,
+    49.28384
+  ],
+  "height": 112.47,
+  "padM": 65,
+  "frontageBearing": 45.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid foundation, no baked DEM or sea-level altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1939 Châteauesque hotel; 112.47 m tip and 110.64 m architectural height sourced; OSM outline and part levels retained. Roof dormers, gargoyles, window pitch, Renaissance arcade and canopy reconstructed approximately from photos. Both runtime placement modes await separate integration checks.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fairmont-hotel-vancouver-near.glb",
+      "bytes": 1173284,
+      "triangles": 23132,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -67.03585815429688,
+          0,
+          -43.907196044921875
+        ],
+        "max": [
+          45.357818603515625,
+          112.47000122070312,
+          59.1281852722168
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fairmont-hotel-vancouver-far.glb",
+      "bytes": 467552,
+      "triangles": 9303,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -66.7550277709961,
+          0,
+          -43.62628173828125
+        ],
+        "max": [
+          45.079429626464844,
+          112.47000122070312,
+          58.84316635131836
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fairmont-hotel-vancouver/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
