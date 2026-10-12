@@ -7,7 +7,7 @@ export function local([lng,lat]) { const k=mercStretch(ORIGIN[1]);return [(lngTo
 // and [-118.3002558,34.1184283] → [-118.3000571,34.1184286]: effectively E/W.
 // Walls use the mapped ring directly, all other orientation is baked in.
 export const SPEC = {
-  id:'griffith-observatory', name:'Griffith Observatory', kind:'building', ready: false,
+  id:'griffith-observatory', name:'Griffith Observatory', kind:'building', ready: true,
   origin:ORIGIN, height:23.2, padM:58, frontageBearing:0,
   telescopeDiameterM:9.144, planetariumExteriorDiameterM:24.8,
   terrainPad:{

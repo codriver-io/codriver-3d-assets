@@ -53,6 +53,52 @@ export function roofCells(outline, detail) {
     return { points, material: Math.abs(u) < 67.5 && Math.abs(v) < 45.5 ? Math.abs(u) < 0.55 ? 'seam' : 'membrane' : 'roof' };
   });
 }
+
+// Partition each end against the actual piecewise-linear fascia, not the
+// analytic dome or a door-height header that can invert on the low shoulders.
+// All panes, borders and jambs occupy disjoint regions of this single plane.
+export function endWallCells(cells, end, detail) {
+  const edge = new Map();
+  for (const { points } of cells) for (let i = 0; i < points.length; i++) {
+    const a = points[i], c = points[(i + 1) % points.length];
+    if (Math.abs(a[0] - end * 135) > 1e-7 || Math.abs(c[0] - end * 135) > 1e-7) continue;
+    for (const p of [a, c]) edge.set(p[1].toFixed(7), [p[1], roofHeight(...p) - 2]);
+  }
+  const top = [...edge.values()].sort((a, c) => a[0] - c[0]);
+  const envelope = [[top[0][0] * 0.92, 0], [top.at(-1)[0] * 0.92, 0], ...top.toReversed()];
+  const half = SPEC.doorWidth / 2, rows = detail === 'near' ? 10 : 4, bays = detail === 'near' ? 4 : 1;
+  const jambs = Array.from({ length: 6 }, (_, i) => -half + i * SPEC.doorWidth / 5);
+  const vc = [...top.map(p => p[0]), -half, half];
+  for (const v of jambs) vc.push(Math.max(-half, v - 0.28), Math.min(half, v + 0.28));
+  for (let i = 0; i < 5; i++) for (let j = 1; j < bays; j++) vc.push(jambs[i] + 0.28 + (SPEC.doorWidth / 5 - 0.56) * j / bays);
+  const yc = Array.from({ length: rows + 1 }, (_, i) => SPEC.doorHeight * i / rows);
+  yc.push(40, 44, 48, 52);
+  const clip = (polygon, axis, cut, sign) => {
+    const out = [];
+    for (let i = 0; i < polygon.length; i++) {
+      const a = polygon[i], c = polygon[(i + 1) % polygon.length];
+      const da = sign * (a[axis] - cut), dc = sign * (c[axis] - cut);
+      if (da >= -1e-8) out.push(a);
+      if (da * dc < -1e-16) {
+        const f = da / (da - dc);
+        out.push(a.map((v, j) => j === axis ? cut : v + (c[j] - v) * f));
+      }
+    }
+    return out.filter((p, i) => !i || Math.hypot(p[0] - out[i - 1][0], p[1] - out[i - 1][1]) > 1e-7);
+  };
+  const cuts = [...new Set([envelope[0][0], envelope[1][0], ...vc])].sort((a, c) => a - c), out = [];
+  for (let i = 0; i < cuts.length - 1; i++) {
+    const column = clip(clip(envelope, 0, cuts[i], 1), 0, cuts[i + 1], -1);
+    for (let j = 0; j < yc.length - 1; j++) {
+      const p = clip(clip(column, 1, yc[j], 1), 1, yc[j + 1], -1);
+      if (p.length < 3) continue;
+      const [v, y] = p.reduce((s, q) => s.map((x, k) => x + q[k] / p.length), [0, 0]);
+      const door = Math.abs(v) < half && y < SPEC.doorHeight;
+      out.push({ points: p.map(([v, y]) => [end * 135, y, v]), material: door ? jambs.some(c => Math.abs(v - c) < 0.28) ? 'steel' : 'door' : 'glass' });
+    }
+  }
+  return out;
+}
 // Member endpoint supports are tested against independent support geometry.
 export function archAssembly(detail) {
   const count = detail === 'near' ? 32 : 12, half = SPEC.archSpan / 2;

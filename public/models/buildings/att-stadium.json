@@ -1,0 +1,71 @@
+{
+  "id": "att-stadium",
+  "name": "AT&T Stadium",
+  "kind": "building",
+  "origin": [
+    -97.09284,
+    32.74785
+  ],
+  "height": 73.8,
+  "padM": 210,
+  "frontageBearing": 69,
+  "axisAngle": 0.3665191429188092,
+  "archSpan": 373.38,
+  "archWidth": 5.0292,
+  "archDepth": 10.668,
+  "doorWidth": 54.864,
+  "doorHeight": 36.576,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 at local street/plaza grade; the field is 15.24 m lower. No absolute altitude or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Closed roof. Published 373.38 m arch span, 5.03 m truss width, 10.67 m depth and 54.86 × 36.58 m doors. Arch crest 89.00 m above field minus 15.24 m field depression gives 73.76 m above grade. Roof curvature, canted wall, bays, support profiles and lighting estimated from photos. Rotation 21 degrees baked into geometry; OSM includes four arch-foot structures. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/att-stadium-near.glb",
+      "bytes": 1629304,
+      "triangles": 29963,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -196.59246826171875,
+          0,
+          -121.7508773803711
+        ],
+        "max": [
+          196.59246826171875,
+          73.81208801269531,
+          124.42101287841797
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/att-stadium-far.glb",
+      "bytes": 432444,
+      "triangles": 7818,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -196.59246826171875,
+          0,
+          -121.72860717773438
+        ],
+        "max": [
+          196.59246826171875,
+          73.81150817871094,
+          124.42101287841797
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/att-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

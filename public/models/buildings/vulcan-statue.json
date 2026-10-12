@@ -1,0 +1,257 @@
+{
+  "id": "vulcan-statue",
+  "name": "Vulcan statue and tower",
+  "kind": "building",
+  "origin": [
+    -86.79550087777778,
+    33.491722788888886
+  ],
+  "height": 54.864,
+  "pedestalM": 37.7952,
+  "statueM": 17.0688,
+  "padM": 17,
+  "frontageBearing": 1.8,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -86.7955769,
+          33.491754
+        ],
+        [
+          -86.7955757,
+          33.4916999
+        ],
+        [
+          -86.7955418,
+          33.4916724
+        ],
+        [
+          -86.795534,
+          33.4916723
+        ],
+        [
+          -86.7955135,
+          33.4917012
+        ],
+        [
+          -86.7954886,
+          33.4917004
+        ],
+        [
+          -86.7954638,
+          33.49167
+        ],
+        [
+          -86.7954574,
+          33.4916702
+        ],
+        [
+          -86.7954237,
+          33.4917011
+        ],
+        [
+          -86.7954206,
+          33.4917501
+        ],
+        [
+          -86.7954669,
+          33.4917909
+        ],
+        [
+          -86.7955318,
+          33.4917933
+        ],
+        [
+          -86.7955769,
+          33.491754
+        ]
+      ],
+      [
+        [
+          -86.7954726,
+          33.4916449
+        ],
+        [
+          -86.7954839,
+          33.4916572
+        ],
+        [
+          -86.7954883,
+          33.4916572
+        ],
+        [
+          -86.795513,
+          33.4916576
+        ],
+        [
+          -86.7955185,
+          33.4916577
+        ],
+        [
+          -86.795531,
+          33.4916473
+        ],
+        [
+          -86.7955199,
+          33.4916309
+        ],
+        [
+          -86.7954855,
+          33.4916303
+        ],
+        [
+          -86.7954726,
+          33.4916449
+        ]
+      ],
+      [
+        [
+          -86.79551865085536,
+          33.49170033110951
+        ],
+        [
+          -86.79548310470021,
+          33.49170033110951
+        ],
+        [
+          -86.79548310470021,
+          33.491637449327264
+        ],
+        [
+          -86.79551865085536,
+          33.491637449327264
+        ],
+        [
+          -86.79551865085536,
+          33.49170033110951
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -86.7955135,
+        33.4917012
+      ],
+      [
+        -86.7955123,
+        33.491701
+      ],
+      [
+        -86.7954886,
+        33.4917004
+      ],
+      [
+        -86.7954702,
+        33.4917126
+      ],
+      [
+        -86.7954685,
+        33.4917344
+      ],
+      [
+        -86.7954864,
+        33.4917506
+      ],
+      [
+        -86.7955113,
+        33.4917514
+      ],
+      [
+        -86.7955277,
+        33.4917377
+      ],
+      [
+        -86.7955294,
+        33.4917158
+      ],
+      [
+        -86.7954726,
+        33.4916449
+      ],
+      [
+        -86.7954839,
+        33.4916572
+      ],
+      [
+        -86.7954883,
+        33.4916572
+      ],
+      [
+        -86.795513,
+        33.4916576
+      ],
+      [
+        -86.7955185,
+        33.4916577
+      ],
+      [
+        -86.795531,
+        33.4916473
+      ],
+      [
+        -86.7955199,
+        33.4916309
+      ],
+      [
+        -86.7954855,
+        33.4916303
+      ]
+    ],
+    "datum": "median",
+    "featherM": 12
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at the tower and elevator footing. Red Mountain and DEM heights are not baked; a bounded median terrain pad is declared for separate world integration verification.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Official dimensions: statue toe-to-spear 56 ft and pedestal 124 ft. Shaft width and elevator location mapped; anatomy, balcony level, stone taper and elevator height estimated from reference photos. Original simplified anatomy, no scan, mesh tracing or texture. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/vulcan-statue-near.glb",
+      "bytes": 502264,
+      "triangles": 15596,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -4.162725925445557,
+          0,
+          -4.162725925445557
+        ],
+        "max": [
+          5.845128059387207,
+          54.86399841308594,
+          9.583037376403809
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/vulcan-statue-far.glb",
+      "bytes": 96508,
+      "triangles": 2312,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -4.162725925445557,
+          0,
+          -4.162725925445557
+        ],
+        "max": [
+          5.845128059387207,
+          54.86399841308594,
+          9.583037376403809
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vulcan-statue/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

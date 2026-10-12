@@ -1,0 +1,265 @@
+{
+  "id": "notre-dame-de-la-garde",
+  "name": "Notre-Dame de la Garde",
+  "kind": "building",
+  "origin": [
+    5.371,
+    43.2841
+  ],
+  "height": 64.7,
+  "padM": 70,
+  "frontageBearing": 311,
+  "axisBearing": 131,
+  "rangeM": 4200,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          5.370953800188875,
+          43.284307776735766
+        ],
+        [
+          5.371624348118936,
+          43.28388344822258
+        ],
+        [
+          5.371389569587582,
+          43.283686838648144
+        ],
+        [
+          5.370812153314474,
+          43.28405223264561
+        ],
+        [
+          5.370775692337503,
+          43.28415862464481
+        ]
+      ],
+      [
+        [
+          5.3712304,
+          43.2841584
+        ],
+        [
+          5.3713174,
+          43.28423
+        ],
+        [
+          5.3713392,
+          43.284248
+        ],
+        [
+          5.3712181,
+          43.2843236
+        ],
+        [
+          5.371111,
+          43.2842342
+        ],
+        [
+          5.3712304,
+          43.2841584
+        ]
+      ],
+      [
+        [
+          5.371701,
+          43.2839585
+        ],
+        [
+          5.3717059,
+          43.2839558
+        ],
+        [
+          5.3717237,
+          43.2839716
+        ],
+        [
+          5.3713476,
+          43.2842112
+        ],
+        [
+          5.3713965,
+          43.2842506
+        ],
+        [
+          5.3713547,
+          43.2842782
+        ],
+        [
+          5.3713488,
+          43.284275
+        ],
+        [
+          5.3712529,
+          43.2843363
+        ],
+        [
+          5.3712579,
+          43.2843413
+        ],
+        [
+          5.3712143,
+          43.2843681
+        ],
+        [
+          5.3711769,
+          43.2843362
+        ],
+        [
+          5.3711827,
+          43.2843324
+        ],
+        [
+          5.3710848,
+          43.2842513
+        ],
+        [
+          5.3710917,
+          43.2842468
+        ],
+        [
+          5.3711076,
+          43.2842364
+        ],
+        [
+          5.371111,
+          43.2842342
+        ],
+        [
+          5.3712181,
+          43.2843236
+        ],
+        [
+          5.3713392,
+          43.284248
+        ],
+        [
+          5.3713174,
+          43.28423
+        ],
+        [
+          5.3712304,
+          43.2841584
+        ],
+        [
+          5.3713496,
+          43.2840826
+        ],
+        [
+          5.3715204,
+          43.283974
+        ],
+        [
+          5.3716106,
+          43.2839166
+        ],
+        [
+          5.3716344,
+          43.2839015
+        ],
+        [
+          5.371653,
+          43.2839161
+        ],
+        [
+          5.371701,
+          43.2839585
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 4,
+    "refs": [
+      [
+        5.370985391748769,
+        43.28425207710484
+      ],
+      [
+        5.370828344937326,
+        43.2840657919266
+      ],
+      [
+        5.371331255884872,
+        43.283747545541715
+      ]
+    ],
+    "terraces": [
+      {
+        "ring": [
+          [
+            5.371033174931514,
+            43.28420993675491
+          ],
+          [
+            5.371564025376147,
+            43.28387401001531
+          ],
+          [
+            5.3713859175247745,
+            43.283724857924355
+          ],
+          [
+            5.370855067080143,
+            43.28406078466396
+          ]
+        ],
+        "offsetM": 5,
+        "featherM": 3
+      }
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Lowest authored fort footing y=0; upper basilica terrace y=5 m. Rigid structure with bounded median lower pad and an explicit +5 m upper terrace; no hill/DEM altitude is baked in. Both placement modes remain untested.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Permanent Romano-Byzantine basilica, square tower, columned pedestal and gilded Virgin and Child. Published stages 41 + 12.5 + 11.2 m = 64.7 m; OSM main envelope about 52 × 17 m. Terrace relief, dome, smaller architecture and sculpture are photographic estimates; 149 m hill is external terrain.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/notre-dame-de-la-garde-near.glb",
+      "bytes": 2066484,
+      "triangles": 45445,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -19.600784301757812,
+          -5.2452087118126656e-8,
+          -29.844892501831055
+        ],
+        "max": [
+          58.646366119384766,
+          64.69999694824219,
+          45.99312210083008
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/notre-dame-de-la-garde-far.glb",
+      "bytes": 459732,
+      "triangles": 10631,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -19.600784301757812,
+          -5.2452087118126656e-8,
+          -29.844892501831055
+        ],
+        "max": [
+          58.646366119384766,
+          64.69999694824219,
+          45.99312210083008
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/notre-dame-de-la-garde/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

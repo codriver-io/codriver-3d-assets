@@ -1,0 +1,68 @@
+{
+  "id": "royal-palace-amsterdam",
+  "name": "Royal Palace (Paleis op de Dam)",
+  "kind": "building",
+  "origin": [
+    4.89136,
+    52.37317
+  ],
+  "height": 51,
+  "padM": 60,
+  "frontageBearing": 1.55,
+  "eaves": 25,
+  "roofHeight": 30,
+  "facadeWidth": 80,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid foundation at local grade y=0; no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Dutch classical palace: seven small entrance arches, paired window rows, sculpted pediments, four corner hips and open domed cupola with ship vane. OSM massing and heights; ornament and 51 m vane tip estimated from references. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/royal-palace-amsterdam-near.glb",
+      "bytes": 1470988,
+      "triangles": 28278,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -35.589290618896484,
+          0,
+          -38.226444244384766
+        ],
+        "max": [
+          30.39009666442871,
+          51,
+          43.920921325683594
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/royal-palace-amsterdam-far.glb",
+      "bytes": 347664,
+      "triangles": 6682,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -35.589290618896484,
+          0,
+          -38.346397399902344
+        ],
+        "max": [
+          30.39009666442871,
+          51,
+          44.04087829589844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/royal-palace-amsterdam/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

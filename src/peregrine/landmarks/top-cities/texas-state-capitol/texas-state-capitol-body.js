@@ -28,7 +28,16 @@ export function buildBody(k) {
           }
         }
       }
-      for(const y of (near?[6.6,21.2,25.7]:[]))bar('stone',[ax,y,az],[bx,y,bz],.5,.65);
+      // Continuous courses survive far; the cornice has a projecting upper lip.
+      for(const y of (near?[6.6,21.2,25.7]:[25.7]))bar('stone',[ax+nx*.16,y,az+nz*.16],[bx+nx*.16,y,bz+nz*.16],.8,.8);
+      if(near)bar('stone',[ax+nx*.1,26.15,az+nz*.1],[bx+nx*.1,26.15,bz+nz*.1],.7,.7);
+      // Giant pilasters sit BETWEEN bays, with separate broad capitals.
+      if(len>12)for(const j of (near?[0,n]:[0])) {
+        const t=j/n,x=ax+dx*t,z=az+dz*t;
+        for(const [y,w,h,d] of [[16.2,.9,18,.8],[7.6,1.05,.6,.9],[25.15,1.05,.7,.9]]) {
+          const g=near?new THREE.BoxGeometry(w,h,d):new THREE.PlaneGeometry(w,h);if(!near)g.translate(0,0,d/2);g.rotateY(a);g.translate(x,y,z);put(g,'stone');
+        }
+      }
     }
   }
   // Stepped Senate/House wing outlines with grounded rusticated basements.
@@ -52,7 +61,8 @@ export function buildBody(k) {
         window('light',s*67.4+xx,27,z+side*(8.4+gap),1.65,1.3,side===1?0:Math.PI);
       // Giant-order pilasters at the corners of the pavilion, not box clutter at grade.
       for(const side of [-1,1])for(const xx of [-10.4,-7.7,7.7,10.4])
-        box('stone',s*67.4+xx,16.4,z+side*8.55,.8,16.2,.7);
+        {box('stone',s*67.4+xx,16.4,z+side*8.7,1.1,16.2,1.1);
+        box('stone',s*67.4+xx,25.15,z+side*8.7,1.75,.6,1.3);}
     }
   }
   // Rotunda block, rear wing and tall south-front entrance block.
@@ -72,6 +82,11 @@ export function buildBody(k) {
   for(let j=0;j<= (near?20:10);j++){const t=j*Math.PI/(near?20:10);sp.lineTo(5.5*Math.cos(t),19.8+5.5*Math.sin(t));}
   sp.lineTo(-5.5,26);sp.closePath();
   const arch=new THREE.ExtrudeGeometry(sp,{depth:6.4,bevelEnabled:false});arch.translate(0,0,29.9);put(arch,'stone');
+  const surround=new THREE.Shape();
+  for(let j=0;j<=(near?20:10);j++){const t=j*Math.PI/(near?20:10),r=6.25;const x=r*Math.cos(t),y=19.8+r*Math.sin(t);j?surround.lineTo(x,y):surround.moveTo(x,y);}
+  for(let j=(near?20:10);j>=0;j--){const t=j*Math.PI/(near?20:10);surround.lineTo(5.5*Math.cos(t),19.8+5.5*Math.sin(t));}surround.closePath();
+  const rim=new THREE.ExtrudeGeometry(surround,{depth:1.0,bevelEnabled:false});rim.translate(0,0,36);put(rim,'stone');
+  for(const sign of [-1,1])box('stone',sign*5.87,13.6,36.5,.75,12.4,1.0);
   window('light',0,.8,30.15,7.2,6.5,0,true);
   window('light',0,10.0,30.15,7.2,5.2);
   window('light',0,18.4,30.15,7.2,5.4,0,true);
@@ -80,8 +95,8 @@ export function buildBody(k) {
   // Windows flank the south arch and continue over the recess.
   for(const x of [-15,-11.2,11.2,15])for(const [y,h] of [[1.3,3.8],[8.3,4.5],[15.2,4.8],[23.2,3.2],[30.1,2.0]])window('light',x,y,36.3+gap,1.8,h,0,y<5);
   for(const x of [-3.7,0,3.7])for(const [y,h] of [[30.1,2]])window('light',x,y,36.3+gap,1.8,h);
-  for(const x of [-16.8,-8.1,8.1,16.8])column(x,36.35,7.4,26.6,.62);
-  for(const y of [6.8,27.2,29.2,35.1])box('stone',0,y,33.0,36.8,.65,7.4);
+  for(const x of [-16.8,-8.1,8.1,16.8])column(x,36.3,7.4,26.6,.84);
+  for(const y of [6.8,27.2,29.2,35.1])box('stone',0,y,33.0,37.1,1,8.0);
   // Six historic-state seal roundels, kept blue-grey and small.
   for(let i=0;i<6;i++) {
     const g=new THREE.CircleGeometry(.63,near?16:8);g.translate(-8.75+i*3.5,32.6,36.6+gap);put(g,'seal');

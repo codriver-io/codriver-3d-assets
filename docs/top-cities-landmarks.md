@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (108 released)
+## The collection (118 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -116,6 +116,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `willis-tower` | Willis Tower | Chicago | building |
 | `mercedes-benz-stadium` | Mercedes-Benz Stadium | Atlanta | building |
 | `edificio-de-correos-costa-rica` | Edificio de Correos | San José | building |
+| `helsinki-cathedral` | Helsinki Cathedral | Helsinki | building |
+| `freedom-tower-miami` | Freedom Tower | Miami | building |
+| `texas-state-capitol` | Texas State Capitol | Austin | building |
+| `ohio-statehouse` | Ohio Statehouse | Columbus | building |
+| `royal-palace-amsterdam` | Royal Palace (Paleis op de Dam) | Amsterdam | building |
+| `vulcan-statue` | Vulcan statue and tower | Birmingham | building |
+| `griffith-observatory` | Griffith Observatory | Los Angeles | building |
+| `mercedes-benz-museum` | Mercedes-Benz Museum | Stuttgart | building |
+| `notre-dame-de-la-garde` | Notre-Dame de la Garde | Marseille | building |
+| `att-stadium` | AT&T Stadium | Arlington | building |
 
 ## A landmark is a folder
 

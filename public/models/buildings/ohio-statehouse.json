@@ -1,0 +1,249 @@
+{
+  "id": "ohio-statehouse",
+  "name": "Ohio Statehouse",
+  "kind": "building",
+  "origin": [
+    -82.9991013,
+    39.9613191
+  ],
+  "height": 48.1584,
+  "padM": 86,
+  "frontageBearing": 278.9,
+  "rotation": 0.15446163880149816,
+  "drumDiameter": 19.5072,
+  "drumTop": 38.336,
+  "mainRoof": 17,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -82.999339,
+          39.960865
+        ],
+        [
+          -82.9993976,
+          39.9611581
+        ],
+        [
+          -82.9994231,
+          39.9612858
+        ],
+        [
+          -82.9994483,
+          39.9614084
+        ],
+        [
+          -82.9995069,
+          39.9616933
+        ],
+        [
+          -82.9991791,
+          39.9617326
+        ],
+        [
+          -82.9988481,
+          39.9617723
+        ],
+        [
+          -82.9988223,
+          39.9616449
+        ],
+        [
+          -82.9987974,
+          39.9615223
+        ],
+        [
+          -82.9987072,
+          39.961533
+        ],
+        [
+          -82.9986045,
+          39.9615432
+        ],
+        [
+          -82.9986281,
+          39.9616637
+        ],
+        [
+          -82.9986313,
+          39.961681
+        ],
+        [
+          -82.9984773,
+          39.9616977
+        ],
+        [
+          -82.9984582,
+          39.9616998
+        ],
+        [
+          -82.9984446,
+          39.9617013
+        ],
+        [
+          -82.9982951,
+          39.961718
+        ],
+        [
+          -82.9982655,
+          39.9615648
+        ],
+        [
+          -82.99825,
+          39.9614845
+        ],
+        [
+          -82.9982375,
+          39.9614143
+        ],
+        [
+          -82.9982249,
+          39.9613525
+        ],
+        [
+          -82.9982104,
+          39.9612742
+        ],
+        [
+          -82.9981806,
+          39.9611207
+        ],
+        [
+          -82.9983174,
+          39.9611052
+        ],
+        [
+          -82.9983414,
+          39.9611025
+        ],
+        [
+          -82.9983635,
+          39.9611
+        ],
+        [
+          -82.9985075,
+          39.9610845
+        ],
+        [
+          -82.9985095,
+          39.9610956
+        ],
+        [
+          -82.9985328,
+          39.9612076
+        ],
+        [
+          -82.9986391,
+          39.9611983
+        ],
+        [
+          -82.9987335,
+          39.9611875
+        ],
+        [
+          -82.9986856,
+          39.9609405
+        ],
+        [
+          -82.9990276,
+          39.9609016
+        ],
+        [
+          -82.999339,
+          39.960865
+        ]
+      ],
+      [
+        [
+          -82.9994925229681,
+          39.961452420159624
+        ],
+        [
+          -82.99945546535606,
+          39.96145684269282
+        ],
+        [
+          -82.9993840623509,
+          39.96110534501784
+        ],
+        [
+          -82.99942111996293,
+          39.96110092248464
+        ],
+        [
+          -82.9994925229681,
+          39.961452420159624
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -82.9994,
+        39.9611
+      ],
+      [
+        -82.9992,
+        39.9616
+      ],
+      [
+        -82.9984,
+        39.9613
+      ]
+    ],
+    "datum": "median",
+    "featherM": 7
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; east/up/south metres, no terrain or absolute elevation baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "64-foot cupola diameter and 158-foot pinnacle height from CSRAB; two-storey drum with shallow conical roof, not a dome. OSM mapped compound envelope and orientation. Vertical tier split, facade bays, skylights and annex details estimated from photos. Cityscape and Full 3D world integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ohio-statehouse-near.glb",
+      "bytes": 819288,
+      "triangles": 19742,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.7513542175293,
+          -2.3841858265427618e-8,
+          -50.03464126586914
+        ],
+        "max": [
+          77.97647857666016,
+          48.15840148925781,
+          50.306800842285156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ohio-statehouse-far.glb",
+      "bytes": 349188,
+      "triangles": 6774,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.7513542175293,
+          -2.3841858265427618e-8,
+          -50.03464126586914
+        ],
+        "max": [
+          77.97647857666016,
+          48.15840148925781,
+          50.306800842285156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ohio-statehouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

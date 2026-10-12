@@ -1,6 +1,6 @@
 // Closed roof and end doors; metres above street/plaza grade.
 export const SPEC = {
-  id: 'att-stadium', name: 'AT&T Stadium', kind: 'building', ready: false,
+  id: 'att-stadium', name: 'AT&T Stadium', kind: 'building', ready: true,
   origin: [-97.09284, 32.74785], height: 73.8, padM: 210,
   frontageBearing: 69, axisAngle: 21 * Math.PI / 180,
   archSpan: 373.38, archWidth: 5.0292, archDepth: 10.668,

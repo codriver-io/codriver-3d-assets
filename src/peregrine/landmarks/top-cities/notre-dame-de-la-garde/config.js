@@ -3,7 +3,7 @@ import { SITE_RINGS, localLngLat } from './notre-dame-de-la-garde-frame.js';
 
 export const SPEC = {
   id: 'notre-dame-de-la-garde', name: 'Notre-Dame de la Garde', kind: 'building',
-  ready: false, origin: [5.371, 43.2841], height: 64.7, padM: 70,
+  ready: true, origin: [5.371, 43.2841], height: 64.7, padM: 70,
   frontageBearing: 311, axisBearing: 131, rangeM: 4200,
   terrainPad: {
     rings: [SITE_RINGS.lower, FOOTPRINTS[2], FOOTPRINTS[3]], datum: 'median', featherM: 4,

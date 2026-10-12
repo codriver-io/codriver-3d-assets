@@ -1,6 +1,6 @@
 // Freedom Tower, 600 Biscayne Boulevard: original procedural exterior.
 export const SPEC = {
- id: 'freedom-tower-miami', name: 'Freedom Tower', kind: 'building', ready: false,
+ id: 'freedom-tower-miami', name: 'Freedom Tower', kind: 'building', ready: true,
  origin: [-80.189510, 25.780299], height: 78, padM: 42, frontageBearing: 88.67,
 };
 export const PALETTES = {

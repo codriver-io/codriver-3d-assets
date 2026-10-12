@@ -1,0 +1,65 @@
+{
+  "id": "freedom-tower-miami",
+  "name": "Freedom Tower",
+  "kind": "building",
+  "origin": [
+    -80.18951,
+    25.780299
+  ],
+  "height": 78,
+  "padM": 42,
+  "frontageBearing": 88.67,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid building on local flat grade y=0; no absolute altitude or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1925 Spanish Renaissance Revival exterior. Published 255 ft (78 m) nominal height; mapped plan; photo-estimated storeys and cupola tiers. OSM 84.5 m overall tag conflicts with published height. Orientation is baked once.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/freedom-tower-miami-near.glb",
+      "bytes": 1029856,
+      "triangles": 24385,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -48.113426208496094,
+          -1.1557691508693227e-15,
+          -18.839096069335938
+        ],
+        "max": [
+          8.036191940307617,
+          78,
+          20.22597312927246
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/freedom-tower-miami-far.glb",
+      "bytes": 369196,
+      "triangles": 8039,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -48.113426208496094,
+          -1.1557691508693227e-15,
+          -18.839096069335938
+        ],
+        "max": [
+          8.036191940307617,
+          78,
+          20.22597312927246
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/freedom-tower-miami/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

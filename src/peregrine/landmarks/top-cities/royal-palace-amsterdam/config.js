@@ -1,7 +1,7 @@
 // Paleis op de Dam: original exterior, real metres; rotation baked in geometry.
 export const SPEC = {
   id: 'royal-palace-amsterdam', name: 'Royal Palace (Paleis op de Dam)', kind: 'building',
-  ready: false, origin: [4.89136, 52.37317], height: 51, padM: 60,
+  ready: true, origin: [4.89136, 52.37317], height: 51, padM: 60,
   frontageBearing: 1.55, eaves: 25, roofHeight: 30, facadeWidth: 80,
 };
 export const PALETTES = {

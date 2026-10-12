@@ -9,16 +9,19 @@ export function buildDome(k) {
   // Cylindrical drum stands above the central attic; open colonnade surrounds a recessed core.
   cylinder('stone',0,0,13.4,34.7,43,13.4,near?48:24);
   for(let j=0;j<24;j++){const a=(j+.5)*Math.PI/12,r=near?13.6:13.95;window('light',r*Math.sin(a),37.1,r*Math.cos(a),1.4,3.5,a);}
+  cylinder('stone',0,0,14.5,41.9,42.65,14.5,near?48:24);
   cylinder('stone',0,0,15.05,42.5,44.2,15.05,near?48:24);
-  cylinder('stone',0,0,11.6,44,56.4,11.6,near?48:24);
-  cylinder('stone',0,0,15.15,56.1,57.6,15.15,near?48:24);
+  cylinder('stone',0,0,10.5,44,56.4,10.5,near?48:24);
+  cylinder('stone',0,0,14.85,56.1,56.7,14.85,near?48:24);
+  cylinder('stone',0,0,15.65,56.7,57.6,15.65,near?48:24);
+  cylinder('stone',0,0,14.65,57.6,58.1,14.65,near?48:24);
   for(let j=0;j<24;j++) {
     const a=j*Math.PI/12,x=13.95*Math.sin(a),z=13.95*Math.cos(a);
-    column(x,z,44.1,56.2,.48);
+    column(x,z,44.1,56.2,.76);
     // Recessed windows between columns: one arch plus a smaller lower opening.
     const t=a+Math.PI/24;
-    window('light',11.8*Math.sin(t),48,11.8*Math.cos(t),1.3,4.2,t,true);
-    window('light',11.8*Math.sin(t),45.3,11.8*Math.cos(t),1.15,1.5,t);
+    window('light',10.8*Math.sin(t),48,10.8*Math.cos(t),1.3,4.2,t,true);
+    window('light',10.8*Math.sin(t),45.3,10.8*Math.cos(t),1.15,1.5,t);
     if(near) {
       const b=a+Math.PI/24;
       bar('stone',[14.55*Math.sin(b),43.7,14.55*Math.cos(b)],[14.55*Math.sin(b),45.6,14.55*Math.cos(b)],.2,.2);
@@ -37,10 +40,24 @@ export function buildDome(k) {
   // Twenty-four raised cast-iron ribs and oval dormers preserve the shell's distinctive rhythm.
   for(let j=0;j<24;j++) {
     const a=j*Math.PI/12,steps=near?10:5;
-    for(let s=0;s<steps;s++) {
+    if(near)for(let s=0;s<steps;s++) {
       const y0=65.3+s*13.9/steps,y1=65.3+(s+1)*13.9/steps;
       // Centre ribs on the shell so their inner half embeds, including the steep crown.
       bar('stone',[shellRadius(y0)*Math.sin(a),y0,shellRadius(y0)*Math.cos(a)],[shellRadius(y1)*Math.sin(a),y1,shellRadius(y1)*Math.cos(a)],near?.38:.44,.7);
+    }
+    if(!near) {
+      // Two joined slopes form a visible ridge; hidden underside is inside the shell.
+      const verts=[];
+      const point=(y,side)=>{const r=shellRadius(y)+(side===0?.5:-.08),t=a+side*.24/shellRadius(y);return [r*Math.sin(t),y,r*Math.cos(t)];};
+      for(let s=0;s<steps;s++) {
+        const y0=65.3+s*13.9/steps,y1=65.3+(s+1)*13.9/steps;
+        for(const side of [-1,1]) {
+          const l0=point(y0,side),l1=point(y1,side),c0=point(y0,0),c1=point(y1,0);
+          const tris=side<0?[l0,c0,l1,l1,c0,c1]:[c0,l0,c1,c1,l0,l1];
+          for(const v of tris)verts.push(...v);
+        }
+      }
+      const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(verts,3));g.computeVertexNormals();put(g,'stone');
     }
     const t=a+Math.PI/24,y=68.65,r=shellRadius(y)+.55;
     // Oval dark aperture facing tangent to the shell (twelve-sided near / eight-sided far).
