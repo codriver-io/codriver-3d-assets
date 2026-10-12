@@ -11,5 +11,5 @@ export const PALETTES = {
 export const MANIFEST = {
  elevationDatum:'Flat Cityscape grade y=0; world mode uses compact rigid-part relative terrace offsets around the inner plateau datum, with -2.8 m foundation skirts. No absolute elevation or terrain mesh baked in.',
  attribution:'Original procedural mesh by Codriver. Geographic data © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
- note:'Restored double enceinte, Château Comtal and Saint-Nazaire; mapped outlines with estimated curtain/eave heights. Narbonnaise towers 30 m per Centre des monuments nationaux. Nine owned roof quarters contain varied short house roofs in three muted terracotta tones; world terrain placement uses relative per-structure terrace offsets.',
+ note:'Restored double enceinte, Château Comtal and Saint-Nazaire; mapped outlines with estimated curtain/eave heights. Narbonnaise towers 30 m per Centre des monuments nationaux. 253 individually mapped town buildings replace all invented quarters; levels-derived or estimated eaves, longest-axis pitched/compact hip roofs and three muted tile tones. Far retains all houses in 92 adjoining coarse blocks; per-ring relative world levels and slope-reaching footings preserve the hill. Tiny 2.8 m² way 56260413 stays provider-owned.',
 };

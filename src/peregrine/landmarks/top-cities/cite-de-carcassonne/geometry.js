@@ -6,7 +6,7 @@ import {SPEC,PALETTES} from './config.js';
 import {RING_OFFSETS,FOOTING_DEPTHS} from './cite-de-carcassonne-terrain.js';
 import {FOOTPRINTS} from './footprint.js';
 import {PARTS,WALLS} from './cite-de-carcassonne-plan.js';
-import {ROOF_BLOCKS,roofStrips} from './cite-de-carcassonne-roofscape.js';
+import {buildHouses} from './cite-de-carcassonne-roofscape.js';
 import {meshKit,center,simplify,inside} from './cite-de-carcassonne-kit.js';
 const BASE=-2.8;
 const outer=p=>p.id>=54852915&&p.id<=54852956||[54920181,719473869,33056289,1066578212].includes(p.id);
@@ -119,7 +119,7 @@ export function create({detail='near'}={}){
   const a=w.line[i],c=w.line[i+1],dx=c[0]-a[0],dz=c[1]-a[1],L=Math.hypot(dx,dz);if(L<1)continue;const mid=[(a[0]+c[0])/2,(a[1]+c[1])/2];let closest=0;for(let j=1;j<lineCenters.length;j++)if(Math.hypot(...lineCenters[j].map((v,k)=>v-mid[k]))<Math.hypot(...lineCenters[closest].map((v,k)=>v-mid[k])))closest=j;setOffset(RING_OFFSETS[111+closest]);const n=[dz/L*.75,-dx/L*.75];wall({id:54852952,ring:[[a[0]+n[0],a[1]+n[1]],[c[0]+n[0],c[1]+n[1]],[c[0]-n[0],c[1]-n[1]],[a[0]-n[0],a[1]-n[1]]]});
  }
 
- for(const [bi,block] of ROOF_BLOCKS.entries())for(const strip of roofStrips(block)){const index=135+bi*3+strip.row;setOffset(RING_OFFSETS[index],FOOTING_DEPTHS[index]);gabled(strip.ring,BASE,strip.eave,strip.rise,strip.material);}
+ buildHouses(k,near,setOffset,BASE);
  k.flush();const model=b.finish();
  for(const mesh of model.children){
   if(!near){const old=mesh.geometry;old.deleteAttribute('normal');mesh.geometry=mergeVertices(old,.0001);mesh.geometry.computeVertexNormals();old.dispose();}
