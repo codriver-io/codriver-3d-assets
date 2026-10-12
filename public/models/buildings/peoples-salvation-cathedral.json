@@ -1,0 +1,336 @@
+{
+  "id": "peoples-salvation-cathedral",
+  "name": "People's Salvation Cathedral",
+  "kind": "building",
+  "origin": [
+    26.08226,
+    44.42591
+  ],
+  "height": 127,
+  "padM": 76,
+  "frontageBearing": 274.7293309809681,
+  "rotation": -4.729330980968112,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          26.0815592,
+          44.4261237
+        ],
+        [
+          26.0815239,
+          44.4258362
+        ],
+        [
+          26.0816415,
+          44.4258289
+        ],
+        [
+          26.08163,
+          44.4257337
+        ],
+        [
+          26.0816643,
+          44.4257049
+        ],
+        [
+          26.0818081,
+          44.4256959
+        ],
+        [
+          26.0818519,
+          44.4257206
+        ],
+        [
+          26.081856,
+          44.4257546
+        ],
+        [
+          26.0821167,
+          44.4257387
+        ],
+        [
+          26.0821116,
+          44.4256951
+        ],
+        [
+          26.082129,
+          44.4256759
+        ],
+        [
+          26.0823214,
+          44.425664
+        ],
+        [
+          26.0823323,
+          44.4256489
+        ],
+        [
+          26.0823489,
+          44.4256318
+        ],
+        [
+          26.0823692,
+          44.4256183
+        ],
+        [
+          26.0823897,
+          44.4256093
+        ],
+        [
+          26.0824201,
+          44.4256019
+        ],
+        [
+          26.0824573,
+          44.4256001
+        ],
+        [
+          26.082458,
+          44.4256001
+        ],
+        [
+          26.0824953,
+          44.4256063
+        ],
+        [
+          26.0825252,
+          44.4256181
+        ],
+        [
+          26.0825461,
+          44.4256319
+        ],
+        [
+          26.0825521,
+          44.4256374
+        ],
+        [
+          26.0825642,
+          44.4256489
+        ],
+        [
+          26.0827594,
+          44.4256367
+        ],
+        [
+          26.0827908,
+          44.4256612
+        ],
+        [
+          26.0827991,
+          44.4257349
+        ],
+        [
+          26.0828411,
+          44.4257351
+        ],
+        [
+          26.0828823,
+          44.4257406
+        ],
+        [
+          26.0829378,
+          44.4257572
+        ],
+        [
+          26.0829813,
+          44.4257803
+        ],
+        [
+          26.0830151,
+          44.4258083
+        ],
+        [
+          26.0830432,
+          44.4258478
+        ],
+        [
+          26.0830555,
+          44.4258849
+        ],
+        [
+          26.0830554,
+          44.4259259
+        ],
+        [
+          26.0830385,
+          44.425971
+        ],
+        [
+          26.0830019,
+          44.4260141
+        ],
+        [
+          26.082992,
+          44.4260204
+        ],
+        [
+          26.0829492,
+          44.4260477
+        ],
+        [
+          26.0828906,
+          44.4260676
+        ],
+        [
+          26.0828377,
+          44.4260751
+        ],
+        [
+          26.0828448,
+          44.4261374
+        ],
+        [
+          26.0828135,
+          44.4261658
+        ],
+        [
+          26.0826247,
+          44.4261774
+        ],
+        [
+          26.0826135,
+          44.4261944
+        ],
+        [
+          26.0825917,
+          44.4262126
+        ],
+        [
+          26.0825564,
+          44.4262287
+        ],
+        [
+          26.0825158,
+          44.4262362
+        ],
+        [
+          26.0824677,
+          44.4262328
+        ],
+        [
+          26.0824353,
+          44.4262224
+        ],
+        [
+          26.082401,
+          44.4262046
+        ],
+        [
+          26.0823828,
+          44.4261941
+        ],
+        [
+          26.0822127,
+          44.4262029
+        ],
+        [
+          26.0821742,
+          44.4261845
+        ],
+        [
+          26.0821678,
+          44.4261332
+        ],
+        [
+          26.0818986,
+          44.4261501
+        ],
+        [
+          26.0819042,
+          44.4261963
+        ],
+        [
+          26.0818736,
+          44.4262238
+        ],
+        [
+          26.0817194,
+          44.4262333
+        ],
+        [
+          26.0816879,
+          44.4262123
+        ],
+        [
+          26.0816768,
+          44.4261163
+        ],
+        [
+          26.0815592,
+          44.4261237
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        26.08226,
+        44.42591
+      ],
+      [
+        26.0817,
+        44.42596
+      ],
+      [
+        26.08291,
+        44.42591
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local entrance-floor grade y=0, rigid metre-scale structure; no DEM or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed 2025 exterior. Official 127 m entrance-floor-to-cross height; ground-to-cross is sometimes reported as 133 m. OSM parent envelope about 121 x 71 m; official 126 x 67.7 m uses another scope. Belfry, openings and dome profiles are estimates informed by photographs and mapped parts. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/peoples-salvation-cathedral-near.glb",
+      "bytes": 2168056,
+      "triangles": 46368,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -58.2782096862793,
+          -1.1920929132713809e-8,
+          -36.5150260925293
+        ],
+        "max": [
+          63.500526428222656,
+          127,
+          34.71225357055664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/peoples-salvation-cathedral-far.glb",
+      "bytes": 498060,
+      "triangles": 10476,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -58.2782096862793,
+          -1.1920929132713809e-8,
+          -36.85337448120117
+        ],
+        "max": [
+          63.84052658081055,
+          127,
+          35.04340744018555
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/peoples-salvation-cathedral/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

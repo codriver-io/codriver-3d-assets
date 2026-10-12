@@ -1,0 +1,68 @@
+{
+  "id": "golden-ears-bridge",
+  "name": "Golden Ears Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.666333,
+    49.19901
+  ],
+  "height": 84,
+  "padM": 1250,
+  "frontageBearing": 169.7,
+  "rangeM": 6500,
+  "nearM": 1800,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat-map/water grade; road 44 m, main girder soffit 40 m, pylons 84 m. Deep foundations omitted. No DEM or Mercator stretch baked into geometry. Absolute-deck policy fits approaches and support feet separately.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "SEABC 2017: 968 m main crossing, 3 × 242 m main spans and 2 × 121 m side spans, 1442 m approaches. Supplier/operator pages round to 976 m / 244 m / 122 m. Four paired H supports, 40 m pylon rise, six lanes and two protected paths. Width from mapped Esri-attributed cycle paths (~32.8 m); section sizes, 10 stays per fan, eagle silhouettes and local 44 m road datum estimated.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/golden-ears-bridge-near.glb",
+      "bytes": 3389356,
+      "triangles": 76728,
+      "drawCalls": 28,
+      "bounds": {
+        "min": [
+          -152.16204833984375,
+          -9.278793982048228e-7,
+          -778.9616088867188
+        ],
+        "max": [
+          170.87738037109375,
+          87.1500015258789,
+          1510.7017822265625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/golden-ears-bridge-far.glb",
+      "bytes": 815140,
+      "triangles": 24016,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -152.16204833984375,
+          -9.278793982048228e-7,
+          -778.9616088867188
+        ],
+        "max": [
+          170.87738037109375,
+          87.1500015258789,
+          1510.7017822265625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/golden-ears-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

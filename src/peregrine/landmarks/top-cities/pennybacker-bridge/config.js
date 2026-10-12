@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'pennybacker-bridge', name: "Pennybacker Bridge (Loop 360)", kind: 'bridge',
   ready: false,
-  origin: [-97.797, 30.35],
-  height: 30,
+  origin: [-97.797196,30.349475525],
+  height: 54.6764,
   padM: 60,
   frontageBearing: 0,
 };

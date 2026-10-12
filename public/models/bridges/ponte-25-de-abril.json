@@ -1,0 +1,73 @@
+{
+  "id": "ponte-25-de-abril",
+  "name": "Ponte 25 de Abril",
+  "kind": "bridge",
+  "origin": [
+    -9.17708,
+    38.6895
+  ],
+  "height": 190.5,
+  "padM": 2400,
+  "lateralBankFit": {
+    "terrainClamp": true,
+    "clearanceM": 0.15,
+    "blendM": 120
+  },
+  "frontageBearing": 350.3,
+  "terrainPolicy": "absolute-deck",
+  "rangeM": 14000,
+  "nearM": 3800,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 water/flat-map grade. Authored road 80 m, underside 70 m; no DEM or Mercator scaling baked in. Absolute-deck terrain policy blends approaches and plants supports.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 1012.88 m main span, 482.42 m side spans, 190.5 m towers, 70 m clearance. Estimated truss depth 10 m, cable sag, bracing and viaduct sections; Cityscape ramps are a flat-map compromise.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/ponte-25-de-abril-near.glb",
+      "bytes": 3053740,
+      "triangles": 72704,
+      "drawCalls": 22,
+      "bounds": {
+        "min": [
+          -249.6661834716797,
+          -9.235582751898619e-7,
+          -2102.3466796875
+        ],
+        "max": [
+          317.5028076171875,
+          190.5,
+          1765.92236328125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/ponte-25-de-abril-far.glb",
+      "bytes": 1125560,
+      "triangles": 28620,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -249.6661834716797,
+          -9.235582751898619e-7,
+          -2102.3466796875
+        ],
+        "max": [
+          317.5028076171875,
+          190.5,
+          1765.92236328125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ponte-25-de-abril/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

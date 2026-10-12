@@ -22026,6 +22026,916 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cologne-cathedral",
+      "name": "Cologne Cathedral",
+      "kind": "building",
+      "location": "Cologne, Germany",
+      "status": "ready",
+      "description": "Original texture-free Cologne Cathedral: paired pierced Gothic spires, masonry lancet belfries, ribbed west-front portals, flying buttresses, transepts and polygonal choir chapels.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cologne-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cologne-cathedral",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-12; no scans, traced meshes, photos or textures embedded. Geographic outlines and placement © OpenStreetMap contributors, ODbL 1.0. Visual references only (not redistributed): Kölner Dom - Westfassade 2022 ohne Gerüst-0968 b, Raimond Spekking, CC BY-SA 4.0; Cologne cathedrale vue sud, Velvet, CC BY-SA 4.0; dossier also includes historic public-domain Kölner Dom um 1900 and interior/detail images credited in ignored refs/SOURCES.txt.",
+        "references": [
+          {
+            "label": "Cathedral official dimensions: Der Dom in Zahlen",
+            "url": "https://www.koelner-dom.de/erleben/der-dom-in-zahlen"
+          },
+          {
+            "label": "OSM cathedral outline, way 4532022",
+            "url": "https://www.openstreetmap.org/way/4532022"
+          },
+          {
+            "label": "West facade, Raimond Spekking, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg"
+          },
+          {
+            "label": "South exterior, Velvet, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cologne_cathedrale_vue_sud.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cologne-cathedral/geometry.js"
+      },
+      "notes": "Review fix: 71–97 m belfries now have masonry sills/spandrels and seated paired mullions; fourteen near/nine far pierced pointed spire courses replace the crossed lattice and sparse far galleries. Added west-front shafts, nested portal archivolts and transept counterforts/gable tracery. Moved the west roof end behind the raised stone screen to eliminate coplanarity. Openwork, canopies and figure groups remain architectural approximations; no portrait statues, complete pinnacle inventory, weathering textures, scaffolds, interior or stained-glass image textures. Near 46,575 tris / 4 draws / 2,425,052 bytes; far 10,659 / 4 / 474,068. Export readiness does not certify temporal terrain, lifecycle or hardware performance.",
+      "documentation": "docs/assets/top-cities-cologne-cathedral.md",
+      "manifest": "/models/buildings/cologne-cathedral.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=cologne-cathedral",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=roof"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=south"
+          },
+          {
+            "label": "East",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=east"
+          },
+          {
+            "label": "Portal",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=portal"
+          },
+          {
+            "label": "Tracery",
+            "url": "/asset-preview.html?asset=cologne-cathedral&view=tracery"
+          }
+        ]
+      },
+      "city": "Cologne",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fred-hartman-bridge",
+      "name": "Fred Hartman Bridge",
+      "kind": "bridge",
+      "location": "Baytown – La Porte, Texas",
+      "status": "ready",
+      "description": "Twin road decks over the Houston Ship Channel, four open diamond concrete towers and double-plane yellow fan stays.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fred-hartman-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fred-hartman-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-12. Geographic alignment © OpenStreetMap contributors (ODbL 1.0). Reference-only photos: Fred Hartman Bridge Houston, United States Coast Guard / PA2 James Dillard, public domain; Fred Hartman Bridge, Sam at English Wikipedia, CC BY-SA 3.0 (licences checked at Commons). UT Jennifer Elizabeth Ridd, Fatigue Performance of Stay Cables (2004), structural dimensions and tower-contact photographs; Esri World Imagery aerial, reference-only. No photograph, texture, traced mesh or capture shipped. Dossier Kemah Boardwalk image excluded as unrelated.",
+        "references": [
+          {
+            "label": "UT Austin / TxDOT-funded Ridd thesis: twin decks, 192 stays, diamond contacts",
+            "url": "https://fsel.engr.utexas.edu/pdfs/Jennifer%20Ridd%20Thesis%20August%202004.pdf"
+          },
+          {
+            "label": "UT Austin Dowd thesis: 381 m main span, deck dimensions, yellow sheaths",
+            "url": "https://fsel.engr.utexas.edu/pdfs/Dowd%20thesis.pdf"
+          },
+          {
+            "label": "SAH Archipedia: 440 ft masts, 178 ft navigation clearance",
+            "url": "https://sah-archipedia.org/buildings/TX-01-AT15"
+          },
+          {
+            "label": "OSM mapped roadway example",
+            "url": "https://www.openstreetmap.org/way/15410095"
+          },
+          {
+            "label": "USCG / James Dillard, public domain photo",
+            "url": "https://commons.wikimedia.org/wiki/File:Fred_Hartman_Bridge_Houston.jpg"
+          },
+          {
+            "label": "Sam, CC BY-SA 3.0 photo",
+            "url": "https://commons.wikimedia.org/wiki/File:Fred_Hartman_Bridge.JPG"
+          },
+          {
+            "label": "Esri World Imagery, reference-only aerial",
+            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+          },
+          {
+            "label": "Wikipedia bridge identity",
+            "url": "https://en.wikipedia.org/wiki/Fred_Hartman_Bridge"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fred-hartman-bridge/geometry.js"
+      },
+      "notes": "Published 381 m main span, twin 78 ft decks plus 4 ft gap, four 440 ft open diamonds and 192 yellow stays; estimated 57 m deck datum, sections, anchorage levels, side spans, piers and lamps. Landing review FIX resolved: last 150 m tapers slabs/pavement/girders/kerbs to mapped centres; 10.2 m exported noses adapt to renderer standard-road width and theme (HD uses measured joins), with zero-thickness ground contacts at the ends to remove visible buried crossbars, while channel stays rigid. Near 57,844 triangles / 20 draws / 2,707 KiB; far 24,212 / 6 / 984 KiB. Exported near/far sheets and both landings/both directions in Cityscape and world inspected under review-fix; all 45 mapped vertices return finite heights in both headings/modes. Zero material-cycle edges; qa-metrics ok; 409 focused tests pass including repeated width refits and zoom/theme regression. HD app lanes, hardware and full driven/lifecycle matrix not tested. No shared runtime extension; independent re-review outstanding.",
+      "documentation": "docs/assets/top-cities-fred-hartman-bridge.md",
+      "manifest": "/models/bridges/fred-hartman-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fred-hartman-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=roof"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=tower"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fred-hartman-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Baytown",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "golden-ears-bridge",
+      "name": "Golden Ears Bridge",
+      "kind": "bridge",
+      "location": "Fraser River, Maple Ridge–Langley, British Columbia, Canada",
+      "city": "Maple Ridge",
+      "status": "ready",
+      "description": "Original procedural 2009 hybrid extradosed crossing with four paired H-pylons, shallow harped stays, six lanes, protected side paths and long approach viaducts.",
+      "manifest": "/models/bridges/golden-ears-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/golden-ears-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks golden-ears-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-12; no third-party mesh, photo or texture shipped. OSM roadway/cycleway alignment © OpenStreetMap contributors, ODbL 1.0. Reference-only dossier photos: GoldenEarsBridgeBottom.JPG, HyperbolicSheet, CC BY-SA 3.0; Barnston Island Regional Park.jpg, Theodor, CC BY-SA 4.0; Golden Ears Bridge completed.jpg, sashafatcat, CC BY 2.0 (all three Commons reference pages checked on 2026-10-12). Published structural dimensions from SEABC/IABSE and concrete supplier Heidelberg Materials.",
+        "references": [
+          {
+            "label": "SEABC/IABSE 2017, page 39: 242/121 m spans, twin-wall H supports, 968 m crossing",
+            "url": "https://www.seabc.ca/wordpress/files/notable_structures/Vancouver_Notable_Structures_IABSE_SEABC_2017.pdf"
+          },
+          {
+            "label": "Heidelberg Materials: 244/122 m rounded spans and six lanes plus protected paths",
+            "url": "https://www.heidelbergmaterials.com/en/reference-projects/golden-ears-bridge"
+          },
+          {
+            "label": "Infrastructure BC: 2009 six-lane crossing and >40 m clearance",
+            "url": "https://www.infrastructurebc.com/project/golden-ears-bridge/"
+          },
+          {
+            "label": "Mapped road alignment",
+            "url": "https://www.openstreetmap.org/way/128363957"
+          },
+          {
+            "label": "sashafatcat: completed bridge (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Golden_Ears_Bridge_completed.jpg"
+          },
+          {
+            "label": "HyperbolicSheet: approach underside (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:GoldenEarsBridgeBottom.JPG"
+          },
+          {
+            "label": "Theodor: river silhouette (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Barnston_Island_Regional_Park.jpg"
+          },
+          {
+            "label": "Construction reporting: low pylons 40 m above deck",
+            "url": "https://trid.trb.org/View/793173"
+          },
+          {
+            "label": "TransLink: eagle motif on bridge towers",
+            "url": "https://buzzer.translink.ca/2014/06/happy-5th-birthday-golden-ears-bridge/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/golden-ears-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=golden-ears-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=underside"
+          },
+          {
+            "label": "Crown eagles",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=crown"
+          },
+          {
+            "label": "North landing",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=northLanding"
+          },
+          {
+            "label": "South landing",
+            "url": "/asset-preview.html?asset=golden-ears-bridge&view=southLanding"
+          }
+        ]
+      },
+      "notes": "Review b3b fixes: approach-only 180 m carriageway taper to two 6 m standard-road ribbons with continuous provider-palette colour blend; separate mapped cycle-path joins and held rail ends; perched body/head/beak/raised-wing/tail eagles on all eight masts retained far (explicit artistic repetition requested by review). River structure remains 32.8 m / six lanes, four paired towers, 3 x 242 m + 2 x 121 m spans. Near 76728 tris / 28 draws / 3309 KiB; far 24016 / 8 / 796 KiB. Exported near/far and crown/landing sheets inspected; zero depth cycles. Both approaches/directions recaptured in Cityscape and world. Actual HD paint unavailable without Redis; standard widths vary with zoom. Estimated deck/sculpture/support dimensions and terrain datum limits documented. Final checks: 415 tests pass; GLB QA has no issues; 40 mapped road vertices accepted in both directions in each mode; 912 support-foot vertices meet world DEM within 1 cm.",
+      "documentation": "docs/assets/top-cities-golden-ears-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "london-eye",
+      "name": "London Eye",
+      "kind": "building",
+      "location": "London, United Kingdom",
+      "status": "ready",
+      "description": "Original procedural 135 m cantilevered observation wheel with open cable spokes, a land-side A-frame, anchored backstays and 32 upright ovoid capsules.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/london-eye/geometry.js",
+        "build": "pnpm build:top-cities-landmarks london-eye --no-check",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-12. No imported mesh or textures. OSM outlines © OpenStreetMap contributors, ODbL 1.0. Reference photos retained only in ignored scratch; original model CC BY 4.0, code MIT.",
+        "references": [
+          {
+            "label": "Operator: 135 m cantilevered wheel",
+            "url": "https://www.londoneye.com/about-us/"
+          },
+          {
+            "label": "Marks Barfield: architect and height",
+            "url": "https://marksbarfield.com/projects/london-eye/"
+          },
+          {
+            "label": "Operator: complete 32-capsule design",
+            "url": "https://www.londoneye.com/25th-anniversary/"
+          },
+          {
+            "label": "Ingenia engineering account: 64 spoke cables, 16 rotation cables, 64 rim chords",
+            "url": "https://www.ingenia.org.uk/articles/the-wheel-the-british-airways-london-eye"
+          },
+          {
+            "label": "Wikipedia: 120 m diameter",
+            "url": "https://en.wikipedia.org/wiki/London_Eye"
+          },
+          {
+            "label": "OpenStreetMap: wheel outline 204068874",
+            "url": "https://www.openstreetmap.org/way/204068874"
+          },
+          {
+            "label": "File:London 360° Panorama from the London Eye.jpg — Farwestern Photo by Gregg M. Erickson, CC BY 3.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:London_360%C2%B0_Panorama_from_the_London_Eye.jpg"
+          },
+          {
+            "label": "File:Ojo de Londres, Londres, Inglaterra, 2014-08-07, DD 028.JPG — Diego Delso, CC BY-SA 4.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Ojo_de_Londres,_Londres,_Inglaterra,_2014-08-07,_DD_028.JPG"
+          },
+          {
+            "label": "File:Odd One Out - geograph.org.uk - 2942583.jpg — Colin Smith, CC BY-SA 2.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Odd_One_Out_-_geograph.org.uk_-_2942583.jpg"
+          },
+          {
+            "label": "File:London Eye and a boat going down the Thames.jpg — Mattsjc, CC BY-SA 4.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:London_Eye_and_a_boat_going_down_the_Thames.jpg"
+          },
+          {
+            "label": "File:London-Eye-2009.JPG — Khamtran, CC BY-SA 3.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:London-Eye-2009.JPG"
+          },
+          {
+            "label": "File:Aerial view of the London Eye. MOD 45146076.jpg — LA(PHOT) PAUL A'BARROW, OGL v1.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_London_Eye._MOD_45146076.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/london-eye/geometry.js"
+      },
+      "notes": "Complete 32-capsule design; temporary maintenance omissions are not modeled. Capsules use opaque subdued glass without photos or textures. Tube diameters, 69 m hub datum, capsule envelope and service structures estimated; source orientation and ownership derived from OSM. Independent exported/app review pending. Review nit: glazing shifted from teal to slate blue-grey for stronger separation from pale steel bellies and ribs; near hoops slightly raised and far retains two section hoops per pod. All 32 upright capsules, spokes, one-sided legs and support contacts retained. Post-fix exported near/far day/night sheets and deterministic geometry QA inspected; independent post-fix review pending.",
+      "documentation": "docs/assets/top-cities-london-eye.md",
+      "manifest": "/models/buildings/london-eye.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=london-eye",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=london-eye&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=london-eye&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=london-eye&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=london-eye&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=london-eye&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=london-eye&view=detail"
+          }
+        ]
+      },
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "peoples-salvation-cathedral",
+      "name": "People's Salvation Cathedral",
+      "kind": "building",
+      "location": "Bucharest, Romania",
+      "status": "ready",
+      "description": "Original texture-free 2025 National Cathedral exterior: limestone mass, two large gold domes, four primary satellite towers and four slender corner turrets, sixteen-arched main drum, layered sanctuary roof and seven open west porch bays with geometric icon panels.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/peoples-salvation-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks peoples-salvation-cathedral --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-12; no external mesh, tracing or embedded imagery. Mapped building outline and all 22 building parts from the supplied OSM dossier, © OpenStreetMap contributors, ODbL 1.0. Reference photographs remain in ignored scratch: MIHAIL, Catedrala Mântuirii Neamului - Fațadă.jpg (25 October 2025), CC BY 4.0; MIHAIL, National Cathedral of Romania (2025 November).jpg, CC BY-SA 4.0. Initial dossier interiors by MIHAIL, CC BY 4.0, were examined for context but interiors are not modeled. An incorrectly titled flower photo was rejected and replaced; it was not used in the model.",
+        "references": [
+          {
+            "label": "Official architectural concept, 126 m length, 67.7 m width, 127 m height",
+            "url": "https://catedrala-nationala.ro/conceptul-catedralei/"
+          },
+          {
+            "label": "National Cathedral identity, consecrations and main drum description",
+            "url": "https://en.wikipedia.org/wiki/National_Cathedral_of_Romania"
+          },
+          {
+            "label": "Mapped parent outline and building parts",
+            "url": "https://www.openstreetmap.org/way/232332568"
+          },
+          {
+            "label": "2025 side facade, MIHAIL, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Catedrala_M%C3%A2ntuirii_Neamului_-_Fa%C8%9Bad%C4%83.jpg"
+          },
+          {
+            "label": "Completed 2025 west facade, MIHAIL, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:National_Cathedral_of_Romania_(2025_November).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/peoples-salvation-cathedral/geometry.js"
+      },
+      "notes": "Official entrance-floor-to-cross height 127 m; some sources instead use 133 m from lower ground. Uses the detailed mapped parent footprint, about 121 by 71 m, rather than rescaling to the differently scoped published 126 by 67.7 m. Belfry dome, tower profiles, window proportions, masonry moldings and icon silhouettes estimated from 2025 references; full sculpture, lettering, interior and detached plaza porticoes omitted. Both LODs retain every tower, the arched window rows, west rose window and open porch. Independent review and application verification remain pending. Review fix: raised arched west rose crest with gold roof edging, stepped cornices, returning west pilasters and gold hipped shoulders at belfry/satellite bases, retained in both LODs; far roof faces replace the masonry cap instead of overlaying it. Gold domes retain the existing calibrated gold palette. Post-fix exported near/far day/night sheets and deterministic geometry QA inspected; independent post-fix review pending.",
+      "documentation": "docs/assets/top-cities-peoples-salvation-cathedral.md",
+      "manifest": "/models/buildings/peoples-salvation-cathedral.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=peoples-salvation-cathedral",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=top"
+          },
+          {
+            "label": "Rose crest",
+            "url": "/asset-preview.html?asset=peoples-salvation-cathedral&view=crest"
+          }
+        ]
+      },
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pitt-river-bridge",
+      "name": "Pitt River Bridge",
+      "kind": "bridge",
+      "location": "Pitt Meadows – Port Coquitlam, British Columbia",
+      "status": "ready",
+      "description": "Original 2009 crossing with six separate concrete masts, three parallel harp stay planes, seven traffic lanes, northern shared path and rigid widening deck.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pitt-river-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pitt-river-bridge --no-check",
+        "provenance": "Original procedural geometry, OSM contributors (ODbL 1.0). Reference-only Pitt River Bridge 2016 by Dllu, CC BY-SA 4.0, licence independently checked; SYSTRA IBT aerial/detail photographs, copyright SYSTRA, comparison only in ignored scratch. No photo, texture, scan or traced mesh shipped.",
+        "references": [
+          {
+            "label": "Designer SYSTRA IBT: spans, deck widths and harp arrangement",
+            "url": "https://www.systra.com/ibt/project/pitt-river-bridge-vancouver-british-columbia-canada/"
+          },
+          {
+            "label": "Canada opening announcement: seven lanes, 16 m clearance",
+            "url": "https://www.canada.ca/en/news/archive/2009/08/announces-pitt-river-bridge-will-soon-be-open-traffic.html"
+          },
+          {
+            "label": "Canada construction announcement: six 60 m towers",
+            "url": "https://www.canada.ca/fr/nouvelles/archive/2008/10/projet-construction-pont-riviere-pitt-franchit-nouvelle-etape.html"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/742056675"
+          },
+          {
+            "label": "Dllu, Pitt River Bridge 2016, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pitt_River_Bridge_2016.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pitt-river-bridge/geometry.js"
+      },
+      "notes": "Sourced 190 m main span, 380 m cable section, six 60 m towers, three harp planes, 40–44.66 m structural deck and seven lanes retained. Land approaches alone taper to mapped carriageway centres and 6 m standard road ribbons at captured driver zoom 18, with smooth HD-to-standard pavement palette blend and tapered median/parapets. Northern path follows mapped ground connections; path ends narrow to 0.8 m and rails terminate in posts. Exact added cycleway ownership 337747777 / 337741521 and path footprint ring. Estimated 19 m road datum, mast sections, 95 m back spans, 120/72 stays and approach framing. Near 47,612 tris / 21 draws / 1533.6 KiB; far 20,732 / 6 / 593.1 KiB. Final 16-view app approach sheet verified; QA issues/material cycles/coplanar/member-end warnings zero. Standard ribbon width fit is style/zoom-specific; live HD and hardware unverified. Landmark-local pavement shader; no shared bridge source changes.",
+      "documentation": "docs/assets/top-cities-pitt-river-bridge.md",
+      "manifest": "/models/bridges/pitt-river-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=pitt-river-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pitt-river-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Pitt Meadows",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ponte-25-de-abril",
+      "name": "Ponte 25 de Abril",
+      "kind": "bridge",
+      "location": "Lisbon – Almada, Portugal",
+      "status": "ready",
+      "description": "Original red suspension bridge with open X-braced towers, lower railway in its stiffening truss, paired main/auxiliary cables and north approach viaduct.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ponte-25-de-abril/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ponte-25-de-abril",
+        "provenance": "Original procedural geometry, 2026-10-12; no textures or third-party mesh. OSM alignment and support rings © OpenStreetMap contributors, ODbL 1.0. Reference photographs (not shipped): Gologmine, Ponte 25 de Abril in 209 (CC BY-SA 4.0); Ricardo Liberato, Ponte Sobre o Tejo by Night (CC BY-SA 2.0); Matt Perich, Lisbon Bridge (CC BY 2.0); Mike, 25 De Abril Bridge (CC BY 3.0).",
+        "references": [
+          {
+            "label": "Lusoponte design and construction",
+            "url": "https://www.lusoponte.pt/en/25-de-abril/project/design-and-construction"
+          },
+          {
+            "label": "Turismo de Lisboa dimensions and 1999 retrofit",
+            "url": "https://www.visitlisboa.com/en/places/25-de-abril-bridge"
+          },
+          {
+            "label": "Infraestruturas de Portugal — A Obra",
+            "url": "https://servicos.infraestruturasdeportugal.pt/pt-pt/a-descobrir/obras-de-arte/ponte-25-de-abril/a-obra"
+          },
+          {
+            "label": "OSM roadway",
+            "url": "https://www.openstreetmap.org/way/10073105"
+          },
+          {
+            "label": "File:Ponte 25 de Abril in 209.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Ponte_25_de_Abril_in_209.jpg"
+          },
+          {
+            "label": "File:Ponte Sobre o Tejo by Night (162962759).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Ponte_Sobre_o_Tejo_by_Night_(162962759).jpg"
+          },
+          {
+            "label": "File:Lisbon Bridge.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Lisbon_Bridge.jpg"
+          },
+          {
+            "label": "File:25 De Abril Bridge (226290561).jpeg",
+            "url": "https://commons.wikimedia.org/wiki/File:25_De_Abril_Bridge_(226290561).jpeg"
+          },
+          {
+            "label": "OSM south toll canopy footprint",
+            "url": "https://www.openstreetmap.org/way/326146678"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ponte-25-de-abril/geometry.js"
+      },
+      "notes": "Estimated 10 m truss depth, 80 m road datum, cable sag, truss rhythm and viaduct sections. Fixed six-lane river span; terminal 180 m joins SD ribbons at review z17.7, retaining south toll split. Exact toll-plaza way 326146678 and ring replace solid provider building with thin open canopy and grounded posts in both LODs; roof clearance is estimated 6.6 m. Matching road/underside transverse samples fix world pavement protrusions without removing crossing streets. Near 72704 tris/22 draws/3053216 bytes; far 28620/4/1125036. HD lanes and Tesla hardware untested; far decorative night lighting omitted.",
+      "documentation": "docs/assets/top-cities-ponte-25-de-abril.md",
+      "manifest": "/models/bridges/ponte-25-de-abril.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=ponte-25-de-abril",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ponte-25-de-abril&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ponte-25-de-abril&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ponte-25-de-abril&view=roof"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=ponte-25-de-abril&view=tower"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ponte-25-de-abril&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ponte-25-de-abril&view=underside"
+          }
+        ]
+      },
+      "city": "Lisbon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "westerkerk",
+      "name": "Westerkerk",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural Dutch Renaissance church with twin transepts, brick and sandstone facade, stepped open Westertoren stages, four clocks, blue-and-gold imperial crown and rooster.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/westerkerk/geometry.js",
+        "build": "pnpm build:top-cities-landmarks westerkerk --no-check",
+        "provenance": "Original texture-free procedural geometry, 2026-10-12. Mapped outlines © OpenStreetMap contributors (ODbL 1.0). Photographs used for visual reference only and retained exclusively in ignored tmp: Amsterdam (NL), Westerkerk -- 2015 -- 7186, Dietmar Rabich, CC BY-SA 4.0; Roof top Westerkerk Amsterdam, Taksen, CC BY-SA 4.0; WestertorenAmsterdam, Massimo Catarinella, CC BY 3.0. No photo pixels, captured mesh or texture included in source or exports.",
+        "references": [
+          {
+            "label": "Official church visitor information: 85 m tower, 87 m with rooster",
+            "url": "https://westerkerk.nl/bezoek-de-westerkerk-amsterdam/"
+          },
+          {
+            "label": "Amsterdam City Archive: square stages, 85 m, completion in 1638",
+            "url": "https://www.amsterdam.nl/stadsarchief/stukken/grachten-torens/westertoren/"
+          },
+          {
+            "label": "Wikipedia: church history and 58 × 29 m published dimensions",
+            "url": "https://en.wikipedia.org/wiki/Westerkerk"
+          },
+          {
+            "label": "OSM church way 99205257",
+            "url": "https://www.openstreetmap.org/way/99205257"
+          },
+          {
+            "label": "OSM tower way 99203577",
+            "url": "https://www.openstreetmap.org/way/99203577"
+          },
+          {
+            "label": "Exterior reference by Dietmar Rabich, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_(NL),_Westerkerk_--_2015_--_7186.jpg"
+          },
+          {
+            "label": "Gable ornament reference by Taksen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Roof_top_Westerkerk_Amsterdam.jpg"
+          },
+          {
+            "label": "Tower and crown reference by Massimo Catarinella, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:WestertorenAmsterdam.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/westerkerk/geometry.js"
+      },
+      "manifest": "/models/buildings/westerkerk.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=westerkerk",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=westerkerk&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=westerkerk&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=westerkerk&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=westerkerk&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=westerkerk&view=street"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=westerkerk&view=tower"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=westerkerk&view=crown"
+          }
+        ]
+      },
+      "notes": "58 × 29 m is the published church dimension; OSM includes tower, attached houses and the irregular north vestry. 87 m is overall rooster tip; 85 m is official tower height without rooster. Roof/stage heights follow OSM 3D tags, decorative profiles, fenestration and crown estimated from photos. Four clocks preserve face rhythm; individual Roman numerals, heraldic sculpture and brick mortar simplified. No textures or temporary restoration scaffolding. Terrain, provider replacement, runtime shading and lifecycle are not verified by standalone renders. Review nit: upper tower masonry/metal palette darkened selectively to weathered charcoal in both themes; pale church sandstone, open stage profiles and blue/gold imperial crown retained. Post-fix exported near/far day/night sheets and deterministic geometry QA inspected; independent post-fix review pending.",
+      "documentation": "docs/assets/top-cities-westerkerk.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "westin-peachtree-plaza",
+      "name": "Westin Peachtree Plaza",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original procedural Westin Peachtree Plaza: cylindrical bronze-grey curtain wall, three-level Sun Dial restaurant crown, external glass scenic elevator and irregular seven-story podium.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/westin-peachtree-plaza/geometry.js",
+        "build": "pnpm build:top-cities-landmarks westin-peachtree-plaza",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-12; models CC BY 4.0, source MIT. OSM podium way 42904130 and tower/elevator part 192939493 © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs in ignored tmp: Westin Peachtree Plaza Hotel.jpg — Ncsr111, CC BY-SA 4.0; Atlanta (8215269237).jpg — Aleksandr Zykov, CC BY-SA 2.0; Worm-eye Westin Peachtree Plaza Hotel.jpg — AAK, public domain; 2008 Tornado Damage to Westin Peachtree Plaza Hotel.jpg — Brianga, CC BY-SA 3.0. Photographs were compared, not traced or embedded; damaged facade is not modelled.",
+        "references": [
+          {
+            "label": "Identity, roof height and published diameter",
+            "url": "https://en.wikipedia.org/wiki/Westin_Peachtree_Plaza_Hotel"
+          },
+          {
+            "label": "Architect: seven-story podium and skylit atrium",
+            "url": "https://portmanarchitects.com/project/the-westin-peachtree-plaza/"
+          },
+          {
+            "label": "Mapped hotel podium",
+            "url": "https://www.openstreetmap.org/way/42904130"
+          },
+          {
+            "label": "Mapped tower and scenic elevator",
+            "url": "https://www.openstreetmap.org/way/192939493"
+          },
+          {
+            "label": "Ncsr111 — skyline photograph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Westin_Peachtree_Plaza_Hotel.jpg"
+          },
+          {
+            "label": "Aleksandr Zykov — street photograph, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Atlanta_(8215269237).jpg"
+          },
+          {
+            "label": "AAK — curtain-wall/crown photograph, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Worm-eye_Westin_Peachtree_Plaza_Hotel.jpg"
+          },
+          {
+            "label": "Brianga — elevator/crown detail, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2008_Tornado_Damage_to_Westin_Peachtree_Plaza_Hotel.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/westin-peachtree-plaza/geometry.js"
+      },
+      "notes": "220.37 m roof. Restaurant dimensions, window rhythm, 24 m podium and skylight are estimates. Historical 269.1 m radio antenna excluded because present configuration is unverified. Interior lagoon, northern skybridge and neighbouring garages are excluded. No photos, third-party meshes or textures are shipped. Review fix: closely matched neutral bronze/silver-grey day panes, a broad subdued reflection sector instead of repeating olive shade stripes, and reduced day glow contrast; floor/bay grid retained. Canonical provider IDs are way/42904130 and way/192939493, confirmed by dossier and Protomaps z14/z15; the apparent white near enclosure was a foreground neighbour, confirmed by the lead, so ownership rings are retained. Near 29,872 tris / 7 draws / 1,622,588 bytes; far 6,908 / 7 / 381,156.",
+      "documentation": "docs/assets/top-cities-westin-peachtree-plaza.md",
+      "manifest": "/models/buildings/westin-peachtree-plaza.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=westin-peachtree-plaza",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=westin-peachtree-plaza&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=westin-peachtree-plaza&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=westin-peachtree-plaza&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=westin-peachtree-plaza&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=westin-peachtree-plaza&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=westin-peachtree-plaza&view=detail"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "white-house",
+      "name": "White House",
+      "kind": "building",
+      "location": "Washington, D.C., United States",
+      "status": "ready",
+      "description": "White-painted neoclassical Executive Residence with six-column north Ionic portico and triangular pediment, semicircular south portico, roof balustrades, eight chimneys, flag and low West Wing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/white-house/geometry.js",
+        "build": "pnpm build:top-cities-landmarks white-house --no-check",
+        "provenance": "Original procedural texture-free geometry authored 2026-10-12. Geographic data © OpenStreetMap contributors, ODbL 1.0: prepared dossier and exact relation outers fetched via OSM API after shared Overpass helper failed. Photos used only for comparison and kept in ignored scratch: Aerial view of the White House.jpg (Carol M. Highsmith, public domain); 1122-WAS-The White House.JPG (Ingfbruno, CC BY-SA 3.0); White House, 2012.jpg (Photograph by Mike Peel, www.mikepeel.net, CC BY-SA 4.0). No photos, textures or third-party meshes ship. Historic dossier engraving/plan and Charleston courthouse photo were not used as present-state reference.",
+        "references": [
+          {
+            "label": "White House Historical Association: published dimensions",
+            "url": "https://www.whitehousehistory.org/press-room/press-backgrounders/white-house-dimensions"
+          },
+          {
+            "label": "Official building history and State Ballroom construction",
+            "url": "https://www.whitehouse.gov/About-the-white-house/The-white-house/"
+          },
+          {
+            "label": "North portico: Ingfbruno, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:1122-WAS-The_White_House.JPG"
+          },
+          {
+            "label": "Aerial: Carol M. Highsmith, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_White_House.jpg"
+          },
+          {
+            "label": "South facade: Photograph by Mike Peel, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:White_House,_2012.jpg"
+          },
+          {
+            "label": "Mapped residence relation",
+            "url": "https://www.openstreetmap.org/relation/19761182"
+          },
+          {
+            "label": "Mapped West Wing relation",
+            "url": "https://www.openstreetmap.org/relation/19761232"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/white-house/geometry.js"
+      },
+      "notes": "East Wing demolished 2025; ballroom not modelled while under construction. East-side construction and gatehouses remain provider-owned. Portico, bay spacing, capitals, roof machinery and flag dimensions are estimated. Lawn slope is not baked into geometry: south lawn y=0, raised north entrance platform. North/south height difference needs application terrain review. External curved south stairs remain provider-owned; the authored portico has a simplified grounded platform. Exported near/far light/dark reference contact sheet inspected at tmp/top-cities/shots/white-house/white-house-final-reference-contact.jpg; QA has zero issues/cycles, seven landmark tests and focused conformance pass. Near 26338 triangles/8 draws/1166 KiB; far 5890/7/304 KiB. North foundation is exposed in flat-ground views; landscaping and site-grade differences require separate app review.",
+      "documentation": "docs/assets/top-cities-white-house.md",
+      "manifest": "/models/buildings/white-house.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=white-house&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=white-house&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=white-house&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=white-house&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=white-house&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=white-house&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=white-house&view=detail"
+          },
+          {
+            "label": "West",
+            "url": "/asset-preview.html?asset=white-house&view=west"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=white-house&view=plan"
+          }
+        ]
+      },
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

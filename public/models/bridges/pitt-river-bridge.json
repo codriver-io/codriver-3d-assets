@@ -1,0 +1,68 @@
+{
+  "id": "pitt-river-bridge",
+  "name": "Pitt River Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.7302791,
+    49.24837405
+  ],
+  "height": 60,
+  "padM": 700,
+  "frontageBearing": 123,
+  "rangeM": 4500,
+  "nearM": 1300,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is visual water/flat-map grade. Deck 19 m (estimated 3 m structure above sourced 16 m marine clearance); crowns 60 m. No DEM, stretch or moving datum is baked.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "190 m main span, 380 m cable-supported section, six 60 m towers, three harp stay planes, 40–44.66 m deck and seven lanes are sourced. Tower sections, stay count/spacing, 19 m roadway, 95 m back spans, cap/girder sections and approach pier locations are visual estimates. Grade ramps are a flat-map compromise.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pitt-river-bridge-near.glb",
+      "bytes": 1570884,
+      "triangles": 47612,
+      "drawCalls": 21,
+      "bounds": {
+        "min": [
+          -268.1657409667969,
+          -2.206362239576265e-7,
+          -166.1422882080078
+        ],
+        "max": [
+          473.7269592285156,
+          60,
+          315.9583740234375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pitt-river-bridge-far.glb",
+      "bytes": 607816,
+      "triangles": 20732,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -268.1657409667969,
+          -2.206362239576265e-7,
+          -166.1422882080078
+        ],
+        "max": [
+          473.7269592285156,
+          60,
+          315.9583740234375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pitt-river-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
