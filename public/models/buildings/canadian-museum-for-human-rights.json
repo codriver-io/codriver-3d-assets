@@ -18,41 +18,41 @@
   },
   "elevationDatum": "Local plaza grade y=0; rigid structure, no terrain or absolute elevations baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "100 m tower sourced from CMHR; stone gallery/roots and cloud envelopes from OSM. Freeform glass folds, limestone course pattern, curved roof profiles and tower taper estimated from reference photographs. Rotation is baked into east/up/south coordinates. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "note": "100 m tower sourced from CMHR; stone gallery/roots and cloud envelopes from OSM. Asymmetric inclined overlapping glass folds, rounded planting-root toes, limestone course pattern, curved roof profiles and tower taper estimated from reference photographs. Rotation is baked into east/up/south coordinates. Pale continuous crown glass retains restrained anchored ribs; integration is checked separately.",
   "assets": {
     "near": {
       "url": "/models/buildings/canadian-museum-for-human-rights-near.glb",
-      "bytes": 1754832,
-      "triangles": 33668,
+      "bytes": 1700044,
+      "triangles": 33074,
       "drawCalls": 10,
       "bounds": {
         "min": [
-          -74.31330108642578,
+          -73.62158966064453,
           0,
-          -42.59080123901367
+          -42.316959381103516
         ],
         "max": [
-          61.00979995727539,
+          61.19449996948242,
           100.01231384277344,
-          77.56739807128906
+          77.27352142333984
         ]
       }
     },
     "far": {
       "url": "/models/buildings/canadian-museum-for-human-rights-far.glb",
-      "bytes": 360728,
-      "triangles": 6442,
+      "bytes": 346392,
+      "triangles": 6239,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -74.31330108642578,
+          -73.62158966064453,
           0,
-          -42.59080123901367
+          -42.316959381103516
         ],
         "max": [
-          61.00979995727539,
+          61.19449996948242,
           100.01461791992188,
-          77.56739807128906
+          77.27352142333984
         ]
       }
     }

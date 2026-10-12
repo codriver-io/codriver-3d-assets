@@ -35,7 +35,7 @@ export function create({ detail = 'near' } = {}) {
   const centres = (L, margin = 1.8, pitch = 3.6) => { const k = Math.max(1, Math.round((L - 2 * margin) / pitch)), step = (L - 2 * margin) / k; return Array.from({ length: k }, (_, i) => margin + step * (i + 0.5)); };
 
   // ---- shared drawing helpers (also used by the tower) -----------------------------------------------------------------------
-  /** Rock-faced coursing: flat strips standing 7 cm proud of the wall every 0.6 m (windows sit 12 cm proud, hiding what is behind).
+  /** Rock-faced coursing: flat strips standing 10 cm proud of the wall every 0.6 m (windows sit 12 cm proud, hiding what is behind).
    *  A `skip` entry is [s0, s1] or [s0, s1, yTop]: the stretch stays bare below yTop (it is buried against another mass). */
   const freeIntervals = (L, skip) => {
     let out = [[0.15, L - 0.15]];
@@ -44,9 +44,16 @@ export function create({ detail = 'near' } = {}) {
   };
   const strips = (fr, y0, y1, { skip = [] } = {}) => {
     const c = at(fr.M), all = freeIntervals(fr.L, skip.filter((k) => k[2] === undefined)), part = skip.some((k) => k[2] !== undefined);
-    for (let y = y0; y + 0.38 <= y1; y += 0.6) {
+    let course = 0;
+    for (let y = y0; y + 0.38 <= y1; y += 0.6, course++) {
+      if (y < 7.15 && y + 0.46 > 6.75) continue;
       const free = part ? freeIntervals(fr.L, skip.filter((k) => k[2] === undefined || y < k[2])) : all;
-      for (const [sa, sb] of free) c(wallBox(sa, sb, y, y + 0.38, 0, 0.07, 'fu'), 'stone');
+      // Broad staggered blocks give the rock-faced masonry relief at street distance.
+      for (const [sa, sb] of free) for (let x = sa; x < sb; ) {
+        const edge = Math.min(sb, x + (x === sa && course % 2 ? 0.65 : 1.3));
+        c(wallBox(x + 0.025, edge - 0.025, y, y + 0.46, 0, 0.10, 'f'), 'stone');
+        x = edge;
+      }
     }
   };
   /** Dressed corner quoins: alternating long and short blocks on one or both ends of a wall. */
@@ -143,7 +150,7 @@ export function create({ detail = 'near' } = {}) {
       for (const row of rows) {
         const r = ROWS[row], arch = row === 'second';
         if (!near) { c(arch ? openingPanel(s, r.y, r.w, r.h, 0.1, 2) : new THREE.PlaneGeometry(r.w, r.h).translate(s, r.y + r.h / 2, 0.1), 'glass'); continue; }
-        c(arch ? openingPanel(s, r.y, r.w, r.h, 0.12, 6) : new THREE.PlaneGeometry(r.w, r.h).translate(s, r.y + r.h / 2, 0.12), 'glass');
+        c(arch ? openingPanel(s, r.y, r.w, r.h, 0.23, 6) : new THREE.PlaneGeometry(r.w, r.h).translate(s, r.y + r.h / 2, 0.23), 'glass');
         if (!street) { // flat surround and a two-face sill
           c(arch ? openingFrame(s, r.y, r.w, r.h, 0.3, 0.16, 6, { flat: true }) : rectFrame(s, r.y, r.w, r.h, 0.25, 0.16, { flat: true }), 'trim');
           c(wallBox(s - r.w / 2 - 0.35, s + r.w / 2 + 0.35, r.y - 0.25, r.y, 0, 0.36, 'fu'), 'trim');
@@ -151,7 +158,7 @@ export function create({ detail = 'near' } = {}) {
         }
         c(arch ? openingFrame(s, r.y, r.w, r.h, 0.3, 0.3, 6) : rectFrame(s, r.y, r.w, r.h, 0.25, 0.3), 'trim');
         c(wallBox(s - r.w / 2 - 0.35, s + r.w / 2 + 0.35, r.y - 0.25, r.y, 0, 0.36, 'fudlr'), 'trim');
-        c(wallBox(s - 0.04, s + 0.04, r.y, arch ? r.y + r.h - r.w / 2 : r.y + r.h, 0.13, 0.2, 'flr'), 'trim');
+        c(wallBox(s - 0.04, s + 0.04, r.y, arch ? r.y + r.h - r.w / 2 : r.y + r.h, 0.23, 0.34, 'flr'), 'trim');
       }
     }
   });
@@ -160,7 +167,7 @@ export function create({ detail = 'near' } = {}) {
     if (near) strips(e, 1.95, AN.top - 0.7);
     for (const s of centres(e.L, 1.4, 3.2)) {
       for (const [y, h] of ANNEX_ROWS) {
-        c(new THREE.PlaneGeometry(1.3, h).translate(s, y + h / 2, near ? 0.12 : 0.1), 'glass');
+        c(new THREE.PlaneGeometry(1.3, h).translate(s, y + h / 2, near ? 0.23 : 0.1), 'glass');
         if (near) c(rectFrame(s, y, 1.3, h, 0.25, 0.16, { flat: true }), 'trim');
       }
     }

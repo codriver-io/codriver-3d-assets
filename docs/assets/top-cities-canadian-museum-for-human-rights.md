@@ -1,7 +1,5 @@
 # Canadian Museum for Human Rights, Winnipeg
 
-Original procedural reconstruction of Antoine Predock’s museum, completed in 2014, at 85 Israel Asper Way, The Forks. Source: `src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/`. The recognizable elements are the spreading stone roots and planted roofs, four overlapping blue glass shells, stepped limestone gallery cliff, a broad approach stair flight and continuously tapering 100 m Israel Asper Tower of Hope. Both LODs preserve these elements.
-
 ## Sources and rights
 
 - [CMHR — The Building](https://humanrights.ca/about/building): primary source for the 100 m tower, 1,335 custom glass pieces in the Cloud, 1,669 in Cloud and tower combined, 24,155 m² total building area, Tyndall stone and three prairie roofs. Those glass counts describe the building, not this approximation’s tessellation.
@@ -79,3 +77,12 @@ Before this fix: near 34,906 / 9 / 1,792.6 KiB; far 5,960 / 6 / 322.8 KiB. Both 
 - `pnpm assets:check` and `pnpm assets:preview`: passed for the revised models; output remains an ignored local inspection tool.
 
 Remaining approximations: the four cloud sheets are an original photographic reconstruction rather than surveyed panel geometry; roof folds and limestone massing are still simplified, tower transparency is stylized, and stair dimensions/placement are estimated. Cityscape and Full 3D world remain **not tested yet, integration is checked separately**. The revised exported sheets are ready for the coordinator’s independent re-review. No shared source files, app code, roads, deployments or Git writes were required.
+
+## Current QA revision — 2026-10-11
+
+Asymmetric inclined glass sheets and overlapping diagonal edges replace the near-horizontal cloud bands. The tower crown is continuous pale glass with restrained anchored ribs. Planting-root toes have rounded outlines and eased height profiles. End returns face along the shell tangent, closing the back-face defect.
+
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/canadian-museum-for-human-rights.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/canadian-museum-for-human-rights-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
+
+
+Original procedural reconstruction of Antoine Predock’s museum, completed in 2014, at 85 Israel Asper Way, The Forks. Source: `src/peregrine/landmarks/top-cities/canadian-museum-for-human-rights/`. The recognizable elements are the spreading stone roots and planted roofs, four overlapping blue glass shells, stepped limestone gallery cliff, a broad approach stair flight and continuously tapering 100 m Israel Asper Tower of Hope. Both LODs preserve these elements.

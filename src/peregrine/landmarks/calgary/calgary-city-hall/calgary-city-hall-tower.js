@@ -47,12 +47,11 @@ export function buildTower(ctx) {
     const lampSeg = near ? 28 : 12, c = at(M);
     const disc = new THREE.CircleGeometry(Y.dialR, lampSeg); disc.translate(stage, Y.dial, 0.1); c(disc, 'lamp');
     const ring = new THREE.RingGeometry(Y.dialR, Y.dialR + 0.3, lampSeg); ring.translate(stage, Y.dial, 0.2); c(ring, 'trim');
-    if (!near) return;
     for (let k = 0; k < 12; k++) { // hour ticks
       const a = (k * Math.PI) / 6, big = k % 3 === 0, g = new THREE.PlaneGeometry(big ? 0.13 : 0.08, big ? 0.34 : 0.22);
-      g.rotateZ(-a); g.translate(stage + Math.sin(a) * 1.18, Y.dial + Math.cos(a) * 1.18, 0.14); c(g, 'glass');
+      g.rotateZ(-a); g.translate(stage + Math.sin(a) * 1.18, Y.dial + Math.cos(a) * 1.18, 0.22); c(g, 'glass');
     }
-    [[1.2, 0.1, (2 * Math.PI) / 12 * 2, 0.17], [0.8, 0.15, (Math.PI * 2) * (10 + 10 / 60) / 12, 0.15]].forEach(([len, w, ang, d]) => { // hands at ten past ten
+    [[1.2, 0.1, (2 * Math.PI) / 12 * 2, 0.23], [0.8, 0.15, (Math.PI * 2) * (10 + 10 / 60) / 12, 0.24]].forEach(([len, w, ang, d]) => { // hands at ten past ten
       const g = new THREE.PlaneGeometry(w, len); g.translate(0, len / 2, 0); g.rotateZ(-ang); g.translate(stage, Y.dial, d); c(g, 'glass');
     });
     void f;
@@ -75,10 +74,10 @@ export function buildTower(ctx) {
       for (const k of [-1, 0, 1]) {
         const s = mid + k * pitch;
         if (!near) { c(kind === 'arch' ? openingPanel(s, y0, w, h, 0.1, 2) : new THREE.PlaneGeometry(w, h).translate(s, y0 + h / 2, 0.1), 'glass'); continue; }
-        c(kind === 'arch' ? openingPanel(s, y0, w, h, 0.12, 5) : new THREE.PlaneGeometry(w, h).translate(s, y0 + h / 2, 0.12), 'glass');
+        c(kind === 'arch' ? openingPanel(s, y0, w, h, 0.23, 5) : new THREE.PlaneGeometry(w, h).translate(s, y0 + h / 2, 0.23), 'glass');
         c(kind === 'arch' ? openingFrame(s, y0, w, h, 0.3, 0.3, 5) : rectFrame(s, y0, w, h, 0.25, 0.3), 'trim');
         if (kind === 'rect') c(wallBox(s - w / 2 - 0.35, s + w / 2 + 0.35, y0 - 0.25, y0, 0, 0.36, 'fudlr'), 'trim');
-        if (kind === 'rect' && h > 2.5) c(wallBox(s - w / 2, s + w / 2, y0 + h * 0.55, y0 + h * 0.55 + 0.09, 0.12, 0.2, 'fud'), 'trim'); // transom
+        if (kind === 'rect' && h > 2.5) c(wallBox(s - w / 2, s + w / 2, y0 + h * 0.55, y0 + h * 0.55 + 0.09, 0.23, 0.34, 'fud'), 'trim'); // transom
       }
     };
     if (front) { tier(8.4, 3.4, 1.15, 'rect'); tier(14.1, 1.9, 1.15, 'rect'); }

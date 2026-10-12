@@ -2,10 +2,19 @@ import * as THREE from 'three';
 import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
-import { PARTS, inside } from './canadian-museum-for-human-rights-site.js';
+import { PARTS as MAPPED_PARTS, inside } from './canadian-museum-for-human-rights-site.js';
 
 // Original freeform reconstruction. Mapped polygons establish the geographic
 // orientation directly; no rotation or Mercator scale remains for the host.
+// Soften the exposed landscape toes while keeping the measured building envelope.
+const PARTS = { ...MAPPED_PARTS };
+for (const id of [1381564361, 1381564359, 1381564360]) {
+  const ring = MAPPED_PARTS[id];
+  PARTS[id] = ring.flatMap((p, i) => {
+    const previous = ring[(i + ring.length - 1) % ring.length], next = ring[(i + 1) % ring.length];
+    return [p.map((v, k) => v * .85 + previous[k] * .15), p.map((v, k) => v * .85 + next[k] * .15)];
+  });
+}
 const P = ([x,z], y) => [x,y,z];
 const mix = (a,b,t) => a.map((v,i)=>v+(b[i]-v)*t);
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
@@ -33,7 +42,7 @@ const topAt = (c,p) => {
   const [id,h,,slope]=c;
   if(!slope)return h;
   const t=slope==='west' ? (p[0]+75)/55 : slope==='sw' ? (76-p[1])/46 : slope==='south' ? (78-p[1])/38 : (51-p[1])/24;
-  return 1+(h-1)*Math.pow(clamp(t,0,1),0.8);
+  return 1+(h-1)*(clamp(t,0,1) ** 2 * (3 - 2 * clamp(t,0,1)));
 };
 export function create({detail='near'}={}) {
   const near=detail==='near', b=assetBuilder({...SPEC,palette:PALETTES.light},detail), surfaces=new Map();
@@ -99,10 +108,10 @@ export function create({detail='near'}={}) {
   const radial=(q,scale,y)=>[17+(q[0]-17)*scale,y,8+(q[1]-8)*scale];
   // The lip rises to the east; angular peaks belong to individual sheets.
   const shells=[
-    {from:0,to:1,base:[24,20,26],lip:[37,33,43],roof:[38,36,44],r0:.84,r1:.982,r2:.74,mat:'glass'},
-    {from:0,to:.71,base:[35,32,38],lip:[53,56,46],roof:[58,60,54],r0:.88,r1:.965,r2:.43,mat:'glassPale'},
-    {from:.24,to:.96,base:[34,32,44],lip:[45,53,61],roof:[54,60,62],r0:.90,r1:.995,r2:.48,mat:'glass'},
-    {from:.66,to:1,base:[43,44,41],lip:[57,64,61],roof:[60,64,58],r0:.91,r1:.962,r2:.30,mat:'glassDeep'},
+    {from:0,to:1,base:[29,20,26],lip:[34,38,49],roof:[39,45,54],r0:.84,r1:.99,r2:.73,mat:'glass'},
+    {from:0,to:.74,base:[34,40,44],lip:[60,53,40],roof:[63,60,52],r0:.88,r1:.965,r2:.43,mat:'glassPale'},
+    {from:.55,to:1,base:[32,38,46],lip:[48,65,59],roof:[56,67,63],r0:.90,r1:1.035,r2:.48,mat:'glass'},
+    {from:.68,to:1,base:[45,46,49],lip:[60,67,58],roof:[64,67,61],r0:.91,r1:.96,r2:.30,mat:'glass'},
   ];
   const profile=(v,t)=>t<.5?v[0]+(v[1]-v[0])*t*2:v[1]+(v[2]-v[1])*(t-.5)*2;
   const shellPoint=(sh,s,t,roof=false,off=0)=>{
@@ -132,7 +141,10 @@ export function create({detail='near'}={}) {
     // are glass returns: a fold does not expose a flat limestone deck.
     for(const s of [0,1]) {
       const a=shellPoint(sh,s,0),d=shellPoint(sh,s,1),e=shellPoint(sh,s,1,true),f=[e[0],18,e[2]];
-      quad(sh.mat,a,d,e,f,[17+(d[0]-17)*6,45,8+(d[2]-8)*6]);
+      // End returns face along the sheet's arc tangent, not radially.
+      const q=arc(sh.from+(sh.to-sh.from)*s), nearby=arc(sh.from+(sh.to-sh.from)*(s===0?.001:.999));
+      const dx=q[0]-nearby[0],dz=q[1]-nearby[1];
+      quad(sh.mat,a,d,e,f,[d[0]+dx*100,d[1],d[2]+dz*100]);
     }
     for(let i=0;i<N;i++) {
       const a=shellPoint(sh,i/N,1,true),d=shellPoint(sh,(i+1)/N,1,true);
@@ -168,8 +180,8 @@ export function create({detail='near'}={}) {
       bar('glow',towerPoint(i,y0,s0,.13),towerPoint(i,y1,s1,.13),near?.16:.19);
       for(let j=1;j<n;j++) {
         const t=j/n,y=y0+(y1-y0)*t,s=s0+(s1-s0)*t;
-        bar('frame',towerPoint(i,y,s,.14),towerPoint(i+1,y,s,.14),.1);
-        if(k>0)bar('frame',towerPoint(i,y-(y1-y0)/n,scaleAt(y-(y1-y0)/n),.15),towerPoint(i+1,y,s,.15),near?.09:.13);
+        bar('glow',towerPoint(i,y,s,.14),towerPoint(i+1,y,s,.14),.08);
+        // Restrained horizontal ribs remain anchored to the continuous corner ribs.
       }
       if(near&&k<2)for(const t of [.33,.66])bar('frame',mix(A,D,t),mix(F,E,t),.075);
     }
@@ -179,7 +191,7 @@ export function create({detail='near'}={}) {
   // Staggered glazing beneath the open-looking crown: faceted opaque strips
   // stop at different levels while the clear envelope and ribs keep 100 m.
   for(let i=0;i<towerRing.length;i++){
-    const top=[94,97,96,99,95,98][i],a=towerPoint(i,90,.45,.055),d=towerPoint(i+1,90,.45,.055),e=towerPoint(i+1,top,scaleAt(top),.055),f=towerPoint(i,top,scaleAt(top),.055);
+    const top=[94,97,96,99,95,98][i],a=towerPoint(i,90,.45,.12),d=towerPoint(i+1,90,.45,.12),e=towerPoint(i+1,top,scaleAt(top),.12),f=towerPoint(i,top,scaleAt(top),.12);
     quad('glassPale',a,d,e,f,[ctr[0]+(a[0]-ctr[0])*10,95,ctr[1]+(a[2]-ctr[1])*10]);
   }
 
@@ -203,6 +215,6 @@ export function create({detail='near'}={}) {
   if(near)for(let t=.15;t<1;t+=.22){const q=mix(entranceA,entranceB,t);bar('frame',P([q[0]-.05,q[1]+.08],.3),P([q[0]-.05,q[1]+.08],4.6),.11);}
   for(const [m,s] of surfaces)if(s.p.length)b.put(s.geometry(),m);
   const model=b.finish();
-  model.traverse(o=>{if(o.isMesh&&o.material.name==='towerClear'){o.material.transparent=true;o.material.opacity=.24;o.material.roughness=.22;o.material.metalness=.12;}if(o.isMesh&&o.material.name.startsWith('glass')){o.material.roughness=.3;o.material.metalness=.24;}});
+  model.traverse(o=>{if(o.isMesh&&o.material.name==='towerClear'){o.material.transparent=false;o.material.opacity=1;o.material.roughness=.22;o.material.metalness=.12;}if(o.isMesh&&o.material.name.startsWith('glass')){o.material.roughness=.3;o.material.metalness=.24;}});
   return model;
 }

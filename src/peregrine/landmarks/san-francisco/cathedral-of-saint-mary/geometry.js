@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
-import { ROT, SLAB, QuadBatch, crestX, faceSurfaces, armPrism, roofDeck, annexMass, annexWindows } from './cathedral-of-saint-mary-parts.js';
+import { ROT, SLAB, QuadBatch, armPrism, annexMass, annexWindows } from './cathedral-of-saint-mary-parts.js';
 
 const { towerHalf: Tw, finTip: Zf, finHalf: C, wallTop: Yw, finTop: Yf, crossBase: Yc, slabTop: Y0, slabBottom: Ys, blockHalf: Hb } = SPEC;
 
@@ -61,28 +61,29 @@ export function create({ detail = 'near' } = {}) {
     }
   }
 
-  // --- Tower skin: four faces of ruled flanks and flat walls, each rotated a quarter turn from the last.
-  const surf = faceSurfaces(near ? { rows: 22, cols: 8 } : { rows: 8, cols: 3 });
-  for (let k = 0; k < 4; k++) for (const key of ['slopeR', 'slopeL', 'wallR', 'wallL']) add(quarter(surf[key].clone(), k), 'stone');
-  // Wall-top rim (the framed edge of the wall panels) and the pyramid roof inside it.
-  for (let k = 0; k < 4; k++) { const g = new THREE.BoxGeometry(k % 2 ? 2 * (Tw - 0.7) : 2 * Tw + 0.8, 0.7, 0.9); g.translate(0, Yw + 0.2, Tw - 0.25); add(quarter(g, k), dark); } // east/west rims butt against the north/south ones: no overlap at the corners
-  add(roofDeck(), 'stone');
-  if (near) { // travertine joints as flat quads on the wall regions (2.4 m pitch), plus a framed edge at each wall corner
-    const pitch = 2.4, bar = 0.05, out = 0.06, yb = Y0, yt = Yw - 0.4, base = Y0 - 0.1;
-    const q = new QuadBatch(), strips = [];
-    for (let y = yb + 1.2; y < yt; y += pitch) { // horizontal joints, outside the crest
-      const s = (y - base) / (Yw - base), X = s < 0.88 ? crestX(s) : C, a = X + 0.15, c = Tw - 1.0;
-      if (c > a) for (const sg of [-1, 1]) q.face(sg < 0 ? -c : a, y - bar, sg < 0 ? -a : c, y + bar, Tw + out);
+  // Eight shell segments form four continuous saddle quadrants, rising
+  // from slab-level corners to the high fins and the central glass cross.
+  // Each shell has a closed 35 cm edge/soffit, so street views see no back faces.
+  const shells = new QuadBatch(), N = near ? 22 : 8;
+  const point = (u, v, lower = false) => {
+    const A = [C, Yc, C], B = [C, Yf, Zf], D = [Tw, Y0, Tw], E = [Zf, Yf, C];
+    return A.map((x, i) => x * (1-u) * (1-v) + B[i] * (1-u) * v + D[i] * u * v + E[i] * u * (1-v) - (i === 1 && lower ? .35 : 0));
+  };
+  for (let k = 0; k < 4; k++) {
+    const turn = ([x,y,z]) => { const a = k*Math.PI/2; return [x*Math.cos(a)+z*Math.sin(a),y,-x*Math.sin(a)+z*Math.cos(a)]; };
+    const at = (u,v,lower=false) => turn(point(u,v,lower));
+    for (let i=0;i<N;i++) for(let j=0;j<N;j++) {
+      const u=i/N,U=(i+1)/N,v=j/N,V=(j+1)/N;
+      shells.quad(at(u,v),at(u,V),at(U,V),at(U,v));
+      shells.quad(at(u,v,true),at(U,v,true),at(U,V,true),at(u,V,true));
     }
-    for (let x = C + 2.4; x < Tw - 1.2; x += pitch) { // vertical joints from where the crest has reached x up to the rim
-      const s = 1 - Math.pow((x - C) / (Tw - C), 1 / 2.2), y0 = base + s * (Yw - base) + 0.15;
-      for (const sg of [-1, 1]) q.face(sg * x - bar, y0, sg * x + bar, yt, Tw + out);
-    }
-    for (let k = 0; k < 4; k++) {
-      add(quarter(q.geometry(), k), 'stoneDark');
-      for (const sg of [-1, 1]) { const g = new THREE.BoxGeometry(1.1, yt - yb, 0.1); g.translate(sg * (Tw - 0.55), (yb + yt) / 2, Tw + 0.05); add(quarter(g, k), 'stoneDark'); } // framed corner edge
+    for (let i=0;i<N;i++) {
+      const u=i/N,U=(i+1)/N;
+      shells.quad(at(u,1),at(u,1,true),at(U,1,true),at(U,1));
+      shells.quad(at(1,u),at(1,U),at(1,U,true),at(1,u,true));
     }
   }
+  add(shells.geometry(), 'stone');
 
   // --- The cross of the summit: a stone hub on the crossing and four arms (stone jambs round a recessed glass core) whose tops
   // climb from the hub to the fins; the glass strips and the slots are the cores.
@@ -101,6 +102,6 @@ export function create({ detail = 'near' } = {}) {
 
   // --- Annex mass (parish buildings south of the cathedral), three storeys, with its windows.
   add(annexMass(), 'annex');
-  if (near) add(annexWindows(), 'glass');
+  add(annexWindows(), 'glass');
   return b.finish();
 }

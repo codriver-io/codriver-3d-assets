@@ -1,5 +1,5 @@
 // Akershus slott (Akershus Fortress), Oslo, as it stands: Håkon V's castle of the 1290s, rebuilt for
-// Christian IV as a Renaissance residence (Blåtårnet 1623, Romerikstårnet in the 1630s). Warm pink-tan
+// Christian IV as a Renaissance residence (Blåtårnet 1623, Romerikstårnet in the 1630s). Grey-tan
 // rendered wings around the borggård, darker brick crow-step gables, steep dark roofs, two stair
 // towers with verdigris caps, and a grey rubble rampart on the mapped bastion. Later barracks east
 // of the castle are not part of this model.
@@ -14,12 +14,12 @@ import { meshKit, ringEdges, buried, inside, distToRing } from './akershus-fortr
 // The harbour photographs show three-storey wings and spires that clear the roofs, so the wings are
 // brought down. Tower tips stay at the mapped 36 m. See the landmark doc.
 const TUNE = {
-  'Nordfløyen': { h: 21, roofH: 6.5, stoneTo: 4 },
-  'Romeriksfløyen': { h: 17.5, roofH: 5, stoneTo: 3.8 },
+  'Nordfløyen': { h: 21, roofH: 6.5, stoneTo: 10, windowFrom: 4 },
+  'Romeriksfløyen': { h: 17.5, roofH: 5, stoneTo: 10, windowFrom: 3.8 },
   'Skriverstuefløyen': { h: 16, roofH: 3.6, stoneTo: 3.8 },
-  'Sydfløyen': { h: 17, roofH: 4.5, stoneTo: 4 },
+  'Sydfløyen': { h: 17, roofH: 4.5, stoneTo: 10, windowFrom: 4 },
   'Fadebursfløyen': { h: 15, roofH: 4, stoneTo: 7 },
-  'Fruerstuefløyen': { h: 16, roofH: 4.5, stoneTo: 4 },
+  'Fruerstuefløyen': { h: 16, roofH: 4.5, stoneTo: 10, windowFrom: 4 },
   'Vågehalstårnet': { h: 13.5, roofH: 0.4, stoneTo: 13.5 },
   'south court link': { h: 12, roofH: 3, roofMat: 'slate', stoneTo: 6 },
   'Det kongelige mausoleum': { h: 9, roofH: 2.2 },
@@ -120,8 +120,17 @@ function rampart(kit, base, buildings, bases, near) {
     const A0 = at(e.p, foot, 0), B0 = at(e.q, foot, 0);
     const Am = at(e.p, waist, yk), Bm = at(e.q, waist, yk);
     const A1 = [e.p[0], y1, e.p[1]], B1 = [e.q[0], y1, e.q[1]];
-    kit.quad('stone', A0, B0, Bm, Am, [e.n[0], 0.38, e.n[1]]);
-    kit.quad('stone', Am, Bm, B1, A1, [e.n[0], 0.12, e.n[1]]);
+    // Colour belongs to the masonry faces themselves: no coplanar veneer.
+    for (const [a, d, c, f] of [[A0, B0, Bm, Am], [Am, Bm, B1, A1]]) {
+      const courses = near ? 5 : 3, blocks = Math.max(1, Math.ceil(e.L / 4));
+      const mix = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t);
+      for (let row = 0; row < courses; row++) for (let col = 0; col < blocks; col++) {
+        const point = (u, v) => mix(mix(a, d, u), mix(f, c, u), v);
+        const material = (row * 7 + col * 3 + e.i) % 5 === 0 ? 'render' : 'stone';
+        kit.quad(material, point(col / blocks, row / courses), point((col + 1) / blocks, row / courses),
+          point((col + 1) / blocks, (row + 1) / courses), point(col / blocks, (row + 1) / courses), [e.n[0], 0.2, e.n[1]]);
+      }
+    }
     rubbleCourses(kit, e, y1, yk, foot, waist, near);
     const ip = [e.p[0] - e.n[0] * T, e.p[1] - e.n[1] * T];
     const iq = [e.q[0] - e.n[0] * T, e.q[1] - e.n[1] * T];
@@ -200,7 +209,7 @@ function wing(kit, p, blockers, near) {
   else if (p.roof === 'hip') hipRoof(kit, p, wallTop, p.h, near, blockers);
   else if (p.roof === 'skillion') skillionRoof(kit, p, wallTop, p.h, blockers);
   else flatRoof(kit, p.ring, wallTop, p.roofMat, p.h - wallTop);
-  const winFrom = p.wall === 'stone' ? Math.min(3.2, Math.max(0.4, wallTop - 2)) : stoneTo;
+  const winFrom = p.windowFrom ?? (p.wall === 'stone' ? Math.min(3.2, Math.max(0.4, wallTop - 2)) : stoneTo);
   dress(kit, p, winFrom, wallTop, blockers, near);
 }
 

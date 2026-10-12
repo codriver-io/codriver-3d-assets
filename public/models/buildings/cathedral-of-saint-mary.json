@@ -36,12 +36,12 @@
   },
   "elevationDatum": "Local grade y=0 at the plaza level on the flat Peregrine basemap; no absolute altitude. The raised plaza, the garage below it and the street stairs are not modelled.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Overall height, plan size and the shell/glass-cross arrangement are published; the slab thickness, ground-floor wall height, fin and wall-top heights, the curvature of the shell flanks, the apex height and the cross dimensions are estimated from photographs (the shells are modelled as ruled surfaces, not from the structural drawings); the annex south of the cathedral is a plain mass at its OSM height; interior, plaza, steps, door relief, travertine joints and the bell platform are not modelled.",
+  "note": "Overall height, plan size and the shell/glass-cross arrangement are published; the slab thickness, ground-floor wall height, fin and wall-top heights, the bilinear saddle curvature, the apex height and the cross dimensions are estimated from photographs (the shells are closed bilinear saddle surfaces, not from the structural drawings); the annex south of the cathedral is a three-storey mass with window rows retained in both LODs; interior, plaza, steps, full sculpted door relief, upper-shell travertine joints and the bell platform are not modelled.",
   "assets": {
     "near": {
       "url": "/models/buildings/cathedral-of-saint-mary-near.glb",
-      "bytes": 213904,
-      "triangles": 5580,
+      "bytes": 558932,
+      "triangles": 10048,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -58,8 +58,8 @@
     },
     "far": {
       "url": "/models/buildings/cathedral-of-saint-mary-far.glb",
-      "bytes": 67256,
-      "triangles": 1248,
+      "bytes": 148396,
+      "triangles": 2482,
       "drawCalls": 7,
       "bounds": {
         "min": [

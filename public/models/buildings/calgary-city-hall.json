@@ -18,12 +18,12 @@
   },
   "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The plinth stands on y=0 on all sides (downtown is nearly flat here).",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Tower height (32.7 m, \"more than 32 m / 100 ft\"), four storeys, sandstone, round-arched entrance on four red granite columns, steep tile roofs and the mapped outline are sourced. Storey heights, cornice and roof heights, tower stage proportions, dial size, window counts, dormer and cupola positions, the plain flat-roofed two-storey wing that fills the mapped east bump, the tiled crown over the centre and the rear and side elevations are estimated from photographs; surrounds are drawn in relief only on the street faces.",
+  "note": "Tower height (32.7 m, \"more than 32 m / 100 ft\"), four storeys, sandstone, round-arched entrance on four red granite columns, steep tile roofs and the mapped outline are sourced. Storey heights, cornice and roof heights, tower stage proportions, dial size, window counts, dormer and cupola positions, the plain flat-roofed two-storey wing that fills the mapped east bump, the tiled crown over the centre and the rear and side elevations are estimated from photographs; surrounds are drawn in relief only on the street faces. QA correction: weathered grey sandstone, muted clay roofing, staggered rock-faced street/tower blocks and readable clock hands/hour marks in both LODs.",
   "assets": {
     "near": {
       "url": "/models/buildings/calgary-city-hall-near.glb",
-      "bytes": 533028,
-      "triangles": 9179,
+      "bytes": 684564,
+      "triangles": 11985,
       "drawCalls": 6,
       "bounds": {
         "min": [
@@ -40,8 +40,8 @@
     },
     "far": {
       "url": "/models/buildings/calgary-city-hall-far.glb",
-      "bytes": 75316,
-      "triangles": 1074,
+      "bytes": 81368,
+      "triangles": 1186,
       "drawCalls": 6,
       "bounds": {
         "min": [

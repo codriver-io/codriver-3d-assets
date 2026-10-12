@@ -98,3 +98,9 @@ Four findings, all addressed: (1) the east annex's red lean-to is deleted and th
 ## Cityscape and Full 3D world
 
 Cityscape and Full 3D world in the running app: **not tested yet, integration is checked separately.** Expectation for Full 3D world: the default pad takes the lowest DEM sample under a 30 m disc; the area between Macleod Trail and the Municipal Building is nearly flat, so the plinth should stand on the pad without sinking, but the lead should check the 1.6 m plinth against the DEM at the south-west and north-east corners and add `spec.terrainPad` if it varies by more than about 2 m.
+
+## Current QA revision — 2026-10-11
+
+Weathered grey sandstone and muted clay roof replace the tan/salmon palette; staggered 10 cm rock-face relief adds the masonry rhythm; all four far clocks retain contrasting hands and hour marks.
+
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/calgary-city-hall.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/calgary-city-hall-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.

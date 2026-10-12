@@ -1,7 +1,5 @@
 # Akershus Fortress — Akershus slott
 
-Original procedural exterior of **Akershus slott** on the harbour promontory at Akershusstranda, Oslo. Håkon V’s castle of the 1290s, rebuilt for Christian IV as a Renaissance residence (Blåtårnet 1623, Romerikstårnet in the 1630s). Warm pink-tan rendered walls, darker brick crow-step gables, dark slate roofs, two verdigris stair towers, and a grey rubble bastion. Asset ID `akershus-fortress`. The later barracks east of the castle are not in this model.
-
 ## Sources and rights
 
 Consulted 2026-10-08:
@@ -60,3 +58,12 @@ Sheets in ignored `tmp/top-cities/shots/akershus-fortress/`:
 ## Approximations
 
 Way 904552992, a south-west pier of about 4 m², is left out: the shared footprint check rejects a ring under 4 m². The onion is a faceted teardrop and the dormers are boxes. The rampart is coursed rubble on the mapped rings, raised to a 9 m harbour curtain; it is not the 15–20 m quay cliff, which stays terrain so the mesh is not doubled in Full 3D world. Wings meet with some roof intersections. Munks tårn (way 592419641, mapped height 12 m, pyramidal roof) stands apart on purpose; it is a real tower, not a stray prism. Vågehalstårnet’s flat copper roof is the mapped `roof:colour` `#a8c2a4` on way 904553007. Cityscape and Full 3D world were not driven in the app.
+
+## Current QA revision — 2026-10-11
+
+Grey-tan walls and taller exposed stone bases replace salmon render on the harbour wings and stair towers. Broad rubble colour variation is part of the rampart mesh faces, with no coplanar veneer. Strong brick colour stays on the gables. Stone/render split and original window-start height are independent, preserving lower rows in both LODs; a focused regression test pins the north-wing row.
+
+This revision supersedes the earlier geometry, export-cost and placement descriptions below; those are retained as historical authoring evidence. The current measured exports and six mandatory app frames are listed in `tmp/landmark-qa/fix/REPORT.md`. Near/far contact sheet: `tmp/landmark-qa/fix/sheets/akershus-fortress.jpg`; app captures: `tmp/landmark-qa/fix/{city,world}/akershus-fortress-{far,near,street}.png`. Both modes have been captured; the report records visual verification and any capture limitations separately from lifecycle, night-mode or vehicle tests.
+
+
+Original procedural exterior of **Akershus slott** on the harbour promontory at Akershusstranda, Oslo. Håkon V’s castle of the 1290s, rebuilt for Christian IV as a Renaissance residence (Blåtårnet 1623, Romerikstårnet in the 1630s). Warm pink-tan rendered walls, darker brick crow-step gables, dark slate roofs, two verdigris stair towers, and a grey rubble bastion. Asset ID `akershus-fortress`. The later barracks east of the castle are not in this model.
