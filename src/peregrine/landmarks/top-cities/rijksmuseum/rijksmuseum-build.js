@@ -24,7 +24,7 @@ export function buildRijksmuseum(b, near) {
   // A row of windows, or one band on the far model. `sign` −1 faces north / west.
   function rowNS(u0, u1, v, sign, y0, y1) {
     const face = v + sign * 0.12;
-    if (!near || u1 - u0 < 6) { k.panelNS('light', u0 + 0.4, u1 - 0.4, y0, y1, face, sign); return; }
+    if (u1 - u0 < 2) { k.panelNS('light', u0 + 0.4, u1 - 0.4, y0, y1, face, sign); return; }
     const n = Math.max(1, Math.round((u1 - u0) / 3.5));
     const step = (u1 - u0) / n, w = Math.min(1.55, step * 0.48);
     for (let i = 0; i < n; i++) {
@@ -34,7 +34,7 @@ export function buildRijksmuseum(b, near) {
   }
   function rowEW(v0, v1, u, sign, y0, y1) {
     const face = u + sign * 0.12;
-    if (!near || v1 - v0 < 6) { k.panelEW('light', v0 + 0.4, v1 - 0.4, y0, y1, face, sign); return; }
+    if (v1 - v0 < 2) { k.panelEW('light', v0 + 0.4, v1 - 0.4, y0, y1, face, sign); return; }
     const n = Math.max(1, Math.round((v1 - v0) / 3.5));
     const step = (v1 - v0) / n, w = Math.min(1.55, step * 0.48);
     for (let i = 0; i < n; i++) {
@@ -247,6 +247,21 @@ export function buildRijksmuseum(b, near) {
   function spire(u0, u1, v0, v1, yb, yt, matTip) {
     const um = (u0 + u1) / 2, vm = (v0 + v1) / 2;
     const wu = u1 - u0, wv = v1 - v0, rise = yt - yb;
+    if (yt === H.tower) {
+      // The north towers have broad steep slate roofs, rather than turret lanterns.
+      k.hip('slate', u0, u1, v0, v1, yb, um - 1.15, um + 1.15, vm - 1.15, vm + 1.15, yt - 2.0);
+      k.box('slate', um - 1.15, um + 1.15, vm - 1.15, vm + 1.15, yt - 2.05, yt - 1.6);
+      k.pyramid(matTip, um - 0.24, um + 0.24, vm - 0.24, vm + 0.24, yt - 1.65, yt);
+      for (const t of [0.28, 0.60]) {
+        const rr = (wv / 2) * (1 - t) + 1.15 * t;
+        const y = yb + (yt - 2 - yb) * t;
+        // Dormer bodies penetrate the slate slope; their faces stand clear.
+        k.box('stone', um - 0.72, um + 0.72, vm - rr - 0.3, vm - rr + 0.6, y - 0.5, y + 1.2);
+        k.panelNS('clock', um - 0.4, um + 0.4, y - 0.1, y + 0.75, vm - rr - 0.42, -1);
+        k.pyramid('slate', um - 0.85, um + 0.85, vm - rr - 0.42, vm - rr + 0.7, y + 1.18, y + 2.1);
+      }
+      return;
+    }
     const ps = Math.min(0.62, wu * 0.07);
     const ph = Math.min(rise * 0.22, 4.6);
     const inset = 0.22;
@@ -284,8 +299,8 @@ export function buildRijksmuseum(b, near) {
     k.panelNS('stone', uc - s - 0.4, uc + s + 0.4, y0 - 0.32, y1 + 0.32, vb, sign);
     k.panelNS('clock', uc - s, uc + s, y0, y1, vf, sign);
     const mid = (y0 + y1) / 2;
-    k.panelNS('stone', uc - 0.07, uc + 0.07, mid, mid + s * 0.62, vf + sign * 0.06, sign);
-    k.panelNS('stone', uc - s * 0.42, uc + 0.07, mid - 0.07, mid + 0.07, vf + sign * 0.06, sign);
+    k.panelNS('stone', uc - 0.07, uc + 0.07, mid, mid + s * 0.62, vf + sign * (near ? 0.25 : 0.55), sign);
+    k.panelNS('stone', uc - s * 0.42, uc + 0.07, mid - 0.07, mid + 0.07, vf + sign * (near ? 0.25 : 0.55), sign);
   }
 
   // --- north corner pavilions (38 m, pyramidal) ------------------------------
@@ -323,11 +338,21 @@ export function buildRijksmuseum(b, near) {
     dressNS(t.u0 + 0.3, t.u1 - 0.3, t.v0, -1, H.towerWall);
     bandNS('stone', t.u0 + 0.2, t.u1 - 0.2, t.v0, -1, 22.2, 0.36, 0.18);
     bandNS('stone', t.u0 + 0.15, t.u1 - 0.15, t.v0, -1, 28.55, 0.34, 0.2);
-    archRowNS(t.u0 + 0.85, t.u1 - 0.85, t.v0, -1, 23.5, 26.5, near ? 3 : 2);
+    archRowNS(t.u0 + 0.85, t.u1 - 0.85, t.v0, -1, 23.5, 28.0, 4);
     clockNS((t.u0 + t.u1) / 2, t.v0, -1, 29.55, 32.45);
-    for (const u of [t.u0, t.u1 - 0.48]) {
-      k.box('stone', u, u + 0.48, t.v0 - 0.16, t.v0 + 0.08, 4.3, 33.5, 'bt');
+    const span = t.u1 - t.u0;
+    // Pale quoins and pilasters frame stacked stone panels and paired lancets.
+    for (let j = 0; j <= 4; j++) {
+      const u = t.u0 + 0.28 + j * (span - 0.56) / 4;
+      k.box('stone', u - 0.18, u + 0.18, t.v0 - 0.30, t.v0 + 0.06, 11.8, 28.3);
     }
+    for (let j = 0; j < 4; j++) {
+      const u = t.u0 + (j + 0.5) * span / 4;
+      k.panelNS('stone', u - 0.75, u + 0.75, 12.0, 14.0, t.v0 - 0.24, -1);
+      k.panelNS('clock', u - 0.46, u + 0.46, 14.6, 21.4, t.v0 - 0.18, -1);
+      for (const d of [-0.62, 0.62]) k.box('stone', u + d - 0.10, u + d + 0.10, t.v0 - 0.32, t.v0 + 0.04, 14.5, 21.6);
+    }
+    for (const y of [14.1, 21.7, 28.3, 33.0]) bandNS('stone', t.u0, t.u1, t.v0, -1, y, 0.3, 0.38);
     // outer side of each tower
     const west = t === TOWER.west;
     dressEW(t.v0 + 0.6, t.v1 - 0.4, west ? t.u0 : t.u1, west ? -1 : 1, H.towerWall);
@@ -407,12 +432,12 @@ export function buildRijksmuseum(b, near) {
   bandNS('stone', -14.3, 26.6, ARCH.south, 1, 21.25, 0.5, 0.26);
   slopeGlassU(-7.2, 19.4, southEave, southRidgeV, 22, 29.2, near ? [[0.12, 0.36], [0.46, 0.68]] : [[0.14, 0.7]]);
   k.box('glass', 0.6, 12.2, southRidgeV - 1.45, southRidgeV + 1.45, 29.05, 31.25, 'b');
-  k.box('slate', 0.42, 12.38, southRidgeV - 1.62, southRidgeV - 1.28, 31.32, 31.68, 'b');
-  k.box('slate', 0.42, 12.38, southRidgeV + 1.28, southRidgeV + 1.62, 31.32, 31.68, 'b');
-  k.box('slate', 0.42, 0.78, southRidgeV - 1.62, southRidgeV + 1.62, 31.32, 31.68, 'b');
-  k.box('slate', 12.02, 12.38, southRidgeV - 1.62, southRidgeV + 1.62, 31.32, 31.68, 'b');
+  k.box(near ? 'slate' : 'glass', 0.42, 12.38, southRidgeV - 1.62, southRidgeV - 1.28, 31.32, 31.68, 'b');
+  k.box(near ? 'slate' : 'glass', 0.42, 12.38, southRidgeV + 1.28, southRidgeV + 1.62, 31.32, 31.68, 'b');
+  k.box(near ? 'slate' : 'glass', 0.42, 0.78, southRidgeV - 1.62, southRidgeV + 1.62, 31.32, 31.68, 'b');
+  k.box(near ? 'slate' : 'glass', 12.02, 12.38, southRidgeV - 1.62, southRidgeV + 1.62, 31.32, 31.68, 'b');
   for (const u of (near ? [2.8, 5.2, 7.6, 10.0] : [4.0, 8.6])) {
-    k.box('slate', u - 0.08, u + 0.08, southRidgeV + 1.48, southRidgeV + 1.66, 29.25, 31.12, 'bt');
+    k.box(near ? 'slate' : 'glass', u - 0.08, u + 0.08, southRidgeV + 1.48, southRidgeV + 1.66, 29.25, 31.12, 'bt');
   }
 
   // south turrets flanking the arch, and the two outer ones

@@ -23,7 +23,7 @@ From the west close, at about 100 m: two square towers, a steep screen gable bet
 
 Real metres, +X east, +Y up, +Z south. The mesh is authored along the nave (+u toward the octagon, +v toward the south tower) and `geometry.js` applies one `rotateY` of 1.892° so it sits on the outline. The layer does not rotate it again. `y = 0` is the west-front pavement. Nothing is baked for terrain or sea level.
 
-Cityscape and Full 3D world: not tested yet, integration is checked separately. On Full 3D world the terrace should stay near one grade; the model has no hillside pad.
+Cityscape and Full 3D world: verified for the requested local static snapshots (2026-10-11); dynamic integration gates remain not tested. On Full 3D world the terrace should stay near one grade; the model has no hillside pad.
 
 ## Materials
 
@@ -32,15 +32,11 @@ Seven materials, the same keys in light and dark, and the same seven on the far 
 ## Modelling decisions
 
 - One footprint ring, way 417245741. Neighbouring blocks (Erkebispegården, the museum, Waisenhuset) are not the cathedral. Tiny pinnacle parts are not extra rings.
-- West-front statues are relief bands with pediment canopies, not the restored portrait set. The rose is a stone ring, sixteen spokes on the near model (eight on far) and a glass disc. The 2015 scaffold on the gable is not modelled.
+- West-front statues are grouped projecting figures in pointed canopy arcades, not the restored portrait set. The rose is a stone ring, sixteen spokes on the near model (eight on far) and a glass disc. The 2015 scaffold on the gable is not modelled.
 - Aisle walls sit inside the outline between the seven mapped nibs. The nibs and the flying buttresses are only at those piers.
 - The chapter house is a hall with a half-round east apse. The real plan is a small cross; the outline does not give that shape room to read.
 - North and south lobes of the octagon ambulatory are notches a few metres deep. A chapel box does not sit in them, so only the east chapel is built. The ambulatory drum is shifted east and kept narrower than the OSM part so its corners stay in the neck of the outline.
 - The south transept face is recessed so the door and the triple lancet sit on the stone, with jambs and two corner nibs out to the mapped edge. There is no south porch: the outline along the middle of that end is only a few centimetres past the wall.
-
-## Budget
-
-Near 24651 triangles, 7 draws, 1758488 bytes. Far 4262 triangles, 7 draws, 259472 bytes. Far keeps the near silhouette (the largest axis gap is 4 cm). The cross tip is trim at 87 m. A ray through the rose centre hits `glow`; a ray through a west door leaf hits `recess`; the octagon peak is `roof` at 36 m.
 
 ## Evidence
 
@@ -48,4 +44,24 @@ Compared with the dossier photographs (`tmp/top-cities/nidaros-cathedral/refs/`,
 
 Inspector: `/asset-preview.html?asset=nidaros-cathedral&view=facade` (also `overview`, `roof`, `south`, `east`, `rose`, `portal`, `spire`).
 
-Cityscape and Full 3D world: not tested yet, integration is checked separately.
+Cityscape and Full 3D world: verified for the requested local static snapshots (2026-10-11); dynamic integration gates remain not tested.
+
+## Earlier authoring budget (superseded by the QA revision)
+
+Near 36194 triangles, 7 draws, 1602220 bytes. Far 8039 triangles, 7 draws, 369680 bytes. Far keeps the near silhouette (the largest axis gap is 4 cm). The cross tip is trim at 87 m. A ray through the rose centre hits `glow`; a ray through a west door leaf hits `recess`; the octagon peak is `roof` at 36 m.
+
+## QA revision — 2026-10-11
+
+West-screen and tower-front pointed canopy arcades with grouped projecting figures and shelves, concentric rose surround and branching tracery, and grouped side openings. Relief is architectural approximation, not individual restored sculpture; far preserves niche rhythm with planar pointed canopies. Tower-front masonry sits 0.40 m behind its former plane so the three sculpture tiers are exposed and held by their projecting shelves.
+
+Near 36194 triangles / 7 draws / 1602220 bytes; far 8118 triangles / 7 draws / 372340 bytes. All variants meet the building budgets; current costs supersede the older authoring/review totals above.
+
+Cityscape: **verified** for requested local static snapshots. Full 3D world: **verified** for requested local static snapshots.
+
+## Follow-up QA, 11 October 2026 (nidaros-cathedral)
+
+Filled the blank panels beside the rose with four tall canopied bays, each carrying three statue silhouettes on shelves, and added paired niche rows to the gable. All groups survive in far; sculptural portraits remain approximations.
+
+Current exports supersede the historical cost tables above: near 38724 triangles / 7 draws / 1719016 bytes; far 9228 triangles / 7 draws / 427820 bytes. The geometry-derived depth table was regenerated; selected-model QA has no issues or dropped cycle edges.
+
+Far, near and street daytime frames were inspected in both modes; visible grade contacts remain clean. This is viewpoint-specific visual evidence; night, terrain refinement/eviction, mode toggles and Tesla hardware are not retested. Earlier statements that these modes were untested describe the historical build.

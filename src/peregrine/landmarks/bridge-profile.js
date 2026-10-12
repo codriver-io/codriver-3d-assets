@@ -88,6 +88,9 @@ export function createBridgeProfile(spec) {
     }
     return deckHeight(q.s,approaches);
   }
+  /** Metres from the deck surface to the deck a vehicle travelling toward increasing (direction
+   * +1) or decreasing (-1) station drives on: 0 unless the spec stacks its two directions. */
+  const deckOffset=(s,direction)=>spec.deckOffset?spec.deckOffset(Math.max(0,Math.min(BRIDGE_LENGTH,s)),direction):0;
   function resampleBridgeLine(line) {
     if(!line.coords.length)return line;
     const coords=[line.coords[0]],segmentMap=[];let changed=false;
@@ -100,9 +103,6 @@ export function createBridgeProfile(spec) {
     }
     return changed?{...line,coords,segmentMap}:line;
   }
-  /** Metres from the deck surface to the deck a vehicle travelling toward increasing (direction
-   * +1) or decreasing (-1) station drives on: 0 unless the spec stacks its two directions. */
-  const deckOffset=(s,direction)=>spec.deckOffset?spec.deckOffset(Math.max(0,Math.min(BRIDGE_LENGTH,s)),direction):0;
   return {surfaceStep:5,CHAMPLAIN,STRETCH,ALIGNMENT,BRIDGE_LENGTH,ROAD_EDGES,halfWidth,railGap,bounds,landmarks,knots,groundControls,
     bridgeLocal,bridgeLngLat,projectBridge,stationAt,bridgePoint,deckHeight,deckOffset,roadEdges,fittedLateral,bridgeRoadHeight,resampleBridgeLine};
 }

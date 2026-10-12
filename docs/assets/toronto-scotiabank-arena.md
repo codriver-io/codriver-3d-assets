@@ -39,7 +39,7 @@ Real metres, +X east, +Y up, +Z south. `y = 0` is local flat-map grade; no terra
 | Glazed plaza front | 19.5 m to the canopy roof; entrance canopy at 5.6 m | estimated from photographs |
 | Video screen | 9.1 m high x 15.2 m wide, bottom at 7.0 m | **published** size; position estimated |
 | Red sign | letters 1.5 m high, about 21 m long, on the canopy roof | estimated from photographs |
-| Plaza sculpture | two 31 m and 27 m tapered columns crossing, one 13 m thick column | estimated; star perforations omitted |
+| Plaza sculpture | two 31 m and 27 m tapered columns crossing, one 13 m thick column | estimated; eight-sided hollow shells with through-cut stars and slots |
 | Highest point | 32.4 m (rooftop plant); declared `height` 32 | |
 
 ## Materials and palettes
@@ -54,19 +54,19 @@ Twelve named materials, the same keys in `PALETTES.light` and `.dark`: `limeston
 - **North service face.** The 62 m north face (skirt, 0-18 m) is mid-grey `louvre` with dark base course and two bands, five roll-up loading doors with surrounds and vent panels, four pedestrian doors, and panel joints every 3.1 m (near). Review fix: it was one blank black slab.
 - **Retained facade.** A solid limestone podium along the mapped outer line with rounded corners; black base course, pink-grey pilasters at an 8 m pitch, tall windows with mullion and transom grids, ribbon-window end blocks that wrap the Lake Shore corner, a verdigris frieze line, a cornice, and "Scotiabank Arena" in the frieze (near LOD).
 - **Plaza front.** Glass prisms from the mapped west outline (front, south return, north wing) with a mullion grid, the thick canopy fascia, the 5.6 m entrance canopy, the 9.1 x 15.2 m screen, the red sign, two flagpoles.
-- **Near vs far.** Near (14,173 triangles) carries mullions, transoms, sign letters, fins, roof plant and flagpoles. Far (5,830 triangles, 41 percent) keeps the roof arch (attic tops sampled every 6 m, four roof rings), the attic bay fins (12 m), pilasters and windows as recessed boxes, the ribbon windows, the north dock doors, roof seams, the screen and a solid sign bar, so the arch, the black band over the pale colonnade and the glazed front still read at 800 m.
+- **Near vs far.** Near (17,821 triangles) carries mullions, transoms, sign letters, fins, roof plant and flagpoles. Far (9,550 triangles, 54 percent) keeps the roof arch (attic tops sampled every 6 m, four roof rings), the attic bay fins (12 m), pilasters and windows as recessed boxes, the ribbon windows, the north dock doors, roof seams, the screen and a solid sign bar, so the arch, the black band over the pale colonnade and the glazed front still read at 800 m.
 - Materials are merged per name: 12 draws near, 8 far. Far folds look-alikes through `FOLD` in `config.js`: `plinth` into `cladding`, `frame` into `louvre`, `granite` into `roof` (the pilasters keep their geometry and their count), and the thin `patina` band into `glass`; the lit screen, the red sign and the sculpture stay their own materials. Building budgets: near 60,000 / 14 / 2.5 MB, far 12,000 / 8 / 500 KB. Sills, heads, mullions and the plinth were re-dimensioned so none shares a plane with the glazing (coplanar overlap 73 m2 to 6 m2 over 18 faces).
 
 ## Approximations
 
-Heights are photo and structure-based estimates, not a survey. The roof arch is a smooth cap, not the gull-wing truss profile. The attic reflects today's black cladding (the 2018 photographs show light grey panels). Doors, carved stone panels, the star perforations of the sculpture, the skywalk annexes, the PATH bridge and the office tower are omitted. The glazed front is one flat curtain wall with a grid; the real glass is reflective and slightly bowed. Bay counts on both limestone facades are approximate.
+Heights are photo and structure-based estimates, not a survey. The roof arch is a smooth cap, not the gull-wing truss profile. The attic reflects today's black cladding (the 2018 photographs show light grey panels). Doors, carved stone panels, the skywalk annexes, the PATH bridge and the office tower are omitted. The glazed front is one flat curtain wall with a grid; the real glass is reflective and slightly bowed. Bay counts on both limestone facades are approximate.
 
 ## Costs (exported default scenes)
 
 | LOD | Triangles | Mesh draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 14,173 | 12 | 740,944 |
-| Far | 5,830 | 8 | 311,160 |
+| Near | 17,821 | 12 | 914,992 |
+| Far | 9,550 | 8 | 488,240 |
 
 ## Verification evidence
 
@@ -83,8 +83,21 @@ Tests: `node --test src/peregrine/landmarks/toronto/toronto.test.js src/peregrin
 
 | Mode | Status |
 | --- | --- |
-| Cityscape, flat ground | not tested yet, integration is checked separately |
-| Full 3D world | not tested yet, integration is checked separately |
+| Cityscape, flat ground | verified in the 2026-10-11 slot D captures (limits below) |
+| Full 3D world | verified in the 2026-10-11 slot D captures (limits below) |
 | Provider-extrusion replacement (six rings) | rings verified against the model in the inspector only; the office tower's extrusion is intentionally kept |
 
 Open risk for integration: if the map provider also draws the whole-lot outline (way 19882585, no height, 5 levels) as an extrusion, it survives the mask and may show through where the model is lower than it (the south return, 12 m, and the north wing, 9 m).
+
+## QA fix pass — 2026-10-11
+
+Replaced smooth solid sculpture cylinders with tapered eight-sided steel shells, 96 true star/slot apertures and annular terminal rims. Tilted feet are cut onto the plaza plane. Both LODs retain all aperture groups; merged duplicate shell vertices keeps far below 500 KB. Added static red event-art blocks/bars on the video board without pseudo-lettering; isolated material stacks avoid graphic/facade depth cycles.
+
+| LOD | Triangles before → after | Draws before → after | Bytes before → after |
+| --- | ---: | ---: | ---: |
+| near | 14,173 → 17,821 | 12 → 12 | 740,420 → 914,992 |
+| far | 5,830 → 9,550 | 8 → 8 | 310,640 → 488,240 |
+
+Cityscape: **verified**. Full 3D world: **verified**.
+
+Perforation count/pattern and sculpture dimensions remain stylized estimates; no attempt to model every small reference hole. Default near/night views can be partly obscured by foreground provider buildings; exported plaza/detail/close sculpture views establish shell holes and screen artwork. Tiny pre-existing ground-contact depth-cycle candidates (0.1 m²) remain below the deterministic gate and are not visible defects in reviewed frames. Lifecycle terrain toggles, failure/late reloads, origin shifts and Tesla hardware were not tested.

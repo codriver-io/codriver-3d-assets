@@ -19,10 +19,8 @@ export function create({ detail = 'near' } = {}) {
   const box = (m, x0, y0, z0, x1, y1, z1) => add(boxAB(x0, y0, z0, x1, y1, z1), m);
   const mirror = (fn) => { fn(1); fn(-1); };
 
-  // Faces of a pyramid in patches of light and dark copper: rows of runs, merged where neighbours share a colour. The patches are
-  // streaks along the fall line (the noise is stretched about 5:1 down the face and the occasional flips are whole 6-row runs), not
-  // square cells; the far roof is one mid colour (`copperMid`, the near mean) so the level of detail does not pop.
-  const noise = (f, r, j) => { const x = j / 1.7, y = r / 9, x0 = Math.floor(x), y0 = Math.floor(y), tx = x - x0, ty = y - y0; const v = (i, k) => hash(f, y0 + k, x0 + i); return (v(0, 0) * (1 - tx) + v(1, 0) * tx) * (1 - ty) + (v(0, 1) * (1 - tx) + v(1, 1) * tx) * ty; };
+  // Adjacent roof cells form narrow fall-line weathering runs. Both LODs use
+  // the same muted copper tones and persistent vertical pattern.
   function patches(light, dark, f, { a0, y0, a1, y1, rows, segs, seed = 0, share = 0.4 }) {
     light.phi = dark.phi = FACET(f);
     for (let r = 0; r < rows; r++) {
@@ -32,7 +30,7 @@ export function create({ detail = 'near' } = {}) {
       const emit = () => { if (run) (run.dark ? dark : light).poly([[run.u0 * ha, ya, aa], [run.u1 * ha, ya, aa], [run.u1 * hb, yb, ab], [run.u0 * hb, yb, ab]], [0, 1, 1]); };
       for (let j = 0; j < segs; j++) {
         const u0 = -1 + (2 * j) / segs, u1 = -1 + (2 * (j + 1)) / segs;
-        const isDark = (noise(f + seed, r, j) > share) !== (hash(Math.floor(r / 6), j, f + 9 + seed) < 0.08);
+        const isDark = hash(f + seed, Math.floor(j / (near ? 3 : 1)), 37) > 0.32;
         if (run && run.dark === isDark) run.u1 = u1; else { emit(); run = { dark: isDark, u0, u1 }; }
       }
       emit();
@@ -58,8 +56,8 @@ export function create({ detail = 'near' } = {}) {
 
   // --- The pyramidal roof: eight faces from the eaves to the lantern, dark slate-green with verdigris patches.
   const copper = new Soup(), copperDark = new Soup();
-  const rows = near ? 30 : 1, segs = near ? 10 : 1, copperMid = new Soup();
-  for (let f = 0; f < 8; f++) patches(near ? copper : copperMid, near ? copperDark : copperMid, f, { a0: Ra, y0: He, a1: Lh, y1: Yr, rows, segs });
+  const rows = near ? 12 : 6, segs = near ? 48 : 16, copperMid = new Soup();
+  for (let f = 0; f < 8; f++) patches(copper, copperDark, f, { a0: Ra, y0: He, a1: Lh, y1: Yr, rows, segs });
   // a belt course round the roof under the dormers
   const yBelt = 38.2;
   if (near) add(octPrism(apAt(yBelt) + 0.15, yBelt, yBelt + 0.7), 'stoneDark');
@@ -92,11 +90,11 @@ export function create({ detail = 'near' } = {}) {
       for (let k = 0; k < n; k++) {
         const a0 = (k / n) * 2 * Math.PI, a1 = ((k + 1) / n) * 2 * Math.PI, ri = rr - 0.55;
         glow.tri([0, yc, z], [ri * Math.cos(a0), yc + ri * Math.sin(a0), z], [ri * Math.cos(a1), yc + ri * Math.sin(a1), z], [0, 0, 1]);
-        if (spokes) trim.poly([[ri * Math.cos(a0), yc + ri * Math.sin(a0), z + 0.04], [rr * Math.cos(a0), yc + rr * Math.sin(a0), z + 0.04], [rr * Math.cos(a1), yc + rr * Math.sin(a1), z + 0.04], [ri * Math.cos(a1), yc + ri * Math.sin(a1), z + 0.04]], [0, 0, 1]);
+        if (spokes) trim.poly([[ri * Math.cos(a0), yc + ri * Math.sin(a0), z + 0.3], [rr * Math.cos(a0), yc + rr * Math.sin(a0), z + 0.3], [rr * Math.cos(a1), yc + rr * Math.sin(a1), z + 0.3], [ri * Math.cos(a1), yc + ri * Math.sin(a1), z + 0.3]], [0, 0, 1]);
       }
       if (spokes) for (let k = 0; k < 4; k++) {
         const a = (k * Math.PI) / 4, c = Math.cos(a), s = Math.sin(a), w = 0.1, l = rr - 0.5;
-        trim.poly([[-l * c - w * s, yc - l * s + w * c, z + 0.06], [l * c - w * s, yc + l * s + w * c, z + 0.06], [l * c + w * s, yc + l * s - w * c, z + 0.06], [-l * c + w * s, yc - l * s - w * c, z + 0.06]], [0, 0, 1]);
+        trim.poly([[-l * c - w * s, yc - l * s + w * c, z + 0.3], [l * c - w * s, yc + l * s + w * c, z + 0.3], [l * c + w * s, yc + l * s - w * c, z + 0.3], [-l * c + w * s, yc - l * s - w * c, z + 0.3]], [0, 0, 1]);
       }
     };
     if (rose) {
@@ -108,8 +106,8 @@ export function create({ detail = 'near' } = {}) {
         framed(x, w, lowY, springY);
         if (near) { // a mullion and a transom
           const m = (lowY + springY) / 2;
-          trim.poly([[x - 0.07, lowY, z + 0.04], [x + 0.07, lowY, z + 0.04], [x + 0.07, springY + 0.9, z + 0.04], [x - 0.07, springY + 0.9, z + 0.04]], [0, 0, 1]);
-          trim.poly([[x - w / 2, m - 0.07, z + 0.04], [x + w / 2, m - 0.07, z + 0.04], [x + w / 2, m + 0.07, z + 0.04], [x - w / 2, m + 0.07, z + 0.04]], [0, 0, 1]);
+          trim.poly([[x - 0.07, lowY, z + 0.3], [x + 0.07, lowY, z + 0.3], [x + 0.07, springY + 0.9, z + 0.3], [x - 0.07, springY + 0.9, z + 0.3]], [0, 0, 1]);
+          trim.poly([[x - w / 2, m - 0.07, z + 0.3], [x + w / 2, m - 0.07, z + 0.3], [x + w / 2, m + 0.07, z + 0.3], [x - w / 2, m + 0.07, z + 0.3]], [0, 0, 1]);
         }
       }
     }

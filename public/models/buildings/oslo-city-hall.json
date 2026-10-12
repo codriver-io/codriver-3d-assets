@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/oslo-city-hall-near.glb",
-      "bytes": 812500,
-      "triangles": 15000,
+      "bytes": 711396,
+      "triangles": 15028,
       "drawCalls": 6,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/oslo-city-hall-far.glb",
-      "bytes": 269184,
-      "triangles": 4914,
+      "bytes": 235980,
+      "triangles": 4316,
       "drawCalls": 6,
       "bounds": {
         "min": [

@@ -36,14 +36,14 @@ Warm off-white steel, grey suspenders, concrete, subdued grey-green girders, asp
 
 `layer.js` uses `createRegistryBridgeLayer` and a local subclass that tags terrain approach arrays to choose the estimated absolute world deck profile. Cityscape ramps are 180 m each with smooth zero-slope ends, maximum grade 10.84%. Full 3D world uses `absolute-deck`: no river valley flattening; ends and fixed supports fit the DEM, while the main deck stays at the estimated absolute elevation. Support attachment weights round-trip as `_BRIDGELIFT`; road overlay/navigation use the same profile. Approach slab toes intentionally embed up to 0.87 m below flat grade. Footing bottoms stay at zero, with interpolated shaft/rib attachment weights.
 
-Approximations: a parabolic arch rather than surveyed segment coordinates, simplified rectangular rib section and bank supports, no bolt heads or joints, estimated brace sizes, lateral pavement/fallback lane widths, SUP furniture and railing pitch, straight longitudinal hanger station assignment, nighttime lighting and world datum. Separate pedestrian path landings stop at the structural ends; the off-bridge path network is left to the provider and its vertical continuity is not certified. Actual HD pavement and paint are not available in this local environment.
+Approximations: a parabolic arch rather than surveyed segment coordinates, simplified rectangular rib section and bank supports, no bolt heads or joints, estimated brace sizes, lateral pavement/fallback lane widths, SUP furniture and railing pitch, straight longitudinal hanger station assignment, nighttime lighting and world datum. Separate pedestrian path landings stop at the structural ends; the off-bridge path network is left to the provider and its vertical continuity is not certified. HD pavement and paint were unavailable during the original build; the QA follow-up below records separate checks.
 
 ## Export costs and visual evidence
 
 | Export | Triangles | Mesh draws | Uncompressed size |
 | --- | ---: | ---: | ---: |
-| Near | 26,264 | 17 | 1,302,948 bytes / 1,272 KiB |
-| Far | 8,272 | 7 | 365,956 bytes / 357 KiB |
+| Near | 26,312 | 17 | 1,305,920 bytes / 1,275 KiB |
+| Far | 8,896 | 7 | 404,652 bytes / 395 KiB |
 
 Both are comfortably within 120k/40/4.5 MB near and 30k/10/1.2 MB far. These are GLB scene costs, not hardware benchmarks or total map draws.
 
@@ -74,3 +74,13 @@ Live `window.__map.landmarks.heightAt(lng,lat,heading)` returns the following me
 Lateral 25 m (path area) and 60 m return null in both directions and modes. JSON evidence: `surface-cityscape/surface-check.json` and `surface-world/surface-check.json`. Both road-center toes return exactly zero; transverse endpoint variation across the wider structural shoulders and pedestrian landings has not been surveyed or certified. Terrain main-span clearance is about 9 m with the present approximate datum. The valley banks remain in the DEM rather than being flattened.
 
 Local `/osm-lanes` returns 503 without Redis, so HD paint/overlay integration, paint toggles and Tesla MCU hardware performance remain not tested. Actual route/car motion, missing-load recovery and repeated mode/reanchor toggles are inherited shared capabilities, not claims established by these screenshots. Servers are stopped at handoff; generated shared renderer bundles are restored and excluded from the landmark commit.
+
+## QA follow-up, 2026-10-11
+
+The four far SUP rail termini now have return posts embedded 0.35 m into the path slab. All 48 hangers have visible deck/path sockets in both LODs. Named-support tests exclude each member, verify its arch and socket/slab contacts, and reject a shortened hanger or truncated rail return. The rigid lateral frame is retained under HD width fitting, so fragmentary provider sections cannot squeeze the SUP or pull hanger tails away from it.
+
+Walterdale's two pedestrian ways are excluded from vehicle validation. World terrain is resident and uses the existing estimated 625 m deck datum. HD pavement and paint were checked across the main span and approach coverage (stations about 61–543 m); every sampled provider vertex sits at least 0.219 m / 0.239 m above the fallback slab respectively. The last off-bridge joins, full area tile completeness, live driving and Tesla hardware remain outside this check.
+
+Overpass delivered only partial coverage, so this check used fresh primary OSM way/full responses for the ten recorded corridor ways, converted by the existing `compactLanes` pipeline into a disposable Redis 6391 cache. This is real OSM lane geometry for the corridor, not proof of a complete area tile or an upstream service recovery. No runtime code, terrain gate or deployment changed. Reference study used the regenerated sheet's photo and existing documented dimensions; the original review artifacts and dossier were unavailable.
+
+New metrics report no unresolved geometry issues or material cycles. Landmark and Top Cities conformance tests passed 301/301; depth table check, asset catalog, assets check/preview and Peregrine build passed. Servers are stopped at handoff; generated renderer bundles are excluded from the commit.

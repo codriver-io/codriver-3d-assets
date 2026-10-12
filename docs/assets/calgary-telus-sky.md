@@ -34,7 +34,7 @@ Real metres, +X east, +Y up, +Z south, `y = 0` local flat-map grade (the street-
 | Tower plate | 51.43 x 34.27 m rectangle, flush from the lobby slab to level 28 | **Mapped** (OSM) |
 | West podium | 4.9 x 31.2 m strip, 10 levels (43.9 m) | **Mapped** (OSM); the 1.2 m nub at its south end is not modelled |
 | Lobby | 7 m, glass recessed 1.2 to 1.4 m behind 0.5 m columns on the plate line | **Estimated** |
-| Pixel columns | 7 per north and south face (7.35 m), 5 per east and west face (6.85 m); grid cell 1.22 x 1.37 m | **Estimated** from the south-face photographs (about 6.5 columns across the top) |
+| Pixel columns | 14 per north and south face (3.67 m), 5 per east and west face (6.85 m); grid cell 1.22 x 1.37 m | **Estimated** from the south-face photographs (about 6.5 columns across the top) |
 | Step-back by the roof | north 9 cells (12.3 m), west 5 (6.1 m), east 2 (2.4 m), south 1 (1.4 m), each with a hashed 1 to 2 cell jitter growing with height; starts at level 29 | **Estimated** (see below); the resulting top plate is about 43 x 22 m, 55 % of the base, which matches the published residential area (29 678 m² over 29 floors is about 60 % of the 1 750 m² plate once net-to-gross is allowed for) |
 | Roof | pixel columns stop at level 53 to 58 in six 6-cell steps (west to east), 3.3 m apart: the roof climbs from 207.6 m on the west plates (204.3 m on the westmost columns) to 221.1 m on the east, about 13.5 m | **Estimated**: the elevated south photograph suggests about 1.4 floors, but the independent review read the ramp as 10 to 15 m in the photographs, so it was lowered from the first 7 m to 13.5 m |
 | LED fascia | 0.95 m strip on the slab edge, north and south faces only, about 65 % of floors in an aurora-curtain pattern | Faces **sourced**; pattern invented |
@@ -63,7 +63,7 @@ The runtime layer shades each vertex from its normal, so the light palette is th
 
 - **A stack of floor plates on a cell grid, built as exposed faces.** Each level says how far each pixel column or row steps back; the mesh is the faces of the resulting cell stack, merged into runs: a glass wall and a slab-edge band (silvery grey by day) per run, a pale terrace where a floor is covered by a smaller one, a dark soffit where one overhangs. This is the "stepped slabs" loft: no box per apartment, one merged mesh per material, six draws.
 - The step-back is `mean(level) + jitter`, rounded to whole cells; the mean grows as a power of the level (north 9 t^1.1, west 5 t^1.2, east 2 t, south 1 t) and the jitter's amplitude grows too, so the pixelation starts as a few terraces at level 30 and becomes the full mosaic at the top. Plates may step out again from one level to the next (balcony cantilevers up to about 3 m), so soffits are drawn.
-- Far merges levels in pairs (it keeps every level at which the podium or the stepped roof changes), drops mullions and lit windows, and thickens the bands: the same silhouette and recessions at 30 % of the triangles.
+- Far preserves each residential floor and white cell/slab outlines. Office levels may share paired geometry but retain every floor band. Greedy terrace rectangles and welded vertices reduce exported cost.
 - Orientation is baked in; footprint rings are the OSM outline and parts, and a test checks every vertex stays within 0.5 m of them.
 
 ## Approximations and what is not modelled
@@ -74,8 +74,8 @@ Pixel pattern, step-back amounts, level heights, roof stair, overhang heights, l
 
 | | Triangles | Draws | Size |
 | --- | --- | --- | --- |
-| Near | 17 772 | 6 | 943 KB |
-| Far | 5 260 | 5 | 283 KB |
+| Near | 30,096 | 6 | 1593 KB |
+| Far | 9,510 | 5 | 390 KB |
 
 Budgets for a building: near at most 60 000 / 14 / 2.5 MB, far at most 12 000 / 8 / 500 KB.
 
@@ -87,4 +87,14 @@ Looked at, with `shot.mjs` contact sheets (`tmp/calgary/shots/telus-sky/`, ignor
 
 ## Cityscape and Full 3D world
 
-Not tested yet; integration is checked separately. Expectation: downtown Calgary and the Centre Street corner are flat to within a metre or two, so the default terrain pad should hold the base without a declared `terrainPad`; the lobby floor is `y = 0`.
+Verified visually in the 2026-10-11 QA run; see current evidence and limits below. Expectation: downtown Calgary and the Centre Street corner are flat to within a metre or two, so the default terrain pad should hold the base without a declared `terrainPad`; the lobby floor is `y = 0`.
+
+## QA revision 2026-10-11
+
+North/south residential pixel columns are approximately 3.7 m wide (14 per face), with projecting pale slab and jamb frames. Far retains every residential floor and its alternating cell outlines; office geometry may group pairs but draws the intervening floor band. Greedy terrace rectangles and welded vertices keep the far model within budget.
+
+Reference basis: the supplied review and reference photograph in its contact sheet, plus the existing authoring notes. No new city dossier exists for these first-run Calgary/Toronto assets; the sculptural approximation uses the existing documented plan and general architectural knowledge.
+
+Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed.
+
+The default street capture is obscured by fog and a neighboring tower. The alternate approach establishes the nearby model loading but still partly obscures the lobby; this run does not claim a complete entrance/base inspection.

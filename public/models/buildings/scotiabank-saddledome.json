@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/scotiabank-saddledome-near.glb",
-      "bytes": 236488,
-      "triangles": 7195,
+      "bytes": 232696,
+      "triangles": 7011,
       "drawCalls": 10,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/scotiabank-saddledome-far.glb",
-      "bytes": 71572,
-      "triangles": 1935,
+      "bytes": 90392,
+      "triangles": 2383,
       "drawCalls": 8,
       "bounds": {
         "min": [

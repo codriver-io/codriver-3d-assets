@@ -29,45 +29,45 @@
   "attribution": "Codriver / 9570-6198 Québec inc.; geographic placement © OpenStreetMap contributors",
   "geographicDataLicense": "ODbL-1.0",
   "geographicDataUrl": "https://www.openstreetmap.org/copyright",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
-  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js",
   "assets": {
     "near": {
       "url": "/models/buildings/paris-petit-palais-near.glb",
-      "bytes": 351256,
-      "triangles": 8294,
+      "bytes": 539300,
+      "triangles": 11273,
       "drawCalls": 7,
       "bounds": {
         "min": [
-          -49.91408810078219,
-          0,
-          -68.7541577814807
+          -51.30523090412555,
+          -7.271766744310071e-9,
+          -68.96385099579433
         ],
         "max": [
-          49.908644612566036,
-          47.63920211791992,
-          68.7537006790263
+          54.73791662088149,
+          42.739078521728516,
+          69.27477719320832
         ]
       }
     },
     "far": {
       "url": "/models/buildings/paris-petit-palais-far.glb",
-      "bytes": 134368,
-      "triangles": 2906,
-      "drawCalls": 6,
+      "bytes": 272632,
+      "triangles": 5349,
+      "drawCalls": 7,
       "bounds": {
         "min": [
-          -49.773680125680755,
-          0,
-          -68.6804427159427
+          -51.292139643050106,
+          -7.271766744310071e-9,
+          -69.28219260481309
         ],
         "max": [
-          49.98139937853246,
-          47.69886016845703,
-          68.69788538809247
+          54.72482535980605,
+          42.798683166503906,
+          69.5957980859194
         ]
       }
     }
-  }
+  },
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 9570-6198 Québec inc. (Codriver)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/paris-palaces-geometry.js"
 }

@@ -1,5 +1,6 @@
 # Lincoln Memorial, Washington
 
+Current QA results are recorded below under 2026-10-11. Earlier costs, palettes and integration statements describe historical authoring snapshots.
 Original procedural model of Henry Bacon’s 1922 memorial, as seen from the east approach and surrounding roads. Source lives in `src/peregrine/landmarks/top-cities/lincoln-memorial/`; runtime exports are `public/models/buildings/lincoln-memorial-{near,far}.glb` and `lincoln-memorial.json`. No scans, photos, textures or third-party meshes ship.
 
 At 100 m the model shows the column rhythm, doorway, fluted shafts, two stair flights, tripod urns and garland attic. At 800 m the pale rectangular temple, recessed roof tier and broad terrace remain recognisable. Seated Lincoln is a deliberately simplified figure inside the open chamber, not a detailed portrait.
@@ -68,3 +69,47 @@ node scripts/asset-catalog.mjs
 node .agents/skills/build-3d-city/scripts/qa-metrics.mjs --ids lincoln-memorial --out tmp/top-cities/lincoln-memorial/qa-metrics.json
 node .agents/skills/build-3d-city/scripts/shot.mjs lincoln-memorial --source glb --detail far --theme dark --sheet --out tmp/top-cities/shots/lincoln-memorial
 ```
+
+## Initial 2026-10-11 QA correction — before authorized follow-up
+
+2026-10-11 partial QA correction: darker interior-facing cella surfaces, true doorway and seated Lincoln preserved, bounded eastern apron mask and thin grounded apron added. Deterministic checks pass, but the large provider forecourt block still appears in the current app, the chamber reads weakly between the columns, and a dark slit remains above the peristyle. Visual acceptance is incomplete after the two permitted look-fix rounds.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 36704 / 7 / 948 | 36714 / 7 / 957 |
+| far | 7192 / 7 / 254 | 7202 / 7 / 264 |
+
+No unresolved deterministic QA issues. Landmark tests and focused city conformance tests pass; asset catalog validation and local preview build pass. Depth layers regenerated and the existing ordering remains current (no changed table hunk).
+
+Cityscape: verified inspection of daylight app captures; visual acceptance failed for forecourt/entrance. Full 3D world: verified inspection with Terrarium terrain; full visual acceptance incomplete. Night, mode/lifecycle transitions, terrain refinement and hardware performance not tested.
+
+The provider forecourt block remains in Cityscape and world despite the new bounded mask. The original entrance stays truly open (ray tests reach seated Lincoln), but the frontal app view remains weak and the tall cella doorway produces a dark band above the peristyle. Both FIX-level visual findings require follow-up; no shared runtime code was changed.
+
+Every frame was inspected; a test pass is not visual acceptance.
+
+## Final 2026-10-11 authorized Lincoln follow-up
+
+2026-10-11 final QA correction: interior-facing shadow stone, 18.5 m wide east chamber opening, four-metre-deep portal returns and a 20.15 m lintel below the peristyle roof preserve the true chamber/figure without the attic slit. Exact resident way 1551348210 replaces the provisional forecourt mask; its provider cabin is suppressed over a thin grounded permanent apron. Both app modes show the block removed. Statue and reliefs remain simplified.
+
+MVT tile `https://tiles.codriver.io/15/9370/12536.mvt` contains feature **35185923437042 = 2^45 + way 1551348210**. Its ring matches the dossier's `building=cabin` way and resident roof vertices x=36.74–79.50 m, z=−20.77–18.74 m. The old test explicitly excluded this way; the new exact mask includes it. Shared runtime code was not changed.
+
+The real portal is 18.5 m wide, with four-metre-deep wall returns and shadowed chamber faces, while the lintel starts at 20.15 m to close the slit above the peristyle. Six observable landmark tests plus three city conformance tests pass. QA metrics have no issues; depth regeneration drops no cycles and existing ordering is unchanged. Final near: **36,726 triangles / 7 draws / 961 KiB**; far: **7,214 triangles / 7 draws / 267 KiB**.
+
+Full 3D world: verified for the same visual captures with Terrarium terrain. Current bundle 903beb74423b. Night, lifecycle transitions, terrain refinement and hardware performance not tested.
+
+The final sheet and all six final app frames were inspected. The large provider block is absent and the stairs lead onto the grounded apron; the central portal remains open, with the simplified seated figure visible between the columns. Fine inscription, sculpture fidelity and full lifecycle/terrain certification remain outside this daylight visual pass.
+
+## 2026-10-11 follow-up QA (current)
+
+Widened the portal from 18.5 m to 21.6 m and extended its interior clearance from 20.15 m to 23.4 m. Retained four-metre recessed returns, darkened the real cella surfaces and chamber floor, and made the seated statue/chair use an ivory unshaded material. The floor is an actual partition of the platform top, avoiding a stacked overlay.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 36726 / 7 / 961 | 36742 / 8 / 963 |
+| far | 7214 / 7 / 267 | 7230 / 8 / 269 |
+
+Mandatory exported QA reports no unresolved issues. Focused landmark and city conformance tests, catalog validation, preview generation and the full depth-layer freshness check pass. Mission Inn’s regenerated far material ordering is committed; the other four regenerated entries are unchanged.
+
+Cityscape: verified daytime visual inspection of near/far and street frames. Full 3D world: verified daytime visual inspection with Terrarium terrain. Near-named shots on the tall towers select far LOD at their auto-adjusted zoom; street shots select near. Night, full lifecycle/mode transitions, hardware performance and terrain refinement sweeps were not tested.
+
+Remaining: Statue and interior ornament remain stylised; lettering is omitted. The peristyle lintel limits exterior-visible opening height even though the inner chamber extends higher.

@@ -40,6 +40,9 @@ export function create({detail='near'}={}) {
    b.beam('rail',[s,edge(s),DECK+1.3],[end,edge(end),DECK+1.3],.08,.08,1);
    if(near)b.beam('rail',[s,edge(s),DECK+.7],[end,edge(end),DECK+.7],.035,.035,1);
    b.beam('rail',[mid,d+side*(w/2-.08),DECK-.04],[mid,d+side*(w/2-.08),DECK+1.3],.065,.065,1);
+   // Return both landing rail termini into the path slab in every LOD.
+   for(const a of [s===DECK_START?s:null,end===DECK_END?end:null].filter(a=>a!==null))
+    b.beam('rail',[a,edge(a),DECK-.4],[a,edge(a),DECK+1.3],.12,.12,1);
   }
   if(near) {
    // High-backed timber wind/noise screen and continuous seating along west SUP edge.
@@ -63,7 +66,9 @@ export function create({detail='near'}={}) {
    const u=28+i*10,t=u/SPAN,[s,d,y]=archPoint(t,sign),endD=sign*9.9;
    b.beam('cable',[s,d,y-1.18],[s,endD,DECK-.78],near?.095:.14,near?.095:.14,1);
    if(sign===1)b.beam('cable',[s,d+.65,y-1.18],[s,pathD(s),DECK-.6],near?.095:.14,near?.095:.14,1);
-   if(near){b.box('girder',s,endD,DECK-.6,.55,.45,.65,1);if(sign===1)b.box('girder',s,pathD(s),DECK-.6,.55,.45,.65,1);}
+   // Visible sockets meet the deck/path slab; retained in far, with no exposed tails.
+   b.box('girder',s,endD,DECK-.45,.7,.65,.9,1);
+   if(sign===1)b.box('girder',s,pathD(s),DECK-.4,.7,.65,.9,1);
   }
   for(const s of [ARCH_START,ARCH_END]) {
    b.box('concrete',s,sign*13.5,.32,10,6,.64,1,0);

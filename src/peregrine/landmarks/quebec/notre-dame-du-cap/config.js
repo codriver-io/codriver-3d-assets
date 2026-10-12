@@ -31,11 +31,11 @@ export const SPEC = {
 
 export const PALETTES = {
   light: {
-    stone: '#c3beb1', stoneDark: '#a29d91', plaster: '#e5e2d9', copper: '#5f8279', copperDark: '#2f3d39', copperMid: '#4a655e',
+    stone: '#c3beb1', stoneDark: '#a29d91', plaster: '#e5e2d9', copper: '#57766d', copperDark: '#405d54', copperMid: '#4b6b62',
     glow: '#47658b', wood: '#8a6038', dark: '#2d3033', glass: '#50626d', roofFlat: '#6c8176', metal: '#3b3d3c',
   },
   dark: {
-    stone: '#7a7e83', stoneDark: '#666a70', plaster: '#8e9197', copper: '#425d55', copperDark: '#28332f', copperMid: '#364a44',
+    stone: '#7a7e83', stoneDark: '#666a70', plaster: '#8e9197', copper: '#405950', copperDark: '#344c43', copperMid: '#3a5249',
     glow: '#e7b667', wood: '#5b4129', dark: '#16191b', glass: '#34424b', roofFlat: '#44564d', metal: '#2c2e2d',
   },
 };
@@ -43,5 +43,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 is the plaza in front of the portal stair (about 11 m above sea level on the public DEM: 10.1 to 12.2 m under the outline, median 11.0); the portal floor is 2.2 m above it, the galleries 0.6 m. The terrace, the bank to the St. Lawrence and the plaza are not modelled. Full 3D world uses an explicit terrain pad (terrainPad): the outline held at its median DEM with an 8 m feather.',
   attribution: 'Original procedural mesh. Mapped outline (way 66794334) and axis bearing © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Sourced: 258 ft (78.6 m) to the cross, the octagonal plan with four transept arms, the pyramidal copper roof with a lantern and spire, the parabolic portal arch with a 7.3 m statue, the two covered galleries ending in edicules, the sacristy, the mapped outline and axis. Estimated from photographs and the outline (no other published dimension was found): the octagon apothem (26.5 m), the eaves (19.5 m), gable apexes (30 m), the portal tower (24 m wide at the base, 36 m to the crown), the arch size (16 m wide, 24.5 m to the apex), the lantern and spire heights, the gallery and pavilion sizes, window and rose positions and the roof patchwork. The diagonal gables follow the photographs; the back of the building is inferred from the outline. Interior, ornament, lettering, the Petit Sanctuaire, the Pavillon des visiteurs and the plaza are not modelled.',
+  note: 'Sourced: 258 ft (78.6 m) to the cross, the octagonal plan with four transept arms, the pyramidal copper roof with a lantern and spire, the parabolic portal arch with a 7.3 m statue, the two covered galleries ending in edicules, the sacristy, the mapped outline and axis. Estimated from photographs and the outline (no other published dimension was found): the octagon apothem (26.5 m), the eaves (19.5 m), gable apexes (30 m), the portal tower (24 m wide at the base, 36 m to the crown), the arch size (16 m wide, 24.5 m to the apex), the lantern and spire heights, the gallery and pavilion sizes, window and rose positions and the muted fall-line copper weathering (shared by both LODs). The diagonal gables follow the photographs; the back of the building is inferred from the outline. Interior, ornament, lettering, the Petit Sanctuaire, the Pavillon des visiteurs and the plaza are not modelled.',
 };

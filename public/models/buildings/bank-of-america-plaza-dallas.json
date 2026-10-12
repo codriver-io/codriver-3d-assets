@@ -17,12 +17,12 @@
   },
   "elevationDatum": "Local flat-map grade y=0; rigid foundation, no terrain, sea level or Mercator stretch baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "280.7 m architectural height; OSM tower and stepped upper outlines. Facade modules, crown step elevations, lobby doors and equipment are approximated from photos. Default night lighting is green; real programmable lighting varies. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "note": "280.7 m architectural height; OSM tower and stepped upper outlines. Facade modules, crown step elevations, lobby doors and equipment are approximated from photos. Default night lighting is green; real programmable lighting varies. Daytime visual integration is recorded separately in the landmark documentation.",
   "assets": {
     "near": {
       "url": "/models/buildings/bank-of-america-plaza-dallas-near.glb",
-      "bytes": 1306168,
-      "triangles": 25008,
+      "bytes": 1320748,
+      "triangles": 25278,
       "drawCalls": 8,
       "bounds": {
         "min": [
@@ -39,14 +39,14 @@
     },
     "far": {
       "url": "/models/buildings/bank-of-america-plaza-dallas-far.glb",
-      "bytes": 196164,
-      "triangles": 4032,
+      "bytes": 324804,
+      "triangles": 6414,
       "drawCalls": 5,
       "bounds": {
         "min": [
           -28.41708755493164,
           0,
-          -32.1522102355957
+          -32.1668701171875
         ],
         "max": [
           28.463186264038086,

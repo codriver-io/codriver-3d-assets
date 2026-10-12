@@ -1,3 +1,4 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
 import { PLAN as P } from './palace-of-westminster-plan.js';
@@ -55,7 +56,7 @@ export function create({ detail = 'near' } = {}) {
   slopedBays(P.river.u0, P.river.u1, 26, riverRows);
   k.bays('s', -116, -98, 50.0, 26, { step: 5.4, rows: riverRows });
   k.bays('s', 117, 136, 37.2, 26, { step: 5.4, rows: riverRows });
-  k.bays('n', -76, -6, -42.4, 23, { step: near ? 8 : 16, rows: near ? [[6.2, 6.2, 1.5]] : [], pins: true });
+  k.bays('n', -76, -6, -42.4, 23, { step: near ? 8 : 16, rows: [[6.2, 6.2, 1.5]], pins: true });
   k.bays('n', 24, 82, -74.6, 16.5, { step: P.hall.step, rows: [[2.3, 11.2, 2.15]], pins: true, butts: true });
   k.box(trim, -116, -98, 25.6, 26.45, 49.85, 50.5, 'n');
 
@@ -64,6 +65,7 @@ export function create({ detail = 'near' } = {}) {
   central();
 
   const root = b.finish();
+  root.traverse(o=>{if(o.isMesh){const old=o.geometry;o.geometry=mergeVertices(old,1e-4);old.dispose();}});
   root.traverse((o) => {
     if (!o.isMesh) return;
     o.geometry.userData = {};
@@ -125,14 +127,14 @@ export function create({ detail = 'near' } = {}) {
       for (const [y, h, w] of rows) {
         const hw = w / 2, head = near ? Math.min(w * 0.5, h * 0.25) : 0;
         const y1 = y + h - head;
-        put('glass', 0.22, -hw, hw, y, y1);
+        put('glass', near ? 0.22 : 0.6, -hw, hw, y, y1);
         if (head > 0.2) {
-          const cu = u + nu * 0.22, cv = v + nv * 0.22;
+          const cu = u + nu * (near ? 0.22 : 0.6), cv = v + nv * (near ? 0.22 : 0.6);
           const q = (a, yy) => [cu + du * a, yy, cv + dv * a];
           k.poly('glass', [q(-hw, y1), q(hw, y1), q(0, y + h)], [u, y1, v - nv]);
         }
-        if (near) {
-          const t = 0.18, p = 0.4;
+        {
+          const t = 0.28, p = near ? 0.65 : 0.95;
           put(dress, p, -hw - t, -hw, y, y + h);
           put(dress, p, hw, hw + t, y, y + h);
           put(dress, p, -hw, hw, y - t, y);
@@ -142,10 +144,17 @@ export function create({ detail = 'near' } = {}) {
         }
       }
     }
+    slopedBand(u0,u1,24.0,24.6,0.1,0.9);
+    slopedBand(u0,u1,26.8,27.4,0.1,0.9);
+    for (let i = 0; i < n * 3; i++) {
+      const u = u0 + (u1-u0)*(i+0.5)/(n*3), v = frontV(u);
+      k.box(dress,u-0.15,u+0.15,24.45,26.9,v+0.15,v+0.75,'n');
+    }
     for (let i = 0; i <= n; i++) {
       const u = u0 + (u1 - u0) * i / n;
       const v = frontV(u);
-      k.box('stone', u - 0.28, u + 0.28, 0.4, wall, v + 0.08, v + 0.5, 'n');
+      k.box('stone', u - 0.48, u + 0.48, 0, wall + 0.25, v - 0.15, v + 1.25, 'n');
+      for (const y of [7.0,16.0,23.3]) k.box(dress,u-0.65,u+0.65,y,y+0.6,v+0.1,v+1.4,'n');
       k.pinnacle(u - nu * 0.85, v - nv * 0.85, wall - 0.15, wall + (near ? 6.0 : 5.4));
     }
   }
@@ -308,7 +317,7 @@ export function create({ detail = 'near' } = {}) {
     const head = Math.min(w * 0.36, 2.2);
     const body = h - head;
     const a = along - w / 2, c = along + w / 2;
-    const proud = 0.24;
+    const proud = near ? 0.24 : 0.60;
     const pane = (y0, y1, xL, xR) => {
       if (side === 's' || side === 'n') {
         const zz = at + (side === 's' ? proud : -proud);
@@ -326,7 +335,7 @@ export function create({ detail = 'near' } = {}) {
       const xx = at + (side === 'e' ? proud : -proud);
       k.poly('glass', [[xx, y + body, a], [xx, y + body, c], [xx, y + h, along]], [at, y + body, along]);
     }
-    const jamb = trim, t = 0.24, p0 = 0.38, p1 = 0.56;
+    const jamb = trim, t = 0.24, p0 = near ? 0.38 : 0.7, p1 = near ? 0.56 : 0.95;
     k.onFace(side, a - t, a, at, y, y + h, p0, p1, jamb);
     k.onFace(side, c, c + t, at, y, y + h, p0, p1, jamb);
     k.onFace(side, a, c, at, y - t, y, p0, p1, jamb);
@@ -355,7 +364,11 @@ export function create({ detail = 'near' } = {}) {
     const piers = [[-9.15, -6.55], [6.55, 9.15]];
     const gaps = [[3.6, 8.5], [22.9, 23.6], [37.7, 41.6], [55.8, 56.3], [68.4, 72.4]];
     for (const [side, at, axis] of [['s', z + h, x], ['n', z - h, x], ['e', x + h, z], ['w', x - h, z]]) {
-      if (near) blindPanels(side, at, axis, piers, gaps);
+      for (const rib of [-8.5,-6.4,-0.7,0.7,6.4,8.5]) {
+        k.onFace(side,axis+rib-0.23,axis+rib+0.23,at,3.0,73.8,0.1,0.8,'stone');
+        for (const [y0,y1] of gaps) k.onFace(side,axis+rib-0.45,axis+rib+0.45,at,y0,y1,0.2,1.0,trim);
+      }
+      blindPanels(side, at, axis, piers, gaps);
       for (const [i, [y, ht, w]] of stages.entries()) {
         // The west face keeps the Sovereign's Entrance in the lowest stage.
         if (side === 'w' && i === 0) continue;
@@ -423,7 +436,14 @@ export function create({ detail = 'near' } = {}) {
     const c = P.ct, x = c.u, z = c.v;
     k.spire('stone', x, z, 33, 60, 4.5, 4.15, 8);
     k.spire('stone', x, z, 59.4, 62.2, 4.35, 3.55, 8);
-    k.spire('glass', x, z, 62.2, 68.4, 3.05, 2.75, 8);
+    // Open octagonal lantern: eight ribs connect the lower and upper stone collars.
+    for (let i=0;i<8;i++) {
+      const a=Math.PI/8+i*Math.PI/4;
+      k.bar('stone',[x+Math.cos(a)*3.15,61.8,z+Math.sin(a)*3.15],
+        [x+Math.cos(a)*2.95,68.8,z+Math.sin(a)*2.95],0.52,0.52);
+      k.bar(trim,[x+Math.cos(a)*4.25,33,z+Math.sin(a)*4.25],
+        [x+Math.cos(a)*3.9,60.2,z+Math.sin(a)*3.9],0.32,0.32);
+    }
     k.spire('stone', x, z, 68.1, 71.2, 3.45, 2.95, 8);
     k.box('stone', x - 2.2, x + 2.2, 70.5, 71.15, z - 2.2, z + 2.2, 'd');
     k.spire('stone', x, z, 70.7, c.top, 2.7, 0, sides);

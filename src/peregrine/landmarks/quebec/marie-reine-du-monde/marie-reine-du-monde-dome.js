@@ -72,16 +72,16 @@ export function buildDome(k) {
   const steps = near ? 10 : 6, profile = [[D.radius, D.spring - 0.3], [D.radius, D.spring]];
   for (let i = 1; i <= steps; i++) { const { r, y } = domeSurface((i / steps) * tMax); profile.push([r, y]); }
   k.lathe('copper', 0, 0, profile, SEG);
-  const ribs = near ? 16 : 8;
-  for (let i = 0; i < ribs; i++) k.put(ribGeometry((i * 2 * Math.PI) / ribs, near ? 10 : 5, near ? 0.55 : 1.0, near ? 0.2 : 0.45), 'copper');
+  const ribs = 16;
+  for (let i = 0; i < ribs; i++) k.put(ribGeometry((i * 2 * Math.PI) / ribs, near ? 10 : 5, near ? 0.5 : 0.45, near ? 0.2 : 0.18), 'copper');
   if (near) {
     for (const [frac, offset] of [[0.3, 0.5], [0.66, 0.5]]) {
       for (let i = 0; i < 16; i++) {
         const a = ((i + offset) * 2 * Math.PI) / 16, { r, y, nr, ny } = domeSurface(frac * tMax);
-        const n = new THREE.Vector3(nr * Math.sin(a), ny, nr * Math.cos(a)), g = new THREE.CircleGeometry(frac < 0.5 ? 0.62 : 0.5, 6);
+        const n = new THREE.Vector3(nr * Math.sin(a), ny, nr * Math.cos(a)), g = new THREE.CircleGeometry(frac < 0.5 ? 0.38 : 0.30, 6);
         g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), n));
         g.translate(r * Math.sin(a) + n.x * 0.12, y + n.y * 0.12, r * Math.cos(a) + n.z * 0.12);
-        k.put(g, 'glass');
+        k.put(g, 'bronze');
       }
     }
   }

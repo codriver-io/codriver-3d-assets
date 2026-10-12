@@ -36,16 +36,16 @@ const cellAt = (u, v) => ALL.find((c) => u > c.u0 && u < c.u1 && v > c.v0 && v <
  * never the map. The plan is authored in the street frame (u east, v south) and rotated once by THETA (2.4 deg), so
  * the orientation on the mapped footprint is baked in.
  *
- * near: eight tile-clad towers (flat walls, rounded corners) in horizontal terracotta courses (dark gunmetal and bronze,
+ * near: eight tile-clad vessels (concave walls, rounded corners) with a terracotta tile mosaic (dark gunmetal and bronze,
  * a soft gold only in the lowest 10 m), slot windows, the triangular window, the street entrance, roof vaults and plant;
  * the skybridge as a flared band over 4 Street SE with dark faces, a dark soffit, a long window strip and a concave
  * cove under each end; the brick hotel with windows, storefront and cornice.
  * far: same silhouette and negative space (the 18.6 m clear span under the bridge, the stepped towers, the hotel)
- * with coarser courses.
+ * with coarser tile divisions.
  */
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
-  const CHN = near ? CH : CH * 3; // far draws coarser courses
+  const CHN = near ? 0.8 : 1.2; // tile-scale courses retained in both LODs
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
   const soups = new Map(), surfs = new Map();
   const fold = near ? {} : { tileGold: 'tileBronze', trim: 'brick' }; // far folds minor materials into neighbours (draw budget)
@@ -64,13 +64,20 @@ export function create({ detail = 'near' } = {}) {
   const courseMat = (tone, k, seed) => {
     if (tone === 'brick') return 'brick';
     const r = hash(Math.floor(k / 2) + (k % 2) * 3, seed, 7), m = TONES[tone].find(([, t]) => r < t)[0];
-    return m === 'tileGold' && k * CHN > GOLD_TOP ? 'tileBronze' : m;
+    if (k * CHN > GOLD_TOP) return tone === 'dark' ? (r < .91 ? 'tileDark' : 'tileBronze') : (r < .88 ? 'tileBronze' : 'tileDark');
+    return m;
   };
 
   // a point on a cell wall: s along the side from its first corner, y up, `off` out along the normal
   const wallPoint = (c, side, s, y, off = 0) => {
-    const { A, e, n } = sideOf(c, side);
-    return P(A[0] + e[0] * s + n[0] * off, y, A[1] + e[1] * s + n[1] * off);
+    const { A, e, n, r0, r1 } = sideOf(c, side);
+    // Shallow concave vessel face, tangent to the rounded corners and closed at roof/grade.
+    // Landing walls meet the bridge at the authored plane; their lower portion sweeps inward.
+    const landing = side === 'W' && ['sign', 'bridge-pier', 'west-block'].includes(c.id);
+    const vertical = landing ? Math.sin(Math.PI * Math.min(1, y / BRIDGE.soffit)) ** 2 : Math.sin(Math.PI * y / c.h) ** 2;
+    const q = Math.max(0, Math.min(1, (s - r0) / (r1 - r0)));
+    const bend = c.tone === 'brick' ? 0 : 1.25 * Math.sin(Math.PI * q) ** 2 * vertical;
+    return P(A[0] + e[0] * s + n[0] * (off - bend), y, A[1] + e[1] * s + n[1] * (off - bend));
   };
 
   const bandRows = (yA, yB) => {
@@ -89,6 +96,10 @@ export function create({ detail = 'near' } = {}) {
     for (const side of ['W', 'E', 'N', 'S']) {
       const { A, e, n, r0, r1 } = sideOf(c, side);
       const cuts = new Set([r0, r1]);
+      const landing = (side === 'W' && c.u0 === BRIDGE.uEast) || (side === 'E' && c.u1 === BRIDGE.uWest);
+      if (landing) for (const v of [BRIDGE.vNorth - BRIDGE.radius, BRIDGE.vSouth + BRIDGE.radius]) {
+        const q = v - A[1]; if (q > r0 && q < r1) cuts.add(q);
+      }
       for (const o of ALL) {
         if (o === c) continue;
         for (const q of e[0] ? [o.u0 - A[0], o.u1 - A[0]] : [o.v0 - A[1], o.v1 - A[1]]) if (q > r0 + 0.01 && q < r1 - 0.01) cuts.add(q);
@@ -99,12 +110,18 @@ export function create({ detail = 'near' } = {}) {
         const nb = cellAt(A[0] + e[0] * sm + n[0] * 0.05, A[1] + e[1] * sm + n[1] * 0.05);
         const yA = nb ? nb.h : 0, yB = c.h;
         if (yB - yA < 0.05) continue;
-        const ys = bandRows(yA, yB);
+        const ys = [...new Set([...bandRows(yA, yB), ...[BRIDGE.soffit, BRIDGE.top].filter(y => landing && y > yA && y < yB)])].sort((a, b) => a - b);
         const toward = P(A[0] + e[0] * sm + n[0] * 12, (yA + yB) / 2, A[1] + e[1] * sm + n[1] * 12);
         for (let j = 0; j < ys.length - 1; j++) {
           const k = Math.round((ys[j] + ys[j + 1]) / 2 / CHN);
-          const rows = [ys[j], ys[j + 1]].map((y) => [wallPoint(c, side, s0, y), wallPoint(c, side, s1, y)]);
-          surf(courseMat(c.tone, k, c.index * 13 + 5)).grid(rows, toward);
+          const v = A[1] + e[1] * sm;
+          if (landing && v > BRIDGE.vNorth - BRIDGE.radius && v < BRIDGE.vSouth + BRIDGE.radius && ys[j] >= BRIDGE.soffit && ys[j + 1] <= BRIDGE.top) continue;
+          const tiles = c.tone === 'brick' ? 1 : Math.max(2, Math.ceil((s1 - s0) / (near ? 1.8 : 3.6)));
+          for (let tile = 0; tile < tiles; tile++) {
+            const a = s0 + (s1 - s0) * tile / tiles, z = s0 + (s1 - s0) * (tile + 1) / tiles;
+            const rows = [ys[j], ys[j + 1]].map(y => [a, (a + z) / 2, z].map(s => wallPoint(c, side, s, y)));
+            surf(courseMat(c.tone, k, c.index * 13 + tile * 17 + i * 29)).grid(rows, toward);
+          }
         }
       }
     }
@@ -120,7 +137,7 @@ export function create({ detail = 'near' } = {}) {
       const toward = P(mid[0] + (mid[0] - cu) / dl * 12, c.h / 2, mid[1] + (mid[1] - cv) / dl * 12);
       for (let j = 0; j < ys.length - 1; j++) {
         const k = Math.round((ys[j] + ys[j + 1]) / 2 / CHN);
-        surf(courseMat(c.tone, k, c.index * 13 + 5)).grid([ys[j], ys[j + 1]].map((y) => pts.map(([u, v]) => P(u, y, v))), toward);
+        for (let t = 0; t < pts.length - 1; t++) surf(courseMat(c.tone, k, c.index * 13 + t * 17)).grid([ys[j], ys[j + 1]].map(y => [pts[t], pts[t + 1]].map(([u, v]) => P(u, y, v))), toward);
       }
     }
     // flat roof (a convex fan over the outline)
@@ -198,11 +215,29 @@ export function create({ detail = 'near' } = {}) {
     ...arcPts(BRIDGE.uEast - R, BRIDGE.vSouth + R, 0, -90),
     ...arcPts(BRIDGE.uWest + R, BRIDGE.vSouth + R, -90, -180),
   ];
+  // The landing cove occupies the whole flared mouth, including the curved
+  // side returns. Its rim joins each tower and narrows into the clear span.
+  const mouthV = (u, southSide) => {
+    const d = Math.min(BRIDGE.uEast - u, u - BRIDGE.uWest);
+    const spread = d < R ? R - Math.sqrt(Math.max(0, R * R - (R - d) ** 2)) : 0;
+    return southSide ? BRIDGE.vSouth + spread : BRIDGE.vNorth - spread;
+  };
+  const coveBottom = (u) => {
+    for (const [uw, dir, r] of [[BRIDGE.uEast, -1, BRIDGE.cove.east], [BRIDGE.uWest, 1, BRIDGE.cove.west]]) {
+      const d = (u - uw) * dir;
+      if (d >= 0 && d < r) return BRIDGE.soffit - r + Math.sqrt(Math.max(0, r * r - (r - d) ** 2));
+    }
+    return BRIDGE.soffit;
+  };
   const flank = (pts, outV, name, seed) => {
     const ys = bandRows(BRIDGE.soffit, BRIDGE.top);
     for (let j = 0; j < ys.length - 1; j++) {
       const k = Math.round((ys[j] + ys[j + 1]) / 2 / CHN);
-      surf(courseMat('dark', k, seed)).grid([ys[j], ys[j + 1]].map((y) => pts.map(([u, v]) => P(u, y, v))), P(-12, (BRIDGE.soffit + BRIDGE.top) / 2, outV));
+      const at = (u, v, y) => {
+        const bottom = coveBottom(u), t = (y - BRIDGE.soffit) / (BRIDGE.top - BRIDGE.soffit);
+        return P(u, bottom + (BRIDGE.top - bottom) * t, v);
+      };
+      surf(courseMat('dark', k, seed + j * 13)).grid([ys[j], ys[j + 1]].map(y => pts.map(([u, v]) => at(u, v, y))), P(-12, 24, outV));
     }
   };
   flank(north, -40, 'north', 101);
@@ -216,12 +251,13 @@ export function create({ detail = 'near' } = {}) {
   // a concave cove under each end of the bridge: the underside sweeps down into the tower wall as a quarter-round
   // (4 quads near, 3 far) across the straight span, closed at both sides by a vertical fan, all in the dark tile
   for (const [uw, dir, r] of [[BRIDGE.uEast, -1, BRIDGE.cove.east], [BRIDGE.uWest, 1, BRIDGE.cove.west]]) {
-    const n = near ? 4 : 3, uc = uw + dir * r, yc = BRIDGE.soffit - r, vN = BRIDGE.vNorth, vS = BRIDGE.vSouth;
-    const arc = Array.from({ length: n + 1 }, (_, k) => { const a = (Math.PI / 2) * k / n; return [uc - dir * r * Math.cos(a), yc + r * Math.sin(a)]; }); // wall -> soffit
-    surf('tileDark').grid(arc.map(([u, y]) => [P(u, y, vN), P(u, y, vS)]), P(uc, yc, (vN + vS) / 2));
-    for (const [v, out] of [[vN, vN - 10], [vS, vS + 10]]) for (let k = 0; k < n; k++) {
-      soup('tileDark').tri(P(uw, BRIDGE.soffit, v), P(arc[k][0], arc[k][1], v), P(arc[k + 1][0], arc[k + 1][1], v), P(uw + dir * r / 2, BRIDGE.soffit - r / 2, out));
-    }
+    const n = near ? 12 : 6, uc = uw + dir * r, yc = BRIDGE.soffit - r;
+    const arc = Array.from({ length: n + 1 }, (_, k) => {
+      const a = Math.PI / 2 * k / n, u = uc - dir * r * Math.cos(a), y = yc + r * Math.sin(a);
+      const vN = mouthV(u, false), vS = mouthV(u, true);
+      return [P(u, y, vN), P(u, y, vS)];
+    });
+    surf('tileDark').grid(arc, P(uc, yc, -0.6));
   }
   // the long window strip along both flanks of the straight span, with mullions (near only)
   {
@@ -229,7 +265,7 @@ export function create({ detail = 'near' } = {}) {
     for (const [v, outV] of [[BRIDGE.vNorth - OFF, -40], [BRIDGE.vSouth + OFF, 40]]) {
       soup('glow').quad(P(uA, y0, v), P(uB, y0, v), P(uB, y1, v), P(uA, y1, v), P(-12, (y0 + y1) / 2, outV));
       if (near) for (let u = uA + 1.9; u < uB - 0.5; u += 2.7) {
-        const vv = v + Math.sign(outV) * 0.08;
+        const vv = v + Math.sign(outV) * 0.15;
         soup('tileDark').quad(P(u - 0.12, y0, vv), P(u + 0.12, y0, vv), P(u + 0.12, y1, vv), P(u - 0.12, y1, vv), P(-12, (y0 + y1) / 2, outV));
       }
     }

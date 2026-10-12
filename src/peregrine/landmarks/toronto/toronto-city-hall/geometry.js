@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
 import {
@@ -29,7 +30,7 @@ const steps = (a, b, step) => { const n = Math.max(1, Math.ceil(Math.abs(b - a) 
  *
  * near: ribbed towers with recessed ribbon glazing, ledges, mullions, lit windows, strut ring, arch lamps,
  * lettered sign. far: same silhouette and negative space (towers, saucer, podium, arches, walkway loop) with
- * coarser ribs, grouped floors, and no lamps, mullions, windows or lettering.
+ * coarser ribs, every floor band, and no lamps, mullions, lit panes or lettering.
  */
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
@@ -105,8 +106,8 @@ export function create({ detail = 'near' } = {}) {
     band(0.0, -0.95, bodyTop, H, 'concreteDark');
     for (const k of [0.34, 0.68]) { const y = podiumRoof + (H - podiumRoof) * k; band(0.22, -0.4, y, y + 0.55, 'concrete'); }
 
-    // Glazed face: floors as bands (near: one per floor; far: groups of three), ledges between them.
-    const group = near ? 1 : 3, bands = [];
+    // Glazed face: floors as bands (one per floor in both LODs), ledges between them.
+    const group = 1, bands = [];
     for (let f = 0; f < t.floors;) {
       const kind = t.dark.includes(f) ? 'darkGlass' : t.louvre.includes(f) ? 'darkGlass' : 'glass';
       let n = 1; while (n < group && f + n < t.floors && (t.dark.includes(f + n) ? 'darkGlass' : t.louvre.includes(f + n) ? 'darkGlass' : 'glass') === kind) n++;
@@ -142,7 +143,7 @@ export function create({ detail = 'near' } = {}) {
         const th = t.theta(ph) * DEG, r = t.rGlass(ph) + rec - stand - 0.11;
         const er = [Math.cos(th), 0, Math.sin(th)], et = [-Math.sin(th), 0, Math.cos(th)];
         const [x, z] = polar(t.theta(ph), r);
-        put(orientedBox([x, yc, z], [et, UP, er], [0.14, hh, 0.3]), 'concreteDark');
+        put(orientedBox([x, yc, z], [et, UP, er], [0.14, hh, 0.3]), 'concrete');
         ph += 1.8 / (t.rGlass(ph) + rec) / DEG;
       }
     }
@@ -182,7 +183,7 @@ export function create({ detail = 'near' } = {}) {
   {
     const ring = PODIUM.ring.map(([u, v]) => uv(u, v));
     put(prism(ring, 0, podiumRoof), 'concrete');
-    put(prism(insetRing(ring, 0.12), podiumRoof - 0.1, podiumRoof + 0.06), 'concreteDark'); // paved deck: 12 cm inside the podium edge, underside sunk into it, so it shares no plane with the walls, the base ring or the towers
+    put(prism(insetRing(ring, 0.12), podiumRoof - 0.1, podiumRoof + 0.06), near ? 'concreteDark' : 'concrete'); // paved deck: 12 cm inside the podium edge, underside sunk into it, so it shares no plane with the walls, the base ring or the towers
     for (const g of ROOF_GARDENS) put(prism(g.map(([u, v]) => uv(u, v)), podiumRoof + 0.06, podiumRoof + (near ? 0.34 : 0.3)), 'grass');
     // The colonnaded south fronts: recessed glazing, a cantilevered fascia, round columns.
     for (const [a, c] of PODIUM.fronts) {
@@ -300,5 +301,7 @@ export function create({ detail = 'near' } = {}) {
   }
 
   for (const [mat, s] of soups) if (!s.empty) put(s.geometry(), mat);
-  return b.finish();
+  const root = b.finish();
+  if (!near) root.traverse(o => { if (o.isMesh) o.geometry = mergeVertices(o.geometry, 1e-5); });
+  return root;
 }

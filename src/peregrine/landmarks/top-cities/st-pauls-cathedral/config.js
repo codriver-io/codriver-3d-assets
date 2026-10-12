@@ -21,6 +21,7 @@ export const PALETTES = {
   light: {
     stone: '#efe6d6',
     stone2: '#d4c6ae',
+    relief: '#c8baa1',
     lead: '#8f9294',
     rib: '#c5c3be',
     glass: '#3a444c',
@@ -31,6 +32,7 @@ export const PALETTES = {
   dark: {
     stone: '#d9d0be',
     stone2: '#b7aa94',
+    relief: '#b7aa94',
     lead: '#4d5154',
     rib: '#6e706c',
     glass: '#161c22',

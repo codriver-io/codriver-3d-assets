@@ -35,12 +35,12 @@ export const SIDE_CROWN = SPRING + SIDE_HALF; // 12.625
 export const DOOR_HALF = (DOOR_OUT - SINGLE_OUT) / 2;
 export const DOOR_U = (DOOR_OUT + SINGLE_OUT) / 2;
 // Pierced wall stops at the architrave. The cornice is a projecting stack on the capitals,
-// not a continuation of the blank wall. Cornice at 16.60 leaves the attic + finial at 30% of 23.79.
+// not a continuation of the blank wall. Cornice at 15.70 leaves the attic + finial at 34% of 23.79.
 export const ENTABLATURE = 13.90;
 export const BODY_TOP = ENTABLATURE;
 export const CAP_TOP = 13.82;
-export const CORNICE_TOP = 16.60;
-export const SIDE_ATTIC = 18.20;
+export const CORNICE_TOP = 15.70;
+export const SIDE_ATTIC = 17.30;
 export const ATTIC_FACE = 3.40; // central attic half-depth; pediment projects past this
 export const ATTIC_HALF = 6.15;
 export const PED_HALF = 5.15;

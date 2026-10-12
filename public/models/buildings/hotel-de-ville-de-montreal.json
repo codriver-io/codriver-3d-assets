@@ -23,9 +23,9 @@
   "assets": {
     "near": {
       "url": "/models/buildings/hotel-de-ville-de-montreal-near.glb",
-      "bytes": 491496,
-      "triangles": 9591,
-      "drawCalls": 6,
+      "bytes": 507884,
+      "triangles": 9913,
+      "drawCalls": 7,
       "bounds": {
         "min": [
           -47.55244445800781,
@@ -41,8 +41,8 @@
     },
     "far": {
       "url": "/models/buildings/hotel-de-ville-de-montreal-far.glb",
-      "bytes": 177536,
-      "triangles": 3360,
+      "bytes": 194200,
+      "triangles": 3682,
       "drawCalls": 6,
       "bounds": {
         "min": [

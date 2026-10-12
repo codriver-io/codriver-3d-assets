@@ -36,7 +36,7 @@ export function create({ detail = 'near' } = {}) {
   ];
   const ATTIC = { y: 19.9, w: 1.4, h: 2.3 };         // the pavilions' fourth storey
   const ATTIC_B = { y: 19.7, w: 1.4, h: 1.8 };       // the central block's low attic, under its cornice
-  function windows(face, plane, a0, a1, n, { rows = WALL_ROWS, skip = {}, ring = false, frame = near } = {}) {
+  function windows(face, plane, a0, a1, n, { rows = WALL_ROWS, skip = {}, ring = false, frame = true } = {}) {
     rows.forEach((r, ri) => centres(a0, a1, n).forEach((a, i) => {
       if (skip[ri]?.includes(i)) return;
       const [x, z] = xz(face, plane, a);
@@ -59,7 +59,6 @@ export function create({ detail = 'near' } = {}) {
   }
   // dormers on a wing's mansard, one over each window column (their fronts stand 0.2 m proud of the wall plane)
   function dormerRow(face, plane, cs, { y = P.corniceW + 0.1, inset = -0.2, ...opt } = {}) {
-    if (!near) return;
     for (const a of cs) {
       const [x, z] = xz(face, plane, a);
       const dx = face === 'E' ? -inset : face === 'W' ? inset : 0, dz = face === 'S' ? -inset : face === 'N' ? inset : 0;
@@ -106,9 +105,9 @@ export function create({ detail = 'near' } = {}) {
     wb('trim', sz > 0 ? 'N' : 'S', sz > 0 ? z0 : z1, x0, x1, P.corniceP - 1.2, P.corniceP, 0, 0.6);
     windows(fo, fp, x0, x1, 3, { rows: [...WALL_ROWS, ATTIC], skip: sz > 0 ? { 0: [1] } : {}, ring: sz > 0 });
     windows(so, sp, z0, z1, 4, { rows: [...WALL_ROWS, ATTIC] });
-    if (near) {   // corner pilaster on the outer corner
+    {   // corner pilaster on the outer corner
       const ox = sx * P.xP, oz = sz > 0 ? P.zP : P.zBP;
-      box('trim', Math.min(ox - sx * 0.8, ox + sx * 0.2), Math.max(ox - sx * 0.8, ox + sx * 0.2), P.plinth + 0.28, P.corniceP - 1.2, Math.min(oz - sz * 0.8, oz + sz * 0.2), Math.max(oz - sz * 0.8, oz + sz * 0.2), 'd');
+      box('trim', Math.min(ox - sx * 0.8, ox + sx * 0.45), Math.max(ox - sx * 0.8, ox + sx * 0.45), P.plinth + 0.28, P.corniceP - 1.2, Math.min(oz - sz * 0.8, oz + sz * 0.45), Math.max(oz - sz * 0.8, oz + sz * 0.45), 'd');
     }
     if (sz > 0) {   // entrance door in the middle of the front pavilions, with steps
       win(cx, 0, fp, 2.2, 4.0, FACES.S, { arch: true, mat: 'iron', ring: true, sill: false });
@@ -166,7 +165,7 @@ export function create({ detail = 'near' } = {}) {
     dormerRow(face, plane, centres(C.z0, C.z1, 19));
     const cf = sx > 0 ? 'W' : 'E', cp = sx > 0 ? C.x1 : C.x0;   // the courtyard face of the same wing
     courses(cf, cp, C.z0, C.z1, { s: false });
-    if (near) { windows(cf, cp, C.z0, C.z1, 19, { frame: false }); dormerRow(cf, cp, centres(C.z0, C.z1, 19)); }
+    windows(cf, cp, C.z0, C.z1, 19, { frame: false }); if (near) dormerRow(cf, cp, centres(C.z0, C.z1, 19));
   }
   for (const [a0, a1] of [[-PI, P.rear[0]], [P.rear[1], PI]]) {
     plinth('N', P.zBW, a0, a1); courses('N', P.zBW, a0, a1);
@@ -181,9 +180,9 @@ export function create({ detail = 'near' } = {}) {
     frustum('roof', [a0 - 0.3, a1 + 0.3, P.zRear - 0.3, P.zBW + 0.2], [a0 + 2.0, a1 - 2.0, P.zRear + 0.6, P.zBW - 0.2], P.corniceW, P.corniceW + 3.2, { top: true });
   }
   courses('N', C.z1, C.x0, -4.8, { s: false }); courses('N', C.z1, 6.5, C.x1, { s: false }); courses('S', C.z0, C.x0, C.x1, { s: false });   // courtyard cornices
-  if (near) {   // inner courtyard faces of the front and back wings
+  {   // inner courtyard window bands survive both LODs
     windows('N', C.z1, C.x0, -4.8, 8, { frame: false }); windows('N', C.z1, 6.5, C.x1, 8, { frame: false }); windows('S', C.z0, C.x0, C.x1, 20, { frame: false });
-    dormerRow('N', C.z1, [...centres(C.x0, -4.8, 8), ...centres(6.5, C.x1, 8)]); dormerRow('S', C.z0, centres(C.x0, C.x1, 20));
+    if (near) { dormerRow('N', C.z1, [...centres(C.x0, -4.8, 8), ...centres(6.5, C.x1, 8)]); dormerRow('S', C.z0, centres(C.x0, C.x1, 20)); }
   }
 
   // ---- the central chamber body inside the courtyard -----------------------------------------------------------------------------------
@@ -192,7 +191,7 @@ export function create({ detail = 'near' } = {}) {
     box('stone', B.x0, B.x1, 0, P.bodyTop, B.z0, B.z1, 'du'); box('stone', S.x0, S.x1, 0, P.bodyTop, B.z1 - 1.0, S.z1, 'dusn');
     for (const [face, plane, a0, a1] of [['N', B.z0, B.x0, B.x1], ['S', B.z1, B.x0, S.x0], ['S', B.z1, S.x1, B.x1], ['E', B.x1, B.z0, B.z1], ['W', B.x0, B.z0, B.z1], ['E', S.x1, B.z1, C.z1], ['W', S.x0, B.z1, C.z1]]) {
       wb('trim', face, plane, a0, a1, P.bodyTop - 1.0, P.bodyTop, 0, 0.5);
-      if (near) windows(face, plane, a0, a1, Math.max(1, Math.round((a1 - a0) / 3.1)), { rows: [{ y: 2.0, w: 1.4, h: 2.8, arch: true }, { y: 8.2, w: 1.4, h: 3.0 }, { y: 12.4, w: 1.3, h: 2.6 }], frame: false });
+      windows(face, plane, a0, a1, Math.max(1, Math.round((a1 - a0) / 3.1)), { rows: [{ y: 2.0, w: 1.4, h: 2.8, arch: true }, { y: 8.2, w: 1.4, h: 3.0 }, { y: 12.4, w: 1.3, h: 2.6 }], frame: false });
     }
     frustum('roof', [B.x0 - 0.3, B.x1 + 0.3, B.z0 - 0.3, B.z1 + 0.3], [B.x0 + 2.4, B.x1 - 2.4, B.z0 + 2.4, B.z1 - 2.4], P.bodyTop, P.bodyTop + 3.6, { top: true });
     poly('roof', [[S.x0, P.bodyTop, B.z1 + 0.3], [S.x1, P.bodyTop, B.z1 + 0.3], [S.x1, P.bodyTop, C.z1], [S.x0, P.bodyTop, C.z1]], [0, 0, 0]);
@@ -213,12 +212,13 @@ export function create({ detail = 'near' } = {}) {
       for (const f of ['E', 'W']) wb('trim', f, f === 'E' ? x1 : x0, z0, z1, y0, y1, 0, out);
     };
     around(P.s1, P.s1 + 0.4, 0.22); around(P.s2, P.s2 + 0.4, 0.22); around(P.frieze, P.frieze + 0.35, 0.18);
-    around(TH.cornice1 - 1.2, TH.cornice1, 0.6); around(TH.belfry - 1.2, TH.belfry, 0.7); around(TH.shaftTop - 1.3, TH.shaftTop, 0.5);
+    around(TH.cornice1 - 1.2, TH.cornice1, 0.9); around(TH.belfry - 1.2, TH.belfry, 1.0); around(TH.shaftTop - 1.3, TH.shaftTop, 0.9);
+    around(29.2, 29.55, 0.65); around(41.0, 41.45, 0.8);
     for (const [face, plane, a0, a1] of [['S', z1, x0, x1], ['E', x1, z0, z1], ['W', x0, z0, z1], ['N', z0, x0, x1]]) {
       const [wx, wz] = xz(face, plane, (a0 + a1) / 2), ang = FACES[face];
       for (const [y, h] of [[9.0, 2.9], [14.6, 2.9], [19.4, 2.4]]) if (face === 'S' || near) win(wx, y, wz, 1.7, h, ang, { arch: true, frame: near, mat: 'glass' });
       win(wx, 25.2, wz, 2.1, 3.3, ang, { arch: true, ring: true, frame: near, mat: 'glass' });
-      win(wx, 35.7, wz, 2.3, 4.7, ang, { arch: true, ring: true, frame: near, mat: 'glow' });
+      for (const da of [-1.4, 1.4]) { const [bx, bz] = xz(face, plane, (a0 + a1) / 2 + da); win(bx, 35.5, bz, 1.9, 5.2, ang, { arch: true, ring: true, frame: true, mat: 'glass' }); }
       put(onWall(new THREE.CircleGeometry(1.2, near ? 14 : 8).translate(0, 0, 0.08), wx, 31.2, wz, ang), 'glow');
     }
     // clock dials, proud of the wall: a cream dial inside a stone ring, with hands
@@ -229,25 +229,25 @@ export function create({ detail = 'near' } = {}) {
     }
     // statues flanking the central windows of the front (the lower two pairs and the stage above the clock's)
     if (near) for (const y of [8.9, 14.5, 24.8]) for (const sx of [-1, 1]) niche('S', z1, sx * 2.5, y, { ped: 0.3 });
-    if (near) for (const sx of [-1, 1]) for (const cz2 of [z0, z1]) {   // corner pilasters of the lower stages
+    for (const sx of [-1, 1]) for (const cz2 of [z0, z1]) {   // corner pilasters of the lower stages
       const ox = sx * x1, sz = cz2 === z1 ? 1 : -1;
-      box('trim', Math.min(ox - sx * 0.9, ox + sx * 0.25), Math.max(ox - sx * 0.9, ox + sx * 0.25), 0.6, TH.cornice1 - 1.2, Math.min(cz2 - sz * 0.9, cz2 + sz * 0.25), Math.max(cz2 - sz * 0.9, cz2 + sz * 0.25), 'd');
+      box('trim', Math.min(ox - sx * 0.9, ox + sx * 0.455), Math.max(ox - sx * 0.9, ox + sx * 0.455), 0.6, TH.shaftTop - 1.3, Math.min(cz2 - sz * 0.9, cz2 + sz * 0.55), Math.max(cz2 - sz * 0.9, cz2 + sz * 0.55), 'd');
     }
     // turrets, belfry roof, crest, lantern, flagpole and flag
     for (const sx of [-1, 1]) for (const [tz, ctz] of [[z0, z0], [z1, z1]]) {
-      cyl('stone', sx * x1, TH.belfry, TH.shaftTop - 0.1, ctz, 1.25, 1.25, near ? 8 : 5, '');
-      if (near) cyl('trim', sx * x1, TH.belfry + 4.4, TH.belfry + 4.8, ctz, 1.4, 1.4, 8, '');
-      cone('roof', sx * x1, TH.shaftTop - 0.1, TH.shaftTop + 3.0, ctz, 1.35, near ? 8 : 5);
+      cyl('trim', sx * x1, TH.belfry, TH.shaftTop - 0.1, ctz, 1.25, 1.25, near ? 8 : 5, '');
+      cyl('trim', sx * x1, TH.belfry + 4.4, TH.belfry + 4.9, ctz, 1.55, 1.55, near ? 8 : 6, '');
+      cone('roof', sx * x1, TH.shaftTop - 0.1, TH.shaftTop + 3.8, ctz, 1.35, near ? 8 : 5);
       void tz;
     }
     loft('roof', 0, cz, [{ y: TH.shaftTop, hx: 5.1, hz: 5.0 }, { y: 45.4, hx: 4.5, hz: 4.4 }, { y: 47.2, hx: 3.75, hz: 3.6 }, { y: 49.2, hx: 2.8, hz: 2.7 }, { y: 51.0, hx: 1.95, hz: 1.9 }, { y: TH.apex, hx: 1.3, hz: 1.3 }]);
     if (near) dormer(0, 45.2, z1 - 0.6, 0, { w: 0.9, h: 1.5, rise: 0.6, depth: 2.2 });
     // iron crest: a railed platform on the spire, an open lantern of ribs under a dome, the finial and the pole
     cyl('iron', 0, TH.apex, TH.apex + 0.4, cz, 1.95, 1.95, near ? 10 : 6, 't');
-    if (near) {
+    {
       for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; b.bar('iron', [Math.cos(a) * 1.7, TH.apex + 0.4, cz + Math.sin(a) * 1.7], [Math.cos(a) * 1.15, 55.6, cz + Math.sin(a) * 1.15], 0.1, 0.1); }
       cyl('iron', 0, 54.0, 54.25, cz, 1.45, 1.45, 10, '');
-    } else cyl('iron', 0, TH.apex + 0.4, 55.6, cz, 1.6, 1.2, 6, '');
+    }
     lathe('iron', 0, 55.6, cz, [[1.2, 0], [0.95, 0.5], [0.5, 1.1], [0.15, 1.5], [0.0, 1.65]], near ? 8 : 5);
     b.bar('iron', [0, 57.0, cz], [0, TH.pole, cz], 0.14, 0.14);
     // the Québec flag, flying toward -x: a blue field with the white cross and four fleurs-de-lis

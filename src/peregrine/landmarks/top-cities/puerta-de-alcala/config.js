@@ -32,5 +32,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'Local grade y=0 on the flat Peregrine basemap; no absolute altitude.',
   attribution: 'Original procedural mesh. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'Height 23.79 m, width 43.07 m, depth 11.74 m and the door height 6.10 m are Ayuntamiento restoration figures. The model width is 42.3 m so the chamfered outline contains it. Arch crowns (central 13.35 m, sides 12.63 m) and the cornice at 16.60 m follow the photographed order; the survey side opening of 9.28 m left a blank belt. East is the rusticated Ionic front with the REGE CAROLO III tablet; west is the smooth front, columns only beside the central arch.',
+  note: 'Height 23.79 m, width 43.07 m, depth 11.74 m and the door height 6.10 m are Ayuntamiento restoration figures. The model width is 42.3 m so the chamfered outline contains it. Arch crowns (central 13.35 m, sides 12.63 m) and the cornice at 15.70 m follow the photographed order; the survey side opening of 9.28 m left a blank belt. East is the rusticated Ionic front with the REGE CAROLO III tablet; west is the smooth front, columns only beside the central arch.',
 };

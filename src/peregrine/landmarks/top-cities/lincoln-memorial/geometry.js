@@ -14,7 +14,16 @@ export function create({ detail = 'near' } = {}) {
   function box(mat, x0, x1, y0, y1, z0, z1, omit = []) {
     const g = new THREE.BoxGeometry(x1 - x0, y1 - y0, z1 - z0), ix = [...g.index.array];
     g.setIndex(ix.filter((_, i) => !omit.includes(names[Math.floor(i / 6)])));
-    g.translate((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2); put(g, mat);
+    g.translate((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2);
+    if (typeof mat === 'string') put(g, mat);
+    else {
+      const faces = [...g.index.array];
+      for (let face = 0; face < 6; face++) {
+        if (omit.includes(names[face])) continue;
+        const part = g.clone(); part.setIndex(ix.slice(face * 6, face * 6 + 6)); put(part, mat[names[face]] || 'stone');
+      }
+      g.dispose();
+    }
   }
   function rod(mat, a, c, r, segments = near ? 8 : 5) {
     const av = new THREE.Vector3(...a), cv = new THREE.Vector3(...c), d = cv.clone().sub(av);
@@ -47,7 +56,12 @@ export function create({ detail = 'near' } = {}) {
   for (let i = 0; i < 3; i++) {
     const hx = 20.12 - i * 0.68, hz = 30.76 - i * 1.03;
     const y0 = 4.3 + i * (SPEC.platformY - 4.3) / 3, y1 = 4.3 + (i + 1) * (SPEC.platformY - 4.3) / 3;
-    box('stone', -hx, hx, y0, y1, -hz, hz, ['bottom']);
+    box('stone', -hx, hx, y0, y1, -hz, hz, i === 2 ? ['bottom', 'top'] : ['bottom']);
+    if(i === 2){
+      const floorPlan = new THREE.Shape([new THREE.Vector2(-hx,-hz),new THREE.Vector2(hx,-hz),new THREE.Vector2(hx,hz),new THREE.Vector2(-hx,hz)]);
+      floorPlan.holes.push(new THREE.Path([new THREE.Vector2(-12.4,-10.8),new THREE.Vector2(-12.4,10.8),new THREE.Vector2(12.4,10.8),new THREE.Vector2(12.4,-10.8)]));
+      const g=new THREE.ShapeGeometry(floorPlan);g.rotateX(-Math.PI/2);g.translate(0,y1,0);put(g,'stone');
+    }
   }
   function stairs(x0, x1, y0, y1, w, count, mat) {
     for (let i = 0; i < count; i++) {
@@ -71,12 +85,17 @@ export function create({ detail = 'near' } = {}) {
   }
   // Hollow cella and true entrance. No black rectangle covering a solid extrusion.
   const floor = SPEC.platformY;
-  box('stone', -13.65, -12.4, floor, 29.67, -21.6, 21.6, ['bottom', 'top']);
-  box('stone', -12.4, 13.65, floor, 29.67, -21.6, -20.4, ['bottom', 'top', 'west']);
-  box('stone', -12.4, 13.65, floor, 29.67, 20.4, 21.6, ['bottom', 'top', 'west']);
-  for (const s of [-1, 1]) box('stone', 12.4, 13.65, floor, 25.8, s < 0 ? -20.4 : 6.8, s < 0 ? -6.8 : 20.4, ['bottom', 'top']);
-  box('stone', 12.4, 13.65, 25.8, 29.67, -20.4, 20.4, ['bottom', 'top']);
-  box('glow', -12.4, 12.4, 25.7, 25.95, -20.4, 20.4, ['top']);
+  // Recessed chamber floor stays in shadow from elevated driving cameras.
+  box('interior', -12.4, 12.4, floor - .2, floor, -10.8, 10.8, ['bottom']);
+  box({ east: 'interior' }, -13.65, -12.4, floor, 29.67, -21.6, 21.6, ['bottom', 'top']);
+  box({ south: 'interior' }, -12.4, 13.65, floor, 29.67, -21.6, -20.4, ['bottom', 'top', 'west']);
+  box({ north: 'interior' }, -12.4, 13.65, floor, 29.67, 20.4, 21.6, ['bottom', 'top', 'west']);
+  for (const s of [-1, 1]) box({ west: 'interior' }, 12.4, 13.65, floor, 23.4, s < 0 ? -20.4 : 10.8, s < 0 ? -10.8 : 20.4, ['bottom', 'top']);
+  box({ west: 'interior' }, 12.4, 13.65, 23.4, 29.67, -20.4, 20.4, ['bottom', 'top']);
+  // Four-metre recessed portal returns; the central chamber stays truly open.
+  box({ south: 'interior' }, 8.4, 12.4, floor, 23.4, -12.05, -10.8, ['bottom', 'top', 'east']);
+  box({ north: 'interior' }, 8.4, 12.4, floor, 23.4, 10.8, 12.05, ['bottom', 'top', 'east']);
+  box('interior', -12.4, 12.4, 25.7, 25.95, -20.4, 20.4, ['top']);
   // Eight interior shafts; Ionic volutes simplified, separating the three chambers.
   for (const z of [-9.25, 9.25]) for (const x of [-9, -3, 3, 9])
     turned('stone', x, z, [[0.94, floor], [0.94, floor + 0.45], [0.8, floor + 0.55], [0.67, floor + 14.7], [0.91, floor + 15.24], [0, floor + 15.24]], near ? 12 : 6);
@@ -154,18 +173,20 @@ export function create({ detail = 'near' } = {}) {
   }
   // Stylised seated Lincoln (5.79m sculpture), chair and 3.048m pedestal.
   box('granite', -9.8, -4.6, floor, floor + 3.048, -2.44, 2.44, ['bottom', 'top']);
-  box('trim', -10.0, -4.4, floor + 3.048, floor + 3.53, -2.65, 2.65, ['bottom']);
-  box('stone', -9.5, -8.85, floor + 3.53, floor + 8.35, -2.5, 2.5, ['bottom']);
+  box('glow', -10.0, -4.4, floor + 3.048, floor + 3.53, -2.65, 2.65, ['bottom']);
+  box('glow', -9.5, -8.85, floor + 3.53, floor + 8.35, -2.5, 2.5, ['bottom']);
   for (const s of [-1, 1]) {
-    box('stone', -9.0, -5.6, floor + 3.53, floor + 6.8, s * 2.1 - 0.35, s * 2.1 + 0.35, ['bottom']);
-    rod('trim', [-7.5, floor + 6.0, s * 1.2], [-5.8, floor + 5.35, s * 1.0], 0.63);
-    rod('trim', [-5.8, floor + 5.35, s * 1.0], [-5.1, floor + 3.7, s * 0.9], 0.46);
-    rod('trim', [-7.9, floor + 7.4, s * 1.1], [-6.4, floor + 6.85, s * 2.0], 0.28);
-    box('trim', -5.6, -4.75, floor + 3.53, floor + 3.9, s * 0.9 - 0.4, s * 0.9 + 0.4, ['bottom']);
+    box('glow', -9.0, -5.6, floor + 3.53, floor + 6.8, s * 2.1 - 0.35, s * 2.1 + 0.35, ['bottom']);
+    rod('glow', [-7.5, floor + 6.0, s * 1.2], [-5.8, floor + 5.35, s * 1.0], 0.63);
+    rod('glow', [-5.8, floor + 5.35, s * 1.0], [-5.1, floor + 3.7, s * 0.9], 0.46);
+    rod('glow', [-7.9, floor + 7.4, s * 1.1], [-6.4, floor + 6.85, s * 2.0], 0.28);
+    box('glow', -5.6, -4.75, floor + 3.53, floor + 3.9, s * 0.9 - 0.4, s * 0.9 + 0.4, ['bottom']);
   }
-  const torso = new THREE.SphereGeometry(1, near ? 12 : 6, near ? 8 : 4); torso.scale(0.82, 1.65, 1.45); torso.translate(-7.9, floor + 6.62, 0); put(torso, 'trim');
-  const head = new THREE.SphereGeometry(1, near ? 12 : 6, near ? 8 : 4); head.scale(0.48, 0.65, 0.52); head.translate(-7.8, floor + 8.65, 0); put(head, 'trim');
-  box('trim', -7.48, -7.23, floor + 8.48, floor + 8.9, -0.23, 0.23);
-  if (near) box('stone', -7.55, -7.25, floor + 8.05, floor + 8.44, -0.28, 0.28);
+  const torso = new THREE.SphereGeometry(1, near ? 12 : 6, near ? 8 : 4); torso.scale(0.82, 1.65, 1.45); torso.translate(-7.9, floor + 6.62, 0); put(torso, 'glow');
+  const head = new THREE.SphereGeometry(1, near ? 12 : 6, near ? 8 : 4); head.scale(0.48, 0.65, 0.52); head.translate(-7.8, floor + 8.65, 0); put(head, 'glow');
+  box('glow', -7.48, -7.23, floor + 8.48, floor + 8.9, -0.23, 0.23);
+  if (near) box('glow', -7.55, -7.25, floor + 8.05, floor + 8.44, -0.28, 0.28);
+  // Grounded thin paved apron replaces the provider's generic forecourt block.
+  box('granite', 35.9, 79.7, 0, .10, -20.8, 20.8, ['bottom']);
   return b.finish();
 }

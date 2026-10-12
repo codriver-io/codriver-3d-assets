@@ -50,11 +50,11 @@ Sources:
 
 ## Materials
 
-Six names, in both palettes: `stone` (pale grey ashlar limestone, `#b9b2a1`; also the cross, lantern columns, pilasters, statue plinths, plinth and cornice bands), `rubble` (darker grey fieldstone for the crossing, the transept ends and the rear block, `#8f8d84`), `copper` (the green-patinated dome, roofs and spires, `#5d8376` by day: the first pass `#669a88` read bright mint against the duller, darker verdigris of the photographs, so value and saturation are about 15 % lower; the night `#6aa196` is the floodlit lift and is unchanged), `bronze` (the statues and the darker copper-lined cornices, `#4a7a68`), `glass` (doors, oculi and portal openings, `#363f46`) and `glow` (windows: dark glass by day, `#4b5a64`, warm lit at night, `#e3bd78`, drawn unshaded). The cathedral is floodlit at night, so the night stone is only dimmed (`#85878d`) and the copper lifted (`#6aa196`); the lit windows carry the night read at 800 m. Far uses the same six names (6 draws).
+Six names, in both palettes: `stone` (pale grey ashlar limestone, `#b9b2a1`; also the cross, lantern columns, pilasters, statue plinths, plinth and cornice bands), `rubble` (darker grey fieldstone for the crossing, the transept ends and the rear block, `#8f8d84`), `copper` (the green-patinated dome, roofs and spires, `#5d8376` by day: the first pass `#669a88` read bright mint against the duller, darker verdigris of the photographs, so value and saturation are about 15 % lower; the night `#6aa196` is the floodlit lift and is unchanged), `bronze` (the statues, subdued dome oculi and the darker copper-lined cornices, `#4a7a68`), `glass` (doors and portal openings, `#363f46`) and `glow` (windows: dark glass by day, `#4b5a64`, warm lit at night, `#e3bd78`, drawn unshaded). The cathedral is floodlit at night, so the night stone is only dimmed (`#85878d`) and the copper lifted (`#6aa196`); the lit windows carry the night read at 800 m. Far uses the same six names (6 draws).
 
 ## Modelling decisions
 
-* **The dome is the far-LOD hero**: a lathe (32 segments near, 16 far) on a sixteen-bay drum, sixteen triangular-section ribs, two rows of sixteen oculi (near), an open-columned lantern around a lit core, a copper spire, a ball and a cross. The far model keeps the same silhouette, ribs (8) and lantern.
+* **The dome is the far-LOD hero**: a lathe (32 segments near, 16 far) on a sixteen-bay drum, sixteen triangular-section ribs, two rows of sixteen oculi (near), an open-columned lantern around a lit core, a copper spire, a ball and a cross. The far model keeps the same silhouette, ribs (16) and lantern.
 * **The plan is the mapped outline**: the nave and crossing are polygon extrusions of the OSM outline, split by material (ashlar nave, fieldstone crossing), with the façade block, stair bump, transept ends, rear block, low blocks and annex at their mapped positions. The façade block's corner chamfers, the notches of the left rear corner and the stair ends follow the outline, so the walls and stair stay within 0.9 m of it everywhere and its interior is covered (`marie-reine-du-monde.test.js`).
 * **Facades are rhythms**: free columns (12 sides near, 6 far) in front of a wall with three doors and a window row, a continuous entablature with a copper-lined cornice that wraps the block's end walls, pilasters with capitals and arched windows with hoods on the long walls (near), plain pilasters omitted and windows kept as small quads in far. Pieces are stacked or offset so no two exterior walls share a plane; windows are single quads offset 0.15 m from their walls (large surfaces).
 * **Roofs are solids with explicit triangles** (flat-shaded): nave gable on its aisle lean-tos, transept gables with a three-faced hip over the polygonal end, the hipped choir arm, truncated hips over the corner blocks, and over the rear block a gable along the straight run that continues as a half-cone over the apse (same slope, same ridge height), all sitting flush on the wall tops so no underside shows.
@@ -74,14 +74,14 @@ Flat site: downtown Montréal on the Dorchester Square terrace, no cliff or rive
 * The rear block is a half-round apse inscribed in the mapped 31.2 m x 26 m rectangle (a flat-topped box before the QA pass), under a half-cone roof; the real chevet's curve, buttresses and roof slope are estimated. Roofs of the corner blocks, the choir and the transept ends are simplified hips.
 * Sculpture and relief are abstracted: Corinthian capitals are a flared bell with an abacus, the cross is a plain bar cross, the frieze lettering, aedicules, balustrades, lamp posts and the Monument à Mgr Bourget are absent; the portico ceiling is flat.
 * Pilasters, cornices and window hoods project up to about 0.9 m beyond the mapped wall line (the façade cornice slab and the pilaster capitals on the rear block are the worst).
-* The model is a visual approximation, not a survey. Cityscape and Full 3D world in the running app: not tested yet, integration is checked separately.
+* The model is a visual approximation, not a survey. Cityscape and Full 3D world: verified for daylight visible geometry and contacts in the app; lifecycle and hardware performance remain not tested.
 
 ## Cost (exported default scenes)
 
 | LOD | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 8,640 | 6 | 395,528 |
-| Far | 3,440 | 6 | 158,768 |
+| Near | 8,640 | 6 | 395,520 |
+| Far | 3,600 | 6 | 163,188 |
 
 Budgets are 60,000 / 14 / 2.5 MB and 12,000 / 8 / 500 KB (aim 15 to 40 k near and 2 to 8 k far; the near model is under the near aim because the repeated order, statues and windows are small merged parts). Far is about 37% of near by triangles. `qa-metrics.mjs`: no coplanar overlaps of different materials, no back-face hits in its sweep; a denser own sweep (12,000 outside-in rays from the upper hemisphere) found 1 back-face hit in 5,692 (0.02%) on a dome rib flank. Triangle counts describe the export, not Tesla performance.
 
@@ -99,3 +99,11 @@ Changes made because of what the renders and photographs showed:
 * The first top plan and a vertex check against the outline showed the façade corners, the stair ends, the front hip roofs and the left rear corner overshooting the mapped outline by up to 2 m: the façade pieces now follow its 45-degree corner cuts, the stair flights stop at the cut, the hips follow the mapped steps and the left rear notch is in the plan.
 * `qa-metrics` and a mesh check found zero-area triangles at the statue tops and a cap sliver in the stair (NaN normals warnings in the exporter); they are pruned. Portico and cornice undersides now have bottom faces (they were open from below), and the rear hip roof sits flush on its walls.
 * QA pass (independent review): the rear 10 m block read as a flat-topped beige box on the green roofs, so it became a half-round apse under a half-cone copper roof; the thirteen statues read as forked fins and are now one tapered robe and a head each (fewer triangles); the copper lost about 15 % value and saturation (`#669a88` to `#5d8376`). The 0.9 m cornice overshoot at the facade corners was accepted (real cornices project).
+
+## Quality correction — 2026-10-11
+
+Reduced the dome oculi from dark 0.62/0.50 m discs to subdued bronze-green 0.38/0.30 m discs; retained sixteen continuous copper ribs in both LODs. The cathedral replacement ring is unchanged: overhead view and provider geometry show the adjacent office is separate from the church.
+
+The supplied batch-5 contact-sheet reference photograph and existing attributed references were used; no dossier folder was available for this correction. No new external meshes or textures were retained. Cityscape: verified. Full 3D world: verified. These labels cover the daylight near/far and street captures that were inspected, not hardware performance, night driving or DEM lifecycle tests.
+
+Clear app cameras use target `[-73.5686, 45.4993]`, zoom 18.0, pitch 60, bearings 53.5 (side/nave) and 83.5 (front oblique). Both modes retain the neighboring office. Default camera evidence is kept alongside corrected views, so the obstruction is not concealed by the report.

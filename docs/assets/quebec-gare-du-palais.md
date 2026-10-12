@@ -31,24 +31,24 @@ only to compare) fixed the facade, the roofs and the wings. The public Terrarium
 | Storeys | main block 4 levels, wings 2 levels | **mapped** (`building:levels`); read as eaves and roofs below |
 | Central hall width | 14.8 m outside, 13.7 m inside | **mapped** pavilion; the published ticket lobby is 45 ft (13.7 m) wide, 65 ft (19.8 m) deep, 60 ft (18.3 m) clear to its skylight |
 | Concourse | the west wing, 18.8 m wide | **estimated**: the published concourse is 125 x 62 ft (38.1 x 18.9 m), 40 ft (12.2 m) high; the width matches the mapped wing, the vault height is not modelled |
-| Hall roof | eave 11.8 m, mansard break 15.6 m, flat top at 19.4 m, finial 20.4 m (total height) | **estimated** from the photographs, consistent with the 18.3 m clear height of the ticket lobby below |
+| Hall roof | eave 14.3 m, mansard break 17.0 m, flat top at 19.4 m, finial 20.4 m (total height) | **estimated** from the photographs, consistent with the 18.3 m clear height of the ticket lobby below |
 | Side parts either side of the pavilion | eave 6.7 m, mansard to a flat top at 12.4 m, 44 m overall | **estimated** (photograph: eave 6.7 m) |
 | West and north wings | eave 3.6 m, mansard break 7.5 m, ridge 10.8 m | **estimated** from a side photograph (low wall, roof about twice its height) |
-| Glass wall | seven panes 0.82 x 3.7 m under seven round-arched transoms, stone frame 7.8 x 6.1 m, 1.02 m bay pitch | seven windows **sourced** (Parks Canada) and counted on the photograph; sizes **estimated**. The 40 ft window quoted historically does not fit the mapped 14.8 m pavilion and is not modelled |
-| Turrets | 3.0 m round brick tower, 12-sided, continuous from the ground to 10.7 m (stone base course to 0.7 m), stone belt and drum to 12.9 m, cone 13.2 to 17.4 m, finial 18.4 m | **estimated** (photograph); plan position inside the mapped front |
-| Clock | stone gable 3.4 m wide, dial 2.4 m with rim, apex 16.1 m | dial diameter **sourced** (eight feet); position estimated |
+| Glass wall | seven panes 1.08 x 6.5 m under seven round-arched transoms to 13.09 m, frame 10.3 x 8.95 m, 1.32 m bay pitch | seven windows **sourced** (Parks Canada) and counted on the photograph; sizes **estimated**. The 40 ft window quoted historically does not fit the mapped 14.8 m pavilion and is not modelled |
+| Turrets | 3.0 m round brick tower, 12-sided, continuous from the ground to 12.9 m (stone base course to 0.7 m), stone belt and drum to 14.9 m, cone 15.2 to 19.2 m, finial 20.15 m | **estimated** (photograph); plan position inside the mapped front |
+| Clock | stone gable 3.4 m wide, dial 2.4 m with rim, apex 18.5 m | dial diameter **sourced** (eight feet); position estimated |
 | Canopy | 10 x 2.2 m copper wedge, 3.4 to 4.6 m high, five glazed doors | photograph estimate; it stands 0.4 m past the mapped front |
-| Dormers | wall dormers 3.0 m wide (stone fronts, arched windows), wing dormers 2.3 m, small copper dormers and hall vents; up to 5 per long wing side | photograph estimate |
+| Dormers | wall dormers 3.0 m wide (stone fronts, arched windows), wing dormers 2.3 m, small copper dormers; up to 5 per long wing side | photograph estimate |
 | Chimneys | 8 brick stacks 1.0 x 0.9 m with stone caps, 2.2 m above the ridges | photograph estimate |
 | Windows | arched ground-floor windows, 1.3 x 2.1 m on a 3.75 m (wings) or 2.9 m (parts) pitch; paired upper windows | photograph estimate |
 | Roof cresting | 0.1 m wide metal strips, 0.07 m proud, on hips, breaks and tops (were 0.2 m and 0.14 m proud, which read as heavy dark lines) | estimate (the real roofs have ridge cresting; the exact pattern is not known) |
 
 ## Materials (light / dark)
 
-`brick` (buff-brown Citadel brick), `stone` (grey limestone and granite trim, dormer fronts, turret drums, mullions), `copper` (verdigris roofs, cones,
+`brick` (muted red-brown brick), `stone` (grey limestone and granite trim, dormer fronts, turret drums, mullion backing), `mullion` (stone-coloured projecting glazing bars), `copper` (verdigris roofs, cones,
 canopy, dormer cheeks), `glass` (windows), `glow` (the whole glass wall, the entrance doors and a third of the other windows: the same colour as `glass`
-by day, warm lit yellow at night; drawn unshaded), `metal` (cresting, finials, canopy posts, clock hands and rim), `sign` (the clock dial and the canopy
-fascia strip: pale by day, lit at night; drawn unshaded). Seven materials, so seven draw calls near and far.
+by day, warm lit yellow at night; drawn unshaded), `metal` (cresting, finials, canopy posts, clock hands), `sign` (the clock dial and the canopy
+fascia strip: pale by day, lit at night; drawn unshaded). Eight materials and eight draw calls in each LOD, including the stone-coloured mullion material.
 
 ## Modelling decisions
 
@@ -61,10 +61,10 @@ fascia strip: pale by day, lit at night; drawn unshaded). Seven materials, so se
 * **Decision on the neighbours.** The 6-storey government office (way 103861185, 38 m east of the north wing) and the one-storey service building (way
   163393183, 12 m west of the west wing) are separate buildings: the photographs show each as free-standing (the office, a pinkish-brown hipped block, stands
   behind the main block in the west-wing photograph). Their rings are not in `FOOTPRINTS`. The Édifice Jean-Lesage, 130 m north, is also separate.
-* **Detail is quads, merged.** Windows are a stone frame, a glass pane proud of the wall (0.06 and 0.11 m), a mullion and a sill; quoins alternate 0.75 and
+* **Detail is quads, merged.** Windows are a stone frame, a glass pane proud of the wall (0.15 and 0.30 m), a mullion and a sill; quoins alternate 0.75 and
   0.45 m; arches are one fan each; dormers are about 13 triangles; the turrets are continuous 12-sided brick towers from the ground, with slit windows and a corbel table under the drum; the roofs get 0.1 m cresting.
-* **Far LOD** keeps every block, roof, the turrets and cones, the clock gable, the dormers and chimneys, the glass wall (seven panes, no mullions) and the
-  canopy, and replaces windows with dark slots in 7.5 m cells (a quarter lit at night). Cresting, quoins, sills, frames, arcature arches, slits and vents go.
+* **Far LOD** keeps every block, roof, the turrets and cones, the clock gable, the dormers and chimneys, the glass wall (seven panes and six mullions) and the
+  canopy, and keeps one pane per window bay (a quarter lit at night). Cresting, quoins, sills, frames and slits go; arcature arches stay.
 * **Night.** The seven-bay glass wall, the doors and the clock glow, a third of the other windows are lit (fixed pattern); the real station is floodlit,
   which is not modelled.
 
@@ -75,7 +75,7 @@ forecourt, a 1.5 m rise south across the block) and 4.9 to 5.0 m about 50 m to t
 60 m around the centroid) takes the lowest sample under it (4.9 m) and would cut the forecourt, 2 m higher, into a pit in front of the doors. `spec.terrainPad`
 is therefore the station outline (way 33893247) held at the median DEM of its own outline (about 6.1 m, local y = 0) with a 6 m feather: the model stands
 within about 1 m of the real ground everywhere and the plaza keeps its level. Expect: the forecourt side 1 m above the datum in the DEM is cut down to the
-pad inside the outline and blends back within 6 m; the north end, about 0.5 m below the datum, stands on a small fill. Cityscape ignores the pad. Not tested in the app.
+pad inside the outline and blends back within 6 m; the north end, about 0.5 m below the datum, stands on a small fill. Cityscape ignores the pad. Daylight placement and contacts are verified in the app; terrain datum values are not remeasured numerically.
 
 ## Approximations and limits
 
@@ -89,14 +89,14 @@ pad inside the outline and blends back within 6 m; the north end, about 0.5 m be
   forecourt, the platforms, the engine-room building mentioned by Parks Canada (not found in the mapped outline) and every ornament.
 * The model stays inside the mapped outline: the canopy, which stands 0.4 m beyond the mapped front, and cornices and sills up to 0.3 m are the only parts
   beyond it; about 0.5 m of the north end of the north wing is outside where the mapped north edge is 1.4 deg off the grid.
-* Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately.
+* Cityscape: verified in daylight far/near/street app captures. Full 3D world: verified in daylight far/near/street app captures. Verification covers visible geometry, placement and contacts; hardware, night driving and terrain lifecycle remain not tested.
 
 ## Costs (exported GLBs)
 
 | | Triangles | Draw calls | Bytes |
 | --- | --- | --- | --- |
-| Near | 5,543 | 7 | 264,148 |
-| Far | 1,014 | 7 | 58,984 |
+| Near | 5,673 | 8 | 270,920 |
+| Far | 1,209 | 8 | 69,388 |
 
 Budgets (building): near 60,000 / 14 / 2.5 MB, far 12,000 / 8 / 500 KB. Costs describe scene meshes and uncompressed bytes, not measured Tesla
 performance. Bounds: x -56.4 to 30.2, y 0 to 20.4, z -53.1 to 28.4 m around the origin (-71.2139626, 46.81756).
@@ -131,3 +131,9 @@ mansards; the end walls of the side parts got the pedimented dormers of the west
 
 Rebuild: `pnpm build:quebec-landmarks gare-du-palais`. Tests:
 `node --test src/peregrine/landmarks/quebec/quebec.test.js src/peregrine/landmarks/quebec/gare-du-palais/gare-du-palais.test.js`.
+
+## Quality correction — 2026-10-11
+
+Raised and widened the seven-pane great hall to an 8.65 m glazed field under taller transoms; moved the arcature, clock gable and turret shoulders together, retained the 20.4 m overall height, and changed the ochre/chalk palette to muted red-brown brick and cool grey limestone. Far retains every exterior window bay and the seven entrance panes. Separate mullion material and larger depth separation remove cyclic layers.
+
+The supplied batch-5 contact-sheet reference photograph and existing attributed references were used; no dossier folder was available for this correction. No new external meshes or textures were retained. Cityscape: verified. Full 3D world: verified. These labels cover the daylight near/far and street captures that were inspected, not hardware performance, night driving or DEM lifecycle tests.

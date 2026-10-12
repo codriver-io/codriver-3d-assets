@@ -39,9 +39,9 @@ export const SPEC = {
 
 export const PALETTES = {
   light: {
-    concrete: '#d2c4ae',
-    concrete_dark: '#b5a790',
-    glass: '#1c5c8c',
+    concrete: '#cecbc3',
+    concrete_dark: '#c1beb6',
+    glass: '#46545e',
     metal: '#c5ccd3',
     // Light housings are unshaded: aluminium by day, the night light-show bands after dark.
     glow: '#d8dce0',
@@ -50,7 +50,7 @@ export const PALETTES = {
   },
   dark: {
     concrete: '#8d8476',
-    concrete_dark: '#6f685c',
+    concrete_dark: '#847c70',
     glass: '#071018',
     metal: '#7a838c',
     glow: '#ff4d6a',

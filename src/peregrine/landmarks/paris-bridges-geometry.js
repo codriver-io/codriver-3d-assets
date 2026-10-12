@@ -26,10 +26,13 @@ export const PARIS_BRIDGES = [
     centerline: [[2.2911862, 48.8602128], [2.2924859, 48.8593666], [2.2926935, 48.8592248]], width: 35, deck: 7.5,
     roadEdges: [], railGap: 0, arches: [4, 1], style: 'iena', structuralLength: 155, pedestrian: true,
     profile: flat },
-  { id: 'paris-pont-concorde', name: 'Pont de la Concorde', modelDir: 'bridges', terrainPolicy: 'bank-fit', origin: origin(2.31960, 48.86338),
-    centerline: [[2.3191283, 48.8627480], [2.3196122, 48.8634034], [2.3200548, 48.8640023]], width: 34, deck: 7.2,
+  { id: 'paris-pont-concorde', name: 'Pont de la Concorde', modelDir: 'bridges', terrainPolicy: 'bank-fit', lateralBankFit: { blendM: 18 }, origin: origin(2.31960, 48.86338),
+    // Stop at the mapped quay junctions: the transitions belong inside the crossing.
+    centerline: [[2.3191283, 48.8627480], [2.3200548, 48.8640023]], width: 34, deck: 5.4,
     roadEdges: [[-8.5, 8.5]], railGap: 0, arches: [2, 3], style: 'concorde', structuralLength: 153,
-    profile: flat },
+    // 54 m transitions meet road grade before the quays; the bank-only alignment also
+    // interpolates terrain across the river rather than sampling a depressed river pixel.
+    profile: ({length,deck}) => [[0,'start'],[54,deck],[length/2,deck+.15],[length-54,deck],[length,'end']] },
 ];
 
 export const PARIS_BRIDGE_PALETTES = {
@@ -69,7 +72,8 @@ export function parisBridgeSpans(spec, frame=metricFrame(spec)) {
     const island=frame.nodes[1].s;add(0,island-9,[30,54,30]);add(island+9,frame.length,[24,42,24]);
   }else if(spec.style==='neuf'){
     add(frame.nodes[0].s,frame.nodes[1].s,[1,1,1,1,1]);add(frame.nodes[2].s,frame.nodes[3].s,[1,1,1,1,1,1,1]);
-  }else if(spec.style==='iena'||spec.style==='concorde')add(0,frame.length,[1,1,1,1,1]);
+  }else if(spec.style==='concorde')add(0,frame.length,[1,1,1,1,1]);
+  else if(spec.style==='iena')add(0,frame.length,[1,1,1,1,1]);
   return out;
 }
 
@@ -333,7 +337,8 @@ export function createParisBridge(specOrId, { detail = 'near' } = {}) {
     }
     // Abutments under the approaches, with no opaque wall across the channel. Their top stays below
     // the deck underside (the ramp starts at y=0), so no stone shows on the roadway at either end.
-    for(const s of [1.8,f.length-1.8])box('stone',s,0,-.575,3.6,spec.width,.85,clamp01);
+    // Concorde ends at road/ground grade; buried end boxes intersect its shallow deck.
+    if(spec.style!=='concorde')for(const s of [1.8,f.length-1.8])box('stone',s,0,-.575,3.6,spec.width,.85,clamp01);
     if(spec.style==='neuf'){
       // Île de la Cité: the roadway crosses the island on earth fill held by dressed-stone retaining
       // walls, so the deck is grounded between the two piers instead of hovering as a bare slab.

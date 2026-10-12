@@ -16,43 +16,43 @@
     "y": "up",
     "z": "south"
   },
-  "elevationDatum": "Local flat-map grade y=0; estimated road crest 25.2 m and 23 m central soffit clearance. No DEM/sea-level datum or latitude stretch baked in. Absolute-deck policy adapts approaches and support feet.",
+  "elevationDatum": "Local flat-map grade y=0; estimated road crest 25.2 m and 23 m central soffit clearance. No DEM/sea-level datum or latitude stretch baked in. Absolute-deck policy adapts approaches and support feet; opt-in actual-vertex terrain clamp targets 12 cm pavement clearance. Approach pavement uses a 1 m longitudinal / 0.45 m maximum lateral grid in both LODs; source heights use the same projected station as fitting/navigation.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Published length 260 m, three concrete cantilever spans, maximum sailing clearance about 23 m. Main span 130 m from dossier. OSM structure 264.26 m retained without rescaling. Width 7.4 m from OSM envelope; piers at midpoint ±65 m, haunch depths, 13 m abutment heights, guardrails and engineered rock-fill slopes are photographic estimates. Flat-map ramps 180 m each; central hump peak grade 13.85%. No textures or scans.",
+  "note": "Published length 260 m, three concrete cantilever spans, maximum sailing clearance about 23 m. Main span 130 m from dossier. OSM structure 264.26 m retained without rescaling. Width 7.4 m from OSM envelope; piers at midpoint ±65 m, haunch depths, 13 m abutment heights, guardrails and engineered rock-fill slopes are photographic estimates. Flat-map ramps 180 m each; clamped cubic vertical curve; approach peak grade 12.57%, central hump peak grade 12.94%. No textures or scans.",
   "assets": {
     "near": {
       "url": "/models/bridges/storseisundet-bridge-near.glb",
-      "bytes": 3072856,
-      "triangles": 47668,
-      "drawCalls": 8,
+      "bytes": 2628848,
+      "triangles": 52422,
+      "drawCalls": 7,
       "bounds": {
         "min": [
-          -298.3329162597656,
-          -0.2023819386959076,
-          -125.89640045166016
+          -298.3509216308594,
+          -5.9604645663569045e-9,
+          -125.37627410888672
         ],
         "max": [
-          296.46856689453125,
+          296.49664306640625,
           26.350000381469727,
-          42.92982864379883
+          40.85812759399414
         ]
       }
     },
     "far": {
       "url": "/models/bridges/storseisundet-bridge-far.glb",
-      "bytes": 751836,
-      "triangles": 13212,
-      "drawCalls": 6,
+      "bytes": 1000372,
+      "triangles": 25386,
+      "drawCalls": 7,
       "bounds": {
         "min": [
-          -298.3329162597656,
+          -298.3509216308594,
           -5.9604645663569045e-9,
-          -125.89640045166016
+          -125.37627410888672
         ],
         "max": [
-          296.46856689453125,
+          296.49664306640625,
           26.350000381469727,
-          42.92982864379883
+          40.85812759399414
         ]
       }
     }

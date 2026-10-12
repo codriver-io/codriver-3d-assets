@@ -4,7 +4,7 @@ Stable asset ID: `suncor-energy-centre`. An original procedural model of the **S
 
 ## Identity and what a driver sees
 
-Two red-granite and dark-glass office towers, nicknamed "Red Square" in the 1980s. Each is a grid-aligned rectangle whose north-east and south-west corners are cut off by long diagonal faces (bearings 48 and 228 degrees, 39 m apart on the west tower, 37 m on the east), with 6 m stepped notches at the other two corners. Each tower is capped by a single dark roof plane that falls toward the south-west, so the wall tops are sharp, slanted lines: the north-east face runs to the full height, the south-west face stops 15 m lower, and the window rows step down the slope. At 100 m the towers read as a lattice of wide dark windows between red-brown granite spandrels and piers; at 800 m as two slabs with a few dark ribbon strips and slanted crowns, the tall one west of the short one. By night about a fifth of the office windows glow.
+Two red-granite and dark-glass office towers, nicknamed "Red Square" in the 1980s. Each is a grid-aligned rectangle whose north-east and south-west corners are cut off by long diagonal faces (bearings 48 and 228 degrees, 39 m apart on the west tower, 37 m on the east), with 6 m stepped notches at the other two corners. Each tower is capped by a single dark roof plane that falls toward the south-west, so the wall tops are sharp, slanted lines: the north-east face runs to the full height, the south-west face stops 15 m lower, and the window rows step down the slope. At 100 m the towers read as a lattice of wide dark windows between red-brown granite spandrels and piers; at 800 m as two slabs with floor-scale dark window bands and slanted crowns, the tall one west of the short one. By night about a fifth of the office windows glow.
 
 Modelled as built in 1984. The 2025 to 2027 lobby, fitness-centre and amphitheatre redevelopment is not.
 
@@ -54,11 +54,11 @@ The runtime layer shades each vertex from its normal (0.66 to 1.0 of the palette
 
 ## Modelling decisions
 
-- **Real windows, no hidden faces.** Each wall is built in `suncor-energy-centre-facade.js` as granite spandrel strips and corner piers on the mapped line, with one dark glass quad 15 cm behind on the outline inset by 15 cm, and piers between neighbouring windows as one continuous 15 cm proud fin per bay boundary. A window opening exists where its head clears the roof line by 0.5 m, so the top rows end in a stair along the slope and the granite above them follows the slanted edge exactly. Lit windows are warm quads 7 cm in front of the glass. Reveals, sills and heads are sub-pixel at driving range and are not drawn.
+- **Real windows, no hidden faces.** Each wall is built in `suncor-energy-centre-facade.js` as granite spandrel strips and corner piers on the mapped line, with one dark glass quad 15 cm behind on the outline inset by 15 cm, and piers between neighbouring windows as one continuous 15 cm proud fin per bay boundary. A window opening exists where its head clears the roof line by 0.5 m, so the top rows end in a stair along the slope and the granite above them follows the slanted edge exactly. Lit windows are warm quads 15 cm in front of the glass. Reveals, sills and heads are sub-pixel at driving range and are not drawn.
 - **Sloping crown.** Each tower's roof is a single plane through its outline whose highest point is the sourced height; walls are cut by the same plane, so roof and wall tops share edges (watertight). The stepped notches show as small steps in the crown.
 - **Sealed corners.** Every wall carries its glass quad even where granite hides it (short jog edges, and the foot of a tower wall hidden by the low block runs to grade), so a window beside a corner never opens onto a neighbour with no glass behind it: a grazing ray used to slip past a corner pier at the east tower's south-west corner.
 - **Low block.** The block mapped between the towers is a three-storey volume in the same granite and glass; its wing is a single storey. Tower walls abutting the block start at its roof line.
-- **Far LOD.** Same plan, notches, roof planes and silhouette; the floors become ribbon strips (one per about 8 floors: six on the west tower, four on the east, one on the block; three per tower read as a different building), with the glass share of near (sill at 20 % and head at 72 % of each slot), a lobby strip, 12 m bays only so a strip can stop where the roof falls, no piers between bays and a sparse lit share. 0.76 k triangles, 4 draws (it was 2.0 k with every window opening).
+- **Far LOD.** Same plan, notches, roof planes and every office-floor opening; vertical mullions are simplified to 12 m bays. The dark-glass/granite cadence keeps the near floor pitch, with a sparse lit share.
 
 ## Approximations and gaps
 
@@ -78,10 +78,10 @@ node scripts/asset-catalog.mjs
 
 | Export | Bytes | Triangles | Draws |
 | --- | ---: | ---: | ---: |
-| `public/models/buildings/suncor-energy-centre-near.glb` | 259 060 | 4 797 | 4 |
-| `public/models/buildings/suncor-energy-centre-far.glb` | 41 460 | 759 | 4 |
+| `public/models/buildings/suncor-energy-centre-near.glb` | 259,056 | 4,797 | 4 |
+| `public/models/buildings/suncor-energy-centre-far.glb` | 159,020 | 2,941 | 4 |
 
-Far is 16 % of near; both are far inside the building budgets (60 000 / 14 / 2.5 MB near, 12 000 / 8 / 500 KB far). No Tesla timing was measured.
+Far is approximately 61 % of near; both are far inside the building budgets (60 000 / 14 / 2.5 MB near, 12 000 / 8 / 500 KB far). No Tesla timing was measured.
 
 `suncor-energy-centre.test.js` pins: roof peaks of 215 m and 130 m, nothing below grade; each roof a single plane falling 22 degrees toward the south-west across the tower; the walls facing bearings 48 and 228 and the 39 m spacing; the 6 m notches at the north-west and south-east corners; granite spandrels and piers, glass 15 cm behind the granite on a window row, lit windows; the top windows of the south-west face about 16 m lower than the north-east face; the 11.5 m block and 6 m wing; 1 056 rays from outside that must all hit a front face (no holes or inverted walls); every vertex within 0.6 m of the mapped footprints; far bounds within 1.5 m of near.
 
@@ -90,7 +90,7 @@ Screenshots looked at (`shot.mjs`, output in the ignored `tmp/calgary/shots/sunc
 - First sheet (overview, facade, roof, north, diagonal, east, street, west; procedural, near, light). Changed because of it: windows read as tiny dark rectangles (glass 25 cm back hid most of a window when looking up from the street), so the recess dropped to 15 cm and the window grew from 1.65 to 2.05 m; piers narrowed from 0.55 to 0.32 m; granite and roof colours darkened.
 - Side-by-side with "View From Calgary Tower, 1991" (Calgary Tower deck, 160 m up): the first roof plane fell toward the south, which showed a broad flat octagon; the photograph shows a thin sliver on the left of each crown with the right wall rising above it, so the direction became 228 degrees (perpendicular to the diagonal faces). The west crown then matched the photograph's slanted top and rising right-hand wall.
 - Close views: stepped notch at mid-height (`notch`), foot with the low block and lobby glass (`base`, `street`), crown with windows stepping down the slope (`crown`, `roof`). Changed because of them: corner glass sealing (a ray test found a grazing slit at a corner next to a hidden tower foot).
-- Exported GLBs, near and far, light and dark (`overview`, `northeast`, `east`, `roof`; four rows of one sheet): identical to the procedural source in outline, colour and lit-window share; far reads as the same two slabs with a few dark ribbon strips instead of window rows.
+- Exported GLBs, near and far, light and dark (`overview`, `northeast`, `east`, `roof`; four rows of one sheet): identical to the procedural source in outline, colour and lit-window share; far reads as the same two slabs with floor-scale dark window bands instead of window rows.
 - Not compared: a true front elevation (no photograph square onto a face) and a roof-level photograph (none found), so the roof and facade detail rests on oblique views.
 
 ## Placement modes
@@ -98,3 +98,11 @@ Screenshots looked at (`shot.mjs`, output in the ignored `tmp/calgary/shots/sunc
 - Cityscape: **not tested yet, integration is checked separately.**
 - Full 3D world (terrain): **not tested yet, integration is checked separately.** Downtown Calgary is nearly flat here (the Bow River is about 600 m to the north, the Elbow about 1.5 km south-east), so the default terrain pad with `padM = 75` is expected to be enough; no `terrainPad` is declared. This is an expectation, not a measurement.
 - Failed load, LOD switch and reanchoring are handled by the shared building layer and covered by its own tests, not re-tested here.
+
+## QA revision 2026-10-11
+
+Every office storey retains its granite spandrel and dark glass opening in far; vertical mullions simplify to 12 m bays. Granite is muted warm brown rather than brick red. Lit panes stand 15 cm ahead of the recessed glass.
+
+Reference basis: the supplied review and reference photograph in its contact sheet, plus the existing authoring notes. No new city dossier exists for these first-run Calgary/Toronto assets; the sculptural approximation uses the existing documented plan and general architectural knowledge.
+
+Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed.

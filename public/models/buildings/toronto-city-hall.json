@@ -44,8 +44,8 @@
     },
     "far": {
       "url": "/models/buildings/toronto-city-hall-far.glb",
-      "bytes": 426748,
-      "triangles": 6806,
+      "bytes": 365924,
+      "triangles": 8210,
       "drawCalls": 8,
       "bounds": {
         "min": [

@@ -14,10 +14,10 @@ export const SPEC = {
 };
 
 // The sunlit colour of each material; the runtime layer shades every face from its normal (0.66 to 1.0 of it).
-// Granite is the brick-maroon of the photographs under a blue sky, windows blue-black glass. `glow` is the
+// Granite is the muted brown of the photographs under a blue sky, windows blue-black glass. `glow` is the
 // share of windows lit at night: a dim glass colour by day, warm office light after dark.
 export const PALETTES = {
-  light: { granite: '#7f4a40', glass: '#2b3440', glow: '#2f3946', roof: '#3b2d29' },
+  light: { granite: '#8a7066', glass: '#2b3440', glow: '#2f3946', roof: '#3b2d29' },
   dark: { granite: '#6a4a41', glass: '#1d1514', glow: '#ffc67a', roof: '#2d2625' },
 };
 

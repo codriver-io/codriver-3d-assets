@@ -72,3 +72,11 @@ Opened `tmp/top-cities/shots/romanian-athenaeum/final/comparison-sheet.jpg` afte
 - `SPEC.ready = true`; texture-free near/far exports and catalog record are complete.
 
 - Independent visual review, Cityscape, Full 3D world and real hardware remain pending. No shared file changes were needed.
+
+## Landmark QA correction — 2026-10-11
+
+QA correction: a narrower taller lantern, layered crown and larger clustered zinc crests; repeated raised cornice ornaments survive in far. Height stays 31 m. Trim boxes share masonry material while sculptural seams retain relief; carved floral motifs remain simplified masses.
+
+Compared against the supplied independent review and reference tile in the original contact sheet. No new external model or texture was retained.
+
+Cityscape: verified; Full 3D world: verified. This is static camera and terrain-arrival verification; night, failure injection, origin shifting, hardware performance and full lifecycle transitions were not tested in this correction.

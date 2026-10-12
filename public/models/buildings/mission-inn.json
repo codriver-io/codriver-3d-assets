@@ -18,12 +18,12 @@
   },
   "elevationDatum": "Local street grade y=0; rigid hotel foundation, no terrain or altitude baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Mapped outline and 119°/29° plan bearing; all heights, tower locations, courtyard sizes and facade counts estimated from attributed photographs. Annex and seasonal decorations omitted. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "note": "Mapped outline and 119°/29° plan bearing; all heights, tower locations, courtyard sizes and facade counts estimated from attributed photographs. Annex and seasonal decorations omitted. Daytime visual integration is recorded separately in the landmark documentation.",
   "assets": {
     "near": {
       "url": "/models/buildings/mission-inn-near.glb",
-      "bytes": 2145276,
-      "triangles": 48291,
+      "bytes": 2017368,
+      "triangles": 45929,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -40,8 +40,8 @@
     },
     "far": {
       "url": "/models/buildings/mission-inn-far.glb",
-      "bytes": 372048,
-      "triangles": 8395,
+      "bytes": 452608,
+      "triangles": 10187,
       "drawCalls": 8,
       "bounds": {
         "min": [

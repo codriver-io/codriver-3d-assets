@@ -96,7 +96,7 @@ export function create({ detail = 'near' } = {}) {
     for (const g of f.glass) if (near || g.s1 - g.s0 > 5 && f.kind !== 'court') onFacade(f, g.s0, g.s1, g.y0, g.y1, GLASS_OFF, g.m);
     if (f.kind === 'recessBack') {
       if (near) for (let s = 0.8; s < f.len - 0.7; s += MULLION) post(f, s, BACK_Y0, BACK_Y1, 0.3, GLASS_OFF, 0.3, 'copperDark');
-      if (near) onFacade(f, 0.8, f.len - 0.8, 4.35, 4.6, GLASS_OFF + 0.12, 'copperDark'); // a transom over the doors
+      if (near) onFacade(f, 0.8, f.len - 0.8, 4.35, 4.6, GLASS_OFF + 0.25, 'copperDark'); // a transom over the doors
       return; // the wall behind the glass is not seen
     }
     if (f.len < 1.5) return;
@@ -142,8 +142,9 @@ export function create({ detail = 'near' } = {}) {
   const STOREYS = 6, dy = (TOWER_TRUNK_TOP - ROOF_Y) / STOREYS;
   const rings = TOWER_QUADS.map((q, k) => ({ y: ROOF_Y + dy * k, q }));
   rings.push({ y: TOWER_TRUNK_TOP, q: TOWER_QUADS[5] });
-  const slits = near ? [1.5, 4.5].map((k) => [ROOF_Y + dy * k - 0.45, ROOF_Y + dy * k + 0.45]) : [];
+  const slits = [1.5, 4.5].map((k) => [ROOF_Y + dy * k - 0.45, ROOF_Y + dy * k + 0.45]);
   const ys = new Set(rings.map((r) => r.y));
+  if (!near) for (let k = 1; k < STOREYS; k++) { ys.add(ROOF_Y + dy * k - 0.18); ys.add(ROOF_Y + dy * k + 0.22); }
   if (near) for (let k = 0; k + 1 < rings.length; k++) ys.add((rings[k].y + rings[k + 1].y) / 2);
   for (const [lo, hi] of slits) { ys.add(lo); ys.add(hi); }
   const breaks = [...ys].sort((p, q) => p - q);
@@ -160,7 +161,8 @@ export function create({ detail = 'near' } = {}) {
     const lo = breaks[m], hi = breaks[m + 1], ql = sample(lo), qh = sample(hi), c = centre(ql), ym = (lo + hi) / 2;
     const inSlit = slits.some(([a, z]) => ym > a && ym < z);
     const storey = Math.min(STOREYS - 1, Math.floor((ym - ROOF_Y) / dy + 1e-9));
-    const trunk = near ? 'tower' : (storey % 2 ? 'towerRib' : 'tower'); // far: storey bands carry the twist
+    const ribBand = !near && [1, 2, 3, 4, 5].some(k => Math.abs(ym - (ROOF_Y + dy * k)) < 0.23);
+    const trunk = ribBand ? 'towerRib' : 'tower'; // far keeps narrow transverse floor frames
     for (let i = 0; i < 4; i++) {
       const j = (i + 1) % 4, long = i % 2 === 0, cols = long ? NS : 1;
       const mat = inSlit && long ? 'glass' : trunk;

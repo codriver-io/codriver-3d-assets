@@ -168,10 +168,15 @@ export function create({ detail = 'near' } = {}) {
   // Punched windows between stone string courses. Far keeps every other bay.
   for (const [u0, u1] of [[wing.u0 + 0.5, -19.4], [26.6, wing.u1 - 0.5]]) {
     for (const [y0, y1] of bands) box('stone', u0 - 0.15, u1 + 0.15, y0, y1, bandV0, bandV1);
-    const pitch = near ? 4.5 : 9.0;
+    const pitch = 4.5;
     for (let u = u0 + pitch * 0.5; u < u1 - 0.7; u += pitch) {
       for (const [y0, y1] of rows) {
-        box('glow', u - 0.72, u + 0.72, y0, y1, winV0, winV1);
+        box('glow', u - 0.82, u + 0.82, y0, y1, winV0, winV1);
+        for (const sign of [-1, 1]) {
+          const a = u + sign * 1.04 - .18, c = a + .36;
+          if (near) box('stone', a, c, y0 - .2, y1 + .2, face + .42, face + .70);
+          else quad('stone', [a, y0 - .2, face + .82], [c, y0 - .2, face + .82], [c, y1 + .2, face + .82], [a, y1 + .2, face + .82]);
+        }
         if (near) box('stone', u - 0.06, u + 0.06, y0 + 0.08, y1 - 0.08, winV1 + 0.06, winV1 + 0.18);
       }
     }
@@ -202,20 +207,20 @@ export function create({ detail = 'near' } = {}) {
     const um = (u0 + u1) / 2, vm = (v0 + v1) / 2;
     box('brick', u0, u1, 3.15, H.towerEave - 0.15, v0, v1);
     box('stone', u0 - 0.08, u1 + 0.08, 0, 3.35, v0 - 0.08, v1 + 0.08);
-    if (near) {
-      for (const [uu0, uu1] of [[u0 - 0.1, u0 + 0.38], [u1 - 0.38, u1 + 0.1]]) {
-        box('stone', uu0, uu1, 3.2, 18.2, v1 - 0.05, v1 + 0.16);
+    {
+      for (const [uu0, uu1] of [[u0 - 0.1, u0 + 0.65], [u1 - 0.65, u1 + 0.1]]) {
+        box('stone', uu0, uu1, 3.2, 25.7, v1 - 0.05, v1 + 0.32);
       }
     }
     box('stone', u0 - 0.18, u1 + 0.18, H.towerEave - 0.55, H.towerEave + 0.18, v0 - 0.12, v1 + 0.18);
     box('glow', um - 1.15, um + 1.15, 8.4, 12.2, v1 + 0.06, v1 + 0.18);
     box('glow', um - 1.05, um + 1.05, 14.2, 17.55, v1 + 0.06, v1 + 0.18);
     // Narrow stone band around the dial. The brick shaft shows inside and outside it.
-    const inn = 1.56, out = 2.08;
-    box('stone', um - out, um - inn, 22.15 - out, 22.15 + out, v1 + 0.1, v1 + 0.3);
-    box('stone', um + inn, um + out, 22.15 - out, 22.15 + out, v1 + 0.1, v1 + 0.3);
-    box('stone', um - inn, um + inn, 22.15 + inn, 22.15 + out, v1 + 0.1, v1 + 0.3);
-    box('stone', um - inn, um + inn, 22.15 - out, 22.15 - inn, v1 + 0.1, v1 + 0.3);
+    const inn = 1.66, out = 2.65;
+    box('stone', um - out, um - inn, 22.15 - out, 22.15 + out, v1 + 0.15, v1 + 0.45);
+    box('stone', um + inn, um + out, 22.15 - out, 22.15 + out, v1 + 0.15, v1 + 0.45);
+    box('stone', um - inn, um + inn, 22.15 + inn, 22.15 + out, v1 + 0.15, v1 + 0.45);
+    box('stone', um - inn, um + inn, 22.15 - out, 22.15 - inn, v1 + 0.15, v1 + 0.45);
     const frame = (uf0, uf1) => {
       const s0 = vm - 1.15, s1 = vm + 1.15, yb = 19.35, yt = 24.7, t = 0.26;
       box('stone', uf0, uf1, yb, yt, s0, s0 + t);
@@ -227,7 +232,7 @@ export function create({ detail = 'near' } = {}) {
     else frame(u1 + 0.08, u1 + 0.26);
     clock(um, 22.15, v1 + 0.48, 1.42);
     // Corner pinnacles on the cornice. The slate skirt starts inboard of them.
-    const pin = near ? 2.85 : 2.05;
+    const pin = 2.85;
     for (const [uu, vv] of [[u0 + 0.05, v0 + 0.05], [u1 - 0.05, v0 + 0.05], [u1 - 0.05, v1 - 0.05], [u0 + 0.05, v1 - 0.05]]) {
       box('stone', uu - 0.16, uu + 0.16, H.towerEave + 0.22, H.towerEave + pin, vv - 0.16, vv + 0.16);
       pyramid('slate', uu - 0.2, uu + 0.2, vv - 0.2, vv + 0.2, H.towerEave + pin - 0.08, H.towerEave + pin + 0.72);
@@ -238,10 +243,10 @@ export function create({ detail = 'near' } = {}) {
     frustum('slate', su0, su1, sv0, sv1, skirt, H.towerEave + 0.32, 29.4);
     const lu0 = su0 + skirt, lu1 = su1 - skirt, lv0 = sv0 + skirt, lv1 = sv1 - skirt;
     box('stone', lu0, lu1, 29.48, 31.2, lv0, lv1);
-    box('glow', um - 0.4, um + 0.4, 29.78, 30.88, lv1 + 0.06, lv1 + 0.2);
+    box('glow', um - 0.4, um + 0.4, 29.78, 30.88, lv1 + 0.26, lv1 + 0.4);
     if (near) {
-      box('glow', lu0 - 0.16, lu0 - 0.04, 29.82, 30.82, vm - 0.38, vm + 0.38);
-      box('glow', lu1 + 0.04, lu1 + 0.16, 29.82, 30.82, vm - 0.38, vm + 0.38);
+      box('glow', lu0 - 0.40, lu0 - 0.26, 29.82, 30.82, vm - 0.38, vm + 0.38);
+      box('glow', lu1 + 0.26, lu1 + 0.40, 29.82, 30.82, vm - 0.38, vm + 0.38);
     }
     pyramid('slate', lu0 + 0.12, lu1 - 0.12, lv0 + 0.12, lv1 - 0.12, 31.1, H.tower);
     // Articulated finial. Both LODs end on the same iron point at H.finial.
@@ -271,8 +276,8 @@ export function create({ detail = 'near' } = {}) {
       b.put(g, mat);
     }
     if (near) {
-      box('iron', u - 0.045, u + 0.045, y - 0.15, y + r * 0.72, vFace + 0.02, vFace + 0.1);
-      box('iron', u - r * 0.55, u + 0.12, y - 0.04, y + 0.05, vFace + 0.02, vFace + 0.1);
+      box('iron', u - 0.045, u + 0.045, y - 0.15, y + r * 0.72, vFace + 0.23, vFace + 0.31);
+      box('iron', u - r * 0.55, u + 0.12, y - 0.04, y + 0.05, vFace + 0.23, vFace + 0.31);
     }
   }
 
@@ -291,7 +296,7 @@ export function create({ detail = 'near' } = {}) {
     ? [cx - 11.2, cx - 7.5, cx - 3.75, cx, cx + 3.75, cx + 7.5, cx + 11.2]
     : [cx - 7.5, cx, cx + 7.5];
   const halfB = near ? 1.15 : 1.7;
-  for (const u of bayU) box('glow', u - halfB, u + halfB, 1.28, 5.42, vPorch + 0.06, vPorch + 0.2);
+  for (const u of bayU) box('glow', u - halfB, u + halfB, 1.28, 5.42, vPorch + 0.25, vPorch + 0.38);
   // Lit band over the doors, where the "Amsterdam Centraal" sign is. No letter strokes.
   box('lamp', cx - 7.4, cx + 7.4, 5.95, 6.78, vPorch + 0.14, vPorch + 0.36);
 
@@ -300,7 +305,7 @@ export function create({ detail = 'near' } = {}) {
   const pier = (a, d) => {
     if (d - a <= 0.25) return;
     const y1 = ySpring + halfW + 0.45;
-    const band = Math.min(0.38, (d - a) * 0.28);
+    const band = Math.min(0.68, (d - a) * 0.34);
     box('brick', a + 0.02, d - 0.02, yA0 - 0.12, y1 - 0.08, c.v1 - 0.02, c.v1 + 0.26);
     box('stone', a, a + band, yA0 - 0.15, y1, c.v1 + 0.08, c.v1 + 0.42);
     box('stone', d - band, d, yA0 - 0.15, y1, c.v1 + 0.08, c.v1 + 0.42);
@@ -314,7 +319,7 @@ export function create({ detail = 'near' } = {}) {
 
   // Steep triangular gable. Slate ridge sits just behind the face so a plan ray at v=0.7
   // still finds the mapped 29.25 m peak.
-  const yG0 = 21.25, halfG = 6.35, vG = 1.22;
+  const yG0 = 21.25, halfG = 9.6, vG = 1.22;
   extrudeV('brick', [[cx - halfG, yG0], [cx + halfG, yG0], [cx, H.center]], vG, 0.88);
   gableOutline(cx, halfG, yG0, H.center, vG + 0.16);
   centerRoof(cx, halfG + 0.3, 0.7, c.v0 + 0.8, yG0 + 0.1, H.center - 0.05, H.centerWall + 0.1);
@@ -345,10 +350,10 @@ export function create({ detail = 'near' } = {}) {
     // Same dark glazing as the wing windows. The shed vaults stay on `glass`.
     put('glow', glass, gid);
     // One mullion and two transoms, both LODs. Clear of the ray the test sends through the pane.
-    box('stone', u - 0.07, u + 0.07, y0 + 0.08, ySpring + r * 0.32, vOuter - 0.32, vOuter - 0.1);
+    box('stone', u - 0.07, u + 0.07, y0 + 0.08, ySpring + r * 0.32, vOuter + (near ? -.20 : .08), vOuter + (near ? -.10 : .18));
     for (const t of [0.34, 0.67]) {
       const y = y0 + (ySpring - y0) * t;
-      box('stone', u - r + 0.15, u + r - 0.15, y - 0.06, y + 0.06, vOuter - 0.32, vOuter - 0.1);
+      box('stone', u - r + 0.15, u + r - 0.15, y - 0.06, y + 0.06, vOuter + (near ? -.20 : .08), vOuter + (near ? -.10 : .18));
     }
     const ring = [], rid = [];
     const radd = (uu, y, v) => { ring.push(...wp(uu, y, v)); return ring.length / 3 - 1; };

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES, materialFor } from './config.js';
 import { V, RINGS, shoelace, centroid, edgeFrame, roundCorner, makePath, makeRoofHeight } from './scotiabank-arena-site.js';
@@ -269,7 +270,11 @@ export function create({ detail = 'near' } = {}) {
   // Video screen, 9.1 x 15.2 m (published), on the long straight of the front.
   const fs = frontEdges[1], screen = SPEC.screen, sc = fs.len * 0.46;
   onEdge('frame', fs, sc, 0.45, 7.0 + screen.height / 2, screen.width + 0.7, screen.height + 0.7, 0.5);
-  onEdge('glow', fs, sc, 0.72, 7.0 + screen.height / 2, screen.width, screen.height, 0.2);
+  onEdge('glow', fs, sc, 0.80, 7.0 + screen.height / 2, screen.width, screen.height, 0.2);
+  // Static event artwork: a red left panel and restrained red bars on a dark blue board.
+  // No pseudo-lettering; the video board remains recognisable at both distances.
+  onEdge('sign', fs, sc-screen.width*.29, 1.03, 7.0+screen.height/2, screen.width*.38, screen.height-.6, .12);
+  for(const [dy,width] of [[1.9,4.5],[.7,3.2],[-1.4,4.0]]) onEdge('sign',fs,sc+screen.width*.22,1.25,7.0+screen.height/2+dy,width,.3,.12);
   // Red rooftop sign, built letter by letter from a 5 x 7 grid; a plain bar in the far model.
   {
     const cell = 0.22, base = ATR + 0.55, dir = (fs.nz * fs.ux - fs.nx * fs.uz) >= 0 ? 1 : -1;
@@ -285,11 +290,48 @@ export function create({ detail = 'near' } = {}) {
     const pos = (s, o) => [f.a[0] + f.ux * s + f.nx * o, f.a[1] + f.uz * s + f.nz * o];
     const tube = (base, lean, len, r0, r1, sideways = 0) => {
       const d = new THREE.Vector3(f.ux * lean + f.nx * sideways, 1, f.uz * lean + f.nz * sideways).normalize();
-      const lift = r0 * Math.sqrt(1 - d.y * d.y) + 0.05; // keep the tilted foot on the ground
-      const g = new THREE.CylinderGeometry(r1, r0, len, near ? 12 : 6, 1, false);
-      g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), d));
-      g.translate(base[0] + d.x * len / 2, lift + d.y * len / 2, base[1] + d.z * len / 2);
-      b.put(g, 'corten');
+      const rotation = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),d);
+      const sides = 8, half = Math.PI / sides, thickness = 0.12;
+      const radius = y => r0 + (r1-r0) * y / len;
+      const transform = g => {
+        g.applyQuaternion(rotation); g.translate(base[0],0,base[1]);
+        // Cut every tilted foot on the plaza plane: no floating lower rim.
+        const p=g.attributes.position;
+        for(let i=0;i<p.count;i++) if(p.getY(i)<0) p.setY(i,0);
+        g.computeVertexNormals(); b.put(g,'corten');
+      };
+      for(let k=0;k<sides;k++) {
+        const theta=2*Math.PI*k/sides, tx=Math.cos(theta),tz=-Math.sin(theta),nx=Math.sin(theta),nz=Math.cos(theta);
+        const w0=r0*Math.sin(half), w1=r1*Math.sin(half);
+        const panel=new THREE.Shape([new THREE.Vector2(-w0,0),new THREE.Vector2(w0,0),new THREE.Vector2(w1,len),new THREE.Vector2(-w1,len)]);
+        // True through-cut star apertures and vertical slots in every facet.
+        for(const fraction of [0.18,0.39,0.60,0.80]) {
+          const y=len*fraction, size=radius(y)*0.36, hole=new THREE.Path();
+          if((k+Math.round(fraction*100))%2===0) {
+            const pts=Array.from({length:10},(_,i)=>{const a=Math.PI/2+i*Math.PI/5,r=i%2?size*.43:size;return new THREE.Vector2(r*Math.cos(a),y+r*Math.sin(a));});
+            hole.setFromPoints(pts);
+          } else {
+            hole.setFromPoints([new THREE.Vector2(-size*.35,y-size*1.5),new THREE.Vector2(size*.35,y-size*1.5),new THREE.Vector2(size*.35,y+size*1.5),new THREE.Vector2(-size*.35,y+size*1.5)]);
+          }
+          panel.holes.push(hole);
+        }
+        const g=new THREE.ExtrudeGeometry(panel,{depth:thickness,bevelEnabled:false,curveSegments:1});
+        const p=g.attributes.position;
+        for(let i=0;i<p.count;i++) {
+          const s=p.getX(i),y=p.getY(i),r=radius(y)*Math.cos(half)-p.getZ(i);
+          p.setXYZ(i,tx*s+nx*r,y,tz*s+nz*r);
+        }
+        transform(g);
+      }
+      // Thin annular caps close the shell at its terminal rims, keeping a hollow column.
+      for(const y of [0,len]) {
+        const cap=new THREE.Shape();
+        const ring=(r)=>Array.from({length:sides},(_,i)=>new THREE.Vector2(r*Math.sin(2*Math.PI*(i+.5)/sides),r*Math.cos(2*Math.PI*(i+.5)/sides)));
+        cap.setFromPoints(ring(radius(y)));
+        cap.holes.push(new THREE.Path(ring(radius(y)-thickness)));
+        const g=new THREE.ExtrudeGeometry(cap,{depth:.08,bevelEnabled:false,curveSegments:1});
+        g.rotateX(-Math.PI/2);g.translate(0,y===0?0:y-.08,0);transform(g);
+      }
     };
     tube(pos(4, 15), 0.5, 31, 1.35, 0.65, 0.05);
     tube(pos(12.5, 15), -0.45, 27, 1.25, 0.6, 0.05);
@@ -309,6 +351,7 @@ export function create({ detail = 'near' } = {}) {
   root.traverse((o) => {
     if (!o.isMesh) return;
     o.geometry.deleteAttribute('bridgeLift');
+    if (o.material.name === 'corten') o.geometry = mergeVertices(o.geometry, 1e-4);
     o.material.color.set(PALETTES.light[o.material.name]);
     if (o.material.name === 'sign' || o.material.name === 'glow') { o.material.emissive.set(PALETTES.light[o.material.name]); o.material.emissiveIntensity = o.material.name === 'sign' ? 0.6 : 0.5; }
   });

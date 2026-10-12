@@ -65,10 +65,13 @@ export function buildShell(b, near) {
   // Plinth, then architrave / frieze / corona / cymatium. Each band is wider than the wall, so the
   // wall face stops at the architrave and the cornice is its own stack.
   slab(b, 'graniteDark', SA, 0.26, 0, HALF_W * 2 + 0.08, 0.52, (EAST - WEST) + 0.4);
-  band(b, ENTABLATURE, 14.48, 0.18, 0.02);
-  band(b, 14.44, 15.18, 0.06, 0.00, 'graniteDark'); // recessed frieze
-  band(b, 15.14, 15.95, 0.32, 0.02);
-  band(b, 15.88, CORNICE_TOP, 0.42, 0.00);
+  band(b, ENTABLATURE - 0.10, 14.24, 0.18, 0.02);
+  band(b, 14.20, 14.78, 0.06, 0.00); // shallow stone frieze
+  band(b, 14.74, 15.25, 0.32, 0.02);
+  band(b, 15.21, CORNICE_TOP, 0.42, 0.00);
+  // Central order projects over the paired columns: capitals meet the beam.
+  slab(b, 'granite', SA, 14.12, 0, ATTIC_HALF * 2, 0.64, 11.2);
+  slab(b, 'granite', SA, 15.36, 0, ATTIC_HALF * 2 + 0.18, 0.68, 11.45);
 
   // Side wings, a low band, then the taller central attic. Caps close the wings. The central
   // block is deeper than the wing cap so the cap does not print across the inscription.
@@ -81,10 +84,10 @@ export function buildShell(b, near) {
   // rake reads as a cornice with a shadow, not a shallow roof fin.
   pediment(b, PED_HALF, PED_BASE, PED_APEX, 8.50, -4.25, 'granite');
   // Tympanum is buried a few centimetres into the rake so the two faces do not share a plane.
-  pediment(b, PED_HALF - 0.48, PED_BASE + 0.32, PED_APEX - 0.42, 0.22, 4.16, 'graniteDark');
-  pediment(b, PED_HALF - 0.48, PED_BASE + 0.32, PED_APEX - 0.42, 0.22, -4.38, 'graniteDark');
+  pediment(b, PED_HALF - 0.48, PED_BASE + 0.32, PED_APEX - 0.42, 0.22, 4.45, 'graniteDark');
+  pediment(b, PED_HALF - 0.48, PED_BASE + 0.32, PED_APEX - 0.42, 0.22, -4.67, 'graniteDark');
   // Fillet under the overhang. Its top stops short of the pediment soffit.
-  slab(b, 'graniteDark', SA, PED_BASE - 0.12, 0, PED_HALF * 2 + 0.15, 0.14, 8.15);
+  slab(b, 'granite', SA, PED_BASE - 0.12, 0, PED_HALF * 2 + 0.15, 0.14, 8.15);
 }
 
 function pediment(b, half, y0, y1, depth, z0, mat) {
@@ -93,7 +96,10 @@ function pediment(b, half, y0, y1, depth, z0, mat) {
   tri.lineTo(SA + half, y0);
   tri.lineTo(SA, y1);
   tri.closePath();
-  const g = new THREE.ExtrudeGeometry(tri, { depth, bevelEnabled: false, curveSegments: 1 });
+  const g = mat === 'graniteDark' ? new THREE.ShapeGeometry(tri) : new THREE.ExtrudeGeometry(tri, { depth, bevelEnabled: false, curveSegments: 1 });
+  if (mat === 'graniteDark' && z0 < 0) {
+    g.scale(-1, 1, 1); g.translate(2 * SA, 0, 0);
+  }
   g.translate(0, 0, z0);
   b.put(place(g), mat);
 }

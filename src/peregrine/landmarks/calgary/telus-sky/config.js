@@ -18,7 +18,7 @@ export const SPEC = {
   gridBearingDeg: 2.45, // clockwise rotation of the plan frame (u east, v south) from the cardinal axes; baked into the geometry
   plan: {
     width: 51.43, depth: 34.27, // m, tower plate east-west (u) and north-south (v), mapped
-    bayCells: 6, rowCells: 5, // 6 cells (7.3 m) per pixel column on the north and south faces, 5 cells (6.9 m) per row on the east and west faces
+    bayCells: 3, rowCells: 5, // 3 cells (3.7 m) per pixel column on the north and south faces, 5 cells (6.9 m) per row on the east and west faces
   },
   // Level heights (m). Storey count 59 follows OSM; the split between office and residential floors follows Wikipedia (offices 1 to 29,
   // residences 30 to 58); the heights themselves are estimated so the roof lands on 222.3 m with the plant.
@@ -30,7 +30,7 @@ export const SPEC = {
 // glass by day). Both are drawn unshaded.
 export const PALETTES = {
   light: {
-    glass: '#5f84a8', frame: '#5b6773', ledge: '#8b9298', glow: '#505b68', light: '#4c6a86', metal: '#7b8288',
+    glass: '#5f84a8', frame: '#5b6773', ledge: '#d2d4d1', glow: '#505b68', light: '#4c6a86', metal: '#7b8288',
   },
   dark: {
     glass: '#22364a', frame: '#0f1318', ledge: '#363c43', glow: '#33e8a2', light: '#f2d395', metal: '#3b4248',

@@ -6,8 +6,8 @@ import {
   CROSSING, N_TRANS, S_TRANS, CHOIR, N_CHOIR, S_CHOIR, OCT, CHAPTER, JOHANNES, LECTORIUM,
 } from './nidaros-cathedral-plan.js';
 
-const FACE = -47.28; // screen wall. The outline of this wall is u ≈ -47.41.
-const PROUD = -47.36; // westmost screen ornament, 5 cm inside the outline
+const FACE = -46.65; // screen wall. The outline of this wall is u ≈ -47.41.
+const PROUD = -47.30; // westmost screen ornament, 5 cm inside the outline
 // Aisle outer walls sit inside the outline between the buttress nibs (the nibs reach ~-12.4 / 14.5).
 const N_WALL = -10.7;
 const S_WALL = 12.82;
@@ -32,8 +32,8 @@ function mass(k) {
   k.box('stone', NAVE.u0, NAVE.u1, 0, naveTop, NAVE.v0, NAVE.v1);
   k.box('stone', N_AISLE.u0, N_AISLE.u1, 0, N_AISLE.yLow - 0.1, N_WALL, N_AISLE.v1);
   k.box('stone', S_AISLE.u0, S_AISLE.u1, 0, S_AISLE.yLow - 0.1, S_AISLE.v0, S_WALL);
-  k.box('stone', N_TOWER.u0, N_TOWER.u1, 0, N_TOWER.shaft - 0.06, N_TOWER.v0 + 0.35, N_TOWER.v1);
-  k.box('stone', S_TOWER.u0, S_TOWER.u1, 0, S_TOWER.shaft - 0.06, S_TOWER.v0, S_TOWER.v1 - 0.35);
+  k.box('stone', N_TOWER.u0 + 0.40, N_TOWER.u1, 0, N_TOWER.shaft - 0.06, N_TOWER.v0 + 0.35, N_TOWER.v1);
+  k.box('stone', S_TOWER.u0 + 0.40, S_TOWER.u1, 0, S_TOWER.shaft - 0.06, S_TOWER.v0, S_TOWER.v1 - 0.35);
   // Clasping west buttresses on the mapped west corners. Both LODs (they set the west extreme).
   k.box('stone', -48.32, -47.02, 0, 20, -17.15, -15.65);
   k.box('stone', -48.00, -47.02, 19.85, 30, -16.95, -15.8);
@@ -64,10 +64,10 @@ function roofs(k) {
   // North gable stops short of the transept lancet arches so the two planes do not share a face.
   k.gableAcross('roof', N_TRANS.u0 - 0.35, N_TRANS.u1 + 0.25, -21.75, -6.55, N_TRANS.eaves - 0.02, N_TRANS.ridge);
   k.gableAcross('roof', S_TRANS.u0 - 0.3, S_TRANS.u1 + 0.2, 7.85, 23.9, S_TRANS.eaves - 0.02, S_TRANS.ridge);
-  k.shed('roof', N_AISLE.u0, N_AISLE.u1, N_WALL - 0.06, N_AISLE.yLow, -5.02, N_AISLE.yHigh);
-  k.shed('roof', S_AISLE.u0, S_AISLE.u1, S_WALL + 0.06, S_AISLE.yLow, 7.28, S_AISLE.yHigh);
-  k.shed('roof', N_CHOIR.u0, N_CHOIR.u1, N_CHOIR.v0 - 0.25, N_CHOIR.yLow, -6.15, N_CHOIR.yHigh);
-  k.shed('roof', S_CHOIR.u0, S_CHOIR.u1, 11.58, S_CHOIR.yLow, 7.9, S_CHOIR.yHigh);
+  k.shed('roof', N_AISLE.u0, N_AISLE.u1, N_WALL + (k.near ? -0.06 : 0.55), N_AISLE.yLow, -5.02, N_AISLE.yHigh);
+  k.shed('roof', S_AISLE.u0, S_AISLE.u1, S_WALL + (k.near ? 0.06 : -0.55), S_AISLE.yLow, 7.28, S_AISLE.yHigh);
+  k.shed('roof', N_CHOIR.u0, N_CHOIR.u1, N_CHOIR.v0 + (k.near ? -0.25 : 0.55), N_CHOIR.yLow, -6.15, N_CHOIR.yHigh);
+  k.shed('roof', S_CHOIR.u0, S_CHOIR.u1, (k.near ? 11.58 : 10.95), S_CHOIR.yLow, 7.9, S_CHOIR.yHigh);
   k.gable('roof', 0.65, 4.4, -24.45, -22.05, 9.35, 13.2);
   // Octagon pyramid. Vertex radius so the base meets the drum's corners.
   const r = OCT.flat / Math.cos(Math.PI / 8);
@@ -99,17 +99,36 @@ function westFront(k) {
   k.box('recess', FACE - 0.08, FACE - 0.04, 0.35, 6.7, NAVE_V - 1.15, NAVE_V - 0.08);
   k.box('recess', FACE - 0.08, FACE - 0.04, 0.35, 6.7, NAVE_V + 0.08, NAVE_V + 1.15);
   k.box('trim', PROUD, FACE + 0.02, 0.3, 7.3, NAVE_V - 0.1, NAVE_V + 0.1);
-  if (k.near) arcade(k, 10.15, 3.15, 1.35, [-7.7, -5.7, -3.7, -1.7, 3.95, 5.95, 7.95, 9.95]);
+  arcade(k, 10.9, 2.2, 1.35, [-7.7, -5.7, -3.7, -1.7, 3.95, 5.95, 7.95, 9.95]);
   statueRow(k, 7.7, 2.35, -8.5, 10.7, 1.28, 2.05);
   statueRow(k, 13.55, 2.7, -8.3, 10.6, 1.22, 0);
+  // Upper apostle groups flank the rose: three figures in each tall canopied bay.
+  for (const v of [-7.9,-5.6,7.8,10.1]) {
+    k.lancetPanel('recess',2.0,6.8,'W',v,17.1,FACE-0.3);
+    k.arch('trim',2.25,7.0,0.18,'W',v,17.1,FACE,0.6);
+    for (const dv of [-0.52,0,0.52]) {
+      const y=17.35+(dv===0?0.12:0),h=dv===0?3.65:3.2;
+      k.box('trim',PROUD,FACE+0.1,y-0.2,y+0.15,v+dv-0.28,v+dv+0.28);
+      k.box('trim',PROUD+0.09,FACE-0.05,y+0.1,y+h*0.72,v+dv-0.18,v+dv+0.18);
+      k.box('trim',PROUD+0.07,FACE-0.1,y+h*0.55,y+h*0.79,v+dv-0.26,v+dv+0.26);
+      k.box('trim',PROUD+0.08,FACE-0.18,y+h*0.76,y+h,v+dv-0.14,v+dv+0.14);
+    }
+    k.cone('trim',FACE-0.25,v,23.1,24.35,0.5,4);
+  }
   // Rose. Ring and spokes west of the glow disc; the hub leaves the centre open.
   const ry = 20.35, rv = NAVE_V;
   // West to east: hub, spokes, stone ring, then the glow disc, all in front of the wall.
   k.ring('trim', 0.42, 0.78, 'W', rv, ry, -47.37, k.near ? 16 : 8);
   k.ring('trim', 2.55, 3.22, 'W', rv, ry, -47.345, k.near ? 36 : 16);
+  k.ring('stone',3.12,3.65,'W',rv,ry,-47.12,k.near?36:16);
+  k.ring('trim',3.55,3.85,'W',rv,ry,-47.24,k.near?36:16);
+  k.arch('trim',8.0,11.9,0.35,'W',rv,14.65,FACE,0.65);
   const spokes = k.near ? 16 : 8;
   for (let i = 0; i < spokes; i++) {
-    k.spoke('trim', 'W', rv, ry, -47.355, 0.7, 2.65, (i / spokes) * Math.PI * 2, k.near ? 0.1 : 0.16);
+    const a=(i/spokes)*Math.PI*2;
+    k.spoke('trim','W',rv,ry,-47.355,0.7,2.65,a,k.near?0.1:0.16);
+    for (const sign of [-1,1]) k.bar('trim',[-47.355,ry+1.85*Math.cos(a),rv+1.85*Math.sin(a)],
+      [-47.355,ry+2.6*Math.cos(a+sign*0.14),rv+2.6*Math.sin(a+sign*0.14)],0.11,0.11);
   }
   k.disc('glow', 2.72, 'W', rv, ry, FACE - 0.05, k.near ? 32 : 14);
   // Steep screen gable, niche, and a figure. Apex stays under the tower pinnacles.
@@ -118,6 +137,8 @@ function westFront(k) {
   k.box('trim', PROUD, FACE + 0.02, 28.7, 31.5, NAVE_V - 0.32, NAVE_V + 0.32);
   k.box('trim', PROUD + 0.02, FACE, 31.35, 31.85, NAVE_V - 0.22, NAVE_V + 0.22);
   k.cone('trim', FACE + 0.2, NAVE_V, 34.5, 37.2, 0.28, 4);
+  statueRow(k,27.25,2.0,-3.9,-2.1,0.9,0);
+  statueRow(k,27.25,2.0,4.2,6.0,0.9,0);
   if (k.near) {
     k.cone('trim', FACE + 0.25, NAVE_V - 6.4, 26.4, 31.5, 0.42, 4);
     k.cone('trim', FACE + 0.25, NAVE_V + 6.4, 26.4, 31.5, 0.42, 4);
@@ -136,9 +157,14 @@ function arcade(k, y, h, w, centres) {
 function statueRow(k, y, h, v0, v1, step, skip) {
   for (let v = v0; v <= v1 + 0.01; v += step) {
     if (skip && Math.abs(v - NAVE_V) < skip) continue;
-    k.box('trim', PROUD, -47.2, y, y + h * 0.7, v - 0.2, v + 0.2);
-    k.box('trim', PROUD + 0.04, -47.22, y + h * 0.62, y + h * 0.62 + 0.32, v - 0.13, v + 0.13);
-    if (k.near) k.pediment('trim', 0.7, 0.36, 'W', v, y + h * 0.66, FACE, 0.06);
+    // Figure feet sit on a projecting shelf; pointed canopy is anchored into the screen.
+    k.box('trim',PROUD,FACE+0.1,y-0.12,y+0.15,v-0.46,v+0.46);
+    k.lancetPanel('recess',step*0.68,h+0.4,'W',v,y,FACE-0.30);
+    k.arch('trim',step*0.9,h+0.65,0.16,'W',v,y,FACE,0.6);
+    k.box('trim',PROUD+0.12,FACE-0.06,y+0.1,y+h*0.66,v-0.23,v+0.23);
+    k.box('trim',PROUD+0.08,FACE-0.12,y+h*0.55,y+h*0.75,v-0.36,v+0.36);
+    k.box('trim',PROUD+0.12,FACE-0.18,y+h*0.72,y+h*0.98,v-0.15,v+0.15);
+
   }
 }
 
@@ -160,6 +186,9 @@ function towers(k) {
     }
     // Ground arcade, a shorter niche pair under the gallery, then the tall lancets above it.
     const west = t.u0;
+    for (const y of [7.7,13.55,19.0]) statueRow(k,y,2.7,t.v0+1.0,t.v1-1.0,1.4,0);
+    for (const v of [t.v0+0.4,t.v1-0.4]) k.box('stone',t.u0-0.08,t.u0+0.7,0,33,v-0.25,v+0.25);
+
     k.arch('trim', 1.55, 6.2, 0.18, 'W', vc - 1.15, 0.4, west, 0.08);
     k.arch('trim', 1.55, 6.2, 0.18, 'W', vc + 1.15, 0.4, west, 0.08);
     k.lancetPanel('recess', 0.95, 4.6, 'W', vc - 1.15, 0.6, west - 0.08);
@@ -173,12 +202,12 @@ function towers(k) {
 
 function twin(k, face, across, y, plane, w, h, lit) {
   const sign = face === 'W' || face === 'N' ? -1 : 1;
-  const panel = plane + sign * 0.06;
+  const panel = plane + sign * (0.10);
   k.lancetPanel(lit ? 'glow' : 'glass', w * 0.7, h * 0.82, face, across - w * 0.72, y, panel);
   k.lancetPanel(lit ? 'glow' : 'glass', w * 0.7, h * 0.82, face, across + w * 0.72, y, panel);
   if (k.near || face === 'W') {
-    k.arch('trim', w, h, 0.16, face, across - w * 0.72, y, plane, 0.09);
-    k.arch('trim', w, h, 0.16, face, across + w * 0.72, y, plane, 0.09);
+    k.arch('trim', w, h, 0.16, face, across - w * 0.72, y, plane, 0.10);
+    k.arch('trim', w, h, 0.16, face, across + w * 0.72, y, plane, 0.10);
     k.box('trim',
       face === 'E' || face === 'W' ? Math.min(plane, plane + sign * 0.12) : across - 0.1,
       face === 'E' || face === 'W' ? Math.max(plane, plane + sign * 0.12) : across + 0.1,
@@ -208,7 +237,7 @@ function crossing(k) {
   // Square belfry openings above the transept roofs, on the north and south.
   twin(k, 'N', SPIRE.u, 27.2, c.v0, 1.35, 8.4, false);
   twin(k, 'S', SPIRE.u, 27.2, c.v1, 1.35, 8.4, false);
-  if (k.near) {
+  {
     twin(k, 'W', SPIRE.v, 27.4, c.u0, 1.2, 6.5, false);
     twin(k, 'E', SPIRE.v, 27.4, c.u1, 1.2, 6.5, false);
   }
@@ -253,9 +282,9 @@ function windows(k) {
 
 function opening(k, face, across, y, plane, w, h, lit) {
   const sign = face === 'W' || face === 'N' ? -1 : 1;
-  k.lancetPanel(lit ? 'glow' : 'glass', w * 0.62, h * 0.78, face, across, y + h * 0.05, plane + sign * 0.05);
-  if (k.near) {
-    k.arch('trim', w, h, Math.max(0.16, w * 0.13), face, across, y, plane, 0.08);
+  k.lancetPanel(lit ? 'glow' : 'glass', w * 0.62, h * 0.78, face, across, y + h * 0.05, plane + sign * (0.10));
+  {
+    k.arch('trim', w, h, Math.max(0.16, w * 0.13), face, across, y, plane, 0.10);
     if (lit) k.arch('trim', w * 0.55, h * 0.72, 0.1, face, across, y + h * 0.08, plane, 0.1);
   }
 }
@@ -277,7 +306,7 @@ function flyers(k, side, piers, outer, wall) {
   for (const u of piers) {
     const vA = side < 0 ? pierOuter : outer - 0.02;
     const vB = side < 0 ? outer + 0.04 : pierOuter;
-    k.box('stone', u - 0.34, u + 0.34, 0, 11.3, Math.min(vA, vB), Math.max(vA, vB));
+    k.box('stone', u - 0.35, u + 0.35, 0, 11.3, Math.min(vA, vB), Math.max(vA, vB));
     const segments = k.near ? 4 : 1;
     for (let i = 0; i < segments; i++) {
       const t0 = i / segments, t1 = (i + 1) / segments;
@@ -332,7 +361,7 @@ function annexes(k) {
   const cv = (CHAPTER.v0 + CHAPTER.v1) / 2;
   k.apse('stone', CHAPTER.u1 - 0.15, cv, 0, CHAPTER.eaves - 0.3, 2.05);
   k.cone('roof', CHAPTER.u1 + 0.9, cv, CHAPTER.eaves - 0.5, CHAPTER.ridge - 0.4, 2.15, k.near ? 8 : 6);
-  if (k.near) opening(k, 'N', (CHAPTER.u0 + CHAPTER.u1) / 2, 1.6, CHAPTER.v0 + 0.28, 1.35, 4.4, false);
+  opening(k, 'N', (CHAPTER.u0 + CHAPTER.u1) / 2, 1.6, CHAPTER.v0 + 0.28, 1.35, 4.4, false);
   // St John's chapel and the lectorium, against the transepts' east sides.
   wing(k, { ...JOHANNES, u0: JOHANNES.u0 + 0.2, v0: JOHANNES.v0 + 0.22 }, 'S');
   wing(k, LECTORIUM, 'N');

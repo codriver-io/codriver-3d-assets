@@ -23,8 +23,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/romanian-athenaeum-near.glb",
-      "bytes": 1401112,
-      "triangles": 39460,
+      "bytes": 1374272,
+      "triangles": 37860,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -41,8 +41,8 @@
     },
     "far": {
       "url": "/models/buildings/romanian-athenaeum-far.glb",
-      "bytes": 308184,
-      "triangles": 8016,
+      "bytes": 361736,
+      "triangles": 9416,
       "drawCalls": 7,
       "bounds": {
         "min": [

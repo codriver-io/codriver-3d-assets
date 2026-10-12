@@ -54,7 +54,7 @@ How the orientation was read: the two views from the Calgary Tower and from the 
 
 ## Materials
 
-Ten in the near model: `roof` (light shell), `seam` (the eight thin darker ribbons on it), `glow` (the orange edge ring), `concrete` (wall, deck edge, portals, columns), `pier` (the lighter piers, ledge, deck top and soffit), `dark` (ground recess, deck underside, reveals, entrance, portholes), `light` (ribbon and slit windows), `red` (towers and pavilion), `yellow` (stair towers), `sign` (lettering, roof loop). Self-lit by the layer: `glow`, `light`, `sign`. Night swaps the palette to dimmer concrete and a bright orange ring, warm windows and a red-orange sign. The far model folds `pier` into `concrete` and `light` into `dark` (eight draws, the limit; the seams keep their own material so they stay a notch darker than the roof there too).
+Ten in the near model: `roof` (light shell), `seam` (the eight thin darker ribbons on it), `glow` (dark neutral edge ring by day, orange at night), `concrete` (wall, deck edge, portals, columns), `pier` (the lighter piers, ledge, deck top and soffit), `dark` (ground recess, deck underside, reveals, entrance, portholes), `light` (ribbon and slit windows), `red` (towers and pavilion), `yellow` (stair towers), `sign` (lettering, roof loop). Self-lit by the layer: `glow`, `light`, `sign`. Night swaps the palette to dimmer concrete and a bright orange ring, warm windows and a red-orange sign. The far model folds `pier` into `concrete` and `light` into `dark` (eight draws, the limit; the seams keep their own material so they stay a notch darker than the roof there too).
 
 ## Modelling decisions
 
@@ -64,20 +64,20 @@ Ten in the near model: `roof` (light shell), `seam` (the eight thin darker ribbo
 - The curved edge is sampled every 2.8 degrees near (the silhouette is read there) and 7.5 degrees far; the roof surface itself needs only seven rings.
 - The wall, deck and concourse are lofted profiles around the circle, one merged mesh per material. Hard edges are separate strips, so the normals are smooth round the circle and crisp across it.
 - The sixteen piers are 6-triangle prisms, the slit windows and portholes quads and fans, the lettering a 5 x 7 pixel face merged into runs.
-- Far keeps the saddle, the orange ring, the piers, the towers, the pavilion and two red bars for the words; it keeps the eight seams (228 triangles) and drops the reveals, columns, windows, the loop and the lettering's pixels.
+- Far keeps the saddle, the dark edge ring, the piers, the towers, the pavilion and two red bars for the words; it keeps the eight seams (228 triangles) and keeps three principal reveals and the slit/porthole openings, dropping the columns, the loop and the lettering's pixels.
 
 ## Approximations and what is not there
 
-The absolute heights are the main uncertainty: the 89 ft figure is read as the roof centre; a reading as the ring's low edge would lower the whole roof by about 6 m. The high-axis bearing is good to about 10 degrees. The red towers lack their rounded outer corner; the steps are ten steep treads with no railings or canopy; the north-east end is not mapped as a bulge so its towers and vestibule are an inference from photographs; the north-west portal has no lettering (not verified); the roof loop is one colour and has no S stem; the interior, the seating bowl, the scoreboard, the roof's actual panel joints (the eight seams are stand-ins for them along the principal directions, not a survey) and the 2013-flood details are not modelled. Cityscape and Full 3D world are not tested yet; integration is checked separately. Stampede Park is expected to be nearly flat under the 85 m pad, so no `terrainPad` is declared (unverified).
+The absolute heights are the main uncertainty: the 89 ft figure is read as the roof centre; a reading as the ring's low edge would lower the whole roof by about 6 m. The high-axis bearing is good to about 10 degrees. The red towers lack their rounded outer corner; the steps are ten steep treads with no railings or canopy; the north-east end is not mapped as a bulge so its towers and vestibule are an inference from photographs; the north-west portal has no lettering (not verified); the roof loop is one colour and has no S stem; the interior, the seating bowl, the scoreboard, the roof's actual panel joints (the eight seams are stand-ins for them along the principal directions, not a survey) and the 2013-flood details are not modelled. No explicit `terrainPad` is declared; captured world views show normal grade contact without an exposed pad edge.
 
 ## Costs (measured by `pnpm build:calgary-landmarks scotiabank-saddledome`)
 
 | | Triangles | Draws | Bytes |
 | --- | --- | --- | --- |
-| Near | 7,195 | 10 | 230 KB |
-| Far | 1,935 | 8 | 69 KB |
+| Near | 7,011 | 10 | 227 KB |
+| Far | 2,383 | 8 | 88 KB |
 
-Both are far under the building caps (60 k / 14 / 2.5 MB near, 12 k / 8 / 500 KB far) and the far model is about a quarter of the near one (before the seam pass: 6,831 / 9 / 218 KB near, 1,707 / 7 / 61 KB far).
+Both are far under the building caps (60 k / 14 / 2.5 MB near, 12 k / 8 / 500 KB far) and the far model is about a third of the near one (before the seam pass: 6,831 / 9 / 218 KB near, 1,707 / 7 / 61 KB far).
 
 ## Verification evidence
 
@@ -86,3 +86,16 @@ Rendered with `shot.mjs` (headless Chromium, red footprint ring, 10 m grid) and 
 What the looks changed: the first roof loop was two separate ellipses (like spectacles) and became a lemniscate; the far lettering was a flat quad that sank behind the curved beam (four slivers) and became a strip on the arc; the roof was too bright to read its curve and the above-roof view was too close; the night ribbon of windows was glaring white and became amber. The tests also pin that no ray sees through the eaves and every face under the ring faces the viewer (the `qa-metrics.mjs` ray sweep was run on the exported GLBs).
 
 Landmark test: `src/peregrine/landmarks/calgary/scotiabank-saddledome/scotiabank-saddledome.test.js` (twelve tests, about 0.6 s). It pins the mapped plan (a 70 m circle plus the bulge facing 241 degrees), the saddle (high at 61/241, low at 151/331, centre 27.1 m, 14 m and 6 m offsets, symmetric), the smooth ring, the 40.8 m top with nothing below grade, closure under the eaves, the orange fascia and the proud piers, the lettering and loop, the towers, pavilion and stair towers, the yellow stair towers reaching the soffit (rays up under each rim: within 5 cm below and 25 cm above it), the eight seams (under 500 triangles; a ray down every strand meets the seam first and the shell 5 to 40 cm below it; slightly darker than the roof in both themes), containment in the OSM outline, and the budgets.
+
+## QA fix pass — 2026-10-11
+
+Day fascia is dark neutral; orange illumination stays in the dark palette. Muted brick and stair-tower tones; added dark entrance-door/louvre panels. Both LODs retain three principal upper-wall divisions and the slit/porthole rhythm. Roof ring, saddle, piers and roof seam silhouette are retained.
+
+| LOD | Triangles before → after | Draws before → after | Bytes before → after |
+| --- | ---: | ---: | ---: |
+| near | 7,195 → 7,011 | 10 → 10 | 235,960 → 232,172 |
+| far | 1,935 → 2,383 | 8 → 8 | 71,044 → 89,864 |
+
+Cityscape: **verified**. Full 3D world: **verified**.
+
+Absolute height interpretation and end-tower rounded corners remain original estimates. Far has a slightly coarser division ribbon sampling. No hill or new site platform was authored; observed world frames show ordinary ground contact without an exposed pad edge. Lifecycle terrain toggles, failure/late reloads, origin shifts and Tesla hardware were not tested.

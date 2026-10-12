@@ -53,21 +53,22 @@ export function create({ detail = 'near' } = {}) {
       const at = (s, y, d = 0) => [a[0] + (c[0] - a[0]) * s / len + n[0] * d, y, a[1] + (c[1] - a[1]) * s / len + n[1] * d];
       const panel = (s0, s1, lo, hi, d, mat) => quad([at(s0, lo, d), at(s1, lo, d), at(s1, hi, d), at(s0, hi, d)], mat, [n[0], 0, n[1]]);
       panel(0, len, y0, y1, 0, 'glass');
-      // Narrow grey marble floor bands, not a white stone tower.
+      // Broad pale marble spandrels and vertical piers frame dark horizontal glazing.
       const pitch = 3.65, first = Math.max(1, Math.ceil((y0 - 8) / pitch));
-      for (let floor = first; 8 + floor * pitch < y1 - .5; floor += near ? 1 : 2) {
+      for (let floor = first; 8 + floor * pitch < y1 - .5; floor++) {
         const y = 8 + floor * pitch;
-        panel(.12, len - .12, y, y + (near ? .36 : .55), .16, 'band');
+        panel(.12, len - .12, y, Math.min(y1 - .12, y + 1.25), .16, 'band');
       }
+      for (let s = 0; s < len; s += 7.4) panel(Math.max(.02, s - .42), Math.min(len - .02, s + .42), Math.max(y0, level === 0 ? 8.1 : y0), y1 - .12, .34, 'band');
       const bays = Math.max(1, Math.round(len / 1.85)), width = len / bays;
       if (near) {
         // Alternating glass reflections and thin per-storey mullions; merged quads.
         for (let k = 0; k < bays; k++) {
           const s = k * width;
           for (let floor = 0; floor < 75; floor++) {
-            const lo = Math.max(y0 + .08, 8 + floor * pitch + .56), hi = Math.min(y1 - .35, 8 + (floor + 1) * pitch - .08);
+            const lo = Math.max(y0 + .08, 8 + floor * pitch + 1.40), hi = Math.min(y1 - .35, 8 + (floor + 1) * pitch - .08);
             if (hi <= lo) continue;
-            if ((k + edge) % 4 === 0) panel(s + .12, s + width - .12, lo, hi, .07, 'reflection');
+            if ((k + edge) % 4 === 0) panel(s + .12, s + width - .12, lo, hi, .12, 'reflection');
             if ((floor * 17 + k * 31 + edge * 11) % 41 === 0) panel(s + .2, s + width - .2, lo + .15, hi - .12, .13, 'glow');
             if (k) panel(s - .04, s + .04, lo, hi, .23, 'mullion');
           }

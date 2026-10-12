@@ -14,8 +14,8 @@ const PLAN = [[11.23,-9.72],[11.23,-12.77],[21.29,-12.77],[21.29,13.91],
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near', seg = near ? 8 : 4;
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  const put = (g,m) => b.put(g,m);
-  const box = (m,x0,x1,y0,y1,z0,z1) => b.box(m,[(x0+x1)/2,(y0+y1)/2,(z0+z1)/2],[x1-x0,y1-y0,z1-z0]);
+  const put = (g,m) => b.put(g,m === 'trim' ? 'sandstone' : m);
+  const box = (m,x0,x1,y0,y1,z0,z1) => b.box(m === 'trim' ? 'sandstone' : m,[(x0+x1)/2,(y0+y1)/2,(z0+z1)/2],[x1-x0,y1-y0,z1-z0]);
   const roofPut = (g,m) => put(stripCaps(g,(_x,y)=>y<-.9),m);
   const stripCaps = (g,predicate) => {
     if (g.index) g=g.toNonIndexed();
@@ -218,7 +218,7 @@ export function create({ detail = 'near' } = {}) {
   // Small stone cap blocks and roof ridge tiles touch their roof supports.
   for(const x of [-16.17,16.26]) {
     b.bar('roof',[x,20.75,-7.50],[x,20.75,8.95],.20,.20);
-    if(near)for(let z=-7.3;z<8.8;z+=.55)box('trim',x-.09,x+.09,20.63,20.83,z-.10,z+.10);
+    if(near)for(let z=-7.3;z<8.8;z+=.55)box('roof',x-.09,x+.09,20.63,20.83,z-.10,z+.10);
   }
   // Near roof tile ribs: shallow, on the visible pitched planes, no textures.
   if(near)for(const [x0,x1,z0,z1] of [[-21.82,-10.53,-12.91,14.32],[10.94,21.59,-13.08,14.22]]) {

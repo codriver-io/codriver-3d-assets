@@ -23,10 +23,10 @@ export const SPEC = {
 
 export const PALETTES = {
   light: {
-    brick: '#9b7548', stone: '#d3cebf', copper: '#5f9784', glass: '#3f5660', glow: '#3f5660', metal: '#59635f', sign: '#e8e3d2',
+    brick: '#866356', stone: '#adb0ac', mullion: '#adb0ac', copper: '#5f9784', glass: '#3f5660', glow: '#3f5660', metal: '#59635f', sign: '#e8e3d2',
   },
   dark: {
-    brick: '#5e4932', stone: '#878a8c', copper: '#3f6757', glass: '#1c262d', glow: '#ffcf86', metal: '#3b4140', sign: '#ffe0a0',
+    brick: '#514039', stone: '#878a8c', mullion: '#878a8c', copper: '#3f6757', glass: '#1c262d', glow: '#ffcf86', metal: '#3b4140', sign: '#ffe0a0',
   },
 };
 

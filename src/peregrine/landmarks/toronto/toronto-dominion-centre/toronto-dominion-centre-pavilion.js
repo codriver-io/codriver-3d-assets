@@ -64,6 +64,6 @@ export function buildPavilion(k, P, near) {
 
   // TD sign on the King Street face, inside the glazing.
   const kingFace = faceToward(faces, [-GRID.across[0], -GRID.across[1]]), size = 4.6, s0 = kingFace.len * 0.3;
-  panel('sign', kingFace, s0, s0 + size, p + 2.85, p + 2.85 + size, -GLAZING_SETBACK - 0.1);
-  if (near) tdLetters(k, kingFace, s0, p + 2.85, -GLAZING_SETBACK - 0.06);
+  panel('sign', kingFace, s0, s0 + size, p + 2.85, p + 2.85 + size, -GLAZING_SETBACK + 0.3);
+  if (near) tdLetters(k, kingFace, s0, p + 2.85, -GLAZING_SETBACK + 0.42);
 }

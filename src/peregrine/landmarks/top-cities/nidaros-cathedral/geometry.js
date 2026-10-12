@@ -1,3 +1,4 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES, MANIFEST } from './config.js';
 import { makeKit } from './nidaros-cathedral-kit.js';
@@ -10,6 +11,7 @@ export function create({ detail = 'near' } = {}) {
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
   buildNidaros(makeKit(b, detail === 'near'));
   const root = b.finish();
+  root.traverse(o=>{if(o.isMesh){const old=o.geometry;o.geometry=mergeVertices(old,1e-4);old.dispose();}});
   root.traverse((o) => {
     if (!o.isMesh) return;
     o.geometry.deleteAttribute('bridgeLift');

@@ -17,12 +17,12 @@
   },
   "elevationDatum": "Local grade y=0 on the flat Peregrine basemap (the sidewalk and plaza level round the building); no absolute altitude. Rotation (2.4 deg clockwise from the cardinal grid) is baked into the geometry.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Outline, orientation and the skybridge plan (8.2 m wide, about 32 m from the hotel street face to the east block, with 7 m flared ends) come from OSM; the 35 m span over 4 Street SE and the walkway about 19.8 m (65 ft) above the roadway are published figures quoted by architecture web summaries. Tower heights (34 m tallest), the split into seven east towers plus the west block and the bridge, the 30 m bridge top, the hotel heights (12.6 and 16.8 m for its three and five storeys), the tile tones (dark gunmetal with a bronze sheen, gold only in the lowest 10 m) and course height, slot windows, the triangular window (3.4 m wide, 15 to 22 m up, beside the bridge landing), the concave coves under the bridge ends and the entrance are estimated from photographs. The tower walls are flat with rounded corners (no barrelling). Tiles are merged horizontal courses, not individual tiles. No signage lettering, no interior, no trees or street furniture.",
+  "note": "Outline, orientation and the skybridge plan (8.2 m wide, about 32 m from the hotel street face to the east block, with 7 m flared ends) come from OSM; the 35 m span over 4 Street SE and the walkway about 19.8 m (65 ft) above the roadway are published figures quoted by architecture web summaries. Tower heights (34 m tallest), the split into seven east towers plus the west block and the bridge, the 30 m bridge top, the hotel heights (12.6 and 16.8 m for its three and five storeys), the tile tones (dark gunmetal with a bronze sheen, gold only in the lowest 10 m) and course height, slot windows, the triangular window (3.4 m wide, 15 to 22 m up, beside the bridge landing), the concave coves under the bridge ends and the entrance are estimated from photographs. Tower faces curve shallowly inward between rounded corners; bridge landings omit their internal wall faces, and continuous flared sidewalls and underside coves meet the towers. Tile divisions are a merged material mosaic, with reduced upper-wall contrast and bronze/gold variation at street level. No signage lettering, no interior, no trees or street furniture.",
   "assets": {
     "near": {
       "url": "/models/buildings/studio-bell-near.glb",
-      "bytes": 238428,
-      "triangles": 5129,
+      "bytes": 1036692,
+      "triangles": 23771,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -31,7 +31,7 @@
           -20.720142364501953
         ],
         "max": [
-          49.00992202758789,
+          49.00328063964844,
           34,
           20.301176071166992
         ]
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/studio-bell-far.glb",
-      "bytes": 71308,
-      "triangles": 1220,
+      "bytes": 417520,
+      "triangles": 9560,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -49,7 +49,7 @@
           -20.54706382751465
         ],
         "max": [
-          49.00992202758789,
+          49.00328063964844,
           34,
           20.301176071166992
         ]

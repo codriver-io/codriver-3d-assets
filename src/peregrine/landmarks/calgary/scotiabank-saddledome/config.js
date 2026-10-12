@@ -21,8 +21,8 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
-    roof: '#dfe2de', seam: '#bbc0bb', glow: '#cf5a30', concrete: '#aaa79e', pier: '#c1bfb6', dark: '#4b5159',
-    light: '#566670', red: '#c4503d', yellow: '#dcae17', sign: '#cc2b22',
+    roof: '#dfe2de', seam: '#bbc0bb', glow: '#514e49', concrete: '#aaa79e', pier: '#c1bfb6', dark: '#4b5159',
+    light: '#566670', red: '#795b4e', yellow: '#9b9275', sign: '#cc2b22',
   },
   dark: {
     roof: '#929ba3', seam: '#7a838c', glow: '#ff7a3d', concrete: '#5c6168', pier: '#70757b', dark: '#262c33',

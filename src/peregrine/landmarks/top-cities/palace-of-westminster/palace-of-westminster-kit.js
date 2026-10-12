@@ -71,6 +71,11 @@ export function kit(b, near) {
     const a0 = Math.min(along0, along1), a1 = Math.max(along0, along1);
     const o0 = Math.min(out0, out1), o1 = Math.max(out0, out1);
     if (a1 - a0 < 1e-4 || y1 - y0 < 1e-4 || o1 - o0 < 1e-4) return;
+    if (!near) {
+      const p=(a,y)=>facePoint(side,a,at,y,o1);
+      poly(mat,[p(a0,y0),p(a1,y0),p(a1,y1),p(a0,y1)],facePoint(side,(a0+a1)/2,at,(y0+y1)/2,o1-1));
+      return;
+    }
     if (side === 's') box(mat, a0, a1, y0, y1, at + o0, at + o1, 'n');
     else if (side === 'n') box(mat, a0, a1, y0, y1, at - o1, at - o0, 's');
     else if (side === 'e') box(mat, at + o0, at + o1, y0, y1, a0, a1, 'w');
@@ -88,7 +93,7 @@ export function kit(b, near) {
   // side: 's' +z, 'n' -z, 'e' +x, 'w' -x. `at` is the wall plane. `along` is the centre.
   // The centre of the opening stays glass: mullions sit off it, so a centre ray still hits the pane.
   function window(side, along, at, y, w, h) {
-    const proud = 0.22, head = near ? Math.min(w * 0.55, h * 0.28) : 0;
+    const proud = near ? 0.22 : 0.6, head = near ? Math.min(w * 0.55, h * 0.28) : 0;
     const body = h - head;
     const quad = (y0, y1, xL, xR) => {
       if (side === 's' || side === 'n') {

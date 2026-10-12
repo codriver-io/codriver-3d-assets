@@ -33,20 +33,9 @@ export function insetPoly(poly, d) {
   });
 }
 
-// Office rows from `base` upward on a `pitch`: a window of `win` m on a `sill` m sill. Far replaces the floors by a few
-// ribbon strips (one per ~8 floors: six on the west tower, four on the east, one on the block), each with the near window's
-// glass share (sill at 20 % of its slot, head at 72 %): the dark-and-granite banding survives at 800 m for a fraction of the
-// quads (three strips per tower were cheaper still, but read as a different building).
+// Keep every storey in both LODs; far simplifies vertical mullions, not floor cadence.
 export function officeRows(base, pitch, count, near, { sill = 0.78, win = 2.05 } = {}) {
   const rows = [];
-  if (!near) {
-    const slots = Math.max(1, Math.round(count / 8)), slot = (count * pitch) / slots;
-    for (let k = 0; k < slots; k++) {
-      const y0 = base + k * slot;
-      rows.push({ sill: y0 + slot * (sill / pitch), head: y0 + slot * ((sill + win) / pitch), y0, y1: y0 + slot });
-    }
-    return rows;
-  }
   for (let k = 0; k < count; k++) {
     const y0 = base + k * pitch;
     rows.push({ sill: y0 + sill, head: y0 + sill + win, y0, y1: y0 + pitch });
@@ -71,7 +60,7 @@ function clip(s0, s1, y1, y2, top) {
  *   a, b      wall ends (x, z), n its outward normal; inA, inB the same ends on the inset outline (the glass plane)
  *   topAt     y of the roof at a plan point (flat or the sloped plane); the wall is cut by it
  *   rows      [{ sill, head, lit? }] windows; yLo the bottom of the wall (above a podium where one hides the foot)
- *   near      full rhythm (3 m bays, piers as proud fins, lit windows); far has 12 m bays and a few ribbon strips
+ *   near      full rhythm (3 m bays, piers as proud fins, lit windows); far has 12 m bays and every floor strip
  * A window exists where its head clears the roof line by 0.5 m, so the top floors step down with the slope.
  */
 export function wall(M, near, o) {
@@ -130,7 +119,7 @@ export function wall(M, near, o) {
     }
   }
 
-  // Lit windows: a warm quad 7 cm in front of the glass, so by night a share of the floors glow.
+  // Lit windows: a warm quad 15 cm in front of the glass, so by night a share of the floors glow.
   const glow = M.get('glow');
   rows.forEach((r, k) => {
     const run = runs[k];
@@ -138,7 +127,7 @@ export function wall(M, near, o) {
     for (let j = run.j0; j <= run.j1; j++) {
       if (hash01(tag, k, j) >= (r.lit ?? lit)) continue;
       const s0 = Math.max(run.g0, j * pitch + pw / 2 + 0.1), s1 = Math.min(run.g1, (j + 1) * pitch - pw / 2 - 0.1);
-      if (s1 - s0 > 0.3) glow.quad(P(s0, r.sill + 0.1, -0.08), P(s1, r.sill + 0.1, -0.08), P(s1, r.head - 0.1, -0.08), P(s0, r.head - 0.1, -0.08), N);
+      if (s1 - s0 > 0.3) glow.quad(P(s0, r.sill + 0.1, 0), P(s1, r.sill + 0.1, 0), P(s1, r.head - 0.1, 0), P(s0, r.head - 0.1, 0), N);
     }
   });
 }

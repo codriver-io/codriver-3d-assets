@@ -57,8 +57,8 @@ export function buildCrystal(K, { near }) {
   // Interlocking prisms cross each other at shallow angles; a seam laid on one of those walls runs within centimetres of the
   // neighbour's plane along the crossing line and shimmers (the QA coplanar check flags it), so those walls stay plain.
   if (near) for (const [name, f] of Object.entries(solids)) {
-    K.seams(f.roof, { step: 0.62, width: 0.06, angle: 0 });
-    f.walls.forEach((w, i) => { if (w && !CRYSTALS[name].plainWalls?.includes(i)) K.seams(w, { step: 0.62, width: 0.06, angle: (i % 2) * Math.PI / 2 }); });
+    K.seams(f.roof, { step: 1.24, width: 0.025, off: 0.11, angle: 0 });
+    f.walls.forEach((w, i) => { if (w && !CRYSTALS[name].plainWalls?.includes(i)) K.seams(w, { step: 1.24, width: 0.025, off: 0.11, angle: (i % 2) * Math.PI / 2 }); });
   }
 
   // ---- A: the tallest prism, beside the 1933 gable. Its roof plane (about 46 x 30 m) carries the crossed glazed bands. ----

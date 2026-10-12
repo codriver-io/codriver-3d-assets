@@ -4,7 +4,9 @@ export const ANGLE=-29*Math.PI/180;
 export const sitePoint=(u,y,v)=>new THREE.Vector3(u*Math.cos(ANGLE)+v*Math.sin(ANGLE),y,-u*Math.sin(ANGLE)+v*Math.cos(ANGLE));
 export function missionKit(b,near) {
   const put=(g,m)=>{g.rotateY(ANGLE);b.put(g,!near&&m==='wood'?'iron':m,0,0);};
-  function box(m,u,y,v,w,h,d,a=0){const g=new THREE.BoxGeometry(w,h,d);g.rotateY(a);g.translate(u,y+h/2,v);put(g,m);}
+  function box(m,u,y,v,w,h,d,a=0){const g=new THREE.BoxGeometry(w,h,d);
+    if (m === 'trim' && ((w === 2.6 && h === .22) || h === .15)) g.setIndex([...g.index.array].slice(0,30)); // Sill/balcony back face is buried in the hotel wall.
+    g.rotateY(a);g.translate(u,y+h/2,v);put(g,m);}
   function cyl(m,u,v,y,h,r,rt=r,n=near?16:8){const g=new THREE.CylinderGeometry(rt,r,h,n);g.translate(u,y+h/2,v);put(g,m);}
   function lathe(m,u,v,profile,n=near?24:12){const g=new THREE.LatheGeometry(profile.map(p=>new THREE.Vector2(...p)),n);g.translate(u,0,v);put(g,m);}
   function bar(m,a,c,w,d=w){const av=new THREE.Vector3(...a),cv=new THREE.Vector3(...c),dv=cv.clone().sub(av);if(dv.length()<1e-5)return;const g=new THREE.BoxGeometry(w,dv.length(),d);g.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),dv.normalize()));g.translate(...av.add(cv).multiplyScalar(.5).toArray());put(g,m);}
@@ -28,13 +30,13 @@ export function missionKit(b,near) {
     const pane=new THREE.ShapeGeometry(archShape(w,h),near?3:2);pane.rotateY(a);pane.translate(u+nx*.12,y,v+nz*.12);put(pane,lit?'glow':'glass');
     if(surround){
       const s=archShape(w+.75,h+.42);s.holes.push(new THREE.Path(archShape(w+.22,h+.12).getPoints(near?3:2)));
-      const g=new THREE.ShapeGeometry(s,near?3:2);g.rotateY(a);g.translate(u+nx*.065,y-.18,v+nz*.065);put(g,'trim');
+      const g=new THREE.ShapeGeometry(s,near?3:2);g.rotateY(a);g.translate(u+nx*.34,y-.18,v+nz*.34);put(g,'trim');
     }
     if(!near)return;
-    const frame=archShape(w+.24,h+.12);frame.holes.push(new THREE.Path(archShape(w,h).getPoints(3)));const fg=new THREE.ShapeGeometry(frame,3);fg.rotateY(a);fg.translate(u+nx*.24,y-.06,v+nz*.24);put(fg,'wood');
-    mullion(u+nx*.29,v+nz*.29,y,.075,h-.12,a);
-    for(const yy of [y+h*.32,y+h*.65])mullion(u+nx*.29,v+nz*.29,yy,w,.07,a);
-    box('trim',u,y-.17,v,w+.3,.15,.55,a);
+    const frame=archShape(w+.24,h+.12);frame.holes.push(new THREE.Path(archShape(w,h).getPoints(3)));const fg=new THREE.ShapeGeometry(frame,3);fg.rotateY(a);fg.translate(u+nx*.56,y-.06,v+nz*.56);put(fg,'wood');
+    mullion(u+nx*.78,v+nz*.78,y,.075,h-.12,a);
+    for(const yy of [y+h*.32,y+h*.65])mullion(u+nx*.78,v+nz*.78,yy,w,.07,a);
+    if (!(v > -44 && v < -42.7 && y > 5 && y < 11)) box('trim',u,y-.17,v,w+.3,.15,.55,a); // Patio walkways carry these two storeys directly.
   }
   function hip(u0,u1,v0,v1,y,rise,m='roof'){
     const a=[u0,y,v0],c=[u1,y,v0],d=[u1,y,v1],e=[u0,y,v1],w=u1-u0,len=v1-v0;

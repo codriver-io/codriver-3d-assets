@@ -74,8 +74,14 @@ export function makeKit(b, near) {
       const outer = new THREE.Shape(vec(lancet(w, h, seg)));
       const inner = lancet(Math.max(0.2, w - border * 2), Math.max(0.4, h - border * 0.85), seg);
       outer.holes.push(new THREE.Path(vec(inner).reverse()));
-      const g = new THREE.ExtrudeGeometry(outer, { depth: 0.16, bevelEnabled: false });
-      put(place(g, face, across, y, plane - (face === 'W' || face === 'N' ? proud : -proud), 0.16), m);
+      if (!near) {
+        const g = new THREE.ShapeGeometry(outer);
+        put(place(g,face,across,y,plane-(face==='W'||face==='N'?proud:-proud),0),m);
+        return;
+      }
+      const depth = Math.max(0.16,proud+0.08);
+      const g = new THREE.ExtrudeGeometry(outer, { depth, bevelEnabled: false });
+      put(place(g, face, across, y, plane - (face === 'W' || face === 'N' ? proud : -proud), depth), m);
     },
     lancetPanel(m, w, h, face, across, y, plane) {
       kit.panel(m, lancet(w, h, seg), face, across, y, plane);
@@ -100,11 +106,11 @@ export function makeKit(b, near) {
       const f = (u, v, y) => [u, y, v];
       const drop = thick;
       faceQuad(m, f(u0, vA, yA), f(u0, vB, yB), f(u1, vB, yB), f(u1, vA, yA));
-      faceQuad(m, f(u0, vA, yA - drop), f(u1, vA, yA - drop), f(u1, vB, yB - drop), f(u0, vB, yB - drop));
+      if (near) faceQuad(m, f(u0, vA, yA - drop), f(u1, vA, yA - drop), f(u1, vB, yB - drop), f(u0, vB, yB - drop));
       faceQuad(m, f(u0, vA, yA), f(u1, vA, yA), f(u1, vA, yA - drop), f(u0, vA, yA - drop));
       faceQuad(m, f(u0, vB, yB), f(u0, vB, yB - drop), f(u1, vB, yB - drop), f(u1, vB, yB));
-      faceQuad(m, f(u0, vA, yA), f(u0, vA, yA - drop), f(u0, vB, yB - drop), f(u0, vB, yB));
-      faceQuad(m, f(u1, vA, yA - drop), f(u1, vA, yA), f(u1, vB, yB), f(u1, vB, yB - drop));
+      if (near) faceQuad(m, f(u0, vA, yA), f(u0, vA, yA - drop), f(u0, vB, yB - drop), f(u0, vB, yB));
+      if (near) faceQuad(m, f(u1, vA, yA - drop), f(u1, vA, yA), f(u1, vB, yB), f(u1, vB, yB - drop));
     },
     // West-facing stone gable (the screen triangle), with a little depth.
     screenGable(m, u, v, half, y0, rise, depth = 0.55) {

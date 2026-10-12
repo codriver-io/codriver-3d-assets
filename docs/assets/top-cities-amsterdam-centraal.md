@@ -1,5 +1,6 @@
 # Amsterdam Centraal station
 
+Current QA results are recorded below under 2026-10-11. Earlier costs, palettes and integration statements describe historical authoring snapshots.
 The 1889 headhouse on Stationsplein (P.J.H. Cuypers with A.L. van Gendt), Rijksmonument 5681, plus the Eijmer train sheds and the 1920 east block De Oost (Joseph Cuypers). A driver on Stationsplein sees a long red-brick front: two clock towers with pale dial panels and tiered slate spires, a steep central gable with a stone outline, and three tall glazed arches over a row of rectangular ground-floor bays. The wings carry stone bands and cross-gables, and the glass vaults of the platforms sit behind. The IJ-side bus station and the Noord-Zuid Hollandsch Koffiehuis are separate buildings and are not in this model.
 
 Origin `[4.9, 52.37833]` sits on the city facade between the towers. The long axis, 120.67°, is the weighted bearing of the long edges of Cuypersgebouw (OSM way 1239767708). Geometry is authored in that frame and rotated once into east / up / south. y = 0 is local platform grade. The island is flat fill, so there is no `terrainPad`.
@@ -48,3 +49,20 @@ Looked at `tmp/top-cities/shots/amsterdam-centraal/`:
 `amsterdam-centraal.test.js` raycasts the ridge, gable, tower apex, west wing, De Oost, Zuidkap crown, an upper arch (glow, off the mullion), a ground-floor bay, a tower dial and the stone band under it, and checks footprint overhang ≤ 1.2 m. A later colour pass moved the brick from `#c45c42` / `#7a3c32` to `#8e4036` / `#5a2a24` and was judged on the regenerated review sheet.
 
 Cityscape and Full 3D world: not tested yet, integration is checked separately.
+
+## 2026-10-11 QA correction
+
+2026-10-11 QA correction: Broader central gable, full-height stone tower piers and larger clock panels; all main wing window bays survive far LOD. Published/mapped heights are retained. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 11884 / 7 / 459 | 13756 / 7 / 558 |
+| far | 4741 / 7 / 210 | 5605 / 7 / 255 |
+
+No unresolved deterministic QA issues. Landmark tests and the matching city conformance tests pass; asset catalog validation and local preview build pass. Depth layers regenerated; this asset produces the same depth ordering as before, so there is no changed table hunk.
+
+Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, lifecycle transitions, DEM replacement and hardware performance not tested in this pass.
+
+The old reference contact sheet and every final exported/app frame were inspected.
+
+The broad gable is photograph-fitted rather than a new measured dimension; mapped apex and ridge heights are unchanged. Far bay surrounds are quads to preserve the window rhythm within half the near triangle count.

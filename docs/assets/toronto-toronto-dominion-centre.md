@@ -48,7 +48,7 @@ Real metres, +X east, +Y up, +Z south. `origin` `[-79.3815354, 43.647541]` is th
 - **One landmark, five bodies.** The Mies group and the later black towers are separate buildings with their own footprints; one origin and one owned-footprint list (seven OSM rings: the parts are listed beside their outlines because the provider extrudes whichever it receives) replace them together.
 - **Facade rhythm is geometry.** A tower is a bronze-glass box recessed 0.3 m behind the steel: spandrels per floor, I-beam mullions per module, corner columns, windowless louvered bands and crown, a recessed glass lobby with its own frame. Spandrels, mullions, louvers and columns are built from their visible faces only (`slab` in the kit: a spandrel is its face and underside, an I-beam mullion its two web flanks and the outer flange's front and sides). Lit-or-not panes are separate quads (`glow`) placed 0.07 m off the glass and behind the steel, chosen by a deterministic hash (neighbouring lit bays and floors merge into one rectangle, since the mullions and spandrels in front draw the grid): a warm daytime reflection in the light palette, a lit window in the dark one.
 - **The pavilion is open.** Columns, deep perimeter fascia, glazing frames and a two-way beam grid over a `lamp` ceiling and floor, with the living roof on top: it reads as the transparent hall it is, and glows at night through its open sides.
-- **Far keeps the silhouette.** The same five bodies, bands, crown, recessed lobbies with columns, the pavilion colonnade (every other column) and the four green signs; mullions on the 9.14 m grid only; no per-floor detail, panes, louvers, letters or ceiling grid (they are sub-pixel at range and shimmer).
+- **Far keeps the silhouette.** The same five bodies, bands, crown, recessed lobbies with columns, the pavilion colonnade (every other column) and the four green signs; mullions on the 9.14 m grid only; floor-scale spandrel detail, panes, louvers, letters or ceiling grid (they are sub-pixel at range and shimmer).
 - **Palettes.** Light: matte black steel `#18191b`, bronze glass `#443d36`. Dark: `#0e0f11` / `#1e1c1a` with amber lit panes, lobbies, pavilion floor and ceiling. `sign` is TD green, `light` the white of the lettering.
 
 ## Approximations and what is not modelled
@@ -61,8 +61,8 @@ Measured from the exported GLBs (`public/models/buildings/toronto-dominion-centr
 
 | Export | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 19 592 | 9 | 1 062 320 |
-| far | 1 796 | 7 | 100 784 |
+| Near | 19,548 | 11 | 1,061,884 |
+| Far | 3,032 | 7 | 167,512 |
 
 Weight pass (2026-10-01): near was 46 724 triangles / 2.91 MB (2.48 MB with the stripped `bridgeLift`; every spandrel, mullion, louver and lobby frame was a 12-triangle box and 5 900 lit panes were separate quads). The silhouette, grid, bands, lobbies, pavilion colonnade, signs and colours are unchanged; far shares the new column and mullion faces (3 060 to 1 796 triangles).
 
@@ -82,3 +82,13 @@ What the first pass got wrong and changed because of the screenshots: the `glow`
 ## Integration status
 
 Cityscape: **not tested yet**, integration is checked separately. Full 3D world: **not tested yet**, integration is checked separately. The model is a rigid body on a 0.9 m plinth over flat grade; a terrain pad of 140 m radius around the origin is declared (`padM`). The TD Bank Tower and TD North Tower are heritage-designated; this is a visual model, not a survey.
+
+## QA revision 2026-10-11
+
+Far retains each 3.66 m floor spandrel and bronze-glass interval. A separate provider envelope covers the Banking Pavilion roof with 1.5 m quantisation allowance without changing its model plan. Recessed facade glazing has no hidden box caps; distinct louver/lobby materials and separated logo layers eliminate depth-layer cycles.
+
+Reference basis: the supplied review and reference photograph in its contact sheet, plus the existing authoring notes. No new city dossier exists for these first-run Calgary/Toronto assets; the sculptural approximation uses the existing documented plan and general architectural knowledge.
+
+Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed.
+
+The square/pavilion is clear; the pale/translucent block in the default angled capture is a legitimate foreground perimeter building projecting over it, so that building is retained.

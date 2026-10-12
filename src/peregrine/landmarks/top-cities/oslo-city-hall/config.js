@@ -12,8 +12,8 @@ export const SPEC = {
 };
 export const PALETTES = {
   light: {
-    brick: '#5a2e26', stone: '#c8c2b6', copper: '#4d7362', glass: '#2b323b',
-    glow: '#f3ead6', brass: '#a68642',
+    brick: '#5a2e26', stone: '#a69d8b', copper: '#4d7362', glass: '#2b323b',
+    glow: '#f3ead6', brass: '#c4ad77',
   },
   dark: {
     brick: '#3e241e', stone: '#8d8980', copper: '#3a5648', glass: '#14181e',

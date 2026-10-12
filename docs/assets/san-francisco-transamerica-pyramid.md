@@ -134,3 +134,20 @@ Tests: `src/peregrine/landmarks/san-francisco/transamerica-pyramid/transamerica-
 tip height and base width by raycast, the straight faces, the 44 window rows, the wings' width, start, position and pitched
 top, the spire and louvres and crown, the open arcade (in both LODs), far silhouette and cost, outline containment and the
 exported GLBs.
+
+## 2026-10-11 follow-up QA (current)
+
+Added the exact Protomaps z13–15 quantized tower contours (provider feature 35184396311805 / OSM way 24222973) to this landmark’s footprint list. Added vertex ownership and 44-floor far window-ray regressions. Kept all existing tower parts and the adjacent Redwood Park pavilion ownership boundary.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 17088 / 7 / 911 | 17088 / 7 / 911 |
+| far | 2970 / 7 / 166 | 2970 / 7 / 166 |
+
+Mandatory exported QA reports no unresolved issues. Focused landmark and city conformance tests, catalog validation, preview generation and the full depth-layer freshness check pass. Mission Inn’s regenerated far material ordering is committed; the other four regenerated entries are unchanged.
+
+Cityscape: verified daytime visual inspection of near/far and street frames. Full 3D world: verified daytime visual inspection with Terrarium terrain. Near-named shots on the tall towers select far LOD at their auto-adjusted zoom; street shots select near. Night, full lifecycle/mode transitions, hardware performance and terrain refinement sweeps were not tested.
+
+Remaining: The reported own-provider prism was not reproduced on the current rebuilt source: live unmasked provider geometry within 40 m contains no triangles above 20 m; the only retained part there is the 5 m park pavilion. Real neighboring towers still overlap it in the default screenshot because they lie between camera and landmark; deleting those would erase unowned buildings. The newer geometry-only window check flags the continuous far backing glass as four tall/wide panes, but all 44 visible bands and intervening quartz spandrels pass outward-ray tests. This is a backing-geometry false positive, not a dropped window band.
+
+The newer geometry-only window check counts hidden glass backing as giant far panes. All 44 visible floor bands and their quartz spandrels are independently checked by outward rays; no far window bands were dropped.

@@ -17,7 +17,7 @@ const stairBottom = (a) => STAIR.yLow + STAIR.rise * (STAIR.aLow - a) / (STAIR.a
  * toward Grande Allée: the 50 x 54 m first volume (ground-floor glazing and a pale translucent band, a terrace roof), the 46 x 36 m second volume
  * and, above the street end, the 42.5 x 25 m top box in diffuser glass with its truss, cantilevered 21 m over the entrance plaza above a 12.5 m
  * glazed hall; the glazed stair hung on the south-west side; terraced green roofs; the gold lantern on the top box. far keeps the same
- * silhouette and negative space (cantilever, recessed ground floor, stair, terraces) with plain walls and no mullions or trusses.
+ * silhouette and negative space (cantilever, recessed ground floor, stair, terraces) with sparse glazing joints, frit diagonals and stair frames.
  */
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near';
@@ -31,14 +31,13 @@ export function create({ detail = 'near' } = {}) {
   const CON = near ? 'concrete' : 'frit'; // far folds the concrete into the pale frit to stay at seven draws
   function skin(f, t0, t1, list, { post = 0, y0 = null, y1 = null, rails = [] } = {}) {
     const bands = list;
-    for (const [ya, yb, m] of bands) s(m).panel(f, t0, t1, ya, yb);
-    if (!near) return;
+    for (const [ya, yb, m] of bands) s(m).panel(f, t0, t1, ya, yb, !near && ['glass', 'light', 'glow'].includes(m) ? -0.12 : 0);
     const lo = y0 ?? bands[0][0], hi = y1 ?? bands[bands.length - 1][1];
     if (post) {
       const n = Math.max(1, Math.round((t1 - t0) / post));
-      for (let k = 0; k <= n; k++) s('steel').mullion(f, t0 + (t1 - t0) * k / n, lo, hi, 0.14, 0.1);
+      for (let k = 0; k <= n; k++) s(near ? 'steel' : 'frit').mullion(f, t0 + (t1 - t0) * k / n, lo, hi, near ? 0.14 : 0.10, near ? 0.15 : 0.0);
     }
-    for (const y of rails) s('steel').rail(f, t0, t1, y, 0.22, 0.1);
+    if (near) for (const y of rails) s('steel').rail(f, t0, t1, y, 0.22, 0.15);
   }
 
   // Bands of the exposed walls. Ground floor 0-5 clear glass; first volume 5-8.5 pale translucent panels; the second volume's glow strip.
@@ -82,14 +81,13 @@ export function create({ detail = 'near' } = {}) {
   const y3 = Y.v2, y3t = Y.v3;
   const TOP_ROWS = [[y3, 14.3, 'frit'], [14.3, 19.2, 'glow'], [19.2, 20.6, 'frit'], [20.6, 25.7, 'glow'], [25.7, y3t, 'frit']];
   function topSkin(f, bayLen) {
-    for (const [ya, yb, m] of TOP_ROWS) s(m).panel(f, 0, f.len, ya, yb);
-    if (!near) return;
-    const n = Math.max(2, Math.round(f.len / 2.1));
-    for (let i = 1; i < n; i++) for (const [ya, yb, m] of TOP_ROWS) if (m === 'glow') s('steel').mullion(f, f.len * i / n, ya, yb, 0.07, 0.08);
+    for (const [ya, yb, m] of TOP_ROWS) s(m).panel(f, 0, f.len, ya, yb, !near && m === 'glow' ? -0.12 : 0);
+    const n = Math.max(2, Math.round(f.len / (near ? 2.1 : 4.2)));
+    for (let i = 1; i < n; i++) for (const [ya, yb, m] of TOP_ROWS) if (m === 'glow') s('frit').mullion(f, f.len * i / n, ya, yb, 0.07, near ? 0.15 : 0);
     const bays = Math.max(2, Math.round(f.len / bayLen));
     for (let k = 0; k < bays; k++) {
       const t0 = f.len * k / bays, t1 = f.len * (k + 1) / bays;
-      if (k % 2) s('steel').brace(f, t0, y3t - 0.4, t1, y3 + 0.4, 0.26, 0.14); else s('steel').brace(f, t0, y3 + 0.4, t1, y3t - 0.4, 0.26, 0.14);
+      if (k % 2) s('frit').brace(f, t0, y3t - 0.4, t1, y3 + 0.4, near ? 0.16 : 0.12, near ? 0.15 : 0); else s('frit').brace(f, t0, y3 + 0.4, t1, y3t - 0.4, near ? 0.16 : 0.12, near ? 0.15 : 0);
     }
   }
   topSkin(face([nwEnd, sw], [nwEnd, v3Width], [-1, 0]), 12.65); // the street end, 25.3 m wide
@@ -133,8 +131,8 @@ export function create({ detail = 'near' } = {}) {
     s('glass').quad(F(aLow, yb(aLow), bo), F(aLow, yt(aLow), bo), F(aLow, yt(aLow), depth), F(aLow, yb(aLow), depth), F(aLow + 10, yb(aLow) + h / 2, depth / 2)); // low end
     s('frit').quad(F(aHigh, yb(aHigh), bo), F(aHigh, yt(aHigh), bo), F(aHigh, yt(aHigh), sw), F(aHigh, yb(aHigh), sw), F(aHigh + 10, (yb(aHigh) + yt(aHigh)) / 2, bo)); // the strip of the high end that stands outside the top box's south-west face
     s('frit').quad(F(aLow, yb(aLow), depth), F(aHigh, yb(aHigh), depth), F(aHigh, yt(aHigh), depth), F(aLow, yt(aLow), depth), F((aLow + aHigh) / 2, yb(aLow) + h / 2, depth + 10)); // north-east side
-    if (near) {
-      const N = 16, w = 0.09, out = dB(0.1), up = [0, 0.1, 0];
+    {
+      const N = near ? 16 : 8, w = near ? 0.09 : 0.07, out = dB(0.15), up = [0, 0.15, 0];
       for (let k = 0; k <= N; k++) { // white frames across the side and over the roof
         const a = aLow + (aHigh - aLow) * k / N, a0 = Math.max(aHigh, a - w), a1 = Math.min(aLow, a + w);
         s('frit').slat([F(a0, yb(a0), bo), F(a1, yb(a1), bo), F(a1, yt(a1), bo), F(a0, yt(a0), bo)], out, [1, 3]);

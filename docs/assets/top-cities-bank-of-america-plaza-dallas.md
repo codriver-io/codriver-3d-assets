@@ -1,5 +1,6 @@
 # Bank of America Plaza, Dallas
 
+Current QA results are recorded below under 2026-10-11. Earlier costs, palettes and integration statements describe historical authoring snapshots.
 Original procedural model of the completed 1985 JPJ Architects tower at **901 Main Street**, with the present programmable facade outline represented in its iconic green night state. The blue curtain wall, narrow gray marble floor bands, faceted staircase plan and stepped crown identify the tower from downtown streets and skyline distance. No neighboring tower, parking garage, detached canopy, street or park is authored.
 
 ## Sources and dimensions
@@ -63,3 +64,20 @@ Both are well below the contract caps. Exported bounds and material names agree 
 Intermediate crown elevations, facade bay layout, lobby doors and lighting tube thickness are approximations. The shell has no interiors, operating doors, small rooftop communications equipment, exact marble joints, reflected skyline textures or programmable color schedule. Self-lit geometry approximates luminous tubes without bloom. Photograph reflections and office occupancy are stylized.
 
 **Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately.** The rigid grade-level tower and bounded 43 m pad should suit the downtown site, but DEM relief, entrances, provider masking, late loads, terrain refinement, mode switches and actual device performance remain unverified. No app/server/deployment or shared files were changed.
+
+## 2026-10-11 QA correction
+
+2026-10-11 QA correction: Broad light stone spandrels and vertical strips surround dark grey-green windows in both LODs; six mapped crown levels remain intact. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 25008 / 8 / 1275 | 25278 / 8 / 1289 |
+| far | 4032 / 5 / 191 | 6414 / 5 / 317 |
+
+No unresolved deterministic QA issues. Landmark tests and the matching city conformance tests pass; asset catalog validation and local preview build pass. Depth layers regenerated; this asset produces the same depth ordering as before, so there is no changed table hunk.
+
+Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, lifecycle transitions, DEM replacement and hardware performance not tested in this pass.
+
+The old reference contact sheet and every final exported/app frame were inspected.
+
+The default tall-tower app near capture selects far LOD at zoom 16.3; street selects near. The contact sheet uses enlarged framing bounds so overview and far tiles include the complete crown. Reflections, marble joints and intermediate crown elevations remain approximations.

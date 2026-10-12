@@ -251,12 +251,12 @@
   },
   "elevationDatum": "Local grade y=0 is the plaza in front of the portal stair (about 11 m above sea level on the public DEM: 10.1 to 12.2 m under the outline, median 11.0); the portal floor is 2.2 m above it, the galleries 0.6 m. The terrace, the bank to the St. Lawrence and the plaza are not modelled. Full 3D world uses an explicit terrain pad (terrainPad): the outline held at its median DEM with an 8 m feather.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Sourced: 258 ft (78.6 m) to the cross, the octagonal plan with four transept arms, the pyramidal copper roof with a lantern and spire, the parabolic portal arch with a 7.3 m statue, the two covered galleries ending in edicules, the sacristy, the mapped outline and axis. Estimated from photographs and the outline (no other published dimension was found): the octagon apothem (26.5 m), the eaves (19.5 m), gable apexes (30 m), the portal tower (24 m wide at the base, 36 m to the crown), the arch size (16 m wide, 24.5 m to the apex), the lantern and spire heights, the gallery and pavilion sizes, window and rose positions and the roof patchwork. The diagonal gables follow the photographs; the back of the building is inferred from the outline. Interior, ornament, lettering, the Petit Sanctuaire, the Pavillon des visiteurs and the plaza are not modelled.",
+  "note": "Sourced: 258 ft (78.6 m) to the cross, the octagonal plan with four transept arms, the pyramidal copper roof with a lantern and spire, the parabolic portal arch with a 7.3 m statue, the two covered galleries ending in edicules, the sacristy, the mapped outline and axis. Estimated from photographs and the outline (no other published dimension was found): the octagon apothem (26.5 m), the eaves (19.5 m), gable apexes (30 m), the portal tower (24 m wide at the base, 36 m to the crown), the arch size (16 m wide, 24.5 m to the apex), the lantern and spire heights, the gallery and pavilion sizes, window and rose positions and the muted fall-line copper weathering (shared by both LODs). The diagonal gables follow the photographs; the back of the building is inferred from the outline. Interior, ornament, lettering, the Petit Sanctuaire, the Pavillon des visiteurs and the plaza are not modelled.",
   "assets": {
     "near": {
       "url": "/models/buildings/notre-dame-du-cap-near.glb",
-      "bytes": 200560,
-      "triangles": 4389,
+      "bytes": 185308,
+      "triangles": 4069,
       "drawCalls": 11,
       "bounds": {
         "min": [
@@ -273,9 +273,9 @@
     },
     "far": {
       "url": "/models/buildings/notre-dame-du-cap-far.glb",
-      "bytes": 64568,
-      "triangles": 1074,
-      "drawCalls": 8,
+      "bytes": 87188,
+      "triangles": 1778,
+      "drawCalls": 7,
       "bounds": {
         "min": [
           -51.17269515991211,

@@ -1,8 +1,8 @@
 # Reunion Tower
 
 Asset `reunion-tower`, 300 Reunion Boulevard, Dallas. Original procedural model of the
-observation tower: an open geodesic ball (aluminium struts, round light nodes, a blue glass
-belt, a concrete deck ring and a crown) on a banded central shaft and three outer elevator
+observation tower: an open geodesic ball (aluminium struts, round light nodes, a neutral blue-grey glass
+belt, a concrete deck ring and a crown) on a pale central shaft and three outer elevator
 shafts with glazed faces. Contract: [3d-top-cities-landmarks.md](../top-cities-landmarks.md).
 Source: `src/peregrine/landmarks/top-cities/reunion-tower/`.
 
@@ -30,16 +30,16 @@ Source: `src/peregrine/landmarks/top-cities/reunion-tower/`.
 | Glass belt | spherical zone 0.55 m inside the struts, y 152.55–162.7 | estimated from the Tribble worm’s-eye |
 | Deck ring | annulus y 151.05–152.35, inner radius 7.6 m, outer 13.85 m, plus an open lip at y 162.95 | estimated; a solid disc filled the basket and was opened |
 | Crown | cylinder radius 4.4–4.7 m around y 166, with a lip at 168.25 m | estimated from the open cap in the photographs |
-| Shafts | centre and three outers from y 0 to 151.15 m, pour bands 3.6 m (8 bands on the far LOD), short collar into the deck | radii and bearings mapped; band pitch estimated |
+| Shafts | centre and three outers from y 0 to 151.15 m, thin pour seams at 3.6 m pitch near, continuous pale shafts far, short collar into the deck | radii and bearings mapped; band pitch estimated |
 | Elevator glass | one 0.95 m strip per outer shaft, proud of the concrete | estimated width; the outward face is the mapped one |
 
 ## Materials
 
-Seven merged materials, one draw each: `concrete` and `concrete_dark` (alternating pour bands, deck, crown), `glass` (observation belt and the three elevator strips), `metal` (struts), and `glow` / `light` / `lamp` (light housings). Those three names are unshaded: nearly the same aluminium grey by day, and red / cyan / amber latitude bands at night. Light and dark palettes share keys. No textures.
+Seven merged materials, one draw each: `concrete` and `concrete_dark` (uniform shafts with thin pour joints, deck, crown), `glass` (observation belt and the three elevator strips), `metal` (struts), and `glow` / `light` / `lamp` (light housings). Those three names are unshaded: nearly the same aluminium grey by day, and red / cyan / amber latitude bands at night. Light and dark palettes share keys. No textures.
 
 ## Modelling decisions
 
-- The silhouette is the ball on four banded shafts. From a few hundred metres the shafts read as one mast with blue seams, which is what the postcard shows; the four columns separate in the street and worm’s-eye views.
+- The silhouette is the ball on four pale shafts. From a few hundred metres the shafts read as one mast with grey glass strips, which is what the postcard shows; the four columns separate in the street and worm’s-eye views.
 - The ball is a strut-and-node cage, not a solid drum. The glass is a belt. Below it the deck is a ring and the lattice hangs around the column tops. The crown stands in the open upper cap.
 - The sphere follows the mapped ring so the model sits inside the red footprint. The top node is exactly the published 171 m.
 - Far LOD keeps the same radii, deck, crown, glass and four shafts, with a coarser cage, so the bbox matches the near model within a metre.
@@ -57,8 +57,21 @@ Seven merged materials, one draw each: `concrete` and `concrete_dark` (alternati
 
 ## Verification
 
-Compared with the dossier photographs (`tmp/top-cities/reunion-tower/refs/`, not shipped): the postcard (Batrak), the four shafts (Tribble 0262) and the worm’s-eye basket (Tribble 0244). Renders: `tmp/top-cities/shots/reunion-tower/` procedural near light (overview, facade, roof, ball, shafts, plan) and the exported GLB near/far in light and dark. Cityscape and Full 3D world: not tested yet, integration is checked separately.
+Compared with the dossier photographs (`tmp/top-cities/reunion-tower/refs/`, not shipped): the postcard (Batrak), the four shafts (Tribble 0262) and the worm’s-eye basket (Tribble 0244). Renders: `tmp/top-cities/shots/reunion-tower/` procedural near light (overview, facade, roof, ball, shafts, plan) and the exported GLB near/far in light and dark.
 
 ## Cost
 
-Near 25,128 triangles, 7 draws, 725 KB. Far 4,244 triangles, 7 draws, 127 KB. Building budget is 60,000 / 14 / 2.5 MB near and 12,000 / 8 / 500 KB far.
+Near 25,128 triangles, 7 draws, 725 KB. Far 3,740 triangles, 7 draws, 111 KB. Building budget is 60,000 / 14 / 2.5 MB near and 12,000 / 8 / 500 KB far.
+
+## QA fix pass — 2026-10-11
+
+Replaced alternating full-height shaft bands with uniform pale concrete and 8 cm high, low-contrast pour seams near; far shafts are continuous. Elevator glazing stands 10 cm clear of the shaft. Observation glass is neutral blue-grey; the silver geodesic cage remains visible above and below it.
+
+| LOD | Triangles before → after | Draws before → after | Bytes before → after |
+| --- | ---: | ---: | ---: |
+| near | 25,128 → 25,128 | 7 → 7 | 742,736 → 742,732 |
+| far | 4,244 → 3,740 | 7 → 7 | 130,516 → 114,084 |
+
+Cityscape: **verified**. Full 3D world: **verified**.
+
+Animated light show, maintenance walkways and Hyatt remain omitted. Default street capture crops the globe; the near app frame and expanded exported sheet show the whole tower. The night street frames verify lower shafts/base, while the globe night palette was additionally verified in current near/far exported ball/shaft sheets under details/reunion. Lifecycle terrain toggles, failure/late reloads, origin shifts and Tesla hardware were not tested.

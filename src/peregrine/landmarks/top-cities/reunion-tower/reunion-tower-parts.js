@@ -1,5 +1,5 @@
 // Reunion Tower parts. The silhouette is the geodesic ball (aluminium struts, round light
-// housings, a blue glass belt, a concrete crown) on a banded central shaft and three
+// housings, a blue-grey glass belt, a concrete crown) on a pale central shaft and three
 // slimmer elevator shafts. Numbers live on SPEC; see config.js for what is mapped
 // and what is estimated.
 import * as THREE from 'three';
@@ -90,11 +90,14 @@ function nodeCloud(points, keep, radius) {
 }
 
 function bandedColumn(b, x, z, radius, y0, y1, sides, bands) {
-  const h = (y1 - y0) / bands;
-  for (let i = 0; i < bands; i++) {
-    const g = new THREE.CylinderGeometry(radius, radius, h, sides, 1, true);
-    g.translate(x, y0 + (i + 0.5) * h, z);
-    b.put(g, i % 2 === 0 ? 'concrete' : 'concrete_dark');
+  const shaft = new THREE.CylinderGeometry(radius, radius, y1 - y0, sides, 1, true);
+  shaft.translate(x, (y0 + y1) / 2, z);
+  b.put(shaft, 'concrete');
+  // Pour joints are thin low-contrast seams, never alternating full-height bands.
+  if (bands > 8) for (let i = 1; i < bands; i++) {
+    const joint = new THREE.CylinderGeometry(radius + 0.11, radius + 0.11, 0.08, sides, 1, true);
+    joint.translate(x, y0 + i * (y1 - y0) / bands, z);
+    b.put(joint, 'concrete_dark');
   }
   // A short collar, just proud of the shaft, sleeved into the deck so the skins never share a plane.
   const cap = new THREE.CylinderGeometry(radius + 0.16, radius + 0.06, 0.55, sides, 1, true);
@@ -106,7 +109,7 @@ function elevatorGlass(b, x, z, radius, y0, y1) {
   const dist = Math.hypot(x, z) || 1;
   const ux = x / dist, uz = z / dist;
   // Box local +Z rotates to (sin θ, cos θ) = outward, so the thin face stands proud of the shaft.
-  const proud = 0.08, depth = 0.1;
+  const proud = 0.15, depth = 0.1;
   b.box('glass', [x + ux * (radius + proud), (y0 + y1) / 2, z + uz * (radius + proud)], [0.95, y1 - y0, depth], Math.atan2(ux, uz));
 }
 

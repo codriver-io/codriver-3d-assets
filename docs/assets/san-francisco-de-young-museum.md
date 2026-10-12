@@ -1,5 +1,6 @@
 # de Young Museum (San Francisco)
 
+Current QA results are recorded below under 2026-10-11. Earlier costs, palettes and integration statements describe historical authoring snapshots.
 `de-young-museum` · Herzog & de Meuron with Fong + Chan Architects, opened 15 October 2005 · 50 Hagiwara Tea Garden Drive, Golden Gate Park. Part of the [San Francisco landmarks](../san-francisco-landmarks.md); source in `src/peregrine/landmarks/san-francisco/de-young-museum/`.
 
 ## Identity and state modelled
@@ -87,3 +88,20 @@ The `tower` material read near-black olive against the warm copper: lightened ab
 ## Integration
 
 Cityscape (flat ground reference): not tested yet; integration is checked separately. Full 3D world (topography): not tested yet. The museum is a rigid structure on local `y = 0`; the terrain pad (`padM` 96 m) covers the outline, the tower overhang and the entrance forecourt. The Music Concourse in front is a sunken oval and is not modelled; no relief is baked in.
+
+## 2026-10-11 QA correction
+
+2026-10-11 QA correction: Weathered grey-brown copper with low-contrast roof panels; far tower keeps narrow storey frames and the two slit bands. See current QA evidence and costs in the landmark documentation; older authoring observations are historical.
+
+| LOD | Before triangles / draws / KiB | After triangles / draws / KiB |
+| --- | --- | --- |
+| near | 2723 / 11 / 218 | 2723 / 11 / 218 |
+| far | 495 / 7 / 45 | 719 / 7 / 62 |
+
+No unresolved deterministic QA issues. Landmark tests and the matching city conformance tests pass; asset catalog validation and local preview build pass. Depth layers regenerated; this asset produces the same depth ordering as before, so there is no changed table hunk.
+
+Full 3D world: verified for the same daytime visual captures with Terrarium terrain. Night, lifecycle transitions, DEM replacement and hardware performance not tested in this pass.
+
+The old reference contact sheet and every final exported/app frame were inspected.
+
+Perforation is represented by panel tones; the sunken Music Concourse is omitted. The far tower keeps transverse frames and two slit bands without modeling the complete stairs.

@@ -73,3 +73,13 @@ Near 30 418 triangles, 10 draw calls, 2.03 MB. Far 6 806 triangles, 8 draw calls
 ## Sources
 
 Wikipedia [Toronto City Hall](https://en.wikipedia.org/wiki/Toronto_City_Hall) and [Nathan Phillips Square](https://en.wikipedia.org/wiki/Nathan_Phillips_Square); [Canadian Encyclopedia](https://www.thecanadianencyclopedia.ca/en/article/toronto-city-hall); [Toronto Journey 416](https://www.torontojourney416.com/new-city-hall/); [City of Toronto exhibit](https://www.toronto.ca/explore-enjoy/history-art-culture/online-exhibits/web-exhibits/web-exhibits-local-government/a-step-forward-in-time-torontos-new-city-hall/); OpenStreetMap ways 27767543, 27767544, 27767545, 963504341, 963504342, 963504343, 963504344, 963504345, 293907515, 198500761, relation 542980, and the square's pool, arch, sign, walkway and garden ways, read 2026-09-29 through the shared Overpass queue (ODbL 1.0, contributors credited). The lead brief's note gave the east tower as the shorter; the OSM tags, Wikipedia and every photograph show the east tower is the taller (99.5 m).
+
+## QA revision 2026-10-11
+
+Far retains a glass band and thin floor course for each storey on both concave faces. Provider ownership also covers the open square inside the elevated walkway, while Old City Hall and perimeter offices remain separate. Inner mullions use the concrete material and the far podium deck uses concrete, removing cross-region material-layer cycles.
+
+Reference basis: the supplied review and reference photograph in its contact sheet, plus the existing authoring notes. No new city dossier exists for these first-run Calgary/Toronto assets; the sculptural approximation uses the existing documented plan and general architectural knowledge.
+
+Cityscape: verified visually at far, near and street. Full 3D world: verified visually with terrain enabled at far, near and street; world-state.json confirms terrain enabled, terrain rings active and the landmark lifted to its terrain datum. Verification is limited to the captured views; no lifecycle, night, hardware or terrain-toggle coverage is claimed.
+
+The square/pavilion is clear; the pale/translucent block in the default angled capture is a legitimate foreground perimeter building projecting over it, so that building is retained.

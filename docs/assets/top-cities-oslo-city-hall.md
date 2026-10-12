@@ -48,8 +48,8 @@ Six materials, same names in day and night: `brick`, `stone`, `copper`, `glass`,
 
 | Variant | Triangles | Draws | Bytes | KiB |
 | --- | ---: | ---: | ---: | ---: |
-| Near | 15,000 | 6 | 811,976 | 793 |
-| Far | 4,914 | 6 | 268,660 | 262 |
+| Near | 15,028 | 6 | 710,872 | 694 |
+| Far | 4,316 | 6 | 235,456 | 230 |
 
 Both are inside the building caps (60k / 14 / 2.5 MB near; 12k / 8 / 500 KB far). Near and far bounds match (about 102 × 66 × 122 m). The tallest vertex is the east crown at 66 m. Nothing sits below grade. The furthest vertex is a colonnade pier 0.88 m outside the union of the mapped rings.
 
@@ -65,3 +65,11 @@ Sheets in ignored `tmp/top-cities/shots/oslo-city-hall/`:
 ## Approximations
 
 OSM calls the roof a 0.3 m brown gable at 27.4 m. The harbour photograph is a flat roof behind a brick parapet, so the parapet is the mapped 27 m and a thin copper plane sits at 25.05 m, hidden from the street. The east tower's small green lantern is not modelled; both crowns are flat brick. The courtyard link height, storey grid, colonnade count, loggia spacing and relief are not surveyed. The relief stands in for the harbour sculpture and for St. Hallvard; it is not a figure. Clock hands are a fixed pose. The swan fountain, lettering, Nobel ceremony fittings, interiors and the neighbouring blocks are omitted. The tiny east-tower tip and nub in OSM are not modelled as needles.
+
+## QA revision — 2026-10-11
+
+Open harbour clock rim, twelve marks and hands over brick, with the courtyard astronomical face retained independently; subdued pale stone trim. Far preserves every storey and bay through simple panes.
+
+Near 15028 triangles / 6 draws / 710872 bytes; far 4316 triangles / 6 draws / 235456 bytes. All variants meet the building budgets; current costs supersede the older authoring/review totals above.
+
+Cityscape: **verified** for requested local static snapshots. Full 3D world: **verified** for requested local static snapshots.

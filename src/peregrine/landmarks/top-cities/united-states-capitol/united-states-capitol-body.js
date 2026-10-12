@@ -10,8 +10,8 @@ export function buildBody(kit) {
   const { wbox, frame, near } = kit;
 
   const mass = (x0, x1, z0, z1, yTop = Y.wall) => {
-    wbox('stone', x0, x1, 0.12, yTop, z0, z1);
-    wbox('stone2', x0 - SKIRT, x1 + SKIRT, 0, Y.base, z0 - SKIRT, z1 + SKIRT);
+    wbox('stone', x0, x1, Y.base + 0.1, yTop, z0, z1);
+    wbox('stone', x0 - SKIRT, x1 + SKIRT, 0, Y.base, z0 - SKIRT, z1 + SKIRT);
   };
 
   // `sides` drops a lip that would cross a step in the outline. East/west lips still
@@ -54,7 +54,7 @@ export function buildBody(kit) {
     const [sh0, sh1] = zz(68.3, 74.8);
     const [end0, end1] = zz(104.6, 110.7);
     mass(-41.2, 30.2, wide0, wide1);
-    wbox('stone2', -44.3, 33.3, 0, Y.base, wide0 - 0.22, wide1 + 0.22);
+    wbox('stone', -44.3, 33.3, 0, Y.base, wide0 - 0.22, wide1 + 0.22);
     cornice(-44.2, 33.2, wide0, wide1, 0.42, 'ew');
     parapet(-43.8, 32.8, wide0 + 0.4, wide1 - 0.4);
     hipRoof(kit, -42.4, 31.4, wide0 + 1.2, wide1 - 1.2);
@@ -114,7 +114,7 @@ export function buildBody(kit) {
     const podiumZ0 = s < 0 ? -114.15 : 110.35;
     const podiumZ1 = s < 0 ? -110.35 : 114.15;
     wbox('stone', -18.2, 8.2, 0, Y.base, podiumZ0, podiumZ1);
-    wbox('stone2', -18.4, 8.4, 0, 1.15, podiumZ0 + 0.08, podiumZ1 - 0.08);
+    wbox('stone', -18.4, 8.4, 0, 1.15, podiumZ0 + 0.08, podiumZ1 - 0.08);
     const span = 15.6;
     for (let i = 0; i < END_FRONT; i++) {
       const u = -span / 2 + (span * i) / (END_FRONT - 1);
@@ -122,7 +122,7 @@ export function buildBody(kit) {
     }
     end.box('stone', -span / 2 - 1.1, span / 2 + 1.1, Y.col1 - 0.55, Y.entab - 0.35, 0.1, 1.05);
     end.pediment('stone', -span / 2 - 1.2, span / 2 + 1.2, Y.entab - 0.5, Y.endApex - (Y.entab - 0.5), 0.12, 1.05);
-    end.pediment('stone2', -span / 2 + 0.9, span / 2 - 0.9, Y.entab - 0.15, Y.endApex - (Y.entab - 0.15) - 0.7, 1.08, 1.2);
+    end.pediment('stone', -span / 2 + 0.9, span / 2 - 0.9, Y.entab - 0.15, Y.endApex - (Y.entab - 0.15) - 0.7, 1.08, 1.2);
     const back = frame(-5, s < 0 ? -110.72 : 110.72, phi);
     back.arch('light', 0, Y.col0, 2.3, 5.4, 0.24);
     back.quad('light', -4.6, -2.5, Y.col0 + 5.6, Y.col1 - 1.3, 0.24);
@@ -255,9 +255,9 @@ function eastPortico(kit, stairs) {
   const { wbox, frame, near } = kit;
   // Podium. The outer nose is narrower, matching the mapped east steps.
   wbox('stone', 22.1, 36.4, 0, Y.base, -11.15, 11.15);
-  wbox('stone2', 22.0, 36.5, 0, 1.2, -11.35, 11.35);
+  wbox('stone', 22.0, 36.5, 0, 1.2, -11.35, 11.35);
   wbox('stone', 35.8, 43.35, 0, Y.base, -9.35, 9.35);
-  wbox('stone2', 35.7, 43.5, 0, 1.2, -9.55, 9.55);
+  wbox('stone', 35.7, 43.5, 0, 1.2, -9.55, 9.55);
 
   const front = frame(41.15, 0, 0);
   const span = 16.8;
@@ -280,7 +280,7 @@ function eastPortico(kit, stairs) {
   wbox('stone', 23.5, 41.4, Y.col1 - 0.2, Y.entab, 9.3, 10.5);
   const rise = Y.apex - Y.entab;
   front.pediment('stone', -span / 2 - 1.6, span / 2 + 1.6, Y.entab - 0.7, rise + 0.7, 0.25, 1.7);
-  front.pediment('stone2', -span / 2 + 1.1, span / 2 - 1.1, Y.entab + 0.15, rise - 0.85, 1.72, 1.86);
+  front.pediment('stone', -span / 2 + 1.1, span / 2 - 1.1, Y.entab + 0.15, rise - 0.85, 1.72, 1.86);
   if (near) {
     for (const [s, h] of [[-4.2, 1.5], [-2.2, 2.2], [0, 2.7], [2.4, 2.0], [4.6, 1.4]]) {
       front.box('stone', s - 0.45, s + 0.45, Y.entab + 0.5, Y.entab + 0.5 + h, 1.78, 2.02);
@@ -289,7 +289,7 @@ function eastPortico(kit, stairs) {
 
   // Wall behind the columns: three doors, windows above and between.
   const back = frame(22.45, 0, 0);
-  back.box('stone2', -10.2, 10.2, Y.base, Y.col1 + 0.2, 0.02, 0.2);
+  back.box('stone', -10.2, 10.2, Y.base, Y.col1 + 0.2, 0.02, 0.2);
   for (const s of [-4.4, 0, 4.4]) back.arch('light', s, Y.col0, 2.15, 5.6, 0.28);
   for (const s of [-7.4, -2.2, 2.2, 7.4]) back.quad('light', s - 0.85, s + 0.85, 12.4, 17.2, 0.28);
 
@@ -304,7 +304,7 @@ function westPortico(kit, stairs) {
   const { wbox, frame, near } = kit;
   // Single rank of ten columns over an arched basement, the Mall front.
   wbox('stone', -48.55, -39.6, 0, Y.base, -14.35, 14.35);
-  wbox('stone2', -48.75, -39.5, 0, 1.25, -14.55, 14.55);
+  wbox('stone', -48.75, -39.5, 0, 1.25, -14.55, 14.55);
 
   const front = frame(-47.55, 0, Math.PI);
   const span = 24.6;
@@ -315,15 +315,15 @@ function westPortico(kit, stairs) {
   front.box('stone', -span / 2 - 1.4, span / 2 + 1.4, Y.col1 - 0.05, Y.entab, -0.2, 1.35);
   const rise = Y.apex - Y.entab;
   front.pediment('stone', -span / 2 - 1.5, span / 2 + 1.5, Y.entab - 0.7, rise + 0.7, 0.2, 1.5);
-  front.pediment('stone2', -span / 2 + 1.3, span / 2 - 1.3, Y.entab + 0.15, rise - 0.9, 1.55, 1.68);
+  front.pediment('stone', -span / 2 + 1.3, span / 2 - 1.3, Y.entab + 0.15, rise - 0.9, 1.55, 1.68);
   if (near) {
     for (const [s, h] of [[-5.5, 1.6], [-2.6, 2.3], [0, 2.8], [2.8, 2.2], [5.6, 1.5]]) {
-      front.box('stone', s - 0.5, s + 0.5, Y.entab + 0.55, Y.entab + 0.55 + h, 1.35, 1.62);
+      front.box('stone', s - 0.5, s + 0.5, Y.entab + 0.55, Y.entab + 0.55 + h, 1.62, 1.98);
     }
   }
 
   const back = frame(-40.45, 0, Math.PI);
-  back.box('stone2', -13.6, 13.6, Y.base, Y.col1 + 0.2, 0.02, 0.22);
+  back.box('stone', -13.6, 13.6, Y.base, Y.col1 + 0.2, 0.02, 0.22);
   for (const s of [-5.2, 0, 5.2]) back.arch('light', s, Y.col0, 2.3, 5.6, 0.3);
   for (const s of [-9.2, -2.6, 2.6, 9.2]) back.quad('light', s - 0.9, s + 0.9, 12.5, 17.3, 0.3);
 

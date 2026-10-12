@@ -40,8 +40,8 @@ export const THOLOS = 12;
 // Outer shell, springing just above the attic and closing on the tholos balcony.
 // Estimated between the 135 ft exterior diameter and the 210 ft balcony.
 export const DOME_PROFILE = [
-  [15.0, 51.4], [14.8, 54.0], [14.05, 57.0], [12.8, 59.5],
-  [10.6, 61.7], [8.4, 63.1], [6.05, 64.4],
+  [15.7, 46.8], [15.4, 50.5], [14.5, 54.0], [12.8, 57.8],
+  [10.6, 60.7], [8.4, 62.8], [6.05, 64.4],
 ];
 
 export function domeRadius(y) {

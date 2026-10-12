@@ -97,10 +97,16 @@ export function kit(b, near) {
   // A window: dark pane 12 cm proud of the wall; near adds a sill and jambs (and a flat arch ring or a head) in dressed stone that stand 34 cm
   // out, so the pane sits 22 cm deep in a reveal whose shadowed sides and soffit are `stoneDark`.
   function win(x, y, z, w, h, ang, { arch = false, mat = 'glass', frame = true, ring = false, sill = true } = {}) {
-    const rise = w / 2, D = 0.34;
+    const rise = w / 2, D = near ? 0.6 : 0.42;
     const glass = arch ? new THREE.ShapeGeometry(archShape(w, h, rise)) : new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);
     glass.translate(0, 0, 0.12); put(onWall(glass, x, y, z, ang), mat);
-    if (!frame || !near) return;
+    if (!frame) return;
+    if (!near) {
+      for (const sign of [-1, 1]) wbox('trim', sign * (w / 2 + 0.1) - 0.1, sign * (w / 2 + 0.1) + 0.1, 0, h, D, D, 'f', x, y, z, ang);
+      wbox('trim', -w / 2 - 0.2, w / 2 + 0.2, h, h + 0.22, D, D, 'f', x, y, z, ang);
+      if (sill) wbox('trim', -w / 2 - 0.2, w / 2 + 0.2, -0.2, 0, D, D, 'f', x, y, z, ang);
+      return;
+    }
     if (sill) wbox('trim', -(w + 0.6) / 2, (w + 0.6) / 2, -0.2, 0, 0, D + 0.08, 'fu', x, y, z, ang);                // sill
     const jh = arch ? h - rise : h;
     for (const s of [-1, 1]) {

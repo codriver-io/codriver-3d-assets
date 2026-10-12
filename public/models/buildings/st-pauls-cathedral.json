@@ -22,8 +22,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/st-pauls-cathedral-near.glb",
-      "bytes": 488020,
-      "triangles": 11257,
+      "bytes": 586116,
+      "triangles": 13163,
       "drawCalls": 8,
       "bounds": {
         "min": [
@@ -40,8 +40,8 @@
     },
     "far": {
       "url": "/models/buildings/st-pauls-cathedral-far.glb",
-      "bytes": 218552,
-      "triangles": 4964,
+      "bytes": 387772,
+      "triangles": 8316,
       "drawCalls": 8,
       "bounds": {
         "min": [
