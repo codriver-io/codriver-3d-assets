@@ -17435,13 +17435,13 @@
       "kind": "building",
       "location": "Carcassonne, France",
       "status": "ready",
-      "description": "Original procedural restored fortified Cité: the two mapped concentric curtain rings, 45 mapped towers plus two twin-tower gateways, Château Comtal wings, three barbicans and the Saint-Nazaire basilica roof; inner city represented by nine merged low terracotta roof quarters.",
+      "description": "Original procedural restored Cité: unchanged double enceinte, towers, gateways, Château Comtal and Saint-Nazaire, with 253 individually mapped town buildings and 92 joined far roof blocks.",
       "manifest": "/models/buildings/cite-de-carcassonne.json",
       "documentation": "docs/assets/top-cities-cite-de-carcassonne.md",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/cite-de-carcassonne/geometry.js",
         "build": "pnpm build:top-cities-landmarks cite-de-carcassonne --no-check",
-        "provenance": "Original procedural geometry by Codriver, 2026-10-09; no mesh captures, textures or bitmap content. Geographic outlines derived from OpenStreetMap contributors, ODbL 1.0, using the supplied dossier and one bounded OSM API map extract after the shared Overpass helper failed. Reference-only Commons photographs: Chensiyuan, Diego Delso, Lynx1211, PIERRE ANDRE LECLERCQ and Krzysztof Golik, all CC BY-SA 4.0; retained only in ignored tmp/.",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-09; no mesh captures, textures or bitmap content. Geographic outlines derived from OpenStreetMap contributors, ODbL 1.0, using the supplied dossier and one bounded OSM API map extract after the shared Overpass helper failed. Reference-only Commons photographs: Chensiyuan, Diego Delso, Lynx1211, PIERRE ANDRE LECLERCQ and Krzysztof Golik, all CC BY-SA 4.0; retained only in ignored tmp/. Town-house correction 2026-10-12 uses a bounded building-way/relation extract through the shared Overpass helper; the courtyard relation retains its hole. Relative house footing levels use the same public AWS Terrarium z15 reference as the existing terrain fit. No new third-party mesh, imagery or runtime dependency.",
         "references": [
           {
             "label": "Centre des monuments nationaux — iconographic silhouette, Narbonnaise towers 30 m",
@@ -17486,6 +17486,14 @@
           {
             "label": "File:Ramparts of the historic fortified city of Carcassone 12.jpg — Krzysztof Golik, CC BY-SA 4.0",
             "url": "https://commons.wikimedia.org/wiki/File:Ramparts_of_the_historic_fortified_city_of_Carcassone_12.jpg"
+          },
+          {
+            "label": "OpenStreetMap — inner town house, mapped three levels",
+            "url": "https://www.openstreetmap.org/way/56254248"
+          },
+          {
+            "label": "OpenStreetMap — courtyard town building relation",
+            "url": "https://www.openstreetmap.org/relation/582223"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cite-de-carcassonne/geometry.js"
@@ -17519,7 +17527,7 @@
           }
         ]
       },
-      "notes": "Nine quarters now contain varied short house roofs with different eaves, ridge directions and three muted terracotta tones. Stone/floodlight materials are grey-buff. Replacement rings include owned quarter envelopes, while stable per-row terrace controls retain the previous world site levels. Far welds redundant vertices and retains every short roof and colour group. House quarters remain procedural approximations, not a cadastral house-by-house reconstruction. Provider houses outside the nine owned quarters remain visible and white. Individual arrow slits stay near-only; major roofs, crenellated silhouette and colour groups survive far. Cityscape and Full 3D world verified in the stated far/near/street screenshots; lifecycle, dark mode and hardware performance remain untested. Current metrics and evidence are in docs/3d-top-cities-cite-de-carcassonne.md.",
+      "notes": "Replaces nine invented roof quarters with 253 exact OSM house ways (including the outer way of relation 582223); ownership rings are only the actual mapped houses and the existing fortification/gate envelopes. Near eaves use mapped levels or estimated 7–10 m heights, with clipped longest-axis pitched roofs, compact hip roofs and three muted terracotta tones. Far keeps all houses in 92 unions of adjoining houses within 3 m terrain bands, preserving streets and courtyards. 247 bounded house terraces and six broad unpadded sloping rings use individual relative levels and 2–10 m world-only footing extensions. Near 48,117 triangles / 9 draws / 2,487,680 bytes; far 11,701 / 6 / 331,336. Depth cycles, coplanar pairs, back-face hits and budget issues are zero. Fresh in-app Cityscape/Full 3D world house validation is pending.",
       "city": "Carcassonne",
       "license": "CC-BY-4.0",
       "codeLicense": "MIT",
