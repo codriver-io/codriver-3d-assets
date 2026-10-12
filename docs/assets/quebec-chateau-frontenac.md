@@ -58,12 +58,12 @@ by day, warm lit yellow at night; drawn unshaded), `metal` (ridge crests, finial
 * **Blocks, not an extrusion.** Each wing is a roofed block (hipped, with a shallow copper hip closing the top where the steep slopes stop short of a ridge, or gabled with vertical gable ends; the narrow link blocks between the wings are low copper hips, not flat decks).
   Wall faces are computed against the neighbouring blocks, so only the exposed part of every wall is drawn (a taller wall above a lower roof starts at
   that roof's eave) and no two walls overlap or share a plane.
-* **Detail is quads, merged.** Windows are a stone frame and a glass pane proud of the wall (0.15 and 0.24 m, a mullion at 0.31 m), the arcade arches are
+* **Detail is quads, merged.** Windows are a stone frame and a glass pane proud of the wall (0.15 and 0.30 m, a mullion at 0.60 m), the arcade arches are
   one fan each, cornices and string courses are five-face slabs, dormers are 13 triangles each, the round turrets are 12-sided with slit windows
   and a belt under the cone, and the larger round towers have windows on every facet. Quoins, ridge crests, gable finials and turret finials make the
   roofline.
-* **Far LOD** keeps every block, roof, turret, chimney, the tower and its pinnacles, and replaces the window grids with slim dark slots (about 40 % of a cell, one 3.6 m slot per two storeys, so the brick dominates; a
-  quarter of them lit at night) and one narrow arch slot per 4 m of arcade. Dormers, mullions, quoins, crests and slits go. 2,712 triangles against 14,354.
+* **Far LOD** retains the complete roofline and every facade window row, with simple stone surround quads, panes, arcade arches and first-row stone-faced dormers. Fine mullions, quoins, crests and slits are omitted.
+
 * **Night.** `glow` panes are scattered with a fixed seed, so a dark-theme hotel is speckled with lit rooms; by day `glow` and `glass` are the same
   colour. The real tower is floodlit orange at night; that is not modelled (it would need a self-lit brick material).
 
@@ -77,7 +77,7 @@ under it (the lower town side) and sink the hotel. `spec.terrainPad` is the hote
 starts well east of the east wall, so the pad and its feather stay on the level ground and never touch the cliff face. Expect: the south-west
 end of the footprint, about 5 to 8 m above the datum in the DEM, is cut into the hill within the outline (a level terrace in reality too); the east
 wall stands on a 5 to 6 m fill that blends back to the DEM within 8 m. If that fill looks like a bulge in the app, the cure is a terrace ring at a
-negative offset on the east side; Cityscape ignores the pad. Not tested in the app.
+negative offset on the east side; Cityscape ignores the pad. The final app views verified visual placement on 2026-10-11.
 
 ## Approximations and limits
 
@@ -93,14 +93,14 @@ negative offset on the east side; Cityscape ignores the pad. Not tested in the a
 * A few bay gables, cornices (0.55 m) and turret bellies reach up to 2.4 m past the mapped outline along the south-east facade, where the outline steps
   back by about 1 m; 1.3 % of the vertices are more than 1.3 m outside it.
 * The roofs are dark verdigris copper for the wings and near-black slate for the tower; the real tower roof may be copper in a darker finish. The tower's hip is as long as the mapped block (a 20.8 m ridge), longer than the real roof's short ridge.
-* Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is checked separately.
+* Cityscape: verified for far/near/street visual placement (2026-10-11). Full 3D world: verified for far/near/street visual placement (2026-10-11).
 
 ## Costs (exported GLBs)
 
 | | Triangles | Draw calls | Bytes |
 | --- | --- | --- | --- |
-| Near | 14,354 | 7 | 766,768 |
-| Far | 2,712 | 7 | 152,100 |
+| Near | 14,394 | 7 | 768,908 |
+| Far | 8,534 | 7 | 460,912 |
 
 Budgets (building): near 60,000 / 14 / 2.5 MB, far 12,000 / 8 / 500 KB. Costs describe scene meshes and uncompressed bytes, not measured Tesla
 performance. Bounds: x -76.4 to 70.4, y 0 to 80, z -63.7 to 68.8 m around the origin (-71.2054215, 46.8118448).
@@ -137,3 +137,13 @@ dormer row poked through the ridges and was dropped; wide flat roofs read as a m
 
 Rebuild: `pnpm build:quebec-landmarks chateau-frontenac`. Tests:
 `node --test src/peregrine/landmarks/quebec/quebec.test.js src/peregrine/landmarks/quebec/chateau-frontenac/chateau-frontenac.test.js`.
+
+## QA fix — 2026-10-11
+
+Muted red-brown brick and quieter stone trim replace the orange/pale contrast; terrace gables retain stone belts and two window tiers; far retains every facade window row, frame masks, arcade arches and the first row of stone-faced dormers.
+
+The supplied independent review sheet and its reference tile were compared with the new exported sheet; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
+
+Evidence: `tmp/landmark-qa/fix/sheets/chateau-frontenac.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
+
+Far also retains framed window rows on the large round towers and hexagonal tower, with their roof dormers.

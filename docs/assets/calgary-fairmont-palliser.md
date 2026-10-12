@@ -70,10 +70,8 @@ on the canopy edge, self-lit). Eleven materials, so eleven near draws; the far m
   front face and its two long sides (6 triangles; the 0.28 m ends are sub-pixel), so nothing floats: 186 triangles,
   half of the first pass's 380, by cutting the strokes of the S, P and R and the I's serifs. The far model keeps one
   band in the same material.
-* **Far LOD** keeps every wall, cornice and parapet, the open courts, the stepped roofs, the penthouse and the
-  canopy, and replaces the window grid with one dark slot per two bays cut into three-storey blocks (a third lit
-  at night). The slots are 1.0 m wide, so the far windows cover 19 % of a north bay against the near 17 % (the first
-  pass drew them 2.1 m wide: twice as dark, and striped). 2,283 triangles against 10,003.
+* **Far LOD** retains every wall, cornice, parapet and roof stage, with separated rectangular windows on every storey, ground-floor lights and the second-storey loggia rhythm. Fine mullions, masonry joints and ornament are omitted.
+
 * **Night.** `glow` panes are scattered with a fixed seed (30 %), so a dark-theme hotel is speckled with lit rooms,
   the sign and the canopy lamps glow, and by day `glow` and `glass` are the same colour.
 
@@ -93,8 +91,7 @@ on the canopy edge, self-lit). Eleven materials, so eleven near draws; the far m
 
 ## Cityscape and Full 3D world
 
-Cityscape: **not tested yet, integration is checked separately.** Full 3D world: **not tested yet, integration is
-checked separately.** Downtown Calgary is nearly flat under the footprint (the Bow River bank is 400 m to the
+Cityscape: **verified for far/near/street visual placement (2026-10-11).** Full 3D world: **verified for far/near/street visual placement (2026-10-11).** Downtown Calgary is nearly flat under the footprint (the Bow River bank is 400 m to the
 north), so no `terrainPad` is declared and `padM` is 54 m, just covering the hotel (the farthest corner is
 46 m from the origin). The model is a rigid structure on local y = 0; in Full 3D world the default pad takes the
 lowest DEM sample under its disc, so the hotel should sit at the street level of its lowest corner with a few
@@ -104,8 +101,8 @@ decimetres of the ground showing at the others; check in the app.
 
 | | triangles | draws | bytes |
 | --- | --- | --- | --- |
-| near | 10,003 | 11 | 500 KB (512,064 B) |
-| far | 2,283 | 8 | 114 KB (116,972 B) |
+| Near | 10,111 | 11 | 517,900 |
+| Far | 4,387 | 8 | 230,604 |
 
 First pass: 9,747 / 11 / 492 KB near and 1,833 / 8 / 96 KB far. The review fix added about 450 triangles of cornice
 (near and far) and removed 194 from the sign.
@@ -148,3 +145,13 @@ triangles; far window slots thinned from 2.1 to 1.0 m. `qa-metrics` after the pa
 inscription on the slate. The sign test now expects 120 to 230 triangles; new tests pin the cornice
 (1.0 m shelf, 0.45 m step, 0.3 m parapet), the dark band (below 1.9 m only), the pale-grey sign and the near/far
 window coverage (within 20 to 25 %).
+
+## QA fix — 2026-10-11
+
+Far retains individual rectangular windows on every storey with light floor breaks instead of multi-storey slots. The south stone base gains horizontal rustication and short pier joints. Window, surround and mullion layers have separate depth planes; the loggia panel sits behind its trim.
+
+The supplied review sheet has a Banff Springs reference tile, which was excluded as Palliser evidence; mapped E-plan massing, the existing Palliser authoring references and architectural knowledge informed the new facade; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
+
+Evidence: `tmp/landmark-qa/fix/sheets/fairmont-palliser.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
+
+The default street view and the alternate 202.7° view are partly occluded by neighbouring provider buildings. The hotel grid and grade contact are visible in near views; the export sheet and ray tests verify the stone entrance base. Alternate frames are under `tmp/landmark-qa/fix/{city,world}-alternate-palliser/`. Unrelated neighbouring buildings were retained.

@@ -5,7 +5,7 @@
 import { Ht, GROUND, PITCH, U, V } from './fairmont-palliser-site.js';
 
 // Layers in front of a wall, each at least 0.07 m apart so large faces cannot z-fight.
-const D_SURR = 0.12, D_GLASS = 0.2, D_MULL = 0.27;
+const D_SURR = 0.15, D_GLASS = 0.3, D_MULL = 0.6;
 const BELT = Ht(2); // the stone base ends at the level-2 belt (11 m)
 const PLINTH = 1.9; // the dark granite band at the foot of the two-storey base (the ground-storey windows start above it)
 
@@ -97,6 +97,13 @@ function nearWall(ctx, s) {
     }
     if (H > GROUND + 0.5) { const [b0, b1] = ext(0.6); kit.slab('stone', o, t, n, u0 - b0, u1 + b1, GROUND - 0.5, GROUND + 0.3, 0.6, {}); } // cornice over the ground storey
   }
+  // Recessed-looking joints in the stone frontage, between window rows.
+  if (grounded && face === 'S') {
+    for (const y of [2.0, 5.8, 6.5, 7.1, 10.6]) if (y < Math.min(H, BELT))
+      kit.panel('plinth', o, t, n, u0, u1, y, y + 0.1, 0.15);
+    for (const uc of columns(u0, u1, 3.6, 1.5)) for (const y of [2.05, 5.9])
+      kit.panel('plinth', o, t, n, uc + 1.5, uc + 1.6, y, Math.min(y + 0.5, H), 0.15);
+  }
   // second storey and the belt under the shaft
   if (c < BELT - 0.5 && H > BELT + 0.5) {
     const [b0, b1] = ext(0.4);
@@ -106,7 +113,7 @@ function nearWall(ctx, s) {
   if (level2) {
     const cols = columns(u0, u1, face === 'S' ? 2.4 : 2.75, 0.9);
     if (face === 'S' && len > 3) { // the loggia: a pale panel behind a row of arched lights
-      kit.panel('panel', o, t, n, u0 + 0.35, u1 - 0.35, GROUND + 0.7, BELT - 0.6, 0.06);
+      kit.panel('panel', o, t, n, u0 + 0.35, u1 - 0.35, GROUND + 0.7, BELT - 0.6, -0.25);
       for (const uc of cols) archWindow(ctx, e, uc, 1.3, GROUND + 0.9, 9.4, { frame: 0.16, mull: true });
     } else for (const uc of cols) rectWindow(ctx, e, uc, (GROUND + BELT) / 2 - 0.1, 1.1, 2.1);
   }
@@ -158,15 +165,15 @@ function farWall(ctx, s) {
   const crownY = part.n >= 4 ? Ht(part.n - 1) : null;
   if (crownY !== null && c <= crownY - 1.3) { const [x0, x1] = ext(1.3); moulding(kit, 'stone', o, t, n, u0 - x0, u1 + x1, corniceSection(crownY), [7]); }
   roofline(kit, s, ext);
-  if (len < 2.6 || part.n < 4) return;
-  const y0 = Math.max(c, BELT) + 0.9, y1 = (crownY !== null && c <= crownY - 1.3 ? crownY - 1.3 : H - 1.6);
+  if (len < 2.6) return;
   const cols = columns(u0, u1, 2.75, 1.1);
-  // one slot per two bays, cut into blocks three storeys tall so the lit ones speckle the wall at night
-  const blocks = Math.max(1, Math.round((y1 - y0) / (3 * PITCH))), bh = (y1 - y0) / blocks;
-  for (let i = 0; i < cols.length; i += 2) {
-    const uc = (i + 1 < cols.length ? (cols[i] + cols[i + 1]) / 2 : cols[i]);
-    if (y1 - y0 < 2) continue;
-    for (let k = 0; k < blocks; k++) kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - FAR_SLOT, uc + FAR_SLOT, y0 + k * bh + 0.15, y0 + (k + 1) * bh - 0.15, D_GLASS);
+  if (c <= GROUND && H >= BELT && part.n >= 2) for (const uc of columns(u0, u1, 2.4, 0.9)) kit.panel('glass', o, t, n, uc - 0.55, uc + 0.55, GROUND + 0.9, BELT - 0.8, D_GLASS);
+  // Separate windows at every storey: the light floor breaks survive distance.
+  for (let k = 3; k <= part.n; k++) {
+    const lo = Ht(k - 1), hi = Ht(k);
+    if (lo < c - 0.01 || hi > H + 0.01) continue;
+    const attic = k === part.n, yc = lo + (attic ? 1.8 : 1.7), h = attic ? 1.5 : 1.8;
+    for (const uc of cols) kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - 0.525, uc + 0.525, yc - h / 2, yc + h / 2, D_GLASS);
   }
   if (c < 0.5 && !(part.key === 'FRONT_ENTRY')) { // dark ground-storey band
     for (const uc of columns(u0, u1, 7.2, 1.5)) kit.panel('glass', o, t, n, uc - 1.8, uc + 1.8, 2.1, 5.6, D_GLASS);

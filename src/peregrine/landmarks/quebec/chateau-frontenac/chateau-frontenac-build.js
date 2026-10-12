@@ -107,16 +107,22 @@ export function buildComplex(kit, near) {
     if (near && s.y0 < baseH && groundStone && top > baseH + 1) kit.slab('stone', o, t, n, s.u0, s.u1, baseH - 0.45, baseH, 0.3, { sides: false, bottom: true });
     if (near && b.tower) for (const k of [4, 8, 12]) { const y = GF + (k - 1) * FL; if (y > s.y0 + 1) kit.slab('stone', o, t, n, s.u0, s.u1, y - 0.25, y + 0.25, 0.3, { sides: false }); }
     const len = s.u1 - s.u0, rows = b.levels ? b.levels - 1 : 0;
-    if (!near) { // far: slim dark slots, about 40 % of a cell wide and one band per two storeys, so the brick dominates; a quarter of them lit at night
+    if (!near) {
       if (!rows || len < 5) continue;
-      const cells = Math.max(1, Math.round((len - 2.4) / 8)), cw = (len - 2.4) / cells, half = 0.2 * cw;
-      for (let k = 1; k <= rows; k += 2) {
+      const cells = Math.max(1, Math.floor((len - 2) / b.pitch)), cw = (len - 2) / cells;
+      for (let k = 1; k <= rows; k++) {
         const y = GF + (k - 1) * FL + 0.7; if (y < s.y0) continue;
-        for (let c = 0; c < cells; c++) { const uc = s.u0 + 1.2 + (c + 0.5) * cw; kit.panel(rand() < 0.25 ? 'glow' : 'glass', o, t, n, uc - half, uc + half, y, y + (k < rows ? 3.6 : 2.0), 0.2); }
+        for (let c = 0; c < cells; c++) {
+          const uc = s.u0 + 1 + (c + 0.5) * cw;
+          const px = o[0] + t[0] * uc, pz = o[1] + t[1] * uc;
+          if (blocked(px, pz, y, y + 2) || coveredAt(px + n[0] * 0.4, pz + n[1] * 0.4, y + 1, b)) continue;
+          kit.panel('stone', o, t, n, uc - 0.85, uc + 0.85, y - 0.2, y + 2.2, 0.15);
+          kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - 0.65, uc + 0.65, y, y + 2, 0.3);
+        }
       }
-      if (s.y0 < GF && groundStone && seFacing && len > 6) { // the arcade: a dark arch every cell between stone piers
+      if (s.y0 < GF && groundStone && seFacing && len > 6) {
         const cells0 = Math.max(1, Math.round((len - 2.4) / 4.1)), cw0 = (len - 2.4) / cells0;
-        for (let c = 0; c < cells0; c++) { const uc = s.u0 + 1.2 + (c + 0.5) * cw0; kit.panel('glass', o, t, n, uc - 0.3 * cw0, uc + 0.3 * cw0, 0.6, 3.0, 0.2); }
+        for (let c = 0; c < cells0; c++) { const uc = s.u0 + 1.2 + (c + 0.5) * cw0; kit.arch('glass', o, t, n, uc - 1.2, uc + 1.2, 0.2, 2.75, 0.3, 3); }
       }
       continue;
     }
@@ -133,7 +139,7 @@ export function buildComplex(kit, near) {
         const px = o[0] + t[0] * uc, pz = o[1] + t[1] * uc;
         if (blocked(px, pz, 0, GF) || coveredAt(px + n[0] * 0.4, pz + n[1] * 0.4, GF, b) || (gateHere && Math.abs(uc - gc) < 9.5)) continue;
         if (b.arcade && seFacing) kit.arch('glass', o, t, n, uc - 1.35, uc + 1.35, 0.2, 2.75, 0.2, 5);
-        else { kit.panel('stone', o, t, n, uc - 0.95, uc + 0.95, 0.9, 3.7, 0.15); kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - 0.7, uc + 0.7, 1.15, 3.45, 0.24); }
+        else { kit.panel('stone', o, t, n, uc - 0.95, uc + 0.95, 0.9, 3.7, 0.15); kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - 0.7, uc + 0.7, 1.15, 3.45, 0.3); }
       }
     }
     // upper storeys: stone-framed paired-light windows
@@ -146,8 +152,8 @@ export function buildComplex(kit, near) {
         const px = o[0] + t[0] * uc, pz = o[1] + t[1] * uc;
         if (blocked(px, pz, y0, y0 + 2) || coveredAt(px + n[0] * 0.4, pz + n[1] * 0.4, y0 + 1, b) || (gateHere && y0 < baseH && Math.abs(uc - gc) < 9.5)) continue;
         kit.panel('stone', o, t, n, uc - 0.95, uc + 0.95, y0 - 0.3, y0 + 2.3, 0.15);
-        kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - 0.7, uc + 0.7, y0, y0 + 2.0, 0.24);
-        kit.panel('stone', o, t, n, uc - 0.06, uc + 0.06, y0, y0 + 2.0, 0.31);
+        kit.panel(rand() < 0.3 ? 'glow' : 'glass', o, t, n, uc - 0.7, uc + 0.7, y0, y0 + 2.0, 0.3);
+        kit.panel('stone', o, t, n, uc - 0.06, uc + 0.06, y0, y0 + 2.0, 0.6);
       }
     }
     // stone quoins on the corners of the wall (a strip on this wall at each end that is a real corner)
@@ -178,9 +184,15 @@ export function buildComplex(kit, near) {
       for (const g of b.endEdges) { // vertical gable ends in brick, with a window
         const m = mid(g.p, g.q);
         kit.tri(b.mat, [g.p[0], b.eave, g.p[1]], [g.q[0], b.eave, g.q[1]], [m[0], yr, m[1]], [g.n[0], 0, g.n[1]]);
-        if (near && g.L > 6) {
+        if (g.L > 6) {
           const y1 = b.eave + 1.3;
-          for (const d of [-1.05, 1.05]) { kit.panel('stone', g.p, g.t, g.n, g.L / 2 + d - 0.85, g.L / 2 + d + 0.85, y1 - 0.25, y1 + 2.3, 0.1); kit.panel(rand() < 0.3 ? 'glow' : 'glass', g.p, g.t, g.n, g.L / 2 + d - 0.6, g.L / 2 + d + 0.6, y1, y1 + 2.0, 0.18); }
+          kit.panel('stone', g.p, g.t, g.n, 0.4, g.L - 0.4, b.eave + 0.25, b.eave + 0.65, 0.15);
+          if (b.rise > 8) {
+            const cy = b.eave + Math.min(6, b.rise * 0.48);
+            kit.panel('stone', g.p, g.t, g.n, g.L / 2 - 0.8, g.L / 2 + 0.8, cy, cy + 2.1, 0.15);
+            kit.panel('glass', g.p, g.t, g.n, g.L / 2 - 0.55, g.L / 2 + 0.55, cy + 0.25, cy + 1.85, 0.3);
+          }
+          for (const d of [-1.05, 1.05]) { kit.panel('stone', g.p, g.t, g.n, g.L / 2 + d - 0.85, g.L / 2 + d + 0.85, y1 - 0.25, y1 + 2.3, 0.15); kit.panel(rand() < 0.3 ? 'glow' : 'glass', g.p, g.t, g.n, g.L / 2 + d - 0.6, g.L / 2 + d + 0.6, y1, y1 + 2.0, 0.3); }
         }
       }
     } else {
@@ -212,13 +224,13 @@ export function buildComplex(kit, near) {
       }
     }
     // dormers on the slopes, wherever a neighbouring roof does not bury them: a row near the eave and, on tall roofs, a staggered second row
-    if (!near || !b.dormer || b.inset < 3) continue;
+    if (!b.dormer || b.inset < 3) continue;
     const sc = b.tower ? 1.25 : 0.9, dh = 3.8 * sc;
     for (const e of b.slopeEdges) {
       const count = Math.floor((e.L - 3) / b.dormer);
       if (count < 1) continue;
       for (const [frac, stagger] of [[0.38, false], [0.74, true]]) {
-        if (stagger && (b.inset < 6.2 || b.k * b.inset * 0.74 + dh > b.rise + 0.2 || b.inset * (1 - frac) < dh / b.k + 0.5 + 0.5)) continue;
+        if (stagger && (!near || b.inset < 6.2 || b.k * b.inset * 0.74 + dh > b.rise + 0.2 || b.inset * (1 - frac) < dh / b.k + 0.5 + 0.5)) continue;
         const dIn = stagger ? b.inset * frac : Math.min(Math.max(b.inset * frac, 1.1), 5), sill = b.eave + dIn * b.k;
         if (sill + dh > b.eave + b.rise + 0.3 && !b.tower) continue;
         const rowCount = stagger ? count - 1 : count;
@@ -228,7 +240,7 @@ export function buildComplex(kit, near) {
           const ox = bx + e.n[0] * (dIn + 0.6), oz = bz + e.n[1] * (dIn + 0.6);
           if (blocks.some((o) => o !== b && ((inBlock(o, bx, bz) && roofY(o, bx, bz) > sill - 1.2) || (inBlock(o, ox, oz) && roofY(o, ox, oz) > b.eave - 0.5)))) continue;
           if (blocked(bx, bz, 0, 99)) continue;
-          dormer(kit, [bx, sill, bz], e.n, e.t, b.k, sc, mat, b.tower ? 'stone' : mat, rand);
+          dormer(kit, [bx, sill, bz], e.n, e.t, b.k, sc, mat, 'stone', rand);
         }
       }
     }
@@ -276,7 +288,7 @@ function dormer(kit, base, nrm, tan, k, sc, roofMat, frontMat, rand) {
   const N3 = [nrm[0], 0, nrm[1]], T3 = [tan[0], 0, tan[1]], back = (p) => add3(p, N3, -D);
   const fl = add3(base, T3, -w / 2), fr = add3(base, T3, w / 2), tl = add3(fl, Y, hW), tr = add3(fr, Y, hW), pk = add3(base, Y, hW + gh);
   kit.fan(frontMat, [fl, fr, tr, pk, tl], N3);
-  const gl = (y0, y1) => [add3(add3(base, T3, -w * 0.32), Y, y0), add3(add3(base, T3, w * 0.32), Y, y0), add3(add3(base, T3, w * 0.32), Y, y1), add3(add3(base, T3, -w * 0.32), Y, y1)].map((p) => add3(p, N3, 0.07));
+  const gl = (y0, y1) => [add3(add3(base, T3, -w * 0.32), Y, y0), add3(add3(base, T3, w * 0.32), Y, y0), add3(add3(base, T3, w * 0.32), Y, y1), add3(add3(base, T3, -w * 0.32), Y, y1)].map((p) => add3(p, N3, 0.15));
   kit.quad(rand() < 0.3 ? 'glow' : 'glass', ...gl(0.35 * sc, hW - 0.2 * sc), N3);
   kit.quad(roofMat, fl, back(fl), back(tl), tl, add3(T3, [0, 0, 0], -1));
   kit.quad(roofMat, fr, back(fr), back(tr), tr, T3);
@@ -298,8 +310,7 @@ function turret(kit, near, t, { sides: N, cap, anyBlock, rand, phase = 0 }) {
     kit.tri(cap, P(R1[k], y1), P(R1[j], y1), [c[0], tip, c[1]], [o[0], 0.6, o[1]]);
     if (y0 > 0) kit.tri('stone', P(R0[k], y0), P(R0[j], y0), [c[0], y0 - 2.4, c[1]], [o[0], -0.6, o[1]]);
   }
-  if (!near) return;
-  kit.cone('metal', [[c[0] - 0.14, c[1] - 0.14], [c[0] + 0.14, c[1] - 0.14], [c[0] + 0.14, c[1] + 0.14], [c[0] - 0.14, c[1] + 0.14]], tip, [c[0], tip + 1.8, c[1]]); // finial
+  if (near) kit.cone('metal', [[c[0] - 0.14, c[1] - 0.14], [c[0] + 0.14, c[1] - 0.14], [c[0] + 0.14, c[1] + 0.14], [c[0] - 0.14, c[1] + 0.14]], tip, [c[0], tip + 1.8, c[1]]); // finial
   if (t.windows) { // brick towers: stone-framed windows on every facet, stone belts every second storey
     for (let k = 0; k < N; k++) {
       const j = (k + 1) % N, L = Math.hypot(R0[j][0] - R0[k][0], R0[j][1] - R0[k][1]), o = out(R0[k], R0[j]), ol = Math.hypot(...o) || 1, nrm = [o[0] / ol, o[1] / ol], tan = [(R0[j][0] - R0[k][0]) / L, (R0[j][1] - R0[k][1]) / L];

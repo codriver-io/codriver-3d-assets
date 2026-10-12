@@ -703,8 +703,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/chateau-frontenac-near.glb",
-      "bytes": 767288,
-      "triangles": 14354,
+      "bytes": 769428,
+      "triangles": 14394,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -721,8 +721,8 @@
     },
     "far": {
       "url": "/models/buildings/chateau-frontenac-far.glb",
-      "bytes": 152620,
-      "triangles": 2712,
+      "bytes": 461432,
+      "triangles": 8534,
       "drawCalls": 7,
       "bounds": {
         "min": [

@@ -17,7 +17,7 @@ const rowsBetween = (lo, hi, pitch) => { const n = Math.max(1, Math.round((hi - 
 const carriesOn = (e, ring) => { const m = mid(e); return inside(ring, m[0] - e.n[0] * 0.7, m[1] - e.n[1] * 0.7); };
 
 // An arched opening: recessed glass in a limestone frame with reveals, optional mullions and transoms.
-export function archOpening(ctx, e, uc, w, y0, ys, { pointed = true, frame = 0.4, dFrame = 0.55, dGlass = 0.08, glass = 'glass', sill = true, mull = 0, trans = [] } = {}) {
+export function archOpening(ctx, e, uc, w, y0, ys, { pointed = true, frame = 0.4, dFrame = 0.55, dGlass = 0.15, glass = 'glass', sill = true, mull = 0, trans = [] } = {}) {
   const { kit, near } = ctx, steps = near ? 5 : 2;
   const inner = kit.archProfile(uc - w / 2, uc + w / 2, y0, ys, { pointed, steps });
   const outer = kit.archProfile(uc - w / 2 - frame, uc + w / 2 + frame, y0, ys, { pointed, steps });
@@ -38,16 +38,16 @@ export function archOpening(ctx, e, uc, w, y0, ys, { pointed = true, frame = 0.4
     }
     if (sill) kit.slab('limestone', o, t, nn, uc - w / 2 - frame - 0.25, uc + w / 2 + frame + 0.25, y0 - 0.35, y0 + 0.1, dFrame + 0.25);
     const top = pointed ? ys + w * 0.8 : ys + w * 0.45;
-    for (let k = 1; k <= mull; k++) { const um = uc - w / 2 + (w * k) / (mull + 1); kit.slab('limestone', o, t, nn, um - 0.07, um + 0.07, y0, top, dFrame - 0.05); }
-    for (const f of trans) { const y = y0 + (ys - y0) * f; kit.slab('limestone', o, t, nn, uc - w / 2, uc + w / 2, y - 0.07, y + 0.07, dFrame - 0.05); }
+    for (let k = 1; k <= mull; k++) { const um = uc - w / 2 + (w * k) / (mull + 1); kit.slab('limestone', o, t, nn, um - 0.07, um + 0.07, y0, top, dFrame + 0.1); }
+    for (const f of trans) { const y = y0 + (ys - y0) * f; kit.slab('limestone', o, t, nn, uc - w / 2, uc + w / 2, y - 0.07, y + 0.07, dFrame + 0.1); }
   }
 }
 
 // A cheap round-headed window: glass with a thin limestone surround.
 export function smallArch(ctx, e, uc, w, y0, ys, { glass = 'glass', frame = 0.2, dFrame = 0.3, dGlass = 0.1 } = {}) {
   const { kit } = ctx, o = e.p, t = e.t, n = e.n;
-  const inner = kit.archProfile(uc - w / 2, uc + w / 2, y0, ys, { pointed: false, steps: 3 });
-  const outer = kit.archProfile(uc - w / 2 - frame, uc + w / 2 + frame, y0, ys, { pointed: false, steps: 3 });
+  const inner = kit.archProfile(uc - w / 2, uc + w / 2, y0, ys, { pointed: false, steps: ctx.near ? 3 : 2 });
+  const outer = kit.archProfile(uc - w / 2 - frame, uc + w / 2 + frame, y0, ys, { pointed: false, steps: ctx.near ? 3 : 2 });
   kit.fan(glass, inner.map(([u, y]) => kit.wp(o, t, n, u, y, dGlass)), kit.hint(n));
   for (let i = 1; i < inner.length; i++) {
     const j = (i + 1) % inner.length;
@@ -95,30 +95,18 @@ export function wing(ctx) {
   const { kit, slab, near, rand } = ctx;
   ctx.zones = [];
   const skipZones = (e, uc, yc, h) => ctx.zones.some((z) => z.e === e && uc + 0.9 > z.u0 && uc - 0.9 < z.u1 && yc + h / 2 > z.y0 && yc - h / 2 < z.y1);
-  const grid = (s, rows, { bay = 3.4, w = 1.7, h = 2.25, d = 0.16, margin = 1.3, lit = 0.3, piers = 0 } = {}) => {
+  const grid = (s, rows, { bay = 3.4, w = 1.7, h = 2.25, d = 0.25, margin = 1.3, lit = 0.3, piers = 0 } = {}) => {
     for (const e of s.edges) {
       if (e.L < 4.2) continue;
       const n = Math.max(1, Math.round((e.L - 2 * margin) / bay)), pitch = (e.L - 2 * margin) / n;
-      if (!near) { // far: one dark slot per two bays, the full height of the wall
-        const lo = rows[0] - h / 2, hi = rows[rows.length - 1] + h / 2;
-        for (let i = 0; i < n; i += 2) {
-          const uc = margin + pitch * (i + (i + 1 < n ? 1 : 0.5));
-          let segs = [[lo, hi]]; // the slot is cut around any arcade that claimed this stretch of wall
-          for (const z of ctx.zones) {
-            if (z.e !== e || uc + 0.9 <= z.u0 || uc - 0.9 >= z.u1) continue;
-            segs = segs.flatMap(([a, b]) => { const out = []; if (z.y0 > a) out.push([a, Math.min(b, z.y0)]); if (z.y1 < b) out.push([Math.max(a, z.y1), b]); return out; });
-          }
-          for (const [a, b] of segs) if (b - a > 2.5) kit.slab('glass', e.p, e.t, e.n, uc - 1.0, uc + 1.0, a, b, 0.2, { bottom: false });
-        }
-        continue;
-      }
+
       for (let i = 0; i < n; i++) {
         const uc = margin + pitch * (i + 0.5);
         for (const yc of rows) {
           if (skipZones(e, uc, yc, h)) continue;
           // a window is one quad proud of the wall, its mullion a slender quad in front (paired lights): no boxes
           kit.panel(rand() < lit ? 'glow' : 'glass', e.p, e.t, e.n, uc - w / 2, uc + w / 2, yc - h / 2, yc + h / 2, d);
-          kit.panel('limestone', e.p, e.t, e.n, uc - 0.07, uc + 0.07, yc - h / 2, yc + h / 2, d + 0.07);
+          if (near) kit.panel('limestone', e.p, e.t, e.n, uc - 0.07, uc + 0.07, yc - h / 2, yc + h / 2, d + 0.35);
         }
       }
       if (piers) { // slender piers every few bays and at both ends, clear of the arcades
@@ -126,7 +114,8 @@ export function wing(ctx) {
         for (let i = 0; i <= n; i += piers) {
           const u = margin + pitch * i;
           if (skipZones(e, u, (y0 + y1) / 2, y1 - y0)) continue;
-          kit.slab('limestone', e.p, e.t, e.n, u - 0.42, u + 0.42, y0, y1, 0.3, { bottom: false });
+          if (near) kit.slab('limestone', e.p, e.t, e.n, u - 0.42, u + 0.42, y0, y1, 0.55, { bottom: false });
+          else kit.panel('limestone', e.p, e.t, e.n, u - 0.42, u + 0.42, y0, y1, 0.55);
         }
       }
     }

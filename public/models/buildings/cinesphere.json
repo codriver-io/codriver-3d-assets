@@ -21,14 +21,14 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cinesphere-near.glb",
-      "bytes": 2262000,
-      "triangles": 46533,
+      "bytes": 2414588,
+      "triangles": 49501,
       "drawCalls": 8,
       "bounds": {
         "min": [
           -88.49805450439453,
           -9.536743306171047e-8,
-          -119.24864959716797
+          -119.39512634277344
         ],
         "max": [
           89.23046875,
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/cinesphere-far.glb",
-      "bytes": 480112,
-      "triangles": 8553,
+      "bytes": 498920,
+      "triangles": 8901,
       "drawCalls": 7,
       "bounds": {
         "min": [

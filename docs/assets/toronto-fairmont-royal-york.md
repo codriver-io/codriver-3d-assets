@@ -66,9 +66,8 @@ steel frame; the brief's "brick" is not right and is not modelled.
   the wall and its mullion a slender quad 7 cm in front of it (no boxes: the sides of a 0.2 m reveal are sub-pixel);
   `flush` welds vertices that share a position and a normal, so a quad costs four vertices, not six.
 * **The sign is stroke lettering** (`fairmont-royal-york-sign.js`), not a plate: about 95 square-section bars. The south slope carries only the sign: the two south dormers stand outboard of it and the secondary turrets are on the north side only.
-* **Far LOD** keeps every slab, cornice and copper coping, the arcades, the whole crown (roof, turrets, stack,
-  finial) and replaces the window grid with one dark slot per two bays cut around the arcades. The sign
-  becomes two light bands. 5,665 triangles against 44,634.
+* **Far LOD** retains every slab, cornice and copper coping, the arcades and crown, with individual hotel window rows and a coarse arched grid at the crown loggias. Fine window mullions and hidden pier sides are omitted.
+
 * **Night.** `glow` panes are scattered with a fixed seed (30 %), so a dark-theme hotel is speckled with lit
   rooms and the crown sign glows; by day `glow` and `glass` are the same colour.
 
@@ -90,14 +89,14 @@ steel frame; the brief's "brick" is not right and is not modelled.
 
 | | Triangles | Draw calls | Bytes |
 | --- | --- | --- | --- |
-| Near | 23,062 | 9 | 1,122,584 |
-| Far | 5,665 | 7 | 294,132 |
+| Near | 23,062 | 9 | 1,122,580 |
+| Far | 9,883 | 8 | 493,564 |
 
 Weight pass (2026-10-01): near was 44,634 triangles / 3.62 MB (window boxes, six vertices a quad, the roof boxes' top drawn twice
 which also left 449 m2 of coplanar overlap); the quad windows, welded vertices and single roof caps cut it to 23,062 / 1.12 MB with
-the same silhouette, crown, arcades, sign and colours. Far is unchanged in triangles.
+the same silhouette, crown, arcades, sign and colours. Far retains the restored rows within the city budget.
 
-Budgets: near 160,000 / 48, far 45,000 / 14 (the San Francisco budgets, 60,000 / 14 / 2.5 MB near and 12,000 / 8 / 500 KB far, also hold). Costs describe scene meshes and uncompressed bytes, not
+Budgets: 60,000 / 14 / 2.5 MB near and 12,000 / 8 / 500 KB far. Costs describe scene meshes and uncompressed bytes, not
 measured Tesla performance. Bounds: x -80.9 to 80.7, y 0 to 124, z -50.5 to 51.6 m around the origin
 (-79.3815238, 43.6459096).
 
@@ -132,8 +131,7 @@ windows, so panes grew from 1.25 x 1.95 m to 1.7 x 2.25 m and gained a mullion (
 The crown, facade and SE views were re-rendered and read after the change; the GLB was re-exported and
 rendered (crown, facade).
 
-Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet, integration is
-checked separately.
+Cityscape: verified for far/near/street visual placement (2026-10-11). Full 3D world: verified for far/near/street visual placement (2026-10-11).
 
 ## References and rights
 
@@ -151,3 +149,11 @@ checked separately.
 
 Rebuild: `pnpm build:toronto-landmarks fairmont-royal-york`. Tests:
 `node --test src/peregrine/landmarks/toronto/toronto.test.js src/peregrine/landmarks/toronto/fairmont-royal-york/fairmont-royal-york.test.js`.
+
+## QA fix — 2026-10-11
+
+Far retains separate hotel window rows and coarse arched grids on both crown loggias. Tall frontage and crown shoulders retain shallow stone piers; near pier relief increases to 0.55 m. Far drops hidden slab sides and simplifies arch tessellation to preserve the 500000-byte budget.
+
+The supplied independent review sheet and its reference tile were compared with the new exported sheet; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
+
+Evidence: `tmp/landmark-qa/fix/sheets/fairmont-royal-york.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.

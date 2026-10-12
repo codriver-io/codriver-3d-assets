@@ -75,6 +75,13 @@ export function walkway(b, a, c, y, { width = 4, height = 3.2, spacing = 14, nea
       f.bar(b, 'white', [x0, up ? y + 0.05 : y + height, s * hw + s * 0.1], [x1, up ? y + height : y + 0.05, s * hw + s * 0.1], 0.1, 0.16);
     }
   }
+  // End bearings transfer the deck to paired legs: the terminal never cantilevers into open water.
+  for (const x of [-hl + 0.35, hl - 0.35]) {
+    if (near) {
+      f.box(b, 'white', x, y - 0.8, 0, 1.2, 0.4, width);
+      for (const s of [-1, 1]) f.box(b, 'white', x, (y - 1) / 2, s * (hw - 0.5), 0.65, y - 1, 0.65);
+    } else f.box(b, 'white', x, (y - 0.6) / 2, 0, 0.8, y - 0.6, 1.4);
+  }
   // Pipe supports in pairs down to the water (never below grade).
   const pairs = Math.max(1, Math.round(len / spacing));
   for (let i = 0; i < pairs; i++) for (const s of [-1, 1]) {
@@ -95,7 +102,10 @@ export function ramp(b, a, c, { width = 2, near = true } = {}) {
   const at = (t, lift, s) => [a[0] + dx * t + side[0] * s, a[1] + dy * t + lift, a[2] + dz * t + side[1] * s];
   for (const s of [-1, 1]) {
     const o = s * width / 2;
-    b.bar('white', at(0, 1.1, o), at(1, 1.1, o), 0.05, 0.08);            // hand rail / top chord
+    if (near) {
+      b.bar('white', at(0, 1.1, o), at(1, 1.1, o), 0.05, 0.08);
+      for(const t of [0,1]) b.bar('white', at(t,0,o), at(t,1.1,o), 0.05);
+    }            // hand rail / top chord
     if (near) b.bar('white', at(0, -0.15, o), at(1, -0.15, o), 0.05, 0.1); // bottom chord (far: under the deck, not drawn)
     const bays = near ? Math.max(2, Math.round(len / 1.7)) : 0; // far keeps the chords and the deck, not the diagonals
     for (let i = 0; i < bays; i++) {

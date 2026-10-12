@@ -62,14 +62,8 @@ lights, drawn unshaded, warm in the night palette). Both palettes use the same k
   round tubes, a flat cladding triangle inside each face, a light cap at each hub, clipped at the
   cut plane and set on a 2.4 m battered concrete pedestal (radius 13.9 at the top, 14.7 at the lake; the
   ball overhangs it, as in the photographs). Author-time helpers in `cinesphere-dome.js`.
-- Pods: open frames on the mapped ring. Four floor plates, posts every ~3 m and
-  spandrels round the outline, glazing in most bays of the two upper storeys with a vertical open bay
-  in every third, the lowest storey open apart from its end bays so the dark core, interior posts and
-  floors show through, solid chamfer and stair-bump faces; long tension rods, a roof deck with rails,
-  the four mapped mast pipes with ring braces and a head platform, stay cables in both axes, a 3x3 grid
-  of support pipes, stair towers on the mapped bumps, and two trussed stair ramps (one storey each, on
-  pipe feet) up the long face that looks toward the other pods. Nothing is translucent: "see-through" is
-  real negative space, the glazed bays stay opaque.
+- Pods: dark glazed suspended volumes on the mapped ring, with thin white floor bands and posts, solid chamfers and stair cores, three continuous glazed storeys, mast pipes and stays, anchored roof plates and supported stair ramps. Glazing remains opaque.
+
 - Walkway: centre line from the paired vertices of the mapped outline, cut where it
   crosses a pod, warren-truss diagonals, glazed tube, canopy, paired pipe supports every 15 m;
   short links from their own outlines. The mapped walkway ends ~5 m short of the sphere's mapped ring, so a
@@ -91,14 +85,14 @@ lights, drawn unshaded, warm in the night palette). Both palettes use the same k
 - The frame frequency and pod heights are eyeballed from photographs, not surveyed.
 - The dark palette is dimmer, and the hub `glow` caps are the only self-lit parts; the pods
   themselves do not light up.
-- Flat lake grade y=0 everywhere; nothing is baked in for terrain (Full 3D world untested).
+- Flat lake grade y=0 everywhere; nothing is baked in for terrain (Full 3D world visual placement verified on 2026-10-11).
 
 ## Costs (exported default scenes)
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 46,533 | 8 | 2,262,000 |
-| Far | 8,553 | 7 | 480,112 |
+| Near | 49,501 | 8 | 2,414,072 |
+| Far | 8,901 | 7 | 498,408 |
 
 ## Verification evidence
 
@@ -115,5 +109,13 @@ Rendered with `node local-scratch/shot.mjs cinesphere` (screenshots are ignored 
   (lightened), roofs too dark (now concrete), far pods a single glass slab (now three bands).
 - exported GLB near (dark lighting) and far: same silhouette and bounds as the source.
 
-Cityscape: not tested yet, integration is checked separately. Full 3D world: not tested yet,
+Cityscape: verified for far/near/street visual placement (2026-10-11). Full 3D world: not tested yet,
 integration is checked separately.
+
+## QA fix — 2026-10-11
+
+Pods use continuous dark glazing across all three storeys and slimmer white spandrels. Every walkway run ends on a bearing and legs to grade, including the shoreward terminal; stays meet roof anchor plates and mast brackets. Far drops hidden interior cores/posts and subpixel rails while retaining the suspended silhouette and three glazing bands.
+
+The supplied independent review sheet and its reference tile were compared with the new exported sheet; supplementary dossier photos were unavailable, so roof and masonry choices also use the existing authoring documentation and architectural knowledge. Geometry remains an approximation rather than a survey.
+
+Evidence: `tmp/landmark-qa/fix/sheets/cinesphere.jpg`, and far/near/street captures under `tmp/landmark-qa/fix/city/` and `tmp/landmark-qa/fix/world/`. Cityscape: **verified**. Full 3D world: **verified**. These are visual placement checks using the local Protomaps source and public Terrarium DEM; hardware performance and the full failure/toggle/reanchor lifecycle matrix remain untested. Tests now enforce the city LOD budget and retained architectural features instead of the former sparse-window cost ratios.
