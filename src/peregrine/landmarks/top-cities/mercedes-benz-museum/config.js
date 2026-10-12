@@ -2,7 +2,7 @@ import { FOOTPRINTS } from './footprint.js';
 // UNStudio 2006 museum; mapped OSM outer-ring area centroid.
 export const SPEC = {
   id: 'mercedes-benz-museum', name: 'Mercedes-Benz Museum', kind: 'building',
-  ready: false, origin: [9.233926358218074, 48.788176077973155],
+  ready: true, origin: [9.233926358218074, 48.788176077973155],
   height: 51.5, bodyHeight: 47.5, padM: 58, frontageBearing: 239,
   // Level plaza: perimeter median avoids a depressed DEM sample excavating it.
   terrainPad: { rings: [FOOTPRINTS[0]], refs: FOOTPRINTS[0].filter((_, i) => i % 6 === 0), datum: 'median', featherM: 6 },

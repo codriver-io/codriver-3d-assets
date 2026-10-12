@@ -1,0 +1,125 @@
+{
+  "id": "helsinki-cathedral",
+  "name": "Helsinki Cathedral",
+  "kind": "building",
+  "origin": [
+    24.9521785,
+    60.170378
+  ],
+  "height": 62.2,
+  "padM": 1,
+  "frontageBearing": 177,
+  "terraceHeight": 7.2,
+  "yaw": 0.05235987755982988,
+  "terrainPad": {
+    "datum": "median",
+    "featherM": 8,
+    "rings": [
+      [
+        [
+          24.9514,
+          60.16983
+        ],
+        [
+          24.95302,
+          60.16983
+        ],
+        [
+          24.95302,
+          60.17078
+        ],
+        [
+          24.9514,
+          60.17078
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        24.95198,
+        60.16986
+      ],
+      [
+        24.9524,
+        60.16986
+      ]
+    ],
+    "terraces": [
+      {
+        "ring": [
+          [
+            24.95143,
+            60.17007
+          ],
+          [
+            24.95299,
+            60.17007
+          ],
+          [
+            24.95299,
+            60.17077
+          ],
+          [
+            24.95143,
+            60.17077
+          ]
+        ],
+        "offsetM": 7.2,
+        "featherM": 4
+      }
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 at the Senate Square stair foot; upper church terrace at +7.2 m, estimated. No absolute altitude or DEM baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Photo-calibrated highest cross 55 m above terrace, 62.2 m above stair foot; OSM 61 m height tag is retained as a differing reference, not a surveyed dimension. Stairs, Corinthian capitals and apostle silhouettes approximated; rotation baked once. Cityscape and Full 3D world not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/helsinki-cathedral-near.glb",
+      "bytes": 936256,
+      "triangles": 17748,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -42.354759216308594,
+          0,
+          -38.569583892822266
+        ],
+        "max": [
+          44.63774108886719,
+          62.20000076293945,
+          57.99264907836914
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/helsinki-cathedral-far.glb",
+      "bytes": 401104,
+      "triangles": 7912,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -42.354759216308594,
+          0,
+          -38.569583892822266
+        ],
+        "max": [
+          44.63774108886719,
+          62.20000076293945,
+          57.99264907836914
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/helsinki-cathedral/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -36,6 +36,20 @@ export function create({ detail = 'near' } = {}) {
     f.box('zinc',x+.43,y+1.92,z,.25,.7,.25);
     if(near)f.box('zinc',x-.45,y+1.55,z,.22,.72,.24);
   }
+  function blindArch(x,z,a,width,spring,bottom) {
+    const radius=width/2, segments=near?12:6;
+    const panel=new THREE.Shape();panel.moveTo(-radius,bottom);panel.lineTo(radius,bottom);
+    for(let j=0;j<=segments;j++){const t=j*Math.PI/segments;panel.lineTo(radius*Math.cos(t),spring+radius*Math.sin(t));}
+    panel.closePath();
+    const g=new THREE.ShapeGeometry(panel);g.translate(0,0,near?.2:.32);g.rotateY(a);g.translate(x,0,z);if(near)put(g,'relief');
+    // Stone arch band embeds into its supporting wall rather than another overlay.
+    const band=new THREE.Shape();
+    for(let j=0;j<=segments;j++){const t=j*Math.PI/segments;const r=radius+.32;const u=r*Math.cos(t),v=spring+r*Math.sin(t);j?band.lineTo(u,v):band.moveTo(u,v);}
+    for(let j=segments;j>=0;j--){const t=j*Math.PI/segments;band.lineTo(radius*Math.cos(t),spring+radius*Math.sin(t));}
+    band.closePath();
+    const arch=near?new THREE.ExtrudeGeometry(band,{depth:.7,bevelEnabled:false}):new THREE.ShapeGeometry(band);arch.translate(0,0,near?-.2:.5);arch.rotateY(a);arch.translate(x,0,z);put(arch,'stone');
+    for(const sign of [-1,1]){const [u,v]=turn(sign*(radius+.16),.15,a);box('stone',x+u,(spring+bottom)/2,z+v,.32,spring-bottom,.7,a);}
+  }
   // Continuous solid footing and physically stepped Senate Square approach.
   box('granite',0,Y/2,0,81,Y,73);
   const steps=near?40:20, depth=20/steps;
@@ -104,10 +118,11 @@ export function create({ detail = 'near' } = {}) {
   }
   for(const x of [-13,13])for(const z of [-13,13]) {
     box('stone',x,Y+12.75,z,8.2,25.5,8.2);
-    box('stone',x,Y+26,z,8.8,1,8.8);
+    box('stone',x,Y+25.6,z,8.55,.45,8.55);
+    box('stone',x,Y+26.15,z,9.0,.7,9.0);
     for(let i=0;i<4;i++) {
       const a=i*Math.PI/2,[u,v]=turn(0,4.21,a);
-      box('relief',x+u,Y+23,z+v,3,3.7,.26,a);
+      blindArch(x+u-.11*Math.sin(a),z+v-.11*Math.cos(a),a,3.1,Y+23.1,Y+20.6);
       box('relief',x+u,Y+20.3,z+v,8.2,.65,.3,a);
       for(const side of [-1,1]) {
         const [px,pz]=turn(side*3.25,4.2,a);
@@ -115,10 +130,11 @@ export function create({ detail = 'near' } = {}) {
       }
     }
     box('stone',x,Y+28,z,6.7,3,6.7);
+    box('stone',x,Y+29.35,z,7.4,.55,7.4);
     // Recess-like arched niches on the four square belfry drums.
     for(let i=0;i<4;i++) {
       const a=i*Math.PI/2,[u,v]=turn(0,3.48,a);
-      box('relief',x+u,Y+27.9,z+v,2.6,2.8,.2,a);
+      blindArch(x+u-.13*Math.sin(a),z+v-.13*Math.cos(a),a,2.6,Y+28.1,Y+26.7);
     }
     cylinder('stone',x,z,3.6,Y+29.2,Y+30);
     const profile=[[3.25,Y+29.8],[3.25,Y+30.5]];
@@ -127,28 +143,29 @@ export function create({ detail = 'near' } = {}) {
     lathe('lamp',x,z,[[.1,Y+33.8],[.48,Y+34.4],[.2,Y+35],[.12,Y+36]],near?8:6);
     box('lamp',x,Y+36.2,z,.18,3.6,.18);box('lamp',x,Y+36.7,z,1.8,.18,.18);
   }
+  const D=Y-6; // Photo-calibrated lower drum: shorten the blank plinth, move upper order together.
   // The central drum has a cylindrical white lower base and windowed upper order.
-  cylinder('stone',0,0,7.65,Y+21,Y+44.5);
-  for(const [y,r,h] of [[24,8.05,.7],[31.8,8.4,.9],[41,8.15,1],[43.4,8.35,1],[45,7.8,.7]])cylinder('stone',0,0,r,Y+y,Y+y+h);
+  cylinder('stone',0,0,7.65,Y+21,D+44.5);
+  for(const [y,r,h] of [[24,8.05,.7],[31.8,8.4,.9],[41,8.15,1],[43.4,8.35,1],[45,7.8,.7]])cylinder('stone',0,0,r,D+y,D+y+h);
   const bays=12;
   for(let i=0;i<bays;i++) {
     const a=i*2*Math.PI/bays,f=face(a);
-    for(const [y,h] of [[34,3],[38.1,3.8]]) f.box('glass',0,Y+y,7.65,1.9,h,.32);
-    for(const s of [-1,1])f.box('relief',s*1.33,Y+36.5,7.71,.38,9,.4);
-    if(near)for(const y of [33.1,34,34.9,36.7,37.7,38.7,39.7])f.box('relief',0,Y+y,7.9,1.9,.09,.12);
+    for(const [y,h] of [[34,3],[38.1,3.8]]) f.box('glass',0,D+y,7.65,1.9,h,.32);
+    for(const s of [-1,1])f.box('relief',s*1.33,D+36.5,7.71,.38,9,.4);
+    if(near)for(const y of [33.1,34,34.9,36.7,37.7,38.7,39.7])f.box('relief',0,D+y,7.9,1.9,.09,.12);
     // Gold stars are omitted; the main copper shell is muted green.
   }
   // Four clocks on the upper drum (separate disks, supported by its wall).
   for(let i=0;i<4;i++) {
-    const f=face(i*Math.PI/2),g=new THREE.CircleGeometry(.93,near?20:10);g.translate(0,Y+42,7.91);f.put(g,'copper');
-    if(near) {f.box('lamp',0,Y+42.3,8.02,.08,.7,.1);f.box('lamp',.23,Y+42,8.02,.5,.08,.1);}
+    const f=face(i*Math.PI/2),g=new THREE.CircleGeometry(.93,near?20:10);g.translate(0,D+42,7.91);f.put(g,'copper');
+    if(near) {f.box('lamp',0,D+42.3,8.02,.08,.7,.1);f.box('lamp',.23,D+42,8.02,.5,.08,.1);}
   }
-  const dome=[[7.6,Y+45.3],[7.6,Y+45.7]];
-  for(let i=1;i<= (near?12:6);i++){const t=i/(near?12:6)*Math.PI/2;dome.push([7.6*Math.cos(t),Y+45.7+7.3*Math.sin(t)]);}
+  const dome=[[7.6,D+45.3],[7.6,D+45.7]];
+  for(let i=1;i<= (near?12:6);i++){const t=i/(near?12:6)*Math.PI/2;dome.push([7.6*Math.cos(t),D+45.7+7.3*Math.sin(t)]);}
   lathe('copper',0,0,dome,near?32:16);
-  lathe('copper',0,0,[[.2,Y+52.7],[1.4,Y+53.2],[1.2,Y+54],[.6,Y+55],[.2,Y+56]],near?16:8);
-  lathe('lamp',0,0,[[.15,Y+55.8],[.7,Y+56.5],[.55,Y+57],[.15,Y+57.5]],near?12:6);
-  box('lamp',0,Y+59.1,0,.22,3.8,.22);box('lamp',0,Y+59.7,0,2.1,.22,.22);
+  lathe('copper',0,0,[[.2,D+52.7],[1.4,D+53.2],[1.2,D+54],[.6,D+55],[.2,D+56]],near?16:8);
+  lathe('lamp',0,0,[[.15,D+55.8],[.7,D+56.5],[.55,D+57],[.15,D+57.5]],near?12:6);
+  box('lamp',0,D+59.1,0,.22,3.8,.22);box('lamp',0,D+59.7,0,2.1,.22,.22);
   const root=b.finish();root.rotation.y=SPEC.yaw;root.updateMatrixWorld(true);
   // Bake placement into vertex positions, never leave a transform for the host to repeat.
   for(const mesh of root.children) {mesh.geometry.applyMatrix4(root.matrixWorld);mesh.geometry.computeBoundingBox();mesh.geometry.computeBoundingSphere();}

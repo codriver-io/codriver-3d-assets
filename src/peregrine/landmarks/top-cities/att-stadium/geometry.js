@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
-import { site, roofHeight, archAssembly, memberGeometry, roofCells, OUTLINE } from './att-stadium-parts.js';
+import { site, roofHeight, archAssembly, memberGeometry, roofCells, endWallCells, OUTLINE } from './att-stadium-parts.js';
 
 export function create({ detail = 'near' } = {}) {
   const near = detail === 'near', b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
@@ -45,27 +45,19 @@ export function create({ detail = 'near' } = {}) {
       pane(r === 0 && i % (near ? 5 : 3) === 0 ? 'glow' : 'glass', [wall(0, y0), wall(1, z0), wall(1, z1), wall(0, y1)], near ? 0.035 : 0.025);
     }
   }
-  const endV = 50;
-  for (const s of [-1, 1]) {
-    const at = (v, y) => { const h = roofHeight(135, v) - 2; y = Math.abs(v) > SPEC.doorWidth / 2 ? Math.min(y, h) : y; return [s * 135, y, Math.abs(v) > 30 ? v * (0.92 + 0.08 * y / h) : v]; };
-    const rows = near ? 10 : 4, halfDoor = SPEC.doorWidth / 2;
-    for (let panel = 0; panel < 5; panel++) for (let r = 0; r < rows; r++) {
-      const edge = -halfDoor + SPEC.doorWidth * panel / 5, v0 = edge + 0.28, v1 = edge + SPEC.doorWidth / 5 - 0.28;
-      const y0 = SPEC.doorHeight * r / rows, y1 = SPEC.doorHeight * (r + 1) / rows;
-      // Near subdivisions are separate cells; five major panel divisions remain.
-      const bays = near ? 4 : 1;
-      for (let j = 0; j < bays; j++) pane('door', [at(v0 + (v1 - v0) * j / bays, y0), at(v0 + (v1 - v0) * (j + 1) / bays, y0), at(v0 + (v1 - v0) * (j + 1) / bays, y1), at(v0 + (v1 - v0) * j / bays, y1)], 0.027, 'steel');
-    }
-    for (let j = 0; j <= 5; j++) { const v = -halfDoor + SPEC.doorWidth * j / 5; face('steel', [at(Math.max(-halfDoor, v - 0.28), 0), at(Math.min(halfDoor, v + 0.28), 0), at(Math.min(halfDoor, v + 0.28), SPEC.doorHeight), at(Math.max(-halfDoor, v - 0.28), SPEC.doorHeight)], [s, 0, 0]); }
-    for (const v of [-1, 1]) face('glass', [at(v * halfDoor, 0), at(v * endV, 0), at(v * endV, SPEC.doorHeight), at(v * halfDoor, SPEC.doorHeight)], [s, 0, 0]);
-    for (let i = 0; i < N; i++) {
-      const a = outline[i], c = outline[(i + 1) % N];
-      if (Math.abs(a[0] - s * 135) > 0.01 || Math.abs(c[0] - s * 135) > 0.01) continue;
-      face('glass', [at(a[1], SPEC.doorHeight), at(c[1], SPEC.doorHeight), [s * 135, roofHeight(...c) - 2, c[1]], [s * 135, roofHeight(...a) - 2, a[1]]], [s, 0, 0]);
-    }
-  }
   // One conforming mesh spans fixed wings, moving panels and their centre seam.
   const cells = roofCells(outline, detail);
+  for (const end of [-1, 1]) for (const { points, material } of endWallCells(cells, end, detail)) {
+    if (material === 'steel' || (!near && material === 'glass')) { face(material, points, [end, 0, 0]); continue; }
+    const center = points.reduce((s, p) => s.map((v, i) => v + p[i] / points.length), [0, 0, 0]);
+    const margin = material === 'door' ? 0.054 : 0.04;
+    const inner = points.map(p => lerp(p, center, margin));
+    face(material, inner, [end, 0, 0]);
+    for (let i = 0; i < points.length; i++) {
+      const j = (i + 1) % points.length;
+      face(material === 'door' ? 'steel' : 'seam', [points[i], points[j], inner[j], inner[i]], [end, 0, 0]);
+    }
+  }
   for (const { points, material } of cells) face(material, points.map(([u, v]) => [u, roofHeight(u, v), v]), [0, 1, 0]);
   // Use the same cut samples along the outside fascia as on the curved skin.
   for (const { points } of cells) for (let i = 0; i < points.length; i++) {

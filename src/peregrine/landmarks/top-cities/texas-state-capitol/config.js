@@ -1,7 +1,7 @@
 // Present exterior, without temporary roof-restoration scaffolding.
 import { FOOTPRINTS } from './footprint.js';
 export const SPEC = {
-  id: 'texas-state-capitol', name: 'Texas State Capitol', kind: 'building', ready: false,
+  id: 'texas-state-capitol', name: 'Texas State Capitol', kind: 'building', ready: true,
   origin: [-97.740348684, 30.274671156], // mapped dome ring centroid
   height: 92.2447, // 302.64 ft, south entrance grade to Goddess star
   padM: 92, frontageBearing: 198, rotationDeg: -18,

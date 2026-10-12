@@ -20294,6 +20294,904 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "att-stadium",
+      "name": "AT&T Stadium",
+      "kind": "building",
+      "location": "Arlington, Texas",
+      "status": "ready",
+      "description": "The Dallas Cowboys stadium with its closed silver retractable roof, two monumental open steel box-truss arches rooted in four thrust blocks, outward-canted glass bowl and five-panel glazed end doors.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/att-stadium/geometry.js",
+        "build": "pnpm build:top-cities-landmarks att-stadium",
+        "provenance": "Original procedural geometry authored for Codriver on 2026-10-12. No mesh, photo or texture shipped. OSM seven named ways, © OpenStreetMap contributors ODbL 1.0. Photo comparisons only (ignored tmp): Arlington June 2020 4 (AT&T Stadium).jpg — Michael Barera, CC BY-SA 4.0; ATT Stadium Parking.jpg — Murphpics, CC BY-SA 4.0; MDA Muscle Walk DFW 2013.jpg — Mbrstooge, CC BY-SA 3.0; AT&T Stadium Aerial.jpeg — uploader XXBuilderXx, author unspecified on Commons, CC BY-SA 4.0 (reference-only; no image redistributed).",
+        "references": [
+          {
+            "label": "Structural engineer: arch, doors and field datum dimensions",
+            "url": "https://www.walterpmoore.com/projects/att-stadium"
+          },
+          {
+            "label": "Roof supplier: 292 ft crest above field",
+            "url": "https://www.birdair.com/birdair-portfolio/cowboys-stadium/"
+          },
+          {
+            "label": "Mapped stadium outline",
+            "url": "https://www.openstreetmap.org/way/47086748"
+          },
+          {
+            "label": "Front photo — Michael Barera, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg"
+          },
+          {
+            "label": "Parking view — Murphpics, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:ATT_Stadium_Parking.jpg"
+          },
+          {
+            "label": "Entrance truss — Mbrstooge, CC BY-SA 3.0",
+            "url": "https://en.wikipedia.org/wiki/File:MDA_Muscle_Walk_DFW_2013.jpg"
+          },
+          {
+            "label": "Aerial comparison — author unspecified, uploader XXBuilderXx, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Stadium_Aerial.jpeg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/att-stadium/geometry.js"
+      },
+      "notes": "Arch crest is 73.8 m over street grade, not 89 m: published 292 ft is above the field, 50 ft below the street. Closed roof only; no stadium interior or seating. Roof curvature, side-wall cant and window grid, arch subdivision and thrust-block profiles estimated. Rotation baked once from OSM 69 degree long-axis bearing; seven provider ways include four detached arch feet. Review fixes: roof triangles share conforming grid samples across fixed roof, moving panels, seam and fascia; revised shoulders expose continuous lower chords with tested clearance in both LODs. b2r regression fix: glass/doors/jambs partition the exact sampled fascia envelope, eliminating inverted header and all backing-face overlaps; far drops fine header borders and retains five-panel door rows and side-wall rhythm. Raw layered faces are zero in source and GLB even without depth ranks; exported QA is ok with zero cycles/coplanar overlaps. Street inspector preset is 1.6 m high and frames end doors and both feet. Near/far 29963/7818 triangles, 8/8 draws, 1590.6/421.8 KiB. All nine stadium tests and three registry checks pass; global registry/catalog have unrelated concurrent-build failures. Lead app recaptures and independent re-review pending.",
+      "documentation": "docs/assets/top-cities-att-stadium.md",
+      "manifest": "/models/buildings/att-stadium.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=att-stadium&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=att-stadium&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=att-stadium&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=att-stadium&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=att-stadium&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=att-stadium&view=street"
+          },
+          {
+            "label": "structure",
+            "url": "/asset-preview.html?asset=att-stadium&view=structure"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=att-stadium&view=detail"
+          }
+        ]
+      },
+      "city": "Arlington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "freedom-tower-miami",
+      "name": "Freedom Tower",
+      "kind": "building",
+      "location": "Miami, Florida",
+      "status": "ready",
+      "description": "Original texture-free 1925 Spanish Renaissance Revival tower: yellow cream shaft, square ornamental Giralda crown, octagonal belvedere, copper dome and beacon, red-tile printing wings and east scroll portal.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/freedom-tower-miami/geometry.js",
+        "build": "pnpm build:top-cities-landmarks freedom-tower-miami",
+        "provenance": "Original procedural exterior by Codriver; OSM outline and eight parts, © OpenStreetMap contributors (ODbL 1.0). Reference photographs only, never embedded: DXR, Freedom Tower Miami Southeast view 20160709 1 (CC BY-SA 4.0); Radomianin, Freedom Tower Miami (top), NE view (photograph CC BY-SA 4.0, architectural object public domain); Phillip Pessar, Freedom Tower Downtown Miami (CC BY 2.0).",
+        "references": [
+          {
+            "label": "Miami Dade College: official identity and current museum",
+            "url": "https://freedomtower.mdc.edu/about/"
+          },
+          {
+            "label": "Wikipedia: 1925, Schultze & Weaver, Giralda and 255-foot height",
+            "url": "https://en.wikipedia.org/wiki/Freedom_Tower_(Miami)"
+          },
+          {
+            "label": "DXR: Southeast view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Freedom_Tower,_Miami,_Southeast_view_20160709_1.jpg"
+          },
+          {
+            "label": "Radomianin: cupola detail, photograph CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Freedom_Tower_Miami_(top),_NE_view.jpg"
+          },
+          {
+            "label": "Phillip Pessar: wing and portal, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Freedom_Tower_Downtown_Miami_(38075844515).jpg"
+          },
+          {
+            "label": "Mapped building envelope",
+            "url": "https://www.openstreetmap.org/way/290629021"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/freedom-tower-miami/geometry.js"
+      },
+      "notes": "Published nominal height 78 m used instead of conflicting OSM 84.5 m. Mapped footprint and 1.33-degree rotation baked in; floor/tier heights, windows, roof and ornament sizes estimated from photographs. Portal scrolls and medallions simplified; tiny sculpture/lettering omitted. Belfry niches are architectural relief, not tall black windows. Night palette uses warm cupola floodlight; programmable red special-event lighting is not reproduced. App shading, provider replacement, terrain and independent review pending. Review refinement 2026-10-12: Sparse Giralda crown relief: added grouped panels and medallions below the side arches, stepped pilaster capitals, lower crown cornice, and belvedere foot/capital profiles in the existing stone/lamp batches. Coarse panels and stepped profiles remain in far; cupola tier heights and the 78 m top are unchanged. Exported near/far light review-fix sheets inspected; 437 combined dedicated/conformance tests pass and catalog validates 266 entries / 488 variants.",
+      "documentation": "docs/assets/top-cities-freedom-tower-miami.md",
+      "manifest": "/models/buildings/freedom-tower-miami.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=freedom-tower-miami",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=entrance"
+          },
+          {
+            "label": "cupola",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=cupola"
+          },
+          {
+            "label": "plan",
+            "url": "/asset-preview.html?asset=freedom-tower-miami&view=plan"
+          }
+        ]
+      },
+      "city": "Miami",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "griffith-observatory",
+      "name": "Griffith Observatory",
+      "kind": "building",
+      "location": "Los Angeles, California",
+      "status": "ready",
+      "description": "Original texture-free procedural 1935 Art Deco observatory: three copper domes, octagonal green central cupola, white concrete wings, bronze-grilled windows, south promenade and six-figure Astronomers Monument.",
+      "manifest": "/models/buildings/griffith-observatory.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/griffith-observatory/geometry.js",
+        "build": "pnpm build:top-cities-landmarks griffith-observatory --no-check",
+        "provenance": "Original Codriver procedural mesh, 2026-10-12; no traced mesh, photograph or texture shipped. Geographic outline © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photos and credits listed below remain in ignored tmp. Code MIT; model CC BY 4.0, Codriver.",
+        "references": [
+          {
+            "label": "Official restoration: concrete, copper domes, green octagonal cupola, terraces",
+            "url": "https://griffithobservatory.lacity.gov/about/observatory-history/renovation-and-expansion/renovation/"
+          },
+          {
+            "label": "Official west solar telescope dome: 30 ft (9.1 m) diameter",
+            "url": "https://griffithobservatory.lacity.gov/exhibits/telescopes/coelostat-solar-telescopes/"
+          },
+          {
+            "label": "Official planetarium: 75 ft internal projection dome",
+            "url": "https://griffithobservatory.lacity.gov/about/observatory-history/about-the-samuel-oschin-planetarium/"
+          },
+          {
+            "label": "Official Astronomers Monument: six astronomers, concrete portion approximately 35 ft",
+            "url": "https://griffithobservatory.lacity.gov/exhibits/exterior-exhibits/astronomers-monument-sundial/"
+          },
+          {
+            "label": "OpenStreetMap replacement outline 422130705",
+            "url": "https://www.openstreetmap.org/way/422130705"
+          },
+          {
+            "label": "Wikipedia: identity and 1935 opening",
+            "url": "https://en.wikipedia.org/wiki/Griffith_Observatory"
+          },
+          {
+            "label": "File:Know Your City No.11 Obelisk at entrance to Griffith Observatory.jpg — Los Angeles Times, CC BY 4.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Know_Your_City_No.11_Obelisk_at_entrance_to_Griffith_Observatory.jpg"
+          },
+          {
+            "label": "File:Griffith Observatory, Los Angeles 2011.jpg — Pedro Szekely from Los Angeles, USA, CC BY-SA 2.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory,_Los_Angeles_2011.jpg"
+          },
+          {
+            "label": "File:Griffith Observatory 2022.jpg — dconvertini, CC BY-SA 2.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_2022.jpg"
+          },
+          {
+            "label": "File:Griffith Park Observatory + LA (8966840102).jpg — Atomic Taco from Seattle, WA, USA, CC BY-SA 2.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Griffith_Park_Observatory_%2B_LA_(8966840102).jpg"
+          },
+          {
+            "label": "File:Griffith Observatory 2010 4 - panoramio.jpg — kl91711, CC BY 3.0 (visual reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_2010_4_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/griffith-observatory/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=griffith-observatory",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=detail"
+          },
+          {
+            "label": "Monument",
+            "url": "/asset-preview.html?asset=griffith-observatory&view=monument"
+          }
+        ]
+      },
+      "notes": "Mapped 71.5 m by 53.7 m envelope, solar dome diameter 9.144 m. Main external dome 24.8 m and top 23.2 m above entrance are photograph estimates; official 75 ft is internal projection diameter, OSM 35.9 m has unspecified datum and is not adopted. Monument height 10.668 m concrete is official, north-lawn location approximate from photos; six sculpted people reduced to grouped silhouettes. Telescope shutters closed; four roof cupolas retained. Underground expansion, lawn, hill, ramps, signage and interiors omitted. Glass recessed in real cutouts in both LODs; near bronze grilles and concrete courses simplify at far. Optional building-part query through shared Overpass helper failed; dossier contains main building plus two untouched northern outbuildings. Exported near/far day/night contact sheet visually inspected; own focused and conformance/export tests pass. Deterministic QA reports zero issues, coplanar/layered area and back-face hits; zero depth cycles. Independent and both-mode app review remain pending. Review refinement 2026-10-12: Uniform green major domes: warmed and darkened copper to brown (#66594c light, #443d36 dark); the small octagonal entrance cupola retains its existing green patina. Geometry, terrace placement and scene costs are unchanged. Exported near/far light review-fix sheets inspected; 437 combined dedicated/conformance tests pass and catalog validates 266 entries / 488 variants.",
+      "documentation": "docs/assets/top-cities-griffith-observatory.md",
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "helsinki-cathedral",
+      "name": "Helsinki Cathedral",
+      "kind": "building",
+      "location": "Helsinki, Finland",
+      "status": "ready",
+      "description": "Original texture-free procedural Greek-cross cathedral with five green copper domes, four six-column porticoes, twelve apostle silhouettes and the Senate Square granite stair podium.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/helsinki-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks helsinki-cathedral",
+        "provenance": "Original procedural authoring for Codriver, 2026-10-12. OSM outline and all 89 building parts © OpenStreetMap contributors, ODbL 1.0. Photographs used for visual comparison only, never shipped or traced as a mesh.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Helsinki_Cathedral"
+          },
+          {
+            "label": "Mapped outline and height tags",
+            "url": "https://www.openstreetmap.org/way/1542850662"
+          },
+          {
+            "label": "Lutheran Cathedral Helsinki edit — Hans Hillewaert; exposure edit Purpy Pupple, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Lutheran_Cathedral_Helsinki_edit.jpg"
+          },
+          {
+            "label": "Cathedral at Christmas market, November 2024 — JIP, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Helsinki_Cathedral_seen_from_a_closed_Christmas_market_on_an_evening_in_November_2024.jpg"
+          },
+          {
+            "label": "Helsingin tuomiokirkko Helsinki 2026-01-04 02 — Leonhard Lenz, CC0 1.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Helsingin_tuomiokirkko_Helsinki_2026-01-04_02.jpg"
+          },
+          {
+            "label": "Helsingin tuomiokirkko Helsinki 2026-01-04 01 — Leonhard Lenz, CC0 1.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Helsingin_tuomiokirkko_Helsinki_2026-01-04_01.jpg"
+          },
+          {
+            "label": "Helsingin tuomiokirkko Helsinki 2026-01-04 03 — Leonhard Lenz, CC0 1.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Helsingin_tuomiokirkko_Helsinki_2026-01-04_03.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/helsinki-cathedral/geometry.js"
+      },
+      "notes": "Original geometry; no external meshes or textures. Independent-review fix shortens bare lower drum by 6 m and moves upper order/dome together; photo-calibrated tip 55 m above terrace / 62.2 m above stair foot differs from OSM 61 m tag, which is unsurveyed. Small belfries have curved blind arches and stepped cornices in both LODs; far drops relief panels while keeping stone arch silhouette. Podium, stairs and terrain metadata retained. Capitals/statues/carvings simplified; detached bell/chapel pavilions remain provider-owned. Corrected Lutheran reference comparison and near/far light/dark sheets inspected; nine landmark tests and selected QA clean, no material cycles. Final costs near 17748 triangles / 7 draws / 935732 bytes; far 7912 / 7 / 400576 bytes. Both-mode app recapture and independent re-review remain with lead.",
+      "documentation": "docs/assets/top-cities-helsinki-cathedral.md",
+      "manifest": "/models/buildings/helsinki-cathedral.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=helsinki-cathedral",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=helsinki-cathedral&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=helsinki-cathedral&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=helsinki-cathedral&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=helsinki-cathedral&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=helsinki-cathedral&view=detail"
+          }
+        ]
+      },
+      "city": "Helsinki",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "mercedes-benz-museum",
+      "name": "Mercedes-Benz Museum",
+      "kind": "building",
+      "location": "Stuttgart, Germany",
+      "status": "ready",
+      "description": "Original procedural UNStudio 2006 museum: smooth trefoil envelope, sloping aluminium ribbons, three recessed glazing zones with diagonal mullions, triangular atrium skylight and small rooftop star.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/mercedes-benz-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks mercedes-benz-museum",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-12; model CC BY 4.0, source MIT. OSM contributors, ODbL 1.0, relation 14292942 and roof part 1073598797. Photo references only: Mercedes-Benz Welt pan, pjt56, CC BY 3.0; Mercedes-Benz Museum 201312 08 blue hour, Julian Herzog, CC BY 4.0. UNStudio exterior photo from official project page, reference-only, copyright retained by rights holder; no redistribution. Dossier photo 1 excluded: it depicts the neighbouring dealership.",
+        "references": [
+          {
+            "label": "UNStudio: 2001–2006 trefoil and double helix design",
+            "url": "https://www.unstudio.com/projects/mercedes-benz-museum/"
+          },
+          {
+            "label": "Mercedes-Benz Group: opening and nine exhibition levels",
+            "url": "https://group.mercedes-benz.com/company/tradition/museums-historical-sites/mercedes-benz-museum.html"
+          },
+          {
+            "label": "OSM museum relation, 47.5 m height and mapped outline",
+            "url": "https://www.openstreetmap.org/relation/14292942"
+          },
+          {
+            "label": "Mercedes-Benz Welt pan — pjt56, CC BY 3.0 (museum at left)",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Welt_pan.jpg"
+          },
+          {
+            "label": "Museum 201312 08 blue hour — Julian Herzog, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Museum_201312_08_blue_hour.jpg"
+          },
+          {
+            "label": "Underground campus plaza: scoped boundary inspection, not full ownership",
+            "url": "https://www.openstreetmap.org/relation/14292941"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mercedes-benz-museum/geometry.js"
+      },
+      "notes": "47.5 m museum body from OSM; approximately 4853 m² mapped envelope. Ribbon height variation, glazing recess, panel joints and emblem scale/placement are visual estimates. Interior exhibition ramps are represented by exterior ribbons, without interior rooms or cars. Original texture-free geometry; no reference images or meshes shipped. Adjacent dealership, parking and detached rooflets remain excluded. Underground campus relation 14292941 shares museum boundary ways 1073566079 and 19384901, already owned; wider campus rings are excluded. Review fix: bounded museum-perimeter median-datum pad, eleven perimeter refs and 6 m feather. Provider slab filtering is lead-owned shared runtime work; the lowest glass ribbon remains unverified in app until recapture.",
+      "documentation": "docs/assets/top-cities-mercedes-benz-museum.md",
+      "manifest": "/models/buildings/mercedes-benz-museum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=mercedes-benz-museum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=mercedes-benz-museum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=mercedes-benz-museum&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=mercedes-benz-museum&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=mercedes-benz-museum&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=mercedes-benz-museum&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=mercedes-benz-museum&view=plan"
+          }
+        ]
+      },
+      "city": "Stuttgart",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "notre-dame-de-la-garde",
+      "name": "Notre-Dame de la Garde",
+      "kind": "building",
+      "location": "Marseille, France",
+      "status": "ready",
+      "description": "Original texture-free Romano-Byzantine basilica: white/green stone courses, square open belfry, columned cylindrical pedestal, gilded Virgin and Child, ribbed dome and fort terraces.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/notre-dame-de-la-garde/geometry.js",
+        "build": "pnpm build:top-cities-landmarks notre-dame-de-la-garde --no-check",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-12; code MIT, model CC BY 4.0. Mapped outline and placement © OpenStreetMap contributors, ODbL 1.0. Photographs used for visual comparison only, none embedded: kallerna, Notre-Dame de la Garde Marseille 2024 (CC BY-SA 4.0); Robert Valette, Coupole de N.D.de la Garde (CC BY-SA 4.0); Chabe01, Basilique Notre Dame Garde - Marseille VI (FR13) - 2023-07-22 - 22 (CC BY-SA 4.0); Earth777, Notre-Dame de la Garde aerial view 2020 (CC BY-SA 4.0, cropped by Iojhug). Unrelated Étretat and city-only dossier pictures excluded.",
+        "references": [
+          {
+            "label": "Marseille Tourism — architecture and identity",
+            "url": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/notre-dame-de-la-garde-basilica/"
+          },
+          {
+            "label": "Diocese of Marseille — the five statues",
+            "url": "https://diocese-marseille.fr/notre-dame-de-la-garde/"
+          },
+          {
+            "label": "Wikipedia — dimensional stages and architectural description",
+            "url": "https://en.wikipedia.org/wiki/Notre-Dame_de_la_Garde"
+          },
+          {
+            "label": "OSM basilica way 69137913",
+            "url": "https://www.openstreetmap.org/way/69137913"
+          },
+          {
+            "label": "kallerna — 2024 exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_la_Garde_Marseille_2024.jpg"
+          },
+          {
+            "label": "Robert Valette — cupola detail, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Coupole_de_N.D.de_la_Garde.JPG"
+          },
+          {
+            "label": "Chabe01 — drum detail, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Basilique_Notre_Dame_Garde_-_Marseille_VI_(FR13)_-_2023-07-22_-_22.jpg"
+          },
+          {
+            "label": "Earth777 — 2020 aerial, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_la_Garde_aerial_view_2020.jpeg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/notre-dame-de-la-garde/geometry.js"
+      },
+      "notes": "Published square tower / cylindrical pedestal / statue stages 41 / 12.5 / 11.2 m; 64.7 m authored top above lower fort datum. Upper parvis +5 m and dome/annex heights are photo estimates. Abstract Virgin and Child and trumpet angels; interiors, fine mosaics, fort ramparts outside the owned site and temporary restoration scaffolds omitted. Main building and tower and northeast annex ownership only, four exact OSM ways. Far retains rows of arched lights, cupola, open belfry, pedestal columns, statue and terraces, using coarser courses and fewer ribs. Model readiness describes exports; independent review and both-mode application QA remain pending. Review refinement 2026-10-12: Post-like gold silhouette: gave the robe a wider hem, defined waist/shoulders and asymmetric connected mantle; offset the Child body/head and blessing hand outward and extended the supporting arm to match. Both LODs retain the 11.2 m statue, 64.7 m crown and two distinct heads; the existing sculpture ray/contact test now samples the revised Child position. Exported near/far light review-fix sheets inspected; 437 combined dedicated/conformance tests pass and catalog validates 266 entries / 488 variants.",
+      "documentation": "docs/assets/top-cities-notre-dame-de-la-garde.md",
+      "manifest": "/models/buildings/notre-dame-de-la-garde.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=notre-dame-de-la-garde",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=notre-dame-de-la-garde&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=notre-dame-de-la-garde&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=notre-dame-de-la-garde&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=notre-dame-de-la-garde&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=notre-dame-de-la-garde&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=notre-dame-de-la-garde&view=detail"
+          }
+        ]
+      },
+      "city": "Marseille",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ohio-statehouse",
+      "name": "Ohio Statehouse",
+      "kind": "building",
+      "location": "Columbus, Ohio",
+      "status": "ready",
+      "description": "Original procedural Columbus limestone Greek Revival Statehouse, its flat-topped two-storey cupola, Doric porticos, atrium and Senate/Judiciary annex.",
+      "manifest": "/models/buildings/ohio-statehouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ohio-statehouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ohio-statehouse --no-check",
+        "provenance": "Original texture-free procedural geometry authored 2026-10-12; no third-party mesh or photograph incorporated. Mapped compound footprint © OpenStreetMap contributors, ODbL 1.0. Visual references: Columbus, Ohio - Highsmith 40, Carol M. Highsmith, public domain; Top of Ohio Statehouse on 9-11 1, Sixflashphoto, CC BY-SA 4.0; Ohio Statehouse aerial shot (9843708756), Bob Hall, CC BY-SA 2.0; Ohio Statehouse Rear, levlaz, CC BY-SA 2.0. Photos retained only in ignored research scratch.",
+        "references": [
+          {
+            "label": "CSRAB official cupola measurements",
+            "url": "https://www.ohiostatehouse.org/about/capitol-square/statehouse/cupola"
+          },
+          {
+            "label": "CSRAB architecture and Columbus limestone",
+            "url": "https://www.ohiostatehouse.org/about/capitol-square/statehouse"
+          },
+          {
+            "label": "CSRAB west facade eight columns",
+            "url": "https://ohiostatehouse.org/about/csrab"
+          },
+          {
+            "label": "CSRAB atrium",
+            "url": "https://ohiostatehouse.org/about/capitol-square/atrium"
+          },
+          {
+            "label": "Highsmith west facade — public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Columbus,_Ohio_-_Highsmith_40.jpg"
+          },
+          {
+            "label": "Cupola detail — Sixflashphoto, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Top_of_Ohio_Statehouse_on_9-11_1.jpg"
+          },
+          {
+            "label": "Aerial — Bob Hall, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ohio_Statehouse_aerial_shot_(9843708756).jpg"
+          },
+          {
+            "label": "Annex east facade — levlaz, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ohio_Statehouse_Rear.jpg"
+          },
+          {
+            "label": "OSM compound outline",
+            "url": "https://www.openstreetmap.org/way/30172881"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ohio-statehouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ohio-statehouse",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ohio-statehouse&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ohio-statehouse&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ohio-statehouse&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ohio-statehouse&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=ohio-statehouse&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=ohio-statehouse&view=detail"
+          }
+        ]
+      },
+      "notes": "Official 64-foot cupola diameter, 158-foot pinnacle height and eight west columns; OSM orientation and compound plan. Main entablature at 17m and annex around 20m from OSM. Visible drum tier split, windows, pilaster sizes, pediments, roof skylights, pinnacle and stair dimensions are photo-based estimates. The 70-foot official drum measurement is interpreted from photos as including enclosure below the visible drum; the exposed tier split is an estimate. Interior rotunda, inscriptions, fine sculpture, monuments and landscaping omitted. Exported GLBs reviewed separately from app integration. Review refinement 2026-10-12: Mint roof colour: desaturated the roof to muted grey-green (#858e88 light, #444b48 dark), preserving the buff limestone and flat-topped cylindrical drum. Geometry and scene costs are unchanged. Exported near/far light review-fix sheets inspected; 437 combined dedicated/conformance tests pass and catalog validates 266 entries / 488 variants.",
+      "documentation": "docs/assets/top-cities-ohio-statehouse.md",
+      "city": "Columbus",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "royal-palace-amsterdam",
+      "name": "Royal Palace (Paleis op de Dam)",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural Paleis op de Dam: weathered sandstone classical facade with seven small arched entrances, paired window rows, sculpted triangular pediments, four corner hips, two open courts and an octagonal domed cupola with golden ship vane.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/royal-palace-amsterdam/geometry.js",
+        "build": "pnpm build:top-cities-landmarks royal-palace-amsterdam",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-12; no third-party mesh or texture. Geographic frame from OpenStreetMap relation 3580875, outer way 57856712 and all 18 building:part ways 748659170–748659187, © OpenStreetMap contributors, ODbL 1.0. References only, not redistributed: Deerpeter, Paleis op de Dam 2026, CC BY-SA 4.0; Bernard F. Eilers, Dam palace 1937 wedding decorations, public domain; J.P.A. Antonietti / Rijksdienst voor het Cultureel Erfgoed, Achtergevel - Amsterdam - 20011609 - RCE (1930), CC BY-SA 4.0; Richard Mortel, Royal Palace Amsterdam 1665 (1), CC BY 2.0. Dossier historical prints provide silhouette context but current geometry follows 2026 facade photograph and mapped parts.",
+        "references": [
+          {
+            "label": "Wikipedia: history, sandstone, lack of grand entrance and six-metre Atlas",
+            "url": "https://en.wikipedia.org/wiki/Royal_Palace_of_Amsterdam"
+          },
+          {
+            "label": "OpenStreetMap palace multipolygon",
+            "url": "https://www.openstreetmap.org/relation/3580875"
+          },
+          {
+            "label": "OSM tower part, height 45 m",
+            "url": "https://www.openstreetmap.org/way/748659171"
+          },
+          {
+            "label": "Deerpeter — Paleis op de Dam 2026, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paleis_op_de_Dam_2026.jpg"
+          },
+          {
+            "label": "RCE — Achtergevel, 1930, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Achtergevel_-_Amsterdam_-_20011609_-_RCE.jpg"
+          },
+          {
+            "label": "Richard Mortel — rear tympanum, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Palace,_Amsterdam,_1665_(1)_(47359690331).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/royal-palace-amsterdam/geometry.js"
+      },
+      "notes": "OSM outline/part heights establish massing; eaves 25 m, ridges 30–31 m, cupola shoulder near 45 m, estimated ship tip 51 m. Fine carvings are original grouped human reliefs, Atlas/globe and roof statues are simplified silhouettes; interior rooms and street furniture are omitted. Near windows have mullions; far retains every separated window bay and row. Weathered stone colour calibrated to Deerpeter 2026 reference; night lighting is a conservative approximation, not a measured lighting survey. Mapped-wall simplification and cornice/pediment projections reach at most 1.59 m outside the surveyed outer ring, verified by vertex distance. Rear ground doors and sculptural carving are simplified. Exported QA has no issues and selected depth table has zero dropped edges; independent review remains pending.",
+      "documentation": "docs/assets/top-cities-royal-palace-amsterdam.md",
+      "manifest": "/models/buildings/royal-palace-amsterdam.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=entrance"
+          },
+          {
+            "label": "Cupola",
+            "url": "/asset-preview.html?asset=royal-palace-amsterdam&view=cupola"
+          }
+        ]
+      },
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "texas-state-capitol",
+      "name": "Texas State Capitol",
+      "kind": "building",
+      "location": "Austin, Texas, United States",
+      "status": "ready",
+      "description": "Original Sunset Red granite Renaissance Revival Capitol with long wings, corner mansards, giant arched south portal, north colonnaded porch, ribbed painted dome and white Goddess of Liberty.",
+      "manifest": "/models/buildings/texas-state-capitol.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/texas-state-capitol/geometry.js",
+        "build": "pnpm build:top-cities-landmarks texas-state-capitol --no-check",
+        "provenance": "Original procedural authoring, 2026-10-12. No photographs, textures, scan or external mesh shipped. Photos remain in ignored research scratch; title, author and licences recorded below. Mapped outlines © OpenStreetMap contributors, ODbL 1.0.",
+        "references": [
+          {
+            "label": "State Preservation Board — dome construction and height",
+            "url": "https://www.tspb.texas.gov/prop/tc/tc-architecture/index.html"
+          },
+          {
+            "label": "SPB — dome painted to match Sunset Red granite, 2010",
+            "url": "https://www.tspb.texas.gov/prop/projects/tc-projects.html"
+          },
+          {
+            "label": "SPB — white Goddess of Liberty and 1986 replica",
+            "url": "https://tspb.texas.gov/prop/tc/tc-history/goddess/index.html"
+          },
+          {
+            "label": "SPB — Capitol history and dimensions brochure",
+            "url": "https://tspb.texas.gov/plan/brochures/doc/in_print/capitol/capitol_brochure.pdf"
+          },
+          {
+            "label": "Wikipedia — 302.64 ft south-front height",
+            "url": "https://en.wikipedia.org/wiki/Texas_State_Capitol"
+          },
+          {
+            "label": "Mapped Capitol outline",
+            "url": "https://www.openstreetmap.org/way/25758443"
+          },
+          {
+            "label": "File:Texas State Capitol August 2019 11.jpg — Michael Barera — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Texas_State_Capitol_August_2019_11.jpg"
+          },
+          {
+            "label": "File:Texas Ranger monument in front of Texas State Capitol.JPG — Daniel Mayer — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Texas_Ranger_monument_in_front_of_Texas_State_Capitol.JPG"
+          },
+          {
+            "label": "File:Texas State Capitol (4195756025).jpg — Kumar Appaiah from Mumbai, India — CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Texas_State_Capitol_(4195756025).jpg"
+          },
+          {
+            "label": "File:Texas State Capitol - North Side (3208303879).jpg — Kumar Appaiah from Mumbai, India — CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Texas_State_Capitol_-_North_Side_(3208303879).jpg"
+          },
+          {
+            "label": "File:Texas State Capitol (3484195881).jpg — Tim Wilson from Blaine, MN, USA — CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Texas_State_Capitol_(3484195881).jpg"
+          },
+          {
+            "label": "File:Texas capitol.jpg — aswinkb — CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Texas_capitol.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/texas-state-capitol/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=texas-state-capitol",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=street"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=dome"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=texas-state-capitol&view=entrance"
+          }
+        ]
+      },
+      "notes": "Independent-review fix strengthens recessed 24-column dome order, stepped balcony/entablature, southern giant columns, curved arch surround, wing pilasters/capitals and cornices in both LODs. Joined far dome ridges omit hidden backs to preserve budget; separate windows and column gaps retained. Published height 302.64 ft (92.2447 m); dome paint matches Sunset Red granite (SPB restoration), Goddess white. Exact mapped envelope and all 16 part ids retained. Stage heights, bays/profile and sculpture are photographic estimates. Grounds monuments, underground extension, temporary roof work/interiors omitted. Eight landmark tests, selected geometry QA and depth checks pass without material cycles; exported near/far light/dark sheets inspected. Final costs near 34602 triangles / 6 draws / 1681336 bytes; far 10090 / 6 / 490900 bytes. Both-mode app recapture and independent re-review remain with lead.",
+      "documentation": "docs/assets/top-cities-texas-state-capitol.md",
+      "city": "Austin",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "vulcan-statue",
+      "name": "Vulcan statue and tower",
+      "kind": "building",
+      "location": "Birmingham, Alabama",
+      "status": "ready",
+      "description": "Original procedural Vulcan: a 56-foot cast-iron smith raising a spear point, with muscular limbs, beard, apron, hammer and anvil, on the 124-foot octagonal native-sandstone tower, supported observation balcony and detached glazed elevator.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/vulcan-statue/geometry.js",
+        "build": "pnpm build:top-cities-landmarks vulcan-statue",
+        "provenance": "Original procedural geometry authored 2026-10-12. OSM dossier ways 233561533, 1265583010 and 1265586546, © OpenStreetMap contributors ODbL 1.0. Reference-only Commons photographs inspected: Vulcan statue.jpg — Andre Natta/acnatta, CC BY 2.0; Vulcan In 2011.JPG — Carvizca, CC BY-SA 3.0; Towers of Vulcan Park (5333308069).jpg and Vulcan Park, Birmingham (Alabama).jpg — Greg Willis, CC BY-SA 2.0; Vulcan statue Birmingham AL 2008 snow.jpg — David Gunnells/Earthsound, CC BY-SA 3.0; Vulcan Statue at Dusk.jpg — Conmat13, CC BY-SA 4.0. Photos retained only in ignored scratch for comparison, no external mesh or texture used.",
+        "references": [
+          {
+            "label": "Official park FAQ — dimensions",
+            "url": "https://visitvulcan.com/about/faq/"
+          },
+          {
+            "label": "Wikipedia — Vulcan statue",
+            "url": "https://en.wikipedia.org/wiki/Vulcan_statue"
+          },
+          {
+            "label": "OSM provider way 233561533",
+            "url": "https://www.openstreetmap.org/way/233561533"
+          },
+          {
+            "label": "OSM provider way 1265583010",
+            "url": "https://www.openstreetmap.org/way/1265583010"
+          },
+          {
+            "label": "OSM provider way 1265586546",
+            "url": "https://www.openstreetmap.org/way/1265586546"
+          },
+          {
+            "label": "File:Vulcan statue.jpg — acnatta / Andre Natta (profile), CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vulcan_statue.jpg"
+          },
+          {
+            "label": "File:Vulcan In 2011.JPG — Carvizca, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vulcan_In_2011.JPG"
+          },
+          {
+            "label": "File:Towers of Vulcan Park (5333308069).jpg — Greg Willis from Denver, CO, usa, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Towers_of_Vulcan_Park_(5333308069).jpg"
+          },
+          {
+            "label": "File:Vulcan Park, Birmingham (Alabama).jpg — Greg Willis from Denver, CO, usa, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vulcan_Park,_Birmingham_(Alabama).jpg"
+          },
+          {
+            "label": "File:Vulcan statue Birmingham AL 2008 snow.jpg — David Gunnells (Earthsound) / (flickr profile), CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vulcan_statue_Birmingham_AL_2008_snow.jpg"
+          },
+          {
+            "label": "File:Vulcan Statue at Dusk.jpg — Conmat13, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vulcan_Statue_at_Dusk.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vulcan-statue/geometry.js"
+      },
+      "notes": "Official park FAQ gives 56 ft toe-to-spear and 124 ft pedestal (54.864 m total); Wikipedia/OSM give 123 ft/37 m pedestal, a small discrepancy explicitly resolved in favour of the official FAQ. Octagon diameter and elevator offset are mapped. Anatomy, apron, anvil, balcony level, taper and elevator height estimated from photos. No landscape, museum, trees or interiors modeled; procedural sculpture is an approximation, not a scan. No texture or reference image ships. Device performance unverified. Review refinement 2026-10-12: Uniform machined sandstone: near tower courses now alternate six restrained heights, with connected facet offsets up to 35 mm and uneven joints up to 18 mm. The small face-normal changes produce subdued facet-light variation within the existing stone batch; no texture, disconnected overlay, or extra draw. Octagonal taper, statue, contacts, foundation and far silhouette remain unchanged. Exported near/far light review-fix sheets inspected; 437 combined dedicated/conformance tests pass and catalog validates 266 entries / 488 variants.",
+      "documentation": "docs/assets/top-cities-vulcan-statue.md",
+      "manifest": "/models/buildings/vulcan-statue.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=vulcan-statue&view=overview",
+        "views": [
+          {
+            "label": "Full tower and figure",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=overview"
+          },
+          {
+            "label": "North facade",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=facade"
+          },
+          {
+            "label": "Elevator and back",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=back"
+          },
+          {
+            "label": "Above tower",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=roof"
+          },
+          {
+            "label": "Street level",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=street"
+          },
+          {
+            "label": "Iron figure detail",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=statue"
+          },
+          {
+            "label": "Balcony and access bridge",
+            "url": "/asset-preview.html?asset=vulcan-statue&view=balcony"
+          }
+        ]
+      },
+      "city": "Birmingham",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

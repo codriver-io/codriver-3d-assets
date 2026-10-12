@@ -1,7 +1,7 @@
 // Present-day exterior; structural centre is the mapped central drum.
 export const SPEC = {
-  id: 'helsinki-cathedral', name: 'Helsinki Cathedral', kind: 'building', ready: false,
-  origin: [24.9521785, 60.170378], height: 68.2, padM: 1, frontageBearing: 177,
+  id: 'helsinki-cathedral', name: 'Helsinki Cathedral', kind: 'building', ready: true,
+  origin: [24.9521785, 60.170378], height: 62.2, padM: 1, frontageBearing: 177,
   terraceHeight: 7.2, yaw: 3 * Math.PI / 180,
   terrainPad: {
     datum: 'median', featherM: 8,
@@ -17,5 +17,5 @@ export const PALETTES = {
 export const MANIFEST = {
   elevationDatum: 'y=0 at the Senate Square stair foot; upper church terrace at +7.2 m, estimated. No absolute altitude or DEM baked in.',
   attribution: 'Original procedural mesh for Codriver. Mapped footprint © OpenStreetMap contributors (ODbL 1.0); https://www.openstreetmap.org/copyright',
-  note: 'OSM church height 61 m above terrace; exported highest cross 68.2 m above stair foot. Stairs, Corinthian capitals and apostle silhouettes approximated; rotation baked once. Cityscape and Full 3D world not tested yet.',
+  note: 'Photo-calibrated highest cross 55 m above terrace, 62.2 m above stair foot; OSM 61 m height tag is retained as a differing reference, not a surveyed dimension. Stairs, Corinthian capitals and apostle silhouettes approximated; rotation baked once. Cityscape and Full 3D world not tested yet.',
 };

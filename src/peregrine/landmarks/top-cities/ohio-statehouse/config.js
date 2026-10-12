@@ -1,6 +1,6 @@
 import { FOOTPRINTS, WEST_STAIR } from './footprint.js';
 export const SPEC = {
-  id: 'ohio-statehouse', name: 'Ohio Statehouse', kind: 'building', ready: false,
+  id: 'ohio-statehouse', name: 'Ohio Statehouse', kind: 'building', ready: true,
   origin: [-82.9991013, 39.9613191], height: 48.1584, padM: 86,
   frontageBearing: 278.9, rotation: 8.85 * Math.PI / 180,
   drumDiameter: 19.5072, drumTop: 38.336, mainRoof: 17,

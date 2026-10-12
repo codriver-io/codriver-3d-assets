@@ -1,7 +1,7 @@
 import { FOOTPRINTS } from './footprint.js';
 // Official park FAQ: 56 ft statue (toe to spear) on a 124 ft sandstone pedestal.
 export const SPEC = {
-  id: 'vulcan-statue', name: 'Vulcan statue and tower', kind: 'building', ready: false,
+  id: 'vulcan-statue', name: 'Vulcan statue and tower', kind: 'building', ready: true,
   origin: [-86.79550087777778, 33.491722788888886], height: 54.864,
   pedestalM: 37.7952, statueM: 17.0688, padM: 17, frontageBearing: 1.8,
   terrainPad: { rings: [FOOTPRINTS[0], FOOTPRINTS[2], FOOTPRINTS[3]],
