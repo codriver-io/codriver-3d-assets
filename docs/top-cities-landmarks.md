@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (206 released)
+## The collection (207 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -203,6 +203,7 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `westminster-abbey` | Westminster Abbey | London | building |
 | `opera-de-lyon` | Opéra de Lyon | Lyon | building |
 | `santiago-bernabeu` | Estadio Santiago Bernabéu | Madrid | building |
+| `saint-sophia-cathedral-kyiv` | Saint Sophia Cathedral | Kyiv | building |
 | `oak-street-bridge` | Oak Street Bridge | Vancouver | bridge, road-fitted |
 | `riverside-county-courthouse` | Riverside County Courthouse | Riverside | building |
 | `place-de-la-concorde-obelisk` | Place de la Concorde obelisk & fountains | Paris | building |
