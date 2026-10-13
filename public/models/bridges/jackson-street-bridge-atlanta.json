@@ -1,0 +1,67 @@
+{
+  "id": "jackson-street-bridge-atlanta",
+  "name": "Jackson Street Bridge",
+  "kind": "bridge",
+  "origin": [
+    -84.37431035,
+    33.7601681
+  ],
+  "height": 14.7,
+  "padM": 135,
+  "frontageBearing": 179,
+  "rangeM": 3200,
+  "nearM": 1500,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0; 6 m Cityscape span clearance is estimated. World deck independently interpolates sampled abutment datums, with supports meeting local DEM.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Atlanta concrete overpass over Freedom Parkway, not the Newark swing bridge. OSM span/width measured; rail, girders, lights and clearance estimated. Pre-reconfiguration two-lane layout; 2025/26 parklet work not asserted complete.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/jackson-street-bridge-atlanta-near.glb",
+      "bytes": 189468,
+      "triangles": 6346,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -10.32580852508545,
+          -0.3499999940395355,
+          -127.78386688232422
+        ],
+        "max": [
+          10.476088523864746,
+          14.68558120727539,
+          107.80388641357422
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/jackson-street-bridge-atlanta-far.glb",
+      "bytes": 96996,
+      "triangles": 3164,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -10.32580852508545,
+          -0.3499999940395355,
+          -127.78386688232422
+        ],
+        "max": [
+          10.476088523864746,
+          14.68558120727539,
+          107.80388641357422
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jackson-street-bridge-atlanta/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

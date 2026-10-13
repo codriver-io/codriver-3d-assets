@@ -29011,6 +29011,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "jackson-street-bridge-atlanta",
+      "name": "Jackson Street Bridge",
+      "kind": "bridge",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original short concrete girder overpass with raised sidewalks, low solid parapets and two open guardrails, fitted to Jackson Street NE over Freedom Parkway.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/jackson-street-bridge-atlanta/geometry.js",
+        "build": "pnpm build:top-cities-landmarks jackson-street-bridge-atlanta",
+        "provenance": "Original procedural geometry, 2026-10-13; OSM roadway/outline © OpenStreetMap contributors (ODbL 1.0). Atlanta-only visual references: Marc Merlin skyline photographs (CC BY-SA 4.0); Atlanta Department of City Planning project rendering (copyright, visual comparison only); Urbanize Atlanta November 2025 site photograph (copyright, visual comparison only). No images, textures or third-party meshes shipped. Dossier Newark facts/photos rejected.",
+        "references": [
+          {
+            "label": "Mapped Atlanta deck outline",
+            "url": "https://www.openstreetmap.org/way/1451196894"
+          },
+          {
+            "label": "Mapped two-lane roadway",
+            "url": "https://www.openstreetmap.org/way/43520078"
+          },
+          {
+            "label": "City of Atlanta project identity and proposed reconfiguration",
+            "url": "https://www.atlcitystudio.org/jackson-street-bridge"
+          },
+          {
+            "label": "Atlanta DOT project 1126 March 2025 manual",
+            "url": "https://ctycms.com/ga-atlanta/docs/22-jackson-street-bridge-project-bid-manual.pdf"
+          },
+          {
+            "label": "November 2025 deck and open metal parapet reference, Urbanize Atlanta",
+            "url": "https://atlanta.urbanize.city/post/jackson-street-bridge-old-fourth-ward-redo-iconic-downtown"
+          },
+          {
+            "label": "Atlanta skyline photograph, Marc Merlin, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Atlanta_skyline_from_Jackson_Street_Bridge_2020.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jackson-street-bridge-atlanta/geometry.js"
+      },
+      "notes": "OSM span and total width measured; 6 m flat clearance, girder and abutment dimensions, median supports and light positions estimated. Pre-reconfiguration two-lane layout; proposed 2025/26 parklet is not claimed as completed. Near/far GLBs are authored and measured; the Full 3D world landing seam was a shared HD road defect, fixed 2026-10-13, and both landings are verified continuous in both modes.",
+      "documentation": "docs/assets/top-cities-jackson-street-bridge-atlanta.md",
+      "manifest": "/models/bridges/jackson-street-bridge-atlanta.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=roof"
+          },
+          {
+            "label": "Crossing",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=crossing"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=underside"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=north"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=jackson-street-bridge-atlanta&view=south"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
