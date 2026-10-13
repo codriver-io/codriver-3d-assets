@@ -27,6 +27,9 @@ jobs:
         with:
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
           persist-credentials: false
+          # The library dates each model from its commit history; trees are enough, so skip old blobs.
+          fetch-depth: 0
+          filter: blob:none
       - name: Skip a superseded commit
         id: latest
         if: github.event_name == 'workflow_run'

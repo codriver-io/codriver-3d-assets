@@ -22,6 +22,16 @@ try{
  await page.locator('#empty-reset').click();await page.locator('#search').fill('Montreal');
  assert.ok(await page.locator('#list .asset').count()>0,'Accent-insensitive city search');
  await page.locator('#reset').click();
+ if(catalog.assets.some(a=>a.added)){
+  const firstCard=async()=>{const id=await page.locator('#list .asset').first().getAttribute('data-id');return catalog.assets.find(a=>a.id===id);},fresh=d=>!!d&&Date.now()-Date.parse(d+'T00:00:00Z')<7*864e5,latest=key=>catalog.assets.map(a=>a[key]).filter(Boolean).sort().at(-1);
+  assert.equal(await page.locator('#list .fresh').count(),catalog.assets.filter(a=>fresh(a.added)||fresh(a.updated)).length,'New and Updated tags last a week');
+  await page.selectOption('#sort','updated');assert.equal(await page.locator('#list .asset').count(),catalog.assets.filter(a=>a.updated).length,'Recently updated lists changed models only');
+  assert.equal(new URL(page.url()).searchParams.get('sort'),'updated');
+  assert.equal((await firstCard()).updated,latest('updated'),'Latest update first');
+  await page.selectOption('#sort','new');assert.equal(await page.locator('#list .asset').count(),catalog.assets.length);
+  assert.equal((await firstCard()).added,latest('added'),'Newest model first');
+  await page.locator('#reset').click();assert.equal(await page.locator('#sort').inputValue(),'place');
+ }
  await page.waitForTimeout(1000);await page.screenshot({path:out+'/desktop.png',fullPage:true});
  await page.setViewportSize({width:390,height:844});await page.locator('#search').fill('');
  await page.setViewportSize({width:320,height:740});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No narrow-phone horizontal page overflow');
