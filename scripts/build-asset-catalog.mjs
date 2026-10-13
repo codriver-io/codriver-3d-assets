@@ -6,6 +6,7 @@ import { build } from 'esbuild';
 import { ROOT, loadAssetCatalog } from './asset-catalog.mjs';
 import { licenseModels } from './license-models.mjs';
 import { withAnalytics } from './analytics.mjs';
+import { modelDates } from './model-dates.mjs';
 
 export async function buildAssetCatalogPreview() {
   await licenseModels();
@@ -17,6 +18,7 @@ export async function buildAssetCatalogPreview() {
   await copyFile(resolve(out,'asset-catalog.html'),resolve(out,'index.html'));
   await cp(resolve(ROOT,'public/models'),resolve(out,'models'),{recursive:true});
   await cp(resolve(ROOT,'public/scenes'),resolve(out,'scenes'),{recursive:true});
+  const dates=modelDates(catalog.assets);for(const entry of catalog.assets)Object.assign(entry,dates[entry.id]);
   await writeFile(resolve(out,'asset-catalog.json'),JSON.stringify(catalog,null,2)+'\n');
   await copyFile(resolve(ROOT,'prototypes/assets3d/places.json'),resolve(out,'places.json'));
   for(const file of ['LICENSE','LICENSE-MODELS.txt','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md'])await copyFile(resolve(ROOT,file),resolve(out,file));

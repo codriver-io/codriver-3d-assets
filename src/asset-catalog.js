@@ -1,19 +1,27 @@
 import { track } from './analytics.js';
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search), mobile = matchMedia('(max-width: 760px)');
-let assets = [], scenes = [], places = {}, kind = params.get('kind') || 'all';
+let assets = [], scenes = [], places = {}, kind = params.get('kind') || 'all', sort = params.get('sort') || 'place';
 const levels = ['continent', 'country', 'region', 'city'];
 let geography = Object.fromEntries(levels.map(key => [key, params.get(key) || 'all']));
 const collapsed = new Set();
-let selected = params.get('asset') || 'pont-jacques-cartier', shown, viewUrl;
+let selected = params.get('asset') || (params.has('sort') ? null : 'pont-jacques-cartier'), shown, viewUrl;
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const cityOf = entry => entry.city;
 const placeOf = entry => ({ ...places[cityOf(entry)], city: cityOf(entry) });
+// Library dates come from the build (git history), as YYYY-MM-DD. A model keeps its New or Updated tag
+// for a week after the change.
+const FRESH_DAYS = 7;
+const sorts = { new: { key: 'added', label: 'Added' }, updated: { key: 'updated', label: 'Updated' } };
+const day = date => new Date(`${date}T00:00:00Z`).toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const isFresh = date => !!date && Date.now() - Date.parse(`${date}T00:00:00Z`) < FRESH_DAYS * 864e5;
+// New wins, except in the Recently updated order.
+const freshTag = entry => sort === 'updated' && isFresh(entry.updated) ? 'updated' : isFresh(entry.added) ? 'new' : isFresh(entry.updated) ? 'updated' : null;
 function el(tag, text, className) { const node = document.createElement(tag); if (text != null) node.textContent = text; if (className) node.className = className; return node; }
 function link(label, url, className) { const a = el('a', label, className); a.href = url; return a; }
 function updateUrl() {
   const url = new URL(location.href);
-  for (const [key, value, fallback] of [['asset', selected, null], ['kind', kind, 'all'], ['q', $('search').value.trim(), '']]) { if (value && value !== fallback) url.searchParams.set(key, value); else url.searchParams.delete(key); }
+  for (const [key, value, fallback] of [['asset', selected, null], ['kind', kind, 'all'], ['sort', sort, 'place'], ['q', $('search').value.trim(), '']]) { if (value && value !== fallback) url.searchParams.set(key, value); else url.searchParams.delete(key); }
   for (const key of levels) { if (geography[key] !== 'all') url.searchParams.set(key, geography[key]); else url.searchParams.delete(key); }
   history.replaceState(null, '', url);
 }
@@ -39,6 +47,7 @@ function show(entry, open = false) {
     viewUrl = inspect; frame.src = inspectionUrl(entry); frame.title = `Interactive model of ${entry.name}`;
     stage.append(frame, el('span', 'Drag to orbit · Scroll to zoom', 'stage-hint'), link('Full screen ↗', inspect, 'open')); card.append(stage);
     const info = el('div', null, 'info'); info.append(el('span', `${entry.kind}${entry.parent ? ' component' : ''} / ${cityOf(entry)}`, 'eyebrow'), el('h2', entry.name), el('p', entry.description));
+    if (entry.added) info.append(el('p', `Added ${day(entry.added)}${entry.updated ? ` · Updated ${day(entry.updated)}` : ''}`, 'model-dates'));
     info.append(appLink(entry));
     const views = el('nav', null, 'views'); views.setAttribute('aria-label', 'Model views');
     for (const view of entry.inspection?.views || []) { const b = el('button', view.label); b.setAttribute('aria-pressed', String(view.url === inspect)); b.onclick = () => { if (viewUrl === view.url) return; viewUrl = view.url; frame.src = inspectionUrl(entry, view.url); stage.querySelector('.open').href = view.url; for (const button of views.children) button.setAttribute('aria-pressed', String(button === b)); }; views.append(b); } info.append(views);
@@ -69,14 +78,29 @@ function show(entry, open = false) {
 }
 function render() {
   const query = normalize($('search').value.trim());
-  const visible = assets.filter(e => (kind === 'all' || e.kind === kind) && levels.every(key => geography[key] === 'all' || placeOf(e)[key] === geography[key]) && normalize(`${e.name} ${cityOf(e)} ${e.location} ${e.description}`).includes(query));
-  $('count').textContent = `${visible.length} of ${assets.length} models`; $('reset').hidden = kind === 'all' && levels.every(key => geography[key] === 'all') && !query; $('empty').hidden = !!visible.length; $('list').replaceChildren();
+  const dated = sorts[sort]?.key;
+  const visible = assets.filter(e => (kind === 'all' || e.kind === kind) && (!dated || e[dated]) && levels.every(key => geography[key] === 'all' || placeOf(e)[key] === geography[key]) && normalize(`${e.name} ${cityOf(e)} ${e.location} ${e.description}`).includes(query));
+  $('count').textContent = `${visible.length} of ${assets.length} models`; $('reset').hidden = kind === 'all' && sort === 'place' && levels.every(key => geography[key] === 'all') && !query; $('empty').hidden = !!visible.length; $('list').replaceChildren();
   const cards = new Map();
-  for (const entry of visible) { const b = el('button', null, 'asset'); b.dataset.id = entry.id; b.setAttribute('aria-label', `Explore ${entry.name}`); const thumbnail = el('span', null, 'thumbnail'), img = el('img'); img.src = `/thumbnails/${entry.id}.jpg`; img.alt = ''; img.loading = 'lazy'; img.width = 600; img.height = 375; thumbnail.append(img, el('span', entry.parent ? 'Bridge part' : entry.kind, 'type')); const copy = el('span', null, 'asset-copy'); copy.append(el('strong', entry.name), el('small', cityOf(entry)), el('span', 'GLB · Editable source · CC BY 4.0', 'card-format')); b.append(thumbnail, copy); b.onclick = () => { track('Model Open', { asset: entry.id, city: cityOf(entry), kind: entry.kind }); show(entry, true); }; cards.set(entry.id, b); }
-  renderGroups(visible, cards, $('list'));
-  if (visible.length && !mobile.matches) show(visible.find(e => e.id === selected) || visible[0]); else updateSelection(); updateUrl();
+  for (const entry of visible) { const b = el('button', null, 'asset'); b.dataset.id = entry.id; const tag = freshTag(entry); b.setAttribute('aria-label', `Explore ${entry.name}${tag ? ` (${tag})` : ''}`); const thumbnail = el('span', null, 'thumbnail'), img = el('img'); img.src = `/thumbnails/${entry.id}.jpg`; img.alt = ''; img.loading = 'lazy'; img.width = 600; img.height = 375; thumbnail.append(img, el('span', entry.parent ? 'Bridge part' : entry.kind, 'type')); if (tag) thumbnail.append(el('span', tag === 'new' ? 'New' : 'Updated', `fresh fresh-${tag}`)); const copy = el('span', null, 'asset-copy'); copy.append(el('strong', entry.name), el('small', cityOf(entry)), el('span', 'GLB · Editable source · CC BY 4.0', 'card-format')); b.append(thumbnail, copy); b.onclick = () => { track('Model Open', { asset: entry.id, city: cityOf(entry), kind: entry.kind }); show(entry, true); }; cards.set(entry.id, b); }
+  if (dated) renderDates(visible, cards, $('list'), dated); else renderGroups(visible, cards, $('list'));
+  // By place, the featured model leads; a date order leads with its first card.
+  const first = dated ? visible.find(e => e.id === $('list').querySelector('.asset')?.dataset.id) : visible[0];
+  if (visible.length && !mobile.matches) show(visible.find(e => e.id === selected) || first); else updateSelection(); updateUrl();
 }
-function updateFilters() { for (const b of document.querySelectorAll('[data-kind]')) b.setAttribute('aria-pressed', String(b.dataset.kind === kind)); }
+function updateFilters() { for (const b of document.querySelectorAll('[data-kind]')) b.setAttribute('aria-pressed', String(b.dataset.kind === kind)); $('sort').value = sort; }
+// Newest first, one group per day; Recently updated lists only models changed since they were added.
+function renderDates(entries, cards, container, key) {
+  const dates = [...new Set(entries.map(entry => entry[key]))].sort().reverse();
+  for (const date of dates) {
+    const members = entries.filter(entry => entry[key] === date), group = el('details', null, 'place-group place-date');
+    group.open = true;
+    const summary = el('summary'); summary.append(el('span', `${sorts[sort].label} ${day(date)}`), el('small', `${members.length} ${members.length === 1 ? 'model' : 'models'}`)); group.append(summary);
+    const content = el('div', null, 'model-grid'); group.append(content);
+    for (const entry of [...members].sort((a, b) => cityOf(a).localeCompare(cityOf(b)) || a.name.localeCompare(b.name))) content.append(cards.get(entry.id));
+    container.append(group);
+  }
+}
 // The list stops at the country (or the province/state in North America): one grid per country keeps
 // single-model cities from leaving half-empty rows. Each card names its city, and the place filter still
 // reaches every city.
@@ -115,10 +139,12 @@ function populatePlaces() {
   if (option) $('city').value = option.value;
   else { geography = Object.fromEntries(levels.map(key => [key, 'all'])); $('city').value = 'all'; }
 }
-function reset() { kind = 'all'; geography = Object.fromEntries(levels.map(key => [key, 'all'])); $('city').value = 'all'; $('search').value = ''; updateFilters(); render(); $('search').focus(); }
+function reset() { kind = 'all'; sort = 'place'; geography = Object.fromEntries(levels.map(key => [key, 'all'])); $('city').value = 'all'; $('search').value = ''; updateFilters(); render(); $('search').focus(); }
 $('search').value = params.get('q') || ''; $('search').oninput = render;
 $('city').onchange = () => { geography = { ...Object.fromEntries(levels.map(key => [key, 'all'])), ...($('city').value === 'all' ? {} : JSON.parse($('city').value)) }; render(); };
 $('reset').onclick = $('empty-reset').onclick = reset;
+// A new order opens on its first model.
+$('sort').onchange = () => { sort = $('sort').value; selected = null; track('Library Sort', { sort }); render(); };
 for (const b of document.querySelectorAll('[data-kind]')) b.onclick = () => { kind = b.dataset.kind; updateFilters(); render(); };
 $('close-detail').onclick = () => $('inspector-dialog').close();
 $('inspector-dialog').addEventListener('click', event => { if (event.target === $('inspector-dialog')) { const r = event.target.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) event.target.close(); } });
@@ -138,7 +164,10 @@ Promise.all([...['/asset-catalog.json', '/places.json'].map(url => fetch(url).th
   scenes = packages.scenes;
   const featured = ['pont-jacques-cartier','paris-tour-eiffel','cn-tower','biosphere-montreal','paris-louvre','samuel-de-champlain'];
   const rank = entry => featured.includes(entry.id) ? featured.indexOf(entry.id) : featured.length;
-  assets = data.assets.sort((a,b) => rank(a)-rank(b)); const cities = [...new Set(assets.map(cityOf))]; populatePlaces(); if (!['all','bridge','building'].includes(kind)) kind = 'all'; updateFilters();
+  assets = data.assets.sort((a,b) => rank(a)-rank(b)); const cities = [...new Set(assets.map(cityOf))]; populatePlaces(); if (!['all','bridge','building'].includes(kind)) kind = 'all';
+  // A shallow build has no dates: keep the place grouping only.
+  if (!assets.some(e => e.added)) { $('sort-label').hidden = true; sort = 'place'; } else if (!['place', ...Object.keys(sorts)].includes(sort)) sort = 'place';
+  updateFilters();
   $('total-models').textContent = assets.length; $('total-variants').textContent = assets.reduce((n, e) => n + Object.keys(e.model.assets).length, 0); $('total-cities').textContent = cities.length; render();
   if (mobile.matches && params.has('asset')) { const entry = assets.find(e => e.id === selected); if (entry) show(entry, true); }
 }).catch(error => { $('error').textContent = error.message; $('detail').replaceChildren(); $('count').textContent = 'Library unavailable'; });
