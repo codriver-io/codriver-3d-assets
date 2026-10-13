@@ -1,0 +1,70 @@
+{
+  "id": "san-jacinto-monument",
+  "name": "San Jacinto Monument",
+  "kind": "building",
+  "origin": [
+    -95.080704525,
+    29.74985375
+  ],
+  "height": 172.916088,
+  "starM": 10.3632,
+  "shaftBaseM": 14.630400000000002,
+  "observationM": 9.144,
+  "starSupportM": 5.7912,
+  "padM": 88,
+  "frontageBearing": 25.2,
+  "angle": -0.439822971502571,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0 beneath a rigid terraced base. No DEM, sea level or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published height, star height and shaft widths. Museum and terrace plans mapped; fluting, cornice heights, doors and reliefs estimated from photographs. Nine-tip star approximated by perpendicular faceted Lone Star volumes sharing their zenith. Separate reflecting pool, landscape, inscription text and interior omitted. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/san-jacinto-monument-near.glb",
+      "bytes": 236432,
+      "triangles": 4853,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -69.47785186767578,
+          0,
+          -69.82546997070312
+        ],
+        "max": [
+          93.33541870117188,
+          172.9160919189453,
+          68.63434600830078
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/san-jacinto-monument-far.glb",
+      "bytes": 98084,
+      "triangles": 1852,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -69.47785186767578,
+          0,
+          -69.82546997070312
+        ],
+        "max": [
+          93.33541870117188,
+          172.9160919189453,
+          68.63434600830078
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/san-jacinto-monument/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -27291,6 +27291,1635 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "atlanta-city-hall",
+      "name": "Atlanta City Hall",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original 1930 Neo-Gothic Atlanta City Hall: cream terra-cotta stepped tower, olive spandrels, Gothic entrances and a shallow green pyramidal crown behind tracery, with the mapped 1989 annex.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/atlanta-city-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks atlanta-city-hall",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13; model CC BY 4.0, source MIT. Mapped four complete provider outlines © OpenStreetMap contributors (ODbL 1.0). References only: Atlanta City Hall (223).jpg by Atlantacitizen, public domain; Georgia - Atlanta - NARA - 23936981 (cropped).jpg, NARA/unknown author, public domain; Atlanta City Hall, Atlanta, GA (46751455774).jpg by Warren LeMay, CC0. Licence pages checked; no photo, texture or third-party mesh shipped.",
+        "references": [
+          {
+            "label": "City of Atlanta historic preservation: architecture and annex",
+            "url": "https://www.atlantaga.gov/government/departments/city-planning/historic-preservation/property-district-information/atlanta-city-hall"
+          },
+          {
+            "label": "Wikipedia: identity, architect and construction date",
+            "url": "https://en.wikipedia.org/wiki/Atlanta_City_Hall"
+          },
+          {
+            "label": "Front photograph, Atlantacitizen, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Atlanta_City_Hall_(223).jpg"
+          },
+          {
+            "label": "Side and ornament photograph, Warren LeMay, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Atlanta_City_Hall,_Atlanta,_GA_(46751455774).jpg"
+          },
+          {
+            "label": "OSM full outline",
+            "url": "https://www.openstreetmap.org/way/113041909"
+          },
+          {
+            "label": "HABS historic description",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0400/ga0460/data/ga0460data.pdf"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/atlanta-city-hall/geometry.js"
+      },
+      "notes": "OSM height 66.6 m (published sources commonly round to 65 m); OSM levels=17 differs from the historic 15-floor description. Setback elevations, window rhythm, shallow crown proportions and annex elevation are photographic estimates. Gothic relief simplified to pointed apertures and parapet tracery. Far preserves separate window grids, the stepped silhouette and solid parapet profile while omitting subpixel tracery perforations. Annex facade is simplified; no landscape, interior or furniture. Independent review and both-mode application shots remain with the lead.",
+      "documentation": "docs/assets/top-cities-atlanta-city-hall.md",
+      "manifest": "/models/buildings/atlanta-city-hall.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=atlanta-city-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=atlanta-city-hall&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=atlanta-city-hall&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=atlanta-city-hall&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=atlanta-city-hall&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=atlanta-city-hall&view=entrance"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=atlanta-city-hall&view=crown"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bank-of-america-corporate-center",
+      "name": "Bank of America Corporate Center",
+      "kind": "building",
+      "location": "100 North Tryon Street, Charlotte, North Carolina",
+      "status": "ready",
+      "description": "1992 César Pelli / HKS tower: warm granite grid, mapped setbacks and an open pointed silver-rod lantern crown retained in both LODs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bank-of-america-corporate-center/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bank-of-america-corporate-center",
+        "provenance": "Original texture-free procedural geometry for Codriver, authored 2026-10-13. OSM mapped outline and ten tower parts © OpenStreetMap contributors, ODbL 1.0. Reference photographs only in ignored scratch: architectural model by Alexisrael (CC BY-SA 3.0), night crown by Alex Drake (public domain), Founders Hall and street facade by Kiran891 (CC BY-SA 4.0). No reference capture, traced mesh, photo or texture ships.",
+        "references": [
+          {
+            "label": "CTBUH: 265.5 m, 60 floors, 1992",
+            "url": "https://www.skyscrapercenter.com/building/bank-of-america-corporate-center/711"
+          },
+          {
+            "label": "Structural engineer: 100-foot silver rod crown",
+            "url": "https://www.walterpmoore.com/projects/bank-america-corporate-center"
+          },
+          {
+            "label": "Facade consultant: warm beige granite and agate base",
+            "url": "https://www.cdc-usa.com/projects/bank-america-corporate-center-formerly-nationsbank-corporate-center"
+          },
+          {
+            "label": "OSM tower outline",
+            "url": "https://www.openstreetmap.org/way/341587198"
+          },
+          {
+            "label": "Wikipedia: Bank of America Corporate Center",
+            "url": "https://en.wikipedia.org/wiki/Bank_of_America_Corporate_Center"
+          },
+          {
+            "label": "File:Bank Of America Corporate Center Model.JPG · Alexisrael · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bank_Of_America_Corporate_Center_Model.JPG"
+          },
+          {
+            "label": "File:BofATowerPanthersGame.jpg · Alex Drake (talk) · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:BofATowerPanthersGame.jpg"
+          },
+          {
+            "label": "File:BofA Founders Hall.jpg · Kiran891 · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:BofA_Founders_Hall.jpg"
+          },
+          {
+            "label": "File:Bank of America Corporate Center Charlotte, North Carolina.jpg · Kiran891 · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bank_of_America_Corporate_Center_Charlotte,_North_Carolina.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-america-corporate-center/geometry.js"
+      },
+      "notes": "Published height 265.5 m, 60 floors, completion 1992 and 100-foot crown. Setbacks at 42, 161, 177, 208, 224 and 235 m are OSM tags, not survey measurements. Bay pitch, glass shade, lit panes, rods and open support collars estimated from photos. Crown rods are rooted cantilever ornaments with deliberately free pointed tips. Base and upper shaft have separate subdued granite tones. No interior fresco, public statue, annex, plaza or special-event crown lighting. Hardware performance unmeasured.",
+      "documentation": "docs/assets/top-cities-bank-of-america-corporate-center.md",
+      "manifest": "/models/buildings/bank-of-america-corporate-center.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=roof"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=crown"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=entrance"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=bank-of-america-corporate-center&view=street"
+          }
+        ]
+      },
+      "city": "Charlotte",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "belem-tower",
+      "name": "Belém Tower",
+      "kind": "building",
+      "location": "Lisbon, Portugal",
+      "status": "ready",
+      "description": "Original texture-free Manueline fort: four-storey square limestone tower, seven-arch river veranda, ribbed bartizan cupolas, shield battlements and an open court in the irregular hexagonal bastion.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/belem-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks belem-tower",
+        "provenance": "Original procedural Three.js geometry by Codriver, 2026-10-13; no external mesh or texture. Geographic outlines © OpenStreetMap contributors (ODbL 1.0). Reference-only dossier photographs: Torre Belém April 2009-4a, Alvesgaspar, CC BY-SA 3.0; Lisbon Torre de Belém BW 2018-10-03 16-34-03, Berthold Werner, CC BY-SA 4.0; Tour de Belem detail 1 082006, Patrick Clenet, CC BY-SA 3.0; Lisbon holiday (18798806522), Bryn Pinzgauer, CC BY 2.0; Belem.Torre09 and Belem.Torre04, Georges Jansoone, CC BY 2.5. Photos remain in ignored tmp only.",
+        "references": [
+          {
+            "label": "UNESCO monument identity and Manueline architecture",
+            "url": "https://whc.unesco.org/en/list/263"
+          },
+          {
+            "label": "Wikipedia — architecture, four storeys and 30 m height",
+            "url": "https://en.wikipedia.org/wiki/Bel%C3%A9m_Tower"
+          },
+          {
+            "label": "Tower and bastion photo — Alvesgaspar, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Torre_Bel%C3%A9m_April_2009-4a.jpg"
+          },
+          {
+            "label": "Ribbed bartizan detail — Patrick Clenet, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tour_de_Belem_detail_1_082006.JPG"
+          },
+          {
+            "label": "Mapped entire fort and parts",
+            "url": "https://www.openstreetmap.org/way/24341353"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/belem-tower/geometry.js"
+      },
+      "notes": "Mapped core 12.1 m square, orientation 9.51° south of east, exact fort/base/annex footprints. 30 m published tower height. Terrace, arch, balcony, court balustrade, dome and finial heights are photo estimates. Shields and stone crosses simplified; no sculptural beasts, heraldic carving or interior vaults. Six bastion and four roof bartizans, open sunken court and all seven veranda arches kept in far. Modern shoreline access bridge omitted; no road ownership. Three tiny mapped details are covered by their containing tower ring, with exact way IDs retained.",
+      "documentation": "docs/assets/top-cities-belem-tower.md",
+      "manifest": "/models/buildings/belem-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=belem-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=belem-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=belem-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=belem-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=belem-tower&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=belem-tower&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=belem-tower&view=detail"
+          }
+        ]
+      },
+      "city": "Lisbon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "concertgebouw",
+      "name": "Concertgebouw",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural Royal Concertgebouw: brick concert hall, classical columned pediment, gilded lyre, four steep corner roofs, oval recital hall and glass side pavilion.",
+      "manifest": "/models/buildings/concertgebouw.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/concertgebouw/geometry.js",
+        "build": "pnpm build:top-cities-landmarks concertgebouw --no-check",
+        "provenance": "Original procedural Three.js mesh authored for Codriver, October 2026; no third-party mesh, photograph or texture shipped. Mapped geometry © OpenStreetMap contributors (ODbL 1.0). Reference-only photos viewed from the ignored dossier: Diego Delso, Concertgebouw, Ámsterdam, Países Bajos, 2016-05-30, DD 22-24 HDR (CC BY-SA 4.0); C messier, Concertgebouw from Museumplein 2539 (CC BY-SA 4.0); Paul van Galen/Rijksdienst voor het Cultureel Erfgoed, Exterieur VOORGEVEL, LINKER ZIJGEVEL - Amsterdam - 20288737 - RCE (CC BY-SA 4.0); Gerard Dukker/Rijksdienst voor het Cultureel Erfgoed, Exterieur NIEUWE AANBOUW, OVERZICHT - Amsterdam - 20260226 - RCE (CC BY-SA 4.0). Jacob Olie's 1902 historical photograph (public domain) was present in the dossier; the organ interior was excluded from exterior modeling.",
+        "references": [
+          {
+            "label": "Concertgebouw: official building history and 1888 opening",
+            "url": "https://www.concertgebouw.nl/en/our-history/history"
+          },
+          {
+            "label": "Concertgebouw: renovation and Pi de Bruijn side wing",
+            "url": "https://www.concertgebouw.nl/en/our-history/renovation-facelift"
+          },
+          {
+            "label": "Wikipedia: Concertgebouw, Amsterdam (dossier dimensions)",
+            "url": "https://en.wikipedia.org/wiki/Concertgebouw,_Amsterdam"
+          },
+          {
+            "label": "OSM complete hall envelope",
+            "url": "https://www.openstreetmap.org/way/46696080"
+          },
+          {
+            "label": "OSM main hall pitched roof",
+            "url": "https://www.openstreetmap.org/way/754269611"
+          },
+          {
+            "label": "OSM glass pavilion",
+            "url": "https://www.openstreetmap.org/way/754276797"
+          },
+          {
+            "label": "Museumplein front: C messier, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Concertgebouw_from_Museumplein_2539.jpg"
+          },
+          {
+            "label": "Night front: Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Concertgebouw,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_22-24_HDR.jpg"
+          },
+          {
+            "label": "Historic side elevation: Paul van Galen/RCE, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterieur_VOORGEVEL,_LINKER_ZIJGEVEL_-_Amsterdam_-_20288737_-_RCE.jpg"
+          },
+          {
+            "label": "Glass pavilion: Gerard Dukker/RCE, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterieur_NIEUWE_AANBOUW,_OVERZICHT_-_Amsterdam_-_20260226_-_RCE.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/concertgebouw/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=concertgebouw&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=concertgebouw&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=concertgebouw&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=concertgebouw&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=concertgebouw&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=concertgebouw&view=entrance"
+          },
+          {
+            "label": "lyre",
+            "url": "/asset-preview.html?asset=concertgebouw&view=lyre"
+          },
+          {
+            "label": "pavilion",
+            "url": "/asset-preview.html?asset=concertgebouw&view=pavilion"
+          }
+        ]
+      },
+      "notes": "Mapped complete outline and all 12 building parts; provider ownership unchanged after b10a reviewer found clean replacement/base contact. OSM roof heights 24 m main/recital hall, 25 m corner parts, 14 m pavilion; 27 m lyre tip and ornamental proportions are photo estimates. Review fix: deeper classical portico with four wider fluted shafts, layered bases/volute capitals, deep entablature/pediment, cut-out pale-stone portico backing, rusticated lower courses, wing pilasters and substantial window surrounds retained in far. Open supported golden lyre and individual doors/windows retained. Near 8213 triangles / 7 draws / 457680 bytes; far 4861 / 7 / 295784. Max architectural overhang 1.994 m. Two export look-fix rounds; references beside final export evidence in tmp/top-cities/concertgebouw/concertgebouw-review-fix-contact.jpg. Focused tests and deterministic geometry QA pass; zero depth material-cycle edges. Fine Corinthian carving, name lettering, banners, detailed sculpture anatomy and interior omitted. Fresh both-mode app shots and independent re-review pending with the lead.",
+      "documentation": "docs/assets/top-cities-concertgebouw.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edificio-metalico",
+      "name": "Edificio Metálico",
+      "kind": "building",
+      "location": "San José, Costa Rica",
+      "status": "ready",
+      "description": "Original two-storey prefabricated iron school with pressed-panel facade, cream/ochre metal framing, tall window grids, a raised central pediment, pale hipped roofs and a notched courtyard.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/edificio-metalico/geometry.js",
+        "build": "pnpm build:top-cities-landmarks edificio-metalico --no-check",
+        "provenance": "Original procedural exterior, authored 2026-10-13; no captured mesh or texture. OSM plan © OpenStreetMap contributors, ODbL 1.0. Reference photographs: Rodtico21 CC BY-SA 4.0; Adam Jones CC BY-SA 2.0; Alejandro Álvarez Taborda CC BY-SA 4.0; Bernal Saborio CC BY-SA 2.0; Guanlong D. CC BY 2.0. References retained only in ignored scratch, not redistributed.",
+        "references": [
+          {
+            "label": "History: Belgian prefabrication, inauguration 1896, Charles Thirion",
+            "url": "https://es.wikipedia.org/wiki/Edificio_Met%C3%A1lico"
+          },
+          {
+            "label": "OSM school multipolygon 3548723, two storeys",
+            "url": "https://www.openstreetmap.org/relation/3548723"
+          },
+          {
+            "label": "OSM outer way 31419920",
+            "url": "https://www.openstreetmap.org/way/31419920"
+          },
+          {
+            "label": "Archivo:Edificio Metalico. Escuela Buenaventura Corrales. San Jose. Costa Rica.JPG — Rodtico21, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Metalico._Escuela_Buenaventura_Corrales._San_Jose._Costa_Rica.JPG"
+          },
+          {
+            "label": "File:Edificio Metálico - Metallic Building - Downtown San Jose - Costa Rica (8477713550).jpg — Adam Jones from Kelowna, BC, Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Met%C3%A1lico_-_Metallic_Building_-_Downtown_San_Jose_-_Costa_Rica_(8477713550).jpg"
+          },
+          {
+            "label": "File:Edificio Metálico SJO.jpg — Alejandro Álvarez Taborda (Aleat88), CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Met%C3%A1lico_SJO.jpg"
+          },
+          {
+            "label": "File:Edificio Metálico.jpg — Bernal Saborio, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Met%C3%A1lico.jpg"
+          },
+          {
+            "label": "File:Escuela Metálica y Jardín de Paz SJ CR.jpg — Guanlong D., CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Escuela_Met%C3%A1lica_y_Jard%C3%ADn_de_Paz_SJ_CR.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-metalico/geometry.js"
+      },
+      "notes": "Mapped plan approximately 61 × 44 m; frontage 175.24°, rotation baked once. Vertical heights (12 m wing cornice, 14.5 m central cornice, 17.67 m finial), roof slopes, cassette relief and rear elevations are photo estimates. Paint follows supplied dated grey-mauve/ochre references rather than assuming current yellow paint. Garden stays open. Interiors, perimeter fence, park fountain, trees and adjacent buildings excluded.",
+      "documentation": "docs/assets/top-cities-edificio-metalico.md",
+      "manifest": "/models/buildings/edificio-metalico.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=edificio-metalico",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=back"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=detail"
+          },
+          {
+            "label": "top",
+            "url": "/asset-preview.html?asset=edificio-metalico&view=top"
+          }
+        ]
+      },
+      "city": "San José",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "miami-tower",
+      "name": "Miami Tower",
+      "kind": "building",
+      "location": "Miami, Florida",
+      "status": "ready",
+      "description": "Original procedural 190.5 m Miami Tower: three quarter-curved glass tiers, white horizontal spandrels, a parking podium and an embedded station frontage; magenta facade lighting at night.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/miami-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks miami-tower",
+        "provenance": "Original texture-free procedural geometry for Codriver, 2026-10-13. Geographic controls © OpenStreetMap contributors, ODbL 1.0. Reference photographs were used only for comparison and remain in ignored scratch; no photographs, textures, scans or meshes are redistributed.",
+        "references": [
+          {
+            "label": "Published 625 ft height, 1987 completion, 47 stories, three tiers",
+            "url": "https://en.wikipedia.org/wiki/Miami_Tower"
+          },
+          {
+            "label": "Official building: I. M. Pei, LED displays and on-site Metromover",
+            "url": "https://www.miamitower.net/"
+          },
+          {
+            "label": "OSM tower footprint way 300232867",
+            "url": "https://www.openstreetmap.org/way/300232867"
+          },
+          {
+            "label": "Miami Tower cropped — B137, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Miami_Tower_cropped.jpg"
+          },
+          {
+            "label": "Bank of America Miami 20100206 — Averette, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bank_of_America_Miami_20100206.jpg"
+          },
+          {
+            "label": "Miamiatnightpink — Marc Averette, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Miamiatnightpink.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/miami-tower/geometry.js"
+      },
+      "notes": "Three principal tier profiles follow OSM; 74/115 m intermediate setbacks and 36 m garage top are approximate. Small OSM roof strips at 173/180 m are consolidated into the top tier, whose roof follows the published 625 ft height. Station frontage, sky-lobby pavilion, floor/bay modules and a fixed magenta LED state are approximations; no train guideway, interiors, programmable lighting or rooftop helipad equipment. Independent review and both-mode app validation remain with the lead.",
+      "documentation": "docs/assets/top-cities-miami-tower.md",
+      "manifest": "/models/buildings/miami-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=miami-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=miami-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=miami-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=miami-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=miami-tower&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=miami-tower&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=miami-tower&view=detail"
+          }
+        ]
+      },
+      "city": "Miami",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "oak-street-bridge",
+      "name": "Oak Street Bridge",
+      "kind": "bridge",
+      "city": "Vancouver",
+      "location": "BC Highway 99, Vancouver–Richmond, British Columbia",
+      "status": "ready",
+      "description": "Original 1957 four-lane raised girder crossing: ochre haunched river girders, open twin-shaft concrete piers, concrete approach viaducts, walks and bent-neck lamps.",
+      "manifest": "/models/bridges/oak-street-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/oak-street-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks oak-street-bridge --no-check",
+        "provenance": "Original procedural geometry, 2026-10-13. No third-party mesh, photograph or texture shipped. Alignment © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photos: Robert Linsdell, Oak St Bridge and Fraser River (504732), CC BY 2.0; Mike from Vancouver, Oak Street Bridge, CC BY 2.0; licences checked on Commons and photographs kept in ignored scratch.",
+        "references": [
+          {
+            "label": "Klohn Crippen engineers, 2004 seismic retrofit paper: 1840 m, steel main and concrete approaches, five girders, 18 m approach spans",
+            "url": "https://www.iitk.ac.in/nicee/wcee/article/13_3279.pdf"
+          },
+          {
+            "label": "Current identity, opening and three central spans",
+            "url": "https://en.wikipedia.org/wiki/Oak_Street_Bridge"
+          },
+          {
+            "label": "Mapped full deck envelope",
+            "url": "https://www.openstreetmap.org/way/502803752"
+          },
+          {
+            "label": "Robert Linsdell aerial reference, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Oak_St_Bridge_and_Fraser_River,_Vancouver_(504732)_(23665221024).jpg"
+          },
+          {
+            "label": "Mike underside and pier reference, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Oak_Street_Bridge.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oak-street-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=oak-street-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=detail"
+          },
+          {
+            "label": "North-Landing",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=north-landing"
+          },
+          {
+            "label": "South-Landing",
+            "url": "/asset-preview.html?asset=oak-street-bridge&view=south-landing"
+          }
+        ]
+      },
+      "notes": "Sourced length 1840 m, four lanes, haunched steel main structure and five-stringer concrete approaches; 60.9/91.4/60.9 m main spans. Mapped mainline 1837.5 m, width 19.6 m. Estimated crest 26 m, pier and section dimensions, span stations and representative rail/lamp rhythm. No truss is invented. Excludes interchange branches. Independent review required. Near 59,700 triangles / 24 draws / 2422 KiB; far 24,792 / 5 / 999 KiB. QA metrics clean, 613 focused tests passed, depth generation zero dropped cycle edges. Reference/export sheets and both-mode approaches inspected; see documentation for exact probes and evidence.",
+      "documentation": "docs/assets/top-cities-oak-street-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "opera-de-lyon",
+      "name": "Opéra de Lyon",
+      "kind": "building",
+      "location": "Lyon, France",
+      "status": "ready",
+      "description": "Original texture-free reconstruction of the 1993 Jean Nouvel glass-and-steel barrel vault above the preserved stone opera house, with open peristyle, arched windows and eight Muses.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/opera-de-lyon/geometry.js",
+        "build": "pnpm build:top-cities-landmarks opera-de-lyon",
+        "provenance": "Original procedural Three.js authoring for Codriver, 2026-10-13; no scan, third-party mesh or texture. OSM way 10061086 © OpenStreetMap contributors, ODbL 1.0. Dossier reference photographs viewed for comparison only: Lyon 12 02 48 711000.jpeg, Robot8A, CC BY-SA 4.0; Lyon opera.jpg, SashiRolls (Steve Shimanek), CC BY-SA 4.0; Lyon - Grand Théâtre.jpg, E. de Rolland & D. Clouzet, public domain (1901–1902). The Robot8A photo page carries a US-only architectural freedom-of-panorama notice; it is retained solely as an ignored local reference and is not included in any shipped artifact.",
+        "references": [
+          {
+            "label": "Ateliers Jean Nouvel: 1986–1993 design, barrel vault, retained stone shell, red purlin lighting and steel rear tympanum",
+            "url": "https://www.jeannouvel.com/en/projects/opera-3/"
+          },
+          {
+            "label": "Opéra national de Lyon: architectural tour",
+            "url": "https://www.opera-lyon.com/informations-pratiques/visiter-l-opera"
+          },
+          {
+            "label": "OSM building outline and 42 m / 20 m height tags",
+            "url": "https://www.openstreetmap.org/way/10061086"
+          },
+          {
+            "label": "Robot8A: modern west facade and south arcade, CC BY-SA 4.0",
+            "url": "https://en.wikipedia.org/wiki/File:Lyon_12_02_48_711000.jpeg"
+          },
+          {
+            "label": "SashiRolls: Lyon opera at dawn, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lyon_opera.jpg"
+          },
+          {
+            "label": "E. de Rolland & D. Clouzet: Grand Théâtre 1901–1902, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Lyon_-_Grand_Th%C3%A9%C3%A2tre.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/opera-de-lyon/geometry.js"
+      },
+      "notes": "42 m total height and 20 m roof rise are OSM-tagged estimates, not surveyed dimensions. Slightly tapered shell fitted within mapped way 10061086. Louver grids, eight human silhouettes, facade mouldings and rear steel screen are photographic approximations; interiors, basement and fine relief carving omitted. Original geometry only; photographs never embedded or shipped.",
+      "documentation": "docs/assets/top-cities-opera-de-lyon.md",
+      "manifest": "/models/buildings/opera-de-lyon.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=opera-de-lyon",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=opera-de-lyon&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=opera-de-lyon&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=opera-de-lyon&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=opera-de-lyon&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=opera-de-lyon&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=opera-de-lyon&view=detail"
+          }
+        ]
+      },
+      "city": "Lyon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "parthenon",
+      "name": "Parthenon (Acropolis)",
+      "kind": "building",
+      "location": "Athens, Greece",
+      "status": "ready",
+      "description": "Roofless Doric temple ruin on the Acropolis: 8 × 17 peristyle rhythm, three missing south columns, tapered/fluted marble shafts, stepped stylobate and damaged pediments.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/parthenon/geometry.js",
+        "build": "pnpm build:top-cities-landmarks parthenon --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13; no third-party mesh, scan, photograph or texture embedded. OSM geographic footprint/parts © OpenStreetMap contributors (ODbL 1.0). Reference-only photos: East Facade of the Parthenon on March 22, 2021, George E. Koronaios, CC BY-SA 2.0; Athens Acropolis Parthenon Metope and pediment 03, Ad Meskens, CC BY-SA 4.0; Acropolis viewed from Hill of the Muses, Carole Raddato, CC BY-SA 2.0; Attica 06-13 Athens 50 View from Philopappos, A. Savin, CC BY-SA 3.0. James Skene 1838 public-domain drawing consulted only as historical context; British Museum sculpture photo not used to reconstruct removed statues.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Parthenon"
+          },
+          {
+            "label": "Acropolis Restoration Service: Parthenon",
+            "url": "https://www.ysma.gr/en/monuments/parthenon/"
+          },
+          {
+            "label": "YSMA Acropolis Trail, external column height",
+            "url": "https://www.ysma.gr/wp-content/uploads/2023/09/Acropolis_Parthenon_trail.pdf"
+          },
+          {
+            "label": "Mapped temple outline",
+            "url": "https://www.openstreetmap.org/way/910010406"
+          },
+          {
+            "label": "Modern east facade, George E. Koronaios (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_East_Facade_of_the_Parthenon_on_March_22,_2021.jpg"
+          },
+          {
+            "label": "Metope and pediment detail, Ad Meskens (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Athens_Acropolis_Parthenon_Metope_and_pediment_03.jpg"
+          },
+          {
+            "label": "Hill of the Muses view, Carole Raddato (CC BY-SA 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Acropolis_of_Athens_viewed_from_the_Hill_of_the_Muses_(14220794964).jpg"
+          },
+          {
+            "label": "Philopappos view, A. Savin (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parthenon/geometry.js"
+      },
+      "notes": "Original texture-free procedural temple only, no hill or restricted meshes. Based on supplied OSM parts and attributed modern reference photographs. 69.5 × 30.88m stylobate; 10.43m external columns. Ruin edges, partial inner porch heights and cella remnants are estimates. Temporary scaffolding/cranes and museum-held sculptures are omitted. No app verification or device performance claim.",
+      "documentation": "docs/assets/top-cities-parthenon.md",
+      "manifest": "/models/buildings/parthenon.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=parthenon",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=parthenon&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=parthenon&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=parthenon&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=parthenon&view=roof"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=parthenon&view=south"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=parthenon&view=detail"
+          }
+        ]
+      },
+      "city": "Athens",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "place-de-la-concorde-obelisk",
+      "name": "Place de la Concorde obelisk & fountains",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural Paris Luxor obelisk with gilded pyramidion, stepped pedestal, both green/gold Hittorff fountains and four representative rostral lamp columns.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/place-de-la-concorde-obelisk/geometry.js",
+        "build": "pnpm build:top-cities-landmarks place-de-la-concorde-obelisk",
+        "provenance": "Original procedural geometry authored 2026-10-13; mapped placement © OpenStreetMap contributors, ODbL 1.0. Reference photos inspected only, never included in exports: Paris, Obelisk in the Place de la Concorde, July 22, 2008 — Craig Booth, CC BY 2.0; Fontaine des mers concorde detail — Jebulon, CC0; Fountain of the Seas, Paris 16 August 2014 — Benh LIEU SONG, CC BY-SA 2.0. No external meshes or textures.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Luxor_Obelisks"
+          },
+          {
+            "label": "Paris monument photo, Craig Booth, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris,_Obelisk_in_the_Place_de_la_Concorde,_July_22,_2008.jpg"
+          },
+          {
+            "label": "Fountain detail, Jebulon, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fontaine_des_mers_concorde_detail.jpg"
+          },
+          {
+            "label": "Fountain overall, Benh LIEU SONG, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fountain_of_the_Seas,_Paris_16_August_2014.jpg"
+          },
+          {
+            "label": "Fountain design and figures",
+            "url": "https://en.wikipedia.org/wiki/Fontaines_de_la_Concorde"
+          },
+          {
+            "label": "Hittorff layout and rostral columns, Centre des monuments nationaux",
+            "url": "https://www.hotel-de-la-marine.paris/decouvrir/la-place-de-la-concorde/l-histoire-de-la-place-de-la-concorde"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/place-de-la-concorde-obelisk/geometry.js"
+      },
+      "notes": "Stone height 23 m; assembled apex 33.37 m. Fountain basins and obelisk plans mapped. Figures and incised glyphs are abstractions, not sculpture replicas or a literal hieroglyph transcription. Four rostral column positions/heights estimated from photographs after supplementary OSM timed out; no road surface authored. Review correction: seven bounded median-datum pads cover complete basin rings and four column bases, with 2 m feathers. Solid stone foundation skirts reach y=-1.5 m in both LODs, hidden below Cityscape grade. Near/far triangles 34412/10272, draws 7/6. Numeric pad and terrain-lattice coverage documented; narrow pads do not cover every terrain support node, and skirts do not prove that positive terrain overdraw is eliminated.",
+      "documentation": "docs/assets/top-cities-place-de-la-concorde-obelisk.md",
+      "manifest": "/models/buildings/place-de-la-concorde-obelisk.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=street"
+          },
+          {
+            "label": "Fountain",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=fountain"
+          },
+          {
+            "label": "Obelisk",
+            "url": "/asset-preview.html?asset=place-de-la-concorde-obelisk&view=obelisk"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-de-bercy",
+      "name": "Pont de Bercy",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Five broad Seine masonry arches beneath the 41-bay twin stone Métro arcade, with an open cycle passage, two road carriageways, balustrades and tapered approach ribbons.",
+      "manifest": "/models/bridges/pont-de-bercy.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-de-bercy/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-de-bercy --no-check",
+        "provenance": "Original procedural geometry, 2026-10-13. OSM alignment/outline © OpenStreetMap contributors, ODbL 1.0. RATP heritage facts; IGN BD ORTHO and Commons photos used only for visual reference. Photos retained in ignored scratch, no textures, scan or third-party mesh ships. Dossier photo 1 depicts Bir-Hakeim and was excluded.",
+        "references": [
+          {
+            "label": "RATP — five river arches and 41 Métro arches",
+            "url": "https://www.ratp.fr/en/discover/heritage/history-metro-line-6"
+          },
+          {
+            "label": "Pont de Bercy — dimensions and 1992 widening",
+            "url": "https://fr.wikipedia.org/wiki/Pont_de_Bercy"
+          },
+          {
+            "label": "Mapped bridge envelope",
+            "url": "https://www.openstreetmap.org/way/183625692"
+          },
+          {
+            "label": "IGN BD ORTHO aerial imagery, Licence Ouverte 2.0",
+            "url": "https://geoservices.ign.fr/bdortho"
+          },
+          {
+            "label": "Bercy Métro MP73 — Cramos, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bercy_(m%C3%A9tro_Paris)_MP73_(2)_par_Cramos.JPG"
+          },
+          {
+            "label": "Cycle passage — Chabe01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Voie_Cyclable_Pont_Bercy_-_Paris_XII_(FR75)_-_2020-10-15_-_1.jpg"
+          },
+          {
+            "label": "Road-level arcade — Fred Romero, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_-_Pont_de_Bercy_(22851081309).jpg"
+          },
+          {
+            "label": "Ministry and bridge — Fred Romero, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_-_Minist%C3%A8re_de_l%27%C3%89conomie_et_des_Finances_%26_Pont_de_Bercy_(23219016895).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-bercy/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-de-bercy&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-de-bercy&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: 175 m, 40 m total width, five 29 m river spans, 41 Métro arches, 1864 / 1905–06 / 1992 construction stages. Vertical datum, 8 m road clearance, 6.1 m upper lift, masonry sections/coursing and fittings estimated. IGN aerial measured roadway/viaduct envelope; 100 m smooth flat-map ramps peak at 12%. Final costs: near 44,752 tris / 16 draws / 2516.76 KiB; far 15,168 tris / 8 draws / 802.14 KiB. QA issues empty; zero coplanar overlaps and depth cycles; 636 focused tests pass. Far ballast merges into upper stone; detailed hidden foundations, medallion carvings and current lane paint omitted.",
+      "documentation": "docs/assets/top-cities-pont-de-bercy.md",
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "riverside-county-courthouse",
+      "name": "Riverside County Courthouse",
+      "kind": "building",
+      "location": "4050 Main Street · Riverside, California",
+      "status": "ready",
+      "description": "Restored Beaux-Arts Main Street courthouse range: cream facade, six-shaft central portico with two inner pairs, Corinthian capitals, long wing colonnades, continuous balustrades, sculpted attic pylons and broad entrance stair.",
+      "manifest": "/models/buildings/riverside-county-courthouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/riverside-county-courthouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks riverside-county-courthouse --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13. OSM way 118524342, © OpenStreetMap contributors (ODbL 1.0). Visual comparisons: Exterior view of the Court House in Riverside, ca.1910 (CHS-5280).jpg, C. C. Pierce, public domain; Riverside County Court House 1903 2.jpg, nccmrm97, CC BY-SA 2.0. Prepared dossier historical postcards were consulted for silhouette: Court House, Riverside, Cal. (pcard-print-pub-pc-38a).jpg, unknown author, public domain; 06873--1906--Brück & Sohn Kunstverlag.jpg, Brück & Sohn, CC0. No photograph, scan, traced mesh or texture is included in the source or exports.",
+        "references": [
+          {
+            "label": "Riverside Superior Court · address, 1903 Beaux-Arts identity and restoration",
+            "url": "https://www.riverside.courts.ca.gov/location/riverside-historic-courthouse"
+          },
+          {
+            "label": "Official self-guided handout · architect, dedication, 1904 completion, attic sculpture groups and east addition",
+            "url": "https://riverside.courts.ca.gov/system/files/2024-06/Historic%20Courthouse%20Self-Guided%20Handout%20%28Final%29.pdf"
+          },
+          {
+            "label": "OpenStreetMap original courthouse range · way 118524342",
+            "url": "https://www.openstreetmap.org/way/118524342"
+          },
+          {
+            "label": "Present facade · nccmrm97, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Riverside_County_Court_House_1903_2.jpg"
+          },
+          {
+            "label": "Historical oblique exterior · C. C. Pierce, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_view_of_the_Court_House_in_Riverside,_ca.1910_(CHS-5280).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/riverside-county-courthouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=riverside-county-courthouse&view=overview",
+        "views": [
+          {
+            "label": "Main Street oblique",
+            "url": "/asset-preview.html?asset=riverside-county-courthouse&view=overview"
+          },
+          {
+            "label": "Main Street colonnade",
+            "url": "/asset-preview.html?asset=riverside-county-courthouse&view=facade"
+          },
+          {
+            "label": "Reconstructed rear",
+            "url": "/asset-preview.html?asset=riverside-county-courthouse&view=back"
+          },
+          {
+            "label": "Roof and geographic frame",
+            "url": "/asset-preview.html?asset=riverside-county-courthouse&view=roof"
+          },
+          {
+            "label": "Street-level approach",
+            "url": "/asset-preview.html?asset=riverside-county-courthouse&view=street"
+          },
+          {
+            "label": "Paired Corinthian columns",
+            "url": "/asset-preview.html?asset=riverside-county-courthouse&view=detail"
+          }
+        ]
+      },
+      "notes": "Mapped main range approximately 80 × 39 m, frontage 299.1 degrees, baked rotation -119.1 degrees. Height 20.7 m, 2.2 m plinth, capital profiles, window sizes, roof shape, rear elevation and sculpture proportions are photo estimates. Exact letterforms, stone foliage, interior rooms, trees and street furniture are omitted. Eastern addition ways 779436929/779436930 and their encompassing relation 17923242 remain provider-owned; this model owns only the complete western main range. Second footprint is authored entrance stairs, not another OSM building. Night occupancy lighting is illustrative. All ornaments are attached to their stone bases; far retains central paired shafts and discrete windows.",
+      "documentation": "docs/assets/top-cities-riverside-county-courthouse.md",
+      "city": "Riverside",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rogers-arena",
+      "name": "Rogers Arena",
+      "kind": "building",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Original procedural Rogers Arena: shallow pale dome over a rounded arena bowl, glazed entrance fronts, ribbed entrance drum and blue Rogers name tower.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rogers-arena/geometry.js",
+        "build": "pnpm build:top-cities-landmarks rogers-arena",
+        "provenance": "Original texture-free procedural mesh by Codriver, authored 2026-10-13; MIT source, CC BY 4.0 model. Geographic outline © OpenStreetMap contributors, ODbL 1.0. Photo references only in ignored tmp: Quintin Soloviev, Rogers Arena (Vancouver).jpg (2026), CC BY 4.0; Hucul002, Rogers Arena.jpg (2011), CC BY-SA 3.0; Buchanan-Hermit, Vancouver-gmplace3.jpg (2007), Attribution licence. Historic photographs inform facade structure only; current Rogers branding is modelled geometrically.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Rogers_Arena"
+          },
+          {
+            "label": "Official arena parking and entrance directions",
+            "url": "https://rogersarena.com/parking-and-directions/"
+          },
+          {
+            "label": "OSM arena outline (four levels, opened 1995)",
+            "url": "https://www.openstreetmap.org/way/24705911"
+          },
+          {
+            "label": "OSM dome roof part (five levels)",
+            "url": "https://www.openstreetmap.org/way/497813171"
+          },
+          {
+            "label": "Quintin Soloviev — Rogers Arena (Vancouver), CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rogers_Arena_(Vancouver).jpg"
+          },
+          {
+            "label": "Hucul002 — Rogers Arena, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rogers_Arena.jpg"
+          },
+          {
+            "label": "Buchanan-Hermit — Vancouver-gmplace3, Attribution",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver-gmplace3.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rogers-arena/geometry.js"
+      },
+      "notes": "Heights (35 m crown, 26 m eave, 22 m outer facade, 32 m drum), cylindrical entry geometry, window spacing and roof curvature are estimates from reference photos, not a survey. Aquilini Centre West is cut out of the arena ownership ring; both adjacent apartment towers stay provider-owned. No road or viaduct geometry is included. No photos or textures ship.",
+      "documentation": "docs/assets/top-cities-rogers-arena.md",
+      "manifest": "/models/buildings/rogers-arena.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=rogers-arena",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=rogers-arena&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=rogers-arena&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=rogers-arena&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=rogers-arena&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=rogers-arena&view=entrance"
+          },
+          {
+            "label": "Drum",
+            "url": "/asset-preview.html?asset=rogers-arena&view=drum"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=rogers-arena&view=detail"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "san-jacinto-monument",
+      "name": "San Jacinto Monument",
+      "kind": "building",
+      "location": "1 Monument Circle, La Porte, Texas",
+      "status": "ready",
+      "description": "Original procedural 1939 San Jacinto Monument: tapered fluted octagonal shellstone shaft, three-dimensional Lone Star, observation windows, relief pedestal, museum and mapped stepped terraces.",
+      "manifest": "/models/buildings/san-jacinto-monument.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/san-jacinto-monument/geometry.js",
+        "build": "pnpm build:top-cities-landmarks san-jacinto-monument",
+        "provenance": "Original procedural geometry authored 2026-10-13. Plans and all provider building parts from the prepared OSM dossier, ODbL 1.0, © OpenStreetMap contributors. Photo comparison only: Crystal Akers (engraved panel, CC BY-SA 3.0), Jim Evans (battlefield view, CC BY-SA 4.0), Tijuana Brass (full monument and star closeup, public domain), Louis Vest (USS Texas in fog, CC BY 2.0). Museum website cutout illustration used only as reference, copyright its owner/all rights reserved. All images remain ignored reference material; no copied mesh, image, texture or inscription is exported.",
+        "references": [
+          {
+            "label": "Museum: height, star, shellstone, 1939 dedication",
+            "url": "https://www.sanjacinto-museum.org/Discover/Monument/"
+          },
+          {
+            "label": "Original contractor: shaft and museum widths",
+            "url": "https://bellowsconstruction.com/?project-details=san-jacinto-monument"
+          },
+          {
+            "label": "Wikipedia dossier",
+            "url": "https://en.wikipedia.org/wiki/San_Jacinto_Monument"
+          },
+          {
+            "label": "Mapped monument and parts",
+            "url": "https://www.openstreetmap.org/way/257767763"
+          },
+          {
+            "label": "Engraved panel — Crystal Akers, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Jacinto_Monument_engraved_panel_depicting_the_history_of_Texas.jpg"
+          },
+          {
+            "label": "Daylight shaft — Jim Evans, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Jacinto_Monument_at_San_Jacinto_Battle_Field.jpg"
+          },
+          {
+            "label": "Full monument — Tijuana Brass, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Jacinto_Monument.jpg"
+          },
+          {
+            "label": "Star closeup — Tijuana Brass, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:5_San_Jacinto_Monument._Star.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/san-jacinto-monument/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=san-jacinto-monument&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=san-jacinto-monument&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=san-jacinto-monument&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=san-jacinto-monument&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=san-jacinto-monument&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=san-jacinto-monument&view=entrance"
+          },
+          {
+            "label": "star",
+            "url": "/asset-preview.html?asset=san-jacinto-monument&view=star"
+          }
+        ]
+      },
+      "notes": "Height 172.916 m and star 10.363 m are the museum published values. Shaft widths 14.630 / 9.144 m and star support 5.791 m from original contractor; mapped museum about 38 m across. Estimated vertical tier heights, door and window details, grooves, limestone colour and grouped frieze figures. Nine-point compound star approximated as two perpendicular faceted stars with shared top, embedded in crown; exact historical facet topology is not reproduced. The separate 533 m reflecting pool, landscape, flags, inscription text and interior are omitted. No hardware performance claim.",
+      "documentation": "docs/assets/top-cities-san-jacinto-monument.md",
+      "city": "La Porte",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "santiago-bernabeu",
+      "name": "Estadio Santiago Bernabéu",
+      "kind": "building",
+      "location": "Madrid, Spain",
+      "status": "ready",
+      "description": "Original procedural model of Real Madrid’s 2024-renovated Bernabéu: continuous silver louvres, rounded metallic shell, open retractable roof, corner access towers and blue seating bowl.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/santiago-bernabeu/geometry.js",
+        "build": "pnpm build:top-cities-landmarks santiago-bernabeu",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13, CC BY 4.0; code MIT. OSM relation 21041481 / outer way 1507411898, © OpenStreetMap contributors ODbL 1.0. Dossier comparison photos: Estadio Santiago Bernabéu 39 and 38, Luis García (Zaqarbal), CC BY-SA 4.0; Estadio Santiago Bernabeu (53988637843), Daniel from Glasgow, CC BY 2.0; 2025 NFL Madrid Game 2, Badefa, CC0. Older dossier photos used only for interior history, not current exterior. Additional sbp photos © Marcus Bredt, rights reserved, ignored local reference only; no reference imagery or mesh redistributed. Historical dossier photos: Estadio Bernabeu. Madrid (12117582503), Biblioteca de la Facultad de Empresa y Gestión Pública Universidad de Zaragoza, CC BY-SA 2.0; 2010 Champions League Final opening ceremony, Johnny Vulkan, CC BY 2.0; not relied on for current exterior.",
+        "references": [
+          {
+            "label": "sbp structural engineer: stainless-steel louvres, stadium 220 × 240 m, inner roof 75 × 110 m",
+            "url": "https://www.sbp.de/en/project/santiago-bernabeu-stadium/"
+          },
+          {
+            "label": "L35: metallic strips and retractable roof",
+            "url": "https://www.l35.com/en/news/l35-news/winning-project-in-the-competition-for-remodelling-santiago-bernabeu-stadium.html"
+          },
+          {
+            "label": "OSM building relation",
+            "url": "https://www.openstreetmap.org/relation/21041481"
+          },
+          {
+            "label": "OSM full stadium outer ring",
+            "url": "https://www.openstreetmap.org/way/1507411898"
+          },
+          {
+            "label": "Post-renovation exterior, Luis García, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_39.jpg"
+          },
+          {
+            "label": "Renovation exterior, Luis García, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_38.jpg"
+          },
+          {
+            "label": "2024 interior, Daniel, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernabeu_(53988637843).jpg"
+          },
+          {
+            "label": "2025 interior, Badefa, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:2025_NFL_Madrid_Game_2.jpg"
+          },
+          {
+            "label": "Identity and renovation history",
+            "url": "https://en.wikipedia.org/wiki/Bernab%C3%A9u_(stadium)"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/santiago-bernabeu/geometry.js"
+      },
+      "notes": "Review b10b fixes: 44 facade courses retained in both LODs, narrow 8% far shadow channels and adaptive 76/42 perimeter stations at mapped corners/roof tangencies; roof courses 18/12. Far bowl reduced to 3 rows/16 sectors to pay for exterior detail. Static open roof and neutral LED retained. Costs near 33874 triangles / 8 draws / 2273412 bytes; far 11460 / 8 / 347164. No textures/external meshes. Revised export sheets and metrics/depth checks pass; fresh app captures and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-santiago-bernabeu.md",
+      "manifest": "/models/buildings/santiago-bernabeu.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=santiago-bernabeu",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=santiago-bernabeu&view=top"
+          }
+        ]
+      },
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tour-montparnasse",
+      "name": "Tour Montparnasse",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural Tour Montparnasse: bowed dark bronze-glass shaft, vertical mullions, 210 m roof terrace and antenna mast.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tour-montparnasse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tour-montparnasse",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13; MIT source / CC BY 4.0 model. Footprint © OpenStreetMap contributors, ODbL 1.0. Visual references only: Tour Montparnasse June 2010, King of Hearts, CC BY-SA 3.0; Remote view of the Tour Montparnasse & Eiffel Tower in 2005, Thbz, CC BY-SA 3.0. Photos remain ignored and are not included in exports.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tour_Montparnasse"
+          },
+          {
+            "label": "OSM tower footprint and height",
+            "url": "https://www.openstreetmap.org/way/16406633"
+          },
+          {
+            "label": "Tour Montparnasse June 2010 — King of Hearts — CC BY-SA 3.0",
+            "url": "https://en.wikipedia.org/wiki/File:Tour_Montparnasse_June_2010.jpg"
+          },
+          {
+            "label": "Remote view 2005 — Thbz — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Remote_view_of_the_Tour_Montparnasse_%26_Eiffel_Tower_in_2005.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-montparnasse/geometry.js"
+      },
+      "notes": "1973 exterior; no proposed glass refurbishment. Roof 210 m sourced; mast top 214 m and fine facade/roof/lobby details estimated. Only tower way 16406633 owned; surrounding shopping complex is excluded. Original texture-free geometry; no reference imagery ships.",
+      "documentation": "docs/assets/top-cities-tour-montparnasse.md",
+      "manifest": "/models/buildings/tour-montparnasse.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=tour-montparnasse",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=tour-montparnasse&view=plan"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ut-tower",
+      "name": "University of Texas Tower",
+      "kind": "building",
+      "location": "Austin, Texas",
+      "status": "ready",
+      "description": "Original procedural 1937 UT Main Building: 307-foot limestone shaft, four gilded clocks, open colonnaded carillon, red tile roofs and arched South Mall loggia.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ut-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ut-tower",
+        "provenance": "Original procedural geometry authored 13 October 2026 for Codriver; no external mesh, image pixels or texture included. Architectural identity/dimensions from UT official pages; mapped footprint © OpenStreetMap contributors, ODbL 1.0. Dossier photographs used only as visual references: Michael Barera, University of Texas at Austin August 2019 39 (Main Building), CC BY-SA 4.0; Guðsþegn, UT Tower - Main Building and UT Main Building Burnt Orange 03, CC BY-SA 3.0; Kurt Kaiser, University of Texas Main Building Tower 3, CC0. RG2 / Rebelguys2, Main Building at The University of Texas at Austin, CC BY-SA 3.0 migrated.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Main_Building_(University_of_Texas_at_Austin)"
+          },
+          {
+            "label": "UT Tower History: 1937, Indiana limestone, Spanish roof tiles and gilded clocks",
+            "url": "https://tower.utexas.edu/history/"
+          },
+          {
+            "label": "UT News / Dr. Battle: 307ft, 59ft shaft and >12ft clock faces",
+            "url": "https://news.utexas.edu/2025/12/11/dr-battles-tower/"
+          },
+          {
+            "label": "UT official lighting configurations",
+            "url": "https://tower.utexas.edu/lightings/"
+          },
+          {
+            "label": "Current restoration: temporary works omitted",
+            "url": "https://tower.utexas.edu/restoration/"
+          },
+          {
+            "label": "OSM main envelope",
+            "url": "https://www.openstreetmap.org/way/27397894"
+          },
+          {
+            "label": "Michael Barera / Main Building, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_August_2019_39_(Main_Building).jpg"
+          },
+          {
+            "label": "Guðsþegn / South facade, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:UT_Tower_-_Main_Building.JPG"
+          },
+          {
+            "label": "Guðsþegn / Orange lighting, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:UT_Main_Building_Burnt_Orange_03.JPG"
+          },
+          {
+            "label": "Kurt Kaiser / Tower, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:University_of_Texas_Main_Building_Tower_3.jpg"
+          },
+          {
+            "label": "Main Building facade detail / CC BY-SA 3.0 migrated",
+            "url": "https://commons.wikimedia.org/wiki/File:Main_Building_at_The_University_of_Texas_at_Austin.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ut-tower/geometry.js"
+      },
+      "notes": "Overall height and shaft size sourced from UT; footprint/bearing mapped from seven OSM ways. Intermediate tier heights, roof profiles, window and column counts, ornament and north-front details estimated. Far retains individual windows, four clocks, open colonnades and loggia; fine mullions/ornament reduced. Dark palette is an all-orange celebration, not everyday white lighting. Temporary restoration scaffolding, interiors, the South Mall steps outside the building envelope, site statues and trees omitted. Review correction: recessed 5.3 m carillon core uses separate dark shadow material in both LODs; red tile cap and column gaps retained. Exported near/far day/night sheets inspected; 8 draws in both LODs (far draw cap).",
+      "documentation": "docs/assets/top-cities-ut-tower.md",
+      "manifest": "/models/buildings/ut-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=ut-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ut-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ut-tower&view=facade"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=ut-tower&view=north"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ut-tower&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=ut-tower&view=entrance"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=ut-tower&view=crown"
+          }
+        ]
+      },
+      "city": "Austin",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "vancouver-art-gallery",
+      "name": "Vancouver Art Gallery (Robson Square)",
+      "kind": "building",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Original texture-free grey-stone former Vancouver courthouse: deep four-column Ionic portico, projecting pediment cornices, paired tall wing bays, stair lions, dark copper dome, roof balustrades and southwest Hooper wing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/vancouver-art-gallery/geometry.js",
+        "build": "pnpm build:top-cities-landmarks vancouver-art-gallery --no-check",
+        "provenance": "Original procedural model by Codriver, 2026-10-13; no third-party meshes or textures. OSM geographic data © OpenStreetMap contributors, ODbL 1.0. Comparison photographs retained only in ignored tmp: dronepicr, CC BY 2.0; Ian Spence, CC BY 3.0; Jason Vanderhill, public domain.",
+        "references": [
+          {
+            "label": "Canadian Register of Historic Places: dates, materials, four Ionic columns, lions and copper dome",
+            "url": "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=7439"
+          },
+          {
+            "label": "OSM former courthouse envelope",
+            "url": "https://www.openstreetmap.org/way/69701736"
+          },
+          {
+            "label": "Vancouver Art Gallery (29787380987), dronepicr, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Art_Gallery_(29787380987).jpg"
+          },
+          {
+            "label": "Art Gallery (229999805), Ian Spence, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Art_Gallery_(229999805).jpeg"
+          },
+          {
+            "label": "Robson Square from third floor, Jason Vanderhill, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Art_Gallery_Robson_Square_from_third_floor.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vancouver-art-gallery/geometry.js"
+      },
+      "notes": "b11b review correction: neutral grey foundation/stone/trim and dark copper; deep stepped portico cornices, four distinct Ionic shafts, shaded entrance recessed 6.4 m behind them, grade-supported framing piers, attached wing columns and six paired tall bays per wing retained in both LODs; near mullions 12 cm ahead of inset glass, far mullions dropped; zero dropped depth-cycle edges. Part heights and envelope from OSM; facade proportions, capitals, cupola and reclining lions estimated/stylised. No interiors, exhibition banners, plaza or adjoining Robson Square canopies. Near 25,193 tris / 5 draws / 844 KiB; far 10,701 / 5 / 361 KiB. Fresh reference/export comparison: tmp/top-cities/vancouver-art-gallery/review-fix/reference-export-comparison.jpg; independent re-review, app recapture, device performance and terrain lifecycle remain pending.",
+      "documentation": "docs/assets/top-cities-vancouver-art-gallery.md",
+      "manifest": "/models/buildings/vancouver-art-gallery.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=vancouver-art-gallery",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=entrance"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=dome"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=vancouver-art-gallery&view=plan"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "westminster-abbey",
+      "name": "Westminster Abbey",
+      "kind": "building",
+      "location": "London, United Kingdom",
+      "status": "ready",
+      "description": "Original procedural Westminster Abbey: twin Hawksmoor west towers, clock and great window, Gothic nave and flying buttresses, north rose and triple porch, polygonal choir and Henry VII Lady Chapel.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/westminster-abbey/geometry.js",
+        "build": "pnpm build:top-cities-landmarks westminster-abbey",
+        "provenance": "Original procedural model for Codriver, 2026-10-13; no scans, traced third-party meshes, photos or textures embedded. OSM-derived outline/placement © OpenStreetMap contributors, ODbL 1.0. Exterior references, not redistributed: Westminster Abbey west facade, Steve Cadman, CC BY-SA 2.0; Westminster Abbey north transept TTaylor sky adj, Amandajm, CC BY-SA 3.0. Interior dossier contact sheet used only to understand Gothic stone/window language; full credits remain in ignored refs/SOURCES.txt.",
+        "references": [
+          {
+            "label": "Abbey official dimensions",
+            "url": "https://www.westminster-abbey.org/media/lnbl3alq/abbey-dimensions-for-web.pdf"
+          },
+          {
+            "label": "Abbey official architectural history",
+            "url": "https://www.westminster-abbey.org/history/explore-our-history/architecture"
+          },
+          {
+            "label": "Mapped main church, OSM way 364313092",
+            "url": "https://www.openstreetmap.org/way/364313092"
+          },
+          {
+            "label": "West facade: Steve Cadman, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Westminster_Abbey_west_facade.jpg"
+          },
+          {
+            "label": "North transept: Amandajm, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Westminster_Abbey_north_transept_TTaylor_sky_adj.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/westminster-abbey/geometry.js"
+      },
+      "notes": "Near 16087 triangles / 5 draws / 733488 bytes; far 7913 / 5 / 372388. Original geometric approximations; no interiors, full sculpture, stained-glass images, scaffolding, new Sacristy, Chapter House or cloister complex. Windows are relief panels; flying buttress air gaps and the gap between west towers remain open. No app or terrain evidence claimed.",
+      "documentation": "docs/assets/top-cities-westminster-abbey.md",
+      "manifest": "/models/buildings/westminster-abbey.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=westminster-abbey",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=facade"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=north"
+          },
+          {
+            "label": "East",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=east"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=roof"
+          },
+          {
+            "label": "Portal",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=portal"
+          },
+          {
+            "label": "Rose",
+            "url": "/asset-preview.html?asset=westminster-abbey&view=rose"
+          }
+        ]
+      },
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

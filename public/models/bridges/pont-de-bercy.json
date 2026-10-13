@@ -1,0 +1,67 @@
+{
+  "id": "pont-de-bercy",
+  "name": "Pont de Bercy",
+  "kind": "bridge",
+  "origin": [
+    2.37483975,
+    48.838030125
+  ],
+  "height": 15.35,
+  "padM": 90,
+  "frontageBearing": 50.3,
+  "footprintless": true,
+  "rangeM": 4500,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat-map grade; road deck 8 m, Métro deck 14.1 m are photographic estimates. No absolute altitude or DEM is baked in. Bank-fit terrain placement, with independent support feet.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "175 m, 40 m overall, five 29 m river openings and 41 upper arcade openings. Vertical sections, pier thicknesses, stone coursing, balustrades and lamps estimated; 100 m flat-map approach ramps and tapered separated road ribbons.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-de-bercy-near.glb",
+      "bytes": 2577680,
+      "triangles": 44752,
+      "drawCalls": 16,
+      "bounds": {
+        "min": [
+          -159.3511505126953,
+          -0.07999999821186066,
+          -135.8831787109375
+        ],
+        "max": [
+          157.10525512695312,
+          15.350000381469727,
+          128.5542755126953
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-de-bercy-far.glb",
+      "bytes": 821916,
+      "triangles": 15168,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -159.3511505126953,
+          -0.07999999821186066,
+          -135.8831787109375
+        ],
+        "max": [
+          157.10525512695312,
+          15.350000381469727,
+          128.5542755126953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-bercy/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bank-of-america-corporate-center",
+  "name": "Bank of America Corporate Center",
+  "kind": "building",
+  "origin": [
+    -80.84223,
+    35.22731
+  ],
+  "height": 265.5,
+  "padM": 51,
+  "frontageBearing": 228.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid building, no absolute elevation or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "265.5 m / 60 floors / 1992 from CTBUH; 30.48 m silver-rod crown from structural engineer Walter P Moore. OSM plans and stepped part heights retained; facade bay pitch, crown rod count and ring details estimated from photographs. Rotation baked into mapped vertices. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bank-of-america-corporate-center-near.glb",
+      "bytes": 1444860,
+      "triangles": 31504,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.091148376464844,
+          0,
+          -34.7763671875
+        ],
+        "max": [
+          34.955020904541016,
+          265.5,
+          34.2531623840332
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bank-of-america-corporate-center-far.glb",
+      "bytes": 413188,
+      "triangles": 8764,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.091148376464844,
+          0,
+          -34.7763671875
+        ],
+        "max": [
+          34.955020904541016,
+          265.5,
+          34.2531623840332
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-america-corporate-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

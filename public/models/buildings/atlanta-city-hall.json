@@ -1,0 +1,66 @@
+{
+  "id": "atlanta-city-hall",
+  "name": "Atlanta City Hall",
+  "kind": "building",
+  "origin": [
+    -84.39028,
+    33.74889
+  ],
+  "height": 66.6,
+  "padM": 72,
+  "frontageBearing": 34,
+  "rotationDeg": -34,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1930 Neo-Gothic tower: OSM 66.6 m height and four complete mapped provider envelopes; cream terra cotta, olive spandrels, Gothic entrances and shallow green pyramid concealed behind tracery. Setbacks, bays and simplified 1989 annex estimated from references. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/atlanta-city-hall-near.glb",
+      "bytes": 1502656,
+      "triangles": 32639,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -89.31111907958984,
+          0,
+          -30.25668716430664
+        ],
+        "max": [
+          32.84027862548828,
+          66.5999984741211,
+          90.21288299560547
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/atlanta-city-hall-far.glb",
+      "bytes": 443004,
+      "triangles": 9633,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -89.31111907958984,
+          0,
+          -30.25668716430664
+        ],
+        "max": [
+          32.84027862548828,
+          66.5999984741211,
+          90.21288299560547
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/atlanta-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

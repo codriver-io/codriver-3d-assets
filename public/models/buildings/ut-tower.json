@@ -1,0 +1,191 @@
+{
+  "id": "ut-tower",
+  "name": "University of Texas Tower",
+  "kind": "building",
+  "origin": [
+    -97.7393684,
+    30.2862733
+  ],
+  "height": 93.5736,
+  "padM": 58,
+  "frontageBearing": 184.9,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -97.739138,
+          30.2861618
+        ],
+        [
+          -97.7392579,
+          30.2861707
+        ],
+        [
+          -97.7392393,
+          30.2863577
+        ],
+        [
+          -97.7394732,
+          30.2863751
+        ],
+        [
+          -97.7394917,
+          30.2861886
+        ],
+        [
+          -97.7395496,
+          30.2861934
+        ],
+        [
+          -97.7395263,
+          30.2863857
+        ],
+        [
+          -97.7396986,
+          30.2864015
+        ],
+        [
+          -97.7397431,
+          30.2859549
+        ],
+        [
+          -97.7397721,
+          30.2856638
+        ],
+        [
+          -97.7396233,
+          30.2856527
+        ],
+        [
+          -97.7396112,
+          30.2857736
+        ],
+        [
+          -97.7395016,
+          30.2857624
+        ],
+        [
+          -97.7394163,
+          30.2857569
+        ],
+        [
+          -97.739329,
+          30.2857513
+        ],
+        [
+          -97.7392123,
+          30.285744
+        ],
+        [
+          -97.7392237,
+          30.2856291
+        ],
+        [
+          -97.7390754,
+          30.2856181
+        ],
+        [
+          -97.7390483,
+          30.2858901
+        ],
+        [
+          -97.7390425,
+          30.2859485
+        ],
+        [
+          -97.7389849,
+          30.2859443
+        ],
+        [
+          -97.7389819,
+          30.2859798
+        ],
+        [
+          -97.7389453,
+          30.2863427
+        ],
+        [
+          -97.7391187,
+          30.2863555
+        ],
+        [
+          -97.739138,
+          30.2861618
+        ]
+      ]
+    ],
+    "datum": "median",
+    "featherM": 12,
+    "refs": [
+      [
+        -97.7393684,
+        30.2862733
+      ],
+      [
+        -97.7394,
+        30.28581
+      ],
+      [
+        -97.73965,
+        30.2861
+      ],
+      [
+        -97.7391,
+        30.2861
+      ]
+    ]
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map entrance grade y=0; rigid building, no DEM or sea-level altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1937 historic exterior without temporary 2024–2027 restoration scaffolding. Overall height 307ft; intermediate heights, crown details and window counts estimated from photographs. Dark palette represents an all-orange celebration, not everyday white illumination.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ut-tower-near.glb",
+      "bytes": 811376,
+      "triangles": 14270,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -39.17502975463867,
+          -3.5762786065873797e-9,
+          -14.694009780883789
+        ],
+        "max": [
+          41.039512634277344,
+          93.57360076904297,
+          73.35482025146484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ut-tower-far.glb",
+      "bytes": 458512,
+      "triangles": 8214,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -39.302696228027344,
+          -3.5762786065873797e-9,
+          -14.73790454864502
+        ],
+        "max": [
+          41.16610336303711,
+          93.57360076904297,
+          73.40282440185547
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ut-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

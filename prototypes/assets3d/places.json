@@ -17,6 +17,10 @@
     "region": "Texas",
     "continent": "North America"
   },
+  "Athens": {
+    "country": "Greece",
+    "continent": "Europe"
+  },
   "Atlanta": {
     "country": "United States",
     "region": "Georgia",
@@ -86,6 +90,11 @@
   "Cartago": {
     "country": "Costa Rica",
     "region": "Cartago",
+    "continent": "North America"
+  },
+  "Charlotte": {
+    "country": "United States",
+    "region": "North Carolina",
     "continent": "North America"
   },
   "Chicago": {
@@ -190,6 +199,11 @@
   "Kyiv": {
     "country": "Ukraine",
     "continent": "Europe"
+  },
+  "La Porte": {
+    "country": "United States",
+    "region": "Texas",
+    "continent": "North America"
   },
   "Lærdal": {
     "country": "Norway",
