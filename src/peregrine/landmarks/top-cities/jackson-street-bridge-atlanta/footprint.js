@@ -1,2 +1,3 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// Mapped structural outline © OpenStreetMap contributors, ODbL 1.0. No adjacent buildings are replaced.
+export const FOOTPRINTS = [[[-84.3744095, 33.7604708], [-84.3743891, 33.7604706], [-84.3743036, 33.7604696], [-84.3742181, 33.7604686], [-84.3742068, 33.7604685], [-84.374217, 33.7598654], [-84.3742294, 33.7598656], [-84.3743171, 33.7598666], [-84.3744004, 33.7598676], [-84.3744196, 33.7598678], [-84.3744095, 33.7604708]]];
+export const OSM_WAYS = [1451196894];
