@@ -1,0 +1,69 @@
+{
+  "id": "oak-street-bridge",
+  "name": "Oak Street Bridge",
+  "kind": "bridge",
+  "origin": [
+    -123.12556,
+    49.19972
+  ],
+  "height": 35,
+  "padM": 1900,
+  "frontageBearing": 148.5,
+  "rangeM": 5200,
+  "nearM": 1400,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual flat-map/water footing datum. Estimated raised deck crest 26 m; absolute-deck world placement keeps the structure rigid and fits each foot and approach to the DEM. No DEM or latitude stretch baked into GLBs.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1957 four-lane girder bridge, not a through-truss. Published length 1840 m and main spans 60.9/91.4/60.9 m. Mapped width approximately 19.6 m normal to alignment. Estimated crest, main-span positions, haunch sections, concrete pier dimensions, representative lamp and rail spacing; modeled mainline excludes interchange branches.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/oak-street-bridge-near.glb",
+      "bytes": 2480184,
+      "triangles": 59700,
+      "drawCalls": 24,
+      "bounds": {
+        "min": [
+          -339.3677062988281,
+          -5.9604645663569045e-9,
+          -634.04052734375
+        ],
+        "max": [
+          590.8876953125,
+          34.24945831298828,
+          957.0776977539062
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/oak-street-bridge-far.glb",
+      "bytes": 1023144,
+      "triangles": 24792,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -339.3677062988281,
+          -5.9604645663569045e-9,
+          -634.04052734375
+        ],
+        "max": [
+          590.8876953125,
+          34.24945831298828,
+          957.0776977539062
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oak-street-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

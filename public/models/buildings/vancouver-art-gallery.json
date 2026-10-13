@@ -1,0 +1,65 @@
+{
+  "id": "vancouver-art-gallery",
+  "name": "Vancouver Art Gallery (Robson Square)",
+  "kind": "building",
+  "origin": [
+    -123.12046,
+    49.28287
+  ],
+  "height": 26.5,
+  "padM": 75,
+  "frontageBearing": 44.515682,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid foundation at local grade y=0; entrance landing estimated at +3.2 m. No DEM, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "OSM envelope and part heights; copper dome apex follows OSM 26.5 m, profile estimated from exterior photographs (OSM roof-height conflicts with min-height). Ionic capitals, lions, facade bays and stair dimensions are stylised estimates. Rotation baked once. Cityscape and Full 3D world not tested yet, integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/vancouver-art-gallery-near.glb",
+      "bytes": 864372,
+      "triangles": 25193,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -64.4639663696289,
+          -5.563100202721216e-8,
+          -39.870697021484375
+        ],
+        "max": [
+          36.65218734741211,
+          26.5,
+          35.68857192993164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/vancouver-art-gallery-far.glb",
+      "bytes": 370044,
+      "triangles": 10701,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -64.4639663696289,
+          -5.563100202721216e-8,
+          -39.870697021484375
+        ],
+        "max": [
+          36.65218734741211,
+          26.5,
+          35.68857192993164
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vancouver-art-gallery/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

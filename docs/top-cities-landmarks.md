@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (187 released)
+## The collection (206 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -195,6 +195,25 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `yerevan-cascade` | Yerevan Cascade | Yerevan | building |
 | `oresund-bridge` | Øresund Bridge | Copenhagen | bridge, road-fitted |
 | `sixth-street-viaduct` | Sixth Street Viaduct | Los Angeles | bridge, road-fitted |
+| `rogers-arena` | Rogers Arena | Vancouver | building |
+| `edificio-metalico` | Edificio Metálico | San José | building |
+| `san-jacinto-monument` | San Jacinto Monument | La Porte | building |
+| `concertgebouw` | Concertgebouw | Amsterdam | building |
+| `tour-montparnasse` | Tour Montparnasse | Paris | building |
+| `westminster-abbey` | Westminster Abbey | London | building |
+| `opera-de-lyon` | Opéra de Lyon | Lyon | building |
+| `santiago-bernabeu` | Estadio Santiago Bernabéu | Madrid | building |
+| `oak-street-bridge` | Oak Street Bridge | Vancouver | bridge, road-fitted |
+| `riverside-county-courthouse` | Riverside County Courthouse | Riverside | building |
+| `place-de-la-concorde-obelisk` | Place de la Concorde obelisk & fountains | Paris | building |
+| `atlanta-city-hall` | Atlanta City Hall | Atlanta | building |
+| `ut-tower` | University of Texas Tower | Austin | building |
+| `belem-tower` | Belém Tower | Lisbon | building |
+| `parthenon` | Parthenon (Acropolis) | Athens | building |
+| `bank-of-america-corporate-center` | Bank of America Corporate Center | Charlotte | building |
+| `miami-tower` | Miami Tower | Miami | building |
+| `vancouver-art-gallery` | Vancouver Art Gallery (Robson Square) | Vancouver | building |
+| `pont-de-bercy` | Pont de Bercy | Paris | bridge, road-fitted |
 
 ## A landmark is a folder
 

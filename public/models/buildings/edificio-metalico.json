@@ -1,0 +1,65 @@
+{
+  "id": "edificio-metalico",
+  "name": "Edificio Metálico",
+  "kind": "building",
+  "origin": [
+    -84.074372,
+    9.93615065
+  ],
+  "height": 17.8,
+  "padM": 38,
+  "frontageBearing": 175.24,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no altitude, DEM or Mercator stretch baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Two-storey prefabricated Belgian iron school inaugurated in 1896. OSM 61 × 44 m outer envelope and notched courtyard. Heights, metal relief, roof slopes and rear elevations estimated from photos. Muted grey-mauve panels and cream/ochre framing follow the supplied dated references; current paint is unverified.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edificio-metalico-near.glb",
+      "bytes": 1742820,
+      "triangles": 35585,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -31.613407135009766,
+          0,
+          -23.960174560546875
+        ],
+        "max": [
+          31.87914276123047,
+          17.670000076293945,
+          23.916799545288086
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edificio-metalico-far.glb",
+      "bytes": 471496,
+      "triangles": 10267,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.613407135009766,
+          0,
+          -23.960174560546875
+        ],
+        "max": [
+          31.87914276123047,
+          17.670000076293945,
+          23.916799545288086
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-metalico/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

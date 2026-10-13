@@ -1,0 +1,69 @@
+{
+  "id": "opera-de-lyon",
+  "name": "Opéra de Lyon",
+  "kind": "building",
+  "origin": [
+    4.8366,
+    45.76778905
+  ],
+  "height": 42,
+  "padM": 40,
+  "frontageBearing": 278.6,
+  "gridAngle": 0.15,
+  "stoneHeight": 22,
+  "roofRise": 20,
+  "roofRadius": 17.9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0. No DEM, altitude or latitude stretch is baked into the GLBs.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1993 Jean Nouvel glass barrel vault on the preserved 1831 stone facades. 42 m height and 20 m roof rise from OSM, not a survey. Arcade/window proportions, statue poses, louvers and nonparallel facade fit estimated from photographs. Interiors and basement omitted; integration tested separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/opera-de-lyon-near.glb",
+      "bytes": 878868,
+      "triangles": 14514,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.9036808013916,
+          0,
+          -22.46507453918457
+        ],
+        "max": [
+          31.641469955444336,
+          42.18442153930664,
+          22.76747703552246
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/opera-de-lyon-far.glb",
+      "bytes": 440676,
+      "triangles": 6726,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.9036808013916,
+          0,
+          -22.46507453918457
+        ],
+        "max": [
+          31.641469955444336,
+          42.15999984741211,
+          22.76747703552246
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/opera-de-lyon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

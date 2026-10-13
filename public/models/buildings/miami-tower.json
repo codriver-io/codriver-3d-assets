@@ -1,0 +1,65 @@
+{
+  "id": "miami-tower",
+  "name": "Miami Tower",
+  "kind": "building",
+  "origin": [
+    -80.19143,
+    25.77219
+  ],
+  "height": 190.5,
+  "padM": 60,
+  "frontageBearing": 134,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0, metres east/up/south; no DEM, absolute altitude or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "625 ft architectural height, three mapped curved tiers and adjoining garage. Intermediate heights 74/115 m from OSM; top adjusted to 190.5 m published height. Facade pitch, podium height, station frontage and sky terrace are photo estimates. Magenta is one fixed night lighting state; actual LEDs change colour. App integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/miami-tower-near.glb",
+      "bytes": 1487436,
+      "triangles": 27451,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -37.21149826049805,
+          0,
+          -37.447898864746094
+        ],
+        "max": [
+          41.18130111694336,
+          190.5,
+          40.74290084838867
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/miami-tower-far.glb",
+      "bytes": 368316,
+      "triangles": 6745,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -37.21149826049805,
+          0,
+          -37.447898864746094
+        ],
+        "max": [
+          41.18130111694336,
+          190.5,
+          40.74290084838867
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/miami-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

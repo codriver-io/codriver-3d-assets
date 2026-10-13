@@ -1,0 +1,113 @@
+{
+  "id": "parthenon",
+  "name": "Parthenon (Acropolis)",
+  "kind": "building",
+  "origin": [
+    23.72661765,
+    37.97150335
+  ],
+  "height": 18.05,
+  "padM": 39,
+  "frontageBearing": 77.01080318038069,
+  "rotation": 0.22670425169193295,
+  "stylobateLength": 69.5,
+  "stylobateWidth": 30.88,
+  "columnHeight": 10.43,
+  "columnDiameter": 1.905,
+  "platformY": 1.8,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          23.7269774,
+          37.9717249
+        ],
+        [
+          23.7261712,
+          37.9715783
+        ],
+        [
+          23.7262579,
+          37.9712818
+        ],
+        [
+          23.7270641,
+          37.9714284
+        ],
+        [
+          23.7269774,
+          37.9717249
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        23.7263,
+        37.97155
+      ],
+      [
+        23.72661,
+        37.9715
+      ],
+      [
+        23.72694,
+        37.97146
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 at the bottom of the temple crepidoma on the hilltop; no absolute altitude or DEM baked into the rigid temple.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "69.5 × 30.88m stylobate and 10.43m Doric columns; mapped bearing baked once. Contemporary roofless ruin, not an intact ancient reconstruction. Ruin edges, cella remnants and inner porch restoration heights are approximate; temporary cranes, scaffolding, visitor rails and the Acropolis hill are omitted. App terrain footing is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/parthenon-near.glb",
+      "bytes": 881504,
+      "triangles": 27068,
+      "drawCalls": 1,
+      "bounds": {
+        "min": [
+          -39.124786376953125,
+          -5.9604645663569045e-9,
+          -24.431743621826172
+        ],
+        "max": [
+          39.124786376953125,
+          18.049999237060547,
+          24.431743621826172
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/parthenon-far.glb",
+      "bytes": 248832,
+      "triangles": 6932,
+      "drawCalls": 1,
+      "bounds": {
+        "min": [
+          -39.124786376953125,
+          -5.9604645663569045e-9,
+          -24.431743621826172
+        ],
+        "max": [
+          39.124786376953125,
+          18.049999237060547,
+          24.431743621826172
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parthenon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

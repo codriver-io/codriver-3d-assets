@@ -1,0 +1,68 @@
+{
+  "id": "rogers-arena",
+  "name": "Rogers Arena",
+  "kind": "building",
+  "origin": [
+    -123.10889,
+    49.27778
+  ],
+  "height": 35,
+  "padM": 88,
+  "frontageBearing": 91,
+  "eaveM": 26,
+  "facadeM": 22,
+  "roofRiseM": 9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no terrain or sea-level elevation baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped arena and roof outlines; heights, entrance drum, glazing and roof curvature are photo-based estimates. Adjacent Aquilini towers remain provider-owned. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rogers-arena-near.glb",
+      "bytes": 683232,
+      "triangles": 13891,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -59.68266677856445,
+          0,
+          -79.13739013671875
+        ],
+        "max": [
+          77.70626831054688,
+          35,
+          47.366661071777344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rogers-arena-far.glb",
+      "bytes": 309188,
+      "triangles": 5880,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -59.68266677856445,
+          0,
+          -79.13739013671875
+        ],
+        "max": [
+          77.66389465332031,
+          35,
+          47.366661071777344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rogers-arena/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

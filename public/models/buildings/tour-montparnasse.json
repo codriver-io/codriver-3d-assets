@@ -1,0 +1,72 @@
+{
+  "id": "tour-montparnasse",
+  "name": "Tour Montparnasse",
+  "kind": "building",
+  "origin": [
+    2.32197945,
+    48.842112875
+  ],
+  "height": 214,
+  "roofY": 210,
+  "shaftY": 209.2,
+  "lobbyY": 5.6,
+  "padM": 38,
+  "frontageBearing": 129,
+  "axisBearing": 39,
+  "halfLength": 30.5,
+  "halfWidth": 19.2,
+  "endHalfWidth": 12.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; metres east/up/south. No terrain or Mercator scale baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1973 bronze-glass exterior. Published roof height 210 m; mast top 214 m, roof access hut, mullion pitch and lobby detailing are estimated. Rotation of 39 degrees east of north is already baked in. Shopping complex excluded. Cityscape and Full 3D world integration not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-montparnasse-near.glb",
+      "bytes": 1311088,
+      "triangles": 24080,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -29.213735580444336,
+          0,
+          -31.908342361450195
+        ],
+        "max": [
+          29.213735580444336,
+          214,
+          31.908342361450195
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-montparnasse-far.glb",
+      "bytes": 387240,
+      "triangles": 7008,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -29.609329223632812,
+          0,
+          -32.34321212768555
+        ],
+        "max": [
+          29.609329223632812,
+          214,
+          32.34321212768555
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-montparnasse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

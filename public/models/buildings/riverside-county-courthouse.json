@@ -1,0 +1,69 @@
+{
+  "id": "riverside-county-courthouse",
+  "name": "Riverside County Courthouse",
+  "kind": "building",
+  "origin": [
+    -117.37557,
+    33.97923
+  ],
+  "height": 20.7,
+  "padM": 48,
+  "frontageBearing": 299.1,
+  "rotationDeg": -119.1,
+  "plinthM": 2.2,
+  "wingCorniceM": 11.9,
+  "porticoCorniceM": 14.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0, no absolute altitude or terrain stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present restored 1903/1904 Main Street courthouse range, mapped way 118524342 only; the separate east additions remain provider-owned. Main Street portico has six shafts, the two inner pairs, Corinthian capitals, open bays, broad stairs, continuous balustrades and four grouped attic sculptures. Vertical dimensions, carving, roof and unseen rear details are photographic estimates. Orientation -119.1 degrees is baked into vertices. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/riverside-county-courthouse-near.glb",
+      "bytes": 1676580,
+      "triangles": 42892,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.23872375488281,
+          -2.8610228852699038e-8,
+          -43.74325942993164
+        ],
+        "max": [
+          36.66218948364258,
+          20.739519119262695,
+          43.60434341430664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/riverside-county-courthouse-far.glb",
+      "bytes": 440136,
+      "triangles": 9804,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -34.23872375488281,
+          -2.3841858265427618e-8,
+          -43.74325942993164
+        ],
+        "max": [
+          36.66218948364258,
+          20.739519119262695,
+          43.60434341430664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/riverside-county-courthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
