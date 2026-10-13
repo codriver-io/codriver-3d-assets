@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'oresund-bridge', name: "Øresund Bridge", kind: 'bridge',
   ready: false,
-  origin: [12.84944, 55.57056],
+  origin: [12.8270015,55.575176],
   height: 204,
   padM: 60,
   frontageBearing: 0,

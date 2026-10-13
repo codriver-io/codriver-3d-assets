@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'mucem', name: "MuCEM & Fort Saint-Jean", kind: 'building',
   ready: false,
-  origin: [5.36194, 43.29528],
-  height: 18,
+  origin: [5.36194,43.29528],
+  height: 33,
   padM: 60,
   frontageBearing: 0,
 };

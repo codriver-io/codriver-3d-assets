@@ -1,9 +1,12 @@
+import * as THREE from 'three';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
+import { buildRocket, buildSupport } from './saturn-v-huntsville-parts.js';
 
-// Stub placeholder until this landmark is released.
 export function create({ detail = 'near' } = {}) {
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  b.box('stone', [0, SPEC.height / 2, 0], [20, SPEC.height, 20]);
-  return b.finish();
+  buildRocket(b, detail === 'near'); buildSupport(b, detail === 'near');
+  const model = b.finish();
+  model.traverse(o => { if (o.isMesh) { o.geometry.rotateY(SPEC.rotationRad); o.geometry.deleteAttribute('bridgeLift'); } });
+  return model;
 }

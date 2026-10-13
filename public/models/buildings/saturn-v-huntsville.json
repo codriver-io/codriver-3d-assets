@@ -1,0 +1,68 @@
+{
+  "id": "saturn-v-huntsville",
+  "name": "Saturn V (U.S. Space & Rocket Center)",
+  "kind": "building",
+  "origin": [
+    -86.655912,
+    34.7110991
+  ],
+  "height": 111,
+  "padM": 12,
+  "footprintless": true,
+  "frontageBearing": 332,
+  "rotationRad": 0.4886921906,
+  "radius": 5.03,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local forecourt grade y=0; no absolute elevation or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1999 vertical outdoor replica only. NASA full-scale height 111 m and main diameter 10.06 m; display support height, stage elevations, fins, roll-pattern phase, markings and engine profiles estimated from photographs. Museum and horizontal rocket excluded.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/saturn-v-huntsville-near.glb",
+      "bytes": 701180,
+      "triangles": 13076,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.819353103637695,
+          -1.1920929132713809e-8,
+          -10.819353103637695
+        ],
+        "max": [
+          10.819353103637695,
+          111,
+          10.819353103637695
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/saturn-v-huntsville-far.glb",
+      "bytes": 187120,
+      "triangles": 3416,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.819353103637695,
+          -1.1920929132713809e-8,
+          -10.819353103637695
+        ],
+        "max": [
+          10.819353103637695,
+          111,
+          10.819353103637695
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/saturn-v-huntsville/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

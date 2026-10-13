@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'opera-de-lyon', name: "Opéra de Lyon", kind: 'building',
   ready: false,
-  origin: [4.83661, 45.76783],
+  origin: [4.8366, 45.76778905],
   height: 42,
   padM: 60,
   frontageBearing: 0,

@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'centre-pompidou', name: "Centre Pompidou", kind: 'building',
   ready: false,
-  origin: [2.35224, 48.86064],
+  origin: [2.352443,48.860534],
   height: 42,
   padM: 60,
   frontageBearing: 0,

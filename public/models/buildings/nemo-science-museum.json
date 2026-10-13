@@ -1,0 +1,65 @@
+{
+  "id": "nemo-science-museum",
+  "name": "NEMO Science Museum",
+  "kind": "building",
+  "origin": [
+    4.91235,
+    52.37408
+  ],
+  "height": 32.57,
+  "padM": 78,
+  "frontageBearing": 273,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid grade y=0; no absolute water level, DEM or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Renzo Piano 1997 copper hull and 2025 rooftop square. Plan and 32.57 m maximum height from OSM/BAG. Hull taper, glazing, steps, planted beds and pavilion are photographic estimates. Cityscape and Full 3D world not tested yet; integration is checked separately. See docs/3d-top-cities-nemo-science-museum.md.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/nemo-science-museum-near.glb",
+      "bytes": 1301320,
+      "triangles": 16577,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -25.451372146606445,
+          0,
+          -71.96804809570312
+        ],
+        "max": [
+          19.281055450439453,
+          32.563480377197266,
+          45.31816482543945
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/nemo-science-museum-far.glb",
+      "bytes": 359740,
+      "triangles": 4531,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -25.451372146606445,
+          0,
+          -71.96804809570312
+        ],
+        "max": [
+          19.281055450439453,
+          32.563480377197266,
+          45.31816482543945
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/nemo-science-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

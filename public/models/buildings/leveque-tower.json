@@ -1,0 +1,67 @@
+{
+  "id": "leveque-tower",
+  "name": "LeVeque Tower",
+  "kind": "building",
+  "origin": [
+    -83.00209,
+    39.96238
+  ],
+  "height": 189.29,
+  "architecturalHeight": 169.29,
+  "padM": 45,
+  "frontageBearing": 188.3,
+  "bearing": 8.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0; rigid base, no terrain/sea-level datum or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "169.29 m architectural height sourced; antenna tip 189.29 m, setback heights, fenestration and ornaments estimated from photographs. Current surviving reliefs simplified; temporary scaffolding omitted. Rotation baked once from mapped street edges.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/leveque-tower-near.glb",
+      "bytes": 2028984,
+      "triangles": 37932,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -25.22564697265625,
+          0,
+          -38.937599182128906
+        ],
+        "max": [
+          37.251251220703125,
+          189.2899932861328,
+          18.486528396606445
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/leveque-tower-far.glb",
+      "bytes": 486140,
+      "triangles": 8934,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -25.22564697265625,
+          0,
+          -38.937599182128906
+        ],
+        "max": [
+          37.251251220703125,
+          189.2899932861328,
+          18.486528396606445
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/leveque-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

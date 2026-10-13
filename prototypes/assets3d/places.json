@@ -3,6 +3,11 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Alexandria": {
+    "country": "United States",
+    "region": "Virginia",
+    "continent": "North America"
+  },
   "Amsterdam": {
     "country": "Netherlands",
     "continent": "Europe"
@@ -102,6 +107,10 @@
     "region": "Texas",
     "continent": "North America"
   },
+  "Dartford": {
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
   "Delta": {
     "country": "Canada",
     "region": "British Columbia",
@@ -149,6 +158,11 @@
   "Houston": {
     "country": "United States",
     "region": "Texas",
+    "continent": "North America"
+  },
+  "Huntsville": {
+    "country": "United States",
+    "region": "Alabama",
     "continent": "North America"
   },
   "Jerusalem": {
@@ -272,6 +286,14 @@
     "country": "Canada",
     "region": "British Columbia",
     "continent": "North America"
+  },
+  "Prague": {
+    "country": "Czech Republic",
+    "continent": "Europe"
+  },
+  "Puteaux": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Québec": {
     "country": "Canada",

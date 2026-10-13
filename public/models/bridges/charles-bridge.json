@@ -1,0 +1,309 @@
+{
+  "id": "charles-bridge",
+  "name": "Charles Bridge",
+  "kind": "bridge",
+  "origin": [
+    14.41025,
+    50.08667
+  ],
+  "height": 59,
+  "padM": 70,
+  "frontageBearing": 103.8,
+  "rangeM": 2600,
+  "nearM": 950,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          14.4067673,
+          50.0872617
+        ],
+        [
+          14.406769,
+          50.0872588
+        ],
+        [
+          14.406772,
+          50.0872564
+        ],
+        [
+          14.4067762,
+          50.0872548
+        ],
+        [
+          14.4067815,
+          50.0872529
+        ],
+        [
+          14.4069206,
+          50.0872482
+        ],
+        [
+          14.4069293,
+          50.0872507
+        ],
+        [
+          14.4069327,
+          50.0872527
+        ],
+        [
+          14.406935,
+          50.0872554
+        ],
+        [
+          14.4069357,
+          50.0872584
+        ],
+        [
+          14.4069407,
+          50.0873532
+        ],
+        [
+          14.4069398,
+          50.0873561
+        ],
+        [
+          14.4069376,
+          50.0873588
+        ],
+        [
+          14.4069342,
+          50.0873608
+        ],
+        [
+          14.40693,
+          50.0873619
+        ],
+        [
+          14.4069254,
+          50.0873622
+        ],
+        [
+          14.4067894,
+          50.087365
+        ],
+        [
+          14.406785,
+          50.087365
+        ],
+        [
+          14.4067808,
+          50.0873642
+        ],
+        [
+          14.4067773,
+          50.0873625
+        ],
+        [
+          14.4067744,
+          50.0873599
+        ],
+        [
+          14.4067732,
+          50.0873576
+        ],
+        [
+          14.4067673,
+          50.0872647
+        ],
+        [
+          14.4067673,
+          50.0872617
+        ]
+      ],
+      [
+        [
+          14.4067775,
+          50.0871987
+        ],
+        [
+          14.4067863,
+          50.0870905
+        ],
+        [
+          14.4069193,
+          50.0870921
+        ],
+        [
+          14.4069195,
+          50.0871251
+        ],
+        [
+          14.4069175,
+          50.0872016
+        ],
+        [
+          14.4067793,
+          50.0872043
+        ],
+        [
+          14.4067775,
+          50.0871987
+        ]
+      ],
+      [
+        [
+          14.4134991,
+          50.0861358
+        ],
+        [
+          14.4134995,
+          50.0861328
+        ],
+        [
+          14.4135014,
+          50.08613
+        ],
+        [
+          14.4135046,
+          50.0861278
+        ],
+        [
+          14.4135568,
+          50.0861033
+        ],
+        [
+          14.4135946,
+          50.0860969
+        ],
+        [
+          14.4136591,
+          50.0861
+        ],
+        [
+          14.4136635,
+          50.0861004
+        ],
+        [
+          14.4136674,
+          50.0861017
+        ],
+        [
+          14.4136706,
+          50.0861037
+        ],
+        [
+          14.4136726,
+          50.0861062
+        ],
+        [
+          14.4137142,
+          50.086204
+        ],
+        [
+          14.4137144,
+          50.086207
+        ],
+        [
+          14.4137131,
+          50.0862099
+        ],
+        [
+          14.4137105,
+          50.0862123
+        ],
+        [
+          14.4137068,
+          50.086214
+        ],
+        [
+          14.4137024,
+          50.0862149
+        ],
+        [
+          14.4135558,
+          50.0862405
+        ],
+        [
+          14.4135512,
+          50.0862405
+        ],
+        [
+          14.4135469,
+          50.0862395
+        ],
+        [
+          14.4135433,
+          50.0862376
+        ],
+        [
+          14.4135408,
+          50.0862352
+        ],
+        [
+          14.4135002,
+          50.0861387
+        ],
+        [
+          14.4134991,
+          50.0861358
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        14.40685,
+        50.087228
+      ],
+      [
+        14.413607,
+        50.086173
+      ]
+    ],
+    "datum": "median",
+    "featherM": 5
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is an illustrative river/support datum; pedestrian paving and tower bank footings are y=12 m. No altitude or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 515.76 m overall / 9.5 m width / sixteen vaults / thirty statue groups; Old Town tower about 47 m, Lesser Town 43.5 m, Judith 29.3 m above bank. Mapped curved outline retained; arch rises, local deck datum, masonry, ornament and human silhouettes are photographic estimates. Free-standing pedestrian bridge; no road layer. Both app placement modes need separate integration checks.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/charles-bridge-near.glb",
+      "bytes": 1621376,
+      "triangles": 25940,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -248.27438354492188,
+          0,
+          -77.24111938476562
+        ],
+        "max": [
+          267.21258544921875,
+          59.04499816894531,
+          64.39756774902344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/charles-bridge-far.glb",
+      "bytes": 745136,
+      "triangles": 11172,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -247.9445037841797,
+          0,
+          -77.06957244873047
+        ],
+        "max": [
+          267.21258544921875,
+          59.04499816894531,
+          64.39756774902344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/charles-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

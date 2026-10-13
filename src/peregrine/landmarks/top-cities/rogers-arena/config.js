@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'rogers-arena', name: "Rogers Arena", kind: 'building',
   ready: false,
   origin: [-123.10889, 49.27778],
-  height: 50,
+  height: 35,
   padM: 60,
   frontageBearing: 0,
 };

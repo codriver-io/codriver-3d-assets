@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'oak-street-bridge', name: "Oak Street Bridge", kind: 'bridge',
   ready: false,
-  origin: [-123.12556, 49.19972],
-  height: 25,
+  origin: [-123.12556,49.19972],
+  height: 35,
   padM: 60,
   frontageBearing: 0,
 };

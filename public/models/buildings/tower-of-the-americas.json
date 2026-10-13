@@ -1,0 +1,73 @@
+{
+  "id": "tower-of-the-americas",
+  "name": "Tower of the Americas",
+  "kind": "building",
+  "origin": [
+    -98.483573428125,
+    29.419040175
+  ],
+  "height": 229,
+  "roofY": 189.6,
+  "houseBottomY": 166.43,
+  "shaftRadius": 6.858,
+  "houseRadius": 16.4,
+  "elevatorBearing": 344,
+  "frontageBearing": 4,
+  "padM": 31,
+  "rangeM": 5000,
+  "minZoom": 12.5,
+  "nearM": 800,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0; rigid base in real metres, no DEM or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "229 m overall, 189.6 m roof, 13.716 m shaft diameter and 23.17 m top-house height are published. Top-house radius is mapped. Tier stations, rib rhythm, slight shaft taper, elevator face and low pavilion roofs are photo estimates. No surrounding plaza, entry sign arch, landscaping, flags, textures or interior. Cityscape and Full 3D world not tested; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tower-of-the-americas-near.glb",
+      "bytes": 382216,
+      "triangles": 8240,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -24.13195037841797,
+          7.179356499116476e-16,
+          -30.838422775268555
+        ],
+        "max": [
+          24.127708435058594,
+          229,
+          24.131393432617188
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tower-of-the-americas-far.glb",
+      "bytes": 213392,
+      "triangles": 4440,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -24.13195037841797,
+          7.179356499116476e-16,
+          -30.838422775268555
+        ],
+        "max": [
+          24.127708435058594,
+          229,
+          24.131393432617188
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tower-of-the-americas/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'yerevan-cascade', name: "Yerevan Cascade", kind: 'building',
   ready: false,
-  origin: [44.51556, 40.19142],
-  height: 50,
+  origin: [0, 0],
+  height: 79.2,
   padM: 60,
   frontageBearing: 0,
 };
