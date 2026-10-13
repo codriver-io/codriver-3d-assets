@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'bank-of-america-corporate-center', name: "Bank of America Corporate Center", kind: 'building',
   ready: false,
   origin: [-80.84223, 35.22731],
-  height: 265,
+  height: 265.5,
   padM: 60,
   frontageBearing: 0,
 };

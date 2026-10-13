@@ -1,0 +1,65 @@
+{
+  "id": "perot-museum",
+  "name": "Perot Museum of Nature and Science",
+  "kind": "building",
+  "origin": [
+    -96.80665,
+    32.78689
+  ],
+  "height": 51.816,
+  "padM": 68,
+  "frontageBearing": 147,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local flat-map grade y=0; no terrain or sea-level elevation baked into mesh.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Morphosis 2012 museum; height 170 ft (51.816 m), mapped 45.3 × 47.7 m cube footprint. Striations, atrium cut, landscape roof and escalator proportions estimated from photos; casing approximately 150 ft. Opaque glass; interiors omitted. Cityscape and Full 3D world integration not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/perot-museum-near.glb",
+      "bytes": 1666912,
+      "triangles": 21570,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.032440185546875,
+          0,
+          -60.4130859375
+        ],
+        "max": [
+          81.9151611328125,
+          51.85124969482422,
+          96.0241928100586
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/perot-museum-far.glb",
+      "bytes": 473504,
+      "triangles": 6156,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -29.885560989379883,
+          0,
+          -60.4130859375
+        ],
+        "max": [
+          81.9151611328125,
+          51.85124969482422,
+          96.0241928100586
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/perot-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

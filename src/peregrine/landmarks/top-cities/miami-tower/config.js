@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'miami-tower', name: "Miami Tower", kind: 'building',
   ready: false,
-  origin: [-80.1912, 25.772],
-  height: 190,
+  origin: [-80.19143, 25.77219],
+  height: 190.5,
   padM: 60,
   frontageBearing: 0,
 };

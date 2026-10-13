@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'place-de-la-concorde-obelisk', name: "Place de la Concorde obelisk & fountains", kind: 'building',
   ready: false,
-  origin: [2.32125, 48.86556],
-  height: 23,
+  origin: [2.3211306, 48.8654765],
+  height: 33.37,
   padM: 60,
   frontageBearing: 0,
 };

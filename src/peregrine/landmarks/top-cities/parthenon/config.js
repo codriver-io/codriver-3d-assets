@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'parthenon', name: "Parthenon (Acropolis)", kind: 'building',
   ready: false,
-  origin: [23.7266, 37.9715],
-  height: 14,
+  origin: [23.72661765, 37.97150335],
+  height: 18.05,
   padM: 60,
   frontageBearing: 0,
 };

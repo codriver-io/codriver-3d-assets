@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'riverside-county-courthouse', name: "Riverside County Courthouse", kind: 'building',
   ready: false,
   origin: [-117.37557, 33.97923],
-  height: 30,
+  height: 20.7,
   padM: 60,
   frontageBearing: 0,
 };

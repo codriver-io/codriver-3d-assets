@@ -1,0 +1,162 @@
+{
+  "id": "centre-pompidou",
+  "name": "Centre Pompidou",
+  "kind": "building",
+  "origin": [
+    2.352443,
+    48.860534
+  ],
+  "height": 42,
+  "padM": 90,
+  "frontageBearing": 290,
+  "length": 166,
+  "width": 60,
+  "axisBearing": 20,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          2.3524482,
+          48.8597263
+        ],
+        [
+          2.3516571,
+          48.8599145
+        ],
+        [
+          2.3517209,
+          48.8600266
+        ],
+        [
+          2.3517841,
+          48.8601377
+        ],
+        [
+          2.3518157,
+          48.8601941
+        ],
+        [
+          2.3518464,
+          48.8602534
+        ],
+        [
+          2.3519063,
+          48.8603646
+        ],
+        [
+          2.3520483,
+          48.8606282
+        ],
+        [
+          2.3523037,
+          48.8611022
+        ],
+        [
+          2.3522469,
+          48.8611159
+        ],
+        [
+          2.3523016,
+          48.8612183
+        ],
+        [
+          2.3523307,
+          48.8612115
+        ],
+        [
+          2.3523617,
+          48.8612043
+        ],
+        [
+          2.3523468,
+          48.8611774
+        ],
+        [
+          2.3523692,
+          48.8611712
+        ],
+        [
+          2.3523948,
+          48.8612169
+        ],
+        [
+          2.3524551,
+          48.8613208
+        ],
+        [
+          2.3525717,
+          48.8612948
+        ],
+        [
+          2.3532219,
+          48.8611496
+        ],
+        [
+          2.3524482,
+          48.8597263
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        2.352443,
+        48.860534
+      ]
+    ],
+    "datum": "median",
+    "featherM": 5
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local building grade y=0; no DEM, altitude or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Official dimensions 166 × 60 × 42 m; mapped 20° axis baked into export. Frame sections, pipe routing, glazing, gerberettes and escalator landings are photo estimates. Opaque glass; temporary 2025–2030 renovation coverings omitted. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/centre-pompidou-near.glb",
+      "bytes": 1184080,
+      "triangles": 29868,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -54.419132232666016,
+          -7.629394644936838e-7,
+          -86.73236083984375
+        ],
+        "max": [
+          54.43857192993164,
+          41.9996337890625,
+          86.72528076171875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/centre-pompidou-far.glb",
+      "bytes": 491356,
+      "triangles": 11332,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -54.423641204833984,
+          -7.629394644936838e-7,
+          -86.73236083984375
+        ],
+        "max": [
+          54.43857192993164,
+          41.990882873535156,
+          86.72528076171875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/centre-pompidou/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
