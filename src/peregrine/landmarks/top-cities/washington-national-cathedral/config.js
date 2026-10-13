@@ -1,11 +1,5 @@
-// Washington National Cathedral: not yet released in the public library (stub).
-export const SPEC = {
-  id: 'washington-national-cathedral', name: "Washington National Cathedral", kind: 'building',
-  ready: false,
-  origin: [-77.07083,38.93056],
-  height: 91.7448,
-  padM: 60,
-  frontageBearing: 0,
-};
-export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
-export const MANIFEST = { elevationDatum: 'Local grade y=0.', attribution: 'Not yet released.', note: 'Stub: not yet released.' };
+import { FOOTPRINTS } from './footprint.js';
+// Official Fun Facts: 301 ft crossing tower, 234 ft west towers.
+export const SPEC={id:'washington-national-cathedral',name:'Washington National Cathedral',kind:'building',ready:true,origin:[-77.07083,38.93056],height:91.7448,westHeight:71.3232,padM:88,frontageBearing:249.83,terrainPad:{rings:FOOTPRINTS,refs:[[-77.07163,38.93030],[-77.07065,38.93050],[-77.07008,38.93073]],datum:'median',featherM:12}};
+export const PALETTES={light:{stone:'#bcbab0',archshade:'#9c9a90',roof:'#8a9294',glass:'#344149',recess:'#302f2b'},dark:{stone:'#727a82',archshade:'#535a60',roof:'#4e5b66',glass:'#233442',recess:'#222b31'}};
+export const MANIFEST={elevationDatum:'Rigid cathedral pavement y=0; no Mount St Alban altitude or terrain exaggeration baked in.',attribution:'Original procedural geometry authored for Codriver. Geographic data © OpenStreetMap contributors (ODbL 1.0), https://www.openstreetmap.org/copyright',note:'Official tower heights; mapped plan and bearing; estimated exterior roofs, windows, sculpture and annex massing; deep west archivolts, paired recessed blind arches, seven-bay gallery and closed petal/trefoil roses retained in both LODs. Temporary scaffolding omitted. Cityscape and Full 3D world not tested yet; integration checked separately, including hillside median-pad footing.'};

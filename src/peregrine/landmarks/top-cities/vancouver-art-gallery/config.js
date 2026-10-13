@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'vancouver-art-gallery', name: "Vancouver Art Gallery (Robson Square)", kind: 'building',
   ready: false,
   origin: [-123.12046, 49.28287],
-  height: 25,
+  height: 26.5,
   padM: 60,
   frontageBearing: 0,
 };

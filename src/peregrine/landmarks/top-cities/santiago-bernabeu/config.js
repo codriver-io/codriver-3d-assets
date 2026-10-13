@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'santiago-bernabeu', name: "Estadio Santiago Bernabéu", kind: 'building',
   ready: false,
-  origin: [-3.68835, 40.45306],
+  origin: [-3.688285777870803, 40.45305475547995],
   height: 60,
   padM: 60,
   frontageBearing: 0,

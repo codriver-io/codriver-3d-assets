@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'pont-de-bercy', name: "Pont de Bercy", kind: 'bridge',
   ready: false,
-  origin: [2.375, 48.83806],
-  height: 15,
+  origin: [2.37483975, 48.838030125],
+  height: 15.35,
   padM: 60,
   frontageBearing: 0,
 };

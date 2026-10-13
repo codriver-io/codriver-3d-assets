@@ -1,0 +1,135 @@
+{
+  "id": "porsche-museum",
+  "name": "Porsche Museum",
+  "kind": "building",
+  "origin": [
+    9.152559010518338,
+    48.83422261502164
+  ],
+  "height": 23,
+  "padM": 85,
+  "frontageBearing": 355,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          9.1515927,
+          48.8340345
+        ],
+        [
+          9.1519705,
+          48.8345625
+        ],
+        [
+          9.1525343,
+          48.8345958
+        ],
+        [
+          9.1537593,
+          48.8339667
+        ],
+        [
+          9.1532976,
+          48.8339015
+        ],
+        [
+          9.1526423,
+          48.8340119
+        ],
+        [
+          9.1517273,
+          48.8340316
+        ],
+        [
+          9.1515927,
+          48.8340345
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        9.1515927,
+        48.8340345
+      ],
+      [
+        9.1519705,
+        48.8345625
+      ],
+      [
+        9.1525343,
+        48.8345958
+      ],
+      [
+        9.1537593,
+        48.8339667
+      ],
+      [
+        9.1532976,
+        48.8339015
+      ],
+      [
+        9.1526423,
+        48.8340119
+      ],
+      [
+        9.1517273,
+        48.8340316
+      ]
+    ],
+    "datum": "median",
+    "featherM": 6
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no terrain or absolute elevation baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Porsche publishes 23 m height, maximum 10 m undercroft and three V-shaped supports. Provider envelope is mapped separately; the shorter-wing exhibition shell, support positions, taper, base building, glazing bays and roof terrace are photographic estimates. Rotation baked into east/up/south coordinates.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/porsche-museum-near.glb",
+      "bytes": 554092,
+      "triangles": 6992,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -57,
+          0,
+          -39.86000061035156
+        ],
+        "max": [
+          58,
+          23,
+          32
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/porsche-museum-far.glb",
+      "bytes": 48932,
+      "triangles": 542,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -57,
+          0,
+          -39.86000061035156
+        ],
+        "max": [
+          58,
+          23,
+          32
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/porsche-museum/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

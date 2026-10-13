@@ -1,2 +1,4 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// No building extrusions are replaced; mainline road corridor ownership is in PROFILE.
+export const FOOTPRINTS=[];
+export const OSM_WAYS=[256221932,361504160,131559717,1211141308,36747909,35354556,1060103924,389809706,548624436,389809697,389809703,389809700,259650436,36747880,36747879,389809707,548624433,35354565,1274849639,389809708,389809699,24885827,76146115];
+// © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright

@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'atlanta-city-hall', name: "Atlanta City Hall", kind: 'building',
   ready: false,
   origin: [-84.39028, 33.74889],
-  height: 72,
+  height: 66.6,
   padM: 60,
   frontageBearing: 0,
 };

@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'ut-tower', name: "University of Texas Tower", kind: 'building',
   ready: false,
-  origin: [-97.7393, 30.2861],
-  height: 94,
+  origin: [-97.7393684,30.2862733],
+  height: 307,
   padM: 60,
   frontageBearing: 0,
 };

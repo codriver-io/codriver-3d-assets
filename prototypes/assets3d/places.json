@@ -102,6 +102,10 @@
     "region": "Ohio",
     "continent": "North America"
   },
+  "Copenhagen": {
+    "country": "Denmark",
+    "continent": "Europe"
+  },
   "Dallas": {
     "country": "United States",
     "region": "Texas",
@@ -406,5 +410,9 @@
     "country": "Canada",
     "region": "Manitoba",
     "continent": "North America"
+  },
+  "Yerevan": {
+    "country": "Armenia",
+    "continent": "Asia"
   }
 }

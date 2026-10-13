@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'belem-tower', name: "Belém Tower", kind: 'building',
   ready: false,
-  origin: [-9.21611, 38.69167],
+  origin: [-9.2159, 38.6917215],
   height: 30,
   padM: 60,
   frontageBearing: 0,

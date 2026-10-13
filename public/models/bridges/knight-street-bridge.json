@@ -1,0 +1,69 @@
+{
+  "id": "knight-street-bridge",
+  "name": "Knight Street Bridge",
+  "kind": "bridge",
+  "origin": [
+    -123.07752,
+    49.20408
+  ],
+  "height": 34.4,
+  "padM": 1200,
+  "frontageBearing": 180,
+  "rangeM": 4500,
+  "nearM": 1800,
+  "footprintless": true,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat map grade/visual low-water datum; estimated south deck crown 25.5 m, girder crown clearance 23.3 m. No DEM or latitude scaling baked in; absolute-deck runtime fits approaches and support feet.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1974 parallel prestressed-concrete cantilever structures, not steel box girders. Published north/south lengths 238/1198 m and 109.7 m main span. Estimated deck sections, pier stations/spacing, widths from mapped carriageway separation and aerial proportions, lamp fittings and water datum. Marine Drive overpass and detached interchange loops are not modeled. Near paint only; landing noses taper and fit provider width.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/knight-street-bridge-near.glb",
+      "bytes": 2379440,
+      "triangles": 65348,
+      "drawCalls": 18,
+      "bounds": {
+        "min": [
+          -10.006032943725586,
+          -0.8999999761581421,
+          -745.4774780273438
+        ],
+        "max": [
+          40.20079803466797,
+          34.439998626708984,
+          1139.9169921875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/knight-street-bridge-far.glb",
+      "bytes": 879820,
+      "triangles": 27644,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -10.006032943725586,
+          -0.8999999761581421,
+          -745.4774780273438
+        ],
+        "max": [
+          40.176910400390625,
+          34.439998626708984,
+          1139.9169921875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/knight-street-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

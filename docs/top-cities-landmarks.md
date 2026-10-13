@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (177 released)
+## The collection (187 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -185,6 +185,16 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `queen-elizabeth-ii-bridge` | Queen Elizabeth II Bridge (Dartford Crossing) | Dartford | bridge, road-fitted |
 | `uspenski-cathedral` | Uspenski Cathedral | Helsinki | building |
 | `catedral-de-la-almudena` | Catedral de la Almudena | Madrid | building |
+| `cec-palace` | CEC Palace | Bucharest | building |
+| `centre-pompidou` | Centre Pompidou | Paris | building |
+| `knight-street-bridge` | Knight Street Bridge | Vancouver | bridge, road-fitted |
+| `mucem` | MuCEM & Fort Saint-Jean | Marseille | building |
+| `perot-museum` | Perot Museum of Nature and Science | Dallas | building |
+| `porsche-museum` | Porsche Museum | Stuttgart | building |
+| `washington-national-cathedral` | Washington National Cathedral | Washington | building |
+| `yerevan-cascade` | Yerevan Cascade | Yerevan | building |
+| `oresund-bridge` | Øresund Bridge | Copenhagen | bridge, road-fitted |
+| `sixth-street-viaduct` | Sixth Street Viaduct | Los Angeles | bridge, road-fitted |
 
 ## A landmark is a folder
 

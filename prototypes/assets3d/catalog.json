@@ -26413,6 +26413,884 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cec-palace",
+      "name": "CEC Palace",
+      "kind": "building",
+      "location": "Bucharest, Romania",
+      "status": "ready",
+      "description": "Original procedural model of the 1900 Beaux-Arts savings-bank palace, with its central glazed dome, four Renaissance corner domes and paired-column entrance arch.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cec-palace/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cec-palace",
+        "provenance": "Original procedural Three.js geometry by Codriver (2026-10-13), model CC BY 4.0, code MIT; no third-party mesh or texture. Mapped plan and building-part tags © OpenStreetMap contributors, ODbL 1.0. Photo references only: Diego Delso, Palacio CEC 2016-05-29 DD 91-93 HDR, CC BY-SA 4.0; Tiberiu Neag, Palatul Casei de Depuneri Consemnațiuni și Economie Bucuresti, CC BY-SA 3.0 ro; Sailko, Bucarest palazzo della cassa di risparmio 01, CC BY-SA 3.0. Reference images retained only in ignored scratch.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/CEC_Palace"
+          },
+          {
+            "label": "OSM palace outline and building parts",
+            "url": "https://www.openstreetmap.org/way/973712798"
+          },
+          {
+            "label": "Diego Delso night facade (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palacio_CEC,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_91-93_HDR.jpg"
+          },
+          {
+            "label": "Tiberiu Neag entrance (CC BY-SA 3.0 ro)",
+            "url": "https://commons.wikimedia.org/wiki/File:Palatul_Casei_de_Depuneri,_Consemna%C8%9Biuni_%C8%99i_Economie_Bucuresti.jpg"
+          },
+          {
+            "label": "Sailko oblique facade (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bucarest,_palazzo_della_cassa_di_risparmio,_01.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cec-palace/geometry.js"
+      },
+      "notes": "Rigid grade-based foundation. Rear ornament, carving, lantern sculpture and glazing are simplified; dimensions other than the OSM plan are unsurveyed estimates. No textures, interiors or reference photographs shipped.",
+      "documentation": "docs/assets/top-cities-cec-palace.md",
+      "manifest": "/models/buildings/cec-palace.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=cec-palace",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cec-palace&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=cec-palace&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=cec-palace&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=cec-palace&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=cec-palace&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=cec-palace&view=detail"
+          }
+        ]
+      },
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "centre-pompidou",
+      "name": "Centre Pompidou",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural model of Piano and Rogers’ exposed steel Paris museum: white frame, colour-coded services and west Chenille escalator.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/centre-pompidou/geometry.js",
+        "build": "pnpm build:top-cities-landmarks centre-pompidou",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13; no external meshes or textures. OSM way 55503397 © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: Pompidou Centre building technology, Reinraum, CC BY-SA 3.0; Paris 75004 Place Igor-Stravinsky Fountain 01b, ChrisSampson87, CC BY-SA 4.0; 0 Centre Georges-Pompidou - 1986 Paris, Jean-Pol GRANDMONT, CC BY 4.0. Official aerial photo © Julien Fromentin and Chenille detail © Manuel Braun 2018, copyright reserved, retained only in ignored tmp. Unrelated dossier photos 1,4,5 excluded.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Centre_Pompidou"
+          },
+          {
+            "label": "Official architecture: dimensions, colour code and renovation",
+            "url": "https://www.centrepompidou.fr/en/centre-pompidou-is-transforming-itself/an-iconic-architecture"
+          },
+          {
+            "label": "Mapped museum envelope",
+            "url": "https://www.openstreetmap.org/way/55503397"
+          },
+          {
+            "label": "Service facade photograph — Reinraum, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pompidou_Centre_building_technology.jpg"
+          },
+          {
+            "label": "Paris south facade — ChrisSampson87, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_75004_Place_Igor-Stravinsky_Fountain_01b.jpg"
+          },
+          {
+            "label": "Chenille interior — Jean-Pol GRANDMONT, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:0_Centre_Georges-Pompidou_-_1986_Paris.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/centre-pompidou/geometry.js"
+      },
+      "notes": "Opaque glass, estimated service routing and support sections. Permanent pre-renovation exterior represented; temporary construction coverings omitted. Piazza slope and detached chimneys excluded from this museum-only replacement.",
+      "documentation": "docs/assets/top-cities-centre-pompidou.md",
+      "manifest": "/models/buildings/centre-pompidou.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=centre-pompidou",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=centre-pompidou&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=centre-pompidou&view=facade"
+          },
+          {
+            "label": "Services",
+            "url": "/asset-preview.html?asset=centre-pompidou&view=services"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=centre-pompidou&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=centre-pompidou&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=centre-pompidou&view=detail"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "knight-street-bridge",
+      "name": "Knight Street Bridge",
+      "kind": "bridge",
+      "city": "Vancouver",
+      "location": "Vancouver–Mitchell Island–Richmond, British Columbia",
+      "status": "ready",
+      "description": "Original 1974 parallel concrete cantilever bridges with a four-lane south crossing, six-lane north crossing, haunched girders, main-span hump and repeated concrete piers.",
+      "manifest": "/models/bridges/knight-street-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/knight-street-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks knight-street-bridge --no-check",
+        "provenance": "Original procedural geometry, October 2026; no third-party mesh or texture. Alignment © OpenStreetMap contributors, ODbL 1.0. Visual references: Fujitariuji and Robert Linsdell (CC BY 2.0), formulanone (CC BY-SA 2.0); supplied Commons credits retained. Richmond News underside photograph is copyright reference only, held in ignored scratch and never redistributed.",
+        "references": [
+          {
+            "label": "TSB marine investigation: twin concrete cantilevers and 23.3 m low-water clearance",
+            "url": "https://www.bst.gc.ca/eng/rapports-reports/marine/2000/m00w0005/m00w0005.html"
+          },
+          {
+            "label": "TransLink: current identity, 1974 opening and 1.4 km crossing",
+            "url": "https://www.translink.ca/plans-and-projects/projects/maintenance-and-upgrade-program/bridge-projects"
+          },
+          {
+            "label": "Identity, 238/1198 m structures and 109.7 m span",
+            "url": "https://en.wikipedia.org/wiki/Knight_Street_Bridge"
+          },
+          {
+            "label": "Mapped south roadway",
+            "url": "https://www.openstreetmap.org/way/389809699"
+          },
+          {
+            "label": "Fujitariuji: roadway photograph, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Knight_Street_Bridge.jpg"
+          },
+          {
+            "label": "Robert Linsdell: aerial photograph, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Knight_St_Bridge_and_Fraser_River,_Richmond_(504727)_(23985428530).jpg"
+          },
+          {
+            "label": "formulanone: Mitchell Island exit, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Knight_Street_at_Exit_for_Mitchell_Island_(50736994048).jpg"
+          },
+          {
+            "label": "Richmond News: concrete piers and underside, reference only",
+            "url": "https://www.richmond-news.com/local-news/work-on-knight-street-bridge-in-richmond-below-deck-as-well-7319230"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/knight-street-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=knight-street-bridge&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=underside"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=detail"
+          },
+          {
+            "label": "north-landing",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=north-landing"
+          },
+          {
+            "label": "south-landing",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=south-landing"
+          },
+          {
+            "label": "Main span",
+            "url": "/asset-preview.html?asset=knight-street-bridge&view=main-span"
+          }
+        ]
+      },
+      "notes": "Published 238/1198 m north/south structure lengths, 109.7 m main span, concrete cantilever identity and 19–23.3 m tidal clearance. Widths, pier stations, girder sections, deck elevation and lamp dimensions are estimated. Marine Drive overpass and detached island/interchange ramp loops excluded. No restricted reference image ships. Shallow footings embed from −0.9 to −0.2 m; piers contact them below grade. Near 65348 triangles / 18 draws / 2323 KiB; far 27644 / 4 / 859 KiB. Independent review required before publication.",
+      "documentation": "docs/assets/top-cities-knight-street-bridge.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "mucem",
+      "name": "MuCEM & Fort Saint-Jean",
+      "kind": "building",
+      "location": "Marseille, France",
+      "status": "ready",
+      "description": "Original procedural J4 museum: dark cellular UHPC screens and glazed 52 m core, rooftop footbridge, stone Fort Saint-Jean ramparts, terraces and two historic towers.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/mucem/geometry.js",
+        "build": "pnpm build:top-cities-landmarks mucem",
+        "provenance": "Original procedural Three.js geometry authored 2026-10-13. Footprints and tower heights © OpenStreetMap contributors, ODbL 1.0. Reference photographs only in ignored scratch: Holger Uwe Schmitt, “Beeindruckende Architektur”. 5.jpg, CC BY-SA 4.0; Suwannee.payne, Fort Saint-Jean & Musée…, CC BY-SA 3.0; Houss 2020, Mucem Marseille 02/03, CC BY-SA 4.0; Bertrand SOUBEYRAND, Ben Mahi ed-Din Abd-el-Kader au Mucem 2022, CC BY-SA 4.0. No image content redistributed.",
+        "references": [
+          {
+            "label": "MuCEM official architecture: 72 m envelope, 52 m core, 19 m bridge",
+            "url": "https://mucem.org/en/the-architecture-of-the-mucem/"
+          },
+          {
+            "label": "OSM J4 footprint 168685674",
+            "url": "https://www.openstreetmap.org/way/168685674"
+          },
+          {
+            "label": "OSM Tour du Roi René",
+            "url": "https://www.openstreetmap.org/way/67714466"
+          },
+          {
+            "label": "Reference — Suwannee.payne, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fort_Saint-Jean%26Mus%C3%A9e_des_civilisations_de_l%27Europe_et_de_la_M%C3%A9diterran%C3%A9e.jpg"
+          },
+          {
+            "label": "Reference — Houss 2020, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mucem_Marseille_03.jpg"
+          },
+          {
+            "label": "Reference — Houss 2020, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mucem_Marseille_02.jpg"
+          },
+          {
+            "label": "Reference — Holger Uwe Schmitt, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:%22Beeindruckende_Architektur%22._5.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mucem/geometry.js"
+      },
+      "notes": "Original coarse lace topology rather than a copy of individual concrete panels; fort terrace height (17 m), roof heights, stone courses and interior wing details are estimates. Museum lattice extends up to 4 m beyond the cadastral glass envelope; authored envelope is also listed. No photos, textures or captured meshes shipped. Cityscape and Full 3D world not tested yet. Review b9a fixes: far uses 18×6 facade / 17×17 roof flat double-sided broad lace webs (39% planar concrete coverage), replacing the sparse cage. Harbour rampart and upper wings have 0.7 m-deep arched recesses; the southern court wing has a stone flat roof/parapet distinct from tiled chapel roofs. Individual lace cells and arches are original photographic approximations; no change to provider ownership.",
+      "documentation": "docs/assets/top-cities-mucem.md",
+      "manifest": "/models/buildings/mucem.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=mucem",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=mucem&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=mucem&view=facade"
+          },
+          {
+            "label": "Opposite",
+            "url": "/asset-preview.html?asset=mucem&view=opposite"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=mucem&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=mucem&view=detail"
+          },
+          {
+            "label": "Bridge",
+            "url": "/asset-preview.html?asset=mucem&view=bridge"
+          },
+          {
+            "label": "harbour",
+            "url": "/asset-preview.html?asset=mucem&view=harbour"
+          },
+          {
+            "label": "fort-detail",
+            "url": "/asset-preview.html?asset=mucem&view=fort-detail"
+          }
+        ]
+      },
+      "city": "Marseille",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "oresund-bridge",
+      "name": "Øresund Bridge",
+      "kind": "bridge",
+      "location": "Copenhagen, Denmark – Malmö, Sweden",
+      "status": "ready",
+      "description": "Original procedural Øresund E20 motorway/rail bridge: four independent tapered concrete pylons, paired harp stays, open double-deck steel truss and long approach viaducts.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/oresund-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks oresund-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-13; geographic alignment © OpenStreetMap contributors (ODbL 1.0). No photographs, scans, traced meshes or textures ship. Reference-only dossier images: 20191216 Oresundsbron fran Hyllie 0083, Johan Wessman / News Oresund, CC BY 2.0; Öresundbrücke - Ansicht von Klagshamn, Neptuul, CC BY-SA 4.0; Oresundsbron jarnvag 20140515 0252, Johan Wessman / News Oresund, CC BY 2.0; 20170601 Oresundsbron 0326, News Oresund, CC BY 2.0; 20191107 Oresundsforbindelsen 0271, News Oresund (Anna Palmehag/Jenny Andersson), Commons CC BY 2.0 (description additionally mentions CC BY 3.0); 20190613 Fågelliv på Pepparholm, News Oresund, CC BY 2.0. Dossier licence metadata, with the primary aerial file page checked.",
+        "references": [
+          {
+            "label": "Operator structure: four pylons, 160 stays, 203.5 m crown, 490 m span, 57 m clearance",
+            "url": "https://www.oresundsbron.com/en/about-oresundsbron/about-us/facts-about-oresundsbron/bridge-pylons-and-cable-stays"
+          },
+          {
+            "label": "Arup project: original design, road/rail crossing opened 2000",
+            "url": "https://www.arup.com/projects/oresund-link/"
+          },
+          {
+            "label": "Contemporary Royal Academy of Engineering: paired harp stays, pentagonal pylons and 45 m crossbeams",
+            "url": "https://www.ingenia.org.uk/articles/the-oeresund-bridge-linking-scandinavia-to-the-continent/"
+          },
+          {
+            "label": "Reference aerial, author/licence page checked",
+            "url": "https://commons.wikimedia.org/wiki/File:20191107_Oresundsforbindelsen_0271_(49042749191).jpg"
+          },
+          {
+            "label": "Mapped high bridge envelope",
+            "url": "https://www.openstreetmap.org/way/912575183"
+          },
+          {
+            "label": "Arup Journal 2/1996: 160/141 m side spans and approach span schedule",
+            "url": "https://www.arup.com/globalassets/downloads/arup-journal/the-arup-journal-1996-issue-2.pdf"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oresund-bridge/geometry.js"
+      },
+      "notes": "Original texture-free four-pylon paired-harp bridge; published 490 m span, 23.5 m width, 160 stays, rounded 204 m crown (operator 203.5 m), 57 m high-span soffit. Mapped 7833.822 m physical bridge; 8297.523 m with grade joins. Estimated sections, rail detail, pier rhythm and hardware; near 81,676 triangles / 19 draws / 3620 KiB, far 29,228 / 7 / 997 KiB. Export near/far light/dark inspected beside references; source/GLB and named member contacts verified, with a shortened cable negative case. Review b9b: both LODs use 0.115 m stay radius; four exact provider pylon outlines plus sixteen building parts are owned and reversibly masked. Each authored pylon is one closed concrete loft with upward crown and shared absolute-deck cap/side datum. Zero coplanar/layered pairs, back-face hits or depth cycles. Thin far stays yield eight surface-only endpoint candidates at y=85 m; each terminal is verified inside its named closed pylon (about 0.93 m below the skin, beyond the heuristic 0.75 m radius), with no free end. All 16 landmark and 614 registry tests pass. Cityscape/world app shots and height tables in docs; 6–16 HD snapshot overlay draws, max 39,326 triangles / 1,535,796 bytes of geometry buffers. Own world cut-datum adapter; no shared runtime extension. Fresh live upstream lanes unavailable; full active navigation, independent release review and hardware remain separate.",
+      "documentation": "docs/assets/top-cities-oresund-bridge.md",
+      "manifest": "/models/bridges/oresund-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=oresund-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=oresund-bridge&view=underside"
+          }
+        ]
+      },
+      "city": "Copenhagen",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "perot-museum",
+      "name": "Perot Museum of Nature and Science",
+      "kind": "building",
+      "location": "Dallas, Texas",
+      "status": "ready",
+      "description": "Morphosis 2012 museum: striated concrete cube over a recessed glass base and landscaped plinth, with a diagonal cantilevered glass escalator casing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/perot-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks perot-museum --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13. No external mesh or texture. Museum podium/cube/entrance roof ways 618964796, 1188705976, 1188705975 from provided OSM dossier, © OpenStreetMap contributors ODbL 1.0. References inspected: Joe Mabel, Perot Museum of Nature and Science pano 02 (CC BY-SA 3.0); Paul M. Budd, exterior of Escalator (CC BY-SA 4.0); ScheWo, 20230312 exterior view from southeast (CC BY-SA 4.0). Photographs retained only in ignored tmp.",
+        "references": [
+          {
+            "label": "Morphosis, museum massing and escalator",
+            "url": "https://www.morphosis-architects.com/projects/perot-museum-of-nature-and-science"
+          },
+          {
+            "label": "CRSI, six stories and 170-foot height",
+            "url": "https://www.crsi.org/case-studies/perot-museum-of-nature-science/"
+          },
+          {
+            "label": "OSM cube way 1188705976",
+            "url": "https://www.openstreetmap.org/way/1188705976"
+          },
+          {
+            "label": "OSM podium way 618964796",
+            "url": "https://www.openstreetmap.org/way/618964796"
+          },
+          {
+            "label": "OSM entrance roof way 1188705975",
+            "url": "https://www.openstreetmap.org/way/1188705975"
+          },
+          {
+            "label": "Joe Mabel, panorama, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Perot_Museum_of_Nature_and_Science_pano_02.jpg"
+          },
+          {
+            "label": "Paul M. Budd, escalator, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Perot_Museum_of_Nature_and_Science_exterior_of_Escalator.jpg"
+          },
+          {
+            "label": "ScheWo, southeast exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:20230312_ScheWo_Perot_Museum_in_Dallas,_Texas,_exterior_view_from_southeast.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/perot-museum/geometry.js"
+      },
+      "notes": "Height 170 ft (51.816 m) from CRSI; mapped cube plan 45.3 × 47.7 m. Casing about 150 ft; facade relief, triangular atrium cut, sparse slots, opaque glass and rolling planted podium are photographic approximations. Entrance canopy simplified. No interior, vegetation props or freeway. Hardware and terrain lifecycle not tested. Review b9a fixes: reduced landing aligned to the cartridge underside with an inclined beam rooted in the concrete facade; both remain inset from the glass sides. Lower relief now joins adjacent panels into continuous ridges, with subdued row contrast; narrow slots retained.",
+      "documentation": "docs/assets/top-cities-perot-museum.md",
+      "city": "Dallas",
+      "manifest": "/models/buildings/perot-museum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=perot-museum&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=perot-museum&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=perot-museum&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=perot-museum&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=perot-museum&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=perot-museum&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=perot-museum&view=detail"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "porsche-museum",
+      "name": "Porsche Museum",
+      "kind": "building",
+      "location": "Stuttgart-Zuffenhausen, Germany",
+      "status": "ready",
+      "description": "Original angular floating white museum, north glazed facade, three V-shaped concrete cores, open undercroft and low glazed base.",
+      "manifest": "/models/buildings/porsche-museum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/porsche-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks porsche-museum --no-check",
+        "provenance": "Original procedural geometry for Codriver, 2026-10-13; no imported meshes or textures. Mapped outline © OpenStreetMap contributors, ODbL 1.0. Ignored reference photographs: Porsche-Museum Main Entrance.JPG and Porsche-Museum in summer.JPG, RudolfSimon, CC BY-SA 3.0; Neues Porsche-Museum ... 2007 Foto Wolfgang Pehlemann DSCN8511.jpg, Wolfgang Pehlemann, CC BY-SA 3.0 de; Porsche-Museum in Stuttgart-Zuffenhausen 03.jpg, Giftzwerg 88, CC BY-SA 3.0. Photographs used for visual comparison only.",
+        "references": [
+          {
+            "label": "Porsche official architecture and building data",
+            "url": "https://newsroom.porsche.com/en/press-kits/Porsche-Museum/Architektur-als-Erlebnis.html"
+          },
+          {
+            "label": "Facade supplier: white aluminium rhomboids",
+            "url": "https://www.ebener.de/en/referenzen/porsche-museum-2/"
+          },
+          {
+            "label": "Daytime entrance: RudolfSimon, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Porsche-Museum_in_summer.JPG"
+          },
+          {
+            "label": "North facade at night: RudolfSimon, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Porsche-Museum_Main_Entrance.JPG"
+          },
+          {
+            "label": "Soffit detail: Giftzwerg 88, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Porsche-Museum_in_Stuttgart-Zuffenhausen_03.jpg"
+          },
+          {
+            "label": "OSM complete museum envelope",
+            "url": "https://www.openstreetmap.org/way/30698972"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/porsche-museum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=porsche-museum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=porsche-museum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=porsche-museum&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=porsche-museum&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=porsche-museum&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=porsche-museum&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=porsche-museum&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=porsche-museum&view=top"
+          }
+        ]
+      },
+      "notes": "North-frontage b9a FIX addressed: visible shell is fitted separately from unchanged OSM provider ownership, with shorter white wings and 56.7% projected north glazing in the summer-photo camera. Upper stair terminal refitted to the reshaped soffit; all three V cores and clear undercroft retained in both LODs. Roof slope, shell dimensions, supports, base, terrace and glazing bays remain photographic estimates. Individual rhomboids are seam partitions; soffit is opaque silver, interiors and surrounding campus structures excluded. Current exports await lead app recapture in both modes and independent re-review.",
+      "documentation": "docs/assets/top-cities-porsche-museum.md",
+      "city": "Stuttgart",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "sixth-street-viaduct",
+      "name": "Sixth Street Viaduct",
+      "kind": "bridge",
+      "location": "Los Angeles, California",
+      "status": "ready",
+      "description": "Original procedural 2022 Ribbon of Light: ten pairs of outward-canted concrete network arches, eighteen Y-bents, protected bike lanes, mapped western descent and open eastern helical bicycle ramp in both LODs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/sixth-street-viaduct/geometry.js",
+        "build": "pnpm build:top-cities-landmarks sixth-street-viaduct",
+        "provenance": "Original procedural mesh by Codriver; alignment © OpenStreetMap contributors (ODbL 1.0). Reference-only study: Sixth Street Viaduct from northeast, Spaghettifier, CC BY-SA 4.0 (Commons); two HNTB project photographs (night roadway and side arches), gallery photographer/licence unspecified, all original rights retained, not redistributed. Historical 1932 dossier images and artwork were not used as geometry references. Access-ramp alignments copied from the supplied OSM dossier. Additional reference-only exterior study: HNTB designer gallery HN_6ST_072622_2091-Pano, and Michael Maltzan Architecture project image 8.-6th-Street-Bridge-22-06-MMA-7648; photographer/licence not specified on the galleries, all rights retained and images not redistributed.",
+        "references": [
+          {
+            "label": "HNTB project fact sheet — current bridge dimensions",
+            "url": "https://www.hntb.com/press_release/project-fact-sheet-sixth-street-viaduct-replacement/"
+          },
+          {
+            "label": "HNTB project — current bridge and reference photographs",
+            "url": "https://www.hntb.com/projects/sixth-street-viaduct-replacement/"
+          },
+          {
+            "label": "City of Los Angeles Bureau of Engineering",
+            "url": "https://engineering.lacity.gov/about-us/major-projects/sixth-street-viaduct-replacement-project"
+          },
+          {
+            "label": "Sixth Street Viaduct from northeast — Spaghettifier, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Sixth_Street_Viaduct_from_northeast.jpg"
+          },
+          {
+            "label": "HNTB designer: two bike ramps and four-level east helix",
+            "url": "https://www.hntb.com/designer/a-star-is-reborn/"
+          },
+          {
+            "label": "Michael Maltzan Architecture: west/east bicycle access",
+            "url": "https://www.mmaltzan.com/projects/sixth-street-viaduct/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/sixth-street-viaduct/geometry.js"
+      },
+      "notes": "HNTB published dimensions govern. Arch stations, rib/deck and Y-bent sections and absolute world datum are estimates; HNTB typical-span 200 ft conflicts with city 300 ft. Both bicycle access silhouettes follow mapped OSM geometry, with estimated interpolated grades, supports and 3.66 m path widths. Published ramp-only lengths differ from the mapped approach-inclusive access paths. Pedestrian stairs and PARC furniture remain omitted. The fx2a correction narrows terminal shoulders to 15 cm and lowers rail ends to street grade. Separate recessed carriageway and shoulder slabs prevent terrain shoulders bridging into the road; 5 m terminal carriageway sampling keeps both LODs below HD pavement. Connected street pavement covers buried end caps in the late surface pass; final world crossfall meets the DEM at both kerbs without a centreline clamp. Pavement bias fades to grade at the toes, and actual HD centre/dash paint is retained in the late marks batch outside the cuts with 10 cm clearance above rendered pavement. Terrain fallback asphalt is kept below resident HD pavement at vertex and triangle-interior probes and restores on HD/mode/coverage changes. The source junction paint clearances remain intact. No photos, textures or external meshes ship.",
+      "documentation": "docs/assets/top-cities-sixth-street-viaduct.md",
+      "manifest": "/models/bridges/sixth-street-viaduct.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=sixth-street-viaduct",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=detail"
+          },
+          {
+            "label": "Bicycle helix",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=helix"
+          },
+          {
+            "label": "Western bicycle descent",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=westAccess"
+          },
+          {
+            "label": "West street landing",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=westLanding"
+          },
+          {
+            "label": "East street landing",
+            "url": "/asset-preview.html?asset=sixth-street-viaduct&view=eastLanding"
+          }
+        ]
+      },
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "washington-national-cathedral",
+      "name": "Washington National Cathedral",
+      "kind": "building",
+      "location": "Washington, D.C.",
+      "status": "ready",
+      "description": "Original Neo-Gothic cathedral with dominant Gloria in Excelsis crossing tower, paired west towers, rose windows, long nave, flying buttresses, pinnacles and open cloister court.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/washington-national-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks washington-national-cathedral",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-13; no scans, traced mesh, photographic textures or retained imagery shipped. Mapped plan © OpenStreetMap contributors, ODbL 1.0. Reference-only photos: Washington National Cathedral Front, S E Brendel, CC BY 3.0; Washington National Cathedral Looking SE, Duane Lempke, CC0; historic construction views, Harris & Ewing, public domain (ignored dossier).",
+        "references": [
+          {
+            "label": "Official dimensions and tower heights",
+            "url": "https://cathedral.org/discover/fun-facts/"
+          },
+          {
+            "label": "Official tour guide: Indiana limestone and Gothic structure",
+            "url": "https://cathedral.org/wp-content/uploads/2024/02/Tour-Guide-English-.pdf"
+          },
+          {
+            "label": "OSM cathedral multipolygon",
+            "url": "https://www.openstreetmap.org/relation/2682714"
+          },
+          {
+            "label": "West facade; S E Brendel, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Washington_National_Cathedral_Front.jpg"
+          },
+          {
+            "label": "Aerial looking SE; Duane Lempke, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Washington_National_Cathedral_Looking_SE.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-national-cathedral/geometry.js"
+      },
+      "manifest": "/models/buildings/washington-national-cathedral.json",
+      "documentation": "docs/assets/top-cities-washington-national-cathedral.md",
+      "inspection": {
+        "url": "/asset-preview.html?asset=washington-national-cathedral",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=back"
+          },
+          {
+            "label": "north",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=north"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=washington-national-cathedral&view=detail"
+          }
+        ]
+      },
+      "notes": "Official tower heights; estimated architectural detail. Rebuilt west archivolts and paired blind arches with more than 1.3 m recessed backing, retained all seven gallery lancets and projecting divisions in both LODs, and replaced spoke roses with merged petal/trefoil tracery. Far omits invisible wall rear caps and secondary archivolt tiers to keep headroom. No interior, exact stained-glass pictures or individual sculptural likeness. Final review-fix exports: near 30581 triangles / 5 draws / 1485760 bytes; far 9602 triangles / 5 draws / 486332 bytes. Deterministic QA clean and no material-cycle edges dropped.",
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "yerevan-cascade",
+      "name": "Yerevan Cascade",
+      "kind": "building",
+      "location": "Yerevan, Armenia",
+      "status": "ready",
+      "description": "Original five-tier white monumental stairway with paired flights, garden terraces, fan fountain reliefs, recessed arched gallery glazing and unfinished concrete summit.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/yerevan-cascade/geometry.js",
+        "build": "pnpm build:top-cities-landmarks yerevan-cascade --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13. Geographic placement © OpenStreetMap contributors (ODbL 1.0), attraction way 83688503 and mapped stair paths. No external mesh or photo texture. Reference-only Commons images: Yerevan Cascade, Armenia by Petar Milošević (CC BY-SA 4.0); Cascada, Ereván, Armenia, 2016-10-03, DD 18/19/20 by Diego Delso (CC BY-SA 4.0); Yerevan, Divers, Statue, Cascade of Yerevan, Armenia and Yerevan, Cascade of Yerevan, Art, Armenia by Vyacheslav Argenberg (CC BY 4.0). Photos retained only in ignored dossier.",
+        "references": [
+          {
+            "label": "Cafesjian Center — published statistics",
+            "url": "https://www.cca.am/The-Cascade-Complex"
+          },
+          {
+            "label": "Visit Yerevan — Cascade",
+            "url": "https://www.visityerevan.am/places/details/700/en/"
+          },
+          {
+            "label": "OSM mapped attraction; not a building extrusion",
+            "url": "https://www.openstreetmap.org/way/83688503"
+          },
+          {
+            "label": "Wikipedia — Yerevan Cascade",
+            "url": "https://en.wikipedia.org/wiki/Yerevan_Cascade"
+          },
+          {
+            "label": "File:Yerevan Cascade, Armenia.jpg — Petar Milošević, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Yerevan_Cascade,_Armenia.jpg"
+          },
+          {
+            "label": "File:Cascada, Ereván, Armenia, 2016-10-03, DD 18.jpg — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cascada,_Erev%C3%A1n,_Armenia,_2016-10-03,_DD_18.jpg"
+          },
+          {
+            "label": "File:Cascada, Ereván, Armenia, 2016-10-03, DD 19.jpg — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cascada,_Erev%C3%A1n,_Armenia,_2016-10-03,_DD_19.jpg"
+          },
+          {
+            "label": "File:Cascada, Ereván, Armenia, 2016-10-03, DD 20.jpg — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cascada,_Erev%C3%A1n,_Armenia,_2016-10-03,_DD_20.jpg"
+          },
+          {
+            "label": "File:Yerevan, Divers, Statue, Cascade of Yerevan, Armenia.jpg — Vyacheslav Argenberg, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Yerevan,_Divers,_Statue,_Cascade_of_Yerevan,_Armenia.jpg"
+          },
+          {
+            "label": "File:Yerevan, Cascade of Yerevan, Art, Armenia.jpg — Vyacheslav Argenberg, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Yerevan,_Cascade_of_Yerevan,_Art,_Armenia.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/yerevan-cascade/geometry.js"
+      },
+      "manifest": "/models/buildings/yerevan-cascade.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=yerevan-cascade",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=yerevan-cascade&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=yerevan-cascade&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=yerevan-cascade&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=yerevan-cascade&view=back"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=yerevan-cascade&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=yerevan-cascade&view=detail"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-yerevan-cascade.md",
+      "notes": "Published 50 m width and 302 m inclined route; mapped horizontal extent 286.5 m, estimated terrace rises 0/8/24/40/55/69/78 m unchanged. Replaced the y=0 limestone wedge with six bounded gallery/stair shells on stepped planted retaining tiers (each no taller than 8 m) for Cityscape. World buries that authored base below owned terrain pads and shortens limestone support feet to local pad contacts through exported terrainOffsets. Twelve 50 m-wide floor/flight pad rings cover the entire 286.5 m run (14325 m²), with upper targets 1 m below structural levels, bottom target 0, and 3 m feathers. No DEM or absolute altitude is baked into geometry. Full museum interiors, copyrighted sculptures and the separate Monument Terrace excluded. Final review-fix exports: near 21609 triangles / 7 draws / 941460 bytes; far 8531 triangles / 7 draws / 456288 bytes. Deterministic QA clean and no material-cycle edges dropped.",
+      "city": "Yerevan",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
