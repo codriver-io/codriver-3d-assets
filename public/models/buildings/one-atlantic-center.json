@@ -1,0 +1,66 @@
+{
+  "id": "one-atlantic-center",
+  "name": "One Atlantic Center",
+  "kind": "building",
+  "origin": [
+    -84.38736845,
+    33.7870797
+  ],
+  "height": 250,
+  "padM": 39,
+  "frontageBearing": 89.8,
+  "rotationDeg": -0.17,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local pavement datum y=0; no terrain height or geographic stretch baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 250 m, 50 storeys, 1987, pink Spanish granite, copper pyramid and gold peak. Mapped: 52 m stepped envelope and 33 m central roof part. Estimated: facade bays, floor heights, 198–218 m Gothic crown, 218–242.5 m pyramid, open lantern and finial to 250 m. Adjacent parking decks, landscape and separate buildings are omitted. Cityscape and Full 3D world not tested; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/one-atlantic-center-near.glb",
+      "bytes": 1947648,
+      "triangles": 36574,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -25.617000579833984,
+          0,
+          -25.47800064086914
+        ],
+        "max": [
+          25.617000579833984,
+          250,
+          25.47800064086914
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/one-atlantic-center-far.glb",
+      "bytes": 436036,
+      "triangles": 8582,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -25.617000579833984,
+          0,
+          -25.47800064086914
+        ],
+        "max": [
+          25.617000579833984,
+          250,
+          25.47800064086914
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/one-atlantic-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

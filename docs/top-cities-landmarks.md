@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (158 released)
+## The collection (166 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -166,6 +166,14 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `samuel-beckett-bridge` | Samuel Beckett Bridge | Dublin | bridge, road-fitted |
 | `fairmont-hotel-vancouver` | Fairmont Hotel Vancouver | Vancouver | building |
 | `pennybacker-bridge` | Pennybacker Bridge (Loop 360) | Austin | bridge, road-fitted |
+| `walt-disney-concert-hall` | Walt Disney Concert Hall | Los Angeles | building |
+| `one-atlantic-center` | One Atlantic Center | Atlanta | building |
+| `cambie-bridge` | Cambie Bridge | Vancouver | bridge, road-fitted |
+| `estadio-nacional-costa-rica` | Estadio Nacional de Costa Rica | San José | building |
+| `atomium` | Atomium | Brussels | building |
+| `chords-bridge` | Chords Bridge | Jerusalem | bridge |
+| `bob-kerrey-pedestrian-bridge` | Bob Kerrey Pedestrian Bridge | Omaha | bridge |
+| `plant-hall-tampa` | Plant Hall (University of Tampa) | Tampa | building |
 
 ## A landmark is a folder
 

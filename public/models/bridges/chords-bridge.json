@@ -1,0 +1,66 @@
+{
+  "id": "chords-bridge",
+  "name": "Chords Bridge",
+  "kind": "bridge",
+  "origin": [
+    35.2,
+    31.789
+  ],
+  "height": 118,
+  "padM": 220,
+  "frontageBearing": 10,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0; deck nominally 7 m above grade, an estimate; no DEM/ASL baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "118 m mast and 66 stays; 360 m approach-inclusive deck, 14.82 m width. Section, mast lean, attachment distribution and ramp extensions estimated; not vehicle-fitted.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/chords-bridge-near.glb",
+      "bytes": 1002292,
+      "triangles": 26642,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -61.285343170166016,
+          0,
+          -22.465961456298828
+        ],
+        "max": [
+          160.24281311035156,
+          118,
+          182.13348388671875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/chords-bridge-far.glb",
+      "bytes": 207596,
+      "triangles": 6394,
+      "drawCalls": 10,
+      "bounds": {
+        "min": [
+          -61.285343170166016,
+          0,
+          -22.465961456298828
+        ],
+        "max": [
+          160.24281311035156,
+          118,
+          182.13348388671875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chords-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

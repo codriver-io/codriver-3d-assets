@@ -1,0 +1,68 @@
+{
+  "id": "atomium",
+  "name": "Atomium",
+  "kind": "building",
+  "origin": [
+    4.34151995,
+    50.894925
+  ],
+  "height": 102,
+  "padM": 54,
+  "frontageBearing": 181.02,
+  "sphereDiameter": 18,
+  "cubeEdge": 47,
+  "tubeDiameter": 3.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid flat grade y=0; no DEM, sea level or latitude stretch baked into the mesh.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Nine 18 m spheres, a regular 47 m body-centred cube standing on one corner, twenty 3.3 m tubes; supports, windows and pavilion height are photo estimates. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/atomium-near.glb",
+      "bytes": 588928,
+      "triangles": 16464,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.369171142578125,
+          -5.9604645663569045e-9,
+          -42.57271957397461
+        ],
+        "max": [
+          47.369171142578125,
+          102,
+          42.57271957397461
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/atomium-far.glb",
+      "bytes": 296596,
+      "triangles": 7776,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.369171142578125,
+          -5.9604645663569045e-9,
+          -42.57271957397461
+        ],
+        "max": [
+          47.369171142578125,
+          102,
+          42.57271957397461
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/atomium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

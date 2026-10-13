@@ -57,6 +57,10 @@
     "country": "Colombia",
     "continent": "South America"
   },
+  "Brussels": {
+    "country": "Belgium",
+    "continent": "Europe"
+  },
   "Bucharest": {
     "country": "Romania",
     "continent": "Europe"
@@ -146,6 +150,10 @@
     "country": "United States",
     "region": "Texas",
     "continent": "North America"
+  },
+  "Jerusalem": {
+    "country": "Israel",
+    "continent": "Asia"
   },
   "Kansas City": {
     "country": "United States",
@@ -242,6 +250,11 @@
     "region": "Tennessee",
     "continent": "North America"
   },
+  "Omaha": {
+    "country": "United States",
+    "region": "Nebraska",
+    "continent": "North America"
+  },
   "Orlando": {
     "country": "United States",
     "region": "Florida",
@@ -316,6 +329,11 @@
   "Stuttgart": {
     "country": "Germany",
     "continent": "Europe"
+  },
+  "Tampa": {
+    "country": "United States",
+    "region": "Florida",
+    "continent": "North America"
   },
   "Toronto": {
     "country": "Canada",
