@@ -28920,6 +28920,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "saint-sophia-cathedral-kyiv",
+      "name": "Saint Sophia Cathedral",
+      "kind": "building",
+      "location": "Kyiv, Ukraine",
+      "status": "ready",
+      "description": "Original procedural white Ukrainian Baroque cathedral, clustered green and gold domes, exposed brick apses and separate 76 m blue-and-white pierced bell tower.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/saint-sophia-cathedral-kyiv/geometry.js",
+        "build": "pnpm build:top-cities-landmarks saint-sophia-cathedral-kyiv",
+        "provenance": "Original procedural authoring for Codriver, 2026-10-13. Mapped plan outlines © OpenStreetMap contributors, ODbL 1.0. Commons reference photographs compared only; none shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Saint_Sophia_Cathedral,_Kyiv"
+          },
+          {
+            "label": "Cathedral outline and building-part heights",
+            "url": "https://www.openstreetmap.org/way/27830282"
+          },
+          {
+            "label": "Separate bell tower and mapped tiers",
+            "url": "https://www.openstreetmap.org/way/27830522"
+          },
+          {
+            "label": "File:Софійський собор12.jpg — Wildcatjane, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%8012.jpg"
+          },
+          {
+            "label": "File:80-391-0151 Kyiv St.Sophia's Cathedral RB 18 2 (cropped).jpg — Rbrechko, CC BY-SA 4.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_(cropped).jpg"
+          },
+          {
+            "label": "Belfry of Saint Sofia in Kiev (8162387327) — Guillaume Speurt, CC BY-SA 2.0 (reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Belfry_of_Saint_Sofia_in_Kiev_(8162387327).jpg"
+          },
+          {
+            "label": "Софіївська дзвіниця 11 — Сарапулов, CC BY-SA 3.0 (interior reference only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Софіївська_дзвіниця_11.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/saint-sophia-cathedral-kyiv/geometry.js"
+      },
+      "notes": "Review fx45a dome-only fix: central gold/six green shells narrowed from 13.1/8.9 m to 9.4/6.5 m diameter, drums narrowed with them, shell heights 9.4/7.5 m, broad shoulders 55% above eaves and sharply pinched necks; exact 32/25.5 m cross tips survive both LODs. Photo-estimated profiles compared at matching shell height before export. Pitched gallery roofs/frontons and separate pierced 76 m bell tower retained. Near 28008 triangles / 7 draws / 936952 bytes; far 10532 / 7 / 404320. Ten landmark tests and zero-cycle depth check pass; exported near/far sheets inspected. Lantern subdivisions, ornaments and thirteen-shell composition remain estimated; app recaptures and independent re-review remain with lead.",
+      "documentation": "docs/assets/top-cities-saint-sophia-cathedral-kyiv.md",
+      "manifest": "/models/buildings/saint-sophia-cathedral-kyiv.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=detail"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=tower"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=entrance"
+          },
+          {
+            "label": "Reference side",
+            "url": "/asset-preview.html?asset=saint-sophia-cathedral-kyiv&view=sideReference"
+          }
+        ]
+      },
+      "city": "Kyiv",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
