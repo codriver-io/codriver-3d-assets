@@ -24712,6 +24712,734 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "atomium",
+      "name": "Atomium",
+      "kind": "building",
+      "location": "Brussels, Belgium",
+      "status": "ready",
+      "description": "Original procedural post-2006 Atomium: nine stainless steel spheres on a corner-up body-centred cube, twenty tubes and three open bipods.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/atomium/geometry.js",
+        "build": "pnpm build:top-cities-landmarks atomium --no-check",
+        "provenance": "Original texture-free procedural geometry authored for Codriver, 2026-10-13. Mapped placement and provider outline © OpenStreetMap contributors (ODbL 1.0). Reference photographs are study-only in ignored scratch; no third-party mesh or image is shipped. Sources include Pierre Blaché (CC0), Trougnouf/Benoit Brummer and Storyteller23 and Axel Kirch (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Atomium operator — dimensions",
+            "url": "https://atomium.be/the_atomium_in_figures"
+          },
+          {
+            "label": "Identity and stainless-steel restoration",
+            "url": "https://en.wikipedia.org/wiki/Atomium"
+          },
+          {
+            "label": "OSM Atomium outline relation 19189218",
+            "url": "https://www.openstreetmap.org/relation/19189218"
+          },
+          {
+            "label": "File:2017-10-17-bruessel-atomium-innenansicht-04.jpg — Axel Kirch (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2017-10-17-bruessel-atomium-innenansicht-04.jpg"
+          },
+          {
+            "label": "File:The Atomium, Brussels - 54578545913.jpg — Pierre Blaché (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Atomium,_Brussels_-_54578545913.jpg"
+          },
+          {
+            "label": "File:Atomium Staircase.jpg — Storyteller23 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Atomium_Staircase.jpg"
+          },
+          {
+            "label": "File:Atomium Restaurant.jpg — Storyteller23 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Atomium_Restaurant.jpg"
+          },
+          {
+            "label": "File:Atomium Exterior Staircase.jpg — Storyteller23 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Atomium_Exterior_Staircase.jpg"
+          },
+          {
+            "label": "File:Atomium sphere (DSCF1211).jpg — Trougnouf (Benoit Brummer) (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Atomium_sphere_(DSCF1211).jpg"
+          },
+          {
+            "label": "Atomium 07-2016.jpg — Umberto NURS (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Atomium_07-2016.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/atomium/geometry.js"
+      },
+      "manifest": "/models/buildings/atomium.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=atomium",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=atomium&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=atomium&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=atomium&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=atomium&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=atomium&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=atomium&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: 102 m height, nine 18 m spheres, twenty 3.3 m tubes, 29 m clear edge span, 26 m pavilion. Exact regular cube edge is 47 m. Supports, small triangular window locations, sparse night light positions and 2.6 m pavilion roof height are estimated. No reflective environment texture or interior; flag/pole and panel joints omitted. Nearby retail/service annexes remain provider-owned.",
+      "documentation": "docs/assets/top-cities-atomium.md",
+      "city": "Brussels",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bob-kerrey-pedestrian-bridge",
+      "name": "Bob Kerrey Pedestrian Bridge",
+      "kind": "bridge",
+      "location": "Omaha, Nebraska – Council Bluffs, Iowa",
+      "status": "ready",
+      "description": "Original procedural model of the 2008 Missouri River pedestrian/cycle crossing, with the mapped S-curve and west return ramp, two tapered three-sided concrete pylons, 80 stays, a narrow concrete walking deck and exposed outboard steel girders. Both bank terminals include supported ramps to mapped paths at flat grade with continuous rails.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bob-kerrey-pedestrian-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bob-kerrey-pedestrian-bridge --no-check",
+        "provenance": "Original texture-free procedural geometry authored for Codriver, 2026-10-13. Geographic alignment and bridge outline © OpenStreetMap contributors, ODbL 1.0. Photographs are visual references only, retained in ignored scratch; no photograph, texture, captured mesh or scan ships. Dossier photos checked against Commons license pages: Bob Kerrey Pedestrian Bridge 2025c.jpg and 2025b.jpg, Antony-22, CC BY-SA 4.0; Bob Kerrey Pedestrian Bridge (27756282513).jpg, J Yochem, CC BY-SA 2.0; Bob Kerrey Pedestrian Bridge Best view.jpg, WiinterU, CC0; Bob Kerrey Pedestrian Bridge.jpg, Skinzfan23, CC BY-SA 3.0.",
+        "references": [
+          {
+            "label": "National Park Service: crossing identity, 2008 opening, 3,000 ft including access and separate Baby Bob branch",
+            "url": "https://www.nps.gov/places/bob-kerrey-pedestrian-bridge.htm"
+          },
+          {
+            "label": "AISC/NSBA 2009 Prize Bridge brochure, pages 32–33: structural dimensions, 80 stays and triangular pylons",
+            "url": "https://www.aisc.org/globalassets/nsba/prize-bridge-brochures/2009prizebridgebrochure.pdf"
+          },
+          {
+            "label": "Council Bluffs official facts: 15 ft clear walk, 4.5 ft railing, landings and lighting",
+            "url": "https://www.councilbluffs-ia.gov/DocumentCenter/View/498/BOB-KERREY-PEDESTRIAN-BRIDGE-FACTS---revised"
+          },
+          {
+            "label": "OpenStreetMap mapped bridge outline 454976793",
+            "url": "https://www.openstreetmap.org/way/454976793"
+          },
+          {
+            "label": "Antony-22 underside photograph (2025c), CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bob_Kerrey_Pedestrian_Bridge_2025c.jpg"
+          },
+          {
+            "label": "Antony-22 river elevation photograph (2025b), CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bob_Kerrey_Pedestrian_Bridge_2025b.jpg"
+          },
+          {
+            "label": "J Yochem walking deck photograph, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bob_Kerrey_Pedestrian_Bridge_(27756282513).jpg"
+          },
+          {
+            "label": "WiinterU north bank elevation, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bob_Kerrey_Pedestrian_Bridge_Best_view.jpg"
+          },
+          {
+            "label": "Skinzfan23 sunset view, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bob_Kerrey_Pedestrian_Bridge.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bob-kerrey-pedestrian-bridge/geometry.js"
+      },
+      "notes": "Mapped authored structure is 766.16 m long; the municipal 3,000 ft headline includes landings. Engineering 203 ft pylon height differs from the rounded municipal 210 ft figure. Relative deck/ramp elevations, pylon taper and rake, foundation shapes, approach shafts, sockets and railing mesh are photographic estimates. Near rail mesh is sampled rather than an exact engineering reproduction; far retains both rails and all 80 stays at coarser detail. Far cable radius is 38 mm to retain visibility. Baby Bob and park structures are excluded. No terrain, absolute altitude or Mercator scaling is baked in. Review repair: west 8.976 m / maximum 9.67% grade and east 6.268 m / maximum 14.37% grade descend the final 0.80 m to local y=0 with 0.20 m vertical curves and 0.50 m level landings. Solid ramps meet mapped path nodes (west 177074003/322999597, east 163291845/163197147/163291881); connector shapes are estimates. Original river deck, cable contacts and pylons are unchanged. Fresh near/far export sheets show both terminals; depth check has zero cycle edges. Updated app/terrain verification remains with the lead.",
+      "documentation": "docs/assets/top-cities-bob-kerrey-pedestrian-bridge.md",
+      "manifest": "/models/bridges/bob-kerrey-pedestrian-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge",
+        "views": [
+          {
+            "label": "Full crossing",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=overview"
+          },
+          {
+            "label": "River elevation",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=facade"
+          },
+          {
+            "label": "Opposite bank",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=back"
+          },
+          {
+            "label": "S-curve plan",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=roof"
+          },
+          {
+            "label": "Walking corridor",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=deck"
+          },
+          {
+            "label": "Open frame and floorbeams",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=underside"
+          },
+          {
+            "label": "Triangular pylon and stay fan",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=tower"
+          },
+          {
+            "label": "Cable/deck attachment",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=detail"
+          },
+          {
+            "label": "West bank ramp and landing",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=westLanding"
+          },
+          {
+            "label": "East bank ramp and landing",
+            "url": "/asset-preview.html?asset=bob-kerrey-pedestrian-bridge&view=eastLanding"
+          }
+        ]
+      },
+      "city": "Omaha",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cambie-bridge",
+      "name": "Cambie Bridge",
+      "kind": "bridge",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "1985 twin tan concrete varying-depth box/spine girder bridge across False Creek, slender flared piers and mapped Nelson/Smithe approaches.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cambie-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cambie-bridge --no-check",
+        "provenance": "Original texture-free procedural mesh; OSM alignment/envelope © OpenStreetMap contributors ODbL 1.0. Reference photographs only: trougnouf (Benoit Brummer), Cambie Street bridge viewed from the Spyglass Dock (DSCF7465), CC BY 4.0; Wpcpey, Cambie Bridge 2018, CC BY-SA 4.0; Ds13, Cambie Bridge plaque, CC BY-SA 3.0. SEABC brochure aerial/lift credited to City of Vancouver Archives / Alan J. Ingram, bridge view to Raya Smertina; viewed only under ignored tmp. Historical Connaught/fire photographs are excluded from current-bridge geometry. No photos or third-party meshes ship.",
+        "references": [
+          {
+            "label": "SEABC / IABSE Notable Structures 2017, printed page 3",
+            "url": "https://seabc.ca/wordpress/files/notable_structures/Vancouver_Notable_Structures_IABSE_SEABC_2017.pdf"
+          },
+          {
+            "label": "1985 design paper, TAC / Transportation Research Board",
+            "url": "https://trid.trb.org/View/290128"
+          },
+          {
+            "label": "Bridge chronology and identity",
+            "url": "https://en.wikipedia.org/wiki/Cambie_Bridge"
+          },
+          {
+            "label": "Spyglass Dock underside reference, trougnouf CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cambie_Street_bridge_viewed_from_the_Spyglass_Dock_in_Vancouver,_BC_(DSCF7465).jpg"
+          },
+          {
+            "label": "2018 side view, Wpcpey CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cambie_Bridge_2018.jpg"
+          },
+          {
+            "label": "Bridge plaque, Ds13 CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cambie_Bridge_plaque.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cambie-bridge/geometry.js"
+      },
+      "notes": "Published 1100 m total structure and 33–84 m spans; authored approach-inclusive SB 1125.73 m and NB 1029.00 m. Three estimated 83.5 m marine bays, 33 m land bays, deck datum 18.5 m, girder depth 2.2–4.3 m and shafts estimated from photos. Published 4.3 m east and 1.8 m west paths; original six-lane envelope, current mapped five vehicle lanes and west protected bike lane. Both north main ramps included; minor forks, utility building and detached spiral access remain provider geometry. Landing tapers are 85 m; rail terminals attach to posts on tapered slabs.",
+      "documentation": "docs/assets/top-cities-cambie-bridge.md",
+      "manifest": "/models/bridges/cambie-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=cambie-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=underside"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=deck"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=north"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=cambie-bridge&view=south"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "chords-bridge",
+      "name": "Chords Bridge",
+      "kind": "bridge",
+      "location": "Jerusalem",
+      "status": "ready",
+      "description": "Original texture-free Calatrava light-rail/pedestrian bridge: 118 m inclined triangular white spar, 66 spatial fan stays, curved tram deck and glass-sided footpath.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/chords-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks chords-bridge",
+        "provenance": "Original procedural geometry, 2026-10-13. Placement © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: Jerusalem Chords Bridge.JPG, Petdad, CC BY-SA 3.0; Jerusalem Chords Bridge 5.JPG, Little Savage, public domain; both licence pages independently checked. Photographs remain in ignored scratch and are not shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Chords_Bridge"
+          },
+          {
+            "label": "Architect: triangular inclined mast, spatial cable fan and pedestrian light band",
+            "url": "https://calatrava.com/projects/bridge-of-strings-light-rail-train-jerusalem.html"
+          },
+          {
+            "label": "Construction weld inspector: 118 m mast and 66 stays",
+            "url": "https://www.tecnocontrolnde.com/en/bridge-at-gerusalem/"
+          },
+          {
+            "label": "Mapped tram axis",
+            "url": "https://www.openstreetmap.org/way/75517167"
+          },
+          {
+            "label": "Night reference: Petdad, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Jerusalem_Chords_Bridge.JPG"
+          },
+          {
+            "label": "Low deck reference: Little Savage, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Jerusalem_Chords_Bridge_5.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chords-bridge/geometry.js"
+      },
+      "notes": "Mapped paired tram axes; 360 m approach-inclusive length and 14.82 m section. Deck height, triangular section, mast inclination, stay stations and straight terminal extensions are visual estimates. No retained capture or texture. Footprintless because mapped rail/footway lines are not provider building extrusions.",
+      "documentation": "docs/assets/top-cities-chords-bridge.md",
+      "manifest": "/models/bridges/chords-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=chords-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=chords-bridge&view=overview"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=chords-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=chords-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=chords-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=chords-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=chords-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=chords-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Jerusalem",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "estadio-nacional-costa-rica",
+      "name": "Estadio Nacional de Costa Rica",
+      "kind": "building",
+      "location": "San José, Costa Rica",
+      "status": "ready",
+      "description": "Original procedural model of the 2011 national stadium in La Sabana: an open oval bowl, white curved louvred wrapper, two crescent canopies and exposed steel arch trusses.",
+      "manifest": "/models/buildings/estadio-nacional-costa-rica.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/estadio-nacional-costa-rica/geometry.js",
+        "build": "pnpm build:top-cities-landmarks estadio-nacional-costa-rica --no-check",
+        "provenance": "Original texture-free procedural geometry for Codriver; no retained third-party meshes or photographs. Geographic plans derived from OpenStreetMap contributors under ODbL 1.0. Reference-only photographs: Terran21 (CC BY 2.0; English Wikipedia local file), Nyarlazul (CC BY-SA 4.0), MadriCR (CC BY-SA 4.0), Peloy/Allan H.M. (CC BY-SA 3.0); titles and checked file pages below. Photos remain in ignored tmp only.",
+        "references": [
+          {
+            "label": "Costa Rica National Stadium (2011), opening and location",
+            "url": "https://en.wikipedia.org/wiki/Costa_Rica_National_Stadium_(2011)"
+          },
+          {
+            "label": "OSM stadium outline, outer member of building relation 9130067",
+            "url": "https://www.openstreetmap.org/way/222243861"
+          },
+          {
+            "label": "OSM western roof: mapped plan and 52.6 m height",
+            "url": "https://www.openstreetmap.org/way/656351598"
+          },
+          {
+            "label": "OSM eastern roof: mapped plan and 52.6 m height",
+            "url": "https://www.openstreetmap.org/way/656351599"
+          },
+          {
+            "label": "Terran21, Estadio Nacional de Costa Rica, exterior, CC BY 2.0 (Wikipedia local file; comparison only)",
+            "url": "https://en.wikipedia.org/wiki/File:Estadio_Nacional_de_Costa_Rica.jpg"
+          },
+          {
+            "label": "Nyarlazul, Panorama Estadio Nacional de Costa Rica, 2022, CC BY-SA 4.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Panorama_Estadio_Nacional_de_Costa_Rica.jpg"
+          },
+          {
+            "label": "MadriCR, Estadio Nacional de Costa Rica, 2011, CC BY-SA 4.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Estadio_Nacional_de_Costa_Rica,_2011.jpg"
+          },
+          {
+            "label": "Peloy (Allan H.M.), Estadio Nacional, San José, Costa Rica, 2012, CC BY-SA 3.0 (comparison only)",
+            "url": "https://commons.wikimedia.org/wiki/File:Estadio_Nacional,_San_Jos%C3%A9,_Costa_Rica._-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/estadio-nacional-costa-rica/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=estadio-nacional-costa-rica",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=detail"
+          },
+          {
+            "label": "Interior",
+            "url": "/asset-preview.html?asset=estadio-nacional-costa-rica&view=interior"
+          }
+        ]
+      },
+      "notes": "OSM roof-tag height 52.6 m and exact crescent roof plans, 19 provider outer/part rings including all four arch feet. Curvature, truss sizing and V columns, 214 × 268 m oval bowl, simplified seat rows, six/four cladding louvre rows, video boards and subdued colours are estimates from photos. Far preserves both canopies and separate red/blue tier rows. Model contains no logos, advertising textures, seat-by-seat geometry or subsurface foundations. Pitch lines use a 0.6 m visual depth separation above turf. Inspector verification establishes exports only; neither application mode has been verified. Review b7a: both LODs retain 20 m-spaced triangular roof folds (up to 4.2 m depression) with matching fascia/soffit and attached roof struts; 1.05/1.25 m primary chords and 0.60/0.72 m primary diagonals are photo estimates. Far retains primary arch structure, omits secondary roof webs and uses simple solid tetrahedral joints. Updated near/far costs: 35,126/8,854 triangles, 8/8 draws, 1,847,716/474,884 bytes.",
+      "documentation": "docs/assets/top-cities-estadio-nacional-costa-rica.md",
+      "city": "San José",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "one-atlantic-center",
+      "name": "One Atlantic Center",
+      "kind": "building",
+      "location": "Atlanta, Georgia",
+      "status": "ready",
+      "description": "Original procedural One Atlantic Center: stepped pink granite tower, recessed vertical window bays, Gothic arcade, copper pyramid, corner pinnacles and open gold lantern.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/one-atlantic-center/geometry.js",
+        "build": "pnpm build:top-cities-landmarks one-atlantic-center",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-13. Mapped footprint © OpenStreetMap contributors (ODbL 1.0). Photo comparison only, retained in ignored tmp: 4 One Atlantic Center.jpg and One Atlantic Center.jpg by Atlantacitizen (CC BY-SA 3.0); One Atlantic Center 1.jpg by Lee Coursey (CC BY 2.0). No reference pixels or meshes are included in exports.",
+        "references": [
+          {
+            "label": "One Atlantic Center official address",
+            "url": "https://www.1ac.com/"
+          },
+          {
+            "label": "Structural engineer: Johnson/Burgee, granite and 1987",
+            "url": "https://www.walterpmoore.com/projects/one-atlantic-center"
+          },
+          {
+            "label": "Published height, floors and copper/gold crown",
+            "url": "https://en.wikipedia.org/wiki/One_Atlantic_Center"
+          },
+          {
+            "label": "Mapped tower footprint",
+            "url": "https://www.openstreetmap.org/way/39450314"
+          },
+          {
+            "label": "Crown and facade photo; Atlantacitizen, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:4_One_Atlantic_Center.jpg"
+          },
+          {
+            "label": "Crown detail; Lee Coursey, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:One_Atlantic_Center_1.jpg"
+          },
+          {
+            "label": "Full tower and base; Atlantacitizen, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:One_Atlantic_Center.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/one-atlantic-center/geometry.js"
+      },
+      "notes": "Sourced total height 250 m and 50 storeys; mapped stepped 52 m envelope and central 33 m roof. Crown tier heights, arches, lantern, bay pitch and lobby are photo estimates. Adjacent parking, retail, site landscaping, interiors and nearby Regions Plaza are excluded. Texture-free; no third-party meshes or photographs redistributed. Review b7a: collar has recessed arches, three-stage Gothic shoulders and supported stepped parapet pinnacles in both LODs; pyramid/lantern retained. Updated measured near/far costs: 36,574/8,582 triangles, 6/6 draws, 1,947,124/435,508 bytes. Lead still owns unobstructed application base/entrance evidence.",
+      "documentation": "docs/assets/top-cities-one-atlantic-center.md",
+      "manifest": "/models/buildings/one-atlantic-center.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=one-atlantic-center",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=one-atlantic-center&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=one-atlantic-center&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=one-atlantic-center&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=one-atlantic-center&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=one-atlantic-center&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=one-atlantic-center&view=detail"
+          }
+        ]
+      },
+      "city": "Atlanta",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "plant-hall-tampa",
+      "name": "Plant Hall (University of Tampa)",
+      "kind": "building",
+      "location": "Tampa, Florida",
+      "status": "ready",
+      "description": "Original procedural present-day red-brick Moorish Revival hall, six tall silver onion minarets, four roof cupolas, three veranda domes, crescent finials, arched windows and open verandas.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/plant-hall-tampa/geometry.js",
+        "build": "pnpm build:top-cities-landmarks plant-hall-tampa",
+        "provenance": "Original texture-free procedural model for Codriver, authored 2026-10-13. Geographic outline © OpenStreetMap contributors (ODbL 1.0). Reference photos viewed only; no image pixels or external meshes in exports.",
+        "references": [
+          {
+            "label": "Henry B. Plant Museum — hotel history; 1888–1891, J. A. Wood, Moorish Revival",
+            "url": "https://www.plantmuseum.com/about/history"
+          },
+          {
+            "label": "NPS — Tampa Bay Hotel; historic 900 ft, five storeys, red brick",
+            "url": "https://home.nps.gov/places/tampa-bay-hotel.htm"
+          },
+          {
+            "label": "University of Tampa Journal, Spring 2007 — thirteen minarets, cupolas and domes; silver restoration",
+            "url": "https://www.ut.edu/content/dam/ut/uploadedFiles/Alumni/UT_Journal/2007SpringUTJournal.pdf"
+          },
+          {
+            "label": "Bbphotos, Tampa Bay Hotel--7022-1.jpg, CC BY-SA 4.0; minaret profile",
+            "url": "https://commons.wikimedia.org/wiki/File:Tampa_Bay_Hotel--7022-1.jpg"
+          },
+          {
+            "label": "Ebyabe, Old Tampa Bay Hotel4.jpg, CC BY 2.5; horseshoe entrance",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_Tampa_Bay_Hotel4.jpg"
+          },
+          {
+            "label": "Ebyabe, Old Tampa Bay Hotel3.jpg, CC BY 2.5; facade and crowns",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_Tampa_Bay_Hotel3.jpg"
+          },
+          {
+            "label": "University of Tampa official aerial; copyright University of Tampa, reference only, no redistribution",
+            "url": "https://www.ut.edu/content/dam/ut/uploadedImages/Academics/Academic-Calendar-hero.jpg"
+          },
+          {
+            "label": "OSM main outline 25913559 and nineteen building parts; ODbL",
+            "url": "https://www.openstreetmap.org/way/25913559"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/plant-hall-tampa/geometry.js"
+      },
+      "notes": "Mapped plan; all architectural heights and ornament proportions are photo estimates. Carved ornament, interiors, trees and neighbouring buildings omitted. Source MIT; original models CC BY 4.0; mapped footprint ODbL.",
+      "documentation": "docs/assets/top-cities-plant-hall-tampa.md",
+      "manifest": "/models/buildings/plant-hall-tampa.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=plant-hall-tampa",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=plant-hall-tampa&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=plant-hall-tampa&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=plant-hall-tampa&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=plant-hall-tampa&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=plant-hall-tampa&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=plant-hall-tampa&view=detail"
+          }
+        ]
+      },
+      "city": "Tampa",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "walt-disney-concert-hall",
+      "name": "Walt Disney Concert Hall",
+      "kind": "building",
+      "location": "Los Angeles, California",
+      "status": "ready",
+      "description": "Original procedural Frank Gehry concert hall with nine distinct broad, overlapping curved steel sails, sloping Grand Avenue billow, deep glazed folds and recessed stone frontage.",
+      "manifest": "/models/buildings/walt-disney-concert-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/walt-disney-concert-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks walt-disney-concert-hall --no-check",
+        "provenance": "Original procedural geometry, Codriver 2026; no photograph, texture, scan or external mesh shipped. Mapped outline and 36.7 m height © OpenStreetMap contributors (ODbL 1.0), relation 6333150 / outer way 425993488 and garden parts 319307757, 319307763, 319307760. Reference-only dossier sheet viewed: Daniel Hartwig, Disney Concert Hall (10920404614), CC BY 2.0; Carol M. Highsmith, Image-Disney Concert Hall by Carol Highsmith edit, public domain; jjron, Walt Disney Concert Hall LA CA 22.03.2012, GFDL 1.2; Lando47, LAtrip, CC BY-SA 4.0; Tuxyso, Walt Disney Concert Hall Partial View sw 2013, CC BY-SA 3.0; Geographer, Walt Disney Concert Hall and surrounding area, CC BY-SA 2.5. Reference images remain in ignored scratch storage.",
+        "references": [
+          {
+            "label": "LA Philharmonic: steel sails, architect, venue and seating",
+            "url": "https://www.laphil.com/about-us/our-venues/about-walt-disney-concert-hall"
+          },
+          {
+            "label": "Wikipedia: opening 23 October 2003 and address",
+            "url": "https://en.wikipedia.org/wiki/Walt_Disney_Concert_Hall"
+          },
+          {
+            "label": "OpenStreetMap: relation and 36.7 m height",
+            "url": "https://www.openstreetmap.org/relation/6333150"
+          },
+          {
+            "label": "Daniel Hartwig, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Disney_Concert_Hall_(10920404614).jpg"
+          },
+          {
+            "label": "Carol M. Highsmith: exterior, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Image-Disney_Concert_Hall_by_Carol_Highsmith_edit.jpg"
+          },
+          {
+            "label": "jjron: street facade, GFDL 1.2",
+            "url": "https://commons.wikimedia.org/wiki/File:Walt_Disney_Concert_Hall,_LA,_CA,_jjron_22.03.2012.jpg"
+          },
+          {
+            "label": "Lando47: facade, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:LAtrip.jpg"
+          },
+          {
+            "label": "Tuxyso: curved steel detail, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Walt_Disney_Concert_Hall_Partial_View_sw_2013.jpg"
+          },
+          {
+            "label": "Geographer: surrounding area, CC BY-SA 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Walt_Disney_Concert_Hall_and_surrounding_area.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/walt-disney-concert-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=walt-disney-concert-hall",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=walt-disney-concert-hall&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=walt-disney-concert-hall&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=walt-disney-concert-hall&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=walt-disney-concert-hall&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=walt-disney-concert-hall&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=walt-disney-concert-hall&view=detail"
+          }
+        ]
+      },
+      "notes": "36.7 m is OSM height, not a surveyed primary-source dimension. Review b7a rebuilt the three high sails as broad twisted faces with restrained vertical curl, widened overlapping crests, and rebuilt the front billow with a sloping crest and tapered ends. The outer grade plinth is 0.65 m; the 3.2 m occupied stone base is recessed behind glazing. Exact four provider ways and rings unchanged and vertex containment tested. Sail profiles, auditorium shoulders, service volumes and stairs are photo estimates; opaque glazing, interiors, landscaping and fine vertical joints omitted. Two exported-sheet look-fix rounds inspected; independent re-review and fresh app capture pending; no hardware timing.",
+      "documentation": "docs/assets/top-cities-walt-disney-concert-hall.md",
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

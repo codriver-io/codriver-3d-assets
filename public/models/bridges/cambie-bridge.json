@@ -1,0 +1,66 @@
+{
+  "id": "cambie-bridge",
+  "name": "Cambie Bridge",
+  "kind": "bridge",
+  "origin": [
+    -123.1149,
+    49.27201
+  ],
+  "height": 26.5,
+  "padM": 850,
+  "frontageBearing": 2,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local metres east/up/south; y=0 is flat-map/water grade. Estimated 18.5 m marine deck (published marine clearance 14 m); world absolute-deck policy fits the separate bank approaches and each support foot to resident DEM. No DEM baked into source.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1985 twin prestressed concrete spine/box girders, tan volcanic-ash concrete, flared piers, 4.3 m east multi-use path and 1.8 m west sidewalk. Published total structural length 1100 m and span range 33–84 m; individual supports, depth and heights are visual/map estimates. Original six-lane envelope; current OSM five motor lanes plus west protected cycle lane. Both main north approaches are authored; small interchange ramps remain provider geometry.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/cambie-bridge-near.glb",
+      "bytes": 3849104,
+      "triangles": 77108,
+      "drawCalls": 34,
+      "bounds": {
+        "min": [
+          -175.8541259765625,
+          -0.20000000298023224,
+          -389.0003967285156
+        ],
+        "max": [
+          28.93024253845215,
+          26.450000762939453,
+          667.5462036132812
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/cambie-bridge-far.glb",
+      "bytes": 1001036,
+      "triangles": 26760,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -175.8541259765625,
+          -0.20000000298023224,
+          -389.0003967285156
+        ],
+        "max": [
+          28.93863868713379,
+          26.450000762939453,
+          667.5462036132812
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cambie-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
