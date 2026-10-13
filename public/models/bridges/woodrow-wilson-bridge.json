@@ -1,0 +1,73 @@
+{
+  "id": "woodrow-wilson-bridge",
+  "name": "Woodrow Wilson Bridge",
+  "kind": "bridge",
+  "origin": [
+    -77.037669,
+    38.7927185
+  ],
+  "height": 33.3,
+  "padM": 1800,
+  "frontageBearing": 89,
+  "terrainPolicy": "absolute-deck",
+  "rangeM": 8000,
+  "nearM": 2600,
+  "lateralBankFit": {
+    "terrainClamp": true,
+    "clearanceM": 0.15,
+    "blendM": 120
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 water/flat-map grade, authored road crest 24 m and 70 ft navigation clearance at the closed bascule centre. Absolute-deck terrain fitting plants supports and blends approach roads; no DEM baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced 270 ft trunnion spacing, 124/110 ft twin deck widths, 15 ft gap and eight bascule leaves. Estimated pier stations/curvature, deck datum, control-house dimensions and approach grades; fixed closed leaves, no operational animation.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/woodrow-wilson-bridge-near.glb",
+      "bytes": 2398652,
+      "triangles": 70670,
+      "drawCalls": 26,
+      "bounds": {
+        "min": [
+          -779.759765625,
+          -4.7683716530855236e-8,
+          -88.36884307861328
+        ],
+        "max": [
+          1124.9515380859375,
+          33.52454376220703,
+          43.17327880859375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/woodrow-wilson-bridge-far.glb",
+      "bytes": 835840,
+      "triangles": 24548,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -779.759765625,
+          -4.7683716530855236e-8,
+          -88.36884307861328
+        ],
+        "max": [
+          1124.9515380859375,
+          33.52454376220703,
+          43.15916442871094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/woodrow-wilson-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

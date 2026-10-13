@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'edificio-metalico', name: "Edificio Metálico", kind: 'building',
   ready: false,
-  origin: [-84.07437, 9.93613],
-  height: 15,
+  origin: [-84.074372,9.93615065],
+  height: 17.8,
   padM: 60,
   frontageBearing: 0,
 };

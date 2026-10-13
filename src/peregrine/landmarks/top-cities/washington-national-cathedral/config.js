@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'washington-national-cathedral', name: "Washington National Cathedral", kind: 'building',
   ready: false,
-  origin: [-77.07083, 38.93056],
-  height: 91,
+  origin: [-77.07083,38.93056],
+  height: 91.7448,
   padM: 60,
   frontageBearing: 0,
 };

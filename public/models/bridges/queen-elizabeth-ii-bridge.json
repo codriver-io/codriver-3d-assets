@@ -1,0 +1,73 @@
+{
+  "id": "queen-elizabeth-ii-bridge",
+  "name": "Queen Elizabeth II Bridge (Dartford Crossing)",
+  "kind": "bridge",
+  "origin": [
+    0.25861,
+    51.46472
+  ],
+  "height": 137,
+  "padM": 1550,
+  "frontageBearing": 209.2,
+  "rangeM": 11000,
+  "nearM": 3200,
+  "terrainPolicy": "absolute-deck",
+  "lateralBankFit": {
+    "blendM": 100,
+    "terrainClamp": true,
+    "clearanceM": 0
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the authored flat-map/water datum; 137 m pylon tops. Absolute-deck world placement fits support feet and landing roads to DEM at runtime; no terrain or latitude scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 450 m main span, 137 m total tower (53 m concrete +84 m steel), 812 m stayed section and four undivided southbound lanes. Width 20.6 m from mapped envelope, road 15.8 m and pylon sections/stay anchors/approach piers are visual estimates. Deck 53 m at pylons and 61 m crest is an approximate flat-map datum, not surveyed navigation clearance.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/queen-elizabeth-ii-bridge-near.glb",
+      "bytes": 2832576,
+      "triangles": 83202,
+      "drawCalls": 23,
+      "bounds": {
+        "min": [
+          -893.4501342773438,
+          -1.1920929132713809e-8,
+          -1345.3570556640625
+        ],
+        "max": [
+          572.3092041015625,
+          137,
+          1117.464599609375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/queen-elizabeth-ii-bridge-far.glb",
+      "bytes": 878456,
+      "triangles": 24184,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -893.4501342773438,
+          -1.1920929132713809e-8,
+          -1345.3570556640625
+        ],
+        "max": [
+          572.3092041015625,
+          137,
+          1117.464599609375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/queen-elizabeth-ii-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

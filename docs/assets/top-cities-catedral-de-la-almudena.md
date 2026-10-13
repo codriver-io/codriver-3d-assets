@@ -1,0 +1,66 @@
+# Catedral de la Almudena
+
+Original procedural exterior of Madrid's Catedral de Santa María la Real de la Almudena, opposite the Royal Palace on Plaza de la Armería. Construction began in 1883; the cathedral was consecrated in 1993. The modeled identity is the neoclassical grey-white exterior, blue-grey slate crossing dome with lantern, and twin open bell towers with stepped slate spires. No interior, crypt, palace, plaza fences or gate monuments are included.
+
+Sources consulted 2026-10-13: [English Wikipedia](https://en.wikipedia.org/wiki/Almudena_Cathedral), [Spanish Wikipedia](https://es.wikipedia.org/wiki/Catedral_de_la_Almudena), [official cathedral website](https://catedraldelaalmudena.es/), and [OSM relation 75658](https://www.openstreetmap.org/relation/75658). Small shared-helper Overpass requests timed out; no raw Overpass requests were made.
+
+Reference images were inspected in the dossier sheet and one supplementary facade photograph: *Almudena 2022 - overview* (Fernando, CC BY-SA 4.0), *Catedral de la Almudena, Madrid, España, 2014-12-27, DD 21* (Diego Delso, CC BY-SA 4.0), and *Madrid. Catedral de la Almudena 5* (Elena F D, public domain). The catalog links their checked Commons pages. Photographs remain in ignored scratch; none is incorporated in geometry, exports or repository assets. Other dossier images depict interiors and were excluded from exterior design.
+
+| Feature | Model metres | Basis |
+| --- | --- | --- |
+| Dome to cross | 73 | Published Spanish Wikipedia dimension; OSM lantern height 73 |
+| Twin tower vanes | 60 | Published dimension; OSM ways 1042054550 / 1042054551 |
+| High nave roof | 25.8 | Published dimension and OSM part heights |
+| Cathedral length | approximately 102 | Published length; mapped north facade to radial south chapels |
+| Transept overall | approximately 69.8 | Mapped envelope; published transept length 68 |
+| Tower squares | about 7.0–7.3 | Mapped; walls set inside ring for cornices |
+| Octagonal drum / shallow slate cap | 34.9–49.3 / 49.7–60.2; diameter about 23.8 | Re-fitted photo estimate using exterior refs/2 and refs/7; mapped dome part approximately 21 m wide |
+| Curled palace-facing attic | 26.8–41.5 | Photo estimate; pierced niche, curved shoulders and volutes |
+| Lantern / needle | 60–71.2 | Photo estimate; highest cross is 73 |
+| Tower belfry / slate crown | 30–45.3 / 45.3–60 | Photo estimate; mapped roof height 15 |
+| Museum ranges / aisles | 12–13 / 12 | Mapped part heights |
+
+The supplied origin `[-3.71456, 40.41559]` is retained near the crossing. Real metres, +X east, +Y up, +Z south; y=0 is the rigid cathedral platform. Geometry is authored in a building frame and turned +5 degrees in plan exactly once inside the generator. Mapped control points on the outer facade, `[-3.7146321,40.4161523]` and `[-3.7143414,40.4161328]`, establish the east-west wall skew (about 95 degrees bearing); the palace-facing normal is about 5 degrees. The runtime must not apply another rotation.
+
+The footprint includes outer way 101817016, the dossier's mapped structural/roof parts and tower ways 1042054550/1042054551. Tower ways are tagged `man_made=tower`, which explains their absence from the dossier's building-only extract. OSM inner rings 30914788 and 307894653 identify open service courts: their ranges are modeled around the voids. Statue-post provider parts are included in OSM_WAYS and covered by the larger facade footprint. Nearby palace, residential buildings, souvenir shop and road remain outside ownership.
+
+The model uses six merged materials: grey-white stone, lighter column/figure trim, subdued blue-grey slate, dark glazing, bronze doors/bells and muted gold finials. Repeated window bays remain separate quads in both LODs. Far preserves the dome, lantern, tower profiles, four-sided belfry openings, bells, double colonnade, figures, cruciform roofs, radial chapels and courts; near adds finer circular profiles, roof ribs and more rail posts. Statues are planted draped silhouettes rather than likenesses. Surface glazing is offset 0.20 m from backing walls. New surrounds are a disjoint trim/glass mosaic, with no surround drawn across a pane; far drops applied dome ribs. Duplicate high-nave glazing at the separate transept entrance facades is removed. Every bell hanger terminates in a seated beam and the bell shoulder.
+
+Decorative heights, dome profile, colors, window pitch and sculptural details are estimates rather than a survey. Slate aisle roofs are simplified; the curved Baroque attic and figures are compact silhouettes. The cathedral's principal frontage uses granite while other stone areas use several limestones; the texture-free palette approximates that distinction. Dark recolors the exterior without assuming permanently glowing glazing.
+
+Final exported costs: **near 23,275 triangles / 6 draws / 1,025,688 bytes (1002 KiB); far 11,087 triangles / 6 draws / 492,076 bytes (481 KiB)**. Both fit the building budgets, with bounds differing by only 4.4 mm at one sculpted facade edge and no bridgeLift bytes. Repeat export with `pnpm build:top-cities-landmarks catedral-de-la-almudena --no-check`.
+
+Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. The footprint median-datum pad is declared with a 10 m feather; no DEM samples, grade transitions, terrain refinement, runtime replacement, lifecycle or Tesla hardware checks were performed. The lead owns those separate integration gates.
+
+## Verification evidence
+
+The independent b7b review judged the former model FIX (3/5), naming three defects: a tall bulbous slate dome on a plain drum, a rectangular palace-facing attic, and under-articulated road-facing slabs. The revision uses the supplied exterior refs/2.jpg (Fernando overview) and refs/7.jpg (Elena F D palace-facing facade); no additional references were fetched or incorporated.
+
+The slate shell now rises only 10.5 m across a 23 m base, from 49.7 to 60.2 m. The octagonal drum has individually subdivided arched panes, stone surrounds, corner pilasters/capitals, gables and cornices. The lantern has a closed throat and a seated roof base; the highest cross remains 73 m. The palace-facing attic is an extruded curved silhouette with a real arched niche opening, recessed backing, a planted Virgin silhouette, curling shoulder mouldings, volutes, seated draped figures and a central crest. Both LODs retain those identity features. The low ranges, crossing pedestal and high nave gain separate window surrounds, pilasters, courses and entrance pediments. Figures remain grouped original silhouettes, not reproductions of sculpture; dense carving and stone texture remain simplified.
+
+Exactly two look-fix iterations were used. The first exported near sheet revealed that monochrome flat surrounds needed contrast; they became disjoint light trim/glass mosaics. Depth checks exposed duplicate high-nave and end-facade windows at the transepts; the duplicated windows were removed. Vertex welding removes repeated extrusion-front vertices without changing silhouettes or hard normals, bringing far below its byte cap. The original bell-beam support contacts, open belfries, courts and radial chapel roofs remain.
+
+Final sheets read beside refs/2 and refs/7:
+
+- `tmp/top-cities/shots/catedral-de-la-almudena/review-fix-2/catedral-de-la-almudena-glb-near-light-sheet.jpg`: overview, facade, back, roof, street and belfry/attic detail.
+- `tmp/top-cities/shots/catedral-de-la-almudena/review-fix-2/catedral-de-la-almudena-glb-far-light-sheet.jpg`: overview, facade, roof and street, retaining the curved attic and separate framed window rows.
+
+Costs before → after: near 10,496 → 15,195 triangles, 6 → 6 draws, 552,040 → 671,176 bytes; far 6,516 → 10,437 triangles, 6 → 6 draws, 367,256 → 483,616 bytes. Both meet the export budgets. The original envelope, OSM way/part ownership and placement pad are unchanged; the review found no confirmed provider overlap or terrain defect.
+
+Focused landmark tests pass **14/14**, including new raycasts pinning the shallow dome shoulder, raised shell start, supported lantern seat, pierced attic niche, crest and Virgin silhouette in both LODs. Existing support tests still reject deliberately shortened bell beams. The bound tolerance is 2 cm to allow a measured 4.4 mm LOD difference at the sampled scroll; all other extrema match. `node scripts/landmark-depth-layers.mjs --ids catedral-de-la-almudena --check` passes with zero dropped cycle edges. Exported QA in `tmp/top-cities/catedral-de-la-almudena/review-fix-metrics.json` reports no issues, zero near/far layered faces, zero near coplanar pairs, no below-grade or removable-attribute costs, and a 0% outside-in back-face sweep (199 hits). `node scripts/asset-catalog.mjs` passes (336 entries, 592 variants), and `pnpm assets:preview` builds the local ignored catalog. The requested complete `top-cities.test.js` run has **590/591 passing**; its only failure is the unrelated, concurrently authored `charles-bridge` footprint-polygon assertion. All Almudena registry geometry/export assertions pass.
+
+The lead will recapture fresh app screenshots and obtain independent re-review after this handoff. Cityscape and Full 3D world remain **not tested for this revision**; earlier supplied app shots establish only the pre-revision observations. Day/night runtime shading, terrain footing, replacement lifecycle and hardware performance remain separate integration gates. No app server, runtime code, registry edit, deployment or git write was used.
+
+## Round 2 — remaining b7ra finding
+
+The high nave/transept walls (parts 337694410/411/412) now have pierced circular clerestories with projecting 20 cm surrounds, 12 cm recessed individual panes, masonry pilasters/capitals, two cornice orders and broad end-pediment mouldings. Part 337694415 follows its actual rounded choir ring with a hipped roof rather than a bounding rectangle; its external apse envelope carries the same clerestory rhythm. Crossing part 337694409 gains framed oculi and vertical bay divisions below the existing articulated drum. Reference `tmp/top-cities/catedral-de-la-almudena/refs/2.jpg` supplies the circular openings and classical masonry divisions; radii, window pitch and relief dimensions are photo estimates.
+
+Far retains every external clerestory position as a six-sided opening and broad inlaid frame/pilaster mosaic; glazing is recessed 12 cm. Hidden end-wall ornaments and internal choir/apse glazing are omitted. On tight apse corners the far shaft merges into the stone mosaic to avoid reciprocal material layers. Near uses solid projecting pilaster shafts; their capitals meet the shafts and cornices. The far attic curves, columns and drum arches use fewer segments, and figure shoulders merge into draped torsos while heads/plinths remain. This preserves the previous dome, towers, open belfries and Virgin niche within the strict 500,000-byte far budget.
+
+Fresh exported sheets read beside refs/2: `tmp/top-cities/shots/catedral-de-la-almudena/review-b7ra-final/catedral-de-la-almudena-glb-near-light-sheet.jpg` (overview, facade, roof, back, street and belfry detail) and the same directory's `catedral-de-la-almudena-glb-far-dark-sheet.jpg` (overview, back, street and detail). Initial near look is in `review-b7ra-1/`; two visual inspection rounds were used. Combined reference/export comparison: `tmp/top-cities/catedral-de-la-almudena/review-b7ra-comparison.jpg`.
+
+Before → after: near **15,195 → 23,275 triangles / 6 → 6 draws / 671,176 → 1,025,688 bytes**; far **10,437 → 11,087 / 6 → 6 / 483,616 → 492,076 bytes**. All 16 focused Almudena tests pass, including raycasts through nave, both transepts, choir and crossing panes, separate circular surrounds, pilasters and cornices. Existing beam contacts and their deliberately shortened negative control still pass. The complete requested registry plus both landmarks reports **621/621 passing** in `tmp/top-cities/uspenski-cathedral/review-b7ra-tests.txt`. Final metrics `tmp/top-cities/uspenski-cathedral/review-b7ra-metrics.json` reports no issues, zero near/far layered faces, zero near coplanar pairs and 0% near back-face hits. Targeted depth regeneration/check has zero dropped cycle edges; catalog validation passes (336 entries / 608 variants), and the ignored local preview builds.
+
+Cityscape and Full 3D world are **not tested for this revision**. Fresh app captures and independent re-review remain with the lead; prior b7r shots showed seated footing and no confirmed provider overlap. Ownership IDs, origin and placement pad remain unchanged, with no new provider overlap identified. No app server, git write or shared runtime edit was made.
+
+Final checkpoint: the focused tests were repeated after the far statue torsos were extended to seat their heads, and pass 23/23 (`tmp/top-cities/uspenski-cathedral/review-b7ra-focused-final.txt`). The full requested run previously passed 621/621. Catalog validation previously passed 336 entries / 608 variants; the final recheck encountered an unrelated concurrently authored `centre-pompidou-far.glb` lacking its completed catalog registration. Targeted depth/QA uses the owned records and remains clean; the lead must rerun the shared catalog once that external export settles.

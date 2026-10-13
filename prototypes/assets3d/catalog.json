@@ -25440,6 +25440,979 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "catedral-de-la-almudena",
+      "name": "Catedral de la Almudena",
+      "kind": "building",
+      "location": "Plaza de la Armería / Calle de Bailén, Madrid, Spain",
+      "status": "ready",
+      "description": "Original procedural neoclassical cathedral exterior: shallow slate crossing cap over an articulated octagonal drum, supported lantern, twin open bell towers, pierced curled palace-facing attic with scrolls and seated figures, double colonnade, cruciform nave, radial apse chapels and framed round clerestories, pilaster divisions and cornices on high nave/transepts/crossing plus window rows on low museum ranges with open courts.",
+      "manifest": "/models/buildings/catedral-de-la-almudena.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/catedral-de-la-almudena/geometry.js",
+        "build": "pnpm build:top-cities-landmarks catedral-de-la-almudena --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-13; no mesh, scan, photograph or texture incorporated. Mapped parts and placement © OpenStreetMap contributors (ODbL 1.0), relation 75658, outer 101817016 and bell-tower ways 1042054550/1042054551. Reference photographs compared locally only: Almudena 2022 - overview, Fernando, CC BY-SA 4.0; Catedral de la Almudena, Madrid, España, 2014-12-27, DD 21, Diego Delso, CC BY-SA 4.0; Madrid. Catedral de la Almudena 5, Elena F D, public domain. Dossier interior photographs were viewed to distinguish them but not used for exterior modeling.",
+        "references": [
+          {
+            "label": "Wikipedia: identity and 102 m length",
+            "url": "https://en.wikipedia.org/wiki/Almudena_Cathedral"
+          },
+          {
+            "label": "Spanish Wikipedia: dimensions, dome, materials and facade",
+            "url": "https://es.wikipedia.org/wiki/Catedral_de_la_Almudena"
+          },
+          {
+            "label": "Cathedral official website",
+            "url": "https://catedraldelaalmudena.es/"
+          },
+          {
+            "label": "OSM cathedral outline",
+            "url": "https://www.openstreetmap.org/relation/75658"
+          },
+          {
+            "label": "Fernando: exterior overview, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Almudena_2022_-_overview.jpg"
+          },
+          {
+            "label": "Diego Delso: bell towers, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Catedral_de_la_Almudena,_Madrid,_Espa%C3%B1a,_2014-12-27,_DD_21.JPG"
+          },
+          {
+            "label": "Elena F D: palace-facing facade, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Madrid._Catedral_de_la_Almudena_5.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-de-la-almudena/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=overview",
+        "views": [
+          {
+            "label": "Northwest overview",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=overview"
+          },
+          {
+            "label": "Palace-facing north facade",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=facade"
+          },
+          {
+            "label": "Dome and cruciform roof",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=roof"
+          },
+          {
+            "label": "South apse",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=back"
+          },
+          {
+            "label": "Bailén street",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=street"
+          },
+          {
+            "label": "Open bell chamber",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=detail"
+          },
+          {
+            "label": "Mapped plan and courts",
+            "url": "/asset-preview.html?asset=catedral-de-la-almudena&view=top"
+          }
+        ]
+      },
+      "notes": "Round 2 b7ra: pierced framed circular clerestories, solid pilaster shafts/capitals, cornice orders and end-pediment relief on high nave/transepts; mapped rounded choir with hipped roof and external apse oculi; framed openings/divisions on lower crossing prism. Near 23,275 triangles / 6 draws / 1,025,688 bytes; far 11,087 / 6 / 492,076 bytes. Far keeps external opening positions as coarse inlaid mosaics with recessed panes, merges tight apse shaft stone, reduces attic/column/arch segmentation and figure shoulder geometry for the strict byte cap. Both exported sheets inspected beside refs/2 in two rounds; 621/621 requested tests pass with zero depth cycles and QA issues. Previous dome, lantern, curved attic/Virgin niche, twin open belfries and beam contacts retained. Dimensions, colours and sculpture remain photo estimates. Interior/crypt/palace/plaza gates excluded; fresh app shots, independent re-review and terrain/lifecycle checks remain with lead.",
+      "documentation": "docs/assets/top-cities-catedral-de-la-almudena.md",
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "charles-bridge",
+      "name": "Charles Bridge",
+      "kind": "bridge",
+      "location": "Prague, Czech Republic — Vltava",
+      "status": "ready",
+      "description": "Original texture-free procedural Gothic sandstone pedestrian bridge: sixteen open arches, pointed cutwaters, thirty human statue groups, gas lamps, Old Town Bridge Tower and the unequal Lesser Town / Judith towers with a pointed connecting gateway.",
+      "manifest": "/models/bridges/charles-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/charles-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks charles-bridge --no-check",
+        "provenance": "Original procedural geometry by Codriver, October 2026. Mapped outline and tower parts © OpenStreetMap contributors (ODbL 1.0). Reference-only photographs by A.Savin (Free Art License), Peter K Burian (CC BY-SA 4.0), Jorge Franganillo (CC BY 2.0) and Z. Broz postcard (public domain); no photographs, textures or third-party meshes redistributed.",
+        "references": [
+          {
+            "label": "Prague City Tourism: dimensions, sixteen unequal vaults, sandstone and history",
+            "url": "https://prague.eu/en/objevujte/charles-bridge-karluv-most/"
+          },
+          {
+            "label": "Prague City Tourism: Old Town tower about 47 m; roof and gallery 18 m",
+            "url": "https://prague.eu/en/objevujte/old-town-bridge-tower-staromestska-mostecka-vez/"
+          },
+          {
+            "label": "City of Prague: Lesser Town tower 43.5 m, Judith tower 29.3 m and pointed connecting gateway",
+            "url": "https://virtualni.praha.eu/towers/bridge-towers-of-lesser-town"
+          },
+          {
+            "label": "Wikipedia: Charles Bridge history and thirty Baroque sculpture groups",
+            "url": "https://en.wikipedia.org/wiki/Charles_Bridge"
+          },
+          {
+            "label": "OSM bridge outline 119016167",
+            "url": "https://www.openstreetmap.org/way/119016167"
+          },
+          {
+            "label": "OSM Old Town tower 839278890",
+            "url": "https://www.openstreetmap.org/way/839278890"
+          },
+          {
+            "label": "OSM Lesser Town tower 839278891",
+            "url": "https://www.openstreetmap.org/way/839278891"
+          },
+          {
+            "label": "OSM Judith tower 389652950",
+            "url": "https://www.openstreetmap.org/way/389652950"
+          },
+          {
+            "label": "File:Prague 07-2016 View from Petrinska Tower img2.jpg / A.Savin / FAL",
+            "url": "https://commons.wikimedia.org/wiki/File:Prague_07-2016_View_from_Petrinska_Tower_img2.jpg"
+          },
+          {
+            "label": "File:Prague 07-2016 view from Lesser Town Tower of Charles Bridge img3.jpg / A.Savin / FAL",
+            "url": "https://commons.wikimedia.org/wiki/File:Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_img3.jpg"
+          },
+          {
+            "label": "File:Charles Bridge (Karlův most), Vltava River, Prague, 2015.jpg / Peter K Burian / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charles_Bridge_(Karl%C5%AFv_most),_Vltava_River,_Prague,_2015.jpg"
+          },
+          {
+            "label": "File:Charles bridge and the Castle.jpg / Nakl. pohlednic Z. Broz, Praha / Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Charles_bridge_and_the_Castle.jpg"
+          },
+          {
+            "label": "Prague- Lesser Town Bridge Tower.jpg / Jorge Franganillo / CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Prague-_Lesser_Town_Bridge_Tower.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/charles-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=charles-bridge",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=charles-bridge&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=charles-bridge&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=charles-bridge&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=charles-bridge&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=charles-bridge&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=charles-bridge&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=charles-bridge&view=tower"
+          },
+          {
+            "label": "lesser",
+            "url": "/asset-preview.html?asset=charles-bridge&view=lesser"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=charles-bridge&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced overall length 515.76 m, width 9.5 m, sixteen vaults, thirty sculpture groups and tower heights. Mapped alignment retained; most estimated clear openings 21–24 m, visible partial western land opening shortened by mapped outline. Deck/support datum, ashlar, statue figures, lamps, roof details and colours estimated. Original human silhouettes do not replicate individual named sculptures. Local support y=0 / deck y=12. Tower windows are real holes in both LODs. Five compound masks retain all 25 OSM way/part IDs. Estimated cutwater shoulders extend at most 2.56 m beyond mapped mask; no neighbouring houses owned. Export near 25,940 triangles / 8 draws / 1,583 KiB (1,620,856 bytes); far 11,172 / 8 / 727 KiB (744,612 bytes). Combined conformance 600/600 tests; deterministic QA clean, zero depth cycles; source and exported near/far/light/dark sheets inspected beside references. Independent review, western land-vault interpretation and both-mode app integration / bank-to-water datum remain pending.",
+      "documentation": "docs/assets/top-cities-charles-bridge.md",
+      "city": "Prague",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "grande-arche",
+      "name": "Grande Arche de La Défense",
+      "kind": "building",
+      "location": "Puteaux, France",
+      "status": "ready",
+      "description": "Original procedural Grande Arche: true open cube, white bevelled frame, glazed office sidewalls, raised steps, tensile cloud and skeletal panoramic lift guides.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/grande-arche/geometry.js",
+        "build": "pnpm build:top-cities-landmarks grande-arche --no-check",
+        "provenance": "Original parameterized Three.js mesh authored 2026-10-13; no scanned/traced mesh, photograph or texture redistributed. OSM mapped office outline, two towers, roof and stair parts and rear terrace © OpenStreetMap contributors (ODbL 1.0), from shared-helper dossier. Reference-only photographs remain ignored: Coldcreation, La Grande Arche de la Défense, CC BY-SA 2.5 (English Wikipedia notes US-only architectural freedom of panorama; not redistributed); Tognopop, North facade of the Grande Arche de la Défense - 20050906, CC0; Spaghettifier, La Defense Jazz Festival 2023, CC BY-SA 4.0; ASaber91, GrandeArche, CC BY-SA 4.0; Arthur Weidmann, La Défense depuis l’Arc de Triomphe Janvier 2023, CC BY-SA 4.0; Bretwa, Western part of La Défense as seen from the Grande Arche - 2020-07-07, CC BY-SA 4.0. Photos are visual references only, and are not embedded in geometry.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Grande_Arche"
+          },
+          {
+            "label": "fischer facade contractor: 1989 completion, 110 m height, original Carrara marble replaced by Bethel White granite",
+            "url": "https://www.fischer.ae/en-ae/media-and-pr/references/22-11-29-la-grande-arche"
+          },
+          {
+            "label": "Coldcreation front, cloud, window reveals and stairs, CC BY-SA 2.5",
+            "url": "https://en.wikipedia.org/wiki/File:La_Grande_Arche_de_la_D%C3%A9fense.jpg"
+          },
+          {
+            "label": "Tognopop outer mirrored facade, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:North_facade_of_the_Grande_Arche_de_la_D%C3%A9fense_-_20050906.jpg"
+          },
+          {
+            "label": "Spaghettifier inner bays and soffit, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:La_Defense_Jazz_Festival_2023.jpg"
+          },
+          {
+            "label": "OSM main office outline and linked building parts",
+            "url": "https://www.openstreetmap.org/way/19441489"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/grande-arche/geometry.js"
+      },
+      "notes": "110 m height and 1989 identity sourced; ~106.9 × 111.9 m mapped plan, 121.940292° mapped facade bearing baked once. Separate 6.33° historic-axis skew is not applied a second time. Opening/bevel geometry follows mapped pier and roof edges; window count, glass colour, membrane folds, lift guides/cars and stair tread count are original estimates. Near and far preserve the see-through opening. Fine interiors, rooftop restaurant fittings and plaza furniture omitted.",
+      "documentation": "docs/assets/top-cities-grande-arche.md",
+      "manifest": "/models/buildings/grande-arche.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=grande-arche",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=grande-arche&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=grande-arche&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=grande-arche&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=grande-arche&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=grande-arche&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=grande-arche&view=detail"
+          },
+          {
+            "label": "Interior",
+            "url": "/asset-preview.html?asset=grande-arche&view=interior"
+          }
+        ]
+      },
+      "city": "Puteaux",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "leveque-tower",
+      "name": "LeVeque Tower",
+      "kind": "building",
+      "location": "Columbus, Ohio",
+      "status": "ready",
+      "description": "Original cream terra-cotta Art Deco tower with mapped L-shaped wings, stepped shoulders, figure-bearing corner turrets, octagonal bartizan and antenna equipment.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/leveque-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks leveque-tower",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-13, using published facts and OSM placement (ODbL 1.0). Reference-only photos kept in ignored scratch: Bubba73, Details of the LeVeque Tower (04), CC BY-SA 3.0; Ɱ, LeVeque Memorial Day 01/02/03, CC BY-SA 4.0; pasa47, Palace Theater, CC BY 2.0; Sixflashphoto, The LeVeque Tower Upper Stories and LeVeque Tower NW 1, CC BY-SA 4.0. No third-party mesh, photograph or texture shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/LeVeque_Tower"
+          },
+          {
+            "label": "OSM mapped envelope",
+            "url": "https://www.openstreetmap.org/way/752671107"
+          },
+          {
+            "label": "Sixflashphoto · The LeVeque Tower Upper Stories · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_LeVeque_Tower_Upper_Stories.jpg"
+          },
+          {
+            "label": "Sixflashphoto · LeVeque Tower NW 1 · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:LeVeque_Tower_NW_1.jpg"
+          },
+          {
+            "label": "Bubba73 · Terra-cotta figures · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Details_of_the_LeVeque_Tower_in_Columbus,_OH,_US_(04).jpg"
+          },
+          {
+            "label": "Ɱ · Night lighting · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:LeVeque_Memorial_Day_01.jpg"
+          },
+          {
+            "label": "pasa47 · Palace Theatre frontage · CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palace_Theater.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/leveque-tower/geometry.js"
+      },
+      "notes": "Review b8a finding 1: the y=7.2–112 m shaft now has continuous projecting stone piers at +0.50 m and recessed bay channels at −0.16 m, with outward-wound return surfaces and individual windows. A subdued shadow-tone stone material keeps the vertical rhythm legible with shared unlit shading. Finding 2: shoulder gables are supported projecting prisms instead of buried triangles; the upper shoulder recedes behind them. Four corner turrets have stepped collars, and the octagonal drum and summit have stepped cornices and medallions in both LODs. Gables meet the shaft roof and shoulder, collars meet their columns, and cornices meet the drums. near 37,932 triangles / 8 draws / 1980.9 KiB; far 8,934 triangles / 8 draws / 474.2 KiB. Final reference comparison: tmp/top-cities/shots/leveque-tower/review-fix-final/comparison.jpg. Original procedural texture-free source; reliefs and bay dimensions estimated from references. Deterministic QA and depth check pass; revised both-mode app captures and independent re-review pending.",
+      "documentation": "docs/assets/top-cities-leveque-tower.md",
+      "manifest": "/models/buildings/leveque-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=leveque-tower&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=leveque-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=leveque-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=leveque-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=leveque-tower&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=leveque-tower&view=street"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=leveque-tower&view=crown"
+          }
+        ]
+      },
+      "city": "Columbus",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "nemo-science-museum",
+      "name": "NEMO Science Museum",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural NEMO: curved outward-leaning oxidised-copper hull, two rising wings, sparse square bays, stepped planted roof square, solar field and white conservatory.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/nemo-science-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks nemo-science-museum",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-13. Geographic data © OpenStreetMap contributors, ODbL 1.0: way 57856769 and building parts 1390692763–1390692772. Reference-only photos: Armsterdam - panoramio.jpg by pj soans, CC BY-SA 3.0 (licence checked on Commons); NEMO building by DigiDaan, official NEMO 2025 press image (credit required for publication); 2025 rooftop drone image on official NEMO venue page, photographer not identified (reference-only, not redistributed). All images remain in ignored tmp. Dossier interior image excluded from geometric references.",
+        "references": [
+          {
+            "label": "NEMO museum identity",
+            "url": "https://en.wikipedia.org/wiki/NEMO_(museum)"
+          },
+          {
+            "label": "NEMO 2025 rooftop redevelopment and DigiDaan press photograph",
+            "url": "https://www.nemosciencemuseum.nl/en/press/rooftop-square-nemo-open-to-the-public"
+          },
+          {
+            "label": "NEMO current rooftop drone view",
+            "url": "https://www.nemosciencemuseum.nl/en/venue-hire/rooftop-square"
+          },
+          {
+            "label": "Waterfront hull photograph — pj soans, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Armsterdam_-_panoramio.jpg"
+          },
+          {
+            "label": "OSM/BAG main outline and height",
+            "url": "https://www.openstreetmap.org/way/57856769"
+          },
+          {
+            "label": "OSM copper prow outline",
+            "url": "https://www.openstreetmap.org/way/1390692764"
+          },
+          {
+            "label": "Arcam — Renzo Piano, 1997",
+            "url": "https://arcam.nl/architectuur-gids/nemo/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/nemo-science-museum/geometry.js"
+      },
+      "notes": "OSM/BAG plan and 32.57 m maximum height. Hull taper, roof profile, glazing, stair count and 2025 roof planting/solar layout are photographic estimates. Furniture, individual plants, interior, adjacent footbridge and IJ tunnel roads are omitted. No textures or photographs shipped; independent review pending.",
+      "documentation": "docs/assets/top-cities-nemo-science-museum.md",
+      "manifest": "/models/buildings/nemo-science-museum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=nemo-science-museum",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=facade"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=roof"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=back"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=detail"
+          },
+          {
+            "label": "top",
+            "url": "/asset-preview.html?asset=nemo-science-museum&view=top"
+          }
+        ]
+      },
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "queen-elizabeth-ii-bridge",
+      "name": "Queen Elizabeth II Bridge (Dartford Crossing)",
+      "kind": "bridge",
+      "location": "Dartford – Thurrock, United Kingdom",
+      "status": "ready",
+      "description": "Original procedural four-lane A282 southbound cable-stayed crossing, paired steel pylons above concrete piers, modified harp stays, shallow plate-girder deck and long curved viaducts.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/queen-elizabeth-ii-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks queen-elizabeth-ii-bridge",
+        "provenance": "Original procedural model, 2026-10-13. OSM alignment 693074242 /20003982 /244897935 and bridge envelope 467163604, ODbL 1.0. Reference-only photos: Diliff, Queen Elizabeth II Bridge Dartford England Feb 2009, CC BY-SA 3.0 (dossier); Amanda Slater, June 15th Queen Elizabeth II Bridge, CC BY-SA 2.0 (Commons licence checked); National Highways anniversary photo, government reference photograph (reference-only, no redistribution). No reference photographs ship.",
+        "references": [
+          {
+            "label": "National Highways: 137 m towers, 53 m concrete +84 m steel, 1991",
+            "url": "https://www.gov.uk/government/news/the-queen-elizabeth-ii-bridge-at-dartford-celebrates-30-years-of-connecting-essex-and-kent"
+          },
+          {
+            "label": "Cleveland Bridge construction account: 450 m span, 812 m cable stayed section, four southbound lanes, shallow plate girders",
+            "url": "https://www.newsteelconstruction.com/wp/20-years-ago-the-dartford-bridge/"
+          },
+          {
+            "label": "Road alignment",
+            "url": "https://www.openstreetmap.org/way/20003982"
+          },
+          {
+            "label": "Bridge envelope",
+            "url": "https://www.openstreetmap.org/way/467163604"
+          },
+          {
+            "label": "Amanda Slater roadway/pylon photograph, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:June_15th._Queen_Elizabeth_II_Bridge.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/queen-elizabeth-ii-bridge/geometry.js"
+      },
+      "notes": "Original texture-free paired steel-box pylons on concrete legs, modified harp stays, four undivided southbound lanes, shallow plate girders and long curved viaducts. Published 450 m span, 137 m crown, 53/84 m concrete/steel portions, 812 m stayed section; unpublished sections/width, cable anchors/inventory and southern pier count are visual estimates. Width 20.6 m from mapped envelope, not an aerial survey; 14.8 m north road /22.2 m six-lane south road tapers at physical landings. Near 83202 triangles /23 draws /2832044 bytes (2765.7 KiB); far 24184 /8 /877924 bytes (857.3 KiB). Far retains 48 visible stays, omits minor paint. Near/far light/dark exported GLBs compared to photographs; 12 owned /611 combined tests pass; catalog/depth checks pass with zero cycles. b8b duplicate-paint finding fixed with a reversible, coverage-specific fallback index mask; independent re-review pending. Generic bridge-lift rejection and physical world landing blend are landmark-owned; no shared source changes. Buried caissons and inspection walkways omitted; navigation clearance datum is approximate.",
+      "documentation": "docs/assets/top-cities-queen-elizabeth-ii-bridge.md",
+      "manifest": "/models/bridges/queen-elizabeth-ii-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=queen-elizabeth-ii-bridge&view=underside"
+          }
+        ]
+      },
+      "city": "Dartford",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "saturn-v-huntsville",
+      "name": "Saturn V (U.S. Space & Rocket Center)",
+      "kind": "building",
+      "location": "Huntsville, Alabama",
+      "status": "ready",
+      "description": "Original model of the full-scale 1999 vertical outdoor Saturn V replica: three stages, black roll pattern, fins, five hollow F-1 bells, four display piers and open escape tower.",
+      "manifest": "/models/buildings/saturn-v-huntsville.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/saturn-v-huntsville/geometry.js",
+        "build": "pnpm build:top-cities-landmarks saturn-v-huntsville --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-13, no traced mesh or textures. Geographic anchor from OpenStreetMap node 3091286888, ODbL 1.0; adjacent Davidson Center edge sets orientation datum, rocket paint phase estimated. Reference-only photos retained in ignored scratch: Davidson Center-27527-3.jpg by Ken Thomas (public domain, 2008); Saturn V 1-1 Replica, US Space and Rocket Center, Huntsville, AL.jpg by Naomi Persephone Amethyst (CC BY-SA 4.0, 2017); dossier Rocket Park photo by Ke4roh (public domain) examined for disambiguation, not used for Saturn V geometry.",
+        "references": [
+          {
+            "label": "NASA — full-scale Saturn V height",
+            "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-saturn-v-grades-5-8/"
+          },
+          {
+            "label": "NASA — S-IC dimensions and five engines",
+            "url": "https://www.nasa.gov/image-article/this-week-nasa-history-s-ic-t-arrives-marshall-april-9-1967/"
+          },
+          {
+            "label": "Rocket Center — 1999 replica restoration",
+            "url": "https://www.rocketcenter.com/content/2025-08-08/us-space-rocket-center-launches-revivethesaturnv-fundraising-campaign"
+          },
+          {
+            "label": "OSM — vertical Saturn V anchor",
+            "url": "https://www.openstreetmap.org/node/3091286888"
+          },
+          {
+            "label": "Ken Thomas — replica at night, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Davidson_Center-27527-3.jpg"
+          },
+          {
+            "label": "Naomi Persephone Amethyst — base, USA and corrugations, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Saturn_V_1-1_Replica,_US_Space_and_Rocket_Center,_Huntsville,_AL.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/saturn-v-huntsville/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=saturn-v-huntsville&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=saturn-v-huntsville&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=saturn-v-huntsville&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=saturn-v-huntsville&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=saturn-v-huntsville&view=roof"
+          },
+          {
+            "label": "Engines",
+            "url": "/asset-preview.html?asset=saturn-v-huntsville&view=engines"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=saturn-v-huntsville&view=detail"
+          }
+        ]
+      },
+      "notes": "Height 111 m and main diameter 10.06 m follow full-scale NASA values. Display support elevation and stage levels are photo estimates; paint roll phase is estimated relative to the mapped museum edge. Full three-stage silhouette retained in far. Near corrugations dropped in far; flags use geometry, USA stroke lettering simplified. No horizontal Saturn V, museum, neighbouring tower, memorial plaques or interiors; no measured Tesla performance.",
+      "documentation": "docs/assets/top-cities-saturn-v-huntsville.md",
+      "city": "Huntsville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tower-of-the-americas",
+      "name": "Tower of the Americas",
+      "kind": "building",
+      "location": "739 East César E. Chávez Boulevard · San Antonio, Texas",
+      "status": "ready",
+      "description": "Original 229 m observation tower with a shallow-tapered fluted concrete shaft, exterior elevator line, ribbed annular soffit, two glazed restaurant/observation tiers, broad roof lip and antenna.",
+      "manifest": "/models/buildings/tower-of-the-americas.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tower-of-the-americas/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tower-of-the-americas --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-13. Published dimensions from the official tower history and ASCE Texas Section; 622 ft roof from Skyscraper Center and Wikipedia. Mapped shaft centroid and all seven provider outlines from dossier OSM ways 78485919 and 351672055–60, © OpenStreetMap contributors, ODbL 1.0. Ignored local reference photos only: San Antonio May 2018 8 (Tower of the Americas), Michael Barera, CC BY-SA 4.0; Entrance to Tower of the Americas IMG 4576, Billy Hathorn, CC BY 3.0; Tower of the Americas San Antonio elevator, Runner1928, CC BY-SA 3.0. Official ExteriorShot01 photo: Landry’s/Tower of the Americas, photographer and licence unspecified, all rights reserved, reference-only and not redistributed. No scan, mesh, texture or reference photo ships.",
+        "references": [
+          {
+            "label": "Official history: 750 ft, 45 ft shaft, 76 ft top house, 1968",
+            "url": "https://www.toweroftheamericas.com/history/"
+          },
+          {
+            "label": "ASCE Texas Section: engineering history and three elevators",
+            "url": "https://www.texasce.org/tce-news/building-of-the-tower-of-the-americas/"
+          },
+          {
+            "label": "Skyscraper Center: 189.6 m / 622 ft roof",
+            "url": "https://www.skyscrapercenter.com/building/tower-of-the-americas/9604"
+          },
+          {
+            "label": "Wikipedia: roof and overall height",
+            "url": "https://en.wikipedia.org/wiki/Tower_of_the_Americas"
+          },
+          {
+            "label": "Mapped whole tower outline",
+            "url": "https://www.openstreetmap.org/way/78485919"
+          },
+          {
+            "label": "Mapped top house",
+            "url": "https://www.openstreetmap.org/way/351672059"
+          },
+          {
+            "label": "Michael Barera: full tower, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_May_2018_8_(Tower_of_the_Americas).jpg"
+          },
+          {
+            "label": "Runner1928: shaft/elevator and underside, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tower_of_the_Americas_San_Antonio_elevator.jpg"
+          },
+          {
+            "label": "Billy Hathorn: entrance context, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Entrance_to_Tower_of_the_Americas_IMG_4576.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tower-of-the-americas/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=tower-of-the-americas&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=overview"
+          },
+          {
+            "label": "Opposite side",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=back"
+          },
+          {
+            "label": "Roof and antenna",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=roof"
+          },
+          {
+            "label": "Restaurant and observation tiers",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=house"
+          },
+          {
+            "label": "Ribbed underside",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=underside"
+          },
+          {
+            "label": "Entrance pavilion",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=entrance"
+          },
+          {
+            "label": "Mapped plan",
+            "url": "/asset-preview.html?asset=tower-of-the-americas&view=plan"
+          }
+        ]
+      },
+      "notes": "Sourced: 229 m overall, 189.6 m roof, 13.716 m shaft diameter, 23.17 m top-house height, O’Neil Ford, 1968. Mapped: shaft origin, approximately 33 m top-house envelope and exact lower pavilion/annex polygons. Estimated: shallow 3.2% shaft taper, twelve flutes, top-house tier stations and mullion pitch, elevator bearing and cabin position, pavilion heights. Three elevators are represented by one visible glazed exterior line, not three moving cars. Revolving restaurant, elevators and antenna are static. Forecourt sign arch, landscaping, flags and interiors omitted. Export visual QA is recorded in the documentation; app/provider replacement, DEM footing, mode changes and hardware remain untested.",
+      "documentation": "docs/assets/top-cities-tower-of-the-americas.md",
+      "city": "San Antonio",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "uspenski-cathedral",
+      "name": "Uspenski Cathedral",
+      "kind": "building",
+      "location": "Helsinki, Finland",
+      "status": "ready",
+      "description": "Original procedural red-brick Orthodox cathedral with a tall narrow central drum, stepped copper shoulders and lantern, gilded cap, twelve satellite turrets, prominent brick archivolts, piers and cornices.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/uspenski-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks uspenski-cathedral --no-check",
+        "provenance": "Original procedural Codriver authoring, 2026-10-13, based on OSM plan and reference photographs only; no reused third-party mesh. Geographic data © OpenStreetMap contributors, ODbL 1.0. Reference-only photos: Uspenski Cathedral from air, Timo Noko, CC BY 2.0; Front of Uspenski Cathedral In Helsinki, John Samuel, CC BY-SA 4.0; Uspenskin katedraali kesäiltana, Jari Kolehmainen, CC BY-SA 4.0; Catedral Uspenski Helsinki DD 06, Diego Delso, CC BY-SA 3.0. Licences checked on Commons pages; photos stay in ignored scratch.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Uspenski_Cathedral"
+          },
+          {
+            "label": "Orthodox parish: roof height and 1868 consecration",
+            "url": "https://hos.fi/kirkot/uspenskin-katedraali/"
+          },
+          {
+            "label": "OSM cathedral envelope and building parts",
+            "url": "https://www.openstreetmap.org/way/15242921"
+          },
+          {
+            "label": "Aerial — Timo Noko, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Uspenski_Cathedral_from_air.jpg"
+          },
+          {
+            "label": "West porch — John Samuel, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Front_of_Uspenski_Cathedral_In_Helsinki.jpg"
+          },
+          {
+            "label": "Harbor exterior — Jari Kolehmainen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Uspenskin_katedraali_kes%C3%A4iltana.jpg"
+          },
+          {
+            "label": "Bell tower — Diego Delso, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Catedral_Uspenski,_Helsinki,_Finlandia,_2012-08-14,_DD_06.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/uspenski-cathedral/geometry.js"
+      },
+      "notes": "Round 2 b7ra: steeper 28.15–30.9 m copper shoulder, narrow 31.15–33.2 m lantern (2.05 m), closed neck to a photo-estimated 34.6 m; gold cap reduced to radius 0.88 m / height 1.48 m with supported cross retained at 37.84 m. Near 36,385 triangles / 6 draws / 1,482,544 bytes; far 8,768 / 6 / 359,940 bytes. Both exported LOD sheets inspected beside aerial.jpg in two rounds; 621/621 requested tests pass, zero depth cycles and QA issues. Parish 33 m and provider 39/44 m tags remain conflicting dimensions; revised copper profile is an explicit photo estimate. Exact 52 provider ways/two rings and earlier masonry relief retained. Fresh app/hillside verification and independent re-review remain with the lead. No textures or source photographs shipped.",
+      "documentation": "docs/assets/top-cities-uspenski-cathedral.md",
+      "manifest": "/models/buildings/uspenski-cathedral.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=uspenski-cathedral",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=uspenski-cathedral&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=uspenski-cathedral&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=uspenski-cathedral&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=uspenski-cathedral&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=uspenski-cathedral&view=detail"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=uspenski-cathedral&view=entrance"
+          }
+        ]
+      },
+      "city": "Helsinki",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "vancouver-public-library",
+      "name": "Vancouver Public Library (Library Square)",
+      "kind": "building",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Original Library Square model: four-order elliptical precast colonnade, lower spiral arcade with concrete fins, glazed concourse, roof terrace and federal office tower.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/vancouver-public-library/geometry.js",
+        "build": "pnpm build:top-cities-landmarks vancouver-public-library",
+        "provenance": "Original procedural Three.js geometry authored by Codriver, 2026-10-13. Dossier OSM ways 37111640 and 360440468–360440480 © OpenStreetMap contributors, ODbL 1.0. Safdie Architects Library Square project photographs (exterior overview and skylit interior; copyright Safdie Architects/credited photographers, reference only, no redistribution) viewed from the architect’s official project page. Supplied Commons roof-garden photograph: GoToVan, CC BY 2.0; Central Library concourse: GoToVan, CC BY 2.0; level-four interior: Wpcpey, CC BY-SA 4.0. Other-branch dossier photos were excluded.",
+        "references": [
+          {
+            "label": "Safdie Architects: 1995 Library Square, materials, nine-storey core and colonnade",
+            "url": "https://www.safdiearchitects.com/projects/vancouver-library-square"
+          },
+          {
+            "label": "VPL architectural history",
+            "url": "https://www.vpl.ca/guides/vancouver-library-square-architectural-guide/history-and-specifics"
+          },
+          {
+            "label": "OSM Central Library outline",
+            "url": "https://www.openstreetmap.org/way/37111640"
+          },
+          {
+            "label": "Roof garden 2018 — GoToVan, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Public_Library_Roof_Garden_2018.jpg"
+          },
+          {
+            "label": "Central Library concourse — GoToVan, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Public_Central_Library_(36907920883).jpg"
+          },
+          {
+            "label": "Level 4 2018 — Wpcpey, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Public_Library_Level_4_2018.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vancouver-public-library/geometry.js"
+      },
+      "notes": "Review b8a finding 1: far now retains all seven core rows and the exact near office-floor elevations. Savings come from continuous flat jamb skins, single inter-floor gap panels, fewer horizontal bay subdivisions, omitted reveals and planting tops instead of concealed thin-box faces. Finding 2: spatially varied lighting avoids aligned luminous rows across neighbouring tower parts. Far glow panes occupy only the middle of a coarse bay, with ordinary glass on each side and dark opaque gaps at every actual floor. No floors are combined vertically. The ellipse, gallery orders, spiral fins, canopy and mapped ownership are retained. near 50,650 triangles / 6 draws / 2153.8 KiB; far 10,444 triangles / 6 draws / 468.1 KiB. Final reference comparison: tmp/top-cities/shots/vancouver-public-library/review-fix-final/comparison.jpg. Original procedural texture-free source; reliefs and bay dimensions estimated from references. Deterministic QA and depth check pass; revised both-mode app captures and independent re-review pending.",
+      "documentation": "docs/assets/top-cities-vancouver-public-library.md",
+      "manifest": "/models/buildings/vancouver-public-library.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=vancouver-public-library",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=vancouver-public-library&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=vancouver-public-library&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=vancouver-public-library&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=vancouver-public-library&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=vancouver-public-library&view=detail"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "woodrow-wilson-bridge",
+      "name": "Woodrow Wilson Bridge",
+      "kind": "bridge",
+      "location": "Alexandria, Virginia – Oxon Hill, Maryland",
+      "status": "ready",
+      "description": "Original twin-deck Woodrow Wilson replacement bridges with solid flared V-pier webs, rounded triangular throats, eight closed bascule leaves, separate local/express lanes and the framed leaning control house over its louvred machinery enclosure.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/woodrow-wilson-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks woodrow-wilson-bridge",
+        "provenance": "Original procedural geometry, 2026-10-13; no third-party mesh or textures. OSM roadway alignment and control-house ring © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: MarylandGeoffrey (CC BY-SA 4.0), Antony-22 (CC BY-SA 4.0), Gary Covington (CC BY-SA 3.0), Jeremy Basdeo (CC BY-SA 4.0), retained only in ignored dossier.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Woodrow_Wilson_Bridge"
+          },
+          {
+            "label": "H&H bascule designer dimensions",
+            "url": "https://www.hardestyhanover.com/projects/new-woodrow-wilson-bridge-bascule-design/"
+          },
+          {
+            "label": "American Bridge construction dimensions",
+            "url": "https://americanbridge.net/featured-projects/woodrow-wilson-bascule-spans-maryland-approaches/"
+          },
+          {
+            "label": "Mapped median control house",
+            "url": "https://www.openstreetmap.org/way/232949254"
+          },
+          {
+            "label": "File:Woodrow Wilson Bridge.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Woodrow_Wilson_Bridge.jpg"
+          },
+          {
+            "label": "File:Woodrow Wilson Bridge tower 2020.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Woodrow_Wilson_Bridge_tower_2020.jpg"
+          },
+          {
+            "label": "File:Woodrow Wilson Bridge boundary 2020b.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Woodrow_Wilson_Bridge_boundary_2020b.jpg"
+          },
+          {
+            "label": "File:Woodrow Wilson Bridge boundary 2020a.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Woodrow_Wilson_Bridge_boundary_2020a.jpg"
+          },
+          {
+            "label": "File:Wooddrow Wilson Bridge.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Wooddrow_Wilson_Bridge.jpg"
+          },
+          {
+            "label": "File:Woodrow Wilson Bridge Open.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Woodrow_Wilson_Bridge_Open.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/woodrow-wilson-bridge/geometry.js"
+      },
+      "notes": "Sourced 270 ft trunnion spacing, 124/110 ft twin widths, 15 ft separation and 70 ft navigation clearance. Estimated 24 m road datum, V-support stations/profiles, equipment and operator-house dimensions. b8b review fixes: closed tapered pier webs widen to bearing shoulders in both LODs; cab glazing has major mullions/transoms and a taller flared louvred base inside mapped median way 232949254. Near frames ≥0.12 m proud; far retains 24 inset glazing panes and simplified louvres. Four SD landing ribbons blend widths/colour over 160 m with 20 m endpoint extensions. Leaves fixed closed. Near 70670 tris/26 draws/2398120 bytes; far 24548/7/835308. Zero material cycles, layered/coplanar faces, back-face hits or unsupported member-end candidates. Minor equipment, live HD lanes/paint and Tesla hardware untested.",
+      "documentation": "docs/assets/top-cities-woodrow-wilson-bridge.md",
+      "manifest": "/models/bridges/woodrow-wilson-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=woodrow-wilson-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=tower"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=woodrow-wilson-bridge&view=back"
+          }
+        ]
+      },
+      "city": "Alexandria",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

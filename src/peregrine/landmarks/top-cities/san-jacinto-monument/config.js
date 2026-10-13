@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'san-jacinto-monument', name: "San Jacinto Monument", kind: 'building',
   ready: false,
-  origin: [-95.0807, 29.7499],
-  height: 173,
+  origin: [-95.080704525, 29.74985375],
+  height: 567.31,
   padM: 60,
   frontageBearing: 0,
 };

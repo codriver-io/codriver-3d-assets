@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'tour-montparnasse', name: "Tour Montparnasse", kind: 'building',
   ready: false,
-  origin: [2.322, 48.8421],
-  height: 210,
+  origin: [2.32197945, 48.842112875],
+  height: 214,
   padM: 60,
   frontageBearing: 0,
 };

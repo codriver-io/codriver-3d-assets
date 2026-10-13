@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'concertgebouw', name: "Concertgebouw", kind: 'building',
   ready: false,
   origin: [4.87904, 52.3562],
-  height: 30,
+  height: 27,
   padM: 60,
   frontageBearing: 0,
 };

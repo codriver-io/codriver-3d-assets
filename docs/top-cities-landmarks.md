@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (166 released)
+## The collection (177 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -174,6 +174,17 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `chords-bridge` | Chords Bridge | Jerusalem | bridge |
 | `bob-kerrey-pedestrian-bridge` | Bob Kerrey Pedestrian Bridge | Omaha | bridge |
 | `plant-hall-tampa` | Plant Hall (University of Tampa) | Tampa | building |
+| `tower-of-the-americas` | Tower of the Americas | San Antonio | building |
+| `saturn-v-huntsville` | Saturn V (U.S. Space & Rocket Center) | Huntsville | building |
+| `nemo-science-museum` | NEMO Science Museum | Amsterdam | building |
+| `grande-arche` | Grande Arche de La Défense | Puteaux | building |
+| `charles-bridge` | Charles Bridge | Prague | bridge |
+| `leveque-tower` | LeVeque Tower | Columbus | building |
+| `vancouver-public-library` | Vancouver Public Library (Library Square) | Vancouver | building |
+| `woodrow-wilson-bridge` | Woodrow Wilson Bridge | Alexandria | bridge, road-fitted |
+| `queen-elizabeth-ii-bridge` | Queen Elizabeth II Bridge (Dartford Crossing) | Dartford | bridge, road-fitted |
+| `uspenski-cathedral` | Uspenski Cathedral | Helsinki | building |
+| `catedral-de-la-almudena` | Catedral de la Almudena | Madrid | building |
 
 ## A landmark is a folder
 
