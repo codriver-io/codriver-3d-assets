@@ -1,0 +1,65 @@
+{
+  "id": "pennzoil-place",
+  "name": "Pennzoil Place",
+  "kind": "building",
+  "origin": [
+    -95.3656194,
+    29.760124
+  ],
+  "height": 159.41,
+  "padM": 85,
+  "frontageBearing": 214.6,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Ridge 523 ft (159.41 m). Each tower is the mapped trapezoid with a 45° skillion from that ridge down to the slot. The clear throat is opened from the mapped ~2.2 m to the published 10 ft (3.05 m). Atrium pyramids peak at the published 115 ft (35.05 m). Mullions are paired to a 5 ft bay (the curtain wall is 2.5 ft). Downtown grade is flat; no terrain pad.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/pennzoil-place-near.glb",
+      "bytes": 2420708,
+      "triangles": 44651,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -53.38100051879883,
+          0,
+          -52.86579895019531
+        ],
+        "max": [
+          52.872100830078125,
+          159.410400390625,
+          53.43320083618164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/pennzoil-place-far.glb",
+      "bytes": 432972,
+      "triangles": 7853,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -53.38100051879883,
+          0,
+          -52.86579895019531
+        ],
+        "max": [
+          52.872100830078125,
+          159.410400390625,
+          53.43320083618164
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pennzoil-place/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

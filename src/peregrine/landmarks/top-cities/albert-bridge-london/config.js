@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'albert-bridge-london', name: "Albert Bridge", kind: 'bridge',
   ready: false,
-  origin: [-0.1667, 51.4823],
-  height: 20,
+  origin: [-0.1666947, 51.4822574],
+  height: 33,
   padM: 60,
   frontageBearing: 0,
 };

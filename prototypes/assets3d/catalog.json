@@ -30332,6 +30332,504 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "gastown-steam-clock",
+      "name": "Gastown Steam Clock",
+      "kind": "building",
+      "location": "Water Street at Cambie Street, Gastown, Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Raymond Saunders' 1977 steam-powered clock: a 5 m cast-bronze and glass case on a granite plinth with four dials, an arched window onto the works on every side, a pagoda roof with a tall central steam whistle and four corner whistles, standing on a brick pad inside a ring of four bollards and chains.",
+      "manifest": "/models/buildings/gastown-steam-clock.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/gastown-steam-clock/geometry.js",
+        "build": "pnpm build:top-cities-landmarks gastown-steam-clock",
+        "provenance": "Original procedural geometry. Placement from the OpenStreetMap clock position (-123.10889, 49.28438) and the bearing of the mapped Water Street blocks (longest building edges 106 and 15 degrees); no OSM building way exists under the clock, so the model is footprintless. Overall height (about 5 m), the four dials and the pagoda roof with five whistles from Wikipedia and the clock's own plaque. Proportions, colours and the arched works windows compared with Wikimedia Commons photographs used only as local ignored references: Leonard G. (CC SA 1.0, GastownSteamClock.jpg) and Dietmar Rabich (CC BY-SA 4.0, two 2022 views), plus the plaque by Jonathan Rodgers (CC BY-SA 3.0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Steam clock · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Steam_clock"
+          },
+          {
+            "label": "Gastown Steam Clock · Leonard G. (CC SA 1.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:GastownSteamClock.jpg"
+          },
+          {
+            "label": "Gastown Steam Clock 1920 · Dietmar Rabich (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Gastown_Steam_Clock_--_2022_--_1920.jpg"
+          },
+          {
+            "label": "Gastown Steam Clock 1908 · Dietmar Rabich (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Gastown_Steam_Clock_--_2022_--_1908.jpg"
+          },
+          {
+            "label": "Plaque · Jonathan Rodgers (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Gastown_Steam_Clock_Plaque1.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gastown-steam-clock/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=gastown-steam-clock&view=overview",
+        "views": [
+          {
+            "label": "The clock from the roadway side",
+            "url": "/asset-preview.html?asset=gastown-steam-clock&view=overview"
+          },
+          {
+            "label": "Plaque side at street level",
+            "url": "/asset-preview.html?asset=gastown-steam-clock&view=facade"
+          },
+          {
+            "label": "Pagoda roof and whistles from above",
+            "url": "/asset-preview.html?asset=gastown-steam-clock&view=roof"
+          },
+          {
+            "label": "A clock face close up",
+            "url": "/asset-preview.html?asset=gastown-steam-clock&view=dial"
+          },
+          {
+            "label": "The far side",
+            "url": "/asset-preview.html?asset=gastown-steam-clock&view=back"
+          },
+          {
+            "label": "Plan: pad, bollards and chains",
+            "url": "/asset-preview.html?asset=gastown-steam-clock&view=plan"
+          }
+        ]
+      },
+      "notes": "Sourced: about 5 m total height (the model's whistle tip is 5.00 m) and the layout of four dials, a pagoda roof and five whistles. Estimated from photographs: every stage height and width (plinth 0.92 m, shaft 0.58 m, cabinet 0.84 m, cornice 1.0 m), the whistle diameters, the arched works windows (the real ones show the weights and a bell behind glass), the dial size, and the bollard ring. The plaque and vent are on one side only, assigned to the south-south-east face. Not modelled: the steam plume, the neighbouring lamp post and flower baskets, the plaque's lettering, the gilt blossoms' colours and the Roman numerals' shapes (ticks stand in). The brick pad is a stylised 3 m patch of the mapped brick corner, 8 cm proud. Far drops the numerals, hands, grille, plaque, blossoms and chains but keeps the stages, arched windows, dials and all five whistles. The site is flat local grade.",
+      "documentation": "docs/assets/top-cities-gastown-steam-clock.md",
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "johan-cruijff-arena",
+      "name": "Johan Cruijff ArenA",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural Johan Cruijff ArenA (Amsterdam ArenA, Rob Schuurman, 1996) with the retractable roof closed: a superellipse bowl of white concrete with red and teal ribbons and a dark clerestory on a promenade deck held up by Y-struts, a grey roof of two sliding panels with photovoltaic arrays, the two white lattice arches that span the pitch's long axis to a 75 m crown from four pairs of corner masts, and the entrance pod with its logo box of nine round windows.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/johan-cruijff-arena/geometry.js",
+        "build": "pnpm build:top-cities-landmarks johan-cruijff-arena",
+        "provenance": "Original procedural geometry authored 2026-10-14 by Codriver. Outline and pitch from OSM way 57853253 (outer ring of relation 1458682) and way 57853514, (c) OpenStreetMap contributors, ODbL 1.0. Reference-only ignored photographs (nothing copied into the repo or GLB): File:Arena, Ajax stadion, Amsterdam.JPG - Alf van Beem, CC0; File:Amsterdam Arena Roof Open.jpg - Quistnix, CC BY 3.0; File:Amsterdam Arena.jpg - Florian K., CC BY-SA 3.0; File:Ajax 0 Chelsea 1 (23Oct19).jpg - @cfcunofficial (Chelsea Debs), CC BY-SA 2.0.",
+        "references": [
+          {
+            "label": "Wikipedia - Johan Cruyff Arena",
+            "url": "https://en.wikipedia.org/wiki/Johan_Cruyff_Arena"
+          },
+          {
+            "label": "OSM stadium relation 1458682 (height 75, outline)",
+            "url": "https://www.openstreetmap.org/relation/1458682"
+          },
+          {
+            "label": "OSM pitch way 57853514 (105 x 68 m)",
+            "url": "https://www.openstreetmap.org/way/57853514"
+          },
+          {
+            "label": "File:Arena, Ajax stadion, Amsterdam.JPG - Alf van Beem, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Arena,_Ajax_stadion,_Amsterdam.JPG"
+          },
+          {
+            "label": "File:Amsterdam Arena Roof Open.jpg - Quistnix, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_Arena_Roof_Open.jpg"
+          },
+          {
+            "label": "File:Amsterdam Arena.jpg - Florian K., CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_Arena.jpg"
+          },
+          {
+            "label": "File:Ajax 0 Chelsea 1 (23Oct19).jpg - @cfcunofficial (Chelsea Debs), CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ajax_0_Chelsea_1_(23Oct19).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/johan-cruijff-arena/geometry.js"
+      },
+      "notes": "Original procedural stadium, roof modelled closed. Plan and 151 degree long axis follow the mapped outline (bowl about 212 x 170 m inside the 258 x 226 m mapped outline that also holds the deck, stairs and pod) and pitch; the 75 m crown is the OSM height tag. Estimated from photographs: eave 33 m, roof profile and 55 m plateau, deck level 9.6 m, facade bands, arch rise and truss depth, mast heights, the logo box size, the PV layout. Not modelled: the seating bowl and pitch (the roof is closed), the interior, the metro viaduct and neighbouring buildings, the glazed escalator tubes, signage, floodlights. Far LOD halves the arch and facade segments, folds the teal band into white and the lit ground floor into the clerestory glass, and drops the roof ribs.",
+      "documentation": "docs/assets/top-cities-johan-cruijff-arena.md",
+      "manifest": "/models/buildings/johan-cruijff-arena.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=johan-cruijff-arena",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=street"
+          },
+          {
+            "label": "Arch detail",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=detail"
+          },
+          {
+            "label": "End",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=end"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=johan-cruijff-arena&view=plan"
+          }
+        ]
+      },
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pennzoil-place",
+      "name": "Pennzoil Place",
+      "kind": "building",
+      "location": "711 Louisiana Street · Houston, Texas",
+      "status": "ready",
+      "description": "Philip Johnson and John Burgee, 1975: two dark bronze-glass trapezoidal towers, each with a 45° crown, set ten feet apart and joined by glazed atrium pyramids.",
+      "manifest": "/models/buildings/pennzoil-place.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pennzoil-place/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pennzoil-place",
+        "provenance": "Original procedural geometry authored 2026-10-14. Plan from OpenStreetMap ways 580965929, 260511513, 260511516 and 260511512 (© OpenStreetMap contributors, ODbL 1.0). Ridge 523 ft from the Wikipedia infobox; the 10 ft void, 115 ft atrium and 45° geometry from the building's own history page. Compared with Wikimedia Commons photographs used only as local ignored references (Agsftw, CC BY-SA 3.0; Bobak Ha'Eri, CC BY 3.0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Pennzoil Place · Wikipedia (523 ft roof, 36 storeys, Johnson/Burgee)",
+            "url": "https://en.wikipedia.org/wiki/Pennzoil_Place"
+          },
+          {
+            "label": "Pennzoil Place history · ten-foot void, 115-foot atrium, 45° geometry",
+            "url": "https://pennzoilplace.buildingengines.com/geofire/BDPW?conid=2638855634&id_client_site_rel=0&id_site=169962413"
+          },
+          {
+            "label": "Downtown Houston · 711 Louisiana, trapezoidal pair",
+            "url": "https://downtownhouston.org/go/pennzoil-place"
+          },
+          {
+            "label": "OSM way 580965929 · complex outline",
+            "url": "https://www.openstreetmap.org/way/580965929"
+          },
+          {
+            "label": "OSM way 260511513 · Louisiana tower",
+            "url": "https://www.openstreetmap.org/way/260511513"
+          },
+          {
+            "label": "OSM way 260511516 · Milam tower",
+            "url": "https://www.openstreetmap.org/way/260511516"
+          },
+          {
+            "label": "Classic silhouette · Agsftw (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Pennzoil_Place_in_Houston.JPG"
+          },
+          {
+            "label": "The slot from below · Bobak Ha'Eri (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2024-0109-Pennzoil_Place_gap.jpg"
+          },
+          {
+            "label": "Atrium grid · Bobak Ha'Eri (CC BY 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:2024-0109-Pennzoil_Place_atrium.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pennzoil-place/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pennzoil-place&view=overview",
+        "views": [
+          {
+            "label": "Along the slot",
+            "url": "/asset-preview.html?asset=pennzoil-place&view=overview"
+          },
+          {
+            "label": "Louisiana Street",
+            "url": "/asset-preview.html?asset=pennzoil-place&view=facade"
+          },
+          {
+            "label": "The two trapezoids",
+            "url": "/asset-preview.html?asset=pennzoil-place&view=roof"
+          },
+          {
+            "label": "The ten-foot slit",
+            "url": "/asset-preview.html?asset=pennzoil-place&view=slot"
+          },
+          {
+            "label": "South glass pyramid",
+            "url": "/asset-preview.html?asset=pennzoil-place&view=atrium"
+          },
+          {
+            "label": "Milam Street",
+            "url": "/asset-preview.html?asset=pennzoil-place&view=back"
+          }
+        ]
+      },
+      "notes": "Published: 36 storeys, dark bronze glass and aluminum, towers ten feet apart, 115 ft (35.05 m) glass atrium, 45° geometry (building history page). The Wikipedia infobox roof is 523 ft (159.41 m); the prose also says 495 ft (151 m), which is what OSM's height 121 plus roof:height 30 adds up to. The model puts the street-edge ridge at 523 ft and slopes at 45°, so the Louisiana eave lands at 121.1 m and matches the mapped shaft. Milam's mapped plate is shallower, so its eave is 123.7 m; both peaks are 159.41 m. The mapped slot edges only overlap about 2 m and sat about 2.2 m apart; each edge is slid toward its own tower until the perpendicular gap is 3.05 m. Mullions are paired to a 5 ft bay (the real curtain wall is 2.5 ft). Far groups two floors and widens the bay. Neighbours (Jones Hall, TC Energy Center, Bank of America Tower) stay provider-owned. Downtown grade is flat; no terrain pad. Near 44,651 triangles / 6 draws / 2,420,188 bytes; far 7,853 / 6 / 432,452 bytes.",
+      "documentation": "docs/assets/top-cities-pennzoil-place.md",
+      "city": "Houston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "stantec-tower",
+      "name": "Stantec Tower",
+      "kind": "building",
+      "location": "Edmonton, Alberta",
+      "status": "ready",
+      "description": "Original procedural model of Stantec Tower (2018-19, 250.8 m, 66 storeys), Edmonton’s tallest building: a slim 20.5 x 52 m glass slab with a floor-line band at every storey, white fins on its narrow faces, a crown cut on a slope and a dark louvre band under the top, rising out of the 125.4 m block and the 16.8 m ICE District podium on the mapped outlines.",
+      "manifest": "/models/buildings/stantec-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/stantec-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks stantec-tower --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-14; no external mesh or texture. Mapped outlines and building parts (OSM ways 512154307, 512154306, 476797578, 512154308) © OpenStreetMap contributors, ODbL 1.0. Reference-only photos kept in ignored tmp, none redistributed: Stantec Tower Edmonton.jpg — Kurayba, CC BY-SA 2.0; StantecTowerConstructionJune2018.jpg — Jarodsc18, CC BY-SA 4.0; Stantec Tower, Edmonton, Alberta - July 2020.jpg — Caddyshack01, CC BY-SA 4.0; Stantec tower December 30 2017 — Jason Woodhead, CC BY 2.0.",
+        "references": [
+          {
+            "label": "Wikipedia: Stantec Tower (height 250.8 m, 66 storeys, opening, architect)",
+            "url": "https://en.wikipedia.org/wiki/Stantec_Tower"
+          },
+          {
+            "label": "OpenStreetMap: Stantec Tower outline (250.8 m, 66 levels)",
+            "url": "https://www.openstreetmap.org/way/476797578"
+          },
+          {
+            "label": "OpenStreetMap: shaft part (250.8 m)",
+            "url": "https://www.openstreetmap.org/way/512154307"
+          },
+          {
+            "label": "OpenStreetMap: 125.4 m block part",
+            "url": "https://www.openstreetmap.org/way/512154306"
+          },
+          {
+            "label": "Commons reference — Kurayba, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Stantec_Tower_Edmonton.jpg"
+          },
+          {
+            "label": "Commons reference — Caddyshack01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Stantec_Tower,_Edmonton,_Alberta_-_July_2020.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stantec-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=stantec-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=stantec-tower&view=overview"
+          },
+          {
+            "label": "West face",
+            "url": "/asset-preview.html?asset=stantec-tower&view=facade"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=stantec-tower&view=crown"
+          },
+          {
+            "label": "North face",
+            "url": "/asset-preview.html?asset=stantec-tower&view=north"
+          },
+          {
+            "label": "Podium and lobby",
+            "url": "/asset-preview.html?asset=stantec-tower&view=base"
+          },
+          {
+            "label": "Skyline",
+            "url": "/asset-preview.html?asset=stantec-tower&view=skyline"
+          }
+        ]
+      },
+      "notes": "250.8 m roof, 66 storeys, 16.8 m podium and 125.4 m block follow Wikipedia and OSM; the plan is the mapped outlines (shaft corners chamfered 2.6 m). Estimated from photographs: the 5.5 m north-to-south slope of the crown, the dark louvre band 9 m under the top of the north face, the 3.77 m floor pitch, mullion and fin pitch, the two balcony-window stacks on the west face, the shoulder roof slope, glass colours, podium shopfront and the entrance canopy over the south lobby. Fins and the rim stand up to 0.35 m proud of the mapped outline. Lit windows are a deterministic pattern, not the real one. No Stantec lettering, interior, plaza, neighbouring towers or the Winter Garden. Independent review and application placement remain separate gates.",
+      "documentation": "docs/assets/top-cities-stantec-tower.md",
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tawatina-bridge",
+      "name": "Tawatinâ Bridge",
+      "kind": "bridge",
+      "location": "North Saskatchewan River · Edmonton, Alberta",
+      "status": "ready",
+      "description": "Extradosed concrete LRT bridge of Edmonton's Valley Line: an 11 m box girder haunched over two piers, one pair of slender outward-leaning concrete pylons with 28 stays fanning over the 110 m main span and the side span, two tracks with parapets and overhead line, and an 8 m timber-and-asphalt shared-use path hung beneath the girder under painted art panels. Original procedural free-standing model (no road, no HD road fitting).",
+      "manifest": "/models/bridges/tawatina-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tawatina-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tawatina-bridge --no-check",
+        "provenance": "Original procedural authoring, 2026-10-14. Mapped outline, Valley Line track ways and the cycleway © OpenStreetMap contributors, ODbL 1.0; ground heights read from AWS Terrarium tiles (Mapzen/USGS/NRCan terrain sources) to set the terrain terraces. Reference photographs, consulted solely as visual references and kept in ignored scratch (no photo, texture, scan or third-party mesh is shipped): \"Tawatinâ Bridge, Edmonton.jpg\" by Matthew Boonstra (CC BY-SA 4.0); \"Tawatinâ Bridge construction 2020.jpg\" by Thankyoubaby (CC BY-SA 4.0); \"Tawatina Bridge (52027148195).jpg\", \"(52026631751).jpg\" and \"(52026630596).jpg\" by Mack Male (CC BY-SA 2.0); \"Benches on the Tawatinâ Bridge pedestrian path.jpg\" by Sdkb (CC BY-SA 4.0).",
+        "references": [
+          {
+            "label": "Wikipedia: Tawatinâ Bridge",
+            "url": "https://en.wikipedia.org/wiki/Tawatin%C3%A2_Bridge"
+          },
+          {
+            "label": "Structurae: Tawatinâ Bridge (spans, deck dimensions)",
+            "url": "https://structurae.net/en/structures/tawatina-bridge"
+          },
+          {
+            "label": "Dialog Design: tawatinâ Bridge connected (28 stay cables)",
+            "url": "https://www.dialogdesign.ca/stories/major-milestone-reached-for-edmontons-valley-line-lrt-tawatina-bridge-connected/"
+          },
+          {
+            "label": "OSM mapped bridge outline",
+            "url": "https://www.openstreetmap.org/way/570036448"
+          },
+          {
+            "label": "Commons: Tawatinâ Bridge, Edmonton, Matthew Boonstra, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tawatin%C3%A2_Bridge,_Edmonton.jpg"
+          },
+          {
+            "label": "Commons: Tawatina Bridge, Mack Male, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tawatina_Bridge_(52027148195).jpg"
+          },
+          {
+            "label": "Commons: Benches on the pedestrian path, Sdkb, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Benches_on_the_Tawatin%C3%A2_Bridge_pedestrian_path.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tawatina-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=tawatina-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=tawatina-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=tawatina-bridge&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=tawatina-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=tawatina-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=tawatina-bridge&view=underside"
+          },
+          {
+            "label": "Pylons",
+            "url": "/asset-preview.html?asset=tawatina-bridge&view=tower"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-tawatina-bridge.md",
+      "notes": "Sourced: 261 m, three spans 100 + 110 + 50 m, 11 m upper deck, 3.5 m deep box girder, 8 m hung path, 28 stays, one pylon pair, extradosed concrete. Mapped: outline and bearing 0.57 deg east of north, pylon pier at the Valley Line way break, tracks 4.5 m apart, cycleway extent. Estimated from photographs: pylon height (16 m above the deck), lean (9 deg), section and taper, the seven-a-side stay layout, haunch depths (5.0 m / 4.4 m), deck 14 m above the river-level datum (the flat map has no valley), path 4.8 m above it, ramping down 5 % to a south end wall 1.9 m up and rising 3 % to a north end wall 5.2 m up where it meets the bank (heights follow the Terrarium profile along the axis so the path stays above the terrain in Full 3D world), parapet, mast and luminaire detail, the soffit art panel pattern (stylised colour blocks, no artwork reproduced). Which end carries the pylons is inferred from the way break and the photographs. Guideway approaches (not part of the 261 m structure): the south girder continues 247 m at 5.5 % to the ground on twin-leg piers every 32 m along the mapped Valley Line viaduct (OSM ways 1221895802 / 1221212789 / 1221212818 / 672849775, swinging west); the north one runs straight to a modelled concrete portal at u = 169.5, the toe of the hill (the mapped tunnel starts at u = 172; the terrain lattice puts the hill there): a headwall with a dark opening, splayed wing walls and a short recess the tracks and wires run into; in Full 3D world the terrain pad holds the cutting down to it and the hill covers the ground behind. Overhead line: every approach mast carries both wires on two arms, the first span starts on the deck-end wire. Far LOD drops panels, approach masts and wires (it keeps the portal), running rails and parapet posts.",
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "westminster-abbey-mission",
+      "name": "Westminster Abbey (Mission)",
+      "kind": "building",
+      "location": "34224 Dewdney Trunk Road, Mission, British Columbia",
+      "status": "ready",
+      "description": "Westminster Abbey, the Benedictine abbey on the hill above Mission, BC: the Abbatial Church of Saint Joseph (1982), a square concrete church of saw-tooth bays with tall lancet windows and a low roof with a finial, the slim Pfitzer Memorial Bell Tower (a pointed concrete arch with a through opening, a perforated screen and a cross), a covered walkway, and the three-storey monastery wings with low red roofs.",
+      "manifest": "/models/buildings/westminster-abbey-mission.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/westminster-abbey-mission/geometry.js",
+        "build": "pnpm build:top-cities-landmarks westminster-abbey-mission",
+        "provenance": "Original procedural geometry authored 2026-10-15 (geometry.js, westminster-abbey-mission-parts.js, -plan.js, -rings.js) from the mapped OSM outlines (ways 90078404, 411108371, 411108372, 90078880, 385780101, 90078385, 90078430; © OpenStreetMap contributors, ODbL 1.0) and one Wikimedia Commons photograph viewed to compare proportions and not shipped: 'Westminster Abbey, Mission, BC 01' (Joe Mabel, CC BY-SA 3.0). No scan, third-party mesh or texture is used.",
+        "references": [
+          {
+            "label": "Wikipedia · Westminster Abbey (British Columbia)",
+            "url": "https://en.wikipedia.org/wiki/Westminster_Abbey_(British_Columbia)"
+          },
+          {
+            "label": "Westminster Abbey (Mission, BC)",
+            "url": "https://westminsterabbey.ca/"
+          },
+          {
+            "label": "OSM footprint · way 90078404 (church)",
+            "url": "https://www.openstreetmap.org/way/90078404"
+          },
+          {
+            "label": "OSM footprint · way 90078880 (bell tower)",
+            "url": "https://www.openstreetmap.org/way/90078880"
+          },
+          {
+            "label": "Photo · Westminster Abbey, Mission, BC 01 (Joe Mabel, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Westminster_Abbey,_Mission,_BC_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/westminster-abbey-mission/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=westminster-abbey-mission&view=facade",
+        "views": [
+          {
+            "label": "Church from the south-west",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=facade"
+          },
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=overview"
+          },
+          {
+            "label": "Roofs",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=roof"
+          },
+          {
+            "label": "Bell tower",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=tower"
+          },
+          {
+            "label": "Monastery wings",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=wings"
+          },
+          {
+            "label": "East side",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=east"
+          },
+          {
+            "label": "South side",
+            "url": "/asset-preview.html?asset=westminster-abbey-mission&view=south"
+          }
+        ]
+      },
+      "notes": "Sourced: the plan (mapped OSM outlines: church about 52 x 34 m with its arms, saw-tooth wall on the compass axes; tower 6.5 x 5.9 m; wings tagged building:levels=3; walkway levels=0), church built 1982 and tower by Asbjorn Gathe (architect). Estimated from the single Commons photograph: church wall 15 m, sanctuary roof one step (1.1 m) higher with a finial to 18.5 m, tower apex 28 m plus a 3.2 m cross (31.2 m), wing eaves 10.4 m with a 1.9 m low hip, lancet size and the pinwheel placement on one face of every saw-tooth bay, the entrance canopy on the north arm and the walkway deck at 3.3-3.6 m. The church stands on an open undercroft of concrete piers round a recessed brick core under a slab at 4.3 m (photo-based; the mapped plan and the 15 m roof datum are kept), the tower is 4.4 m deep tapering to 65 % with raised arch ribs and a perforated cell screen, and the lancets are dark glazing inside concrete surrounds. Not modelled: the hexagonal chapel (way 90078379), garage and farm buildings, interior, trees. Near 3906 triangles / 8 draws / 202 KB; far 2039 / 7 / 110 KB.",
+      "documentation": "docs/assets/top-cities-westminster-abbey-mission.md",
+      "city": "Mission",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

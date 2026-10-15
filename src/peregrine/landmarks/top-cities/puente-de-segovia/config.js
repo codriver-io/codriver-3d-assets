@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'puente-de-segovia', name: "Puente de Segovia", kind: 'bridge',
   ready: false,
   origin: [-3.7228546, 40.4140243],
-  height: 13.75,
+  height: 4.65,
   padM: 60,
   frontageBearing: 0,
 };
