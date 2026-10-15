@@ -1,0 +1,65 @@
+{
+  "id": "san-fernando-cathedral",
+  "name": "San Fernando Cathedral",
+  "kind": "building",
+  "origin": [
+    -98.49432,
+    29.42456
+  ],
+  "height": 25.7,
+  "padM": 45,
+  "frontageBearing": 94.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "East front onto Main Plaza (94.5° outward, baked in) with twin belfry towers, pinnacled centre gable and rose window, three pointed portals; nave, aisles and the low sanctuary dome of the 1738 church at the west end, on the mapped stepped west block. Plan from OSM way 80647022; the model stays within 0.8 m of it (buttresses and eaves). All heights, openings and the dome are photo estimates, not a survey. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/san-fernando-cathedral-near.glb",
+      "bytes": 758700,
+      "triangles": 12016,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -14.542620658874512,
+          -1.9073486612342094e-7,
+          -12.246809959411621
+        ],
+        "max": [
+          38.01642990112305,
+          25.700000762939453,
+          15.725855827331543
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/san-fernando-cathedral-far.glb",
+      "bytes": 111120,
+      "triangles": 1705,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -14.542620658874512,
+          -1.9073486612342094e-7,
+          -12.246294975280762
+        ],
+        "max": [
+          38.01642990112305,
+          25.700000762939453,
+          15.725855827331543
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/san-fernando-cathedral/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

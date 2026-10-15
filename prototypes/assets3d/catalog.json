@@ -29454,6 +29454,362 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "dames-point-bridge",
+      "name": "Dames Point Bridge",
+      "kind": "bridge",
+      "location": "Jacksonville, Florida",
+      "status": "ready",
+      "description": "I-295 East Beltway over the St Johns River: two concrete H-pylons with chevron struts, dense parallel (harp) stays in vertical planes, a 396 m main span over a crested deck and the long concrete approach viaducts.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/dames-point-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks dames-point-bridge --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-14. Geographic alignment © OpenStreetMap contributors (ODbL 1.0): ways 10891837, 10891841 and adjoining motorway ways. Reference-only photos (not shipped): Dames Point Bridge, Jacksonville FL Pano 2 and 769, Jonathan Zander (Digon3), CC BY-SA 3.0; Dames Point Bridge - 17 June 2013 and at Night, Tonopia, CC BY-SA 3.0; US Navy 081010-N-0486G-003, Daniel Gay, public domain; Long bridge (Unsplash), Lance Asper, CC0 (licences checked at Commons). Esri World Imagery aerial used reference-only to place the pylons and dolphins. No photograph, texture, traced mesh or capture shipped.",
+        "references": [
+          {
+            "label": "Wikipedia: 1,300 ft main span, 175 ft clearance, 471 ft height, 106 ft width, harp arrangement",
+            "url": "https://en.wikipedia.org/wiki/Dames_Point_Bridge"
+          },
+          {
+            "label": "OSM mapped bridge carriageway",
+            "url": "https://www.openstreetmap.org/way/10891837"
+          },
+          {
+            "label": "OSM air-gap sensor at mid-channel",
+            "url": "https://www.openstreetmap.org/node/12215240468"
+          },
+          {
+            "label": "Digon3, CC BY-SA 3.0 photo (side elevation)",
+            "url": "https://commons.wikimedia.org/wiki/File:Dames_Point_Bridge,_Jacksonville_FL_Pano_2.jpg"
+          },
+          {
+            "label": "Digon3, CC BY-SA 3.0 photo (oblique pylons)",
+            "url": "https://commons.wikimedia.org/wiki/File:Dames_Point_Bridge,_Jacksonville_FL_769.JPG"
+          },
+          {
+            "label": "Tonopia, CC BY-SA 3.0 night photo",
+            "url": "https://commons.wikimedia.org/wiki/File:Dames_Point_Bridge_at_Night_-_17_June_2013.jpg"
+          },
+          {
+            "label": "US Navy, public domain photo (pylon and deck underside)",
+            "url": "https://commons.wikimedia.org/wiki/File:US_Navy_081010-N-0486G-003_The_guided-missile_frigate_USS_Stephen_W._Groves_(FFG_29)_transits_under_the_Dames_Point_Bridge,_one_of_Jacksonville%27s_many_bridges,_as_they_make_their_way_to_downtown_Jacksonville.jpg"
+          },
+          {
+            "label": "Esri World Imagery, reference-only aerial",
+            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/dames-point-bridge/geometry.js"
+      },
+      "notes": "Sourced: 1,300 ft main span, 175 ft clearance, 471 ft pylons, 106 ft width, harp in vertical planes (main pairs vertical, side pairs horizontal). Estimated: 198.12 m side spans, pylon/strut sections and levels (photo-scaled), 18 stay positions per half harp, 2.0 m deck depth, 8 km crest radius, 48.77 m approach spans, bent form, lamp spacing. Pylons placed from Esri aerial and the OSM air-gap sensor. Modelled 3,741 m: the mapped bridge ways plus 480 m of the north approach as an embankment with vertical retaining walls (assumed form) so the flat-map north grade is 4.52 % (south 2.62 %); ending at the mapped bridge end would need 7.3 %. Main-span harps leave a 54 m central gap. Near 41,436 tris / 20 draws / 1.88 MB; far 13,732 / 6 / 0.54 MB. Zero depth-cycle edges. Landing apron of buried fill found in the first app capture and fixed. Fenders round the pile caps and pylon floodlighting not modelled. Review g2a fix (2026-10-14): in Full 3D world the slab and fill tops were single parapet-to-parapet chords that the per-vertex terrain clamp pushed through the carriageways at the south landing; they now break at the pavement edges and median wherever the deck is under 20 m, pinned by a non-planar-bank test, and both landings were recaptured in both modes and directions.",
+      "documentation": "docs/assets/top-cities-dames-point-bridge.md",
+      "manifest": "/models/bridges/dames-point-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=dames-point-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=overview"
+          },
+          {
+            "label": "Facade (south-west shore)",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=facade"
+          },
+          {
+            "label": "Back (north-east)",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=back"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=roof"
+          },
+          {
+            "label": "Pylon",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=tower"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=underside"
+          },
+          {
+            "label": "Stay anchors and struts",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=detail"
+          },
+          {
+            "label": "North abutment",
+            "url": "/asset-preview.html?asset=dames-point-bridge&view=approach"
+          }
+        ]
+      },
+      "city": "Jacksonville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "high-level-bridge-edmonton",
+      "name": "High Level Bridge",
+      "kind": "bridge",
+      "location": "Edmonton, Alberta",
+      "status": "ready",
+      "description": "Original procedural 1913 double-deck black steel bridge: three deep river Pratt spans on four concrete piers, steel land trestles, lower southbound road and upper streetcar track.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/high-level-bridge-edmonton/geometry.js",
+        "build": "pnpm build:top-cities-landmarks high-level-bridge-edmonton --no-check",
+        "provenance": "Original texture-free procedural geometry, October 2026. OSM © OpenStreetMap contributors, ODbL 1.0. Photographs are study references only: 1.jpg | File:North Saskatchewan River circa 1913.jpg | AnonymousUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:North_Saskatchewan_River_circa_1913.jpg\n2.jpg | File:High Level Bridge, Edmonton, Alberta, 2026-09-27 02.jpg | Chris Woodrich | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:High_Level_Bridge,_Edmonton,_Alberta,_2026-09-27_02.jpg\n3.jpg | File:High Level Bridge, Edmonton, Alberta.jpg | Provincial Archives of Alberta | No restrictions | https://commons.wikimedia.org/wiki/File:High_Level_Bridge,_Edmonton,_Alberta.jpg\n4.jpg | File:Edmonton Sourdough Raft Race.jpg | Taken July 15, 2001 by Kmf164 | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Edmonton_Sourdough_Raft_Race.jpg\n",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/High_Level_Bridge_(Edmonton)"
+          },
+          {
+            "label": "City heritage fact sheet",
+            "url": "https://www.edmonton.ca/sites/default/files/public-files/documents/HighLevelBridgeFactSheet.pdf"
+          },
+          {
+            "label": "Edmonton Radial Railway Society history",
+            "url": "https://www.edmontonstreetcars.ca/high-level-bridge5d312111"
+          },
+          {
+            "label": "Current bridge photograph — Chris Woodrich, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:High_Level_Bridge,_Edmonton,_Alberta,_2026-09-27_02.jpg"
+          },
+          {
+            "label": "Historic bridge photograph — Provincial Archives of Alberta, no restrictions",
+            "url": "https://commons.wikimedia.org/wiki/File:High_Level_Bridge,_Edmonton,_Alberta.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/high-level-bridge-edmonton/geometry.js"
+      },
+      "notes": "Heritage dimensions: 2550 ft length, 156 ft rail-deck base above mean water, 20 ft deck separation, 39 ft deck width, three 288 ft river spans. Lower road datum derived as 41.4528 m; OSM curved bridge roadway 792.56 m. Original procedural black steel trusses, concrete river piers, land trestles, independent north upper rail and mapped south track divergence. Estimated sections, lacing, supports, lighting and world elevation. Narrow neutral grass embankments follow mapped adjoining tram ways with 8 m crests and 1:1.5 sides to locally fitted grade, constrained before road corridors; retained south wall and north bent remain backed in both LODs, with no terminal buffer; dark #3a342d timber narrowed to expose black top chords. Mapped north extensions reduce flat maximum grades to 8.41%, 9.45%, 10.04%. Near 78048 triangles/12 draws/3626.46 KiB; far 11978/10/320.83 KiB; far omits rails, wire and handrails, keeps X-braced trestle silhouette; no geometry QA issues or depth cycles. QA evidence in linked doc; offline real-OSM corridor cache, not complete city coverage. No deployment or hardware certification.",
+      "documentation": "docs/assets/top-cities-high-level-bridge-edmonton.md",
+      "city": "Edmonton",
+      "manifest": "/models/bridges/high-level-bridge-edmonton.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=high-level-bridge-edmonton",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=high-level-bridge-edmonton&view=detail"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "san-fernando-cathedral",
+      "name": "San Fernando Cathedral",
+      "kind": "building",
+      "location": "San Antonio, Texas",
+      "status": "ready",
+      "description": "Original texture-free procedural model of San Fernando Cathedral on Main Plaza: the 1868 Gothic Revival east front with twin belfry towers, a pinnacled central gable, rose window and three pointed portals facing the plaza, the gabled nave with side aisles, and the low sanctuary dome of the 1738 church at the west end.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/san-fernando-cathedral/geometry.js",
+        "build": "pnpm build:top-cities-landmarks san-fernando-cathedral",
+        "provenance": "Original procedural geometry authored 2026-10-14 for Codriver from the OSM plan (way 80647022) and attributed photographs; no mesh, scan, photo or texture reused or committed. Mapped outline © OpenStreetMap contributors (ODbL 1.0). Visual references kept only in ignored tmp: File:San Fernando Cathedral.jpg, Daniel Schwen, CC BY-SA 4.0; File:San Fernando Cathedral July 2017 8.jpg, Michael Barera, CC BY-SA 4.0; File:San Antonio- The Saga light show.jpg, Musical Bridges Around the World, CC BY-SA 4.0.",
+        "references": [
+          {
+            "label": "Cathedral of San Fernando (San Antonio): Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cathedral_of_San_Fernando_(San_Antonio)"
+          },
+          {
+            "label": "San Fernando Cathedral: official site",
+            "url": "https://sfcathedral.org/"
+          },
+          {
+            "label": "San Fernando Cathedral: SAH Archipedia",
+            "url": "https://sah-archipedia.org/node/48543"
+          },
+          {
+            "label": "San Fernando Cathedral.jpg: Daniel Schwen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Fernando_Cathedral.jpg"
+          },
+          {
+            "label": "San Fernando Cathedral July 2017 8.jpg: Michael Barera, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:San_Fernando_Cathedral_July_2017_8.jpg"
+          },
+          {
+            "label": "OSM cathedral footprint",
+            "url": "https://www.openstreetmap.org/way/80647022"
+          },
+          {
+            "label": "San Fernando Cathedral east front: UNT Libraries / San Antonio Conservation Society",
+            "url": "https://texashistory.unt.edu/ark:/67531/metapth459982/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/san-fernando-cathedral/geometry.js"
+      },
+      "notes": "Plan from OSM way 80647022 (axis 4.5° off east-west, baked in): the twin-tower front stands on the mapped 22.5 m east edge facing Main Plaza (frontage 94.5°), both aisles run to the mapped long walls, the north aisle stops at the mapped north indent (a low link fills it), and the old sanctuary block with the dome follows the mapped west end including its stepped south-west corner. Every vertex is within 0.8 m of the ring (front and flank buttresses, eaves); the 2026-10-14 review fix reversed the earlier west-facing placement, which had pushed the south-west tower ~9 m outside the outline. Heights are estimates scaled from door and passer-by heights in one front photograph (towers to cross 25.7 m, nave ridge 16.2 m); no survey dimension was found. The sanctuary dome, drum and block are from descriptions (apse and low dome of the original 1738-55 church) and the plan, not a photograph of the west end; its height and the dome position are the least certain part. Side and rear windows, buttress spacing and the roof pitch are typical-Gothic estimates; tracery, statues, stained glass, the Cathedral Centre and the plaza are omitted. Far keeps the front, towers and dome with gable-headed openings, no ashlar lines and no mouldings.",
+      "documentation": "docs/assets/top-cities-san-fernando-cathedral.md",
+      "manifest": "/models/buildings/san-fernando-cathedral.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=san-fernando-cathedral",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=overview"
+          },
+          {
+            "label": "East front (Main Plaza)",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=facade"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=street"
+          },
+          {
+            "label": "Pinnacles and rose window",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=detail"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=back"
+          },
+          {
+            "label": "Sanctuary dome",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=dome"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=san-fernando-cathedral&view=roof"
+          }
+        ]
+      },
+      "city": "San Antonio",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "stedelijk-museum",
+      "name": "Stedelijk Museum",
+      "kind": "building",
+      "location": "Museumplein 10, Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Weissman's 1895 red-brick museum on Museumplein beside the 2012 Benthem Crouwel bathtub: a white cantilever about 40 m over a glazed lobby, with the dark lettered screen at the east end. The north risalit keeps the crow-stepped gable, clock, open lantern and 28 m spire; four corner turrets stop at the tagged 24 m.",
+      "manifest": "/models/buildings/stedelijk-museum.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/stedelijk-museum/geometry.js",
+        "build": "pnpm build:top-cities-landmarks stedelijk-museum",
+        "provenance": "Original procedural geometry authored 2026-10-14 (Codriver). The plan is the centroid of OSM way 44508819 plus the building:part ways in footprint.js (shared Overpass helper; © OpenStreetMap contributors, ODbL 1.0). Heights 14 m, 24 m and 28 m are the OSM tags. Wikimedia photographs were viewed for proportion and are not redistributed: Mark Ahsmann, letter wall (CC BY-SA 3.0); John Lewis Marshall, the new wing at night (CC BY-SA 4.0); Sergé Technau / Rijksdienst voor het Cultureel Erfgoed, the Paulus Potterstraat gable (CC BY-SA 4.0); Aarnout2007, the wing under construction (CC BY-SA 3.0). The dossier contact sheet also contains Malevich and van Doesburg works and the former Post CS building; those are not this landmark and were not used for massing. No third-party mesh, texture or photograph is in the repository or the GLBs.",
+        "references": [
+          {
+            "label": "English Wikipedia · Stedelijk Museum Amsterdam",
+            "url": "https://en.wikipedia.org/wiki/Stedelijk_Museum_Amsterdam"
+          },
+          {
+            "label": "OSM way 44508819 · Stedelijk Museum outline",
+            "url": "https://www.openstreetmap.org/way/44508819"
+          },
+          {
+            "label": "OSM way 754299892 · bathtub roof",
+            "url": "https://www.openstreetmap.org/way/754299892"
+          },
+          {
+            "label": "Wikimedia Commons · letter wall (Mark Ahsmann, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:20130420_Amsterdam_33_at_Stedelijk_Museum.JPG"
+          },
+          {
+            "label": "Wikimedia Commons · new wing at night (John Lewis Marshall, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · Paulus Potterstraat gable (Sergé Technau / RCE, CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Overzicht_museum,_middenpartij_met_risaliet_en_trapgevel_-_Amsterdam_-_20409360_-_RCE.jpg"
+          },
+          {
+            "label": "Wikimedia Commons · wing in 2012 (Aarnout2007, CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Stedelijk_Museum_Amsterdam.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stedelijk-museum/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=stedelijk-museum&view=overview",
+        "views": [
+          {
+            "label": "Museumplein, the bathtub in front of the brick block",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=overview"
+          },
+          {
+            "label": "South front, the white cheek and the glazed lobby",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=facade"
+          },
+          {
+            "label": "Paulus Potterstraat, the crow-stepped gable",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=north"
+          },
+          {
+            "label": "Gable, clock and lantern",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=gable"
+          },
+          {
+            "label": "East letter wall",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=letters"
+          },
+          {
+            "label": "Street level under the canopy",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=street"
+          },
+          {
+            "label": "Roof plan",
+            "url": "/asset-preview.html?asset=stedelijk-museum&view=roof"
+          }
+        ]
+      },
+      "notes": "Sourced: Weissman 1895 red-brick block, Benthem Crouwel wing opened 23 September 2012, OSM eaves 14 m (way 754299893), corner turrets 24 m (ways 754299894–897), north risalit 28 m (way 754299889), letter screen read from the tagged 17 m glass part (way 754299890). The canopy measures 41.0 m from the south wall to the roof ring, against the published figure of about 40 m. The white cheek is one closed skin: it shares the roof lip and stays on the outer plan until the last metre tucks to the glass. Corner towers are a steep flared slate roof, an open lantern and a slate spike to 24 m. Estimated: slate ridge 20.6 m, the hem (about 3.9 m, about 0.35 m higher at the corners), the gable's six steps and open lantern, and the Thonik letter positions. The white tub stays light at night. Soffit is not emitted; both LODs are 8 draws and far keeps one quad per window. Not modelled: the underground galleries, the panel joints of the seamless composite skin, the glass pavilion and Albert Heijn next door, and the former Post CS building. Near 11,898 triangles / 8 draws / 549,752 bytes; far 5,276 / 8 / 267,624 bytes.",
+      "documentation": "docs/assets/top-cities-stedelijk-museum.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

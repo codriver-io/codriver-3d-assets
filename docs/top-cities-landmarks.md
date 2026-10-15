@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (212 released)
+## The collection (216 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -220,6 +220,10 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `queensborough-bridge` | Queensborough Bridge | New Westminster | bridge, road-fitted |
 | `bridge-of-peace-tbilisi` | Bridge of Peace | Tbilisi | bridge |
 | `allianz-arena` | Allianz Arena | Munich | building |
+| `high-level-bridge-edmonton` | High Level Bridge | Edmonton | bridge, road-fitted |
+| `stedelijk-museum` | Stedelijk Museum | Amsterdam | building |
+| `san-fernando-cathedral` | San Fernando Cathedral | San Antonio | building |
+| `dames-point-bridge` | Dames Point Bridge | Jacksonville | bridge, road-fitted |
 
 ## A landmark is a folder
 
