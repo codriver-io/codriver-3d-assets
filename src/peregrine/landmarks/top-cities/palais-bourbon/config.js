@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'palais-bourbon', name: "Palais Bourbon (Assemblée nationale)", kind: 'building',
   ready: false,
-  origin: [2.31859, 48.86204],
-  height: 30,
+  origin: [2.31873, 48.86173],
+  height: 27.4,
   padM: 60,
   frontageBearing: 0,
 };

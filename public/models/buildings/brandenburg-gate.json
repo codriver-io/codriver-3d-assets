@@ -1,0 +1,74 @@
+{
+  "id": "brandenburg-gate",
+  "name": "Brandenburg Gate",
+  "kind": "building",
+  "origin": [
+    13.37770245,
+    52.516274925
+  ],
+  "height": 26,
+  "padM": 36,
+  "frontageBearing": 83.4856985601169,
+  "axisDeg": 96.5143014398831,
+  "columns": [
+    -15.25,
+    -9.85,
+    -4.2,
+    3.25,
+    8.85,
+    15.25
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat plaza grade y=0; rigid foundations, no terrain/sea-level/Mercator stretch baked.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1791 gate with later portico wings; dimensions from visitBerlin and mapped OSM parts. Quadriga, relief, Doric details and wing roof pitches are original simplified estimates. Rotation is baked once; Cityscape and Full 3D world integration are checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/brandenburg-gate-near.glb",
+      "bytes": 1163244,
+      "triangles": 33936,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -8.886921882629395,
+          -9.536743306171047e-8,
+          -33.26558303833008
+        ],
+        "max": [
+          26.83397674560547,
+          25.967527389526367,
+          33.228416442871094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/brandenburg-gate-far.glb",
+      "bytes": 313404,
+      "triangles": 6928,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -8.886921882629395,
+          -9.536743306171047e-8,
+          -33.26252746582031
+        ],
+        "max": [
+          26.83397674560547,
+          25.971784591674805,
+          33.228416442871094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/brandenburg-gate/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

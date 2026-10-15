@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'pont-de-l-alma', name: "Pont de l'Alma", kind: 'bridge',
   ready: false,
-  origin: [2.3018, 48.8635],
-  height: 12,
+  origin: [2.30175495,48.863436325],
+  height: 14.65,
   padM: 60,
   frontageBearing: 0,
 };

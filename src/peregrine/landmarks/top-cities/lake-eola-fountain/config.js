@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'lake-eola-fountain', name: "Lake Eola fountain", kind: 'building',
   ready: false,
-  origin: [-81.37278, 28.54361],
-  height: 12,
+  origin: [-81.37291941578947, 28.543637715789476],
+  height: 15,
   padM: 60,
   frontageBearing: 0,
 };

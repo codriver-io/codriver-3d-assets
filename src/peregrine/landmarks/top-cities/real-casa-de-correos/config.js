@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'real-casa-de-correos', name: "Real Casa de Correos (Puerta del Sol)", kind: 'building',
   ready: false,
   origin: [-3.7038, 40.4164],
-  height: 30,
+  height: 34.6,
   padM: 60,
   frontageBearing: 0,
 };

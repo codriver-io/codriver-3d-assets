@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'gateway-arch', name: "Gateway Arch", kind: 'building',
   ready: false,
-  origin: [-90.185, 38.6246],
-  height: 192,
+  origin: [-90.18496865, 38.6246122],
+  height: 192.024,
   padM: 60,
   frontageBearing: 0,
 };

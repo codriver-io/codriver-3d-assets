@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (249 released)
+## The collection (254 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -257,6 +257,11 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `skybridge-vancouver` | SkyBridge | New Westminster | bridge |
 | `munttoren` | Munttoren | Amsterdam | building |
 | `w-r-bennett-bridge` | W. R. Bennett Bridge | Kelowna | bridge, road-fitted |
+| `stade-de-france` | Stade de France | Saint-Denis | building |
+| `brandenburg-gate` | Brandenburg Gate | Berlin | building |
+| `george-c-king-bridge` | George C. King Bridge | Calgary | bridge |
+| `frost-bank-tower` | Frost Bank Tower | Austin | building |
+| `georgia-aquarium` | Georgia Aquarium | Atlanta | building |
 
 ## A landmark is a folder
 
