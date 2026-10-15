@@ -11,8 +11,8 @@ const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'ut
 // When each model reached the library and when its exported geometry last changed, from the history of
 // its committed files: { id: { added, updated? } } as YYYY-MM-DD. Following the first parent dates a pull
 // request's models by its merge, the day they went public. A model changed again on the day it was
-// added has no separate update. Without full history (a shallow clone) there are no dates, and the
-// library hides its date sorting.
+// added has no separate update, and an uncommitted model is added today. Without full history (a shallow
+// clone) there are no dates, and the library hides its date sorting.
 export function modelDates(assets, root = ROOT) {
   let log;
   try {
@@ -37,5 +37,8 @@ export function modelDates(assets, root = ROOT) {
     if (owner.glb && !d.updated && !METADATA_ONLY.has(commit)) d.updated = date;
   }
   for (const d of Object.values(dates)) if (d.updated === d.added) delete d.updated;
+  // A model with no history yet is being added by the uncommitted change this build is for: date it today.
+  const today = new Date().toISOString().slice(0, 10);
+  for (const entry of assets) dates[entry.id] ||= { added: today };
   return dates;
 }
