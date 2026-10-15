@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'frost-bank-tower', name: "Frost Bank Tower", kind: 'building',
   ready: false,
   origin: [-97.74269, 30.26649],
-  height: 158,
+  height: 157,
   padM: 60,
   frontageBearing: 0,
 };

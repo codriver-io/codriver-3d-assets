@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'georgia-aquarium', name: "Georgia Aquarium", kind: 'building',
   ready: false,
   origin: [-84.39472, 33.76278],
-  height: 30,
+  height: 37,
   padM: 60,
   frontageBearing: 0,
 };
