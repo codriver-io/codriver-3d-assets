@@ -92,6 +92,11 @@
     "country": "Romania",
     "continent": "Europe"
   },
+  "Burlington": {
+    "country": "Canada",
+    "region": "Ontario",
+    "continent": "North America"
+  },
   "Caen": {
     "country": "France",
     "continent": "Europe"
@@ -251,6 +256,11 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Lake Louise": {
+    "country": "Canada",
+    "region": "Alberta",
+    "continent": "North America"
+  },
   "Larvik": {
     "country": "Norway",
     "continent": "Europe"
@@ -357,9 +367,19 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Ottawa": {
+    "country": "Canada",
+    "region": "Ontario",
+    "continent": "North America"
+  },
   "Paris": {
     "country": "France",
     "continent": "Europe"
+  },
+  "Pasadena": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
   },
   "Pitt Meadows": {
     "country": "Canada",
@@ -480,12 +500,20 @@
     "region": "British Columbia",
     "continent": "North America"
   },
+  "Versailles": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Victoria": {
     "country": "Canada",
     "region": "British Columbia",
     "continent": "North America"
   },
   "Villeurbanne": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Vincennes": {
     "country": "France",
     "continent": "Europe"
   },
@@ -498,6 +526,10 @@
     "country": "Canada",
     "region": "Manitoba",
     "continent": "North America"
+  },
+  "Wuppertal": {
+    "country": "Germany",
+    "continent": "Europe"
   },
   "Yerevan": {
     "country": "Armenia",

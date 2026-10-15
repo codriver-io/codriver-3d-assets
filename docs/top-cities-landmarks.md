@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (278 released)
+## The collection (281 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -286,6 +286,9 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `lake-eola-fountain` | Lake Eola fountain | Orlando | building |
 | `parthenon-nashville` | The Parthenon (Nashville) | Nashville | building |
 | `palais-du-luxembourg` | Palais du Luxembourg (Sénat) | Paris | building |
+| `tour-incity` | Tour Incity | Lyon | building |
+| `custom-house-dublin` | Custom House | Dublin | building |
+| `institut-du-monde-arabe` | Institut du monde arabe | Paris | building |
 
 ## A landmark is a folder
 

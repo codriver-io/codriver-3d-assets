@@ -1,0 +1,65 @@
+{
+  "id": "custom-house-dublin",
+  "name": "Custom House",
+  "kind": "building",
+  "origin": [
+    -6.25319,
+    53.34868
+  ],
+  "height": 40,
+  "padM": 76,
+  "frontageBearing": 179.89,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local flat-map grade y=0; no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "James Gandon, completed 1791. Mapped envelope approximately 115 by 63 m, dome top 40 m from OSM. Two principal facade storeys; drum tiers, roof and sculptural detail photo-estimated. Modern courtyard and rear details simplified. Cityscape and Full 3D world integration not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/custom-house-dublin-near.glb",
+      "bytes": 835020,
+      "triangles": 15687,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -60.2400016784668,
+          -8.940697071579962e-10,
+          -31.937305450439453
+        ],
+        "max": [
+          59.84000015258789,
+          40,
+          32.5
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/custom-house-dublin-far.glb",
+      "bytes": 227640,
+      "triangles": 4695,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -60.459999084472656,
+          0,
+          -32.15730285644531
+        ],
+        "max": [
+          60.060001373291016,
+          40,
+          32.5
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/custom-house-dublin/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
