@@ -1,0 +1,65 @@
+{
+  "id": "los-angeles-union-station",
+  "name": "Los Angeles Union Station",
+  "kind": "building",
+  "origin": [
+    -118.23615775695308,
+    34.05605795849651
+  ],
+  "height": 38.71,
+  "padM": 145,
+  "frontageBearing": 280,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local pavement y=0; no absolute altitude or terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present historic Mission Moderne headhouse. Tower 127 ft (38.71 m), four 12 ft clocks from the official historic guide; plans from OSM relation 1483140 plus canopy ways 1409126574, 1409126588 and 1409126586. Hall heights, roof pitch, tower tiers and rear ranges estimated from photographs. Rotation -10 degrees baked in. Platforms and neighboring offices excluded. Both-mode local snapshot QA recorded separately; terrain and lifecycle certification are not implied.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/los-angeles-union-station-near.glb",
+      "bytes": 1054544,
+      "triangles": 17898,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -73.98011779785156,
+          0,
+          -132.54159545898438
+        ],
+        "max": [
+          113.86029052734375,
+          38.709999084472656,
+          127.65657043457031
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/los-angeles-union-station-far.glb",
+      "bytes": 497444,
+      "triangles": 7962,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -73.98011779785156,
+          0,
+          -132.54159545898438
+        ],
+        "max": [
+          113.86029052734375,
+          38.709999084472656,
+          127.65657043457031
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/los-angeles-union-station/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

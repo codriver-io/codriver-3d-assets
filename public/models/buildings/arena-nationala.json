@@ -1,0 +1,279 @@
+{
+  "id": "arena-nationala",
+  "name": "Arena Națională",
+  "kind": "building",
+  "origin": [
+    26.152495124390242,
+    44.437199604878046
+  ],
+  "height": 55,
+  "padM": 128,
+  "frontageBearing": 176.9,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          26.1512376,
+          44.4376709
+        ],
+        [
+          26.1512002,
+          44.4375108
+        ],
+        [
+          26.1511912,
+          44.4373502
+        ],
+        [
+          26.1512072,
+          44.4371806
+        ],
+        [
+          26.1512438,
+          44.4370142
+        ],
+        [
+          26.1512991,
+          44.4368509
+        ],
+        [
+          26.1513692,
+          44.4366945
+        ],
+        [
+          26.1514553,
+          44.4365493
+        ],
+        [
+          26.1515707,
+          44.4364087
+        ],
+        [
+          26.1517228,
+          44.4362901
+        ],
+        [
+          26.1519602,
+          44.4361834
+        ],
+        [
+          26.1521859,
+          44.436134
+        ],
+        [
+          26.1524076,
+          44.4361159
+        ],
+        [
+          26.1526315,
+          44.4361196
+        ],
+        [
+          26.1527583,
+          44.4361345
+        ],
+        [
+          26.1528889,
+          44.4361568
+        ],
+        [
+          26.1531142,
+          44.4362168
+        ],
+        [
+          26.1533211,
+          44.4362972
+        ],
+        [
+          26.1535085,
+          44.4364143
+        ],
+        [
+          26.1536436,
+          44.436549
+        ],
+        [
+          26.1537195,
+          44.4366917
+        ],
+        [
+          26.153759,
+          44.436848
+        ],
+        [
+          26.1537685,
+          44.4369981
+        ],
+        [
+          26.1537667,
+          44.437163
+        ],
+        [
+          26.1537382,
+          44.4373182
+        ],
+        [
+          26.1537001,
+          44.4374714
+        ],
+        [
+          26.1536333,
+          44.4376281
+        ],
+        [
+          26.1535513,
+          44.4377864
+        ],
+        [
+          26.1534515,
+          44.4379195
+        ],
+        [
+          26.153326,
+          44.4380365
+        ],
+        [
+          26.1531558,
+          44.4381396
+        ],
+        [
+          26.1529895,
+          44.4382011
+        ],
+        [
+          26.1527842,
+          44.438247
+        ],
+        [
+          26.1525693,
+          44.4382663
+        ],
+        [
+          26.1523522,
+          44.4382613
+        ],
+        [
+          26.1521412,
+          44.4382342
+        ],
+        [
+          26.1519302,
+          44.438195
+        ],
+        [
+          26.1517426,
+          44.438131
+        ],
+        [
+          26.1515765,
+          44.4380506
+        ],
+        [
+          26.151427,
+          44.4379449
+        ],
+        [
+          26.1513006,
+          44.4378102
+        ],
+        [
+          26.1512376,
+          44.4376709
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        26.1512376,
+        44.4376709
+      ],
+      [
+        26.1512991,
+        44.4368509
+      ],
+      [
+        26.1519602,
+        44.4361834
+      ],
+      [
+        26.1528889,
+        44.4361568
+      ],
+      [
+        26.1537195,
+        44.4366917
+      ],
+      [
+        26.1537001,
+        44.4374714
+      ],
+      [
+        26.1531558,
+        44.4381396
+      ],
+      [
+        26.1521412,
+        44.4382342
+      ],
+      [
+        26.1513006,
+        44.4378102
+      ]
+    ],
+    "datum": "median",
+    "featherM": 12
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local stadium apron grade y=0; rigid model, no absolute elevation or baked terrain.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Open/retracted roof state. OSM relation 2501757 gives 55 m and 10 levels; outer way 13450166 defines the envelope. Roof profile (7.5 m outer scallops), column rhythm, continuous red concourse, dark upper-tier back wall, seat pattern and storage hub are photo estimates. Cityscape and Full 3D world not tested; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/arena-nationala-near.glb",
+      "bytes": 1658288,
+      "triangles": 34100,
+      "drawCalls": 11,
+      "bounds": {
+        "min": [
+          -103.09947204589844,
+          0,
+          -118.11177825927734
+        ],
+        "max": [
+          100.68925476074219,
+          54.91961669921875,
+          119.9820785522461
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/arena-nationala-far.glb",
+      "bytes": 492728,
+      "triangles": 9398,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -103.09947204589844,
+          0,
+          -117.96209716796875
+        ],
+        "max": [
+          100.65740966796875,
+          54.91961669921875,
+          119.87297821044922
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arena-nationala/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

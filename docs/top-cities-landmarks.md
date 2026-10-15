@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (260 released)
+## The collection (266 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -268,6 +268,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `smithsonian-castle` | Smithsonian Institution Building (the Castle) | Washington | building |
 | `real-casa-de-correos` | Real Casa de Correos (Puerta del Sol) | Madrid | building |
 | `hotel-negresco` | Hôtel Negresco | Nice | building |
+| `gateway-arch` | Gateway Arch | St. Louis | building |
+| `arena-nationala` | Arena Națională | Bucharest | building |
+| `palais-bourbon` | Palais Bourbon (Assemblée nationale) | Paris | building |
+| `los-angeles-union-station` | Los Angeles Union Station | Los Angeles | building |
+| `zaanse-schans-windmills` | Zaanse Schans windmills | Zaandam | building |
+| `rogers-place` | Rogers Place | Edmonton | building |
 
 ## A landmark is a folder
 

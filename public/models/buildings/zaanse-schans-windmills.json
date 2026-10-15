@@ -1,0 +1,65 @@
+{
+  "id": "zaanse-schans-windmills",
+  "name": "Zaanse Schans windmills",
+  "kind": "building",
+  "origin": [
+    4.81715,
+    52.4747
+  ],
+  "height": 32,
+  "padM": 190,
+  "frontageBearing": 240,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Five individual mapped mills: De Huisman, De Gekroonde Poelenburg, De Kat, De Zoeker and Het Jonge Schaap. Heights, static sail bearings, cap profiles and facade details estimated from reference photographs. Het Jonge Schaap is the six-sided 2007 reconstruction; Poelenburg is a green paltrok. No landscape or river mesh.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/zaanse-schans-windmills-near.glb",
+      "bytes": 614804,
+      "triangles": 11310,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -48.6179084777832,
+          0,
+          -172.6618194580078
+        ],
+        "max": [
+          59.50772476196289,
+          29.401668548583984,
+          176.74229431152344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/zaanse-schans-windmills-far.glb",
+      "bytes": 427364,
+      "triangles": 7706,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -48.6179084777832,
+          0,
+          -172.6618194580078
+        ],
+        "max": [
+          59.50772476196289,
+          29.42949104309082,
+          176.74229431152344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/zaanse-schans-windmills/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
