@@ -1,0 +1,11 @@
+// Colorado Street Bridge: not yet released in the public library (stub).
+export const SPEC = {
+  id: 'colorado-street-bridge', name: "Colorado Street Bridge", kind: 'bridge',
+  ready: false,
+  origin: [-118.16414,34.14486],
+  height: 50.993,
+  padM: 60,
+  frontageBearing: 0,
+};
+export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
+export const MANIFEST = { elevationDatum: 'Local grade y=0.', attribution: 'Not yet released.', note: 'Stub: not yet released.' };

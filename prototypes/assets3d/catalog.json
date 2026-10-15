@@ -35320,6 +35320,255 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "custom-house-dublin",
+      "name": "Custom House",
+      "kind": "building",
+      "location": "Dublin, Ireland",
+      "status": "ready",
+      "description": "James Gandon’s long two-storey neoclassical Custom House: arched river-front wings, four-column Doric portico, corner pavilions, two open courts and green copper dome on a colonnaded drum topped by Commerce.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/custom-house-dublin/geometry.js",
+        "build": "pnpm build:top-cities-landmarks custom-house-dublin --no-check",
+        "provenance": "Original procedural geometry for Codriver, 2026-10-15; source MIT, model CC BY 4.0. No scan, traced mesh, photo or texture ships. Geography © OpenStreetMap contributors, ODbL 1.0. Comparison-only photographs: Dublin-Custom-House-Panorama-2012.JPG (Bjørn Christian Tørrissen, CC BY-SA 3.0), DublinTheCustomHouse-2014-10.jpg (Bjørn Christian Tørrissen, CC BY-SA 4.0); Early morning Crossing the LIffey - panoramio.jpg (andrew mcmillan, CC BY 3.0) and Dublin Customs House at night.jpg (Jimmy Harris, CC BY-SA 3.0); photograph licences verified at Commons, stored only in ignored scratch.",
+        "references": [
+          {
+            "label": "Heritage Ireland: Custom House, Gandon and exterior sculpture",
+            "url": "https://heritageireland.ie/places-to-visit/custom-house-visitor-centre/"
+          },
+          {
+            "label": "OSM parent building relation, courtyard voids and height",
+            "url": "https://www.openstreetmap.org/relation/610966"
+          },
+          {
+            "label": "OSM outer building footprint",
+            "url": "https://www.openstreetmap.org/way/23013986"
+          },
+          {
+            "label": "OSM dome, 40 m height",
+            "url": "https://www.openstreetmap.org/way/316947618"
+          },
+          {
+            "label": "River facade panorama: Bjørn Christian Tørrissen, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dublin-Custom-House-Panorama-2012.JPG"
+          },
+          {
+            "label": "Southwest facade: Bjørn Christian Tørrissen, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:DublinTheCustomHouse-2014-10.jpg"
+          },
+          {
+            "label": "Night facade: Jimmy Harris, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dublin_Customs_House_at_night.jpg"
+          },
+          {
+            "label": "Morning facade: andrew mcmillan, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Early_morning_Crossing_the_LIffey_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/custom-house-dublin/geometry.js"
+      },
+      "notes": "OSM envelope approximately 115 by 63 m plus west projection; south face bearing 179.89 degrees. Two visible principal storeys; OSM four levels include basement and penthouse. Dome and statue reach approximately 40 m. Drum stages, bays, porch, statue silhouettes, roof pitch and rear elevations are photo/mapping estimates; fine carving, interiors, flags and street furniture omitted. Model preserves both mapped courtyard voids. Security hut 1280902364 remains provider-owned.",
+      "documentation": "docs/assets/top-cities-custom-house-dublin.md",
+      "manifest": "/models/buildings/custom-house-dublin.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=custom-house-dublin&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=back"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=custom-house-dublin&view=plan"
+          }
+        ]
+      },
+      "city": "Dublin",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "institut-du-monde-arabe",
+      "name": "Institut du monde arabe",
+      "kind": "building",
+      "location": "1 Rue des Fossés Saint-Bernard, Paris, France",
+      "city": "Paris",
+      "status": "ready",
+      "description": "Jean Nouvel and Architecture Studio’s 1987 museum: a 240-panel geometric metal diaphragm screen, curved river wing, narrow slot and patio, white spiral book tower and roof terrace.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/institut-du-monde-arabe/geometry.js",
+        "build": "pnpm build:top-cities-landmarks institut-du-monde-arabe --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026; no third-party mesh or textures. Footprint © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs kept in ignored dossier: Fred Romero (CC BY 2.0), ActuaLitté (CC BY-SA 2.0), Guilhem Vellut (CC BY 2.0), Jean-Pierre Dalbéra (CC BY 2.0); titles and URLs in dossier refs/SOURCES.txt. Two additional architect-site photographs (2-40 and 5-32, photographer not specified, all rights reserved) consulted only as local reference, never redistributed.",
+        "references": [
+          {
+            "label": "IMA: building history, official 77 × 35 × 32 m envelope and 240 moucharabiehs",
+            "url": "https://www.imarabe.org/fr/batiment-et-son-histoire"
+          },
+          {
+            "label": "Ateliers Jean Nouvel: project, 1981–1987, design team and reference photographs",
+            "url": "https://www.jeannouvel.com/projets/institut-du-monde-arabe-ima/"
+          },
+          {
+            "label": "OpenStreetMap way 22870791, ODbL 1.0",
+            "url": "https://www.openstreetmap.org/way/22870791"
+          },
+          {
+            "label": "Fred Romero: Paris - Institut du Monde Arabe (27136624340), CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_-_Institut_du_Monde_Arabe_(27136624340).jpg"
+          },
+          {
+            "label": "ActuaLitté: Bibliothèque de l’Institut du monde arabe (33754227425), CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_de_l%27Institut_du_monde_arabe_(33754227425).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/institut-du-monde-arabe/geometry.js"
+      },
+      "notes": "Official overall dimensions and 240 panels; mapped provider way 22870791. Panel grid arrangement (24 × 10), iris geometry, north-wing 26.6 m roof, terrace, and spiral tower are estimates. Glass is opaque, and an intentional west-end open cutaway exposes the otherwise internal spiral. No motion, interior collections, facade calligraphy, temporary exhibitions or photo textures.",
+      "documentation": "docs/assets/top-cities-institut-du-monde-arabe.md",
+      "manifest": "/models/buildings/institut-du-monde-arabe.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=institut-du-monde-arabe&view=detail"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tour-incity",
+      "name": "Tour Incity",
+      "kind": "building",
+      "location": "Lyon, France",
+      "status": "ready",
+      "description": "Original procedural model of the completed 2015 Incity: a slender blue-glass tower with rounded corners, fine silver curtain-wall grid, a bevelled open crown rim at 170 m and a slender mast to 200 m.",
+      "manifest": "/models/buildings/tour-incity.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tour-incity/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tour-incity --no-check",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-15; no external mesh, photograph or texture. Mapped plan from OSM way 368018684 © OpenStreetMap contributors, ODbL 1.0. Reference-only dossier photos, kept in ignored tmp and not redistributed: Lyon Tour Incity 2.jpg — Zairon, CC BY-SA 4.0; Tour Incity Lyon.jpg — Aldg692VX, CC BY-SA 4.0; licences checked on the Wikimedia file pages. The unrelated La Défense photo in the dossier was excluded.",
+        "references": [
+          {
+            "label": "Valode & Pistre: Incity Tower, architect description, 2015, 200 m, double-skin glass facade",
+            "url": "https://v-p.com/en/projet/incity-tower/"
+          },
+          {
+            "label": "Lyon Part-Dieu: Incity tower, 200 m and 50 m mast",
+            "url": "https://www.lyon-partdieu.com/en/operations/incity-tower/"
+          },
+          {
+            "label": "Wikipedia: Tour Incity, 170 m roof, 154 m top floor, 39 storeys",
+            "url": "https://en.wikipedia.org/wiki/Tour_Incity"
+          },
+          {
+            "label": "OSM way 368018684: outline, 170 m height, 39 levels and roof direction 352.3 degrees",
+            "url": "https://www.openstreetmap.org/way/368018684"
+          },
+          {
+            "label": "Reference photograph: Lyon Tour Incity 2.jpg — Zairon, CC BY-SA 4.0",
+            "url": "https://en.wikipedia.org/wiki/File:Lyon_Tour_Incity_2.jpg"
+          },
+          {
+            "label": "Reference photograph: Tour Incity Lyon.jpg — Aldg692VX, CC BY-SA 4.0",
+            "url": "https://en.wikipedia.org/wiki/File:Tour_Incity_Lyon.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-incity/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=tour-incity",
+        "views": [
+          {
+            "label": "South-west overview",
+            "url": "/asset-preview.html?asset=tour-incity&view=overview"
+          },
+          {
+            "label": "Opposite facade",
+            "url": "/asset-preview.html?asset=tour-incity&view=facade"
+          },
+          {
+            "label": "East facade",
+            "url": "/asset-preview.html?asset=tour-incity&view=back"
+          },
+          {
+            "label": "Roof and mast",
+            "url": "/asset-preview.html?asset=tour-incity&view=roof"
+          },
+          {
+            "label": "Inclined open crown",
+            "url": "/asset-preview.html?asset=tour-incity&view=crown"
+          },
+          {
+            "label": "Glazed lobby",
+            "url": "/asset-preview.html?asset=tour-incity&view=base"
+          },
+          {
+            "label": "Street view",
+            "url": "/asset-preview.html?asset=tour-incity&view=street"
+          }
+        ]
+      },
+      "notes": "Published heights: 170 m roof, 154 m top floor and 200 m mast tip; 39 storeys in OSM/Wikipedia (architect page counts 37). Exact mapped footprint and baked bearing, with crown members at most 15 cm proud. Estimated: 16 m crown slope, 2.05 m open rim, curtain-wall pitch and colours, mast diameter and deterministic night window pattern. Follows the photographed Lyon Incity: no white diagonal exoskeleton is visible in the references, so that feature in the task description is excluded. No bank logo, interior, neighbouring towers, pavement, plants or plaza clutter. Glass reflections are approximated by subtle solid-colour panes. Independent visual review and application checks remain separate gates.",
+      "documentation": "docs/assets/top-cities-tour-incity.md",
+      "city": "Lyon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

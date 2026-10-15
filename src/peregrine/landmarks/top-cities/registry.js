@@ -615,6 +615,47 @@ import { SPEC as lm_gare_de_lyon_clock_towerSpec, PALETTES as lm_gare_de_lyon_cl
 import { FOOTPRINTS as lm_gare_de_lyon_clock_towerFootprints } from './gare-de-lyon-clock-tower/footprint.js';
 import { SPEC as lm_bromo_seltzer_towerSpec, PALETTES as lm_bromo_seltzer_towerPalettes } from './bromo-seltzer-tower/config.js';
 import { FOOTPRINTS as lm_bromo_seltzer_towerFootprints } from './bromo-seltzer-tower/footprint.js';
+import { SPEC as lm_wembley_stadiumSpec, PALETTES as lm_wembley_stadiumPalettes } from './wembley-stadium/config.js';
+import { FOOTPRINTS as lm_wembley_stadiumFootprints } from './wembley-stadium/footprint.js';
+import { SPEC as lm_chateau_de_vincennesSpec, PALETTES as lm_chateau_de_vincennesPalettes } from './chateau-de-vincennes/config.js';
+import { FOOTPRINTS as lm_chateau_de_vincennesFootprints } from './chateau-de-vincennes/footprint.js';
+import { SPEC as lm_templo_de_debodSpec, PALETTES as lm_templo_de_debodPalettes } from './templo-de-debod/config.js';
+import { FOOTPRINTS as lm_templo_de_debodFootprints } from './templo-de-debod/footprint.js';
+import { SPEC as lm_custom_house_dublinSpec, PALETTES as lm_custom_house_dublinPalettes } from './custom-house-dublin/config.js';
+import { FOOTPRINTS as lm_custom_house_dublinFootprints } from './custom-house-dublin/footprint.js';
+import { SPEC as lm_chateau_de_versaillesSpec, PALETTES as lm_chateau_de_versaillesPalettes } from './chateau-de-versailles/config.js';
+import { FOOTPRINTS as lm_chateau_de_versaillesFootprints } from './chateau-de-versailles/footprint.js';
+import { SPEC as lm_tour_incitySpec, PALETTES as lm_tour_incityPalettes } from './tour-incity/config.js';
+import { FOOTPRINTS as lm_tour_incityFootprints } from './tour-incity/footprint.js';
+import { SPEC as lm_colorado_street_bridgeSpec, PALETTES as lm_colorado_street_bridgePalettes } from './colorado-street-bridge/config.js';
+import { FOOTPRINTS as lm_colorado_street_bridgeFootprints } from './colorado-street-bridge/footprint.js';
+import { ROAD_LAYER as lm_colorado_street_bridgeRoad } from './colorado-street-bridge/layer.js';
+import { SPEC as lm_louise_bridge_calgarySpec, PALETTES as lm_louise_bridge_calgaryPalettes } from './louise-bridge-calgary/config.js';
+import { FOOTPRINTS as lm_louise_bridge_calgaryFootprints } from './louise-bridge-calgary/footprint.js';
+import { ROAD_LAYER as lm_louise_bridge_calgaryRoad } from './louise-bridge-calgary/layer.js';
+import { SPEC as lm_institut_du_monde_arabeSpec, PALETTES as lm_institut_du_monde_arabePalettes } from './institut-du-monde-arabe/config.js';
+import { FOOTPRINTS as lm_institut_du_monde_arabeFootprints } from './institut-du-monde-arabe/footprint.js';
+import { SPEC as lm_wuppertal_schwebebahn_sonnbornSpec, PALETTES as lm_wuppertal_schwebebahn_sonnbornPalettes } from './wuppertal-schwebebahn-sonnborn/config.js';
+import { FOOTPRINTS as lm_wuppertal_schwebebahn_sonnbornFootprints } from './wuppertal-schwebebahn-sonnborn/footprint.js';
+import { SPEC as lm_fairmont_chateau_lake_louiseSpec, PALETTES as lm_fairmont_chateau_lake_louisePalettes } from './fairmont-chateau-lake-louise/config.js';
+import { FOOTPRINTS as lm_fairmont_chateau_lake_louiseFootprints } from './fairmont-chateau-lake-louise/footprint.js';
+import { SPEC as lm_edificio_inteligente_epmSpec, PALETTES as lm_edificio_inteligente_epmPalettes } from './edificio-inteligente-epm/config.js';
+import { FOOTPRINTS as lm_edificio_inteligente_epmFootprints } from './edificio-inteligente-epm/footprint.js';
+import { SPEC as lm_pantheon_romeSpec, PALETTES as lm_pantheon_romePalettes } from './pantheon-rome/config.js';
+import { FOOTPRINTS as lm_pantheon_romeFootprints } from './pantheon-rome/footprint.js';
+import { SPEC as lm_union_station_kansas_citySpec, PALETTES as lm_union_station_kansas_cityPalettes } from './union-station-kansas-city/config.js';
+import { FOOTPRINTS as lm_union_station_kansas_cityFootprints } from './union-station-kansas-city/footprint.js';
+import { SPEC as lm_pavillon_roger_gaudrySpec, PALETTES as lm_pavillon_roger_gaudryPalettes } from './pavillon-roger-gaudry/config.js';
+import { FOOTPRINTS as lm_pavillon_roger_gaudryFootprints } from './pavillon-roger-gaudry/footprint.js';
+import { SPEC as lm_marche_atwaterSpec, PALETTES as lm_marche_atwaterPalettes } from './marche-atwater/config.js';
+import { FOOTPRINTS as lm_marche_atwaterFootprints } from './marche-atwater/footprint.js';
+import { SPEC as lm_tour_1000_de_la_gauchetiereSpec, PALETTES as lm_tour_1000_de_la_gauchetierePalettes } from './tour-1000-de-la-gauchetiere/config.js';
+import { FOOTPRINTS as lm_tour_1000_de_la_gauchetiereFootprints } from './tour-1000-de-la-gauchetiere/footprint.js';
+import { SPEC as lm_parliament_hill_centre_blockSpec, PALETTES as lm_parliament_hill_centre_blockPalettes } from './parliament-hill-centre-block/config.js';
+import { FOOTPRINTS as lm_parliament_hill_centre_blockFootprints } from './parliament-hill-centre-block/footprint.js';
+import { SPEC as lm_burlington_bay_skywaySpec, PALETTES as lm_burlington_bay_skywayPalettes } from './burlington-bay-skyway/config.js';
+import { FOOTPRINTS as lm_burlington_bay_skywayFootprints } from './burlington-bay-skyway/footprint.js';
+import { ROAD_LAYER as lm_burlington_bay_skywayRoad } from './burlington-bay-skyway/layer.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -900,6 +941,25 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_lake_eola_fountainSpec, lm_lake_eola_fountainPalettes, lm_lake_eola_fountainFootprints),
   entry(lm_gare_de_lyon_clock_towerSpec, lm_gare_de_lyon_clock_towerPalettes, lm_gare_de_lyon_clock_towerFootprints),
   entry(lm_bromo_seltzer_towerSpec, lm_bromo_seltzer_towerPalettes, lm_bromo_seltzer_towerFootprints),
+  entry(lm_wembley_stadiumSpec, lm_wembley_stadiumPalettes, lm_wembley_stadiumFootprints),
+  entry(lm_chateau_de_vincennesSpec, lm_chateau_de_vincennesPalettes, lm_chateau_de_vincennesFootprints),
+  entry(lm_templo_de_debodSpec, lm_templo_de_debodPalettes, lm_templo_de_debodFootprints),
+  entry(lm_custom_house_dublinSpec, lm_custom_house_dublinPalettes, lm_custom_house_dublinFootprints),
+  entry(lm_chateau_de_versaillesSpec, lm_chateau_de_versaillesPalettes, lm_chateau_de_versaillesFootprints),
+  entry(lm_tour_incitySpec, lm_tour_incityPalettes, lm_tour_incityFootprints),
+  entry(lm_colorado_street_bridgeSpec, lm_colorado_street_bridgePalettes, lm_colorado_street_bridgeFootprints, lm_colorado_street_bridgeRoad),
+  entry(lm_louise_bridge_calgarySpec, lm_louise_bridge_calgaryPalettes, lm_louise_bridge_calgaryFootprints, lm_louise_bridge_calgaryRoad),
+  entry(lm_institut_du_monde_arabeSpec, lm_institut_du_monde_arabePalettes, lm_institut_du_monde_arabeFootprints),
+  entry(lm_wuppertal_schwebebahn_sonnbornSpec, lm_wuppertal_schwebebahn_sonnbornPalettes, lm_wuppertal_schwebebahn_sonnbornFootprints),
+  entry(lm_fairmont_chateau_lake_louiseSpec, lm_fairmont_chateau_lake_louisePalettes, lm_fairmont_chateau_lake_louiseFootprints),
+  entry(lm_edificio_inteligente_epmSpec, lm_edificio_inteligente_epmPalettes, lm_edificio_inteligente_epmFootprints),
+  entry(lm_pantheon_romeSpec, lm_pantheon_romePalettes, lm_pantheon_romeFootprints),
+  entry(lm_union_station_kansas_citySpec, lm_union_station_kansas_cityPalettes, lm_union_station_kansas_cityFootprints),
+  entry(lm_pavillon_roger_gaudrySpec, lm_pavillon_roger_gaudryPalettes, lm_pavillon_roger_gaudryFootprints),
+  entry(lm_marche_atwaterSpec, lm_marche_atwaterPalettes, lm_marche_atwaterFootprints),
+  entry(lm_tour_1000_de_la_gauchetiereSpec, lm_tour_1000_de_la_gauchetierePalettes, lm_tour_1000_de_la_gauchetiereFootprints),
+  entry(lm_parliament_hill_centre_blockSpec, lm_parliament_hill_centre_blockPalettes, lm_parliament_hill_centre_blockFootprints),
+  entry(lm_burlington_bay_skywaySpec, lm_burlington_bay_skywayPalettes, lm_burlington_bay_skywayFootprints, lm_burlington_bay_skywayRoad),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

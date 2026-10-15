@@ -1,0 +1,65 @@
+{
+  "id": "institut-du-monde-arabe",
+  "name": "Institut du monde arabe",
+  "kind": "building",
+  "origin": [
+    2.3572,
+    48.8489
+  ],
+  "height": 32,
+  "padM": 48,
+  "frontageBearing": 224,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local plaza grade y=0; no absolute altitude or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Official 77 × 35 × 32 m envelope, OSM way 22870791; 240 diaphragm panels. Heights of river wing, terrace, interior spiral and panel mechanisms estimated from photographs. Texture-free, opaque glass with an open west-end cutaway exposing the book spiral.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/institut-du-monde-arabe-near.glb",
+      "bytes": 1513348,
+      "triangles": 37110,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -37.01514434814453,
+          -1.9073486612342094e-7,
+          -34.687313079833984
+        ],
+        "max": [
+          40.397342681884766,
+          32,
+          29.544328689575195
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/institut-du-monde-arabe-far.glb",
+      "bytes": 351392,
+      "triangles": 8462,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -37.01514434814453,
+          -1.9073486612342094e-7,
+          -34.687313079833984
+        ],
+        "max": [
+          40.397342681884766,
+          32,
+          29.544328689575195
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/institut-du-monde-arabe/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

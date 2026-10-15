@@ -1,0 +1,68 @@
+{
+  "id": "tour-incity",
+  "name": "Tour Incity",
+  "kind": "building",
+  "origin": [
+    4.851004736316125,
+    45.76333066530078
+  ],
+  "height": 200,
+  "roofHeight": 170,
+  "topFloor": 154,
+  "storeys": 39,
+  "padM": 32,
+  "frontageBearing": 82.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; rigid tower, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2015 Lyon Incity: 170 m bevelled glass crown and mast to 200 m; 39 storeys. Plan and bearing from OSM way 368018684. Crown drop 16 m, facade grid, mast radius, lobby and night lights estimated from photos. The references show no diagonal exoskeleton; that feature in the dispatch description is excluded. Cityscape and Full 3D world integration not tested yet; checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-incity-near.glb",
+      "bytes": 1331400,
+      "triangles": 17368,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.228975296020508,
+          0,
+          -20.697994232177734
+        ],
+        "max": [
+          16.39596176147461,
+          200,
+          21.046615600585938
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-incity-far.glb",
+      "bytes": 406848,
+      "triangles": 5364,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.228975296020508,
+          0,
+          -20.697994232177734
+        ],
+        "max": [
+          16.39596176147461,
+          200,
+          21.046615600585938
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-incity/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

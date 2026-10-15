@@ -1113,6 +1113,82 @@ import { MANIFEST as lm_bromo_seltzer_towerManifest } from './bromo-seltzer-towe
 import { OSM_WAYS as lm_bromo_seltzer_towerWays } from './bromo-seltzer-tower/footprint.js';
 import { create as lm_bromo_seltzer_towerCreate } from './bromo-seltzer-tower/geometry.js';
 import { VIEWS as lm_bromo_seltzer_towerViews } from './bromo-seltzer-tower/views.js';
+import { MANIFEST as lm_wembley_stadiumManifest } from './wembley-stadium/config.js';
+import { OSM_WAYS as lm_wembley_stadiumWays } from './wembley-stadium/footprint.js';
+import { create as lm_wembley_stadiumCreate } from './wembley-stadium/geometry.js';
+import { VIEWS as lm_wembley_stadiumViews } from './wembley-stadium/views.js';
+import { MANIFEST as lm_chateau_de_vincennesManifest } from './chateau-de-vincennes/config.js';
+import { OSM_WAYS as lm_chateau_de_vincennesWays } from './chateau-de-vincennes/footprint.js';
+import { create as lm_chateau_de_vincennesCreate } from './chateau-de-vincennes/geometry.js';
+import { VIEWS as lm_chateau_de_vincennesViews } from './chateau-de-vincennes/views.js';
+import { MANIFEST as lm_templo_de_debodManifest } from './templo-de-debod/config.js';
+import { OSM_WAYS as lm_templo_de_debodWays } from './templo-de-debod/footprint.js';
+import { create as lm_templo_de_debodCreate } from './templo-de-debod/geometry.js';
+import { VIEWS as lm_templo_de_debodViews } from './templo-de-debod/views.js';
+import { MANIFEST as lm_custom_house_dublinManifest } from './custom-house-dublin/config.js';
+import { OSM_WAYS as lm_custom_house_dublinWays } from './custom-house-dublin/footprint.js';
+import { create as lm_custom_house_dublinCreate } from './custom-house-dublin/geometry.js';
+import { VIEWS as lm_custom_house_dublinViews } from './custom-house-dublin/views.js';
+import { MANIFEST as lm_chateau_de_versaillesManifest } from './chateau-de-versailles/config.js';
+import { OSM_WAYS as lm_chateau_de_versaillesWays } from './chateau-de-versailles/footprint.js';
+import { create as lm_chateau_de_versaillesCreate } from './chateau-de-versailles/geometry.js';
+import { VIEWS as lm_chateau_de_versaillesViews } from './chateau-de-versailles/views.js';
+import { MANIFEST as lm_tour_incityManifest } from './tour-incity/config.js';
+import { OSM_WAYS as lm_tour_incityWays } from './tour-incity/footprint.js';
+import { create as lm_tour_incityCreate } from './tour-incity/geometry.js';
+import { VIEWS as lm_tour_incityViews } from './tour-incity/views.js';
+import { MANIFEST as lm_colorado_street_bridgeManifest } from './colorado-street-bridge/config.js';
+import { OSM_WAYS as lm_colorado_street_bridgeWays } from './colorado-street-bridge/footprint.js';
+import { create as lm_colorado_street_bridgeCreate } from './colorado-street-bridge/geometry.js';
+import { VIEWS as lm_colorado_street_bridgeViews } from './colorado-street-bridge/views.js';
+import { MANIFEST as lm_louise_bridge_calgaryManifest } from './louise-bridge-calgary/config.js';
+import { OSM_WAYS as lm_louise_bridge_calgaryWays } from './louise-bridge-calgary/footprint.js';
+import { create as lm_louise_bridge_calgaryCreate } from './louise-bridge-calgary/geometry.js';
+import { VIEWS as lm_louise_bridge_calgaryViews } from './louise-bridge-calgary/views.js';
+import { MANIFEST as lm_institut_du_monde_arabeManifest } from './institut-du-monde-arabe/config.js';
+import { OSM_WAYS as lm_institut_du_monde_arabeWays } from './institut-du-monde-arabe/footprint.js';
+import { create as lm_institut_du_monde_arabeCreate } from './institut-du-monde-arabe/geometry.js';
+import { VIEWS as lm_institut_du_monde_arabeViews } from './institut-du-monde-arabe/views.js';
+import { MANIFEST as lm_wuppertal_schwebebahn_sonnbornManifest } from './wuppertal-schwebebahn-sonnborn/config.js';
+import { OSM_WAYS as lm_wuppertal_schwebebahn_sonnbornWays } from './wuppertal-schwebebahn-sonnborn/footprint.js';
+import { create as lm_wuppertal_schwebebahn_sonnbornCreate } from './wuppertal-schwebebahn-sonnborn/geometry.js';
+import { VIEWS as lm_wuppertal_schwebebahn_sonnbornViews } from './wuppertal-schwebebahn-sonnborn/views.js';
+import { MANIFEST as lm_fairmont_chateau_lake_louiseManifest } from './fairmont-chateau-lake-louise/config.js';
+import { OSM_WAYS as lm_fairmont_chateau_lake_louiseWays } from './fairmont-chateau-lake-louise/footprint.js';
+import { create as lm_fairmont_chateau_lake_louiseCreate } from './fairmont-chateau-lake-louise/geometry.js';
+import { VIEWS as lm_fairmont_chateau_lake_louiseViews } from './fairmont-chateau-lake-louise/views.js';
+import { MANIFEST as lm_edificio_inteligente_epmManifest } from './edificio-inteligente-epm/config.js';
+import { OSM_WAYS as lm_edificio_inteligente_epmWays } from './edificio-inteligente-epm/footprint.js';
+import { create as lm_edificio_inteligente_epmCreate } from './edificio-inteligente-epm/geometry.js';
+import { VIEWS as lm_edificio_inteligente_epmViews } from './edificio-inteligente-epm/views.js';
+import { MANIFEST as lm_pantheon_romeManifest } from './pantheon-rome/config.js';
+import { OSM_WAYS as lm_pantheon_romeWays } from './pantheon-rome/footprint.js';
+import { create as lm_pantheon_romeCreate } from './pantheon-rome/geometry.js';
+import { VIEWS as lm_pantheon_romeViews } from './pantheon-rome/views.js';
+import { MANIFEST as lm_union_station_kansas_cityManifest } from './union-station-kansas-city/config.js';
+import { OSM_WAYS as lm_union_station_kansas_cityWays } from './union-station-kansas-city/footprint.js';
+import { create as lm_union_station_kansas_cityCreate } from './union-station-kansas-city/geometry.js';
+import { VIEWS as lm_union_station_kansas_cityViews } from './union-station-kansas-city/views.js';
+import { MANIFEST as lm_pavillon_roger_gaudryManifest } from './pavillon-roger-gaudry/config.js';
+import { OSM_WAYS as lm_pavillon_roger_gaudryWays } from './pavillon-roger-gaudry/footprint.js';
+import { create as lm_pavillon_roger_gaudryCreate } from './pavillon-roger-gaudry/geometry.js';
+import { VIEWS as lm_pavillon_roger_gaudryViews } from './pavillon-roger-gaudry/views.js';
+import { MANIFEST as lm_marche_atwaterManifest } from './marche-atwater/config.js';
+import { OSM_WAYS as lm_marche_atwaterWays } from './marche-atwater/footprint.js';
+import { create as lm_marche_atwaterCreate } from './marche-atwater/geometry.js';
+import { VIEWS as lm_marche_atwaterViews } from './marche-atwater/views.js';
+import { MANIFEST as lm_tour_1000_de_la_gauchetiereManifest } from './tour-1000-de-la-gauchetiere/config.js';
+import { OSM_WAYS as lm_tour_1000_de_la_gauchetiereWays } from './tour-1000-de-la-gauchetiere/footprint.js';
+import { create as lm_tour_1000_de_la_gauchetiereCreate } from './tour-1000-de-la-gauchetiere/geometry.js';
+import { VIEWS as lm_tour_1000_de_la_gauchetiereViews } from './tour-1000-de-la-gauchetiere/views.js';
+import { MANIFEST as lm_parliament_hill_centre_blockManifest } from './parliament-hill-centre-block/config.js';
+import { OSM_WAYS as lm_parliament_hill_centre_blockWays } from './parliament-hill-centre-block/footprint.js';
+import { create as lm_parliament_hill_centre_blockCreate } from './parliament-hill-centre-block/geometry.js';
+import { VIEWS as lm_parliament_hill_centre_blockViews } from './parliament-hill-centre-block/views.js';
+import { MANIFEST as lm_burlington_bay_skywayManifest } from './burlington-bay-skyway/config.js';
+import { OSM_WAYS as lm_burlington_bay_skywayWays } from './burlington-bay-skyway/footprint.js';
+import { create as lm_burlington_bay_skywayCreate } from './burlington-bay-skyway/geometry.js';
+import { VIEWS as lm_burlington_bay_skywayViews } from './burlington-bay-skyway/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -1393,6 +1469,25 @@ const authoring = {
   'lake-eola-fountain': { manifest: lm_lake_eola_fountainManifest, osmWays: lm_lake_eola_fountainWays, create: lm_lake_eola_fountainCreate, views: lm_lake_eola_fountainViews },
   'gare-de-lyon-clock-tower': { manifest: lm_gare_de_lyon_clock_towerManifest, osmWays: lm_gare_de_lyon_clock_towerWays, create: lm_gare_de_lyon_clock_towerCreate, views: lm_gare_de_lyon_clock_towerViews },
   'bromo-seltzer-tower': { manifest: lm_bromo_seltzer_towerManifest, osmWays: lm_bromo_seltzer_towerWays, create: lm_bromo_seltzer_towerCreate, views: lm_bromo_seltzer_towerViews },
+  'wembley-stadium': { manifest: lm_wembley_stadiumManifest, osmWays: lm_wembley_stadiumWays, create: lm_wembley_stadiumCreate, views: lm_wembley_stadiumViews },
+  'chateau-de-vincennes': { manifest: lm_chateau_de_vincennesManifest, osmWays: lm_chateau_de_vincennesWays, create: lm_chateau_de_vincennesCreate, views: lm_chateau_de_vincennesViews },
+  'templo-de-debod': { manifest: lm_templo_de_debodManifest, osmWays: lm_templo_de_debodWays, create: lm_templo_de_debodCreate, views: lm_templo_de_debodViews },
+  'custom-house-dublin': { manifest: lm_custom_house_dublinManifest, osmWays: lm_custom_house_dublinWays, create: lm_custom_house_dublinCreate, views: lm_custom_house_dublinViews },
+  'chateau-de-versailles': { manifest: lm_chateau_de_versaillesManifest, osmWays: lm_chateau_de_versaillesWays, create: lm_chateau_de_versaillesCreate, views: lm_chateau_de_versaillesViews },
+  'tour-incity': { manifest: lm_tour_incityManifest, osmWays: lm_tour_incityWays, create: lm_tour_incityCreate, views: lm_tour_incityViews },
+  'colorado-street-bridge': { manifest: lm_colorado_street_bridgeManifest, osmWays: lm_colorado_street_bridgeWays, create: lm_colorado_street_bridgeCreate, views: lm_colorado_street_bridgeViews },
+  'louise-bridge-calgary': { manifest: lm_louise_bridge_calgaryManifest, osmWays: lm_louise_bridge_calgaryWays, create: lm_louise_bridge_calgaryCreate, views: lm_louise_bridge_calgaryViews },
+  'institut-du-monde-arabe': { manifest: lm_institut_du_monde_arabeManifest, osmWays: lm_institut_du_monde_arabeWays, create: lm_institut_du_monde_arabeCreate, views: lm_institut_du_monde_arabeViews },
+  'wuppertal-schwebebahn-sonnborn': { manifest: lm_wuppertal_schwebebahn_sonnbornManifest, osmWays: lm_wuppertal_schwebebahn_sonnbornWays, create: lm_wuppertal_schwebebahn_sonnbornCreate, views: lm_wuppertal_schwebebahn_sonnbornViews },
+  'fairmont-chateau-lake-louise': { manifest: lm_fairmont_chateau_lake_louiseManifest, osmWays: lm_fairmont_chateau_lake_louiseWays, create: lm_fairmont_chateau_lake_louiseCreate, views: lm_fairmont_chateau_lake_louiseViews },
+  'edificio-inteligente-epm': { manifest: lm_edificio_inteligente_epmManifest, osmWays: lm_edificio_inteligente_epmWays, create: lm_edificio_inteligente_epmCreate, views: lm_edificio_inteligente_epmViews },
+  'pantheon-rome': { manifest: lm_pantheon_romeManifest, osmWays: lm_pantheon_romeWays, create: lm_pantheon_romeCreate, views: lm_pantheon_romeViews },
+  'union-station-kansas-city': { manifest: lm_union_station_kansas_cityManifest, osmWays: lm_union_station_kansas_cityWays, create: lm_union_station_kansas_cityCreate, views: lm_union_station_kansas_cityViews },
+  'pavillon-roger-gaudry': { manifest: lm_pavillon_roger_gaudryManifest, osmWays: lm_pavillon_roger_gaudryWays, create: lm_pavillon_roger_gaudryCreate, views: lm_pavillon_roger_gaudryViews },
+  'marche-atwater': { manifest: lm_marche_atwaterManifest, osmWays: lm_marche_atwaterWays, create: lm_marche_atwaterCreate, views: lm_marche_atwaterViews },
+  'tour-1000-de-la-gauchetiere': { manifest: lm_tour_1000_de_la_gauchetiereManifest, osmWays: lm_tour_1000_de_la_gauchetiereWays, create: lm_tour_1000_de_la_gauchetiereCreate, views: lm_tour_1000_de_la_gauchetiereViews },
+  'parliament-hill-centre-block': { manifest: lm_parliament_hill_centre_blockManifest, osmWays: lm_parliament_hill_centre_blockWays, create: lm_parliament_hill_centre_blockCreate, views: lm_parliament_hill_centre_blockViews },
+  'burlington-bay-skyway': { manifest: lm_burlington_bay_skywayManifest, osmWays: lm_burlington_bay_skywayWays, create: lm_burlington_bay_skywayCreate, views: lm_burlington_bay_skywayViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));
