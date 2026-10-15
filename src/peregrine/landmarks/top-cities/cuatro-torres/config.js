@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'cuatro-torres', name: "Cuatro Torres", kind: 'building',
   ready: false,
   origin: [-3.68778, 40.47778],
-  height: 250,
+  height: 249,
   padM: 60,
   frontageBearing: 0,
 };

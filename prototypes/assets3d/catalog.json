@@ -31289,6 +31289,350 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "casa-presei-libere",
+      "name": "Casa Presei Libere",
+      "kind": "building",
+      "location": "Piața Presei Libere, Bucharest, Romania",
+      "status": "ready",
+      "description": "Casa Presei Libere (Casa Scînteii, 1952–1957): a cream Stalinist wedding-cake, stepped central tower and television spire over a symmetrical winged block, with corner pinnacles, arched south front and a columned portico.",
+      "manifest": "/models/buildings/casa-presei-libere.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/casa-presei-libere/geometry.js",
+        "build": "pnpm build:top-cities-landmarks casa-presei-libere",
+        "provenance": "Original procedural geometry. Footprint from OpenStreetMap relation 15922160 (outer way 1177639752, courts 1177639753/1177639754/1177639755, and the building:part ways; © OpenStreetMap contributors, ODbL 1.0). Height 104 m (91.6 m to the spire shoulder plus a 12.4 m television antenna), foundation about 280 × 260 m, and architects Horia Maicu and Nicolae Bădescu from the English and Romanian Wikipedia. Photographs used only as local comparison images, not shipped: Fortepan 84528 (CC BY-SA 3.0); Alexandru Panoiu (CC BY 2.0); Tiia Monto (CC BY-SA 4.0); Paul Chiorean roundel (CC BY 2.0). No third-party mesh, scan, photograph or texture is in the GLBs. The removed roof star, tenant signs, the Wings monument and the former Lenin statue are not part of the model.",
+        "references": [
+          {
+            "label": "House of the Free Press · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/House_of_the_Free_Press"
+          },
+          {
+            "label": "Casa Presei Libere · Wikipedia (română)",
+            "url": "https://ro.wikipedia.org/wiki/Casa_Presei_Libere"
+          },
+          {
+            "label": "OSM relation 15922160 · Casa Presei Libere",
+            "url": "https://www.openstreetmap.org/relation/15922160"
+          },
+          {
+            "label": "Historical front · Fortepan 84528 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Bukarest,_Rom%C3%A1nia._A_Szabad_Sajt%C3%B3_h%C3%A1za,_a_volt_Sc%C3%A2nteia-h%C3%A1z._Fortepan_84528.jpg"
+          },
+          {
+            "label": "Wide front · Alexandru Panoiu (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:House_of_the_Spark_(Casa_Sc%C3%A2nteii)_(5723590216).jpg"
+          },
+          {
+            "label": "South front · Tiia Monto (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:House_of_Free_Press.jpg"
+          },
+          {
+            "label": "Star-and-grape roundel · Paul Chiorean (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Five-pointed_star._And_grapes._(6938852169).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/casa-presei-libere/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=casa-presei-libere&view=overview",
+        "views": [
+          {
+            "label": "From the south-east",
+            "url": "/asset-preview.html?asset=casa-presei-libere&view=overview"
+          },
+          {
+            "label": "South front, the square",
+            "url": "/asset-preview.html?asset=casa-presei-libere&view=facade"
+          },
+          {
+            "label": "Roof and courts",
+            "url": "/asset-preview.html?asset=casa-presei-libere&view=roof"
+          },
+          {
+            "label": "Street, portico",
+            "url": "/asset-preview.html?asset=casa-presei-libere&view=street"
+          },
+          {
+            "label": "North side",
+            "url": "/asset-preview.html?asset=casa-presei-libere&view=back"
+          },
+          {
+            "label": "Arches and columns",
+            "url": "/asset-preview.html?asset=casa-presei-libere&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: OSM relation 15922160 and part heights (central block 50 m, tower part 50–70 m, spire part tagged 104 m, corner pavilions 57 m, wings 24 m, links 5–16 m); published 104 m total = 91.6 m shoulder + 12.4 m antenna; foundation about 280 × 260 m; cream stone; Horia Maicu and Nicolae Bădescu, 1952–1957. Estimated: broad vertical belvedere to 70 m, 6.2 m square upper lantern with corner turrets, 3.8 m transition and slender taper from 81.1 to 91.6 m; six full-size 12.5 × 11 m wing-end pavilions reaching 36.2 m; pilaster, bay and cornice profiles, six-column portico, plain roundels, corner pinnacles to 62.6 m. Grey-cream walls with lighter cream pilasters/cornices. Facade windows continue above lower adjoining wings on the west flank. Three mapped courts remain open. Present-day antenna, no removed roof star. Review fix evidence: tmp/next-200/fix/g4b/casa-presei-libere/; both LODs have no layered faces, material cycles or unsupported-member flags. Portico/cornices overhang the rings by at most 2.4 m. Near 22419 triangles / 5 draws / 1204260 bytes; Far 8118 triangles / 5 draws / 437084 bytes.",
+      "documentation": "docs/assets/top-cities-casa-presei-libere.md",
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "marina-city",
+      "name": "Marina City",
+      "kind": "building",
+      "location": "300 North State Street, Chicago, Illinois",
+      "status": "ready",
+      "description": "Bertrand Goldberg's twin corncob towers on the Chicago River: two 179 m cylinders, each floor a ring of scalloped balconies, the lower 19 floors an open garage of stacked semicircular bays, a saddle-roofed theatre and the river-level restaurant pavilions.",
+      "manifest": "/models/buildings/marina-city.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/marina-city/geometry.js",
+        "build": "pnpm build:top-cities-landmarks marina-city",
+        "provenance": "Original procedural geometry. Plan, core positions and footprint rings from OpenStreetMap (ways 1177923716–1177923719 and 284822929/924/930/932 for the towers, 1177923721 House of Blues, 1177925119 and 1177925118 for the river pavilions; © OpenStreetMap contributors, ODbL 1.0). Height 587 ft / 179 m, 65 floors and Bertrand Goldberg 1964–68 from Wikipedia. Balcony scallop, parking-arch rhythm and the red beacon compared with Wikimedia Commons photographs used only as local ignored references (Victor Grigas CC BY-SA 2.0 and CC BY-SA 3.0; Chalmers Butterfield CC BY 2.5 and CC BY-SA 3.0; Chris6d CC BY-SA 4.0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Marina City · Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Marina_City"
+          },
+          {
+            "label": "OSM way 1177923716 · west tower",
+            "url": "https://www.openstreetmap.org/way/1177923716"
+          },
+          {
+            "label": "OSM way 284822929 · east tower",
+            "url": "https://www.openstreetmap.org/way/284822929"
+          },
+          {
+            "label": "OSM way 1177923721 · House of Blues",
+            "url": "https://www.openstreetmap.org/way/1177923721"
+          },
+          {
+            "label": "Night from the south · Victorgrigas (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Marina_City_Chicago_2012-0224.jpg"
+          },
+          {
+            "label": "Parking arches · Chris6d (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Marina_City_Parking.jpg"
+          },
+          {
+            "label": "Kodachrome · Chalmers Butterfield (CC BY 2.5)",
+            "url": "https://commons.wikimedia.org/wiki/File:Marina_City_,_Chicago_,_Kodachrome_by_Chalmers_Butterfield.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/marina-city/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=marina-city&view=overview",
+        "views": [
+          {
+            "label": "Both towers from the river",
+            "url": "/asset-preview.html?asset=marina-city&view=overview"
+          },
+          {
+            "label": "South facade",
+            "url": "/asset-preview.html?asset=marina-city&view=facade"
+          },
+          {
+            "label": "Roof plan and beacons",
+            "url": "/asset-preview.html?asset=marina-city&view=roof"
+          },
+          {
+            "label": "Parking arches",
+            "url": "/asset-preview.html?asset=marina-city&view=parking"
+          },
+          {
+            "label": "Balcony petals",
+            "url": "/asset-preview.html?asset=marina-city&view=petals"
+          },
+          {
+            "label": "North side and theatre",
+            "url": "/asset-preview.html?asset=marina-city&view=north"
+          }
+        ]
+      },
+      "notes": "Sourced: roof 179.2 m (OSM; published 587 ft = 178.9 m), twin cores 61 m apart, 16-lobe balcony radii from the mapped petal rings (west 16.9–20.2 m, east 16.9–19.7 m), parking drums 18.9 m and 19.1 m. Estimated: 19 garage decks at 2.57 m, 40 residential floors at 2.85 m, 0.64 m slabs with approximately 1 m curved upturns at the cusps, full-width recessed petal-back glazing at r 16.15 m, dark soffits, 13.6 m garage core, penthouse and 2.5–17.5 m theatre saddle with pale concrete walls. Near retains all 96 mapped balcony samples; far retains tips and cusps and every glazed petal. Twenty-four garage bays, six arch samples per bay near and crown-to-pier chords far. The real helix is the inner drive aisle, omitted here. Near has plain nose-out car boxes, predominantly silver/grey with about one muted red per deck, standing on the garage slabs; far drops cars. Four boat hulls, no marina slips. Review fix evidence: tmp/next-200/fix/g4b/marina-city/; both LODs have no layered faces, material cycles or unsupported-member flags. Near 58565 triangles / 10 draws / 1958636 bytes; Far 11477 triangles / 7 draws / 415188 bytes. g4br: far now emits concrete slab tops reaching behind the glazing, complete alternate slab/fascia rings plus the terminal roof ring (21 total), retaining all 39 glass/glow window rows; near tower geometry unchanged. Theatre saddle rise increased to 7.5 m and solid walls use concrete. Far garage tessellation unchanged per scoped lead instruction. Current evidence and clean QA metrics: tmp/next-200/fix/g4br/marina-city/.",
+      "documentation": "docs/assets/top-cities-marina-city.md",
+      "city": "Chicago",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "opera-bastille",
+      "name": "Opéra Bastille and Colonne de Juillet",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural Opéra Bastille: curved silver-blue-grey glass curtain wall, near-white layered cylindrical/cubic roofs, square granite frame around deeply recessed gridded glazing, paired with the geographically detached green July Column and gilded winged Genius.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/opera-bastille/geometry.js",
+        "build": "pnpm build:top-cities-landmarks opera-bastille",
+        "provenance": "Original procedural geometry authored 2026-10-15; mapped footprints © OpenStreetMap contributors, ODbL 1.0. Reference images inspected only: Bastille Opera House - Paris, 2022 — Arthur Weidmann, CC BY-SA 4.0; Opera Bastille 1989 — Jüppsche, CC BY-SA 2.0; Opéra Bastille 3, Paris June 2010 — Aleksandr Zykov, CC BY-SA 2.0; Colonne Juillet - Paris XII (FR75) - 2021-12-21 - 1 — Chabe01, CC BY-SA 4.0; Bastille, 13 Juillet - panoramio (2) — Roman SUZUKI, CC BY 3.0. No external geometry or imagery in model.",
+        "references": [
+          {
+            "label": "Official Paris Opera — Carlos Ott, 1989, granite entrance, metal/glass/stone",
+            "url": "https://www.operadeparis.fr/en/about/theaters-and-workshops/bastille-opera"
+          },
+          {
+            "label": "Official CMN — July Column history",
+            "url": "https://www.colonne-de-juillet.fr/decouvrir/histoire-de-la-colonne-de-juillet"
+          },
+          {
+            "label": "CMN — winged Genius and inscription registers",
+            "url": "https://www.colonne-de-juillet.fr/decouvrir/une-colonne-chargee-de-symboles"
+          },
+          {
+            "label": "City of Paris — column approximately 50 m",
+            "url": "https://www.paris.fr/pages/a-chacun-sa-tour-de-la-bastille-34384"
+          },
+          {
+            "label": "Full monument height 50.52 m",
+            "url": "https://fr.wikipedia.org/wiki/Colonne_de_Juillet"
+          },
+          {
+            "label": "File:Bastille Opera House - Paris, 2022.jpg — Arthur Weidmann — CC-BY-SA-4.0",
+            "url": "https://en.wikipedia.org/wiki/File:Bastille_Opera_House_-_Paris,_2022.jpg"
+          },
+          {
+            "label": "File:Opéra Bastille 3, Paris June 2010.jpg — Aleksandr Zykov from Russia — CC-BY-SA-2.0",
+            "url": "https://en.wikipedia.org/wiki/File:Op%C3%A9ra_Bastille_3,_Paris_June_2010.jpg"
+          },
+          {
+            "label": "File:Opéra Bastille 1989.jpg — Jüppsche — CC-BY-SA-2.0",
+            "url": "https://en.wikipedia.org/wiki/File:Op%C3%A9ra_Bastille_1989.jpg"
+          },
+          {
+            "label": "File:Colonne Juillet - Paris XII (FR75) - 2021-12-21 - 1.jpg — Chabe01 — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Colonne_Juillet_-_Paris_XII_(FR75)_-_2021-12-21_-_1.jpg"
+          },
+          {
+            "label": "File:Bastille, 13 Juillet - panoramio (2).jpg — Roman SUZUKI — CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bastille,_13_Juillet_-_panoramio_(2).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/opera-bastille/geometry.js"
+      },
+      "notes": "Review g6b fixes: restored upper curved glass curtain wall; cut shell for entrance glazing recessed 6 m; bright pale upper volumes and three roof-plant volumes merged to 36 m; connected stair treads replace block infill; exact projecting stair-side masks for OSM ways 255526605/255526600. Column/Genius geometry and palette unchanged. Reflective opaque architectural glass supports the shared runtime material path. Near/far 23980/6378 triangles, 7/7 draws, 741880/261488 bytes. Zero layered/coplanar area or back-face hits; far grid retains separate rows/bays and passes rhythm QA. Column 50.52 m; details and porch proportions estimated, sculpture abstract. No textures or external meshes. Both mode app captures supplied; full terrain/lifecycle audit remains separate. Review g6br palette follow-up: light glass #a1b7c3, stone #e3e6e2, frame #f1f3ef and granite #8a9397; dark materials raised coherently to #708ea1/#8a9ba3/#b4c0c5/#5d6e77 respectively. Fly-tower tops already use frame and now read brighter. Geometry, monument materials and provider ownership unchanged; optional glazed roof pavilions deferred because they require new roof geometry. One exported GLB look round covers near/far and light/dark at tmp/next-200/fix/g6br/opera-bastille/; fresh app captures pending lead.",
+      "documentation": "docs/assets/top-cities-opera-bastille.md",
+      "manifest": "/models/buildings/opera-bastille.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=opera-bastille",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=opera-bastille&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=opera-bastille&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=opera-bastille&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=opera-bastille&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=opera-bastille&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=opera-bastille&view=detail"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "wilshire-grand-center",
+      "name": "Wilshire Grand Center",
+      "kind": "building",
+      "location": "Los Angeles, California",
+      "status": "ready",
+      "description": "Original procedural model of the 335.3 m Wilshire Grand Center (AC Martin, 2017): a glass shaft that tapers toward its north-west end over a bowed south-west face, a sail crown whose top edge arcs from 283 m down to 262 m, a 90 m mast, long vertical fins, zig-zag trusses and the seven-level podium that wraps the tower's north-west end.",
+      "manifest": "/models/buildings/wilshire-grand-center.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/wilshire-grand-center/geometry.js",
+        "build": "pnpm build:top-cities-landmarks wilshire-grand-center --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-15; no external mesh or texture. Mapped outlines and building parts © OpenStreetMap contributors, ODbL 1.0. Reference-only photos kept in ignored tmp, none redistributed: Inter-Continental Los angeles (35966531210) and The Pool (9624615783) — Prayitno, CC BY 2.0; Wilshire Grand demolition and Wilshire Grand Center under construction — Downtowngal, CC BY-SA 3.0; Wilshire Grand office tower June 2017 — Downtowngal, CC BY-SA 4.0; Wilshire Grand Center — AmeteurAngeleno, CC0; Wilshire Grand Center, Los Angeles (D. Jones) — David Jones, CC BY 2.0.",
+        "references": [
+          {
+            "label": "Wikipedia: heights, floors, uses, sail-shaped LED crown",
+            "url": "https://en.wikipedia.org/wiki/Wilshire_Grand_Center"
+          },
+          {
+            "label": "OpenStreetMap: Wilshire Grand Building outline (height 335.3 m, 73 levels)",
+            "url": "https://www.openstreetmap.org/way/496246723"
+          },
+          {
+            "label": "OpenStreetMap: spire part (note: spire height is 89.916 m)",
+            "url": "https://www.openstreetmap.org/way/901739648"
+          },
+          {
+            "label": "OpenStreetMap: seven-level podium part",
+            "url": "https://www.openstreetmap.org/way/1307580962"
+          },
+          {
+            "label": "Commons crown and curved face — Downtowngal, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Wilshire_Grand_office_tower_June_2017.jpg"
+          },
+          {
+            "label": "Commons south-east prow and spine — Prayitno, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Inter-Continental_Los_angeles_(35966531210).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wilshire-grand-center/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=wilshire-grand-center",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=roof"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=crown"
+          },
+          {
+            "label": "Podium",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=podium"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=street"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=wilshire-grand-center&view=rear"
+          }
+        ]
+      },
+      "notes": "Sourced: 335.3 m total, 283 m roof, 90 m mast, 73 levels, 7 podium levels, tower and podium plans (OSM, including the square SE end, the prow strip and the NW notch). Estimated from photographs: the linear taper (to 0.65 along the axis and 0.85 across at the roof, anchored on the SE end), the convex crown arc (283 m NW to 262 m SE), the 3.95 m floor pitch and spandrel bands, fin positions, the 58-76 m truss zone, podium height (31 m) and glazing colours. Modelled after review g6: mullion strips (near) and ledges at the NW end's floor lines (stepped edge); the far LOD keeps every 3.95 m floor line. Not modelled: the sloping canopy east of the podium, the real pool position, interiors, LED animation, the Spire 73 bar. The prow ridge, fins and trusses are simplified. Independent review and application placement remain separate gates.",
+      "documentation": "docs/assets/top-cities-wilshire-grand-center.md",
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

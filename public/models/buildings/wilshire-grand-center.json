@@ -1,0 +1,76 @@
+{
+  "id": "wilshire-grand-center",
+  "name": "Wilshire Grand Center",
+  "kind": "building",
+  "origin": [
+    -118.260211,
+    34.050009
+  ],
+  "height": 335.3,
+  "padM": 60,
+  "frontageBearing": 37,
+  "planBearingDeg": 127.4,
+  "roofY": 283,
+  "shaftTopY": 245,
+  "spireBaseY": 245.4,
+  "floorPitch": 3.95,
+  "lobbyY": 8,
+  "podiumY": 31,
+  "dossierShift": [
+    84,
+    1
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Plan and heights mapped/sourced (335.3 m, roof 283 m, 90 m spire, 73 levels); taper law, sail-crown arc, floor rhythm, podium height and glazing colours are estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/wilshire-grand-center-near.glb",
+      "bytes": 426340,
+      "triangles": 8449,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -91.19999694824219,
+          0,
+          -77.30000305175781
+        ],
+        "max": [
+          54.43007278442383,
+          335.29998779296875,
+          37.29999923706055
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/wilshire-grand-center-far.glb",
+      "bytes": 269312,
+      "triangles": 5295,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -91.19999694824219,
+          0,
+          -77.30000305175781
+        ],
+        "max": [
+          54.43007278442383,
+          335,
+          37.29999923706055
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wilshire-grand-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
