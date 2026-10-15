@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'palais-de-chaillot', name: "Palais de Chaillot (Trocadéro)", kind: 'building',
   ready: false,
   origin: [2.28807, 48.86234],
-  height: 40,
+  height: 42,
   padM: 60,
   frontageBearing: 0,
 };

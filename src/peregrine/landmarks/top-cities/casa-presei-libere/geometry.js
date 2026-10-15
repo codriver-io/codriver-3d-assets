@@ -1,9 +1,19 @@
+import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { assetBuilder } from '../../asset-geometry.js';
 import { SPEC, PALETTES } from './config.js';
+import { build } from './casa-presei-libere-kit.js';
 
-// Stub placeholder until this landmark is released.
+// Casa Presei Libere. Parts are already in east/up/south metres; boxes are turned once by plan.ANGLE.
+// Quads are emitted as two triangles; welding the shared edge cuts the GLB without changing the mesh.
 export function create({ detail = 'near' } = {}) {
   const b = assetBuilder({ ...SPEC, palette: PALETTES.light }, detail);
-  b.box('stone', [0, SPEC.height / 2, 0], [20, SPEC.height, 20]);
-  return b.finish();
+  build(b, detail === 'near');
+  const root = b.finish();
+  root.traverse((o) => {
+    if (!o.isMesh) return;
+    const old = o.geometry;
+    o.geometry = mergeVertices(old, 1e-4);
+    old.dispose();
+  });
+  return root;
 }

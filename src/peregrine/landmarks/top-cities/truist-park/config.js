@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'truist-park', name: "Truist Park", kind: 'building',
   ready: false,
-  origin: [-84.468, 33.89],
-  height: 40,
+  origin: [-84.46778356706986, 33.8907186522273],
+  height: 55,
   padM: 60,
   frontageBearing: 0,
 };
