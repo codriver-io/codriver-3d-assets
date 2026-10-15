@@ -1,0 +1,67 @@
+{
+  "id": "pont-mirabeau",
+  "name": "Pont Mirabeau",
+  "kind": "bridge",
+  "origin": [
+    2.2755771,
+    48.846658700000006
+  ],
+  "height": 12.9,
+  "padM": 45,
+  "frontageBearing": 122.4,
+  "footprintless": true,
+  "rangeM": 4000,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map grade y=0; Cityscape main road deck 8 m is a visual estimate. World uses one level datum from the higher of the two quay samples, landing tapers absorb bank differences, and feet independently follow river terrain. No surveyed absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "173 m structure, 93 m central opening, two 32.4 m side openings, 20 m total width and 12 m carriageway. Steel sections, 5.8125 m central arch rise, pier boats, anatomy, ornament and vertical datum are photographic estimates; 160 m tapered approach ramps (7.5% maximum in Cityscape).",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-mirabeau-near.glb",
+      "bytes": 2123552,
+      "triangles": 60466,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -215.55821228027344,
+          -0.10000000149011612,
+          -136.45001220703125
+        ],
+        "max": [
+          207.8348388671875,
+          12.930000305175781,
+          141.74378967285156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-mirabeau-far.glb",
+      "bytes": 848496,
+      "triangles": 20018,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -215.55821228027344,
+          -0.10000000149011612,
+          -136.45001220703125
+        ],
+        "max": [
+          207.8348388671875,
+          12.930000305175781,
+          141.74378967285156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-mirabeau/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

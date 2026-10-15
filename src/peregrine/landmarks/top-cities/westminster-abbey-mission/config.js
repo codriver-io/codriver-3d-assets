@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'westminster-abbey-mission', name: "Westminster Abbey (Mission)", kind: 'building',
   ready: false,
-  origin: [-122.27187, 49.15294],
-  height: 50,
+  origin: [-122.27069, 49.153464],
+  height: 31.2,
   padM: 60,
   frontageBearing: 0,
 };

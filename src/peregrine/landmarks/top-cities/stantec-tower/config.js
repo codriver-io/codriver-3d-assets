@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'stantec-tower', name: "Stantec Tower", kind: 'building',
   ready: false,
-  origin: [-113.49611, 53.545],
-  height: 251,
+  origin: [-113.496213, 53.545004],
+  height: 250.8,
   padM: 60,
   frontageBearing: 0,
 };

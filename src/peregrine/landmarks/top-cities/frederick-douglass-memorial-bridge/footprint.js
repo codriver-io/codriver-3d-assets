@@ -1,2 +1,4 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// Mapped bridge outline (not a building extrusion); approaches and four projecting overlooks are separately authored.
+// © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+export const FOOTPRINTS = [[[-77.0031844, 38.8676818], [-77.0078428, 38.8695596], [-77.0078617, 38.8695312], [-77.0079119, 38.8694559], [-77.0079754, 38.8693605], [-77.0080213, 38.8692946], [-77.0080425, 38.8692598], [-77.0033804, 38.8673787], [-77.0033552, 38.8674177], [-77.0033123, 38.8674846], [-77.0032499, 38.8675806], [-77.003201, 38.8676561], [-77.0031844, 38.8676818]]];
+export const OSM_WAYS = [910656500,910656490,910656491,984551672,1088041544,1015956062,1015956063,1413530190,1413530191];

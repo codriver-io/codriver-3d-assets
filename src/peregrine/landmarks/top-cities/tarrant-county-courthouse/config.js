@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'tarrant-county-courthouse', name: "Tarrant County Courthouse", kind: 'building',
   ready: false,
-  origin: [-97.33278, 32.75722],
+  origin: [-97.33319122, 32.75748642],
   height: 59,
   padM: 60,
   frontageBearing: 0,

@@ -1,0 +1,68 @@
+{
+  "id": "mission-bridge",
+  "name": "Mission Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.30556,
+    49.12333
+  ],
+  "height": 38.11,
+  "padM": 850,
+  "frontageBearing": 131,
+  "rangeM": 5000,
+  "nearM": 1800,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is visual water/flat-map grade. Road crest 30 m, lamps 38 m, estimated from photographs; absolute-deck world fitting uses the shared terrain contract. No DEM or Mercator scale baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1973 bridge, 1125 m and 22 spans (11 concrete approach, 8 steel approach, 3 orthotropic steel box spans), 134 m main span and inclined concrete pier columns from Associated Engineering 2015 CAEE paper. Four lanes, nominal 16 m road and two 2 m walks from the dossier; exact deck height, other span lengths, sections and lamps estimated.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/mission-bridge-near.glb",
+      "bytes": 2806600,
+      "triangles": 73765,
+      "drawCalls": 18,
+      "bounds": {
+        "min": [
+          -417.5954895019531,
+          -0.00005288851025397889,
+          -370.67431640625
+        ],
+        "max": [
+          491.1494140625,
+          38.11000061035156,
+          414.9253234863281
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/mission-bridge-far.glb",
+      "bytes": 775920,
+      "triangles": 23333,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -417.5954895019531,
+          -1.1920929132713809e-8,
+          -370.67431640625
+        ],
+        "max": [
+          491.1494140625,
+          38.11000061035156,
+          414.9253234863281
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mission-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

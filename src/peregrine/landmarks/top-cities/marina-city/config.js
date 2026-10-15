@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'marina-city', name: "Marina City", kind: 'building',
   ready: false,
   origin: [-87.62876, 41.88799],
-  height: 179,
+  height: 179.2,
   padM: 60,
   frontageBearing: 0,
 };
