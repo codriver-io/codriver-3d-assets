@@ -1,0 +1,75 @@
+{
+  "id": "gastown-steam-clock",
+  "name": "Gastown Steam Clock",
+  "kind": "building",
+  "origin": [
+    -123.10889,
+    49.28438
+  ],
+  "height": 5,
+  "padM": 6,
+  "frontageBearing": 164,
+  "footprintless": true,
+  "turnDeg": 16,
+  "plinthHalf": 0.46,
+  "shaftHalf": 0.29,
+  "cabinetCoreHalf": 0.32,
+  "cabinetBottomY": 3.03,
+  "cabinetTopY": 3.83,
+  "dialR": 0.27,
+  "padHalf": 1.5,
+  "bollardHalf": 1.15,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the sidewalk of the flat Peregrine basemap; no absolute altitude. Gastown is nearly flat here.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Total height (about 5 m) and the four-face, pagoda-roof, five-whistle layout are published and photographed; the stage heights, the plinth width, the whistle diameters, the arched works windows and the bollard ring are estimated from photographs; the steam plume, the lamp post beside it, the chain sag and the lettering on the plaque are not modelled; the brick pad is a stylised patch of the mapped brick corner.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gastown-steam-clock-near.glb",
+      "bytes": 306288,
+      "triangles": 4984,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -1.8553485870361328,
+          -2.38418573772492e-9,
+          -1.8553485870361328
+        ],
+        "max": [
+          1.8553485870361328,
+          5,
+          1.8553485870361328
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gastown-steam-clock-far.glb",
+      "bytes": 144296,
+      "triangles": 2168,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -1.8553485870361328,
+          -2.38418573772492e-9,
+          -1.8553485870361328
+        ],
+        "max": [
+          1.8553485870361328,
+          5,
+          1.8553485870361328
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gastown-steam-clock/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (222 released)
+## The collection (228 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -230,6 +230,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `mission-bridge` | Mission Bridge | Mission | bridge, road-fitted |
 | `washington-union-station` | Washington Union Station | Washington | building |
 | `black-church-brasov` | Black Church (Biserica Neagră) | Brașov | building |
+| `tawatina-bridge` | Tawatinâ Bridge | Edmonton | bridge |
+| `stantec-tower` | Stantec Tower | Edmonton | building |
+| `pennzoil-place` | Pennzoil Place | Houston | building |
+| `gastown-steam-clock` | Gastown Steam Clock | Vancouver | building |
+| `johan-cruijff-arena` | Johan Cruijff ArenA | Amsterdam | building |
+| `westminster-abbey-mission` | Westminster Abbey (Mission) | Mission | building |
 
 ## A landmark is a folder
 

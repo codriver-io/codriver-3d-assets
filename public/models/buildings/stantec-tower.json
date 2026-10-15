@@ -1,0 +1,68 @@
+{
+  "id": "stantec-tower",
+  "name": "Stantec Tower",
+  "kind": "building",
+  "origin": [
+    -113.496213,
+    53.545004
+  ],
+  "height": 250.8,
+  "padM": 70,
+  "frontageBearing": 180,
+  "podiumY": 16.8,
+  "blockY": 125.4,
+  "floorPitch": 3.77,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map street grade y=0 (the podium plaza); rigid base, no terrain or absolute altitude baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "250.8 m roof, 66 storeys, 16.8 m podium and 125.4 m block follow Wikipedia and OSM. The outlines are the mapped ones (shaft chamfered at its corners). Floor pitch, fin and mullion pitch, the 5.5 m crown slope, louvre bands, glass colour, podium detailing and the entrance canopy are photo-based estimates. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stantec-tower-near.glb",
+      "bytes": 341484,
+      "triangles": 4269,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -67.59544372558594,
+          0,
+          -40.04189682006836
+        ],
+        "max": [
+          30.29651641845703,
+          250.8000030517578,
+          32.6965446472168
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stantec-tower-far.glb",
+      "bytes": 122684,
+      "triangles": 1475,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -67.44999694824219,
+          0,
+          -39.949981689453125
+        ],
+        "max": [
+          30.149995803833008,
+          250.8000030517578,
+          32.54999542236328
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stantec-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

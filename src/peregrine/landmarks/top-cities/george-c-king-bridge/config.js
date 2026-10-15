@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'george-c-king-bridge', name: "George C. King Bridge", kind: 'bridge',
   ready: false,
-  origin: [-114.0468, 51.0484],
-  height: 12,
+  origin: [-114.0468962, 51.04825375],
+  height: 17.5,
   padM: 60,
   frontageBearing: 0,
 };
