@@ -1,0 +1,116 @@
+{
+  "id": "gateway-arch",
+  "name": "Gateway Arch",
+  "kind": "building",
+  "origin": [
+    -90.18496865,
+    38.6246122
+  ],
+  "height": 192.024,
+  "padM": 14,
+  "frontageBearing": 107.4,
+  "axisBearing": 17.4,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -90.185749415,
+          38.623777241
+        ],
+        [
+          -90.184999827,
+          38.625645947
+        ],
+        [
+          -90.184429273,
+          38.625506258
+        ],
+        [
+          -90.185178861,
+          38.623637552
+        ],
+        [
+          -90.185749415,
+          38.623777241
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -90.185281551,
+        38.623832144
+      ],
+      [
+        -90.184655749,
+        38.625392256
+      ],
+      [
+        -90.185416347,
+        38.624156976
+      ],
+      [
+        -90.18500373,
+        38.625185622
+      ],
+      [
+        -90.185188094,
+        38.624665926
+      ]
+    ],
+    "datum": "median",
+    "featherM": 12
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat park/plaza grade at both arch feet; no absolute elevation or DEM baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "NPS weighted-catenary centreline and area taper; 630 ft exterior height/span, 54–17 ft triangular section and 32 crown windows. Orientation from OSM north/south feet; rotation baked. Flat muted lawn, grade-level paths and triangular foot paving estimated; underground museum omitted. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gateway-arch-near.glb",
+      "bytes": 172836,
+      "triangles": 2130,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -52.90663146972656,
+          -5.551115123125783e-17,
+          -99.51820373535156
+        ],
+        "max": [
+          40.2226448059082,
+          192.02398681640625,
+          99.51820373535156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gateway-arch-far.glb",
+      "bytes": 78284,
+      "triangles": 918,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -52.90663146972656,
+          -8.881784197001252e-16,
+          -99.51820373535156
+        ],
+        "max": [
+          40.2226448059082,
+          192.02398681640625,
+          99.51820373535156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gateway-arch/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

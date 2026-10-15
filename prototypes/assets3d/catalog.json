@@ -33730,6 +33730,544 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "arena-nationala",
+      "name": "Arena Națională",
+      "kind": "building",
+      "location": "Bucharest, Romania",
+      "status": "ready",
+      "description": "Original procedural 2011 Arena Națională: scalloped white membrane ring, open retractable centre and folded fabric hub, radial cable system, alternating-height concrete colonnade and multicolour seating.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/arena-nationala/geometry.js",
+        "build": "pnpm build:top-cities-landmarks arena-nationala",
+        "provenance": "Original texture-free procedural mesh by Codriver, 2026-10-15; MIT code and CC BY 4.0 model. OSM geographic data © contributors, ODbL 1.0. Reference-only photographs retained exclusively in ignored tmp: Nowy Styl Group, Arena-bukareszt.jpg, CC BY-SA 4.0; PosifCool, Suporterii FCSB pe Arena Nationala.jpg, CC BY-SA 4.0; Andrei Dan Suciu, National Arena panoramio / (2) and Stairs at the National Arena, CC BY 3.0; Andrei Stroe, RO B National Arena opening day 1, CC BY-SA 3.0. Additional visual reference: Marcus Bredt / gmp, exterior MB44_02 and interior MB44_13, copyright reserved, reference only, never redistributed.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Arena_Națională"
+          },
+          {
+            "label": "gmp architects — National Arena Bucharest, architect and structural description; Marcus Bredt photo credits",
+            "url": "https://www.gmp.de/en/projects/533/national-arena-bucharest"
+          },
+          {
+            "label": "OSM relation — 55 m, 10 levels, outer and inner ring members",
+            "url": "https://www.openstreetmap.org/relation/2501757"
+          },
+          {
+            "label": "OSM outer stadium envelope",
+            "url": "https://www.openstreetmap.org/way/13450166"
+          },
+          {
+            "label": "Nowy Styl Group — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Arena-bukareszt.jpg"
+          },
+          {
+            "label": "Andrei Dan Suciu — CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:National_Arena_-_panoramio.jpg"
+          },
+          {
+            "label": "Andrei Stroe — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:RO_B_National_Arena_opening_day_1.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arena-nationala/geometry.js"
+      },
+      "notes": "Open/retracted centre; OSM 55 m height and mapped envelope. Review g11c: 7.5 m exterior scallops with an opaque dark upper-tier back wall, bright white concrete, continuous 5.4 m red concourse and a cap ring holding every short pier/louvre. Far retains all bays and red fascia; three-sided support-ring tube cross-sections keep it below 500000 bytes. Internal heights, bay profile and seat patterns remain photographic estimates; surrounding berm remains host terrain.",
+      "documentation": "docs/assets/top-cities-arena-nationala.md",
+      "manifest": "/models/buildings/arena-nationala.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=arena-nationala",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=arena-nationala&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=arena-nationala&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=arena-nationala&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=arena-nationala&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=arena-nationala&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=arena-nationala&view=detail"
+          }
+        ]
+      },
+      "city": "Bucharest",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "gateway-arch",
+      "name": "Gateway Arch",
+      "kind": "building",
+      "location": "Gateway Arch National Park, St. Louis, Missouri",
+      "status": "ready",
+      "description": "Eero Saarinen’s completed 1965 stainless-steel weighted-catenary arch: 192 m exterior height and span, tapering equilateral triangular tube, 32 tiny crown windows, grounded feet and a restrained park vignette.",
+      "manifest": "/models/buildings/gateway-arch.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/gateway-arch/geometry.js",
+        "build": "pnpm build:top-cities-landmarks gateway-arch --no-check",
+        "provenance": "Original procedural texture-free geometry authored 2026-10-15 from NPS dimensions and published weighted-catenary equation, not a traced mesh. Geographic data © OpenStreetMap contributors, ODbL 1.0: relation 12813920 outer way 951594314 and all 32 building parts 1419494392–1419494423. Reference photographs only in ignored scratch: Gateway Arch at night and Gateway Arch 250th Anniversary Fireworks (MrsTimmo, CC BY-SA 4.0); St. Louis Gateway Arch - panoramio (Jim Bowen, CC BY 3.0); Gateway Arch - St. Louis, Missouri - 7683315076, 7683316072 and 7683318828 (Dougtone, CC BY-SA 2.0). No photographs, scans, external meshes or textures ship.",
+        "references": [
+          {
+            "label": "NPS · fact sheet: dimensions, triangular section, stainless finish and window size",
+            "url": "https://www.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm"
+          },
+          {
+            "label": "NPS · mathematical equation and constants",
+            "url": "https://www.nps.gov/jeff/planyourvisit/mathematical-equation.htm"
+          },
+          {
+            "label": "NPS · materials and techniques",
+            "url": "https://www.nps.gov/jeff/planyourvisit/materials-and-techniques.htm"
+          },
+          {
+            "label": "NPS · 16 windows on each side",
+            "url": "https://www.nps.gov/jeff/faqs.htm"
+          },
+          {
+            "label": "OSM · complete arch relation",
+            "url": "https://www.openstreetmap.org/relation/12813920"
+          },
+          {
+            "label": "Reference · MrsTimmo, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Gateway_Arch_at_night.jpg"
+          },
+          {
+            "label": "Reference · Jim Bowen, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Gateway_Arch_-_panoramio.jpg"
+          },
+          {
+            "label": "Reference · Dougtone, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Gateway_Arch_-_St._Louis,_Missouri_-_7683315076.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gateway-arch/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=gateway-arch&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=gateway-arch&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=gateway-arch&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=gateway-arch&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=gateway-arch&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=gateway-arch&view=entrance"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=gateway-arch&view=crown"
+          }
+        ]
+      },
+      "notes": "NPS weighted-catenary centreline, area taper, 54–17 ft triangular section and 630 ft exterior height/span retained. Review g11c replaces the saturated lawn lens/toy trees with a flat muted lawn and grade paths, replaces circular sand aprons with compact triangular grey paving, and brightens polished silver facets in both LODs. Six draws; no textures or environment images. Park layout and glazing stations remain approximate; underground museum and wider park omitted.",
+      "documentation": "docs/assets/top-cities-gateway-arch.md",
+      "city": "St. Louis",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "los-angeles-union-station",
+      "name": "Los Angeles Union Station",
+      "kind": "building",
+      "location": "800 North Alameda Street, Los Angeles, California",
+      "status": "ready",
+      "description": "Original procedural 1939 Mission Moderne station headhouse, with cream stucco, red tile hips, four-clock tower, giant amber-glazed arches, open arcade and two planted patios.",
+      "manifest": "/models/buildings/los-angeles-union-station.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/los-angeles-union-station/geometry.js",
+        "build": "pnpm build:top-cities-landmarks los-angeles-union-station --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15; no scan, traced mesh, photograph or texture shipped. Outline from OSM relation 1483140 and its seven outer ways plus canopy ways 1409126574, 1409126588 and 1409126586, © OpenStreetMap contributors (ODbL 1.0). Dossier photographs used for comparison only: Exterior of Los Angeles Union Station.JPG, ZhengZhou, CC BY-SA 3.0; Los Angeles. Union Station. Exterior. 2022-03-02 15-45-52 / 15-48-48 / 15-49-13 / 15-40-20.jpg, Shesmax (Maxim Shesterikov), CC BY-SA 4.0. Historical train photo in dossier not used for headhouse geometry.",
+        "references": [
+          {
+            "label": "Official station history: Parkinson architects, 1939 opening and Mission Moderne architecture",
+            "url": "https://www.unionstationla.com/history/"
+          },
+          {
+            "label": "Official historic guide: 127-foot tower and four 12-foot clocks",
+            "url": "https://www.unionstationla.com/wp-content/uploads/2026/09/LAUS-union-station-historic-guide-english.pdf"
+          },
+          {
+            "label": "Official fact sheet: ticket hall 145 by 80 feet, 61-foot ceiling, 43-foot windows",
+            "url": "https://www.unionstationla.com/wp-content/uploads/2025/10/union-station-fact-sheet.pdf"
+          },
+          {
+            "label": "Mapped headhouse outline: OSM relation 1483140",
+            "url": "https://www.openstreetmap.org/relation/1483140"
+          },
+          {
+            "label": "Exterior, ZhengZhou, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Los_Angeles_Union_Station.JPG"
+          },
+          {
+            "label": "Exterior 15-45-52, Shesmax, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles._Union_Station._Exterior._2022-03-02_15-45-52.jpg"
+          },
+          {
+            "label": "Exterior 15-48-48, Shesmax, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles._Union_Station._Exterior._2022-03-02_15-48-48.jpg"
+          },
+          {
+            "label": "Exterior 15-49-13, Shesmax, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles._Union_Station._Exterior._2022-03-02_15-49-13.jpg"
+          },
+          {
+            "label": "Exterior 15-40-20, Shesmax, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles._Union_Station._Exterior._2022-03-02_15-40-20.jpg"
+          },
+          {
+            "label": "Mapped open southwest station canopy (building=roof, layer=1)",
+            "url": "https://www.openstreetmap.org/way/1409126574"
+          },
+          {
+            "label": "Mapped open south-patio canopy (building=roof, layer=1)",
+            "url": "https://www.openstreetmap.org/way/1409126588"
+          },
+          {
+            "label": "Mapped open north-wing canopy (building=roof, layer=1)",
+            "url": "https://www.openstreetmap.org/way/1409126586"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/los-angeles-union-station/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=los-angeles-union-station&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=los-angeles-union-station&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=los-angeles-union-station&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=los-angeles-union-station&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=los-angeles-union-station&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=los-angeles-union-station&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=los-angeles-union-station&view=detail"
+          }
+        ]
+      },
+      "notes": "Review fix: 8m shaft (was 9.6m), proportionally narrowed crown, paired 1.4 by 2.8m open belfry arches per face, west hall eave 17.5m/ridge 20.92m (was 20.7m/24.12m). Exact canopy ways 1409126574, 1409126588 and 1409126586 are replaced by thin supported roofs with open sides, avoiding provider solid slabs. Seven main-outline ways plus three canopy ways and two patio planting envelopes; neighboring offices and platforms excluded. Tower 38.71m and clock diameter 3.66m sourced; exterior hall heights, tower widths, canopy height (4.84m) and column spacing estimated. Far retains window rhythm, belfry voids and canopy contacts. No interior, lettering, elaborate grilles or roof equipment. Evidence: tmp/next-200/fix/g11b/los-angeles-union-station/. Scoped g11br correction replaces only the north-wing provider canopy with a 24cm roof on fourteen grounded columns; tower and hall unchanged; evidence tmp/next-200/fix/g11br/los-angeles-union-station/.",
+      "documentation": "docs/assets/top-cities-los-angeles-union-station.md",
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palais-bourbon",
+      "name": "Palais Bourbon (Assemblée nationale)",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Palais Bourbon: the twelve-column Corinthian Seine portico, thirty-riser perron, sculpted pediment, flanking statues, hemicycle roof and courtyard palace ranges.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palais-bourbon/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palais-bourbon --no-check",
+        "provenance": "Original procedural geometry completed for Codriver 2026-10-15; no scan or third-party mesh. Footprints and part heights from the prepared OSM dossier, © OpenStreetMap contributors, ODbL 1.0. Comparison-only photographs in ignored scratch: Façade Palais Bourbon 3.jpg (ZeusUpsistos, CC BY-SA 4.0) and Façade sud Palais Bourbon Paris 18.jpg (Chabe01, CC BY-SA 4.0); no photo or texture is included in the model. Code MIT; original models CC BY 4.0.",
+        "references": [
+          {
+            "label": "Assemblée nationale: Poyet colonnade, twelve columns and thirty steps, 1806–1810",
+            "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/patrimoine/palais-bourbon-et-hotel-de-lassay/l-histoire-du-palais-bourbon-et-de-l-hotel-de-lassay/les-travaux-realises-sous-le-premier-empire"
+          },
+          {
+            "label": "Assemblée nationale: Cortot pediment and statues",
+            "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/patrimoine/palais-bourbon-et-hotel-de-lassay/l-histoire-du-palais-bourbon-et-de-l-hotel-de-lassay/statues-et-bas-reliefs"
+          },
+          {
+            "label": "OSM Palais Bourbon relation 1019368",
+            "url": "https://www.openstreetmap.org/relation/1019368"
+          },
+          {
+            "label": "OSM portico gable height and outline",
+            "url": "https://www.openstreetmap.org/way/1459801045"
+          },
+          {
+            "label": "Seine facade, ZeusUpsistos, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_Palais_Bourbon_3.jpg"
+          },
+          {
+            "label": "South facade, Chabe01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_sud_Palais_Bourbon_Paris_18.jpg"
+          },
+          {
+            "label": "OSM parent palace outer outline 64959945",
+            "url": "https://www.openstreetmap.org/way/64959945"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palais-bourbon/geometry.js"
+      },
+      "notes": "Review g11a: twelve bright Corinthian columns stand 5.2 m forward of a darker rear wall and shaded soffit, portals start at the 4.6 m perron, and ivory grouped low relief replaces spiked figures. Recessed frieze includes ASSEMBLEE NATIONALE lettering. Simplified carving, anatomy, secondary roofs and courtyard remain; no interior, flags or street furniture. Parent outer way 64959945 is now owned along with all fine palace parts; separate forecourt guardhouses 64959898, 64959901, 64959908 and 64959931 remain provider-owned.",
+      "documentation": "docs/assets/top-cities-palais-bourbon.md",
+      "manifest": "/models/buildings/palais-bourbon.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=palais-bourbon&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=back"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=palais-bourbon&view=plan"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rogers-place",
+      "name": "Rogers Place",
+      "kind": "building",
+      "location": "Edmonton, Alberta",
+      "status": "ready",
+      "description": "2016 Edmonton arena: curving silver stainless-steel shell, two wave reveals, upper clerestory, glazed Ford Hall and open 104 Avenue underpass.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rogers-place/geometry.js",
+        "build": "pnpm build:top-cities-landmarks rogers-place --no-check",
+        "provenance": "Original analytic loft and procedural geometry by Codriver, 2026-10-15; no external mesh, photograph or texture retained in runtime assets. Plan and 43 m height from OSM way 448626254, © OpenStreetMap contributors (ODbL 1.0). Ignored comparison photos: Rogers Place Entrance, Urban Versis 32, CC BY-SA 4.0; Rogers Place, Edmonton, Alberta, 2026-09-27 01, Chris Woodrich, CC BY-SA 4.0; Ice District Construction - July 2017 - (36228354735), jasonwoodhead23, CC BY 2.0. Dossier interior images by IQRemix (CC BY-SA 2.0) and Mack Male (CC BY-SA 2.0) were viewed but no interior was modeled.",
+        "references": [
+          {
+            "label": "HOK: stainless steel cladding and raised Ford Hall",
+            "url": "https://www.hok.com/projects/view/rogers-place-and-the-ice-district/"
+          },
+          {
+            "label": "Official arena: oil-drop roof and drifting-snow steel siding",
+            "url": "https://www.rogersplace.com/iaks-gold-award/"
+          },
+          {
+            "label": "Official Ford Hall event venue",
+            "url": "https://www.rogersplace.com/book-the-arena/private-events/venue/ford-hall"
+          },
+          {
+            "label": "OSM arena and Ford Hall outline, height=43",
+            "url": "https://www.openstreetmap.org/way/448626254"
+          },
+          {
+            "label": "Chris Woodrich south-west exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rogers_Place,_Edmonton,_Alberta,_2026-09-27_01.jpg"
+          },
+          {
+            "label": "Urban Versis 32 entrance, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Rogers_Place_Entrance.jpg"
+          },
+          {
+            "label": "jasonwoodhead23 elevated 2017 reference, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ice_District_Construction_-_July_2017_-_(36228354735).jpg"
+          },
+          {
+            "label": "Opening and identity",
+            "url": "https://en.wikipedia.org/wiki/Rogers_Place"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rogers-place/geometry.js"
+      },
+      "notes": "Scoped review g11ar: bright #cdd3d6 stainless skin with pale silver highlights and adjoining 0.3 m panel seams, a 3 m dark swoosh diving to about 10 m at the south-west entrance, and a continuous 3.5 m green clerestory recessed under the rim. The 43 m crown, mapped envelope, base glazing frontages and 8 m Ford Hall underpass are retained; cladding profiles and clearances remain photographic estimates.",
+      "documentation": "docs/assets/top-cities-rogers-place.md",
+      "manifest": "/models/buildings/rogers-place.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=rogers-place",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=rogers-place&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=rogers-place&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=rogers-place&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=rogers-place&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=rogers-place&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=rogers-place&view=detail"
+          }
+        ]
+      },
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "zaanse-schans-windmills",
+      "name": "Zaanse Schans windmills",
+      "kind": "building",
+      "location": "Kalverringdijk, Zaandam, Netherlands",
+      "status": "ready",
+      "description": "Five separately mapped Zaan dyke mills: thatched smocks with stage galleries, the six-sided Het Jonge Schaap and the green open-sided Poelenburg paltrok, all with open lattice cross sails.",
+      "manifest": "/models/buildings/zaanse-schans-windmills.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/zaanse-schans-windmills/geometry.js",
+        "build": "pnpm build:top-cities-landmarks zaanse-schans-windmills --no-check",
+        "provenance": "Original procedural mesh; mapped outlines © OpenStreetMap contributors (ODbL 1.0), ways 285317878, 285317879, 285317884, 285321223, 837624418 and attached De Zoeker workshop 285317882. No third-party mesh, photograph or texture is shipped. Reference photographs by Zairon (CC BY-SA 4.0), Ryan R Zhao (CC BY-SA 4.0), Niels Kim (CC BY-SA 3.0), DimiTalen (CC0), Dietmar Rabich (CC BY-SA 4.0, two photographs), retained only in ignored scratch.",
+        "references": [
+          {
+            "label": "Official Zaanse Schans windmill histories and types",
+            "url": "https://www.dezaanseschans.nl/en/discover/windmills/"
+          },
+          {
+            "label": "Mill owner: Het Jonge Schaap, reconstruction completed 2007",
+            "url": "https://www.zaanschemolen.nl/en/project/the-young-sheep/"
+          },
+          {
+            "label": "OSM De Zoeker workshop",
+            "url": "https://www.openstreetmap.org/way/285317882"
+          },
+          {
+            "label": "File:Zaanstad Zaanse Schans 22.jpg · Zairon (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Zaanstad_Zaanse_Schans_22.jpg"
+          },
+          {
+            "label": "File:Zaanse Schans Drone.jpg · Ryan R Zhao (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Zaanse_Schans_Drone.jpg"
+          },
+          {
+            "label": "File:Zaanse Schans Panorama by Niels Kim.jpg · Niels Kim (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Zaanse_Schans_Panorama_by_Niels_Kim.jpg"
+          },
+          {
+            "label": "File:Windmills at Zaanse Schans, Zaanstad, 2022.jpg · DimiTalen (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Windmills_at_Zaanse_Schans,_Zaanstad,_2022.jpg"
+          },
+          {
+            "label": "File:Zaanse Schans, Windmühlen -- 2015 -- 7270.jpg · Dietmar Rabich (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Zaanse_Schans,_Windm%C3%BChlen_--_2015_--_7270.jpg"
+          },
+          {
+            "label": "File:Zaanse Schans (NL), Windmühlen -- 2026 -- 0493.jpg · Dietmar Rabich (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Zaanse_Schans_(NL),_Windm%C3%BChlen_--_2026_--_0493.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/zaanse-schans-windmills/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=zaanse-schans-windmills&view=detail"
+          }
+        ]
+      },
+      "notes": "Scoped review g11ar: every shed is divided into parallel 45-degree tarred gables where needed, with the ridge and verge relief below its own gallery by at least 0.6 m. Mill stages, green walls, caps, mapped positions and near/far lattice sails are unchanged; the mills now rise clearly above the sheds. Roof subdivision is a photographic approximation, not a surveyed roof plan.",
+      "documentation": "docs/assets/top-cities-zaanse-schans-windmills.md",
+      "city": "Zaandam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
