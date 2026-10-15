@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (216 released)
+## The collection (222 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -224,6 +224,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `stedelijk-museum` | Stedelijk Museum | Amsterdam | building |
 | `san-fernando-cathedral` | San Fernando Cathedral | San Antonio | building |
 | `dames-point-bridge` | Dames Point Bridge | Jacksonville | bridge, road-fitted |
+| `pont-mirabeau` | Pont Mirabeau | Paris | bridge, road-fitted |
+| `long-beach-international-gateway` | Long Beach International Gateway | Long Beach | bridge, road-fitted |
+| `frederick-douglass-memorial-bridge` | Frederick Douglass Memorial Bridge | Washington | bridge, road-fitted |
+| `mission-bridge` | Mission Bridge | Mission | bridge, road-fitted |
+| `washington-union-station` | Washington Union Station | Washington | building |
+| `black-church-brasov` | Black Church (Biserica Neagră) | Brașov | building |
 
 ## A landmark is a folder
 

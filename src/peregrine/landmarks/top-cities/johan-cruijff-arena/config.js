@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'johan-cruijff-arena', name: "Johan Cruijff ArenA", kind: 'building',
   ready: false,
-  origin: [4.94194, 52.31417],
-  height: 74,
+  origin: [4.941798, 52.314329],
+  height: 75,
   padM: 60,
   frontageBearing: 0,
 };

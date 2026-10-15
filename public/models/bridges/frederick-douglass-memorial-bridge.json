@@ -1,0 +1,68 @@
+{
+  "id": "frederick-douglass-memorial-bridge",
+  "name": "Frederick Douglass Memorial Bridge",
+  "kind": "bridge",
+  "origin": [
+    -77.005612375,
+    38.8684704
+  ],
+  "height": 51.2064,
+  "padM": 100,
+  "frontageBearing": 117.3,
+  "rangeM": 6000,
+  "nearM": 1300,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Metric east/up/south, y=0 flat-map grade; estimated 14.6 m deck above river datum, absolute-deck terrain fitting. No DEM or latitude stretch baked into GLBs.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2021 six-lane crossing: 440.64 m, 164.592 m central and 138.0236 m side spans, 37.338 m typical and 50.5968 m overlook width. AISC crown elevations and section dimensions; inclination, deck datum and fittings are photographic estimates; flat-map ramps are an explicit compromise.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/frederick-douglass-memorial-bridge-near.glb",
+      "bytes": 2381720,
+      "triangles": 54160,
+      "drawCalls": 24,
+      "bounds": {
+        "min": [
+          -254.0103759765625,
+          0,
+          -144.48355102539062
+        ],
+        "max": [
+          253.10166931152344,
+          51.20724105834961,
+          141.3911895751953
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/frederick-douglass-memorial-bridge-far.glb",
+      "bytes": 709116,
+      "triangles": 16584,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -254.0103759765625,
+          0,
+          -144.48355102539062
+        ],
+        "max": [
+          253.10166931152344,
+          51.20640182495117,
+          141.3911895751953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/frederick-douglass-memorial-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

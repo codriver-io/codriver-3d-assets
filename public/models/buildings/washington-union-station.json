@@ -1,0 +1,70 @@
+{
+  "id": "washington-union-station",
+  "name": "Washington Union Station",
+  "kind": "building",
+  "origin": [
+    -77.0061965,
+    38.8975877
+  ],
+  "height": 30.7,
+  "padM": 125,
+  "frontageBearing": 195.5,
+  "hall": {
+    "length": 66.8,
+    "width": 36.6,
+    "ceiling": 29.3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is local street grade at the facade; reusable rigid geometry, no DEM or absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Facade length, rotation, six statue positions and column bays from OSM; Main Hall size from the station operator. Estimated: arch and storey heights, vault rise, wing arcade rhythm, concourse shell (flat 7.25 m, OSM height). Columbus Fountain, flagpoles and the plaza lie 70-110 m in front of the building and are not modelled. Interior omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/washington-union-station-near.glb",
+      "bytes": 331276,
+      "triangles": 7501,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -105.60941314697266,
+          -2.3841858265427618e-8,
+          -85.33854675292969
+        ],
+        "max": [
+          111.78717803955078,
+          30.700000762939453,
+          82.47979736328125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/washington-union-station-far.glb",
+      "bytes": 157516,
+      "triangles": 2783,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -105.60941314697266,
+          -2.3841858265427618e-8,
+          -85.33854675292969
+        ],
+        "max": [
+          111.78717803955078,
+          30.5,
+          82.47979736328125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-union-station/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -29810,6 +29810,528 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "black-church-brasov",
+      "name": "Black Church (Biserica Neagră)",
+      "kind": "building",
+      "location": "Brașov, Romania",
+      "status": "ready",
+      "description": "Original texture-free Black Church: late-Gothic hall church under one steep tiled roof, west tower with clocks, hip, timber drum, flared cone and spire, cross gables over the side portals, buttressed lancet walls and a polygonal apse.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/black-church-brasov/geometry.js",
+        "build": "pnpm build:top-cities-landmarks black-church-brasov",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-14; no scans, traced meshes, photos or textures embedded. Mapped plan and orientation © OpenStreetMap contributors, ODbL 1.0 (ways 866090450, 866090448, 866090447, 866090446). Visual references only, not redistributed: RO BV Brașov Biserica Neagră 04, Firilacroco, CC BY-SA 3.0 ro; Brasov Biserica Neagra turnul and Brasov Biserica Neagra detaliu turn si fatada, Kosson, CC BY-SA 3.0 ro; 20140628 Braşov 12, Mark Ahsmann, CC BY-SA 4.0; Inside the Black Church, Dennis G. Jarvis, CC BY-SA 2.0; Black Church Nativity Mural, NeuP, CC BY-SA 4.0 (credits in the ignored refs/SOURCES.txt).",
+        "references": [
+          {
+            "label": "Wikipedia: Biserica Neagră",
+            "url": "https://ro.wikipedia.org/wiki/Biserica_Neagră"
+          },
+          {
+            "label": "OSM church outline, way 866090450",
+            "url": "https://www.openstreetmap.org/way/866090450"
+          },
+          {
+            "label": "Brașov Black Church, Firilacroco, CC BY-SA 3.0 ro",
+            "url": "https://commons.wikimedia.org/wiki/File:RO_BV_Bra%C8%99ov_Biserica_Neagr%C4%83_04.jpg"
+          },
+          {
+            "label": "Tower, Kosson, CC BY-SA 3.0 ro",
+            "url": "https://commons.wikimedia.org/wiki/File:Brasov_Biserica_Neagra_turnul.jpg"
+          },
+          {
+            "label": "Braşov, Mark Ahsmann, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:20140628_Bra%C5%9Fov_12.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/black-church-brasov/geometry.js"
+      },
+      "notes": "Plan, orientation and nave/choir/apse extents from the mapped OSM outline; tower 65 m, nave ridge 41 m and choir ridge 37.5 m from OSM tags and published figures. The tower is the south-west one (only the southern of the two planned west towers was built, de.wikipedia), an 11.2 m shaft beside the nave's west gable; its two clock dials (west and south, about 30 m up) sit in square painted panels below one narrow upper opening per face. Eaves, window and buttress rhythm, cross gables, tower stages, tower width and corner pinnacles are estimated from photographs. The mapped outline has no projecting transept, so the cross gables are flush with the walls. Buttresses are stepped in three stages (1.25 m projection, beyond the mapped ring by up to 1.1 m); lancets have a second moulded order and Y-tracery. Stone is drawn as the weathered grey-brown it shows today rather than black. No interior, statues, gargoyles or weathering texture. Near 9,589 tris / 6 draws / 431 KB; far 1,066 tris / 6 draws / 51 KB.",
+      "documentation": "docs/assets/top-cities-black-church-brasov.md",
+      "manifest": "/models/buildings/black-church-brasov.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=black-church-brasov",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=overview"
+          },
+          {
+            "label": "Facade (tower)",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=roof"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=north"
+          },
+          {
+            "label": "South",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=south"
+          },
+          {
+            "label": "Apse",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=apse"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=tower"
+          },
+          {
+            "label": "Portal",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=portal"
+          },
+          {
+            "label": "Buttress",
+            "url": "/asset-preview.html?asset=black-church-brasov&view=buttress"
+          }
+        ]
+      },
+      "city": "Brașov",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "frederick-douglass-memorial-bridge",
+      "name": "Frederick Douglass Memorial Bridge",
+      "kind": "bridge",
+      "location": "Washington, D.C., Anacostia River",
+      "status": "ready",
+      "description": "Original procedural 2021 crossing with three pairs of tilted white hexagonal arches, vertical hangers, twin V-piers, six road lanes, broad paths and four pedestrian overlooks.",
+      "manifest": "/models/bridges/frederick-douglass-memorial-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/frederick-douglass-memorial-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks frederick-douglass-memorial-bridge --no-check",
+        "provenance": "Original texture-free geometry by Codriver, October 2026. OSM alignment/outline © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: southwest 2022 by G. Edward Johnson, CC BY 4.0; Douglass Bridge 090621 by Rainclaw7 and construction 2020e by Antony-22, CC BY-SA 4.0. No photographs, textures or third-party geometry redistributed. Old swing bridge photos excluded; the 2017 proposed design image was not used as as-built evidence.",
+        "references": [
+          {
+            "label": "SYSTRA IBT — engineering dimensions and deck configuration",
+            "url": "https://www.systra.com/ibt/project/frederick-douglass-memorial-bridge-washington-d-c/"
+          },
+          {
+            "label": "AECOM — arch structure and South Capitol Street ovals",
+            "url": "https://publications.aecom.com/social-infrastructure/projects/frederick-douglass-memorial-bridge/"
+          },
+          {
+            "label": "AISC — 2024 Bridge of the Year, hexagonal arch sections",
+            "url": "https://www.aisc.org/bridges/prize-bridges/"
+          },
+          {
+            "label": "AISC / NSBA July 2024 engineering report — crowns, rib sections, 88 hangers, 18 ft paths",
+            "url": "https://vpn2.modernsteel.com/contentassets/cd8409d0abc449cf871cb6cc8a52cb9b/prizebridge_24.pdf"
+          },
+          {
+            "label": "NPS — current 2021 bridge, six lanes and paired paths",
+            "url": "https://www.nps.gov/places/frederick-douglass-memorial-bridge.htm"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/910656500"
+          },
+          {
+            "label": "G. Edward Johnson, southwest elevation 2022, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_Memorial_Bridge_from_the_southwest_Washington_DC_2022-11-26_16-48-14.jpg"
+          },
+          {
+            "label": "Rainclaw7, Douglass Bridge 090621, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Douglass_Bridge_090621.jpg"
+          },
+          {
+            "label": "Antony-22, Frederick Douglass Bridge construction 2020e, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Frederick_Douglass_Bridge_construction_2020e.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/frederick-douglass-memorial-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=tower"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=frederick-douglass-memorial-bridge&view=detail"
+          }
+        ]
+      },
+      "notes": "Published structural spans and deck widths, 168 ft central crown and 20 ft lower side crowns, 9½ ft rib width, variable 6–14½ ft depths, 88 hangers, and 18 ft paths. Estimated 14.6 m deck datum, 4.6 degree outward inclination, pier forms, rail and lamp detail. The 200 m flat-map ramps (10.95 percent maximum) are a compromise. Far hides upper flanges buried in the concrete slab and retains 44 hangers. Arch section web breaks, overlooks, fittings and lighting are simplified; no holiday illumination. App/HD/terrain validation is recorded separately.",
+      "documentation": "docs/assets/top-cities-frederick-douglass-memorial-bridge.md",
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "long-beach-international-gateway",
+      "name": "Long Beach International Gateway",
+      "kind": "bridge",
+      "location": "I-710 / Ocean Boulevard over the Back Channel, Port of Long Beach, California",
+      "city": "Long Beach",
+      "status": "ready",
+      "description": "Original 2020 crossing: two faceted single masts, paired white cable fans, six-lane divided deck, south-side cycle path and concrete approach viaducts. Demolished 1968 arch excluded.",
+      "manifest": "/models/bridges/long-beach-international-gateway.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/long-beach-international-gateway/geometry.js",
+        "build": "pnpm build:top-cities-landmarks long-beach-international-gateway --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-14. Placement derived from OpenStreetMap roadway/bridge outlines © OSM contributors (ODbL 1.0). Reference-only photo: Long Beach International Gateway BG, Jengod, CC BY-SA 4.0 (Commons file page checked); two additional HNTB / Arup-Port of Long Beach photos viewed for comparison, all rights retained by their publishers. No reference image, texture, captured or traced third-party mesh is shipped.",
+        "references": [
+          {
+            "label": "Arup: actual mono-pole towers; spans and height",
+            "url": "https://www.arup.com/projects/long-beach-international-gateway-bridge/"
+          },
+          {
+            "label": "HNTB: width, six lanes, shoulders and clearance",
+            "url": "https://www.hntb.com/projects/long-beach-international-gateway-bridge/"
+          },
+          {
+            "label": "WSP: 1000 ft main span, 2000 ft cable unit",
+            "url": "https://www.wsp.com/en-us/projects/gerald-desmond-bridge-replacement-project"
+          },
+          {
+            "label": "Commons: Jengod driver photo, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Long_Beach_International_Gateway_BG.jpg"
+          },
+          {
+            "label": "OSM cable-supported outline",
+            "url": "https://www.openstreetmap.org/way/1433959973"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/long-beach-international-gateway/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=long-beach-international-gateway&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=detail"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=long-beach-international-gateway&view=underside"
+          }
+        ]
+      },
+      "notes": "Published 305 m main span, 610 m cable unit, two faceted 157 m mono-pole towers, 50.6 m deck, six lanes plus path. Estimated mast sections, anchor heights, piers, 66.5 m road datum and flat-map ramps (8.13/7.47%). Modeled OSM through corridor 2498 m; separate interchange and cycle-path branches omitted. Near 78,556 tris / 19 draws / 3134.2 KiB; far 25,608 / 6 / 902.9 KiB. Reference/export contact sheet (near/far, light/dark) inspected; zero QA issues, coplanar/layer cycles or unsupported cable ends. 779 focused tests pass. No textures or reference mesh shipped; color floodlighting and surveyed hidden structure simplified. Independent lead review remains separate.",
+      "documentation": "docs/assets/top-cities-long-beach-international-gateway.md",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "mission-bridge",
+      "name": "Mission Bridge",
+      "kind": "bridge",
+      "location": "Mission – Abbotsford, British Columbia",
+      "status": "ready",
+      "description": "Original 1973 Highway 11 girder crossing: 22 spans, twin trapezoidal steel boxes, inclined paired concrete piers, four lanes and two raised walks.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/mission-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks mission-bridge",
+        "provenance": "Original procedural geometry authored 2026-10-14. Alignment/outline © OpenStreetMap contributors, ODbL 1.0. Reference-only photo Missionbridge.jpg, B-columbia, CC BY-SA 4.0 (Commons licence checked); no image data copied into models. Railway reference was identified and excluded.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Mission_Bridge"
+          },
+          {
+            "label": "Associated Engineering, CAEE 2015 retrofit paper",
+            "url": "https://www.caee.ca/pdf/Paper_94340.pdf"
+          },
+          {
+            "label": "Missionbridge.jpg — B-columbia, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Missionbridge.jpg"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/466672802"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mission-bridge/geometry.js"
+      },
+      "notes": "Road elevations, non-main span lengths, pier station allocation, sections and lamps are photographic estimates. 22 spans / 134 m main span use the retrofit designers rather than the contradictory older 20-span / 120 m summary. No railway bridge. No photo or texture ships. Flat-map profile omits the buried underside of shallow endpoint spans. Lamps are simplified straight arms. Terrain endpoint clearance is 0.12 m; terrain patching outside the owned deck remains in the provider renderer.",
+      "documentation": "docs/assets/top-cities-mission-bridge.md",
+      "manifest": "/models/bridges/mission-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=mission-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=mission-bridge&view=overview"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=mission-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=mission-bridge&view=roof"
+          },
+          {
+            "label": "Piers",
+            "url": "/asset-preview.html?asset=mission-bridge&view=piers"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=mission-bridge&view=deck"
+          }
+        ]
+      },
+      "city": "Mission",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-mirabeau",
+      "name": "Pont Mirabeau",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural model of the present 1896 three-span green steel arch bridge, with two boat-shaped stone river piers and four bronze allegories.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-mirabeau/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-mirabeau",
+        "provenance": "Original texture-free procedural mesh, authored 2026-10-14. OSM alignment/envelope © OpenStreetMap contributors (ODbL 1.0). Supplied reference photographs viewed only: Pont Mirabeau Paris FRA 002.JPG by ignis, CC BY-SA 3.0; four Injalbert allegory photographs and Armes ville de paris pont mirabeau.jpg, Gede~commonswiki assumed where Commons supplies no machine-readable author, CC BY 2.5. The Commerce and city-arms dossier credits omit author identity; no photograph pixels or traced geometry redistributed. IGN BD ORTHO aerial viewed for widths, © IGN, Géoplateforme open data. Original geometry remains independent of reference photography.",
+        "references": [
+          {
+            "label": "French dimension dossier: span, width and four allegories",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Mirabeau"
+          },
+          {
+            "label": "French Ministry of Culture heritage record PA00086659",
+            "url": "https://pop.culture.gouv.fr/notice/merimee/PA00086659"
+          },
+          {
+            "label": "OSM mapped bridge envelope",
+            "url": "https://www.openstreetmap.org/way/184264542"
+          },
+          {
+            "label": "IGN BD ORTHO Géoplateforme aerial service",
+            "url": "https://geoservices.ign.fr/bdortho"
+          },
+          {
+            "label": "File:Pont Mirabeau Paris FRA 002.JPG; ignis; CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Mirabeau_Paris_FRA_002.JPG"
+          },
+          {
+            "label": "File:Pont mirabeau injalbert ville de paris.jpg; No machine-readable author provided. Gede~commonswiki assumed (based on copyright claims).; CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_mirabeau_injalbert_ville_de_paris.jpg"
+          },
+          {
+            "label": "File:Pont mirabeau injalbert navigation.jpg; No machine-readable author provided. Gede~commonswiki assumed (based on copyright claims).; CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_mirabeau_injalbert_navigation.jpg"
+          },
+          {
+            "label": "File:Pont mirabeau injalbert commerce.jpg; ; CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_mirabeau_injalbert_commerce.jpg"
+          },
+          {
+            "label": "File:Pont mirabeau injalbert abondance.jpg; No machine-readable author provided. Gede~commonswiki assumed (based on copyright claims).; CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_mirabeau_injalbert_abondance.jpg"
+          },
+          {
+            "label": "File:Armes ville de paris pont mirabeau.jpg; ; CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Armes_ville_de_paris_pont_mirabeau.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-mirabeau/geometry.js"
+      },
+      "notes": "93 m central span and two 32.4 m side spans; yellow-green steel, patinated bronze and near gilded prow accent. Follow-up fixes the world datum to max(two quay/abutment samples), excluding outer roads and provider offsets; longer 160 m approach tapers replace 110 m ramps and cap the flat 8 m climb at 7.5%. River geometry, four stylized sculptures and foundation attachments are unchanged. Real Javel station way 230096533 stays outside bridge ownership. Dimensions, ornament and vertical datum remain estimates; no scan, mesh tracing, photo or texture is shipped.",
+      "documentation": "docs/assets/top-cities-pont-mirabeau.md",
+      "manifest": "/models/bridges/pont-mirabeau.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-mirabeau",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-mirabeau&view=detail"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "washington-union-station",
+      "name": "Washington Union Station",
+      "kind": "building",
+      "location": "Washington, D.C., United States",
+      "status": "ready",
+      "description": "Daniel Burnham's 1907 Beaux-Arts station: a 190 m white granite front with a central pavilion of three great portals between six free-standing Corinthian columns, six statues on the attic, arcaded wings with raised end pavilions, the segmental barrel-vaulted Main Hall roof behind and the low rear concourse.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/washington-union-station/geometry.js",
+        "build": "pnpm build:top-cities-landmarks washington-union-station --no-check",
+        "provenance": "Original texture-free procedural geometry authored for Codriver 2026-10-14; no scan or traced third-party mesh. OSM way 67100178 (station outline, rotation 15.5 deg from the two long edges), elevator part 478728802, and the six statue nodes (Prometheus, Thales, Themis, Apollo, Ceres, Archimedes) fix the column bays, from the prepared 2026-10-14 dossier and one shared-helper Overpass query. (c) OpenStreetMap contributors, ODbL 1.0. Comparison-only Commons photographs kept in ignored scratch: Washington Union Station panoramic.jpg (Antony-22, CC BY-SA 4.0); Union Station, Washington, D.C. - panoramio.jpg (Bob Linsdell, CC BY 3.0); Union Station (3368063413).jpg, (3368888740).jpg and (3368063687).jpg (Cliff from Arlington, Virginia, CC BY 2.0); Union Station (Washington, DC)-1.jpg (Smash the Iron Cage, CC BY-SA 4.0). No reference image or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia: Washington Union Station",
+            "url": "https://en.wikipedia.org/wiki/Washington_Union_Station"
+          },
+          {
+            "label": "Mapped station outline",
+            "url": "https://www.openstreetmap.org/way/67100178"
+          },
+          {
+            "label": "Union Station Redevelopment Corporation: restored Main Hall (219 x 120 ft, 96 ft)",
+            "url": "https://www.usrcdc.com/?p=334555"
+          },
+          {
+            "label": "Front facade, Cliff from Arlington, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Union_Station_(3368063413).jpg"
+          },
+          {
+            "label": "Oblique view, Smash the Iron Cage, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Union_Station_(Washington,_DC)-1.jpg"
+          },
+          {
+            "label": "Main Hall panorama, Antony-22, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Washington_Union_Station_panoramic.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/washington-union-station/geometry.js"
+      },
+      "notes": "Estimated: storey and arch heights, vault rise and exact Main Hall placement, wing arcade rhythm, statue forms. The rear concourse is a plain flat 7.25 m shell (OSM height). Columbus Fountain, the flagpoles and the plaza lie 70-110 m in front of the building and are not modelled. Interior, inscriptions, flags and the parking deck are omitted. Rotation is baked once from OSM. Far keeps the wing upper windows, the rear-wall window row and the statues' raised arms (review fixes 2026-10-15). Near 7,501 tris / 7 draws / 323 KB; far 2,783 tris / 7 draws / 153 KB.",
+      "documentation": "docs/assets/top-cities-washington-union-station.md",
+      "manifest": "/models/buildings/washington-union-station.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=washington-union-station&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=washington-union-station&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=washington-union-station&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=washington-union-station&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=washington-union-station&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=washington-union-station&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=washington-union-station&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=washington-union-station&view=plan"
+          }
+        ]
+      },
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
