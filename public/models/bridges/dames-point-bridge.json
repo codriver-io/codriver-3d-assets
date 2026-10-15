@@ -1,0 +1,68 @@
+{
+  "id": "dames-point-bridge",
+  "name": "Dames Point Bridge",
+  "kind": "bridge",
+  "origin": [
+    -81.5569563,
+    30.3847441
+  ],
+  "height": 143.56,
+  "padM": 1900,
+  "frontageBearing": 340,
+  "rangeM": 7500,
+  "nearM": 1900,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is water / Cityscape grade. Deck surface 55.34 m at mid-channel (53.34 m = 175 ft published clearance plus an estimated 2.0 m deck depth); pylon tops 143.56 m (471 ft, published height). Absolute-deck placement blends the ramps into the DEM at runtime; no terrain, Mercator scale or datum is baked into the GLB.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1989 crossing: sourced 396.24 m (1,300 ft) main span, 32.2 m (106 ft) width, 175 ft clearance, 471 ft height, harp stays in multiple vertical planes (main-span pairs stacked vertically, side-span pairs side by side). Estimated: 198.12 m side spans, pylon sections and strut levels (photo-scaled), 18 stay positions per half harp (from the published 21 miles of cable), deck depth, approach span length (48.8 m), pier form, lamp spacing, the crest radius and approach grades. Pylons placed from aerial imagery and the mapped air-gap sensor. The mapped bridge ways are modelled end to end plus 480 m of the north approach embankment (concrete retaining walls, estimated), which keeps the flat-map north grade at 4.5 %.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/dames-point-bridge-near.glb",
+      "bytes": 1878620,
+      "triangles": 41436,
+      "drawCalls": 20,
+      "bounds": {
+        "min": [
+          -534.2191162109375,
+          -0.20000000298023224,
+          -1377.84130859375
+        ],
+        "max": [
+          528.901611328125,
+          143.55999755859375,
+          2188.8955078125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/dames-point-bridge-far.glb",
+      "bytes": 535592,
+      "triangles": 13732,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -534.2191162109375,
+          -0.20000000298023224,
+          -1377.84130859375
+        ],
+        "max": [
+          528.901611328125,
+          143.55999755859375,
+          2188.8955078125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/dames-point-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
