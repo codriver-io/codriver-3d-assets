@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (272 released)
+## The collection (278 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -280,6 +280,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `capitol-records-building` | Capitol Records Building | Los Angeles | building |
 | `bromo-seltzer-tower` | Bromo-Seltzer Tower | Baltimore | building |
 | `royal-albert-hall` | Royal Albert Hall | London | building |
+| `edmonton-city-hall` | Edmonton City Hall | Edmonton | building |
+| `art-gallery-of-alberta` | Art Gallery of Alberta | Edmonton | building |
+| `wrigley-building` | Wrigley Building | Chicago | building |
+| `lake-eola-fountain` | Lake Eola fountain | Orlando | building |
+| `parthenon-nashville` | The Parthenon (Nashville) | Nashville | building |
+| `palais-du-luxembourg` | Palais du Luxembourg (Sénat) | Paris | building |
 
 ## A landmark is a folder
 

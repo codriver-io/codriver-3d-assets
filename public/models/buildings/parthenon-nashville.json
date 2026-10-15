@@ -1,0 +1,149 @@
+{
+  "id": "parthenon-nashville",
+  "name": "The Parthenon (Nashville)",
+  "kind": "building",
+  "origin": [
+    -86.8133823,
+    36.149715775
+  ],
+  "height": 19.812,
+  "padM": 42,
+  "frontageBearing": 56.2959633663,
+  "rotation": 0.5882464104707473,
+  "baseLength": 72.5424,
+  "baseWidth": 33.8328,
+  "stylobateLength": 69.4944,
+  "stylobateWidth": 30.7848,
+  "platformY": 1.8,
+  "columnHeight": 10.3632,
+  "columnDiameter": 1.8288,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -86.8131014,
+          36.1500439
+        ],
+        [
+          -86.8130396,
+          36.149969
+        ],
+        [
+          -86.8130081,
+          36.1499314
+        ],
+        [
+          -86.81298,
+          36.1498977
+        ],
+        [
+          -86.8128988,
+          36.1497994
+        ],
+        [
+          -86.8136634,
+          36.1493875
+        ],
+        [
+          -86.8138656,
+          36.1496323
+        ],
+        [
+          -86.8131014,
+          36.1500439
+        ]
+      ],
+      [
+        [
+          -86.81382242,
+          36.149661391
+        ],
+        [
+          -86.813151039,
+          36.150022999
+        ],
+        [
+          -86.81294218,
+          36.149770159
+        ],
+        [
+          -86.813613561,
+          36.149408551
+        ],
+        [
+          -86.81382242,
+          36.149661391
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -86.8133823,
+        36.149715775
+      ],
+      [
+        -86.813121,
+        36.149854
+      ],
+      [
+        -86.813645,
+        36.149577
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 at bottom of lowest crepidoma step; rigid local metres, no terrain or absolute altitude baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Complete roofed concrete Nashville replica, not Athens ruins. 65ft apex, 238×111ft bottom step, 228×101ft stylobate and 34ft perimeter columns from former director B. F. Wilson; 46-column peristyle confirmed by museum. Bearing from OSM way 130913355 baked once. Pediment figures, tile spacing, entablature levels and acroteria are simplified estimates; optical curvature, interiors, park/lake and museum basement are omitted. Cityscape and Full 3D world integration not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/parthenon-nashville-near.glb",
+      "bytes": 1191108,
+      "triangles": 29906,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -39.56151580810547,
+          -1.1920929132713809e-8,
+          -34.20000457763672
+        ],
+        "max": [
+          39.56151580810547,
+          19.812000274658203,
+          34.20000457763672
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/parthenon-nashville-far.glb",
+      "bytes": 365008,
+      "triangles": 8474,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -39.56151580810547,
+          -1.1920929132713809e-8,
+          -34.20000457763672
+        ],
+        "max": [
+          39.56151580810547,
+          19.812000274658203,
+          34.20000457763672
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parthenon-nashville/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "art-gallery-of-alberta",
+  "name": "Art Gallery of Alberta",
+  "kind": "building",
+  "origin": [
+    -113.48869,
+    53.54491
+  ],
+  "height": 31,
+  "padM": 48,
+  "frontageBearing": 231,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -113.4884925,
+          53.5451736
+        ],
+        [
+          -113.4884851,
+          53.5451478
+        ],
+        [
+          -113.4883975,
+          53.5451521
+        ],
+        [
+          -113.488386,
+          53.5450995
+        ],
+        [
+          -113.4883334,
+          53.5451026
+        ],
+        [
+          -113.4883269,
+          53.5450382
+        ],
+        [
+          -113.4882161,
+          53.5450448
+        ],
+        [
+          -113.4882185,
+          53.5450579
+        ],
+        [
+          -113.488155,
+          53.5450613
+        ],
+        [
+          -113.4881069,
+          53.5447998
+        ],
+        [
+          -113.4882548,
+          53.5447911
+        ],
+        [
+          -113.4882456,
+          53.5447628
+        ],
+        [
+          -113.4883551,
+          53.544755
+        ],
+        [
+          -113.4883596,
+          53.5447693
+        ],
+        [
+          -113.4888492,
+          53.5447357
+        ],
+        [
+          -113.488899,
+          53.5447498
+        ],
+        [
+          -113.4889587,
+          53.5447725
+        ],
+        [
+          -113.4890124,
+          53.5449408
+        ],
+        [
+          -113.4890687,
+          53.5449434
+        ],
+        [
+          -113.4890581,
+          53.5451193
+        ],
+        [
+          -113.4888058,
+          53.5451126
+        ],
+        [
+          -113.4888018,
+          53.5451544
+        ],
+        [
+          -113.4884925,
+          53.5451736
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -113.48869,
+        53.54491
+      ]
+    ],
+    "datum": "median",
+    "featherM": 4
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Randall Stout 2010 building: Borealis stainless-steel ribbon, glazed atrium, zinc galleries. Published ribbon length 190 m describes the real continuous interior/exterior feature; exterior lofts and 31 m maximum height are photograph estimates. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/art-gallery-of-alberta-near.glb",
+      "bytes": 364732,
+      "triangles": 13432,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -25.049304962158203,
+          2.38418573772492e-9,
+          -29.343952178955078
+        ],
+        "max": [
+          38.5694465637207,
+          31,
+          19.403076171875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/art-gallery-of-alberta-far.glb",
+      "bytes": 119104,
+      "triangles": 3360,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -25.049304962158203,
+          2.38418573772492e-9,
+          -29.343952178955078
+        ],
+        "max": [
+          38.5694465637207,
+          31,
+          19.403076171875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/art-gallery-of-alberta/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

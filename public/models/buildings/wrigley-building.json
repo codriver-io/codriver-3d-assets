@@ -1,0 +1,65 @@
+{
+  "id": "wrigley-building",
+  "name": "Wrigley Building",
+  "kind": "building",
+  "origin": [
+    -87.62486,
+    41.88971
+  ],
+  "height": 134,
+  "padM": 62,
+  "frontageBearing": 124,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid building on local grade y=0; no absolute elevation or terrain baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed two-tower 1924 complex. Published 134 m tip and 5.97 m clock dials; mapped perimeter and tower bearing. Facade levels, relief, lantern and bridge dimensions estimated from photographs; Cityscape and Full 3D world not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/wrigley-building-near.glb",
+      "bytes": 959100,
+      "triangles": 18902,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -30.109914779663086,
+          -1.9073486612342094e-7,
+          -36.60523986816406
+        ],
+        "max": [
+          40.495628356933594,
+          134,
+          47.6950569152832
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/wrigley-building-far.glb",
+      "bytes": 288968,
+      "triangles": 6034,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -30.109914779663086,
+          -1.9073486612342094e-7,
+          -36.60523986816406
+        ],
+        "max": [
+          40.495628356933594,
+          134,
+          47.6950569152832
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wrigley-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "edmonton-city-hall",
+  "name": "Edmonton City Hall",
+  "kind": "building",
+  "origin": [
+    -113.49014,
+    53.54556
+  ],
+  "height": 60.96,
+  "padM": 88,
+  "frontageBearing": 174,
+  "rotationDeg": 6,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local flat grade y=0; no absolute elevation or terrain baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1992 City Hall: 43 m main glass pyramid, smaller council pyramid and 60.96 m Friendship Tower. Roof pitches, lattice, facade rhythm and belfry dimensions estimated from photos; exact mapped plan and orientation. Static Cityscape and Full 3D world views verified; terrain lifecycle and rollout checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edmonton-city-hall-near.glb",
+      "bytes": 925712,
+      "triangles": 16894,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -43.3972053527832,
+          -4.9796978030620855e-15,
+          -57.40746307373047
+        ],
+        "max": [
+          38.74726486206055,
+          60.959999084472656,
+          84.54715728759766
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edmonton-city-hall-far.glb",
+      "bytes": 396028,
+      "triangles": 7058,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -43.3972053527832,
+          -4.9796978030620855e-15,
+          -57.40746307373047
+        ],
+        "max": [
+          38.74726486206055,
+          60.959999084472656,
+          84.54715728759766
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edmonton-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
