@@ -1,0 +1,125 @@
+{
+  "id": "pont-raymond-barre",
+  "name": "Pont Raymond-Barre",
+  "kind": "bridge",
+  "origin": [
+    4.82013,
+    45.73273
+  ],
+  "height": 25,
+  "padM": 170,
+  "frontageBearing": 138.5582592698616,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          4.81902927169653,
+          45.733613405678135
+        ],
+        [
+          4.819132229533955,
+          45.733613405678135
+        ],
+        [
+          4.819132229533955,
+          45.73354154154593
+        ],
+        [
+          4.81902927169653,
+          45.73354154154593
+        ],
+        [
+          4.81902927169653,
+          45.733613405678135
+        ]
+      ],
+      [
+        [
+          4.822157620482979,
+          45.73178015700696
+        ],
+        [
+          4.822260578320404,
+          45.73178015700696
+        ],
+        [
+          4.822260578320404,
+          45.731708290515776
+        ],
+        [
+          4.822157620482979,
+          45.731708290515776
+        ],
+        [
+          4.822157620482979,
+          45.73178015700696
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        4.819080750615242,
+        45.7335774736236
+      ],
+      [
+        4.822209099401691,
+        45.731744223772914
+      ]
+    ],
+    "datum": "median",
+    "featherM": 4
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at support feet and mapped bank landings; main deck y=7.5 m is an illustrative flat-map clearance, not NGF or a DEM height. End ramps meet y=0.55 m. No latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Twin outward-leaning steel arches over one 150 m main span (17.5 m crown rise, 10° lean), three structural spans about 72/150/38 m and bank platform extensions. Tram/pedestrian/cycle bridge; no road layer or HD road fitting. Arch section, hanger spacing and principal dimensions from AFGC 2014; supports/furniture and flat-map elevations simplified. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-raymond-barre-near.glb",
+      "bytes": 1798100,
+      "triangles": 33246,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -86.18505859375,
+          -0.002651214599609375,
+          -101.66683959960938
+        ],
+        "max": [
+          169.76686096191406,
+          25,
+          113.3564453125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-raymond-barre-far.glb",
+      "bytes": 581660,
+      "triangles": 10642,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -86.18505859375,
+          -0.002651214599609375,
+          -101.66683959960938
+        ],
+        "max": [
+          169.76686096191406,
+          25,
+          113.3564453125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-raymond-barre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

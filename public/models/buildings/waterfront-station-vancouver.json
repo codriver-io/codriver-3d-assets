@@ -1,0 +1,65 @@
+{
+  "id": "waterfront-station-vancouver",
+  "name": "Waterfront Station",
+  "kind": "building",
+  "origin": [
+    -123.11167,
+    49.28583
+  ],
+  "height": 23,
+  "padM": 85,
+  "frontageBearing": 225.2,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid Cordova Street pavement datum y=0; real metres east/up/south. No terrain or altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1914 CPR station, present exterior. OSM height 23 m and mapped outline; column profiles, window rhythm and annex heights estimated from credited reference photographs. Ten freestanding Ionic columns plus engaged end pilasters; interiors and the distant SeaBus bridge are omitted. Cityscape and Full 3D world integration not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/waterfront-station-vancouver-near.glb",
+      "bytes": 816504,
+      "triangles": 14762,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -61.34730529785156,
+          -1.9533115512023304e-15,
+          -44.18143081665039
+        ],
+        "max": [
+          36.92854309082031,
+          23,
+          64.45659637451172
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/waterfront-station-vancouver-far.glb",
+      "bytes": 366968,
+      "triangles": 5706,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -61.34730529785156,
+          -1.9533115512023304e-15,
+          -44.18143081665039
+        ],
+        "max": [
+          36.92854309082031,
+          23,
+          64.45659637451172
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/waterfront-station-vancouver/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

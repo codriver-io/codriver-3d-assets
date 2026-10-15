@@ -32175,6 +32175,568 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "battersea-power-station",
+      "name": "Battersea Power Station",
+      "kind": "building",
+      "location": "London, England",
+      "status": "ready",
+      "description": "Original procedural brick power station with four tapered fluted white chimneys, stepped wash towers, tall boiler house, lower turbine and switch houses, true window grids and restored roof clerestories.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/battersea-power-station/geometry.js",
+        "build": "pnpm build:top-cities-landmarks battersea-power-station --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15; no scan, traced mesh or texture. OSM outlines © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs viewed in ignored tmp/: Battersea Power Station, Nine Elms, London by David Samuel / Hellodavey1902 (CC BY-SA 3.0); Battersea Power Station from the river by Alberto Pascual (CC BY-SA 3.0); London Borough of Wandsworth - Battersea Power Station - 20221014193138 by Ruben J Davies (CC BY-SA 4.0); Battersea Power Station in London (2006) by Russ Anderson (CC BY 2.0). Historic silhouette references supplemented by the restored 2022 night view; all photo-derived details approximate.",
+        "references": [
+          {
+            "label": "Official heritage history — chimney dimensions",
+            "url": "https://batterseapowerstation.co.uk/about/heritage-history/"
+          },
+          {
+            "label": "Official 2022 restoration completion",
+            "url": "https://batterseapowerstation.co.uk/news/construction-of-bps-reaches-practical-completion/"
+          },
+          {
+            "label": "OSM main building way",
+            "url": "https://www.openstreetmap.org/way/4965216"
+          },
+          {
+            "label": "David Samuel, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Battersea_Power_Station,_Nine_Elms,_London.jpg"
+          },
+          {
+            "label": "Alberto Pascual, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Battersea_Power_Station_from_the_river.jpg"
+          },
+          {
+            "label": "Ruben J Davies, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:London_Borough_of_Wandsworth_-_Battersea_Power_Station_-_20221014193138.jpg"
+          },
+          {
+            "label": "Russ Anderson, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Battersea_Power_Station_in_London_(2006).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/battersea-power-station/geometry.js"
+      },
+      "notes": "Official heritage history supplies 51 m wash towers, 50 m chimneys and 101 m overall. Plan follows all 13 mapped building/part ways with an orthogonalised fit; facade rhythm, chimney fluting/taper and restored roof are estimates. No imagery ships. Lift109 shown retracted; rooftop apartments simplified. Jetty is outside the mapped building scope; no unsupported river structures added.",
+      "documentation": "docs/assets/top-cities-battersea-power-station.md",
+      "manifest": "/models/buildings/battersea-power-station.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=battersea-power-station",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=battersea-power-station&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=battersea-power-station&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=battersea-power-station&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=battersea-power-station&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=battersea-power-station&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=battersea-power-station&view=detail"
+          }
+        ]
+      },
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "munttoren",
+      "name": "Munttoren",
+      "kind": "building",
+      "location": "Amsterdam, Netherlands",
+      "status": "ready",
+      "description": "Original procedural Mint Tower: brick medieval stump, octagonal Renaissance masonry, four black and gold clocks, open carillon, openwork crown, gold vane and stepped-gable guardhouse.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/munttoren/geometry.js",
+        "build": "pnpm build:top-cities-landmarks munttoren --no-check",
+        "provenance": "Original texture-free procedural geometry, 2026-10-15. Mapped outlines © OpenStreetMap contributors (ODbL 1.0). Reference-only photographs retained in ignored tmp: Munttoren Amsterdam, Massimo Catarinella, CC BY 3.0; Munttoren-Amsterdam, Yair Haklai, CC BY-SA 3.0; Amsterdam (NL), Munttoren -- 2015 -- 7237, Dietmar Rabich, CC BY-SA 4.0. Historical dossier images are reference context only (see docs). No photo pixels, captured mesh or texture included.",
+        "references": [
+          {
+            "label": "ARCAM: Hendrick de Keyser, 1620, octagonal timber/lead upper tower and four clocks",
+            "url": "https://arcam.nl/architectuur-gids/munttoren/"
+          },
+          {
+            "label": "Amsterdam Monumentenstad: 41 m overall height and heritage history",
+            "url": "https://amsterdam-monumentenstad.nl/database/grachtenboek_objecten.php?id=3085"
+          },
+          {
+            "label": "Municipal report: upper carillon room at 30 m",
+            "url": "https://www.amsterdam.nl/nieuws/achtergrond/dinosaurus-moderne-drukte-muntplein/"
+          },
+          {
+            "label": "Dutch heritage register: monument 3729, original round base and open lantern",
+            "url": "https://monumentenregister.cultureelerfgoed.nl/monumenten/pdf/3729"
+          },
+          {
+            "label": "OSM tower way 57862728",
+            "url": "https://www.openstreetmap.org/way/57862728"
+          },
+          {
+            "label": "OSM guardhouse way 976474361",
+            "url": "https://www.openstreetmap.org/way/976474361"
+          },
+          {
+            "label": "Night reference by Massimo Catarinella, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Munttoren_Amsterdam.jpg"
+          },
+          {
+            "label": "Belfry detail by Yair Haklai, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Munttoren-Amsterdam.jpg"
+          },
+          {
+            "label": "Daylight upper tower by Dietmar Rabich, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_(NL),_Munttoren_--_2015_--_7237.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/munttoren/geometry.js"
+      },
+      "manifest": "/models/buildings/munttoren.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=munttoren",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=munttoren&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=munttoren&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=munttoren&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=munttoren&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=munttoren&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=munttoren&view=detail"
+          }
+        ]
+      },
+      "notes": "41 m published overall height retained. Mapped plan/orientation and all ten provider ways preserved. Stage profiles and ornament are estimated: g9a fix shortens open lantern 25% to 4.65 m, adds a projecting stone balustrade, broad eight-rib gilt crown and bands, supported lead ogee cap, deeper red-brown brick and lighter stone. Far preserves openings, clocks and window rhythm. No interiors or photo textures. Exported near/far day/night sheets judged alongside existing reference photos; unobstructed north-side app base views captured in both modes. Near 17,262 triangles / 8 draws / 737,300 bytes; far 8,434 / 8 / 350,512. Eight landmark tests and all three own conformance checks pass; QA no issues or material cycles, near back-face 1.5%. Shared suite: two unrelated Palais Bourbon failures; global catalog concurrently blocked by Smithsonian Castle record/doc work. See documentation and fix report for evidence and untested integration cases. Tiny stair-part footprint rings include the modeled tower anchor as interior overlap, satisfying the shared minimum polygon area without street ownership.",
+      "documentation": "docs/assets/top-cities-munttoren.md",
+      "city": "Amsterdam",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-raymond-barre",
+      "name": "Pont Raymond-Barre",
+      "kind": "bridge",
+      "location": "Rhône · Lyon, France",
+      "status": "ready",
+      "description": "Original procedural model: two outward-leaning white box arches above a single 150 m tram span, radial hangers, asymmetric V-knee river support, curved approaches and downstream timber promenade with red benches. Tram T1, cycle and pedestrian bridge; no road layer.",
+      "manifest": "/models/bridges/pont-raymond-barre.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-raymond-barre/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-raymond-barre --no-check",
+        "provenance": "Original procedural authoring for Codriver, 2026-10-15; no third-party mesh, textures or photo-derived geometry. OSM geographic data © OpenStreetMap contributors, ODbL 1.0. Photo reference: Pont Raymond-Barre à Lyon by Daniel CULSAN and Tram Passerelle Raymond Barre by Babsy (CC BY-SA 4.0); PontRaymondBarre Lyon Citadis by Tibidibtibo (CC BY-SA 3.0). Dossier sheet also includes construction photographs by Otourly (CC BY-SA 3.0) and Pom445 (CC BY-SA 3.0). Copyright Dillinger completed-bridge photograph consulted in ignored scratch only; no redistribution rights asserted and no image shipped. AFGC engineering drawings used for dimensional understanding, not traced or copied.",
+        "references": [
+          {
+            "label": "AFGC regional technical visit, January 2014: span, crown, sections, supports and hangers",
+            "url": "https://www.afgc.asso.fr/app/uploads/2014/06/04-Pont-Raymond-Barre-Lyon.pdf"
+          },
+          {
+            "label": "Setec ALS: 150 m main span, 10 degree arches and downstream cantilever",
+            "url": "https://als.setec.fr/realisations/pont-raymond-barre"
+          },
+          {
+            "label": "Auvergne-Rhone-Alpes heritage inventory: 260 m, 17.5 m and 72/150/38 m spans",
+            "url": "https://patrimoine.auvergnerhonealpes.fr/dossier/IA69001578"
+          },
+          {
+            "label": "Architect Spielmann-Chirino: three-span design and belvedere",
+            "url": "https://spielmann-chirino.com/pont-raymond-barre-a-lyon/"
+          },
+          {
+            "label": "Mapped bridge/platform outline, OpenStreetMap contributors, ODbL 1.0",
+            "url": "https://www.openstreetmap.org/way/249574877"
+          },
+          {
+            "label": "Mapped upstream T1 track, OpenStreetMap contributors, ODbL 1.0",
+            "url": "https://www.openstreetmap.org/way/193465144"
+          },
+          {
+            "label": "Commons: Pont Raymond-Barre à Lyon, Daniel CULSAN, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Raymond-Barre_%C3%A0_Lyon.jpg"
+          },
+          {
+            "label": "Commons: Tram Passerelle Raymond Barre, Babsy, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tram_Passerelle_Raymond_Barre.JPG"
+          },
+          {
+            "label": "Commons: PontRaymondBarre Lyon Citadis, Tibidibtibo, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:PontRaymondBarre_Lyon_Citadis.jpg"
+          },
+          {
+            "label": "Dillinger: completed bridge and triangular support photograph, copyright Dillinger; reference only",
+            "url": "https://en.dillinger.de/references/dillinger-heavy-plate-for-the-bow-string-bridge-raymond-barre-in-lyon/?id=8079"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-raymond-barre/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-raymond-barre",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-raymond-barre&view=detail"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-pont-raymond-barre.md",
+      "notes": "Published bridge spans 72/150/38 m, useful deck width 17.5 m, arch crown 17.5 m above deck, 10° outward lean. Mapped outline includes approximately 320 m of structure plus bank platform in projected station, retained at real scale. Sloping approaches to local grade and main deck y=7.5 m are illustrative flat-map elevations, not NGF. Main deck width follows the mapped polygon rather than a forced rectangle. Approximate white knee beams, rectangular concrete feet, red benches, mast/furniture details and simplified catenary. Far retains both arches, hangers, rails, guardrails, wires and supports, omitting benches and reducing subdivision. No app or hardware performance claim.",
+      "city": "Lyon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "skybridge-vancouver",
+      "name": "SkyBridge",
+      "kind": "bridge",
+      "location": "New Westminster – Surrey, British Columbia",
+      "status": "ready",
+      "description": "Original procedural model of the 1990 SkyTrain-only Fraser crossing: twin 123 m concrete portal pylons, red upper panels, semi-fan stays, curved approaches extended into Scott Road station and a battered NW headwall, recessed portal and earth embankment.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/skybridge-vancouver/geometry.js",
+        "build": "pnpm build:top-cities-landmarks skybridge-vancouver --no-check",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-15; no third-party mesh, scan or textures. OSM outline/alignment © OpenStreetMap contributors (ODbL 1.0). Reference-only photos: SkyBridge sunset, JMV on flickr, CC BY 2.0; SkyBridge from SkyTrain (5770458210), Richard Eriksson, CC BY 2.0; Bridges - SkyTrain’s SkyBridge over the Fraser River, Mike, CC BY 2.0. Dossier sheet context includes Fraser River bridges shot from SkyTrain 3605, Mathew5000, CC BY-SA 3.0; Looking down the Fraser River from the SkyBridge, Dennis Sylvester Hurd, CC0; Sea Isl Bridge shot from SkyTrain 3523, Mathew5000, CC BY-SA 3.0 (context only, not SkyBridge structure). Photos retained only in ignored scratch. Fix references: Scott Road station, February 2018.jpg, Northwest, CC BY-SA 4.0, used only as a visual reference in ignored scratch; station footprint OSM way 689527849 fetched 2026-10-15.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/SkyBridge_(TransLink)"
+          },
+          {
+            "label": "Atlas Anchor Systems — retrofit contractor; published dimensions and rail-only use",
+            "url": "https://atlas-anchor.com/portfolio/translink-skybridge-surrey-bc/"
+          },
+          {
+            "label": "OSM bridge outline 527265987",
+            "url": "https://www.openstreetmap.org/way/527265987"
+          },
+          {
+            "label": "SkyBridge sunset — JMV — CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:SkyBridge_sunset.jpg"
+          },
+          {
+            "label": "SkyBridge from SkyTrain — Richard Eriksson — CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:SkyBridge_from_SkyTrain_(5770458210).jpg"
+          },
+          {
+            "label": "SkyBridge over the Fraser River — Mike — CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bridges_-_SkyTrain%27s_SkyBridge_over_the_Fraser_River.jpg"
+          },
+          {
+            "label": "Scott Road station footprint",
+            "url": "https://www.openstreetmap.org/way/689527849"
+          },
+          {
+            "label": "Scott Road station, February 2018 — Northwest — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Scott_Road_station,_February_2018.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/skybridge-vancouver/geometry.js"
+      },
+      "notes": "340 m main span / 616 m cable-supported crossing; total mapped centreline 2185.786 m, including 739.453 m added Expo Line guideway to Scott Road. End boundaries lie inside the ground-connected NW portal and exact OSM station hall 689527849; no exposed elevated rail cuts. Near stays 30% thinner and mid-grey; lower pylon sections 20% wider, underdeck crossbeam strengthened. The station and portal are simplified visibility closures, not surveyed interiors; the active railway continues beyond them. Vertical profile and station height are estimated; explicit individual footing/station pads retain the shared river datum. No photos/textures shipped. Scoped g9br review: owns adjacent Scott Road access ways 689527847/689527848 and their exact rings to suppress intersecting provider blocks. Approach rail profiles become flat strips near and are dropped far; approach sleepers removed, preserving the complete 739 m extension and central-span detail. NW headwall is battered and backed by a bounded earth wedge; existing small terrain pads remain unchanged to preserve the world bluff. Near 29,308 tris / 10 draws / 1,679 KiB; far 16,604 / 9 / 803 KiB. Solid station undercroft retained under the final three-item scope.",
+      "documentation": "docs/assets/top-cities-skybridge-vancouver.md",
+      "manifest": "/models/bridges/skybridge-vancouver.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=skybridge-vancouver",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=tower"
+          },
+          {
+            "label": "Northwest portal",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=northwest"
+          },
+          {
+            "label": "Scott Road station approach",
+            "url": "/asset-preview.html?asset=skybridge-vancouver&view=southeast"
+          }
+        ]
+      },
+      "city": "New Westminster",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "w-r-bennett-bridge",
+      "name": "W. R. Bennett Bridge",
+      "kind": "bridge",
+      "location": "Kelowna – West Kelowna, British Columbia",
+      "status": "ready",
+      "description": "Original model of the 2008 Highway 97 floating bridge across Okanagan Lake: a 690 m string of nine concrete pontoons carrying a low deck, rising at the west end over rust-red steel girders on column bents and twin-column hammerhead piers to a 44 m navigation span with 18 m clearance.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/w-r-bennett-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks w-r-bennett-bridge --no-check",
+        "provenance": "Original procedural geometry; alignment, outline and connected roads from OpenStreetMap contributors (ODbL 1.0). Reference-only photographs in ignored scratch: GoToVan, William R. Bennett Bridge from Kelowna City Park (CC BY 2.0); Darren Kirby, William R. Bennett Bridge (CC BY-SA 2.0); Stéphane Charette, WRB bridge road towers on pontoon two / west approach pile drive / pontoon construction (CC BY-SA 3.0); Hinto, 2010-08 Bennett Bridge Looking East (CC BY-SA 3.0). No photo, texture, scan or traced mesh shipped.",
+        "references": [
+          {
+            "label": "Wikipedia: length, pontoons, navigation span, clearance, lanes",
+            "url": "https://en.wikipedia.org/wiki/William_R._Bennett_Bridge"
+          },
+          {
+            "label": "OSM bridge outline (floating)",
+            "url": "https://www.openstreetmap.org/way/881372979"
+          },
+          {
+            "label": "OSM westbound carriageway",
+            "url": "https://www.openstreetmap.org/way/100604760"
+          },
+          {
+            "label": "GoToVan, William R. Bennett Bridge from Kelowna City Park, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:William_R._Bennett_Bridge_from_Kelowna_City_Park.jpg"
+          },
+          {
+            "label": "Darren Kirby, William R. Bennett Bridge, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:William_R._Bennett_Bridge.jpg"
+          },
+          {
+            "label": "Stéphane Charette, road towers on pontoon two, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:WRB_bridge_road_towers_on_pontoon_two.jpg"
+          },
+          {
+            "label": "Hinto, 2010-08 Bennett Bridge Looking East, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2010-08_Bennett_Bridge_Looking_East.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/w-r-bennett-bridge/geometry.js"
+      },
+      "notes": "Sourced 1060 m length, 690 m of nine 25 m pontoons, 44 m west navigation span with 18 m clearance, 3+2 lanes and south path. Estimated: pontoon split (86/74x7/82 m), 1.6 m freeboard, 3.2 m floating road, 21.5 m crown, seven 42.6 m fixed spans on twin-column hammerheads, ten three-column ramp bents on pontoons, 2.1 m rust-red plate girders, posts under the lower deck, davit lamps every 50 m. Straight mapped alignment, curve not modelled. Flat-map west ramp 6.47 % from grade (real abutment ~8 m up on fill), east 2.99 %; landings taper to 6 m ribbons on the mapped carriageways with a road-to-deck colour blend. Near 39,602 tris / 24 draws / 1,668 KB; far 12,444 / 7 / 512 KB. Zero depth-layer cycles and QA issues. Review g9c: the white line south of the west ramp is OSM service road 1055539170 (real, kept), not a duplicate path; its hook back toward the deck is masked by the layer. Provider paths never draw at the app detail zoom, so the authored path ends sit on the mapped paths but end in grass.",
+      "documentation": "docs/assets/top-cities-w-r-bennett-bridge.md",
+      "manifest": "/models/bridges/w-r-bennett-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=overview"
+          },
+          {
+            "label": "Hump from the south",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=facade"
+          },
+          {
+            "label": "Hump from the north",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=back"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=deck"
+          },
+          {
+            "label": "Navigation span",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=hump"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=underside"
+          },
+          {
+            "label": "Pontoons",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=floating"
+          },
+          {
+            "label": "West landing",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=landing"
+          },
+          {
+            "label": "East landing",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=east"
+          },
+          {
+            "label": "Girder to posts",
+            "url": "/asset-preview.html?asset=w-r-bennett-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Kelowna",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "waterfront-station-vancouver",
+      "name": "Waterfront Station",
+      "kind": "building",
+      "location": "Vancouver, British Columbia",
+      "status": "ready",
+      "description": "Original texture-free model of the 1914 CPR Waterfront Station, with red-brick wings, ten white Ionic columns, inset arched windows, stepped parapet and mapped rear circulation canopy.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/waterfront-station-vancouver/geometry.js",
+        "build": "pnpm build:top-cities-landmarks waterfront-station-vancouver --no-check",
+        "provenance": "Original procedural Three.js geometry by Codriver; no scan, third-party mesh or texture. Plan derived from OpenStreetMap ways 78393326 and 208599561 (© OpenStreetMap contributors, ODbL 1.0). Photographs used only for visual comparison in ignored scratch storage.",
+        "references": [
+          {
+            "label": "Vancouver Heritage Foundation: Canadian Pacific Station, 601 W Cordova; 1914 and ten freestanding Ionic columns",
+            "url": "https://www.heritagesitefinder.ca/location/601-w-cordova-st-vancouver-bc"
+          },
+          {
+            "label": "RJC Engineers: four-storey steel station with ornamental terracotta and brick",
+            "url": "https://www.rjc.ca/project-details/the-station.html"
+          },
+          {
+            "label": "Wikipedia: identity, architects, 1914 opening",
+            "url": "https://en.wikipedia.org/wiki/Waterfront_station_(Vancouver)"
+          },
+          {
+            "label": "OpenStreetMap: station headhouse, height 23 m",
+            "url": "https://www.openstreetmap.org/way/78393326"
+          },
+          {
+            "label": "OpenStreetMap: attached rear circulation roof",
+            "url": "https://www.openstreetmap.org/way/208599561"
+          },
+          {
+            "label": "File:Waterfront station track and bridge to seabus 2026.JPG — Canmenwalker; CC BY 4.0; reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Waterfront_station_track_and_bridge_to_seabus_2026.JPG"
+          },
+          {
+            "label": "File:Waterfront station 2025.jpg — Canmenwalker; CC BY 4.0; reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Waterfront_station_2025.jpg"
+          },
+          {
+            "label": "File:Waterfront Station Vancouver 1923.jpg — Matthews, James Skitt, Major (1878-1970); Public domain; reference only",
+            "url": "https://commons.wikimedia.org/wiki/File:Waterfront_Station_Vancouver_1923.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/waterfront-station-vancouver/geometry.js"
+      },
+      "notes": "OSM height 23 m; facade length approximately 118 m from mapped controls. Column profiles, window spacing, rooflights and rear circulation heights are estimated. Detailed interiors, distant rail platforms and the SeaBus bridge beyond the owned annex are omitted. No reference photography or third-party mesh is distributed.",
+      "documentation": "docs/assets/top-cities-waterfront-station-vancouver.md",
+      "manifest": "/models/buildings/waterfront-station-vancouver.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=waterfront-station-vancouver",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=waterfront-station-vancouver&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=waterfront-station-vancouver&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=waterfront-station-vancouver&view=roof"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=waterfront-station-vancouver&view=rear"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=waterfront-station-vancouver&view=street"
+          },
+          {
+            "label": "Colonnade",
+            "url": "/asset-preview.html?asset=waterfront-station-vancouver&view=colonnade"
+          }
+        ]
+      },
+      "city": "Vancouver",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

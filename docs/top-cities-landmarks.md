@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (243 released)
+## The collection (249 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -251,6 +251,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `old-red-courthouse` | Old Red Courthouse | Dallas | building |
 | `muttart-conservatory` | Muttart Conservatory | Edmonton | building |
 | `palais-de-chaillot` | Palais de Chaillot (Trocadéro) | Paris | building |
+| `pont-raymond-barre` | Pont Raymond-Barre | Lyon | bridge |
+| `battersea-power-station` | Battersea Power Station | London | building |
+| `waterfront-station-vancouver` | Waterfront Station | Vancouver | building |
+| `skybridge-vancouver` | SkyBridge | New Westminster | bridge |
+| `munttoren` | Munttoren | Amsterdam | building |
+| `w-r-bennett-bridge` | W. R. Bennett Bridge | Kelowna | bridge, road-fitted |
 
 ## A landmark is a folder
 
