@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (208 released)
+## The collection (212 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -216,6 +216,10 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `vancouver-art-gallery` | Vancouver Art Gallery (Robson Square) | Vancouver | building |
 | `pont-de-bercy` | Pont de Bercy | Paris | bridge, road-fitted |
 | `jackson-street-bridge-atlanta` | Jackson Street Bridge | Atlanta | bridge, road-fitted |
+| `rheinturm` | Rheinturm | Düsseldorf | building |
+| `queensborough-bridge` | Queensborough Bridge | New Westminster | bridge, road-fitted |
+| `bridge-of-peace-tbilisi` | Bridge of Peace | Tbilisi | bridge |
+| `allianz-arena` | Allianz Arena | Munich | building |
 
 ## A landmark is a folder
 

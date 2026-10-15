@@ -1,4 +1,9 @@
 {
+  "Alajuela": {
+    "country": "Costa Rica",
+    "region": "Alajuela",
+    "continent": "North America"
+  },
   "Albi": {
     "country": "France",
     "continent": "Europe"
@@ -35,6 +40,11 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Baltimore": {
+    "country": "United States",
+    "region": "Maryland",
+    "continent": "North America"
+  },
   "Banff": {
     "country": "Canada",
     "region": "Alberta",
@@ -57,6 +67,10 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Berlin": {
+    "country": "Germany",
+    "continent": "Europe"
+  },
   "Birmingham": {
     "country": "United States",
     "region": "Alabama",
@@ -65,6 +79,10 @@
   "Bogotá": {
     "country": "Colombia",
     "continent": "South America"
+  },
+  "Brașov": {
+    "country": "Romania",
+    "continent": "Europe"
   },
   "Brussels": {
     "country": "Belgium",
@@ -115,6 +133,11 @@
     "country": "Denmark",
     "continent": "Europe"
   },
+  "Cumberland": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
+  },
   "Dallas": {
     "country": "United States",
     "region": "Texas",
@@ -133,9 +156,18 @@
     "country": "Ireland",
     "continent": "Europe"
   },
+  "Düsseldorf": {
+    "country": "Germany",
+    "continent": "Europe"
+  },
   "Edmonton": {
     "country": "Canada",
     "region": "Alberta",
+    "continent": "North America"
+  },
+  "Fort Worth": {
+    "country": "United States",
+    "region": "Texas",
     "continent": "North America"
   },
   "Garden Grove": {
@@ -178,6 +210,11 @@
     "region": "Alabama",
     "continent": "North America"
   },
+  "Jacksonville": {
+    "country": "United States",
+    "region": "Florida",
+    "continent": "North America"
+  },
   "Jerusalem": {
     "country": "Israel",
     "continent": "Asia"
@@ -185,6 +222,11 @@
   "Kansas City": {
     "country": "United States",
     "region": "Missouri",
+    "continent": "North America"
+  },
+  "Kelowna": {
+    "country": "Canada",
+    "region": "British Columbia",
     "continent": "North America"
   },
   "Kensington": {
@@ -225,6 +267,11 @@
     "country": "United Kingdom",
     "continent": "Europe"
   },
+  "Long Beach": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
   "Los Angeles": {
     "country": "United States",
     "region": "California",
@@ -264,6 +311,11 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Mission": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
   "Montréal": {
     "country": "Canada",
     "region": "Québec",
@@ -281,6 +333,15 @@
     "country": "United States",
     "region": "Tennessee",
     "continent": "North America"
+  },
+  "New Westminster": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Nice": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Omaha": {
     "country": "United States",
@@ -332,6 +393,10 @@
     "region": "Québec",
     "continent": "North America"
   },
+  "Saint-Denis": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Sainte-Anne-de-Beaupré": {
     "country": "Canada",
     "region": "Québec",
@@ -357,6 +422,11 @@
     "region": "California",
     "continent": "North America"
   },
+  "St. Louis": {
+    "country": "United States",
+    "region": "Missouri",
+    "continent": "North America"
+  },
   "St. Petersburg": {
     "country": "United States",
     "region": "Florida",
@@ -374,6 +444,10 @@
     "country": "United States",
     "region": "Florida",
     "continent": "North America"
+  },
+  "Tbilisi": {
+    "country": "Georgia",
+    "continent": "Asia"
   },
   "Toronto": {
     "country": "Canada",
@@ -428,5 +502,9 @@
   "Yerevan": {
     "country": "Armenia",
     "continent": "Asia"
+  },
+  "Zaandam": {
+    "country": "Netherlands",
+    "continent": "Europe"
   }
 }

@@ -1,0 +1,68 @@
+{
+  "id": "queensborough-bridge",
+  "name": "Queensborough Bridge",
+  "kind": "bridge",
+  "origin": [
+    -122.94718,
+    49.19642
+  ],
+  "height": 35.5,
+  "padM": 680,
+  "frontageBearing": 325,
+  "rangeM": 5000,
+  "nearM": 1450,
+  "terrainPolicy": "absolute-deck",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 visual water/flat-map datum; 26 m crest and world river road elevation estimated from 23 m published navigation clearance plus structure. Cityscape broadens the north descent through the river unit to stay below 8 percent; world retains the level 26 m river section. Terrain and Mercator stretch applied only by host.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1960 crossing with modern four lanes, median and paired sidewalks. Engineer-sourced 61–91–61 m steel spans and 1.6 m paths. Current 847 m engineering length differs from historical 920/924 m. Deck width measured from OSM sidewalk/outline controls; girder sections, elevations and pier positions are estimates. Approaches are flat-map compromises.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/queensborough-bridge-near.glb",
+      "bytes": 1969172,
+      "triangles": 52200,
+      "drawCalls": 17,
+      "bounds": {
+        "min": [
+          -202.90481567382812,
+          -4.2618097495505936e-7,
+          -249.11514282226562
+        ],
+        "max": [
+          361.0157775878906,
+          35.4900016784668,
+          604.7218017578125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/queensborough-bridge-far.glb",
+      "bytes": 705848,
+      "triangles": 18736,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -202.90481567382812,
+          -4.2618097495505936e-7,
+          -249.11514282226562
+        ],
+        "max": [
+          361.01275634765625,
+          35.4900016784668,
+          604.7218017578125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/queensborough-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
