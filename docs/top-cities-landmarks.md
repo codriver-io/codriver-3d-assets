@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (254 released)
+## The collection (260 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -262,6 +262,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `george-c-king-bridge` | George C. King Bridge | Calgary | bridge |
 | `frost-bank-tower` | Frost Bank Tower | Austin | building |
 | `georgia-aquarium` | Georgia Aquarium | Atlanta | building |
+| `pont-royal` | Pont Royal | Paris | bridge, road-fitted |
+| `pont-de-l-alma` | Pont de l'Alma | Paris | bridge, road-fitted |
+| `albert-bridge-london` | Albert Bridge | London | bridge, road-fitted |
+| `smithsonian-castle` | Smithsonian Institution Building (the Castle) | Washington | building |
+| `real-casa-de-correos` | Real Casa de Correos (Puerta del Sol) | Madrid | building |
+| `hotel-negresco` | Hôtel Negresco | Nice | building |
 
 ## A landmark is a folder
 

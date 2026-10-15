@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'royal-albert-hall', name: "Royal Albert Hall", kind: 'building',
   ready: false,
-  origin: [-0.1774, 51.5011],
+  origin: [-0.17740224625, 51.50101459875],
   height: 41,
   padM: 60,
   frontageBearing: 0,

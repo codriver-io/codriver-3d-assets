@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'art-gallery-of-alberta', name: "Art Gallery of Alberta", kind: 'building',
   ready: false,
   origin: [-113.48869, 53.54491],
-  height: 30,
+  height: 31,
   padM: 60,
   frontageBearing: 0,
 };

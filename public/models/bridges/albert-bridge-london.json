@@ -1,0 +1,72 @@
+{
+  "id": "albert-bridge-london",
+  "name": "Albert Bridge",
+  "kind": "bridge",
+  "origin": [
+    -0.1666947,
+    51.4822574
+  ],
+  "height": 33,
+  "padM": 140,
+  "frontageBearing": 163,
+  "rangeM": 3000,
+  "nearM": 800,
+  "terrainPolicy": "absolute-deck",
+  "lateralBankFit": {
+    "terrainClamp": true,
+    "clearanceM": 0.1
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat-map grade (the river is flat in Cityscape). Flat-map roadway 4.6 m at the towers, 5.42 m at mid-span; finials 28.4 m above the roadway. In Full 3D world (absolute-deck) the span lifts to 1.8 m above the higher bank. No DEM is baked into the mesh.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 710 ft overall, 384 ft 9 in central span (clear, pier face to pier face), 41 ft deck, 27 ft roadway, 32 stays from four octagonal cast-iron columns, two 1973 concrete central piers. Mapped: tower piers 121.9 m apart, toll booth and pier circles. Column, lantern and spire heights are photographic estimates scaled from the mapped span; stay anchor stations, chain sag, girder depth and colours are visual estimates. Flat-map ramps are a compromise; the real deck sits above both embankments. No textures or third-party meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/albert-bridge-london-near.glb",
+      "bytes": 1709408,
+      "triangles": 32814,
+      "drawCalls": 14,
+      "bounds": {
+        "min": [
+          -43.37229919433594,
+          -1.9785021621032683e-8,
+          -123.60423278808594
+        ],
+        "max": [
+          46.34893035888672,
+          33,
+          132.54681396484375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/albert-bridge-london-far.glb",
+      "bytes": 611008,
+      "triangles": 10554,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -43.37229919433594,
+          -1.9785021621032683e-8,
+          -123.60423278808594
+        ],
+        "max": [
+          46.34893035888672,
+          33,
+          132.54681396484375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/albert-bridge-london/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

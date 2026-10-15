@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'cathedrale-saint-jean-lyon', name: "Cathédrale Saint-Jean", kind: 'building',
   ready: false,
-  origin: [4.8275, 45.76056],
+  origin: [4.8275, 45.76075],
   height: 44,
   padM: 60,
   frontageBearing: 0,

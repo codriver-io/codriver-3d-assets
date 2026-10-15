@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'edmonton-city-hall', name: "Edmonton City Hall", kind: 'building',
   ready: false,
   origin: [-113.49014, 53.54556],
-  height: 62,
+  height: 60.96,
   padM: 60,
   frontageBearing: 0,
 };
