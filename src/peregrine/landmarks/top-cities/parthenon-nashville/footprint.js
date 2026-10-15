@@ -1,2 +1,62 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// Exact OSM provider outline plus the documented 238 × 111 ft crepidoma envelope.
+// The mapped rectangle is ~83 × 32.8m; the base is 72.54 × 33.83m.
+// Derived data © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright
+export const OSM_WAYS = [130913355];
+export const FOOTPRINTS = [
+  [
+    [
+      -86.8131014,
+      36.1500439
+    ],
+    [
+      -86.8130396,
+      36.149969
+    ],
+    [
+      -86.8130081,
+      36.1499314
+    ],
+    [
+      -86.81298,
+      36.1498977
+    ],
+    [
+      -86.8128988,
+      36.1497994
+    ],
+    [
+      -86.8136634,
+      36.1493875
+    ],
+    [
+      -86.8138656,
+      36.1496323
+    ],
+    [
+      -86.8131014,
+      36.1500439
+    ]
+  ],
+  [
+    [
+      -86.81382242,
+      36.149661391
+    ],
+    [
+      -86.813151039,
+      36.150022999
+    ],
+    [
+      -86.81294218,
+      36.149770159
+    ],
+    [
+      -86.813613561,
+      36.149408551
+    ],
+    [
+      -86.81382242,
+      36.149661391
+    ]
+  ]
+];

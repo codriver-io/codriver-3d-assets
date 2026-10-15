@@ -1,0 +1,67 @@
+{
+  "id": "lake-eola-fountain",
+  "name": "Lake Eola fountain",
+  "kind": "building",
+  "origin": [
+    -81.37291941578947,
+    28.543637715789476
+  ],
+  "height": 15,
+  "structureHeight": 6.45,
+  "diameter": 18.288,
+  "padM": 14,
+  "frontageBearing": 90,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the lake surface and rigid foundation datum; no absolute altitude, lake depth or DEM baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "60 ft diameter sourced from Orange County Regional History Center; tier heights, rib rhythm, six-sided shallow plinth and spray phase estimated from reference photographs. Green domed fountain, distinct from the separate Chinese pagoda. Basemap lake supplies surrounding water; no contextual water pad. Cityscape and Full 3D world not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/lake-eola-fountain-near.glb",
+      "bytes": 329624,
+      "triangles": 6536,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.851475715637207,
+          2.9802322831784522e-9,
+          -10.851475715637207
+        ],
+        "max": [
+          10.851475715637207,
+          15,
+          10.851475715637207
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/lake-eola-fountain-far.glb",
+      "bytes": 183832,
+      "triangles": 2872,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.864952087402344,
+          2.9802322831784522e-9,
+          -10.864952087402344
+        ],
+        "max": [
+          10.864952087402344,
+          15,
+          10.864952087402344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lake-eola-fountain/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -34778,6 +34778,548 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "art-gallery-of-alberta",
+      "name": "Art Gallery of Alberta",
+      "kind": "building",
+      "location": "Edmonton, Alberta",
+      "status": "ready",
+      "description": "Original procedural Randall Stout 2010 art museum: sweeping brushed stainless-steel Borealis, upper oval return and high rear crest, glazed corner atrium and zinc gallery boxes.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/art-gallery-of-alberta/geometry.js",
+        "build": "pnpm build:top-cities-landmarks art-gallery-of-alberta --no-check",
+        "provenance": "Original procedural geometry, Codriver 2026; no photo, texture, scan or third-party mesh shipped. Mapped envelope way 221525672 © OpenStreetMap contributors, ODbL 1.0. Reference-only dossier photographs: IQRemix, Art Gallery of Alberta (23624014955), (26554042415), Edmonton - Art Gallery of Alberta (15015846212), Art Gallery of Alberta (15090567555), all CC BY-SA 2.0; Mack Male, Art Gallery of Alberta (4304783993), CC BY-SA 2.0; Darren Kirby, AGA Edmonton under construction, CC BY-SA 3.0. Photos remain in ignored scratch storage.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Art_Gallery_of_Alberta"
+          },
+          {
+            "label": "AGA official: Randall Stout, 2010, 190 m ribbon, three gallery floors",
+            "url": "https://www.youraga.ca/about/building"
+          },
+          {
+            "label": "Zahner fabricator: stainless steel Borealis and preweathered zinc",
+            "url": "https://azahner.com/projects/art-gallery-of-alberta/"
+          },
+          {
+            "label": "DeSimone structural engineer: three storeys, retained stair core, ribbon supports",
+            "url": "https://www.desimone.com/projects/art-gallery-of-alberta"
+          },
+          {
+            "label": "Mapped building envelope, ODbL",
+            "url": "https://www.openstreetmap.org/way/221525672"
+          },
+          {
+            "label": "File:Art Gallery of Alberta (23624014955).jpg: IQRemix from Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Art_Gallery_of_Alberta_(23624014955).jpg"
+          },
+          {
+            "label": "File:Art Gallery of Alberta (26554042415).jpg: IQRemix from Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Art_Gallery_of_Alberta_(26554042415).jpg"
+          },
+          {
+            "label": "File:Art Gallery of Alberta (4304783993).jpg: Mack Male from Edmonton, AB, Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Art_Gallery_of_Alberta_(4304783993).jpg"
+          },
+          {
+            "label": "File:AGA Edmonton under construction.jpg: Darren Kirby, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:AGA_Edmonton_under_construction.jpg"
+          },
+          {
+            "label": "File:Edmonton - Art Gallery of Alberta (15015846212).jpg: IQRemix from Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edmonton_-_Art_Gallery_of_Alberta_(15015846212).jpg"
+          },
+          {
+            "label": "File:Art Gallery of Alberta (15090567555).jpg: IQRemix from Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Art_Gallery_of_Alberta_(15090567555).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/art-gallery-of-alberta/geometry.js"
+      },
+      "notes": "Exterior ribbon rails, 31 m crest height, zinc volumes, glazing and stairs are photograph estimates. Published 190 m refers to the real continuous inside/outside ribbon; this model approximates its exterior with connected upper/rear closed lofts and a broad west return. Opaque glazing, simplified internal structure, no interiors, signs or fine steel seams. Both LODs retain ribbon silhouette and individual atrium panes; hardware performance unmeasured. Review g13ar: faceted pointed atrium and vertical entrance bay; cool silver steel with darker reverse skins, normal-offset thickness and modest PBR sheen. Near/far 13,432/3,360 triangles, 8/7 draws, 364,204/118,572 bytes. Runtime metal appearance is palette/normal shading.",
+      "documentation": "docs/assets/top-cities-art-gallery-of-alberta.md",
+      "manifest": "/models/buildings/art-gallery-of-alberta.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=art-gallery-of-alberta",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=art-gallery-of-alberta&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=art-gallery-of-alberta&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=art-gallery-of-alberta&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=art-gallery-of-alberta&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=art-gallery-of-alberta&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=art-gallery-of-alberta&view=detail"
+          }
+        ]
+      },
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edmonton-city-hall",
+      "name": "Edmonton City Hall",
+      "kind": "building",
+      "location": "Edmonton, Alberta",
+      "status": "ready",
+      "description": "Original procedural model of the 1992 Edmonton City Hall: twin diamond-latticed glass pyramids, open three-storey colonnade, Tyndall-stone wings and the detached Friendship Tower carillon.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/edmonton-city-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks edmonton-city-hall",
+        "provenance": "Original procedural geometry authored 2026-10-15. Footprints derived from OpenStreetMap contributors, ODbL 1.0. Reference photos used for visual study only, retained in ignored scratch: Chris Woodrich, Edmonton City Hall 2026-09-27 01, CC BY-SA 4.0; Heidi G, CN and the Pyramid and Looking up -), CC BY 2.0; hobvias sudoneighm, Edmonton 100th birthday liquid light, CC BY 2.0; Simon Law, Glass roof, CC BY-SA 2.0; WinterforceMedia/WinterE229, City Hall Edmonton Alberta Canada 02 (2012), CC0 1.0. No photo content or third-party mesh embedded.",
+        "references": [
+          {
+            "label": "City of Edmonton: City Hall, architect and opening",
+            "url": "https://www.edmonton.ca/attractions_events/city-hall"
+          },
+          {
+            "label": "Wikipedia: 43 m main pyramid, three storeys, 60 m carillon",
+            "url": "https://en.wikipedia.org/wiki/Edmonton_City_Hall"
+          },
+          {
+            "label": "OSM: City Hall footprint",
+            "url": "https://www.openstreetmap.org/way/35008768"
+          },
+          {
+            "label": "OSM: Friendship Tower, 60.96 m",
+            "url": "https://www.openstreetmap.org/way/451068545"
+          },
+          {
+            "label": "Reference photograph: Edmonton_City_Hall,_Edmonton,_Alberta,_2026-09-27_01.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Edmonton_City_Hall,_Edmonton,_Alberta,_2026-09-27_01.jpg"
+          },
+          {
+            "label": "Reference photograph: CN_and_the_Pyramid_(4216645001).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:CN_and_the_Pyramid_(4216645001).jpg"
+          },
+          {
+            "label": "Reference photograph: Edmonton%27s_100th_birthday_~_liquid_light_(776051).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Edmonton%27s_100th_birthday_~_liquid_light_(776051).jpg"
+          },
+          {
+            "label": "Reference photograph: Looking_up_-)_(4221525410).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Looking_up_-)_(4221525410).jpg"
+          },
+          {
+            "label": "Reference photograph: Glass_roof_(509261225).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Glass_roof_(509261225).jpg"
+          },
+          {
+            "label": "Reference photograph: City_Hall_Edmonton_Alberta_Canada_02.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:City_Hall_Edmonton_Alberta_Canada_02.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edmonton-city-hall/geometry.js"
+      },
+      "notes": "Main pyramid peak 43 m; Friendship Tower 60.96 m. Roof rises 28 / 15 m and three-storey podium from OSM. Roof leaning, windows, colonnade spacing and bell details are photo-estimated; council pyramid follows mapped irregular roof boundary. No texture or external mesh. Export inspection is not terrain/provider verification. Review fix g12cr: full-footprint four-post open carillon crown with four-face 2×6 cell rhythm and 23 supported bell silhouettes; separate sand-tan shaft, 5 m clock diamonds, southwest west-edge cornice tabs trimmed to supported wall face. Main pyramid remains 43 m. Export near 16894 triangles / 7 draws / 925184 bytes; far 7058 / 7 / 395500. Focused geometry tests and QA pass; app evidence recorded in the documentation.",
+      "documentation": "docs/assets/top-cities-edmonton-city-hall.md",
+      "manifest": "/models/buildings/edmonton-city-hall.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=edmonton-city-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=edmonton-city-hall&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=edmonton-city-hall&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=edmonton-city-hall&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=edmonton-city-hall&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=edmonton-city-hall&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=edmonton-city-hall&view=detail"
+          }
+        ]
+      },
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "lake-eola-fountain",
+      "name": "Lake Eola fountain",
+      "kind": "building",
+      "location": "Orlando, Florida",
+      "status": "ready",
+      "description": "Original procedural Linton E. Allen Memorial Fountain: broad ribbed green dome, two smaller crown tiers, open concrete undercroft, coloured night lighting and representative static sprays over basemap lake water.",
+      "manifest": "/models/buildings/lake-eola-fountain.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/lake-eola-fountain/geometry.js",
+        "build": "pnpm build:top-cities-landmarks lake-eola-fountain --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-15; no external mesh or texture. Fountain outline and anchor: OpenStreetMap way 45775179, ODbL 1.0. Visual references, kept only in ignored tmp: Lake Eola and Orlando Skyline seen in 2024, JER3L1337, CC BY 4.0; Lake eola fountain, sun dazed, CC BY-SA 2.0. Photographs used for visual comparison only; no image data embedded or redistributed.",
+        "references": [
+          {
+            "label": "Orange County Regional History Center — 1957 dome construction and 60 ft diameter",
+            "url": "https://www.thehistorycenter.org/eola-fountain/"
+          },
+          {
+            "label": "Smithsonian — Linton E. Allen Memorial Fountain, green dome on concrete blocks, 1957",
+            "url": "https://www.si.edu/object/linton-e-allen-memorial-fountain-sculpture:siris_ari_335305"
+          },
+          {
+            "label": "Commons: JER3L1337, Lake Eola and Orlando Skyline seen in 2024, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lake_Eola_and_Orlando_Skyline_seen_in_2024.jpg"
+          },
+          {
+            "label": "Commons: sun dazed, Lake eola fountain, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lake_eola_fountain.jpg"
+          },
+          {
+            "label": "OpenStreetMap fountain way 45775179",
+            "url": "https://www.openstreetmap.org/way/45775179"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/lake-eola-fountain/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=lake-eola-fountain",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=lake-eola-fountain&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=lake-eola-fountain&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=lake-eola-fountain&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=lake-eola-fountain&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=lake-eola-fountain&view=detail"
+          }
+        ]
+      },
+      "notes": "Review g12ar: removed the 25 m teal contextual disc; basemap supplies the surrounding lake. Hexagonal foundation reaches local water datum y=0. Broader pale-white central plume (1.5 m base, 1.9 m crown) retains 15 m apex. Published rim diameter 18.288 m; estimated permanent height 6.45 m, pier/rib counts, tiers and static lighting phase. Falling sprays alone extend outside exact OSM amenity way 45775179; existing 95 m query found no buildings/parts to mask. No machinery, animation, underwater pilings or entire lake. near: 6,536 triangles / 6 draws / 329,100 bytes; far: 2,872 triangles / 6 draws / 183,304 bytes. Focused metrics and material depth checks clean; local both-mode app captures completed; independent re-review pending.",
+      "documentation": "docs/assets/top-cities-lake-eola-fountain.md",
+      "city": "Orlando",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palais-du-luxembourg",
+      "name": "Palais du Luxembourg (Sénat)",
+      "kind": "building",
+      "location": "15 rue de Vaugirard, Paris, France",
+      "status": "ready",
+      "description": "Original procedural Senate palace: rusticated pale stone and tall French windows, open cour d’honneur, six slate pavilions with attic pediments and tall paired chimneys, a broad square-plan curved garden dome and clock pediment, and recessed domed street portal.",
+      "manifest": "/models/buildings/palais-du-luxembourg.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palais-du-luxembourg/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palais-du-luxembourg --no-check",
+        "provenance": "Original hand-authored procedural geometry, 2026-10-15. Mapped outline and part heights © OpenStreetMap contributors (ODbL 1.0). Photographs used only for proportions and colours; no photographs, textures, scans or third-party mesh ship. Dossier photographs: 1.jpg | File:Paris Palais du Luxembourg façade s printemps 2014.jpg | JLPC | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Paris_Palais_du_Luxembourg_fa%C3%A7ade_s_printemps_2014.jpg; 2.jpg | File:Palais du Luxembourg, Paris (38453204755) (cropped).jpg | xiquinhosilva from Cacau | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Palais_du_Luxembourg,_Paris_(38453204755)_(cropped).jpg; 3.jpg | File:Luxembourg Palace - 2018-04-07.jpg | Bretwa | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Luxembourg_Palace_-_2018-04-07.jpg; 4.jpg | File:Palais du Luxembourg (44119496324).jpg | Arthur Weidmann | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Palais_du_Luxembourg_(44119496324).jpg; 5.jpg | File:Palais Luxembourg Sunset Edit.JPG | Benh LIEU SONG, crane cloned out by Sanchezn | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Palais_Luxembourg_Sunset_Edit.JPG; 6.jpg | File:Veüe du Palais d'Orléans appelé Luxembourg - Hustin 1904 p8.jpg | Pierre Lepautre | Public domain | https://commons.wikimedia.org/wiki/File:Ve%C3%BCe_du_Palais_d%27Orl%C3%A9ans_appel%C3%A9_Luxembourg_-_Hustin_1904_p8.jpg. Additional reference: Palais du Luxembourg entrée rue de Vaugirard, Faxa, CC BY-SA 3.0.",
+        "references": [
+          {
+            "label": "Sénat · official palace history (1615–1631, Gisors extension)",
+            "url": "https://www.senat.fr/connaitre-le-senat/patrimoine/lhistoire-du-palais-du-luxembourg.html"
+          },
+          {
+            "label": "Wikipedia · Luxembourg Palace",
+            "url": "https://en.wikipedia.org/wiki/Luxembourg_Palace"
+          },
+          {
+            "label": "OSM · palace multipolygon 975955",
+            "url": "https://www.openstreetmap.org/relation/975955"
+          },
+          {
+            "label": "File:Paris Palais du Luxembourg façade s printemps 2014.jpg · JLPC · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_Palais_du_Luxembourg_fa%C3%A7ade_s_printemps_2014.jpg"
+          },
+          {
+            "label": "File:Palais du Luxembourg, Paris (38453204755) (cropped).jpg · xiquinhosilva from Cacau · CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palais_du_Luxembourg,_Paris_(38453204755)_(cropped).jpg"
+          },
+          {
+            "label": "File:Luxembourg Palace - 2018-04-07.jpg · Bretwa · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Luxembourg_Palace_-_2018-04-07.jpg"
+          },
+          {
+            "label": "File:Palais Luxembourg Sunset Edit.JPG · Benh LIEU SONG, crane cloned out by Sanchezn · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palais_Luxembourg_Sunset_Edit.JPG"
+          },
+          {
+            "label": "File:Veüe du Palais d'Orléans appelé Luxembourg - Hustin 1904 p8.jpg · Pierre Lepautre · Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Ve%C3%BCe_du_Palais_d%27Orl%C3%A9ans_appel%C3%A9_Luxembourg_-_Hustin_1904_p8.jpg"
+          },
+          {
+            "label": "Street entrance reference · Faxa · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palais_du_Luxembourg_entr%C3%A9e_rue_de_Vaugirard.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palais-du-luxembourg/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=palais-du-luxembourg&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=facade"
+          },
+          {
+            "label": "north",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=north"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=detail"
+          },
+          {
+            "label": "court",
+            "url": "/asset-preview.html?asset=palais-du-luxembourg&view=court"
+          }
+        ]
+      },
+      "notes": "g14ar review fixes: removed cylindrical garden drum in favor of four curved slate faces across the full central pavilion (11.5 × 9.2 m plan, spring 21.1 m, crown 28.2 m), added broad segmental clock pediment and three facade bays, elongated upper French panes, banded projecting pavilion pilasters and stronger string courses/cornices, pavilion attic pediments, 2 m taller paired chimneys and lighter #5d6873 slate. Highest chimney tip 34.595 m; mast 33.8 m. All dimensions of ornament are photograph estimates; OSM mass heights/envelope and baked 2-degree frame retained. Near: 47,110 triangles / 7 draws / 2,287,284 bytes (2,234 KiB); far: 7,036 / 7 / 315,888 bytes (308 KiB). Both LODs keep discrete windows, open courtyard, recessed portal and lantern contacts. Final exported near/far light/dark sheets: tmp/top-cities/shots/palais-du-luxembourg/g14ar-2/. App evidence: tmp/top-cities/palais-du-luxembourg/g14ar/app/. Focused tests 841 passed; catalog valid; geometry QA has no issue flags and zero dropped depth-cycle edges. Sculptural likenesses, heraldry and small service/lightwell details remain simplified; lifecycle, DEM refinement and hardware remain untested. Independent re-review required.",
+      "documentation": "docs/assets/top-cities-palais-du-luxembourg.md",
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "parthenon-nashville",
+      "name": "The Parthenon (Nashville)",
+      "kind": "building",
+      "location": "Nashville, Tennessee",
+      "status": "ready",
+      "description": "Complete Nashville concrete replica of the Parthenon: intact 8 × 17 Doric colonnade, closed tiled gabled roof, sculpted pediments, acroteria, three-step crepidoma and bronze doors.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/parthenon-nashville/geometry.js",
+        "build": "pnpm build:top-cities-landmarks parthenon-nashville --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15; no external mesh, scan, photograph or texture embedded. Placement derived from OpenStreetMap way 130913355, © OpenStreetMap contributors (ODbL 1.0). Reference-only Commons photos viewed in ignored scratch: Nashville Parthenon at night at night 2024, Jschnake, CC BY-SA 4.0; Parthenon 20170829 A/B/C, Kabbalahcat, CC BY-SA 4.0; Parthenon Nashville 2024c/2024e, Antony-22, CC BY-SA 4.0; Parthenon Nashville.png, White.alister.t, CC BY-SA 4.0; Statues at Parthenon, Nashville, TN, US.jpg, Bubba73 (Jud McCranie), CC BY-SA 4.0. Photographs used only for visual comparison.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Parthenon_(Nashville)"
+          },
+          {
+            "label": "Museum history and architecture: apex, columns, material and permanent replica",
+            "url": "https://www.nashvilleparthenon.com/history"
+          },
+          {
+            "label": "B. F. Wilson III, former museum director: published dimensional account (1941)",
+            "url": "https://www.gutenberg.org/cache/epub/58665/pg58665-images.html"
+          },
+          {
+            "label": "OSM provider outline 130913355",
+            "url": "https://www.openstreetmap.org/way/130913355"
+          },
+          {
+            "label": "Exterior oblique, White.alister.t (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Parthenon_Nashville.png"
+          },
+          {
+            "label": "Sculpture group, Bubba73 / Jud McCranie (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Statues_at_Parthenon,_Nashville,_TN,_US.jpg"
+          },
+          {
+            "label": "Night facade, Jschnake (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Nashville_Parthenon_at_night_at_night_2024.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parthenon-nashville/geometry.js"
+      },
+      "notes": "Original texture-free procedural exterior. Exact published imperial dimensions converted to metres; step height, cella envelope, frieze levels, tile rhythm, acroteria and sculpture poses are estimated from photographs. Pediment groups are original schematic human/horse silhouettes, not reproductions of individual artworks. Optical curvature, individual column inclinations, museum interior/basement, park and lake omitted. No app/device performance claim. Review g13ar: removed narrow roof ribs to eliminate moire; broad ridge and sparse antefixes remain, twelve-flute near shafts, pale buff concrete, full-height paired bronze door opening. Near/far 29,906/8,474 triangles, 3/3 draws, 1,190,580/364,480 bytes; preserving colonnade and sculptures takes priority over the approximate 1 MB aim.",
+      "documentation": "docs/assets/top-cities-parthenon-nashville.md",
+      "manifest": "/models/buildings/parthenon-nashville.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=parthenon-nashville",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=parthenon-nashville&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=parthenon-nashville&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=parthenon-nashville&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=parthenon-nashville&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=parthenon-nashville&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=parthenon-nashville&view=detail"
+          }
+        ]
+      },
+      "city": "Nashville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "wrigley-building",
+      "name": "Wrigley Building",
+      "kind": "building",
+      "location": "Chicago, Illinois",
+      "status": "ready",
+      "description": "Glazed white terracotta twin-tower Chicago landmark: four clock faces, Giralda-inspired open belfry and octagonal lantern, pedimented north parapet cresting and two enclosed bridges spanning an open pedestrian plaza.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/wrigley-building/geometry.js",
+        "build": "pnpm build:top-cities-landmarks wrigley-building",
+        "provenance": "Original procedural mesh authored from mapped outlines and photographs, no third-party mesh or textures. Footprints © OpenStreetMap contributors, ODbL 1.0: parent ways 68831071 and 1271821350, parts 686197572, 686197576, 686197567, relation 17460539. Photographs used only as references in ignored scratch: Alvesgaspar, Tower of the Wrigley Building September 2016-35 and Chicago September 2016-14 (CC BY-SA 4.0); Bex Walton, The Wrigley Building (47827964482) (CC BY 2.0); Diego Delso, Río Chicago 2012-10-20 DD 02 (CC BY-SA 3.0); Pedro Szekely, Chicago (34886261555) (CC BY-SA 2.0); Dicklyon, Wrigley v Trump (CC BY-SA 4.0). No reference photos are shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Wrigley_Building"
+          },
+          {
+            "label": "CTBUH: Wrigley Building complex, 134 m architectural height",
+            "url": "https://www.skyscrapercenter.com/complex/417"
+          },
+          {
+            "label": "Original terra cotta: four 19 ft 7 in clock faces",
+            "url": "https://bldg51.com/2017/06/07/original-cream-colored-wrigley-building-ornamental-terra-cotta-fragment-joins-bldg-51-museum-collection/"
+          },
+          {
+            "label": "OSM: Wrigley Building relation",
+            "url": "https://www.openstreetmap.org/relation/17460539"
+          },
+          {
+            "label": "File:Tower of the Wrigley Building, Michigan Avenue, Chicago September 2016-35.jpg — Alvesgaspar, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tower_of_the_Wrigley_Building,_Michigan_Avenue,_Chicago_September_2016-35.jpg"
+          },
+          {
+            "label": "File:Chicago September 2016-14 (cropped).jpg — Alvesgaspar, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Chicago_September_2016-14_(cropped).jpg"
+          },
+          {
+            "label": "File:The Wrigley Building (47827964482).jpg — Bex Walton from London, England, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Wrigley_Building_(47827964482).jpg"
+          },
+          {
+            "label": "File:Río Chicago, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 02.jpg — Diego Delso, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Chicago,_Chicago,_Illinois,_Estados_Unidos,_2012-10-20,_DD_02.jpg"
+          },
+          {
+            "label": "File:Chicago (34886261555).jpg — Pedro Szekely from Los Angeles, USA, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Chicago_(34886261555).jpg"
+          },
+          {
+            "label": "File:Wrigley v Trump.jpg — Dicklyon, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Wrigley_v_Trump.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wrigley-building/geometry.js"
+      },
+      "notes": "Review g12ar: near-white cream glazed terracotta dominates smaller mid-grey window quads. Giralda crown has belfry corner urns, a setback octagonal stage and taller open lantern; published 134 m tip and 5.97 m clocks retained. Replaced invented north rooftop boxes with roof-seated corner cresting and pediments (estimated up to 77 m). Upper-row mullion/sill quads dropped and identical material vertices welded; far retains discrete windows at every floor. Mapped footprints and all five OSM provider way/part ids unchanged; bridges remain embedded in named blocks. Fine relief is simplified. near: 18,902 triangles / 6 draws / 958,576 bytes; far: 6,034 triangles / 6 draws / 288,444 bytes. Focused metrics and material depth checks clean; two unrelated shared conformance failures reported to lead. Local both-mode app captures completed; independent re-review pending.",
+      "documentation": "docs/assets/top-cities-wrigley-building.md",
+      "manifest": "/models/buildings/wrigley-building.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=wrigley-building&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=wrigley-building&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=wrigley-building&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=wrigley-building&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=wrigley-building&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=wrigley-building&view=street"
+          },
+          {
+            "label": "Clock",
+            "url": "/asset-preview.html?asset=wrigley-building&view=clock"
+          },
+          {
+            "label": "Plaza",
+            "url": "/asset-preview.html?asset=wrigley-building&view=plaza"
+          }
+        ]
+      },
+      "city": "Chicago",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
