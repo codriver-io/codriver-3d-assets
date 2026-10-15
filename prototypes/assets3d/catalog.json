@@ -33160,6 +33160,576 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "albert-bridge-london",
+      "name": "Albert Bridge",
+      "kind": "bridge",
+      "location": "A3031 across the Thames, Chelsea–Battersea · London, UK",
+      "status": "ready",
+      "description": "Original procedural present-day Albert Bridge (Ordish 1873, Bazalgette chains 1884-87, GLC central piers 1973) in its 1992 pastel scheme: four octagonal cast-iron columns with open lanterns, delicate crown ribs and needles on cylindrical iron piers, lattice-arched portals, 32 flat-bar stays fanning into both spans, eyebar chains with hangers, pink girders with gilded roundels, concrete central piers and the four octagonal toll booths. Road-fitted on the mapped A3031.",
+      "manifest": "/models/bridges/albert-bridge-london.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/albert-bridge-london/geometry.js",
+        "build": "pnpm build:top-cities-landmarks albert-bridge-london --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-15. Published dimensions (710 ft length, 384 ft 9 in central span, 41 ft width, 27 ft roadway, 66 ft height, 32 stays, four octagonal columns, 1973 piers) from the English Wikipedia article and its cited sources. Mapped A3031 centreline, bridge outline, tower piers (ways 1385662670, 1385662671, 857860925, 857860926) and toll booths (ways 378295025, 378295026, 250356517, 250356518) from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors) via the prepared dossier and the shared Overpass helper. Reference photographs only, kept in ignored scratch: Diliff, Albert Bridge, London - Oct 2012 (CC BY-SA 3.0); Diliff, Albert Bridge at night, London, UK (CC BY-SA 3.0); Iridescent, Albert Bridge notice (CC BY-SA 3.0); Iridescent, Albert Bridge columns (CC BY-SA 3.0); Iridescent, Albert Bridge from Chelsea Embankment (CC BY-SA 3.0); Tabletop123, Albert Bridge from Chelsea front, September 2023 (CC BY-SA 4.0). No reference image, texture, scan or third-party mesh is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia · Albert Bridge, London (dimensions, history, 1992 colour scheme)",
+            "url": "https://en.wikipedia.org/wiki/Albert_Bridge,_London"
+          },
+          {
+            "label": "OpenStreetMap · bridge outline",
+            "url": "https://www.openstreetmap.org/way/378295023"
+          },
+          {
+            "label": "OpenStreetMap · north tower pier (height=20)",
+            "url": "https://www.openstreetmap.org/way/1385662670"
+          },
+          {
+            "label": "OpenStreetMap · toll booth (originally toll booths)",
+            "url": "https://www.openstreetmap.org/way/378295025"
+          },
+          {
+            "label": "Reference photograph · File:Albert Bridge, London - Oct 2012.jpg · Diliff · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Bridge,_London_-_Oct_2012.jpg"
+          },
+          {
+            "label": "Reference photograph · File:Albert Bridge at night, London, UK - Diliff.jpg · Diliff · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Bridge_at_night,_London,_UK_-_Diliff.jpg"
+          },
+          {
+            "label": "Reference photograph · File:Albert Bridge notice.JPG · Iridescent · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Bridge_notice.JPG"
+          },
+          {
+            "label": "Reference photograph · File:Albert Bridge columns.JPG · Iridescent · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Bridge_columns.JPG"
+          },
+          {
+            "label": "Reference photograph · File:Albert Bridge from Chelsea Embankment.jpg · Iridescent · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Bridge_from_Chelsea_Embankment.jpg"
+          },
+          {
+            "label": "Reference photograph · File:Albert Bridge from Chelsea front. September 2023..jpg · Tabletop123 · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Albert_Bridge_from_Chelsea_front._September_2023..jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/albert-bridge-london/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=albert-bridge-london&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=tower"
+          },
+          {
+            "label": "Booth",
+            "url": "/asset-preview.html?asset=albert-bridge-london&view=booth"
+          }
+        ]
+      },
+      "notes": "Mapped tower piers 121.9 m apart (published 384 ft 9 in clear span + 4.6 m pier); 216.4 m overall (published 710 ft); 12.8 m deck, 8.2 m roadway (published 41/27 ft). Column 20.1 m pier top to capital (published 66 ft); lantern, open crown and 28.4 m finial height above the roadway are photographic estimates. Stay anchor stations, chain sag, girder depth, booth details and colours are visual estimates; members are simple bars (no rivets, notices, lettering or individual LEDs). 1973 piers sit at the mapped outline circles, slightly outboard of the deck. Flat-map ramps 8.22 % / 6.99 % (steepest 8.2 %) with the side spans sloping; Full 3D world lifts the span 1.8 m above the higher bank (absolute-deck). Booths sit directly on widened approach footways with level seats blended into adjacent pavement and ground-fitted outer skirts; separate cylindrical booth plinths removed. Night lighting is stylised (lit column cores, lanterns, lamps, LED strings on chains and parapets). No shared files changed. g5: eight open lantern posts and tapered crown ribs, four corner pinnacles and slender needles retained near/far; short 0.45 m weather cap replaces tall solid cones. Far retains recessed booth windows and pink panels. Near 32814 tris / 14 draws / 1669 KiB; far 10554 / 9 / 596 KiB; zero depth cycles. Lead-approved approach tessellation: road 12/6 lateral strips and footways 4/2 near/far with extra end stations remove the north-world terrain patch; fitted mesh raycasts verify the lateral crest against heightAt.",
+      "documentation": "docs/assets/top-cities-albert-bridge-london.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "hotel-negresco",
+      "name": "Hôtel Negresco",
+      "kind": "building",
+      "location": "Nice, France",
+      "status": "ready",
+      "description": "Original procedural 1913 Belle Époque Hôtel Negresco: white stucco and iron balconies, pink mansard, southeast pink-domed rotunda, green copper lantern and geometric rooftop letters.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/hotel-negresco/geometry.js",
+        "build": "pnpm build:top-cities-landmarks hotel-negresco --no-check",
+        "provenance": "Original procedural geometry, Codriver, 2026-10-15. Mapped from OSM relation 4563464 and ways 140218153, 326729270, 326729272, 326729273 (ODbL 1.0). Reference-only photos: Anna M. Stevenson, Le Negresco (CC BY-SA 3.0); KIWILY, Hôtel Negresco (CC BY-SA 3.0); Wolfgang Moroder, Negresco in Nizza by night 2014 (CC BY-SA 3.0); Irina Korch, Hotel Le Negresco (CC BY-SA 4.0); Adriana ctin, Hotel Negresco by night (CC BY-SA 3.0); Olivier Arlet, Hôtel Negresco depuis la plage (CC BY-SA 4.0). No photos, external fonts, textures or third-party geometry shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Hotel_Negresco"
+          },
+          {
+            "label": "Official hotel",
+            "url": "https://www.lenegresco.com/en"
+          },
+          {
+            "label": "OSM hotel relation 4563464",
+            "url": "https://www.openstreetmap.org/relation/4563464"
+          },
+          {
+            "label": "File:Negresco in Nizza by night 2014.jpg · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Negresco_in_Nizza_by_night_2014.jpg"
+          },
+          {
+            "label": "File:Le Negresco.jpg · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Le_Negresco.jpg"
+          },
+          {
+            "label": "File:Hotel Le Negresco.jpg · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Hotel_Le_Negresco.jpg"
+          },
+          {
+            "label": "File:Hôtel Negresco.jpg · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Negresco.jpg"
+          },
+          {
+            "label": "File:Hotel Negresco by night.JPG · CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Hotel_Negresco_by_night.JPG"
+          },
+          {
+            "label": "File:Hôtel Negresco depuis la plage.jpg · CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Negresco_depuis_la_plage.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/hotel-negresco/geometry.js"
+      },
+      "notes": "Mapped body height 24 m; total 40.6 m flagpole, dome, lantern, windows and ornaments are photo estimates. Dome lies at mapped southeast corner, contrary to the brief’s west-corner description. Rear entrance canopy and flags simplified; interiors, sculptures, landscaping and beach excluded. No textures or copied meshes. App and hardware verification remains with lead.",
+      "documentation": "docs/assets/top-cities-hotel-negresco.md",
+      "manifest": "/models/buildings/hotel-negresco.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=hotel-negresco&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=hotel-negresco&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=hotel-negresco&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=hotel-negresco&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=hotel-negresco&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=hotel-negresco&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=hotel-negresco&view=detail"
+          }
+        ]
+      },
+      "city": "Nice",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-de-l-alma",
+      "name": "Pont de l'Alma",
+      "kind": "bridge",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "1974 Seine crossing with four shallow variable-depth steel box girders, two unequal spans, the single eccentric stone pier and an original Zouave statue silhouette on its upstream cutwater.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-de-l-alma/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-de-l-alma",
+        "provenance": "Original texture-free procedural geometry, 2026-10-15. OSM alignment/envelope © OpenStreetMap contributors, ODbL 1.0. AFGC and Fondation Napoléon for structural identity; IGN BD ORTHO and credited Commons images used as visual references only, retained under ignored scratch. No photographs, traced mesh, textures or restricted capture ship.",
+        "references": [
+          {
+            "label": "AFGC engineering heritage — present 1974 structure and dimensions",
+            "url": "https://www.afgc.asso.fr/history-heritage/pont-de-lalma-a-paris/"
+          },
+          {
+            "label": "Fondation Napoléon — Diebolt Zouave and upstream pier placement",
+            "url": "https://www.napoleon.org/histoire-des-2-empires/objets/le-zouave-du-pont-de-lalma-paris/"
+          },
+          {
+            "label": "OSM mapped bridge envelope",
+            "url": "https://www.openstreetmap.org/way/183589443"
+          },
+          {
+            "label": "IGN BD ORTHO — Licence Ouverte 2.0, deck-width aerial check",
+            "url": "https://geoservices.ign.fr/bdortho"
+          },
+          {
+            "label": "File:Pont de l'Alma, Paris 5 December 2016.jpg — Guilhem Vellut from Paris, France, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_de_l%27Alma,_Paris_5_December_2016.jpg"
+          },
+          {
+            "label": "File:Zouave du pont de l'Alma le 3 juin 2016.jpg — Dom, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Zouave_du_pont_de_l%27Alma_le_3_juin_2016.jpg"
+          },
+          {
+            "label": "File:Eiffel tower from pont de l'Alma.jpg — Tangopaso, Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Eiffel_tower_from_pont_de_l%27Alma.jpg"
+          },
+          {
+            "label": "File:Pont de l'Alma en direction de la place de l'Alma (juillet 2025).JPG — Florian Pépellin, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_de_l%27Alma_en_direction_de_la_place_de_l%27Alma_(juillet_2025).JPG"
+          },
+          {
+            "label": "File:Zouave du pont de l'Alma durant la crue de la Seine à Paris, janvier 2018 (9).jpg — Ibex73, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Zouave_du_pont_de_l%27Alma_durant_la_crue_de_la_Seine_%C3%A0_Paris,_janvier_2018_(9).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-de-l-alma/geometry.js"
+      },
+      "notes": "g11c fix removes the floating 110m ramps and previous 8m deck lift; deck now sits at each quay datum +0.10m. Present 1974 bridge: 142.5m, asymmetric 110/31.5m spans, four variable-depth caissons, 42m width; upstream Zouave at north/right-bank pier. Girder, statue and lamp proportions are photo estimates. Below-quay supports intentionally extend to -7.90m (hidden in Cityscape); buried depth is not a surveyed footing. Exports near 13,688 tris / 8 draws / 527,888 bytes (515.52 KiB); far 6,396 / 7 / 256,112 (250.11 KiB). Zero depth cycles, layered faces or coplanar overlaps; generic below-grade QA warning is intentional. Original low-poly statue omits carved facial detail; fallback four-lane paint approximates current lane layout. Independent lead re-review remains required; no shared runtime source or committed renderer bundles changed.",
+      "documentation": "docs/assets/top-cities-pont-de-l-alma.md",
+      "manifest": "/models/bridges/pont-de-l-alma.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-de-l-alma&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pont-de-l-alma&view=detail"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pont-royal",
+      "name": "Pont Royal",
+      "kind": "bridge",
+      "location": "Paris, France — Seine, Quai Voltaire / Rue du Bac to Quai François Mitterrand / Pavillon de Flore",
+      "status": "ready",
+      "description": "The 1685–1689 royal stone bridge: five three-centred basket arches (20.80/22.42/23.40/22.42/20.80 m) on 4.55 m piers, pointed cutwaters under pyramidal chaperons, voussoir head rings, a plain cornice and solid parapet over a gently humped deck, flared quay mouths and the hydrometric scales on the two end piers; original procedural road-fitted model.",
+      "manifest": "/models/bridges/pont-royal.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pont-royal/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pont-royal --no-check",
+        "provenance": "Original texture-free procedural model by Codriver, October 2026. Bridge outline and carriageway © OpenStreetMap contributors, ODbL 1.0. Widths measured on the IGN orthophoto (Géoplateforme WMTS ORTHOIMAGERY.ORTHOPHOTOS, Licence Ouverte 2.0), not redistributed. Reference-only photographs: DXR (CC BY-SA 3.0), Pierre Blaché (CC0), Jean-François Gornet (CC BY-SA 2.0), Djielle (CC BY-SA 4.0), anonymous (CC BY 2.5), and the public-domain Cruyl 1686 etching and 1814 BnF view; titles and links below. No photos, textures, scans or third-party meshes redistributed.",
+        "references": [
+          {
+            "label": "Wikipédia (fr), Pont Royal (Paris): 1685 specification, spans 64/69/72 ft, piers 14 ft, arches rising one third, hydrometric scales on the end piers",
+            "url": "https://fr.wikipedia.org/wiki/Pont_Royal_(Paris)"
+          },
+          {
+            "label": "Wikipedia (en), Pont Royal: length 110 m, width 17 m",
+            "url": "https://en.wikipedia.org/wiki/Pont_Royal"
+          },
+          {
+            "label": "Structurae, Pont Royal",
+            "url": "https://structurae.net/en/structures/pont-royal"
+          },
+          {
+            "label": "OSM bridge outline with cutwater noses and quay flares",
+            "url": "https://www.openstreetmap.org/way/176396894"
+          },
+          {
+            "label": "OSM carriageway over the bridge",
+            "url": "https://www.openstreetmap.org/way/21124959"
+          },
+          {
+            "label": "File:Pont Royal 2009.jpg / Jean-François Gornet / CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Royal_2009.jpg"
+          },
+          {
+            "label": "File:Pont Royal and Musée d'Orsay, Paris 10 July 2020.jpg / Pierre Blaché / CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pont_Royal_and_Mus%C3%A9e_d%27Orsay,_Paris_10_July_2020.jpg"
+          },
+          {
+            "label": "File:Musee d'Orsay and Pont Royal, North-West view 140402 1.jpg / DXR / CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Musee_d%27Orsay_and_Pont_Royal,_North-West_view_140402_1.jpg"
+          },
+          {
+            "label": "File:France Paris Pont Royal 01.JPG / CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:France_Paris_Pont_Royal_01.JPG"
+          },
+          {
+            "label": "File:Crue 2016-Echelle de crue du Pont Royal.jpg / Djielle / CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Crue_2016-Echelle_de_crue_du_Pont_Royal.jpg"
+          },
+          {
+            "label": "File:Paris-PontRoyal-1686.jpg / Livinus Cruyl / public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris-PontRoyal-1686.jpg"
+          },
+          {
+            "label": "File:Le Pont Royal et le Pavillon de Flore, 1814 - BnF.jpg / public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Le_Pont_Royal_et_le_Pavillon_de_Flore,_1814_-_BnF.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-royal/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pont-royal",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=pont-royal&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=pont-royal&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=pont-royal&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=pont-royal&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=pont-royal&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=pont-royal&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=pont-royal&view=tower"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=pont-royal&view=detail"
+          },
+          {
+            "label": "south",
+            "url": "/asset-preview.html?asset=pont-royal&view=south"
+          },
+          {
+            "label": "north",
+            "url": "/asset-preview.html?asset=pont-royal&view=north"
+          }
+        ]
+      },
+      "notes": "Sourced: spans, one-third rise, 4.55 m piers (1685 specification), 17 m width; walks (~2.85 m) and ~10 m cobbled carriageway measured on the IGN orthophoto. Piers centred on the mean of the four mapped noses (each within 1.1 m). Estimated from photographs: ring depth 0.75 m, cutwater body 3.6 m and chaperon tip 6.4 m above the river, cornice and parapet sections, colours. Mapped span only, flush with the quays: deck 0.10 m above the quay datum at both mouths with a 0.85 m hump to the crown, no ramps; river 7.2 m below grade, masonry to 10.2 m below. Below-grade masonry, soffits, voussoirs and flood scales are shown in Full 3D world only (layer.js). No lamps, arms of France or masonry coursing. g5: single co-level setts fan at each mouth, straight quay cut and central seam, continuous mapped walk edge; denser fan vertices follow terrain without slivers. Own-ground mouth clamp is shared by geometry, heightAt and HD overlays, with a smooth join to the unchanged hump. Near 10614 tris / 20 draws / 864 KiB; far 4616 / 8 / 389 KiB; zero depth cycles.",
+      "documentation": "docs/assets/top-cities-pont-royal.md",
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "real-casa-de-correos",
+      "name": "Real Casa de Correos (Puerta del Sol)",
+      "kind": "building",
+      "location": "Madrid, Spain",
+      "status": "ready",
+      "description": "Original brick-and-granite Puerta del Sol palace with projecting portal, balcony and royal pediment, four clock faces and open octagonal bell lantern with New Year ball.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/real-casa-de-correos/geometry.js",
+        "build": "pnpm build:top-cities-landmarks real-casa-de-correos --no-check",
+        "provenance": "Original procedural Three.js geometry by Codriver, 2026-10-15; no third-party meshes or photographic textures. Footprint © OpenStreetMap contributors, ODbL 1.0. Reference-only dossier photographs: Real Casa de Correos, Plaza del Sol, Madrid, España, 2017-05-18, DD 02 (Diego Delso, CC BY-SA 4.0); Real Casa de Correos (Madrid) 03 (Dimo Dimov, CC BY 2.0); Puerta del Sol (Laurent) (Jean Laurent, public domain); 126 Puerta del Sol and 117 Real Casa de Correos (Enric, CC BY 4.0). Photos remain in ignored scratch.",
+        "references": [
+          {
+            "label": "Community of Madrid: 1768 completion, 1866 Losada clock, two courts and Km 0",
+            "url": "https://www.comunidad.madrid/real-casa-correos"
+          },
+          {
+            "label": "OSM government building relation 4098953",
+            "url": "https://www.openstreetmap.org/relation/4098953"
+          },
+          {
+            "label": "OSM outer way 5936475",
+            "url": "https://www.openstreetmap.org/way/5936475"
+          },
+          {
+            "label": "Dimo Dimov, CC BY 2.0: north facade",
+            "url": "https://commons.wikimedia.org/wiki/File:Real_Casa_de_Correos_(Madrid)_03.jpg"
+          },
+          {
+            "label": "Diego Delso, CC BY-SA 4.0: clock detail",
+            "url": "https://commons.wikimedia.org/wiki/File:Real_Casa_de_Correos,_Plaza_del_Sol,_Madrid,_Espa%C3%B1a,_2017-05-18,_DD_02.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/real-casa-de-correos/geometry.js"
+      },
+      "notes": "OSM-derived 69 x 50 m block; all metre heights, bay dimensions and lantern tiers estimated from reference photos. Historic facade modeled without temporary restoration coverings. Modern glazed courtyard roof simplified, heraldry represented by grouped relief silhouettes, no banners or lettering. Km 0 is an indicative bronze plaque just outside the building footprint and does not own plaza pavement. No app or Tesla hardware verification. Final GLBs: near 29,961 triangles / 7 draws / 1,437,716 bytes; far 9,873 / 7 / 416,560 bytes. Exported near/far light/dark contact sheet judged against dossier references; scoped deterministic QA and depth checks pass with zero cycle edges dropped. Combined conformance 835/835 passed; landmark suite 14/14. Global catalog now passes after the concurrent Gateway Arch record completed; independent app review pending.",
+      "documentation": "docs/assets/top-cities-real-casa-de-correos.md",
+      "manifest": "/models/buildings/real-casa-de-correos.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=real-casa-de-correos",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=real-casa-de-correos&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=real-casa-de-correos&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=real-casa-de-correos&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=real-casa-de-correos&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=real-casa-de-correos&view=entrance"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=real-casa-de-correos&view=tower"
+          }
+        ]
+      },
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "smithsonian-castle",
+      "name": "Smithsonian Institution Building (the Castle)",
+      "kind": "building",
+      "location": "Washington, D.C., United States",
+      "status": "ready",
+      "description": "Original procedural Smithsonian Institution Building (James Renwick Jr., 1849-55): red Seneca sandstone Norman Revival range on the National Mall with the 44 m octagonal north tower with a pinnacled flat parapet, the pyramid-roofed tower beside the gabled north porch, the 36 m north-east campanile, the crenellated 28 m south tower with its bay window, the slim 4 m-wide flat-crowned north-west octagon, east and west wings with crenellated turrets, round-arched window bays, pilasters and slate gables.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/smithsonian-castle/geometry.js",
+        "build": "pnpm build:top-cities-landmarks smithsonian-castle --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15. No third-party mesh, scan, tracing or bitmap. Outline from OSM relation 7393969 (ways 42341487, 788292737, 507462707), © OpenStreetMap contributors, ODbL 1.0. Reference-only Commons photographs kept under ignored tmp/ (none ship in source or GLBs): Arts and Industries Building Across the Parterre, Robert Lyle Bolton (CC BY 2.0); Smithsonian Institution Building (53831938398), ajay_suresh (CC BY 2.0); Smithsonian Building NR, User:Noclip (public domain); Smithsonian Institution Castle, Brady-Handy Photograph Collection, Library of Congress (public domain); 12072012 Smithsonian Building 02, Geiserich77 (CC BY-SA 3.0); East entrance - Smithsonian Institution Building, AgnosticPreachersKid (CC BY-SA 3.0).",
+        "references": [
+          {
+            "label": "Wikipedia — Smithsonian Institution Building (tower heights, plan, materials)",
+            "url": "https://en.wikipedia.org/wiki/Smithsonian_Institution_Building"
+          },
+          {
+            "label": "OSM relation 7393969 — Smithsonian Institution Building",
+            "url": "https://www.openstreetmap.org/relation/7393969"
+          },
+          {
+            "label": "Smithsonian Institution Building (53831938398) — ajay_suresh, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Smithsonian_Institution_Building_(53831938398).jpg"
+          },
+          {
+            "label": "Smithsonian Building NR — User:Noclip, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Smithsonian_Building_NR.jpg"
+          },
+          {
+            "label": "Smithsonian Institution Castle — Brady-Handy Photograph Collection, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Smithsonian_Institution_Castle.jpg"
+          },
+          {
+            "label": "12072012 Smithsonian Building 02 — Geiserich77, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:12072012_Smithsonian_Building_02.jpg"
+          },
+          {
+            "label": "East entrance - Smithsonian Institution Building — AgnosticPreachersKid, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:East_entrance_-_Smithsonian_Institution_Building.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/smithsonian-castle/geometry.js"
+      },
+      "notes": "Final scoped g10cr fix: north-west drum apothem 3.8 → 2.0 m, one window per exposed face, narrowed connecting annex; upper porch gable 6.5 → 8.3 m, rose diameter 2.7 → 4.0 m; four supported stone pinnacles over a 43.25 m parapet retain the 44 m top. Darkened the orange sandstone to maroon #80463f and adjusted trim/night palettes. Both LODs preserve facade window rhythm and four draws. Near 14430 triangles / 936308 bytes; far 4580 / 292116. QA metrics clear and depth layers have zero dropped cycle edges. These ornamental proportions, minor heights and eaves remain photo estimates; carving and interiors omitted. Local y=0, no terrain heights baked. Exact OSM ways 42341487, 788292737, 507462707 unchanged. Evidence: tmp/next-200/fix/g10cr/smithsonian-castle/.",
+      "documentation": "docs/assets/top-cities-smithsonian-castle.md",
+      "manifest": "/models/buildings/smithsonian-castle.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=smithsonian-castle",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=smithsonian-castle&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=smithsonian-castle&view=facade"
+          },
+          {
+            "label": "south",
+            "url": "/asset-preview.html?asset=smithsonian-castle&view=south"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=smithsonian-castle&view=roof"
+          },
+          {
+            "label": "east",
+            "url": "/asset-preview.html?asset=smithsonian-castle&view=east"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=smithsonian-castle&view=detail"
+          }
+        ]
+      },
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

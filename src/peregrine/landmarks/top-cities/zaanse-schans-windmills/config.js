@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'zaanse-schans-windmills', name: "Zaanse Schans windmills", kind: 'building',
   ready: false,
   origin: [4.81715,52.47470],
-  height: 29.5,
+  height: 32,
   padM: 60,
   frontageBearing: 0,
 };

@@ -1,0 +1,292 @@
+{
+  "id": "real-casa-de-correos",
+  "name": "Real Casa de Correos (Puerta del Sol)",
+  "kind": "building",
+  "origin": [
+    -3.7038,
+    40.4164
+  ],
+  "height": 34.6,
+  "padM": 48,
+  "frontageBearing": 353,
+  "ownTolM": 1.2,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -3.7033258,
+          40.4161638
+        ],
+        [
+          -3.7033261,
+          40.416159
+        ],
+        [
+          -3.7033304,
+          40.4161566
+        ],
+        [
+          -3.703336,
+          40.4161539
+        ],
+        [
+          -3.7033354,
+          40.4161522
+        ],
+        [
+          -3.703418,
+          40.4161451
+        ],
+        [
+          -3.7034191,
+          40.4161479
+        ],
+        [
+          -3.7040385,
+          40.4160891
+        ],
+        [
+          -3.7040393,
+          40.4160871
+        ],
+        [
+          -3.7041215,
+          40.416079
+        ],
+        [
+          -3.7041227,
+          40.4160815
+        ],
+        [
+          -3.70413,
+          40.416082
+        ],
+        [
+          -3.7041336,
+          40.4160848
+        ],
+        [
+          -3.7041361,
+          40.416089
+        ],
+        [
+          -3.7041385,
+          40.4160893
+        ],
+        [
+          -3.7041482,
+          40.4161508
+        ],
+        [
+          -3.704145,
+          40.4161523
+        ],
+        [
+          -3.7041932,
+          40.4164509
+        ],
+        [
+          -3.7041965,
+          40.4164506
+        ],
+        [
+          -3.7042068,
+          40.4165151
+        ],
+        [
+          -3.7042039,
+          40.4165149
+        ],
+        [
+          -3.7042032,
+          40.4165205
+        ],
+        [
+          -3.7042007,
+          40.4165232
+        ],
+        [
+          -3.7041972,
+          40.4165249
+        ],
+        [
+          -3.704194,
+          40.416525
+        ],
+        [
+          -3.7041952,
+          40.4165279
+        ],
+        [
+          -3.704111,
+          40.4165351
+        ],
+        [
+          -3.7041103,
+          40.4165332
+        ],
+        [
+          -3.703877,
+          40.4165551
+        ],
+        [
+          -3.7038776,
+          40.4165572
+        ],
+        [
+          -3.7038293,
+          40.4165621
+        ],
+        [
+          -3.7037987,
+          40.416565
+        ],
+        [
+          -3.70377,
+          40.4165678
+        ],
+        [
+          -3.7037245,
+          40.4165721
+        ],
+        [
+          -3.7037243,
+          40.4165694
+        ],
+        [
+          -3.7036817,
+          40.4165734
+        ],
+        [
+          -3.7035588,
+          40.4165849
+        ],
+        [
+          -3.7034908,
+          40.4165912
+        ],
+        [
+          -3.7034909,
+          40.416594
+        ],
+        [
+          -3.7034069,
+          40.4166019
+        ],
+        [
+          -3.7034068,
+          40.4165989
+        ],
+        [
+          -3.7034013,
+          40.4165991
+        ],
+        [
+          -3.7033963,
+          40.4165967
+        ],
+        [
+          -3.7033937,
+          40.4165919
+        ],
+        [
+          -3.7033909,
+          40.4165922
+        ],
+        [
+          -3.703381,
+          40.416528
+        ],
+        [
+          -3.7033848,
+          40.416528
+        ],
+        [
+          -3.7033368,
+          40.4162284
+        ],
+        [
+          -3.7033338,
+          40.416229
+        ],
+        [
+          -3.703323,
+          40.4161652
+        ],
+        [
+          -3.7033258,
+          40.4161638
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -3.7038,
+        40.41655
+      ],
+      [
+        -3.7041,
+        40.4164
+      ],
+      [
+        -3.7034,
+        40.4163
+      ]
+    ],
+    "datum": "median",
+    "featherM": 7
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0, east/up/south metres; no absolute terrain datum.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1768 palace with the 1866 Losada clock. Footprint mapped from OSM relation 4098953; all metre heights are photographic estimates. Rotation baked once: facade axis 83 degrees, outward bearing 353 degrees. Modern covered courts simplified; sculpture abstracted. Cityscape and Full 3D world integration not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/real-casa-de-correos-near.glb",
+      "bytes": 1438244,
+      "triangles": 29961,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.85369873046875,
+          0,
+          -22.786848068237305
+        ],
+        "max": [
+          40.75153732299805,
+          34.599998474121094,
+          35.96706008911133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/real-casa-de-correos-far.glb",
+      "bytes": 417088,
+      "triangles": 9873,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.85369873046875,
+          0,
+          -22.786848068237305
+        ],
+        "max": [
+          40.75153732299805,
+          34.599998474121094,
+          35.96706008911133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/real-casa-de-correos/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

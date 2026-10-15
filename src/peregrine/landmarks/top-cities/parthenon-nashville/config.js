@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'parthenon-nashville', name: "The Parthenon (Nashville)", kind: 'building',
   ready: false,
-  origin: [-86.81333, 36.14972],
-  height: 20,
+  origin: [-86.8133823, 36.149715775],
+  height: 19.812,
   padM: 60,
   frontageBearing: 0,
 };

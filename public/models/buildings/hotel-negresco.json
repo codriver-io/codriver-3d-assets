@@ -1,0 +1,66 @@
+{
+  "id": "hotel-negresco",
+  "name": "Hôtel Negresco",
+  "kind": "building",
+  "origin": [
+    7.258,
+    43.6947
+  ],
+  "height": 40.6,
+  "padM": 58,
+  "frontageBearing": 162.9,
+  "ownTolM": 1.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0, real metres east/up/south; no terrain or absolute height baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1913 Belle Époque hotel; 24 m main-body height mapped. Roof, dome, lantern, bay dimensions and total 40.6 m flagpole height estimated from attributed reference photographs. Rotation baked from OSM controls. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/hotel-negresco-near.glb",
+      "bytes": 836896,
+      "triangles": 20650,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.35813522338867,
+          0,
+          -43.53239059448242
+        ],
+        "max": [
+          35.27566909790039,
+          40.599998474121094,
+          41.06293487548828
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/hotel-negresco-far.glb",
+      "bytes": 268272,
+      "triangles": 7384,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -34.35813522338867,
+          0,
+          -43.40064239501953
+        ],
+        "max": [
+          34.94550323486328,
+          40.599998474121094,
+          41.06293487548828
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/hotel-negresco/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

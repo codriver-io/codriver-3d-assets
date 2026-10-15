@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'palais-du-luxembourg', name: "Palais du Luxembourg (Sénat)", kind: 'building',
   ready: false,
-  origin: [2.33722, 48.84833],
-  height: 35,
+  origin: [2.33722,48.84833],
+  height: 34.595,
   padM: 60,
   frontageBearing: 0,
 };

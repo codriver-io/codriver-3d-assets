@@ -1,0 +1,67 @@
+{
+  "id": "pont-royal",
+  "name": "Pont Royal",
+  "kind": "bridge",
+  "origin": [
+    2.3299162,
+    48.8601221
+  ],
+  "height": 2.17,
+  "padM": 70,
+  "frontageBearing": 26.1,
+  "footprintless": true,
+  "belowGradeM": 7.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat-map y=0 = quay street grade. Mapped span only: the deck is flush with the quays (0.10 m proud at both mouths) with a 0.85 m parabolic hump to 0.95 m over the centre arch; no ramps. River level 7.2 m below grade, arches spring 1 m under it, piers and quay walls run to 10.2 m below grade. In Full 3D world the deck spans straight between the live ground at its two street ends; masonry below grade is shown on terrain only (layer.js). No DEM, absolute altitude or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced (1685 specification, fr.wikipedia): spans 20.80/22.42/23.40/22.42/20.80 m, three-centred arches rising one third of the opening, piers 4.55 m; width 17 m, length 110 m (Structurae). Deck datum, hump, ring depth, cutwater and chaperon heights, cornice and parapet sections estimated from photographs; walks and carriageway measured on the IGN orthophoto.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/pont-royal-near.glb",
+      "bytes": 885664,
+      "triangles": 10614,
+      "drawCalls": 20,
+      "bounds": {
+        "min": [
+          -42.40839385986328,
+          -10.199999809265137,
+          -67.75762176513672
+        ],
+        "max": [
+          42.74766159057617,
+          2.1698997020721436,
+          64.46919250488281
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/pont-royal-far.glb",
+      "bytes": 399156,
+      "triangles": 4616,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -42.40839385986328,
+          -10.199999809265137,
+          -67.73860931396484
+        ],
+        "max": [
+          42.74766159057617,
+          2.1698997020721436,
+          64.46919250488281
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pont-royal/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
