@@ -1,0 +1,68 @@
+{
+  "id": "the-gherkin",
+  "name": "30 St Mary Axe (the Gherkin)",
+  "kind": "building",
+  "origin": [
+    -0.08033161,
+    51.51447498
+  ],
+  "height": 180,
+  "padM": 45,
+  "frontageBearing": 180,
+  "floors": 41,
+  "floorM": 4.15,
+  "bays": 24,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The plaza is y=0; the diagrid feet stand on it. Basement levels are not modelled.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height, floor count and the circular plan radii follow Wikipedia and OSM. The smooth taper above 70 m, 24-bay diagrid, the six light wells advancing about 0.85 bay per diamond course, mullions and the glass colours are estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/the-gherkin-near.glb",
+      "bytes": 2143624,
+      "triangles": 26260,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.198856353759766,
+          0.019999999552965164,
+          -28.198856353759766
+        ],
+        "max": [
+          28.198856353759766,
+          180,
+          28.198856353759766
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/the-gherkin-far.glb",
+      "bytes": 476632,
+      "triangles": 7656,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.138322830200195,
+          0.019999999552965164,
+          -28.138322830200195
+        ],
+        "max": [
+          28.138322830200195,
+          180,
+          28.138322830200195
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-gherkin/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

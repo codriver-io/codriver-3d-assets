@@ -31107,6 +31107,188 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "library-of-congress-jefferson",
+      "name": "Library of Congress (Thomas Jefferson Building)",
+      "kind": "building",
+      "location": "Washington, D.C., United States",
+      "status": "ready",
+      "description": "1897 Beaux-Arts Thomas Jefferson Building on First Street SE: granite block, copper-green dome with the gilt Flame of Knowledge, four corner pavilions, projecting west portico with three bronze arches and a split stair, and the Court of Neptune.",
+      "manifest": "/models/buildings/library-of-congress-jefferson.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/library-of-congress-jefferson/geometry.js",
+        "build": "pnpm build:top-cities-landmarks library-of-congress-jefferson --no-check",
+        "provenance": "Original texture-free procedural geometry. No photograph, scan or external mesh is shipped. Mapped footprint © OpenStreetMap contributors, ODbL 1.0.",
+        "references": [
+          {
+            "label": "Wikipedia: Thomas Jefferson Building (dome raised to 195 ft, copper, gold leaf)",
+            "url": "https://en.wikipedia.org/wiki/Thomas_Jefferson_Building"
+          },
+          {
+            "label": "OpenStreetMap relation 1029374",
+            "url": "https://www.openstreetmap.org/relation/1029374"
+          },
+          {
+            "label": "USCapitol, west front from the Capitol (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Flickr_-_USCapitol_-_Library_of_Congress_Thomas_Jefferson_Building_(1).jpg"
+          },
+          {
+            "label": "William Henry Jackson, west front c. 1902 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Library_of_Congress,_Washington,_D.C._-_c._1902.jpg"
+          },
+          {
+            "label": "Carol M. Highsmith, west stair and portico (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_view._View_of_approaches_from_the_west_fa%C3%A7ade_of_the_Jefferson_Building._Library_of_Congress_Thomas_Jefferson_Building,_Washington,_D.C._(LOC).jpg"
+          },
+          {
+            "label": "Carol M. Highsmith, Torch of Learning (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Exterior_view._Torch_of_Learning,_cupola,_and_dome._Library_of_Congress_Thomas_Jefferson_Building,_Washington,_D.C._LOC_7562154230.jpg"
+          },
+          {
+            "label": "Carol M. Highsmith, aerial (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Thomas_Jefferson_Building_Aerial_by_Carol_M._Highsmith.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/library-of-congress-jefferson/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=library-of-congress-jefferson",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=overview"
+          },
+          {
+            "label": "West front",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=facade"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=entrance"
+          },
+          {
+            "label": "Dome",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=dome"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=roof"
+          },
+          {
+            "label": "East pavilion",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=east"
+          },
+          {
+            "label": "Court",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=court"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=library-of-congress-jefferson&view=street"
+          }
+        ]
+      },
+      "notes": "Sourced: opened 1897; dome raised to 195 ft (59.436 m) and gilded until the 1930s; the Flame of Knowledge is still gold; west front faces the Capitol; three pairs of bronze doors, split stair and the Court of Neptune (Roland Hinton Perry). The copper saucer tapers continuously inward from a 13.5 m radius at y=41.05 to 8.2 m at y=47.32, then a dark windowed cupola and faceted gilt flame. Corner pavilions have raised dark metal stages with separate framed window bays and low hip crowns in both LODs (roof #3c5160 day). Ground-floor bays are arches, with pilasters on both LODs. Estimated: storey heights, bay pitch, the saucer profile between the roof and the 195 ft tip, regularized court rectangles, hip pitch, east-spur steps and the grouped fountain figures. The Architect of the Capitol describes four courtyards in the original plan; the mapped building and the aerial show two large open light courts, which are the courts modelled. The sidewalk stair beyond the OSM bulge is clipped to the outline. Far keeps the green saucer, gilt lantern, window rhythm and the three bronze arches. Near 20,597 triangles / 8 draws / 1,026,504 bytes; far 8,905 / 8 / 453,960 bytes. QA: zero back-face hits, layered faces and material cycles.",
+      "documentation": "docs/assets/top-cities-library-of-congress-jefferson.md",
+      "city": "Washington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "the-gherkin",
+      "name": "30 St Mary Axe (the Gherkin)",
+      "kind": "building",
+      "location": "30 St Mary Axe, City of London · London, England",
+      "status": "ready",
+      "description": "The Gherkin (180 m, 41 floors): a circular bullet widest around the 16th floor, a white diamond diagrid over blue-grey glass, six dark spiral light wells, and a glazed lens cap.",
+      "manifest": "/models/buildings/the-gherkin.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/the-gherkin/geometry.js",
+        "build": "pnpm build:top-cities-landmarks the-gherkin",
+        "provenance": "Original procedural geometry authored 2026-10-14. Plan and stacked radii from OpenStreetMap way 4959489 (outline, height=180, building:levels=41, roof:shape=dome) and parts 1365317067–1365317072 (© OpenStreetMap contributors, ODbL 1.0, dossier extract). Height, floor count, architect and opening date from Wikipedia and the building's site. Reference photographs used only to compare and kept out of the repository: Wikimedia Commons '30 St Mary Axe from Leadenhall Street' (Aurelien Guichard, CC BY-SA 2.0), '30 St Mary Axe, Gherkin' (Paste, public domain), '30 St Mary Axe - The Gherkin - Nov 2006' (Diliff, CC BY-SA 3.0), Unsplash elevation (Samuel Zeller, CC0), Geograph street view (Jon Hardy, CC BY-SA 2.0), 'Gherkin reflecting' (Duncan Harris, CC BY 2.0). No scan, traced mesh, photograph or texture ships.",
+        "references": [
+          {
+            "label": "Wikipedia · 30 St Mary Axe",
+            "url": "https://en.wikipedia.org/wiki/30_St_Mary_Axe"
+          },
+          {
+            "label": "Building site · thegherkin.com",
+            "url": "https://thegherkin.com/"
+          },
+          {
+            "label": "OSM outline · way 4959489",
+            "url": "https://www.openstreetmap.org/way/4959489"
+          },
+          {
+            "label": "OSM belly part · way 1365317068",
+            "url": "https://www.openstreetmap.org/way/1365317068"
+          },
+          {
+            "label": "Photograph · aerial (Commons, public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe,_%27Gherkin%27.JPG"
+          },
+          {
+            "label": "Photograph · Leadenhall Street (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe_from_Leadenhall_Street.jpg"
+          },
+          {
+            "label": "Photograph · Diliff, November 2006 (Commons)",
+            "url": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe_-_The_Gherkin_-_Nov_2006.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-gherkin/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=the-gherkin&view=overview",
+        "views": [
+          {
+            "label": "Whole tower",
+            "url": "/asset-preview.html?asset=the-gherkin&view=overview"
+          },
+          {
+            "label": "South plaza face",
+            "url": "/asset-preview.html?asset=the-gherkin&view=facade"
+          },
+          {
+            "label": "North side",
+            "url": "/asset-preview.html?asset=the-gherkin&view=north"
+          },
+          {
+            "label": "From above",
+            "url": "/asset-preview.html?asset=the-gherkin&view=roof"
+          },
+          {
+            "label": "Diagrid feet",
+            "url": "/asset-preview.html?asset=the-gherkin&view=base"
+          },
+          {
+            "label": "Lens cap",
+            "url": "/asset-preview.html?asset=the-gherkin&view=crown"
+          },
+          {
+            "label": "Diamond and light well",
+            "url": "/asset-preview.html?asset=the-gherkin&view=detail"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=the-gherkin&view=street"
+          }
+        ]
+      },
+      "notes": "Height 180 m, 41 floors, completion 2003 and opening 28 April 2004 are sourced (Wikipedia, thegherkin.com, OSM). The plan radii follow the OSM rings: outline and dome part 28.4 m, base 25.0 m, widest band 28.3 m from 53.5–70 m. The mesh belly is pinned at 66 m (outer steel 28.18 m) so it stays inside that outline. The taper above 70 m, the 24-bay count, the light-well pitch (about 0.85 bay per diamond course), mullions and the glass colours are estimates from photographs. The lens from about 171 m is blue-grey glazing with a fine crossing diagrid in both LODs. The alternating diamond skin is closed, joining the six dark spiral bands; far preserves the near spiral pitch. Near channels have glass-facing closures and narrower silver bars. Near 26,260 triangles / 5 draws / 2,143,104 bytes; far 7,656 / 5 / 476,112 bytes. QA back-face sweep reduced from 21.1% to 0%; no layered faces or material cycles. The plaza is not modelled; it would leave the outline. Basement levels are omitted. y=0 is flat-map grade. No Tesla hardware measurements.",
+      "documentation": "docs/assets/top-cities-the-gherkin.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
