@@ -1,0 +1,67 @@
+{
+  "id": "puente-de-segovia",
+  "name": "Puente de Segovia",
+  "kind": "bridge",
+  "origin": [
+    -3.7228546,
+    40.4140243
+  ],
+  "height": 4.65,
+  "belowGradeM": 6.5,
+  "padM": 90,
+  "frontageBearing": 91.5,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the bank-street grade at both joints. Mapped span only, no approach ramps: the level road surface is 0.10 m above grade and the masonry hangs below it to the river 9.2 m down (stone, base, ring and joint materials are shown in Full 3D world only; flat Cityscape shows deck, walks, parapets, finials and lamps). Full 3D world bank-fit: the rigid structure rides a straight line between the DEM at the two joints and runs on into the terrain. No DEM, absolute altitude or latitude stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Nine arches, central largest, decreasing symmetrically (es.wikipedia); ~31 m post-war width (miradormadrid.com; IGN PNOA orthophoto 31.1 m). Spans 13.0/12.6/11.1/9.6/8.4 m and 5.2 m piers fitted to the eight mapped cutwater pairs (all within 0.35 m). Springing, crown, the 9.3 m river-to-road rise, cutwater caps, parapet, finials and lamps estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/puente-de-segovia-near.glb",
+      "bytes": 1814928,
+      "triangles": 23172,
+      "drawCalls": 22,
+      "bounds": {
+        "min": [
+          -76.73690795898438,
+          -9.199999809265137,
+          -18.56989288330078
+        ],
+        "max": [
+          76.63838958740234,
+          4.650000095367432,
+          21.460628509521484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/puente-de-segovia-far.glb",
+      "bytes": 484552,
+      "triangles": 6240,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -76.73690795898438,
+          -9.199999809265137,
+          -18.56989288330078
+        ],
+        "max": [
+          76.63838958740234,
+          4.650000095367432,
+          21.3505802154541
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/puente-de-segovia/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (228 released)
+## The collection (231 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -236,6 +236,9 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `gastown-steam-clock` | Gastown Steam Clock | Vancouver | building |
 | `johan-cruijff-arena` | Johan Cruijff ArenA | Amsterdam | building |
 | `westminster-abbey-mission` | Westminster Abbey (Mission) | Mission | building |
+| `puente-de-segovia` | Puente de Segovia | Madrid | bridge, road-fitted |
+| `tarrant-county-courthouse` | Tarrant County Courthouse | Fort Worth | building |
+| `fondation-louis-vuitton` | Fondation Louis Vuitton | Paris | building |
 
 ## A landmark is a folder
 

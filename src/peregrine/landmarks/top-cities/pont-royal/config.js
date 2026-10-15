@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'pont-royal', name: "Pont Royal", kind: 'bridge',
   ready: false,
   origin: [2.3299162, 48.8601221],
-  height: 9.4,
+  height: 2.17,
   padM: 60,
   frontageBearing: 0,
 };

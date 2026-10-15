@@ -30830,6 +30830,283 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fondation-louis-vuitton",
+      "name": "Fondation Louis Vuitton",
+      "kind": "building",
+      "location": "8 Avenue du Mahatma Gandhi, Bois de Boulogne, Paris, France",
+      "city": "Paris",
+      "status": "ready",
+      "description": "Frank Gehry's 2014 art museum: twelve curved glass sails of different heights and lean wrapping faceted white fibre-concrete icebergs, the great exposed-timber roof sail rising to about 46 m, steel struts and a stepped water basin along the south side.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fondation-louis-vuitton/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fondation-louis-vuitton --no-check",
+        "provenance": "Original procedural geometry authored by Codriver with Claude, 2026-10-14; no third-party mesh, scan or texture. Mapped outline: OSM way 309626332, © OpenStreetMap contributors, ODbL 1.0. Reference photographs viewed in ignored tmp/top-cities/fondation-louis-vuitton/refs/ only: piotr iłowiecki, Fondation Louis Vuitton - Paris (50569906682) (CC-BY-SA-2.0); Moktarama, Fondation Louis Vuitton 5 (CC BY 3.0); Gerda Arendt, Fondation Louis-Vuitton, across basin (CC0); Yann Caradec, Eiffel Tower and La Défense from Fondation Louis Vuitton, 26 October 2014 (CC BY-SA 2.0).",
+        "references": [
+          {
+            "label": "Wikipedia: Louis Vuitton Foundation",
+            "url": "https://en.wikipedia.org/wiki/Fondation_Louis_Vuitton"
+          },
+          {
+            "label": "OSM mapped outline, way 309626332",
+            "url": "https://www.openstreetmap.org/way/309626332"
+          },
+          {
+            "label": "piotr iłowiecki, Fondation Louis Vuitton - Paris (50569906682), CC-BY-SA-2.0",
+            "url": "https://en.wikipedia.org/wiki/File:Fondation_Louis_Vuitton_-_Paris_(50569906682).jpg"
+          },
+          {
+            "label": "Moktarama, Fondation Louis Vuitton 5, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fondation_Louis_Vuitton_5.jpg"
+          },
+          {
+            "label": "Gerda Arendt, Fondation Louis-Vuitton, across basin, CC0",
+            "url": "https://en.wikipedia.org/wiki/File:Fondation_Louis-Vuitton,_across_basin.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fondation-louis-vuitton/geometry.js"
+      },
+      "notes": "Only the mapped outline (OSM way 309626332) and the roughly 46 m height are sourced. The twelve sail corner positions, bulge, iceberg block layout and heights, the steep roof sail and its glulam grid (box beams seated on the shell normal), the diagonal lattice, steel struts and the south water basin (outside the mapped outline, estimated from photos) are authored estimates; the real sails are doubly curved and more irregular. Each sail is a thin closed solid (outer and inner skin plus edge returns); glass is opaque shaded colour, so the inner structure seen through the real glass is not shown. Sails overhang the mapped outline on the south side. Far keeps a coarse lattice. Near 12.8k triangles / 9 draws / 601 KB; far 3.8k / 8 / 200 KB.",
+      "documentation": "docs/assets/top-cities-fondation-louis-vuitton.md",
+      "manifest": "/models/buildings/fondation-louis-vuitton.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=roof"
+          },
+          {
+            "label": "west",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=west"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=detail"
+          },
+          {
+            "label": "distant",
+            "url": "/asset-preview.html?asset=fondation-louis-vuitton&view=distant"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "puente-de-segovia",
+      "name": "Puente de Segovia",
+      "kind": "bridge",
+      "location": "Madrid, Spain — Manzanares (Calle de Segovia)",
+      "status": "ready",
+      "description": "Juan de Herrera’s 1582–1584 granite bridge as rebuilt and widened after 1936: nine semicircular arches with the central one largest, pointed upstream and rounded downstream cutwaters with stepped caps, proud voussoir rings, level deck flush with the bank streets, plain parapet and ball finials over every pier; original procedural road-fitted model of the mapped span carrying Calle de Segovia.",
+      "manifest": "/models/bridges/puente-de-segovia.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/puente-de-segovia/geometry.js",
+        "build": "pnpm build:top-cities-landmarks puente-de-segovia --no-check",
+        "provenance": "Original texture-free procedural model by Codriver, October 2026. Bridge outline, cutwater positions and roadway © OpenStreetMap contributors, ODbL 1.0. Widths measured on the IGN PNOA orthophoto (© Instituto Geográfico Nacional, CC BY 4.0, scne.es), not redistributed. Reference-only Commons photographs: Manuel M. V. (CC BY 2.0), Tiia Monto (CC BY-SA 3.0), Carlos Delgado (CC BY-SA 3.0); titles and links below. No photos, textures, scans or third-party meshes redistributed.",
+        "references": [
+          {
+            "label": "Wikipedia (es): Puente de Segovia — nine semicircular granite arches, central largest, conical cutwater caps, ball finials over the piers",
+            "url": "https://es.wikipedia.org/wiki/Puente_de_Segovia"
+          },
+          {
+            "label": "Wikipedia (en): Bridge of Segovia",
+            "url": "https://en.wikipedia.org/wiki/Puente_de_Segovia"
+          },
+          {
+            "label": "Mirador Madrid: 31 m width after the post-war widening; pointed upstream and semicircular downstream cutwaters",
+            "url": "https://www.miradormadrid.com/puente-de-segovia/"
+          },
+          {
+            "label": "OSM bridge outline with cutwaters (way 380275213)",
+            "url": "https://www.openstreetmap.org/way/380275213"
+          },
+          {
+            "label": "OSM bridge carriageway (way 380275223)",
+            "url": "https://www.openstreetmap.org/way/380275223"
+          },
+          {
+            "label": "IGN PNOA orthophoto WMS (deck and carriageway widths)",
+            "url": "https://www.ign.es/wms-inspire/pnoa-ma?SERVICE=WMS&REQUEST=GetCapabilities"
+          },
+          {
+            "label": "File:Edificio Glorieta del puente de Segovia.jpg / Manuel M. V. / CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Glorieta_del_puente_de_Segovia.jpg"
+          },
+          {
+            "label": "File:Madrid - Segovia Bridge.jpg / Tiia Monto / CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Madrid_-_Segovia_Bridge.jpg"
+          },
+          {
+            "label": "File:Puente de Segovia (Madrid) - 02.jpg / Carlos Delgado / CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Puente_de_Segovia_(Madrid)_-_02.jpg"
+          },
+          {
+            "label": "File:Puente de Segovia (Madrid) - 01.jpg / Carlos Delgado / CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Puente_de_Segovia_(Madrid)_-_01.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/puente-de-segovia/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=puente-de-segovia",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=roof"
+          },
+          {
+            "label": "deck",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=deck"
+          },
+          {
+            "label": "underside",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=underside"
+          },
+          {
+            "label": "tower",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=tower"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=detail"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=street"
+          },
+          {
+            "label": "approach",
+            "url": "/asset-preview.html?asset=puente-de-segovia&view=approach"
+          }
+        ]
+      },
+      "notes": "Mapped structure length 152.6 m, modelled joint to joint. Spans 8.4/9.6/11.1/12.6/13.0 m and 5.2 m piers are fitted to the mapped cutwater pairs (within 0.35 m), not surveyed. The road is flush with the bank streets (0.10 m above grade); the river is 9.3 m below the road (springing 1.0 m above it, central crown 1.7 m below the road), estimated from photographs, as are the cutwater caps, parapet, finials and lamp design. Flat Cityscape shows only what stands above grade (deck, walks, parapets, coping, finials, lamps); the arches, piers, cutwaters, cornice and coursing are Full 3D world only. The Terrarium DEM has no river channel here (about 2 m dip), so Full 3D world cuts one under the span (runtime only, puente-de-segovia-terrain.js): the 12 lattice nodes between the abutments and within one 29 m cell of the faces go down to the water 0.3 m above the arch feet, the bank streets keep their DEM; seven arches stand open, the outer pair at each end half-buried by the bank slope the 29 m lattice imposes. With lane details on, the model's fallback lane paint is hidden and the draped HD paint owns the deck. Without lane details the 24.3 m carriageway meets the SD ribbon, which is narrower at driving zooms. The post-war patines/embarcadero, Madrid Río landscaping and water are not modelled; masonry is simplified to regular coursing. Near 23,172 tris / 22 draws / 1,772 KB; far 6,240 tris / 9 draws / 473 KB.",
+      "documentation": "docs/assets/top-cities-puente-de-segovia.md",
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tarrant-county-courthouse",
+      "name": "Tarrant County Courthouse",
+      "kind": "building",
+      "location": "Fort Worth, Texas, United States",
+      "status": "ready",
+      "description": "Original pink-granite Renaissance Revival courthouse of 1895 on the Fort Worth bluff: cross-shaped plan, raised basement, pedimented north and south porticos with four pink columns and balcony, hipped wing pavilions, a central clock tower with a brown domed roof, and a green copper dome on the east wing.",
+      "manifest": "/models/buildings/tarrant-county-courthouse.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=tarrant-county-courthouse",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=street"
+          },
+          {
+            "label": "Clock tower",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=tower"
+          },
+          {
+            "label": "East dome",
+            "url": "/asset-preview.html?asset=tarrant-county-courthouse&view=dome"
+          }
+        ]
+      },
+      "notes": "Plan is the mapped cross-shaped outline (way/178593785, long axis bearing 60 deg, fronts toward 150 and 330) with the deeper north portico kept. Overall height 59 m to the finial is a photographic estimate (the lead's stub value), as are storey heights (raised basement 4.3 m, wing cornice 20.5 m, central parapet 27 m, tower stages 27 / 38 / 45 / 49.4 m (octagonal clock stage, faceted ogee dome, lantern)), window rhythm, the chimney stacks and the east-wing copper dome position (read from the north-elevation and Paddock Viaduct photographs; the west wing is modelled without one). Clock hands are set to ten past ten. The later Civil Courts annex, grounds monuments and floodlighting are omitted. Review fix g4a: tympanum relief, rusticated joints, quoins, wing crests and dormers, a taller copper dome with ribs. Near 18.2k triangles / 8 draws / 893 KB, far 4.5k / 8 / 216 KB; six landmark tests pass; exported near/far light sheets inspected. Both-mode app recapture and independent review remain with the lead.",
+      "documentation": "docs/assets/top-cities-tarrant-county-courthouse.md",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tarrant-county-courthouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tarrant-county-courthouse --no-check",
+        "provenance": "Original procedural authoring, 2026-10-15. No photographs, textures, scan or external mesh shipped. Photos remain in ignored research scratch; title, author and licences recorded below. Mapped outline © OpenStreetMap contributors, ODbL 1.0.",
+        "references": [
+          {
+            "label": "Wikipedia: Tarrant County Courthouse (history, architects, granite, 1893-95)",
+            "url": "https://en.wikipedia.org/wiki/Tarrant_County_Courthouse"
+          },
+          {
+            "label": "Mapped courthouse outline, OSM way 178593785",
+            "url": "https://www.openstreetmap.org/way/178593785"
+          },
+          {
+            "label": "File:Tarrant Court House (1 of 1).jpg (north elevation), Renelibrary, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tarrant_Court_House_(1_of_1).jpg"
+          },
+          {
+            "label": "File:Tarrant County Court House (10011921).jpg (postcard, south front), unknown author, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Tarrant_County_Court_House_(10011921).jpg"
+          },
+          {
+            "label": "File:Tarrant County Courthouse viewed from the Paddock Viaduct at night.jpg, Andrewnward, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tarrant_County_Courthouse_viewed_from_the_Paddock_Viaduct_at_night.jpg"
+          },
+          {
+            "label": "File:Tarrant County Courthouse viewed from North Houston Street at night.jpg, Andrewnward, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tarrant_County_Courthouse_viewed_from_North_Houston_Street_at_night.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tarrant-county-courthouse/geometry.js"
+      },
+      "city": "Fort Worth",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
