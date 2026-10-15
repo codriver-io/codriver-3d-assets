@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'w-r-bennett-bridge', name: "W. R. Bennett Bridge", kind: 'bridge',
   ready: false,
-  origin: [-119.51185, 49.87965],
-  height: 15,
+  origin: [-119.5115794,49.87946371],
+  height: 33.5,
   padM: 60,
   frontageBearing: 0,
 };

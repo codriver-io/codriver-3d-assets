@@ -1,0 +1,65 @@
+{
+  "id": "truist-park",
+  "name": "Truist Park",
+  "kind": "building",
+  "origin": [
+    -84.46778356706986,
+    33.8907186522273
+  ],
+  "height": 55,
+  "padM": 155,
+  "frontageBearing": 335,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid grade y=0; no DEM or absolute elevation baked into the model.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "MLB field distances 335/400/325 feet; mapped OSM stadium envelope. Tier elevations, 18 cm thin outward-rising canopy with complete underside trusses, brick/dark-glass bays, gate stairs, three full-height outfield lattice lights and steel-framed dark board are photo-based estimates. Aisles use continuous teal tier faces; short home-side canopy lights omitted. Home plate is northwest facing SSE, as mapped. Cityscape and Full 3D world static app evidence in tmp/next-200/fix/g7r/truist-park; lifecycle and terrain stress cases not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/truist-park-near.glb",
+      "bytes": 1465704,
+      "triangles": 27025,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -140.7290496826172,
+          -5.9604645663569045e-9,
+          -121.20997619628906
+        ],
+        "max": [
+          135.15084838867188,
+          55,
+          121.42198181152344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/truist-park-far.glb",
+      "bytes": 443200,
+      "triangles": 8101,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -140.7290496826172,
+          -5.9604645663569045e-9,
+          -121.20997619628906
+        ],
+        "max": [
+          135.15084838867188,
+          55,
+          121.42198181152344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/truist-park/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

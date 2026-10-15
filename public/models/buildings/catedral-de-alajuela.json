@@ -1,0 +1,66 @@
+{
+  "id": "catedral-de-alajuela",
+  "name": "Catedral de Alajuela",
+  "kind": "building",
+  "origin": [
+    -84.21302806,
+    10.01673469
+  ],
+  "height": 35.55,
+  "padM": 40,
+  "frontageBearing": 254,
+  "rotationDeg": -74,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid grade y=0; no absolute altitude or terrain baked into GLBs.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1863 neoclassical cathedral; red dome with broad flat standing-seam colour bands, drum windows/oculi, two-stage white bell turrets and columned porticoes. Vertical dimensions and details estimated from attributed photographs; mapped outer envelope and bearing from OSM way 391297577. Cityscape and Full 3D world static app views captured in the g7 fix evidence; lifecycle and terrain stress cases not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/catedral-de-alajuela-near.glb",
+      "bytes": 1481624,
+      "triangles": 30887,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -39.21320343017578,
+          -7.1525572131747595e-9,
+          -32.79598617553711
+        ],
+        "max": [
+          36.34665298461914,
+          35.54999923706055,
+          23.654386520385742
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/catedral-de-alajuela-far.glb",
+      "bytes": 426512,
+      "triangles": 8539,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -39.21320343017578,
+          -7.1525572131747595e-9,
+          -32.79598617553711
+        ],
+        "max": [
+          36.34665298461914,
+          35.54999923706055,
+          23.654386520385742
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-de-alajuela/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'waterfront-station-vancouver', name: "Waterfront Station", kind: 'building',
   ready: false,
   origin: [-123.11167, 49.28583],
-  height: 20,
+  height: 23,
   padM: 60,
   frontageBearing: 0,
 };
