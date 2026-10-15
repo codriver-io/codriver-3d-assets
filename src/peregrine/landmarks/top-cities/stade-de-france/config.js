@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'stade-de-france', name: "Stade de France", kind: 'building',
   ready: false,
-  origin: [2.36, 48.9244],
-  height: 43,
+  origin: [2.36013, 48.92447],
+  height: 50,
   padM: 60,
   frontageBearing: 0,
 };

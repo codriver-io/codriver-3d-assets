@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'skybridge-vancouver', name: "SkyBridge", kind: 'bridge',
   ready: false,
-  origin: [-122.89616, 49.20537],
+  origin: [-122.89616225,49.20537825],
   height: 123,
   padM: 60,
   frontageBearing: 0,

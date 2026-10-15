@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (239 released)
+## The collection (243 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -247,6 +247,10 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `opera-bastille` | Opéra Bastille and Colonne de Juillet | Paris | building |
 | `catedral-de-alajuela` | Catedral de Alajuela | Alajuela | building |
 | `truist-park` | Truist Park | Cumberland | building |
+| `cuatro-torres` | Cuatro Torres | Madrid | building |
+| `old-red-courthouse` | Old Red Courthouse | Dallas | building |
+| `muttart-conservatory` | Muttart Conservatory | Edmonton | building |
+| `palais-de-chaillot` | Palais de Chaillot (Trocadéro) | Paris | building |
 
 ## A landmark is a folder
 

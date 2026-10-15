@@ -1,0 +1,69 @@
+{
+  "id": "old-red-courthouse",
+  "name": "Old Red Courthouse",
+  "kind": "building",
+  "origin": [
+    -96.80732,
+    32.77861
+  ],
+  "height": 57.5,
+  "padM": 37,
+  "frontageBearing": 255.5,
+  "rotationDeg": 14.5,
+  "eavesM": 22,
+  "turretTopM": 30,
+  "clockCenterM": 41.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local building foundation y=0; east/up/south real metres, no terrain or altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1892 Richardsonian Romanesque courthouse with the 2007 reconstructed central clock tower. Complete OSM outline 27940349 and 33 nested parts. Tower tip 57.5 m is a photo-calibrated review estimate (OSM tags give 54 m); 30 m main roofs and turret cone tips follow OSM tags, not a measured survey; floor heights, openings, carving, clock and lantern are photo estimates. Baked 14.5 degree rotation. Cityscape and Full 3D world appearance checked in g8b scratch app captures; lifecycle and device performance not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/old-red-courthouse-near.glb",
+      "bytes": 1386796,
+      "triangles": 34257,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -31.11403465270996,
+          0,
+          -26.67972183227539
+        ],
+        "max": [
+          32.37347412109375,
+          57.5,
+          21.975032806396484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/old-red-courthouse-far.glb",
+      "bytes": 444152,
+      "triangles": 11839,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -31.03993034362793,
+          0,
+          -26.60561752319336
+        ],
+        "max": [
+          32.29936981201172,
+          57.5,
+          21.900928497314453
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/old-red-courthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

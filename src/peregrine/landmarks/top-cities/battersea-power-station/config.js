@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'battersea-power-station', name: "Battersea Power Station", kind: 'building',
   ready: false,
-  origin: [-0.14472, 51.48167],
-  height: 103,
+  origin: [-0.14472,51.48167],
+  height: 101,
   padM: 60,
   frontageBearing: 0,
 };

@@ -31811,6 +31811,370 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cuatro-torres",
+      "name": "Cuatro Torres",
+      "kind": "building",
+      "location": "Paseo de la Castellana 259, Madrid, Spain",
+      "status": "ready",
+      "description": "Five distinct skyline silhouettes on mapped footprints: Foster arch-frame and three office stacks, curved PwC with green crown, sloping faceted Cristal and winter garden, square-to-lozenge Emperador, and shorter black Caleido with low retail podium.",
+      "manifest": "/models/buildings/cuatro-torres.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cuatro-torres/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cuatro-torres --no-check",
+        "provenance": "Original procedural Three.js geometry, 2026-10-15; no mesh, scan, photo, texture, font or logo asset. Five OSM outlines and 84 subsidiary parts; dossier supplemented by one OSM API map extract after the shared Overpass helper failed. Geographic data © OpenStreetMap contributors, ODbL 1.0. Six dossier reference photographs: Luis García (Zaqarbal), CTBA (Madrid) 36 and 31, CC BY-SA 3.0; Eurostarshoteles, Cuatro Torres Business Area.JPG, CC BY-SA 3.0; Nd4284, MadridCTBA.jpg, CC BY-SA 4.0; Zarateman, Madrid - Cuatro Torres Business Area (CTBA) 01.JPG, CC0; Xauxa Håkan Svensson, Madrid Cuatro Torres Business Area02.jpg, CC BY-SA 3.0. Photos remain in ignored scratch only; Commons licence pages checked for relied-upon references 1, 3, 4 and 5.",
+        "references": [
+          {
+            "label": "Madrid tourism: Torre Moeve (formerly Cepsa), 248 m",
+            "url": "https://www.esmadrid.com/en/tourist-information/torre-moeve"
+          },
+          {
+            "label": "Cristal owner: 52 floors and sculptural crown",
+            "url": "https://www.torredecristal.com/"
+          },
+          {
+            "label": "Emperador architect: square-to-lozenge floor plates",
+            "url": "https://www.pcf-p.com/projects/torre-espacio/"
+          },
+          {
+            "label": "PwC architect",
+            "url": "https://rubioarquitectura.com/es/portfolio/torre-pwc/"
+          },
+          {
+            "label": "CTBUH: PwC 236 metres",
+            "url": "https://www.skyscrapercenter.com/building/id/1039"
+          },
+          {
+            "label": "Caleido supplier: 181 metres",
+            "url": "https://www.durlum.com/fileadmin/02_Projekte/PdM_PDF/PdM-22-07-torre-caleido-madrid-metalceiling-verticalbafflesystem-POLYLAM_EN.pdf"
+          },
+          {
+            "label": "OSM Cepsa outline",
+            "url": "https://www.openstreetmap.org/way/188396764"
+          },
+          {
+            "label": "OSM PwC outline",
+            "url": "https://www.openstreetmap.org/way/98280725"
+          },
+          {
+            "label": "OSM Cristal outline",
+            "url": "https://www.openstreetmap.org/way/979555466"
+          },
+          {
+            "label": "OSM Emperador outline",
+            "url": "https://www.openstreetmap.org/way/98280735"
+          },
+          {
+            "label": "OSM Caleido outline",
+            "url": "https://www.openstreetmap.org/way/762323937"
+          },
+          {
+            "label": "File:CTBA (Madrid) 36.jpg — Luis García (Zaqarbal) — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:CTBA_(Madrid)_36.jpg"
+          },
+          {
+            "label": "File:CTBA (Madrid) 31.jpg — Luis García (Zaqarbal) — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:CTBA_(Madrid)_31.jpg"
+          },
+          {
+            "label": "File:Cuatro Torres Business Area.JPG — Eurostarshoteles — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cuatro_Torres_Business_Area.JPG"
+          },
+          {
+            "label": "File:MadridCTBA.jpg — Nd4284 — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:MadridCTBA.jpg"
+          },
+          {
+            "label": "File:Madrid - Cuatro Torres Business Area (CTBA) 01.JPG — Zarateman — CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:Madrid_-_Cuatro_Torres_Business_Area_(CTBA)_01.JPG"
+          },
+          {
+            "label": "File:Madrid Cuatro Torres Business Area02.jpg — Xauxa Håkan Svensson — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Madrid_Cuatro_Torres_Business_Area02.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cuatro-torres/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=cuatro-torres&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=detail"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=cuatro-torres&view=entrance"
+          }
+        ]
+      },
+      "notes": "Heights are OSM 248.3 / 236 / 249 / 230 / 181 m; Cristal owner rounds to 250 m. Original CTBA four towers plus Caleido (2021). Cepsa is now named Moeve; no transient tenant logo is reproduced. Mapped grid bearing 11.85 degrees clockwise from east is baked into exports. Facade rows and grouped pane widths, crown winter garden, green PwC cap, Caleido podium height and plain entrances are approximate. No exact interiors, mechanical plant, brand lettering, vegetation, pavement or street furniture. Far retains individual tower forms, arch opening, mechanical setbacks, discrete panes and night lights. No independent approval or Tesla hardware measurement claimed.",
+      "documentation": "docs/assets/top-cities-cuatro-torres.md",
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "muttart-conservatory",
+      "name": "Muttart Conservatory",
+      "kind": "building",
+      "location": "Edmonton, Alberta",
+      "status": "ready",
+      "description": "Four pale silver-blue glazed pyramids of two sizes, thin pale aluminium grids and vent bands, concrete perimeter curbs, grass-roofed central link and foyer skylight.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/muttart-conservatory/geometry.js",
+        "build": "pnpm build:top-cities-landmarks muttart-conservatory --no-check",
+        "provenance": "Original procedural geometry for Codriver, 2026-10-15; no external mesh, texture or photograph in exports. Mapped footprint © OpenStreetMap contributors, ODbL 1.0 (relation 17644228 main outer 1287216689 and parts 714340898–714340902, 714340904). Reference-only photographs: Muttart Conservatory Edmonton Alberta Canada 01; Muttart Conservatories Edmonton Alberta Canada 11A and 01A, WinterE229/WinterforceMedia, public domain; viewed from the ignored dossier, not redistributed.",
+        "references": [
+          {
+            "label": "City of Edmonton — Muttart Conservatory",
+            "url": "https://www.edmonton.ca/attractions_events/muttart-conservatory"
+          },
+          {
+            "label": "Wikipedia — Muttart Conservatory (history, Peter Hemingway, four pyramids and foyer skylight)",
+            "url": "https://en.wikipedia.org/wiki/Muttart_Conservatory"
+          },
+          {
+            "label": "OSM main outline 1287216689",
+            "url": "https://www.openstreetmap.org/way/1287216689"
+          },
+          {
+            "label": "Muttart Conservatory Edmonton Alberta Canada 01 — WinterE229/WinterforceMedia, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Muttart_Conservatory_Edmonton_Alberta_Canada_01.jpg"
+          },
+          {
+            "label": "Muttart Conservatories Edmonton Alberta Canada 11A — WinterE229/WinterforceMedia, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Muttart_Conservatories_Edmonton_Alberta_Canada_11A.jpg"
+          },
+          {
+            "label": "Muttart Conservatories Edmonton Alberta Canada 01A — WinterE229/WinterforceMedia, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Muttart_Conservatories_Edmonton_Alberta_Canada_01A.jpg"
+          },
+          {
+            "label": "Pearson — nominal pyramid dimensions",
+            "url": "https://www.pearson.com/en-au/schools/media/h0qn3d4u/wonderful-building-9780655701392.pdf"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/muttart-conservatory/geometry.js"
+      },
+      "notes": "Review g8b: glass bases corrected to published 26/19.5 m while exact OSM provider envelopes remain covered by concrete curbs. Pale silver-blue glass, two close pane tones, near-white thin diagonal frames and stronger horizontal courses replace the matte teal/dark grid. The central link has sloping grass berm edges and a wider glazed concrete entrance. Heights 24/18/4 m follow OSM. Interiors, landscape and detached production greenhouses omitted; berm heights and glazing grid estimated.",
+      "documentation": "docs/assets/top-cities-muttart-conservatory.md",
+      "manifest": "/models/buildings/muttart-conservatory.json",
+      "inspection": {
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=muttart-conservatory&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=muttart-conservatory&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=muttart-conservatory&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=muttart-conservatory&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=muttart-conservatory&view=detail"
+          }
+        ],
+        "url": "/asset-preview.html?asset=muttart-conservatory"
+      },
+      "city": "Edmonton",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "old-red-courthouse",
+      "name": "Old Red Courthouse",
+      "kind": "building",
+      "location": "100 South Houston Street · Dallas, Texas",
+      "status": "ready",
+      "description": "1892 Richardsonian Romanesque courthouse: red sandstone walls over blue-grey granite, eight round conical turrets, arched window rows, gabled wings and a reconstructed four-face clock tower with striped slate crown and lantern.",
+      "manifest": "/models/buildings/old-red-courthouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/old-red-courthouse/geometry.js",
+        "build": "pnpm build:top-cities-landmarks old-red-courthouse --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15; no scans, traced mesh, images or textures shipped. Mapped outline way 27940349 plus building parts 1491921584–1491921616, © OpenStreetMap contributors, ODbL 1.0. Photo comparison only: Leaflet, Dallas County Courthouse - Old Red.jpg, CC BY-SA 3.0; Joe Mabel, Dallas - Old Red Museum 01/02.jpg, CC BY-SA 3.0; Martin Alon, Dallas County Courthouse with Texas Flag.jpg, CC BY-SA 4.0; Michael Laferriere, Old Red Courthouse - panoramio.jpg, CC BY 3.0. Photos remain in ignored scratch.",
+        "references": [
+          {
+            "label": "Identity, architect, history and reconstructed 2007 clock tower",
+            "url": "https://en.wikipedia.org/wiki/Dallas_County_Courthouse_(Texas)"
+          },
+          {
+            "label": "OSM complete courthouse and nested roof/turret parts",
+            "url": "https://www.openstreetmap.org/way/27940349"
+          },
+          {
+            "label": "Dallas County Courthouse - Old Red.jpg — Leaflet, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dallas_County_Courthouse_-_Old_Red.jpg"
+          },
+          {
+            "label": "Dallas - Old Red Museum 01.jpg — Joe Mabel, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dallas_-_Old_Red_Museum_01.jpg"
+          },
+          {
+            "label": "Dallas - Old Red Museum 02.jpg — Joe Mabel, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dallas_-_Old_Red_Museum_02.jpg"
+          },
+          {
+            "label": "Dallas County Courthouse with Texas Flag.jpg — Martin Alon, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Dallas_County_Courthouse_with_Texas_Flag.jpg"
+          },
+          {
+            "label": "Old Red Courthouse - panoramio.jpg — Michael Laferriere, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Old_Red_Courthouse_-_panoramio.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/old-red-courthouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=old-red-courthouse&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=old-red-courthouse&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=old-red-courthouse&view=facade"
+          },
+          {
+            "label": "back",
+            "url": "/asset-preview.html?asset=old-red-courthouse&view=back"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=old-red-courthouse&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=old-red-courthouse&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=old-red-courthouse&view=detail"
+          }
+        ]
+      },
+      "notes": "Review g8b: clock crown raised from 54 to 57.5 m with a concave 8.75 m striped bell roof, four seated dormers and supported lantern posts. Stronger red/grey roof courses, darker mauve-red turret cones with finials, and three inlaid blue-grey granite sill courses retain facade rhythm in both LODs. The 57.5 m tip is a photo-calibrated estimate, replacing the former 54 m OSM estimate; 30 m main roofs/turret cones follow OSM. Mapped 14.5 degree rotation is baked in. Fine carving, gargoyles, interiors and exact rear bay counts remain simplified.",
+      "documentation": "docs/assets/top-cities-old-red-courthouse.md",
+      "city": "Dallas",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "palais-de-chaillot",
+      "name": "Palais de Chaillot (Trocadéro)",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural 1937 Palais de Chaillot: separate curved colonnaded wings, central pavilions, open parvis, gilded figures, terraces and Warsaw fountain basins.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/palais-de-chaillot/geometry.js",
+        "build": "pnpm build:top-cities-landmarks palais-de-chaillot",
+        "provenance": "Original procedural mesh authored for Codriver, 2026-10-15. Geometry and code original; mapped wings/roof parts © OpenStreetMap contributors, ODbL 1.0. Reference photographs retained only in ignored scratch: Palais de Chaillot - 20150801 16h02 (10625), William Crochot (Medium69), CC BY-SA 4.0; Paris 75016 Fontaines du Trocadéro 20090815, Ricce, public domain; A 40mm Bofors gun guarding the air..., Signal Corps Archive, public domain. The 1900 palace and 1937 exhibition-tower photos were excluded from architectural massing.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Palais_de_Chaillot"
+          },
+          {
+            "label": "Mapped 1937 palace: OSM relation 6826569 (height 30 m, five storeys)",
+            "url": "https://www.openstreetmap.org/relation/6826569"
+          },
+          {
+            "label": "Modern aerial; William Crochot / Medium69, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Palais_de_Chaillot_-_20150801_16h02_(10625).jpg"
+          },
+          {
+            "label": "Fountains and pavilion fronts; Ricce, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_75016_Fontaines_du_Trocad%C3%A9ro_20090815.jpg"
+          },
+          {
+            "label": "Historic palace front; Signal Corps Archive, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:A_40mm_Bofors_gun_guarding_the_air_on_one_of_the_streets_of_Paris._In_the_background_is_the_Trocadero._(53067784139).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palais-de-chaillot/geometry.js"
+      },
+      "notes": "Review g8a repair: public AWS Terrarium z15 samples show about 33 m descent from Place/parvis (~65.2 m) to lower gardens (~32 m). World-only terrainOffsets fit the rigid palace and individual site levels; 24 real-metre near TIN cells receive bounded node pads, with no site-wide flattening. Flat Cityscape site retained. Central pavilion fronts are near-blank pale limestone with grouped gold inscription marks, warmer gold statues and broad pale spray cones. Long world basin becomes joined shallow cascade sections: a DEM-fitting approximation, not a water-level survey. Original texture-free model and unchanged mapped building ownership.",
+      "documentation": "docs/assets/top-cities-palais-de-chaillot.md",
+      "manifest": "/models/buildings/palais-de-chaillot.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=palais-de-chaillot",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=palais-de-chaillot&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=palais-de-chaillot&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=palais-de-chaillot&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=palais-de-chaillot&view=back"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=palais-de-chaillot&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=palais-de-chaillot&view=detail"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
