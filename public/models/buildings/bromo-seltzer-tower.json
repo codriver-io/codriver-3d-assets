@@ -1,0 +1,68 @@
+{
+  "id": "bromo-seltzer-tower",
+  "name": "Bromo-Seltzer Tower",
+  "kind": "building",
+  "origin": [
+    -76.6206228,
+    39.287666825
+  ],
+  "height": 88,
+  "padM": 15,
+  "frontageBearing": 267.47,
+  "shaftWidth": 10.6,
+  "clockDiameter": 7.3152,
+  "clockY": 66.6,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local pavement y=0; rigid flat foundation, no terrain or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "88 m height and 15 storeys from OSM / published descriptions; four 24-foot dials from official tower visitor information. Shaft width, tiers, window spacing and ornamental profiles estimated from photographs. Present tower without historic bottle. Rotation baked once. Cityscape and Full 3D world not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bromo-seltzer-tower-near.glb",
+      "bytes": 777072,
+      "triangles": 17170,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -6.676689624786377,
+          -1.1920929132713809e-8,
+          -6.676689624786377
+        ],
+        "max": [
+          6.676689624786377,
+          88,
+          6.676689624786377
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bromo-seltzer-tower-far.glb",
+      "bytes": 454780,
+      "triangles": 10064,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -6.676689624786377,
+          -1.1920929132713809e-8,
+          -6.676689624786377
+        ],
+        "max": [
+          6.676689624786377,
+          88,
+          6.676689624786377
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bromo-seltzer-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

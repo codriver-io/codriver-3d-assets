@@ -34268,6 +34268,516 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bromo-seltzer-tower",
+      "name": "Bromo-Seltzer Tower",
+      "kind": "building",
+      "location": "Baltimore, Maryland, United States",
+      "status": "ready",
+      "description": "Original procedural present-day 88 m Bromo-Seltzer Arts Tower: slender brick shaft, four lettered 24-foot clock dials, projecting cornice, square terrace and open octagonal crenellated belfry.",
+      "manifest": "/models/buildings/bromo-seltzer-tower.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bromo-seltzer-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bromo-seltzer-tower --no-check",
+        "provenance": "Original procedural mesh authored for Codriver, 2026-10-15; no imported meshes or photographic textures. OSM way 338029366 geographic outline and orientation: © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs in ignored tmp: Bromo-Seltzer Tower MD1.jpg and MD2.jpg, Acroterion, CC BY-SA 4.0 (Commons file-page licences checked); no photographs distributed in source or GLBs.",
+        "references": [
+          {
+            "label": "Official tower visitor information — 24-foot dials",
+            "url": "https://bromoseltzertower.com/about/virtual-tour"
+          },
+          {
+            "label": "Official tower history and lettered clocks",
+            "url": "https://bromoseltzertower.com/about"
+          },
+          {
+            "label": "Emerson Bromo-Seltzer Tower — height, chronology, historical bottle",
+            "url": "https://en.wikipedia.org/wiki/Emerson_Bromo-Seltzer_Tower"
+          },
+          {
+            "label": "OSM tower footprint, way 338029366",
+            "url": "https://www.openstreetmap.org/way/338029366"
+          },
+          {
+            "label": "Bromo-Seltzer Tower MD1.jpg — Acroterion, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bromo-Seltzer_Tower_MD1.jpg"
+          },
+          {
+            "label": "Bromo-Seltzer Tower MD2.jpg — Acroterion, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bromo-Seltzer_Tower_MD2.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bromo-seltzer-tower/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=bromo-seltzer-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bromo-seltzer-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=bromo-seltzer-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=bromo-seltzer-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=bromo-seltzer-tower&view=roof"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=bromo-seltzer-tower&view=detail"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=bromo-seltzer-tower&view=street"
+          }
+        ]
+      },
+      "notes": "Current permanent tower without the revolving bottle removed in 1936. Published 88 m height and 24-foot dial diameter; OSM envelope about 12.9 m square. Shaft width 10.6 m, clock elevation, tier heights, window grid, corbels and belfry details are photographic estimates. Geometry clock letters and simplified Roman indices retained in both LODs; static clock hands. Recessed individual shaft windows, open eight-sided belfry and separate battlements preserved in far. No interiors, brick mortar, scaffolding/maintenance rail network, aerials or adjacent fire station. Palette is a photo-calibrated approximation; only the clock faces are treated as self-lit. Independent exported-asset review and both-mode application QA remain with lead.",
+      "documentation": "docs/assets/top-cities-bromo-seltzer-tower.md",
+      "city": "Baltimore",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "capitol-records-building",
+      "name": "Capitol Records Building",
+      "kind": "building",
+      "location": "Los Angeles, California",
+      "status": "ready",
+      "description": "Original procedural 1956 circular Hollywood tower: twelve exposed tower levels over the studio base, white sloping sunshades, rooftop name drum and tapered beacon spire.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/capitol-records-building/geometry.js",
+        "build": "pnpm build:top-cities-landmarks capitol-records-building",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-15; no external mesh/font/photo texture. Mapped footprint © OpenStreetMap contributors (ODbL 1.0). Reference-only photos retained in ignored scratch: Capitol Records sunset, Downtowngal, CC BY-SA 3.0; Capitolrecords 032806 kdh, Kevin D. Hartnell, CC BY-SA 3.0; Capitol Records Tower from 101 Freeway, Hollywood, CA (3), RgtmPnoMn, CC BY-SA 4.0. Photographs are used only for visual comparison and are not redistributed.",
+        "references": [
+          {
+            "label": "Los Angeles Conservancy — tower, date, architect and spire",
+            "url": "https://www.laconservancy.org/learn/historic-places/capitol-records-tower/"
+          },
+          {
+            "label": "City Historic-Cultural Monument description (CEQAnet attachment), pp 8–11",
+            "url": "https://files.ceqanet.lci.ca.gov/221458-6/attachment/HV9fmf-NegNTvETyrp0ezg0tNfGpzrU-0ItBY2jJanJy207mPWnCSux0FlMnKynfH2TusXXBJE-qIMlz0"
+          },
+          {
+            "label": "OSM tower building part 907834019",
+            "url": "https://www.openstreetmap.org/way/907834019"
+          },
+          {
+            "label": "Capitol Records sunset — Downtowngal, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Capitol_Records_sunset.jpg"
+          },
+          {
+            "label": "Capitolrecords 032806 kdh — Kevin D. Hartnell, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Capitolrecords_032806_kdh.jpg"
+          },
+          {
+            "label": "Freeway view — RgtmPnoMn, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Capitol_Records_Tower_from_101_Freeway,_Hollywood,_CA_(3).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/capitol-records-building/geometry.js"
+      },
+      "notes": "Rigid local-grade model; no terrain baked in. Roof 45.72 m and spire 24.994 m follow the City heritage description (82 ft), conflicting with Conservancy 90 ft and Wikipedia height labeling. Podium height, crown dimensions and facade details estimated. Static beacon; no Morse animation, flag, mural, interior or subterranean echo chambers. Separate adjacent Gogerty building remains provider-owned. Independent visual review and both-mode app placement remain for the lead.",
+      "documentation": "docs/assets/top-cities-capitol-records-building.md",
+      "manifest": "/models/buildings/capitol-records-building.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=capitol-records-building",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=capitol-records-building&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=capitol-records-building&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=capitol-records-building&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=capitol-records-building&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=capitol-records-building&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=capitol-records-building&view=detail"
+          }
+        ]
+      },
+      "city": "Los Angeles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "cathedrale-saint-jean-lyon",
+      "name": "Cathédrale Saint-Jean",
+      "kind": "building",
+      "location": "Lyon, France",
+      "status": "ready",
+      "description": "Lyon’s pale-stone Romanesque-Gothic primatiale: three western portals, a large rose beneath a high triangular gable, four square spireless towers, a long buttressed nave and lower faceted apse.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/cathedrale-saint-jean-lyon/geometry.js",
+        "build": "pnpm build:top-cities-landmarks cathedrale-saint-jean-lyon",
+        "provenance": "Original procedural Three.js model authored for Codriver, October 2026; no external mesh or texture. OSM mapped outline and three tower parts plus attached sacristy © OpenStreetMap contributors, ODbL 1.0. Reference photos remain in ignored scratch: Saint-Jean de Lyon.jpg — Jordane Prestrot, CC BY-SA 3.0; 007. Photo prise depuis les toits de la Basilique Notre-Dame de Fourvière.JPG — Otourly, CC BY-SA 3.0; Lyon 05 - Primatiale Saint-Jean - PA00117785 - Face.JPG — Xavier Caré / Wikimedia Commons, CC BY-SA 4.0; Three sights Lyon.JPG — Chris 73, CC BY-SA 3.0; Cath. St Jean (3).JPG — Gonedelyon, CC BY-SA 3.0. Photographs used for visual comparison only; no photographs shipped.",
+        "references": [
+          {
+            "label": "Cathedral official site",
+            "url": "https://cathedrale-lyon.fr/"
+          },
+          {
+            "label": "Architecture and published dimensions",
+            "url": "https://fr.wikipedia.org/wiki/Primatiale_Saint-Jean_de_Lyon"
+          },
+          {
+            "label": "Mapped cathedral outline",
+            "url": "https://www.openstreetmap.org/way/136200148"
+          },
+          {
+            "label": "File:Saint-Jean de Lyon.jpg — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Saint-Jean_de_Lyon.jpg"
+          },
+          {
+            "label": "File:007. Photo prise depuis les toits de la Basilique Notre-Dame de Fourvière.JPG — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:007._Photo_prise_depuis_les_toits_de_la_Basilique_Notre-Dame_de_Fourvi%C3%A8re.JPG"
+          },
+          {
+            "label": "File:Lyon 05 - Primatiale Saint-Jean - PA00117785 - Face.JPG — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lyon_05_-_Primatiale_Saint-Jean_-_PA00117785_-_Face.JPG"
+          },
+          {
+            "label": "File:Three sights Lyon.JPG — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Three_sights_Lyon.JPG"
+          },
+          {
+            "label": "File:Cath. St Jean (3).JPG — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cath._St_Jean_(3).JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-saint-jean-lyon/geometry.js"
+      },
+      "notes": "Original texture-free exterior. Published 44 m maximum; interior dimensions are not confused with the larger mapped outer envelope. Stage heights, roof pitches and sculptural details are photo estimates; medieval figures, tracery and roof tiles are simplified. No interiors, festival projections, neighbouring palace or Fourvière hill authored. Rigid local pavement datum; terrain contacts and provider replacement require separate app validation.",
+      "documentation": "docs/assets/top-cities-cathedrale-saint-jean-lyon.md",
+      "manifest": "/models/buildings/cathedrale-saint-jean-lyon.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=roof"
+          },
+          {
+            "label": "East",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=east"
+          },
+          {
+            "label": "North",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=north"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=street"
+          },
+          {
+            "label": "Portal",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=portal"
+          },
+          {
+            "label": "Rose",
+            "url": "/asset-preview.html?asset=cathedrale-saint-jean-lyon&view=rose"
+          }
+        ]
+      },
+      "city": "Lyon",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fernsehturm-stuttgart",
+      "name": "Fernsehturm Stuttgart",
+      "kind": "building",
+      "location": "Stuttgart, Germany",
+      "status": "ready",
+      "description": "Original procedural Fernsehturm Stuttgart: tapered concrete shaft, four-level aluminium and glazed basket, two open viewing platforms, and red-white square lattice antenna.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fernsehturm-stuttgart/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fernsehturm-stuttgart",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-15; no external meshes or textures. Geographic outlines © OpenStreetMap contributors, ODbL 1.0. Comparison-only Commons photos retained in ignored scratch: Stuttgarter Fernsehturm6.jpg by Taxiarchos228 (Free Art Licence); StuttgartTVTowerObservationDeck.jpg by Pjt56 (CC BY-SA 4.0); Stuttgart TV tower at night.jpg by pjt56 (CC BY 3.0); Fernsehturm Stuttgart and Full Moon Summer 2013 06.jpg by Julian Herzog (CC BY 4.0). Photos are not redistributed.",
+        "references": [
+          {
+            "label": "SWR: construction, dimensions and antenna",
+            "url": "https://www.fernsehturm-stuttgart.de/en/swr-tv-tower/building-construction"
+          },
+          {
+            "label": "LAP structural engineer: dimensions",
+            "url": "https://www.lap-consult.com/projekte/detail/fernsehturm-stuttgart"
+          },
+          {
+            "label": "Mapped tower and all tower parts",
+            "url": "https://www.openstreetmap.org/way/203951586"
+          },
+          {
+            "label": "Taxiarchos228: whole tower, Free Art Licence",
+            "url": "https://commons.wikimedia.org/wiki/File:Stuttgarter_Fernsehturm6.jpg"
+          },
+          {
+            "label": "Pjt56: viewing deck, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:StuttgartTVTowerObservationDeck.jpg"
+          },
+          {
+            "label": "pjt56: night tower, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Stuttgart_TV_tower_at_night.jpg"
+          },
+          {
+            "label": "Julian Herzog: distant silhouette, CC BY 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fernsehturm_Stuttgart_and_Full_Moon_Summer_2013_06.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fernsehturm-stuttgart/geometry.js"
+      },
+      "notes": "217 m nominal overall height follows SWR/LAP (Wikipedia gives 216.61 m). Shaft 10.8 m to 5.04 m; basket 15 m wide, 12 m tall, 138–150 m: sourced. Shaft curve, individual windows, deck parapets and radio dishes estimated from photos. Mast 1.9 m / 1.29 m square sections simplified; no interiors, forest, temporary restoration scaffolding or ground pavilion. Pavilion way 203951634 and adjacent offices remain provider-owned; only tower and five tower parts replaced.",
+      "documentation": "docs/assets/top-cities-fernsehturm-stuttgart.md",
+      "manifest": "/models/buildings/fernsehturm-stuttgart.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fernsehturm-stuttgart",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=roof"
+          },
+          {
+            "label": "Cabin",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=cabin"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=entrance"
+          },
+          {
+            "label": "Antenna",
+            "url": "/asset-preview.html?asset=fernsehturm-stuttgart&view=antenna"
+          }
+        ]
+      },
+      "city": "Stuttgart",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "gare-de-lyon-clock-tower",
+      "name": "Gare de Lyon (clock tower)",
+      "kind": "building",
+      "location": "Paris, France",
+      "status": "ready",
+      "description": "Original procedural 1900 Beaux-Arts station: corner clock tower with four dials and ribbed dome, mansard headhouse and long glass-and-iron Hall 1 shed.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/gare-de-lyon-clock-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks gare-de-lyon-clock-tower",
+        "provenance": "Original parameterized Three.js geometry authored for Codriver, 2026-10-15; no third-party mesh or texture. Geographic outlines © OpenStreetMap contributors, ODbL 1.0. Visual-only references: Gare De Lyon Paris, Tom Corser, CC BY-SA 3.0; Facade of Paris-Gare de Lyon (5629782550), Marie Thérèse Hébert & Jean Robert Thibault, CC BY-SA 2.0; Paris Gare de Lyon hall panorama, Prateek Karandikar, CC BY-SA 4.0. Reference images remain outside runtime/public outputs.",
+        "references": [
+          {
+            "label": "Station history and architect",
+            "url": "https://en.wikipedia.org/wiki/Gare_de_Lyon"
+          },
+          {
+            "label": "Facade, Tom Corser, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Gare_De_Lyon_Paris.jpg"
+          },
+          {
+            "label": "Facade and return wing, Hébert & Thibault, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Facade_of_Paris-Gare_de_Lyon_(5629782550).jpg"
+          },
+          {
+            "label": "Hall roof, Prateek Karandikar, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Paris_Gare_de_Lyon_hall_panorama.jpg"
+          },
+          {
+            "label": "Mapped tower, height 67 m",
+            "url": "https://www.openstreetmap.org/way/115948339"
+          },
+          {
+            "label": "Mapped station outline",
+            "url": "https://www.openstreetmap.org/way/1161318094"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gare-de-lyon-clock-tower/geometry.js"
+      },
+      "notes": "OSM plan and tagged 67 m tower height; facade details, clock/dome tiers and modern Hall 2 roofs estimated. Interiors, station lettering and exact carved reliefs omitted. No photos or textures shipped; references retained only in ignored scratch. Exports reviewed in near/far and light/dark. Independent review and both-mode app evidence remain with the lead.",
+      "documentation": "docs/assets/top-cities-gare-de-lyon-clock-tower.md",
+      "manifest": "/models/buildings/gare-de-lyon-clock-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=gare-de-lyon-clock-tower&view=detail"
+          }
+        ]
+      },
+      "city": "Paris",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "royal-albert-hall",
+      "name": "Royal Albert Hall",
+      "kind": "building",
+      "location": "London, England",
+      "status": "ready",
+      "description": "Original elliptical red-brick concert hall with two window orders, buff terracotta figure frieze, four arched porches, south steps and the shallow ribbed glass-and-iron dome.",
+      "manifest": "/models/buildings/royal-albert-hall.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/royal-albert-hall/geometry.js",
+        "build": "pnpm build:top-cities-landmarks royal-albert-hall --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-15. Geographic footprint derived from dossier OpenStreetMap ways and parts, © OpenStreetMap contributors, ODbL 1.0. No traced mesh, scan, photograph or texture ships. Reference-only photos remain in ignored scratch; photo titles, authors and licences appear in the links below. The Diliff Commons licence was checked against its file page; other photo credits are retained from the prepared dossier.",
+        "references": [
+          {
+            "label": "Historic England list 1217742 — identity, materials, five stages and four two-storey porches",
+            "url": "https://historicengland.org.uk/listing/the-list/list-entry/1217742"
+          },
+          {
+            "label": "Published 83 × 72 m external ellipse and 41 m dome crown; 1871 completion",
+            "url": "https://en.wikipedia.org/wiki/Royal_Albert_Hall"
+          },
+          {
+            "label": "Mapped building envelope and attached parts — OSM way 372860405",
+            "url": "https://www.openstreetmap.org/way/372860405"
+          },
+          {
+            "label": "File:Royal Albert Hall, London - Nov 2012.jpg — Diliff, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Albert_Hall,_London_-_Nov_2012.jpg"
+          },
+          {
+            "label": "File:Royal Albert Hall from Kensington Gore - 2025-05-15.jpg — Matt Brown, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Albert_Hall_from_Kensington_Gore_-_2025-05-15.jpg"
+          },
+          {
+            "label": "File:Royal Albert Hall from Kensington High Street - geograph.org.uk - 3766104.jpg — Anthony O'Neil, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Albert_Hall_from_Kensington_High_Street_-_geograph.org.uk_-_3766104.jpg"
+          },
+          {
+            "label": "File:London - Kensington Gardens - Queen's Gate - View South on Royal Albert Hall.jpg — Txllxt TxllxT, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:London_-_Kensington_Gardens_-_Queen%27s_Gate_-_View_South_on_Royal_Albert_Hall.jpg"
+          },
+          {
+            "label": "File:Royal Albert Hall from Kensington Gardens - geograph.org.uk - 2997801.jpg — Robin Sones, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Royal_Albert_Hall_from_Kensington_Gardens_-_geograph.org.uk_-_2997801.jpg"
+          },
+          {
+            "label": "File:Kensington, The Royal Albert Hall - geograph.org.uk - 3163566.jpg — Dr Neil Clifton, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Kensington,_The_Royal_Albert_Hall_-_geograph.org.uk_-_3163566.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/royal-albert-hall/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=royal-albert-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=royal-albert-hall&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=royal-albert-hall&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=royal-albert-hall&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=royal-albert-hall&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=royal-albert-hall&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=royal-albert-hall&view=detail"
+          }
+        ]
+      },
+      "notes": "Published 41 m crown conflicts with OSM 43.8/46.6 m roof-part tags; published dimension is used. Storey splits, 64-bay facade rhythm, porch profiles, south steps, sixteen grouped relief panels and roof details are photo estimates. Glazing is opaque; no interior, lettering, event banners, buried service spaces or neighboring chimney. Far retains all window bays and four arched entrances, with fewer curve segments and relief figures. Rigid local grade; no terrain baked into geometry.",
+      "documentation": "docs/assets/top-cities-royal-albert-hall.md",
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "id": "cathedrale-saint-jean-lyon",
+  "name": "Cathédrale Saint-Jean",
+  "kind": "building",
+  "origin": [
+    4.8275,
+    45.76075
+  ],
+  "height": 44,
+  "padM": 54,
+  "frontageBearing": 293,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior on local pavement y=0; no altitude, DEM or Mercator stretch baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Four spireless towers, western screen/rose/three portals, stepped nave and Romanesque chevet. 44 m maximum is published; exterior stage heights and ornament are photo estimates. Orientation baked once, west frontage 293 degrees. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-saint-jean-lyon-near.glb",
+      "bytes": 1227764,
+      "triangles": 24038,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.42695617675781,
+          -7.629394644936838e-7,
+          -28.895648956298828
+        ],
+        "max": [
+          36.769264221191406,
+          44,
+          37.214637756347656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-saint-jean-lyon-far.glb",
+      "bytes": 353472,
+      "triangles": 8571,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.42695617675781,
+          -7.629394644936838e-7,
+          -28.895648956298828
+        ],
+        "max": [
+          36.769264221191406,
+          44,
+          37.214637756347656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-saint-jean-lyon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "gare-de-lyon-clock-tower",
+  "name": "Gare de Lyon (clock tower)",
+  "kind": "building",
+  "origin": [
+    2.3735,
+    48.8448
+  ],
+  "height": 67,
+  "padM": 250,
+  "frontageBearing": 310,
+  "axisBearing": 40,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Original 1900 headhouse, 67 m clock tower and Hall 1 shed. OSM plan and heights; facade bays, dome tiers and Hall 2 roofs estimated from photographs. Rotation baked once at 40° facade axis. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gare-de-lyon-clock-tower-near.glb",
+      "bytes": 1039412,
+      "triangles": 19231,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -64.6159439086914,
+          -1.1651841126604674e-14,
+          -58.082088470458984
+        ],
+        "max": [
+          231.61843872070312,
+          67,
+          152.04100036621094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gare-de-lyon-clock-tower-far.glb",
+      "bytes": 466384,
+      "triangles": 7917,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -64.6159439086914,
+          -1.1651841126604674e-14,
+          -58.082088470458984
+        ],
+        "max": [
+          231.61843872070312,
+          67,
+          152.04100036621094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gare-de-lyon-clock-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
