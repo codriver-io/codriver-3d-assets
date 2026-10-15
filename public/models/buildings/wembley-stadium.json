@@ -1,0 +1,66 @@
+{
+  "id": "wembley-stadium",
+  "name": "Wembley Stadium",
+  "kind": "building",
+  "origin": [
+    -0.2796038,
+    51.55606635
+  ],
+  "height": 133,
+  "padM": 175,
+  "frontageBearing": 3,
+  "ownTolM": 1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0, rigid bowl and arch foundations; no terrain or altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2007 Wembley: 133 m crown, 315 m arch span, 7.4 m lattice diameter, 52 m roof. Near keeps the six-chord tubular lattice; far uses four 1.5 m diameter white chords and coarse hoops/diagonals for distant legibility. Hangers, roof opening and facade bays are photo-based simplifications. Arch feet slightly outside stadium provider ring; no unrelated provider buildings owned. App appearance is checked separately from export and lifecycle certification.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/wembley-stadium-near.glb",
+      "bytes": 964284,
+      "triangles": 19492,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -158.98614501953125,
+          0,
+          -141.3076171875
+        ],
+        "max": [
+          162.7085418701172,
+          132.9506378173828,
+          141.3119354248047
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/wembley-stadium-far.glb",
+      "bytes": 388784,
+      "triangles": 6938,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -158.8701934814453,
+          0,
+          -141.3076171875
+        ],
+        "max": [
+          162.5918426513672,
+          132.78387451171875,
+          141.3119354248047
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wembley-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

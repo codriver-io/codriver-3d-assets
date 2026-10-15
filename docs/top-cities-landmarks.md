@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (281 released)
+## The collection (287 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -289,6 +289,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `tour-incity` | Tour Incity | Lyon | building |
 | `custom-house-dublin` | Custom House | Dublin | building |
 | `institut-du-monde-arabe` | Institut du monde arabe | Paris | building |
+| `wembley-stadium` | Wembley Stadium | London | building |
+| `templo-de-debod` | Templo de Debod | Madrid | building |
+| `fairmont-chateau-lake-louise` | Fairmont Chateau Lake Louise | Lake Louise | building |
+| `chateau-de-vincennes` | Château de Vincennes | Vincennes | building |
+| `chateau-de-versailles` | Château de Versailles | Versailles | building |
+| `louise-bridge-calgary` | Louise Bridge (10 Street) | Calgary | bridge, road-fitted |
 
 ## A landmark is a folder
 
