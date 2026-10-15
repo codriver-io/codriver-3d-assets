@@ -1,0 +1,68 @@
+{
+  "id": "capitol-records-building",
+  "name": "Capitol Records Building",
+  "kind": "building",
+  "origin": [
+    -118.32636885,
+    34.10315525
+  ],
+  "height": 70.714,
+  "padM": 38,
+  "frontageBearing": 270.3,
+  "roofHeight": 45.72,
+  "towerRadius": 14.0208,
+  "shadeRadius": 15.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0; rigid studio podium, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "150 ft roof and 82 ft rooftop spire follow City heritage description; sources disagree (Conservancy says 90 ft spire; Wikipedia labels 46 m as antenna height). 92 ft upper floor diameter sourced; outer sunshades mapped/photo calibrated. Podium height, crown, floor spacing, lettering, doors and facade divisions estimated. Static beacon, no Morse animation; mural, interiors and flag omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/capitol-records-building-near.glb",
+      "bytes": 497036,
+      "triangles": 15430,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -15.399999618530273,
+          -4.7683716530855236e-8,
+          -23.037673950195312
+        ],
+        "max": [
+          20.79034996032715,
+          70.71399688720703,
+          32.28836441040039
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/capitol-records-building-far.glb",
+      "bytes": 235708,
+      "triangles": 6274,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -15.399999618530273,
+          -4.7683716530855236e-8,
+          -23.037673950195312
+        ],
+        "max": [
+          20.79034996032715,
+          70.71399688720703,
+          32.28836441040039
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/capitol-records-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

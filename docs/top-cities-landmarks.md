@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (266 released)
+## The collection (272 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -274,6 +274,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `los-angeles-union-station` | Los Angeles Union Station | Los Angeles | building |
 | `zaanse-schans-windmills` | Zaanse Schans windmills | Zaandam | building |
 | `rogers-place` | Rogers Place | Edmonton | building |
+| `fernsehturm-stuttgart` | Fernsehturm Stuttgart | Stuttgart | building |
+| `gare-de-lyon-clock-tower` | Gare de Lyon (clock tower) | Paris | building |
+| `cathedrale-saint-jean-lyon` | Cathédrale Saint-Jean | Lyon | building |
+| `capitol-records-building` | Capitol Records Building | Los Angeles | building |
+| `bromo-seltzer-tower` | Bromo-Seltzer Tower | Baltimore | building |
+| `royal-albert-hall` | Royal Albert Hall | London | building |
 
 ## A landmark is a folder
 

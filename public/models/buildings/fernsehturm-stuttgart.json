@@ -1,0 +1,230 @@
+{
+  "id": "fernsehturm-stuttgart",
+  "name": "Fernsehturm Stuttgart",
+  "kind": "building",
+  "origin": [
+    9.1901683034,
+    48.7557595897
+  ],
+  "height": 217,
+  "padM": 12,
+  "frontageBearing": 146,
+  "rangeM": 6500,
+  "minZoom": 12.5,
+  "nearM": 600,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          9.190331822327316,
+          48.7557595897
+        ],
+        [
+          9.190328680356979,
+          48.755738559293114
+        ],
+        [
+          9.190319375190125,
+          48.75571833707297
+        ],
+        [
+          9.1903042644191,
+          48.755699700168144
+        ],
+        [
+          9.190283928742357,
+          48.755683364784446
+        ],
+        [
+          9.190259149648552,
+          48.75566995868151
+        ],
+        [
+          9.190230879384362,
+          48.75565999704834
+        ],
+        [
+          9.190200204360186,
+          48.755653862704925
+        ],
+        [
+          9.1901683034,
+          48.75565179139063
+        ],
+        [
+          9.190136402439814,
+          48.755653862704925
+        ],
+        [
+          9.190105727415638,
+          48.75565999704834
+        ],
+        [
+          9.190077457151448,
+          48.75566995868151
+        ],
+        [
+          9.190052678057643,
+          48.755683364784446
+        ],
+        [
+          9.190032342380901,
+          48.755699700168144
+        ],
+        [
+          9.190017231609875,
+          48.75571833707297
+        ],
+        [
+          9.190007926443021,
+          48.755738559293114
+        ],
+        [
+          9.190004784472684,
+          48.7557595897
+        ],
+        [
+          9.190007926443021,
+          48.75578062010688
+        ],
+        [
+          9.190017231609875,
+          48.75580084232703
+        ],
+        [
+          9.190032342380901,
+          48.75581947923185
+        ],
+        [
+          9.190052678057643,
+          48.75583581461555
+        ],
+        [
+          9.190077457151448,
+          48.75584922071849
+        ],
+        [
+          9.190105727415638,
+          48.75585918235166
+        ],
+        [
+          9.190136402439814,
+          48.75586531669507
+        ],
+        [
+          9.1901683034,
+          48.755867388009364
+        ],
+        [
+          9.190200204360186,
+          48.75586531669507
+        ],
+        [
+          9.190230879384362,
+          48.75585918235166
+        ],
+        [
+          9.190259149648552,
+          48.75584922071849
+        ],
+        [
+          9.190283928742357,
+          48.75583581461555
+        ],
+        [
+          9.1903042644191,
+          48.75581947923185
+        ],
+        [
+          9.190319375190125,
+          48.75580084232703
+        ],
+        [
+          9.190328680356979,
+          48.75578062010688
+        ],
+        [
+          9.190331822327316,
+          48.7557595897
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        9.1901683034,
+        48.7557595897
+      ],
+      [
+        9.190222809709105,
+        48.7557595897
+      ],
+      [
+        9.190113797090895,
+        48.7557595897
+      ],
+      [
+        9.1901683034,
+        48.75572365693021
+      ],
+      [
+        9.1901683034,
+        48.75579552246979
+      ]
+    ],
+    "datum": "median",
+    "featherM": 10
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid tower grade y=0; no absolute hill or terrain elevation is baked into the asset. Bounded median terrain pad requested; terrain integration is untested.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "SWR/LAP sourced overall height, shaft diameters and cabin dimensions; photographed taper, window divisions, parapets, dishes and antenna details are estimated. Adjacent entrance pavilion and offices remain provider-owned. Temporary restoration scaffolding, forest and interiors omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fernsehturm-stuttgart-near.glb",
+      "bytes": 384412,
+      "triangles": 11224,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.496296405792236,
+          0,
+          -7.496296405792236
+        ],
+        "max": [
+          7.496296405792236,
+          217,
+          7.496296405792236
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fernsehturm-stuttgart-far.glb",
+      "bytes": 179164,
+      "triangles": 4520,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.496296405792236,
+          0,
+          -7.496296405792236
+        ],
+        "max": [
+          7.496296405792236,
+          217,
+          7.496296405792236
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fernsehturm-stuttgart/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

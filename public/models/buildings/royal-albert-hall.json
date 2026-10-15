@@ -1,0 +1,65 @@
+{
+  "id": "royal-albert-hall",
+  "name": "Royal Albert Hall",
+  "kind": "building",
+  "origin": [
+    -0.17740224625,
+    51.50101459875
+  ],
+  "height": 41,
+  "padM": 54,
+  "frontageBearing": 354,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published external ellipse 83 × 72 m and crown 41 m. Center and major-axis bearing 354 degrees fitted to OSM drum 952279006; rotation baked once. OSM roof heights 43.8/46.6 m disagree with published 41 m; model uses published crown, not an asserted survey. Storey splits, porch profiles, steps, mosaic relief figures and colours estimated from photos. Opaque grey glazed dome with attached pale iron ribs. No textures. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/royal-albert-hall-near.glb",
+      "bytes": 798288,
+      "triangles": 23600,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -44.45945358276367,
+          -3.814697322468419e-7,
+          -50.82439422607422
+        ],
+        "max": [
+          44.45945358276367,
+          41,
+          52.91288757324219
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/royal-albert-hall-far.glb",
+      "bytes": 417028,
+      "triangles": 10896,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -44.45945358276367,
+          -3.814697322468419e-7,
+          -50.82439422607422
+        ],
+        "max": [
+          44.45945358276367,
+          41,
+          52.91288757324219
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/royal-albert-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
