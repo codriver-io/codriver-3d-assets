@@ -1,0 +1,66 @@
+{
+  "id": "library-of-congress-jefferson",
+  "name": "Library of Congress (Thomas Jefferson Building)",
+  "kind": "building",
+  "origin": [
+    -77.0047094,
+    38.8886833
+  ],
+  "height": 59.436,
+  "padM": 120,
+  "frontageBearing": 270.17,
+  "rotationDeg": 0.171,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 is the First Street sidewalk at the Court of Neptune. No absolute altitude and no terrain is baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sourced: 195 ft exterior to the Flame of Knowledge, copper dome gilded until the 1930s, gilt finial, Beaux-Arts granite, split stair and Court of Neptune, three arched bronze portals. Storey heights, bay pitch, dome profile between the 195 ft tip and the roof, court rectangles and the east pavilion steps are estimated from the mapped outline and photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/library-of-congress-jefferson-near.glb",
+      "bytes": 1027040,
+      "triangles": 20597,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -59.2096061706543,
+          -3.814697322468419e-7,
+          -72.22545623779297
+        ],
+        "max": [
+          72.14227294921875,
+          59.43600082397461,
+          72.34268951416016
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/library-of-congress-jefferson-far.glb",
+      "bytes": 454500,
+      "triangles": 8905,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -59.268585205078125,
+          -3.814697322468419e-7,
+          -72.2105484008789
+        ],
+        "max": [
+          72.12773132324219,
+          59.43600082397461,
+          72.32771301269531
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/library-of-congress-jefferson/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'wilshire-grand-center', name: "Wilshire Grand Center", kind: 'building',
   ready: false,
-  origin: [-118.2593, 34.05],
-  height: 335,
+  origin: [-118.260211, 34.050009],
+  height: 335.3,
   padM: 60,
   frontageBearing: 0,
 };

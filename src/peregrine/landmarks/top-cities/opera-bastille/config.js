@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'opera-bastille', name: "Opéra Bastille and Colonne de Juillet", kind: 'building',
   ready: false,
-  origin: [2.37056, 48.85194],
-  height: 52,
+  origin: [2.37056,48.85194],
+  height: 50.52,
   padM: 60,
   frontageBearing: 0,
 };

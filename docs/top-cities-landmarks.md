@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (231 released)
+## The collection (233 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -239,6 +239,8 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `puente-de-segovia` | Puente de Segovia | Madrid | bridge, road-fitted |
 | `tarrant-county-courthouse` | Tarrant County Courthouse | Fort Worth | building |
 | `fondation-louis-vuitton` | Fondation Louis Vuitton | Paris | building |
+| `the-gherkin` | 30 St Mary Axe (the Gherkin) | London | building |
+| `library-of-congress-jefferson` | Library of Congress (Thomas Jefferson Building) | Washington | building |
 
 ## A landmark is a folder
 
