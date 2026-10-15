@@ -1,0 +1,68 @@
+{
+  "id": "rheinturm",
+  "name": "Rheinturm",
+  "kind": "building",
+  "origin": [
+    6.7616587,
+    51.2179636
+  ],
+  "height": 240.5,
+  "padM": 40,
+  "frontageBearing": 270,
+  "rangeM": 6000,
+  "minZoom": 12.5,
+  "nearM": 550,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local grade y=0 on the flat Peregrine basemap; no absolute altitude. The site is about 36.6 m NHN, not baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published: 240.5 m tip, 168 m observation deck, 172.5 m public height, 62 portholes at 2.5 m on the west face showing 16:56:39. Mapped: the axis and the part rings. Estimated from photographs: the cone profile, the two glazed storeys, the brim (held inside the 17.7 m inscribed ring; OSM's mean radius is ~19 m) and the mast steps. The Landtag next door is not part of the model.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rheinturm-near.glb",
+      "bytes": 642504,
+      "triangles": 18536,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -17.25,
+          0,
+          -17.25
+        ],
+        "max": [
+          17.25,
+          240.5,
+          17.25
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rheinturm-far.glb",
+      "bytes": 250304,
+      "triangles": 6580,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -17.25,
+          0,
+          -17.25
+        ],
+        "max": [
+          17.25,
+          240.5,
+          17.25
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rheinturm/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

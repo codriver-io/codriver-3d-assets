@@ -29102,6 +29102,358 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "allianz-arena",
+      "name": "Allianz Arena",
+      "kind": "building",
+      "location": "Munich, Germany",
+      "status": "ready",
+      "description": "Original procedural Allianz Arena (Herzog & de Meuron with Arup, 2005): the soft oval ETFE shell of inflated diamond cushions in a rhombus lattice with a rib grid, long oval roof opening over the pitch and seating bowl, on a dark concourse under the 1 m esplanade deck and its south ramp tail. White by day, lit red at night.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/allianz-arena/geometry.js",
+        "build": "pnpm build:top-cities-landmarks allianz-arena",
+        "provenance": "Original procedural geometry authored 2026-10-14 by Codriver; original models CC BY 4.0, source MIT. Outlines from OSM ways 1257847557 (widest outline), 605825026 (roof opening), 4431170 (plaza level) and 483233746 (esplanade deck), (c) OpenStreetMap contributors, ODbL 1.0. Reference-only ignored photographs (nothing copied into the repo or GLB): File:Allianz Arena, Múnich, Alemania, 2013-02-11, DD 16.JPG - Diego Delso, CC BY-SA 3.0; File:Allianz Arena, Múnich, Alemania, 2013-02-11, DD 10.JPG - Diego Delso, CC BY-SA 3.0; File:Allianz Arena Illumination UEFA Champions League 2011-2012 2.jpeg - Christoph Anton Mitterer, CC BY-SA 2.0; File:Allianz arena at night Richard Bartz.jpg - Richard Bartz, CC BY-SA 2.5; File:Allianz Arena 2008-02-09.jpg - Michael 2015, CC BY-SA 4.0; File:Allianz-Arena.ebenerdig.rang1-3.s.JPG - Mattes, public domain.",
+        "references": [
+          {
+            "label": "Wikipedia - Allianz Arena",
+            "url": "https://en.wikipedia.org/wiki/Allianz_Arena"
+          },
+          {
+            "label": "OSM stadium relation (height 52, outline, roof opening)",
+            "url": "https://www.openstreetmap.org/relation/18413487"
+          },
+          {
+            "label": "OSM esplanade relation 7115751 (deck 7.5-8.5 m)",
+            "url": "https://www.openstreetmap.org/relation/7115751"
+          },
+          {
+            "label": "File:Allianz Arena, Múnich, Alemania, 2013-02-11, DD 16.JPG - Diego Delso, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena,_M%C3%BAnich,_Alemania,_2013-02-11,_DD_16.JPG"
+          },
+          {
+            "label": "File:Allianz Arena, Múnich, Alemania, 2013-02-11, DD 10.JPG - Diego Delso, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena,_M%C3%BAnich,_Alemania,_2013-02-11,_DD_10.JPG"
+          },
+          {
+            "label": "File:Allianz Arena Illumination UEFA Champions League 2011-2012 2.jpeg - Christoph Anton Mitterer, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_Illumination_UEFA_Champions_League_2011-2012_2.jpeg"
+          },
+          {
+            "label": "File:Allianz arena at night Richard Bartz.jpg - Richard Bartz, CC BY-SA 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Allianz_arena_at_night_Richard_Bartz.jpg"
+          },
+          {
+            "label": "File:Allianz Arena 2008-02-09.jpg - Michael 2015, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_2008-02-09.jpg"
+          },
+          {
+            "label": "File:Allianz-Arena.ebenerdig.rang1-3.s.JPG - Mattes, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Allianz-Arena.ebenerdig.rang1-3.s.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/allianz-arena/geometry.js"
+      },
+      "notes": "Original procedural stadium. Outline, roof opening, plaza building and esplanade deck follow the mapped OSM rings (shell 259 x 225 m against the published 258 x 227 m; opening about 123 x 86 m; crown 50 m). Skin cross-section (nearly upright flanks to about 34 m, a tight shoulder, then a gently domed roof to the opening; peak 49.3 m before the 70 cm cushion relief), cushion size (about 11 m x 7 m diamonds in near, about 2,300 modelled against 2,874 real), the pitch (105 x 68 m) and the seating bowl are estimated from photographs. The exported night palette shows the arena lit red; the real facade changes colour (red, blue, white). Not modelled: the Allianz Arena lettering, roof ties and interior roof structure, the long ramp-esplanade beyond the mapped deck (the model grades the mapped deck's south wedge down to the ground at its SE tip and its 25 m SW tail instead, inside the owned outline), car parks. Far LOD keeps the rib lattice at about a fifth of the cushion count.",
+      "documentation": "docs/assets/top-cities-allianz-arena.md",
+      "manifest": "/models/buildings/allianz-arena.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=allianz-arena",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=allianz-arena&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=allianz-arena&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=allianz-arena&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=allianz-arena&view=roof"
+          },
+          {
+            "label": "Cushion detail",
+            "url": "/asset-preview.html?asset=allianz-arena&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=allianz-arena&view=top"
+          }
+        ]
+      },
+      "city": "Munich",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "bridge-of-peace-tbilisi",
+      "name": "Bridge of Peace",
+      "kind": "bridge",
+      "location": "Tbilisi, Georgia",
+      "status": "ready",
+      "description": "Original texture-free model of Michele De Lucchi's 2010 Bridge of Peace over the Kura: a 149 m footbridge whose white-steel, glass-roofed canopy rises in a wavy, leaning lens over a slim deck, with a glowing diamond lattice, two A-frame piers and two V-landings of stairs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/bridge-of-peace-tbilisi/geometry.js",
+        "build": "pnpm build:top-cities-landmarks bridge-of-peace-tbilisi",
+        "provenance": "Original procedural geometry, 2026-10-14. Placement (roof axis, stair feet) © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs kept in ignored scratch: 'Tbilisi at night, Bridge of Peace, Georgia.jpg' (Vyacheslav Argenberg, CC-BY-4.0), 'Mtkvari - panoramio.jpg' (ako-aleko, CC BY-SA 3.0), 'Bridge of Peace, Tbilisi.jpg' (Dudva, CC-BY-SA-4.0). No photograph, texture or traced mesh is shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Bridge_of_Peace"
+          },
+          {
+            "label": "Mapped roof outline (building=roof)",
+            "url": "https://www.openstreetmap.org/way/1207561125"
+          },
+          {
+            "label": "Mapped pedestrian bridge axis",
+            "url": "https://www.openstreetmap.org/way/125589004"
+          },
+          {
+            "label": "Night reference: Vyacheslav Argenberg, CC-BY-4.0",
+            "url": "https://en.wikipedia.org/wiki/File:Tbilisi_at_night,_Bridge_of_Peace,_Georgia.jpg"
+          },
+          {
+            "label": "Aerial reference: ako-aleko, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Mtkvari_-_panoramio.jpg"
+          },
+          {
+            "label": "Canopy lattice and stairs reference: Dudva, CC-BY-SA-4.0",
+            "url": "https://en.wikipedia.org/wiki/File:Bridge_of_Peace,_Tbilisi.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bridge-of-peace-tbilisi/geometry.js"
+      },
+      "notes": "Roof axis, 149 m length, 87.4 deg bearing and the four stair feet are from OpenStreetMap; the 150 m total length is published. Canopy rise (15 m, 20.6 m overall), lean, wave phase, rib and lattice spacing, deck height (5.6 m above flat-map grade), deck width (7.6 m), pier positions and the 3.2 m stair width are visual estimates, and the river itself is not modelled (piers stand on flat-map grade). The glazing is opaque pale teal because the shared material path has no transparency; the real roof is clear glass over a lit steel structure. Lattice and lamp materials are self-lit at night. Two provider roof outlines sit under the bridge: way 1207561125 is a 1 m sliver, but way 440933580 (added to OSM after the first dossier) is the whole glazed canopy outline and was extruded 20 m high by the provider, so both are owned.",
+      "documentation": "docs/assets/top-cities-bridge-of-peace-tbilisi.md",
+      "manifest": "/models/bridges/bridge-of-peace-tbilisi.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=detail"
+          },
+          {
+            "label": "Stairs",
+            "url": "/asset-preview.html?asset=bridge-of-peace-tbilisi&view=stairs"
+          }
+        ]
+      },
+      "city": "Tbilisi",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "queensborough-bridge",
+      "name": "Queensborough Bridge",
+      "kind": "bridge",
+      "location": "New Westminster – Queensborough, British Columbia",
+      "status": "ready",
+      "description": "Original modern Highway 91A crossing: 61–91–61 m haunched steel-girder river spans, repeated concrete approach bents, four lanes and paired separated sidewalks.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/queensborough-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks queensborough-bridge --no-check",
+        "provenance": "Original procedural geometry; OSM contributors ODbL 1.0. Reference only: Queensborough Bridge by Deadkid dk CC BY-SA 4.0; The Queensborough Bridge (75671689) by Dennis Sylvester Hurd CC0; engineering photographs in TAC 2009 report, comparison only. No photographs, textures, scans or traced meshes shipped. Railway bridge photo excluded.",
+        "references": [
+          {
+            "label": "TAC 2009: Modifications to Queensborough Bridge, engineering description and photographs",
+            "url": "https://conf.tac-atc.ca/english/resourcecentre/readingroom/conference/conf2009/pdf/Harvey.pdf"
+          },
+          {
+            "label": "DFO 2026 Canadian Sailing Directions PAC 201, channel 85 m and clearance 23 m",
+            "url": "https://publications.gc.ca/collections/collection_2026/mpo-dfo/Fs74-68-2026-1-eng.pdf"
+          },
+          {
+            "label": "OSM modern bridge outline",
+            "url": "https://www.openstreetmap.org/way/1022953407"
+          },
+          {
+            "label": "Deadkid dk, Queensborough Bridge, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Queensborough_Bridge.jpg"
+          },
+          {
+            "label": "Dennis Sylvester Hurd, The Queensborough Bridge, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Queensborough_Bridge_(75671689).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/queensborough-bridge/geometry.js"
+      },
+      "notes": "Near 52,200 triangles / 17 draws / 1922.50 KiB; far 18,736 / 5 / 688.79 KiB. Engineer-sourced 61–91–61 m steel spans, four lanes and 1.6 m sidewalks. Modern engineering length 847 m, mapped model slab 843 m; historical 924 m not imposed. Estimated 26 m road datum, sections and pier stations. Cityscape grades 4.86% / 7.88%, broader mode-specific north descent; source and world retain level river roadway. North colour/median blend complete 10 m before physical nose, eight 1.2 m stepped bearing seats, 0.4 m far path slab edges; rigid river width and mapped taper/path connections. Final exported near/far light/dark/reference sheet and both-mode approach images judged. Zero cycles and QA issues; 783 registry/landmark checks passed plus eight focused checks including initial mode refit. Local fallback pavement shader, no shared bridge source extension. Live HD, hardware and full navigation lifecycle not tested.",
+      "documentation": "docs/assets/top-cities-queensborough-bridge.md",
+      "manifest": "/models/bridges/queensborough-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=queensborough-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=queensborough-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "New Westminster",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rheinturm",
+      "name": "Rheinturm",
+      "kind": "building",
+      "location": "Stromstraße / Rheinufer, Düsseldorf, Germany",
+      "status": "ready",
+      "description": "240.5 m reinforced-concrete telecommunications tower (Harald Deilmann, 1981) on the Rhine bank: a slim concave shaft, one two-storey pod with a ribbed inverted-cone underside, a revolving-restaurant band and an observation band, a brim at the public 172.5 m line, and a stepped white-and-red antenna mast. The west face carries the Lichtzeitpegel, one column of 62 portholes, shown at 16:56:39.",
+      "manifest": "/models/buildings/rheinturm.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rheinturm/geometry.js",
+        "build": "pnpm build:top-cities-landmarks rheinturm",
+        "provenance": "Original procedural geometry, 2026-10-14. Axis is the centroid of OSM way 161648930; the model replaces that way and the tower parts 161648938–161648952 and 161650419 (© OpenStreetMap contributors, ODbL 1.0). Published heights from the Wikipedia article (240.5 m tip, 172.5 m public tower, 168 m deck) and the Lichtzeitpegel spacing from de.wikipedia.org (62 portholes, 2.5 m, aviation pairs near 80 m and 120 m). Photographs used only as ignored local references: Gesamtansicht vom Medienhafen by Taxiarchos228 (FAL); Rheinturm und Landtag by Anil Öztas (CC BY-SA 4.0); Lichtzeitpegel by Pitlane02 (CC BY-SA 3.0); worm's-eye with the ribbed cone by Foto-dus (CC BY-SA 4.0). No third-party mesh, scan, photograph or texture is shipped.",
+        "references": [
+          {
+            "label": "Rheinturm · Wikipedia (height, architect, deck)",
+            "url": "https://en.wikipedia.org/wiki/Rheinturm"
+          },
+          {
+            "label": "Lichtzeitpegel · German Wikipedia (62 lamps, 2.5 m, groups)",
+            "url": "https://de.wikipedia.org/wiki/Lichtzeitpegel"
+          },
+          {
+            "label": "OSM way 161648930 · pod outline",
+            "url": "https://www.openstreetmap.org/way/161648930"
+          },
+          {
+            "label": "OSM way 161648952 · tower foot",
+            "url": "https://www.openstreetmap.org/way/161648952"
+          },
+          {
+            "label": "Whole tower from Medienhafen · Taxiarchos228 (FAL)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rheinturm_-_Gesamtansicht_vom_Medienhafen.jpg"
+          },
+          {
+            "label": "Night view from the Rhine · Anil Öztas (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_(DE),_Rheinturm_und_Landtag_--_2023_--_0066.jpg"
+          },
+          {
+            "label": "Lichtzeitpegel at 16:56:39 · Pitlane02 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_Rheinturm_-_Lichtzeitpegel.jpg"
+          },
+          {
+            "label": "Ribbed cone from below · Foto-dus (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rheinturm_D%C3%BCsseldorf_NRW_mit_Sternschnuppe.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rheinturm/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=rheinturm&view=overview",
+        "views": [
+          {
+            "label": "Whole tower from the Rhine",
+            "url": "/asset-preview.html?asset=rheinturm&view=overview"
+          },
+          {
+            "label": "West face and the light clock",
+            "url": "/asset-preview.html?asset=rheinturm&view=facade"
+          },
+          {
+            "label": "Brim and mast from above",
+            "url": "/asset-preview.html?asset=rheinturm&view=roof"
+          },
+          {
+            "label": "Pod, two glazed storeys",
+            "url": "/asset-preview.html?asset=rheinturm&view=pod"
+          },
+          {
+            "label": "Ribbed cone from below",
+            "url": "/asset-preview.html?asset=rheinturm&view=underside"
+          },
+          {
+            "label": "Lichtzeitpegel portholes",
+            "url": "/asset-preview.html?asset=rheinturm&view=clock"
+          },
+          {
+            "label": "Stepped antenna mast",
+            "url": "/asset-preview.html?asset=rheinturm&view=mast"
+          }
+        ]
+      },
+      "notes": "Published: 240.5 m tip (234.2 m before the 15 Oct 2004 aerial), 168 m observation deck, 172.5 m public height, 62 portholes at 2.5 m on the west face. Mapped: axis and the 17 part rings. The foot is held to the 9.35 m inscribed radius (OSM's mean radius is about 10.8 m) and the brim to 17.25 m (inscribed 17.68 m; OSM's mean is about 19 m). Estimated from photographs: the concave shaft, the cone profile and its ribs, the two glass bands, the mast steps and the four saucer lamps. The clock shows 16:56:39, the time in the Pitlane02 photograph, not a live clock. Lamps 58–62, the unlit top group, sit on the cone because a 2.5 m column that keeps the aviation pairs near 80 m and 120 m does not fit entirely on the 152 m shaft. The Landtag, the interior and the window-cleaning rig are not modelled. Near 18536 triangles / 8 draws / 641988 bytes. Far 6580 / 8 / 249788 bytes.",
+      "documentation": "docs/assets/top-cities-rheinturm.md",
+      "city": "Düsseldorf",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

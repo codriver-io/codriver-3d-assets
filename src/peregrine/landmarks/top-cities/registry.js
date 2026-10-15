@@ -463,6 +463,158 @@ import { FOOTPRINTS as lm_vancouver_art_galleryFootprints } from './vancouver-ar
 import { SPEC as lm_pont_de_bercySpec, PALETTES as lm_pont_de_bercyPalettes } from './pont-de-bercy/config.js';
 import { FOOTPRINTS as lm_pont_de_bercyFootprints } from './pont-de-bercy/footprint.js';
 import { ROAD_LAYER as lm_pont_de_bercyRoad } from './pont-de-bercy/layer.js';
+import { SPEC as lm_library_of_congress_jeffersonSpec, PALETTES as lm_library_of_congress_jeffersonPalettes } from './library-of-congress-jefferson/config.js';
+import { FOOTPRINTS as lm_library_of_congress_jeffersonFootprints } from './library-of-congress-jefferson/footprint.js';
+import { SPEC as lm_stedelijk_museumSpec, PALETTES as lm_stedelijk_museumPalettes } from './stedelijk-museum/config.js';
+import { FOOTPRINTS as lm_stedelijk_museumFootprints } from './stedelijk-museum/footprint.js';
+import { SPEC as lm_rheinturmSpec, PALETTES as lm_rheinturmPalettes } from './rheinturm/config.js';
+import { FOOTPRINTS as lm_rheinturmFootprints } from './rheinturm/footprint.js';
+import { SPEC as lm_the_gherkinSpec, PALETTES as lm_the_gherkinPalettes } from './the-gherkin/config.js';
+import { FOOTPRINTS as lm_the_gherkinFootprints } from './the-gherkin/footprint.js';
+import { SPEC as lm_pennzoil_placeSpec, PALETTES as lm_pennzoil_placePalettes } from './pennzoil-place/config.js';
+import { FOOTPRINTS as lm_pennzoil_placeFootprints } from './pennzoil-place/footprint.js';
+import { SPEC as lm_casa_presei_libereSpec, PALETTES as lm_casa_presei_liberePalettes } from './casa-presei-libere/config.js';
+import { FOOTPRINTS as lm_casa_presei_libereFootprints } from './casa-presei-libere/footprint.js';
+import { SPEC as lm_marina_citySpec, PALETTES as lm_marina_cityPalettes } from './marina-city/config.js';
+import { FOOTPRINTS as lm_marina_cityFootprints } from './marina-city/footprint.js';
+import { SPEC as lm_queensborough_bridgeSpec, PALETTES as lm_queensborough_bridgePalettes } from './queensborough-bridge/config.js';
+import { FOOTPRINTS as lm_queensborough_bridgeFootprints } from './queensborough-bridge/footprint.js';
+import { ROAD_LAYER as lm_queensborough_bridgeRoad } from './queensborough-bridge/layer.js';
+import { SPEC as lm_opera_bastilleSpec, PALETTES as lm_opera_bastillePalettes } from './opera-bastille/config.js';
+import { FOOTPRINTS as lm_opera_bastilleFootprints } from './opera-bastille/footprint.js';
+import { SPEC as lm_catedral_de_alajuelaSpec, PALETTES as lm_catedral_de_alajuelaPalettes } from './catedral-de-alajuela/config.js';
+import { FOOTPRINTS as lm_catedral_de_alajuelaFootprints } from './catedral-de-alajuela/footprint.js';
+import { SPEC as lm_high_level_bridge_edmontonSpec, PALETTES as lm_high_level_bridge_edmontonPalettes } from './high-level-bridge-edmonton/config.js';
+import { FOOTPRINTS as lm_high_level_bridge_edmontonFootprints } from './high-level-bridge-edmonton/footprint.js';
+import { ROAD_LAYER as lm_high_level_bridge_edmontonRoad } from './high-level-bridge-edmonton/layer.js';
+import { SPEC as lm_truist_parkSpec, PALETTES as lm_truist_parkPalettes } from './truist-park/config.js';
+import { FOOTPRINTS as lm_truist_parkFootprints } from './truist-park/footprint.js';
+import { SPEC as lm_long_beach_international_gatewaySpec, PALETTES as lm_long_beach_international_gatewayPalettes } from './long-beach-international-gateway/config.js';
+import { FOOTPRINTS as lm_long_beach_international_gatewayFootprints } from './long-beach-international-gateway/footprint.js';
+import { ROAD_LAYER as lm_long_beach_international_gatewayRoad } from './long-beach-international-gateway/layer.js';
+import { SPEC as lm_cuatro_torresSpec, PALETTES as lm_cuatro_torresPalettes } from './cuatro-torres/config.js';
+import { FOOTPRINTS as lm_cuatro_torresFootprints } from './cuatro-torres/footprint.js';
+import { SPEC as lm_palais_de_chaillotSpec, PALETTES as lm_palais_de_chaillotPalettes } from './palais-de-chaillot/config.js';
+import { FOOTPRINTS as lm_palais_de_chaillotFootprints } from './palais-de-chaillot/footprint.js';
+import { SPEC as lm_waterfront_station_vancouverSpec, PALETTES as lm_waterfront_station_vancouverPalettes } from './waterfront-station-vancouver/config.js';
+import { FOOTPRINTS as lm_waterfront_station_vancouverFootprints } from './waterfront-station-vancouver/footprint.js';
+import { SPEC as lm_old_red_courthouseSpec, PALETTES as lm_old_red_courthousePalettes } from './old-red-courthouse/config.js';
+import { FOOTPRINTS as lm_old_red_courthouseFootprints } from './old-red-courthouse/footprint.js';
+import { SPEC as lm_frederick_douglass_memorial_bridgeSpec, PALETTES as lm_frederick_douglass_memorial_bridgePalettes } from './frederick-douglass-memorial-bridge/config.js';
+import { FOOTPRINTS as lm_frederick_douglass_memorial_bridgeFootprints } from './frederick-douglass-memorial-bridge/footprint.js';
+import { ROAD_LAYER as lm_frederick_douglass_memorial_bridgeRoad } from './frederick-douglass-memorial-bridge/layer.js';
+import { SPEC as lm_muttart_conservatorySpec, PALETTES as lm_muttart_conservatoryPalettes } from './muttart-conservatory/config.js';
+import { FOOTPRINTS as lm_muttart_conservatoryFootprints } from './muttart-conservatory/footprint.js';
+import { SPEC as lm_pont_raymond_barreSpec, PALETTES as lm_pont_raymond_barrePalettes } from './pont-raymond-barre/config.js';
+import { FOOTPRINTS as lm_pont_raymond_barreFootprints } from './pont-raymond-barre/footprint.js';
+import { SPEC as lm_pont_mirabeauSpec, PALETTES as lm_pont_mirabeauPalettes } from './pont-mirabeau/config.js';
+import { FOOTPRINTS as lm_pont_mirabeauFootprints } from './pont-mirabeau/footprint.js';
+import { ROAD_LAYER as lm_pont_mirabeauRoad } from './pont-mirabeau/layer.js';
+import { SPEC as lm_munttorenSpec, PALETTES as lm_munttorenPalettes } from './munttoren/config.js';
+import { FOOTPRINTS as lm_munttorenFootprints } from './munttoren/footprint.js';
+import { SPEC as lm_skybridge_vancouverSpec, PALETTES as lm_skybridge_vancouverPalettes } from './skybridge-vancouver/config.js';
+import { FOOTPRINTS as lm_skybridge_vancouverFootprints } from './skybridge-vancouver/footprint.js';
+import { SPEC as lm_battersea_power_stationSpec, PALETTES as lm_battersea_power_stationPalettes } from './battersea-power-station/config.js';
+import { FOOTPRINTS as lm_battersea_power_stationFootprints } from './battersea-power-station/footprint.js';
+import { SPEC as lm_frost_bank_towerSpec, PALETTES as lm_frost_bank_towerPalettes } from './frost-bank-tower/config.js';
+import { FOOTPRINTS as lm_frost_bank_towerFootprints } from './frost-bank-tower/footprint.js';
+import { SPEC as lm_georgia_aquariumSpec, PALETTES as lm_georgia_aquariumPalettes } from './georgia-aquarium/config.js';
+import { FOOTPRINTS as lm_georgia_aquariumFootprints } from './georgia-aquarium/footprint.js';
+import { SPEC as lm_stade_de_franceSpec, PALETTES as lm_stade_de_francePalettes } from './stade-de-france/config.js';
+import { FOOTPRINTS as lm_stade_de_franceFootprints } from './stade-de-france/footprint.js';
+import { SPEC as lm_rogers_placeSpec, PALETTES as lm_rogers_placePalettes } from './rogers-place/config.js';
+import { FOOTPRINTS as lm_rogers_placeFootprints } from './rogers-place/footprint.js';
+import { SPEC as lm_mission_bridgeSpec, PALETTES as lm_mission_bridgePalettes } from './mission-bridge/config.js';
+import { FOOTPRINTS as lm_mission_bridgeFootprints } from './mission-bridge/footprint.js';
+import { ROAD_LAYER as lm_mission_bridgeRoad } from './mission-bridge/layer.js';
+import { SPEC as lm_los_angeles_union_stationSpec, PALETTES as lm_los_angeles_union_stationPalettes } from './los-angeles-union-station/config.js';
+import { FOOTPRINTS as lm_los_angeles_union_stationFootprints } from './los-angeles-union-station/footprint.js';
+import { SPEC as lm_allianz_arenaSpec, PALETTES as lm_allianz_arenaPalettes } from './allianz-arena/config.js';
+import { FOOTPRINTS as lm_allianz_arenaFootprints } from './allianz-arena/footprint.js';
+import { SPEC as lm_tawatina_bridgeSpec, PALETTES as lm_tawatina_bridgePalettes } from './tawatina-bridge/config.js';
+import { FOOTPRINTS as lm_tawatina_bridgeFootprints } from './tawatina-bridge/footprint.js';
+import { SPEC as lm_bridge_of_peace_tbilisiSpec, PALETTES as lm_bridge_of_peace_tbilisiPalettes } from './bridge-of-peace-tbilisi/config.js';
+import { FOOTPRINTS as lm_bridge_of_peace_tbilisiFootprints } from './bridge-of-peace-tbilisi/footprint.js';
+import { SPEC as lm_dames_point_bridgeSpec, PALETTES as lm_dames_point_bridgePalettes } from './dames-point-bridge/config.js';
+import { FOOTPRINTS as lm_dames_point_bridgeFootprints } from './dames-point-bridge/footprint.js';
+import { ROAD_LAYER as lm_dames_point_bridgeRoad } from './dames-point-bridge/layer.js';
+import { SPEC as lm_puente_de_segoviaSpec, PALETTES as lm_puente_de_segoviaPalettes } from './puente-de-segovia/config.js';
+import { FOOTPRINTS as lm_puente_de_segoviaFootprints } from './puente-de-segovia/footprint.js';
+import { ROAD_LAYER as lm_puente_de_segoviaRoad } from './puente-de-segovia/layer.js';
+import { SPEC as lm_pont_royalSpec, PALETTES as lm_pont_royalPalettes } from './pont-royal/config.js';
+import { FOOTPRINTS as lm_pont_royalFootprints } from './pont-royal/footprint.js';
+import { ROAD_LAYER as lm_pont_royalRoad } from './pont-royal/layer.js';
+import { SPEC as lm_san_fernando_cathedralSpec, PALETTES as lm_san_fernando_cathedralPalettes } from './san-fernando-cathedral/config.js';
+import { FOOTPRINTS as lm_san_fernando_cathedralFootprints } from './san-fernando-cathedral/footprint.js';
+import { SPEC as lm_washington_union_stationSpec, PALETTES as lm_washington_union_stationPalettes } from './washington-union-station/config.js';
+import { FOOTPRINTS as lm_washington_union_stationFootprints } from './washington-union-station/footprint.js';
+import { SPEC as lm_black_church_brasovSpec, PALETTES as lm_black_church_brasovPalettes } from './black-church-brasov/config.js';
+import { FOOTPRINTS as lm_black_church_brasovFootprints } from './black-church-brasov/footprint.js';
+import { SPEC as lm_gastown_steam_clockSpec, PALETTES as lm_gastown_steam_clockPalettes } from './gastown-steam-clock/config.js';
+import { FOOTPRINTS as lm_gastown_steam_clockFootprints } from './gastown-steam-clock/footprint.js';
+import { SPEC as lm_stantec_towerSpec, PALETTES as lm_stantec_towerPalettes } from './stantec-tower/config.js';
+import { FOOTPRINTS as lm_stantec_towerFootprints } from './stantec-tower/footprint.js';
+import { SPEC as lm_johan_cruijff_arenaSpec, PALETTES as lm_johan_cruijff_arenaPalettes } from './johan-cruijff-arena/config.js';
+import { FOOTPRINTS as lm_johan_cruijff_arenaFootprints } from './johan-cruijff-arena/footprint.js';
+import { SPEC as lm_albert_bridge_londonSpec, PALETTES as lm_albert_bridge_londonPalettes } from './albert-bridge-london/config.js';
+import { FOOTPRINTS as lm_albert_bridge_londonFootprints } from './albert-bridge-london/footprint.js';
+import { ROAD_LAYER as lm_albert_bridge_londonRoad } from './albert-bridge-london/layer.js';
+import { SPEC as lm_fondation_louis_vuittonSpec, PALETTES as lm_fondation_louis_vuittonPalettes } from './fondation-louis-vuitton/config.js';
+import { FOOTPRINTS as lm_fondation_louis_vuittonFootprints } from './fondation-louis-vuitton/footprint.js';
+import { SPEC as lm_westminster_abbey_missionSpec, PALETTES as lm_westminster_abbey_missionPalettes } from './westminster-abbey-mission/config.js';
+import { FOOTPRINTS as lm_westminster_abbey_missionFootprints } from './westminster-abbey-mission/footprint.js';
+import { SPEC as lm_tarrant_county_courthouseSpec, PALETTES as lm_tarrant_county_courthousePalettes } from './tarrant-county-courthouse/config.js';
+import { FOOTPRINTS as lm_tarrant_county_courthouseFootprints } from './tarrant-county-courthouse/footprint.js';
+import { SPEC as lm_george_c_king_bridgeSpec, PALETTES as lm_george_c_king_bridgePalettes } from './george-c-king-bridge/config.js';
+import { FOOTPRINTS as lm_george_c_king_bridgeFootprints } from './george-c-king-bridge/footprint.js';
+import { SPEC as lm_wilshire_grand_centerSpec, PALETTES as lm_wilshire_grand_centerPalettes } from './wilshire-grand-center/config.js';
+import { FOOTPRINTS as lm_wilshire_grand_centerFootprints } from './wilshire-grand-center/footprint.js';
+import { SPEC as lm_palais_bourbonSpec, PALETTES as lm_palais_bourbonPalettes } from './palais-bourbon/config.js';
+import { FOOTPRINTS as lm_palais_bourbonFootprints } from './palais-bourbon/footprint.js';
+import { SPEC as lm_w_r_bennett_bridgeSpec, PALETTES as lm_w_r_bennett_bridgePalettes } from './w-r-bennett-bridge/config.js';
+import { FOOTPRINTS as lm_w_r_bennett_bridgeFootprints } from './w-r-bennett-bridge/footprint.js';
+import { ROAD_LAYER as lm_w_r_bennett_bridgeRoad } from './w-r-bennett-bridge/layer.js';
+import { SPEC as lm_smithsonian_castleSpec, PALETTES as lm_smithsonian_castlePalettes } from './smithsonian-castle/config.js';
+import { FOOTPRINTS as lm_smithsonian_castleFootprints } from './smithsonian-castle/footprint.js';
+import { SPEC as lm_cathedrale_saint_jean_lyonSpec, PALETTES as lm_cathedrale_saint_jean_lyonPalettes } from './cathedrale-saint-jean-lyon/config.js';
+import { FOOTPRINTS as lm_cathedrale_saint_jean_lyonFootprints } from './cathedrale-saint-jean-lyon/footprint.js';
+import { SPEC as lm_fernsehturm_stuttgartSpec, PALETTES as lm_fernsehturm_stuttgartPalettes } from './fernsehturm-stuttgart/config.js';
+import { FOOTPRINTS as lm_fernsehturm_stuttgartFootprints } from './fernsehturm-stuttgart/footprint.js';
+import { SPEC as lm_brandenburg_gateSpec, PALETTES as lm_brandenburg_gatePalettes } from './brandenburg-gate/config.js';
+import { FOOTPRINTS as lm_brandenburg_gateFootprints } from './brandenburg-gate/footprint.js';
+import { SPEC as lm_pont_de_l_almaSpec, PALETTES as lm_pont_de_l_almaPalettes } from './pont-de-l-alma/config.js';
+import { FOOTPRINTS as lm_pont_de_l_almaFootprints } from './pont-de-l-alma/footprint.js';
+import { ROAD_LAYER as lm_pont_de_l_almaRoad } from './pont-de-l-alma/layer.js';
+import { SPEC as lm_zaanse_schans_windmillsSpec, PALETTES as lm_zaanse_schans_windmillsPalettes } from './zaanse-schans-windmills/config.js';
+import { FOOTPRINTS as lm_zaanse_schans_windmillsFootprints } from './zaanse-schans-windmills/footprint.js';
+import { SPEC as lm_edmonton_city_hallSpec, PALETTES as lm_edmonton_city_hallPalettes } from './edmonton-city-hall/config.js';
+import { FOOTPRINTS as lm_edmonton_city_hallFootprints } from './edmonton-city-hall/footprint.js';
+import { SPEC as lm_real_casa_de_correosSpec, PALETTES as lm_real_casa_de_correosPalettes } from './real-casa-de-correos/config.js';
+import { FOOTPRINTS as lm_real_casa_de_correosFootprints } from './real-casa-de-correos/footprint.js';
+import { SPEC as lm_royal_albert_hallSpec, PALETTES as lm_royal_albert_hallPalettes } from './royal-albert-hall/config.js';
+import { FOOTPRINTS as lm_royal_albert_hallFootprints } from './royal-albert-hall/footprint.js';
+import { SPEC as lm_hotel_negrescoSpec, PALETTES as lm_hotel_negrescoPalettes } from './hotel-negresco/config.js';
+import { FOOTPRINTS as lm_hotel_negrescoFootprints } from './hotel-negresco/footprint.js';
+import { SPEC as lm_gateway_archSpec, PALETTES as lm_gateway_archPalettes } from './gateway-arch/config.js';
+import { FOOTPRINTS as lm_gateway_archFootprints } from './gateway-arch/footprint.js';
+import { SPEC as lm_palais_du_luxembourgSpec, PALETTES as lm_palais_du_luxembourgPalettes } from './palais-du-luxembourg/config.js';
+import { FOOTPRINTS as lm_palais_du_luxembourgFootprints } from './palais-du-luxembourg/footprint.js';
+import { SPEC as lm_arena_nationalaSpec, PALETTES as lm_arena_nationalaPalettes } from './arena-nationala/config.js';
+import { FOOTPRINTS as lm_arena_nationalaFootprints } from './arena-nationala/footprint.js';
+import { SPEC as lm_wrigley_buildingSpec, PALETTES as lm_wrigley_buildingPalettes } from './wrigley-building/config.js';
+import { FOOTPRINTS as lm_wrigley_buildingFootprints } from './wrigley-building/footprint.js';
+import { SPEC as lm_parthenon_nashvilleSpec, PALETTES as lm_parthenon_nashvillePalettes } from './parthenon-nashville/config.js';
+import { FOOTPRINTS as lm_parthenon_nashvilleFootprints } from './parthenon-nashville/footprint.js';
+import { SPEC as lm_art_gallery_of_albertaSpec, PALETTES as lm_art_gallery_of_albertaPalettes } from './art-gallery-of-alberta/config.js';
+import { FOOTPRINTS as lm_art_gallery_of_albertaFootprints } from './art-gallery-of-alberta/footprint.js';
+import { SPEC as lm_capitol_records_buildingSpec, PALETTES as lm_capitol_records_buildingPalettes } from './capitol-records-building/config.js';
+import { FOOTPRINTS as lm_capitol_records_buildingFootprints } from './capitol-records-building/footprint.js';
+import { SPEC as lm_lake_eola_fountainSpec, PALETTES as lm_lake_eola_fountainPalettes } from './lake-eola-fountain/config.js';
+import { FOOTPRINTS as lm_lake_eola_fountainFootprints } from './lake-eola-fountain/footprint.js';
+import { SPEC as lm_gare_de_lyon_clock_towerSpec, PALETTES as lm_gare_de_lyon_clock_towerPalettes } from './gare-de-lyon-clock-tower/config.js';
+import { FOOTPRINTS as lm_gare_de_lyon_clock_towerFootprints } from './gare-de-lyon-clock-tower/footprint.js';
+import { SPEC as lm_bromo_seltzer_towerSpec, PALETTES as lm_bromo_seltzer_towerPalettes } from './bromo-seltzer-tower/config.js';
+import { FOOTPRINTS as lm_bromo_seltzer_towerFootprints } from './bromo-seltzer-tower/footprint.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -678,6 +830,76 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_miami_towerSpec, lm_miami_towerPalettes, lm_miami_towerFootprints),
   entry(lm_vancouver_art_gallerySpec, lm_vancouver_art_galleryPalettes, lm_vancouver_art_galleryFootprints),
   entry(lm_pont_de_bercySpec, lm_pont_de_bercyPalettes, lm_pont_de_bercyFootprints, lm_pont_de_bercyRoad),
+  entry(lm_library_of_congress_jeffersonSpec, lm_library_of_congress_jeffersonPalettes, lm_library_of_congress_jeffersonFootprints),
+  entry(lm_stedelijk_museumSpec, lm_stedelijk_museumPalettes, lm_stedelijk_museumFootprints),
+  entry(lm_rheinturmSpec, lm_rheinturmPalettes, lm_rheinturmFootprints),
+  entry(lm_the_gherkinSpec, lm_the_gherkinPalettes, lm_the_gherkinFootprints),
+  entry(lm_pennzoil_placeSpec, lm_pennzoil_placePalettes, lm_pennzoil_placeFootprints),
+  entry(lm_casa_presei_libereSpec, lm_casa_presei_liberePalettes, lm_casa_presei_libereFootprints),
+  entry(lm_marina_citySpec, lm_marina_cityPalettes, lm_marina_cityFootprints),
+  entry(lm_queensborough_bridgeSpec, lm_queensborough_bridgePalettes, lm_queensborough_bridgeFootprints, lm_queensborough_bridgeRoad),
+  entry(lm_opera_bastilleSpec, lm_opera_bastillePalettes, lm_opera_bastilleFootprints),
+  entry(lm_catedral_de_alajuelaSpec, lm_catedral_de_alajuelaPalettes, lm_catedral_de_alajuelaFootprints),
+  entry(lm_high_level_bridge_edmontonSpec, lm_high_level_bridge_edmontonPalettes, lm_high_level_bridge_edmontonFootprints, lm_high_level_bridge_edmontonRoad),
+  entry(lm_truist_parkSpec, lm_truist_parkPalettes, lm_truist_parkFootprints),
+  entry(lm_long_beach_international_gatewaySpec, lm_long_beach_international_gatewayPalettes, lm_long_beach_international_gatewayFootprints, lm_long_beach_international_gatewayRoad),
+  entry(lm_cuatro_torresSpec, lm_cuatro_torresPalettes, lm_cuatro_torresFootprints),
+  entry(lm_palais_de_chaillotSpec, lm_palais_de_chaillotPalettes, lm_palais_de_chaillotFootprints),
+  entry(lm_waterfront_station_vancouverSpec, lm_waterfront_station_vancouverPalettes, lm_waterfront_station_vancouverFootprints),
+  entry(lm_old_red_courthouseSpec, lm_old_red_courthousePalettes, lm_old_red_courthouseFootprints),
+  entry(lm_frederick_douglass_memorial_bridgeSpec, lm_frederick_douglass_memorial_bridgePalettes, lm_frederick_douglass_memorial_bridgeFootprints, lm_frederick_douglass_memorial_bridgeRoad),
+  entry(lm_muttart_conservatorySpec, lm_muttart_conservatoryPalettes, lm_muttart_conservatoryFootprints),
+  entry(lm_pont_raymond_barreSpec, lm_pont_raymond_barrePalettes, lm_pont_raymond_barreFootprints),
+  entry(lm_pont_mirabeauSpec, lm_pont_mirabeauPalettes, lm_pont_mirabeauFootprints, lm_pont_mirabeauRoad),
+  entry(lm_munttorenSpec, lm_munttorenPalettes, lm_munttorenFootprints),
+  entry(lm_skybridge_vancouverSpec, lm_skybridge_vancouverPalettes, lm_skybridge_vancouverFootprints),
+  entry(lm_battersea_power_stationSpec, lm_battersea_power_stationPalettes, lm_battersea_power_stationFootprints),
+  entry(lm_frost_bank_towerSpec, lm_frost_bank_towerPalettes, lm_frost_bank_towerFootprints),
+  entry(lm_georgia_aquariumSpec, lm_georgia_aquariumPalettes, lm_georgia_aquariumFootprints),
+  entry(lm_stade_de_franceSpec, lm_stade_de_francePalettes, lm_stade_de_franceFootprints),
+  entry(lm_rogers_placeSpec, lm_rogers_placePalettes, lm_rogers_placeFootprints),
+  entry(lm_mission_bridgeSpec, lm_mission_bridgePalettes, lm_mission_bridgeFootprints, lm_mission_bridgeRoad),
+  entry(lm_los_angeles_union_stationSpec, lm_los_angeles_union_stationPalettes, lm_los_angeles_union_stationFootprints),
+  entry(lm_allianz_arenaSpec, lm_allianz_arenaPalettes, lm_allianz_arenaFootprints),
+  entry(lm_tawatina_bridgeSpec, lm_tawatina_bridgePalettes, lm_tawatina_bridgeFootprints),
+  entry(lm_bridge_of_peace_tbilisiSpec, lm_bridge_of_peace_tbilisiPalettes, lm_bridge_of_peace_tbilisiFootprints),
+  entry(lm_dames_point_bridgeSpec, lm_dames_point_bridgePalettes, lm_dames_point_bridgeFootprints, lm_dames_point_bridgeRoad),
+  entry(lm_puente_de_segoviaSpec, lm_puente_de_segoviaPalettes, lm_puente_de_segoviaFootprints, lm_puente_de_segoviaRoad),
+  entry(lm_pont_royalSpec, lm_pont_royalPalettes, lm_pont_royalFootprints, lm_pont_royalRoad),
+  entry(lm_san_fernando_cathedralSpec, lm_san_fernando_cathedralPalettes, lm_san_fernando_cathedralFootprints),
+  entry(lm_washington_union_stationSpec, lm_washington_union_stationPalettes, lm_washington_union_stationFootprints),
+  entry(lm_black_church_brasovSpec, lm_black_church_brasovPalettes, lm_black_church_brasovFootprints),
+  entry(lm_gastown_steam_clockSpec, lm_gastown_steam_clockPalettes, lm_gastown_steam_clockFootprints),
+  entry(lm_stantec_towerSpec, lm_stantec_towerPalettes, lm_stantec_towerFootprints),
+  entry(lm_johan_cruijff_arenaSpec, lm_johan_cruijff_arenaPalettes, lm_johan_cruijff_arenaFootprints),
+  entry(lm_albert_bridge_londonSpec, lm_albert_bridge_londonPalettes, lm_albert_bridge_londonFootprints, lm_albert_bridge_londonRoad),
+  entry(lm_fondation_louis_vuittonSpec, lm_fondation_louis_vuittonPalettes, lm_fondation_louis_vuittonFootprints),
+  entry(lm_westminster_abbey_missionSpec, lm_westminster_abbey_missionPalettes, lm_westminster_abbey_missionFootprints),
+  entry(lm_tarrant_county_courthouseSpec, lm_tarrant_county_courthousePalettes, lm_tarrant_county_courthouseFootprints),
+  entry(lm_george_c_king_bridgeSpec, lm_george_c_king_bridgePalettes, lm_george_c_king_bridgeFootprints),
+  entry(lm_wilshire_grand_centerSpec, lm_wilshire_grand_centerPalettes, lm_wilshire_grand_centerFootprints),
+  entry(lm_palais_bourbonSpec, lm_palais_bourbonPalettes, lm_palais_bourbonFootprints),
+  entry(lm_w_r_bennett_bridgeSpec, lm_w_r_bennett_bridgePalettes, lm_w_r_bennett_bridgeFootprints, lm_w_r_bennett_bridgeRoad),
+  entry(lm_smithsonian_castleSpec, lm_smithsonian_castlePalettes, lm_smithsonian_castleFootprints),
+  entry(lm_cathedrale_saint_jean_lyonSpec, lm_cathedrale_saint_jean_lyonPalettes, lm_cathedrale_saint_jean_lyonFootprints),
+  entry(lm_fernsehturm_stuttgartSpec, lm_fernsehturm_stuttgartPalettes, lm_fernsehturm_stuttgartFootprints),
+  entry(lm_brandenburg_gateSpec, lm_brandenburg_gatePalettes, lm_brandenburg_gateFootprints),
+  entry(lm_pont_de_l_almaSpec, lm_pont_de_l_almaPalettes, lm_pont_de_l_almaFootprints, lm_pont_de_l_almaRoad),
+  entry(lm_zaanse_schans_windmillsSpec, lm_zaanse_schans_windmillsPalettes, lm_zaanse_schans_windmillsFootprints),
+  entry(lm_edmonton_city_hallSpec, lm_edmonton_city_hallPalettes, lm_edmonton_city_hallFootprints),
+  entry(lm_real_casa_de_correosSpec, lm_real_casa_de_correosPalettes, lm_real_casa_de_correosFootprints),
+  entry(lm_royal_albert_hallSpec, lm_royal_albert_hallPalettes, lm_royal_albert_hallFootprints),
+  entry(lm_hotel_negrescoSpec, lm_hotel_negrescoPalettes, lm_hotel_negrescoFootprints),
+  entry(lm_gateway_archSpec, lm_gateway_archPalettes, lm_gateway_archFootprints),
+  entry(lm_palais_du_luxembourgSpec, lm_palais_du_luxembourgPalettes, lm_palais_du_luxembourgFootprints),
+  entry(lm_arena_nationalaSpec, lm_arena_nationalaPalettes, lm_arena_nationalaFootprints),
+  entry(lm_wrigley_buildingSpec, lm_wrigley_buildingPalettes, lm_wrigley_buildingFootprints),
+  entry(lm_parthenon_nashvilleSpec, lm_parthenon_nashvillePalettes, lm_parthenon_nashvilleFootprints),
+  entry(lm_art_gallery_of_albertaSpec, lm_art_gallery_of_albertaPalettes, lm_art_gallery_of_albertaFootprints),
+  entry(lm_capitol_records_buildingSpec, lm_capitol_records_buildingPalettes, lm_capitol_records_buildingFootprints),
+  entry(lm_lake_eola_fountainSpec, lm_lake_eola_fountainPalettes, lm_lake_eola_fountainFootprints),
+  entry(lm_gare_de_lyon_clock_towerSpec, lm_gare_de_lyon_clock_towerPalettes, lm_gare_de_lyon_clock_towerFootprints),
+  entry(lm_bromo_seltzer_towerSpec, lm_bromo_seltzer_towerPalettes, lm_bromo_seltzer_towerFootprints),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;
