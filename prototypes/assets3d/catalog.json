@@ -35569,6 +35569,588 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "chateau-de-versailles",
+      "name": "Château de Versailles",
+      "kind": "building",
+      "location": "Versailles, France",
+      "status": "ready",
+      "description": "Original procedural royal palace: brick-and-stone Cour de Marbre, open stepped royal courts, gilded Royal Gate, blue slate Louis XIII roofs, long classical garden front with balustrade and trophies, North and South wings and tall Royal Chapel.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/chateau-de-versailles/geometry.js",
+        "build": "pnpm build:top-cities-landmarks chateau-de-versailles --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-15; no third-party meshes or image textures. Mapped outline © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs in ignored scratch: Peter Stehlik, Peter Stehlik 2013.04.22 Panorama 1A, CC BY 3.0; Julian Lupyan, Main Façade Palace of Versailles Cour Royale and Cour Royale Palace of Versailles, public domain; Daniel Jolivet / sybarite48, Garden facade of the Palace of Versailles 1, CC BY 2.0; Lionel Allorge, Château de Versailles vu d’avion le 26 août 2014 - 01, CC BY-SA 3.0. Dossier interior photographs were inspected in the reference sheet but were not exterior design sources.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Palace_of_Versailles"
+          },
+          {
+            "label": "Official Royal Chapel history: 1710 completion and removal of lantern in 1765",
+            "url": "https://en.chateauversailles.fr/news/life-estate/restoration-royal-chapel/royal-chapel"
+          },
+          {
+            "label": "Official teaching dossier: chapel dimensions 25.59 x 17.82 x 44 m",
+            "url": "https://www.chateauversailles.fr/sites/default/files/ressources-pedagogiques/IMG/pdf/ressource-pedagogique_dossier-les_grands_appartements.pdf"
+          },
+          {
+            "label": "OSM palace relation 1149002",
+            "url": "https://www.openstreetmap.org/relation/1149002"
+          },
+          {
+            "label": "Panorama: Peter Stehlik, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Peter_Stehlik_2013.04.22_Panorama_1A.jpg"
+          },
+          {
+            "label": "Main facade: Julian Lupyan, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Main_Fa%C3%A7ade,_Palace_of_Versailles,_Cour_Royale.jpg"
+          },
+          {
+            "label": "Cour Royale: Julian Lupyan, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Cour_Royale,_Palace_of_Versailles.jpg"
+          },
+          {
+            "label": "Garden facade: Daniel Jolivet / sybarite48, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Garden_facade_of_the_Palace_of_Versailles_1.jpg"
+          },
+          {
+            "label": "Aerial garden front: Lionel Allorge, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Versailles_vu_d'avion_le_26_ao%C3%BBt_2014_-_01.jpg"
+          },
+          {
+            "label": "OSM Royal Chapel relation and apse",
+            "url": "https://www.openstreetmap.org/relation/9087585"
+          },
+          {
+            "label": "OSM Bassin du Nord",
+            "url": "https://www.openstreetmap.org/relation/3459591"
+          },
+          {
+            "label": "OSM Bassin du Midi",
+            "url": "https://www.openstreetmap.org/relation/3459592"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chateau-de-versailles/geometry.js"
+      },
+      "notes": "g16ar fixes: Royal Chapel nave aligned to mapped relation 9087585, semicircular east apse and 43.65 m ridge with supported gold crest to 44 m; own missing ways 653519276/124861530/427280010. Classical roofs light lead grey, court/chapel slate; far glow merged into glass. The apparent garden provider walls were basin rims: exact ways 5013284/5013295/257712056/237843251 replaced by 0.32 m stone rims and inset water. Seven lightwells and all courts remain open; other gardens, Ministers wings and interiors excluded. near 52,952 tris / 9 draws / 2,482,008 bytes; far 10,762 tris / 8 draws / 494,004 bytes. Mechanical QA clean with zero material-cycle edges; focused tests 24/24 across both models; independent re-review pending.",
+      "documentation": "docs/assets/top-cities-chateau-de-versailles.md",
+      "manifest": "/models/buildings/chateau-de-versailles.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=chateau-de-versailles&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=facade"
+          },
+          {
+            "label": "garden",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=garden"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=detail"
+          },
+          {
+            "label": "chapel",
+            "url": "/asset-preview.html?asset=chateau-de-versailles&view=chapel"
+          }
+        ]
+      },
+      "city": "Versailles",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "chateau-de-vincennes",
+      "name": "Château de Vincennes",
+      "kind": "building",
+      "location": "Vincennes, France",
+      "status": "ready",
+      "description": "Original procedural contemporary fortress: 52 m square donjon with four round turrets and its separate covered enceinte, long rectangular curtain walls with nine gate/corner towers, open Tour du Village, pinnacled Gothic Sainte-Chapelle and the palace wings.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/chateau-de-vincennes/geometry.js",
+        "build": "pnpm build:top-cities-landmarks chateau-de-vincennes --no-check",
+        "provenance": "Original procedural geometry for Codriver, 2026-10-15; no copied mesh, scans, photographs or textures in source/GLBs. Mapped plans © OpenStreetMap contributors (ODbL 1.0), dossier and one OSM API map fallback after the shared Overpass query did not answer. Reference-only photographs: File:Interior of Sainte Chapelle, Vincennes 140308 1.jpg, DXR, CC BY-SA 3.0; File:Sainte Chapelle, Vincennes, South-West View 140308 1.jpg, DXR, CC BY-SA 3.0; File:Sainte Chapelle Château Vincennes - Vincennes (FR94) - 2020-10-10 - 17.jpg, Chabe01, CC BY-SA 4.0; File:Vincennes - Chateau 02.jpg, Selbymay, CC BY-SA 3.0; File:Intérieur Sainte Chapelle Château Vincennes - Vincennes (FR94) - 2020-10-10 - 11.jpg, Chabe01, CC BY-SA 4.0; File:Intérieur Donjon Château Vincennes - Vincennes (FR94) - 2020-10-10 - 31.jpg, Chabe01, CC BY-SA 4.0. Additional reference-only plan by Chabe01 (CC BY-SA 4.0), Tour du Village by Thesupermat (CC BY-SA 3.0); no reference images redistributed.",
+        "references": [
+          {
+            "label": "File:Interior of Sainte Chapelle, Vincennes 140308 1.jpg — DXR, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Interior_of_Sainte_Chapelle,_Vincennes_140308_1.jpg"
+          },
+          {
+            "label": "File:Sainte Chapelle, Vincennes, South-West View 140308 1.jpg — DXR, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Sainte_Chapelle,_Vincennes,_South-West_View_140308_1.jpg"
+          },
+          {
+            "label": "File:Sainte Chapelle Château Vincennes - Vincennes (FR94) - 2020-10-10 - 17.jpg — Chabe01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Sainte_Chapelle_Ch%C3%A2teau_Vincennes_-_Vincennes_(FR94)_-_2020-10-10_-_17.jpg"
+          },
+          {
+            "label": "File:Vincennes - Chateau 02.jpg — Selbymay, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vincennes_-_Chateau_02.jpg"
+          },
+          {
+            "label": "File:Intérieur Sainte Chapelle Château Vincennes - Vincennes (FR94) - 2020-10-10 - 11.jpg — Chabe01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Int%C3%A9rieur_Sainte_Chapelle_Ch%C3%A2teau_Vincennes_-_Vincennes_(FR94)_-_2020-10-10_-_11.jpg"
+          },
+          {
+            "label": "File:Intérieur Donjon Château Vincennes - Vincennes (FR94) - 2020-10-10 - 31.jpg — Chabe01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Int%C3%A9rieur_Donjon_Ch%C3%A2teau_Vincennes_-_Vincennes_(FR94)_-_2020-10-10_-_31.jpg"
+          },
+          {
+            "label": "CMN: history of the Château de Vincennes",
+            "url": "https://www.chateau-de-vincennes.fr/en/discover/history-of-the-chateau-de-vincennes"
+          },
+          {
+            "label": "OSM keep, height 52 m",
+            "url": "https://www.openstreetmap.org/way/83817983"
+          },
+          {
+            "label": "OSM Tour du Village, height 34 m",
+            "url": "https://www.openstreetmap.org/way/110188224"
+          },
+          {
+            "label": "Plan Château de Vincennes – 2021, Chabe01, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Plan_Ch%C3%A2teau_de_Vincennes_-_2021.svg"
+          },
+          {
+            "label": "Tour du Village, Thesupermat, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Vincennes_-_Tour_du_village_-_PA00079920_-_012.jpg"
+          },
+          {
+            "label": "OSM Châtelet relation outer members",
+            "url": "https://www.openstreetmap.org/relation/1559341"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chateau-de-vincennes/geometry.js"
+      },
+      "notes": "g16ar fixes: complete Châtelet outer ways 83815599/110191518 and modeled porch; own/model north-curtain ways 110191516/110188220 and omitted gate/queen roof parts; three pitched barrack roofs and steep continuous palace/service ridges (photo estimates, up to 34.7 m). Moat floor/scarps at -2.9 m, dark grade-mouth fallback where host ground hides it; no host terrain cut, far scarp heads recessed. No restricted captures or textures ship. near 17,644 tris / 5 draws / 842,116 bytes; far 7,392 tris / 4 draws / 336,948 bytes. Mechanical QA clean, no material cycles; focused tests 24/24 across both models; final app and exported far/dark sheets inspected; independent re-review pending.",
+      "documentation": "docs/assets/top-cities-chateau-de-vincennes.md",
+      "manifest": "/models/buildings/chateau-de-vincennes.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=chateau-de-vincennes",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=back"
+          },
+          {
+            "label": "Keep",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=keep"
+          },
+          {
+            "label": "Chapel",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=chapel"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=detail"
+          },
+          {
+            "label": "Gate",
+            "url": "/asset-preview.html?asset=chateau-de-vincennes&view=gate"
+          }
+        ]
+      },
+      "city": "Vincennes",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fairmont-chateau-lake-louise",
+      "name": "Fairmont Chateau Lake Louise",
+      "kind": "building",
+      "location": "Lake Louise, Alberta",
+      "status": "ready",
+      "description": "Original CPR lakeshore hotel: long cream lakefront facades, steep verdigris and charcoal hipped roofs, gabled dormers, octagonal projecting bays, Glacier return and Mount Temple wing with curved low retail/parkade connection.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fairmont-chateau-lake-louise/geometry.js",
+        "build": "pnpm build:top-cities-landmarks fairmont-chateau-lake-louise --no-check",
+        "provenance": "Original procedural metric geometry authored 2026-10-15. Geographic outline © OpenStreetMap contributors, ODbL 1.0. Photos compared only, no external mesh or imagery redistributed.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Chateau_Lake_Louise"
+          },
+          {
+            "label": "Fairmont official history: Painter 1913, Barott 1925, Mount Temple 2004",
+            "url": "https://www.chateau-lake-louise.com/about-us/our-history/"
+          },
+          {
+            "label": "Fairmont property and hotel map, 2023",
+            "url": "https://thewcd.ca/Content/ExternalSite/Events/PR2023/cll-hotel-map-2023.pdf"
+          },
+          {
+            "label": "Mapped hotel multipolygon",
+            "url": "https://www.openstreetmap.org/relation/18238906"
+          },
+          {
+            "label": "File:Lake Louise (32555551383).jpg — Mack Male from Edmonton, AB, Canada, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lake_Louise_(32555551383).jpg"
+          },
+          {
+            "label": "File:Lake Louise Chateau, Canadian Rockies.jpg — The Coast Publishing Co., Vancouver, B.C., Public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Lake_Louise_Chateau,_Canadian_Rockies.jpg"
+          },
+          {
+            "label": "File:Lake Louise area from Ski Louise.jpg — BrettA343, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lake_Louise_area_from_Ski_Louise.jpg"
+          },
+          {
+            "label": "File:Late in the Evening at the Chateau (50005960142).jpg — G. Lamar, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Late_in_the_Evening_at_the_Chateau_(50005960142).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fairmont-chateau-lake-louise/geometry.js"
+      },
+      "notes": "Eight-storey historic hotel; mapped horizontal envelope and orientation from relation 18238906 outer members. All metric heights, roof pitches, window spacing, dormers and minor entrance details are photo estimates. No lake, mountains, neighbors, interiors, textures or scans; newer detached spa excluded. Original mesh; reference photos retained only in ignored tmp.",
+      "documentation": "docs/assets/top-cities-fairmont-chateau-lake-louise.md",
+      "manifest": "/models/buildings/fairmont-chateau-lake-louise.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fairmont-chateau-lake-louise&view=detail"
+          }
+        ]
+      },
+      "city": "Lake Louise",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "louise-bridge-calgary",
+      "name": "Louise Bridge (10 Street)",
+      "kind": "bridge",
+      "location": "Calgary, Alberta",
+      "status": "ready",
+      "description": "1921 Hillhurst/Louise Bridge: five shallow closed-spandrel reinforced-concrete arches, pale open balustrades and a four-lane deck, aligned to 10 Street and its split southern landing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/louise-bridge-calgary/geometry.js",
+        "build": "pnpm build:top-cities-landmarks louise-bridge-calgary",
+        "provenance": "Original procedural geometry, October 2026. OSM roadway/outline © OpenStreetMap contributors, ODbL 1.0. Reference photo Calgary West End.jpg, Arch26 at English Wikipedia, public domain, used only for visual study in ignored tmp/.",
+        "references": [
+          {
+            "label": "City of Calgary archives — five spans, 1920–1921",
+            "url": "https://www.calgary.ca/info-requests/archives/building-bridges.html"
+          },
+          {
+            "label": "Louise Bridge — dimensions",
+            "url": "https://en.wikipedia.org/wiki/Louise_Bridge"
+          },
+          {
+            "label": "Calgary West End — Arch26, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_West_End.jpg"
+          },
+          {
+            "label": "PCI — rehabilitation, closed spandrel wall arches",
+            "url": "https://www.pci.org/PCI_Docs/PCI_IllinoisWisconsin_Docs/IL_Testing/Rehabilitation_of_Historic_Hillhurst_Bridge.pdf"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/louise-bridge-calgary/geometry.js"
+      },
+      "notes": "Five photo-correct closed-spandrel arches, 172 m x 19.6 m. Vertical dimensions, equalised bay spacing and balusters are estimates. Split southern landing and tapered paths. Texture-free original geometry, no reference asset shipped. Local HD cache began with the dossier snapshot; node-complete live tiles arrived later, so remote lane coverage is not guaranteed.",
+      "documentation": "docs/assets/top-cities-louise-bridge-calgary.md",
+      "city": "Calgary",
+      "manifest": "/models/bridges/louise-bridge-calgary.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=louise-bridge-calgary",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=tower"
+          },
+          {
+            "label": "Landing",
+            "url": "/asset-preview.html?asset=louise-bridge-calgary&view=landing"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "templo-de-debod",
+      "name": "Templo de Debod",
+      "kind": "building",
+      "location": "Madrid, Spain",
+      "status": "ready",
+      "description": "Battered sandstone sanctuary with deep four-opening pronaos, proud columns and torus/cavetto cornice; two tall aligned open pylon gateways stand on an island in a shallow rectangular reflecting pool.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/templo-de-debod/geometry.js",
+        "build": "pnpm build:top-cities-landmarks templo-de-debod --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15. No external mesh, scan or texture. Geographic data © OpenStreetMap contributors, ODbL 1.0: relations 6432785/7875419 and all ten outer/part ways listed in footprint.js. Reference photographs remain in ignored scratch: four 2026-09-03 Temple of Debod exterior photographs, Matt Joseph, CC BY-SA 4.0; Templo de Debod, Madrid, España, 2023-01-03, DD 89-91 HDR, Diego Delso, CC BY-SA 4.0; Moncloa-Aravaca - Temple of Debod - 20171027130942, Oliver Gargan, CC BY-SA 4.0.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Temple_of_Debod"
+          },
+          {
+            "label": "Madrid official tourism: donation, reconstruction and opening",
+            "url": "https://www.esmadrid.com/en/tourist-information/temple-debod"
+          },
+          {
+            "label": "OSM sanctuary relation",
+            "url": "https://www.openstreetmap.org/relation/6432785"
+          },
+          {
+            "label": "OSM gateway relation",
+            "url": "https://www.openstreetmap.org/relation/7875419"
+          },
+          {
+            "label": "File:2026-09-03 - Temple of Debod in Madrid Spain 04.jpg — Matt Joseph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2026-09-03_-_Temple_of_Debod_in_Madrid_Spain_04.jpg"
+          },
+          {
+            "label": "File:2026-09-03 - Temple of Debod in Madrid Spain 03.jpg — Matt Joseph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2026-09-03_-_Temple_of_Debod_in_Madrid_Spain_03.jpg"
+          },
+          {
+            "label": "File:2026-09-03 - Temple of Debod in Madrid Spain 02.jpg — Matt Joseph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2026-09-03_-_Temple_of_Debod_in_Madrid_Spain_02.jpg"
+          },
+          {
+            "label": "File:2026-09-03 - Temple of Debod in Madrid Spain 01.jpg — Matt Joseph, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2026-09-03_-_Temple_of_Debod_in_Madrid_Spain_01.jpg"
+          },
+          {
+            "label": "File:Templo de Debod, Madrid, España, 2023-01-03, DD 89-91 HDR.jpg — Diego Delso, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Templo_de_Debod,_Madrid,_Espa%C3%B1a,_2023-01-03,_DD_89-91_HDR.jpg"
+          },
+          {
+            "label": "File:Moncloa-Aravaca - Temple of Debod - 20171027130942.jpg — Oliver Gargan, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Moncloa-Aravaca_-_Temple_of_Debod_-_20171027130942.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/templo-de-debod/geometry.js"
+      },
+      "notes": "Review g15ar: 8% sanctuary wall batter, four deep dark upper openings and proud full columns plus a short middle column above the doorway. Main cavetto projects 0.8 m with torus rolls and lighter top; integral sandstone flanks avoid depth cycles. Gateways now 6.2/6.5 m above the island with 1.65/1.75 m clear voids and projecting cornices. Coping flush with pool; a 2 m esplanade band surrounds it. Dimensions/profiles are photo estimates; exact OSM outlines and all provider part IDs retained. Filled pool is the requested iconic state; 2026 dossier is drained. No hieroglyphs, traced mesh or textures. near 19,004 triangles / 6 draws / 1,019,760 bytes; far 2,840 triangles / 6 draws / 152,068 bytes. QA metrics clean; zero depth-cycle edges; ray/contact/ownership tests pass.",
+      "documentation": "docs/assets/top-cities-templo-de-debod.md",
+      "manifest": "/models/buildings/templo-de-debod.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=templo-de-debod",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=detail"
+          },
+          {
+            "label": "Sanctuary",
+            "url": "/asset-preview.html?asset=templo-de-debod&view=sanctuary"
+          }
+        ]
+      },
+      "city": "Madrid",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "wembley-stadium",
+      "name": "Wembley Stadium",
+      "kind": "building",
+      "location": "London, England",
+      "status": "ready",
+      "description": "Original procedural Wembley Stadium (2007): a 315 m circular-section lattice arch, leaning over the silver stadium bowl, with roof stays, open retractable roof, red three-tier seating, pitch and glazed corner stair bays.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/wembley-stadium/geometry.js",
+        "build": "pnpm build:top-cities-landmarks wembley-stadium",
+        "provenance": "Original procedural geometry authored 2026-10-15 by Codriver; original model CC BY 4.0, source MIT. Geographic data: OSM relation 912489, outer ways 116587436/963609749/963609748/963608732, roof ways 116537666/377915368, © OpenStreetMap contributors, ODbL 1.0. Reference-only photos remain in ignored scratch; no photo or texture is included in the model. References viewed: Cmglee London Wembley aerial — Cmglee, CC BY-SA 4.0; All In 2024 at Wembley Stadium — McPhail, CC0; 2023 Challenge Cup Seconds From Start — Hullian111, CC BY-SA 4.0; BVB-Fans in Wembley — Radoslaw Zak, CC BY-SA 3.0; Adele Live 2017 The FINALE Wembley — Ian Hughes, CC BY 2.0; Detail of the rugby league statue at Wembley — Neil Theasby, CC BY-SA 2.0. Review g15ar found and added exact OSM arch building way 27784957; its complete ring is replaced along with the bowl and roof outlines.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Wembley_Stadium"
+          },
+          {
+            "label": "Official Wembley stats and facts (arch and roof dimensions)",
+            "url": "https://help.wembleystadium.com/support/solutions/articles/7000028145-stats-and-facts"
+          },
+          {
+            "label": "Populous: Wembley Stadium, joint design with Foster + Partners",
+            "url": "https://populous.com/showcases/wembley-stadium"
+          },
+          {
+            "label": "OSM stadium relation 912489",
+            "url": "https://www.openstreetmap.org/relation/912489"
+          },
+          {
+            "label": "File:Detail of the rugby league statue at Wembley - geograph.org.uk - 4971687.jpg — Neil Theasby — CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Detail_of_the_rugby_league_statue_at_Wembley_-_geograph.org.uk_-_4971687.jpg"
+          },
+          {
+            "label": "File:All In 2024 at Wembley Stadium.jpg — McPhail — CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:All_In_2024_at_Wembley_Stadium.jpg"
+          },
+          {
+            "label": "File:Adele Live 2017 - The FINALE - WEMBLEY Stadium - LONDON - Make You Feel My Love (night 2, June 29th).jpg — Ian Hughes — CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Adele_Live_2017_-_The_FINALE_-_WEMBLEY_Stadium_-_LONDON_-_Make_You_Feel_My_Love_(night_2,_June_29th).jpg"
+          },
+          {
+            "label": "File:2023 Challenge Cup Seconds From Start.jpg — Hullian111 — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2023_Challenge_Cup_Seconds_From_Start.jpg"
+          },
+          {
+            "label": "File:BVB-Fans in Wembley.jpg — Radoslaw Zak — CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:BVB-Fans_in_Wembley.jpg"
+          },
+          {
+            "label": "File:Cmglee London Wembley aerial.jpg — Cmglee — CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cmglee_London_Wembley_aerial.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wembley-stadium/geometry.js"
+      },
+      "notes": "Review g15ar: near lattice retained; far has four 1.5 m diameter white chords, coarse hoops and diagonals on a circular 5.9 m centre-line envelope (approximately 7.4 m overall), for 800 m legibility. Tall separate glazing bays, silver/concrete grey shell and metal grey roof replace the short office-like windows and black base. Named member/roof contacts and negative cases pass in both LODs. Olympic Way exterior street evidence replaces the prior inside-bowl shot. Official dimensions remain 133 m crown / 315 m span / 52 m roof; gauges and roof/facade details are simplified estimates. near 19,492 triangles / 9 draws / 963,760 bytes; far 6,938 triangles / 8 draws / 388,260 bytes. QA metrics clean; zero depth-cycle edges; exact arch building way 27784957 added to remove the 134 m provider extrusion exposed in app shots. Cityscape and world scratch captures confirm the duplicate arch extrusion is gone; exterior street evidence is from Olympic Way.",
+      "documentation": "docs/assets/top-cities-wembley-stadium.md",
+      "manifest": "/models/buildings/wembley-stadium.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=wembley-stadium",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=detail"
+          },
+          {
+            "label": "Top",
+            "url": "/asset-preview.html?asset=wembley-stadium&view=top"
+          }
+        ]
+      },
+      "city": "London",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

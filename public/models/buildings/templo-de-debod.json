@@ -1,0 +1,108 @@
+{
+  "id": "templo-de-debod",
+  "name": "Templo de Debod",
+  "kind": "building",
+  "origin": [
+    -3.71778,
+    40.42405
+  ],
+  "height": 7,
+  "padM": 53,
+  "frontageBearing": 77.5,
+  "rotation": 0.2176,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -3.718012813,
+          40.424144215
+        ],
+        [
+          -3.717044965,
+          40.42430712
+        ],
+        [
+          -3.716958349,
+          40.424008895
+        ],
+        [
+          -3.717926197,
+          40.42384599
+        ],
+        [
+          -3.718012813,
+          40.424144215
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -3.71778,
+        40.42405
+      ],
+      [
+        -3.71733,
+        40.42412
+      ],
+      [
+        -3.7171,
+        40.42416
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid pool basin at Parque de la Montaña; central stone island top y=0.50m; no DEM or sea-level height baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "OSM maps the ~20×12.6m sanctuary with a south annex, two gateways ~20.5m apart and a 77.5° axis. Photo-estimated 8% sanctuary wall batter, 0.8 m cavetto projection with torus rolls, four deep upper openings and proud columns; gateways rise 6.2/6.5 m above the island. Sanctuary roof reaches 6.52 m above the basin; the 12m stub height is not retained. Pool site envelope is estimated. Reflecting pool shown filled, although 2026 reference photographs show it drained. App appearance is checked separately from export and lifecycle certification.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/templo-de-debod-near.glb",
+      "bytes": 1020284,
+      "triangles": 19004,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -22.11408233642578,
+          -2.9802322831784522e-9,
+          -31.007095336914062
+        ],
+        "max": [
+          72.01443481445312,
+          7,
+          25.094844818115234
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/templo-de-debod-far.glb",
+      "bytes": 152592,
+      "triangles": 2840,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -22.11408233642578,
+          -2.9802322831784522e-9,
+          -31.007095336914062
+        ],
+        "max": [
+          72.01443481445312,
+          7,
+          25.094844818115234
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/templo-de-debod/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

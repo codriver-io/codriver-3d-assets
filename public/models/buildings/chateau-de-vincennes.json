@@ -1,0 +1,65 @@
+{
+  "id": "chateau-de-vincennes",
+  "name": "Château de Vincennes",
+  "kind": "building",
+  "origin": [
+    2.43583,
+    48.84278
+  ],
+  "height": 52,
+  "padM": 200,
+  "frontageBearing": 352.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local y=0 courtyard grade, real metres east/up/south. Moat floor/scarps descend to y=-2.9 m with a dark grade-mouth fallback; no host terrain excavation; no absolute altitude or DEM baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Keep 52 m (OSM and CMN), core about 16.5 m, corner turrets 6.6 m diameter; chapel ridge 38.8 m and pinnacles 30.4 m from OSM LiDAR tags. Outer enclosure and palace wings mapped; steep palace ridges are photo-estimated above OSM eaves (up to 34.7 m); roof sections, fenestration and ornament estimated from photos. Dry moat has 2.9 m below-grade floor/scarps and a dark surface fallback where host ground occludes it; no host terrain is modified. Barracks have three separate pitched roofs; pavilions retain continuous pitched ridges. Cityscape and Full 3D world visual placement checked with the scratch app bundle; terrain arrival, mode transitions and lifecycle certification remain separate.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/chateau-de-vincennes-near.glb",
+      "bytes": 842644,
+      "triangles": 17644,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -147.4158935546875,
+          -2.9000000953674316,
+          -214.03741455078125
+        ],
+        "max": [
+          158.9991455078125,
+          52,
+          217.67227172851562
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/chateau-de-vincennes-far.glb",
+      "bytes": 337476,
+      "triangles": 7392,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -147.4158935546875,
+          -2.9000000953674316,
+          -214.03741455078125
+        ],
+        "max": [
+          158.9991455078125,
+          52,
+          217.67315673828125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chateau-de-vincennes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
