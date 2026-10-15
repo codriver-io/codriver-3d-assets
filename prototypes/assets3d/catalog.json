@@ -31633,6 +31633,184 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "catedral-de-alajuela",
+      "name": "Catedral de Alajuela",
+      "kind": "building",
+      "location": "Alajuela, Costa Rica",
+      "status": "ready",
+      "description": "Original neoclassical cathedral with open columned porticoes, white twin bell turrets, a clock pediment and its signature broad red-metal crossing dome above twelve arched drum windows.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/catedral-de-alajuela/geometry.js",
+        "build": "pnpm build:top-cities-landmarks catedral-de-alajuela --no-check",
+        "provenance": "Original procedural geometry for Codriver, October 2026. Geographic outline © OpenStreetMap contributors, ODbL 1.0, way 391297577. Photographic comparison only: Domo de la Catedral de Alajuela 2011, Marlon OB, CC BY-SA 3.0; Catedral de Alajuela1, Lex.mercurio, CC BY-SA 2.0; Church, Alajuela, Costa Rica, Donar Reiskoffer, CC BY 3.0; La Iglesia Central de Alajuela, Richie D., CC BY 2.0. Photos retained only in ignored scratch; no photo, texture or third-party mesh distributed.",
+        "references": [
+          {
+            "label": "Municipal architectural history: completed 1863, neoclassical",
+            "url": "https://munialajuela.go.cr/servicios/desarrollo-social/sitios-arquitectonicos"
+          },
+          {
+            "label": "Parish history: construction 1854–1863, dome begun 1878",
+            "url": "https://catedral-alajuela.org/diocesisdealajuela/historia-de-nuestra-parroquia"
+          },
+          {
+            "label": "OSM cathedral envelope, four levels, no height tag",
+            "url": "https://www.openstreetmap.org/way/391297577"
+          },
+          {
+            "label": "Dome — Marlon OB, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Domo_de_la_Catedral_de_Alajuela_2011.jpg"
+          },
+          {
+            "label": "Dome and side portico — Lex.mercurio, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Catedral_de_Alajuela1.jpg"
+          },
+          {
+            "label": "Bell turret detail — Donar Reiskoffer, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Church,_Alajuela,_Costa_Rica.jpg"
+          },
+          {
+            "label": "Front — Richie D., CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:La_Iglesia_Central_de_Alajuela.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/catedral-de-alajuela/geometry.js"
+      },
+      "notes": "Mapped OSM way 391297577, 254 degree frontage. Photo-estimated two-stage bell turrets with crosses at 35.55 m, upper-facade engaged columns and central arch, 24 flat dome colour seams in near and a clean red shell in far; near-only drum oculi. Rear details inferred; no interiors/fence/plaza/statuary. Final near 30,887 triangles / 6 draws / 1,481,096 bytes; far 8,539 / 5 / 425,984 bytes. Exported QA clean; zero material cycles. GLB sheets beside photos and static app evidence in tmp/next-200/fix/g7/catedral-de-alajuela/. Terrain/lifecycle stress cases remain not tested.",
+      "documentation": "docs/assets/top-cities-catedral-de-alajuela.md",
+      "manifest": "/models/buildings/catedral-de-alajuela.json",
+      "city": "Alajuela",
+      "inspection": {
+        "url": "/asset-preview.html?asset=catedral-de-alajuela&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=catedral-de-alajuela&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=catedral-de-alajuela&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=catedral-de-alajuela&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=catedral-de-alajuela&view=roof"
+          },
+          {
+            "label": "street",
+            "url": "/asset-preview.html?asset=catedral-de-alajuela&view=street"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=catedral-de-alajuela&view=detail"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "truist-park",
+      "name": "Truist Park",
+      "kind": "building",
+      "location": "Cumberland, Georgia",
+      "status": "ready",
+      "description": "Original mapped open-air Braves ballpark: brick street facade, stepped teal seating bowl, thin outward-rising white truss-supported horseshoe canopy, baseball diamond and warning track, left-field video board and Chop House.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/truist-park/geometry.js",
+        "build": "pnpm build:top-cities-landmarks truist-park --no-check",
+        "provenance": "Original procedural mesh by Codriver (2026-10-15), no scans, external meshes or textures. Mapped OSM relation 9051237 / outer 483842488, pitch 559996049 and Chop House 561604015; © OpenStreetMap contributors, ODbL 1.0. Ignored local comparison photos: SunTrust Park view behind home plate, May 2017; SunTrust Park near 3B, May 2017; SunTrust Park batter’s eye, May 2017; The Battery Atlanta high rises viewed from SunTrust Park, May 2017 — Thomson200, CC0; Truist Park 2025 — TarheelBornBred, CC0. Statue reference was not used.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Truist_Park"
+          },
+          {
+            "label": "MLB official field dimensions",
+            "url": "https://www.mlb.com/braves/ballpark/information/guide"
+          },
+          {
+            "label": "Populous: 2017 ballpark and canopy",
+            "url": "https://populous.com/showcases/atlanta-braves-ballpark"
+          },
+          {
+            "label": "Walter P Moore: 108,000 square foot canopy",
+            "url": "https://www.walterpmoore.com/projects/truist-park"
+          },
+          {
+            "label": "OSM mapped stadium",
+            "url": "https://www.openstreetmap.org/relation/9051237"
+          },
+          {
+            "label": "File:SunTrust Park view behind home plate, May 2017.jpg — Thomson200 (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:SunTrust_Park_view_behind_home_plate,_May_2017.jpg"
+          },
+          {
+            "label": "File:SunTrust Park near 3B, May 2017.jpg — Thomson200 (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:SunTrust_Park_near_3B,_May_2017.jpg"
+          },
+          {
+            "label": "File:SunTrust Park batter's eye, May 2017.jpg — Thomson200 (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:SunTrust_Park_batter%27s_eye,_May_2017.jpg"
+          },
+          {
+            "label": "File:Truist Park 2025.jpg — TarheelBornBred (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Truist_Park_2025.jpg"
+          },
+          {
+            "label": "File:The Battery Atlanta high rises viewed from SunTrust Park, May 2017.jpg — Thomson200 (CC0)",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Battery_Atlanta_high_rises_viewed_from_SunTrust_Park,_May_2017.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/truist-park/geometry.js"
+      },
+      "notes": "Mapped stadium outer 483842488 and Chop House 561604015; Battery neighbours excluded. MLB 335/400/325 ft field, northwest home plate facing SSE. Estimated 42.5–48 m thin outward-rising canopy and supported trusses; brick/dark-glass exterior and gate stairs unchanged. G7r: per-row concrete aisle cheeks replaced by continuous low teal tier faces; three short canopy lights removed, three full-height concourse lattice lights retained; dark screen with separate steel frame. No logo or texture. Near 27,025 triangles / 8 draws / 1,465,184 bytes; far 8,101 / 8 / 442,680 bytes. Exported QA clean; zero material cycles. Near/far GLB sheets and both-mode near/street app evidence in tmp/next-200/fix/g7r/truist-park/. Terrain/lifecycle stress cases not tested.",
+      "documentation": "docs/assets/top-cities-truist-park.md",
+      "manifest": "/models/buildings/truist-park.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=truist-park&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=truist-park&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=truist-park&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=truist-park&view=roof"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=truist-park&view=back"
+          },
+          {
+            "label": "Field",
+            "url": "/asset-preview.html?asset=truist-park&view=field"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=truist-park&view=detail"
+          }
+        ]
+      },
+      "city": "Cumberland",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

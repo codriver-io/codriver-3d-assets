@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'old-red-courthouse', name: "Old Red Courthouse", kind: 'building',
   ready: false,
   origin: [-96.80732, 32.77861],
-  height: 50,
+  height: 54,
   padM: 60,
   frontageBearing: 0,
 };

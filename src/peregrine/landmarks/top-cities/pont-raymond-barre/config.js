@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'pont-raymond-barre', name: "Pont Raymond-Barre", kind: 'bridge',
   ready: false,
-  origin: [4.82013, 45.73273],
-  height: 20,
+  origin: [0, 0],
+  height: 25,
   padM: 60,
   frontageBearing: 0,
 };

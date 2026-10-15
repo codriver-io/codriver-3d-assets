@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'munttoren', name: "Munttoren", kind: 'building',
   ready: false,
-  origin: [4.89333, 52.36694],
-  height: 31,
+  origin: [4.893212, 52.367055],
+  height: 41,
   padM: 60,
   frontageBearing: 0,
 };
