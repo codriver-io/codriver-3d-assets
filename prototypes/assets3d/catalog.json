@@ -32737,6 +32737,429 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "brandenburg-gate",
+      "name": "Brandenburg Gate",
+      "kind": "building",
+      "location": "Berlin, Germany",
+      "status": "ready",
+      "description": "Original procedural Brandenburg Gate: twelve fluted Doric columns, five deep open passages, triglyph and relief entablature, stepped attic, east-facing four-horse Quadriga and lower pedimented gatehouse wings.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/brandenburg-gate/geometry.js",
+        "build": "pnpm build:top-cities-landmarks brandenburg-gate --no-check",
+        "provenance": "Original parameterized Three.js geometry authored 2026-10-15; no scan, traced mesh, texture or photo redistributed. Geographic five outer outlines and 92 gate/wing part ways from the shared-helper dossier, © OpenStreetMap contributors (ODbL 1.0). Ignored reference-only photographs: Leonhard Lenz, Ukraine solidarity protest Berlin Pariser Platz with lighted Brandenburg Gate 2022-02-24 07, CC0; DimiTalen, View of Brandenburger Tor from the Reichstag roof terrace Berlin 2017, CC0; Thomas Wolf (www.foto-tw.de / www.sehenswertes-berlin.de), Brandenburger Tor nachts, CC BY-SA 3.0 (licence checked on Commons); White House Photographic Office, President Ronald Reagan Making His Berlin Wall Speech, public domain (historical reference only); Martin Rulsch, 2023-09-17 Brandenburger Tor mit oranger Farbe, CC BY-SA 4.0 (detail, temporary paint excluded); Skepticalism, Brandenburg Gate Berlin Germany, CC0. Statue and relief shapes are original simplified silhouettes rather than copied sculpture meshes.",
+        "references": [
+          {
+            "label": "visitBerlin: dimensions 26 m high, 65.5 m wide, 11 m deep; twelve Doric columns, 1791 completion and east-facing Quadriga",
+            "url": "https://www.visitberlin.de/en/brandenburg-gate"
+          },
+          {
+            "label": "Berlin State heritage database 09065019: five dividing-wall passages, triglyph/metope frieze, attic relief and 1867–68 Strack wings",
+            "url": "https://denkmaldatenbank.berlin.de/daobj.php?obj_dok_nr=09065019"
+          },
+          {
+            "label": "Thomas Wolf: Brandenburger Tor nachts, CC BY-SA 3.0, front and gatehouse reference",
+            "url": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_nachts.jpg"
+          },
+          {
+            "label": "OpenStreetMap main gate outline; all nested gate and gatehouse parts listed in footprint.js",
+            "url": "https://www.openstreetmap.org/way/518071791"
+          },
+          {
+            "label": "Wikipedia identity and Quadriga history",
+            "url": "https://en.wikipedia.org/wiki/Brandenburg_Gate"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/brandenburg-gate/geometry.js"
+      },
+      "notes": "Baked facade bearing 83.4857 degrees from two OSM control points. Published 65.5 m includes wings; main OSM upper envelope is about 33.9 x 12.85 m; the east guardhouses extend about 23 m from the origin. Main columns, separating walls and gatehouse porticoes remain open in far. Individual relief figures, horses, Victoria, wreath/eagle, fluting and roof pitches are simplified estimates; no interiors or event fixtures.",
+      "documentation": "docs/assets/top-cities-brandenburg-gate.md",
+      "manifest": "/models/buildings/brandenburg-gate.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=brandenburg-gate",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=detail"
+          },
+          {
+            "label": "Passage",
+            "url": "/asset-preview.html?asset=brandenburg-gate&view=passage"
+          }
+        ]
+      },
+      "city": "Berlin",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "frost-bank-tower",
+      "name": "Frost Bank Tower",
+      "kind": "building",
+      "location": "Austin, Texas",
+      "status": "ready",
+      "description": "Austin’s 157 m blue-glass tower: stepped folded facades, a four-point faceted crown with open clefts, Frost rosette emblems and a limestone Congress Avenue podium.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/frost-bank-tower/geometry.js",
+        "build": "pnpm build:top-cities-landmarks frost-bank-tower",
+        "provenance": "Original procedural geometry authored for Codriver 2026-10-15. No scans, traced meshes, photographs or textures ship. Plan and bearing use OpenStreetMap way 37546502 and retail parts 1507549538/1507549539, © OpenStreetMap contributors (ODbL 1.0). Reference-only Commons photos: FrostTowerAerial.jpg by Shane.torgerson (CC BY-SA 3.0); FrostTower-Feb2009.JPG by LoneStarMike (CC BY-SA 3.0); Frostbanktoweraustintx.jpg and Frostbanktower 5th-guadalupe.jpg by CMBJ (CC BY-SA 2.5); FrostBankTowerLobbYAustinTX.JPG by WhisperToMe (public domain). Photos stay in ignored scratch and are used for visual comparison only.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Frost_Bank_Tower"
+          },
+          {
+            "label": "OSM mapped podium",
+            "url": "https://www.openstreetmap.org/way/37546502"
+          },
+          {
+            "label": "Aerial — Shane.torgerson, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:FrostTowerAerial.jpg"
+          },
+          {
+            "label": "Crown and curtain wall — LoneStarMike, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:FrostTower-Feb2009.JPG"
+          },
+          {
+            "label": "Congress Avenue — CMBJ, CC BY-SA 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Frostbanktoweraustintx.jpg"
+          },
+          {
+            "label": "West skyline — CMBJ, CC BY-SA 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Frostbanktower_5th-guadalupe.jpg"
+          },
+          {
+            "label": "Lobby — WhisperToMe, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:FrostBankTowerLobbYAustinTX.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/frost-bank-tower/geometry.js"
+      },
+      "notes": "157 m, 33 floors and 2003 completion sourced; mapped full podium and parts retained. g10a correction: four narrow separate pointed folded glass sails with open clefts, core lowered to 134 m, blue glass corner gables instead of pale setback ledges, one day glass colour with warm occupancy only in dark palette. Crown profiles, 67/96/122 m setbacks, tower inset, rosettes and garage heights remain photographic estimates. No central mast, textures or external meshes. Independent re-review remains required.",
+      "documentation": "docs/assets/top-cities-frost-bank-tower.md",
+      "manifest": "/models/buildings/frost-bank-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=frost-bank-tower&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=frost-bank-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=frost-bank-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=frost-bank-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=frost-bank-tower&view=roof"
+          },
+          {
+            "label": "Crown",
+            "url": "/asset-preview.html?asset=frost-bank-tower&view=crown"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=frost-bank-tower&view=entrance"
+          }
+        ]
+      },
+      "city": "Austin",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "george-c-king-bridge",
+      "name": "George C. King Bridge",
+      "kind": "bridge",
+      "location": "Calgary, Alberta, Canada",
+      "city": "Calgary",
+      "status": "ready",
+      "description": "The 182 m \"Skipping Stone\" pedestrian bridge over the Bow River (2014): three network-arch spans of 99, 31 and 52 m, a pair of inward-leaning grey steel box arches over each, a gently arched pale deck and crossing hangers.",
+      "manifest": "/models/bridges/george-c-king-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/george-c-king-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks george-c-king-bridge --no-check",
+        "provenance": "Original texture-free procedural geometry authored October 2026. OSM alignment and outline © OpenStreetMap contributors, ODbL 1.0. Photos used only for visual study (kept in ignored tmp/, not in the repo); no third-party mesh or image included. References: 1.jpg | File:Calgary A Walk Around town (29866605803).jpg | Thank you for visiting my page from Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Calgary_A_Walk_Around_town_(29866605803).jpg\n2.jpg | File:St. Patrick's Island Bridge.jpg | KatherineCraw 18 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:St._Patrick%27s_Island_Bridge.jpg\n3.jpg | File:Calgary East village from StGeorges bridge (15505939177).jpg | Thank you for visiting my page from Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Calgary_East_village_from_StGeorges_bridge_(15505939177).jpg\n4.jpg | File:Calgary, April 2016 (25) (25929918903).jpg | Daniel from Glasgow, United Kingdom | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(25)_(25929918903).jpg\n5.jpg | File:Calgary, April 2016 (26) (26532811875).jpg | Daniel from Glasgow, United Kingdom | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(26)_(26532811875).jpg\n6.jpg | File:Calgary, April 2016 (27) (26532853355).jpg | Daniel from Glasgow, United Kingdom | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(27)_(26532853355).jpg",
+        "references": [
+          {
+            "label": "Wikipedia — George C. King Bridge",
+            "url": "https://en.wikipedia.org/wiki/George_C._King_Bridge"
+          },
+          {
+            "label": "WSP — George C. King Bridge",
+            "url": "https://www.wsp.com/en-ca/projects/george-c-king-bridge"
+          },
+          {
+            "label": "File:Calgary A Walk Around town (29866605803).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_A_Walk_Around_town_(29866605803).jpg"
+          },
+          {
+            "label": "File:St. Patrick's Island Bridge.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:St._Patrick%27s_Island_Bridge.jpg"
+          },
+          {
+            "label": "File:Calgary East village from StGeorges bridge (15505939177).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary_East_village_from_StGeorges_bridge_(15505939177).jpg"
+          },
+          {
+            "label": "File:Calgary, April 2016 (25) (25929918903).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(25)_(25929918903).jpg"
+          },
+          {
+            "label": "File:Calgary, April 2016 (26) (26532811875).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(26)_(26532811875).jpg"
+          },
+          {
+            "label": "File:Calgary, April 2016 (27) (26532853355).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Calgary,_April_2016_(27)_(26532853355).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/george-c-king-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=george-c-king-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=facade"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=underside"
+          },
+          {
+            "label": "Island ramp",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=ramp"
+          },
+          {
+            "label": "End",
+            "url": "/asset-preview.html?asset=george-c-king-bridge&view=end"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-george-c-king-bridge.md",
+      "notes": "Sourced: 182 m, three spans (arch spans 99 m south, 31 m centre, 52 m north), network arches with crossing hangers, steel and concrete, opened 2014; mapped: axis bearing 21.10 deg, outline, island ramp at the middle of the centre span. Estimated from photographs: arch rises (17.5 / 6.6 / 10.8 m), arch lean (feet 8.0 m apart, crowns 3.2-4.8 m), box sections, 4.4 m deck and its rise per span, hanger count and angle, rails, skewback blocks, pier columns, V struts, abutments, ramp width and supports. Arches are drawn in the grey of the photographs. The mapped 78 m island ramp (OSM 779639382) is modelled from the middle of the centre span to St Patrick's Island, with the east rail open at its mouth; the skewback blocks stand 1.0 m over grade and go down to -2.95 m so Full 3D world shows concrete under every arch foot. Catalog readiness is asset readiness; integration evidence is separate. g5r scoped correction: world-only per-vertex offsets settle slab, girder, rails/posts and abutment over the last 22 m by 0.50 m to the island path; junction and Cityscape unchanged. Relative DEM-derived estimate (revalidate with different relief), not a baked absolute altitude or live bank fit. Near 13,864 tris / 5 draws / 968,920 bytes; far 5,068 / 5 / 367,308. Evidence: tmp/next-200/fix/g5r/george-c-king-bridge/app/{city,world}/; remaining delayed-terrain, navigation and hardware checks not tested.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "georgia-aquarium",
+      "name": "Georgia Aquarium",
+      "kind": "building",
+      "location": "225 Baker Street NW, Pemberton Place, Atlanta, Georgia, USA",
+      "city": "Atlanta",
+      "status": "ready",
+      "description": "TVS’s 2005 aquarium: raked glass ship’s bow, silver hull and wave roofs, blue hall panel bands and a slender arc canopy on fourteen columns.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/georgia-aquarium/geometry.js",
+        "build": "pnpm build:top-cities-landmarks georgia-aquarium --no-check",
+        "provenance": "Original procedural geometry authored by Codriver, 2026-10-15. No third-party mesh or texture. Mapped footprint © OpenStreetMap contributors, ODbL 1.0, ways 28912103, 1359126494 and 1303916364 from the supplied dossier. Photo references only, retained in ignored tmp: Diliff, Georgia Aquarium Jan 2006 (CC BY 2.5, licence checked); Chanilim714, Atlanta Aquarium GA USA - panoramio (CC BY-SA 3.0 per dossier; page unavailable during this run); TVS project photos 00353_000_N287_medium and 00353_000_medium (copyright holder/photographer not stated, all rights reserved, local visual reference only and excluded from all exports).",
+        "references": [
+          {
+            "label": "TVS architect: 2005, 550,000 sf and water/vessel composition",
+            "url": "https://www.tvsdesign.com/projects/project-detail/georgia-aquarium/"
+          },
+          {
+            "label": "ALUCOBOND: platinum, silver and blue cladding; ship, waves and entrance canopy",
+            "url": "https://www.alucobondusa.com/blog/georgia-aquarium/"
+          },
+          {
+            "label": "Diliff, Georgia Aquarium Jan 2006, CC BY 2.5",
+            "url": "https://commons.wikimedia.org/wiki/File:Georgia_Aquarium_Jan_2006.jpg"
+          },
+          {
+            "label": "OSM mapped aquarium",
+            "url": "https://www.openstreetmap.org/way/28912103"
+          },
+          {
+            "label": "OSM separate entrance roof part",
+            "url": "https://www.openstreetmap.org/way/1359126494"
+          },
+          {
+            "label": "OSM attached west service bay",
+            "url": "https://www.openstreetmap.org/way/1303916364"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/georgia-aquarium/geometry.js"
+      },
+      "notes": "g10a correction: 5.5 m wide/0.55 m deep mapped arc canopy on fourteen supported columns, red outer-edge lettering, three 4.5 m amplitude silver roof swells with near standing seams, blue/silver panel bands on all hall elevations and an aft hull roof skin closing the notch. Bow 31 m, mast 37 m, hall roofs 16–25 m and canopy 8.6 m are photographic estimates. The mapped canopy outer arc is about 90 m rather than forcing 120 m outside the provider envelope. No interior, exhibits, textures or external meshes. Independent re-review remains required.",
+      "documentation": "docs/assets/top-cities-georgia-aquarium.md",
+      "manifest": "/models/buildings/georgia-aquarium.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=georgia-aquarium&view=overview",
+        "views": [
+          {
+            "label": "overview",
+            "url": "/asset-preview.html?asset=georgia-aquarium&view=overview"
+          },
+          {
+            "label": "facade",
+            "url": "/asset-preview.html?asset=georgia-aquarium&view=facade"
+          },
+          {
+            "label": "rear",
+            "url": "/asset-preview.html?asset=georgia-aquarium&view=rear"
+          },
+          {
+            "label": "roof",
+            "url": "/asset-preview.html?asset=georgia-aquarium&view=roof"
+          },
+          {
+            "label": "entrance",
+            "url": "/asset-preview.html?asset=georgia-aquarium&view=entrance"
+          },
+          {
+            "label": "detail",
+            "url": "/asset-preview.html?asset=georgia-aquarium&view=detail"
+          }
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "stade-de-france",
+      "name": "Stade de France",
+      "kind": "building",
+      "location": "Saint-Denis, France",
+      "status": "ready",
+      "description": "Stade de France: mapped oval floating roof with tinted inner skylight, eighteen needle masts and four stays per needle, open three-tier bowl and monumental stairs.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/stade-de-france/geometry.js",
+        "build": "pnpm build:top-cities-landmarks stade-de-france --no-check",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15; no external mesh or texture. OSM relation 3009843, outer way 64003104, aperture 86922720 and 26 mast/bowl parts, © OpenStreetMap contributors (ODbL 1.0). Photo comparisons only in ignored tmp: Stade de France @ Saint-Denis (28359861273), Guilhem Vellut, CC BY 2.0; Le Stade de France vu des jardins de l’écluse, Chris93, CC BY 4.0; Argentina vs France 2024 Olympics cropped, Like tears in rain, CC BY-SA 4.0; distant Saint-Denis Fort de l’Est, Claude Shoshany, public domain. VINCI exterior/underside photographs (ss-1 and 1-5), rights reserved, used for comparison only and not redistributed. Unrelated Lille construction photo excluded.",
+        "references": [
+          {
+            "label": "VINCI construction: six-hectare roof, 18 needles, 1998 opening",
+            "url": "https://www.vinci-construction-projets.com/fr/realisations/stade-de-france-2/"
+          },
+          {
+            "label": "Official history: 18 masts 61 m high, 18 monumental stairs",
+            "url": "https://www.stadefrance.com/fr/le-stade/notre-histoire"
+          },
+          {
+            "label": "Saint-Denis: roof form, 80000 seats",
+            "url": "https://www.saintdenis.fr/stade-de-france"
+          },
+          {
+            "label": "Parrains du Stade: 35 m over parvis, 46 m above pitch",
+            "url": "https://www.parrains-stadefrance.fr/stade-de-france"
+          },
+          {
+            "label": "Mapped roof envelope",
+            "url": "https://www.openstreetmap.org/way/64003104"
+          },
+          {
+            "label": "Guilhem Vellut street exterior, CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_@_Saint-Denis_(28359861273).jpg"
+          },
+          {
+            "label": "Interior reference, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Argentina_vs._France,_2024_Summer_Olympic_rugby_sevens,_men%27s_quarter-final,_2024-07-25_(6)_(cropped).jpg"
+          },
+          {
+            "label": "OSM licence",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stade-de-france/geometry.js"
+      },
+      "notes": "Roof at 35 m over parvis and needle tips at 50 m use an estimated 11 m offset from the sourced pitch-relative 46/61 m dimensions; official histories alternatively quote 42 m roof height. Mapped envelope about 281 by 324 m in stadium axes. Roof thickness, seating, stair flights and concourse openings estimated. Pitch displayed at grade, not at its real sunken datum. No logos, photo textures or third-party meshes. Source and exported GLB inspection only; in-app placement remains for lead QA.",
+      "documentation": "docs/assets/top-cities-stade-de-france.md",
+      "manifest": "/models/buildings/stade-de-france.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=stade-de-france&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=stade-de-france&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=stade-de-france&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=stade-de-france&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=stade-de-france&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=stade-de-france&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=stade-de-france&view=detail"
+          }
+        ]
+      },
+      "city": "Saint-Denis",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

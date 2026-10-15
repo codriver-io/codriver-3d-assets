@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'arena-nationala', name: "Arena Națională", kind: 'building',
   ready: false,
-  origin: [26.1525, 44.43722],
-  height: 58,
+  origin: [26.152495124390242, 44.437199604878046],
+  height: 55,
   padM: 60,
   frontageBearing: 0,
 };

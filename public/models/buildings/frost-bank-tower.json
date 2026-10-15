@@ -1,0 +1,70 @@
+{
+  "id": "frost-bank-tower",
+  "name": "Frost Bank Tower",
+  "kind": "building",
+  "origin": [
+    -97.74269,
+    30.26649
+  ],
+  "height": 157,
+  "padM": 78,
+  "frontageBearing": 287.3,
+  "planAngleDeg": 17.3,
+  "towerCenter": [
+    -23,
+    6
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat grade y=0 at the lobby; rigid base, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "157 m height, 33 storeys, 2003 completion and approximately 30 m crown are sourced; mapped podium and bearing from OSM way 37546502. Tower inset, step heights, folded crown panels, mullion pitch and rosette emblems are photo-estimated. No textures or reference meshes. Cityscape and Full 3D world not tested yet; integration is checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/frost-bank-tower-near.glb",
+      "bytes": 969836,
+      "triangles": 19362,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.15846252441406,
+          -4.7683716530855236e-8,
+          -39.83011245727539
+        ],
+        "max": [
+          56.49514389038086,
+          157,
+          57.86387252807617
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/frost-bank-tower-far.glb",
+      "bytes": 308844,
+      "triangles": 6166,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.15846252441406,
+          -4.7683716530855236e-8,
+          -39.83011245727539
+        ],
+        "max": [
+          56.49514389038086,
+          157,
+          57.86387252807617
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/frost-bank-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

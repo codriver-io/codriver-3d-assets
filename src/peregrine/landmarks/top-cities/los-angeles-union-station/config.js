@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'los-angeles-union-station', name: "Los Angeles Union Station", kind: 'building',
   ready: false,
-  origin: [-118.23525, 34.05515],
-  height: 38,
+  origin: [-118.23615775695308, 34.05605795849651],
+  height: 38.71,
   padM: 60,
   frontageBearing: 0,
 };

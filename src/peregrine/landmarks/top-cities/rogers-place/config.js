@@ -3,7 +3,7 @@ export const SPEC = {
   id: 'rogers-place', name: "Rogers Place", kind: 'building',
   ready: false,
   origin: [-113.49778, 53.54694],
-  height: 40,
+  height: 43,
   padM: 60,
   frontageBearing: 0,
 };

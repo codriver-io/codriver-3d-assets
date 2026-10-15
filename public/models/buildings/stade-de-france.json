@@ -1,0 +1,65 @@
+{
+  "id": "stade-de-france",
+  "name": "Stade de France",
+  "kind": "building",
+  "origin": [
+    2.36013,
+    48.92447
+  ],
+  "height": 50,
+  "padM": 172,
+  "frontageBearing": 170,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local parvis grade y=0. Roof at 35 m and needle tips at 50 m; published pitch-relative heights use an estimated 11 m sunken pitch offset. No terrain baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1998 suspended roof with 18 needles, opaque annulus and tinted inner skylight; 3 seating tiers and 18 monumental stairs. Roof thickness, stair shapes and concourse levels estimated. Pitch represented at grade for standalone display; real excavated pitch omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stade-de-france-near.glb",
+      "bytes": 1816992,
+      "triangles": 31908,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -143.02597045898438,
+          -5.9604645663569045e-9,
+          -162.03794860839844
+        ],
+        "max": [
+          143.27630615234375,
+          50,
+          162.12818908691406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stade-de-france-far.glb",
+      "bytes": 470856,
+      "triangles": 7716,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -142.7526092529297,
+          -5.9604645663569045e-9,
+          -162.03794860839844
+        ],
+        "max": [
+          143.1754150390625,
+          50,
+          162.10646057128906
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stade-de-france/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

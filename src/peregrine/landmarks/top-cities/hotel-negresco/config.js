@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'hotel-negresco', name: "Hôtel Negresco", kind: 'building',
   ready: false,
-  origin: [7.2575, 43.69444],
-  height: 35,
+  origin: [7.258,43.6947],
+  height: 40.6,
   padM: 60,
   frontageBearing: 0,
 };

@@ -2,8 +2,8 @@
 export const SPEC = {
   id: 'capitol-records-building', name: "Capitol Records Building", kind: 'building',
   ready: false,
-  origin: [-118.32619, 34.10309],
-  height: 46,
+  origin: [-118.32636885, 34.10315525],
+  height: 70.714,
   padM: 60,
   frontageBearing: 0,
 };

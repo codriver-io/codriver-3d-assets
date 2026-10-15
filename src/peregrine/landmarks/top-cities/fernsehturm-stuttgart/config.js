@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'fernsehturm-stuttgart', name: "Fernsehturm Stuttgart", kind: 'building',
   ready: false,
-  origin: [9.19017, 48.75576],
+  origin: [0, 0],
   height: 217,
   padM: 60,
   frontageBearing: 0,
