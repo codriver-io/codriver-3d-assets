@@ -1,11 +1,5 @@
-// Wuppertal Schwebebahn (Sonnborn section): not yet released in the public library (stub).
-export const SPEC = {
-  id: 'wuppertal-schwebebahn-sonnborn', name: "Wuppertal Schwebebahn (Sonnborn section)", kind: 'bridge',
-  ready: false,
-  origin: [0, 0],
-  height: 16.2,
-  padM: 60,
-  frontageBearing: 0,
-};
-export const PALETTES = { light: { stone: '#c9c3b3' }, dark: { stone: '#7a8088' } };
-export const MANIFEST = { elevationDatum: 'Local grade y=0.', attribution: 'Not yet released.', note: 'Stub: not yet released.' };
+import {ORIGIN,SUPPORTS,point,geographic,STATION_RINGS} from './wuppertal-schwebebahn-sonnborn-alignment.js';
+const pads=SUPPORTS.flatMap(s=>[-8,8].map(d=>[[-2,-2],[2,-2],[2,2],[-2,2]].map(([a,b])=>{const p=point(s+a,d+b);return geographic([p[0],p[2]]);}))); 
+export const SPEC={id:'wuppertal-schwebebahn-sonnborn',name:'Wuppertal Schwebebahn (Sonnborn section)',kind:'bridge',ready: true,origin:ORIGIN,height:16.2,padM:500,frontageBearing:81,rangeM:2400,nearM:650,terrainPad:{rings:[...pads,...STATION_RINGS],refs:SUPPORTS.map(s=>{const p=point(s,8);return geographic([p[0],p[2]]);}),datum:'median',featherM:2}};
+export const PALETTES={light:{steel:'#668271',iron:'#47594f',concrete:'#aaa99b',roof:'#b3b7aa',glass:'#8aaba9',car:'#729caf',window:'#263e47',light:'#809c9c'},dark:{steel:'#374e47',iron:'#2b3b38',concrete:'#5b6465',roof:'#677570',glass:'#526c70',car:'#456976',window:'#263d48',light:'#b0c3a3'}};
+export const MANIFEST={elevationDatum:'Local y=0 is nominal flat street grade; no DEM, absolute altitude or Mercator stretch baked in.',attribution:'Original procedural geometry for Codriver. Mapped railway and station © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',note:'Sonnborn land section with 30 m station platforms (operator), mapped centreline and estimated 11.7–13.9 m running rail. Original 1901 system, rebuilt 2002 station. Heights, trestle spacing, truss sections and train proportions are visual estimates; two single-rail directions, no automobile deck or HD fitting.'};
