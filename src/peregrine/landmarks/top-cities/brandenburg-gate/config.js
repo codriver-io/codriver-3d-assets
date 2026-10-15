@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'brandenburg-gate', name: "Brandenburg Gate", kind: 'building',
   ready: false,
-  origin: [13.3777, 52.5163],
+  origin: [13.37770245, 52.516274925],
   height: 26,
   padM: 60,
   frontageBearing: 0,

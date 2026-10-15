@@ -1,0 +1,69 @@
+{
+  "id": "munttoren",
+  "name": "Munttoren",
+  "kind": "building",
+  "origin": [
+    4.893212,
+    52.367055
+  ],
+  "height": 41,
+  "padM": 26,
+  "frontageBearing": 177.48,
+  "masonryHeight": 21.8,
+  "clockHeight": 24.2,
+  "belfryBottom": 26.3,
+  "belfryTop": 30.95,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local pavement y=0, metres east/up/south; no terrain, altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "41 m total from Amsterdam Monumentenstad, correcting the approximate 31 m stub; 1620 octagonal timber/lead upper tower by Hendrick de Keyser, medieval round base, nineteenth-century replacement guardhouse. Stage heights, fenestration and ornament estimated from photographs; OSM 3D stage tags understate the complete spire. Rotation baked once. Cityscape and Full 3D world north-side visual placement checked 2026-10-15; lifecycle and terrain stress cases not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/munttoren-near.glb",
+      "bytes": 737816,
+      "triangles": 17262,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -24.150299072265625,
+          0,
+          -3.539827823638916
+        ],
+        "max": [
+          4.194716453552246,
+          41,
+          5.290815830230713
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/munttoren-far.glb",
+      "bytes": 351032,
+      "triangles": 8434,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -24.150299072265625,
+          0,
+          -3.539827823638916
+        ],
+        "max": [
+          4.194716453552246,
+          41,
+          5.238885402679443
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/munttoren/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
