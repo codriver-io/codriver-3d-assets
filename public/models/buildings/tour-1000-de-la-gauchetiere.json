@@ -1,0 +1,68 @@
+{
+  "id": "tour-1000-de-la-gauchetiere",
+  "name": "1000 De La Gauchetière",
+  "kind": "building",
+  "origin": [
+    -73.56627,
+    45.49824
+  ],
+  "height": 205,
+  "padM": 72,
+  "frontageBearing": 125,
+  "floorCount": 51,
+  "crownBaseM": 170,
+  "crownRidgeM": 198,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; no sea-level or DEM height baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "205 m and 51 floors sourced; mapped 125 degree axis and podium envelope. Regularised tower setbacks, crown panels, entrances and floor pitch are estimates. Cityscape and Full 3D world not tested yet; integration checked separately.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-1000-de-la-gauchetiere-near.glb",
+      "bytes": 1132584,
+      "triangles": 27862,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -61.65717315673828,
+          0,
+          -55.336917877197266
+        ],
+        "max": [
+          66.4090347290039,
+          205,
+          63.485504150390625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-1000-de-la-gauchetiere-far.glb",
+      "bytes": 423828,
+      "triangles": 10396,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -61.65717315673828,
+          0,
+          -55.336917877197266
+        ],
+        "max": [
+          66.4090347290039,
+          205,
+          63.485504150390625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-1000-de-la-gauchetiere/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,245 @@
+{
+  "id": "pantheon-rome",
+  "name": "Pantheon",
+  "kind": "building",
+  "origin": [
+    12.47683355,
+    41.898555
+  ],
+  "height": 44,
+  "padM": 48,
+  "frontageBearing": 356.4617,
+  "rotation": 0.06175448276768935,
+  "interiorDiameter": 43.3,
+  "drumDiameter": 57.4,
+  "drumHeight": 28.3,
+  "oculusDiameter": 9.1,
+  "shaftHeight": 11.9,
+  "shaftDiameter": 1.5,
+  "porticoWidth": 36.4,
+  "porticoDepth": 15.6,
+  "porticoRidge": 24.4,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          12.4765485,
+          41.8984022
+        ],
+        [
+          12.476546,
+          41.8984044
+        ],
+        [
+          12.4765317,
+          41.8984208
+        ],
+        [
+          12.4765021,
+          41.898468
+        ],
+        [
+          12.476487,
+          41.8985111
+        ],
+        [
+          12.4764822,
+          41.8985591
+        ],
+        [
+          12.4764879,
+          41.8986025
+        ],
+        [
+          12.4765018,
+          41.8986412
+        ],
+        [
+          12.4765199,
+          41.8986728
+        ],
+        [
+          12.4765464,
+          41.8987056
+        ],
+        [
+          12.4765827,
+          41.8987381
+        ],
+        [
+          12.4765975,
+          41.8987476
+        ],
+        [
+          12.4765952,
+          41.8987704
+        ],
+        [
+          12.4765924,
+          41.8988014
+        ],
+        [
+          12.476591,
+          41.8988182
+        ],
+        [
+          12.4765892,
+          41.8988384
+        ],
+        [
+          12.4765887,
+          41.8988442
+        ],
+        [
+          12.4765872,
+          41.898861
+        ],
+        [
+          12.4765759,
+          41.8989896
+        ],
+        [
+          12.4767962,
+          41.8989997
+        ],
+        [
+          12.4769728,
+          41.8990078
+        ],
+        [
+          12.477017,
+          41.8990099
+        ],
+        [
+          12.4770365,
+          41.8987704
+        ],
+        [
+          12.477043,
+          41.8987679
+        ],
+        [
+          12.4770753,
+          41.8987447
+        ],
+        [
+          12.4771157,
+          41.8987109
+        ],
+        [
+          12.4771493,
+          41.8986698
+        ],
+        [
+          12.4771705,
+          41.8986294
+        ],
+        [
+          12.4771831,
+          41.8985823
+        ],
+        [
+          12.4771849,
+          41.8985474
+        ],
+        [
+          12.4771801,
+          41.8985108
+        ],
+        [
+          12.4771654,
+          41.8984687
+        ],
+        [
+          12.477137,
+          41.8984228
+        ],
+        [
+          12.4771349,
+          41.8984204
+        ],
+        [
+          12.4771514,
+          41.8982722
+        ],
+        [
+          12.4765634,
+          41.8982422
+        ],
+        [
+          12.4765485,
+          41.8984022
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        12.47683355,
+        41.898555
+      ],
+      [
+        12.4767962,
+        41.8989997
+      ],
+      [
+        12.47685,
+        41.8983
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at present exterior grade; portico floor y=0.25m. Rigid metres, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "43.3m internal span, 9.1m open oculus, 11.9×1.5m granite shafts and sixteen Corinthian columns. 28.3m drum from OSM; 44m exterior rim, mouldings, brick relieving arches, rear annex height and weathering are estimates. Orientation from OSM northern facade endpoints, baked once. Modern present-day exterior, without removed bell towers or ancient sculpture. Cityscape and Full 3D world integration not tested yet.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/pantheon-rome-near.glb",
+      "bytes": 959980,
+      "triangles": 27120,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -29.347644805908203,
+          -9.536743306171047e-8,
+          -50.7076416015625
+        ],
+        "max": [
+          29.347644805908203,
+          44,
+          34.72747802734375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/pantheon-rome-far.glb",
+      "bytes": 469940,
+      "triangles": 10368,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -29.330535888671875,
+          -9.536743306171047e-8,
+          -50.809696197509766
+        ],
+        "max": [
+          29.330535888671875,
+          44,
+          34.72747802734375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pantheon-rome/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

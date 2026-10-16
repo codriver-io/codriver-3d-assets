@@ -1,0 +1,68 @@
+{
+  "id": "colorado-street-bridge",
+  "name": "Colorado Street Bridge",
+  "kind": "bridge",
+  "origin": [
+    -118.16414,
+    34.14486
+  ],
+  "height": 50.993,
+  "padM": 650,
+  "frontageBearing": 174,
+  "rangeM": 4000,
+  "nearM": 1400,
+  "terrainPolicy": "bank-fit",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Reusable GLB y=0 is the arroyo-floor authoring datum; deck 45.2628 m. Runtime road datum is the live approach grade: +0.10 m in Cityscape, with every below-deck substructure mesh hidden; world uses bank-interpolated road datums (+0.12 m) and local DEM support feet. No ramps or earth walls are authored, and no terrain/altitude/stretch is baked.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "447.294 m structure, 11.5824 m width, 8.5344 m road and 1.524 m walks, 45.2628 m deck height. Nine major parabolic arches and two pierced abutment groups follow the City of Pasadena 2019 report (six 113 ft, two 151.5 ft, one 223 ft spans), rather than the often quoted eleven arches / 233 ft main span. Pier spacing, rib depths, lamps, safety railing and alcoves are estimated. Cityscape hides all arches, piers and abutments beneath the at-grade deck.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/colorado-street-bridge-near.glb",
+      "bytes": 2805660,
+      "triangles": 57404,
+      "drawCalls": 15,
+      "bounds": {
+        "min": [
+          -670.2666625976562,
+          -1.1920929132713809e-8,
+          -122.83195495605469
+        ],
+        "max": [
+          526.60693359375,
+          50.95280075073242,
+          257.3081359863281
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/colorado-street-bridge-far.glb",
+      "bytes": 1106832,
+      "triangles": 22320,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -670.2666625976562,
+          -1.1920929132713809e-8,
+          -122.82381439208984
+        ],
+        "max": [
+          526.60693359375,
+          50.992801666259766,
+          257.3081359863281
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colorado-street-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

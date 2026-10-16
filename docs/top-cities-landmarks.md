@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (287 released)
+## The collection (293 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -295,6 +295,12 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `chateau-de-vincennes` | Château de Vincennes | Vincennes | building |
 | `chateau-de-versailles` | Château de Versailles | Versailles | building |
 | `louise-bridge-calgary` | Louise Bridge (10 Street) | Calgary | bridge, road-fitted |
+| `tour-1000-de-la-gauchetiere` | 1000 De La Gauchetière | Montréal | building |
+| `union-station-kansas-city` | Kansas City Union Station | Kansas City | building |
+| `wuppertal-schwebebahn-sonnborn` | Wuppertal Schwebebahn (Sonnborn section) | Wuppertal | bridge |
+| `pantheon-rome` | Pantheon | Rome | building |
+| `colorado-street-bridge` | Colorado Street Bridge | Pasadena | bridge, road-fitted |
+| `burlington-bay-skyway` | Burlington Bay James N. Allan Skyway | Burlington | bridge, road-fitted |
 
 ## A landmark is a folder
 

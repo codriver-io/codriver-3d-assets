@@ -1,0 +1,68 @@
+{
+  "id": "burlington-bay-skyway",
+  "name": "Burlington Bay James N. Allan Skyway",
+  "kind": "bridge",
+  "origin": [
+    -79.79775421,
+    43.29945
+  ],
+  "height": 64,
+  "padM": 1600,
+  "frontageBearing": 337,
+  "rangeM": 6500,
+  "nearM": 1700,
+  "terrainPolicy": "bank-fit",
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is water / Cityscape grade. Deck crest 39.2 m, original soffit 36.7 m, arch crown 64 m. World uses explicit bank/canal ground controls, not absolute sea-level heights: Lake Ontario is above sea level. No terrain or Mercator stretch is baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1958 steel arched through-truss paired with the 1985 segmental concrete canal span and steel box-girder approaches. Sourced: 151 m main span, 83.7 m back spans, 36.7 m clearance, 64 m crown, 2560/2215 m published lengths; engineering paper gives 21.25 m newer deck width. Estimated from mapped outlines/photos: 20.4 m old deck, 25 m centre spacing, member sizes, truss panel layout, pier sections, lamps and crest profile. Both deck ribbons continue to common flat-map landings; the shorter newer structure changes to retaining fill outside its mapped abutments.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/burlington-bay-skyway-near.glb",
+      "bytes": 2221692,
+      "triangles": 52244,
+      "drawCalls": 18,
+      "bounds": {
+        "min": [
+          -461.1673583984375,
+          -0.5082286596298218,
+          -1065.5218505859375
+        ],
+        "max": [
+          566.981201171875,
+          64,
+          1313.793212890625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/burlington-bay-skyway-far.glb",
+      "bytes": 949704,
+      "triangles": 19248,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -461.1673583984375,
+          -0.5082286596298218,
+          -1065.5218505859375
+        ],
+        "max": [
+          566.981201171875,
+          64,
+          1313.793212890625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/burlington-bay-skyway/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

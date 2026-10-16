@@ -36151,6 +36151,524 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "burlington-bay-skyway",
+      "name": "Burlington Bay James N. Allan Skyway",
+      "kind": "bridge",
+      "location": "Burlington – Hamilton, Ontario",
+      "status": "ready",
+      "description": "Twin high-level QEW Skyways: the 1958 open arched through-truss with its 151 m canal opening, and the 1985 haunched concrete box span on long pier-supported ramps.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/burlington-bay-skyway/geometry.js",
+        "build": "pnpm build:top-cities-landmarks burlington-bay-skyway --no-check",
+        "provenance": "Original procedural geometry authored 2026-10-15. OSM QEW motorway ways 24383761, 25514592, 24383647, 24384193, 24690493, 155736565 and adjoining 24383762 / 337262624; structural outlines 1128114243 / 1128114244, © OpenStreetMap contributors (ODbL 1.0). Reference-only Commons photographs: Projectskyway.jpg, Nhl4hamilton / Chit-Chat (public domain per dossier); Burlington Bay James N. Allan Skyway 2004.jpg, Poke958 (public-domain release checked); Burlington Skyway Construction 1957 MIKAN-4313923.jpg, Herb Taylor / National Film Board / Library and Archives Canada (expired Crown copyright, public domain checked). No photo, texture, capture or traced third-party mesh shipped.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Burlington_Bay_James_N._Allan_Skyway"
+          },
+          {
+            "label": "Passfield 2007: Pratley design, central three-span 1045 ft unit, arched 495 ft canal span, 120 ft clearance",
+            "url": "https://historicbridges.org/quebec/iledorleans/bio.pdf"
+          },
+          {
+            "label": "Bassi, Lin & Holowka 1985: 21.25 m newer deck, 2215 m length, 151 m span, steel approach boxes and concrete main spans",
+            "url": "https://trid.trb.org/View/270976"
+          },
+          {
+            "label": "Mapped original structural outline",
+            "url": "https://www.openstreetmap.org/way/1128114244"
+          },
+          {
+            "label": "Poke958, 2004 photograph, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Burlington_Bay_James_N._Allan_Skyway_2004.jpg"
+          },
+          {
+            "label": "Herb Taylor, 1957 construction photo, expired Crown copyright",
+            "url": "https://commons.wikimedia.org/wiki/File:Burlington_Skyway_Construction_1957_MIKAN-4313923.jpg"
+          },
+          {
+            "label": "Nhl4hamilton / Chit-Chat panorama, public domain per dossier",
+            "url": "https://commons.wikimedia.org/wiki/File:Projectskyway.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/burlington-bay-skyway/geometry.js"
+      },
+      "notes": "Published 151 m main span and 83.7 m back spans, 36.7 m clearance, 64 m crown; newer deck 21.25 m from 1985 engineering paper. Original width 20.4 m and 25 m twin spacing are mapped/photo estimates, as are truss panelisation, member sections, approach pier spacing and lamp standards. Original 2560 m vs newer 2215 m structural lengths: the newer bridge uses retaining approaches outside its mapped ends. No shared renderer changes. Final near 52,244 triangles / 18 draws / 2,221,160 bytes; far 19,248 / 5 / 949,172 bytes. QA metrics clean: zero cycles, coplanar faces, unsupported-member candidates and back-face sweep hits. Flat grades 3.096% south and 4.050% north. Final GLB light/dark near/far sheets inspected beside the reference photograph; both-mode landing shots inspected.",
+      "documentation": "docs/assets/top-cities-burlington-bay-skyway.md",
+      "manifest": "/models/bridges/burlington-bay-skyway.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=burlington-bay-skyway&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=deck"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=tower"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=detail"
+          },
+          {
+            "label": "Approach",
+            "url": "/asset-preview.html?asset=burlington-bay-skyway&view=approach"
+          }
+        ]
+      },
+      "city": "Burlington",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "colorado-street-bridge",
+      "name": "Colorado Street Bridge",
+      "kind": "bridge",
+      "location": "Pasadena, California",
+      "status": "ready",
+      "description": "Original curved Beaux-Arts concrete bridge with paired parabolic arch ribs, open spandrels, pierced abutments, overlooks and ornate globe standards.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/colorado-street-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks colorado-street-bridge --no-check",
+        "provenance": "Original procedural geometry, 2026-10-15. Alignment and outline © OpenStreetMap contributors, ODbL 1.0. Reference-only photographs: Kleaphotographer, Colorado street bridge sunset view from park (CC BY-SA 4.0); cmglee, Pasadena Colorado Street Bridge roadway facing west (CC BY-SA 4.0); Bobak Ha'Eri, 2010-1101-06-ColoradoStBridge (CC BY 3.0). Additional reference-only comparisons: Kleaphotographer, Colorado street bridge night lights (CC BY-SA 4.0); Mike Dillon, Pasadena Colorado Street Bridge 2005 (CC BY-SA 3.0). Photographs remain in ignored scratch and no textures, scans or third-party meshes ship.",
+        "references": [
+          {
+            "label": "NPS: curved deck, concrete spandrels, widths and lamp standards",
+            "url": "https://www.nps.gov/places/colorado-street-bridge.htm"
+          },
+          {
+            "label": "Pasadena 2019 technical report: nine major arches and small abutment arches",
+            "url": "https://www.cityofpasadena.net/commissions/wp-content/uploads/sites/31/HRTR-Colorado-Street-Bridge_11072019.pdf"
+          },
+          {
+            "label": "OSM bridge outline",
+            "url": "https://www.openstreetmap.org/way/1188175312"
+          },
+          {
+            "label": "OSM road alignment",
+            "url": "https://www.openstreetmap.org/way/17043345"
+          },
+          {
+            "label": "Kleaphotographer: park view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Colorado_street_bridge_sunset_view_from_park.jpg"
+          },
+          {
+            "label": "cmglee: road view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Cmglee_Pasadena_Colorado_Street_Bridge_roadway_facing_west.jpg"
+          },
+          {
+            "label": "Bobak Ha'Eri: aerial, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:2010-1101-06-ColoradoStBridge.jpg"
+          },
+          {
+            "label": "Kleaphotographer: night lights, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Colorado_street_bridge_night_lights.jpg"
+          },
+          {
+            "label": "Mike Dillon: side elevation, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pasadena_Colorado_Street_Bridge_2005.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colorado-street-bridge/geometry.js"
+      },
+      "notes": "Sourced 447.294 m length, 11.5824 m width, 45.2628 m maximum clearance, 8.5344 m road and 1.524 m walks. Nine major spans (six 113 ft, two 151.5 ft, one 223 ft) plus two pierced abutment groups, following the Pasadena technical report. Estimated pier spacing, spring heights, end bays and rail/lamp details; temporary chain-link omitted. Review g19ar removes flat-map embankments and world-far wedges, and deepens the semicircular spandrel arcade (8 segments near / 6 far). Reusable GLB deck remains 45.2628 m over its authoring floor; runtime Cityscape deck is at grade +0.10 m with hidden substructure. Near 57,404 triangles / 15 draws / 2,805,128 bytes; far 22,320 / 5 / 1,106,300. Independent re-review pending.",
+      "documentation": "docs/assets/top-cities-colorado-street-bridge.md",
+      "manifest": "/models/bridges/colorado-street-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=colorado-street-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=tower"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=colorado-street-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Pasadena",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pantheon-rome",
+      "name": "Pantheon",
+      "kind": "building",
+      "location": "Rome, Italy",
+      "status": "ready",
+      "description": "Original procedural present-day Pantheon: octastyle Corinthian portico, second pediment on the high connecting block, articulated brick rotunda and stepped lead dome with open oculus.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pantheon-rome/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pantheon-rome",
+        "provenance": "Original procedural geometry by Codriver, 2026-10-15, authored from dimensional descriptions and photographic comparison, without imported/traced meshes or textures. OSM footprint © OpenStreetMap contributors, ODbL 1.0. Comparison photographs: NikonZ7II, Pantheon (Rome) - Right side and front, CC BY-SA 4.0; ParsonsPhotographyNL, Pantheon (J), CC BY-SA 4.0; Luistxo, Pantheon (Rome) - Dome exterior, CC BY-SA 4.0. No photographs redistributed.",
+        "references": [
+          {
+            "label": "Pantheon architecture and dimensions",
+            "url": "https://en.wikipedia.org/wiki/Pantheon,_Rome"
+          },
+          {
+            "label": "OSM building relation 3374342",
+            "url": "https://www.openstreetmap.org/relation/3374342"
+          },
+          {
+            "label": "NikonZ7II — front/right side, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Right_side_and_front.jpg"
+          },
+          {
+            "label": "ParsonsPhotographyNL — front, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pantheon_(J).jpg"
+          },
+          {
+            "label": "Luistxo — exterior dome, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Dome_exterior.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pantheon-rome/geometry.js"
+      },
+      "notes": "Original texture-free exterior; 43.3m interior span, 9.1m oculus, 11.9×1.5m shafts. Exterior rim 44m, upper transitional gable profile, capitals, mouldings, recessed relieving arches and rear annex height are estimated. Review fix removes roof/wall backing overlaps, cuts porch niches, separates grille/lettering, adds the upper pitched pediment and 0.65m stone drum courses, darkens brick and slims capital ornaments. Near/far: 27,120/10,368 triangles, 6/6 draws, 959,460/469,420 bytes. Final ranked QA reports zero layered/coplanar faces, zero backface hits and zero depth cycles; raw geometry scan and two exported look-fix iterations are documented. No interior decoration, fine brick texture, removed bell towers or ancient pediment sculpture. Revised app captures and independent re-review remain with the lead.",
+      "documentation": "docs/assets/top-cities-pantheon-rome.md",
+      "manifest": "/models/buildings/pantheon-rome.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=pantheon-rome",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pantheon-rome&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pantheon-rome&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pantheon-rome&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pantheon-rome&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=pantheon-rome&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pantheon-rome&view=detail"
+          }
+        ]
+      },
+      "city": "Rome",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "tour-1000-de-la-gauchetiere",
+      "name": "1000 De La Gauchetière",
+      "kind": "building",
+      "location": "Montréal, Quebec",
+      "status": "ready",
+      "description": "Original procedural 205 m postmodern Montréal tower: pale granite window grid, recessed corners, sloping blue-green copper crown and pitched rink atrium.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/tour-1000-de-la-gauchetiere/geometry.js",
+        "build": "pnpm build:top-cities-landmarks tour-1000-de-la-gauchetiere",
+        "provenance": "Original texture-free procedural mesh, authored 2026-10-15; placement derived from OpenStreetMap contributors (ODbL 1.0). Reference-only Commons photographs retained solely in ignored tmp: CanadianPhotographer, 1000 de la Gauchetière Vue Aérienne (CC0); Niranjan Arminius, MTL 1000 de La Gauchetière 20150415 (CC BY-SA 4.0); Jeangagnon, 1000 De La Gauchetiere - 2025-03-16 (CC BY-SA 4.0); Montrealais, 1000-de-la-gauchetiere (CC BY-SA 3.0); Andrevruas, Patinoireatriumle1000 (CC BY-SA 3.0). No external mesh, texture or photograph embedded.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/1000_de_La_Gauchetière"
+          },
+          {
+            "label": "Official building and rink",
+            "url": "https://le1000.com/en/"
+          },
+          {
+            "label": "Mapped podium and tower parts",
+            "url": "https://www.openstreetmap.org/way/114875723"
+          },
+          {
+            "label": "File:1000 de la Gauchetière Vue Aérienne.jpg — CanadianPhotographer, CC0",
+            "url": "https://commons.wikimedia.org/wiki/File:1000_de_la_Gaucheti%C3%A8re_Vue_A%C3%A9rienne.jpg"
+          },
+          {
+            "label": "File:MTL 1000 de La Gauchetière 20150415.jpg — Niranjan Arminius, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:MTL_1000_de_La_Gaucheti%C3%A8re_20150415.jpg"
+          },
+          {
+            "label": "File:1000 De La Gauchetiere - 2025-03-16.jpg — Jeangagnon, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:1000_De_La_Gauchetiere_-_2025-03-16.jpg"
+          },
+          {
+            "label": "File:1000-de-la-gauchetiere.jpg — Montrealais, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:1000-de-la-gauchetiere.jpg"
+          },
+          {
+            "label": "File:Patinoireatriumle1000.JPG — Andrevruas, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Patinoireatriumle1000.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-1000-de-la-gauchetiere/geometry.js"
+      },
+      "notes": "Mapped podium envelope and all 46 building parts retained in ownership; tower plan regularised to mapped setbacks. Crown panel divisions, ridge cap, floor pitch, rotunda entrances and colours estimated from reference photographs; no interior rink or hidden bus terminal geometry. Rigid grade y=0, no terrain baked in.",
+      "documentation": "docs/assets/top-cities-tour-1000-de-la-gauchetiere.md",
+      "manifest": "/models/buildings/tour-1000-de-la-gauchetiere.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=tour-1000-de-la-gauchetiere&view=detail"
+          }
+        ]
+      },
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "union-station-kansas-city",
+      "name": "Kansas City Union Station",
+      "kind": "building",
+      "location": "Kansas City, Missouri, United States",
+      "status": "ready",
+      "description": "Jarvis Hunt’s 1914 Beaux-Arts limestone station: three monumental recessed arched windows, pilasters and flat parapet, long low windowed wings, perpendicular north waiting hall, wing roof monitors and western planetarium.",
+      "manifest": "/models/buildings/union-station-kansas-city.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/union-station-kansas-city/geometry.js",
+        "build": "pnpm build:top-cities-landmarks union-station-kansas-city --no-check",
+        "provenance": "Original procedural geometry authored for Codriver, 2026-10-15; no external mesh or texture. Prepared OSM dossier: station way 23770231, parts 1214640380–1214640383, planetarium 183370431; © OpenStreetMap contributors, ODbL 1.0. Comparison-only photographs in ignored scratch: KCUnionStation.jpg by John LeCoque (public domain, licence checked on Commons); Interior, Union Station (Kansas City) - DSC07833.JPG and DSC07829.JPG by Daderot (public domain, dossier attribution). No reference imagery ships.",
+        "references": [
+          {
+            "label": "Official station history and 95-foot ceiling / six-foot clock",
+            "url": "https://unionstation.org/about-union-station-kansas-city/"
+          },
+          {
+            "label": "Official 100-year history",
+            "url": "https://unionstation.org/100-years-of-kansas-city-history/"
+          },
+          {
+            "label": "Station identity and architect",
+            "url": "https://en.wikipedia.org/wiki/Kansas_City_Union_Station"
+          },
+          {
+            "label": "Station footprint, OSM",
+            "url": "https://www.openstreetmap.org/way/23770231"
+          },
+          {
+            "label": "John LeCoque exterior, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:KCUnionStation.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/union-station-kansas-city/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=union-station-kansas-city&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=detail"
+          },
+          {
+            "label": "Plan",
+            "url": "/asset-preview.html?asset=union-station-kansas-city&view=plan"
+          }
+        ]
+      },
+      "notes": "Mapped envelope and facade rotation; external heights, bay widths, north roof profile and roof monitors estimated from photos. The interior clock is schematically represented in the central glazed recess; interior rooms, inscriptions, sculpture, plaza, roads and Liberty Memorial hill are omitted. Parking deck and Two Pershing Square remain provider-owned. Bounded median terrain pad declared but unverified in-app. Near 8,113 triangles / 6 draws / 451 KB; far 3,173 triangles / 6 draws / 187 KB.",
+      "documentation": "docs/assets/top-cities-union-station-kansas-city.md",
+      "city": "Kansas City",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "wuppertal-schwebebahn-sonnborn",
+      "name": "Wuppertal Schwebebahn (Sonnborn section)",
+      "kind": "bridge",
+      "location": "Wuppertal, Germany",
+      "status": "ready",
+      "description": "Original Sonnborn suspended railway: rounded green street portals with strong kerb legs, twin lattice rail girders, light-fascia glazed 30 m platforms and a suspended blue car.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/wuppertal-schwebebahn-sonnborn/geometry.js",
+        "build": "pnpm build:top-cities-landmarks wuppertal-schwebebahn-sonnborn --no-check",
+        "provenance": "Original procedural Three.js geometry, 2026-10-15. OSM way 36388592 railway alignment and station 198459753 with elevator parts 369505983/369505984, © OpenStreetMap contributors, ODbL 1.0. Reference-only photos: Schwebebahnstation Sonnborner Straße 01 ies.jpg — Frank Vincentz — CC BY-SA 3.0/GFDL 1.2+; Wuppertal Sonnborner Str 0005.jpg — Atamari — CC BY-SA 3.0; Wuppertal-100508-12833-Uferstraße.jpg and Wuppertal-100522-13378-Werther.jpg — Mbdortmund — GFDL 1.2, general structural context only. Photos retained only under ignored scratch.",
+        "references": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Wuppertal_Schwebebahn"
+          },
+          {
+            "label": "WSW operator: 30 m platforms, two lifts/stairs, reopened 2002",
+            "url": "https://schwebebahn.de/en/stationen/sonnborner-strasse"
+          },
+          {
+            "label": "Mapped railway, two suspended directions",
+            "url": "https://www.openstreetmap.org/way/36388592"
+          },
+          {
+            "label": "Station outline",
+            "url": "https://www.openstreetmap.org/way/198459753"
+          },
+          {
+            "label": "Frank Vincentz, exact station, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Schwebebahnstation_Sonnborner_Stra%C3%9Fe_01_ies.jpg"
+          },
+          {
+            "label": "Atamari, stair and lift, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Wuppertal_Sonnborner_Str_0005.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/wuppertal-schwebebahn-sonnborn/geometry.js"
+      },
+      "notes": "g17a review fixes: 4.6 m rounded street portal shoulders, tapered 0.85 m kerb legs, brighter inset glazing and light grey-cream canopy fascia. Near keeps triangular shoulder lattice and flanges; far simplifies shoulder microdetail, retaining the full road opening and station/car window rhythm. Only the two western approach frames remain splayed. Final near 31,420 triangles / 8 draws / 1,922,520 bytes; far 16,872 / 8 / 1,144,052 bytes. Matching vertices welded; near down 37.6% in bytes. Review evidence: tmp/top-cities/shots/wuppertal-schwebebahn-sonnborn/review-fix-2 and tmp/top-cities/wuppertal-schwebebahn-sonnborn/review-fix/app. 700.1 m mapped alignment, exact station/elevator OSM ownership unchanged. Dimensions, support positions and train proportions remain visual estimates; DEM footing residuals and lifecycle not tested. g17ar2 provider audit: the continuous white strip is the ground-level Sonnborner Straße road ribbon, confirmed by separate road/building visibility diagnostics; neighboring white masses are residential houses. Exact station/lift mask covers all quantized station vertices; neighboring-house interiors remain outside ownership in the regression test. New both-mode axis/station evidence: tmp/top-cities/wuppertal-schwebebahn-sonnborn/provider-fix; complete unmodified planet-20261011 tiles replayed locally for capture after slow live responses. Geometry and near/far costs unchanged.",
+      "documentation": "docs/assets/top-cities-wuppertal-schwebebahn-sonnborn.md",
+      "manifest": "/models/bridges/wuppertal-schwebebahn-sonnborn.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=deck"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=underside"
+          },
+          {
+            "label": "Tower",
+            "url": "/asset-preview.html?asset=wuppertal-schwebebahn-sonnborn&view=tower"
+          }
+        ]
+      },
+      "city": "Wuppertal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

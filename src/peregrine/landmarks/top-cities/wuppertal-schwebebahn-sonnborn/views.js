@@ -1,5 +1,2 @@
-export const VIEWS = {
-  overview: [[66, 38, 92], [0, 8, 0]],
-  facade: [[0, 12, 69], [0, 5, 0]],
-  roof: [[30, 72, 30], [0, 13, 0]],
-};
+import {point,STATION,LENGTH} from './wuppertal-schwebebahn-sonnborn-alignment.js';
+export const VIEWS={overview:[point(LENGTH/2,390,145),point(LENGTH/2,0,8)],facade:[point(STATION,75,28),point(STATION,0,8)],back:[point(STATION,-70,28),point(STATION,0,8)],roof:[point(STATION,25,105),point(STATION,0,5)],deck:[point(STATION+75,13,20),point(STATION+56,2,10)],underside:[point(STATION+45,11,2),point(STATION+25,0,12)],tower:[point(STATION+100,0,3),point(STATION+55,0,8)]};
