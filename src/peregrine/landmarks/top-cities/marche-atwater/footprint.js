@@ -1,2 +1,51 @@
-export const FOOTPRINTS = [];
-export const OSM_WAYS = [];
+// Mapped outer market/canopy envelope; neighbouring shops and greenhouse excluded.
+// © OpenStreetMap contributors, ODbL 1.0: https://www.openstreetmap.org/copyright
+export const OSM_WAYS = [121847897];
+export const FOOTPRINTS = [
+  [
+    [
+      -73.5760825,
+      45.4791369
+    ],
+    [
+      -73.5763435,
+      45.4793446
+    ],
+    [
+      -73.5767505,
+      45.4796728
+    ],
+    [
+      -73.5771828,
+      45.4800191
+    ],
+    [
+      -73.5775317,
+      45.479806
+    ],
+    [
+      -73.5774036,
+      45.4797031
+    ],
+    [
+      -73.5773859,
+      45.4796889
+    ],
+    [
+      -73.5764345,
+      45.4789246
+    ],
+    [
+      -73.5764245,
+      45.4789307
+    ],
+    [
+      -73.5764186,
+      45.4789342
+    ],
+    [
+      -73.5760825,
+      45.4791369
+    ]
+  ]
+];

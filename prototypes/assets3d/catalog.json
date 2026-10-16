@@ -36669,6 +36669,326 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "edificio-inteligente-epm",
+      "name": "Edificio Inteligente EPM",
+      "kind": "building",
+      "location": "Medellín, Colombia",
+      "status": "ready",
+      "description": "Original procedural EPM headquarters: terraced glass wings, dominant twin buff service towers with open lattice crowns, a pilotis-supported plaza span and recessed glazed lobby.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/edificio-inteligente-epm/geometry.js",
+        "build": "pnpm build:top-cities-landmarks edificio-inteligente-epm",
+        "provenance": "Original procedural Codriver geometry, October 2026; no external mesh, scan or texture. Footprint © OpenStreetMap contributors (ODbL 1.0). Visual references: John Gómez, Edificio Inteligente (CC BY-SA 3.0); SajoR, Edificio EPM-FachadaEste-Medellin (public domain); FilMedellín, EDIFICIO EPM_0002_3 (copyrighted location reference, retained only in ignored scratch). Dossier refs/2.jpg is the Contraloría, not EPM, and was excluded.",
+        "references": [
+          {
+            "label": "EPM official visits: identity, construction started 1992",
+            "url": "https://www.epm.com.co/institucional/puertas-abiertas-epm/"
+          },
+          {
+            "label": "CTBUH: 14 floors and explicitly estimated 62 m height",
+            "url": "https://www.skyscrapercenter.com/building/epm-building/20140"
+          },
+          {
+            "label": "FilMedellín: six towers, address and public plaza",
+            "url": "https://filmedellin.com/locaciones/edificio-inteligente-epm/"
+          },
+          {
+            "label": "Mapped headquarters, OSM way 28669194",
+            "url": "https://www.openstreetmap.org/way/28669194"
+          },
+          {
+            "label": "John Gómez: Edificio Inteligente, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_Inteligente.jpg"
+          },
+          {
+            "label": "SajoR: east facade, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:Edificio_EPM-FachadaEste-Medellin.JPG"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-inteligente-epm/geometry.js"
+      },
+      "notes": "Review g18a fixes: six grounded pilotis and an 8 m recessed two-storey glazed lobby support the central span; the two plaza-facing cores are widened to 14 × 18 m and raised to a photo-estimated 70 m with perforated crowns; uniform glazing and thicker pale floor bands replace patchwork panes. Published 62 m is a floor-count estimate, not a survey. An independent terrain pad covers the surrounding near-lattice nodes; provider replacement remains only OSM way 28669194. Near 22488 tris / 4 draws / 1316488 bytes; far 8484 / 4 / 457472. Geometry QA has zero issues and no material cycles; independent re-review pending. Park and detached auditorium remain context.",
+      "documentation": "docs/assets/top-cities-edificio-inteligente-epm.md",
+      "manifest": "/models/buildings/edificio-inteligente-epm.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=edificio-inteligente-epm",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=edificio-inteligente-epm&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=edificio-inteligente-epm&view=facade"
+          },
+          {
+            "label": "Rear",
+            "url": "/asset-preview.html?asset=edificio-inteligente-epm&view=rear"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=edificio-inteligente-epm&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=edificio-inteligente-epm&view=entrance"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=edificio-inteligente-epm&view=detail"
+          }
+        ]
+      },
+      "city": "Medellín",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "marche-atwater",
+      "name": "Marché Atwater",
+      "kind": "building",
+      "location": "Montréal, Quebec",
+      "status": "ready",
+      "description": "Original 1933 Art Deco public market: long two-storey pale-brick hall, raised stepped northwest end pavilion, grounded projecting clock tower, legible vertical ATWATER sign and open grey-green market canopies beneath a darker roof.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/marche-atwater/geometry.js",
+        "build": "pnpm build:top-cities-landmarks marche-atwater",
+        "provenance": "Original procedural Three.js geometry authored for Codriver, 2026-10-15; no third-party mesh or texture. Geographic outline © OpenStreetMap contributors, ODbL 1.0. Visual-only Commons references: Marché AtWater (13296795445), Matias Garabedian, CC BY-SA 2.0; AtwaterMarket, Colin Rose, CC BY-SA 2.0; Marche Atwater 07, Jeangagnon, CC BY-SA 3.0. No reference imagery shipped.",
+        "references": [
+          {
+            "label": "Operator: market identity, Art Deco, 1933",
+            "url": "https://www.marchespublics-mtl.com/fr/marches/marche-atwater"
+          },
+          {
+            "label": "Montréal municipal history",
+            "url": "https://ville.montreal.qc.ca/memoiresdesmontrealais/node/388"
+          },
+          {
+            "label": "Architectural guide: 115 × 18 m hall; Ludger and Paul Lemieux",
+            "url": "https://lmlequebec.ca/art-deco-montreal-partie-2-de-3/"
+          },
+          {
+            "label": "OSM market and canopy envelope",
+            "url": "https://www.openstreetmap.org/way/121847897"
+          },
+          {
+            "label": "Winter facade and tower — Matias Garabedian, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:March%C3%A9_AtWater_(13296795445).jpg"
+          },
+          {
+            "label": "Clock, long hall and awnings — Colin Rose, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:AtwaterMarket.jpg"
+          },
+          {
+            "label": "Market canopy — Jeangagnon, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Marche_Atwater_07.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/marche-atwater/geometry.js"
+      },
+      "notes": "g20ar corrects mirrored sign glyphs, restores the 20 m stepped four-window NW pavilion, moves the 36.5 m clock tower forward to visibly meet grade, and separates lighter canopy from darker roof in both LODs; pavilion/tower elevations remain photo-scaled estimates. Near 13,864 tris / 8 draws / 817,072 bytes; far 4,990 / 8 / 314,760, within budget. Individual bays, dials, fluting, lettering and grounded silhouette persist in far; no material cycles. Hall 115 × 18 m from architectural guide; mapped ownership remains OSM 121847897, with no separate building parts found in dossier query. No interior fit-out, seasonal tents or produce; dossier photo 3 is Victoria Coach Station and was excluded. No photo/texture redistributed; app re-review in both modes remains with the lead.",
+      "documentation": "docs/assets/top-cities-marche-atwater.md",
+      "manifest": "/models/buildings/marche-atwater.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=marche-atwater",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=marche-atwater&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=marche-atwater&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=marche-atwater&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=marche-atwater&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=marche-atwater&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=marche-atwater&view=detail"
+          }
+        ]
+      },
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "parliament-hill-centre-block",
+      "name": "Parliament Hill Centre Block & Peace Tower",
+      "kind": "building",
+      "location": "Ottawa, Ontario",
+      "status": "ready",
+      "description": "Original procedural Gothic Revival Centre Block, dominant Peace Tower with four clocks and Canadian flag, rear Library and Centennial Flame.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/parliament-hill-centre-block/geometry.js",
+        "build": "pnpm build:top-cities-landmarks parliament-hill-centre-block",
+        "provenance": "Original procedural geometry authored in metres from mapped OSM outlines and comparison photographs; OSM © contributors, ODbL 1.0. Comparison-only photographs in ignored tmp: Centre Block - Parliament Hill, Saffron Blaze, CC BY-SA 3.0; Centre Block and Library of Parliament, Ottawa, West view 20170422 1, Daniel Vorndran / DXR, CC BY-SA 4.0. No reference pixels included.",
+        "references": [
+          {
+            "label": "Peace Tower history and design: official 92.2 m height",
+            "url": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/parliamentary-precinct/discover/peace-tower.html"
+          },
+          {
+            "label": "Centre Block exterior, Saffron Blaze, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Centre_Block_-_Parliament_Hill.jpg"
+          },
+          {
+            "label": "West view, Daniel Vorndran / DXR, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Centre_Block_and_Library_of_Parliament,_Ottawa,_West_view_20170422_1.jpg"
+          },
+          {
+            "label": "Centre Block mapped outline, OSM contributors, ODbL",
+            "url": "https://www.openstreetmap.org/way/68588665"
+          },
+          {
+            "label": "Centennial Flame, OSM contributors, ODbL",
+            "url": "https://www.openstreetmap.org/way/296732958"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parliament-hill-centre-block/geometry.js"
+      },
+      "notes": "Review fix g22ar: claimed entrance parent stair way 1117689261 and nested parts 1117689263–1117689271 (89 exact provider IDs; 11 masks, tiny treads enclosed by parent). Complete symmetric slate front roofs and copper side/rear hips retain ridges, solid dormers and chimneys in both LODs; lower copper chamber/Hall roofs close the courts. Foundations follow walls, removing the east apron; small inner turret shafts reach the base. Peace Tower remains 92.2 m. Near 34,292 tris / 8 draws / 1,506,444 bytes; far 8,734 / 8 / 402,456. Scoped tests and depth QA pass, no cycles; four exported near/far light/dark sheets inspected. Both-mode post-fix app recapture and independent review pending lead. Permanent exterior excludes restoration works; carvings, roof profiles and window cadence estimated. No photos, textures or external meshes distributed.",
+      "documentation": "docs/assets/top-cities-parliament-hill-centre-block.md",
+      "manifest": "/models/buildings/parliament-hill-centre-block.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=parliament-hill-centre-block",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=roof"
+          },
+          {
+            "label": "Entrance",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=entrance"
+          },
+          {
+            "label": "Clock",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=clock"
+          },
+          {
+            "label": "Library",
+            "url": "/asset-preview.html?asset=parliament-hill-centre-block&view=library"
+          }
+        ]
+      },
+      "city": "Ottawa",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pavillon-roger-gaudry",
+      "name": "Pavillon Roger-Gaudry (Université de Montréal)",
+      "kind": "building",
+      "location": "Montréal, Quebec, Canada",
+      "status": "ready",
+      "description": "Original procedural pale-buff Cormier pavilion: comb wings with recessed vertical window bays, raised ceremonial frontispiece and deeply slotted Art Deco tower with a tall three-stage ribbed setback crown.",
+      "manifest": "/models/buildings/pavillon-roger-gaudry.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pavillon-roger-gaudry/geometry.js",
+        "build": "pnpm build:top-cities-landmarks pavillon-roger-gaudry --no-check",
+        "provenance": "Original procedural mesh, 2026-10-15, no imported geometry or textures. OSM outlines © OpenStreetMap contributors, ODbL 1.0. Reference-only photos retained under ignored tmp: Armanidesu (UdeM Roger Gaudry), Funke (Pavillon Roger-Gaudry II) and Université de Montréal Centrale de photographie (Pavillon Roger Gaudry1963), all CC BY-SA 4.0; file-page licences checked. Incorrect Victoria Coach Station dossier image excluded.",
+        "references": [
+          {
+            "label": "Parks Canada heritage designation: architect, chronology, symmetrical plan and triple entrance",
+            "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_fra.aspx?i=84724&id=15416"
+          },
+          {
+            "label": "Université de Montréal exhibition: construction, compact plan and water-tank towers",
+            "url": "https://espaces.umontreal.ca/exposition/roger-gaudry/"
+          },
+          {
+            "label": "OSM building outline, six levels, 24 m",
+            "url": "https://www.openstreetmap.org/way/4637289"
+          },
+          {
+            "label": "UdeM Roger Gaudry.jpg — Armanidesu, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:UdeM_Roger_Gaudry.jpg"
+          },
+          {
+            "label": "Pavillon Roger-Gaudry II.jpg — Funke, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pavillon_Roger-Gaudry_II.jpg"
+          },
+          {
+            "label": "Pavillon Roger Gaudry1963.jpg — Université de Montréal Centrale de photographie, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pavillon_Roger_Gaudry1963.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pavillon-roger-gaudry/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pavillon-roger-gaudry",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pavillon-roger-gaudry&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pavillon-roger-gaudry&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pavillon-roger-gaudry&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pavillon-roger-gaudry&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=pavillon-roger-gaudry&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pavillon-roger-gaudry&view=detail"
+          }
+        ]
+      },
+      "notes": "g22br final crown correction: shaft ends at 50 m; three fluted setback stages at 50–55, 55–60 and 60–69.5 m plus a supported finial to 70 m. Crown occupies 20 m, 43% of the tower above the 24 m wings; no black cap slab or grey dome. All shaft slots widened to 1.4 m with 1.25 m recession; 0.90 m projecting shaft fins retained. Door canopies changed to muted metal and half depth (1.2 m). Near 18,688 triangles / 7 draws / 927,744 bytes; far 7,764 / 7 / 372,788 bytes. OSM 24 m wings, estimated 70 m tower (institutional references conflict). Exact provider ways remain 4637289, 723263433 and 723540387; no expanded ownership. Original rigid median pad retained. Fine relief, interiors, service jogs and landscaping omitted; dimensions remain estimates where documented. Both app modes await lead recapture, including downhill footing evidence, and independent re-review.",
+      "documentation": "docs/assets/top-cities-pavillon-roger-gaudry.md",
+      "city": "Montréal",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

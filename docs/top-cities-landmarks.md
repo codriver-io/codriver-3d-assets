@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (293 released)
+## The collection (297 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -301,6 +301,10 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `pantheon-rome` | Pantheon | Rome | building |
 | `colorado-street-bridge` | Colorado Street Bridge | Pasadena | bridge, road-fitted |
 | `burlington-bay-skyway` | Burlington Bay James N. Allan Skyway | Burlington | bridge, road-fitted |
+| `marche-atwater` | Marché Atwater | Montréal | building |
+| `pavillon-roger-gaudry` | Pavillon Roger-Gaudry (Université de Montréal) | Montréal | building |
+| `edificio-inteligente-epm` | Edificio Inteligente EPM | Medellín | building |
+| `parliament-hill-centre-block` | Parliament Hill Centre Block & Peace Tower | Ottawa | building |
 
 ## A landmark is a folder
 
