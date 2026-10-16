@@ -1,0 +1,115 @@
+{
+  "id": "edificio-inteligente-epm",
+  "name": "Edificio Inteligente EPM",
+  "kind": "building",
+  "origin": [
+    -75.57785,
+    6.2453
+  ],
+  "height": 70,
+  "padM": 74,
+  "frontageBearing": 287,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -75.578287217,
+          6.2464286
+        ],
+        [
+          -75.576852658,
+          6.245992614
+        ],
+        [
+          -75.577423352,
+          6.244137038
+        ],
+        [
+          -75.57885791,
+          6.244573023
+        ],
+        [
+          -75.578287217,
+          6.2464286
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -75.57785,
+        6.2453
+      ],
+      [
+        -75.578086,
+        6.245476
+      ],
+      [
+        -75.577704,
+        6.245593
+      ],
+      [
+        -75.577995,
+        6.244986
+      ],
+      [
+        -75.577613,
+        6.245103
+      ]
+    ],
+    "datum": "median",
+    "featherM": 25
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local grade y=0; absolute altitude, DEM heights and latitude stretch excluded.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Fourteen-storey EPM headquarters; revised twin buff plaza cores reach a photo-estimated 70 m, with the office roof at 58.6 m (the published 62 m is a floor-count estimate). Stepped glass wings, floor fins, six pilotis and recessed lobby; service details are abstracted. Widened rigid median pad with 25 m feather; no DEM height is baked into the model. Cityscape and Full 3D world verified in static near/street views at bearings 107/287; transitions, terrain eviction, exaggeration and device performance remain untested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/edificio-inteligente-epm-near.glb",
+      "bytes": 1317020,
+      "triangles": 22488,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -48.1440544128418,
+          -1.1920929132713809e-8,
+          -62.90896224975586
+        ],
+        "max": [
+          46.01826095581055,
+          70,
+          66.44181060791016
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/edificio-inteligente-epm-far.glb",
+      "bytes": 458004,
+      "triangles": 8484,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -48.1440544128418,
+          -1.1920929132713809e-8,
+          -62.90896224975586
+        ],
+        "max": [
+          46.01826095581055,
+          70,
+          66.44181060791016
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/edificio-inteligente-epm/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
