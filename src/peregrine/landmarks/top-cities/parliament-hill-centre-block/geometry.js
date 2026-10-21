@@ -119,7 +119,10 @@ export function create({detail='near'}={}) {
   const flag=(mat,x0,x1)=>{k.face(mat,[[x0,91.85,.2],[x0,90.5,.2],[x1,90.65,.35],[x1,92,.35]]);k.face(mat,[[x1,92,.35],[x1,90.65,.35],[x0,90.5,.2],[x0,91.85,.2]]);};
   flag('red',.05,.75);flag('light',.75,2.0);flag('red',2,2.7);
   const leaf=new THREE.Shape([[-.12,-.5],[.12,-.5],[.12,-.22],[.45,-.05],[.25,.08],[.35,.28],[.12,.21],[0,.48],[-.12,.21],[-.35,.28],[-.25,.08],[-.45,-.05],[-.12,-.22]].map(p=>new THREE.Vector2(...p)));
-  const lg=k.shape(leaf).translate(1.37,91.3,.39);k.put(lg,'red');k.put(lg.clone().rotateY(Math.PI).translate(2.74,0,.79),'red');
+  // One leaf on each side of the white band, mirrored about its z at the leaf centre:
+  // +z leaf 0.12m in front, -z-facing leaf 0.12m behind, so each shows from its own side.
+  const bandZ=.2+.15*(1.37-.75)/1.25,lg=k.shape(leaf).translate(1.37,91.3,.39);
+  k.put(lg,'red');k.put(lg.clone().rotateY(Math.PI).translate(2.74,0,2*bandZ),'red');
   // Entrance staircase runs continuously from grade into the open tower portal.
   for(let i=0;i<10;i++)b.box('foundation',[0,(1.5-i*.15)/2,5.5+(i+.5)*.58],[16+i*.7,1.5-i*.15,.6]);
   // Library of Parliament: polygonal buttressed drum and two steep conical roof tiers.

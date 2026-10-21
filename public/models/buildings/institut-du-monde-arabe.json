@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/institut-du-monde-arabe-near.glb",
-      "bytes": 1513348,
-      "triangles": 37110,
+      "bytes": 1513888,
+      "triangles": 37122,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/institut-du-monde-arabe-far.glb",
-      "bytes": 351392,
-      "triangles": 8462,
+      "bytes": 351960,
+      "triangles": 8474,
       "drawCalls": 7,
       "bounds": {
         "min": [

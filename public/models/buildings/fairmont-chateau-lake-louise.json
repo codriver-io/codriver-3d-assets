@@ -432,8 +432,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fairmont-chateau-lake-louise-near.glb",
-      "bytes": 1507016,
-      "triangles": 31033,
+      "bytes": 1448924,
+      "triangles": 29095,
       "drawCalls": 6,
       "bounds": {
         "min": [
@@ -450,8 +450,8 @@
     },
     "far": {
       "url": "/models/buildings/fairmont-chateau-lake-louise-far.glb",
-      "bytes": 434240,
-      "triangles": 9207,
+      "bytes": 413852,
+      "triangles": 8879,
       "drawCalls": 6,
       "bounds": {
         "min": [

@@ -146,17 +146,25 @@ export function create({detail="near"}={}){
  const hips=[[-5,14,-59,38,20.6,27.0],[14,43,-58,-22,20.6,26.6],[43,69,-58,-30,20.6,26.6],[14,43,3,38,20.6,26.6],[43,69,11,38,20.6,26.6]];
  for(const q of hips)hip(...q,true);
  for(const [u0,u1,v0,v1,y,top] of hips){
-  for(const v of [v0+4.2,v1-4.2])for(let u=u0+5;u<u1-3;u+=near?8:11){
-   if(near){
-    const out=v<(v0+v1)/2?-1:1,front=v+out*.6,back=v-out*.6;
-    poly("trim",[[u-.75,21.95,back],[u+.75,21.95,back],[u+.75,24.45,back],[u-.75,24.45,back]],[0,0,-out]);
-    for(const x of [u-.75,u+.75])poly("trim",[[x,21.95,back],[x,21.95,front],[x,24.45,front],[x,24.45,back]],[x<u?-1:1,0,0]);
-    const rect=(mat,x0,x1,y0,y1,depth)=>poly(mat,[[x0,y0,depth],[x1,y0,depth],[x1,y1,depth],[x0,y1,depth]],[0,0,out]);
-    rect("gold",u-.75,u-.425,21.95,24.45,front);rect("gold",u+.425,u+.75,21.95,24.45,front);
-    rect("gold",u-.425,u+.425,21.95,22.6,front);rect("gold",u-.425,u+.425,24.0,24.45,front);
-    rect("glass",u-.425,u+.425,22.6,24.0,front-out*.12);
-   }else box("trim",u,23.2,v,1.5,2.5,1.2);
-   hip(u-.95,u+.95,v-.85,v+.85,24.45,25.35);
+  // Lucarnes stand on the lower slate slope, their fronts 0.7 m behind the eave line. Heights
+  // follow the same hip slope, so panes and caps clear the slate; cheeks and cap die into it.
+  const inset=Math.min(3.9,(u1-u0)*.32,(v1-v0)*.32),k=(top-y)/inset,depth=h=>(h-y)/k;
+  for(const out of [-1,1]){
+   const at=d=>(out<0?v0:v1)-out*d,base=y+k*.7-.05,head=base+2.5,ridge=head+.9,front=at(.7),cap=front+out*.25;
+   const rect=(mat,x0,x1,y0,y1,dv)=>poly(mat,[[x0,y0,dv],[x1,y0,dv],[x1,y1,dv],[x0,y1,dv]],[0,0,out]);
+   for(let u=u0+5;u<u1-3;u+=near?8:11){
+    // Triangular cheeks: the sloping lower edge stays just inside the slate.
+    for(const x of [u-.75,u+.75])poly("trim",[[x,base,front],[x,head,front],[x,head,at(depth(head))]],[x<u?-1:1,0,0]);
+    if(near){
+     rect("gold",u-.75,u-.425,base,head,front);rect("gold",u+.425,u+.75,base,head,front);
+     rect("gold",u-.425,u+.425,base,base+.65,front);rect("gold",u-.425,u+.425,base+2.05,head,front);
+     rect("glass",u-.425,u+.425,base+.65,base+2.05,front-out*.12);
+     poly("trim",[[u-.95,head,cap],[u+.95,head,cap],[u+.95,head,at(depth(head))],[u-.95,head,at(depth(head))]],[0,-1,0]);
+    }else{rect("trim",u-.75,u+.75,base,base+.65,front);rect("glass",u-.75,u+.75,base+.65,head,front);}
+    // Hipped cap: front hip and two side slopes whose back edges lie on the main slope.
+    const fl=[u-.95,head,cap],fr=[u+.95,head,cap],rf=[u,ridge,cap-out*.6],rb=[u,ridge,at(depth(ridge))],bl=[u-.95,head,at(depth(head))],br=[u+.95,head,at(depth(head))];
+    poly("roof",[fl,fr,rf],[0,1,out]);poly("roof",[fl,rf,rb,bl],[-1,1,0]);poly("roof",[fr,br,rb,rf],[1,1,0]);
+   }
   }
   for(let v=v0+9;v<v1-5;v+=20){box("stone",u0+3,26.45,v,1.05,4.3,1.25);box("trim",u0+3,28.55,v,1.5,.35,1.65);}
  }

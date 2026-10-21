@@ -36,7 +36,7 @@ Units are real metres, +X east, +Y up, +Z south; y=0 is the flat local foundatio
 
 ## Modeling decisions
 
-The complete outline provides a grounded low stone podium and curved rear roof, with separately parameterized tall hotel wings. Upper facade planes are cut around individual recessed panes rather than backed by coplanar wall faces. Ground-floor openings have round heads. Rows remain separate at far detail, with wider bay spacing, reduced arch segmentation and omitted ordinary window reveals. Both LODs retain the steep hipped roof silhouette, gabled dormers, octagonal lakefront projections and arrival court opening.
+The complete outline provides a grounded low stone podium and curved rear roof, with separately parameterized tall hotel wings. Upper facade planes are cut around individual recessed panes rather than backed by coplanar wall faces. Ground-floor openings have round heads. Rows remain separate at far detail, with wider bay spacing, reduced arch segmentation and omitted ordinary window reveals; far panes sit flush in their cut-outs, so no far recess is see-through. Both LODs retain the steep hipped roof silhouette, gabled dormers, octagonal lakefront projections and arrival court opening.
 
 Original indexed surfaces carry explicit outward normals and merge by six material names: warm cream `stone`, subdued sandstone `base`, muted verdigris `copper`, charcoal `roof`, dark `glass` and a restrained fixed subset of night `glow` panes. No texture, retained mesh, scan, external geometry package or photograph ships. The model contains no free-ended beam/cable/walkway or separate canopy; those terminal-support tests are N/A. Roofs and bays meet the grounded wall volumes.
 
@@ -48,8 +48,8 @@ Measured default-scene GLBs, without compression or textures:
 
 | LOD | Triangles | Draw calls | Bytes | KiB rounded |
 | --- | ---: | ---: | ---: | ---: |
-| Near | 31,033 | 6 | 1,506,480 | 1,471 |
-| Far | 9,207 | 6 | 433,704 | 424 |
+| Near | 29,095 | 6 | 1,448,388 | 1,414 |
+| Far | 8,879 | 6 | 413,316 | 404 |
 
 Bounds are identical in both LODs: x -116.256 to 190.587, y 0 to 40, z -80.062 to 79.738 m. Costs fit the 60k/14/2.5 MB and 12k/8/500 KB caps. No removable `bridgeLift` data remains. These are scene counts, not measured Tesla hardware performance.
 
@@ -76,6 +76,36 @@ node --test src/peregrine/landmarks/top-cities/top-cities.test.js src/peregrine/
 node scripts/asset-catalog.mjs
 node .agents/skills/build-3d-city/scripts/qa-metrics.mjs --ids fairmont-chateau-lake-louise
 ```
+
+## Review fixes (2026-10-21)
+
+The window code assumed that any wall starting at grade was the podium, so each octagonal lakefront bay got only one arched pane per facet, at 1.4–4.9 m, and nothing above it. In far, `floor(3.06–4.59 / 4.8) = 0` left the bays with no panes at all. `walls()` now takes explicit row options instead of keying on `y0 === 0`: the podium and entrance gables keep the arched `arcade` row, and the wings keep the 3.25 m `storeys` rhythm from 8.4 m. The bays get both, so their storey rows match the adjacent wings. A narrow bay facet keeps one 1.25 m pane per row in both LODs, so far no longer drops them.
+
+Checked against the mapped outline, the bays stand mostly inside it: their centres are 3.6–7.0 m inside, and most facets lie within the podium and the Painter, Barott or Glacier wing volumes. A pane is kept when at least half its width (five samples 0.3 m outside the wall) faces open air rather than the podium, a wing block or a wing's hipped roof. On a partly buried facet, a lone pane slides to its most exposed position. This removed 24 near arched panes that were hidden inside the podium. The visible results:
+
+- Barott/Glacier corner bay, both faces of the 0.95 m wedge that projects beyond the mapped edge: an arched pane plus 7 storey panes over the full 32 m height, previously blank above 4.9 m.
+- Painter/Barott bay and Glacier end bay: a top-storey row in the stubs above the wing eaves.
+
+That gives 26 visible bay panes in both near and far, up from 0 exposed panes in either. Seven facets are exposed only 0.3–0.5 m above an eave, too little for a 1.85 m row, and stay plain.
+
+Window recesses no longer let rays through, in either LOD:
+
+- Far panes in `walls()` and on the wing dormers sit flush in their cut-outs; the old 0.55 m reveal-less recesses were see-through.
+- Near arched panes now fill the whole boxed recess, so no gap opens behind the stone arch head.
+
+Angled rays (30° and 50°) from open air into every pane opening:
+
+| Rays seeing through | Before | After |
+| --- | ---: | ---: |
+| Far, bay panes | none existed | 0/820 |
+| Far, wing and dormer panes | 10,017/46,970 | 0/46,993 |
+| Near, bay panes | none exposed | 0/820 |
+
+The closed arch-head gap was the only route by which any old bay arcade pane was reached from outside: just 2 of 3,150 rays, on the Painter/Barott bay's southeast-facing facet. So the arcade row still gets no pane on bay facets that lie 3–8 m inside the podium; their open-air share is 0.
+
+Remaining near leaks are pre-existing and outside the bay work: 118 rays clip the tops of wing dormer panes, which rise past the dormer cheeks, and 24 rays leak at a few facade window edges.
+
+The bays still sit almost entirely inside the mapped outline, unlike the clearly projecting towers in the photos. Moving them outward would exceed the 1 m ownership tolerance and is not part of this fix. `qa-metrics.mjs` still reports **ok**, with no layered or coplanar faces, 0% near backface hits and unchanged bounds. These exports come from a `CODRIVER_ASSET_BATCH=1` build without license stamping, so the license metadata has not yet been re-applied and the published byte counts will change slightly when it is. Cityscape and Full 3D world were not re-tested after this change.
 
 ## Placement and integration handoff
 

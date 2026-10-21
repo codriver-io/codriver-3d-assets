@@ -49,6 +49,15 @@ Review correction g19ar (2026-10-15): removed the 40 m flat-map embankments and 
 
 Exported near/light and far/dark sheets: `tmp/top-cities/shots/colorado-street-bridge/review-g19ar-glb/`. These show both faces, deck, underside and arcade detail. The near arcade has visibly open round heads, and far retains those openings with its coarse six-segment curve. The extra far segments account for its small triangle/byte increase; both variants remain within all bridge budgets.
 
+Review fixes (2026-10-21): each near overlook floor sat on the roadway side of its parapet as a 0.18 m semicircular bump on the sidewalk (laterals ±4.36–5.61 m), while its curved ledge hung over the arroyo with nothing underneath. The floor now projects outward under the ledge (±5.61–7.06 m). It measures 1.85 × 1.45 m, is 0.38 m deep and is flush with the walk (deck +0.17 m). It shares one rigid frame with its ten ledge blocks, so the 5.1° alignment vertex beside the START+3 overlook no longer pulls blocks off it. On the near export, every sampled ledge and lamp-pedestal underside (1,600 and 160 points) now has floor directly beneath it; previously 1,440 and 60 had none. Sidewalks beside the lamps are level. Far still omits overlooks.
+
+The east pavement join is now continuous. Previously both branch ribbons collapsed to [−3,3] m at the mapped merge node and then jumped to [−6,0]/[0,6]. Over the last 20 m, each branch now shifts by its 3 m half-width and arrives beside its twin in that first east section. The two ribbons meet without overlapping. The fork also opens from the exact bridge road edges. Near pavement narrows steadily from 13.7 m at s=1095 to 12.0 m at the join, where it previously went 12.5 → 9.1 m and then snapped back to 12.0 m. Far no longer jumps 1.79 m at the join. `edgesAt()` still drives the pavement, walkways and `bridgeRoadHeight`. The fix also removed the near 1.3 m² concrete-on-asphalt layered face at s≈1091. Close-up near/far sheets of a pier overlook, the START+3 overlook and the join were inspected. A residual edge jog at the 13° mapped-centreline vertex (s≈1089) predates these fixes. Cityscape and Full 3D world were not re-tested after these fixes; the app evidence below predates them.
+
+| Export | Before triangles / draws / bytes | After triangles / draws / bytes |
+| --- | ---: | ---: |
+| Near | 57,404 / 15 / 2,805,128 | 57,404 / 15 / 2,805,096 |
+| Far | 22,320 / 5 / 1,106,300 | 22,320 / 5 / 1,106,300 |
+
 ## App evidence and validation
 
 Both external landings and structural abutments are captured in both driving directions in near LOD, plus a forced-far overview in each mode. Provider: Protomaps; world uses Terrarium at zoom 15. Supersedes the original `app-final/` evidence and its Cityscape height table, which described the rejected 45 m flat-map approach ramps.

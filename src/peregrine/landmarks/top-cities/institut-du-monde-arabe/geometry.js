@@ -51,6 +51,23 @@ export function create({ detail = 'near' } = {}) {
   prism(NORTH, 26.6);
   prism(LINK, 30.7);
 
+  // The open west bays stand in for the clear glazing in front of the book tower. The shell is
+  // single-sided, so line the void behind them with an inward-facing dark atrium (floor slab at
+  // 2 m below the lowest open row, soffit at 30 m above the highest, north, south and back walls):
+  // every view through the cutaway ends on an interior face or the spiral, never on culled shell
+  // back faces. Side walls sit 5 cm inside the shell; the floor and soffit meet the west wall line.
+  {
+    const [sw, mid, nw, ne] = [OUTLINE[0], OUTLINE[26], OUTLINE[25], OUTLINE[24]], inset = 0.05, back = -35.2, y0 = 2, y1 = 30;
+    const along = (p, q, d) => { const t = d / Math.hypot(q[0] - p[0], q[1] - p[1]); return [p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t]; };
+    const northV = u => nw[1] + (u - nw[0]) / (ne[0] - nw[0]) * (ne[1] - nw[1]);
+    const ring = [along(sw, mid, inset), mid, along(nw, mid, inset), [back, northV(back) + inset], [back, southV(back) - inset]];
+    const cu = ring.reduce((s, p) => s + p[0], 0) / ring.length, cv = ring.reduce((s, p) => s + p[1], 0) / ring.length, inside = xyz(cu, (y0 + y1) / 2, cv);
+    for (const [y, toward] of [[y0, y1], [y1, y0]]) for (const [i, j, k] of THREE.ShapeUtils.triangulateShape(ring.map(p => new THREE.Vector2(...p)), [])) {
+      tri('aperture', xyz(ring[i][0], y, ring[i][1]), xyz(ring[j][0], y, ring[j][1]), xyz(ring[k][0], y, ring[k][1]), xyz(cu, toward, cv));
+    }
+    for (let i = 2; i < ring.length; i++) facadeRect('aperture', ring[i], ring[(i + 1) % ring.length], y0, y1, inside);
+  }
+
   // 240 metal moucharabiehs. Panel face and aperture infill occupy disjoint regions of one plane.
   // Each near mechanism has a central octagon, four small lenses with geometric star-shaped central iris surrounds.
   const u0 = OUTLINE[0][0], u1 = OUTLINE[4][0], pitch = (u1 - u0) / PANEL_COLS;
@@ -102,9 +119,11 @@ export function create({ detail = 'near' } = {}) {
   for (let i = 0; i < seg; i++) {
     const t = i / seg, s = (i + 1) / seg;
     const ai = spiralPoint(t, 1.08), ao = spiralPoint(t), bi = spiralPoint(s, 1.08), bo = spiralPoint(s);
-    const lower = p => [p[0], p[1] - 0.26, p[2]], high = [ao[0], ao[1] + 1, ao[2]];
-    quad('white', ai, ao, bo, bi, high);
-    quad('white', lower(ai), lower(bi), lower(bo), lower(ao), [ao[0], ao[1] - 1, ao[2]]);
+    // Orient tread and soffit by probes straight above/below their shared first vertex: the coarse
+    // far helix is steep enough that an off-axis probe flipped soffit triangles to face up.
+    const lower = p => [p[0], p[1] - 0.26, p[2]];
+    quad('white', ai, ao, bo, bi, [ai[0], ai[1] + 1, ai[2]]);
+    quad('white', lower(ai), lower(bi), lower(bo), lower(ao), [ai[0], ai[1] - 1.26, ai[2]]);
     const cc = xyz(SPIRAL.u, ao[1], SPIRAL.v), outside = [ao[0] * 2 - cc[0], ao[1], ao[2] * 2 - cc[2]];
     quad('white', lower(ao), lower(bo), bo, ao, outside);
     quad('white', ai, bi, lower(bi), lower(ai), cc);

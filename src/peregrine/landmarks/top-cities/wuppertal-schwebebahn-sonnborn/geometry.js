@@ -140,5 +140,6 @@ export function create({detail='near'}={}){
    bar('iron',point(t,cd,ch-.7),point(t,cd,ch-1.53),.25,`hanger-${k}-${end}`,n,`car-roof-${k}`);
   }
  }
- const root=b.finish();root.userData.supports=supports;root.userData.contacts=contacts;root.userData.platformLength=30;root.userData.railDirections=2;return root;
+ // QA-only support ranges and contact graph: non-enumerable, so GLTFExporter keeps them out of the shipped node extras.
+ const root=b.finish();Object.defineProperty(root.userData,'supports',{value:supports});Object.defineProperty(root.userData,'contacts',{value:contacts});root.userData.platformLength=30;root.userData.railDirections=2;return root;
 }

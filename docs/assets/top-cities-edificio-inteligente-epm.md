@@ -66,3 +66,16 @@ Cityscape: **verified** in these static daytime far/near/street app views. Full 
 Preview slot L (Cityscape 3314/admin 3315, world 3316/admin 3317) used a dedicated `/tmp/codriver-epm-g18ar-*` copy and an in-memory-built renderer bundle (`f4efdd42453d`). The shared `public/peregrine.js` was never rebuilt. Source over HEAD and process cleanup are recorded in the scratch report. No git write, online deployment or shared-tree app server was used.
 
 Final validation: **5/5 landmark tests and 3/3 scoped EPM registry tests pass**, including the lattice policy read dynamically in the test only. Global catalog validation, `pnpm assets:check` and `pnpm assets:preview` pass (425 entries / 836 GLB variants). The earlier aggregate run completed **891/895**, with unrelated failures in Pantheon source/export bounds, Pavillon Roger-Gaudry's `spandrel` palette, Marché Atwater's `canopy` palette and Parliament Hill's status/readiness mismatch; no unrelated file was changed.
+
+## Review fixes (2026-10-21)
+
+On every service tower, both cheeks of the 0.7 m inset glazing notch faced into the solid core, so back-face culling opened full-height see-through slots on all four towers × two faces × 14 tiers. The d+3 cheek now faces +z and the e−3 cheek −z, into the notch, in both LODs. An upward crown floor at the top-tier wall head also closes the hollow 14th tier, which the open crown lattice exposed from above; it adds two triangles per tower. The QA-only `contacts` list is now non-enumerable on `root.userData`. It remains readable in memory but no longer ships as GLB node extras. Footprint, bounds, materials and draws are unchanged.
+
+Build: `CODRIVER_ASSET_BATCH=1 node scripts/build-top-cities-landmarks.mjs edificio-inteligente-epm`. Bytes are as printed, before the maintainer license stamp (about 532 bytes per GLB).
+
+| LOD | Before tris / draws / bytes | After tris / draws / bytes | After KiB | Node extras |
+| --- | --- | --- | ---: | --- |
+| Near | 22,488 / 4 / 1,316,488 | 22,496 / 4 / 1,189,708 | 1161.8 | 127,434 → 223 bytes |
+| Far | 8,484 / 4 / 457,472 | 8,492 / 4 / 436,548 | 426.3 | 21,577 → 221 bytes |
+
+Near bytes fell 9.6% and far 4.6%. In both LODs, all 448 cheek triangles now face into their notch (none before). Of 672 oblique outside-in rays aimed through the slots, 350 stop on a cheek and none pass into the core (350 did before); the other 322 are occluded by the wings. The deterministic near back-face sweep fell from 1.2% to 0.2%. A denser 20,000-ray sweep fell from 0.79% to 0.01% near and from 0.82% to 0.01% far; one glass ray remains at a terrace setback corner. The existing core-on-concrete coplanar/layered flags at the tower bases (719 m² near) are unchanged and outside this fix. The exported near/far contact sheet was inspected: the silhouette is unchanged. Cityscape and Full 3D world were **not re-tested** after this change.

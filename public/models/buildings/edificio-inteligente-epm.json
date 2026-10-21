@@ -71,8 +71,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edificio-inteligente-epm-near.glb",
-      "bytes": 1317020,
-      "triangles": 22488,
+      "bytes": 1190240,
+      "triangles": 22496,
       "drawCalls": 4,
       "bounds": {
         "min": [
@@ -89,8 +89,8 @@
     },
     "far": {
       "url": "/models/buildings/edificio-inteligente-epm-far.glb",
-      "bytes": 458004,
-      "triangles": 8484,
+      "bytes": 437080,
+      "triangles": 8492,
       "drawCalls": 4,
       "bounds": {
         "min": [

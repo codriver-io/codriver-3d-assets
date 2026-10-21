@@ -15,43 +15,43 @@
     "y": "up",
     "z": "south"
   },
-  "elevationDatum": "Rigid local y=0 courtyard grade, real metres east/up/south. Moat floor/scarps descend to y=-2.9 m with a dark grade-mouth fallback; no host terrain excavation; no absolute altitude or DEM baked in.",
+  "elevationDatum": "Rigid local y=0 courtyard grade, real metres east/up/south. Dry moats are drawn at grade (dark surface at y=+0.15 m, counterscarp parapet footings to y=-0.3 m); no below-grade floor/scarps, no host terrain excavation; no absolute altitude or DEM baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Keep 52 m (OSM and CMN), core about 16.5 m, corner turrets 6.6 m diameter; chapel ridge 38.8 m and pinnacles 30.4 m from OSM LiDAR tags. Outer enclosure and palace wings mapped; steep palace ridges are photo-estimated above OSM eaves (up to 34.7 m); roof sections, fenestration and ornament estimated from photos. Dry moat has 2.9 m below-grade floor/scarps and a dark surface fallback where host ground occludes it; no host terrain is modified. Barracks have three separate pitched roofs; pavilions retain continuous pitched ridges. Cityscape and Full 3D world visual placement checked with the scratch app bundle; terrain arrival, mode transitions and lifecycle certification remain separate.",
+  "note": "Keep 52 m (OSM and CMN), core about 16.5 m, corner turrets 6.6 m diameter; chapel ridge 38.8 m and pinnacles 30.4 m from OSM LiDAR tags. Outer enclosure and palace wings mapped; steep palace ridges are photo-estimated above OSM eaves (up to 34.7 m); roof sections, fenestration and ornament estimated from photos. Keep enceinte wall 11.5 m carries a covered wall-walk on parapet piers (eave 12.6 m, ridge about 14 m estimated). Dry moats cover their mapped areas at grade: dark surface 0.15 m above y=0 inside a 0.8 m counterscarp parapet, open at the mapped gate-bridge landings; host ground hides anything below y=0, so no below-grade floor/scarps ship and no host terrain is modified. Barracks have three separate pitched roofs; pavilions retain continuous pitched ridges. Cityscape and Full 3D world visual placement were checked with the scratch app bundle before the 2026-10-21 review fixes and not re-run; terrain arrival, mode transitions and lifecycle certification remain separate.",
   "assets": {
     "near": {
       "url": "/models/buildings/chateau-de-vincennes-near.glb",
-      "bytes": 842644,
-      "triangles": 17644,
+      "bytes": 585016,
+      "triangles": 12661,
       "drawCalls": 5,
       "bounds": {
         "min": [
-          -147.4158935546875,
-          -2.9000000953674316,
-          -214.03741455078125
+          -143.2879638671875,
+          -0.30000001192092896,
+          -206.94032287597656
         ],
         "max": [
-          158.9991455078125,
+          151.8956298828125,
           52,
-          217.67227172851562
+          210.56838989257812
         ]
       }
     },
     "far": {
       "url": "/models/buildings/chateau-de-vincennes-far.glb",
-      "bytes": 337476,
-      "triangles": 7392,
+      "bytes": 318860,
+      "triangles": 6944,
       "drawCalls": 4,
       "bounds": {
         "min": [
-          -147.4158935546875,
-          -2.9000000953674316,
-          -214.03741455078125
+          -143.2879638671875,
+          -0.30000001192092896,
+          -206.94032287597656
         ],
         "max": [
-          158.9991455078125,
+          151.8956298828125,
           52,
-          217.67315673828125
+          210.56838989257812
         ]
       }
     }

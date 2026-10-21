@@ -93,9 +93,13 @@ export function create({detail='near'}={}){
  for(const s of lampStations)for(const side of [-1,1]){
   const d=side*(HALF-.18),y=DECK+.17;
   box('concrete',s,d,y+.83,1.1,.86,1.66,'lamp-base');
-  if(near){const sh=new THREE.Shape();sh.moveTo(-1.6,0);for(let k=0;k<=12;k++){const t=Math.PI*k/12;sh.lineTo(1.6*Math.cos(t),side*1.25*Math.sin(t));}sh.closePath();const g=new THREE.ExtrudeGeometry(sh,{depth:.38,bevelEnabled:false});g.rotateX(-Math.PI/2);const p0=p.bridgePoint(s,d,y-.2);g.rotateY(-Math.atan2(p0.tz,p0.tx));g.translate(p0.x,p0.y,p0.z);put(g,'concrete',s,'alcove');
+  // Overlook floor projects outward (rotateX(+PI/2) keeps shape y as +lateral) and hangs 0.38 m below
+  // walk level, so the ledge and lamp base stand on it; its 1.85 x 1.45 m rim carries every ledge block.
+  // Floor and ledge share one rigid frame at s: an alignment vertex cannot shear the ledge off its floor.
+  if(near){const p0=p.bridgePoint(s,d,y),rigid=(g,name)=>{g.rotateY(-Math.atan2(p0.tz,p0.tx));g.translate(p0.x,p0.y,p0.z);put(g,'concrete',s,name);};
+   const sh=new THREE.Shape();sh.moveTo(-1.85,0);for(let k=0;k<=12;k++){const t=Math.PI*k/12;sh.lineTo(1.85*Math.cos(t),side*1.45*Math.sin(t));}sh.closePath();const g=new THREE.ExtrudeGeometry(sh,{depth:.38,bevelEnabled:false});g.rotateX(Math.PI/2);rigid(g,'alcove');
    // Curved stone ledge follows the overlook, with real negative space above its floor.
-   for(let k=0;k<10;k++){const t=Math.PI*(k+.5)/10,ds=1.48*Math.cos(t),dd=side*1.17*Math.sin(t);box('concrete',s+ds,d+dd,y+.43,.51,.34,.86,'alcove-parapet');}}
+   for(let k=0;k<10;k++){const t=Math.PI*(k+.5)/10,g=new THREE.BoxGeometry(.51,.86,.34);g.translate(1.48*Math.cos(t),.43,side*1.17*Math.sin(t));rigid(g,'alcove-parapet');}}
   const stemTop=y+4.55;
   bar('iron',[s,d,y+1.66],[s,d,stemTop],near?.15:.21,'lamp-stem',['lamp-base','lamp-crown']);
   box('iron',s,d,stemTop,.36,.36,.30,'lamp-crown');

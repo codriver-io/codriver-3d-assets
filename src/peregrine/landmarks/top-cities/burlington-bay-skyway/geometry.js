@@ -28,9 +28,12 @@ export function create({detail='near',audit=false}={}){
  const contact=(name,a,c,sa,sc)=>{if(audit)members.push({name,a:xyz(...a),c:xyz(...c),sa,sc});};
  // Closed strips with separate face normals. All surfaces share station rows and lateral deck
  // columns, so the slab remains underneath the pavement on a bank-fitted landing crossfall.
+ // End caps close each strip's own ends at a and c, never the hidden near-chunk seams at L/3 and
+ // 2L/3. `caps:[start,end]` drops an end that butts into another solid; cap quads lying wholly at
+ // or below local grade (buried landing noses) or with no height (faded barriers) are skipped.
  const specials=[...p.ALIGNMENT.map(v=>v.s),...UNIT,...MAIN,...NEW_ENDS,TAPER,L-TAPER,25,L-25];
  const stations=(a,c)=>[...new Set([a,c,...specials.filter(s=>s>a&&s<c),...Array.from({length:Math.ceil((c-a)/(near?10:50))},(_,i)=>a+i*(near?10:50))])].filter(s=>s<=c).sort((a,b)=>a-b);
- function strip(mat,a,c,cols,top,bottom,name,{fade=0,thin=false,ground=false,topMat}={}){
+ function strip(mat,a,c,cols,top,bottom,name,{fade=0,thin=false,ground=false,topMat,caps=[true,true]}={}){
   const all=stations(a,c);
   for(let part=0;part<(near?3:1);part++){
    const lo=Math.max(a,near?L*part/3:0),hi=Math.min(c,near?L*(part+1)/3:L);if(hi<=lo)continue;
@@ -42,8 +45,10 @@ export function create({detail='near',audit=false}={}){
    for(const [ia,ib] of faces){const isTop=topMat&&ia<n-1&&ib===ia+1,pp=isTop?tops:pos,ii=isTop?topIdx:idx,base=pp.length/3;for(const row of rows)pp.push(...row[ia],...row[ib]);
     for(let i=1;i<rows.length;i++){const u=base+(i-1)*2,v=base+i*2;ii.push(u,u+1,v,u+1,v+1,v);}}
    if(tops.length){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(tops,3));g.setIndex(topIdx);g.computeVertexNormals();put(g,topMat,lo,name);}
-   if(!thin)for(const [k,on] of [[0,lo>a],[rows.length-1,hi<c]]){if(!on)continue;const r=rows[k];
-    for(let j=0;j<n-1;j++){const z=pos.length/3;pos.push(...r[j],...r[j+1],...r[2*n-2-j],...r[2*n-1-j]);if(k===0)idx.push(z,z+3,z+1,z+1,z+3,z+2);else idx.push(z,z+1,z+3,z+1,z+2,z+3);}}
+   if(!thin)for(const [k,on] of [[0,caps[0]&&Math.abs(lo-a)<1e-6],[rows.length-1,caps[1]&&Math.abs(hi-c)<1e-6]]){if(!on)continue;const r=rows[k];
+    for(let j=0;j<n-1;j++){const q=[r[j],r[j+1],r[2*n-2-j],r[2*n-1-j]];
+     if(Math.max(...q.map(v=>v[1]))<=.001||Math.max(q[0][1]-q[3][1],q[1][1]-q[2][1])<=.001)continue;
+     const z=pos.length/3;pos.push(...q.flat());if(k===0)idx.push(z,z+3,z+1,z+1,z+3,z+2);else idx.push(z,z+1,z+3,z+1,z+2,z+3);}}
    const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setIndex(idx);g.computeVertexNormals();put(g,mat,lo,name,ground?y=>y>.001?1:0:1);
   }
  }
@@ -52,10 +57,11 @@ export function create({detail='near',audit=false}={}){
   const w=WIDTHS[side],left=d-w/2,right=d+w/2,[rl,rr]=ROAD_EDGES[side],cols=[left,rl,rr,right];
   const start=side===0?NEW_ENDS[0]:60,end=side===0?NEW_ENDS[1]:L-60;
   for(const [a,c] of [[left,rl],[rr,right]])strip('concrete',start,end,[a,c],-.18,-.8,`slab-${side}`);
-  // Newer bridge: two steel approach box girders, concrete haunched main canal box.
+  // Newer bridge: two steel approach box girders, concrete haunched main canal box. Steel ends
+  // are hidden: they butt into the abutment fill face and into the wider concrete box.
   if(side===0){
    for(const g of [-5.3,5.3]){
-    for(const [a,c] of [[start,UNIT[0]],[UNIT[1],end]])strip('steel',a,c,[d+g-1.35,d+g+1.35],-.8,-2.5,`girder-${side}`);
+    for(const [a,c] of [[start,UNIT[0]],[UNIT[1],end]])strip('steel',a,c,[d+g-1.35,d+g+1.35],-.8,-2.5,`girder-${side}`,{caps:[false,false]});
     strip('concrete',UNIT[0],UNIT[1],[d+g-1.7,d+g+1.7],-.8,s=>-newGirderDepth(s),`girder-${side}`);
    }
   }else{

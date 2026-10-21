@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/colorado-street-bridge-near.glb",
-      "bytes": 2805660,
+      "bytes": 2805628,
       "triangles": 57404,
       "drawCalls": 15,
       "bounds": {
