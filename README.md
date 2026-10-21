@@ -4,7 +4,7 @@ Public source: [codriver-io/codriver-3d-assets](https://github.com/codriver-io/c
 
 **Open models. Endless worlds.** We’re building the world’s largest open-source 3D model
 library for applications, maps and games. The collection starts with real landmarks
-from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 112 more cities: 411 landmarks and four
+from Montréal and the rest of Québec, Paris, Toronto, San Francisco, Calgary and 109 more cities: 411 landmarks and four
 reusable bridge components, 838 self-contained GLB variants, and editable Three.js generators. Anyone can explore,
 reuse and help grow it.
 
