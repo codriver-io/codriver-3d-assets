@@ -201,8 +201,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/pantheon-rome-near.glb",
-      "bytes": 959980,
-      "triangles": 27120,
+      "bytes": 1010960,
+      "triangles": 28064,
       "drawCalls": 6,
       "bounds": {
         "min": [
@@ -219,14 +219,14 @@
     },
     "far": {
       "url": "/models/buildings/pantheon-rome-far.glb",
-      "bytes": 469940,
-      "triangles": 10368,
+      "bytes": 486940,
+      "triangles": 11312,
       "drawCalls": 6,
       "bounds": {
         "min": [
           -29.330535888671875,
           -9.536743306171047e-8,
-          -50.809696197509766
+          -50.7076416015625
         ],
         "max": [
           29.330535888671875,

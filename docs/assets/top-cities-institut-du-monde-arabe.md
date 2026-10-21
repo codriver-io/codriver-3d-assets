@@ -32,7 +32,7 @@ The river wing follows the mapped faceted curve; the south wing is taller. The e
 
 All 240 diaphragm panels remain separate in both LODs. Near panels have star-shaped central iris surrounds, dark octagonal centres and four smaller corner apertures; the real mechanisms are finer and mechanically complex. Far retains a central diamond aperture in every panel and the same overall grid. The screen is tessellated into mutually exclusive metal, iris and aperture polygons: no stacked facade decals, coplanar material overlays or texture maps. Curtain-wall panes and strips likewise occupy disjoint regions. Identical vertices are indexed before export.
 
-The white book tower is an internal cylinder with a closed helical ribbon rooted on the core and terminating on solid floor landings. Opaque glass cannot reveal an interior, so the west end deliberately has open framed bays to expose the spiral. This is an interpretive cutaway, not a claim that the actual building lacks glazing. The roof otherwise remains closed. The open bays are the only intentional exterior shell openings.
+The white book tower is an internal cylinder with a closed helical ribbon rooted on the core and terminating on solid floor landings. Opaque glass cannot reveal an interior, so the west end deliberately has open framed bays to expose the spiral. This is an interpretive cutaway, not a claim that the actual building lacks glazing. Because the shell is single-sided, the void behind the bays is lined with a dark, inward-facing atrium (floor slab at 2 m, soffit at 30 m, north, south and back walls), so views through them end on an interior rather than on culled back faces. The roof otherwise remains closed. The open bays are the only intentional exterior shell openings.
 
 Glass is opaque muted blue-grey; metal is subdued grey. Small ground-floor panes use a dim day/warm night `glow` material. Facade calligraphy, exact iris blades, reflections, rooftop furniture, underground auditorium and interior museum collections are omitted. No hardware performance claim is made.
 
@@ -42,8 +42,8 @@ Measured default-scene GLBs, no textures or compression:
 
 | LOD | Triangles | Draws | Bytes | Decimal KB |
 | --- | --- | --- | --- | --- |
-| near | 37,110 | 7 | 1,512,816 | 1,512.8 |
-| far | 8,462 | 7 | 350,860 | 350.9 |
+| near | 37,122 | 7 | 1,513,356 | 1,513.4 |
+| far | 8,474 | 7 | 351,428 | 351.4 |
 
 Export: `pnpm build:top-cities-landmarks institut-du-monde-arabe --no-check`. The manifest is `/models/buildings/institut-du-monde-arabe.json`.
 
@@ -60,3 +60,10 @@ Cityscape: **not tested yet**. Full 3D world: **not tested yet**. App replacemen
 Deterministic asset QA: no issues, no layered/coplanar overlap candidates, no extra bridge attributes, near back-face sweep 0.6%, matching near/far bounds and no window-rhythm flags. Catalog validation passed (425 entries, 818 variants at verification time).
 
 Final review strengthened the horizontal dark panel borders in both LODs so the far screen reads as 240 cells rather than full-height strips. Final focused checks: all five landmark tests and all three landmark-filtered conformance tests passed; whole top-cities run had 885/887 passing, with unrelated Wuppertal Schwebebahn Sonnborn GLB/source bounds mismatch and Fairmont Château Lake Louise spec validation failures during other builders’ work. No other landmark was edited.
+
+## Review fixes (2026-10-21)
+
+1. **The west cutaway showed straight through the building.** With the glazing left out of rows 1 to M−2 of both west walls (u ≈ −44.5, v −3.9 to 8.2), the single-sided shell had nothing behind the bays: the inner sides of the moucharabieh screen, the north and east walls and the roof are back faces, so a culling renderer drew the sky and plaza beyond. In a fixed sample of 4,000 rays from a 70 m arc west of the building, 78.6 % (near) and 78.5 % (far) of the rays passing the open bays saw through. The real west end is glazed, with the book tower visible behind clear glass, so the bays stay open (the model's opaque glass would hide the spiral). The void behind them is now lined in `aperture` with inward-facing faces only: a floor slab at 2 m and a soffit at 30 m (just outside the lowest and highest open rows), and north, south and back walls. The back wall is at u = −35.2, 1.4 m behind the spiral, and the side walls sit 5 cm inside the shell. The same sample now meets the lining or the spiral every time (0 % see-through in both LODs), and the qa-metrics back-face sweep falls from 0.6 % to 0 %. This adds 12 triangles per LOD and no material or draw.
+2. **Some far spiral soffit triangles faced up.** After the lining, 48 of the 4,000 far rays still first met the white helix from behind. On the coarse 64-segment far ribbon, the orientation probe sat about 2 m beside the vertex instead of below it, and on the steep far slope this flipped some soffit triangles. Tread and soffit are now oriented by probes straight above and below their first vertex. Vertex positions and triangle counts are unchanged.
+
+Costs, as the build printed them before → after: near 37,110 → 37,122 triangles, 7 draws, 1,512,816 → 1,513,356 bytes; far 8,462 → 8,474 triangles, 7 draws, 350,860 → 351,428 bytes. qa-metrics reports no issues before or after. Exported near and far GLBs were inspected before and after from the north-west and south-west, along with the standard contact sheet (ignored scratch): the bays now show the white spiral against a dark interior instead of the sky. Cityscape and Full 3D world were **not re-tested** for this change.

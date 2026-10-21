@@ -1185,8 +1185,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/chateau-de-versailles-near.glb",
-      "bytes": 2482536,
-      "triangles": 52952,
+      "bytes": 2473968,
+      "triangles": 52756,
       "drawCalls": 9,
       "bounds": {
         "min": [
@@ -1203,8 +1203,8 @@
     },
     "far": {
       "url": "/models/buildings/chateau-de-versailles-far.glb",
-      "bytes": 494532,
-      "triangles": 10762,
+      "bytes": 485140,
+      "triangles": 10564,
       "drawCalls": 8,
       "bounds": {
         "min": [

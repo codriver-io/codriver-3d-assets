@@ -192,12 +192,21 @@ export function create({detail='near'}={}) {
     T:[[[0,1],[.9,1]],[[.45,1],[.45,0]]],E:[[[.85,1],[0,1],[0,0],[.85,0]],[[0,.5],[.65,.5]]],
     V:[[[0,1],[.45,0],[.9,1]]], '·':[[[.4,.45],[.5,.45]]],
   };
+  // Raised bronze relief attached to the frieze face (z=-49.05): every stroke is a
+  // closed prism whose hidden back sits 2cm inside the stone and whose sides meet
+  // the frieze. The face stands 0.12m proud near / 0.14m far, inside the 0.15m
+  // cornice projection, so nothing hovers ahead of the entablature. Far shares the
+  // eight prism corners (sub-pixel strokes, smooth normals) to stay within 500 KB.
   const text='M·AGRIPPA·L·F·COS·TERTIVM·FECIT',step=.84,h=.63,start=-text.length*step/2;
+  const frieze=-49.05,inkZ=frieze-(near?.12:.14),backZ=frieze+.02;
   for(let i=0;i<text.length;i++)for(const path of glyphs[text[i]]||[])for(let j=1;j<path.length;j++) {
     const a=path[j-1],c=path[j],dx=(c[0]-a[0])*h,dy=(c[1]-a[1])*h,len=Math.hypot(dx,dy),r=.027;
     const nx=-dy/len*r,ny=dx/len*r,x=start+i*step+a[0]*h,yy=17.18+a[1]*h;
-    const inkZ=near?-49.6:-50.1;
-    mesh('bronze',[-x-nx,yy+ny,inkZ,-x-dx-nx,yy+dy+ny,inkZ,-x-dx+nx,yy+dy-ny,inkZ,-x+nx,yy-ny,inkZ],[0,2,1,0,3,2]);
+    const q=[[-x-nx,yy+ny],[-x-dx-nx,yy+dy+ny],[-x-dx+nx,yy+dy-ny],[-x+nx,yy-ny]],idx=[0,2,1,0,3,2];
+    for(let k=0;k<4;k++){const n=(k+1)%4;idx.push(k,n,n+4,k,n+4,k+4);}
+    const p=[...q.map(([u,v])=>[u,v,inkZ]),...q.map(([u,v])=>[u,v,backZ])].flat();
+    if(near)mesh('bronze',p,idx);
+    else{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(p,3));g.setIndex(idx);g.computeVertexNormals();put(g,'bronze');}
   }
   return b.finish();
 }

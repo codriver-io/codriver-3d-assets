@@ -17,11 +17,17 @@ const branches=[projected(MAPPED.north),projected(MAPPED.south)];
 function lateral(pts,s){let i=1;while(i<pts.length-1&&pts[i][0]<s)i++;const a=pts[i-1],b=pts[i];return a[1]+(b[1]-a[1])*Math.max(0,Math.min(1,(s-a[0])/(b[0]-a[0])));}
 export const approachBlend=s=>Math.min(smooth((s-LANDING)/(START-LANDING)),smooth((L-LANDING-s)/(L-LANDING-END)));
 export function edgesAt(s){
- if(s<=FORK){const w=3+(ROAD_HALF-3)*approachBlend(s);return [[-w,0],[0,w]];}
+ const w0=3+(ROAD_HALF-3)*approachBlend(s);
+ if(s<=FORK)return [[-w0,0],[0,w0]];
  const join=raw.stationAt(MAPPED.east[0]);
  if(s>=join){const w=3+3*smooth((join+35-s)/35);return [[-w,0],[0,w]];}
- const t=smooth((s-FORK)/20),half=2.1+(3-2.1)*t;
- return branches.map((q,i)=>{const c=lateral(q,s),inner=(i?1:-1)*2.14;return [c*t+inner*(1-t)-half,c*t+inner*(1-t)+half];});
+ // Both ends are continuous. Each branch opens from its half of the bridge road (t). The mapped
+ // centrelines meet at one node, so over the last 20 m (u) each shifts by its 3 m half-width and
+ // arrives beside its twin as [-6,0]/[0,6], the first east section. Ribbons meet, never overlap.
+ const t=smooth((s-FORK)/20),u=smooth((s-join+20)/20),half=w0/2+(3-w0/2)*t;
+ const [n,q]=branches.map((pts,i)=>{const o=i?1:-1,c=(lateral(pts,s)*t+o*w0/2*(1-t))*(1-u)+o*3*u*(2-u);return [c-half,c+half];});
+ if(n[1]>q[0])n[1]=q[0]=(n[1]+q[0])/2;
+ return [n,q];
 }
 export const deckHeight=(s,approaches)=>{
  s=Math.max(0,Math.min(L,s));

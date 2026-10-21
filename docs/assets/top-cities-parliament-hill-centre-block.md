@@ -40,3 +40,16 @@ Landmark tests exercise actual geometry: 92.2 m tower, 151 m articulated envelop
 Review-fix evidence: `tmp/top-cities/shots/parliament-hill-centre-block/fix1/parliament-hill-centre-block-glb-{near,far}-{light,dark}-sheet.jpg`, showing overview, facade, opposite/back, roof, entrance, clock and Library. All four exported sheets were inspected against the two existing licensed exterior photos. One geometry look-fix iteration was used. `tmp/top-cities/parliament-hill-centre-block/fix-metrics.json` reports no issues, zero coplanar/layered faces, zero backface hits and no window-rhythm flags; depth regeneration/check passes with zero dropped cycle edges. Previous app shots under `tmp/next-200/qa/g22/app/{city,world}` are pre-fix evidence containing the reported provider blocks; they do not establish that the entrance replacement is fixed in-app. The lead must recapture both modes and independently re-review the corrected export. No scratch app bundle or app server was needed for this geometry-only fix.
 
 Cityscape: **not tested yet, integration is checked separately**. Full 3D world: **not tested yet, integration is checked separately**. Standalone sheets establish model appearance only; provider replacement, DEM footing, pad coverage, runtime shared shading and mode lifecycle require the lead’s app checks. No shared renderer, app runtime, registry or gate was edited.
+
+## Review fixes (2026-10-21)
+
+Review finding: the rear maple leaf sat on the wrong side of the Peace Tower flag. `rotateY(π)` with a 0.79 m shift placed the −z-facing copy at z≈0.40 (source frame, before the baked rotation). That is in front of the white band (z≈0.27 at the leaf centre) and 1 cm from the front leaf, so from behind the band hid it and the flag showed no leaf. The copy is now mirrored about the band's own z at the leaf centre (0.274 m): the front leaf stays flat at z=0.39 and the rear leaf sits at z=0.159. On its own side, each leaf is 0.06–0.17 m off the slightly tilted band. Both LODs share this geometry. The flag materials are single-sided (glTF `doubleSided` false), and the band is two opposite-wound faces, so each side shows only its own leaf.
+
+Exported-GLB rays through six leaf points, in both LODs:
+- From the front, all six still hit the red +z leaf at 0.39.
+- From behind, all six hit the white band at 0.25–0.30 before the fix and the red −z leaf at 0.159 after it.
+- Off-leaf points stay white from both sides.
+
+Before/after close-up renders from both sides confirm the result (scratch `/tmp/landmark-fixes/pantheon-parliament/`, not committed). The contact sheet was re-inspected.
+
+Costs are unchanged as printed by the build, before license stamping: near 34,292 triangles / 8 draws / 1,506,444 bytes; far 8,734 / 8 / 402,456. This repository's unranked `qa-metrics.mjs` reports near 362 m² and far 3,086 m² of layered faces. These are trim/glass/stone facade layers at 8–11 cm, plus the clock face. The figures are identical before and after this fix. The "ok" recorded above relied on generated host depth ranks that this script does not apply, and this fix does not address them. The landmark and registry tests cited above live outside this repository and were not rerun. Cityscape and Full 3D world remain **not tested**.

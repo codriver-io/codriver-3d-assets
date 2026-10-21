@@ -12,7 +12,8 @@ const local=([x,z])=>[C*x-S*z,S*x+C*z];
 export const toWorld=([x,y,z])=>[C*x+S*z,y,-S*x+C*z];
 const plan=id=>PLANS[id].map(local);
 function simplify(r,tol) {
-  let out=r.slice();
+  // Drop a closing duplicate first: otherwise both copies look collinear and the real corner is lost.
+  let out=r.length>1&&r[0][0]===r.at(-1)[0]&&r[0][1]===r.at(-1)[1]?r.slice(0,-1):r.slice();
   for(let round=0;round<4;round++) {
     const next=[];
     for(let i=0;i<out.length;i++) {
@@ -45,40 +46,51 @@ function fortress(k) {
   }
   // Low grass-roofed barracks backing the north curtain are owned whole.
   for(const id of [110191516,110188220])solid('stone',plan(id),0,7.8);
-  // Mapped moat has a 2.9 m scarp and floor below local grade. A dark mouth at
-  // grade keeps the ditch legible where the host ground hides below-grade parts;
-  // terrain excavation is deliberately outside this asset's ownership.
-  for(const id of [138303744,138576131]){
-    const r=simplify(plan(id),near?.4:1.0);
-    r.push(r[0]);
-    for(let i=1;i<r.length;i++){
-      const a=r[i-1],c=r[i],len=Math.hypot(c[0]-a[0],c[1]-a[1]);
+  // Mapped dry moats, drawn at grade. Host ground (the flat Cityscape plane or uncut terrain)
+  // covers everything below local y=0, so no below-grade floor or scarps ship. Each mapped moat
+  // area is a dark ditch surface 15 cm proud of grade, edged by a low stone counterscarp parapet;
+  // curtain walls, towers and the keep enceinte form the inner scarp. No terrain is excavated.
+  const v2=([x,z])=>new THREE.Vector2(x,-z);
+  function moat(ring,holes,edges){
+    const shape=new THREE.Shape(simplify(ring,near?.4:1.0).map(v2));
+    for(const h of holes)shape.holes.push(new THREE.Path(h.map(v2)));
+    const g=new THREE.ShapeGeometry(shape);g.rotateX(-Math.PI/2);g.translate(0,.15,0);k.put(g,'moat');
+    // Parapet centred on the mapped outer edge: 0.8 m above grade, footing 0.3 m into host ground.
+    for(const edge of edges)for(let i=1;i<edge.length;i++){
+      const a=edge[i-1],c=edge[i],len=Math.hypot(c[0]-a[0],c[1]-a[1]);
       if(len<.5)continue;
-      const angle=-Math.atan2(c[1]-a[1],c[0]-a[0]);
-      const width=id===138576131?9:15;
-      for(const y of [-2.9,.02]){const g=new THREE.PlaneGeometry(len,width);g.rotateX(-Math.PI/2);g.rotateY(angle);g.translate((a[0]+c[0])/2,y,(a[1]+c[1])/2);k.put(g,'moat');}
-      for(const side of [-1,1]){
-        const nx=-(c[1]-a[1])/len,nz=(c[0]-a[0])/len;
-        box('stone',[(a[0]+c[0])/2+side*nx*(width/2-.3),near?-1.3:-1.75,(a[1]+c[1])/2+side*nz*(width/2-.3)],[len,near?3.2:2.3,.6],angle);
-      }
+      box('stone',[(a[0]+c[0])/2,.25,(a[1]+c[1])/2],[len+.5,1.1,.6],-Math.atan2(c[1]-a[1],c[0]-a[0]));
     }
   }
+  // Enclosure moat ring: vertices 8–293 trace the curtain walls/towers (inner scarp, no parapet);
+  // the rest is the outer edge plus the two edges facing the keep moat. The parapet opens at the
+  // mapped gate-bridge landings (300–303 north, 312–320 south); the bridges themselves are not modeled.
+  const outer=plan(138303744);
+  moat(outer,[],[outer.slice(293,301),outer.slice(303,313),outer.slice(320).concat(outer.slice(1,9))]);
   // Keep's own 50 m enceinte. Model the mapped narrow wall polygon, preserving its hollow courtyard.
-  solid('stone',plan(1416530512),0,11.5);
-  const ex=-81,ez=21.2;
-  hip('roof',ex,ez-27.5,55,2.8,12.6,14,1);
-  hip('roof',ex,ez+27,55,2.8,12.6,14,1);
-  hip('roof',ex-27,ez,2.8,53,12.6,14,1);
-  // Eastern gallery has a real break for the châtelet.
-  hip('roof',ex+27,ez-18,2.8,18,12.6,14,1);
-  hip('roof',ex+27,ez+20,2.8,14,12.6,14,1);
-  for(const dx of [-27,27])for(const dz of [-27,27]){
-    cylinder('stone',ex+dx,ez+dz,1.7,9,15);cylinder('roof',ex+dx,ez+dz,1.9,15,18,0);
+  const ring=plan(1416530512),mid=(i,j)=>[(ring[i][0]+ring[j][0])/2,(ring[i][1]+ring[j][1])/2];
+  // Keep moat: mapped square minus the enceinte's outer face (ring 2–8, closed across the châtelet);
+  // its parapet opens at the courtyard landing facing the châtelet porch (vertices 16–18).
+  const keepMoat=plan(138576131);
+  moat(keepMoat,[ring.slice(2,9)],[keepMoat.slice(18).concat(keepMoat.slice(1,17))]);
+  solid('stone',ring,0,11.5);
+  // Covered wall-walk: slate roofs over the crenellated parapet (eave 12.6 m, ridge ~14 m) follow
+  // the mapped wall midline and stand on parapet piers rising from the 11.5 m wall top in both LODs
+  // (near 2.5 m merlon rhythm, far 5 m). Corbelled corner turrets sit on the mapped wall corners.
+  const NW=mid(5,13),NE=mid(7,11),SE=mid(3,16),SW=mid(4,14);
+  // [from, to, first/last pier clearance]: 2.2 m clears a turret; the east gallery breaks at the
+  // mapped châtelet gap, running 5.8 m into the châtelet block to the north and ending free at the wall end to the south.
+  for(const [a,c,c0,c1] of [[NW,NE,2.2,2.2],[SW,SE,2.2,2.2],[NW,SW,2.2,2.2],[NE,mid(8,10),2.2,6.3],[mid(2,0),SE,.6,2.2]]){
+    const dx=c[0]-a[0],dz=c[1]-a[1],len=Math.hypot(dx,dz),angle=-Math.atan2(dz,dx);
+    hip('roof',(a[0]+c[0])/2,(a[1]+c[1])/2,len,2.8,12.6,14,1,{angle});
+    const n=Math.max(1,Math.round((len-c0-c1)/(near?2.5:5)));
+    for(let i=0;i<=n;i++){
+      const t=(c0+i*(len-c0-c1)/n)/len;
+      box('stone',[a[0]+dx*t,12.1,a[1]+dz*t],[near?1.1:2.2,1.4,1.5],angle);
+    }
   }
-  if(near)for(let i=0;i<22;i++){
-    const x=ex-26+i*2.5;
-    box('stone',[x,12.05,ez+27.2],[1.1,1.1,1.8]);
-    box('stone',[x,12.05,ez-27.3],[1.1,1.1,1.8]);
+  for(const [cx,cz] of [NW,NE,SE,SW]){
+    cylinder('stone',cx,cz,1.7,9,15);cylinder('roof',cx,cz,1.9,15,18,0);
   }
   // Châtelet east of keep: open portal between two piers, tall office block and bell turret.
   const gx=-53.8,gz=16;
@@ -92,7 +104,7 @@ function fortress(k) {
   // Massive central keep. Circular corner turrets remain unroofed at the parapets in today's state.
   const {x,z}=KEEP;
   box('stone',[x,24.5,z],[16.5,49,16.5]);
-  hip('roof',x,z,15.8,15.8,48.7,49.4,5.5);
+  hip('roof',x,z,15.8,15.8,48.7,49.4,5.5,{base:false});
   for(const dx of [-6.7,6.7])for(const dz of [-6.7,6.7]){
     cylinder('stone',x+dx,z+dz,3.3,0,50.8);
     cylinder('stone',x+dx,z+dz,3.55,12,13.1);
@@ -130,7 +142,7 @@ function fortress(k) {
   // South Tour du Bois with an open passage.
   const sq=bounds(plan(110188226));
   box('stone',[sq.x-7,4,sq.z],[7,8,11]);box('stone',[sq.x+7,4,sq.z],[7,8,11]);
-  box('stone',[sq.x,10.9,sq.z],[21,5.8,11]);hip('roof',sq.x,sq.z,21,11,13.8,15.2,2);
+  box('stone',[sq.x,10.9,sq.z],[21,5.8,11]);hip('roof',sq.x,sq.z,21,11,13.8,15.2,2,{base:false});
 }
 
 function chapel(k) {
@@ -227,11 +239,11 @@ function wings(k){
     // continuous ridge; revised roof heights are photo estimates.
     const w=q.w*.97,d=q.d*.98;
     if(id===83817177){
-      for(const part of [1458508973,1458508974,1458508975]){const a=bounds(plan(part));k.hip('roof',a.x,a.z,a.w,a.d,eave,eave+a.w*.52,0);}
+      for(const part of [1458508973,1458508974,1458508975]){const a=bounds(plan(part));k.hip('roof',a.x,a.z,a.w,a.d,eave,eave+a.w*.52,0,{base:false});}
     }else {
       // Photo-estimated slate profiles: a true ridge and >=45 degree sides.
       // Give the full footprint a pitched form, rather than a broad plateau.
-      k.hip('roof',q.x,q.z,w,d,eave,Math.max(top,eave+w*.52),Math.min(w*.5,d*.3));
+      k.hip('roof',q.x,q.z,w,d,eave,Math.max(top,eave+w*.52),Math.min(w*.5,d*.3),{base:false});
     }
     const rows=eave>19?[4.5,10.2,16.2]:eave>12?[3.5,8,12.8]:[3.5,6.5].filter(y=>y<eave-1);
     const step=5.6;

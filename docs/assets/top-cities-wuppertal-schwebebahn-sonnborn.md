@@ -108,3 +108,16 @@ registry checks pass; catalog validation passes (**425 entries / 836 GLB variant
 `conformance.log` and `catalog.log` are the final results. Depth generation/check
 passes, with zero cycles or dropped edges. Owned scratch server PIDs 42729/42730
 were stopped, ports 3310–3313 verified clear, and the scratch tree removed.
+
+## Review fixes (2026-10-21)
+
+The QA-only `supports` index ranges and `contacts` graph are now non-enumerable on `root.userData`. GLTFExporter therefore no longer writes them into the shipped node extras, about 20% of each GLB; they remain readable in memory for authoring checks. Geometry, triangles, draws and bounds are unchanged. `platformLength` and `railDirections` remain as two small extras.
+
+Build: `CODRIVER_ASSET_BATCH=1 node scripts/build-top-cities-landmarks.mjs wuppertal-schwebebahn-sonnborn`. Bytes are as printed, before the maintainer license stamp (about 540 bytes per GLB).
+
+| LOD | Before triangles / draws / bytes | After triangles / draws / bytes / KiB | Node extras |
+| --- | --- | --- | --- |
+| Near | 31,420 / 8 / 1,922,520 | 31,420 / 8 / 1,552,976 / 1516.6 | 369,812 → 268 bytes |
+| Far | 16,872 / 8 / 1,144,052 | 16,872 / 8 / 898,304 / 877.3 | 246,017 → 267 bytes |
+
+Near bytes fell 19.2% and far 21.5%; the GLB JSON chunks shrink from 378,464 to 8,380 bytes near and from 254,644 to 8,356 far. Deterministic QA is otherwise identical, including the existing steel-on-roof layered-face flag at the station canopy (3 m² near, 5 m² far). Cityscape and Full 3D world were **not re-tested**; the exported geometry is identical.

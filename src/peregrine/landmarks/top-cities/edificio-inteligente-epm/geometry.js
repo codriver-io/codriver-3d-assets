@@ -90,22 +90,25 @@ export function create({detail='near'}={}) {
           coreWall(xx,e-3,xx,e,y+1.1,y+tier,i);
         }
         // Glazing is inset 0.7 m, cheeks are closed at the recess edges.
+        // wall() faces left of its run: the d+3 cheek faces +z and the e-3 cheek -z, into the notch.
         const inner=xx-side*0.7;
         if(side<0) {
           wall(inner,e-3,inner,d+3,y+1.1,y+2.2,i,true,true);
           coreWall(inner,e-3,inner,d+3,y+2.2,y+tier,i);
-          coreWall(xx,d+3,inner,d+3,y+1.1,y+tier,i);
-          coreWall(inner,e-3,xx,e-3,y+1.1,y+tier,i);
+          coreWall(inner,d+3,xx,d+3,y+1.1,y+tier,i);
+          coreWall(xx,e-3,inner,e-3,y+1.1,y+tier,i);
         } else {
           wall(inner,d+3,inner,e-3,y+1.1,y+2.2,i,true,true);
           coreWall(inner,d+3,inner,e-3,y+2.2,y+tier,i);
-          coreWall(inner,d+3,xx,d+3,y+1.1,y+tier,i);
-          coreWall(xx,e-3,inner,e-3,y+1.1,y+tier,i);
+          coreWall(xx,d+3,inner,d+3,y+1.1,y+tier,i);
+          coreWall(inner,e-3,xx,e-3,y+1.1,y+tier,i);
         }
       }
     }
     // Open service crown: two cheeks and cap, leaving a dark horizontal notch.
     const crownBase=14*tier, crownTop=front?70:62;
+    // Upward crown floor closes the top tier; the open lattice must not expose the hollow core's wall backs.
+    quad(towerMat,[cx-width/2,crownBase,z-depth/2],[cx+width/2,crownBase,z-depth/2],[cx+width/2,crownBase,z+depth/2],[cx-width/2,crownBase,z+depth/2]);
     // Grounded open crown: buff piers and crossbars frame an actual perforated lattice.
     for(const side of [-1,1]) {
       const xx=cx+side*(width/2-0.6);
@@ -129,6 +132,7 @@ export function create({detail='near'}={}) {
   }
   const root=b.finish();
   root.traverse(o=>{if(o.isMesh){const old=o.geometry; o.geometry=mergeVertices(old,1e-4);old.dispose();}});
-  root.userData.contacts=contacts;
+  // QA-only contact list: non-enumerable, so GLTFExporter keeps it out of the shipped node extras.
+  Object.defineProperty(root.userData,'contacts',{value:contacts});
   return root;
 }

@@ -24,8 +24,8 @@
   "assets": {
     "near": {
       "url": "/models/bridges/burlington-bay-skyway-near.glb",
-      "bytes": 2221692,
-      "triangles": 52244,
+      "bytes": 2216732,
+      "triangles": 52164,
       "drawCalls": 18,
       "bounds": {
         "min": [
@@ -42,8 +42,8 @@
     },
     "far": {
       "url": "/models/bridges/burlington-bay-skyway-far.glb",
-      "bytes": 949704,
-      "triangles": 19248,
+      "bytes": 952680,
+      "triangles": 19296,
       "drawCalls": 5,
       "bounds": {
         "min": [

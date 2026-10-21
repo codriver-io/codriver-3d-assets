@@ -30,12 +30,18 @@ The Royal Chapel now follows relation **9087585**: the long nave runs along pala
 
 Classical garden-front and north/south-wing roof surfaces now use light lead grey, while the Louis XIII court and chapel retain dark slate. Far merges the minor glow panes into glass to keep eight draws. The white shapes behind the garden-front balustrade were provider building extrusions of the **Bassin du Nord/Midi** rims (relations 3459591 / 3459592), not another palace wall: exact outer ways **5013284 / 5013295** and inner ways **257712056 / 237843251** now have low 0.32 m stone rims and inset water at 0.04 m. The palace garden-front outline already included way 452023684, and tile coordinates confirmed that ring's coverage.
 
+## Review fixes (2026-10-21)
+
+The slate dormers were buried. They sat 4.2 m in from the eave, past the 3.9 m hip slope, so the roof there was already 26.1–26.5 m high, while each dormer topped out at 25.35 m. All 28 near and 18 far dormers were inside the roof, and none could be seen. Each dormer now takes its heights from the same hip parameters (eave, ridge, inset) and stands on the lower slope, with its front 0.7 m behind the eave line. Triangular cheeks and a hipped cap end exactly on the slate, the hidden back face is gone, and near adds a small soffit under the cap. Near keeps the gilded frame and recessed pane. Far replaces the old buried trim box with a stone sill and a separate pane under the same cap. The dormer positions, spacing (8 m near / 11 m far) and slopes are unchanged.
+
+Measured on the exported GLBs, all 28 near and 18 far dormers now rise up to 2.83–2.86 m above the slope. The lowest pane vertex is 0.40 m above the slate in near and 0.60 m in far, and exported slate exists under every dormer (none falls over a service-court hole). From the Marble and Royal courts, the dormers now show above the cornice at street level in both LODs. Dormer geometry went from 728 to 532 near triangles and from 396 to 198 far. `qa-metrics.mjs` shows the same layered-face flags as before, with the same areas and positions (near trim on stone; far trim on stone/brick and clock glass/gold on trim): no new issue, unchanged bounds. These exports come from a `CODRIVER_ASSET_BATCH=1` build without license stamping, so the license metadata has not yet been re-applied and the published byte counts will change slightly when it is. Cityscape and Full 3D world were not re-tested after this change.
+
 ## Verification
 
 | Export | Triangles | Draws | Bytes | KiB |
 | --- | ---: | ---: | ---: | ---: |
-| Near | 52,952 | 9 | 2,482,008 | 2423.8 |
-| Far | 10,762 | 8 | 494,004 | 482.4 |
+| Near | 52,756 | 9 | 2,473,440 | 2415.5 |
+| Far | 10,564 | 8 | 484,608 | 473.3 |
 
 All exports fit the building limits. Focused tests for these two landmarks: **24/24 pass**, including roof slopes, moat floor, longitudinal chapel ridge/apse, open courts, far window rhythm, gate/portico support contacts and grade-level basins; no test asserts `SPEC.ready`. Final mechanical metrics have no issue flags, and generated depth ordering has zero dropped material-cycle edges. Logs and full metrics: `tmp/top-cities/chateau-de-vincennes/review-fix/`.
 
