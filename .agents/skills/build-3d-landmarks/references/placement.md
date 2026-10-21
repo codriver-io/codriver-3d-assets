@@ -2,7 +2,7 @@
 
 A local model is independent of its host. Document y=0 and anchors rather than baking a DEM or global vertical datum.
 
-- Cityscape: verify the local flat ground, building base and bridge approach profile.
+- Cityscape: verify the local flat ground, building base and bridge approach profile. The host draws its own ground at y=0, so anything below grade is invisible there: draw sunken features (dry moats, sunken courts) at grade rather than modelling floors and scarps nobody sees. Keep up-facing surfaces at least 0.1–0.15 m above y=0; a face within 5 cm of it z-fights with host ground (`faces on host grade`). Host-fitted road pavement is the exception.
 - Full 3D world: verify a rigid building datum or pad and its edge; bridge abutments and piers need ground-aware contacts while the deck spans the valley. Generic tunnel roads follow a portal-to-portal datum below the hill.
 - The host applies terrain ground and scene-origin compensation once. Exaggerating terrain must not silently scale the asset’s physical height or structural clearance.
 - Missing terrain is unknown, not zero elevation. Late data and mode changes must refit from original vertices and invalidate affected navigation surfaces.
