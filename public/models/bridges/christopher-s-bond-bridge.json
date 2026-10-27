@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/christopher-s-bond-bridge-near.glb",
-      "bytes": 1949248,
+      "bytes": 892348,
       "triangles": 40160,
       "drawCalls": 20,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/bridges/christopher-s-bond-bridge-far.glb",
-      "bytes": 442184,
+      "bytes": 230580,
       "triangles": 11780,
       "drawCalls": 5,
       "bounds": {

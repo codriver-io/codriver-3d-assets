@@ -26,6 +26,7 @@ export async function buildAssetCatalogPreview() {
   await copyFile(resolve(ROOT,'docs/contribution-acceptance.md'),resolve(out,'docs/contribution-acceptance.md'));
   await mkdir(resolve(out,'licenses'),{recursive:true});
   await copyFile(resolve(ROOT,'node_modules/three/LICENSE'),resolve(out,'licenses/three.txt'));
+  await copyFile(resolve(ROOT,'node_modules/meshoptimizer/LICENSE.md'),resolve(out,'licenses/meshoptimizer.txt'));
   await cp(resolve(ROOT,'site'),out,{recursive:true});
   await writeFile(resolve(out,'robots.txt'),'User-agent: *\nAllow: /\n');
   for(const name of (await readdir(out)).filter((n)=>n.endsWith('.html'))){const file=resolve(out,name);await writeFile(file,withAnalytics(await readFile(file,'utf8')));}

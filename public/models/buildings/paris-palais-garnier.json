@@ -32,7 +32,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-palais-garnier-near.glb",
-      "bytes": 661760,
+      "bytes": 175276,
       "triangles": 17736,
       "drawCalls": 6,
       "bounds": {
@@ -50,7 +50,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-palais-garnier-far.glb",
-      "bytes": 211256,
+      "bytes": 66500,
       "triangles": 5924,
       "drawCalls": 6,
       "bounds": {

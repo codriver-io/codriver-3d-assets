@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/concertgebouw-near.glb",
-      "bytes": 458200,
+      "bytes": 117016,
       "triangles": 8213,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/concertgebouw-far.glb",
-      "bytes": 296308,
+      "bytes": 80592,
       "triangles": 4861,
       "drawCalls": 7,
       "bounds": {

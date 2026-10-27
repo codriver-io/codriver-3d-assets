@@ -69,7 +69,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/parthenon-near.glb",
-      "bytes": 881504,
+      "bytes": 241188,
       "triangles": 27068,
       "drawCalls": 1,
       "bounds": {
@@ -87,7 +87,7 @@
     },
     "far": {
       "url": "/models/buildings/parthenon-far.glb",
-      "bytes": 248832,
+      "bytes": 75156,
       "triangles": 6932,
       "drawCalls": 1,
       "bounds": {

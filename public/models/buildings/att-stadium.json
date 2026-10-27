@@ -27,7 +27,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/att-stadium-near.glb",
-      "bytes": 1629304,
+      "bytes": 404012,
       "triangles": 29963,
       "drawCalls": 8,
       "bounds": {
@@ -45,7 +45,7 @@
     },
     "far": {
       "url": "/models/buildings/att-stadium-far.glb",
-      "bytes": 432444,
+      "bytes": 127612,
       "triangles": 7818,
       "drawCalls": 8,
       "bounds": {

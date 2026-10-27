@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/astrup-fearnley-museum-near.glb",
-      "bytes": 1158300,
+      "bytes": 316324,
       "triangles": 15732,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/astrup-fearnley-museum-far.glb",
-      "bytes": 232872,
+      "bytes": 72188,
       "triangles": 3132,
       "drawCalls": 7,
       "bounds": {

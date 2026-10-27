@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/conservatory-of-flowers-near.glb",
-      "bytes": 386672,
+      "bytes": 110056,
       "triangles": 7722,
       "drawCalls": 5,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/conservatory-of-flowers-far.glb",
-      "bytes": 126728,
+      "bytes": 42736,
       "triangles": 2423,
       "drawCalls": 5,
       "bounds": {

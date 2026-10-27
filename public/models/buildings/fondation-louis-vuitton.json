@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fondation-louis-vuitton-near.glb",
-      "bytes": 616408,
+      "bytes": 187828,
       "triangles": 12827,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/fondation-louis-vuitton-far.glb",
-      "bytes": 205772,
+      "bytes": 72932,
       "triangles": 3787,
       "drawCalls": 8,
       "bounds": {

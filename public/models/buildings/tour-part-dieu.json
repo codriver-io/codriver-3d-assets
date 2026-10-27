@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tour-part-dieu-near.glb",
-      "bytes": 1677268,
+      "bytes": 372340,
       "triangles": 30883,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/tour-part-dieu-far.glb",
-      "bytes": 292884,
+      "bytes": 74176,
       "triangles": 5260,
       "drawCalls": 7,
       "bounds": {

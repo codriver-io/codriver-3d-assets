@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/vikingskipet-near.glb",
-      "bytes": 1662680,
+      "bytes": 436736,
       "triangles": 21416,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/vikingskipet-far.glb",
-      "bytes": 388116,
+      "bytes": 115620,
       "triangles": 4980,
       "drawCalls": 6,
       "bounds": {

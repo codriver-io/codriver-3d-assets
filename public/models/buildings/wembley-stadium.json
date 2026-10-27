@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/wembley-stadium-near.glb",
-      "bytes": 964284,
+      "bytes": 285548,
       "triangles": 19492,
       "drawCalls": 9,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/wembley-stadium-far.glb",
-      "bytes": 388784,
+      "bytes": 121308,
       "triangles": 6938,
       "drawCalls": 8,
       "bounds": {

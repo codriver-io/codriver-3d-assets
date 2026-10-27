@@ -32,7 +32,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-musee-orsay-near.glb",
-      "bytes": 746976,
+      "bytes": 187268,
       "triangles": 17116,
       "drawCalls": 8,
       "bounds": {
@@ -50,7 +50,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-musee-orsay-far.glb",
-      "bytes": 283552,
+      "bytes": 78836,
       "triangles": 5609,
       "drawCalls": 7,
       "bounds": {

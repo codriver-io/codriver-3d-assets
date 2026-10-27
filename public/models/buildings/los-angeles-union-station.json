@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/los-angeles-union-station-near.glb",
-      "bytes": 1054544,
+      "bytes": 260996,
       "triangles": 17898,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/los-angeles-union-station-far.glb",
-      "bytes": 497444,
+      "bytes": 131140,
       "triangles": 7962,
       "drawCalls": 8,
       "bounds": {

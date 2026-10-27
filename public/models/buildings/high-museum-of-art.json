@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/high-museum-of-art-near.glb",
-      "bytes": 1874712,
+      "bytes": 440732,
       "triangles": 34474,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/high-museum-of-art-far.glb",
-      "bytes": 323088,
+      "bytes": 92020,
       "triangles": 7375,
       "drawCalls": 7,
       "bounds": {

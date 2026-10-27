@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cathedrale-saint-jean-lyon-near.glb",
-      "bytes": 1227764,
+      "bytes": 309996,
       "triangles": 24038,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/cathedrale-saint-jean-lyon-far.glb",
-      "bytes": 353472,
+      "bytes": 101288,
       "triangles": 8571,
       "drawCalls": 6,
       "bounds": {

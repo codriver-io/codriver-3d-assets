@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/stade-de-france-near.glb",
-      "bytes": 1816992,
+      "bytes": 483788,
       "triangles": 31908,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/stade-de-france-far.glb",
-      "bytes": 470856,
+      "bytes": 148460,
       "triangles": 7716,
       "drawCalls": 8,
       "bounds": {

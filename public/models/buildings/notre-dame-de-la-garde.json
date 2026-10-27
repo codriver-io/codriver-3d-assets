@@ -221,7 +221,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/notre-dame-de-la-garde-near.glb",
-      "bytes": 2066484,
+      "bytes": 554156,
       "triangles": 45445,
       "drawCalls": 7,
       "bounds": {
@@ -239,7 +239,7 @@
     },
     "far": {
       "url": "/models/buildings/notre-dame-de-la-garde-far.glb",
-      "bytes": 459732,
+      "bytes": 132164,
       "triangles": 10631,
       "drawCalls": 7,
       "bounds": {

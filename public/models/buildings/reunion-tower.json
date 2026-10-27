@@ -46,7 +46,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/reunion-tower-near.glb",
-      "bytes": 743256,
+      "bytes": 238296,
       "triangles": 25128,
       "drawCalls": 7,
       "bounds": {
@@ -64,7 +64,7 @@
     },
     "far": {
       "url": "/models/buildings/reunion-tower-far.glb",
-      "bytes": 114604,
+      "bytes": 46744,
       "triangles": 3740,
       "drawCalls": 7,
       "bounds": {

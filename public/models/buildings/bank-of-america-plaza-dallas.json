@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bank-of-america-plaza-dallas-near.glb",
-      "bytes": 1320748,
+      "bytes": 256540,
       "triangles": 25278,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/bank-of-america-plaza-dallas-far.glb",
-      "bytes": 324804,
+      "bytes": 81556,
       "triangles": 6414,
       "drawCalls": 5,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/jpmorgan-chase-tower-houston-near.glb",
-      "bytes": 921360,
+      "bytes": 186896,
       "triangles": 16968,
       "drawCalls": 4,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/jpmorgan-chase-tower-houston-far.glb",
-      "bytes": 244612,
+      "bytes": 57648,
       "triangles": 4436,
       "drawCalls": 4,
       "bounds": {

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/basilica-de-los-angeles-cartago-near.glb",
-      "bytes": 1911776,
+      "bytes": 483764,
       "triangles": 37048,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/basilica-de-los-angeles-cartago-far.glb",
-      "bytes": 492928,
+      "bytes": 140764,
       "triangles": 10044,
       "drawCalls": 8,
       "bounds": {

@@ -195,7 +195,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palace-of-the-parliament-near.glb",
-      "bytes": 1557792,
+      "bytes": 349620,
       "triangles": 31801,
       "drawCalls": 10,
       "bounds": {
@@ -213,7 +213,7 @@
     },
     "far": {
       "url": "/models/buildings/palace-of-the-parliament-far.glb",
-      "bytes": 496064,
+      "bytes": 115588,
       "triangles": 10345,
       "drawCalls": 8,
       "bounds": {

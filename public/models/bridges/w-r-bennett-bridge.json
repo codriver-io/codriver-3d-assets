@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/w-r-bennett-bridge-near.glb",
-      "bytes": 1708484,
+      "bytes": 743296,
       "triangles": 39602,
       "drawCalls": 24,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/w-r-bennett-bridge-far.glb",
-      "bytes": 524584,
+      "bytes": 245456,
       "triangles": 12444,
       "drawCalls": 7,
       "bounds": {

@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-de-quebec-near.glb",
-      "bytes": 598268,
+      "bytes": 348516,
       "triangles": 15648,
       "drawCalls": 27,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-de-quebec-far.glb",
-      "bytes": 175500,
+      "bytes": 106612,
       "triangles": 4126,
       "drawCalls": 9,
       "bounds": {

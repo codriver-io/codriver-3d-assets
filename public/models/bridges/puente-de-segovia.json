@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/puente-de-segovia-near.glb",
-      "bytes": 1814928,
+      "bytes": 845456,
       "triangles": 23172,
       "drawCalls": 22,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/puente-de-segovia-far.glb",
-      "bytes": 484552,
+      "bytes": 247760,
       "triangles": 6240,
       "drawCalls": 9,
       "bounds": {

@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/frederick-douglass-memorial-bridge-near.glb",
-      "bytes": 2381720,
+      "bytes": 1135192,
       "triangles": 54160,
       "drawCalls": 24,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/frederick-douglass-memorial-bridge-far.glb",
-      "bytes": 709116,
+      "bytes": 356316,
       "triangles": 16584,
       "drawCalls": 8,
       "bounds": {

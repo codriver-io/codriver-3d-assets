@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/chase-center-near.glb",
-      "bytes": 372448,
+      "bytes": 109732,
       "triangles": 8996,
       "drawCalls": 10,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/chase-center-far.glb",
-      "bytes": 56780,
+      "bytes": 26764,
       "triangles": 1413,
       "drawCalls": 7,
       "bounds": {

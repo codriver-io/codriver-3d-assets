@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/centre-bell-near.glb",
-      "bytes": 231560,
+      "bytes": 71888,
       "triangles": 2822,
       "drawCalls": 11,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/centre-bell-far.glb",
-      "bytes": 89232,
+      "bytes": 33224,
       "triangles": 1034,
       "drawCalls": 8,
       "bounds": {

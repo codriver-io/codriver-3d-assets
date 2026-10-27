@@ -35,7 +35,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-notre-dame-near.glb",
-      "bytes": 1664908,
+      "bytes": 399188,
       "triangles": 38243,
       "drawCalls": 5,
       "bounds": {
@@ -53,7 +53,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-notre-dame-far.glb",
-      "bytes": 446948,
+      "bytes": 118756,
       "triangles": 8408,
       "drawCalls": 6,
       "bounds": {

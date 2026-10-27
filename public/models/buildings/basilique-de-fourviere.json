@@ -1614,7 +1614,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/basilique-de-fourviere-near.glb",
-      "bytes": 2080432,
+      "bytes": 536636,
       "triangles": 45145,
       "drawCalls": 7,
       "bounds": {
@@ -1632,7 +1632,7 @@
     },
     "far": {
       "url": "/models/buildings/basilique-de-fourviere-far.glb",
-      "bytes": 466716,
+      "bytes": 136384,
       "triangles": 10045,
       "drawCalls": 7,
       "bounds": {

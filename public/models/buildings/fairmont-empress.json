@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fairmont-empress-near.glb",
-      "bytes": 1934164,
+      "bytes": 452660,
       "triangles": 35811,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/fairmont-empress-far.glb",
-      "bytes": 398628,
+      "bytes": 102420,
       "triangles": 7303,
       "drawCalls": 7,
       "bounds": {

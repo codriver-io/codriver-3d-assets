@@ -324,7 +324,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/mercedes-benz-museum-near.glb",
-      "bytes": 639292,
+      "bytes": 157072,
       "triangles": 8444,
       "drawCalls": 6,
       "bounds": {
@@ -342,7 +342,7 @@
     },
     "far": {
       "url": "/models/buildings/mercedes-benz-museum-far.glb",
-      "bytes": 170868,
+      "bytes": 51652,
       "triangles": 2236,
       "drawCalls": 5,
       "bounds": {

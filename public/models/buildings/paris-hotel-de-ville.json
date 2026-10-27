@@ -35,7 +35,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-hotel-de-ville-near.glb",
-      "bytes": 1566816,
+      "bytes": 374480,
       "triangles": 34436,
       "drawCalls": 7,
       "bounds": {
@@ -53,7 +53,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-hotel-de-ville-far.glb",
-      "bytes": 115672,
+      "bytes": 39996,
       "triangles": 2448,
       "drawCalls": 7,
       "bounds": {

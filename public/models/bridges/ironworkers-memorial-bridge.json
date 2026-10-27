@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/ironworkers-memorial-bridge-near.glb",
-      "bytes": 3157404,
+      "bytes": 1409012,
       "triangles": 79678,
       "drawCalls": 21,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/bridges/ironworkers-memorial-bridge-far.glb",
-      "bytes": 1014344,
+      "bytes": 486448,
       "triangles": 26334,
       "drawCalls": 5,
       "bounds": {

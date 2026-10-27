@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edmonton-city-hall-near.glb",
-      "bytes": 925712,
+      "bytes": 217936,
       "triangles": 16894,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/edmonton-city-hall-far.glb",
-      "bytes": 396028,
+      "bytes": 103160,
       "triangles": 7058,
       "drawCalls": 7,
       "bounds": {

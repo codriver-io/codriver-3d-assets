@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/prince-edward-viaduct-near.glb",
-      "bytes": 2042284,
+      "bytes": 1073748,
       "triangles": 48580,
       "drawCalls": 17,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/prince-edward-viaduct-far.glb",
-      "bytes": 581436,
+      "bytes": 317064,
       "triangles": 20228,
       "drawCalls": 7,
       "bounds": {

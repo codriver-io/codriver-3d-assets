@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/flatiron-building-near.glb",
-      "bytes": 1918496,
+      "bytes": 469452,
       "triangles": 32865,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/flatiron-building-far.glb",
-      "bytes": 146496,
+      "bytes": 49772,
       "triangles": 2728,
       "drawCalls": 7,
       "bounds": {

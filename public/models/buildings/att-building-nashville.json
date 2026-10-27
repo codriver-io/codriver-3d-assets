@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/att-building-nashville-near.glb",
-      "bytes": 1178408,
+      "bytes": 277504,
       "triangles": 34690,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/att-building-nashville-far.glb",
-      "bytes": 279892,
+      "bytes": 79748,
       "triangles": 7619,
       "drawCalls": 7,
       "bounds": {

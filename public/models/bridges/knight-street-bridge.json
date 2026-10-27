@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/knight-street-bridge-near.glb",
-      "bytes": 2379440,
+      "bytes": 999748,
       "triangles": 65348,
       "drawCalls": 18,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/bridges/knight-street-bridge-far.glb",
-      "bytes": 879820,
+      "bytes": 396388,
       "triangles": 27644,
       "drawCalls": 4,
       "bounds": {

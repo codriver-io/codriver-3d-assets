@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createOratoire } from '../src/peregrine/landmarks/oratoire-saint-joseph-geometry.js';
 import { ORATOIRE } from '../src/peregrine/landmarks/oratoire-saint-joseph-config.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -9,7 +9,7 @@ globalThis.FileReader ??= class { readAsArrayBuffer(blob) { blob.arrayBuffer().t
 const out = new URL('../public/models/buildings/', import.meta.url), assets = {};
 await mkdir(out, { recursive: true });
 for (const detail of ['near', 'far']) {
-  const model = createOratoire({ detail }), data = Buffer.from(await new GLTFExporter().parseAsync(model, { binary: true }));
+  const model = createOratoire({ detail }), data = Buffer.from(await exportLandmarkGLB(model, { binary: true }));
   const name = `${ORATOIRE.id}-${detail}.glb`; await writeFile(new URL(name, out), data);
   assets[detail] = { url: `/models/buildings/${name}`, ...glbMetrics(data) }; disposeChamplain(model);
 }

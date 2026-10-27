@@ -74,7 +74,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/mnbaq-pavillon-lassonde-near.glb",
-      "bytes": 161996,
+      "bytes": 54004,
       "triangles": 1952,
       "drawCalls": 9,
       "bounds": {
@@ -92,7 +92,7 @@
     },
     "far": {
       "url": "/models/buildings/mnbaq-pavillon-lassonde-far.glb",
-      "bytes": 63148,
+      "bytes": 26544,
       "triangles": 710,
       "drawCalls": 7,
       "bounds": {

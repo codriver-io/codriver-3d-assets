@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/tower-bridge-near.glb",
-      "bytes": 2098240,
+      "bytes": 982352,
       "triangles": 33950,
       "drawCalls": 9,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/tower-bridge-far.glb",
-      "bytes": 691828,
+      "bytes": 351564,
       "triangles": 11422,
       "drawCalls": 8,
       "bounds": {

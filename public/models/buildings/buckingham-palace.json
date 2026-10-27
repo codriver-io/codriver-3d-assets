@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/buckingham-palace-near.glb",
-      "bytes": 823700,
+      "bytes": 203180,
       "triangles": 16200,
       "drawCalls": 8,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/buckingham-palace-far.glb",
-      "bytes": 311732,
+      "bytes": 91292,
       "triangles": 6072,
       "drawCalls": 8,
       "bounds": {

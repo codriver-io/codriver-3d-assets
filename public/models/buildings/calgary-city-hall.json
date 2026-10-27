@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/calgary-city-hall-near.glb",
-      "bytes": 684564,
+      "bytes": 164236,
       "triangles": 11985,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/calgary-city-hall-far.glb",
-      "bytes": 81368,
+      "bytes": 30600,
       "triangles": 1186,
       "drawCalls": 6,
       "bounds": {

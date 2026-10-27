@@ -23,13 +23,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/farine-five-roses-near.glb",
-      "bytes": 927152,
+      "bytes": 229684,
       "triangles": 17984,
       "drawCalls": 8
     },
     "far": {
       "url": "/models/buildings/farine-five-roses-far.glb",
-      "bytes": 375796,
+      "bytes": 103640,
       "triangles": 6716,
       "drawCalls": 8
     }

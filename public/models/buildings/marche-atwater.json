@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/marche-atwater-near.glb",
-      "bytes": 817596,
+      "bytes": 214232,
       "triangles": 13864,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/marche-atwater-far.glb",
-      "bytes": 315284,
+      "bytes": 90328,
       "triangles": 4990,
       "drawCalls": 8,
       "bounds": {

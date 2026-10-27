@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-saint-michel-near.glb",
-      "bytes": 1554540,
+      "bytes": 711448,
       "triangles": 38012,
       "drawCalls": 16,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-saint-michel-far.glb",
-      "bytes": 597696,
+      "bytes": 302424,
       "triangles": 15888,
       "drawCalls": 8,
       "bounds": {

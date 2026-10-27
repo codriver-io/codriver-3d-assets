@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/teatro-nacional-de-costa-rica-near.glb",
-      "bytes": 1262872,
+      "bytes": 341008,
       "triangles": 31624,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/teatro-nacional-de-costa-rica-far.glb",
-      "bytes": 304160,
+      "bytes": 94296,
       "triangles": 7620,
       "drawCalls": 8,
       "bounds": {

@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { Box3 } from 'three';
 import { createTourDeLHorloge } from '../src/peregrine/landmarks/tour-de-l-horloge-geometry.js';
 import { TOUR_DE_L_HORLOGE as spec } from '../src/peregrine/landmarks/tour-de-l-horloge-config.js';
@@ -11,7 +11,7 @@ const out=new URL('../public/models/buildings/',import.meta.url),assets={};
 await mkdir(out,{recursive:true});
 for(const detail of ['near','far']){
   const model=createTourDeLHorloge({detail}),bounds=new Box3().setFromObject(model,true);
-  const data=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true}));
+  const data=Buffer.from(await exportLandmarkGLB(model,{binary:true}));
   const name=`${spec.id}-${detail}.glb`;await writeFile(new URL(name,out),data);
   assets[detail]={url:`/models/buildings/${name}`,...glbMetrics(data),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};
   disposeChamplain(model);

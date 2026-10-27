@@ -35,7 +35,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-invalides-near.glb",
-      "bytes": 514544,
+      "bytes": 128472,
       "triangles": 10673,
       "drawCalls": 5,
       "bounds": {
@@ -53,7 +53,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-invalides-far.glb",
-      "bytes": 117828,
+      "bytes": 39604,
       "triangles": 2523,
       "drawCalls": 5,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bank-of-america-corporate-center-near.glb",
-      "bytes": 1444860,
+      "bytes": 322204,
       "triangles": 31504,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/bank-of-america-corporate-center-far.glb",
-      "bytes": 413188,
+      "bytes": 108980,
       "triangles": 8764,
       "drawCalls": 6,
       "bounds": {

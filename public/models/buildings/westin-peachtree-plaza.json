@@ -28,7 +28,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/westin-peachtree-plaza-near.glb",
-      "bytes": 1623120,
+      "bytes": 317924,
       "triangles": 29872,
       "drawCalls": 7,
       "bounds": {
@@ -46,7 +46,7 @@
     },
     "far": {
       "url": "/models/buildings/westin-peachtree-plaza-far.glb",
-      "bytes": 381684,
+      "bytes": 88928,
       "triangles": 6908,
       "drawCalls": 7,
       "bounds": {

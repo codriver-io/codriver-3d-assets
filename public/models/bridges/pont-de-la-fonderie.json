@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-de-la-fonderie-near.glb",
-      "bytes": 1187496,
+      "bytes": 496720,
       "triangles": 23176,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-de-la-fonderie-far.glb",
-      "bytes": 102492,
+      "bytes": 66636,
       "triangles": 2228,
       "drawCalls": 7,
       "bounds": {

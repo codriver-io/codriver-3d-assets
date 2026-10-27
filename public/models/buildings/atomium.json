@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/atomium-near.glb",
-      "bytes": 588928,
+      "bytes": 158312,
       "triangles": 16464,
       "drawCalls": 6,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/atomium-far.glb",
-      "bytes": 296596,
+      "bytes": 87080,
       "triangles": 7776,
       "drawCalls": 6,
       "bounds": {

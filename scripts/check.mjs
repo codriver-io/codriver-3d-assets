@@ -24,12 +24,16 @@ for(const entry of catalog.assets){
   for(const variant of Object.values(manifest.assets)){
     const buffer=await readFile(resolve(out,'.'+variant.url)),source=await readFile(resolve(ROOT,'public'+variant.url));
     assert.deepEqual(buffer,source);assert.deepEqual(glbMetrics(buffer),{bytes:variant.bytes,triangles:variant.triangles,drawCalls:variant.drawCalls});
-    const json=JSON.parse(buffer.subarray(20,20+buffer.readUInt32LE(12)));assert.equal(json.asset.extras.license,'CC-BY-4.0');assert.ok(json.asset.copyright.startsWith(entry.copyright));assert.equal(json.asset.extras.attribution,entry.attribution);assert.equal(json.asset.extras.geographicDataLicense,entry.geographicDataLicense);assert.equal(json.asset.extras.geographicDataUrl,entry.geographicDataUrl);variants++;
+    const json=JSON.parse(buffer.subarray(20,20+buffer.readUInt32LE(12)));
+    assert.equal(json.asset.extras.landmarkCodec,'codriver-meshopt-v2');
+    assert.ok(json.extensionsRequired.includes('EXT_meshopt_compression'));assert.ok(json.extensionsRequired.includes('KHR_mesh_quantization'));
+    for(const mesh of json.meshes)for(const primitive of mesh.primitives){const p=json.accessors[primitive.attributes.POSITION],n=json.accessors[primitive.attributes.NORMAL];assert.equal(p.componentType,5122);assert.equal(p.normalized,true);assert.equal(n.componentType,5120);assert.equal(n.normalized,true);}
+    assert.equal(json.asset.extras.license,'CC-BY-4.0');assert.ok(json.asset.copyright.startsWith(entry.copyright));assert.equal(json.asset.extras.attribution,entry.attribution);assert.equal(json.asset.extras.geographicDataLicense,entry.geographicDataLicense);assert.equal(json.asset.extras.geographicDataUrl,entry.geographicDataUrl);variants++;
   }
 }
 assert.ok(variants>=catalog.assets.length);
 assert.match(await readFile(join(out,'LICENSE-MODELS.txt'),'utf8'),/Creative Commons Attribution 4.0/);
-for(const name of ['LICENSE','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md','docs/contribution-acceptance.md','licenses/three.txt','licenses.html','404.html','_headers'])await access(join(out,name));
+for(const name of ['LICENSE','LICENSES.md','THIRD_PARTY_NOTICES.md','CONTRIBUTOR-LICENSE.md','docs/contribution-acceptance.md','licenses/three.txt','licenses/meshoptimizer.txt','licenses.html','404.html','_headers'])await access(join(out,name));
 const headers=await readFile(join(out,'_headers'),'utf8');assert.match(headers,/Access-Control-Allow-Origin: \*/);
 async function inspect(dir){for(const item of await readdir(dir,{withFileTypes:true})){
   const file=join(dir,item.name);assert.ok(!item.isSymbolicLink(),file);

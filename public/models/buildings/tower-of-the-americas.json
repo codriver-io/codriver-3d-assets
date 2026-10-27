@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tower-of-the-americas-near.glb",
-      "bytes": 382216,
+      "bytes": 102036,
       "triangles": 8240,
       "drawCalls": 7,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/buildings/tower-of-the-americas-far.glb",
-      "bytes": 213392,
+      "bytes": 62648,
       "triangles": 4440,
       "drawCalls": 7,
       "bounds": {

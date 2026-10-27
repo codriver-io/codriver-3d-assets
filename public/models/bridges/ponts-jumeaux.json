@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/ponts-jumeaux-near.glb",
-      "bytes": 330892,
+      "bytes": 199796,
       "triangles": 5121,
       "drawCalls": 10,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/ponts-jumeaux-far.glb",
-      "bytes": 205772,
+      "bytes": 129432,
       "triangles": 3744,
       "drawCalls": 9,
       "bounds": {

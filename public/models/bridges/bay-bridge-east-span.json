@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/bay-bridge-east-span-near.glb",
-      "bytes": 2793904,
+      "bytes": 1304604,
       "triangles": 73304,
       "drawCalls": 33,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/bay-bridge-east-span-far.glb",
-      "bytes": 836748,
+      "bytes": 428692,
       "triangles": 22692,
       "drawCalls": 7,
       "bounds": {

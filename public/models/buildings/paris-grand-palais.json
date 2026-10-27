@@ -32,7 +32,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-grand-palais-near.glb",
-      "bytes": 1281628,
+      "bytes": 389560,
       "triangles": 33942,
       "drawCalls": 6,
       "bounds": {
@@ -50,7 +50,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-grand-palais-far.glb",
-      "bytes": 425976,
+      "bytes": 131424,
       "triangles": 10730,
       "drawCalls": 6,
       "bounds": {

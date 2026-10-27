@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/ponte-25-de-abril-near.glb",
-      "bytes": 3053740,
+      "bytes": 1326704,
       "triangles": 72704,
       "drawCalls": 22,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/bridges/ponte-25-de-abril-far.glb",
-      "bytes": 1125560,
+      "bytes": 523912,
       "triangles": 28620,
       "drawCalls": 4,
       "bounds": {

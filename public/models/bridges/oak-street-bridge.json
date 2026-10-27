@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/oak-street-bridge-near.glb",
-      "bytes": 2480184,
+      "bytes": 1071668,
       "triangles": 59700,
       "drawCalls": 24,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/bridges/oak-street-bridge-far.glb",
-      "bytes": 1023144,
+      "bytes": 458460,
       "triangles": 24792,
       "drawCalls": 5,
       "bounds": {

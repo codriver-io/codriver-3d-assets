@@ -1,6 +1,7 @@
 import test from 'node:test';
 import { readFile } from 'node:fs/promises';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { createLandmarkGLTFLoader } from './landmark-loader.js';
+import { meshLocalPosition } from './quantized-bounds.js';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import { createParisPalace } from './paris-palaces-geometry.js';
@@ -113,7 +114,7 @@ test('Hotel de Ville campanile remains open at both arcade levels in both LODs',
 
 async function sourceAndExport(id,create,detail){
   const bytes=await readFile(new URL(`../../../public/models/buildings/${id}-${detail}.glb`,import.meta.url));
-  const glb=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
+  const glb=await createLandmarkGLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
   // GLTFLoader adds a scene wrapper; use the authored root so local rays also
   // inherit the Hotel de Ville's quarter-turn, just as they do in source mode.
   assert.equal(glb.scene.children.length,1);
@@ -162,7 +163,7 @@ test('Hotel source/GLB central roof ornaments stay within the supporting ridge i
   for(const detail of ['near','far'])for(const model of await sourceAndExport('paris-hotel-de-ville',createParisHistoric,detail)){
     for(const material of ['roof','stone']){
       const xs=[];
-      model.traverse(o=>{if(o.material?.name!==material)return;const p=o.geometry.attributes.position;
+      model.traverse(o=>{if(o.material?.name!==material)return;const p=meshLocalPosition(o);
         const f=PARIS_BUILDING_FRAMES['paris-hotel-de-ville'];
         for(let i=0;i<p.count;i++){const x=p.getX(i)/f.scaleXZ[0]+f.authoringCenter[0],z=p.getZ(i)/f.scaleXZ[1]+f.authoringCenter[1];if(p.getY(i)>34.05&&p.getY(i)<37.5&&Math.abs(z+38)<.8&&Math.abs(x)<24)xs.push(x);}
       });

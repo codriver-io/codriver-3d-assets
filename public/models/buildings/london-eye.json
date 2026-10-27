@@ -100,7 +100,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/london-eye-near.glb",
-      "bytes": 999304,
+      "bytes": 302960,
       "triangles": 32728,
       "drawCalls": 6,
       "bounds": {
@@ -118,7 +118,7 @@
     },
     "far": {
       "url": "/models/buildings/london-eye-far.glb",
-      "bytes": 421476,
+      "bytes": 136800,
       "triangles": 11824,
       "drawCalls": 6,
       "bounds": {

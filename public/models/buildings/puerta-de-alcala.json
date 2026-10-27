@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/puerta-de-alcala-near.glb",
-      "bytes": 363272,
+      "bytes": 97380,
       "triangles": 6930,
       "drawCalls": 3,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/puerta-de-alcala-far.glb",
-      "bytes": 127396,
+      "bytes": 38244,
       "triangles": 2430,
       "drawCalls": 2,
       "bounds": {

@@ -12,7 +12,7 @@
   "scripts": {
     "build": "node scripts/build-asset-catalog.mjs",
     "dev": "node scripts/serve.mjs",
-    "check": "node scripts/check.mjs && pnpm check:contributions && node --test scripts/license-models.test.mjs && pnpm test:geometry",
+    "check": "node scripts/check.mjs && pnpm check:contributions && node --test scripts/license-models.test.mjs && pnpm test:geometry && pnpm test:compression",
     "models:build": "node scripts/build-all.mjs",
     "models:license": "node scripts/license-models.mjs",
     "deploy": "pnpm build && wrangler pages deploy dist --project-name codriver-3d-assets --branch main",
@@ -40,7 +40,10 @@
     "thumbnails:build": "node scripts/capture-thumbnails.mjs",
     "check:contributions": "node scripts/check-contributions.mjs",
     "build:paris-historic": "node scripts/build-paris-historic.mjs",
-    "test:geometry": "node --test src/peregrine/landmarks/paris-fidelity.test.js"
+    "test:geometry": "node --test src/peregrine/landmarks/paris-fidelity.test.js",
+    "models:compress": "node scripts/compress-landmarks.mjs --all",
+    "test:compression": "node --test scripts/landmark-codec.test.mjs",
+    "scenes:compress": "node scripts/compress-scene-models.mjs"
   },
   "dependencies": {
     "polygon-clipping": "^0.15.7",
@@ -49,6 +52,7 @@
   "devDependencies": {
     "esbuild": "0.28.2",
     "playwright": "1.62.1",
-    "wrangler": "4.131.1"
+    "wrangler": "4.131.1",
+    "meshoptimizer": "0.22.0"
   }
 }

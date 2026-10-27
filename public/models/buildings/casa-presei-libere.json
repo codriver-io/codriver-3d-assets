@@ -1087,7 +1087,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/casa-presei-libere-near.glb",
-      "bytes": 1204788,
+      "bytes": 250692,
       "triangles": 22419,
       "drawCalls": 5,
       "bounds": {
@@ -1105,7 +1105,7 @@
     },
     "far": {
       "url": "/models/buildings/casa-presei-libere-far.glb",
-      "bytes": 437608,
+      "bytes": 109048,
       "triangles": 8118,
       "drawCalls": 5,
       "bounds": {

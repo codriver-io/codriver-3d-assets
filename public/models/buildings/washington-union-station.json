@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/washington-union-station-near.glb",
-      "bytes": 331276,
+      "bytes": 100832,
       "triangles": 7501,
       "drawCalls": 7,
       "bounds": {
@@ -44,7 +44,7 @@
     },
     "far": {
       "url": "/models/buildings/washington-union-station-far.glb",
-      "bytes": 157516,
+      "bytes": 53940,
       "triangles": 2783,
       "drawCalls": 7,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/biodome-de-montreal-near.glb",
-      "bytes": 720448,
+      "bytes": 242296,
       "triangles": 28730,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/biodome-de-montreal-far.glb",
-      "bytes": 218688,
+      "bytes": 81712,
       "triangles": 7942,
       "drawCalls": 5,
       "bounds": {

@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/arcul-de-triumf-near.glb",
-      "bytes": 1080428,
+      "bytes": 292400,
       "triangles": 27124,
       "drawCalls": 10,
       "bounds": {
@@ -44,7 +44,7 @@
     },
     "far": {
       "url": "/models/buildings/arcul-de-triumf-far.glb",
-      "bytes": 140568,
+      "bytes": 51456,
       "triangles": 3264,
       "drawCalls": 8,
       "bounds": {

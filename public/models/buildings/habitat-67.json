@@ -28,7 +28,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/habitat-67-near.glb",
-      "bytes": 1011700,
+      "bytes": 250288,
       "triangles": 18530,
       "drawCalls": 6,
       "bounds": {
@@ -46,7 +46,7 @@
     },
     "far": {
       "url": "/models/buildings/habitat-67-far.glb",
-      "bytes": 437604,
+      "bytes": 114440,
       "triangles": 8014,
       "drawCalls": 4,
       "bounds": {

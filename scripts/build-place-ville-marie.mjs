@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { Box3 } from 'three';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createPlaceVilleMarie } from '../src/peregrine/landmarks/place-ville-marie-geometry.js';
 import { PLACE_VILLE_MARIE as PVM } from '../src/peregrine/landmarks/place-ville-marie-config.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -11,7 +11,7 @@ const out=new URL('../public/models/buildings/',import.meta.url),assets={};
 await mkdir(out,{recursive:true});
 for(const detail of ['near','far']){
   const model=createPlaceVilleMarie({detail}),bounds=new Box3().setFromObject(model);
-  const data=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true}));
+  const data=Buffer.from(await exportLandmarkGLB(model,{binary:true}));
   const name=`${PVM.id}-${detail}.glb`;await writeFile(new URL(name,out),data);
   assets[detail]={url:`/models/buildings/${name}`,...glbMetrics(data),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};
   disposeChamplain(model);

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/kilden-performing-arts-centre-near.glb",
-      "bytes": 578564,
+      "bytes": 164628,
       "triangles": 15599,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/kilden-performing-arts-centre-far.glb",
-      "bytes": 138820,
+      "bytes": 47264,
       "triangles": 4227,
       "drawCalls": 4,
       "bounds": {

@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/the-gherkin-near.glb",
-      "bytes": 2143624,
+      "bytes": 559876,
       "triangles": 26260,
       "drawCalls": 5,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/the-gherkin-far.glb",
-      "bytes": 476632,
+      "bytes": 135972,
       "triangles": 7656,
       "drawCalls": 5,
       "bounds": {

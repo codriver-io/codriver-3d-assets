@@ -27,7 +27,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/legion-of-honor-near.glb",
-      "bytes": 593632,
+      "bytes": 154752,
       "triangles": 9432,
       "drawCalls": 7,
       "bounds": {
@@ -45,7 +45,7 @@
     },
     "far": {
       "url": "/models/buildings/legion-of-honor-far.glb",
-      "bytes": 99548,
+      "bytes": 35940,
       "triangles": 2120,
       "drawCalls": 5,
       "bounds": {

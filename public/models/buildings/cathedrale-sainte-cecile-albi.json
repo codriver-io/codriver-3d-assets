@@ -631,7 +631,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cathedrale-sainte-cecile-albi-near.glb",
-      "bytes": 1230356,
+      "bytes": 311900,
       "triangles": 28764,
       "drawCalls": 7,
       "bounds": {
@@ -649,7 +649,7 @@
     },
     "far": {
       "url": "/models/buildings/cathedrale-sainte-cecile-albi-far.glb",
-      "bytes": 353216,
+      "bytes": 99720,
       "triangles": 7530,
       "drawCalls": 7,
       "bounds": {

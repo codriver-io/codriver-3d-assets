@@ -1015,7 +1015,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/akershus-fortress-near.glb",
-      "bytes": 865068,
+      "bytes": 207956,
       "triangles": 16697,
       "drawCalls": 9,
       "bounds": {
@@ -1033,7 +1033,7 @@
     },
     "far": {
       "url": "/models/buildings/akershus-fortress-far.glb",
-      "bytes": 180368,
+      "bytes": 57336,
       "triangles": 3502,
       "drawCalls": 8,
       "bounds": {

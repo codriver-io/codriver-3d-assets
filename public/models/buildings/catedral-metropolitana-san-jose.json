@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/catedral-metropolitana-san-jose-near.glb",
-      "bytes": 1514360,
+      "bytes": 384604,
       "triangles": 32571,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/catedral-metropolitana-san-jose-far.glb",
-      "bytes": 290864,
+      "bytes": 90108,
       "triangles": 6379,
       "drawCalls": 8,
       "bounds": {

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/tromso-bridge-near.glb",
-      "bytes": 3985460,
+      "bytes": 1730984,
       "triangles": 63856,
       "drawCalls": 24,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/tromso-bridge-far.glb",
-      "bytes": 819492,
+      "bytes": 386120,
       "triangles": 13144,
       "drawCalls": 3,
       "bounds": {

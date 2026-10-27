@@ -1,0 +1,383 @@
+{
+  "viewport": {
+    "width": 1254,
+    "height": 784,
+    "dpr": 1.53
+  },
+  "scope": "Standalone decoded-model parity only; Cityscape and Full 3D world app integration not tested",
+  "pairs": [
+    {
+      "id": "samuel-de-champlain",
+      "detail": "near",
+      "view": "overview",
+      "theme": "day",
+      "name": "samuel-de-champlain-near-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.0504026981645533,
+        "changedPixels": 10675,
+        "largeDifferencePixels": 987
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "samuel-de-champlain",
+      "detail": "near",
+      "view": "piers",
+      "theme": "night",
+      "name": "samuel-de-champlain-near-piers-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.20681344450234498,
+        "changedPixels": 204905,
+        "largeDifferencePixels": 2102
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "samuel-de-champlain",
+      "detail": "far",
+      "view": "overview",
+      "theme": "day",
+      "name": "samuel-de-champlain-far-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.039805164726999014,
+        "changedPixels": 6934,
+        "largeDifferencePixels": 932
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "samuel-de-champlain",
+      "detail": "far",
+      "view": "piers",
+      "theme": "night",
+      "name": "samuel-de-champlain-far-piers-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.1414456314052458,
+        "changedPixels": 97774,
+        "largeDifferencePixels": 1575
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "pont-jacques-cartier",
+      "detail": "near",
+      "view": "overview",
+      "theme": "day",
+      "name": "pont-jacques-cartier-near-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.010840426147877946,
+        "changedPixels": 5750,
+        "largeDifferencePixels": 26
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "pont-jacques-cartier",
+      "detail": "near",
+      "view": "piers",
+      "theme": "night",
+      "name": "pont-jacques-cartier-near-piers-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.14501389612645474,
+        "changedPixels": 127032,
+        "largeDifferencePixels": 203
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "pont-jacques-cartier",
+      "detail": "far",
+      "view": "overview",
+      "theme": "day",
+      "name": "pont-jacques-cartier-far-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.006901019049273348,
+        "changedPixels": 4361,
+        "largeDifferencePixels": 15
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "pont-jacques-cartier",
+      "detail": "far",
+      "view": "piers",
+      "theme": "night",
+      "name": "pont-jacques-cartier-far-piers-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.08166102136529442,
+        "changedPixels": 87243,
+        "largeDifferencePixels": 35
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "golden-gate-bridge",
+      "detail": "near",
+      "view": "overview",
+      "theme": "day",
+      "name": "golden-gate-bridge-near-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.07290834346592553,
+        "changedPixels": 32986,
+        "largeDifferencePixels": 1193
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "golden-gate-bridge",
+      "detail": "near",
+      "view": "underside",
+      "theme": "night",
+      "name": "golden-gate-bridge-near-underside-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.2705377511435354,
+        "changedPixels": 214225,
+        "largeDifferencePixels": 1129
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "golden-gate-bridge",
+      "detail": "far",
+      "view": "overview",
+      "theme": "day",
+      "name": "golden-gate-bridge-far-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.04143998610387355,
+        "changedPixels": 24864,
+        "largeDifferencePixels": 700
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "golden-gate-bridge",
+      "detail": "far",
+      "view": "underside",
+      "theme": "night",
+      "name": "golden-gate-bridge-far-underside-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.15317569914886225,
+        "changedPixels": 123258,
+        "largeDifferencePixels": 1045
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "cn-tower",
+      "detail": "near",
+      "view": "overview",
+      "theme": "day",
+      "name": "cn-tower-near-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.007195298477216143,
+        "changedPixels": 17915,
+        "largeDifferencePixels": 19
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "cn-tower",
+      "detail": "near",
+      "view": "roof",
+      "theme": "night",
+      "name": "cn-tower-near-roof-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.0353075965491286,
+        "changedPixels": 92343,
+        "largeDifferencePixels": 27
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "cn-tower",
+      "detail": "far",
+      "view": "overview",
+      "theme": "day",
+      "name": "cn-tower-far-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.009411441144114411,
+        "changedPixels": 21750,
+        "largeDifferencePixels": 9
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "cn-tower",
+      "detail": "far",
+      "view": "roof",
+      "theme": "night",
+      "name": "cn-tower-far-roof-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.030080915986335475,
+        "changedPixels": 93457,
+        "largeDifferencePixels": 25
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "tower-bridge",
+      "detail": "near",
+      "view": "overview",
+      "theme": "day",
+      "name": "tower-bridge-near-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.021980487522436455,
+        "changedPixels": 20512,
+        "largeDifferencePixels": 13
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "tower-bridge",
+      "detail": "near",
+      "view": "underside",
+      "theme": "night",
+      "name": "tower-bridge-near-underside-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.061373545249261766,
+        "changedPixels": 51146,
+        "largeDifferencePixels": 7
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "tower-bridge",
+      "detail": "far",
+      "view": "overview",
+      "theme": "day",
+      "name": "tower-bridge-far-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.016168287881419722,
+        "changedPixels": 16512,
+        "largeDifferencePixels": 6
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "tower-bridge",
+      "detail": "far",
+      "view": "underside",
+      "theme": "night",
+      "name": "tower-bridge-far-underside-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.04202072838862834,
+        "changedPixels": 37876,
+        "largeDifferencePixels": 6
+      },
+      "artifactDirectory": "tmp/meshopt-visual"
+    },
+    {
+      "id": "cambie-bridge",
+      "detail": "near",
+      "view": "overview",
+      "theme": "day",
+      "name": "cambie-bridge-near-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.0307157952637369,
+        "changedPixels": 19699,
+        "largeDifferencePixels": 49
+      },
+      "artifactDirectory": "tmp/meshopt-visual-cambie"
+    },
+    {
+      "id": "cambie-bridge",
+      "detail": "near",
+      "view": "facade",
+      "theme": "night",
+      "name": "cambie-bridge-near-facade-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.04267616235307741,
+        "changedPixels": 41499,
+        "largeDifferencePixels": 7
+      },
+      "artifactDirectory": "tmp/meshopt-visual-cambie"
+    },
+    {
+      "id": "cambie-bridge",
+      "detail": "far",
+      "view": "overview",
+      "theme": "day",
+      "name": "cambie-bridge-far-overview-day",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.019953534827166927,
+        "changedPixels": 16954,
+        "largeDifferencePixels": 41
+      },
+      "artifactDirectory": "tmp/meshopt-visual-cambie"
+    },
+    {
+      "id": "cambie-bridge",
+      "detail": "far",
+      "view": "facade",
+      "theme": "night",
+      "name": "cambie-bridge-far-facade-night",
+      "imageDifference": {
+        "width": 1919,
+        "height": 1200,
+        "meanAbsoluteChannelDifference": 0.03030889931098373,
+        "changedPixels": 36931,
+        "largeDifferencePixels": 2
+      },
+      "artifactDirectory": "tmp/meshopt-visual-cambie"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "sceneArtifacts": "tmp/meshopt-scene-visual",
+  "sceneCaptures": 16,
+  "sceneScope": "Standalone preset render parity; app modes not tested",
+  "excluded": [
+    "Cambie piers: unsupported preset fell back to overview in preliminary capture",
+    "Cambie underside: existing camera preset inside girder, replaced with unobstructed facade/support captures"
+  ],
+  "pairedFilesVerified": true,
+  "acceptedModelPairs": 24,
+  "acceptedScenePairs": 8,
+  "verifiedPngFiles": 64
+}

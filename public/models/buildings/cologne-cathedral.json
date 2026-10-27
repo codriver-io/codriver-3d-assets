@@ -2529,7 +2529,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cologne-cathedral-near.glb",
-      "bytes": 2425576,
+      "bytes": 573552,
       "triangles": 46575,
       "drawCalls": 4,
       "bounds": {
@@ -2547,7 +2547,7 @@
     },
     "far": {
       "url": "/models/buildings/cologne-cathedral-far.glb",
-      "bytes": 474592,
+      "bytes": 141016,
       "triangles": 10659,
       "drawCalls": 4,
       "bounds": {

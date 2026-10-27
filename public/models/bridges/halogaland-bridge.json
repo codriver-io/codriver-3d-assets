@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/halogaland-bridge-near.glb",
-      "bytes": 3206268,
+      "bytes": 1115160,
       "triangles": 64760,
       "drawCalls": 16,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/halogaland-bridge-far.glb",
-      "bytes": 556628,
+      "bytes": 230136,
       "triangles": 14720,
       "drawCalls": 5,
       "bounds": {

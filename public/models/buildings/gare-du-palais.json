@@ -183,7 +183,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/gare-du-palais-near.glb",
-      "bytes": 271440,
+      "bytes": 81400,
       "triangles": 5673,
       "drawCalls": 8,
       "bounds": {
@@ -201,7 +201,7 @@
     },
     "far": {
       "url": "/models/buildings/gare-du-palais-far.glb",
-      "bytes": 69908,
+      "bytes": 30824,
       "triangles": 1209,
       "drawCalls": 8,
       "bounds": {

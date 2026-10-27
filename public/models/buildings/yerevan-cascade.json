@@ -328,7 +328,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/yerevan-cascade-near.glb",
-      "bytes": 941984,
+      "bytes": 497504,
       "triangles": 21609,
       "drawCalls": 7,
       "bounds": {
@@ -346,7 +346,7 @@
     },
     "far": {
       "url": "/models/buildings/yerevan-cascade-far.glb",
-      "bytes": 456812,
+      "bytes": 261892,
       "triangles": 8531,
       "drawCalls": 7,
       "bounds": {

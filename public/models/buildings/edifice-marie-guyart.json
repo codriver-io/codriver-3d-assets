@@ -365,7 +365,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edifice-marie-guyart-near.glb",
-      "bytes": 962464,
+      "bytes": 242132,
       "triangles": 18018,
       "drawCalls": 5,
       "bounds": {
@@ -383,7 +383,7 @@
     },
     "far": {
       "url": "/models/buildings/edifice-marie-guyart-far.glb",
-      "bytes": 297368,
+      "bytes": 77232,
       "triangles": 5614,
       "drawCalls": 5,
       "bounds": {

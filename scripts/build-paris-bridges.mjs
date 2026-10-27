@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { PARIS_BRIDGES, createParisBridge, metricFrame } from '../src/peregrine/landmarks/paris-bridges-geometry.js';
 import { glbMetrics } from './asset-catalog.mjs';
 import { buildAssetCatalogPreview } from './build-asset-catalog.mjs';
@@ -12,7 +12,7 @@ for (const spec of PARIS_BRIDGES) {
   const assets = {};
   for (const detail of ['near', 'far']) {
     const model = createParisBridge(spec, { detail });
-    const bytes = Buffer.from(await new GLTFExporter().parseAsync(model, { binary: true }));
+    const bytes = Buffer.from(await exportLandmarkGLB(model, { binary: true }));
     const name = `${spec.id}-${detail}.glb`;
     await writeFile(new URL(name, out), bytes);
     assets[detail] = { url: `/models/bridges/${name}`, ...glbMetrics(bytes) };

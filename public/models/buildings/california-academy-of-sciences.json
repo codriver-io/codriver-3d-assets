@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/california-academy-of-sciences-near.glb",
-      "bytes": 499576,
+      "bytes": 149428,
       "triangles": 15260,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/california-academy-of-sciences-far.glb",
-      "bytes": 81840,
+      "bytes": 35872,
       "triangles": 2744,
       "drawCalls": 7,
       "bounds": {

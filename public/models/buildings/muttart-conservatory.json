@@ -155,7 +155,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/muttart-conservatory-near.glb",
-      "bytes": 889580,
+      "bytes": 223248,
       "triangles": 23417,
       "drawCalls": 6,
       "bounds": {
@@ -173,7 +173,7 @@
     },
     "far": {
       "url": "/models/buildings/muttart-conservatory-far.glb",
-      "bytes": 244252,
+      "bytes": 69600,
       "triangles": 6105,
       "drawCalls": 6,
       "bounds": {

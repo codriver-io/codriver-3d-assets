@@ -186,7 +186,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fernsehturm-stuttgart-near.glb",
-      "bytes": 384412,
+      "bytes": 108904,
       "triangles": 11224,
       "drawCalls": 7,
       "bounds": {
@@ -204,7 +204,7 @@
     },
     "far": {
       "url": "/models/buildings/fernsehturm-stuttgart-far.glb",
-      "bytes": 179164,
+      "bytes": 56424,
       "triangles": 4520,
       "drawCalls": 7,
       "bounds": {

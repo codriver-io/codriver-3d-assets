@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/toronto-dominion-centre-near.glb",
-      "bytes": 1062412,
+      "bytes": 270908,
       "triangles": 19548,
       "drawCalls": 11,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/toronto-dominion-centre-far.glb",
-      "bytes": 168040,
+      "bytes": 52392,
       "triangles": 3032,
       "drawCalls": 7,
       "bounds": {

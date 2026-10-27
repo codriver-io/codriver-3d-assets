@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/high-level-bridge-edmonton-near.glb",
-      "bytes": 3714028,
+      "bytes": 1602716,
       "triangles": 78048,
       "drawCalls": 12,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/bridges/high-level-bridge-edmonton-far.glb",
-      "bytes": 329060,
+      "bytes": 200328,
       "triangles": 11978,
       "drawCalls": 10,
       "bounds": {

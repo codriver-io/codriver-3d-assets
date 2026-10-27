@@ -30,7 +30,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pennybacker-bridge-near.glb",
-      "bytes": 1306964,
+      "bytes": 596716,
       "triangles": 36300,
       "drawCalls": 15,
       "bounds": {
@@ -48,7 +48,7 @@
     },
     "far": {
       "url": "/models/bridges/pennybacker-bridge-far.glb",
-      "bytes": 510208,
+      "bytes": 242272,
       "triangles": 15908,
       "drawCalls": 6,
       "bounds": {

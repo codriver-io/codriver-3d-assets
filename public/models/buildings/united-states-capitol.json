@@ -64,7 +64,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/united-states-capitol-near.glb",
-      "bytes": 1680960,
+      "bytes": 393360,
       "triangles": 35652,
       "drawCalls": 6,
       "bounds": {
@@ -82,7 +82,7 @@
     },
     "far": {
       "url": "/models/buildings/united-states-capitol-far.glb",
-      "bytes": 378268,
+      "bytes": 105064,
       "triangles": 8454,
       "drawCalls": 6,
       "bounds": {

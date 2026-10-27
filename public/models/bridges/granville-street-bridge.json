@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/granville-street-bridge-near.glb",
-      "bytes": 3279044,
+      "bytes": 1463896,
       "triangles": 68902,
       "drawCalls": 21,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/granville-street-bridge-far.glb",
-      "bytes": 1096680,
+      "bytes": 506672,
       "triangles": 27504,
       "drawCalls": 4,
       "bounds": {

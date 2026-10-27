@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/rogers-place-near.glb",
-      "bytes": 610496,
+      "bytes": 185428,
       "triangles": 19132,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/rogers-place-far.glb",
-      "bytes": 204860,
+      "bytes": 73616,
       "triangles": 6560,
       "drawCalls": 7,
       "bounds": {

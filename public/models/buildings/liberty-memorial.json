@@ -180,7 +180,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/liberty-memorial-near.glb",
-      "bytes": 1318980,
+      "bytes": 341048,
       "triangles": 34932,
       "drawCalls": 7,
       "bounds": {
@@ -198,7 +198,7 @@
     },
     "far": {
       "url": "/models/buildings/liberty-memorial-far.glb",
-      "bytes": 391364,
+      "bytes": 107736,
       "triangles": 7996,
       "drawCalls": 7,
       "bounds": {

@@ -275,7 +275,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/museo-nacional-de-costa-rica-near.glb",
-      "bytes": 1346528,
+      "bytes": 333340,
       "triangles": 29025,
       "drawCalls": 8,
       "bounds": {
@@ -293,7 +293,7 @@
     },
     "far": {
       "url": "/models/buildings/museo-nacional-de-costa-rica-far.glb",
-      "bytes": 425972,
+      "bytes": 122260,
       "triangles": 9357,
       "drawCalls": 8,
       "bounds": {

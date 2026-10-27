@@ -413,7 +413,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/bob-kerrey-pedestrian-bridge-near.glb",
-      "bytes": 3551320,
+      "bytes": 711996,
       "triangles": 55988,
       "drawCalls": 6,
       "bounds": {
@@ -431,7 +431,7 @@
     },
     "far": {
       "url": "/models/bridges/bob-kerrey-pedestrian-bridge-far.glb",
-      "bytes": 1191312,
+      "bytes": 281304,
       "triangles": 18108,
       "drawCalls": 6,
       "bounds": {

@@ -125,7 +125,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/royal-palace-oslo-near.glb",
-      "bytes": 723592,
+      "bytes": 194428,
       "triangles": 13117,
       "drawCalls": 9,
       "bounds": {
@@ -143,7 +143,7 @@
     },
     "far": {
       "url": "/models/buildings/royal-palace-oslo-far.glb",
-      "bytes": 352556,
+      "bytes": 102868,
       "triangles": 6273,
       "drawCalls": 8,
       "bounds": {

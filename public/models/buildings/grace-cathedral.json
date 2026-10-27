@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/grace-cathedral-near.glb",
-      "bytes": 754616,
+      "bytes": 191580,
       "triangles": 12185,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/grace-cathedral-far.glb",
-      "bytes": 161748,
+      "bytes": 53016,
       "triangles": 2479,
       "drawCalls": 7,
       "bounds": {

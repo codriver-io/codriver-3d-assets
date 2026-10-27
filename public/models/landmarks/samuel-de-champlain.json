@@ -22,13 +22,13 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/samuel-de-champlain-near.glb",
-      "bytes": 1602276,
+      "bytes": 778168,
       "triangles": 38582,
       "drawCalls": 29
     },
     "far": {
       "url": "/models/landmarks/samuel-de-champlain-far.glb",
-      "bytes": 467140,
+      "bytes": 234408,
       "triangles": 8294,
       "drawCalls": 5
     }

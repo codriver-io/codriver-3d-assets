@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-mirabeau-near.glb",
-      "bytes": 2123552,
+      "bytes": 1023892,
       "triangles": 60466,
       "drawCalls": 7,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-mirabeau-far.glb",
-      "bytes": 848496,
+      "bytes": 416316,
       "triangles": 20018,
       "drawCalls": 6,
       "bounds": {

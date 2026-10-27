@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/smithsonian-castle-near.glb",
-      "bytes": 936836,
+      "bytes": 191144,
       "triangles": 14430,
       "drawCalls": 4,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/smithsonian-castle-far.glb",
-      "bytes": 292640,
+      "bytes": 68940,
       "triangles": 4580,
       "drawCalls": 4,
       "bounds": {

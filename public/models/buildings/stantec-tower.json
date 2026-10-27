@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/stantec-tower-near.glb",
-      "bytes": 341484,
+      "bytes": 82708,
       "triangles": 4269,
       "drawCalls": 8,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/stantec-tower-far.glb",
-      "bytes": 122684,
+      "bytes": 37492,
       "triangles": 1475,
       "drawCalls": 7,
       "bounds": {

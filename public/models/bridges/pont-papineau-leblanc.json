@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-papineau-leblanc-near.glb",
-      "bytes": 501040,
+      "bytes": 279272,
       "triangles": 7800,
       "drawCalls": 27,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-papineau-leblanc-far.glb",
-      "bytes": 154808,
+      "bytes": 92732,
       "triangles": 2400,
       "drawCalls": 7,
       "bounds": {

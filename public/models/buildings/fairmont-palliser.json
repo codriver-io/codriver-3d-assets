@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fairmont-palliser-near.glb",
-      "bytes": 518420,
+      "bytes": 140412,
       "triangles": 10111,
       "drawCalls": 11,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/fairmont-palliser-far.glb",
-      "bytes": 231128,
+      "bytes": 68080,
       "triangles": 4387,
       "drawCalls": 8,
       "bounds": {

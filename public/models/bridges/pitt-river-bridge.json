@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pitt-river-bridge-near.glb",
-      "bytes": 1570884,
+      "bytes": 712680,
       "triangles": 47612,
       "drawCalls": 21,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/pitt-river-bridge-far.glb",
-      "bytes": 607816,
+      "bytes": 276724,
       "triangles": 20732,
       "drawCalls": 6,
       "bounds": {

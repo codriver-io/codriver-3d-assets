@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/couvent-des-jacobins-near.glb",
-      "bytes": 1845000,
+      "bytes": 470896,
       "triangles": 42735,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/couvent-des-jacobins-far.glb",
-      "bytes": 494420,
+      "bytes": 143456,
       "triangles": 11527,
       "drawCalls": 7,
       "bounds": {

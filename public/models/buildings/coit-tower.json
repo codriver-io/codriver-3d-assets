@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/coit-tower-near.glb",
-      "bytes": 181584,
+      "bytes": 51768,
       "triangles": 3186,
       "drawCalls": 5,
       "bounds": {
@@ -44,7 +44,7 @@
     },
     "far": {
       "url": "/models/buildings/coit-tower-far.glb",
-      "bytes": 82848,
+      "bytes": 29040,
       "triangles": 1392,
       "drawCalls": 5,
       "bounds": {

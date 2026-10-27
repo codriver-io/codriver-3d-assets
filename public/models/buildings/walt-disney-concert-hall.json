@@ -669,7 +669,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/walt-disney-concert-hall-near.glb",
-      "bytes": 696208,
+      "bytes": 215188,
       "triangles": 26473,
       "drawCalls": 6,
       "bounds": {
@@ -687,7 +687,7 @@
     },
     "far": {
       "url": "/models/buildings/walt-disney-concert-hall-far.glb",
-      "bytes": 192092,
+      "bytes": 61088,
       "triangles": 4878,
       "drawCalls": 5,
       "bounds": {

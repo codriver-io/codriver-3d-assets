@@ -5,7 +5,7 @@
 // the runtime. Afterwards the catalog is revalidated against the fresh bytes.
 import { mkdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { Box3 } from 'three';
 import { CALGARY_LANDMARKS } from '../src/peregrine/landmarks/calgary/authoring.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -26,7 +26,7 @@ for (const landmark of CALGARY_LANDMARKS.filter((l) => all || wanted.includes(l.
     const model = landmark.create({ detail }), bounds = new Box3().setFromObject(model);
     // Only road-fitted bridges (those with a layer.js) keep the app-only `bridgeLift` attribute, as the app export does.
     if (!existsSync(new URL(`../src/peregrine/landmarks/calgary/${id}/layer.js`, import.meta.url))) model.traverse((o) => { if (o.isMesh && o.geometry.getAttribute('bridgeLift')) o.geometry.deleteAttribute('bridgeLift'); });
-    const bytes = Buffer.from(await new GLTFExporter().parseAsync(model, { binary: true }));
+    const bytes = Buffer.from(await exportLandmarkGLB(model, { binary: true }));
     const file = `${id}-${detail}.glb`; await writeFile(new URL(file, out), bytes);
     assets[detail] = { url: `/models/${dir}/${file}`, ...glbMetrics(bytes), bounds: { min: bounds.min.toArray(), max: bounds.max.toArray() } };
     disposeChamplain(model);

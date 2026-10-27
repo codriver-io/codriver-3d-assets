@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/amsterdam-centraal-near.glb",
-      "bytes": 572068,
+      "bytes": 167456,
       "triangles": 13756,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/amsterdam-centraal-far.glb",
-      "bytes": 261756,
+      "bytes": 81548,
       "triangles": 5605,
       "drawCalls": 7,
       "bounds": {

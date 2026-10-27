@@ -419,7 +419,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/belem-tower-near.glb",
-      "bytes": 777816,
+      "bytes": 194900,
       "triangles": 17909,
       "drawCalls": 2,
       "bounds": {
@@ -437,7 +437,7 @@
     },
     "far": {
       "url": "/models/buildings/belem-tower-far.glb",
-      "bytes": 383288,
+      "bytes": 96116,
       "triangles": 7667,
       "drawCalls": 2,
       "bounds": {

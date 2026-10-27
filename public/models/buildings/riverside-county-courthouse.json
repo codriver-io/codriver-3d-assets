@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/riverside-county-courthouse-near.glb",
-      "bytes": 1676580,
+      "bytes": 456632,
       "triangles": 42892,
       "drawCalls": 6,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/riverside-county-courthouse-far.glb",
-      "bytes": 440136,
+      "bytes": 126404,
       "triangles": 9804,
       "drawCalls": 5,
       "bounds": {

@@ -35,7 +35,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/washington-monument-near.glb",
-      "bytes": 36636,
+      "bytes": 21840,
       "triangles": 420,
       "drawCalls": 9,
       "bounds": {
@@ -53,7 +53,7 @@
     },
     "far": {
       "url": "/models/buildings/washington-monument-far.glb",
-      "bytes": 30140,
+      "bytes": 19164,
       "triangles": 348,
       "drawCalls": 8,
       "bounds": {

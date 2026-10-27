@@ -765,7 +765,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palacio-real-de-madrid-near.glb",
-      "bytes": 1799104,
+      "bytes": 446140,
       "triangles": 33687,
       "drawCalls": 6,
       "bounds": {
@@ -783,7 +783,7 @@
     },
     "far": {
       "url": "/models/buildings/palacio-real-de-madrid-far.glb",
-      "bytes": 357944,
+      "bytes": 87280,
       "triangles": 6674,
       "drawCalls": 6,
       "bounds": {

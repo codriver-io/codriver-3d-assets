@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/gratte-ciel-villeurbanne-near.glb",
-      "bytes": 1903984,
+      "bytes": 409972,
       "triangles": 36384,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/gratte-ciel-villeurbanne-far.glb",
-      "bytes": 419924,
+      "bytes": 102864,
       "triangles": 8322,
       "drawCalls": 4,
       "bounds": {

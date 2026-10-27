@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/arlington-memorial-bridge-near.glb",
-      "bytes": 2882672,
+      "bytes": 1372008,
       "triangles": 83078,
       "drawCalls": 28,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/arlington-memorial-bridge-far.glb",
-      "bytes": 763984,
+      "bytes": 388240,
       "triangles": 21026,
       "drawCalls": 8,
       "bounds": {

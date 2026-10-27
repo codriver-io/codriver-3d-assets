@@ -1288,7 +1288,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/battersea-power-station-near.glb",
-      "bytes": 552376,
+      "bytes": 137424,
       "triangles": 16144,
       "drawCalls": 5,
       "bounds": {
@@ -1306,7 +1306,7 @@
     },
     "far": {
       "url": "/models/buildings/battersea-power-station-far.glb",
-      "bytes": 367404,
+      "bytes": 90800,
       "triangles": 8964,
       "drawCalls": 5,
       "bounds": {

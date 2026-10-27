@@ -522,7 +522,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/oresund-bridge-near.glb",
-      "bytes": 3707256,
+      "bytes": 1497992,
       "triangles": 81676,
       "drawCalls": 19,
       "bounds": {
@@ -540,7 +540,7 @@
     },
     "far": {
       "url": "/models/bridges/oresund-bridge-far.glb",
-      "bytes": 1021260,
+      "bytes": 487800,
       "triangles": 29228,
       "drawCalls": 7,
       "bounds": {

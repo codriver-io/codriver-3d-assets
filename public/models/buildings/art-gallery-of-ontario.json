@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/art-gallery-of-ontario-near.glb",
-      "bytes": 857412,
+      "bytes": 241412,
       "triangles": 18108,
       "drawCalls": 12,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/art-gallery-of-ontario-far.glb",
-      "bytes": 251136,
+      "bytes": 77300,
       "triangles": 5144,
       "drawCalls": 7,
       "bounds": {

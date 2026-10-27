@@ -147,7 +147,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/ut-tower-near.glb",
-      "bytes": 811376,
+      "bytes": 192652,
       "triangles": 14270,
       "drawCalls": 8,
       "bounds": {
@@ -165,7 +165,7 @@
     },
     "far": {
       "url": "/models/buildings/ut-tower-far.glb",
-      "bytes": 458512,
+      "bytes": 116892,
       "triangles": 8214,
       "drawCalls": 8,
       "bounds": {

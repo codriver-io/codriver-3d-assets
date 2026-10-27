@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { track } from './analytics.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { createLandmarkGLTFLoader } from './peregrine/landmarks/landmark-loader.js';
 import { createChamplain, disposeChamplain, BRIDGE_PALETTES } from './peregrine/landmarks/champlain-geometry.js';
 import { bridgePoint, BRIDGE_LENGTH, TOWER_STATION } from './peregrine/landmarks/champlain-profile.js';
 
@@ -47,7 +47,7 @@ scene.add(car);
 const views = ['tower', 'piers', 'overview', 'drive'];
 let model, manifest, theme = 'light', mode = 'tower', playing = false;
 let station = TOWER_STATION - 420, request = 0;
-const loader = new GLTFLoader();
+const loader = createLandmarkGLTFLoader();
 async function rebuild() {
   const generation = ++request;
   const detail = $('detail').value, source = $('source').value;

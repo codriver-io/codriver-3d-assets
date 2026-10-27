@@ -302,7 +302,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/alcatraz-island-near.glb",
-      "bytes": 613732,
+      "bytes": 167196,
       "triangles": 11418,
       "drawCalls": 10,
       "bounds": {
@@ -320,7 +320,7 @@
     },
     "far": {
       "url": "/models/buildings/alcatraz-island-far.glb",
-      "bytes": 168604,
+      "bytes": 54020,
       "triangles": 3002,
       "drawCalls": 7,
       "bounds": {

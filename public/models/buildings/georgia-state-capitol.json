@@ -328,7 +328,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/georgia-state-capitol-near.glb",
-      "bytes": 1571368,
+      "bytes": 421688,
       "triangles": 34234,
       "drawCalls": 5,
       "bounds": {
@@ -346,7 +346,7 @@
     },
     "far": {
       "url": "/models/buildings/georgia-state-capitol-far.glb",
-      "bytes": 444844,
+      "bytes": 131652,
       "triangles": 10272,
       "drawCalls": 5,
       "bounds": {

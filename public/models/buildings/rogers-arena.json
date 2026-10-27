@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/rogers-arena-near.glb",
-      "bytes": 683232,
+      "bytes": 154496,
       "triangles": 13891,
       "drawCalls": 8,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/rogers-arena-far.glb",
-      "bytes": 309188,
+      "bytes": 78600,
       "triangles": 5880,
       "drawCalls": 8,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edificio-de-correos-costa-rica-near.glb",
-      "bytes": 1514568,
+      "bytes": 423880,
       "triangles": 43495,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/edificio-de-correos-costa-rica-far.glb",
-      "bytes": 472684,
+      "bytes": 135936,
       "triangles": 11501,
       "drawCalls": 6,
       "bounds": {

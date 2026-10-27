@@ -407,7 +407,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/griffith-observatory-near.glb",
-      "bytes": 1323020,
+      "bytes": 340796,
       "triangles": 28650,
       "drawCalls": 6,
       "bounds": {
@@ -425,7 +425,7 @@
     },
     "far": {
       "url": "/models/buildings/griffith-observatory-far.glb",
-      "bytes": 201372,
+      "bytes": 60944,
       "triangles": 4724,
       "drawCalls": 6,
       "bounds": {

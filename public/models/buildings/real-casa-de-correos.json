@@ -248,7 +248,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/real-casa-de-correos-near.glb",
-      "bytes": 1438244,
+      "bytes": 367068,
       "triangles": 29961,
       "drawCalls": 7,
       "bounds": {
@@ -266,7 +266,7 @@
     },
     "far": {
       "url": "/models/buildings/real-casa-de-correos-far.glb",
-      "bytes": 417088,
+      "bytes": 113004,
       "triangles": 9873,
       "drawCalls": 7,
       "bounds": {

@@ -20,7 +20,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tour-de-l-horloge-near.glb",
-      "bytes": 207700,
+      "bytes": 55888,
       "triangles": 4076,
       "drawCalls": 6,
       "bounds": {
@@ -38,7 +38,7 @@
     },
     "far": {
       "url": "/models/buildings/tour-de-l-horloge-far.glb",
-      "bytes": 101336,
+      "bytes": 33500,
       "triangles": 1892,
       "drawCalls": 6,
       "bounds": {

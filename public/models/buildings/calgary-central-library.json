@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/calgary-central-library-near.glb",
-      "bytes": 535764,
+      "bytes": 143728,
       "triangles": 6729,
       "drawCalls": 10,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/calgary-central-library-far.glb",
-      "bytes": 123868,
+      "bytes": 40560,
       "triangles": 1488,
       "drawCalls": 7,
       "bounds": {

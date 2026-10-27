@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/san-fernando-cathedral-near.glb",
-      "bytes": 758700,
+      "bytes": 175936,
       "triangles": 12016,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/san-fernando-cathedral-far.glb",
-      "bytes": 111120,
+      "bytes": 39504,
       "triangles": 1705,
       "drawCalls": 7,
       "bounds": {

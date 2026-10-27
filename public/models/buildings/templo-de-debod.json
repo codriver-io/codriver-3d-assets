@@ -64,7 +64,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/templo-de-debod-near.glb",
-      "bytes": 1020284,
+      "bytes": 264260,
       "triangles": 19004,
       "drawCalls": 6,
       "bounds": {
@@ -82,7 +82,7 @@
     },
     "far": {
       "url": "/models/buildings/templo-de-debod-far.glb",
-      "bytes": 152592,
+      "bytes": 50592,
       "triangles": 2840,
       "drawCalls": 6,
       "bounds": {

@@ -74,7 +74,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/hotel-du-parlement-near.glb",
-      "bytes": 815304,
+      "bytes": 220076,
       "triangles": 16147,
       "drawCalls": 8,
       "bounds": {
@@ -92,7 +92,7 @@
     },
     "far": {
       "url": "/models/buildings/hotel-du-parlement-far.glb",
-      "bytes": 392368,
+      "bytes": 109992,
       "triangles": 8060,
       "drawCalls": 8,
       "bounds": {

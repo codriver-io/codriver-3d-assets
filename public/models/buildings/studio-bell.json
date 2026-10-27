@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/studio-bell-near.glb",
-      "bytes": 1036692,
+      "bytes": 266072,
       "triangles": 23771,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/studio-bell-far.glb",
-      "bytes": 417520,
+      "bytes": 115460,
       "triangles": 9560,
       "drawCalls": 7,
       "bounds": {

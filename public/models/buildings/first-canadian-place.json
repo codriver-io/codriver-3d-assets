@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/first-canadian-place-near.glb",
-      "bytes": 972512,
+      "bytes": 258616,
       "triangles": 17188,
       "drawCalls": 12,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/first-canadian-place-far.glb",
-      "bytes": 85476,
+      "bytes": 34944,
       "triangles": 1420,
       "drawCalls": 8,
       "bounds": {

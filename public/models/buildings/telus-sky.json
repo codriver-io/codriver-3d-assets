@@ -37,7 +37,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/telus-sky-near.glb",
-      "bytes": 1632152,
+      "bytes": 356728,
       "triangles": 30096,
       "drawCalls": 6,
       "bounds": {
@@ -55,7 +55,7 @@
     },
     "far": {
       "url": "/models/buildings/telus-sky-far.glb",
-      "bytes": 399404,
+      "bytes": 105444,
       "triangles": 9510,
       "drawCalls": 5,
       "bounds": {

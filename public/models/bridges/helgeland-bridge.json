@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/helgeland-bridge-near.glb",
-      "bytes": 3010232,
+      "bytes": 1193972,
       "triangles": 65240,
       "drawCalls": 20,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/helgeland-bridge-far.glb",
-      "bytes": 456312,
+      "bytes": 225752,
       "triangles": 16656,
       "drawCalls": 7,
       "bounds": {

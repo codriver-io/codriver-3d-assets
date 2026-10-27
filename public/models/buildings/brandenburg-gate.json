@@ -30,7 +30,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/brandenburg-gate-near.glb",
-      "bytes": 1163244,
+      "bytes": 326464,
       "triangles": 33936,
       "drawCalls": 5,
       "bounds": {
@@ -48,7 +48,7 @@
     },
     "far": {
       "url": "/models/buildings/brandenburg-gate-far.glb",
-      "bytes": 313404,
+      "bytes": 99484,
       "triangles": 6928,
       "drawCalls": 4,
       "bounds": {

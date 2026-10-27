@@ -30,7 +30,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cn-tower-near.glb",
-      "bytes": 506252,
+      "bytes": 133032,
       "triangles": 14878,
       "drawCalls": 8,
       "bounds": {
@@ -48,7 +48,7 @@
     },
     "far": {
       "url": "/models/buildings/cn-tower-far.glb",
-      "bytes": 122040,
+      "bytes": 44944,
       "triangles": 4338,
       "drawCalls": 8,
       "bounds": {

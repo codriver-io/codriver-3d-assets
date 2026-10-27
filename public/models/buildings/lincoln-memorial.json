@@ -2183,7 +2183,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/lincoln-memorial-near.glb",
-      "bytes": 986376,
+      "bytes": 303992,
       "triangles": 36742,
       "drawCalls": 8,
       "bounds": {
@@ -2201,7 +2201,7 @@
     },
     "far": {
       "url": "/models/buildings/lincoln-memorial-far.glb",
-      "bytes": 275808,
+      "bytes": 92672,
       "triangles": 7230,
       "drawCalls": 8,
       "bounds": {

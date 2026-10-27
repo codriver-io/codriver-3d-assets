@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-neuf-toulouse-near.glb",
-      "bytes": 2080680,
+      "bytes": 1142376,
       "triangles": 31426,
       "drawCalls": 17,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-neuf-toulouse-far.glb",
-      "bytes": 810788,
+      "bytes": 472416,
       "triangles": 13746,
       "drawCalls": 8,
       "bounds": {

@@ -91,7 +91,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/porsche-museum-near.glb",
-      "bytes": 554092,
+      "bytes": 130316,
       "triangles": 6992,
       "drawCalls": 8,
       "bounds": {
@@ -109,7 +109,7 @@
     },
     "far": {
       "url": "/models/buildings/porsche-museum-far.glb",
-      "bytes": 48932,
+      "bytes": 20828,
       "triangles": 542,
       "drawCalls": 6,
       "bounds": {

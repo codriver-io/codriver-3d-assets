@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/catedral-de-alajuela-near.glb",
-      "bytes": 1481624,
+      "bytes": 377692,
       "triangles": 30887,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/catedral-de-alajuela-far.glb",
-      "bytes": 426512,
+      "bytes": 119588,
       "triangles": 8539,
       "drawCalls": 5,
       "bounds": {

@@ -28,7 +28,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/albert-bridge-london-near.glb",
-      "bytes": 1709408,
+      "bytes": 807296,
       "triangles": 32814,
       "drawCalls": 14,
       "bounds": {
@@ -46,7 +46,7 @@
     },
     "far": {
       "url": "/models/bridges/albert-bridge-london-far.glb",
-      "bytes": 611008,
+      "bytes": 303244,
       "triangles": 10554,
       "drawCalls": 9,
       "bounds": {

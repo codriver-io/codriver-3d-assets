@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-laviolette-near.glb",
-      "bytes": 1393428,
+      "bytes": 724732,
       "triangles": 29040,
       "drawCalls": 32,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-laviolette-far.glb",
-      "bytes": 378544,
+      "bytes": 199432,
       "triangles": 7550,
       "drawCalls": 7,
       "bounds": {

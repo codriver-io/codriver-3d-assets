@@ -72,7 +72,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/gateway-arch-near.glb",
-      "bytes": 172836,
+      "bytes": 50672,
       "triangles": 2130,
       "drawCalls": 6,
       "bounds": {
@@ -90,7 +90,7 @@
     },
     "far": {
       "url": "/models/buildings/gateway-arch-far.glb",
-      "bytes": 78284,
+      "bytes": 28980,
       "triangles": 918,
       "drawCalls": 6,
       "bounds": {

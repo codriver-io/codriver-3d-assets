@@ -30,13 +30,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/oratoire-saint-joseph-near.glb",
-      "bytes": 431452,
+      "bytes": 123672,
       "triangles": 8831,
       "drawCalls": 7
     },
     "far": {
       "url": "/models/buildings/oratoire-saint-joseph-far.glb",
-      "bytes": 234324,
+      "bytes": 73156,
       "triangles": 4363,
       "drawCalls": 7
     }

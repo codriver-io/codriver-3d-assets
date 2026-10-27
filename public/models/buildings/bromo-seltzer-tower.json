@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bromo-seltzer-tower-near.glb",
-      "bytes": 777072,
+      "bytes": 192288,
       "triangles": 17170,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/bromo-seltzer-tower-far.glb",
-      "bytes": 454780,
+      "bytes": 120360,
       "triangles": 10064,
       "drawCalls": 7,
       "bounds": {

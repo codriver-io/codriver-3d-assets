@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/columbus-tower-near.glb",
-      "bytes": 679576,
+      "bytes": 187448,
       "triangles": 12302,
       "drawCalls": 12,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/columbus-tower-far.glb",
-      "bytes": 153988,
+      "bytes": 51424,
       "triangles": 2693,
       "drawCalls": 7,
       "bounds": {

@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/walterdale-bridge-near.glb",
-      "bytes": 1306444,
+      "bytes": 578972,
       "triangles": 26312,
       "drawCalls": 17,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/bridges/walterdale-bridge-far.glb",
-      "bytes": 405176,
+      "bytes": 197396,
       "triangles": 8896,
       "drawCalls": 7,
       "bounds": {

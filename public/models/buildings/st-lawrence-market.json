@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/st-lawrence-market-near.glb",
-      "bytes": 1103076,
+      "bytes": 250012,
       "triangles": 18674,
       "drawCalls": 11,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/st-lawrence-market-far.glb",
-      "bytes": 214416,
+      "bytes": 60636,
       "triangles": 3566,
       "drawCalls": 7,
       "bounds": {

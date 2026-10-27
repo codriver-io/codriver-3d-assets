@@ -27,7 +27,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/john-hancock-center-near.glb",
-      "bytes": 1990568,
+      "bytes": 392972,
       "triangles": 36610,
       "drawCalls": 7,
       "bounds": {
@@ -45,7 +45,7 @@
     },
     "far": {
       "url": "/models/buildings/john-hancock-center-far.glb",
-      "bytes": 405368,
+      "bytes": 104736,
       "triangles": 7234,
       "drawCalls": 7,
       "bounds": {

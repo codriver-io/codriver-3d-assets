@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/queensborough-bridge-near.glb",
-      "bytes": 1969172,
+      "bytes": 865380,
       "triangles": 52200,
       "drawCalls": 17,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/queensborough-bridge-far.glb",
-      "bytes": 705848,
+      "bytes": 331596,
       "triangles": 18736,
       "drawCalls": 5,
       "bounds": {

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/centre-street-bridge-near.glb",
-      "bytes": 1691068,
+      "bytes": 807716,
       "triangles": 29440,
       "drawCalls": 22,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/centre-street-bridge-far.glb",
-      "bytes": 401392,
+      "bytes": 227192,
       "triangles": 7828,
       "drawCalls": 9,
       "bounds": {

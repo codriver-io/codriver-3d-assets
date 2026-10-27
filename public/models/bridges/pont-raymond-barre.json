@@ -81,7 +81,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-raymond-barre-near.glb",
-      "bytes": 1798100,
+      "bytes": 453120,
       "triangles": 33246,
       "drawCalls": 9,
       "bounds": {
@@ -99,7 +99,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-raymond-barre-far.glb",
-      "bytes": 581660,
+      "bytes": 160676,
       "triangles": 10642,
       "drawCalls": 8,
       "bounds": {

@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { Box3 } from 'three';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createStadeOlympique } from '../src/peregrine/landmarks/stade-olympique-geometry.js';
 import { STADE } from '../src/peregrine/landmarks/stade-olympique-config.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -9,7 +9,7 @@ globalThis.FileReader??=class{readAsArrayBuffer(blob){blob.arrayBuffer().then(re
 const out=new URL('../public/models/buildings/',import.meta.url),assets={};await mkdir(out,{recursive:true});
 for(const detail of ['near','far']){
   const model=createStadeOlympique({detail}),bounds=new Box3().setFromObject(model);
-  const data=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true})),name=`${STADE.id}-${detail}.glb`;
+  const data=Buffer.from(await exportLandmarkGLB(model,{binary:true})),name=`${STADE.id}-${detail}.glb`;
   await writeFile(new URL(name,out),data);
   assets[detail]={url:`/models/buildings/${name}`,...glbMetrics(data),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};
   disposeChamplain(model);

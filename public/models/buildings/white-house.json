@@ -2696,7 +2696,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/white-house-near.glb",
-      "bytes": 1194552,
+      "bytes": 273984,
       "triangles": 26338,
       "drawCalls": 8,
       "bounds": {
@@ -2714,7 +2714,7 @@
     },
     "far": {
       "url": "/models/buildings/white-house-far.glb",
-      "bytes": 312036,
+      "bytes": 79584,
       "triangles": 5890,
       "drawCalls": 7,
       "bounds": {

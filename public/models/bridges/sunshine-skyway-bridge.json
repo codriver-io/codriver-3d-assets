@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/sunshine-skyway-bridge-near.glb",
-      "bytes": 3198136,
+      "bytes": 1422560,
       "triangles": 45084,
       "drawCalls": 19,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/sunshine-skyway-bridge-far.glb",
-      "bytes": 728864,
+      "bytes": 351028,
       "triangles": 22332,
       "drawCalls": 9,
       "bounds": {

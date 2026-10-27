@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/mission-bridge-near.glb",
-      "bytes": 2806600,
+      "bytes": 1257120,
       "triangles": 73765,
       "drawCalls": 18,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/mission-bridge-far.glb",
-      "bytes": 775920,
+      "bytes": 365904,
       "triangles": 23333,
       "drawCalls": 5,
       "bounds": {

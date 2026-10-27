@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/gare-de-lyon-clock-tower-near.glb",
-      "bytes": 1039412,
+      "bytes": 264280,
       "triangles": 19231,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/gare-de-lyon-clock-tower-far.glb",
-      "bytes": 466384,
+      "bytes": 123768,
       "triangles": 7917,
       "drawCalls": 7,
       "bounds": {

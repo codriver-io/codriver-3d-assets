@@ -281,7 +281,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/washington-dc-temple-near.glb",
-      "bytes": 546844,
+      "bytes": 130936,
       "triangles": 8438,
       "drawCalls": 7,
       "bounds": {
@@ -299,7 +299,7 @@
     },
     "far": {
       "url": "/models/buildings/washington-dc-temple-far.glb",
-      "bytes": 356316,
+      "bytes": 86604,
       "triangles": 5262,
       "drawCalls": 6,
       "bounds": {

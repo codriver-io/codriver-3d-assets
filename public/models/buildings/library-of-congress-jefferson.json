@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/library-of-congress-jefferson-near.glb",
-      "bytes": 1027040,
+      "bytes": 249512,
       "triangles": 20597,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/library-of-congress-jefferson-far.glb",
-      "bytes": 454500,
+      "bytes": 120852,
       "triangles": 8905,
       "drawCalls": 8,
       "bounds": {

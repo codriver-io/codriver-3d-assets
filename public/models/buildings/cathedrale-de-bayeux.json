@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cathedrale-de-bayeux-near.glb",
-      "bytes": 1409068,
+      "bytes": 365268,
       "triangles": 34953,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/cathedrale-de-bayeux-far.glb",
-      "bytes": 467592,
+      "bytes": 137564,
       "triangles": 10779,
       "drawCalls": 7,
       "bounds": {

@@ -83,7 +83,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/mercedes-benz-stadium-near.glb",
-      "bytes": 1733436,
+      "bytes": 422992,
       "triangles": 22126,
       "drawCalls": 8,
       "bounds": {
@@ -101,7 +101,7 @@
     },
     "far": {
       "url": "/models/buildings/mercedes-benz-stadium-far.glb",
-      "bytes": 432348,
+      "bytes": 124880,
       "triangles": 5446,
       "drawCalls": 8,
       "bounds": {

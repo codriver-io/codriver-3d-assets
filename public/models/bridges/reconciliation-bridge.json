@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/reconciliation-bridge-near.glb",
-      "bytes": 1155296,
+      "bytes": 573988,
       "triangles": 18556,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/reconciliation-bridge-far.glb",
-      "bytes": 327956,
+      "bytes": 181148,
       "triangles": 5224,
       "drawCalls": 7,
       "bounds": {

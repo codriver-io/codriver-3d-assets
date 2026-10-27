@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cite-de-l-espace-near.glb",
-      "bytes": 428644,
+      "bytes": 134440,
       "triangles": 14020,
       "drawCalls": 8,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/cite-de-l-espace-far.glb",
-      "bytes": 114940,
+      "bytes": 45900,
       "triangles": 4488,
       "drawCalls": 6,
       "bounds": {

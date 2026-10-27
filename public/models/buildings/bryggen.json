@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bryggen-near.glb",
-      "bytes": 1744824,
+      "bytes": 376632,
       "triangles": 22218,
       "drawCalls": 11,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/bryggen-far.glb",
-      "bytes": 484080,
+      "bytes": 116312,
       "triangles": 6092,
       "drawCalls": 8,
       "bounds": {

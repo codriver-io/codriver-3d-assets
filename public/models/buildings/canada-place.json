@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/canada-place-near.glb",
-      "bytes": 1736748,
+      "bytes": 457444,
       "triangles": 44292,
       "drawCalls": 7,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/canada-place-far.glb",
-      "bytes": 428756,
+      "bytes": 121596,
       "triangles": 9448,
       "drawCalls": 7,
       "bounds": {

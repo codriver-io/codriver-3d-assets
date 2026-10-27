@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/orange-julep-near.glb",
-      "bytes": 539608,
+      "bytes": 144696,
       "triangles": 13792,
       "drawCalls": 8,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/orange-julep-far.glb",
-      "bytes": 156268,
+      "bytes": 48660,
       "triangles": 3052,
       "drawCalls": 7,
       "bounds": {

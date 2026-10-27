@@ -265,7 +265,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/charles-bridge-near.glb",
-      "bytes": 1621376,
+      "bytes": 379392,
       "triangles": 25940,
       "drawCalls": 8,
       "bounds": {
@@ -283,7 +283,7 @@
     },
     "far": {
       "url": "/models/bridges/charles-bridge-far.glb",
-      "bytes": 745136,
+      "bytes": 187708,
       "triangles": 11172,
       "drawCalls": 8,
       "bounds": {

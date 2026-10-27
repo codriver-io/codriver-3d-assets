@@ -1,5 +1,5 @@
 import { mkdir,writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createMercier,createMercierPart } from '../src/peregrine/landmarks/pont-honore-mercier-geometry.js';
 import { MERCIER,MERCIER_PROFILES } from '../src/peregrine/landmarks/pont-honore-mercier-profile.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -9,7 +9,7 @@ const out=new URL('../public/models/landmarks/',import.meta.url),assets={};
 await mkdir(out,{recursive:true});
 for(const detail of ['near','far'])for(const p of [null,...MERCIER_PROFILES]){
   const model=p?createMercierPart(p,{detail}):createMercier({detail});
-  const data=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true}));
+  const data=Buffer.from(await exportLandmarkGLB(model,{binary:true}));
   const id=p?.CHAMPLAIN.id||MERCIER.id,key=p?`${p.CHAMPLAIN.part.replaceAll('_','-')}-${detail}`:detail;
   await writeFile(new URL(`${id}-${detail}.glb`,out),data);
   assets[key]={url:`/models/landmarks/${id}-${detail}.glb`,...glbMetrics(data)};

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/los-angeles-city-hall-near.glb",
-      "bytes": 1521996,
+      "bytes": 383476,
       "triangles": 30300,
       "drawCalls": 5,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/los-angeles-city-hall-far.glb",
-      "bytes": 488676,
+      "bytes": 132320,
       "triangles": 9806,
       "drawCalls": 4,
       "bounds": {

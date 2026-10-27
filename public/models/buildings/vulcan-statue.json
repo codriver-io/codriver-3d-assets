@@ -213,7 +213,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/vulcan-statue-near.glb",
-      "bytes": 502264,
+      "bytes": 145616,
       "triangles": 15596,
       "drawCalls": 5,
       "bounds": {
@@ -231,7 +231,7 @@
     },
     "far": {
       "url": "/models/buildings/vulcan-statue-far.glb",
-      "bytes": 96508,
+      "bytes": 35028,
       "triangles": 2312,
       "drawCalls": 5,
       "bounds": {

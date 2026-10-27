@@ -255,7 +255,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/notre-dame-du-cap-near.glb",
-      "bytes": 185308,
+      "bytes": 63156,
       "triangles": 4069,
       "drawCalls": 11,
       "bounds": {
@@ -273,7 +273,7 @@
     },
     "far": {
       "url": "/models/buildings/notre-dame-du-cap-far.glb",
-      "bytes": 87188,
+      "bytes": 33752,
       "triangles": 1778,
       "drawCalls": 7,
       "bounds": {

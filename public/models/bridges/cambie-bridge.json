@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/cambie-bridge-near.glb",
-      "bytes": 3849104,
+      "bytes": 1630572,
       "triangles": 77108,
       "drawCalls": 34,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/cambie-bridge-far.glb",
-      "bytes": 1001036,
+      "bytes": 460912,
       "triangles": 26760,
       "drawCalls": 8,
       "bounds": {

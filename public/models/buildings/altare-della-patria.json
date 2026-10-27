@@ -496,7 +496,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/altare-della-patria-near.glb",
-      "bytes": 1370412,
+      "bytes": 388764,
       "triangles": 43148,
       "drawCalls": 7,
       "bounds": {
@@ -514,7 +514,7 @@
     },
     "far": {
       "url": "/models/buildings/altare-della-patria-far.glb",
-      "bytes": 411520,
+      "bytes": 123464,
       "triangles": 9804,
       "drawCalls": 7,
       "bounds": {

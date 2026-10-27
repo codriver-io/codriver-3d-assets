@@ -387,7 +387,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/santiago-bernabeu-near.glb",
-      "bytes": 2273936,
+      "bytes": 579260,
       "triangles": 33874,
       "drawCalls": 8,
       "bounds": {
@@ -405,7 +405,7 @@
     },
     "far": {
       "url": "/models/buildings/santiago-bernabeu-far.glb",
-      "bytes": 347688,
+      "bytes": 112140,
       "triangles": 11460,
       "drawCalls": 8,
       "bounds": {

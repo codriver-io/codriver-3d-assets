@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/basarab-overpass-near.glb",
-      "bytes": 3037844,
+      "bytes": 1608220,
       "triangles": 58416,
       "drawCalls": 23,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/basarab-overpass-far.glb",
-      "bytes": 1104900,
+      "bytes": 586012,
       "triangles": 26140,
       "drawCalls": 7,
       "bounds": {

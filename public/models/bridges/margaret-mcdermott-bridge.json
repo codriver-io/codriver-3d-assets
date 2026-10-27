@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/margaret-mcdermott-bridge-near.glb",
-      "bytes": 3040544,
+      "bytes": 1337092,
       "triangles": 66108,
       "drawCalls": 22,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/bridges/margaret-mcdermott-bridge-far.glb",
-      "bytes": 709044,
+      "bytes": 354336,
       "triangles": 18104,
       "drawCalls": 7,
       "bounds": {

@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { track } from './analytics.js';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { createLandmarkGLTFLoader } from './peregrine/landmarks/landmark-loader.js';
 import { createVictoria, createJacquesCartier } from './peregrine/landmarks/montreal-bridges-geometry.js';
 import { createFiveRoses } from './peregrine/landmarks/five-roses-geometry.js';
 import { fiveRosesPoint } from './peregrine/landmarks/five-roses-config.js';
@@ -256,7 +256,7 @@ async function load() {
   const modelUrl = asset.url + (asset.url.includes('?') ? '&' : '?') + 'v=' + asset.bytes + '-' + asset.triangles;
   $('error').textContent = '';
   try {
-    const candidate = $('source').value === 'procedural' && creators[entry.id] ? creators[entry.id]({ detail: variant }) : (await new GLTFLoader().loadAsync(modelUrl)).scene;
+    const candidate = $('source').value === 'procedural' && creators[entry.id] ? creators[entry.id]({ detail: variant }) : (await createLandmarkGLTFLoader().loadAsync(modelUrl)).scene;
     if (token !== generation) { dispose(candidate); return; }
     if (model) { scene.remove(model); dispose(model); }
     model = candidate; scene.add(model); fit(); theme();

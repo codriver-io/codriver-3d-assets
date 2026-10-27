@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cec-palace-near.glb",
-      "bytes": 1768980,
+      "bytes": 471472,
       "triangles": 37940,
       "drawCalls": 6,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/cec-palace-far.glb",
-      "bytes": 420804,
+      "bytes": 122968,
       "triangles": 8512,
       "drawCalls": 6,
       "bounds": {

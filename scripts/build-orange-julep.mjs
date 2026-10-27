@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { Box3 } from 'three';
 import { createOrangeJulep } from '../src/peregrine/landmarks/orange-julep-geometry.js';
 import { ORANGE_JULEP as spec } from '../src/peregrine/landmarks/orange-julep-config.js';
@@ -11,7 +11,7 @@ const out=new URL('../public/models/buildings/',import.meta.url),assets={};
 await mkdir(out,{recursive:true});
 for(const detail of ['near','far']){
   const model=createOrangeJulep({detail}),bounds=new Box3().setFromObject(model);
-  const bytes=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true}));
+  const bytes=Buffer.from(await exportLandmarkGLB(model,{binary:true}));
   const file=`orange-julep-${detail}.glb`;await writeFile(new URL(file,out),bytes);
   assets[detail]={url:`/models/buildings/${file}`,...glbMetrics(bytes),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};
   disposeChamplain(model);

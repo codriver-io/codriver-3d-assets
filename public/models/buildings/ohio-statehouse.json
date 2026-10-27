@@ -205,7 +205,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/ohio-statehouse-near.glb",
-      "bytes": 819288,
+      "bytes": 201840,
       "triangles": 19742,
       "drawCalls": 7,
       "bounds": {
@@ -223,7 +223,7 @@
     },
     "far": {
       "url": "/models/buildings/ohio-statehouse-far.glb",
-      "bytes": 349188,
+      "bytes": 94212,
       "triangles": 6774,
       "drawCalls": 7,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/munch-museum-near.glb",
-      "bytes": 1835044,
+      "bytes": 387236,
       "triangles": 23423,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/munch-museum-far.glb",
-      "bytes": 355104,
+      "bytes": 91128,
       "triangles": 4463,
       "drawCalls": 6,
       "bounds": {

@@ -73,7 +73,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/magere-brug-near.glb",
-      "bytes": 1703396,
+      "bytes": 490248,
       "triangles": 42956,
       "drawCalls": 5,
       "bounds": {
@@ -91,7 +91,7 @@
     },
     "far": {
       "url": "/models/bridges/magere-brug-far.glb",
-      "bytes": 568884,
+      "bytes": 206288,
       "triangles": 8908,
       "drawCalls": 5,
       "bounds": {

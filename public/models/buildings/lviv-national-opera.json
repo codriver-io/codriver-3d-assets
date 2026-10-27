@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/lviv-national-opera-near.glb",
-      "bytes": 1698004,
+      "bytes": 447796,
       "triangles": 37840,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/lviv-national-opera-far.glb",
-      "bytes": 455396,
+      "bytes": 132120,
       "triangles": 10368,
       "drawCalls": 6,
       "bounds": {

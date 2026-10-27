@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/skyview-atlanta-near.glb",
-      "bytes": 1246336,
+      "bytes": 318680,
       "triangles": 27288,
       "drawCalls": 5,
       "bounds": {
@@ -44,7 +44,7 @@
     },
     "far": {
       "url": "/models/buildings/skyview-atlanta-far.glb",
-      "bytes": 497116,
+      "bytes": 132460,
       "triangles": 8688,
       "drawCalls": 5,
       "bounds": {

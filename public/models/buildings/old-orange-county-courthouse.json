@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/old-orange-county-courthouse-near.glb",
-      "bytes": 1961444,
+      "bytes": 470968,
       "triangles": 37209,
       "drawCalls": 8,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/old-orange-county-courthouse-far.glb",
-      "bytes": 218656,
+      "bytes": 64116,
       "triangles": 4655,
       "drawCalls": 7,
       "bounds": {

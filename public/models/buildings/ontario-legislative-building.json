@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/ontario-legislative-building-near.glb",
-      "bytes": 983092,
+      "bytes": 273836,
       "triangles": 24335,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/ontario-legislative-building-far.glb",
-      "bytes": 316596,
+      "bytes": 101664,
       "triangles": 7782,
       "drawCalls": 8,
       "bounds": {

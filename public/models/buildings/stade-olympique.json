@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/stade-olympique-near.glb",
-      "bytes": 816364,
+      "bytes": 227244,
       "triangles": 23136,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/stade-olympique-far.glb",
-      "bytes": 432176,
+      "bytes": 131112,
       "triangles": 10640,
       "drawCalls": 7,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/basilique-saint-sernin-near.glb",
-      "bytes": 2343028,
+      "bytes": 547860,
       "triangles": 36478,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/basilique-saint-sernin-far.glb",
-      "bytes": 493680,
+      "bytes": 129896,
       "triangles": 10246,
       "drawCalls": 8,
       "bounds": {

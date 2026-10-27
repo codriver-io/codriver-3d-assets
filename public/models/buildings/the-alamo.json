@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/the-alamo-near.glb",
-      "bytes": 384484,
+      "bytes": 94616,
       "triangles": 8594,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/the-alamo-far.glb",
-      "bytes": 108124,
+      "bytes": 37852,
       "triangles": 2302,
       "drawCalls": 6,
       "bounds": {

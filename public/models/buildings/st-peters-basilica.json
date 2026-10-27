@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/st-peters-basilica-near.glb",
-      "bytes": 1535072,
+      "bytes": 415440,
       "triangles": 36640,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/st-peters-basilica-far.glb",
-      "bytes": 460740,
+      "bytes": 136672,
       "triangles": 10707,
       "drawCalls": 8,
       "bounds": {

@@ -581,7 +581,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/estadio-nacional-costa-rica-near.glb",
-      "bytes": 1848248,
+      "bytes": 496600,
       "triangles": 35126,
       "drawCalls": 8,
       "bounds": {
@@ -599,7 +599,7 @@
     },
     "far": {
       "url": "/models/buildings/estadio-nacional-costa-rica-far.glb",
-      "bytes": 475416,
+      "bytes": 143352,
       "triangles": 8854,
       "drawCalls": 8,
       "bounds": {

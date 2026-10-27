@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tour-1000-de-la-gauchetiere-near.glb",
-      "bytes": 1132584,
+      "bytes": 271156,
       "triangles": 27862,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/tour-1000-de-la-gauchetiere-far.glb",
-      "bytes": 423828,
+      "bytes": 111596,
       "triangles": 10396,
       "drawCalls": 7,
       "bounds": {

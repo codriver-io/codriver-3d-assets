@@ -416,7 +416,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/casino-de-montreal-near.glb",
-      "bytes": 600316,
+      "bytes": 153520,
       "triangles": 7612,
       "drawCalls": 6,
       "bounds": {
@@ -434,7 +434,7 @@
     },
     "far": {
       "url": "/models/buildings/casino-de-montreal-far.glb",
-      "bytes": 218704,
+      "bytes": 63140,
       "triangles": 2720,
       "drawCalls": 6,
       "bounds": {

@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-de-l-alma-near.glb",
-      "bytes": 528412,
+      "bytes": 258056,
       "triangles": 13688,
       "drawCalls": 8,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-de-l-alma-far.glb",
-      "bytes": 256636,
+      "bytes": 135412,
       "triangles": 6396,
       "drawCalls": 7,
       "bounds": {

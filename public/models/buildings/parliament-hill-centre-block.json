@@ -1113,7 +1113,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/parliament-hill-centre-block-near.glb",
-      "bytes": 1506980,
+      "bytes": 390376,
       "triangles": 34292,
       "drawCalls": 8,
       "bounds": {
@@ -1131,7 +1131,7 @@
     },
     "far": {
       "url": "/models/buildings/parliament-hill-centre-block-far.glb",
-      "bytes": 402992,
+      "bytes": 113776,
       "triangles": 8734,
       "drawCalls": 8,
       "bounds": {

@@ -17,7 +17,7 @@ Use primary project/heritage references for dimensions and photographs for silho
 
 For bridges read [bridge structure](references/bridges.md); for buildings read [building structure](references/buildings.md). Establish the recognizable silhouette before small details. Prefer procedural geometry for repetition and editable parameters; keep editor source and export steps when importing manual work.
 
-Preserve openings, structural contacts and distinguishing features in both LODs. Merge compatible materials/geometry where it reduces draws. Prefer simple self-contained materials without new decoders. Measure actual exported default-scene triangles, draw calls and bytes. Inspect normals, winding, transforms and bounds after a GLB round trip.
+Preserve openings, structural contacts and distinguishing features in both LODs. Merge compatible materials/geometry where it reduces draws. Prefer simple self-contained materials. Use the shared meshopt exporter and loader described in `docs/meshopt-compression.md`; preserve names, extras, attachment attributes and vertex order. Additional decoders need an explicit project decision. Measure actual exported default-scene triangles, draw calls and bytes. Inspect normals, winding, transforms and bounds after a GLB round trip.
 
 ## Budgets and QA
 

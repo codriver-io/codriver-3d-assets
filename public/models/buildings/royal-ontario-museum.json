@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/royal-ontario-museum-near.glb",
-      "bytes": 546064,
+      "bytes": 144136,
       "triangles": 10455,
       "drawCalls": 13,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/royal-ontario-museum-far.glb",
-      "bytes": 90460,
+      "bytes": 35948,
       "triangles": 1801,
       "drawCalls": 8,
       "bounds": {

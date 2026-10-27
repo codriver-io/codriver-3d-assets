@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/old-city-hall-near.glb",
-      "bytes": 1526740,
+      "bytes": 401428,
       "triangles": 31271,
       "drawCalls": 8,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/old-city-hall-far.glb",
-      "bytes": 368376,
+      "bytes": 110164,
       "triangles": 7184,
       "drawCalls": 8,
       "bounds": {

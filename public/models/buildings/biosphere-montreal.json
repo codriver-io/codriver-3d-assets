@@ -18,13 +18,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/biosphere-montreal-near.glb",
-      "bytes": 1654788,
+      "bytes": 548152,
       "triangles": 53724,
       "drawCalls": 6
     },
     "far": {
       "url": "/models/buildings/biosphere-montreal-far.glb",
-      "bytes": 336568,
+      "bytes": 124544,
       "triangles": 10722,
       "drawCalls": 6
     }

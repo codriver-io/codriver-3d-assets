@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/perot-museum-near.glb",
-      "bytes": 1666912,
+      "bytes": 423256,
       "triangles": 21570,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/perot-museum-far.glb",
-      "bytes": 473504,
+      "bytes": 132296,
       "triangles": 6156,
       "drawCalls": 7,
       "bounds": {

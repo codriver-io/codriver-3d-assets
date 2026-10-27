@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bankers-hall-near.glb",
-      "bytes": 1045188,
+      "bytes": 215260,
       "triangles": 19139,
       "drawCalls": 10,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/bankers-hall-far.glb",
-      "bytes": 248136,
+      "bytes": 64312,
       "triangles": 4415,
       "drawCalls": 8,
       "bounds": {

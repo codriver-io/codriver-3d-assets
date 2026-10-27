@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/rheinturm-near.glb",
-      "bytes": 642504,
+      "bytes": 171420,
       "triangles": 18536,
       "drawCalls": 8,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/rheinturm-far.glb",
-      "bytes": 250304,
+      "bytes": 74592,
       "triangles": 6580,
       "drawCalls": 8,
       "bounds": {

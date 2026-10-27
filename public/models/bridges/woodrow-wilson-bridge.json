@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/woodrow-wilson-bridge-near.glb",
-      "bytes": 2398652,
+      "bytes": 1078920,
       "triangles": 70670,
       "drawCalls": 26,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/bridges/woodrow-wilson-bridge-far.glb",
-      "bytes": 835840,
+      "bytes": 402796,
       "triangles": 24548,
       "drawCalls": 7,
       "bounds": {

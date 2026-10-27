@@ -5602,7 +5602,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/canada-olympic-park-near.glb",
-      "bytes": 328556,
+      "bytes": 229756,
       "triangles": 8370,
       "drawCalls": 11,
       "bounds": {
@@ -5620,7 +5620,7 @@
     },
     "far": {
       "url": "/models/buildings/canada-olympic-park-far.glb",
-      "bytes": 118252,
+      "bytes": 88028,
       "triangles": 3135,
       "drawCalls": 5,
       "bounds": {

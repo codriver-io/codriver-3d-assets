@@ -127,7 +127,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/art-gallery-of-alberta-near.glb",
-      "bytes": 364732,
+      "bytes": 121168,
       "triangles": 13432,
       "drawCalls": 8,
       "bounds": {
@@ -145,7 +145,7 @@
     },
     "far": {
       "url": "/models/buildings/art-gallery-of-alberta-far.glb",
-      "bytes": 119104,
+      "bytes": 47492,
       "triangles": 3360,
       "drawCalls": 7,
       "bounds": {

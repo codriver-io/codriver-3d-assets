@@ -16783,7 +16783,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cite-de-carcassonne-near.glb",
-      "bytes": 2488208,
+      "bytes": 1247368,
       "triangles": 48117,
       "drawCalls": 9,
       "bounds": {
@@ -16801,7 +16801,7 @@
     },
     "far": {
       "url": "/models/buildings/cite-de-carcassonne-far.glb",
-      "bytes": 331864,
+      "bytes": 208184,
       "triangles": 11701,
       "drawCalls": 6,
       "bounds": {

@@ -65,7 +65,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/catedral-primada-de-colombia-near.glb",
-      "bytes": 1780080,
+      "bytes": 423872,
       "triangles": 31568,
       "drawCalls": 8,
       "bounds": {
@@ -83,7 +83,7 @@
     },
     "far": {
       "url": "/models/buildings/catedral-primada-de-colombia-far.glb",
-      "bytes": 368088,
+      "bytes": 105408,
       "triangles": 6734,
       "drawCalls": 8,
       "bounds": {

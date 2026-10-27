@@ -32,7 +32,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-petit-palais-near.glb",
-      "bytes": 539300,
+      "bytes": 144408,
       "triangles": 11273,
       "drawCalls": 7,
       "bounds": {
@@ -50,7 +50,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-petit-palais-far.glb",
-      "bytes": 272632,
+      "bytes": 81292,
       "triangles": 5349,
       "drawCalls": 7,
       "bounds": {

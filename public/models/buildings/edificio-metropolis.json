@@ -145,7 +145,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edificio-metropolis-near.glb",
-      "bytes": 932088,
+      "bytes": 267784,
       "triangles": 26136,
       "drawCalls": 6,
       "bounds": {
@@ -163,7 +163,7 @@
     },
     "far": {
       "url": "/models/buildings/edificio-metropolis-far.glb",
-      "bytes": 348568,
+      "bytes": 107308,
       "triangles": 8484,
       "drawCalls": 6,
       "bounds": {

@@ -198,7 +198,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/tawatina-bridge-near.glb",
-      "bytes": 1104308,
+      "bytes": 244780,
       "triangles": 16556,
       "drawCalls": 11,
       "bounds": {
@@ -216,7 +216,7 @@
     },
     "far": {
       "url": "/models/bridges/tawatina-bridge-far.glb",
-      "bytes": 221320,
+      "bytes": 60520,
       "triangles": 3208,
       "drawCalls": 6,
       "bounds": {

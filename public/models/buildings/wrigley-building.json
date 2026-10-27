@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/wrigley-building-near.glb",
-      "bytes": 959100,
+      "bytes": 224124,
       "triangles": 18902,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/wrigley-building-far.glb",
-      "bytes": 288968,
+      "bytes": 79264,
       "triangles": 6034,
       "drawCalls": 6,
       "bounds": {

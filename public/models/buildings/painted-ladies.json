@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/painted-ladies-near.glb",
-      "bytes": 618000,
+      "bytes": 170244,
       "triangles": 10956,
       "drawCalls": 13,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/painted-ladies-far.glb",
-      "bytes": 155600,
+      "bytes": 53184,
       "triangles": 2506,
       "drawCalls": 8,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/johan-cruijff-arena-near.glb",
-      "bytes": 743084,
+      "bytes": 213420,
       "triangles": 19186,
       "drawCalls": 12,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/johan-cruijff-arena-far.glb",
-      "bytes": 273616,
+      "bytes": 87000,
       "triangles": 7056,
       "drawCalls": 8,
       "bounds": {

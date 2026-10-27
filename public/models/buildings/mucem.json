@@ -1921,7 +1921,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/mucem-near.glb",
-      "bytes": 2088648,
+      "bytes": 569248,
       "triangles": 50050,
       "drawCalls": 7,
       "bounds": {
@@ -1939,7 +1939,7 @@
     },
     "far": {
       "url": "/models/buildings/mucem-far.glb",
-      "bytes": 472356,
+      "bytes": 125492,
       "triangles": 11460,
       "drawCalls": 7,
       "bounds": {

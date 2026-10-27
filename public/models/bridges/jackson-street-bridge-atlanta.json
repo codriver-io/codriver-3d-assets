@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/jackson-street-bridge-atlanta-near.glb",
-      "bytes": 189468,
+      "bytes": 104912,
       "triangles": 6346,
       "drawCalls": 7,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/jackson-street-bridge-atlanta-far.glb",
-      "bytes": 96996,
+      "bytes": 59712,
       "triangles": 3164,
       "drawCalls": 5,
       "bounds": {

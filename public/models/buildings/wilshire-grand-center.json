@@ -32,7 +32,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/wilshire-grand-center-near.glb",
-      "bytes": 426340,
+      "bytes": 125456,
       "triangles": 8449,
       "drawCalls": 12,
       "bounds": {
@@ -50,7 +50,7 @@
     },
     "far": {
       "url": "/models/buildings/wilshire-grand-center-far.glb",
-      "bytes": 269312,
+      "bytes": 78808,
       "triangles": 5295,
       "drawCalls": 8,
       "bounds": {

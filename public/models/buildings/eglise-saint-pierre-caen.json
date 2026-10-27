@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/eglise-saint-pierre-caen-near.glb",
-      "bytes": 1756444,
+      "bytes": 440696,
       "triangles": 37944,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/eglise-saint-pierre-caen-far.glb",
-      "bytes": 491300,
+      "bytes": 143940,
       "triangles": 10766,
       "drawCalls": 7,
       "bounds": {

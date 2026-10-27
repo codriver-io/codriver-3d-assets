@@ -105,7 +105,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/parthenon-nashville-near.glb",
-      "bytes": 1191108,
+      "bytes": 323344,
       "triangles": 29906,
       "drawCalls": 3,
       "bounds": {
@@ -123,7 +123,7 @@
     },
     "far": {
       "url": "/models/buildings/parthenon-nashville-far.glb",
-      "bytes": 365008,
+      "bytes": 104916,
       "triangles": 8474,
       "drawCalls": 3,
       "bounds": {

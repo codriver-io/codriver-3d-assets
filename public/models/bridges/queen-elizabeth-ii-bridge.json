@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/queen-elizabeth-ii-bridge-near.glb",
-      "bytes": 2832576,
+      "bytes": 1211428,
       "triangles": 83202,
       "drawCalls": 23,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/bridges/queen-elizabeth-ii-bridge-far.glb",
-      "bytes": 878456,
+      "bytes": 391680,
       "triangles": 24184,
       "drawCalls": 8,
       "bounds": {

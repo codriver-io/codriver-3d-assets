@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/freedom-tower-miami-near.glb",
-      "bytes": 1029856,
+      "bytes": 269120,
       "triangles": 24385,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/freedom-tower-miami-far.glb",
-      "bytes": 369196,
+      "bytes": 101608,
       "triangles": 8039,
       "drawCalls": 7,
       "bounds": {

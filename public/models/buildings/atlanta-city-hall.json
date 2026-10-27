@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/atlanta-city-hall-near.glb",
-      "bytes": 1502656,
+      "bytes": 383220,
       "triangles": 32639,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/atlanta-city-hall-far.glb",
-      "bytes": 443004,
+      "bytes": 124720,
       "triangles": 9633,
       "drawCalls": 6,
       "bounds": {

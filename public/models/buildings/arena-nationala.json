@@ -235,7 +235,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/arena-nationala-near.glb",
-      "bytes": 1658288,
+      "bytes": 451996,
       "triangles": 34100,
       "drawCalls": 11,
       "bounds": {
@@ -253,7 +253,7 @@
     },
     "far": {
       "url": "/models/buildings/arena-nationala-far.glb",
-      "bytes": 492728,
+      "bytes": 149264,
       "triangles": 9398,
       "drawCalls": 8,
       "bounds": {

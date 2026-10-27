@@ -28,7 +28,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/grande-arche-near.glb",
-      "bytes": 2225168,
+      "bytes": 534584,
       "triangles": 41122,
       "drawCalls": 6,
       "bounds": {
@@ -46,7 +46,7 @@
     },
     "far": {
       "url": "/models/buildings/grande-arche-far.glb",
-      "bytes": 341476,
+      "bytes": 86632,
       "triangles": 6236,
       "drawCalls": 5,
       "bounds": {

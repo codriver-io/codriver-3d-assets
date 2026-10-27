@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/calgary-tower-near.glb",
-      "bytes": 398412,
+      "bytes": 118676,
       "triangles": 12588,
       "drawCalls": 9,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/calgary-tower-far.glb",
-      "bytes": 66896,
+      "bytes": 30044,
       "triangles": 2636,
       "drawCalls": 7,
       "bounds": {

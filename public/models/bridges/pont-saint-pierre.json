@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-saint-pierre-near.glb",
-      "bytes": 2924360,
+      "bytes": 1301032,
       "triangles": 52228,
       "drawCalls": 14,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-saint-pierre-far.glb",
-      "bytes": 907384,
+      "bytes": 424184,
       "triangles": 18438,
       "drawCalls": 8,
       "bounds": {

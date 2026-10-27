@@ -599,7 +599,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/chateau-de-caen-near.glb",
-      "bytes": 2040424,
+      "bytes": 1003736,
       "triangles": 38681,
       "drawCalls": 10,
       "bounds": {
@@ -617,7 +617,7 @@
     },
     "far": {
       "url": "/models/buildings/chateau-de-caen-far.glb",
-      "bytes": 315520,
+      "bytes": 188060,
       "triangles": 6110,
       "drawCalls": 8,
       "bounds": {

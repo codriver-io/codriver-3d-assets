@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/lake-eola-fountain-near.glb",
-      "bytes": 329624,
+      "bytes": 94388,
       "triangles": 6536,
       "drawCalls": 6,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/lake-eola-fountain-far.glb",
-      "bytes": 183832,
+      "bytes": 55564,
       "triangles": 2872,
       "drawCalls": 6,
       "bounds": {

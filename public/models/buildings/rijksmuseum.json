@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/rijksmuseum-near.glb",
-      "bytes": 323636,
+      "bytes": 94764,
       "triangles": 5859,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/rijksmuseum-far.glb",
-      "bytes": 260552,
+      "bytes": 78332,
       "triangles": 4688,
       "drawCalls": 8,
       "bounds": {

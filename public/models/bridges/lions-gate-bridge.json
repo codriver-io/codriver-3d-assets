@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/lions-gate-bridge-near.glb",
-      "bytes": 3301400,
+      "bytes": 1381020,
       "triangles": 69854,
       "drawCalls": 16,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/lions-gate-bridge-far.glb",
-      "bytes": 966084,
+      "bytes": 438540,
       "triangles": 25022,
       "drawCalls": 5,
       "bounds": {

@@ -363,7 +363,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/georgia-aquarium-near.glb",
-      "bytes": 1887512,
+      "bytes": 459632,
       "triangles": 33415,
       "drawCalls": 7,
       "bounds": {
@@ -381,7 +381,7 @@
     },
     "far": {
       "url": "/models/buildings/georgia-aquarium-far.glb",
-      "bytes": 401976,
+      "bytes": 110360,
       "triangles": 7348,
       "drawCalls": 7,
       "bounds": {

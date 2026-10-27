@@ -733,7 +733,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/memorial-de-caen-near.glb",
-      "bytes": 622008,
+      "bytes": 137404,
       "triangles": 7958,
       "drawCalls": 9,
       "bounds": {
@@ -751,7 +751,7 @@
     },
     "far": {
       "url": "/models/buildings/memorial-de-caen-far.glb",
-      "bytes": 64640,
+      "bytes": 26244,
       "triangles": 768,
       "drawCalls": 7,
       "bounds": {

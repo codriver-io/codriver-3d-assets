@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/the-bow-near.glb",
-      "bytes": 330064,
+      "bytes": 91928,
       "triangles": 7045,
       "drawCalls": 8,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/the-bow-far.glb",
-      "bytes": 154224,
+      "bytes": 50908,
       "triangles": 3192,
       "drawCalls": 7,
       "bounds": {

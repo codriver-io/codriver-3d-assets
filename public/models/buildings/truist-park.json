@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/truist-park-near.glb",
-      "bytes": 1465704,
+      "bytes": 384884,
       "triangles": 27025,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/truist-park-far.glb",
-      "bytes": 443200,
+      "bytes": 129812,
       "triangles": 8101,
       "drawCalls": 8,
       "bounds": {

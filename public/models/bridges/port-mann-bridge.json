@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/port-mann-bridge-near.glb",
-      "bytes": 3073928,
+      "bytes": 1337892,
       "triangles": 74716,
       "drawCalls": 28,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/port-mann-bridge-far.glb",
-      "bytes": 838108,
+      "bytes": 402444,
       "triangles": 28790,
       "drawCalls": 7,
       "bounds": {

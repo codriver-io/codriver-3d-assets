@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-de-normandie-near.glb",
-      "bytes": 3777516,
+      "bytes": 1515140,
       "triangles": 86928,
       "drawCalls": 25,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-de-normandie-far.glb",
-      "bytes": 689360,
+      "bytes": 324156,
       "triangles": 25176,
       "drawCalls": 8,
       "bounds": {

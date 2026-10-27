@@ -645,7 +645,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/pavillon-roger-gaudry-near.glb",
-      "bytes": 928272,
+      "bytes": 214144,
       "triangles": 18688,
       "drawCalls": 7,
       "bounds": {
@@ -663,7 +663,7 @@
     },
     "far": {
       "url": "/models/buildings/pavillon-roger-gaudry-far.glb",
-      "bytes": 373320,
+      "bytes": 100868,
       "triangles": 7764,
       "drawCalls": 7,
       "bounds": {

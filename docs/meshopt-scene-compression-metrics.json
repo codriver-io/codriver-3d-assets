@@ -1,0 +1,94 @@
+{
+  "write": true,
+  "results": [
+    {
+      "id": "jacques-cartier-scene",
+      "before": {
+        "bytes": 3341891,
+        "sha256": "84f9c87f20f06cadaedb13c350782ff441fceecabfd43f9a4c2ffa7799b68fa4"
+      },
+      "after": {
+        "bytes": 1152609,
+        "sha256": "8cab04b2a4827fdde4a8c3c9ab5f4156802c95076c5f5aedbb3dbf93fca2bc7f"
+      },
+      "models": [
+        {
+          "name": "near.glb",
+          "before": {
+            "bytes": 2773164,
+            "triangles": 48602,
+            "drawCalls": 34,
+            "brotliQ11Bytes": 367195,
+            "geometryBytes": 2730076,
+            "sha256": "c49389827a9ec90a1d87cb091d579f4b13ea3281ba42e3d5a7f2368375f65660"
+          },
+          "after": {
+            "bytes": 1147816,
+            "triangles": 48602,
+            "drawCalls": 34,
+            "brotliQ11Bytes": 335746,
+            "geometryBytes": 1815652,
+            "sha256": "17bbb157ec29326d0eda0da6d8c2488855e945cd0b9018b25b73ac62c0b1a979"
+          }
+        },
+        {
+          "name": "far.glb",
+          "before": {
+            "bytes": 1215316,
+            "triangles": 25406,
+            "drawCalls": 6,
+            "brotliQ11Bytes": 220981,
+            "geometryBytes": 1206324,
+            "sha256": "fa77176a10c355326a24773de6951d2f587f4fba3ee0d41230b973de09c02712"
+          },
+          "after": {
+            "bytes": 521540,
+            "triangles": 25406,
+            "drawCalls": 6,
+            "brotliQ11Bytes": 192119,
+            "geometryBytes": 811116,
+            "sha256": "0e2ef5b270b7fe096ac6f1c4dc2a57a541d26b46543c0a384fb1c78198e332d9"
+          }
+        },
+        {
+          "name": "cityscape.glb",
+          "before": {
+            "bytes": 3346468,
+            "triangles": 69338,
+            "drawCalls": 37,
+            "brotliQ11Bytes": 627676,
+            "geometryBytes": 3300256,
+            "sha256": "b12072c2a476843a1b5d1126ec898e93e8ea2ad61df74b4a51d4b6cc5f8a25e6"
+          },
+          "after": {
+            "bytes": 746312,
+            "triangles": 69338,
+            "drawCalls": 37,
+            "brotliQ11Bytes": 134286,
+            "geometryBytes": 2213332,
+            "sha256": "584e08da85a8b899f933a2282e4c2d87e3942b0a172f74e310a37910fe4cde29"
+          }
+        },
+        {
+          "name": "world.glb",
+          "before": {
+            "bytes": 3347288,
+            "triangles": 69338,
+            "drawCalls": 37,
+            "brotliQ11Bytes": 715509,
+            "geometryBytes": 3300256,
+            "sha256": "06be298c8bca26eaeb14056d04585f8276169be4e0429da5cc1ac50f5c1be3ba"
+          },
+          "after": {
+            "bytes": 755516,
+            "triangles": 69338,
+            "drawCalls": 37,
+            "brotliQ11Bytes": 144861,
+            "geometryBytes": 2213332,
+            "sha256": "c916ca074a398503c36eed7ab61d31631e9afd5e8ef8d36c9ef654d1d3231fc4"
+          }
+        }
+      ]
+    }
+  ]
+}

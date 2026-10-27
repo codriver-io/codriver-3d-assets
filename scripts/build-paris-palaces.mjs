@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { Box3 } from 'three';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { PARIS_PALACES, createParisPalace } from '../src/peregrine/landmarks/paris-palaces-geometry.js';
 import { glbMetrics } from './asset-catalog.mjs';
 import { licenseMetadata, stampGlbLicense } from './license-models.mjs';
@@ -14,7 +14,7 @@ for(const [id,spec] of Object.entries(PARIS_PALACES)){
   const assets={};
   for(const detail of ['near','far']){
     const model=createParisPalace(id,{detail});const bounds=new Box3().setFromObject(model);
-    const bytes=stampGlbLicense(Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true})),metadata);
+    const bytes=stampGlbLicense(Buffer.from(await exportLandmarkGLB(model,{binary:true})),metadata);
     const name=`${id}-${detail}.glb`;
     await writeFile(new URL(name,out),bytes);
     assets[detail]={url:`/models/buildings/${name}`,...glbMetrics(bytes),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};

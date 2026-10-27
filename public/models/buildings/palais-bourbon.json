@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palais-bourbon-near.glb",
-      "bytes": 744296,
+      "bytes": 208908,
       "triangles": 20947,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/palais-bourbon-far.glb",
-      "bytes": 374656,
+      "bytes": 108380,
       "triangles": 8546,
       "drawCalls": 8,
       "bounds": {

@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/vincent-thomas-bridge-near.glb",
-      "bytes": 2832752,
+      "bytes": 1257064,
       "triangles": 79072,
       "drawCalls": 23,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/vincent-thomas-bridge-far.glb",
-      "bytes": 945656,
+      "bytes": 447752,
       "triangles": 26216,
       "drawCalls": 9,
       "bounds": {

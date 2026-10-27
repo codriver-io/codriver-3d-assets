@@ -46,13 +46,13 @@
   "assets": {
     "near": {
       "url": "/models/bridges/paris-pont-bir-hakeim-near.glb",
-      "bytes": 4405024,
+      "bytes": 1751500,
       "triangles": 78908,
       "drawCalls": 7
     },
     "far": {
       "url": "/models/bridges/paris-pont-bir-hakeim-far.glb",
-      "bytes": 499560,
+      "bytes": 270284,
       "triangles": 12600,
       "drawCalls": 6
     }

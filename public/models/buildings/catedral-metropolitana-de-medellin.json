@@ -112,7 +112,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/catedral-metropolitana-de-medellin-near.glb",
-      "bytes": 1719016,
+      "bytes": 443616,
       "triangles": 36218,
       "drawCalls": 8,
       "bounds": {
@@ -130,7 +130,7 @@
     },
     "far": {
       "url": "/models/buildings/catedral-metropolitana-de-medellin-far.glb",
-      "bytes": 281312,
+      "bytes": 87428,
       "triangles": 6344,
       "drawCalls": 8,
       "bounds": {

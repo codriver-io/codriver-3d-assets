@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/chateau-de-vincennes-near.glb",
-      "bytes": 585016,
+      "bytes": 154780,
       "triangles": 12661,
       "drawCalls": 5,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/chateau-de-vincennes-far.glb",
-      "bytes": 318860,
+      "bytes": 88288,
       "triangles": 6944,
       "drawCalls": 4,
       "bounds": {

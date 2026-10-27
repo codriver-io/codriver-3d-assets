@@ -118,7 +118,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/centre-pompidou-near.glb",
-      "bytes": 1184080,
+      "bytes": 339436,
       "triangles": 29868,
       "drawCalls": 8,
       "bounds": {
@@ -136,7 +136,7 @@
     },
     "far": {
       "url": "/models/buildings/centre-pompidou-far.glb",
-      "bytes": 491356,
+      "bytes": 154652,
       "triangles": 11332,
       "drawCalls": 8,
       "bounds": {

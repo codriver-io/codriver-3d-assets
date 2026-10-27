@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/marina-city-near.glb",
-      "bytes": 1959156,
+      "bytes": 570692,
       "triangles": 58565,
       "drawCalls": 10,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/marina-city-far.glb",
-      "bytes": 415708,
+      "bytes": 125804,
       "triangles": 11477,
       "drawCalls": 7,
       "bounds": {

@@ -211,3 +211,7 @@ The gallery above shows the current exports, including the [Louvre window and HÃ
 ### Jacques-Cartier bridge revision
 
 The bridge now includes the roof-supporting island pavilion, four towers, deeper approach trusses and four separately downloadable island ramps. [Placement contract and mode evidence](docs/assets/jacques-cartier-placement.md). The public site also adds model thumbnails, city filters, direct detail-level downloads and a mobile model sheet.
+
+## Compact GLB geometry
+
+All exported landmarks use meshopt compression and quantized attributes. Load with an engine supporting `EXT_meshopt_compression` and `KHR_mesh_quantization`; the library inspectors include the decoder. See [the codec, exact settings, CPU-only attachment inputs and reproducible conversion commands](docs/meshopt-compression.md). Original procedural source stays editable in local metres.

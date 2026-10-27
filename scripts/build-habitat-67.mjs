@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { Box3 } from 'three';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createHabitat67 } from '../src/peregrine/landmarks/habitat-67-geometry.js';
 import { HABITAT } from '../src/peregrine/landmarks/habitat-67-config.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -11,7 +11,7 @@ const out = new URL('../public/models/buildings/', import.meta.url), assets = {}
 await mkdir(out, { recursive: true });
 for (const detail of ['near', 'far']) {
   const model = createHabitat67({ detail }), box = new Box3().setFromObject(model);
-  const bytes = Buffer.from(await new GLTFExporter().parseAsync(model, { binary: true }));
+  const bytes = Buffer.from(await exportLandmarkGLB(model, { binary: true }));
   const filename = `habitat-67-${detail}.glb`;
   await writeFile(new URL(filename, out), bytes);
   assets[detail] = { url: `/models/buildings/${filename}`, ...glbMetrics(bytes), bounds: { min: box.min.toArray(), max: box.max.toArray() } };

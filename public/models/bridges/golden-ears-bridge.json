@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/golden-ears-bridge-near.glb",
-      "bytes": 3389356,
+      "bytes": 1479604,
       "triangles": 76728,
       "drawCalls": 28,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/golden-ears-bridge-far.glb",
-      "bytes": 815140,
+      "bytes": 421188,
       "triangles": 24016,
       "drawCalls": 8,
       "bounds": {

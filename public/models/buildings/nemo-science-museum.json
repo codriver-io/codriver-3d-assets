@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/nemo-science-museum-near.glb",
-      "bytes": 1301320,
+      "bytes": 270360,
       "triangles": 16577,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/nemo-science-museum-far.glb",
-      "bytes": 359740,
+      "bytes": 89204,
       "triangles": 4531,
       "drawCalls": 6,
       "bounds": {

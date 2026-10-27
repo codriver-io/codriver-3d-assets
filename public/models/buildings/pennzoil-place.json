@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/pennzoil-place-near.glb",
-      "bytes": 2420708,
+      "bytes": 488376,
       "triangles": 44651,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/pennzoil-place-far.glb",
-      "bytes": 432972,
+      "bytes": 104596,
       "triangles": 7853,
       "drawCalls": 6,
       "bounds": {

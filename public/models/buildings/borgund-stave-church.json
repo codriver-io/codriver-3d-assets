@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/borgund-stave-church-near.glb",
-      "bytes": 1439448,
+      "bytes": 418312,
       "triangles": 29264,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/borgund-stave-church-far.glb",
-      "bytes": 304208,
+      "bytes": 95392,
       "triangles": 5924,
       "drawCalls": 6,
       "bounds": {

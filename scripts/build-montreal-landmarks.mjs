@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createVictoria, createJacquesCartier } from '../src/peregrine/landmarks/montreal-bridges-geometry.js';
 import { createBiosphere } from '../src/peregrine/landmarks/biosphere-geometry.js';
 import { VICTORIA,JACQUES,BIOSPHERE } from '../src/peregrine/landmarks/montreal-profiles.js';
@@ -14,7 +14,7 @@ for(const [spec,create,profile] of [[VICTORIA.CHAMPLAIN,createVictoria,VICTORIA]
   const dir=profile?'landmarks':'buildings',out=new URL(`../public/models/${dir}/`,import.meta.url),assets={};
   await mkdir(out,{recursive:true});
   for(const detail of ['near','far']){
-    const model=create({detail}),data=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true}));
+    const model=create({detail}),data=Buffer.from(await exportLandmarkGLB(model,{binary:true}));
     const name=`${spec.id}-${detail}.glb`;
     await writeFile(new URL(name,out),data);
     assets[detail]={url:`/models/${dir}/${name}`,...glbMetrics(data)};

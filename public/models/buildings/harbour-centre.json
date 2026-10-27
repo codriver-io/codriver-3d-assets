@@ -333,7 +333,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/harbour-centre-near.glb",
-      "bytes": 1630436,
+      "bytes": 408520,
       "triangles": 30062,
       "drawCalls": 8,
       "bounds": {
@@ -351,7 +351,7 @@
     },
     "far": {
       "url": "/models/buildings/harbour-centre-far.glb",
-      "bytes": 309676,
+      "bytes": 85452,
       "triangles": 5604,
       "drawCalls": 8,
       "bounds": {

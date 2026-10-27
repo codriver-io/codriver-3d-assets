@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-de-bercy-near.glb",
-      "bytes": 2577680,
+      "bytes": 1224964,
       "triangles": 44752,
       "drawCalls": 16,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-de-bercy-far.glb",
-      "bytes": 821916,
+      "bytes": 402796,
       "triangles": 15168,
       "drawCalls": 8,
       "bounds": {

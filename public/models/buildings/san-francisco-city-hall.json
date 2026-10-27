@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/san-francisco-city-hall-near.glb",
-      "bytes": 572740,
+      "bytes": 162324,
       "triangles": 12112,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/san-francisco-city-hall-far.glb",
-      "bytes": 234116,
+      "bytes": 74620,
       "triangles": 4682,
       "drawCalls": 7,
       "bounds": {

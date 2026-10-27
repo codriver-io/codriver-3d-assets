@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/capitol-records-building-near.glb",
-      "bytes": 497036,
+      "bytes": 157136,
       "triangles": 15430,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/capitol-records-building-far.glb",
-      "bytes": 235708,
+      "bytes": 79232,
       "triangles": 6274,
       "drawCalls": 7,
       "bounds": {

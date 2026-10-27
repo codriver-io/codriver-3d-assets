@@ -535,7 +535,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/torre-colpatria-near.glb",
-      "bytes": 1230188,
+      "bytes": 235332,
       "triangles": 22434,
       "drawCalls": 9,
       "bounds": {
@@ -553,7 +553,7 @@
     },
     "far": {
       "url": "/models/buildings/torre-colpatria-far.glb",
-      "bytes": 126964,
+      "bytes": 41368,
       "triangles": 2024,
       "drawCalls": 8,
       "bounds": {

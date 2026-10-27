@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bc-parliament-buildings-near.glb",
-      "bytes": 2096088,
+      "bytes": 519376,
       "triangles": 52221,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/bc-parliament-buildings-far.glb",
-      "bytes": 464164,
+      "bytes": 136432,
       "triangles": 11073,
       "drawCalls": 8,
       "bounds": {

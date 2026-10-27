@@ -1783,7 +1783,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/skybridge-vancouver-near.glb",
-      "bytes": 1720276,
+      "bytes": 847264,
       "triangles": 29308,
       "drawCalls": 10,
       "bounds": {
@@ -1801,7 +1801,7 @@
     },
     "far": {
       "url": "/models/bridges/skybridge-vancouver-far.glb",
-      "bytes": 822552,
+      "bytes": 431072,
       "triangles": 16604,
       "drawCalls": 9,
       "bounds": {

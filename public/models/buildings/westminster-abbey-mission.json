@@ -969,7 +969,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/westminster-abbey-mission-near.glb",
-      "bytes": 207304,
+      "bytes": 58768,
       "triangles": 3906,
       "drawCalls": 8,
       "bounds": {
@@ -987,7 +987,7 @@
     },
     "far": {
       "url": "/models/buildings/westminster-abbey-mission-far.glb",
-      "bytes": 112968,
+      "bytes": 37604,
       "triangles": 2039,
       "drawCalls": 7,
       "bounds": {

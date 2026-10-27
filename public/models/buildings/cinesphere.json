@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cinesphere-near.glb",
-      "bytes": 2414588,
+      "bytes": 653312,
       "triangles": 49501,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/cinesphere-far.glb",
-      "bytes": 498920,
+      "bytes": 142936,
       "triangles": 8901,
       "drawCalls": 7,
       "bounds": {

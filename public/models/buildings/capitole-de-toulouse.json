@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/capitole-de-toulouse-near.glb",
-      "bytes": 962180,
+      "bytes": 237500,
       "triangles": 20118,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/capitole-de-toulouse-far.glb",
-      "bytes": 271364,
+      "bytes": 76952,
       "triangles": 5150,
       "drawCalls": 7,
       "bounds": {

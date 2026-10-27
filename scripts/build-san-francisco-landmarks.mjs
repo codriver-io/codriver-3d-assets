@@ -4,7 +4,7 @@
 // A landmark is exported whether or not its spec is `ready`; `ready` only gates
 // the runtime. Afterwards the catalog is revalidated against the fresh bytes.
 import { mkdir, writeFile } from 'node:fs/promises';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { Box3 } from 'three';
 import { SAN_FRANCISCO_LANDMARKS } from '../src/peregrine/landmarks/san-francisco/authoring.js';
 import { disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
@@ -25,7 +25,7 @@ for (const landmark of SAN_FRANCISCO_LANDMARKS.filter((l) => all || wanted.inclu
     const model = landmark.create({ detail }), bounds = new Box3().setFromObject(model);
     // Free-standing structures drop the app-only `bridgeLift` attribute, as the app export does.
     if (spec.kind !== 'bridge' || spec.footprintless) model.traverse((o) => { if (o.isMesh && o.geometry.getAttribute('bridgeLift')) o.geometry.deleteAttribute('bridgeLift'); });
-    const bytes = Buffer.from(await new GLTFExporter().parseAsync(model, { binary: true }));
+    const bytes = Buffer.from(await exportLandmarkGLB(model, { binary: true }));
     const file = `${id}-${detail}.glb`; await writeFile(new URL(file, out), bytes);
     assets[detail] = { url: `/models/${dir}/${file}`, ...glbMetrics(bytes), bounds: { min: bounds.min.toArray(), max: bounds.max.toArray() } };
     disposeChamplain(model);

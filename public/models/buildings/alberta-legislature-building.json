@@ -368,7 +368,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/alberta-legislature-building-near.glb",
-      "bytes": 1633052,
+      "bytes": 391304,
       "triangles": 34724,
       "drawCalls": 8,
       "bounds": {
@@ -386,7 +386,7 @@
     },
     "far": {
       "url": "/models/buildings/alberta-legislature-building-far.glb",
-      "bytes": 430800,
+      "bytes": 116292,
       "triangles": 8896,
       "drawCalls": 8,
       "bounds": {

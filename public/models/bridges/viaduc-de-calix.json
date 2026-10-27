@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/viaduc-de-calix-near.glb",
-      "bytes": 2530168,
+      "bytes": 1165164,
       "triangles": 39968,
       "drawCalls": 24,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/viaduc-de-calix-far.glb",
-      "bytes": 802560,
+      "bytes": 379884,
       "triangles": 13048,
       "drawCalls": 3,
       "bounds": {

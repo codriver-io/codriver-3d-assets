@@ -697,7 +697,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/bridge-of-peace-tbilisi-near.glb",
-      "bytes": 1552520,
+      "bytes": 782752,
       "triangles": 24880,
       "drawCalls": 9,
       "bounds": {
@@ -715,7 +715,7 @@
     },
     "far": {
       "url": "/models/bridges/bridge-of-peace-tbilisi-far.glb",
-      "bytes": 318424,
+      "bytes": 169576,
       "triangles": 4056,
       "drawCalls": 9,
       "bounds": {

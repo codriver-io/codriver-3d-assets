@@ -7580,7 +7580,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tower-of-london-near.glb",
-      "bytes": 2252064,
+      "bytes": 537692,
       "triangles": 48888,
       "drawCalls": 8,
       "bounds": {
@@ -7598,7 +7598,7 @@
     },
     "far": {
       "url": "/models/buildings/tower-of-london-far.glb",
-      "bytes": 466728,
+      "bytes": 125348,
       "triangles": 10139,
       "drawCalls": 8,
       "bounds": {

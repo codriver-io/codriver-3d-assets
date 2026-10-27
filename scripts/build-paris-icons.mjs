@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { Box3 } from 'three';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { PARIS_ICONS, createParisIcon } from '../src/peregrine/landmarks/paris-icons-geometry.js';
 import { glbMetrics } from './asset-catalog.mjs';
 import { licenseModels } from './license-models.mjs';
@@ -11,7 +11,7 @@ for(const spec of PARIS_ICONS){
   const assets={};
   for(const detail of ['near','far']){
     const model=createParisIcon(spec.id,{detail}),bounds=new Box3().setFromObject(model);
-    const bytes=Buffer.from(await new GLTFExporter().parseAsync(model,{binary:true}));
+    const bytes=Buffer.from(await exportLandmarkGLB(model,{binary:true}));
     const name=`${spec.id}-${detail}.glb`;
     await writeFile(new URL(name,out),bytes);
     assets[detail]={url:`/models/buildings/${name}`,...glbMetrics(bytes),bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};

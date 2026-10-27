@@ -195,7 +195,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tarrant-county-courthouse-near.glb",
-      "bytes": 915200,
+      "bytes": 244920,
       "triangles": 18186,
       "drawCalls": 8,
       "bounds": {
@@ -213,7 +213,7 @@
     },
     "far": {
       "url": "/models/buildings/tarrant-county-courthouse-far.glb",
-      "bytes": 221952,
+      "bytes": 70332,
       "triangles": 4464,
       "drawCalls": 8,
       "bounds": {

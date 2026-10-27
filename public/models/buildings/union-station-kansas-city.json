@@ -427,7 +427,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/union-station-kansas-city-near.glb",
-      "bytes": 461856,
+      "bytes": 122548,
       "triangles": 8113,
       "drawCalls": 6,
       "bounds": {
@@ -445,7 +445,7 @@
     },
     "far": {
       "url": "/models/buildings/union-station-kansas-city-far.glb",
-      "bytes": 191952,
+      "bytes": 58720,
       "triangles": 3173,
       "drawCalls": 6,
       "bounds": {

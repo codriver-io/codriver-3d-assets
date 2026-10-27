@@ -502,7 +502,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/uspenski-cathedral-near.glb",
-      "bytes": 1483068,
+      "bytes": 404376,
       "triangles": 36385,
       "drawCalls": 6,
       "bounds": {
@@ -520,7 +520,7 @@
     },
     "far": {
       "url": "/models/buildings/uspenski-cathedral-far.glb",
-      "bytes": 360464,
+      "bytes": 110016,
       "triangles": 8768,
       "drawCalls": 6,
       "bounds": {

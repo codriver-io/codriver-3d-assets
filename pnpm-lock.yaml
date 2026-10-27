@@ -18,6 +18,9 @@ importers:
       esbuild:
         specifier: 0.28.2
         version: 0.28.2
+      meshoptimizer:
+        specifier: 0.22.0
+        version: 0.22.0
       playwright:
         specifier: 1.62.1
         version: 1.62.1
@@ -615,6 +618,9 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
+  meshoptimizer@0.22.0:
+    resolution: {integrity: sha512-IebiK79sqIy+E4EgOr+CAw+Ke8hAspXKzBd0JdgEmPHiAwmvEj2S4h1rfvo+o/BnfEYd/jAOg5IeeIjzlzSnDg==}
+
   miniflare@5.20260911.0-alpha:
     resolution: {integrity: sha512-CRieJmvHx+7rNqnA5SKdsYsER6rfkUIE/jruIUw+fLhsQ4sORfuMtr3+FQzsQ9/y8lhk061V4Fl1DFdHiyBB6g==}
     engines: {node: '>=22.0.0'}
@@ -1103,6 +1109,8 @@ snapshots:
     optional: true
 
   kleur@4.1.5: {}
+
+  meshoptimizer@0.22.0: {}
 
   miniflare@5.20260911.0-alpha:
     dependencies:

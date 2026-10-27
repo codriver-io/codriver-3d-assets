@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/chords-bridge-near.glb",
-      "bytes": 1002292,
+      "bytes": 436360,
       "triangles": 26642,
       "drawCalls": 10,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/chords-bridge-far.glb",
-      "bytes": 207596,
+      "bytes": 111756,
       "triangles": 6394,
       "drawCalls": 10,
       "bounds": {

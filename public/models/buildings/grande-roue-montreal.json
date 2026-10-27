@@ -22,13 +22,13 @@
   "assets": {
     "near": {
       "url": "/models/buildings/grande-roue-montreal-near.glb",
-      "bytes": 753908,
+      "bytes": 212672,
       "triangles": 19666,
       "drawCalls": 6
     },
     "far": {
       "url": "/models/buildings/grande-roue-montreal-far.glb",
-      "bytes": 283168,
+      "bytes": 82484,
       "triangles": 5792,
       "drawCalls": 6
     }

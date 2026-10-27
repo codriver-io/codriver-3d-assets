@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/burrard-street-bridge-near.glb",
-      "bytes": 4081564,
+      "bytes": 1686736,
       "triangles": 82144,
       "drawCalls": 18,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/burrard-street-bridge-far.glb",
-      "bytes": 957080,
+      "bytes": 448880,
       "triangles": 23636,
       "drawCalls": 7,
       "bounds": {

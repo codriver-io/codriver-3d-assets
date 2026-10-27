@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/the-shard-near.glb",
-      "bytes": 1497240,
+      "bytes": 391444,
       "triangles": 37358,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/the-shard-far.glb",
-      "bytes": 352224,
+      "bytes": 106356,
       "triangles": 7122,
       "drawCalls": 8,
       "bounds": {

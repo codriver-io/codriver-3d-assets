@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/willis-tower-near.glb",
-      "bytes": 2185120,
+      "bytes": 375888,
       "triangles": 40460,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/willis-tower-far.glb",
-      "bytes": 414064,
+      "bytes": 89984,
       "triangles": 7610,
       "drawCalls": 6,
       "bounds": {

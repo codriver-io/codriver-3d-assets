@@ -397,7 +397,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/arctic-cathedral-near.glb",
-      "bytes": 930928,
+      "bytes": 239320,
       "triangles": 12640,
       "drawCalls": 8,
       "bounds": {
@@ -415,7 +415,7 @@
     },
     "far": {
       "url": "/models/buildings/arctic-cathedral-far.glb",
-      "bytes": 139916,
+      "bytes": 48284,
       "triangles": 1900,
       "drawCalls": 6,
       "bounds": {

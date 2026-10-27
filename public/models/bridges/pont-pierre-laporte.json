@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-pierre-laporte-near.glb",
-      "bytes": 722764,
+      "bytes": 367608,
       "triangles": 19840,
       "drawCalls": 20,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-pierre-laporte-far.glb",
-      "bytes": 203756,
+      "bytes": 110624,
       "triangles": 5340,
       "drawCalls": 6,
       "bounds": {

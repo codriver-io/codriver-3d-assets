@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/colosseum-near.glb",
-      "bytes": 1663024,
+      "bytes": 434280,
       "triangles": 31560,
       "drawCalls": 5,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/colosseum-far.glb",
-      "bytes": 356492,
+      "bytes": 123556,
       "triangles": 11924,
       "drawCalls": 5,
       "bounds": {

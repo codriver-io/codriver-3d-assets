@@ -36,7 +36,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/brookfield-place-calgary-near.glb",
-      "bytes": 586092,
+      "bytes": 160320,
       "triangles": 14505,
       "drawCalls": 8,
       "bounds": {
@@ -54,7 +54,7 @@
     },
     "far": {
       "url": "/models/buildings/brookfield-place-calgary-far.glb",
-      "bytes": 129772,
+      "bytes": 46708,
       "triangles": 3037,
       "drawCalls": 8,
       "bounds": {

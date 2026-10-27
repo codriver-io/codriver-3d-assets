@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/storseisundet-bridge-near.glb",
-      "bytes": 2628848,
+      "bytes": 1134228,
       "triangles": 52422,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/storseisundet-bridge-far.glb",
-      "bytes": 1000372,
+      "bytes": 446472,
       "triangles": 25386,
       "drawCalls": 7,
       "bounds": {

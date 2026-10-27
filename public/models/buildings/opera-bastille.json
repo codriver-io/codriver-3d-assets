@@ -1245,7 +1245,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/opera-bastille-near.glb",
-      "bytes": 742404,
+      "bytes": 187488,
       "triangles": 23980,
       "drawCalls": 7,
       "bounds": {
@@ -1263,7 +1263,7 @@
     },
     "far": {
       "url": "/models/buildings/opera-bastille-far.glb",
-      "bytes": 262012,
+      "bytes": 71136,
       "triangles": 6378,
       "drawCalls": 7,
       "bounds": {

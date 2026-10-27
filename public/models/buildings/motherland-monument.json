@@ -244,7 +244,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/motherland-monument-near.glb",
-      "bytes": 455044,
+      "bytes": 132656,
       "triangles": 13995,
       "drawCalls": 6,
       "bounds": {
@@ -262,7 +262,7 @@
     },
     "far": {
       "url": "/models/buildings/motherland-monument-far.glb",
-      "bytes": 215728,
+      "bytes": 67356,
       "triangles": 4543,
       "drawCalls": 6,
       "bounds": {

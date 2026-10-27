@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/marine-building-near.glb",
-      "bytes": 882300,
+      "bytes": 234276,
       "triangles": 20055,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/marine-building-far.glb",
-      "bytes": 260680,
+      "bytes": 76464,
       "triangles": 7206,
       "drawCalls": 7,
       "bounds": {

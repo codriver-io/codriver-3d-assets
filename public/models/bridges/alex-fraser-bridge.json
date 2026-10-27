@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/alex-fraser-bridge-near.glb",
-      "bytes": 2768616,
+      "bytes": 1181236,
       "triangles": 70516,
       "drawCalls": 28,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/bridges/alex-fraser-bridge-far.glb",
-      "bytes": 762268,
+      "bytes": 366760,
       "triangles": 26996,
       "drawCalls": 6,
       "bounds": {

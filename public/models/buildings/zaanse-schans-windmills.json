@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/zaanse-schans-windmills-near.glb",
-      "bytes": 614804,
+      "bytes": 159448,
       "triangles": 11310,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/zaanse-schans-windmills-far.glb",
-      "bytes": 427364,
+      "bytes": 115896,
       "triangles": 7706,
       "drawCalls": 6,
       "bounds": {

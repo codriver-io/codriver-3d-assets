@@ -46,7 +46,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/puerta-de-europa-near.glb",
-      "bytes": 1226072,
+      "bytes": 273752,
       "triangles": 22396,
       "drawCalls": 9,
       "bounds": {
@@ -64,7 +64,7 @@
     },
     "far": {
       "url": "/models/buildings/puerta-de-europa-far.glb",
-      "bytes": 288664,
+      "bytes": 78700,
       "triangles": 5056,
       "drawCalls": 8,
       "bounds": {

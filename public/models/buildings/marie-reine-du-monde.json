@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/marie-reine-du-monde-near.glb",
-      "bytes": 396044,
+      "bytes": 116652,
       "triangles": 8640,
       "drawCalls": 6,
       "bounds": {
@@ -44,7 +44,7 @@
     },
     "far": {
       "url": "/models/buildings/marie-reine-du-monde-far.glb",
-      "bytes": 163712,
+      "bytes": 55404,
       "triangles": 3600,
       "drawCalls": 6,
       "bounds": {

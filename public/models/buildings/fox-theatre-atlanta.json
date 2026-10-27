@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fox-theatre-atlanta-near.glb",
-      "bytes": 1099452,
+      "bytes": 276064,
       "triangles": 27373,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/fox-theatre-atlanta-far.glb",
-      "bytes": 425620,
+      "bytes": 114712,
       "triangles": 9239,
       "drawCalls": 8,
       "bounds": {

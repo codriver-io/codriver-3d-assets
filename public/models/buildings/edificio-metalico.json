@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edificio-metalico-near.glb",
-      "bytes": 1742820,
+      "bytes": 461200,
       "triangles": 35585,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/edificio-metalico-far.glb",
-      "bytes": 471496,
+      "bytes": 131568,
       "triangles": 10267,
       "drawCalls": 6,
       "bounds": {

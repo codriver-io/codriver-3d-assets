@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/hardanger-bridge-near.glb",
-      "bytes": 2596728,
+      "bytes": 1116164,
       "triangles": 50706,
       "drawCalls": 23,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/hardanger-bridge-far.glb",
-      "bytes": 410096,
+      "bytes": 205680,
       "triangles": 9350,
       "drawCalls": 4,
       "bounds": {

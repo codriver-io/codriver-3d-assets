@@ -26,7 +26,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/frost-bank-tower-near.glb",
-      "bytes": 969836,
+      "bytes": 257240,
       "triangles": 19362,
       "drawCalls": 8,
       "bounds": {
@@ -44,7 +44,7 @@
     },
     "far": {
       "url": "/models/buildings/frost-bank-tower-far.glb",
-      "bytes": 308844,
+      "bytes": 93020,
       "triangles": 6166,
       "drawCalls": 8,
       "bounds": {

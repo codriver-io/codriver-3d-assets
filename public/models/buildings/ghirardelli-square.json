@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/ghirardelli-square-near.glb",
-      "bytes": 549576,
+      "bytes": 148940,
       "triangles": 10196,
       "drawCalls": 11,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/ghirardelli-square-far.glb",
-      "bytes": 145368,
+      "bytes": 49412,
       "triangles": 2532,
       "drawCalls": 8,
       "bounds": {

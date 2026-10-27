@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/humber-bay-arch-bridge-near.glb",
-      "bytes": 1066952,
+      "bytes": 295848,
       "triangles": 13744,
       "drawCalls": 5,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/humber-bay-arch-bridge-far.glb",
-      "bytes": 203208,
+      "bytes": 65868,
       "triangles": 2528,
       "drawCalls": 5,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/stedelijk-museum-near.glb",
-      "bytes": 550276,
+      "bytes": 145920,
       "triangles": 11898,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/stedelijk-museum-far.glb",
-      "bytes": 268148,
+      "bytes": 77844,
       "triangles": 5276,
       "drawCalls": 8,
       "bounds": {

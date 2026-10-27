@@ -231,7 +231,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/oslo-opera-house-near.glb",
-      "bytes": 1028036,
+      "bytes": 239756,
       "triangles": 13907,
       "drawCalls": 8,
       "bounds": {
@@ -249,7 +249,7 @@
     },
     "far": {
       "url": "/models/buildings/oslo-opera-house-far.glb",
-      "bytes": 217312,
+      "bytes": 68212,
       "triangles": 3111,
       "drawCalls": 8,
       "bounds": {

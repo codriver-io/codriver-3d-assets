@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/bank-of-america-plaza-atlanta-near.glb",
-      "bytes": 1289844,
+      "bytes": 268236,
       "triangles": 24213,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/bank-of-america-plaza-atlanta-far.glb",
-      "bytes": 393284,
+      "bytes": 93812,
       "triangles": 7407,
       "drawCalls": 6,
       "bounds": {

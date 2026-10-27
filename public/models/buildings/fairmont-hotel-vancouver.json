@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fairmont-hotel-vancouver-near.glb",
-      "bytes": 1173284,
+      "bytes": 313868,
       "triangles": 23132,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/fairmont-hotel-vancouver-far.glb",
-      "bytes": 467552,
+      "bytes": 133660,
       "triangles": 9303,
       "drawCalls": 6,
       "bounds": {

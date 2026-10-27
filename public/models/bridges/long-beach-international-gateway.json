@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/long-beach-international-gateway-near.glb",
-      "bytes": 3209996,
+      "bytes": 1235240,
       "triangles": 78556,
       "drawCalls": 19,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/long-beach-international-gateway-far.glb",
-      "bytes": 925096,
+      "bytes": 392372,
       "triangles": 25608,
       "drawCalls": 6,
       "bounds": {

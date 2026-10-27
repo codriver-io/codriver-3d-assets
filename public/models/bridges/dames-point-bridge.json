@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/dames-point-bridge-near.glb",
-      "bytes": 1878620,
+      "bytes": 844004,
       "triangles": 41436,
       "drawCalls": 20,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/dames-point-bridge-far.glb",
-      "bytes": 535592,
+      "bytes": 251980,
       "triangles": 13732,
       "drawCalls": 6,
       "bounds": {

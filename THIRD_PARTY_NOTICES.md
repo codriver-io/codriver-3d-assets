@@ -40,3 +40,7 @@ contains original procedural models, with no converted Flight Simulator assets.
 ## polygon-clipping
 
 Some landmark generators (for example `top-cities/bank-of-america-plaza-dallas`) use polygon-clipping, © Mike Fogel, under MIT. It is bundled into the inspector's procedural preview with those generators and is not part of the exported GLBs.
+
+## meshoptimizer
+
+The inspectors include the meshopt decoder distributed with Three.js, © 2016–2022 Arseny Kapoulkine, under MIT. The build uses meshoptimizer 0.22.0, © 2016–2024 Arseny Kapoulkine, to encode compact GLB geometry. The full MIT license is copied to `/licenses/meshoptimizer.txt` during the build.

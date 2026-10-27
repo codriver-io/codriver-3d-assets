@@ -39,13 +39,13 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-jacques-cartier-south-in-near.glb",
-      "bytes": 17564,
+      "bytes": 15828,
       "triangles": 504,
       "drawCalls": 3
     },
     "far": {
       "url": "/models/landmarks/pont-jacques-cartier-south-in-far.glb",
-      "bytes": 14076,
+      "bytes": 12164,
       "triangles": 440,
       "drawCalls": 2
     }

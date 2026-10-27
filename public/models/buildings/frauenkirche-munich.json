@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/frauenkirche-munich-near.glb",
-      "bytes": 673196,
+      "bytes": 181616,
       "triangles": 14776,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/frauenkirche-munich-far.glb",
-      "bytes": 154992,
+      "bytes": 52504,
       "triangles": 4036,
       "drawCalls": 7,
       "bounds": {

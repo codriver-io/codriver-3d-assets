@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/nidaros-cathedral-near.glb",
-      "bytes": 1719540,
+      "bytes": 414340,
       "triangles": 38724,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/nidaros-cathedral-far.glb",
-      "bytes": 428344,
+      "bytes": 117108,
       "triangles": 9228,
       "drawCalls": 7,
       "bounds": {

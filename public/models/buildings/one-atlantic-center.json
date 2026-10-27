@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/one-atlantic-center-near.glb",
-      "bytes": 1947648,
+      "bytes": 440160,
       "triangles": 36574,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/one-atlantic-center-far.glb",
-      "bytes": 436036,
+      "bytes": 100272,
       "triangles": 8582,
       "drawCalls": 6,
       "bounds": {

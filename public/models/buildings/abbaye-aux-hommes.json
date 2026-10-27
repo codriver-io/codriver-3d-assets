@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/abbaye-aux-hommes-near.glb",
-      "bytes": 1758584,
+      "bytes": 408608,
       "triangles": 40092,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/abbaye-aux-hommes-far.glb",
-      "bytes": 463956,
+      "bytes": 123284,
       "triangles": 9017,
       "drawCalls": 7,
       "bounds": {

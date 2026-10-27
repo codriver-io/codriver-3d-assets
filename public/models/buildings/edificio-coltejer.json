@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/edificio-coltejer-near.glb",
-      "bytes": 481404,
+      "bytes": 113784,
       "triangles": 8785,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/edificio-coltejer-far.glb",
-      "bytes": 170780,
+      "bytes": 50316,
       "triangles": 3033,
       "drawCalls": 6,
       "bounds": {

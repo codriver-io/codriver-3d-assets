@@ -1685,7 +1685,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/catedral-de-la-almudena-near.glb",
-      "bytes": 1026220,
+      "bytes": 262772,
       "triangles": 23275,
       "drawCalls": 6,
       "bounds": {
@@ -1703,7 +1703,7 @@
     },
     "far": {
       "url": "/models/buildings/catedral-de-la-almudena-far.glb",
-      "bytes": 492604,
+      "bytes": 133652,
       "triangles": 11087,
       "drawCalls": 6,
       "bounds": {

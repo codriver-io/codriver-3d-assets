@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/sharp-centre-for-design-near.glb",
-      "bytes": 513608,
+      "bytes": 145112,
       "triangles": 9968,
       "drawCalls": 14,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/sharp-centre-for-design-far.glb",
-      "bytes": 99380,
+      "bytes": 37024,
       "triangles": 2088,
       "drawCalls": 8,
       "bounds": {

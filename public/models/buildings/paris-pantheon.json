@@ -35,7 +35,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/paris-pantheon-near.glb",
-      "bytes": 538116,
+      "bytes": 154708,
       "triangles": 16754,
       "drawCalls": 5,
       "bounds": {
@@ -53,7 +53,7 @@
     },
     "far": {
       "url": "/models/buildings/paris-pantheon-far.glb",
-      "bytes": 241884,
+      "bytes": 74628,
       "triangles": 7122,
       "drawCalls": 5,
       "bounds": {

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/transamerica-pyramid-near.glb",
-      "bytes": 933084,
+      "bytes": 220660,
       "triangles": 17088,
       "drawCalls": 7,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/transamerica-pyramid-far.glb",
-      "bytes": 170924,
+      "bytes": 48892,
       "triangles": 2970,
       "drawCalls": 7,
       "bounds": {

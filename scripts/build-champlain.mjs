@@ -2,7 +2,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { loadAssetCatalog } from './asset-catalog.mjs';
 import { buildAssetCatalogPreview } from './build-asset-catalog.mjs';
-import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
+import { exportLandmarkGLB } from './lib/landmark-codec.mjs';
 import { createChamplain, disposeChamplain } from '../src/peregrine/landmarks/champlain-geometry.js';
 import { CHAMPLAIN, BRIDGE_LENGTH, TOWER_STATION } from '../src/peregrine/landmarks/champlain-profile.js';
 
@@ -15,7 +15,7 @@ await mkdir(out, { recursive: true });
 const assets = {};
 for (const detail of ['near', 'far']) {
   const model = createChamplain({ detail });
-  const data = await new GLTFExporter().parseAsync(model, { binary: true });
+  const data = await exportLandmarkGLB(model, { binary: true });
   const name = `samuel-de-champlain-${detail}.glb`;
   await writeFile(new URL(name, out), new Uint8Array(data));
   assets[detail] = { url: `/models/landmarks/${name}`, bytes: data.byteLength, triangles: model.userData.triangles, drawCalls: model.userData.drawCalls };

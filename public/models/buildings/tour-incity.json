@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tour-incity-near.glb",
-      "bytes": 1331400,
+      "bytes": 260348,
       "triangles": 17368,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/tour-incity-far.glb",
-      "bytes": 406848,
+      "bytes": 91368,
       "triangles": 5364,
       "drawCalls": 7,
       "bounds": {

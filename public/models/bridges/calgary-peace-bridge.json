@@ -63,7 +63,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/calgary-peace-bridge-near.glb",
-      "bytes": 736324,
+      "bytes": 260760,
       "triangles": 35234,
       "drawCalls": 6,
       "bounds": {
@@ -81,7 +81,7 @@
     },
     "far": {
       "url": "/models/bridges/calgary-peace-bridge-far.glb",
-      "bytes": 196684,
+      "bytes": 77720,
       "triangles": 9248,
       "drawCalls": 5,
       "bounds": {

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/scotia-plaza-near.glb",
-      "bytes": 2428080,
+      "bytes": 590540,
       "triangles": 53446,
       "drawCalls": 9,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/scotia-plaza-far.glb",
-      "bytes": 324896,
+      "bytes": 81792,
       "triangles": 6064,
       "drawCalls": 8,
       "bounds": {

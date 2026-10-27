@@ -21,13 +21,13 @@
   "assets": {
     "near": {
       "url": "/models/landmarks/pont-victoria-near.glb",
-      "bytes": 3086900,
+      "bytes": 1415384,
       "triangles": 56988,
       "drawCalls": 29
     },
     "far": {
       "url": "/models/landmarks/pont-victoria-far.glb",
-      "bytes": 547568,
+      "bytes": 257260,
       "triangles": 10298,
       "drawCalls": 4
     }

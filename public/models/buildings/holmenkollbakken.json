@@ -65,7 +65,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/holmenkollbakken-near.glb",
-      "bytes": 1897680,
+      "bytes": 506400,
       "triangles": 34922,
       "drawCalls": 11,
       "bounds": {
@@ -83,7 +83,7 @@
     },
     "far": {
       "url": "/models/buildings/holmenkollbakken-far.glb",
-      "bytes": 343216,
+      "bytes": 102612,
       "triangles": 6190,
       "drawCalls": 8,
       "bounds": {

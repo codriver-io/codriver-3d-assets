@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/eye-filmmuseum-near.glb",
-      "bytes": 477100,
+      "bytes": 117040,
       "triangles": 6661,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/eye-filmmuseum-far.glb",
-      "bytes": 27916,
+      "bytes": 15192,
       "triangles": 290,
       "drawCalls": 5,
       "bounds": {

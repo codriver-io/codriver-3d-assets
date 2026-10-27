@@ -81,7 +81,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/helsinki-cathedral-near.glb",
-      "bytes": 936256,
+      "bytes": 237256,
       "triangles": 17748,
       "drawCalls": 7,
       "bounds": {
@@ -99,7 +99,7 @@
     },
     "far": {
       "url": "/models/buildings/helsinki-cathedral-far.glb",
-      "bytes": 401104,
+      "bytes": 114360,
       "triangles": 7912,
       "drawCalls": 7,
       "bounds": {

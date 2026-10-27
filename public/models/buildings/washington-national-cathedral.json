@@ -820,7 +820,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/washington-national-cathedral-near.glb",
-      "bytes": 1486296,
+      "bytes": 401924,
       "triangles": 30581,
       "drawCalls": 5,
       "bounds": {
@@ -838,7 +838,7 @@
     },
     "far": {
       "url": "/models/buildings/washington-national-cathedral-far.glb",
-      "bytes": 486868,
+      "bytes": 150244,
       "triangles": 9602,
       "drawCalls": 5,
       "bounds": {

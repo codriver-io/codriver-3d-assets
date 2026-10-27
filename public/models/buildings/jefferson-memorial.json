@@ -2327,7 +2327,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/jefferson-memorial-near.glb",
-      "bytes": 1351528,
+      "bytes": 379552,
       "triangles": 42132,
       "drawCalls": 5,
       "bounds": {
@@ -2345,7 +2345,7 @@
     },
     "far": {
       "url": "/models/buildings/jefferson-memorial-far.glb",
-      "bytes": 380400,
+      "bytes": 112352,
       "triangles": 9464,
       "drawCalls": 5,
       "bounds": {

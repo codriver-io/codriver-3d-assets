@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/leveque-tower-near.glb",
-      "bytes": 2028984,
+      "bytes": 474460,
       "triangles": 37932,
       "drawCalls": 8,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/leveque-tower-far.glb",
-      "bytes": 486140,
+      "bytes": 116868,
       "triangles": 8934,
       "drawCalls": 8,
       "bounds": {

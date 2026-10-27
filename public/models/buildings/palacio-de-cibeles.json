@@ -277,7 +277,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palacio-de-cibeles-near.glb",
-      "bytes": 2123280,
+      "bytes": 555996,
       "triangles": 49864,
       "drawCalls": 6,
       "bounds": {
@@ -295,7 +295,7 @@
     },
     "far": {
       "url": "/models/buildings/palacio-de-cibeles-far.glb",
-      "bytes": 440100,
+      "bytes": 126704,
       "triangles": 11748,
       "drawCalls": 6,
       "bounds": {

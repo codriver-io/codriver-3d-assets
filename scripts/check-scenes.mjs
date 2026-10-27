@@ -23,6 +23,7 @@ export async function checkSceneReleases(root) {
       assert.deepEqual(scene.validation, manifest.validation); assert.equal(scene.id, manifest.id);
       assert.equal(report.verifiedFiles, scene.verifiedFiles);
       assert.deepEqual(report.geometry, scene.geometry);
+      for(const name of names.filter(n=>n.endsWith('.glb'))){const bytes=await readFile(join(extracted,name)),json=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)));assert.equal(json.asset.extras.landmarkCodec,'codriver-meshopt-v2');assert.ok(json.extensionsRequired.includes('EXT_meshopt_compression'));assert.ok(json.extensionsRequired.includes('KHR_mesh_quantization'));}
       const notices = JSON.parse(await readFile(join(extracted, manifest.notices)));
       assert.equal(notices.modelLicense.license, 'CC-BY-4.0'); assert.equal(notices.alignment.license, 'ODbL-1.0'); assert.ok(notices.terrain.licenseUrl);
       for (const name of names.filter(n => n.endsWith('.json'))) assert.ok(!/\/Users\/|op:\/\/|gh[op]_[A-Za-z0-9]{30,}/.test(await readFile(join(extracted, name), 'utf8')), 'Private scene material');

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/royal-albert-hall-near.glb",
-      "bytes": 798288,
+      "bytes": 219052,
       "triangles": 23600,
       "drawCalls": 5,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/royal-albert-hall-far.glb",
-      "bytes": 417028,
+      "bytes": 122332,
       "triangles": 10896,
       "drawCalls": 5,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/allianz-arena-near.glb",
-      "bytes": 1905632,
+      "bytes": 493104,
       "triangles": 24278,
       "drawCalls": 9,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/allianz-arena-far.glb",
-      "bytes": 429040,
+      "bytes": 124192,
       "triangles": 5400,
       "drawCalls": 7,
       "bounds": {

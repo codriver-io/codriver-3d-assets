@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/royal-palace-amsterdam-near.glb",
-      "bytes": 1470988,
+      "bytes": 351664,
       "triangles": 28278,
       "drawCalls": 7,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/royal-palace-amsterdam-far.glb",
-      "bytes": 347664,
+      "bytes": 97220,
       "triangles": 6682,
       "drawCalls": 7,
       "bounds": {

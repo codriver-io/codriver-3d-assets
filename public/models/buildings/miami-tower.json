@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/miami-tower-near.glb",
-      "bytes": 1487436,
+      "bytes": 310504,
       "triangles": 27451,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/miami-tower-far.glb",
-      "bytes": 368316,
+      "bytes": 86024,
       "triangles": 6745,
       "drawCalls": 6,
       "bounds": {

@@ -946,7 +946,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/place-de-la-concorde-obelisk-near.glb",
-      "bytes": 1155980,
+      "bytes": 309272,
       "triangles": 34412,
       "drawCalls": 7,
       "bounds": {
@@ -964,7 +964,7 @@
     },
     "far": {
       "url": "/models/buildings/place-de-la-concorde-obelisk-far.glb",
-      "bytes": 371748,
+      "bytes": 105364,
       "triangles": 10272,
       "drawCalls": 6,
       "bounds": {

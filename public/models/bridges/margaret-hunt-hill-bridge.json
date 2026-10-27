@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/margaret-hunt-hill-bridge-near.glb",
-      "bytes": 982856,
+      "bytes": 499544,
       "triangles": 28218,
       "drawCalls": 17,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/margaret-hunt-hill-bridge-far.glb",
-      "bytes": 316780,
+      "bytes": 166032,
       "triangles": 11214,
       "drawCalls": 6,
       "bounds": {

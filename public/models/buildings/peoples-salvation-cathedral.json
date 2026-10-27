@@ -292,7 +292,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/peoples-salvation-cathedral-near.glb",
-      "bytes": 2168056,
+      "bytes": 555872,
       "triangles": 46368,
       "drawCalls": 6,
       "bounds": {
@@ -310,7 +310,7 @@
     },
     "far": {
       "url": "/models/buildings/peoples-salvation-cathedral-far.glb",
-      "bytes": 498060,
+      "bytes": 136044,
       "triangles": 10476,
       "drawCalls": 6,
       "bounds": {

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/555-california-street-near.glb",
-      "bytes": 471668,
+      "bytes": 105960,
       "triangles": 8490,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/555-california-street-far.glb",
-      "bytes": 120956,
+      "bytes": 37920,
       "triangles": 1996,
       "drawCalls": 6,
       "bounds": {

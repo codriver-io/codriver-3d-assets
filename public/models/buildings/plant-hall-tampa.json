@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/plant-hall-tampa-near.glb",
-      "bytes": 1376564,
+      "bytes": 331116,
       "triangles": 40114,
       "drawCalls": 6,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/plant-hall-tampa-far.glb",
-      "bytes": 313024,
+      "bytes": 92316,
       "triangles": 9329,
       "drawCalls": 6,
       "bounds": {

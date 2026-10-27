@@ -2933,7 +2933,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palais-de-chaillot-near.glb",
-      "bytes": 1091196,
+      "bytes": 629612,
       "triangles": 18050,
       "drawCalls": 7,
       "bounds": {
@@ -2951,7 +2951,7 @@
     },
     "far": {
       "url": "/models/buildings/palais-de-chaillot-far.glb",
-      "bytes": 486628,
+      "bytes": 291268,
       "triangles": 7602,
       "drawCalls": 7,
       "bounds": {

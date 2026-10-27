@@ -568,7 +568,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/marche-bonsecours-near.glb",
-      "bytes": 803584,
+      "bytes": 207100,
       "triangles": 13067,
       "drawCalls": 9,
       "bounds": {
@@ -586,7 +586,7 @@
     },
     "far": {
       "url": "/models/buildings/marche-bonsecours-far.glb",
-      "bytes": 168908,
+      "bytes": 51604,
       "triangles": 3029,
       "drawCalls": 5,
       "bounds": {

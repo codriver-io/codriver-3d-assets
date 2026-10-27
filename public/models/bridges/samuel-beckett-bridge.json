@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/samuel-beckett-bridge-near.glb",
-      "bytes": 412116,
+      "bytes": 217604,
       "triangles": 6494,
       "drawCalls": 10,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/samuel-beckett-bridge-far.glb",
-      "bytes": 179380,
+      "bytes": 111036,
       "triangles": 2638,
       "drawCalls": 9,
       "bounds": {

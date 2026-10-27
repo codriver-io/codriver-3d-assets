@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/norwegian-petroleum-museum-near.glb",
-      "bytes": 1185520,
+      "bytes": 305324,
       "triangles": 29114,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/norwegian-petroleum-museum-far.glb",
-      "bytes": 173532,
+      "bytes": 55752,
       "triangles": 4322,
       "drawCalls": 7,
       "bounds": {

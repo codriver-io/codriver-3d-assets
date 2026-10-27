@@ -412,7 +412,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/texas-state-capitol-near.glb",
-      "bytes": 1681864,
+      "bytes": 412304,
       "triangles": 34602,
       "drawCalls": 6,
       "bounds": {
@@ -430,7 +430,7 @@
     },
     "far": {
       "url": "/models/buildings/texas-state-capitol-far.glb",
-      "bytes": 491428,
+      "bytes": 129616,
       "triangles": 10090,
       "drawCalls": 6,
       "bounds": {

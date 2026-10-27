@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/svinesund-bridge-near.glb",
-      "bytes": 2629876,
+      "bytes": 1032780,
       "triangles": 57868,
       "drawCalls": 25,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/bridges/svinesund-bridge-far.glb",
-      "bytes": 703704,
+      "bytes": 300168,
       "triangles": 18196,
       "drawCalls": 7,
       "bounds": {

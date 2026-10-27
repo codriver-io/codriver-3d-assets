@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/vancouver-public-library-near.glb",
-      "bytes": 2206040,
+      "bytes": 580204,
       "triangles": 50650,
       "drawCalls": 6,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/vancouver-public-library-far.glb",
-      "bytes": 479884,
+      "bytes": 125192,
       "triangles": 10444,
       "drawCalls": 6,
       "bounds": {

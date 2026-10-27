@@ -178,7 +178,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palacio-de-la-cultura-medellin-near.glb",
-      "bytes": 1478744,
+      "bytes": 370860,
       "triangles": 33471,
       "drawCalls": 8,
       "bounds": {
@@ -196,7 +196,7 @@
     },
     "far": {
       "url": "/models/buildings/palacio-de-la-cultura-medellin-far.glb",
-      "bytes": 442988,
+      "bytes": 124664,
       "triangles": 11023,
       "drawCalls": 8,
       "bounds": {

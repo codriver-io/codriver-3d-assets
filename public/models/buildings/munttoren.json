@@ -25,7 +25,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/munttoren-near.glb",
-      "bytes": 737816,
+      "bytes": 198316,
       "triangles": 17262,
       "drawCalls": 8,
       "bounds": {
@@ -43,7 +43,7 @@
     },
     "far": {
       "url": "/models/buildings/munttoren-far.glb",
-      "bytes": 351032,
+      "bytes": 103488,
       "triangles": 8434,
       "drawCalls": 8,
       "bounds": {

@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/hotel-negresco-near.glb",
-      "bytes": 836896,
+      "bytes": 219176,
       "triangles": 20650,
       "drawCalls": 8,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/hotel-negresco-far.glb",
-      "bytes": 268272,
+      "bytes": 85276,
       "triangles": 7384,
       "drawCalls": 8,
       "bounds": {

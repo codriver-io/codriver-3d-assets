@@ -424,7 +424,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/notre-dame-de-quebec-near.glb",
-      "bytes": 288500,
+      "bytes": 83656,
       "triangles": 5790,
       "drawCalls": 8,
       "bounds": {
@@ -442,7 +442,7 @@
     },
     "far": {
       "url": "/models/buildings/notre-dame-de-quebec-far.glb",
-      "bytes": 93412,
+      "bytes": 36024,
       "triangles": 1388,
       "drawCalls": 8,
       "bounds": {

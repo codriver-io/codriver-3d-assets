@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/ferry-building-near.glb",
-      "bytes": 678500,
+      "bytes": 180596,
       "triangles": 11079,
       "drawCalls": 11,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/buildings/ferry-building-far.glb",
-      "bytes": 359612,
+      "bytes": 100016,
       "triangles": 5488,
       "drawCalls": 7,
       "bounds": {

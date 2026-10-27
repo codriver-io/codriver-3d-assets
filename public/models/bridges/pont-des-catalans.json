@@ -22,7 +22,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-des-catalans-near.glb",
-      "bytes": 1994716,
+      "bytes": 972440,
       "triangles": 44240,
       "drawCalls": 17,
       "bounds": {
@@ -40,7 +40,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-des-catalans-far.glb",
-      "bytes": 598636,
+      "bytes": 321880,
       "triangles": 14328,
       "drawCalls": 9,
       "bounds": {

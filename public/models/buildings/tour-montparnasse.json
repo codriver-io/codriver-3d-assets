@@ -28,7 +28,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/tour-montparnasse-near.glb",
-      "bytes": 1311088,
+      "bytes": 267924,
       "triangles": 24080,
       "drawCalls": 6,
       "bounds": {
@@ -46,7 +46,7 @@
     },
     "far": {
       "url": "/models/buildings/tour-montparnasse-far.glb",
-      "bytes": 387240,
+      "bytes": 93336,
       "triangles": 7008,
       "drawCalls": 6,
       "bounds": {

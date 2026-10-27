@@ -1121,7 +1121,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/wuppertal-schwebebahn-sonnborn-near.glb",
-      "bytes": 1553516,
+      "bytes": 387376,
       "triangles": 31420,
       "drawCalls": 8,
       "bounds": {
@@ -1139,7 +1139,7 @@
     },
     "far": {
       "url": "/models/bridges/wuppertal-schwebebahn-sonnborn-far.glb",
-      "bytes": 898840,
+      "bytes": 228448,
       "triangles": 16872,
       "drawCalls": 8,
       "bounds": {

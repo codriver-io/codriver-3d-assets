@@ -226,7 +226,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/science-world-vancouver-near.glb",
-      "bytes": 1759824,
+      "bytes": 472992,
       "triangles": 29133,
       "drawCalls": 10,
       "bounds": {
@@ -244,7 +244,7 @@
     },
     "far": {
       "url": "/models/buildings/science-world-vancouver-far.glb",
-      "bytes": 427228,
+      "bytes": 125792,
       "triangles": 6947,
       "drawCalls": 8,
       "bounds": {

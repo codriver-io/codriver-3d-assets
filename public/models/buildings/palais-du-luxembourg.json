@@ -835,7 +835,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/palais-du-luxembourg-near.glb",
-      "bytes": 2287812,
+      "bytes": 554360,
       "triangles": 47110,
       "drawCalls": 7,
       "bounds": {
@@ -853,7 +853,7 @@
     },
     "far": {
       "url": "/models/buildings/palais-du-luxembourg-far.glb",
-      "bytes": 316416,
+      "bytes": 93168,
       "triangles": 7036,
       "drawCalls": 7,
       "bounds": {

@@ -24,7 +24,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/saturn-v-huntsville-near.glb",
-      "bytes": 701180,
+      "bytes": 174656,
       "triangles": 13076,
       "drawCalls": 6,
       "bounds": {
@@ -42,7 +42,7 @@
     },
     "far": {
       "url": "/models/buildings/saturn-v-huntsville-far.glb",
-      "bytes": 187120,
+      "bytes": 55124,
       "triangles": 3416,
       "drawCalls": 6,
       "bounds": {

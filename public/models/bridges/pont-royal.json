@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-royal-near.glb",
-      "bytes": 885664,
+      "bytes": 420692,
       "triangles": 10614,
       "drawCalls": 20,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-royal-far.glb",
-      "bytes": 399156,
+      "bytes": 195256,
       "triangles": 4616,
       "drawCalls": 8,
       "bounds": {

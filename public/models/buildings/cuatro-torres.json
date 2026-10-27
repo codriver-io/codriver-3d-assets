@@ -1968,7 +1968,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cuatro-torres-near.glb",
-      "bytes": 1959684,
+      "bytes": 440560,
       "triangles": 38279,
       "drawCalls": 8,
       "bounds": {
@@ -1986,7 +1986,7 @@
     },
     "far": {
       "url": "/models/buildings/cuatro-torres-far.glb",
-      "bytes": 483804,
+      "bytes": 126952,
       "triangles": 8967,
       "drawCalls": 8,
       "bounds": {

@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/pont-dubuc-near.glb",
-      "bytes": 833920,
+      "bytes": 438216,
       "triangles": 12990,
       "drawCalls": 18,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/bridges/pont-dubuc-far.glb",
-      "bytes": 331752,
+      "bytes": 178812,
       "triangles": 5148,
       "drawCalls": 5,
       "bounds": {

@@ -5,8 +5,8 @@
       "id": "jacques-cartier-scene",
       "assetId": "pont-jacques-cartier",
       "url": "/scenes/jacques-cartier-scene.zip",
-      "bytes": 3341891,
-      "sha256": "84f9c87f20f06cadaedb13c350782ff441fceecabfd43f9a4c2ffa7799b68fa4",
+      "bytes": 1152609,
+      "sha256": "8cab04b2a4827fdde4a8c3c9ab5f4156802c95076c5f5aedbb3dbf93fca2bc7f",
       "verifiedFiles": 13,
       "format": "codriver-scene",
       "version": 1,
@@ -16,7 +16,7 @@
           "cityscape": "not tested",
           "world": "not tested"
         },
-        "evidence": "GLB export/reload: equal topology, <1 mm bounds difference; browser hashes checked"
+        "evidence": "Order-preserving codriver-meshopt-v2: exhaustive vertex/index/name/material/extras/custom-attribute parity within recorded position grid error; archive hashes checked. Presets require EXT_meshopt_compression and KHR_mesh_quantization support. Host application modes remain not tested."
       },
       "geometry": {
         "near.glb": {

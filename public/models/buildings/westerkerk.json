@@ -23,7 +23,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/westerkerk-near.glb",
-      "bytes": 1168432,
+      "bytes": 318748,
       "triangles": 31712,
       "drawCalls": 8,
       "bounds": {
@@ -41,7 +41,7 @@
     },
     "far": {
       "url": "/models/buildings/westerkerk-far.glb",
-      "bytes": 426556,
+      "bytes": 127132,
       "triangles": 9963,
       "drawCalls": 8,
       "bounds": {

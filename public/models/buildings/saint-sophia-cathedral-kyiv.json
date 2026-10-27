@@ -674,7 +674,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/saint-sophia-cathedral-kyiv-near.glb",
-      "bytes": 937484,
+      "bytes": 273308,
       "triangles": 28008,
       "drawCalls": 7,
       "bounds": {
@@ -692,7 +692,7 @@
     },
     "far": {
       "url": "/models/buildings/saint-sophia-cathedral-kyiv-far.glb",
-      "bytes": 404856,
+      "bytes": 124040,
       "triangles": 10532,
       "drawCalls": 7,
       "bounds": {

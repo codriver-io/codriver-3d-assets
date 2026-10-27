@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/vancouver-art-gallery-near.glb",
-      "bytes": 864372,
+      "bytes": 241296,
       "triangles": 25193,
       "drawCalls": 5,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/vancouver-art-gallery-far.glb",
-      "bytes": 370044,
+      "bytes": 109852,
       "triangles": 10701,
       "drawCalls": 5,
       "bounds": {

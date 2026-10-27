@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/waterfront-station-vancouver-near.glb",
-      "bytes": 816504,
+      "bytes": 216376,
       "triangles": 14762,
       "drawCalls": 7,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/buildings/waterfront-station-vancouver-far.glb",
-      "bytes": 366968,
+      "bytes": 104728,
       "triangles": 5706,
       "drawCalls": 7,
       "bounds": {

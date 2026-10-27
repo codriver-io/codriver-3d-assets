@@ -29,7 +29,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/sutro-tower-near.glb",
-      "bytes": 282936,
+      "bytes": 89964,
       "triangles": 7297,
       "drawCalls": 5,
       "bounds": {
@@ -47,7 +47,7 @@
     },
     "far": {
       "url": "/models/buildings/sutro-tower-far.glb",
-      "bytes": 51128,
+      "bytes": 21068,
       "triangles": 863,
       "drawCalls": 5,
       "bounds": {

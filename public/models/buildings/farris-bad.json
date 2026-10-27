@@ -77,7 +77,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/farris-bad-near.glb",
-      "bytes": 2320464,
+      "bytes": 565680,
       "triangles": 43002,
       "drawCalls": 9,
       "bounds": {
@@ -95,7 +95,7 @@
     },
     "far": {
       "url": "/models/buildings/farris-bad-far.glb",
-      "bytes": 438992,
+      "bytes": 115996,
       "triangles": 8006,
       "drawCalls": 8,
       "bounds": {

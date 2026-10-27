@@ -35,7 +35,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/salesforce-tower-near.glb",
-      "bytes": 965208,
+      "bytes": 267256,
       "triangles": 30918,
       "drawCalls": 6,
       "bounds": {
@@ -53,7 +53,7 @@
     },
     "far": {
       "url": "/models/buildings/salesforce-tower-far.glb",
-      "bytes": 193100,
+      "bytes": 62784,
       "triangles": 5498,
       "drawCalls": 6,
       "bounds": {

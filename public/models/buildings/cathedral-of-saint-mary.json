@@ -40,7 +40,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/cathedral-of-saint-mary-near.glb",
-      "bytes": 558932,
+      "bytes": 156612,
       "triangles": 10048,
       "drawCalls": 9,
       "bounds": {
@@ -58,7 +58,7 @@
     },
     "far": {
       "url": "/models/buildings/cathedral-of-saint-mary-far.glb",
-      "bytes": 148396,
+      "bytes": 49732,
       "triangles": 2482,
       "drawCalls": 7,
       "bounds": {

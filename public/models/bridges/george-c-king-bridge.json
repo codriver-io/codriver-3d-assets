@@ -63,7 +63,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/george-c-king-bridge-near.glb",
-      "bytes": 969448,
+      "bytes": 576672,
       "triangles": 13864,
       "drawCalls": 5,
       "bounds": {
@@ -81,7 +81,7 @@
     },
     "far": {
       "url": "/models/bridges/george-c-king-bridge-far.glb",
-      "bytes": 367836,
+      "bytes": 229076,
       "triangles": 5068,
       "drawCalls": 5,
       "bounds": {
