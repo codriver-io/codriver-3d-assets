@@ -3,15 +3,17 @@
 //   node .agents/skills/build-3d-landmarks/scripts/qa-metrics.mjs [--city Toronto] [--ids a,b] [--out tmp/landmark-qa/metrics.json]
 // Per variant: triangles / draws / bytes against the budgets, removable bytes (bridgeLift on a
 // free-standing structure), far-vs-near bounds, parts below grade, coplanar overlapping faces of
-// different materials (z-fighting candidates) and an outside-in ray sweep for back-face hits
-// (holes, inside-out or missing faces), window-rhythm loss and unsupported member-end candidates.
+// different materials (z-fighting candidates), an outside-in ray sweep for back-face hits
+// (holes, inside-out or missing faces) on both LODs, window-rhythm loss, unsupported member-end
+// candidates, GLB extras (QA data leaking into the export), smooth-shading skew, faces lying on
+// host grade and far faces bridging ground the near model leaves open.
 // Prints one compact line per landmark; JSON for details.
 // A coplanar flag names the worst material pairs ("small on big") and where their largest overlap is.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import * as THREE from 'three';
-import { windowFacades, windowRhythm, memberEnds } from './quality-checks.mjs';
-export { windowFacades, windowRhythm, memberEnds } from './quality-checks.mjs';
+import { windowFacades, windowRhythm, memberEnds, extrasBytes, shadingSkew, gradeFaces, farOverhang } from './quality-checks.mjs';
+export { windowFacades, windowRhythm, memberEnds, extrasBytes, shadingSkew, gradeFaces, farOverhang } from './quality-checks.mjs';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { loadAssetCatalog, glbMetrics } from '../../../../scripts/asset-catalog.mjs';
 
@@ -21,6 +23,9 @@ export const BUDGET = {
   building: { near: { triangles: 60000, draws: 14, bytes: 2.5e6 }, far: { triangles: 12000, draws: 8, bytes: 0.5e6 } },
   bridge: { near: { triangles: 120000, draws: 40, bytes: 4.5e6 }, far: { triangles: 30000, draws: 10, bytes: 1.2e6 } },
 };
+// Review-candidate thresholds for the checks added after the October 2026 review, calibrated on the
+// whole catalog: each fired on the defects that review found and is clean on their fixes.
+export const LIMITS = { backfacePct: 0.5, extrasKB: 4, skewDeg: 90, skewM2: 10, gradeM2: 10, overhangM2: 100 };
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const cityOf = (e) => e.city || ['Montréal', 'Paris', 'Toronto', 'San Francisco'].find((c) => norm(e.location).includes(norm(c))) || '?';
 
@@ -28,15 +33,17 @@ export const meshesOf = (scene) => { const out = []; scene.updateMatrixWorld(tru
 export function triangles(meshes) {
   const tris = [], a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3();
   for (const m of meshes) {
-    const p = m.geometry.attributes.position, idx = m.geometry.index;
-    const n = idx ? idx.count : p.count;
+    const p = m.geometry.attributes.position, nrmAttr = m.geometry.attributes.normal, idx = m.geometry.index;
+    const n = idx ? idx.count : p.count, normalMatrix = new THREE.Matrix3().getNormalMatrix(m.matrixWorld);
     for (let i = 0; i < n; i += 3) {
       const [i0, i1, i2] = idx ? [idx.getX(i), idx.getX(i + 1), idx.getX(i + 2)] : [i, i + 1, i + 2];
       a.fromBufferAttribute(p, i0).applyMatrix4(m.matrixWorld); b.fromBufferAttribute(p, i1).applyMatrix4(m.matrixWorld); c.fromBufferAttribute(p, i2).applyMatrix4(m.matrixWorld);
       const nrm = new THREE.Vector3().crossVectors(b.clone().sub(a), c.clone().sub(a)), area = nrm.length() / 2;
       if (area < 1e-6) continue;
       nrm.normalize();
-      tris.push({ a: a.clone(), b: b.clone(), c: c.clone(), n: nrm, area, mat: (Array.isArray(m.material) ? m.material[m.geometry.groups.find((g) => i >= g.start && i < g.start + g.count)?.materialIndex ?? 0] : m.material).name });
+      // Vertex normals as exported, for the shading-skew check.
+      const vn = nrmAttr ? [i0, i1, i2].map((k) => new THREE.Vector3().fromBufferAttribute(nrmAttr, k).applyMatrix3(normalMatrix).normalize()) : null;
+      tris.push({ a: a.clone(), b: b.clone(), c: c.clone(), n: nrm, vn, area, mat: (Array.isArray(m.material) ? m.material[m.geometry.groups.find((g) => i >= g.start && i < g.start + g.count)?.materialIndex ?? 0] : m.material).name });
     }
   }
   return tris;
@@ -130,16 +137,17 @@ export function layeredFaces(tris, maxGap, ranks = {}) {
   const top = edges.slice(0, 4).map(({ pair, faces, area, minGap, at }) => ({ pair, faces, areaM2: +area.toFixed(1), gapCm: Math.round(minGap * 100), at }));
   return { faces, areaM2: Math.round(area), top, edges };
 }
-// Rays from a sphere round the model at random points inside its box: a first hit on a face whose
-// normal points away from the ray origin is a hole, an inside-out face or a missing cap.
-function backfaceSweep(scene, box, rays = 500) {
+// Rays from a sphere round the model (always outside its box) at random points inside the box: a
+// first hit on a face whose normal points away from the ray origin is a hole, an inside-out face
+// or a missing cap. The first back hits are located so the part can be found in the source.
+export function backfaceSweep(scene, box, rays = 500) {
   const meshes = meshesOf(scene);
   for (const m of meshes) {
     const materials = (Array.isArray(m.material) ? m.material : [m.material]).map(mat => { const copy = mat.clone(); copy.side = THREE.DoubleSide; return copy; });
     m.material = Array.isArray(m.material) ? materials : materials[0];
   }
   const rc = new THREE.Raycaster(), center = box.getCenter(new THREE.Vector3()), r = box.getSize(new THREE.Vector3()).length() * 0.75 + 5;
-  let hits = 0, back = 0, s = 12345; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+  let hits = 0, back = 0, s = 12345; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647), where = [];
   for (let k = 0; k < rays; k++) {
     const u = rnd() * 2 - 1, phi = rnd() * Math.PI * 2, up = Math.max(0.05, Math.abs(u)); // origins above grade
     const o = center.clone().add(new THREE.Vector3(Math.sqrt(1 - up * up) * Math.cos(phi), up, Math.sqrt(1 - up * up) * Math.sin(phi)).multiplyScalar(r));
@@ -149,9 +157,13 @@ function backfaceSweep(scene, box, rays = 500) {
     if (!hit || !hit.face) continue;
     hits++;
     const n = hit.face.normal.clone().transformDirection(hit.object.matrixWorld);
-    if (n.dot(rc.ray.direction) > 0.2) back++;
+    if (n.dot(rc.ray.direction) > 0.2) {
+      back++;
+      const mat = Array.isArray(hit.object.material) ? hit.object.material[hit.face.materialIndex] : hit.object.material;
+      if (where.length < 4) where.push({ material: mat.name, at: hit.point.toArray().map((x) => +x.toFixed(1)) });
+    }
   }
-  return { rays: hits, backfacePct: hits ? Math.round((back / hits) * 1000) / 10 : 0 };
+  return { rays: hits, back, backfacePct: hits ? Math.round((back / hits) * 1000) / 10 : 0, at: where };
 }
 export async function loadGlb(file) {
   const data = await readFile(file);
@@ -161,7 +173,7 @@ export async function loadGlb(file) {
   for (const m of json.meshes || []) for (const p of m.primitives) for (const [k, i] of Object.entries(p.attributes)) {
     attrs.add(k); if (/bridgelift/i.test(k)) { const a = json.accessors[i]; liftBytes += a.count * 4; }
   }
-  return { scene, metrics: glbMetrics(data), liftBytes, attrs: [...attrs] };
+  return { scene, json, metrics: glbMetrics(data), liftBytes, attrs: [...attrs] };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.url.replace('file://', ''))) {
@@ -172,7 +184,7 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.url.repl
   const out = [];
   for (const e of entries) {
     const variants = Object.entries(e.model.assets), near = variants.find(([k]) => k === 'near') || variants[0], far = variants.find(([k]) => k === 'far');
-    const row = { id: e.id, city: cityOf(e), kind: e.kind, issues: [] }, sizes = {};
+    const row = { id: e.id, city: cityOf(e), kind: e.kind, issues: [] }, sizes = {}, planTris = {};
     for (const [label, v] of [['near', near], ['far', far]].filter(([, v]) => v)) {
       const g = await loadGlb(join(ROOT, 'public', v[1].url)), b = BUDGET[e.kind][label], box = new THREE.Box3().setFromObject(g.scene), size = box.getSize(new THREE.Vector3());
       sizes[label] = size;
@@ -184,16 +196,29 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.url.repl
       m.layered = layeredFaces(tris, LAYER_GAP[label]);
       if (m.layered.areaM2 >= 2) row.issues.push(`${label} layered faces < ${LAYER_GAP[label] * 100} cm ${m.layered.areaM2} m² (${m.layered.top.map(t => `${t.pair} at [${t.at}]`).join(', ')})`);
       if (label === 'near') {
-        m.coplanar = coplanarOverlaps(tris); m.sweep = backfaceSweep(g.scene, box);
+        m.coplanar = coplanarOverlaps(tris);
         if (m.coplanar.pairs > 20 && m.coplanar.areaM2 >= 5) row.issues.push(`near coplanar overlaps ${m.coplanar.pairs} (${m.coplanar.areaM2} m²: ${m.coplanar.top.map((t) => `${t.pair} ${t.areaM2} m² at [${t.at}]`).join(', ')})`);
-        if (m.sweep.backfacePct > 2) row.issues.push(`near back-face hits ${m.sweep.backfacePct}%`);
       }
+      m.sweep = backfaceSweep(g.scene, box);
+      if (m.sweep.backfacePct > LIMITS.backfacePct) row.issues.push(`${label} back-face hits ${m.sweep.backfacePct}% (${m.sweep.at.map((h) => `${h.material} at [${h.at}]`).join(', ')})`);
+      m.extras = extrasBytes(g.json);
+      if (m.extras.bytes > LIMITS.extrasKB * 1024) row.issues.push(`${label} GLB extras ${Math.round(m.extras.bytes / 1024)} KB (${m.extras.top.map((t) => `${t.key} ${t.kb} KB`).join(', ')}): make QA-only userData non-enumerable`);
+      m.skew = shadingSkew(tris, { maxDeg: LIMITS.skewDeg });
+      if (m.skew.top[0]?.areaM2 >= LIMITS.skewM2) row.issues.push(`${label} vertex normals behind their faces ${m.skew.areaM2} m² (${m.skew.top.map((t) => `${t.material} ${t.areaM2} m² at [${t.at}]`).join(', ')})`);
+      // A bridge's approach decks meet grade by design and are fitted by the host.
+      m.grade = e.kind === 'bridge' ? { areaM2: 0, top: [] } : gradeFaces(tris);
+      if (m.grade.areaM2 >= LIMITS.gradeM2) row.issues.push(`${label} faces on host grade (|y| ≤ 5 cm) ${m.grade.areaM2} m² (${m.grade.top.map((t) => `${t.material} ${t.areaM2} m² at [${t.at}]`).join(', ')})`);
+      planTris[label] = tris;
       m.windows = windowFacades(tris);
       m.memberEnds = memberEnds(tris);
       if (m.memberEnds.ends) row.issues.push(`${label} unsupported member-end candidates ${m.memberEnds.ends} (${m.memberEnds.flags.slice(0, 4).map(t => `${t.material} at [${t.at}]`).join(', ')})`);
       row[label] = m;
     }
     if (sizes.near && sizes.far) for (const ax of ['x', 'y', 'z']) if (Math.abs(sizes.far[ax] - sizes.near[ax]) > Math.max(1.5, sizes.near[ax] * 0.05)) row.issues.push(`far silhouette ${ax} ${sizes.far[ax].toFixed(1)} vs ${sizes.near[ax].toFixed(1)} m`);
+    if (planTris.near && planTris.far) {
+      row.farOverhang = farOverhang(planTris.near, planTris.far);
+      if (row.farOverhang.areaM2 >= LIMITS.overhangM2) row.issues.push(`far covers ${row.farOverhang.areaM2} m² the near model leaves open (${row.farOverhang.top.map((t) => `${t.material} ${t.areaM2} m² at [${t.at}]`).join(', ')})`);
+    }
     if (row.near && row.far) {
       row.windowRhythm = windowRhythm(row.near.windows, row.far.windows);
       if (row.windowRhythm.facades) row.issues.push(`far window-rhythm candidates (${row.windowRhythm.flags.map(f => `bearing bin ${f.bearingBin}: ${f.reasons.join(', ')}`).join('; ')})`);
