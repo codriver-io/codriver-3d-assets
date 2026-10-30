@@ -33,7 +33,7 @@ The default is **editable procedural source plus self-contained GLB delivery**. 
 - Document what local `y=0` means. Do not bake a terrain DEM, sea-level offset, Mercator scale or camera datum into the reusable GLB.
 - Keep the silhouette recognizable. For bridges, match deck arrangement, span rhythm, tower/cable patterns and distinctive supports. For buildings, match footprint, height, roof, facade rhythm and openings.
 - Export `near` and `far` GLBs, keeping important openings and structural contacts in both. Start with the closest existing landmark as a cost reference. Measure triangles, draw calls and bytes; there is no universal triangle budget and desktop timing is not in-car performance.
-- Prefer simple self-contained materials. The shared exporter applies meshopt compression and mesh quantization; see [the format and loader contract](docs/meshopt-compression.md). Avoid external textures and additional geometry decoders unless agreed in the proposal. Apply authoring transforms and inspect normals, winding and world bounds after export.
+- Prefer simple self-contained materials. The shared exporter applies meshopt compression and mesh quantization, which every runtime GLB requires ([ADR-0004](docs/adr/0004-compact-runtime-geometry.md)); see [the format and loader contract](docs/meshopt-compression.md). Avoid external textures and additional geometry decoders unless agreed in the proposal. Apply authoring transforms and inspect normals, winding and world bounds after export.
 - Keep buildings rigid. Bridge foundations, supports and decks must be identifiable so a host can place or fit them without stretching the whole structure.
 
 ### Cityscape and Full 3D world
