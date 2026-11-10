@@ -30,7 +30,7 @@ Local metres, +X east, +Y up, +Z south; y=0 is the masonry toe at local grade. E
 
 ## Modeling decisions and omissions
 
-Four thick masonry walls retain real ground and upper arch openings, inner faces and an open shaft. There is no roof, ceiling, replacement spire or invented bell. The upper outline is uneven and locally stepped, matching the surviving raised-centre remnant instead of a complete original crown. Original brick-and-mortar tiles replace the outside wall caps on a single plane, with clipped brick shapes around apertures; no brick textures or photograph tracing. Near uses fine courses; far uses coarser masonry and preserves all openings, wall thickness and silhouette. Brick colours are muted brown-red with grey-tan mortar. Small erosion scars are approximate and do not reproduce every missing brick.
+Four thick masonry walls retain real ground and upper arch openings, inner faces and an open shaft. There is no roof, ceiling, replacement spire or invented bell. The upper outline is uneven and locally stepped, matching the surviving raised-centre remnant instead of a complete original crown. Sparse original weathering patches and short isolated mortar-course fragments partition the outside wall caps on a single plane, without backing faces or shallow overlays. Near retains four low-contrast patches and four short course fragments per face; far keeps only one patch and one fragment per face. The same three materials, openings, wall thickness, eroded top, pilasters and cornice survive in both LODs. Brick colours are muted brown-red with grey-tan mortar. No brick textures or photograph tracing; individual brick courses are omitted.
 
 The fort, nave foundations, cemetery, trees, historic lettering and former iron straps are omitted. Dimensions, exact erosion pattern and orientation remain estimates; there is no host integration evidence. No contributor licence terms have been accepted by an agent.
 
@@ -38,13 +38,13 @@ The fort, nave foundations, cemetery, trees, historic lettering and former iron 
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 29,616 | 3 | 194,452 |
-| Far | 6,208 | 3 | 54,176 |
+| Near | 1,490 | 3 | 24,560 |
+| Far | 1,002 | 3 | 19,400 |
 
-Final `qa-metrics` has no flags: no below-grade parts, no coplanar/layered candidates, no back-face sweep hits, matching bounds and preserved arch openings. Metrics: `tmp/landmark-qa/colonial-dorchester-bell-tower-metrics.json`. Final exported contact sheet: `tmp/landmark-qa/sheets/final2/colonial-dorchester-bell-tower.jpg`, using padded scratch bounds to show full top and base. Two visual comparisons checked open shaft, raised crown, arch rhythm and far silhouette against the verified photo; the final change removes tile layers hidden by adjoining walls and cornice returns. Approximate brick courses are deliberately larger in far. Height, plan and orientation remain estimates.
+The weight-only review replaced the dense brick tessellation (29,616 / 6,208 triangles) with sparse weathering inlays, reducing near triangles by 95% and far by 84%. Placement, proportions, orientation, eroded top profiles, arch outlines and support geometry were unchanged; exported near/far bounds compare exactly equal to the previous version and both still use three materials/draws.
+
+Final `qa-metrics` has no flags: no below-grade parts, no coplanar/layered candidates, no back-face sweep hits and matching LOD bounds. Metrics: `tmp/landmark-qa/colonial-dorchester-weight-metrics.json`. The single new exported contact sheet is `tmp/landmark-qa/sheets/colonial-weight-fix/colonial-dorchester-bell-tower.jpg`, using padded scratch bounds to show the full top and base. It compares the retained roofless shaft, eroded crown, arches and far silhouette with the verified reference photograph. Heights, plan and orientation remain estimates.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. The standalone library viewer cannot establish either host mode.
 
-Final library validation: `pnpm build` and `pnpm check` passed for 419 assets / 846 GLB variants. The focused browser matrix loaded near/far, light/dark and GLB/procedural for all four Charleston-area landmarks (32 scenarios, no page errors); local evidence: `tmp/landmark-qa/builder-5-browser-matrix.json`. Shared final geometry metrics are in `tmp/landmark-qa/builder-5-final-metrics.json`. Byte counts above include the final licence metadata stamp, read from each measured manifest rather than the exporter's pre-stamp console summary.
-
-The final `pnpm test:browser http://localhost:4315` passed the complete 419-viewer public library suite, including desktop/mobile, GLB/procedural, LOD/theme, scene download and licences; no page errors or failed responses.
+The previous batch passed the complete 419-viewer browser suite and 32 source/GLB/LOD/theme cases. This weight-only revision is validated separately by geometry metrics, the single new contact sheet and refreshed exported-GLB thumbnail, followed by passing `pnpm build` and `pnpm check`; no host integration is claimed. Byte counts above include the final licence metadata stamp.

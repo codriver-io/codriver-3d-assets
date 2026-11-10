@@ -33,13 +33,26 @@ export function create({ detail='near' }={}) {
     const plainMask=polygonClipping.union(...plainZones.map(r=>[r]));
     tile('brick',polygonClipping.intersection(polygon,plainMask));
     const exposed=polygonClipping.difference(polygon,plainMask);
-    const bh=near?.14:.38,bw=near?.38:.86,joint=near?.012:.023;
-    for(let row=0;row*bh<12.2;row++)for(let col=-1;col*bw<W;col++){
-      const y0=row*bh,y1=y0+bh,x0=col*bw+(row%2)*bw/2,x1=x0+bw,outer=rect(x0,y0,x1,y1),inner=rect(x0+joint/2,y0+joint/2,x1-joint/2,y1-joint/2);
-      const brick=polygonClipping.intersection(exposed,[inner]);
-      tile((col*11+row*7+side)%9===0?'brickShade':'brick',brick);
-      const gaps=polygonClipping.difference([outer],[inner]);tile('mortar',polygonClipping.intersection(exposed,gaps));
-    }
+    // Sparse original weathering inlays replace thousands of individual bricks.
+    // All regions partition the outside cap on one plane: no backing faces or
+    // shallow overlays. Keep the approved shaft, apertures and crown unchanged.
+    const patches=near?[
+      [[.95,.20],[2.0,.20],[2.12,.68],[1.75,1.02],[1.03,.86],[.95,.20]],
+      [[3.25,3.65],[4.36,3.72],[4.30,4.15],[3.72,4.48],[3.15,4.12],[3.25,3.65]],
+      [[1.0,8.95],[1.58,8.74],[2.18,9.02],[2.0,9.47],[1.05,9.35],[1.0,8.95]],
+      [[3.30,10.15],[4.30,10.28],[4.28,10.75],[3.55,10.92],[3.18,10.60],[3.30,10.15]],
+    ]:[
+      [[.95,.20],[2.0,.20],[2.12,.68],[1.75,1.02],[1.03,.86],[.95,.20]],
+    ];
+    const courses=near?[
+      rect(1.00,2.34,1.90,2.38),rect(3.45,4.36,4.30,4.40),
+      rect(1.06,8.50,1.86,8.54),rect(3.30,10.36,4.15,10.40),
+    ]:[rect(1.00,2.34,1.90,2.40)];
+    const shadeMask=polygonClipping.union(...patches.map(p=>[p]));
+    const mortarMask=polygonClipping.union(...courses.map(p=>[p]));
+    tile('brick',polygonClipping.difference(exposed,shadeMask,mortarMask));
+    tile('brickShade',polygonClipping.difference(polygonClipping.intersection(exposed,shadeMask),mortarMask));
+    tile('mortar',polygonClipping.intersection(exposed,mortarMask));
   };
   for(let i=0;i<4;i++)wall(i);
   const box=(m,p,d)=>b.box(m,p,d);

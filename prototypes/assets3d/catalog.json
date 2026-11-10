@@ -37104,7 +37104,7 @@
           }
         ]
       },
-      "notes": "OSM ruins node only; authored plan and orientation, no provider footprint/replacement claim. All model dimensions are photo estimates; NRHP church dimensions do not measure the tower. No reconstructed church, roof, bells, tabby fort or textures. Cityscape: not tested. Full 3D world: not tested.",
+      "notes": "Weight-review revision: sparse original weathering patches and isolated courses replace dense brick tessellation; near 1,490 triangles / 3 draws / 24,560 bytes, far 1,002 triangles / 3 draws / 19,400 bytes, including licence metadata. Same silhouette, openings, eroded top, pilasters, cornice, proportions and placement; exported bounds exactly unchanged, no QA flags. OSM ruins node only; authored plan and estimated orientation, no provider footprint/replacement claim. All dimensions are photo estimates; NRHP church dimensions do not measure the tower. No reconstructed church, roof, bells, tabby fort or textures. Cityscape: not tested. Full 3D world: not tested.",
       "documentation": "docs/assets/top-cities-colonial-dorchester-bell-tower.md",
       "manifest": "/models/buildings/colonial-dorchester-bell-tower.json",
       "inspection": {

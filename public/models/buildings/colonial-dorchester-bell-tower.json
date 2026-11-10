@@ -24,8 +24,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/colonial-dorchester-bell-tower-near.glb",
-      "bytes": 194452,
-      "triangles": 29616,
+      "bytes": 24560,
+      "triangles": 1490,
       "drawCalls": 3,
       "bounds": {
         "min": [
@@ -42,8 +42,8 @@
     },
     "far": {
       "url": "/models/buildings/colonial-dorchester-bell-tower-far.glb",
-      "bytes": 54176,
-      "triangles": 6208,
+      "bytes": 19400,
+      "triangles": 1002,
       "drawCalls": 3,
       "bounds": {
         "min": [
