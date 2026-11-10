@@ -37218,6 +37218,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pineapple-fountain-charleston",
+      "name": "Pineapple Fountain",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Small Waterfront Park pineapple fountain with two broad scalloped bowls, a textured bronze pineapple body, curled leaf crown and separate static falling streams within its circular basin.",
+      "manifest": "/models/buildings/pineapple-fountain-charleston.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs pineapple-fountain-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. Mapped basin © OpenStreetMap contributors, ODbL 1.0. JonathanLamb CC BY 3.0 Commons images and Library of Congress/City reference photos are comparison only. No photograph, texture, scan or imported model is included. No legal acceptance asserted.",
+        "references": [
+          {
+            "label": "City of Charleston: Pineapple Fountain with Sailboats, current identity and sculpture",
+            "url": "https://www.charleston-sc.gov/gallery.aspx?PID=70"
+          },
+          {
+            "label": "Library of Congress Highsmith photo: completed 1990, Waterfront Park",
+            "url": "https://www.loc.gov/item/2017879904/"
+          },
+          {
+            "label": "OSM basin 1356302855",
+            "url": "https://www.openstreetmap.org/way/1356302855"
+          },
+          {
+            "label": "JonathanLamb, east-facing full fountain, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charleston-SC-pineapple-fountain.jpg"
+          },
+          {
+            "label": "JonathanLamb, west-facing fountain and City Gallery, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charleston-Waterfront-Park-pineapple-fountain-back.jpg"
+          }
+        ]
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pineapple-fountain-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "1990 Pineapple Fountain, not the separate Vendue splash fountain. Basin 10.6 m mapped; total approximately 4 m, bowl sizes, skin and leaves estimated. Static low-water phase; no surrounding park or textures. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-pineapple-fountain-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
