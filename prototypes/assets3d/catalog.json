@@ -36989,6 +36989,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "morris-island-lighthouse",
+      "name": "Morris Island Lighthouse",
+      "kind": "building",
+      "location": "Morris Island, Charleston Harbor, Folly Beach, South Carolina",
+      "status": "ready",
+      "description": "The surviving 1876 tapering brick lighthouse, with faded brown and white daymark bands, corbelled galleries and an open lantern above its circular sheet-pile cofferdam.",
+      "manifest": "/models/buildings/morris-island-lighthouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs morris-island-lighthouse",
+        "provenance": "Original procedural geometry. Geographic control and tower/cofferdam rings from OSM ways 1528926180 and 926973307, © OpenStreetMap contributors, ODbL 1.0. Photographic comparison only: AlpineWhiteMavic CC BY-SA 4.0; Niagara CC BY-SA 3.0; neither photo is shipped. No third-party mesh, scan, texture, logo or lettering. Separate contributor/product acceptance is a maintainer responsibility; no agent acceptance is claimed.",
+        "references": [
+          {
+            "label": "SC Department of Archives and History: 1876 tower, NRHP summary (height conflict)",
+            "url": "https://www.nationalregister.sc.gov/charleston/S10817710119/index.htm"
+          },
+          {
+            "label": "Taylor Marine: foundation stabilization, 72 ft cofferdam",
+            "url": "https://taylormarineconstruction.com/wp-content/uploads/2019/04/the-morris-island-lighthouse-phase-one-foundation-stabilization-project.pdf"
+          },
+          {
+            "label": "Save the Light: history and current preservation",
+            "url": "https://savethelight.org/about/lighthouse-history/"
+          },
+          {
+            "label": "OSM tower 1528926180",
+            "url": "https://www.openstreetmap.org/way/1528926180"
+          },
+          {
+            "label": "Morris Island Light · AlpineWhiteMavic, 2018 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Morris_Island_Light.jpg"
+          },
+          {
+            "label": "Morris Island Light, April 2014 · Niagara (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Morris_Island_Light,_April_2014.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=morris-island-lighthouse&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: 1876 identity and 21.95 m modern cofferdam diameter. Estimated: 49.07 m overall height (published heights conflict), 10 m lower shaft diameter, 5.08 m upper shaft, band levels, lantern and waterline exposure. OSM tower ring is narrower than the photographed shaft. No submerged piles or sea mesh; host modes not tested.",
+      "documentation": "docs/assets/top-cities-morris-island-lighthouse.md",
+      "city": "Folly Beach",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
