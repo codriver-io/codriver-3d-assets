@@ -75,6 +75,7 @@ const work = mkdtempSync(join(tmpdir(), 'qa-sheet-'));
 writeFileSync(join(work, 'entry.js'), `
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, logarithmicDepthBuffer: true });
 renderer.setSize(480, 300); renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.2;
 document.body.style.margin = '0'; document.body.append(renderer.domElement);
@@ -87,7 +88,7 @@ const camera = new THREE.PerspectiveCamera(35, 480 / 300, 0.5, 60000);
 let model = null;
 window.__load = async (url) => {
   if (model) scene.remove(model);
-  model = (await new GLTFLoader().loadAsync(url)).scene; scene.add(model);
+  model = (await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(url)).scene; scene.add(model);
   const b = new THREE.Box3().setFromObject(model); return { min: b.min.toArray(), max: b.max.toArray() };
 };
 window.__shot = (eye, target, up) => {

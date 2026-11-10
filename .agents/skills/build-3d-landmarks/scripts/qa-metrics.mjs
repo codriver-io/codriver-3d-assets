@@ -13,6 +13,7 @@ import * as THREE from 'three';
 import { windowFacades, windowRhythm, memberEnds } from './quality-checks.mjs';
 export { windowFacades, windowRhythm, memberEnds } from './quality-checks.mjs';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { loadAssetCatalog, glbMetrics } from '../../../../scripts/asset-catalog.mjs';
 
 const ROOT = resolve(process.cwd());
@@ -155,7 +156,7 @@ function backfaceSweep(scene, box, rays = 500) {
 }
 export async function loadGlb(file) {
   const data = await readFile(file);
-  const scene = (await new GLTFLoader().parseAsync(data.buffer.slice(data.byteOffset, data.byteOffset + data.byteLength), '')).scene;
+  const scene = (await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(data.buffer.slice(data.byteOffset, data.byteOffset + data.byteLength), '')).scene;
   const len = data.readUInt32LE(12), json = JSON.parse(data.subarray(20, 20 + len));
   let liftBytes = 0; const attrs = new Set();
   for (const m of json.meshes || []) for (const p of m.primitives) for (const [k, i] of Object.entries(p.attributes)) {
