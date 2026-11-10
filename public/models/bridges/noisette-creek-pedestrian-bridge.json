@@ -1,0 +1,66 @@
+{
+  "id": "noisette-creek-pedestrian-bridge",
+  "name": "Noisette Creek Pedestrian Bridge",
+  "kind": "bridge",
+  "origin": [
+    -79.96899,
+    32.87191
+  ],
+  "height": 21.1,
+  "padM": 140,
+  "frontageBearing": 143,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the support-foot datum. Main deck 4.2 m, landings 0.8 m; arch rises 16.764 m above its feet. East/up/south metres, mapped plan baked once, no DEM or sea-level offset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2022 curved pedestrian bridge with twin outward-leaning steel arches, suspended path and side viewing platform. Designer publishes 230 ft span/55 ft tall arches/800 ft total; City report says 235 ft span. Brief mentions 240 ft/53 ft but not independently authenticated. Model uses about 71 m chord, 16.764 m rise, mapped 236.10 m centerline. Vertical datum, lean, sections, hangers, footings and rail spacing estimated; no host integration.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/noisette-creek-pedestrian-bridge-near.glb",
+      "bytes": 181660,
+      "triangles": 13648,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.411128997802734,
+          -0.17999999225139618,
+          -75.6350326538086
+        ],
+        "max": [
+          95.57518005371094,
+          21.11302947998047,
+          109.59286499023438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/noisette-creek-pedestrian-bridge-far.glb",
+      "bytes": 73300,
+      "triangles": 4844,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -47.411128997802734,
+          -0.17999999225139618,
+          -75.6350326538086
+        ],
+        "max": [
+          95.57518005371094,
+          21.13926887512207,
+          109.59286499023438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

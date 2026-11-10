@@ -37163,6 +37163,101 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "noisette-creek-pedestrian-bridge",
+      "name": "Noisette Creek Pedestrian Bridge",
+      "kind": "bridge",
+      "location": "North Charleston, South Carolina",
+      "city": "North Charleston",
+      "status": "ready",
+      "description": "2022 Riverfront Park crossing with a curved pale deck, paired outward-leaning white arches, hangers and a mapped side viewing platform.",
+      "manifest": "/models/bridges/noisette-creek-pedestrian-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs noisette-creek-pedestrian-bridge",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver. OSM outline, platform and centerline © OpenStreetMap contributors, ODbL 1.0. Designer Thomas & Hutton aerial photos 4.png and 1.png: all rights reserved, reference-only, not redistributed; compared locally. City of North Charleston Flickr 52490752215 verified CC BY-SA 2.0 via file page and Flickr oEmbed, but image download unavailable so not used for geometric comparison. No Commons images found; coordinator approved this reference-only exception. No imported mesh, photographic texture or traced photo outline.",
+        "references": [
+          {
+            "label": "Designer: 800 ft path, 230 ft span, 55 ft arches and aerial references (all rights reserved)",
+            "url": "https://www.thomasandhutton.com/portfolio_page/noisette-creek-pedestrian-bridge-north-charleston-sc/"
+          },
+          {
+            "label": "Designer aerial 1, all rights reserved, reference-only",
+            "url": "https://www.thomasandhutton.com/wp-content/uploads/2023/09/4.png"
+          },
+          {
+            "label": "Designer aerial 2, all rights reserved, reference-only",
+            "url": "https://www.thomasandhutton.com/wp-content/uploads/2023/09/1.png"
+          },
+          {
+            "label": "City 2024 report: November 9 2022, 235 ft span, 55 ft arches",
+            "url": "https://cms2.revize.com/revize/cityofnorthcharleston/Documents/Finance/FYE%202024%20ACFR%20-%20FINAL%20COPY%20%28DIGITAL%20COPY%29.pdf"
+          },
+          {
+            "label": "Railing supplier: 42 in posts, bronze finish and cable railing",
+            "url": "https://cicpgh.com/noisette-creek-pedestrian-bridge/"
+          },
+          {
+            "label": "OSM bridge outline and platform",
+            "url": "https://www.openstreetmap.org/way/1508243093"
+          },
+          {
+            "label": "OSM path centerline",
+            "url": "https://www.openstreetmap.org/way/1508243094"
+          },
+          {
+            "label": "North Charleston ribbon cutting, CC BY-SA 2.0 (license verified; image unavailable)",
+            "url": "https://www.flickr.com/photos/northcharleston/52490752215"
+          }
+        ]
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=detail"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-noisette-creek-pedestrian-bridge.md",
+      "notes": "Mapped 236.10 m path and event platform. Thomas & Hutton publishes 230 ft span and 55 ft tall arches; City report says 235 ft. Deck height, arch lean, cable layout, pile and seat details estimated; no road layer.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
