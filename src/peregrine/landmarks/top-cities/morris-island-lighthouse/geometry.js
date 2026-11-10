@@ -29,15 +29,15 @@ export function create({detail='near'}={}) {
  // Corbelled upper gallery and black service room below the lantern.
  shell('iron',39.7,40.0,2.54,2.65);shell('iron',40.0,42.7,2.65,2.40);
  annulus('iron',42.7,0,3.65);shell('iron',42.7,42.94,3.65,3.65);
- shell('iron',42.94,45.1,2.42,2.42);annulus('iron',45.1,0,2.42);
+ shell('iron',42.94,45.1,2.42,2.42);annulus('iron',45.1,0,2.95);shell('iron',45.1,45.25,2.95,2.95);
  // Main gallery brackets touch the tower and the outer platform.
  for(let i=0;i<12;i++){let a=i*2*Math.PI/12;b.bar('iron',P(2.63,40.15,a),P(3.56,42.7,a),near?0.16:0.20);}
  // Open lantern: glass panels only, framed by columns and horizontal rings.
  shell('glass',45.1,47.85,1.94,1.94);shell('iron',47.85,48.02,2.12,2.12);
  shell('iron',48.02,48.93,2.12,0.12);shell('base',48.93,49.07,0.12,0.10);
  for(let i=0;i<8;i++){let a=i*2*Math.PI/8;b.bar('iron',P(1.98,45.1,a),P(1.98,47.85,a),0.09);}
- for(const [y,r] of [[44,3.65],[45.0,2.95]]){
-  const yb=y===44?42.94:44.15;
+ for(const [y,r] of [[44,3.65],[46.15,2.95]]){
+  const yb=y===44?42.94:45.25;
   for(let i=0;i<24;i++){let a=i*2*Math.PI/24,c=(i+1)*2*Math.PI/24;b.bar('iron',P(r,y,a),P(r,y,c),0.045);b.bar('iron',P(r,yb,a),P(r,y,a),0.045);}
  }
  for(const [m,pos] of buckets){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.computeVertexNormals();b.put(g,m);}

@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/morris-island-lighthouse-near.glb",
-      "bytes": 91888,
-      "triangles": 5376,
+      "bytes": 93940,
+      "triangles": 5504,
       "drawCalls": 6,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/morris-island-lighthouse-far.glb",
-      "bytes": 54704,
-      "triangles": 2808,
+      "bytes": 55764,
+      "triangles": 2872,
       "drawCalls": 6,
       "bounds": {
         "min": [
