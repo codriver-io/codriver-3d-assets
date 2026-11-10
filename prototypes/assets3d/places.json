@@ -115,6 +115,11 @@
     "region": "Cartago",
     "continent": "North America"
   },
+  "Charleston": {
+    "country": "United States",
+    "region": "South Carolina",
+    "continent": "North America"
+  },
   "Charlotte": {
     "country": "United States",
     "region": "North Carolina",
@@ -170,6 +175,11 @@
     "region": "Alberta",
     "continent": "North America"
   },
+  "Folly Beach": {
+    "country": "United States",
+    "region": "South Carolina",
+    "continent": "North America"
+  },
   "Fort Worth": {
     "country": "United States",
     "region": "Texas",
@@ -183,6 +193,11 @@
   "Gatineau": {
     "country": "Canada",
     "region": "Québec",
+    "continent": "North America"
+  },
+  "Goose Creek": {
+    "country": "United States",
+    "region": "South Carolina",
     "continent": "North America"
   },
   "Halden": {
@@ -331,6 +346,11 @@
     "region": "Québec",
     "continent": "North America"
   },
+  "Mount Pleasant": {
+    "country": "United States",
+    "region": "South Carolina",
+    "continent": "North America"
+  },
   "Munich": {
     "country": "Germany",
     "continent": "Europe"
@@ -352,6 +372,11 @@
   "Nice": {
     "country": "France",
     "continent": "Europe"
+  },
+  "North Charleston": {
+    "country": "United States",
+    "region": "South Carolina",
+    "continent": "North America"
   },
   "Omaha": {
     "country": "United States",
@@ -459,6 +484,16 @@
   "Stuttgart": {
     "country": "Germany",
     "continent": "Europe"
+  },
+  "Sullivan's Island": {
+    "country": "United States",
+    "region": "South Carolina",
+    "continent": "North America"
+  },
+  "Summerville": {
+    "country": "United States",
+    "region": "South Carolina",
+    "continent": "North America"
   },
   "Tampa": {
     "country": "United States",

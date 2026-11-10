@@ -1,0 +1,7 @@
+// STUB, not released. Replace every value from sourced references; the origin below is only approximate.
+export const SPEC = {
+  id: "pineapple-fountain-charleston", name: "Pineapple Fountain (Waterfront Park)", kind: 'building', ready: false,
+  origin: [-79.9255, 32.7782], height: 1, padM: 10, frontageBearing: 0,
+};
+export const PALETTES = { light: {}, dark: {} };
+export const MANIFEST = { elevationDatum: '', attribution: '', note: '' };
