@@ -37222,6 +37222,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "charleston-international-airport-terminal",
+      "name": "Charleston International Airport terminal",
+      "kind": "building",
+      "location": "Charleston International Airport, North Charleston, South Carolina",
+      "status": "ready",
+      "description": "The redeveloped glass-fronted terminal with its central dome, two unequal concourse arms, raised roof monitors, connected curb canopies and supported boarding corridors.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs charleston-international-airport-terminal",
+        "provenance": "Original procedural geometry from current OSM terminal/canopy outlines and boarding-path controls, © OpenStreetMap contributors, ODbL 1.0. Redevelopment identity and Central Hall height from designer Fentress Architects; post-2022 Concourse A identity from owner. Verified Commons photos by AutoRentals (2019, CC BY-SA 4.0) and Edward Russell (2017, CC BY 2.0) are local comparison only; no photographs, scans, third-party meshes, textures, logos or lettering shipped. No contributor/product acceptance is asserted by an agent.",
+        "references": [
+          {
+            "label": "Fentress Architects completion release: 2016, 25 ft Central Hall and dome",
+            "url": "https://www.aviationpros.com/airport-business/airport-infrastructure-operations/press-release/12265550/fentress-architects-charleston-international-airport-expansion-completed"
+          },
+          {
+            "label": "Structural engineer MMSA: 2016 completion and two-concourse redevelopment",
+            "url": "https://www.mmsainc.com/portfolio/charleston-international-airport-terminal-redevelopment-and-improvement-program-trip/"
+          },
+          {
+            "label": "Airport owner: Concourse A capacity expanded in 2022",
+            "url": "https://iflychs.com/chs-expands-gate-capacity/"
+          },
+          {
+            "label": "Airport operator: terminal map",
+            "url": "https://iflychs.com/passengers/terminal-map/"
+          },
+          {
+            "label": "OSM main terminal way 35209624",
+            "url": "https://www.openstreetmap.org/way/35209624"
+          },
+          {
+            "label": "Front of Charleston Airport · AutoRentals, 2019 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Front_of_Charleston_Airport_AutoRentals.jpg"
+          },
+          {
+            "label": "CHS concourse A interior · Edward Russell, 2017 (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:CHS_concourse_A_interior_(32241690883).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js"
+      },
+      "notes": "Sourced: designer 25 ft / 7.62 m Central Hall, 2016 redevelopment and owner 2022 Concourse A gate expansion; OSM terminal/canopy footprint and seventeen boarding corridor paths. Estimated: apron datum, passenger floor +3.6 m, dome rise 5.5 m, roof monitor dimensions, facade cadence, canopies, boarding corridor sizes/supports. Control tower, parking, cargo, aircraft, logos/letters and future construction omitted. Cityscape and Full 3D world not tested.",
+      "documentation": "docs/assets/top-cities-charleston-international-airport-terminal.md",
+      "manifest": "/models/buildings/charleston-international-airport-terminal.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=detail"
+          },
+          {
+            "label": "Concourse",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=concourse"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
