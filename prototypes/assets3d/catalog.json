@@ -37072,6 +37072,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ashley-river-memorial-bridge",
+      "name": "Ashley River Memorial Bridge",
+      "kind": "bridge",
+      "location": "Charleston, South Carolina",
+      "status": "ready",
+      "description": "The 1926 Ashley River crossing: shallow concrete arches, a closed double-leaf steel bascule and four Mediterranean Revival tender houses with open octagonal lanterns.",
+      "manifest": "/models/bridges/ashley-river-memorial-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs ashley-river-memorial-bridge",
+        "provenance": "Original procedural geometry authored 2026-11-09. OSM API footprint and highway alignment © OpenStreetMap contributors, ODbL 1.0. Both ProfReader 2015 Commons photographs verified as the four-tender-house 1926 bridge, CC BY-SA 4.0 on each file page, reference only. No textures, third-party meshes, photos or lettering shipped; no contributor legal terms accepted by agent.",
+        "references": [
+          {
+            "label": "City and SCDOT: current identity, 1926 memorial bridge",
+            "url": "https://www.charleston-sc.gov/m/NewsFlash/Home/Detail/1757"
+          },
+          {
+            "label": "SCDOT: southbound US 17 bridge maintenance",
+            "url": "https://www.scdot.org/inside/SCDOTPress/2023/Post3390.html"
+          },
+          {
+            "label": "OSM mapped bridge envelope and piers",
+            "url": "https://www.openstreetmap.org/way/1499776962"
+          },
+          {
+            "label": "ProfReader, bascule and four tender houses, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ashley_River_Memorial_Bridge.jpg"
+          },
+          {
+            "label": "ProfReader, broadside of bascule, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ashley_River_Memorial_Bridge,_Charleston,_South_Carolina.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=detail"
+          }
+        ]
+      },
+      "notes": "Current southbound bridge only. Mapped 528.1 m length; all vertical dimensions and component sizes estimated from two licensed photographs. Legare Bridge excluded. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-ashley-river-memorial-bridge.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

@@ -1,7 +1,5 @@
-// STUB, not released. Replace every value from sourced references; the origin below is only approximate.
-export const SPEC = {
-  id: "ashley-river-memorial-bridge", name: "Ashley River Memorial Bridge", kind: 'bridge', ready: false,
-  origin: [-79.962, 32.783], height: 1, padM: 10, frontageBearing: 0,
-};
-export const PALETTES = { light: {}, dark: {} };
-export const MANIFEST = { elevationDatum: '', attribution: '', note: '' };
+export const SPEC={id:'ashley-river-memorial-bridge',name:'Ashley River Memorial Bridge',kind:'bridge',ready:true,
+ origin:[-79.96106825,32.7834928],height:19.9,padM:285,frontageBearing:61.3962};
+export const ROTATION=.49922990100127407;
+export const PALETTES={light:{concrete:'#a7a595',stone:'#b7b29c',roof:'#d4d4cb',steel:'#9ba8a7',asphalt:'#777c7b',glass:'#3c4a49',paint:'#e3dfce',timber:'#697566'},dark:{concrete:'#788184',stone:'#879397',roof:'#a2b0b7',steel:'#738b94',asphalt:'#35424b',glass:'#263942',paint:'#abbcc2',timber:'#4c626b'}};
+export const MANIFEST={elevationDatum:'Local y=0 is the visual waterline. Deck height 7 m at the closed bascule, end decks 4.8 m: photographic estimates. No absolute elevation, terrain or Mercator scale baked in.',attribution:'Original procedural geometry; geographic alignment and outline © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',note:'Current 1926 Ashley River Memorial Bridge, southbound US 17 only; adjacent T. Allen Legare Bridge excluded. OSM mapped length 528.1 m, bascule line segment 43.22 m; model hinge separation 48 m estimated including bearing overlap. Four Mediterranean Revival tender houses with open octagonal lanterns; shallow concrete arches and later pier reinforcements. All vertical dimensions and ornamental sections photo-estimated; bridge is shown closed, without animation or mechanical interiors.'};
