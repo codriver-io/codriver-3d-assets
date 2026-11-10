@@ -36989,6 +36989,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "don-holt-bridge",
+      "name": "Don N. Holt Bridge",
+      "kind": "bridge",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "1992 Cooper River crossing with pale blue continuous Warren truss, six-lane deck and long concrete approach viaducts.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs don-holt-bridge",
+        "provenance": "Original procedural geometry commissioned for Codriver. Mapped truss/road alignment © OpenStreetMap contributors, ODbL 1.0. Comparison only: Donholt.JPG by Citm2000, public domain, 2008 (predates repaint); SCDOT painting report and Live5 2017 repaint imagery, all rights reserved, reference-only, not redistributed. No photos, meshes, textures or signage lettering imported.",
+        "references": [
+          {
+            "label": "SCDOT existing conditions: 1992, three truss spans, approximately 2 miles, 155 ft clearance",
+            "url": "https://info2.scdot.org/projects/ViewerFiles/Appendix%20A-Existing%20Transportation%20Conditions%20Summary-Final%20July%202022.pdf"
+          },
+          {
+            "label": "OSM truss footprint",
+            "url": "https://www.openstreetmap.org/way/1469639956"
+          },
+          {
+            "label": "Citm2000, public domain, 2008 pre-repaint reference",
+            "url": "https://commons.wikimedia.org/wiki/File:Donholt.JPG"
+          },
+          {
+            "label": "SCDOT 2017 painting program; reference-only",
+            "url": "https://info2.scdot.org/SCDOTPress/Lists/Posts/Post.aspx?ID=2616"
+          },
+          {
+            "label": "Current Citadel-blue paint, 2017; all rights reserved, comparison only",
+            "url": "https://www.live5news.com/story/36522491/don-holt-bridge-gets-makeover-in-citadel-blue-color-as-painting-resumes/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js"
+      },
+      "notes": "Current 2017 pale-blue repaint. Truss outline and bearing mapped; approximately 3330 m whole crossing, estimated approach profile and member sections. Exit ramps and signage excluded; library-only model.",
+      "documentation": "docs/assets/top-cities-don-holt-bridge.md",
+      "manifest": "/models/bridges/don-holt-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=don-holt-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
