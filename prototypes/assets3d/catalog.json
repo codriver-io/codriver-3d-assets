@@ -37143,6 +37143,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "us-custom-house-charleston",
+      "name": "United States Custom House",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Roman Corinthian cruciform Custom House with two open six-column porticoes, broad monumental stairs, pediments, two tiers of windows and a pierced roof balustrade.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs us-custom-house-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. Mapped cross plan © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry CC BY 3.0 and Diligent Terrier CC BY-SA 4.0 photographs are reference-only. No photos, textures, lettering or imported geometry included. No contributor acceptance asserted.",
+        "references": [
+          {
+            "label": "GSA historic building page: cross plan, two Corinthian temple fronts, stairs, low roof",
+            "url": "https://www.gsa.gov/real-estate/explore-historic-buildings/find-a-historic-federal-building/us-custom-house-charleston-sc"
+          },
+          {
+            "label": "NPS nomination: historical 249 × 152 ft description; unbuilt dome excluded",
+            "url": "https://npgallery.nps.gov/pdfhost/docs/nrhp/text/74001834.PDF"
+          },
+          {
+            "label": "OSM way 37594690",
+            "url": "https://www.openstreetmap.org/way/37594690"
+          },
+          {
+            "label": "Brian Stansberry, west portico, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:US-custom-house-charleston-sc1.jpg"
+          },
+          {
+            "label": "Diligent Terrier, exterior, CC BY-SA 4.0 (multi-licensed)",
+            "url": "https://commons.wikimedia.org/wiki/File:United_States_Custom_House.jpg"
+          }
+        ]
+      },
+      "notes": "Completed 1879 Custom House at East Bay Street, not Old Exchange or unbuilt domed proposal. Dimensions separate mapped masonry envelope from stair-inclusive historical description. 23 m height is estimated. Ornament and capitals simplified, lettering omitted. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-us-custom-house-charleston.md",
+      "manifest": "/models/buildings/us-custom-house-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=us-custom-house-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=detail"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
