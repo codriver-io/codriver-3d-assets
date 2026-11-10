@@ -1,0 +1,264 @@
+{
+  "id": "st-philips-church-charleston",
+  "name": "St. Philip's Church",
+  "kind": "building",
+  "origin": [
+    -79.929218,
+    32.779012
+  ],
+  "height": 56,
+  "padM": 28,
+  "frontageBearing": 267.14,
+  "rotation": 0.04991641660703782,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -79.9294414,
+          32.7791286
+        ],
+        [
+          -79.9294358,
+          32.7791289
+        ],
+        [
+          -79.9293835,
+          32.7791311
+        ],
+        [
+          -79.9293224,
+          32.7791337
+        ],
+        [
+          -79.9293207,
+          32.7791051
+        ],
+        [
+          -79.9290646,
+          32.779116
+        ],
+        [
+          -79.9290581,
+          32.7791163
+        ],
+        [
+          -79.9290024,
+          32.7791187
+        ],
+        [
+          -79.9289998,
+          32.779075
+        ],
+        [
+          -79.9289996,
+          32.7790709
+        ],
+        [
+          -79.9289921,
+          32.7790701
+        ],
+        [
+          -79.928985,
+          32.7790684
+        ],
+        [
+          -79.9289783,
+          32.779066
+        ],
+        [
+          -79.928972,
+          32.7790628
+        ],
+        [
+          -79.9289664,
+          32.7790589
+        ],
+        [
+          -79.9289614,
+          32.7790543
+        ],
+        [
+          -79.9289572,
+          32.7790493
+        ],
+        [
+          -79.9289539,
+          32.7790438
+        ],
+        [
+          -79.9289515,
+          32.7790379
+        ],
+        [
+          -79.9289501,
+          32.7790319
+        ],
+        [
+          -79.9289497,
+          32.7790257
+        ],
+        [
+          -79.9289503,
+          32.7790196
+        ],
+        [
+          -79.9289519,
+          32.7790136
+        ],
+        [
+          -79.9289544,
+          32.7790078
+        ],
+        [
+          -79.9289579,
+          32.7790024
+        ],
+        [
+          -79.9289623,
+          32.7789974
+        ],
+        [
+          -79.9289674,
+          32.778993
+        ],
+        [
+          -79.9289732,
+          32.7789892
+        ],
+        [
+          -79.9289781,
+          32.7789868
+        ],
+        [
+          -79.9289834,
+          32.7789847
+        ],
+        [
+          -79.9289889,
+          32.7789832
+        ],
+        [
+          -79.9289943,
+          32.7789822
+        ],
+        [
+          -79.9289941,
+          32.7789776
+        ],
+        [
+          -79.9289914,
+          32.778932
+        ],
+        [
+          -79.9290466,
+          32.7789296
+        ],
+        [
+          -79.9293074,
+          32.7789186
+        ],
+        [
+          -79.9293057,
+          32.7788908
+        ],
+        [
+          -79.9294195,
+          32.778886
+        ],
+        [
+          -79.9294259,
+          32.7788857
+        ],
+        [
+          -79.9294299,
+          32.7789522
+        ],
+        [
+          -79.9294765,
+          32.7789502
+        ],
+        [
+          -79.9294831,
+          32.7790607
+        ],
+        [
+          -79.9294374,
+          32.7790626
+        ],
+        [
+          -79.9294414,
+          32.7791286
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -79.9294765,
+        32.7789502
+      ],
+      [
+        -79.9294414,
+        32.7791286
+      ],
+      [
+        -79.9289914,
+        32.778932
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local pavement y=0; no sea level, terrain or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present church completed 1838 per parish; nomination dates body 1835–36 and White steeple 1848–50. OSM upper tower height 56 m is adopted as an estimated overall height, not a survey. Single tall window tier, three tetrastyle Tuscan porticoes, square oculus stage, tapering octagons, clocks, open belfry and long brown spire. All vertical stage splits, openings and relief estimated. Yaw baked once. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/st-philips-church-charleston-near.glb",
+      "bytes": 127520,
+      "triangles": 9484,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -25.039752960205078,
+          5.9604645663569045e-9,
+          -13.543479919433594
+        ],
+        "max": [
+          25.196096420288086,
+          56,
+          14.106545448303223
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/st-philips-church-charleston-far.glb",
+      "bytes": 71956,
+      "triangles": 4791,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -25.039752960205078,
+          5.9604645663569045e-9,
+          -13.543479919433594
+        ],
+        "max": [
+          25.196096420288086,
+          56,
+          14.106545448303223
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

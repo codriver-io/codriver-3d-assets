@@ -37068,6 +37068,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-philips-church-charleston",
+      "name": "St. Philip's Church",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Tan stucco Wren-Gibbs church with three four-column Tuscan porticoes, tall nave windows, square oculus tower, diminishing octagons, clocks and a long brown needle.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-philips-church-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. OSM church and mapped part outlines © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry photos CC BY 3.0 used only for local visual comparison. No photo, capture, lettering or imported mesh included. No legal acceptance asserted.",
+        "references": [
+          {
+            "label": "NPS NHL nomination: three tetrastyle porticoes, octagonal stages and 1848–50 spire",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/73001695_text"
+          },
+          {
+            "label": "Parish history booklet: present structure completed 1838",
+            "url": "https://cpmfiles1.com/stphilipschurchsc.org/2022-churchhistory-booklet-2.pdf"
+          },
+          {
+            "label": "OSM church footprint and related parts",
+            "url": "https://www.openstreetmap.org/way/173699967"
+          },
+          {
+            "label": "Brian Stansberry, west steeple/porticoes, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-philips-episcopal-charleston-sc1.jpg"
+          },
+          {
+            "label": "Brian Stansberry, clock detail, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-philips-episcopal-charleston-sc2.jpg"
+          }
+        ]
+      },
+      "manifest": "/models/buildings/st-philips-church-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-philips-church-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Parish dates current building 1838; nomination body 1835–36, steeple 1848–50. Adopted 56 m unsurveyed OSM height is estimated, with stage proportions from photographs. No interiors, churchyard, lettering or texture. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-philips-church-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
