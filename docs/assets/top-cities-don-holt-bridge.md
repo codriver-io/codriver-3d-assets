@@ -37,9 +37,9 @@ Both LODs preserve continuous parallel upper chords with sloping end posts, ever
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 15980 | 3 | 215528 |
-| far | 13476 | 3 | 183500 |
+| near | 15932 | 3 | 214668 |
+| far | 13428 | 3 | 182680 |
 
-Deterministic metrics: `tmp/landmark-qa/don-holt-bridge-metrics.json`, no flags; no layered/coplanar faces, no below-grade parts or backface hits. Full crossing sheet: `tmp/landmark-qa/sheets/don-holt-bridge.jpg`. Final focused main-unit near/far sheet: `tmp/landmark-qa/final/don-holt-bridge.jpg`, using scratch bounds to make the 491 m truss readable beside the reference. Two look rounds: corrected current blue tone, retained full 3330 m geometry. Both sheets inspected; central truss proportions, four supports, panel rhythm and near/far contacts preserved. The automatic full-crossing framing makes the truss small; inspector overview/deck/support presets focus on it.
+Deterministic metrics: `tmp/landmark-qa/don-holt-bridge-metrics.json`, no flags; no layered/coplanar faces, no below-grade parts or backface hits. Full crossing sheet: `tmp/landmark-qa/sheets/don-holt-bridge.jpg`. Final focused main-unit near/far sheet: `tmp/landmark-qa/final/don-holt-bridge.jpg`, using scratch bounds to make the 491 m truss readable beside the reference. Two look rounds: corrected current blue tone, retained full 3330 m geometry. A later deterministic contact review joined the upper end posts exactly to the lower chord and removed coincident terminal diagonals; final metrics and the focused sheet were regenerated without another appearance-design round. Both sheets inspected; central truss proportions, four supports, panel rhythm and near/far contacts preserved. The automatic full-crossing framing makes the truss small; inspector overview/deck/support presets focus on it.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Static library inspection does not establish provider replacement, drivable surfaces or terrain placement.

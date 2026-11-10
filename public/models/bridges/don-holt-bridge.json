@@ -22,8 +22,8 @@
   "assets": {
     "near": {
       "url": "/models/bridges/don-holt-bridge-near.glb",
-      "bytes": 215528,
-      "triangles": 15980,
+      "bytes": 214668,
+      "triangles": 15932,
       "drawCalls": 3,
       "bounds": {
         "min": [
@@ -40,8 +40,8 @@
     },
     "far": {
       "url": "/models/bridges/don-holt-bridge-far.glb",
-      "bytes": 183500,
-      "triangles": 13476,
+      "bytes": 182680,
+      "triangles": 13428,
       "drawCalls": 3,
       "bounds": {
         "min": [

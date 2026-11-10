@@ -31,12 +31,12 @@ export function create({detail='near'}={}){
  // Parallel upper chords, sloping end posts, alternating Warren web. Far keeps every structural panel.
  for(const side of [-1,1]){
   const v=side*14.8;
-  const upper=u=>Math.abs(u)>TRUSS-panel?deckY(u)+1+(TRUSS-Math.abs(u))/panel*20:deckY(u)+21;
+  const upper=u=>Math.abs(u)>TRUSS-panel?deckY(u)-.45+(TRUSS-Math.abs(u))/panel*21.45:deckY(u)+21;
   for(let i=0;i<20;i++){
    const a=-TRUSS+i*panel,c=a+panel;
    bar('steel',[a,v,deckY(a)-.45],[c,v,deckY(c)-.45],.85,1.1);
    bar('steel',[a,v,upper(a)],[c,v,upper(c)],.85,1.05);
-   bar('steel',i%2?[a,v,upper(a)]:[a,v,deckY(a)-.45],i%2?[c,v,deckY(c)-.45]:[c,v,upper(c)],.64,.68);
+   if(i>0&&i<19)bar('steel',i%2?[a,v,upper(a)]:[a,v,deckY(a)-.45],i%2?[c,v,deckY(c)-.45]:[c,v,upper(c)],.64,.68);
    if(near&&i>0&&i<19)bar('steel',[c,v,deckY(c)-.45],[c,v,upper(c)],.24,.3);
   }
  }
