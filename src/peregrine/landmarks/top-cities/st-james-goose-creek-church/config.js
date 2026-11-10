@@ -2,7 +2,7 @@
 export const SPEC = {
   id: 'st-james-goose-creek-church', name: "St. James' Church, Goose Creek", kind: 'building', ready: true,
   origin: [-80.03264685,32.9755013], height: 8.85, padM: 14, frontageBearing: 274.5,
-  rotationDeg: 4.5, lengthM: 15.22, widthM: 12.57, ownTolM: 0.8,
+  rotationDeg: -4.5, lengthM: 15.22, widthM: 12.57, ownTolM: 0.8,
 };
 export const PALETTES = {
   light: { stucco:'#dddcd4', roof:'#61676a', glass:'#38484a', door:'#c6c9c2' },

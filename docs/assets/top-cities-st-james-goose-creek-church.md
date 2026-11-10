@@ -23,7 +23,7 @@ Original procedural geometry of the standing 1713–1719 church at 100 Vestry La
 
 ## Frame and foundation
 
-Origin `[-80.03264685, 32.9755013]` is the mapped rectangle's centre, using the two opposite control corners `[-80.0327334,32.9754503]` and `[-80.0325603,32.9755522]`. Mapped south and north edges independently give an east axis about 4.5° south of east; the 4.5° Y rotation is baked once into geometry. Local +X east, +Y up, +Z south, real metres. Local y=0 means the rigid exterior foundation toe, not sea level. The single provider replacement way is the church itself. Cemetery, perimeter walls and neighbouring buildings are excluded. A host must select a rigid foundation datum or a bounded pad; no terrain or map scale is baked in.
+Origin `[-80.03264685, 32.9755013]` is the mapped rectangle's centre, using the two opposite control corners `[-80.0327334,32.9754503]` and `[-80.0325603,32.9755522]`. Mapped south and north edges independently give an east axis about 4.5° south of east; the −4.5° Y rotation is baked once into geometry. Local +X east, +Y up, +Z south, real metres. Local y=0 means the rigid exterior foundation toe, not sea level. The single provider replacement way is the church itself. Cemetery, perimeter walls and neighbouring buildings are excluded. A host must select a rigid foundation datum or a bounded pad; no terrain or map scale is baked in.
 
 ## Modeling and omissions
 
@@ -36,6 +36,6 @@ Thick walls have real arched cutouts and recessed glazing, with individual recta
 | Near | 12,256 | 4 | 175,080 |
 | Far | 6,200 | 4 | 101,656 |
 
-`qa-metrics` reports no issues, no below-grade geometry, zero layered/coplanar candidates and 0% back-face hits. The final contact sheet `tmp/landmark-qa/sheets/final/st-james-goose-creek-church.jpg` compares the verified modern exterior with five near views and two far views; padded scratch bounds avoid automatic framing clipping. Metrics: `tmp/landmark-qa/st-james-goose-creek-church-metrics.json`. One look-fix round corrected the top of the clipped gable; final comparison preserves the roof silhouette, windows and doorway in both LODs. Finer sculpture and mouldings remain deliberately simplified. Local reference images remain outside tracked paths.
+`qa-metrics` reports no issues, no below-grade geometry, zero layered/coplanar candidates and 0% back-face hits. The final contact sheet `tmp/landmark-qa/sheets/st-james-final/st-james-goose-creek-church.jpg` compares the verified modern exterior with five near views and two far views; padded scratch bounds avoid automatic framing clipping. Metrics: `tmp/landmark-qa/st-james-goose-creek-church-metrics.json`. Two look-fix rounds corrected the top of the clipped gable and the Y-rotation sign (the east axis runs south of east); final comparison preserves the roof silhouette, windows and doorway in both LODs. Finer sculpture and mouldings remain deliberately simplified. Local reference images remain outside tracked paths.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Static library inspection does not establish host placement, terrain fitting, provider replacement or driving-app integration.
