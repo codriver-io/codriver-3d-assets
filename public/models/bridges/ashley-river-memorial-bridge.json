@@ -1,0 +1,65 @@
+{
+  "id": "ashley-river-memorial-bridge",
+  "name": "Ashley River Memorial Bridge",
+  "kind": "bridge",
+  "origin": [
+    -79.96106825,
+    32.7834928
+  ],
+  "height": 19.9,
+  "padM": 285,
+  "frontageBearing": 61.3962,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual waterline. Deck height 7 m at the closed bascule, end decks 4.8 m: photographic estimates. No absolute elevation, terrain or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current 1926 Ashley River Memorial Bridge, southbound US 17 only; adjacent T. Allen Legare Bridge excluded. OSM mapped length 528.1 m, bascule line segment 43.22 m; model hinge separation 53.3 m from mapped pier centres, interpreted as hinge supports. Four Mediterranean Revival tender houses with open octagonal lanterns; shallow concrete arches and later pier reinforcements. All vertical dimensions and ornamental sections photo-estimated; bridge is shown closed, without animation or mechanical interiors.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/ashley-river-memorial-bridge-near.glb",
+      "bytes": 311980,
+      "triangles": 23558,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -239.3521270751953,
+          -1.0800350480622001e-7,
+          -136.9967498779297
+        ],
+        "max": [
+          239.3521270751953,
+          19.899999618530273,
+          136.9967498779297
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/ashley-river-memorial-bridge-far.glb",
+      "bytes": 189260,
+      "triangles": 13210,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -239.3521270751953,
+          -1.0800350480622001e-7,
+          -136.9967498779297
+        ],
+        "max": [
+          239.3521270751953,
+          19.899999618530273,
+          136.9967498779297
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

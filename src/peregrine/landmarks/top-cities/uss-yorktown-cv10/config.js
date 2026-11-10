@@ -1,7 +1,6 @@
-// STUB, not released. Replace every value from sourced references; the origin below is only approximate.
-export const SPEC = {
-  id: "uss-yorktown-cv10", name: "USS Yorktown (CV-10), Patriots Point", kind: 'building', ready: false,
-  origin: [-79.9086, 32.7906], height: 1, padM: 10, frontageBearing: 0,
-};
-export const PALETTES = { light: {}, dark: {} };
-export const MANIFEST = { elevationDatum: '', attribution: '', note: '' };
+export const SPEC={id:'uss-yorktown-cv10',name:'USS Yorktown (CV-10)',kind:'building',ready:true,
+ origin:[-79.9085309,32.7904047],height:58,padM:150,frontageBearing:90};
+// Ship axis bearing 0.398 degrees, from two mapped bow/stern centre controls; baked once.
+export const ROTATION=-.00695;
+export const PALETTES={light:{hull:'#7d8e94',deckPaint:'#686e70',metal:'#94a2a7',glass:'#344b55',dark:'#364245',paint:'#d5d2bf',aircraft:'#a6aba6'},dark:{hull:'#657e8b',deckPaint:'#364955',metal:'#8da4ae',glass:'#283e4e',dark:'#213642',paint:'#aab4b4',aircraft:'#8297a0'}};
+export const MANIFEST={elevationDatum:'Local y=0 is the visual waterline; the underwater hull is omitted. Flight deck y=17 m and mast y=58 m are photographic estimates. Rigid ship placement at a host water datum; no DEM, tide elevation or Mercator scale baked in.',attribution:'Original procedural geometry; mapped ship footprint © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',note:'Museum configuration after the 1956 angled-flight-deck conversion, not the 1943 straight-deck carrier. Length 270.6624 m / 888 ft from Patriots Point; original 872 ft Navy and NPS values describe the earlier configuration. Mapped envelope approximately 65.7 m wide including projections. Hull beam, island, mast and vertical levels estimated from current museum photographs. No painted numbers, names, insignia, logos or third-party aircraft meshes.'};

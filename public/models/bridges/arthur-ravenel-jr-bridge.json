@@ -1,0 +1,67 @@
+{
+  "id": "arthur-ravenel-jr-bridge",
+  "name": "Arthur Ravenel Jr. Bridge",
+  "kind": "bridge",
+  "origin": [
+    -79.915287075,
+    32.802954275
+  ],
+  "height": 174.9552,
+  "padM": 750,
+  "frontageBearing": 98.7803,
+  "rangeM": 6500,
+  "nearM": 1800,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual waterline at the tower islands, not an absolute altitude. Midspan deck 62 m (estimated); tower tops 174.9552 m (574 ft, TYLin). Partial high approaches terminate on bearing piers at y=54.8 m; host must connect the omitted approaches. No terrain or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2005 bridge, main span 471.2208 m (1546 ft, TYLin), 128 representative stays. TYLin gives 574 ft tower height whereas rounded descriptions give 575 ft; authored 574 ft. Modelled 1440 m, including approximately 221 m side spans and 257 m of supported approach each end. Width 39 m, deck depth 2 m, tower sections, cable anchor levels, island shapes and approach profile are photographic estimates. No interchange, seabed, lighting equipment or road integration.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/arthur-ravenel-jr-bridge-near.glb",
+      "bytes": 227836,
+      "triangles": 19828,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -716.8955688476562,
+          -5.950927857156785e-7,
+          -129.44381713867188
+        ],
+        "max": [
+          716.8955688476562,
+          174.9552001953125,
+          129.44381713867188
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/arthur-ravenel-jr-bridge-far.glb",
+      "bytes": 101296,
+      "triangles": 7156,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -716.8955688476562,
+          -5.950927857156785e-7,
+          -129.44381713867188
+        ],
+        "max": [
+          716.8955688476562,
+          174.9552001953125,
+          129.44381713867188
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
