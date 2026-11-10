@@ -656,6 +656,50 @@ import { FOOTPRINTS as lm_parliament_hill_centre_blockFootprints } from './parli
 import { SPEC as lm_burlington_bay_skywaySpec, PALETTES as lm_burlington_bay_skywayPalettes } from './burlington-bay-skyway/config.js';
 import { FOOTPRINTS as lm_burlington_bay_skywayFootprints } from './burlington-bay-skyway/footprint.js';
 import { ROAD_LAYER as lm_burlington_bay_skywayRoad } from './burlington-bay-skyway/layer.js';
+import { SPEC as lm_arthur_ravenel_jr_bridgeSpec, PALETTES as lm_arthur_ravenel_jr_bridgePalettes } from './arthur-ravenel-jr-bridge/config.js';
+import { FOOTPRINTS as lm_arthur_ravenel_jr_bridgeFootprints } from './arthur-ravenel-jr-bridge/footprint.js';
+import { ROAD_LAYER as lm_arthur_ravenel_jr_bridgeRoad } from './arthur-ravenel-jr-bridge/layer.js';
+import { SPEC as lm_ashley_river_memorial_bridgeSpec, PALETTES as lm_ashley_river_memorial_bridgePalettes } from './ashley-river-memorial-bridge/config.js';
+import { FOOTPRINTS as lm_ashley_river_memorial_bridgeFootprints } from './ashley-river-memorial-bridge/footprint.js';
+import { ROAD_LAYER as lm_ashley_river_memorial_bridgeRoad } from './ashley-river-memorial-bridge/layer.js';
+import { SPEC as lm_uss_yorktown_cv10Spec, PALETTES as lm_uss_yorktown_cv10Palettes } from './uss-yorktown-cv10/config.js';
+import { FOOTPRINTS as lm_uss_yorktown_cv10Footprints } from './uss-yorktown-cv10/footprint.js';
+import { SPEC as lm_fort_sumterSpec, PALETTES as lm_fort_sumterPalettes } from './fort-sumter/config.js';
+import { FOOTPRINTS as lm_fort_sumterFootprints } from './fort-sumter/footprint.js';
+import { SPEC as lm_don_holt_bridgeSpec, PALETTES as lm_don_holt_bridgePalettes } from './don-holt-bridge/config.js';
+import { FOOTPRINTS as lm_don_holt_bridgeFootprints } from './don-holt-bridge/footprint.js';
+import { ROAD_LAYER as lm_don_holt_bridgeRoad } from './don-holt-bridge/layer.js';
+import { SPEC as lm_ben_sawyer_bridgeSpec, PALETTES as lm_ben_sawyer_bridgePalettes } from './ben-sawyer-bridge/config.js';
+import { FOOTPRINTS as lm_ben_sawyer_bridgeFootprints } from './ben-sawyer-bridge/footprint.js';
+import { ROAD_LAYER as lm_ben_sawyer_bridgeRoad } from './ben-sawyer-bridge/layer.js';
+import { SPEC as lm_noisette_creek_pedestrian_bridgeSpec, PALETTES as lm_noisette_creek_pedestrian_bridgePalettes } from './noisette-creek-pedestrian-bridge/config.js';
+import { FOOTPRINTS as lm_noisette_creek_pedestrian_bridgeFootprints } from './noisette-creek-pedestrian-bridge/footprint.js';
+import { SPEC as lm_north_charleston_coliseumSpec, PALETTES as lm_north_charleston_coliseumPalettes } from './north-charleston-coliseum/config.js';
+import { FOOTPRINTS as lm_north_charleston_coliseumFootprints } from './north-charleston-coliseum/footprint.js';
+import { SPEC as lm_st_michaels_church_charlestonSpec, PALETTES as lm_st_michaels_church_charlestonPalettes } from './st-michaels-church-charleston/config.js';
+import { FOOTPRINTS as lm_st_michaels_church_charlestonFootprints } from './st-michaels-church-charleston/footprint.js';
+import { SPEC as lm_st_philips_church_charlestonSpec, PALETTES as lm_st_philips_church_charlestonPalettes } from './st-philips-church-charleston/config.js';
+import { FOOTPRINTS as lm_st_philips_church_charlestonFootprints } from './st-philips-church-charleston/footprint.js';
+import { SPEC as lm_us_custom_house_charlestonSpec, PALETTES as lm_us_custom_house_charlestonPalettes } from './us-custom-house-charleston/config.js';
+import { FOOTPRINTS as lm_us_custom_house_charlestonFootprints } from './us-custom-house-charleston/footprint.js';
+import { SPEC as lm_pineapple_fountain_charlestonSpec, PALETTES as lm_pineapple_fountain_charlestonPalettes } from './pineapple-fountain-charleston/config.js';
+import { FOOTPRINTS as lm_pineapple_fountain_charlestonFootprints } from './pineapple-fountain-charleston/footprint.js';
+import { SPEC as lm_rainbow_row_charlestonSpec, PALETTES as lm_rainbow_row_charlestonPalettes } from './rainbow-row-charleston/config.js';
+import { FOOTPRINTS as lm_rainbow_row_charlestonFootprints } from './rainbow-row-charleston/footprint.js';
+import { SPEC as lm_citadel_padgett_thomas_barracksSpec, PALETTES as lm_citadel_padgett_thomas_barracksPalettes } from './citadel-padgett-thomas-barracks/config.js';
+import { FOOTPRINTS as lm_citadel_padgett_thomas_barracksFootprints } from './citadel-padgett-thomas-barracks/footprint.js';
+import { SPEC as lm_morris_island_lighthouseSpec, PALETTES as lm_morris_island_lighthousePalettes } from './morris-island-lighthouse/config.js';
+import { FOOTPRINTS as lm_morris_island_lighthouseFootprints } from './morris-island-lighthouse/footprint.js';
+import { SPEC as lm_charleston_international_airport_terminalSpec, PALETTES as lm_charleston_international_airport_terminalPalettes } from './charleston-international-airport-terminal/config.js';
+import { FOOTPRINTS as lm_charleston_international_airport_terminalFootprints } from './charleston-international-airport-terminal/footprint.js';
+import { SPEC as lm_st_james_goose_creek_churchSpec, PALETTES as lm_st_james_goose_creek_churchPalettes } from './st-james-goose-creek-church/config.js';
+import { FOOTPRINTS as lm_st_james_goose_creek_churchFootprints } from './st-james-goose-creek-church/footprint.js';
+import { SPEC as lm_goose_creek_municipal_centerSpec, PALETTES as lm_goose_creek_municipal_centerPalettes } from './goose-creek-municipal-center/config.js';
+import { FOOTPRINTS as lm_goose_creek_municipal_centerFootprints } from './goose-creek-municipal-center/footprint.js';
+import { SPEC as lm_colonial_dorchester_bell_towerSpec, PALETTES as lm_colonial_dorchester_bell_towerPalettes } from './colonial-dorchester-bell-tower/config.js';
+import { FOOTPRINTS as lm_colonial_dorchester_bell_towerFootprints } from './colonial-dorchester-bell-tower/footprint.js';
+import { SPEC as lm_north_charleston_city_hallSpec, PALETTES as lm_north_charleston_city_hallPalettes } from './north-charleston-city-hall/config.js';
+import { FOOTPRINTS as lm_north_charleston_city_hallFootprints } from './north-charleston-city-hall/footprint.js';
 
 const entry = (spec, palettes, footprints, roadLayer = null) => Object.freeze({
   id: spec.id, spec, palettes, footprints, roadLayer,
@@ -960,6 +1004,26 @@ export const TOP_CITIES_LANDMARKS = Object.freeze([
   entry(lm_tour_1000_de_la_gauchetiereSpec, lm_tour_1000_de_la_gauchetierePalettes, lm_tour_1000_de_la_gauchetiereFootprints),
   entry(lm_parliament_hill_centre_blockSpec, lm_parliament_hill_centre_blockPalettes, lm_parliament_hill_centre_blockFootprints),
   entry(lm_burlington_bay_skywaySpec, lm_burlington_bay_skywayPalettes, lm_burlington_bay_skywayFootprints, lm_burlington_bay_skywayRoad),
+  entry(lm_arthur_ravenel_jr_bridgeSpec, lm_arthur_ravenel_jr_bridgePalettes, lm_arthur_ravenel_jr_bridgeFootprints, lm_arthur_ravenel_jr_bridgeRoad),
+  entry(lm_ashley_river_memorial_bridgeSpec, lm_ashley_river_memorial_bridgePalettes, lm_ashley_river_memorial_bridgeFootprints, lm_ashley_river_memorial_bridgeRoad),
+  entry(lm_uss_yorktown_cv10Spec, lm_uss_yorktown_cv10Palettes, lm_uss_yorktown_cv10Footprints),
+  entry(lm_fort_sumterSpec, lm_fort_sumterPalettes, lm_fort_sumterFootprints),
+  entry(lm_don_holt_bridgeSpec, lm_don_holt_bridgePalettes, lm_don_holt_bridgeFootprints, lm_don_holt_bridgeRoad),
+  entry(lm_ben_sawyer_bridgeSpec, lm_ben_sawyer_bridgePalettes, lm_ben_sawyer_bridgeFootprints, lm_ben_sawyer_bridgeRoad),
+  entry(lm_noisette_creek_pedestrian_bridgeSpec, lm_noisette_creek_pedestrian_bridgePalettes, lm_noisette_creek_pedestrian_bridgeFootprints),
+  entry(lm_north_charleston_coliseumSpec, lm_north_charleston_coliseumPalettes, lm_north_charleston_coliseumFootprints),
+  entry(lm_st_michaels_church_charlestonSpec, lm_st_michaels_church_charlestonPalettes, lm_st_michaels_church_charlestonFootprints),
+  entry(lm_st_philips_church_charlestonSpec, lm_st_philips_church_charlestonPalettes, lm_st_philips_church_charlestonFootprints),
+  entry(lm_us_custom_house_charlestonSpec, lm_us_custom_house_charlestonPalettes, lm_us_custom_house_charlestonFootprints),
+  entry(lm_pineapple_fountain_charlestonSpec, lm_pineapple_fountain_charlestonPalettes, lm_pineapple_fountain_charlestonFootprints),
+  entry(lm_rainbow_row_charlestonSpec, lm_rainbow_row_charlestonPalettes, lm_rainbow_row_charlestonFootprints),
+  entry(lm_citadel_padgett_thomas_barracksSpec, lm_citadel_padgett_thomas_barracksPalettes, lm_citadel_padgett_thomas_barracksFootprints),
+  entry(lm_morris_island_lighthouseSpec, lm_morris_island_lighthousePalettes, lm_morris_island_lighthouseFootprints),
+  entry(lm_charleston_international_airport_terminalSpec, lm_charleston_international_airport_terminalPalettes, lm_charleston_international_airport_terminalFootprints),
+  entry(lm_st_james_goose_creek_churchSpec, lm_st_james_goose_creek_churchPalettes, lm_st_james_goose_creek_churchFootprints),
+  entry(lm_goose_creek_municipal_centerSpec, lm_goose_creek_municipal_centerPalettes, lm_goose_creek_municipal_centerFootprints),
+  entry(lm_colonial_dorchester_bell_towerSpec, lm_colonial_dorchester_bell_towerPalettes, lm_colonial_dorchester_bell_towerFootprints),
+  entry(lm_north_charleston_city_hallSpec, lm_north_charleston_city_hallPalettes, lm_north_charleston_city_hallFootprints),
 ]);
 
 export const topCitiesLandmark = (id) => TOP_CITIES_LANDMARKS.find((l) => l.id === id) || null;

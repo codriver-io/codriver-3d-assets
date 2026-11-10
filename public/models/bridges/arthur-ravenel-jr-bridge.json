@@ -1,0 +1,68 @@
+{
+  "id": "arthur-ravenel-jr-bridge",
+  "name": "Arthur Ravenel Jr. Bridge",
+  "kind": "bridge",
+  "terrainPolicy": "absolute-deck",
+  "origin": [
+    -79.915287075,
+    32.802954275
+  ],
+  "height": 174.9552,
+  "padM": 1800,
+  "frontageBearing": 98.7803,
+  "rangeM": 6500,
+  "nearM": 1800,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is flat-map/water grade; no DEM, Mercator stretch or moving world datum is baked in. Approved stayed-unit camber peaks at 62 m; diamond crowns remain 174.9552 m. Absolute-deck runtime fits both road endpoints and individual support feet to terrain.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Road-fitted mainline, 2753.760 m, clipped before Morrison entrance and Mount Pleasant US 17 / SC 703 fork. Approved 471.2208 m main span, diamond towers, 39 m width, islands and stay arrangement retained. Flat Cityscape approximation: 1212.444 m west / 589.316 m east ramps, peak 5.0963% / 11.0958%, 60 m vertical curves and 20 m landings; real grade about 4%. Outer high approaches regraded and extended with matching supports; interchange branches require a separate multi-branch surface. Bridge dimensions, widths, supports and cable sections remain visual estimates, not a survey.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/arthur-ravenel-jr-bridge-near.glb",
+      "bytes": 655740,
+      "triangles": 36638,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -1671.720947265625,
+          -0.20000000298023224,
+          -249.11216735839844
+        ],
+        "max": [
+          1054.5008544921875,
+          174.9552001953125,
+          186.709716796875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/arthur-ravenel-jr-bridge-far.glb",
+      "bytes": 292248,
+      "triangles": 14570,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -1671.720947265625,
+          -0.20000000298023224,
+          -249.11216735839844
+        ],
+        "max": [
+          1054.5008544921875,
+          174.9552001953125,
+          186.709716796875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

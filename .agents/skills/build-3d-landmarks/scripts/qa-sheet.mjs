@@ -75,6 +75,7 @@ const work = mkdtempSync(join(tmpdir(), 'qa-sheet-'));
 writeFileSync(join(work, 'entry.js'), `
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, logarithmicDepthBuffer: true });
 renderer.setSize(480, 300); renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.2;
 document.body.style.margin = '0'; document.body.append(renderer.domElement);
@@ -87,7 +88,7 @@ const camera = new THREE.PerspectiveCamera(35, 480 / 300, 0.5, 60000);
 let model = null;
 window.__load = async (url) => {
   if (model) scene.remove(model);
-  model = (await new GLTFLoader().loadAsync(url)).scene; scene.add(model);
+  model = (await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(url)).scene; scene.add(model);
   const b = new THREE.Box3().setFromObject(model); return { min: b.min.toArray(), max: b.max.toArray() };
 };
 window.__shot = (eye, target, up) => {
@@ -113,7 +114,9 @@ await page.goto(`http://127.0.0.1:${server.address().port}/`);
 
 const fit = (b, dir, k = 1) => { // eye on a unit direction, far enough to frame the bounds
   const c = b.min.map((v, i) => (v + b.max[i]) / 2), r = Math.hypot(...b.max.map((v, i) => v - b.min[i])) / 2;
-  const d = (r / Math.tan((35 / 2) * Math.PI / 180)) * 0.62 * k, n = Math.hypot(...dir);
+  // Wide models fit on the 0.62 sphere factor; a tall, slender one (steeple, lighthouse) also needs its height in the vertical field of view.
+  const n = Math.hypot(...dir), t = Math.tan((35 / 2) * Math.PI / 180), tall = ((b.max[1] - b.min[1]) / 2) * Math.sqrt(1 - (dir[1] / n) ** 2) * 1.3;
+  const d = Math.max(r * 0.62, tall) / t * k;
   return [[c[0] + dir[0] / n * d, Math.max(1.7, c[1] + dir[1] / n * d), c[2] + dir[2] / n * d], c];
 };
 try {

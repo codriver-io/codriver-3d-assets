@@ -1189,6 +1189,86 @@ import { MANIFEST as lm_burlington_bay_skywayManifest } from './burlington-bay-s
 import { OSM_WAYS as lm_burlington_bay_skywayWays } from './burlington-bay-skyway/footprint.js';
 import { create as lm_burlington_bay_skywayCreate } from './burlington-bay-skyway/geometry.js';
 import { VIEWS as lm_burlington_bay_skywayViews } from './burlington-bay-skyway/views.js';
+import { MANIFEST as lm_arthur_ravenel_jr_bridgeManifest } from './arthur-ravenel-jr-bridge/config.js';
+import { OSM_WAYS as lm_arthur_ravenel_jr_bridgeWays } from './arthur-ravenel-jr-bridge/footprint.js';
+import { create as lm_arthur_ravenel_jr_bridgeCreate } from './arthur-ravenel-jr-bridge/geometry.js';
+import { VIEWS as lm_arthur_ravenel_jr_bridgeViews } from './arthur-ravenel-jr-bridge/views.js';
+import { MANIFEST as lm_ashley_river_memorial_bridgeManifest } from './ashley-river-memorial-bridge/config.js';
+import { OSM_WAYS as lm_ashley_river_memorial_bridgeWays } from './ashley-river-memorial-bridge/footprint.js';
+import { create as lm_ashley_river_memorial_bridgeCreate } from './ashley-river-memorial-bridge/geometry.js';
+import { VIEWS as lm_ashley_river_memorial_bridgeViews } from './ashley-river-memorial-bridge/views.js';
+import { MANIFEST as lm_uss_yorktown_cv10Manifest } from './uss-yorktown-cv10/config.js';
+import { OSM_WAYS as lm_uss_yorktown_cv10Ways } from './uss-yorktown-cv10/footprint.js';
+import { create as lm_uss_yorktown_cv10Create } from './uss-yorktown-cv10/geometry.js';
+import { VIEWS as lm_uss_yorktown_cv10Views } from './uss-yorktown-cv10/views.js';
+import { MANIFEST as lm_fort_sumterManifest } from './fort-sumter/config.js';
+import { OSM_WAYS as lm_fort_sumterWays } from './fort-sumter/footprint.js';
+import { create as lm_fort_sumterCreate } from './fort-sumter/geometry.js';
+import { VIEWS as lm_fort_sumterViews } from './fort-sumter/views.js';
+import { MANIFEST as lm_don_holt_bridgeManifest } from './don-holt-bridge/config.js';
+import { OSM_WAYS as lm_don_holt_bridgeWays } from './don-holt-bridge/footprint.js';
+import { create as lm_don_holt_bridgeCreate } from './don-holt-bridge/geometry.js';
+import { VIEWS as lm_don_holt_bridgeViews } from './don-holt-bridge/views.js';
+import { MANIFEST as lm_ben_sawyer_bridgeManifest } from './ben-sawyer-bridge/config.js';
+import { OSM_WAYS as lm_ben_sawyer_bridgeWays } from './ben-sawyer-bridge/footprint.js';
+import { create as lm_ben_sawyer_bridgeCreate } from './ben-sawyer-bridge/geometry.js';
+import { VIEWS as lm_ben_sawyer_bridgeViews } from './ben-sawyer-bridge/views.js';
+import { MANIFEST as lm_noisette_creek_pedestrian_bridgeManifest } from './noisette-creek-pedestrian-bridge/config.js';
+import { OSM_WAYS as lm_noisette_creek_pedestrian_bridgeWays } from './noisette-creek-pedestrian-bridge/footprint.js';
+import { create as lm_noisette_creek_pedestrian_bridgeCreate } from './noisette-creek-pedestrian-bridge/geometry.js';
+import { VIEWS as lm_noisette_creek_pedestrian_bridgeViews } from './noisette-creek-pedestrian-bridge/views.js';
+import { MANIFEST as lm_north_charleston_coliseumManifest } from './north-charleston-coliseum/config.js';
+import { OSM_WAYS as lm_north_charleston_coliseumWays } from './north-charleston-coliseum/footprint.js';
+import { create as lm_north_charleston_coliseumCreate } from './north-charleston-coliseum/geometry.js';
+import { VIEWS as lm_north_charleston_coliseumViews } from './north-charleston-coliseum/views.js';
+import { MANIFEST as lm_st_michaels_church_charlestonManifest } from './st-michaels-church-charleston/config.js';
+import { OSM_WAYS as lm_st_michaels_church_charlestonWays } from './st-michaels-church-charleston/footprint.js';
+import { create as lm_st_michaels_church_charlestonCreate } from './st-michaels-church-charleston/geometry.js';
+import { VIEWS as lm_st_michaels_church_charlestonViews } from './st-michaels-church-charleston/views.js';
+import { MANIFEST as lm_st_philips_church_charlestonManifest } from './st-philips-church-charleston/config.js';
+import { OSM_WAYS as lm_st_philips_church_charlestonWays } from './st-philips-church-charleston/footprint.js';
+import { create as lm_st_philips_church_charlestonCreate } from './st-philips-church-charleston/geometry.js';
+import { VIEWS as lm_st_philips_church_charlestonViews } from './st-philips-church-charleston/views.js';
+import { MANIFEST as lm_us_custom_house_charlestonManifest } from './us-custom-house-charleston/config.js';
+import { OSM_WAYS as lm_us_custom_house_charlestonWays } from './us-custom-house-charleston/footprint.js';
+import { create as lm_us_custom_house_charlestonCreate } from './us-custom-house-charleston/geometry.js';
+import { VIEWS as lm_us_custom_house_charlestonViews } from './us-custom-house-charleston/views.js';
+import { MANIFEST as lm_pineapple_fountain_charlestonManifest } from './pineapple-fountain-charleston/config.js';
+import { OSM_WAYS as lm_pineapple_fountain_charlestonWays } from './pineapple-fountain-charleston/footprint.js';
+import { create as lm_pineapple_fountain_charlestonCreate } from './pineapple-fountain-charleston/geometry.js';
+import { VIEWS as lm_pineapple_fountain_charlestonViews } from './pineapple-fountain-charleston/views.js';
+import { MANIFEST as lm_rainbow_row_charlestonManifest } from './rainbow-row-charleston/config.js';
+import { OSM_WAYS as lm_rainbow_row_charlestonWays } from './rainbow-row-charleston/footprint.js';
+import { create as lm_rainbow_row_charlestonCreate } from './rainbow-row-charleston/geometry.js';
+import { VIEWS as lm_rainbow_row_charlestonViews } from './rainbow-row-charleston/views.js';
+import { MANIFEST as lm_citadel_padgett_thomas_barracksManifest } from './citadel-padgett-thomas-barracks/config.js';
+import { OSM_WAYS as lm_citadel_padgett_thomas_barracksWays } from './citadel-padgett-thomas-barracks/footprint.js';
+import { create as lm_citadel_padgett_thomas_barracksCreate } from './citadel-padgett-thomas-barracks/geometry.js';
+import { VIEWS as lm_citadel_padgett_thomas_barracksViews } from './citadel-padgett-thomas-barracks/views.js';
+import { MANIFEST as lm_morris_island_lighthouseManifest } from './morris-island-lighthouse/config.js';
+import { OSM_WAYS as lm_morris_island_lighthouseWays } from './morris-island-lighthouse/footprint.js';
+import { create as lm_morris_island_lighthouseCreate } from './morris-island-lighthouse/geometry.js';
+import { VIEWS as lm_morris_island_lighthouseViews } from './morris-island-lighthouse/views.js';
+import { MANIFEST as lm_charleston_international_airport_terminalManifest } from './charleston-international-airport-terminal/config.js';
+import { OSM_WAYS as lm_charleston_international_airport_terminalWays } from './charleston-international-airport-terminal/footprint.js';
+import { create as lm_charleston_international_airport_terminalCreate } from './charleston-international-airport-terminal/geometry.js';
+import { VIEWS as lm_charleston_international_airport_terminalViews } from './charleston-international-airport-terminal/views.js';
+import { MANIFEST as lm_st_james_goose_creek_churchManifest } from './st-james-goose-creek-church/config.js';
+import { OSM_WAYS as lm_st_james_goose_creek_churchWays } from './st-james-goose-creek-church/footprint.js';
+import { create as lm_st_james_goose_creek_churchCreate } from './st-james-goose-creek-church/geometry.js';
+import { VIEWS as lm_st_james_goose_creek_churchViews } from './st-james-goose-creek-church/views.js';
+import { MANIFEST as lm_goose_creek_municipal_centerManifest } from './goose-creek-municipal-center/config.js';
+import { OSM_WAYS as lm_goose_creek_municipal_centerWays } from './goose-creek-municipal-center/footprint.js';
+import { create as lm_goose_creek_municipal_centerCreate } from './goose-creek-municipal-center/geometry.js';
+import { VIEWS as lm_goose_creek_municipal_centerViews } from './goose-creek-municipal-center/views.js';
+import { MANIFEST as lm_colonial_dorchester_bell_towerManifest } from './colonial-dorchester-bell-tower/config.js';
+import { OSM_WAYS as lm_colonial_dorchester_bell_towerWays } from './colonial-dorchester-bell-tower/footprint.js';
+import { create as lm_colonial_dorchester_bell_towerCreate } from './colonial-dorchester-bell-tower/geometry.js';
+import { VIEWS as lm_colonial_dorchester_bell_towerViews } from './colonial-dorchester-bell-tower/views.js';
+import { MANIFEST as lm_north_charleston_city_hallManifest } from './north-charleston-city-hall/config.js';
+import { OSM_WAYS as lm_north_charleston_city_hallWays } from './north-charleston-city-hall/footprint.js';
+import { create as lm_north_charleston_city_hallCreate } from './north-charleston-city-hall/geometry.js';
+import { VIEWS as lm_north_charleston_city_hallViews } from './north-charleston-city-hall/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -1488,6 +1568,26 @@ const authoring = {
   'tour-1000-de-la-gauchetiere': { manifest: lm_tour_1000_de_la_gauchetiereManifest, osmWays: lm_tour_1000_de_la_gauchetiereWays, create: lm_tour_1000_de_la_gauchetiereCreate, views: lm_tour_1000_de_la_gauchetiereViews },
   'parliament-hill-centre-block': { manifest: lm_parliament_hill_centre_blockManifest, osmWays: lm_parliament_hill_centre_blockWays, create: lm_parliament_hill_centre_blockCreate, views: lm_parliament_hill_centre_blockViews },
   'burlington-bay-skyway': { manifest: lm_burlington_bay_skywayManifest, osmWays: lm_burlington_bay_skywayWays, create: lm_burlington_bay_skywayCreate, views: lm_burlington_bay_skywayViews },
+  'arthur-ravenel-jr-bridge': { manifest: lm_arthur_ravenel_jr_bridgeManifest, osmWays: lm_arthur_ravenel_jr_bridgeWays, create: lm_arthur_ravenel_jr_bridgeCreate, views: lm_arthur_ravenel_jr_bridgeViews },
+  'ashley-river-memorial-bridge': { manifest: lm_ashley_river_memorial_bridgeManifest, osmWays: lm_ashley_river_memorial_bridgeWays, create: lm_ashley_river_memorial_bridgeCreate, views: lm_ashley_river_memorial_bridgeViews },
+  'uss-yorktown-cv10': { manifest: lm_uss_yorktown_cv10Manifest, osmWays: lm_uss_yorktown_cv10Ways, create: lm_uss_yorktown_cv10Create, views: lm_uss_yorktown_cv10Views },
+  'fort-sumter': { manifest: lm_fort_sumterManifest, osmWays: lm_fort_sumterWays, create: lm_fort_sumterCreate, views: lm_fort_sumterViews },
+  'don-holt-bridge': { manifest: lm_don_holt_bridgeManifest, osmWays: lm_don_holt_bridgeWays, create: lm_don_holt_bridgeCreate, views: lm_don_holt_bridgeViews },
+  'ben-sawyer-bridge': { manifest: lm_ben_sawyer_bridgeManifest, osmWays: lm_ben_sawyer_bridgeWays, create: lm_ben_sawyer_bridgeCreate, views: lm_ben_sawyer_bridgeViews },
+  'noisette-creek-pedestrian-bridge': { manifest: lm_noisette_creek_pedestrian_bridgeManifest, osmWays: lm_noisette_creek_pedestrian_bridgeWays, create: lm_noisette_creek_pedestrian_bridgeCreate, views: lm_noisette_creek_pedestrian_bridgeViews },
+  'north-charleston-coliseum': { manifest: lm_north_charleston_coliseumManifest, osmWays: lm_north_charleston_coliseumWays, create: lm_north_charleston_coliseumCreate, views: lm_north_charleston_coliseumViews },
+  'st-michaels-church-charleston': { manifest: lm_st_michaels_church_charlestonManifest, osmWays: lm_st_michaels_church_charlestonWays, create: lm_st_michaels_church_charlestonCreate, views: lm_st_michaels_church_charlestonViews },
+  'st-philips-church-charleston': { manifest: lm_st_philips_church_charlestonManifest, osmWays: lm_st_philips_church_charlestonWays, create: lm_st_philips_church_charlestonCreate, views: lm_st_philips_church_charlestonViews },
+  'us-custom-house-charleston': { manifest: lm_us_custom_house_charlestonManifest, osmWays: lm_us_custom_house_charlestonWays, create: lm_us_custom_house_charlestonCreate, views: lm_us_custom_house_charlestonViews },
+  'pineapple-fountain-charleston': { manifest: lm_pineapple_fountain_charlestonManifest, osmWays: lm_pineapple_fountain_charlestonWays, create: lm_pineapple_fountain_charlestonCreate, views: lm_pineapple_fountain_charlestonViews },
+  'rainbow-row-charleston': { manifest: lm_rainbow_row_charlestonManifest, osmWays: lm_rainbow_row_charlestonWays, create: lm_rainbow_row_charlestonCreate, views: lm_rainbow_row_charlestonViews },
+  'citadel-padgett-thomas-barracks': { manifest: lm_citadel_padgett_thomas_barracksManifest, osmWays: lm_citadel_padgett_thomas_barracksWays, create: lm_citadel_padgett_thomas_barracksCreate, views: lm_citadel_padgett_thomas_barracksViews },
+  'morris-island-lighthouse': { manifest: lm_morris_island_lighthouseManifest, osmWays: lm_morris_island_lighthouseWays, create: lm_morris_island_lighthouseCreate, views: lm_morris_island_lighthouseViews },
+  'charleston-international-airport-terminal': { manifest: lm_charleston_international_airport_terminalManifest, osmWays: lm_charleston_international_airport_terminalWays, create: lm_charleston_international_airport_terminalCreate, views: lm_charleston_international_airport_terminalViews },
+  'st-james-goose-creek-church': { manifest: lm_st_james_goose_creek_churchManifest, osmWays: lm_st_james_goose_creek_churchWays, create: lm_st_james_goose_creek_churchCreate, views: lm_st_james_goose_creek_churchViews },
+  'goose-creek-municipal-center': { manifest: lm_goose_creek_municipal_centerManifest, osmWays: lm_goose_creek_municipal_centerWays, create: lm_goose_creek_municipal_centerCreate, views: lm_goose_creek_municipal_centerViews },
+  'colonial-dorchester-bell-tower': { manifest: lm_colonial_dorchester_bell_towerManifest, osmWays: lm_colonial_dorchester_bell_towerWays, create: lm_colonial_dorchester_bell_towerCreate, views: lm_colonial_dorchester_bell_towerViews },
+  'north-charleston-city-hall': { manifest: lm_north_charleston_city_hallManifest, osmWays: lm_north_charleston_city_hallWays, create: lm_north_charleston_city_hallCreate, views: lm_north_charleston_city_hallViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));

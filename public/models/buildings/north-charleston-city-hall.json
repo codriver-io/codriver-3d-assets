@@ -1,0 +1,67 @@
+{
+  "id": "north-charleston-city-hall",
+  "name": "North Charleston City Hall",
+  "kind": "building",
+  "origin": [
+    -80.01217383333334,
+    32.8769795
+  ],
+  "height": 22.4,
+  "padM": 60,
+  "frontageBearing": 141.58,
+  "rotationDeg": 38.42,
+  "ownTolM": 1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation grade y=0, not absolute elevation. Mapped 38.42° rotation baked once, no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current 2009 four-storey civic building, complete OSM way 301403114. Mapped plan and orientation; 20.6 m main cornice and 22.4 m central bay heights, window rhythm, portico and curved entrance crown are photo estimates. City reports 167,000 sq ft; CEMS reports 150,000 sq ft plus garage, different area scopes not used as height facts. Adjacent garage, seal and lettering omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/north-charleston-city-hall-near.glb",
+      "bytes": 324052,
+      "triangles": 26330,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -50.604007720947266,
+          -1.9073486612342094e-7,
+          -50.56876754760742
+        ],
+        "max": [
+          47.8709602355957,
+          22.399999618530273,
+          47.596500396728516
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/north-charleston-city-hall-far.glb",
+      "bytes": 152880,
+      "triangles": 10222,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -50.604007720947266,
+          -1.9073486612342094e-7,
+          -50.56876754760742
+        ],
+        "max": [
+          47.8709602355957,
+          22.399999618530273,
+          47.596500396728516
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/north-charleston-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

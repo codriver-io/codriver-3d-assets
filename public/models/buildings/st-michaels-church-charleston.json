@@ -1,0 +1,214 @@
+{
+  "id": "st-michaels-church-charleston",
+  "name": "St. Michael's Church",
+  "kind": "building",
+  "origin": [
+    -79.93074,
+    32.776316
+  ],
+  "height": 56.7,
+  "padM": 24,
+  "frontageBearing": 263.06,
+  "rotation": 0.12112585008840647,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -79.9309232,
+          32.7763869
+        ],
+        [
+          -79.9309208,
+          32.7763699
+        ],
+        [
+          -79.9309648,
+          32.7763654
+        ],
+        [
+          -79.930944,
+          32.7762221
+        ],
+        [
+          -79.9309002,
+          32.7762266
+        ],
+        [
+          -79.9308974,
+          32.7762074
+        ],
+        [
+          -79.9305386,
+          32.7762442
+        ],
+        [
+          -79.9305453,
+          32.77629
+        ],
+        [
+          -79.9305145,
+          32.7762932
+        ],
+        [
+          -79.9305273,
+          32.7763809
+        ],
+        [
+          -79.9305581,
+          32.7763777
+        ],
+        [
+          -79.9305649,
+          32.7764236
+        ],
+        [
+          -79.9309232,
+          32.7763869
+        ]
+      ],
+      [
+        [
+          -79.9309166,
+          32.7763399
+        ],
+        [
+          -79.9309044,
+          32.7762569
+        ],
+        [
+          -79.9308027,
+          32.7762671
+        ],
+        [
+          -79.9308145,
+          32.7763502
+        ],
+        [
+          -79.9309166,
+          32.7763399
+        ]
+      ],
+      [
+        [
+          -79.9309208,
+          32.7763699
+        ],
+        [
+          -79.9309166,
+          32.7763399
+        ],
+        [
+          -79.9309044,
+          32.7762569
+        ],
+        [
+          -79.9309002,
+          32.7762266
+        ],
+        [
+          -79.930944,
+          32.7762221
+        ],
+        [
+          -79.9309648,
+          32.7763654
+        ],
+        [
+          -79.9309208,
+          32.7763699
+        ]
+      ],
+      [
+        [
+          -79.9305581,
+          32.7763777
+        ],
+        [
+          -79.9305453,
+          32.77629
+        ],
+        [
+          -79.9305145,
+          32.7762932
+        ],
+        [
+          -79.9305273,
+          32.7763809
+        ],
+        [
+          -79.9305581,
+          32.7763777
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -79.930944,
+        32.7762221
+      ],
+      [
+        -79.9309232,
+        32.7763869
+      ],
+      [
+        -79.9305386,
+        32.7762442
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid pavement foundation at local y=0; no terrain, sea-level height or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "NPS NHL nomination gives 130 × 60 ft and 185 ft steeple; current NPS page says 186 ft. Adopted total 56.7 m is an estimate within that discrepancy. Mapped west portico/body/chancel footprint. Stage splits, openings, weather vane and trim estimated from reference photographs. Geographic yaw baked once. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/st-michaels-church-charleston-near.glb",
+      "bytes": 134784,
+      "triangles": 8897,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -21.361751556396484,
+          4.76837147544984e-9,
+          -12.486656188964844
+        ],
+        "max": [
+          21.15248680114746,
+          56.70000076293945,
+          12.305411338806152
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/st-michaels-church-charleston-far.glb",
+      "bytes": 79640,
+      "triangles": 4786,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -21.361751556396484,
+          4.76837147544984e-9,
+          -12.486656188964844
+        ],
+        "max": [
+          21.15248680114746,
+          56.70000076293945,
+          12.305411338806152
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

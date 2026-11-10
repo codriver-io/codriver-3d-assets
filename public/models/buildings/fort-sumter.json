@@ -1,0 +1,65 @@
+{
+  "id": "fort-sumter",
+  "name": "Fort Sumter",
+  "kind": "building",
+  "origin": [
+    -79.87467,
+    32.75234
+  ],
+  "height": 24,
+  "padM": 125,
+  "frontageBearing": 225,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual island waterline; courtyard at y=1.2 m, raised eastern earth fill at y=5.2 m. These are relative estimated site levels, not a tide or DEM datum. Rigid masonry and Battery Huger must remain fixed; no terrain or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present-day ruined fort, not an 1861 three-tier reconstruction. OSM outer wall, island and Huger footprints; HABS SC-194 gives surviving wall about 15.5 ft above ground and 5 ft thick; NPS NRHP inventory gives Battery Huger 270 × 90 × 22 ft. Current OSM enclosure is larger than HABS approximate historic side lengths; retained mapped outline, no claim they agree. Variable ruin heights, exact casemate layouts, earth-fill level, flagpoles and parapet details estimated from photographs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fort-sumter-near.glb",
+      "bytes": 72916,
+      "triangles": 2598,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -143.46600341796875,
+          -6.137501209433358e-15,
+          -56.29499816894531
+        ],
+        "max": [
+          69.7760009765625,
+          24,
+          100.23300170898438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fort-sumter-far.glb",
+      "bytes": 58368,
+      "triangles": 1894,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -143.46600341796875,
+          -6.137501209433358e-15,
+          -56.29499816894531
+        ],
+        "max": [
+          69.7760009765625,
+          24,
+          100.23300170898438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fort-sumter/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

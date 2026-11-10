@@ -36989,6 +36989,1675 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "don-holt-bridge",
+      "name": "Don N. Holt Bridge",
+      "kind": "bridge",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "1992 Cooper River crossing with pale blue continuous Warren truss, a common deck carrying both I-526 directions, and mapped concrete approach viaducts.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks don-holt-bridge",
+        "provenance": "Original procedural geometry commissioned for Codriver. Mapped truss/road alignment © OpenStreetMap contributors, ODbL 1.0. Comparison only: Donholt.JPG by Citm2000, public domain, 2008 (predates repaint); SCDOT painting report and Live5 2017 repaint imagery, all rights reserved, reference-only, not redistributed. No photos, meshes, textures or signage lettering imported.",
+        "references": [
+          {
+            "label": "SCDOT existing conditions: 1992, three truss spans, approximately 2 miles, 155 ft clearance",
+            "url": "https://info2.scdot.org/projects/ViewerFiles/Appendix%20A-Existing%20Transportation%20Conditions%20Summary-Final%20July%202022.pdf"
+          },
+          {
+            "label": "OSM truss footprint",
+            "url": "https://www.openstreetmap.org/way/1469639956"
+          },
+          {
+            "label": "Citm2000, public domain, 2008 pre-repaint reference",
+            "url": "https://commons.wikimedia.org/wiki/File:Donholt.JPG"
+          },
+          {
+            "label": "SCDOT 2017 painting program; reference-only",
+            "url": "https://info2.scdot.org/SCDOTPress/Lists/Posts/Post.aspx?ID=2616"
+          },
+          {
+            "label": "Current Citadel-blue paint, 2017; all rights reserved, comparison only",
+            "url": "https://www.live5news.com/story/36522491/don-holt-bridge-gets-makeover-in-citadel-blue-color-as-painting-resumes/"
+          },
+          {
+            "label": "OSM mapped I-526 carriageway 35067062",
+            "url": "https://www.openstreetmap.org/way/35067062"
+          },
+          {
+            "label": "OSM mapped I-526 carriageway 35067064",
+            "url": "https://www.openstreetmap.org/way/35067064"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js"
+      },
+      "notes": "Stage B road fitting retains the approved 491 m / 20-panel truss, 52 m crest, 28.5 m deck, main bents and palettes. Mapped roadway replaces the schematic 3330 m extent with 2981.755 m; 1378.130 / 1112.625 m ramps have maximum flat grades 3.832 / 4.798 percent. Landing widths, low barriers and supports fit roads/terrain from immutable geometry; no corridor flattening. Weight refinement retains fine pavement only within 240 m west / 210 m east; elevated surfaces use full-width carriageway ribbons at 25 m near / 40 m far stations. All steel geometry is unchanged. Near 25292 triangles / 3 draws / 722572 bytes; far 16624 / 3 / 489140. See documentation for all visible differences and validation limits.",
+      "documentation": "docs/assets/top-cities-don-holt-bridge.md",
+      "manifest": "/models/bridges/don-holt-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=don-holt-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ben-sawyer-bridge",
+      "name": "Ben Sawyer Bridge",
+      "kind": "bridge",
+      "location": "Sullivan's Island, South Carolina",
+      "status": "ready",
+      "description": "Road-fitted 2010 Ben Sawyer swing bridge: the approved Pratt truss, central pivot, tender house and harbor sidewalk on the mapped two-way SC 703 surface.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ben-sawyer-bridge",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver; OSM bridge outline and highway alignment © OpenStreetMap contributors, ODbL 1.0. Comparison-only photos verified on Commons: Peter Burka, Swing span of Ben Sawyer Bridge open in 2025, CC BY-SA 2.0; FHWA, Ben Sawyer Bridge Aerial View SC (8424392896), US DOT public-domain work (Flickr also CC BY 2.0). The aerial includes temporary 2010 old/new superstructures; only the new permanent configuration is modeled. No photo, texture or imported mesh redistributed.",
+        "references": [
+          {
+            "label": "FHWA: 247 ft pivot and 452 ft approaches",
+            "url": "https://www.fhwa.dot.gov/innovation/innovator/issue11/"
+          },
+          {
+            "label": "FHWA replacement demonstration report",
+            "url": "https://www.fhwa.dot.gov/hfl/projects/sc_rapidremovalreplacement_bensawyerbridge_sc703.pdf"
+          },
+          {
+            "label": "SCDOT current 2010 span and widened sidewalk",
+            "url": "https://www.scdot.org/inside/pdf/ConnectorArchives/Winter2010Connector.pdf"
+          },
+          {
+            "label": "OSM full outline",
+            "url": "https://www.openstreetmap.org/way/709657858"
+          },
+          {
+            "label": "OSM swing roadway",
+            "url": "https://www.openstreetmap.org/way/927285596"
+          },
+          {
+            "label": "Peter Burka 2025 current span, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Swing_span_of_Ben_Sawyer_Bridge_open_in_2025.jpg"
+          },
+          {
+            "label": "FHWA 2010 replacement aerial, public domain / CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ben_Sawyer_Bridge_Aerial_View_SC_(8424392896).jpg"
+          },
+          {
+            "label": "OSM south roadway / fitted approach source",
+            "url": "https://www.openstreetmap.org/way/55610715"
+          },
+          {
+            "label": "OSM north roadway / fitted approach source",
+            "url": "https://www.openstreetmap.org/way/927285595"
+          },
+          {
+            "label": "OSM south connected road",
+            "url": "https://www.openstreetmap.org/way/12152716"
+          },
+          {
+            "label": "OSM north connected road",
+            "url": "https://www.openstreetmap.org/way/1391506631"
+          }
+        ]
+      },
+      "notes": "Closed road position; approved 75.2856 m swing truss, 11.8 m deck and 26.5 m antenna retained. Mapped roadway is 352.5596 m plus two 60 m tie-ins; flat ramps are 194.3186 / 194.9554 m at 6.4722 / 6.4497 percent maximum. Fitting moves the original centreline at most 2 m horizontally and approach decks -0.530 to +0.236 m vertically. No palette or central structural proportion change. Ground-seated supports, transverse pavement sampling and 0.12 m world clearance. Near 18572 triangles / 8 draws / 551076 bytes; far 13556 / 8 / 410228. Height and details are estimates; no operating animation or hardware measurement.",
+      "documentation": "docs/assets/top-cities-ben-sawyer-bridge.md",
+      "manifest": "/models/bridges/ben-sawyer-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=ben-sawyer-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Sullivan's Island",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "noisette-creek-pedestrian-bridge",
+      "name": "Noisette Creek Pedestrian Bridge",
+      "kind": "bridge",
+      "location": "North Charleston, South Carolina",
+      "city": "North Charleston",
+      "status": "ready",
+      "description": "2022 Riverfront Park crossing with a curved pale deck, paired outward-leaning white arches, hangers and a mapped side viewing platform.",
+      "manifest": "/models/bridges/noisette-creek-pedestrian-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs noisette-creek-pedestrian-bridge",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver. OSM outline, platform and centerline © OpenStreetMap contributors, ODbL 1.0. Designer Thomas & Hutton aerial photos 4.png and 1.png: all rights reserved, reference-only, not redistributed; compared locally. City of North Charleston Flickr 52490752215 verified CC BY-SA 2.0 via file page and Flickr oEmbed, but image download unavailable so not used for geometric comparison. No Commons images found; coordinator approved this reference-only exception. No imported mesh, photographic texture or traced photo outline.",
+        "references": [
+          {
+            "label": "Designer: 800 ft path, 230 ft span, 55 ft arches and aerial references (all rights reserved)",
+            "url": "https://www.thomasandhutton.com/portfolio_page/noisette-creek-pedestrian-bridge-north-charleston-sc/"
+          },
+          {
+            "label": "Designer aerial 1, all rights reserved, reference-only",
+            "url": "https://www.thomasandhutton.com/wp-content/uploads/2023/09/4.png"
+          },
+          {
+            "label": "Designer aerial 2, all rights reserved, reference-only",
+            "url": "https://www.thomasandhutton.com/wp-content/uploads/2023/09/1.png"
+          },
+          {
+            "label": "City 2024 report: November 9 2022, 235 ft span, 55 ft arches",
+            "url": "https://cms2.revize.com/revize/cityofnorthcharleston/Documents/Finance/FYE%202024%20ACFR%20-%20FINAL%20COPY%20%28DIGITAL%20COPY%29.pdf"
+          },
+          {
+            "label": "Railing supplier: 42 in posts, bronze finish and cable railing",
+            "url": "https://cicpgh.com/noisette-creek-pedestrian-bridge/"
+          },
+          {
+            "label": "OSM bridge outline and platform",
+            "url": "https://www.openstreetmap.org/way/1508243093"
+          },
+          {
+            "label": "OSM path centerline",
+            "url": "https://www.openstreetmap.org/way/1508243094"
+          },
+          {
+            "label": "North Charleston ribbon cutting, CC BY-SA 2.0 (license verified; image unavailable)",
+            "url": "https://www.flickr.com/photos/northcharleston/52490752215"
+          }
+        ]
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=detail"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-noisette-creek-pedestrian-bridge.md",
+      "notes": "Mapped 236.10 m path and event platform. Thomas & Hutton publishes 230 ft span and 55 ft tall arches; City report says 235 ft. Deck height, arch lean, cable layout, pile and seat details estimated; no road layer.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "north-charleston-coliseum",
+      "name": "North Charleston Coliseum",
+      "kind": "building",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "1993 arena with an oval brick bowl, pale diamond masonry, shallow peaked silver roof and mapped glazed entrance wings.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/north-charleston-coliseum/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs north-charleston-coliseum",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/north-charleston-coliseum/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver. OSM footprint © OpenStreetMap contributors, ODbL 1.0. Commons photos verified: North Charleston Coliseum Aug2010 by Chris Pruitt, CC BY-SA 3.0 (exterior bowl, diamond pattern and roof); Darius Rucker Blvd unveiled (9500164219), North Charleston / Ryan Johnson, CC BY-SA 2.0 (2013 interior event at this coliseum, used only for entry framing and exposed roof context). The latter is not an exterior photograph. No photos, lettering, logos, textures or third-party geometry redistributed.",
+        "references": [
+          {
+            "label": "Official venue technical guide: arena-floor elevations and roof steel",
+            "url": "https://www.northcharlestoncoliseumpac.com/assets/doc/Facility-Info-COL-8-1-17-724a70448c.pdf"
+          },
+          {
+            "label": "Official venue",
+            "url": "https://www.northcharlestoncoliseumpac.com/"
+          },
+          {
+            "label": "OSM arena footprint only",
+            "url": "https://www.openstreetmap.org/way/190679013"
+          },
+          {
+            "label": "Chris Pruitt exterior, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:North_Charleston_Coliseum_Aug2010.jpg"
+          },
+          {
+            "label": "North Charleston / Ryan Johnson interior event, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Darius_Rucker_Blvd_unveiled_(9500164219).jpg"
+          }
+        ]
+      },
+      "notes": "Coliseum way 190679013 only; Performing Arts Center 190679212 and Convention Center 190679211 excluded. Official open steel is 97 ft above arena floor; 32.2 m exterior crown and 26 m eave are estimates. Both LODs retain diamond facade, window bays and complete footprint.",
+      "documentation": "docs/assets/top-cities-north-charleston-coliseum.md",
+      "manifest": "/models/buildings/north-charleston-coliseum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=north-charleston-coliseum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "arthur-ravenel-jr-bridge",
+      "name": "Arthur Ravenel Jr. Bridge",
+      "kind": "bridge",
+      "location": "Charleston / Mount Pleasant, South Carolina",
+      "status": "ready",
+      "description": "Two hollow diamond towers, 128 stays, a wide eight-lane deck, south walking path and rock protection islands on the 2005 Cooper River crossing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks arthur-ravenel-jr-bridge",
+        "provenance": "Original procedural geometry authored 2026-11-09. Alignment © OpenStreetMap contributors, ODbL 1.0, ways 927255592, 927255594, 927255593, 50054023, 38968007, 927255595 and outline 1494459861. Reference-only photographs: DXR CC BY-SA 4.0; w_lemay CC0 1.0; file-page licences and depicted bridge verified. No photographs, meshes, textures or lettering shipped. Contributor/product permission remains a human maintainer process; no terms accepted by agent. Road fitting 2026-11-10 uses both carriageways from the serialized Overpass helper; mapped provider tower rings 1505466634 and 1505466635 are replaced exactly.",
+        "references": [
+          {
+            "label": "TYLin design review and construction engineering: 1546 ft span, 574 ft diamond towers, 186 ft minimum navigation clearance",
+            "url": "https://www.tylin.com/work/projects/arthur-ravenel-jr-bridge"
+          },
+          {
+            "label": "OSM central northbound alignment",
+            "url": "https://www.openstreetmap.org/way/927255592"
+          },
+          {
+            "label": "OSM central southbound alignment",
+            "url": "https://www.openstreetmap.org/way/927255594"
+          },
+          {
+            "label": "DXR: west partial view, CC BY-SA 4.0 (2016)",
+            "url": "https://commons.wikimedia.org/wiki/File:Arthur_Ravenel_Jr_Bridge,_West_Partial_View_20160704_1.jpg"
+          },
+          {
+            "label": "w_lemay: Charleston panorama, CC0 1.0 (2019)",
+            "url": "https://commons.wikimedia.org/wiki/File:Arthur_Ravenel_Jr._Bridge,_Charleston,_SC.jpg"
+          },
+          {
+            "label": "OSM Pearman tower provider footprint",
+            "url": "https://www.openstreetmap.org/way/1505466634"
+          },
+          {
+            "label": "OSM Grace tower provider footprint",
+            "url": "https://www.openstreetmap.org/way/1505466635"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js"
+      },
+      "notes": "Road-fitted mainline extends the approved 1440 m model to 2753.760 m while retaining both diamond towers, stayed unit, main camber, islands, 39 m structural width and colours. Flat-Cityscape approximation: real grade about 4%; model west 1212.444 m / 5.0963%, east 589.316 m / 11.0958%, with 60 m vertical curves and 20 m landings, explicitly authorised below a 12% eastern cap. Outer high approaches are regraded, extended and reseated on matching supports; only 100 m noses narrow. Mount Pleasant US 17/SC 703 fork and Charleston I-26, Meeting Street and Morrison Drive ramps require a separately scoped multi-branch interchange surface. BridgeLift retained; exact provider tower masks; source/export costs and verification evidence in the documentation.",
+      "documentation": "docs/assets/top-cities-arthur-ravenel-jr-bridge.md",
+      "manifest": "/models/bridges/arthur-ravenel-jr-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ashley-river-memorial-bridge",
+      "name": "Ashley River Memorial Bridge",
+      "kind": "bridge",
+      "location": "Charleston, South Carolina",
+      "status": "ready",
+      "description": "The 1926 Ashley River crossing: shallow concrete arches, a closed double-leaf steel bascule and four Mediterranean Revival tender houses with open octagonal lanterns.",
+      "manifest": "/models/bridges/ashley-river-memorial-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js",
+        "build": "pnpm build:top-cities-landmarks ashley-river-memorial-bridge",
+        "provenance": "Original procedural geometry authored 2026-11-09. OSM API footprint and highway alignment © OpenStreetMap contributors, ODbL 1.0. Both ProfReader 2015 Commons photographs verified as the four-tender-house 1926 bridge, CC BY-SA 4.0 on each file page, reference only. No textures, third-party meshes, photos or lettering shipped; no contributor legal terms accepted by agent. Road-fit 2026-11-10 using mapped Memorial roadway 480966842/480966843/117153920, approaches 51180495/38108288 and east feeder 631693898 fetched through the shared overpass.mjs client; original structural grade, palettes and recognizable features preserved.",
+        "references": [
+          {
+            "label": "City and SCDOT: current identity, 1926 memorial bridge",
+            "url": "https://www.charleston-sc.gov/m/NewsFlash/Home/Detail/1757"
+          },
+          {
+            "label": "SCDOT: southbound US 17 bridge maintenance",
+            "url": "https://www.scdot.org/inside/SCDOTPress/2023/Post3390.html"
+          },
+          {
+            "label": "OSM mapped bridge envelope and piers",
+            "url": "https://www.openstreetmap.org/way/1499776962"
+          },
+          {
+            "label": "ProfReader, bascule and four tender houses, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ashley_River_Memorial_Bridge.jpg"
+          },
+          {
+            "label": "ProfReader, broadside of bascule, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ashley_River_Memorial_Bridge,_Charleston,_South_Carolina.jpg"
+          },
+          {
+            "label": "OSM southbound Memorial carriageway, three lanes",
+            "url": "https://www.openstreetmap.org/way/117153920"
+          },
+          {
+            "label": "OSM west approach",
+            "url": "https://www.openstreetmap.org/way/51180495"
+          },
+          {
+            "label": "OSM east approach",
+            "url": "https://www.openstreetmap.org/way/38108288"
+          },
+          {
+            "label": "OSM east-bank feeder",
+            "url": "https://www.openstreetmap.org/way/631693898"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=ashley-river-memorial-bridge&view=detail"
+          }
+        ]
+      },
+      "notes": "Southbound Memorial Bridge only; parallel northbound Legare remains provider-drawn. Original 528.1 m structural span, four tender houses, bascule, arches, colors and proportions retained; mapped axis correction at most 0.271 m. New ramps: west 100 m / 6.289%, east 76.813 m / 7.105%, feeder 173.186 m / 7.011%. Vertical dimensions remain photographic estimates. Near 25,359 triangles / 10 draws / 721,704 bytes; far 15,011 / 9 / 454,952; lift weights retained. Arches remain rigid in world, piers and fenders meet local ground.",
+      "documentation": "docs/assets/top-cities-ashley-river-memorial-bridge.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "uss-yorktown-cv10",
+      "name": "USS Yorktown (CV-10)",
+      "kind": "building",
+      "location": "Mount Pleasant, South Carolina",
+      "status": "ready",
+      "description": "Museum Essex-class carrier with flared bow, angled flight deck, starboard island and mast, recessed hangar bays and unmarked static aircraft silhouettes.",
+      "manifest": "/models/buildings/uss-yorktown-cv10.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/uss-yorktown-cv10/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs uss-yorktown-cv10",
+        "provenance": "Original procedural ship and unmarked aircraft geometry, 2026-11-09. Berth/outline © OpenStreetMap contributors, ODbL 1.0, way 39010151. Something Original and RebelAt Commons photographs, CC BY-SA 3.0, file licences and current museum identity checked, reference only. No photograph, texture, scan, imported mesh or lettering shipped. No contributor terms accepted by agent.",
+        "references": [
+          {
+            "label": "Patriots Point operator: 888 ft after 1956 versus 872 ft in 1943",
+            "url": "https://www.patriotspoint.org/things-to-do/uss-yorktown"
+          },
+          {
+            "label": "US Navy DANFS: original dimensions and service history",
+            "url": "https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/y/yorktown-cv-10-iv.html"
+          },
+          {
+            "label": "OSM museum ship footprint",
+            "url": "https://www.openstreetmap.org/way/39010151"
+          },
+          {
+            "label": "Something Original: museum panorama, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:USS_Yorktown_(CVS-10)_panorama_2012.jpg"
+          },
+          {
+            "label": "RebelAt: present-day profile, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Present_Day_Profile_View_of_the_USS_Yorktown.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/uss-yorktown-cv10/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=detail"
+          },
+          {
+            "label": "Stern",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=stern"
+          }
+        ]
+      },
+      "notes": "Current museum configuration. 270.6624 m length sourced from Patriots Point; OSM footprint and berth. Hull beam, deck/island/mast heights and details estimated from museum photographs. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-uss-yorktown-cv10.md",
+      "city": "Mount Pleasant",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fort-sumter",
+      "name": "Fort Sumter",
+      "kind": "building",
+      "location": "Charleston, South Carolina",
+      "status": "ready",
+      "description": "Present-day pentagonal brick sea fort with varied ruined curtain walls, open casemates, raised earth fill and dark Battery Huger across the parade.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fort-sumter/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs fort-sumter",
+        "provenance": "Original procedural geometry, 2026-11-09. Wall, Battery Huger and island mapped from OpenStreetMap ways 1356508917, 36374994 and 12353668, ODbL 1.0. Methaz CC BY-SA 3.0 and Clynnwersch CC BY-SA 4.0 Commons photographs inspected for identity and licence, reference only. No photograph, texture, scan, imported mesh, flag or lettering shipped. No contributor terms accepted by agent.",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fort-sumter/geometry.js",
+        "references": [
+          {
+            "label": "NPS HABS SC-194: walls and casemates",
+            "url": "https://pubs.nps.gov/eTIC/EVER-GARI/FOSU_392_124634_0001_of_0006.pdf"
+          },
+          {
+            "label": "NPS National Register inventory: Battery Huger dimensions",
+            "url": "https://npgallery.nps.gov/pdfhost/docs/NRHP/Text/66000101.pdf"
+          },
+          {
+            "label": "NPS: present Battery Huger",
+            "url": "https://home.nps.gov/places/battery-huger.htm"
+          },
+          {
+            "label": "OSM current fort wall",
+            "url": "https://www.openstreetmap.org/way/1356508917"
+          },
+          {
+            "label": "OSM Battery Huger",
+            "url": "https://www.openstreetmap.org/way/36374994"
+          },
+          {
+            "label": "OSM island",
+            "url": "https://www.openstreetmap.org/way/12353668"
+          },
+          {
+            "label": "Methaz: aerial view, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fort_Sumter_Aerial_View.jpg"
+          },
+          {
+            "label": "Clynnwersch: harbor view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fort_Sumter_3.jpg"
+          }
+        ]
+      },
+      "notes": "Current ruined fort, not the original three-tier form. OSM outline and island; HABS wall thickness and surviving height; NPS Battery Huger dimensions. Relative site levels, individual wall heights, casemate layout and poles estimated. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-fort-sumter.md",
+      "manifest": "/models/buildings/fort-sumter.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fort-sumter&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fort-sumter&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fort-sumter&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fort-sumter&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fort-sumter&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=fort-sumter&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fort-sumter&view=detail"
+          },
+          {
+            "label": "Battery",
+            "url": "/asset-preview.html?asset=fort-sumter&view=battery"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
+    },
+    {
+      "id": "morris-island-lighthouse",
+      "name": "Morris Island Lighthouse",
+      "kind": "building",
+      "location": "Morris Island, Charleston Harbor, Folly Beach, South Carolina",
+      "status": "ready",
+      "description": "The surviving 1876 tapering brick lighthouse, with faded brown and white daymark bands, corbelled galleries and an open lantern above its circular sheet-pile cofferdam.",
+      "manifest": "/models/buildings/morris-island-lighthouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs morris-island-lighthouse",
+        "provenance": "Original procedural geometry. Geographic control and tower/cofferdam rings from OSM ways 1528926180 and 926973307, © OpenStreetMap contributors, ODbL 1.0. Photographic comparison only: AlpineWhiteMavic CC BY-SA 4.0; Niagara CC BY-SA 3.0; neither photo is shipped. No third-party mesh, scan, texture, logo or lettering. Separate contributor/product acceptance is a maintainer responsibility; no agent acceptance is claimed.",
+        "references": [
+          {
+            "label": "SC Department of Archives and History: 1876 tower, NRHP summary (height conflict)",
+            "url": "https://www.nationalregister.sc.gov/charleston/S10817710119/index.htm"
+          },
+          {
+            "label": "Taylor Marine: foundation stabilization, 72 ft cofferdam",
+            "url": "https://taylormarineconstruction.com/wp-content/uploads/2019/04/the-morris-island-lighthouse-phase-one-foundation-stabilization-project.pdf"
+          },
+          {
+            "label": "Save the Light: history and current preservation",
+            "url": "https://savethelight.org/about/lighthouse-history/"
+          },
+          {
+            "label": "OSM tower 1528926180",
+            "url": "https://www.openstreetmap.org/way/1528926180"
+          },
+          {
+            "label": "Morris Island Light · AlpineWhiteMavic, 2018 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Morris_Island_Light.jpg"
+          },
+          {
+            "label": "Morris Island Light, April 2014 · Niagara (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Morris_Island_Light,_April_2014.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=morris-island-lighthouse&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: 1876 identity and 21.95 m modern cofferdam diameter. Estimated: 49.07 m overall height (published heights conflict), 10 m lower shaft diameter, 5.08 m upper shaft, band levels, lantern and waterline exposure. OSM tower ring is narrower than the photographed shaft. No submerged piles or sea mesh; host modes not tested.",
+      "documentation": "docs/assets/top-cities-morris-island-lighthouse.md",
+      "city": "Folly Beach",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rainbow-row-charleston",
+      "name": "Rainbow Row",
+      "kind": "building",
+      "location": "83–107 East Bay Street, Charleston, South Carolina",
+      "status": "ready",
+      "description": "Thirteen pastel Georgian row-house fronts, with unequal widths and rooflines, repeated shuttered sash windows, chimney stacks and the green Dutch gable.",
+      "manifest": "/models/buildings/rainbow-row-charleston.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs rainbow-row-charleston",
+        "provenance": "Original procedural geometry. Main front-house footprint intervals and ridge heights from OpenStreetMap, © OpenStreetMap contributors, ODbL 1.0; address grouping from Charleston architectural inventory. Photos by Ymblanter, CC BY-SA 4.0, verified as East Bay Street Rainbow Row and used only for local comparison; none shipped. No third-party mesh, scan, texture, logo or lettering. No legal acceptance is asserted by this agent.",
+        "references": [
+          {
+            "label": "City of Charleston, historic resources survey: shared walls and Georgian/Federal row houses",
+            "url": "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Agenda/_03112026-10738"
+          },
+          {
+            "label": "City architectural inventory: East Bay addresses and historical names",
+            "url": "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Agenda/_02262026-10733"
+          },
+          {
+            "label": "OSM combined 97–101 main footprint",
+            "url": "https://www.openstreetmap.org/way/1356814318"
+          },
+          {
+            "label": "Rainbow Row front · Ymblanter, 2017 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rainbow_Row_front.jpg"
+          },
+          {
+            "label": "Rainbow Row from south side · Ymblanter, 2017 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rainbow_Row_from_south_side.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=rainbow-row-charleston&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: OSM main frontage positions, 11 footprint rings and mapper ridge tags 11–17 m; 97–101 is one mapped building, subdivided into three house fronts. Estimated: 97 raised to 16 m based on the tall lavender facade in the reference, 99/101 retain 13 m ridges, colors, visible storeys, opening sizes and rear block depths. Main front blocks only, excluding 79–81 and rear annexes. Cityscape and Full 3D world not tested.",
+      "documentation": "docs/assets/top-cities-rainbow-row-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "citadel-padgett-thomas-barracks",
+      "name": "Padgett-Thomas Barracks (The Citadel)",
+      "kind": "building",
+      "location": "The Citadel, 171 Moultrie Street, Charleston, South Carolina",
+      "status": "ready",
+      "description": "The white crenellated 2004 barracks quadrangle, with its 109-foot central clock tower, open east sally port, round corner turrets and tiers of courtyard arcades.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs citadel-padgett-thomas-barracks",
+        "provenance": "Original procedural geometry. Geographic outline from OSM relation 6897174, outer way 38733112 and inner way 38733113, © OpenStreetMap contributors, ODbL 1.0. Tower height and 2004 replacement identity from The Citadel owner. Two verified photographs by CocoaBeachBoy released to the public domain on their Commons file pages, used only for local comparison; none shipped. No mesh, scan, texture, logo or lettering. No legal acceptance is asserted by this agent.",
+        "references": [
+          {
+            "label": "The Citadel owner: current 2004 barracks and 109 ft / eight-storey tower",
+            "url": "https://www.citadel.edu/our-campus/2023/05/padgett-thomas-barracks/"
+          },
+          {
+            "label": "The Citadel brand encyclopedia: replacement building identity",
+            "url": "https://brand.citadel.edu/encyclopedia/padgett-thomas-barracks/"
+          },
+          {
+            "label": "OSM multipolygon 6897174",
+            "url": "https://www.openstreetmap.org/relation/6897174"
+          },
+          {
+            "label": "PT Barracks · CocoaBeachBoy, 2007 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:PT_Barracks.JPG"
+          },
+          {
+            "label": "Inside PT Barracks · CocoaBeachBoy, 2007 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Inside_PT_Barracks.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js"
+      },
+      "notes": "Sourced: current 2004 replacement, 109 ft (33.2232 m) tower, four storeys and OSM outer/courtyard rings. Estimated: 92.6 × 62.6 m simplified wing rectangle, 72.6 × 42.6 m clear courtyard, 14.6 m wing roofs, 17 m corner turret crowns, arcade rhythm, checker paving and clock. Open quadrangle and sally port persist in far. No host integration tested.",
+      "documentation": "docs/assets/top-cities-citadel-padgett-thomas-barracks.md",
+      "manifest": "/models/buildings/citadel-padgett-thomas-barracks.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=detail"
+          },
+          {
+            "label": "Courtyard",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=courtyard"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "charleston-international-airport-terminal",
+      "name": "Charleston International Airport terminal",
+      "kind": "building",
+      "location": "Charleston International Airport, North Charleston, South Carolina",
+      "status": "ready",
+      "description": "The redeveloped glass-fronted terminal with its central dome, two unequal concourse arms, raised roof monitors, connected curb canopies and supported boarding corridors.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs charleston-international-airport-terminal",
+        "provenance": "Original procedural geometry from current OSM terminal/canopy outlines and boarding-path controls, © OpenStreetMap contributors, ODbL 1.0. Redevelopment identity and Central Hall height from designer Fentress Architects; post-2022 Concourse A identity from owner. Verified Commons photos by AutoRentals (2019, CC BY-SA 4.0) and Edward Russell (2017, CC BY 2.0) are local comparison only; no photographs, scans, third-party meshes, textures, logos or lettering shipped. No contributor/product acceptance is asserted by an agent.",
+        "references": [
+          {
+            "label": "Fentress Architects completion release: 2016, 25 ft Central Hall and dome",
+            "url": "https://www.aviationpros.com/airport-business/airport-infrastructure-operations/press-release/12265550/fentress-architects-charleston-international-airport-expansion-completed"
+          },
+          {
+            "label": "Structural engineer MMSA: 2016 completion and two-concourse redevelopment",
+            "url": "https://www.mmsainc.com/portfolio/charleston-international-airport-terminal-redevelopment-and-improvement-program-trip/"
+          },
+          {
+            "label": "Airport owner: Concourse A capacity expanded in 2022",
+            "url": "https://iflychs.com/chs-expands-gate-capacity/"
+          },
+          {
+            "label": "Airport operator: terminal map",
+            "url": "https://iflychs.com/passengers/terminal-map/"
+          },
+          {
+            "label": "OSM main terminal way 35209624",
+            "url": "https://www.openstreetmap.org/way/35209624"
+          },
+          {
+            "label": "Front of Charleston Airport · AutoRentals, 2019 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Front_of_Charleston_Airport_AutoRentals.jpg"
+          },
+          {
+            "label": "CHS concourse A interior · Edward Russell, 2017 (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:CHS_concourse_A_interior_(32241690883).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js"
+      },
+      "notes": "Sourced: designer 25 ft / 7.62 m Central Hall, 2016 redevelopment and owner 2022 Concourse A gate expansion; OSM terminal/canopy footprint and seventeen boarding corridor paths. Estimated: apron datum, passenger floor +3.6 m, dome rise 5.5 m, roof monitor dimensions, facade cadence, canopies, boarding corridor sizes/supports. Control tower, parking, cargo, aircraft, logos/letters and future construction omitted. Cityscape and Full 3D world not tested.",
+      "documentation": "docs/assets/top-cities-charleston-international-airport-terminal.md",
+      "manifest": "/models/buildings/charleston-international-airport-terminal.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=detail"
+          },
+          {
+            "label": "Concourse",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=concourse"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-michaels-church-charleston",
+      "name": "St. Michael's Church",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "White Georgian church with a giant Tuscan portico, two tiers of arched nave windows, square vestibule tower and three diminishing octagonal steeple stages.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-michaels-church-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+        "provenance": "Original procedural geometry for Codriver, 2026-11-09. OSM way 39937176 outline and rotation © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry reference photographs CC BY 3.0; photographs reference-only, no pixels or meshes incorporated. Human contributor/legal acceptance is not asserted by this authoring record.",
+        "references": [
+          {
+            "label": "NPS identity, giant portico and 186-foot steeple",
+            "url": "https://www.nps.gov/places/st-michael-s-episcopal-church.htm"
+          },
+          {
+            "label": "NPS NHL nomination: 130 × 60 ft, 185 ft steeple, three diminishing octagons",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000704_text"
+          },
+          {
+            "label": "Mapped church footprint",
+            "url": "https://www.openstreetmap.org/way/39937176"
+          },
+          {
+            "label": "Brian Stansberry, exterior, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-michaels-episcopal-charleston-sc1.jpg"
+          },
+          {
+            "label": "Brian Stansberry, side and tower, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-michaels-episcopal-charleston-sc3.jpg"
+          },
+          {
+            "label": "Bell-ringing guild exterior reference, Warren LeMay",
+            "url": "https://www.nagcr.org/towers-and-bands/charleston-st-michael"
+          }
+        ]
+      },
+      "manifest": "/models/buildings/st-michaels-church-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-michaels-church-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Original procedural permanent exterior. NPS published heights differ: 185 versus 186 ft; adopted 56.7 m overall is estimated. Stage split, louvres, clocks and ornament are photographic estimates. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-michaels-church-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-philips-church-charleston",
+      "name": "St. Philip's Church",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Tan stucco Wren-Gibbs church with three four-column Tuscan porticoes, tall nave windows, square oculus tower, diminishing octagons, clocks and a long brown needle.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-philips-church-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. OSM church and mapped part outlines © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry photos CC BY 3.0 used only for local visual comparison. No photo, capture, lettering or imported mesh included. No legal acceptance asserted.",
+        "references": [
+          {
+            "label": "NPS NHL nomination: three tetrastyle porticoes, octagonal stages and 1848–50 spire",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/73001695_text"
+          },
+          {
+            "label": "Parish history booklet: present structure completed 1838",
+            "url": "https://cpmfiles1.com/stphilipschurchsc.org/2022-churchhistory-booklet-2.pdf"
+          },
+          {
+            "label": "OSM church footprint and related parts",
+            "url": "https://www.openstreetmap.org/way/173699967"
+          },
+          {
+            "label": "Brian Stansberry, west steeple/porticoes, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-philips-episcopal-charleston-sc1.jpg"
+          },
+          {
+            "label": "Brian Stansberry, clock detail, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-philips-episcopal-charleston-sc2.jpg"
+          }
+        ]
+      },
+      "manifest": "/models/buildings/st-philips-church-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-philips-church-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Parish dates current building 1838; nomination body 1835–36, steeple 1848–50. Adopted 56 m unsurveyed OSM height is estimated, with stage proportions from photographs. No interiors, churchyard, lettering or texture. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-philips-church-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "us-custom-house-charleston",
+      "name": "United States Custom House",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Roman Corinthian cruciform Custom House with two open six-column porticoes, broad monumental stairs, pediments, two tiers of windows and a pierced roof balustrade.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs us-custom-house-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. Mapped cross plan © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry CC BY 3.0 and Diligent Terrier CC BY-SA 4.0 photographs are reference-only. No photos, textures, lettering or imported geometry included. No contributor acceptance asserted.",
+        "references": [
+          {
+            "label": "GSA historic building page: cross plan, two Corinthian temple fronts, stairs, low roof",
+            "url": "https://www.gsa.gov/real-estate/explore-historic-buildings/find-a-historic-federal-building/us-custom-house-charleston-sc"
+          },
+          {
+            "label": "NPS nomination: historical 249 × 152 ft description; unbuilt dome excluded",
+            "url": "https://npgallery.nps.gov/pdfhost/docs/nrhp/text/74001834.PDF"
+          },
+          {
+            "label": "OSM way 37594690",
+            "url": "https://www.openstreetmap.org/way/37594690"
+          },
+          {
+            "label": "Brian Stansberry, west portico, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:US-custom-house-charleston-sc1.jpg"
+          },
+          {
+            "label": "Diligent Terrier, exterior, CC BY-SA 4.0 (multi-licensed)",
+            "url": "https://commons.wikimedia.org/wiki/File:United_States_Custom_House.jpg"
+          }
+        ]
+      },
+      "notes": "Completed 1879 Custom House at East Bay Street, not Old Exchange or unbuilt domed proposal. Dimensions separate mapped masonry envelope from stair-inclusive historical description. 23 m height is estimated. Ornament and capitals simplified, lettering omitted. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-us-custom-house-charleston.md",
+      "manifest": "/models/buildings/us-custom-house-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=us-custom-house-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=detail"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pineapple-fountain-charleston",
+      "name": "Pineapple Fountain",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Waterfront Park pineapple fountain with two broad scalloped bowls, a tall ovoid fruit of integrated diamond relief, a raised curled leaf crown and separate static falling streams in its round basin.",
+      "manifest": "/models/buildings/pineapple-fountain-charleston.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs pineapple-fountain-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. Mapped basin © OpenStreetMap contributors, ODbL 1.0. JonathanLamb CC BY 3.0 Commons images and Library of Congress/City reference photos are comparison only. No photograph, texture, scan or imported model is included. No legal acceptance asserted.",
+        "references": [
+          {
+            "label": "City of Charleston: Pineapple Fountain with Sailboats, current identity and sculpture",
+            "url": "https://www.charleston-sc.gov/gallery.aspx?PID=70"
+          },
+          {
+            "label": "Library of Congress Highsmith photo: completed 1990, Waterfront Park",
+            "url": "https://www.loc.gov/item/2017879904/"
+          },
+          {
+            "label": "OSM basin 1356302855",
+            "url": "https://www.openstreetmap.org/way/1356302855"
+          },
+          {
+            "label": "JonathanLamb, east-facing full fountain, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charleston-SC-pineapple-fountain.jpg"
+          },
+          {
+            "label": "JonathanLamb, west-facing fountain and City Gallery, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charleston-Waterfront-Park-pineapple-fountain-back.jpg"
+          }
+        ]
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pineapple-fountain-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "1990 Pineapple Fountain, distinct from the Vendue splash fountain. Basin 10.6 m mapped; revised photographic estimates: 5.14 m above pavement / 5 m above basin water, approximately 2 m wide × 1.78 m tall ovoid fruit at y=2.16–3.94, about 1.2 m crown rise, bowl rim levels 1.10/2 m. The unsurveyed OSM 4 m height tag conflicts with these photo proportions and is not adopted. Integrated diamond skin in both LODs; sparse static flow, no surrounding park or textures. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-pineapple-fountain-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-james-goose-creek-church",
+      "name": "St. James' Church, Goose Creek",
+      "kind": "building",
+      "location": "Goose Creek, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of the current 1713–1719 stucco church: clipped slate roof, tall arched windows, quoins and pedimented west entrance.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-james-goose-creek-church/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-james-goose-creek-church",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-james-goose-creek-church/geometry.js",
+        "provenance": "Original procedural geometry authored for Codriver in 2026; no imported mesh, texture or scan. OSM mapped outline © OpenStreetMap contributors, ODbL 1.0. Photographs used for local visual comparison only: Itsbrandoyo CC BY-SA 4.0 and Jack E. Boucher/HABS public domain. No contributor agreement accepted by an agent.",
+        "references": [
+          {
+            "label": "Church owner — history and 50 × 40 ft dimensions",
+            "url": "https://saintjameschurchgoosecreek.com/"
+          },
+          {
+            "label": "SC Archives — National Historic Landmark record",
+            "url": "https://www.nationalregister.sc.gov/berkeley/S10817708020/index.htm"
+          },
+          {
+            "label": "OSM footprint 1307285849",
+            "url": "https://www.openstreetmap.org/way/1307285849"
+          },
+          {
+            "label": "Itsbrandoyo 2014 exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St._James_Goose_Creek_Parish_Church,_Goose_Creek,_South_Carolina.jpg"
+          },
+          {
+            "label": "Jack E. Boucher, HABS southeast exterior, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:EXTERIOR,_VIEW_FROM_SOUTHEAST_CORNER_-_St._James%27_Protestant_Episcopal_Church,_Goose_Creek,_Berkeley_County,_SC_HABS_SC,8-GOOCR,1-9.tif"
+          }
+        ]
+      },
+      "notes": "Mapped plan and orientation; height, glazing, mouldings and small original bird-relief grouping are estimates. Cemetery, trees, boundary walls and interior omitted. Reference photos are not redistributed. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-james-goose-creek-church.md",
+      "manifest": "/models/buildings/st-james-goose-creek-church.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-james-goose-creek-church",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=detail"
+          }
+        ]
+      },
+      "city": "Goose Creek",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "colonial-dorchester-bell-tower",
+      "name": "Colonial Dorchester (St. George's bell tower)",
+      "kind": "building",
+      "location": "Summerville, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of the standing roofless 1751 brick bell-tower ruin: arched openings, thick hollow shaft, corner pilasters and eroded raised crown.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/colonial-dorchester-bell-tower/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs colonial-dorchester-bell-tower",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colonial-dorchester-bell-tower/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver, 2026. Placement from OSM node 357110002 © OpenStreetMap contributors, ODbL 1.0. No OSM tower way exists. The square plan and bearing are authored estimates, not mapped ownership. Two Vitugglan Commons photos CC BY-SA 4.0 checked for identity and licence; comparison only, not redistributed. No scans, external meshes or textures.",
+        "references": [
+          {
+            "label": "SC State Parks — identity and 1751 tower",
+            "url": "https://southcarolinaparks.com/colonial-dorchester/history-and-interpretation"
+          },
+          {
+            "label": "NRHP Old Dorchester nomination",
+            "url": "https://npgallery.nps.gov/GetAsset/a1bc3cc7-136a-4bbf-82a5-dc38bc4312ad/"
+          },
+          {
+            "label": "HABS SC-189 tower record",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0200/sc0239/data/sc0239data.pdf"
+          },
+          {
+            "label": "OSM ruins node 357110002",
+            "url": "https://www.openstreetmap.org/node/357110002"
+          },
+          {
+            "label": "Vitugglan tower exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St_georges_belltower_dorchester_sc_12-30-11.jpg"
+          },
+          {
+            "label": "Vitugglan alternate exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St_georges_belltower_dorchester_sc_alt_view_12-30-11.jpg"
+          }
+        ]
+      },
+      "notes": "Weight-review revision: sparse original weathering patches and isolated courses replace dense brick tessellation; near 1,490 triangles / 3 draws / 24,560 bytes, far 1,002 triangles / 3 draws / 19,400 bytes, including licence metadata. Same silhouette, openings, eroded top, pilasters, cornice, proportions and placement; exported bounds exactly unchanged, no QA flags. OSM ruins node only; authored plan and estimated orientation, no provider footprint/replacement claim. All dimensions are photo estimates; NRHP church dimensions do not measure the tower. No reconstructed church, roof, bells, tabby fort or textures. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-colonial-dorchester-bell-tower.md",
+      "manifest": "/models/buildings/colonial-dorchester-bell-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=detail"
+          }
+        ]
+      },
+      "city": "Summerville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "north-charleston-city-hall",
+      "name": "North Charleston City Hall",
+      "kind": "building",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of the 2009 four-storey city hall, with red brick upper floors, pale arched lower floors and a monumental projecting glazed entrance and curved crown.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/north-charleston-city-hall/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs north-charleston-city-hall",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/north-charleston-city-hall/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver, 2026; no external meshes, scans or textures. Building outline and orientation © OpenStreetMap contributors, ODbL 1.0. Two Ryan Johnson / City of North Charleston photographs, CC BY-SA 2.0, checked for identity and licence and used only for local comparison, not redistributed.",
+        "references": [
+          {
+            "label": "CEMS project record — 2009, four storeys and atrium",
+            "url": "https://architizer.com/projects/north-charleston-city-hall/"
+          },
+          {
+            "label": "City of North Charleston 2023 financial report — September 2009 opening, 167,000 sq ft",
+            "url": "https://cms2.revize.com/revize/cityofnorthcharleston/Documents/Government/City%20Departments/Finance/2023-Annual-Comprehensive-Financial-Report-ACFR.pdf"
+          },
+          {
+            "label": "OSM civic building way 301403114",
+            "url": "https://www.openstreetmap.org/way/301403114"
+          },
+          {
+            "label": "Ryan Johnson / North Charleston side exterior, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:North_Charleston_City_Hall_(31039015332).jpg"
+          },
+          {
+            "label": "Ryan Johnson / North Charleston entrance exterior, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:North_Charleston_City_Hall_(31067978171).jpg"
+          }
+        ]
+      },
+      "notes": "Complete mapped building plan and orientation; all heights, facade openings and portico dimensions are photo estimates. City and CEMS floor-area scopes differ and are not treated as height evidence. Garage, seal, lettering, flags and landscaping omitted. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-north-charleston-city-hall.md",
+      "manifest": "/models/buildings/north-charleston-city-hall.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=north-charleston-city-hall",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=north-charleston-city-hall&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=north-charleston-city-hall&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=north-charleston-city-hall&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=north-charleston-city-hall&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=north-charleston-city-hall&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=north-charleston-city-hall&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "goose-creek-municipal-center",
+      "name": "Goose Creek Municipal Center (City Hall)",
+      "kind": "building",
+      "location": "Goose Creek, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of Building B / City Hall at the Marguerite H. Brown Municipal Center: broad brick gable, smaller relief gable, recessed tall openings, raised rear clerestory and mapped forecourt fountain.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/goose-creek-municipal-center/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs goose-creek-municipal-center",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/goose-creek-municipal-center/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver in 2026. Mapped Building B / City Hall, south canopy and fountain © OpenStreetMap contributors, ODbL 1.0. City aerial DJI_0043 and WCSC exterior photo: all rights reserved, reference-only, not redistributed, not traced. Both show the intended brick-gabled City Hall; political campaign interiors rejected. No external mesh, scan, texture or logo.",
+        "references": [
+          {
+            "label": "City government page — current exterior aerial and identity",
+            "url": "https://www.goosecreeksc.gov/government"
+          },
+          {
+            "label": "City government exterior aerial — all rights reserved, reference-only",
+            "url": "https://www.goosecreeksc.gov/sites/default/files/PIO/DJI_0043.JPG"
+          },
+          {
+            "label": "WCSC 2022 — exterior City Hall photograph, all rights reserved, reference-only",
+            "url": "https://www.live5news.com/2022/09/14/goose-creek-budget-increase-by-20-2023-mayor-says/"
+          },
+          {
+            "label": "City mayor/council — Building B address",
+            "url": "https://www.goosecreeksc.gov/government/mayor-and-city-council"
+          },
+          {
+            "label": "City history — Municipal Center in 1999",
+            "url": "https://tourism.berkeleycountysc.gov/wp-content/uploads/docs/Celebrating%20our%20Future%20City%20of%20Goose%20Creek%2050th%20Anniversary.pdf"
+          },
+          {
+            "label": "OSM Building B, government building and unit B",
+            "url": "https://www.openstreetmap.org/way/1538475633"
+          },
+          {
+            "label": "OSM south canopy",
+            "url": "https://www.openstreetmap.org/way/1538475634"
+          },
+          {
+            "label": "OSM separate forecourt fountain",
+            "url": "https://www.openstreetmap.org/way/1538475656"
+          }
+        ]
+      },
+      "notes": "OSM address/unit confirms Building B; other campus buildings and connecting canopy excluded. Footprint, south canopy and fountain mapped; heights, roof planes, facade detail and fountain furniture estimated. Two confirmed city/press exterior photos are all rights reserved, reference-only and not redistributed, under coordinator-approved relaxed photo sourcing. No campaign-event interiors used. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-goose-creek-municipal-center.md",
+      "manifest": "/models/buildings/goose-creek-municipal-center.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=goose-creek-municipal-center",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=detail"
+          }
+        ]
+      },
+      "city": "Goose Creek",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

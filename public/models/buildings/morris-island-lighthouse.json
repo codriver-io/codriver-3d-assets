@@ -1,0 +1,65 @@
+{
+  "id": "morris-island-lighthouse",
+  "name": "Morris Island Lighthouse",
+  "kind": "building",
+  "origin": [
+    -79.8836273,
+    32.6953667
+  ],
+  "height": 49.07,
+  "padM": 18,
+  "frontageBearing": 190,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is an estimated calm water surface at the cofferdam; no absolute sea-level, DEM, tide or Mercator scale. Only above-water foundation is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current 1876 tower, weathered brown/white bands and open lantern/gallery. Overall 49.07 m chosen as an estimate from the published 161 ft figure; NRHP summary instead gives 150 ft and an inconsistent base diameter. Cofferdam 72 ft / 21.95 m sourced from the foundation contractor. Shaft base 10 m and top 5.08 m, band heights, lantern and exposed foundation are photographic estimates. OSM tower way 1528926180 is narrower than the photographed exterior; footprint retained without pretending it is a survey. No surrounding sea mesh or submerged piles.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/morris-island-lighthouse-near.glb",
+      "bytes": 93940,
+      "triangles": 5504,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -11.039999961853027,
+          -2.3841858265427618e-8,
+          -11.0600004196167
+        ],
+        "max": [
+          11.039999961853027,
+          49.06999969482422,
+          11.0600004196167
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/morris-island-lighthouse-far.glb",
+      "bytes": 55764,
+      "triangles": 2872,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.972999572753906,
+          0,
+          -10.972999572753906
+        ],
+        "max": [
+          10.972999572753906,
+          49.06999969482422,
+          10.972999572753906
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
