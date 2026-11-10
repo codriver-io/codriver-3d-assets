@@ -18,7 +18,7 @@ export function create({detail='near'}={}) {
   const a=PIERS[j-1],c=PIERS[j],mid=(a+c)/2,move=a===HINGES[0];
   if(move){
    for(const sg of [-1,1]){const lo=sg<0?a:mid+.03,hi=sg<0?mid-.03:c;
-    shapePrism('steel',[[lo,height(lo)-.20],[hi,height(hi)-.20],[hi,height(hi)-1.05],[lo,height(lo)-2.15]],2*HALF);
+    shapePrism('steel',[[lo,height(lo)-.20],[hi,height(hi)-.20],[hi,height(hi)-(sg<0?1.05:2.15)],[lo,height(lo)-(sg<0?2.15:1.05)]],2*HALF);
    }
   }else {
    const lo=a+1.4,hi=c-1.4,n=near?14:7,pts=[[a,height(a)-.18],[c,height(c)-.18],[c,1.2]];

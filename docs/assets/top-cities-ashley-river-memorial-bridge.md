@@ -38,9 +38,9 @@ No moving mechanisms, bascule animation, stairs, detailed electrical gear, coats
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 23558 | 8 | 311984 |
-| far | 13210 | 7 | 189264 |
+| near | 23558 | 8 | 311980 |
+| far | 13210 | 7 | 189260 |
 
-Mechanical QA: no flags. Exported near/far contact sheet inspected against both reference photographs: four lantern houses, shallow arches and the single bascule retained. One refinement removed hidden support/roof faces and stopped balustrades at house walls. Evidence: `tmp/landmark-qa/final/ashley-river-memorial-bridge.jpg`; metrics: `tmp/landmark-qa/ashley-river-memorial-bridge-metrics.json`. Padded camera bounds are used so the long bridge fits the oblique tiles.
+Mechanical QA: no flags. Final structural review mirrored the closed bascule leaf taper at the opposing hinge; both halves retain full bearing contact. Exported near/far contact sheet inspected against both reference photographs: four lantern houses, shallow arches and the single bascule retained. One refinement removed hidden support/roof faces and stopped balustrades at house walls. Evidence: `tmp/landmark-qa/final/ashley-river-memorial-bridge.jpg`; metrics: `tmp/landmark-qa/ashley-river-memorial-bridge-metrics.json`. Padded camera bounds are used so the long bridge fits the oblique tiles.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Human contributor/product permission remains a maintainer process; the agent accepted no legal terms.

@@ -21,7 +21,7 @@
   "assets": {
     "near": {
       "url": "/models/bridges/ashley-river-memorial-bridge-near.glb",
-      "bytes": 311984,
+      "bytes": 311980,
       "triangles": 23558,
       "drawCalls": 8,
       "bounds": {
@@ -39,7 +39,7 @@
     },
     "far": {
       "url": "/models/bridges/ashley-river-memorial-bridge-far.glb",
-      "bytes": 189264,
+      "bytes": 189260,
       "triangles": 13210,
       "drawCalls": 7,
       "bounds": {
