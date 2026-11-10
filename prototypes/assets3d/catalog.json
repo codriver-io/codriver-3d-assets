@@ -36989,6 +36989,89 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "arthur-ravenel-jr-bridge",
+      "name": "Arthur Ravenel Jr. Bridge",
+      "kind": "bridge",
+      "location": "Charleston / Mount Pleasant, South Carolina",
+      "status": "ready",
+      "description": "Two hollow diamond towers, 128 stays, a wide eight-lane deck, south walking path and rock protection islands on the 2005 Cooper River crossing.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs arthur-ravenel-jr-bridge",
+        "provenance": "Original procedural geometry authored 2026-11-09. Alignment © OpenStreetMap contributors, ODbL 1.0, ways 927255592, 927255594, 927255593, 50054023, 38968007, 927255595 and outline 1494459861. Reference-only photographs: DXR CC BY-SA 4.0; w_lemay CC0 1.0; file-page licences and depicted bridge verified. No photographs, meshes, textures or lettering shipped. Contributor/product permission remains a human maintainer process; no terms accepted by agent.",
+        "references": [
+          {
+            "label": "TYLin design review and construction engineering: 1546 ft span, 574 ft diamond towers, 186 ft minimum navigation clearance",
+            "url": "https://www.tylin.com/work/projects/arthur-ravenel-jr-bridge"
+          },
+          {
+            "label": "OSM central northbound alignment",
+            "url": "https://www.openstreetmap.org/way/927255592"
+          },
+          {
+            "label": "OSM central southbound alignment",
+            "url": "https://www.openstreetmap.org/way/927255594"
+          },
+          {
+            "label": "DXR: west partial view, CC BY-SA 4.0 (2016)",
+            "url": "https://commons.wikimedia.org/wiki/File:Arthur_Ravenel_Jr_Bridge,_West_Partial_View_20160704_1.jpg"
+          },
+          {
+            "label": "w_lemay: Charleston panorama, CC0 1.0 (2019)",
+            "url": "https://commons.wikimedia.org/wiki/File:Arthur_Ravenel_Jr._Bridge,_Charleston,_SC.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js"
+      },
+      "notes": "Modelled 1440 m of the cable-stayed unit and supported high approaches. Main span and tower height sourced from TYLin; width, profile and component sections estimated. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-arthur-ravenel-jr-bridge.md",
+      "manifest": "/models/bridges/arthur-ravenel-jr-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=arthur-ravenel-jr-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
