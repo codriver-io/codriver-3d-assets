@@ -37218,6 +37218,93 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "goose-creek-municipal-center",
+      "name": "Goose Creek Municipal Center (City Hall)",
+      "kind": "building",
+      "location": "Goose Creek, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of Building B / City Hall at the Marguerite H. Brown Municipal Center: broad brick gable, smaller relief gable, recessed tall openings, raised rear clerestory and mapped forecourt fountain.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/goose-creek-municipal-center/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs goose-creek-municipal-center",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/goose-creek-municipal-center/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver in 2026. Mapped Building B / City Hall, south canopy and fountain © OpenStreetMap contributors, ODbL 1.0. City aerial DJI_0043 and WCSC exterior photo: all rights reserved, reference-only, not redistributed, not traced. Both show the intended brick-gabled City Hall; political campaign interiors rejected. No external mesh, scan, texture or logo.",
+        "references": [
+          {
+            "label": "City government page — current exterior aerial and identity",
+            "url": "https://www.goosecreeksc.gov/government"
+          },
+          {
+            "label": "City government exterior aerial — all rights reserved, reference-only",
+            "url": "https://www.goosecreeksc.gov/sites/default/files/PIO/DJI_0043.JPG"
+          },
+          {
+            "label": "WCSC 2022 — exterior City Hall photograph, all rights reserved, reference-only",
+            "url": "https://www.live5news.com/2022/09/14/goose-creek-budget-increase-by-20-2023-mayor-says/"
+          },
+          {
+            "label": "City mayor/council — Building B address",
+            "url": "https://www.goosecreeksc.gov/government/mayor-and-city-council"
+          },
+          {
+            "label": "City history — Municipal Center in 1999",
+            "url": "https://tourism.berkeleycountysc.gov/wp-content/uploads/docs/Celebrating%20our%20Future%20City%20of%20Goose%20Creek%2050th%20Anniversary.pdf"
+          },
+          {
+            "label": "OSM Building B, government building and unit B",
+            "url": "https://www.openstreetmap.org/way/1538475633"
+          },
+          {
+            "label": "OSM south canopy",
+            "url": "https://www.openstreetmap.org/way/1538475634"
+          },
+          {
+            "label": "OSM separate forecourt fountain",
+            "url": "https://www.openstreetmap.org/way/1538475656"
+          }
+        ]
+      },
+      "notes": "OSM address/unit confirms Building B; other campus buildings and connecting canopy excluded. Footprint, south canopy and fountain mapped; heights, roof planes, facade detail and fountain furniture estimated. Two confirmed city/press exterior photos are all rights reserved, reference-only and not redistributed, under coordinator-approved relaxed photo sourcing. No campaign-event interiors used. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-goose-creek-municipal-center.md",
+      "manifest": "/models/buildings/goose-creek-municipal-center.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=goose-creek-municipal-center",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=goose-creek-municipal-center&view=detail"
+          }
+        ]
+      },
+      "city": "Goose Creek",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

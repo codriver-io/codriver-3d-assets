@@ -1,0 +1,67 @@
+{
+  "id": "goose-creek-municipal-center",
+  "name": "Goose Creek Municipal Center (City Hall)",
+  "kind": "building",
+  "origin": [
+    -80.03619,
+    33.027974
+  ],
+  "height": 12.3,
+  "padM": 42,
+  "frontageBearing": 95.5,
+  "rotationDeg": -5.5,
+  "ownTolM": 0.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid City Hall foundation toe y=0; fountain basin shares the local site grade. No terrain, absolute altitude or Mercator scale. −5.5° geographic rotation baked once.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1999 municipal campus, Building B / City Hall at 519 North Goose Creek Blvd. Exact OSM government Building B outline plus south canopy; mapped separate fountain. Front brick gable and smaller relief gable, tall recessed openings and raised rear clerestory. Heights, roof profiles and facade bays are photo estimates from city aerial and WCSC exterior, all rights reserved and reference-only. Campus connecting colonnade, court/police buildings, lettering and flags omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/goose-creek-municipal-center-near.glb",
+      "bytes": 95820,
+      "triangles": 7306,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -19.25413703918457,
+          0,
+          -15.729445457458496
+        ],
+        "max": [
+          56.897918701171875,
+          12.300000190734863,
+          18.656631469726562
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/goose-creek-municipal-center-far.glb",
+      "bytes": 46944,
+      "triangles": 2590,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -19.25413703918457,
+          0,
+          -15.729445457458496
+        ],
+        "max": [
+          56.87031173706055,
+          12.300000190734863,
+          18.656631469726562
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/goose-creek-municipal-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
