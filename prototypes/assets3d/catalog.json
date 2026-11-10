@@ -36989,6 +36989,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-michaels-church-charleston",
+      "name": "St. Michael's Church",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "White Georgian church with a giant Tuscan portico, two tiers of arched nave windows, square vestibule tower and three diminishing octagonal steeple stages.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-michaels-church-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+        "provenance": "Original procedural geometry for Codriver, 2026-11-09. OSM way 39937176 outline and rotation © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry reference photographs CC BY 3.0; photographs reference-only, no pixels or meshes incorporated. Human contributor/legal acceptance is not asserted by this authoring record.",
+        "references": [
+          {
+            "label": "NPS identity, giant portico and 186-foot steeple",
+            "url": "https://www.nps.gov/places/st-michael-s-episcopal-church.htm"
+          },
+          {
+            "label": "NPS NHL nomination: 130 × 60 ft, 185 ft steeple, three diminishing octagons",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000704_text"
+          },
+          {
+            "label": "Mapped church footprint",
+            "url": "https://www.openstreetmap.org/way/39937176"
+          },
+          {
+            "label": "Brian Stansberry, exterior, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-michaels-episcopal-charleston-sc1.jpg"
+          },
+          {
+            "label": "Brian Stansberry, side and tower, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-michaels-episcopal-charleston-sc3.jpg"
+          },
+          {
+            "label": "Bell-ringing guild exterior reference, Warren LeMay",
+            "url": "https://www.nagcr.org/towers-and-bands/charleston-st-michael"
+          }
+        ]
+      },
+      "manifest": "/models/buildings/st-michaels-church-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-michaels-church-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Original procedural permanent exterior. NPS published heights differ: 185 versus 186 ft; adopted 56.7 m overall is estimated. Stage split, louvres, clocks and ornament are photographic estimates. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-michaels-church-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
