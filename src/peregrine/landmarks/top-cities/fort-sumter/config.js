@@ -1,7 +1,4 @@
-// STUB, not released. Replace every value from sourced references; the origin below is only approximate.
-export const SPEC = {
-  id: "fort-sumter", name: "Fort Sumter", kind: 'building', ready: false,
-  origin: [-79.8746, 32.7523], height: 1, padM: 10, frontageBearing: 0,
-};
-export const PALETTES = { light: {}, dark: {} };
-export const MANIFEST = { elevationDatum: '', attribution: '', note: '' };
+export const SPEC={id:'fort-sumter',name:'Fort Sumter',kind:'building',ready:true,
+ origin:[-79.87467,32.75234],height:24,padM:125,frontageBearing:225};
+export const PALETTES={light:{brick:'#8f7360',stone:'#bcb3a0',rock:'#86877b',ground:'#a5a48b',grass:'#7b8b61',battery:'#3c4449',metal:'#b7b8ae',roof:'#8c6f60'},dark:{brick:'#716b66',stone:'#8e9798',rock:'#63747d',ground:'#758584',grass:'#5a7567',battery:'#293c48',metal:'#91a6b0',roof:'#6c7479'}};
+export const MANIFEST={elevationDatum:'Local y=0 is the visual island waterline; courtyard at y=1.2 m, raised eastern earth fill at y=5.2 m. These are relative estimated site levels, not a tide or DEM datum. Rigid masonry and Battery Huger must remain fixed; no terrain or Mercator scale baked in.',attribution:'Original procedural geometry; mapped walls, island and Battery Huger © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',note:'Present-day ruined fort, not an 1861 three-tier reconstruction. OSM outer wall, island and Huger footprints; HABS SC-194 gives surviving wall about 15.5 ft above ground and 5 ft thick; NPS NRHP inventory gives Battery Huger 270 × 90 × 22 ft. Current OSM enclosure is larger than HABS approximate historic side lengths; retained mapped outline, no claim they agree. Variable ruin heights, exact casemate layouts, earth-fill level, flagpoles and parapet details estimated from photographs.'};

@@ -37234,6 +37234,98 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "fort-sumter",
+      "name": "Fort Sumter",
+      "kind": "building",
+      "location": "Charleston, South Carolina",
+      "status": "ready",
+      "description": "Present-day pentagonal brick sea fort with varied ruined curtain walls, open casemates, raised earth fill and dark Battery Huger across the parade.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/fort-sumter/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs fort-sumter",
+        "provenance": "Original procedural geometry, 2026-11-09. Wall, Battery Huger and island mapped from OpenStreetMap ways 1356508917, 36374994 and 12353668, ODbL 1.0. Methaz CC BY-SA 3.0 and Clynnwersch CC BY-SA 4.0 Commons photographs inspected for identity and licence, reference only. No photograph, texture, scan, imported mesh, flag or lettering shipped. No contributor terms accepted by agent.",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fort-sumter/geometry.js",
+        "references": [
+          {
+            "label": "NPS HABS SC-194: walls and casemates",
+            "url": "https://pubs.nps.gov/eTIC/EVER-GARI/FOSU_392_124634_0001_of_0006.pdf"
+          },
+          {
+            "label": "NPS National Register inventory: Battery Huger dimensions",
+            "url": "https://npgallery.nps.gov/pdfhost/docs/NRHP/Text/66000101.pdf"
+          },
+          {
+            "label": "NPS: present Battery Huger",
+            "url": "https://home.nps.gov/places/battery-huger.htm"
+          },
+          {
+            "label": "OSM current fort wall",
+            "url": "https://www.openstreetmap.org/way/1356508917"
+          },
+          {
+            "label": "OSM Battery Huger",
+            "url": "https://www.openstreetmap.org/way/36374994"
+          },
+          {
+            "label": "OSM island",
+            "url": "https://www.openstreetmap.org/way/12353668"
+          },
+          {
+            "label": "Methaz: aerial view, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fort_Sumter_Aerial_View.jpg"
+          },
+          {
+            "label": "Clynnwersch: harbor view, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Fort_Sumter_3.jpg"
+          }
+        ]
+      },
+      "notes": "Current ruined fort, not the original three-tier form. OSM outline and island; HABS wall thickness and surviving height; NPS Battery Huger dimensions. Relative site levels, individual wall heights, casemate layout and poles estimated. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-fort-sumter.md",
+      "manifest": "/models/buildings/fort-sumter.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=fort-sumter&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=fort-sumter&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=fort-sumter&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=fort-sumter&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=fort-sumter&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=fort-sumter&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=fort-sumter&view=detail"
+          },
+          {
+            "label": "Battery",
+            "url": "/asset-preview.html?asset=fort-sumter&view=battery"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright",
+      "integration": "Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
     }
   ]
 }
