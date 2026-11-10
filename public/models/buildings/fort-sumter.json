@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/fort-sumter-near.glb",
-      "bytes": 72596,
-      "triangles": 2588,
+      "bytes": 72916,
+      "triangles": 2598,
       "drawCalls": 8,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/fort-sumter-far.glb",
-      "bytes": 58124,
-      "triangles": 1884,
+      "bytes": 58368,
+      "triangles": 1894,
       "drawCalls": 8,
       "bounds": {
         "min": [

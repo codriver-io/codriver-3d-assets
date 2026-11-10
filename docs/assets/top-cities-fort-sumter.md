@@ -39,9 +39,9 @@ No 1861 upper tiers, lettering, flags, exact artillery collection, visitors, fer
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 2588 | 8 | 72596 |
-| far | 1884 | 8 | 58124 |
+| near | 2598 | 8 | 72916 |
+| far | 1894 | 8 | 58368 |
 
-Mechanical QA: no flags; far bounds equal near bounds. Final contact sheet inspected against the aerial: the pentagon, low uneven brick walls, surviving open casemates, raised earthwork and dark battery remain clear in both LODs. One visual refinement connected stairs, corrected the museum roof footprint and pit placement, and separated grassy island from parade. Hidden base caps and buried ruin partitions were removed instead of retaining layered faces. Evidence: `tmp/landmark-qa/final/fort-sumter.jpg`; metrics: `tmp/landmark-qa/fort-sumter-metrics.json`.
+Mechanical QA: no flags; far bounds equal near bounds. Final contact sheet inspected against the aerial: the pentagon, low uneven brick walls, surviving open casemates, raised earthwork and dark battery remain clear in both LODs. The first visual refinement connected stairs, corrected the museum roof footprint and pit placement, and separated grassy island from parade; the second replaced an invalid entrance cutout with a true wall notch. Positive and negative ray probes confirm the sally port and casemate openings remain clear, with intact lintels, in both LODs (`openings.test.mjs`). Hidden base caps and buried ruin partitions were removed instead of retaining layered faces. Evidence: `tmp/landmark-qa/final/fort-sumter.jpg`; metrics: `tmp/landmark-qa/fort-sumter-metrics.json`.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Human contributor/product permission remains a maintainer process; no legal terms accepted by the agent.

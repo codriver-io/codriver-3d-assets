@@ -39,7 +39,7 @@ export function create({detail='near'}={}) {
  // Pentagon curtain: current standing height varies; outer gun embrasures remain genuine holes.
  const heights=[5.3,6.0,3.6,4.7,2.7];
  for(let i=0;i<5;i++){
-  const f=frame(i),top=heights[i],sh=rect(0,1.2,f.L,top);
+  const f=frame(i),top=heights[i],gate=f.L*.52,sh=i===3?new THREE.Shape([[0,1.2],[gate-2,1.2],[gate-2,3.7],[gate+2,3.7],[gate+2,1.2],[f.L,1.2],[f.L,top],[0,top]].map(p=>new THREE.Vector2(...p))):rect(0,1.2,f.L,top);
   const count=Math.floor(f.L/6.8);
   for(let j=1;j<count;j++){
    const s=f.L*j/count;
@@ -47,8 +47,7 @@ export function create({detail='near'}={}) {
    if(top<3.5||j%3===0)continue;
    sh.holes.push(new THREE.Path([[s-.65,2],[s-.65,3.05],[s+.65,3.05],[s+.65,2]].map(p=>new THREE.Vector2(...p))));
   }
-  // Through sally port, cut to the ground rather than represented by a dark door panel.
-  if(i===3){const gate=f.L*.52;sh.holes.push(new THREE.Path([[gate-2,1.19],[gate-2,3.7],[gate+2,3.7],[gate+2,1.19]].map(p=>new THREE.Vector2(...p))));}
+  // The sally port is a notch in the outer contour: a hole extending beyond the polygon is invalid.
   edgeShape(i,sh,1.524);
  }
  // Preserved right-face gunrooms: segmental arches and vaulted open interior, roof material assigned to top faces only.
