@@ -37143,6 +37143,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "citadel-padgett-thomas-barracks",
+      "name": "Padgett-Thomas Barracks (The Citadel)",
+      "kind": "building",
+      "location": "The Citadel, 171 Moultrie Street, Charleston, South Carolina",
+      "status": "ready",
+      "description": "The white crenellated 2004 barracks quadrangle, with its 109-foot central clock tower, open east sally port, round corner turrets and tiers of courtyard arcades.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs citadel-padgett-thomas-barracks",
+        "provenance": "Original procedural geometry. Geographic outline from OSM relation 6897174, outer way 38733112 and inner way 38733113, © OpenStreetMap contributors, ODbL 1.0. Tower height and 2004 replacement identity from The Citadel owner. Two verified photographs by CocoaBeachBoy released to the public domain on their Commons file pages, used only for local comparison; none shipped. No mesh, scan, texture, logo or lettering. No legal acceptance is asserted by this agent.",
+        "references": [
+          {
+            "label": "The Citadel owner: current 2004 barracks and 109 ft / eight-storey tower",
+            "url": "https://www.citadel.edu/our-campus/2023/05/padgett-thomas-barracks/"
+          },
+          {
+            "label": "The Citadel brand encyclopedia: replacement building identity",
+            "url": "https://brand.citadel.edu/encyclopedia/padgett-thomas-barracks/"
+          },
+          {
+            "label": "OSM multipolygon 6897174",
+            "url": "https://www.openstreetmap.org/relation/6897174"
+          },
+          {
+            "label": "PT Barracks · CocoaBeachBoy, 2007 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:PT_Barracks.JPG"
+          },
+          {
+            "label": "Inside PT Barracks · CocoaBeachBoy, 2007 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Inside_PT_Barracks.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js"
+      },
+      "notes": "Sourced: current 2004 replacement, 109 ft (33.2232 m) tower, four storeys and OSM outer/courtyard rings. Estimated: 92.6 × 62.6 m simplified wing rectangle, 72.6 × 42.6 m clear courtyard, 14.6 m wing roofs, 17 m corner turret crowns, arcade rhythm, checker paving and clock. Open quadrangle and sally port persist in far. No host integration tested.",
+      "documentation": "docs/assets/top-cities-citadel-padgett-thomas-barracks.md",
+      "manifest": "/models/buildings/citadel-padgett-thomas-barracks.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=detail"
+          },
+          {
+            "label": "Courtyard",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=courtyard"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

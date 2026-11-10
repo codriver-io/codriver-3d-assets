@@ -1,0 +1,65 @@
+{
+  "id": "citadel-padgett-thomas-barracks",
+  "name": "Padgett-Thomas Barracks (The Citadel)",
+  "kind": "building",
+  "origin": [
+    -79.961352,
+    32.79697
+  ],
+  "height": 33.2232,
+  "padM": 66,
+  "frontageBearing": 65.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local y=0 is the quadrangle paving / exterior footing plane; no terrain, sea-level altitude or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current 2004 replacement, not the demolished 1922 building. Tower 109 ft / 33.2232 m from The Citadel owner; plan from OSM relation 6897174 (outer way 38733112, courtyard hole 38733113). Wing heights, arcades, turret sizes, crenellations, sally-port arch, clock and checker paving are photographic estimates. Tower height excludes flagpole and flags. Geographic rotation is baked into the mesh once; the courtyard remains open in both LODs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/citadel-padgett-thomas-barracks-near.glb",
+      "bytes": 562872,
+      "triangles": 34082,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -49.63289260864258,
+          0,
+          -57.0272216796875
+        ],
+        "max": [
+          49.63289260864258,
+          33.223201751708984,
+          57.0272216796875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/citadel-padgett-thomas-barracks-far.glb",
+      "bytes": 180580,
+      "triangles": 10616,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -49.63289260864258,
+          0,
+          -57.0272216796875
+        ],
+        "max": [
+          49.63289260864258,
+          33.223201751708984,
+          57.0272216796875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
