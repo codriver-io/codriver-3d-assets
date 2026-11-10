@@ -1,0 +1,65 @@
+{
+  "id": "rainbow-row-charleston",
+  "name": "Rainbow Row",
+  "kind": "building",
+  "origin": [
+    -79.927339,
+    32.775777
+  ],
+  "height": 17.8,
+  "padM": 65,
+  "frontageBearing": 96.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local y=0 is East Bay Street doorstep grade; no terrain, absolute altitude or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Thirteen front houses at 83–107 East Bay Street; 97/99/101 are subdivisions of OSM combined way 1356814318. Frontage intervals and OSM ridge tags are sourced mapper data (not survey); visible levels, Dutch gable at 95, pastel sequence, roof profiles, shutters and door openings estimated from verified Commons photographs. Rear annexes and 79–81 are excluded. Rotation from the mapped street line is baked into metres east/up/south once.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rainbow-row-charleston-near.glb",
+      "bytes": 200648,
+      "triangles": 11899,
+      "drawCalls": 12,
+      "bounds": {
+        "min": [
+          -8.0886869430542,
+          -0.03999999910593033,
+          -53.057044982910156
+        ],
+        "max": [
+          15.974597930908203,
+          17.700000762939453,
+          52.63219451904297
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rainbow-row-charleston-far.glb",
+      "bytes": 131272,
+      "triangles": 7225,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -8.0886869430542,
+          -0.03999999910593033,
+          -53.057044982910156
+        ],
+        "max": [
+          15.974597930908203,
+          17.700000762939453,
+          52.63219451904297
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

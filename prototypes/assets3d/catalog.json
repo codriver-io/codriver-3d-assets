@@ -37670,6 +37670,326 @@
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright",
       "integration": "Static capture verification does not certify driving, night theme, lifecycle transitions, terrain replacement or hardware performance."
+    },
+    {
+      "id": "morris-island-lighthouse",
+      "name": "Morris Island Lighthouse",
+      "kind": "building",
+      "location": "Morris Island, Charleston Harbor, Folly Beach, South Carolina",
+      "status": "ready",
+      "description": "The surviving 1876 tapering brick lighthouse, with faded brown and white daymark bands, corbelled galleries and an open lantern above its circular sheet-pile cofferdam.",
+      "manifest": "/models/buildings/morris-island-lighthouse.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs morris-island-lighthouse",
+        "provenance": "Original procedural geometry. Geographic control and tower/cofferdam rings from OSM ways 1528926180 and 926973307, © OpenStreetMap contributors, ODbL 1.0. Photographic comparison only: AlpineWhiteMavic CC BY-SA 4.0; Niagara CC BY-SA 3.0; neither photo is shipped. No third-party mesh, scan, texture, logo or lettering. Separate contributor/product acceptance is a maintainer responsibility; no agent acceptance is claimed.",
+        "references": [
+          {
+            "label": "SC Department of Archives and History: 1876 tower, NRHP summary (height conflict)",
+            "url": "https://www.nationalregister.sc.gov/charleston/S10817710119/index.htm"
+          },
+          {
+            "label": "Taylor Marine: foundation stabilization, 72 ft cofferdam",
+            "url": "https://taylormarineconstruction.com/wp-content/uploads/2019/04/the-morris-island-lighthouse-phase-one-foundation-stabilization-project.pdf"
+          },
+          {
+            "label": "Save the Light: history and current preservation",
+            "url": "https://savethelight.org/about/lighthouse-history/"
+          },
+          {
+            "label": "OSM tower 1528926180",
+            "url": "https://www.openstreetmap.org/way/1528926180"
+          },
+          {
+            "label": "Morris Island Light · AlpineWhiteMavic, 2018 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Morris_Island_Light.jpg"
+          },
+          {
+            "label": "Morris Island Light, April 2014 · Niagara (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Morris_Island_Light,_April_2014.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/morris-island-lighthouse/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=morris-island-lighthouse&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=morris-island-lighthouse&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: 1876 identity and 21.95 m modern cofferdam diameter. Estimated: 49.07 m overall height (published heights conflict), 10 m lower shaft diameter, 5.08 m upper shaft, band levels, lantern and waterline exposure. OSM tower ring is narrower than the photographed shaft. No submerged piles or sea mesh; host modes not tested.",
+      "documentation": "docs/assets/top-cities-morris-island-lighthouse.md",
+      "city": "Folly Beach",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rainbow-row-charleston",
+      "name": "Rainbow Row",
+      "kind": "building",
+      "location": "83–107 East Bay Street, Charleston, South Carolina",
+      "status": "ready",
+      "description": "Thirteen pastel Georgian row-house fronts, with unequal widths and rooflines, repeated shuttered sash windows, chimney stacks and the green Dutch gable.",
+      "manifest": "/models/buildings/rainbow-row-charleston.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs rainbow-row-charleston",
+        "provenance": "Original procedural geometry. Main front-house footprint intervals and ridge heights from OpenStreetMap, © OpenStreetMap contributors, ODbL 1.0; address grouping from Charleston architectural inventory. Photos by Ymblanter, CC BY-SA 4.0, verified as East Bay Street Rainbow Row and used only for local comparison; none shipped. No third-party mesh, scan, texture, logo or lettering. No legal acceptance is asserted by this agent.",
+        "references": [
+          {
+            "label": "City of Charleston, historic resources survey: shared walls and Georgian/Federal row houses",
+            "url": "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Agenda/_03112026-10738"
+          },
+          {
+            "label": "City architectural inventory: East Bay addresses and historical names",
+            "url": "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Agenda/_02262026-10733"
+          },
+          {
+            "label": "OSM combined 97–101 main footprint",
+            "url": "https://www.openstreetmap.org/way/1356814318"
+          },
+          {
+            "label": "Rainbow Row front · Ymblanter, 2017 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rainbow_Row_front.jpg"
+          },
+          {
+            "label": "Rainbow Row from south side · Ymblanter, 2017 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rainbow_Row_from_south_side.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=rainbow-row-charleston&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: OSM main frontage positions, 11 footprint rings and mapper ridge tags 11–17 m; 97–101 is one mapped building, subdivided into three house fronts. Estimated: 97 raised to 16 m based on the tall lavender facade in the reference, 99/101 retain 13 m ridges, colors, visible storeys, opening sizes and rear block depths. Main front blocks only, excluding 79–81 and rear annexes. Cityscape and Full 3D world not tested.",
+      "documentation": "docs/assets/top-cities-rainbow-row-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "citadel-padgett-thomas-barracks",
+      "name": "Padgett-Thomas Barracks (The Citadel)",
+      "kind": "building",
+      "location": "The Citadel, 171 Moultrie Street, Charleston, South Carolina",
+      "status": "ready",
+      "description": "The white crenellated 2004 barracks quadrangle, with its 109-foot central clock tower, open east sally port, round corner turrets and tiers of courtyard arcades.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs citadel-padgett-thomas-barracks",
+        "provenance": "Original procedural geometry. Geographic outline from OSM relation 6897174, outer way 38733112 and inner way 38733113, © OpenStreetMap contributors, ODbL 1.0. Tower height and 2004 replacement identity from The Citadel owner. Two verified photographs by CocoaBeachBoy released to the public domain on their Commons file pages, used only for local comparison; none shipped. No mesh, scan, texture, logo or lettering. No legal acceptance is asserted by this agent.",
+        "references": [
+          {
+            "label": "The Citadel owner: current 2004 barracks and 109 ft / eight-storey tower",
+            "url": "https://www.citadel.edu/our-campus/2023/05/padgett-thomas-barracks/"
+          },
+          {
+            "label": "The Citadel brand encyclopedia: replacement building identity",
+            "url": "https://brand.citadel.edu/encyclopedia/padgett-thomas-barracks/"
+          },
+          {
+            "label": "OSM multipolygon 6897174",
+            "url": "https://www.openstreetmap.org/relation/6897174"
+          },
+          {
+            "label": "PT Barracks · CocoaBeachBoy, 2007 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:PT_Barracks.JPG"
+          },
+          {
+            "label": "Inside PT Barracks · CocoaBeachBoy, 2007 (public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Inside_PT_Barracks.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/citadel-padgett-thomas-barracks/geometry.js"
+      },
+      "notes": "Sourced: current 2004 replacement, 109 ft (33.2232 m) tower, four storeys and OSM outer/courtyard rings. Estimated: 92.6 × 62.6 m simplified wing rectangle, 72.6 × 42.6 m clear courtyard, 14.6 m wing roofs, 17 m corner turret crowns, arcade rhythm, checker paving and clock. Open quadrangle and sally port persist in far. No host integration tested.",
+      "documentation": "docs/assets/top-cities-citadel-padgett-thomas-barracks.md",
+      "manifest": "/models/buildings/citadel-padgett-thomas-barracks.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=detail"
+          },
+          {
+            "label": "Courtyard",
+            "url": "/asset-preview.html?asset=citadel-padgett-thomas-barracks&view=courtyard"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "charleston-international-airport-terminal",
+      "name": "Charleston International Airport terminal",
+      "kind": "building",
+      "location": "Charleston International Airport, North Charleston, South Carolina",
+      "status": "ready",
+      "description": "The redeveloped glass-fronted terminal with its central dome, two unequal concourse arms, raised roof monitors, connected curb canopies and supported boarding corridors.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs charleston-international-airport-terminal",
+        "provenance": "Original procedural geometry from current OSM terminal/canopy outlines and boarding-path controls, © OpenStreetMap contributors, ODbL 1.0. Redevelopment identity and Central Hall height from designer Fentress Architects; post-2022 Concourse A identity from owner. Verified Commons photos by AutoRentals (2019, CC BY-SA 4.0) and Edward Russell (2017, CC BY 2.0) are local comparison only; no photographs, scans, third-party meshes, textures, logos or lettering shipped. No contributor/product acceptance is asserted by an agent.",
+        "references": [
+          {
+            "label": "Fentress Architects completion release: 2016, 25 ft Central Hall and dome",
+            "url": "https://www.aviationpros.com/airport-business/airport-infrastructure-operations/press-release/12265550/fentress-architects-charleston-international-airport-expansion-completed"
+          },
+          {
+            "label": "Structural engineer MMSA: 2016 completion and two-concourse redevelopment",
+            "url": "https://www.mmsainc.com/portfolio/charleston-international-airport-terminal-redevelopment-and-improvement-program-trip/"
+          },
+          {
+            "label": "Airport owner: Concourse A capacity expanded in 2022",
+            "url": "https://iflychs.com/chs-expands-gate-capacity/"
+          },
+          {
+            "label": "Airport operator: terminal map",
+            "url": "https://iflychs.com/passengers/terminal-map/"
+          },
+          {
+            "label": "OSM main terminal way 35209624",
+            "url": "https://www.openstreetmap.org/way/35209624"
+          },
+          {
+            "label": "Front of Charleston Airport · AutoRentals, 2019 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Front_of_Charleston_Airport_AutoRentals.jpg"
+          },
+          {
+            "label": "CHS concourse A interior · Edward Russell, 2017 (CC BY 2.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:CHS_concourse_A_interior_(32241690883).jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js"
+      },
+      "notes": "Sourced: designer 25 ft / 7.62 m Central Hall, 2016 redevelopment and owner 2022 Concourse A gate expansion; OSM terminal/canopy footprint and seventeen boarding corridor paths. Estimated: apron datum, passenger floor +3.6 m, dome rise 5.5 m, roof monitor dimensions, facade cadence, canopies, boarding corridor sizes/supports. Control tower, parking, cargo, aircraft, logos/letters and future construction omitted. Cityscape and Full 3D world not tested.",
+      "documentation": "docs/assets/top-cities-charleston-international-airport-terminal.md",
+      "manifest": "/models/buildings/charleston-international-airport-terminal.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=detail"
+          },
+          {
+            "label": "Concourse",
+            "url": "/asset-preview.html?asset=charleston-international-airport-terminal&view=concourse"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

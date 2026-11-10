@@ -1,2 +1,4 @@
-// STUB, not released.
-export const VIEWS = {};
+export const VIEWS = {
+ overview:[[55,35,65],[0,24,0]], facade:[[0,24,80],[0,24,0]], back:[[0,28,-80],[0,25,0]],
+ roof:[[12,78,15],[0,25,0]], street:[[0,2.8,64],[0,23,0]], detail:[[13,47,18],[0,43,0]],
+};

@@ -1,0 +1,65 @@
+{
+  "id": "charleston-international-airport-terminal",
+  "name": "Charleston International Airport terminal",
+  "kind": "building",
+  "origin": [
+    -80.03695,
+    32.88463
+  ],
+  "height": 16.72,
+  "padM": 210,
+  "frontageBearing": 188,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is an estimated apron/foundation plane. Terminal curb and passenger floor are estimated at +3.6 m; no DEM, absolute altitude, terrain berm, sea level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current terminal identified by the 2016 redevelopment, two concourses and central glass dome; owner confirms added Concourse A gates in 2022. Mapped main terminal way 35209624, six canopy roofs and seventeen straight boarding-path ways retained. Designer sources the 25 ft / 7.62 m Central Hall height; floor datum, facade grids, roof monitors, 5.5 m dome rise, canopy heights, jet-bridge dimensions and foundations estimated. No airport/airline lettering, logo, aircraft, control tower, cargo terminal, parking garage or future construction block.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/charleston-international-airport-terminal-near.glb",
+      "bytes": 291796,
+      "triangles": 17601,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -151.340087890625,
+          0,
+          -201.0838165283203
+        ],
+        "max": [
+          154.14559936523438,
+          16.719999313354492,
+          120.73295593261719
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/charleston-international-airport-terminal-far.glb",
+      "bytes": 132424,
+      "triangles": 8033,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -151.340087890625,
+          0,
+          -201.0838165283203
+        ],
+        "max": [
+          154.14559936523438,
+          16.719999313354492,
+          120.73295593261719
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/charleston-international-airport-terminal/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
