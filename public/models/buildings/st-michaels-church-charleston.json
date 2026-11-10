@@ -170,7 +170,7 @@
   "assets": {
     "near": {
       "url": "/models/buildings/st-michaels-church-charleston-near.glb",
-      "bytes": 134512,
+      "bytes": 134784,
       "triangles": 8897,
       "drawCalls": 5,
       "bounds": {
@@ -188,7 +188,7 @@
     },
     "far": {
       "url": "/models/buildings/st-michaels-church-charleston-far.glb",
-      "bytes": 79292,
+      "bytes": 79640,
       "triangles": 4786,
       "drawCalls": 5,
       "bounds": {

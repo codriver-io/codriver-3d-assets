@@ -35,10 +35,12 @@ Cityscape: **not tested**. Full 3D world: **not tested**. Standalone export insp
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 8897 | 5 | 134512 |
-| far | 4786 | 5 | 79292 |
+| near | 8897 | 5 | 134784 |
+| far | 4786 | 5 | 79640 |
 
 Deterministic QA: no flags, zero back-face hits, no layered/coplanar faces, no below-grade members or unsupported member candidates. Report: `tmp/charleston-3/michael-metrics.json`. Final exported contact sheet: `tmp/charleston-3/sheets/final/st-michaels-church-charleston.jpg`; all eight tiles inspected together against the full guild exterior reference. Near/far preserve the complete silhouette, portico columns, separate window rhythm and open lantern. Two look rounds used; padded scratch bounds correct the shared sheet tool’s tall-asset framing. Fine facade rustication and pediment oculus are omitted. Independent coordinator review remains pending.
 
 
 Mapped tower part 1389398216 carries an unsurveyed 50 m tag; it is not used in place of the NPS 185/186 ft descriptions. Exact tower and porch rings are retained for provider replacement handoff.
+
+Final normal correction: pediment vertices are split at sharp roof edges, matching the corrected temple/church primitive used for the other assets. Bounds and triangle counts are unchanged; final sheet and GLBs were refreshed, and independent coordinator review remains pending.
