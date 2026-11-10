@@ -21,8 +21,8 @@
   "assets": {
     "near": {
       "url": "/models/buildings/uss-yorktown-cv10-near.glb",
-      "bytes": 61264,
-      "triangles": 4388,
+      "bytes": 65152,
+      "triangles": 4724,
       "drawCalls": 7,
       "bounds": {
         "min": [
@@ -39,8 +39,8 @@
     },
     "far": {
       "url": "/models/buildings/uss-yorktown-cv10-far.glb",
-      "bytes": 48740,
-      "triangles": 2902,
+      "bytes": 51528,
+      "triangles": 3126,
       "drawCalls": 7,
       "bounds": {
         "min": [

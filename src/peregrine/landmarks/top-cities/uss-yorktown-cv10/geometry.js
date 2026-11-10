@@ -77,7 +77,7 @@ export function create({detail='near'}={}) {
  // Generic unmarked static aircraft silhouettes: original geometry, resting on small landing wheels.
  const planes=[[-7,-96],[-6,-68],[10,56],[10,85],[-4,108],[-14,40],[-17,12]];
  for(const [x,z] of planes){
-  for(const dx of [-1,1])box('dark',x+dx,17.35,z+1,.30,.7,.55);
+  for(const dx of [-1,1]){box('dark',x+dx,17.35,z+1,.30,.7,.55);tube('dark',[x+dx,17.6,z+1],[x+dx*.5,18.2,z+.8],.10,near?6:4);}
   const body=new THREE.SphereGeometry(1,near?12:8,near?8:5);body.scale(.65,.65,3.7);body.translate(x,18.2,z);b.put(body,'aircraft');
   prism('aircraft',[[x-.25,z-2],[x-5.6,z+1.6],[x-5.6,z+2.4],[x,z+1.4],[x+5.6,z+2.4],[x+5.6,z+1.6],[x+.25,z-2]],18.1,18.35);
   box('aircraft',x,19.0,z+2.7,.18,2.2,1.5);

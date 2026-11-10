@@ -35,9 +35,9 @@ No hull numerals, lettering, ensigns, insignia, flight-deck exhibit labels, gang
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| near | 4388 | 7 | 61264 |
-| far | 2902 | 7 | 48740 |
+| near | 4724 | 7 | 65152 |
+| far | 3126 | 7 | 51528 |
 
-Mechanical QA: no flags. Near/far contact sheet inspected: retained angled deck, recognizable starboard island/mast, individual hangar bays, flared bow and aircraft silhouettes. One refinement cut platform faces around the island core and tuned the muted blue-gray hull. The painted flight deck uses the explicit `deckPaint` material semantic; thin paint markings are intentional surface markings handled by the checker’s paint exception. Evidence: `tmp/landmark-qa/final/uss-yorktown-cv10.jpg`; metrics: `tmp/landmark-qa/uss-yorktown-cv10-metrics.json`. Padded framing keeps the full hull and mast visible.
+Mechanical QA: no flags. Near/far contact sheet inspected: retained angled deck, recognizable starboard island/mast, individual hangar bays, flared bow and aircraft silhouettes. The first refinement cut platform faces around the island core and tuned the muted blue-gray hull; the second added landing struts connecting every aircraft wheel to its body in both LODs. The painted flight deck uses the explicit `deckPaint` material semantic; thin paint markings are intentional surface markings handled by the checker’s paint exception. Evidence: `tmp/landmark-qa/final/uss-yorktown-cv10.jpg`; metrics: `tmp/landmark-qa/uss-yorktown-cv10-metrics.json`. Padded framing keeps the full hull and mast visible.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Human contributor/product permission remains a maintainer process; no legal terms accepted by the agent.
