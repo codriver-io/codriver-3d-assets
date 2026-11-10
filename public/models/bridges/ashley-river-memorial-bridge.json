@@ -17,7 +17,7 @@
   },
   "elevationDatum": "Local y=0 is the visual waterline. Deck height 7 m at the closed bascule, end decks 4.8 m: photographic estimates. No absolute elevation, terrain or Mercator scale baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "Current 1926 Ashley River Memorial Bridge, southbound US 17 only; adjacent T. Allen Legare Bridge excluded. OSM mapped length 528.1 m, bascule line segment 43.22 m; model hinge separation 48 m estimated including bearing overlap. Four Mediterranean Revival tender houses with open octagonal lanterns; shallow concrete arches and later pier reinforcements. All vertical dimensions and ornamental sections photo-estimated; bridge is shown closed, without animation or mechanical interiors.",
+  "note": "Current 1926 Ashley River Memorial Bridge, southbound US 17 only; adjacent T. Allen Legare Bridge excluded. OSM mapped length 528.1 m, bascule line segment 43.22 m; model hinge separation 53.3 m from mapped pier centres, interpreted as hinge supports. Four Mediterranean Revival tender houses with open octagonal lanterns; shallow concrete arches and later pier reinforcements. All vertical dimensions and ornamental sections photo-estimated; bridge is shown closed, without animation or mechanical interiors.",
   "assets": {
     "near": {
       "url": "/models/bridges/ashley-river-memorial-bridge-near.glb",
