@@ -1,0 +1,196 @@
+{
+  "id": "us-custom-house-charleston",
+  "name": "United States Custom House",
+  "kind": "building",
+  "origin": [
+    -79.926472,
+    32.780822
+  ],
+  "height": 23,
+  "padM": 44,
+  "frontageBearing": 263.36,
+  "rotation": 0.11588986233242347,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -79.9261878,
+          32.7809571
+        ],
+        [
+          -79.9261865,
+          32.7809474
+        ],
+        [
+          -79.9261797,
+          32.7808981
+        ],
+        [
+          -79.9261673,
+          32.7808073
+        ],
+        [
+          -79.9261613,
+          32.7807635
+        ],
+        [
+          -79.9261592,
+          32.7807484
+        ],
+        [
+          -79.9263373,
+          32.7807311
+        ],
+        [
+          -79.9263271,
+          32.7806567
+        ],
+        [
+          -79.9265747,
+          32.7806326
+        ],
+        [
+          -79.9265849,
+          32.780707
+        ],
+        [
+          -79.9267569,
+          32.7806903
+        ],
+        [
+          -79.9267592,
+          32.780707
+        ],
+        [
+          -79.9267647,
+          32.7807473
+        ],
+        [
+          -79.9267777,
+          32.7808413
+        ],
+        [
+          -79.9267829,
+          32.7808795
+        ],
+        [
+          -79.9267854,
+          32.7808976
+        ],
+        [
+          -79.9267565,
+          32.7809004
+        ],
+        [
+          -79.926703,
+          32.7809056
+        ],
+        [
+          -79.9266594,
+          32.7809099
+        ],
+        [
+          -79.9266107,
+          32.7809146
+        ],
+        [
+          -79.9266174,
+          32.7809638
+        ],
+        [
+          -79.9266207,
+          32.7809878
+        ],
+        [
+          -79.9264969,
+          32.7809998
+        ],
+        [
+          -79.9263712,
+          32.781012
+        ],
+        [
+          -79.9263614,
+          32.7809403
+        ],
+        [
+          -79.9262371,
+          32.7809523
+        ],
+        [
+          -79.9261878,
+          32.7809571
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -79.9267854,
+        32.7808976
+      ],
+      [
+        -79.9267569,
+        32.7806903
+      ],
+      [
+        -79.9261878,
+        32.7809571
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at foot of the monumental stairs; rigid podium and body, no terrain, absolute altitude or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present completed 1879 Roman Corinthian Custom House, not Old Exchange, and not the unbuilt domed proposal. NPS nomination cites 249 × 152 ft historic cross-plan description; mapped masonry footprint is approximately 56.3 × 39.8 m, while the stairs extend the model to 76 m. Overall 23 m is an unsurveyed OSM/photo estimate. Column, podium, pediment and window sizes estimated. Geographic yaw baked once. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/us-custom-house-charleston-near.glb",
+      "bytes": 175728,
+      "triangles": 15230,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -39.886837005615234,
+          -0.0583220012485981,
+          -21.70210075378418
+        ],
+        "max": [
+          39.886837005615234,
+          23,
+          21.70210075378418
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/us-custom-house-charleston-far.glb",
+      "bytes": 104992,
+      "triangles": 8062,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -39.886837005615234,
+          -0.0583220012485981,
+          -21.70210075378418
+        ],
+        "max": [
+          39.886837005615234,
+          23,
+          21.70210075378418
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

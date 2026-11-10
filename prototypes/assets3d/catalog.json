@@ -37990,6 +37990,310 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-michaels-church-charleston",
+      "name": "St. Michael's Church",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "White Georgian church with a giant Tuscan portico, two tiers of arched nave windows, square vestibule tower and three diminishing octagonal steeple stages.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-michaels-church-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-michaels-church-charleston/geometry.js",
+        "provenance": "Original procedural geometry for Codriver, 2026-11-09. OSM way 39937176 outline and rotation © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry reference photographs CC BY 3.0; photographs reference-only, no pixels or meshes incorporated. Human contributor/legal acceptance is not asserted by this authoring record.",
+        "references": [
+          {
+            "label": "NPS identity, giant portico and 186-foot steeple",
+            "url": "https://www.nps.gov/places/st-michael-s-episcopal-church.htm"
+          },
+          {
+            "label": "NPS NHL nomination: 130 × 60 ft, 185 ft steeple, three diminishing octagons",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000704_text"
+          },
+          {
+            "label": "Mapped church footprint",
+            "url": "https://www.openstreetmap.org/way/39937176"
+          },
+          {
+            "label": "Brian Stansberry, exterior, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-michaels-episcopal-charleston-sc1.jpg"
+          },
+          {
+            "label": "Brian Stansberry, side and tower, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-michaels-episcopal-charleston-sc3.jpg"
+          },
+          {
+            "label": "Bell-ringing guild exterior reference, Warren LeMay",
+            "url": "https://www.nagcr.org/towers-and-bands/charleston-st-michael"
+          }
+        ]
+      },
+      "manifest": "/models/buildings/st-michaels-church-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-michaels-church-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-michaels-church-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Original procedural permanent exterior. NPS published heights differ: 185 versus 186 ft; adopted 56.7 m overall is estimated. Stage split, louvres, clocks and ornament are photographic estimates. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-michaels-church-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-philips-church-charleston",
+      "name": "St. Philip's Church",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Tan stucco Wren-Gibbs church with three four-column Tuscan porticoes, tall nave windows, square oculus tower, diminishing octagons, clocks and a long brown needle.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-philips-church-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-philips-church-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. OSM church and mapped part outlines © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry photos CC BY 3.0 used only for local visual comparison. No photo, capture, lettering or imported mesh included. No legal acceptance asserted.",
+        "references": [
+          {
+            "label": "NPS NHL nomination: three tetrastyle porticoes, octagonal stages and 1848–50 spire",
+            "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/73001695_text"
+          },
+          {
+            "label": "Parish history booklet: present structure completed 1838",
+            "url": "https://cpmfiles1.com/stphilipschurchsc.org/2022-churchhistory-booklet-2.pdf"
+          },
+          {
+            "label": "OSM church footprint and related parts",
+            "url": "https://www.openstreetmap.org/way/173699967"
+          },
+          {
+            "label": "Brian Stansberry, west steeple/porticoes, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-philips-episcopal-charleston-sc1.jpg"
+          },
+          {
+            "label": "Brian Stansberry, clock detail, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St-philips-episcopal-charleston-sc2.jpg"
+          }
+        ]
+      },
+      "manifest": "/models/buildings/st-philips-church-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-philips-church-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-philips-church-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Parish dates current building 1838; nomination body 1835–36, steeple 1848–50. Adopted 56 m unsurveyed OSM height is estimated, with stage proportions from photographs. No interiors, churchyard, lettering or texture. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-philips-church-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "us-custom-house-charleston",
+      "name": "United States Custom House",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Roman Corinthian cruciform Custom House with two open six-column porticoes, broad monumental stairs, pediments, two tiers of windows and a pierced roof balustrade.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs us-custom-house-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/us-custom-house-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. Mapped cross plan © OpenStreetMap contributors, ODbL 1.0. Brian Stansberry CC BY 3.0 and Diligent Terrier CC BY-SA 4.0 photographs are reference-only. No photos, textures, lettering or imported geometry included. No contributor acceptance asserted.",
+        "references": [
+          {
+            "label": "GSA historic building page: cross plan, two Corinthian temple fronts, stairs, low roof",
+            "url": "https://www.gsa.gov/real-estate/explore-historic-buildings/find-a-historic-federal-building/us-custom-house-charleston-sc"
+          },
+          {
+            "label": "NPS nomination: historical 249 × 152 ft description; unbuilt dome excluded",
+            "url": "https://npgallery.nps.gov/pdfhost/docs/nrhp/text/74001834.PDF"
+          },
+          {
+            "label": "OSM way 37594690",
+            "url": "https://www.openstreetmap.org/way/37594690"
+          },
+          {
+            "label": "Brian Stansberry, west portico, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:US-custom-house-charleston-sc1.jpg"
+          },
+          {
+            "label": "Diligent Terrier, exterior, CC BY-SA 4.0 (multi-licensed)",
+            "url": "https://commons.wikimedia.org/wiki/File:United_States_Custom_House.jpg"
+          }
+        ]
+      },
+      "notes": "Completed 1879 Custom House at East Bay Street, not Old Exchange or unbuilt domed proposal. Dimensions separate mapped masonry envelope from stair-inclusive historical description. 23 m height is estimated. Ornament and capitals simplified, lettering omitted. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-us-custom-house-charleston.md",
+      "manifest": "/models/buildings/us-custom-house-charleston.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=us-custom-house-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=us-custom-house-charleston&view=detail"
+          }
+        ]
+      },
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "pineapple-fountain-charleston",
+      "name": "Pineapple Fountain",
+      "kind": "building",
+      "location": "Charleston, South Carolina, United States",
+      "status": "ready",
+      "description": "Waterfront Park pineapple fountain with two broad scalloped bowls, a tall ovoid fruit of integrated diamond relief, a raised curled leaf crown and separate static falling streams in its round basin.",
+      "manifest": "/models/buildings/pineapple-fountain-charleston.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs pineapple-fountain-charleston",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+        "provenance": "Original procedural commissioned geometry for Codriver, 2026-11-09. Mapped basin © OpenStreetMap contributors, ODbL 1.0. JonathanLamb CC BY 3.0 Commons images and Library of Congress/City reference photos are comparison only. No photograph, texture, scan or imported model is included. No legal acceptance asserted.",
+        "references": [
+          {
+            "label": "City of Charleston: Pineapple Fountain with Sailboats, current identity and sculpture",
+            "url": "https://www.charleston-sc.gov/gallery.aspx?PID=70"
+          },
+          {
+            "label": "Library of Congress Highsmith photo: completed 1990, Waterfront Park",
+            "url": "https://www.loc.gov/item/2017879904/"
+          },
+          {
+            "label": "OSM basin 1356302855",
+            "url": "https://www.openstreetmap.org/way/1356302855"
+          },
+          {
+            "label": "JonathanLamb, east-facing full fountain, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charleston-SC-pineapple-fountain.jpg"
+          },
+          {
+            "label": "JonathanLamb, west-facing fountain and City Gallery, CC BY 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Charleston-Waterfront-Park-pineapple-fountain-back.jpg"
+          }
+        ]
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=pineapple-fountain-charleston",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=pineapple-fountain-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "1990 Pineapple Fountain, distinct from the Vendue splash fountain. Basin 10.6 m mapped; revised photographic estimates: 5.14 m above pavement / 5 m above basin water, approximately 2 m wide × 1.78 m tall ovoid fruit at y=2.16–3.94, about 1.2 m crown rise, bowl rim levels 1.10/2 m. The unsurveyed OSM 4 m height tag conflicts with these photo proportions and is not adopted. Integrated diamond skin in both LODs; sparse static flow, no surrounding park or textures. Cityscape: not tested; Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-pineapple-fountain-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

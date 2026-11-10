@@ -1,0 +1,167 @@
+{
+  "id": "pineapple-fountain-charleston",
+  "name": "Pineapple Fountain",
+  "kind": "building",
+  "origin": [
+    -79.925191,
+    32.778087
+  ],
+  "height": 5.14,
+  "padM": 5.6,
+  "frontageBearing": 90,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -79.9251359,
+          32.7780974
+        ],
+        [
+          -79.9251433,
+          32.7781127
+        ],
+        [
+          -79.9251564,
+          32.7781249
+        ],
+        [
+          -79.9251737,
+          32.7781325
+        ],
+        [
+          -79.9251931,
+          32.7781348
+        ],
+        [
+          -79.9252103,
+          32.778132
+        ],
+        [
+          -79.9252256,
+          32.7781249
+        ],
+        [
+          -79.9252377,
+          32.7781142
+        ],
+        [
+          -79.9252452,
+          32.7781009
+        ],
+        [
+          -79.9252476,
+          32.7780863
+        ],
+        [
+          -79.9252445,
+          32.7780718
+        ],
+        [
+          -79.9252363,
+          32.7780588
+        ],
+        [
+          -79.9252237,
+          32.7780486
+        ],
+        [
+          -79.925208,
+          32.778042
+        ],
+        [
+          -79.9251886,
+          32.7780399
+        ],
+        [
+          -79.9251695,
+          32.7780434
+        ],
+        [
+          -79.925153,
+          32.7780523
+        ],
+        [
+          -79.925141,
+          32.7780653
+        ],
+        [
+          -79.9251351,
+          32.778081
+        ],
+        [
+          -79.9251359,
+          32.7780974
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -79.9251359,
+        32.7780974
+      ],
+      [
+        -79.9252476,
+        32.7780863
+      ],
+      [
+        -79.9251886,
+        32.7780399
+      ]
+    ],
+    "datum": "median",
+    "featherM": 1
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local plaza pavement y=0 at the outside basin foot; no absolute altitude, water-level datum, terrain or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1990 Pineapple Fountain in Waterfront Park, not the separate Vendue splash fountain. Basin 10.6 m diameter from OSM way 1356302855. Overall 5.14 m above pavement / 5 m above basin water is a revised photographic estimate; it differs from the unsurveyed OSM 4 m tag. Ovoid fruit is approximately 2 m wide × 1.78 m tall at y=2.16–3.94, with an approximately 1.2 m crown rise; bowl rim levels 1.10/2 m and other sculpture dimensions are estimates. Static representative low-water phase, not simulation. Rotational sculpture has no surveyed facade; geography already baked. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/pineapple-fountain-charleston-near.glb",
+      "bytes": 118444,
+      "triangles": 8552,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -5.28000020980835,
+          0,
+          -5.28000020980835
+        ],
+        "max": [
+          5.28000020980835,
+          5.139999866485596,
+          5.28000020980835
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/pineapple-fountain-charleston-far.glb",
+      "bytes": 49716,
+      "triangles": 2872,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -5.28000020980835,
+          0,
+          -5.28000020980835
+        ],
+        "max": [
+          5.28000020980835,
+          5.139999866485596,
+          5.28000020980835
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
