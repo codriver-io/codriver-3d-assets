@@ -1,6 +1,6 @@
 export const SPEC = {
   id:'goose-creek-municipal-center',name:'Goose Creek Municipal Center (City Hall)',kind:'building',ready:true,
-  origin:[-80.03619,33.027974],height:12.3,padM:42,frontageBearing:95.5,rotationDeg:-5.5,ownTolM:0.8,
+  origin:[-80.03619,33.027974],height:12.3,padM:60,frontageBearing:95.5,rotationDeg:-5.5,ownTolM:0.8,
 };
 export const PALETTES = {
   light:{brick:'#925e48',roof:'#727d77',glass:'#3a4540',frame:'#514b3d',stone:'#b4a793',water:'#708b88'},

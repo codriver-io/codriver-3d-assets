@@ -41,3 +41,5 @@ Thick walls have real arched cutouts and recessed glazing, with individual recta
 Cityscape: **not tested**. Full 3D world: **not tested**. Static library inspection does not establish host placement, terrain fitting, provider replacement or driving-app integration.
 
 Final library validation: `pnpm build` and `pnpm check` passed for 419 assets / 846 GLB variants. The focused browser matrix loaded near/far, light/dark and GLB/procedural for all four Charleston-area landmarks (32 scenarios, no page errors); local evidence: `tmp/landmark-qa/builder-5-browser-matrix.json`. Shared final geometry metrics are in `tmp/landmark-qa/builder-5-final-metrics.json`. Byte counts above include the final licence metadata stamp, read from each measured manifest rather than the exporter's pre-stamp console summary.
+
+The final `pnpm test:browser http://localhost:4315` passed the complete 419-viewer public library suite, including desktop/mobile, GLB/procedural, LOD/theme, scene download and licences; no page errors or failed responses.

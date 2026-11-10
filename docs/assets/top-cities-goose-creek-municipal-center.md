@@ -23,7 +23,8 @@ Original procedural model of the standing City Hall at 519 North Goose Creek Bou
 | Relief gable top | 8.65 m | Estimated |
 | Tall front openings | 1.1–2.9 m wide, 3.8–4.25 m high | Estimated |
 | Upper square transoms | 1.15 × 1.25 m | Estimated |
-| Fountain water basin | radius 2.19 m | Sourced approximate mapped basin size |
+| Mapped fountain envelope | about 4.43 × 4.81 m | Sourced, OSM |
+| Inset water basin | radius 2.19 m | Estimated inset within the mapped fountain envelope |
 | Fountain rim / seating | 0.68 / 0.60 m high | Estimated from city aerial; seat radius/layout approximate |
 | Front bearing | 95.5° | Sourced from OSM opposite building edges |
 
@@ -31,7 +32,7 @@ Original procedural model of the standing City Hall at 519 North Goose Creek Bou
 
 Origin `[-80.03619,33.027974]` is inside City Hall. The rear/north edge controls `[-80.0363678,33.0281153]` and `[-80.0360068,33.0280862]` establish the long east axis about 5.5° south of east; lower wall segments independently confirm it. The main entrance faces east towards the mapped fountain, not south towards the small service canopy. The −5.5° Y rotation is baked into all geometry and exports. Real metres, +X east, +Y up, +Z south. Local y=0 is the rigid foundation toe, not sea level. No terrain DEM, altitude or Mercator scale is baked in.
 
-Only City Hall way 1538475633 and its south canopy way 1538475634 enter `OSM_WAYS` and `FOOTPRINTS`. The separate fountain has its own constant and mapped ring; it does not authorize provider-building replacement. The long campus connector roof 1538475632 and other buildings, including Building D 1538475654, are excluded, as are the lake and neighbouring recreation center. Hosts must use a rigid foundation/pad and verify each component's local grade without bending the building to terrain.
+Only City Hall way 1538475633 and its south canopy way 1538475634 enter `OSM_WAYS` and `FOOTPRINTS`. The separate fountain has its own constant and mapped ring; it does not authorize provider-building replacement. The provisional `padM=60` includes the roughly 56 m eastward extent of the fountain and seats, but does not establish a terrain pad or host datum. The long campus connector roof 1538475632 and other buildings, including Building D 1538475654, are excluded, as are the lake and neighbouring recreation center. Hosts must use a rigid foundation/pad and verify each component's local grade without bending the building to terrain.
 
 ## Modeling decisions and omissions
 
@@ -51,3 +52,5 @@ Final `qa-metrics` reports no flags, zero coplanar/layered candidates and no bac
 Cityscape: **not tested**. Full 3D world: **not tested**. Standalone library QA does not establish either host mode or road/terrain integration.
 
 Final library validation: `pnpm build` and `pnpm check` passed for 419 assets / 846 GLB variants. The focused browser matrix loaded near/far, light/dark and GLB/procedural for all four Charleston-area landmarks (32 scenarios, no page errors); local evidence: `tmp/landmark-qa/builder-5-browser-matrix.json`. Shared final geometry metrics are in `tmp/landmark-qa/builder-5-final-metrics.json`. Byte counts above include the final licence metadata stamp, read from each measured manifest rather than the exporter's pre-stamp console summary.
+
+The final `pnpm test:browser http://localhost:4315` passed the complete 419-viewer public library suite, including desktop/mobile, GLB/procedural, LOD/theme, scene download and licences; no page errors or failed responses.
