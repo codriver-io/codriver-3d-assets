@@ -16,43 +16,43 @@
     "y": "up",
     "z": "south"
   },
-  "elevationDatum": "Local y=0 is the support-foot datum, not sea level. Closed swing deck 11.8 m, approach ends 3 m. Rigid 2010 superstructure, geographic orientation baked once; no DEM or Mercator scale.",
+  "elevationDatum": "Local y=0 is the support-foot datum, not sea level. Closed swing deck 11.8 m; flat approach joints 0 m, structural ends approximately 3.23 m. Rigid 2010 superstructure, geographic orientation baked once; no DEM or Mercator scale.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "FHWA: 247 ft centre-pivot Pratt swing span, two 452 ft approaches, six approach spans on each bank, 2010 replacement. OSM mapped length 352.48 m and bearing 333.5 degrees. Lane width 14 ft and sidewalk 5.5 ft from SCDOT. Deck height, 9.2 m truss rise, 26.5 m cabin roof, member sections, fenders and bay subdivisions estimated. Closed state only; no mechanisms, animation or road fitting.",
+  "note": "FHWA: 247 ft centre-pivot Pratt swing span, two 452 ft approaches, six approach spans on each bank, 2010 replacement. OSM mapped length 352.48 m and bearing 333.5 degrees. Lane width 14 ft and sidewalk 5.5 ft from SCDOT. Deck height, 9.2 m truss rise, 26.5 m cabin roof, member sections, fenders and bay subdivisions estimated. Closed state only; no mechanisms or animation. Road fitted to the mapped two-way SC 703 carriageway with 60 m bank tie-ins and 6.48% maximum flat grade; absolute-deck terrain policy composes the host ground datum at runtime.",
   "assets": {
     "near": {
       "url": "/models/bridges/ben-sawyer-bridge-near.glb",
-      "bytes": 165096,
-      "triangles": 11110,
+      "bytes": 551076,
+      "triangles": 18572,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -84.13858032226562,
-          -9.536743306171047e-8,
-          -161.44515991210938
+          -106.98816680908203,
+          -1.1135291089203747e-7,
+          -213.37290954589844
         ],
         "max": [
-          84.00029754638672,
+          108.1554946899414,
           26.5,
-          161.44515991210938
+          212.72373962402344
         ]
       }
     },
     "far": {
       "url": "/models/bridges/ben-sawyer-bridge-far.glb",
-      "bytes": 88124,
-      "triangles": 5302,
+      "bytes": 410228,
+      "triangles": 13556,
       "drawCalls": 8,
       "bounds": {
         "min": [
-          -84.13858032226562,
-          -9.536743306171047e-8,
-          -161.44515991210938
+          -106.98816680908203,
+          -1.1135291089203747e-7,
+          -213.37290954589844
         ],
         "max": [
-          84.00029754638672,
+          108.1554946899414,
           26.5,
-          161.44515991210938
+          212.72373962402344
         ]
       }
     }

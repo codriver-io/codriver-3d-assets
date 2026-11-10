@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
-import {create,stays} from './geometry.js';
-import {ROTATION} from './config.js';
+import {create,stays,point} from './geometry.js';
+
 // Named material surfaces are actual triangles; the cable mesh is excluded.
 for(const detail of ['near','far']) {
  const model=create({detail}),surfaces={};
@@ -10,7 +10,7 @@ for(const detail of ['near','far']) {
   surfaces[o.material.name]=[];
   for(let i=0;i<ix.count;i+=3)surfaces[o.material.name].push(new THREE.Triangle(...[0,1,2].map(j=>new THREE.Vector3().fromBufferAttribute(p,ix.getX(i+j)))));
  });
- const rotate=p=>new THREE.Vector3(...p).applyAxisAngle(new THREE.Vector3(0,1,0),ROTATION);
+ const rotate=point;
  const distance=(p,mat)=>Math.min(...surfaces[mat].map(t=>t.closestPointToPoint(p,new THREE.Vector3()).distanceTo(p)));
  for(const [i,s] of stays(detail).entries()) {
   const top=rotate(s.top),foot=rotate(s.foot),axis=foot.clone().sub(top).normalize();

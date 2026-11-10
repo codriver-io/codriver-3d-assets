@@ -36996,10 +36996,10 @@
       "kind": "bridge",
       "location": "North Charleston, South Carolina",
       "status": "ready",
-      "description": "1992 Cooper River crossing with pale blue continuous Warren truss, six-lane deck and long concrete approach viaducts.",
+      "description": "1992 Cooper River crossing with pale blue continuous Warren truss, a common deck carrying both I-526 directions, and mapped concrete approach viaducts.",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js",
-        "build": "node scripts/build-top-cities-landmarks.mjs don-holt-bridge",
+        "build": "pnpm build:top-cities-landmarks don-holt-bridge",
         "provenance": "Original procedural geometry commissioned for Codriver. Mapped truss/road alignment © OpenStreetMap contributors, ODbL 1.0. Comparison only: Donholt.JPG by Citm2000, public domain, 2008 (predates repaint); SCDOT painting report and Live5 2017 repaint imagery, all rights reserved, reference-only, not redistributed. No photos, meshes, textures or signage lettering imported.",
         "references": [
           {
@@ -37021,11 +37021,19 @@
           {
             "label": "Current Citadel-blue paint, 2017; all rights reserved, comparison only",
             "url": "https://www.live5news.com/story/36522491/don-holt-bridge-gets-makeover-in-citadel-blue-color-as-painting-resumes/"
+          },
+          {
+            "label": "OSM mapped I-526 carriageway 35067062",
+            "url": "https://www.openstreetmap.org/way/35067062"
+          },
+          {
+            "label": "OSM mapped I-526 carriageway 35067064",
+            "url": "https://www.openstreetmap.org/way/35067064"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js"
       },
-      "notes": "Current 2017 pale-blue repaint. Truss outline and bearing mapped; approximately 3330 m whole crossing, estimated approach profile and member sections. Exit ramps and signage excluded; library-only model.",
+      "notes": "Stage B road fitting retains the approved 491 m / 20-panel truss, 52 m crest, 28.5 m deck, main bents and palettes. Mapped roadway replaces the schematic 3330 m extent with 2981.755 m; 1378.130 / 1112.625 m ramps have maximum flat grades 3.832 / 4.798 percent. Landing widths, low barriers and supports fit roads/terrain from immutable geometry; no corridor flattening. Weight refinement retains fine pavement only within 240 m west / 210 m east; elevated surfaces use full-width carriageway ribbons at 25 m near / 40 m far stations. All steel geometry is unchanged. Near 25292 triangles / 3 draws / 722572 bytes; far 16624 / 3 / 489140. See documentation for all visible differences and validation limits.",
       "documentation": "docs/assets/top-cities-don-holt-bridge.md",
       "manifest": "/models/bridges/don-holt-bridge.json",
       "inspection": {
@@ -37079,10 +37087,10 @@
       "kind": "bridge",
       "location": "Sullivan's Island, South Carolina",
       "status": "ready",
-      "description": "2010 replacement of the historic swing bridge: polygonal Pratt through-truss, central pivot pier, overhead tender house and twelve approach spans.",
+      "description": "Road-fitted 2010 Ben Sawyer swing bridge: the approved Pratt truss, central pivot, tender house and harbor sidewalk on the mapped two-way SC 703 surface.",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
-        "build": "node scripts/build-top-cities-landmarks.mjs ben-sawyer-bridge",
+        "build": "pnpm build:top-cities-landmarks ben-sawyer-bridge",
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
         "provenance": "Original procedural geometry commissioned for Codriver; OSM bridge outline and highway alignment © OpenStreetMap contributors, ODbL 1.0. Comparison-only photos verified on Commons: Peter Burka, Swing span of Ben Sawyer Bridge open in 2025, CC BY-SA 2.0; FHWA, Ben Sawyer Bridge Aerial View SC (8424392896), US DOT public-domain work (Flickr also CC BY 2.0). The aerial includes temporary 2010 old/new superstructures; only the new permanent configuration is modeled. No photo, texture or imported mesh redistributed.",
         "references": [
@@ -37113,10 +37121,26 @@
           {
             "label": "FHWA 2010 replacement aerial, public domain / CC BY 2.0",
             "url": "https://commons.wikimedia.org/wiki/File:Ben_Sawyer_Bridge_Aerial_View_SC_(8424392896).jpg"
+          },
+          {
+            "label": "OSM south roadway / fitted approach source",
+            "url": "https://www.openstreetmap.org/way/55610715"
+          },
+          {
+            "label": "OSM north roadway / fitted approach source",
+            "url": "https://www.openstreetmap.org/way/927285595"
+          },
+          {
+            "label": "OSM south connected road",
+            "url": "https://www.openstreetmap.org/way/12152716"
+          },
+          {
+            "label": "OSM north connected road",
+            "url": "https://www.openstreetmap.org/way/1391506631"
           }
         ]
       },
-      "notes": "Closed road position. FHWA 247 ft swing span and two 452 ft approaches; OSM length 352.48 m. Height, pier and steel sections, cabin geometry and fenders estimated; no road fitting or operating animation.",
+      "notes": "Closed road position; approved 75.2856 m swing truss, 11.8 m deck and 26.5 m antenna retained. Mapped roadway is 352.5596 m plus two 60 m tie-ins; flat ramps are 194.3186 / 194.9554 m at 6.4722 / 6.4497 percent maximum. Fitting moves the original centreline at most 2 m horizontally and approach decks -0.530 to +0.236 m vertically. No palette or central structural proportion change. Ground-seated supports, transverse pavement sampling and 0.12 m world clearance. Near 18572 triangles / 8 draws / 551076 bytes; far 13556 / 8 / 410228. Height and details are estimates; no operating animation or hardware measurement.",
       "documentation": "docs/assets/top-cities-ben-sawyer-bridge.md",
       "manifest": "/models/bridges/ben-sawyer-bridge.json",
       "inspection": {
@@ -37343,8 +37367,8 @@
       "description": "Two hollow diamond towers, 128 stays, a wide eight-lane deck, south walking path and rock protection islands on the 2005 Cooper River crossing.",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js",
-        "build": "node scripts/build-top-cities-landmarks.mjs arthur-ravenel-jr-bridge",
-        "provenance": "Original procedural geometry authored 2026-11-09. Alignment © OpenStreetMap contributors, ODbL 1.0, ways 927255592, 927255594, 927255593, 50054023, 38968007, 927255595 and outline 1494459861. Reference-only photographs: DXR CC BY-SA 4.0; w_lemay CC0 1.0; file-page licences and depicted bridge verified. No photographs, meshes, textures or lettering shipped. Contributor/product permission remains a human maintainer process; no terms accepted by agent.",
+        "build": "pnpm build:top-cities-landmarks arthur-ravenel-jr-bridge",
+        "provenance": "Original procedural geometry authored 2026-11-09. Alignment © OpenStreetMap contributors, ODbL 1.0, ways 927255592, 927255594, 927255593, 50054023, 38968007, 927255595 and outline 1494459861. Reference-only photographs: DXR CC BY-SA 4.0; w_lemay CC0 1.0; file-page licences and depicted bridge verified. No photographs, meshes, textures or lettering shipped. Contributor/product permission remains a human maintainer process; no terms accepted by agent. Road fitting 2026-11-10 uses both carriageways from the serialized Overpass helper; mapped provider tower rings 1505466634 and 1505466635 are replaced exactly.",
         "references": [
           {
             "label": "TYLin design review and construction engineering: 1546 ft span, 574 ft diamond towers, 186 ft minimum navigation clearance",
@@ -37365,11 +37389,19 @@
           {
             "label": "w_lemay: Charleston panorama, CC0 1.0 (2019)",
             "url": "https://commons.wikimedia.org/wiki/File:Arthur_Ravenel_Jr._Bridge,_Charleston,_SC.jpg"
+          },
+          {
+            "label": "OSM Pearman tower provider footprint",
+            "url": "https://www.openstreetmap.org/way/1505466634"
+          },
+          {
+            "label": "OSM Grace tower provider footprint",
+            "url": "https://www.openstreetmap.org/way/1505466635"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/arthur-ravenel-jr-bridge/geometry.js"
       },
-      "notes": "Modelled 1440 m of the cable-stayed unit and supported high approaches. Main span and tower height sourced from TYLin; width, profile and component sections estimated. Cityscape: not tested. Full 3D world: not tested.",
+      "notes": "Road-fitted mainline extends the approved 1440 m model to 2753.760 m while retaining both diamond towers, stayed unit, main camber, islands, 39 m structural width and colours. Flat-Cityscape approximation: real grade about 4%; model west 1212.444 m / 5.0963%, east 589.316 m / 11.0958%, with 60 m vertical curves and 20 m landings, explicitly authorised below a 12% eastern cap. Outer high approaches are regraded, extended and reseated on matching supports; only 100 m noses narrow. Mount Pleasant US 17/SC 703 fork and Charleston I-26, Meeting Street and Morrison Drive ramps require a separately scoped multi-branch interchange surface. BridgeLift retained; exact provider tower masks; source/export costs and verification evidence in the documentation.",
       "documentation": "docs/assets/top-cities-arthur-ravenel-jr-bridge.md",
       "manifest": "/models/bridges/arthur-ravenel-jr-bridge.json",
       "inspection": {
@@ -37427,8 +37459,8 @@
       "manifest": "/models/bridges/ashley-river-memorial-bridge.json",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js",
-        "build": "node scripts/build-top-cities-landmarks.mjs ashley-river-memorial-bridge",
-        "provenance": "Original procedural geometry authored 2026-11-09. OSM API footprint and highway alignment © OpenStreetMap contributors, ODbL 1.0. Both ProfReader 2015 Commons photographs verified as the four-tender-house 1926 bridge, CC BY-SA 4.0 on each file page, reference only. No textures, third-party meshes, photos or lettering shipped; no contributor legal terms accepted by agent.",
+        "build": "pnpm build:top-cities-landmarks ashley-river-memorial-bridge",
+        "provenance": "Original procedural geometry authored 2026-11-09. OSM API footprint and highway alignment © OpenStreetMap contributors, ODbL 1.0. Both ProfReader 2015 Commons photographs verified as the four-tender-house 1926 bridge, CC BY-SA 4.0 on each file page, reference only. No textures, third-party meshes, photos or lettering shipped; no contributor legal terms accepted by agent. Road-fit 2026-11-10 using mapped Memorial roadway 480966842/480966843/117153920, approaches 51180495/38108288 and east feeder 631693898 fetched through the shared overpass.mjs client; original structural grade, palettes and recognizable features preserved.",
         "references": [
           {
             "label": "City and SCDOT: current identity, 1926 memorial bridge",
@@ -37449,6 +37481,22 @@
           {
             "label": "ProfReader, broadside of bascule, CC BY-SA 4.0",
             "url": "https://commons.wikimedia.org/wiki/File:Ashley_River_Memorial_Bridge,_Charleston,_South_Carolina.jpg"
+          },
+          {
+            "label": "OSM southbound Memorial carriageway, three lanes",
+            "url": "https://www.openstreetmap.org/way/117153920"
+          },
+          {
+            "label": "OSM west approach",
+            "url": "https://www.openstreetmap.org/way/51180495"
+          },
+          {
+            "label": "OSM east approach",
+            "url": "https://www.openstreetmap.org/way/38108288"
+          },
+          {
+            "label": "OSM east-bank feeder",
+            "url": "https://www.openstreetmap.org/way/631693898"
           }
         ],
         "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ashley-river-memorial-bridge/geometry.js"
@@ -37490,7 +37538,7 @@
           }
         ]
       },
-      "notes": "Current southbound bridge only. Mapped 528.1 m length; all vertical dimensions and component sizes estimated from two licensed photographs. Legare Bridge excluded. Cityscape: not tested. Full 3D world: not tested.",
+      "notes": "Southbound Memorial Bridge only; parallel northbound Legare remains provider-drawn. Original 528.1 m structural span, four tender houses, bascule, arches, colors and proportions retained; mapped axis correction at most 0.271 m. New ramps: west 100 m / 6.289%, east 76.813 m / 7.105%, feeder 173.186 m / 7.011%. Vertical dimensions remain photographic estimates. Near 25,359 triangles / 10 draws / 721,704 bytes; far 15,011 / 9 / 454,952; lift weights retained. Arches remain rigid in world, piers and fenders meet local ground.",
       "documentation": "docs/assets/top-cities-ashley-river-memorial-bridge.md",
       "city": "Charleston",
       "license": "CC-BY-4.0",
