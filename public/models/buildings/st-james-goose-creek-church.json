@@ -1,0 +1,69 @@
+{
+  "id": "st-james-goose-creek-church",
+  "name": "St. James' Church, Goose Creek",
+  "kind": "building",
+  "origin": [
+    -80.03264685,
+    32.9755013
+  ],
+  "height": 8.85,
+  "padM": 14,
+  "frontageBearing": 274.5,
+  "rotationDeg": 4.5,
+  "lengthM": 15.22,
+  "widthM": 12.57,
+  "ownTolM": 0.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid church foundation grade y=0; no sea-level, terrain or Mercator scale baked in. Geographic rotation is baked once.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1713–1719 stucco church, current exterior: jerkinhead slate roof, quoins, tall round arches, four side windows around each side doorway and pelican-relief pediment. Owner publishes 50 × 40 ft; mapped envelope is 15.22 × 12.57 m. Wall/roof heights, mouldings and openings are photo estimates. No cemetery, vegetation, perimeter wall, lettering or texture. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/st-james-goose-creek-church-near.glb",
+      "bytes": 175604,
+      "triangles": 12256,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -8.513500213623047,
+          0,
+          -7.296542167663574
+        ],
+        "max": [
+          8.513500213623047,
+          8.850000381469727,
+          7.296542167663574
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/st-james-goose-creek-church-far.glb",
+      "bytes": 102180,
+      "triangles": 6200,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -8.513500213623047,
+          0,
+          -7.296542167663574
+        ],
+        "max": [
+          8.513500213623047,
+          8.850000381469727,
+          7.296542167663574
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-james-goose-creek-church/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

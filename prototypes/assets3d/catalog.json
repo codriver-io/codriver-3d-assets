@@ -36989,6 +36989,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "st-james-goose-creek-church",
+      "name": "St. James' Church, Goose Creek",
+      "kind": "building",
+      "location": "Goose Creek, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of the current 1713–1719 stucco church: clipped slate roof, tall arched windows, quoins and pedimented west entrance.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/st-james-goose-creek-church/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs st-james-goose-creek-church",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-james-goose-creek-church/geometry.js",
+        "provenance": "Original procedural geometry authored for Codriver in 2026; no imported mesh, texture or scan. OSM mapped outline © OpenStreetMap contributors, ODbL 1.0. Photographs used for local visual comparison only: Itsbrandoyo CC BY-SA 4.0 and Jack E. Boucher/HABS public domain. No contributor agreement accepted by an agent.",
+        "references": [
+          {
+            "label": "Church owner — history and 50 × 40 ft dimensions",
+            "url": "https://saintjameschurchgoosecreek.com/"
+          },
+          {
+            "label": "SC Archives — National Historic Landmark record",
+            "url": "https://www.nationalregister.sc.gov/berkeley/S10817708020/index.htm"
+          },
+          {
+            "label": "OSM footprint 1307285849",
+            "url": "https://www.openstreetmap.org/way/1307285849"
+          },
+          {
+            "label": "Itsbrandoyo 2014 exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St._James_Goose_Creek_Parish_Church,_Goose_Creek,_South_Carolina.jpg"
+          },
+          {
+            "label": "Jack E. Boucher, HABS southeast exterior, public domain",
+            "url": "https://commons.wikimedia.org/wiki/File:EXTERIOR,_VIEW_FROM_SOUTHEAST_CORNER_-_St._James%27_Protestant_Episcopal_Church,_Goose_Creek,_Berkeley_County,_SC_HABS_SC,8-GOOCR,1-9.tif"
+          }
+        ]
+      },
+      "notes": "Mapped plan and orientation; height, glazing, mouldings and small original bird-relief grouping are estimates. Cemetery, trees, boundary walls and interior omitted. Reference photos are not redistributed. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-st-james-goose-creek-church.md",
+      "manifest": "/models/buildings/st-james-goose-creek-church.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=st-james-goose-creek-church",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=st-james-goose-creek-church&view=detail"
+          }
+        ]
+      },
+      "city": "Goose Creek",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
