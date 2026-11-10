@@ -1,0 +1,65 @@
+{
+  "id": "uss-yorktown-cv10",
+  "name": "USS Yorktown (CV-10)",
+  "kind": "building",
+  "origin": [
+    -79.9085309,
+    32.7904047
+  ],
+  "height": 58,
+  "padM": 150,
+  "frontageBearing": 90,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the visual waterline; the underwater hull is omitted. Flight deck y=17 m and mast y=58 m are photographic estimates. Rigid ship placement at a host water datum; no DEM, tide elevation or Mercator scale baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Museum configuration after the 1956 angled-flight-deck conversion, not the 1943 straight-deck carrier. Length 270.6624 m / 888 ft from Patriots Point; original 872 ft Navy and NPS values describe the earlier configuration. Mapped envelope approximately 65.7 m wide including projections. Hull beam, island, mast and vertical levels estimated from current museum photographs. No painted numbers, names, insignia, logos or third-party aircraft meshes.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/uss-yorktown-cv10-near.glb",
+      "bytes": 61264,
+      "triangles": 4388,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.999250411987305,
+          0,
+          -135.4182891845703
+        ],
+        "max": [
+          32.77680587768555,
+          58,
+          135.22369384765625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/uss-yorktown-cv10-far.glb",
+      "bytes": 48740,
+      "triangles": 2902,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.999250411987305,
+          0,
+          -135.4182891845703
+        ],
+        "max": [
+          32.77680587768555,
+          58,
+          135.22369384765625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/uss-yorktown-cv10/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

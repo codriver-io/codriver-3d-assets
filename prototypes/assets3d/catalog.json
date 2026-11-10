@@ -37155,6 +37155,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "uss-yorktown-cv10",
+      "name": "USS Yorktown (CV-10)",
+      "kind": "building",
+      "location": "Mount Pleasant, South Carolina",
+      "status": "ready",
+      "description": "Museum Essex-class carrier with flared bow, angled flight deck, starboard island and mast, recessed hangar bays and unmarked static aircraft silhouettes.",
+      "manifest": "/models/buildings/uss-yorktown-cv10.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/uss-yorktown-cv10/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs uss-yorktown-cv10",
+        "provenance": "Original procedural ship and unmarked aircraft geometry, 2026-11-09. Berth/outline © OpenStreetMap contributors, ODbL 1.0, way 39010151. Something Original and RebelAt Commons photographs, CC BY-SA 3.0, file licences and current museum identity checked, reference only. No photograph, texture, scan, imported mesh or lettering shipped. No contributor terms accepted by agent.",
+        "references": [
+          {
+            "label": "Patriots Point operator: 888 ft after 1956 versus 872 ft in 1943",
+            "url": "https://www.patriotspoint.org/things-to-do/uss-yorktown"
+          },
+          {
+            "label": "US Navy DANFS: original dimensions and service history",
+            "url": "https://www.history.navy.mil/content/history/nhhc/research/histories/ship-histories/danfs/y/yorktown-cv-10-iv.html"
+          },
+          {
+            "label": "OSM museum ship footprint",
+            "url": "https://www.openstreetmap.org/way/39010151"
+          },
+          {
+            "label": "Something Original: museum panorama, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:USS_Yorktown_(CVS-10)_panorama_2012.jpg"
+          },
+          {
+            "label": "RebelAt: present-day profile, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Present_Day_Profile_View_of_the_USS_Yorktown.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/uss-yorktown-cv10/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=detail"
+          },
+          {
+            "label": "Stern",
+            "url": "/asset-preview.html?asset=uss-yorktown-cv10&view=stern"
+          }
+        ]
+      },
+      "notes": "Current museum configuration. 270.6624 m length sourced from Patriots Point; OSM footprint and berth. Hull beam, deck/island/mast heights and details estimated from museum photographs. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-uss-yorktown-cv10.md",
+      "city": "Mount Pleasant",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
