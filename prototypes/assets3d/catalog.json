@@ -37225,7 +37225,7 @@
       "kind": "building",
       "location": "Charleston, South Carolina, United States",
       "status": "ready",
-      "description": "Small Waterfront Park pineapple fountain with two broad scalloped bowls, a textured bronze pineapple body, curled leaf crown and separate static falling streams within its circular basin.",
+      "description": "Waterfront Park pineapple fountain with two broad scalloped bowls, a tall ovoid fruit of integrated diamond relief, a raised curled leaf crown and separate static falling streams in its round basin.",
       "manifest": "/models/buildings/pineapple-fountain-charleston.json",
       "source": {
         "path": "src/peregrine/landmarks/top-cities/pineapple-fountain-charleston/geometry.js",
@@ -37284,7 +37284,7 @@
           }
         ]
       },
-      "notes": "1990 Pineapple Fountain, not the separate Vendue splash fountain. Basin 10.6 m mapped; total approximately 4 m, bowl sizes, skin and leaves estimated. Static low-water phase; no surrounding park or textures. Cityscape: not tested; Full 3D world: not tested.",
+      "notes": "1990 Pineapple Fountain, distinct from the Vendue splash fountain. Basin 10.6 m mapped; revised photographic estimates: 5.14 m above pavement / 5 m above basin water, approximately 2 m wide × 1.78 m tall ovoid fruit at y=2.16–3.94, about 1.2 m crown rise, bowl rim levels 1.10/2 m. The unsurveyed OSM 4 m height tag conflicts with these photo proportions and is not adopted. Integrated diamond skin in both LODs; sparse static flow, no surrounding park or textures. Cityscape: not tested; Full 3D world: not tested.",
       "documentation": "docs/assets/top-cities-pineapple-fountain-charleston.md",
       "city": "Charleston",
       "license": "CC-BY-4.0",

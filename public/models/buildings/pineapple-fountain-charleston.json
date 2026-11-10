@@ -6,7 +6,7 @@
     -79.925191,
     32.778087
   ],
-  "height": 4,
+  "height": 5.14,
   "padM": 5.6,
   "frontageBearing": 90,
   "terrainPad": {
@@ -119,13 +119,13 @@
   },
   "elevationDatum": "Rigid local plaza pavement y=0 at the outside basin foot; no absolute altitude, water-level datum, terrain or Mercator scale baked in.",
   "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
-  "note": "1990 Pineapple Fountain in Waterfront Park, not the separate Vendue splash fountain. Basin 10.6 m diameter from OSM way 1356302855. Overall 4 m is an unsurveyed OSM/photo estimate. Broad tier diameters, supports and leaf crown are photographic estimates. Static representative low-water phase, not simulation. Rotational sculpture has no surveyed facade; geography already baked. Cityscape: not tested; Full 3D world: not tested.",
+  "note": "1990 Pineapple Fountain in Waterfront Park, not the separate Vendue splash fountain. Basin 10.6 m diameter from OSM way 1356302855. Overall 5.14 m above pavement / 5 m above basin water is a revised photographic estimate; it differs from the unsurveyed OSM 4 m tag. Ovoid fruit is approximately 2 m wide × 1.78 m tall at y=2.16–3.94, with an approximately 1.2 m crown rise; bowl rim levels 1.10/2 m and other sculpture dimensions are estimates. Static representative low-water phase, not simulation. Rotational sculpture has no surveyed facade; geography already baked. Cityscape: not tested; Full 3D world: not tested.",
   "assets": {
     "near": {
       "url": "/models/buildings/pineapple-fountain-charleston-near.glb",
-      "bytes": 108088,
-      "triangles": 8456,
-      "drawCalls": 5,
+      "bytes": 118444,
+      "triangles": 8552,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -5.28000020980835,
@@ -134,16 +134,16 @@
         ],
         "max": [
           5.28000020980835,
-          4.025000095367432,
+          5.139999866485596,
           5.28000020980835
         ]
       }
     },
     "far": {
       "url": "/models/buildings/pineapple-fountain-charleston-far.glb",
-      "bytes": 45888,
-      "triangles": 2920,
-      "drawCalls": 5,
+      "bytes": 49716,
+      "triangles": 2872,
+      "drawCalls": 6,
       "bounds": {
         "min": [
           -5.28000020980835,
@@ -152,7 +152,7 @@
         ],
         "max": [
           5.28000020980835,
-          4.025000095367432,
+          5.139999866485596,
           5.28000020980835
         ]
       }
