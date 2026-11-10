@@ -1,0 +1,66 @@
+{
+  "id": "don-holt-bridge",
+  "name": "Don N. Holt Bridge",
+  "kind": "bridge",
+  "origin": [
+    -79.964174775,
+    32.8912967
+  ],
+  "height": 74,
+  "padM": 1750,
+  "frontageBearing": 99.6,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the flat foundation datum, not sea level. Main roadway 52 m, underside 49.8 m; approach grades and exposed pier heights are estimates. Metres east/up/south; mapped 99.6 degree bearing baked once. No DEM or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1992 three-span continuous through-Warren truss, current muted Citadel-blue paint. SCDOT: approximately 2 miles overall and 155 ft navigation clearance. OSM: about 491 m truss and 29.4 m envelope; nominal 244 m main span and 28.5 m road deck treated as estimates pending engineering drawings. Model 3330 m overall, 20 Warren panels; estimated truss depth 21 m and approach grades. No exit ramps, lamps, signage or traffic; library-only, no road fitting.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/don-holt-bridge-near.glb",
+      "bytes": 214668,
+      "triangles": 15932,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -1646.483154296875,
+          2.3841858265427618e-8,
+          -292.7767639160156
+        ],
+        "max": [
+          1646.483154296875,
+          73.50659942626953,
+          292.7767639160156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/don-holt-bridge-far.glb",
+      "bytes": 182680,
+      "triangles": 13428,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -1646.483154296875,
+          2.3841858265427618e-8,
+          -292.7767639160156
+        ],
+        "max": [
+          1646.483154296875,
+          73.50659942626953,
+          292.7767639160156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

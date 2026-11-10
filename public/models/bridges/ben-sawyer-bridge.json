@@ -1,0 +1,66 @@
+{
+  "id": "ben-sawyer-bridge",
+  "name": "Ben Sawyer Bridge",
+  "kind": "bridge",
+  "origin": [
+    -79.84205815,
+    32.772720674999995
+  ],
+  "height": 26.5,
+  "padM": 185,
+  "frontageBearing": 333.5,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the support-foot datum, not sea level. Closed swing deck 11.8 m, approach ends 3 m. Rigid 2010 superstructure, geographic orientation baked once; no DEM or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "FHWA: 247 ft centre-pivot Pratt swing span, two 452 ft approaches, six approach spans on each bank, 2010 replacement. OSM mapped length 352.48 m and bearing 333.5 degrees. Lane width 14 ft and sidewalk 5.5 ft from SCDOT. Deck height, 9.2 m truss rise, 26.5 m cabin roof, member sections, fenders and bay subdivisions estimated. Closed state only; no mechanisms, animation or road fitting.",
+  "assets": {
+    "near": {
+      "url": "/models/bridges/ben-sawyer-bridge-near.glb",
+      "bytes": 165096,
+      "triangles": 11110,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -84.13858032226562,
+          -9.536743306171047e-8,
+          -161.44515991210938
+        ],
+        "max": [
+          84.00029754638672,
+          26.5,
+          161.44515991210938
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/bridges/ben-sawyer-bridge-far.glb",
+      "bytes": 88124,
+      "triangles": 5302,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -84.13858032226562,
+          -9.536743306171047e-8,
+          -161.44515991210938
+        ],
+        "max": [
+          84.00029754638672,
+          26.5,
+          161.44515991210938
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

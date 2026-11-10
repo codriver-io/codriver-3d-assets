@@ -36989,6 +36989,350 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "don-holt-bridge",
+      "name": "Don N. Holt Bridge",
+      "kind": "bridge",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "1992 Cooper River crossing with pale blue continuous Warren truss, six-lane deck and long concrete approach viaducts.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs don-holt-bridge",
+        "provenance": "Original procedural geometry commissioned for Codriver. Mapped truss/road alignment © OpenStreetMap contributors, ODbL 1.0. Comparison only: Donholt.JPG by Citm2000, public domain, 2008 (predates repaint); SCDOT painting report and Live5 2017 repaint imagery, all rights reserved, reference-only, not redistributed. No photos, meshes, textures or signage lettering imported.",
+        "references": [
+          {
+            "label": "SCDOT existing conditions: 1992, three truss spans, approximately 2 miles, 155 ft clearance",
+            "url": "https://info2.scdot.org/projects/ViewerFiles/Appendix%20A-Existing%20Transportation%20Conditions%20Summary-Final%20July%202022.pdf"
+          },
+          {
+            "label": "OSM truss footprint",
+            "url": "https://www.openstreetmap.org/way/1469639956"
+          },
+          {
+            "label": "Citm2000, public domain, 2008 pre-repaint reference",
+            "url": "https://commons.wikimedia.org/wiki/File:Donholt.JPG"
+          },
+          {
+            "label": "SCDOT 2017 painting program; reference-only",
+            "url": "https://info2.scdot.org/SCDOTPress/Lists/Posts/Post.aspx?ID=2616"
+          },
+          {
+            "label": "Current Citadel-blue paint, 2017; all rights reserved, comparison only",
+            "url": "https://www.live5news.com/story/36522491/don-holt-bridge-gets-makeover-in-citadel-blue-color-as-painting-resumes/"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/don-holt-bridge/geometry.js"
+      },
+      "notes": "Current 2017 pale-blue repaint. Truss outline and bearing mapped; approximately 3330 m whole crossing, estimated approach profile and member sections. Exit ramps and signage excluded; library-only model.",
+      "documentation": "docs/assets/top-cities-don-holt-bridge.md",
+      "manifest": "/models/bridges/don-holt-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=don-holt-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=don-holt-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ben-sawyer-bridge",
+      "name": "Ben Sawyer Bridge",
+      "kind": "bridge",
+      "location": "Sullivan's Island, South Carolina",
+      "status": "ready",
+      "description": "2010 replacement of the historic swing bridge: polygonal Pratt through-truss, central pivot pier, overhead tender house and twelve approach spans.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs ben-sawyer-bridge",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver; OSM bridge outline and highway alignment © OpenStreetMap contributors, ODbL 1.0. Comparison-only photos verified on Commons: Peter Burka, Swing span of Ben Sawyer Bridge open in 2025, CC BY-SA 2.0; FHWA, Ben Sawyer Bridge Aerial View SC (8424392896), US DOT public-domain work (Flickr also CC BY 2.0). The aerial includes temporary 2010 old/new superstructures; only the new permanent configuration is modeled. No photo, texture or imported mesh redistributed.",
+        "references": [
+          {
+            "label": "FHWA: 247 ft pivot and 452 ft approaches",
+            "url": "https://www.fhwa.dot.gov/innovation/innovator/issue11/"
+          },
+          {
+            "label": "FHWA replacement demonstration report",
+            "url": "https://www.fhwa.dot.gov/hfl/projects/sc_rapidremovalreplacement_bensawyerbridge_sc703.pdf"
+          },
+          {
+            "label": "SCDOT current 2010 span and widened sidewalk",
+            "url": "https://www.scdot.org/inside/pdf/ConnectorArchives/Winter2010Connector.pdf"
+          },
+          {
+            "label": "OSM full outline",
+            "url": "https://www.openstreetmap.org/way/709657858"
+          },
+          {
+            "label": "OSM swing roadway",
+            "url": "https://www.openstreetmap.org/way/927285596"
+          },
+          {
+            "label": "Peter Burka 2025 current span, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Swing_span_of_Ben_Sawyer_Bridge_open_in_2025.jpg"
+          },
+          {
+            "label": "FHWA 2010 replacement aerial, public domain / CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ben_Sawyer_Bridge_Aerial_View_SC_(8424392896).jpg"
+          }
+        ]
+      },
+      "notes": "Closed road position. FHWA 247 ft swing span and two 452 ft approaches; OSM length 352.48 m. Height, pier and steel sections, cabin geometry and fenders estimated; no road fitting or operating animation.",
+      "documentation": "docs/assets/top-cities-ben-sawyer-bridge.md",
+      "manifest": "/models/bridges/ben-sawyer-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=ben-sawyer-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Sullivan's Island",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "noisette-creek-pedestrian-bridge",
+      "name": "Noisette Creek Pedestrian Bridge",
+      "kind": "bridge",
+      "location": "North Charleston, South Carolina",
+      "city": "North Charleston",
+      "status": "ready",
+      "description": "2022 Riverfront Park crossing with a curved pale deck, paired outward-leaning white arches, hangers and a mapped side viewing platform.",
+      "manifest": "/models/bridges/noisette-creek-pedestrian-bridge.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs noisette-creek-pedestrian-bridge",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/noisette-creek-pedestrian-bridge/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver. OSM outline, platform and centerline © OpenStreetMap contributors, ODbL 1.0. Designer Thomas & Hutton aerial photos 4.png and 1.png: all rights reserved, reference-only, not redistributed; compared locally. City of North Charleston Flickr 52490752215 verified CC BY-SA 2.0 via file page and Flickr oEmbed, but image download unavailable so not used for geometric comparison. No Commons images found; coordinator approved this reference-only exception. No imported mesh, photographic texture or traced photo outline.",
+        "references": [
+          {
+            "label": "Designer: 800 ft path, 230 ft span, 55 ft arches and aerial references (all rights reserved)",
+            "url": "https://www.thomasandhutton.com/portfolio_page/noisette-creek-pedestrian-bridge-north-charleston-sc/"
+          },
+          {
+            "label": "Designer aerial 1, all rights reserved, reference-only",
+            "url": "https://www.thomasandhutton.com/wp-content/uploads/2023/09/4.png"
+          },
+          {
+            "label": "Designer aerial 2, all rights reserved, reference-only",
+            "url": "https://www.thomasandhutton.com/wp-content/uploads/2023/09/1.png"
+          },
+          {
+            "label": "City 2024 report: November 9 2022, 235 ft span, 55 ft arches",
+            "url": "https://cms2.revize.com/revize/cityofnorthcharleston/Documents/Finance/FYE%202024%20ACFR%20-%20FINAL%20COPY%20%28DIGITAL%20COPY%29.pdf"
+          },
+          {
+            "label": "Railing supplier: 42 in posts, bronze finish and cable railing",
+            "url": "https://cicpgh.com/noisette-creek-pedestrian-bridge/"
+          },
+          {
+            "label": "OSM bridge outline and platform",
+            "url": "https://www.openstreetmap.org/way/1508243093"
+          },
+          {
+            "label": "OSM path centerline",
+            "url": "https://www.openstreetmap.org/way/1508243094"
+          },
+          {
+            "label": "North Charleston ribbon cutting, CC BY-SA 2.0 (license verified; image unavailable)",
+            "url": "https://www.flickr.com/photos/northcharleston/52490752215"
+          }
+        ]
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=noisette-creek-pedestrian-bridge&view=detail"
+          }
+        ]
+      },
+      "documentation": "docs/assets/top-cities-noisette-creek-pedestrian-bridge.md",
+      "notes": "Mapped 236.10 m path and event platform. Thomas & Hutton publishes 230 ft span and 55 ft tall arches; City report says 235 ft. Deck height, arch lean, cable layout, pile and seat details estimated; no road layer.",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "north-charleston-coliseum",
+      "name": "North Charleston Coliseum",
+      "kind": "building",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "1993 arena with an oval brick bowl, pale diamond masonry, shallow peaked silver roof and mapped glazed entrance wings.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/north-charleston-coliseum/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs north-charleston-coliseum",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/north-charleston-coliseum/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver. OSM footprint © OpenStreetMap contributors, ODbL 1.0. Commons photos verified: North Charleston Coliseum Aug2010 by Chris Pruitt, CC BY-SA 3.0 (exterior bowl, diamond pattern and roof); Darius Rucker Blvd unveiled (9500164219), North Charleston / Ryan Johnson, CC BY-SA 2.0 (2013 interior event at this coliseum, used only for entry framing and exposed roof context). The latter is not an exterior photograph. No photos, lettering, logos, textures or third-party geometry redistributed.",
+        "references": [
+          {
+            "label": "Official venue technical guide: arena-floor elevations and roof steel",
+            "url": "https://www.northcharlestoncoliseumpac.com/assets/doc/Facility-Info-COL-8-1-17-724a70448c.pdf"
+          },
+          {
+            "label": "Official venue",
+            "url": "https://www.northcharlestoncoliseumpac.com/"
+          },
+          {
+            "label": "OSM arena footprint only",
+            "url": "https://www.openstreetmap.org/way/190679013"
+          },
+          {
+            "label": "Chris Pruitt exterior, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:North_Charleston_Coliseum_Aug2010.jpg"
+          },
+          {
+            "label": "North Charleston / Ryan Johnson interior event, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Darius_Rucker_Blvd_unveiled_(9500164219).jpg"
+          }
+        ]
+      },
+      "notes": "Coliseum way 190679013 only; Performing Arts Center 190679212 and Convention Center 190679211 excluded. Official open steel is 97 ft above arena floor; 32.2 m exterior crown and 26 m eave are estimates. Both LODs retain diamond facade, window bays and complete footprint.",
+      "documentation": "docs/assets/top-cities-north-charleston-coliseum.md",
+      "manifest": "/models/buildings/north-charleston-coliseum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=north-charleston-coliseum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
