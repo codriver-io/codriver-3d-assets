@@ -37064,6 +37064,85 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "colonial-dorchester-bell-tower",
+      "name": "Colonial Dorchester (St. George's bell tower)",
+      "kind": "building",
+      "location": "Summerville, South Carolina",
+      "status": "ready",
+      "description": "Original procedural model of the standing roofless 1751 brick bell-tower ruin: arched openings, thick hollow shaft, corner pilasters and eroded raised crown.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/colonial-dorchester-bell-tower/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs colonial-dorchester-bell-tower",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colonial-dorchester-bell-tower/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver, 2026. Placement from OSM node 357110002 © OpenStreetMap contributors, ODbL 1.0. No OSM tower way exists. The square plan and bearing are authored estimates, not mapped ownership. Two Vitugglan Commons photos CC BY-SA 4.0 checked for identity and licence; comparison only, not redistributed. No scans, external meshes or textures.",
+        "references": [
+          {
+            "label": "SC State Parks — identity and 1751 tower",
+            "url": "https://southcarolinaparks.com/colonial-dorchester/history-and-interpretation"
+          },
+          {
+            "label": "NRHP Old Dorchester nomination",
+            "url": "https://npgallery.nps.gov/GetAsset/a1bc3cc7-136a-4bbf-82a5-dc38bc4312ad/"
+          },
+          {
+            "label": "HABS SC-189 tower record",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0200/sc0239/data/sc0239data.pdf"
+          },
+          {
+            "label": "OSM ruins node 357110002",
+            "url": "https://www.openstreetmap.org/node/357110002"
+          },
+          {
+            "label": "Vitugglan tower exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St_georges_belltower_dorchester_sc_12-30-11.jpg"
+          },
+          {
+            "label": "Vitugglan alternate exterior, CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:St_georges_belltower_dorchester_sc_alt_view_12-30-11.jpg"
+          }
+        ]
+      },
+      "notes": "OSM ruins node only; authored plan and orientation, no provider footprint/replacement claim. All model dimensions are photo estimates; NRHP church dimensions do not measure the tower. No reconstructed church, roof, bells, tabby fort or textures. Cityscape: not tested. Full 3D world: not tested.",
+      "documentation": "docs/assets/top-cities-colonial-dorchester-bell-tower.md",
+      "manifest": "/models/buildings/colonial-dorchester-bell-tower.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=colonial-dorchester-bell-tower&view=detail"
+          }
+        ]
+      },
+      "city": "Summerville",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }

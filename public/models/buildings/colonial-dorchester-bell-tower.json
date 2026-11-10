@@ -1,0 +1,68 @@
+{
+  "id": "colonial-dorchester-bell-tower",
+  "name": "Colonial Dorchester (St. George's bell tower)",
+  "kind": "building",
+  "origin": [
+    -80.1707518,
+    32.9490043
+  ],
+  "height": 12.2,
+  "padM": 5,
+  "frontageBearing": 270,
+  "footprintless": true,
+  "rotationDeg": 0,
+  "widthM": 5.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid masonry toe at local y=0, no absolute altitude, terrain or Mercator scale. Estimated orientation baked once.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Standing roofless 1751 brick bell-tower ruin, not a church reconstruction. OSM has a ruins node only: no mapped footprint, no provider way ownership. Authored 5.3 m square shaft, 12.2 m surviving top, wall thickness, openings and west-facing bearing are photo estimates, not a survey or two-point alignment. NRHP publishes dimensions for the vanished church, not the tower. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/colonial-dorchester-bell-tower-near.glb",
+      "bytes": 194452,
+      "triangles": 29616,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -3.140000104904175,
+          0,
+          -3.140000104904175
+        ],
+        "max": [
+          3.140000104904175,
+          12.199999809265137,
+          3.140000104904175
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/colonial-dorchester-bell-tower-far.glb",
+      "bytes": 54176,
+      "triangles": 6208,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -3.140000104904175,
+          0,
+          -3.140000104904175
+        ],
+        "max": [
+          3.140000104904175,
+          12.199999809265137,
+          3.140000104904175
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/colonial-dorchester-bell-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
