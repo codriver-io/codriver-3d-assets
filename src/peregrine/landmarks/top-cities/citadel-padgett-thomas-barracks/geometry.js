@@ -108,8 +108,8 @@ export function create({detail='near'}={}){
  // Clock disc: no text or institutional insignia.
  const mount=new THREE.CylinderGeometry(.72,.72,.52,near?32:16,1,true);mount.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3(...N(e))));mount.translate(...P(0,front+.26,24.2));b.put(mount,'wall');
  const clock=new THREE.CircleGeometry(.72,near?32:16);clock.rotateY(Math.PI/2+24.6*Math.PI/180);clock.translate(...P(0,front+.52,24.2));b.put(clock,'glass');
- // Structural courtyard paving, bounded by the open quadrangle; no landscape mesh.
+ // Courtyard paving is 0.10 m proud of grade to clear the world terrain depth surface.
  const step=near?2.2:4.4,nu=Math.ceil(72.6/step),nv=Math.ceil(42.6/step);
- for(let i=0;i<nu;i++)for(let j=0;j<nv;j++){const u0=-36.3+72.6*i/nu,u1=-36.3+72.6*(i+1)/nu,v0=-21.3+42.6*j/nv,v1=-21.3+42.6*(j+1)/nv;S.quad((i+j)%2?'red':'floor',P(u0,v0,.015),P(u1,v0,.015),P(u1,v1,.015),P(u0,v1,.015),[0,1,0]);}
+ for(let i=0;i<nu;i++)for(let j=0;j<nv;j++){const u0=-36.3+72.6*i/nu,u1=-36.3+72.6*(i+1)/nu,v0=-21.3+42.6*j/nv,v1=-21.3+42.6*(j+1)/nv;S.quad((i+j)%2?'red':'floor',P(u0,v0,.10),P(u1,v0,.10),P(u1,v1,.10),P(u0,v1,.10),[0,1,0]);}
  S.flush();return b.finish();
 }

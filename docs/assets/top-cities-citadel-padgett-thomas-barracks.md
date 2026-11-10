@@ -41,3 +41,7 @@ Far reduces curve segmentation, groups neighboring arcade/window bays into a coa
 near: 34,082 triangles / 5 draws / 562,872 bytes; far: 10,616 triangles / 5 draws / 180,580 bytes. No remaining qa-metrics flags. Final contact sheet: `tmp/landmark-qa/sheets/citadel-padgett-thomas-barracks.jpg`; metrics: `tmp/chs4/citadel-metrics.json`; `--bounds tmp/chs4/citadel-framing.json` provides the full silhouette in the oblique evidence tiles. Export: `node scripts/build-top-cities-landmarks.mjs citadel-padgett-thomas-barracks` uses shared meshopt compression and quantization. QA checks exported near/far bounds, budgets, hidden/layered faces, back faces, window rhythm and member contacts; the final sheet provides overview/opposite/roof/street and far views. Static browser verification is separate from any driving application.
 
 **Cityscape: not tested / Full 3D world: not tested.** No application is present. Separate contributor/product permission remains a human maintainer check; no agent signature or acceptance is claimed.
+
+## Courtyard paving correction, 2026-11-10
+
+A host test in a terrain mode showed the terrain depth surface through the checker courtyard, whose paving sat 0.015 m above local grade. The paving is now 0.10 m above grade in both detail levels; nothing else changed. Costs are unchanged at 34,082 triangles / 5 draws near and 10,616 / 5 far. This correction came from a host application test and does not by itself establish app integration of this library version.

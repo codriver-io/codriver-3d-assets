@@ -7,7 +7,7 @@ export const PALETTES={
  dark:{wall:'#939d9b',glass:'#293c42',roof:'#606d71',floor:'#737f7b',red:'#765c58'},
 };
 export const MANIFEST={
- elevationDatum:'Rigid local y=0 is the quadrangle paving / exterior footing plane; no terrain, sea-level altitude or Mercator scale.',
+ elevationDatum:'Rigid local y=0 is the exterior footing plane; courtyard paving is 0.10 m above it; no terrain, sea-level altitude or Mercator scale.',
  attribution:'Original procedural geometry; mapped footprint © OpenStreetMap contributors (ODbL 1.0).',
  note:'Current 2004 replacement, not the demolished 1922 building. Tower 109 ft / 33.2232 m from The Citadel owner; plan from OSM relation 6897174 (outer way 38733112, courtyard hole 38733113). Wing heights, arcades, turret sizes, crenellations, sally-port arch, clock and checker paving are photographic estimates. Tower height excludes flagpole and flags. Geographic rotation is baked into the mesh once; the courtyard remains open in both LODs.',
 };
