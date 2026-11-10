@@ -37068,6 +37068,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "rainbow-row-charleston",
+      "name": "Rainbow Row",
+      "kind": "building",
+      "location": "83–107 East Bay Street, Charleston, South Carolina",
+      "status": "ready",
+      "description": "Thirteen pastel Georgian row-house fronts, with unequal widths and rooflines, repeated shuttered sash windows, chimney stacks and the green Dutch gable.",
+      "manifest": "/models/buildings/rainbow-row-charleston.json",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs rainbow-row-charleston",
+        "provenance": "Original procedural geometry. Main front-house footprint intervals and ridge heights from OpenStreetMap, © OpenStreetMap contributors, ODbL 1.0; address grouping from Charleston architectural inventory. Photos by Ymblanter, CC BY-SA 4.0, verified as East Bay Street Rainbow Row and used only for local comparison; none shipped. No third-party mesh, scan, texture, logo or lettering. No legal acceptance is asserted by this agent.",
+        "references": [
+          {
+            "label": "City of Charleston, historic resources survey: shared walls and Georgian/Federal row houses",
+            "url": "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Agenda/_03112026-10738"
+          },
+          {
+            "label": "City architectural inventory: East Bay addresses and historical names",
+            "url": "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Agenda/_02262026-10733"
+          },
+          {
+            "label": "OSM combined 97–101 main footprint",
+            "url": "https://www.openstreetmap.org/way/1356814318"
+          },
+          {
+            "label": "Rainbow Row front · Ymblanter, 2017 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rainbow_Row_front.jpg"
+          },
+          {
+            "label": "Rainbow Row from south side · Ymblanter, 2017 (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:Rainbow_Row_from_south_side.jpg"
+          }
+        ],
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rainbow-row-charleston/geometry.js"
+      },
+      "inspection": {
+        "url": "/asset-preview.html?asset=rainbow-row-charleston&view=overview",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=rainbow-row-charleston&view=detail"
+          }
+        ]
+      },
+      "notes": "Sourced: OSM main frontage positions, 11 footprint rings and mapper ridge tags 11–17 m; 97–101 is one mapped building, subdivided into three house fronts. Estimated: 97 raised to 16 m based on the tall lavender facade in the reference, 99/101 retain 13 m ridges, colors, visible storeys, opening sizes and rear block depths. Main front blocks only, excluding 79–81 and rear annexes. Cityscape and Full 3D world not tested.",
+      "documentation": "docs/assets/top-cities-rainbow-row-charleston.md",
+      "city": "Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
