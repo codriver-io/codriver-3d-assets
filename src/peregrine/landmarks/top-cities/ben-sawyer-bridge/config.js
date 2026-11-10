@@ -1,7 +1,6 @@
-// STUB, not released. Replace every value from sourced references; the origin below is only approximate.
-export const SPEC = {
-  id: "ben-sawyer-bridge", name: "Ben Sawyer Bridge", kind: 'bridge', ready: false,
-  origin: [-79.8414, 32.7731], height: 1, padM: 10, frontageBearing: 0,
-};
-export const PALETTES = { light: {}, dark: {} };
-export const MANIFEST = { elevationDatum: '', attribution: '', note: '' };
+// 2010 replacement, closed road-traffic position; not the narrower 1945 superstructure.
+export const SPEC={id:'ben-sawyer-bridge',name:'Ben Sawyer Bridge',kind:'bridge',ready:true,origin:[-79.84205815, 32.772720674999995],height:26.5,padM:185,frontageBearing:333.5,footprintless:true};
+export const PALETTES={light:{steel:'#a6adb1',concrete:'#b6b7af',asphalt:'#767c7b',rail:'#c3c7c4',cabin:'#bec2b8',glass:'#526c71',roof:'#6d8178',timber:'#777466'},dark:{steel:'#6b7d88',concrete:'#73818b',asphalt:'#36434b',rail:'#8c9a9e',cabin:'#7b8c8e',glass:'#3b5966',roof:'#4c6663',timber:'#555f62'}};
+export const MANIFEST={elevationDatum:'Local y=0 is the support-foot datum, not sea level. Closed swing deck 11.8 m, approach ends 3 m. Rigid 2010 superstructure, geographic orientation baked once; no DEM or Mercator scale.',attribution:'Original procedural geometry; mapped bridge outline © OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright',note:'FHWA: 247 ft centre-pivot Pratt swing span, two 452 ft approaches, six approach spans on each bank, 2010 replacement. OSM mapped length 352.48 m and bearing 333.5 degrees. Lane width 14 ft and sidewalk 5.5 ft from SCDOT. Deck height, 9.2 m truss rise, 26.5 m cabin roof, member sections, fenders and bay subdivisions estimated. Closed state only; no mechanisms, animation or road fitting.'};
+export const AXIS=-2.031269032577944;
+export const LENGTH=352.477954210469;

@@ -37072,6 +37072,97 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "ben-sawyer-bridge",
+      "name": "Ben Sawyer Bridge",
+      "kind": "bridge",
+      "location": "Sullivan's Island, South Carolina",
+      "status": "ready",
+      "description": "2010 replacement of the historic swing bridge: polygonal Pratt through-truss, central pivot pier, overhead tender house and twelve approach spans.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs ben-sawyer-bridge",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ben-sawyer-bridge/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver; OSM bridge outline and highway alignment © OpenStreetMap contributors, ODbL 1.0. Comparison-only photos verified on Commons: Peter Burka, Swing span of Ben Sawyer Bridge open in 2025, CC BY-SA 2.0; FHWA, Ben Sawyer Bridge Aerial View SC (8424392896), US DOT public-domain work (Flickr also CC BY 2.0). The aerial includes temporary 2010 old/new superstructures; only the new permanent configuration is modeled. No photo, texture or imported mesh redistributed.",
+        "references": [
+          {
+            "label": "FHWA: 247 ft pivot and 452 ft approaches",
+            "url": "https://www.fhwa.dot.gov/innovation/innovator/issue11/"
+          },
+          {
+            "label": "FHWA replacement demonstration report",
+            "url": "https://www.fhwa.dot.gov/hfl/projects/sc_rapidremovalreplacement_bensawyerbridge_sc703.pdf"
+          },
+          {
+            "label": "SCDOT current 2010 span and widened sidewalk",
+            "url": "https://www.scdot.org/inside/pdf/ConnectorArchives/Winter2010Connector.pdf"
+          },
+          {
+            "label": "OSM full outline",
+            "url": "https://www.openstreetmap.org/way/709657858"
+          },
+          {
+            "label": "OSM swing roadway",
+            "url": "https://www.openstreetmap.org/way/927285596"
+          },
+          {
+            "label": "Peter Burka 2025 current span, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Swing_span_of_Ben_Sawyer_Bridge_open_in_2025.jpg"
+          },
+          {
+            "label": "FHWA 2010 replacement aerial, public domain / CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Ben_Sawyer_Bridge_Aerial_View_SC_(8424392896).jpg"
+          }
+        ]
+      },
+      "notes": "Closed road position. FHWA 247 ft swing span and two 452 ft approaches; OSM length 352.48 m. Height, pier and steel sections, cabin geometry and fenders estimated; no road fitting or operating animation.",
+      "documentation": "docs/assets/top-cities-ben-sawyer-bridge.md",
+      "manifest": "/models/bridges/ben-sawyer-bridge.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=ben-sawyer-bridge",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=roof"
+          },
+          {
+            "label": "Deck",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=deck"
+          },
+          {
+            "label": "Support",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=support"
+          },
+          {
+            "label": "Underside",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=underside"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=ben-sawyer-bridge&view=detail"
+          }
+        ]
+      },
+      "city": "Sullivan's Island",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
