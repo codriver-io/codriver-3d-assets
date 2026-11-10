@@ -33,9 +33,11 @@ Thick walls have real arched cutouts and recessed glazing, with individual recta
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 12,256 | 4 | 175,332 |
-| Far | 6,200 | 4 | 101,832 |
+| Near | 12,256 | 4 | 175,856 |
+| Far | 6,200 | 4 | 102,356 |
 
 `qa-metrics` reports no issues, no below-grade geometry, zero layered/coplanar candidates and 0% back-face hits. The final contact sheet `tmp/landmark-qa/sheets/st-james-final/st-james-goose-creek-church.jpg` compares the verified modern exterior with five near views and two far views; padded scratch bounds avoid automatic framing clipping. Metrics: `tmp/landmark-qa/st-james-goose-creek-church-metrics.json`. Two look-fix rounds corrected the top of the clipped gable and the Y-rotation sign (the east axis runs south of east); final comparison preserves the roof silhouette, windows and doorway in both LODs. Finer sculpture and mouldings remain deliberately simplified. Local reference images remain outside tracked paths.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Static library inspection does not establish host placement, terrain fitting, provider replacement or driving-app integration.
+
+Final library validation: `pnpm build` and `pnpm check` passed for 419 assets / 846 GLB variants. The focused browser matrix loaded near/far, light/dark and GLB/procedural for all four Charleston-area landmarks (32 scenarios, no page errors); local evidence: `tmp/landmark-qa/builder-5-browser-matrix.json`. Shared final geometry metrics are in `tmp/landmark-qa/builder-5-final-metrics.json`. Byte counts above include the final licence metadata stamp, read from each measured manifest rather than the exporter's pre-stamp console summary.

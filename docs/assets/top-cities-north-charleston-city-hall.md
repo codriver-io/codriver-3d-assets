@@ -39,9 +39,11 @@ Heights, bays, minor rear facade arrangements, pilaster section and crown curvat
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 26,330 | 5 | 323,532 |
-| Far | 10,222 | 5 | 152,356 |
+| Near | 26,330 | 5 | 324,052 |
+| Far | 10,222 | 5 | 152,880 |
 
 Final `qa-metrics` reports no flags, zero coplanar/layered candidates and no back-face sweep hits. Bounds match between LODs. Metrics: `tmp/landmark-qa/north-charleston-city-hall-metrics.json`. Final contact sheet: `tmp/landmark-qa/sheets/north-final/north-charleston-city-hall-front-night.jpg`. The script-generated final sheet uses padded scratch bounds; because its automatic southwest/northeast angles hide the southeast entrance, three tiles are supplemented with actual inspector facade captures: near day, far day and near night. The final sheet shows the full silhouette, curved crown, four storeys, recessed openings and opposite side/roof. The first visual round prompted the complete front/day/night comparison; geometry QA removed hidden inside caps, coplanar roof/joins and internal keystone faces. No shared script was changed locally.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. Library inspection is separate from host integration, provider replacement, shared shading and terrain validation.
+
+Final library validation: `pnpm build` and `pnpm check` passed for 419 assets / 846 GLB variants. The focused browser matrix loaded near/far, light/dark and GLB/procedural for all four Charleston-area landmarks (32 scenarios, no page errors); local evidence: `tmp/landmark-qa/builder-5-browser-matrix.json`. Shared final geometry metrics are in `tmp/landmark-qa/builder-5-final-metrics.json`. Byte counts above include the final licence metadata stamp, read from each measured manifest rather than the exporter's pre-stamp console summary.

@@ -38,9 +38,11 @@ The fort, nave foundations, cemetery, trees, historic lettering and former iron 
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 29,616 | 3 | 193,924 |
-| Far | 6,208 | 3 | 53,648 |
+| Near | 29,616 | 3 | 194,452 |
+| Far | 6,208 | 3 | 54,176 |
 
 Final `qa-metrics` has no flags: no below-grade parts, no coplanar/layered candidates, no back-face sweep hits, matching bounds and preserved arch openings. Metrics: `tmp/landmark-qa/colonial-dorchester-bell-tower-metrics.json`. Final exported contact sheet: `tmp/landmark-qa/sheets/final2/colonial-dorchester-bell-tower.jpg`, using padded scratch bounds to show full top and base. Two visual comparisons checked open shaft, raised crown, arch rhythm and far silhouette against the verified photo; the final change removes tile layers hidden by adjoining walls and cornice returns. Approximate brick courses are deliberately larger in far. Height, plan and orientation remain estimates.
 
 Cityscape: **not tested**. Full 3D world: **not tested**. The standalone library viewer cannot establish either host mode.
+
+Final library validation: `pnpm build` and `pnpm check` passed for 419 assets / 846 GLB variants. The focused browser matrix loaded near/far, light/dark and GLB/procedural for all four Charleston-area landmarks (32 scenarios, no page errors); local evidence: `tmp/landmark-qa/builder-5-browser-matrix.json`. Shared final geometry metrics are in `tmp/landmark-qa/builder-5-final-metrics.json`. Byte counts above include the final licence metadata stamp, read from each measured manifest rather than the exporter's pre-stamp console summary.
