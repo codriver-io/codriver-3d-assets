@@ -33,8 +33,8 @@ Thick walls have real arched cutouts and recessed glazing, with individual recta
 
 | LOD | Triangles | Draws | Bytes |
 | --- | ---: | ---: | ---: |
-| Near | 12,256 | 4 | 175,080 |
-| Far | 6,200 | 4 | 101,656 |
+| Near | 12,256 | 4 | 175,332 |
+| Far | 6,200 | 4 | 101,832 |
 
 `qa-metrics` reports no issues, no below-grade geometry, zero layered/coplanar candidates and 0% back-face hits. The final contact sheet `tmp/landmark-qa/sheets/st-james-final/st-james-goose-creek-church.jpg` compares the verified modern exterior with five near views and two far views; padded scratch bounds avoid automatic framing clipping. Metrics: `tmp/landmark-qa/st-james-goose-creek-church-metrics.json`. Two look-fix rounds corrected the top of the clipped gable and the Y-rotation sign (the east axis runs south of east); final comparison preserves the roof silhouette, windows and doorway in both LODs. Finer sculpture and mouldings remain deliberately simplified. Local reference images remain outside tracked paths.
 
