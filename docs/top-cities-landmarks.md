@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (297 released)
+## The collection (317 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -305,6 +305,26 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `pavillon-roger-gaudry` | Pavillon Roger-Gaudry (Université de Montréal) | Montréal | building |
 | `edificio-inteligente-epm` | Edificio Inteligente EPM | Medellín | building |
 | `parliament-hill-centre-block` | Parliament Hill Centre Block & Peace Tower | Ottawa | building |
+| `arthur-ravenel-jr-bridge` | Arthur Ravenel Jr. Bridge | Charleston | bridge |
+| `ashley-river-memorial-bridge` | Ashley River Memorial Bridge | Charleston | bridge |
+| `fort-sumter` | Fort Sumter | Charleston | building |
+| `rainbow-row-charleston` | Rainbow Row | Charleston | building |
+| `citadel-padgett-thomas-barracks` | Padgett-Thomas Barracks (The Citadel) | Charleston | building |
+| `st-michaels-church-charleston` | St. Michael's Church | Charleston | building |
+| `st-philips-church-charleston` | St. Philip's Church | Charleston | building |
+| `us-custom-house-charleston` | United States Custom House | Charleston | building |
+| `pineapple-fountain-charleston` | Pineapple Fountain | Charleston | building |
+| `don-holt-bridge` | Don N. Holt Bridge | North Charleston | bridge |
+| `noisette-creek-pedestrian-bridge` | Noisette Creek Pedestrian Bridge | North Charleston | bridge |
+| `north-charleston-coliseum` | North Charleston Coliseum | North Charleston | building |
+| `charleston-international-airport-terminal` | Charleston International Airport terminal | North Charleston | building |
+| `north-charleston-city-hall` | North Charleston City Hall | North Charleston | building |
+| `st-james-goose-creek-church` | St. James' Church, Goose Creek | Goose Creek | building |
+| `goose-creek-municipal-center` | Goose Creek Municipal Center (City Hall) | Goose Creek | building |
+| `uss-yorktown-cv10` | USS Yorktown (CV-10) | Mount Pleasant | building |
+| `ben-sawyer-bridge` | Ben Sawyer Bridge | Sullivan's Island | bridge |
+| `morris-island-lighthouse` | Morris Island Lighthouse | Folly Beach | building |
+| `colonial-dorchester-bell-tower` | Colonial Dorchester (St. George's bell tower) | Summerville | building |
 
 ## A landmark is a folder
 
