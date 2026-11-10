@@ -37258,6 +37258,81 @@
       "copyright": "© 2026 Codriver (original commissioned model)",
       "geographicDataLicense": "ODbL-1.0",
       "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "north-charleston-coliseum",
+      "name": "North Charleston Coliseum",
+      "kind": "building",
+      "location": "North Charleston, South Carolina",
+      "status": "ready",
+      "description": "1993 arena with an oval brick bowl, pale diamond masonry, shallow peaked silver roof and mapped glazed entrance wings.",
+      "source": {
+        "path": "src/peregrine/landmarks/top-cities/north-charleston-coliseum/geometry.js",
+        "build": "node scripts/build-top-cities-landmarks.mjs north-charleston-coliseum",
+        "url": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/north-charleston-coliseum/geometry.js",
+        "provenance": "Original procedural geometry commissioned for Codriver. OSM footprint © OpenStreetMap contributors, ODbL 1.0. Commons photos verified: North Charleston Coliseum Aug2010 by Chris Pruitt, CC BY-SA 3.0 (exterior bowl, diamond pattern and roof); Darius Rucker Blvd unveiled (9500164219), North Charleston / Ryan Johnson, CC BY-SA 2.0 (2013 interior event at this coliseum, used only for entry framing and exposed roof context). The latter is not an exterior photograph. No photos, lettering, logos, textures or third-party geometry redistributed.",
+        "references": [
+          {
+            "label": "Official venue technical guide: arena-floor elevations and roof steel",
+            "url": "https://www.northcharlestoncoliseumpac.com/assets/doc/Facility-Info-COL-8-1-17-724a70448c.pdf"
+          },
+          {
+            "label": "Official venue",
+            "url": "https://www.northcharlestoncoliseumpac.com/"
+          },
+          {
+            "label": "OSM arena footprint only",
+            "url": "https://www.openstreetmap.org/way/190679013"
+          },
+          {
+            "label": "Chris Pruitt exterior, CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:North_Charleston_Coliseum_Aug2010.jpg"
+          },
+          {
+            "label": "North Charleston / Ryan Johnson interior event, CC BY-SA 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Darius_Rucker_Blvd_unveiled_(9500164219).jpg"
+          }
+        ]
+      },
+      "notes": "Coliseum way 190679013 only; Performing Arts Center 190679212 and Convention Center 190679211 excluded. Official open steel is 97 ft above arena floor; 32.2 m exterior crown and 26 m eave are estimates. Both LODs retain diamond facade, window bays and complete footprint.",
+      "documentation": "docs/assets/top-cities-north-charleston-coliseum.md",
+      "manifest": "/models/buildings/north-charleston-coliseum.json",
+      "inspection": {
+        "url": "/asset-preview.html?asset=north-charleston-coliseum",
+        "views": [
+          {
+            "label": "Overview",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=overview"
+          },
+          {
+            "label": "Facade",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=facade"
+          },
+          {
+            "label": "Back",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=back"
+          },
+          {
+            "label": "Roof",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=roof"
+          },
+          {
+            "label": "Street",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=street"
+          },
+          {
+            "label": "Detail",
+            "url": "/asset-preview.html?asset=north-charleston-coliseum&view=detail"
+          }
+        ]
+      },
+      "city": "North Charleston",
+      "license": "CC-BY-4.0",
+      "codeLicense": "MIT",
+      "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+      "copyright": "© 2026 Codriver (original commissioned model)",
+      "geographicDataLicense": "ODbL-1.0",
+      "geographicDataUrl": "https://www.openstreetmap.org/copyright"
     }
   ]
 }
