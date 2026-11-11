@@ -1,0 +1,264 @@
+{
+  "id": "basilique-saint-frederic-drummondville",
+  "name": "Basilique Saint-Frédéric",
+  "kind": "building",
+  "origin": [
+    -72.48899,
+    45.88409
+  ],
+  "height": 45.72,
+  "padM": 43,
+  "frontageBearing": 38.164279709894174,
+  "rotation": 2.4755003160000735,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -72.4890851,
+          45.8838149
+        ],
+        [
+          -72.4889658,
+          45.8839241
+        ],
+        [
+          -72.4889533,
+          45.8839175
+        ],
+        [
+          -72.4889139,
+          45.8839536
+        ],
+        [
+          -72.48890897136572,
+          45.883950973362566
+        ],
+        [
+          -72.48882268672992,
+          45.88402739881339
+        ],
+        [
+          -72.4888256,
+          45.884029
+        ],
+        [
+          -72.4888954,
+          45.8840673
+        ],
+        [
+          -72.4887391,
+          45.8842052
+        ],
+        [
+          -72.4887245,
+          45.8841972
+        ],
+        [
+          -72.4887192,
+          45.8842019
+        ],
+        [
+          -72.4887071,
+          45.8842126
+        ],
+        [
+          -72.488699,
+          45.8842197
+        ],
+        [
+          -72.4886912,
+          45.8842266
+        ],
+        [
+          -72.4887085,
+          45.8842361
+        ],
+        [
+          -72.4887878,
+          45.8842795
+        ],
+        [
+          -72.4888412,
+          45.8843088
+        ],
+        [
+          -72.4888186,
+          45.8843288
+        ],
+        [
+          -72.4888916,
+          45.8843688
+        ],
+        [
+          -72.4889175,
+          45.8843458
+        ],
+        [
+          -72.4889515,
+          45.8843158
+        ],
+        [
+          -72.4889061,
+          45.8842909
+        ],
+        [
+          -72.4890529,
+          45.884161
+        ],
+        [
+          -72.4891071,
+          45.8841906
+        ],
+        [
+          -72.4892455,
+          45.884068
+        ],
+        [
+          -72.4893644,
+          45.8839627
+        ],
+        [
+          -72.4892992,
+          45.883927
+        ],
+        [
+          -72.4892982,
+          45.8839136
+        ],
+        [
+          -72.4892977,
+          45.8839073
+        ],
+        [
+          -72.4892958,
+          45.8838829
+        ],
+        [
+          -72.4892137,
+          45.8838412
+        ],
+        [
+          -72.4891975,
+          45.8838423
+        ],
+        [
+          -72.4891437,
+          45.8838458
+        ],
+        [
+          -72.4890851,
+          45.8838149
+        ]
+      ],
+      [
+        [
+          -72.48868976411873,
+          45.88422509057329
+        ],
+        [
+          -72.48887848367517,
+          45.88432833600253
+        ],
+        [
+          -72.48884579009257,
+          45.88435729390177
+        ],
+        [
+          -72.48865707053614,
+          45.88425404847253
+        ],
+        [
+          -72.48868976411873,
+          45.88422509057329
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -72.4893644,
+        45.8839627
+      ],
+      [
+        -72.4891071,
+        45.8841906
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "stairFootprint": [
+    [
+      -72.48868976411873,
+      45.88422509057329
+    ],
+    [
+      -72.48887848367517,
+      45.88432833600253
+    ],
+    [
+      -72.48884579009257,
+      45.88435729390177
+    ],
+    [
+      -72.48865707053614,
+      45.88425404847253
+    ],
+    [
+      -72.48868976411873,
+      45.88422509057329
+    ]
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is rigid foundation grade; no DEM, sea-level height, terrain exaggeration or Mercator stretch is baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present Saint-Frédéric basilica after the 2025 tower restoration: asymmetric Gothic facade, 7.32 m square main tower with black louvred belfry and green needle, 4.3 m minor tower carrying a statue, large traceried centre window, three portals and broad stairs. Published main tip 45.72 m and minor tower 21.34 m; church length is reported as 57.3 or 58 m, so horizontal fit follows the mapped envelope and both lengths are approximate. The large attached presbytery/connection in the mapped way is clipped out of replacement ownership. Front is architectural +Z toward the square (bearing about 38°), with yaw baked once; y=0 is the bottom stair/pavement datum. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/basilique-saint-frederic-drummondville-near.glb",
+      "bytes": 167876,
+      "triangles": 9969,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -28.898897171020508,
+          -2.8610228852699038e-8,
+          -31.620317459106445
+        ],
+        "max": [
+          25.713449478149414,
+          45.720001220703125,
+          30.985565185546875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/basilique-saint-frederic-drummondville-far.glb",
+      "bytes": 117792,
+      "triangles": 6727,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -28.898897171020508,
+          -2.8610228852699038e-8,
+          -31.620317459106445
+        ],
+        "max": [
+          25.713449478149414,
+          45.720001220703125,
+          30.985565185546875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilique-saint-frederic-drummondville/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

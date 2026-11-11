@@ -1,0 +1,262 @@
+{
+  "id": "cathedral-blessed-sacrament-sacramento",
+  "name": "Cathedral of the Blessed Sacrament",
+  "kind": "building",
+  "origin": [
+    -121.49199924999999,
+    38.579004749999996
+  ],
+  "height": 65.53,
+  "widthM": 39,
+  "depthM": 70,
+  "padM": 45,
+  "frontageBearing": 288.4448901119935,
+  "rotation": 4.390464917761857,
+  "controlPoints": [
+    [
+      -121.4917031,
+      38.5788283
+    ],
+    [
+      -121.4916147,
+      38.5790355
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -121.4919872,
+          38.579096
+        ],
+        [
+          -121.4920615,
+          38.5791142
+        ],
+        [
+          -121.4920446,
+          38.5791565
+        ],
+        [
+          -121.4921937,
+          38.5791929
+        ],
+        [
+          -121.4921854,
+          38.5792136
+        ],
+        [
+          -121.4922538,
+          38.5792304
+        ],
+        [
+          -121.4922697,
+          38.5791924
+        ],
+        [
+          -121.4922975,
+          38.5791871
+        ],
+        [
+          -121.492307,
+          38.579177
+        ],
+        [
+          -121.4923208,
+          38.5791449
+        ],
+        [
+          -121.4923351,
+          38.5791114
+        ],
+        [
+          -121.4923459,
+          38.5790863
+        ],
+        [
+          -121.4923623,
+          38.579048
+        ],
+        [
+          -121.4923769,
+          38.579014
+        ],
+        [
+          -121.492383,
+          38.5789997
+        ],
+        [
+          -121.4923793,
+          38.5789832
+        ],
+        [
+          -121.492366,
+          38.5789735
+        ],
+        [
+          -121.4923838,
+          38.5789305
+        ],
+        [
+          -121.4923135,
+          38.5789128
+        ],
+        [
+          -121.4923063,
+          38.5789303
+        ],
+        [
+          -121.4920853,
+          38.5788746
+        ],
+        [
+          -121.492097,
+          38.5788462
+        ],
+        [
+          -121.4918562,
+          38.5787855
+        ],
+        [
+          -121.4918462,
+          38.5788098
+        ],
+        [
+          -121.4917242,
+          38.5787791
+        ],
+        [
+          -121.4917031,
+          38.5788283
+        ],
+        [
+          -121.4916147,
+          38.5790355
+        ],
+        [
+          -121.4917062,
+          38.5790579
+        ],
+        [
+          -121.4916983,
+          38.5790772
+        ],
+        [
+          -121.4917373,
+          38.579087
+        ],
+        [
+          -121.4917319,
+          38.5791
+        ],
+        [
+          -121.4918042,
+          38.5791181
+        ],
+        [
+          -121.4918016,
+          38.5791246
+        ],
+        [
+          -121.4918944,
+          38.5791475
+        ],
+        [
+          -121.4918971,
+          38.5791409
+        ],
+        [
+          -121.4919628,
+          38.579157
+        ],
+        [
+          -121.4919872,
+          38.579096
+        ]
+      ],
+      [
+        [
+          -121.49228990565753,
+          38.579217842629745
+        ],
+        [
+          -121.49239534032769,
+          38.578970715212805
+        ],
+        [
+          -121.49244112339338,
+          38.57898265240231
+        ],
+        [
+          -121.49233568872322,
+          38.57922977981925
+        ],
+        [
+          -121.49228990565753,
+          38.579217842629745
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -121.49199924999999,
+        38.579004749999996
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped cathedral only; rectory437894391 excluded. Exterior sources correct the initial shorthand: one tall central bell tower and two smaller corner towers, with a grey restored dome (not twin equal towers/red roof). Published tallest-spire215ft vs restoration supplier217ft/OSM66m are inconsistent, so65.53m is adopted as an approximate estimate; intermediate facade/tower levels and dome175ft estimate are photo fitted. Both LODs retain the open belfry, clocks, rose, arched portals, lesser towers, dome ribs and open lantern. Highest central cross65.53m, dome cross53.34m. Stair first tread0.2m; terrain and surrounding square excluded. No letters, logos, interior artwork or scans. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedral-blessed-sacrament-sacramento-near.glb",
+      "bytes": 148068,
+      "triangles": 11103,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -38.4537239074707,
+          -2.3841858265427618e-8,
+          -26.369831085205078
+        ],
+        "max": [
+          33.46519470214844,
+          65.52999877929688,
+          25.11935806274414
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedral-blessed-sacrament-sacramento-far.glb",
+      "bytes": 108460,
+      "triangles": 7155,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -38.4537239074707,
+          -2.3841858265427618e-8,
+          -26.369831085205078
+        ],
+        "max": [
+          33.46519470214844,
+          65.52999877929688,
+          25.11935806274414
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedral-blessed-sacrament-sacramento/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

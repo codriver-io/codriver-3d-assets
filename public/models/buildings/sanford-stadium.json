@@ -1,0 +1,65 @@
+{
+  "id": "sanford-stadium",
+  "name": "Sanford Stadium",
+  "kind": "building",
+  "origin": [
+    -83.37336389,
+    33.94980278
+  ],
+  "height": 75,
+  "padM": 175,
+  "frontageBearing": 115.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Dooley Field at Sanford Stadium: open asymmetrical football bowl, continuous lower seating, separate upper sideline decks and a taller north third tier, long south SkySuites, southwest two-level 2024 press box, west scoreboard and planted field-edge hedges. No roof over the field, signs, painted names or logos. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/sanford-stadium-near.glb",
+      "bytes": 373356,
+      "triangles": 30997,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -120.96215057373047,
+          -3.814697322468419e-7,
+          -134.50955200195312
+        ],
+        "max": [
+          118.94088745117188,
+          75,
+          137.25213623046875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/sanford-stadium-far.glb",
+      "bytes": 149568,
+      "triangles": 10711,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -120.96215057373047,
+          -3.814697322468419e-7,
+          -134.50955200195312
+        ],
+        "max": [
+          118.94088745117188,
+          75,
+          137.25213623046875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/sanford-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

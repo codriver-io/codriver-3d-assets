@@ -1,0 +1,65 @@
+{
+  "id": "walton-historic-courthouse",
+  "name": "Walton County Historic Courthouse",
+  "kind": "building",
+  "origin": [
+    -83.71242,
+    33.794585
+  ],
+  "height": 27.8,
+  "padM": 50,
+  "frontageBearing": 277.9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Walton’s restored 1883–84 courthouse: red brick, tall round-headed courtroom windows, an open bracketed porch and balcony, steep slate mansards with pedimented dormers and circular end-gable windows, and the current flat-crowned white clock tower. The original tornado-destroyed dome is not recreated. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/walton-historic-courthouse-near.glb",
+      "bytes": 84660,
+      "triangles": 5236,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.786067962646484,
+          0,
+          -17.246564865112305
+        ],
+        "max": [
+          18.310054779052734,
+          27.799999237060547,
+          17.20862579345703
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/walton-historic-courthouse-far.glb",
+      "bytes": 61804,
+      "triangles": 3424,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -16.786067962646484,
+          0,
+          -17.246564865112305
+        ],
+        "max": [
+          18.310054779052734,
+          27.799999237060547,
+          17.20862579345703
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/walton-historic-courthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

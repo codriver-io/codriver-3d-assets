@@ -1,0 +1,65 @@
+{
+  "id": "eglise-saint-joachim-pointe-claire",
+  "name": "Église Saint-Joachim",
+  "kind": "building",
+  "origin": [
+    -73.82513468181818,
+    45.42683651363637
+  ],
+  "height": 55.8,
+  "padM": 70,
+  "frontageBearing": 162.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The current 1882–1885 church, not its earlier predecessors, is identified by the municipal heritage page and both checked exterior photographs. The separate western rectory (way481688596), visible on the left of photo1, is excluded. Rear sacristy1366986223 is included. Nave dimensions are published; tower height and roof/crown proportions are photo estimates, not survey claims. Open paired lancets retain negative space in both LODs. Small statue and fine relief carving are omitted; no lettering or logos. Cityscape: not tested. Full 3D world: not tested. Geographic audit: separated the narrower apse and transept roofs from the 18.9m nave, and fitted the projecting bell tower to its own mapped centre. The 45.6m published depth includes the apse; it exceeds the mapped rear line by about0.6m, retained as a bounded eave estimate. The low entrance porch is simplified into the pointed tower portal. Review follow-up: Nit: darkened the pale metal roof to a muted blue-gray #778c92 so it separates from the light sheet background. Existing outward normals, mapped roof geometry, lancets and needle spire are unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/eglise-saint-joachim-pointe-claire-near.glb",
+      "bytes": 29592,
+      "triangles": 1138,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -18.02521324157715,
+          0,
+          -38.14307403564453
+        ],
+        "max": [
+          14.252893447875977,
+          55.79999923706055,
+          22.249055862426758
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/eglise-saint-joachim-pointe-claire-far.glb",
+      "bytes": 27536,
+      "triangles": 985,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -18.02521324157715,
+          0,
+          -38.14307403564453
+        ],
+        "max": [
+          14.252893447875977,
+          55.79999923706055,
+          22.249055862426758
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eglise-saint-joachim-pointe-claire/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

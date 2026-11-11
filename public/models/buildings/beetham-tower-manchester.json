@@ -1,0 +1,65 @@
+{
+  "id": "beetham-tower-manchester",
+  "name": "Beetham Tower",
+  "kind": "building",
+  "origin": [
+    -2.25032,
+    53.47552
+  ],
+  "height": 169.2,
+  "padM": 65,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The architect169 m total is rounded relative to OSM169.2 m. The mapped157 m main roof is used rather than secondary158 m. Blade section, louvre spacing, facade module and glass colours are photo-calibrated estimates. Photos2 and3 show the built tower from opposite approaches; interior cocktail and different Manchester buildings are rejected. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/beetham-tower-manchester-near.glb",
+      "bytes": 346312,
+      "triangles": 31193,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.868959426879883,
+          0,
+          -16.542152404785156
+        ],
+        "max": [
+          24.195924758911133,
+          169.1999969482422,
+          44.249698638916016
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/beetham-tower-manchester-far.glb",
+      "bytes": 71328,
+      "triangles": 5153,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.868959426879883,
+          0,
+          -16.542152404785156
+        ],
+        "max": [
+          24.195924758911133,
+          169.1999969482422,
+          44.249698638916016
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/beetham-tower-manchester/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

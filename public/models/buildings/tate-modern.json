@@ -1,0 +1,65 @@
+{
+  "id": "tate-modern",
+  "name": "Tate Modern",
+  "kind": "building",
+  "origin": [
+    -0.0994,
+    51.5076
+  ],
+  "height": 99,
+  "padM": 145,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Roof/lightbox25/34 m and local bay dimensions are estimates. The99 m chimney top differs from the architect’s93 m proposed viewing level, which is not the chimney height. Sloping extension skin heights between mapped upper nodes64.5 m and base/25 m contacts are reconstructed estimates; published geometry and current exterior photos take precedence over a generic pyramid. Photographs3 and4 are checked exterior views of the original shell and completed2016 extension; artwork/interior and reverse river panorama are rejected. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tate-modern-near.glb",
+      "bytes": 101784,
+      "triangles": 7577,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -85.11186981201172,
+          0,
+          -42.36839294433594
+        ],
+        "max": [
+          87.02418518066406,
+          99,
+          80.39530181884766
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tate-modern-far.glb",
+      "bytes": 39312,
+      "triangles": 2215,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -85.11186981201172,
+          0,
+          -42.36839294433594
+        ],
+        "max": [
+          87.02418518066406,
+          99,
+          80.39530181884766
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tate-modern/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

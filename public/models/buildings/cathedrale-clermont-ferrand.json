@@ -1,0 +1,74 @@
+{
+  "id": "cathedrale-clermont-ferrand",
+  "name": "Cathédrale Notre-Dame-de-l'Assomption de Clermont-Ferrand",
+  "kind": "building",
+  "origin": [
+    3.0858214,
+    45.7787336
+  ],
+  "height": 96.1,
+  "padM": 65,
+  "frontageBearing": 92.46229098873721,
+  "rotationRad": -0.042975084895650675,
+  "northSpireHeight": 96.1,
+  "southSpireHeight": 95.5,
+  "bayetteHeight": 50.7,
+  "roseDiameter": 8.5,
+  "flyingButtresses": 16,
+  "spireSpringing": 55,
+  "spireBaseWidth": 8.2,
+  "bellMullionWidth": 0.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Dark volcanic-stone Gothic cathedral with unequal twin western needle spires, true pierced bell stages and pointed windows, an eight-and-a-half-metre rose, sixteen open flying buttresses, polygonal choir and the smaller Bayette bell tower. Published 99 m length and 32.7 m transept width are not identical to the OSM outer building polygon, which includes chapels and buttress projections and is approximately 90 × 44 m in the local frame. The mapped body is retained and the western access stair extends the full model close to 99 m; that interpretation is an estimate, not a surveyed reconciliation. Roof ridge 40 m, western tower subdivisions and Bayette placement within the mapped north transept are photo-derived estimates. The official site rounds both spires to 96.10 m; the documented 95.50 m southern tip is retained. No statues, stained-glass artwork, text, neighbouring buildings or terrain are reproduced. Rigid y=0 is the exterior foundation/contact plane, not altitude. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-clermont-ferrand-near.glb",
+      "bytes": 316768,
+      "triangles": 18251,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -53.58749008178711,
+          -1.9073486612342094e-7,
+          -23.633235931396484
+        ],
+        "max": [
+          46.01606369018555,
+          96.0999984741211,
+          23.62210464477539
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-clermont-ferrand-far.glb",
+      "bytes": 207560,
+      "triangles": 11387,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -53.58749008178711,
+          -1.9073486612342094e-7,
+          -23.633235931396484
+        ],
+        "max": [
+          46.01606369018555,
+          96.0999984741211,
+          23.62210464477539
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-clermont-ferrand/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "tour-des-archives-rouen",
+  "name": "Tour des Archives",
+  "kind": "building",
+  "origin": [
+    1.0919993833333332,
+    49.434787199999995
+  ],
+  "height": 104,
+  "padM": 19,
+  "frontageBearing": 140.83697952721104,
+  "rotation": 0.683523652276114,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Only the separately mapped archive tower is owned; the adjoining Conseil départemental civic complex is excluded. Fine lattice ornament and animated facade lighting are simplified. Height source: https://en.visiterouen.com/offres/tour-des-archives-rouen-en-4148490/ . Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-des-archives-rouen-near.glb",
+      "bytes": 209888,
+      "triangles": 11088,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -14.330316543579102,
+          0,
+          -11.030133247375488
+        ],
+        "max": [
+          13.09652328491211,
+          104,
+          14.639430046081543
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-des-archives-rouen-far.glb",
+      "bytes": 80080,
+      "triangles": 3900,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -14.330316543579102,
+          0,
+          -11.030133247375488
+        ],
+        "max": [
+          13.09652328491211,
+          104,
+          14.639430046081543
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-des-archives-rouen/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

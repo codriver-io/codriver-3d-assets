@@ -1,0 +1,66 @@
+{
+  "id": "cathedrale-notre-dame-reims",
+  "name": "Cathédrale Notre-Dame de Reims",
+  "kind": "building",
+  "origin": [
+    4.0337879,
+    49.2537678
+  ],
+  "height": 87,
+  "padM": 87,
+  "frontageBearing": 239.1248415668308,
+  "rotation": 0.5388731717336968,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current reconstructed roof and exterior, excluding Palais du Tau and neighbouring buildings. Published tower height 81.5 m supersedes incomplete OSM 78 m belfry solids; pinnacle crown reaches the published level. The rear flèche/angel is the separate 87 m maximum. Original grouped statue silhouettes replace fine carvings; no letters, royal emblems, copied sculptures or textures. Verified west front and north tower photos; chevet close-ups establish exterior flying-arch and sculptural character. War-damage aerials, interior altar/nave, bishop portrait and unrelated Angers image rejected. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-notre-dame-reims-near.glb",
+      "bytes": 228404,
+      "triangles": 14135,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -67.8786849975586,
+          -3.814697322468419e-7,
+          -53.0996208190918
+        ],
+        "max": [
+          72.97940063476562,
+          86.97799682617188,
+          52.9326286315918
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-notre-dame-reims-far.glb",
+      "bytes": 175564,
+      "triangles": 9615,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -67.8786849975586,
+          -3.814697322468419e-7,
+          -53.0996208190918
+        ],
+        "max": [
+          72.97940063476562,
+          86.97799682617188,
+          52.9326286315918
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-notre-dame-reims/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

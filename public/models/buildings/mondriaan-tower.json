@@ -1,0 +1,66 @@
+{
+  "id": "mondriaan-tower",
+  "name": "Mondriaan Tower",
+  "kind": "building",
+  "origin": [
+    4.9174,
+    52.344025
+  ],
+  "height": 120,
+  "padM": 47,
+  "frontageBearing": 0,
+  "rotation": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 120 m overall height; OSM central part is 117 m and adjoining slabs 115, 104, 98, 93 and 90 m. A 3 m crown allowance reconciles the roof to the published height and is an estimate. OSM lower wings are retained; no neighbouring towers or railway structures are owned. Separate window cells survive far LOD; glass and masonry are tiled in the same facade plane.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mondriaan-tower-near.glb",
+      "bytes": 276120,
+      "triangles": 23462,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -30.957000732421875,
+          0,
+          -18.3789005279541
+        ],
+        "max": [
+          28.672000885009766,
+          120,
+          18.879899978637695
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mondriaan-tower-far.glb",
+      "bytes": 102160,
+      "triangles": 7888,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -30.957000732421875,
+          0,
+          -18.3789005279541
+        ],
+        "max": [
+          28.672000885009766,
+          120,
+          18.879899978637695
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mondriaan-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

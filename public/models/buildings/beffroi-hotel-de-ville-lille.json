@@ -1,0 +1,65 @@
+{
+  "id": "beffroi-hotel-de-ville-lille",
+  "name": "Beffroi de l’Hôtel de Ville",
+  "kind": "building",
+  "origin": [
+    3.06979148,
+    50.63063251
+  ],
+  "height": 104,
+  "padM": 19,
+  "frontageBearing": 173.727,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "104 m primary City/tourism height. Belfry only,entire adjacent town hall excluded. Base footprint exact mapped;shaft9.8 m,projecting head13.2 m,68/84 m shoulders and84–104 m lantern are photo estimates. Local y0 rigid belfry entry foundation,no terrain or plaza. Fine giant statues and lettering omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/beffroi-hotel-de-ville-lille-near.glb",
+      "bytes": 27932,
+      "triangles": 1005,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -11.105835914611816,
+          0,
+          -10.184619903564453
+        ],
+        "max": [
+          14.307378768920898,
+          104,
+          12.157201766967773
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/beffroi-hotel-de-ville-lille-far.glb",
+      "bytes": 25796,
+      "triangles": 861,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -11.105835914611816,
+          0,
+          -10.184619903564453
+        ],
+        "max": [
+          14.307378768920898,
+          104,
+          12.157201766967773
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/beffroi-hotel-de-ville-lille/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "winspear-opera-house",
+  "name": "Margot and Bill Winspear Opera House",
+  "kind": "building",
+  "origin": [
+    -96.797921,
+    32.790822
+  ],
+  "height": 32,
+  "padM": 115,
+  "frontageBearing": 45,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2009 Foster + Partners Winspear Opera House: burgundy oval drum, 60-foot glazed lobby, open slatted Grand Portico and sixteen mapped slender columns. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/winspear-opera-house-near.glb",
+      "bytes": 48124,
+      "triangles": 3020,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -101.96479797363281,
+          -3.814697322468419e-7,
+          -98.07571411132812
+        ],
+        "max": [
+          81.88296508789062,
+          32,
+          85.77204895019531
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/winspear-opera-house-far.glb",
+      "bytes": 27804,
+      "triangles": 1308,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -101.96479797363281,
+          -3.814697322468419e-7,
+          -98.07571411132812
+        ],
+        "max": [
+          81.88296508789062,
+          32,
+          85.77204895019531
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/winspear-opera-house/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

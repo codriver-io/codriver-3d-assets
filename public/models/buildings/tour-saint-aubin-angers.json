@@ -1,0 +1,148 @@
+{
+  "id": "tour-saint-aubin-angers",
+  "name": "Tour Saint-Aubin",
+  "kind": "building",
+  "origin": [
+    -0.55365625,
+    47.468969
+  ],
+  "height": 54,
+  "padM": 16,
+  "frontageBearing": 220.890594824987,
+  "rotation": 0.7136755127949777,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -0.5538,
+          47.468974
+        ],
+        [
+          -0.5537453,
+          47.468931
+        ],
+        [
+          -0.5537277,
+          47.4689172
+        ],
+        [
+          -0.553665,
+          47.468868
+        ],
+        [
+          -0.553653,
+          47.468876
+        ],
+        [
+          -0.553646,
+          47.468871
+        ],
+        [
+          -0.5536375,
+          47.4688769
+        ],
+        [
+          -0.553623,
+          47.468887
+        ],
+        [
+          -0.553631,
+          47.468892
+        ],
+        [
+          -0.553593,
+          47.468918
+        ],
+        [
+          -0.553586,
+          47.468911
+        ],
+        [
+          -0.5535731,
+          47.468919
+        ],
+        [
+          -0.553501,
+          47.468964
+        ],
+        [
+          -0.553618,
+          47.469042
+        ],
+        [
+          -0.553659,
+          47.46907
+        ],
+        [
+          -0.5538,
+          47.468974
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -0.553665,
+        47.468868
+      ],
+      [
+        -0.553501,
+        47.468964
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "54 m overall from Destination Angers and OSM. Mapped square plan and bearing; storey splits, bay and louvre dimensions, roof curvature and spires are photograph estimates. Standing detached tower only; adjacent former abbey and memorial plaques excluded. Geographic yaw baked once from mapped controls [[-0.553665, 47.468868], [-0.553501, 47.468964]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-saint-aubin-angers-near.glb",
+      "bytes": 103168,
+      "triangles": 8448,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -11.03777027130127,
+          0,
+          -11.03777027130127
+        ],
+        "max": [
+          11.03777027130127,
+          54,
+          11.03777027130127
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-saint-aubin-angers-far.glb",
+      "bytes": 47504,
+      "triangles": 2848,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -11.03777027130127,
+          0,
+          -11.03777027130127
+        ],
+        "max": [
+          11.03777027130127,
+          54,
+          11.03777027130127
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-saint-aubin-angers/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

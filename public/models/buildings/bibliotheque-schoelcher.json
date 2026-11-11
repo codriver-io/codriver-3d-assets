@@ -1,0 +1,210 @@
+{
+  "id": "bibliotheque-schoelcher",
+  "name": "Bibliothèque Schœlcher",
+  "kind": "building",
+  "origin": [
+    -61.068057275,
+    14.60485175
+  ],
+  "height": 23.65,
+  "padM": 20,
+  "frontageBearing": 299.42220100754156,
+  "rotation": -0.5135142807651931,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -61.0681731,
+          14.6049021
+        ],
+        [
+          -61.0681342,
+          14.6048808
+        ],
+        [
+          -61.0681449,
+          14.6048626
+        ],
+        [
+          -61.0681516,
+          14.6048662
+        ],
+        [
+          -61.0681573,
+          14.6048564
+        ],
+        [
+          -61.0681499,
+          14.6048524
+        ],
+        [
+          -61.0681633,
+          14.6048295
+        ],
+        [
+          -61.0681679,
+          14.604832
+        ],
+        [
+          -61.0681728,
+          14.6048235
+        ],
+        [
+          -61.0680231,
+          14.6047418
+        ],
+        [
+          -61.0680052,
+          14.6047725
+        ],
+        [
+          -61.0679709,
+          14.6047538
+        ],
+        [
+          -61.0679527,
+          14.6047849
+        ],
+        [
+          -61.0679269,
+          14.6048292
+        ],
+        [
+          -61.0679609,
+          14.6048477
+        ],
+        [
+          -61.067942,
+          14.6048801
+        ],
+        [
+          -61.0680912,
+          14.6049616
+        ],
+        [
+          -61.0680976,
+          14.6049507
+        ],
+        [
+          -61.0680942,
+          14.6049489
+        ],
+        [
+          -61.0681062,
+          14.6049283
+        ],
+        [
+          -61.0681131,
+          14.6049321
+        ],
+        [
+          -61.0681201,
+          14.6049201
+        ],
+        [
+          -61.0681136,
+          14.6049165
+        ],
+        [
+          -61.0681245,
+          14.6048977
+        ],
+        [
+          -61.0681633,
+          14.604919
+        ],
+        [
+          -61.0681731,
+          14.6049021
+        ]
+      ],
+      [
+        [
+          -61.0680939406604,
+          14.604979018722448
+        ],
+        [
+          -61.06792575663266,
+          14.604887230913054
+        ],
+        [
+          -61.068020609339605,
+          14.604724481277552
+        ],
+        [
+          -61.06818879336734,
+          14.604816269086946
+        ],
+        [
+          -61.0680939406604,
+          14.604979018722448
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -61.0681728,
+        14.6048235
+      ],
+      [
+        -61.0680231,
+        14.6047418
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped main hall about 18.5 × 17.7 m, versus frequently quoted 17.75 m square for the historic hall. Adopted 23.65 m overall is an unsurveyed published secondary figure, treated as an estimate; no primary height survey found. Roof/clerestory stages, arch sizes, material tones and simplified mosaic borders estimated from the exterior photographs. Fine lettering, writer names, decorative emblems and iron garden fence omitted; no garden/plaza modeled. Geographic yaw baked once from mapped controls [[-61.0681728, 14.6048235], [-61.0680231, 14.6047418]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bibliotheque-schoelcher-near.glb",
+      "bytes": 153320,
+      "triangles": 10436,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -14.167553901672363,
+          -5.9604645663569045e-9,
+          -14.167553901672363
+        ],
+        "max": [
+          14.167553901672363,
+          23.649999618530273,
+          14.167553901672363
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bibliotheque-schoelcher-far.glb",
+      "bytes": 97400,
+      "triangles": 4576,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -14.167553901672363,
+          -5.9604645663569045e-9,
+          -14.167553901672363
+        ],
+        "max": [
+          14.167553901672363,
+          23.649999618530273,
+          14.167553901672363
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bibliotheque-schoelcher/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "cathedrale-notre-dame-strasbourg",
+  "name": "Cathédrale Notre-Dame de Strasbourg",
+  "kind": "building",
+  "origin": [
+    7.750931825,
+    48.581844675
+  ],
+  "height": 142.11,
+  "padM": 75,
+  "frontageBearing": 240.39049747841216,
+  "rotation": 0.5167833088792717,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current asymmetric exterior: a single north spire only, with the south platform and low guardians’ house retained. All mapped provider parts are listed in footprint.js, including the many tiny spire components; their union is the replacement envelope. Original simplified ribs and geometric tracery, no scanned or copied sculpture. Three verified current west-front exterior photographs show massing and stone colour; interior nave, foundations, organ and internal carving photos rejected. Published tip height and rose size are sourced; individual masonry members, annex elevations and simplified lattice rhythm are estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-notre-dame-strasbourg-near.glb",
+      "bytes": 210508,
+      "triangles": 12503,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -58.74625778198242,
+          -2.539825539484941e-15,
+          -56.653507232666016
+        ],
+        "max": [
+          71.23370361328125,
+          142.11000061035156,
+          48.424766540527344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-notre-dame-strasbourg-far.glb",
+      "bytes": 158420,
+      "triangles": 8847,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -58.74625778198242,
+          -2.539825539484941e-15,
+          -56.653507232666016
+        ],
+        "max": [
+          71.23370361328125,
+          142.1135711669922,
+          48.424766540527344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-notre-dame-strasbourg/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

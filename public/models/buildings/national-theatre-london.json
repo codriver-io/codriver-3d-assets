@@ -1,0 +1,65 @@
+{
+  "id": "national-theatre-london",
+  "name": "Royal National Theatre",
+  "kind": "building",
+  "origin": [
+    -0.11405,
+    51.50703
+  ],
+  "height": 40.8,
+  "padM": 145,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "All absolute heights are mapped estimates; published sources establish the form and orientation without a measured overall survey. Foyer setbacks, glazing bays, board joints and fascia depths are photo-calibrated estimates. This is the standing completed theatre envelope; no interior auditoria or surrounding pavement is authored. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/national-theatre-london-near.glb",
+      "bytes": 128572,
+      "triangles": 9162,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -73.63197326660156,
+          0,
+          -75.75325775146484
+        ],
+        "max": [
+          79.8886489868164,
+          40.79999923706055,
+          76.14288330078125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/national-theatre-london-far.glb",
+      "bytes": 72916,
+      "triangles": 4556,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -73.63197326660156,
+          0,
+          -75.75325775146484
+        ],
+        "max": [
+          79.8886489868164,
+          40.79999923706055,
+          76.14288330078125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/national-theatre-london/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "afi-silver-theatre",
+  "name": "AFI Silver Theatre",
+  "kind": "building",
+  "origin": [
+    -77.0276,
+    38.9967
+  ],
+  "height": 20.6,
+  "padM": 90,
+  "frontageBearing": 301.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Photos1and2show the restored post2003exterior with the same modern glass lobby, rounded marquee and reconstructed verticalblade. Historical pre-restoration pictures are not used. Totalheight and floor subdivisions are photo estimates, not published measurements. The current OSMbuilding, checkedSeptember2026, supplies the complete oblique plan and the entrance canopy projection. Historic auditorium, low streetfront and northglassaddition have separate heights. The sign blade retains its rounded metal profile and horizontal band rhythm, with a curved rear fin, while all letters, logos, movie titles and trademarks are omitted as required. The marquee is a real cantilever joined to the front wall with open pedestrian space beneath. No sidewalk orgroundsurface authored. Localfootingy0; Cityscape and terrain integration remain untested. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Replaced the cylindrical blade with a flat 2.2 m wide × 0.4 m deep sign body and semicircular top, 15.05 m above the marquee (14.62% front width/height). Six 0.12 m stainless horizontal divisions remain in both LODs; the curved fin is retained. All sign faces remain blank, without lettering.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/afi-silver-theatre-near.glb",
+      "bytes": 35324,
+      "triangles": 1876,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -4.455570220947266,
+          0,
+          -25.369829177856445
+        ],
+        "max": [
+          73.93650817871094,
+          20.600000381469727,
+          46.58742141723633
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/afi-silver-theatre-far.glb",
+      "bytes": 28916,
+      "triangles": 1322,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -4.455570220947266,
+          0,
+          -25.369829177856445
+        ],
+        "max": [
+          73.93650817871094,
+          20.600000381469727,
+          46.58742141723633
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/afi-silver-theatre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

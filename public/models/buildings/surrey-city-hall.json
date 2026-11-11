@@ -1,0 +1,376 @@
+{
+  "id": "surrey-city-hall",
+  "name": "Surrey City Hall",
+  "kind": "building",
+  "origin": [
+    -122.84928235000001,
+    49.1912404
+  ],
+  "height": 28.8,
+  "widthM": 124,
+  "depthM": 63,
+  "padM": 74,
+  "frontageBearing": 180,
+  "rotation": -0.0017470923685659694,
+  "controlPoints": [
+    [
+      -122.8500288,
+      49.1915028
+    ],
+    [
+      -122.8490654,
+      49.1915017
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.8500867,
+          49.1914854
+        ],
+        [
+          -122.8500169,
+          49.191485
+        ],
+        [
+          -122.8500288,
+          49.1915028
+        ],
+        [
+          -122.8490654,
+          49.1915017
+        ],
+        [
+          -122.8490652,
+          49.1914826
+        ],
+        [
+          -122.8489542,
+          49.1914826
+        ],
+        [
+          -122.8488315,
+          49.1914822
+        ],
+        [
+          -122.8488312,
+          49.1915005
+        ],
+        [
+          -122.8485374,
+          49.1914992
+        ],
+        [
+          -122.8485376,
+          49.1914822
+        ],
+        [
+          -122.848478,
+          49.1914823
+        ],
+        [
+          -122.8484795,
+          49.191136
+        ],
+        [
+          -122.8484798,
+          49.1910844
+        ],
+        [
+          -122.8488252,
+          49.1910843
+        ],
+        [
+          -122.8490957,
+          49.1911191
+        ],
+        [
+          -122.8491399,
+          49.1910706
+        ],
+        [
+          -122.8492241,
+          49.190978
+        ],
+        [
+          -122.8493639,
+          49.1910293
+        ],
+        [
+          -122.8498645,
+          49.1912132
+        ],
+        [
+          -122.8498742,
+          49.191225
+        ],
+        [
+          -122.8500867,
+          49.1914854
+        ]
+      ],
+      [
+        [
+          -122.8498742,
+          49.191225
+        ],
+        [
+          -122.8490957,
+          49.1911191
+        ],
+        [
+          -122.8491399,
+          49.1910706
+        ],
+        [
+          -122.8492964,
+          49.1911024
+        ],
+        [
+          -122.8493639,
+          49.1910293
+        ],
+        [
+          -122.8498645,
+          49.1912132
+        ],
+        [
+          -122.8498742,
+          49.191225
+        ]
+      ],
+      [
+        [
+          -122.8498742,
+          49.191225
+        ],
+        [
+          -122.8500867,
+          49.1914854
+        ],
+        [
+          -122.8500169,
+          49.191485
+        ],
+        [
+          -122.8490652,
+          49.1914826
+        ],
+        [
+          -122.8488315,
+          49.1914822
+        ],
+        [
+          -122.8485376,
+          49.1914822
+        ],
+        [
+          -122.848478,
+          49.1914823
+        ],
+        [
+          -122.8484795,
+          49.191136
+        ],
+        [
+          -122.8484798,
+          49.1910844
+        ],
+        [
+          -122.8488252,
+          49.1910843
+        ],
+        [
+          -122.8490957,
+          49.1911191
+        ],
+        [
+          -122.8498742,
+          49.191225
+        ]
+      ],
+      [
+        [
+          -122.8500288,
+          49.1915028
+        ],
+        [
+          -122.8500169,
+          49.191485
+        ],
+        [
+          -122.8490652,
+          49.1914826
+        ],
+        [
+          -122.8490654,
+          49.1915017
+        ],
+        [
+          -122.8500288,
+          49.1915028
+        ]
+      ],
+      [
+        [
+          -122.8488315,
+          49.1914822
+        ],
+        [
+          -122.8488312,
+          49.1915005
+        ],
+        [
+          -122.8485374,
+          49.1914992
+        ],
+        [
+          -122.8485376,
+          49.1914822
+        ],
+        [
+          -122.8488315,
+          49.1914822
+        ]
+      ],
+      [
+        [
+          -122.8492964,
+          49.1911024
+        ],
+        [
+          -122.8491399,
+          49.1910706
+        ],
+        [
+          -122.8492241,
+          49.190978
+        ],
+        [
+          -122.8493639,
+          49.1910293
+        ],
+        [
+          -122.8492964,
+          49.1911024
+        ]
+      ],
+      [
+        [
+          -122.8500867,
+          49.1914854
+        ],
+        [
+          -122.8500169,
+          49.191485
+        ],
+        [
+          -122.8490652,
+          49.1914826
+        ],
+        [
+          -122.8488315,
+          49.1914822
+        ],
+        [
+          -122.8485376,
+          49.1914822
+        ],
+        [
+          -122.848478,
+          49.1914823
+        ],
+        [
+          -122.8484795,
+          49.191136
+        ],
+        [
+          -122.848835,
+          49.1911333
+        ],
+        [
+          -122.8489504,
+          49.1911365
+        ],
+        [
+          -122.8490722,
+          49.1911414
+        ],
+        [
+          -122.8490729,
+          49.191171
+        ],
+        [
+          -122.8498742,
+          49.191225
+        ],
+        [
+          -122.8500867,
+          49.1914854
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.84928235000001,
+        49.1912404
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Primary OSM footprint and six mapped building parts including five-storey north facade projections owned, excluding the adjacent library and civic square. Six storeys and the cantilevered roof/glass atrium are documented by the engineer and architect; all metre heights, roof fold, seven-metre wing projection, 9.2 m core and low-lobby heights are estimates from exterior photographs. Roof top is a two-plane fold peaking at 28.8 m, with a continuous cedar soffit and clerestory reaching its underside. Right wing is supported by a grounded service core; the open west overhang survives in far. Frit is simplified to original opaque/clear face partitions, not photo textures. No logos, lettering, heraldry, neighbouring library, broad plaza or terrain. Atrium foundation top is 0.18 m above local grade. Roof outline extends about 4.3 m beyond the north facade projections and 3–4 m beyond end walls, a photograph-based eave estimate beyond the mapped roof-part polygon; building foundations retain exact mapped outlines. Atrium glass is separately muted blue; no civic lettering or logos are included. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/surrey-city-hall-near.glb",
+      "bytes": 145544,
+      "triangles": 13079,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -61.517799377441406,
+          0,
+          -33.4734001159668
+        ],
+        "max": [
+          62.517799377441406,
+          28.799999237060547,
+          29.21036720275879
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/surrey-city-hall-far.glb",
+      "bytes": 92496,
+      "triangles": 7659,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -61.517799377441406,
+          0,
+          -33.4734001159668
+        ],
+        "max": [
+          62.517799377441406,
+          28.799999237060547,
+          29.21036720275879
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/surrey-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,148 @@
+{
+  "id": "iglesia-merced-san-jose",
+  "name": "Iglesia de La Merced",
+  "kind": "building",
+  "origin": [
+    -84.08374645,
+    9.93334275
+  ],
+  "height": 41.8,
+  "padM": 70,
+  "frontageBearing": 279.1513,
+  "rotation": -1.7305171127665087,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -84.0840043,
+          9.9334554
+        ],
+        [
+          -84.0837283,
+          9.9334122
+        ],
+        [
+          -84.0837106,
+          9.9335216
+        ],
+        [
+          -84.0835624,
+          9.9334984
+        ],
+        [
+          -84.0835786,
+          9.933398
+        ],
+        [
+          -84.0834644,
+          9.9333802
+        ],
+        [
+          -84.0834886,
+          9.9332301
+        ],
+        [
+          -84.0835925,
+          9.9332464
+        ],
+        [
+          -84.0836089,
+          9.9331445
+        ],
+        [
+          -84.0837676,
+          9.9331694
+        ],
+        [
+          -84.0837508,
+          9.9332734
+        ],
+        [
+          -84.084027,
+          9.9333166
+        ],
+        [
+          -84.0840198,
+          9.9333613
+        ],
+        [
+          -84.0840564,
+          9.933367
+        ],
+        [
+          -84.0840484,
+          9.9334165
+        ],
+        [
+          -84.0840116,
+          9.9334107
+        ],
+        [
+          -84.0840043,
+          9.9334554
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -84.08374645,
+        9.93334275
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The distant park exterior sets the tower proportions, while the close modern front photo identifies paired lower pointed lights, single upper open belfry, clock gable and red tiled spire. Overall41.8m is an estimate because no reliable surveyed total including the spire was found; a tourism research compilation calls the tower27m, plausibly the masonry/clock region but the datum is unconfirmed. Both LODs preserve the pointed openings, clock hands, corner pinnacles and full long spire. Nave and transept roof planes follow the mapped cross; unseen rear details are simplified. Small Gothic crockets are reduced at far. No stained-glass artwork, lettering or church marks are copied. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/iglesia-merced-san-jose-near.glb",
+      "bytes": 107588,
+      "triangles": 5717,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.550758361816406,
+          0,
+          -20.205913543701172
+        ],
+        "max": [
+          30.927087783813477,
+          41.79999923706055,
+          22.37098503112793
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/iglesia-merced-san-jose-far.glb",
+      "bytes": 68344,
+      "triangles": 3219,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.550758361816406,
+          0,
+          -20.205913543701172
+        ],
+        "max": [
+          30.927087783813477,
+          41.79999923706055,
+          22.37098503112793
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/iglesia-merced-san-jose/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

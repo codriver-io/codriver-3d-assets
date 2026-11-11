@@ -1,0 +1,65 @@
+{
+  "id": "heritage-plaza-houston",
+  "name": "Heritage Plaza",
+  "kind": "building",
+  "origin": [
+    -95.37073,
+    29.75878
+  ],
+  "height": 232.2576,
+  "padM": 120,
+  "frontageBearing": 124.8,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Heritage Plaza’s blue-glass slab, terraced glass shoulders, large stepped granite Mayan crown with descending corner piers, open paired summit pavilions, and granite-clad lower podium. No corporate lettering or logos; adjacent Allen Center buildings are excluded. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/heritage-plaza-houston-near.glb",
+      "bytes": 289848,
+      "triangles": 23920,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -36.809959411621094,
+          0,
+          -43.88234329223633
+        ],
+        "max": [
+          69.0875244140625,
+          232.25759887695312,
+          46.654212951660156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/heritage-plaza-houston-far.glb",
+      "bytes": 105992,
+      "triangles": 7762,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -36.809959411621094,
+          0,
+          -43.88234329223633
+        ],
+        "max": [
+          69.0875244140625,
+          232.25759887695312,
+          46.654212951660156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/heritage-plaza-houston/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

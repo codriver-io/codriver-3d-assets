@@ -1,0 +1,66 @@
+{
+  "id": "tour-de-la-miotte",
+  "name": "Tour de la Miotte",
+  "kind": "building",
+  "origin": [
+    6.87398155,
+    47.648225350000004
+  ],
+  "height": 14.8,
+  "padM": 7,
+  "frontageBearing": 159.1873255987524,
+  "rotation": 0.3632496944473095,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Models the current tower only, excluding the surrounding fort and hill. Published 13 m tower height refers to masonry; flagstaff adds an estimated 1.8 m. No national flag, lettering or wall plaques. Two useful exterior references: 2016 night view by 0x010C (CC BY-SA 4.0), 2013 day view by Bourgeois.A (CC BY-SA 3.0); unrelated landscape, historical engraving and distant town images rejected. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-de-la-miotte-near.glb",
+      "bytes": 55468,
+      "triangles": 2784,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -3.296433210372925,
+          -4.172325152040912e-9,
+          -2.960361957550049
+        ],
+        "max": [
+          3.296433210372925,
+          14.800000190734863,
+          2.960361957550049
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-de-la-miotte-far.glb",
+      "bytes": 38984,
+      "triangles": 1776,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -3.296433210372925,
+          -4.172325152040912e-9,
+          -2.960361957550049
+        ],
+        "max": [
+          3.296433210372925,
+          14.800000190734863,
+          2.960361957550049
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-de-la-miotte/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

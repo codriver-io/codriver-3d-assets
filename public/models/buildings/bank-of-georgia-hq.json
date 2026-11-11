@@ -1,0 +1,66 @@
+{
+  "id": "bank-of-georgia-hq",
+  "name": "Bank of Georgia headquarters",
+  "kind": "building",
+  "origin": [
+    44.770783300000005,
+    41.7357447
+  ],
+  "height": 51,
+  "padM": 30,
+  "frontageBearing": 194.37362646013867,
+  "rotationY": 1.8216634339760938,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Five two-storey concrete office bars interlock at right angles above three circulation cores, with real cantilevered ends, open gaps, two recessed ribbon-window rows and gridded soffits. No reliable surveyed height was located: 51 m is explicitly an estimate from 17 OSM levels at 3 m, while published descriptions call the tallest core 18 storeys. Bar elevations follow OSM level/min-level ratios, not a terrain survey. The third core, within the left-hand bar and lower crossbar intersection, is estimated from the photographs; its 6 × 7 m plan is an authoring approximation. All three foundations use one rigid y=0 datum; the steep hillside and actual footing elevations require later Full 3D world fitting. The detached modern glass entrance cube, landscaping and access ramps are outside this asset. Photo 4 shows the different old city-centre bank and is excluded. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bank-of-georgia-hq-near.glb",
+      "bytes": 105600,
+      "triangles": 7594,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -42.913726806640625,
+          0,
+          -38.449928283691406
+        ],
+        "max": [
+          42.913726806640625,
+          51,
+          38.449928283691406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bank-of-georgia-hq-far.glb",
+      "bytes": 56696,
+      "triangles": 3617,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -42.913726806640625,
+          0,
+          -38.449928283691406
+        ],
+        "max": [
+          42.913726806640625,
+          51,
+          38.449928283691406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bank-of-georgia-hq/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "biltmore-tbilisi",
+  "name": "Biltmore Hotel Tbilisi",
+  "kind": "building",
+  "origin": [
+    44.7949737,
+    41.7026222
+  ],
+  "height": 138,
+  "padM": 35,
+  "frontageBearing": 313.29317984710303,
+  "rotationY": -2.38598412159979,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Biltmore’s modern glass tower rises in four mapped strips: three sloping roof steps lead into the full-height flat crown, with a fine blue curtain wall, strong horizontal service bands and low modern podium/glass wings. Published heights disagree: PropertyGeorgia’s original skyscraper feature gives 138 m and 32 above-ground floors, a GTU construction paper also discusses 138 (with a unit typo in its English abstract), other summaries give 130 m and a research account gives 150 m. This model uses 138 m as an estimate pending surveyed confirmation. OSM has 36 levels and three sloping roof strips; their plan geometry and relative level ratios are retained, with facade pitch and service-band locations calibrated visually rather than treated as floor-count proof. Podium heights and glazed-link support sections are estimates. The old IMELI frontage and its external curved walkway are excluded. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/biltmore-tbilisi-near.glb",
+      "bytes": 154084,
+      "triangles": 10112,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.15918731689453,
+          0,
+          -37.92672348022461
+        ],
+        "max": [
+          34.15918731689453,
+          138,
+          37.92672348022461
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/biltmore-tbilisi-far.glb",
+      "bytes": 63172,
+      "triangles": 3678,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -34.15918731689453,
+          0,
+          -37.92672348022461
+        ],
+        "max": [
+          34.15918731689453,
+          138,
+          37.92672348022461
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/biltmore-tbilisi/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

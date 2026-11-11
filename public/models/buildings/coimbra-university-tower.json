@@ -1,0 +1,104 @@
+{
+  "id": "coimbra-university-tower",
+  "name": "University of Coimbra Tower",
+  "kind": "building",
+  "origin": [
+    -8.4264793,
+    40.20779535
+  ],
+  "height": 34,
+  "padM": 14,
+  "frontageBearing": 180,
+  "rotation": 0.1838393495456313,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -8.4264396,
+          40.2077743
+        ],
+        [
+          -8.4264988,
+          40.2077659
+        ],
+        [
+          -8.4265065,
+          40.2077648
+        ],
+        [
+          -8.426519,
+          40.2078164
+        ],
+        [
+          -8.4264521,
+          40.2078259
+        ],
+        [
+          -8.4264396,
+          40.2077743
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -8.4264793,
+        40.20779535
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Only the free-standing tower is authored, not the attached university wings. Belfry archways remain real voids and the bells remain visible in both LODs. The clock terrace is flat and roofless, not a spire. Limestone moldings, four dial hands without lettering, corner pilasters and small finial supports provide the recognizable silhouette. Detailed rococo carving and tiny weather instruments are omitted. The33.5m OSM height and34m tourism height are documented alternatives; this is not a surveyed model. Tower pad is bounded to its mapped footprint. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/coimbra-university-tower-near.glb",
+      "bytes": 65672,
+      "triangles": 4388,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -3.9059479236602783,
+          -2.9802322831784522e-9,
+          -3.9059479236602783
+        ],
+        "max": [
+          3.9059479236602783,
+          34,
+          3.9059479236602783
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/coimbra-university-tower-far.glb",
+      "bytes": 50824,
+      "triangles": 2868,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -3.9059479236602783,
+          -2.9802322831784522e-9,
+          -3.9059479236602783
+        ],
+        "max": [
+          3.9059479236602783,
+          34,
+          3.9059479236602783
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/coimbra-university-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

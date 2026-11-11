@@ -1,0 +1,120 @@
+{
+  "id": "rhodes-state-office-tower",
+  "name": "Rhodes State Office Tower",
+  "kind": "building",
+  "origin": [
+    -82.99944685,
+    39.962785
+  ],
+  "height": 201.72,
+  "padM": 44,
+  "frontageBearing": 351.5207452490131,
+  "rotation": 0.14799091352009375,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -82.9991965,
+          39.9625648
+        ],
+        [
+          -82.9992154,
+          39.9626672
+        ],
+        [
+          -82.9990742,
+          39.9626825
+        ],
+        [
+          -82.9991023,
+          39.962831
+        ],
+        [
+          -82.999148,
+          39.9630835
+        ],
+        [
+          -82.9994714,
+          39.9630496
+        ],
+        [
+          -82.9998195,
+          39.9630099
+        ],
+        [
+          -82.9997218,
+          39.9625076
+        ],
+        [
+          -82.9991965,
+          39.9625648
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -82.9997218,
+        39.9625076
+      ],
+      [
+        -82.9998195,
+        39.9630099
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is rigid foundation grade; no DEM, sea-level height, terrain exaggeration or Mercator stretch is baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "James A. Rhodes State Office Tower: broad granite cores, deeply recessed horizontal glazing, stepped open mechanical crown and opposite higher corner shafts with rooftop communications cage. The broad window zone occupies 36% of each east/west face, recessed behind continuous granite shafts. The mapped 58 × 57 m podium encloses a narrower 45 × 48 m tower. Ohio DAS publishes 629 ft (191.72 m); CTBUH gives 190.2 m, so the main core height is an adopted published estimate. Antenna tip 201.72 m is estimated from the contractor exterior photo and excluded from the published architectural height. Current renovation preserved the granite/window composition; no logos or inscriptions. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rhodes-state-office-tower-near.glb",
+      "bytes": 78924,
+      "triangles": 4088,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -31.79900550842285,
+          9.536743306171047e-8,
+          -33.2330436706543
+        ],
+        "max": [
+          31.79939079284668,
+          201.72000122070312,
+          30.87724494934082
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rhodes-state-office-tower-far.glb",
+      "bytes": 77640,
+      "triangles": 3972,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -31.79900550842285,
+          9.536743306171047e-8,
+          -33.2330436706543
+        ],
+        "max": [
+          31.79939079284668,
+          201.72000122070312,
+          30.87724494934082
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rhodes-state-office-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

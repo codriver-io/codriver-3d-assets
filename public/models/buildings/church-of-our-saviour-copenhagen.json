@@ -1,0 +1,65 @@
+{
+  "id": "church-of-our-saviour-copenhagen",
+  "name": "Church of Our Saviour",
+  "kind": "building",
+  "origin": [
+    12.594055,
+    55.6727877
+  ],
+  "height": 90,
+  "padM": 52,
+  "frontageBearing": 223.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Permanent post1996 spire and existing church envelope are modeled. The owner reports facade/sandstone restoration2026–28 and temporary north-side scaffolding; temporary scaffolding is omitted. Photos2 and4 show the present permanent restored spire and church, and3 verifies the exterior stair/railing;1 is a panorama and5–6 interiors, not exterior geometry references. Globe heights follow mapped82.5–85 m; Lex prose also describes the globe at90 m but explicitly identifies90 m as flag top later in the same article. Minor trim, clocks, sculpture poses and stair radii are photo-calibrated estimates; the mapped stair angle/height progression is retained. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/church-of-our-saviour-copenhagen-near.glb",
+      "bytes": 290336,
+      "triangles": 22033,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -11.0547456741333,
+          0,
+          -37.89334487915039
+        ],
+        "max": [
+          36.04562759399414,
+          90,
+          10.39728832244873
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/church-of-our-saviour-copenhagen-far.glb",
+      "bytes": 96116,
+      "triangles": 5953,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -11.0547456741333,
+          0,
+          -37.89334487915039
+        ],
+        "max": [
+          36.04562759399414,
+          90,
+          10.39728832244873
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/church-of-our-saviour-copenhagen/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

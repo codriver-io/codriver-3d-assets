@@ -1,0 +1,160 @@
+{
+  "id": "san-bernardino-county-courthouse",
+  "name": "San Bernardino County Courthouse",
+  "kind": "building",
+  "origin": [
+    -117.28903585,
+    34.10550375
+  ],
+  "height": 18.3,
+  "widthM": 90,
+  "depthM": 24.6,
+  "padM": 56,
+  "frontageBearing": 269.6564432372,
+  "rotation": -1.5648001301166883,
+  "controlPoints": [
+    [
+      -117.2891732,
+      34.1055191
+    ],
+    [
+      -117.2891709,
+      34.1052015
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.2891805,
+          34.1059124
+        ],
+        [
+          -117.2891806,
+          34.1058183
+        ],
+        [
+          -117.2891713,
+          34.1058161
+        ],
+        [
+          -117.2891732,
+          34.1055191
+        ],
+        [
+          -117.2891709,
+          34.1052015
+        ],
+        [
+          -117.2891832,
+          34.1051986
+        ],
+        [
+          -117.2891819,
+          34.1050959
+        ],
+        [
+          -117.2888937,
+          34.1050931
+        ],
+        [
+          -117.2888935,
+          34.1051943
+        ],
+        [
+          -117.2888995,
+          34.1051977
+        ],
+        [
+          -117.2888985,
+          34.1054059
+        ],
+        [
+          -117.2888908,
+          34.105407
+        ],
+        [
+          -117.2888885,
+          34.1054416
+        ],
+        [
+          -117.2888922,
+          34.1055964
+        ],
+        [
+          -117.2888984,
+          34.1056002
+        ],
+        [
+          -117.2888962,
+          34.1059144
+        ],
+        [
+          -117.2891805,
+          34.1059124
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.28903585,
+        34.10550375
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "NPS nomination describes an approximately 296 ft long, 60 ft high building, 25 ft columns, three visible facade floors, and a fourth floor set 30 ft back. OSM maps 91.4 by 27.3 m; modeled body fits at 90 by 24.6 m. The centre has nine bays, each flank six and each end three. Column placement, parapets and detail are simplified photo estimates. The radio tower removed in 1959 and adjoining structures are excluded; no lettering or flags. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/san-bernardino-county-courthouse-near.glb",
+      "bytes": 76324,
+      "triangles": 6328,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -15.353690147399902,
+          -7.1525572131747595e-9,
+          -45.574283599853516
+        ],
+        "max": [
+          12.797599792480469,
+          18.299999237060547,
+          45.57548141479492
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/san-bernardino-county-courthouse-far.glb",
+      "bytes": 66672,
+      "triangles": 5416,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -15.353690147399902,
+          -7.1525572131747595e-9,
+          -45.574283599853516
+        ],
+        "max": [
+          12.797599792480469,
+          18.299999237060547,
+          45.57548141479492
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/san-bernardino-county-courthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

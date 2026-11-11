@@ -1,0 +1,66 @@
+{
+  "id": "moshe-aviv-tower",
+  "name": "Moshe Aviv Tower",
+  "kind": "building",
+  "origin": [
+    34.80374085,
+    32.0834758
+  ],
+  "height": 235,
+  "padM": 40,
+  "frontageBearing": 270.1322492723067,
+  "rotationY": -3.1392844683546755,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Moshe Aviv Tower: a 235 m rounded blue-glass shaft beside a lower 211 m pale office fin, fine vertical/horizontal window grids and a projecting circular lantern crown. The outer/fin outline is tagged 211 m and 61 levels; the circular upper parts are tagged 235 m and 68 levels, agreeing with the published overall height. The 211 m fin and 235 m circular crown are modeled separately. Facade pitch, lantern subdivisions, 13.4 m glazing radius and canopy overhang are photo estimates. No branding or adjacent offices are modeled. Cityscape: not tested; Full 3D world: not tested. Review follow-up: Far glazing groups three storeys per cell and stays below the oversized-pane threshold. Triangles wholly buried where the round shaft overlaps the lower fin are removed consistently in both LODs; every boundary-intersecting cell is retained to avoid skin holes. The lower fin, round shaft, twelve/twenty open crown posts, canopy contacts and 235 m silhouette remain. New source/export contact probes and the sheet confirm crown openings and discrete far panes; near/far costs are 22250/5822 triangles.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/moshe-aviv-tower-near.glb",
+      "bytes": 271540,
+      "triangles": 22250,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -16.68968963623047,
+          0,
+          -18.534780502319336
+        ],
+        "max": [
+          16.80286979675293,
+          235,
+          32.599910736083984
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/moshe-aviv-tower-far.glb",
+      "bytes": 76400,
+      "triangles": 5822,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -16.68968963623047,
+          0,
+          -18.534780502319336
+        ],
+        "max": [
+          16.80286979675293,
+          235,
+          32.599910736083984
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/moshe-aviv-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

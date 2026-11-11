@@ -1,0 +1,65 @@
+{
+  "id": "grand-hotel-dieu-lyon",
+  "name": "Grand Hôtel-Dieu",
+  "kind": "building",
+  "origin": [
+    4.83642732,
+    45.75874406
+  ],
+  "height": 46,
+  "padM": 152,
+  "frontageBearing": 34.035,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped relation300128 outer and8 inner rings retained. Body18 m/hip roofs22 m,grand dome46 m incl lantern,Pascalon43 m and Four-Rangs34 m are photo estimates. Operator32 m is interior keystone,not exterior crest. Facade figures250/375/400 m differ in scope; mapped envelope governs dimensions. Dome centres calibrated to operator site plan and mapped court junctions. No quay,river,plaza or surrounding buildings. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/grand-hotel-dieu-lyon-near.glb",
+      "bytes": 463456,
+      "triangles": 30359,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -72.45470428466797,
+          0,
+          -133.7828369140625
+        ],
+        "max": [
+          77.46617889404297,
+          46,
+          144.61996459960938
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/grand-hotel-dieu-lyon-far.glb",
+      "bytes": 177192,
+      "triangles": 10893,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -72.45470428466797,
+          0,
+          -133.7828369140625
+        ],
+        "max": [
+          77.46617889404297,
+          46,
+          144.61996459960938
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/grand-hotel-dieu-lyon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

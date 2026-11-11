@@ -1,0 +1,238 @@
+{
+  "id": "california-state-capitol",
+  "name": "California State Capitol",
+  "kind": "building",
+  "origin": [
+    -121.49360035000001,
+    38.5766409
+  ],
+  "height": 67.04,
+  "widthM": 100,
+  "depthM": 60,
+  "padM": 63,
+  "frontageBearing": 287.45004457315815,
+  "rotation": 4.4078282479633115,
+  "controlPoints": [
+    [
+      -121.4935888,
+      38.5764531
+    ],
+    [
+      -121.49345,
+      38.5767983
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -121.4938699,
+          38.5765901
+        ],
+        [
+          -121.4939397,
+          38.5764302
+        ],
+        [
+          -121.4939585,
+          38.5764352
+        ],
+        [
+          -121.4940052,
+          38.5763281
+        ],
+        [
+          -121.493846,
+          38.5762856
+        ],
+        [
+          -121.4938622,
+          38.5762486
+        ],
+        [
+          -121.4936837,
+          38.5762009
+        ],
+        [
+          -121.4936681,
+          38.5762365
+        ],
+        [
+          -121.4935085,
+          38.5761938
+        ],
+        [
+          -121.4934871,
+          38.5762426
+        ],
+        [
+          -121.4934648,
+          38.5762366
+        ],
+        [
+          -121.4934134,
+          38.5763584
+        ],
+        [
+          -121.4934454,
+          38.5763689
+        ],
+        [
+          -121.49343,
+          38.5764109
+        ],
+        [
+          -121.4935888,
+          38.5764531
+        ],
+        [
+          -121.49345,
+          38.5767983
+        ],
+        [
+          -121.4932936,
+          38.5767583
+        ],
+        [
+          -121.4932742,
+          38.576798
+        ],
+        [
+          -121.4932436,
+          38.5767907
+        ],
+        [
+          -121.4931965,
+          38.5768981
+        ],
+        [
+          -121.493219,
+          38.5769042
+        ],
+        [
+          -121.4931955,
+          38.5769577
+        ],
+        [
+          -121.4933501,
+          38.5769991
+        ],
+        [
+          -121.4933337,
+          38.5770364
+        ],
+        [
+          -121.4934943,
+          38.5770794
+        ],
+        [
+          -121.4935096,
+          38.5770445
+        ],
+        [
+          -121.4936722,
+          38.577088
+        ],
+        [
+          -121.4937166,
+          38.5769865
+        ],
+        [
+          -121.493699,
+          38.5769818
+        ],
+        [
+          -121.4937692,
+          38.576821
+        ],
+        [
+          -121.4938699,
+          38.5765901
+        ]
+      ],
+      [
+        [
+          -121.4937692,
+          38.576821
+        ],
+        [
+          -121.4938527,
+          38.5768433
+        ],
+        [
+          -121.4939535,
+          38.5766124
+        ],
+        [
+          -121.4938699,
+          38.5765901
+        ],
+        [
+          -121.4937692,
+          38.576821
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -121.49360035000001,
+        38.5766409
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Only historic west building OSM1569845423 and its west portico are owned; separate State Assembly/Senate eastern annex ways1444090116/117 and current construction are excluded. OSM low dome heights conflict with published street-to-ball67.04m; SGH64m/210ft is a dome-only description and secondary247ft estimates are not adopted. Main body23.8m follows NPS78ft; other intermediate levels and ornamental simplifications are photo estimates. The six west columns,24 drum columns and12 lantern columns are retained in both LODs. Original abstract pediment relief evokes Minerva group without scanned sculpture. No flags, lettering, exterior signs, surrounding paving or landscaping. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/california-state-capitol-near.glb",
+      "bytes": 198552,
+      "triangles": 17434,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -38.18345260620117,
+          0,
+          -53.09703826904297
+        ],
+        "max": [
+          35.783512115478516,
+          67.04000091552734,
+          52.29965591430664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/california-state-capitol-far.glb",
+      "bytes": 141156,
+      "triangles": 11658,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -38.18345260620117,
+          0,
+          -53.09703826904297
+        ],
+        "max": [
+          35.783512115478516,
+          67.04000091552734,
+          52.29965591430664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/california-state-capitol/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

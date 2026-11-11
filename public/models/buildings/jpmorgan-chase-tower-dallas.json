@@ -1,0 +1,65 @@
+{
+  "id": "jpmorgan-chase-tower-dallas",
+  "name": "Dallas Arts Tower (Chase Tower)",
+  "kind": "building",
+  "origin": [
+    -96.7966,
+    32.7878
+  ],
+  "height": 225,
+  "padM": 70,
+  "frontageBearing": 45,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1987 Dallas Arts Tower, historically Chase Tower: stepped granite-and-glass shaft, large open keyhole below a curved, split crown and projecting corner piers. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/jpmorgan-chase-tower-dallas-near.glb",
+      "bytes": 258000,
+      "triangles": 21558,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -42.843082427978516,
+          0,
+          -57.084896087646484
+        ],
+        "max": [
+          34.30815505981445,
+          224.97373962402344,
+          22.197208404541016
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/jpmorgan-chase-tower-dallas-far.glb",
+      "bytes": 91400,
+      "triangles": 7162,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -42.843082427978516,
+          0,
+          -57.084896087646484
+        ],
+        "max": [
+          34.30815505981445,
+          224.97373962402344,
+          22.197208404541016
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jpmorgan-chase-tower-dallas/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,186 @@
+{
+  "id": "tour-lu-nantes",
+  "name": "Tour LU",
+  "kind": "building",
+  "origin": [
+    -1.54620367,
+    47.21545928
+  ],
+  "height": 38,
+  "padM": 8,
+  "frontageBearing": 342.31913865388185,
+  "rotation": 0.30858924507835866,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -1.5462289,
+          47.2154914
+        ],
+        [
+          -1.5462177,
+          47.2154944
+        ],
+        [
+          -1.546202,
+          47.2154957
+        ],
+        [
+          -1.5461878,
+          47.2154943
+        ],
+        [
+          -1.546173,
+          47.2154899
+        ],
+        [
+          -1.5461574,
+          47.2154799
+        ],
+        [
+          -1.5461483,
+          47.2154668
+        ],
+        [
+          -1.546147,
+          47.2154523
+        ],
+        [
+          -1.5461537,
+          47.2154385
+        ],
+        [
+          -1.5461674,
+          47.2154273
+        ],
+        [
+          -1.5461862,
+          47.2154205
+        ],
+        [
+          -1.5462074,
+          47.2154189
+        ],
+        [
+          -1.546228,
+          47.2154227
+        ],
+        [
+          -1.5462436,
+          47.2154305
+        ],
+        [
+          -1.5462537,
+          47.2154403
+        ],
+        [
+          -1.5462594,
+          47.2154546
+        ],
+        [
+          -1.5462572,
+          47.215468
+        ],
+        [
+          -1.5462474,
+          47.2154811
+        ],
+        [
+          -1.5462289,
+          47.2154914
+        ]
+      ],
+      [
+        [
+          -1.5462446624357695,
+          47.2155022608137
+        ],
+        [
+          -1.5462068610635717,
+          47.215510445726316
+        ],
+        [
+          -1.5462000327045826,
+          47.21549589580649
+        ],
+        [
+          -1.5462378340767804,
+          47.21548771089388
+        ],
+        [
+          -1.5462446624357695,
+          47.2155022608137
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -1.5462289,
+        47.2154914
+      ],
+      [
+        -1.5461574,
+        47.2154799
+      ],
+      [
+        -1.5461862,
+        47.2154205
+      ]
+    ],
+    "datum": "median",
+    "featherM": 1
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "38 m overall is an adopted unsurveyed OSM finial-height estimate. The mapped drum is about 8.5 m diameter; 20.5 m shaft, dome/lantern stage splits, relief silhouettes and balcony are photo estimates. Tower only, not the factory. OSM parent 32428111 is partially owned only inside the tower ring; all tower parts are listed, and the authored balcony envelope extends the mapped drum conservatively. Geographic yaw baked once from mapped controls [[-1.5461632, 47.215512], [-1.5461281, 47.2155196]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-lu-nantes-near.glb",
+      "bytes": 66736,
+      "triangles": 4708,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -4.445773124694824,
+          -1.1920929132713809e-8,
+          -5.490030288696289
+        ],
+        "max": [
+          4.445773124694824,
+          38,
+          4.445773124694824
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-lu-nantes-far.glb",
+      "bytes": 46160,
+      "triangles": 2756,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -4.445773124694824,
+          -1.1920929132713809e-8,
+          -5.490030288696289
+        ],
+        "max": [
+          4.445773124694824,
+          38,
+          4.445773124694824
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-lu-nantes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

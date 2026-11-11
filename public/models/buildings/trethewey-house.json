@@ -1,0 +1,138 @@
+{
+  "id": "trethewey-house",
+  "name": "Trethewey House",
+  "kind": "building",
+  "origin": [
+    -122.3050329,
+    49.043757
+  ],
+  "height": 11,
+  "widthM": 13.4,
+  "depthM": 17.3,
+  "padM": 19,
+  "frontageBearing": 180,
+  "rotation": 4.705102295594017,
+  "controlPoints": [
+    [
+      -122.3049173,
+      49.0438058
+    ],
+    [
+      -122.3051476,
+      49.0438069
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.3051485,
+          49.0437082
+        ],
+        [
+          -122.3049184,
+          49.0437071
+        ],
+        [
+          -122.3049173,
+          49.0438058
+        ],
+        [
+          -122.3051476,
+          49.0438069
+        ],
+        [
+          -122.3051484,
+          49.0437326
+        ],
+        [
+          -122.3051485,
+          49.0437082
+        ]
+      ],
+      [
+        [
+          -122.30503345921639,
+          49.0437066959097
+        ],
+        [
+          -122.30503363896452,
+          49.04369052673781
+        ],
+        [
+          -122.30506104739655,
+          49.04369065765086
+        ],
+        [
+          -122.30506086764842,
+          49.04370682682275
+        ],
+        [
+          -122.30503345921639,
+          49.0437066959097
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.3050329,
+        49.043757
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped house at 2313 Ware Street; carriage house, playhouse, station and garden excluded. Operator dates construction to 1919, while the heritage inventory uses 1920 and notes restoration to circa1925; these dates refer to the same retained house, not different buildings. Inventory confirms two cobblestone chimneys (one internal, one external), cross gables/dormers, half-timbered peaks, exposed rafters, thick veranda piers and bay windows. Buff brick is described for the chimney/fireplace construction; visible external cladding is cobblestone. All heights, roof pitches, window sizes, porch and stair dimensions are estimates. Original procedural face mosaics evoke fieldstone without image textures or copied artwork. South stair first tread clears grade by 0.18 m; no terrain, surrounding lawn, lettering, symbols or signs. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/trethewey-house-near.glb",
+      "bytes": 47832,
+      "triangles": 2921,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -8.594671249389648,
+          -1.1920929132713809e-8,
+          -5.861053943634033
+        ],
+        "max": [
+          8.74203109741211,
+          11,
+          7.399803638458252
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/trethewey-house-far.glb",
+      "bytes": 36696,
+      "triangles": 1881,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -8.594671249389648,
+          -1.1920929132713809e-8,
+          -5.861053943634033
+        ],
+        "max": [
+          8.74203109741211,
+          11,
+          7.399803638458252
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/trethewey-house/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

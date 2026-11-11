@@ -1,0 +1,250 @@
+{
+  "id": "gur-sikh-temple",
+  "name": "Gur Sikh Temple",
+  "kind": "building",
+  "origin": [
+    -122.30721825,
+    49.0510444
+  ],
+  "height": 11.2,
+  "widthM": 15.4,
+  "depthM": 32.5,
+  "padM": 23,
+  "frontageBearing": 187.07779837225132,
+  "rotation": -0.12353088538808077,
+  "controlPoints": [
+    [
+      -122.3071568,
+      49.0510573
+    ],
+    [
+      -122.3071823,
+      49.0509227
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.3072559,
+          49.0511661
+        ],
+        [
+          -122.3071274,
+          49.0511556
+        ],
+        [
+          -122.3071462,
+          49.0510564
+        ],
+        [
+          -122.3071568,
+          49.0510573
+        ],
+        [
+          -122.3071823,
+          49.0509227
+        ],
+        [
+          -122.307248,
+          49.050928
+        ],
+        [
+          -122.3072986,
+          49.0509322
+        ],
+        [
+          -122.3072793,
+          49.0510328
+        ],
+        [
+          -122.3073091,
+          49.0510353
+        ],
+        [
+          -122.3072923,
+          49.0511229
+        ],
+        [
+          -122.3072647,
+          49.0511206
+        ],
+        [
+          -122.3072559,
+          49.0511661
+        ]
+      ],
+      [
+        [
+          -122.30727062776042,
+          49.050921027748856
+        ],
+        [
+          -122.30721349876825,
+          49.05091637888811
+        ],
+        [
+          -122.30722160541141,
+          49.05087358852845
+        ],
+        [
+          -122.30727873440358,
+          49.05087823738919
+        ],
+        [
+          -122.30727062776042,
+          49.050921027748856
+        ]
+      ],
+      [
+        [
+          -122.30731320234212,
+          49.05111368094652
+        ],
+        [
+          -122.30729075880947,
+          49.051111854608365
+        ],
+        [
+          -122.30730021655985,
+          49.05106193252209
+        ],
+        [
+          -122.30732266009248,
+          49.051063758860245
+        ],
+        [
+          -122.30731320234212,
+          49.05111368094652
+        ]
+      ],
+      [
+        [
+          -122.30732671341407,
+          49.05104236368041
+        ],
+        [
+          -122.30730426988143,
+          49.05104053734226
+        ],
+        [
+          -122.30731372763181,
+          49.050990615255984
+        ],
+        [
+          -122.30733617116444,
+          49.05099244159413
+        ],
+        [
+          -122.30732671341407,
+          49.05104236368041
+        ]
+      ],
+      [
+        [
+          -122.3071227723682,
+          49.05109818474402
+        ],
+        [
+          -122.30710032883557,
+          49.05109635840587
+        ],
+        [
+          -122.30710978658594,
+          49.051046436319595
+        ],
+        [
+          -122.30713223011858,
+          49.051048262657744
+        ],
+        [
+          -122.3071227723682,
+          49.05109818474402
+        ]
+      ],
+      [
+        [
+          -122.30713628344016,
+          49.051026867477916
+        ],
+        [
+          -122.30711383990753,
+          49.05102504113976
+        ],
+        [
+          -122.3071232976579,
+          49.05097511905348
+        ],
+        [
+          -122.30714574119054,
+          49.05097694539164
+        ],
+        [
+          -122.30713628344016,
+          49.051026867477916
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.30721825,
+        49.0510444
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The original historic temple at mapped way274888717 is modeled, excluding the large modern temple across South Fraser Way. Heritage descriptions identify the false front masking a gabled roof, full raised basement, three-sided veranda, five separate stairs, 1932 lower gable addition and later shed addition. All metre heights, step count and side-flight locations are photo-based estimates. Gallery is 3.0 m above the rigid foundation datum; each stair first tread is at least 0.16 m above local grade. The owned building excludes the separately situated Nishan Sahib flagpole, monuments and garden. No lettering, symbols, emblems, signs or terrain are baked in. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gur-sikh-temple-near.glb",
+      "bytes": 58652,
+      "triangles": 3560,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -8.454390525817871,
+          -9.536743306171047e-8,
+          -14.038519859313965
+        ],
+        "max": [
+          8.528818130493164,
+          11.199999809265137,
+          19.00857162475586
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gur-sikh-temple-far.glb",
+      "bytes": 48608,
+      "triangles": 2628,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -8.454390525817871,
+          -9.536743306171047e-8,
+          -14.038519859313965
+        ],
+        "max": [
+          8.528818130493164,
+          11.199999809265137,
+          19.00857162475586
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gur-sikh-temple/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "california-theatre-san-bernardino",
+  "name": "California Theatre",
+  "kind": "building",
+  "origin": [
+    -117.29546775,
+    34.1068016
+  ],
+  "height": 26,
+  "widthM": 34.08,
+  "depthM": 51.34,
+  "padM": 39,
+  "frontageBearing": 179.8354191902,
+  "rotation": 6.286057784196726,
+  "controlPoints": [
+    [
+      -117.2956518,
+      34.106571
+    ],
+    [
+      -117.2956534,
+      34.1070322
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.2956534,
+          34.1070322
+        ],
+        [
+          -117.2952881,
+          34.1070319
+        ],
+        [
+          -117.2952854,
+          34.1069988
+        ],
+        [
+          -117.2952821,
+          34.1065719
+        ],
+        [
+          -117.2956518,
+          34.106571
+        ],
+        [
+          -117.2956534,
+          34.1070322
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.29546775,
+        34.1068016
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "OSM supplies the 34 by 51 m envelope; the 26 m fly tower, 12 m facade eave and 20 m ornamental crown are photo estimates. Restored 2025 frontage has flush entrance glazing. Ornament is simplified; artwork, signs and lettering omitted. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/california-theatre-san-bernardino-near.glb",
+      "bytes": 46116,
+      "triangles": 3162,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -17.113666534423828,
+          0,
+          -25.718841552734375
+        ],
+        "max": [
+          17.113666534423828,
+          26,
+          28.688552856445312
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/california-theatre-san-bernardino-far.glb",
+      "bytes": 34048,
+      "triangles": 1898,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -17.113666534423828,
+          0,
+          -25.718841552734375
+        ],
+        "max": [
+          17.113666534423828,
+          26,
+          28.688552856445312
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/california-theatre-san-bernardino/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

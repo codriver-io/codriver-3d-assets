@@ -1,0 +1,14 @@
+import*as THREE from'three';import{assetBuilder}from'../../asset-geometry.js';import{SPEC,PALETTES}from'./config.js';import{PARTS,ROOFS,SOFFIT}from'./footprint.js';import{kit}from'./beetham-tower-manchester-geometry-kit.js';
+const C=Math.cos(SPEC.origin[1]*Math.PI/180);export const local=([x,y])=>[(x-SPEC.origin[0])*111320*C,(SPEC.origin[1]-y)*111320];const rings=PARTS.map(p=>({...p,ring:p.ring.slice(0,-1).map(local)})),inside=(p,r)=>{let c=false;for(let i=0,j=r.length-1;i<r.length;j=i++)if((r[i][1]>p[1])!==(r[j][1]>p[1])&&p[0]<(r[j][0]-r[i][0])*(p[1]-r[i][1])/(r[j][1]-r[i][1])+r[i][0])c=!c;return c;};
+export const BLADE=()=>{const p=rings.find(p=>p.id===353289055).ring;return[p[0],p[1],p[2]];};
+export function create({detail='near'}={}){const near=detail==='near',b=assetBuilder({...SPEC,palette:PALETTES.light},detail),k=kit(b,THREE);
+ function surface(polys,y,up=true){for(const poly of polys){const rs=poly.map(r=>r.slice(0,-1).map(local)),points=rs.flat();for(const t of THREE.ShapeUtils.triangulateShape(rs[0].map(p=>new THREE.Vector2(...p)),rs.slice(1).map(r=>r.map(p=>new THREE.Vector2(...p)))))k.face('roof',t.map(i=>[points[i][0],y,points[i][1]]),[0,up?1:-1,0]);}}
+ for(const part of rings.filter(p=>p.id!==353289055)){const r=part.ring,sign=Math.sign(k.area(r)),lo=part.minHeight,hi=part.height,rows=part.id===353289050?(near?24:12):part.id===353289051?(near?23:12):near?3:2;const ys=[...new Set([lo,hi,...Array.from({length:rows-1},(_,i)=>lo+(hi-lo)*(i+1)/rows),...[6,12].filter(y=>y>lo&&y<hi)])].sort((a,c)=>a-c);r.forEach((a,i)=>{const c=r[(i+1)%r.length],L=Math.hypot(c[0]-a[0],c[1]-a[1]),out=new THREE.Vector3(sign*(c[1]-a[1]),0,sign*(a[0]-c[0])).normalize().toArray(),at=(s,y)=>[a[0]+(c[0]-a[0])*s,y,a[1]+(c[1]-a[1])*s],patch=(m,s,t,y,z)=>k.face(m,[at(s,y),at(t,y),at(t,z),at(s,z)],out),N=Math.max(1,Math.round(L/(near?1.65:5.5)));
+ for(let v=0;v<ys.length-1;v++){const y=ys[v],z=ys[v+1],mid=(y+z)/2;for(let j=0;j<N;j++){const s=j/N,t=(j+1)/N,pad=.035/N,p=at((s+t)/2,mid);if(rings.some(q=>q.id!==part.id&&q.id!==353289055&&mid>q.minHeight&&mid<q.height&&inside([p[0]+out[0]*.03,p[2]+out[2]*.03],q.ring)))continue;const band=Math.min(near?.3:.6,(z-y)*.25);patch('frame',s,t,y,y+band);patch('frame',s,s+pad,y+band,z);patch('frame',t-pad,t,y+band,z);patch(part.id===353289051?'hotel':(j+2*v)%7===0?'opaque':'glass',s+pad,t-pad,y+band,z);}}
+ });}
+ for(const roof of ROOFS)surface(roof.polys,roof.y);surface(SOFFIT,72,false);k.cap('roof',rings.find(p=>p.id===353289051).ring,0,false);
+ // Dark blue-grey louvres cover70% of the fin; continuous slots remain genuinely open.
+ const blade=rings.find(p=>p.id===353289055).ring,stations=near?24:12,pitch=12.2/stations;for(let i=0;i<stations;i++){const y=157+pitch*i;k.prism('steel',blade,y,y+pitch*.70,'steel');}
+ const A=blade[0],D=blade[1];for(let i=0;i<=8;i++){const f=i/8,x=A[0]+(D[0]-A[0])*f,z=A[1]+(D[1]-A[1])*f;b.box('steel',[x,163.1,z],[.18,12.2,.18]);}
+
+ k.flush();return b.finish();}

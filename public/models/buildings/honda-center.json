@@ -1,0 +1,256 @@
+{
+  "id": "honda-center",
+  "name": "Honda Center",
+  "kind": "building",
+  "origin": [
+    -117.87653495,
+    33.8078251
+  ],
+  "height": 33,
+  "widthM": 142.22,
+  "depthM": 108.81,
+  "padM": 98,
+  "frontageBearing": 180,
+  "rotation": 0.0069165677006762264,
+  "controlPoints": [
+    [
+      -117.8769366,
+      33.8073364
+    ],
+    [
+      -117.8761188,
+      33.8073411
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.8772618,
+          33.807656
+        ],
+        [
+          -117.8772607,
+          33.8074479
+        ],
+        [
+          -117.8772221,
+          33.807448
+        ],
+        [
+          -117.8772143,
+          33.8074255
+        ],
+        [
+          -117.8771931,
+          33.8074077
+        ],
+        [
+          -117.8771599,
+          33.807401
+        ],
+        [
+          -117.8771547,
+          33.807371
+        ],
+        [
+          -117.8769225,
+          33.8073718
+        ],
+        [
+          -117.8769366,
+          33.8073364
+        ],
+        [
+          -117.8761188,
+          33.8073411
+        ],
+        [
+          -117.8761431,
+          33.8073746
+        ],
+        [
+          -117.8759029,
+          33.8073755
+        ],
+        [
+          -117.8759032,
+          33.8074182
+        ],
+        [
+          -117.8758817,
+          33.8074256
+        ],
+        [
+          -117.8758636,
+          33.8074389
+        ],
+        [
+          -117.8758557,
+          33.8074611
+        ],
+        [
+          -117.8758045,
+          33.8074633
+        ],
+        [
+          -117.8758053,
+          33.8076737
+        ],
+        [
+          -117.8757655,
+          33.8076593
+        ],
+        [
+          -117.875767,
+          33.8080334
+        ],
+        [
+          -117.8758065,
+          33.8080115
+        ],
+        [
+          -117.8758071,
+          33.8081909
+        ],
+        [
+          -117.8758564,
+          33.8081902
+        ],
+        [
+          -117.8758681,
+          33.8082157
+        ],
+        [
+          -117.8758893,
+          33.808229
+        ],
+        [
+          -117.8759121,
+          33.8082356
+        ],
+        [
+          -117.8759157,
+          33.8082695
+        ],
+        [
+          -117.8761426,
+          33.8082692
+        ],
+        [
+          -117.8761288,
+          33.808312
+        ],
+        [
+          -117.8769464,
+          33.8083138
+        ],
+        [
+          -117.8769248,
+          33.808268
+        ],
+        [
+          -117.8771629,
+          33.8082676
+        ],
+        [
+          -117.8771639,
+          33.8082271
+        ],
+        [
+          -117.8771819,
+          33.808226
+        ],
+        [
+          -117.87721,
+          33.8082077
+        ],
+        [
+          -117.8772144,
+          33.8081832
+        ],
+        [
+          -117.8772646,
+          33.8081823
+        ],
+        [
+          -117.8772636,
+          33.8079894
+        ],
+        [
+          -117.8773044,
+          33.808005
+        ],
+        [
+          -117.8772987,
+          33.807635
+        ],
+        [
+          -117.8772618,
+          33.807656
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.87653495,
+        33.8078251
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped 142 by 109 m outer envelope; engineer reports a 329 by 444 ft roof span. Overall 33 m, portal radius 24 m, facade courses and roof curvature are photo estimates. Operator describes an ongoing five-storey South Edition; proposed additions are excluded, modeling the extant photographed main arena, not a future completion. No signs, logos, banners, parking or temporary construction. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/honda-center-near.glb",
+      "bytes": 46852,
+      "triangles": 4299,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -71.1716079711914,
+          0,
+          -55.25
+        ],
+        "max": [
+          71.1716079711914,
+          33,
+          55.25
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/honda-center-far.glb",
+      "bytes": 30416,
+      "triangles": 2035,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -71.1716079711914,
+          0,
+          -55.25
+        ],
+        "max": [
+          71.1716079711914,
+          33,
+          55.25
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/honda-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

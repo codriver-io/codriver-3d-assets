@@ -1,0 +1,65 @@
+{
+  "id": "walter-reed-tower-bethesda",
+  "name": "Walter Reed Bethesda tower",
+  "kind": "building",
+  "origin": [
+    -77.094111,
+    39.001825
+  ],
+  "height": 80.4672,
+  "padM": 115,
+  "frontageBearing": 270,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "This is the Bethesda historic tower and original PresidentZone base block, not the former WalterReedArmyMedicalCenter inWashington. The footprint supplies the projecting west entrance/tower stem, two L-shaped pavilions and low eastconnector. The tower’s higher masses are fitted within those mapped controls; their subdivisions are photo estimates. The1977NationalRegister description identifies a20storey tower and3/4storey pavilions; CTBUH gives19floors, while earlier accounts use other counts. This model records the disagreement and does not claim a surveyed floor schedule.264ft(80.4672m) is the officialcampusmasterplanheight. Bronze sash/serpentine spandrels are separated into lighter horizontal floor bands against offwhite quartz/concrete, as described in the register and confirmed by currentpost2011exteriorphotos1/3. Photo2 is a widercampuscontext view. New hospitalconstruction, detached modernmedicalblocks, roads, forecourt, flags, seals and lettering are omitted. All feet at a single localrigid y0; no terrainbaked. Source readiness does not establish RockvillePike or campusgrade fitting in eitherappmode. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Lightened floor spandrels to #adaf9f daylight / #879da7 dark. Main shaft bays retain 13 separate rows and the front stem 14 rows in both LODs; separators are at least 0.6 m tall and over 40/255 grayscale lighter than glass. The white piers, front projection and stepped crown retain their dimensions.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/walter-reed-tower-bethesda-near.glb",
+      "bytes": 69336,
+      "triangles": 6296,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -57.771148681640625,
+          0,
+          -58.554317474365234
+        ],
+        "max": [
+          34.9239501953125,
+          80.46720123291016,
+          55.292640686035156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/walter-reed-tower-bethesda-far.glb",
+      "bytes": 56336,
+      "triangles": 4856,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -57.771148681640625,
+          0,
+          -58.554317474365234
+        ],
+        "max": [
+          34.9239501953125,
+          80.46720123291016,
+          55.292640686035156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/walter-reed-tower-bethesda/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "avicii-arena",
+  "name": "Avicii Arena",
+  "kind": "building",
+  "origin": [
+    18.08334549375,
+    59.2936108
+  ],
+  "height": 85,
+  "padM": 75,
+  "frontageBearing": 263,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The dome exterior remains the permanent1989 shell with2010 SkyView. The2025 arena refurbishment concerns internal performance facilities; the exterior sources and current owner/ride pages agree with these permanent features.85 m is an exterior modeling estimate based on OSM and photos, not a claim that published interior height equals an independently surveyed exterior height; no130 m sea-level offset is baked into geometry. The shell is not110 m high. Photos1 and6–8 are checked exterior views;3–4 are interiors and5 has the temporary2009 art cottage, which is omitted. Surrounding offices, temporary projections/signs, lettering, artwork, flags and plaza paving are excluded. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/avicii-arena-near.glb",
+      "bytes": 597616,
+      "triangles": 41225,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -64.18824005126953,
+          0,
+          -56.81776428222656
+        ],
+        "max": [
+          56.81776428222656,
+          85,
+          56.81776428222656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/avicii-arena-far.glb",
+      "bytes": 108100,
+      "triangles": 5809,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -64.18824005126953,
+          0,
+          -56.81776428222656
+        ],
+        "max": [
+          56.81776428222656,
+          85,
+          56.81776428222656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/avicii-arena/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

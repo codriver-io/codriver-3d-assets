@@ -4,7 +4,7 @@ Original procedural models of landmarks and architectural road bridges in the ci
 
 Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, or `--all`). Each landmark has its own documentation page in [docs/assets](assets/), named `top-cities-<id>.md`.
 
-## The collection (317 released)
+## The collection (561 released)
 
 | id | Landmark | City | Kind |
 | --- | --- | --- | --- |
@@ -325,6 +325,250 @@ Build the released models: `pnpm build:top-cities-landmarks` (one or more ids, o
 | `ben-sawyer-bridge` | Ben Sawyer Bridge | Sullivan's Island | bridge |
 | `morris-island-lighthouse` | Morris Island Lighthouse | Folly Beach | building |
 | `colonial-dorchester-bell-tower` | Colonial Dorchester (St. George's bell tower) | Summerville | building |
+| `122-leadenhall-street` | 122 Leadenhall Street | London | building |
+| `20-fenchurch-street` | 20 Fenchurch Street | London | building |
+| `3arena-dublin` | 3Arena | Dublin | building |
+| `8-canada-square` | 8 Canada Square | London | building |
+| `absolute-world-mississauga` | Absolute World | Mississauga | building |
+| `accor-arena-bercy` | Accor Arena (Bercy) | Paris | building |
+| `afi-silver-theatre` | AFI Silver Theatre | Silver Spring | building |
+| `american-airlines-center` | American Airlines Center | Dallas | building |
+| `anaheim-artic` | Anaheim Regional Transportation Intermodal Center | Anaheim | building |
+| `anaheim-packing-house` | Anaheim Packing House | Anaheim | building |
+| `angel-stadium` | Angel Stadium | Anaheim | building |
+| `arenes-de-nimes` | Arènes de Nîmes | Nîmes | building |
+| `astrodome` | Astrodome (Reliant Astrodome) | Houston | building |
+| `athens-city-hall` | Athens City Hall | Athens, Georgia | building |
+| `athens-tower` | Athens Tower | Athens | building |
+| `avicii-arena` | Avicii Arena | Stockholm | building |
+| `aviva-stadium` | Aviva Stadium | Dublin | building |
+| `azrieli-center` | Azrieli Center (original three towers) | Tel Aviv | building |
+| `bahai-house-worship-wilmette` | Bahá’í House of Worship | Wilmette | building |
+| `baltimore-city-hall` | Baltimore City Hall | Baltimore | building |
+| `baltimore-world-trade-center` | Baltimore World Trade Center | Baltimore | building |
+| `bancolombia-medellin` | Bancolombia headquarters | Medellín | building |
+| `bank-of-georgia-hq` | Bank of Georgia headquarters | Tbilisi | building |
+| `basilica-saint-nicholas-amsterdam` | Basilica of Saint Nicholas | Amsterdam | building |
+| `basilique-saint-frederic-drummondville` | Basilique Saint-Frédéric | Drummondville | building |
+| `basilique-visitation-annecy` | Basilique de la Visitation d'Annecy | Annecy | building |
+| `bass-performance-hall` | Bass Performance Hall | Fort Worth | building |
+| `bd-bacata` | BD Bacatá | Bogotá | building |
+| `beetham-tower-manchester` | Beetham Tower | Manchester | building |
+| `beffroi-hotel-de-ville-lille` | Beffroi de l’Hôtel de Ville | Lille | building |
+| `bella-sky-copenhagen` | Bella Sky | Copenhagen | building |
+| `berlin-fernsehturm` | Berlin Fernsehturm | Berlin | building |
+| `bibliotheque-nationale-francois-mitterrand` | Bibliothèque François-Mitterrand | Paris | building |
+| `bibliotheque-schoelcher` | Bibliothèque Schœlcher | Fort-de-France | building |
+| `big-chicken-marietta` | Big Chicken | Marietta | building |
+| `biltmore-tbilisi` | Biltmore Hotel Tbilisi | Tbilisi | building |
+| `bmw-headquarters` | BMW Headquarters | Munich | building |
+| `braselton-brothers-store` | Braselton Brothers Store | Braselton | building |
+| `bt-tower-london` | BT Tower | London | building |
+| `california-state-capitol` | California State Capitol | Sacramento | building |
+| `california-theatre-san-bernardino` | California Theatre | San Bernardino | building |
+| `castel-sant-angelo` | Castel Sant’Angelo | Rome | building |
+| `cathedral-basilica-st-louis` | Cathedral Basilica of Saint Louis | St. Louis | building |
+| `cathedral-blessed-sacrament-sacramento` | Cathedral of the Blessed Sacrament | Sacramento | building |
+| `cathedral-transfiguration-markham` | Cathedral of the Transfiguration | Markham | building |
+| `cathedrale-clermont-ferrand` | Cathédrale Notre-Dame-de-l'Assomption de Clermont-Ferrand | Clermont-Ferrand | building |
+| `cathedrale-notre-dame-reims` | Cathédrale Notre-Dame de Reims | Reims | building |
+| `cathedrale-notre-dame-strasbourg` | Cathédrale Notre-Dame de Strasbourg | Strasbourg | building |
+| `cathedrale-saint-antoine-longueuil` | Co-cathédrale Saint-Antoine-de-Padoue | Longueuil | building |
+| `cathedrale-saint-denis-reunion` | Cathédrale Saint-Denis | Saint-Denis (Réunion) | building |
+| `cathedrale-saint-louis-fort-de-france` | Cathédrale Saint-Louis | Fort-de-France | building |
+| `chateau-elan-winery` | Château Élan Winery | Braselton | building |
+| `christiansborg-palace` | Christiansborg Palace | Copenhagen | building |
+| `church-of-our-saviour-copenhagen` | Church of Our Saviour | Copenhagen | building |
+| `cite-du-vin-bordeaux` | Cité du Vin | Bordeaux | building |
+| `civil-courts-building-st-louis` | Civil Courts Building | St. Louis | building |
+| `coimbra-university-tower` | University of Coimbra Tower | Coimbra | building |
+| `collegiale-saint-andre-grenoble` | Collégiale Saint-André de Grenoble | Grenoble | building |
+| `collegiate-saint-gertrude-nivelles` | Collegiate Church of Saint Gertrude | Nivelles | building |
+| `comerica-bank-tower` | Comerica Bank Tower | Dallas | building |
+| `constanta-casino` | Constanța Casino | Constanța | building |
+| `coolray-field` | Gwinnett Field (formerly Coolray Field) | Lawrenceville | building |
+| `coquitlam-city-hall` | Coquitlam City Hall | Coquitlam | building |
+| `cosmodome-laval` | Cosmodôme | Laval | building |
+| `cristo-rei-almada` | Cristo Rei | Almada | building |
+| `dallas-hall-smu` | Dallas Hall | Dallas | building |
+| `de-gooyer` | De Gooyer windmill | Amsterdam | building |
+| `denver-union-station` | Denver Union Station | Denver | building |
+| `donjon-de-niort` | Donjon de Niort | Niort | building |
+| `eglise-purification-repentigny` | Église de la Purification | Repentigny | building |
+| `eglise-saint-augustin-paris` | Église Saint-Augustin | Paris | building |
+| `eglise-saint-hubert-longueuil` | Église Saint-Hubert | Longueuil | building |
+| `eglise-saint-joachim-pointe-claire` | Église Saint-Joachim | Pointe-Claire | building |
+| `eglise-saint-lambert` | Église Saint-Lambert | Saint-Lambert | building |
+| `eglise-saint-pierre-saint-paul-pointe-a-pitre` | Église Saint-Pierre-et-Saint-Paul | Pointe-à-Pitre | building |
+| `ellicott-city-station` | Ellicott City Station | Ellicott City | building |
+| `emirates-stadium` | Emirates Stadium | London | building |
+| `esch-sur-alzette-town-hall` | Hôtel de Ville Esch-sur-Alzette | Esch-sur-Alzette | building |
+| `faro-moncloa` | Faro de Moncloa | Madrid | building |
+| `flagey-building` | Flagey Building | Brussels | building |
+| `fondation-vasarely-aix` | Fondation Vasarely | Aix-en-Provence | building |
+| `fort-chambly` | Fort Chambly | Chambly | building |
+| `fort-langley-community-hall` | Fort Langley Community Hall | Langley | building |
+| `fortin-heredia` | El Fortín | Heredia | building |
+| `gare-oriente` | Gare do Oriente | Lisbon | building |
+| `gas-south-arena` | Gas South Arena | Duluth | building |
+| `gasometro-rome` | Gasometro Ostiense | Rome | building |
+| `ghent-belfry` | Belfry of Ghent | Ghent | building |
+| `grand-hotel-dieu-lyon` | Grand Hôtel-Dieu | Lyon | building |
+| `grosse-cloche-bordeaux` | Grosse Cloche | Bordeaux | building |
+| `gur-sikh-temple` | Gur Sikh Temple | Abbotsford | building |
+| `gwinnett-historic-courthouse` | Gwinnett Historic Courthouse | Lawrenceville | building |
+| `haney-house` | Haney House | Maple Ridge | building |
+| `heritage-plaza-houston` | Heritage Plaza | Houston | building |
+| `hillsboro-inlet-lighthouse` | Hillsboro Inlet Lighthouse | Hillsboro Beach | building |
+| `honda-center` | Honda Center | Anaheim | building |
+| `hotel-de-ville-grenoble` | Hôtel de Ville de Grenoble | Grenoble | building |
+| `hotel-okura-amsterdam` | Hotel Okura Amsterdam | Amsterdam | building |
+| `houston-city-hall` | Houston City Hall | Houston | building |
+| `hypo-haus-munich` | Hypo-Haus | Munich | building |
+| `iglesia-merced-san-jose` | Iglesia de La Merced | San José | building |
+| `inntel-zaandam` | Inntel Hotels Amsterdam Zaandam | Zaandam | building |
+| `intercontinental-bucharest` | Grand Hotel Bucharest (former InterContinental) | Bucharest | building |
+| `ito-tower` | Ito Tower | Amsterdam | building |
+| `jerusalem-ymca` | Jerusalem International YMCA | Jerusalem | building |
+| `jpmorgan-chase-tower-dallas` | Dallas Arts Tower (Chase Tower) | Dallas | building |
+| `kaknas-tower` | Kaknas Tower | Stockholm | building |
+| `kansas-city-city-hall` | Kansas City City Hall | Kansas City | building |
+| `kauffman-center-kansas-city` | Kauffman Center for the Performing Arts | Kansas City | building |
+| `kista-science-tower` | Kista Science Tower | Stockholm | building |
+| `koekelberg-basilica` | National Basilica of the Sacred Heart | Brussels | building |
+| `la-rosaleda` | La Rosaleda Stadium | Málaga | building |
+| `library-of-birmingham` | Library of Birmingham | Birmingham (England) | building |
+| `liege-guillemins` | Liège-Guillemins station | Liège | building |
+| `london-stadium` | London Stadium | London | building |
+| `lviv-town-hall` | Lviv Town Hall | Lviv | building |
+| `maison-carree-nimes` | Maison Carrée de Nîmes | Nîmes | building |
+| `maison-de-la-radio` | Maison de la Radio | Paris | building |
+| `malaga-cathedral` | Málaga Cathedral | Málaga | building |
+| `markham-civic-centre` | Markham Civic Centre | Markham | building |
+| `mausoleum-carol-park` | Carol Park Mausoleum | Bucharest | building |
+| `meyerson-symphony-center` | Morton H. Meyerson Symphony Center | Dallas | building |
+| `mission-san-juan-capistrano` | Mission San Juan Capistrano | San Juan Capistrano | building |
+| `mississauga-civic-centre` | Mississauga Civic Centre | Mississauga | building |
+| `mondriaan-tower` | Mondriaan Tower | Amsterdam | building |
+| `moshe-aviv-tower` | Moshe Aviv Tower | Ramat Gan | building |
+| `moulin-neuf-terrebonne` | Moulin neuf de Terrebonne | Terrebonne | building |
+| `mt-bank-stadium-baltimore` | M&T Bank Stadium | Baltimore | building |
+| `museo-arte-costarricense` | Museo de Arte Costarricense | San José | building |
+| `namur-saint-aubin` | Saint Aubin Cathedral | Namur | building |
+| `national-library-romania` | National Library of Romania | Bucharest | building |
+| `national-space-centre` | National Space Centre | Leicester | building |
+| `national-theatre-bucharest` | National Theatre Bucharest | Bucharest | building |
+| `national-theatre-london` | Royal National Theatre | London | building |
+| `nhow-amsterdam-rai` | nhow Amsterdam RAI | Amsterdam | building |
+| `nottingham-council-house` | Nottingham Council House | Nottingham | building |
+| `nrg-stadium` | Reliant Stadium (formerly NRG Stadium) | Houston | building |
+| `ohio-stadium` | Ohio Stadium | Columbus | building |
+| `olympiaturm-munich` | Olympiaturm | Munich | building |
+| `olympic-stadium-amsterdam` | Olympic Stadium | Amsterdam | building |
+| `one-canada-square` | One Canada Square | London | building |
+| `oriole-park-camden-yards` | Oriole Park at Camden Yards | Baltimore | building |
+| `padrao-descobrimentos` | Padrão dos Descobrimentos | Lisbon | building |
+| `palais-de-l-isle-annecy` | Palais de l'Isle d'Annecy | Annecy | building |
+| `palais-de-la-porte-doree` | Palais de la Porte Dorée | Paris | building |
+| `palais-des-congres-paris` | Palais des congrès de Paris | Paris | building |
+| `palais-des-papes-avignon` | Palais des Papes | Avignon | building |
+| `palazzo-civilta-italiana` | Palazzo della Civiltà Italiana | Rome | building |
+| `parc-des-princes` | Parc des Princes | Paris | building |
+| `parlement-europeen-louise-weiss` | Parlement européen Louise-Weiss | Strasbourg | building |
+| `parus-business-centre` | Parus Business Centre | Kyiv | building |
+| `perris-depot` | Perris Depot | Perris | building |
+| `phare-de-verzenay` | Phare de Verzenay | Verzenay | building |
+| `philharmonie-luxembourg` | Philharmonie Luxembourg | Luxembourg | building |
+| `place-bell-laval` | Place Bell | Laval | building |
+| `pontsteiger` | Pontsteiger | Amsterdam | building |
+| `port-coquitlam-city-hall` | Port Coquitlam City Hall | Port Coquitlam | building |
+| `porte-cailhau-bordeaux` | Porte Cailhau | Bordeaux | building |
+| `porte-de-la-craffe` | Porte de la Craffe | Nancy | building |
+| `portland-union-station` | Portland Union Station | Portland | building |
+| `prime-tower-zurich` | Prime Tower | Zürich | building |
+| `pyramid-cestius` | Pyramid of Cestius | Rome | building |
+| `rai-elicium` | RAI Elicium | Amsterdam | building |
+| `red-brick-courthouse-rockville` | Red Brick Courthouse | Rockville | building |
+| `rembrandt-tower` | Rembrandt Tower | Amsterdam | building |
+| `renaissance-tower-dallas` | Renaissance Tower | Dallas | building |
+| `rhodes-state-office-tower` | Rhodes State Office Tower | Columbus | building |
+| `riverside-fox-theater` | Fox Performing Arts Center | Riverside | building |
+| `sage-gateshead` | The Glasshouse (Sage Gateshead) | Gateshead | building |
+| `saint-paul-cathedral-liege` | Saint Paul Cathedral | Liège | building |
+| `san-bernardino-county-courthouse` | San Bernardino County Courthouse | San Bernardino | building |
+| `san-giovanni-laterano` | Archbasilica of Saint John Lateran | Rome | building |
+| `san-pedro-claver-cartagena` | Iglesia de San Pedro Claver | Cartagena | building |
+| `sanford-stadium` | Sanford Stadium | Athens, Georgia | building |
+| `santa-justa-lift` | Santa Justa Lift | Lisbon | building |
+| `santa-maria-maggiore` | Basilica di Santa Maria Maggiore | Rome | building |
+| `savage-mill` | Savage Mill | Savage | building |
+| `seven-foot-knoll-lighthouse` | Seven Foot Knoll Lighthouse | Baltimore | building |
+| `shrine-of-the-book` | Shrine of the Book | Jerusalem | building |
+| `siegestor-munich` | Siegestor | Munich | building |
+| `skytower-bucharest` | SkyTower Bucharest | Bucharest | building |
+| `spire-of-dublin` | Spire of Dublin | Dublin | building |
+| `st-louis-union-station` | St. Louis Union Station | St. Louis | building |
+| `st-michaels-church-cluj` | St. Michael’s Church Cluj | Cluj-Napoca | building |
+| `stade-des-alpes` | Stade des Alpes | Grenoble | building |
+| `stade-mayol-toulon` | Stade Mayol | Toulon | building |
+| `stade-pierre-mauroy` | Stade Pierre-Mauroy | Villeneuve-d’Ascq | building |
+| `stockholm-city-hall` | Stockholm City Hall | Stockholm | building |
+| `stone-mountain-carillon` | Stone Mountain Carillon | Stone Mountain | building |
+| `strat-tower-las-vegas` | The STRAT Tower | Las Vegas | building |
+| `stuttgart-hauptbahnhof-tower` | Stuttgart Hauptbahnhof tower | Stuttgart | building |
+| `surrey-city-hall` | Surrey City Hall | Surrey | building |
+| `tagblatt-turm-stuttgart` | Tagblatt-Turm | Stuttgart | building |
+| `tate-modern` | Tate Modern | London | building |
+| `tbilisi-tv-tower` | Tbilisi TV Tower | Tbilisi | building |
+| `temple-saint-martin-montbeliard` | Temple Saint-Martin | Montbéliard | building |
+| `texas-star-ferris-wheel` | Texas Star | Dallas | building |
+| `the-o2-london` | The O2 | London | building |
+| `the-rock-amsterdam` | The Rock | Amsterdam | building |
+| `toronto-ontario-temple-brampton` | Toronto Ontario Temple | Brampton | building |
+| `torre-cali` | Torre de Cali | Cali | building |
+| `torre-reloj-cartagena` | Torre del Reloj | Cartagena | building |
+| `torres-paseo-colon` | Torres Paseo Colón | San José | building |
+| `torrespana` | Torrespaña | Madrid | building |
+| `tour-alto` | Tour Alto | Courbevoie | building |
+| `tour-bretagne-nantes` | Tour Bretagne | Nantes | building |
+| `tour-carpe-diem` | Tour Carpe Diem | Courbevoie | building |
+| `tour-cma-cgm` | Tour CMA CGM | Marseille | building |
+| `tour-d2` | Tour D2 | Courbevoie | building |
+| `tour-de-la-miotte` | Tour de la Miotte | Belfort | building |
+| `tour-de-leurope-mulhouse` | Tour de l’Europe | Mulhouse | building |
+| `tour-de-lille` | Tour de Lille | Lille | building |
+| `tour-des-archives-rouen` | Tour des Archives | Rouen | building |
+| `tour-du-midi` | Tour du Midi | Brussels | building |
+| `tour-elithis-dijon` | Tour Elithis | Dijon | building |
+| `tour-first` | Tour First | Courbevoie | building |
+| `tour-la-marseillaise` | Tour La Marseillaise | Marseille | building |
+| `tour-lanterne-rochelle` | Tour de la Lanterne | La Rochelle | building |
+| `tour-lu-nantes` | Tour LU | Nantes | building |
+| `tour-metallique-fourviere` | Tour métallique de Fourvière | Lyon | building |
+| `tour-oxygene` | Tour Oxygène | Lyon | building |
+| `tour-paradis-liege` | Tour Paradis | Liège | building |
+| `tour-perret-grenoble` | Tour Perret | Grenoble | building |
+| `tour-pey-berland` | Tour Pey-Berland | Bordeaux | building |
+| `tour-royale-toulon` | Tour Royale de Toulon | Toulon | building |
+| `tour-saint-aubin-angers` | Tour Saint-Aubin | Angers | building |
+| `tour-saint-gobain` | Tour Saint-Gobain | Courbevoie | building |
+| `tour-saint-nicolas-rochelle` | Tour Saint-Nicolas | La Rochelle | building |
+| `tour-t1` | Tour T1 (Engie) | Courbevoie | building |
+| `tour-total-coupole` | Tour Total Coupole | Courbevoie | building |
+| `tour-trinity` | Tour Trinity | Courbevoie | building |
+| `tovrea-castle` | Tovrea Castle | Phoenix | building |
+| `trethewey-house` | Trethewey House | Abbotsford | building |
+| `tribunal-de-paris` | Tribunal de Paris | Paris | building |
+| `tustin-south-hangar` | Tustin South Airship Hangar | Tustin | building |
+| `ucr-bell-tower` | UC Riverside Bell Tower | Riverside | building |
+| `uga-arch` | University of Georgia Arch | Athens, Georgia | building |
+| `vinoly-tower-amsterdam` | Viñoly Tower | Amsterdam | building |
+| `walter-reed-tower-bethesda` | Walter Reed Bethesda tower | Bethesda | building |
+| `walton-historic-courthouse` | Walton County Historic Courthouse | Monroe | building |
+| `will-rogers-memorial-center` | Will Rogers Memorial Center | Fort Worth | building |
+| `winspear-opera-house` | Margot and Bill Winspear Opera House | Dallas | building |
+| `ziggo-dome` | Ziggo Dome | Amsterdam | building |
+| `ziggurat-west-sacramento` | The Ziggurat | West Sacramento | building |
 
 ## A landmark is a folder
 

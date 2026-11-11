@@ -1,0 +1,65 @@
+{
+  "id": "cathedrale-saint-antoine-longueuil",
+  "name": "Co-cathédrale Saint-Antoine-de-Padoue",
+  "kind": "building",
+  "origin": [
+    -73.507931,
+    45.540289
+  ],
+  "height": 81,
+  "padM": 85,
+  "frontageBearing": 298.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The primary Québec heritage inventory explicitly describes dissimilar towers, with a high east spire and pavilion west roof. The original batch description of paired spires was corrected after photo review. Spire height is reported as 81 m by the article; secondary heritage descriptions sometimes confuse 74 m length and height, so exterior heights remain approximate. Rose tracery, pointed portal reveals, lancets, buttresses and crossing lantern are simplified original geometry. No lettering or imagery. Historic 1885 illustration was rejected as a current exterior photo. Cityscape: not tested. Full 3D world: not tested. Geographic audit: fitted front tower widths and corner pinnacles to the mapped envelope, chamfered the clerestory/roof corners to the actual nave polygon and closed the ceremonial gable connection. Heights and asymmetric silhouette are unchanged. Review follow-up: Nit: strengthened the existing portal, rose surround and belfry trim through a warmer, lighter trim tone against slightly darker stone. Unequal towers, crossing lantern, rose tracery and all geometry are unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-saint-antoine-longueuil-near.glb",
+      "bytes": 50924,
+      "triangles": 2669,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.930448532104492,
+          0,
+          -25.347562789916992
+        ],
+        "max": [
+          47.397579193115234,
+          81,
+          29.78923225402832
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-saint-antoine-longueuil-far.glb",
+      "bytes": 42880,
+      "triangles": 2053,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -30.930448532104492,
+          0,
+          -25.347562789916992
+        ],
+        "max": [
+          47.397579193115234,
+          81,
+          29.78923225402832
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-saint-antoine-longueuil/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

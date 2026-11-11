@@ -1,0 +1,66 @@
+{
+  "id": "olympiaturm-munich",
+  "name": "Olympiaturm",
+  "kind": "building",
+  "origin": [
+    11.553740099999999,
+    48.174409499999996
+  ],
+  "height": 291,
+  "padM": 28,
+  "frontageBearing": 123.05018292270731,
+  "rotationY": 0.576834510387645,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Olympiaturm with a long tapered concrete shaft, three substantial lower equipment tiers with dark grille belts, the glazed revolving-restaurant drum, an upper dish and striped antenna mast. Antenna dish levels, shaft taper and pod dimensions are photo-derived estimates. The permanent 1968 tower with later mast is modeled; temporary renovation scaffolding and the separately mapped entrance pavilion are omitted. Cityscape: not tested; Full 3D world: not tested. Review follow-up: The three lower equipment tiers now have substantial 12.5–13.2 m principal radii, dark grille/panel belts at 156–160, 165–169 and 174–176.5 m, and pale projecting rims. Recessed breaks around 162–164 and 171–173 m keep the stack distinct from the 182–190 m restaurant/observation head. Source/export radial probes pin each grille belt, the gaps and the 291 m tip. New sheet confirms the lower head has weight and a near/far tier ratio consistent with the reference.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/olympiaturm-munich-near.glb",
+      "bytes": 60816,
+      "triangles": 4600,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -14.179883003234863,
+          0,
+          -14.179883003234863
+        ],
+        "max": [
+          14.179883003234863,
+          291,
+          14.179883003234863
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/olympiaturm-munich-far.glb",
+      "bytes": 40776,
+      "triangles": 2696,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -14.134119987487793,
+          0,
+          -14.134119987487793
+        ],
+        "max": [
+          14.134119987487793,
+          291,
+          14.134119987487793
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/olympiaturm-munich/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

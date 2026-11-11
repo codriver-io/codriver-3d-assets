@@ -1,0 +1,66 @@
+{
+  "id": "stuttgart-hauptbahnhof-tower",
+  "name": "Stuttgart Hauptbahnhof tower",
+  "kind": "building",
+  "origin": [
+    9.182783,
+    48.783374550000005
+  ],
+  "height": 56,
+  "padM": 18,
+  "frontageBearing": 148.82353313891093,
+  "rotationY": 1.0266643309299905,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The Bonatz station clock tower: square sandstone shaft, five tall upper glazing slots, a large circular red-and-dark clock, projecting balcony and a low roof parapet. The city publishes 56 m for the masonry tower; the separate rooftop advertising star and its supports are deliberately omitted under the batch no-trademark rule. Clock position, pane dimensions, balcony and course projections are photo estimates; side/rear window arrangements are simplified. The station building and temporary construction works are excluded. Comparison photographs show the permanent masonry before the surrounding station works, which the city confirms is retained in 2026. Cityscape: not tested; Full 3D world: not tested. Review follow-up: Every masonry course now uses one muted grey-brown sandstone, light #918b7e / dark #615d54; the former alternate colour keys have identical palette values and are absent from exported material batches. There are no bright camouflage blocks. Clock, five tall upper glazed slots, balcony and parapet remain; the advertising star stays excluded. The new sheet confirms uniform sandstone at overview and close range.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stuttgart-hauptbahnhof-tower-near.glb",
+      "bytes": 109156,
+      "triangles": 8890,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -9.761246681213379,
+          0,
+          -10.082253456115723
+        ],
+        "max": [
+          9.761246681213379,
+          56,
+          10.082253456115723
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stuttgart-hauptbahnhof-tower-far.glb",
+      "bytes": 46500,
+      "triangles": 3099,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -9.761246681213379,
+          0,
+          -10.082253456115723
+        ],
+        "max": [
+          9.761246681213379,
+          56,
+          10.082253456115723
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stuttgart-hauptbahnhof-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

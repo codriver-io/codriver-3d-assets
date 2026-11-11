@@ -1,0 +1,65 @@
+{
+  "id": "bt-tower-london",
+  "name": "BT Tower",
+  "kind": "building",
+  "origin": [
+    -0.138804,
+    51.521442
+  ],
+  "height": 189,
+  "padM": 100,
+  "frontageBearing": 55.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 189 m total and OSM 188.4 m disagree slightly; 189 m is used. Main structure 177 m, gallery diameters/levels follow mapped parts. Equipment-ring thickness, antenna lattice, exchange facade bays and roof details are photo estimates. Modern dish-free exterior; proposed hotel conversion is not modeled. No lettering or brand display graphics. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bt-tower-london-near.glb",
+      "bytes": 220804,
+      "triangles": 18197,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -69.79906463623047,
+          0,
+          -46.910247802734375
+        ],
+        "max": [
+          28.91151237487793,
+          189,
+          57.37432861328125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bt-tower-london-far.glb",
+      "bytes": 72328,
+      "triangles": 5065,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -69.79906463623047,
+          0,
+          -46.910247802734375
+        ],
+        "max": [
+          28.91151237487793,
+          189,
+          57.37432861328125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bt-tower-london/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

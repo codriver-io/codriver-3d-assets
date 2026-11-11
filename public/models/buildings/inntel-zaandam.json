@@ -1,0 +1,82 @@
+{
+  "id": "inntel-zaandam",
+  "name": "Inntel Hotels Amsterdam Zaandam",
+  "kind": "building",
+  "origin": [
+    4.815708600000001,
+    52.4380662
+  ],
+  "height": 39,
+  "padM": 90,
+  "frontageBearing": 0,
+  "rotation": 1.9741005467840507,
+  "houseFronts": 68,
+  "stackLevels": [
+    4.2,
+    11,
+    20,
+    29.2
+  ],
+  "projectionRange": [
+    0.8,
+    2.5
+  ],
+  "blueHouses": 1,
+  "towerCenter": [
+    -6,
+    18.3
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped outline includes long low wing. Tall volume is confined to its northern square, with an estimated rectangular overhang mask documented separately. Main gable contour stays39m. No water/paving added. No lettering or signs. Unequal full house volumes project0.8–2.5m from an inset core; hidden intersections are removed, the blue gable reaches39m and individual slate roofs replace the broad brown canopy.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/inntel-zaandam-near.glb",
+      "bytes": 182912,
+      "triangles": 16932,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -38.3153076171875,
+          0,
+          -18.499170303344727
+        ],
+        "max": [
+          38.3153076171875,
+          39.00004577636719,
+          17.45497703552246
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/inntel-zaandam-far.glb",
+      "bytes": 110200,
+      "triangles": 9158,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -38.3153076171875,
+          0,
+          -18.499170303344727
+        ],
+        "max": [
+          38.3153076171875,
+          39.00004577636719,
+          17.45497703552246
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/inntel-zaandam/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

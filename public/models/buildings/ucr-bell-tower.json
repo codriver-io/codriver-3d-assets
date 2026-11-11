@@ -1,0 +1,240 @@
+{
+  "id": "ucr-bell-tower",
+  "name": "UC Riverside Bell Tower",
+  "kind": "building",
+  "origin": [
+    -117.3281749,
+    33.97334275
+  ],
+  "height": 49.07,
+  "widthM": 7.88,
+  "depthM": 7.89,
+  "padM": 14,
+  "frontageBearing": 180,
+  "rotation": 0,
+  "controlPoints": [
+    [
+      -117.3281884,
+      33.9733085
+    ],
+    [
+      -117.328161,
+      33.9733085
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.3282162,
+          33.9733085
+        ],
+        [
+          -117.3281933,
+          33.9733085
+        ],
+        [
+          -117.3281933,
+          33.9733073
+        ],
+        [
+          -117.3281884,
+          33.9733073
+        ],
+        [
+          -117.3281884,
+          33.9733085
+        ],
+        [
+          -117.328161,
+          33.9733085
+        ],
+        [
+          -117.328161,
+          33.9733073
+        ],
+        [
+          -117.3281561,
+          33.9733073
+        ],
+        [
+          -117.3281561,
+          33.9733085
+        ],
+        [
+          -117.3281336,
+          33.9733085
+        ],
+        [
+          -117.3281336,
+          33.9733273
+        ],
+        [
+          -117.3281322,
+          33.9733273
+        ],
+        [
+          -117.3281322,
+          33.9733314
+        ],
+        [
+          -117.3281336,
+          33.9733314
+        ],
+        [
+          -117.3281336,
+          33.9733541
+        ],
+        [
+          -117.3281322,
+          33.9733541
+        ],
+        [
+          -117.3281322,
+          33.9733582
+        ],
+        [
+          -117.3281336,
+          33.9733582
+        ],
+        [
+          -117.3281336,
+          33.973377
+        ],
+        [
+          -117.3281562,
+          33.973377
+        ],
+        [
+          -117.3281562,
+          33.9733782
+        ],
+        [
+          -117.3281612,
+          33.9733782
+        ],
+        [
+          -117.3281612,
+          33.973377
+        ],
+        [
+          -117.3281885,
+          33.973377
+        ],
+        [
+          -117.3281885,
+          33.9733782
+        ],
+        [
+          -117.3281935,
+          33.9733782
+        ],
+        [
+          -117.3281935,
+          33.973377
+        ],
+        [
+          -117.3282162,
+          33.973377
+        ],
+        [
+          -117.3282162,
+          33.9733583
+        ],
+        [
+          -117.3282176,
+          33.9733583
+        ],
+        [
+          -117.3282176,
+          33.9733542
+        ],
+        [
+          -117.3282162,
+          33.9733542
+        ],
+        [
+          -117.3282162,
+          33.9733315
+        ],
+        [
+          -117.3282176,
+          33.9733315
+        ],
+        [
+          -117.3282176,
+          33.9733274
+        ],
+        [
+          -117.3282162,
+          33.9733274
+        ],
+        [
+          -117.3282162,
+          33.9733085
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.3281749,
+        33.97334275
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Official UCR height is 161 ft, modeled as 49.07 m; mapped plan is approximately 7.9 m square. Clock stage at 32 m, grille pitch, piers, bell-chamber height and crown overhang are photo estimates. Grille slots and upper chamber remain physically open in both LODs. No surrounding campus buildings, landscape, UCR letters or logos. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ucr-bell-tower-near.glb",
+      "bytes": 66532,
+      "triangles": 4968,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -4.199999809265137,
+          -7.629394644936838e-7,
+          -4.199999809265137
+        ],
+        "max": [
+          4.199999809265137,
+          49.06999969482422,
+          4.199999809265137
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ucr-bell-tower-far.glb",
+      "bytes": 34124,
+      "triangles": 2304,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -4.199999809265137,
+          -7.629394644936838e-7,
+          -4.199999809265137
+        ],
+        "max": [
+          4.199999809265137,
+          49.06999969482422,
+          4.199999809265137
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ucr-bell-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

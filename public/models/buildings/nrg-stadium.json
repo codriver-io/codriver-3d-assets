@@ -1,0 +1,65 @@
+{
+  "id": "nrg-stadium",
+  "name": "Reliant Stadium (formerly NRG Stadium)",
+  "kind": "building",
+  "origin": [
+    -95.4108,
+    29.68486
+  ],
+  "height": 80.772,
+  "padM": 200,
+  "frontageBearing": 178.6,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Reliant Stadium, returned to that name in August 2026: broad glazed flanks, four monumental corner towers, two long open triangular roof trusses and two white barrel-curved sliding roof panels shown partially open over an articulated football bowl. Stable asset id nrg-stadium preserves registration continuity; no signs, banners or logos. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/nrg-stadium-near.glb",
+      "bytes": 440936,
+      "triangles": 35304,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -117.53242492675781,
+          0,
+          -156.64976501464844
+        ],
+        "max": [
+          117.62913513183594,
+          80.77200317382812,
+          156.61073303222656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/nrg-stadium-far.glb",
+      "bytes": 140048,
+      "triangles": 9300,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -117.53242492675781,
+          0,
+          -156.60194396972656
+        ],
+        "max": [
+          117.62913513183594,
+          80.77200317382812,
+          156.5418243408203
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/nrg-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

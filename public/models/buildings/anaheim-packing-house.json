@@ -1,0 +1,208 @@
+{
+  "id": "anaheim-packing-house",
+  "name": "Anaheim Packing House",
+  "kind": "building",
+  "origin": [
+    -117.91194385,
+    33.83150785
+  ],
+  "height": 13.2,
+  "widthM": 34.57,
+  "depthM": 80.2,
+  "padM": 52,
+  "frontageBearing": 254.2764505431594,
+  "rotation": -1.2963686186728618,
+  "controlPoints": [
+    [
+      -117.9123223,
+      33.8315757
+    ],
+    [
+      -117.9118049,
+      33.8316967
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.9123777,
+          33.8315335
+        ],
+        [
+          -117.9123131,
+          33.8315486
+        ],
+        [
+          -117.9123223,
+          33.8315757
+        ],
+        [
+          -117.9118049,
+          33.8316967
+        ],
+        [
+          -117.9117956,
+          33.8316692
+        ],
+        [
+          -117.9115891,
+          33.8317175
+        ],
+        [
+          -117.9114972,
+          33.831446
+        ],
+        [
+          -117.9115461,
+          33.8314352
+        ],
+        [
+          -117.9116992,
+          33.8313998
+        ],
+        [
+          -117.9117152,
+          33.8314438
+        ],
+        [
+          -117.9117737,
+          33.8314301
+        ],
+        [
+          -117.9117618,
+          33.831395
+        ],
+        [
+          -117.9121761,
+          33.8312982
+        ],
+        [
+          -117.9121857,
+          33.8313323
+        ],
+        [
+          -117.9122574,
+          33.8313154
+        ],
+        [
+          -117.9123012,
+          33.8313051
+        ],
+        [
+          -117.9123155,
+          33.8313473
+        ],
+        [
+          -117.9123357,
+          33.8313426
+        ],
+        [
+          -117.9123438,
+          33.8313664
+        ],
+        [
+          -117.9123276,
+          33.8313702
+        ],
+        [
+          -117.9123387,
+          33.8314031
+        ],
+        [
+          -117.9123802,
+          33.8313934
+        ],
+        [
+          -117.9123905,
+          33.8314236
+        ],
+        [
+          -117.9123449,
+          33.8314342
+        ],
+        [
+          -117.9123553,
+          33.8314648
+        ],
+        [
+          -117.9123732,
+          33.8314606
+        ],
+        [
+          -117.9123801,
+          33.8314811
+        ],
+        [
+          -117.9123614,
+          33.8314854
+        ],
+        [
+          -117.9123777,
+          33.8315335
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.91194385,
+        33.83150785
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "NPS nomination supplies seven-bay west facade, twin tapered pilasters, domed caps, north loading dock, sawtooth clerestories and 1926 semi-flat east addition. Roof count, 13.2 m peak, parapet and ornamental proportions are photo estimates. The first floor is published as 4.5 ft (1.37 m) above grade. No orange emblem, Sunkist logo, signage or lettering; basement below y=0 and adjacent rail cars excluded. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/anaheim-packing-house-near.glb",
+      "bytes": 57664,
+      "triangles": 3999,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -41.33740997314453,
+          -1.9073486612342094e-7,
+          -25.175798416137695
+        ],
+        "max": [
+          42.62785720825195,
+          13.199999809265137,
+          25.168081283569336
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/anaheim-packing-house-far.glb",
+      "bytes": 40888,
+      "triangles": 2291,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -41.33740997314453,
+          -1.9073486612342094e-7,
+          -25.175798416137695
+        ],
+        "max": [
+          42.62785720825195,
+          13.199999809265137,
+          25.168081283569336
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/anaheim-packing-house/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "meyerson-symphony-center",
+  "name": "Morton H. Meyerson Symphony Center",
+  "kind": "building",
+  "origin": [
+    -96.798637,
+    32.789768
+  ],
+  "height": 35,
+  "padM": 100,
+  "frontageBearing": 45,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "I. M. Pei’s 1989 Meyerson Symphony Center: limestone shoebox hall rotated within a curved conoid glass lobby, monumental open limestone entry portal and low rear service wing. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/meyerson-symphony-center-near.glb",
+      "bytes": 49404,
+      "triangles": 3390,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -70.23377227783203,
+          0,
+          -69.87556457519531
+        ],
+        "max": [
+          62.859458923339844,
+          35,
+          28.67603302001953
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/meyerson-symphony-center-far.glb",
+      "bytes": 30636,
+      "triangles": 1752,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -70.23377227783203,
+          0,
+          -69.87556457519531
+        ],
+        "max": [
+          62.859458923339844,
+          35,
+          28.67603302001953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/meyerson-symphony-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

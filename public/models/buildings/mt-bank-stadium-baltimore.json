@@ -1,0 +1,65 @@
+{
+  "id": "mt-bank-stadium-baltimore",
+  "name": "M&T Bank Stadium",
+  "kind": "building",
+  "origin": [
+    -76.62277778,
+    39.27805556
+  ],
+  "height": 56.388,
+  "padM": 180,
+  "frontageBearing": 70,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The mapped stadium building is multipolygon2304778, outerway24617369; the courtyardway93172473 is empty bowl space. The stadium leisureboundary1171329996 also encloses the completed North Plaza. Its west entertainment and east retail/hospitality buildings are original photo-estimated envelopes aligned to the mapped northsiteedge, not surveyed individual footprints. Four genuine upper-deck corner notches and four corner masonry/glass pavilions remain in far LOD. Photos6and7are September2026 completed-exterior views by KevinLynch (all rights reserved, comparison only);1is the earlier aerial used only for the unchanged main bowl and4confirms the motorway facade. Rejectedinterior5/8/9 are not exterior sources. The team confirms renovation completionAugust2026; future renderings were not treated as existing. Every exterior surface remains inside the declared mappedsite/building masks. Fieldgrass stands0.15m above rigidfooting y0; firstrow at1.98m includes thatdatum. Most vertical levels and fine member dimensions are photo estimates, while maximum185ft and standardfieldsize are published/mapped. No logos, words, branded signs, flags, statuary or adjacent viaduct. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mt-bank-stadium-baltimore-near.glb",
+      "bytes": 291796,
+      "triangles": 22930,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -119.41610717773438,
+          0,
+          -153.61044311523438
+        ],
+        "max": [
+          167.89035034179688,
+          56.38800048828125,
+          129.85501098632812
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mt-bank-stadium-baltimore-far.glb",
+      "bytes": 126432,
+      "triangles": 8442,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -114.83922576904297,
+          0,
+          -153.61044311523438
+        ],
+        "max": [
+          167.89035034179688,
+          56.38800048828125,
+          129.85501098632812
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mt-bank-stadium-baltimore/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

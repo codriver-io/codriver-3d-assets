@@ -1,0 +1,65 @@
+{
+  "id": "markham-civic-centre",
+  "name": "Markham Civic Centre",
+  "kind": "building",
+  "origin": [
+    -79.3369,
+    43.8566
+  ],
+  "height": 18.8,
+  "padM": 145,
+  "frontageBearing": 34.2,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Arthur Erickson and Richard Stevens1990 civic centre, current exterior compared at the named entrance, pond-side colonnade and wider roadway setting. The reflecting pond and paving are deliberately not authored. Both LODs keep26 grounded arcade columns and the open walkway and the gridded sloping glass roof; feet remain on local rigid y0 and require later ground/pond datum verification in the app. Parent55223344 and matching upperpart943422686 are both named for provider ownership; the low octagonal entry943422687 and street canopy935651674 are included. All heights are photo estimates from mapped floor counts, not surveys. Solar panels, flags, words and signs omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/markham-civic-centre-near.glb",
+      "bytes": 60968,
+      "triangles": 3768,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -77.71760559082031,
+          0,
+          -34.97504806518555
+        ],
+        "max": [
+          68.52296447753906,
+          18.799999237060547,
+          95.2787857055664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/markham-civic-centre-far.glb",
+      "bytes": 45952,
+      "triangles": 2560,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -77.71760559082031,
+          0,
+          -34.97504806518555
+        ],
+        "max": [
+          68.51710510253906,
+          18.799999237060547,
+          95.2787857055664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/markham-civic-centre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

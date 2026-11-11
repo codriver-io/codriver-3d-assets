@@ -7,7 +7,8 @@ await mkdir(out,{recursive:true});
 const catalog=JSON.parse(await readFile('dist/asset-catalog.json'));
 const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const page=await browser.newPage({viewport:{width:1440,height:1100}}),errors=[],failed=[],report=[];
-page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)failed.push({url:r.url(),status:r.status()});});
+const watch=p=>{p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)failed.push({url:r.url(),status:r.status()});});};
+watch(page);
 try{
  await page.goto(base+'/');await page.waitForSelector('#list .asset');assert.equal(await page.locator('#list .asset').count(),catalog.assets.length);
  assert.match(await page.locator('h1').innerText(),/Open models\.\s+Endless worlds\./);
@@ -99,9 +100,12 @@ try{
   await page.locator('#close-detail').click();
  }
  await page.emulateMedia({colorScheme:'light'});await page.setViewportSize({width:1200,height:900});
- for(const entry of catalog.assets){
+ // Every viewer gets the same checks; several pages share the queue so the run scales with the catalog.
+ // Each extra page has its own context, so a theme toggle in one viewer cannot leak into another.
+ const queue=[...catalog.assets],viewerWorkers=Math.max(1,Number(process.env.VIEWER_WORKERS)||4);
+ const verifyViewers=async page=>{for(let entry;(entry=queue.shift());){try{
   await page.goto(base+'/asset-preview.html?asset='+entry.id);
-  await page.waitForFunction(()=>document.querySelector('#metrics')?.textContent.includes('triangles'),null,{timeout:30000});
+  await page.waitForFunction(()=>document.querySelector('#metrics')?.textContent.includes('triangles'),null,{timeout:60000});
   assert.equal(await page.locator('#error').textContent(),'');
   const procedural=await page.locator('#source').isEnabled();
   if(procedural)await page.selectOption('#source','procedural');
@@ -111,7 +115,12 @@ try{
   await page.waitForTimeout(150);assert.equal(await page.locator('#error').textContent(),'');
   if(['pont-honore-mercier','biosphere-montreal','oratoire-saint-joseph'].includes(entry.id))await page.screenshot({path:`${out}/${entry.id}.png`});
   report.push(entry.id);console.log('PASS viewer',entry.id);
- }
+ }catch(error){queue.length=0;error.message=`viewer ${entry.id}: ${error.message}`;throw error;}}};
+ const extraPages=[];
+ for(let i=1;i<viewerWorkers;i++){const context=await browser.newContext({viewport:{width:1200,height:900},colorScheme:'light'});const extra=await context.newPage();watch(extra);extraPages.push(extra);}
+ await Promise.all([page,...extraPages].map(verifyViewers));
+ await Promise.all(extraPages.map(extra=>extra.context().close()));
+ assert.equal(report.length,catalog.assets.length);
  for(const source of ['glb','procedural'])for(const detail of ['near','far']){
   await page.goto(`${base}/asset-preview.html?asset=pont-jacques-cartier&view=pavilion&source=${source}&detail=${detail}&embed=1`);
   await page.waitForFunction(()=>window.__assetPreview?.model&&document.querySelector('#metrics').textContent.includes('triangles'));

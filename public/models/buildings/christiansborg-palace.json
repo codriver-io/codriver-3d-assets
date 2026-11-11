@@ -1,0 +1,65 @@
+{
+  "id": "christiansborg-palace",
+  "name": "Christiansborg Palace",
+  "kind": "building",
+  "origin": [
+    12.58040665,
+    55.6762271
+  ],
+  "height": 106,
+  "padM": 160,
+  "frontageBearing": 237.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The106 m overall height is authoritative; intermediate values are mapped roof/profile estimates, not a commissioned survey. Palace roof folds, window modules, gateway arch, belfry openings, copper weathering, crown arch sections and finial details are photo-calibrated estimates. Historic roof tiles and pre-restoration green copper versions are not mixed into the modern brown-copper tower. Sculpture and heraldic relief are omitted rather than copied from reference photos. Cityscape and Full3D world verification remain a later batch stage. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/christiansborg-palace-near.glb",
+      "bytes": 383400,
+      "triangles": 35027,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -111.67701721191406,
+          0,
+          -62.11656188964844
+        ],
+        "max": [
+          52.616844177246094,
+          106,
+          100.6889419555664
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/christiansborg-palace-far.glb",
+      "bytes": 91528,
+      "triangles": 5777,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -111.67701721191406,
+          0,
+          -62.11656188964844
+        ],
+        "max": [
+          52.616844177246094,
+          106,
+          100.6889419555664
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/christiansborg-palace/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bella-sky-copenhagen",
+  "name": "Bella Sky",
+  "kind": "building",
+  "origin": [
+    12.5781,
+    55.6394
+  ],
+  "height": 76.5,
+  "padM": 105,
+  "frontageBearing": 192.9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed2011 permanent exterior; photos7–8 checked as opposite exterior views, while initial1–2 are interiors,3 signage and5–6 views away from the building, all excluded. The20 m main lean is sourced; transverse kink positions, exact twist distribution and upper bridge alignment are reconstructed estimates from the published12° bend and photos because OSM supplies no3D floor profiles. No name signs, hotel logos, flags, rooftop maintenance gear, surrounding arena or conference halls are shipped. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bella-sky-copenhagen-near.glb",
+      "bytes": 193956,
+      "triangles": 12633,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -56.57234573364258,
+          0,
+          -43.314613342285156
+        ],
+        "max": [
+          52.182029724121094,
+          76.5,
+          44.378265380859375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bella-sky-copenhagen-far.glb",
+      "bytes": 79848,
+      "triangles": 4193,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -56.57234573364258,
+          0,
+          -43.314613342285156
+        ],
+        "max": [
+          52.182029724121094,
+          76.5,
+          44.378265380859375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bella-sky-copenhagen/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

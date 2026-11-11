@@ -1,0 +1,65 @@
+{
+  "id": "sage-gateshead",
+  "name": "The Glasshouse (Sage Gateshead)",
+  "kind": "building",
+  "origin": [
+    -1.60205,
+    54.9677
+  ],
+  "height": 40,
+  "padM": 115,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The standing venue is now The Glasshouse; the stable asset id retains the selected historic Sage name. Overall height40 m, roof surface, panel grid, end-wall positions and canopy thickness are photo-calibrated estimates rather than a measured roof survey. OSM supplies the ground outline but no height; mapped ownership is not evidence of app terrain integration. Photos1 and3 show the current exterior shell and opposite end porch; the silhouette/night and distant bridge photos are supplementary only. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/sage-gateshead-near.glb",
+      "bytes": 551852,
+      "triangles": 41718,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -60.22117614746094,
+          0,
+          -53.92340850830078
+        ],
+        "max": [
+          58.65557861328125,
+          40.00800704956055,
+          57.463382720947266
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/sage-gateshead-far.glb",
+      "bytes": 67780,
+      "triangles": 4349,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -60.22117614746094,
+          0,
+          -53.92340850830078
+        ],
+        "max": [
+          58.65557861328125,
+          40.00800704956055,
+          57.463382720947266
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/sage-gateshead/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

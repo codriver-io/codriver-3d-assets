@@ -1,0 +1,66 @@
+{
+  "id": "stade-mayol-toulon",
+  "name": "Stade Mayol",
+  "kind": "building",
+  "origin": [
+    5.93652225,
+    43.1190014
+  ],
+  "height": 42,
+  "padM": 115,
+  "frontageBearing": 225.37205715279094,
+  "rotationRad": -2.3626881125141423,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Dense city-centre rugby ground with four rectangular stands, open playing field, pale concrete cantilever roofs, external inclined rakers and corner floodlights. Stand heights and 42 m floodlight tips are visual estimates; no published surveyed height found. Current OSM stand/corner geometry is used rather than an obsolete oval bowl. All club branding, lettering and advertising omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stade-mayol-toulon-near.glb",
+      "bytes": 97768,
+      "triangles": 4748,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -92.22329711914062,
+          0,
+          -92.41117858886719
+        ],
+        "max": [
+          94.71656799316406,
+          42,
+          95.12294006347656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stade-mayol-toulon-far.glb",
+      "bytes": 64996,
+      "triangles": 2804,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -92.22329711914062,
+          0,
+          -92.41117858886719
+        ],
+        "max": [
+          94.71656799316406,
+          42,
+          95.12294006347656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stade-mayol-toulon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

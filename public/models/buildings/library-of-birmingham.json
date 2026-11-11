@@ -1,0 +1,65 @@
+{
+  "id": "library-of-birmingham",
+  "name": "Library of Birmingham",
+  "kind": "building",
+  "origin": [
+    -1.90849,
+    52.47972
+  ],
+  "height": 60,
+  "padM": 85,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "All absolute heights are OSM estimates; the architect establishes the stacked form and program but not these levels. Screen radii, metallic section sizes, facade setback, glazing modules and rotunda panel count are exterior-photo estimates. Published bright gold is represented by a muted ochre; no emissive lighting is added. Photos3 and4 show the exterior massing and actual circle detail; interior photos1 and2 are rejected. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/library-of-birmingham-near.glb",
+      "bytes": 726288,
+      "triangles": 51624,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -42.099510192871094,
+          0,
+          -40.08009719848633
+        ],
+        "max": [
+          41.65311813354492,
+          60,
+          44.21175003051758
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/library-of-birmingham-far.glb",
+      "bytes": 71028,
+      "triangles": 4706,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -42.07303237915039,
+          0,
+          -39.87508773803711
+        ],
+        "max": [
+          41.51893997192383,
+          60,
+          44.16459655761719
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/library-of-birmingham/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

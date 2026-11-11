@@ -1269,6 +1269,982 @@ import { MANIFEST as lm_north_charleston_city_hallManifest } from './north-charl
 import { OSM_WAYS as lm_north_charleston_city_hallWays } from './north-charleston-city-hall/footprint.js';
 import { create as lm_north_charleston_city_hallCreate } from './north-charleston-city-hall/geometry.js';
 import { VIEWS as lm_north_charleston_city_hallViews } from './north-charleston-city-hall/views.js';
+import { MANIFEST as lm_122_leadenhall_streetManifest } from './122-leadenhall-street/config.js';
+import { OSM_WAYS as lm_122_leadenhall_streetWays } from './122-leadenhall-street/footprint.js';
+import { create as lm_122_leadenhall_streetCreate } from './122-leadenhall-street/geometry.js';
+import { VIEWS as lm_122_leadenhall_streetViews } from './122-leadenhall-street/views.js';
+import { MANIFEST as lm_20_fenchurch_streetManifest } from './20-fenchurch-street/config.js';
+import { OSM_WAYS as lm_20_fenchurch_streetWays } from './20-fenchurch-street/footprint.js';
+import { create as lm_20_fenchurch_streetCreate } from './20-fenchurch-street/geometry.js';
+import { VIEWS as lm_20_fenchurch_streetViews } from './20-fenchurch-street/views.js';
+import { MANIFEST as lm_3arena_dublinManifest } from './3arena-dublin/config.js';
+import { OSM_WAYS as lm_3arena_dublinWays } from './3arena-dublin/footprint.js';
+import { create as lm_3arena_dublinCreate } from './3arena-dublin/geometry.js';
+import { VIEWS as lm_3arena_dublinViews } from './3arena-dublin/views.js';
+import { MANIFEST as lm_8_canada_squareManifest } from './8-canada-square/config.js';
+import { OSM_WAYS as lm_8_canada_squareWays } from './8-canada-square/footprint.js';
+import { create as lm_8_canada_squareCreate } from './8-canada-square/geometry.js';
+import { VIEWS as lm_8_canada_squareViews } from './8-canada-square/views.js';
+import { MANIFEST as lm_absolute_world_mississaugaManifest } from './absolute-world-mississauga/config.js';
+import { OSM_WAYS as lm_absolute_world_mississaugaWays } from './absolute-world-mississauga/footprint.js';
+import { create as lm_absolute_world_mississaugaCreate } from './absolute-world-mississauga/geometry.js';
+import { VIEWS as lm_absolute_world_mississaugaViews } from './absolute-world-mississauga/views.js';
+import { MANIFEST as lm_accor_arena_bercyManifest } from './accor-arena-bercy/config.js';
+import { OSM_WAYS as lm_accor_arena_bercyWays } from './accor-arena-bercy/footprint.js';
+import { create as lm_accor_arena_bercyCreate } from './accor-arena-bercy/geometry.js';
+import { VIEWS as lm_accor_arena_bercyViews } from './accor-arena-bercy/views.js';
+import { MANIFEST as lm_afi_silver_theatreManifest } from './afi-silver-theatre/config.js';
+import { OSM_WAYS as lm_afi_silver_theatreWays } from './afi-silver-theatre/footprint.js';
+import { create as lm_afi_silver_theatreCreate } from './afi-silver-theatre/geometry.js';
+import { VIEWS as lm_afi_silver_theatreViews } from './afi-silver-theatre/views.js';
+import { MANIFEST as lm_american_airlines_centerManifest } from './american-airlines-center/config.js';
+import { OSM_WAYS as lm_american_airlines_centerWays } from './american-airlines-center/footprint.js';
+import { create as lm_american_airlines_centerCreate } from './american-airlines-center/geometry.js';
+import { VIEWS as lm_american_airlines_centerViews } from './american-airlines-center/views.js';
+import { MANIFEST as lm_anaheim_articManifest } from './anaheim-artic/config.js';
+import { OSM_WAYS as lm_anaheim_articWays } from './anaheim-artic/footprint.js';
+import { create as lm_anaheim_articCreate } from './anaheim-artic/geometry.js';
+import { VIEWS as lm_anaheim_articViews } from './anaheim-artic/views.js';
+import { MANIFEST as lm_anaheim_packing_houseManifest } from './anaheim-packing-house/config.js';
+import { OSM_WAYS as lm_anaheim_packing_houseWays } from './anaheim-packing-house/footprint.js';
+import { create as lm_anaheim_packing_houseCreate } from './anaheim-packing-house/geometry.js';
+import { VIEWS as lm_anaheim_packing_houseViews } from './anaheim-packing-house/views.js';
+import { MANIFEST as lm_angel_stadiumManifest } from './angel-stadium/config.js';
+import { OSM_WAYS as lm_angel_stadiumWays } from './angel-stadium/footprint.js';
+import { create as lm_angel_stadiumCreate } from './angel-stadium/geometry.js';
+import { VIEWS as lm_angel_stadiumViews } from './angel-stadium/views.js';
+import { MANIFEST as lm_arenes_de_nimesManifest } from './arenes-de-nimes/config.js';
+import { OSM_WAYS as lm_arenes_de_nimesWays } from './arenes-de-nimes/footprint.js';
+import { create as lm_arenes_de_nimesCreate } from './arenes-de-nimes/geometry.js';
+import { VIEWS as lm_arenes_de_nimesViews } from './arenes-de-nimes/views.js';
+import { MANIFEST as lm_astrodomeManifest } from './astrodome/config.js';
+import { OSM_WAYS as lm_astrodomeWays } from './astrodome/footprint.js';
+import { create as lm_astrodomeCreate } from './astrodome/geometry.js';
+import { VIEWS as lm_astrodomeViews } from './astrodome/views.js';
+import { MANIFEST as lm_athens_city_hallManifest } from './athens-city-hall/config.js';
+import { OSM_WAYS as lm_athens_city_hallWays } from './athens-city-hall/footprint.js';
+import { create as lm_athens_city_hallCreate } from './athens-city-hall/geometry.js';
+import { VIEWS as lm_athens_city_hallViews } from './athens-city-hall/views.js';
+import { MANIFEST as lm_athens_towerManifest } from './athens-tower/config.js';
+import { OSM_WAYS as lm_athens_towerWays } from './athens-tower/footprint.js';
+import { create as lm_athens_towerCreate } from './athens-tower/geometry.js';
+import { VIEWS as lm_athens_towerViews } from './athens-tower/views.js';
+import { MANIFEST as lm_avicii_arenaManifest } from './avicii-arena/config.js';
+import { OSM_WAYS as lm_avicii_arenaWays } from './avicii-arena/footprint.js';
+import { create as lm_avicii_arenaCreate } from './avicii-arena/geometry.js';
+import { VIEWS as lm_avicii_arenaViews } from './avicii-arena/views.js';
+import { MANIFEST as lm_aviva_stadiumManifest } from './aviva-stadium/config.js';
+import { OSM_WAYS as lm_aviva_stadiumWays } from './aviva-stadium/footprint.js';
+import { create as lm_aviva_stadiumCreate } from './aviva-stadium/geometry.js';
+import { VIEWS as lm_aviva_stadiumViews } from './aviva-stadium/views.js';
+import { MANIFEST as lm_azrieli_centerManifest } from './azrieli-center/config.js';
+import { OSM_WAYS as lm_azrieli_centerWays } from './azrieli-center/footprint.js';
+import { create as lm_azrieli_centerCreate } from './azrieli-center/geometry.js';
+import { VIEWS as lm_azrieli_centerViews } from './azrieli-center/views.js';
+import { MANIFEST as lm_bahai_house_worship_wilmetteManifest } from './bahai-house-worship-wilmette/config.js';
+import { OSM_WAYS as lm_bahai_house_worship_wilmetteWays } from './bahai-house-worship-wilmette/footprint.js';
+import { create as lm_bahai_house_worship_wilmetteCreate } from './bahai-house-worship-wilmette/geometry.js';
+import { VIEWS as lm_bahai_house_worship_wilmetteViews } from './bahai-house-worship-wilmette/views.js';
+import { MANIFEST as lm_baltimore_city_hallManifest } from './baltimore-city-hall/config.js';
+import { OSM_WAYS as lm_baltimore_city_hallWays } from './baltimore-city-hall/footprint.js';
+import { create as lm_baltimore_city_hallCreate } from './baltimore-city-hall/geometry.js';
+import { VIEWS as lm_baltimore_city_hallViews } from './baltimore-city-hall/views.js';
+import { MANIFEST as lm_baltimore_world_trade_centerManifest } from './baltimore-world-trade-center/config.js';
+import { OSM_WAYS as lm_baltimore_world_trade_centerWays } from './baltimore-world-trade-center/footprint.js';
+import { create as lm_baltimore_world_trade_centerCreate } from './baltimore-world-trade-center/geometry.js';
+import { VIEWS as lm_baltimore_world_trade_centerViews } from './baltimore-world-trade-center/views.js';
+import { MANIFEST as lm_bancolombia_medellinManifest } from './bancolombia-medellin/config.js';
+import { OSM_WAYS as lm_bancolombia_medellinWays } from './bancolombia-medellin/footprint.js';
+import { create as lm_bancolombia_medellinCreate } from './bancolombia-medellin/geometry.js';
+import { VIEWS as lm_bancolombia_medellinViews } from './bancolombia-medellin/views.js';
+import { MANIFEST as lm_bank_of_georgia_hqManifest } from './bank-of-georgia-hq/config.js';
+import { OSM_WAYS as lm_bank_of_georgia_hqWays } from './bank-of-georgia-hq/footprint.js';
+import { create as lm_bank_of_georgia_hqCreate } from './bank-of-georgia-hq/geometry.js';
+import { VIEWS as lm_bank_of_georgia_hqViews } from './bank-of-georgia-hq/views.js';
+import { MANIFEST as lm_basilica_saint_nicholas_amsterdamManifest } from './basilica-saint-nicholas-amsterdam/config.js';
+import { OSM_WAYS as lm_basilica_saint_nicholas_amsterdamWays } from './basilica-saint-nicholas-amsterdam/footprint.js';
+import { create as lm_basilica_saint_nicholas_amsterdamCreate } from './basilica-saint-nicholas-amsterdam/geometry.js';
+import { VIEWS as lm_basilica_saint_nicholas_amsterdamViews } from './basilica-saint-nicholas-amsterdam/views.js';
+import { MANIFEST as lm_basilique_saint_frederic_drummondvilleManifest } from './basilique-saint-frederic-drummondville/config.js';
+import { OSM_WAYS as lm_basilique_saint_frederic_drummondvilleWays } from './basilique-saint-frederic-drummondville/footprint.js';
+import { create as lm_basilique_saint_frederic_drummondvilleCreate } from './basilique-saint-frederic-drummondville/geometry.js';
+import { VIEWS as lm_basilique_saint_frederic_drummondvilleViews } from './basilique-saint-frederic-drummondville/views.js';
+import { MANIFEST as lm_basilique_visitation_annecyManifest } from './basilique-visitation-annecy/config.js';
+import { OSM_WAYS as lm_basilique_visitation_annecyWays } from './basilique-visitation-annecy/footprint.js';
+import { create as lm_basilique_visitation_annecyCreate } from './basilique-visitation-annecy/geometry.js';
+import { VIEWS as lm_basilique_visitation_annecyViews } from './basilique-visitation-annecy/views.js';
+import { MANIFEST as lm_bass_performance_hallManifest } from './bass-performance-hall/config.js';
+import { OSM_WAYS as lm_bass_performance_hallWays } from './bass-performance-hall/footprint.js';
+import { create as lm_bass_performance_hallCreate } from './bass-performance-hall/geometry.js';
+import { VIEWS as lm_bass_performance_hallViews } from './bass-performance-hall/views.js';
+import { MANIFEST as lm_bd_bacataManifest } from './bd-bacata/config.js';
+import { OSM_WAYS as lm_bd_bacataWays } from './bd-bacata/footprint.js';
+import { create as lm_bd_bacataCreate } from './bd-bacata/geometry.js';
+import { VIEWS as lm_bd_bacataViews } from './bd-bacata/views.js';
+import { MANIFEST as lm_beetham_tower_manchesterManifest } from './beetham-tower-manchester/config.js';
+import { OSM_WAYS as lm_beetham_tower_manchesterWays } from './beetham-tower-manchester/footprint.js';
+import { create as lm_beetham_tower_manchesterCreate } from './beetham-tower-manchester/geometry.js';
+import { VIEWS as lm_beetham_tower_manchesterViews } from './beetham-tower-manchester/views.js';
+import { MANIFEST as lm_beffroi_hotel_de_ville_lilleManifest } from './beffroi-hotel-de-ville-lille/config.js';
+import { OSM_WAYS as lm_beffroi_hotel_de_ville_lilleWays } from './beffroi-hotel-de-ville-lille/footprint.js';
+import { create as lm_beffroi_hotel_de_ville_lilleCreate } from './beffroi-hotel-de-ville-lille/geometry.js';
+import { VIEWS as lm_beffroi_hotel_de_ville_lilleViews } from './beffroi-hotel-de-ville-lille/views.js';
+import { MANIFEST as lm_bella_sky_copenhagenManifest } from './bella-sky-copenhagen/config.js';
+import { OSM_WAYS as lm_bella_sky_copenhagenWays } from './bella-sky-copenhagen/footprint.js';
+import { create as lm_bella_sky_copenhagenCreate } from './bella-sky-copenhagen/geometry.js';
+import { VIEWS as lm_bella_sky_copenhagenViews } from './bella-sky-copenhagen/views.js';
+import { MANIFEST as lm_berlin_fernsehturmManifest } from './berlin-fernsehturm/config.js';
+import { OSM_WAYS as lm_berlin_fernsehturmWays } from './berlin-fernsehturm/footprint.js';
+import { create as lm_berlin_fernsehturmCreate } from './berlin-fernsehturm/geometry.js';
+import { VIEWS as lm_berlin_fernsehturmViews } from './berlin-fernsehturm/views.js';
+import { MANIFEST as lm_bibliotheque_nationale_francois_mitterrandManifest } from './bibliotheque-nationale-francois-mitterrand/config.js';
+import { OSM_WAYS as lm_bibliotheque_nationale_francois_mitterrandWays } from './bibliotheque-nationale-francois-mitterrand/footprint.js';
+import { create as lm_bibliotheque_nationale_francois_mitterrandCreate } from './bibliotheque-nationale-francois-mitterrand/geometry.js';
+import { VIEWS as lm_bibliotheque_nationale_francois_mitterrandViews } from './bibliotheque-nationale-francois-mitterrand/views.js';
+import { MANIFEST as lm_bibliotheque_schoelcherManifest } from './bibliotheque-schoelcher/config.js';
+import { OSM_WAYS as lm_bibliotheque_schoelcherWays } from './bibliotheque-schoelcher/footprint.js';
+import { create as lm_bibliotheque_schoelcherCreate } from './bibliotheque-schoelcher/geometry.js';
+import { VIEWS as lm_bibliotheque_schoelcherViews } from './bibliotheque-schoelcher/views.js';
+import { MANIFEST as lm_big_chicken_mariettaManifest } from './big-chicken-marietta/config.js';
+import { OSM_WAYS as lm_big_chicken_mariettaWays } from './big-chicken-marietta/footprint.js';
+import { create as lm_big_chicken_mariettaCreate } from './big-chicken-marietta/geometry.js';
+import { VIEWS as lm_big_chicken_mariettaViews } from './big-chicken-marietta/views.js';
+import { MANIFEST as lm_biltmore_tbilisiManifest } from './biltmore-tbilisi/config.js';
+import { OSM_WAYS as lm_biltmore_tbilisiWays } from './biltmore-tbilisi/footprint.js';
+import { create as lm_biltmore_tbilisiCreate } from './biltmore-tbilisi/geometry.js';
+import { VIEWS as lm_biltmore_tbilisiViews } from './biltmore-tbilisi/views.js';
+import { MANIFEST as lm_bmw_headquartersManifest } from './bmw-headquarters/config.js';
+import { OSM_WAYS as lm_bmw_headquartersWays } from './bmw-headquarters/footprint.js';
+import { create as lm_bmw_headquartersCreate } from './bmw-headquarters/geometry.js';
+import { VIEWS as lm_bmw_headquartersViews } from './bmw-headquarters/views.js';
+import { MANIFEST as lm_braselton_brothers_storeManifest } from './braselton-brothers-store/config.js';
+import { OSM_WAYS as lm_braselton_brothers_storeWays } from './braselton-brothers-store/footprint.js';
+import { create as lm_braselton_brothers_storeCreate } from './braselton-brothers-store/geometry.js';
+import { VIEWS as lm_braselton_brothers_storeViews } from './braselton-brothers-store/views.js';
+import { MANIFEST as lm_bt_tower_londonManifest } from './bt-tower-london/config.js';
+import { OSM_WAYS as lm_bt_tower_londonWays } from './bt-tower-london/footprint.js';
+import { create as lm_bt_tower_londonCreate } from './bt-tower-london/geometry.js';
+import { VIEWS as lm_bt_tower_londonViews } from './bt-tower-london/views.js';
+import { MANIFEST as lm_california_state_capitolManifest } from './california-state-capitol/config.js';
+import { OSM_WAYS as lm_california_state_capitolWays } from './california-state-capitol/footprint.js';
+import { create as lm_california_state_capitolCreate } from './california-state-capitol/geometry.js';
+import { VIEWS as lm_california_state_capitolViews } from './california-state-capitol/views.js';
+import { MANIFEST as lm_california_theatre_san_bernardinoManifest } from './california-theatre-san-bernardino/config.js';
+import { OSM_WAYS as lm_california_theatre_san_bernardinoWays } from './california-theatre-san-bernardino/footprint.js';
+import { create as lm_california_theatre_san_bernardinoCreate } from './california-theatre-san-bernardino/geometry.js';
+import { VIEWS as lm_california_theatre_san_bernardinoViews } from './california-theatre-san-bernardino/views.js';
+import { MANIFEST as lm_castel_sant_angeloManifest } from './castel-sant-angelo/config.js';
+import { OSM_WAYS as lm_castel_sant_angeloWays } from './castel-sant-angelo/footprint.js';
+import { create as lm_castel_sant_angeloCreate } from './castel-sant-angelo/geometry.js';
+import { VIEWS as lm_castel_sant_angeloViews } from './castel-sant-angelo/views.js';
+import { MANIFEST as lm_cathedral_basilica_st_louisManifest } from './cathedral-basilica-st-louis/config.js';
+import { OSM_WAYS as lm_cathedral_basilica_st_louisWays } from './cathedral-basilica-st-louis/footprint.js';
+import { create as lm_cathedral_basilica_st_louisCreate } from './cathedral-basilica-st-louis/geometry.js';
+import { VIEWS as lm_cathedral_basilica_st_louisViews } from './cathedral-basilica-st-louis/views.js';
+import { MANIFEST as lm_cathedral_blessed_sacrament_sacramentoManifest } from './cathedral-blessed-sacrament-sacramento/config.js';
+import { OSM_WAYS as lm_cathedral_blessed_sacrament_sacramentoWays } from './cathedral-blessed-sacrament-sacramento/footprint.js';
+import { create as lm_cathedral_blessed_sacrament_sacramentoCreate } from './cathedral-blessed-sacrament-sacramento/geometry.js';
+import { VIEWS as lm_cathedral_blessed_sacrament_sacramentoViews } from './cathedral-blessed-sacrament-sacramento/views.js';
+import { MANIFEST as lm_cathedral_transfiguration_markhamManifest } from './cathedral-transfiguration-markham/config.js';
+import { OSM_WAYS as lm_cathedral_transfiguration_markhamWays } from './cathedral-transfiguration-markham/footprint.js';
+import { create as lm_cathedral_transfiguration_markhamCreate } from './cathedral-transfiguration-markham/geometry.js';
+import { VIEWS as lm_cathedral_transfiguration_markhamViews } from './cathedral-transfiguration-markham/views.js';
+import { MANIFEST as lm_cathedrale_clermont_ferrandManifest } from './cathedrale-clermont-ferrand/config.js';
+import { OSM_WAYS as lm_cathedrale_clermont_ferrandWays } from './cathedrale-clermont-ferrand/footprint.js';
+import { create as lm_cathedrale_clermont_ferrandCreate } from './cathedrale-clermont-ferrand/geometry.js';
+import { VIEWS as lm_cathedrale_clermont_ferrandViews } from './cathedrale-clermont-ferrand/views.js';
+import { MANIFEST as lm_cathedrale_notre_dame_reimsManifest } from './cathedrale-notre-dame-reims/config.js';
+import { OSM_WAYS as lm_cathedrale_notre_dame_reimsWays } from './cathedrale-notre-dame-reims/footprint.js';
+import { create as lm_cathedrale_notre_dame_reimsCreate } from './cathedrale-notre-dame-reims/geometry.js';
+import { VIEWS as lm_cathedrale_notre_dame_reimsViews } from './cathedrale-notre-dame-reims/views.js';
+import { MANIFEST as lm_cathedrale_notre_dame_strasbourgManifest } from './cathedrale-notre-dame-strasbourg/config.js';
+import { OSM_WAYS as lm_cathedrale_notre_dame_strasbourgWays } from './cathedrale-notre-dame-strasbourg/footprint.js';
+import { create as lm_cathedrale_notre_dame_strasbourgCreate } from './cathedrale-notre-dame-strasbourg/geometry.js';
+import { VIEWS as lm_cathedrale_notre_dame_strasbourgViews } from './cathedrale-notre-dame-strasbourg/views.js';
+import { MANIFEST as lm_cathedrale_saint_antoine_longueuilManifest } from './cathedrale-saint-antoine-longueuil/config.js';
+import { OSM_WAYS as lm_cathedrale_saint_antoine_longueuilWays } from './cathedrale-saint-antoine-longueuil/footprint.js';
+import { create as lm_cathedrale_saint_antoine_longueuilCreate } from './cathedrale-saint-antoine-longueuil/geometry.js';
+import { VIEWS as lm_cathedrale_saint_antoine_longueuilViews } from './cathedrale-saint-antoine-longueuil/views.js';
+import { MANIFEST as lm_cathedrale_saint_denis_reunionManifest } from './cathedrale-saint-denis-reunion/config.js';
+import { OSM_WAYS as lm_cathedrale_saint_denis_reunionWays } from './cathedrale-saint-denis-reunion/footprint.js';
+import { create as lm_cathedrale_saint_denis_reunionCreate } from './cathedrale-saint-denis-reunion/geometry.js';
+import { VIEWS as lm_cathedrale_saint_denis_reunionViews } from './cathedrale-saint-denis-reunion/views.js';
+import { MANIFEST as lm_cathedrale_saint_louis_fort_de_franceManifest } from './cathedrale-saint-louis-fort-de-france/config.js';
+import { OSM_WAYS as lm_cathedrale_saint_louis_fort_de_franceWays } from './cathedrale-saint-louis-fort-de-france/footprint.js';
+import { create as lm_cathedrale_saint_louis_fort_de_franceCreate } from './cathedrale-saint-louis-fort-de-france/geometry.js';
+import { VIEWS as lm_cathedrale_saint_louis_fort_de_franceViews } from './cathedrale-saint-louis-fort-de-france/views.js';
+import { MANIFEST as lm_chateau_elan_wineryManifest } from './chateau-elan-winery/config.js';
+import { OSM_WAYS as lm_chateau_elan_wineryWays } from './chateau-elan-winery/footprint.js';
+import { create as lm_chateau_elan_wineryCreate } from './chateau-elan-winery/geometry.js';
+import { VIEWS as lm_chateau_elan_wineryViews } from './chateau-elan-winery/views.js';
+import { MANIFEST as lm_christiansborg_palaceManifest } from './christiansborg-palace/config.js';
+import { OSM_WAYS as lm_christiansborg_palaceWays } from './christiansborg-palace/footprint.js';
+import { create as lm_christiansborg_palaceCreate } from './christiansborg-palace/geometry.js';
+import { VIEWS as lm_christiansborg_palaceViews } from './christiansborg-palace/views.js';
+import { MANIFEST as lm_church_of_our_saviour_copenhagenManifest } from './church-of-our-saviour-copenhagen/config.js';
+import { OSM_WAYS as lm_church_of_our_saviour_copenhagenWays } from './church-of-our-saviour-copenhagen/footprint.js';
+import { create as lm_church_of_our_saviour_copenhagenCreate } from './church-of-our-saviour-copenhagen/geometry.js';
+import { VIEWS as lm_church_of_our_saviour_copenhagenViews } from './church-of-our-saviour-copenhagen/views.js';
+import { MANIFEST as lm_cite_du_vin_bordeauxManifest } from './cite-du-vin-bordeaux/config.js';
+import { OSM_WAYS as lm_cite_du_vin_bordeauxWays } from './cite-du-vin-bordeaux/footprint.js';
+import { create as lm_cite_du_vin_bordeauxCreate } from './cite-du-vin-bordeaux/geometry.js';
+import { VIEWS as lm_cite_du_vin_bordeauxViews } from './cite-du-vin-bordeaux/views.js';
+import { MANIFEST as lm_civil_courts_building_st_louisManifest } from './civil-courts-building-st-louis/config.js';
+import { OSM_WAYS as lm_civil_courts_building_st_louisWays } from './civil-courts-building-st-louis/footprint.js';
+import { create as lm_civil_courts_building_st_louisCreate } from './civil-courts-building-st-louis/geometry.js';
+import { VIEWS as lm_civil_courts_building_st_louisViews } from './civil-courts-building-st-louis/views.js';
+import { MANIFEST as lm_coimbra_university_towerManifest } from './coimbra-university-tower/config.js';
+import { OSM_WAYS as lm_coimbra_university_towerWays } from './coimbra-university-tower/footprint.js';
+import { create as lm_coimbra_university_towerCreate } from './coimbra-university-tower/geometry.js';
+import { VIEWS as lm_coimbra_university_towerViews } from './coimbra-university-tower/views.js';
+import { MANIFEST as lm_collegiale_saint_andre_grenobleManifest } from './collegiale-saint-andre-grenoble/config.js';
+import { OSM_WAYS as lm_collegiale_saint_andre_grenobleWays } from './collegiale-saint-andre-grenoble/footprint.js';
+import { create as lm_collegiale_saint_andre_grenobleCreate } from './collegiale-saint-andre-grenoble/geometry.js';
+import { VIEWS as lm_collegiale_saint_andre_grenobleViews } from './collegiale-saint-andre-grenoble/views.js';
+import { MANIFEST as lm_collegiate_saint_gertrude_nivellesManifest } from './collegiate-saint-gertrude-nivelles/config.js';
+import { OSM_WAYS as lm_collegiate_saint_gertrude_nivellesWays } from './collegiate-saint-gertrude-nivelles/footprint.js';
+import { create as lm_collegiate_saint_gertrude_nivellesCreate } from './collegiate-saint-gertrude-nivelles/geometry.js';
+import { VIEWS as lm_collegiate_saint_gertrude_nivellesViews } from './collegiate-saint-gertrude-nivelles/views.js';
+import { MANIFEST as lm_comerica_bank_towerManifest } from './comerica-bank-tower/config.js';
+import { OSM_WAYS as lm_comerica_bank_towerWays } from './comerica-bank-tower/footprint.js';
+import { create as lm_comerica_bank_towerCreate } from './comerica-bank-tower/geometry.js';
+import { VIEWS as lm_comerica_bank_towerViews } from './comerica-bank-tower/views.js';
+import { MANIFEST as lm_constanta_casinoManifest } from './constanta-casino/config.js';
+import { OSM_WAYS as lm_constanta_casinoWays } from './constanta-casino/footprint.js';
+import { create as lm_constanta_casinoCreate } from './constanta-casino/geometry.js';
+import { VIEWS as lm_constanta_casinoViews } from './constanta-casino/views.js';
+import { MANIFEST as lm_coolray_fieldManifest } from './coolray-field/config.js';
+import { OSM_WAYS as lm_coolray_fieldWays } from './coolray-field/footprint.js';
+import { create as lm_coolray_fieldCreate } from './coolray-field/geometry.js';
+import { VIEWS as lm_coolray_fieldViews } from './coolray-field/views.js';
+import { MANIFEST as lm_coquitlam_city_hallManifest } from './coquitlam-city-hall/config.js';
+import { OSM_WAYS as lm_coquitlam_city_hallWays } from './coquitlam-city-hall/footprint.js';
+import { create as lm_coquitlam_city_hallCreate } from './coquitlam-city-hall/geometry.js';
+import { VIEWS as lm_coquitlam_city_hallViews } from './coquitlam-city-hall/views.js';
+import { MANIFEST as lm_cosmodome_lavalManifest } from './cosmodome-laval/config.js';
+import { OSM_WAYS as lm_cosmodome_lavalWays } from './cosmodome-laval/footprint.js';
+import { create as lm_cosmodome_lavalCreate } from './cosmodome-laval/geometry.js';
+import { VIEWS as lm_cosmodome_lavalViews } from './cosmodome-laval/views.js';
+import { MANIFEST as lm_cristo_rei_almadaManifest } from './cristo-rei-almada/config.js';
+import { OSM_WAYS as lm_cristo_rei_almadaWays } from './cristo-rei-almada/footprint.js';
+import { create as lm_cristo_rei_almadaCreate } from './cristo-rei-almada/geometry.js';
+import { VIEWS as lm_cristo_rei_almadaViews } from './cristo-rei-almada/views.js';
+import { MANIFEST as lm_dallas_hall_smuManifest } from './dallas-hall-smu/config.js';
+import { OSM_WAYS as lm_dallas_hall_smuWays } from './dallas-hall-smu/footprint.js';
+import { create as lm_dallas_hall_smuCreate } from './dallas-hall-smu/geometry.js';
+import { VIEWS as lm_dallas_hall_smuViews } from './dallas-hall-smu/views.js';
+import { MANIFEST as lm_de_gooyerManifest } from './de-gooyer/config.js';
+import { OSM_WAYS as lm_de_gooyerWays } from './de-gooyer/footprint.js';
+import { create as lm_de_gooyerCreate } from './de-gooyer/geometry.js';
+import { VIEWS as lm_de_gooyerViews } from './de-gooyer/views.js';
+import { MANIFEST as lm_denver_union_stationManifest } from './denver-union-station/config.js';
+import { OSM_WAYS as lm_denver_union_stationWays } from './denver-union-station/footprint.js';
+import { create as lm_denver_union_stationCreate } from './denver-union-station/geometry.js';
+import { VIEWS as lm_denver_union_stationViews } from './denver-union-station/views.js';
+import { MANIFEST as lm_donjon_de_niortManifest } from './donjon-de-niort/config.js';
+import { OSM_WAYS as lm_donjon_de_niortWays } from './donjon-de-niort/footprint.js';
+import { create as lm_donjon_de_niortCreate } from './donjon-de-niort/geometry.js';
+import { VIEWS as lm_donjon_de_niortViews } from './donjon-de-niort/views.js';
+import { MANIFEST as lm_eglise_purification_repentignyManifest } from './eglise-purification-repentigny/config.js';
+import { OSM_WAYS as lm_eglise_purification_repentignyWays } from './eglise-purification-repentigny/footprint.js';
+import { create as lm_eglise_purification_repentignyCreate } from './eglise-purification-repentigny/geometry.js';
+import { VIEWS as lm_eglise_purification_repentignyViews } from './eglise-purification-repentigny/views.js';
+import { MANIFEST as lm_eglise_saint_augustin_parisManifest } from './eglise-saint-augustin-paris/config.js';
+import { OSM_WAYS as lm_eglise_saint_augustin_parisWays } from './eglise-saint-augustin-paris/footprint.js';
+import { create as lm_eglise_saint_augustin_parisCreate } from './eglise-saint-augustin-paris/geometry.js';
+import { VIEWS as lm_eglise_saint_augustin_parisViews } from './eglise-saint-augustin-paris/views.js';
+import { MANIFEST as lm_eglise_saint_hubert_longueuilManifest } from './eglise-saint-hubert-longueuil/config.js';
+import { OSM_WAYS as lm_eglise_saint_hubert_longueuilWays } from './eglise-saint-hubert-longueuil/footprint.js';
+import { create as lm_eglise_saint_hubert_longueuilCreate } from './eglise-saint-hubert-longueuil/geometry.js';
+import { VIEWS as lm_eglise_saint_hubert_longueuilViews } from './eglise-saint-hubert-longueuil/views.js';
+import { MANIFEST as lm_eglise_saint_joachim_pointe_claireManifest } from './eglise-saint-joachim-pointe-claire/config.js';
+import { OSM_WAYS as lm_eglise_saint_joachim_pointe_claireWays } from './eglise-saint-joachim-pointe-claire/footprint.js';
+import { create as lm_eglise_saint_joachim_pointe_claireCreate } from './eglise-saint-joachim-pointe-claire/geometry.js';
+import { VIEWS as lm_eglise_saint_joachim_pointe_claireViews } from './eglise-saint-joachim-pointe-claire/views.js';
+import { MANIFEST as lm_eglise_saint_lambertManifest } from './eglise-saint-lambert/config.js';
+import { OSM_WAYS as lm_eglise_saint_lambertWays } from './eglise-saint-lambert/footprint.js';
+import { create as lm_eglise_saint_lambertCreate } from './eglise-saint-lambert/geometry.js';
+import { VIEWS as lm_eglise_saint_lambertViews } from './eglise-saint-lambert/views.js';
+import { MANIFEST as lm_eglise_saint_pierre_saint_paul_pointe_a_pitreManifest } from './eglise-saint-pierre-saint-paul-pointe-a-pitre/config.js';
+import { OSM_WAYS as lm_eglise_saint_pierre_saint_paul_pointe_a_pitreWays } from './eglise-saint-pierre-saint-paul-pointe-a-pitre/footprint.js';
+import { create as lm_eglise_saint_pierre_saint_paul_pointe_a_pitreCreate } from './eglise-saint-pierre-saint-paul-pointe-a-pitre/geometry.js';
+import { VIEWS as lm_eglise_saint_pierre_saint_paul_pointe_a_pitreViews } from './eglise-saint-pierre-saint-paul-pointe-a-pitre/views.js';
+import { MANIFEST as lm_ellicott_city_stationManifest } from './ellicott-city-station/config.js';
+import { OSM_WAYS as lm_ellicott_city_stationWays } from './ellicott-city-station/footprint.js';
+import { create as lm_ellicott_city_stationCreate } from './ellicott-city-station/geometry.js';
+import { VIEWS as lm_ellicott_city_stationViews } from './ellicott-city-station/views.js';
+import { MANIFEST as lm_emirates_stadiumManifest } from './emirates-stadium/config.js';
+import { OSM_WAYS as lm_emirates_stadiumWays } from './emirates-stadium/footprint.js';
+import { create as lm_emirates_stadiumCreate } from './emirates-stadium/geometry.js';
+import { VIEWS as lm_emirates_stadiumViews } from './emirates-stadium/views.js';
+import { MANIFEST as lm_esch_sur_alzette_town_hallManifest } from './esch-sur-alzette-town-hall/config.js';
+import { OSM_WAYS as lm_esch_sur_alzette_town_hallWays } from './esch-sur-alzette-town-hall/footprint.js';
+import { create as lm_esch_sur_alzette_town_hallCreate } from './esch-sur-alzette-town-hall/geometry.js';
+import { VIEWS as lm_esch_sur_alzette_town_hallViews } from './esch-sur-alzette-town-hall/views.js';
+import { MANIFEST as lm_faro_moncloaManifest } from './faro-moncloa/config.js';
+import { OSM_WAYS as lm_faro_moncloaWays } from './faro-moncloa/footprint.js';
+import { create as lm_faro_moncloaCreate } from './faro-moncloa/geometry.js';
+import { VIEWS as lm_faro_moncloaViews } from './faro-moncloa/views.js';
+import { MANIFEST as lm_flagey_buildingManifest } from './flagey-building/config.js';
+import { OSM_WAYS as lm_flagey_buildingWays } from './flagey-building/footprint.js';
+import { create as lm_flagey_buildingCreate } from './flagey-building/geometry.js';
+import { VIEWS as lm_flagey_buildingViews } from './flagey-building/views.js';
+import { MANIFEST as lm_fondation_vasarely_aixManifest } from './fondation-vasarely-aix/config.js';
+import { OSM_WAYS as lm_fondation_vasarely_aixWays } from './fondation-vasarely-aix/footprint.js';
+import { create as lm_fondation_vasarely_aixCreate } from './fondation-vasarely-aix/geometry.js';
+import { VIEWS as lm_fondation_vasarely_aixViews } from './fondation-vasarely-aix/views.js';
+import { MANIFEST as lm_fort_chamblyManifest } from './fort-chambly/config.js';
+import { OSM_WAYS as lm_fort_chamblyWays } from './fort-chambly/footprint.js';
+import { create as lm_fort_chamblyCreate } from './fort-chambly/geometry.js';
+import { VIEWS as lm_fort_chamblyViews } from './fort-chambly/views.js';
+import { MANIFEST as lm_fort_langley_community_hallManifest } from './fort-langley-community-hall/config.js';
+import { OSM_WAYS as lm_fort_langley_community_hallWays } from './fort-langley-community-hall/footprint.js';
+import { create as lm_fort_langley_community_hallCreate } from './fort-langley-community-hall/geometry.js';
+import { VIEWS as lm_fort_langley_community_hallViews } from './fort-langley-community-hall/views.js';
+import { MANIFEST as lm_fortin_herediaManifest } from './fortin-heredia/config.js';
+import { OSM_WAYS as lm_fortin_herediaWays } from './fortin-heredia/footprint.js';
+import { create as lm_fortin_herediaCreate } from './fortin-heredia/geometry.js';
+import { VIEWS as lm_fortin_herediaViews } from './fortin-heredia/views.js';
+import { MANIFEST as lm_gare_orienteManifest } from './gare-oriente/config.js';
+import { OSM_WAYS as lm_gare_orienteWays } from './gare-oriente/footprint.js';
+import { create as lm_gare_orienteCreate } from './gare-oriente/geometry.js';
+import { VIEWS as lm_gare_orienteViews } from './gare-oriente/views.js';
+import { MANIFEST as lm_gas_south_arenaManifest } from './gas-south-arena/config.js';
+import { OSM_WAYS as lm_gas_south_arenaWays } from './gas-south-arena/footprint.js';
+import { create as lm_gas_south_arenaCreate } from './gas-south-arena/geometry.js';
+import { VIEWS as lm_gas_south_arenaViews } from './gas-south-arena/views.js';
+import { MANIFEST as lm_gasometro_romeManifest } from './gasometro-rome/config.js';
+import { OSM_WAYS as lm_gasometro_romeWays } from './gasometro-rome/footprint.js';
+import { create as lm_gasometro_romeCreate } from './gasometro-rome/geometry.js';
+import { VIEWS as lm_gasometro_romeViews } from './gasometro-rome/views.js';
+import { MANIFEST as lm_ghent_belfryManifest } from './ghent-belfry/config.js';
+import { OSM_WAYS as lm_ghent_belfryWays } from './ghent-belfry/footprint.js';
+import { create as lm_ghent_belfryCreate } from './ghent-belfry/geometry.js';
+import { VIEWS as lm_ghent_belfryViews } from './ghent-belfry/views.js';
+import { MANIFEST as lm_grand_hotel_dieu_lyonManifest } from './grand-hotel-dieu-lyon/config.js';
+import { OSM_WAYS as lm_grand_hotel_dieu_lyonWays } from './grand-hotel-dieu-lyon/footprint.js';
+import { create as lm_grand_hotel_dieu_lyonCreate } from './grand-hotel-dieu-lyon/geometry.js';
+import { VIEWS as lm_grand_hotel_dieu_lyonViews } from './grand-hotel-dieu-lyon/views.js';
+import { MANIFEST as lm_grosse_cloche_bordeauxManifest } from './grosse-cloche-bordeaux/config.js';
+import { OSM_WAYS as lm_grosse_cloche_bordeauxWays } from './grosse-cloche-bordeaux/footprint.js';
+import { create as lm_grosse_cloche_bordeauxCreate } from './grosse-cloche-bordeaux/geometry.js';
+import { VIEWS as lm_grosse_cloche_bordeauxViews } from './grosse-cloche-bordeaux/views.js';
+import { MANIFEST as lm_gur_sikh_templeManifest } from './gur-sikh-temple/config.js';
+import { OSM_WAYS as lm_gur_sikh_templeWays } from './gur-sikh-temple/footprint.js';
+import { create as lm_gur_sikh_templeCreate } from './gur-sikh-temple/geometry.js';
+import { VIEWS as lm_gur_sikh_templeViews } from './gur-sikh-temple/views.js';
+import { MANIFEST as lm_gwinnett_historic_courthouseManifest } from './gwinnett-historic-courthouse/config.js';
+import { OSM_WAYS as lm_gwinnett_historic_courthouseWays } from './gwinnett-historic-courthouse/footprint.js';
+import { create as lm_gwinnett_historic_courthouseCreate } from './gwinnett-historic-courthouse/geometry.js';
+import { VIEWS as lm_gwinnett_historic_courthouseViews } from './gwinnett-historic-courthouse/views.js';
+import { MANIFEST as lm_haney_houseManifest } from './haney-house/config.js';
+import { OSM_WAYS as lm_haney_houseWays } from './haney-house/footprint.js';
+import { create as lm_haney_houseCreate } from './haney-house/geometry.js';
+import { VIEWS as lm_haney_houseViews } from './haney-house/views.js';
+import { MANIFEST as lm_heritage_plaza_houstonManifest } from './heritage-plaza-houston/config.js';
+import { OSM_WAYS as lm_heritage_plaza_houstonWays } from './heritage-plaza-houston/footprint.js';
+import { create as lm_heritage_plaza_houstonCreate } from './heritage-plaza-houston/geometry.js';
+import { VIEWS as lm_heritage_plaza_houstonViews } from './heritage-plaza-houston/views.js';
+import { MANIFEST as lm_hillsboro_inlet_lighthouseManifest } from './hillsboro-inlet-lighthouse/config.js';
+import { OSM_WAYS as lm_hillsboro_inlet_lighthouseWays } from './hillsboro-inlet-lighthouse/footprint.js';
+import { create as lm_hillsboro_inlet_lighthouseCreate } from './hillsboro-inlet-lighthouse/geometry.js';
+import { VIEWS as lm_hillsboro_inlet_lighthouseViews } from './hillsboro-inlet-lighthouse/views.js';
+import { MANIFEST as lm_honda_centerManifest } from './honda-center/config.js';
+import { OSM_WAYS as lm_honda_centerWays } from './honda-center/footprint.js';
+import { create as lm_honda_centerCreate } from './honda-center/geometry.js';
+import { VIEWS as lm_honda_centerViews } from './honda-center/views.js';
+import { MANIFEST as lm_hotel_de_ville_grenobleManifest } from './hotel-de-ville-grenoble/config.js';
+import { OSM_WAYS as lm_hotel_de_ville_grenobleWays } from './hotel-de-ville-grenoble/footprint.js';
+import { create as lm_hotel_de_ville_grenobleCreate } from './hotel-de-ville-grenoble/geometry.js';
+import { VIEWS as lm_hotel_de_ville_grenobleViews } from './hotel-de-ville-grenoble/views.js';
+import { MANIFEST as lm_hotel_okura_amsterdamManifest } from './hotel-okura-amsterdam/config.js';
+import { OSM_WAYS as lm_hotel_okura_amsterdamWays } from './hotel-okura-amsterdam/footprint.js';
+import { create as lm_hotel_okura_amsterdamCreate } from './hotel-okura-amsterdam/geometry.js';
+import { VIEWS as lm_hotel_okura_amsterdamViews } from './hotel-okura-amsterdam/views.js';
+import { MANIFEST as lm_houston_city_hallManifest } from './houston-city-hall/config.js';
+import { OSM_WAYS as lm_houston_city_hallWays } from './houston-city-hall/footprint.js';
+import { create as lm_houston_city_hallCreate } from './houston-city-hall/geometry.js';
+import { VIEWS as lm_houston_city_hallViews } from './houston-city-hall/views.js';
+import { MANIFEST as lm_hypo_haus_munichManifest } from './hypo-haus-munich/config.js';
+import { OSM_WAYS as lm_hypo_haus_munichWays } from './hypo-haus-munich/footprint.js';
+import { create as lm_hypo_haus_munichCreate } from './hypo-haus-munich/geometry.js';
+import { VIEWS as lm_hypo_haus_munichViews } from './hypo-haus-munich/views.js';
+import { MANIFEST as lm_iglesia_merced_san_joseManifest } from './iglesia-merced-san-jose/config.js';
+import { OSM_WAYS as lm_iglesia_merced_san_joseWays } from './iglesia-merced-san-jose/footprint.js';
+import { create as lm_iglesia_merced_san_joseCreate } from './iglesia-merced-san-jose/geometry.js';
+import { VIEWS as lm_iglesia_merced_san_joseViews } from './iglesia-merced-san-jose/views.js';
+import { MANIFEST as lm_inntel_zaandamManifest } from './inntel-zaandam/config.js';
+import { OSM_WAYS as lm_inntel_zaandamWays } from './inntel-zaandam/footprint.js';
+import { create as lm_inntel_zaandamCreate } from './inntel-zaandam/geometry.js';
+import { VIEWS as lm_inntel_zaandamViews } from './inntel-zaandam/views.js';
+import { MANIFEST as lm_intercontinental_bucharestManifest } from './intercontinental-bucharest/config.js';
+import { OSM_WAYS as lm_intercontinental_bucharestWays } from './intercontinental-bucharest/footprint.js';
+import { create as lm_intercontinental_bucharestCreate } from './intercontinental-bucharest/geometry.js';
+import { VIEWS as lm_intercontinental_bucharestViews } from './intercontinental-bucharest/views.js';
+import { MANIFEST as lm_ito_towerManifest } from './ito-tower/config.js';
+import { OSM_WAYS as lm_ito_towerWays } from './ito-tower/footprint.js';
+import { create as lm_ito_towerCreate } from './ito-tower/geometry.js';
+import { VIEWS as lm_ito_towerViews } from './ito-tower/views.js';
+import { MANIFEST as lm_jerusalem_ymcaManifest } from './jerusalem-ymca/config.js';
+import { OSM_WAYS as lm_jerusalem_ymcaWays } from './jerusalem-ymca/footprint.js';
+import { create as lm_jerusalem_ymcaCreate } from './jerusalem-ymca/geometry.js';
+import { VIEWS as lm_jerusalem_ymcaViews } from './jerusalem-ymca/views.js';
+import { MANIFEST as lm_jpmorgan_chase_tower_dallasManifest } from './jpmorgan-chase-tower-dallas/config.js';
+import { OSM_WAYS as lm_jpmorgan_chase_tower_dallasWays } from './jpmorgan-chase-tower-dallas/footprint.js';
+import { create as lm_jpmorgan_chase_tower_dallasCreate } from './jpmorgan-chase-tower-dallas/geometry.js';
+import { VIEWS as lm_jpmorgan_chase_tower_dallasViews } from './jpmorgan-chase-tower-dallas/views.js';
+import { MANIFEST as lm_kaknas_towerManifest } from './kaknas-tower/config.js';
+import { OSM_WAYS as lm_kaknas_towerWays } from './kaknas-tower/footprint.js';
+import { create as lm_kaknas_towerCreate } from './kaknas-tower/geometry.js';
+import { VIEWS as lm_kaknas_towerViews } from './kaknas-tower/views.js';
+import { MANIFEST as lm_kansas_city_city_hallManifest } from './kansas-city-city-hall/config.js';
+import { OSM_WAYS as lm_kansas_city_city_hallWays } from './kansas-city-city-hall/footprint.js';
+import { create as lm_kansas_city_city_hallCreate } from './kansas-city-city-hall/geometry.js';
+import { VIEWS as lm_kansas_city_city_hallViews } from './kansas-city-city-hall/views.js';
+import { MANIFEST as lm_kauffman_center_kansas_cityManifest } from './kauffman-center-kansas-city/config.js';
+import { OSM_WAYS as lm_kauffman_center_kansas_cityWays } from './kauffman-center-kansas-city/footprint.js';
+import { create as lm_kauffman_center_kansas_cityCreate } from './kauffman-center-kansas-city/geometry.js';
+import { VIEWS as lm_kauffman_center_kansas_cityViews } from './kauffman-center-kansas-city/views.js';
+import { MANIFEST as lm_kista_science_towerManifest } from './kista-science-tower/config.js';
+import { OSM_WAYS as lm_kista_science_towerWays } from './kista-science-tower/footprint.js';
+import { create as lm_kista_science_towerCreate } from './kista-science-tower/geometry.js';
+import { VIEWS as lm_kista_science_towerViews } from './kista-science-tower/views.js';
+import { MANIFEST as lm_koekelberg_basilicaManifest } from './koekelberg-basilica/config.js';
+import { OSM_WAYS as lm_koekelberg_basilicaWays } from './koekelberg-basilica/footprint.js';
+import { create as lm_koekelberg_basilicaCreate } from './koekelberg-basilica/geometry.js';
+import { VIEWS as lm_koekelberg_basilicaViews } from './koekelberg-basilica/views.js';
+import { MANIFEST as lm_la_rosaledaManifest } from './la-rosaleda/config.js';
+import { OSM_WAYS as lm_la_rosaledaWays } from './la-rosaleda/footprint.js';
+import { create as lm_la_rosaledaCreate } from './la-rosaleda/geometry.js';
+import { VIEWS as lm_la_rosaledaViews } from './la-rosaleda/views.js';
+import { MANIFEST as lm_library_of_birminghamManifest } from './library-of-birmingham/config.js';
+import { OSM_WAYS as lm_library_of_birminghamWays } from './library-of-birmingham/footprint.js';
+import { create as lm_library_of_birminghamCreate } from './library-of-birmingham/geometry.js';
+import { VIEWS as lm_library_of_birminghamViews } from './library-of-birmingham/views.js';
+import { MANIFEST as lm_liege_guilleminsManifest } from './liege-guillemins/config.js';
+import { OSM_WAYS as lm_liege_guilleminsWays } from './liege-guillemins/footprint.js';
+import { create as lm_liege_guilleminsCreate } from './liege-guillemins/geometry.js';
+import { VIEWS as lm_liege_guilleminsViews } from './liege-guillemins/views.js';
+import { MANIFEST as lm_london_stadiumManifest } from './london-stadium/config.js';
+import { OSM_WAYS as lm_london_stadiumWays } from './london-stadium/footprint.js';
+import { create as lm_london_stadiumCreate } from './london-stadium/geometry.js';
+import { VIEWS as lm_london_stadiumViews } from './london-stadium/views.js';
+import { MANIFEST as lm_lviv_town_hallManifest } from './lviv-town-hall/config.js';
+import { OSM_WAYS as lm_lviv_town_hallWays } from './lviv-town-hall/footprint.js';
+import { create as lm_lviv_town_hallCreate } from './lviv-town-hall/geometry.js';
+import { VIEWS as lm_lviv_town_hallViews } from './lviv-town-hall/views.js';
+import { MANIFEST as lm_maison_carree_nimesManifest } from './maison-carree-nimes/config.js';
+import { OSM_WAYS as lm_maison_carree_nimesWays } from './maison-carree-nimes/footprint.js';
+import { create as lm_maison_carree_nimesCreate } from './maison-carree-nimes/geometry.js';
+import { VIEWS as lm_maison_carree_nimesViews } from './maison-carree-nimes/views.js';
+import { MANIFEST as lm_maison_de_la_radioManifest } from './maison-de-la-radio/config.js';
+import { OSM_WAYS as lm_maison_de_la_radioWays } from './maison-de-la-radio/footprint.js';
+import { create as lm_maison_de_la_radioCreate } from './maison-de-la-radio/geometry.js';
+import { VIEWS as lm_maison_de_la_radioViews } from './maison-de-la-radio/views.js';
+import { MANIFEST as lm_malaga_cathedralManifest } from './malaga-cathedral/config.js';
+import { OSM_WAYS as lm_malaga_cathedralWays } from './malaga-cathedral/footprint.js';
+import { create as lm_malaga_cathedralCreate } from './malaga-cathedral/geometry.js';
+import { VIEWS as lm_malaga_cathedralViews } from './malaga-cathedral/views.js';
+import { MANIFEST as lm_markham_civic_centreManifest } from './markham-civic-centre/config.js';
+import { OSM_WAYS as lm_markham_civic_centreWays } from './markham-civic-centre/footprint.js';
+import { create as lm_markham_civic_centreCreate } from './markham-civic-centre/geometry.js';
+import { VIEWS as lm_markham_civic_centreViews } from './markham-civic-centre/views.js';
+import { MANIFEST as lm_mausoleum_carol_parkManifest } from './mausoleum-carol-park/config.js';
+import { OSM_WAYS as lm_mausoleum_carol_parkWays } from './mausoleum-carol-park/footprint.js';
+import { create as lm_mausoleum_carol_parkCreate } from './mausoleum-carol-park/geometry.js';
+import { VIEWS as lm_mausoleum_carol_parkViews } from './mausoleum-carol-park/views.js';
+import { MANIFEST as lm_meyerson_symphony_centerManifest } from './meyerson-symphony-center/config.js';
+import { OSM_WAYS as lm_meyerson_symphony_centerWays } from './meyerson-symphony-center/footprint.js';
+import { create as lm_meyerson_symphony_centerCreate } from './meyerson-symphony-center/geometry.js';
+import { VIEWS as lm_meyerson_symphony_centerViews } from './meyerson-symphony-center/views.js';
+import { MANIFEST as lm_mission_san_juan_capistranoManifest } from './mission-san-juan-capistrano/config.js';
+import { OSM_WAYS as lm_mission_san_juan_capistranoWays } from './mission-san-juan-capistrano/footprint.js';
+import { create as lm_mission_san_juan_capistranoCreate } from './mission-san-juan-capistrano/geometry.js';
+import { VIEWS as lm_mission_san_juan_capistranoViews } from './mission-san-juan-capistrano/views.js';
+import { MANIFEST as lm_mississauga_civic_centreManifest } from './mississauga-civic-centre/config.js';
+import { OSM_WAYS as lm_mississauga_civic_centreWays } from './mississauga-civic-centre/footprint.js';
+import { create as lm_mississauga_civic_centreCreate } from './mississauga-civic-centre/geometry.js';
+import { VIEWS as lm_mississauga_civic_centreViews } from './mississauga-civic-centre/views.js';
+import { MANIFEST as lm_mondriaan_towerManifest } from './mondriaan-tower/config.js';
+import { OSM_WAYS as lm_mondriaan_towerWays } from './mondriaan-tower/footprint.js';
+import { create as lm_mondriaan_towerCreate } from './mondriaan-tower/geometry.js';
+import { VIEWS as lm_mondriaan_towerViews } from './mondriaan-tower/views.js';
+import { MANIFEST as lm_moshe_aviv_towerManifest } from './moshe-aviv-tower/config.js';
+import { OSM_WAYS as lm_moshe_aviv_towerWays } from './moshe-aviv-tower/footprint.js';
+import { create as lm_moshe_aviv_towerCreate } from './moshe-aviv-tower/geometry.js';
+import { VIEWS as lm_moshe_aviv_towerViews } from './moshe-aviv-tower/views.js';
+import { MANIFEST as lm_moulin_neuf_terrebonneManifest } from './moulin-neuf-terrebonne/config.js';
+import { OSM_WAYS as lm_moulin_neuf_terrebonneWays } from './moulin-neuf-terrebonne/footprint.js';
+import { create as lm_moulin_neuf_terrebonneCreate } from './moulin-neuf-terrebonne/geometry.js';
+import { VIEWS as lm_moulin_neuf_terrebonneViews } from './moulin-neuf-terrebonne/views.js';
+import { MANIFEST as lm_mt_bank_stadium_baltimoreManifest } from './mt-bank-stadium-baltimore/config.js';
+import { OSM_WAYS as lm_mt_bank_stadium_baltimoreWays } from './mt-bank-stadium-baltimore/footprint.js';
+import { create as lm_mt_bank_stadium_baltimoreCreate } from './mt-bank-stadium-baltimore/geometry.js';
+import { VIEWS as lm_mt_bank_stadium_baltimoreViews } from './mt-bank-stadium-baltimore/views.js';
+import { MANIFEST as lm_museo_arte_costarricenseManifest } from './museo-arte-costarricense/config.js';
+import { OSM_WAYS as lm_museo_arte_costarricenseWays } from './museo-arte-costarricense/footprint.js';
+import { create as lm_museo_arte_costarricenseCreate } from './museo-arte-costarricense/geometry.js';
+import { VIEWS as lm_museo_arte_costarricenseViews } from './museo-arte-costarricense/views.js';
+import { MANIFEST as lm_namur_saint_aubinManifest } from './namur-saint-aubin/config.js';
+import { OSM_WAYS as lm_namur_saint_aubinWays } from './namur-saint-aubin/footprint.js';
+import { create as lm_namur_saint_aubinCreate } from './namur-saint-aubin/geometry.js';
+import { VIEWS as lm_namur_saint_aubinViews } from './namur-saint-aubin/views.js';
+import { MANIFEST as lm_national_library_romaniaManifest } from './national-library-romania/config.js';
+import { OSM_WAYS as lm_national_library_romaniaWays } from './national-library-romania/footprint.js';
+import { create as lm_national_library_romaniaCreate } from './national-library-romania/geometry.js';
+import { VIEWS as lm_national_library_romaniaViews } from './national-library-romania/views.js';
+import { MANIFEST as lm_national_space_centreManifest } from './national-space-centre/config.js';
+import { OSM_WAYS as lm_national_space_centreWays } from './national-space-centre/footprint.js';
+import { create as lm_national_space_centreCreate } from './national-space-centre/geometry.js';
+import { VIEWS as lm_national_space_centreViews } from './national-space-centre/views.js';
+import { MANIFEST as lm_national_theatre_bucharestManifest } from './national-theatre-bucharest/config.js';
+import { OSM_WAYS as lm_national_theatre_bucharestWays } from './national-theatre-bucharest/footprint.js';
+import { create as lm_national_theatre_bucharestCreate } from './national-theatre-bucharest/geometry.js';
+import { VIEWS as lm_national_theatre_bucharestViews } from './national-theatre-bucharest/views.js';
+import { MANIFEST as lm_national_theatre_londonManifest } from './national-theatre-london/config.js';
+import { OSM_WAYS as lm_national_theatre_londonWays } from './national-theatre-london/footprint.js';
+import { create as lm_national_theatre_londonCreate } from './national-theatre-london/geometry.js';
+import { VIEWS as lm_national_theatre_londonViews } from './national-theatre-london/views.js';
+import { MANIFEST as lm_nhow_amsterdam_raiManifest } from './nhow-amsterdam-rai/config.js';
+import { OSM_WAYS as lm_nhow_amsterdam_raiWays } from './nhow-amsterdam-rai/footprint.js';
+import { create as lm_nhow_amsterdam_raiCreate } from './nhow-amsterdam-rai/geometry.js';
+import { VIEWS as lm_nhow_amsterdam_raiViews } from './nhow-amsterdam-rai/views.js';
+import { MANIFEST as lm_nottingham_council_houseManifest } from './nottingham-council-house/config.js';
+import { OSM_WAYS as lm_nottingham_council_houseWays } from './nottingham-council-house/footprint.js';
+import { create as lm_nottingham_council_houseCreate } from './nottingham-council-house/geometry.js';
+import { VIEWS as lm_nottingham_council_houseViews } from './nottingham-council-house/views.js';
+import { MANIFEST as lm_nrg_stadiumManifest } from './nrg-stadium/config.js';
+import { OSM_WAYS as lm_nrg_stadiumWays } from './nrg-stadium/footprint.js';
+import { create as lm_nrg_stadiumCreate } from './nrg-stadium/geometry.js';
+import { VIEWS as lm_nrg_stadiumViews } from './nrg-stadium/views.js';
+import { MANIFEST as lm_ohio_stadiumManifest } from './ohio-stadium/config.js';
+import { OSM_WAYS as lm_ohio_stadiumWays } from './ohio-stadium/footprint.js';
+import { create as lm_ohio_stadiumCreate } from './ohio-stadium/geometry.js';
+import { VIEWS as lm_ohio_stadiumViews } from './ohio-stadium/views.js';
+import { MANIFEST as lm_olympiaturm_munichManifest } from './olympiaturm-munich/config.js';
+import { OSM_WAYS as lm_olympiaturm_munichWays } from './olympiaturm-munich/footprint.js';
+import { create as lm_olympiaturm_munichCreate } from './olympiaturm-munich/geometry.js';
+import { VIEWS as lm_olympiaturm_munichViews } from './olympiaturm-munich/views.js';
+import { MANIFEST as lm_olympic_stadium_amsterdamManifest } from './olympic-stadium-amsterdam/config.js';
+import { OSM_WAYS as lm_olympic_stadium_amsterdamWays } from './olympic-stadium-amsterdam/footprint.js';
+import { create as lm_olympic_stadium_amsterdamCreate } from './olympic-stadium-amsterdam/geometry.js';
+import { VIEWS as lm_olympic_stadium_amsterdamViews } from './olympic-stadium-amsterdam/views.js';
+import { MANIFEST as lm_one_canada_squareManifest } from './one-canada-square/config.js';
+import { OSM_WAYS as lm_one_canada_squareWays } from './one-canada-square/footprint.js';
+import { create as lm_one_canada_squareCreate } from './one-canada-square/geometry.js';
+import { VIEWS as lm_one_canada_squareViews } from './one-canada-square/views.js';
+import { MANIFEST as lm_oriole_park_camden_yardsManifest } from './oriole-park-camden-yards/config.js';
+import { OSM_WAYS as lm_oriole_park_camden_yardsWays } from './oriole-park-camden-yards/footprint.js';
+import { create as lm_oriole_park_camden_yardsCreate } from './oriole-park-camden-yards/geometry.js';
+import { VIEWS as lm_oriole_park_camden_yardsViews } from './oriole-park-camden-yards/views.js';
+import { MANIFEST as lm_padrao_descobrimentosManifest } from './padrao-descobrimentos/config.js';
+import { OSM_WAYS as lm_padrao_descobrimentosWays } from './padrao-descobrimentos/footprint.js';
+import { create as lm_padrao_descobrimentosCreate } from './padrao-descobrimentos/geometry.js';
+import { VIEWS as lm_padrao_descobrimentosViews } from './padrao-descobrimentos/views.js';
+import { MANIFEST as lm_palais_de_l_isle_annecyManifest } from './palais-de-l-isle-annecy/config.js';
+import { OSM_WAYS as lm_palais_de_l_isle_annecyWays } from './palais-de-l-isle-annecy/footprint.js';
+import { create as lm_palais_de_l_isle_annecyCreate } from './palais-de-l-isle-annecy/geometry.js';
+import { VIEWS as lm_palais_de_l_isle_annecyViews } from './palais-de-l-isle-annecy/views.js';
+import { MANIFEST as lm_palais_de_la_porte_doreeManifest } from './palais-de-la-porte-doree/config.js';
+import { OSM_WAYS as lm_palais_de_la_porte_doreeWays } from './palais-de-la-porte-doree/footprint.js';
+import { create as lm_palais_de_la_porte_doreeCreate } from './palais-de-la-porte-doree/geometry.js';
+import { VIEWS as lm_palais_de_la_porte_doreeViews } from './palais-de-la-porte-doree/views.js';
+import { MANIFEST as lm_palais_des_congres_parisManifest } from './palais-des-congres-paris/config.js';
+import { OSM_WAYS as lm_palais_des_congres_parisWays } from './palais-des-congres-paris/footprint.js';
+import { create as lm_palais_des_congres_parisCreate } from './palais-des-congres-paris/geometry.js';
+import { VIEWS as lm_palais_des_congres_parisViews } from './palais-des-congres-paris/views.js';
+import { MANIFEST as lm_palais_des_papes_avignonManifest } from './palais-des-papes-avignon/config.js';
+import { OSM_WAYS as lm_palais_des_papes_avignonWays } from './palais-des-papes-avignon/footprint.js';
+import { create as lm_palais_des_papes_avignonCreate } from './palais-des-papes-avignon/geometry.js';
+import { VIEWS as lm_palais_des_papes_avignonViews } from './palais-des-papes-avignon/views.js';
+import { MANIFEST as lm_palazzo_civilta_italianaManifest } from './palazzo-civilta-italiana/config.js';
+import { OSM_WAYS as lm_palazzo_civilta_italianaWays } from './palazzo-civilta-italiana/footprint.js';
+import { create as lm_palazzo_civilta_italianaCreate } from './palazzo-civilta-italiana/geometry.js';
+import { VIEWS as lm_palazzo_civilta_italianaViews } from './palazzo-civilta-italiana/views.js';
+import { MANIFEST as lm_parc_des_princesManifest } from './parc-des-princes/config.js';
+import { OSM_WAYS as lm_parc_des_princesWays } from './parc-des-princes/footprint.js';
+import { create as lm_parc_des_princesCreate } from './parc-des-princes/geometry.js';
+import { VIEWS as lm_parc_des_princesViews } from './parc-des-princes/views.js';
+import { MANIFEST as lm_parlement_europeen_louise_weissManifest } from './parlement-europeen-louise-weiss/config.js';
+import { OSM_WAYS as lm_parlement_europeen_louise_weissWays } from './parlement-europeen-louise-weiss/footprint.js';
+import { create as lm_parlement_europeen_louise_weissCreate } from './parlement-europeen-louise-weiss/geometry.js';
+import { VIEWS as lm_parlement_europeen_louise_weissViews } from './parlement-europeen-louise-weiss/views.js';
+import { MANIFEST as lm_parus_business_centreManifest } from './parus-business-centre/config.js';
+import { OSM_WAYS as lm_parus_business_centreWays } from './parus-business-centre/footprint.js';
+import { create as lm_parus_business_centreCreate } from './parus-business-centre/geometry.js';
+import { VIEWS as lm_parus_business_centreViews } from './parus-business-centre/views.js';
+import { MANIFEST as lm_perris_depotManifest } from './perris-depot/config.js';
+import { OSM_WAYS as lm_perris_depotWays } from './perris-depot/footprint.js';
+import { create as lm_perris_depotCreate } from './perris-depot/geometry.js';
+import { VIEWS as lm_perris_depotViews } from './perris-depot/views.js';
+import { MANIFEST as lm_phare_de_verzenayManifest } from './phare-de-verzenay/config.js';
+import { OSM_WAYS as lm_phare_de_verzenayWays } from './phare-de-verzenay/footprint.js';
+import { create as lm_phare_de_verzenayCreate } from './phare-de-verzenay/geometry.js';
+import { VIEWS as lm_phare_de_verzenayViews } from './phare-de-verzenay/views.js';
+import { MANIFEST as lm_philharmonie_luxembourgManifest } from './philharmonie-luxembourg/config.js';
+import { OSM_WAYS as lm_philharmonie_luxembourgWays } from './philharmonie-luxembourg/footprint.js';
+import { create as lm_philharmonie_luxembourgCreate } from './philharmonie-luxembourg/geometry.js';
+import { VIEWS as lm_philharmonie_luxembourgViews } from './philharmonie-luxembourg/views.js';
+import { MANIFEST as lm_place_bell_lavalManifest } from './place-bell-laval/config.js';
+import { OSM_WAYS as lm_place_bell_lavalWays } from './place-bell-laval/footprint.js';
+import { create as lm_place_bell_lavalCreate } from './place-bell-laval/geometry.js';
+import { VIEWS as lm_place_bell_lavalViews } from './place-bell-laval/views.js';
+import { MANIFEST as lm_pontsteigerManifest } from './pontsteiger/config.js';
+import { OSM_WAYS as lm_pontsteigerWays } from './pontsteiger/footprint.js';
+import { create as lm_pontsteigerCreate } from './pontsteiger/geometry.js';
+import { VIEWS as lm_pontsteigerViews } from './pontsteiger/views.js';
+import { MANIFEST as lm_port_coquitlam_city_hallManifest } from './port-coquitlam-city-hall/config.js';
+import { OSM_WAYS as lm_port_coquitlam_city_hallWays } from './port-coquitlam-city-hall/footprint.js';
+import { create as lm_port_coquitlam_city_hallCreate } from './port-coquitlam-city-hall/geometry.js';
+import { VIEWS as lm_port_coquitlam_city_hallViews } from './port-coquitlam-city-hall/views.js';
+import { MANIFEST as lm_porte_cailhau_bordeauxManifest } from './porte-cailhau-bordeaux/config.js';
+import { OSM_WAYS as lm_porte_cailhau_bordeauxWays } from './porte-cailhau-bordeaux/footprint.js';
+import { create as lm_porte_cailhau_bordeauxCreate } from './porte-cailhau-bordeaux/geometry.js';
+import { VIEWS as lm_porte_cailhau_bordeauxViews } from './porte-cailhau-bordeaux/views.js';
+import { MANIFEST as lm_porte_de_la_craffeManifest } from './porte-de-la-craffe/config.js';
+import { OSM_WAYS as lm_porte_de_la_craffeWays } from './porte-de-la-craffe/footprint.js';
+import { create as lm_porte_de_la_craffeCreate } from './porte-de-la-craffe/geometry.js';
+import { VIEWS as lm_porte_de_la_craffeViews } from './porte-de-la-craffe/views.js';
+import { MANIFEST as lm_portland_union_stationManifest } from './portland-union-station/config.js';
+import { OSM_WAYS as lm_portland_union_stationWays } from './portland-union-station/footprint.js';
+import { create as lm_portland_union_stationCreate } from './portland-union-station/geometry.js';
+import { VIEWS as lm_portland_union_stationViews } from './portland-union-station/views.js';
+import { MANIFEST as lm_prime_tower_zurichManifest } from './prime-tower-zurich/config.js';
+import { OSM_WAYS as lm_prime_tower_zurichWays } from './prime-tower-zurich/footprint.js';
+import { create as lm_prime_tower_zurichCreate } from './prime-tower-zurich/geometry.js';
+import { VIEWS as lm_prime_tower_zurichViews } from './prime-tower-zurich/views.js';
+import { MANIFEST as lm_pyramid_cestiusManifest } from './pyramid-cestius/config.js';
+import { OSM_WAYS as lm_pyramid_cestiusWays } from './pyramid-cestius/footprint.js';
+import { create as lm_pyramid_cestiusCreate } from './pyramid-cestius/geometry.js';
+import { VIEWS as lm_pyramid_cestiusViews } from './pyramid-cestius/views.js';
+import { MANIFEST as lm_rai_eliciumManifest } from './rai-elicium/config.js';
+import { OSM_WAYS as lm_rai_eliciumWays } from './rai-elicium/footprint.js';
+import { create as lm_rai_eliciumCreate } from './rai-elicium/geometry.js';
+import { VIEWS as lm_rai_eliciumViews } from './rai-elicium/views.js';
+import { MANIFEST as lm_red_brick_courthouse_rockvilleManifest } from './red-brick-courthouse-rockville/config.js';
+import { OSM_WAYS as lm_red_brick_courthouse_rockvilleWays } from './red-brick-courthouse-rockville/footprint.js';
+import { create as lm_red_brick_courthouse_rockvilleCreate } from './red-brick-courthouse-rockville/geometry.js';
+import { VIEWS as lm_red_brick_courthouse_rockvilleViews } from './red-brick-courthouse-rockville/views.js';
+import { MANIFEST as lm_rembrandt_towerManifest } from './rembrandt-tower/config.js';
+import { OSM_WAYS as lm_rembrandt_towerWays } from './rembrandt-tower/footprint.js';
+import { create as lm_rembrandt_towerCreate } from './rembrandt-tower/geometry.js';
+import { VIEWS as lm_rembrandt_towerViews } from './rembrandt-tower/views.js';
+import { MANIFEST as lm_renaissance_tower_dallasManifest } from './renaissance-tower-dallas/config.js';
+import { OSM_WAYS as lm_renaissance_tower_dallasWays } from './renaissance-tower-dallas/footprint.js';
+import { create as lm_renaissance_tower_dallasCreate } from './renaissance-tower-dallas/geometry.js';
+import { VIEWS as lm_renaissance_tower_dallasViews } from './renaissance-tower-dallas/views.js';
+import { MANIFEST as lm_rhodes_state_office_towerManifest } from './rhodes-state-office-tower/config.js';
+import { OSM_WAYS as lm_rhodes_state_office_towerWays } from './rhodes-state-office-tower/footprint.js';
+import { create as lm_rhodes_state_office_towerCreate } from './rhodes-state-office-tower/geometry.js';
+import { VIEWS as lm_rhodes_state_office_towerViews } from './rhodes-state-office-tower/views.js';
+import { MANIFEST as lm_riverside_fox_theaterManifest } from './riverside-fox-theater/config.js';
+import { OSM_WAYS as lm_riverside_fox_theaterWays } from './riverside-fox-theater/footprint.js';
+import { create as lm_riverside_fox_theaterCreate } from './riverside-fox-theater/geometry.js';
+import { VIEWS as lm_riverside_fox_theaterViews } from './riverside-fox-theater/views.js';
+import { MANIFEST as lm_sage_gatesheadManifest } from './sage-gateshead/config.js';
+import { OSM_WAYS as lm_sage_gatesheadWays } from './sage-gateshead/footprint.js';
+import { create as lm_sage_gatesheadCreate } from './sage-gateshead/geometry.js';
+import { VIEWS as lm_sage_gatesheadViews } from './sage-gateshead/views.js';
+import { MANIFEST as lm_saint_paul_cathedral_liegeManifest } from './saint-paul-cathedral-liege/config.js';
+import { OSM_WAYS as lm_saint_paul_cathedral_liegeWays } from './saint-paul-cathedral-liege/footprint.js';
+import { create as lm_saint_paul_cathedral_liegeCreate } from './saint-paul-cathedral-liege/geometry.js';
+import { VIEWS as lm_saint_paul_cathedral_liegeViews } from './saint-paul-cathedral-liege/views.js';
+import { MANIFEST as lm_san_bernardino_county_courthouseManifest } from './san-bernardino-county-courthouse/config.js';
+import { OSM_WAYS as lm_san_bernardino_county_courthouseWays } from './san-bernardino-county-courthouse/footprint.js';
+import { create as lm_san_bernardino_county_courthouseCreate } from './san-bernardino-county-courthouse/geometry.js';
+import { VIEWS as lm_san_bernardino_county_courthouseViews } from './san-bernardino-county-courthouse/views.js';
+import { MANIFEST as lm_san_giovanni_lateranoManifest } from './san-giovanni-laterano/config.js';
+import { OSM_WAYS as lm_san_giovanni_lateranoWays } from './san-giovanni-laterano/footprint.js';
+import { create as lm_san_giovanni_lateranoCreate } from './san-giovanni-laterano/geometry.js';
+import { VIEWS as lm_san_giovanni_lateranoViews } from './san-giovanni-laterano/views.js';
+import { MANIFEST as lm_san_pedro_claver_cartagenaManifest } from './san-pedro-claver-cartagena/config.js';
+import { OSM_WAYS as lm_san_pedro_claver_cartagenaWays } from './san-pedro-claver-cartagena/footprint.js';
+import { create as lm_san_pedro_claver_cartagenaCreate } from './san-pedro-claver-cartagena/geometry.js';
+import { VIEWS as lm_san_pedro_claver_cartagenaViews } from './san-pedro-claver-cartagena/views.js';
+import { MANIFEST as lm_sanford_stadiumManifest } from './sanford-stadium/config.js';
+import { OSM_WAYS as lm_sanford_stadiumWays } from './sanford-stadium/footprint.js';
+import { create as lm_sanford_stadiumCreate } from './sanford-stadium/geometry.js';
+import { VIEWS as lm_sanford_stadiumViews } from './sanford-stadium/views.js';
+import { MANIFEST as lm_santa_justa_liftManifest } from './santa-justa-lift/config.js';
+import { OSM_WAYS as lm_santa_justa_liftWays } from './santa-justa-lift/footprint.js';
+import { create as lm_santa_justa_liftCreate } from './santa-justa-lift/geometry.js';
+import { VIEWS as lm_santa_justa_liftViews } from './santa-justa-lift/views.js';
+import { MANIFEST as lm_santa_maria_maggioreManifest } from './santa-maria-maggiore/config.js';
+import { OSM_WAYS as lm_santa_maria_maggioreWays } from './santa-maria-maggiore/footprint.js';
+import { create as lm_santa_maria_maggioreCreate } from './santa-maria-maggiore/geometry.js';
+import { VIEWS as lm_santa_maria_maggioreViews } from './santa-maria-maggiore/views.js';
+import { MANIFEST as lm_savage_millManifest } from './savage-mill/config.js';
+import { OSM_WAYS as lm_savage_millWays } from './savage-mill/footprint.js';
+import { create as lm_savage_millCreate } from './savage-mill/geometry.js';
+import { VIEWS as lm_savage_millViews } from './savage-mill/views.js';
+import { MANIFEST as lm_seven_foot_knoll_lighthouseManifest } from './seven-foot-knoll-lighthouse/config.js';
+import { OSM_WAYS as lm_seven_foot_knoll_lighthouseWays } from './seven-foot-knoll-lighthouse/footprint.js';
+import { create as lm_seven_foot_knoll_lighthouseCreate } from './seven-foot-knoll-lighthouse/geometry.js';
+import { VIEWS as lm_seven_foot_knoll_lighthouseViews } from './seven-foot-knoll-lighthouse/views.js';
+import { MANIFEST as lm_shrine_of_the_bookManifest } from './shrine-of-the-book/config.js';
+import { OSM_WAYS as lm_shrine_of_the_bookWays } from './shrine-of-the-book/footprint.js';
+import { create as lm_shrine_of_the_bookCreate } from './shrine-of-the-book/geometry.js';
+import { VIEWS as lm_shrine_of_the_bookViews } from './shrine-of-the-book/views.js';
+import { MANIFEST as lm_siegestor_munichManifest } from './siegestor-munich/config.js';
+import { OSM_WAYS as lm_siegestor_munichWays } from './siegestor-munich/footprint.js';
+import { create as lm_siegestor_munichCreate } from './siegestor-munich/geometry.js';
+import { VIEWS as lm_siegestor_munichViews } from './siegestor-munich/views.js';
+import { MANIFEST as lm_skytower_bucharestManifest } from './skytower-bucharest/config.js';
+import { OSM_WAYS as lm_skytower_bucharestWays } from './skytower-bucharest/footprint.js';
+import { create as lm_skytower_bucharestCreate } from './skytower-bucharest/geometry.js';
+import { VIEWS as lm_skytower_bucharestViews } from './skytower-bucharest/views.js';
+import { MANIFEST as lm_spire_of_dublinManifest } from './spire-of-dublin/config.js';
+import { OSM_WAYS as lm_spire_of_dublinWays } from './spire-of-dublin/footprint.js';
+import { create as lm_spire_of_dublinCreate } from './spire-of-dublin/geometry.js';
+import { VIEWS as lm_spire_of_dublinViews } from './spire-of-dublin/views.js';
+import { MANIFEST as lm_st_louis_union_stationManifest } from './st-louis-union-station/config.js';
+import { OSM_WAYS as lm_st_louis_union_stationWays } from './st-louis-union-station/footprint.js';
+import { create as lm_st_louis_union_stationCreate } from './st-louis-union-station/geometry.js';
+import { VIEWS as lm_st_louis_union_stationViews } from './st-louis-union-station/views.js';
+import { MANIFEST as lm_st_michaels_church_clujManifest } from './st-michaels-church-cluj/config.js';
+import { OSM_WAYS as lm_st_michaels_church_clujWays } from './st-michaels-church-cluj/footprint.js';
+import { create as lm_st_michaels_church_clujCreate } from './st-michaels-church-cluj/geometry.js';
+import { VIEWS as lm_st_michaels_church_clujViews } from './st-michaels-church-cluj/views.js';
+import { MANIFEST as lm_stade_des_alpesManifest } from './stade-des-alpes/config.js';
+import { OSM_WAYS as lm_stade_des_alpesWays } from './stade-des-alpes/footprint.js';
+import { create as lm_stade_des_alpesCreate } from './stade-des-alpes/geometry.js';
+import { VIEWS as lm_stade_des_alpesViews } from './stade-des-alpes/views.js';
+import { MANIFEST as lm_stade_mayol_toulonManifest } from './stade-mayol-toulon/config.js';
+import { OSM_WAYS as lm_stade_mayol_toulonWays } from './stade-mayol-toulon/footprint.js';
+import { create as lm_stade_mayol_toulonCreate } from './stade-mayol-toulon/geometry.js';
+import { VIEWS as lm_stade_mayol_toulonViews } from './stade-mayol-toulon/views.js';
+import { MANIFEST as lm_stade_pierre_mauroyManifest } from './stade-pierre-mauroy/config.js';
+import { OSM_WAYS as lm_stade_pierre_mauroyWays } from './stade-pierre-mauroy/footprint.js';
+import { create as lm_stade_pierre_mauroyCreate } from './stade-pierre-mauroy/geometry.js';
+import { VIEWS as lm_stade_pierre_mauroyViews } from './stade-pierre-mauroy/views.js';
+import { MANIFEST as lm_stockholm_city_hallManifest } from './stockholm-city-hall/config.js';
+import { OSM_WAYS as lm_stockholm_city_hallWays } from './stockholm-city-hall/footprint.js';
+import { create as lm_stockholm_city_hallCreate } from './stockholm-city-hall/geometry.js';
+import { VIEWS as lm_stockholm_city_hallViews } from './stockholm-city-hall/views.js';
+import { MANIFEST as lm_stone_mountain_carillonManifest } from './stone-mountain-carillon/config.js';
+import { OSM_WAYS as lm_stone_mountain_carillonWays } from './stone-mountain-carillon/footprint.js';
+import { create as lm_stone_mountain_carillonCreate } from './stone-mountain-carillon/geometry.js';
+import { VIEWS as lm_stone_mountain_carillonViews } from './stone-mountain-carillon/views.js';
+import { MANIFEST as lm_strat_tower_las_vegasManifest } from './strat-tower-las-vegas/config.js';
+import { OSM_WAYS as lm_strat_tower_las_vegasWays } from './strat-tower-las-vegas/footprint.js';
+import { create as lm_strat_tower_las_vegasCreate } from './strat-tower-las-vegas/geometry.js';
+import { VIEWS as lm_strat_tower_las_vegasViews } from './strat-tower-las-vegas/views.js';
+import { MANIFEST as lm_stuttgart_hauptbahnhof_towerManifest } from './stuttgart-hauptbahnhof-tower/config.js';
+import { OSM_WAYS as lm_stuttgart_hauptbahnhof_towerWays } from './stuttgart-hauptbahnhof-tower/footprint.js';
+import { create as lm_stuttgart_hauptbahnhof_towerCreate } from './stuttgart-hauptbahnhof-tower/geometry.js';
+import { VIEWS as lm_stuttgart_hauptbahnhof_towerViews } from './stuttgart-hauptbahnhof-tower/views.js';
+import { MANIFEST as lm_surrey_city_hallManifest } from './surrey-city-hall/config.js';
+import { OSM_WAYS as lm_surrey_city_hallWays } from './surrey-city-hall/footprint.js';
+import { create as lm_surrey_city_hallCreate } from './surrey-city-hall/geometry.js';
+import { VIEWS as lm_surrey_city_hallViews } from './surrey-city-hall/views.js';
+import { MANIFEST as lm_tagblatt_turm_stuttgartManifest } from './tagblatt-turm-stuttgart/config.js';
+import { OSM_WAYS as lm_tagblatt_turm_stuttgartWays } from './tagblatt-turm-stuttgart/footprint.js';
+import { create as lm_tagblatt_turm_stuttgartCreate } from './tagblatt-turm-stuttgart/geometry.js';
+import { VIEWS as lm_tagblatt_turm_stuttgartViews } from './tagblatt-turm-stuttgart/views.js';
+import { MANIFEST as lm_tate_modernManifest } from './tate-modern/config.js';
+import { OSM_WAYS as lm_tate_modernWays } from './tate-modern/footprint.js';
+import { create as lm_tate_modernCreate } from './tate-modern/geometry.js';
+import { VIEWS as lm_tate_modernViews } from './tate-modern/views.js';
+import { MANIFEST as lm_tbilisi_tv_towerManifest } from './tbilisi-tv-tower/config.js';
+import { OSM_WAYS as lm_tbilisi_tv_towerWays } from './tbilisi-tv-tower/footprint.js';
+import { create as lm_tbilisi_tv_towerCreate } from './tbilisi-tv-tower/geometry.js';
+import { VIEWS as lm_tbilisi_tv_towerViews } from './tbilisi-tv-tower/views.js';
+import { MANIFEST as lm_temple_saint_martin_montbeliardManifest } from './temple-saint-martin-montbeliard/config.js';
+import { OSM_WAYS as lm_temple_saint_martin_montbeliardWays } from './temple-saint-martin-montbeliard/footprint.js';
+import { create as lm_temple_saint_martin_montbeliardCreate } from './temple-saint-martin-montbeliard/geometry.js';
+import { VIEWS as lm_temple_saint_martin_montbeliardViews } from './temple-saint-martin-montbeliard/views.js';
+import { MANIFEST as lm_texas_star_ferris_wheelManifest } from './texas-star-ferris-wheel/config.js';
+import { OSM_WAYS as lm_texas_star_ferris_wheelWays } from './texas-star-ferris-wheel/footprint.js';
+import { create as lm_texas_star_ferris_wheelCreate } from './texas-star-ferris-wheel/geometry.js';
+import { VIEWS as lm_texas_star_ferris_wheelViews } from './texas-star-ferris-wheel/views.js';
+import { MANIFEST as lm_the_o2_londonManifest } from './the-o2-london/config.js';
+import { OSM_WAYS as lm_the_o2_londonWays } from './the-o2-london/footprint.js';
+import { create as lm_the_o2_londonCreate } from './the-o2-london/geometry.js';
+import { VIEWS as lm_the_o2_londonViews } from './the-o2-london/views.js';
+import { MANIFEST as lm_the_rock_amsterdamManifest } from './the-rock-amsterdam/config.js';
+import { OSM_WAYS as lm_the_rock_amsterdamWays } from './the-rock-amsterdam/footprint.js';
+import { create as lm_the_rock_amsterdamCreate } from './the-rock-amsterdam/geometry.js';
+import { VIEWS as lm_the_rock_amsterdamViews } from './the-rock-amsterdam/views.js';
+import { MANIFEST as lm_toronto_ontario_temple_bramptonManifest } from './toronto-ontario-temple-brampton/config.js';
+import { OSM_WAYS as lm_toronto_ontario_temple_bramptonWays } from './toronto-ontario-temple-brampton/footprint.js';
+import { create as lm_toronto_ontario_temple_bramptonCreate } from './toronto-ontario-temple-brampton/geometry.js';
+import { VIEWS as lm_toronto_ontario_temple_bramptonViews } from './toronto-ontario-temple-brampton/views.js';
+import { MANIFEST as lm_torre_caliManifest } from './torre-cali/config.js';
+import { OSM_WAYS as lm_torre_caliWays } from './torre-cali/footprint.js';
+import { create as lm_torre_caliCreate } from './torre-cali/geometry.js';
+import { VIEWS as lm_torre_caliViews } from './torre-cali/views.js';
+import { MANIFEST as lm_torre_reloj_cartagenaManifest } from './torre-reloj-cartagena/config.js';
+import { OSM_WAYS as lm_torre_reloj_cartagenaWays } from './torre-reloj-cartagena/footprint.js';
+import { create as lm_torre_reloj_cartagenaCreate } from './torre-reloj-cartagena/geometry.js';
+import { VIEWS as lm_torre_reloj_cartagenaViews } from './torre-reloj-cartagena/views.js';
+import { MANIFEST as lm_torres_paseo_colonManifest } from './torres-paseo-colon/config.js';
+import { OSM_WAYS as lm_torres_paseo_colonWays } from './torres-paseo-colon/footprint.js';
+import { create as lm_torres_paseo_colonCreate } from './torres-paseo-colon/geometry.js';
+import { VIEWS as lm_torres_paseo_colonViews } from './torres-paseo-colon/views.js';
+import { MANIFEST as lm_torrespanaManifest } from './torrespana/config.js';
+import { OSM_WAYS as lm_torrespanaWays } from './torrespana/footprint.js';
+import { create as lm_torrespanaCreate } from './torrespana/geometry.js';
+import { VIEWS as lm_torrespanaViews } from './torrespana/views.js';
+import { MANIFEST as lm_tour_altoManifest } from './tour-alto/config.js';
+import { OSM_WAYS as lm_tour_altoWays } from './tour-alto/footprint.js';
+import { create as lm_tour_altoCreate } from './tour-alto/geometry.js';
+import { VIEWS as lm_tour_altoViews } from './tour-alto/views.js';
+import { MANIFEST as lm_tour_bretagne_nantesManifest } from './tour-bretagne-nantes/config.js';
+import { OSM_WAYS as lm_tour_bretagne_nantesWays } from './tour-bretagne-nantes/footprint.js';
+import { create as lm_tour_bretagne_nantesCreate } from './tour-bretagne-nantes/geometry.js';
+import { VIEWS as lm_tour_bretagne_nantesViews } from './tour-bretagne-nantes/views.js';
+import { MANIFEST as lm_tour_carpe_diemManifest } from './tour-carpe-diem/config.js';
+import { OSM_WAYS as lm_tour_carpe_diemWays } from './tour-carpe-diem/footprint.js';
+import { create as lm_tour_carpe_diemCreate } from './tour-carpe-diem/geometry.js';
+import { VIEWS as lm_tour_carpe_diemViews } from './tour-carpe-diem/views.js';
+import { MANIFEST as lm_tour_cma_cgmManifest } from './tour-cma-cgm/config.js';
+import { OSM_WAYS as lm_tour_cma_cgmWays } from './tour-cma-cgm/footprint.js';
+import { create as lm_tour_cma_cgmCreate } from './tour-cma-cgm/geometry.js';
+import { VIEWS as lm_tour_cma_cgmViews } from './tour-cma-cgm/views.js';
+import { MANIFEST as lm_tour_d2Manifest } from './tour-d2/config.js';
+import { OSM_WAYS as lm_tour_d2Ways } from './tour-d2/footprint.js';
+import { create as lm_tour_d2Create } from './tour-d2/geometry.js';
+import { VIEWS as lm_tour_d2Views } from './tour-d2/views.js';
+import { MANIFEST as lm_tour_de_la_miotteManifest } from './tour-de-la-miotte/config.js';
+import { OSM_WAYS as lm_tour_de_la_miotteWays } from './tour-de-la-miotte/footprint.js';
+import { create as lm_tour_de_la_miotteCreate } from './tour-de-la-miotte/geometry.js';
+import { VIEWS as lm_tour_de_la_miotteViews } from './tour-de-la-miotte/views.js';
+import { MANIFEST as lm_tour_de_leurope_mulhouseManifest } from './tour-de-leurope-mulhouse/config.js';
+import { OSM_WAYS as lm_tour_de_leurope_mulhouseWays } from './tour-de-leurope-mulhouse/footprint.js';
+import { create as lm_tour_de_leurope_mulhouseCreate } from './tour-de-leurope-mulhouse/geometry.js';
+import { VIEWS as lm_tour_de_leurope_mulhouseViews } from './tour-de-leurope-mulhouse/views.js';
+import { MANIFEST as lm_tour_de_lilleManifest } from './tour-de-lille/config.js';
+import { OSM_WAYS as lm_tour_de_lilleWays } from './tour-de-lille/footprint.js';
+import { create as lm_tour_de_lilleCreate } from './tour-de-lille/geometry.js';
+import { VIEWS as lm_tour_de_lilleViews } from './tour-de-lille/views.js';
+import { MANIFEST as lm_tour_des_archives_rouenManifest } from './tour-des-archives-rouen/config.js';
+import { OSM_WAYS as lm_tour_des_archives_rouenWays } from './tour-des-archives-rouen/footprint.js';
+import { create as lm_tour_des_archives_rouenCreate } from './tour-des-archives-rouen/geometry.js';
+import { VIEWS as lm_tour_des_archives_rouenViews } from './tour-des-archives-rouen/views.js';
+import { MANIFEST as lm_tour_du_midiManifest } from './tour-du-midi/config.js';
+import { OSM_WAYS as lm_tour_du_midiWays } from './tour-du-midi/footprint.js';
+import { create as lm_tour_du_midiCreate } from './tour-du-midi/geometry.js';
+import { VIEWS as lm_tour_du_midiViews } from './tour-du-midi/views.js';
+import { MANIFEST as lm_tour_elithis_dijonManifest } from './tour-elithis-dijon/config.js';
+import { OSM_WAYS as lm_tour_elithis_dijonWays } from './tour-elithis-dijon/footprint.js';
+import { create as lm_tour_elithis_dijonCreate } from './tour-elithis-dijon/geometry.js';
+import { VIEWS as lm_tour_elithis_dijonViews } from './tour-elithis-dijon/views.js';
+import { MANIFEST as lm_tour_firstManifest } from './tour-first/config.js';
+import { OSM_WAYS as lm_tour_firstWays } from './tour-first/footprint.js';
+import { create as lm_tour_firstCreate } from './tour-first/geometry.js';
+import { VIEWS as lm_tour_firstViews } from './tour-first/views.js';
+import { MANIFEST as lm_tour_la_marseillaiseManifest } from './tour-la-marseillaise/config.js';
+import { OSM_WAYS as lm_tour_la_marseillaiseWays } from './tour-la-marseillaise/footprint.js';
+import { create as lm_tour_la_marseillaiseCreate } from './tour-la-marseillaise/geometry.js';
+import { VIEWS as lm_tour_la_marseillaiseViews } from './tour-la-marseillaise/views.js';
+import { MANIFEST as lm_tour_lanterne_rochelleManifest } from './tour-lanterne-rochelle/config.js';
+import { OSM_WAYS as lm_tour_lanterne_rochelleWays } from './tour-lanterne-rochelle/footprint.js';
+import { create as lm_tour_lanterne_rochelleCreate } from './tour-lanterne-rochelle/geometry.js';
+import { VIEWS as lm_tour_lanterne_rochelleViews } from './tour-lanterne-rochelle/views.js';
+import { MANIFEST as lm_tour_lu_nantesManifest } from './tour-lu-nantes/config.js';
+import { OSM_WAYS as lm_tour_lu_nantesWays } from './tour-lu-nantes/footprint.js';
+import { create as lm_tour_lu_nantesCreate } from './tour-lu-nantes/geometry.js';
+import { VIEWS as lm_tour_lu_nantesViews } from './tour-lu-nantes/views.js';
+import { MANIFEST as lm_tour_metallique_fourviereManifest } from './tour-metallique-fourviere/config.js';
+import { OSM_WAYS as lm_tour_metallique_fourviereWays } from './tour-metallique-fourviere/footprint.js';
+import { create as lm_tour_metallique_fourviereCreate } from './tour-metallique-fourviere/geometry.js';
+import { VIEWS as lm_tour_metallique_fourviereViews } from './tour-metallique-fourviere/views.js';
+import { MANIFEST as lm_tour_oxygeneManifest } from './tour-oxygene/config.js';
+import { OSM_WAYS as lm_tour_oxygeneWays } from './tour-oxygene/footprint.js';
+import { create as lm_tour_oxygeneCreate } from './tour-oxygene/geometry.js';
+import { VIEWS as lm_tour_oxygeneViews } from './tour-oxygene/views.js';
+import { MANIFEST as lm_tour_paradis_liegeManifest } from './tour-paradis-liege/config.js';
+import { OSM_WAYS as lm_tour_paradis_liegeWays } from './tour-paradis-liege/footprint.js';
+import { create as lm_tour_paradis_liegeCreate } from './tour-paradis-liege/geometry.js';
+import { VIEWS as lm_tour_paradis_liegeViews } from './tour-paradis-liege/views.js';
+import { MANIFEST as lm_tour_perret_grenobleManifest } from './tour-perret-grenoble/config.js';
+import { OSM_WAYS as lm_tour_perret_grenobleWays } from './tour-perret-grenoble/footprint.js';
+import { create as lm_tour_perret_grenobleCreate } from './tour-perret-grenoble/geometry.js';
+import { VIEWS as lm_tour_perret_grenobleViews } from './tour-perret-grenoble/views.js';
+import { MANIFEST as lm_tour_pey_berlandManifest } from './tour-pey-berland/config.js';
+import { OSM_WAYS as lm_tour_pey_berlandWays } from './tour-pey-berland/footprint.js';
+import { create as lm_tour_pey_berlandCreate } from './tour-pey-berland/geometry.js';
+import { VIEWS as lm_tour_pey_berlandViews } from './tour-pey-berland/views.js';
+import { MANIFEST as lm_tour_royale_toulonManifest } from './tour-royale-toulon/config.js';
+import { OSM_WAYS as lm_tour_royale_toulonWays } from './tour-royale-toulon/footprint.js';
+import { create as lm_tour_royale_toulonCreate } from './tour-royale-toulon/geometry.js';
+import { VIEWS as lm_tour_royale_toulonViews } from './tour-royale-toulon/views.js';
+import { MANIFEST as lm_tour_saint_aubin_angersManifest } from './tour-saint-aubin-angers/config.js';
+import { OSM_WAYS as lm_tour_saint_aubin_angersWays } from './tour-saint-aubin-angers/footprint.js';
+import { create as lm_tour_saint_aubin_angersCreate } from './tour-saint-aubin-angers/geometry.js';
+import { VIEWS as lm_tour_saint_aubin_angersViews } from './tour-saint-aubin-angers/views.js';
+import { MANIFEST as lm_tour_saint_gobainManifest } from './tour-saint-gobain/config.js';
+import { OSM_WAYS as lm_tour_saint_gobainWays } from './tour-saint-gobain/footprint.js';
+import { create as lm_tour_saint_gobainCreate } from './tour-saint-gobain/geometry.js';
+import { VIEWS as lm_tour_saint_gobainViews } from './tour-saint-gobain/views.js';
+import { MANIFEST as lm_tour_saint_nicolas_rochelleManifest } from './tour-saint-nicolas-rochelle/config.js';
+import { OSM_WAYS as lm_tour_saint_nicolas_rochelleWays } from './tour-saint-nicolas-rochelle/footprint.js';
+import { create as lm_tour_saint_nicolas_rochelleCreate } from './tour-saint-nicolas-rochelle/geometry.js';
+import { VIEWS as lm_tour_saint_nicolas_rochelleViews } from './tour-saint-nicolas-rochelle/views.js';
+import { MANIFEST as lm_tour_t1Manifest } from './tour-t1/config.js';
+import { OSM_WAYS as lm_tour_t1Ways } from './tour-t1/footprint.js';
+import { create as lm_tour_t1Create } from './tour-t1/geometry.js';
+import { VIEWS as lm_tour_t1Views } from './tour-t1/views.js';
+import { MANIFEST as lm_tour_total_coupoleManifest } from './tour-total-coupole/config.js';
+import { OSM_WAYS as lm_tour_total_coupoleWays } from './tour-total-coupole/footprint.js';
+import { create as lm_tour_total_coupoleCreate } from './tour-total-coupole/geometry.js';
+import { VIEWS as lm_tour_total_coupoleViews } from './tour-total-coupole/views.js';
+import { MANIFEST as lm_tour_trinityManifest } from './tour-trinity/config.js';
+import { OSM_WAYS as lm_tour_trinityWays } from './tour-trinity/footprint.js';
+import { create as lm_tour_trinityCreate } from './tour-trinity/geometry.js';
+import { VIEWS as lm_tour_trinityViews } from './tour-trinity/views.js';
+import { MANIFEST as lm_tovrea_castleManifest } from './tovrea-castle/config.js';
+import { OSM_WAYS as lm_tovrea_castleWays } from './tovrea-castle/footprint.js';
+import { create as lm_tovrea_castleCreate } from './tovrea-castle/geometry.js';
+import { VIEWS as lm_tovrea_castleViews } from './tovrea-castle/views.js';
+import { MANIFEST as lm_trethewey_houseManifest } from './trethewey-house/config.js';
+import { OSM_WAYS as lm_trethewey_houseWays } from './trethewey-house/footprint.js';
+import { create as lm_trethewey_houseCreate } from './trethewey-house/geometry.js';
+import { VIEWS as lm_trethewey_houseViews } from './trethewey-house/views.js';
+import { MANIFEST as lm_tribunal_de_parisManifest } from './tribunal-de-paris/config.js';
+import { OSM_WAYS as lm_tribunal_de_parisWays } from './tribunal-de-paris/footprint.js';
+import { create as lm_tribunal_de_parisCreate } from './tribunal-de-paris/geometry.js';
+import { VIEWS as lm_tribunal_de_parisViews } from './tribunal-de-paris/views.js';
+import { MANIFEST as lm_tustin_south_hangarManifest } from './tustin-south-hangar/config.js';
+import { OSM_WAYS as lm_tustin_south_hangarWays } from './tustin-south-hangar/footprint.js';
+import { create as lm_tustin_south_hangarCreate } from './tustin-south-hangar/geometry.js';
+import { VIEWS as lm_tustin_south_hangarViews } from './tustin-south-hangar/views.js';
+import { MANIFEST as lm_ucr_bell_towerManifest } from './ucr-bell-tower/config.js';
+import { OSM_WAYS as lm_ucr_bell_towerWays } from './ucr-bell-tower/footprint.js';
+import { create as lm_ucr_bell_towerCreate } from './ucr-bell-tower/geometry.js';
+import { VIEWS as lm_ucr_bell_towerViews } from './ucr-bell-tower/views.js';
+import { MANIFEST as lm_uga_archManifest } from './uga-arch/config.js';
+import { OSM_WAYS as lm_uga_archWays } from './uga-arch/footprint.js';
+import { create as lm_uga_archCreate } from './uga-arch/geometry.js';
+import { VIEWS as lm_uga_archViews } from './uga-arch/views.js';
+import { MANIFEST as lm_vinoly_tower_amsterdamManifest } from './vinoly-tower-amsterdam/config.js';
+import { OSM_WAYS as lm_vinoly_tower_amsterdamWays } from './vinoly-tower-amsterdam/footprint.js';
+import { create as lm_vinoly_tower_amsterdamCreate } from './vinoly-tower-amsterdam/geometry.js';
+import { VIEWS as lm_vinoly_tower_amsterdamViews } from './vinoly-tower-amsterdam/views.js';
+import { MANIFEST as lm_walter_reed_tower_bethesdaManifest } from './walter-reed-tower-bethesda/config.js';
+import { OSM_WAYS as lm_walter_reed_tower_bethesdaWays } from './walter-reed-tower-bethesda/footprint.js';
+import { create as lm_walter_reed_tower_bethesdaCreate } from './walter-reed-tower-bethesda/geometry.js';
+import { VIEWS as lm_walter_reed_tower_bethesdaViews } from './walter-reed-tower-bethesda/views.js';
+import { MANIFEST as lm_walton_historic_courthouseManifest } from './walton-historic-courthouse/config.js';
+import { OSM_WAYS as lm_walton_historic_courthouseWays } from './walton-historic-courthouse/footprint.js';
+import { create as lm_walton_historic_courthouseCreate } from './walton-historic-courthouse/geometry.js';
+import { VIEWS as lm_walton_historic_courthouseViews } from './walton-historic-courthouse/views.js';
+import { MANIFEST as lm_will_rogers_memorial_centerManifest } from './will-rogers-memorial-center/config.js';
+import { OSM_WAYS as lm_will_rogers_memorial_centerWays } from './will-rogers-memorial-center/footprint.js';
+import { create as lm_will_rogers_memorial_centerCreate } from './will-rogers-memorial-center/geometry.js';
+import { VIEWS as lm_will_rogers_memorial_centerViews } from './will-rogers-memorial-center/views.js';
+import { MANIFEST as lm_winspear_opera_houseManifest } from './winspear-opera-house/config.js';
+import { OSM_WAYS as lm_winspear_opera_houseWays } from './winspear-opera-house/footprint.js';
+import { create as lm_winspear_opera_houseCreate } from './winspear-opera-house/geometry.js';
+import { VIEWS as lm_winspear_opera_houseViews } from './winspear-opera-house/views.js';
+import { MANIFEST as lm_ziggo_domeManifest } from './ziggo-dome/config.js';
+import { OSM_WAYS as lm_ziggo_domeWays } from './ziggo-dome/footprint.js';
+import { create as lm_ziggo_domeCreate } from './ziggo-dome/geometry.js';
+import { VIEWS as lm_ziggo_domeViews } from './ziggo-dome/views.js';
+import { MANIFEST as lm_ziggurat_west_sacramentoManifest } from './ziggurat-west-sacramento/config.js';
+import { OSM_WAYS as lm_ziggurat_west_sacramentoWays } from './ziggurat-west-sacramento/footprint.js';
+import { create as lm_ziggurat_west_sacramentoCreate } from './ziggurat-west-sacramento/geometry.js';
+import { VIEWS as lm_ziggurat_west_sacramentoViews } from './ziggurat-west-sacramento/views.js';
 
 const authoring = {
   'tower-bridge': { manifest: lm_tower_bridgeManifest, osmWays: lm_tower_bridgeWays, create: lm_tower_bridgeCreate, views: lm_tower_bridgeViews },
@@ -1588,6 +2564,250 @@ const authoring = {
   'goose-creek-municipal-center': { manifest: lm_goose_creek_municipal_centerManifest, osmWays: lm_goose_creek_municipal_centerWays, create: lm_goose_creek_municipal_centerCreate, views: lm_goose_creek_municipal_centerViews },
   'colonial-dorchester-bell-tower': { manifest: lm_colonial_dorchester_bell_towerManifest, osmWays: lm_colonial_dorchester_bell_towerWays, create: lm_colonial_dorchester_bell_towerCreate, views: lm_colonial_dorchester_bell_towerViews },
   'north-charleston-city-hall': { manifest: lm_north_charleston_city_hallManifest, osmWays: lm_north_charleston_city_hallWays, create: lm_north_charleston_city_hallCreate, views: lm_north_charleston_city_hallViews },
+  '122-leadenhall-street': { manifest: lm_122_leadenhall_streetManifest, osmWays: lm_122_leadenhall_streetWays, create: lm_122_leadenhall_streetCreate, views: lm_122_leadenhall_streetViews },
+  '20-fenchurch-street': { manifest: lm_20_fenchurch_streetManifest, osmWays: lm_20_fenchurch_streetWays, create: lm_20_fenchurch_streetCreate, views: lm_20_fenchurch_streetViews },
+  '3arena-dublin': { manifest: lm_3arena_dublinManifest, osmWays: lm_3arena_dublinWays, create: lm_3arena_dublinCreate, views: lm_3arena_dublinViews },
+  '8-canada-square': { manifest: lm_8_canada_squareManifest, osmWays: lm_8_canada_squareWays, create: lm_8_canada_squareCreate, views: lm_8_canada_squareViews },
+  'absolute-world-mississauga': { manifest: lm_absolute_world_mississaugaManifest, osmWays: lm_absolute_world_mississaugaWays, create: lm_absolute_world_mississaugaCreate, views: lm_absolute_world_mississaugaViews },
+  'accor-arena-bercy': { manifest: lm_accor_arena_bercyManifest, osmWays: lm_accor_arena_bercyWays, create: lm_accor_arena_bercyCreate, views: lm_accor_arena_bercyViews },
+  'afi-silver-theatre': { manifest: lm_afi_silver_theatreManifest, osmWays: lm_afi_silver_theatreWays, create: lm_afi_silver_theatreCreate, views: lm_afi_silver_theatreViews },
+  'american-airlines-center': { manifest: lm_american_airlines_centerManifest, osmWays: lm_american_airlines_centerWays, create: lm_american_airlines_centerCreate, views: lm_american_airlines_centerViews },
+  'anaheim-artic': { manifest: lm_anaheim_articManifest, osmWays: lm_anaheim_articWays, create: lm_anaheim_articCreate, views: lm_anaheim_articViews },
+  'anaheim-packing-house': { manifest: lm_anaheim_packing_houseManifest, osmWays: lm_anaheim_packing_houseWays, create: lm_anaheim_packing_houseCreate, views: lm_anaheim_packing_houseViews },
+  'angel-stadium': { manifest: lm_angel_stadiumManifest, osmWays: lm_angel_stadiumWays, create: lm_angel_stadiumCreate, views: lm_angel_stadiumViews },
+  'arenes-de-nimes': { manifest: lm_arenes_de_nimesManifest, osmWays: lm_arenes_de_nimesWays, create: lm_arenes_de_nimesCreate, views: lm_arenes_de_nimesViews },
+  'astrodome': { manifest: lm_astrodomeManifest, osmWays: lm_astrodomeWays, create: lm_astrodomeCreate, views: lm_astrodomeViews },
+  'athens-city-hall': { manifest: lm_athens_city_hallManifest, osmWays: lm_athens_city_hallWays, create: lm_athens_city_hallCreate, views: lm_athens_city_hallViews },
+  'athens-tower': { manifest: lm_athens_towerManifest, osmWays: lm_athens_towerWays, create: lm_athens_towerCreate, views: lm_athens_towerViews },
+  'avicii-arena': { manifest: lm_avicii_arenaManifest, osmWays: lm_avicii_arenaWays, create: lm_avicii_arenaCreate, views: lm_avicii_arenaViews },
+  'aviva-stadium': { manifest: lm_aviva_stadiumManifest, osmWays: lm_aviva_stadiumWays, create: lm_aviva_stadiumCreate, views: lm_aviva_stadiumViews },
+  'azrieli-center': { manifest: lm_azrieli_centerManifest, osmWays: lm_azrieli_centerWays, create: lm_azrieli_centerCreate, views: lm_azrieli_centerViews },
+  'bahai-house-worship-wilmette': { manifest: lm_bahai_house_worship_wilmetteManifest, osmWays: lm_bahai_house_worship_wilmetteWays, create: lm_bahai_house_worship_wilmetteCreate, views: lm_bahai_house_worship_wilmetteViews },
+  'baltimore-city-hall': { manifest: lm_baltimore_city_hallManifest, osmWays: lm_baltimore_city_hallWays, create: lm_baltimore_city_hallCreate, views: lm_baltimore_city_hallViews },
+  'baltimore-world-trade-center': { manifest: lm_baltimore_world_trade_centerManifest, osmWays: lm_baltimore_world_trade_centerWays, create: lm_baltimore_world_trade_centerCreate, views: lm_baltimore_world_trade_centerViews },
+  'bancolombia-medellin': { manifest: lm_bancolombia_medellinManifest, osmWays: lm_bancolombia_medellinWays, create: lm_bancolombia_medellinCreate, views: lm_bancolombia_medellinViews },
+  'bank-of-georgia-hq': { manifest: lm_bank_of_georgia_hqManifest, osmWays: lm_bank_of_georgia_hqWays, create: lm_bank_of_georgia_hqCreate, views: lm_bank_of_georgia_hqViews },
+  'basilica-saint-nicholas-amsterdam': { manifest: lm_basilica_saint_nicholas_amsterdamManifest, osmWays: lm_basilica_saint_nicholas_amsterdamWays, create: lm_basilica_saint_nicholas_amsterdamCreate, views: lm_basilica_saint_nicholas_amsterdamViews },
+  'basilique-saint-frederic-drummondville': { manifest: lm_basilique_saint_frederic_drummondvilleManifest, osmWays: lm_basilique_saint_frederic_drummondvilleWays, create: lm_basilique_saint_frederic_drummondvilleCreate, views: lm_basilique_saint_frederic_drummondvilleViews },
+  'basilique-visitation-annecy': { manifest: lm_basilique_visitation_annecyManifest, osmWays: lm_basilique_visitation_annecyWays, create: lm_basilique_visitation_annecyCreate, views: lm_basilique_visitation_annecyViews },
+  'bass-performance-hall': { manifest: lm_bass_performance_hallManifest, osmWays: lm_bass_performance_hallWays, create: lm_bass_performance_hallCreate, views: lm_bass_performance_hallViews },
+  'bd-bacata': { manifest: lm_bd_bacataManifest, osmWays: lm_bd_bacataWays, create: lm_bd_bacataCreate, views: lm_bd_bacataViews },
+  'beetham-tower-manchester': { manifest: lm_beetham_tower_manchesterManifest, osmWays: lm_beetham_tower_manchesterWays, create: lm_beetham_tower_manchesterCreate, views: lm_beetham_tower_manchesterViews },
+  'beffroi-hotel-de-ville-lille': { manifest: lm_beffroi_hotel_de_ville_lilleManifest, osmWays: lm_beffroi_hotel_de_ville_lilleWays, create: lm_beffroi_hotel_de_ville_lilleCreate, views: lm_beffroi_hotel_de_ville_lilleViews },
+  'bella-sky-copenhagen': { manifest: lm_bella_sky_copenhagenManifest, osmWays: lm_bella_sky_copenhagenWays, create: lm_bella_sky_copenhagenCreate, views: lm_bella_sky_copenhagenViews },
+  'berlin-fernsehturm': { manifest: lm_berlin_fernsehturmManifest, osmWays: lm_berlin_fernsehturmWays, create: lm_berlin_fernsehturmCreate, views: lm_berlin_fernsehturmViews },
+  'bibliotheque-nationale-francois-mitterrand': { manifest: lm_bibliotheque_nationale_francois_mitterrandManifest, osmWays: lm_bibliotheque_nationale_francois_mitterrandWays, create: lm_bibliotheque_nationale_francois_mitterrandCreate, views: lm_bibliotheque_nationale_francois_mitterrandViews },
+  'bibliotheque-schoelcher': { manifest: lm_bibliotheque_schoelcherManifest, osmWays: lm_bibliotheque_schoelcherWays, create: lm_bibliotheque_schoelcherCreate, views: lm_bibliotheque_schoelcherViews },
+  'big-chicken-marietta': { manifest: lm_big_chicken_mariettaManifest, osmWays: lm_big_chicken_mariettaWays, create: lm_big_chicken_mariettaCreate, views: lm_big_chicken_mariettaViews },
+  'biltmore-tbilisi': { manifest: lm_biltmore_tbilisiManifest, osmWays: lm_biltmore_tbilisiWays, create: lm_biltmore_tbilisiCreate, views: lm_biltmore_tbilisiViews },
+  'bmw-headquarters': { manifest: lm_bmw_headquartersManifest, osmWays: lm_bmw_headquartersWays, create: lm_bmw_headquartersCreate, views: lm_bmw_headquartersViews },
+  'braselton-brothers-store': { manifest: lm_braselton_brothers_storeManifest, osmWays: lm_braselton_brothers_storeWays, create: lm_braselton_brothers_storeCreate, views: lm_braselton_brothers_storeViews },
+  'bt-tower-london': { manifest: lm_bt_tower_londonManifest, osmWays: lm_bt_tower_londonWays, create: lm_bt_tower_londonCreate, views: lm_bt_tower_londonViews },
+  'california-state-capitol': { manifest: lm_california_state_capitolManifest, osmWays: lm_california_state_capitolWays, create: lm_california_state_capitolCreate, views: lm_california_state_capitolViews },
+  'california-theatre-san-bernardino': { manifest: lm_california_theatre_san_bernardinoManifest, osmWays: lm_california_theatre_san_bernardinoWays, create: lm_california_theatre_san_bernardinoCreate, views: lm_california_theatre_san_bernardinoViews },
+  'castel-sant-angelo': { manifest: lm_castel_sant_angeloManifest, osmWays: lm_castel_sant_angeloWays, create: lm_castel_sant_angeloCreate, views: lm_castel_sant_angeloViews },
+  'cathedral-basilica-st-louis': { manifest: lm_cathedral_basilica_st_louisManifest, osmWays: lm_cathedral_basilica_st_louisWays, create: lm_cathedral_basilica_st_louisCreate, views: lm_cathedral_basilica_st_louisViews },
+  'cathedral-blessed-sacrament-sacramento': { manifest: lm_cathedral_blessed_sacrament_sacramentoManifest, osmWays: lm_cathedral_blessed_sacrament_sacramentoWays, create: lm_cathedral_blessed_sacrament_sacramentoCreate, views: lm_cathedral_blessed_sacrament_sacramentoViews },
+  'cathedral-transfiguration-markham': { manifest: lm_cathedral_transfiguration_markhamManifest, osmWays: lm_cathedral_transfiguration_markhamWays, create: lm_cathedral_transfiguration_markhamCreate, views: lm_cathedral_transfiguration_markhamViews },
+  'cathedrale-clermont-ferrand': { manifest: lm_cathedrale_clermont_ferrandManifest, osmWays: lm_cathedrale_clermont_ferrandWays, create: lm_cathedrale_clermont_ferrandCreate, views: lm_cathedrale_clermont_ferrandViews },
+  'cathedrale-notre-dame-reims': { manifest: lm_cathedrale_notre_dame_reimsManifest, osmWays: lm_cathedrale_notre_dame_reimsWays, create: lm_cathedrale_notre_dame_reimsCreate, views: lm_cathedrale_notre_dame_reimsViews },
+  'cathedrale-notre-dame-strasbourg': { manifest: lm_cathedrale_notre_dame_strasbourgManifest, osmWays: lm_cathedrale_notre_dame_strasbourgWays, create: lm_cathedrale_notre_dame_strasbourgCreate, views: lm_cathedrale_notre_dame_strasbourgViews },
+  'cathedrale-saint-antoine-longueuil': { manifest: lm_cathedrale_saint_antoine_longueuilManifest, osmWays: lm_cathedrale_saint_antoine_longueuilWays, create: lm_cathedrale_saint_antoine_longueuilCreate, views: lm_cathedrale_saint_antoine_longueuilViews },
+  'cathedrale-saint-denis-reunion': { manifest: lm_cathedrale_saint_denis_reunionManifest, osmWays: lm_cathedrale_saint_denis_reunionWays, create: lm_cathedrale_saint_denis_reunionCreate, views: lm_cathedrale_saint_denis_reunionViews },
+  'cathedrale-saint-louis-fort-de-france': { manifest: lm_cathedrale_saint_louis_fort_de_franceManifest, osmWays: lm_cathedrale_saint_louis_fort_de_franceWays, create: lm_cathedrale_saint_louis_fort_de_franceCreate, views: lm_cathedrale_saint_louis_fort_de_franceViews },
+  'chateau-elan-winery': { manifest: lm_chateau_elan_wineryManifest, osmWays: lm_chateau_elan_wineryWays, create: lm_chateau_elan_wineryCreate, views: lm_chateau_elan_wineryViews },
+  'christiansborg-palace': { manifest: lm_christiansborg_palaceManifest, osmWays: lm_christiansborg_palaceWays, create: lm_christiansborg_palaceCreate, views: lm_christiansborg_palaceViews },
+  'church-of-our-saviour-copenhagen': { manifest: lm_church_of_our_saviour_copenhagenManifest, osmWays: lm_church_of_our_saviour_copenhagenWays, create: lm_church_of_our_saviour_copenhagenCreate, views: lm_church_of_our_saviour_copenhagenViews },
+  'cite-du-vin-bordeaux': { manifest: lm_cite_du_vin_bordeauxManifest, osmWays: lm_cite_du_vin_bordeauxWays, create: lm_cite_du_vin_bordeauxCreate, views: lm_cite_du_vin_bordeauxViews },
+  'civil-courts-building-st-louis': { manifest: lm_civil_courts_building_st_louisManifest, osmWays: lm_civil_courts_building_st_louisWays, create: lm_civil_courts_building_st_louisCreate, views: lm_civil_courts_building_st_louisViews },
+  'coimbra-university-tower': { manifest: lm_coimbra_university_towerManifest, osmWays: lm_coimbra_university_towerWays, create: lm_coimbra_university_towerCreate, views: lm_coimbra_university_towerViews },
+  'collegiale-saint-andre-grenoble': { manifest: lm_collegiale_saint_andre_grenobleManifest, osmWays: lm_collegiale_saint_andre_grenobleWays, create: lm_collegiale_saint_andre_grenobleCreate, views: lm_collegiale_saint_andre_grenobleViews },
+  'collegiate-saint-gertrude-nivelles': { manifest: lm_collegiate_saint_gertrude_nivellesManifest, osmWays: lm_collegiate_saint_gertrude_nivellesWays, create: lm_collegiate_saint_gertrude_nivellesCreate, views: lm_collegiate_saint_gertrude_nivellesViews },
+  'comerica-bank-tower': { manifest: lm_comerica_bank_towerManifest, osmWays: lm_comerica_bank_towerWays, create: lm_comerica_bank_towerCreate, views: lm_comerica_bank_towerViews },
+  'constanta-casino': { manifest: lm_constanta_casinoManifest, osmWays: lm_constanta_casinoWays, create: lm_constanta_casinoCreate, views: lm_constanta_casinoViews },
+  'coolray-field': { manifest: lm_coolray_fieldManifest, osmWays: lm_coolray_fieldWays, create: lm_coolray_fieldCreate, views: lm_coolray_fieldViews },
+  'coquitlam-city-hall': { manifest: lm_coquitlam_city_hallManifest, osmWays: lm_coquitlam_city_hallWays, create: lm_coquitlam_city_hallCreate, views: lm_coquitlam_city_hallViews },
+  'cosmodome-laval': { manifest: lm_cosmodome_lavalManifest, osmWays: lm_cosmodome_lavalWays, create: lm_cosmodome_lavalCreate, views: lm_cosmodome_lavalViews },
+  'cristo-rei-almada': { manifest: lm_cristo_rei_almadaManifest, osmWays: lm_cristo_rei_almadaWays, create: lm_cristo_rei_almadaCreate, views: lm_cristo_rei_almadaViews },
+  'dallas-hall-smu': { manifest: lm_dallas_hall_smuManifest, osmWays: lm_dallas_hall_smuWays, create: lm_dallas_hall_smuCreate, views: lm_dallas_hall_smuViews },
+  'de-gooyer': { manifest: lm_de_gooyerManifest, osmWays: lm_de_gooyerWays, create: lm_de_gooyerCreate, views: lm_de_gooyerViews },
+  'denver-union-station': { manifest: lm_denver_union_stationManifest, osmWays: lm_denver_union_stationWays, create: lm_denver_union_stationCreate, views: lm_denver_union_stationViews },
+  'donjon-de-niort': { manifest: lm_donjon_de_niortManifest, osmWays: lm_donjon_de_niortWays, create: lm_donjon_de_niortCreate, views: lm_donjon_de_niortViews },
+  'eglise-purification-repentigny': { manifest: lm_eglise_purification_repentignyManifest, osmWays: lm_eglise_purification_repentignyWays, create: lm_eglise_purification_repentignyCreate, views: lm_eglise_purification_repentignyViews },
+  'eglise-saint-augustin-paris': { manifest: lm_eglise_saint_augustin_parisManifest, osmWays: lm_eglise_saint_augustin_parisWays, create: lm_eglise_saint_augustin_parisCreate, views: lm_eglise_saint_augustin_parisViews },
+  'eglise-saint-hubert-longueuil': { manifest: lm_eglise_saint_hubert_longueuilManifest, osmWays: lm_eglise_saint_hubert_longueuilWays, create: lm_eglise_saint_hubert_longueuilCreate, views: lm_eglise_saint_hubert_longueuilViews },
+  'eglise-saint-joachim-pointe-claire': { manifest: lm_eglise_saint_joachim_pointe_claireManifest, osmWays: lm_eglise_saint_joachim_pointe_claireWays, create: lm_eglise_saint_joachim_pointe_claireCreate, views: lm_eglise_saint_joachim_pointe_claireViews },
+  'eglise-saint-lambert': { manifest: lm_eglise_saint_lambertManifest, osmWays: lm_eglise_saint_lambertWays, create: lm_eglise_saint_lambertCreate, views: lm_eglise_saint_lambertViews },
+  'eglise-saint-pierre-saint-paul-pointe-a-pitre': { manifest: lm_eglise_saint_pierre_saint_paul_pointe_a_pitreManifest, osmWays: lm_eglise_saint_pierre_saint_paul_pointe_a_pitreWays, create: lm_eglise_saint_pierre_saint_paul_pointe_a_pitreCreate, views: lm_eglise_saint_pierre_saint_paul_pointe_a_pitreViews },
+  'ellicott-city-station': { manifest: lm_ellicott_city_stationManifest, osmWays: lm_ellicott_city_stationWays, create: lm_ellicott_city_stationCreate, views: lm_ellicott_city_stationViews },
+  'emirates-stadium': { manifest: lm_emirates_stadiumManifest, osmWays: lm_emirates_stadiumWays, create: lm_emirates_stadiumCreate, views: lm_emirates_stadiumViews },
+  'esch-sur-alzette-town-hall': { manifest: lm_esch_sur_alzette_town_hallManifest, osmWays: lm_esch_sur_alzette_town_hallWays, create: lm_esch_sur_alzette_town_hallCreate, views: lm_esch_sur_alzette_town_hallViews },
+  'faro-moncloa': { manifest: lm_faro_moncloaManifest, osmWays: lm_faro_moncloaWays, create: lm_faro_moncloaCreate, views: lm_faro_moncloaViews },
+  'flagey-building': { manifest: lm_flagey_buildingManifest, osmWays: lm_flagey_buildingWays, create: lm_flagey_buildingCreate, views: lm_flagey_buildingViews },
+  'fondation-vasarely-aix': { manifest: lm_fondation_vasarely_aixManifest, osmWays: lm_fondation_vasarely_aixWays, create: lm_fondation_vasarely_aixCreate, views: lm_fondation_vasarely_aixViews },
+  'fort-chambly': { manifest: lm_fort_chamblyManifest, osmWays: lm_fort_chamblyWays, create: lm_fort_chamblyCreate, views: lm_fort_chamblyViews },
+  'fort-langley-community-hall': { manifest: lm_fort_langley_community_hallManifest, osmWays: lm_fort_langley_community_hallWays, create: lm_fort_langley_community_hallCreate, views: lm_fort_langley_community_hallViews },
+  'fortin-heredia': { manifest: lm_fortin_herediaManifest, osmWays: lm_fortin_herediaWays, create: lm_fortin_herediaCreate, views: lm_fortin_herediaViews },
+  'gare-oriente': { manifest: lm_gare_orienteManifest, osmWays: lm_gare_orienteWays, create: lm_gare_orienteCreate, views: lm_gare_orienteViews },
+  'gas-south-arena': { manifest: lm_gas_south_arenaManifest, osmWays: lm_gas_south_arenaWays, create: lm_gas_south_arenaCreate, views: lm_gas_south_arenaViews },
+  'gasometro-rome': { manifest: lm_gasometro_romeManifest, osmWays: lm_gasometro_romeWays, create: lm_gasometro_romeCreate, views: lm_gasometro_romeViews },
+  'ghent-belfry': { manifest: lm_ghent_belfryManifest, osmWays: lm_ghent_belfryWays, create: lm_ghent_belfryCreate, views: lm_ghent_belfryViews },
+  'grand-hotel-dieu-lyon': { manifest: lm_grand_hotel_dieu_lyonManifest, osmWays: lm_grand_hotel_dieu_lyonWays, create: lm_grand_hotel_dieu_lyonCreate, views: lm_grand_hotel_dieu_lyonViews },
+  'grosse-cloche-bordeaux': { manifest: lm_grosse_cloche_bordeauxManifest, osmWays: lm_grosse_cloche_bordeauxWays, create: lm_grosse_cloche_bordeauxCreate, views: lm_grosse_cloche_bordeauxViews },
+  'gur-sikh-temple': { manifest: lm_gur_sikh_templeManifest, osmWays: lm_gur_sikh_templeWays, create: lm_gur_sikh_templeCreate, views: lm_gur_sikh_templeViews },
+  'gwinnett-historic-courthouse': { manifest: lm_gwinnett_historic_courthouseManifest, osmWays: lm_gwinnett_historic_courthouseWays, create: lm_gwinnett_historic_courthouseCreate, views: lm_gwinnett_historic_courthouseViews },
+  'haney-house': { manifest: lm_haney_houseManifest, osmWays: lm_haney_houseWays, create: lm_haney_houseCreate, views: lm_haney_houseViews },
+  'heritage-plaza-houston': { manifest: lm_heritage_plaza_houstonManifest, osmWays: lm_heritage_plaza_houstonWays, create: lm_heritage_plaza_houstonCreate, views: lm_heritage_plaza_houstonViews },
+  'hillsboro-inlet-lighthouse': { manifest: lm_hillsboro_inlet_lighthouseManifest, osmWays: lm_hillsboro_inlet_lighthouseWays, create: lm_hillsboro_inlet_lighthouseCreate, views: lm_hillsboro_inlet_lighthouseViews },
+  'honda-center': { manifest: lm_honda_centerManifest, osmWays: lm_honda_centerWays, create: lm_honda_centerCreate, views: lm_honda_centerViews },
+  'hotel-de-ville-grenoble': { manifest: lm_hotel_de_ville_grenobleManifest, osmWays: lm_hotel_de_ville_grenobleWays, create: lm_hotel_de_ville_grenobleCreate, views: lm_hotel_de_ville_grenobleViews },
+  'hotel-okura-amsterdam': { manifest: lm_hotel_okura_amsterdamManifest, osmWays: lm_hotel_okura_amsterdamWays, create: lm_hotel_okura_amsterdamCreate, views: lm_hotel_okura_amsterdamViews },
+  'houston-city-hall': { manifest: lm_houston_city_hallManifest, osmWays: lm_houston_city_hallWays, create: lm_houston_city_hallCreate, views: lm_houston_city_hallViews },
+  'hypo-haus-munich': { manifest: lm_hypo_haus_munichManifest, osmWays: lm_hypo_haus_munichWays, create: lm_hypo_haus_munichCreate, views: lm_hypo_haus_munichViews },
+  'iglesia-merced-san-jose': { manifest: lm_iglesia_merced_san_joseManifest, osmWays: lm_iglesia_merced_san_joseWays, create: lm_iglesia_merced_san_joseCreate, views: lm_iglesia_merced_san_joseViews },
+  'inntel-zaandam': { manifest: lm_inntel_zaandamManifest, osmWays: lm_inntel_zaandamWays, create: lm_inntel_zaandamCreate, views: lm_inntel_zaandamViews },
+  'intercontinental-bucharest': { manifest: lm_intercontinental_bucharestManifest, osmWays: lm_intercontinental_bucharestWays, create: lm_intercontinental_bucharestCreate, views: lm_intercontinental_bucharestViews },
+  'ito-tower': { manifest: lm_ito_towerManifest, osmWays: lm_ito_towerWays, create: lm_ito_towerCreate, views: lm_ito_towerViews },
+  'jerusalem-ymca': { manifest: lm_jerusalem_ymcaManifest, osmWays: lm_jerusalem_ymcaWays, create: lm_jerusalem_ymcaCreate, views: lm_jerusalem_ymcaViews },
+  'jpmorgan-chase-tower-dallas': { manifest: lm_jpmorgan_chase_tower_dallasManifest, osmWays: lm_jpmorgan_chase_tower_dallasWays, create: lm_jpmorgan_chase_tower_dallasCreate, views: lm_jpmorgan_chase_tower_dallasViews },
+  'kaknas-tower': { manifest: lm_kaknas_towerManifest, osmWays: lm_kaknas_towerWays, create: lm_kaknas_towerCreate, views: lm_kaknas_towerViews },
+  'kansas-city-city-hall': { manifest: lm_kansas_city_city_hallManifest, osmWays: lm_kansas_city_city_hallWays, create: lm_kansas_city_city_hallCreate, views: lm_kansas_city_city_hallViews },
+  'kauffman-center-kansas-city': { manifest: lm_kauffman_center_kansas_cityManifest, osmWays: lm_kauffman_center_kansas_cityWays, create: lm_kauffman_center_kansas_cityCreate, views: lm_kauffman_center_kansas_cityViews },
+  'kista-science-tower': { manifest: lm_kista_science_towerManifest, osmWays: lm_kista_science_towerWays, create: lm_kista_science_towerCreate, views: lm_kista_science_towerViews },
+  'koekelberg-basilica': { manifest: lm_koekelberg_basilicaManifest, osmWays: lm_koekelberg_basilicaWays, create: lm_koekelberg_basilicaCreate, views: lm_koekelberg_basilicaViews },
+  'la-rosaleda': { manifest: lm_la_rosaledaManifest, osmWays: lm_la_rosaledaWays, create: lm_la_rosaledaCreate, views: lm_la_rosaledaViews },
+  'library-of-birmingham': { manifest: lm_library_of_birminghamManifest, osmWays: lm_library_of_birminghamWays, create: lm_library_of_birminghamCreate, views: lm_library_of_birminghamViews },
+  'liege-guillemins': { manifest: lm_liege_guilleminsManifest, osmWays: lm_liege_guilleminsWays, create: lm_liege_guilleminsCreate, views: lm_liege_guilleminsViews },
+  'london-stadium': { manifest: lm_london_stadiumManifest, osmWays: lm_london_stadiumWays, create: lm_london_stadiumCreate, views: lm_london_stadiumViews },
+  'lviv-town-hall': { manifest: lm_lviv_town_hallManifest, osmWays: lm_lviv_town_hallWays, create: lm_lviv_town_hallCreate, views: lm_lviv_town_hallViews },
+  'maison-carree-nimes': { manifest: lm_maison_carree_nimesManifest, osmWays: lm_maison_carree_nimesWays, create: lm_maison_carree_nimesCreate, views: lm_maison_carree_nimesViews },
+  'maison-de-la-radio': { manifest: lm_maison_de_la_radioManifest, osmWays: lm_maison_de_la_radioWays, create: lm_maison_de_la_radioCreate, views: lm_maison_de_la_radioViews },
+  'malaga-cathedral': { manifest: lm_malaga_cathedralManifest, osmWays: lm_malaga_cathedralWays, create: lm_malaga_cathedralCreate, views: lm_malaga_cathedralViews },
+  'markham-civic-centre': { manifest: lm_markham_civic_centreManifest, osmWays: lm_markham_civic_centreWays, create: lm_markham_civic_centreCreate, views: lm_markham_civic_centreViews },
+  'mausoleum-carol-park': { manifest: lm_mausoleum_carol_parkManifest, osmWays: lm_mausoleum_carol_parkWays, create: lm_mausoleum_carol_parkCreate, views: lm_mausoleum_carol_parkViews },
+  'meyerson-symphony-center': { manifest: lm_meyerson_symphony_centerManifest, osmWays: lm_meyerson_symphony_centerWays, create: lm_meyerson_symphony_centerCreate, views: lm_meyerson_symphony_centerViews },
+  'mission-san-juan-capistrano': { manifest: lm_mission_san_juan_capistranoManifest, osmWays: lm_mission_san_juan_capistranoWays, create: lm_mission_san_juan_capistranoCreate, views: lm_mission_san_juan_capistranoViews },
+  'mississauga-civic-centre': { manifest: lm_mississauga_civic_centreManifest, osmWays: lm_mississauga_civic_centreWays, create: lm_mississauga_civic_centreCreate, views: lm_mississauga_civic_centreViews },
+  'mondriaan-tower': { manifest: lm_mondriaan_towerManifest, osmWays: lm_mondriaan_towerWays, create: lm_mondriaan_towerCreate, views: lm_mondriaan_towerViews },
+  'moshe-aviv-tower': { manifest: lm_moshe_aviv_towerManifest, osmWays: lm_moshe_aviv_towerWays, create: lm_moshe_aviv_towerCreate, views: lm_moshe_aviv_towerViews },
+  'moulin-neuf-terrebonne': { manifest: lm_moulin_neuf_terrebonneManifest, osmWays: lm_moulin_neuf_terrebonneWays, create: lm_moulin_neuf_terrebonneCreate, views: lm_moulin_neuf_terrebonneViews },
+  'mt-bank-stadium-baltimore': { manifest: lm_mt_bank_stadium_baltimoreManifest, osmWays: lm_mt_bank_stadium_baltimoreWays, create: lm_mt_bank_stadium_baltimoreCreate, views: lm_mt_bank_stadium_baltimoreViews },
+  'museo-arte-costarricense': { manifest: lm_museo_arte_costarricenseManifest, osmWays: lm_museo_arte_costarricenseWays, create: lm_museo_arte_costarricenseCreate, views: lm_museo_arte_costarricenseViews },
+  'namur-saint-aubin': { manifest: lm_namur_saint_aubinManifest, osmWays: lm_namur_saint_aubinWays, create: lm_namur_saint_aubinCreate, views: lm_namur_saint_aubinViews },
+  'national-library-romania': { manifest: lm_national_library_romaniaManifest, osmWays: lm_national_library_romaniaWays, create: lm_national_library_romaniaCreate, views: lm_national_library_romaniaViews },
+  'national-space-centre': { manifest: lm_national_space_centreManifest, osmWays: lm_national_space_centreWays, create: lm_national_space_centreCreate, views: lm_national_space_centreViews },
+  'national-theatre-bucharest': { manifest: lm_national_theatre_bucharestManifest, osmWays: lm_national_theatre_bucharestWays, create: lm_national_theatre_bucharestCreate, views: lm_national_theatre_bucharestViews },
+  'national-theatre-london': { manifest: lm_national_theatre_londonManifest, osmWays: lm_national_theatre_londonWays, create: lm_national_theatre_londonCreate, views: lm_national_theatre_londonViews },
+  'nhow-amsterdam-rai': { manifest: lm_nhow_amsterdam_raiManifest, osmWays: lm_nhow_amsterdam_raiWays, create: lm_nhow_amsterdam_raiCreate, views: lm_nhow_amsterdam_raiViews },
+  'nottingham-council-house': { manifest: lm_nottingham_council_houseManifest, osmWays: lm_nottingham_council_houseWays, create: lm_nottingham_council_houseCreate, views: lm_nottingham_council_houseViews },
+  'nrg-stadium': { manifest: lm_nrg_stadiumManifest, osmWays: lm_nrg_stadiumWays, create: lm_nrg_stadiumCreate, views: lm_nrg_stadiumViews },
+  'ohio-stadium': { manifest: lm_ohio_stadiumManifest, osmWays: lm_ohio_stadiumWays, create: lm_ohio_stadiumCreate, views: lm_ohio_stadiumViews },
+  'olympiaturm-munich': { manifest: lm_olympiaturm_munichManifest, osmWays: lm_olympiaturm_munichWays, create: lm_olympiaturm_munichCreate, views: lm_olympiaturm_munichViews },
+  'olympic-stadium-amsterdam': { manifest: lm_olympic_stadium_amsterdamManifest, osmWays: lm_olympic_stadium_amsterdamWays, create: lm_olympic_stadium_amsterdamCreate, views: lm_olympic_stadium_amsterdamViews },
+  'one-canada-square': { manifest: lm_one_canada_squareManifest, osmWays: lm_one_canada_squareWays, create: lm_one_canada_squareCreate, views: lm_one_canada_squareViews },
+  'oriole-park-camden-yards': { manifest: lm_oriole_park_camden_yardsManifest, osmWays: lm_oriole_park_camden_yardsWays, create: lm_oriole_park_camden_yardsCreate, views: lm_oriole_park_camden_yardsViews },
+  'padrao-descobrimentos': { manifest: lm_padrao_descobrimentosManifest, osmWays: lm_padrao_descobrimentosWays, create: lm_padrao_descobrimentosCreate, views: lm_padrao_descobrimentosViews },
+  'palais-de-l-isle-annecy': { manifest: lm_palais_de_l_isle_annecyManifest, osmWays: lm_palais_de_l_isle_annecyWays, create: lm_palais_de_l_isle_annecyCreate, views: lm_palais_de_l_isle_annecyViews },
+  'palais-de-la-porte-doree': { manifest: lm_palais_de_la_porte_doreeManifest, osmWays: lm_palais_de_la_porte_doreeWays, create: lm_palais_de_la_porte_doreeCreate, views: lm_palais_de_la_porte_doreeViews },
+  'palais-des-congres-paris': { manifest: lm_palais_des_congres_parisManifest, osmWays: lm_palais_des_congres_parisWays, create: lm_palais_des_congres_parisCreate, views: lm_palais_des_congres_parisViews },
+  'palais-des-papes-avignon': { manifest: lm_palais_des_papes_avignonManifest, osmWays: lm_palais_des_papes_avignonWays, create: lm_palais_des_papes_avignonCreate, views: lm_palais_des_papes_avignonViews },
+  'palazzo-civilta-italiana': { manifest: lm_palazzo_civilta_italianaManifest, osmWays: lm_palazzo_civilta_italianaWays, create: lm_palazzo_civilta_italianaCreate, views: lm_palazzo_civilta_italianaViews },
+  'parc-des-princes': { manifest: lm_parc_des_princesManifest, osmWays: lm_parc_des_princesWays, create: lm_parc_des_princesCreate, views: lm_parc_des_princesViews },
+  'parlement-europeen-louise-weiss': { manifest: lm_parlement_europeen_louise_weissManifest, osmWays: lm_parlement_europeen_louise_weissWays, create: lm_parlement_europeen_louise_weissCreate, views: lm_parlement_europeen_louise_weissViews },
+  'parus-business-centre': { manifest: lm_parus_business_centreManifest, osmWays: lm_parus_business_centreWays, create: lm_parus_business_centreCreate, views: lm_parus_business_centreViews },
+  'perris-depot': { manifest: lm_perris_depotManifest, osmWays: lm_perris_depotWays, create: lm_perris_depotCreate, views: lm_perris_depotViews },
+  'phare-de-verzenay': { manifest: lm_phare_de_verzenayManifest, osmWays: lm_phare_de_verzenayWays, create: lm_phare_de_verzenayCreate, views: lm_phare_de_verzenayViews },
+  'philharmonie-luxembourg': { manifest: lm_philharmonie_luxembourgManifest, osmWays: lm_philharmonie_luxembourgWays, create: lm_philharmonie_luxembourgCreate, views: lm_philharmonie_luxembourgViews },
+  'place-bell-laval': { manifest: lm_place_bell_lavalManifest, osmWays: lm_place_bell_lavalWays, create: lm_place_bell_lavalCreate, views: lm_place_bell_lavalViews },
+  'pontsteiger': { manifest: lm_pontsteigerManifest, osmWays: lm_pontsteigerWays, create: lm_pontsteigerCreate, views: lm_pontsteigerViews },
+  'port-coquitlam-city-hall': { manifest: lm_port_coquitlam_city_hallManifest, osmWays: lm_port_coquitlam_city_hallWays, create: lm_port_coquitlam_city_hallCreate, views: lm_port_coquitlam_city_hallViews },
+  'porte-cailhau-bordeaux': { manifest: lm_porte_cailhau_bordeauxManifest, osmWays: lm_porte_cailhau_bordeauxWays, create: lm_porte_cailhau_bordeauxCreate, views: lm_porte_cailhau_bordeauxViews },
+  'porte-de-la-craffe': { manifest: lm_porte_de_la_craffeManifest, osmWays: lm_porte_de_la_craffeWays, create: lm_porte_de_la_craffeCreate, views: lm_porte_de_la_craffeViews },
+  'portland-union-station': { manifest: lm_portland_union_stationManifest, osmWays: lm_portland_union_stationWays, create: lm_portland_union_stationCreate, views: lm_portland_union_stationViews },
+  'prime-tower-zurich': { manifest: lm_prime_tower_zurichManifest, osmWays: lm_prime_tower_zurichWays, create: lm_prime_tower_zurichCreate, views: lm_prime_tower_zurichViews },
+  'pyramid-cestius': { manifest: lm_pyramid_cestiusManifest, osmWays: lm_pyramid_cestiusWays, create: lm_pyramid_cestiusCreate, views: lm_pyramid_cestiusViews },
+  'rai-elicium': { manifest: lm_rai_eliciumManifest, osmWays: lm_rai_eliciumWays, create: lm_rai_eliciumCreate, views: lm_rai_eliciumViews },
+  'red-brick-courthouse-rockville': { manifest: lm_red_brick_courthouse_rockvilleManifest, osmWays: lm_red_brick_courthouse_rockvilleWays, create: lm_red_brick_courthouse_rockvilleCreate, views: lm_red_brick_courthouse_rockvilleViews },
+  'rembrandt-tower': { manifest: lm_rembrandt_towerManifest, osmWays: lm_rembrandt_towerWays, create: lm_rembrandt_towerCreate, views: lm_rembrandt_towerViews },
+  'renaissance-tower-dallas': { manifest: lm_renaissance_tower_dallasManifest, osmWays: lm_renaissance_tower_dallasWays, create: lm_renaissance_tower_dallasCreate, views: lm_renaissance_tower_dallasViews },
+  'rhodes-state-office-tower': { manifest: lm_rhodes_state_office_towerManifest, osmWays: lm_rhodes_state_office_towerWays, create: lm_rhodes_state_office_towerCreate, views: lm_rhodes_state_office_towerViews },
+  'riverside-fox-theater': { manifest: lm_riverside_fox_theaterManifest, osmWays: lm_riverside_fox_theaterWays, create: lm_riverside_fox_theaterCreate, views: lm_riverside_fox_theaterViews },
+  'sage-gateshead': { manifest: lm_sage_gatesheadManifest, osmWays: lm_sage_gatesheadWays, create: lm_sage_gatesheadCreate, views: lm_sage_gatesheadViews },
+  'saint-paul-cathedral-liege': { manifest: lm_saint_paul_cathedral_liegeManifest, osmWays: lm_saint_paul_cathedral_liegeWays, create: lm_saint_paul_cathedral_liegeCreate, views: lm_saint_paul_cathedral_liegeViews },
+  'san-bernardino-county-courthouse': { manifest: lm_san_bernardino_county_courthouseManifest, osmWays: lm_san_bernardino_county_courthouseWays, create: lm_san_bernardino_county_courthouseCreate, views: lm_san_bernardino_county_courthouseViews },
+  'san-giovanni-laterano': { manifest: lm_san_giovanni_lateranoManifest, osmWays: lm_san_giovanni_lateranoWays, create: lm_san_giovanni_lateranoCreate, views: lm_san_giovanni_lateranoViews },
+  'san-pedro-claver-cartagena': { manifest: lm_san_pedro_claver_cartagenaManifest, osmWays: lm_san_pedro_claver_cartagenaWays, create: lm_san_pedro_claver_cartagenaCreate, views: lm_san_pedro_claver_cartagenaViews },
+  'sanford-stadium': { manifest: lm_sanford_stadiumManifest, osmWays: lm_sanford_stadiumWays, create: lm_sanford_stadiumCreate, views: lm_sanford_stadiumViews },
+  'santa-justa-lift': { manifest: lm_santa_justa_liftManifest, osmWays: lm_santa_justa_liftWays, create: lm_santa_justa_liftCreate, views: lm_santa_justa_liftViews },
+  'santa-maria-maggiore': { manifest: lm_santa_maria_maggioreManifest, osmWays: lm_santa_maria_maggioreWays, create: lm_santa_maria_maggioreCreate, views: lm_santa_maria_maggioreViews },
+  'savage-mill': { manifest: lm_savage_millManifest, osmWays: lm_savage_millWays, create: lm_savage_millCreate, views: lm_savage_millViews },
+  'seven-foot-knoll-lighthouse': { manifest: lm_seven_foot_knoll_lighthouseManifest, osmWays: lm_seven_foot_knoll_lighthouseWays, create: lm_seven_foot_knoll_lighthouseCreate, views: lm_seven_foot_knoll_lighthouseViews },
+  'shrine-of-the-book': { manifest: lm_shrine_of_the_bookManifest, osmWays: lm_shrine_of_the_bookWays, create: lm_shrine_of_the_bookCreate, views: lm_shrine_of_the_bookViews },
+  'siegestor-munich': { manifest: lm_siegestor_munichManifest, osmWays: lm_siegestor_munichWays, create: lm_siegestor_munichCreate, views: lm_siegestor_munichViews },
+  'skytower-bucharest': { manifest: lm_skytower_bucharestManifest, osmWays: lm_skytower_bucharestWays, create: lm_skytower_bucharestCreate, views: lm_skytower_bucharestViews },
+  'spire-of-dublin': { manifest: lm_spire_of_dublinManifest, osmWays: lm_spire_of_dublinWays, create: lm_spire_of_dublinCreate, views: lm_spire_of_dublinViews },
+  'st-louis-union-station': { manifest: lm_st_louis_union_stationManifest, osmWays: lm_st_louis_union_stationWays, create: lm_st_louis_union_stationCreate, views: lm_st_louis_union_stationViews },
+  'st-michaels-church-cluj': { manifest: lm_st_michaels_church_clujManifest, osmWays: lm_st_michaels_church_clujWays, create: lm_st_michaels_church_clujCreate, views: lm_st_michaels_church_clujViews },
+  'stade-des-alpes': { manifest: lm_stade_des_alpesManifest, osmWays: lm_stade_des_alpesWays, create: lm_stade_des_alpesCreate, views: lm_stade_des_alpesViews },
+  'stade-mayol-toulon': { manifest: lm_stade_mayol_toulonManifest, osmWays: lm_stade_mayol_toulonWays, create: lm_stade_mayol_toulonCreate, views: lm_stade_mayol_toulonViews },
+  'stade-pierre-mauroy': { manifest: lm_stade_pierre_mauroyManifest, osmWays: lm_stade_pierre_mauroyWays, create: lm_stade_pierre_mauroyCreate, views: lm_stade_pierre_mauroyViews },
+  'stockholm-city-hall': { manifest: lm_stockholm_city_hallManifest, osmWays: lm_stockholm_city_hallWays, create: lm_stockholm_city_hallCreate, views: lm_stockholm_city_hallViews },
+  'stone-mountain-carillon': { manifest: lm_stone_mountain_carillonManifest, osmWays: lm_stone_mountain_carillonWays, create: lm_stone_mountain_carillonCreate, views: lm_stone_mountain_carillonViews },
+  'strat-tower-las-vegas': { manifest: lm_strat_tower_las_vegasManifest, osmWays: lm_strat_tower_las_vegasWays, create: lm_strat_tower_las_vegasCreate, views: lm_strat_tower_las_vegasViews },
+  'stuttgart-hauptbahnhof-tower': { manifest: lm_stuttgart_hauptbahnhof_towerManifest, osmWays: lm_stuttgart_hauptbahnhof_towerWays, create: lm_stuttgart_hauptbahnhof_towerCreate, views: lm_stuttgart_hauptbahnhof_towerViews },
+  'surrey-city-hall': { manifest: lm_surrey_city_hallManifest, osmWays: lm_surrey_city_hallWays, create: lm_surrey_city_hallCreate, views: lm_surrey_city_hallViews },
+  'tagblatt-turm-stuttgart': { manifest: lm_tagblatt_turm_stuttgartManifest, osmWays: lm_tagblatt_turm_stuttgartWays, create: lm_tagblatt_turm_stuttgartCreate, views: lm_tagblatt_turm_stuttgartViews },
+  'tate-modern': { manifest: lm_tate_modernManifest, osmWays: lm_tate_modernWays, create: lm_tate_modernCreate, views: lm_tate_modernViews },
+  'tbilisi-tv-tower': { manifest: lm_tbilisi_tv_towerManifest, osmWays: lm_tbilisi_tv_towerWays, create: lm_tbilisi_tv_towerCreate, views: lm_tbilisi_tv_towerViews },
+  'temple-saint-martin-montbeliard': { manifest: lm_temple_saint_martin_montbeliardManifest, osmWays: lm_temple_saint_martin_montbeliardWays, create: lm_temple_saint_martin_montbeliardCreate, views: lm_temple_saint_martin_montbeliardViews },
+  'texas-star-ferris-wheel': { manifest: lm_texas_star_ferris_wheelManifest, osmWays: lm_texas_star_ferris_wheelWays, create: lm_texas_star_ferris_wheelCreate, views: lm_texas_star_ferris_wheelViews },
+  'the-o2-london': { manifest: lm_the_o2_londonManifest, osmWays: lm_the_o2_londonWays, create: lm_the_o2_londonCreate, views: lm_the_o2_londonViews },
+  'the-rock-amsterdam': { manifest: lm_the_rock_amsterdamManifest, osmWays: lm_the_rock_amsterdamWays, create: lm_the_rock_amsterdamCreate, views: lm_the_rock_amsterdamViews },
+  'toronto-ontario-temple-brampton': { manifest: lm_toronto_ontario_temple_bramptonManifest, osmWays: lm_toronto_ontario_temple_bramptonWays, create: lm_toronto_ontario_temple_bramptonCreate, views: lm_toronto_ontario_temple_bramptonViews },
+  'torre-cali': { manifest: lm_torre_caliManifest, osmWays: lm_torre_caliWays, create: lm_torre_caliCreate, views: lm_torre_caliViews },
+  'torre-reloj-cartagena': { manifest: lm_torre_reloj_cartagenaManifest, osmWays: lm_torre_reloj_cartagenaWays, create: lm_torre_reloj_cartagenaCreate, views: lm_torre_reloj_cartagenaViews },
+  'torres-paseo-colon': { manifest: lm_torres_paseo_colonManifest, osmWays: lm_torres_paseo_colonWays, create: lm_torres_paseo_colonCreate, views: lm_torres_paseo_colonViews },
+  'torrespana': { manifest: lm_torrespanaManifest, osmWays: lm_torrespanaWays, create: lm_torrespanaCreate, views: lm_torrespanaViews },
+  'tour-alto': { manifest: lm_tour_altoManifest, osmWays: lm_tour_altoWays, create: lm_tour_altoCreate, views: lm_tour_altoViews },
+  'tour-bretagne-nantes': { manifest: lm_tour_bretagne_nantesManifest, osmWays: lm_tour_bretagne_nantesWays, create: lm_tour_bretagne_nantesCreate, views: lm_tour_bretagne_nantesViews },
+  'tour-carpe-diem': { manifest: lm_tour_carpe_diemManifest, osmWays: lm_tour_carpe_diemWays, create: lm_tour_carpe_diemCreate, views: lm_tour_carpe_diemViews },
+  'tour-cma-cgm': { manifest: lm_tour_cma_cgmManifest, osmWays: lm_tour_cma_cgmWays, create: lm_tour_cma_cgmCreate, views: lm_tour_cma_cgmViews },
+  'tour-d2': { manifest: lm_tour_d2Manifest, osmWays: lm_tour_d2Ways, create: lm_tour_d2Create, views: lm_tour_d2Views },
+  'tour-de-la-miotte': { manifest: lm_tour_de_la_miotteManifest, osmWays: lm_tour_de_la_miotteWays, create: lm_tour_de_la_miotteCreate, views: lm_tour_de_la_miotteViews },
+  'tour-de-leurope-mulhouse': { manifest: lm_tour_de_leurope_mulhouseManifest, osmWays: lm_tour_de_leurope_mulhouseWays, create: lm_tour_de_leurope_mulhouseCreate, views: lm_tour_de_leurope_mulhouseViews },
+  'tour-de-lille': { manifest: lm_tour_de_lilleManifest, osmWays: lm_tour_de_lilleWays, create: lm_tour_de_lilleCreate, views: lm_tour_de_lilleViews },
+  'tour-des-archives-rouen': { manifest: lm_tour_des_archives_rouenManifest, osmWays: lm_tour_des_archives_rouenWays, create: lm_tour_des_archives_rouenCreate, views: lm_tour_des_archives_rouenViews },
+  'tour-du-midi': { manifest: lm_tour_du_midiManifest, osmWays: lm_tour_du_midiWays, create: lm_tour_du_midiCreate, views: lm_tour_du_midiViews },
+  'tour-elithis-dijon': { manifest: lm_tour_elithis_dijonManifest, osmWays: lm_tour_elithis_dijonWays, create: lm_tour_elithis_dijonCreate, views: lm_tour_elithis_dijonViews },
+  'tour-first': { manifest: lm_tour_firstManifest, osmWays: lm_tour_firstWays, create: lm_tour_firstCreate, views: lm_tour_firstViews },
+  'tour-la-marseillaise': { manifest: lm_tour_la_marseillaiseManifest, osmWays: lm_tour_la_marseillaiseWays, create: lm_tour_la_marseillaiseCreate, views: lm_tour_la_marseillaiseViews },
+  'tour-lanterne-rochelle': { manifest: lm_tour_lanterne_rochelleManifest, osmWays: lm_tour_lanterne_rochelleWays, create: lm_tour_lanterne_rochelleCreate, views: lm_tour_lanterne_rochelleViews },
+  'tour-lu-nantes': { manifest: lm_tour_lu_nantesManifest, osmWays: lm_tour_lu_nantesWays, create: lm_tour_lu_nantesCreate, views: lm_tour_lu_nantesViews },
+  'tour-metallique-fourviere': { manifest: lm_tour_metallique_fourviereManifest, osmWays: lm_tour_metallique_fourviereWays, create: lm_tour_metallique_fourviereCreate, views: lm_tour_metallique_fourviereViews },
+  'tour-oxygene': { manifest: lm_tour_oxygeneManifest, osmWays: lm_tour_oxygeneWays, create: lm_tour_oxygeneCreate, views: lm_tour_oxygeneViews },
+  'tour-paradis-liege': { manifest: lm_tour_paradis_liegeManifest, osmWays: lm_tour_paradis_liegeWays, create: lm_tour_paradis_liegeCreate, views: lm_tour_paradis_liegeViews },
+  'tour-perret-grenoble': { manifest: lm_tour_perret_grenobleManifest, osmWays: lm_tour_perret_grenobleWays, create: lm_tour_perret_grenobleCreate, views: lm_tour_perret_grenobleViews },
+  'tour-pey-berland': { manifest: lm_tour_pey_berlandManifest, osmWays: lm_tour_pey_berlandWays, create: lm_tour_pey_berlandCreate, views: lm_tour_pey_berlandViews },
+  'tour-royale-toulon': { manifest: lm_tour_royale_toulonManifest, osmWays: lm_tour_royale_toulonWays, create: lm_tour_royale_toulonCreate, views: lm_tour_royale_toulonViews },
+  'tour-saint-aubin-angers': { manifest: lm_tour_saint_aubin_angersManifest, osmWays: lm_tour_saint_aubin_angersWays, create: lm_tour_saint_aubin_angersCreate, views: lm_tour_saint_aubin_angersViews },
+  'tour-saint-gobain': { manifest: lm_tour_saint_gobainManifest, osmWays: lm_tour_saint_gobainWays, create: lm_tour_saint_gobainCreate, views: lm_tour_saint_gobainViews },
+  'tour-saint-nicolas-rochelle': { manifest: lm_tour_saint_nicolas_rochelleManifest, osmWays: lm_tour_saint_nicolas_rochelleWays, create: lm_tour_saint_nicolas_rochelleCreate, views: lm_tour_saint_nicolas_rochelleViews },
+  'tour-t1': { manifest: lm_tour_t1Manifest, osmWays: lm_tour_t1Ways, create: lm_tour_t1Create, views: lm_tour_t1Views },
+  'tour-total-coupole': { manifest: lm_tour_total_coupoleManifest, osmWays: lm_tour_total_coupoleWays, create: lm_tour_total_coupoleCreate, views: lm_tour_total_coupoleViews },
+  'tour-trinity': { manifest: lm_tour_trinityManifest, osmWays: lm_tour_trinityWays, create: lm_tour_trinityCreate, views: lm_tour_trinityViews },
+  'tovrea-castle': { manifest: lm_tovrea_castleManifest, osmWays: lm_tovrea_castleWays, create: lm_tovrea_castleCreate, views: lm_tovrea_castleViews },
+  'trethewey-house': { manifest: lm_trethewey_houseManifest, osmWays: lm_trethewey_houseWays, create: lm_trethewey_houseCreate, views: lm_trethewey_houseViews },
+  'tribunal-de-paris': { manifest: lm_tribunal_de_parisManifest, osmWays: lm_tribunal_de_parisWays, create: lm_tribunal_de_parisCreate, views: lm_tribunal_de_parisViews },
+  'tustin-south-hangar': { manifest: lm_tustin_south_hangarManifest, osmWays: lm_tustin_south_hangarWays, create: lm_tustin_south_hangarCreate, views: lm_tustin_south_hangarViews },
+  'ucr-bell-tower': { manifest: lm_ucr_bell_towerManifest, osmWays: lm_ucr_bell_towerWays, create: lm_ucr_bell_towerCreate, views: lm_ucr_bell_towerViews },
+  'uga-arch': { manifest: lm_uga_archManifest, osmWays: lm_uga_archWays, create: lm_uga_archCreate, views: lm_uga_archViews },
+  'vinoly-tower-amsterdam': { manifest: lm_vinoly_tower_amsterdamManifest, osmWays: lm_vinoly_tower_amsterdamWays, create: lm_vinoly_tower_amsterdamCreate, views: lm_vinoly_tower_amsterdamViews },
+  'walter-reed-tower-bethesda': { manifest: lm_walter_reed_tower_bethesdaManifest, osmWays: lm_walter_reed_tower_bethesdaWays, create: lm_walter_reed_tower_bethesdaCreate, views: lm_walter_reed_tower_bethesdaViews },
+  'walton-historic-courthouse': { manifest: lm_walton_historic_courthouseManifest, osmWays: lm_walton_historic_courthouseWays, create: lm_walton_historic_courthouseCreate, views: lm_walton_historic_courthouseViews },
+  'will-rogers-memorial-center': { manifest: lm_will_rogers_memorial_centerManifest, osmWays: lm_will_rogers_memorial_centerWays, create: lm_will_rogers_memorial_centerCreate, views: lm_will_rogers_memorial_centerViews },
+  'winspear-opera-house': { manifest: lm_winspear_opera_houseManifest, osmWays: lm_winspear_opera_houseWays, create: lm_winspear_opera_houseCreate, views: lm_winspear_opera_houseViews },
+  'ziggo-dome': { manifest: lm_ziggo_domeManifest, osmWays: lm_ziggo_domeWays, create: lm_ziggo_domeCreate, views: lm_ziggo_domeViews },
+  'ziggurat-west-sacramento': { manifest: lm_ziggurat_west_sacramentoManifest, osmWays: lm_ziggurat_west_sacramentoWays, create: lm_ziggurat_west_sacramentoCreate, views: lm_ziggurat_west_sacramentoViews },
 };
 
 export const TOP_CITIES_LANDMARKS = Object.freeze(RUNTIME.map((l) => Object.freeze({ ...l, ...authoring[l.id] })));

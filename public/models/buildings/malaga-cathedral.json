@@ -1,0 +1,468 @@
+{
+  "id": "malaga-cathedral",
+  "name": "Málaga Cathedral",
+  "kind": "building",
+  "origin": [
+    -4.41943,
+    36.72012
+  ],
+  "height": 87,
+  "padM": 98,
+  "frontageBearing": 180,
+  "rotation": -1.507663735997173,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -4.4200525,
+          36.7203944
+        ],
+        [
+          -4.4200413,
+          36.7202722
+        ],
+        [
+          -4.4200332,
+          36.7202643
+        ],
+        [
+          -4.4200255,
+          36.7202561
+        ],
+        [
+          -4.4200323,
+          36.7202528
+        ],
+        [
+          -4.4200428,
+          36.7202451
+        ],
+        [
+          -4.4200495,
+          36.720235
+        ],
+        [
+          -4.4200529,
+          36.7202251
+        ],
+        [
+          -4.4200529,
+          36.7202166
+        ],
+        [
+          -4.4200506,
+          36.7202103
+        ],
+        [
+          -4.4200454,
+          36.7202019
+        ],
+        [
+          -4.4200387,
+          36.7201965
+        ],
+        [
+          -4.4200394,
+          36.7201836
+        ],
+        [
+          -4.4200502,
+          36.7201836
+        ],
+        [
+          -4.4200589,
+          36.7201813
+        ],
+        [
+          -4.4200684,
+          36.7201763
+        ],
+        [
+          -4.4200757,
+          36.72017
+        ],
+        [
+          -4.4200802,
+          36.7201637
+        ],
+        [
+          -4.4200814,
+          36.7201558
+        ],
+        [
+          -4.4200773,
+          36.7200917
+        ],
+        [
+          -4.4200718,
+          36.7200171
+        ],
+        [
+          -4.4200636,
+          36.720003
+        ],
+        [
+          -4.4200513,
+          36.7199938
+        ],
+        [
+          -4.42004,
+          36.7199911
+        ],
+        [
+          -4.4200246,
+          36.7199906
+        ],
+        [
+          -4.4200222,
+          36.7199795
+        ],
+        [
+          -4.4200289,
+          36.7199694
+        ],
+        [
+          -4.4200294,
+          36.7199559
+        ],
+        [
+          -4.4200297,
+          36.7199462
+        ],
+        [
+          -4.420024,
+          36.719935
+        ],
+        [
+          -4.4200135,
+          36.7199229
+        ],
+        [
+          -4.420004,
+          36.7199173
+        ],
+        [
+          -4.4200045,
+          36.7199145
+        ],
+        [
+          -4.420012,
+          36.7199047
+        ],
+        [
+          -4.4200038,
+          36.7197769
+        ],
+        [
+          -4.4199961,
+          36.7197734
+        ],
+        [
+          -4.419926,
+          36.7197766
+        ],
+        [
+          -4.4198407,
+          36.7197804
+        ],
+        [
+          -4.4198294,
+          36.7197913
+        ],
+        [
+          -4.4193608,
+          36.7198143
+        ],
+        [
+          -4.4193489,
+          36.7198053
+        ],
+        [
+          -4.4193278,
+          36.7198046
+        ],
+        [
+          -4.4193193,
+          36.719805
+        ],
+        [
+          -4.4193168,
+          36.7197822
+        ],
+        [
+          -4.4191493,
+          36.7197921
+        ],
+        [
+          -4.4191511,
+          36.7198133
+        ],
+        [
+          -4.419143,
+          36.7198137
+        ],
+        [
+          -4.4191305,
+          36.7198178
+        ],
+        [
+          -4.4191219,
+          36.7198253
+        ],
+        [
+          -4.4191122,
+          36.7198355
+        ],
+        [
+          -4.4190566,
+          36.7198376
+        ],
+        [
+          -4.4190144,
+          36.7198333
+        ],
+        [
+          -4.4190047,
+          36.7198361
+        ],
+        [
+          -4.4190012,
+          36.7198405
+        ],
+        [
+          -4.4189972,
+          36.7198471
+        ],
+        [
+          -4.419002,
+          36.7198855
+        ],
+        [
+          -4.4188464,
+          36.7199393
+        ],
+        [
+          -4.4187387,
+          36.7200749
+        ],
+        [
+          -4.4187517,
+          36.7202418
+        ],
+        [
+          -4.4188805,
+          36.7203634
+        ],
+        [
+          -4.4190144,
+          36.7203856
+        ],
+        [
+          -4.4190244,
+          36.7204734
+        ],
+        [
+          -4.4190158,
+          36.7204744
+        ],
+        [
+          -4.4190189,
+          36.7205066
+        ],
+        [
+          -4.4191768,
+          36.7204966
+        ],
+        [
+          -4.4191836,
+          36.7204966
+        ],
+        [
+          -4.4191784,
+          36.7204567
+        ],
+        [
+          -4.4191884,
+          36.7204539
+        ],
+        [
+          -4.4192007,
+          36.7204536
+        ],
+        [
+          -4.4192111,
+          36.7204527
+        ],
+        [
+          -4.4192206,
+          36.7204517
+        ],
+        [
+          -4.4192296,
+          36.7204461
+        ],
+        [
+          -4.4192928,
+          36.7204425
+        ],
+        [
+          -4.419362,
+          36.7204378
+        ],
+        [
+          -4.4193714,
+          36.7204411
+        ],
+        [
+          -4.4193859,
+          36.7204436
+        ],
+        [
+          -4.4194031,
+          36.720441
+        ],
+        [
+          -4.4194188,
+          36.720433
+        ],
+        [
+          -4.4194233,
+          36.7205342
+        ],
+        [
+          -4.419425,
+          36.7205626
+        ],
+        [
+          -4.4194259,
+          36.7205845
+        ],
+        [
+          -4.4195173,
+          36.7205809
+        ],
+        [
+          -4.4195172,
+          36.7205572
+        ],
+        [
+          -4.419517,
+          36.7204782
+        ],
+        [
+          -4.4195593,
+          36.7204641
+        ],
+        [
+          -4.4195787,
+          36.7204632
+        ],
+        [
+          -4.4195709,
+          36.7203493
+        ],
+        [
+          -4.4197032,
+          36.7203437
+        ],
+        [
+          -4.4197494,
+          36.7203418
+        ],
+        [
+          -4.4198277,
+          36.7203377
+        ],
+        [
+          -4.4198302,
+          36.7203688
+        ],
+        [
+          -4.419881,
+          36.7203661
+        ],
+        [
+          -4.419884,
+          36.7204032
+        ],
+        [
+          -4.4198919,
+          36.7204028
+        ],
+        [
+          -4.4198924,
+          36.7204098
+        ],
+        [
+          -4.4200444,
+          36.7204019
+        ],
+        [
+          -4.4200525,
+          36.7203944
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -4.41943,
+        36.72012
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Dated2026state: the triangular west pediment was completed October22, but the main roof intervention remains in progress. The apse timber rafters are exposed and the nave has dark waterproof underlay as in the November8panorama; finished ceramic tiles and nine proposed future facade statues are not invented. Temporary cranes/scaffolding are omitted. The87m chapter height is adopted as an estimate;84m and93m published figures are unresolved rather than asserted equivalent datums. Photo1 supplies unchanged portal detail;7 shows the current upper belfry;9 the current roof/apse. Dossier2–6 are interiors and8 is a logo, all rejected. Attached Sagrario church and unrelated gardens are excluded. Massing follows the cathedral way; three bounded authored facade/cornice projection rings cover estimated relief and overhang; footing and DEM contacts remain untested. No lettering, logos, textures or interiors. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/malaga-cathedral-near.glb",
+      "bytes": 302968,
+      "triangles": 18763,
+      "drawCalls": 9,
+      "bounds": {
+        "min": [
+          -58.12462615966797,
+          0,
+          -51.70809555053711
+        ],
+        "max": [
+          61.684940338134766,
+          87,
+          38.58348083496094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/malaga-cathedral-far.glb",
+      "bytes": 165504,
+      "triangles": 6560,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -58.12462615966797,
+          0,
+          -51.70809555053711
+        ],
+        "max": [
+          61.684940338134766,
+          87,
+          38.58348083496094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/malaga-cathedral/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

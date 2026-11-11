@@ -1,0 +1,65 @@
+{
+  "id": "tour-total-coupole",
+  "name": "Tour Total Coupole",
+  "kind": "building",
+  "origin": [
+    2.2434718476190474,
+    48.892753330952374
+  ],
+  "height": 187,
+  "padM": 64,
+  "frontageBearing": 276.902,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1985 completed exterior, five polygonal organ-pipe volumes and curtain-wall grid. OSM/Wikipedia give 187 m, the district operator gives 179 m: 187 m is a reconciled envelope estimate, not a survey. Three tall shafts 165/187/175 m and two low halls 65/75 m are photo estimates. Mapping controls the full plan; signage, plaza and interiors excluded. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-total-coupole-near.glb",
+      "bytes": 304596,
+      "triangles": 19100,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -50.042999267578125,
+          0,
+          -56.457801818847656
+        ],
+        "max": [
+          41.85346603393555,
+          187,
+          41.73712158203125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-total-coupole-far.glb",
+      "bytes": 94512,
+      "triangles": 5448,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -50.042999267578125,
+          0,
+          -56.457801818847656
+        ],
+        "max": [
+          41.85346603393555,
+          187,
+          41.73712158203125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-total-coupole/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

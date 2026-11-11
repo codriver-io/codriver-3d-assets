@@ -1,0 +1,65 @@
+{
+  "id": "tour-carpe-diem",
+  "name": "Tour Carpe Diem",
+  "kind": "building",
+  "origin": [
+    2.2456659,
+    48.89146212
+  ],
+  "height": 162,
+  "padM": 38,
+  "frontageBearing": 56.407,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed 2013 tower. Primary district source gives 162 m from boulevard, versus OSM 166 m: 162 m is the selected envelope estimate. Mapped plan, high sloping crown and alternating pale diagonal facade folds retained. Fold position, width, glass reflection colours and floor pitch estimated; dihedral relief simplified to adjoining material facets. No logos, lettering, interiors or plaza. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-carpe-diem-near.glb",
+      "bytes": 189836,
+      "triangles": 11518,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -21.986629486083984,
+          0,
+          -31.946468353271484
+        ],
+        "max": [
+          27.40277671813965,
+          162,
+          27.041730880737305
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-carpe-diem-far.glb",
+      "bytes": 64160,
+      "triangles": 3300,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -21.986629486083984,
+          0,
+          -31.946468353271484
+        ],
+        "max": [
+          27.40277671813965,
+          162,
+          27.041730880737305
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-carpe-diem/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

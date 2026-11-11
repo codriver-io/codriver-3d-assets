@@ -1,0 +1,71 @@
+{
+  "id": "basilique-visitation-annecy",
+  "name": "Basilique de la Visitation d'Annecy",
+  "kind": "building",
+  "origin": [
+    6.1276263,
+    45.8925466
+  ],
+  "height": 72,
+  "padM": 43,
+  "frontageBearing": 79.39182159069799,
+  "rotationRad": 0.18514764088129498,
+  "porchHeight": 30,
+  "belfryBottom": 36,
+  "spireBase": 49,
+  "spireApex": 69,
+  "crossAssemblyHeight": 7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Limestone neo-Romano-Byzantine basilica with a huge genuinely recessed arched tower-porch, stepped buttress shoulders, pierced octagonal belfry, patterned tapering spire and bronze cross; long tiled nave and polygonal apse. Sources disagree whether 72 m includes a separately described 7 m bronze cross. This model adopts the monastery history's explicit 72 m total rather than an unverified 79 m total; the 7 m cross assembly spans y=65–72 with its lower stem within the spire cap and exposed projection 3 m, estimated from photographs. Spire y=49–69 and nave ridge 26 m are estimated proportions. Outer ways 112145208 and 1557620926 are stitched at their shared endpoints from relation 21373069. Neighbouring monastery and steep terrain are excluded; y=0 is the rigid local entrance foundation plane, not a surveyed elevation. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/basilique-visitation-annecy-near.glb",
+      "bytes": 198700,
+      "triangles": 11174,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -32.25709915161133,
+          -1.9073486612342094e-7,
+          -15.115957260131836
+        ],
+        "max": [
+          30.650856018066406,
+          72,
+          15.197168350219727
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/basilique-visitation-annecy-far.glb",
+      "bytes": 124524,
+      "triangles": 6494,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -32.25709915161133,
+          -1.9073486612342094e-7,
+          -15.115957260131836
+        ],
+        "max": [
+          30.650856018066406,
+          72,
+          15.197168350219727
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilique-visitation-annecy/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

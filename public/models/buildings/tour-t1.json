@@ -1,0 +1,65 @@
+{
+  "id": "tour-t1",
+  "name": "Tour T1 (Engie)",
+  "kind": "building",
+  "origin": [
+    2.23980428,
+    48.89538392
+  ],
+  "height": 185,
+  "padM": 42,
+  "frontageBearing": 61.736,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2008 Valode & Pistre folded glass leaf, legacy Engie/T1 name (commercial rebranding excluded). Published roof 169 m and architectural screen 185 m; the architect describes a 185 m tower, while OSM tags only the roof. Curved roof fall, screen lattice pitch, glass colour and curtain-wall spacing are estimates. No logo, interior, adjoining lower block or terrain modeled. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-t1-near.glb",
+      "bytes": 244940,
+      "triangles": 15784,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -36.600704193115234,
+          0,
+          -32.4566535949707
+        ],
+        "max": [
+          21.982271194458008,
+          185.0872802734375,
+          28.585378646850586
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-t1-far.glb",
+      "bytes": 92724,
+      "triangles": 5614,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -36.65127944946289,
+          0,
+          -32.50568771362305
+        ],
+        "max": [
+          22.029272079467773,
+          185.13638305664062,
+          28.644655227661133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-t1/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

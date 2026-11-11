@@ -1,0 +1,112 @@
+{
+  "id": "pyramid-cestius",
+  "name": "Pyramid of Cestius",
+  "kind": "building",
+  "origin": [
+    12.480869157142857,
+    41.87646435714286
+  ],
+  "height": 36.4,
+  "padM": 24,
+  "frontageBearing": 180,
+  "rotation": 1.1442795786843314,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          12.4809426,
+          41.876272
+        ],
+        [
+          12.4810909,
+          41.876515
+        ],
+        [
+          12.4809903,
+          41.8765489
+        ],
+        [
+          12.4809744,
+          41.8765543
+        ],
+        [
+          12.4807653,
+          41.8766252
+        ],
+        [
+          12.480617,
+          41.8763822
+        ],
+        [
+          12.4807036,
+          41.8763529
+        ],
+        [
+          12.4809426,
+          41.876272
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        12.480869157142857,
+        41.87646435714286
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current restored pale-marble exterior. Four smooth slopes meet at a single supported apex. Marble seams are disjoint partitions of the sloping faces, not layered quads. Inscriptions, fenced worksite, adjacent Aurelian wall, Porta San Paolo, landscaping and inaccessible burial chamber are excluded. Published heights vary from about 36 to 37 m; adopted 36.4 m follows the mapped tag and Italian heritage convention and is treated as an estimate. After unmodified dossier Overpass retries timed out, the bounded OSM map API supplied the exact building ring; original API response and provenance remain in ignored scratch. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/pyramid-cestius-near.glb",
+      "bytes": 69380,
+      "triangles": 3732,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -20.900636672973633,
+          -8.817946500140248e-16,
+          -17.905012130737305
+        ],
+        "max": [
+          18.379657745361328,
+          36.400001525878906,
+          21.413166046142578
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/pyramid-cestius-far.glb",
+      "bytes": 26164,
+      "triangles": 1188,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -20.900636672973633,
+          -8.817946500140248e-16,
+          -17.905012130737305
+        ],
+        "max": [
+          18.379657745361328,
+          36.400001525878906,
+          21.413166046142578
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pyramid-cestius/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

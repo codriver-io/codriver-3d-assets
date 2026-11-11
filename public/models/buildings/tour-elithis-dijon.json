@@ -1,0 +1,66 @@
+{
+  "id": "tour-elithis-dijon",
+  "name": "Tour Elithis",
+  "kind": "building",
+  "origin": [
+    5.052551735714287,
+    47.328895825000004
+  ],
+  "height": 33.5,
+  "padM": 19,
+  "frontageBearing": 258.5505012354481,
+  "rotation": -1.370964875650444,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Original geometry uses the mapped rounded boundary. Copper mesh is represented by open grouped louvers; no texture, lettering, logos or photovoltaic branding. Ground plaza and neighbouring Auditorium/CPAM are excluded. Official source: https://www.arte-charpentier.com/fr/projets/tour-elithis/ . Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-elithis-dijon-near.glb",
+      "bytes": 144052,
+      "triangles": 7812,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -11.156465530395508,
+          -5.382138932291246e-16,
+          -15.646378517150879
+        ],
+        "max": [
+          9.503252983093262,
+          33.5,
+          16.12653160095215
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-elithis-dijon-far.glb",
+      "bytes": 75360,
+      "triangles": 3690,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -11.156465530395508,
+          -5.382138932291246e-16,
+          -15.646378517150879
+        ],
+        "max": [
+          9.503252983093262,
+          33.5,
+          16.12653160095215
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-elithis-dijon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

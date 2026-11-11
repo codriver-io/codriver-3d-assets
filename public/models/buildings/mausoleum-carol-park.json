@@ -1,0 +1,66 @@
+{
+  "id": "mausoleum-carol-park",
+  "name": "Carol Park Mausoleum",
+  "kind": "building",
+  "origin": [
+    26.096864500000002,
+    44.41123705
+  ],
+  "height": 48,
+  "padM": 18,
+  "frontageBearing": 327.754562224702,
+  "rotationY": -2.1335853847208024,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Five slender red-granite arches form an open pentagonal crown above a stepped dark-granite rotunda and pale circular foundation. The museum publishes 48 m while OSM upper parts end at 46.7 m; the published total is used and arch spring/section dimensions are photo estimates. Five crown planes follow the mapped pentagonal support arrangement. The pale outer footing is estimated 1.8 m high; the OSM 7 m outer part describes the approach/terrace ambiguously and is not used as a surveyed local foundation level. Memorial terrace, long stairs, tomb and rear hemicycle are outside this asset. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mausoleum-carol-park-near.glb",
+      "bytes": 36480,
+      "triangles": 1691,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -20.174179077148438,
+          0,
+          -20.17675018310547
+        ],
+        "max": [
+          20.174179077148438,
+          48,
+          20.17675018310547
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mausoleum-carol-park-far.glb",
+      "bytes": 25980,
+      "triangles": 1021,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -20.174179077148438,
+          0,
+          -20.17675018310547
+        ],
+        "max": [
+          20.174179077148438,
+          48,
+          20.17675018310547
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mausoleum-carol-park/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

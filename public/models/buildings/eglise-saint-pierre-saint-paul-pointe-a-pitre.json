@@ -1,0 +1,120 @@
+{
+  "id": "eglise-saint-pierre-saint-paul-pointe-a-pitre",
+  "name": "Église Saint-Pierre-et-Saint-Paul",
+  "kind": "building",
+  "origin": [
+    -61.53442379839752,
+    16.238998243302536
+  ],
+  "height": 35,
+  "padM": 25,
+  "frontageBearing": 248.8929,
+  "rotation": 1.2024078284204138,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -61.5346456,
+          16.2388068
+        ],
+        [
+          -61.5343938,
+          16.2387126
+        ],
+        [
+          -61.5342017,
+          16.2391904
+        ],
+        [
+          -61.5343831,
+          16.2392563
+        ],
+        [
+          -61.5343688,
+          16.2392927
+        ],
+        [
+          -61.5344133,
+          16.2393087
+        ],
+        [
+          -61.5344278,
+          16.2392727
+        ],
+        [
+          -61.5344542,
+          16.2392827
+        ],
+        [
+          -61.5346456,
+          16.2388068
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -61.5343938,
+        16.2387126
+      ],
+      [
+        -61.5342017,
+        16.2391904
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The single OSM outline measures about57.0 ×28.9m for the hall and includes the4.3 ×5.1m offset rear campanile projection. Adopted35m campanile height is an unsurveyed published approximate figure, not a measured elevation; the21m front pediment and intermediate levels are photo/footprint estimates. The two Commons exteriors identify the same permanent façade and rear metal tower; the city and current diocesan restoration reports were checked, including June8 2026 roof repairs. Model represents the permanent exterior, excludes temporary construction equipment, and does not assume a completed2027 restoration or recolouring. Local y=0 is foundation grade; steps/floor finish are0.15m or more above grade; no plaza/fountain/terrain is included. Geographic yaw baked once from mapped controls [[-61.5343938, 16.2387126], [-61.5342017, 16.2391904]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/eglise-saint-pierre-saint-paul-pointe-a-pitre-near.glb",
+      "bytes": 111396,
+      "triangles": 6692,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -24.381669998168945,
+          -1.9073486612342094e-7,
+          -34.83768081665039
+        ],
+        "max": [
+          23.75437355041504,
+          35,
+          32.677791595458984
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/eglise-saint-pierre-saint-paul-pointe-a-pitre-far.glb",
+      "bytes": 77396,
+      "triangles": 4147,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -24.381669998168945,
+          -1.9073486612342094e-7,
+          -34.83768081665039
+        ],
+        "max": [
+          23.75437355041504,
+          35,
+          32.677791595458984
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eglise-saint-pierre-saint-paul-pointe-a-pitre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

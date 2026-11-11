@@ -1,0 +1,65 @@
+{
+  "id": "red-brick-courthouse-rockville",
+  "name": "Red Brick Courthouse",
+  "kind": "building",
+  "origin": [
+    -77.15151518333333,
+    39.08357783333333
+  ],
+  "height": 33.1,
+  "padM": 65,
+  "frontageBearing": 333.9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The district article and its initial photos included the1931grey courthouse, modern judicialcenter, bank and postoffice. These are excluded. The asset uses mapped building92809156, explicitly tagged RedBrickCourthouse at29CourthouseSquare, and its own mapped center rather than the historicdistrictarticleanchor. Exteriorphotos5and8show the same red tower and pyramidalroof; the October2026panorama6confirms the current location/context but trees obscure the crown, so it is not a crown-proportion source. The1931courthouse92809192 remains a separate unmodelled building. Totalheight and every vertical subdivision are photo estimates; no published surveyedheight was found. The six-storey entrance tower retains its triplet windows, circular clocks and three open belfrybays per face. A small original photo-estimated entrance-stair mask supplements the OSMwall footprint; no plaza/fountain/statue authored. Muted brick, brownstone and slate. Foundationfeet at localstreety0; no terrainbaked. Later appmode ground validation required. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Muted the masonry to dark red sandstone: daylight brick #84483f and dark palette #70423d, preserving the roof, clock belfry and all geometry. The daylight target matches the reviewer’s starting value without increasing saturation.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/red-brick-courthouse-rockville-near.glb",
+      "bytes": 36532,
+      "triangles": 2030,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -15.672150611877441,
+          0,
+          -17.77291488647461
+        ],
+        "max": [
+          14.864019393920898,
+          33.099998474121094,
+          18.820106506347656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/red-brick-courthouse-rockville-far.glb",
+      "bytes": 30296,
+      "triangles": 1462,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -15.672150611877441,
+          0,
+          -17.77291488647461
+        ],
+        "max": [
+          14.864019393920898,
+          33.099998474121094,
+          18.820106506347656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/red-brick-courthouse-rockville/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

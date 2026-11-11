@@ -1,0 +1,72 @@
+{
+  "id": "tour-paradis-liege",
+  "name": "Tour Paradis",
+  "kind": "building",
+  "origin": [
+    5.5720408500000005,
+    50.626670000000004
+  ],
+  "height": 136,
+  "padM": 130,
+  "frontageBearing": 0,
+  "rotation": 2.962610664314651,
+  "roofHeight": 118,
+  "mastHeight": 136,
+  "tip": [
+    -3.0885007281888015,
+    27.415152432283655
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The twelve mapped perimeter control vertices are smoothly interpolated along the rounded sides; the broad straight rear face is retained. Maximum small interpolation deviations are authoring estimates, not a measured survey. Fixed4m storey heights clip against the curved roof; uniform blue panes, continuous pale vertical mullions and0.16m storey bands replace wall cells. No image textures, lettering or signage. y=0 exterior podium grade. The technical crown remains open in both LODs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-paradis-liege-near.glb",
+      "bytes": 252368,
+      "triangles": 22623,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -17.880178451538086,
+          0,
+          -26.64385414123535
+        ],
+        "max": [
+          38.41274642944336,
+          136,
+          69.59725952148438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-paradis-liege-far.glb",
+      "bytes": 116360,
+      "triangles": 9603,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -17.880231857299805,
+          0,
+          -26.64385414123535
+        ],
+        "max": [
+          38.41274642944336,
+          136,
+          69.59725952148438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-paradis-liege/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

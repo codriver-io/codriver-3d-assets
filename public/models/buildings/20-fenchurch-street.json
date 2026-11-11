@@ -1,0 +1,65 @@
+{
+  "id": "20-fenchurch-street",
+  "name": "20 Fenchurch Street",
+  "kind": "building",
+  "origin": [
+    -0.08354,
+    51.51127
+  ],
+  "height": 160.1,
+  "padM": 65,
+  "frontageBearing": 99.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Height accounts differ: CTBUH 160.1 m is used, architect rounds to 160 m and the City page says 155 m. Body plan and intermediate heights follow OSM parts; smooth interpolation, crown vault, glazing, fin thickness and facade rhythm are photo-calibrated estimates. Sky Garden interior, roof machinery, maintenance cranes, logos and lettering are omitted. All 212 replaced mapped ways/parts are enumerated in footprint.js; separate south annex excluded. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/20-fenchurch-street-near.glb",
+      "bytes": 263576,
+      "triangles": 21259,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -31.197856903076172,
+          0,
+          -35.19241714477539
+        ],
+        "max": [
+          30.850914001464844,
+          160.10000610351562,
+          39.38081741333008
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/20-fenchurch-street-far.glb",
+      "bytes": 88776,
+      "triangles": 5794,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -31.108776092529297,
+          0,
+          -35.19241714477539
+        ],
+        "max": [
+          30.850914001464844,
+          160.09706115722656,
+          39.38081741333008
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/20-fenchurch-street/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

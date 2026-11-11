@@ -1,0 +1,65 @@
+{
+  "id": "kaknas-tower",
+  "name": "Kaknas Tower",
+  "kind": "building",
+  "origin": [
+    18.12674785,
+    59.33503555
+  ],
+  "height": 170,
+  "padM": 75,
+  "frontageBearing": 136.75176027316724,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Existing permanent1967 concrete structure and modern operating-tower exterior. Photos3 and6 show clear tower elevations;4 verifies the low base and decks from above;1 and5 are panoramas away from the tower and2 temporary tricolour lighting, excluded.170 m total follows the owner2017 and broadcaster, while the owner2010 release’s177 m is documented as an unresolved estimate/version discrepancy rather than silently combined with the155 m concrete body. Small radio fittings, dishes, flags, signs, logos and roof equipment are omitted. Base/entrance heights, shaft joint spacing, pod frames and mast lattice subdivision are photo-calibrated estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/kaknas-tower-near.glb",
+      "bytes": 75860,
+      "triangles": 5504,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -23.33172607421875,
+          0,
+          -39.16794204711914
+        ],
+        "max": [
+          41.71550369262695,
+          170,
+          33.74665832519531
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/kaknas-tower-far.glb",
+      "bytes": 54900,
+      "triangles": 3202,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -23.33172607421875,
+          0,
+          -39.16794204711914
+        ],
+        "max": [
+          41.71550369262695,
+          170,
+          33.74665832519531
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/kaknas-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "uga-arch",
+  "name": "University of Georgia Arch",
+  "kind": "building",
+  "origin": [
+    -83.3752855,
+    33.9575243
+  ],
+  "height": 3.3528,
+  "padM": 6,
+  "frontageBearing": 345,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "UGA’s 1850s cast-iron gateway: three fluted columns on square plinths, two open walk-through bays, a thin half-round crown with scrollwork and two pale globe lamps. No inscriptions, seal lettering or university logos. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/uga-arch-near.glb",
+      "bytes": 36904,
+      "triangles": 3344,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -1.4657329320907593,
+          0,
+          -0.5407665371894836
+        ],
+        "max": [
+          1.4657329320907593,
+          3.352799892425537,
+          0.5407665371894836
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/uga-arch-far.glb",
+      "bytes": 21872,
+      "triangles": 1536,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -1.4657329320907593,
+          0,
+          -0.5407665371894836
+        ],
+        "max": [
+          1.4657329320907593,
+          3.352799892425537,
+          0.5407665371894836
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/uga-arch/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

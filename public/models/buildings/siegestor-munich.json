@@ -1,0 +1,66 @@
+{
+  "id": "siegestor-munich",
+  "name": "Siegestor",
+  "kind": "building",
+  "origin": [
+    11.5821402,
+    48.15235035
+  ],
+  "height": 26,
+  "padM": 18,
+  "frontageBearing": 341.6720519562251,
+  "rotationY": -1.8906793652932214,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Siegestor with three open barrel-vaulted passages, eight classical facade columns, a tall attic, four stone figures and Bavaria’s four-lion quadriga on the crown. The often-quoted 21 m height is not explicit about the quadriga; it is treated here as the masonry body, with 26 m total an estimated sculpture-inclusive height. This interpretation and the crown proportions need independent dimensional review. Arch radii, column capitals and sculpture poses are original low-detail estimates. Modern north/south facade differences are simplified; inscriptions, lettering and narrative relief panels are omitted. Cityscape: not tested; Full 3D world: not tested. Review follow-up: Lower ellipsoid, limb, arch, wreath and column segmentation removes disproportionate detail; tiny elbow/hand joint balls are omitted while all draped torsos, bent arms, heads, lion bodies, manes, muzzles, legs and paws remain. Sampling compensation keeps the original sculpture extents. Three through-passages and curved soffits, four separate lions, standing Bavaria and 26 m total height survive both LODs. Tests enforce the 5000/2000 total caps and 2000 near bronze cap; the new sheet confirms the same principal silhouette.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/siegestor-munich-near.glb",
+      "bytes": 37040,
+      "triangles": 3076,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -13.183663368225098,
+          0,
+          -9.327594757080078
+        ],
+        "max": [
+          13.183663368225098,
+          26,
+          9.327594757080078
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/siegestor-munich-far.glb",
+      "bytes": 23944,
+      "triangles": 1556,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -13.183663368225098,
+          0,
+          -9.327594757080078
+        ],
+        "max": [
+          13.183663368225098,
+          26,
+          9.327594757080078
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/siegestor-munich/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

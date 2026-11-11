@@ -1,0 +1,66 @@
+{
+  "id": "shrine-of-the-book",
+  "name": "Shrine of the Book",
+  "kind": "building",
+  "origin": [
+    35.20291115,
+    31.7734426
+  ],
+  "height": 8.5,
+  "padM": 32,
+  "frontageBearing": 90.544701552206,
+  "rotationY": 0.009506835526718587,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Shrine of the Book’s white scroll-jar roof with a real open oculus, a shallow surrounding pool and the contrasting black basalt wall. No surveyed height was found. Roof profile, oculus and basalt-wall dimensions are photo estimates. The basalt wall’s position is estimated at the eastern side of the mapped museum courtyard, with its bearing constrained by two controls on that site edge; it needs app-stage placement review. The dome uses its own exact mapped circle. Interior exhibits, inscriptions, sculptures, fountains jets and the descending public entrance are excluded. Cityscape: not tested; Full 3D world: not tested. Review follow-up: Normals are averaged only across coincident curved lamp-shell vertices, retaining the flat oculus lip, recessed interior and raised water/coping. No triangles or dimensions are added. The new near/far sheet shows smoother jar-lid shading with its true oculus and separate basalt wall retained.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/shrine-of-the-book-near.glb",
+      "bytes": 29288,
+      "triangles": 1336,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -12.799421310424805,
+          0,
+          -15.234612464904785
+        ],
+        "max": [
+          24.7393741607666,
+          8.5,
+          12.799421310424805
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/shrine-of-the-book-far.glb",
+      "bytes": 22980,
+      "triangles": 892,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -12.799421310424805,
+          0,
+          -15.234612464904785
+        ],
+        "max": [
+          24.7393741607666,
+          8.5,
+          12.799421310424805
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/shrine-of-the-book/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

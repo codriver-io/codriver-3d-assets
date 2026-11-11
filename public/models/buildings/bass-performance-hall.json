@@ -1,0 +1,65 @@
+{
+  "id": "bass-performance-hall",
+  "name": "Bass Performance Hall",
+  "kind": "building",
+  "origin": [
+    -97.32981868333334,
+    32.75484225
+  ],
+  "height": 31.5,
+  "padM": 65,
+  "frontageBearing": 29.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1998 Bass Performance Hall: cream limestone grand facade, five tall arched windows, twin corner portal domes and two robed, winged angels playing projecting gold trumpets. Sculpture is original simplified geometry, with published full-size proportions. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bass-performance-hall-near.glb",
+      "bytes": 228756,
+      "triangles": 22104,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -37.81962966918945,
+          0,
+          -41.21834945678711
+        ],
+        "max": [
+          41.26799011230469,
+          31.5,
+          41.44020080566406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bass-performance-hall-far.glb",
+      "bytes": 94396,
+      "triangles": 7151,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -37.79470443725586,
+          0,
+          -41.205177307128906
+        ],
+        "max": [
+          41.26799011230469,
+          31.5,
+          41.44020080566406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bass-performance-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

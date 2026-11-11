@@ -1,0 +1,97 @@
+{
+  "id": "flagey-building",
+  "name": "Flagey Building",
+  "kind": "building",
+  "origin": [
+    4.37313495,
+    50.826958
+  ],
+  "height": 50.5,
+  "padM": 130,
+  "frontageBearing": 0,
+  "rotation": -2.7142389573145733,
+  "bodyHeight": 26,
+  "studioHeights": [
+    31,
+    30.5
+  ],
+  "turretCenter": [
+    27,
+    22
+  ],
+  "turretTiers": 5,
+  "core": [
+    22.5,
+    22
+  ],
+  "courtCenters": [
+    [
+      0,
+      15
+    ],
+    [
+      -15.5,
+      -23
+    ],
+    [
+      18,
+      -24
+    ]
+  ],
+  "heightEstimate": true,
+  "ribbonBayTarget": 3.9,
+  "ribbonMullionWidth": 0.24,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "y=0 exterior street grade; light-court floor surfaces start0.10m above grade. The three court bounds and raised studio blocks approximate the architect plan layout and are not a survey. Plan images©Philippe Samyn and Partners/all rights reserved are comparison-only in ignored scratch. Street photographs retain their Commons licences. The stepped turret is the union of round tiers and a rear rectangular antenna shaft, avoiding hidden overlapping facade skins. No flags, venue names, signage or cafe advertising. Interior room divisions and roof plant are simplified.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/flagey-building-near.glb",
+      "bytes": 155244,
+      "triangles": 12492,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -42.03192901611328,
+          0,
+          -44.20517349243164
+        ],
+        "max": [
+          42.03192901611328,
+          50.51250076293945,
+          44.20517349243164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/flagey-building-far.glb",
+      "bytes": 131640,
+      "triangles": 10384,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -42.03192901611328,
+          0,
+          -44.20517349243164
+        ],
+        "max": [
+          42.03192901611328,
+          50.51250076293945,
+          44.20517349243164
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/flagey-building/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "eglise-saint-hubert-longueuil",
+  "name": "Église Saint-Hubert",
+  "kind": "building",
+  "origin": [
+    -73.42084829210754,
+    45.50479055215339
+  ],
+  "height": 48.5,
+  "padM": 44,
+  "frontageBearing": 204.26571483509196,
+  "rotation": 2.7180760343674057,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -73.42077545368961,
+          45.5046414929941
+        ],
+        [
+          -73.4207791,
+          45.5046428
+        ],
+        [
+          -73.4206631,
+          45.5048208
+        ],
+        [
+          -73.4207498,
+          45.5048612
+        ],
+        [
+          -73.4206638,
+          45.5050218
+        ],
+        [
+          -73.4207863,
+          45.5050585
+        ],
+        [
+          -73.4208721,
+          45.5049103
+        ],
+        [
+          -73.4209197,
+          45.5049221
+        ],
+        [
+          -73.4211309,
+          45.5046079
+        ],
+        [
+          -73.42085344503555,
+          45.50452024046077
+        ],
+        [
+          -73.42077545368961,
+          45.5046414929941
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -73.4211309,
+        45.5046079
+      ],
+      [
+        -73.420577,
+        45.5044329
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is rigid foundation grade; no DEM, sea-level height, terrain exaggeration or Mercator stretch is baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Victor Bourgeau’s present 1858–1862 Saint-Hubert church: three Gothic portals, tall central silver needle with open octagonal belfry, four subsidiary lantern pinnacles and stepped stone facade. Main nave approximately 23 × 38 m from OSM; 48.5 m overall and stage heights are photographic estimates. The mapped outer way includes an attached west presbytery wing, which is clipped out of FOOTPRINTS and is not authored or masked. Rear sacristy is retained inside the church envelope. Geographic yaw baked once. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/eglise-saint-hubert-longueuil-near.glb",
+      "bytes": 96396,
+      "triangles": 5733,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -22.127119064331055,
+          -1.1920929132713809e-8,
+          -29.10985565185547
+        ],
+        "max": [
+          15.428325653076172,
+          48.5,
+          30.12469482421875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/eglise-saint-hubert-longueuil-far.glb",
+      "bytes": 68312,
+      "triangles": 3705,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -22.127119064331055,
+          -1.1920929132713809e-8,
+          -29.10985565185547
+        ],
+        "max": [
+          15.428325653076172,
+          48.5,
+          30.12469482421875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eglise-saint-hubert-longueuil/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

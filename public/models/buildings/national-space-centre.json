@@ -1,0 +1,65 @@
+{
+  "id": "national-space-centre",
+  "name": "National Space Centre",
+  "kind": "building",
+  "origin": [
+    -1.131649,
+    52.653763
+  ],
+  "height": 42,
+  "padM": 145,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Only42 m Rocket Tower height is owner-published. Its ellipse, pillow course count, opaque translucent material, frame, hall roof rise and low-wing heights are photo-calibrated exterior estimates. OSM does not separately resolve the Rocket Tower; its geographic fit uses the curved portion of way177654794. Photos2 and3 are checked current built exteriors; the interior exhibit photo is rejected. The geodesic dome is owned by way267528358. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/national-space-centre-near.glb",
+      "bytes": 156804,
+      "triangles": 10162,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -101.99066162109375,
+          0,
+          -53.1998291015625
+        ],
+        "max": [
+          29.638946533203125,
+          42,
+          59.7120475769043
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/national-space-centre-far.glb",
+      "bytes": 64716,
+      "triangles": 3270,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -101.99066162109375,
+          0,
+          -53.1998291015625
+        ],
+        "max": [
+          29.638946533203125,
+          42,
+          59.7120475769043
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/national-space-centre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,144 @@
+{
+  "id": "torre-reloj-cartagena",
+  "name": "Torre del Reloj",
+  "kind": "building",
+  "origin": [
+    -75.54921895,
+    10.4230397
+  ],
+  "height": 31.5,
+  "padM": 85,
+  "frontageBearing": 180,
+  "rotation": 0.9595076826338546,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -75.5494189,
+          10.422881
+        ],
+        [
+          -75.5493118,
+          10.4230312
+        ],
+        [
+          -75.5492695,
+          10.4230906
+        ],
+        [
+          -75.5492337,
+          10.4231409
+        ],
+        [
+          -75.5491355,
+          10.4232787
+        ],
+        [
+          -75.549019,
+          10.4231984
+        ],
+        [
+          -75.5490824,
+          10.4231095
+        ],
+        [
+          -75.5491158,
+          10.4230623
+        ],
+        [
+          -75.5491337,
+          10.4230375
+        ],
+        [
+          -75.5491565,
+          10.4230055
+        ],
+        [
+          -75.549176,
+          10.4229781
+        ],
+        [
+          -75.5491857,
+          10.4229645
+        ],
+        [
+          -75.5491959,
+          10.4229501
+        ],
+        [
+          -75.5492394,
+          10.4228891
+        ],
+        [
+          -75.5493024,
+          10.4228007
+        ],
+        [
+          -75.5494189,
+          10.422881
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -75.54921895,
+        10.4230397
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Photo1 faces the exposed-stone outer gateway, whereas photo2 shows the ochre-plastered inner face: these are two sides of the SAME current building, not alternative paint schemes. The OSM gate rectangle fixes length, depth and geographic bearing. Three arches are cut all the way through the15.6m-deep gate, retaining real barrel vaults and solid separating piers. The stone Baroque outer pediment and simpler yellow rear pediment are original simplified geometry. The octagonal clock body, pointed white shutters, lantern crown triangles and thin spire remain in both LODs. All vertical dimensions are estimates; the municipality reports only over30m rather than a survey, so31.5m is adopted with that uncertainty. No neighboring yellow houses, plaza statue, paving, signs, clock numerals or compass letters are included. Clock dials have abstract ticks/hands without lettering. No source photo textures are shipped. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/torre-reloj-cartagena-near.glb",
+      "bytes": 95512,
+      "triangles": 6384,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -21.892446517944336,
+          0,
+          -26.605976104736328
+        ],
+        "max": [
+          21.892446517944336,
+          31.5,
+          26.605976104736328
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/torre-reloj-cartagena-far.glb",
+      "bytes": 64136,
+      "triangles": 3768,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -21.892446517944336,
+          0,
+          -26.605976104736328
+        ],
+        "max": [
+          21.892446517944336,
+          31.5,
+          26.605976104736328
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/torre-reloj-cartagena/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

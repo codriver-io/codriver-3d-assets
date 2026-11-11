@@ -1,0 +1,128 @@
+{
+  "id": "cathedrale-saint-denis-reunion",
+  "name": "Cathédrale Saint-Denis",
+  "kind": "building",
+  "origin": [
+    55.44879519956839,
+    -20.877134070737682
+  ],
+  "height": 27,
+  "padM": 25,
+  "frontageBearing": 283.0035,
+  "rotation": 0.2269544745279983,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          55.4486105,
+          -20.8772813
+        ],
+        [
+          55.4488172,
+          -20.8772367
+        ],
+        [
+          55.4490273,
+          -20.8771913
+        ],
+        [
+          55.4490157,
+          -20.8771436
+        ],
+        [
+          55.449066,
+          -20.8771328
+        ],
+        [
+          55.4490394,
+          -20.8770241
+        ],
+        [
+          55.4489915,
+          -20.8770344
+        ],
+        [
+          55.4489799,
+          -20.8769869
+        ],
+        [
+          55.4485607,
+          -20.8770774
+        ],
+        [
+          55.4485878,
+          -20.8771883
+        ],
+        [
+          55.4486105,
+          -20.8772813
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        55.4486105,
+        -20.8772813
+      ],
+      [
+        55.4490273,
+        -20.8771913
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current post-2025 yellow ochre façade and five statues are confirmed in both comparison exteriors; the former white/statue-free Commons views were rejected. Parish history confirms the 2022–2025 statue restoration and quotes 45 ×33 ×20 m, whereas OSM measures about49.9 ×23.3 m including the rear sacristy. Height is an unsurveyed 27m photo/footprint estimate to the cross, with nave pediment20.2m and porch13.5m: the published20m may exclude the lantern and is not treated as a surveyed overall height. Only the mapped main church/rear sacristy are owned; the detached modern bell frame and plaza fountain are excluded. Porch floor/steps begin above local grade; no plaza or terrain is authored. Geographic yaw baked once from mapped controls [[55.4486105, -20.8772813], [55.4490273, -20.8771913]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-saint-denis-reunion-near.glb",
+      "bytes": 98540,
+      "triangles": 6815,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.51516342163086,
+          -1.1920929132713809e-8,
+          -16.391498565673828
+        ],
+        "max": [
+          28.31317710876465,
+          27,
+          16.415857315063477
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-saint-denis-reunion-far.glb",
+      "bytes": 70464,
+      "triangles": 4338,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.51516342163086,
+          -1.1920929132713809e-8,
+          -16.391498565673828
+        ],
+        "max": [
+          28.31317710876465,
+          27,
+          16.415857315063477
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-saint-denis-reunion/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

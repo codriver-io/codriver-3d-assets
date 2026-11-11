@@ -1,0 +1,66 @@
+{
+  "id": "temple-saint-martin-montbeliard",
+  "name": "Temple Saint-Martin",
+  "kind": "building",
+  "origin": [
+    6.7973495,
+    47.510170825
+  ],
+  "height": 31.5,
+  "padM": 25,
+  "frontageBearing": 159.14433625723802,
+  "rotation": 0.364,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current exterior, modelled without trees, surrounding square, inscriptions or interior. Long hall, triangular pedimented bays and roof-mounted clock belfry retained in both LODs. Sources 1 and 7 show opposite current exterior angles; source 8 details the side entrance. Organ, maquette, interior paintings and unrelated Paris glass rejected. Exterior heights are estimates; published 11 m ceiling is not silently used as exterior eave. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/temple-saint-martin-montbeliard-near.glb",
+      "bytes": 64720,
+      "triangles": 3034,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -21.962709426879883,
+          1.1920929132713809e-8,
+          -15.614052772521973
+        ],
+        "max": [
+          21.962709426879883,
+          31.5,
+          15.614052772521973
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/temple-saint-martin-montbeliard-far.glb",
+      "bytes": 52576,
+      "triangles": 2290,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -21.962709426879883,
+          1.1920929132713809e-8,
+          -15.614052772521973
+        ],
+        "max": [
+          21.962709426879883,
+          31.5,
+          15.614052772521973
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/temple-saint-martin-montbeliard/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

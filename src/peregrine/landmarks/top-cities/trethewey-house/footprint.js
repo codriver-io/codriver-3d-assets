@@ -1,0 +1,3 @@
+// Exact owned OSM ways, retrieved 2026-11-10; © OpenStreetMap contributors (ODbL-1.0).
+export const OSM_WAYS = [274473291];
+export const FOOTPRINTS = [[[-122.3051485,49.0437082],[-122.3049184,49.0437071],[-122.3049173,49.0438058],[-122.3051476,49.0438069],[-122.3051484,49.0437326],[-122.3051485,49.0437082]]];

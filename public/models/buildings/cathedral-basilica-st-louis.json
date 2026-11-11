@@ -1,0 +1,65 @@
+{
+  "id": "cathedral-basilica-st-louis",
+  "name": "Cathedral Basilica of Saint Louis",
+  "kind": "building",
+  "origin": [
+    -90.25472222,
+    38.6425
+  ],
+  "height": 69,
+  "padM": 105,
+  "frontageBearing": 165,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The mapped 22 m parent height describes the low walls, not the complete dome. OSM distinguishes a 47 m drum, 64 m green dome and 69 m lantern; 69 m is adopted as the estimated exterior tip datum. The green shell rise is adjusted to 9 m over a 55 m spring datum from exterior photo proportions; intermediate drum heights therefore depart from the mapped 47 m tag and are estimates. The municipal preservation record instead lists a 220 ft (67.06 m) dome and 380 × 212 ft overall dimensions, while other accounts list a 227 ft (69.19 m) dome and 365 × 204 ft plan: these discrepancies are unresolved and the model uses mapped plan geometry rather than rescaling it. Front towers use mapped 47 m, close to the published 157 ft (47.85 m). Photos 3, 5 and 6 were checked as current exterior forms; photos 1, 2 and 4 are interiors and were excluded. The main dome, arched drum windows, smaller open lantern and cross, twin open belfries with steep green pyramids, low rounded apses, front rose and nave roof remain in far detail. Granite carving, tile-by-tile relief and interior mosaics are abstracted. No words, logos, religious text, paving or terrain are baked; y=0 is the single rigid exterior footing plane. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Nit: added a 0.30 m light-granite surround around the front rose as adjoining wall tiles, not an overlay. This strengthens the front stone-frame hierarchy while keeping the 3 m glass radius, gable, arched bays, broad green dome and open twin campaniles unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedral-basilica-st-louis-near.glb",
+      "bytes": 147564,
+      "triangles": 11135,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -29.151697158813477,
+          0,
+          -56.52829360961914
+        ],
+        "max": [
+          36.884788513183594,
+          69,
+          47.80080795288086
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedral-basilica-st-louis-far.glb",
+      "bytes": 97584,
+      "triangles": 6792,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -29.151697158813477,
+          0,
+          -56.52829360961914
+        ],
+        "max": [
+          36.884788513183594,
+          69,
+          47.80080795288086
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedral-basilica-st-louis/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "houston-city-hall",
+  "name": "Houston City Hall",
+  "kind": "building",
+  "origin": [
+    -95.36938,
+    29.76018
+  ],
+  "height": 68,
+  "padM": 65,
+  "frontageBearing": 124.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1939 Houston City Hall: fossil-limestone Art Moderne tower with tall recessed vertical window niches, two successive lower wing tiers, a slightly inset plain clock crown, gridded entrance and bare roof flagpole. No civic seals, allegorical figures, lettering or flags. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/houston-city-hall-near.glb",
+      "bytes": 132944,
+      "triangles": 9712,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -37.18633270263672,
+          0,
+          -39.46294021606445
+        ],
+        "max": [
+          38.34598922729492,
+          68,
+          39.21803665161133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/houston-city-hall-far.glb",
+      "bytes": 58632,
+      "triangles": 3486,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -37.18633270263672,
+          0,
+          -39.46294021606445
+        ],
+        "max": [
+          38.34598922729492,
+          68,
+          39.21803665161133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/houston-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

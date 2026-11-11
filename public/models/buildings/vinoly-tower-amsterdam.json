@@ -1,0 +1,66 @@
+{
+  "id": "vinoly-tower-amsterdam",
+  "name": "Viñoly Tower",
+  "kind": "building",
+  "origin": [
+    4.87204,
+    52.337804
+  ],
+  "height": 91,
+  "padM": 85,
+  "frontageBearing": 0,
+  "rotation": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Municipal Zuidas project page gives 91 m; CTBUH lists 95 m and OSM upper part 92 m. The model follows the municipal 91 m with all alternatives documented as uncertainty. The footprint and 26/62/92 m mapped divisions guide the massing; diagonal stair gradients, 2.2 m vertical notch gaps and facade pitch are estimates. Adjacent SOM and Ito structures are excluded.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/vinoly-tower-amsterdam-near.glb",
+      "bytes": 250852,
+      "triangles": 20832,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -20.929000854492188,
+          0,
+          -14.76099967956543
+        ],
+        "max": [
+          70.19400024414062,
+          91,
+          23.14299964904785
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/vinoly-tower-amsterdam-far.glb",
+      "bytes": 99208,
+      "triangles": 7408,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -20.929000854492188,
+          0,
+          -14.76099967956543
+        ],
+        "max": [
+          70.19400024414062,
+          91,
+          23.14299964904785
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/vinoly-tower-amsterdam/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

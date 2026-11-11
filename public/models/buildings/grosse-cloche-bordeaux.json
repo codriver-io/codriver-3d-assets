@@ -1,0 +1,196 @@
+{
+  "id": "grosse-cloche-bordeaux",
+  "name": "Grosse Cloche",
+  "kind": "building",
+  "origin": [
+    -0.57137337,
+    44.83544288
+  ],
+  "height": 40,
+  "padM": 12,
+  "frontageBearing": 189.65986602889586,
+  "rotation": 0.16859646750578253,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -0.571334,
+          44.835479
+        ],
+        [
+          -0.5713644,
+          44.8354751
+        ],
+        [
+          -0.5713917,
+          44.8354716
+        ],
+        [
+          -0.5714591,
+          44.8354639
+        ],
+        [
+          -0.571465,
+          44.8354679
+        ],
+        [
+          -0.571467,
+          44.8354671
+        ],
+        [
+          -0.5714743,
+          44.8354606
+        ],
+        [
+          -0.5714808,
+          44.8354521
+        ],
+        [
+          -0.5714844,
+          44.8354415
+        ],
+        [
+          -0.571483,
+          44.8354311
+        ],
+        [
+          -0.5714769,
+          44.8354222
+        ],
+        [
+          -0.571468,
+          44.8354141
+        ],
+        [
+          -0.5714522,
+          44.8354077
+        ],
+        [
+          -0.5714366,
+          44.8354054
+        ],
+        [
+          -0.5714206,
+          44.8354073
+        ],
+        [
+          -0.5714056,
+          44.8354133
+        ],
+        [
+          -0.5713579,
+          44.8354174
+        ],
+        [
+          -0.5713025,
+          44.8354214
+        ],
+        [
+          -0.5712835,
+          44.8354199
+        ],
+        [
+          -0.5712633,
+          44.8354227
+        ],
+        [
+          -0.571245,
+          44.8354316
+        ],
+        [
+          -0.5712371,
+          44.8354402
+        ],
+        [
+          -0.5712317,
+          44.8354543
+        ],
+        [
+          -0.5712331,
+          44.8354654
+        ],
+        [
+          -0.5712379,
+          44.835475
+        ],
+        [
+          -0.5712519,
+          44.8354871
+        ],
+        [
+          -0.571334,
+          44.835479
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -0.571334,
+        44.835479
+      ],
+      [
+        -0.5714591,
+        44.8354639
+      ],
+      [
+        -0.5714769,
+        44.8354222
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid geometry, no terrain or absolute altitude baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "40 m total from unsurveyed OSM height tag, adopted estimate. Roof, clock, bell and stage dimensions estimated from exterior photographs. Rotation baked from mapped north facade controls [[-0.5714591,44.8354639],[-0.571334,44.835479]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/grosse-cloche-bordeaux-near.glb",
+      "bytes": 50496,
+      "triangles": 3712,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -10.188393592834473,
+          -3.814697322468419e-7,
+          -4.760464191436768
+        ],
+        "max": [
+          10.188393592834473,
+          40,
+          4.760464191436768
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/grosse-cloche-bordeaux-far.glb",
+      "bytes": 41760,
+      "triangles": 2584,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -10.153959274291992,
+          -3.814697322468419e-7,
+          -4.760464191436768
+        ],
+        "max": [
+          10.153959274291992,
+          40,
+          4.760464191436768
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/grosse-cloche-bordeaux/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

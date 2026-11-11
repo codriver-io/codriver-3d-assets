@@ -1,0 +1,65 @@
+{
+  "id": "122-leadenhall-street",
+  "name": "122 Leadenhall Street",
+  "kind": "building",
+  "origin": [
+    -0.082295,
+    51.5139
+  ],
+  "height": 224.5,
+  "padM": 65,
+  "frontageBearing": 89.72,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "224.5 m mapped height is used versus the structural paper rounded 224 m. The 10.62° south slope and mapped lower-gallery/wing heights are retained. Glazing pitch, steel sections, frame module count, roof trough and service details are photo estimates. Glazing is inset to keep the exoskeleton inside the mapped outer frame; the uppermost glazed tip is simplified behind the roof frame. Interior escalators, roof maintenance equipment beyond simple seated plant, lettering and logos are omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/122-leadenhall-street-near.glb",
+      "bytes": 326640,
+      "triangles": 31007,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.700927734375,
+          -1.1920929132713809e-8,
+          -26.906044006347656
+        ],
+        "max": [
+          24.54159164428711,
+          224.45216369628906,
+          31.515796661376953
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/122-leadenhall-street-far.glb",
+      "bytes": 84272,
+      "triangles": 5994,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -24.700927734375,
+          -1.1920929132713809e-8,
+          -26.906044006347656
+        ],
+        "max": [
+          24.54159164428711,
+          224.50241088867188,
+          31.515796661376953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/122-leadenhall-street/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

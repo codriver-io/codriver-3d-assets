@@ -1,0 +1,204 @@
+{
+  "id": "san-giovanni-laterano",
+  "name": "Archbasilica of Saint John Lateran",
+  "kind": "building",
+  "origin": [
+    12.505592,
+    41.8858502
+  ],
+  "height": 48.8,
+  "padM": 110,
+  "frontageBearing": 102.5,
+  "rotation": 0.2181661564992912,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          12.5062998,
+          41.8862682
+        ],
+        [
+          12.5063617,
+          41.8862766
+        ],
+        [
+          12.5063853,
+          41.8862048
+        ],
+        [
+          12.5064485,
+          41.8859916
+        ],
+        [
+          12.5065319,
+          41.8857071
+        ],
+        [
+          12.5064463,
+          41.8856933
+        ],
+        [
+          12.5063642,
+          41.8856799
+        ],
+        [
+          12.5064166,
+          41.8855013
+        ],
+        [
+          12.5061787,
+          41.8854627
+        ],
+        [
+          12.5061716,
+          41.8854868
+        ],
+        [
+          12.5060509,
+          41.8854671
+        ],
+        [
+          12.5061062,
+          41.8852789
+        ],
+        [
+          12.5057224,
+          41.8852163
+        ],
+        [
+          12.5052715,
+          41.8851403
+        ],
+        [
+          12.5051724,
+          41.8854663
+        ],
+        [
+          12.5048186,
+          41.8854067
+        ],
+        [
+          12.5047683,
+          41.8855627
+        ],
+        [
+          12.5046398,
+          41.8860023
+        ],
+        [
+          12.5047276,
+          41.8860166
+        ],
+        [
+          12.5050156,
+          41.8860642
+        ],
+        [
+          12.5049907,
+          41.8861478
+        ],
+        [
+          12.5051827,
+          41.8861794
+        ],
+        [
+          12.5053706,
+          41.8862104
+        ],
+        [
+          12.505402,
+          41.886105
+        ],
+        [
+          12.5057398,
+          41.8861608
+        ],
+        [
+          12.5057064,
+          41.8862729
+        ],
+        [
+          12.5059265,
+          41.8863092
+        ],
+        [
+          12.5059131,
+          41.8863543
+        ],
+        [
+          12.5060882,
+          41.8863831
+        ],
+        [
+          12.5061342,
+          41.8862403
+        ],
+        [
+          12.5062998,
+          41.8862682
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        12.505592,
+        41.8858502
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The ownership envelope is the basilica relation only; adjoining Lateran Palace, detached baptistery, obelisk and Scala Santa are excluded. Open arcaded east and north facades have real cutouts in both LODs. Fifteen statues use planted legs, robed bodies, heads and articulated arms. Nave, lower aisles, cloister courts and chapel roof masses are simplified to map-scale architecture; individual reliefs, mosaic/inscription detail, interior artwork and lettering are omitted. Saint heights are sourced at 7 m; other vertical stage heights and dome/spire dimensions are explicit photo estimates. Rigid local y=0 has no baked hill. Relation member geometry recovered from the OSM full API after the serialized Overpass dossier attempts timed out. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/san-giovanni-laterano-near.glb",
+      "bytes": 204652,
+      "triangles": 16031,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -78.91368865966797,
+          -3.814697322468419e-7,
+          -59.32244873046875
+        ],
+        "max": [
+          78.78192138671875,
+          48.79999923706055,
+          79.02608489990234
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/san-giovanni-laterano-far.glb",
+      "bytes": 120956,
+      "triangles": 5862,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -78.91368865966797,
+          -3.814697322468419e-7,
+          -59.32244873046875
+        ],
+        "max": [
+          78.78192138671875,
+          48.79999923706055,
+          79.02608489990234
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/san-giovanni-laterano/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

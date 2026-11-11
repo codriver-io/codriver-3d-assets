@@ -1,0 +1,82 @@
+{
+  "id": "liege-guillemins",
+  "name": "Liège-Guillemins station",
+  "kind": "building",
+  "origin": [
+    5.567512300000001,
+    50.623865699999996
+  ],
+  "height": 40,
+  "padM": 280,
+  "frontageBearing": 0,
+  "rotation": -0.8835762612165416,
+  "archCountNear": 39,
+  "archCountFar": 21,
+  "archBearings": [
+    [
+      -195,
+      0
+    ],
+    [
+      5,
+      0
+    ]
+  ],
+  "vaultCenter": [
+    -95,
+    0
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "y=0 exterior entrance grade. Grounded support bearings at both arch convergence points; hall remains open below the shell. Five simplified platforms sit0.10m above grade. Lower concourse and short escalator housings estimated. Temporary coloured film artwork is omitted; comparison photos show the permanent2009 white steel/glass structure. Railway track geometry and terrain fitting are deferred to application verification. No station names, train liveries or logos.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/liege-guillemins-near.glb",
+      "bytes": 323256,
+      "triangles": 21804,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -186.58685302734375,
+          0,
+          -168.78338623046875
+        ],
+        "max": [
+          154.97372436523438,
+          40,
+          168.78338623046875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/liege-guillemins-far.glb",
+      "bytes": 110748,
+      "triangles": 7100,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -186.58685302734375,
+          0,
+          -168.78338623046875
+        ],
+        "max": [
+          154.97372436523438,
+          40,
+          168.78338623046875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/liege-guillemins/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

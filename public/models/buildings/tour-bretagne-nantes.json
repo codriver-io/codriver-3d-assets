@@ -1,0 +1,65 @@
+{
+  "id": "tour-bretagne-nantes",
+  "name": "Tour Bretagne",
+  "kind": "building",
+  "origin": [
+    -1.55822612,
+    47.21760173
+  ],
+  "height": 144,
+  "padM": 45,
+  "frontageBearing": 175.095,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "144 m overall confirmed by City;120 m OSM main tower is the shaft below technical/water-tank crown.32 occupied courses. Crown120–134 m and water tank134–143 m plus1 m aerials are photo estimates. y=0 rigid Place Bretagne entry datum;lower-street retaining/ramp elevations excluded. Existing1976 exterior represented during2025–26 interior curage;future renovation design is excluded and must trigger later asset review. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-bretagne-nantes-near.glb",
+      "bytes": 201496,
+      "triangles": 13009,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.806116104125977,
+          0,
+          -20.067564010620117
+        ],
+        "max": [
+          39.477474212646484,
+          144,
+          33.36579132080078
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-bretagne-nantes-far.glb",
+      "bytes": 69760,
+      "triangles": 3579,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -24.806116104125977,
+          0,
+          -20.067564010620117
+        ],
+        "max": [
+          39.477474212646484,
+          144,
+          33.36579132080078
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-bretagne-nantes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

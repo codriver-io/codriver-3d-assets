@@ -1,0 +1,66 @@
+{
+  "id": "rai-elicium",
+  "name": "RAI Elicium",
+  "kind": "building",
+  "origin": [
+    4.88977496,
+    52.34131054
+  ],
+  "height": 46,
+  "padM": 60,
+  "frontageBearing": 355.19851532844535,
+  "rotation": -0.083801716502667,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The architect documents the hovering foyer five metres above street grade and a seven-storey office stack. OSM gives the highest part 46 m; other publications say 47 m, retained as an uncertainty. The frame corners, connection curvature and column sizes are estimates from two specific exterior photos. The mapped 4-degree heading is baked into the export; adjacent RAI halls and their arched roofs are excluded. The blue LED contour, lettering and banners are omitted.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rai-elicium-near.glb",
+      "bytes": 45952,
+      "triangles": 2864,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -22.1898136138916,
+          0,
+          -28.579322814941406
+        ],
+        "max": [
+          49.095062255859375,
+          46,
+          30.83932113647461
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rai-elicium-far.glb",
+      "bytes": 28656,
+      "triangles": 1384,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -22.1898136138916,
+          0,
+          -28.579322814941406
+        ],
+        "max": [
+          49.095062255859375,
+          46,
+          30.83932113647461
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rai-elicium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

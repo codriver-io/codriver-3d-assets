@@ -1,0 +1,172 @@
+{
+  "id": "cathedrale-saint-louis-fort-de-france",
+  "name": "Cathédrale Saint-Louis",
+  "kind": "building",
+  "origin": [
+    -61.069959975,
+    14.60426575
+  ],
+  "height": 58.8,
+  "padM": 45,
+  "frontageBearing": 298.48582901747614,
+  "rotation": -0.49717150651509945,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -61.0702717,
+          14.6043921
+        ],
+        [
+          -61.0702726,
+          14.6043906
+        ],
+        [
+          -61.0702386,
+          14.604372
+        ],
+        [
+          -61.070255,
+          14.6043417
+        ],
+        [
+          -61.0702413,
+          14.6043339
+        ],
+        [
+          -61.0702474,
+          14.6043236
+        ],
+        [
+          -61.0702614,
+          14.6042986
+        ],
+        [
+          -61.0700582,
+          14.6041919
+        ],
+        [
+          -61.0697674,
+          14.6040392
+        ],
+        [
+          -61.0697417,
+          14.6040837
+        ],
+        [
+          -61.0697068,
+          14.6040654
+        ],
+        [
+          -61.0696488,
+          14.6041678
+        ],
+        [
+          -61.0696845,
+          14.6041871
+        ],
+        [
+          -61.0696597,
+          14.6042327
+        ],
+        [
+          -61.0699629,
+          14.6043929
+        ],
+        [
+          -61.0701514,
+          14.6044925
+        ],
+        [
+          -61.0701851,
+          14.6044335
+        ],
+        [
+          -61.0701975,
+          14.6044405
+        ],
+        [
+          -61.0702003,
+          14.604436
+        ],
+        [
+          -61.0702342,
+          14.6044548
+        ],
+        [
+          -61.0702497,
+          14.6044288
+        ],
+        [
+          -61.0702717,
+          14.6043921
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -61.0700582,
+        14.6041919
+      ],
+      [
+        -61.0697674,
+        14.6040392
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Adopted 58.8 m overall follows the parish and historic street-to-cross account; restoration descriptions also quote a 25 m spire and can be read ambiguously, so intermediate heights are estimates. Published church length66 m/width24 m differ from the mapped 60.5 ×24.5 m hall and 70.9 m outer envelope including west porch and rear extension; the mapped plan is used. Current open metal spire is the March 2016 replacement, confirmed by a September 2017 exterior and the parish installation photo. Pre-2016 clad-spire images and interior-only photos were discarded. All stage splits, structural section sizes, traceries and rear elevations are estimated; no square/plaza, flags, lettering or logos. Geographic yaw baked once from mapped controls [[-61.0700582, 14.6041919], [-61.0697674, 14.6040392]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedrale-saint-louis-fort-de-france-near.glb",
+      "bytes": 147540,
+      "triangles": 9238,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -33.64740753173828,
+          -9.536743306171047e-8,
+          -25.353866577148438
+        ],
+        "max": [
+          33.59916687011719,
+          58.79999923706055,
+          25.353866577148438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedrale-saint-louis-fort-de-france-far.glb",
+      "bytes": 88096,
+      "triangles": 4627,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -33.64740753173828,
+          -9.536743306171047e-8,
+          -25.353866577148438
+        ],
+        "max": [
+          33.59916687011719,
+          58.79999923706055,
+          25.353866577148438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedrale-saint-louis-fort-de-france/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

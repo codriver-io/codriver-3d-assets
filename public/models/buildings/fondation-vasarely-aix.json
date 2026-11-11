@@ -1,0 +1,70 @@
+{
+  "id": "fondation-vasarely-aix",
+  "name": "Fondation Vasarely",
+  "kind": "building",
+  "origin": [
+    5.4248642,
+    43.5213935
+  ],
+  "height": 11.4,
+  "padM": 56,
+  "frontageBearing": 5.991326701843718,
+  "rotationRad": 1.4662279492850712,
+  "hexagons": 16,
+  "skylights": 14,
+  "facadeHeight": 9,
+  "circleRadius": 3.05,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Sixteen-cell honeycomb museum with an open hexagonal courtyard, fourteen faceted pyramidal skylights, low glazed base and alternating black/cream circles within square façade panels; original geometry, no artwork textures or signage. The foundation describes 11 m interior volumes while restoration research describes 9 m external alvéoles; this model uses 9 m façades and an estimated 2.4 m skylight rise, not an asserted survey. OSM mapped lattice is approximately 5% larger than the published 14 m cell width, so the mapped exterior is retained and the disagreement is recorded. The distant 2011 photograph is a secondary confirmation of the same unchanged circle-panel layout seen in the more recent front photograph; restoration did not change this massing. Dossier painting, unrelated Gordes sculpture, concert and construction-stage images were rejected. No reflecting pool, plaza or terrain is modelled; y=0 is the rigid exterior wall foundation plane. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fondation-vasarely-aix-near.glb",
+      "bytes": 216832,
+      "triangles": 13738,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -31.834627151489258,
+          -7.1525572131747595e-9,
+          -42.226585388183594
+        ],
+        "max": [
+          31.83464241027832,
+          11.4635591506958,
+          42.22597885131836
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fondation-vasarely-aix-far.glb",
+      "bytes": 134576,
+      "triangles": 8064,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -31.834627151489258,
+          -7.1525572131747595e-9,
+          -42.226585388183594
+        ],
+        "max": [
+          31.83464241027832,
+          11.4635591506958,
+          42.22597885131836
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fondation-vasarely-aix/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
