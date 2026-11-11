@@ -1,0 +1,165 @@
+{
+  "id": "hillsboro-inlet-lighthouse",
+  "name": "Hillsboro Inlet Lighthouse",
+  "kind": "building",
+  "origin": [
+    -80.0807464,
+    26.2591689
+  ],
+  "height": 44.8056,
+  "padM": 12,
+  "frontageBearing": 354.62186557001667,
+  "rotation": 0.09386615341807765,
+  "footprintless": true,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -80.080701,
+          26.2592336
+        ],
+        [
+          -80.0807267,
+          26.2592441
+        ],
+        [
+          -80.0807528,
+          26.2592464
+        ],
+        [
+          -80.0807783,
+          26.2592411
+        ],
+        [
+          -80.0808007,
+          26.259229
+        ],
+        [
+          -80.0808177,
+          26.2592111
+        ],
+        [
+          -80.0808276,
+          26.2591894
+        ],
+        [
+          -80.0808293,
+          26.2591659
+        ],
+        [
+          -80.0808227,
+          26.2591432
+        ],
+        [
+          -80.0808085,
+          26.2591235
+        ],
+        [
+          -80.0807881,
+          26.2591088
+        ],
+        [
+          -80.0807635,
+          26.2591006
+        ],
+        [
+          -80.0807374,
+          26.2590997
+        ],
+        [
+          -80.0807104,
+          26.2591071
+        ],
+        [
+          -80.0806877,
+          26.2591222
+        ],
+        [
+          -80.0806722,
+          26.2591434
+        ],
+        [
+          -80.0806655,
+          26.259168
+        ],
+        [
+          -80.0806685,
+          26.2591932
+        ],
+        [
+          -80.0806808,
+          26.2592159
+        ],
+        [
+          -80.080701,
+          26.2592336
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -80.0807374,
+        26.2590997
+      ],
+      [
+        -80.0807528,
+        26.2592464
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is rigid foundation grade; no DEM, sea-level height, terrain exaggeration or Mercator stretch is baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Hillsboro Inlet Lighthouse, current octagonal skeletal cast-iron structure: eight tapered legs, X bracing, central stair cylinder, black watch room and gallery, prominent 0.16 m black diagonal diamond frames outside muted green lantern glazing and conical finial. OSM lighthouse node and mapped circular pedestrian base ring define position/ownership; no provider building polygon exists. Current preservation society states 147 ft overall (44.8056 m) and 136 ft to lens room; historical sources give 132–144 ft, including 137 ft, so heights are adopted estimates rather than a survey. Eight footings on a 40 ft diameter circle, photo-based 22 m paint division; no keeper buildings or scenery are authored. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/hillsboro-inlet-lighthouse-near.glb",
+      "bytes": 100248,
+      "triangles": 5644,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -8.27607250213623,
+          -5.9604645663569045e-9,
+          -8.627300262451172
+        ],
+        "max": [
+          8.076408386230469,
+          44.805599212646484,
+          7.703344345092773
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/hillsboro-inlet-lighthouse-far.glb",
+      "bytes": 82008,
+      "triangles": 3788,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -8.27607250213623,
+          -5.9604645663569045e-9,
+          -8.627300262451172
+        ],
+        "max": [
+          8.076408386230469,
+          44.805599212646484,
+          7.703344345092773
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/hillsboro-inlet-lighthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

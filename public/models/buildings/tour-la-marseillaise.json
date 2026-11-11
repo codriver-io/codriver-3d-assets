@@ -1,0 +1,65 @@
+{
+  "id": "tour-la-marseillaise",
+  "name": "Tour La Marseillaise",
+  "kind": "building",
+  "origin": [
+    5.3671292,
+    43.31310404
+  ],
+  "height": 135,
+  "padM": 48,
+  "frontageBearing": 85.998,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "135 m/31 storeys architect; OSM32 levels counted differently. Glass roof126 m,upper cage135 m,3.2 m near bays and1.3 m skin setback are photo estimates. No signage,street,port crane or adjacent buildings. Mapped polygon has a small south entrance notch,retained in both LODs. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-la-marseillaise-near.glb",
+      "bytes": 471928,
+      "triangles": 25528,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -43.066261291503906,
+          -6.921829509565214e-8,
+          -31.643449783325195
+        ],
+        "max": [
+          26.8212833404541,
+          135,
+          13.939708709716797
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-la-marseillaise-far.glb",
+      "bytes": 150964,
+      "triangles": 7404,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -43.066261291503906,
+          0,
+          -31.643449783325195
+        ],
+        "max": [
+          26.8212833404541,
+          135,
+          13.939708709716797
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-la-marseillaise/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

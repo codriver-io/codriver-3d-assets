@@ -1,0 +1,65 @@
+{
+  "id": "kauffman-center-kansas-city",
+  "name": "Kauffman Center for the Performing Arts",
+  "kind": "building",
+  "origin": [
+    -94.586824,
+    39.093698
+  ],
+  "height": 40.5,
+  "padM": 115,
+  "frontageBearing": 180,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Two acoustically independent halls are enclosed in separate architectural shells, linked by a tent-like glazed porch facing south, as documented by Safdie and the owner. Exterior2/3show the stepped/fanned metal shells and5shows the southern glassfront;1/4/6are interiors and are not exterior massing sources. OSMsupplies the serrated northern edges, canyon between the halls and the curved southernfront. Original procedural surfaces use those mapped limits, swept curved roofs, raised physical rib strips and opaque northern wall closures. Glasspanes replace frame tiles;27sloping rafters meet a separate roofrim and raised rigidfoundation. Height40.5m is an estimate, not a published/surveyed total. North pavement and south lower entrance occupy different ground levels on an escarpment; this source uses a single low entrance footing y0 with no terrainbaked. Northgrade concealment and southern approach require laterappvalidation. No grounds, lawn, garage, logos, lettering orflag authored. Panel/rib dimensions are visual approximations, not fabrication drawings. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Nit: improved muted silver/rib contrast by darkening the main shells to #909d9a and retaining lighter rib faces #c4c8bd. Both fans, stepped shell profile, sloped glass porch and tested structural contacts are unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/kauffman-center-kansas-city-near.glb",
+      "bytes": 138604,
+      "triangles": 7879,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -112.20405578613281,
+          0,
+          -86.49564361572266
+        ],
+        "max": [
+          3.4386088848114014,
+          40.5,
+          -6.960575103759766
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/kauffman-center-kansas-city-far.glb",
+      "bytes": 78516,
+      "triangles": 4083,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -112.20405578613281,
+          0,
+          -86.49564361572266
+        ],
+        "max": [
+          3.4386088848114014,
+          40.5,
+          -6.960575103759766
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/kauffman-center-kansas-city/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

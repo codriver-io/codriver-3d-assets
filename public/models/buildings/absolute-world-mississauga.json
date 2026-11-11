@@ -1,0 +1,65 @@
+{
+  "id": "absolute-world-mississauga",
+  "name": "Absolute World",
+  "kind": "building",
+  "origin": [
+    -79.63527778,
+    43.59472222
+  ],
+  "height": 179.5,
+  "padM": 130,
+  "frontageBearing": 2.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed twisting towers only; the dossier construction photos were rejected and replaced by 2019 exterior views. Heights disagree: the article gives 161.2 m for the shorter tower, OSM157.9 m, and CTBUH2012 gives158 m; this model uses161.2 m including the open crown; the difference may concern the roof/crown datum, but that explanation is unverified. Taller OSM175.6 m is below published179.5 m. The taller209-degree rotation is sourced; its Gaussian distribution from about1 to8 degrees/floor, the smaller tower’s80-degree total, plate dimensions, podium height and facade setback are estimates calibrated to current photos. Both LODs keep separate balcony and glazing rows. Balcony sweep envelopes are added to the exact mapped footprint rings; adjacent towers are excluded. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/absolute-world-mississauga-near.glb",
+      "bytes": 342596,
+      "triangles": 24308,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -64.1846923828125,
+          0,
+          -41.30775833129883
+        ],
+        "max": [
+          34.06882095336914,
+          179.5,
+          52.278099060058594
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/absolute-world-mississauga-far.glb",
+      "bytes": 111536,
+      "triangles": 7088,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -64.1846923828125,
+          0,
+          -41.30775833129883
+        ],
+        "max": [
+          34.016380310058594,
+          179.5,
+          52.278099060058594
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/absolute-world-mississauga/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

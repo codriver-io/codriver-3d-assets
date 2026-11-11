@@ -1,0 +1,116 @@
+{
+  "id": "cristo-rei-almada",
+  "name": "Cristo Rei",
+  "kind": "building",
+  "origin": [
+    -9.171337325,
+    38.6786030375
+  ],
+  "height": 110,
+  "padM": 21,
+  "frontageBearing": 180,
+  "rotation": 3.1542122897182368,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -9.1714813,
+          38.6787119
+        ],
+        [
+          -9.1713392,
+          38.6787133
+        ],
+        [
+          -9.1711973,
+          38.6787145
+        ],
+        [
+          -9.1711957,
+          38.6786052
+        ],
+        [
+          -9.171194,
+          38.678493
+        ],
+        [
+          -9.1713336,
+          38.6784918
+        ],
+        [
+          -9.1714779,
+          38.6784904
+        ],
+        [
+          -9.1714796,
+          38.6786042
+        ],
+        [
+          -9.1714813,
+          38.6787119
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -9.171337325,
+        38.6786030375
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current monument exterior, with open arches in both LODs. Primary sanctuary dimensions override the stale OSM height=103; overall 110 m follows the operator, with the discrepancy documented. Four pylons taper uniformly to the upper platform; the statue remains rigid and retains feet, a flowing robe, wide sleeves, wrists/hands and a contacting neck/head. Minor facial detail, sculptural panel reliefs, small evangelist sculptures at grade, interior chapel, grounds, inscriptions, branding and the hill are omitted. Statue front follows the north-facing principal pedestal axis toward Lisbon; mapped near east-west controls fix the square base yaw, with 180 degrees selecting that face. The base ring is mapped; a narrow supplemental arm-overhang ring is authored from the published 28 m fingertip span and claims no additional OSM way. No terrain or river elevation is baked. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cristo-rei-almada-near.glb",
+      "bytes": 30300,
+      "triangles": 1540,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -13.998885154724121,
+          0,
+          -12.656745910644531
+        ],
+        "max": [
+          13.998885154724121,
+          110,
+          12.656745910644531
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cristo-rei-almada-far.glb",
+      "bytes": 22388,
+      "triangles": 940,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -13.998885154724121,
+          0,
+          -12.656745910644531
+        ],
+        "max": [
+          13.998885154724121,
+          110,
+          12.656745910644531
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cristo-rei-almada/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

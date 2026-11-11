@@ -1,0 +1,66 @@
+{
+  "id": "porte-de-la-craffe",
+  "name": "Porte de la Craffe",
+  "kind": "building",
+  "origin": [
+    6.177778835,
+    48.69890502375
+  ],
+  "height": 28.5,
+  "padM": 15,
+  "frontageBearing": 148.90241297545356,
+  "rotation": 0.5427552830038018,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Craffe gate only; neighbouring Porte Notre-Dame ways 45064261/45064267, streets and attached urban houses excluded. Verified current day and night front exteriors by Pedro J Pacheco, CC BY-SA 4.0. Interior vault images were read for passage character but not counted as exterior references; the dossier’s brick outer-gate image was rejected because it may depict the separate Porte Notre-Dame approach. The historical double-barred architectural cross is simplified original geometry; inscriptions, coats of arms and civic branding omitted. Roof finials, little lanterns and masonry detail are estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/porte-de-la-craffe-near.glb",
+      "bytes": 56688,
+      "triangles": 3052,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.971721649169922,
+          0,
+          -8.613568305969238
+        ],
+        "max": [
+          10.971721649169922,
+          28.5,
+          8.613568305969238
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/porte-de-la-craffe-far.glb",
+      "bytes": 44920,
+      "triangles": 2148,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.916121482849121,
+          0,
+          -8.557967185974121
+        ],
+        "max": [
+          10.916121482849121,
+          28.5,
+          8.557967185974121
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/porte-de-la-craffe/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

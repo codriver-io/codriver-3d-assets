@@ -1,0 +1,65 @@
+{
+  "id": "tour-d2",
+  "name": "Tour D2",
+  "kind": "building",
+  "origin": [
+    2.24796599,
+    48.89050086
+  ],
+  "height": 171,
+  "padM": 36,
+  "frontageBearing": 138.05,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed 2014 D2; published architectural envelope 171 m, versus OSM 175 m (171 m adopted as an envelope estimate). Rounded mapped plan, tapering upper glass, open lattice crown and continuous diamond exoskeleton preserved. Glass roof at156 m, cage pitch and radial taper photo-estimated. Maximum frame overhang about0.7 m beyond the mapped envelope; no surrounding plaza, signs or interiors. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-d2-near.glb",
+      "bytes": 318436,
+      "triangles": 19510,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -25.910497665405273,
+          -0.15969592332839966,
+          -19.33226776123047
+        ],
+        "max": [
+          28.468429565429688,
+          171.33441162109375,
+          17.89597511291504
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-d2-far.glb",
+      "bytes": 124852,
+      "triangles": 6922,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -25.962602615356445,
+          -0.19536419212818146,
+          -19.3177547454834
+        ],
+        "max": [
+          27.740720748901367,
+          171.3925018310547,
+          17.94530487060547
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-d2/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

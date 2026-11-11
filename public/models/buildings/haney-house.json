@@ -1,0 +1,144 @@
+{
+  "id": "haney-house",
+  "name": "Haney House",
+  "kind": "building",
+  "origin": [
+    -122.60205625,
+    49.213058000000004
+  ],
+  "height": 10.2,
+  "widthM": 13.23,
+  "depthM": 23.61,
+  "padM": 22,
+  "frontageBearing": 184.01100119964303,
+  "rotation": -0.07000517723521349,
+  "controlPoints": [
+    [
+      -122.6021096,
+      49.2131657
+    ],
+    [
+      -122.6021232,
+      49.213039
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.6021096,
+          49.2131657
+        ],
+        [
+          -122.6021232,
+          49.213039
+        ],
+        [
+          -122.6021446,
+          49.21304
+        ],
+        [
+          -122.6021512,
+          49.2129781
+        ],
+        [
+          -122.6020967,
+          49.2129756
+        ],
+        [
+          -122.6020991,
+          49.2129526
+        ],
+        [
+          -122.6020486,
+          49.2129503
+        ],
+        [
+          -122.6020471,
+          49.2129638
+        ],
+        [
+          -122.6019708,
+          49.2129603
+        ],
+        [
+          -122.6019613,
+          49.2130485
+        ],
+        [
+          -122.6020181,
+          49.2130511
+        ],
+        [
+          -122.6020063,
+          49.2131609
+        ],
+        [
+          -122.6021096,
+          49.2131657
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.60205625,
+        49.213058000000004
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped footprint is the actual Haney House above Port Haney, distinct from the brickworks manager house used as Maple Ridge Museum. Museum and City give 1883, superseding OSM start_date 1878. Gable and veranda arrangement follow checked restoration and current City photos; all heights, roof slopes and rear ell height estimated. Current photograph supplies unwrapped chimneys and restored windows; temporary 2018 wrapping and plywood excluded. No garden, signs, lettering or terrain; main raised deck top 0.60 m. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/haney-house-near.glb",
+      "bytes": 37668,
+      "triangles": 2072,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -7.175708770751953,
+          -1.1920929132713809e-8,
+          -11.555611610412598
+        ],
+        "max": [
+          6.298717021942139,
+          10.199999809265137,
+          12.828620910644531
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/haney-house-far.glb",
+      "bytes": 30916,
+      "triangles": 1540,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -7.175708770751953,
+          -1.1920929132713809e-8,
+          -11.555611610412598
+        ],
+        "max": [
+          6.298717021942139,
+          10.199999809265137,
+          12.828620910644531
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/haney-house/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

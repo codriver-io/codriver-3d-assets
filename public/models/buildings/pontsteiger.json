@@ -1,0 +1,66 @@
+{
+  "id": "pontsteiger",
+  "name": "Pontsteiger",
+  "kind": "building",
+  "origin": [
+    4.886223625,
+    52.3936575
+  ],
+  "height": 90,
+  "padM": 120,
+  "frontageBearing": 310.1690860043816,
+  "rotation": -0.8697135185016641,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published height 90 m and free opening 60 m are retained. OSM bridge body begins at 58 m; the authored underside is 60 m to match the published architectural opening and contacts the 60 m tower heads. The mapped clear horizontal gap is about 46 m, while the engineer describes a structural span over 50 m; these are different measurements and the model does not enlarge the map footprint to force agreement. Balcony bays, ground pavilions, 7.65 m truss height and column spacing are photo estimates. Source main outline is relation 13123696 outer way 501744462; inner courtyard and surrounding quays/water remain open. No road layer applies to this inhabited building span.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/pontsteiger-near.glb",
+      "bytes": 209696,
+      "triangles": 16756,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -63.02811813354492,
+          0,
+          -14.883410453796387
+        ],
+        "max": [
+          58.01176452636719,
+          90,
+          106.72247314453125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/pontsteiger-far.glb",
+      "bytes": 100580,
+      "triangles": 7314,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -63.02811813354492,
+          0,
+          -14.883410453796387
+        ],
+        "max": [
+          58.01176452636719,
+          90,
+          106.72247314453125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/pontsteiger/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

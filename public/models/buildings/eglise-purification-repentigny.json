@@ -1,0 +1,65 @@
+{
+  "id": "eglise-purification-repentigny",
+  "name": "Église de la Purification",
+  "kind": "building",
+  "origin": [
+    -73.44705325,
+    45.7392156
+  ],
+  "height": 32,
+  "padM": 45,
+  "frontageBearing": 217.3,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "2020 Fralambert front, oblique and rear exteriors show the same current stone body, two open silver belfries and lower sacristy. Notre-Dame de Paris, an interior, a municipal water plant and a 1971 archival photograph returned by search were rejected. Heights, lantern diameters, roof slopes and fenestration are photo estimates. No paving or terrain is authored. The open lanterns remain genuinely open in far detail. Cityscape: not tested. Full 3D world: not tested. Geographic audit: the wide nave roof stops at its mapped shoulder; two smaller rear roofs follow the stepped apse/sacristy footprint. The twin open belfries and heights are unchanged. Review follow-up: Nit: modestly darkened the stone to #8d8e82 and emphasized the lower and upper belfry cornices with pale trim instead of the silver roof material. Both open belfries and their support contacts are retained.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/eglise-purification-repentigny-near.glb",
+      "bytes": 27520,
+      "triangles": 1019,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -17.873273849487305,
+          0,
+          -23.704092025756836
+        ],
+        "max": [
+          22.558176040649414,
+          32,
+          18.056116104125977
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/eglise-purification-repentigny-far.glb",
+      "bytes": 25548,
+      "triangles": 859,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -17.873273849487305,
+          0,
+          -23.704092025756836
+        ],
+        "max": [
+          22.558176040649414,
+          32,
+          18.056116104125977
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/eglise-purification-repentigny/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "baltimore-world-trade-center",
+  "name": "Baltimore World Trade Center",
+  "kind": "building",
+  "origin": [
+    -76.60965833,
+    39.28601667
+  ],
+  "height": 123.5,
+  "padM": 75,
+  "frontageBearing": 177.4,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Pentagonal sides and street-facing point are retained from OSM, including the provider’s intermediate collinear vertices. Reference5 is a2025 street view,7 is a full-height harbour view,8 confirms the five-sided mass and tall glazed base,2 confirms the lobby material. References1/3/4 mostly show wetland exhibits or views from the tower and6 shows the Hyatt; they are not tower geometry sources. Published counts of28,30,31and32storeys and OSM29levels disagree; the facade uses27office rows plus the tall lobby and service crown without claiming a surveyed floor schedule. All band heights other than total roof height are estimates. No memorial, plaza, lettering or adjacent aquarium is authored. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Nit: warmed the pale concrete toward the reference tan (#b1a58c daylight) while retaining the pentagonal plan, recessed harbour arcade and all 27 separated office window rows in both LODs.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/baltimore-world-trade-center-near.glb",
+      "bytes": 105836,
+      "triangles": 8166,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -22.563007354736328,
+          0,
+          -18.860946655273438
+        ],
+        "max": [
+          20.78464126586914,
+          123.5,
+          23.07329559326172
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/baltimore-world-trade-center-far.glb",
+      "bytes": 60228,
+      "triangles": 3996,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -22.563007354736328,
+          0,
+          -18.860946655273438
+        ],
+        "max": [
+          20.78464126586914,
+          123.5,
+          23.07329559326172
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/baltimore-world-trade-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

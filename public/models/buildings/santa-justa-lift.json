@@ -1,0 +1,104 @@
+{
+  "id": "santa-justa-lift",
+  "name": "Santa Justa Lift",
+  "kind": "building",
+  "origin": [
+    -9.139375,
+    38.712118
+  ],
+  "height": 45,
+  "padM": 35,
+  "frontageBearing": 74,
+  "rotation": 0.28536270232434113,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -9.1394721,
+          38.7121346
+        ],
+        [
+          -9.1393061,
+          38.7121726
+        ],
+        [
+          -9.1392785,
+          38.7120993
+        ],
+        [
+          -9.1394445,
+          38.7120613
+        ],
+        [
+          -9.1394579,
+          38.7120968
+        ],
+        [
+          -9.1394721,
+          38.7121346
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -9.139375,
+        38.712118
+      ]
+    ],
+    "datum": "median",
+    "featherM": 1.5
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current iron exterior and complete covered bridge only. Neighbouring Carmo buildings, extended hilltop paths/stairs, flags, lettering, passengers, moving cabins and lift machinery are omitted. The masonry terminal follows the mapped bridge endpoint, with a conservative rigid buried foundation extended to local y=0 as prescribed for sloping sites; the real hillside should hide its lower wall in world mode, which is not tested. Only the tower base receives a flatten pad; no corridor or hillside flattening is requested. Main tower ring is OSM; narrow bridge projection and bounded terminal support footprints are authored from mapped alignment, not claims of additional building ways. Road layer is null: this is an elevator with a pedestrian connection, not a road bridge. Gothic opening sizes, deck/room levels, tracery and terminal details are photo estimates. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/santa-justa-lift-near.glb",
+      "bytes": 125620,
+      "triangles": 6985,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -29.767911911010742,
+          -2.9802322831784522e-9,
+          -5.927131652832031
+        ],
+        "max": [
+          8.096904754638672,
+          45,
+          11.595096588134766
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/santa-justa-lift-far.glb",
+      "bytes": 93804,
+      "triangles": 4864,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -29.767911911010742,
+          -2.9802322831784522e-9,
+          -5.927131652832031
+        ],
+        "max": [
+          8.096904754638672,
+          45,
+          11.595096588134766
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/santa-justa-lift/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

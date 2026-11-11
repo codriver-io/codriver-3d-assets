@@ -1,0 +1,123 @@
+{
+  "id": "bibliotheque-nationale-francois-mitterrand",
+  "name": "Bibliothèque François-Mitterrand",
+  "kind": "building",
+  "origin": [
+    2.37583333,
+    48.83361111
+  ],
+  "height": 79,
+  "padM": 164,
+  "frontageBearing": 5.256,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          2.373488077,
+          48.83393141
+        ],
+        [
+          2.375869977,
+          48.832039102
+        ],
+        [
+          2.376556623,
+          48.832039102
+        ],
+        [
+          2.378065523,
+          48.832866806
+        ],
+        [
+          2.378065523,
+          48.833318793
+        ],
+        [
+          2.375683223,
+          48.835211085
+        ],
+        [
+          2.374996577,
+          48.835211085
+        ],
+        [
+          2.373488077,
+          48.834383389
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        2.37422265,
+        48.834133699999995
+      ],
+      [
+        2.3753039166666667,
+        48.83472678333334
+      ],
+      [
+        2.376249516666667,
+        48.83252361666666
+      ],
+      [
+        2.377330966666667,
+        48.83311681666667
+      ]
+    ],
+    "datum": "median",
+    "featherM": 4
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1995/1996 Francois-Mitterrand site:four mapped L-shaped open-book towers,each79 m and22 storeys. Four named tower footprints only; the esplanade,underground library,forest court,steps and neighbouring MK2 are excluded. Window/wood-shutter grouping and colours estimated. Local y=0 is the common tower foundation/esplanade datum; the original tower-only terrain pads were replaced by the bounded site support below. No terrain or app verification. Cityscape: not tested. Full 3D world: not tested. Placement correction 2026-11-10: A single bounded site pad now connects the four tower footings and the intervening esplanade, with one near-lattice-cell support halo; the four original tower datum references are retained. The reusable geometry remains the four towers only; no esplanade mesh was added.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bibliotheque-nationale-francois-mitterrand-near.glb",
+      "bytes": 416444,
+      "triangles": 27376,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -146.69308471679688,
+          0,
+          -152.95187377929688
+        ],
+        "max": [
+          138.40850830078125,
+          79,
+          149.83714294433594
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bibliotheque-nationale-francois-mitterrand-far.glb",
+      "bytes": 116336,
+      "triangles": 6640,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -146.69308471679688,
+          0,
+          -152.95187377929688
+        ],
+        "max": [
+          138.40850830078125,
+          79,
+          149.83714294433594
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bibliotheque-nationale-francois-mitterrand/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

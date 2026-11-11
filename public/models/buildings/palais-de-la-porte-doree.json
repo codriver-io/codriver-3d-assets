@@ -1,0 +1,65 @@
+{
+  "id": "palais-de-la-porte-doree",
+  "name": "Palais de la Porte Dorée",
+  "kind": "building",
+  "origin": [
+    2.40947221,
+    48.83537604
+  ],
+  "height": 18.5,
+  "padM": 67,
+  "frontageBearing": 334.772,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "88.35 m mapped frontage;13 m columns and facade relief supported by operator. Overall18.5 m and stair3.2 m are photo estimates. Original grouped human/animal silhouettes project0.30 m behind the colonnade,without copying specific Janniot figures or text; far rear windows retain3 separated rows. No plaza or water basin. Current facade compared with2 exterior references. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palais-de-la-porte-doree-near.glb",
+      "bytes": 110812,
+      "triangles": 6043,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -59.26413345336914,
+          0,
+          -37.16512680053711
+        ],
+        "max": [
+          45.89030075073242,
+          18.5,
+          59.426795959472656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palais-de-la-porte-doree-far.glb",
+      "bytes": 76732,
+      "triangles": 3897,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -59.26413345336914,
+          0,
+          -37.16512680053711
+        ],
+        "max": [
+          45.89030075073242,
+          18.5,
+          59.426795959472656
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palais-de-la-porte-doree/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,176 @@
+{
+  "id": "port-coquitlam-city-hall",
+  "name": "Port Coquitlam City Hall",
+  "kind": "building",
+  "origin": [
+    -122.78056330000001,
+    49.26218285
+  ],
+  "height": 14.6,
+  "widthM": 26.87,
+  "depthM": 37.02,
+  "padM": 31,
+  "frontageBearing": 302.4646385349698,
+  "rotation": 2.5749778206847407,
+  "controlPoints": [
+    [
+      -122.7805663,
+      49.2619891
+    ],
+    [
+      -122.7808363,
+      49.2621012
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.7804743,
+          49.2620838
+        ],
+        [
+          -122.7805663,
+          49.2619891
+        ],
+        [
+          -122.7808363,
+          49.2621012
+        ],
+        [
+          -122.7808243,
+          49.2621132
+        ],
+        [
+          -122.7807846,
+          49.2621542
+        ],
+        [
+          -122.7807753,
+          49.2621638
+        ],
+        [
+          -122.7807464,
+          49.2621936
+        ],
+        [
+          -122.7807383,
+          49.262202
+        ],
+        [
+          -122.7807083,
+          49.2621897
+        ],
+        [
+          -122.7806808,
+          49.2622168
+        ],
+        [
+          -122.7806533,
+          49.262244
+        ],
+        [
+          -122.7806723,
+          49.2622519
+        ],
+        [
+          -122.7806096,
+          49.262316
+        ],
+        [
+          -122.7805503,
+          49.2623766
+        ],
+        [
+          -122.7802903,
+          49.2622685
+        ],
+        [
+          -122.7804083,
+          49.2621472
+        ],
+        [
+          -122.7803703,
+          49.2621312
+        ],
+        [
+          -122.7804013,
+          49.2620988
+        ],
+        [
+          -122.7804268,
+          49.2620719
+        ],
+        [
+          -122.7804323,
+          49.2620665
+        ],
+        [
+          -122.7804743,
+          49.2620838
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.78056330000001,
+        49.26218285
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "City heritage statement identifies 1914 original and 1988 three-storey addition, separated by a glazed atrium. Selection shorthand describing a white tower was corrected after checking the official exterior and heritage statement: the real landmark is this brick complex. Mapped north/east wing is historic; south/west wing and recessed west-entry atrium are separate masses. Heights, roof truncation, masonry rhythms, stair rise and atrium arch are photo estimates. No neighbouring cenotaph, cafe, public square, radio antenna, heraldry, lettering, flags or signs. Original raised entry stair stands on local y=0. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/port-coquitlam-city-hall-near.glb",
+      "bytes": 57708,
+      "triangles": 3910,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -20.240690231323242,
+          -3.973642748178463e-9,
+          -22.150808334350586
+        ],
+        "max": [
+          20.42854118347168,
+          14.600000381469727,
+          21.97662925720215
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/port-coquitlam-city-hall-far.glb",
+      "bytes": 53368,
+      "triangles": 3494,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -20.240690231323242,
+          -3.973642748178463e-9,
+          -22.150808334350586
+        ],
+        "max": [
+          20.42854118347168,
+          14.600000381469727,
+          21.97662925720215
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/port-coquitlam-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,168 @@
+{
+  "id": "azrieli-center",
+  "name": "Azrieli Center (original three towers)",
+  "kind": "building",
+  "origin": [
+    34.791866299999995,
+    32.074623
+  ],
+  "height": 187,
+  "padM": 40,
+  "frontageBearing": 180.32720171675908,
+  "rotationY": 1.57650707407052,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          34.790765077,
+          32.073749481
+        ],
+        [
+          34.790771977,
+          32.07366728
+        ],
+        [
+          34.790791677,
+          32.07362518
+        ],
+        [
+          34.790830777,
+          32.07358408
+        ],
+        [
+          34.790886477,
+          32.07355358
+        ],
+        [
+          34.791567977,
+          32.073322479
+        ],
+        [
+          34.792254623,
+          32.073322479
+        ],
+        [
+          34.792814223,
+          32.07368208
+        ],
+        [
+          34.792881023,
+          32.073744881
+        ],
+        [
+          34.792918923,
+          32.073801081
+        ],
+        [
+          34.792958523,
+          32.073879181
+        ],
+        [
+          34.792962323,
+          32.073997381
+        ],
+        [
+          34.792967523,
+          32.074200682
+        ],
+        [
+          34.792967523,
+          32.074782517
+        ],
+        [
+          34.792577923,
+          32.075851614
+        ],
+        [
+          34.792431023,
+          32.075909713
+        ],
+        [
+          34.792293223,
+          32.075923513
+        ],
+        [
+          34.791606577,
+          32.075923513
+        ],
+        [
+          34.791473477,
+          32.075903713
+        ],
+        [
+          34.791333377,
+          32.075850314
+        ],
+        [
+          34.790810277,
+          32.074630417
+        ],
+        [
+          34.790765077,
+          32.074331318
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        34.791866299999995,
+        32.074623
+      ]
+    ],
+    "datum": "median",
+    "featherM": 8
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The original three Azrieli towers: a 187 m circular shaft, 169 m triangular prism and 154 m rotated square tower, each with a pale curtain-wall grid and retained mechanical crown, above the shared low mall and circular roof atrium. Published tower heights are from the operator. Floor counts differ by one between the operator and OSM for the triangular and square towers; facade cadence is a visual approximation. OSM mall height 37 m and estimated min_height 9.25 m conflict with the photographed four-storey low podium, so this model uses an explicitly estimated 18.5 m roof with grounded walls and a 24.2 m glass atrium. The new Spiral Tower, construction, bridge links and detached entrance glazing are excluded; this asset is the original three-tower group only. Cityscape: not tested; Full 3D world: not tested. Placement correction 2026-11-10: The old 40 m anchor disc missed the long mall podium. A bounded pad now covers the mapped original three-tower/mall site and one near-lattice-cell support halo, using the same origin grade rather than roof-contaminated DEM peaks as its datum. No architectural vertex moved.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/azrieli-center-near.glb",
+      "bytes": 541644,
+      "triangles": 51343,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -71.49104309082031,
+          0,
+          -112.388671875
+        ],
+        "max": [
+          71.49104309082031,
+          187,
+          112.388671875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/azrieli-center-far.glb",
+      "bytes": 134400,
+      "triangles": 11093,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -71.49104309082031,
+          0,
+          -112.388671875
+        ],
+        "max": [
+          71.49104309082031,
+          187,
+          112.388671875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/azrieli-center/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

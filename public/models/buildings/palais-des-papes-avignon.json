@@ -1,0 +1,65 @@
+{
+  "id": "palais-des-papes-avignon",
+  "name": "Palais des Papes",
+  "kind": "building",
+  "origin": [
+    4.8074426,
+    43.95049756
+  ],
+  "height": 52,
+  "padM": 133,
+  "frontageBearing": 329.331,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Trouillas52 m primary UNESCO;Campane46 m,entrance spires44 m,old/new wings28/24 m and Grande Chapelle42 m ridge are exterior photo estimates. Four relation1253164 inner rings remain open. Towers are geographic subdivisions of the mapped palace envelope,not surveyed roof-part footprints. Original abstract stone detail,not copied sculpture. No Cathedral Notre-Dame-des-Doms,rocher terrain,plaza or gardens floor. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palais-des-papes-avignon-near.glb",
+      "bytes": 261436,
+      "triangles": 15854,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -60.68335723876953,
+          0,
+          -103.5250015258789
+        ],
+        "max": [
+          81.97502136230469,
+          52,
+          53.56248474121094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palais-des-papes-avignon-far.glb",
+      "bytes": 175800,
+      "triangles": 10274,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -60.68335723876953,
+          0,
+          -103.5250015258789
+        ],
+        "max": [
+          81.97502136230469,
+          52,
+          53.56248474121094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palais-des-papes-avignon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

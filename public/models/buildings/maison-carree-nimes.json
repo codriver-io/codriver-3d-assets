@@ -1,0 +1,68 @@
+{
+  "id": "maison-carree-nimes",
+  "name": "Maison Carrée de Nîmes",
+  "kind": "building",
+  "origin": [
+    4.3561318,
+    43.8381914
+  ],
+  "height": 17,
+  "padM": 24,
+  "frontageBearing": 168.14299511698107,
+  "rotationRad": -1.3638525521611717,
+  "frontColumns": 6,
+  "totalColumns": 30,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Raised Roman temple with six free-standing front Corinthian columns, a deep open pronaos, thirty fluted free/engaged shafts, a single broad access stair and triangular pediments. Official rounded width of 15 m includes a broader envelope than the 13.54 m architectural body; the model uses the narrower body and wider cornice. Published 17 and 17.1 m heights are rounded to 17 m. The mapped northern stair projection is retained. Capitals are simplified leaf-like profiles, not traced ornament; no lettering. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/maison-carree-nimes-near.glb",
+      "bytes": 91492,
+      "triangles": 7864,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -9.54337215423584,
+          -4.2915345943583816e-8,
+          -16.029386520385742
+        ],
+        "max": [
+          10.529626846313477,
+          17,
+          17.179092407226562
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/maison-carree-nimes-far.glb",
+      "bytes": 50788,
+      "triangles": 3784,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -9.54337215423584,
+          -4.2915345943583816e-8,
+          -16.029386520385742
+        ],
+        "max": [
+          10.529626846313477,
+          17,
+          17.179092407226562
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/maison-carree-nimes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

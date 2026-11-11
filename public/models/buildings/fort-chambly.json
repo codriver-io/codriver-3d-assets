@@ -1,0 +1,210 @@
+{
+  "id": "fort-chambly",
+  "name": "Fort Chambly",
+  "kind": "building",
+  "origin": [
+    -73.27694,
+    45.44949
+  ],
+  "height": 17.2,
+  "padM": 40,
+  "frontageBearing": 272.9420630137363,
+  "rotation": 1.5194476404040513,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -73.276644,
+          45.4496265
+        ],
+        [
+          -73.2766634,
+          45.4493313
+        ],
+        [
+          -73.2766118,
+          45.4493305
+        ],
+        [
+          -73.2766224,
+          45.449245
+        ],
+        [
+          -73.2767319,
+          45.4492565
+        ],
+        [
+          -73.2767311,
+          45.4492833
+        ],
+        [
+          -73.2771643,
+          45.44929
+        ],
+        [
+          -73.2771678,
+          45.4492627
+        ],
+        [
+          -73.2772984,
+          45.4492595
+        ],
+        [
+          -73.2772793,
+          45.4493442
+        ],
+        [
+          -73.2772436,
+          45.4493444
+        ],
+        [
+          -73.2772341,
+          45.4494806
+        ],
+        [
+          -73.2772336,
+          45.4494869
+        ],
+        [
+          -73.2772331,
+          45.4494942
+        ],
+        [
+          -73.2772213,
+          45.4496488
+        ],
+        [
+          -73.2772679,
+          45.4496487
+        ],
+        [
+          -73.2772707,
+          45.4497283
+        ],
+        [
+          -73.2771415,
+          45.4497212
+        ],
+        [
+          -73.2771433,
+          45.4496925
+        ],
+        [
+          -73.2769288,
+          45.449688
+        ],
+        [
+          -73.2767189,
+          45.4496836
+        ],
+        [
+          -73.2767176,
+          45.4497106
+        ],
+        [
+          -73.2765875,
+          45.4497113
+        ],
+        [
+          -73.2766009,
+          45.4496239
+        ],
+        [
+          -73.276644,
+          45.4496265
+        ]
+      ],
+      [
+        [
+          -73.2772331,
+          45.4494942
+        ],
+        [
+          -73.2771465,
+          45.4494912
+        ],
+        [
+          -73.2771475,
+          45.4494775
+        ],
+        [
+          -73.2772341,
+          45.4494806
+        ],
+        [
+          -73.2772336,
+          45.4494869
+        ],
+        [
+          -73.2772331,
+          45.4494942
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -73.2772436,
+        45.4493444
+      ],
+      [
+        -73.2772213,
+        45.4496488
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is rigid foundation grade; no DEM, sea-level height, terrain exaggeration or Mercator stretch is baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Present restored stone Fort Chambly, completed in 1711: four tall corner bastions, two-level musket slits, western gate with pediment and projecting sentry boxes, open quadrangle and pitched courtyard barracks roofs. OSM wall envelope approximately 54 × 54 m; 17.2 m maximum, wall/bastion heights and roof construction are photographic estimates. No moat, river, terrain embankment or surrounding park is authored. Geographic yaw baked from the western curtain controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fort-chambly-near.glb",
+      "bytes": 137180,
+      "triangles": 7616,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.04408836364746,
+          0,
+          -27.854616165161133
+        ],
+        "max": [
+          28.04408836364746,
+          17.200000762939453,
+          27.854616165161133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fort-chambly-far.glb",
+      "bytes": 112412,
+      "triangles": 5966,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -28.04408836364746,
+          0,
+          -27.854616165161133
+        ],
+        "max": [
+          28.04408836364746,
+          17.200000762939453,
+          27.854616165161133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fort-chambly/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

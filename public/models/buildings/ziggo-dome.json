@@ -1,0 +1,66 @@
+{
+  "id": "ziggo-dome",
+  "name": "Ziggo Dome",
+  "kind": "building",
+  "origin": [
+    4.937095599999999,
+    52.3134096
+  ],
+  "height": 30,
+  "padM": 170,
+  "frontageBearing": 0,
+  "rotation": -2.630604470963027,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "No video advertising, names, logos, signs or media texture. Media facade represented by muted vertical strips in both LODs. Only the arena, entrance and its two enclosed footbridges are authored; adjoining offices and extensions remain host geometry. Comparison photos of completed building are night views.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ziggo-dome-near.glb",
+      "bytes": 93756,
+      "triangles": 7334,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -71.6750717163086,
+          0,
+          -81.53076934814453
+        ],
+        "max": [
+          123.60071563720703,
+          30,
+          66.07955169677734
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ziggo-dome-far.glb",
+      "bytes": 36228,
+      "triangles": 2186,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -71.6750717163086,
+          0,
+          -81.53076934814453
+        ],
+        "max": [
+          123.60071563720703,
+          30,
+          66.07955169677734
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ziggo-dome/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "gwinnett-historic-courthouse",
+  "name": "Gwinnett Historic Courthouse",
+  "kind": "building",
+  "origin": [
+    -83.989025,
+    33.95683
+  ],
+  "height": 36.5,
+  "padM": 60,
+  "frontageBearing": 174,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1885 courthouse with its 1908 four-sided clock crown, white louvered belfry, red brick tower and open arched entrance porch; tall round-headed hall windows and bracketed cross gables. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gwinnett-historic-courthouse-near.glb",
+      "bytes": 82860,
+      "triangles": 5570,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -12.012687683105469,
+          0,
+          -25.337902069091797
+        ],
+        "max": [
+          12.351157188415527,
+          36.5,
+          24.74863052368164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gwinnett-historic-courthouse-far.glb",
+      "bytes": 59084,
+      "triangles": 3522,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -12.012687683105469,
+          0,
+          -25.337902069091797
+        ],
+        "max": [
+          12.351157188415527,
+          36.5,
+          24.74863052368164
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gwinnett-historic-courthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

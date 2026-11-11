@@ -1,0 +1,66 @@
+{
+  "id": "intercontinental-bucharest",
+  "name": "Grand Hotel Bucharest (former InterContinental)",
+  "kind": "building",
+  "origin": [
+    26.1022401,
+    44.43729235
+  ],
+  "height": 90,
+  "padM": 48,
+  "frontageBearing": 268.7069505368531,
+  "rotationY": 3.1190246830667343,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Grand Hotel Bucharest, the former InterContinental: three concave balcony facades around a Y-shaped tower, tall pale end piers, a broad podium and curved roof crown. Published roof height is 87 m; OSM tower part is tagged 90 m. The model uses 87 m for the roof and an estimated 3 m antenna for a 90 m overall height. Balcony spacing, inset depth, podium divisions and roof crown are estimates. The current Grand Hotel name is recorded; all old/new logos and lettering are omitted. Cityscape: not tested; Full 3D world: not tested. Review follow-up: Far LOD groups the tower into 14 discrete balcony/window levels instead of 20 near levels, reducing far cost to 5923 triangles. The three concave frontage groups, inset glazing, balcony plates, tall end piers and dipped crown remain; the new sheet retains the curved balcony rhythm. Near geometry is unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/intercontinental-bucharest-near.glb",
+      "bytes": 148628,
+      "triangles": 10385,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -26.12651824951172,
+          0,
+          -33.00081253051758
+        ],
+        "max": [
+          26.12651824951172,
+          90,
+          33.000816345214844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/intercontinental-bucharest-far.glb",
+      "bytes": 90692,
+      "triangles": 5923,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -26.12651824951172,
+          0,
+          -33.00081253051758
+        ],
+        "max": [
+          26.12651824951172,
+          90,
+          33.000816345214844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/intercontinental-bucharest/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

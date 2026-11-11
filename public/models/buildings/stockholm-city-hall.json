@@ -1,0 +1,65 @@
+{
+  "id": "stockholm-city-hall",
+  "name": "Stockholm City Hall",
+  "kind": "building",
+  "origin": [
+    18.055987,
+    59.327268
+  ],
+  "height": 106,
+  "padM": 160,
+  "frontageBearing": 172.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The permanent1923 building in its unscaffolded2026 state is modeled; the owner schedules tower restoration for early2027–2028. Checked photos1 and3 show court and arcades,2 is a February2026 full waterfront exterior;4 is decorative projection lighting and5–6 interiors, not geometry references. OSM heights are estimates except the city-published106 m total. Roof profiles, sparse shaft windows, lantern proportions, sculpture poses,2.2 m crown spans and arch intrados are photo-calibrated estimates. No waterfront paving, sea surface, stairs beyond the owned envelope, heraldic lettering, copied statues or flags are exported. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stockholm-city-hall-near.glb",
+      "bytes": 316760,
+      "triangles": 25747,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -134.5252685546875,
+          0,
+          -69.17424774169922
+        ],
+        "max": [
+          9.873345375061035,
+          106,
+          19.002323150634766
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stockholm-city-hall-far.glb",
+      "bytes": 98904,
+      "triangles": 6110,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -134.5252685546875,
+          0,
+          -69.17424774169922
+        ],
+        "max": [
+          9.873345375061035,
+          106,
+          19.002323150634766
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stockholm-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

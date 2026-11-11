@@ -1,0 +1,13 @@
+import * as THREE from'three';import{assetBuilder}from'../../asset-geometry.js';import{SPEC,PALETTES}from'./config.js';import{FOOTPRINTS}from'./footprint.js';import{local,simplify,surfaces}from'./tour-oxygene-parts.js';
+export const PLAN=simplify(local(FOOTPRINTS[0],SPEC.origin),.25);export const scale=y=>.8+.2*Math.min(1,y/28);export const roofY=(x,z)=>115-.006*(x*x+z*z);export const POSTS=[[-8,0],[0,-8],[5,3]];
+export function leafY(x,z){for(let i=0;i<PLAN.length;i++){const a=PLAN[i],c=PLAN[(i+1)%PLAN.length],den=a[0]*c[1]-a[1]*c[0];if(Math.abs(den)<1e-9)continue;const u=(x*c[1]-z*c[0])/den,v=(a[0]*z-a[1]*x)/den;if(u>=-1e-8&&v>=-1e-8&&u+v<=1+1e-8)return 115*(1-u-v)+roofY(...a)*u+roofY(...c)*v;}throw Error('leaf support outside roof');}
+
+export function create({detail='near'}={}){const near=detail==='near',b=assetBuilder({...SPEC,palette:PALETTES.light},detail),s=surfaces(b),p=PLAN.slice();if(p.reduce((a,v,i)=>{const c=p[(i+1)%p.length];return a+v[0]*c[1]-c[0]*v[1];},0)<0)p.reverse();const rows=near?28:14,levels=Array.from({length:rows+1},(_,i)=>i*110/rows);levels.push(28);levels.sort((a,c)=>a-c);const at=(q,y)=>[q[0]*scale(y),y,q[1]*scale(y)];
+ for(let i=0;i<p.length;i++){const a=p[i],c=p[(i+1)%p.length],len=Math.hypot(c[0]-a[0],c[1]-a[1]),cols=Math.max(1,Math.round(len/(near?1.7:4))),mix=u=>a.map((v,k)=>v+(c[k]-v)*u);for(let col=0;col<cols;col++){const u0=col/cols,u1=(col+1)/cols,um=Math.min(u1,u0+(near?.09:.15)/len),tile=(mat,lo,hi,y0,y1)=>s.quad(mat,at(mix(lo),y0),at(mix(lo),y1),at(mix(hi),y1),at(mix(hi),y0));for(let j=0;j<levels.length-1;j++){const y0=levels[j],y1=levels[j+1],yh=Math.min(y1,y0+(near?.18:.3));tile('frame',u0,um,y0,y1);tile('frame',um,u1,y0,yh);tile('glass',um,u1,yh,y1);}}}
+ s.cap(p,110,'roof');
+ // Three continuous pale seams follow the lower inward taper and upper shaft.
+ for(const i of[0,7,15]){const q=p[i%p.length];b.bar('frame',at(q,0),at(q,28),.5);b.bar('frame',at(q,28),at(q,110),.5);}
+ // The shallow curved leaf is a closed roof shell supported above the roof.
+ for(let i=0;i<p.length;i++){const a=p[i],c=p[(i+1)%p.length];s.tri('roof',[a[0],roofY(...a),a[1]],[0,115,0],[c[0],roofY(...c),c[1]]);s.tri('roof',[a[0],roofY(...a)-.65,a[1]],[c[0],roofY(...c)-.65,c[1]],[0,114.35,0]);}for(let i=0;i<p.length;i++){const a=p[i],c=p[(i+1)%p.length];s.quad('frame',[a[0],roofY(...a),a[1]],[c[0],roofY(...c),c[1]],[c[0],roofY(...c)-.65,c[1]],[a[0],roofY(...a)-.65,a[1]]);}
+ for(const q of POSTS)b.bar('core',[q[0],110,q[1]],[q[0],leafY(...q)-.65,q[1]],.7);
+ const m=s.finish();m.userData.identity='rounded triangular blue-glass tower, seven-level tapered foot and pale curved leaf crown';return m;}

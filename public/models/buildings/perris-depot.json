@@ -1,0 +1,148 @@
+{
+  "id": "perris-depot",
+  "name": "Perris Depot",
+  "kind": "building",
+  "origin": [
+    -117.22935905,
+    33.7826326
+  ],
+  "height": 14.8,
+  "widthM": 39.06,
+  "depthM": 12.33,
+  "padM": 29,
+  "frontageBearing": 273.0540831491,
+  "rotation": -1.6241001333771725,
+  "controlPoints": [
+    [
+      -117.2293101,
+      33.7826251
+    ],
+    [
+      -117.229321,
+      33.7824553
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.229426,
+          33.78246
+        ],
+        [
+          -117.2294155,
+          33.7826242
+        ],
+        [
+          -117.2294289,
+          33.7826248
+        ],
+        [
+          -117.229421,
+          33.7827474
+        ],
+        [
+          -117.2293973,
+          33.7827464
+        ],
+        [
+          -117.2293932,
+          33.7828099
+        ],
+        [
+          -117.2292999,
+          33.7828058
+        ],
+        [
+          -117.2293053,
+          33.7827221
+        ],
+        [
+          -117.2292892,
+          33.7827214
+        ],
+        [
+          -117.2292951,
+          33.7826295
+        ],
+        [
+          -117.2292954,
+          33.7826245
+        ],
+        [
+          -117.2293101,
+          33.7826251
+        ],
+        [
+          -117.229321,
+          33.7824553
+        ],
+        [
+          -117.229426,
+          33.78246
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.22935905,
+        33.7826326
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The OSM outline measures about 39 by 12 m; 4.3 m eave, 10.8 m cross-roof crown and 14.8 m turret tip are photographic estimates. Library of Congress and OSM locate the restored depot at 120 W Fourth Street; Wikipedia latitude is incorrect. Model depicts the restored 2009 exterior, omits the flag and all lettering. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/perris-depot-near.glb",
+      "bytes": 20420,
+      "triangles": 892,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -6.333003044128418,
+          -9.536743306171047e-8,
+          -19.893476486206055
+        ],
+        "max": [
+          6.042328834533691,
+          14.800000190734863,
+          19.893476486206055
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/perris-depot-far.glb",
+      "bytes": 18588,
+      "triangles": 700,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -6.333003044128418,
+          -9.536743306171047e-8,
+          -19.893476486206055
+        ],
+        "max": [
+          6.042328834533691,
+          14.800000190734863,
+          19.893476486206055
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/perris-depot/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

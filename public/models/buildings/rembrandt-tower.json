@@ -1,0 +1,66 @@
+{
+  "id": "rembrandt-tower",
+  "name": "Rembrandt Tower",
+  "kind": "building",
+  "origin": [
+    4.917058,
+    52.345125
+  ],
+  "height": 150,
+  "padM": 38,
+  "frontageBearing": 0,
+  "rotation": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "OSM supplies the rotated footprint and eight occupied massing parts. Roof 135 m and tip 150 m are published; OSM upper machinery heights of 140/143 m are replaced by the published 135 m roof and a seated mast to 150 m. Lower setbacks and glazing pitch are estimated from exterior photographs; no surrounding plazas or neighbouring Breitner/Mondriaan buildings are owned.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/rembrandt-tower-near.glb",
+      "bytes": 281244,
+      "triangles": 23828,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -26.61750030517578,
+          0,
+          -26.572099685668945
+        ],
+        "max": [
+          26.433900833129883,
+          150,
+          26.783599853515625
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/rembrandt-tower-far.glb",
+      "bytes": 113032,
+      "triangles": 8888,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -26.61750030517578,
+          0,
+          -26.572099685668945
+        ],
+        "max": [
+          26.433900833129883,
+          150,
+          26.783599853515625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/rembrandt-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

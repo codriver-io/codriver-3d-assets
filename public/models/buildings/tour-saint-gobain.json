@@ -1,0 +1,65 @@
+{
+  "id": "tour-saint-gobain",
+  "name": "Tour Saint-Gobain",
+  "kind": "building",
+  "origin": [
+    2.24932984,
+    48.8897171
+  ],
+  "height": 178,
+  "padM": 40,
+  "frontageBearing": 75.347,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed 2019/2020 three-crystal composition. OSM/CTBUH gives178 m; architect describes170 m and manufacturer165 m:178 m is an envelope estimate, with datum differences unresolved. Main body154 m, upper crystal24 m, showroom sloping20–27 m are photo estimates. Crown scale/offset, fine horizontal ribbons and glass reflections simplified. No branding, interiors, paving or terrain. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-saint-gobain-near.glb",
+      "bytes": 252212,
+      "triangles": 15722,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -29.126712799072266,
+          0,
+          -32.716796875
+        ],
+        "max": [
+          32.2535514831543,
+          178,
+          25.981969833374023
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-saint-gobain-far.glb",
+      "bytes": 75112,
+      "triangles": 4120,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -29.126712799072266,
+          0,
+          -32.716796875
+        ],
+        "max": [
+          32.2535514831543,
+          178,
+          25.981969833374023
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-saint-gobain/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

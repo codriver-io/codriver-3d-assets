@@ -1,0 +1,240 @@
+{
+  "id": "strat-tower-las-vegas",
+  "name": "The STRAT Tower",
+  "kind": "building",
+  "origin": [
+    -115.15552055,
+    36.1474087
+  ],
+  "height": 350.2,
+  "widthM": 56,
+  "depthM": 56,
+  "padM": 45,
+  "frontageBearing": 255.35635454939484,
+  "rotation": -1.3152164991871484,
+  "controlPoints": [
+    [
+      -115.1558053,
+      36.1473783
+    ],
+    [
+      -115.1557876,
+      36.1473236
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -115.1556035,
+          36.1476311
+        ],
+        [
+          -115.1556394,
+          36.1476201
+        ],
+        [
+          -115.1556842,
+          36.1475996
+        ],
+        [
+          -115.1557288,
+          36.1475687
+        ],
+        [
+          -115.1557561,
+          36.1475417
+        ],
+        [
+          -115.1557824,
+          36.1475044
+        ],
+        [
+          -115.1557997,
+          36.1474637
+        ],
+        [
+          -115.1558074,
+          36.1474212
+        ],
+        [
+          -115.1558053,
+          36.1473783
+        ],
+        [
+          -115.1557876,
+          36.1473236
+        ],
+        [
+          -115.1557557,
+          36.1472758
+        ],
+        [
+          -115.1557109,
+          36.1472353
+        ],
+        [
+          -115.1556557,
+          36.1472043
+        ],
+        [
+          -115.1555995,
+          36.147186
+        ],
+        [
+          -115.1555636,
+          36.1471797
+        ],
+        [
+          -115.155527,
+          36.1471771
+        ],
+        [
+          -115.1554583,
+          36.1471826
+        ],
+        [
+          -115.1554068,
+          36.147196
+        ],
+        [
+          -115.1553694,
+          36.1472118
+        ],
+        [
+          -115.1553231,
+          36.1472406
+        ],
+        [
+          -115.155299,
+          36.1472614
+        ],
+        [
+          -115.1552771,
+          36.147286
+        ],
+        [
+          -115.1552623,
+          36.1473076
+        ],
+        [
+          -115.155249,
+          36.1473335
+        ],
+        [
+          -115.1552399,
+          36.1473596
+        ],
+        [
+          -115.1552337,
+          36.1473981
+        ],
+        [
+          -115.1552384,
+          36.1474524
+        ],
+        [
+          -115.1552513,
+          36.1474898
+        ],
+        [
+          -115.1552665,
+          36.1475171
+        ],
+        [
+          -115.1552954,
+          36.147553
+        ],
+        [
+          -115.1553314,
+          36.1475835
+        ],
+        [
+          -115.1553592,
+          36.1476009
+        ],
+        [
+          -115.1553926,
+          36.1476166
+        ],
+        [
+          -115.1554479,
+          36.1476334
+        ],
+        [
+          -115.1554997,
+          36.1476403
+        ],
+        [
+          -115.1555521,
+          36.1476395
+        ],
+        [
+          -115.1556035,
+          36.1476311
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -115.15552055,
+        36.1474087
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Observation tower135457469 only; casino/hotel135456188 and attached entertainment facilities are excluded.350.2m adopted from CTBUH and operator1149ft; all intermediate profile elevations, cross sections and ride-mast dimensions are photo estimates. September2026 Yelderberry photos establish current three-legged exterior;2012 pod detail used only for unchanged glazing/fan structure. Current operator lists Big Shot and X-Scream; removed Insanity/High Roller are excluded, and fine X-Scream/SkyJump hardware is omitted at road scale. Big Shot lattice and antenna retain the tall architectural outline without logos, signs, moving riders or lettering. Main legs and compact lift core stand on y=0, with actual lower openings retained in far; no terrain/plaza baked. Tripod angular phase is a photo estimate from the mapped southerly2026 camera positions; the circular OSM perimeter establishes centre/envelope while its two control points provide the baked geographic frame. Above110m the tapered concrete web joins the legs; their upper outer edges meet the241m fan ring. Wide explicit QA bounds prevent automatic street framing from clipping this350m asset; separate full-height and pod-detail presets supplement the contact sheet. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/strat-tower-las-vegas-near.glb",
+      "bytes": 65148,
+      "triangles": 4892,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -27.245746612548828,
+          -5.9604645663569045e-9,
+          -26.199493408203125
+        ],
+        "max": [
+          26.199493408203125,
+          350.20001220703125,
+          26.199493408203125
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/strat-tower-las-vegas-far.glb",
+      "bytes": 42224,
+      "triangles": 2360,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -27.245746612548828,
+          -5.9604645663569045e-9,
+          -26.199493408203125
+        ],
+        "max": [
+          26.199493408203125,
+          350.20001220703125,
+          26.199493408203125
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/strat-tower-las-vegas/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

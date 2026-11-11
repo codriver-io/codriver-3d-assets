@@ -1,0 +1,100 @@
+{
+  "id": "palazzo-civilta-italiana",
+  "name": "Palazzo della Civiltà Italiana",
+  "kind": "building",
+  "origin": [
+    12.465321475,
+    41.8367058
+  ],
+  "height": 54,
+  "padM": 43,
+  "frontageBearing": 180,
+  "rotation": -0.36400580684708395,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          12.4649216,
+          41.8365763
+        ],
+        [
+          12.4651386,
+          41.8370007
+        ],
+        [
+          12.4657213,
+          41.8368353
+        ],
+        [
+          12.4655044,
+          41.8364109
+        ],
+        [
+          12.4649216,
+          41.8365763
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        12.465321475,
+        41.8367058
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The six-by-nine open arcades are real geometric holes in both LODs. Inner glazing is recessed well behind the galleries; floor slabs meet the wall piers. Sculptures inside the ground arcade are grouped human figures. Lettering, branding, terrace Dioscuri, broad downhill stair terraces, landscape and interiors are omitted. Published cube height about 60 m and OSM height=68 disagree; different sloping-site and plinth datums may explain this (inference, not surveyed); 54 m above the upper entrance datum is a photo-calibrated cube-height estimate, not a survey; the published 60 m and mapped 68 m are retained as conflicting whole-building/site figures. Mapped inner way 110401782 defines the approximately 9.7 × 16.3 m open lightwell, including its stone attic linings. OSM relation fetched with the OSM single-object full API to recover missing member rings. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palazzo-civilta-italiana-near.glb",
+      "bytes": 295536,
+      "triangles": 19202,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -33.423912048339844,
+          -1.1920929132713809e-8,
+          -33.423912048339844
+        ],
+        "max": [
+          33.423912048339844,
+          54,
+          33.423912048339844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palazzo-civilta-italiana-far.glb",
+      "bytes": 133248,
+      "triangles": 5834,
+      "drawCalls": 2,
+      "bounds": {
+        "min": [
+          -33.423912048339844,
+          -1.1920929132713809e-8,
+          -33.423912048339844
+        ],
+        "max": [
+          33.423912048339844,
+          54,
+          33.423912048339844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palazzo-civilta-italiana/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

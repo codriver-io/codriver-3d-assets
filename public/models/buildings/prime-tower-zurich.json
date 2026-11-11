@@ -1,0 +1,66 @@
+{
+  "id": "prime-tower-zurich",
+  "name": "Prime Tower",
+  "kind": "building",
+  "origin": [
+    8.51726055,
+    47.38611
+  ],
+  "height": 126,
+  "padM": 42,
+  "frontageBearing": 237.6194205817743,
+  "rotationY": 2.576444929038245,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Prime Tower’s green faceted polygonal core with four shallow cantilevered facade strips starting at different floors, fine glazed grid and flat crown. The four cantilever starts come from OSM tags, not a survey. Curtain-wall mullions and glazing tints are visual estimates; reflective photography is represented by muted green glass. Neighboring Platform, Diagonal and Cubus buildings and signage are excluded. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/prime-tower-zurich-near.glb",
+      "bytes": 254560,
+      "triangles": 22696,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -18.33367919921875,
+          0,
+          -32.6390266418457
+        ],
+        "max": [
+          18.33367919921875,
+          126,
+          32.63902282714844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/prime-tower-zurich-far.glb",
+      "bytes": 77496,
+      "triangles": 6070,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -18.33367919921875,
+          0,
+          -32.6390266418457
+        ],
+        "max": [
+          18.33367919921875,
+          126,
+          32.63902282714844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/prime-tower-zurich/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

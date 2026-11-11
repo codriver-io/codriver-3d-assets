@@ -1,0 +1,66 @@
+{
+  "id": "st-michaels-church-cluj",
+  "name": "St. Michael’s Church Cluj",
+  "kind": "building",
+  "origin": [
+    23.5895553,
+    46.76997155
+  ],
+  "height": 80,
+  "padM": 40,
+  "frontageBearing": 97.80663757240006,
+  "rotationY": 0.13625152914827823,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "St Michael’s Gothic hall church has a broad steep russet nave roof, lower polygonal eastern apses, tall pointed traceried windows, repeated buttresses and a separate north Neo-Gothic clock tower with an octagonal dark spire and cross. Parish documentation resolves the 76 versus 80 m figures: 76 m is the tower without the cross, 80 m includes it. OSM relation height=25 is treated as a coarse low church-body value, not the tower total. Nave eaves/ridge, chancel roof and belfry/clock-stage splits are photo estimates; published 50×24 m and 20×10 m dimensions refer to interior spaces, whereas the measured OSM exterior envelope includes wall thickness, side apses, buttresses and the north tower. Two mapped controls fix the baked bearing; individual roof ridges, aperture stations, sculptural simplifications and buttress sections are original approximations constrained to that exterior plan. Exterior comparison photos show the same current permanent structure; temporary vegetation, restoration scaffolding and the Matthias monument are excluded. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/st-michaels-church-cluj-near.glb",
+      "bytes": 188012,
+      "triangles": 12520,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -36.72784423828125,
+          0,
+          -25.39765739440918
+        ],
+        "max": [
+          36.72784423828125,
+          80,
+          25.397659301757812
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/st-michaels-church-cluj-far.glb",
+      "bytes": 88684,
+      "triangles": 4960,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -36.72784423828125,
+          0,
+          -25.39765739440918
+        ],
+        "max": [
+          36.72784423828125,
+          80,
+          25.397659301757812
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/st-michaels-church-cluj/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

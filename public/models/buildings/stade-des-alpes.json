@@ -1,0 +1,66 @@
+{
+  "id": "stade-des-alpes",
+  "name": "Stade des Alpes",
+  "kind": "building",
+  "origin": [
+    5.74012715,
+    45.18743405
+  ],
+  "height": 23,
+  "padM": 120,
+  "frontageBearing": 60.79557491401067,
+  "rotationRad": 0.5097133739025416,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Rounded rectangular football and rugby stadium with a continuous upward-curving pale glass canopy, open central field, bowl of individual seat terraces, radial roof ribs and horizontal timber-toned outer cladding. Roof section, seating rake, gate spacing and glazing rhythm estimated against exterior and aerial references; no as-built structural claim. Canopy uses muted opaque glass-like panels rather than a photograph or runtime-dependent transparency. Seat rows are terraces, not individually modeled seats; signs, logos, crowds, temporary equipment and surrounding park omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stade-des-alpes-near.glb",
+      "bytes": 539312,
+      "triangles": 33988,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -104.91426849365234,
+          9.536743306171047e-8,
+          -95.78182983398438
+        ],
+        "max": [
+          104.9148178100586,
+          23.435258865356445,
+          95.77993774414062
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stade-des-alpes-far.glb",
+      "bytes": 178412,
+      "triangles": 10036,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -104.83003234863281,
+          9.536743306171047e-8,
+          -95.7070541381836
+        ],
+        "max": [
+          104.83070373535156,
+          23.433521270751953,
+          95.7047119140625
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stade-des-alpes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

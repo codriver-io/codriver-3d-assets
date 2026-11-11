@@ -1,0 +1,65 @@
+{
+  "id": "tour-cma-cgm",
+  "name": "Tour CMA CGM",
+  "kind": "building",
+  "origin": [
+    5.36587188,
+    43.3150886
+  ],
+  "height": 147,
+  "padM": 54,
+  "frontageBearing": 311.162,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Operator147 m overall adopted; architect142.8 m and OSM145 m differ by datum/roof definition,documented estimates. Ground ring follows OSM;upper60 m-class shaft and142.8–147 m crown and37 m waist levels are photo-calibrated lofts.33 upper courses reflect operator floors versus34 mapped levels. No logo,lettering,adjacent wing or motorway. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-cma-cgm-near.glb",
+      "bytes": 386100,
+      "triangles": 21406,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -41.283931732177734,
+          0,
+          -36.91106033325195
+        ],
+        "max": [
+          25.703630447387695,
+          147,
+          34.042808532714844
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-cma-cgm-far.glb",
+      "bytes": 118732,
+      "triangles": 5806,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -41.267494201660156,
+          0,
+          -36.615577697753906
+        ],
+        "max": [
+          25.687192916870117,
+          147,
+          34.042808532714844
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-cma-cgm/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

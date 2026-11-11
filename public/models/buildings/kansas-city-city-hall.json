@@ -1,0 +1,65 @@
+{
+  "id": "kansas-city-city-hall",
+  "name": "Kansas City City Hall",
+  "kind": "building",
+  "origin": [
+    -94.577997,
+    39.100569
+  ],
+  "height": 144.0264,
+  "padM": 100,
+  "frontageBearing": 182.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Photos6and7show the full Missouri cityhall, while2confirms its lower limestone/glazing detail. Initialphoto3is a differentKansasCity(Kansas)cityhall and is rejected;4is a distant skyline and5a reliefdetail. HABS supplies the sixstoreybase and towerplan dimensions and describes bronze spandrels against Indiana limestone. Sources use29or30stories; this model records the distinction and does not claim a surveyedfloor schedule.443ft is adopted as nominalmasonryheight from CTBUH/roofaccounts; the HABS text refers to the upperfloor/observationdeck, so its exact relation to the currentroofdatum remains unverified. The visible plainroofmast is estimated9m; noflag authored. Mainstreetentryground datum is localrigidy0, while the actualplaza sits on a hill and was renovatedin2026; no plaza, lawn, steps, fountains, figurativefriezes, seals, lettering or trademarks are authored. Facade windows replace stone between continuouspiers; darkbronze spandrels and finalcrownwindows remain in farLOD. Laterappgrade/roofheightvalidation is required. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Lightened the bronze floor spandrels to #aaa78f daylight / #84949e dark, retaining all 20 main-shaft rows. The 1.1788 m main separators exceed 0.65 m; weighted sRGB grayscale is over 40/255 above adjacent glass in both palettes, so the glazing reads as separated windows rather than dark stripes.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/kansas-city-city-hall-near.glb",
+      "bytes": 53416,
+      "triangles": 4068,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -23.143556594848633,
+          0,
+          -26.605480194091797
+        ],
+        "max": [
+          37.155818939208984,
+          144.02639770507812,
+          16.263853073120117
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/kansas-city-city-hall-far.glb",
+      "bytes": 50712,
+      "triangles": 3804,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -23.143556594848633,
+          0,
+          -26.605480194091797
+        ],
+        "max": [
+          37.155818939208984,
+          144.02639770507812,
+          16.263853073120117
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/kansas-city-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

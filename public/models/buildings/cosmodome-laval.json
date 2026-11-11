@@ -1,0 +1,65 @@
+{
+  "id": "cosmodome-laval",
+  "name": "Cosmodôme",
+  "kind": "building",
+  "origin": [
+    -73.7444,
+    45.5664
+  ],
+  "height": 46.4,
+  "padM": 180,
+  "frontageBearing": 152,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current red-and-white rocket paint is based on the Laurent Bélanger exterior photographs, rather than the older black-painted photograph. Replica height 46.4 m is reported; rocket siting uses the mapped-site coordinate -73.7428167,45.56655 from the on-site waymark. Museum heights, barrel curvature, fins and opening rhythm are estimates. Adjacent apartments and other attractions excluded. Cityscape: not tested. Full 3D world: not tested. Geographic audit: added explicit authored envelopes for the detached rocket and the cylindrical entrance gallery; neither invents an additional OSM provider way. Review follow-up: Nit: separated the entry barrel into muted silver-green cladding #a7b2af and darkened the angular museum roof to #7f8a88, preserving the existing pale walls and red/white Ariane replica. Geometry and silhouette are unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cosmodome-laval-near.glb",
+      "bytes": 33640,
+      "triangles": 1644,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -24.034584045410156,
+          0,
+          -128.01800537109375
+        ],
+        "max": [
+          127.39155578613281,
+          46.400001525878906,
+          40.6429328918457
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cosmodome-laval-far.glb",
+      "bytes": 28836,
+      "triangles": 1220,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -24.034584045410156,
+          0,
+          -128.01800537109375
+        ],
+        "max": [
+          127.39155578613281,
+          46.400001525878906,
+          40.6429328918457
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cosmodome-laval/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

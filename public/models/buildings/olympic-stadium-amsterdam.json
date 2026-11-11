@@ -1,0 +1,72 @@
+{
+  "id": "olympic-stadium-amsterdam",
+  "name": "Olympic Stadium",
+  "kind": "building",
+  "origin": [
+    4.85406145,
+    52.3435074
+  ],
+  "height": 46,
+  "padM": 230,
+  "frontageBearing": 192.40377754685943,
+  "rotation": 0.21648675787764238,
+  "tower": [
+    96.77630767275897,
+    -8.681138377652022
+  ],
+  "cauldronRim": 42.19,
+  "trackGrade": 0.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Local flat grade at stadium entrances. Pitch and track surfaces sit at least0.10m above grade. Modern lower bowl, no demolished 1937 upper tier. Logos, Olympic rings, signs and advertising omitted. Tower balcony cantilevers are structurally continuous through its shaft. Annex rooms/seat detail and field markings are simplified.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/olympic-stadium-amsterdam-near.glb",
+      "bytes": 161892,
+      "triangles": 11900,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -94.28917694091797,
+          0,
+          -121.44213104248047
+        ],
+        "max": [
+          96.94593048095703,
+          46,
+          121.85814666748047
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/olympic-stadium-amsterdam-far.glb",
+      "bytes": 91184,
+      "triangles": 6060,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -93.316162109375,
+          0,
+          -120.57266998291016
+        ],
+        "max": [
+          96.94593048095703,
+          46,
+          121.85181427001953
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/olympic-stadium-amsterdam/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

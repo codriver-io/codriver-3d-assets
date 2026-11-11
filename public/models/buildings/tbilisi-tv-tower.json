@@ -1,0 +1,66 @@
+{
+  "id": "tbilisi-tv-tower",
+  "name": "Tbilisi TV Tower",
+  "kind": "building",
+  "origin": [
+    44.7849547,
+    41.695816050000005
+  ],
+  "height": 278,
+  "padM": 60,
+  "frontageBearing": 229.67119929910297,
+  "rotationY": 2.437722297978543,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current Tbilisi TV tower: white tubular core, two splayed red lattice legs, open triangular bracing, a lower maintenance platform, upper flared equipment pod and striped mast with the 2017 tip addition. Operator states the current structure opened in November 1974, following construction begun in 1972, and grew from 274.5 to 278 m on 2017-06-03. OSM and many secondary pages retain 274.5 m; the modern antenna addition is included. Pod and maintenance levels follow mapped component tags; pipe sizes, bracing layout and roof details are visual estimates. Three rigid footings share local y=0; hillside placement and footing offsets require later app validation, with no 719.2 m site elevation baked into the asset. Night uses a neutral floodlit frame; the real installation changes colours by program. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tbilisi-tv-tower-near.glb",
+      "bytes": 45224,
+      "triangles": 2912,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.53684616088867,
+          0,
+          -30.145015716552734
+        ],
+        "max": [
+          34.87209701538086,
+          278,
+          31.152902603149414
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tbilisi-tv-tower-far.glb",
+      "bytes": 32564,
+      "triangles": 1644,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -34.53684616088867,
+          0,
+          -30.16176414489746
+        ],
+        "max": [
+          34.844017028808594,
+          278,
+          31.152902603149414
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tbilisi-tv-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

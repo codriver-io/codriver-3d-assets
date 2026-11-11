@@ -1,0 +1,65 @@
+{
+  "id": "palais-des-congres-paris",
+  "name": "Palais des congrès de Paris",
+  "kind": "building",
+  "origin": [
+    2.2835852,
+    48.87931425
+  ],
+  "height": 40,
+  "padM": 103,
+  "frontageBearing": 58.09,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1974 venue with1999 Portzamparc raked front. Main40 m height mapped; entrance base15 m,front rake10 m and triangular recesses are photo estimates. Owns only relations3074648 and3074646; adjacent Hyatt tower/lobby relations3074643/3074647 and tall part229301758 excluded. No event banners,logos,lettering,interiors,plaza or road works. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/palais-des-congres-paris-near.glb",
+      "bytes": 130272,
+      "triangles": 7506,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -84.09513092041016,
+          0,
+          -95.00562286376953
+        ],
+        "max": [
+          65.58790588378906,
+          40,
+          85.67704772949219
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/palais-des-congres-paris-far.glb",
+      "bytes": 60960,
+      "triangles": 3008,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -84.09513092041016,
+          0,
+          -95.00562286376953
+        ],
+        "max": [
+          65.58790588378906,
+          40,
+          85.67704772949219
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/palais-des-congres-paris/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

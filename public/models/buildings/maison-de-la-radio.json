@@ -1,0 +1,65 @@
+{
+  "id": "maison-de-la-radio",
+  "name": "Maison de la Radio",
+  "kind": "building",
+  "origin": [
+    2.27832181,
+    48.85249363
+  ],
+  "height": 68,
+  "padM": 89,
+  "frontageBearing": 251.488,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1963 Henry Bernard ring and68 m central tower,with mapped renovated studios/auditorium. Literal OSM part elevations10/15/18/20/23/24/31/34/62/68 m; tower body extended through its62–65 m service zone to support the mapped65–68 m cap. Window pitch,materials and service-zone treatment estimated. Four mapped raised connectors retained with endpoint tests. No banners,logos,lettering,interiors,roof plant or surrounding landscape. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/maison-de-la-radio-near.glb",
+      "bytes": 410960,
+      "triangles": 25804,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -79.80464935302734,
+          0,
+          -79.3563232421875
+        ],
+        "max": [
+          81.56114196777344,
+          68,
+          82.51334381103516
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/maison-de-la-radio-far.glb",
+      "bytes": 156784,
+      "triangles": 8955,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -79.59223175048828,
+          0,
+          -79.51216888427734
+        ],
+        "max": [
+          81.32675170898438,
+          68,
+          82.04580688476562
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/maison-de-la-radio/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

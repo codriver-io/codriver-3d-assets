@@ -1,0 +1,65 @@
+{
+  "id": "chateau-elan-winery",
+  "name": "Château Élan Winery",
+  "kind": "building",
+  "origin": [
+    -83.81863,
+    34.1005
+  ],
+  "height": 29.5,
+  "padM": 95,
+  "frontageBearing": 98,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "French-inspired winery chateau, with three steep truncated pyramid roofs, small open roof rails, flagpoles without flags, pale stone paired windows, front arcade and dormered connecting roof; the adjoining production wing keeps its low roof. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/chateau-elan-winery-near.glb",
+      "bytes": 88336,
+      "triangles": 6301,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -32.955596923828125,
+          0,
+          -52.030967712402344
+        ],
+        "max": [
+          31.765405654907227,
+          29.5,
+          42.579898834228516
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/chateau-elan-winery-far.glb",
+      "bytes": 46904,
+      "triangles": 2593,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -32.955596923828125,
+          0,
+          -52.030967712402344
+        ],
+        "max": [
+          31.765405654907227,
+          29.5,
+          42.579898834228516
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/chateau-elan-winery/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

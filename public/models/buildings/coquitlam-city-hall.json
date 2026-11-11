@@ -1,0 +1,464 @@
+{
+  "id": "coquitlam-city-hall",
+  "name": "Coquitlam City Hall",
+  "kind": "building",
+  "origin": [
+    -122.7934242,
+    49.28429785
+  ],
+  "height": 20,
+  "widthM": 91.82,
+  "depthM": 60.1,
+  "padM": 63,
+  "frontageBearing": 20,
+  "rotation": -1.9159960652890335,
+  "controlPoints": [
+    [
+      -122.7930963,
+      49.2842947
+    ],
+    [
+      -122.7933065,
+      49.2839134
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.7930672,
+          49.2845231
+        ],
+        [
+          -122.793071,
+          49.2845169
+        ],
+        [
+          -122.7930753,
+          49.2845111
+        ],
+        [
+          -122.7930854,
+          49.2845002
+        ],
+        [
+          -122.7929994,
+          49.2844599
+        ],
+        [
+          -122.7930058,
+          49.2844542
+        ],
+        [
+          -122.7930147,
+          49.2844469
+        ],
+        [
+          -122.7930259,
+          49.2844398
+        ],
+        [
+          -122.7930392,
+          49.2844319
+        ],
+        [
+          -122.7930526,
+          49.2844246
+        ],
+        [
+          -122.7930453,
+          49.2844193
+        ],
+        [
+          -122.793011,
+          49.2844122
+        ],
+        [
+          -122.7930482,
+          49.2843477
+        ],
+        [
+          -122.7930381,
+          49.2843455
+        ],
+        [
+          -122.7930686,
+          49.284288
+        ],
+        [
+          -122.7930963,
+          49.2842947
+        ],
+        [
+          -122.7933065,
+          49.2839134
+        ],
+        [
+          -122.793318,
+          49.2839095
+        ],
+        [
+          -122.7933248,
+          49.2838966
+        ],
+        [
+          -122.7933551,
+          49.2839041
+        ],
+        [
+          -122.7933701,
+          49.2838758
+        ],
+        [
+          -122.7935508,
+          49.2839192
+        ],
+        [
+          -122.7935586,
+          49.2839037
+        ],
+        [
+          -122.7936321,
+          49.2839205
+        ],
+        [
+          -122.7936089,
+          49.2839618
+        ],
+        [
+          -122.7937151,
+          49.283986
+        ],
+        [
+          -122.7937407,
+          49.2839628
+        ],
+        [
+          -122.7938232,
+          49.2839998
+        ],
+        [
+          -122.7938203,
+          49.2840026
+        ],
+        [
+          -122.793849,
+          49.2840152
+        ],
+        [
+          -122.7938297,
+          49.2840341
+        ],
+        [
+          -122.7938326,
+          49.2840353
+        ],
+        [
+          -122.7937763,
+          49.2840883
+        ],
+        [
+          -122.793772,
+          49.2840865
+        ],
+        [
+          -122.7934548,
+          49.2843904
+        ],
+        [
+          -122.7934682,
+          49.284399
+        ],
+        [
+          -122.7934812,
+          49.2844088
+        ],
+        [
+          -122.7934891,
+          49.2844157
+        ],
+        [
+          -122.7934981,
+          49.2844235
+        ],
+        [
+          -122.7935064,
+          49.2844332
+        ],
+        [
+          -122.7935147,
+          49.284445
+        ],
+        [
+          -122.7935223,
+          49.2844562
+        ],
+        [
+          -122.793529,
+          49.2844675
+        ],
+        [
+          -122.7935541,
+          49.2844622
+        ],
+        [
+          -122.7935719,
+          49.2844721
+        ],
+        [
+          -122.7937363,
+          49.2845636
+        ],
+        [
+          -122.7937115,
+          49.2847172
+        ],
+        [
+          -122.7936797,
+          49.2847148
+        ],
+        [
+          -122.7936791,
+          49.2847199
+        ],
+        [
+          -122.793482,
+          49.2847054
+        ],
+        [
+          -122.79348,
+          49.2847173
+        ],
+        [
+          -122.7934238,
+          49.2847133
+        ],
+        [
+          -122.7933348,
+          49.2847084
+        ],
+        [
+          -122.7933357,
+          49.2846979
+        ],
+        [
+          -122.79333,
+          49.2846969
+        ],
+        [
+          -122.7933248,
+          49.2846956
+        ],
+        [
+          -122.7933125,
+          49.2846999
+        ],
+        [
+          -122.7932999,
+          49.2847035
+        ],
+        [
+          -122.7932867,
+          49.2847058
+        ],
+        [
+          -122.7932861,
+          49.2847003
+        ],
+        [
+          -122.7932731,
+          49.2847035
+        ],
+        [
+          -122.7932618,
+          49.2847055
+        ],
+        [
+          -122.7932497,
+          49.2847073
+        ],
+        [
+          -122.7932306,
+          49.2846463
+        ],
+        [
+          -122.7932192,
+          49.2846471
+        ],
+        [
+          -122.7932078,
+          49.2846474
+        ],
+        [
+          -122.7931947,
+          49.2846471
+        ],
+        [
+          -122.7931819,
+          49.2846463
+        ],
+        [
+          -122.7931765,
+          49.2846453
+        ],
+        [
+          -122.7931695,
+          49.2846441
+        ],
+        [
+          -122.7931572,
+          49.2846416
+        ],
+        [
+          -122.7931444,
+          49.2846381
+        ],
+        [
+          -122.7931319,
+          49.2846339
+        ],
+        [
+          -122.7931234,
+          49.2846302
+        ],
+        [
+          -122.7931151,
+          49.2846259
+        ],
+        [
+          -122.7931082,
+          49.2846221
+        ],
+        [
+          -122.7931015,
+          49.2846181
+        ],
+        [
+          -122.7930955,
+          49.2846138
+        ],
+        [
+          -122.7930903,
+          49.2846096
+        ],
+        [
+          -122.7930852,
+          49.2846054
+        ],
+        [
+          -122.7930807,
+          49.2846008
+        ],
+        [
+          -122.7930764,
+          49.2845956
+        ],
+        [
+          -122.7930724,
+          49.2845902
+        ],
+        [
+          -122.7930687,
+          49.2845836
+        ],
+        [
+          -122.7930655,
+          49.2845776
+        ],
+        [
+          -122.7930637,
+          49.2845704
+        ],
+        [
+          -122.7930625,
+          49.2845637
+        ],
+        [
+          -122.7930618,
+          49.2845563
+        ],
+        [
+          -122.7930614,
+          49.2845493
+        ],
+        [
+          -122.7930621,
+          49.284543
+        ],
+        [
+          -122.7930633,
+          49.2845361
+        ],
+        [
+          -122.7930648,
+          49.2845296
+        ],
+        [
+          -122.7930672,
+          49.2845231
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.7934242,
+        49.28429785
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Exact OSM ownership includes the tapered south office wing, rounded northern head and entrance returns. City tender cover plan confirms a four-storey building; current council facility remains at this address. All exterior heights, screen curve and fenestration proportions are estimates from two checked exterior photographs. The mapped rounded arc controls the pale council head rather than a guessed full cylinder; its upper stone wall is intentionally mostly opaque. No city-name sign column, sculpture, coats of arms, lettering, nearby residential towers, public plaza or terrain. The architect website is expired as of this research and is not relied on for current dimensions. City tender key plan copyright Chernoff Thompson Architects; all rights reserved, viewed only for factual storey/footprint comparison, not copied or committed. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/coquitlam-city-hall-near.glb",
+      "bytes": 85740,
+      "triangles": 6273,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -30.84673500061035,
+          -2.8768548669997436e-15,
+          -46.98260498046875
+        ],
+        "max": [
+          30.84673309326172,
+          20,
+          46.98260498046875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/coquitlam-city-hall-far.glb",
+      "bytes": 68004,
+      "triangles": 4609,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -30.84673500061035,
+          -2.8768548669997436e-15,
+          -46.98260498046875
+        ],
+        "max": [
+          30.84673309326172,
+          20,
+          46.98260498046875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/coquitlam-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

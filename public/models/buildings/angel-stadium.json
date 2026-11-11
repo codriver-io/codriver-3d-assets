@@ -1,0 +1,164 @@
+{
+  "id": "angel-stadium",
+  "name": "Angel Stadium",
+  "kind": "building",
+  "origin": [
+    -117.8825624,
+    33.80025885
+  ],
+  "height": 39,
+  "widthM": 249.84,
+  "depthM": 271.4,
+  "padM": 193,
+  "frontageBearing": 225,
+  "rotation": 1.4153246637902046,
+  "controlPoints": [
+    [
+      -117.8833498,
+      33.79991
+    ],
+    [
+      -117.8831808,
+      33.800806
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.884412123,
+          33.799301202
+        ],
+        [
+          -117.883872823,
+          33.798871401
+        ],
+        [
+          -117.883186177,
+          33.798871401
+        ],
+        [
+          -117.881053977,
+          33.799109202
+        ],
+        [
+          -117.880750777,
+          33.799348402
+        ],
+        [
+          -117.880717177,
+          33.799514103
+        ],
+        [
+          -117.880712677,
+          33.799582303
+        ],
+        [
+          -117.880712677,
+          33.800152896
+        ],
+        [
+          -117.881230877,
+          33.801151493
+        ],
+        [
+          -117.882062377,
+          33.801494791
+        ],
+        [
+          -117.882668577,
+          33.801646291
+        ],
+        [
+          -117.883355223,
+          33.801646291
+        ],
+        [
+          -117.883513423,
+          33.801626291
+        ],
+        [
+          -117.883642223,
+          33.801588391
+        ],
+        [
+          -117.884026823,
+          33.801395792
+        ],
+        [
+          -117.884093023,
+          33.801273192
+        ],
+        [
+          -117.884253423,
+          33.800721394
+        ],
+        [
+          -117.884412123,
+          33.799871797
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.8825624,
+        33.80025885
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped outer stadium and California Spectacular owned. 39 m lighting envelope, deck elevations, giant cap dimensions, rock heights and field geometry estimated from exterior views. Three decks and open outfield retained in far LOD. Detached Big A parking-lot sign excluded; no branding, scoreboard lettering, trademarks or spectator geometry. Field surface y=0.18 m; no surrounding plaza or parking lot. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested. Placement correction 2026-11-10: The rigid field is already at y=0.18 m. Terrain support now closes the old horseshoe gap and includes one near-lattice-cell halo around the stadium envelope, retaining the original center reference and median datum. No field or architectural vertex moved.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/angel-stadium-near.glb",
+      "bytes": 235564,
+      "triangles": 19286,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -139.8203887939453,
+          -1.9073486612342094e-7,
+          -130.23147583007812
+        ],
+        "max": [
+          139.34939575195312,
+          39,
+          122.69133758544922
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/angel-stadium-far.glb",
+      "bytes": 104324,
+      "triangles": 6878,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -139.8203887939453,
+          -1.9073486612342094e-7,
+          -130.23147583007812
+        ],
+        "max": [
+          139.34939575195312,
+          39,
+          122.69133758544922
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/angel-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

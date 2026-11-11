@@ -1,0 +1,65 @@
+{
+  "id": "parc-des-princes",
+  "name": "Parc des Princes",
+  "kind": "building",
+  "origin": [
+    2.2530714905413247,
+    48.84143411337006
+  ],
+  "height": 36,
+  "padM": 124,
+  "frontageBearing": 83.767,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1972 Taillibert stadium exterior, validated against2022 road view; aerial reference predates2016 interior refit, so seating is simplified to muted unbranded blue. Fifty concrete cantilever portiques and open mapped roof aperture retained. Engineering source gives roof28 m; fin crest36 m is a photo estimate; OSM48 m is inconsistent and not adopted. No road underpass, branding, lettering, field paint or surrounding plaza. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/parc-des-princes-near.glb",
+      "bytes": 318028,
+      "triangles": 16506,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -101.06148529052734,
+          0,
+          -111.53404235839844
+        ],
+        "max": [
+          100.95823669433594,
+          36,
+          111.4728775024414
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/parc-des-princes-far.glb",
+      "bytes": 111068,
+      "triangles": 4856,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -101.09878540039062,
+          0,
+          -111.56214904785156
+        ],
+        "max": [
+          101.0134506225586,
+          36,
+          111.50098419189453
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parc-des-princes/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

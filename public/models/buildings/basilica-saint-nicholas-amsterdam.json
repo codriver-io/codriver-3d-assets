@@ -1,0 +1,80 @@
+{
+  "id": "basilica-saint-nicholas-amsterdam",
+  "name": "Basilica of Saint Nicholas",
+  "kind": "building",
+  "origin": [
+    4.901222425,
+    52.376375613
+  ],
+  "height": 58,
+  "padM": 52,
+  "frontageBearing": 21.629979167266413,
+  "rotation": 0.37751435360658037,
+  "towerCrownBase": 42.1,
+  "towerCrownWidth": 6.4,
+  "belfryWidth": 6.15,
+  "towerCrownHeight": 13.9,
+  "towers": [
+    [
+      -12.8835,
+      -30.063750000000002
+    ],
+    [
+      4.11925,
+      -30.0635
+    ]
+  ],
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The diocesan 2025 description gives a 58 m dome; OSM tags both tower tips and the dome lantern 56 m. The central cross reaches 58 m here and tower crosses 56 m; the 2 m datum disagreement is documented, not treated as a survey. Mapped outlines and 14/18/30/39/50/56 m parts guide the massing. Eaves, arch profiles, dome ribs, Baroque crown tiers, ornament and sculptural silhouette are photo estimates. Added small authored rings cover crown cornices and the portal projection. Current co-cathedral status began in 2025; the exterior configuration is unchanged in the used views. Neighbouring canal houses are excluded.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/basilica-saint-nicholas-amsterdam-near.glb",
+      "bytes": 100768,
+      "triangles": 6375,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -35.14248275756836,
+          0,
+          -34.30072021484375
+        ],
+        "max": [
+          16.9400691986084,
+          58,
+          24.903953552246094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/basilica-saint-nicholas-amsterdam-far.glb",
+      "bytes": 77492,
+      "triangles": 4555,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -35.14248275756836,
+          0,
+          -34.30072021484375
+        ],
+        "max": [
+          16.9400691986084,
+          58,
+          24.903953552246094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/basilica-saint-nicholas-amsterdam/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

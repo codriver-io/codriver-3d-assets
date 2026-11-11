@@ -1,0 +1,65 @@
+{
+  "id": "coolray-field",
+  "name": "Gwinnett Field (formerly Coolray Field)",
+  "kind": "building",
+  "origin": [
+    -83.99295,
+    34.04073
+  ],
+  "height": 34.9,
+  "padM": 155,
+  "frontageBearing": 115,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Gwinnett Field’s open baseball diamond, blue stepped infield grandstands, glazed upper suite ribbon, overlapping canopy roofs, masonry entry pavilion and tall floodlights. The 2026 name is used; all sponsor/team lettering and adjacent apartment buildings are excluded. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/coolray-field-near.glb",
+      "bytes": 139172,
+      "triangles": 9923,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -61.75390625,
+          -1.9073486612342094e-7,
+          -56.5537223815918
+        ],
+        "max": [
+          139.0342254638672,
+          34.900001525878906,
+          99.7499008178711
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/coolray-field-far.glb",
+      "bytes": 63872,
+      "triangles": 3733,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -61.75390625,
+          -1.9073486612342094e-7,
+          -56.5537223815918
+        ],
+        "max": [
+          139.0342254638672,
+          34.900001525878906,
+          99.7499008178711
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/coolray-field/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

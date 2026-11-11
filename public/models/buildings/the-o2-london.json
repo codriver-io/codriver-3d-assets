@@ -1,0 +1,65 @@
+{
+  "id": "the-o2-london",
+  "name": "The O2",
+  "kind": "building",
+  "origin": [
+    0.0032044,
+    51.5029354
+  ],
+  "height": 100,
+  "padM": 220,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "50 m fabric apex is chosen from RSHP; the ICE 52 m account is recorded rather than silently merged. The mapped 346.7 × 347.7 m exterior envelope differs from the nominal 320 m clear and 365 m overall spans. Mast inclination, lattice-ring pitch, eave profile and reduced cable fans are estimates; near/far keep all twelve masts. The repaired, complete canopy is represented; the 2023 photo verifies its exterior after Storm Eunice. Interior event spaces, Up at The O2 walkway, full 23-cable-per-head web, lettering and logos are omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/the-o2-london-near.glb",
+      "bytes": 604220,
+      "triangles": 45754,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -176.28359985351562,
+          -1.1920929132713809e-8,
+          -180.72802734375
+        ],
+        "max": [
+          175.96484375,
+          100,
+          180.70574951171875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/the-o2-london-far.glb",
+      "bytes": 99904,
+      "triangles": 5998,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -176.200439453125,
+          -1.1920929132713809e-8,
+          -180.46084594726562
+        ],
+        "max": [
+          175.72232055664062,
+          100,
+          180.70574951171875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/the-o2-london/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

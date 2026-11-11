@@ -1,0 +1,65 @@
+{
+  "id": "bahai-house-worship-wilmette",
+  "name": "Bahá’í House of Worship",
+  "kind": "building",
+  "origin": [
+    -87.6842935,
+    42.0744343
+  ],
+  "height": 53.892,
+  "padM": 65,
+  "frontageBearing": 142,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The original 1953 publication distinguishes 191 ft from basement floor, 165 ft from main floor to dome ribs and 138 ft from main floor to the interior dome apex. The often-repeated 42 m and OSM dome height of 42 m correspond approximately to the 138 ft interior dimension and are not adopted as exterior total height. The model uses 165 ft plus a photo-estimated 3.6 m visible footing-to-main-floor offset; total height 53.892 m remains an estimated ground datum, not a surveyed one. Other intermediate gallery datums are photo estimates. OSM parent and two parts control the nine-sided/scalloped plan and dome location; a line between mapped dome vertices controls the baked rotation. All four photos were checked as exterior views of this temple. The white dome has nine ribs and original simplified repeated diamond perforations over recessed plain glazing; its surface is not a copied ornament pattern or traced image. Near and far keep the ninefold rhythm, true holes and raised pylon capitals. The original 30% perforation figure informs the approximate panel open area. Gardens, reflecting pools, paving, detached welcome centre, symbols and text are omitted. y=0 is the rigid exterior footing plane; the lower plinth stays within the mapped building rather than adding a terrain-shaped platform. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Restored two middle-tier window rows in far, y=18–23.4 m and 24–29.4 m, separated by 0.6 m of opaque stone. Near uses the same separated rhythm. The far dome retains nine ribs and real perforations with four instead of five vertical lace rows to fund the window correction within the 12,000-triangle budget.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/bahai-house-worship-wilmette-near.glb",
+      "bytes": 403296,
+      "triangles": 24552,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -22.915874481201172,
+          0,
+          -23.192516326904297
+        ],
+        "max": [
+          23.123498916625977,
+          53.891998291015625,
+          22.982040405273438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/bahai-house-worship-wilmette-far.glb",
+      "bytes": 176688,
+      "triangles": 11020,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -22.915874481201172,
+          0,
+          -23.192516326904297
+        ],
+        "max": [
+          23.123498916625977,
+          53.891998291015625,
+          22.982040405273438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/bahai-house-worship-wilmette/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

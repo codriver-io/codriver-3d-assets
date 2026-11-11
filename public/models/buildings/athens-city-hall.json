@@ -1,0 +1,65 @@
+{
+  "id": "athens-city-hall",
+  "name": "Athens City Hall",
+  "kind": "building",
+  "origin": [
+    -83.3763535,
+    33.9596985
+  ],
+  "height": 30.1752,
+  "padM": 48,
+  "frontageBearing": 287.6,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Athens City Hall, Georgia: pale Renaissance Revival civic block with raised open porches, balustraded parapet, a three-light belfry, four clock faces, green copper dome and tiered lantern crowned by the eagle weather vane. No lettering or civic seals. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/athens-city-hall-near.glb",
+      "bytes": 146488,
+      "triangles": 11168,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -18.958206176757812,
+          0,
+          -23.36295509338379
+        ],
+        "max": [
+          13.314545631408691,
+          30.174999237060547,
+          23.36295509338379
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/athens-city-hall-far.glb",
+      "bytes": 100444,
+      "triangles": 6622,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -18.958206176757812,
+          0,
+          -23.36295509338379
+        ],
+        "max": [
+          13.314545631408691,
+          30.174999237060547,
+          23.36295509338379
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/athens-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

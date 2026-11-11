@@ -1,0 +1,65 @@
+{
+  "id": "civil-courts-building-st-louis",
+  "name": "Civil Courts Building",
+  "kind": "building",
+  "origin": [
+    -90.1972,
+    38.6276
+  ],
+  "height": 117.6528,
+  "padM": 90,
+  "frontageBearing": 106,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The OSM 100 m main-part and 118 m crown heights describe simplified massing; the model adopts published 386 ft (117.6528 m) overall height and estimates intermediate floors and crown datums from photos. The public Law Library Association photograph verifies the stepped pyramid, Ionic capitals, recessed upper windows and paired winged griffins; it is a historical detail reference, rights unstated and conservatively treated as all rights reserved, while exterior photos 1 and 2 verify the current building form. The 32 upper columns are separate supports around an inset library core; the colonnade remains open at both LODs. The pyramid uses sixteen steps and the paired summit figures are original simple body, head and wing volumes, with no copied sculpture mesh or image tracing. Small relief carving and inscriptions are omitted. The building is currently officially named Clyde S. Cahill Courts Building; the historic Civil Courts name is retained as the familiar landmark identity. No forecourt, words, logos or terrain; y=0 is the rigid exterior footing plane. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Narrowed every main-shaft glass opening to 1.4091 m wide at its existing 3.1 m height, a 2.2:1 height/width ratio in both LODs. Separate rows and bays, the 32-column temple, stepped pyramid and paired griffins are retained.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/civil-courts-building-st-louis-near.glb",
+      "bytes": 140452,
+      "triangles": 10342,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -28.68118667602539,
+          0,
+          -24.14511489868164
+        ],
+        "max": [
+          29.832530975341797,
+          117.65280151367188,
+          29.50514030456543
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/civil-courts-building-st-louis-far.glb",
+      "bytes": 102948,
+      "triangles": 7210,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -28.68118667602539,
+          0,
+          -24.14511489868164
+        ],
+        "max": [
+          29.832530975341797,
+          117.65280151367188,
+          29.50514030456543
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/civil-courts-building-st-louis/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

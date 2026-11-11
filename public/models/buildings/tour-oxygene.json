@@ -1,0 +1,65 @@
+{
+  "id": "tour-oxygene",
+  "name": "Tour Oxygène",
+  "kind": "building",
+  "origin": [
+    4.85711077,
+    45.76223853
+  ],
+  "height": 115,
+  "padM": 33,
+  "frontageBearing": 266.226,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "115 m/28 floors confirmed by architect and structural engineer. Tower-only scope,excluding connected commercial centre. Top mapped plan anchors rounded envelope; base contracts to80% and upper crown/core levels are photo estimates. Seven lower levels evoke the inclined concrete support system without reproducing interior engineering. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-oxygene-near.glb",
+      "bytes": 209660,
+      "triangles": 12729,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -26.021751403808594,
+          -0.0406036376953125,
+          -19.11021614074707
+        ],
+        "max": [
+          18.67194938659668,
+          115,
+          14.6084566116333
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-oxygene-far.glb",
+      "bytes": 61764,
+      "triangles": 3081,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -26.021751403808594,
+          -0.0406036376953125,
+          -19.11021614074707
+        ],
+        "max": [
+          18.67194938659668,
+          115,
+          14.6084566116333
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-oxygene/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,206 @@
+{
+  "id": "mission-san-juan-capistrano",
+  "name": "Mission San Juan Capistrano",
+  "kind": "building",
+  "origin": [
+    -117.662117,
+    33.502253249999995
+  ],
+  "height": 13.62,
+  "widthM": 56.93,
+  "depthM": 26.94,
+  "padM": 40,
+  "frontageBearing": 186.0130820892,
+  "rotation": -1.6757444074434278,
+  "controlPoints": [
+    [
+      -117.6620451,
+      33.5023164
+    ],
+    [
+      -117.6620678,
+      33.5021367
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -117.6622669,
+          33.5023314
+        ],
+        [
+          -117.6622652,
+          33.502343
+        ],
+        [
+          -117.6622452,
+          33.5025159
+        ],
+        [
+          -117.6620584,
+          33.5025012
+        ],
+        [
+          -117.6620343,
+          33.5024542
+        ],
+        [
+          -117.6620395,
+          33.5024135
+        ],
+        [
+          -117.6619671,
+          33.5024071
+        ],
+        [
+          -117.6619793,
+          33.5023106
+        ],
+        [
+          -117.6620451,
+          33.5023164
+        ],
+        [
+          -117.6620678,
+          33.5021367
+        ],
+        [
+          -117.6620097,
+          33.5021317
+        ],
+        [
+          -117.6620202,
+          33.5020476
+        ],
+        [
+          -117.6620903,
+          33.5020537
+        ],
+        [
+          -117.6620981,
+          33.5019906
+        ],
+        [
+          -117.6621559,
+          33.5019956
+        ],
+        [
+          -117.6622095,
+          33.5020002
+        ],
+        [
+          -117.6622016,
+          33.5020642
+        ],
+        [
+          -117.6622196,
+          33.5020657
+        ],
+        [
+          -117.6622019,
+          33.5022146
+        ],
+        [
+          -117.6621915,
+          33.5023027
+        ],
+        [
+          -117.6622112,
+          33.5023043
+        ],
+        [
+          -117.6622086,
+          33.5023262
+        ],
+        [
+          -117.6622669,
+          33.5023314
+        ]
+      ],
+      [
+        [
+          -117.6622669,
+          33.5023314
+        ],
+        [
+          -117.6623408,
+          33.502339
+        ],
+        [
+          -117.6623391,
+          33.5023505
+        ],
+        [
+          -117.6622652,
+          33.502343
+        ],
+        [
+          -117.6622669,
+          33.5023314
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -117.662117,
+        33.502253249999995
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current ruin only: no reconstruction of the seven lost domes or collapsed original bell tower. OSM maps the church and exact bell-wall alignment (barrier way 1126056162); wall 6.9 m span, 6.4 m height and arch/bell proportions are estimates from current exterior photographs. The separate two damaged original bells and the rest of the mission compound are excluded. Reusable geometry has a rigid y=0 base; the stone nave surface is at y=0.18 m. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mission-san-juan-capistrano-near.glb",
+      "bytes": 72604,
+      "triangles": 4980,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -20.77429962158203,
+          -1.9073486612342094e-7,
+          -29.207902908325195
+        ],
+        "max": [
+          13.871953010559082,
+          13.619999885559082,
+          29.243818283081055
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mission-san-juan-capistrano-far.glb",
+      "bytes": 55516,
+      "triangles": 3348,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -20.77429962158203,
+          -1.9073486612342094e-7,
+          -29.207902908325195
+        ],
+        "max": [
+          13.871953010559082,
+          13.619999885559082,
+          29.243818283081055
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mission-san-juan-capistrano/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

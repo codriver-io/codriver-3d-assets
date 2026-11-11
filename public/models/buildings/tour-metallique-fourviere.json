@@ -1,0 +1,65 @@
+{
+  "id": "tour-metallique-fourviere",
+  "name": "Tour métallique de Fourvière",
+  "kind": "building",
+  "origin": [
+    4.82234713,
+    45.76390407
+  ],
+  "height": 101,
+  "padM": 18,
+  "frontageBearing": 125.387,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current101 m includes the TV antenna; historical85.9 m ironwork height versus City86 m/office85 m rounded figures documented. Footprint supplied by mapped base;plinth6 m,deck76–79 m and tapered width profile are photo estimates. Four legs bear on rigid0 m base,no hill elevation baked. Adjacent service buildings excluded. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-metallique-fourviere-near.glb",
+      "bytes": 58992,
+      "triangles": 3266,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.913324356079102,
+          0,
+          -10.95717716217041
+        ],
+        "max": [
+          10.838772773742676,
+          101,
+          10.883707046508789
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-metallique-fourviere-far.glb",
+      "bytes": 41756,
+      "triangles": 1994,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -10.913324356079102,
+          0,
+          -10.95717716217041
+        ],
+        "max": [
+          10.838772773742676,
+          101,
+          10.883707046508789
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-metallique-fourviere/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

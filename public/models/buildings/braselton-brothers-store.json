@@ -1,0 +1,65 @@
+{
+  "id": "braselton-brothers-store",
+  "name": "Braselton Brothers Store",
+  "kind": "building",
+  "origin": [
+    -83.7624,
+    34.10918
+  ],
+  "height": 7.9,
+  "padM": 60,
+  "frontageBearing": 293,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The restored one-story 1904 Braselton Brothers retail store: eight white-framed display/transom bays, two recessed entrances, cast-iron pilasters, a broad blank fascia, brick corbel parapet and a lower attached market wing. The separate two-story warehouse is excluded. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/braselton-brothers-store-near.glb",
+      "bytes": 33004,
+      "triangles": 1606,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -32.073856353759766,
+          0,
+          -31.34771156311035
+        ],
+        "max": [
+          39.92790222167969,
+          7.900000095367432,
+          37.93678665161133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/braselton-brothers-store-far.glb",
+      "bytes": 30884,
+      "triangles": 1410,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -32.073856353759766,
+          0,
+          -31.34771156311035
+        ],
+        "max": [
+          39.92790222167969,
+          7.900000095367432,
+          37.93678665161133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/braselton-brothers-store/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

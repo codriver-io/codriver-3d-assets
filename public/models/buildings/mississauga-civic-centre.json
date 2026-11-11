@@ -1,0 +1,65 @@
+{
+  "id": "mississauga-civic-centre",
+  "name": "Mississauga Civic Centre",
+  "kind": "building",
+  "origin": [
+    -79.64445,
+    43.5884
+  ],
+  "height": 92,
+  "padM": 155,
+  "frontageBearing": 42.2,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1987 Jones and Kirkland building, checked against completed2009 and current2026 exterior photos; the council interior and shopping-centre photo were rejected. Relation20666451 has two closed adjacent exterior rings288862658 and149173949. All modelled office, clock, council and skylight parts are owned; library, Living Arts Centre and square pavilions are excluded. Overall height92m is reported by the article, while the mapped clock part gives79.6m; exterior datum/height difference is unresolved and clock frame/chamber heights are estimates. Four clock hands show an illustrative time, without numerals or lettering. No square paving, fountains or terrain are authored. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/mississauga-civic-centre-near.glb",
+      "bytes": 101204,
+      "triangles": 6940,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -74.24442291259766,
+          0,
+          -134.7528533935547
+        ],
+        "max": [
+          58.58601379394531,
+          92,
+          7.848060131072998
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/mississauga-civic-centre-far.glb",
+      "bytes": 70016,
+      "triangles": 4196,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -74.24442291259766,
+          0,
+          -134.7528533935547
+        ],
+        "max": [
+          58.58601379394531,
+          92,
+          7.848060131072998
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/mississauga-civic-centre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

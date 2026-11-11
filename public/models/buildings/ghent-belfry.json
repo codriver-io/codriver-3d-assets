@@ -1,0 +1,75 @@
+{
+  "id": "ghent-belfry",
+  "name": "Belfry of Ghent",
+  "kind": "building",
+  "origin": [
+    3.7247914,
+    51.0536613
+  ],
+  "height": 91,
+  "padM": 90,
+  "frontageBearing": 0,
+  "rotation": -2.2074755963048194,
+  "heightEstimate": true,
+  "dragonDimensions": [
+    3.55,
+    1.8,
+    1.5
+  ],
+  "gallery": 45,
+  "turretTop": 74.5,
+  "clockHeight": 55,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Tower only: adjacent Cloth Hall and Mammelokker are not authored or masked. Seven horizontal water tables, paired Gothic openings, hollow watch-turret slots, clock-window gables and both LODs’ small spire dormers remain visible. Four clocks are open wheels and hands in front of true pointed openings; no Roman numerals or lettering. Dragon is original low-poly sculpture informed by current exterior references, not traced or scanned. y=0 flat local street grade; all heights are reconstruction estimates.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ghent-belfry-near.glb",
+      "bytes": 127528,
+      "triangles": 9626,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -10.383044242858887,
+          0,
+          -10.665931701660156
+        ],
+        "max": [
+          10.383044242858887,
+          91,
+          10.665931701660156
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ghent-belfry-far.glb",
+      "bytes": 88288,
+      "triangles": 6018,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -10.383044242858887,
+          0,
+          -10.665931701660156
+        ],
+        "max": [
+          10.383044242858887,
+          91,
+          10.665931701660156
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ghent-belfry/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

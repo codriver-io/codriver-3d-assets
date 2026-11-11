@@ -1,0 +1,212 @@
+{
+  "id": "torrespana",
+  "name": "Torrespaña",
+  "kind": "building",
+  "origin": [
+    -3.6641960328125,
+    40.420516389062485
+  ],
+  "height": 231,
+  "padM": 26,
+  "frontageBearing": 180,
+  "rotation": 0.2055523729619875,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -3.6640219886478302,
+          40.420516389062485
+        ],
+        [
+          -3.6640253328576518,
+          40.42049053941957
+        ],
+        [
+          -3.6640352369710083,
+          40.420465683163926
+        ],
+        [
+          -3.664051320378378,
+          40.42044277550753
+        ],
+        [
+          -3.664072965003436,
+          40.42042269677878
+        ],
+        [
+          -3.6640993390553787,
+          40.420406218591935
+        ],
+        [
+          -3.664129428994181,
+          40.420393974194496
+        ],
+        [
+          -3.6641620784803695,
+          40.42038643413178
+        ],
+        [
+          -3.6641960328125,
+          40.420383888164174
+        ],
+        [
+          -3.66422998714463,
+          40.42038643413178
+        ],
+        [
+          -3.6642626366308186,
+          40.420393974194496
+        ],
+        [
+          -3.664292726569621,
+          40.420406218591935
+        ],
+        [
+          -3.664319100621564,
+          40.42042269677878
+        ],
+        [
+          -3.6643407452466215,
+          40.42044277550753
+        ],
+        [
+          -3.6643568286539914,
+          40.420465683163926
+        ],
+        [
+          -3.664366732767348,
+          40.42049053941957
+        ],
+        [
+          -3.6643700769771694,
+          40.420516389062485
+        ],
+        [
+          -3.664366732767348,
+          40.4205422387054
+        ],
+        [
+          -3.6643568286539914,
+          40.420567094961044
+        ],
+        [
+          -3.6643407452466215,
+          40.42059000261744
+        ],
+        [
+          -3.664319100621564,
+          40.42061008134619
+        ],
+        [
+          -3.664292726569621,
+          40.420626559533034
+        ],
+        [
+          -3.6642626366308186,
+          40.42063880393047
+        ],
+        [
+          -3.66422998714463,
+          40.42064634399319
+        ],
+        [
+          -3.6641960328125,
+          40.420648889960795
+        ],
+        [
+          -3.6641620784803695,
+          40.42064634399319
+        ],
+        [
+          -3.664129428994181,
+          40.42063880393047
+        ],
+        [
+          -3.6640993390553787,
+          40.420626559533034
+        ],
+        [
+          -3.664072965003436,
+          40.42061008134619
+        ],
+        [
+          -3.664051320378378,
+          40.42059000261744
+        ],
+        [
+          -3.6640352369710083,
+          40.420567094961044
+        ],
+        [
+          -3.6640253328576518,
+          40.4205422387054
+        ],
+        [
+          -3.6640219886478302,
+          40.420516389062485
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -3.6641960328125,
+        40.420516389062485
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Adopts231m overall as an estimate from the municipal technical list and university account; the232m article height and220m tourism height are retained as conflicting source values, not silently reconciled. All thirteen mapped tower/part ways are listed; unrelated studio buildings are excluded. The circular29.5m foundation projection is authored from the published diameter, not an additional mapped building. Main gallery glazing is a dark ring with separate equipment panels; no broadcast logos or lettering. Dish count, exact aerial attachments and mast stripe divisions are photo estimates. Thin secondary antennas are reduced in far but all five gallery levels remain. Rigid y0 grade, not sealevel. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/torrespana-near.glb",
+      "bytes": 84536,
+      "triangles": 7152,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -14.732675552368164,
+          -2.9802322831784522e-9,
+          -14.732675552368164
+        ],
+        "max": [
+          14.732675552368164,
+          231,
+          14.732675552368164
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/torrespana-far.glb",
+      "bytes": 57652,
+      "triangles": 4340,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -14.72667407989502,
+          -2.9802322831784522e-9,
+          -14.72667407989502
+        ],
+        "max": [
+          14.72667407989502,
+          231,
+          14.72667407989502
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/torrespana/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

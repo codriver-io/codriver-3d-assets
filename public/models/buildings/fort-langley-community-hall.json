@@ -1,0 +1,112 @@
+{
+  "id": "fort-langley-community-hall",
+  "name": "Fort Langley Community Hall",
+  "kind": "building",
+  "origin": [
+    -122.57990085,
+    49.169121000000004
+  ],
+  "height": 11.44,
+  "widthM": 27.97,
+  "depthM": 14.24,
+  "padM": 24,
+  "frontageBearing": 125.48688917781726,
+  "rotation": 0.9514332693516426,
+  "controlPoints": [
+    [
+      -122.5799328,
+      49.1689816
+    ],
+    [
+      -122.5797097,
+      49.1691862
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -122.580092,
+          49.1690559
+        ],
+        [
+          -122.5799328,
+          49.1689816
+        ],
+        [
+          -122.5797097,
+          49.1691862
+        ],
+        [
+          -122.5798689,
+          49.1692604
+        ],
+        [
+          -122.580092,
+          49.1690559
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -122.57990085,
+        49.169121000000004
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped rotated 28 by 14 m hall. Overall heights, column diameter, roof slope and window sizes are photo estimates. Original yellow/white scheme is used, excluding fictional film repaints. The thin blue arrow board in the pediment is a documented architectural feature honoring George Young, not lettering or a logo. Four portico columns stand on the building foundation and meet the entablature. No flagpoles, signs, lettering, road, circular driveway or landscaping. Glover Road east/southeast alignment checked against nearby OSM road nodes. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fort-langley-community-hall-near.glb",
+      "bytes": 29184,
+      "triangles": 1547,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -14.433167457580566,
+          -5.9604645663569045e-9,
+          -16.049423217773438
+        ],
+        "max": [
+          14.433167457580566,
+          11.428177833557129,
+          16.049423217773438
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fort-langley-community-hall-far.glb",
+      "bytes": 26928,
+      "triangles": 1259,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -14.433167457580566,
+          -5.9604645663569045e-9,
+          -16.049423217773438
+        ],
+        "max": [
+          14.433167457580566,
+          11.428177833557129,
+          16.049423217773438
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fort-langley-community-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

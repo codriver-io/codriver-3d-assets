@@ -1,0 +1,65 @@
+{
+  "id": "place-bell-laval",
+  "name": "Place Bell",
+  "kind": "building",
+  "origin": [
+    -73.7218,
+    45.5558
+  ],
+  "height": 26,
+  "padM": 160,
+  "frontageBearing": 52.1,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The 2017 completed-envelope aerial photograph and 2019 street exterior show the same rounded white arena and low community-rink extension. The construction and interior photos in the dossier were rejected as exterior references. Main-bowl dimensions, exterior heights, roof slopes and glazing pitch are estimates; signage and logos omitted. The adjacent development and building parts north of the arena are excluded. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/place-bell-laval-near.glb",
+      "bytes": 32248,
+      "triangles": 1746,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -94.1610107421875,
+          0,
+          -110.11774444580078
+        ],
+        "max": [
+          114.63011932373047,
+          26,
+          92.08390045166016
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/place-bell-laval-far.glb",
+      "bytes": 24616,
+      "triangles": 1108,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -94.1610107421875,
+          0,
+          -110.11774444580078
+        ],
+        "max": [
+          114.63011932373047,
+          26,
+          92.08390045166016
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/place-bell-laval/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

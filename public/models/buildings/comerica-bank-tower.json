@@ -1,0 +1,65 @@
+{
+  "id": "comerica-bank-tower",
+  "name": "Comerica Bank Tower",
+  "kind": "building",
+  "origin": [
+    -96.7966,
+    32.78157
+  ],
+  "height": 239.88,
+  "padM": 65,
+  "frontageBearing": 76,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "1987 Philip Johnson / John Burgee tower (1717 Main, formerly Comerica Bank Tower): beige gridded masonry, tall blue-grey glass shaft, unequal shoulder setbacks and a glazed arched barrel crown. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/comerica-bank-tower-near.glb",
+      "bytes": 410700,
+      "triangles": 36072,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -43.41184997558594,
+          0,
+          -45.365081787109375
+        ],
+        "max": [
+          56.85185241699219,
+          239.8800048828125,
+          36.32508087158203
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/comerica-bank-tower-far.glb",
+      "bytes": 126888,
+      "triangles": 10196,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -43.41184997558594,
+          0,
+          -45.365081787109375
+        ],
+        "max": [
+          56.85185241699219,
+          239.8800048828125,
+          36.32508087158203
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/comerica-bank-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

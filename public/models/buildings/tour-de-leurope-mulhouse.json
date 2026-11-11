@@ -1,0 +1,66 @@
+{
+  "id": "tour-de-leurope-mulhouse",
+  "name": "Tour de l’Europe",
+  "kind": "building",
+  "origin": [
+    7.340494692592593,
+    47.74993445185187
+  ],
+  "height": 112,
+  "padM": 30,
+  "frontageBearing": 187.87355685128193,
+  "rotation": -0.1374194908978273,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Antennas are not included in the 100 m architectural roof height. The tower alone is modelled; Porte Jeune shopping centre, tramway, plaza and surrounding low buildings are excluded. Both reference photographs show the same concrete/concave facade design; the 2010 fire-response view is used only to clarify lower supports. CTBUH: https://www.skyscrapercenter.com/building/tour-de-leurope/29977 ; PSS: https://www.pss-archi.eu/immeubles/FR-68224-643.html . Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-de-leurope-mulhouse-near.glb",
+      "bytes": 175380,
+      "triangles": 10509,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -24.190282821655273,
+          -1.2582878778161157e-15,
+          -21.92428970336914
+        ],
+        "max": [
+          17.33537483215332,
+          112,
+          22.236398696899414
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-de-leurope-mulhouse-far.glb",
+      "bytes": 122428,
+      "triangles": 7349,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -24.190282821655273,
+          -1.2582878778161157e-15,
+          -21.92428970336914
+        ],
+        "max": [
+          17.33537483215332,
+          112,
+          22.236398696899414
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-de-leurope-mulhouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

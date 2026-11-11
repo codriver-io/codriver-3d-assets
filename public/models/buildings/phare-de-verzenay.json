@@ -1,0 +1,66 @@
+{
+  "id": "phare-de-verzenay",
+  "name": "Phare de Verzenay",
+  "kind": "building",
+  "origin": [
+    4.1515111,
+    49.158327
+  ],
+  "height": 29.7,
+  "padM": 32,
+  "frontageBearing": 170.34496860259617,
+  "rotation": 0.16851208726812664,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation y=0; real metres east/up/south. No terrain, sea level, latitude stretch or host datum baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current lighthouse and connected museum only; vineyard hill, surrounding terrace, retaining walls, paths and old advertising lettering excluded. Anchor is the horizontal IGN survey-point description Centre du renflement at 4.1515111,49.1583270; its elevation is explicitly ignored. Espirat D7 view and Donarreiskoffer 2012 exterior (actual Commons credit in provenance) establish current shell; low-angle photo establishes gallery and shaft taper. Interior Phare5 and historical lettering postcard rejected. Platform is sourced 25 m; cap, shaft subdivision and museum elevations remain estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/phare-de-verzenay-near.glb",
+      "bytes": 52188,
+      "triangles": 2208,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -26.71761131286621,
+          -1.4451138057063788e-15,
+          -4.1101908683776855
+        ],
+        "max": [
+          7.8696675300598145,
+          29.700000762939453,
+          24.22321128845215
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/phare-de-verzenay-far.glb",
+      "bytes": 52132,
+      "triangles": 2200,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -26.71761131286621,
+          -1.4451138057063788e-15,
+          -4.1101908683776855
+        ],
+        "max": [
+          7.8696675300598145,
+          29.700000762939453,
+          24.22321128845215
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/phare-de-verzenay/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

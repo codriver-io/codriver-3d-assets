@@ -1,0 +1,158 @@
+{
+  "id": "athens-tower",
+  "name": "Athens Tower",
+  "kind": "building",
+  "origin": [
+    23.76071,
+    37.9845
+  ],
+  "height": 112,
+  "padM": 130,
+  "frontageBearing": 180,
+  "rotation": 0.44248480709221505,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          23.7605159,
+          37.9848027
+        ],
+        [
+          23.7607261,
+          37.9848812
+        ],
+        [
+          23.7607987,
+          37.9847603
+        ],
+        [
+          23.760883,
+          37.9847918
+        ],
+        [
+          23.7610924,
+          37.9844433
+        ],
+        [
+          23.7607978,
+          37.9843333
+        ],
+        [
+          23.7607657,
+          37.9843869
+        ],
+        [
+          23.7607538,
+          37.9844066
+        ],
+        [
+          23.7607505,
+          37.9844122
+        ],
+        [
+          23.7605159,
+          37.9848027
+        ]
+      ],
+      [
+        [
+          23.7606268,
+          37.9843968
+        ],
+        [
+          23.7606432,
+          37.9843653
+        ],
+        [
+          23.760655,
+          37.9843456
+        ],
+        [
+          23.760687,
+          37.9842853
+        ],
+        [
+          23.7605319,
+          37.9842255
+        ],
+        [
+          23.7604158,
+          37.984109
+        ],
+        [
+          23.7602913,
+          37.9841914
+        ],
+        [
+          23.7604327,
+          37.9843244
+        ],
+        [
+          23.7606268,
+          37.9843968
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        23.76071,
+        37.9845
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Architect Ioannis Vikelas explicitly describes two unequal towers, a zig-zag lower volume, three-storey base and first-floor communication. The source photos confirm six major bays on the main long face, continuous pale perimeter piers and fine vertical metal mullions around blue-grey glazing. Main103m and lower65m architectural heights follow CVU; a Wikipedia claim of under100m without antennas is not adopted, since CVU explicitly excludes technical antennas from architectural height. Visible rooftop radio equipment is separately estimated up to112m. Upper main footprint is inferred from the mapped podium recesses; the lower tower keeps its mapped bent outline rather than becoming a rectangular slab. Floor counts may vary with mezzanine treatment; facade rhythm is calibrated to the exterior and grouped at far. The two ground pads stay separate, with an elevated enclosed first-floor link at the mapped2.43m corridor. No plaza paving, flags, signage, bank marks or rooftop lettering are included. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/athens-tower-near.glb",
+      "bytes": 134924,
+      "triangles": 7386,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -36.74028015136719,
+          -1.7317301674203288e-15,
+          -42.43516159057617
+        ],
+        "max": [
+          33.55168151855469,
+          112,
+          43.52608108520508
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/athens-tower-far.glb",
+      "bytes": 96996,
+      "triangles": 4888,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -36.74028015136719,
+          -1.7317301674203288e-15,
+          -42.43516159057617
+        ],
+        "max": [
+          33.55168151855469,
+          112,
+          43.52608108520508
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/athens-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

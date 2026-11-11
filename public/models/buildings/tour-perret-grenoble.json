@@ -1,0 +1,66 @@
+{
+  "id": "tour-perret-grenoble",
+  "name": "Tour Perret",
+  "kind": "building",
+  "origin": [
+    5.7354214,
+    45.1849483
+  ],
+  "height": 95,
+  "padM": 12,
+  "frontageBearing": 62.65502378208714,
+  "rotationRad": 0.4772598688821263,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Octagonal reinforced-concrete tower with eight vertical ribs, fine chevron screens, an open main gallery, upper cylindrical shaft and open lantern with a small domed crown and needle. Total height is 95 m to tip following Isère tourism, which separately gives 86 m for the main structure; other sources use 90 m or OSM 93 m for the mast. Upper stage splits, chevron pitch, gallery rails and dome profile are photographic estimates, not survey. Permanent restored form only; temporary restoration scaffolding, park furniture and signage omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-perret-grenoble-near.glb",
+      "bytes": 141596,
+      "triangles": 9572,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -7.473201751708984,
+          -5.9604645663569045e-9,
+          -7.473201751708984
+        ],
+        "max": [
+          7.473201751708984,
+          95,
+          7.473201751708984
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-perret-grenoble-far.glb",
+      "bytes": 89680,
+      "triangles": 5924,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -7.473201751708984,
+          -5.9604645663569045e-9,
+          -7.473201751708984
+        ],
+        "max": [
+          7.473201751708984,
+          95,
+          7.473201751708984
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-perret-grenoble/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

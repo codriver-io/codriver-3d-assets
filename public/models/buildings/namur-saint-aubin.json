@@ -1,0 +1,76 @@
+{
+  "id": "namur-saint-aubin",
+  "name": "Saint Aubin Cathedral",
+  "kind": "building",
+  "origin": [
+    4.86002485,
+    50.464516849999995
+  ],
+  "height": 61,
+  "padM": 130,
+  "frontageBearing": 0,
+  "rotation": -0.19539037155704633,
+  "heightEstimate": true,
+  "domeCenter": [
+    -3.5,
+    0.5
+  ],
+  "domeExteriorDiameter": 20,
+  "facadeColumnCount": 20,
+  "lanternBase": 51.5,
+  "lanternTotalHeight": 9.5,
+  "domeCapRise": 10.5,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "y=0 flat exterior street grade. Main cross follows OSM30439872; front steps extend into the immediate forecourt and stand0.25–1m above grade. The detached medieval carillon tower behind the choir is not authored or masked. Current structural monitoring/scaffolding and temporary street objects are omitted; standing architectural exterior is compared to two current-version exterior views, not to the1604 predecessor. Twenty physical facade columns and five abstract stone figures remain in both LODs; no lettering or logos. Far retains copper ribs, true arched window recesses and open lantern.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/namur-saint-aubin-near.glb",
+      "bytes": 176820,
+      "triangles": 15543,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -38.311222076416016,
+          0,
+          -26.00604248046875
+        ],
+        "max": [
+          44.46253204345703,
+          61,
+          25.627967834472656
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/namur-saint-aubin-far.glb",
+      "bytes": 124944,
+      "triangles": 10465,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -38.311222076416016,
+          0,
+          -25.945110321044922
+        ],
+        "max": [
+          44.46253204345703,
+          61,
+          25.61557960510254
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/namur-saint-aubin/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

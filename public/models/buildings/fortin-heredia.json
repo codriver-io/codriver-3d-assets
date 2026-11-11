@@ -1,0 +1,100 @@
+{
+  "id": "fortin-heredia",
+  "name": "El Fortín",
+  "kind": "building",
+  "origin": [
+    -84.117084,
+    9.999245
+  ],
+  "height": 13.9,
+  "padM": 18,
+  "frontageBearing": 180,
+  "rotation": 3.094309721466101,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -84.11704580652031,
+          9.999203650289079
+        ],
+        [
+          -84.1171259874993,
+          9.999207386677687
+        ],
+        [
+          -84.1171221934797,
+          9.999286349710921
+        ],
+        [
+          -84.1170420125007,
+          9.999282613322313
+        ],
+        [
+          -84.11704580652031,
+          9.999203650289079
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -84.117084,
+        9.999245
+      ]
+    ],
+    "datum": "median",
+    "featherM": 3
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is the rigid exterior foundation at grade. Real metres; no terrain height, sea level or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Mapped alignment is the north–south western boundary of Parque El Fortín, OSMway194486604; this is NOT claimed as the tower footprint. A bounded authored8.8m square is placed at the published tower coordinate and aligned to those two real park control points. A nearby round OSMbuilding463534763 is the amphitheatre, and survey point13853504346 lies near it; neither is misidentified as this tower. Absolute placement is approximate within a few metres and must be checked in the later app pass. The13m heritage masonry height and13.24m municipal figure are both documented, with13m adopted as an estimate. The modern roof guard is modeled separately above that datum. Four alternating loophole rows, flared pale embrasures and octagonal clover openings remain geometric. Historic photos without modern roof guard are excluded from current-state comparison; surface weathering is represented only by muted colours, not texture or excessive bricks. No busts, flags, letters, garden or unrelated park structures are included. Geographic rotation is baked once from mapped controls. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/fortin-heredia-near.glb",
+      "bytes": 114008,
+      "triangles": 4586,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -4.682960510253906,
+          0,
+          -4.682960510253906
+        ],
+        "max": [
+          4.682960510253906,
+          13.899999618530273,
+          4.682960510253906
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/fortin-heredia-far.glb",
+      "bytes": 81520,
+      "triangles": 3160,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -4.682960510253906,
+          0,
+          -4.682960510253906
+        ],
+        "max": [
+          4.682960510253906,
+          13.899999618530273,
+          4.682960510253906
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/fortin-heredia/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

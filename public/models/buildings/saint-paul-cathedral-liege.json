@@ -1,0 +1,78 @@
+{
+  "id": "saint-paul-cathedral-liege",
+  "name": "Saint Paul Cathedral",
+  "kind": "building",
+  "origin": [
+    5.5717034000000005,
+    50.64013345
+  ],
+  "height": 90,
+  "padM": 140,
+  "frontageBearing": 0,
+  "rotation": -2.8486428086332047,
+  "tower": [
+    31.5,
+    18
+  ],
+  "vaultHeight": 24,
+  "naveBays": 7,
+  "clockCount": 4,
+  "lantern": [
+    72,
+    77.1
+  ],
+  "heightEstimate": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "y=0 exterior church grade. The mapped outer building relation2295569 and innercourt172111628 are partitioned into two concave masks so the court is not filled or suppressed. Restored grey masonry and ochre upper belfry follow the2022/2025 exterior photographs. No clocks numerals, lettering, banners or signs. Clock faces partition gold ticks/hands and dark dial in one plane; dormer boxes seat into the spire. Both LODs preserve the lantern, belfry slots and cloister void. Lower roofs, relief tracery and apse geometry are simplified.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/saint-paul-cathedral-liege-near.glb",
+      "bytes": 180664,
+      "triangles": 14218,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -43.07548904418945,
+          0,
+          -45.51318359375
+        ],
+        "max": [
+          42.612911224365234,
+          90,
+          45.513179779052734
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/saint-paul-cathedral-liege-far.glb",
+      "bytes": 107116,
+      "triangles": 7610,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -43.07548904418945,
+          0,
+          -45.51318359375
+        ],
+        "max": [
+          42.612911224365234,
+          90,
+          45.513179779052734
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/saint-paul-cathedral-liege/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "aviva-stadium",
+  "name": "Aviva Stadium",
+  "kind": "building",
+  "origin": [
+    -6.228267125,
+    53.335193425
+  ],
+  "height": 50,
+  "padM": 145,
+  "frontageBearing": 344.55,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The50 m exterior envelope follows Sisk, while Irish Rugby’s47.65 m is measured above pitch; these figures are not treated as the same surveyed datum. Detailed height distribution, skin roll, louvre/grid spacing, steel sections, support positions and seat rows are photo-calibrated estimates. Exact mapped outer/inner plans and pitch control edges establish geographic scale and orientation. Photos1 and7 show the completed stadium; construction photos3 and8–10 and interior event photos are rejected as primary exterior references. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/aviva-stadium-near.glb",
+      "bytes": 565728,
+      "triangles": 38700,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -108.17894744873047,
+          -1.1920929132713809e-8,
+          -89.95231628417969
+        ],
+        "max": [
+          109.2115478515625,
+          49.990291595458984,
+          114.10084533691406
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/aviva-stadium-far.glb",
+      "bytes": 111912,
+      "triangles": 5976,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -107.9865951538086,
+          -1.1920929132713809e-8,
+          -89.83758544921875
+        ],
+        "max": [
+          109.18525695800781,
+          49.999507904052734,
+          113.77174377441406
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/aviva-stadium/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

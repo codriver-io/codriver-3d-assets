@@ -1,0 +1,20 @@
+import {SPEC,PALETTES} from './config.js';
+import {LOCAL_RINGS} from './footprint.js';
+import {tools} from './bahai-house-worship-wilmette-parts.js';
+export function create({detail='near'}={}){
+const {near,face,cap,solid,loft,rect,gable,box,bar,finish}=tools(SPEC,PALETTES,detail);
+const q=LOCAL_RINGS[1],theta=Math.atan2(q[1][1]-q[0][1],q[1][0]-q[0][0]),R=LOCAL_RINGS.map(r=>r.map(([x,z])=>[x*Math.cos(theta)+z*Math.sin(theta),-x*Math.sin(theta)+z*Math.cos(theta)])),centre=r=>r.reduce((s,p)=>[s[0]+p[0]/r.length,s[1]+p[1]/r.length],[0,0]),c=centre(R[1]),scale=(r,k)=>r.map(p=>[c[0]+(p[0]-c[0])*k,c[1]+(p[1]-c[1])*k]);
+// Six broad steps, enclosed under the mapped scalloped exterior rather than a new plaza.
+for(let j=0;j<6;j++)solid(scale(R[0],1-j*.009),j*.6,(j+1)*.6,'stone');solid(scale(R[0],.955),3.6,17.316,'stone','stone',{bottom:4.1,top:16.5,dy:14,h:11.3,pitch:3.5,ratio:.58,shape:'round',minWallLen:1});solid(R[2],17.316,31.5,'stone','stone',{bottom:18,top:30.5,dy:6,h:5.4,pitch:3,ratio:.7,minWallLen:1});
+// Narrow clerestory below the ribbed dome.
+const base=38.9568,radius=13.716,rise=14.9352,N=near?54:36;const circle=r=>Array.from({length:N},(_,i)=>[c[0]+r*Math.cos(i*2*Math.PI/N),c[1]+r*Math.sin(i*2*Math.PI/N)]);solid(circle(radius),31.5,base,'stone','stone',{bottom:32.2,top:37.9,dy:6,h:5.7,pitch:1.8,ratio:.64,minWallLen:1,shape:'round'});
+// Nine grounded main pylons and nine shorter peripheral pylons, with compact capitals.
+for(let j=0;j<9;j++){const k=j*9,r=R[2],pts=[r[k],r[(k+1)%r.length],r[(k+2)%r.length],r[(k+r.length-1)%r.length]],p=centre(pts),a=Math.atan2(p[1]-c[1],p[0]-c[0]);solid(rect(p[0],p[1],1.35,1.4,a),31.5,32.0,'cap');const o=R[0][[6,13,19,27,33,40,46,52,59][j]],oa=Math.atan2(o[1]-c[1],o[0]-c[0]),u=o[0]-.55*Math.cos(oa),v=o[1]-.55*Math.sin(oa);solid(rect(u,v,.7,.9,oa),0,17.316,'rib');solid(rect(u,v,1.2,1.3,oa),17.316,17.8,'cap');}
+// A recessed closed glass weather skin behind the actual pierced white ornament.
+const inner=[];for(let j=0;j<=(near?14:9);j++){const t=j*(Math.PI/2)/(near?14:9);inner.push({x:c[0],z:c[1],y:base+(rise-.6)*Math.sin(t),r:Math.max(.15,(radius-.7)*Math.cos(t))});}loft(inner,'glass',near?72:45);
+const start=Math.atan2(R[2][0][1]-c[1],R[2][0][0]-c[0]),top=53.6,segments=near?12:8;for(let j=0;j<9;j++){const a=start+j*2*Math.PI/9;for(let k=0;k<segments;k++){const point=i=>{const t=(Math.PI/2-.036)*i/segments;return[c[0]+radius*Math.cos(t)*Math.cos(a),base+rise*Math.sin(t),c[1]+radius*Math.cos(t)*Math.sin(a)];};bar('rib',point(k),point(k+1),.65,.65);}}
+// Each white tile is a closed annulus around a diamond opening: about 30% open area.
+const A=near?6:3,B=near?8:4,F=(panel,u,v,inset=0)=>{const a=start+(panel+u)*2*Math.PI/9,t=v*1.40,r=(radius-inset)*Math.cos(t);return[c[0]+r*Math.cos(a),base+(rise-inset)*Math.sin(t),c[1]+r*Math.sin(a)];};for(let panel=0;panel<9;panel++)for(let i=0;i<A;i++)for(let j=0;j<B;j++){const uv=(x,y)=>[(i+x)/A,(j+y)/B],out=[[0,0],[1,0],[1,1],[0,1]].map(p=>uv(...p)),h=[[.5,.1127],[.8873,.5],[.5,.8873],[.1127,.5]].map(p=>uv(...p)),normal=[Math.cos(start+(panel+.5)*2*Math.PI/9),.8,Math.sin(start+(panel+.5)*2*Math.PI/9)];for(let k=0;k<4;k++){const l=(k+1)%4,coords=[out[k],out[l],h[l],h[k]],outer=coords.map(p=>F(panel,...p)),under=coords.map(p=>F(panel,...p,.10));for(const t of[[0,1,3],[1,2,3]]){face('lace',t.map(i=>outer[i]),normal);face('lace',t.map(i=>under[i]),normal.map(v=>-v));}const centre=F(panel,...uv(.5,.5)),a=F(panel,...h[k]),b=F(panel,...h[l]),x=F(panel,...out[k]),y=F(panel,...out[l]);face('lace',[a,b,F(panel,...h[l],.10),F(panel,...h[k],.10)],centre.map((v,i)=>v-(a[i]+b[i])/2));face('lace',[x,y,F(panel,...out[l],.10),F(panel,...out[k],.10)],centre.map((v,i)=>(x[i]+y[i])/2-v));}}
+loft([{x:c[0],z:c[1],y:53.3,r:.6},{x:c[0],z:c[1],y:53.892,r:.2}],'cap',9);const root=finish(-theta);root.traverse(o=>{if(o.isMesh&&o.material.name==='rib'){const p=o.geometry.attributes.position;for(let i=0;i<p.count;i++)if(p.getY(i)>53.892)p.setY(i,53.892);p.needsUpdate=true;o.geometry.computeVertexNormals();o.geometry.computeBoundingBox();}});return root;
+
+}

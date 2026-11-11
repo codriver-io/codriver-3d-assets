@@ -1,0 +1,65 @@
+{
+  "id": "accor-arena-bercy",
+  "name": "Accor Arena (Bercy)",
+  "kind": "building",
+  "origin": [
+    2.37835046,
+    48.83863289
+  ],
+  "height": 30,
+  "padM": 162,
+  "frontageBearing": 25.604,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Four30 m pylons follow regional heritage dimensions; mapped32 m is a conflicting estimate. Continuous adjoining octagonal grass cheeks rise from0.12 m to20 m; a concrete eave reaches24 m; per-part roof directions were replaced by a shared profile; central roof24 m is photo-calibrated below the exposed truss (OSM29 m overstates the enclosed volume), blue frame24–30 m. No signage, plaza or neighbouring buildings. Roof grass begins0.12 m above grade. Model refers to the completed2015 exterior. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/accor-arena-bercy-near.glb",
+      "bytes": 34936,
+      "triangles": 1942,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -77.6358871459961,
+          0,
+          -87.75249481201172
+        ],
+        "max": [
+          105.64085388183594,
+          30,
+          95.52424621582031
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/accor-arena-bercy-far.glb",
+      "bytes": 25948,
+      "triangles": 1174,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -77.6358871459961,
+          0,
+          -87.75249481201172
+        ],
+        "max": [
+          105.64085388183594,
+          30,
+          95.52424621582031
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/accor-arena-bercy/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "oriole-park-camden-yards",
+  "name": "Oriole Park at Camden Yards",
+  "kind": "building",
+  "origin": [
+    -76.62166667,
+    39.28388889
+  ],
+  "height": 42,
+  "padM": 200,
+  "frontageBearing": 2.795,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The OSM stadium leisure boundary owns the bowl and field; mapped warehouse93170801 and two small stadium pavilions are also declared. Main bowl seating paths are photo estimates fitted inside that boundary, not surveyed seat locations. The stadium is an open horseshoe with stepped seats, exposed upper steelwork and true negative space above the brick street facade. Source8 is the stadium authority aerial (Getty, all rights reserved);4 confirms street arches;10 is the March2026 completed videoboard from the Maryland governor (no explicit reuse licence, all rights reserved comparison only). Source2 confirms 2025 bowl geometry. The older narrow scoreboard in1/2/3/8 is superseded by the completed2026 screen. Future upper-deck changes announcedSeptember2026 are not assumed completed. No reference image is redistributed; no sponsors, text, marks, logos or flags. The warehouse is315m in the mapped plan versus1016ft in published descriptions; this asset preserves the mapped alignment. Playingfield surface is0.15m above localfooting and the app terrain datum remains untested. Heights are photo estimates. Cityscape: not tested. Full 3D world: not tested. The Ravens’ published stadium facts imply an Oriole Park height of 150 ft (45.72 m) by stating that their 185 ft stadium stands 35 ft above it. This model’s 42 m maximum is a photo-based estimate with a different unverified roof/lighting datum; the discrepancy is unresolved and should be checked during independent review.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/oriole-park-camden-yards-near.glb",
+      "bytes": 172468,
+      "triangles": 13772,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -114.4750747680664,
+          -3.814697322468419e-7,
+          -130.67112731933594
+        ],
+        "max": [
+          132.2587127685547,
+          42,
+          212.53103637695312
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/oriole-park-camden-yards-far.glb",
+      "bytes": 105816,
+      "triangles": 7411,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -114.4750747680664,
+          -3.814697322468419e-7,
+          -130.67112731933594
+        ],
+        "max": [
+          132.2587127685547,
+          42,
+          212.53103637695312
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/oriole-park-camden-yards/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

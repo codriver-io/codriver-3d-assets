@@ -1,0 +1,65 @@
+{
+  "id": "seven-foot-knoll-lighthouse",
+  "name": "Seven Foot Knoll Lighthouse",
+  "kind": "building",
+  "origin": [
+    -76.6053511,
+    39.2835825
+  ],
+  "height": 12.4,
+  "padM": 35,
+  "frontageBearing": 90,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The Wikipedia article contains both current and original offshore coordinates. This asset is at the mapped Pier5 circle, centered−76.6053511,39.2835825; it is not the former Patapsco offshore site. The CoastGuard40ft value is height above mean high water when on station, not a surveyed current ground height. Current12.4m is an estimate consistent with OSM12m and the relocated exterior photos. The historical1900photo1 is not a current geometry/paint reference; current2and5 show the red dwelling, black framing and land-based supports, while3confirms green shutters and white frames. The measured51ftplatform and40ftdwelling diameters are retained. An estimated switchback access stair is aligned east from the mapped circular frame, enclosed by a separately authored component mask; it is not claimed as a surveyed OSM stair. Both LODs keep the raised underside open, nine load-bearing piles, actual diagonal braces, hollow balcony rails and glazed upper light chamber. The historic pier plinth, pavement and surrounding water are not authored. Feet are at rigidlocaly0; later appgrounddatum verification is required. No lettering, plaques or lens texture. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Recalibrated the iron-red dwelling and raised drum to muted #843936 in daylight and #6d3334 at night. Dark roof, pale frames, green shutters, piles and stair geometry are retained.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/seven-foot-knoll-lighthouse-near.glb",
+      "bytes": 60796,
+      "triangles": 3796,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.77239990234375,
+          -5.551115123125783e-17,
+          -7.766833782196045
+        ],
+        "max": [
+          11.899999618530273,
+          12.399999618530273,
+          7.777966022491455
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/seven-foot-knoll-lighthouse-far.glb",
+      "bytes": 48636,
+      "triangles": 2796,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -7.77239990234375,
+          -5.551115123125783e-17,
+          -7.766833782196045
+        ],
+        "max": [
+          11.899999618530273,
+          12.399999618530273,
+          7.777966022491455
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/seven-foot-knoll-lighthouse/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

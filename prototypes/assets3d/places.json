@@ -1,4 +1,13 @@
 {
+  "Abbotsford": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Aix-en-Provence": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Alajuela": {
     "country": "Costa Rica",
     "region": "Alajuela",
@@ -13,8 +22,25 @@
     "region": "Virginia",
     "continent": "North America"
   },
+  "Almada": {
+    "country": "Portugal",
+    "continent": "Europe"
+  },
   "Amsterdam": {
     "country": "Netherlands",
+    "continent": "Europe"
+  },
+  "Anaheim": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Angers": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Annecy": {
+    "country": "France",
     "continent": "Europe"
   },
   "Arlington": {
@@ -25,6 +51,11 @@
   "Athens": {
     "country": "Greece",
     "continent": "Europe"
+  },
+  "Athens, Georgia": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
   },
   "Atlanta": {
     "country": "United States",
@@ -38,6 +69,10 @@
   },
   "Averøy": {
     "country": "Norway",
+    "continent": "Europe"
+  },
+  "Avignon": {
+    "country": "France",
     "continent": "Europe"
   },
   "Baltimore": {
@@ -59,6 +94,10 @@
     "region": "Texas",
     "continent": "North America"
   },
+  "Belfort": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Bénouville": {
     "country": "France",
     "continent": "Europe"
@@ -71,14 +110,37 @@
     "country": "Germany",
     "continent": "Europe"
   },
+  "Bethesda": {
+    "country": "United States",
+    "region": "Maryland",
+    "continent": "North America"
+  },
   "Birmingham": {
     "country": "United States",
     "region": "Alabama",
     "continent": "North America"
   },
+  "Birmingham (England)": {
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
   "Bogotá": {
     "country": "Colombia",
     "continent": "South America"
+  },
+  "Bordeaux": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Brampton": {
+    "country": "Canada",
+    "region": "Ontario",
+    "continent": "North America"
+  },
+  "Braselton": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
   },
   "Brașov": {
     "country": "Romania",
@@ -106,13 +168,26 @@
     "region": "Alberta",
     "continent": "North America"
   },
+  "Cali": {
+    "country": "Colombia",
+    "continent": "South America"
+  },
   "Carcassonne": {
     "country": "France",
     "continent": "Europe"
   },
+  "Cartagena": {
+    "country": "Colombia",
+    "continent": "South America"
+  },
   "Cartago": {
     "country": "Costa Rica",
     "region": "Cartago",
+    "continent": "North America"
+  },
+  "Chambly": {
+    "country": "Canada",
+    "region": "Québec",
     "continent": "North America"
   },
   "Charleston": {
@@ -130,6 +205,18 @@
     "region": "Illinois",
     "continent": "North America"
   },
+  "Clermont-Ferrand": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Cluj-Napoca": {
+    "country": "Romania",
+    "continent": "Europe"
+  },
+  "Coimbra": {
+    "country": "Portugal",
+    "continent": "Europe"
+  },
   "Cologne": {
     "country": "Germany",
     "continent": "Europe"
@@ -139,8 +226,21 @@
     "region": "Ohio",
     "continent": "North America"
   },
+  "Constanța": {
+    "country": "Romania",
+    "continent": "Europe"
+  },
   "Copenhagen": {
     "country": "Denmark",
+    "continent": "Europe"
+  },
+  "Coquitlam": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Courbevoie": {
+    "country": "France",
     "continent": "Europe"
   },
   "Cumberland": {
@@ -162,9 +262,28 @@
     "region": "British Columbia",
     "continent": "North America"
   },
+  "Denver": {
+    "country": "United States",
+    "region": "Colorado",
+    "continent": "North America"
+  },
+  "Dijon": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Drummondville": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
   "Dublin": {
     "country": "Ireland",
     "continent": "Europe"
+  },
+  "Duluth": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
   },
   "Düsseldorf": {
     "country": "Germany",
@@ -174,6 +293,15 @@
     "country": "Canada",
     "region": "Alberta",
     "continent": "North America"
+  },
+  "Ellicott City": {
+    "country": "United States",
+    "region": "Maryland",
+    "continent": "North America"
+  },
+  "Esch-sur-Alzette": {
+    "country": "Luxembourg",
+    "continent": "Europe"
   },
   "Folly Beach": {
     "country": "United States",
@@ -185,20 +313,37 @@
     "region": "Texas",
     "continent": "North America"
   },
+  "Fort-de-France": {
+    "country": "France",
+    "region": "Martinique",
+    "continent": "North America"
+  },
   "Garden Grove": {
     "country": "United States",
     "region": "California",
     "continent": "North America"
+  },
+  "Gateshead": {
+    "country": "United Kingdom",
+    "continent": "Europe"
   },
   "Gatineau": {
     "country": "Canada",
     "region": "Québec",
     "continent": "North America"
   },
+  "Ghent": {
+    "country": "Belgium",
+    "continent": "Europe"
+  },
   "Goose Creek": {
     "country": "United States",
     "region": "South Carolina",
     "continent": "North America"
+  },
+  "Grenoble": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Halden": {
     "country": "Norway",
@@ -212,9 +357,19 @@
     "country": "Finland",
     "continent": "Europe"
   },
+  "Heredia": {
+    "country": "Costa Rica",
+    "region": "Heredia",
+    "continent": "North America"
+  },
   "Hérouville-Saint-Clair": {
     "country": "France",
     "continent": "Europe"
+  },
+  "Hillsboro Beach": {
+    "country": "United States",
+    "region": "Florida",
+    "continent": "North America"
   },
   "Honfleur": {
     "country": "France",
@@ -267,6 +422,10 @@
     "region": "Texas",
     "continent": "North America"
   },
+  "La Rochelle": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Lærdal": {
     "country": "Norway",
     "continent": "Europe"
@@ -276,12 +435,44 @@
     "region": "Alberta",
     "continent": "North America"
   },
+  "Langley": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
   "Larvik": {
     "country": "Norway",
     "continent": "Europe"
   },
+  "Las Vegas": {
+    "country": "United States",
+    "region": "Nevada",
+    "continent": "North America"
+  },
+  "Laval": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Lawrenceville": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
+  },
+  "Leicester": {
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
   "Leirfjord": {
     "country": "Norway",
+    "continent": "Europe"
+  },
+  "Liège": {
+    "country": "Belgium",
+    "continent": "Europe"
+  },
+  "Lille": {
+    "country": "France",
     "continent": "Europe"
   },
   "Lisbon": {
@@ -297,10 +488,19 @@
     "region": "California",
     "continent": "North America"
   },
+  "Longueuil": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
   "Los Angeles": {
     "country": "United States",
     "region": "California",
     "continent": "North America"
+  },
+  "Luxembourg": {
+    "country": "Luxembourg",
+    "continent": "Europe"
   },
   "Lviv": {
     "country": "Ukraine",
@@ -314,9 +514,27 @@
     "country": "Spain",
     "continent": "Europe"
   },
+  "Málaga": {
+    "country": "Spain",
+    "continent": "Europe"
+  },
+  "Manchester": {
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
   "Maple Ridge": {
     "country": "Canada",
     "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Marietta": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
+  },
+  "Markham": {
+    "country": "Canada",
+    "region": "Ontario",
     "continent": "North America"
   },
   "Marseille": {
@@ -341,6 +559,20 @@
     "region": "British Columbia",
     "continent": "North America"
   },
+  "Mississauga": {
+    "country": "Canada",
+    "region": "Ontario",
+    "continent": "North America"
+  },
+  "Monroe": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
+  },
+  "Montbéliard": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Montréal": {
     "country": "Canada",
     "region": "Québec",
@@ -351,8 +583,24 @@
     "region": "South Carolina",
     "continent": "North America"
   },
+  "Mulhouse": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Munich": {
     "country": "Germany",
+    "continent": "Europe"
+  },
+  "Namur": {
+    "country": "Belgium",
+    "continent": "Europe"
+  },
+  "Nancy": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Nantes": {
+    "country": "France",
     "continent": "Europe"
   },
   "Narvik": {
@@ -373,10 +621,26 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Nîmes": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Niort": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Nivelles": {
+    "country": "Belgium",
+    "continent": "Europe"
+  },
   "North Charleston": {
     "country": "United States",
     "region": "South Carolina",
     "continent": "North America"
+  },
+  "Nottingham": {
+    "country": "United Kingdom",
+    "continent": "Europe"
   },
   "Omaha": {
     "country": "United States",
@@ -406,9 +670,39 @@
     "region": "California",
     "continent": "North America"
   },
+  "Perris": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Phoenix": {
+    "country": "United States",
+    "region": "Arizona",
+    "continent": "North America"
+  },
   "Pitt Meadows": {
     "country": "Canada",
     "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Pointe-à-Pitre": {
+    "country": "France",
+    "region": "Guadeloupe",
+    "continent": "North America"
+  },
+  "Pointe-Claire": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
+  "Port Coquitlam": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
+  "Portland": {
+    "country": "United States",
+    "region": "Oregon",
     "continent": "North America"
   },
   "Prague": {
@@ -424,14 +718,41 @@
     "region": "Québec",
     "continent": "North America"
   },
+  "Ramat Gan": {
+    "country": "Israel",
+    "continent": "Asia"
+  },
+  "Reims": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Repentigny": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
   "Riverside": {
     "country": "United States",
     "region": "California",
     "continent": "North America"
   },
+  "Rockville": {
+    "country": "United States",
+    "region": "Maryland",
+    "continent": "North America"
+  },
   "Rome": {
     "country": "Italy",
     "continent": "Europe"
+  },
+  "Rouen": {
+    "country": "France",
+    "continent": "Europe"
+  },
+  "Sacramento": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
   },
   "Saguenay": {
     "country": "Canada",
@@ -442,6 +763,15 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Saint-Denis (Réunion)": {
+    "country": "France",
+    "continent": "Africa"
+  },
+  "Saint-Lambert": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
   "Sainte-Anne-de-Beaupré": {
     "country": "Canada",
     "region": "Québec",
@@ -450,6 +780,11 @@
   "San Antonio": {
     "country": "United States",
     "region": "Texas",
+    "continent": "North America"
+  },
+  "San Bernardino": {
+    "country": "United States",
+    "region": "California",
     "continent": "North America"
   },
   "San Francisco": {
@@ -462,9 +797,24 @@
     "region": "San José",
     "continent": "North America"
   },
+  "San Juan Capistrano": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
   "Santa Ana": {
     "country": "United States",
     "region": "California",
+    "continent": "North America"
+  },
+  "Savage": {
+    "country": "United States",
+    "region": "Maryland",
+    "continent": "North America"
+  },
+  "Silver Spring": {
+    "country": "United States",
+    "region": "Maryland",
     "continent": "North America"
   },
   "St. Louis": {
@@ -481,6 +831,19 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Stockholm": {
+    "country": "Sweden",
+    "continent": "Europe"
+  },
+  "Stone Mountain": {
+    "country": "United States",
+    "region": "Georgia",
+    "continent": "North America"
+  },
+  "Strasbourg": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Stuttgart": {
     "country": "Germany",
     "continent": "Europe"
@@ -495,6 +858,11 @@
     "region": "South Carolina",
     "continent": "North America"
   },
+  "Surrey": {
+    "country": "Canada",
+    "region": "British Columbia",
+    "continent": "North America"
+  },
   "Tampa": {
     "country": "United States",
     "region": "Florida",
@@ -504,10 +872,23 @@
     "country": "Georgia",
     "continent": "Asia"
   },
+  "Tel Aviv": {
+    "country": "Israel",
+    "continent": "Asia"
+  },
+  "Terrebonne": {
+    "country": "Canada",
+    "region": "Québec",
+    "continent": "North America"
+  },
   "Toronto": {
     "country": "Canada",
     "region": "Ontario",
     "continent": "North America"
+  },
+  "Toulon": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Toulouse": {
     "country": "France",
@@ -526,6 +907,11 @@
     "country": "Norway",
     "continent": "Europe"
   },
+  "Tustin": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
   "Ulvik": {
     "country": "Norway",
     "continent": "Europe"
@@ -539,10 +925,18 @@
     "country": "France",
     "continent": "Europe"
   },
+  "Verzenay": {
+    "country": "France",
+    "continent": "Europe"
+  },
   "Victoria": {
     "country": "Canada",
     "region": "British Columbia",
     "continent": "North America"
+  },
+  "Villeneuve-d’Ascq": {
+    "country": "France",
+    "continent": "Europe"
   },
   "Villeurbanne": {
     "country": "France",
@@ -555,6 +949,16 @@
   "Washington": {
     "country": "United States",
     "region": "District of Columbia",
+    "continent": "North America"
+  },
+  "West Sacramento": {
+    "country": "United States",
+    "region": "California",
+    "continent": "North America"
+  },
+  "Wilmette": {
+    "country": "United States",
+    "region": "Illinois",
     "continent": "North America"
   },
   "Winnipeg": {
@@ -572,6 +976,10 @@
   },
   "Zaandam": {
     "country": "Netherlands",
+    "continent": "Europe"
+  },
+  "Zürich": {
+    "country": "Switzerland",
     "continent": "Europe"
   }
 }

@@ -1,0 +1,66 @@
+{
+  "id": "parus-business-centre",
+  "name": "Parus Business Centre",
+  "kind": "building",
+  "origin": [
+    30.527385250000002,
+    50.4375536
+  ],
+  "height": 156,
+  "padM": 40,
+  "frontageBearing": 59.6132582976563,
+  "rotationY": -0.5303486916589644,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Parus’s pointed lens-shaped blue curtain wall rises above its broad five-storey podium, beside a pale rear service spine; a recessed mechanical crown and slender antenna complete the sail silhouette. Heights disagree: the main contractor gives 136 m and 156 m with antenna, whereas OSM/older operator-derived summaries give 133.1 m glass roof, 138 m crown and 149.6 m tip, and the outline itself is tagged 130 m. This model retains the mapped 133.1 m glazing and 137 m service-spine figure, places the inset mechanical roof at the contractor’s 136 m, and uses its 156 m tip. These mixed measurement definitions and the service-spine cap need independent dimensional review. Podium height 22 m follows the mapped tower min_height; window cadence and colors are original visual approximations. Neighboring Gulliver parts 153776632/300347479 are about 300 m away and are not owned. Billboards, lettering and trademarks are omitted. The pointed service-spine head rises from 136 to approximately 143 m, an original photo-based estimate above the mapped 137 m prism; it should be reviewed separately from the published main roof measurement. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/parus-business-centre-near.glb",
+      "bytes": 205960,
+      "triangles": 17355,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -48.35857391357422,
+          0,
+          -42.98065185546875
+        ],
+        "max": [
+          48.35857391357422,
+          156,
+          42.98065185546875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/parus-business-centre-far.glb",
+      "bytes": 85176,
+      "triangles": 6487,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -48.35857391357422,
+          0,
+          -42.98065185546875
+        ],
+        "max": [
+          48.35857391357422,
+          156,
+          42.98065185546875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/parus-business-centre/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

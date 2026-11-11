@@ -1,0 +1,87 @@
+{
+  "id": "koekelberg-basilica",
+  "name": "National Basilica of the Sacred Heart",
+  "kind": "building",
+  "origin": [
+    4.3170513,
+    50.8670807
+  ],
+  "height": 89.9,
+  "padM": 210,
+  "frontageBearing": 0,
+  "rotation": 2.7250008997466697,
+  "crossingPierWidth": 6.6,
+  "crossingRecess": 0.9,
+  "domeDiameter": 33,
+  "domeStart": 59.1,
+  "panoramaHeight": 52.8,
+  "towerHeight": 65,
+  "towers": [
+    [
+      -58.5,
+      -19.7
+    ],
+    [
+      -58.5,
+      11.9
+    ]
+  ],
+  "domeCenter": [
+    8,
+    -3.5
+  ],
+  "heightEstimate": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "y=0 local exterior grade; no terrain baked in. Only the small porch floor is a ground surface, with its underside0.10m above grade. The main copper dome, its tiny open lantern, twin tower cages, fan chapels and open entrance arches survive both LODs. Copper seam strips replace gores rather than overlaying a roof skin. No logos, text, emblems or signage. Sculptural doorway figures are abstract low-poly masses. Main structure and all eight crossing piers sit on continuous lower volumes; application and terrain fitting remain later gates.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/koekelberg-basilica-near.glb",
+      "bytes": 341536,
+      "triangles": 31848,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -72.76461029052734,
+          0,
+          -50.639469146728516
+        ],
+        "max": [
+          72.64000701904297,
+          89.9000015258789,
+          50.639469146728516
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/koekelberg-basilica-far.glb",
+      "bytes": 121892,
+      "triangles": 10138,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -72.76461029052734,
+          0,
+          -50.639469146728516
+        ],
+        "max": [
+          72.64000701904297,
+          89.9000015258789,
+          50.639469146728516
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/koekelberg-basilica/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

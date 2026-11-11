@@ -1,0 +1,65 @@
+{
+  "id": "tour-trinity",
+  "name": "Tour Trinity",
+  "kind": "building",
+  "origin": [
+    2.2411088,
+    48.89290716
+  ],
+  "height": 140,
+  "padM": 57,
+  "frontageBearing": 349.406,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior local grade y=0; real metres east/up/south. Geographic orientation baked from mapped control points; no terrain, sea-level or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Completed2020 Trinity. Primary architect and district source140 m; OSM151 m and secondary157.2 m use unresolved datums:140 m above the public plaza is the selected envelope estimate. Two unequal glazed wings, taller external lift core and repeated terraces retained. Public plaza y=0; underlying road slab/underpass, landscaping and interiors excluded and require separate app fitting. No road layer authored. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-trinity-near.glb",
+      "bytes": 234260,
+      "triangles": 14074,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -18.41436767578125,
+          0,
+          -48.50635528564453
+        ],
+        "max": [
+          16.408987045288086,
+          140,
+          33.747615814208984
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-trinity-far.glb",
+      "bytes": 70452,
+      "triangles": 3700,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -18.41436767578125,
+          0,
+          -48.50635528564453
+        ],
+        "max": [
+          16.408987045288086,
+          140,
+          33.747615814208984
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-trinity/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

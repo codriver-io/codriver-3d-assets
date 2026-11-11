@@ -1,0 +1,66 @@
+{
+  "id": "texas-star-ferris-wheel",
+  "name": "Texas Star",
+  "kind": "building",
+  "origin": [
+    -96.7592667,
+    32.7767789
+  ],
+  "height": 64.77,
+  "padM": 24,
+  "frontageBearing": 135,
+  "footprintless": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Texas Star at Fair Park: open double-rim wheel, 44 hanging multicolour gondolas, pale-blue A-frame supports and a small white hub star. No ride lettering, fairground logos or scene terrain. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/texas-star-ferris-wheel-near.glb",
+      "bytes": 96936,
+      "triangles": 8128,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -22.373924255371094,
+          -5.9604645663569045e-9,
+          -22.373924255371094
+        ],
+        "max": [
+          22.373924255371094,
+          64.7699966430664,
+          22.373924255371094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/texas-star-ferris-wheel-far.glb",
+      "bytes": 70900,
+      "triangles": 4752,
+      "drawCalls": 8,
+      "bounds": {
+        "min": [
+          -22.309219360351562,
+          -5.9604645663569045e-9,
+          -22.309219360351562
+        ],
+        "max": [
+          22.309219360351562,
+          64.7699966430664,
+          22.309219360351562
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/texas-star-ferris-wheel/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

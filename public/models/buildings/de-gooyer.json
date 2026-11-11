@@ -1,0 +1,66 @@
+{
+  "id": "de-gooyer",
+  "name": "De Gooyer windmill",
+  "kind": "building",
+  "origin": [
+    4.926173,
+    52.366807575
+  ],
+  "height": 37.6,
+  "padM": 25,
+  "frontageBearing": 354.8544688283807,
+  "rotation": -0.08980646070875872,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The owner identifies 26.6 m as sail SPAN, not structural height as some summaries imply; the gallery is 17.8 m and the mill society gives an approximately 7 m square stone base. Roof 29.6 m, hub 27.5 m and maximum rest-position tip about 37.6 m are photo estimates. Four 13.3 m radial sails are frozen at a diagonal rest position; the movable cap heading is a representative street-facing setting. The mapped base bearing is baked once; two authored rings cover the gallery and rotor overhang. The adjacent brewery is excluded. Current Dutch lattice rods follow the post-restoration exterior photos; the 1896 image is excluded from used references.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/de-gooyer-near.glb",
+      "bytes": 45840,
+      "triangles": 2278,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -10.409919738769531,
+          0,
+          -8.16695499420166
+        ],
+        "max": [
+          9.638622283935547,
+          37.562129974365234,
+          8.16695499420166
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/de-gooyer-far.glb",
+      "bytes": 35400,
+      "triangles": 1538,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -10.425799369812012,
+          0,
+          -8.16695499420166
+        ],
+        "max": [
+          9.654500961303711,
+          37.576271057128906,
+          8.16695499420166
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/de-gooyer/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

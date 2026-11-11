@@ -1,0 +1,66 @@
+{
+  "id": "skytower-bucharest",
+  "name": "SkyTower Bucharest",
+  "kind": "building",
+  "origin": [
+    26.1047356,
+    44.4779584
+  ],
+  "height": 137,
+  "padM": 120,
+  "frontageBearing": 346.47720573714156,
+  "rotationY": -1.8068136107515762,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The 137 m oval SkyTower: slender rounded glass shaft, fine pale curtain-wall grid, staggered blue-grey panes and recessed roof cap. Curtain-wall pitch, pane tints and roof setback are estimated from exterior photographs. The adjacent mall and lower office block are excluded; no signage or logos. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/skytower-bucharest-near.glb",
+      "bytes": 218484,
+      "triangles": 19148,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -18.761140823364258,
+          0,
+          -22.46437644958496
+        ],
+        "max": [
+          18.761140823364258,
+          137,
+          22.46437644958496
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/skytower-bucharest-far.glb",
+      "bytes": 71000,
+      "triangles": 5600,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -18.761140823364258,
+          0,
+          -22.46437644958496
+        ],
+        "max": [
+          18.761140823364258,
+          137,
+          22.46437644958496
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/skytower-bucharest/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

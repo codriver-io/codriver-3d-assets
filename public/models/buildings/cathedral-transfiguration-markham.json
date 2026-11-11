@@ -1,0 +1,240 @@
+{
+  "id": "cathedral-transfiguration-markham",
+  "name": "Cathedral of the Transfiguration",
+  "kind": "building",
+  "origin": [
+    -79.37272,
+    43.8937
+  ],
+  "height": 64,
+  "padM": 46,
+  "frontageBearing": 80.07967387042237,
+  "rotation": -1.3976539729621413,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -79.3730504,
+          43.8937463
+        ],
+        [
+          -79.3729387,
+          43.8937601
+        ],
+        [
+          -79.372943,
+          43.8937782
+        ],
+        [
+          -79.3729115,
+          43.893782
+        ],
+        [
+          -79.372876,
+          43.8938185
+        ],
+        [
+          -79.3728056,
+          43.8938267
+        ],
+        [
+          -79.3727576,
+          43.8938019
+        ],
+        [
+          -79.3727234,
+          43.8938057
+        ],
+        [
+          -79.3727191,
+          43.8937878
+        ],
+        [
+          -79.3724771,
+          43.8938183
+        ],
+        [
+          -79.372491,
+          43.8938739
+        ],
+        [
+          -79.3723917,
+          43.8938852
+        ],
+        [
+          -79.3723754,
+          43.8938138
+        ],
+        [
+          -79.3723926,
+          43.8938117
+        ],
+        [
+          -79.3723864,
+          43.8937863
+        ],
+        [
+          -79.372314,
+          43.8937946
+        ],
+        [
+          -79.3722892,
+          43.8936817
+        ],
+        [
+          -79.3723579,
+          43.8936733
+        ],
+        [
+          -79.372352,
+          43.8936477
+        ],
+        [
+          -79.3723338,
+          43.8936496
+        ],
+        [
+          -79.3723177,
+          43.8935783
+        ],
+        [
+          -79.3724166,
+          43.8935672
+        ],
+        [
+          -79.3724282,
+          43.89362
+        ],
+        [
+          -79.3726714,
+          43.8935888
+        ],
+        [
+          -79.3726675,
+          43.893572
+        ],
+        [
+          -79.3726948,
+          43.8935685
+        ],
+        [
+          -79.3727328,
+          43.8935318
+        ],
+        [
+          -79.372805,
+          43.8935232
+        ],
+        [
+          -79.3728536,
+          43.893549
+        ],
+        [
+          -79.3728855,
+          43.8935448
+        ],
+        [
+          -79.3728896,
+          43.8935624
+        ],
+        [
+          -79.3730019,
+          43.8935482
+        ],
+        [
+          -79.3730034,
+          43.8935542
+        ],
+        [
+          -79.3730493,
+          43.8935484
+        ],
+        [
+          -79.3731386,
+          43.8935932
+        ],
+        [
+          -79.373157,
+          43.8936699
+        ],
+        [
+          -79.3730966,
+          43.8937337
+        ],
+        [
+          -79.3730492,
+          43.8937396
+        ],
+        [
+          -79.3730504,
+          43.8937463
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -79.3727191,
+        43.8937878
+      ],
+      [
+        -79.3724771,
+        43.8938183
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is rigid foundation grade; no DEM, sea-level height, terrain exaggeration or Mercator stretch is baked into the asset.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current Cathedral of the Transfiguration: published 64 m central and 45 m side towers, dark copper onion bulbs topped by small gilt lantern bulbs and crosses, rear crossing dome, pale stone pilasters and separate arched/oculus window bays. The footprint and all 31 mapped building parts are recorded; the outer footprint contains the nested parts. OSM outer height=0.1 is not an architectural height and is rejected. Stage profiles are estimated from checked photographs and mapped parts; no mosaics, lettering or interior are reproduced. Geographic yaw baked once. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/cathedral-transfiguration-markham-near.glb",
+      "bytes": 178556,
+      "triangles": 11945,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -35.59789276123047,
+          -2.1508470460403217e-15,
+          -21.71098518371582
+        ],
+        "max": [
+          35.58149337768555,
+          64,
+          20.412233352661133
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/cathedral-transfiguration-markham-far.glb",
+      "bytes": 126816,
+      "triangles": 7876,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -35.59789276123047,
+          -2.1508470460403217e-15,
+          -21.71098518371582
+        ],
+        "max": [
+          35.58149337768555,
+          64,
+          20.412233352661133
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/cathedral-transfiguration-markham/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

@@ -1,0 +1,384 @@
+{
+  "id": "tour-lanterne-rochelle",
+  "name": "Tour de la Lanterne",
+  "kind": "building",
+  "origin": [
+    -1.1571191,
+    46.15578515
+  ],
+  "height": 58,
+  "padM": 12,
+  "frontageBearing": 181.27503325720346,
+  "rotation": 0.022253528410628245,
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -1.1571579,
+          46.1557074
+        ],
+        [
+          -1.1571395,
+          46.1557037
+        ],
+        [
+          -1.1571248,
+          46.1557026
+        ],
+        [
+          -1.157118,
+          46.1557025
+        ],
+        [
+          -1.1571168,
+          46.1557025
+        ],
+        [
+          -1.1571097,
+          46.1557025
+        ],
+        [
+          -1.1570947,
+          46.1557038
+        ],
+        [
+          -1.1570846,
+          46.1557057
+        ],
+        [
+          -1.1570781,
+          46.1557071
+        ],
+        [
+          -1.1570661,
+          46.1557105
+        ],
+        [
+          -1.1570519,
+          46.1557162
+        ],
+        [
+          -1.1570483,
+          46.1557182
+        ],
+        [
+          -1.157043,
+          46.1557211
+        ],
+        [
+          -1.1570388,
+          46.1557234
+        ],
+        [
+          -1.1570267,
+          46.1557323
+        ],
+        [
+          -1.1570204,
+          46.1557385
+        ],
+        [
+          -1.1570167,
+          46.1557424
+        ],
+        [
+          -1.1570097,
+          46.155752
+        ],
+        [
+          -1.1570041,
+          46.1557642
+        ],
+        [
+          -1.1570029,
+          46.1557688
+        ],
+        [
+          -1.1570015,
+          46.1557739
+        ],
+        [
+          -1.1570011,
+          46.1557798
+        ],
+        [
+          -1.157001,
+          46.1557807
+        ],
+        [
+          -1.1570007,
+          46.1557849
+        ],
+        [
+          -1.1570016,
+          46.1557922
+        ],
+        [
+          -1.1570026,
+          46.1557968
+        ],
+        [
+          -1.1570051,
+          46.1558046
+        ],
+        [
+          -1.1570094,
+          46.1558138
+        ],
+        [
+          -1.1570131,
+          46.155819
+        ],
+        [
+          -1.1570162,
+          46.1558232
+        ],
+        [
+          -1.1570313,
+          46.1558378
+        ],
+        [
+          -1.1570372,
+          46.1558417
+        ],
+        [
+          -1.1570421,
+          46.1558449
+        ],
+        [
+          -1.1570565,
+          46.1558522
+        ],
+        [
+          -1.1570708,
+          46.1558573
+        ],
+        [
+          -1.1570772,
+          46.1558589
+        ],
+        [
+          -1.1570872,
+          46.1558613
+        ],
+        [
+          -1.1571062,
+          46.1558637
+        ],
+        [
+          -1.1571102,
+          46.1558638
+        ],
+        [
+          -1.157117,
+          46.1558639
+        ],
+        [
+          -1.1571242,
+          46.1558639
+        ],
+        [
+          -1.1571254,
+          46.1558639
+        ],
+        [
+          -1.1571285,
+          46.1558639
+        ],
+        [
+          -1.1571467,
+          46.1558615
+        ],
+        [
+          -1.1571503,
+          46.1558607
+        ],
+        [
+          -1.1571568,
+          46.1558591
+        ],
+        [
+          -1.1571634,
+          46.1558576
+        ],
+        [
+          -1.1571727,
+          46.1558544
+        ],
+        [
+          -1.1571818,
+          46.1558507
+        ],
+        [
+          -1.1571866,
+          46.1558482
+        ],
+        [
+          -1.157192,
+          46.1558453
+        ],
+        [
+          -1.1571953,
+          46.1558435
+        ],
+        [
+          -1.1572113,
+          46.1558314
+        ],
+        [
+          -1.1572145,
+          46.1558279
+        ],
+        [
+          -1.1572182,
+          46.1558239
+        ],
+        [
+          -1.1572269,
+          46.1558115
+        ],
+        [
+          -1.1572308,
+          46.1558022
+        ],
+        [
+          -1.1572321,
+          46.1557975
+        ],
+        [
+          -1.1572336,
+          46.1557916
+        ],
+        [
+          -1.1572342,
+          46.1557813
+        ],
+        [
+          -1.157234,
+          46.1557795
+        ],
+        [
+          -1.1572339,
+          46.1557786
+        ],
+        [
+          -1.1572335,
+          46.1557741
+        ],
+        [
+          -1.1572324,
+          46.1557695
+        ],
+        [
+          -1.1572303,
+          46.1557623
+        ],
+        [
+          -1.157225,
+          46.1557517
+        ],
+        [
+          -1.1572218,
+          46.1557473
+        ],
+        [
+          -1.1572187,
+          46.1557431
+        ],
+        [
+          -1.157208,
+          46.1557321
+        ],
+        [
+          -1.1571979,
+          46.1557246
+        ],
+        [
+          -1.1571928,
+          46.1557215
+        ],
+        [
+          -1.1571837,
+          46.1557165
+        ],
+        [
+          -1.1571711,
+          46.1557113
+        ],
+        [
+          -1.1571641,
+          46.1557092
+        ],
+        [
+          -1.1571579,
+          46.1557074
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -1.1572342,
+        46.1557813
+      ],
+      [
+        -1.1570007,
+        46.1557849
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 at street foundation; rigid real metres east/up/south; no terrain, absolute altitude or Mercator stretch baked in.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "58 m adopted estimate from the current CMN page; the older CMN section drawing says 55 m and other records vary. Public upper gallery about 38 m. Base diameter about 18 m mapped from OSM; stage splits, lantern and small side spire are photo estimates. East–west mapped drum diameter establishes the exported reference axis; octagonal/bay radial phase is estimated from exterior references. Post-2015 restored permanent exterior, without scaffolding, sea platform or adjacent walls. Geographic yaw baked once from mapped controls [[-1.1572342, 46.1557813], [-1.1570007, 46.1557849]]. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-lanterne-rochelle-near.glb",
+      "bytes": 81388,
+      "triangles": 5763,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -9.547636032104492,
+          0,
+          -9.547636032104492
+        ],
+        "max": [
+          9.547636032104492,
+          58,
+          9.547636032104492
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-lanterne-rochelle-far.glb",
+      "bytes": 58220,
+      "triangles": 3867,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -9.547636032104492,
+          0,
+          -9.547636032104492
+        ],
+        "max": [
+          9.547636032104492,
+          58,
+          9.547636032104492
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-lanterne-rochelle/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

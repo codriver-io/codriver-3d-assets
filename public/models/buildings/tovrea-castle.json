@@ -1,0 +1,128 @@
+{
+  "id": "tovrea-castle",
+  "name": "Tovrea Castle",
+  "kind": "building",
+  "origin": [
+    -111.97172979999999,
+    33.4481607
+  ],
+  "height": 15.84,
+  "widthM": 16.1,
+  "depthM": 11,
+  "padM": 18,
+  "frontageBearing": 273.86631706418586,
+  "rotation": -1.6382762894909813,
+  "controlPoints": [
+    [
+      -111.9717843,
+      33.4482106
+    ],
+    [
+      -111.9717921,
+      33.4481143
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -111.9716753,
+          33.4481078
+        ],
+        [
+          -111.9716675,
+          33.4482041
+        ],
+        [
+          -111.9716914,
+          33.4482311
+        ],
+        [
+          -111.9717555,
+          33.4482335
+        ],
+        [
+          -111.9717843,
+          33.4482106
+        ],
+        [
+          -111.9717921,
+          33.4481143
+        ],
+        [
+          -111.9717695,
+          33.448092
+        ],
+        [
+          -111.9717041,
+          33.4480879
+        ],
+        [
+          -111.9716753,
+          33.4481078
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -111.97172979999999,
+        33.4481607
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Castle136668541 only; hill, garden/cacti, perimeter terrace/wall and separately restored outbuildings are excluded. NPS identifies four-storey stepped octagonal tower including the small cupola; three broad main tiers and the fourth-floor cupola are present. All heights and upper-tier setbacks are photo estimates, with only the bare flagpole2.44m length published by SAH; total15.84m is an estimate, not a sourced building-height claim. Rigid y=0 exterior foundation excludes the basement excavated into the knoll. Mapped lower outline is a clipped rectangular octagon, not a circular cylinder. Both LODs keep crenellation openings and alternating dome gores; no flag, lettering, logos, string lights or signs. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tovrea-castle-near.glb",
+      "bytes": 61600,
+      "triangles": 4328,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -5.786655902862549,
+          0,
+          -8.104095458984375
+        ],
+        "max": [
+          5.786655902862549,
+          15.84000015258789,
+          8.104095458984375
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tovrea-castle-far.glb",
+      "bytes": 46140,
+      "triangles": 2872,
+      "drawCalls": 6,
+      "bounds": {
+        "min": [
+          -5.786655902862549,
+          0,
+          -8.104095458984375
+        ],
+        "max": [
+          5.786655902862549,
+          15.84000015258789,
+          8.104095458984375
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tovrea-castle/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

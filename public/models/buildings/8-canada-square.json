@@ -1,0 +1,65 @@
+{
+  "id": "8-canada-square",
+  "name": "8 Canada Square",
+  "kind": "building",
+  "origin": [
+    -0.01744,
+    51.505435
+  ],
+  "height": 200,
+  "padM": 65,
+  "frontageBearing": 99.9,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Published 200 m height is chosen over OSM 199.5 m; a 0.5 m difference. Main glass elevation and roof-plant levels follow mapped parts. Podium height, mullion pitch and minor mechanical details are photo estimates. The historic completed exterior is retained while retrofit proposals are unbuilt. Logos and lettering are omitted. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/8-canada-square-near.glb",
+      "bytes": 207608,
+      "triangles": 17885,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -48.85642623901367,
+          0,
+          -44.87309265136719
+        ],
+        "max": [
+          36.301063537597656,
+          200,
+          34.152976989746094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/8-canada-square-far.glb",
+      "bytes": 71144,
+      "triangles": 5429,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -48.85642623901367,
+          0,
+          -44.87309265136719
+        ],
+        "max": [
+          36.301063537597656,
+          200,
+          34.152976989746094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/8-canada-square/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

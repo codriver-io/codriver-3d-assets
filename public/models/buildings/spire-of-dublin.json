@@ -1,0 +1,65 @@
+{
+  "id": "spire-of-dublin",
+  "name": "Spire of Dublin",
+  "kind": "building",
+  "origin": [
+    -6.26025435,
+    53.3498013
+  ],
+  "height": 120,
+  "padM": 9,
+  "frontageBearing": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The designer’s120 m height takes precedence over the mapped121.2 m. The mapped footprint is used for center/alignment rather than diameter because its approximately2.2 m span disagrees with the published3 m base. Section-joint positions and plain base disc are estimates; the patterned base artwork and illumination perforations are omitted rather than copied. Tip lighting is represented by material colour with no emissive bloom. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/spire-of-dublin-near.glb",
+      "bytes": 23004,
+      "triangles": 1272,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -1.5981415510177612,
+          0,
+          -1.5981415510177612
+        ],
+        "max": [
+          1.5981415510177612,
+          120,
+          1.5981415510177612
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/spire-of-dublin-far.glb",
+      "bytes": 15520,
+      "triangles": 632,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -1.5981415510177612,
+          0,
+          -1.5981415510177612
+        ],
+        "max": [
+          1.5981415510177612,
+          120,
+          1.5981415510177612
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/spire-of-dublin/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

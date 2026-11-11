@@ -1,0 +1,66 @@
+{
+  "id": "ito-tower",
+  "name": "Ito Tower",
+  "kind": "building",
+  "origin": [
+    4.87291389,
+    52.33716111
+  ],
+  "height": 100,
+  "padM": 100,
+  "frontageBearing": 0,
+  "rotation": 0,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "BREEAM and the published identity give 100 m; OSM tower part 754852672 gives 98 m. The upper cap is extended to the published 100 m and the 2 m disagreement is retained as uncertainty. Hole widths, vertical ranges and window pitch are photo estimates. OSM main building 277373193 aggregates Ito and SOM, so the connected low U-shaped SOM part is included to avoid deleting an unmodelled provider component; unrelated Mahler blocks remain outside ownership.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/ito-tower-near.glb",
+      "bytes": 249764,
+      "triangles": 22892,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -76.83300018310547,
+          0,
+          -54.04499816894531
+        ],
+        "max": [
+          17.698999404907227,
+          100,
+          39.04100036621094
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/ito-tower-far.glb",
+      "bytes": 96300,
+      "triangles": 8232,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -76.83300018310547,
+          0,
+          -54.04499816894531
+        ],
+        "max": [
+          17.698999404907227,
+          100,
+          39.04100036621094
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/ito-tower/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

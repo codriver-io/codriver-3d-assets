@@ -1,0 +1,77 @@
+{
+  "id": "philharmonie-luxembourg",
+  "name": "Philharmonie Luxembourg",
+  "kind": "building",
+  "origin": [
+    6.14252515,
+    49.618453349999996
+  ],
+  "height": 23,
+  "padM": 150,
+  "frontageBearing": 0,
+  "rotation": -2.9226369669666017,
+  "columnCount": 823,
+  "columnDiameter": 0.323,
+  "columnHeight": 20,
+  "columnRows": [
+    277,
+    275,
+    271
+  ],
+  "floorHeight": 0.2,
+  "eaveHeight": 20.2,
+  "heightEstimate": true,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local flat exterior grade y=0; real metres +X east, +Y up, +Z south. Mapped rotation baked once; no terrain or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "y=0 exterior local plaza grade; all authored paving tops0.20m above grade. Exact aggregate OSM37847301 floor and curved mapped flanks govern placement; missing lens arcs hidden by the petals are reconstructed between mapped points. Glazing is represented at the inner edge of the three column rows to retain readable depth in an opaque game material; the actual wall interleaves the forest. All823 separate open-ended column surfaces are retained in both LODs and terminate on actual floor/roof planes; the enclosure hides their ends. Interior auditorium balconies are not authored. Main building as standing in2026; incomplete2024–27 extension and construction hoarding are omitted and not masked. No venue names, signs, logos or branding.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/philharmonie-luxembourg-near.glb",
+      "bytes": 212924,
+      "triangles": 14548,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -48.10136795043945,
+          0,
+          -59.004940032958984
+        ],
+        "max": [
+          48.10136795043945,
+          23,
+          58.571014404296875
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/philharmonie-luxembourg-far.glb",
+      "bytes": 141968,
+      "triangles": 8589,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -48.10136795043945,
+          0,
+          -59.004940032958984
+        ],
+        "max": [
+          48.10136795043945,
+          23,
+          58.571014404296875
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/philharmonie-luxembourg/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

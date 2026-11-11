@@ -1,0 +1,66 @@
+{
+  "id": "jerusalem-ymca",
+  "name": "Jerusalem International YMCA",
+  "kind": "building",
+  "origin": [
+    35.22155835,
+    31.774309600000002
+  ],
+  "height": 46.33,
+  "padM": 30,
+  "frontageBearing": 275.219218188279,
+  "rotationY": -3.0505001118243507,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local foundation y=0; real metres +X east, +Y up, +Z south. Two mapped controls fix rotation, baked into the geometry once. No terrain or Mercator stretch.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Jerusalem YMCA’s stone campanile has paired open belfries, four small corner cupolas and a pierced central dome, between two domed hall wings and an arcaded hotel block. The operator publishes 152 ft (46.33 m); other summaries round to 45, 46 or 50 m. Component heights, tower’s 7.8 m plan and hall-dome sizes are estimates calibrated to current exterior photos. The tower is centred in the mapped hotel strip at local [5.3,-2.35] m; no separate tower part is mapped, so that internal positioning needs independent review. The irregular rear plan is retained from OSM but simplified into lower hall wings and a taller central hotel body. Historic photos and interior photo 2 were rejected as current reference evidence. Fine sculptural friezes, inscriptions and YMCA logos are omitted. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/jerusalem-ymca-near.glb",
+      "bytes": 288716,
+      "triangles": 19807,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -31.736299514770508,
+          0,
+          -51.75267028808594
+        ],
+        "max": [
+          31.736299514770508,
+          46.33000183105469,
+          51.75266647338867
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/jerusalem-ymca-far.glb",
+      "bytes": 142688,
+      "triangles": 8993,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -31.736299514770508,
+          0,
+          -51.75267028808594
+        ],
+        "max": [
+          31.736299514770508,
+          46.33000183105469,
+          51.75266647338867
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/jerusalem-ymca/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

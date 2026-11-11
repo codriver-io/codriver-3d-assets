@@ -1,0 +1,65 @@
+{
+  "id": "nottingham-council-house",
+  "name": "Nottingham Council House",
+  "kind": "building",
+  "origin": [
+    -1.1485605,
+    52.953426
+  ],
+  "height": 60.96,
+  "padM": 75,
+  "frontageBearing": 270,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid exterior foundation plane y=0. Metres east/up/south; mapped orientation is baked once. No terrain, sea-level offset or Mercator scale is authored.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The published200 ft total60.96 m differs from OSM60 m highest pole; this model uses60.96 m and records the discrepancy. Main21 m and intermediate32/52/58 m levels follow OSM; column diameters, architectural subdivisions, dome curve and portico depth are photo-calibrated estimates. Clocks are geometric dials without numerals or lettering. No plaza surface or ground height is baked. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/nottingham-council-house-near.glb",
+      "bytes": 113588,
+      "triangles": 8580,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -44.979713439941406,
+          0,
+          -21.941171646118164
+        ],
+        "max": [
+          42.67428207397461,
+          60.959999084472656,
+          21.730649948120117
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/nottingham-council-house-far.glb",
+      "bytes": 79160,
+      "triangles": 5632,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -44.979713439941406,
+          0,
+          -21.941171646118164
+        ],
+        "max": [
+          42.67428207397461,
+          60.959999084472656,
+          21.730649948120117
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/nottingham-council-house/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

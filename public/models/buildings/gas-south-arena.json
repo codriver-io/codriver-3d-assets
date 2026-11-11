@@ -1,0 +1,65 @@
+{
+  "id": "gas-south-arena",
+  "name": "Gas South Arena",
+  "kind": "building",
+  "origin": [
+    -84.09416667,
+    33.99138889
+  ],
+  "height": 31.5,
+  "padM": 125,
+  "frontageBearing": 60,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Operating Gas South Arena hull: broad grey hipped arena roof with two raised triangular roof ribs, curved glazed lobby, red-brown entrance piers and a pale sweeping canopy. Adjacent convention center, parking decks and future project renderings excluded. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/gas-south-arena-near.glb",
+      "bytes": 54900,
+      "triangles": 3896,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -61.676170349121094,
+          0,
+          -95.20198059082031
+        ],
+        "max": [
+          106.68427276611328,
+          31.5,
+          65.85579681396484
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/gas-south-arena-far.glb",
+      "bytes": 32048,
+      "triangles": 1798,
+      "drawCalls": 5,
+      "bounds": {
+        "min": [
+          -61.676170349121094,
+          0,
+          -95.20198059082031
+        ],
+        "max": [
+          106.68427276611328,
+          31.5,
+          65.85579681396484
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/gas-south-arena/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

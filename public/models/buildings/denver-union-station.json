@@ -1,0 +1,264 @@
+{
+  "id": "denver-union-station",
+  "name": "Denver Union Station",
+  "kind": "building",
+  "origin": [
+    -105.00027725000001,
+    39.75323075
+  ],
+  "height": 28.2,
+  "widthM": 157,
+  "depthM": 52,
+  "padM": 91,
+  "frontageBearing": 134.81870363149943,
+  "rotation": 0.7885623819496921,
+  "controlPoints": [
+    [
+      -105.0005668,
+      39.7531496
+    ],
+    [
+      -105.0010122,
+      39.752805
+    ]
+  ],
+  "terrainPad": {
+    "rings": [
+      [
+        [
+          -105.000823,
+          39.7526608
+        ],
+        [
+          -105.0007185,
+          39.7527418
+        ],
+        [
+          -105.0006228,
+          39.7528165
+        ],
+        [
+          -105.0005526,
+          39.7528701
+        ],
+        [
+          -105.0004851,
+          39.7529223
+        ],
+        [
+          -105.0004685,
+          39.7529095
+        ],
+        [
+          -105.0004546,
+          39.7528988
+        ],
+        [
+          -105.0003942,
+          39.7529452
+        ],
+        [
+          -105.0002094,
+          39.7528029
+        ],
+        [
+          -105.000178,
+          39.752827
+        ],
+        [
+          -105.000142,
+          39.7528546
+        ],
+        [
+          -105.0001287,
+          39.7528444
+        ],
+        [
+          -105.0000444,
+          39.7529092
+        ],
+        [
+          -104.9998153,
+          39.7530849
+        ],
+        [
+          -104.9997334,
+          39.7531477
+        ],
+        [
+          -104.9997495,
+          39.7531601
+        ],
+        [
+          -104.999686,
+          39.7532088
+        ],
+        [
+          -104.9998733,
+          39.753353
+        ],
+        [
+          -104.9998249,
+          39.7533901
+        ],
+        [
+          -104.9998585,
+          39.7534159
+        ],
+        [
+          -104.999815,
+          39.7534467
+        ],
+        [
+          -104.9996772,
+          39.7535519
+        ],
+        [
+          -104.9996028,
+          39.7536109
+        ],
+        [
+          -104.9995423,
+          39.7536577
+        ],
+        [
+          -104.9997291,
+          39.7538007
+        ],
+        [
+          -104.9997898,
+          39.7537538
+        ],
+        [
+          -104.999867,
+          39.7536959
+        ],
+        [
+          -105.0000025,
+          39.7535903
+        ],
+        [
+          -105.0001317,
+          39.753487
+        ],
+        [
+          -105.0001344,
+          39.7534891
+        ],
+        [
+          -105.00021,
+          39.7534304
+        ],
+        [
+          -105.0002135,
+          39.753433
+        ],
+        [
+          -105.000249,
+          39.7534055
+        ],
+        [
+          -105.0003156,
+          39.7533538
+        ],
+        [
+          -105.0003559,
+          39.7533226
+        ],
+        [
+          -105.0003955,
+          39.7532918
+        ],
+        [
+          -105.0004624,
+          39.75324
+        ],
+        [
+          -105.0004942,
+          39.7532153
+        ],
+        [
+          -105.0004918,
+          39.7532135
+        ],
+        [
+          -105.0005705,
+          39.7531524
+        ],
+        [
+          -105.0005668,
+          39.7531496
+        ],
+        [
+          -105.0010122,
+          39.752805
+        ],
+        [
+          -105.000823,
+          39.7526608
+        ]
+      ]
+    ],
+    "refs": [
+      [
+        -105.00027725000001,
+        39.75323075
+      ]
+    ],
+    "datum": "median",
+    "featherM": 2
+  },
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local y=0 is one rigid exterior foundation plane; no terrain, sea-level height or Mercator stretch baked into geometry.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Current mapped historic headhouse25650822 only; modern white train canopy/platforms, neighbouring hotel/office towers and streetscape excluded. Main total156m length follows current OSM ownership, not historic NPS860ft length that included former1892 outer extensions.1881 rhyolite wings,1914 limestone/terra-cotta central hall and retained grey roof/dormer rhythm are distinct masses. OSM24m central roof and14m wings are unsurveyed estimates; clock/frame crown28.2m is photo fitted, not a published height.65ft Great Hall ceiling is an interior measurement and is not adopted as exterior height. Foundation y=0 is rigid exterior grade, no terrain baked. Roof sign architecture represented only by bare iron frames: all letters/numerals/neon words, logos, flags, urn inscriptions and commercial signs omitted. Rustication and original abstract urn reliefs use procedural geometry. Current2025 front photos and2022 street view establish restored exterior. Horizontal rustication courses are face partitions, not coplanar overlays. Mapped yaw is baked once from two OSM control points. Cityscape: not tested; Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/denver-union-station-near.glb",
+      "bytes": 187040,
+      "triangles": 17026,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -63.313167572021484,
+          0,
+          -63.61186599731445
+        ],
+        "max": [
+          63.313167572021484,
+          28.174985885620117,
+          63.61186599731445
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/denver-union-station-far.glb",
+      "bytes": 91340,
+      "triangles": 6992,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -63.313167572021484,
+          0,
+          -63.61186599731445
+        ],
+        "max": [
+          63.313167572021484,
+          28.174945831298828,
+          63.61186599731445
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/denver-union-station/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

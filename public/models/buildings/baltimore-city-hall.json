@@ -1,0 +1,65 @@
+{
+  "id": "baltimore-city-hall",
+  "name": "Baltimore City Hall",
+  "kind": "building",
+  "origin": [
+    -76.61069444,
+    39.29086111
+  ],
+  "height": 69.1896,
+  "padM": 100,
+  "frontageBearing": 92.82,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Local rigid exterior footing plane y=0; real metres, +X east, +Y up, +Z south. Mapped rotation is baked once; no DEM, sea-level or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The current January2025front and additional full exterior3 were verified against the same standing structure; reference5 is a plaque and is rejected as a geometry source. The published227ft(69.1896m) top and OSMpart74m disagree; this model adopts the published total and uses photo-estimated vertical subdivisions rather than claiming surveyed OSM heights. The75m mapped outside envelope includes corner projections; historical238ft×149ft refers to street fronts. The main entrance projection is hollowed into a real four-column portico; shallow entry steps sit above localfooting. Four steep slate corner roofs and smaller linking roofs retain dormers in both LODs. The tall drum has distinct glass lancets, the white dome has genuinely tiled circular oculi, and the upper lantern has open space between its columns. Every authored roof is fitted to its mapped component polygon. No city seal, words, flags or ornamental copyrighted imagery. y0 is the local rigid street-level footing plane, with no terrain baked. Both app modes require later datum verification. Cityscape: not tested. Full 3D world: not tested. Review follow-up: Nit: gave the existing central portico platform/cornice and pediment face a distinct muted limestone tone (#b2b6a4 daylight) to strengthen the entrance hierarchy. Dome, lantern, mansards and all structural dimensions are unchanged.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/baltimore-city-hall-near.glb",
+      "bytes": 178284,
+      "triangles": 14030,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -25.416662216186523,
+          0,
+          -40.90607452392578
+        ],
+        "max": [
+          25.4580135345459,
+          69.1895980834961,
+          36.76719665527344
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/baltimore-city-hall-far.glb",
+      "bytes": 141256,
+      "triangles": 10348,
+      "drawCalls": 7,
+      "bounds": {
+        "min": [
+          -25.416662216186523,
+          0,
+          -40.90607452392578
+        ],
+        "max": [
+          25.4580135345459,
+          69.1895980834961,
+          36.76719665527344
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/baltimore-city-hall/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

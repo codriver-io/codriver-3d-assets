@@ -1,0 +1,65 @@
+{
+  "id": "stone-mountain-carillon",
+  "name": "Stone Mountain Carillon",
+  "kind": "building",
+  "origin": [
+    -84.13514224,
+    33.81299056
+  ],
+  "height": 35.6616,
+  "padM": 28,
+  "frontageBearing": 17.7,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "y=0 is the rigid local exterior foundation plane. Real metres, +X east, +Y up, +Z south. Mapped rotation baked once; no terrain, sea-level offset or Mercator scale.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "The 117-foot lakeside carillon speaker tower: three splayed steel supports, an open triangular upper screen of vertical weathered redwood planks, suspended lower planks with a spiraling bottom edge, and visible steel girts. This is an electronic carillon speaker enclosure; exposed bronze church bells are not invented. Dimensions beyond published height and OSM plan are photo estimates. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/stone-mountain-carillon-near.glb",
+      "bytes": 34376,
+      "triangles": 1892,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -6.257950782775879,
+          0,
+          -6.961953163146973
+        ],
+        "max": [
+          9.00308895111084,
+          35.683589935302734,
+          8.667374610900879
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/stone-mountain-carillon-far.glb",
+      "bytes": 33216,
+      "triangles": 1820,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -6.257950782775879,
+          0,
+          -6.961953163146973
+        ],
+        "max": [
+          9.00308895111084,
+          35.683589935302734,
+          8.667374610900879
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/stone-mountain-carillon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}

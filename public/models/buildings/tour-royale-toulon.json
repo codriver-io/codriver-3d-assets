@@ -1,0 +1,66 @@
+{
+  "id": "tour-royale-toulon",
+  "name": "Tour Royale de Toulon",
+  "kind": "building",
+  "origin": [
+    5.925788799999999,
+    43.10272485
+  ],
+  "height": 20,
+  "padM": 40,
+  "frontageBearing": 89.86352474851373,
+  "rotationRad": 0.0023819424859227714,
+  "units": "metres",
+  "axes": {
+    "x": "east",
+    "y": "up",
+    "z": "south"
+  },
+  "elevationDatum": "Rigid local exterior foundation plane y=0; metres +X east, +Y up, +Z south. Mapped rotation baked once. No sea-level, DEM or Mercator scaling.",
+  "attribution": "Codriver; geographic placement © OpenStreetMap contributors",
+  "note": "Low circular Renaissance cannon fort, with a battered sea-facing base, open gun ports, a lower southern terrace, higher northern half-ring and small terracotta-roofed accommodation. Mapped outer ring is approximately 56 × 54 m while published nominal diameter is 60 m; the model uses a 60 m battered base and mapped east-west control alignment. Terrace and roof subdivisions are visual estimates. The rigid y=0 datum is the lowest exterior masonry footing, not sea level; no water or surrounding terrain is baked. Cityscape: not tested. Full 3D world: not tested.",
+  "assets": {
+    "near": {
+      "url": "/models/buildings/tour-royale-toulon-near.glb",
+      "bytes": 69052,
+      "triangles": 3596,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -29.999914169311523,
+          1.9073486612342094e-7,
+          -29.999914169311523
+        ],
+        "max": [
+          29.999914169311523,
+          20,
+          29.999914169311523
+        ]
+      }
+    },
+    "far": {
+      "url": "/models/buildings/tour-royale-toulon-far.glb",
+      "bytes": 52668,
+      "triangles": 2540,
+      "drawCalls": 4,
+      "bounds": {
+        "min": [
+          -29.999914169311523,
+          1.9073486612342094e-7,
+          -29.999914169311523
+        ],
+        "max": [
+          29.999914169311523,
+          20,
+          29.999914169311523
+        ]
+      }
+    }
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Codriver (original commissioned model)",
+  "sourceUrl": "https://github.com/codriver-io/codriver-3d-assets/blob/main/src/peregrine/landmarks/top-cities/tour-royale-toulon/geometry.js",
+  "geographicDataLicense": "ODbL-1.0",
+  "geographicDataUrl": "https://www.openstreetmap.org/copyright"
+}
