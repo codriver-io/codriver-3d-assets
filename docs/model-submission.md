@@ -13,7 +13,7 @@ Use this checklist for a bridge or building. [CONTRIBUTING.md](../CONTRIBUTING.m
 - [ ] Credit: `license: "CC-BY-4.0"`, `codeLicense: "MIT"`, contributor `copyright`, `attribution`, `geographicDataLicense` and `geographicDataUrl`. Use `"none"` and omit the geographic URL only when no separately licensed geographic dataset was used; explain that in provenance. OSM-derived data uses `"ODbL-1.0"` and `https://www.openstreetmap.org/copyright`.
 - [ ] The source URL uses this repository’s `blob/main/` path, including before the PR merges; reference links point to the external evidence.
 - [ ] Two or more screenshots showing source/export, near/far and relevant structural views. Record day/night checks.
-- [ ] Measured size/draw/triangle costs; no unsupported device performance claims.
+- [ ] Measured size/draw/triangle costs and loaded GPU geometry bytes, from the shared meshopt exporter ([ADR-0004](adr/0004-compact-runtime-geometry.md)); no unsupported device performance claims.
 - [ ] Separate Cityscape and Full 3D world results: verified with environment/revision/evidence, not tested, or unsupported with reason. A standalone viewer result is only a viewer result.
 - [ ] `pnpm build`, `pnpm check`, browser checks passed, or exact outstanding failure reported.
 
