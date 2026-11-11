@@ -96,3 +96,101 @@ export function memberEnds(tris, { contactM = 0.75, groundY = 0 } = {}) {
   }
   return { tested, ends: flags.length, flags };
 }
+
+// GLB extras every load parses and a host keeps on its objects. QA-only data (contacts, supports)
+// belongs on non-enumerable userData; asset.extras (license metadata) is expected and excluded.
+export function extrasBytes(json) {
+  const keys = new Map(); let bytes = 0;
+  const walk = (o, path) => {
+    if (!o || typeof o !== 'object') return;
+    for (const [k, v] of Object.entries(o)) {
+      if (k === 'extras' && path !== 'asset') {
+        bytes += JSON.stringify(v).length;
+        if (v && typeof v === 'object') for (const [ek, ev] of Object.entries(v)) keys.set(ek, (keys.get(ek) || 0) + JSON.stringify(ev).length);
+      } else walk(v, path ? path + '.' + k : k);
+    }
+  };
+  walk(json, '');
+  const top = [...keys].sort((a, b) => b[1] - a[1]).slice(0, 4).map(([key, n]) => ({ key, kb: +(n / 1024).toFixed(1) }));
+  return { bytes, top };
+}
+
+// Smooth-shading skew: a vertex normal pointing behind its own face (vertices shared with a hidden
+// face, back-to-back faces sharing vertices, inverted normals) renders slopes as dark, rounded
+// loaves. Area-weighted smoothing of box edges stays under 90° and is not counted.
+export function shadingSkew(tris, { maxDeg = 90 } = {}) {
+  const cos = Math.cos(maxDeg * Math.PI / 180), byMat = new Map(); let area = 0;
+  for (const t of tris) {
+    if (!t.vn) continue;
+    const e = byMat.get(t.mat) || { material: t.mat, area: 0, skewed: 0, at: null, max: 0 };
+    e.area += t.area;
+    if (t.vn.some((v) => v.dot(t.n) < cos)) {
+      e.skewed += t.area; area += t.area;
+      if (t.area > e.max) { e.max = t.area; e.at = at(t.a.clone().add(t.b).add(t.c).divideScalar(3)); }
+    }
+    byMat.set(t.mat, e);
+  }
+  const top = [...byMat.values()].filter((e) => e.skewed > 0).sort((a, b) => b.skewed - a.skewed).slice(0, 3)
+    .map((e) => ({ material: e.material, areaM2: +e.skewed.toFixed(1), share: +(e.skewed / e.area).toFixed(2), at: e.at }));
+  return { areaM2: Math.round(area), top };
+}
+
+// Up-facing faces lying on local grade: the host draws its own ground at y = 0, so these
+// z-fight with it (or vanish under it). Grade features stand at least 0.1 m proud.
+// Road surfaces are exempt: the host fits or replaces authored approach pavement (bridgeLift, HD roads).
+const ROAD = /asphalt|pavement|road|lane|marking|paint|stripe/i;
+export function gradeFaces(tris, { band = 0.05, minUp = 0.9 } = {}) {
+  const byMat = new Map(); let area = 0;
+  for (const t of tris) {
+    if (t.n.y < minUp || ROAD.test(t.mat || '') || [t.a, t.b, t.c].some((p) => Math.abs(p.y) > band)) continue;
+    area += t.area;
+    const e = byMat.get(t.mat) || { material: t.mat, areaM2: 0, at: null, max: 0 };
+    e.areaM2 += t.area;
+    if (t.area > e.max) { e.max = t.area; e.at = at(t.a.clone().add(t.b).add(t.c).divideScalar(3)); }
+    byMat.set(t.mat, e);
+  }
+  const top = [...byMat.values()].sort((a, b) => b.areaM2 - a.areaM2).slice(0, 3).map(({ material, areaM2, at }) => ({ material, areaM2: +areaM2.toFixed(1), at }));
+  return { areaM2: Math.round(area), top };
+}
+
+// Far up-facing faces over ground the near model leaves open: LOD simplification that bridges a
+// courtyard or notch. Near roofs/decks/ground are rasterised in plan (1 m cells, one cell of
+// tolerance); far cells with no near cover nearby are summed.
+export function farOverhang(nearTris, farTris, { cell = 1, minUp = 0.3 } = {}) {
+  const key = (ix, iz) => (ix + 60000) * 120000 + (iz + 60000);
+  const cells = (t, visit) => {
+    const P = [t.a, t.b, t.c], xs = P.map((p) => p.x), zs = P.map((p) => p.z);
+    const s = (a, b, x, z) => (b.x - a.x) * (z - a.z) - (b.z - a.z) * (x - a.x);
+    const inside = (x, z) => { const d1 = s(P[0], P[1], x, z), d2 = s(P[1], P[2], x, z), d3 = s(P[2], P[0], x, z); return (d1 >= 0 && d2 >= 0 && d3 >= 0) || (d1 <= 0 && d2 <= 0 && d3 <= 0); };
+    let n = 0;
+    for (let ix = Math.floor(Math.min(...xs) / cell); ix <= Math.floor(Math.max(...xs) / cell); ix++)
+      for (let iz = Math.floor(Math.min(...zs) / cell); iz <= Math.floor(Math.max(...zs) / cell); iz++)
+        if (inside((ix + 0.5) * cell, (iz + 0.5) * cell)) { visit(ix, iz); n++; }
+    return n;
+  };
+  const cover = new Set();
+  for (const t of nearTris) {
+    if (t.n.y < minUp) continue;
+    cells(t, (ix, iz) => cover.add(key(ix, iz)));
+    // Slivers narrower than a cell still cover the cells along their edges.
+    for (const [p, q] of [[t.a, t.b], [t.b, t.c], [t.c, t.a]]) {
+      const steps = Math.max(1, Math.ceil(p.distanceTo(q) / (cell / 2)));
+      for (let k = 0; k <= steps; k++) cover.add(key(Math.floor((p.x + (q.x - p.x) * k / steps) / cell), Math.floor((p.z + (q.z - p.z) * k / steps) / cell)));
+    }
+  }
+  const covered = (ix, iz) => { for (let dx = -1; dx <= 1; dx++) for (let dz = -1; dz <= 1; dz++) if (cover.has(key(ix + dx, iz + dz))) return true; return false; };
+  const byMat = new Map(); let area = 0;
+  for (const t of farTris) {
+    if (t.n.y < minUp) continue;
+    let open = 0;
+    if (!cells(t, (ix, iz) => { if (!covered(ix, iz)) open++; })) { const c = t.a.clone().add(t.b).add(t.c).divideScalar(3); if (!covered(Math.floor(c.x / cell), Math.floor(c.z / cell))) open = Math.min(1, t.area / (cell * cell)); }
+    if (!open) continue;
+    const a = open * cell * cell; area += a;
+    const e = byMat.get(t.mat) || { material: t.mat, areaM2: 0, at: null, max: 0 };
+    e.areaM2 += a;
+    if (a > e.max) { e.max = a; e.at = at(t.a.clone().add(t.b).add(t.c).divideScalar(3)); }
+    byMat.set(t.mat, e);
+  }
+  const top = [...byMat.values()].sort((a, b) => b.areaM2 - a.areaM2).slice(0, 3).map(({ material, areaM2, at }) => ({ material, areaM2: Math.round(areaM2), at }));
+  return { areaM2: Math.round(area), top };
+}
